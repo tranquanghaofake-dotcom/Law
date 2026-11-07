@@ -64,7 +64,7 @@ Tổng khái niệm: 740. Chỉ liệt kê, không tự sửa. Ngưỡng chặn 
 ### to-tung-hanh-chinh (1)
 - `giam-doc-tham` #3: Bản án đã có hiệu lực của Tòa án nhân dân khu vực áp dụng sai điều luật, gây thiệt hại cho người khởi kiện. Thủ tục nào phù hợp để xem xét lại?
 
-## Đáp án đúng trùng chữ với stem nhiều nhất: viết lại nhiễu cho trùng chữ tương đương — 215 câu
+## Đáp án đúng trùng chữ với stem nhiều nhất: viết lại nhiễu cho trùng chữ tương đương — 214 câu
 
 ### hien-phap (41)
 - `bai-nhiem-dai-bieu` #0: Theo khoản 2 Điều 7 Hiến pháp 2013, chủ thể nào có thể bãi nhiệm đại biểu Quốc hội?
@@ -187,7 +187,7 @@ Tổng khái niệm: 740. Chỉ liệt kê, không tự sửa. Ngưỡng chặn 
 - `ldt-uu-dai-dau-tu` #0: Đối tượng nào được hưởng ưu đãi đầu tư theo khoản 1 Điều 14?
 
 ### canh-tranh (9)
-- `hanh-vi-canh-tranh-khong-lanh-manh-bi-cam` #1: Đưa thông tin không trung thực về doanh nghiệp khác gây ảnh hưởng xấu đến uy tín của họ là hành vi nào?
+- `hanh-vi-canh-tranh-khong-lanh-manh-bi-cam` #1: Doanh nghiệp A tung tin sai sự thật về chất lượng sản phẩm của đối thủ B khiến B mất uy tín trên thị trường. Hành vi của A thuộc loại nào?
 - `hanh-vi-han-che-canh-tranh` #0: Hành vi hạn chế cạnh tranh gồm những hành vi nào theo khoản 2 Điều 3?
 - `hanh-vi-han-che-canh-tranh` #1: Tác động hạn chế cạnh tranh là gì?
 - `mien-tru-thoa-thuan` #0: Điều kiện bắt buộc để thỏa thuận hạn chế cạnh tranh bị cấm được miễn trừ là gì?
@@ -197,7 +197,7 @@ Tổng khái niệm: 740. Chỉ liệt kê, không tự sửa. Ngưỡng chặn 
 - `thoa-thuan-han-che-canh-tranh` #1: Thỏa thuận để một bên thắng thầu khi các bên cùng tham gia đấu thầu thuộc loại nào trong Điều 11?
 - `thong-bao-tap-trung-kinh-te` #0: Doanh nghiệp thuộc ngưỡng phải thông báo tập trung kinh tế vào thời điểm nào?
 
-### hon-nhan-gia-dinh (9)
+### hon-nhan-gia-dinh (8)
 - `cap-duong` #3: Sau ly hôn, anh Toàn phải cấp dưỡng cho con nhưng muốn chuyển nghĩa vụ này cho em trai mình thực hiện thay. Việc này có được không?
 - `cong-nhan-hon-nhan-khi-xu-ly-ket-hon-trai-phap-luat` #0: Khi Tòa án công nhận quan hệ hôn nhân theo khoản 2 Điều 11, hôn nhân được xác lập từ thời điểm nào?
 - `ket-hon-trai-phap-luat` #0: Dấu hiệu nào bắt buộc phải có để xác định "kết hôn trái pháp luật"?
@@ -206,7 +206,6 @@ Tổng khái niệm: 740. Chỉ liệt kê, không tự sửa. Ngưỡng chặn 
 - `nuoi-con-sau-ly-hon` #3: Khi ly hôn, con gái 30 tháng tuổi. Người mẹ nghiện ma túy, không có chỗ ở ổn định; người cha có điều kiện tốt. Hai bên không thỏa thuận được. Tòa án có thể giao con cho ai?
 - `tai-san-chung` #0: Theo khoản 1 Điều 33, hoa lợi, lợi tức phát sinh từ tài sản riêng trong thời kỳ hôn nhân thuộc loại tài sản nào?
 - `tai-san-rieng` #0: Tài sản nào là tài sản riêng của vợ, chồng theo khoản 1 Điều 43?
-- `xac-dinh-con-chung` #3: Vợ chồng anh Đức đăng ký kết hôn tháng 3/2026; con của họ sinh tháng 1/2026 và cả hai cùng thừa nhận là con chung. Đứa trẻ có phải con chung không?
 
 ### ngan-hang (8)
 - `bao-lanh-ngan-hang` #1: Ngân hàng cam kết thực hiện nghĩa vụ thay khi nào?
@@ -331,111 +330,21 @@ Tổng khái niệm: 740. Chỉ liệt kê, không tự sửa. Ngưỡng chặn 
 ### lao-dong-2 (1)
 - `nld-di-lam-viec-nuoc-ngoai` #1: Ai là "người sử dụng lao động ở nước ngoài" theo Luật 69/2020/QH14?
 
-## Nhận định Sai chứa từ tuyệt đối (mọi/chỉ/luôn/đều…): thêm nhận định Sai không có mẹo này — 236 câu
+## Nhận định Sai chứa từ tuyệt đối (mọi/chỉ/luôn/đều…): thêm nhận định Sai không có mẹo này — 121 câu
 
-### hien-phap (37)
+### hien-phap (12)
 - `bai-nhiem-dai-bieu` #5: Theo Hiến pháp 2013, chỉ Quốc hội mới có quyền bãi nhiệm đại biểu Quốc hội; cử tri không có quyền này.
-- `bai-nhiem-dai-bieu` #7: Chỉ có Hội đồng nhân dân mới có quyền bãi nhiệm đại biểu Hội đồng nhân dân.
-- `bieu-quyet-thong-qua-luat` #7: Mọi nghị quyết của Quốc hội chỉ cần quá nửa tổng số đại biểu Quốc hội biểu quyết tán thành.
-- `binh-dang-truoc-phap-luat` #5: Theo Điều 16 Hiến pháp 2013, quyền bình đẳng trước pháp luật chỉ dành cho công dân Việt Nam.
-- `bo-truong-trach-nhiem` #5: Bộ trưởng chỉ chịu trách nhiệm trước Thủ tướng, không chịu trách nhiệm trước Quốc hội.
 - `bo-truong-trach-nhiem` #7: Bộ trưởng, Thủ trưởng cơ quan ngang bộ do Thủ tướng đề nghị Quốc hội phê chuẩn nên chỉ chịu trách nhiệm trước Thủ tướng.
-- `chat-van` #7: Quyền chất vấn của đại biểu Quốc hội chỉ được thực hiện tại kỳ họp của Quốc hội.
-- `chinh-quyen-dia-phuong-mat-tran` #5: Ủy ban nhân dân có quyền chỉ đạo hoạt động của Ủy ban Mặt trận Tổ quốc cùng cấp.
-- `chu-quyen-nhan-dan` #6: Theo Hiến pháp 2013, Quốc hội là chủ thể sở hữu tất cả quyền lực nhà nước.
-- `chu-quyen-nhan-dan` #8: Ở nước ta hiện nay, Nhân dân chỉ thực hiện quyền lực nhà nước gián tiếp thông qua Quốc hội và Hội đồng nhân dân.
-- `chu-tich-nuoc-quoc-phong` #5: Chủ tịch nước có thể tự công bố tình trạng khẩn cấp trong mọi trường hợp mà không cần nghị quyết của Ủy ban thường vụ Quốc hội.
-- `dai-bieu-quoc-hoi` #5: Đại biểu Quốc hội chỉ đại diện cho cử tri ở đơn vị bầu cử ra mình.
-- `dang-cong-san-lanh-dao` #5: Theo Hiến pháp 2013, tổ chức Đảng và đảng viên không bị ràng buộc bởi pháp luật, chỉ chịu sự điều chỉnh của Điều lệ Đảng.
-- `dang-cong-san-lanh-dao` #8: Nguyên tắc Đảng lãnh đạo chỉ được quy định trong Hiến pháp năm 2013.
-- `doc-lap-xet-xu` #5: Chánh án được chỉ đạo Thẩm phán về mức án trong một vụ án cụ thể.
-- `hien-phap` #8: Hiến pháp chỉ xuất hiện trong hình thức chính thể cộng hòa.
-- `hoi-dong-nhan-dan` #5: Hội đồng nhân dân chỉ chịu trách nhiệm trước Nhân dân địa phương.
-- `hoi-tham-tham-gia-xet-xu` #5: Mọi phiên tòa sơ thẩm đều bắt buộc có Hội thẩm tham gia.
-- `lanh-dao-tap-trung-vien-kiem-sat` #5: Kiểm sát viên khi thực hành quyền công tố hoàn toàn độc lập, không chịu sự chỉ đạo của Viện trưởng.
+- `lanh-dao-tap-trung-vien-kiem-sat` #5: Khi thực hành quyền công tố, Kiểm sát viên không chịu sự chỉ đạo của Viện trưởng Viện kiểm sát nhân dân.
 - `nganh-luat-hien-phap` #5: Ngành luật Hiến pháp chỉ gồm các quy phạm trong văn bản Hiến pháp.
-- `nguon-luat-hien-phap` #7: Nguồn của luật Hiến pháp chỉ có thể là các văn bản luật do Quốc hội ban hành.
 - `nha-nuoc-phap-quyen-xhcn` #6: Trong nhà nước pháp quyền, pháp luật chỉ ràng buộc công dân, còn cơ quan nhà nước đứng ngoài sự ràng buộc đó.
-- `nhiem-vu-chinh-quyen-dia-phuong` #5: Chính quyền địa phương được quyết định mọi vấn đề của địa phương mà không cần luật quy định.
 - `phuong-phap-dieu-chinh-luat-hien-phap` #5: Mọi quy phạm luật Hiến pháp đều có đủ ba bộ phận giả định, quy định, chế tài.
 - `quan-he-phap-luat-hien-phap` #5: Quan hệ pháp luật Hiến pháp chỉ phát sinh giữa các cá nhân với nhau.
 - `quoc-tich-viet-nam` #5: Quan hệ quốc tịch chỉ làm phát sinh nghĩa vụ của công dân, không làm phát sinh trách nhiệm của Nhà nước.
-- `quyen-con-nguoi-quyen-cong-dan` #6: Quyền con người, quyền công dân là tuyệt đối, không thể bị hạn chế trong bất kỳ trường hợp nào.
 - `quyen-mien-tru-dai-bieu` #5: Quyền miễn trừ có nghĩa đại biểu Quốc hội không bao giờ bị truy cứu trách nhiệm hình sự.
-- `quyen-trinh-du-an-luat` #5: Đại biểu Quốc hội chỉ được trình kiến nghị về luật, không được trình dự án luật.
-- `thoi-quoc-tich-viet-nam` #7: Mọi công dân Việt Nam xin thôi quốc tịch để nhập quốc tịch nước khác đều được cho thôi.
 - `tro-lai-quoc-tich` #5: Người xin trở lại quốc tịch Việt Nam không bao giờ được giữ quốc tịch nước ngoài.
-- `trung-cau-y-dan-hien-phap` #5: Một bản Hiến pháp sửa đổi chỉ có hiệu lực sau khi được toàn dân bỏ phiếu tán thành qua trưng cầu ý dân.
 - `tu-do-kinh-doanh` #5: Theo Hiến pháp 2013, người dân chỉ được kinh doanh những ngành nghề có trong danh mục Nhà nước cho phép.
-- `uy-ban-thuong-vu-quoc-hoi` #7: Ủy ban thường vụ Quốc hội chỉ có quyền đình chỉ thi hành, không có quyền bãi bỏ văn bản trái pháp luật của Chính phủ.
-- `vi-tri-quoc-hoi` #7: Vị trí, tính chất của Quốc hội chỉ là "cơ quan quyền lực nhà nước cao nhất".
-- `xet-xu-cong-khai-tap-the` #7: Tất cả các phiên xét xử của Tòa án đều được tiến hành công khai.
 - `xet-xu-cong-khai-tap-the` #8: Tòa án chỉ xét xử kín khi có yêu cầu của Viện kiểm sát nhân dân.
-
-### chung-khoan (16)
-- `an-toan-tai-chinh-cong-ty-chung-khoan` #5: Chỉ tiêu an toàn tài chính chỉ áp dụng cho công ty chứng khoán, không áp dụng cho công ty quản lý quỹ.
-- `ban-cao-bach` #5: Bản cáo bạch chỉ được lập dưới dạng văn bản giấy.
-- `chao-ban-rieng-le` #5: Một công ty quảng cáo đợt bán cổ phần trên báo nhưng chỉ có 20 người mua thì vẫn là chào bán riêng lẻ.
-- `chinh-sach-phat-trien-thi-truong` #5: Điều 6 chỉ khuyến khích nhà đầu tư trong nước tham gia thị trường chứng khoán.
-- `chung-chi-hanh-nghe-chung-khoan` #5: Người bị thu hồi chứng chỉ hành nghề vì vi phạm hành vi bị cấm tại Điều 12 được cấp lại sau 05 năm.
-- `chung-chi-quy` #5: Người mua chứng chỉ quỹ trở thành cổ đông của công ty quản lý quỹ.
-- `dich-vu-cho-vay-ky-quy` #5: Công ty chứng khoán chỉ có nghiệp vụ tư vấn đầu tư được cung cấp dịch vụ cho vay ký quỹ.
-- `dieu-kien-nhan-su-cong-ty-chung-khoan` #5: Công ty chứng khoán xin cấp phép 3 nghiệp vụ chỉ cần tổng cộng 03 nhân viên có chứng chỉ hành nghề.
-- `han-che-ngan-hang-giam-sat` #5: Hạn chế tại Điều 117 chỉ áp dụng cho ngân hàng giám sát với tư cách pháp nhân, không áp dụng cho nhân viên.
-- `menh-gia-chung-khoan` #5: Tổ chức phát hành không bao giờ được chào bán chứng khoán với giá thấp hơn mệnh giá.
-- `nguoi-hanh-nghe-chung-khoan` #5: Người có chứng chỉ hành nghề chứng khoán được tự mở văn phòng nhận môi giới cho khách với tư cách cá nhân.
-- `pham-vi-dieu-chinh-luat-chung-khoan` #5: Luật Chứng khoán 2019 chỉ áp dụng cho tổ chức, cá nhân Việt Nam.
-- `tam-ngung-dinh-chi-giao-dich-so` #5: Tổng giám đốc Sở giao dịch chứng khoán Việt Nam có quyền đình chỉ toàn bộ hoạt động giao dịch của Sở khi xảy ra thảm họa.
-- `thanh-vien-luu-ky-bu-tru` #5: Thành viên lưu ký của Tổng công ty lưu ký và bù trừ chỉ có thể là công ty chứng khoán.
-- `thi-truong-giao-dich-chung-khoan` #5: Theo khoản 27 Điều 4, thị trường giao dịch chứng khoán bắt buộc phải là một địa điểm vật lý.
-- `thong-tin-noi-bo` #5: Chỉ người nội bộ mới có thể nắm giữ thông tin nội bộ.
-
-### hanh-chinh (14)
-- `canh-cao` #5: Cảnh cáo có thể chỉ cần nói miệng với người vi phạm.
-- `cong-dan-nguoi-nuoc-ngoai-hanh-chinh` #5: Người nước ngoài tại Việt Nam được hưởng đầy đủ mọi quyền như công dân Việt Nam, kể cả quyền bầu cử.
-- `hinh-thuc-xu-phat` #5: Tịch thu tang vật chỉ có thể là hình thức xử phạt bổ sung.
-- `nguyen-tac-quan-ly-hanh-chinh` #5: Các nguyên tắc quản lý hành chính nhà nước không có giá trị bắt buộc.
-- `phuong-phap-quan-ly-hanh-chinh` #5: Cưỡng chế là phương pháp chủ yếu, luôn áp dụng trước thuyết phục.
-- `quan-he-phap-luat-hanh-chinh` #5: Quan hệ pháp luật hành chính chỉ phát sinh theo sáng kiến của cơ quan nhà nước.
-- `quan-ly-hanh-chinh-nha-nuoc` #5: Quản lý hành chính nhà nước chỉ do Chính phủ thực hiện.
-- `quyet-dinh-hanh-chinh` #5: Quyết định hành chính theo Luật Tố tụng hành chính có thể áp dụng nhiều lần cho mọi đối tượng.
-- `thoi-hieu-xu-phat` #5: Mọi vi phạm hành chính đều có thời hiệu xử phạt 02 năm.
-- `thu-tuc-hanh-chinh` #5: Thủ tục hành chính chỉ do Quốc hội quy định.
-- `tinh-tiet-tang-nang` #5: Vi phạm hành chính nhiều lần luôn là tình tiết giảm nhẹ vì người vi phạm đã quen.
-- `to-chuc-xa-hoi` #5: Tổ chức xã hội không bao giờ được thực hiện nhiệm vụ quản lý nhà nước.
-- `xu-phat-khong-lap-bien-ban` #5: Mọi vi phạm phạt dưới 500.000 đồng đều được xử phạt không lập biên bản, kể cả khi phát hiện qua camera.
-- `xu-phat-vi-pham-hanh-chinh` #5: Một người thực hiện nhiều hành vi vi phạm thì chỉ bị xử phạt một lần cho hành vi nặng nhất.
-
-### ly-luan-nn-pl (14)
-- `llc-ap-dung-phap-luat` #5: Văn bản áp dụng pháp luật được thực hiện nhiều lần đối với mọi chủ thể.
-- `llc-ban-chat-nha-nuoc` #5: Mọi nhà nước trong lịch sử đều có tính giai cấp và tính xã hội với tỷ lệ như nhau.
-- `llc-cau-thanh-vppl` #5: Mọi vi phạm pháp luật đều có yếu tố mục đích.
-- `llc-chinh-the` #5: Mọi nhà nước có vua đều là quân chủ tuyệt đối.
-- `llc-co-cau-qppl` #5: Mỗi điều luật luôn chứa đúng một quy phạm pháp luật với đủ ba bộ phận.
-- `llc-nhan-dan-thuc-hien-quyen-luc` #5: Hiến pháp 2013 chỉ ghi nhận hình thức dân chủ đại diện.
-- `llc-phap-nhan` #5: Mọi tổ chức được thành lập hợp pháp đều là pháp nhân.
-- `llc-quan-he-phap-luat` #5: Mọi quan hệ xã hội đều là quan hệ pháp luật.
-- `llc-quy-pham-phap-luat` #5: Quy phạm pháp luật chỉ có hiệu lực trong phạm vi cả nước.
-- `llc-su-kien-phap-ly` #5: Mọi sự kiện xảy ra trong đời sống đều là sự kiện pháp lý.
-- `llc-thuc-hien-phap-luat` #5: Sử dụng pháp luật là hình thức bắt buộc chủ thể phải thực hiện.
-- `llc-toi-pham` #5: Mọi pháp nhân đều có thể là chủ thể của tội phạm.
-- `llc-trach-nhiem-phap-ly` #5: Trách nhiệm pháp lý chỉ phát sinh khi có vi phạm pháp luật.
-- `llc-vi-pham-phap-luat` #5: Mọi hành vi trái pháp luật đều là vi phạm pháp luật.
-
-### hon-nhan-gia-dinh (13)
-- `chia-tai-san-chung-trong-thoi-ky-hon-nhan` #4: Vợ chồng chỉ được chia tài sản chung khi ly hôn.
-- `chia-tai-san-khi-ly-hon` #4: Khi ly hôn, tài sản chung của vợ chồng luôn được chia đúng một nửa cho mỗi bên.
-- `chung-song-nhu-vo-chong` #4: Mọi trường hợp nam, nữ chung sống như vợ chồng mà không đăng ký kết hôn đều không được pháp luật thừa nhận là vợ chồng.
-- `dang-ky-ket-hon` #4: Vợ chồng đã ly hôn muốn quay lại với nhau thì chỉ cần thông báo cho Ủy ban nhân dân xã, không cần đăng ký kết hôn lại.
-- `gia-dinh` #4: Con riêng sống chung với cha dượng thì giữa họ có đầy đủ mọi quyền và nghĩa vụ như giữa cha và con đẻ.
-- `han-che-quyen-yeu-cau-ly-hon` #4: Khi vợ đang nuôi con dưới 12 tháng tuổi thì cả vợ và chồng đều không có quyền yêu cầu ly hôn.
-- `hon-nhan` #4: Hôn nhân chỉ chấm dứt khi một bên vợ hoặc chồng chết.
-- `ket-hon-trai-phap-luat` #4: Mọi trường hợp kết hôn trái pháp luật đều bị Tòa án hủy khi có yêu cầu.
-- `ly-hon` #4: Hòa giải ở cơ sở là thủ tục bắt buộc phải tiến hành trước khi Tòa án giải quyết yêu cầu ly hôn.
-- `nuoi-con-sau-ly-hon` #4: Khi vợ chồng ly hôn, con dưới 36 tháng tuổi trong mọi trường hợp được giao cho người vợ trực tiếp nuôi.
-- `tai-san-rieng` #4: Trong chế độ tài sản theo luật định, tài sản riêng của một bên vợ hoặc chồng chỉ được dùng để đáp ứng nhu cầu riêng của bên đó.
-- `thuan-tinh-ly-hon` #4: Khi vợ chồng cùng yêu cầu ly hôn, Tòa án luôn công nhận thuận tình ly hôn.
-- `xac-dinh-con-chung` #4: Con do người vợ sinh ra trong thời kỳ hôn nhân đương nhiên là con chung của vợ chồng, không thể bị phản bác.
 
 ### so-huu-tri-tue (12)
 - `bien-phap-xu-ly-xam-pham-shtt` #5: Xâm phạm quyền sở hữu trí tuệ chỉ có thể bị xử lý hành chính.
@@ -451,20 +360,6 @@ Tổng khái niệm: 740. Chỉ liệt kê, không tự sửa. Ngưỡng chặn 
 - `xam-pham-quyen-tac-gia` #5: Chỉ hành vi sao chép mới bị coi là xâm phạm quyền tác giả.
 - `xam-pham-sang-che` #5: Chỉ sao chép nguyên vẹn kiểu dáng mới bị coi là xâm phạm.
 
-### to-tung-hanh-chinh (12)
-- `bao-dam-tranh-tung` #4: Quyền tranh tụng chỉ được bảo đảm ở phiên tòa sơ thẩm.
-- `dinh-chi-giai-quyet-vu-an` #4: Khi người khởi kiện là cá nhân chết, Tòa án luôn phải đình chỉ giải quyết vụ án.
-- `hanh-vi-hanh-chinh` #4: Hành vi hành chính chỉ gồm những hành động cụ thể của cơ quan nhà nước, không gồm việc không làm.
-- `nguoi-bi-kien` #4: Người trực tiếp thi hành quyết định cưỡng chế theo lệnh của cấp trên luôn là người bị kiện.
-- `nguoi-khoi-kien` #4: Cơ quan nhà nước không bao giờ có thể là người khởi kiện vụ án hành chính.
-- `quyen-khoi-kien` #4: Muốn khởi kiện quyết định hành chính, người dân bắt buộc phải khiếu nại trước.
-- `quyet-dinh-hanh-chinh-bi-kien` #4: Mọi quyết định hành chính đều là đối tượng khởi kiện vụ án hành chính.
-- `quyet-dinh-hanh-chinh-tthc` #4: Mọi văn bản do cơ quan hành chính nhà nước ban hành đều là quyết định hành chính.
-- `tam-dinh-chi-thi-hanh-quyet-dinh` #4: Tạm đình chỉ việc thi hành quyết định hành chính có thể áp dụng chỉ vì việc thi hành gây bất tiện cho người khởi kiện.
-- `thoi-han-khang-cao` #4: Thời hạn kháng cáo quyết định đình chỉ giải quyết vụ án của Tòa án cấp sơ thẩm cũng là 15 ngày.
-- `tra-lai-don-khoi-kien-hanh-chinh` #4: Trả lại đơn khởi kiện và đình chỉ giải quyết vụ án đều xảy ra sau khi Tòa án đã thụ lý vụ án.
-- `xet-xu-vang-mat` #4: Đương sự vắng mặt tại phiên tòa thì Tòa án luôn phải hoãn phiên tòa.
-
 ### dan-su-2 (11)
 - `bao-lanh` #5: Bên bảo lãnh luôn phải trả nợ ngay khi bên được bảo lãnh vay tiền.
 - `can-cu-boi-thuong-thiet-hai` #5: Theo BLDS 2015, người bị thiệt hại luôn phải chứng minh lỗi của người gây thiệt hại mới được bồi thường.
@@ -478,31 +373,6 @@ Tổng khái niệm: 740. Chỉ liệt kê, không tự sửa. Ngưỡng chặn 
 - `uy-quyen` #5: Hợp đồng ủy quyền luôn phải có thù lao.
 - `vay-tai-san` #5: Mọi hợp đồng vay tiền đều phải trả lãi.
 
-### lao-dong (11)
-- `boi-thuong-thiet-hai-lao-dong` #5: Người lao động sơ suất làm hỏng thiết bị trị giá nhỏ luôn phải bồi thường toàn bộ giá trị thiệt hại.
-- `chinh-sach-nha-nuoc-ve-lao-dong` #5: Mọi thỏa thuận khác với Bộ luật Lao động đều vô hiệu.
-- `dinh-cong` #5: Mọi cuộc ngừng việc tập thể của người lao động đều là đình công hợp pháp.
-- `doi-thoai-tai-noi-lam-viec` #5: Đối thoại tại nơi làm việc chỉ được tổ chức khi có tranh chấp lao động.
-- `hop-dong-lao-dong` #5: Chỉ văn bản có tiêu đề "Hợp đồng lao động" mới được coi là hợp đồng lao động.
-- `nguoi-lao-dong` #5: Hộ gia đình không thể là người sử dụng lao động.
-- `pham-vi-dieu-chinh-luat-lao-dong` #5: Bộ luật Lao động chỉ điều chỉnh quan hệ giữa người lao động và người sử dụng lao động.
-- `quan-he-lao-dong` #5: Cơ quan nhà nước có thẩm quyền không thể là chủ thể tham gia quan hệ lao động theo khoản 5 Điều 3.
-- `thoi-gio-lam-viec` #5: Người sử dụng lao động có quyền buộc người lao động làm thêm giờ mà không cần họ đồng ý trong mọi trường hợp.
-- `to-chuc-dai-dien-nguoi-lao-dong` #5: Theo BLLĐ 2019, công đoàn cơ sở là tổ chức đại diện người lao động duy nhất tại doanh nghiệp.
-- `tranh-chap-lao-dong` #5: Tranh chấp lao động chỉ là tranh chấp giữa người lao động và người sử dụng lao động.
-
-### hinh-su (10)
-- `can-cu-quyet-dinh-hinh-phat` #5: Tòa án chỉ căn cứ vào giá trị thiệt hại để quyết định hình phạt.
-- `chuan-bi-pham-toi` #5: Mọi hành vi chuẩn bị phạm tội đều phải chịu trách nhiệm hình sự.
-- `co-y-pham-toi` #5: Người không mong muốn hậu quả xảy ra thì không thể có lỗi cố ý.
-- `hieu-luc-ngoai-lanh-tho` #5: Công dân Việt Nam phạm tội ở nước ngoài bắt buộc phải bị truy cứu trách nhiệm hình sự tại Việt Nam.
-- `khach-the-toi-pham` #5: Đối tượng tác động của tội phạm luôn bị thiệt hại về vật chất.
-- `khai-niem-toi-pham` #5: Mọi hành vi có dấu hiệu tội phạm đều là tội phạm.
-- `mat-khach-quan-toi-pham` #5: Hậu quả nguy hiểm cho xã hội là dấu hiệu bắt buộc trong mọi cấu thành tội phạm.
-- `thoi-hieu-truy-cuu-trach-nhiem-hinh-su` #5: Thời hiệu truy cứu TNHS được áp dụng cho mọi tội phạm, không có ngoại lệ.
-- `tuoi-chiu-trach-nhiem-hinh-su` #5: Người 15 tuổi phải chịu TNHS về mọi tội phạm rất nghiêm trọng trong Bộ luật Hình sự.
-- `vo-y-pham-toi` #5: Người không thể thấy trước hậu quả vẫn có lỗi vô ý do cẩu thả.
-
 ### thuong-mai (10)
 - `boi-thuong-thiet-hai-ltm` #5: Theo Luật Thương mại, có thỏa thuận phạt vi phạm thì bên bị vi phạm chỉ được đòi phạt, không được đòi bồi thường.
 - `che-tai-thuong-mai` #5: Luật Thương mại chỉ cho phép áp dụng các chế tài được liệt kê, cấm các bên thỏa thuận thêm.
@@ -515,26 +385,15 @@ Tổng khái niệm: 740. Chỉ liệt kê, không tự sửa. Ngưỡng chặn 
 - `trong-tai-thuong-mai` #5: Thỏa thuận trọng tài chỉ có giá trị nếu được lập trước khi xảy ra tranh chấp.
 - `vi-pham-co-ban` #5: Bên bị vi phạm có quyền hủy bỏ hợp đồng với mọi vi phạm nhỏ.
 
-### canh-tranh (9)
-- `canh-tranh-khong-lanh-manh` #5: Chỉ khi thiệt hại thực tế đã xảy ra mới có hành vi cạnh tranh không lành mạnh.
-- `hanh-vi-cam-co-quan-nha-nuoc` #5: Luật Cạnh tranh chỉ cấm hành vi của doanh nghiệp, không điều chỉnh hành vi của cơ quan nhà nước.
-- `hanh-vi-canh-tranh-khong-lanh-manh-bi-cam` #5: So sánh sản phẩm của mình với đối thủ luôn bị cấm.
-- `tap-trung-kinh-te` #5: Mọi giao dịch mua lại doanh nghiệp đều bị cấm theo Luật Cạnh tranh.
-- `thi-phan` #5: Thị phần chỉ có thể xác định theo doanh thu bán ra.
-- `thi-truong-lien-quan` #5: Thị trường liên quan chỉ được xác định theo ranh giới hành chính cấp tỉnh.
-- `thoa-thuan-han-che-canh-tranh-bi-cam` #5: Theo Luật Cạnh tranh 2018, thỏa thuận ấn định giá chỉ bị cấm khi thị phần kết hợp của các bên từ 30% trở lên.
-- `thoa-thuan-han-che-canh-tranh` #5: Thỏa thuận miệng giữa các doanh nghiệp không thể bị coi là thỏa thuận hạn chế cạnh tranh.
-- `thong-bao-tap-trung-kinh-te` #5: Mọi giao dịch sáp nhập đều phải thông báo cho Ủy ban Cạnh tranh Quốc gia.
-
-### dan-su (8)
-- `bao-ve-quyen-so-huu` #5: Chủ sở hữu được dùng mọi biện pháp, kể cả bạo lực, để tự bảo vệ tài sản.
-- `chiem-huu` #5: Chỉ chủ sở hữu mới có thể chiếm hữu tài sản.
-- `dai-dien` #5: Giao dịch do người đại diện vượt quá phạm vi đại diện luôn ràng buộc người được đại diện.
-- `dieu-kien-hieu-luc-giao-dich` #5: Mọi hợp đồng không được lập thành văn bản đều vô hiệu.
-- `giao-dich-dan-su` #5: Mọi giao dịch dân sự đều cần sự thỏa thuận của ít nhất hai bên.
-- `nang-luc-hanh-vi-dan-su` #5: Mọi người từ đủ 18 tuổi đều có năng lực hành vi dân sự đầy đủ, không có ngoại lệ.
-- `nguyen-tac-co-ban-luat-dan-su` #5: Thỏa thuận hợp pháp giữa hai bên chỉ có giá trị với hai bên, người khác không phải tôn trọng.
-- `phap-nhan` #5: Thành viên pháp nhân luôn phải chịu trách nhiệm bằng tài sản riêng về nghĩa vụ của pháp nhân.
+### hanh-chinh (8)
+- `cong-dan-nguoi-nuoc-ngoai-hanh-chinh` #5: Người nước ngoài tại Việt Nam được hưởng đầy đủ mọi quyền như công dân Việt Nam, kể cả quyền bầu cử.
+- `nguyen-tac-quan-ly-hanh-chinh` #5: Các nguyên tắc quản lý hành chính nhà nước không có giá trị bắt buộc.
+- `phuong-phap-quan-ly-hanh-chinh` #5: Cưỡng chế là phương pháp chủ yếu, luôn áp dụng trước thuyết phục.
+- `quan-he-phap-luat-hanh-chinh` #5: Quan hệ pháp luật hành chính chỉ phát sinh theo sáng kiến của cơ quan nhà nước.
+- `quan-ly-hanh-chinh-nha-nuoc` #5: Quản lý hành chính nhà nước chỉ do Chính phủ thực hiện.
+- `quyet-dinh-hanh-chinh` #5: Quyết định hành chính theo Luật Tố tụng hành chính có thể áp dụng nhiều lần cho mọi đối tượng.
+- `thu-tuc-hanh-chinh` #5: Thủ tục hành chính chỉ do Quốc hội quy định.
+- `to-chuc-xa-hoi` #5: Tổ chức xã hội không bao giờ được thực hiện nhiệm vụ quản lý nhà nước.
 
 ### dau-tu (7)
 - `ldt-chap-thuan-chu-truong-dau-tu` #5: Mọi dự án đầu tư đều phải qua thủ tục chấp thuận chủ trương đầu tư.
@@ -587,6 +446,13 @@ Tổng khái niệm: 740. Chỉ liệt kê, không tự sửa. Ngưỡng chặn 
 - `xd-thu-tuc-rut-gon` #5: Văn bản ban hành theo thủ tục rút gọn bắt buộc phải chờ đủ 45 ngày mới có hiệu lực.
 - `xd-van-ban-qppl` #5: Mọi văn bản do cơ quan nhà nước ban hành đều là văn bản quy phạm pháp luật.
 
+### chung-khoan (5)
+- `chung-chi-hanh-nghe-chung-khoan` #5: Người bị thu hồi chứng chỉ hành nghề vì vi phạm hành vi bị cấm tại Điều 12 được cấp lại sau 05 năm.
+- `chung-chi-quy` #5: Người mua chứng chỉ quỹ trở thành cổ đông của công ty quản lý quỹ.
+- `dieu-kien-nhan-su-cong-ty-chung-khoan` #5: Công ty chứng khoán xin cấp phép 3 nghiệp vụ cần tổng cộng tối thiểu 03 nhân viên có chứng chỉ hành nghề, không phụ thuộc vào số nghiệp vụ xin cấp phép.
+- `nguoi-hanh-nghe-chung-khoan` #5: Người có chứng chỉ hành nghề chứng khoán được tự mở văn phòng nhận môi giới cho khách với tư cách cá nhân.
+- `tam-ngung-dinh-chi-giao-dich-so` #5: Tổng giám đốc Sở giao dịch chứng khoán Việt Nam có quyền đình chỉ toàn bộ hoạt động giao dịch của Sở khi xảy ra thảm họa.
+
 ### ngan-hang (5)
 - `bao-hiem-tien-gui` #5: Người gửi tiền luôn được tổ chức bảo hiểm tiền gửi trả lại toàn bộ số tiền gửi, không giới hạn.
 - `chinh-sach-tien-te-quoc-gia` #5: Thống đốc Ngân hàng Nhà nước quyết định chỉ tiêu lạm phát hằng năm.
@@ -616,3 +482,11 @@ Tổng khái niệm: 740. Chỉ liệt kê, không tự sửa. Ngưỡng chặn 
 - `cong-ty-co-phan-1990` #5: Theo Luật Công ty 1990, công ty cổ phần chỉ cần tối thiểu ba cổ đông.
 - `hngd-1959-ket-hon-ly-hon` #5: Theo Luật HNGĐ 1959, khi người vợ có thai, cả vợ và chồng đều không được xin ly hôn.
 - `sac-lenh-97-dan-luat` #5: Theo Sắc lệnh 97/SL, con đã thành niên vẫn bắt buộc phải có cha mẹ đồng ý mới được kết hôn.
+
+### to-tung-hanh-chinh (3)
+- `dinh-chi-giai-quyet-vu-an` #4: Khi người khởi kiện là cá nhân đã chết, Tòa án phải đình chỉ giải quyết vụ án dù quyền, nghĩa vụ của họ được thừa kế.
+- `tam-dinh-chi-thi-hanh-quyet-dinh` #4: Tạm đình chỉ việc thi hành quyết định hành chính có thể áp dụng khi việc thi hành gây bất tiện cho người khởi kiện, dù chưa dẫn đến hậu quả nghiêm trọng không khắc phục được.
+- `thoi-han-khang-cao` #4: Thời hạn kháng cáo quyết định đình chỉ giải quyết vụ án của Tòa án cấp sơ thẩm là 15 ngày.
+
+### canh-tranh (1)
+- `thoa-thuan-han-che-canh-tranh-bi-cam` #5: Theo Luật Cạnh tranh 2018, thỏa thuận ấn định giá chỉ bị cấm khi thị phần kết hợp của các bên từ 30% trở lên.

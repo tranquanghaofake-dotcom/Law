@@ -9,7 +9,7 @@ export type Finding = { rule: Rule; subject: string; conceptId: string; item: nu
 /** Từ tuyệt đối; giữ đồng bộ với `hasAbsoluteWord` ở apps/web/src/lib/engine/text.ts. */
 const ABSOLUTE = /(?<![\p{L}])(?:luôn|mọi|tất cả|không bao giờ|duy nhất|đều|bắt buộc|không thể|chỉ)(?![\p{L}])/iu;
 /** Stem phủ định: câu hỏi "cái nào KHÔNG/SAI…" buộc người học đảo logic, dễ trả lời sai vì đọc vội (NBME: tránh). */
-const NEGATIVE_STEM = /(?<![\p{L}])(?:không phải|không đúng|không thuộc|không bao gồm|ngoại trừ|trừ trường hợp|sai)(?![\p{L}])|\bKHÔNG\b/u;
+const NEGATIVE_STEM = /(?<![\p{L}])(?:không phải|không đúng|không thuộc|không bao gồm|ngoại trừ|trừ trường hợp|sai(?! (?:sự|lệch|phạm|trái|lầm)))(?![\p{L}])|\bKHÔNG\b/u;
 const STOP = new Set('và của là các những trong theo cho được có không một để khi với về này đó tại do bởi như hoặc thì nào sau đây đã sẽ bị phải'.split(' '));
 
 export const wordsOf = (s: string): Set<string> => new Set((s.toLowerCase().match(/\p{L}+/gu) ?? []).filter((w) => w.length > 2 && !STOP.has(w)));
