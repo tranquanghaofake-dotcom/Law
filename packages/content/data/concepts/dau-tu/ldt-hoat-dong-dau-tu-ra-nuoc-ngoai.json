@@ -159,9 +159,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Nhà đầu tư ra nước ngoài chỉ phải tuân thủ pháp luật Việt Nam.",
+   "statement": "Nhà nước Việt Nam chịu trách nhiệm về hiệu quả hoạt động đầu tư ở nước ngoài của nhà đầu tư.",
    "answer": false,
-   "explain": "Sai. Khoản 2 Điều 38: tuân thủ cả pháp luật nước tiếp nhận đầu tư và điều ước quốc tế liên quan."
+   "explain": "Sai. Khoản 2 Điều 38: nhà đầu tư tự chịu trách nhiệm về hiệu quả hoạt động đầu tư ở nước ngoài."
   },
   {
    "type": "recall",

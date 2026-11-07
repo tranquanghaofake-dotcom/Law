@@ -159,9 +159,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi dự án đầu tư đều phải qua thủ tục chấp thuận chủ trương đầu tư.",
+   "statement": "Dự án đầu tư xây dựng nhà máy điện hạt nhân không phải chấp thuận chủ trương đầu tư.",
    "answer": false,
-   "explain": "Sai. Chỉ dự án thuộc diện quy định tại Điều 24 mới phải chấp thuận chủ trương đầu tư."
+   "explain": "Sai. Khoản 6 Điều 24: dự án đầu tư nhà máy điện hạt nhân thuộc diện chấp thuận chủ trương đầu tư."
   },
   {
    "type": "recall",
