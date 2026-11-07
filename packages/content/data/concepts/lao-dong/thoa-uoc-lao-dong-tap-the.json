@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 75 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 75 — thỏa ước được ký kết bằng văn bản.",
+    "Sai: lời nói không đáp ứng hình thức.",
+    "Sai: hành vi không đáp ứng hình thức.",
+    "Sai: hình thức văn bản là bắt buộc."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 75 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 75 không có \"thỏa ước quốc gia bắt buộc\".",
+    "Sai: thỏa ước doanh nghiệp có trong khoản 1.",
+    "Sai: thỏa ước ngành có trong khoản 1.",
+    "Sai: thỏa ước nhiều doanh nghiệp có trong khoản 1."
+   ]
   },
   {
    "type": "pair",

@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 472 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: Điều 472 — giao tài sản cho bên thuê sử dụng trong một thời hạn.",
+    "Sai: thuê không chuyển quyền sở hữu.",
+    "Sai: thuê không chuyển quyền sở hữu.",
+    "Sai: bên thuê không có quyền định đoạt."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 472, 494 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: Điều 472, 494 — thuê phải trả tiền thuê, mượn không phải trả tiền.",
+    "Sai: ngược lại với quy định.",
+    "Sai: cả hai đều không chuyển quyền sở hữu.",
+    "Sai: khác biệt nằm ở việc trả tiền."
+   ]
   },
   {
    "type": "pair",

@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 25 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 25 — không quá 60 ngày với công việc cần trình độ cao đẳng trở lên.",
+    "Sai: 30 ngày là với trình độ trung cấp, công nhân kỹ thuật.",
+    "Sai: luật không có mốc 90 ngày.",
+    "Sai: 180 ngày là với người quản lý doanh nghiệp."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 25 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 25 — chỉ được thử việc một lần đối với một công việc.",
+    "Sai: chỉ một lần.",
+    "Sai: chỉ một lần.",
+    "Sai: có giới hạn một lần."
+   ]
   },
   {
    "type": "pair",

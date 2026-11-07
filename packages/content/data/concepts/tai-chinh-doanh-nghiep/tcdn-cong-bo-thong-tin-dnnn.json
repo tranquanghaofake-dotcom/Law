@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 109 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm c khoản 1 Điều 109 — báo cáo tài chính năm đã kiểm toán công bố trong 150 ngày kể từ khi kết thúc năm tài chính.",
+    "Sai: 30 ngày quá ngắn, không phải thời hạn của điểm c khoản 1 Điều 109.",
+    "Sai: 90 ngày không phải thời hạn của điểm c khoản 1 Điều 109.",
+    "Sai: 120 ngày không phải thời hạn của điểm c khoản 1 Điều 109."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 109 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 109 — công bố trên trang thông tin điện tử của công ty và của cơ quan đại diện chủ sở hữu.",
+    "Sai: niêm yết tại trụ sở không phải kênh công bố của Điều 109.",
+    "Sai: Công báo và báo in không phải kênh luật định ở Điều 109.",
+    "Sai: gửi cho các cơ quan không phải là công bố thông tin ra công chúng."
+   ]
   },
   {
    "type": "pair",

@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 9 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 9 — tự nguyện khắc phục hậu quả, bồi thường thiệt hại là tình tiết giảm nhẹ.",
+    "Sai: vi phạm có tổ chức là tình tiết tăng nặng.",
+    "Sai: tái phạm là tình tiết tăng nặng.",
+    "Sai: lợi dụng chức vụ là tình tiết tăng nặng."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 9 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 9 — vượt quá yêu cầu của tình thế cấp thiết là tình tiết giảm nhẹ.",
+    "Sai: chỉ tình thế cấp thiết (không vượt quá) mới không xử phạt.",
+    "Sai: luật ghi rõ là tình tiết giảm nhẹ.",
+    "Sai: không phải căn cứ chuyển hình sự."
+   ]
   },
   {
    "type": "pair",

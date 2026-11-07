@@ -79,7 +79,13 @@
    "source": {
     "kind": "textbook",
     "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 7 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
-   }
+   },
+   "why": [
+    "Đúng: Toàn quyền Đông Dương đứng đầu Liên bang Đông Dương.",
+    "Sai: Khâm sứ đứng đầu Trung Kỳ.",
+    "Sai: Thống sứ đứng đầu Bắc Kỳ.",
+    "Sai: vua Nguyễn không đứng đầu Liên bang."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "textbook",
     "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 7 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
-   }
+   },
+   "why": [
+    "Đúng: Trung Kỳ do Khâm sứ đứng đầu.",
+    "Sai: Thống sứ ở Bắc Kỳ.",
+    "Sai: Thống đốc ở Nam Kỳ.",
+    "Sai: Công sứ đứng đầu cấp tỉnh."
+   ]
   },
   {
    "type": "pair",

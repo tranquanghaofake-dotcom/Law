@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 148 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 148 — hợp đồng chuyển nhượng quyền đã xác lập trên cơ sở đăng ký chỉ có hiệu lực khi được đăng ký tại cơ quan quản lý nhà nước.",
+    "Sai: ký và đóng dấu chưa đủ; phải đăng ký.",
+    "Sai: công chứng không thay được đăng ký.",
+    "Sai: thanh toán không quyết định hiệu lực của hợp đồng chuyển nhượng."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 148 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 148 — hợp đồng sử dụng có hiệu lực theo thỏa thuận giữa các bên.",
+    "Sai: đăng ký hợp đồng sử dụng không phải điều kiện hiệu lực.",
+    "Sai: luật không đặt mốc 30 ngày.",
+    "Sai: không cần Bộ duyệt."
+   ]
   },
   {
    "type": "pair",

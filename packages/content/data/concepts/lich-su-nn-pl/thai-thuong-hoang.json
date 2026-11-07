@@ -79,7 +79,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển V, tờ 24b"
-   }
+   },
+   "why": [
+    "Đúng: gia pháp họ Trần — con lớn thì nối ngôi, cha lui làm Thượng hoàng cùng trông coi chính sự.",
+    "Sai: đây không phải gia pháp họ Trần về ngôi vua.",
+    "Sai: vua không do triều thần bầu.",
+    "Sai: không truyền ngôi cho con gái."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển V, tờ 24a"
-   }
+   },
+   "why": [
+    "Đúng: năm 1258 Trần Thái Tông nhường ngôi cho thái tử Hoảng (Trần Thánh Tông).",
+    "Sai: Trần Hưng Đạo không làm vua.",
+    "Sai: Trần Thủ Độ không làm vua.",
+    "Sai: Lý Chiêu Hoàng đã nhường ngôi năm 1225."
+   ]
   },
   {
    "type": "pair",

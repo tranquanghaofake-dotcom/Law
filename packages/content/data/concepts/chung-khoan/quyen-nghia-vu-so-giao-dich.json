@@ -72,7 +72,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 46 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 46 — sau khi Ủy ban chấp thuận.",
+    "Sai: Thủ tướng không chấp thuận quy chế.",
+    "Sai: Quốc hội không chấp thuận.",
+    "Sai: hiệp hội không chấp thuận."
+   ]
   },
   {
    "type": "mcq",
@@ -89,7 +95,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 46 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm e khoản 1 Điều 46 — chấp thuận, hủy bỏ tư cách thành viên.",
+    "Sai: cấp phép công ty chứng khoán thuộc Ủy ban.",
+    "Sai: cấp Giấy chứng nhận chào bán thuộc Ủy ban.",
+    "Sai: ban hành nghị định thuộc Chính phủ."
+   ]
   },
   {
    "type": "pair",
@@ -155,7 +167,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 46 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm h khoản 1 Điều 46 — làm trung gian hòa giải.",
+    "Sai: Sở không ra bản án.",
+    "Sai: Sở không thu hồi giấy phép.",
+    "Sai: không chuyển Quốc hội."
+   ]
   },
   {
    "type": "recall",

@@ -88,7 +88,13 @@
    "source": {
     "kind": "primary",
     "cite": "Quốc triều hình luật, Điều 1"
-   }
+   },
+   "why": [
+    "Đúng: Điều 1 — xuy hình 5 bậc, từ 10 đến 50 roi.",
+    "Sai: 60–100 là trượng hình.",
+    "Sai: 60–100 trượng là trượng hình, không phải xuy.",
+    "Sai: xuy có 5 bậc."
+   ]
   },
   {
    "type": "mcq",
@@ -105,7 +111,13 @@
    "source": {
     "kind": "primary",
     "cite": "Quốc triều hình luật, Điều 1"
-   }
+   },
+   "why": [
+    "Đúng: Điều 1 — tử hình có ba bậc: thắt cổ, chém; chém bêu đầu; lăng trì.",
+    "Sai: Quốc triều hình luật không có bắn.",
+    "Sai: lưu, đồ, xuy là hình phạt khác.",
+    "Sai: trượng, xuy, lưu không phải bậc của tử hình."
+   ]
   },
   {
    "type": "pair",

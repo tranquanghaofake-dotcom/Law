@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 98 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: Điều 98 — Quốc hội bầu Thủ tướng trong số đại biểu Quốc hội.",
+    "Sai: Chủ tịch nước đề nghị, không bổ nhiệm.",
+    "Sai: không bầu trực tiếp.",
+    "Sai: Chính phủ không bầu Thủ tướng."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 98 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 98 — Thủ tướng bổ nhiệm Thứ trưởng.",
+    "Sai: Phó Thủ tướng không bổ nhiệm.",
+    "Sai: Quốc hội không bổ nhiệm Thứ trưởng.",
+    "Sai: Bộ trưởng Tư pháp không có thẩm quyền này."
+   ]
   },
   {
    "type": "pair",

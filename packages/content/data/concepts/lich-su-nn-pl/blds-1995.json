@@ -80,7 +80,13 @@
    "source": {
     "kind": "primary",
     "cite": "Bộ luật Dân sự 1995"
-   }
+   },
+   "why": [
+    "Đúng: Bộ luật Dân sự 1995 thông qua 28/10/1995, có hiệu lực 01/7/1996.",
+    "Sai: 28/10/1995 là ngày thông qua.",
+    "Sai: 01/01/2006 là ngày hiệu lực của Bộ luật Dân sự 2005.",
+    "Sai: 01/01/2017 là ngày hiệu lực của Bộ luật Dân sự 2015."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "primary",
     "cite": "Bộ luật Dân sự 1995, Điều 1"
-   }
+   },
+   "why": [
+    "Đúng: Điều 1 Bộ luật Dân sự 1995 bảo đảm sự bình đẳng và an toàn pháp lý trong quan hệ dân sự.",
+    "Sai: quan hệ dân sự dựa trên bình đẳng, không ưu tiên Nhà nước.",
+    "Sai: Bộ luật hướng tới hạn chế can thiệp hành chính.",
+    "Sai: Điều 1 không đặt lợi ích tập thể luôn trên hết."
+   ]
   },
   {
    "type": "pair",

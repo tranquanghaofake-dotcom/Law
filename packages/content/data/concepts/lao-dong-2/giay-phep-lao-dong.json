@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 155 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 155 — thời hạn của giấy phép lao động tối đa 02 năm.",
+    "Sai: 03 năm vượt mức tối đa.",
+    "Sai: 05 năm vượt mức tối đa.",
+    "Sai: 01 năm thấp hơn mức tối đa luật cho phép; luật đặt trần 02 năm."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 155 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 155 — chỉ được gia hạn một lần, thời hạn tối đa 02 năm.",
+    "Sai: Điều 155 giới hạn chỉ một lần gia hạn.",
+    "Sai: không có gia hạn hai lần; mỗi lần tối đa 02 năm chứ không phải 01 năm.",
+    "Sai: giấy phép lao động được gia hạn một lần."
+   ]
   },
   {
    "type": "pair",

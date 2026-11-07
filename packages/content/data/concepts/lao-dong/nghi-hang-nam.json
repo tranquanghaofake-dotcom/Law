@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 113 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 113 — 12 ngày làm việc với điều kiện bình thường.",
+    "Sai: 14 ngày dành cho người chưa thành niên, khuyết tật, công việc nặng nhọc.",
+    "Sai: 10 ngày thấp hơn mức luật định.",
+    "Sai: 16 ngày dành cho công việc đặc biệt nặng nhọc, độc hại."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 113 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 1 Điều 113 — người chưa thành niên được 14 ngày làm việc.",
+    "Sai: 12 ngày là mức bình thường.",
+    "Sai: 16 ngày là mức cho công việc đặc biệt nặng nhọc.",
+    "Sai: không có mức 18 ngày."
+   ]
   },
   {
    "type": "pair",

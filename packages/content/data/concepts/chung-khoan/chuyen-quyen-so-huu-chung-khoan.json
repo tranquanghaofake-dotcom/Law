@@ -76,7 +76,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 64 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 64 — vào ngày bút toán ghi sổ trên tài khoản lưu ký.",
+    "Sai: khớp lệnh chưa chuyển quyền sở hữu.",
+    "Sai: thanh toán theo hợp đồng không phải mốc ở khoản 2.",
+    "Sai: sổ cổ đông của công ty không phải mốc."
+   ]
   },
   {
    "type": "mcq",
@@ -93,7 +99,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 64 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 64 — ngày ghi Sổ đăng ký người sở hữu do Tổng công ty quản lý.",
+    "Sai: ký hợp đồng chưa chuyển quyền.",
+    "Sai: không cần công chứng, thuế trước bạ.",
+    "Sai: Sở giao dịch không chấp thuận việc này."
+   ]
   },
   {
    "type": "pair",
@@ -155,7 +167,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 64 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: ngày 4/3 chưa có bút toán ghi sổ nên cổ phiếu vẫn là di sản của A.",
+    "Sai: khớp lệnh chưa chuyển quyền sở hữu.",
+    "Sai: công ty môi giới không sở hữu cổ phiếu.",
+    "Sai: cái chết của bên bán không làm hủy giao dịch."
+   ]
   },
   {
    "type": "recall",

@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 18 Luật Trọng tài thương mại 2010 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 18 Luật Trọng tài thương mại — người xác lập không có thẩm quyền thì thỏa thuận trọng tài vô hiệu.",
+    "Sai: thỏa thuận trọng tài độc lập với hợp đồng chính (Điều 19).",
+    "Sai: giá trị hợp đồng không phải căn cứ vô hiệu.",
+    "Sai: nơi cư trú các bên không phải căn cứ vô hiệu."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 19 Luật Trọng tài thương mại 2010 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 19 — thỏa thuận trọng tài độc lập với hợp đồng; hợp đồng chính vô hiệu không làm thỏa thuận trọng tài vô hiệu.",
+    "Sai: thỏa thuận trọng tài không tự vô hiệu theo hợp đồng chính.",
+    "Sai: không cần Tòa án đồng ý.",
+    "Sai: một bên không đơn phương thay đổi thẩm quyền."
+   ]
   },
   {
    "type": "pair",

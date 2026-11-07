@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 116 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm g khoản 2 Điều 116 — báo cáo Ủy ban Chứng khoán Nhà nước.",
+    "Sai: ngân hàng giám sát không có quyền xử phạt.",
+    "Sai: không có quyền giải thể quỹ.",
+    "Sai: không có quyền phạt."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 116 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm d khoản 2 Điều 116 — theo yêu cầu hợp pháp của công ty quản lý quỹ.",
+    "Sai: nhà đầu tư lớn không ra lệnh thu, chi.",
+    "Sai: nhà đầu tư không ra lệnh thu, chi.",
+    "Sai: Sở giao dịch không ra lệnh thu, chi."
+   ]
   },
   {
    "type": "pair",
@@ -158,7 +170,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 116 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm c, g khoản 2 Điều 116 — giám sát tuân thủ và báo cáo vi phạm.",
+    "Sai: nghĩa vụ giám sát độc lập với quyết định đầu tư.",
+    "Sai: đây là vi phạm nghĩa vụ luật định.",
+    "Sai: ưu tiên lệnh là nghĩa vụ công ty chứng khoán."
+   ]
   },
   {
    "type": "recall",

@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 103 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 103 — Hội thẩm tham gia xét xử sơ thẩm, trừ thủ tục rút gọn.",
+    "Sai: phúc thẩm, giám đốc thẩm không có Hội thẩm theo Điều 103.",
+    "Sai: giám đốc thẩm, tái thẩm không có Hội thẩm.",
+    "Sai: Hội thẩm không tham gia thi hành án."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 103 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 103 — thủ tục rút gọn là ngoại lệ.",
+    "Sai: bị cáo nước ngoài không phải ngoại lệ.",
+    "Sai: vụ án dân sự sơ thẩm vẫn có Hội thẩm.",
+    "Sai: xét xử kín vẫn có Hội thẩm."
+   ]
   },
   {
    "type": "pair",

@@ -79,7 +79,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển II, tờ 17b"
-   }
+   },
+   "why": [
+    "Đúng: Toàn thư — \"Thái thú cai trị một quận\".",
+    "Sai: Thứ sử cai trị một châu.",
+    "Sai: Lạc tướng là chức của người Việt.",
+    "Sai: Tiết độ sứ là chức thời Đường."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển II, tờ 17b"
-   }
+   },
+   "why": [
+    "Đúng: Giao Chỉ, Cửu Chân, Nhật Nam đều thuộc Tượng Quận thời Tần.",
+    "Sai: Nam Hải, Thương Ngô, Uất Lâm thuộc vùng Lưỡng Quảng.",
+    "Sai: Châu Nhai, Đạm Nhĩ thuộc đảo Hải Nam; Hợp Phố thuộc Quảng Tây.",
+    "Sai: Long Biên, Mê Linh, Chu Diên là tên huyện, không phải quận."
+   ]
   },
   {
    "type": "pair",
@@ -153,7 +165,13 @@
     "Vì người Việt được tự bầu ra Thái thú để cai quản quận huyện trong suốt thời kỳ thuộc Hán"
    ],
    "answer": 0,
-   "explain": "Đây là cách hiểu phổ biến trong giáo trình: chính quyền đô hộ thời đầu dùng quan lại người Hán ở cấp châu, quận, còn cấp dưới tạm dựa vào Lạc tướng bản địa."
+   "explain": "Đây là cách hiểu phổ biến trong giáo trình: chính quyền đô hộ thời đầu dùng quan lại người Hán ở cấp châu, quận, còn cấp dưới tạm dựa vào Lạc tướng bản địa.",
+   "why": [
+    "Đúng: theo giáo trình, thời đầu chính quyền đô hộ chỉ nắm cấp châu, quận; cấp dưới vẫn để Lạc tướng cai quản.",
+    "Sai: Lạc tướng không được làm Thứ sử.",
+    "Sai: Lạc tướng là chức có từ thời Hùng Vương, không do nhà Hán đặt.",
+    "Sai: Thái thú do nhà Hán bổ nhiệm."
+   ]
   },
   {
    "type": "recall",

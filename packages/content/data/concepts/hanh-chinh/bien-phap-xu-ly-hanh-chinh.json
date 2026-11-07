@@ -73,7 +73,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 2 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 2 — áp dụng với cá nhân vi phạm pháp luật về an ninh, trật tự, an toàn xã hội mà không phải tội phạm.",
+    "Sai: biện pháp xử lý hành chính chỉ áp dụng với cá nhân, không với tổ chức.",
+    "Sai: vi phạm thuế, kế toán bị xử phạt hành chính, không áp dụng biện pháp xử lý hành chính.",
+    "Sai: kỷ luật cán bộ là trách nhiệm kỷ luật."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 2 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: phạt tiền là hình thức xử phạt, không phải biện pháp xử lý hành chính.",
+    "Sai: giáo dục tại xã, phường, đặc khu là biện pháp xử lý hành chính.",
+    "Sai: đưa vào trường giáo dưỡng là biện pháp xử lý hành chính.",
+    "Sai: cai nghiện bắt buộc là biện pháp xử lý hành chính."
+   ]
   },
   {
    "type": "pair",

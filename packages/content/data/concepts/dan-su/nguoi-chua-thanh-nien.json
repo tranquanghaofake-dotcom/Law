@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 21 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 21 — giao dịch của người chưa đủ 6 tuổi do người đại diện theo pháp luật xác lập, thực hiện.",
+    "Sai: người chưa đủ 6 tuổi không tự xác lập giao dịch.",
+    "Sai: Ủy ban nhân dân xã không đại diện.",
+    "Sai: không cần Tòa án chỉ định."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 21 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 21 — giao dịch liên quan động sản phải đăng ký (xe máy) cần người đại diện theo pháp luật đồng ý.",
+    "Sai: tuổi lao động không thay thế điều kiện của khoản 4 Điều 21.",
+    "Sai: không phải đợi 18 tuổi; có đồng ý của người đại diện là được.",
+    "Sai: không cần Tòa án cho phép."
+   ]
   },
   {
    "type": "pair",

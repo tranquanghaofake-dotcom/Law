@@ -4,6 +4,7 @@
   import type { QuizSet, QuizQuestion } from '$lib/content/types';
   import { loadIndex, loadSet } from '$lib/content/loader';
   import { shuffle } from '$lib/engine/session';
+  import { pickedWhy } from '$lib/engine/why';
   import { repo } from '$lib/store/progress-repo';
   import { stats } from '$lib/store/stats';
   import { settings } from '$lib/store/settings.svelte';
@@ -148,10 +149,12 @@
   {#if wrong.length}
     <section class="review" aria-labelledby="rv-h"><h2 id="rv-h">Câu cần xem lại <span class="muted">({wrong.length})</span></h2>
       {#each wrong as w (w.n)}
+        {@const pw = pickedWhy(w.q, w.picked)}
         <article class="card item rv">
           <p class="rv-n">Câu {w.n}</p><b>{w.q.q}</b>
           <p class="rv-pick">Bạn chọn: <span>{w.picked}</span></p>
           <p class="ans">Đáp án đúng: {w.q.options[w.q.answer]}</p>
+          {#if pw}<p class="why-wrong"><b>Bạn chọn «{pw.option}»:</b> {pw.text}</p>{/if}
           <p>{w.q.explain}</p><p class="source muted">Căn cứ: {w.q.basis}{#if w.q.url} · <a href={w.q.url} target="_blank" rel="noopener">Xem điều luật</a>{/if}</p>
         </article>
       {/each}
@@ -179,8 +182,10 @@
     </div>
   </article>
   {#if chosen !== null}
+    {@const pickedFb = pickedWhy(q, q.shuffled[chosen])}
     <div class="feedback {chosen === q.answerIdx ? 'ok' : 'bad'}" role="status">
       <p class="verdict">{chosen === q.answerIdx ? 'Chính xác.' : `Chưa đúng. Đáp án: ${KEYS[q.answerIdx]}`}</p>
+      {#if pickedFb}<p class="why-wrong"><b>Bạn chọn «{pickedFb.option}»:</b> {pickedFb.text}</p>{/if}
       <p>{q.explain}</p>
       <p class="source muted">Căn cứ: {q.basis}{#if q.url} · <a href={q.url} target="_blank" rel="noopener">Xem điều luật</a>{/if}</p>
       <LegalNote compact />

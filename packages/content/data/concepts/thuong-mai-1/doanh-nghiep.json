@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 10 Điều 4 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 10 Điều 4 — tổ chức có tên riêng, tài sản, trụ sở giao dịch, thành lập theo pháp luật nhằm mục đích kinh doanh.",
+    "Sai: cá nhân kinh doanh có đăng ký thuế chưa phải doanh nghiệp.",
+    "Sai: hộ buôn bán nhỏ không đăng ký không phải doanh nghiệp.",
+    "Sai: cơ quan nhà nước không phải doanh nghiệp."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 188 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: doanh nghiệp tư nhân không có tư cách pháp nhân (Điều 188).",
+    "Sai: công ty cổ phần có tư cách pháp nhân.",
+    "Sai: công ty hợp danh có tư cách pháp nhân.",
+    "Sai: công ty trách nhiệm hữu hạn một thành viên có tư cách pháp nhân."
+   ]
   },
   {
    "type": "pair",

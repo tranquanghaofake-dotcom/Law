@@ -76,7 +76,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 13 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 13 — 10 nghìn đồng.",
+    "Sai: 100 nghìn là mệnh giá trái phiếu.",
+    "Sai: không phải 1 nghìn.",
+    "Sai: không phải 1 triệu."
+   ]
   },
   {
    "type": "mcq",
@@ -93,7 +99,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 13 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 13 — 100 nghìn đồng và bội số.",
+    "Sai: 10 nghìn là mệnh giá cổ phiếu, chứng chỉ quỹ.",
+    "Sai: không phải 1 triệu.",
+    "Sai: luật quy định mệnh giá cố định."
+   ]
   },
   {
    "type": "pair",

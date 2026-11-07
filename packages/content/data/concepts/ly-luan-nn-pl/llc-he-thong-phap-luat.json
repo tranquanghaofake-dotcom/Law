@@ -69,7 +69,13 @@
     "Thời điểm ban hành và thời hạn có hiệu lực pháp lý"
    ],
    "answer": 0,
-   "explain": "Lý luận chung về hệ thống pháp luật."
+   "explain": "Lý luận chung về hệ thống pháp luật.",
+   "why": [
+    "Đúng: căn cứ phân chia ngành luật là đối tượng và phương pháp điều chỉnh.",
+    "Sai: số điều luật không phải căn cứ.",
+    "Sai: cơ quan ban hành không phải căn cứ phân ngành.",
+    "Sai: thời điểm ban hành không phải căn cứ."
+   ]
   },
   {
    "type": "mcq",
@@ -82,7 +88,13 @@
     "Toàn bộ quy phạm pháp luật của một nước, không tách theo ngành luật"
    ],
    "answer": 0,
-   "explain": "Chế định: hợp đồng, thừa kế, hôn nhân…"
+   "explain": "Chế định: hợp đồng, thừa kế, hôn nhân…",
+   "why": [
+    "Đúng: chế định là nhóm quy phạm điều chỉnh một nhóm quan hệ cùng loại trong ngành luật.",
+    "Sai: một điều luật nhỏ hơn chế định.",
+    "Sai: văn bản luật là hình thức, không phải chế định.",
+    "Sai: toàn bộ quy phạm là hệ thống pháp luật."
+   ]
   },
   {
    "type": "pair",

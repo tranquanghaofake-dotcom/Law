@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 55 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 55 — ngân sách trung ương giữ vai trò chủ đạo.",
+    "Sai: ngân sách địa phương không giữ vai trò chủ đạo.",
+    "Sai: ngân sách cấp xã là một phần ngân sách địa phương.",
+    "Sai: quỹ dự trữ quốc gia không phải ngân sách."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 55 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 55 — đơn vị tiền tệ quốc gia là Đồng Việt Nam.",
+    "Sai: Đô la Mỹ là ngoại tệ.",
+    "Sai: vàng không phải đơn vị tiền tệ.",
+    "Sai: khoản 3 Điều 55 có quy định."
+   ]
   },
   {
    "type": "pair",

@@ -89,7 +89,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 19 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm đ khoản 1 Điều 19 — thường trú từ 05 năm.",
+    "Sai: không phải 03 năm.",
+    "Sai: không phải 10 năm.",
+    "Sai: không phải 02 năm."
+   ]
   },
   {
    "type": "mcq",
@@ -106,7 +112,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 19 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 19 — miễn biết tiếng Việt, thường trú từ 05 năm, khả năng bảo đảm cuộc sống.",
+    "Sai: không miễn mọi điều kiện.",
+    "Sai: năng lực hành vi, tuân thủ pháp luật không được miễn.",
+    "Sai: có điều kiện được miễn."
+   ]
   },
   {
    "type": "pair",
@@ -167,7 +179,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 19 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 3 Điều 19 — miễn các điểm c, d, đ, e khoản 1.",
+    "Sai: còn miễn đang thường trú và thường trú từ 05 năm.",
+    "Sai: năng lực hành vi không được miễn.",
+    "Sai: có điều kiện được miễn."
+   ]
   },
   {
    "type": "recall",

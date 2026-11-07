@@ -74,7 +74,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 3 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm d khoản 1 Điều 3 — một hành vi vi phạm chỉ bị xử phạt một lần.",
+    "Sai: không xử phạt hai lần.",
+    "Sai: nguyên tắc do luật định.",
+    "Sai: có giới hạn một lần."
+   ]
   },
   {
    "type": "mcq",
@@ -91,7 +97,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 3 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm d khoản 1 Điều 3 — nhiều người cùng thực hiện một hành vi thì mỗi người đều bị xử phạt.",
+    "Sai: tất cả người vi phạm đều bị xử phạt.",
+    "Sai: không chia đều một mức phạt.",
+    "Sai: mỗi người đều bị xử phạt."
+   ]
   },
   {
    "type": "pair",

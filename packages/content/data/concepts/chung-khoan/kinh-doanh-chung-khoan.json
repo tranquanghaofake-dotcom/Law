@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 28 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: tự mua bán cho mình là đầu tư chứng khoán (khoản 15 Điều 4).",
+    "Sai: môi giới là kinh doanh chứng khoán.",
+    "Sai: quản lý danh mục là kinh doanh chứng khoán.",
+    "Sai: bảo lãnh phát hành là kinh doanh chứng khoán."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 28 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: 6 nghiệp vụ — môi giới, tự doanh, bảo lãnh, tư vấn, quản lý quỹ, quản lý danh mục.",
+    "Sai: không phải 4.",
+    "Sai: không phải 3.",
+    "Sai: không phải 5."
+   ]
   },
   {
    "type": "pair",
@@ -158,7 +170,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 28 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: quản lý danh mục không giấy phép, lại cam kết lợi nhuận: trái luật.",
+    "Sai: kinh doanh chứng khoán cần giấy phép (Điều 70).",
+    "Sai: số người và cam kết lợi nhuận không làm hợp pháp.",
+    "Sai: anh T dùng tiền người khác, không phải đầu tư cho mình."
+   ]
   },
   {
    "type": "recall",

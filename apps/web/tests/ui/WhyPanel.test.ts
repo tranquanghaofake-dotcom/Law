@@ -31,6 +31,12 @@ describe('WhyPanel', () => {
     expect(container.querySelector('.why-names')).toBeNull();
     expect(container.querySelector('.why-mixup')).toBeNull();
   });
+  it('chọn nhiễu có `why`: hiện "Bạn chọn «…»" kèm lời giải thích của đúng phương án đó, kể cả khái niệm đã có Hiểu nhanh', () => {
+    const w: StepItem = { ...item, options: ['A', 'B', 'C', 'D'], why: ['A sai vì x.', 'B đúng.', 'C sai vì điều kiện khác.', 'D sai.'] } as StepItem;
+    const memo = { gist: 'Lời thường ngắn.', hook: 'Mẹo nhớ khác hẳn.' };
+    const { container } = render(WhyPanel, { props: { concept: c('a', { memo }), item: w, correct: false, explain: 'Khoản 2 Điều 1.', chosen: 'C' } });
+    expect(container.querySelector('.why-wrong')?.textContent).toBe('Bạn chọn «C»: C sai vì điều kiện khác.');
+  });
 });
 
 describe('CompareTable', () => {

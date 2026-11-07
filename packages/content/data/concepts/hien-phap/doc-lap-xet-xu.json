@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 103 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 103 — Thẩm phán, Hội thẩm xét xử độc lập và chỉ tuân theo pháp luật.",
+    "Sai: Chánh án không được chỉ đạo việc xét xử.",
+    "Sai: Viện kiểm sát không chi phối phán quyết.",
+    "Sai: chính quyền địa phương không được can thiệp."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 103 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 103 — nghiêm cấm cơ quan, tổ chức, cá nhân can thiệp.",
+    "Sai: không chỉ đương sự.",
+    "Sai: không chỉ báo chí.",
+    "Sai: không chỉ luật sư."
+   ]
   },
   {
    "type": "pair",

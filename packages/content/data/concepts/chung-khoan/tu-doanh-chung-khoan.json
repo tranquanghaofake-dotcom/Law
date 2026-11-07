@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 30 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 30 Điều 4 — mua, bán cho chính mình.",
+    "Sai: đây là môi giới.",
+    "Sai: đây là quản lý danh mục.",
+    "Sai: đây là bảo lãnh phát hành."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 86 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 86 — tài khoản tự doanh.",
+    "Sai: không dùng tài khoản khách hàng.",
+    "Sai: không dùng tài khoản ký quỹ khách hàng.",
+    "Sai: không dùng tài khoản Sở giao dịch."
+   ]
   },
   {
    "type": "pair",
@@ -157,7 +169,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 5 Điều 89 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: chạy trước lệnh khách hàng vi phạm khoản 1, 5 Điều 89.",
+    "Sai: tự doanh hợp pháp nhưng không được chạy trước lệnh.",
+    "Sai: đây là vi phạm luật, không chỉ nội quy.",
+    "Sai: không liên quan mệnh giá."
+   ]
   },
   {
    "type": "recall",

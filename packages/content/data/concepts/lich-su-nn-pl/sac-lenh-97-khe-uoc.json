@@ -80,7 +80,13 @@
    "source": {
     "kind": "primary",
     "cite": "Sắc lệnh 97/SL, Điều 13"
-   }
+   },
+   "why": [
+    "Đúng: Điều 13 — khế ước có tổn thiệt do bóc lột vì chênh lệch kinh tế có thể bị coi là vô hiệu.",
+    "Sai: thiếu người làm chứng không phải căn cứ ở Điều 13.",
+    "Sai: giới tính không phải căn cứ.",
+    "Sai: thiếu dấu xác nhận không phải căn cứ."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "primary",
     "cite": "Sắc lệnh 97/SL, Điều 12"
-   }
+   },
+   "why": [
+    "Đúng: Điều 12 — chỉ được hưởng dụng, sử dụng hợp pháp và không thiệt hại quyền lợi nhân dân.",
+    "Sai: Sắc lệnh giới hạn tính tuyệt đối của quyền sở hữu.",
+    "Sai: không tịch thu tài sản tư nhân.",
+    "Sai: không buộc nộp nửa hoa lợi."
+   ]
   },
   {
    "type": "pair",
@@ -155,7 +167,13 @@
     "Quy định thủ tục công chứng bắt buộc đối với các hợp đồng vay và hợp đồng thuê tài sản của công dân"
    ],
    "answer": 0,
-   "explain": "Đánh giá dựa trên câu chữ Điều 13."
+   "explain": "Đánh giá dựa trên câu chữ Điều 13.",
+   "why": [
+    "Đúng: Điều 13 bảo vệ bên yếu thế, hạn chế tự do khế ước khi có bóc lột do chênh lệch kinh tế.",
+    "Sai: Điều 13 hạn chế, không tuyệt đối hóa tự do khế ước.",
+    "Sai: Điều 13 bảo vệ bên yếu, không bên mạnh.",
+    "Sai: Điều 13 không nói về công chứng."
+   ]
   },
   {
    "type": "recall",

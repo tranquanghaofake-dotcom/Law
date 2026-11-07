@@ -18,6 +18,8 @@ const mcqBase = {
   answer: z.number().int().min(0).max(3),
   explain: z.string().min(1),
   source: sourceSchema.optional(),
+  /** Vì sao từng phương án đúng/sai (tuỳ chọn, cùng thứ tự `options`): sai câu nào thì hiện câu giải thích của đúng phương án đó. */
+  why: z.array(z.string().min(1, 'why không được để trống')).length(4, 'why cần 4 lời giải thích, mỗi phương án một câu').optional(),
 };
 
 export const itemMcqSchema = z.object({ type: z.literal('mcq'), level: z.literal(1), ...mcqBase });
@@ -157,6 +159,7 @@ export const quizQuestionSchema = z.object({
   basis: z.string().min(1),
   url: z.string().optional(),
   concept: slug.optional(),
+  why: z.array(z.string().min(1, 'why không được để trống')).length(4, 'why cần 4 lời giải thích, mỗi phương án một câu').optional(),
 });
 export const quizSetSchema = z.object({
   id: slug,

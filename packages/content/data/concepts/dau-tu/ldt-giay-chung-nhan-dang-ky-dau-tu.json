@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 26 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 26 — dự án của nhà đầu tư nước ngoài phải làm thủ tục cấp Giấy chứng nhận đăng ký đầu tư.",
+    "Sai: dự án của nhà đầu tư trong nước không phải làm thủ tục này (khoản 2 Điều 26).",
+    "Sai: góp vốn, mua cổ phần không phải làm thủ tục này (khoản 2 Điều 26).",
+    "Sai: quy mô vốn không phải tiêu chí của Điều 26."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 11 Điều 3 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 11 Điều 3 — ghi nhận thông tin đăng ký của nhà đầu tư về dự án đầu tư.",
+    "Sai: quyền sử dụng đất do cơ quan đất đai giao, cho thuê, công nhận.",
+    "Sai: Giấy chứng nhận không xác nhận việc góp đủ vốn điều lệ.",
+    "Sai: Giấy chứng nhận không liên quan đến xuất cảnh."
+   ]
   },
   {
    "type": "pair",

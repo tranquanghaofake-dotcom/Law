@@ -89,7 +89,13 @@
    "source": {
     "kind": "primary",
     "cite": "Quốc triều hình luật, Điều 16"
-   }
+   },
+   "why": [
+    "Đúng: Điều 16 — từ 90 tuổi trở lên, 7 tuổi trở xuống phạm tội chết không hành hình; có kẻ xui xiểm thì bắt tội kẻ đó.",
+    "Sai: luật có giảm nhẹ theo tuổi.",
+    "Sai: nhóm này không bị hành hình, không phải chuộc.",
+    "Sai: không giảm xuống lưu."
+   ]
   },
   {
    "type": "mcq",
@@ -106,7 +112,13 @@
    "source": {
     "kind": "primary",
     "cite": "Quốc triều hình luật, Điều 18"
-   }
+   },
+   "why": [
+    "Đúng: Điều 18 — phạm tội chưa bị phát giác mà tự thú trước thì được tha tội.",
+    "Sai: được tha, không chỉ giảm.",
+    "Sai: tự thú được hưởng khoan hồng.",
+    "Sai: tự thú không bị tăng nặng."
+   ]
   },
   {
    "type": "pair",

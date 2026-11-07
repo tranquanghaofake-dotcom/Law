@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 430 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: Điều 430 — bên bán chuyển quyền sở hữu tài sản cho bên mua.",
+    "Sai: cho sử dụng có thời hạn là thuê.",
+    "Sai: giữ hộ là gửi giữ.",
+    "Sai: bảo lãnh không phải nghĩa vụ của bên bán."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 431 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 431 — tài sản thuộc sở hữu của người bán hoặc người bán có quyền bán.",
+    "Sai: không giới hạn ở bất động sản.",
+    "Sai: không phải mọi hợp đồng mua bán đều cần công chứng.",
+    "Sai: tài sản đã qua sử dụng vẫn được bán."
+   ]
   },
   {
    "type": "pair",

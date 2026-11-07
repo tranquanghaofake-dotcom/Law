@@ -76,7 +76,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 89 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 89 — từ 03 tháng đến 06 tháng.",
+    "Sai: 06 đến 24 tháng là thời hạn trường giáo dưỡng.",
+    "Sai: 01 đến 03 tháng ngắn hơn luật định.",
+    "Sai: 12 đến 24 tháng không phải thời hạn của biện pháp này."
+   ]
   },
   {
    "type": "mcq",
@@ -93,7 +99,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 89 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 89 — áp dụng khi không cần thiết phải cách ly người vi phạm khỏi cộng đồng.",
+    "Sai: tội đặc biệt nghiêm trọng xử lý hình sự.",
+    "Sai: biện pháp này không áp dụng với tổ chức.",
+    "Sai: không áp dụng với người nước ngoài."
+   ]
   },
   {
    "type": "pair",

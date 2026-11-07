@@ -1,0 +1,135 @@
+{
+ "id": "nuoi-con-sau-ly-hon",
+ "subject": "hon-nhan-gia-dinh",
+ "chapter": "c4-ly-hon",
+ "term": "Người trực tiếp nuôi con sau khi ly hôn",
+ "definition": "Vợ, chồng thỏa thuận về người trực tiếp nuôi con, nghĩa vụ, quyền của mỗi bên sau khi ly hôn đối với con; trường hợp không thỏa thuận được thì Tòa án quyết định giao con cho một bên trực tiếp nuôi căn cứ vào quyền lợi về mọi mặt của con; nếu con từ đủ 07 tuổi trở lên thì phải xem xét nguyện vọng của con. Con dưới 36 tháng tuổi được giao cho mẹ trực tiếp nuôi, trừ trường hợp người mẹ không đủ điều kiện để trực tiếp trông nom, chăm sóc, nuôi dưỡng, giáo dục con hoặc cha mẹ có thỏa thuận khác phù hợp với lợi ích của con.",
+ "plain": "Thứ tự: (1) cha mẹ THỎA THUẬN; (2) không thỏa thuận được thì Tòa án quyết định theo QUYỀN LỢI MỌI MẶT của con; con TỪ ĐỦ 07 TUỔI phải xem xét nguyện vọng (xem xét, không bắt buộc làm theo). Con DƯỚI 36 THÁNG giao cho MẸ, trừ khi mẹ không đủ điều kiện hoặc cha mẹ thỏa thuận khác phù hợp lợi ích của con. Người không trực tiếp nuôi phải cấp dưỡng và có quyền thăm nom (Điều 82).",
+ "example": "Con 2 tuổi, mẹ đủ điều kiện nuôi: dù cha có thu nhập cao hơn, con vẫn được giao cho mẹ nếu hai bên không thỏa thuận khác.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 và khoản 3 Điều 81 Luật Hôn nhân và gia đình 2014",
+  "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "thuan-tinh-ly-hon",
+  "cap-duong",
+  "ly-hon"
+ ],
+ "keywords": [
+  "thỏa thuận",
+  "quyền lợi về mọi mặt của con",
+  "từ đủ 07 tuổi",
+  "dưới 36 tháng tuổi"
+ ],
+ "memo": {
+  "gist": "Cha mẹ tự thỏa thuận ai nuôi con; không được thì Tòa án quyết theo lợi ích của con.",
+  "kind": "ladder",
+  "hook": "Số 3 và số 7: dưới ba tuổi bám mẹ, từ bảy tuổi được nói lên mong muốn.",
+  "tree": [
+   {
+    "label": "Trước hết",
+    "icon": "handshake",
+    "children": [
+     "Cha mẹ thỏa thuận"
+    ]
+   },
+   {
+    "label": "Không thỏa thuận được",
+    "icon": "scales",
+    "children": [
+     "Tòa án quyết theo quyền lợi của con"
+    ]
+   },
+   {
+    "label": "Con từ đủ 7 tuổi",
+    "icon": "question",
+    "children": [
+     "Phải xem xét nguyện vọng"
+    ]
+   },
+   {
+    "label": "Con dưới 36 tháng",
+    "icon": "child",
+    "children": [
+     "Giao cho mẹ",
+     "Trừ khi mẹ không đủ điều kiện"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Con 9 tuổi muốn ở với cha thì Tòa án có buộc phải giao con cho cha không?",
+   "a": "Không buộc. Tòa án phải xem xét nguyện vọng nhưng quyết định theo quyền lợi về mọi mặt của con."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 3 Điều 81, con dưới bao nhiêu tháng tuổi được giao cho mẹ trực tiếp nuôi (trừ ngoại lệ)?",
+   "options": [
+    "Dưới 36 tháng tuổi",
+    "Dưới 12 tháng tuổi",
+    "Dưới 24 tháng tuổi",
+    "Dưới 72 tháng tuổi"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 81: con dưới 36 tháng tuổi được giao cho mẹ trực tiếp nuôi.",
+   "why": [
+    "Đúng: mốc 36 tháng.",
+    "Sai: 12 tháng là mốc hạn chế quyền yêu cầu ly hôn của chồng (khoản 3 Điều 51).",
+    "Sai: luật không dùng mốc 24 tháng.",
+    "Sai: 72 tháng (6 tuổi) không phải mốc của Điều 81; mốc xem xét nguyện vọng là từ đủ 07 tuổi."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "trường hợp không thỏa thuận được thì Tòa án quyết định giao con cho một bên trực tiếp nuôi căn cứ vào quyền lợi về mọi mặt của con; nếu con từ đủ {{07}} tuổi trở lên thì phải xem xét {{nguyện vọng}} của con."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Con dưới {{36}} tháng tuổi được giao cho {{mẹ}} trực tiếp nuôi, trừ trường hợp người mẹ không đủ điều kiện để trực tiếp trông nom, chăm sóc, nuôi dưỡng, giáo dục con hoặc cha mẹ có thỏa thuận khác phù hợp với lợi ích của con."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Khi ly hôn, con gái 30 tháng tuổi. Người mẹ nghiện ma túy, không có chỗ ở ổn định; người cha có điều kiện tốt. Hai bên không thỏa thuận được. Tòa án có thể giao con cho ai?",
+   "options": [
+    "Cho cha, vì mẹ không đủ điều kiện nuôi con",
+    "Bắt buộc cho mẹ, vì con dưới 36 tháng tuổi",
+    "Cho ông bà nội, vì cha mẹ đang tranh chấp",
+    "Hỏi nguyện vọng của con rồi giao theo ý con"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 81: con dưới 36 tháng giao cho mẹ, trừ khi mẹ không đủ điều kiện trực tiếp nuôi con.",
+   "why": [
+    "Đúng: ngoại lệ \"mẹ không đủ điều kiện\" và quyền lợi mọi mặt của con.",
+    "Sai: quy tắc 36 tháng có ngoại lệ khi người mẹ không đủ điều kiện.",
+    "Sai: chỉ giao cho người giám hộ khi cả cha và mẹ đều không đủ điều kiện (khoản 4 Điều 84).",
+    "Sai: chỉ phải xem xét nguyện vọng khi con từ đủ 07 tuổi."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khi vợ chồng ly hôn, con dưới 36 tháng tuổi trong mọi trường hợp được giao cho người vợ trực tiếp nuôi.",
+   "answer": false,
+   "explain": "Sai. Khoản 3 Điều 81 có ngoại lệ: người mẹ không đủ điều kiện, hoặc cha mẹ có thỏa thuận khác phù hợp với lợi ích của con."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các quy tắc xác định người trực tiếp nuôi con sau ly hôn (Điều 81).",
+   "model": "Cha mẹ thỏa thuận; không thỏa thuận được thì Tòa án quyết định theo quyền lợi về mọi mặt của con, con từ đủ 07 tuổi phải xem xét nguyện vọng; con dưới 36 tháng giao cho mẹ trừ ngoại lệ.",
+   "keywords": [
+    "thỏa thuận",
+    "quyền lợi về mọi mặt",
+    "07 tuổi",
+    "36 tháng"
+   ]
+  }
+ ]
+}

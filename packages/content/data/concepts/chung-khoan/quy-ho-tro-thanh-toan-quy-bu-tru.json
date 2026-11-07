@@ -76,7 +76,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 66 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 66 — các thành viên lưu ký đóng góp.",
+    "Sai: không từ ngân sách nhà nước.",
+    "Sai: không từ nhà đầu tư cá nhân.",
+    "Sai: không từ Sở giao dịch."
+   ]
   },
   {
    "type": "mcq",
@@ -93,7 +99,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 67 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 67 — thành viên bù trừ hoặc nhà đầu tư mất khả năng thanh toán.",
+    "Sai: thua lỗ của công ty niêm yết không liên quan.",
+    "Sai: quỹ không bù lỗ đầu tư.",
+    "Sai: sự cố hệ thống không phải căn cứ."
+   ]
   },
   {
    "type": "pair",

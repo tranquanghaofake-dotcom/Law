@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 1 Luật Cán bộ, công chức 2025 (80/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1, 2 Điều 1 Luật Cán bộ, công chức 2025 — cán bộ được bầu cử, phê chuẩn, bổ nhiệm, chỉ định theo nhiệm kỳ; công chức được tuyển dụng vào vị trí việc làm.",
+    "Sai: cán bộ hưởng lương ngân sách và có thể được bầu cử.",
+    "Sai: công chức không bắt buộc là đảng viên và được tuyển dụng, không bầu cử.",
+    "Sai: cán bộ có cả ở trung ương và địa phương."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 1 Luật Cán bộ, công chức 2025 (80/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 1 — được tuyển dụng vào vị trí việc làm, trong biên chế, hưởng lương ngân sách là công chức.",
+    "Sai: cán bộ được bầu cử, phê chuẩn, chỉ định theo nhiệm kỳ.",
+    "Sai: viên chức làm việc tại đơn vị sự nghiệp công lập theo hợp đồng làm việc.",
+    "Sai: người lao động hợp đồng không trong biên chế công chức."
+   ]
   },
   {
    "type": "pair",

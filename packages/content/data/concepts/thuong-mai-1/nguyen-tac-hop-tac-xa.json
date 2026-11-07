@@ -72,7 +72,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 8 Luật Hợp tác xã 2023 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 8 Luật Hợp tác xã — thu nhập phân phối chủ yếu theo mức độ sử dụng sản phẩm, dịch vụ hoặc đóng góp sức lao động.",
+    "Sai: phân phối theo vốn góp là đặc trưng của công ty, không phải tiêu chí chủ yếu của hợp tác xã.",
+    "Sai: chức vụ không phải tiêu chí.",
+    "Sai: thâm niên không phải tiêu chí."
+   ]
   },
   {
    "type": "mcq",
@@ -89,7 +95,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 8 Luật Hợp tác xã 2023 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 8 — quyền quản lý bình đẳng, không phụ thuộc phần vốn góp.",
+    "Sai: không theo tỷ lệ vốn góp.",
+    "Sai: không theo số năm là thành viên.",
+    "Sai: không do Giám đốc quyết định."
+   ]
   },
   {
    "type": "pair",

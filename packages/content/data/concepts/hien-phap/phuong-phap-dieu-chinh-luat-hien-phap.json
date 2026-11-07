@@ -91,7 +91,13 @@
    "source": {
     "kind": "textbook",
     "cite": "Giáo trình Luật Hiến pháp (mục lục 11 chương do Hào cung cấp), Chương 1 \"Những vấn đề chung về Hiến pháp\" — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
-   }
+   },
+   "why": [
+    "Đúng: xác lập nguyên tắc chung có tính định hướng là phương pháp đặc thù.",
+    "Sai: thỏa thuận, bình đẳng là phương pháp của luật dân sự.",
+    "Sai: mệnh lệnh – phục tùng đặc trưng cho luật hành chính.",
+    "Sai: hòa giải không phải phương pháp đặc thù."
+   ]
   },
   {
    "type": "mcq",
@@ -108,7 +114,13 @@
    "source": {
     "kind": "textbook",
     "cite": "Giáo trình Luật Hiến pháp (mục lục 11 chương do Hào cung cấp), Chương 1 \"Những vấn đề chung về Hiến pháp\" — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
-   }
+   },
+   "why": [
+    "Đúng: quy định nghĩa vụ nộp thuế thể hiện phương pháp bắt buộc.",
+    "Sai: đây là nghĩa vụ, không phải cho phép.",
+    "Sai: không cấm hành vi nào.",
+    "Sai: không có thỏa thuận."
+   ]
   },
   {
    "type": "pair",

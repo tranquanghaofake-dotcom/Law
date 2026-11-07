@@ -73,7 +73,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 9 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 9 — cơ quan thuộc Bộ Tài chính.",
+    "Sai: không phải doanh nghiệp.",
+    "Sai: không phải cơ quan ngang bộ.",
+    "Sai: không phải tổ chức xã hội – nghề nghiệp."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 9 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 9 — Thủ tướng quy định.",
+    "Sai: Quốc hội không quy định.",
+    "Sai: Bộ trưởng không quy định.",
+    "Sai: Chủ tịch nước không quy định."
+   ]
   },
   {
    "type": "pair",

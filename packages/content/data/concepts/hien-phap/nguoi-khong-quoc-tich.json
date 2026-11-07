@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 3 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 3 Luật Quốc tịch — không có quốc tịch Việt Nam và cũng không có quốc tịch nước ngoài.",
+    "Sai: thiếu giấy tờ không đồng nghĩa không quốc tịch.",
+    "Sai: định cư ở nước ngoài không làm mất quốc tịch.",
+    "Sai: người hai quốc tịch không phải người không quốc tịch."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 17 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 17 — cha mẹ không quốc tịch có nơi thường trú tại Việt Nam.",
+    "Sai: luật đặt điều kiện thường trú.",
+    "Sai: không cần Chủ tịch nước cho phép.",
+    "Sai: không cần đơn gửi Tòa án."
+   ]
   },
   {
    "type": "pair",

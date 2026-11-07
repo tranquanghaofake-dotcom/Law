@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 116 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 116 — ngân hàng thương mại có Giấy chứng nhận lưu ký chứng khoán.",
+    "Sai: công ty chứng khoán không làm ngân hàng giám sát.",
+    "Sai: Ngân hàng Nhà nước không làm ngân hàng giám sát.",
+    "Sai: công ty quản lý quỹ không làm ngân hàng giám sát."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 116 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 116 — giám sát quỹ đại chúng, công ty đầu tư chứng khoán.",
+    "Sai: không giám sát công ty niêm yết.",
+    "Sai: không giám sát Sở giao dịch.",
+    "Sai: không giám sát công ty chứng khoán."
+   ]
   },
   {
    "type": "pair",

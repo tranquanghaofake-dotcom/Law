@@ -76,7 +76,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 2 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 2 — có chứa quy phạm pháp luật và được ban hành đúng thẩm quyền, hình thức, trình tự, thủ tục.",
+    "Sai: thiếu dấu hiệu chứa quy phạm pháp luật và đúng hình thức, trình tự.",
+    "Sai: tên gọi không đủ; phải chứa quy phạm và ban hành đúng.",
+    "Sai: đăng Công báo không thay được đúng thẩm quyền, trình tự."
+   ]
   },
   {
    "type": "mcq",
@@ -93,7 +99,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 63 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 63 — văn bản có chứa quy phạm nhưng ban hành sai thẩm quyền, hình thức bị kiểm tra, xử lý như văn bản trái pháp luật.",
+    "Sai: không đáp ứng Điều 2 thì không phải văn bản quy phạm pháp luật.",
+    "Sai: văn bản chứa quy phạm không phải quyết định cá biệt hợp lệ.",
+    "Sai: đăng Công báo không hợp thức hóa văn bản sai thẩm quyền."
+   ]
   },
   {
    "type": "pair",

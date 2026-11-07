@@ -11,6 +11,8 @@ export type ItemMcq = {
   answer: number;
   explain: string;
   source?: Source;
+  /** Vì sao từng phương án đúng/sai, cùng thứ tự `options` (tuỳ chọn). */
+  why?: string[];
 };
 export type ItemPair = {
   type: 'pair';
@@ -81,6 +83,8 @@ export type QuizQuestion = {
   basis: string;
   url?: string;
   concept?: string;
+  /** Lời giải thích từng phương án, cùng thứ tự với options. */
+  why?: string[];
 };
 export type QuizSet = {
   id: string;

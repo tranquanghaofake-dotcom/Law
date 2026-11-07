@@ -84,7 +84,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 328 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 328 — trả tài sản đặt cọc và một khoản tiền tương đương giá trị tài sản đặt cọc.",
+    "Sai: bên nhận cọc vi phạm phải trả thêm khoản tương đương (phạt cọc).",
+    "Sai: luật không quy định gấp ba.",
+    "Sai: bên nhận cọc vi phạm phải chịu phạt cọc."
+   ]
   },
   {
    "type": "mcq",
@@ -101,7 +107,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 328 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 328 — tiền, kim khí quý, đá quý hoặc vật có giá trị khác.",
+    "Sai: không giới hạn ở tiền mặt.",
+    "Sai: danh dự không phải tài sản.",
+    "Sai: công việc không phải tài sản đặt cọc."
+   ]
   },
   {
    "type": "pair",

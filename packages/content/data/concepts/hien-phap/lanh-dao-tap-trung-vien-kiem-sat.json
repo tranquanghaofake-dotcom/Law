@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 109 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 109 — chịu sự lãnh đạo của Viện trưởng cấp trên và Viện trưởng Viện kiểm sát nhân dân tối cao.",
+    "Sai: Viện kiểm sát không chịu lãnh đạo của Ủy ban nhân dân.",
+    "Sai: Tòa án không lãnh đạo Viện kiểm sát.",
+    "Sai: Hội đồng nhân dân không lãnh đạo Viện kiểm sát."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 109 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 109 — tuân theo pháp luật, chịu sự chỉ đạo của Viện trưởng.",
+    "Sai: Kiểm sát viên không làm theo ý cá nhân.",
+    "Sai: Tòa án không chỉ đạo Kiểm sát viên.",
+    "Sai: cơ quan điều tra không chỉ đạo Kiểm sát viên."
+   ]
   },
   {
    "type": "pair",

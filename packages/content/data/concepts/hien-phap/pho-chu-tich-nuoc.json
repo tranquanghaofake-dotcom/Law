@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 93 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: Điều 93 — khuyết Chủ tịch nước thì Phó Chủ tịch nước giữ quyền Chủ tịch nước.",
+    "Sai: Chủ tịch Quốc hội không giữ quyền.",
+    "Sai: Thủ tướng không giữ quyền.",
+    "Sai: Chánh án không giữ quyền."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 92 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: Điều 92 — Quốc hội bầu Phó Chủ tịch nước trong số đại biểu Quốc hội.",
+    "Sai: Chủ tịch nước đề nghị, Quốc hội bầu.",
+    "Sai: Ủy ban thường vụ, Chính phủ không bầu.",
+    "Sai: không bầu trực tiếp."
+   ]
   },
   {
    "type": "pair",

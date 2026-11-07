@@ -73,7 +73,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
-   }
+   },
+   "why": [
+    "Đúng: theo bài giảng, thuyết phục là phương pháp cơ bản, áp dụng trước.",
+    "Sai: cưỡng chế chỉ áp dụng khi thuyết phục không hiệu quả.",
+    "Sai: phương pháp kinh tế bổ trợ, không phải phương pháp cơ bản áp dụng trước.",
+    "Sai: phương pháp hành chính là mệnh lệnh, không phải phương pháp áp dụng trước."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
-   }
+   },
+   "why": [
+    "Đúng: theo bài giảng, cưỡng chế áp dụng khi thuyết phục không đạt, đúng đối tượng, trình tự và do chủ thể có thẩm quyền.",
+    "Sai: cưỡng chế phải có căn cứ, thủ tục.",
+    "Sai: thuyết phục đi trước cưỡng chế.",
+    "Sai: cưỡng chế hành chính do chủ thể quản lý, không chỉ Tòa án."
+   ]
   },
   {
    "type": "pair",

@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 36 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm e khoản 1 Điều 36 — tự ý bỏ việc từ 05 ngày làm việc liên tục trở lên.",
+    "Sai: 03 ngày không đủ.",
+    "Sai: mốc là 05 ngày, không phải 10 ngày.",
+    "Sai: mốc là 05 ngày, không phải 30 ngày."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điểm a khoản 1 Điều 36 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 36 — xác định theo tiêu chí trong quy chế đánh giá của người sử dụng lao động.",
+    "Sai: không theo ý kiến cá nhân.",
+    "Sai: không theo đánh giá của đồng nghiệp.",
+    "Sai: Sở Nội vụ không đánh giá."
+   ]
   },
   {
    "type": "pair",

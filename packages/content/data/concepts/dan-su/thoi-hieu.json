@@ -74,7 +74,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 149 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 149 — Tòa án chỉ áp dụng thời hiệu theo yêu cầu của một bên hoặc các bên, đưa ra trước khi Tòa sơ thẩm ra bản án, quyết định.",
+    "Sai: Tòa án không tự áp dụng thời hiệu.",
+    "Sai: yêu cầu phải đưa ra trước khi cấp sơ thẩm ra bản án.",
+    "Sai: Viện kiểm sát không phải chủ thể yêu cầu áp dụng thời hiệu."
+   ]
   },
   {
    "type": "mcq",
@@ -91,7 +97,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 150 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 150 — hết thời hiệu khởi kiện thì chủ thể mất quyền khởi kiện.",
+    "Sai: thời hiệu hưởng quyền dân sự làm phát sinh quyền.",
+    "Sai: thời hiệu miễn trừ nghĩa vụ làm chấm dứt nghĩa vụ.",
+    "Sai: thời hạn bảo hành không phải thời hiệu."
+   ]
   },
   {
    "type": "pair",

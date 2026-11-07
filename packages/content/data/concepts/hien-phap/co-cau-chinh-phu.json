@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 95 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 95 — thành viên gồm Thủ tướng, Phó Thủ tướng, Bộ trưởng, Thủ trưởng cơ quan ngang bộ; Thứ trưởng không thuộc danh sách.",
+    "Sai: Phó Thủ tướng là thành viên Chính phủ.",
+    "Sai: Bộ trưởng là thành viên Chính phủ.",
+    "Sai: Thủ trưởng cơ quan ngang bộ là thành viên Chính phủ."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 95 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 95 — cơ cấu, số lượng thành viên Chính phủ do Quốc hội quyết định.",
+    "Sai: Thủ tướng đề nghị, không quyết định.",
+    "Sai: Chủ tịch nước không quyết định cơ cấu Chính phủ.",
+    "Sai: Ủy ban thường vụ không quyết định việc này."
+   ]
   },
   {
    "type": "pair",

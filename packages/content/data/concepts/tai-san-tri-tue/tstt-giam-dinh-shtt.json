@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 201 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 201 — tổ chức, cá nhân đủ điều kiện dùng kiến thức, nghiệp vụ chuyên môn để đánh giá, kết luận về vấn đề liên quan.",
+    "Sai: quyết định xử phạt là biện pháp hành chính, không phải giám định.",
+    "Sai: bản án là phán quyết của Tòa án; giám định chỉ cung cấp kết luận chuyên môn.",
+    "Sai: cấp văn bằng là thủ tục xác lập quyền."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2a Điều 201 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2a Điều 201 không cho tổ chức hành nghề luật sư nước ngoài kinh doanh dịch vụ giám định sở hữu trí tuệ.",
+    "Sai: doanh nghiệp có giám định viên đủ điều kiện được kinh doanh dịch vụ giám định.",
+    "Sai: đơn vị sự nghiệp công lập có giám định viên được thực hiện giám định.",
+    "Sai: tổ chức hành nghề luật sư Việt Nam có giám định viên được kinh doanh dịch vụ giám định."
+   ]
   },
   {
    "type": "pair",

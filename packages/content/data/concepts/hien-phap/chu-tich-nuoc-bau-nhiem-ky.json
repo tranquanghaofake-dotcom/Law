@@ -86,7 +86,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 87 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: Điều 87 — Chủ tịch nước do Quốc hội bầu trong số đại biểu Quốc hội.",
+    "Sai: Việt Nam không bầu Chủ tịch nước trực tiếp.",
+    "Sai: Chính phủ không đề cử Chủ tịch nước.",
+    "Sai: Mặt trận Tổ quốc không chỉ định."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 87 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: Điều 87 — Chủ tịch nước chịu trách nhiệm và báo cáo công tác trước Quốc hội.",
+    "Sai: không chịu trách nhiệm trước Chính phủ.",
+    "Sai: Ủy ban thường vụ Quốc hội không phải cơ quan nhận trách nhiệm theo Điều 87.",
+    "Sai: không chịu trách nhiệm trước Mặt trận Tổ quốc."
+   ]
   },
   {
    "type": "pair",

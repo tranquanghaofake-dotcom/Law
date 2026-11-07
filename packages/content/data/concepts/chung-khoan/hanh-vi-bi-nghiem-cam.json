@@ -86,7 +86,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 12 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 12 — kinh doanh chứng khoán không có giấy phép.",
+    "Sai: mua khi giá giảm là hợp pháp.",
+    "Sai: chốt lời là hợp pháp.",
+    "Sai: mở tài khoản ở hai công ty là hợp pháp."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 12 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 12 — che giấu thông tin gây hiểu nhầm.",
+    "Sai: khoản 2 là giao dịch nội gián.",
+    "Sai: khoản 3 là thao túng.",
+    "Sai: khoản 7 không quy định hành vi này."
+   ]
   },
   {
    "type": "pair",

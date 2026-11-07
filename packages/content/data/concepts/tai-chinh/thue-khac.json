@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
-   }
+   },
+   "why": [
+    "Đúng: theo giáo trình, thuế bảo vệ môi trường là thuế gián thu, cộng vào giá hàng hóa và người tiêu dùng chịu.",
+    "Sai: thuế trực thu đánh thẳng vào thu nhập, tài sản của người nộp; thuế bảo vệ môi trường đánh vào hàng hóa.",
+    "Sai: phí là khoản trả cho dịch vụ công, khác thuế.",
+    "Sai: lệ phí là khoản nộp khi được cơ quan nhà nước phục vụ công việc quản lý, khác thuế."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
-   }
+   },
+   "why": [
+    "Đúng: xăng dầu là đối tượng chịu thuế bảo vệ môi trường điển hình (theo giáo trình; chưa đối chiếu nguyên văn Luật 57/2010/QH12).",
+    "Sai: gạo là lương thực thiết yếu, không phải hàng gây ô nhiễm.",
+    "Sai: sách giáo khoa không gây tác động xấu đến môi trường.",
+    "Sai: thuốc chữa bệnh không thuộc nhóm hàng gây ô nhiễm."
+   ]
   },
   {
    "type": "pair",

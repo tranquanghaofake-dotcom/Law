@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 118 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 118 — Kiểm toán nhà nước do Quốc hội thành lập.",
+    "Sai: Chính phủ không thành lập.",
+    "Sai: Chủ tịch nước không thành lập.",
+    "Sai: Bộ Tài chính không thành lập."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 118 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 118 — khi Quốc hội không họp, báo cáo trước Ủy ban thường vụ Quốc hội.",
+    "Sai: Kiểm toán nhà nước độc lập với Chính phủ.",
+    "Sai: không báo cáo trước Chủ tịch nước.",
+    "Sai: không báo cáo trước Thủ tướng."
+   ]
   },
   {
    "type": "pair",

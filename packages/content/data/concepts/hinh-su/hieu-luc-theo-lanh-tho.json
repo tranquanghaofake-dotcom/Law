@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 5 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 5 — giải quyết bằng con đường ngoại giao.",
+    "Sai: người có quyền miễn trừ không bị xét xử như công dân.",
+    "Sai: vẫn được giải quyết qua ngoại giao.",
+    "Sai: luật không quy định trục xuất ngay."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 5 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: đoạn 2 khoản 1 Điều 5 — áp dụng với hành vi phạm tội trên tàu biển mang quốc tịch Việt Nam.",
+    "Sai: tàu mang quốc tịch Việt Nam được coi như lãnh thổ.",
+    "Sai: không phụ thuộc vị trí của tàu.",
+    "Sai: không phụ thuộc quốc tịch người phạm tội."
+   ]
   },
   {
    "type": "pair",

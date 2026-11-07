@@ -82,7 +82,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển V, tờ 9b"
-   }
+   },
+   "why": [
+    "Đúng: chiếu năm 1237 quy định hình thức chúc thư, văn khế ruộng đất và vay mượn tiền bạc.",
+    "Sai: chiếu không nói về đơn kiện hình sự.",
+    "Sai: chiếu không nói về hộ tịch.",
+    "Sai: chiếu không nói về văn bằng thi cử."
+   ]
   },
   {
    "type": "mcq",
@@ -99,7 +105,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển V, tờ 9b"
-   }
+   },
+   "why": [
+    "Đúng: người làm chứng in tay ở 3 dòng trước.",
+    "Sai: 4 dòng sau là chỗ người bán in tay.",
+    "Sai: chiếu quy định vị trí cụ thể.",
+    "Sai: chiếu có quy định in tay."
+   ]
   },
   {
    "type": "pair",
@@ -157,7 +169,13 @@
     "Nhà nước cấm mua bán ruộng đất tư nên quy định về hình thức chỉ nhằm quản lý chúc thư đối với ruộng công của làng xã"
    ],
    "answer": 0,
-   "explain": "Đánh giá dựa trên câu chữ chiếu năm 1237."
+   "explain": "Đánh giá dựa trên câu chữ chiếu năm 1237.",
+   "why": [
+    "Đúng: theo giáo trình, giao dịch dân sự đã phổ biến; nhà nước quy định hình thức, chứng cứ để hạn chế tranh chấp.",
+    "Sai: quy định hình thức cho thấy giao dịch đã phổ biến, và mục đích là chứng cứ, không phải thu thuế.",
+    "Sai: nhà nước đã quy định hình thức giao dịch dân sự.",
+    "Sai: chiếu nói về ruộng đất tư, mua bán, vay nợ."
+   ]
   },
   {
    "type": "recall",

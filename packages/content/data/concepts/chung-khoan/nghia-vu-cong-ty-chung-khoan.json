@@ -86,7 +86,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 5 Điều 89 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 5 Điều 89 — ưu tiên lệnh của khách hàng.",
+    "Sai: lệnh của công ty không được ưu tiên.",
+    "Sai: khối lượng không quyết định.",
+    "Sai: thời điểm hôm trước không áp dụng."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 89 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 89 — hợp đồng bằng văn bản.",
+    "Sai: lời nói không đủ.",
+    "Sai: phải có hợp đồng.",
+    "Sai: khách hàng không được chọn bỏ văn bản."
+   ]
   },
   {
    "type": "pair",
@@ -164,7 +176,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 6 Điều 89 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 6 Điều 89 — tư vấn phải phù hợp khả năng chấp nhận rủi ro.",
+    "Sai: ưu tiên lệnh không phải vấn đề ở đây.",
+    "Sai: công bố thông tin không phải vấn đề ở đây.",
+    "Sai: dữ liệu dự phòng không phải vấn đề ở đây."
+   ]
   },
   {
    "type": "recall",

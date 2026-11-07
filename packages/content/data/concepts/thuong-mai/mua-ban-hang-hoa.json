@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 24 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 24 — lời nói, văn bản hoặc hành vi cụ thể.",
+    "Sai: thiếu lời nói và hành vi.",
+    "Sai: không bắt buộc công chứng.",
+    "Sai: hợp đồng điện tử là một dạng văn bản, không phải danh sách đầy đủ."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 8 Điều 3 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 8 Điều 3 — bên mua thanh toán, nhận hàng và quyền sở hữu.",
+    "Sai: giao hàng là nghĩa vụ của bên bán.",
+    "Sai: bảo hành là nghĩa vụ của bên bán.",
+    "Sai: vận chuyển cho bên bán không phải nghĩa vụ của bên mua."
+   ]
   },
   {
    "type": "pair",

@@ -75,7 +75,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 2 Luật Ngân hàng Nhà nước Việt Nam 2010 (sửa đổi, bổ sung năm 2022)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 2 Luật Ngân hàng Nhà nước — cơ quan ngang bộ của Chính phủ, là Ngân hàng trung ương.",
+    "Sai: Ngân hàng Nhà nước là cơ quan nhà nước, không phải doanh nghiệp.",
+    "Sai: Ngân hàng Nhà nước thuộc Chính phủ, không thuộc Quốc hội.",
+    "Sai: Ngân hàng Nhà nước không phải tổ chức tín dụng."
+   ]
   },
   {
    "type": "mcq",
@@ -92,7 +98,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 2 Luật Ngân hàng Nhà nước Việt Nam 2010 (sửa đổi, bổ sung năm 2022)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 2 — phát hành tiền là chức năng Ngân hàng trung ương.",
+    "Sai: thu thuế là việc của cơ quan thuế.",
+    "Sai: xét xử là việc của Tòa án.",
+    "Sai: Ngân hàng Nhà nước không cho vay tiêu dùng cá nhân."
+   ]
   },
   {
    "type": "pair",

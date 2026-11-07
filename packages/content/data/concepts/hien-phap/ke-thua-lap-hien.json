@@ -89,7 +89,13 @@
    "source": {
     "kind": "statute",
     "cite": "Lời nói đầu Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: Lời nói đầu nêu kế thừa Hiến pháp 1946, 1959, 1980 và 1992.",
+    "Sai: thiếu Hiến pháp 1980.",
+    "Sai: thiếu 1959; 2001 là lần sửa đổi, không phải Hiến pháp mới.",
+    "Sai: thiếu Hiến pháp 1946."
+   ]
   },
   {
    "type": "mcq",
@@ -106,7 +112,13 @@
    "source": {
     "kind": "statute",
     "cite": "Lời nói đầu Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: Lời nói đầu — Nhân dân Việt Nam xây dựng, thi hành và bảo vệ Hiến pháp.",
+    "Sai: Quốc hội thông qua, nhưng chủ thể nêu ở Lời nói đầu là Nhân dân.",
+    "Sai: Lời nói đầu không nêu Đảng là chủ thể này.",
+    "Sai: Chính phủ không phải chủ thể nêu ở Lời nói đầu."
+   ]
   },
   {
    "type": "pair",

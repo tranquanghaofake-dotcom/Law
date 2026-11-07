@@ -89,7 +89,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 46 Luật Phục hồi, phá sản 2025 (142/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 46 — chi phí phá sản được thanh toán đầu tiên.",
+    "Sai: nợ lương xếp thứ hai.",
+    "Sai: nghĩa vụ với Nhà nước xếp sau chi phí phá sản và các khoản của người lao động.",
+    "Sai: nợ không có bảo đảm xếp sau."
+   ]
   },
   {
    "type": "mcq",
@@ -106,7 +112,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 46 Luật Phục hồi, phá sản 2025 (142/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 46 — thanh toán theo tỷ lệ phần trăm tương ứng với số nợ.",
+    "Sai: không theo thứ tự nộp đơn.",
+    "Sai: không bốc thăm.",
+    "Sai: không ưu tiên chủ nợ lớn nhất."
+   ]
   },
   {
    "type": "pair",

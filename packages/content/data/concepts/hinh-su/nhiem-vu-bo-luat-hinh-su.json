@@ -84,7 +84,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 1 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: đoạn 2 Điều 1 — Bộ luật Hình sự quy định về tội phạm và hình phạt.",
+    "Sai: vi phạm hành chính thuộc Luật Xử lý vi phạm hành chính.",
+    "Sai: thủ tục điều tra, xét xử thuộc Bộ luật Tố tụng hình sự.",
+    "Sai: bồi thường ngoài hợp đồng thuộc Bộ luật Dân sự."
+   ]
   },
   {
    "type": "mcq",
@@ -101,7 +107,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 1 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: quan hệ hợp đồng thuộc luật dân sự, thương mại, không phải nhiệm vụ của Bộ luật Hình sự.",
+    "Sai: bảo vệ chủ quyền, an ninh là nhiệm vụ ở Điều 1.",
+    "Sai: giáo dục ý thức tuân theo pháp luật là nhiệm vụ ở Điều 1.",
+    "Sai: phòng ngừa, đấu tranh chống tội phạm là nhiệm vụ ở Điều 1."
+   ]
   },
   {
    "type": "pair",

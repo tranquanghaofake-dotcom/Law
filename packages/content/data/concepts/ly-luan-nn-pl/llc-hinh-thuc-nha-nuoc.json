@@ -72,7 +72,13 @@
     "Trung ương, địa phương và các đơn vị hành chính cơ sở"
    ],
    "answer": 0,
-   "explain": "Bài 6 (quan điểm 3 yếu tố)."
+   "explain": "Bài 6 (quan điểm 3 yếu tố).",
+   "why": [
+    "Đúng: theo quan điểm ba yếu tố, hình thức nhà nước gồm chính thể, cấu trúc, chế độ chính trị.",
+    "Sai: lập pháp, hành pháp, tư pháp là quyền lực, không phải yếu tố hình thức.",
+    "Sai: đối nội, đối ngoại là chức năng.",
+    "Sai: trung ương, địa phương là cấp bộ máy."
+   ]
   },
   {
    "type": "mcq",
@@ -85,7 +91,13 @@
     "Hệ thống các đảng phái chính trị hoạt động hợp pháp trên lãnh thổ quốc gia"
    ],
    "answer": 0,
-   "explain": "Bài 6."
+   "explain": "Bài 6.",
+   "why": [
+    "Đúng: chế độ chính trị là toàn bộ phương pháp, cách thức thực hiện quyền lực nhà nước.",
+    "Sai: cách tổ chức cơ quan quyền lực cao nhất là chính thể.",
+    "Sai: chia lãnh thổ là hình thức cấu trúc.",
+    "Sai: hệ thống đảng phái chỉ là một yếu tố, không phải định nghĩa chế độ chính trị."
+   ]
   },
   {
    "type": "pair",

@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 3 — phân tích, dự báo ảnh hưởng của từng giải pháp nhằm lựa chọn phương án tối ưu.",
+    "Sai: thẩm quyền ban hành không phải mục đích của đánh giá tác động.",
+    "Sai: soạn thảo điều khoản là bước sau, không phải mục đích đánh giá tác động.",
+    "Sai: đăng Công báo là bước sau khi ban hành."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 29 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 29 — tác động đối với hệ thống pháp luật, kinh tế – xã hội, về giới (nếu có), của thủ tục hành chính (nếu có).",
+    "Sai: tác động ngân sách chỉ là một phần của tác động kinh tế – xã hội, chưa đủ.",
+    "Sai: tác động môi trường chỉ là một khía cạnh, không phải danh sách đầy đủ.",
+    "Sai: ý kiến cử tri, báo chí không phải nội dung đánh giá tác động."
+   ]
   },
   {
    "type": "pair",

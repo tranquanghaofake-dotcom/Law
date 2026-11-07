@@ -76,7 +76,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 10 Điều 4 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 10 Điều 4 — doanh nghiệp có tên riêng, có tài sản, có trụ sở giao dịch.",
+    "Sai: doanh nghiệp tư nhân không có tư cách pháp nhân, nên không phải \"mọi trường hợp\".",
+    "Sai: luật không đặt vốn tối thiểu chung 10 tỷ đồng.",
+    "Sai: doanh nghiệp có thể thuộc sở hữu tư nhân; Nhà nước sở hữu chỉ là một loại."
+   ]
   },
   {
    "type": "mcq",
@@ -93,7 +99,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 10 Điều 4 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 10 Điều 4 — doanh nghiệp được thành lập nhằm mục đích kinh doanh.",
+    "Sai: tổ chức từ thiện hoạt động không vì lợi nhuận, không phải doanh nghiệp theo khoản 10 Điều 4.",
+    "Sai: quản lý nhà nước là việc của cơ quan nhà nước.",
+    "Sai: nghiên cứu thuần túy không vì mục đích kinh doanh."
+   ]
   },
   {
    "type": "pair",

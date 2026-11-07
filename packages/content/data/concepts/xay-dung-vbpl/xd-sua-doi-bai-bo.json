@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 8 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 8 — chỉ được sửa đổi, bổ sung, thay thế bằng văn bản quy phạm pháp luật của chính cơ quan, người đã ban hành.",
+    "Sai: cấp trên không sửa bằng văn bản hành chính; cấp trên có thể bãi bỏ theo thẩm quyền.",
+    "Sai: Bộ Tư pháp kiểm tra và kiến nghị, không tự sửa.",
+    "Sai: Tòa án không sửa đổi văn bản quy phạm pháp luật."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 56 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 1 Điều 56 — văn bản bị đình chỉ thì tạm ngưng hiệu lực cho đến khi có quyết định xử lý.",
+    "Sai: đình chỉ là tạm ngưng, chưa phải hết hiệu lực.",
+    "Sai: văn bản bị đình chỉ không được áp dụng.",
+    "Sai: cấp dưới không sửa văn bản của cơ quan khác."
+   ]
   },
   {
    "type": "pair",

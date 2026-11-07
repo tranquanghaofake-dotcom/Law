@@ -73,7 +73,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 130 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm c khoản 1 Điều 130 — để xác minh, xử lý hành vi bị cấm tại Điều 12.",
+    "Sai: phải có căn cứ, không tùy ý.",
+    "Sai: chậm báo cáo không phải căn cứ.",
+    "Sai: thống kê không phải căn cứ."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 130 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 130 — Chủ tịch Ủy ban phê duyệt, bằng văn bản, nêu mục đích, căn cứ, nội dung, phạm vi.",
+    "Sai: điện thoại không đủ.",
+    "Sai: email chuyên viên không đủ.",
+    "Sai: lãnh đạo phòng không đủ thẩm quyền."
+   ]
   },
   {
    "type": "pair",

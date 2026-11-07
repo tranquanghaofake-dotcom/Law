@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 6 Điều 103 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 6 Điều 103 — chế độ sơ thẩm, phúc thẩm.",
+    "Sai: còn có phúc thẩm.",
+    "Sai: Hiến pháp không quy định ba cấp.",
+    "Sai: giám đốc thẩm, tái thẩm là thủ tục đặc biệt."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 5 Điều 103 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 5 Điều 103 — nguyên tắc tranh tụng được bảo đảm.",
+    "Sai: tranh tụng là hai chiều.",
+    "Sai: Hiến pháp bảo đảm suy đoán vô tội (Điều 31).",
+    "Sai: xét xử vắng mặt không phải nguyên tắc."
+   ]
   },
   {
    "type": "pair",

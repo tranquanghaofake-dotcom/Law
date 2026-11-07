@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 3 — quy tắc xử sự chung, hiệu lực bắt buộc chung, được Nhà nước bảo đảm thực hiện.",
+    "Sai: áp dụng một lần cho người cụ thể là văn bản áp dụng (cá biệt).",
+    "Sai: khuyến nghị không bắt buộc không phải quy phạm pháp luật.",
+    "Sai: quy tắc đạo đức không được Nhà nước bảo đảm thực hiện."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 3 — áp dụng trong phạm vi cả nước hoặc đơn vị hành chính nhất định.",
+    "Sai: quy định nội bộ một cơ quan không phải quy phạm pháp luật.",
+    "Sai: quy phạm áp dụng cho mọi cơ quan, tổ chức, cá nhân, không riêng công chức.",
+    "Sai: không giới hạn ở doanh nghiệp tư nhân."
+   ]
   },
   {
    "type": "pair",

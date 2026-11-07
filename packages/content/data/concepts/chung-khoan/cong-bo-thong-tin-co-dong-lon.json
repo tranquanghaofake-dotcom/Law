@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 18 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 18 Điều 4 — từ 5% trở lên.",
+    "Sai: không phải 10%.",
+    "Sai: 1% là ngưỡng thay đổi phải công bố.",
+    "Sai: không phải 20%."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 127 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 127 — thay đổi qua các ngưỡng 1%.",
+    "Sai: 5% là ngưỡng trở thành cổ đông lớn.",
+    "Sai: không phải 10%.",
+    "Sai: không phải mọi giao dịch nhỏ."
+   ]
   },
   {
    "type": "pair",
@@ -162,7 +174,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 127 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 127 tính nhóm người có liên quan: 5,5%.",
+    "Sai: vợ chồng là người có liên quan.",
+    "Sai: tài sản riêng không loại trừ việc cộng gộp.",
+    "Sai: ngưỡng là 5%, không phải 10%."
+   ]
   },
   {
    "type": "recall",

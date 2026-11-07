@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 7 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm g khoản 1 Điều 7 — phong tỏa tài khoản liên quan vi phạm.",
+    "Sai: luật không có biện pháp quốc hữu hóa.",
+    "Sai: không ấn định giá trần cho mọi cổ phiếu.",
+    "Sai: không cấm nhà đầu tư nước ngoài."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 7 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 7 — Chính phủ quy định chi tiết.",
+    "Sai: Sở giao dịch không quy định.",
+    "Sai: Bộ Công an không quy định.",
+    "Sai: Quốc hội không quy định chi tiết."
+   ]
   },
   {
    "type": "pair",

@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 11 Luật Tư pháp người chưa thành niên 2024 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 11 Luật Tư pháp người chưa thành niên — ưu tiên ở mọi giai đoạn điều tra, truy tố, xét xử.",
+    "Sai: không chỉ giai đoạn xét xử.",
+    "Sai: không chỉ giai đoạn điều tra.",
+    "Sai: xử lý chuyển hướng thay thế hình phạt, không áp dụng sau khi chấp hành án."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 36 Luật Tư pháp người chưa thành niên 2024 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: giáo dục tại trường giáo dưỡng là biện pháp chuyển hướng không thuộc nhóm tại cộng đồng.",
+    "Sai: khiển trách là biện pháp tại cộng đồng.",
+    "Sai: xin lỗi bị hại là biện pháp tại cộng đồng.",
+    "Sai: giáo dục tại xã, phường, đặc khu là biện pháp tại cộng đồng."
+   ]
   },
   {
    "type": "pair",

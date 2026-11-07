@@ -71,7 +71,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 87 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 87 — bất khả kháng là ngoại lệ.",
+    "Sai: tạm ngừng để tái cơ cấu cần chấp thuận.",
+    "Sai: tạm ngừng do thua lỗ cần chấp thuận.",
+    "Sai: quyết định nội bộ không loại trừ chấp thuận."
+   ]
   },
   {
    "type": "mcq",
@@ -88,7 +94,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 87 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm d khoản 1 Điều 87 — thành lập, đóng cửa phòng giao dịch.",
+    "Sai: tuyển nhân viên không cần chấp thuận.",
+    "Sai: tăng phí không thuộc Điều 87.",
+    "Sai: ký hợp đồng khách hàng không cần chấp thuận."
+   ]
   },
   {
    "type": "pair",

@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 119 Luật Tư pháp người chưa thành niên 2024 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 119 Luật Tư pháp người chưa thành niên — với tội không thuộc khoản 2, mức cao nhất không quá 15 năm tù.",
+    "Sai: 18 năm là mức cho một số tội đặc biệt ở khoản 2.",
+    "Sai: 20 năm vượt mức áp dụng với người chưa thành niên.",
+    "Sai: 12 năm là mức cao nhất cho người từ đủ 14 đến dưới 16 tuổi ở một số tội (khoản 4 Điều 119), không phải trường hợp này."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 115 Luật Tư pháp người chưa thành niên 2024 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 115 — người chưa thành niên phạm một tội chỉ bị áp dụng một hình phạt (không có hình phạt bổ sung).",
+    "Sai: không áp dụng hình phạt bổ sung với người chưa thành niên.",
+    "Sai: chỉ một hình phạt.",
+    "Sai: có giới hạn một hình phạt."
+   ]
   },
   {
    "type": "pair",

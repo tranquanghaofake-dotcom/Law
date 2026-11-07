@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 18 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 18 — che giấu tội phạm là không hứa hẹn trước; có hứa hẹn trước thì là giúp sức trong đồng phạm.",
+    "Sai: nhận tiền không phải dấu hiệu phân biệt.",
+    "Sai: người giúp sức biết và cố ý tham gia.",
+    "Sai: khác biệt nằm ở việc có hứa hẹn trước hay không."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 19 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 19 — ngoại lệ cho người thân không áp dụng với tội xâm phạm an ninh quốc gia (Chương XIII).",
+    "Sai: ngoại lệ cho vợ, chồng không áp dụng với tội an ninh quốc gia.",
+    "Sai: đây là trách nhiệm hình sự.",
+    "Sai: không được miễn hình phạt đương nhiên."
+   ]
   },
   {
    "type": "pair",

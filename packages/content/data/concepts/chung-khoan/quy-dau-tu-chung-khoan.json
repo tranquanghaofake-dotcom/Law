@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 37 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 37 Điều 4 — nhà đầu tư không kiểm soát hằng ngày quyết định đầu tư.",
+    "Sai: nhà đầu tư không quyết định từng giao dịch.",
+    "Sai: quỹ không chỉ đầu tư trái phiếu Chính phủ.",
+    "Sai: quỹ có mục đích lợi nhuận."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 99 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 99 — quỹ đại chúng và quỹ thành viên.",
+    "Sai: Điều 99 không phân loại theo quốc tịch.",
+    "Sai: không phân loại theo ngành.",
+    "Sai: không phân loại theo chủ sở hữu."
+   ]
   },
   {
    "type": "pair",

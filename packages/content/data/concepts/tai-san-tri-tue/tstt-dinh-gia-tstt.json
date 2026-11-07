@@ -78,7 +78,13 @@
     "Xác định tính mới của sáng chế và kiểu dáng"
    ],
    "answer": 0,
-   "explain": "Định giá phục vụ thương mại hóa: chuyển nhượng, chuyển quyền sử dụng, góp vốn, thế chấp."
+   "explain": "Định giá phục vụ thương mại hóa: chuyển nhượng, chuyển quyền sử dụng, góp vốn, thế chấp.",
+   "why": [
+    "Đúng: theo bài giảng, định giá phục vụ thương mại hóa: góp vốn, thế chấp, chuyển nhượng, chuyển quyền sử dụng.",
+    "Sai: cấp văn bằng dựa vào điều kiện bảo hộ, không dựa vào giá trị.",
+    "Sai: định giá không thay thủ tục đăng ký.",
+    "Sai: tính mới do thẩm định nội dung xác định, không phải định giá."
+   ]
   },
   {
    "type": "mcq",
@@ -91,7 +97,13 @@
     "Cấp lại văn bằng bảo hộ cho chủ sở hữu"
    ],
    "answer": 0,
-   "explain": "Mục đích tranh tụng: xác định thiệt hại, bồi thường."
+   "explain": "Mục đích tranh tụng: xác định thiệt hại, bồi thường.",
+   "why": [
+    "Đúng: theo bài giảng, khi có xâm phạm, định giá giúp xác định thiệt hại và mức bồi thường (Điều 204, 205).",
+    "Sai: định giá không làm hủy văn bằng.",
+    "Sai: định giá không miễn trách nhiệm cho bên xâm phạm.",
+    "Sai: văn bằng không bị mất nên không cần cấp lại."
+   ]
   },
   {
    "type": "pair",

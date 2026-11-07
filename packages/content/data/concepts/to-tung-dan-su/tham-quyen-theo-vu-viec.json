@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 26 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 5 Điều 26 — tranh chấp về thừa kế tài sản là tranh chấp dân sự.",
+    "Sai: tranh chấp hành chính giải quyết theo Luật Tố tụng hành chính, không phải tranh chấp thừa kế.",
+    "Sai: thừa kế không phát sinh từ hoạt động kinh doanh có mục đích lợi nhuận (Điều 30).",
+    "Sai: tranh chấp lao động thuộc Điều 32, không phải thừa kế."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 26, Điều 30 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 30 — tranh chấp quyền sở hữu trí tuệ giữa các bên đều có mục đích lợi nhuận là tranh chấp kinh doanh, thương mại.",
+    "Sai: hai bên đều vì lợi nhuận nên không phải tranh chấp dân sự thông thường (khoản 4 Điều 26).",
+    "Sai: tranh chấp giữa hai công ty về quyền sở hữu trí tuệ không phải tranh chấp hành chính.",
+    "Sai: tranh chấp này thuộc thẩm quyền Tòa án; trọng tài chỉ giải quyết khi các bên có thỏa thuận trọng tài."
+   ]
   },
   {
    "type": "pair",

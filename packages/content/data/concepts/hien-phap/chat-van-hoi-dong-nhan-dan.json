@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 115 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 115 — Chủ tịch, thành viên Ủy ban nhân dân, Chánh án, Viện trưởng, Thủ trưởng cơ quan thuộc Ủy ban nhân dân.",
+    "Sai: Thủ tướng, Bộ trưởng bị đại biểu Quốc hội chất vấn.",
+    "Sai: Chủ tịch nước bị đại biểu Quốc hội chất vấn.",
+    "Sai: Bộ trưởng không bị đại biểu Hội đồng nhân dân chất vấn."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 115 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 115 — trả lời trước Hội đồng nhân dân.",
+    "Sai: không trả lời trước Mặt trận Tổ quốc.",
+    "Sai: không trả lời trên báo chí.",
+    "Sai: không trả lời trước Ủy ban nhân dân."
+   ]
   },
   {
    "type": "pair",

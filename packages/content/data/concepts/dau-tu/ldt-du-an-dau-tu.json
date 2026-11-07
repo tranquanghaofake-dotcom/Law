@@ -76,7 +76,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 3 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 3 — tập hợp đề xuất bỏ vốn trung hạn hoặc dài hạn.",
+    "Sai: luật không nói ngắn hạn dưới 1 năm.",
+    "Sai: dự án có thời gian xác định.",
+    "Sai: không giới hạn ở dài hạn trên 50 năm."
+   ]
   },
   {
    "type": "mcq",
@@ -93,7 +99,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 3 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 3 — thực hiện trên địa bàn cụ thể, trong khoảng thời gian xác định.",
+    "Sai: dự án đầu tư không bắt buộc có vốn nhà nước.",
+    "Sai: không bắt buộc có nhà đầu tư nước ngoài.",
+    "Sai: chỉ một số dự án đặc biệt mới cần Quốc hội chấp thuận chủ trương."
+   ]
   },
   {
    "type": "pair",

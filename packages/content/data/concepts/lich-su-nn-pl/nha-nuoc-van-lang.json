@@ -82,7 +82,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển I (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), tờ 3a"
-   }
+   },
+   "why": [
+    "Đúng: Toàn thư — Hùng Vương đặt quốc hiệu Văn Lang.",
+    "Sai: Âu Lạc là quốc hiệu thời An Dương Vương.",
+    "Sai: Vạn Xuân là quốc hiệu thời Lý Bí.",
+    "Sai: Đại Cồ Việt là quốc hiệu thời Đinh."
+   ]
   },
   {
    "type": "mcq",
@@ -99,7 +105,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển I (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), tờ 3a"
-   }
+   },
+   "why": [
+    "Đúng: Toàn thư — chia nước làm 15 bộ.",
+    "Sai: 12 không phải số bộ.",
+    "Sai: 13 không phải số bộ.",
+    "Sai: 18 là số đời Hùng Vương theo truyền thuyết."
+   ]
   },
   {
    "type": "pair",

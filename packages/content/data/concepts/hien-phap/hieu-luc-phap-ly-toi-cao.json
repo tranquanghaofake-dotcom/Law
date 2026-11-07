@@ -74,7 +74,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 119 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 119 — mọi văn bản pháp luật khác phải phù hợp với Hiến pháp.",
+    "Sai: Hiến pháp áp dụng cho mọi chủ thể.",
+    "Sai: \"cao nhất\" là thứ bậc, không phải thời gian.",
+    "Sai: không giới hạn ở tranh chấp dân sự."
+   ]
   },
   {
    "type": "mcq",
@@ -91,7 +97,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 119 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 119 — mọi hành vi vi phạm Hiến pháp đều bị xử lý.",
+    "Sai: không chỉ cơ quan nhà nước.",
+    "Sai: không cần thiệt hại thực tế.",
+    "Sai: khoản 1 Điều 119 có quy định xử lý."
+   ]
   },
   {
    "type": "pair",
@@ -157,7 +169,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 119 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Sai: thẩm quyền địa phương không cho phép trái Hiến pháp.",
+    "Đúng: nghị quyết trái Điều 23 nên phải bị xử lý (khoản 1 Điều 119).",
+    "Sai: Hiến pháp ràng buộc cả chính quyền địa phương.",
+    "Sai: văn bản trái Hiến pháp không có hiệu lực áp dụng."
+   ]
   },
   {
    "type": "truefalse",

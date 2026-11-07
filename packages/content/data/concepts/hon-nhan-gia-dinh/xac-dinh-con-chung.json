@@ -1,0 +1,136 @@
+{
+ "id": "xac-dinh-con-chung",
+ "subject": "hon-nhan-gia-dinh",
+ "chapter": "c5-cha-me-con",
+ "term": "Xác định con chung của vợ chồng",
+ "definition": "Con sinh ra trong thời kỳ hôn nhân hoặc do người vợ có thai trong thời kỳ hôn nhân là con chung của vợ chồng. Con được sinh ra trong thời hạn 300 ngày kể từ thời điểm chấm dứt hôn nhân được coi là con do người vợ có thai trong thời kỳ hôn nhân. Con sinh ra trước ngày đăng ký kết hôn và được cha mẹ thừa nhận là con chung của vợ chồng.",
+ "plain": "Ba trường hợp con chung: (1) SINH RA hoặc CÓ THAI trong thời kỳ hôn nhân; (2) sinh trong 300 NGÀY sau khi hôn nhân chấm dứt (suy đoán có thai trong thời kỳ hôn nhân); (3) sinh TRƯỚC đăng ký kết hôn và được cha mẹ THỪA NHẬN. Đây là SUY ĐOÁN pháp lý: cha hoặc mẹ không thừa nhận thì phải có chứng cứ và phải được Tòa án xác định (khoản 2). Vì vậy con sinh trong thời kỳ hôn nhân không \"đương nhiên tuyệt đối\" là con chung.",
+ "example": "Ly hôn có hiệu lực ngày 01/3, người vợ sinh con ngày 01/9 cùng năm (chưa quá 300 ngày): con được coi là con chung, trừ khi chứng minh ngược lại trước Tòa án.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 88 Luật Hôn nhân và gia đình 2014",
+  "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "thoi-ky-hon-nhan",
+  "mang-thai-ho-vi-muc-dich-nhan-dao",
+  "hon-nhan"
+ ],
+ "keywords": [
+  "thời kỳ hôn nhân",
+  "300 ngày",
+  "chấm dứt hôn nhân",
+  "thừa nhận"
+ ],
+ "memo": {
+  "gist": "Con sinh ra hoặc có thai trong thời kỳ hôn nhân được suy đoán là con chung, nhưng có thể bị phản bác.",
+  "kind": "tree",
+  "hook": "Trong hôn nhân, ba trăm ngày sau, trước khi cưới mà cha mẹ nhận: ba cửa vào con chung.",
+  "tree": [
+   {
+    "label": "Trong hôn nhân",
+    "icon": "heart",
+    "children": [
+     "Sinh ra",
+     "Hoặc có thai"
+    ]
+   },
+   {
+    "label": "Sau khi chấm dứt",
+    "icon": "calendar",
+    "children": [
+     "Sinh trong 300 ngày"
+    ]
+   },
+   {
+    "label": "Trước đăng ký",
+    "icon": "check",
+    "children": [
+     "Cha mẹ thừa nhận"
+    ]
+   },
+   {
+    "label": "Không thừa nhận",
+    "icon": "scales",
+    "children": [
+     "Có chứng cứ",
+     "Tòa án xác định"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Con sinh ra trong thời kỳ hôn nhân có chắc chắn là con chung của vợ chồng không?",
+   "a": "Không chắc chắn. Đó là suy đoán; cha hoặc mẹ có chứng cứ không phải con mình thì yêu cầu Tòa án xác định."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Con sinh ra trong thời hạn bao nhiêu ngày kể từ khi hôn nhân chấm dứt thì được coi là do người vợ có thai trong thời kỳ hôn nhân?",
+   "options": [
+    "300 ngày",
+    "280 ngày",
+    "365 ngày",
+    "180 ngày"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 88: trong thời hạn 300 ngày kể từ thời điểm chấm dứt hôn nhân.",
+   "why": [
+    "Đúng: 300 ngày.",
+    "Sai: 280 ngày là thời gian mang thai trung bình về y học, không phải mốc luật định.",
+    "Sai: luật không dùng mốc một năm.",
+    "Sai: 180 ngày không phải mốc của Điều 88."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Con sinh ra trong {{thời kỳ hôn nhân}} hoặc do người vợ có thai trong thời kỳ hôn nhân là con chung của vợ chồng."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Con được sinh ra trong thời hạn {{300}} ngày kể từ thời điểm chấm dứt hôn nhân được coi là con do người vợ có thai trong thời kỳ hôn nhân. Con sinh ra trước ngày đăng ký kết hôn và được cha mẹ {{thừa nhận}} là con chung của vợ chồng."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Vợ chồng anh Đức đăng ký kết hôn tháng 3/2026; con của họ sinh tháng 1/2026 và cả hai cùng thừa nhận là con chung. Đứa trẻ có phải con chung không?",
+   "options": [
+    "Có, vì cha mẹ đã thừa nhận là con chung",
+    "Không, vì con sinh trước thời kỳ hôn nhân",
+    "Chỉ khi Tòa án ra quyết định công nhận",
+    "Chỉ là con chung nếu có kết quả xét nghiệm ADN"
+   ],
+   "answer": 0,
+   "explain": "Câu cuối khoản 1 Điều 88: con sinh ra trước ngày đăng ký kết hôn và được cha mẹ thừa nhận là con chung của vợ chồng.",
+   "why": [
+    "Đúng: trường hợp thứ ba của khoản 1 Điều 88.",
+    "Sai: luật có trường hợp riêng cho con sinh trước đăng ký kết hôn.",
+    "Sai: cha mẹ thừa nhận là đủ; chỉ khi không thừa nhận mới cần Tòa án.",
+    "Sai: xét nghiệm chỉ cần khi có tranh chấp."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Con do người vợ sinh ra trong thời kỳ hôn nhân đương nhiên là con chung của vợ chồng, không thể bị phản bác.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 88: cha, mẹ không thừa nhận con thì phải có chứng cứ và phải được Tòa án xác định."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu ba trường hợp con được xác định là con chung theo khoản 1 Điều 88.",
+   "model": "Con sinh ra hoặc có thai trong thời kỳ hôn nhân; con sinh trong 300 ngày kể từ khi hôn nhân chấm dứt; con sinh trước ngày đăng ký kết hôn được cha mẹ thừa nhận.",
+   "keywords": [
+    "thời kỳ hôn nhân",
+    "300 ngày",
+    "trước ngày đăng ký kết hôn",
+    "thừa nhận"
+   ]
+  }
+ ]
+}

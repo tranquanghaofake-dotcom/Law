@@ -1,0 +1,145 @@
+{
+ "id": "tai-san-chung",
+ "subject": "hon-nhan-gia-dinh",
+ "chapter": "c3-tai-san-vo-chong",
+ "term": "Tài sản chung của vợ chồng",
+ "definition": "Tài sản chung của vợ chồng gồm tài sản do vợ, chồng tạo ra, thu nhập do lao động, hoạt động sản xuất, kinh doanh, hoa lợi, lợi tức phát sinh từ tài sản riêng và thu nhập hợp pháp khác trong thời kỳ hôn nhân, trừ trường hợp được quy định tại khoản 1 Điều 40 của Luật này; tài sản mà vợ chồng được thừa kế chung hoặc được tặng cho chung và tài sản khác mà vợ chồng thỏa thuận là tài sản chung.",
+ "plain": "Nguồn tài sản chung: (1) tạo ra, thu nhập (lương, kinh doanh) TRONG THỜI KỲ HÔN NHÂN; (2) HOA LỢI, LỢI TỨC từ tài sản RIÊNG (trừ khi đã chia tài sản chung theo khoản 1 Điều 40); (3) được THỪA KẾ CHUNG, TẶNG CHO CHUNG; (4) thỏa thuận là tài sản chung. Quyền sử dụng đất có sau khi kết hôn là tài sản chung, trừ khi được thừa kế, tặng cho riêng hoặc có từ giao dịch bằng tài sản riêng. Không chứng minh được là tài sản riêng thì coi là tài sản chung (khoản 3). Tài sản chung là sở hữu chung HỢP NHẤT.",
+ "example": "Vợ có căn nhà riêng từ trước khi cưới, cho thuê được 10 triệu đồng mỗi tháng: tiền thuê nhà trong thời kỳ hôn nhân là tài sản chung.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 33 Luật Hôn nhân và gia đình 2014",
+  "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "tai-san-rieng",
+  "thoi-ky-hon-nhan",
+  "chia-tai-san-chung-trong-thoi-ky-hon-nhan"
+ ],
+ "keywords": [
+  "trong thời kỳ hôn nhân",
+  "hoa lợi, lợi tức",
+  "thừa kế chung",
+  "tặng cho chung",
+  "thỏa thuận là tài sản chung"
+ ],
+ "memo": {
+  "gist": "Tài sản chung là của cải vợ chồng làm ra trong hôn nhân, lời từ tài sản riêng, đồ được cho hoặc thừa kế chung.",
+  "kind": "tree",
+  "hook": "Cây trồng trước khi cưới vẫn của mình, nhưng quả hái sau khi cưới bỏ vào rổ chung.",
+  "tree": [
+   {
+    "label": "Làm ra trong hôn nhân",
+    "icon": "money",
+    "children": [
+     "Lương, thu nhập",
+     "Sản xuất, kinh doanh"
+    ]
+   },
+   {
+    "label": "Lời từ tài sản riêng",
+    "icon": "plant",
+    "children": [
+     "Hoa lợi, lợi tức",
+     "Trừ khi đã chia tài sản chung"
+    ]
+   },
+   {
+    "label": "Được cho chung",
+    "icon": "gift",
+    "children": [
+     "Thừa kế chung",
+     "Tặng cho chung"
+    ]
+   },
+   {
+    "label": "Thỏa thuận",
+    "icon": "handshake",
+    "children": [
+     "Vợ chồng thỏa thuận là chung"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Cha mẹ chồng để thừa kế riêng cho chồng một căn nhà thì căn nhà là tài sản chung không?",
+   "a": "Không. Thừa kế riêng là tài sản riêng của chồng; chỉ thừa kế chung mới là tài sản chung."
+  },
+  "contrast": [
+   {
+    "with": "tai-san-rieng",
+    "text": "Tài sản riêng có trước hôn nhân hoặc được cho, thừa kế riêng; nhưng tiền lời sinh ra từ nó trong hôn nhân lại là tài sản chung."
+   }
+  ]
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 33, hoa lợi, lợi tức phát sinh từ tài sản riêng trong thời kỳ hôn nhân thuộc loại tài sản nào?",
+   "options": [
+    "Tài sản chung, trừ khoản 1 Điều 40",
+    "Tài sản riêng của người có tài sản gốc",
+    "Tài sản riêng nếu đó là nguồn sống duy nhất",
+    "Tài sản chung nhưng chỉ khi có văn bản"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 33 và khoản 2 Điều 43: hoa lợi, lợi tức từ tài sản riêng trong thời kỳ hôn nhân là tài sản chung, trừ trường hợp đã chia tài sản chung (khoản 1 Điều 40).",
+   "why": [
+    "Đúng: là tài sản chung, ngoại lệ ở khoản 1 Điều 40.",
+    "Sai: tài sản gốc là riêng nhưng hoa lợi, lợi tức sinh ra trong hôn nhân là chung.",
+    "Sai: \"nguồn sống duy nhất\" (khoản 4 Điều 44) chỉ hạn chế việc định đoạt tài sản riêng, không đổi loại tài sản.",
+    "Sai: không cần văn bản; luật mặc nhiên xác định là tài sản chung."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tài sản chung của vợ chồng gồm tài sản do vợ, chồng tạo ra, thu nhập do lao động, hoạt động sản xuất, kinh doanh, {{hoa lợi, lợi tức}} phát sinh từ tài sản riêng và thu nhập hợp pháp khác trong {{thời kỳ hôn nhân}}, trừ trường hợp được quy định tại khoản 1 Điều 40 của Luật này;"
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "tài sản mà vợ chồng được thừa kế {{chung}} hoặc được tặng cho chung và tài sản khác mà vợ chồng {{thỏa thuận}} là tài sản chung."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Trong thời kỳ hôn nhân, cha mẹ vợ làm hợp đồng tặng cho riêng con gái một mảnh đất. Khi ly hôn, chồng đòi chia mảnh đất này. Mảnh đất thuộc về ai?",
+   "options": [
+    "Tài sản riêng của vợ, vì được tặng cho riêng",
+    "Tài sản chung, vì có được trong thời kỳ hôn nhân",
+    "Tài sản chung, vì quyền sử dụng đất có sau khi kết hôn",
+    "Tài sản chung nếu chồng có công sức tôn tạo mảnh đất"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 33 (đoạn 2) và khoản 1 Điều 43: quyền sử dụng đất được tặng cho riêng là tài sản riêng.",
+   "why": [
+    "Đúng: tặng cho riêng là tài sản riêng (khoản 1 Điều 43).",
+    "Sai: có trong thời kỳ hôn nhân chưa đủ; tặng cho riêng là ngoại lệ.",
+    "Sai: quy tắc đất có sau kết hôn là chung có ngoại lệ \"được tặng cho riêng\".",
+    "Sai: công sức tôn tạo có thể được tính khi chia, nhưng không biến mảnh đất thành tài sản chung (trừ khi đã nhập vào tài sản chung)."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo chế độ tài sản theo luật định, tài sản vợ chồng được thừa kế chung là tài sản thuộc sở hữu chung hợp nhất của vợ chồng.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 và khoản 2 Điều 33: thừa kế chung là tài sản chung, thuộc sở hữu chung hợp nhất."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể các nguồn hình thành tài sản chung của vợ chồng theo khoản 1 Điều 33.",
+   "model": "Tài sản do vợ chồng tạo ra, thu nhập do lao động, sản xuất kinh doanh, hoa lợi lợi tức từ tài sản riêng, thu nhập hợp pháp khác trong thời kỳ hôn nhân; tài sản được thừa kế chung, tặng cho chung; tài sản thỏa thuận là chung.",
+   "keywords": [
+    "thời kỳ hôn nhân",
+    "hoa lợi, lợi tức",
+    "thừa kế chung",
+    "tặng cho chung",
+    "thỏa thuận"
+   ]
+  }
+ ]
+}

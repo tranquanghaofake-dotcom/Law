@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 72 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 72 — tự doanh đòi đã có môi giới.",
+    "Sai: tư vấn không phải điều kiện tự doanh.",
+    "Sai: bảo lãnh đòi tự doanh, không ngược lại.",
+    "Sai: quản lý quỹ không phải nghiệp vụ công ty chứng khoán."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 72, 73 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: quản lý quỹ thuộc công ty quản lý quỹ (Điều 73).",
+    "Sai: môi giới, tư vấn thuộc Điều 72.",
+    "Sai: tự doanh thuộc Điều 72.",
+    "Sai: tư vấn đầu tư thuộc Điều 72."
+   ]
   },
   {
    "type": "pair",
@@ -156,7 +168,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 72 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 72 — bảo lãnh phát hành đòi hỏi đã có tự doanh.",
+    "Sai: môi giới, tư vấn không đủ.",
+    "Sai: vốn không thay điều kiện nghiệp vụ.",
+    "Sai: tư vấn không thay tự doanh."
+   ]
   },
   {
    "type": "recall",

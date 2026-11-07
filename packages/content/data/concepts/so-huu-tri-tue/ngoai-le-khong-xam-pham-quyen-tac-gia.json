@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 25 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 25 — tự sao chép một bản để học tập cá nhân, không thương mại thì không xin phép, không trả tiền nhưng phải nêu tên tác giả, nguồn gốc.",
+    "Sai: ngoại lệ này không cần xin phép, không trả tiền.",
+    "Sai: không cần đăng ký với Cục Bản quyền.",
+    "Sai: luật có ngoại lệ cho mục đích học tập cá nhân."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 25 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 25 — ngoại lệ chỉ áp dụng với tác phẩm đã công bố.",
+    "Sai: tác phẩm chưa công bố không thuộc ngoại lệ.",
+    "Sai: không áp dụng với tác phẩm chưa công bố.",
+    "Sai: tác phẩm chưa công bố, dù trong hay ngoài nước, không thuộc ngoại lệ."
+   ]
   },
   {
    "type": "pair",

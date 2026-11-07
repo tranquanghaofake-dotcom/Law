@@ -72,7 +72,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 105 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 105 — không quá 48 giờ trong 01 tuần.",
+    "Sai: 40 giờ là mức Nhà nước khuyến khích, không phải trần.",
+    "Sai: 44 giờ không phải mức trần của khoản 1 Điều 105 (trần là 48 giờ).",
+    "Sai: 60 giờ vượt mức."
+   ]
   },
   {
    "type": "mcq",
@@ -89,7 +95,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 107 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 2 Điều 107 — phải được sự đồng ý của người lao động.",
+    "Sai: không cần Sở Nội vụ cho phép (trừ trường hợp vượt ngưỡng phải thông báo).",
+    "Sai: mức trả làm thêm ít nhất 150–300%, không phải điều kiện \"gấp 5 lần\".",
+    "Sai: không cần quyết định của công đoàn."
+   ]
   },
   {
    "type": "pair",

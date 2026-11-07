@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 16 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 16 Bộ luật Dân sự — có từ khi sinh ra.",
+    "Sai: 6 tuổi là mốc năng lực hành vi.",
+    "Sai: 18 tuổi là mốc thành niên.",
+    "Sai: đăng ký thường trú không liên quan."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 16 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 16 — khả năng của cá nhân có quyền dân sự và nghĩa vụ dân sự.",
+    "Sai: đây là năng lực hành vi.",
+    "Sai: chịu trách nhiệm về hành vi gắn với năng lực hành vi, trách nhiệm.",
+    "Sai: được bảo vệ là hệ quả, không phải định nghĩa."
+   ]
   },
   {
    "type": "pair",

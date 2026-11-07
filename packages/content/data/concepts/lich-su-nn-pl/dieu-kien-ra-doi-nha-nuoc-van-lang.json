@@ -77,7 +77,13 @@
    "source": {
     "kind": "textbook",
     "cite": "Giáo trình Lịch sử nhà nước và pháp luật, Trường ĐH Luật Hà Nội, NXB Tư pháp 2025, Chương 5, mục 1.1"
-   }
+   },
+   "why": [
+    "Đúng: theo giáo trình, nhu cầu trị thủy và chống ngoại xâm là yếu tố thúc đẩy.",
+    "Sai: tư hữu ruộng đất thời Văn Lang chưa phát triển cao.",
+    "Sai: chữ viết không phải yếu tố thúc đẩy được nêu.",
+    "Sai: Nho giáo du nhập muộn hơn nhiều."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "textbook",
     "cite": "Giáo trình Lịch sử nhà nước và pháp luật, Trường ĐH Luật Hà Nội, NXB Tư pháp 2025, Chương 5, mục 1.1"
-   }
+   },
+   "why": [
+    "Đúng: nông nghiệp trồng lúa nước là nền kinh tế chủ đạo.",
+    "Sai: thương mại đường biển xa bờ chưa phát triển.",
+    "Sai: cư dân Văn Lang định cư làm nông, không du mục.",
+    "Sai: khai thác mỏ quy mô lớn chưa có."
+   ]
   },
   {
    "type": "pair",
@@ -150,7 +162,13 @@
     "Đúng, vì Văn Lang có hệ thống pháp luật thành văn hoàn chỉnh với đầy đủ bộ luật hình và luật dân sự riêng"
    ],
    "answer": 0,
-   "explain": "Nhận định áp nguyên mô hình \"mâu thuẫn giai cấp gay gắt\" là chưa sát với Văn Lang. Cần nêu đồng thời điều kiện kinh tế – xã hội và hai yếu tố thúc đẩy đặc thù."
+   "explain": "Nhận định áp nguyên mô hình \"mâu thuẫn giai cấp gay gắt\" là chưa sát với Văn Lang. Cần nêu đồng thời điều kiện kinh tế – xã hội và hai yếu tố thúc đẩy đặc thù.",
+   "why": [
+    "Đúng: theo giáo trình, nhận định chưa chính xác: phân hóa xã hội mới sơ khai, nhà nước ra đời sớm nhờ yếu tố thúc đẩy.",
+    "Sai: không áp nguyên mô hình mâu thuẫn giai cấp gay gắt cho Văn Lang.",
+    "Sai: Văn Lang được coi là nhà nước sơ khai.",
+    "Sai: Văn Lang chưa có pháp luật thành văn."
+   ]
   },
   {
    "type": "recall",

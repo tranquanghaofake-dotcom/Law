@@ -82,7 +82,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 34 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 34 — quyền sở hữu trí tuệ là tài sản góp vốn.",
+    "Sai: uy tín cá nhân không định giá được bằng Đồng Việt Nam, không phải tài sản góp vốn.",
+    "Sai: quyền bầu cử là quyền chính trị, không phải tài sản.",
+    "Sai: người đi thuê không có quyền đem tài sản góp vốn (khoản 2 Điều 34)."
+   ]
   },
   {
    "type": "mcq",
@@ -99,7 +105,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 34 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 34 — chỉ chủ sở hữu hợp pháp hoặc người có quyền sử dụng hợp pháp tài sản.",
+    "Sai: người chỉ đang giữ, thuê, mượn không có quyền đem góp vốn.",
+    "Sai: quyền góp vốn không giới hạn ở cổ đông sáng lập.",
+    "Sai: luật không đòi quốc tịch hay nơi thường trú."
+   ]
   },
   {
    "type": "pair",

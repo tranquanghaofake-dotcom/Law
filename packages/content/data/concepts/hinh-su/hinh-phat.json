@@ -72,7 +72,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 30 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 30 — hình phạt do Tòa án quyết định.",
+    "Sai: Viện kiểm sát truy tố, không quyết định hình phạt.",
+    "Sai: Cơ quan điều tra không quyết định hình phạt.",
+    "Sai: Ủy ban nhân dân không có quyền này."
+   ]
   },
   {
    "type": "mcq",
@@ -89,7 +95,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 30 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 30 — áp dụng với người hoặc pháp nhân thương mại phạm tội.",
+    "Sai: không áp dụng với mọi vi phạm pháp luật.",
+    "Sai: vi phạm hành chính bị xử phạt hành chính.",
+    "Sai: hình phạt không áp dụng với người thân, người bị hại."
+   ]
   },
   {
    "type": "pair",

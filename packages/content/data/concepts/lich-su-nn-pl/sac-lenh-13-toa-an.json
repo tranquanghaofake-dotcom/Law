@@ -88,7 +88,13 @@
    "source": {
     "kind": "primary",
     "cite": "Sắc lệnh 13 ngày 24/01/1946, Điều thứ 17"
-   }
+   },
+   "why": [
+    "Đúng: Điều thứ 17 Sắc lệnh 13 — xử tiểu hình có thêm hai Phụ thẩm nhân dân.",
+    "Sai: không phải Kiểm sát viên và thư ký.",
+    "Sai: Hội đồng nhân dân tỉnh không xét xử.",
+    "Sai: Ủy ban hành chính không xét xử."
+   ]
   },
   {
    "type": "mcq",
@@ -105,7 +111,13 @@
    "source": {
     "kind": "primary",
     "cite": "Sắc lệnh 13, Điều thứ 4"
-   }
+   },
+   "why": [
+    "Đúng: Điều thứ 4 — chỉ bắt giữ khi có trát nã của thẩm phán hoặc phạm tội quả tang.",
+    "Sai: Chủ tịch xã không tự quyết bắt người.",
+    "Sai: đơn tố cáo không đủ để bắt giữ.",
+    "Sai: nghi ngờ không đủ để bắt giữ."
+   ]
   },
   {
    "type": "pair",

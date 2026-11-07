@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 23 Điều 3 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 23 Điều 3 — tiền và tài sản khác theo pháp luật dân sự và điều ước quốc tế.",
+    "Sai: tài sản Nhà nước giao quản lý không phải vốn đầu tư của nhà đầu tư.",
+    "Sai: ngân sách nhà nước cấp không thuộc vốn đầu tư kinh doanh theo định nghĩa.",
+    "Sai: nợ phải trả không phải định nghĩa vốn đầu tư."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 23 Điều 3 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 23 Điều 3 — vốn đầu tư để thực hiện hoạt động đầu tư kinh doanh.",
+    "Sai: nộp ngân sách không phải mục đích của vốn đầu tư.",
+    "Sai: chi tiêu cá nhân không phải đầu tư.",
+    "Sai: trả cổ tức là phân phối lợi nhuận, không phải mục đích của vốn đầu tư."
+   ]
   },
   {
    "type": "pair",

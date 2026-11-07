@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 4 Luật Ngân sách nhà nước 2025 (89/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 22 Điều 4 — toàn bộ tiền của Nhà nước, kể cả tiền vay, có trên tài khoản ngân sách các cấp tại một thời điểm.",
+    "Sai: quỹ bảo hiểm xã hội và dự trữ ngoại hối là quỹ riêng, và quỹ ngân sách có gồm tiền vay.",
+    "Sai: tài sản công (đất, trụ sở) không phải quỹ ngân sách, vốn chỉ là tiền.",
+    "Sai: tiền đóng quỹ hưu trí, tử tuất thuộc quỹ bảo hiểm xã hội."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 64 Luật Ngân sách nhà nước 2025 (89/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 64 — Kho bạc Nhà nước quản lý tập trung, thống nhất ngân quỹ nhà nước.",
+    "Sai: ngân hàng thương mại không quản lý ngân quỹ nhà nước.",
+    "Sai: Kiểm toán nhà nước kiểm tra, không quản lý ngân quỹ.",
+    "Sai: Quốc hội quyết định dự toán, không trực tiếp quản lý ngân quỹ."
+   ]
   },
   {
    "type": "pair",

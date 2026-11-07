@@ -17,6 +17,8 @@ export type Why = {
   signs: string[];
   /** Khái niệm dễ nhầm với dấu hiệu của nó; chỉ khi cả hai bên có đủ dữ liệu. `picked`: bạn đã chọn đúng khái niệm này. */
   mixup: { id: string; term: string; theirs: string[]; ours: string[]; picked: boolean } | null;
+  /** Vì sao phương án đã chọn sai: lấy nguyên câu `why` người soạn viết cho đúng phương án đó (không tự sinh). */
+  wrong?: { option: string; text: string } | null;
 };
 
 const CITE_PARTS = /(điểm\s+[a-zđ]\b|khoản\s+\d+|điều\s+\d+[a-z]?|chương\s+[ivx\d]+|mục\s+\d+|phần\s+[ivx\d]+|bài\s+\d+|vd\s*\d+|các|và|,|;|\.|\(|\)|-|–|\d+)/giu;
@@ -139,5 +141,19 @@ export function whyOf(concept: Concept, item: StepItem, opts: { correct: boolean
     ? { id: pick.id, term: pick.term, theirs: pick.keywords.slice(0, 3), ours: signs.slice(0, 3), picked: chosenTerm(opts.chosen, pick) }
     : null;
   const needPlain = citeOnly || text.length < 60;
-  return { citeOnly, excerpt: { text, marks }, plain: needPlain ? firstSentence(concept.plain) : null, signs, mixup };
+  return { citeOnly, excerpt: { text, marks }, plain: needPlain ? firstSentence(concept.plain) : null, signs, mixup, wrong: wrongWhy(item, opts.chosen) };
+}
+
+/** Câu `why` của phương án đã chọn (khác đáp án). Không có dữ liệu thì null. */
+export function wrongWhy(item: StepItem, chosen: string | undefined): { option: string; text: string } | null {
+  if (item.type !== 'mcq' && item.type !== 'case') return null;
+  return pickedWhy(item, chosen);
+}
+
+/** Như wrongWhy nhưng cho mọi câu có options/answer/why (bộ đề 10 câu). Tìm theo chữ của phương án nên không phụ thuộc thứ tự xáo. */
+export function pickedWhy(q: { options: string[]; answer: number; why?: string[] }, chosen: string | undefined): { option: string; text: string } | null {
+  if (!q.why || chosen === undefined) return null;
+  const i = q.options.indexOf(chosen);
+  if (i < 0 || i === q.answer || !q.why[i]) return null;
+  return { option: chosen, text: q.why[i] };
 }

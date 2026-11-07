@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 106 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 106 — công ty quản lý quỹ xác định, ngân hàng giám sát xác nhận.",
+    "Sai: Ủy ban không xác định giá trị tài sản ròng.",
+    "Sai: Sở giao dịch không xác định.",
+    "Sai: Đại hội nhà đầu tư không xác định."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 106 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 2 Điều 106 — giá đóng cửa hoặc giá trung bình ngày giao dịch gần nhất.",
+    "Sai: không dùng giá mua ban đầu.",
+    "Sai: công ty quản lý quỹ không tự đặt giá.",
+    "Sai: không dùng mệnh giá."
+   ]
   },
   {
    "type": "pair",

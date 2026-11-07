@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 200 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 200 — hợp nhất tạo một công ty mới, các công ty bị hợp nhất chấm dứt tồn tại.",
+    "Sai: công ty nhận vẫn tồn tại là sáp nhập (Điều 201).",
+    "Sai: chia một công ty thành nhiều công ty là chia doanh nghiệp (Điều 198), và khi chia thì công ty cũ chấm dứt.",
+    "Sai: mua cổ phần chi phối là mua lại, cả hai cùng tồn tại."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 200 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 2 Điều 200 — hợp đồng hợp nhất nêu thời hạn, thủ tục, điều kiện chuyển đổi tài sản, phần vốn góp, cổ phần, trái phiếu.",
+    "Sai: lương thưởng giám đốc không phải nội dung bắt buộc của hợp đồng hợp nhất.",
+    "Sai: giá cổ phiếu tương lai không phải nội dung luật định.",
+    "Sai: danh sách khách hàng không phải nội dung bắt buộc."
+   ]
   },
   {
    "type": "pair",

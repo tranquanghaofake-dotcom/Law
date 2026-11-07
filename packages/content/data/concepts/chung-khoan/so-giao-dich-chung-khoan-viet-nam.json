@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 43 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 43 — doanh nghiệp Nhà nước nắm trên 50% vốn điều lệ.",
+    "Sai: không phải cơ quan thuộc Bộ Tài chính.",
+    "Sai: không phải đơn vị sự nghiệp.",
+    "Sai: không phải tổ chức xã hội – nghề nghiệp."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 43 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 43 — Thủ tướng, theo đề nghị Bộ trưởng Bộ Tài chính.",
+    "Sai: Quốc hội không quyết định.",
+    "Sai: Chủ tịch Ủy ban không quyết định.",
+    "Sai: Đại hội đồng cổ đông không quyết định."
+   ]
   },
   {
    "type": "pair",

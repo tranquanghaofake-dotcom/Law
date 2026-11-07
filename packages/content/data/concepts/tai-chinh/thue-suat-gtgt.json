@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 9 Luật Thuế giá trị gia tăng 2024 (đã sửa đổi, bổ sung)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 9 — thuế suất phổ thông 10%.",
+    "Sai: 5% là thuế suất ưu đãi cho nhóm hàng thiết yếu (khoản 2 Điều 9).",
+    "Sai: 0% áp dụng cho hàng hóa, dịch vụ xuất khẩu (khoản 1 Điều 9).",
+    "Sai: không có thuế suất 15%."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 9 Luật Thuế giá trị gia tăng 2024 (đã sửa đổi, bổ sung)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 9 — 0% áp dụng chủ yếu cho hàng hóa, dịch vụ xuất khẩu.",
+    "Sai: nước sạch sinh hoạt chịu thuế suất 5%.",
+    "Sai: dịch vụ tín dụng thuộc diện không chịu thuế (Điều 5), khác thuế suất 0%.",
+    "Sai: hàng tiêu dùng nội địa chịu 5% hoặc 10%."
+   ]
   },
   {
    "type": "pair",

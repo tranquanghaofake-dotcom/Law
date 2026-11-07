@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 46 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm c khoản 1 Điều 46 — bắt buộc chữa bệnh là biện pháp tư pháp với người phạm tội.",
+    "Sai: quản chế là hình phạt bổ sung.",
+    "Sai: cấm cư trú là hình phạt bổ sung.",
+    "Sai: phạt tiền, cải tạo không giam giữ là hình phạt."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 46 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm c khoản 2 Điều 46 — khôi phục lại tình trạng ban đầu chỉ áp dụng với pháp nhân thương mại.",
+    "Sai: tịch thu vật, tiền liên quan áp dụng cả với người phạm tội.",
+    "Sai: bồi thường thiệt hại áp dụng cả với người phạm tội.",
+    "Sai: buộc công khai xin lỗi áp dụng cả với người phạm tội."
+   ]
   },
   {
    "type": "pair",

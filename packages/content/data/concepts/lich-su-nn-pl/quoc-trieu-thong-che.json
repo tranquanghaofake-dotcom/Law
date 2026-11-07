@@ -87,7 +87,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển V, tờ 6a"
-   }
+   },
+   "why": [
+    "Đúng: năm 1230 nhà Trần soạn Quốc triều thông chế.",
+    "Sai: Hình thư năm 1042 thuộc nhà Lý.",
+    "Sai: Quốc triều hình luật thuộc nhà Hậu Lê.",
+    "Sai: Hồng Đức thiện chính thư thuộc thời Lê."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển V, tờ 6a"
-   }
+   },
+   "why": [
+    "Đúng: Cảo điền hoành — thích 6 chữ vào mặt, ở Cảo xã cày ruộng công, nộp thóc.",
+    "Sai: thích 4 chữ vào cổ, dọn cỏ Phượng Thành là Lao thành binh.",
+    "Sai: Cảo điền hoành không bị lưu đày biên giới.",
+    "Sai: Cảo điền hoành không được chuộc tha."
+   ]
   },
   {
    "type": "pair",

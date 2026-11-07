@@ -72,7 +72,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 195 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 195 — sở hữu trên 50% vốn điều lệ hoặc tổng số cổ phần phổ thông.",
+    "Sai: dưới 50% chưa đủ (trừ khi có quyền chi phối theo điểm b, c).",
+    "Sai: đúng 50% chưa phải \"trên 50%\".",
+    "Sai: dưới 30% không đủ để là công ty mẹ theo điểm a."
+   ]
   },
   {
    "type": "mcq",
@@ -89,7 +95,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 195 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 195 — công ty con không được góp vốn, mua cổ phần của công ty mẹ.",
+    "Sai: luật cấm.",
+    "Sai: không có ngưỡng 10% cho phép.",
+    "Sai: Hội đồng quản trị không được cho phép trái luật."
+   ]
   },
   {
    "type": "pair",

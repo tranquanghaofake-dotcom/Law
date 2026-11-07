@@ -75,7 +75,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 29 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: điểm d khoản 1 Điều 29 Luật Cạnh tranh 2018 — liên doanh giữa các doanh nghiệp.",
+    "Sai: chia tách là tổ chức lại doanh nghiệp, không phải tập trung kinh tế.",
+    "Sai: giải thể làm doanh nghiệp chấm dứt, không tập trung sức mạnh thị trường.",
+    "Sai: tạm ngừng kinh doanh không phải tập trung kinh tế."
+   ]
   },
   {
    "type": "mcq",
@@ -92,7 +98,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 30 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: Điều 30 Luật Cạnh tranh — gây hoặc có khả năng gây tác động hạn chế cạnh tranh đáng kể trên thị trường Việt Nam.",
+    "Sai: luật chỉ cấm khi có tác động hạn chế cạnh tranh đáng kể.",
+    "Sai: vốn nước ngoài hay lợi nhuận không phải căn cứ cấm.",
+    "Sai: việc niêm yết không liên quan đến điều kiện cấm."
+   ]
   },
   {
    "type": "pair",

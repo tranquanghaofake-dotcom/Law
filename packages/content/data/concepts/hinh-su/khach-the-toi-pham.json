@@ -73,7 +73,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết BLHS"
-   }
+   },
+   "why": [
+    "Đúng: theo giáo trình, khách thể là quan hệ xã hội được luật hình sự bảo vệ và bị tội phạm xâm hại.",
+    "Sai: tài sản là đối tượng tác động, không phải khách thể.",
+    "Sai: người bị hại là chủ thể của quan hệ bị xâm hại.",
+    "Sai: công cụ thuộc mặt khách quan."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết BLHS"
-   }
+   },
+   "why": [
+    "Đúng: các chương Phần các tội phạm được sắp xếp theo khách thể loại.",
+    "Sai: khách thể chung là toàn bộ quan hệ được bảo vệ.",
+    "Sai: khách thể trực tiếp là của từng tội.",
+    "Sai: đối tượng tác động không phải căn cứ sắp xếp chương."
+   ]
   },
   {
    "type": "pair",

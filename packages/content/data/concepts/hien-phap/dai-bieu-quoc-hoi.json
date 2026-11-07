@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 79 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 79 — đại diện cho Nhân dân ở đơn vị bầu cử và Nhân dân cả nước.",
+    "Sai: đại biểu đại diện cả Nhân dân cả nước.",
+    "Sai: đại biểu không đại diện tổ chức giới thiệu mình.",
+    "Sai: đại biểu đại diện Nhân dân, không riêng đảng viên."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 79 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 79 — thực hiện chế độ tiếp xúc và báo cáo với cử tri.",
+    "Sai: không có nghĩa vụ nộp thuế thay cử tri.",
+    "Sai: không có nghĩa vụ bảo đảm việc làm.",
+    "Sai: giải quyết tranh chấp thuộc cơ quan có thẩm quyền."
+   ]
   },
   {
    "type": "pair",

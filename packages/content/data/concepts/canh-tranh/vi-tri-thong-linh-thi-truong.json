@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 24 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 24 — thị phần từ 30% trở lên trên thị trường liên quan (hoặc có sức mạnh thị trường đáng kể).",
+    "Sai: 50% là ngưỡng tổng thị phần của nhóm hai doanh nghiệp (điểm a khoản 2 Điều 24).",
+    "Sai: luật không dùng mốc 25%.",
+    "Sai: 65% là ngưỡng của nhóm ba doanh nghiệp (điểm b khoản 2 Điều 24)."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 24 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 2 Điều 24 — ba doanh nghiệp có tổng thị phần từ 65% trở lên.",
+    "Sai: 50% là ngưỡng của nhóm hai doanh nghiệp.",
+    "Sai: 75% là ngưỡng của nhóm bốn doanh nghiệp.",
+    "Sai: 85% là ngưỡng của nhóm năm doanh nghiệp trở lên."
+   ]
   },
   {
    "type": "pair",

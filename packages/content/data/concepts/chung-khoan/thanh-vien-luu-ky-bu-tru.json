@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 56 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 56 — công ty chứng khoán, ngân hàng thương mại, chi nhánh ngân hàng nước ngoài.",
+    "Sai: vốn lớn và niêm yết không đủ.",
+    "Sai: công ty niêm yết không làm thành viên lưu ký.",
+    "Sai: nhà đầu tư không làm thành viên lưu ký."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 57 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 57 — khi có nghiệp vụ môi giới.",
+    "Sai: không có ngưỡng vốn này.",
+    "Sai: không cần niêm yết.",
+    "Sai: Sở giao dịch không chấp thuận."
+   ]
   },
   {
    "type": "pair",

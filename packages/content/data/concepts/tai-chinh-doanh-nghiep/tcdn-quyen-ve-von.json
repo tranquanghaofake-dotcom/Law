@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 7 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 7 — lựa chọn hình thức, phương thức huy động, phân bổ và sử dụng vốn.",
+    "Sai: ưu đãi thuế do luật thuế quy định có điều kiện, không có miễn thuế vĩnh viễn.",
+    "Sai: Nhà nước không cấp vốn không hoàn lại cho mọi doanh nghiệp.",
+    "Sai: vay ngân hàng phải trả lãi và tuân theo quy định tín dụng."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 9 Điều 7 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 9 Điều 7 — từ chối yêu cầu cung cấp nguồn lực không theo quy định của pháp luật.",
+    "Sai: nộp thuế là nghĩa vụ luật định, không được từ chối.",
+    "Sai: công bố thông tin bắt buộc là nghĩa vụ luật định.",
+    "Sai: kiểm toán bắt buộc theo luật là nghĩa vụ, không được từ chối."
+   ]
   },
   {
    "type": "pair",

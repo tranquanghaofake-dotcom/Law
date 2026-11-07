@@ -82,7 +82,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 3 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 3 — thỏa thuận giữa các bên dưới mọi hình thức gây hoặc có khả năng gây tác động hạn chế cạnh tranh.",
+    "Sai: thỏa thuận miệng, ngầm định vẫn có thể là thỏa thuận hạn chế cạnh tranh.",
+    "Sai: luật không đòi công chứng; đòi như vậy sẽ bỏ sót phần lớn thỏa thuận ngầm.",
+    "Sai: không cần đăng ký với cơ quan nhà nước."
+   ]
   },
   {
    "type": "mcq",
@@ -99,7 +105,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 11 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 11 — thỏa thuận để một hoặc các bên thắng thầu (thông đồng đấu thầu).",
+    "Sai: ấn định giá (khoản 1 Điều 11) là thỏa thuận về giá hàng hóa, dịch vụ, không phải về kết quả đấu thầu.",
+    "Sai: đây là thỏa thuận hạn chế cạnh tranh, bị cấm theo khoản 2 Điều 12.",
+    "Sai: cạnh tranh không lành mạnh (Điều 45) là hành vi đơn phương, ở đây là thỏa thuận giữa các bên."
+   ]
   },
   {
    "type": "pair",

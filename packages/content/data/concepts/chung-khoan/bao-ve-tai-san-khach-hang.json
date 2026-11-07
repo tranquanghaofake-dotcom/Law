@@ -70,7 +70,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 65 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 65 — chứng khoán là tài sản của khách hàng.",
+    "Sai: thành viên lưu ký chỉ quản lý.",
+    "Sai: Tổng công ty không sở hữu chứng khoán khách hàng.",
+    "Sai: không có đồng sở hữu."
+   ]
   },
   {
    "type": "mcq",
@@ -87,7 +93,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 65 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 65 — không được dùng chứng khoán khách hàng để trả nợ.",
+    "Sai: im lặng của khách hàng không cho phép.",
+    "Sai: mất khả năng thanh toán cũng không được dùng.",
+    "Sai: Tổng công ty không có quyền cho phép."
+   ]
   },
   {
    "type": "pair",

@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 216 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 216 — tạm dừng làm thủ tục hải quan; kiểm tra, giám sát để phát hiện hàng có dấu hiệu xâm phạm.",
+    "Sai: hàng đang lưu thông nội địa không thuộc kiểm soát biên giới.",
+    "Sai: không cấm xuất khẩu mọi hàng hóa mang nhãn hiệu.",
+    "Sai: thu thuế không phải biện pháp kiểm soát về sở hữu trí tuệ."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 216 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 2 Điều 216 — hải quan chủ động tạm dừng khi có căn cứ rõ ràng nghi ngờ hàng giả mạo về sở hữu trí tuệ.",
+    "Sai: không tạm dừng mọi lô hàng có nhãn hiệu nước ngoài.",
+    "Sai: chủ thể quyền chưa đăng ký thì không có căn cứ bảo hộ nhãn hiệu.",
+    "Sai: yêu cầu tạm dừng do chủ thể quyền đưa ra hoặc hải quan chủ động, không do người tiêu dùng."
+   ]
   },
   {
    "type": "pair",

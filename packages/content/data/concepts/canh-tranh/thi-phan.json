@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 10 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 10 — tổng thị phần trên thị trường liên quan của các doanh nghiệp tham gia hành vi hoặc tập trung kinh tế.",
+    "Sai: thị phần kết hợp là tổng của các doanh nghiệp tham gia, không phải thị phần của riêng doanh nghiệp lớn nhất.",
+    "Sai: không lấy trung bình và không xét thị trường quốc tế.",
+    "Sai: thị phần luôn xét trên thị trường liên quan; doanh nghiệp nước ngoài không phải tiêu chí."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 10 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 10 — doanh thu, doanh số xác định theo chuẩn mực kế toán Việt Nam.",
+    "Sai: luật không bắt buộc chuẩn mực quốc tế IFRS.",
+    "Sai: số liệu tự khai không phải chuẩn xác định thị phần.",
+    "Sai: tờ khai thuế không phải chuẩn luật định để xác định doanh thu tính thị phần."
+   ]
   },
   {
    "type": "pair",

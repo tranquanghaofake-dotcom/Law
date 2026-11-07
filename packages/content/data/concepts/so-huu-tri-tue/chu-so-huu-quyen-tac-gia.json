@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 36 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 36 — chủ sở hữu quyền tác giả nắm giữ một, một số hoặc toàn bộ quyền công bố (khoản 3 Điều 19) và quyền tài sản (khoản 1 Điều 20).",
+    "Sai: quyền đứng tên là quyền nhân thân gắn với tác giả, không thuộc chủ sở hữu.",
+    "Sai: quyền bảo vệ toàn vẹn tác phẩm là quyền nhân thân của tác giả.",
+    "Sai: chủ sở hữu không nắm mọi quyền nhân thân; chỉ có quyền công bố là quyền nhân thân chuyển giao được."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 39 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 39 — tổ chức giao nhiệm vụ sáng tạo là chủ sở hữu quyền tác giả, trừ khi có thỏa thuận khác.",
+    "Sai: nhân viên là tác giả nhưng không phải chủ sở hữu nếu không có thỏa thuận khác.",
+    "Sai: Nhà nước chỉ là chủ sở hữu trong các trường hợp ở Điều 42.",
+    "Sai: luật không mặc định đồng sở hữu trong trường hợp này."
+   ]
   },
   {
    "type": "pair",

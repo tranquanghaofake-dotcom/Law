@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 57 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 57 — rủi ro chuyển khi hàng được giao cho bên mua hoặc người được ủy quyền tại địa điểm đó.",
+    "Sai: ký hợp đồng chưa làm chuyển rủi ro (trừ hàng đang trên đường vận chuyển, Điều 60).",
+    "Sai: thanh toán không quyết định thời điểm chuyển rủi ro.",
+    "Sai: xuất kho, lập hóa đơn chưa phải giao hàng."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 60 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 60 — hàng đang trên đường vận chuyển thì rủi ro chuyển từ thời điểm giao kết hợp đồng.",
+    "Sai: đến cảng đích không phải mốc của Điều 60.",
+    "Sai: thanh toán không quyết định chuyển rủi ro.",
+    "Sai: giao chứng từ là mốc của trường hợp không phải vận chuyển (Điều 59), không phải Điều 60."
+   ]
   },
   {
    "type": "pair",

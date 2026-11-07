@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 158 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 158 chỉ đòi tính mới, khác biệt, đồng nhất, ổn định và có tên phù hợp; trình độ sáng tạo là điều kiện của sáng chế.",
+    "Sai: tính khác biệt là điều kiện ở Điều 158.",
+    "Sai: tính đồng nhất là điều kiện ở Điều 158.",
+    "Sai: tính ổn định là điều kiện ở Điều 158."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 59 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 5 Điều 59 loại giống cây trồng khỏi đối tượng sáng chế; giống cây trồng được bảo hộ theo Phần thứ tư.",
+    "Sai: luật loại trừ giống cây trồng khỏi sáng chế.",
+    "Sai: biến đổi gen không làm giống cây trồng thành sáng chế.",
+    "Sai: đăng ký quốc tế không thay đổi quy định loại trừ."
+   ]
   },
   {
    "type": "pair",

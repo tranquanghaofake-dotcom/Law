@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 29 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 29 Điều 4 — trung gian mua, bán cho khách hàng.",
+    "Sai: mua bán cho chính mình là tự doanh.",
+    "Sai: cam kết mua để bán lại là bảo lãnh.",
+    "Sai: khuyến nghị là tư vấn."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 72 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 72 — tự doanh đòi hỏi đã có môi giới.",
+    "Sai: không đòi môi giới phái sinh.",
+    "Sai: bảo lãnh đòi tự doanh, không ngược lại.",
+    "Sai: quản lý danh mục không phải điều kiện."
+   ]
   },
   {
    "type": "pair",

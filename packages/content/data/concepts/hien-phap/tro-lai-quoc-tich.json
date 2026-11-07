@@ -86,7 +86,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 23 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 23 — người đã mất quốc tịch Việt Nam theo Điều 26.",
+    "Sai: đây là trường hợp nhập quốc tịch.",
+    "Sai: chưa từng có thì không \"trở lại\".",
+    "Sai: không giới hạn ở người có vợ, chồng Việt Nam."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 23 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 23 — sau ít nhất 5 năm kể từ ngày bị tước.",
+    "Sai: không phải 1 năm.",
+    "Sai: không phải 10 năm.",
+    "Sai: vẫn có thể được xem xét trở lại."
+   ]
   },
   {
    "type": "pair",

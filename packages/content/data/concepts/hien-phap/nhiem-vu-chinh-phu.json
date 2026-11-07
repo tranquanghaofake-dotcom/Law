@@ -89,7 +89,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 96 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 96 — tổ chức thi hành Hiến pháp, luật, nghị quyết, pháp lệnh, lệnh, quyết định.",
+    "Sai: làm luật thuộc Quốc hội.",
+    "Sai: xét xử thuộc Tòa án.",
+    "Sai: giám sát tối cao thuộc Quốc hội."
+   ]
   },
   {
    "type": "mcq",
@@ -106,7 +112,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 96 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 96 — trình Quốc hội quyết định thành lập, bãi bỏ bộ.",
+    "Sai: Chính phủ không tự quyết.",
+    "Sai: Chủ tịch nước không quyết định.",
+    "Sai: Ủy ban thường vụ không quyết định."
+   ]
   },
   {
    "type": "pair",

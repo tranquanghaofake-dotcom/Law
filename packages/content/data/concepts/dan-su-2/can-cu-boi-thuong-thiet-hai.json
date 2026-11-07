@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 584 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 584 — bất khả kháng hoặc thiệt hại hoàn toàn do lỗi của bên bị thiệt hại.",
+    "Sai: hoàn cảnh khó khăn chỉ có thể được xét giảm mức bồi thường (khoản 2 Điều 585).",
+    "Sai: giá trị nhỏ không loại trừ trách nhiệm.",
+    "Sai: không cố ý vẫn phải bồi thường."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 584 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 584 — tài sản gây thiệt hại thì chủ sở hữu, người chiếm hữu bồi thường.",
+    "Sai: Nhà nước không chịu thay.",
+    "Sai: người bị thiệt hại không tự chịu.",
+    "Sai: người bán trước đây không còn là chủ sở hữu."
+   ]
   },
   {
    "type": "pair",

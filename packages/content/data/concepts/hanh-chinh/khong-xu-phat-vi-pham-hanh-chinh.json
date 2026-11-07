@@ -73,7 +73,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 11 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 11 — thực hiện hành vi do sự kiện bất khả kháng thì không xử phạt.",
+    "Sai: vi phạm lần hai là tình tiết tăng nặng, vẫn xử phạt.",
+    "Sai: không biết luật không phải căn cứ miễn xử phạt.",
+    "Sai: thời gian, địa điểm không phải căn cứ không xử phạt."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 9, Điều 11 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 9 — vượt quá giới hạn phòng vệ chính đáng vẫn bị xử phạt nhưng là tình tiết giảm nhẹ.",
+    "Sai: chỉ phòng vệ chính đáng mới không xử phạt.",
+    "Sai: không bắt buộc xử lý hình sự.",
+    "Sai: đây là tình tiết giảm nhẹ, không tăng mức phạt."
+   ]
   },
   {
    "type": "pair",

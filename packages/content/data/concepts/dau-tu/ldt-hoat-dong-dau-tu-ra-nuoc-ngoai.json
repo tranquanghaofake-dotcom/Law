@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 13 Điều 3 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 13 Điều 3 — chuyển vốn từ Việt Nam ra nước ngoài, sử dụng lợi nhuận thu được để đầu tư kinh doanh ở nước ngoài.",
+    "Sai: nhà đầu tư nước ngoài vào Việt Nam là đầu tư nước ngoài vào Việt Nam, chiều ngược lại.",
+    "Sai: xuất khẩu hàng hóa là thương mại, không phải đầu tư.",
+    "Sai: làm việc hưởng lương ở nước ngoài không phải đầu tư."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 39 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: điểm c khoản 1 Điều 39 — góp vốn, mua cổ phần của tổ chức kinh tế ở nước ngoài để tham gia quản lý.",
+    "Sai: nhập khẩu máy móc là thương mại trong nước.",
+    "Sai: gửi tiết kiệm trong nước không phải đầu tư ra nước ngoài.",
+    "Sai: mua bất động sản trong nước không phải đầu tư ra nước ngoài."
+   ]
   },
   {
    "type": "pair",

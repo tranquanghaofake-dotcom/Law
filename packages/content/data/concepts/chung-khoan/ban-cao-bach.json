@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 23 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 23 Điều 4 — liên quan đến chào bán hoặc niêm yết chứng khoán.",
+    "Sai: thanh tra không dùng bản cáo bạch.",
+    "Sai: giải thể quỹ không cần bản cáo bạch.",
+    "Sai: xử phạt không liên quan bản cáo bạch."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 24 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 24 — chỉ dùng thông tin trong Bản cáo bạch đã gửi Ủy ban; ngày, giá ghi là dự kiến.",
+    "Sai: không được tự soạn quảng cáo ngoài Bản cáo bạch.",
+    "Sai: cam kết lợi nhuận bị cấm.",
+    "Sai: Bản cáo bạch phải đã gửi Ủy ban."
+   ]
   },
   {
    "type": "pair",

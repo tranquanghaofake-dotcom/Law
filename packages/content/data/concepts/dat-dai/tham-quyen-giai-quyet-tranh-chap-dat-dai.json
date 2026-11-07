@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 236 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 236 — có Giấy chứng nhận hoặc giấy tờ theo Điều 137 thì Tòa án giải quyết.",
+    "Sai: Ủy ban nhân dân xã chỉ hòa giải, không giải quyết tranh chấp có Giấy chứng nhận.",
+    "Sai: Ủy ban nhân dân tỉnh chỉ có thẩm quyền khi các bên không có giấy tờ và chọn đường hành chính.",
+    "Sai: có Giấy chứng nhận thì do Tòa án giải quyết, không do các bên chọn."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 236 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 236 — các bên chọn nộp đơn tại Ủy ban nhân dân cấp có thẩm quyền hoặc khởi kiện tại Tòa án.",
+    "Sai: các bên có quyền chọn đường hành chính.",
+    "Sai: các bên vẫn có quyền khởi kiện tại Tòa án.",
+    "Sai: tranh chấp vẫn được giải quyết theo khoản 2 Điều 236."
+   ]
   },
   {
    "type": "pair",

@@ -1,0 +1,124 @@
+{
+ "id": "thoi-ky-hon-nhan",
+ "subject": "hon-nhan-gia-dinh",
+ "chapter": "c1-khai-quat",
+ "term": "Thời kỳ hôn nhân",
+ "definition": "Thời kỳ hôn nhân là khoảng thời gian tồn tại quan hệ vợ chồng, được tính từ ngày đăng ký kết hôn đến ngày chấm dứt hôn nhân.",
+ "plain": "Mốc BẮT ĐẦU: ngày đăng ký kết hôn (không phải ngày cưới, ngày về chung sống). Mốc KẾT THÚC: ngày chấm dứt hôn nhân (một bên chết hoặc bản án, quyết định ly hôn có hiệu lực). Thời kỳ hôn nhân dùng để xác định tài sản chung (Điều 33) và con chung (Điều 88).",
+ "example": "Cưới tháng 2, đăng ký kết hôn tháng 5: lương nhận trong tháng 3 chưa phải tài sản tạo ra trong thời kỳ hôn nhân.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 13 Điều 3 Luật Hôn nhân và gia đình 2014",
+  "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "hon-nhan",
+  "tai-san-chung",
+  "xac-dinh-con-chung"
+ ],
+ "keywords": [
+  "ngày đăng ký kết hôn",
+  "ngày chấm dứt hôn nhân",
+  "quan hệ vợ chồng"
+ ],
+ "memo": {
+  "gist": "Thời kỳ hôn nhân là quãng thời gian hai người là vợ chồng theo luật, tính theo giấy tờ.",
+  "kind": "steps",
+  "hook": "Đồng hồ hôn nhân chạy từ con dấu đăng ký, không chạy từ tiệc cưới.",
+  "tree": [
+   {
+    "label": "Bắt đầu",
+    "icon": "stamp",
+    "children": [
+     "Ngày đăng ký kết hôn"
+    ]
+   },
+   {
+    "label": "Kết thúc",
+    "icon": "end",
+    "children": [
+     "Một bên chết",
+     "Ly hôn có hiệu lực"
+    ]
+   },
+   {
+    "label": "Dùng để xác định",
+    "icon": "search",
+    "children": [
+     "Tài sản chung",
+     "Con chung"
+    ]
+   }
+  ]
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời kỳ hôn nhân được tính từ khi nào?",
+   "options": [
+    "Từ ngày đăng ký kết hôn",
+    "Từ ngày tổ chức lễ cưới",
+    "Từ ngày hai bên về chung sống",
+    "Từ ngày nộp hồ sơ đăng ký"
+   ],
+   "answer": 0,
+   "explain": "Khoản 13 Điều 3: tính từ ngày đăng ký kết hôn đến ngày chấm dứt hôn nhân.",
+   "why": [
+    "Đúng: mốc pháp lý là ngày đăng ký kết hôn.",
+    "Sai: lễ cưới không có giá trị pháp lý xác lập quan hệ vợ chồng.",
+    "Sai: chung sống không đăng ký không làm phát sinh quan hệ vợ chồng (khoản 1 Điều 14).",
+    "Sai: nộp hồ sơ chưa phải là đăng ký; quan hệ chỉ có khi việc kết hôn được đăng ký."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thời kỳ hôn nhân là khoảng thời gian tồn tại quan hệ vợ chồng, được tính từ ngày {{đăng ký kết hôn}} đến ngày {{chấm dứt hôn nhân}}."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "{{Thời kỳ hôn nhân}} là khoảng thời gian tồn tại quan hệ vợ chồng, được tính từ ngày đăng ký kết hôn đến ngày chấm dứt hôn nhân."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Nam và Mai cưới năm 2018, chung sống từ đó nhưng đến năm 2021 mới đăng ký kết hôn. Năm 2019 Nam mua một xe máy bằng tiền lương. Thời kỳ hôn nhân của họ bắt đầu từ năm nào?",
+   "options": [
+    "Năm 2021, năm hai bên đăng ký kết hôn",
+    "Năm 2018, năm cưới và về chung sống",
+    "Năm 2019, khi bắt đầu có tài sản chung",
+    "Tùy Tòa án chọn mốc có lợi cho vợ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 14: chung sống rồi mới đăng ký thì quan hệ hôn nhân được xác lập từ thời điểm đăng ký kết hôn.",
+   "why": [
+    "Đúng: khoản 2 Điều 14 và khoản 13 Điều 3 lấy mốc ngày đăng ký kết hôn.",
+    "Sai: chung sống như vợ chồng sau 01/01/2001 không làm phát sinh quan hệ vợ chồng.",
+    "Sai: việc có tài sản không phải mốc tính thời kỳ hôn nhân.",
+    "Sai: mốc do luật định, Tòa án không được tùy chọn."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nam nữ đã chung sống như vợ chồng rồi sau đó mới đăng ký kết hôn thì quan hệ hôn nhân được tính từ ngày bắt đầu chung sống.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 14: quan hệ hôn nhân được xác lập từ thời điểm đăng ký kết hôn."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Thời kỳ hôn nhân bắt đầu và kết thúc khi nào?",
+   "model": "Bắt đầu từ ngày đăng ký kết hôn và kết thúc vào ngày chấm dứt hôn nhân (một bên chết hoặc ly hôn có hiệu lực).",
+   "keywords": [
+    "ngày đăng ký kết hôn",
+    "chấm dứt hôn nhân",
+    "chết",
+    "ly hôn"
+   ]
+  }
+ ]
+}

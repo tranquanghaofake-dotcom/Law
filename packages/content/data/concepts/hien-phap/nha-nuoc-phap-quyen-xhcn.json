@@ -70,7 +70,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 2 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 2 — nhà nước pháp quyền xã hội chủ nghĩa của Nhân dân, do Nhân dân, vì Nhân dân.",
+    "Sai: Hiến pháp 2013 không dùng khái niệm chuyên chính vô sản.",
+    "Sai: Việt Nam là nhà nước đơn nhất.",
+    "Sai: không phải nhà nước tư sản."
+   ]
   },
   {
    "type": "mcq",
@@ -87,7 +93,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 2, Điều 119 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: pháp quyền — Nhà nước cũng bị ràng buộc bởi Hiến pháp và pháp luật.",
+    "Sai: Nhà nước bị giới hạn bởi Hiến pháp.",
+    "Sai: pháp luật ràng buộc cả cơ quan nhà nước.",
+    "Sai: Tòa án không đứng trên Hiến pháp."
+   ]
   },
   {
    "type": "pair",
@@ -148,7 +160,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 2; khoản 2 Điều 14 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Sai: quyền quản lý địa bàn không cho phép tự hạn chế quyền công dân.",
+    "Đúng: khoản 2 Điều 14 — hạn chế quyền chỉ theo luật.",
+    "Sai: đồng ý của đa số dân không thay luật.",
+    "Sai: văn bản trái luật không phụ thuộc có người khởi kiện."
+   ]
   },
   {
    "type": "truefalse",

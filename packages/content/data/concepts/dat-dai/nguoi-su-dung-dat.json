@@ -75,7 +75,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 4 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 4 không coi người mượn đất không có căn cứ (giao, cho thuê, công nhận, nhận quyền) là người sử dụng đất.",
+    "Sai: được Nhà nước giao đất là căn cứ trở thành người sử dụng đất.",
+    "Sai: nhận chuyển nhượng hợp pháp là căn cứ trở thành người sử dụng đất.",
+    "Sai: thuê lại đất trong khu công nghiệp là căn cứ trở thành người sử dụng đất."
+   ]
   },
   {
    "type": "mcq",
@@ -92,7 +98,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 4 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 6 Điều 4 — người gốc Việt Nam định cư ở nước ngoài là một nhóm người sử dụng đất.",
+    "Sai: sở hữu toàn dân không loại trừ người gốc Việt Nam được sử dụng đất.",
+    "Sai: luật dùng tiêu chí \"người gốc Việt Nam\", không đòi còn quốc tịch.",
+    "Sai: khoản 6 Điều 4 liệt kê riêng nhóm này."
+   ]
   },
   {
    "type": "pair",

@@ -16,7 +16,13 @@
       "answer": 3,
       "explain": "Điều 115: quyền tài sản gồm quyền sử dụng đất.",
       "basis": "Điều 115 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_115"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_115",
+      "why": [
+        "Sai: quyền sử dụng đất không phải vật.",
+        "Sai: không phải tiền.",
+        "Sai: không phải giấy tờ có giá.",
+        "Đúng: Điều 115 — quyền sử dụng đất là quyền tài sản."
+      ]
     },
     {
       "q": "Căn hộ chung cư đang xây dựng, chưa hoàn thành là loại tài sản gì?",
@@ -29,7 +35,13 @@
       "answer": 0,
       "explain": "Khoản 2 Điều 105; Điều 108.",
       "basis": "Điều 105 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_105"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_105",
+      "why": [
+        "Đúng: khoản 2 Điều 105 — tài sản hình thành trong tương lai.",
+        "Sai: căn hộ là bất động sản.",
+        "Sai: không phải tài sản vô chủ.",
+        "Sai: vẫn là tài sản."
+      ]
     },
     {
       "q": "Chủ nhà cho thuê nhà vẫn giữ quyền năng nào?",
@@ -42,7 +54,13 @@
       "answer": 0,
       "explain": "Quyền sở hữu gồm chiếm hữu, sử dụng, định đoạt (Điều 158); khi cho thuê, chủ sở hữu vẫn có quyền định đoạt.",
       "basis": "Điều 158 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_158"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_158",
+      "why": [
+        "Đúng: Điều 158 — cho thuê vẫn giữ quyền định đoạt.",
+        "Sai: chiếm hữu trực tiếp đã giao cho người thuê.",
+        "Sai: sử dụng trực tiếp đã giao cho người thuê.",
+        "Sai: chủ vẫn còn quyền sở hữu."
+      ]
     },
     {
       "q": "Người chiếm hữu ngay tình, liên tục, công khai một chiếc xe máy không có căn cứ pháp luật bao lâu thì trở thành chủ sở hữu?",
@@ -55,7 +73,13 @@
       "answer": 1,
       "explain": "Điều 236: 10 năm với động sản.",
       "basis": "Điều 236 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_236"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_236",
+      "why": [
+        "Sai: không phải 5 năm.",
+        "Đúng: Điều 236 — 10 năm với động sản.",
+        "Sai: không phải 20 năm.",
+        "Sai: 30 năm là mức với bất động sản."
+      ]
     },
     {
       "q": "Nhà B không có lối đi ra đường công cộng, phải đi qua đất nhà A. Đây là loại quyền nào?",
@@ -68,7 +92,13 @@
       "answer": 1,
       "explain": "Điểm a khoản 2 Điều 159; Điều 254.",
       "basis": "Điều 159 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_159"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_159",
+      "why": [
+        "Sai: không có sở hữu chung.",
+        "Đúng: Điều 254 — quyền về lối đi qua (quyền đối với bất động sản liền kề).",
+        "Sai: hưởng dụng là quyền khai thác tài sản người khác.",
+        "Sai: quyền bề mặt là quyền với không gian trên, dưới đất."
+      ]
     },
     {
       "q": "Hàng xóm xây tường lấn sang đất. Chủ sở hữu có thể yêu cầu Tòa án điều gì?",
@@ -81,7 +111,13 @@
       "answer": 1,
       "explain": "Khoản 2 Điều 164.",
       "basis": "Điều 164 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_164"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_164",
+      "why": [
+        "Sai: không phạt tù trong tranh chấp dân sự.",
+        "Đúng: khoản 2 Điều 164 — chấm dứt hành vi cản trở, bồi thường.",
+        "Sai: không tịch thu nhà.",
+        "Sai: vẫn có quyền yêu cầu."
+      ]
     },
     {
       "q": "Ông A chết không để lại di chúc, còn vợ, mẹ đẻ và một người em ruột. Ai được hưởng di sản?",
@@ -94,7 +130,13 @@
       "answer": 1,
       "explain": "Vợ, mẹ đẻ thuộc hàng thứ nhất; em ruột hàng hai chỉ hưởng khi không còn ai ở hàng thứ nhất (Điều 651).",
       "basis": "Điều 651 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_651"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_651",
+      "why": [
+        "Sai: em ruột ở hàng thứ hai.",
+        "Đúng: Điều 651 — vợ và mẹ đẻ ở hàng thứ nhất, chia đều.",
+        "Sai: mẹ đẻ cũng ở hàng thứ nhất.",
+        "Sai: em ruột chỉ hưởng khi không còn hàng thứ nhất."
+      ]
     },
     {
       "q": "Con của người để lại di sản chết trước người để lại di sản. Cháu nội được hưởng gì?",
@@ -107,7 +149,13 @@
       "answer": 1,
       "explain": "Thừa kế thế vị (Điều 652).",
       "basis": "Điều 652 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_652"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_652",
+      "why": [
+        "Sai: cháu được thừa kế thế vị.",
+        "Đúng: Điều 652 — hưởng phần cha được hưởng nếu còn sống.",
+        "Sai: 2/3 là mức của Điều 644.",
+        "Sai: cháu không hưởng toàn bộ di sản."
+      ]
     },
     {
       "q": "Ông A lập di chúc để lại toàn bộ tài sản cho bạn thân, không cho người con 8 tuổi. Người con được hưởng bao nhiêu?",
@@ -120,7 +168,13 @@
       "answer": 1,
       "explain": "Khoản 1 Điều 644.",
       "basis": "Điều 644 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_644"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_644",
+      "why": [
+        "Sai: con chưa thành niên được hưởng không phụ thuộc di chúc.",
+        "Đúng: khoản 1 Điều 644 — 2/3 suất của một người thừa kế theo pháp luật.",
+        "Sai: không phải một nửa di sản.",
+        "Sai: chỉ 2/3 suất, không phải toàn bộ."
+      ]
     },
     {
       "q": "Thời hiệu yêu cầu chia di sản là động sản là bao lâu kể từ thời điểm mở thừa kế?",
@@ -133,7 +187,13 @@
       "answer": 2,
       "explain": "Khoản 1 Điều 623.",
       "basis": "Điều 623 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_623"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_623",
+      "why": [
+        "Sai: không phải 03 năm.",
+        "Sai: không phải 05 năm.",
+        "Đúng: khoản 1 Điều 623 — 10 năm với động sản.",
+        "Sai: 30 năm là mức với bất động sản."
+      ]
     }
   ]
 }

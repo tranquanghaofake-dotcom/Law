@@ -90,7 +90,13 @@
    "source": {
     "kind": "primary",
     "cite": "Quốc triều hình luật, Điều 4"
-   }
+   },
+   "why": [
+    "Đúng: Điều 4 — người thuộc bát nghị phạm tội từ lưu trở xuống được giảm một bậc.",
+    "Sai: không được miễn hoàn toàn.",
+    "Sai: mức giảm là một bậc.",
+    "Sai: bát nghị là chế định ưu đãi."
+   ]
   },
   {
    "type": "mcq",
@@ -107,7 +113,13 @@
    "source": {
     "kind": "primary",
     "cite": "Quốc triều hình luật, Điều 3"
-   }
+   },
+   "why": [
+    "Đúng: khoản 6 Điều 3 — nghị quý áp dụng cho quan viên có chức sự từ tam phẩm trở lên.",
+    "Sai: dân thường không thuộc bát nghị.",
+    "Sai: họ tôn thất thuộc \"nghị thân\".",
+    "Sai: con cháu triều trước thuộc \"nghị tân\"."
+   ]
   },
   {
    "type": "pair",
@@ -165,7 +177,13 @@
     "Tính bình đẳng trước pháp luật: người thuộc bát nghị phạm tội cũng bị xử như người thường, không được ưu đãi"
    ],
    "answer": 0,
-   "explain": "Đánh giá phổ biến của giáo trình dựa trên Điều 3, 4."
+   "explain": "Đánh giá phổ biến của giáo trình dựa trên Điều 3, 4.",
+   "why": [
+    "Đúng: theo giáo trình, bát nghị thể hiện tính đẳng cấp, đồng thời nghiêm trị thập ác để bảo vệ vương quyền.",
+    "Sai: bát nghị ưu đãi quý tộc, quan lại, không nhằm dân nghèo.",
+    "Sai: bát nghị phải tâu vua quyết, không phải giao quyền cho địa phương.",
+    "Sai: bát nghị là ngoại lệ ưu đãi, trái với bình đẳng."
+   ]
   },
   {
    "type": "recall",

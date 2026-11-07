@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 611 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 611 — thời điểm mở thừa kế là thời điểm người có tài sản chết.",
+    "Sai: công bố di chúc không phải thời điểm mở thừa kế.",
+    "Sai: chia di sản diễn ra sau khi mở thừa kế.",
+    "Sai: khởi kiện không phải thời điểm mở thừa kế."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 611 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 611 — nơi có toàn bộ di sản hoặc nơi có phần lớn di sản.",
+    "Sai: nơi cư trú của người thừa kế không phải địa điểm mở thừa kế.",
+    "Sai: không mặc định tại trụ sở Tòa án nhân dân tối cao.",
+    "Sai: nơi sinh không phải căn cứ."
+   ]
   },
   {
    "type": "pair",

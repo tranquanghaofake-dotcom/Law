@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import type { Concept } from '$lib/content/types';
 import type { StepItem } from '$lib/engine/session';
-import { clauses, isCiteOnly, keyOf, marksIn, relevantClause, segments, whyOf } from '$lib/engine/why';
+import { clauses, isCiteOnly, keyOf, marksIn, pickedWhy, relevantClause, segments, whyOf } from '$lib/engine/why';
 
 const c = (o: Partial<Concept> = {}): Concept => ({
   id: 'thu-viec', subject: 'lao-dong', chapter: 'c1', term: 'Thời gian thử việc',
@@ -83,5 +83,26 @@ describe('whyOf', () => {
     const body = w.excerpt!.text.replace(/ \(…\)$| …$/, '').split(/ (?=\d+\. )/).pop()!;
     expect(c().definition).toContain(body.slice(0, 20));
     expect(c().plain).toContain(w.plain!);
+  });
+  it('vì sao phương án sai: chọn nhiễu có `why` thì trả đúng câu giải thích của phương án đó', () => {
+    const item: StepItem = { type: 'mcq', level: 1, q: 'Q', options: ['A', 'B', 'C', 'D'], answer: 1, explain: 'Điều 25.', why: ['A sai vì x.', 'B đúng.', 'C sai vì y.', 'D sai vì z.'] };
+    expect(whyOf(c(), item, { correct: false, chosen: 'C' })!.wrong).toEqual({ option: 'C', text: 'C sai vì y.' });
+    expect(whyOf(c(), item, { correct: false, chosen: 'không có' })!.wrong).toBeNull();
+    expect(whyOf(c(), mcq('Q', 'A'), { correct: false, chosen: 'C' })!.wrong).toBeNull(); // không có why
+    expect(whyOf(c(), item, { correct: true, chosen: 'B' })?.wrong ?? null).toBeNull();
+  });
+});
+
+describe('pickedWhy: lời giải thích phương án đã chọn (dùng cho bộ đề)', () => {
+  const q = { options: ['A', 'B', 'C', 'D'], answer: 2, why: ['Sai: a.', 'Sai: b.', 'Đúng: c.', 'Sai: d.'] };
+  it('chọn sai thì trả câu why đúng vị trí gốc, kể cả khi đáp án không ở đầu', () => {
+    expect(pickedWhy(q, 'B')).toEqual({ option: 'B', text: 'Sai: b.' });
+    expect(pickedWhy(q, 'D')).toEqual({ option: 'D', text: 'Sai: d.' });
+  });
+  it('chọn đúng, không có why hoặc phương án lạ thì null', () => {
+    expect(pickedWhy(q, 'C')).toBeNull();
+    expect(pickedWhy({ ...q, why: undefined }, 'B')).toBeNull();
+    expect(pickedWhy(q, 'X')).toBeNull();
+    expect(pickedWhy(q, undefined)).toBeNull();
   });
 });

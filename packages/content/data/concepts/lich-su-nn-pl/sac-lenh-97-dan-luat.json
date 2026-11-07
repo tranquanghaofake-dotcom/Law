@@ -80,7 +80,13 @@
    "source": {
     "kind": "primary",
     "cite": "Sắc lệnh 97/SL ngày 22/5/1950, Điều 5"
-   }
+   },
+   "why": [
+    "Đúng: Điều 5 Sắc lệnh 97/SL — chồng và vợ có địa vị bình đẳng.",
+    "Sai: Sắc lệnh bỏ quyền gia trưởng của chồng.",
+    "Sai: vợ không phụ thuộc chồng.",
+    "Sai: không do tập quán quyết định."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "primary",
     "cite": "Sắc lệnh 97/SL, Điều 7"
-   }
+   },
+   "why": [
+    "Đúng: Điều 7 — vị thành niên là người chưa đủ 18 tuổi.",
+    "Sai: 21 tuổi là mốc trong dân luật thời Pháp thuộc.",
+    "Sai: 16 tuổi không phải mốc.",
+    "Sai: 20 tuổi không phải mốc."
+   ]
   },
   {
    "type": "pair",

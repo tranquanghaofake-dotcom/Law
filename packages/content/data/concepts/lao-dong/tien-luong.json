@@ -82,7 +82,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 90 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 90 — mức lương theo công việc hoặc chức danh, phụ cấp lương và các khoản bổ sung khác.",
+    "Sai: tiền lương gồm cả phụ cấp và khoản bổ sung.",
+    "Sai: tiền thưởng không phải bộ phận của tiền lương theo Điều 90.",
+    "Sai: bảo hiểm xã hội không phải bộ phận tiền lương."
+   ]
   },
   {
    "type": "mcq",
@@ -99,7 +105,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 90 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 90 — mức lương theo công việc không được thấp hơn mức lương tối thiểu.",
+    "Sai: sự đồng ý của người lao động không hợp thức hóa mức thấp hơn.",
+    "Sai: lương thử việc ít nhất 85% mức lương của công việc, là quy định riêng.",
+    "Sai: quy mô doanh nghiệp không phải ngoại lệ."
+   ]
   },
   {
    "type": "pair",

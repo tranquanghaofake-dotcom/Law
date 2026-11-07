@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 80 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 80 không nêu Chủ tịch Ủy ban nhân dân tỉnh (người này bị đại biểu Hội đồng nhân dân chất vấn).",
+    "Sai: Chủ tịch Quốc hội, Chủ tịch nước bị chất vấn theo khoản 1 Điều 80.",
+    "Sai: Thủ tướng, Bộ trưởng bị chất vấn.",
+    "Sai: Tổng Kiểm toán nhà nước bị chất vấn."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 80 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 80 — giữa hai kỳ họp, trả lời tại phiên họp Ủy ban thường vụ Quốc hội.",
+    "Sai: không trả lời trên báo chí.",
+    "Sai: không trả lời tại Mặt trận Tổ quốc.",
+    "Sai: vẫn phải trả lời."
+   ]
   },
   {
    "type": "pair",

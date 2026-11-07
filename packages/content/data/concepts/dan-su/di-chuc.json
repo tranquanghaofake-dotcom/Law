@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 630 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 630 — người từ đủ 15 đến chưa đủ 18 tuổi lập di chúc bằng văn bản và phải được cha, mẹ hoặc người giám hộ đồng ý.",
+    "Sai: luật không bắt buộc công chứng trong trường hợp này.",
+    "Sai: điều kiện là văn bản và sự đồng ý của cha, mẹ hoặc người giám hộ, không phải ba người làm chứng.",
+    "Sai: người từ đủ 15 tuổi được lập di chúc (khoản 2 Điều 625)."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 624 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: Điều 624 — sự thể hiện ý chí của cá nhân nhằm chuyển tài sản cho người khác sau khi chết.",
+    "Sai: tặng cho là hợp đồng, có hiệu lực khi các bên còn sống.",
+    "Sai: thỏa thuận chia tài sản khi còn sống không phải di chúc.",
+    "Sai: quyết định của Tòa án không phải di chúc."
+   ]
   },
   {
    "type": "pair",

@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 47 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 47 — công ty chứng khoán được Sở chấp thuận.",
+    "Sai: nhà đầu tư không phải thành viên.",
+    "Sai: công ty niêm yết không phải thành viên giao dịch.",
+    "Sai: công ty quản lý quỹ không phải thành viên giao dịch."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 47 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 1 Điều 47 — thành viên giao dịch đặc biệt.",
+    "Sai: thành viên thông thường là công ty chứng khoán.",
+    "Sai: thành viên lưu ký thuộc Tổng công ty, không thuộc Sở.",
+    "Sai: không có \"thành viên niêm yết\"."
+   ]
   },
   {
    "type": "pair",

@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 27 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm c khoản 2 Điều 27 — 15 năm với tội phạm rất nghiêm trọng.",
+    "Sai: 10 năm là với tội nghiêm trọng.",
+    "Sai: 20 năm là với tội đặc biệt nghiêm trọng.",
+    "Sai: 05 năm là với tội ít nghiêm trọng."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 27 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 27 — tính từ ngày tội phạm được thực hiện.",
+    "Sai: không tính từ ngày phát hiện.",
+    "Sai: không tính từ ngày khởi tố.",
+    "Sai: không tính từ ngày có tố giác."
+   ]
   },
   {
    "type": "pair",

@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 16 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 16 — đăng ký với Ủy ban Chứng khoán Nhà nước.",
+    "Sai: Sở giao dịch chấp thuận niêm yết, không đăng ký chào bán.",
+    "Sai: Ngân hàng Nhà nước không có thẩm quyền.",
+    "Sai: Phòng Đăng ký kinh doanh đăng ký doanh nghiệp."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 16 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 2 Điều 16 — trái phiếu chính quyền địa phương không phải đăng ký.",
+    "Sai: IPO phải đăng ký.",
+    "Sai: chào bán thêm ra công chúng phải đăng ký.",
+    "Sai: chào bán chứng chỉ quỹ lần đầu phải đăng ký."
+   ]
   },
   {
    "type": "pair",
@@ -158,7 +170,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 25 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Giấy chứng nhận chỉ xác nhận hồ sơ đủ điều kiện; nhà đầu tư tự chịu rủi ro.",
+    "Sai: Ủy ban không bảo đảm chất lượng, lợi nhuận.",
+    "Sai: tư cách nhà đầu tư không làm phát sinh trách nhiệm của Ủy ban.",
+    "Sai: thẩm quyền cấp phép không đồng nghĩa bảo đảm đầu tư."
+   ]
   },
   {
    "type": "recall",

@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 19 Điều 4 Luật Các tổ chức tín dụng 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 19 Điều 4 — Ngân hàng Nhà nước quyết định đặt tổ chức tín dụng vào kiểm soát đặc biệt.",
+    "Sai: Tòa án giải quyết phá sản, không đặt kiểm soát đặc biệt.",
+    "Sai: Đại hội đồng cổ đông không có quyền này.",
+    "Sai: Bảo hiểm tiền gửi có thể tham gia hỗ trợ nhưng không quyết định."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 4 Luật Các tổ chức tín dụng 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 4 — can thiệp sớm: tổ chức tín dụng tự thực hiện phương án khắc phục dưới sự giám sát của Ngân hàng Nhà nước.",
+    "Sai: kiểm soát đặc biệt có Ban kiểm soát đặc biệt trực tiếp giám sát, chỉ đạo.",
+    "Sai: phá sản là thủ tục tư pháp chấm dứt hoạt động.",
+    "Sai: thu hồi giấy phép là chấm dứt hoạt động, không phải khắc phục."
+   ]
   },
   {
    "type": "pair",

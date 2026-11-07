@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 5 Điều 45 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 5 Điều 45 — so sánh với hàng cùng loại của doanh nghiệp khác mà không chứng minh được nội dung là lôi kéo khách hàng bất chính.",
+    "Sai: gây rối (khoản 4 Điều 45) là cản trở, làm gián đoạn hoạt động kinh doanh của doanh nghiệp khác.",
+    "Sai: xâm phạm bí mật kinh doanh (khoản 1 Điều 45) là tiếp cận, tiết lộ, sử dụng thông tin bí mật trái phép.",
+    "Sai: so sánh không chứng minh được nội dung bị cấm rõ ở điểm b khoản 5 Điều 45."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 45 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 45 — đưa thông tin không trung thực gây ảnh hưởng xấu đến uy tín, tài chính, hoạt động của doanh nghiệp khác.",
+    "Sai: thỏa thuận hạn chế cạnh tranh (Điều 11) cần sự thỏa thuận giữa các doanh nghiệp, ở đây chỉ một bên tung tin.",
+    "Sai: lạm dụng vị trí độc quyền (khoản 2 Điều 27) đòi doanh nghiệp có vị trí độc quyền và hành vi khác, như áp đặt điều kiện bất lợi.",
+    "Sai: tập trung kinh tế (Điều 29) là sáp nhập, hợp nhất, mua lại, liên doanh, không phải tung tin."
+   ]
   },
   {
    "type": "pair",

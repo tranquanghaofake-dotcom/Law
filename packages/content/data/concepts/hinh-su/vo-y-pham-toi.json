@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 11 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 11 — không thấy trước hậu quả dù phải và có thể thấy trước là vô ý do cẩu thả.",
+    "Sai: quá tự tin là có thấy trước nhưng cho rằng không xảy ra.",
+    "Sai: cố ý gián tiếp là thấy trước và để mặc.",
+    "Sai: sự kiện bất ngờ là không thể thấy trước."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 10, Điều 11 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 11, khoản 2 Điều 10 — quá tự tin cho rằng hậu quả không xảy ra hoặc ngăn ngừa được; cố ý gián tiếp thì để mặc.",
+    "Sai: quá tự tin có thấy trước hậu quả.",
+    "Sai: mong muốn hậu quả là cố ý trực tiếp.",
+    "Sai: hai loại lỗi khác nhau về ý chí."
+   ]
   },
   {
    "type": "pair",

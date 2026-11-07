@@ -83,7 +83,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển I (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), tờ 6a"
-   }
+   },
+   "why": [
+    "Đúng: An Dương Vương (Thục Phán) đổi quốc hiệu thành Âu Lạc.",
+    "Sai: Hùng Vương là vua Văn Lang.",
+    "Sai: Triệu Đà là vua Nam Việt.",
+    "Sai: Lạc Long Quân là nhân vật truyền thuyết."
+   ]
   },
   {
    "type": "mcq",
@@ -100,7 +106,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển I (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), tờ 6a"
-   }
+   },
+   "why": [
+    "Đúng: Toàn thư — đóng đô ở Phong Khê (nay là thành Cổ Loa).",
+    "Sai: Phong Châu là đô của Văn Lang.",
+    "Sai: Hoa Lư là đô nhà Đinh.",
+    "Sai: Mê Linh là đô Trưng Vương."
+   ]
   },
   {
    "type": "pair",

@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 137 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 137 — mang thai từ tháng thứ 07 (ở vùng bình thường).",
+    "Sai: luật không dùng mốc tháng thứ 05.",
+    "Sai: tháng thứ 03 quá sớm, không phải mốc của điểm a khoản 1 Điều 137.",
+    "Sai: tháng thứ 08 muộn hơn mốc luật định (tháng thứ 07)."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 137 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 1 Điều 137 — không được làm thêm giờ, trừ trường hợp được người lao động đồng ý.",
+    "Sai: luật có ngoại lệ khi người lao động đồng ý, nên không phải \"không bao giờ\".",
+    "Sai: yêu cầu của người sử dụng lao động không thay được sự đồng ý của người lao động.",
+    "Sai: điểm b khoản 1 Điều 137 đòi sự đồng ý của chính người lao động, không phải công đoàn."
+   ]
   },
   {
    "type": "pair",

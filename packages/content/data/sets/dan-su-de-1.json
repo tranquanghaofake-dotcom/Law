@@ -16,7 +16,13 @@
       "answer": 1,
       "explain": "Người từ đủ 6 đến chưa đủ 15 tuổi phải được người đại diện đồng ý, trừ giao dịch sinh hoạt hàng ngày phù hợp lứa tuổi; điện thoại 15 triệu khó coi là sinh hoạt hàng ngày.",
       "basis": "Điều 21 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_21"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_21",
+      "why": [
+        "Sai: người dưới 15 tuổi chỉ tự làm giao dịch sinh hoạt hằng ngày phù hợp lứa tuổi.",
+        "Đúng: khoản 3 Điều 21 — cần người đại diện theo pháp luật đồng ý.",
+        "Sai: BLDS không đòi công chứng tại Ủy ban xã.",
+        "Sai: người bán đồng ý không thay sự đồng ý của người đại diện."
+      ]
     },
     {
       "q": "Năng lực pháp luật dân sự của cá nhân chấm dứt khi nào?",
@@ -29,7 +35,13 @@
       "answer": 1,
       "explain": "Khoản 3 Điều 16.",
       "basis": "Điều 16 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_16"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_16",
+      "why": [
+        "Sai: mất năng lực hành vi không làm mất năng lực pháp luật.",
+        "Đúng: khoản 3 Điều 16 — chấm dứt khi người đó chết.",
+        "Sai: phạt tù không làm chấm dứt năng lực pháp luật.",
+        "Sai: ra nước ngoài không ảnh hưởng năng lực pháp luật."
+      ]
     },
     {
       "q": "Một tổ chức muốn được công nhận là pháp nhân thì KHÔNG cần điều kiện nào?",
@@ -42,7 +54,13 @@
       "answer": 2,
       "explain": "Điều 74 không yêu cầu trụ sở thuộc sở hữu của pháp nhân.",
       "basis": "Điều 74 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_74"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_74",
+      "why": [
+        "Sai: thành lập hợp pháp là điều kiện ở Điều 74.",
+        "Sai: tài sản độc lập là điều kiện ở Điều 74.",
+        "Đúng: Điều 74 không đòi trụ sở thuộc sở hữu riêng.",
+        "Sai: nhân danh mình tham gia quan hệ độc lập là điều kiện."
+      ]
     },
     {
       "q": "Hợp đồng vay tiền để đánh bạc có hiệu lực không?",
@@ -55,7 +73,13 @@
       "answer": 1,
       "explain": "Giao dịch có mục đích, nội dung vi phạm điều cấm của luật thì vô hiệu.",
       "basis": "Điều 123 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_123"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_123",
+      "why": [
+        "Sai: tự nguyện không cứu được mục đích vi phạm điều cấm.",
+        "Đúng: Điều 123 — mục đích vi phạm điều cấm thì vô hiệu.",
+        "Sai: hình thức không khắc phục được mục đích trái luật.",
+        "Sai: vô hiệu không phụ thuộc số tiền."
+      ]
     },
     {
       "q": "A và B lập hợp đồng tặng cho nhà để che giấu hợp đồng mua bán nhằm trốn thuế. Hợp đồng nào vô hiệu?",
@@ -68,7 +92,13 @@
       "answer": 1,
       "explain": "Giao dịch giả tạo vô hiệu; giao dịch bị che giấu vẫn có hiệu lực nếu hợp pháp (khoản 1 Điều 124).",
       "basis": "Điều 124 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_124"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_124",
+      "why": [
+        "Sai: hợp đồng giả tạo vô hiệu.",
+        "Đúng: khoản 1 Điều 124 — giao dịch giả tạo (tặng cho) vô hiệu.",
+        "Sai: vẫn có hợp đồng bị che giấu.",
+        "Sai: hợp đồng bị che giấu vẫn có hiệu lực nếu hợp pháp."
+      ]
     },
     {
       "q": "Hình thức của giao dịch dân sự là điều kiện có hiệu lực khi nào?",
@@ -81,7 +111,13 @@
       "answer": 1,
       "explain": "Khoản 2 Điều 117.",
       "basis": "Điều 117 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_117"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_117",
+      "why": [
+        "Sai: không phải luôn luôn.",
+        "Đúng: khoản 2 Điều 117 — khi luật có quy định.",
+        "Sai: giá trị lớn không phải tiêu chí.",
+        "Sai: yêu cầu của một bên không phải tiêu chí."
+      ]
     },
     {
       "q": "Người được ủy quyền bán xe máy lại tự mua chính chiếc xe đó với giá rẻ. Theo Bộ luật Dân sự 2015, hành vi này thế nào?",
@@ -94,7 +130,13 @@
       "answer": 1,
       "explain": "Người đại diện không được giao dịch với chính mình (khoản 3 Điều 141).",
       "basis": "Điều 141 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_141"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_141",
+      "why": [
+        "Sai: ủy quyền có công chứng vẫn không cho giao dịch với chính mình.",
+        "Đúng: khoản 3 Điều 141 — không được giao dịch với chính mình.",
+        "Sai: giá thị trường không loại trừ quy định cấm.",
+        "Sai: báo trước không thay sự cho phép của pháp luật."
+      ]
     },
     {
       "q": "Bị đơn chỉ yêu cầu áp dụng thời hiệu khởi kiện tại phiên tòa phúc thẩm. Tòa án xử lý thế nào?",
@@ -107,7 +149,13 @@
       "answer": 1,
       "explain": "Khoản 2 Điều 149.",
       "basis": "Điều 149 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_149"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_149",
+      "why": [
+        "Sai: yêu cầu phải đưa ra trước khi Tòa sơ thẩm ra bản án.",
+        "Đúng: khoản 2 Điều 149 — yêu cầu muộn ở phúc thẩm không được áp dụng.",
+        "Sai: Tòa không đình chỉ vì yêu cầu muộn.",
+        "Sai: không chuyển Viện kiểm sát."
+      ]
     },
     {
       "q": "Thời hiệu nào khi kết thúc thì người có nghĩa vụ được miễn thực hiện nghĩa vụ?",
@@ -120,7 +168,13 @@
       "answer": 2,
       "explain": "Khoản 2 Điều 150.",
       "basis": "Điều 150 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_150"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_150",
+      "why": [
+        "Sai: hết thời hiệu khởi kiện là mất quyền khởi kiện.",
+        "Sai: hết thời hiệu hưởng quyền thì được hưởng quyền.",
+        "Đúng: khoản 2 Điều 150 — thời hiệu miễn trừ nghĩa vụ.",
+        "Sai: hết thời hiệu này là mất quyền yêu cầu."
+      ]
     },
     {
       "q": "Theo khoản 2 Điều 3, cam kết, thỏa thuận có hiệu lực thực hiện đối với các bên khi đáp ứng điều kiện gì?",
@@ -133,7 +187,13 @@
       "answer": 1,
       "explain": "Nguyên tắc tự do, tự nguyện cam kết, thỏa thuận.",
       "basis": "Điều 3 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_3"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_3",
+      "why": [
+        "Sai: không cần Nhà nước phê duyệt.",
+        "Đúng: khoản 2 Điều 3 — không vi phạm điều cấm, không trái đạo đức xã hội.",
+        "Sai: không bắt buộc công chứng.",
+        "Sai: không bắt buộc người làm chứng."
+      ]
     }
   ]
 }

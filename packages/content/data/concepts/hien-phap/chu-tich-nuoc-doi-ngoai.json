@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 6 Điều 88 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 6 Điều 88 — căn cứ nghị quyết của Ủy ban thường vụ Quốc hội.",
+    "Sai: không căn cứ nghị quyết của Chính phủ.",
+    "Sai: Bộ Ngoại giao không quyết định.",
+    "Sai: nghị quyết thuộc Ủy ban thường vụ Quốc hội, không phải Quốc hội."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 7 Điều 96 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 7 Điều 96 — Chính phủ đàm phán, ký điều ước nhân danh Nhà nước theo ủy quyền của Chủ tịch nước.",
+    "Sai: không theo quyết định riêng của Thủ tướng.",
+    "Sai: Mặt trận Tổ quốc không ủy quyền.",
+    "Sai: cần ủy quyền của Chủ tịch nước."
+   ]
   },
   {
    "type": "pair",

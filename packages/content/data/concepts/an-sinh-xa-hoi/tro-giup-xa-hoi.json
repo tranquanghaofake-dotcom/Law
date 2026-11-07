@@ -83,7 +83,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
-   }
+   },
+   "why": [
+    "Đúng: theo giáo trình, trợ giúp xã hội bảo đảm mức sống tối thiểu cho người lâm vào hoàn cảnh khó khăn.",
+    "Sai: thay thế thu nhập theo mức đóng là mục đích của bảo hiểm xã hội.",
+    "Sai: đền đáp công lao là mục đích của ưu đãi người có công.",
+    "Sai: bù đắp thu nhập khi mất việc là mục đích của bảo hiểm thất nghiệp."
+   ]
   },
   {
    "type": "mcq",
@@ -100,7 +106,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
-   }
+   },
+   "why": [
+    "Đúng: theo giáo trình, hỗ trợ khẩn cấp sau thiên tai là trợ giúp xã hội đột xuất (Nghị định 20/2021/NĐ-CP gọi là trợ giúp xã hội khẩn cấp).",
+    "Sai: trợ giúp định kỳ là trợ cấp hằng tháng cho đối tượng bảo trợ xã hội, không phải hỗ trợ sau bão lũ.",
+    "Sai: bảo hiểm xã hội đòi người tham gia đã đóng, không áp dụng cho cứu trợ thiên tai.",
+    "Sai: ưu đãi xã hội dành cho người có công, không phải người bị thiên tai."
+   ]
   },
   {
    "type": "pair",

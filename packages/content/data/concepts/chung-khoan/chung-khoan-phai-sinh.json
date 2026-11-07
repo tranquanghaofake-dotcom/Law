@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 9 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 9 Điều 4 — công cụ tài chính dưới dạng hợp đồng.",
+    "Sai: xác nhận vốn cổ phần là cổ phiếu.",
+    "Sai: xác nhận nợ là trái phiếu.",
+    "Sai: vốn góp của quỹ là chứng chỉ quỹ."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 9 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: bảo lãnh phát hành là nghiệp vụ kinh doanh (khoản 31), không phải phái sinh.",
+    "Sai: quyền chọn là chứng khoán phái sinh.",
+    "Sai: tương lai là chứng khoán phái sinh.",
+    "Sai: kỳ hạn là chứng khoán phái sinh."
+   ]
   },
   {
    "type": "pair",
@@ -158,7 +170,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 13 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: thỏa thuận riêng mua bán giá xác định trong tương lai gần nhất với hợp đồng kỳ hạn.",
+    "Sai: hợp đồng tương lai được niêm yết, giao dịch trên sàn.",
+    "Sai: đây không phải chứng chỉ quỹ hay cổ phiếu.",
+    "Sai: quyền mua cổ phần do công ty phát hành cho cổ đông."
+   ]
   },
   {
    "type": "recall",

@@ -73,7 +73,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 3 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 3 — cam kết, thỏa thuận không vi phạm điều cấm của luật, không trái đạo đức xã hội có hiệu lực thực hiện.",
+    "Sai: công chứng chỉ bắt buộc khi luật quy định.",
+    "Sai: xác nhận của Ủy ban nhân dân không phải điều kiện chung.",
+    "Sai: người làm chứng không phải điều kiện chung."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 3 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 3 — nguyên tắc thiện chí, trung thực.",
+    "Sai: bình đẳng ở khoản 1 Điều 3.",
+    "Sai: tự chịu trách nhiệm ở khoản 5 Điều 3.",
+    "Sai: hòa giải không phải nguyên tắc ở khoản 3 Điều 3."
+   ]
   },
   {
    "type": "pair",

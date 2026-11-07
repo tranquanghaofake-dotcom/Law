@@ -79,7 +79,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển V, tờ 17b"
-   }
+   },
+   "why": [
+    "Đúng: Toàn thư — \"Khúc Hạo chiếm giữ châu trị, xưng là Tiết độ sứ\".",
+    "Sai: họ Khúc chưa xưng vương.",
+    "Sai: họ Khúc chưa xưng Đại vương.",
+    "Sai: Chiêu thảo không phải danh hiệu Khúc Hạo xưng."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển V, tờ 18a"
-   }
+   },
+   "why": [
+    "Đúng: Dương Đình Nghệ (người Ái Châu) đánh đuổi Lý Khắc Chính.",
+    "Sai: Kiều Công Tiễn là người giết Dương Đình Nghệ.",
+    "Sai: Đinh Công Trứ là cha Đinh Bộ Lĩnh.",
+    "Sai: Ngô Quyền là con rể Dương Đình Nghệ, đánh Nam Hán năm 938."
+   ]
   },
   {
    "type": "pair",
@@ -158,7 +170,13 @@
     "Vì Toàn thư không chép đầy đủ về họ Khúc, nên các sử liệu về họ Khúc đều không còn đáng tin cậy"
    ],
    "answer": 0,
-   "explain": "Khúc Hạo \"xưng là Tiết độ sứ\"; Khúc Thừa Mỹ còn xin nhà Lương \"trao tiết việt\": hình thức vẫn lệ thuộc."
+   "explain": "Khúc Hạo \"xưng là Tiết độ sứ\"; Khúc Thừa Mỹ còn xin nhà Lương \"trao tiết việt\": hình thức vẫn lệ thuộc.",
+   "why": [
+    "Đúng: người Việt nắm thực quyền nhưng vẫn mang danh nghĩa Tiết độ sứ của phương Bắc.",
+    "Sai: họ Khúc là người Việt.",
+    "Sai: họ Khúc có lực lượng riêng.",
+    "Sai: Toàn thư có chép về họ Khúc."
+   ]
   },
   {
    "type": "recall",

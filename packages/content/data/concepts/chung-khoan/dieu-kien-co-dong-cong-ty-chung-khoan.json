@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 74 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 3 Điều 74 — tổ chức góp tối thiểu 65%.",
+    "Sai: không phải 51%.",
+    "Sai: 30% là mức của ngân hàng, bảo hiểm.",
+    "Sai: không bắt buộc 100%."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 74 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 3 Điều 74 — tối thiểu 30%.",
+    "Sai: 65% là tổng mức của các tổ chức.",
+    "Sai: không phải 10%.",
+    "Sai: không phải 5%."
+   ]
   },
   {
    "type": "pair",
@@ -157,7 +169,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 74 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm c khoản 2 Điều 74 — C và người liên quan không được sở hữu trên 5% công ty khác.",
+    "Sai: công ty con là người có liên quan.",
+    "Sai: niêm yết không phải căn cứ.",
+    "Sai: ngưỡng là 5%, không phải 10%."
+   ]
   },
   {
    "type": "recall",

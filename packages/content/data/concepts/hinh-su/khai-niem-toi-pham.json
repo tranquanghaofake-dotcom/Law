@@ -73,7 +73,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 8 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 8 — tính nguy hiểm không đáng kể thì không phải tội phạm, xử lý bằng biện pháp khác.",
+    "Sai: không phải tội phạm.",
+    "Sai: miễn hình phạt chỉ áp dụng khi là tội phạm.",
+    "Sai: không mặc nhiên bị phạt hành chính."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 8 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 8 — người có năng lực trách nhiệm hình sự hoặc pháp nhân thương mại.",
+    "Sai: tổ chức xã hội không phải chủ thể tội phạm.",
+    "Sai: không giới hạn công dân có hộ khẩu.",
+    "Sai: cơ quan nhà nước không phải chủ thể tội phạm."
+   ]
   },
   {
    "type": "pair",

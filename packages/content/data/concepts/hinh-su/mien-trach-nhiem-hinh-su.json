@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 29 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 1 Điều 29 — có quyết định đại xá thì được (bắt buộc) miễn trách nhiệm hình sự.",
+    "Sai: bệnh nặng là trường hợp \"có thể được miễn\" (khoản 2).",
+    "Sai: đề nghị của người bị hại thuộc khoản 3, \"có thể được miễn\".",
+    "Sai: lập công thuộc trường hợp \"có thể được miễn\"."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 29 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 29 — tội phạm nghiêm trọng do vô ý hoặc tội phạm ít nghiêm trọng.",
+    "Sai: không áp dụng với tội nghiêm trọng, rất nghiêm trọng do cố ý.",
+    "Sai: không áp dụng với tội rất nghiêm trọng, đặc biệt nghiêm trọng.",
+    "Sai: khoản 3 không giới hạn theo nhóm tội an ninh, trật tự."
+   ]
   },
   {
    "type": "pair",

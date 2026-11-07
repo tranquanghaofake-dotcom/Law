@@ -16,7 +16,13 @@
       "answer": 1,
       "explain": "Điều 188 (không có tư cách pháp nhân); Điều 177, 74, 111 (có).",
       "basis": "Điều 188 Luật Doanh nghiệp (sửa đổi, bổ sung năm 2022, 2025)",
-      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx",
+      "why": [
+        "Sai: công ty hợp danh có tư cách pháp nhân (Điều 177).",
+        "Đúng: Điều 188 — doanh nghiệp tư nhân không có tư cách pháp nhân.",
+        "Sai: công ty TNHH một thành viên có tư cách pháp nhân.",
+        "Sai: công ty cổ phần có tư cách pháp nhân."
+      ]
     },
     {
       "q": "Chủ doanh nghiệp tư nhân chịu trách nhiệm thế nào?",
@@ -29,7 +35,13 @@
       "answer": 1,
       "explain": "Khoản 1 Điều 188.",
       "basis": "Điều 188 Luật Doanh nghiệp (sửa đổi, bổ sung năm 2022, 2025)",
-      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx",
+      "why": [
+        "Sai: không giới hạn trong vốn đăng ký.",
+        "Đúng: khoản 1 Điều 188 — bằng toàn bộ tài sản của mình.",
+        "Sai: doanh nghiệp tư nhân không có vốn điều lệ góp.",
+        "Sai: trách nhiệm là vô hạn."
+      ]
     },
     {
       "q": "Thành viên hợp danh phải là ai?",
@@ -42,7 +54,13 @@
       "answer": 1,
       "explain": "Điểm b khoản 1 Điều 177.",
       "basis": "Điều 177 Luật Doanh nghiệp (sửa đổi, bổ sung năm 2022, 2025)",
-      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx",
+      "why": [
+        "Sai: tổ chức không làm thành viên hợp danh.",
+        "Đúng: điểm b khoản 1 Điều 177 — thành viên hợp danh phải là cá nhân.",
+        "Sai: doanh nghiệp nhà nước không làm thành viên hợp danh.",
+        "Sai: có giới hạn: phải là cá nhân."
+      ]
     },
     {
       "q": "Thành viên góp vốn trong công ty hợp danh chịu trách nhiệm thế nào?",
@@ -55,7 +73,13 @@
       "answer": 1,
       "explain": "Điểm c khoản 1 Điều 177.",
       "basis": "Điều 177 Luật Doanh nghiệp (sửa đổi, bổ sung năm 2022, 2025)",
-      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx",
+      "why": [
+        "Sai: trách nhiệm vô hạn thuộc thành viên hợp danh.",
+        "Đúng: điểm c khoản 1 Điều 177 — trong phạm vi vốn đã cam kết góp.",
+        "Sai: liên đới là trách nhiệm của thành viên hợp danh.",
+        "Sai: vẫn chịu trong phạm vi vốn cam kết."
+      ]
     },
     {
       "q": "Công ty TNHH hai thành viên trở lên có tối đa bao nhiêu thành viên?",
@@ -68,7 +92,13 @@
       "answer": 1,
       "explain": "Khoản 1 Điều 46.",
       "basis": "Điều 46 Luật Doanh nghiệp (sửa đổi, bổ sung năm 2022, 2025)",
-      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx",
+      "why": [
+        "Sai: không phải 30.",
+        "Đúng: khoản 1 Điều 46 — tối đa 50 thành viên.",
+        "Sai: không phải 100.",
+        "Sai: có giới hạn."
+      ]
     },
     {
       "q": "Thời hạn góp đủ vốn của thành viên công ty TNHH kể từ ngày được cấp Giấy chứng nhận là bao lâu?",
@@ -81,7 +111,13 @@
       "answer": 1,
       "explain": "Khoản 2 Điều 47.",
       "basis": "Điều 47 Luật Doanh nghiệp (sửa đổi, bổ sung năm 2022, 2025)",
-      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx",
+      "why": [
+        "Sai: không phải 30 ngày.",
+        "Đúng: khoản 2 Điều 47 — 90 ngày.",
+        "Sai: không phải 06 tháng.",
+        "Sai: không phải 01 năm."
+      ]
     },
     {
       "q": "Phương án nào liệt kê đầy đủ chủ sở hữu có thể có của công ty TNHH một thành viên?",
@@ -94,7 +130,13 @@
       "answer": 1,
       "explain": "Khoản 1 Điều 74.",
       "basis": "Điều 74 Luật Doanh nghiệp (sửa đổi, bổ sung năm 2022, 2025)",
-      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx",
+      "why": [
+        "Sai: không giới hạn ở cá nhân Việt Nam.",
+        "Đúng: khoản 1 Điều 74 — một tổ chức hoặc một cá nhân.",
+        "Sai: hai người trở lên là TNHH hai thành viên.",
+        "Sai: liệt kê không đầy đủ."
+      ]
     },
     {
       "q": "Công ty cổ phần cần tối thiểu bao nhiêu cổ đông?",
@@ -107,7 +149,13 @@
       "answer": 1,
       "explain": "Điểm b khoản 1 Điều 111.",
       "basis": "Điều 111 Luật Doanh nghiệp (sửa đổi, bổ sung năm 2022, 2025)",
-      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx",
+      "why": [
+        "Sai: không phải 02.",
+        "Đúng: điểm b khoản 1 Điều 111 — tối thiểu 03 cổ đông.",
+        "Sai: không phải 05.",
+        "Sai: không phải 07."
+      ]
     },
     {
       "q": "Loại cổ phần nào công ty cổ phần bắt buộc phải có?",
@@ -120,7 +168,13 @@
       "answer": 1,
       "explain": "Khoản 1 Điều 114.",
       "basis": "Điều 114 Luật Doanh nghiệp (sửa đổi, bổ sung năm 2022, 2025)",
-      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx",
+      "why": [
+        "Sai: ưu đãi cổ tức là tùy chọn.",
+        "Đúng: khoản 1 Điều 114 — phải có cổ phần phổ thông.",
+        "Sai: ưu đãi biểu quyết là tùy chọn.",
+        "Sai: ưu đãi hoàn lại là tùy chọn."
+      ]
     },
     {
       "q": "Trong 03 năm đầu, cổ đông sáng lập bán cổ phần phổ thông cho người ngoài cần điều kiện gì?",
@@ -133,7 +187,13 @@
       "answer": 1,
       "explain": "Khoản 3 Điều 120.",
       "basis": "Điều 120 Luật Doanh nghiệp (sửa đổi, bổ sung năm 2022, 2025)",
-      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx",
+      "why": [
+        "Sai: thông báo là không đủ.",
+        "Đúng: khoản 3 Điều 120 — cần Đại hội đồng cổ đông chấp thuận.",
+        "Sai: Giám đốc không có thẩm quyền.",
+        "Sai: không cấm tuyệt đối."
+      ]
     }
   ]
 }

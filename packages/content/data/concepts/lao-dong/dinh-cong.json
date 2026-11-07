@@ -83,7 +83,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 198 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 198 — do tổ chức đại diện người lao động có quyền thương lượng tập thể, là một bên tranh chấp, tổ chức và lãnh đạo.",
+    "Sai: đình công tự phát không do tổ chức đại diện là bất hợp pháp.",
+    "Sai: người sử dụng lao động là bên bị đình công.",
+    "Sai: Ủy ban nhân dân không tổ chức đình công."
+   ]
   },
   {
    "type": "mcq",
@@ -100,7 +106,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 198 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 198 — nhằm đạt được yêu cầu trong quá trình giải quyết tranh chấp lao động.",
+    "Sai: phản đối chính sách Nhà nước không phải mục đích đình công theo luật.",
+    "Sai: mục đích chính trị không phải đình công hợp pháp.",
+    "Sai: gây thiệt hại không phải mục đích luật định."
+   ]
   },
   {
    "type": "pair",

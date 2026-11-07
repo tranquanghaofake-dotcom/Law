@@ -1,0 +1,137 @@
+{
+ "id": "chia-tai-san-khi-ly-hon",
+ "subject": "hon-nhan-gia-dinh",
+ "chapter": "c4-ly-hon",
+ "term": "Chia tài sản chung khi ly hôn",
+ "definition": "Tài sản chung của vợ chồng được chia đôi nhưng có tính đến các yếu tố sau đây: a) Hoàn cảnh của gia đình và của vợ, chồng; b) Công sức đóng góp của vợ, chồng vào việc tạo lập, duy trì và phát triển khối tài sản chung. Lao động của vợ, chồng trong gia đình được coi như lao động có thu nhập; c) Bảo vệ lợi ích chính đáng của mỗi bên trong sản xuất, kinh doanh và nghề nghiệp để các bên có điều kiện tiếp tục lao động tạo thu nhập; d) Lỗi của mỗi bên trong vi phạm quyền, nghĩa vụ của vợ chồng.",
+ "plain": "Nguyên tắc: CHIA ĐÔI nhưng điều chỉnh theo 4 yếu tố — HOÀN CẢNH, CÔNG SỨC (việc nhà = lao động có thu nhập), BẢO VỆ NGHỀ NGHIỆP, LỖI. Vì vậy \"chia đôi\" không phải luôn là 50/50. Ưu tiên thỏa thuận trước (khoản 1). Chia bằng hiện vật, không được thì theo giá trị, ai nhận phần lớn hơn thì trả chênh lệch (khoản 3). Tài sản riêng vẫn của riêng người đó (khoản 4).",
+ "example": "Vợ ở nhà chăm con, chồng đi làm có lương: công việc nhà của vợ được tính như lao động có thu nhập khi chia tài sản chung.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 59 Luật Hôn nhân và gia đình 2014",
+  "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "tai-san-chung",
+  "tai-san-rieng",
+  "chia-tai-san-chung-trong-thoi-ky-hon-nhan",
+  "thuan-tinh-ly-hon"
+ ],
+ "keywords": [
+  "chia đôi",
+  "hoàn cảnh",
+  "công sức đóng góp",
+  "lao động có thu nhập",
+  "lỗi"
+ ],
+ "memo": {
+  "gist": "Ly hôn thì tài sản chung chia đôi, nhưng điều chỉnh theo hoàn cảnh, công sức, nghề nghiệp và lỗi của mỗi bên.",
+  "kind": "tree",
+  "hook": "Bốn quả cân đặt lên bàn: nhà ai khó, ai góp nhiều, ai cần giữ nghề, ai gây đổ vỡ.",
+  "tree": [
+   {
+    "label": "Hoàn cảnh",
+    "icon": "home",
+    "children": [
+     "Của gia đình",
+     "Của vợ, chồng"
+    ]
+   },
+   {
+    "label": "Công sức",
+    "icon": "tool",
+    "children": [
+     "Việc nhà là lao động có thu nhập"
+    ]
+   },
+   {
+    "label": "Nghề nghiệp",
+    "icon": "company",
+    "children": [
+     "Để mỗi bên tiếp tục làm ăn"
+    ]
+   },
+   {
+    "label": "Lỗi",
+    "icon": "warn",
+    "children": [
+     "Vi phạm quyền, nghĩa vụ vợ chồng"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Khi ly hôn, tài sản chung có bắt buộc chia đúng 50/50 không?",
+   "a": "Không. Nguyên tắc chia đôi nhưng tính đến hoàn cảnh, công sức, nghề nghiệp và lỗi nên tỷ lệ có thể khác."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Yếu tố nào KHÔNG được khoản 2 Điều 59 liệt kê khi chia tài sản chung khi ly hôn?",
+   "options": [
+    "Bên nào có thu nhập cao hơn thì được chia nhiều hơn",
+    "Hoàn cảnh của gia đình và của vợ, chồng",
+    "Công sức đóng góp vào khối tài sản chung",
+    "Lỗi của mỗi bên trong vi phạm nghĩa vụ vợ chồng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 59 nêu bốn yếu tố: hoàn cảnh, công sức, bảo vệ nghề nghiệp, lỗi; lao động trong gia đình được coi như lao động có thu nhập.",
+   "why": [
+    "Đúng: luật không chia theo mức lương; việc nhà còn được coi như lao động có thu nhập.",
+    "Sai: hoàn cảnh là yếu tố ở điểm a.",
+    "Sai: công sức đóng góp là yếu tố ở điểm b.",
+    "Sai: lỗi là yếu tố ở điểm d."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tài sản chung của vợ chồng được {{chia đôi}} nhưng có tính đến các yếu tố sau đây: a) Hoàn cảnh của gia đình và của vợ, chồng;"
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "b) Công sức đóng góp của vợ, chồng vào việc tạo lập, duy trì và phát triển khối tài sản chung. Lao động của vợ, chồng trong gia đình được coi như {{lao động có thu nhập}};"
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Khi ly hôn, căn nhà chung trị giá 4 tỷ đồng được giao cho vợ vì vợ nuôi con nhỏ; hai bên có công sức như nhau. Chồng được gì?",
+   "options": [
+    "Vợ trả cho chồng phần chênh lệch, khoảng 2 tỷ đồng",
+    "Chồng không được gì vì nhà đã giao cho vợ nuôi con",
+    "Chồng được ở chung trong căn nhà đến khi con thành niên",
+    "Chồng được nhận lại toàn bộ căn nhà sau khi con thành niên"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 59: bên nhận phần hiện vật có giá trị lớn hơn phần mình được hưởng phải thanh toán phần chênh lệch cho bên kia.",
+   "why": [
+    "Đúng: nhận hiện vật lớn hơn phần mình thì trả chênh lệch (khoản 3 Điều 59).",
+    "Sai: giao nhà cho vợ không làm mất phần giá trị của chồng.",
+    "Sai: luật không quy định quyền ở chung như một cách chia tài sản.",
+    "Sai: không có cơ chế trả lại nhà khi con thành niên."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khi ly hôn, tài sản chung của vợ chồng luôn được chia đúng một nửa cho mỗi bên.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 59: chia đôi nhưng có tính đến hoàn cảnh, công sức, bảo vệ nghề nghiệp và lỗi của mỗi bên."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu nguyên tắc và bốn yếu tố khi chia tài sản chung khi ly hôn.",
+   "model": "Chia đôi nhưng tính đến hoàn cảnh gia đình và mỗi bên; công sức đóng góp (lao động trong gia đình như lao động có thu nhập); bảo vệ lợi ích nghề nghiệp; lỗi của mỗi bên.",
+   "keywords": [
+    "chia đôi",
+    "hoàn cảnh",
+    "công sức",
+    "lỗi"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "hon-nhan-gia-dinh",
+  "title": "Luật Hôn nhân và gia đình",
+  "short": "Hôn nhân – Gia đình",
+  "chapters": [
+    {
+      "id": "c1-khai-quat",
+      "title": "Chương 1. Khái quát về Luật Hôn nhân và gia đình",
+      "lessons": [
+        {
+          "id": "c1-hngd",
+          "title": "Khái quát về Luật Hôn nhân và gia đình",
+          "concepts": [
+            "hon-nhan",
+            "gia-dinh",
+            "tap-quan-hon-nhan-gia-dinh",
+            "thoi-ky-hon-nhan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c2-ket-hon",
+      "title": "Chương 2. Kết hôn",
+      "lessons": [
+        {
+          "id": "c2-hngd",
+          "title": "Kết hôn",
+          "concepts": [
+            "ket-hon",
+            "dieu-kien-ket-hon",
+            "nguoi-co-ho-trong-pham-vi-ba-doi",
+            "dang-ky-ket-hon",
+            "ket-hon-gia-tao",
+            "chung-song-nhu-vo-chong",
+            "ket-hon-trai-phap-luat",
+            "cong-nhan-hon-nhan-khi-xu-ly-ket-hon-trai-phap-luat"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c3-tai-san-vo-chong",
+      "title": "Chương 3. Chế độ tài sản của vợ chồng",
+      "lessons": [
+        {
+          "id": "c3-hngd",
+          "title": "Chế độ tài sản của vợ chồng",
+          "concepts": [
+            "tai-san-chung",
+            "tai-san-rieng",
+            "chia-tai-san-chung-trong-thoi-ky-hon-nhan",
+            "che-do-tai-san-theo-thoa-thuan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c4-ly-hon",
+      "title": "Chương 4. Ly hôn",
+      "lessons": [
+        {
+          "id": "c4-hngd",
+          "title": "Ly hôn",
+          "concepts": [
+            "ly-hon",
+            "han-che-quyen-yeu-cau-ly-hon",
+            "thuan-tinh-ly-hon",
+            "ly-hon-theo-yeu-cau-mot-ben",
+            "chia-tai-san-khi-ly-hon",
+            "nuoi-con-sau-ly-hon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c5-cha-me-con",
+      "title": "Chương 5. Quan hệ giữa cha mẹ và con",
+      "lessons": [
+        {
+          "id": "c5-hngd",
+          "title": "Quan hệ giữa cha mẹ và con",
+          "concepts": [
+            "xac-dinh-con-chung",
+            "mang-thai-ho-vi-muc-dich-nhan-dao"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c6-cap-duong",
+      "title": "Chương 6. Cấp dưỡng",
+      "lessons": [
+        {
+          "id": "c6-hngd",
+          "title": "Cấp dưỡng",
+          "concepts": [
+            "cap-duong"
+          ]
+        }
+      ]
+    }
+  ]
+}

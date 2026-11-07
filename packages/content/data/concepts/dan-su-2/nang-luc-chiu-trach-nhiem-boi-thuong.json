@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 586 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: đoạn 1 khoản 2 Điều 586 — người chưa đủ 15 tuổi gây thiệt hại, còn cha mẹ thì cha mẹ bồi thường toàn bộ.",
+    "Sai: tài sản của con chỉ dùng bù khi tài sản cha mẹ không đủ.",
+    "Sai: nhà trường chỉ chịu khi trẻ đang ở trường quản lý (Điều 599).",
+    "Sai: Nhà nước không chi trả hộ."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 586 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: đoạn 2 khoản 2 Điều 586 — từ đủ 15 đến dưới 18 tuổi bồi thường bằng tài sản của mình; không đủ thì cha mẹ bù.",
+    "Sai: cha mẹ chỉ bù phần còn thiếu.",
+    "Sai: người từ đủ 15 tuổi vẫn phải bồi thường.",
+    "Sai: Nhà nước không bồi thường thay."
+   ]
   },
   {
    "type": "pair",

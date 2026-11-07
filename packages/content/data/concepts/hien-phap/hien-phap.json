@@ -74,7 +74,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 119 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 119 — luật cơ bản, có hiệu lực pháp lý cao nhất.",
+    "Sai: Hiến pháp do Quốc hội làm, không phải Chính phủ.",
+    "Sai: Hiến pháp là một văn bản riêng, không phải tập hợp luật.",
+    "Sai: Hiến pháp có giá trị bắt buộc."
+   ]
   },
   {
    "type": "mcq",
@@ -91,7 +97,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 70 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 70 — Quốc hội làm và sửa đổi Hiến pháp.",
+    "Sai: Chính phủ không có quyền lập hiến.",
+    "Sai: Chủ tịch nước không có quyền lập hiến.",
+    "Sai: Tòa án không có quyền lập hiến."
+   ]
   },
   {
    "type": "pair",
@@ -162,7 +174,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 119 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Sai: thứ bậc hiệu lực không phụ thuộc thời điểm ban hành.",
+    "Đúng: khoản 1 Điều 119 — văn bản khác phải phù hợp Hiến pháp; vi phạm bị xử lý.",
+    "Sai: Hiến pháp không sửa theo nghị định.",
+    "Sai: văn bản trái Hiến pháp không được áp dụng."
+   ]
   },
   {
    "type": "truefalse",

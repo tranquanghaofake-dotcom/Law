@@ -74,7 +74,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 19 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 19 — bảo vệ sự toàn vẹn của tác phẩm là quyền nhân thân.",
+    "Sai: sao chép là quyền tài sản (Điều 20).",
+    "Sai: phân phối bản sao là quyền tài sản (Điều 20).",
+    "Sai: cho thuê là quyền tài sản (Điều 20)."
+   ]
   },
   {
    "type": "mcq",
@@ -91,7 +97,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 45 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 45 — chỉ quyền công bố tác phẩm được chuyển nhượng.",
+    "Sai: quyền đứng tên không được chuyển nhượng.",
+    "Sai: quyền bảo vệ sự toàn vẹn không được chuyển nhượng.",
+    "Sai: quyền công bố là ngoại lệ được chuyển nhượng."
+   ]
   },
   {
    "type": "pair",

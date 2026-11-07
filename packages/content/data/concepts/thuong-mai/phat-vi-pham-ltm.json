@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 301 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 301 — không quá 8% giá trị phần nghĩa vụ hợp đồng bị vi phạm (trừ dịch vụ giám định, Điều 266).",
+    "Sai: tính trên phần nghĩa vụ bị vi phạm, không phải toàn bộ hợp đồng.",
+    "Sai: mức trần là 8%.",
+    "Sai: Luật Thương mại có giới hạn 8%."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 300 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 300 — phạt vi phạm chỉ áp dụng khi hợp đồng có thỏa thuận, trừ trường hợp miễn trách nhiệm.",
+    "Sai: không có thỏa thuận thì không phạt.",
+    "Sai: phạt dựa trên thỏa thuận, không do Tòa án tự đặt ra.",
+    "Sai: phạt không cần thiệt hại; thiệt hại là điều kiện của bồi thường."
+   ]
   },
   {
    "type": "pair",

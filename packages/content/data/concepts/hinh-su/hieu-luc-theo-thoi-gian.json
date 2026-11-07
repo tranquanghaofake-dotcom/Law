@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 7 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 7 — điều luật có lợi cho người phạm tội được áp dụng hồi tố.",
+    "Sai: điều luật có lợi được hồi tố.",
+    "Sai: không phụ thuộc đề nghị của Viện kiểm sát.",
+    "Sai: không phụ thuộc việc đã khởi tố."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 7 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 7 — điều luật quy định tội phạm mới không áp dụng với hành vi trước khi có hiệu lực.",
+    "Sai: luật bất lợi không hồi tố.",
+    "Sai: hậu quả không làm luật bất lợi hồi tố.",
+    "Sai: thời hiệu không làm luật bất lợi hồi tố."
+   ]
   },
   {
    "type": "pair",

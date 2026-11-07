@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 158 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: Điều 158 — quyền chiếm hữu, quyền sử dụng, quyền định đoạt.",
+    "Sai: quản lý, thu lợi không phải ba quyền năng của Điều 158.",
+    "Sai: cho thuê, thế chấp là cách thực hiện quyền định đoạt hoặc sử dụng.",
+    "Sai: hưởng dụng là quyền khác đối với tài sản."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 158, Điều 192 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: bán tài sản là chuyển giao quyền sở hữu — thực hiện quyền định đoạt (Điều 192).",
+    "Sai: chiếm hữu là nắm giữ, chi phối.",
+    "Sai: sử dụng là khai thác công dụng, hưởng hoa lợi.",
+    "Sai: hưởng dụng là quyền của người khác đối với tài sản của chủ sở hữu."
+   ]
   },
   {
    "type": "pair",

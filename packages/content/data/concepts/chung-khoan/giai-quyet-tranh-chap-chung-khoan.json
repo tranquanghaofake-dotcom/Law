@@ -73,7 +73,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 133 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 133 không cho Ủy ban ra phán quyết dân sự.",
+    "Sai: thương lượng được liệt kê.",
+    "Sai: hòa giải được liệt kê.",
+    "Sai: Trọng tài được liệt kê."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 133 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 133 — theo thỏa thuận, Bộ luật Dân sự và quy định liên quan.",
+    "Sai: Ủy ban không quyết định bồi thường dân sự.",
+    "Sai: quy chế Sở giao dịch không phải căn cứ bồi thường.",
+    "Sai: không chỉ Điều lệ công ty."
+   ]
   },
   {
    "type": "pair",

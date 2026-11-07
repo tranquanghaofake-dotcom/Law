@@ -76,7 +76,13 @@
     "Diện tích lãnh thổ và số lượng dân cư của quốc gia tại thời điểm bầu cử"
    ],
    "answer": 0,
-   "explain": "Bài 6."
+   "explain": "Bài 6.",
+   "why": [
+    "Đúng: tiêu chí là cách hình thành quyền lực tối cao: thừa kế (quân chủ) hay bầu cử có nhiệm kỳ (cộng hòa).",
+    "Sai: phân chia quyền lực là tiêu chí phân biệt các dạng cộng hòa, không phải quân chủ với cộng hòa.",
+    "Sai: số đảng phái thuộc chế độ chính trị.",
+    "Sai: diện tích, dân số không phải tiêu chí."
+   ]
   },
   {
    "type": "mcq",
@@ -89,7 +95,13 @@
     "Cộng hòa quý tộc"
    ],
    "answer": 0,
-   "explain": "Bài 6."
+   "explain": "Bài 6.",
+   "why": [
+    "Đúng: cộng hòa đại nghị — chính phủ do nghị viện thành lập và chịu trách nhiệm trước nghị viện.",
+    "Sai: cộng hòa tổng thống: chính phủ chịu trách nhiệm trước tổng thống.",
+    "Sai: quân chủ tuyệt đối không có nghị viện thành lập chính phủ.",
+    "Sai: cộng hòa quý tộc là chính thể cổ đại, quyền bầu thuộc tầng lớp quý tộc."
+   ]
   },
   {
    "type": "pair",

@@ -76,7 +76,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 8 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 8 Bộ luật Hình sự — người có năng lực trách nhiệm hình sự hoặc pháp nhân thương mại.",
+    "Sai: năng lực hành vi dân sự, tài sản không phải tiêu chí.",
+    "Sai: không phải mọi tổ chức kinh tế, chỉ pháp nhân thương mại.",
+    "Sai: không giới hạn công dân Việt Nam từ đủ 18 tuổi."
+   ]
   },
   {
    "type": "mcq",
@@ -93,7 +99,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 8 Bộ luật Hình sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 8 — tính nguy hiểm không đáng kể thì không phải tội phạm, xử lý bằng biện pháp khác.",
+    "Sai: không phải tội phạm.",
+    "Sai: không phải tội phạm.",
+    "Sai: luật quy định rõ, không do Tòa án tùy ý."
+   ]
   },
   {
    "type": "pair",

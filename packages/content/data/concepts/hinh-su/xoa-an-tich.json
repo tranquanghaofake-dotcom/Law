@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 70 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 2 Điều 70 — phạt tù đến 05 năm thì 02 năm sau khi chấp hành xong.",
+    "Sai: 01 năm áp dụng cho hình phạt nhẹ hơn tù hoặc án treo.",
+    "Sai: 03 năm áp dụng cho tù trên 05 đến 15 năm.",
+    "Sai: 05 năm áp dụng cho tù trên 15 năm."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 70 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 2 Điều 70 — án treo: 01 năm kể từ khi hết thời gian thử thách.",
+    "Sai: 02 năm là mốc của tù đến 05 năm.",
+    "Sai: 03 năm là mốc của tù trên 05 đến 15 năm.",
+    "Sai: phải thêm 01 năm sau khi hết thời gian thử thách."
+   ]
   },
   {
    "type": "pair",

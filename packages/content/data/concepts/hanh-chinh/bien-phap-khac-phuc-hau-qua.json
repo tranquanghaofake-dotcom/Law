@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 28 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 28 Luật Xử lý vi phạm hành chính — buộc khôi phục lại tình trạng ban đầu.",
+    "Sai: cảnh cáo là hình thức xử phạt (Điều 21).",
+    "Sai: phạt tiền là hình thức xử phạt.",
+    "Sai: trục xuất là hình thức xử phạt."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 28 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 1 Điều 28 — buộc phá dỡ công trình xây dựng không phép là biện pháp khắc phục hậu quả.",
+    "Sai: biện pháp này do người có thẩm quyền xử phạt áp dụng, không phải Tòa án.",
+    "Sai: biện pháp xử lý hành chính là giáo dục tại xã, trường giáo dưỡng, cơ sở giáo dục bắt buộc, cai nghiện bắt buộc.",
+    "Sai: biện pháp ngăn chặn là tạm giữ người, tang vật…, không phải buộc phá dỡ."
+   ]
   },
   {
    "type": "pair",

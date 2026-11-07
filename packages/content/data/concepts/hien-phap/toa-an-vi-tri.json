@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 102 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 102 — Tòa án thực hiện quyền tư pháp.",
+    "Sai: hành pháp thuộc Chính phủ.",
+    "Sai: lập pháp thuộc Quốc hội.",
+    "Sai: công tố thuộc Viện kiểm sát (Điều 107)."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 102 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 102 — bảo vệ công lý.",
+    "Sai: bảo vệ pháp luật là nhiệm vụ của Viện kiểm sát.",
+    "Sai: công tố là của Viện kiểm sát.",
+    "Sai: quản lý hành chính không phải nhiệm vụ của Tòa án."
+   ]
   },
   {
    "type": "pair",

@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 53 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 53 — không sớm hơn 45 ngày kể từ ngày thông qua hoặc ký ban hành.",
+    "Sai: 10 ngày là mốc của luật cũ với một số văn bản địa phương, không áp dụng ở đây.",
+    "Sai: có hiệu lực ngay chỉ trong trường hợp rút gọn, đặc biệt.",
+    "Sai: không có mốc 1 năm."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 53 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: đoạn 2 khoản 1 Điều 53 — có thể có hiệu lực từ ngày thông qua hoặc ký ban hành, đồng thời phải đăng tải ngay.",
+    "Sai: thủ tục rút gọn cho phép có hiệu lực sớm hơn 45 ngày.",
+    "Sai: không có thủ tục chờ thêm 15 ngày.",
+    "Sai: đăng Công báo điện tử, không bắt buộc báo in."
+   ]
   },
   {
    "type": "pair",

@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 274 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: Điều 274 — không được thực hiện công việc nhất định.",
+    "Sai: chuyển giao vật là dạng nghĩa vụ khác.",
+    "Sai: trả tiền là dạng nghĩa vụ khác.",
+    "Sai: chuyển giao quyền là dạng nghĩa vụ khác."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 274 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: Điều 274 — bên có quyền là chủ thể được hưởng lợi từ việc thực hiện nghĩa vụ.",
+    "Sai: người đại diện không phải bên có quyền.",
+    "Sai: bên phải chuyển giao vật là bên có nghĩa vụ.",
+    "Sai: cơ quan nhà nước không phải bên của quan hệ nghĩa vụ dân sự."
+   ]
   },
   {
    "type": "pair",

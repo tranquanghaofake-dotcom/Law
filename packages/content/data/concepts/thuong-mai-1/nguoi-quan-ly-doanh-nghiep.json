@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 24 Điều 4 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 24 Điều 4 — thành viên Hội đồng quản trị là người quản lý doanh nghiệp.",
+    "Sai: cổ đông nhỏ không phải người quản lý.",
+    "Sai: nhân viên văn phòng không phải người quản lý.",
+    "Sai: kiểm toán viên độc lập không phải người quản lý."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 24 Điều 4 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 24 Điều 4 — cá nhân giữ chức danh quản lý khác theo Điều lệ công ty.",
+    "Sai: không phải mọi người lao động.",
+    "Sai: khách hàng không phải người quản lý.",
+    "Sai: ngân hàng không phải người quản lý."
+   ]
   },
   {
    "type": "pair",

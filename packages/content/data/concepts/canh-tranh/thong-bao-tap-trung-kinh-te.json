@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 33 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 33 — nộp hồ sơ thông báo trước khi tiến hành tập trung kinh tế.",
+    "Sai: thông báo sau khi hoàn tất là vi phạm nghĩa vụ thông báo trước.",
+    "Sai: nghĩa vụ phát sinh khi thuộc ngưỡng, không chờ yêu cầu của Ủy ban.",
+    "Sai: thuộc ngưỡng thì bắt buộc thông báo, không tùy chọn."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 36 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 36 — hết 30 ngày mà Ủy ban chưa ra thông báo thì việc tập trung kinh tế được thực hiện.",
+    "Sai: Ủy ban không được ra thông báo phải thẩm định chính thức sau khi hết hạn (khoản 3 Điều 36).",
+    "Sai: im lặng của Ủy ban được hiểu là cho thực hiện, không phải cấm.",
+    "Sai: luật không đòi nộp lại hồ sơ."
+   ]
   },
   {
    "type": "pair",

@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 171 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 171 — đất ở sử dụng ổn định lâu dài.",
+    "Sai: 50 năm là thời hạn của đất nông nghiệp giao cho cá nhân hoặc nhiều dự án (Điều 172).",
+    "Sai: 70 năm là thời hạn tối đa của một số dự án đặc biệt, không phải đất ở.",
+    "Sai: luật không có thời hạn 20 năm cho đất ở."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 172 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 172 — hết thời hạn được tiếp tục sử dụng 50 năm mà không phải làm thủ tục gia hạn.",
+    "Sai: hết thời hạn không bị thu hồi trong trường hợp này.",
+    "Sai: không phải làm thủ tục gia hạn, không nộp tiền sử dụng đất.",
+    "Sai: không phải chuyển sang thuê đất."
+   ]
   },
   {
    "type": "pair",

@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 114 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 114 — công ty cổ phần phải có cổ phần phổ thông.",
+    "Sai: cổ phần ưu đãi cổ tức là tùy chọn.",
+    "Sai: cổ phần ưu đãi biểu quyết là tùy chọn.",
+    "Sai: cổ phần ưu đãi hoàn lại là tùy chọn."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 114 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 114 không có \"cổ phần ưu đãi miễn thuế\".",
+    "Sai: ưu đãi cổ tức có trong khoản 2.",
+    "Sai: ưu đãi hoàn lại có trong khoản 2.",
+    "Sai: ưu đãi biểu quyết có trong khoản 2."
+   ]
   },
   {
    "type": "pair",

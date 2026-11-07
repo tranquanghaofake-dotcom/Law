@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 19 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: Điều 19 Bộ luật Dân sự — khả năng bằng hành vi của mình xác lập, thực hiện quyền, nghĩa vụ dân sự.",
+    "Sai: đây là năng lực pháp luật dân sự (Điều 16).",
+    "Sai: thừa kế là quyền, không phải định nghĩa năng lực hành vi.",
+    "Sai: nơi cư trú không liên quan năng lực hành vi."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 19 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: theo lý luận, năng lực hành vi phụ thuộc độ tuổi và khả năng nhận thức, điều khiển hành vi.",
+    "Sai: tài sản không quyết định năng lực hành vi.",
+    "Sai: học vấn không quyết định năng lực hành vi.",
+    "Sai: nơi cư trú không quyết định năng lực hành vi."
+   ]
   },
   {
    "type": "pair",

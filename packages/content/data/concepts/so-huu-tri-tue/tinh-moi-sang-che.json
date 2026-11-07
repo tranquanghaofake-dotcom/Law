@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 60 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 60 — bị bộc lộ công khai ở trong nước hoặc ở nước ngoài trước ngày nộp đơn thì mất tính mới.",
+    "Sai: tính mới xét trên phạm vi thế giới.",
+    "Sai: mất tính mới cả ở Việt Nam.",
+    "Sai: bộc lộ công khai làm mất tính mới."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 60 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 60 — chỉ một số người có hạn được biết và có nghĩa vụ giữ bí mật.",
+    "Sai: đăng báo là bộc lộ công khai, dù ít người đọc.",
+    "Sai: trưng bày công khai là bộc lộ (trừ trường hợp ân hạn luật định).",
+    "Sai: bán sản phẩm ra thị trường là bộc lộ công khai."
+   ]
   },
   {
    "type": "pair",

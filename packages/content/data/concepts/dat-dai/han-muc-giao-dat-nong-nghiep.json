@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 176 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 176 — không quá 03 ha ở Đông Nam Bộ và đồng bằng sông Cửu Long.",
+    "Sai: 02 ha là hạn mức ở các tỉnh, thành phố khác.",
+    "Sai: 05 ha không phải hạn mức của điểm a khoản 1 Điều 176.",
+    "Sai: 10 ha là hạn mức đất trồng cây lâu năm ở đồng bằng (khoản 2 Điều 176)."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 176 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 1 Điều 176 — không quá 02 ha ở các tỉnh không thuộc Đông Nam Bộ, đồng bằng sông Cửu Long.",
+    "Sai: 03 ha áp dụng cho Đông Nam Bộ và đồng bằng sông Cửu Long.",
+    "Sai: 30 ha là hạn mức đất trồng cây lâu năm ở trung du, miền núi (khoản 2 Điều 176), không phải nuôi trồng thủy sản.",
+    "Sai: hạn mức giao đất luôn có giới hạn."
+   ]
   },
   {
    "type": "pair",

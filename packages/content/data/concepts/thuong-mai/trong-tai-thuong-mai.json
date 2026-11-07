@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 5 Luật Trọng tài thương mại 2010 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 5 Luật Trọng tài thương mại — tranh chấp được giải quyết bằng trọng tài nếu các bên có thỏa thuận trọng tài.",
+    "Sai: không có ngưỡng giá trị.",
+    "Sai: loại doanh nghiệp không phải điều kiện.",
+    "Sai: không cần Tòa án cho phép."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 6 Luật Trọng tài thương mại 2010 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 6 — Tòa án phải từ chối thụ lý, trừ khi thỏa thuận trọng tài vô hiệu hoặc không thể thực hiện được.",
+    "Sai: có thỏa thuận trọng tài thì Tòa án không thụ lý.",
+    "Sai: Tòa án từ chối thụ lý, không chuyển hồ sơ.",
+    "Sai: Tòa án không hòa giải rồi xét xử."
+   ]
   },
   {
    "type": "pair",

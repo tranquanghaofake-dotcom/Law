@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 585 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 585 — không có lỗi hoặc lỗi vô ý và thiệt hại quá lớn so với khả năng kinh tế.",
+    "Sai: lỗi cố ý không được giảm mức bồi thường.",
+    "Sai: hoàn cảnh của bị hại không phải căn cứ giảm.",
+    "Sai: có đủ khả năng kinh tế thì không có căn cứ giảm."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 585 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 585 — thiệt hại thực tế được bồi thường toàn bộ và kịp thời.",
+    "Sai: không có nguyên tắc bồi thường một nửa.",
+    "Sai: khả năng kinh tế chỉ là căn cứ xét giảm, không phải nguyên tắc chung.",
+    "Sai: bồi thường dân sự không phụ thuộc xử lý hình sự."
+   ]
   },
   {
    "type": "pair",

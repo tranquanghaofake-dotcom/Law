@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 86 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 1 Điều 86 — tổ chức, cá nhân đầu tư kinh phí, phương tiện vật chất có quyền đăng ký, nếu không có thỏa thuận khác.",
+    "Sai: người lao động chỉ có quyền đăng ký khi tự đầu tư (điểm a).",
+    "Sai: Cục Sở hữu trí tuệ không chỉ định người nộp đơn.",
+    "Sai: đồng đứng tên chỉ khi có thỏa thuận hoặc cùng đầu tư."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 86 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 86 — tác giả tạo ra bằng công sức và chi phí của mình.",
+    "Sai: khi được thuê làm, bên đầu tư có quyền đăng ký (điểm b).",
+    "Sai: Cục Sở hữu trí tuệ không chỉ định người nộp đơn.",
+    "Sai: quốc tịch không quyết định quyền đăng ký."
+   ]
   },
   {
    "type": "pair",

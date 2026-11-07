@@ -72,7 +72,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 105 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 105 — tài sản là vật, tiền, giấy tờ có giá và quyền tài sản.",
+    "Sai: quyền nhân thân không phải tài sản.",
+    "Sai: sức lao động và quyền nhân thân không phải tài sản theo Điều 105.",
+    "Sai: bất động sản, động sản là cách phân loại (khoản 2 Điều 105), không phải danh sách loại tài sản."
+   ]
   },
   {
    "type": "mcq",
@@ -89,7 +95,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 115 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: Điều 115 — quyền tài sản bao gồm quyền sử dụng đất.",
+    "Sai: quyền sử dụng đất không phải vật.",
+    "Sai: quyền sử dụng đất không phải tiền.",
+    "Sai: quyền sử dụng đất không phải giấy tờ có giá."
+   ]
   },
   {
    "type": "pair",

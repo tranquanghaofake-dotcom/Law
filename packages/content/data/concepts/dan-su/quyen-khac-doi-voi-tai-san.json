@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 159 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 159 — quyền đối với bất động sản liền kề, quyền hưởng dụng, quyền bề mặt.",
+    "Sai: chiếm hữu, sử dụng, định đoạt là quyền năng của quyền sở hữu.",
+    "Sai: cầm cố, thế chấp, đặt cọc là biện pháp bảo đảm nghĩa vụ.",
+    "Sai: thừa kế, tặng cho, chuyển nhượng là cách chuyển quyền, không phải quyền khác."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 160 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 160 — quyền khác vẫn có hiệu lực khi quyền sở hữu chuyển giao, trừ trường hợp luật quy định khác.",
+    "Sai: quyền khác không tự chấm dứt khi chủ sở hữu bán tài sản.",
+    "Sai: luật không có thời hạn một năm.",
+    "Sai: luật không đòi đăng ký lại."
+   ]
   },
   {
    "type": "pair",

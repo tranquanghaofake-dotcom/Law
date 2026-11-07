@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 21 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 21 — cảnh cáo và phạt tiền chỉ được quy định là hình thức xử phạt chính.",
+    "Sai: tịch thu tang vật có thể là hình thức bổ sung.",
+    "Sai: trục xuất có thể là hình thức chính hoặc bổ sung.",
+    "Sai: tước giấy phép có thể là hình thức chính hoặc bổ sung."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 21 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 21 — mỗi vi phạm chỉ bị áp dụng một hình thức xử phạt chính.",
+    "Sai: chỉ một hình thức chính.",
+    "Sai: chỉ một hình thức chính.",
+    "Sai: có giới hạn."
+   ]
   },
   {
    "type": "pair",

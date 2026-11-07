@@ -75,7 +75,13 @@
     "Do thượng đế sắp đặt ngay từ khi con người xuất hiện trên trái đất"
    ],
    "answer": 0,
-   "explain": "Nhà nước là sản phẩm của xã hội có giai cấp, gắn với chế độ tư hữu."
+   "explain": "Nhà nước là sản phẩm của xã hội có giai cấp, gắn với chế độ tư hữu.",
+   "why": [
+    "Đúng: theo học thuyết Mác – Lênin, nhà nước ra đời khi có tư hữu và xã hội phân hóa thành giai cấp đối kháng.",
+    "Sai: xã hội có tổ chức (thị tộc) chưa có nhà nước.",
+    "Sai: đây là thuyết khế ước xã hội.",
+    "Sai: đây là thuyết thần học."
+   ]
   },
   {
    "type": "mcq",
@@ -88,7 +94,13 @@
     "Thuyết bạo lực quân sự"
    ],
    "answer": 0,
-   "explain": "Rousseau, Locke, Hobbes: nhà nước là sản phẩm của khế ước xã hội."
+   "explain": "Rousseau, Locke, Hobbes: nhà nước là sản phẩm của khế ước xã hội.",
+   "why": [
+    "Đúng: thuyết khế ước xã hội (Hobbes, Locke, Rousseau) — nhà nước ra đời từ thỏa thuận giữa những con người tự do.",
+    "Sai: thuyết thần học cho rằng nhà nước do thượng đế sắp đặt.",
+    "Sai: thuyết gia trưởng coi nhà nước là sự phát triển của gia đình.",
+    "Sai: thuyết bạo lực cho rằng nhà nước ra đời từ chiến tranh, chinh phục."
+   ]
   },
   {
    "type": "pair",

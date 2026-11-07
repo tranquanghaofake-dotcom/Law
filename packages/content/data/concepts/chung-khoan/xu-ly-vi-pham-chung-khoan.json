@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 132 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 132 — xử phạt hành chính hoặc truy cứu hình sự; gây thiệt hại thì bồi thường.",
+    "Sai: còn có trách nhiệm hình sự, bồi thường.",
+    "Sai: bồi thường không loại trừ xử lý.",
+    "Sai: luật không quy định như vậy."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 6 Điều 132 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 6 Điều 132 — Chủ tịch Ủy ban, Chánh Thanh tra, Trưởng đoàn thanh tra chuyên ngành.",
+    "Sai: Sở giao dịch không có thẩm quyền xử phạt.",
+    "Sai: hiệp hội không có thẩm quyền.",
+    "Sai: Tòa án không xử phạt hành chính."
+   ]
   },
   {
    "type": "pair",

@@ -86,7 +86,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 4 Luật Hợp tác xã 2023 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 7 Điều 4 Luật Hợp tác xã 2023 — ít nhất 05 thành viên chính thức.",
+    "Sai: 02 thấp hơn mức tối thiểu.",
+    "Sai: 03 thấp hơn mức tối thiểu.",
+    "Sai: 07 không phải mức tối thiểu."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 4 Luật Hợp tác xã 2023 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 21 Điều 4 — tổ hợp tác không có tư cách pháp nhân.",
+    "Sai: hợp tác xã có tư cách pháp nhân.",
+    "Sai: liên hiệp hợp tác xã có tư cách pháp nhân.",
+    "Sai: công ty cổ phần có tư cách pháp nhân."
+   ]
   },
   {
    "type": "pair",

@@ -75,7 +75,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 38 Điều 4 Luật Các tổ chức tín dụng 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: chi nhánh ngân hàng nước ngoài không có tư cách pháp nhân, không nằm trong khoản 38 Điều 4.",
+    "Sai: tổ chức tài chính vi mô là tổ chức tín dụng.",
+    "Sai: quỹ tín dụng nhân dân là tổ chức tín dụng.",
+    "Sai: tổ chức tín dụng phi ngân hàng là tổ chức tín dụng."
+   ]
   },
   {
    "type": "mcq",
@@ -92,7 +98,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 38 Điều 4 Luật Các tổ chức tín dụng 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 38 Điều 4 — tổ chức tín dụng là pháp nhân.",
+    "Sai: tổ chức tín dụng không phải cơ quan nhà nước.",
+    "Sai: tổ chức tín dụng không phải đơn vị sự nghiệp công lập.",
+    "Sai: tổ chức tín dụng có tư cách pháp nhân."
+   ]
   },
   {
    "type": "pair",

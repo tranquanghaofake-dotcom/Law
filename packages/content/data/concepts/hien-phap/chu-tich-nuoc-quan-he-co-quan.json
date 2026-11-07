@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 90 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: Điều 90 — Chủ tịch nước có quyền tham dự phiên họp của Ủy ban thường vụ Quốc hội và Chính phủ.",
+    "Sai: Tòa án không có phiên họp mà Chủ tịch nước tham dự theo Điều 90.",
+    "Sai: không tham dự Hội đồng nhân dân tỉnh theo Điều 90.",
+    "Sai: Điều 90 không nêu Tòa án, Viện kiểm sát."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 94 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: Điều 94 — Chính phủ chịu trách nhiệm trước Quốc hội.",
+    "Sai: Chính phủ báo cáo công tác với Chủ tịch nước nhưng chịu trách nhiệm trước Quốc hội.",
+    "Sai: báo cáo với Ủy ban thường vụ nhưng chịu trách nhiệm trước Quốc hội.",
+    "Sai: không chịu trách nhiệm trước Mặt trận Tổ quốc."
+   ]
   },
   {
    "type": "pair",

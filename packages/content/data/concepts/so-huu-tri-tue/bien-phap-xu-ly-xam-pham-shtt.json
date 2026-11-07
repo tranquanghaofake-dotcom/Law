@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 199 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 199 — tùy tính chất, mức độ, áp dụng biện pháp dân sự, hành chính hoặc hình sự.",
+    "Sai: thiếu biện pháp hình sự; và biện pháp hành chính không do Tòa án áp dụng.",
+    "Sai: biện pháp dân sự là biện pháp chính, không bị loại trừ.",
+    "Sai: hòa giải, kỷ luật nội bộ không phải ba nhóm biện pháp của Điều 199."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 198 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 1 Điều 198 — chủ thể quyền tự bảo vệ bằng cách yêu cầu chấm dứt, gỡ bỏ nội dung xâm phạm.",
+    "Sai: đây là quyền tự bảo vệ của chủ thể quyền, không phải xử phạt hành chính.",
+    "Sai: biện pháp hình sự do cơ quan tố tụng áp dụng, không phải yêu cầu gỡ bỏ của chủ thể quyền.",
+    "Sai: kiểm soát hải quan áp dụng với hàng xuất nhập khẩu, không phải nội dung trên mạng."
+   ]
   },
   {
    "type": "pair",

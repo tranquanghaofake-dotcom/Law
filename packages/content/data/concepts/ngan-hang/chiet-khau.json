@@ -89,7 +89,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 6 Điều 4 Luật Các tổ chức tín dụng 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 6 Điều 4 — chiết khấu là mua có kỳ hạn hoặc có bảo lưu quyền truy đòi công cụ chuyển nhượng, giấy tờ có giá khác.",
+    "Sai: khoản phải thu từ mua bán hàng là đối tượng bao thanh toán.",
+    "Sai: quyền sử dụng đất không phải đối tượng chiết khấu.",
+    "Sai: cho thuê máy móc là cho thuê tài chính."
+   ]
   },
   {
    "type": "mcq",
@@ -106,7 +112,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 6 Điều 4 Luật Các tổ chức tín dụng 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 6 Điều 4 — chiết khấu thực hiện trước khi đến hạn thanh toán.",
+    "Sai: sau hạn thì đòi nợ, không còn chiết khấu.",
+    "Sai: phá sản của bên phát hành không phải thời điểm chiết khấu.",
+    "Sai: chiết khấu chỉ trước hạn."
+   ]
   },
   {
    "type": "pair",

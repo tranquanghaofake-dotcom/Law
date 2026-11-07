@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 579 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 579 — không tìm được chủ thì giao cho cơ quan có thẩm quyền.",
+    "Sai: không được giữ làm của mình.",
+    "Sai: không được bán giữ tiền.",
+    "Sai: không được tiêu hủy."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 579 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 579 — hoàn trả khoản lợi cho người bị thiệt hại.",
+    "Sai: xin lỗi không thay nghĩa vụ hoàn trả.",
+    "Sai: đây là nghĩa vụ dân sự, không phải nộp phạt.",
+    "Sai: không có thỏa thuận; nghĩa vụ phát sinh theo luật."
+   ]
   },
   {
    "type": "pair",

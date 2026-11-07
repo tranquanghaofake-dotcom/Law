@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 100 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: Điều 100 — Chính phủ, Thủ tướng, Bộ trưởng, Thủ trưởng cơ quan ngang bộ.",
+    "Sai: Chủ tịch nước không thuộc Điều 100.",
+    "Sai: Phó Thủ tướng, Tổng Thanh tra không nêu riêng ở Điều 100.",
+    "Sai: Thứ trưởng không có quyền ban hành."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 10 Điều 70 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 10 Điều 70 — Quốc hội bãi bỏ văn bản của Chính phủ trái Hiến pháp.",
+    "Sai: Tòa án không bãi bỏ văn bản của Chính phủ.",
+    "Sai: Bộ Tư pháp không có thẩm quyền.",
+    "Sai: Mặt trận Tổ quốc không có thẩm quyền."
+   ]
   },
   {
    "type": "pair",

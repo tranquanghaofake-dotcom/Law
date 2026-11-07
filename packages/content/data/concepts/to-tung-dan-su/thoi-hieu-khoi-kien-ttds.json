@@ -86,7 +86,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 184 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 184 — thời hiệu khởi kiện thực hiện theo Bộ luật Dân sự.",
+    "Sai: Bộ luật Tố tụng dân sự dẫn chiếu sang Bộ luật Dân sự, không tự quy định thời hiệu.",
+    "Sai: Luật Tổ chức Tòa án nhân dân không quy định thời hiệu khởi kiện.",
+    "Sai: thời hiệu không do nghị quyết của Quốc hội quy định."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 184 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 184 — có quyền từ chối, trừ trường hợp nhằm trốn tránh nghĩa vụ.",
+    "Sai: luật cho phép từ chối áp dụng thời hiệu.",
+    "Sai: từ chối là quyền của người được hưởng lợi, không cần Tòa án cho phép.",
+    "Sai: quyền từ chối áp dụng chung, không riêng vụ án lao động."
+   ]
   },
   {
    "type": "pair",

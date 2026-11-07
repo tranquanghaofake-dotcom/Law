@@ -90,7 +90,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 3 Luật Bảo hiểm xã hội 2024 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 3 Luật Bảo hiểm xã hội 2024 — công dân tự nguyện tham gia, được chọn mức đóng, phương thức đóng.",
+    "Sai: đóng bắt buộc theo hợp đồng lao động là đặc điểm của bảo hiểm xã hội bắt buộc (khoản 3 Điều 3).",
+    "Sai: ngân sách chỉ hỗ trợ một phần mức đóng cho một số nhóm, không chi trả toàn bộ.",
+    "Sai: bảo hiểm xã hội tự nguyện dành cho công dân không thuộc diện bắt buộc, không riêng công chức."
+   ]
   },
   {
    "type": "mcq",
@@ -107,7 +113,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 2 Luật Bảo hiểm xã hội 2024 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 2 Luật Bảo hiểm xã hội 2024 — hợp đồng có thời hạn từ đủ 01 tháng trở lên.",
+    "Sai: 03 tháng không phải mốc luật định; luật hiện hành tính từ đủ 01 tháng.",
+    "Sai: 12 tháng không phải mốc luật định.",
+    "Sai: hợp đồng dưới 01 tháng không thuộc điểm a khoản 1 Điều 2."
+   ]
   },
   {
    "type": "pair",

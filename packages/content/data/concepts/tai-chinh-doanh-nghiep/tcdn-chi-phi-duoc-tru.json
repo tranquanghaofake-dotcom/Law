@@ -73,7 +73,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 9 Luật Thuế thu nhập doanh nghiệp 2025 (67/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: điểm c khoản 1 Điều 9 Luật Thuế thu nhập doanh nghiệp 2025 — có hóa đơn, chứng từ; thanh toán không dùng tiền mặt theo quy định.",
+    "Sai: chữ ký nội bộ không thay được hóa đơn, chứng từ hợp pháp.",
+    "Sai: khoản chi được trừ phải liên quan đến hoạt động sản xuất, kinh doanh (điểm a khoản 1 Điều 9).",
+    "Sai: luật không có ngưỡng 50 triệu đồng miễn chứng từ."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 9 Luật Thuế thu nhập doanh nghiệp 2025 (67/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 9 — chi nghiên cứu và phát triển có thể có chi phí bổ sung được trừ theo tỷ lệ phần trăm trên chi phí thực tế.",
+    "Sai: chi nghiên cứu và phát triển được trừ ngay, còn được trừ thêm.",
+    "Sai: khoản chi thực tế có đủ chứng từ thì được trừ.",
+    "Sai: đây là ưu đãi về chi phí được trừ, không phải hoàn thuế."
+   ]
   },
   {
    "type": "pair",

@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 68 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 68 — nguyên đơn, bị đơn, người có quyền lợi, nghĩa vụ liên quan.",
+    "Sai: người làm chứng, người giám định là người tham gia tố tụng khác, không phải đương sự.",
+    "Sai: Thẩm phán, Hội thẩm, Thư ký, Kiểm sát viên là người tiến hành tố tụng.",
+    "Sai: người yêu cầu thuộc việc dân sự; người làm chứng không phải đương sự."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 68 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 68 — trong việc dân sự, đương sự gồm người yêu cầu và người có quyền lợi, nghĩa vụ liên quan.",
+    "Sai: nguyên đơn, bị đơn là đương sự trong vụ án (có tranh chấp), không phải việc dân sự.",
+    "Sai: tố tụng dân sự không giải quyết vụ án hình sự.",
+    "Sai: Viện kiểm sát, Tòa án là cơ quan tiến hành tố tụng, không phải đương sự."
+   ]
   },
   {
    "type": "pair",

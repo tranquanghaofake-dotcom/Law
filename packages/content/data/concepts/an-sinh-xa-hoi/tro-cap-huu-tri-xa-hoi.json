@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 21 Luật Bảo hiểm xã hội 2024 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 21 Luật Bảo hiểm xã hội 2024 — từ đủ 75 tuổi trở lên.",
+    "Sai: 60 tuổi không phải mốc của Điều 21; mốc thấp hơn chỉ là 70 tuổi cho người thuộc hộ nghèo, cận nghèo (khoản 2 Điều 21).",
+    "Sai: 80 tuổi là mốc của chính sách trợ cấp người cao tuổi trước đây; luật 2024 hạ xuống 75.",
+    "Sai: 70 tuổi chỉ áp dụng cho người thuộc hộ nghèo, cận nghèo (khoản 2 Điều 21); câu hỏi đã loại trường hợp hộ nghèo."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 3 Luật Bảo hiểm xã hội 2024 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 3 — trợ cấp hưu trí xã hội do ngân sách nhà nước bảo đảm.",
+    "Sai: quỹ bảo hiểm xã hội chi lương hưu cho người đã đóng; trợ cấp hưu trí xã hội không cần đóng.",
+    "Sai: người sử dụng lao động không chi trả trợ cấp hưu trí xã hội.",
+    "Sai: quỹ bảo hiểm thất nghiệp chỉ chi các chế độ thất nghiệp."
+   ]
   },
   {
    "type": "pair",

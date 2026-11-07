@@ -71,7 +71,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
-   }
+   },
+   "why": [
+    "Đúng: theo bài giảng, ít nhất một bên là chủ thể mang quyền lực nhà nước.",
+    "Sai: các bên không bình đẳng về ý chí.",
+    "Sai: quan hệ hành chính có thể phát sinh theo ý chí đơn phương của chủ thể quản lý.",
+    "Sai: tranh chấp hành chính phần lớn giải quyết bằng thủ tục hành chính."
+   ]
   },
   {
    "type": "mcq",
@@ -88,7 +94,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
-   }
+   },
+   "why": [
+    "Đúng: theo bài giảng, bên vi phạm chịu trách nhiệm trước Nhà nước.",
+    "Sai: không chịu trách nhiệm trước bên kia như quan hệ dân sự.",
+    "Sai: tổ chức xã hội không phải chủ thể nhận trách nhiệm.",
+    "Sai: có trách nhiệm pháp lý."
+   ]
   },
   {
    "type": "pair",

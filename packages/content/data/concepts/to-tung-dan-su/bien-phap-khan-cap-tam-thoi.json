@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 114 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 114 — buộc thực hiện trước một phần nghĩa vụ cấp dưỡng.",
+    "Sai: phạt tiền vắng mặt không có trong danh sách 17 biện pháp ở Điều 114.",
+    "Sai: tạm giam là biện pháp ngăn chặn trong tố tụng hình sự.",
+    "Sai: thu hồi giấy phép kinh doanh là biện pháp hành chính, không phải biện pháp khẩn cấp tạm thời."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 111 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 111 — giải quyết tạm thời yêu cầu cấp bách, bảo vệ chứng cứ, bảo toàn tình trạng hiện có, bảo đảm thi hành án.",
+    "Sai: biện pháp khẩn cấp tạm thời không nhằm xử phạt.",
+    "Sai: biện pháp chỉ tạm thời trong khi giải quyết vụ việc, không thay bản án.",
+    "Sai: áp dụng biện pháp không làm kết thúc vụ án."
+   ]
   },
   {
    "type": "pair",

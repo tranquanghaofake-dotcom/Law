@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 17 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 2 Điều 17 — cán bộ, công chức, viên chức không được thành lập, quản lý doanh nghiệp, trừ ngoại lệ.",
+    "Sai: sinh viên đủ 18 tuổi có quyền thành lập doanh nghiệp.",
+    "Sai: người nước ngoài có quyền thành lập doanh nghiệp tại Việt Nam.",
+    "Sai: doanh nghiệp tư nhân được lập chi nhánh; câu hỏi về chủ thể bị cấm."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 17 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 2 Điều 17 (sửa đổi) — ngoại lệ theo pháp luật về khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia.",
+    "Sai: thương mại điện tử không phải lĩnh vực của ngoại lệ.",
+    "Sai: bất động sản không phải lĩnh vực của ngoại lệ.",
+    "Sai: ngân hàng không phải lĩnh vực của ngoại lệ."
+   ]
   },
   {
    "type": "pair",

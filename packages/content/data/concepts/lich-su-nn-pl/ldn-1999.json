@@ -87,7 +87,13 @@
    "source": {
     "kind": "primary",
     "cite": "Luật Doanh nghiệp 1999, Điều 12"
-   }
+   },
+   "why": [
+    "Đúng: Luật Doanh nghiệp 1999 bỏ xin phép thành lập, chỉ còn đăng ký kinh doanh.",
+    "Sai: Luật 1999 bỏ thủ tục xin phép.",
+    "Sai: bảy cổ đông là quy định cũ của Luật Công ty 1990 với công ty cổ phần.",
+    "Sai: Trọng tài kinh tế không chấp thuận việc thành lập."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "primary",
     "cite": "Luật Doanh nghiệp 1999, Điều 12"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 12 — cơ quan đăng ký kinh doanh không có quyền yêu cầu thêm giấy tờ ngoài hồ sơ luật định.",
+    "Sai: luật cấm yêu cầu tùy ý.",
+    "Sai: Ủy ban nhân dân không mở ra quyền này.",
+    "Sai: quy định áp dụng mọi loại hình."
+   ]
   },
   {
    "type": "pair",

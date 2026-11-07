@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 24 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 24 Điều 4 — đưa chứng khoán đủ điều kiện vào hệ thống cho chứng khoán niêm yết.",
+    "Sai: đây là đăng ký giao dịch (khoản 25).",
+    "Sai: đây là đăng ký chứng khoán (khoản 33).",
+    "Sai: đây là chào bán ra công chúng."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 48 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 48 — cổ phiếu công ty đại chúng.",
+    "Sai: công ty chưa đại chúng không bắt buộc.",
+    "Sai: phần vốn góp không phải chứng khoán niêm yết.",
+    "Sai: trái phiếu riêng lẻ của công ty chưa đại chúng không bắt buộc."
+   ]
   },
   {
    "type": "pair",
@@ -156,7 +168,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 48 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: chưa đủ điều kiện niêm yết thì đăng ký giao dịch (khoản 1 Điều 48).",
+    "Sai: vẫn phải đăng ký giao dịch.",
+    "Sai: không niêm yết khi chưa đủ điều kiện.",
+    "Sai: phải đưa vào hệ thống giao dịch."
+   ]
   },
   {
    "type": "recall",

@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 201 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 201 — công ty bị sáp nhập chấm dứt tồn tại.",
+    "Sai: công ty nhận sáp nhập vẫn tồn tại và kế thừa.",
+    "Sai: chỉ công ty bị sáp nhập chấm dứt; cả hai cùng chấm dứt là hợp nhất.",
+    "Sai: sáp nhập luôn làm công ty bị sáp nhập chấm dứt tồn tại."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 201 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 201 — kế thừa toàn bộ tài sản, quyền, nghĩa vụ và lợi ích hợp pháp.",
+    "Sai: công ty nhận sáp nhập kế thừa cả quyền và nghĩa vụ.",
+    "Sai: kế thừa toàn bộ, không chỉ đất và khoản vay.",
+    "Sai: nghĩa vụ cũng được kế thừa."
+   ]
   },
   {
    "type": "pair",

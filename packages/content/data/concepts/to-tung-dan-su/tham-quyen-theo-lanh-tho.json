@@ -83,7 +83,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 39 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 39 — Tòa án nơi bị đơn cư trú, làm việc hoặc có trụ sở.",
+    "Sai: Tòa án nơi nguyên đơn chỉ có thẩm quyền khi các bên thỏa thuận bằng văn bản (điểm b khoản 1 Điều 39).",
+    "Sai: nơi ký hợp đồng không phải nguyên tắc chung; nơi thực hiện hợp đồng chỉ là lựa chọn của nguyên đơn ở Điều 40.",
+    "Sai: Chánh án Tòa án nhân dân tối cao không chỉ định Tòa án theo từng vụ việc."
+   ]
   },
   {
    "type": "mcq",
@@ -100,7 +106,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 39 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 1 Điều 39 — các đương sự tự thỏa thuận bằng văn bản.",
+    "Sai: thỏa thuận bằng lời nói không đáp ứng hình thức văn bản.",
+    "Sai: luật cho phép thỏa thuận chọn Tòa án nơi nguyên đơn.",
+    "Sai: thỏa thuận qua điện thoại không phải văn bản."
+   ]
   },
   {
    "type": "pair",

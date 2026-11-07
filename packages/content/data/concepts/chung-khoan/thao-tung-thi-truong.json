@@ -74,7 +74,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 49 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 49 Điều 4 — tạo cung, cầu hoặc giá giả tạo.",
+    "Sai: khối lượng lớn tự nó không phải thao túng.",
+    "Sai: đầu tư dài hạn hợp pháp.",
+    "Sai: bán khống hợp pháp không phải thao túng."
+   ]
   },
   {
    "type": "mcq",
@@ -91,7 +97,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 49 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm đ khoản 49 — đưa ý kiến sau khi đã nắm vị thế nhằm ảnh hưởng giá.",
+    "Sai: không nắm giữ, không lợi ích thì không thuộc điểm đ.",
+    "Sai: công bố định kỳ đúng hạn là hợp pháp.",
+    "Sai: một lệnh phục vụ nhu cầu thật không phải thao túng."
+   ]
   },
   {
    "type": "pair",
@@ -152,7 +164,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 6 Điều 12 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 6 Điều 12 cấm cho mượn tài khoản dẫn đến thao túng.",
+    "Sai: không tự giao dịch không loại trừ vi phạm.",
+    "Sai: quyền với tài khoản bị giới hạn bởi khoản 6.",
+    "Sai: nhận tiền không phải điều kiện."
+   ]
   },
   {
    "type": "recall",

@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 5 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 5 Điều 4 — phát hành cùng trái phiếu hoặc cổ phiếu ưu đãi.",
+    "Sai: không đi kèm chứng chỉ quỹ.",
+    "Sai: chứng quyền cho quyền mua cổ phiếu phổ thông, không đi kèm nó.",
+    "Sai: không đi kèm hợp đồng tương lai."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 5 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 5 Điều 4 — quyền mua cổ phiếu phổ thông.",
+    "Sai: không phải cổ phiếu ưu đãi.",
+    "Sai: không phải trái phiếu chuyển đổi.",
+    "Sai: không phải chứng chỉ quỹ."
+   ]
   },
   {
    "type": "pair",

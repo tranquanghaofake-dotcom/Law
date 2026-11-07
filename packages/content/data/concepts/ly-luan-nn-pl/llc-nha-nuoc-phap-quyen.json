@@ -75,7 +75,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 2 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 2 Hiến pháp 2013 — Nhà nước pháp quyền xã hội chủ nghĩa của Nhân dân, do Nhân dân, vì Nhân dân.",
+    "Sai: Điều 2 nói quyền lực thuộc về Nhân dân, không phải một giai cấp duy nhất.",
+    "Sai: Việt Nam là nhà nước đơn nhất.",
+    "Sai: Việt Nam theo chính thể cộng hòa."
+   ]
   },
   {
    "type": "mcq",
@@ -92,7 +98,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 2 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: theo lý luận, trong nhà nước pháp quyền pháp luật giữ vị trí chi phối, ràng buộc cả nhà nước.",
+    "Sai: nhà nước pháp quyền không đứng trên pháp luật.",
+    "Sai: tư pháp độc lập là dấu hiệu nhà nước pháp quyền.",
+    "Sai: quyền lực phải được kiểm soát."
+   ]
   },
   {
    "type": "pair",

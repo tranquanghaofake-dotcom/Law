@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 150 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 150 — làm trung gian cho các bên đàm phán, giao kết hợp đồng.",
+    "Sai: ký thay là đại diện.",
+    "Sai: mua đi bán lại là mua bán hàng hóa.",
+    "Sai: bảo lãnh không phải vai trò của môi giới."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 153 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 153 — quyền hưởng thù lao phát sinh khi các bên được môi giới đã giao kết hợp đồng.",
+    "Sai: bắt đầu tìm đối tác chưa làm phát sinh thù lao.",
+    "Sai: không cần hợp đồng được thực hiện xong.",
+    "Sai: không có thủ tục đăng ký môi giới."
+   ]
   },
   {
    "type": "pair",

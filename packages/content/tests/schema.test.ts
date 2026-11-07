@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { chapterSchema, conceptSchema } from '../src/schema';
+import { chapterSchema, conceptSchema, quizQuestionSchema } from '../src/schema';
 
 const base = {
   id: 'tai-san', subject: 'dan-su', chapter: 'tai-san', term: 'Tài sản',
@@ -31,6 +31,16 @@ describe('conceptSchema', () => {
   });
   it('từ chối ngày checked sai định dạng', () => {
     expect(conceptSchema.safeParse({ ...base, checked: '31/10/2026' }).success).toBe(false);
+  });
+  it('why (tuỳ chọn): đúng 4 lời giải thích, mỗi phương án một câu', () => {
+    const ok = { ...base, items: [{ ...base.items[0], why: ['Đúng vì A.', 'B sai vì…', 'C sai vì…', 'D sai vì…'] }, base.items[1], base.items[2]] };
+    expect(conceptSchema.safeParse(ok).success).toBe(true);
+    const bad = { ...base, items: [{ ...base.items[0], why: ['Đúng vì A.', 'B sai vì…'] }, base.items[1], base.items[2]] };
+    const r = conceptSchema.safeParse(bad);
+    expect(r.success).toBe(false);
+    expect(JSON.stringify(r.error?.issues)).toMatch(/why cần 4/);
+    const empty = { ...base, items: [{ ...base.items[0], why: ['Đúng.', '', 'C sai.', 'D sai.'] }, base.items[1], base.items[2]] };
+    expect(conceptSchema.safeParse(empty).success).toBe(false);
   });
   it('từ chối khái niệm thiếu item bậc 3', () => {
     const bad = { ...base, items: [base.items[0], base.items[2]] };
@@ -137,5 +147,15 @@ describe('memo.case (hỏi – đáp), memo.contrast (câu phân biệt), icon n
     expect(conceptSchema.safeParse({ ...base, memo: { ...memo, tree: [{ label: 'A', icon: '🏛️' }, { label: 'B' }] } }).success).toBe(false);
     expect(conceptSchema.safeParse({ ...base, memo: { ...memo, tree: [{ label: 'A', icon: 'khong-co' }, { label: 'B' }] } }).success).toBe(false);
     expect(conceptSchema.safeParse({ ...base, memo: { ...memo, tree: [{ label: 'A', icon: 'scales' }, { label: 'B' }] } }).success).toBe(true);
+  });
+});
+
+describe('quizQuestionSchema: why (tuỳ chọn) cho câu trong bộ đề', () => {
+  const qq = { q: 'Đặt cọc nhằm gì?', options: ['A', 'B', 'C', 'D'], answer: 0, explain: 'Điều 328.', basis: 'Khoản 1 Điều 328 BLDS 2015' };
+  it('không có why vẫn hợp lệ; có why thì đúng 4 câu, không rỗng', () => {
+    expect(quizQuestionSchema.safeParse(qq).success).toBe(true);
+    expect(quizQuestionSchema.safeParse({ ...qq, why: ['Đúng.', 'Sai.', 'Sai.', 'Sai.'] }).success).toBe(true);
+    expect(quizQuestionSchema.safeParse({ ...qq, why: ['Đúng.', 'Sai.'] }).success).toBe(false);
+    expect(quizQuestionSchema.safeParse({ ...qq, why: ['Đúng.', '', 'Sai.', 'Sai.'] }).success).toBe(false);
   });
 });

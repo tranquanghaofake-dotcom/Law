@@ -86,7 +86,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 6 Luật Quản lý thuế 2025 (108/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 6 Luật Quản lý thuế 2025 — lấy người nộp thuế làm trung tâm phục vụ.",
+    "Sai: cơ quan thuế là bên phục vụ, không phải trung tâm phục vụ.",
+    "Sai: luật không đặt người thu thuế làm trung tâm.",
+    "Sai: Kho bạc chỉ thu nộp ngân sách, không phải đối tượng được phục vụ."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 6 Luật Quản lý thuế 2025 (108/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 6 — người nộp thuế tự xác định, tự kê khai, tự nộp, trừ trường hợp cơ quan quản lý thuế tính thuế.",
+    "Sai: cơ quan thuế chỉ tính thuế trong trường hợp ngoại lệ.",
+    "Sai: Kho bạc nhận tiền thuế, không kê khai thay người nộp thuế.",
+    "Sai: Kiểm toán nhà nước kiểm toán tài chính công, không kê khai thuế."
+   ]
   },
   {
    "type": "pair",

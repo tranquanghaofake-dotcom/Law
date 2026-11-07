@@ -69,7 +69,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 17 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 17 — công dân Việt Nam là người có quốc tịch Việt Nam.",
+    "Sai: nơi sinh không phải tiêu chí ở khoản 1 Điều 17.",
+    "Sai: thường trú không làm phát sinh tư cách công dân.",
+    "Sai: nguồn gốc cha mẹ không phải định nghĩa ở khoản 1 Điều 17."
+   ]
   },
   {
    "type": "mcq",
@@ -86,7 +92,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 17 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 17 — công dân không thể bị trục xuất, giao nộp cho nhà nước khác.",
+    "Sai: công dân vẫn có thể bị tước quốc tịch theo luật.",
+    "Sai: công dân ở nước ngoài vẫn có nghĩa vụ.",
+    "Sai: nguyên tắc chung là một quốc tịch (Điều 4 Luật Quốc tịch)."
+   ]
   },
   {
    "type": "pair",

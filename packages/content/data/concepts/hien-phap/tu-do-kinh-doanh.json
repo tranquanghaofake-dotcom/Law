@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 33 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: Điều 33 — ngành nghề pháp luật không cấm.",
+    "Sai: không phải chỉ danh mục được phép.",
+    "Sai: giấy phép không phải giới hạn ở Điều 33.",
+    "Sai: vẫn phải tuân theo pháp luật."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 33 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: Điều 33 — được làm những gì pháp luật không cấm.",
+    "Sai: \"chỉ làm điều luật cho phép\" áp dụng cho cơ quan nhà nước.",
+    "Sai: Hiến pháp không quy định độc quyền.",
+    "Sai: không phải mọi kinh doanh đều phải xin phép."
+   ]
   },
   {
    "type": "pair",

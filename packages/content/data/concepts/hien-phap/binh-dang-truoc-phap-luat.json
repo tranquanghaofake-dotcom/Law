@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 16 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: Điều 16 — \"Mọi người đều bình đẳng trước pháp luật\".",
+    "Sai: Hiến pháp 2013 dùng \"mọi người\", rộng hơn \"công dân\".",
+    "Sai: không giới hạn ở đảng viên.",
+    "Sai: không giới hạn ở người thành niên."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 16 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 16 — chính trị, dân sự, kinh tế, văn hóa, xã hội.",
+    "Sai: Điều 16 không nêu quốc phòng.",
+    "Sai: còn thiếu lĩnh vực xã hội.",
+    "Sai: Điều 16 không nêu tố tụng, thi hành án."
+   ]
   },
   {
    "type": "pair",

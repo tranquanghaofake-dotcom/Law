@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 86 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: Điều 86 — người đứng đầu Nhà nước, thay mặt nước về đối nội và đối ngoại.",
+    "Sai: người đứng đầu Chính phủ là Thủ tướng.",
+    "Sai: Chủ tịch nước không đứng đầu Quốc hội.",
+    "Sai: Chủ tịch nước không đứng đầu Tòa án, Viện kiểm sát."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 95 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 95 — Thủ tướng là người đứng đầu Chính phủ.",
+    "Sai: Bộ trưởng Bộ Tư pháp chỉ là thành viên Chính phủ.",
+    "Sai: Chủ tịch Quốc hội đứng đầu Quốc hội.",
+    "Sai: Phó Chủ tịch nước giúp Chủ tịch nước."
+   ]
   },
   {
    "type": "pair",

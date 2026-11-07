@@ -90,7 +90,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 190 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 190 — 01 năm kể từ ngày phát hiện hành vi vi phạm.",
+    "Sai: 06 tháng là thời hiệu yêu cầu hòa giải viên lao động.",
+    "Sai: 09 tháng là thời hiệu yêu cầu Hội đồng trọng tài.",
+    "Sai: 03 năm không phải mốc của Điều 190."
+   ]
   },
   {
    "type": "mcq",
@@ -107,7 +113,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 190 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 190 — 09 tháng.",
+    "Sai: 06 tháng là thời hiệu yêu cầu hòa giải viên.",
+    "Sai: 01 năm là thời hiệu yêu cầu Tòa án.",
+    "Sai: 02 năm không phải mốc của Điều 190."
+   ]
   },
   {
    "type": "pair",

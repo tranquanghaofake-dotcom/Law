@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 37 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 37 — Hội đồng Dân tộc, Ủy ban của Quốc hội theo lĩnh vực chủ trì thẩm tra.",
+    "Sai: Bộ Tư pháp thẩm định, không thẩm tra.",
+    "Sai: Văn phòng Quốc hội phục vụ, không chủ trì thẩm tra.",
+    "Sai: Chính phủ là cơ quan trình, không thẩm tra dự án của mình."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 37 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 37 — chậm nhất 45 ngày trước ngày khai mạc kỳ họp Quốc hội.",
+    "Sai: 20 ngày là mốc với dự án trình Ủy ban Thường vụ Quốc hội.",
+    "Sai: 15 ngày không phải mốc của khoản 1 Điều 37.",
+    "Sai: 7 ngày quá ngắn."
+   ]
   },
   {
    "type": "pair",

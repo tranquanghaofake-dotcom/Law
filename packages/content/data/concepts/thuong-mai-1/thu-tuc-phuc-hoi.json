@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 24 Luật Phục hồi, phá sản 2025 (142/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 24 — người đại diện theo pháp luật của doanh nghiệp có quyền nộp đơn.",
+    "Sai: chủ nợ có quyền nộp đơn yêu cầu phá sản, không phải đơn phục hồi.",
+    "Sai: cơ quan thuế, bảo hiểm không có quyền nộp đơn phục hồi.",
+    "Sai: người lao động có quyền nộp đơn phá sản, không phải phục hồi."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 24 Luật Phục hồi, phá sản 2025 (142/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 24 — khi doanh nghiệp có nguy cơ mất hoặc mất khả năng thanh toán.",
+    "Sai: đã phá sản thì không còn phục hồi.",
+    "Sai: đã giải thể thì không còn phục hồi.",
+    "Sai: lỗ nhiều năm không phải điều kiện."
+   ]
   },
   {
    "type": "pair",

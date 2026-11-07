@@ -72,7 +72,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 126 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 126 — xâm phạm phải xảy ra trong thời hạn hiệu lực văn bằng; hết hạn thì sáng chế thuộc công chúng.",
+    "Sai: hết thời hạn bảo hộ thì không cần phép.",
+    "Sai: không phải trả phí khi văn bằng hết hiệu lực.",
+    "Sai: xuất khẩu không làm phát sinh xâm phạm khi văn bằng đã hết hiệu lực."
+   ]
   },
   {
    "type": "mcq",
@@ -89,7 +95,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 126 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 126 — sử dụng kiểu dáng không khác biệt đáng kể mà không được phép là xâm phạm.",
+    "Sai: đề bài nói không khác biệt đáng kể.",
+    "Sai: đây là xâm phạm quyền sở hữu công nghiệp.",
+    "Sai: ghi xuất xứ không thay được sự cho phép."
+   ]
   },
   {
    "type": "pair",

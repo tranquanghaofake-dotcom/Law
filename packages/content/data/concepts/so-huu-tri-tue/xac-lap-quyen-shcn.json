@@ -88,7 +88,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 6 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm c khoản 3 Điều 6 — bí mật kinh doanh xác lập trên cơ sở có được hợp pháp và thực hiện bảo mật.",
+    "Sai: bí mật kinh doanh không được cấp văn bằng.",
+    "Sai: không có thủ tục đăng ký bí mật kinh doanh.",
+    "Sai: công khai sẽ làm mất tính bí mật."
+   ]
   },
   {
    "type": "mcq",
@@ -105,7 +111,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 6 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 3 Điều 6 — kiểu dáng công nghiệp xác lập trên cơ sở quyết định cấp văn bằng bảo hộ.",
+    "Sai: tự động phát sinh là cơ chế của quyền tác giả.",
+    "Sai: sử dụng hợp pháp là căn cứ của tên thương mại.",
+    "Sai: bảo mật là căn cứ của bí mật kinh doanh."
+   ]
   },
   {
    "type": "pair",

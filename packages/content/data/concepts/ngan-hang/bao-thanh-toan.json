@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 4 Luật Các tổ chức tín dụng 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 4 — mua lại khoản phải thu phát sinh từ mua bán hàng hóa, cung ứng dịch vụ.",
+    "Sai: mua công cụ chuyển nhượng trước hạn là chiết khấu (khoản 6 Điều 4).",
+    "Sai: mua cổ phiếu là góp vốn, đầu tư, không phải bao thanh toán.",
+    "Sai: tài sản cố định không phải đối tượng bao thanh toán."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 4 Luật Các tổ chức tín dụng 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 4 — bao thanh toán gồm ứng trước tiền cho bên bán trên cơ sở khoản phải thu.",
+    "Sai: trả thay nghĩa vụ là bảo lãnh, không phải bao thanh toán; thuế không phải đối tượng.",
+    "Sai: mua giấy tờ có giá là chiết khấu, tái chiết khấu.",
+    "Sai: nhận tiền gửi là nghiệp vụ huy động vốn."
+   ]
   },
   {
    "type": "pair",

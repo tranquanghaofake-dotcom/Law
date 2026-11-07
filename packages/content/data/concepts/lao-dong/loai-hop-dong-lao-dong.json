@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 20 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 1 Điều 20 — hợp đồng xác định thời hạn không quá 36 tháng.",
+    "Sai: 24 tháng thấp hơn mức tối đa.",
+    "Sai: 12 tháng thấp hơn mức tối đa.",
+    "Sai: 60 tháng vượt mức tối đa."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 20 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 2 Điều 20 — quá 30 ngày không ký hợp đồng mới thì thành hợp đồng không xác định thời hạn.",
+    "Sai: hợp đồng không chấm dứt khi người lao động vẫn làm việc.",
+    "Sai: không tự gia hạn 12 tháng.",
+    "Sai: người lao động vẫn được trả lương."
+   ]
   },
   {
    "type": "pair",

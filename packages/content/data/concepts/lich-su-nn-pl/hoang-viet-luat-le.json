@@ -92,7 +92,13 @@
    "source": {
     "kind": "textbook",
     "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 6 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
-   }
+   },
+   "why": [
+    "Đúng: Hoàng Việt luật lệ ban hành năm 1815 dưới triều Gia Long.",
+    "Sai: Minh Mạng là vua kế tiếp.",
+    "Sai: Tự Đức là vua sau.",
+    "Sai: Lê Thánh Tông thuộc thời Lê."
+   ]
   },
   {
    "type": "mcq",
@@ -109,7 +115,13 @@
    "source": {
     "kind": "textbook",
     "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 6 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
-   }
+   },
+   "why": [
+    "Đúng: theo giáo trình, Hoàng Việt luật lệ chịu ảnh hưởng chủ yếu của Đại Thanh luật lệ.",
+    "Sai: Đường luật ảnh hưởng gián tiếp, không chủ yếu.",
+    "Sai: Bộ luật Napoléon không ảnh hưởng chủ yếu.",
+    "Sai: Hoàng Việt luật lệ ít kế thừa Quốc triều hình luật."
+   ]
   },
   {
    "type": "pair",

@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 141 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 141 — chủ sở hữu cho phép tổ chức, cá nhân khác sử dụng đối tượng thuộc phạm vi quyền sử dụng của mình.",
+    "Sai: chuyển giao quyền sở hữu là chuyển nhượng (Điều 138).",
+    "Sai: từ bỏ quyền là chấm dứt hiệu lực văn bằng, không phải chuyển quyền sử dụng.",
+    "Sai: văn bằng hết hạn không thể \"đăng ký lại\"."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 141 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 141 — hợp đồng sử dụng đối tượng sở hữu công nghiệp phải lập thành văn bản.",
+    "Sai: thỏa thuận miệng không đáp ứng hình thức luật định.",
+    "Sai: hành vi không phải hình thức của hợp đồng này.",
+    "Sai: luật bắt buộc hình thức văn bản."
+   ]
   },
   {
    "type": "pair",

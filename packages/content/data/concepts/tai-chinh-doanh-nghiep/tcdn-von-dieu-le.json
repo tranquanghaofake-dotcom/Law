@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 34 Điều 4 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 34 Điều 4 — với công ty cổ phần là tổng mệnh giá cổ phần đã bán hoặc được đăng ký mua khi thành lập.",
+    "Sai: tính theo mệnh giá, không theo giá thị trường.",
+    "Sai: tổng tài sản gồm cả nợ, khác vốn điều lệ.",
+    "Sai: vốn vay và trái phiếu là nợ, không phải vốn điều lệ."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 34 Điều 4 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: tiền công ty vay ngân hàng là nợ phải trả, không phải vốn điều lệ.",
+    "Sai: tài sản thành viên đã góp là vốn điều lệ.",
+    "Sai: tài sản cam kết góp khi thành lập công ty trách nhiệm hữu hạn được tính vào vốn điều lệ (khoản 34 Điều 4).",
+    "Sai: mệnh giá cổ phần đã bán là vốn điều lệ của công ty cổ phần."
+   ]
   },
   {
    "type": "pair",

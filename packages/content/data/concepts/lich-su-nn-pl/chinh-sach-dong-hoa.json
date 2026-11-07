@@ -78,7 +78,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển III, tờ 1a–1b"
-   }
+   },
+   "why": [
+    "Đúng: Toàn thư — Tích Quang \"lấy lễ nghĩa dạy dân\".",
+    "Sai: Toàn thư không chép việc ban hành luật hình riêng.",
+    "Sai: Toàn thư không chép Tích Quang bãi bỏ Lạc tướng.",
+    "Sai: Toàn thư không chép việc chia châu."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển III, tờ 1b"
-   }
+   },
+   "why": [
+    "Đúng: Nhâm Diên làm Thái thú Cửu Chân.",
+    "Sai: Tích Quang ở Giao Chỉ.",
+    "Sai: Nhật Nam không phải quận của Nhâm Diên.",
+    "Sai: Hợp Phố không phải quận của Nhâm Diên."
+   ]
   },
   {
    "type": "pair",
@@ -157,7 +169,13 @@
     "Sai vì Toàn thư không nhắc Tích Quang, nên toàn bộ nhận xét trên không có căn cứ sử liệu nào để tham khảo thêm"
    ],
    "answer": 0,
-   "explain": "Khi dùng sử liệu phải đặt trong quan điểm của người viết sử."
+   "explain": "Khi dùng sử liệu phải đặt trong quan điểm của người viết sử.",
+   "why": [
+    "Đúng: cần phân biệt quan điểm Nho giáo của sử quan với sự thật lịch sử; đây là chính sách đồng hóa.",
+    "Sai: sử liệu phải được đối chiếu với quan điểm người viết.",
+    "Sai: nhận xét như vậy đồng nhất quan điểm sử quan với sự thật.",
+    "Sai: Toàn thư có nhắc Tích Quang."
+   ]
   },
   {
    "type": "recall",

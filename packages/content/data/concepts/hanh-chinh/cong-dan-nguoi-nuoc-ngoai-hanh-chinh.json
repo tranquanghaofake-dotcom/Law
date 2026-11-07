@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
-   }
+   },
+   "why": [
+    "Đúng: theo giáo trình, năng lực hành vi hành chính phụ thuộc độ tuổi, trình độ, sức khỏe…",
+    "Sai: tài sản không quyết định năng lực hành vi hành chính.",
+    "Sai: tôn giáo không quyết định năng lực hành vi hành chính.",
+    "Sai: giới tính, nơi cư trú không quyết định năng lực hành vi hành chính."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
-   }
+   },
+   "why": [
+    "Đúng: ứng cử đại biểu Quốc hội là quyền của công dân Việt Nam (Điều 27 Hiến pháp 2013).",
+    "Sai: người nước ngoài được bảo vệ tính mạng, tài sản.",
+    "Sai: người nước ngoài có quyền khiếu nại quyết định hành chính.",
+    "Sai: người nước ngoài được kinh doanh theo pháp luật."
+   ]
   },
   {
    "type": "pair",

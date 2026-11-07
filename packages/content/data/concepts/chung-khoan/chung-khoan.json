@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 4 — chứng khoán là tài sản.",
+    "Sai: chứng khoán không chỉ do ngân hàng phát hành.",
+    "Sai: chứng khoán không phải hợp đồng dân sự.",
+    "Sai: luật không định danh là quyền tài sản từ hợp đồng vay."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: sổ tiết kiệm không có trong danh sách khoản 1 Điều 4.",
+    "Sai: chứng chỉ lưu ký thuộc điểm b.",
+    "Sai: quyền mua cổ phần thuộc điểm b.",
+    "Sai: chứng quyền có bảo đảm thuộc điểm b."
+   ]
   },
   {
    "type": "pair",
@@ -156,7 +168,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: tên gọi do doanh nghiệp đặt không tạo tư cách chứng khoán.",
+    "Sai: hứa chia lãi không phải tiêu chí.",
+    "Sai: doanh nghiệp không có quyền xác lập loại chứng khoán mới.",
+    "Sai: số người mua không quyết định tư cách chứng khoán."
+   ]
   },
   {
    "type": "recall",

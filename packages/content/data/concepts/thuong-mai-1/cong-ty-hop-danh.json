@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 177 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 1 Điều 177 — thành viên hợp danh phải là cá nhân.",
+    "Sai: tổ chức chỉ có thể là thành viên góp vốn.",
+    "Sai: thành viên hợp danh chỉ là cá nhân.",
+    "Sai: doanh nghiệp nhà nước không thể là thành viên hợp danh."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 177 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 177 — có tư cách pháp nhân từ ngày được cấp Giấy chứng nhận đăng ký doanh nghiệp.",
+    "Sai: công ty hợp danh có tư cách pháp nhân.",
+    "Sai: tư cách pháp nhân không phụ thuộc có thành viên góp vốn.",
+    "Sai: không phụ thuộc mức vốn."
+   ]
   },
   {
    "type": "pair",

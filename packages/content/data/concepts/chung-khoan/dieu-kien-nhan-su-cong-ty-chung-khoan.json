@@ -76,7 +76,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 5 Điều 74 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 5 Điều 74 — 03 nhân viên cho mỗi nghiệp vụ.",
+    "Sai: không phải 01.",
+    "Sai: không phải 02.",
+    "Sai: 05 là mức của công ty quản lý quỹ."
+   ]
   },
   {
    "type": "mcq",
@@ -93,7 +99,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 5 Điều 74 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 5 Điều 74 — 02 năm.",
+    "Sai: không phải 01 năm.",
+    "Sai: không phải 03 năm.",
+    "Sai: không phải 05 năm."
+   ]
   },
   {
    "type": "pair",

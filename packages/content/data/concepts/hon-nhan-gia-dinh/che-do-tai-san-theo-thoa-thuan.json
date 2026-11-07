@@ -1,0 +1,133 @@
+{
+ "id": "che-do-tai-san-theo-thoa-thuan",
+ "subject": "hon-nhan-gia-dinh",
+ "chapter": "c3-tai-san-vo-chong",
+ "term": "Thỏa thuận xác lập chế độ tài sản của vợ chồng",
+ "definition": "Trong trường hợp hai bên kết hôn lựa chọn chế độ tài sản theo thỏa thuận thì thỏa thuận này phải được lập trước khi kết hôn, bằng hình thức văn bản có công chứng hoặc chứng thực. Chế độ tài sản của vợ chồng theo thỏa thuận được xác lập kể từ ngày đăng ký kết hôn.",
+ "plain": "Ba điều cần nhớ: LẬP TRƯỚC khi kết hôn; VĂN BẢN có CÔNG CHỨNG hoặc CHỨNG THỰC; có hiệu lực KỂ TỪ NGÀY ĐĂNG KÝ KẾT HÔN. Nếu không lập (hoặc thỏa thuận vô hiệu) thì áp dụng chế độ tài sản theo luật định (Điều 28, 33, 43). Đã lập thì có thể sửa đổi, bổ sung trong thời kỳ hôn nhân (Điều 49).",
+ "example": "Trước khi cưới, hai người ra phòng công chứng lập văn bản: mỗi người tự giữ thu nhập của mình. Văn bản có hiệu lực từ ngày đăng ký kết hôn.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 47 Luật Hôn nhân và gia đình 2014",
+  "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "tai-san-chung",
+  "tai-san-rieng",
+  "chia-tai-san-khi-ly-hon"
+ ],
+ "keywords": [
+  "trước khi kết hôn",
+  "công chứng hoặc chứng thực",
+  "kể từ ngày đăng ký kết hôn"
+ ],
+ "memo": {
+  "gist": "Muốn tự đặt luật chơi tài sản thì lập văn bản công chứng trước khi cưới; có hiệu lực từ ngày đăng ký.",
+  "kind": "steps",
+  "hook": "Hợp đồng tiền hôn nhân: ký xong mới bước vào lễ, giấy con dấu mới mở cửa.",
+  "tree": [
+   {
+    "label": "Khi nào lập",
+    "icon": "clock",
+    "children": [
+     "Trước khi kết hôn"
+    ]
+   },
+   {
+    "label": "Hình thức",
+    "icon": "stamp",
+    "children": [
+     "Văn bản công chứng hoặc chứng thực"
+    ]
+   },
+   {
+    "label": "Hiệu lực",
+    "icon": "calendar",
+    "children": [
+     "Từ ngày đăng ký kết hôn"
+    ]
+   },
+   {
+    "label": "Không lập",
+    "icon": "book",
+    "children": [
+     "Áp dụng chế độ luật định"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Cưới được hai năm, vợ chồng mới lập văn bản thỏa thuận chế độ tài sản có được không?",
+   "a": "Không theo Điều 47; thỏa thuận chế độ tài sản phải lập trước khi kết hôn. Sau khi cưới chỉ có thể chia tài sản chung theo Điều 38."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chế độ tài sản của vợ chồng theo thỏa thuận được xác lập từ thời điểm nào?",
+   "options": [
+    "Kể từ ngày đăng ký kết hôn",
+    "Kể từ ngày văn bản công chứng",
+    "Kể từ ngày tổ chức lễ cưới",
+    "Kể từ khi có tài sản đầu tiên"
+   ],
+   "answer": 0,
+   "explain": "Điều 47: chế độ tài sản của vợ chồng theo thỏa thuận được xác lập kể từ ngày đăng ký kết hôn.",
+   "why": [
+    "Đúng: Điều 47.",
+    "Sai: công chứng chỉ là hình thức; thỏa thuận chưa có hiệu lực khi chưa đăng ký kết hôn.",
+    "Sai: lễ cưới không có giá trị pháp lý.",
+    "Sai: thời điểm có tài sản không phải mốc hiệu lực."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trong trường hợp hai bên kết hôn lựa chọn chế độ tài sản theo thỏa thuận thì thỏa thuận này phải được lập {{trước khi kết hôn}}, bằng hình thức văn bản có {{công chứng hoặc chứng thực}}."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chế độ tài sản của vợ chồng theo thỏa thuận được xác lập kể từ ngày {{đăng ký kết hôn}}."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Lâm và Thảo lập văn bản thỏa thuận chế độ tài sản trước khi cưới nhưng chỉ hai người ký, không công chứng hay chứng thực. Khi ly hôn, tài sản giải quyết thế nào?",
+   "options": [
+    "Theo chế độ luật định, vì sai hình thức",
+    "Theo văn bản, vì hai bên đã tự nguyện ký",
+    "Theo văn bản nếu có hai người làm chứng xác nhận",
+    "Tòa án tự chọn chế độ có lợi hơn cho người vợ"
+   ],
+   "answer": 0,
+   "explain": "Điều 47 đòi văn bản có công chứng hoặc chứng thực; thiếu hình thức thì thỏa thuận không có hiệu lực, áp dụng chế độ luật định.",
+   "why": [
+    "Đúng: không đúng hình thức của Điều 47 thì áp dụng chế độ luật định.",
+    "Sai: tự nguyện chưa đủ; hình thức công chứng hoặc chứng thực là bắt buộc.",
+    "Sai: người làm chứng không thay được công chứng, chứng thực.",
+    "Sai: Tòa án không tự chọn chế độ tài sản."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chế độ tài sản theo thỏa thuận được áp dụng ngay khi vợ chồng lựa chọn, kể cả khi thỏa thuận được lập sau khi kết hôn.",
+   "answer": false,
+   "explain": "Sai. Điều 47 buộc thỏa thuận phải lập trước khi kết hôn, bằng văn bản công chứng hoặc chứng thực."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu ba yêu cầu của thỏa thuận xác lập chế độ tài sản vợ chồng (Điều 47).",
+   "model": "Lập trước khi kết hôn; bằng văn bản có công chứng hoặc chứng thực; có hiệu lực kể từ ngày đăng ký kết hôn.",
+   "keywords": [
+    "trước khi kết hôn",
+    "văn bản",
+    "công chứng hoặc chứng thực",
+    "ngày đăng ký kết hôn"
+   ]
+  }
+ ]
+}

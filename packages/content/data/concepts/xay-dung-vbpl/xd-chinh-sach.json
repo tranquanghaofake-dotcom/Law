@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 3 — tập hợp giải pháp cụ thể của Nhà nước để giải quyết vấn đề thực tiễn nhằm đạt mục tiêu nhất định.",
+    "Sai: quy tắc xử sự chung, bắt buộc chung là quy phạm pháp luật (khoản 1 Điều 3).",
+    "Sai: văn bản về bộ máy, biên chế là văn bản hành chính, không phải chính sách theo khoản 2 Điều 3.",
+    "Sai: ý kiến chuyên gia là thông tin tham vấn, không phải chính sách."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 28 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 28 — vấn đề cần giải quyết, mục tiêu, giải pháp, đối tượng chịu tác động, giải pháp tối ưu được lựa chọn.",
+    "Sai: tên luật, thời gian, cơ quan trình chưa phải nội dung của chính sách.",
+    "Sai: kinh phí, cơ quan soạn thảo là nội dung tổ chức, không phải nội dung chính sách.",
+    "Sai: danh sách ban soạn thảo, thù lao không phải nội dung chính sách."
+   ]
   },
   {
    "type": "pair",

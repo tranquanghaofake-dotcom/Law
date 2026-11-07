@@ -1,0 +1,133 @@
+{
+ "id": "ket-hon-trai-phap-luat",
+ "subject": "hon-nhan-gia-dinh",
+ "chapter": "c2-ket-hon",
+ "term": "Kết hôn trái pháp luật",
+ "definition": "Kết hôn trái pháp luật là việc nam, nữ đã đăng ký kết hôn tại cơ quan nhà nước có thẩm quyền nhưng một bên hoặc cả hai bên vi phạm điều kiện kết hôn theo quy định tại Điều 8 của Luật này.",
+ "plain": "Hai dấu hiệu: ĐÃ ĐĂNG KÝ kết hôn tại cơ quan có thẩm quyền + VI PHẠM điều kiện kết hôn ở Điều 8. Không đăng ký thì không phải \"kết hôn trái pháp luật\" mà là chung sống như vợ chồng. Xử lý: Tòa án hủy việc kết hôn; nhưng nếu đến lúc giải quyết cả hai đã đủ điều kiện và cùng yêu cầu công nhận thì Tòa án công nhận hôn nhân (khoản 2 Điều 11).",
+ "example": "Nữ 17 tuổi khai tăng tuổi để đăng ký kết hôn: đã đăng ký nhưng vi phạm điều kiện tuổi nên là kết hôn trái pháp luật.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 6 Điều 3 Luật Hôn nhân và gia đình 2014",
+  "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "ket-hon",
+  "dieu-kien-ket-hon",
+  "cong-nhan-hon-nhan-khi-xu-ly-ket-hon-trai-phap-luat",
+  "chung-song-nhu-vo-chong"
+ ],
+ "keywords": [
+  "đã đăng ký kết hôn",
+  "vi phạm điều kiện kết hôn",
+  "Điều 8"
+ ],
+ "memo": {
+  "gist": "Kết hôn trái pháp luật là đã đăng ký kết hôn nhưng một hoặc hai bên không đủ điều kiện kết hôn.",
+  "kind": "checklist",
+  "hook": "Có giấy mà thiếu chuẩn: giấy đỏ trong tay nhưng điều kiện chưa đạt.",
+  "tree": [
+   {
+    "label": "Đã đăng ký",
+    "icon": "stamp",
+    "children": [
+     "Tại cơ quan có thẩm quyền"
+    ]
+   },
+   {
+    "label": "Vi phạm Điều 8",
+    "icon": "warn",
+    "children": [
+     "Tuổi",
+     "Tự nguyện",
+     "Năng lực hành vi",
+     "Trường hợp cấm"
+    ]
+   },
+   {
+    "label": "Xử lý",
+    "icon": "scales",
+    "children": [
+     "Tòa án hủy",
+     "Hoặc công nhận nếu đã đủ điều kiện"
+    ]
+   }
+  ],
+  "contrast": [
+   {
+    "with": "chung-song-nhu-vo-chong",
+    "text": "Chung sống như vợ chồng là không đăng ký; kết hôn trái pháp luật là có đăng ký nhưng vi phạm điều kiện."
+   }
+  ]
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Dấu hiệu nào bắt buộc phải có để xác định \"kết hôn trái pháp luật\"?",
+   "options": [
+    "Đã đăng ký kết hôn tại cơ quan nhà nước có thẩm quyền",
+    "Đã tổ chức lễ cưới theo phong tục tập quán của địa phương",
+    "Đã chung sống như vợ chồng tối thiểu từ hai năm trở lên",
+    "Đã có con chung hoặc đã có tài sản chung với nhau"
+   ],
+   "answer": 0,
+   "explain": "Khoản 6 Điều 3: nam, nữ đã đăng ký kết hôn nhưng vi phạm điều kiện tại Điều 8.",
+   "why": [
+    "Đúng: không có đăng ký thì không thể là kết hôn trái pháp luật.",
+    "Sai: lễ cưới không có giá trị pháp lý.",
+    "Sai: thời gian chung sống không phải dấu hiệu của kết hôn trái pháp luật.",
+    "Sai: con chung, tài sản chung không quyết định việc kết hôn có trái luật hay không."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Kết hôn trái pháp luật là việc nam, nữ đã {{đăng ký kết hôn}} tại cơ quan nhà nước có thẩm quyền nhưng một bên hoặc cả hai bên vi phạm {{điều kiện kết hôn}} theo quy định tại Điều 8 của Luật này."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "{{Kết hôn trái pháp luật}} là việc nam, nữ đã đăng ký kết hôn tại cơ quan nhà nước có thẩm quyền nhưng {{một bên hoặc cả hai bên}} vi phạm điều kiện kết hôn theo quy định tại Điều 8 của Luật này."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Ông K đang có vợ nhưng che giấu, đăng ký kết hôn với bà M. Ai KHÔNG có quyền tự mình yêu cầu Tòa án hủy việc kết hôn này?",
+   "options": [
+    "Hàng xóm của bà M",
+    "Vợ của ông K",
+    "Hội Liên hiệp Phụ nữ",
+    "Cơ quan quản lý nhà nước về gia đình"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 10: vợ của người đang có vợ mà kết hôn, Hội Liên hiệp Phụ nữ, cơ quan quản lý nhà nước về gia đình, về trẻ em có quyền yêu cầu; người khác chỉ có quyền đề nghị (khoản 3 Điều 10).",
+   "why": [
+    "Đúng: hàng xóm chỉ có quyền đề nghị các cơ quan, tổ chức ở khoản 2 yêu cầu Tòa án (khoản 3 Điều 10).",
+    "Sai: điểm a khoản 2 Điều 10 cho vợ của người đang có vợ mà kết hôn quyền yêu cầu.",
+    "Sai: điểm d khoản 2 Điều 10 cho Hội Liên hiệp Phụ nữ quyền yêu cầu.",
+    "Sai: điểm b khoản 2 Điều 10 cho cơ quan quản lý nhà nước về gia đình quyền yêu cầu."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi trường hợp kết hôn trái pháp luật đều bị Tòa án hủy khi có yêu cầu.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 11: nếu lúc Tòa án giải quyết cả hai bên đã đủ điều kiện kết hôn và cùng yêu cầu công nhận thì Tòa án công nhận quan hệ hôn nhân."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu hai dấu hiệu của kết hôn trái pháp luật.",
+   "model": "Nam, nữ đã đăng ký kết hôn tại cơ quan nhà nước có thẩm quyền, nhưng một bên hoặc cả hai bên vi phạm điều kiện kết hôn tại Điều 8.",
+   "keywords": [
+    "đã đăng ký kết hôn",
+    "cơ quan nhà nước có thẩm quyền",
+    "vi phạm",
+    "Điều 8"
+   ]
+  }
+ ]
+}

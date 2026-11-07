@@ -86,7 +86,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 7 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 7 — tiếng Việt; chính xác, phổ thông, thống nhất, rõ ràng, dễ hiểu.",
+    "Sai: ngôn ngữ chính thức là tiếng Việt, không phải tiếng Anh.",
+    "Sai: luật đòi phổ thông, dễ hiểu, không dùng từ cổ.",
+    "Sai: văn bản quy phạm cần chính xác, ngắn gọn, không biểu cảm."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 7 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 7 — bản dịch ra tiếng nước ngoài có giá trị tham khảo.",
+    "Sai: chỉ bản tiếng Việt có giá trị pháp lý.",
+    "Sai: bản dịch không có giá trị áp dụng riêng cho người nước ngoài.",
+    "Sai: luật cho phép dịch."
+   ]
   },
   {
    "type": "pair",

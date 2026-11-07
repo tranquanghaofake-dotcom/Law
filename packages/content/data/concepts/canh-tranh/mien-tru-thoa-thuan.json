@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 14 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 14 — có lợi cho người tiêu dùng và đáp ứng một trong bốn điều kiện a, b, c, d.",
+    "Sai: luật không có ngưỡng 5% thị phần để miễn trừ; và miễn trừ phải được Ủy ban Cạnh tranh Quốc gia quyết định.",
+    "Sai: hiệp hội ngành nghề không có thẩm quyền cho miễn trừ (điểm b khoản 2 Điều 46 giao cho Ủy ban Cạnh tranh Quốc gia).",
+    "Sai: thời gian thực hiện hay xác nhận của cơ quan thuế không phải điều kiện miễn trừ."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 14 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: thông đồng đấu thầu là khoản 4 Điều 11, không nằm trong danh sách được miễn trừ ở khoản 1 Điều 14.",
+    "Sai: ấn định giá (khoản 1 Điều 11) thuộc danh sách có thể được miễn trừ.",
+    "Sai: hạn chế số lượng sản xuất (khoản 3 Điều 11) thuộc danh sách có thể được miễn trừ.",
+    "Sai: áp đặt điều kiện ký hợp đồng (khoản 8 Điều 11) thuộc danh sách có thể được miễn trừ."
+   ]
   },
   {
    "type": "pair",

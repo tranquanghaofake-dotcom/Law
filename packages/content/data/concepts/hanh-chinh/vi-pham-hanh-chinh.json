@@ -74,7 +74,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 2 — hành vi có lỗi, vi phạm pháp luật về quản lý nhà nước, không phải tội phạm, phải bị xử phạt.",
+    "Sai: không có ngưỡng thiệt hại.",
+    "Sai: vi phạm đạo đức, phong tục không phải vi phạm hành chính.",
+    "Sai: vi phạm hợp đồng là vi phạm dân sự."
+   ]
   },
   {
    "type": "mcq",
@@ -91,7 +97,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 2 — chủ thể là cá nhân, tổ chức.",
+    "Sai: thiếu tổ chức.",
+    "Sai: thiếu cá nhân.",
+    "Sai: không giới hạn ở cán bộ, công chức."
+   ]
   },
   {
    "type": "pair",

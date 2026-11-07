@@ -89,7 +89,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 14 Luật Ngân sách nhà nước 2025 (89/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 14 — năm ngân sách từ 01/01 đến 31/12 năm dương lịch.",
+    "Sai: Việt Nam không dùng năm tài khóa từ tháng 4.",
+    "Sai: Việt Nam không dùng năm tài khóa từ tháng 7.",
+    "Sai: năm ngân sách do luật định, thống nhất cả nước."
+   ]
   },
   {
    "type": "mcq",
@@ -106,7 +112,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 5 Luật Ngân sách nhà nước 2025 (89/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 5 — chi dự trữ quốc gia là một khoản chi ngân sách.",
+    "Sai: tiền gửi của doanh nghiệp tại Kho bạc không phải chi ngân sách.",
+    "Sai: vốn điều lệ công ty tư nhân là tiền của chủ sở hữu, không phải ngân sách.",
+    "Sai: tiết kiệm của dân cư không thuộc ngân sách nhà nước."
+   ]
   },
   {
    "type": "pair",

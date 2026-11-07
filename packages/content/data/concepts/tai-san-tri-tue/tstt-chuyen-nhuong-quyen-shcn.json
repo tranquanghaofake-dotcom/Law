@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 138 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 138 — chủ sở hữu chuyển giao quyền sở hữu của mình cho tổ chức, cá nhân khác.",
+    "Sai: cho phép sử dụng mà vẫn giữ quyền là chuyển quyền sử dụng (Điều 141).",
+    "Sai: gia hạn văn bằng là thủ tục duy trì quyền, không phải chuyển nhượng.",
+    "Sai: phản đối đơn là thủ tục trong quá trình thẩm định đơn."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 139 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 139 — quyền đối với chỉ dẫn địa lý không được chuyển nhượng.",
+    "Sai: quyền đối với sáng chế được chuyển nhượng.",
+    "Sai: quyền đối với nhãn hiệu được chuyển nhượng (có điều kiện ở khoản 4 Điều 139).",
+    "Sai: quyền đối với kiểu dáng công nghiệp được chuyển nhượng."
+   ]
   },
   {
    "type": "pair",

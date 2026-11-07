@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 165 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 165 cấm giữ giấy tờ tùy thân của người lao động.",
+    "Sai: khoản 3 Điều 162 cho hai bên thỏa thuận về chỗ ở.",
+    "Sai: hình thức, kỳ hạn trả lương do hai bên thỏa thuận (khoản 3 Điều 162).",
+    "Sai: thời hạn hợp đồng do hai bên thỏa thuận (khoản 2 Điều 162)."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 165 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 165 cấm giao việc không theo hợp đồng lao động.",
+    "Sai: trả thêm tiền không làm việc giao ngoài hợp đồng trở thành hợp pháp; muốn vậy phải sửa đổi hợp đồng.",
+    "Sai: \"trong gia đình\" không phải ngoại lệ của khoản 2 Điều 165.",
+    "Sai: luật không có ngưỡng 2 giờ."
+   ]
   },
   {
    "type": "pair",

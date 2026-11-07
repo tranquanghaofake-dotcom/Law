@@ -74,7 +74,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 3 Luật Ngân hàng Nhà nước Việt Nam 2010 (sửa đổi, bổ sung năm 2022)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 3 Luật Ngân hàng Nhà nước — Quốc hội quyết định chỉ tiêu lạm phát hằng năm.",
+    "Sai: Ngân hàng Nhà nước thực thi chính sách tiền tệ, không quyết định chỉ tiêu lạm phát.",
+    "Sai: Bộ Tài chính quản lý ngân sách, không quyết định chỉ tiêu lạm phát.",
+    "Sai: Chủ tịch nước không quyết định chỉ tiêu lạm phát."
+   ]
   },
   {
    "type": "mcq",
@@ -91,7 +97,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 3 Luật Ngân hàng Nhà nước Việt Nam 2010 (sửa đổi, bổ sung năm 2022)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 3 — mục tiêu ổn định giá trị đồng tiền biểu hiện bằng chỉ tiêu lạm phát.",
+    "Sai: dân số không phải chỉ tiêu của chính sách tiền tệ.",
+    "Sai: thu ngân sách thuộc chính sách tài khóa.",
+    "Sai: xuất khẩu thuộc chính sách thương mại."
+   ]
   },
   {
    "type": "pair",

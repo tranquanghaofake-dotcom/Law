@@ -72,7 +72,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 50 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 50 — quyết định phạt tiền còn căn cứ tình hình tài sản, khả năng thi hành.",
+    "Sai: ý kiến người bị hại về bồi thường không phải căn cứ quyết định phạt tiền.",
+    "Sai: thu nhập trung bình địa phương không phải căn cứ.",
+    "Sai: nghề nghiệp của gia đình không phải căn cứ."
+   ]
   },
   {
    "type": "mcq",
@@ -89,7 +95,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 54 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 54 — có ít nhất hai tình tiết giảm nhẹ tại khoản 1 Điều 51.",
+    "Sai: một tình tiết chưa đủ.",
+    "Sai: luật chỉ đòi ít nhất hai.",
+    "Sai: luật chỉ đòi ít nhất hai."
+   ]
   },
   {
    "type": "pair",

@@ -83,7 +83,13 @@
     "Chủ thể không thấy trước hậu quả, dù có thể và cần phải thấy trước"
    ],
    "answer": 0,
-   "explain": "VD13."
+   "explain": "VD13.",
+   "why": [
+    "Đúng: lỗi cố ý gián tiếp — thấy trước hậu quả, không mong muốn nhưng có ý thức để mặc xảy ra.",
+    "Sai: mong muốn hậu quả là cố ý trực tiếp.",
+    "Sai: tin hậu quả không xảy ra là vô ý vì quá tự tin.",
+    "Sai: không thấy trước dù phải thấy là vô ý do cẩu thả."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
     "Mục đích, động cơ, lỗi và tình tiết tăng nặng"
    ],
    "answer": 0,
-   "explain": "VD13."
+   "explain": "VD13.",
+   "why": [
+    "Đúng: mặt khách quan gồm hành vi trái pháp luật, hậu quả, quan hệ nhân quả (và thời gian, địa điểm, công cụ).",
+    "Sai: lỗi, động cơ thuộc mặt chủ quan.",
+    "Sai: động cơ, mục đích thuộc mặt chủ quan; năng lực thuộc chủ thể.",
+    "Sai: mục đích, động cơ, lỗi thuộc mặt chủ quan."
+   ]
   },
   {
    "type": "pair",

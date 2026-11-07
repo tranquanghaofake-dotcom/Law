@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 2 Luật Ban hành văn bản quy phạm pháp luật 2025"
-   }
+   },
+   "why": [
+    "Đúng: Điều 2 Luật Ban hành văn bản quy phạm pháp luật 2025 — chứa quy phạm và ban hành đúng thẩm quyền, hình thức, trình tự, thủ tục.",
+    "Sai: phải đúng cả hình thức.",
+    "Sai: con dấu, chữ ký không đủ.",
+    "Sai: áp dụng một lần là văn bản cá biệt."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 4 Luật Ban hành văn bản quy phạm pháp luật 2025"
-   }
+   },
+   "why": [
+    "Đúng: nghị định của Chính phủ là văn bản quy phạm pháp luật (khoản 5 Điều 4).",
+    "Sai: bản án là văn bản áp dụng pháp luật.",
+    "Sai: quyết định xử phạt là văn bản áp dụng pháp luật.",
+    "Sai: công văn hướng dẫn là văn bản hành chính."
+   ]
   },
   {
    "type": "pair",

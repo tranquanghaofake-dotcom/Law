@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 2 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 2 Luật Quốc tịch — không bị tước, trừ trường hợp Điều 31.",
+    "Sai: vi phạm pháp luật thông thường không làm bị tước quốc tịch.",
+    "Sai: cư trú ở nước ngoài không làm bị tước quốc tịch.",
+    "Sai: luật có ngoại lệ tại Điều 31."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 2 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 2 — các dân tộc bình đẳng về quyền có quốc tịch Việt Nam.",
+    "Sai: không dân tộc nào được ưu tiên.",
+    "Sai: không có ngoại lệ hai quốc tịch cho dân tộc thiểu số.",
+    "Sai: các dân tộc có chung quốc tịch Việt Nam."
+   ]
   },
   {
    "type": "pair",

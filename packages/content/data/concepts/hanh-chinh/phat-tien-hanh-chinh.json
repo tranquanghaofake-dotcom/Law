@@ -76,7 +76,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 23 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 23 — mức phạt tiền tối đa chung với cá nhân là 1.000.000.000 đồng (trừ khoản 3 Điều 24).",
+    "Sai: 2 tỷ đồng là mức tối đa với tổ chức (gấp đôi cá nhân).",
+    "Sai: 500 triệu đồng không phải mức tối đa chung.",
+    "Sai: 100 triệu đồng không phải mức tối đa chung."
+   ]
   },
   {
    "type": "mcq",
@@ -93,7 +99,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 23 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 23 — nội thành có thể cao hơn, tối đa 02 lần mức phạt chung với một số lĩnh vực.",
+    "Sai: không gấp ba.",
+    "Sai: không gấp năm.",
+    "Sai: luật cho phép mức cao hơn ở nội thành."
+   ]
   },
   {
    "type": "pair",

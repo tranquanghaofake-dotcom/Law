@@ -81,7 +81,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển III, tờ 2a"
-   }
+   },
+   "why": [
+    "Đúng: Toàn thư — Tô Định dùng pháp luật trói buộc, lại giết chồng bà.",
+    "Sai: Toàn thư không nêu việc bãi bỏ Lạc tướng là nguyên nhân.",
+    "Sai: Mã Viện sang sau cuộc khởi nghĩa.",
+    "Sai: Lâm Ấp không liên quan nguyên nhân khởi nghĩa."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển III, tờ 2a"
-   }
+   },
+   "why": [
+    "Đúng: Trưng Vương đóng đô ở Mê Linh.",
+    "Sai: Cổ Loa là đô của An Dương Vương, Ngô Quyền.",
+    "Sai: Long Biên không phải đô của Trưng Vương.",
+    "Sai: Hoa Lư là đô nhà Đinh, Tiền Lê."
+   ]
   },
   {
    "type": "pair",

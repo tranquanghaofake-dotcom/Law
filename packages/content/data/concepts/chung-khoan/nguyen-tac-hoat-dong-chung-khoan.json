@@ -83,7 +83,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 5 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 5 có 4 nguyên tắc.",
+    "Sai: không phải 3.",
+    "Sai: không phải 5.",
+    "Sai: không phải 6."
+   ]
   },
   {
    "type": "mcq",
@@ -100,7 +106,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 5 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 5 không có nguyên tắc Nhà nước bảo đảm lợi nhuận.",
+    "Sai: công bằng, công khai là nguyên tắc ở Điều 5.",
+    "Sai: bảo vệ nhà đầu tư là nguyên tắc ở Điều 5.",
+    "Sai: tự chịu rủi ro là nguyên tắc ở Điều 5."
+   ]
   },
   {
    "type": "pair",
@@ -166,7 +178,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 5 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 5 — tự chịu trách nhiệm về rủi ro.",
+    "Sai: bảo vệ nhà đầu tư là chống vi phạm, không bảo đảm không lỗ.",
+    "Sai: công khai không phải căn cứ chính.",
+    "Sai: tự do giao dịch không phải căn cứ chính."
+   ]
   },
   {
    "type": "recall",

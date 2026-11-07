@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 10 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 10 — vi phạm có tổ chức là tình tiết tăng nặng.",
+    "Sai: khắc phục hậu quả là tình tiết giảm nhẹ.",
+    "Sai: trình độ lạc hậu là tình tiết giảm nhẹ.",
+    "Sai: phụ nữ mang thai vi phạm là tình tiết giảm nhẹ."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 10 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm c khoản 1 Điều 10 — xúi giục người chưa thành niên vi phạm là tình tiết tăng nặng.",
+    "Sai: đây là tăng nặng, không phải giảm nhẹ.",
+    "Sai: tình tiết áp dụng với người xúi giục, không phải người bị xúi giục.",
+    "Sai: có ảnh hưởng đến mức xử phạt."
+   ]
   },
   {
    "type": "pair",

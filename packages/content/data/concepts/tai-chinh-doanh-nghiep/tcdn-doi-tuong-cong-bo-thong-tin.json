@@ -82,7 +82,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 118 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 118 Luật Chứng khoán — công ty đại chúng là đối tượng công bố thông tin.",
+    "Sai: hộ kinh doanh không tham gia thị trường chứng khoán.",
+    "Sai: công ty không phát hành chứng khoán ra công chúng không thuộc Điều 118.",
+    "Sai: hợp tác xã không thuộc đối tượng ở Điều 118."
+   ]
   },
   {
    "type": "mcq",
@@ -99,7 +105,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 118 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm e khoản 1 Điều 118 — cổ đông lớn (sở hữu từ 5% cổ phiếu có quyền biểu quyết) phải công bố thông tin.",
+    "Sai: 1% không phải ngưỡng cổ đông lớn.",
+    "Sai: từ 5% đã phải công bố, không đợi đến 10%.",
+    "Sai: 51% là mức chi phối, cao hơn nhiều ngưỡng 5%."
+   ]
   },
   {
    "type": "pair",

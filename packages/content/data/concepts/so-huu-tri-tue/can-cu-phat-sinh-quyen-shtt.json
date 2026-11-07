@@ -84,7 +84,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 6 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 6 — quyền tác giả phát sinh khi tác phẩm được sáng tạo và thể hiện dưới hình thức vật chất nhất định, không phụ thuộc đăng ký.",
+    "Sai: đăng ký quyền tác giả không phải điều kiện phát sinh quyền.",
+    "Sai: quyền phát sinh không phụ thuộc việc công bố.",
+    "Sai: quyền phát sinh không phụ thuộc việc bán tác phẩm."
+   ]
   },
   {
    "type": "mcq",
@@ -101,7 +107,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 6 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 3 Điều 6 — nhãn hiệu (trừ nhãn hiệu nổi tiếng) được xác lập trên cơ sở quyết định cấp văn bằng bảo hộ.",
+    "Sai: tự động phát sinh là cơ chế của quyền tác giả.",
+    "Sai: sử dụng chỉ làm phát sinh quyền với nhãn hiệu nổi tiếng.",
+    "Sai: công bố trên báo không xác lập quyền đối với nhãn hiệu."
+   ]
   },
   {
    "type": "pair",

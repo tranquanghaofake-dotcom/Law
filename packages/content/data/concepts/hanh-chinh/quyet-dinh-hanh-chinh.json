@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 3 Luật Tố tụng hành chính 2015 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 3 Luật Tố tụng hành chính — về vấn đề cụ thể, áp dụng một lần với một hoặc một số đối tượng cụ thể.",
+    "Sai: áp dụng nhiều lần cho mọi chủ thể là văn bản quy phạm pháp luật.",
+    "Sai: Quốc hội không ban hành quyết định hành chính cá biệt.",
+    "Sai: văn bản quy phạm không phải quyết định hành chính theo Luật Tố tụng hành chính."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 3 Luật Tố tụng hành chính 2015 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 3 — hành vi hành chính gồm cả không thực hiện nhiệm vụ, công vụ theo luật.",
+    "Sai: không có khái niệm \"quyết định hành chính quy phạm\" trong khoản 3.",
+    "Sai: không ban hành gì nên không phải văn bản quy phạm.",
+    "Sai: không giải quyết đúng hạn là hành vi hành chính, có thể bị khởi kiện."
+   ]
   },
   {
    "type": "pair",

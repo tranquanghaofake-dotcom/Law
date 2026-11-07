@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 118 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: nhà đầu tư nhỏ không phải người nội bộ không thuộc khoản 1 Điều 118.",
+    "Sai: công ty đại chúng là đối tượng công bố.",
+    "Sai: người nội bộ là đối tượng công bố.",
+    "Sai: Sở giao dịch và tổ chức niêm yết là đối tượng công bố."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 118 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm e khoản 1 Điều 118 — cổ đông lớn từ 5%.",
+    "Sai: 1% là ngưỡng thay đổi.",
+    "Sai: không phải 10%.",
+    "Sai: không phải 20%."
+   ]
   },
   {
    "type": "pair",

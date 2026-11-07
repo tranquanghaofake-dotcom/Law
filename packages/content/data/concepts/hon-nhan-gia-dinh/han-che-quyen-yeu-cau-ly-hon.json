@@ -1,0 +1,129 @@
+{
+ "id": "han-che-quyen-yeu-cau-ly-hon",
+ "subject": "hon-nhan-gia-dinh",
+ "chapter": "c4-ly-hon",
+ "term": "Hạn chế quyền yêu cầu ly hôn của người chồng",
+ "definition": "Chồng không có quyền yêu cầu ly hôn trong trường hợp vợ đang có thai, sinh con hoặc đang nuôi con dưới 12 tháng tuổi.",
+ "plain": "Chỉ hạn chế NGƯỜI CHỒNG, trong ba trường hợp: vợ ĐANG CÓ THAI, vợ SINH CON, vợ ĐANG NUÔI CON DƯỚI 12 THÁNG TUỔI. Người VỢ vẫn có quyền yêu cầu ly hôn trong các trường hợp này. Hạn chế áp dụng với yêu cầu ly hôn đơn phương của chồng; khi vợ cũng muốn ly hôn thì hai bên có thể thuận tình.",
+ "example": "Vợ sinh con được 8 tháng, chồng nộp đơn xin ly hôn: Tòa án trả lại đơn vì chồng chưa có quyền yêu cầu.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 3 Điều 51 Luật Hôn nhân và gia đình 2014",
+  "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "ly-hon",
+  "thuan-tinh-ly-hon",
+  "ly-hon-theo-yeu-cau-mot-ben"
+ ],
+ "keywords": [
+  "chồng",
+  "đang có thai",
+  "sinh con",
+  "dưới 12 tháng tuổi"
+ ],
+ "memo": {
+  "gist": "Khi vợ đang mang thai, sinh con hoặc nuôi con dưới 12 tháng, người chồng không được đơn phương xin ly hôn.",
+  "kind": "checklist",
+  "hook": "Mẹ bầu, mẹ đẻ, mẹ bỉm dưới một năm: chồng chưa được gõ cửa Tòa án.",
+  "tree": [
+   {
+    "label": "Ai bị hạn chế",
+    "icon": "person",
+    "children": [
+     "Người chồng"
+    ]
+   },
+   {
+    "label": "Khi nào",
+    "icon": "calendar",
+    "children": [
+     "Vợ đang có thai",
+     "Vợ sinh con",
+     "Con dưới 12 tháng tuổi"
+    ]
+   },
+   {
+    "label": "Người vợ",
+    "icon": "unlock",
+    "children": [
+     "Vẫn có quyền yêu cầu"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Vợ đang mang thai muốn ly hôn thì có được không?",
+   "a": "Được. Khoản 3 Điều 51 chỉ hạn chế người chồng, không hạn chế người vợ."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khoản 3 Điều 51 hạn chế quyền yêu cầu ly hôn của ai?",
+   "options": [
+    "Người chồng",
+    "Người vợ",
+    "Cả vợ và chồng",
+    "Cha mẹ của vợ chồng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 51: chồng không có quyền yêu cầu ly hôn khi vợ đang có thai, sinh con hoặc nuôi con dưới 12 tháng tuổi.",
+   "why": [
+    "Đúng: chỉ người chồng bị hạn chế.",
+    "Sai: người vợ vẫn có quyền yêu cầu ly hôn trong các trường hợp này.",
+    "Sai: hạn chế nhằm bảo vệ người vợ và con nên chỉ áp dụng với chồng.",
+    "Sai: quyền của cha mẹ, người thân thích nằm ở khoản 2 Điều 51 với điều kiện khác."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chồng không có quyền yêu cầu ly hôn trong trường hợp vợ đang có thai, sinh con hoặc đang nuôi con dưới {{12 tháng}} tuổi."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "{{Chồng}} không có quyền yêu cầu ly hôn trong trường hợp vợ đang {{có thai}}, sinh con hoặc đang nuôi con dưới 12 tháng tuổi."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Vợ anh Quân sinh con được 10 tháng. Anh Quân và vợ cùng muốn ly hôn, đã thỏa thuận xong về con và tài sản. Tòa án xử lý thế nào?",
+   "options": [
+    "Có thể công nhận thuận tình ly hôn",
+    "Trả lại đơn, vì con chưa đủ 12 tháng tuổi",
+    "Tạm đình chỉ đến khi con đủ 12 tháng tuổi",
+    "Chỉ thụ lý khi người vợ rút tên khỏi đơn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 51 nhằm bảo vệ người vợ trước yêu cầu đơn phương của chồng; khi vợ chồng cùng yêu cầu và thật sự tự nguyện thì Tòa án xem xét theo Điều 55.",
+   "why": [
+    "Đúng: cùng yêu cầu, tự nguyện, đã thỏa thuận thì áp dụng Điều 55.",
+    "Sai: hạn chế chỉ chặn yêu cầu đơn phương của chồng, không chặn yêu cầu của vợ.",
+    "Sai: luật không quy định tạm đình chỉ trong trường hợp này.",
+    "Sai: không có thủ tục buộc vợ rút tên; đơn của vợ là căn cứ để Tòa án thụ lý."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khi vợ đang nuôi con dưới 12 tháng tuổi thì cả vợ và chồng đều không có quyền yêu cầu ly hôn.",
+   "answer": false,
+   "explain": "Sai. Khoản 3 Điều 51 chỉ hạn chế người chồng; người vợ vẫn có quyền yêu cầu ly hôn."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu ba trường hợp người chồng không có quyền yêu cầu ly hôn.",
+   "model": "Khi vợ đang có thai, khi vợ sinh con, hoặc khi vợ đang nuôi con dưới 12 tháng tuổi (khoản 3 Điều 51).",
+   "keywords": [
+    "đang có thai",
+    "sinh con",
+    "dưới 12 tháng tuổi",
+    "chồng"
+   ]
+  }
+ ]
+}

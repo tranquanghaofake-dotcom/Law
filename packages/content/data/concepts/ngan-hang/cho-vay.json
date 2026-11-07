@@ -74,7 +74,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 7 Điều 4 Luật Các tổ chức tín dụng 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 7 Điều 4 — giao một khoản tiền để sử dụng vào mục đích xác định trong thời gian nhất định, có hoàn trả gốc và lãi.",
+    "Sai: bên vay phải hoàn trả gốc và lãi.",
+    "Sai: mua lại khoản phải thu là bao thanh toán.",
+    "Sai: cam kết trả thay là bảo lãnh."
+   ]
   },
   {
    "type": "mcq",
@@ -91,7 +97,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 7 Điều 4 Luật Các tổ chức tín dụng 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 7 Điều 4 — cho vay là hình thức cấp tín dụng.",
+    "Sai: huy động vốn là nhận tiền gửi, phát hành giấy tờ có giá.",
+    "Sai: dịch vụ thanh toán là nghiệp vụ khác.",
+    "Sai: hoạt động ngoại hối là nghiệp vụ khác."
+   ]
   },
   {
    "type": "pair",

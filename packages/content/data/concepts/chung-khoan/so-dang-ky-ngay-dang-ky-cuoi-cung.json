@@ -76,7 +76,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 61 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 61 — Tổng công ty lưu ký và bù trừ.",
+    "Sai: công ty chứng khoán không lập Sổ này.",
+    "Sai: Sở giao dịch không lập Sổ này.",
+    "Sai: công ty phát hành không lập Sổ khi đã đăng ký tập trung."
+   ]
   },
   {
    "type": "mcq",
@@ -93,7 +99,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 5 Điều 61 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 5 Điều 61 — người có tên tại ngày đăng ký cuối cùng.",
+    "Sai: mốc là ngày đăng ký cuối cùng, không phải ngày trả cổ tức.",
+    "Sai: thời gian nắm giữ không phải tiêu chí.",
+    "Sai: không phải ngày công bố."
+   ]
   },
   {
    "type": "pair",
@@ -155,7 +167,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 5 Điều 61 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: ngày 15/6 X vẫn có tên trên Sổ.",
+    "Sai: người mua chưa có tên vào 15/6.",
+    "Sai: luật không chia theo thời gian.",
+    "Sai: vẫn có người nhận cổ tức."
+   ]
   },
   {
    "type": "recall",

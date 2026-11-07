@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 26 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 26 — tối thiểu 20 ngày.",
+    "Sai: không phải 10 ngày.",
+    "Sai: không phải 30 ngày.",
+    "Sai: 90 ngày là thời hạn hoàn thành phân phối."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 26 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 26 — 90 ngày, gia hạn tối đa 30 ngày.",
+    "Sai: không phải 30 ngày.",
+    "Sai: không phải 60 ngày.",
+    "Sai: không phải 12 tháng."
+   ]
   },
   {
    "type": "pair",
@@ -163,7 +175,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 26 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 26 — phân phối theo tỷ lệ: 1/4 × 40.000 = 10.000.",
+    "Sai: không phân phối theo thứ tự đăng ký.",
+    "Sai: không bốc thăm.",
+    "Sai: tổ chức phát hành không tự quyết."
+   ]
   },
   {
    "type": "recall",

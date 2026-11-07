@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 20 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 20 — người thành niên là người từ đủ 18 tuổi trở lên.",
+    "Sai: 16 tuổi chưa thành niên.",
+    "Sai: 21 tuổi không phải mốc.",
+    "Sai: 15 tuổi chưa thành niên."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 20 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 20 — người thành niên bị tuyên mất năng lực hành vi dân sự thì không có năng lực đầy đủ.",
+    "Sai: là sinh viên không ảnh hưởng năng lực hành vi.",
+    "Sai: chưa có việc làm không ảnh hưởng năng lực hành vi.",
+    "Sai: tình trạng hôn nhân không ảnh hưởng năng lực hành vi."
+   ]
   },
   {
    "type": "pair",

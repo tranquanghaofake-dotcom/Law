@@ -75,7 +75,13 @@
     "Tính xã hội, phản ánh lợi ích chung của toàn thể cộng đồng"
    ],
    "answer": 0,
-   "explain": "Đạo đức cũng có tính quy phạm và ý chí nhưng không do nhà nước bảo đảm bằng cưỡng chế."
+   "explain": "Đạo đức cũng có tính quy phạm và ý chí nhưng không do nhà nước bảo đảm bằng cưỡng chế.",
+   "why": [
+    "Đúng: tính quyền lực nhà nước (được nhà nước bảo đảm bằng cưỡng chế) phân biệt pháp luật với đạo đức.",
+    "Sai: đạo đức cũng có tính quy phạm.",
+    "Sai: đạo đức cũng thể hiện ý chí chung.",
+    "Sai: đạo đức cũng có tính xã hội."
+   ]
   },
   {
    "type": "mcq",
@@ -88,7 +94,13 @@
     "Là hướng dẫn chung không bắt buộc, mỗi người tự quyết định có áp dụng hay không trong đời sống"
    ],
    "answer": 0,
-   "explain": "VD8."
+   "explain": "VD8.",
+   "why": [
+    "Đúng: tính quy phạm phổ biến — khuôn mẫu chung, bắt buộc với mọi chủ thể trong điều kiện dự liệu, áp dụng nhiều lần.",
+    "Sai: quy tắc riêng cho một số người không phải tính phổ biến.",
+    "Sai: không phụ thuộc văn bản kèm theo.",
+    "Sai: pháp luật có tính bắt buộc."
+   ]
   },
   {
    "type": "pair",

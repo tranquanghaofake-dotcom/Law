@@ -74,7 +74,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết BLHS"
-   }
+   },
+   "why": [
+    "Đúng: theo giáo trình, hành vi khách quan là dấu hiệu bắt buộc trong mọi cấu thành.",
+    "Sai: hậu quả chỉ bắt buộc trong cấu thành vật chất.",
+    "Sai: công cụ, phương tiện chỉ bắt buộc ở một số tội.",
+    "Sai: địa điểm chỉ bắt buộc ở một số tội."
+   ]
   },
   {
    "type": "mcq",
@@ -91,7 +97,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết BLHS"
-   }
+   },
+   "why": [
+    "Đúng: cử động do bị cưỡng bức thân thể không có ý chí nên không phải hành vi khách quan.",
+    "Sai: không cứu giúp là hành vi dạng không hành động (Điều 132).",
+    "Sai: dùng dao đâm là hành vi khách quan.",
+    "Sai: lừa đảo qua mạng là hành vi khách quan."
+   ]
   },
   {
    "type": "pair",

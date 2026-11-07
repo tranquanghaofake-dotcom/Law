@@ -80,7 +80,13 @@
     "Kết luận"
    ],
    "answer": 0,
-   "explain": "Giả định trả lời ai, khi nào."
+   "explain": "Giả định trả lời ai, khi nào.",
+   "why": [
+    "Đúng: giả định nêu hoàn cảnh, điều kiện, chủ thể.",
+    "Sai: quy định nêu cách xử sự.",
+    "Sai: chế tài nêu hậu quả bất lợi.",
+    "Sai: \"kết luận\" không phải bộ phận của quy phạm."
+   ]
   },
   {
    "type": "mcq",
@@ -93,7 +99,13 @@
     "Tiền đề"
    ],
    "answer": 0,
-   "explain": "Chế tài."
+   "explain": "Chế tài.",
+   "why": [
+    "Đúng: chế tài nêu hậu quả bất lợi khi không thực hiện đúng quy định.",
+    "Sai: giả định nêu hoàn cảnh, chủ thể.",
+    "Sai: quy định nêu cách xử sự.",
+    "Sai: \"tiền đề\" không phải bộ phận của quy phạm."
+   ]
   },
   {
    "type": "pair",

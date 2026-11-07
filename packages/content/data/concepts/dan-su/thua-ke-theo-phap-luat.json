@@ -89,7 +89,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điểm a khoản 1 Điều 651 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 651 — vợ, chồng, cha đẻ, mẹ đẻ, cha nuôi, mẹ nuôi, con đẻ, con nuôi.",
+    "Sai: ông bà, cháu thuộc hàng thứ hai.",
+    "Sai: anh chị em ruột thuộc hàng thứ hai.",
+    "Sai: cô, dì, chú, bác ruột thuộc hàng thứ ba."
+   ]
   },
   {
    "type": "mcq",
@@ -106,7 +112,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 650 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 650 — không có di chúc thì thừa kế theo pháp luật.",
+    "Sai: di chúc hợp pháp định đoạt toàn bộ thì thừa kế theo di chúc.",
+    "Sai: người thừa kế theo di chúc còn sống, nhận di sản thì thừa kế theo di chúc.",
+    "Sai: công chứng không làm áp dụng thừa kế theo pháp luật."
+   ]
   },
   {
    "type": "pair",

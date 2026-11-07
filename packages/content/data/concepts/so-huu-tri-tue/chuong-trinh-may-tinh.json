@@ -86,7 +86,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 22 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 22 — chương trình máy tính được bảo hộ như tác phẩm văn học.",
+    "Sai: tác phẩm mỹ thuật là loại hình khác.",
+    "Sai: chương trình máy tính bị loại khỏi đối tượng sáng chế (khoản 2 Điều 59).",
+    "Sai: kiểu dáng công nghiệp là hình dáng bên ngoài của sản phẩm."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 59 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 59 loại chương trình máy tính khỏi đối tượng bảo hộ sáng chế.",
+    "Sai: luật loại trừ rõ ràng.",
+    "Sai: tính mới không khắc phục được việc bị loại trừ.",
+    "Sai: đăng ký ở nước ngoài không làm thay đổi quy định của luật Việt Nam."
+   ]
   },
   {
    "type": "pair",

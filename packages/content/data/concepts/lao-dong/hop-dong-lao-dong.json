@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 13 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: đoạn 2 khoản 1 Điều 13 — có nội dung về việc làm có trả công, tiền lương và sự quản lý, điều hành, giám sát thì là hợp đồng lao động.",
+    "Sai: tên gọi không quyết định bản chất.",
+    "Sai: hợp đồng không vô hiệu chỉ vì tên gọi.",
+    "Sai: đây không phải hợp đồng thương mại."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 13 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 13 — trước khi nhận người lao động vào làm việc.",
+    "Sai: không được chờ 2 tháng.",
+    "Sai: không chờ người lao động yêu cầu.",
+    "Sai: phải ký trước khi làm việc; thử việc có thể ghi trong hợp đồng lao động."
+   ]
   },
   {
    "type": "pair",

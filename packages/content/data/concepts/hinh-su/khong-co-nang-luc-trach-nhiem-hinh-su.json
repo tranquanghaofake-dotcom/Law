@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 13 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 13 — tự đặt mình vào tình trạng say rượu, mất khả năng điều khiển vẫn phải chịu trách nhiệm hình sự.",
+    "Sai: say rượu không loại trừ trách nhiệm.",
+    "Sai: không được miễn hình phạt vì say rượu.",
+    "Sai: vẫn chịu trách nhiệm hình sự."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 21 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 21 — mắc bệnh tâm thần làm mất khả năng nhận thức hoặc điều khiển hành vi thì không phải chịu trách nhiệm hình sự.",
+    "Sai: không chịu trách nhiệm hình sự (hạn chế khả năng mới là giảm nhẹ).",
+    "Sai: không chịu như người bình thường.",
+    "Sai: không phải hoãn thi hành án."
+   ]
   },
   {
    "type": "pair",

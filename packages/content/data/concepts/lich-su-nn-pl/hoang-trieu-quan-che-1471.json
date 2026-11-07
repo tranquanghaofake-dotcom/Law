@@ -87,7 +87,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển XII, tờ 66a"
-   }
+   },
+   "why": [
+    "Đúng: Hoàng triều quan chế được hiệu định năm 1471 (Hồng Đức thứ 2).",
+    "Sai: 1466 là năm đặt lục bộ, lục khoa.",
+    "Sai: 1483 không phải năm hiệu định quan chế.",
+    "Sai: 1428 là năm Lê Lợi lên ngôi."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển XII, tờ 66b"
-   }
+   },
+   "why": [
+    "Đúng: câu này thể hiện vua trực tiếp nắm quyền đặt luật lệ, quan chế — tập quyền cao độ.",
+    "Sai: vua không giao quyền lập pháp cho đại thần.",
+    "Sai: không chia quyền cho địa phương.",
+    "Sai: không có thoái vị."
+   ]
   },
   {
    "type": "pair",

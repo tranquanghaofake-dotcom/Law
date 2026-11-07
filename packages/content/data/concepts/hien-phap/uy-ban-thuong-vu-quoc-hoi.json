@@ -88,7 +88,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 73 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 73 — cơ quan thường trực của Quốc hội.",
+    "Sai: cơ quan hành chính cao nhất là Chính phủ.",
+    "Sai: không tham mưu cho Chủ tịch nước.",
+    "Sai: không phải ủy ban lâm thời."
+   ]
   },
   {
    "type": "mcq",
@@ -105,7 +111,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 74 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 74 — Ủy ban thường vụ Quốc hội giải thích Hiến pháp, luật, pháp lệnh.",
+    "Sai: Hội đồng nhân dân, Tòa án không có thẩm quyền này.",
+    "Sai: Chính phủ không có thẩm quyền này.",
+    "Sai: các bộ không có thẩm quyền này."
+   ]
   },
   {
    "type": "pair",
@@ -175,7 +187,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 73 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 73 — không đồng thời là thành viên Chính phủ.",
+    "Sai: đồng ý của Thủ tướng không loại trừ được quy định Hiến pháp.",
+    "Sai: tư cách đại biểu không loại trừ được quy định khoản 3.",
+    "Sai: Hiến pháp không có ngoại lệ năm đầu."
+   ]
   },
   {
    "type": "recall",

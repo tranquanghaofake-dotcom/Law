@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 4 — một phần vốn cổ phần.",
+    "Sai: phần nợ là trái phiếu.",
+    "Sai: vốn góp của quỹ là chứng chỉ quỹ.",
+    "Sai: tài sản cơ sở thuộc phái sinh."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: người sở hữu cổ phiếu là cổ đông.",
+    "Sai: chủ nợ là người sở hữu trái phiếu.",
+    "Sai: không phải người được ủy thác.",
+    "Sai: không phải bên bảo lãnh."
+   ]
   },
   {
    "type": "pair",

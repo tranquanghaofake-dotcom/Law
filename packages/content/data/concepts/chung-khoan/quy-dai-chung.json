@@ -88,7 +88,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 108 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 1 Điều 108 — tối thiểu 50 tỷ đồng.",
+    "Sai: không phải 10 tỷ.",
+    "Sai: không phải 30 tỷ.",
+    "Sai: không phải 100 tỷ."
+   ]
   },
   {
    "type": "mcq",
@@ -105,7 +111,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 108 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 108 — 90 ngày.",
+    "Sai: không phải 30 ngày.",
+    "Sai: không phải 60 ngày.",
+    "Sai: không phải 12 tháng."
+   ]
   },
   {
    "type": "pair",
@@ -167,7 +179,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 108 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 108 — công ty quản lý quỹ chịu chi phí.",
+    "Sai: nhà đầu tư không chịu chi phí.",
+    "Sai: ngân hàng giám sát không chịu.",
+    "Sai: cơ quan quản lý không chịu."
+   ]
   },
   {
    "type": "recall",

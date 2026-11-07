@@ -72,7 +72,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 86 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 86 — người bị xử phạt không tự nguyện chấp hành quyết định.",
+    "Sai: phải có thời hạn tự nguyện chấp hành trước.",
+    "Sai: khiếu nại không phải căn cứ cưỡng chế.",
+    "Sai: cưỡng chế chỉ khi không tự nguyện chấp hành."
+   ]
   },
   {
    "type": "mcq",
@@ -89,7 +95,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 86 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 2 Điều 86 — kê biên tài sản có giá trị tương ứng số tiền phạt để bán đấu giá.",
+    "Sai: tạm giam là biện pháp tố tụng hình sự.",
+    "Sai: phạt tù là hình phạt hình sự.",
+    "Sai: trường giáo dưỡng, cai nghiện là biện pháp xử lý hành chính, không phải biện pháp cưỡng chế."
+   ]
   },
   {
    "type": "pair",

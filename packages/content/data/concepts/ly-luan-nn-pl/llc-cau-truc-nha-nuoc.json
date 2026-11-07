@@ -67,7 +67,13 @@
     "Hai hệ thống pháp luật song song tồn tại, mỗi bên áp dụng luật và tòa án riêng"
    ],
    "answer": 0,
-   "explain": "Bài 6."
+   "explain": "Bài 6.",
+   "why": [
+    "Đúng: nhà nước đơn nhất có một chủ quyền chung; đơn vị hành chính – lãnh thổ không có chủ quyền riêng.",
+    "Sai: nhiều chủ quyền, hiến pháp riêng là đặc điểm nhà nước liên bang.",
+    "Sai: bang có hiến pháp riêng là nhà nước liên bang.",
+    "Sai: hai hệ thống pháp luật song song là đặc điểm liên bang."
+   ]
   },
   {
    "type": "mcq",
@@ -80,7 +86,13 @@
     "Nhật Bản"
    ],
    "answer": 0,
-   "explain": "Hoa Kỳ gồm 50 bang có chủ quyền hạn chế."
+   "explain": "Hoa Kỳ gồm 50 bang có chủ quyền hạn chế.",
+   "why": [
+    "Đúng: Hoa Kỳ là nhà nước liên bang.",
+    "Sai: Việt Nam là nhà nước đơn nhất.",
+    "Sai: Pháp là nhà nước đơn nhất.",
+    "Sai: Nhật Bản là nhà nước đơn nhất."
+   ]
   },
   {
    "type": "pair",

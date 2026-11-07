@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 5 Điều 88 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 5 Điều 88 — Chủ tịch nước giữ chức Chủ tịch Hội đồng quốc phòng và an ninh.",
+    "Sai: Thủ tướng là thành viên, không phải Chủ tịch.",
+    "Sai: Bộ trưởng Quốc phòng là thành viên.",
+    "Sai: Chủ tịch Quốc hội là thành viên."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 89 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 89 — Chủ tịch nước trình Quốc hội phê chuẩn danh sách thành viên.",
+    "Sai: Thủ tướng không trình danh sách này.",
+    "Sai: Bộ trưởng Quốc phòng không trình.",
+    "Sai: Ủy ban thường vụ không trình."
+   ]
   },
   {
    "type": "pair",

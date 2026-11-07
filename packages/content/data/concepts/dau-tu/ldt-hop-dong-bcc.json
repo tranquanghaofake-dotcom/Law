@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 14 Điều 3 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 14 Điều 3 — hợp đồng BCC không thành lập tổ chức kinh tế.",
+    "Sai: thành lập công ty liên doanh là hình thức thành lập tổ chức kinh tế, trái với bản chất BCC.",
+    "Sai: BCC ký giữa các nhà đầu tư; hợp đồng giữa Nhà nước và nhà đầu tư tư nhân là hợp đồng PPP.",
+    "Sai: nhà đầu tư trong nước cũng ký BCC được."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 22 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 22 — BCC có nhà đầu tư nước ngoài thì làm thủ tục cấp Giấy chứng nhận đăng ký đầu tư theo Điều 26.",
+    "Sai: có nhà đầu tư nước ngoài thì phải làm thủ tục cấp Giấy chứng nhận.",
+    "Sai: công chứng không thay được thủ tục đầu tư.",
+    "Sai: BCC không thành lập doanh nghiệp mới."
+   ]
   },
   {
    "type": "pair",

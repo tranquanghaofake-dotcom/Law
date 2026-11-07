@@ -78,7 +78,13 @@
    "source": {
     "kind": "textbook",
     "cite": "Giáo trình Luật Hiến pháp (mục lục 11 chương do Hào cung cấp), Chương 1 \"Những vấn đề chung về Hiến pháp\" — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
-   }
+   },
+   "why": [
+    "Đúng: luật Hiến pháp là ngành luật chủ đạo trong hệ thống pháp luật.",
+    "Sai: giáo trình xác định là ngành luật chủ đạo.",
+    "Sai: luật Hiến pháp có vị trí đặc biệt.",
+    "Sai: luật Hiến pháp là ngành luật độc lập."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "textbook",
     "cite": "Giáo trình Luật Hiến pháp (mục lục 11 chương do Hào cung cấp), Chương 1 \"Những vấn đề chung về Hiến pháp\" — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
-   }
+   },
+   "why": [
+    "Đúng: ngành luật là hệ thống quy phạm; khoa học là hệ thống tri thức.",
+    "Sai: ngành luật rộng hơn văn bản Hiến pháp.",
+    "Sai: khoa học luật không phải văn bản do Quốc hội ban hành.",
+    "Sai: môn học không phải nguồn luật."
+   ]
   },
   {
    "type": "pair",

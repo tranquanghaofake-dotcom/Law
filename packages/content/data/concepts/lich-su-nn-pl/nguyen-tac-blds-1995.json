@@ -81,7 +81,13 @@
    "source": {
     "kind": "primary",
     "cite": "Bộ luật Dân sự 1995, Điều 14"
-   }
+   },
+   "why": [
+    "Đúng: Điều 14 Bộ luật Dân sự 1995 — áp dụng tập quán hoặc quy định tương tự của pháp luật.",
+    "Sai: không áp dụng bắt buộc án lệ nước ngoài.",
+    "Sai: Ủy ban nhân dân không phải nguồn áp dụng.",
+    "Sai: không được từ chối giải quyết."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "primary",
     "cite": "Bộ luật Dân sự 1995, Điều 7"
-   }
+   },
+   "why": [
+    "Đúng: Điều 7 — cam kết, thỏa thuận hợp pháp có hiệu lực bắt buộc thực hiện.",
+    "Sai: không phải gợi ý.",
+    "Sai: không bắt buộc công chứng.",
+    "Sai: hiệu lực do luật định."
+   ]
   },
   {
    "type": "pair",

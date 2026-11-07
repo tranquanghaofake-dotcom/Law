@@ -89,7 +89,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 29 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 29 Luật Bầu cử — mỗi công dân chỉ được ghi tên vào một danh sách cử tri.",
+    "Sai: không được ghi ở hai nơi.",
+    "Sai: số cấp bầu cử không làm tăng số danh sách.",
+    "Sai: có giới hạn: một danh sách."
+   ]
   },
   {
    "type": "mcq",
@@ -106,7 +112,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 5 Điều 29 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 5 Điều 29 — người bị tạm giam được ghi tên để bầu đại biểu Quốc hội và Hội đồng nhân dân cấp tỉnh nơi bị tạm giam.",
+    "Sai: tạm giam không làm mất quyền bầu cử khi chưa có bản án.",
+    "Sai: luật cho bầu ở nơi bị tạm giam, không phải nơi thường trú cũ.",
+    "Sai: không cần Tòa án cho phép."
+   ]
   },
   {
    "type": "pair",

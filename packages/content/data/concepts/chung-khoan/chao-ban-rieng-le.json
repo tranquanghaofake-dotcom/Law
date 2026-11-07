@@ -71,7 +71,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 20 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 20 Điều 4 — không thông qua phương tiện thông tin đại chúng.",
+    "Sai: chào bán cho nhà đầu tư chiến lược là riêng lẻ.",
+    "Sai: dưới 100 nhà đầu tư không chuyên nghiệp là riêng lẻ.",
+    "Sai: chào bán cho nhà đầu tư chuyên nghiệp là riêng lẻ."
+   ]
   },
   {
    "type": "mcq",
@@ -88,7 +94,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 30 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 30 — dẫn chiếu Luật Doanh nghiệp và luật liên quan.",
+    "Sai: Luật Chứng khoán dẫn chiếu, không điều chỉnh trực tiếp.",
+    "Sai: không theo Luật Các tổ chức tín dụng.",
+    "Sai: không chỉ theo Bộ luật Dân sự."
+   ]
   },
   {
    "type": "pair",

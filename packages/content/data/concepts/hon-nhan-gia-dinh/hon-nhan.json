@@ -1,0 +1,126 @@
+{
+ "id": "hon-nhan",
+ "subject": "hon-nhan-gia-dinh",
+ "chapter": "c1-khai-quat",
+ "term": "Hôn nhân",
+ "definition": "Hôn nhân là quan hệ giữa vợ và chồng sau khi kết hôn.",
+ "plain": "Hôn nhân là QUAN HỆ (trạng thái kéo dài), còn kết hôn là HÀNH VI (sự kiện xác lập). Quan hệ này chỉ có giữa vợ và chồng và chỉ bắt đầu sau khi kết hôn hợp pháp; nó chấm dứt khi một bên chết hoặc bản án, quyết định ly hôn của Tòa án có hiệu lực pháp luật.",
+ "example": "An và Bình đăng ký kết hôn ngày 01/3; từ ngày đó giữa hai người có quan hệ hôn nhân.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 3 Luật Hôn nhân và gia đình 2014",
+  "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "ket-hon",
+  "thoi-ky-hon-nhan",
+  "gia-dinh"
+ ],
+ "keywords": [
+  "quan hệ giữa vợ và chồng",
+  "sau khi kết hôn"
+ ],
+ "memo": {
+  "gist": "Hôn nhân là mối quan hệ vợ chồng kéo dài, bắt đầu từ lúc kết hôn hợp pháp.",
+  "kind": "compare",
+  "hook": "Kết hôn là cái cổng, hôn nhân là con đường đi sau cổng.",
+  "tree": [
+   {
+    "label": "Kết hôn",
+    "icon": "door",
+    "children": [
+     "Hành vi",
+     "Diễn ra một lần"
+    ]
+   },
+   {
+    "label": "Hôn nhân",
+    "icon": "infinity",
+    "children": [
+     "Quan hệ",
+     "Kéo dài đến khi chấm dứt"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Hai người tổ chức đám cưới nhưng chưa đăng ký kết hôn thì đã có hôn nhân chưa?",
+   "a": "Chưa. Hôn nhân chỉ có sau khi kết hôn theo luật, tức là đã đăng ký kết hôn."
+  },
+  "contrast": [
+   {
+    "with": "ket-hon",
+    "text": "Kết hôn là việc xác lập quan hệ vợ chồng; hôn nhân là chính quan hệ đó sau khi đã xác lập."
+   }
+  ]
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 3, hôn nhân là gì?",
+   "options": [
+    "Quan hệ giữa vợ và chồng sau khi kết hôn",
+    "Việc nam và nữ xác lập quan hệ vợ chồng",
+    "Việc nam, nữ tổ chức cuộc sống chung",
+    "Tập hợp người gắn bó do quan hệ huyết thống"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 3: hôn nhân là quan hệ giữa vợ và chồng sau khi kết hôn.",
+   "why": [
+    "Đúng: hôn nhân là quan hệ, có sau khi kết hôn.",
+    "Đây là định nghĩa kết hôn (khoản 5 Điều 3) — một hành vi, không phải quan hệ.",
+    "Đây là chung sống như vợ chồng (khoản 7 Điều 3), không làm phát sinh quan hệ vợ chồng.",
+    "Đây là một phần định nghĩa gia đình (khoản 2 Điều 3), rộng hơn quan hệ vợ chồng."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hôn nhân là {{quan hệ}} giữa vợ và chồng sau khi {{kết hôn}}."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "{{Hôn nhân}} là quan hệ giữa vợ và chồng sau khi kết hôn."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Bà Hoa có chồng là ông Minh. Ông Minh bị Tòa án tuyên bố mất tích bằng quyết định có hiệu lực pháp luật. Quan hệ hôn nhân giữa bà Hoa và ông Minh lúc này thế nào?",
+   "options": [
+    "Vẫn còn; bà Hoa có thể yêu cầu ly hôn và Tòa án giải quyết cho ly hôn",
+    "Chấm dứt ngay từ ngày quyết định tuyên bố mất tích có hiệu lực",
+    "Chấm dứt sau 03 năm kể từ ngày quyết định có hiệu lực pháp luật",
+    "Tạm ngừng cho đến khi ông Minh trở về hoặc được tuyên bố đã chết"
+   ],
+   "answer": 0,
+   "explain": "Tuyên bố mất tích không làm chấm dứt hôn nhân; vợ hoặc chồng của người mất tích yêu cầu ly hôn thì Tòa án giải quyết cho ly hôn (khoản 2 Điều 56).",
+   "why": [
+    "Đúng: mất tích không tự chấm dứt hôn nhân; muốn chấm dứt thì yêu cầu ly hôn (khoản 2 Điều 56).",
+    "Sai: chỉ khi một bên chết (kể cả bị tuyên bố đã chết) hoặc ly hôn thì hôn nhân mới chấm dứt.",
+    "Sai: luật không có mốc tự chấm dứt sau 03 năm; mốc thời gian là điều kiện tuyên bố mất tích/đã chết theo Bộ luật Dân sự.",
+    "Sai: luật không có khái niệm \"tạm ngừng\" hôn nhân."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hôn nhân chỉ chấm dứt khi một bên vợ hoặc chồng chết.",
+   "answer": false,
+   "explain": "Sai. Hôn nhân còn chấm dứt khi bản án, quyết định ly hôn của Tòa án có hiệu lực pháp luật (khoản 14 Điều 3, Điều 57)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Hôn nhân khác kết hôn ở điểm nào?",
+   "model": "Hôn nhân là quan hệ giữa vợ và chồng sau khi kết hôn; kết hôn là hành vi nam nữ xác lập quan hệ vợ chồng theo điều kiện kết hôn và đăng ký kết hôn.",
+   "keywords": [
+    "quan hệ",
+    "hành vi",
+    "sau khi kết hôn",
+    "đăng ký kết hôn"
+   ]
+  }
+ ]
+}

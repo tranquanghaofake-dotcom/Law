@@ -75,7 +75,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điểm d khoản 1 Điều 4 Pháp lệnh Ngoại hối 2005 (sửa đổi, bổ sung năm 2013)"
-   }
+   },
+   "why": [
+    "Đúng: điểm d khoản 1 Điều 4 Pháp lệnh Ngoại hối — vàng dạng khối, thỏi, hạt, miếng khi mang vào, ra khỏi lãnh thổ Việt Nam.",
+    "Sai: nhẫn vàng mua bán trong nước không phải ngoại hối.",
+    "Sai: vàng trang sức trong gia đình không phải ngoại hối.",
+    "Sai: vàng nguyên liệu dùng trong nước không phải ngoại hối."
+   ]
   },
   {
    "type": "mcq",
@@ -92,7 +98,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điểm đ khoản 1 Điều 4 Pháp lệnh Ngoại hối 2005 (sửa đổi, bổ sung năm 2013)"
-   }
+   },
+   "why": [
+    "Đúng: điểm đ khoản 1 Điều 4 — đồng Việt Nam chuyển vào, ra khỏi lãnh thổ hoặc dùng trong thanh toán quốc tế.",
+    "Sai: đồng Việt Nam trong nước không phải ngoại hối.",
+    "Sai: gửi tiết kiệm trong nước không làm đồng Việt Nam thành ngoại hối.",
+    "Sai: chuyển ra nước ngoài thì là ngoại hối."
+   ]
   },
   {
    "type": "pair",

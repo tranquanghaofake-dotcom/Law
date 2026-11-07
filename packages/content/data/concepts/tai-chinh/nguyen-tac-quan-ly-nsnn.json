@@ -88,7 +88,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 8 Luật Ngân sách nhà nước 2025 (89/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 8 — chỉ chi khi có dự toán được giao, trừ trường hợp tạm cấp ngân sách.",
+    "Sai: ý kiến thủ trưởng không thay được dự toán được giao.",
+    "Sai: có tiền dư chưa đủ; phải có dự toán.",
+    "Sai: Kho bạc không cho đơn vị vay để chi ngoài dự toán."
+   ]
   },
   {
    "type": "mcq",
@@ -105,7 +111,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 8 Luật Ngân sách nhà nước 2025 (89/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 8 — toàn bộ các khoản thu, chi phải được dự toán, tổng hợp đầy đủ vào ngân sách.",
+    "Sai: nguyên tắc này cấm thu, chi ngoài ngân sách.",
+    "Sai: ngân sách phải công khai, minh bạch; và đây không phải nội dung của nguyên tắc tổng hợp đầy đủ.",
+    "Sai: không có ngưỡng; mọi khoản thu, chi đều phải đưa vào."
+   ]
   },
   {
    "type": "pair",

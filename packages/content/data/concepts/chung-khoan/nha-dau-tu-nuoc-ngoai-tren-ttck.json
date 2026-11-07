@@ -76,7 +76,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 51 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 51 — tỷ lệ sở hữu, điều kiện, trình tự, thủ tục.",
+    "Sai: không chỉ được mua trái phiếu Chính phủ.",
+    "Sai: không bắt buộc thành lập công ty.",
+    "Sai: không đòi quốc tịch Việt Nam."
+   ]
   },
   {
    "type": "mcq",
@@ -93,7 +99,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 51 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 51 — Chính phủ quy định chi tiết.",
+    "Sai: Sở giao dịch không quy định.",
+    "Sai: công ty có thể đặt tỷ lệ thấp hơn, nhưng không quy định chung.",
+    "Sai: Bộ Công Thương không quy định."
+   ]
   },
   {
    "type": "pair",

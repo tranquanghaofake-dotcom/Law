@@ -73,7 +73,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 8 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 1 Điều 8 cấm cơ quan nhà nước phân biệt đối xử giữa các doanh nghiệp.",
+    "Sai: ban hành quy chuẩn kỹ thuật áp dụng chung là quản lý nhà nước bình thường, không cản trở cạnh tranh.",
+    "Sai: đấu thầu công khai, minh bạch tạo cạnh tranh bình đẳng, không bị cấm.",
+    "Sai: kiểm tra an toàn thực phẩm là hoạt động quản lý theo luật chuyên ngành, không phải hành vi bị cấm ở Điều 8."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 8 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 8 trừ hàng hóa, dịch vụ thuộc lĩnh vực độc quyền nhà nước hoặc trường hợp khẩn cấp theo pháp luật.",
+    "Sai: số thuế nộp hay lao động địa phương không phải ngoại lệ; khuyến nghị như vậy là phân biệt, bị cấm.",
+    "Sai: là doanh nghiệp địa phương hay có hợp đồng dài hạn không phải ngoại lệ của điểm a khoản 1 Điều 8.",
+    "Sai: điểm a khoản 1 Điều 8 có ngoại lệ (độc quyền nhà nước, khẩn cấp), nên không phải mọi trường hợp đều bị cấm."
+   ]
   },
   {
    "type": "pair",

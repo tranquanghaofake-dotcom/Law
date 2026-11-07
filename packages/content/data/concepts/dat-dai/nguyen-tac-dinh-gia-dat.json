@@ -75,7 +75,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 158 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 158 — phương pháp định giá đất theo nguyên tắc thị trường.",
+    "Sai: khả năng ngân sách không phải nguyên tắc định giá.",
+    "Sai: ổn định giá không phải nguyên tắc ở điểm a.",
+    "Sai: ưu tiên đầu tư không phải nguyên tắc định giá."
+   ]
   },
   {
    "type": "mcq",
@@ -92,7 +98,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 158 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm đ khoản 1 Điều 158 — hài hòa lợi ích giữa Nhà nước, người sử dụng đất và nhà đầu tư.",
+    "Sai: tổ chức tư vấn và ngân hàng không phải chủ thể luật nêu.",
+    "Sai: thiếu Nhà nước và người sử dụng đất.",
+    "Sai: luật nêu ba chủ thể, không chỉ người mua, người bán."
+   ]
   },
   {
    "type": "pair",

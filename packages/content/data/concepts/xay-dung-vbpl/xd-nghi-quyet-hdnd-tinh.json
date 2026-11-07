@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 21 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 10 Điều 4, Điều 21 — Hội đồng nhân dân cấp tỉnh ban hành nghị quyết.",
+    "Sai: quyết định là văn bản của Ủy ban nhân dân, Chủ tịch Ủy ban nhân dân.",
+    "Sai: chỉ thị không còn là văn bản quy phạm pháp luật.",
+    "Sai: thông tư do Bộ trưởng, Thủ trưởng cơ quan ngang Bộ ban hành."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 21 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 21 — quy định chi tiết nội dung được giao; biện pháp thi hành văn bản cấp trên, nghị quyết Hội đồng nhân dân; biện pháp quản lý nhà nước ở địa phương.",
+    "Sai: tội phạm, hình phạt, tố tụng hình sự chỉ quy định bằng luật.",
+    "Sai: thuế do Quốc hội quy định; địa phương không đặt thuế.",
+    "Sai: thí điểm chính sách khác luật thuộc nghị quyết của Quốc hội."
+   ]
   },
   {
    "type": "pair",

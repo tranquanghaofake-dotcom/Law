@@ -91,7 +91,13 @@
    "source": {
     "kind": "statute",
     "cite": "Hiến pháp 1946"
-   }
+   },
+   "why": [
+    "Đúng: Hiến pháp 1946 được thông qua ngày 9/11/1946.",
+    "Sai: 2/9/1945 là ngày Tuyên ngôn độc lập.",
+    "Sai: 6/1/1946 là ngày Tổng tuyển cử.",
+    "Sai: 19/12/1946 là ngày Toàn quốc kháng chiến."
+   ]
   },
   {
    "type": "mcq",
@@ -108,7 +114,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều thứ 22 Hiến pháp 1946"
-   }
+   },
+   "why": [
+    "Đúng: Điều thứ 22 — Nghị viện nhân dân là cơ quan có quyền cao nhất.",
+    "Sai: Chính phủ là cơ quan hành chính cao nhất.",
+    "Sai: Hiến pháp 1946 không có chức danh \"Chủ tịch dân chủ\".",
+    "Sai: Hiến pháp 1946 không nêu cơ quan Đảng."
+   ]
   },
   {
    "type": "pair",

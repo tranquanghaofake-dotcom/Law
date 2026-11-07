@@ -73,7 +73,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 574 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: Điều 574 — người có công việc không biết hoặc biết mà không phản đối.",
+    "Sai: có ủy quyền thì không còn là thực hiện công việc không có ủy quyền.",
+    "Sai: không có nghĩa vụ phải làm.",
+    "Sai: người có công việc phản đối thì không thuộc Điều 574."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 576 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: Điều 576 — được thanh toán chi phí hợp lý và có thể được trả thù lao.",
+    "Sai: không được sở hữu tài sản của người có công việc.",
+    "Sai: không có quyền phạt.",
+    "Sai: có quyền yêu cầu thanh toán chi phí."
+   ]
   },
   {
    "type": "pair",

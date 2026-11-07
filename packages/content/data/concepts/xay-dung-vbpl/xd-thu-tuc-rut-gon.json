@@ -82,7 +82,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 50 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 50 — trường hợp khẩn cấp, đột xuất vì quốc phòng, an ninh, thiên tai, dịch bệnh…",
+    "Sai: thiếu nhân lực không phải căn cứ rút gọn.",
+    "Sai: tránh lấy ý kiến không phải căn cứ rút gọn.",
+    "Sai: không phải mọi nghị quyết ngân sách đều được rút gọn."
+   ]
   },
   {
    "type": "mcq",
@@ -99,7 +105,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 51 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 51 — áp dụng thủ tục rút gọn thì không phải thực hiện quy trình xây dựng chính sách.",
+    "Sai: thủ tục rút gọn bỏ quy trình xây dựng chính sách.",
+    "Sai: không thêm thẩm định chính sách.",
+    "Sai: không có thủ tục lấy ý kiến Chủ tịch nước về chính sách."
+   ]
   },
   {
    "type": "pair",

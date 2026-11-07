@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 273 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 273 — 15 ngày kể từ ngày tuyên án (vắng mặt có lý do thì từ ngày nhận hoặc niêm yết bản án).",
+    "Sai: 30 ngày không phải thời hạn kháng cáo bản án sơ thẩm.",
+    "Sai: 07 ngày là thời hạn kháng cáo quyết định tạm đình chỉ, đình chỉ giải quyết vụ án (khoản 2 Điều 273).",
+    "Sai: luật tính 15 ngày, không phải 01 tháng."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 293 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 293 — chỉ xem xét phần có kháng cáo, kháng nghị hoặc có liên quan.",
+    "Sai: phần không bị kháng cáo, kháng nghị và không liên quan thì không xét lại.",
+    "Sai: phạm vi phúc thẩm theo nội dung kháng cáo, không giới hạn ở án phí.",
+    "Sai: Tòa phúc thẩm không tự chọn phần xét lại."
+   ]
   },
   {
    "type": "pair",

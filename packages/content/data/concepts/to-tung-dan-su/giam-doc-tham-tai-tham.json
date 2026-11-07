@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 325, Điều 351 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 325 (giám đốc thẩm — có căn cứ vi phạm theo Điều 326) và Điều 351 (tái thẩm — tình tiết mới được phát hiện).",
+    "Sai: cả giám đốc thẩm và tái thẩm đều xét bản án đã có hiệu lực pháp luật.",
+    "Sai: kháng cáo bản án sơ thẩm dẫn đến phúc thẩm, không phải tái thẩm; tái thẩm do kháng nghị.",
+    "Sai: hai thủ tục khác nhau về căn cứ (vi phạm so với tình tiết mới)."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 331 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 331 — Chánh án Tòa án nhân dân cấp tỉnh, Viện trưởng Viện kiểm sát nhân dân cấp tỉnh (cấp tối cao có quyền theo khoản 1).",
+    "Sai: đương sự chỉ có quyền đề nghị xem xét theo thủ tục giám đốc thẩm, không có quyền kháng nghị.",
+    "Sai: luật sư chỉ có thể giúp đương sự đề nghị, không có quyền kháng nghị.",
+    "Sai: Thẩm phán đã xét xử không có quyền kháng nghị giám đốc thẩm."
+   ]
   },
   {
    "type": "pair",

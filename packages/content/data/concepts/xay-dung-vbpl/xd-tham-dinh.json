@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 34 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 34 — Bộ Tư pháp chủ trì thẩm định dự án do Chính phủ trình.",
+    "Sai: Ủy ban của Quốc hội thẩm tra, không thẩm định.",
+    "Sai: Văn phòng Chính phủ không chủ trì thẩm định.",
+    "Sai: Bộ Nội vụ chỉ phối hợp."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 34 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 34 — 30 ngày kể từ ngày nhận đủ hồ sơ.",
+    "Sai: 45 ngày là mốc gửi hồ sơ thẩm tra trước kỳ họp, không phải thời hạn thẩm định.",
+    "Sai: 15 ngày ngắn hơn thời hạn luật định.",
+    "Sai: 10 ngày ngắn hơn thời hạn luật định."
+   ]
   },
   {
    "type": "pair",

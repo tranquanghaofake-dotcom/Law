@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 65 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 65 — bên người lao động là một hoặc nhiều tổ chức đại diện người lao động.",
+    "Sai: thương lượng tập thể do tổ chức đại diện thực hiện, không phải từng cá nhân.",
+    "Sai: cơ quan nhà nước không phải bên thương lượng.",
+    "Sai: Hội đồng trọng tài giải quyết tranh chấp, không thương lượng."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 65 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 65 — xác lập điều kiện lao động, quy định quan hệ giữa các bên, xây dựng quan hệ lao động tiến bộ, hài hòa, ổn định.",
+    "Sai: kỷ luật, cắt lương không phải mục đích.",
+    "Sai: tranh chấp cá nhân giải quyết theo thủ tục riêng.",
+    "Sai: tổ chức đại diện thành lập tự nguyện, không do doanh nghiệp chỉ định."
+   ]
   },
   {
    "type": "pair",

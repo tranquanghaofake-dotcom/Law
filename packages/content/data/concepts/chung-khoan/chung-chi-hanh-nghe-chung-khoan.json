@@ -82,7 +82,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 97 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 97 — chỉ ba loại; kiểm toán không thuộc.",
+    "Sai: môi giới là chứng chỉ hành nghề chứng khoán.",
+    "Sai: phân tích tài chính là chứng chỉ hành nghề chứng khoán.",
+    "Sai: quản lý quỹ là chứng chỉ hành nghề chứng khoán."
+   ]
   },
   {
    "type": "mcq",
@@ -99,7 +105,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 97 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm c khoản 3 Điều 97 — 03 năm liên tục.",
+    "Sai: không phải 01 năm.",
+    "Sai: không phải 02 năm.",
+    "Sai: không phải 05 năm."
+   ]
   },
   {
    "type": "pair",

@@ -82,7 +82,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 2 Luật Thuế giá trị gia tăng 2024 (đã sửa đổi, bổ sung)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 2 Luật Thuế giá trị gia tăng 2024 — tính trên giá trị tăng thêm qua sản xuất, lưu thông đến tiêu dùng.",
+    "Sai: tính trên lợi nhuận là thuế thu nhập doanh nghiệp.",
+    "Sai: thu nhập từ tiền lương, tiền công chịu thuế thu nhập cá nhân.",
+    "Sai: diện tích đất là căn cứ của thuế sử dụng đất."
+   ]
   },
   {
    "type": "mcq",
@@ -99,7 +105,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 3 Luật Thuế giá trị gia tăng 2024 (đã sửa đổi, bổ sung)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 3 — hàng hóa, dịch vụ dùng cho sản xuất, kinh doanh và tiêu dùng ở Việt Nam, trừ đối tượng ở Điều 5.",
+    "Sai: đối tượng chịu thuế gồm cả hàng hóa, dịch vụ trong nước, không giới hạn hàng nhập từ nước có hiệp định.",
+    "Sai: nhiều dịch vụ tài chính, ngân hàng thuộc diện không chịu thuế (Điều 5).",
+    "Sai: hàng xa xỉ là đối tượng của thuế tiêu thụ đặc biệt; thuế giá trị gia tăng áp dụng rộng."
+   ]
   },
   {
    "type": "pair",

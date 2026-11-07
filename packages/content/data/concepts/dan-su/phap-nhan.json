@@ -72,7 +72,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 74 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 74 không đặt điều kiện số lượng thành viên.",
+    "Sai: được thành lập theo luật định là điều kiện ở điểm a.",
+    "Sai: có tài sản độc lập là điều kiện ở điểm c.",
+    "Sai: nhân danh mình tham gia quan hệ là điều kiện ở điểm d."
+   ]
   },
   {
    "type": "mcq",
@@ -89,7 +95,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điểm c khoản 1 Điều 74 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: doanh nghiệp tư nhân không có tài sản độc lập với chủ doanh nghiệp, thiếu điều kiện ở điểm c khoản 1 Điều 74.",
+    "Sai: doanh nghiệp tư nhân có đăng ký kinh doanh.",
+    "Sai: doanh nghiệp tư nhân có tên riêng.",
+    "Sai: doanh nghiệp tư nhân được thuê lao động."
+   ]
   },
   {
    "type": "pair",

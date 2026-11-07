@@ -87,7 +87,13 @@
    "source": {
     "kind": "primary",
     "cite": "Luật Công ty 1990, Điều 2"
-   }
+   },
+   "why": [
+    "Đúng: Điều 2 Luật Công ty 1990 — thành viên chịu trách nhiệm trong phạm vi phần vốn góp.",
+    "Sai: trách nhiệm vô hạn là của chủ doanh nghiệp tư nhân.",
+    "Sai: không có trách nhiệm gấp đôi.",
+    "Sai: thành viên chịu trách nhiệm trong phạm vi vốn góp."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "primary",
     "cite": "Luật Công ty 1990, Điều 46"
-   }
+   },
+   "why": [
+    "Đúng: Luật Công ty 1990 có hiệu lực từ 15/4/1991.",
+    "Sai: 21/12/1990 là ngày thông qua.",
+    "Sai: 01/01/2000 là ngày hiệu lực của Luật Doanh nghiệp 1999.",
+    "Sai: 01/7/2015 là ngày hiệu lực của Luật Doanh nghiệp 2014."
+   ]
   },
   {
    "type": "pair",

@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 26 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 7 Điều 26 — được bồi thường, hỗ trợ, tái định cư khi Nhà nước thu hồi đất theo quy định.",
+    "Sai: người sử dụng đất vẫn có nghĩa vụ tài chính về đất.",
+    "Sai: chuyển mục đích phải được phép hoặc đăng ký theo luật.",
+    "Sai: đất đai thuộc sở hữu toàn dân, không thuộc sở hữu người sử dụng."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 6 Điều 26 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 6 Điều 26 — chuyển mục đích theo quy định của Luật Đất đai và pháp luật có liên quan.",
+    "Sai: chuyển mục đích phải theo thủ tục luật định.",
+    "Sai: luật không đòi hàng xóm đồng ý.",
+    "Sai: người sử dụng đất có quyền này theo luật."
+   ]
   },
   {
    "type": "pair",

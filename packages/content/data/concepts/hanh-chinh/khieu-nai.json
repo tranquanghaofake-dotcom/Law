@@ -89,7 +89,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 9 Luật Khiếu nại 2011 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 9 Luật Khiếu nại — 90 ngày kể từ ngày nhận được hoặc biết được quyết định, hành vi.",
+    "Sai: 30 ngày không phải thời hiệu khiếu nại lần đầu.",
+    "Sai: 01 năm không phải thời hiệu khiếu nại.",
+    "Sai: khiếu nại có thời hiệu."
+   ]
   },
   {
    "type": "mcq",
@@ -106,7 +112,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 7 Luật Khiếu nại 2011 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 7 — khiếu nại lần hai hoặc khởi kiện vụ án hành chính.",
+    "Sai: tố cáo là thủ tục khác, không thay khiếu nại.",
+    "Sai: không phải chờ 01 năm.",
+    "Sai: người khiếu nại còn quyền khiếu nại lần hai hoặc khởi kiện."
+   ]
   },
   {
    "type": "pair",

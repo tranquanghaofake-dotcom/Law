@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 53 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: Điều 53 — Nhà nước đại diện chủ sở hữu và thống nhất quản lý.",
+    "Sai: người sử dụng đất không phải chủ sở hữu.",
+    "Sai: Ủy ban nhân dân xã không đại diện chủ sở hữu.",
+    "Sai: Điều 53 giao cho Nhà nước, không riêng Quốc hội."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 53 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: Điều 53 — tài nguyên nước, khoáng sản, nguồn lợi vùng biển, vùng trời.",
+    "Sai: tài sản do cá nhân đầu tư thuộc sở hữu tư nhân.",
+    "Sai: vốn góp tư nhân không thuộc sở hữu toàn dân.",
+    "Sai: thu nhập hợp pháp thuộc sở hữu cá nhân (Điều 32)."
+   ]
   },
   {
    "type": "pair",

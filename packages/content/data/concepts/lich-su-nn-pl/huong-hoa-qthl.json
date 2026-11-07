@@ -73,7 +73,13 @@
    "source": {
     "kind": "primary",
     "cite": "Quốc triều hình luật, Điều 388"
-   }
+   },
+   "why": [
+    "Đúng: Điều 388 Quốc triều hình luật — phần hương hỏa là một phần hai mươi số ruộng đất.",
+    "Sai: một phần hai không phải tỷ lệ hương hỏa.",
+    "Sai: một phần ba không phải tỷ lệ hương hỏa.",
+    "Sai: phần còn lại chia cho các con, hương hỏa chỉ 1/20."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "primary",
     "cite": "Quốc triều hình luật, Điều 391"
-   }
+   },
+   "why": [
+    "Đúng: Điều 391 (lệnh năm 1517) — không có con trai trưởng thì con gái trưởng giữ hương hỏa.",
+    "Sai: trưởng họ không được ưu tiên hơn con gái trưởng.",
+    "Sai: con vợ lẽ không được ưu tiên theo Điều 391.",
+    "Sai: quan sở tại không giữ hương hỏa."
+   ]
   },
   {
    "type": "pair",

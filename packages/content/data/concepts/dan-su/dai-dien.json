@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 134 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 134 — người đại diện nhân danh và vì lợi ích của người được đại diện.",
+    "Sai: nhân danh chính mình thì không phải đại diện.",
+    "Sai: Ủy ban nhân dân không phải bên được đại diện.",
+    "Sai: Tòa án không phải bên được đại diện."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 142 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 142 — người được đại diện đã công nhận giao dịch.",
+    "Sai: bên kia không biết chỉ có ý nghĩa ở điểm b–c với điều kiện người được đại diện có lỗi; tự nó chưa đủ.",
+    "Sai: giá trị giao dịch không phải căn cứ.",
+    "Sai: công chứng không tạo ra quyền đại diện."
+   ]
   },
   {
    "type": "pair",

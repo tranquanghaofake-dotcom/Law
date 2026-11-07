@@ -87,7 +87,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển V, tờ 20b–21a"
-   }
+   },
+   "why": [
+    "Đúng: năm 939 Ngô Quyền xưng vương, đặt trăm quan, chế định triều nghi phẩm phục.",
+    "Sai: xưng hoàng đế, đặt Đại Cồ Việt là Đinh Bộ Lĩnh (968).",
+    "Sai: Ngô Quyền không xưng Tiết độ sứ.",
+    "Sai: Hình thư ban hành năm 1042."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển V, tờ 20b"
-   }
+   },
+   "why": [
+    "Đúng: Ngô Quyền đóng đô ở Loa Thành (Cổ Loa).",
+    "Sai: Hoa Lư là đô nhà Đinh.",
+    "Sai: Mê Linh là đô Trưng Vương.",
+    "Sai: Thăng Long từ năm 1010."
+   ]
   },
   {
    "type": "pair",

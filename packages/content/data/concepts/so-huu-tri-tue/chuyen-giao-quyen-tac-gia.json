@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 45 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 45 — tác giả không được chuyển nhượng quyền nhân thân, trừ quyền công bố tác phẩm.",
+    "Sai: quyền đứng tên không được chuyển nhượng.",
+    "Sai: quyền đặt tên tác phẩm không được chuyển nhượng.",
+    "Sai: quyền bảo vệ sự toàn vẹn không được chuyển nhượng."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 45, 47 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 47 — chuyển quyền sử dụng chỉ cho phép sử dụng có thời hạn, chủ sở hữu vẫn giữ quyền.",
+    "Sai: chuyển giao quyền sở hữu là chuyển nhượng (Điều 45).",
+    "Sai: hợp đồng chuyển quyền sử dụng phải lập thành văn bản (Điều 48).",
+    "Sai: quyền nhân thân nói chung không chuyển giao được."
+   ]
   },
   {
    "type": "pair",

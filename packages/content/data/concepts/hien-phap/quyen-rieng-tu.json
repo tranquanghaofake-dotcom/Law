@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 21 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 21 — thư tín, điện thoại, điện tín và hình thức trao đổi thông tin riêng tư khác.",
+    "Sai: liệt kê thiếu, không giới hạn ở thư tay.",
+    "Sai: không giới hạn ở người thân.",
+    "Sai: không giới hạn ở thư của cơ quan, tổ chức."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 21 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 21 — được pháp luật bảo đảm an toàn.",
+    "Sai: không được công khai theo yêu cầu tùy tiện.",
+    "Sai: Hiến pháp có bảo vệ.",
+    "Sai: bảo vệ mọi người."
+   ]
   },
   {
    "type": "pair",

@@ -86,7 +86,13 @@
    "source": {
     "kind": "primary",
     "cite": "Sắc lệnh 63/SL ngày 22/11/1945, Điều thứ 1"
-   }
+   },
+   "why": [
+    "Đúng: Điều thứ 1 Sắc lệnh 63/SL — xã và tỉnh có cả Hội đồng nhân dân và Ủy ban hành chính.",
+    "Sai: huyện, kỳ chỉ có Ủy ban hành chính.",
+    "Sai: huyện chỉ có Ủy ban hành chính.",
+    "Sai: kỳ chỉ có Ủy ban hành chính."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "primary",
     "cite": "Sắc lệnh 63/SL, Điều thứ 1"
-   }
+   },
+   "why": [
+    "Đúng: Ủy ban hành chính vừa thay mặt dân vừa đại diện Chính phủ.",
+    "Sai: Ủy ban hành chính không xét xử.",
+    "Sai: cơ quan quyền lực là Hội đồng nhân dân.",
+    "Sai: Ủy ban hành chính là cơ quan hành chính, có quyền quyết định."
+   ]
   },
   {
    "type": "pair",

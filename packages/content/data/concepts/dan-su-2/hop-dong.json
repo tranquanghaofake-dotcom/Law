@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 385 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: Điều 385 — sự thỏa thuận giữa các bên về xác lập, thay đổi, chấm dứt quyền, nghĩa vụ dân sự.",
+    "Sai: ý chí đơn phương là hành vi pháp lý đơn phương.",
+    "Sai: quyết định của cơ quan nhà nước là văn bản hành chính.",
+    "Sai: hợp đồng không bắt buộc công chứng."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 402 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 402 — hợp đồng song vụ: mỗi bên đều có nghĩa vụ đối với nhau.",
+    "Sai: đơn vụ là chỉ một bên có nghĩa vụ.",
+    "Sai: hợp đồng phụ phụ thuộc hợp đồng chính.",
+    "Sai: hợp đồng có điều kiện phụ thuộc sự kiện nhất định."
+   ]
   },
   {
    "type": "pair",

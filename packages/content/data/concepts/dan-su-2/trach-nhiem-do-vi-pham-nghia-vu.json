@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 351 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 351 — không chịu trách nhiệm khi vi phạm do bất khả kháng, trừ thỏa thuận hoặc luật khác.",
+    "Sai: vi phạm lần đầu không loại trừ trách nhiệm.",
+    "Sai: giá trị nhỏ không loại trừ trách nhiệm.",
+    "Sai: bên có quyền không phản đối không loại trừ trách nhiệm."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 351 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 351 — hoàn toàn do lỗi của bên có quyền thì bên có nghĩa vụ không phải chịu trách nhiệm.",
+    "Sai: lỗi hoàn toàn của một bên thì bên kia không chịu.",
+    "Sai: bên có nghĩa vụ không phải chịu.",
+    "Sai: hợp đồng không vô hiệu."
+   ]
   },
   {
    "type": "pair",

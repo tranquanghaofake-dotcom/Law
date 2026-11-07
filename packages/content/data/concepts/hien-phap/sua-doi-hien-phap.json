@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 120 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 120 — ít nhất hai phần ba tổng số đại biểu.",
+    "Sai: quá nửa là mức thông qua luật.",
+    "Sai: không có mốc ba phần tư.",
+    "Sai: tính trên tổng số, không phải số có mặt."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 120 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 120 không nêu Tòa án nhân dân tối cao.",
+    "Sai: Chủ tịch nước có quyền đề nghị.",
+    "Sai: Chính phủ có quyền đề nghị.",
+    "Sai: một phần ba tổng số đại biểu có quyền đề nghị."
+   ]
   },
   {
    "type": "pair",
@@ -163,7 +175,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 120 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 120 — cần 334/500; 320 chưa đủ.",
+    "Sai: tính trên tổng số đại biểu, không phải số có mặt.",
+    "Sai: cần hai phần ba tổng số, không phải quá nửa.",
+    "Sai: không cần Chủ tịch nước và Chính phủ đồng ý."
+   ]
   },
   {
    "type": "truefalse",

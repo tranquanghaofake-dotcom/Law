@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 119 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 119 — Quốc hội, các cơ quan của Quốc hội, Chủ tịch nước, Chính phủ, Tòa án, Viện kiểm sát, các cơ quan khác và toàn thể Nhân dân.",
+    "Sai: Việt Nam không có Tòa án Hiến pháp; trách nhiệm thuộc mọi cơ quan và Nhân dân.",
+    "Sai: Chính phủ và Nhân dân cũng có trách nhiệm.",
+    "Sai: cơ quan tư pháp và Nhân dân cũng có trách nhiệm."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 119 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 119 — \"Cơ chế bảo vệ Hiến pháp do luật định\".",
+    "Sai: Hiến pháp chỉ nêu nguyên tắc, không quy định chi tiết.",
+    "Sai: không do nghị định quy định.",
+    "Sai: Việt Nam không có Tòa án Hiến pháp."
+   ]
   },
   {
    "type": "pair",
@@ -172,7 +184,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 119 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Sai: toàn thể Nhân dân có trách nhiệm bảo vệ Hiến pháp, không riêng cơ quan nhà nước.",
+    "Đúng: Nhân dân có trách nhiệm bảo vệ Hiến pháp; cách làm là kiến nghị cơ quan có thẩm quyền.",
+    "Sai: cá nhân không có quyền tuyên bố văn bản vô hiệu.",
+    "Sai: xử lý văn bản trái Hiến pháp thuộc nhiều cơ quan theo luật, không riêng Tòa án."
+   ]
   },
   {
    "type": "recall",

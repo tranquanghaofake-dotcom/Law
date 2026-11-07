@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 235 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 235 — tranh chấp phải được hòa giải tại Ủy ban nhân dân cấp xã nơi có đất trước khi cơ quan có thẩm quyền giải quyết.",
+    "Sai: Bộ không giải quyết tranh chấp đất đai ở bước đầu.",
+    "Sai: không bắt buộc thuê luật sư.",
+    "Sai: đất tranh chấp không bị đem đấu giá."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 235 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 235 — Nhà nước khuyến khích tự hòa giải, hòa giải ở cơ sở, hòa giải thương mại hoặc hình thức khác.",
+    "Sai: luật khuyến khích hòa giải ngoài Tòa án.",
+    "Sai: mạng xã hội không phải hình thức hòa giải luật định.",
+    "Sai: luật khuyến khích nhiều hình thức hòa giải."
+   ]
   },
   {
    "type": "pair",

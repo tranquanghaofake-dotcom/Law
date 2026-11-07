@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 6 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 6 — đương sự có quyền và nghĩa vụ chủ động thu thập, giao nộp chứng cứ.",
+    "Sai: Tòa án chỉ hỗ trợ và thu thập chứng cứ trong trường hợp luật định (khoản 2 Điều 6).",
+    "Sai: Viện kiểm sát kiểm sát việc tuân theo pháp luật, không có nghĩa vụ chứng minh thay đương sự.",
+    "Sai: Công an không phải chủ thể tố tụng dân sự."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 91 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 91 — tổ chức kinh doanh bị kiện phải chứng minh mình không có lỗi.",
+    "Sai: đây là ngoại lệ: người tiêu dùng không phải chứng minh lỗi.",
+    "Sai: nghĩa vụ chứng minh lỗi được chuyển sang tổ chức kinh doanh.",
+    "Sai: điểm a khoản 1 Điều 91 không đặt điều kiện thiệt hại lớn hay giám định."
+   ]
   },
   {
    "type": "pair",

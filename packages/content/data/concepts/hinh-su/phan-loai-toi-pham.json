@@ -92,7 +92,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điểm c khoản 1 Điều 9 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm c khoản 1 Điều 9 — trên 07 đến 15 năm tù là tội phạm rất nghiêm trọng.",
+    "Sai: tội nghiêm trọng là trên 03 đến 07 năm.",
+    "Sai: đặc biệt nghiêm trọng là trên 15 năm đến chung thân, tử hình.",
+    "Sai: ít nghiêm trọng là đến 03 năm."
+   ]
   },
   {
    "type": "mcq",
@@ -109,7 +115,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 9 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 9 — căn cứ mức cao nhất của khung hình phạt do Bộ luật quy định.",
+    "Sai: không căn cứ mức Tòa án tuyên.",
+    "Sai: giá trị tài sản chỉ để định khung.",
+    "Sai: không căn cứ ý kiến cơ quan tố tụng."
+   ]
   },
   {
    "type": "pair",

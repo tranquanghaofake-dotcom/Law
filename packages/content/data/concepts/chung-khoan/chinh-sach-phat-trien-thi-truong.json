@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 6 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 6 — huy động vốn trung hạn và dài hạn.",
+    "Sai: không phải vốn ngắn hạn tiêu dùng.",
+    "Sai: không phục vụ chi thường xuyên.",
+    "Sai: không nhằm dự trữ ngoại tệ."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 6 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 6 — công bằng, công khai, minh bạch, an toàn, hiệu quả.",
+    "Sai: Nhà nước không bảo đảm giá tăng.",
+    "Sai: không chỉ phục vụ doanh nghiệp nhà nước.",
+    "Sai: không nhằm hạn chế nhà đầu tư nước ngoài."
+   ]
   },
   {
    "type": "pair",

@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 69 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 69 — nhờ người khác viết hộ nhưng phải tự bỏ phiếu.",
+    "Sai: không được nhờ người bầu thay.",
+    "Sai: không có quy định miễn bầu.",
+    "Sai: Tổ bầu cử không viết thay và bỏ phiếu thay."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 69 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 69 — cử tri xuất trình thẻ cử tri.",
+    "Sai: không phải giấy khai sinh.",
+    "Sai: không phải sổ hộ khẩu.",
+    "Sai: không phải bằng lái xe."
+   ]
   },
   {
    "type": "pair",

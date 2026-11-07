@@ -76,7 +76,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 6 Điều 12 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 6 Điều 12 — cấm khi dẫn đến thao túng giá.",
+    "Sai: cho xem bảng giá không bị cấm.",
+    "Sai: tiền công không phải dấu hiệu cấm.",
+    "Sai: số dư không phải căn cứ."
+   ]
   },
   {
    "type": "mcq",
@@ -93,7 +99,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 6 Điều 12 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: đứng tên hộ dẫn đến thao túng giá cùng nhóm ở khoản 6.",
+    "Sai: ủy thác quản lý danh mục là hợp pháp.",
+    "Sai: mở nhiều tài khoản không bị cấm ở khoản 6.",
+    "Sai: bán qua sàn chính thức không bị cấm ở khoản 6."
+   ]
   },
   {
    "type": "pair",

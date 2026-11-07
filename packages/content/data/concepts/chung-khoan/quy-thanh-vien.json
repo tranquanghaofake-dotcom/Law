@@ -86,7 +86,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 41 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 41 Điều 4 — từ 02 đến 99 thành viên.",
+    "Sai: từ 100 là quy mô chào bán công chúng.",
+    "Sai: không phải 01 đến 50.",
+    "Sai: có giới hạn."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 113 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 2 Điều 113 — tối thiểu 50 tỷ đồng.",
+    "Sai: không phải 10 tỷ.",
+    "Sai: không phải 30 tỷ.",
+    "Sai: không phải 100 tỷ."
+   ]
   },
   {
    "type": "pair",

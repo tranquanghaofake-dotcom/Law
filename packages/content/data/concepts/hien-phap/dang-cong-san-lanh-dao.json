@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 4 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 4 — Đảng là lực lượng lãnh đạo Nhà nước và xã hội.",
+    "Sai: cơ quan quyền lực cao nhất là Quốc hội (Điều 69).",
+    "Sai: Đảng lãnh đạo Nhà nước và xã hội, không riêng Quốc hội.",
+    "Sai: Hiến pháp xác định vị trí lãnh đạo, không phải tổ chức thông thường."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 4 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 4 — hoạt động trong khuôn khổ Hiến pháp và pháp luật.",
+    "Sai: tổ chức Đảng vẫn phải tuân theo pháp luật.",
+    "Sai: khoản 3 Điều 4 nêu Hiến pháp và pháp luật, không phải nghị quyết.",
+    "Sai: không phải hiệp ước quốc tế."
+   ]
   },
   {
    "type": "pair",
@@ -172,7 +184,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 4; khoản 4 Điều 70 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Sai: Đảng lãnh đạo nhưng tổ chức Đảng phải hoạt động trong khuôn khổ pháp luật (khoản 3 Điều 4).",
+    "Đúng: nghĩa vụ tài chính bắt buộc phải do luật quy định; cấp ủy không tự đặt ra.",
+    "Sai: loại doanh nghiệp không làm khoản thu trái luật thành hợp lệ.",
+    "Sai: nghị quyết sau đó của Hội đồng nhân dân không thay được luật."
+   ]
   },
   {
    "type": "recall",

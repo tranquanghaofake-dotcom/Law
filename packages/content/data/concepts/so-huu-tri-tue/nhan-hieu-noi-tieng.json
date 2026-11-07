@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 6 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 3 Điều 6 — quyền đối với nhãn hiệu nổi tiếng xác lập trên cơ sở sử dụng, không phụ thuộc thủ tục đăng ký.",
+    "Sai: đăng ký là cơ chế của nhãn hiệu thông thường.",
+    "Sai: Tòa án có thể công nhận khi giải quyết tranh chấp nhưng quyền không phát sinh từ quyết định của Tòa án.",
+    "Sai: đăng ký quốc tế không phải căn cứ xác lập nhãn hiệu nổi tiếng."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 20 Điều 4 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 20 Điều 4 — được bộ phận công chúng có liên quan biết đến rộng rãi trên lãnh thổ Việt Nam.",
+    "Sai: luật xét trong lãnh thổ Việt Nam, không đòi nổi tiếng toàn cầu.",
+    "Sai: phải là công chúng có liên quan, không phải người thân chủ sở hữu.",
+    "Sai: tiêu chí là sự biết đến của công chúng, không phải cơ quan quản lý."
+   ]
   },
   {
    "type": "pair",

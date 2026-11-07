@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 21 Điều 3 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 21 Điều 3 — chứng thư pháp lý để Nhà nước xác nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất hợp pháp.",
+    "Sai: Giấy chứng nhận xác nhận quyền sử dụng đất, không tạo quyền sở hữu đất đai.",
+    "Sai: Giấy chứng nhận là văn bản xác nhận, không phải hợp đồng.",
+    "Sai: giấy phép xây dựng là văn bản khác theo Luật Xây dựng."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 137 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 137 — có giấy tờ trước 15/10/1993, sử dụng ổn định thì được cấp Giấy chứng nhận, không phải nộp tiền sử dụng đất.",
+    "Sai: trường hợp này không phải nộp tiền sử dụng đất.",
+    "Sai: luật cho cấp Giấy chứng nhận.",
+    "Sai: không phải đấu giá lại đất đang sử dụng hợp pháp."
+   ]
   },
   {
    "type": "pair",

@@ -88,7 +88,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 20 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 20 — phạm tội quả tang thì bắt không cần quyết định của Tòa án, phê chuẩn của Viện kiểm sát.",
+    "Sai: đơn tố cáo không đủ để bắt người.",
+    "Sai: Chủ tịch Ủy ban nhân dân xã không có quyền ra lệnh bắt người.",
+    "Sai: nghi ngờ không đủ căn cứ bắt người."
+   ]
   },
   {
    "type": "mcq",
@@ -105,7 +111,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 19 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: Điều 19 — không ai bị tước đoạt tính mạng trái luật.",
+    "Sai: tự do kinh doanh ở Điều 33.",
+    "Sai: quyền bầu cử ở Điều 27.",
+    "Sai: quyền khiếu nại, tố cáo ở Điều 30."
+   ]
   },
   {
    "type": "pair",

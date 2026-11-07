@@ -71,7 +71,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 22 Điều 3 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 22 Điều 3 — tổ chức kinh tế có nhà đầu tư nước ngoài là thành viên hoặc cổ đông.",
+    "Sai: định nghĩa không đòi trên 50% vốn; tỷ lệ này chỉ dùng cho điểm a khoản 1 Điều 20.",
+    "Sai: tổ chức thành lập ở nước ngoài là nhà đầu tư nước ngoài.",
+    "Sai: vay vốn nước ngoài không làm tổ chức có vốn đầu tư nước ngoài."
+   ]
   },
   {
    "type": "mcq",
@@ -88,7 +94,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 20 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 20 — nhà đầu tư nước ngoài nắm giữ trên 50% vốn điều lệ.",
+    "Sai: tỷ lệ nhỏ không làm tổ chức phải thực hiện thủ tục như nhà đầu tư nước ngoài.",
+    "Sai: quốc tịch giám đốc không phải tiêu chí.",
+    "Sai: vay vốn nước ngoài không phải tiêu chí."
+   ]
   },
   {
    "type": "pair",

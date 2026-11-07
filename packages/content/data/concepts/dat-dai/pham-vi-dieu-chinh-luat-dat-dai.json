@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 252 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Luật 43/2024/QH15 đưa ngày hiệu lực của Luật Đất đai 2024 về 01/8/2024.",
+    "Sai: 01/01/2025 là ngày hiệu lực ban đầu, đã được sửa thành 01/8/2024.",
+    "Sai: 01/7/2024 không phải ngày hiệu lực.",
+    "Sai: 01/01/2024 trước cả ngày Luật được thông qua (18/01/2024)."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 1 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 1 — chế độ sở hữu, quyền hạn và trách nhiệm của Nhà nước, chế độ quản lý, sử dụng đất; quyền, nghĩa vụ của người sử dụng đất.",
+    "Sai: đăng ký thế chấp, thuế nhà đất thuộc các luật khác.",
+    "Sai: thuế, lệ phí trước bạ thuộc pháp luật thuế, phí.",
+    "Sai: kinh doanh bất động sản thuộc Luật Kinh doanh bất động sản."
+   ]
   },
   {
    "type": "pair",

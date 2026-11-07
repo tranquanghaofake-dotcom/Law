@@ -76,7 +76,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
-   }
+   },
+   "why": [
+    "Đúng: theo bài giảng, phương pháp đặc trưng là mệnh lệnh – phục tùng (quyền uy).",
+    "Sai: bình đẳng – thỏa thuận là phương pháp của luật dân sự.",
+    "Sai: tự định đoạt là đặc trưng của luật dân sự, tố tụng dân sự.",
+    "Sai: hòa giải không phải phương pháp điều chỉnh đặc trưng."
+   ]
   },
   {
    "type": "mcq",
@@ -93,7 +99,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
-   }
+   },
+   "why": [
+    "Đúng: theo bài giảng, đối tượng là quan hệ xã hội phát sinh trong quản lý hành chính nhà nước.",
+    "Sai: quan hệ tài sản bình đẳng thuộc luật dân sự.",
+    "Sai: quan hệ lao động thuộc luật lao động.",
+    "Sai: quan hệ hôn nhân, gia đình thuộc luật hôn nhân và gia đình."
+   ]
   },
   {
    "type": "pair",

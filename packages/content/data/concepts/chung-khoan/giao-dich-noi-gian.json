@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 12 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 12 — tư vấn người khác mua dựa trên thông tin nội bộ.",
+    "Sai: mua sau khi thông tin đã công bố là hợp pháp.",
+    "Sai: phân tích thông tin công khai là hợp pháp.",
+    "Sai: làm theo khuyến nghị công khai là hợp pháp."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 132 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 132 — 10 lần khoản thu trái pháp luật hoặc 03 tỷ nếu cao hơn.",
+    "Sai: không cố định 100 triệu.",
+    "Sai: không tính theo vốn điều lệ.",
+    "Sai: có phạt tiền."
+   ]
   },
   {
    "type": "pair",
@@ -157,7 +169,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 12 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 12 áp dụng với mọi người dùng thông tin nội bộ, kể cả mua cho người khác.",
+    "Sai: không cần là người nội bộ.",
+    "Sai: dùng tài khoản người khác không loại trừ vi phạm.",
+    "Sai: hành vi bị xử phạt theo pháp luật chứng khoán."
+   ]
   },
   {
    "type": "recall",

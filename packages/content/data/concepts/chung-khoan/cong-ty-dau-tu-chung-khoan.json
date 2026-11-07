@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 114 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 114 — quỹ đầu tư tổ chức theo loại hình công ty cổ phần.",
+    "Sai: đây là công ty chứng khoán.",
+    "Sai: đây là công ty quản lý quỹ.",
+    "Sai: đây là công ty niêm yết."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 115 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 115 — tối thiểu 50 tỷ đồng.",
+    "Sai: không phải 10 tỷ.",
+    "Sai: không phải 30 tỷ.",
+    "Sai: không phải 100 tỷ."
+   ]
   },
   {
    "type": "pair",

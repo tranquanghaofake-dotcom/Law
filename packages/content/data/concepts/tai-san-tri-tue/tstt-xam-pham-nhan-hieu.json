@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 129 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm c khoản 1 Điều 129 — dấu hiệu tương tự cho hàng hóa trùng, tương tự, liên quan là xâm phạm nếu có khả năng gây nhầm lẫn về nguồn gốc.",
+    "Sai: doanh thu không phải điều kiện xâm phạm.",
+    "Sai: dấu hiệu xâm phạm không cần được đăng ký.",
+    "Sai: không cần chứng minh thiệt hại để xác định hành vi xâm phạm."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 129 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 129 — dấu hiệu trùng cho hàng hóa trùng danh mục đăng ký không cần chứng minh khả năng gây nhầm lẫn.",
+    "Sai: tương tự cho hàng tương tự phải chứng minh khả năng gây nhầm lẫn (điểm c).",
+    "Sai: trùng cho hàng hóa liên quan phải chứng minh khả năng gây nhầm lẫn (điểm b).",
+    "Sai: tương tự cho hàng liên quan phải chứng minh khả năng gây nhầm lẫn (điểm c)."
+   ]
   },
   {
    "type": "pair",

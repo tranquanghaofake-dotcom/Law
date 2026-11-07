@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 116 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: Điều 116 — giao dịch dân sự là hợp đồng hoặc hành vi pháp lý đơn phương.",
+    "Sai: thiếu hành vi pháp lý đơn phương.",
+    "Sai: không cần công chứng, đăng ký.",
+    "Sai: quyết định hành chính không phải giao dịch dân sự."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 116, Điều 624 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: di chúc chỉ cần ý chí của người lập nên là hành vi pháp lý đơn phương.",
+    "Sai: hợp đồng song vụ cần hai bên có nghĩa vụ với nhau.",
+    "Sai: hợp đồng đơn vụ vẫn là hợp đồng, cần sự thỏa thuận.",
+    "Sai: di chúc là giao dịch dân sự."
+   ]
   },
   {
    "type": "pair",

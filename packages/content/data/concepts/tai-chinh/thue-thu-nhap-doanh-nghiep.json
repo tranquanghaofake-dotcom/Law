@@ -82,7 +82,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 10 Luật Thuế thu nhập doanh nghiệp 2025 (67/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 10 Luật Thuế thu nhập doanh nghiệp 2025 — doanh thu năm không quá 03 tỷ đồng: 15%.",
+    "Sai: 17% áp dụng cho doanh thu trên 03 tỷ đến 50 tỷ đồng (khoản 3 Điều 10).",
+    "Sai: 20% là thuế suất phổ thông.",
+    "Sai: 10% là thuế suất ưu đãi cho một số lĩnh vực, không theo ngưỡng doanh thu này."
+   ]
   },
   {
    "type": "mcq",
@@ -99,7 +105,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 10 Luật Thuế thu nhập doanh nghiệp 2025 (67/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 10 — thuế suất phổ thông 20%.",
+    "Sai: 22% là thuế suất phổ thông cũ, đã giảm xuống 20%.",
+    "Sai: 25% là thuế suất của luật trước đây.",
+    "Sai: 17% chỉ áp dụng cho doanh nghiệp doanh thu trên 03 tỷ đến 50 tỷ đồng."
+   ]
   },
   {
    "type": "pair",

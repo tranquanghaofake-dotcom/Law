@@ -91,7 +91,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 46 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 46 — từ 02 đến 50 thành viên.",
+    "Sai: 100 vượt mức tối đa.",
+    "Sai: 30 thấp hơn mức tối đa.",
+    "Sai: có giới hạn 50 thành viên."
+   ]
   },
   {
    "type": "mcq",
@@ -108,7 +114,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 47 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 47 — trong 90 ngày kể từ ngày được cấp Giấy chứng nhận đăng ký doanh nghiệp.",
+    "Sai: 30 ngày ngắn hơn thời hạn luật định.",
+    "Sai: 01 năm dài hơn thời hạn luật định.",
+    "Sai: có thời hạn 90 ngày."
+   ]
   },
   {
    "type": "pair",

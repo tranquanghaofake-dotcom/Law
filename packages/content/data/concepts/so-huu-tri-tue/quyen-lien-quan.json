@@ -82,7 +82,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 4 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 4 — quyền liên quan gồm quyền đối với cuộc biểu diễn, bản ghi âm, ghi hình, chương trình phát sóng.",
+    "Sai: bài hát là tác phẩm, thuộc quyền tác giả.",
+    "Sai: nhãn hiệu thuộc quyền sở hữu công nghiệp.",
+    "Sai: sáng chế thuộc quyền sở hữu công nghiệp."
+   ]
   },
   {
    "type": "mcq",
@@ -99,7 +105,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 4 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: ca sĩ biểu diễn có quyền liên quan đối với cuộc biểu diễn.",
+    "Sai: quyền tác giả đối với ca khúc thuộc nhạc sĩ.",
+    "Sai: cuộc biểu diễn không phải đối tượng sở hữu công nghiệp.",
+    "Sai: người biểu diễn có quyền liên quan."
+   ]
   },
   {
    "type": "pair",

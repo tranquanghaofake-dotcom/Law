@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 64 Luật Bảo hiểm xã hội 2024 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 64 Luật Bảo hiểm xã hội 2024 — đóng bảo hiểm xã hội bắt buộc từ đủ 15 năm.",
+    "Sai: 20 năm là mốc của luật cũ (Luật 2014); luật 2024 hạ xuống 15 năm.",
+    "Sai: 10 năm thấp hơn mốc 15 năm luật định.",
+    "Sai: 25 năm cao hơn mốc luật định."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 64 Luật Bảo hiểm xã hội 2024 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 64 dẫn chiếu tuổi nghỉ hưu tại khoản 2 Điều 169 Bộ luật Lao động.",
+    "Sai: Luật Việc làm điều chỉnh bảo hiểm thất nghiệp và việc làm, không quy định tuổi nghỉ hưu.",
+    "Sai: tuổi nghỉ hưu áp dụng chung theo Bộ luật Lao động, điểm a khoản 1 Điều 64 không dẫn chiếu luật cán bộ, công chức.",
+    "Sai: tuổi nghỉ hưu không do nghị quyết hằng năm của Quốc hội quyết định."
+   ]
   },
   {
    "type": "pair",

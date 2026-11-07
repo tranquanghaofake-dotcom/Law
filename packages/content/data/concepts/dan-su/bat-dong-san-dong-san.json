@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 107 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 107 — động sản là những tài sản không phải là bất động sản.",
+    "Sai: tài sản gắn liền với đất là bất động sản.",
+    "Sai: luật không phân loại theo giá trị.",
+    "Sai: nhiều động sản phải đăng ký (ô tô, xe máy) nhưng vẫn là động sản; đăng ký không phải tiêu chí."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 107 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 1 Điều 107 — nhà, công trình xây dựng gắn liền với đất đai là bất động sản.",
+    "Sai: ô tô là động sản dù lớn.",
+    "Sai: cổ phiếu là giấy tờ có giá, thuộc động sản.",
+    "Sai: tiền gửi là quyền tài sản, không phải bất động sản."
+   ]
   },
   {
    "type": "pair",

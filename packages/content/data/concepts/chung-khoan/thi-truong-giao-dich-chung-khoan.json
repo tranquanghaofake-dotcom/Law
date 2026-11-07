@@ -70,7 +70,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 27 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 27 Điều 4 — địa điểm hoặc hình thức tập hợp lệnh mua, bán.",
+    "Sai: không phải trụ sở Ủy ban.",
+    "Sai: đó là thị trường sơ cấp, không phải định nghĩa ở khoản 27.",
+    "Sai: vốn hóa không phải thị trường."
+   ]
   },
   {
    "type": "mcq",
@@ -87,7 +93,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 26 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 26 Điều 4 — Sở giao dịch và công ty con.",
+    "Sai: Ủy ban không vận hành.",
+    "Sai: công ty chứng khoán không vận hành.",
+    "Sai: ngân hàng không vận hành."
+   ]
   },
   {
    "type": "pair",

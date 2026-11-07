@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 95 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 95 — Phó Thủ tướng chịu trách nhiệm trước Thủ tướng.",
+    "Sai: không chịu trách nhiệm trước Chủ tịch nước.",
+    "Sai: không chịu trách nhiệm trước Ủy ban thường vụ.",
+    "Sai: Bộ trưởng không đứng trên Phó Thủ tướng."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 95 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 95 — một Phó Thủ tướng được Thủ tướng ủy nhiệm.",
+    "Sai: Chủ tịch nước không lãnh đạo Chính phủ.",
+    "Sai: Chánh Văn phòng không thay Thủ tướng.",
+    "Sai: Bộ trưởng Bộ Nội vụ không thay Thủ tướng."
+   ]
   },
   {
    "type": "pair",

@@ -86,7 +86,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 91 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 91 — ưu tiên bồi thường bằng giao đất có cùng mục đích sử dụng với đất thu hồi.",
+    "Sai: bồi thường bằng tiền theo giá đất cụ thể do cơ quan có thẩm quyền quyết định, không theo thỏa thuận tự do.",
+    "Sai: luật không bồi thường bằng cổ phần dự án.",
+    "Sai: người có đủ điều kiện được bồi thường, không thay bằng miễn thuế."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 91 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 91 — giá đất cụ thể tại thời điểm phê duyệt phương án bồi thường, hỗ trợ, tái định cư.",
+    "Sai: thời điểm thông báo thu hồi không phải mốc tính giá.",
+    "Sai: việc cấp Giấy chứng nhận không phải mốc tính giá bồi thường.",
+    "Sai: thời điểm khởi công không phải mốc tính giá."
+   ]
   },
   {
    "type": "pair",

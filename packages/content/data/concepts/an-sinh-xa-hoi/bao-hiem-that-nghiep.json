@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 30 Luật Việc làm 2025 (74/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: trợ cấp hưu trí xã hội và lương hưu thuộc Luật Bảo hiểm xã hội, không nằm trong khoản 1 Điều 30 Luật Việc làm 2025.",
+    "Sai: tư vấn, giới thiệu việc làm là chế độ ở điểm a khoản 1 Điều 30.",
+    "Sai: trợ cấp thất nghiệp là chế độ ở điểm c khoản 1 Điều 30.",
+    "Sai: hỗ trợ đào tạo, nâng cao kỹ năng nghề là chế độ ở điểm b khoản 1 Điều 30."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 2 Luật Việc làm 2025 (74/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 2 Luật Việc làm 2025 — loại hình bảo hiểm bắt buộc do Nhà nước tổ chức.",
+    "Sai: bảo hiểm thất nghiệp là bắt buộc, do Nhà nước tổ chức, không do công ty tự tổ chức.",
+    "Sai: bảo hiểm thương mại do doanh nghiệp bảo hiểm kinh doanh, khác bảo hiểm thất nghiệp.",
+    "Sai: công đoàn không tổ chức bảo hiểm thất nghiệp."
+   ]
   },
   {
    "type": "pair",

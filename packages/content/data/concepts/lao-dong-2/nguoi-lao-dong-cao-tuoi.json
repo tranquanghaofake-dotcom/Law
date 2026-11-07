@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 148 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 148 — người tiếp tục lao động sau độ tuổi theo khoản 2 Điều 169.",
+    "Sai: 45 tuổi không phải mốc; luật dẫn chiếu tuổi nghỉ hưu ở khoản 2 Điều 169.",
+    "Sai: tuổi nghỉ hưu khác nhau giữa nam và nữ và theo lộ trình, không phải mốc 60 chung.",
+    "Sai: 75 tuổi là mốc hưởng trợ cấp hưu trí xã hội (Luật Bảo hiểm xã hội), không phải mốc lao động cao tuổi."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 148 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 148 — rút ngắn thời giờ làm việc hằng ngày hoặc làm việc không trọn thời gian.",
+    "Sai: thuế thu nhập cá nhân không do Bộ luật Lao động quy định.",
+    "Sai: làm thêm giờ luôn bị giới hạn; người lao động cao tuổi được rút ngắn chứ không tăng giờ.",
+    "Sai: Điều 148 không miễn việc giao kết hợp đồng lao động."
+   ]
   },
   {
    "type": "pair",

@@ -76,7 +76,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 1 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 1 Luật Quốc tịch — mối quan hệ gắn bó với Nhà nước, phát sinh quyền, nghĩa vụ.",
+    "Sai: nơi cư trú không phải quốc tịch.",
+    "Sai: dân tộc, tôn giáo không phải quốc tịch.",
+    "Sai: ngôn ngữ không phải quốc tịch."
+   ]
   },
   {
    "type": "mcq",
@@ -93,7 +99,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 1 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 1 — quyền, trách nhiệm của Nhà nước CHXHCN Việt Nam đối với công dân.",
+    "Sai: tổ chức quốc tế không phải chủ thể quan hệ quốc tịch.",
+    "Sai: chính quyền nước ngoài không phải chủ thể quan hệ quốc tịch Việt Nam.",
+    "Sai: doanh nghiệp không phải chủ thể."
+   ]
   },
   {
    "type": "pair",

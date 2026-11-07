@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 8 Điều 70 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 8 Điều 70 — người giữ chức vụ do Quốc hội bầu hoặc phê chuẩn.",
+    "Sai: không phải mọi cán bộ, công chức.",
+    "Sai: chức danh địa phương do Hội đồng nhân dân lấy phiếu, bỏ phiếu tín nhiệm.",
+    "Sai: Thẩm phán cấp tỉnh, khu vực không do Quốc hội bầu, phê chuẩn."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 69 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: bỏ phiếu tín nhiệm thuộc chức năng giám sát tối cao (Điều 69).",
+    "Sai: lập pháp là làm luật.",
+    "Sai: lập hiến là làm, sửa Hiến pháp.",
+    "Sai: quyết định ngân sách là quyết định vấn đề quan trọng."
+   ]
   },
   {
    "type": "pair",

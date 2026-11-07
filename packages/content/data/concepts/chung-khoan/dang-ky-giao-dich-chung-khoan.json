@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 25 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 25 Điều 4 — đưa chứng khoán chưa niêm yết vào giao dịch.",
+    "Sai: đây là niêm yết.",
+    "Sai: đây là đăng ký chứng khoán (khoản 33).",
+    "Sai: đây là mở tài khoản."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 33 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: đăng ký chứng khoán (khoản 33) dễ nhầm nhất vì cùng chữ \"đăng ký\".",
+    "Sai: bảo lãnh phát hành khác hẳn về bản chất.",
+    "Sai: tự doanh là nghiệp vụ kinh doanh.",
+    "Sai: quỹ mở là loại quỹ."
+   ]
   },
   {
    "type": "pair",

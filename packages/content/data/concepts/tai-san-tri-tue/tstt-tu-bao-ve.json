@@ -89,7 +89,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 198 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 1 Điều 198 — yêu cầu chấm dứt, xin lỗi, cải chính công khai, bồi thường thiệt hại.",
+    "Sai: tự ý tịch thu hàng là vi phạm pháp luật.",
+    "Sai: bắt giữ người là thẩm quyền của cơ quan nhà nước.",
+    "Sai: chủ thể quyền không có quyền xử phạt."
+   ]
   },
   {
    "type": "mcq",
@@ -106,7 +112,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1a Điều 198 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1a Điều 198 — chủ thể quyền có thể ủy quyền cho tổ chức, cá nhân khác áp dụng biện pháp tự bảo vệ.",
+    "Sai: luật cho phép ủy quyền.",
+    "Sai: ủy quyền không cần Tòa án cho phép.",
+    "Sai: khoản 1a không có ngoại lệ về luật sư nước ngoài."
+   ]
   },
   {
    "type": "pair",

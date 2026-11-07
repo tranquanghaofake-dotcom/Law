@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 2 Luật Tố cáo 2018 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1, 4 Điều 2 Luật Tố cáo — người tố cáo là cá nhân.",
+    "Sai: cơ quan nhà nước không có quyền tố cáo theo Luật Tố cáo.",
+    "Sai: doanh nghiệp không phải người tố cáo theo luật.",
+    "Sai: tổ chức không phải người tố cáo theo luật."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 2 Luật Tố cáo 2018 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 2 — tố cáo vi phạm trong thực hiện nhiệm vụ, công vụ và tố cáo vi phạm về quản lý nhà nước trong các lĩnh vực.",
+    "Sai: luật không phân loại như vậy.",
+    "Sai: số lần không phải tiêu chí phân loại.",
+    "Sai: luật không phân loại theo kênh."
+   ]
   },
   {
    "type": "pair",

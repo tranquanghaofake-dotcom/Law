@@ -75,7 +75,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 74 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: điểm c khoản 1 Điều 74 Bộ luật Dân sự — có tài sản độc lập và tự chịu trách nhiệm bằng tài sản của mình.",
+    "Sai: không có điều kiện vốn tối thiểu.",
+    "Sai: không có điều kiện số thành viên.",
+    "Sai: pháp nhân không chỉ do Nhà nước thành lập."
+   ]
   },
   {
    "type": "mcq",
@@ -92,7 +98,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 74 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: doanh nghiệp tư nhân không có tài sản độc lập với chủ (Điều 188 Luật Doanh nghiệp) nên không phải pháp nhân.",
+    "Sai: công ty cổ phần là pháp nhân.",
+    "Sai: công ty trách nhiệm hữu hạn là pháp nhân.",
+    "Sai: hợp tác xã là pháp nhân."
+   ]
   },
   {
    "type": "pair",

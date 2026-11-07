@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 55 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 55 — hợp đồng cho thuê lại ký giữa doanh nghiệp cho thuê lại và bên thuê lại.",
+    "Sai: người lao động không ký hợp đồng với bên thuê lại.",
+    "Sai: giữa người lao động và doanh nghiệp cho thuê lại là hợp đồng lao động, không phải hợp đồng cho thuê lại.",
+    "Sai: cơ quan nhà nước không phải bên của hợp đồng cho thuê lại lao động."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 54 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 54 — phải ký quỹ và được cấp Giấy phép hoạt động cho thuê lại lao động.",
+    "Sai: Điều 54 không đặt mức vốn điều lệ 100 tỷ đồng.",
+    "Sai: không đòi phải là doanh nghiệp nhà nước.",
+    "Sai: số lượng lao động không phải điều kiện của Điều 54."
+   ]
   },
   {
    "type": "pair",

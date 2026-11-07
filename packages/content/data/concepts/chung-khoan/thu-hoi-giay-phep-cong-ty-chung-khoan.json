@@ -73,7 +73,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 95 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 95 — 12 tháng.",
+    "Sai: không phải 06 tháng.",
+    "Sai: không phải 24 tháng.",
+    "Sai: không phải 03 tháng."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 95 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 3 Điều 95 — tất toán tài sản của khách hàng.",
+    "Sai: không chuyển cho Nhà nước.",
+    "Sai: không được giữ lại trả nợ.",
+    "Sai: không được tự bán để trả nợ."
+   ]
   },
   {
    "type": "pair",
