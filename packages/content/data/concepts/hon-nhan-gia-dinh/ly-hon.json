@@ -108,9 +108,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Hòa giải ở cơ sở là thủ tục bắt buộc phải tiến hành trước khi Tòa án giải quyết yêu cầu ly hôn.",
+   "statement": "Hòa giải ở cơ sở là thủ tục phải hoàn thành trước khi Tòa án thụ lý yêu cầu ly hôn.",
    "answer": false,
-   "explain": "Sai. Điều 52 chỉ khuyến khích hòa giải ở cơ sở; hòa giải tại Tòa án theo pháp luật tố tụng dân sự mới là thủ tục trong vụ án."
+   "explain": "Sai. Điều 52 chỉ quy định Nhà nước và xã hội khuyến khích hòa giải ở cơ sở khi vợ, chồng có yêu cầu ly hôn; đây không phải thủ tục phải hoàn thành trước khi Tòa án thụ lý."
   },
   {
    "type": "recall",

@@ -117,9 +117,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Khi ly hôn, tài sản chung của vợ chồng luôn được chia đúng một nửa cho mỗi bên.",
+   "statement": "Khi ly hôn, Tòa án chia tài sản chung của vợ chồng mà không xem xét lỗi của mỗi bên trong việc vi phạm quyền, nghĩa vụ của vợ chồng.",
    "answer": false,
-   "explain": "Sai. Khoản 2 Điều 59: chia đôi nhưng có tính đến hoàn cảnh, công sức, bảo vệ nghề nghiệp và lỗi của mỗi bên."
+   "explain": "Sai. Điểm d khoản 2 Điều 59: khi chia đôi tài sản chung, Tòa án có tính đến lỗi của mỗi bên trong vi phạm quyền, nghĩa vụ của vợ chồng, cùng hoàn cảnh gia đình, công sức đóng góp và bảo vệ lợi ích chính đáng trong sản xuất, kinh doanh, nghề nghiệp."
   },
   {
    "type": "recall",

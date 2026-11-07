@@ -99,7 +99,7 @@
    "level": 4,
    "q": "Vợ chồng anh Đức đăng ký kết hôn tháng 3/2026; con của họ sinh tháng 1/2026 và cả hai cùng thừa nhận là con chung. Đứa trẻ có phải con chung không?",
    "options": [
-    "Có, vì cha mẹ đã thừa nhận là con chung",
+    "Có, vì được cha mẹ thừa nhận",
     "Không, vì con sinh trước thời kỳ hôn nhân",
     "Chỉ khi Tòa án ra quyết định công nhận",
     "Chỉ là con chung nếu có kết quả xét nghiệm ADN"
@@ -116,7 +116,7 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Con do người vợ sinh ra trong thời kỳ hôn nhân đương nhiên là con chung của vợ chồng, không thể bị phản bác.",
+   "statement": "Khi cha hoặc mẹ không thừa nhận con sinh ra trong thời kỳ hôn nhân thì việc không thừa nhận có hiệu lực mà không cần chứng cứ và không cần Tòa án xác định.",
    "answer": false,
    "explain": "Sai. Khoản 2 Điều 88: cha, mẹ không thừa nhận con thì phải có chứng cứ và phải được Tòa án xác định."
   },

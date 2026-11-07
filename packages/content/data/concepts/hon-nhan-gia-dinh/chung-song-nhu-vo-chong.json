@@ -121,9 +121,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi trường hợp nam, nữ chung sống như vợ chồng mà không đăng ký kết hôn đều không được pháp luật thừa nhận là vợ chồng.",
+   "statement": "Nam, nữ đủ điều kiện kết hôn chung sống với nhau như vợ chồng mà không đăng ký kết hôn thì phát sinh quyền, nghĩa vụ giữa vợ và chồng.",
    "answer": false,
-   "explain": "Sai. Chung sống trước 03/01/1987 vẫn có thể được công nhận là vợ chồng theo quy định chuyển tiếp (Nghị quyết 35/2000/QH10); quy tắc \"không công nhận\" của khoản 1 Điều 14 áp dụng cho chung sống từ 01/01/2001."
+   "explain": "Sai. Khoản 1 Điều 14: chung sống như vợ chồng mà không đăng ký kết hôn thì không làm phát sinh quyền, nghĩa vụ giữa vợ và chồng; quyền, nghĩa vụ đối với con, tài sản được giải quyết theo Điều 15, Điều 16. (Quy định chuyển tiếp cho chung sống trước 03/01/1987 theo Nghị quyết 35/2000/QH10 là ngoại lệ riêng.)"
   },
   {
    "type": "recall",
