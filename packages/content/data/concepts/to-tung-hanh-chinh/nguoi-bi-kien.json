@@ -95,7 +95,7 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Người trực tiếp thi hành quyết định cưỡng chế theo lệnh của cấp trên luôn là người bị kiện.",
+   "statement": "Người trực tiếp thi hành quyết định cưỡng chế theo lệnh của cấp trên là người bị kiện, dù không phải người có quyết định đó.",
    "answer": false,
    "explain": "Sai. Khoản 9 Điều 3: người bị kiện là chủ thể có quyết định, hành vi bị khởi kiện, không phải người chỉ thi hành theo lệnh."
   },

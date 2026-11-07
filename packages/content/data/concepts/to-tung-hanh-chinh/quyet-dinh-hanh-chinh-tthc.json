@@ -101,7 +101,7 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi văn bản do cơ quan hành chính nhà nước ban hành đều là quyết định hành chính.",
+   "statement": "Văn bản quy phạm pháp luật do cơ quan hành chính nhà nước ban hành là quyết định hành chính.",
    "answer": false,
    "explain": "Sai. Khoản 1 Điều 3: chỉ văn bản giải quyết vấn đề cụ thể, áp dụng một lần cho đối tượng cụ thể; văn bản quy phạm không phải quyết định hành chính."
   },

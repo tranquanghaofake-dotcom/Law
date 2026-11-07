@@ -106,7 +106,7 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Hành vi hành chính chỉ gồm những hành động cụ thể của cơ quan nhà nước, không gồm việc không làm.",
+   "statement": "Hành vi hành chính là hành động thực hiện nhiệm vụ, công vụ của cơ quan nhà nước; việc không thực hiện nhiệm vụ, công vụ không phải là hành vi hành chính.",
    "answer": false,
    "explain": "Sai. Khoản 3 Điều 3: hành vi hành chính gồm cả thực hiện và không thực hiện nhiệm vụ, công vụ."
   },
