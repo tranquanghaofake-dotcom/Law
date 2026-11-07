@@ -155,9 +155,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi văn bản do cơ quan nhà nước ban hành đều là văn bản quy phạm pháp luật.",
+   "statement": "Văn bản có chứa quy phạm pháp luật là văn bản quy phạm pháp luật dù ban hành không đúng thẩm quyền, hình thức, trình tự, thủ tục.",
    "answer": false,
-   "explain": "Sai. Điều 2 đòi hỏi văn bản phải chứa quy phạm pháp luật và được ban hành đúng thẩm quyền, hình thức, trình tự, thủ tục; văn bản áp dụng pháp luật, văn bản hành chính không phải VBQPPL."
+   "explain": "Sai. Điều 2: văn bản quy phạm pháp luật phải có chứa quy phạm pháp luật và được ban hành đúng thẩm quyền, hình thức, trình tự, thủ tục theo quy định của Luật này."
   },
   {
    "type": "recall",

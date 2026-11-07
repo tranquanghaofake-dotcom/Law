@@ -152,9 +152,14 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Theo Luật 2025, mọi dự án luật đều phải được lập đề nghị xây dựng luật và đưa vào Chương trình xây dựng luật, pháp lệnh hằng năm như Luật 2015.",
+   "statement": "Định hướng lập pháp nhiệm kỳ của Quốc hội do Chính phủ chủ trì xây dựng, Ủy ban Thường vụ Quốc hội phối hợp.",
    "answer": false,
-   "explain": "Sai. Luật 2025 thay bằng Định hướng lập pháp nhiệm kỳ (Điều 23), Chương trình lập pháp hằng năm (Điều 24) và quy trình xây dựng chính sách chỉ áp dụng cho các trường hợp tại khoản 1 Điều 27."
+   "explain": "Sai. Khoản 1 Điều 23: Ủy ban Thường vụ Quốc hội chủ trì, phối hợp với Chính phủ xây dựng Định hướng lập pháp nhiệm kỳ, hoàn thành trong 90 ngày kể từ ngày kết thúc Kỳ họp đầu tiên của nhiệm kỳ Quốc hội.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 23 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+   }
   },
   {
    "type": "recall",

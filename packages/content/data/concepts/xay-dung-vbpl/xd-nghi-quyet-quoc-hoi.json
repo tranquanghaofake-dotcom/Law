@@ -152,9 +152,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi nghị quyết của Quốc hội đều là văn bản quy phạm pháp luật.",
+   "statement": "Quốc hội ban hành luật, không phải nghị quyết, để tạm ngưng hiệu lực của luật vì yêu cầu cấp bách về phát triển kinh tế - xã hội.",
    "answer": false,
-   "explain": "Sai. Chỉ nghị quyết chứa quy phạm và ban hành theo Luật (Điều 2, khoản 2 Điều 10) mới là VBQPPL; nghị quyết về nhân sự, kế hoạch cụ thể là văn bản cá biệt."
+   "explain": "Sai. Điểm b khoản 2 Điều 10: Quốc hội ban hành nghị quyết để tạm ngưng, điều chỉnh hiệu lực hoặc kéo dài thời hạn áp dụng toàn bộ hoặc một phần luật, nghị quyết của Quốc hội."
   },
   {
    "type": "recall",
