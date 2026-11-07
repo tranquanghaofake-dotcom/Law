@@ -157,9 +157,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Công ty cổ phần có thể chỉ phát hành cổ phần ưu đãi mà không có cổ phần phổ thông.",
+   "statement": "Điều lệ công ty cổ phần có thể quy định công ty không có cổ phần phổ thông.",
    "answer": false,
-   "explain": "Sai. Khoản 1 Điều 114: phải có cổ phần phổ thông."
+   "explain": "Sai. Khoản 1 Điều 114: công ty cổ phần phải có cổ phần phổ thông."
   },
   {
    "type": "recall",

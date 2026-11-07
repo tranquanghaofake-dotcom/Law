@@ -170,9 +170,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Sau khi sáp nhập, cả công ty bị sáp nhập và công ty nhận sáp nhập đều chấm dứt tồn tại.",
+   "statement": "Sau khi sáp nhập, công ty nhận sáp nhập chấm dứt tồn tại.",
    "answer": false,
-   "explain": "Sai. Chỉ công ty bị sáp nhập chấm dứt; công ty nhận sáp nhập vẫn tồn tại (khoản 1 Điều 201)."
+   "explain": "Sai. Khoản 1 Điều 201: chỉ công ty bị sáp nhập chấm dứt tồn tại; công ty nhận sáp nhập vẫn tồn tại."
   },
   {
    "type": "recall",

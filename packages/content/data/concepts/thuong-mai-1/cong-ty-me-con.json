@@ -151,9 +151,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Công ty mẹ và các công ty con hợp thành một pháp nhân duy nhất.",
+   "statement": "Công ty con được đầu tư mua cổ phần, góp vốn vào công ty mẹ.",
    "answer": false,
-   "explain": "Sai. Mỗi công ty là pháp nhân độc lập; nhóm công ty không có tư cách pháp nhân."
+   "explain": "Sai. Khoản 2 Điều 195: công ty con không được đầu tư mua cổ phần, góp vốn vào công ty mẹ."
   },
   {
    "type": "recall",

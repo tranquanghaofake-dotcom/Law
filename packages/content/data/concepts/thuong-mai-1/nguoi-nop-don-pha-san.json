@@ -153,9 +153,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Người đại diện theo pháp luật của doanh nghiệp mất khả năng thanh toán chỉ có quyền, không có nghĩa vụ nộp đơn yêu cầu mở thủ tục phá sản.",
+   "statement": "Người đại diện theo pháp luật của doanh nghiệp mất khả năng thanh toán không có nghĩa vụ nộp đơn yêu cầu mở thủ tục phá sản.",
    "answer": false,
-   "explain": "Sai. Khoản 2 Điều 38: có nghĩa vụ, trừ khi đã nộp đơn yêu cầu thủ tục phục hồi."
+   "explain": "Sai. Khoản 2 Điều 38: có nghĩa vụ nộp đơn, trừ khi đã nộp đơn yêu cầu áp dụng thủ tục phục hồi."
   },
   {
    "type": "recall",
