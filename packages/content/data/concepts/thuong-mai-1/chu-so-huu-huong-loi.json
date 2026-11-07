@@ -166,9 +166,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Chủ sở hữu hưởng lợi luôn là người đứng tên trên Giấy chứng nhận đăng ký doanh nghiệp.",
+   "statement": "Chủ sở hữu hưởng lợi của doanh nghiệp có thể là tổ chức có quyền chi phối doanh nghiệp đó.",
    "answer": false,
-   "explain": "Sai. Là người sở hữu trên thực tế hoặc có quyền chi phối, có thể khác người đứng tên."
+   "explain": "Sai. Khoản 35 Điều 4: chủ sở hữu hưởng lợi là cá nhân."
   },
   {
    "type": "recall",
