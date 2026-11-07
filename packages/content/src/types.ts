@@ -11,6 +11,8 @@ export type ItemMcq = {
   answer: number;
   explain: string;
   source?: Source;
+  /** Vì sao từng phương án đúng/sai, cùng thứ tự `options` (tuỳ chọn). */
+  why?: string[];
 };
 export type ItemPair = {
   type: 'pair';

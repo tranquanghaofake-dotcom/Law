@@ -84,4 +84,11 @@ describe('whyOf', () => {
     expect(c().definition).toContain(body.slice(0, 20));
     expect(c().plain).toContain(w.plain!);
   });
+  it('vì sao phương án sai: chọn nhiễu có `why` thì trả đúng câu giải thích của phương án đó', () => {
+    const item: StepItem = { type: 'mcq', level: 1, q: 'Q', options: ['A', 'B', 'C', 'D'], answer: 1, explain: 'Điều 25.', why: ['A sai vì x.', 'B đúng.', 'C sai vì y.', 'D sai vì z.'] };
+    expect(whyOf(c(), item, { correct: false, chosen: 'C' })!.wrong).toEqual({ option: 'C', text: 'C sai vì y.' });
+    expect(whyOf(c(), item, { correct: false, chosen: 'không có' })!.wrong).toBeNull();
+    expect(whyOf(c(), mcq('Q', 'A'), { correct: false, chosen: 'C' })!.wrong).toBeNull(); // không có why
+    expect(whyOf(c(), item, { correct: true, chosen: 'B' })?.wrong ?? null).toBeNull();
+  });
 });

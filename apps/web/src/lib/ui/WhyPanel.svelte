@@ -13,9 +13,12 @@
   const contrast = $derived(why?.mixup ? concept.memo?.contrast?.find((x) => x.with === why.mixup?.id)?.text ?? null : null);
 </script>
 
-{#if why && !correct && !(plainFirst && !why.mixup)}
+{#if why && !correct && !(plainFirst && !why.mixup && !why.wrong)}
   <section class="why" aria-label="Vì sao">
       <p class="why-title">Vì sao?</p>
+      {#if why.wrong}
+        <p class="why-wrong"><b>Bạn chọn «{why.wrong.option}»:</b> {why.wrong.text}</p>
+      {/if}
       {#if why.excerpt && !plainFirst}
         <blockquote class="why-quote">{#each segments(why.excerpt.text, why.excerpt.marks) as s, k (k)}{#if s.b}<mark>{s.t}</mark>{:else}{s.t}{/if}{/each}</blockquote>
       {/if}

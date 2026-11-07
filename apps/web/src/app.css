@@ -1878,4 +1878,5 @@ select.qz-sort { min-height: var(--ctl-h); padding: 0 var(--sp-3); border: 1px s
 .intro-case-q, .intro-case-a { margin: 0; line-height: 1.5; }
 .intro-case-a { margin-top: var(--sp-1); color: var(--ink); animation: memo-in .32s var(--ease-out) both; }
 .intro-case-btn { margin-top: var(--sp-1); min-height: 36px; }
+.why-wrong { margin: var(--sp-2) 0 0; line-height: 1.5; padding-left: var(--sp-2); border-left: 3px solid var(--bad); }
 .why-contrast { margin: var(--sp-2) 0 0; line-height: 1.5; padding-left: var(--sp-2); border-left: 3px solid var(--accent); }

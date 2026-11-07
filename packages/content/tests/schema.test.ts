@@ -32,6 +32,16 @@ describe('conceptSchema', () => {
   it('từ chối ngày checked sai định dạng', () => {
     expect(conceptSchema.safeParse({ ...base, checked: '31/10/2026' }).success).toBe(false);
   });
+  it('why (tuỳ chọn): đúng 4 lời giải thích, mỗi phương án một câu', () => {
+    const ok = { ...base, items: [{ ...base.items[0], why: ['Đúng vì A.', 'B sai vì…', 'C sai vì…', 'D sai vì…'] }, base.items[1], base.items[2]] };
+    expect(conceptSchema.safeParse(ok).success).toBe(true);
+    const bad = { ...base, items: [{ ...base.items[0], why: ['Đúng vì A.', 'B sai vì…'] }, base.items[1], base.items[2]] };
+    const r = conceptSchema.safeParse(bad);
+    expect(r.success).toBe(false);
+    expect(JSON.stringify(r.error?.issues)).toMatch(/why cần 4/);
+    const empty = { ...base, items: [{ ...base.items[0], why: ['Đúng.', '', 'C sai.', 'D sai.'] }, base.items[1], base.items[2]] };
+    expect(conceptSchema.safeParse(empty).success).toBe(false);
+  });
   it('từ chối khái niệm thiếu item bậc 3', () => {
     const bad = { ...base, items: [base.items[0], base.items[2]] };
     expect(conceptSchema.safeParse(bad).success).toBe(false);
