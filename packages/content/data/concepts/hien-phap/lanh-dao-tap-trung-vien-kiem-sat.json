@@ -161,9 +161,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Kiểm sát viên khi thực hành quyền công tố hoàn toàn độc lập, không chịu sự chỉ đạo của Viện trưởng.",
+   "statement": "Khi thực hành quyền công tố, Kiểm sát viên không chịu sự chỉ đạo của Viện trưởng Viện kiểm sát nhân dân.",
    "answer": false,
-   "explain": "Sai. Khoản 2 Điều 109: Kiểm sát viên tuân theo pháp luật và chịu sự chỉ đạo của Viện trưởng."
+   "explain": "Sai. Khoản 2 Điều 109 Hiến pháp 2013: khi thực hành quyền công tố và kiểm sát hoạt động tư pháp, Kiểm sát viên tuân theo pháp luật và chịu sự chỉ đạo của Viện trưởng Viện kiểm sát nhân dân."
   },
   {
    "type": "recall",

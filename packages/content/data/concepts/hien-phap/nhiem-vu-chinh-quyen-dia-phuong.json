@@ -164,9 +164,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Chính quyền địa phương được quyết định mọi vấn đề của địa phương mà không cần luật quy định.",
+   "statement": "Hội đồng nhân dân quyết định các vấn đề của địa phương do Chính phủ quy định.",
    "answer": false,
-   "explain": "Sai. Khoản 1 Điều 112: quyết định các vấn đề của địa phương \"do luật định\"."
+   "explain": "Sai. Khoản 2 Điều 113 Hiến pháp 2013: Hội đồng nhân dân quyết định các vấn đề của địa phương do luật định."
   },
   {
    "type": "recall",

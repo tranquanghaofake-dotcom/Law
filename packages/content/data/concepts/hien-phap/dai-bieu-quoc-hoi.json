@@ -158,9 +158,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Đại biểu Quốc hội chỉ đại diện cho cử tri ở đơn vị bầu cử ra mình.",
+   "statement": "Đại biểu Quốc hội đại diện cho ý chí, nguyện vọng của cử tri ở đơn vị bầu cử ra mình, không đại diện cho Nhân dân cả nước.",
    "answer": false,
-   "explain": "Sai. Khoản 1 Điều 79: đại diện cả Nhân dân ở đơn vị bầu cử ra mình và Nhân dân cả nước."
+   "explain": "Sai. Khoản 1 Điều 79 Hiến pháp 2013: đại biểu Quốc hội đại diện cho ý chí, nguyện vọng của Nhân dân ở đơn vị bầu cử ra mình và của Nhân dân cả nước."
   },
   {
    "type": "recall",

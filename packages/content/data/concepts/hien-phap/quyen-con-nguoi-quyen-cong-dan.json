@@ -189,9 +189,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Quyền con người, quyền công dân là tuyệt đối, không thể bị hạn chế trong bất kỳ trường hợp nào.",
+   "statement": "Quyền con người, quyền công dân có thể bị hạn chế theo nghị định của Chính phủ khi cần thiết.",
    "answer": false,
-   "explain": "Sai. Quyền có thể bị hạn chế, nhưng chỉ theo quy định của luật, trong trường hợp cần thiết và vì sáu lý do nêu tại khoản 2 Điều 14."
+   "explain": "Sai. Khoản 2 Điều 14 Hiến pháp 2013: quyền con người, quyền công dân chỉ có thể bị hạn chế theo quy định của luật, trong trường hợp cần thiết vì lý do quốc phòng, an ninh quốc gia, trật tự, an toàn xã hội, đạo đức xã hội, sức khỏe của cộng đồng."
   },
   {
    "type": "recall",

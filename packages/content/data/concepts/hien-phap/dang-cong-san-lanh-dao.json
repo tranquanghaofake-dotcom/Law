@@ -165,9 +165,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Theo Hiến pháp 2013, tổ chức Đảng và đảng viên không bị ràng buộc bởi pháp luật, chỉ chịu sự điều chỉnh của Điều lệ Đảng.",
+   "statement": "Theo Hiến pháp 2013, tổ chức của Đảng và đảng viên hoạt động theo Điều lệ Đảng mà không phải tuân theo pháp luật.",
    "answer": false,
-   "explain": "Sai. Khoản 3 Điều 4: các tổ chức của Đảng và đảng viên hoạt động trong khuôn khổ Hiến pháp và pháp luật."
+   "explain": "Sai. Khoản 3 Điều 4 Hiến pháp 2013: các tổ chức của Đảng và đảng viên Đảng Cộng sản Việt Nam hoạt động trong khuôn khổ Hiến pháp và pháp luật."
   },
   {
    "type": "case",
@@ -207,9 +207,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Nguyên tắc Đảng lãnh đạo chỉ được quy định trong Hiến pháp năm 2013.",
+   "statement": "Hiến pháp năm 1992 chưa ghi nhận vai trò lãnh đạo của Đảng Cộng sản Việt Nam.",
    "answer": false,
-   "explain": "Sai. Điều 4 Hiến pháp 1980 và Điều 4 Hiến pháp 1992 đã quy định vai trò lãnh đạo của Đảng Cộng sản Việt Nam. (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
+   "explain": "Sai. Điều 4 Hiến pháp 1992 (bản gốc) đã quy định Đảng Cộng sản Việt Nam là lực lượng lãnh đạo Nhà nước và xã hội; trước đó Điều 4 Hiến pháp 1980 cũng quy định vai trò này."
   }
  ]
 }

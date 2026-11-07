@@ -161,9 +161,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Bộ trưởng chỉ chịu trách nhiệm trước Thủ tướng, không chịu trách nhiệm trước Quốc hội.",
+   "statement": "Bộ trưởng chịu trách nhiệm cá nhân trước Thủ tướng Chính phủ, không chịu trách nhiệm trước Quốc hội.",
    "answer": false,
-   "explain": "Sai. Khoản 4 Điều 95: chịu trách nhiệm cá nhân trước Thủ tướng, Chính phủ và Quốc hội."
+   "explain": "Sai. Khoản 4 Điều 95 Hiến pháp 2013: Bộ trưởng chịu trách nhiệm cá nhân trước Thủ tướng Chính phủ, Chính phủ và Quốc hội."
   },
   {
    "type": "recall",

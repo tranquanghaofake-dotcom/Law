@@ -156,9 +156,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi phiên tòa sơ thẩm đều bắt buộc có Hội thẩm tham gia.",
+   "statement": "Việc xét xử sơ thẩm của Tòa án nhân dân có Hội thẩm tham gia, kể cả khi xét xử theo thủ tục rút gọn.",
    "answer": false,
-   "explain": "Sai. Ngoại lệ là xét xử theo thủ tục rút gọn (khoản 1 Điều 103)."
+   "explain": "Sai. Khoản 1 Điều 103 Hiến pháp 2013: xét xử sơ thẩm có Hội thẩm tham gia, trừ trường hợp xét xử theo thủ tục rút gọn."
   },
   {
    "type": "recall",
