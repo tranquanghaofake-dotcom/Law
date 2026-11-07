@@ -80,6 +80,11 @@ export const COVERS: Record<string, CoverSpec> = {
     palette: { top: ST_TOP, topTo: ST_TOP_TO, label: RIB, labelTo: RIB_TO, labelText: RIB_TEXT, body: '#8E1F4F', title: '#FFF27A' },
     source: { book: 'Luật Hôn nhân và gia đình (hiện hành)', publisher: ST, url: 'https://www.nxbctqg.org.vn/luat-hon-nhan-va-gia-dinh-hien-hanh--96.html', note: 'chưa đối chiếu màu với ảnh bìa thật; dùng khuôn sách luật hiện hành của NXB' },
   },
+  'to-tung-hanh-chinh': {
+    kind: 'st-cu', label: 'LUẬT', title: ['TỐ TỤNG', 'HÀNH CHÍNH'], subtitle: '(HIỆN HÀNH)',
+    palette: { top: ST_TOP, topTo: ST_TOP_TO, label: RIB, labelTo: RIB_TO, labelText: RIB_TEXT, body: '#2F5566', title: '#FBF16B' },
+    source: { book: 'Luật Tố tụng hành chính (hiện hành)', publisher: ST, url: 'https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-13-VBHN-VPQH-2026-Luat-To-tung-hanh-chinh-696357.aspx', note: 'bìa dựng theo khuôn sách luật hiện hành của NXB; chưa đối chiếu ảnh bìa thật, url là nguồn chữ' },
+  },
   'dan-su-2': {
     kind: 'giao-trinh-hlu', label: 'GIÁO TRÌNH', title: ['LUẬT DÂN SỰ', 'VIỆT NAM'], subtitle: 'TẬP II', pattern: 'luoi-cham',
     palette: { top: '#DDF6E4', topTo: '#C2ECCF', label: '#0F7A37', labelText: '#FFE45C', body: '#0B7A2C', bodyTo: '#086A26', title: '#FFFFFF', topText: '#0B4F22' },

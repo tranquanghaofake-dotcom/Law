@@ -1,0 +1,123 @@
+{
+ "id": "quyet-dinh-hanh-chinh-bi-kien",
+ "subject": "to-tung-hanh-chinh",
+ "chapter": "c1-doi-tuong",
+ "term": "Quyết định hành chính bị kiện",
+ "definition": "Quyết định hành chính bị kiện là quyết định quy định tại khoản 1 Điều này mà quyết định đó làm phát sinh, thay đổi, hạn chế, chấm dứt quyền, lợi ích hợp pháp của cơ quan, tổ chức, cá nhân hoặc có nội dung làm phát sinh nghĩa vụ, ảnh hưởng đến quyền, lợi ích hợp pháp của cơ quan, tổ chức, cá nhân.",
+ "plain": "Không phải quyết định hành chính nào cũng kiện được. Chỉ kiện được khi quyết định đó TÁC ĐỘNG tới người khác: làm phát sinh, thay đổi, hạn chế, chấm dứt quyền, lợi ích hợp pháp, hoặc đặt ra nghĩa vụ. Ngoài ra còn phải không thuộc các ngoại lệ ở khoản 1 Điều 30.",
+ "example": "Quyết định buộc tháo dỡ công trình của ông C làm phát sinh nghĩa vụ cho ông C nên là quyết định hành chính bị kiện.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 3 Luật Tố tụng hành chính 2015",
+  "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/van-ban-hop-nhat-13-vbhn-vpqh-2026-luat-to-tung-hanh-chinh-427850-d5.html"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "quyet-dinh-hanh-chinh-tthc",
+  "khieu-kien-loai-tru",
+  "quyen-khoi-kien"
+ ],
+ "keywords": [
+  "phát sinh, thay đổi, hạn chế, chấm dứt",
+  "quyền, lợi ích hợp pháp",
+  "phát sinh nghĩa vụ"
+ ],
+ "memo": {
+  "gist": "Chỉ quyết định hành chính có tác động tới quyền, lợi ích hoặc nghĩa vụ của người khác mới bị kiện.",
+  "kind": "tree",
+  "hook": "Giấy chạm vào túi tiền hay bổn phận của ai, người ấy được đứng ra đòi lẽ phải.",
+  "tree": [
+   {
+    "label": "Là quyết định hành chính",
+    "icon": "doc"
+   },
+   {
+    "label": "Tác động tới quyền, lợi ích",
+    "icon": "bolt",
+    "children": [
+     "Phát sinh",
+     "Thay đổi",
+     "Hạn chế",
+     "Chấm dứt"
+    ]
+   },
+   {
+    "label": "Hoặc đặt ra nghĩa vụ",
+    "icon": "warn"
+   }
+  ],
+  "case": {
+   "q": "Quyết định khen thưởng ông D có bị ông D kiện được không?",
+   "a": "Thường không, vì không làm phát sinh nghĩa vụ hay hạn chế quyền, lợi ích của ông D (khoản 2 Điều 3)."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quyết định hành chính trở thành quyết định bị kiện khi nào?",
+   "options": [
+    "Khi được ban hành bởi cơ quan cấp tỉnh trở lên",
+    "Khi người nhận quyết định không đồng ý với nội dung quyết định đó",
+    "Khi làm phát sinh, thay đổi, hạn chế, chấm dứt quyền, lợi ích hợp pháp",
+    "Khi quyết định được đăng trên cổng thông tin điện tử"
+   ],
+   "answer": 2,
+   "explain": "Khoản 2 Điều 3: quyết định làm phát sinh, thay đổi, hạn chế, chấm dứt quyền, lợi ích hợp pháp hoặc làm phát sinh nghĩa vụ.",
+   "why": [
+    "Sai: cấp ban hành không phải tiêu chí ở khoản 2 Điều 3.",
+    "Sai: sự không đồng ý là điều kiện khởi kiện, không phải định nghĩa.",
+    "Đúng: khoản 2 Điều 3.",
+    "Sai: việc công bố không phải tiêu chí."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyết định hành chính bị kiện là quyết định quy định tại khoản 1 Điều này mà quyết định đó làm phát sinh, thay đổi, {{hạn chế}}, {{chấm dứt}} quyền, lợi ích hợp pháp của cơ quan, tổ chức, cá nhân hoặc có nội dung làm phát sinh nghĩa vụ, ảnh hưởng đến quyền, lợi ích hợp pháp của cơ quan, tổ chức, cá nhân."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyết định hành chính bị kiện là quyết định quy định tại khoản 1 Điều này mà quyết định đó làm phát sinh, thay đổi, hạn chế, chấm dứt quyền, lợi ích hợp pháp của cơ quan, tổ chức, cá nhân hoặc có nội dung làm phát sinh {{nghĩa vụ}}, ảnh hưởng đến quyền, lợi ích hợp pháp của cơ quan, tổ chức, cá nhân."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Sở Xây dựng ra quyết định buộc công ty E nộp phạt và tháo dỡ phần nhà xây trái phép. Quyết định này có phải đối tượng khởi kiện vụ án hành chính không?",
+   "options": [
+    "Có, vì làm phát sinh nghĩa vụ và ảnh hưởng quyền, lợi ích của công ty E",
+    "Không, vì quyết định xử phạt chỉ bị khiếu nại, không bị khởi kiện",
+    "Không, vì công ty là pháp nhân nên chỉ kiện ra trọng tài thương mại",
+    "Có, nhưng chỉ khi công ty E đã nộp đủ tiền phạt trước khi khởi kiện"
+   ],
+   "answer": 0,
+   "explain": "Quyết định buộc nộp phạt, tháo dỡ làm phát sinh nghĩa vụ nên là quyết định hành chính bị kiện (khoản 2 Điều 3).",
+   "why": [
+    "Đúng: khoản 2 Điều 3 — có nội dung làm phát sinh nghĩa vụ.",
+    "Sai: luật cho người bị tác động quyền khởi kiện (Điều 115).",
+    "Sai: tranh chấp với cơ quan quản lý hành chính không thuộc trọng tài thương mại.",
+    "Sai: luật không đặt điều kiện nộp phạt trước."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi quyết định hành chính đều là đối tượng khởi kiện vụ án hành chính.",
+   "answer": false,
+   "explain": "Sai. Chỉ quyết định tác động tới quyền, lợi ích, nghĩa vụ (khoản 2 Điều 3) và không thuộc ngoại lệ ở khoản 1 Điều 30."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Khi nào quyết định hành chính là quyết định hành chính bị kiện?",
+   "model": "Khi quyết định đó làm phát sinh, thay đổi, hạn chế, chấm dứt quyền, lợi ích hợp pháp của cơ quan, tổ chức, cá nhân hoặc có nội dung làm phát sinh nghĩa vụ, ảnh hưởng đến quyền, lợi ích hợp pháp của họ.",
+   "keywords": [
+    "phát sinh",
+    "hạn chế",
+    "chấm dứt",
+    "nghĩa vụ"
+   ]
+  }
+ ]
+}

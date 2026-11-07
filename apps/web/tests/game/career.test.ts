@@ -47,7 +47,7 @@ describe('thăng chức theo bộ máy nhà nước', () => {
     }
   });
   it('toàn bộ nội dung thật ở cấp 3: mọi chức đều đạt được, kể cả Chủ tịch nước', () => {
-    expect(REAL.length).toBe(218); // +6 sách (6 chương) môn Hôn nhân và gia đình
+    expect(REAL.length).toBe(225); // +7 sách (7 chương) môn Tố tụng hành chính
     const s = careerState(allReal(3));
     for (const p of POSTS) expect(s.achieved.has(p.id), p.id).toBe(true);
     for (const b of BRANCHES) expect(s.next[b], b).toBeNull();

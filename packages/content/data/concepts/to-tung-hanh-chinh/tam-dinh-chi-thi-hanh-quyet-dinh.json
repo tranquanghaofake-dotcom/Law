@@ -1,0 +1,115 @@
+{
+ "id": "tam-dinh-chi-thi-hanh-quyet-dinh",
+ "subject": "to-tung-hanh-chinh",
+ "chapter": "c4-chung-cu",
+ "term": "Tạm đình chỉ thi hành quyết định hành chính",
+ "definition": "Tạm đình chỉ việc thi hành quyết định hành chính, quyết định kỷ luật buộc thôi việc, quyết định xử lý vụ việc cạnh tranh được áp dụng nếu trong quá trình giải quyết vụ án có căn cứ cho rằng việc thi hành quyết định đó sẽ dẫn đến hậu quả nghiêm trọng không thể khắc phục.",
+ "plain": "Đây là biện pháp khẩn cấp tạm thời: tạm \"dừng\" thi hành quyết định đang bị kiện để không gây hậu quả nghiêm trọng KHÔNG THỂ KHẮC PHỤC trong lúc chờ Tòa án xử. Chỉ đặt ra trong quá trình giải quyết vụ án.",
+ "example": "Quyết định cưỡng chế phá dỡ nhà đang bị kiện; nếu phá trước khi Tòa xử thì không thể khôi phục, nên người khởi kiện đề nghị tạm đình chỉ.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 69 Luật Tố tụng hành chính 2015",
+  "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/van-ban-hop-nhat-13-vbhn-vpqh-2026-luat-to-tung-hanh-chinh-427850-d5.html"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "quyet-dinh-hanh-chinh-tthc",
+  "quyen-khoi-kien"
+ ],
+ "keywords": [
+  "tạm đình chỉ",
+  "hậu quả nghiêm trọng không thể khắc phục",
+  "trong quá trình giải quyết vụ án"
+ ],
+ "memo": {
+  "gist": "Tòa án tạm dừng thi hành quyết định đang bị kiện nếu thi hành sẽ gây hậu quả nghiêm trọng không khắc phục được.",
+  "kind": "checklist",
+  "hook": "Nhà phá rồi không xây lại được: hãy bấm nút tạm dừng trước.",
+  "tree": [
+   {
+    "label": "Đang giải quyết vụ án",
+    "icon": "clock"
+   },
+   {
+    "label": "Hậu quả nghiêm trọng",
+    "icon": "warn"
+   },
+   {
+    "label": "Không thể khắc phục",
+    "icon": "ban"
+   }
+  ],
+  "case": {
+   "q": "Chỉ vì thi hành quyết định gây bất tiện thì có được tạm đình chỉ không?",
+   "a": "Không. Phải có căn cứ cho rằng sẽ dẫn đến hậu quả nghiêm trọng không thể khắc phục (khoản 1 Điều 69)."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều kiện áp dụng tạm đình chỉ thi hành quyết định hành chính theo khoản 1 Điều 69 là gì?",
+   "options": [
+    "Người khởi kiện đã nộp đủ tiền tạm ứng án phí sơ thẩm",
+    "Thi hành sẽ gây hậu quả nghiêm trọng không thể khắc phục",
+    "Quyết định hành chính do cơ quan hành chính cấp tỉnh ban hành",
+    "Người bị kiện đồng ý tạm ngừng thi hành quyết định"
+   ],
+   "answer": 1,
+   "explain": "Khoản 1 Điều 69: có căn cứ cho rằng việc thi hành sẽ dẫn đến hậu quả nghiêm trọng không thể khắc phục.",
+   "why": [
+    "Sai: nộp án phí không phải điều kiện.",
+    "Đúng: khoản 1 Điều 69.",
+    "Sai: cấp ban hành không phải điều kiện.",
+    "Sai: không cần người bị kiện đồng ý."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tạm đình chỉ việc thi hành quyết định hành chính, quyết định kỷ luật buộc thôi việc, quyết định xử lý vụ việc cạnh tranh được áp dụng nếu trong quá trình giải quyết vụ án có căn cứ cho rằng việc thi hành quyết định đó sẽ dẫn đến {{hậu quả nghiêm trọng}} không thể khắc phục."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tạm đình chỉ việc thi hành quyết định hành chính, quyết định kỷ luật buộc thôi việc, quyết định xử lý vụ việc cạnh tranh được áp dụng nếu trong {{quá trình giải quyết vụ án}} có căn cứ cho rằng việc thi hành quyết định đó sẽ dẫn đến hậu quả nghiêm trọng {{không thể khắc phục}}."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Gia đình ông E kiện quyết định cưỡng chế phá dỡ nhà; lịch cưỡng chế là tuần tới, trước phiên tòa. Gia đình nên yêu cầu Tòa án áp dụng biện pháp nào?",
+   "options": [
+    "Đình chỉ giải quyết vụ án hành chính",
+    "Tạm đình chỉ giải quyết vụ án hành chính đang thụ lý",
+    "Trả lại đơn khởi kiện để khởi kiện lại sau",
+    "Tạm đình chỉ việc thi hành quyết định hành chính"
+   ],
+   "answer": 3,
+   "explain": "Biện pháp phù hợp là tạm đình chỉ việc thi hành quyết định hành chính (khoản 1 Điều 69), để tránh hậu quả không thể khắc phục.",
+   "why": [
+    "Sai: đình chỉ là chấm dứt vụ án, ngược với mục đích của gia đình.",
+    "Sai: tạm dừng vụ án không chặn việc cưỡng chế.",
+    "Sai: trả lại đơn làm mất vụ án đang giải quyết.",
+    "Đúng: phá dỡ nhà là hậu quả nghiêm trọng không thể khắc phục (khoản 1 Điều 69)."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tạm đình chỉ việc thi hành quyết định hành chính có thể áp dụng chỉ vì việc thi hành gây bất tiện cho người khởi kiện.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 69 đòi căn cứ cho rằng việc thi hành sẽ dẫn đến hậu quả nghiêm trọng không thể khắc phục."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Khi nào Tòa án áp dụng tạm đình chỉ việc thi hành quyết định hành chính?",
+   "model": "Trong quá trình giải quyết vụ án, khi có căn cứ cho rằng việc thi hành quyết định hành chính, quyết định kỷ luật buộc thôi việc, quyết định xử lý vụ việc cạnh tranh sẽ dẫn đến hậu quả nghiêm trọng không thể khắc phục.",
+   "keywords": [
+    "quá trình giải quyết vụ án",
+    "hậu quả nghiêm trọng",
+    "không thể khắc phục"
+   ]
+  }
+ ]
+}

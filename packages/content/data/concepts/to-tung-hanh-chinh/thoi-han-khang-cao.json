@@ -1,0 +1,119 @@
+{
+ "id": "thoi-han-khang-cao",
+ "subject": "to-tung-hanh-chinh",
+ "chapter": "c6-xet-xu",
+ "term": "Thời hạn kháng cáo",
+ "definition": "Thời hạn kháng cáo đối với bản án của Tòa án cấp sơ thẩm là 15 ngày kể từ ngày tuyên án; đối với đương sự không có mặt tại phiên tòa hoặc không có mặt khi tuyên án mà có lý do chính đáng thì thời hạn kháng cáo tính từ ngày bản án được giao cho họ hoặc được niêm yết.",
+ "plain": "15 ngày cho BẢN ÁN sơ thẩm, tính từ ngày tuyên án; vắng mặt có lý do chính đáng thì tính từ ngày nhận hoặc niêm yết bản án. Với QUYẾT ĐỊNH tạm đình chỉ, đình chỉ giải quyết vụ án: 07 ngày (khoản 2 Điều 206).",
+ "example": "Bản án tuyên ngày 02/5, bà P có mặt; hạn kháng cáo của bà là 15 ngày kể từ 02/5.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 206 Luật Tố tụng hành chính 2015",
+  "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/van-ban-hop-nhat-13-vbhn-vpqh-2026-luat-to-tung-hanh-chinh-427850-d5.html"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "phuc-tham",
+  "dinh-chi-giai-quyet-vu-an"
+ ],
+ "keywords": [
+  "15 ngày",
+  "kể từ ngày tuyên án",
+  "lý do chính đáng",
+  "giao cho họ hoặc được niêm yết"
+ ],
+ "memo": {
+  "gist": "Kháng cáo bản án sơ thẩm trong 15 ngày từ ngày tuyên án; quyết định đình chỉ, tạm đình chỉ thì 07 ngày.",
+  "kind": "ladder",
+  "hook": "Mười lăm cho bản dài, bảy cho tờ ngắn.",
+  "tree": [
+   {
+    "label": "Bản án sơ thẩm",
+    "icon": "calendar",
+    "children": [
+     "15 ngày"
+    ]
+   },
+   {
+    "label": "Quyết định tạm đình chỉ, đình chỉ",
+    "icon": "clock",
+    "children": [
+     "07 ngày"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Đương sự vắng mặt có lý do chính đáng khi tuyên án thì thời hạn kháng cáo tính từ khi nào?",
+   "a": "Từ ngày bản án được giao cho họ hoặc được niêm yết (khoản 1 Điều 206)."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời hạn kháng cáo bản án sơ thẩm vụ án hành chính là bao lâu?",
+   "options": [
+    "07 ngày kể từ ngày tuyên án",
+    "15 ngày kể từ ngày tuyên án",
+    "30 ngày kể từ ngày tuyên án",
+    "01 tháng kể từ ngày nhận bản án"
+   ],
+   "answer": 1,
+   "explain": "Khoản 1 Điều 206: thời hạn kháng cáo bản án sơ thẩm là 15 ngày kể từ ngày tuyên án.",
+   "why": [
+    "Sai: 07 ngày là thời hạn kháng cáo quyết định tạm đình chỉ, đình chỉ.",
+    "Đúng: khoản 1 Điều 206.",
+    "Sai: không phải 30 ngày.",
+    "Sai: không phải 01 tháng."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thời hạn kháng cáo đối với bản án của Tòa án cấp sơ thẩm là {{15 ngày}} kể từ ngày tuyên án; đối với đương sự không có mặt tại phiên tòa hoặc không có mặt khi tuyên án mà có lý do chính đáng thì thời hạn kháng cáo tính từ ngày bản án được giao cho họ hoặc được niêm yết."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thời hạn kháng cáo đối với bản án của Tòa án cấp sơ thẩm là 15 ngày kể từ ngày tuyên án; đối với đương sự không có mặt tại phiên tòa hoặc không có mặt khi tuyên án mà có {{lý do chính đáng}} thì thời hạn kháng cáo tính từ ngày bản án được giao cho họ hoặc được {{niêm yết}}."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Ông Q nằm viện (lý do chính đáng) nên vắng mặt khi tuyên án ngày 01/6; bản án được giao cho ông ngày 10/6. Hạn kháng cáo của ông Q tính từ ngày nào?",
+   "options": [
+    "Từ ngày 10/6, ngày bản án được giao cho ông",
+    "Từ ngày 01/6, ngày Tòa án tuyên án",
+    "Từ ngày ông Q xuất viện trở về nhà",
+    "Từ ngày Tòa án lập xong biên bản phiên tòa"
+   ],
+   "answer": 0,
+   "explain": "Vắng mặt khi tuyên án có lý do chính đáng thì thời hạn 15 ngày tính từ ngày bản án được giao hoặc niêm yết (khoản 1 Điều 206).",
+   "why": [
+    "Đúng: khoản 1 Điều 206.",
+    "Sai: vắng mặt có lý do chính đáng thì tính từ ngày nhận bản án.",
+    "Sai: luật không lấy ngày xuất viện làm mốc.",
+    "Sai: không phải mốc tính thời hạn kháng cáo."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thời hạn kháng cáo quyết định đình chỉ giải quyết vụ án của Tòa án cấp sơ thẩm cũng là 15 ngày.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 206: thời hạn kháng cáo quyết định tạm đình chỉ, đình chỉ là 07 ngày."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Thời hạn kháng cáo bản án sơ thẩm được tính thế nào?",
+   "model": "15 ngày kể từ ngày tuyên án; đương sự vắng mặt khi tuyên án có lý do chính đáng thì tính từ ngày bản án được giao cho họ hoặc được niêm yết.",
+   "keywords": [
+    "15 ngày",
+    "tuyên án",
+    "lý do chính đáng",
+    "niêm yết"
+   ]
+  }
+ ]
+}

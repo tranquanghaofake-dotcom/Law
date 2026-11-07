@@ -1,0 +1,116 @@
+{
+ "id": "nghia-vu-chung-minh-hanh-chinh",
+ "subject": "to-tung-hanh-chinh",
+ "chapter": "c4-chung-cu",
+ "term": "Nghĩa vụ cung cấp chứng cứ, chứng minh",
+ "definition": "Các đương sự có quyền và nghĩa vụ chủ động thu thập, giao nộp tài liệu, chứng cứ cho Tòa án và chứng minh yêu cầu của mình là có căn cứ và hợp pháp.",
+ "plain": "Mỗi bên tự lo chứng cứ cho yêu cầu của mình: chủ động thu thập, giao nộp và chứng minh yêu cầu là có căn cứ, hợp pháp. Tòa án hỗ trợ và có thể tự thu thập, xác minh chứng cứ (khoản 2 Điều 9), nhưng không làm thay hoàn toàn cho đương sự.",
+ "example": "Người khởi kiện quyết định xử phạt nộp ảnh chụp, biên bản, hóa đơn để chứng minh mình không vi phạm.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 9 Luật Tố tụng hành chính 2015",
+  "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/van-ban-hop-nhat-13-vbhn-vpqh-2026-luat-to-tung-hanh-chinh-427850-d5.html"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "bao-dam-tranh-tung",
+  "duong-su-hanh-chinh"
+ ],
+ "keywords": [
+  "chủ động thu thập, giao nộp",
+  "tài liệu, chứng cứ",
+  "có căn cứ và hợp pháp"
+ ],
+ "memo": {
+  "gist": "Đương sự phải tự thu thập, giao nộp chứng cứ và chứng minh yêu cầu của mình là có căn cứ.",
+  "kind": "steps",
+  "hook": "Đòi gì thì mang bằng chứng đến; Tòa chỉ là người đỡ thêm một tay.",
+  "tree": [
+   {
+    "label": "Thu thập",
+    "icon": "search"
+   },
+   {
+    "label": "Giao nộp",
+    "icon": "box"
+   },
+   {
+    "label": "Chứng minh có căn cứ, hợp pháp",
+    "icon": "check"
+   }
+  ],
+  "case": {
+   "q": "Đương sự không tự thu thập được chứng cứ đang do cơ quan khác giữ thì làm sao?",
+   "a": "Đề nghị Tòa án hỗ trợ, yêu cầu cơ quan đang giữ cung cấp (khoản 2 Điều 9)."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 9, ai có quyền và nghĩa vụ chủ động thu thập, giao nộp chứng cứ?",
+   "options": [
+    "Các đương sự",
+    "Chỉ Tòa án",
+    "Chỉ Viện kiểm sát",
+    "Chỉ người bị kiện"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 9: các đương sự có quyền và nghĩa vụ chủ động thu thập, giao nộp tài liệu, chứng cứ.",
+   "why": [
+    "Đúng: khoản 1 Điều 9.",
+    "Sai: Tòa án hỗ trợ (khoản 2), đương sự chủ động thu thập.",
+    "Sai: Viện kiểm sát không thay đương sự thu thập chứng cứ.",
+    "Sai: mọi đương sự đều có quyền, nghĩa vụ này."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Các đương sự có quyền và nghĩa vụ {{chủ động}} thu thập, giao nộp tài liệu, chứng cứ cho Tòa án và chứng minh yêu cầu của mình là có căn cứ và hợp pháp."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Các đương sự có quyền và nghĩa vụ chủ động thu thập, giao nộp tài liệu, chứng cứ cho Tòa án và {{chứng minh}} yêu cầu của mình là có căn cứ và {{hợp pháp}}."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Người khởi kiện cho rằng quyết định thu hồi đất trái luật nhưng không nộp tài liệu nào, chỉ đề nghị Tòa án \"tự tìm hiểu\". Nhận định nào đúng?",
+   "options": [
+    "Tòa án phải tự thu thập toàn bộ chứng cứ thay người khởi kiện",
+    "Người bị kiện phải chứng minh thay vì người khởi kiện",
+    "Người khởi kiện có nghĩa vụ chủ động thu thập, giao nộp chứng cứ",
+    "Viện kiểm sát phải thu thập chứng cứ cho người khởi kiện"
+   ],
+   "answer": 2,
+   "explain": "Khoản 1 Điều 9: đương sự chủ động thu thập, giao nộp chứng cứ và chứng minh yêu cầu của mình; Tòa án chỉ hỗ trợ (khoản 2).",
+   "why": [
+    "Sai: Tòa án hỗ trợ, không thay toàn bộ nghĩa vụ chứng minh.",
+    "Sai: mỗi đương sự chứng minh yêu cầu của mình.",
+    "Đúng: khoản 1 Điều 9.",
+    "Sai: Viện kiểm sát không làm thay đương sự."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Trong tố tụng hành chính, Tòa án có nghĩa vụ thu thập toàn bộ chứng cứ thay cho đương sự.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 9: đương sự chủ động thu thập, giao nộp chứng cứ; Tòa án hỗ trợ và thu thập trong trường hợp luật định (khoản 2)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Đương sự có quyền và nghĩa vụ gì về chứng cứ theo khoản 1 Điều 9?",
+   "model": "Chủ động thu thập, giao nộp tài liệu, chứng cứ cho Tòa án và chứng minh yêu cầu của mình là có căn cứ và hợp pháp.",
+   "keywords": [
+    "thu thập",
+    "giao nộp",
+    "chứng minh",
+    "có căn cứ"
+   ]
+  }
+ ]
+}

@@ -7,7 +7,7 @@ export type Shelf = { id: string; name: string; color: string; subjects: readonl
 
 export const SHELVES: readonly Shelf[] = [
   { id: 'ly-luan', name: 'Lý luận – Lịch sử', color: '#6B4A2B', subjects: ['ly-luan-nn-pl', 'lich-su-nn-pl'] },
-  { id: 'cong-phap', name: 'Hiến pháp – Hành chính', color: '#9E2A22', subjects: ['hien-phap', 'hanh-chinh', 'xay-dung-vbpl'] },
+  { id: 'cong-phap', name: 'Hiến pháp – Hành chính', color: '#9E2A22', subjects: ['hien-phap', 'hanh-chinh', 'to-tung-hanh-chinh', 'xay-dung-vbpl'] },
   { id: 'dan-su', name: 'Dân sự – Tố tụng', color: '#1F4E9E', subjects: ['dan-su', 'dan-su-2', 'hon-nhan-gia-dinh', 'to-tung-dan-su'] },
   { id: 'hinh-su', name: 'Hình sự', color: '#1E2E5C', subjects: ['hinh-su'] },
   { id: 'kinh-te', name: 'Thương mại – Kinh tế', color: '#1F5F4A', subjects: ['thuong-mai-1', 'thuong-mai', 'canh-tranh', 'dau-tu', 'dat-dai', 'chung-khoan'] },

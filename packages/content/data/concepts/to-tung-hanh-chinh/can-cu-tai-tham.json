@@ -1,0 +1,121 @@
+{
+ "id": "can-cu-tai-tham",
+ "subject": "to-tung-hanh-chinh",
+ "chapter": "c7-xem-xet-lai",
+ "term": "Căn cứ kháng nghị tái thẩm",
+ "definition": "Bản án, quyết định của Tòa án đã có hiệu lực pháp luật bị kháng nghị theo thủ tục tái thẩm khi có một trong những căn cứ sau đây: 1. Mới phát hiện được tình tiết quan trọng của vụ án mà Tòa án, đương sự đã không thể biết được trong quá trình giải quyết vụ án;",
+ "plain": "Tái thẩm xem xét lại bản án đã có hiệu lực vì TÌNH TIẾT MỚI làm thay đổi cơ bản nội dung vụ án, như tình tiết quan trọng mà Tòa án, đương sự không thể biết; kết luận giám định, lời dịch sai sự thật hoặc giả mạo chứng cứ; người tiến hành tố tụng cố ý làm sai lệch hồ sơ; bản án, quyết định làm căn cứ bị hủy bỏ.",
+ "example": "Sau khi bản án có hiệu lực, phát hiện văn bản giao đất gốc bị giả mạo mà khi xét xử không ai biết; có căn cứ kháng nghị tái thẩm.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 281 Luật Tố tụng hành chính 2015",
+  "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/van-ban-hop-nhat-13-vbhn-vpqh-2026-luat-to-tung-hanh-chinh-427850-d5.html"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "giam-doc-tham",
+  "phuc-tham"
+ ],
+ "keywords": [
+  "tái thẩm",
+  "mới phát hiện",
+  "tình tiết quan trọng",
+  "không thể biết được"
+ ],
+ "memo": {
+  "gist": "Tái thẩm áp dụng khi phát hiện tình tiết mới quan trọng mà khi giải quyết vụ án không ai biết được.",
+  "kind": "checklist",
+  "hook": "Tái thẩm là \"mở lại hồ sơ vì có manh mối mới\".",
+  "tree": [
+   {
+    "label": "Tình tiết mới quan trọng",
+    "icon": "search"
+   },
+   {
+    "label": "Giám định, phiên dịch sai, giả mạo chứng cứ",
+    "icon": "mask"
+   },
+   {
+    "label": "Người tiến hành tố tụng làm sai lệch hồ sơ",
+    "icon": "warn"
+   },
+   {
+    "label": "Bản án, quyết định làm căn cứ bị hủy",
+    "icon": "cut"
+   }
+  ],
+  "case": {
+   "q": "Tình tiết mà đương sự đã biết nhưng không đưa ra khi xét xử có phải căn cứ tái thẩm không?",
+   "a": "Không. Khoản 1 Điều 281 đòi tình tiết mà Tòa án, đương sự không thể biết được trong quá trình giải quyết."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Căn cứ tái thẩm nào được nêu ở khoản 1 Điều 281?",
+   "options": [
+    "Tình tiết quan trọng mới phát hiện, trước đó không thể biết được",
+    "Bản án đã áp dụng sai điều luật khi Tòa án giải quyết vụ án đó",
+    "Đương sự không đồng ý với mức bồi thường đã tuyên",
+    "Đương sự quên nộp chứng cứ đã có trong tay khi xét xử"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 281: mới phát hiện được tình tiết quan trọng của vụ án mà Tòa án, đương sự đã không thể biết được trong quá trình giải quyết vụ án.",
+   "why": [
+    "Đúng: khoản 1 Điều 281.",
+    "Sai: sai lầm áp dụng pháp luật là căn cứ giám đốc thẩm.",
+    "Sai: sự không đồng ý không phải căn cứ tái thẩm.",
+    "Sai: tình tiết đã biết thì không phải \"không thể biết được\"."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bản án, quyết định của Tòa án đã có hiệu lực pháp luật bị kháng nghị theo thủ tục {{tái thẩm}} khi có một trong những căn cứ sau đây:"
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mới phát hiện được {{tình tiết quan trọng}} của vụ án mà Tòa án, đương sự đã {{không thể biết được}} trong quá trình giải quyết vụ án;"
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Sau khi bản án có hiệu lực, phát hiện kết luận giám định làm căn cứ xét xử là giả mạo. Thủ tục nào phù hợp?",
+   "options": [
+    "Phúc thẩm theo kháng cáo quá hạn của đương sự",
+    "Tái thẩm, vì có căn cứ chứng minh kết luận giám định giả mạo",
+    "Giám đốc thẩm vì Tòa án đã áp dụng sai pháp luật khi xét xử",
+    "Khởi kiện vụ án hành chính mới về kết luận giám định"
+   ],
+   "answer": 1,
+   "explain": "Có cơ sở chứng minh kết luận của người giám định không đúng sự thật hoặc giả mạo chứng cứ là căn cứ kháng nghị tái thẩm (khoản 2 Điều 281).",
+   "why": [
+    "Sai: bản án đã có hiệu lực, không phúc thẩm.",
+    "Đúng: khoản 2 Điều 281.",
+    "Sai: vấn đề là chứng cứ giả mạo, không phải sai lầm áp dụng luật.",
+    "Sai: kết luận giám định không phải đối tượng khởi kiện vụ án hành chính."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Sai lầm của Tòa án trong việc áp dụng pháp luật là căn cứ kháng nghị tái thẩm.",
+   "answer": false,
+   "explain": "Sai. Sai lầm áp dụng pháp luật là căn cứ giám đốc thẩm (Điều 255); tái thẩm dựa trên tình tiết mới (Điều 281)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các căn cứ kháng nghị tái thẩm theo Điều 281.",
+   "model": "Mới phát hiện tình tiết quan trọng mà Tòa án, đương sự không thể biết; kết luận giám định, lời dịch không đúng sự thật hoặc giả mạo chứng cứ; Thẩm phán, Hội thẩm, Kiểm sát viên cố ý làm sai lệch hồ sơ hoặc kết luận trái pháp luật; bản án, quyết định làm căn cứ đã bị hủy bỏ.",
+   "keywords": [
+    "tình tiết quan trọng",
+    "giả mạo chứng cứ",
+    "sai lệch hồ sơ",
+    "bị hủy bỏ"
+   ]
+  }
+ ]
+}

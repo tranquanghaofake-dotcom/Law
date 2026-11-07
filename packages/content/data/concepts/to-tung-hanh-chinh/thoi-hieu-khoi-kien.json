@@ -1,0 +1,120 @@
+{
+ "id": "thoi-hieu-khoi-kien",
+ "subject": "to-tung-hanh-chinh",
+ "chapter": "c5-khoi-kien",
+ "term": "Thời hiệu khởi kiện",
+ "definition": "Thời hiệu khởi kiện là thời hạn mà cơ quan, tổ chức, cá nhân được quyền khởi kiện để yêu cầu Tòa án giải quyết vụ án hành chính bảo vệ quyền và lợi ích hợp pháp bị xâm phạm; nếu thời hạn đó kết thúc thì mất quyền khởi kiện.",
+ "plain": "Hết thời hiệu là MẤT quyền khởi kiện. Mốc quan trọng nhất: 01 năm kể từ ngày nhận được hoặc biết được quyết định hành chính, hành vi hành chính, quyết định kỷ luật buộc thôi việc (điểm a khoản 2 Điều 116). Khiếu kiện quyết định giải quyết khiếu nại về xử lý vụ việc cạnh tranh, kiểm toán nhà nước: 30 ngày.",
+ "example": "Ông H nhận quyết định thu hồi đất ngày 01/3/2025; đến ngày 01/3/2026 ông mới khởi kiện thì đã hết thời hiệu 01 năm (trừ trường hợp luật cho trừ thời gian).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, điểm a khoản 2 Điều 116 Luật Tố tụng hành chính 2015",
+  "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/van-ban-hop-nhat-13-vbhn-vpqh-2026-luat-to-tung-hanh-chinh-427850-d5.html"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "quyen-khoi-kien",
+  "tra-lai-don-khoi-kien-hanh-chinh"
+ ],
+ "keywords": [
+  "thời hạn",
+  "mất quyền khởi kiện",
+  "01 năm",
+  "nhận được hoặc biết được"
+ ],
+ "memo": {
+  "gist": "Thời hiệu khởi kiện là hạn được kiện; quá hạn thì mất quyền, thường là 01 năm từ khi nhận hoặc biết quyết định.",
+  "kind": "ladder",
+  "hook": "Đồng hồ 365 ngày bắt đầu chạy khi bạn cầm được quyết định trong tay.",
+  "tree": [
+   {
+    "label": "01 năm",
+    "icon": "calendar",
+    "children": [
+     "Quyết định, hành vi hành chính",
+     "Kỷ luật buộc thôi việc"
+    ]
+   },
+   {
+    "label": "30 ngày",
+    "icon": "clock",
+    "children": [
+     "Giải quyết khiếu nại về cạnh tranh, kiểm toán"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Thời hiệu 01 năm tính từ ngày quyết định được ký hay ngày người dân nhận, biết quyết định?",
+   "a": "Từ ngày nhận được hoặc biết được quyết định, hành vi (điểm a khoản 2 Điều 116)."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời hiệu khởi kiện quyết định hành chính theo điểm a khoản 2 Điều 116 là bao lâu?",
+   "options": [
+    "02 năm kể từ ngày quyết định được ký ban hành",
+    "06 tháng kể từ ngày quyết định có hiệu lực thi hành",
+    "30 ngày kể từ ngày nhận được quyết định hành chính",
+    "01 năm kể từ ngày nhận được hoặc biết được quyết định"
+   ],
+   "answer": 3,
+   "explain": "Điểm a khoản 2 Điều 116: 01 năm kể từ ngày nhận được hoặc biết được quyết định hành chính, hành vi hành chính, quyết định kỷ luật buộc thôi việc.",
+   "why": [
+    "Sai: không phải 02 năm, mốc cũng không phải ngày ký.",
+    "Sai: không phải 06 tháng.",
+    "Sai: 30 ngày áp dụng cho quyết định giải quyết khiếu nại về cạnh tranh, kiểm toán.",
+    "Đúng: điểm a khoản 2 Điều 116."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thời hiệu khởi kiện là {{thời hạn}} mà cơ quan, tổ chức, cá nhân được quyền khởi kiện để yêu cầu Tòa án giải quyết vụ án hành chính bảo vệ quyền và lợi ích hợp pháp bị xâm phạm; nếu thời hạn đó kết thúc thì mất quyền khởi kiện."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thời hiệu khởi kiện là thời hạn mà cơ quan, tổ chức, cá nhân được quyền khởi kiện để yêu cầu Tòa án giải quyết vụ án hành chính bảo vệ quyền và lợi ích hợp pháp bị xâm phạm; nếu thời hạn đó kết thúc thì {{mất quyền khởi kiện}}."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Bà K nhận quyết định xử phạt ngày 10/01/2025, không khiếu nại; ngày 20/02/2026 bà nộp đơn khởi kiện và không có trở ngại khách quan nào. Tòa án xử lý thế nào?",
+   "options": [
+    "Thụ lý vì thời hiệu là 02 năm kể từ ngày nhận quyết định",
+    "Thụ lý vì thời hiệu chỉ bắt đầu từ ngày bà K khiếu nại",
+    "Trả lại đơn khởi kiện vì đã hết thời hiệu 01 năm",
+    "Đình chỉ giải quyết vụ án vì bà K không khiếu nại trước"
+   ],
+   "answer": 2,
+   "explain": "Từ 10/01/2025 đến 20/02/2026 đã quá 01 năm, không có trở ngại khách quan nên hết thời hiệu; Tòa án trả lại đơn khởi kiện (Điều 116, Điều 123).",
+   "why": [
+    "Sai: thời hiệu là 01 năm.",
+    "Sai: bà K không khiếu nại; mốc tính là ngày nhận quyết định.",
+    "Đúng: điểm a khoản 2 Điều 116; hết thời hiệu thì trả lại đơn.",
+    "Sai: chưa thụ lý thì không đình chỉ; khiếu nại trước không bắt buộc."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hết thời hiệu khởi kiện thì cơ quan, tổ chức, cá nhân mất quyền khởi kiện vụ án hành chính.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 116: nếu thời hạn đó kết thúc thì mất quyền khởi kiện."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Thời hiệu khởi kiện là gì và mốc thông thường là bao lâu?",
+   "model": "Là thời hạn được quyền khởi kiện để yêu cầu Tòa án bảo vệ quyền, lợi ích hợp pháp; hết thời hạn thì mất quyền khởi kiện. Thông thường là 01 năm kể từ ngày nhận được hoặc biết được quyết định, hành vi hành chính, quyết định kỷ luật buộc thôi việc.",
+   "keywords": [
+    "thời hạn",
+    "mất quyền khởi kiện",
+    "01 năm",
+    "biết được"
+   ]
+  }
+ ]
+}

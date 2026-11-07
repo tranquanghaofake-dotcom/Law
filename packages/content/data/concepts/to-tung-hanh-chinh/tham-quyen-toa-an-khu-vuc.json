@@ -1,0 +1,121 @@
+{
+ "id": "tham-quyen-toa-an-khu-vuc",
+ "subject": "to-tung-hanh-chinh",
+ "chapter": "c2-tham-quyen",
+ "term": "Thẩm quyền của Tòa án nhân dân khu vực",
+ "definition": "Tòa án nhân dân khu vực có thẩm quyền giải quyết theo thủ tục sơ thẩm những khiếu kiện sau: Khiếu kiện quyết định hành chính, hành vi hành chính của cơ quan nhà nước cấp xã, người có thẩm quyền trong cơ quan nhà nước cấp xã đó thuộc phạm vi thẩm quyền theo lãnh thổ của Tòa án nhân dân khu vực.",
+ "plain": "Sau sửa đổi bởi Luật 85/2025/QH15, Tòa án nhân dân khu vực là nơi giải quyết SƠ THẨM vụ án hành chính, kể cả khiếu kiện quyết định, hành vi của cơ quan nhà nước cấp tỉnh trở xuống (khoản 2 Điều 31). Không còn Tòa án cấp huyện; Tòa án cấp tỉnh chuyển sang xử phúc thẩm, giám đốc thẩm, tái thẩm.",
+ "example": "Ông P kiện quyết định xử phạt của Chủ tịch Ủy ban nhân dân xã nơi ông cư trú ra Tòa án nhân dân khu vực có thẩm quyền theo lãnh thổ.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 31 Luật Tố tụng hành chính 2015",
+  "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/van-ban-hop-nhat-13-vbhn-vpqh-2026-luat-to-tung-hanh-chinh-427850-d5.html"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "tham-quyen-toa-an-cap-tinh",
+  "khieu-kien-loai-tru"
+ ],
+ "keywords": [
+  "Tòa án nhân dân khu vực",
+  "thủ tục sơ thẩm",
+  "cơ quan nhà nước cấp xã",
+  "theo lãnh thổ"
+ ],
+ "note": "Điều 31 được sửa đổi bởi Luật 85/2025/QH15 (hiệu lực 01/7/2025): thay Tòa án cấp huyện bằng Tòa án nhân dân khu vực. Tài liệu ôn thi viết trước thời điểm này còn dùng \"Tòa án cấp huyện\".",
+ "memo": {
+  "gist": "Từ 01/7/2025, vụ án hành chính sơ thẩm do Tòa án nhân dân khu vực giải quyết.",
+  "kind": "compare",
+  "hook": "Sơ thẩm ở \"khu vực\", phúc thẩm ở \"tỉnh\": nhớ hai tầng là đủ.",
+  "tree": [
+   {
+    "label": "Tòa án nhân dân khu vực",
+    "icon": "n1",
+    "children": [
+     "Sơ thẩm"
+    ]
+   },
+   {
+    "label": "Tòa án cấp tỉnh",
+    "icon": "n2",
+    "children": [
+     "Phúc thẩm",
+     "Giám đốc thẩm, tái thẩm"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Năm 2026, kiện quyết định hành chính của Chủ tịch Ủy ban nhân dân xã thì nộp đơn ở đâu?",
+   "a": "Tòa án nhân dân khu vực có thẩm quyền theo lãnh thổ (khoản 1 Điều 31)."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 31 (sửa đổi 2025), Tòa án nào giải quyết sơ thẩm khiếu kiện quyết định hành chính của cơ quan nhà nước cấp xã?",
+   "options": [
+    "Tòa án nhân dân khu vực",
+    "Tòa án nhân dân cấp huyện",
+    "Tòa án nhân dân cấp tỉnh",
+    "Tòa án nhân dân cấp cao"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 31: Tòa án nhân dân khu vực giải quyết sơ thẩm khiếu kiện quyết định, hành vi của cơ quan nhà nước cấp xã.",
+   "why": [
+    "Đúng: khoản 1 Điều 31 (sửa đổi bởi Luật 85/2025/QH15).",
+    "Sai: Tòa án cấp huyện không còn từ 01/7/2025.",
+    "Sai: Tòa án cấp tỉnh xử phúc thẩm (Điều 32).",
+    "Sai: Tòa án cấp cao không xử sơ thẩm vụ án hành chính."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tòa án nhân dân khu vực có thẩm quyền giải quyết theo thủ tục {{sơ thẩm}} những khiếu kiện sau:"
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khiếu kiện quyết định hành chính, hành vi hành chính của cơ quan nhà nước {{cấp xã}}, người có thẩm quyền trong cơ quan nhà nước cấp xã đó thuộc phạm vi thẩm quyền theo {{lãnh thổ}} của Tòa án nhân dân khu vực."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Năm 2026, bà Q (cư trú cùng tỉnh) kiện quyết định thu hồi đất của Ủy ban nhân dân tỉnh. Tòa án nào giải quyết sơ thẩm?",
+   "options": [
+    "Tòa án nhân dân tỉnh nơi Ủy ban nhân dân tỉnh đặt trụ sở",
+    "Tòa án nhân dân khu vực nơi bà Q cư trú",
+    "Tòa án nhân dân cấp cao phụ trách khu vực đó",
+    "Tòa án nhân dân tối cao vì người bị kiện là cấp tỉnh"
+   ],
+   "answer": 1,
+   "explain": "Điểm a khoản 2 Điều 31: người khởi kiện cùng tỉnh với người bị kiện thì Tòa án nhân dân khu vực nơi người khởi kiện cư trú giải quyết.",
+   "why": [
+    "Sai: Tòa án cấp tỉnh không còn xử sơ thẩm vụ án hành chính (Điều 32).",
+    "Đúng: điểm a khoản 2 Điều 31 (sửa đổi 2025).",
+    "Sai: Tòa án cấp cao không xử sơ thẩm.",
+    "Sai: Tòa án nhân dân tối cao không xử sơ thẩm."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Từ 01/7/2025, Tòa án nhân dân cấp tỉnh vẫn giải quyết sơ thẩm khiếu kiện quyết định hành chính của Ủy ban nhân dân cấp tỉnh.",
+   "answer": false,
+   "explain": "Sai. Theo Điều 31, Điều 32 (sửa đổi bởi Luật 85/2025/QH15), sơ thẩm thuộc Tòa án nhân dân khu vực; Tòa án cấp tỉnh xử phúc thẩm, giám đốc thẩm, tái thẩm."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Sau sửa đổi năm 2025, thẩm quyền sơ thẩm vụ án hành chính thuộc Tòa án nào?",
+   "model": "Tòa án nhân dân khu vực giải quyết sơ thẩm khiếu kiện quyết định, hành vi hành chính của cơ quan nhà nước cấp xã và cấp tỉnh trở xuống theo lãnh thổ (Điều 31); Tòa án cấp tỉnh xử phúc thẩm, giám đốc thẩm, tái thẩm (Điều 32).",
+   "keywords": [
+    "Tòa án nhân dân khu vực",
+    "sơ thẩm",
+    "cấp tỉnh",
+    "phúc thẩm"
+   ]
+  }
+ ]
+}

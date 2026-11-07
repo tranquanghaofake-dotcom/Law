@@ -1,0 +1,125 @@
+{
+ "id": "tra-lai-don-khoi-kien-hanh-chinh",
+ "subject": "to-tung-hanh-chinh",
+ "chapter": "c5-khoi-kien",
+ "term": "Trả lại đơn khởi kiện",
+ "definition": "Thẩm phán trả lại đơn khởi kiện trong những trường hợp sau đây: a) Người khởi kiện không có quyền khởi kiện; b) Người khởi kiện không có năng lực hành vi tố tụng hành chính đầy đủ; c) Trường hợp pháp luật có quy định về điều kiện khởi kiện nhưng người khởi kiện đã khởi kiện đến Tòa án khi còn thiếu một trong các điều kiện đó; d) Sự việc đã được giải quyết bằng bản án hoặc quyết định của Tòa án đã có hiệu lực pháp luật; đ) Sự việc không thuộc thẩm quyền giải quyết của Tòa án;",
+ "plain": "Trả lại đơn xảy ra TRƯỚC khi thụ lý: Thẩm phán thấy đơn không đủ điều kiện để thành vụ án, như người khởi kiện không có quyền khởi kiện, sự việc đã có bản án hiệu lực, không thuộc thẩm quyền Tòa án, hết thời hiệu (điểm g, h, i… các điểm sau). Khác với ĐÌNH CHỈ là việc chấm dứt vụ án SAU khi đã thụ lý.",
+ "example": "Ông L kiện quyết định nội bộ của cơ quan mình; sự việc không thuộc thẩm quyền Tòa án nên Thẩm phán trả lại đơn.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 123 Luật Tố tụng hành chính 2015",
+  "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/van-ban-hop-nhat-13-vbhn-vpqh-2026-luat-to-tung-hanh-chinh-427850-d5.html"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "dinh-chi-giai-quyet-vu-an",
+  "thoi-hieu-khoi-kien",
+  "vua-khieu-nai-vua-khoi-kien"
+ ],
+ "keywords": [
+  "trả lại đơn khởi kiện",
+  "không có quyền khởi kiện",
+  "không thuộc thẩm quyền"
+ ],
+ "memo": {
+  "gist": "Thẩm phán trả lại đơn khi chưa thụ lý mà đơn không đủ điều kiện để thành vụ án.",
+  "kind": "compare",
+  "hook": "Chưa vào cửa đã bị trả: đó là trả lại đơn; vào rồi mới dừng: đó là đình chỉ.",
+  "tree": [
+   {
+    "label": "Trước thụ lý",
+    "icon": "door",
+    "children": [
+     "Trả lại đơn"
+    ]
+   },
+   {
+    "label": "Sau thụ lý",
+    "icon": "end",
+    "children": [
+     "Đình chỉ vụ án"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Đơn kiện một sự việc đã có bản án có hiệu lực của Tòa án thì xử lý thế nào?",
+   "a": "Thẩm phán trả lại đơn khởi kiện (điểm d khoản 1 Điều 123)."
+  },
+  "contrast": [
+   {
+    "with": "dinh-chi-giai-quyet-vu-an",
+    "text": "Đình chỉ giải quyết vụ án xảy ra sau khi đã thụ lý; trả lại đơn xảy ra trước khi thụ lý."
+   }
+  ]
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trường hợp nào Thẩm phán trả lại đơn khởi kiện theo khoản 1 Điều 123?",
+   "options": [
+    "Sự việc đã được giải quyết bằng bản án đã có hiệu lực pháp luật",
+    "Người khởi kiện chưa nộp bản sao giấy tờ tùy thân có chứng thực",
+    "Người bị kiện không đồng ý tham gia giải quyết vụ án",
+    "Người khởi kiện chưa khiếu nại quyết định hành chính trước"
+   ],
+   "answer": 0,
+   "explain": "Điểm d khoản 1 Điều 123: sự việc đã được giải quyết bằng bản án, quyết định đã có hiệu lực pháp luật thì trả lại đơn.",
+   "why": [
+    "Đúng: điểm d khoản 1 Điều 123.",
+    "Sai: thiếu giấy tờ thì được yêu cầu sửa đổi, bổ sung đơn trước.",
+    "Sai: sự không đồng ý của người bị kiện không làm trả lại đơn.",
+    "Sai: khiếu nại trước không bắt buộc (khoản 1 Điều 115)."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thẩm phán trả lại đơn khởi kiện trong những trường hợp sau đây: a) Người khởi kiện không có {{quyền khởi kiện}};"
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thẩm phán trả lại đơn khởi kiện trong những trường hợp sau đây: đ) Sự việc không thuộc {{thẩm quyền giải quyết}} của Tòa án;"
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Bà M nộp đơn kiện quyết định điều động công tác nội bộ của cơ quan nơi bà làm việc. Thẩm phán xử lý đơn thế nào?",
+   "options": [
+    "Thụ lý rồi đình chỉ vì người khởi kiện không có quyền khởi kiện",
+    "Trả lại đơn vì sự việc không thuộc thẩm quyền giải quyết của Tòa án",
+    "Chuyển đơn cho Tòa án cấp tỉnh giải quyết theo thẩm quyền",
+    "Thụ lý và giải quyết theo thủ tục rút gọn vì vụ việc đơn giản"
+   ],
+   "answer": 1,
+   "explain": "Quyết định nội bộ không thuộc thẩm quyền Tòa án (điểm c khoản 1 Điều 30) nên Thẩm phán trả lại đơn (điểm đ khoản 1 Điều 123).",
+   "why": [
+    "Sai: chưa thụ lý thì trả lại đơn, không thụ lý rồi đình chỉ.",
+    "Đúng: điểm đ khoản 1 Điều 123; quyết định nội bộ bị loại trừ (điểm c khoản 1 Điều 30).",
+    "Sai: không Tòa án nào có thẩm quyền với quyết định nội bộ.",
+    "Sai: sự việc không thuộc thẩm quyền Tòa án thì không thụ lý."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Trả lại đơn khởi kiện và đình chỉ giải quyết vụ án đều xảy ra sau khi Tòa án đã thụ lý vụ án.",
+   "answer": false,
+   "explain": "Sai. Trả lại đơn khởi kiện xảy ra trước khi thụ lý (Điều 123); đình chỉ giải quyết vụ án xảy ra sau khi đã thụ lý (Điều 143)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu một số trường hợp Thẩm phán trả lại đơn khởi kiện theo khoản 1 Điều 123.",
+   "model": "Người khởi kiện không có quyền khởi kiện; không có năng lực hành vi tố tụng đầy đủ; khởi kiện khi còn thiếu điều kiện khởi kiện; sự việc đã có bản án, quyết định có hiệu lực; sự việc không thuộc thẩm quyền Tòa án.",
+   "keywords": [
+    "không có quyền khởi kiện",
+    "năng lực hành vi",
+    "bản án",
+    "thẩm quyền"
+   ]
+  }
+ ]
+}

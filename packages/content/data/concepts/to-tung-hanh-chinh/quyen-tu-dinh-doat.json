@@ -1,0 +1,118 @@
+{
+ "id": "quyen-tu-dinh-doat",
+ "subject": "to-tung-hanh-chinh",
+ "chapter": "c1-doi-tuong",
+ "term": "Quyền quyết định và tự định đoạt của người khởi kiện",
+ "definition": "Cơ quan, tổ chức, cá nhân có quyền quyết định việc khởi kiện vụ án hành chính. Tòa án chỉ thụ lý giải quyết vụ án hành chính khi có đơn khởi kiện của người khởi kiện. Trong quá trình giải quyết vụ án hành chính, người khởi kiện có quyền thay đổi, bổ sung, rút yêu cầu khởi kiện, thực hiện các quyền tố tụng khác của mình theo quy định của Luật này.",
+ "plain": "Tòa án không tự \"mở\" vụ án hành chính: phải có đơn khởi kiện. Sau khi kiện, người khởi kiện vẫn làm chủ yêu cầu của mình: được thay đổi, bổ sung hoặc rút yêu cầu theo đúng quy định của Luật.",
+ "example": "Bà L khởi kiện quyết định thu hồi đất, sau đó được bồi thường thỏa đáng nên rút đơn khởi kiện.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 8 Luật Tố tụng hành chính 2015",
+  "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/van-ban-hop-nhat-13-vbhn-vpqh-2026-luat-to-tung-hanh-chinh-427850-d5.html"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "nguoi-khoi-kien",
+  "quyen-khoi-kien",
+  "dinh-chi-giai-quyet-vu-an"
+ ],
+ "keywords": [
+  "quyền quyết định",
+  "chỉ thụ lý",
+  "đơn khởi kiện",
+  "thay đổi, bổ sung, rút"
+ ],
+ "memo": {
+  "gist": "Người khởi kiện tự quyết có kiện hay không và được thay đổi, rút yêu cầu; Tòa án không tự khởi động vụ án.",
+  "kind": "steps",
+  "hook": "Thiếu lá đơn, cánh cửa phòng xử vẫn đóng im lìm.",
+  "tree": [
+   {
+    "label": "Quyết định có kiện",
+    "icon": "n1"
+   },
+   {
+    "label": "Tòa chỉ thụ lý khi có đơn",
+    "icon": "n2"
+   },
+   {
+    "label": "Được thay đổi, bổ sung, rút yêu cầu",
+    "icon": "n3"
+   }
+  ],
+  "case": {
+   "q": "Tòa án phát hiện một quyết định hành chính trái luật qua báo chí thì có tự thụ lý vụ án không?",
+   "a": "Không. Tòa án chỉ thụ lý khi có đơn khởi kiện của người khởi kiện (Điều 8)."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 8, Tòa án thụ lý vụ án hành chính khi nào?",
+   "options": [
+    "Khi Viện kiểm sát phát hiện quyết định hành chính trái luật",
+    "Khi có đơn khởi kiện của người khởi kiện",
+    "Khi cơ quan báo chí phản ánh sai phạm của cơ quan nhà nước",
+    "Khi Chánh án Tòa án xét thấy cần bảo vệ lợi ích công cộng"
+   ],
+   "answer": 1,
+   "explain": "Điều 8: Tòa án chỉ thụ lý giải quyết vụ án hành chính khi có đơn khởi kiện của người khởi kiện.",
+   "why": [
+    "Sai: Viện kiểm sát kiểm sát, không thay người khởi kiện.",
+    "Đúng: Điều 8.",
+    "Sai: Tòa án không thụ lý theo tin báo chí.",
+    "Sai: Tòa án không tự khởi động vụ án hành chính."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tòa án chỉ {{thụ lý}} giải quyết vụ án hành chính khi có {{đơn khởi kiện}} của người khởi kiện."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trong quá trình giải quyết vụ án hành chính, người khởi kiện có quyền {{thay đổi}}, bổ sung, {{rút}} yêu cầu khởi kiện, thực hiện các quyền tố tụng khác của mình theo quy định của Luật này."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Đang giải quyết vụ án, người khởi kiện M nộp văn bản rút toàn bộ yêu cầu khởi kiện; không có ai có yêu cầu độc lập. Tòa án xử lý thế nào?",
+   "options": [
+    "Tiếp tục xét xử vì vụ án đã được thụ lý từ trước",
+    "Chuyển hồ sơ cho Viện kiểm sát tiếp tục khởi kiện thay",
+    "Buộc M giải trình lý do, không có lý do thì bác đơn rút",
+    "Đình chỉ giải quyết vụ án, vì M có quyền rút yêu cầu"
+   ],
+   "answer": 3,
+   "explain": "Người khởi kiện có quyền rút yêu cầu (Điều 8); khi không có yêu cầu độc lập thì Tòa án đình chỉ (điểm b khoản 1 Điều 143).",
+   "why": [
+    "Sai: người khởi kiện có quyền rút yêu cầu (Điều 8).",
+    "Sai: Viện kiểm sát không khởi kiện thay trong vụ án hành chính.",
+    "Sai: luật không buộc giải trình lý do rút yêu cầu.",
+    "Đúng: Điều 8 và điểm b khoản 1 Điều 143."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tòa án có thể tự thụ lý vụ án hành chính khi phát hiện quyết định hành chính trái pháp luật.",
+   "answer": false,
+   "explain": "Sai. Điều 8: Tòa án chỉ thụ lý khi có đơn khởi kiện của người khởi kiện."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nguyên tắc quyền quyết định và tự định đoạt của người khởi kiện gồm những nội dung nào?",
+   "model": "Cơ quan, tổ chức, cá nhân tự quyết định việc khởi kiện; Tòa án chỉ thụ lý khi có đơn khởi kiện; trong quá trình giải quyết, người khởi kiện có quyền thay đổi, bổ sung, rút yêu cầu khởi kiện.",
+   "keywords": [
+    "quyết định việc khởi kiện",
+    "đơn khởi kiện",
+    "thay đổi",
+    "rút yêu cầu"
+   ]
+  }
+ ]
+}

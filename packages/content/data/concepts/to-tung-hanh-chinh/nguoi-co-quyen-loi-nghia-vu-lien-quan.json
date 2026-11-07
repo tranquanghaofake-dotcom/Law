@@ -1,0 +1,118 @@
+{
+ "id": "nguoi-co-quyen-loi-nghia-vu-lien-quan",
+ "subject": "to-tung-hanh-chinh",
+ "chapter": "c3-nguoi-tham-gia",
+ "term": "Người có quyền lợi, nghĩa vụ liên quan",
+ "definition": "Người có quyền lợi, nghĩa vụ liên quan là cơ quan, tổ chức, cá nhân tuy không khởi kiện, không bị kiện, nhưng việc giải quyết vụ án hành chính có liên quan đến quyền lợi, nghĩa vụ của họ nên họ tự mình hoặc đương sự khác đề nghị và được Tòa án nhân dân (sau đây gọi là Tòa án) chấp nhận hoặc được Tòa án đưa vào tham gia tố tụng với tư cách là người có quyền lợi, nghĩa vụ liên quan.",
+ "plain": "Họ không kiện ai, cũng không bị ai kiện, nhưng phán quyết sẽ ẢNH HƯỞNG đến quyền lợi, nghĩa vụ của họ. Họ tham gia bằng ba đường: tự mình đề nghị, đương sự khác đề nghị (và Tòa án chấp nhận), hoặc Tòa án tự đưa vào.",
+ "example": "Ông A kiện quyết định cấp giấy chứng nhận quyền sử dụng đất cho bà B; bà B là người có quyền lợi, nghĩa vụ liên quan.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 10 Điều 3 Luật Tố tụng hành chính 2015",
+  "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/van-ban-hop-nhat-13-vbhn-vpqh-2026-luat-to-tung-hanh-chinh-427850-d5.html"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "duong-su-hanh-chinh",
+  "nguoi-khoi-kien",
+  "nguoi-bi-kien"
+ ],
+ "keywords": [
+  "không khởi kiện, không bị kiện",
+  "liên quan đến quyền lợi, nghĩa vụ",
+  "Tòa án chấp nhận",
+  "đưa vào tham gia tố tụng"
+ ],
+ "memo": {
+  "gist": "Người không kiện, không bị kiện nhưng phán quyết ảnh hưởng tới quyền lợi, nghĩa vụ của họ.",
+  "kind": "steps",
+  "hook": "Ngồi ngoài cuộc kiện nhưng kết quả rơi vào túi mình.",
+  "tree": [
+   {
+    "label": "Tự mình đề nghị",
+    "icon": "n1"
+   },
+   {
+    "label": "Đương sự khác đề nghị",
+    "icon": "n2"
+   },
+   {
+    "label": "Tòa án đưa vào",
+    "icon": "n3"
+   }
+  ],
+  "case": {
+   "q": "Người được cấp giấy chứng nhận quyền sử dụng đất bị người khác kiện thì tham gia với tư cách gì?",
+   "a": "Người có quyền lợi, nghĩa vụ liên quan, vì việc hủy giấy chứng nhận ảnh hưởng trực tiếp đến họ (khoản 10 Điều 3)."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người có quyền lợi, nghĩa vụ liên quan tham gia tố tụng bằng những cách nào?",
+   "options": [
+    "Chỉ khi được người khởi kiện đồng ý bằng văn bản",
+    "Chỉ khi Viện kiểm sát kiến nghị đưa họ vào tham gia vụ án hành chính",
+    "Tự động tham gia ngay khi biết vụ án đang được Tòa án giải quyết",
+    "Tự mình, đương sự khác đề nghị được chấp nhận, hoặc Tòa án đưa vào"
+   ],
+   "answer": 3,
+   "explain": "Khoản 10 Điều 3: tự mình hoặc đương sự khác đề nghị và được Tòa án chấp nhận, hoặc được Tòa án đưa vào tham gia tố tụng.",
+   "why": [
+    "Sai: luật không đòi sự đồng ý của người khởi kiện.",
+    "Sai: luật không quy định như vậy.",
+    "Sai: cần Tòa án chấp nhận hoặc đưa vào.",
+    "Đúng: khoản 10 Điều 3."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người có quyền lợi, nghĩa vụ liên quan là cơ quan, tổ chức, cá nhân tuy {{không khởi kiện}}, {{không bị kiện}}, nhưng việc giải quyết vụ án hành chính có liên quan đến quyền lợi, nghĩa vụ của họ nên họ tự mình hoặc đương sự khác đề nghị và được Tòa án nhân dân (sau đây gọi là Tòa án) chấp nhận hoặc được Tòa án đưa vào tham gia tố tụng với tư cách là người có quyền lợi, nghĩa vụ liên quan."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người có quyền lợi, nghĩa vụ liên quan là cơ quan, tổ chức, cá nhân tuy không khởi kiện, không bị kiện, nhưng việc giải quyết vụ án hành chính có liên quan đến quyền lợi, nghĩa vụ của họ nên họ tự mình hoặc đương sự khác đề nghị và được Tòa án nhân dân (sau đây gọi là Tòa án) {{chấp nhận}} hoặc được Tòa án {{đưa vào}} tham gia tố tụng với tư cách là người có quyền lợi, nghĩa vụ liên quan."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Ông C kiện quyết định cấp giấy chứng nhận quyền sử dụng đất cho bà D (thửa đất ông C cho là của mình). Bà D tham gia vụ án với tư cách gì?",
+   "options": [
+    "Người bị kiện cùng với Ủy ban nhân dân",
+    "Người có quyền lợi, nghĩa vụ liên quan",
+    "Người làm chứng về nguồn gốc thửa đất",
+    "Không tham gia vì bà D không phải đương sự"
+   ],
+   "answer": 1,
+   "explain": "Bà D không khởi kiện, không bị kiện nhưng việc hủy hay giữ giấy chứng nhận ảnh hưởng trực tiếp đến quyền của bà (khoản 10 Điều 3).",
+   "why": [
+    "Sai: bà D không ra quyết định cấp giấy chứng nhận.",
+    "Đúng: bà D không kiện, không bị kiện nhưng việc giải quyết ảnh hưởng quyền của bà.",
+    "Sai: bà D có quyền lợi trực tiếp, không chỉ khai báo.",
+    "Sai: bà D là đương sự với tư cách người có quyền lợi, nghĩa vụ liên quan."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người có quyền lợi, nghĩa vụ liên quan không phải là đương sự.",
+   "answer": false,
+   "explain": "Sai. Khoản 7 Điều 3: đương sự gồm cả người có quyền lợi, nghĩa vụ liên quan."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Người có quyền lợi, nghĩa vụ liên quan là ai?",
+   "model": "Là cơ quan, tổ chức, cá nhân không khởi kiện, không bị kiện nhưng việc giải quyết vụ án liên quan đến quyền lợi, nghĩa vụ của họ; họ tham gia khi tự mình hoặc đương sự khác đề nghị và Tòa án chấp nhận, hoặc Tòa án đưa vào.",
+   "keywords": [
+    "không khởi kiện",
+    "không bị kiện",
+    "Tòa án chấp nhận",
+    "đưa vào"
+   ]
+  }
+ ]
+}

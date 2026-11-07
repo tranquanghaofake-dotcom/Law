@@ -1,0 +1,125 @@
+{
+ "id": "khieu-kien-loai-tru",
+ "subject": "to-tung-hanh-chinh",
+ "chapter": "c2-tham-quyen",
+ "term": "Quyết định, hành vi không thuộc thẩm quyền Tòa án",
+ "definition": "Khiếu kiện quyết định hành chính, hành vi hành chính, trừ các quyết định, hành vi sau đây: a) Quyết định hành chính, hành vi hành chính thuộc phạm vi bí mật nhà nước trong các lĩnh vực quốc phòng, an ninh, ngoại giao theo quy định của pháp luật; b) Quyết định, hành vi của Tòa án trong việc áp dụng biện pháp xử lý hành chính, xử lý hành vi cản trở hoạt động tố tụng; c) Quyết định hành chính, hành vi hành chính mang tính nội bộ của cơ quan, tổ chức.",
+ "plain": "Tòa án giải quyết khiếu kiện quyết định, hành vi hành chính, TRỪ ba nhóm: bí mật nhà nước về quốc phòng, an ninh, ngoại giao; quyết định, hành vi của chính Tòa án khi áp dụng biện pháp xử lý hành chính hoặc xử lý hành vi cản trở tố tụng; và quyết định, hành vi mang tính nội bộ của cơ quan, tổ chức.",
+ "example": "Quyết định điều động một nhân viên sang phòng khác trong cùng cơ quan mang tính nội bộ, không kiện ra Tòa hành chính.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 30 Luật Tố tụng hành chính 2015",
+  "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/van-ban-hop-nhat-13-vbhn-vpqh-2026-luat-to-tung-hanh-chinh-427850-d5.html"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "quyet-dinh-hanh-chinh-bi-kien",
+  "quyet-dinh-ky-luat-buoc-thoi-viec",
+  "tham-quyen-toa-an-khu-vuc"
+ ],
+ "keywords": [
+  "bí mật nhà nước",
+  "xử lý hành vi cản trở hoạt động tố tụng",
+  "mang tính nội bộ"
+ ],
+ "memo": {
+  "gist": "Ba nhóm quyết định, hành vi hành chính không kiện ra Tòa: bí mật nhà nước, của Tòa án, nội bộ.",
+  "kind": "checklist",
+  "hook": "Ba ổ khóa: chuyện quốc phòng kín, chuyện của chính quan tòa, chuyện trong nhà.",
+  "tree": [
+   {
+    "label": "Bí mật nhà nước",
+    "icon": "lock",
+    "children": [
+     "Quốc phòng",
+     "An ninh",
+     "Ngoại giao"
+    ]
+   },
+   {
+    "label": "Của Tòa án",
+    "icon": "scales",
+    "children": [
+     "Biện pháp xử lý hành chính",
+     "Xử lý cản trở tố tụng"
+    ]
+   },
+   {
+    "label": "Mang tính nội bộ",
+    "icon": "home"
+   }
+  ],
+  "case": {
+   "q": "Quyết định của Tòa án phạt tiền người gây rối phiên tòa có bị kiện vụ án hành chính không?",
+   "a": "Không. Quyết định của Tòa án xử lý hành vi cản trở hoạt động tố tụng bị loại trừ (điểm b khoản 1 Điều 30)."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhóm nào KHÔNG thuộc các trường hợp loại trừ ở khoản 1 Điều 30?",
+   "options": [
+    "Quyết định hành chính thuộc bí mật nhà nước về quốc phòng",
+    "Quyết định thu hồi đất của Ủy ban nhân dân cấp tỉnh",
+    "Quyết định của Tòa án xử lý hành vi cản trở tố tụng",
+    "Quyết định hành chính mang tính nội bộ của cơ quan"
+   ],
+   "answer": 1,
+   "explain": "Khoản 1 Điều 30 loại trừ ba nhóm: bí mật nhà nước, quyết định, hành vi của Tòa án, và nội bộ; thu hồi đất không thuộc nhóm nào.",
+   "why": [
+    "Sai: đây là nhóm loại trừ ở điểm a.",
+    "Đúng: quyết định thu hồi đất không thuộc ba nhóm loại trừ nên kiện được.",
+    "Sai: đây là nhóm loại trừ ở điểm b.",
+    "Sai: đây là nhóm loại trừ ở điểm c."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khiếu kiện quyết định hành chính, hành vi hành chính, trừ các quyết định, hành vi sau đây: a) Quyết định hành chính, hành vi hành chính thuộc phạm vi {{bí mật nhà nước}} trong các lĩnh vực quốc phòng, an ninh, ngoại giao theo quy định của pháp luật; b) Quyết định, hành vi của Tòa án trong việc áp dụng biện pháp xử lý hành chính, xử lý hành vi cản trở hoạt động tố tụng; c) Quyết định hành chính, hành vi hành chính mang tính nội bộ của cơ quan, tổ chức."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khiếu kiện quyết định hành chính, hành vi hành chính, trừ các quyết định, hành vi sau đây: a) Quyết định hành chính, hành vi hành chính thuộc phạm vi bí mật nhà nước trong các lĩnh vực quốc phòng, an ninh, ngoại giao theo quy định của pháp luật; b) Quyết định, hành vi của Tòa án trong việc áp dụng biện pháp xử lý hành chính, xử lý hành vi cản trở hoạt động tố tụng; c) Quyết định hành chính, hành vi hành chính mang tính {{nội bộ}} của cơ quan, tổ chức."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Trưởng phòng tổ chức ra quyết định phân công lại công việc cho nhân viên N trong cùng cơ quan. N không đồng ý và muốn kiện ra Tòa hành chính. Nhận định nào đúng?",
+   "options": [
+    "Kiện được, vì mọi quyết định bằng văn bản đều là quyết định hành chính",
+    "Kiện được, nếu N đã khiếu nại mà không được giải quyết đúng hạn",
+    "Không kiện được, vì N chỉ được kiện quyết định của cơ quan cấp tỉnh",
+    "Không kiện được, vì đây là quyết định mang tính nội bộ của cơ quan"
+   ],
+   "answer": 3,
+   "explain": "Quyết định phân công công việc trong cơ quan mang tính nội bộ, bị loại trừ theo điểm c khoản 1 Điều 30.",
+   "why": [
+    "Sai: quyết định nội bộ bị loại trừ khỏi thẩm quyền Tòa án.",
+    "Sai: khiếu nại không làm quyết định nội bộ thành đối tượng khởi kiện.",
+    "Sai: lý do loại trừ là tính nội bộ, không phải cấp ban hành.",
+    "Đúng: điểm c khoản 1 Điều 30."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quyết định hành chính thuộc bí mật nhà nước trong lĩnh vực quốc phòng là đối tượng khởi kiện vụ án hành chính.",
+   "answer": false,
+   "explain": "Sai. Điểm a khoản 1 Điều 30 loại trừ nhóm này khỏi thẩm quyền Tòa án."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Ba nhóm quyết định, hành vi hành chính bị loại trừ ở khoản 1 Điều 30 là gì?",
+   "model": "Quyết định, hành vi thuộc bí mật nhà nước trong quốc phòng, an ninh, ngoại giao; quyết định, hành vi của Tòa án khi áp dụng biện pháp xử lý hành chính, xử lý hành vi cản trở tố tụng; quyết định, hành vi mang tính nội bộ của cơ quan, tổ chức.",
+   "keywords": [
+    "bí mật nhà nước",
+    "Tòa án",
+    "nội bộ"
+   ]
+  }
+ ]
+}

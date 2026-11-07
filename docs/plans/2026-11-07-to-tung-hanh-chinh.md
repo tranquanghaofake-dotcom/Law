@@ -3,7 +3,7 @@
 Nhánh `content/to-tung-hanh-chinh`. Hào đã duyệt phạm vi trong phiên 07/11/2026.
 
 ## Đã có
-- Nguyên văn luật: `packages/content/data/laws/lttth-vbhn-2026.txt`, gồm Luật 93/2015/QH13 theo VBHN 13/VBHN-VPQH ngày 06/02/2026, đã gộp Luật 85/2025/QH15. Đã ghi dòng nguồn trong `SOURCES.md`.
+- Nguyên văn luật: `packages/content/data/laws/ltthc-vbhn-2026.txt`, gồm Luật 93/2015/QH13 theo VBHN 13/VBHN-VPQH ngày 06/02/2026, đã gộp Luật 85/2025/QH15. Đã ghi dòng nguồn trong `SOURCES.md`.
 - Tài liệu trong Drive là các bộ nhận định ôn thi (nguồn Studocu: Đại học Luật TP.HCM, Học viện Tòa án), **không có đề cương môn**. Nhiều bài viết theo luật trước sửa đổi, còn dùng "Tòa án nhân dân cấp huyện". Từ 01/7/2025 cấp này đã thay bằng **Tòa án nhân dân khu vực** (Điều 31), nên chỉ dùng các bài đó làm gợi ý dạng câu hỏi, không dùng làm căn cứ.
 
 ## Khung chương (theo cấu trúc luật)
@@ -19,7 +19,8 @@ Nhánh `content/to-tung-hanh-chinh`. Hào đã duyệt phạm vi trong phiên 07
 
 Tổng 25 khái niệm. Mỗi khái niệm làm theo đúng khuôn môn Hôn nhân và gia đình: `definition` nguyên văn và có test đối chiếu từng câu, `memo`, các item mcq/case/cloze/recall/truefalse, `why` cho mọi câu trắc nghiệm, `parts` cho câu Đúng/Sai nếu nhánh `feat/nhan-dinh-3-phan` đã được merge.
 
-## Việc còn lại (phiên sau)
-1. Viết 25 khái niệm (theo cách sinh của `gen_hngd.py`), thêm `subjects/to-tung-hanh-chinh.json` và test riêng của môn.
-2. Đăng ký vào kệ (`shelves.ts`: kệ Công pháp, cùng chỗ với Hành chính), `fields.ts`, `art/registry.ts`, `covers.ts`, `tools/citations/laws.ts`; sửa các test đang đếm số môn.
-3. `npm run ci`, chụp ảnh 390 px.
+## Trạng thái (07/11/2026)
+- Xong: 25 khái niệm, 7 chương (`subjects/to-tung-hanh-chinh.json`), test riêng `tests/to-tung-hanh-chinh.test.ts` (nguyên văn, id không trùng môn khác), `why` cho mọi câu trắc nghiệm, đăng ký kệ Hiến pháp – Hành chính, lĩnh vực tố tụng, tranh `toa-an`, bìa.
+- Lưu ý: repo đã có sẵn `laws/ltthc-vbhn-2026.txt` (cùng VBHN 13/2026); bản trùng tạo nhầm trong phiên đã gỡ, các lỗi dính chữ được sửa ngay trên file có sẵn.
+- 4 id đổi tên để không trùng môn khác: `quyet-dinh-hanh-chinh-tthc`, `duong-su-hanh-chinh`, `nghia-vu-chung-minh-hanh-chinh`, `tra-lai-don-khoi-kien-hanh-chinh`.
+- Chưa có: đề kiểm tra 10 câu; `parts` (nhận định 3 phần) cho câu Đúng/Sai — làm sau khi `feat/nhan-dinh-3-phan` được merge.

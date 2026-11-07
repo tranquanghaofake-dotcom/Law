@@ -1,0 +1,121 @@
+{
+ "id": "quyet-dinh-hanh-chinh-tthc",
+ "subject": "to-tung-hanh-chinh",
+ "chapter": "c1-doi-tuong",
+ "term": "Quyết định hành chính",
+ "definition": "Quyết định hành chính là văn bản do cơ quan hành chính nhà nước, cơ quan, tổ chức được giao thực hiện quản lý hành chính nhà nước ban hành hoặc người có thẩm quyền trong cơ quan, tổ chức đó ban hành quyết định về vấn đề cụ thể trong hoạt động quản lý hành chính được áp dụng một lần đối với một hoặc một số đối tượng cụ thể.",
+ "plain": "Ba dấu hiệu: (1) là VĂN BẢN; (2) do cơ quan hành chính, tổ chức được giao quản lý hành chính hoặc người có thẩm quyền trong đó ban hành; (3) giải quyết VẤN ĐỀ CỤ THỂ, áp dụng MỘT LẦN cho đối tượng cụ thể. Vì áp dụng một lần nên nó khác văn bản quy phạm pháp luật (áp dụng nhiều lần, cho mọi người).",
+ "example": "Quyết định của Chủ tịch Ủy ban nhân dân xã xử phạt ông A 2 triệu đồng vì lấn chiếm vỉa hè.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 3 Luật Tố tụng hành chính 2015",
+  "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/van-ban-hop-nhat-13-vbhn-vpqh-2026-luat-to-tung-hanh-chinh-427850-d5.html"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "quyet-dinh-hanh-chinh-bi-kien",
+  "hanh-vi-hanh-chinh",
+  "quyet-dinh-ky-luat-buoc-thoi-viec"
+ ],
+ "keywords": [
+  "văn bản",
+  "vấn đề cụ thể",
+  "áp dụng một lần",
+  "đối tượng cụ thể"
+ ],
+ "memo": {
+  "gist": "Quyết định hành chính là văn bản giải quyết một việc cụ thể, dùng một lần cho người cụ thể.",
+  "kind": "checklist",
+  "hook": "Như tấm vé đi tàu: ghi tên riêng, dùng xong là hết.",
+  "tree": [
+   {
+    "label": "Văn bản",
+    "icon": "doc"
+   },
+   {
+    "label": "Chủ thể quản lý hành chính ban hành",
+    "icon": "stamp"
+   },
+   {
+    "label": "Vấn đề cụ thể, áp dụng một lần",
+    "icon": "target",
+    "children": [
+     "Một hoặc một số đối tượng cụ thể"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Nghị quyết của Hội đồng nhân dân tỉnh quy định mức thu phí chung cho mọi người có phải quyết định hành chính không?",
+   "a": "Không. Văn bản áp dụng nhiều lần cho mọi người là văn bản quy phạm, không phải quyết định hành chính (khoản 1 Điều 3)."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 3, quyết định hành chính được áp dụng thế nào?",
+   "options": [
+    "Một lần đối với một hoặc một số đối tượng cụ thể",
+    "Nhiều lần đối với mọi cơ quan, tổ chức, cá nhân",
+    "Một lần đối với toàn bộ dân cư trên địa bàn",
+    "Nhiều lần trong một năm đối với đối tượng cụ thể"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 3: quyết định về vấn đề cụ thể, được áp dụng một lần đối với một hoặc một số đối tượng cụ thể.",
+   "why": [
+    "Đúng: khoản 1 Điều 3 — áp dụng một lần đối với đối tượng cụ thể.",
+    "Sai: áp dụng nhiều lần, cho mọi người là văn bản quy phạm.",
+    "Sai: quyết định hành chính nhắm tới đối tượng cụ thể, không phải toàn bộ dân cư.",
+    "Sai: luật nói áp dụng một lần."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyết định hành chính là {{văn bản}} do cơ quan hành chính nhà nước, cơ quan, tổ chức được giao thực hiện quản lý hành chính nhà nước ban hành hoặc người có thẩm quyền trong cơ quan, tổ chức đó ban hành quyết định về vấn đề cụ thể trong hoạt động quản lý hành chính được áp dụng một lần đối với một hoặc một số đối tượng cụ thể."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyết định hành chính là văn bản do cơ quan hành chính nhà nước, cơ quan, tổ chức được giao thực hiện quản lý hành chính nhà nước ban hành hoặc người có thẩm quyền trong cơ quan, tổ chức đó ban hành quyết định về {{vấn đề cụ thể}} trong hoạt động quản lý hành chính được áp dụng {{một lần}} đối với một hoặc một số đối tượng cụ thể."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Ủy ban nhân dân tỉnh ban hành quyết định thu hồi 300 m² đất của gia đình bà B để làm đường. Văn bản này là gì?",
+   "options": [
+    "Văn bản quy phạm pháp luật vì do Ủy ban nhân dân tỉnh ban hành",
+    "Quyết định hành chính vì giải quyết việc cụ thể cho đối tượng cụ thể",
+    "Hành vi hành chính vì liên quan đến việc thu hồi đất trên thực tế",
+    "Hợp đồng dân sự giữa Nhà nước và gia đình bà B về việc đền bù"
+   ],
+   "answer": 1,
+   "explain": "Quyết định thu hồi đất của một hộ là văn bản giải quyết vấn đề cụ thể, áp dụng một lần cho đối tượng cụ thể (khoản 1 Điều 3).",
+   "why": [
+    "Sai: chủ thể ban hành không quyết định tính quy phạm; nội dung cá biệt.",
+    "Đúng: thu hồi đất của một hộ cụ thể là quyết định hành chính (khoản 1 Điều 3).",
+    "Sai: đây là văn bản, không phải hành vi.",
+    "Sai: thu hồi đất là mệnh lệnh quản lý, không phải thỏa thuận dân sự."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi văn bản do cơ quan hành chính nhà nước ban hành đều là quyết định hành chính.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 3: chỉ văn bản giải quyết vấn đề cụ thể, áp dụng một lần cho đối tượng cụ thể; văn bản quy phạm không phải quyết định hành chính."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các dấu hiệu của quyết định hành chính theo khoản 1 Điều 3.",
+   "model": "Là văn bản; do cơ quan hành chính nhà nước, cơ quan, tổ chức được giao quản lý hành chính hoặc người có thẩm quyền ban hành; về vấn đề cụ thể; áp dụng một lần đối với một hoặc một số đối tượng cụ thể.",
+   "keywords": [
+    "văn bản",
+    "vấn đề cụ thể",
+    "áp dụng một lần",
+    "đối tượng cụ thể"
+   ]
+  }
+ ]
+}

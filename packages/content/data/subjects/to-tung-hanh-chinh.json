@@ -1,0 +1,116 @@
+{
+  "id": "to-tung-hanh-chinh",
+  "title": "Luật Tố tụng hành chính",
+  "short": "Tố tụng hành chính",
+  "chapters": [
+    {
+      "id": "c1-doi-tuong",
+      "title": "Chương 1. Đối tượng khởi kiện và nguyên tắc",
+      "lessons": [
+        {
+          "id": "l1-doi-tuong",
+          "title": "Đối tượng khởi kiện và nguyên tắc",
+          "concepts": [
+            "quyet-dinh-hanh-chinh-tthc",
+            "quyet-dinh-hanh-chinh-bi-kien",
+            "hanh-vi-hanh-chinh",
+            "quyet-dinh-ky-luat-buoc-thoi-viec",
+            "quyen-tu-dinh-doat",
+            "bao-dam-tranh-tung"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c2-tham-quyen",
+      "title": "Chương 2. Thẩm quyền của Tòa án",
+      "lessons": [
+        {
+          "id": "l2-tham-quyen",
+          "title": "Thẩm quyền của Tòa án",
+          "concepts": [
+            "khieu-kien-loai-tru",
+            "tham-quyen-toa-an-khu-vuc",
+            "tham-quyen-toa-an-cap-tinh",
+            "vua-khieu-nai-vua-khoi-kien"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c3-nguoi-tham-gia",
+      "title": "Chương 3. Người tham gia tố tụng",
+      "lessons": [
+        {
+          "id": "l3-nguoi-tham-gia",
+          "title": "Người tham gia tố tụng",
+          "concepts": [
+            "duong-su-hanh-chinh",
+            "nguoi-khoi-kien",
+            "nguoi-bi-kien",
+            "nguoi-co-quyen-loi-nghia-vu-lien-quan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c4-chung-cu",
+      "title": "Chương 4. Chứng minh, chứng cứ và biện pháp khẩn cấp tạm thời",
+      "lessons": [
+        {
+          "id": "l4-chung-cu",
+          "title": "Chứng minh, chứng cứ và biện pháp khẩn cấp tạm thời",
+          "concepts": [
+            "nghia-vu-chung-minh-hanh-chinh",
+            "tam-dinh-chi-thi-hanh-quyet-dinh"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c5-khoi-kien",
+      "title": "Chương 5. Khởi kiện, thụ lý vụ án",
+      "lessons": [
+        {
+          "id": "l5-khoi-kien",
+          "title": "Khởi kiện, thụ lý vụ án",
+          "concepts": [
+            "quyen-khoi-kien",
+            "thoi-hieu-khoi-kien",
+            "tra-lai-don-khoi-kien-hanh-chinh",
+            "dinh-chi-giai-quyet-vu-an"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c6-xet-xu",
+      "title": "Chương 6. Xét xử sơ thẩm và phúc thẩm",
+      "lessons": [
+        {
+          "id": "l6-xet-xu",
+          "title": "Xét xử sơ thẩm và phúc thẩm",
+          "concepts": [
+            "xet-xu-vang-mat",
+            "phuc-tham",
+            "thoi-han-khang-cao"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c7-xem-xet-lai",
+      "title": "Chương 7. Giám đốc thẩm, tái thẩm",
+      "lessons": [
+        {
+          "id": "l7-xem-xet-lai",
+          "title": "Giám đốc thẩm, tái thẩm",
+          "concepts": [
+            "giam-doc-tham",
+            "can-cu-tai-tham"
+          ]
+        }
+      ]
+    }
+  ]
+}

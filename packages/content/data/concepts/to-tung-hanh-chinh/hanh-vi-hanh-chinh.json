@@ -1,0 +1,125 @@
+{
+ "id": "hanh-vi-hanh-chinh",
+ "subject": "to-tung-hanh-chinh",
+ "chapter": "c1-doi-tuong",
+ "term": "Hành vi hành chính",
+ "definition": "Hành vi hành chính là hành vi của cơ quan hành chính nhà nước hoặc của người có thẩm quyền trong cơ quan hành chính nhà nước hoặc cơ quan, tổ chức được giao thực hiện quản lý hành chính nhà nước thực hiện hoặc không thực hiện nhiệm vụ, công vụ theo quy định của pháp luật.",
+ "plain": "Hành vi hành chính có hai chiều: LÀM (thực hiện nhiệm vụ, công vụ) và KHÔNG LÀM (không thực hiện nhiệm vụ, công vụ phải làm). Nó khác quyết định hành chính ở chỗ không phải là một văn bản.",
+ "example": "Cán bộ địa chính xã không tiếp nhận hồ sơ đăng ký đất đai hợp lệ của bà G dù đã quá hạn giải quyết.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 3 Điều 3 Luật Tố tụng hành chính 2015",
+  "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/van-ban-hop-nhat-13-vbhn-vpqh-2026-luat-to-tung-hanh-chinh-427850-d5.html"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "quyet-dinh-hanh-chinh-tthc",
+  "quyet-dinh-hanh-chinh-bi-kien"
+ ],
+ "keywords": [
+  "thực hiện hoặc không thực hiện",
+  "nhiệm vụ, công vụ",
+  "theo quy định của pháp luật"
+ ],
+ "memo": {
+  "gist": "Hành vi hành chính là việc cơ quan, người có thẩm quyền làm hoặc không làm nhiệm vụ công vụ.",
+  "kind": "compare",
+  "hook": "Im lặng cũng là hành vi: không trả lời đúng hạn vẫn có thể bị kiện.",
+  "tree": [
+   {
+    "label": "Hành động",
+    "icon": "bolt",
+    "children": [
+     "Cưỡng chế",
+     "Thu giữ"
+    ]
+   },
+   {
+    "label": "Không hành động",
+    "icon": "pause",
+    "children": [
+     "Không cấp giấy",
+     "Không trả lời"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Ủy ban nhân dân không trả lời đơn xin cấp giấy phép trong thời hạn luật định thì có kiện được không?",
+   "a": "Có thể kiện hành vi hành chính \"không thực hiện nhiệm vụ, công vụ\" (khoản 3 Điều 3)."
+  },
+  "contrast": [
+   {
+    "with": "quyet-dinh-hanh-chinh-tthc",
+    "text": "Quyết định hành chính là văn bản; hành vi hành chính là việc làm hoặc không làm, không cần văn bản."
+   }
+  ]
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 3 Điều 3, hành vi hành chính gồm những dạng nào?",
+   "options": [
+    "Chỉ việc ban hành văn bản quản lý hành chính",
+    "Thực hiện hoặc không thực hiện nhiệm vụ, công vụ",
+    "Chỉ hành động cưỡng chế, không gồm việc không làm",
+    "Mọi hành vi của công dân khi làm thủ tục hành chính"
+   ],
+   "answer": 1,
+   "explain": "Khoản 3 Điều 3: thực hiện hoặc không thực hiện nhiệm vụ, công vụ theo quy định của pháp luật.",
+   "why": [
+    "Sai: ban hành văn bản là quyết định hành chính.",
+    "Đúng: khoản 3 Điều 3 nêu cả làm và không làm.",
+    "Sai: luật gồm cả không thực hiện nhiệm vụ, công vụ.",
+    "Sai: chủ thể là cơ quan, người có thẩm quyền, không phải công dân."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hành vi hành chính là hành vi của cơ quan hành chính nhà nước hoặc của người có thẩm quyền trong cơ quan hành chính nhà nước hoặc cơ quan, tổ chức được giao thực hiện quản lý hành chính nhà nước {{thực hiện}} hoặc {{không thực hiện}} nhiệm vụ, công vụ theo quy định của pháp luật."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hành vi hành chính là hành vi của cơ quan hành chính nhà nước hoặc của người có thẩm quyền trong cơ quan hành chính nhà nước hoặc cơ quan, tổ chức được giao thực hiện quản lý hành chính nhà nước thực hiện hoặc không thực hiện {{nhiệm vụ, công vụ}} theo quy định của pháp luật."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Hồ sơ xin cấp giấy chứng nhận quyền sử dụng đất của anh H đầy đủ, nhưng quá thời hạn mà cơ quan có thẩm quyền vẫn không giải quyết, không trả lời. Anh H có thể khởi kiện đối tượng nào?",
+   "options": [
+    "Quyết định hành chính từ chối cấp giấy chứng nhận",
+    "Không kiện được vì chưa có văn bản nào được ban hành",
+    "Hành vi hành chính không thực hiện nhiệm vụ, công vụ",
+    "Văn bản quy phạm về thủ tục cấp giấy chứng nhận"
+   ],
+   "answer": 2,
+   "explain": "Không thực hiện nhiệm vụ, công vụ theo quy định là hành vi hành chính (khoản 3 Điều 3); có thể khởi kiện theo Điều 115.",
+   "why": [
+    "Sai: chưa có văn bản từ chối nào được ban hành.",
+    "Sai: không làm cũng là hành vi hành chính bị kiện được.",
+    "Đúng: việc không giải quyết là hành vi hành chính dạng không làm (khoản 3 Điều 3).",
+    "Sai: văn bản quy phạm không phải đối tượng khởi kiện vụ án hành chính."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hành vi hành chính chỉ gồm những hành động cụ thể của cơ quan nhà nước, không gồm việc không làm.",
+   "answer": false,
+   "explain": "Sai. Khoản 3 Điều 3: hành vi hành chính gồm cả thực hiện và không thực hiện nhiệm vụ, công vụ."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Hành vi hành chính là gì theo khoản 3 Điều 3?",
+   "model": "Là hành vi của cơ quan hành chính nhà nước, người có thẩm quyền trong cơ quan đó hoặc cơ quan, tổ chức được giao quản lý hành chính, thực hiện hoặc không thực hiện nhiệm vụ, công vụ theo quy định của pháp luật.",
+   "keywords": [
+    "thực hiện",
+    "không thực hiện",
+    "nhiệm vụ, công vụ"
+   ]
+  }
+ ]
+}

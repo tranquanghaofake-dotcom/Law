@@ -1,0 +1,114 @@
+{
+ "id": "nguoi-bi-kien",
+ "subject": "to-tung-hanh-chinh",
+ "chapter": "c3-nguoi-tham-gia",
+ "term": "Người bị kiện",
+ "definition": "Người bị kiện là cơ quan, tổ chức, cá nhân có quyết định hành chính, hành vi hành chính, quyết định kỷ luật buộc thôi việc, quyết định giải quyết khiếu nại về quyết định xử lý vụ việc cạnh tranh, quyết định giải quyết khiếu nại trong hoạt động kiểm toán nhà nước, danh sách cử tri bị khởi kiện.",
+ "plain": "Người bị kiện là chủ thể ĐÃ RA quyết định hoặc ĐÃ THỰC HIỆN hành vi đang bị kiện, chứ không phải người thi hành theo lệnh. Ví dụ quyết định do Chủ tịch Ủy ban nhân dân ký thì người bị kiện là Chủ tịch Ủy ban nhân dân.",
+ "example": "Bà Y kiện quyết định xử phạt do Chủ tịch Ủy ban nhân dân xã ký; người bị kiện là Chủ tịch Ủy ban nhân dân xã.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 9 Điều 3 Luật Tố tụng hành chính 2015",
+  "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/van-ban-hop-nhat-13-vbhn-vpqh-2026-luat-to-tung-hanh-chinh-427850-d5.html"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "duong-su-hanh-chinh",
+  "nguoi-khoi-kien"
+ ],
+ "keywords": [
+  "có quyết định hành chính, hành vi hành chính",
+  "bị khởi kiện"
+ ],
+ "memo": {
+  "gist": "Người bị kiện là chủ thể đã ra quyết định hoặc thực hiện hành vi đang bị khởi kiện.",
+  "kind": "compare",
+  "hook": "Ai ký quyết định thì người đó ngồi ghế bị kiện.",
+  "tree": [
+   {
+    "label": "Ra quyết định",
+    "icon": "pen"
+   },
+   {
+    "label": "Thực hiện hành vi",
+    "icon": "bolt"
+   },
+   {
+    "label": "Lập danh sách cử tri",
+    "icon": "list"
+   }
+  ],
+  "case": {
+   "q": "Quyết định do Phó Chủ tịch Ủy ban nhân dân tỉnh ký thay Chủ tịch thì ai là người bị kiện?",
+   "a": "Người có thẩm quyền ra quyết định đó là người bị kiện; ký thay vẫn là quyết định của Chủ tịch (khoản 9 Điều 3)."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 9 Điều 3, người bị kiện là ai?",
+   "options": [
+    "Người trực tiếp thi hành quyết định theo lệnh của cấp trên",
+    "Cơ quan cấp trên của cơ quan đã ra quyết định",
+    "Chủ thể có quyết định, hành vi, danh sách cử tri bị khởi kiện",
+    "Viện kiểm sát cùng cấp với Tòa án giải quyết vụ án"
+   ],
+   "answer": 2,
+   "explain": "Khoản 9 Điều 3: người bị kiện là cơ quan, tổ chức, cá nhân có quyết định, hành vi, danh sách cử tri bị khởi kiện.",
+   "why": [
+    "Sai: người bị kiện là chủ thể có quyết định, hành vi bị kiện.",
+    "Sai: cấp trên không mặc nhiên là người bị kiện.",
+    "Đúng: khoản 9 Điều 3.",
+    "Sai: Viện kiểm sát là cơ quan tiến hành tố tụng."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người bị kiện là cơ quan, tổ chức, cá nhân có {{quyết định hành chính}}, {{hành vi hành chính}}, quyết định kỷ luật buộc thôi việc, quyết định giải quyết khiếu nại về quyết định xử lý vụ việc cạnh tranh, quyết định giải quyết khiếu nại trong hoạt động kiểm toán nhà nước, danh sách cử tri bị khởi kiện."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người bị kiện là cơ quan, tổ chức, cá nhân có quyết định hành chính, hành vi hành chính, quyết định kỷ luật buộc thôi việc, quyết định giải quyết khiếu nại về quyết định xử lý vụ việc cạnh tranh, quyết định giải quyết khiếu nại trong hoạt động kiểm toán nhà nước, {{danh sách cử tri}} bị khởi kiện."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Giám đốc Sở ra quyết định kỷ luật buộc thôi việc công chức Z; phòng Tổ chức chỉ soạn thảo và gửi quyết định. Z khởi kiện thì ai là người bị kiện?",
+   "options": [
+    "Giám đốc Sở, người ra quyết định",
+    "Phòng Tổ chức, nơi soạn thảo và gửi quyết định",
+    "Hội đồng kỷ luật đã họp đề xuất hình thức kỷ luật",
+    "Ủy ban nhân dân tỉnh, cơ quan cấp trên của Sở"
+   ],
+   "answer": 0,
+   "explain": "Người bị kiện là chủ thể có quyết định bị khởi kiện (khoản 9 Điều 3), tức người đứng đầu đã ký quyết định kỷ luật.",
+   "why": [
+    "Đúng: khoản 9 Điều 3 — chủ thể có quyết định bị kiện.",
+    "Sai: soạn thảo, gửi không phải ra quyết định.",
+    "Sai: hội đồng chỉ đề xuất, không ra quyết định.",
+    "Sai: cấp trên không phải người ra quyết định bị kiện."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người trực tiếp thi hành quyết định cưỡng chế theo lệnh của cấp trên luôn là người bị kiện.",
+   "answer": false,
+   "explain": "Sai. Khoản 9 Điều 3: người bị kiện là chủ thể có quyết định, hành vi bị khởi kiện, không phải người chỉ thi hành theo lệnh."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Người bị kiện là ai theo khoản 9 Điều 3?",
+   "model": "Là cơ quan, tổ chức, cá nhân có quyết định hành chính, hành vi hành chính, quyết định kỷ luật buộc thôi việc, quyết định giải quyết khiếu nại về xử lý vụ việc cạnh tranh hoặc trong kiểm toán nhà nước, danh sách cử tri bị khởi kiện.",
+   "keywords": [
+    "quyết định hành chính",
+    "hành vi hành chính",
+    "bị khởi kiện"
+   ]
+  }
+ ]
+}
