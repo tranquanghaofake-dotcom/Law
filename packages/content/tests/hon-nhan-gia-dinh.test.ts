@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { conceptSchema, subjectSchema } from '../src/schema';
+import { conceptSchema, quizSetSchema, subjectSchema } from '../src/schema';
 
 const root = join(__dirname, '..', 'data');
 const dir = join(root, 'concepts', 'hon-nhan-gia-dinh');
@@ -44,5 +44,26 @@ describe('nội dung Luật Hôn nhân và gia đình', () => {
         for (const part of text.split(/(?<=[.;:])\s+/)) expect(law, `${f} cloze: "${part}"`).toContain(part);
       }
     }
+  });
+});
+
+describe('đề kiểm tra Hôn nhân và gia đình', () => {
+  const ids = ['hon-nhan-gia-dinh-de-1', 'hon-nhan-gia-dinh-de-2'];
+  it('2 đề × 10 câu, hợp lệ, nhóm hon-nhan-gia-dinh, căn cứ Điều … Luật Hôn nhân và gia đình 2014, link VBHN 121', () => {
+    for (const id of ids) {
+      const s = quizSetSchema.parse(JSON.parse(readFileSync(join(root, 'sets', `${id}.json`), 'utf8')));
+      expect(s.group).toBe('hon-nhan-gia-dinh');
+      expect(s.questions).toHaveLength(10);
+      for (const q of s.questions) {
+        expect(q.basis, q.q).toMatch(/Điều \d+ Luật Hôn nhân và gia đình 2014$/);
+        expect(q.url, q.q).toContain('121-VBHN-VPQH-2025');
+        expect(q.why, q.q).toHaveLength(4);
+      }
+    }
+  });
+  it('đáp án rải đều: mỗi vị trí A–D xuất hiện ít nhất 3 lần trong 20 câu', () => {
+    const pos = [0, 0, 0, 0];
+    for (const id of ids) for (const q of JSON.parse(readFileSync(join(root, 'sets', `${id}.json`), 'utf8')).questions) pos[q.answer]++;
+    for (const n of pos) expect(n).toBeGreaterThanOrEqual(3);
   });
 });

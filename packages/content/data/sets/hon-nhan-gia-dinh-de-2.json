@@ -1,0 +1,199 @@
+{
+  "id": "hon-nhan-gia-dinh-de-2",
+  "group": "hon-nhan-gia-dinh",
+  "title": "Đề kiểm tra Hôn nhân và gia đình 2 – Tài sản, ly hôn, con chung",
+  "subtitle": "10 câu theo Luật Hôn nhân và gia đình 2014 (sửa đổi, bổ sung năm 2025)",
+  "updated": "2026-11-07",
+  "questions": [
+    {
+      "q": "Trong thời kỳ hôn nhân, người chồng được cha mẹ tặng riêng một căn nhà. Căn nhà này là tài sản gì?",
+      "options": [
+        "Tài sản chung vì có trong thời kỳ hôn nhân",
+        "Tài sản chung của cả gia đình người chồng",
+        "Tài sản chung nếu người vợ cùng sống tại đó",
+        "Tài sản riêng của người chồng"
+      ],
+      "answer": 3,
+      "explain": "Khoản 1 Điều 43: tài sản được tặng cho riêng trong thời kỳ hôn nhân là tài sản riêng; khoản 1 Điều 33 cũng loại trừ trường hợp này khỏi tài sản chung.",
+      "basis": "Khoản 1 Điều 43 Luật Hôn nhân và gia đình 2014",
+      "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx",
+      "why": [
+        "Sai: khoản 1 Điều 33 loại trừ tài sản được tặng cho riêng.",
+        "Sai: luật không coi là tài sản chung của gia đình.",
+        "Sai: việc cùng ở không biến tài sản riêng thành tài sản chung.",
+        "Đúng: khoản 1 Điều 43 — tài sản được tặng cho riêng trong thời kỳ hôn nhân là tài sản riêng."
+      ]
+    },
+    {
+      "q": "Vợ chồng tranh chấp một chiếc ô tô nhưng không ai chứng minh được đó là tài sản riêng của mình. Chiếc ô tô được coi là gì?",
+      "options": [
+        "Tài sản chung của vợ chồng",
+        "Tài sản riêng của người đứng tên đăng ký",
+        "Tài sản riêng của người trực tiếp sử dụng",
+        "Tài sản vô chủ, phải giao cho Nhà nước"
+      ],
+      "answer": 0,
+      "explain": "Khoản 3 Điều 33: trường hợp không có căn cứ để chứng minh tài sản đang tranh chấp là tài sản riêng của mỗi bên thì tài sản đó được coi là tài sản chung.",
+      "basis": "Khoản 3 Điều 33 Luật Hôn nhân và gia đình 2014",
+      "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx",
+      "why": [
+        "Đúng: khoản 3 Điều 33 — không chứng minh được là tài sản riêng thì coi là tài sản chung.",
+        "Sai: khoản 3 Điều 33 đặt suy đoán là tài sản chung.",
+        "Sai: việc sử dụng không quyết định quyền sở hữu.",
+        "Sai: tài sản có chủ, chỉ chưa rõ chung hay riêng."
+      ]
+    },
+    {
+      "q": "Người vợ có căn nhà riêng cho thuê, tiền thuê là nguồn sống duy nhất của gia đình. Muốn bán căn nhà này, người vợ cần điều kiện gì?",
+      "options": [
+        "Không cần ai đồng ý vì là tài sản riêng",
+        "Phải có sự đồng ý của người chồng",
+        "Phải được Tòa án cho phép bằng quyết định",
+        "Phải nhập căn nhà vào tài sản chung trước"
+      ],
+      "answer": 1,
+      "explain": "Khoản 4 Điều 44: vợ, chồng có tài sản riêng mà hoa lợi, lợi tức từ tài sản đó là nguồn sống duy nhất của gia đình thì việc định đoạt phải có sự đồng ý của chồng, vợ.",
+      "basis": "Khoản 4 Điều 44 Luật Hôn nhân và gia đình 2014",
+      "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx",
+      "why": [
+        "Sai: khoản 4 Điều 44 là ngoại lệ với tài sản riêng.",
+        "Đúng: khoản 4 Điều 44 — hoa lợi là nguồn sống duy nhất thì định đoạt phải có sự đồng ý của chồng.",
+        "Sai: luật đòi sự đồng ý của chồng, không cần Tòa án.",
+        "Sai: không bắt buộc nhập tài sản riêng vào tài sản chung."
+      ]
+    },
+    {
+      "q": "Người vợ đang nuôi con 8 tháng tuổi. Người chồng có quyền yêu cầu ly hôn không?",
+      "options": [
+        "Có, nếu việc hòa giải ở cơ sở không thành",
+        "Có, nếu người vợ có lỗi trong đời sống hôn nhân",
+        "Không, vì vợ đang nuôi con dưới 12 tháng tuổi",
+        "Không, khi con chưa đủ 36 tháng tuổi"
+      ],
+      "answer": 2,
+      "explain": "Khoản 3 Điều 51: chồng không có quyền yêu cầu ly hôn trong trường hợp vợ đang có thai, sinh con hoặc đang nuôi con dưới 12 tháng tuổi. Người vợ thì vẫn có quyền yêu cầu.",
+      "basis": "Khoản 3 Điều 51 Luật Hôn nhân và gia đình 2014",
+      "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx",
+      "why": [
+        "Sai: hòa giải không thành không loại trừ hạn chế ở khoản 3 Điều 51.",
+        "Sai: luật không đặt ngoại lệ theo lỗi của người vợ.",
+        "Đúng: khoản 3 Điều 51 — chồng không có quyền yêu cầu ly hôn khi vợ nuôi con dưới 12 tháng tuổi.",
+        "Sai: 36 tháng là mốc giao con cho mẹ nuôi (khoản 3 Điều 81), không phải mốc này."
+      ]
+    },
+    {
+      "q": "Vợ chồng cùng yêu cầu ly hôn, thật sự tự nguyện và đã thỏa thuận được việc chia tài sản, nuôi con bảo đảm quyền lợi chính đáng của vợ và con. Tòa án làm gì?",
+      "options": [
+        "Buộc hai bên hòa giải ở cơ sở thêm sáu tháng",
+        "Bác yêu cầu vì hôn nhân chưa lâm vào tình trạng trầm trọng",
+        "Chuyển cho Ủy ban nhân dân xã giải quyết ly hôn",
+        "Công nhận thuận tình ly hôn"
+      ],
+      "answer": 3,
+      "explain": "Điều 55: vợ chồng cùng yêu cầu ly hôn, nếu xét thấy hai bên thật sự tự nguyện và đã thỏa thuận về tài sản, con trên cơ sở bảo đảm quyền lợi chính đáng của vợ và con thì Tòa án công nhận thuận tình ly hôn.",
+      "basis": "Điều 55 Luật Hôn nhân và gia đình 2014",
+      "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx",
+      "why": [
+        "Sai: luật chỉ khuyến khích hòa giải ở cơ sở (Điều 52), không bắt buộc.",
+        "Sai: căn cứ \"trầm trọng\" dùng cho ly hôn theo yêu cầu một bên (Điều 56).",
+        "Sai: ly hôn do Tòa án giải quyết.",
+        "Đúng: Điều 55 — Tòa án công nhận thuận tình ly hôn."
+      ]
+    },
+    {
+      "q": "Quan hệ hôn nhân chấm dứt khi ly hôn kể từ thời điểm nào?",
+      "options": [
+        "Ngày bản án, quyết định ly hôn có hiệu lực pháp luật",
+        "Ngày một bên vợ hoặc chồng nộp đơn ly hôn tại Tòa án",
+        "Ngày hai bên bắt đầu sống ly thân trên thực tế",
+        "Ngày Tòa án tuyên án sơ thẩm tại phiên tòa"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 57: quan hệ hôn nhân chấm dứt kể từ ngày bản án, quyết định ly hôn của Tòa án có hiệu lực pháp luật.",
+      "basis": "Khoản 1 Điều 57 Luật Hôn nhân và gia đình 2014",
+      "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx",
+      "why": [
+        "Đúng: khoản 1 Điều 57 — từ ngày bản án, quyết định ly hôn có hiệu lực pháp luật.",
+        "Sai: nộp đơn chưa làm chấm dứt hôn nhân.",
+        "Sai: ly thân không làm chấm dứt hôn nhân.",
+        "Sai: tuyên án sơ thẩm chưa chắc đã có hiệu lực pháp luật."
+      ]
+    },
+    {
+      "q": "Khi ly hôn theo chế độ tài sản luật định và không thỏa thuận được, tài sản chung được chia theo nguyên tắc nào?",
+      "options": [
+        "Chia đôi tuyệt đối, không xét thêm đến bất kỳ yếu tố nào",
+        "Chia đôi, có tính đến hoàn cảnh, công sức, nghề nghiệp, lỗi",
+        "Chia theo tỷ lệ thu nhập bằng tiền của mỗi bên",
+        "Bên không có lỗi được nhận toàn bộ khối tài sản chung"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 59: tài sản chung được chia đôi nhưng có tính đến hoàn cảnh gia đình; công sức đóng góp (lao động trong gia đình được coi như lao động có thu nhập); lợi ích chính đáng trong sản xuất, kinh doanh, nghề nghiệp; lỗi của mỗi bên.",
+      "basis": "Khoản 2 Điều 59 Luật Hôn nhân và gia đình 2014",
+      "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx",
+      "why": [
+        "Sai: chia đôi nhưng phải tính đến các yếu tố ở điểm a–d khoản 2 Điều 59.",
+        "Đúng: khoản 2 Điều 59 — chia đôi nhưng có tính đến các yếu tố luật liệt kê.",
+        "Sai: lao động trong gia đình được coi như lao động có thu nhập.",
+        "Sai: lỗi chỉ là một yếu tố, không quyết định toàn bộ."
+      ]
+    },
+    {
+      "q": "Ly hôn khi con 2 tuổi, cha mẹ không thỏa thuận được người nuôi con. Theo nguyên tắc, con được giao cho ai?",
+      "options": [
+        "Giao cho cha vì cha có thu nhập và nhà ở ổn định hơn",
+        "Hỏi nguyện vọng của con rồi giao theo nguyện vọng",
+        "Giao cho mẹ, trừ khi mẹ không đủ điều kiện nuôi con",
+        "Giao cho ông bà nội ngoại cùng nhau trực tiếp nuôi dưỡng"
+      ],
+      "answer": 2,
+      "explain": "Khoản 3 Điều 81: con dưới 36 tháng tuổi được giao cho mẹ trực tiếp nuôi, trừ trường hợp người mẹ không đủ điều kiện hoặc cha mẹ có thỏa thuận khác phù hợp với lợi ích của con. Con từ đủ 07 tuổi thì phải xem xét nguyện vọng của con (khoản 2).",
+      "basis": "Khoản 3 Điều 81 Luật Hôn nhân và gia đình 2014",
+      "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx",
+      "why": [
+        "Sai: thu nhập không phải căn cứ chính với con dưới 36 tháng.",
+        "Sai: chỉ xem xét nguyện vọng khi con từ đủ 07 tuổi.",
+        "Đúng: khoản 3 Điều 81 — con dưới 36 tháng tuổi được giao cho mẹ trực tiếp nuôi, trừ ngoại lệ.",
+        "Sai: luật giao cho cha hoặc mẹ trực tiếp nuôi."
+      ]
+    },
+    {
+      "q": "Sau ly hôn, người không trực tiếp nuôi con có những quyền, nghĩa vụ nào đối với con?",
+      "options": [
+        "Chỉ được thăm nom khi người trực tiếp nuôi con đồng ý",
+        "Hết mọi quyền và nghĩa vụ đối với con",
+        "Chỉ cấp dưỡng, không có quyền thăm nom con",
+        "Cấp dưỡng và có quyền, nghĩa vụ thăm nom con"
+      ],
+      "answer": 3,
+      "explain": "Điều 82: cha, mẹ không trực tiếp nuôi con có nghĩa vụ cấp dưỡng cho con (khoản 2), có quyền, nghĩa vụ thăm nom con mà không ai được cản trở (khoản 3); trừ khi lạm dụng việc thăm nom thì có thể bị Tòa án hạn chế.",
+      "basis": "Khoản 3 Điều 82 Luật Hôn nhân và gia đình 2014",
+      "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx",
+      "why": [
+        "Sai: luật nói thăm nom con mà không ai được cản trở.",
+        "Sai: khoản 1 Điều 81 — sau ly hôn cha mẹ vẫn có quyền, nghĩa vụ với con.",
+        "Sai: khoản 3 Điều 82 có quyền, nghĩa vụ thăm nom.",
+        "Đúng: khoản 2, khoản 3 Điều 82 — có nghĩa vụ cấp dưỡng và quyền, nghĩa vụ thăm nom con."
+      ]
+    },
+    {
+      "q": "Hôn nhân chấm dứt ngày 01/3. Ngày 15/11 cùng năm, người vợ cũ sinh con. Theo Luật Hôn nhân và gia đình 2014, con được xác định thế nào?",
+      "options": [
+        "Con chung, vì sinh trong 300 ngày từ khi hôn nhân chấm dứt",
+        "Không phải con chung vì con được sinh ra sau khi đã ly hôn",
+        "Chỉ là con chung nếu người chồng cũ đồng ý thừa nhận",
+        "Phải giám định ADN thì mới xác định được"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 88: con được sinh ra trong thời hạn 300 ngày kể từ thời điểm chấm dứt hôn nhân được coi là con do người vợ có thai trong thời kỳ hôn nhân, tức con chung. Từ 01/3 đến 15/11 chưa quá 300 ngày.",
+      "basis": "Khoản 1 Điều 88 Luật Hôn nhân và gia đình 2014",
+      "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx",
+      "why": [
+        "Đúng: khoản 1 Điều 88 — sinh trong 300 ngày kể từ khi chấm dứt hôn nhân được coi là có thai trong thời kỳ hôn nhân.",
+        "Sai: luật vẫn coi là con chung nếu sinh trong 300 ngày.",
+        "Sai: đây là suy đoán của luật, không cần thừa nhận.",
+        "Sai: chỉ khi có người không thừa nhận thì mới cần chứng cứ và Tòa án xác định."
+      ]
+    }
+  ]
+}
