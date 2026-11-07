@@ -13,8 +13,10 @@
   import { hashFor } from '$lib/router.svelte';
   import { LEVEL_NAMES } from '$lib/game/levels';
   import { reviewTexts } from './cards/answer';
+  import { endAction, type EndButton } from './endAction';
+  import type { nextReview } from './dueByDay';
   import type { XpSource } from './session/xpSources';
-  let { summary, concepts, streak, streakEvent, dueTomorrow, onhome, onagain, onnext, mistakes = [], promotion = null, sources = [], record = null, retryTotal: retryProp = 0, gate = null }: {
+  let { summary, concepts, streak, streakEvent, dueTomorrow, onhome, onagain, onnext, mistakes = [], promotion = null, sources = [], record = null, retryTotal: retryProp = 0, gate = null, kind = 'lesson', dueNow = 0, next = null }: {
     summary: { correct: number; total: number; xp: number; levelUps: { conceptId: string; to: Level }[]; bestCombo?: number; golden?: number; fixed?: number; retried?: number; pretest?: { total: number; correct: number }; held?: number };
     concepts: Concept[]; streak: number; streakEvent: StreakEvent; rankBefore: RankInfo; rankAfter: RankInfo; dueTomorrow: number;
     onhome: () => void; onagain?: () => void; onnext?: () => void; mistakes?: Step[]; promotion?: string | null;
@@ -26,6 +28,11 @@
     retryTotal?: number;
     /** Cổng mở đợt sau (phiên học đợt): chưa xong thì mời học lượt tiếp đợt này thay vì "Học đợt tiếp". null = không xét. */
     gate?: { done: boolean; remaining: number; total: number } | null;
+    /** phiên đợt hay phiên ôn (quyết định nút chính) */
+    kind?: 'lesson' | 'review';
+    /** số khái niệm đến hạn ngay lúc kết thúc phiên, và lần ôn gần nhất chưa tới */
+    dueNow?: number;
+    next?: ReturnType<typeof nextReview>;
   } = $props();
   const retryTotal = $derived(retryProp || summary.retried || 0);
   // màn thắp chuỗi toàn màn hình: lần đầu chuỗi tăng trong ngày (ghi ngày đã chiếu ở localStorage)
@@ -43,14 +50,24 @@
   const conceptOf = (id: string) => concepts.find((c) => c.id === id);
   const explainOf = (s: Step) => ('explain' in s.item ? s.item.explain : '');
   const streakMsg = $derived(({ started: 'Bắt đầu chuỗi ngày.', extended: 'Chuỗi +1 ngày.', 'same-day': 'Hôm nay đã tính chuỗi.', froze: 'Bùa giữ chuỗi đã cứu bạn.', reset: 'Chuỗi bắt đầu lại từ 1.' } as Record<StreakEvent, string>)[streakEvent]);
+  const action = $derived(endAction({ kind, gate, hasNext: !!onnext, hasAgain: !!onagain, dueNow, next }));
+  const handlers: Record<string, (() => void) | undefined> = { get again() { return onagain; }, get next() { return onnext; }, get home() { return onhome; } };
+  /** Cuộn tới mục "Xem lại câu sai" (jsdom không có scrollIntoView). */
+  let mistakesEl: HTMLElement | undefined = $state();
+  function toMistakes() { mistakesEl?.scrollIntoView?.({ behavior: reducedMotion() ? 'auto' : 'smooth', block: 'start' }); }
+  const reducedMotion = () => typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
   const rate = $derived(summary.total ? summary.correct / summary.total : 0);
   const R = 52, C = 2 * Math.PI * R;
   const recordMsg = $derived(!record ? '' : record.comboBeaten && record.rateBeaten ? 'Kỷ lục phiên mới: cả combo và tỉ lệ đúng.' : record.comboBeaten ? `Kỷ lục combo mới: ${summary.bestCombo} liên tiếp (trước đó ${record.before.bestCombo}).` : record.rateBeaten ? `Kỷ lục tỉ lệ đúng mới: ${Math.round(rate * 100)}% (trước đó ${Math.round(record.before.bestRate * 100)}%).` : '');
 </script>
 
+{#snippet btn(b: EndButton, primary: boolean)}
+  {#if b.act === 'review'}<a class="btn {primary ? 'primary' : 'ghost'}" href={hashFor('review')}>{b.label}</a>
+  {:else}<button class="btn {primary ? 'primary' : 'ghost'}" type="button" onclick={handlers[b.act]}>{b.label}</button>{/if}
+{/snippet}
 <section class="card session-end" aria-label="Kết thúc phiên">
   <p class="kicker">Xong phiên</p>
-  <p class="memory-line">{#if summary.levelUps.length}<b>{summary.levelUps.length} khái niệm nhớ chắc hơn</b> (lên bậc){:else}Chưa khái niệm nào lên bậc phiên này{/if}</p>
+  <p class="memory-line">{#if summary.levelUps.length}<b>{summary.levelUps.length} khái niệm nhớ chắc hơn</b> (lên bậc){:else}Chưa khái niệm nào lên bậc phiên này. <span class="muted small">Lên bậc cần nhớ lại qua nhiều lần ôn, không chỉ một phiên.</span>{/if}</p>
   {#if summary.held}<p class="held-note muted small">{summary.held} khái niệm trả lời đúng nhưng giữ bậc: từ bậc 4 cần ôn lại vào một ngày khác mới lên — nhớ qua nhiều ngày mới tính là thuần thục.</p>{/if}
   <div class="end-top">
     <div class="end-ring" role="img" aria-label="Tỉ lệ đúng {Math.round(rate * 100)} phần trăm">
@@ -59,23 +76,27 @@
     </div>
     <div class="end-stats">
       <p class="xp">+<CountUp value={summary.xp} from={0} duration={1100} /> XP</p>
-      <dl class="stat-list">
-        {#if summary.bestCombo !== undefined}<div><dt>Combo dài nhất</dt><dd>{summary.bestCombo}</dd></div>{/if}
-        {#if summary.golden}<div><dt>Câu vàng</dt><dd>{summary.golden}</dd></div>{/if}
-        {#if retryTotal > 0}<div><dt>Sửa được</dt><dd>{summary.fixed ?? 0}/{retryTotal}</dd></div>{/if}
-        {#if summary.pretest && summary.pretest.total > 0}<div><dt>Đoán trước đúng</dt><dd>{summary.pretest.correct}/{summary.pretest.total}</dd></div>{/if}
-      </dl>
+      {#if retryTotal > 0 || (summary.pretest && summary.pretest.total > 0)}
+        <dl class="stat-list">
+          {#if retryTotal > 0}<div><dt>Sửa được</dt><dd>{summary.fixed ?? 0}/{retryTotal}</dd></div>{/if}
+          {#if summary.pretest && summary.pretest.total > 0}<div><dt>Đoán trước đúng</dt><dd>{summary.pretest.correct}/{summary.pretest.total}</dd></div>{/if}
+        </dl>
+      {/if}
     </div>
   </div>
   {#if recordMsg}<p class="record-msg" role="status"><span class="seal-stamp" aria-hidden="true"><Glyph name="star-fill" size={14} /></span> {recordMsg}</p>{/if}
-  {#if sources.length}
-    <ul class="xp-sources" aria-label="XP theo nguồn">
-      {#each sources as s (s.key)}
-        <li><span>{s.label}</span><b>+{s.xp}</b></li>
-      {/each}
-    </ul>
-  {/if}
   {#if promotion}<p class="promotion"><span class="seal-stamp" aria-hidden="true">§</span> Thăng chức: <b>{promotion}</b> <span class="muted small">(chức danh mô phỏng)</span></p>{/if}
+  {#if mistakes.length}<p class="end-mistakes"><button class="btn ghost" type="button" onclick={toMistakes}>Xem {mistakes.length} câu sai ↓</button></p>{/if}
+  <div class="end-next">
+    {#if action.hint}<p class="end-hint">{action.hint}</p>{/if}
+    <div class="row">
+      {@render btn(action.primary, true)}
+      {#each action.secondary as sb (sb.act)}{@render btn(sb, false)}{/each}
+    </div>
+    {#if gate && !gate.done}
+      <p class="gate-note small muted">Đợt sau mở khi cả {gate.total} khái niệm đạt bậc 3 · {LEVEL_NAMES[3]} (còn {gate.remaining}). Mỗi lượt học lại đưa khái niệm lên bậc cao hơn. {#if onnext}<button type="button" class="linklike" onclick={onnext}>Học vượt sang đợt sau</button>{/if}</p>
+    {/if}
+  </div>
   <p class="streak"><span class="streak-mini" class:away={igniting} bind:this={mini}><StreakCard count={streak} longest={streak} size="mini" /></span> Chuỗi {streak} ngày · {streakMsg}</p>
   {#if igniting}<StreakIgnite count={streak} longest={streak} origin={mini} onclose={() => (igniting = false)} />{/if}
   {#if summary.levelUps.length}
@@ -86,20 +107,25 @@
       {/each}
     </ul>
   {/if}
-  <p class="muted">Hẹn ôn ngày mai: {dueTomorrow} khái niệm.</p>
-  <div class="row">
-    <button class="btn primary" type="button" onclick={onhome}>Về Hôm nay</button>
-    {#if gate && !gate.done && onagain}<button class="btn ghost" type="button" onclick={onagain}>Học lượt tiếp đợt này →</button>
-    {:else if onnext}<button class="btn ghost" type="button" onclick={onnext}>Học đợt tiếp →</button>
-    {:else if onagain}<button class="btn ghost" type="button" onclick={onagain}>Học lại đợt này</button>{/if}
-  </div>
-  {#if gate && !gate.done}
-    <p class="gate-note small muted">Đợt sau mở khi cả {gate.total} khái niệm đạt bậc 3 · {LEVEL_NAMES[3]} (còn {gate.remaining}). Mỗi lượt học lại đưa khái niệm lên bậc cao hơn. {#if onnext}<button type="button" class="linklike" onclick={onnext}>Học vượt sang đợt sau</button>{/if}</p>
+  {#if summary.bestCombo !== undefined || summary.golden || sources.length}
+    <details class="end-detail">
+      <summary>Chi tiết điểm</summary>
+      <dl class="stat-list">
+        {#if summary.bestCombo !== undefined}<div><dt>Combo dài nhất</dt><dd>{summary.bestCombo}</dd></div>{/if}
+        {#if summary.golden}<div><dt>Câu vàng</dt><dd>{summary.golden}</dd></div>{/if}
+      </dl>
+      {#if sources.length}
+        <ul class="xp-sources" aria-label="XP theo nguồn">
+          {#each sources as s (s.key)}
+            <li><span>{s.label}</span><b>+{s.xp}</b></li>
+          {/each}
+        </ul>
+      {/if}
+    </details>
   {/if}
 </section>
-
 {#if mistakes.length}
-  <section class="mistakes" aria-label="Xem lại câu sai">
+  <section class="mistakes" aria-label="Xem lại câu sai" bind:this={mistakesEl}>
     <h2>Xem lại câu sai ({mistakes.length})</h2>
     {#each mistakes as m, k (k)}
       {@const c = conceptOf(m.conceptId)}

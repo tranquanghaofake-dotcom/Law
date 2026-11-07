@@ -1891,3 +1891,11 @@ select.qz-sort { min-height: var(--ctl-h); padding: 0 var(--sp-3); border: 1px s
 .why-ok { margin-top: var(--sp-2); }
 .why-ok .why-right { margin-top: 0; }
 .why-contrast { margin: var(--sp-2) 0 0; line-height: 1.5; padding-left: var(--sp-2); border-left: 3px solid var(--accent); }
+
+/* Màn cuối phiên (spec 2026-11-07-man-cuoi-phien): khối "Tiếp theo", nút xem câu sai, chi tiết điểm gập */
+.session-end .end-mistakes { margin: var(--sp-2) 0 0; }
+.session-end .end-next { margin: var(--sp-3) 0 var(--sp-2); }
+.session-end .end-hint { margin: 0 0 var(--sp-2); font-weight: 600; }
+.session-end .end-detail { margin: var(--sp-3) 0 0; font-size: var(--fs-sm); }
+.session-end .end-detail summary { cursor: pointer; color: var(--muted); font-weight: 600; padding: var(--sp-1) 0; }
+.session-end .end-detail .stat-list { margin: var(--sp-2) 0; }
