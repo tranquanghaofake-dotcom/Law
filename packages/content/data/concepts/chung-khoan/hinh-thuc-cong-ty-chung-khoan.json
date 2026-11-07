@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 70 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 70 — Ủy ban Chứng khoán Nhà nước cấp giấy phép.",
+    "Sai: cơ quan đăng ký kinh doanh không cấp giấy phép chứng khoán.",
+    "Sai: Sở giao dịch không cấp giấy phép.",
+    "Sai: Ngân hàng Nhà nước không cấp giấy phép."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 71 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 71 — công ty TNHH hoặc công ty cổ phần.",
+    "Sai: doanh nghiệp tư nhân không được.",
+    "Sai: công ty hợp danh không được.",
+    "Sai: hợp tác xã không được."
+   ]
   },
   {
    "type": "pair",

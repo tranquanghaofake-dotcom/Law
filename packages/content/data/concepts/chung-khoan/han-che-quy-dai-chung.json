@@ -72,7 +72,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 110 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm c khoản 1 Điều 110 — không quá 20%.",
+    "Sai: không phải 10%.",
+    "Sai: không phải 30%.",
+    "Sai: không phải 49%."
+   ]
   },
   {
    "type": "mcq",
@@ -89,7 +95,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 110 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm e khoản 1 Điều 110 — cấm cho vay, bảo lãnh.",
+    "Sai: mua trái phiếu Chính phủ được phép.",
+    "Sai: mua cổ phiếu niêm yết được phép.",
+    "Sai: gửi tiền ngân hàng được phép."
+   ]
   },
   {
    "type": "pair",
@@ -150,7 +162,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 110 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 110 cấm đầu tư vào chứng chỉ quỹ của chính quỹ.",
+    "Sai: mục đích đỡ giá không làm hành vi hợp pháp.",
+    "Sai: luật không có ngoại lệ dưới 10%.",
+    "Sai: Ban đại diện không cho phép được."
+   ]
   },
   {
    "type": "recall",

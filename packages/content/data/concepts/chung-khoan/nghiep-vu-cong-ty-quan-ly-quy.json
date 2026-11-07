@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 73 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: môi giới là nghiệp vụ công ty chứng khoán (Điều 72).",
+    "Sai: quản lý quỹ thuộc Điều 73.",
+    "Sai: quản lý danh mục thuộc Điều 73.",
+    "Sai: tư vấn đầu tư thuộc Điều 73."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 73 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 73 — cấp chung trong Giấy phép.",
+    "Sai: không cấp riêng từng nghiệp vụ.",
+    "Sai: phải có giấy phép.",
+    "Sai: Sở giao dịch không chấp thuận."
+   ]
   },
   {
    "type": "pair",

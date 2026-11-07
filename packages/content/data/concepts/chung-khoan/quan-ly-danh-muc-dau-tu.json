@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 35 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 35 Điều 4 — trên cơ sở ủy thác của từng nhà đầu tư.",
+    "Sai: Đại hội nhà đầu tư thuộc quản lý quỹ.",
+    "Sai: Ủy ban không chỉ định.",
+    "Sai: quy chế Sở giao dịch không phải cơ sở."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 88 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 88 — tài sản thuộc sở hữu khách hàng ủy thác.",
+    "Sai: công ty quản lý quỹ chỉ quản lý.",
+    "Sai: ngân hàng lưu ký chỉ lưu giữ.",
+    "Sai: không có đồng sở hữu."
+   ]
   },
   {
    "type": "pair",
@@ -156,7 +168,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 90 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: tài sản ủy thác là của D, phải tách biệt với tài sản công ty.",
+    "Sai: hoàn trả sau không làm hành vi hợp pháp.",
+    "Sai: quyền quản lý không phải quyền định đoạt cho mình.",
+    "Sai: im lặng của Ủy ban không hợp thức hóa."
+   ]
   },
   {
    "type": "recall",

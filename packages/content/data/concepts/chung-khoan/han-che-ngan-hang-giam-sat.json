@@ -71,7 +71,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 117 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 117 — không là người có liên quan, không có quan hệ sở hữu, vay, cho vay.",
+    "Sai: ký hợp đồng giám sát là bắt buộc.",
+    "Sai: trao đổi báo cáo là bình thường.",
+    "Sai: đối chiếu sổ sách là nghĩa vụ giám sát."
+   ]
   },
   {
    "type": "mcq",
@@ -88,7 +94,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 117 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 117 — không được làm đối tác mua tài sản quỹ.",
+    "Sai: giá thị trường không tạo ngoại lệ.",
+    "Sai: Ban đại diện không cho phép được.",
+    "Sai: tỷ lệ nhỏ không tạo ngoại lệ."
+   ]
   },
   {
    "type": "pair",

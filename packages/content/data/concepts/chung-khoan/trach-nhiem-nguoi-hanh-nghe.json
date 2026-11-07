@@ -70,7 +70,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 98 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 2 Điều 98 — khi công ty mình không có nghiệp vụ môi giới.",
+    "Sai: số dư không phải điều kiện.",
+    "Sai: đứng tên hộ không được.",
+    "Sai: có ngoại lệ ở điểm b."
+   ]
   },
   {
    "type": "mcq",
@@ -87,7 +93,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 97 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 3, khoản 4 Điều 97 — thu hồi và không được cấp lại.",
+    "Sai: không chỉ nhắc nhở.",
+    "Sai: không phải đình chỉ 1 tháng.",
+    "Sai: hậu quả là thu hồi chứng chỉ."
+   ]
   },
   {
    "type": "pair",
@@ -148,7 +160,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 98 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 2 Điều 98 — không làm cho công ty khác; có thể bị thu hồi chứng chỉ.",
+    "Sai: ngoài giờ không loại trừ vi phạm.",
+    "Sai: đồng ý của A không loại trừ vi phạm.",
+    "Sai: hình thức hợp đồng không loại trừ vi phạm."
+   ]
   },
   {
    "type": "recall",

@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 63 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 63 — thông qua Tổng công ty lưu ký và bù trừ hoặc công ty con.",
+    "Sai: Sở giao dịch tổ chức giao dịch, không bù trừ.",
+    "Sai: công ty chứng khoán không tự bù trừ.",
+    "Sai: ngân hàng thanh toán tiền, không xác định nghĩa vụ."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 63 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 63 — giao chứng khoán đồng thời với thanh toán tiền.",
+    "Sai: không trả tiền trước.",
+    "Sai: không giao chứng khoán trước.",
+    "Sai: không bắt buộc tiền mặt."
+   ]
   },
   {
    "type": "pair",
@@ -158,7 +170,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 66 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 66 — Quỹ hỗ trợ thanh toán do thành viên lưu ký đóng góp.",
+    "Sai: ngân sách nhà nước không thanh toán thay.",
+    "Sai: tài sản khách hàng không được dùng trả nợ thành viên (Điều 65).",
+    "Sai: giao dịch đã khớp không bị hủy vì lý do này."
+   ]
   },
   {
    "type": "recall",

@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 19 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 19 Điều 4 — từ 100 nhà đầu tư, không kể chuyên nghiệp.",
+    "Sai: không phải 50.",
+    "Sai: 99 chưa đủ.",
+    "Sai: không phải 200."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 20 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: chỉ cho nhà đầu tư chuyên nghiệp là chào bán riêng lẻ (điểm b khoản 20).",
+    "Sai: qua phương tiện thông tin đại chúng thuộc khoản 19.",
+    "Sai: nhà đầu tư không xác định thuộc khoản 19.",
+    "Sai: từ 100 nhà đầu tư thuộc khoản 19."
+   ]
   },
   {
    "type": "pair",
@@ -154,7 +166,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 19 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: 90 nhà đầu tư không chuyên nghiệp chưa đủ 100.",
+    "Sai: không đếm nhà đầu tư chuyên nghiệp.",
+    "Sai: sự tham gia của nhà đầu tư chuyên nghiệp không làm thành chào bán công chúng.",
+    "Sai: bán cổ phần cho 120 người là chào bán chứng khoán."
+   ]
   },
   {
    "type": "recall",

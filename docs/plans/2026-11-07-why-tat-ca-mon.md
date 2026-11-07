@@ -20,7 +20,7 @@
 | 8 | Lý luận NN&PL, Hình sự | 60 + 68 | xong |
 | 9–10 | Lịch sử NN&PL | 131 | xong |
 | 11–12 | Hiến pháp | 221 | xong |
-| 13–14 | Chứng khoán | 235 | |
+| 13–14 | Chứng khoán | 235 | xong |
 | 15 | Bộ đề (470 câu) | cần thêm `why` vào `quizQuestionSchema` và hiển thị ở `Quiz10` trước | |
 
 ## Việc kèm theo (mỗi việc một nhánh `feat/`, cần spec trước)

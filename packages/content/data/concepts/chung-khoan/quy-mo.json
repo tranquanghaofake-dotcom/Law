@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 39 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 39 Điều 4 — chứng chỉ quỹ phải được mua lại theo yêu cầu.",
+    "Sai: đây là đặc điểm quỹ đóng.",
+    "Sai: không giới hạn nhà đầu tư chuyên nghiệp.",
+    "Sai: quỹ mở không bắt buộc niêm yết."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 111 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 111 — bất khả kháng.",
+    "Sai: thị trường giảm không phải ngoại lệ.",
+    "Sai: yêu cầu bồi thường không liên quan.",
+    "Sai: thiếu nhân sự không phải ngoại lệ."
+   ]
   },
   {
    "type": "pair",

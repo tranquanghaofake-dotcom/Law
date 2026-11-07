@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 88 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 88 — tiền gửi thuộc sở hữu khách hàng.",
+    "Sai: công ty chỉ quản lý.",
+    "Sai: ngân hàng không sở hữu.",
+    "Sai: Tổng công ty không sở hữu."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 88 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 88 — hoàn trả sau khi trừ nghĩa vụ nợ của khách hàng.",
+    "Sai: tài sản khách hàng không thuộc tài sản phá sản.",
+    "Sai: không chuyển cho Nhà nước.",
+    "Sai: không chia đều."
+   ]
   },
   {
    "type": "pair",

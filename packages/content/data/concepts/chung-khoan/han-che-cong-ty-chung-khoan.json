@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 91 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 91 — ngoại lệ là chứng khoán có thu nhập cố định.",
+    "Sai: nhà đầu tư chuyên nghiệp không phải ngoại lệ.",
+    "Sai: cam kết của khách hàng không tạo ngoại lệ.",
+    "Sai: ủy thác dài hạn không tạo ngoại lệ."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 91 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 91 — 03 năm.",
+    "Sai: không phải 01 năm.",
+    "Sai: không phải 05 năm.",
+    "Sai: không phải 06 tháng."
+   ]
   },
   {
    "type": "pair",
@@ -155,7 +167,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 91 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: tháng 6/2026 chưa hết 03 năm từ tháng 1/2025.",
+    "Sai: thời hạn là 03 năm, không phải 01 năm.",
+    "Sai: nghị quyết Đại hội đồng cổ đông không thay luật.",
+    "Sai: giá chuyển nhượng không khắc phục thời hạn."
+   ]
   },
   {
    "type": "recall",

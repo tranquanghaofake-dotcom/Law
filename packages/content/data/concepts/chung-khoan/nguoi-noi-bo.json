@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 45 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 45 Điều 4 — người giữ vị trí quan trọng trong quản trị, điều hành.",
+    "Sai: không phải mọi nhân viên.",
+    "Sai: không phải mọi cổ đông.",
+    "Sai: nhân viên công ty chứng khoán, ngân hàng không phải người nội bộ của doanh nghiệp."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 128 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 128 — trước và sau giao dịch.",
+    "Sai: phải thông báo.",
+    "Sai: không cần đạt 5%.",
+    "Sai: không định kỳ hằng năm."
+   ]
   },
   {
    "type": "pair",

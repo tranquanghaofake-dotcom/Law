@@ -72,7 +72,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 5 Điều 75 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 5 Điều 75 — tối thiểu 05 nhân viên có chứng chỉ quản lý quỹ.",
+    "Sai: 03 là mức mỗi nghiệp vụ của công ty chứng khoán.",
+    "Sai: không phải 02.",
+    "Sai: không phải 10."
+   ]
   },
   {
    "type": "mcq",
@@ -89,7 +95,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 5 Điều 75 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 5 Điều 75 — 04 năm.",
+    "Sai: 02 năm là mức của công ty chứng khoán.",
+    "Sai: không phải 03 năm.",
+    "Sai: không phải 05 năm."
+   ]
   },
   {
    "type": "pair",

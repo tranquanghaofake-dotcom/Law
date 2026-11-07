@@ -74,7 +74,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 52 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 52 — doanh nghiệp Nhà nước nắm trên 50% vốn điều lệ.",
+    "Sai: không phải cơ quan thuộc Ủy ban.",
+    "Sai: không thuộc Ngân hàng Nhà nước.",
+    "Sai: không phải công ty con của Sở giao dịch."
+   ]
   },
   {
    "type": "mcq",
@@ -91,7 +97,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 52 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 52 — chịu sự quản lý, giám sát của Ủy ban.",
+    "Sai: Sở giao dịch không quản lý.",
+    "Sai: Ngân hàng Nhà nước không quản lý.",
+    "Sai: Bộ Công Thương không quản lý."
+   ]
   },
   {
    "type": "pair",

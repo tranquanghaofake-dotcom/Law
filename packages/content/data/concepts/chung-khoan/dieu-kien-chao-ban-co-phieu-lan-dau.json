@@ -86,7 +86,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 15 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 15 — từ 30 tỷ đồng.",
+    "Sai: không phải 10 tỷ.",
+    "Sai: không phải 50 tỷ.",
+    "Sai: không phải 100 tỷ."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 15 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 1 Điều 15 — 02 năm liên tục có lãi, không lỗ lũy kế.",
+    "Sai: một năm là điều kiện chào bán thêm; IPO không được lỗ lũy kế.",
+    "Sai: không được còn lỗ lũy kế.",
+    "Sai: luật có yêu cầu có lãi."
+   ]
   },
   {
    "type": "pair",
@@ -164,7 +176,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 15 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm d — vốn điều lệ từ 1.000 tỷ chỉ cần tối thiểu 10%.",
+    "Sai: 15% áp dụng cho vốn dưới 1.000 tỷ.",
+    "Sai: điểm d đặt tỷ lệ, không đặt 1.000 nhà đầu tư.",
+    "Sai: vẫn phải đáp ứng tỷ lệ tối thiểu."
+   ]
   },
   {
    "type": "recall",

@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 33 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 33 Điều 4 — ghi nhận thông tin tổ chức phát hành, chứng khoán, người sở hữu.",
+    "Sai: đây gần với đăng ký giao dịch.",
+    "Sai: đây là lưu ký, bù trừ.",
+    "Sai: đây là đăng ký chào bán."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 61 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 61 — chứng khoán của công ty đại chúng, tổ chức niêm yết, đăng ký giao dịch.",
+    "Sai: phần vốn góp không phải chứng khoán.",
+    "Sai: cổ phần công ty chưa đại chúng không bắt buộc.",
+    "Sai: không chỉ trái phiếu."
+   ]
   },
   {
    "type": "pair",

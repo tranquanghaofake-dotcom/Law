@@ -76,7 +76,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 26 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 26 Điều 4 — hệ thống cho chứng khoán niêm yết và chưa niêm yết.",
+    "Sai: còn hệ thống cho chứng khoán chưa niêm yết.",
+    "Sai: công ty chứng khoán không vận hành hệ thống giao dịch.",
+    "Sai: lưu ký, thanh toán là hệ thống khác."
+   ]
   },
   {
    "type": "mcq",
@@ -93,7 +99,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 26 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 26 Điều 4 — Sở giao dịch chứng khoán Việt Nam và công ty con.",
+    "Sai: Tổng công ty lưu ký phụ trách lưu ký, bù trừ.",
+    "Sai: Ủy ban quản lý, không vận hành.",
+    "Sai: ngân hàng thương mại không vận hành."
+   ]
   },
   {
    "type": "pair",

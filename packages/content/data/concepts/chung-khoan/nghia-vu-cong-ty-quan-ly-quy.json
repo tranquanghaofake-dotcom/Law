@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 90 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 90 — Luật Chứng khoán, Điều lệ quỹ, hợp đồng ủy thác, hợp đồng giám sát.",
+    "Sai: ý chí Tổng giám đốc không phải căn cứ.",
+    "Sai: Sở giao dịch không chỉ đạo.",
+    "Sai: nghị quyết Hội đồng quản trị không phải căn cứ chính."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 90 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 90 — lưu ký tách biệt từng khách hàng và với tài sản công ty.",
+    "Sai: không được gộp chung.",
+    "Sai: phải lưu ký.",
+    "Sai: Sở giao dịch không giữ tài sản."
+   ]
   },
   {
    "type": "pair",

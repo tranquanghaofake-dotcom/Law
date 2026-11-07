@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 132 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 132 — 03 tỷ đồng.",
+    "Sai: không phải 01 tỷ.",
+    "Sai: không phải 05 tỷ.",
+    "Sai: không phải 10 tỷ."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 5 Điều 132 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 5 Điều 132 — cá nhân bằng một phần hai tổ chức.",
+    "Sai: không bằng nhau.",
+    "Sai: không gấp đôi.",
+    "Sai: không phải một phần mười."
+   ]
   },
   {
    "type": "pair",
@@ -155,7 +167,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 132 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 132 — tổ chức tối đa 03 tỷ.",
+    "Sai: 10 lần khoản thu chỉ áp dụng cho nội gián, thao túng.",
+    "Sai: 1,5 tỷ là mức cho cá nhân.",
+    "Sai: có giới hạn."
+   ]
   },
   {
    "type": "recall",

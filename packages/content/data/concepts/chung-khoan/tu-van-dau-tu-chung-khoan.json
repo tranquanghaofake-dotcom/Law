@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 32 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 32 Điều 4 — cung cấp phân tích, khuyến nghị.",
+    "Sai: mua bán thay khách là môi giới, quản lý danh mục.",
+    "Sai: cam kết lợi nhuận bị cấm.",
+    "Sai: mua cho chính mình là tự doanh."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 7 Điều 86 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 7 Điều 86 — chỉ tư vấn đầu tư.",
+    "Sai: không được cả bốn nghiệp vụ.",
+    "Sai: không được tự doanh.",
+    "Sai: không được môi giới, tự doanh."
+   ]
   },
   {
    "type": "pair",

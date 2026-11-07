@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 102 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 102 — Đại hội nhà đầu tư là cơ quan quyết định cao nhất.",
+    "Sai: Ban đại diện quỹ do Đại hội bầu.",
+    "Sai: Hội đồng quản trị công ty quản lý quỹ không phải cơ quan của quỹ.",
+    "Sai: ngân hàng giám sát chỉ giám sát."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 102 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm c khoản 2 Điều 102 — Đại hội nhà đầu tư quyết định.",
+    "Sai: Ủy ban Chứng khoán không quyết định.",
+    "Sai: Ban đại diện không có quyền này.",
+    "Sai: Sở giao dịch không quyết định."
+   ]
   },
   {
    "type": "pair",

@@ -68,7 +68,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 42 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 42 — chỉ Sở giao dịch chứng khoán Việt Nam và công ty con.",
+    "Sai: công ty chứng khoán không được tổ chức thị trường.",
+    "Sai: Ủy ban quản lý, không vận hành thị trường.",
+    "Sai: Ngân hàng Nhà nước không vận hành thị trường chứng khoán."
+   ]
   },
   {
    "type": "mcq",
@@ -85,7 +91,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 42 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 42 — cả chứng khoán niêm yết, chưa đủ điều kiện niêm yết, phái sinh.",
+    "Sai: không chỉ chứng khoán niêm yết.",
+    "Sai: không chỉ trái phiếu.",
+    "Sai: không gồm doanh nghiệp chưa đăng ký kinh doanh."
+   ]
   },
   {
    "type": "pair",

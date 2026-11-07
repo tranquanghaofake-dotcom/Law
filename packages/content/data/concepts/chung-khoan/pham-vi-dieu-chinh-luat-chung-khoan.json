@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 1 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: cho vay tiêu dùng thuộc pháp luật tổ chức tín dụng.",
+    "Sai: hoạt động chứng khoán thuộc Điều 1.",
+    "Sai: tổ chức thị trường thuộc Điều 1.",
+    "Sai: quản lý nhà nước thuộc Điều 1."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 3 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 3 — Luật Chứng khoán và quy định khác có liên quan.",
+    "Sai: liệt kê chưa đủ \"quy định khác có liên quan\".",
+    "Sai: quy chế Sở giao dịch không phải phạm vi ở Điều 3.",
+    "Sai: Điều lệ công ty không phải phạm vi ở Điều 3."
+   ]
   },
   {
    "type": "pair",

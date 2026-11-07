@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 92 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 92 — Bộ trưởng Bộ Tài chính quy định chi tiết.",
+    "Sai: Sở giao dịch không quy định chỉ tiêu an toàn tài chính.",
+    "Sai: Hội đồng quản trị không tự đặt chỉ tiêu pháp định.",
+    "Sai: Quốc hội không quy định chi tiết chỉ tiêu này."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 92 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 92 — cảnh báo, kiểm soát, kiểm soát đặc biệt.",
+    "Sai: phá sản theo Luật Phá sản, không phải biện pháp ở Điều 92.",
+    "Sai: luật không quy định quốc hữu hóa.",
+    "Sai: niêm yết không phải biện pháp xử lý."
+   ]
   },
   {
    "type": "pair",

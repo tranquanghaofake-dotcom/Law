@@ -76,7 +76,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 47 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 47 Điều 4 — có chứng chỉ do Ủy ban cấp và làm việc tại tổ chức kinh doanh chứng khoán.",
+    "Sai: kinh nghiệm giao dịch không thay chứng chỉ.",
+    "Sai: bằng cấp không thay chứng chỉ.",
+    "Sai: ngân hàng thương mại không thuộc danh sách."
+   ]
   },
   {
    "type": "mcq",
@@ -93,7 +99,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 98 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 98 — đại diện cho công ty nơi mình làm việc.",
+    "Sai: không hành nghề độc lập.",
+    "Sai: không đại diện Ủy ban.",
+    "Sai: không đại diện Sở giao dịch."
+   ]
   },
   {
    "type": "pair",

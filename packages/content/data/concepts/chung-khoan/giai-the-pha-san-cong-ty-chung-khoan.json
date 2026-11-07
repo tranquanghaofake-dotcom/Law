@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 96 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 96 (sửa đổi 2025) — theo pháp luật về phục hồi, phá sản.",
+    "Sai: Luật Doanh nghiệp điều chỉnh giải thể.",
+    "Sai: Bộ luật Dân sự không điều chỉnh phá sản.",
+    "Sai: Luật Các tổ chức tín dụng áp dụng cho tổ chức tín dụng."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 96 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 96 — Luật Chứng khoán và Luật Doanh nghiệp.",
+    "Sai: còn Luật Chứng khoán.",
+    "Sai: pháp luật phá sản điều chỉnh phá sản.",
+    "Sai: Luật Đầu tư không điều chỉnh giải thể."
+   ]
   },
   {
    "type": "pair",

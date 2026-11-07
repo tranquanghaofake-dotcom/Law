@@ -76,7 +76,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 8 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 8 — Chính phủ thống nhất quản lý nhà nước.",
+    "Sai: Bộ Tài chính chịu trách nhiệm trước Chính phủ thực hiện.",
+    "Sai: Ủy ban là cơ quan thuộc Bộ Tài chính.",
+    "Sai: Ngân hàng Nhà nước không quản lý chứng khoán."
+   ]
   },
   {
    "type": "mcq",
@@ -93,7 +99,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 8 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 8 — Bộ Tài chính.",
+    "Sai: Ủy ban thuộc Bộ Tài chính.",
+    "Sai: Sở giao dịch là doanh nghiệp.",
+    "Sai: Bộ Công Thương không quản lý chứng khoán."
+   ]
   },
   {
    "type": "pair",

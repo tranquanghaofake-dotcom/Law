@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 34 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 34 Điều 4 — nhận ký gửi, bảo quản, chuyển giao, giúp thực hiện quyền.",
+    "Sai: đây là đăng ký chứng khoán.",
+    "Sai: đây là môi giới.",
+    "Sai: đây là bảo lãnh phát hành."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 62 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 62 — lưu ký trước khi giao dịch.",
+    "Sai: không cho phép một năm sau.",
+    "Sai: không chỉ khi có tranh chấp.",
+    "Sai: lưu ký là bắt buộc."
+   ]
   },
   {
    "type": "pair",

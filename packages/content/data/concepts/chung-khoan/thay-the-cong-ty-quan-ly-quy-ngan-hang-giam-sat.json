@@ -84,7 +84,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 104 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm c khoản 1 Điều 104 — 02 tháng.",
+    "Sai: không phải 30 ngày.",
+    "Sai: không phải 06 tháng.",
+    "Sai: không phải 12 tháng."
+   ]
   },
   {
    "type": "mcq",
@@ -101,7 +107,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 104 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 104 — nghĩa vụ tài chính với Nhà nước trước tiên.",
+    "Sai: nhà đầu tư nhận sau cùng.",
+    "Sai: công ty quản lý quỹ đứng thứ hai.",
+    "Sai: phí Sở giao dịch không đứng đầu."
+   ]
   },
   {
    "type": "pair",

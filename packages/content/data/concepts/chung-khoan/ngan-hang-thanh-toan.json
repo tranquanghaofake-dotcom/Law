@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 69 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 69 — Ngân hàng Nhà nước hoặc ngân hàng thương mại.",
+    "Sai: không giới hạn ở ngân hàng nhà nước.",
+    "Sai: tổ chức tín dụng phi ngân hàng không được.",
+    "Sai: công ty tài chính không được."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 69 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 2 Điều 69 — trên 10.000 tỷ đồng.",
+    "Sai: không phải 3.000 tỷ.",
+    "Sai: không phải 1.000 tỷ.",
+    "Sai: không phải 30.000 tỷ."
+   ]
   },
   {
    "type": "pair",

@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 31 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 31 Điều 4 — \"cố gắng tối đa\" là một hình thức bảo lãnh.",
+    "Sai: mua cho chính mình là tự doanh.",
+    "Sai: làm trung gian theo lệnh là môi giới.",
+    "Sai: giữ hộ chứng khoán là lưu ký."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 17 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm c khoản 1 Điều 17 — không được là người có liên quan với tổ chức phát hành.",
+    "Sai: ký hợp đồng bảo lãnh là bắt buộc.",
+    "Sai: tư vấn hồ sơ không bị cấm ở điểm c.",
+    "Sai: làm đại lý phân phối không bị cấm ở điểm c."
+   ]
   },
   {
    "type": "pair",
@@ -158,7 +170,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 17 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Q là công ty con của R nên là người có liên quan (điểm c khoản 1 Điều 17).",
+    "Sai: có giấy phép không loại trừ quan hệ liên quan.",
+    "Sai: luật không có ngoại lệ dưới 50%.",
+    "Sai: phí và cam kết không thay đổi quan hệ liên quan."
+   ]
   },
   {
    "type": "recall",

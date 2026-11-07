@@ -83,7 +83,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 101 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm đ khoản 1 Điều 101 — thông qua Đại hội nhà đầu tư.",
+    "Sai: không qua Hội đồng quản trị công ty quản lý quỹ.",
+    "Sai: không qua ngân hàng giám sát.",
+    "Sai: không qua Ủy ban."
+   ]
   },
   {
    "type": "mcq",
@@ -100,7 +106,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 101 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm d khoản 1 Điều 101 — khởi kiện công ty quản lý quỹ, ngân hàng giám sát, tổ chức liên quan.",
+    "Sai: không giới hạn ở Ủy ban, công an.",
+    "Sai: Sở giao dịch không phải đối tượng chính.",
+    "Sai: Hội đồng nhân dân không liên quan."
+   ]
   },
   {
    "type": "pair",

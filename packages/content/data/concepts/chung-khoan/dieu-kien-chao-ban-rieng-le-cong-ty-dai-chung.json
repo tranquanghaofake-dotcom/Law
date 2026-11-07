@@ -86,7 +86,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 31 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm c khoản 1 Điều 31 — 03 năm với nhà đầu tư chiến lược.",
+    "Sai: 01 năm áp dụng cho nhà đầu tư chuyên nghiệp.",
+    "Sai: không phải 06 tháng.",
+    "Sai: không phải 05 năm."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 31 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm d khoản 1 Điều 31 — cách nhau ít nhất 06 tháng.",
+    "Sai: không phải 03 tháng.",
+    "Sai: không phải 12 tháng.",
+    "Sai: không phải 01 tháng."
+   ]
   },
   {
    "type": "pair",
@@ -164,7 +176,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 31 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 1 Điều 31 — chỉ nhà đầu tư chiến lược và nhà đầu tư chuyên nghiệp.",
+    "Sai: dưới 100 người chưa đủ với công ty đại chúng.",
+    "Sai: nghị quyết Hội đồng quản trị không khắc phục đối tượng.",
+    "Sai: giá bán không khắc phục đối tượng."
+   ]
   },
   {
    "type": "recall",

@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 11 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm d khoản 1 Điều 11 — tối thiểu 02 tỷ đồng.",
+    "Sai: không phải 01 tỷ.",
+    "Sai: không phải 05 tỷ.",
+    "Sai: không phải 100 triệu."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 11 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 1 Điều 11 — trên 100 tỷ đồng.",
+    "Sai: 30 tỷ là mức IPO, công ty đại chúng.",
+    "Sai: không phải 10 tỷ.",
+    "Sai: không phải 1.000 tỷ."
+   ]
   },
   {
    "type": "pair",
@@ -157,7 +169,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1b Điều 11 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1b Điều 11 (từ 01/01/2026) — cá nhân chỉ mua loại có xếp hạng và bảo đảm.",
+    "Sai: tư cách chuyên nghiệp không loại trừ hạn chế này.",
+    "Sai: quy mô danh mục không loại trừ hạn chế.",
+    "Sai: kỳ hạn, giá trị lô không phải ngoại lệ."
+   ]
   },
   {
    "type": "recall",

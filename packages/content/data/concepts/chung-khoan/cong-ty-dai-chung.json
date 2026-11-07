@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 32 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 32 — công ty đại chúng là công ty cổ phần.",
+    "Sai: công ty TNHH không phát hành cổ phiếu.",
+    "Sai: doanh nghiệp tư nhân không phát hành chứng khoán.",
+    "Sai: công ty hợp danh không phát hành chứng khoán."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 32 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 32 — trong 90 ngày.",
+    "Sai: không phải 30 ngày.",
+    "Sai: không phải 15 ngày.",
+    "Sai: không phải 12 tháng."
+   ]
   },
   {
    "type": "pair",
@@ -166,7 +178,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 32 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 32 (sửa đổi 2024) còn đòi vốn chủ sở hữu từ 30 tỷ.",
+    "Sai: vốn điều lệ đủ nhưng vốn chủ sở hữu chưa đủ.",
+    "Sai: số nhà đầu tư nhỏ chưa đủ khi thiếu điều kiện vốn.",
+    "Sai: Hội đồng quản trị không quyết định tư cách này."
+   ]
   },
   {
    "type": "recall",

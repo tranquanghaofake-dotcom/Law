@@ -76,7 +76,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 50 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 50 — khớp lệnh tập trung, thỏa thuận và phương thức khác theo Quy chế.",
+    "Sai: còn giao dịch thỏa thuận.",
+    "Sai: công ty chứng khoán không tự tổ chức khớp lệnh.",
+    "Sai: Ủy ban không tổ chức đấu giá."
+   ]
   },
   {
    "type": "mcq",
@@ -93,7 +99,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 50 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 50 — giao dịch không mang tính mua bán như thừa kế.",
+    "Sai: thỏa thuận giá vẫn là mua bán.",
+    "Sai: nhu cầu tiền không tạo ngoại lệ.",
+    "Sai: quan hệ gia đình không tạo ngoại lệ."
+   ]
   },
   {
    "type": "pair",
@@ -155,7 +167,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 50 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 50 — mua bán chứng khoán niêm yết phải qua hệ thống.",
+    "Sai: tự nguyện không loại trừ quy định bắt buộc.",
+    "Sai: công chứng không thay hệ thống giao dịch.",
+    "Sai: luật không có ngưỡng giá trị."
+   ]
   },
   {
    "type": "recall",

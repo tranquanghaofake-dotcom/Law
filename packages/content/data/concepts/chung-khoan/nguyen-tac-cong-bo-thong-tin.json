@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 119 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 119 — đầy đủ, chính xác, kịp thời.",
+    "Sai: không được thiên lệch có lợi.",
+    "Sai: chính xác chưa đủ.",
+    "Sai: không giữ bí mật."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 119 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 119 — Ủy ban và tổ chức nơi niêm yết, đăng ký giao dịch.",
+    "Sai: báo cáo nội bộ không thay nghĩa vụ này.",
+    "Sai: không chỉ cổ đông.",
+    "Sai: không báo cáo Bộ Công an."
+   ]
   },
   {
    "type": "pair",

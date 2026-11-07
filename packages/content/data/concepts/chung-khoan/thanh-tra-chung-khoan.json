@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 129 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 129 — Chủ tịch Ủy ban chỉ đạo trực tiếp.",
+    "Sai: không do Tổng Thanh tra chỉ đạo trực tiếp.",
+    "Sai: không do Bộ trưởng Bộ Công an.",
+    "Sai: không do Tổng giám đốc Sở."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 129 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 129 — thanh tra chuyên ngành.",
+    "Sai: không phải thanh tra hành chính.",
+    "Sai: không phải thanh tra nhân dân.",
+    "Sai: không phải kiểm toán."
+   ]
   },
   {
    "type": "pair",

@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 49 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 49 — Ủy ban Chứng khoán Nhà nước.",
+    "Sai: Tổng giám đốc Sở không có quyền này.",
+    "Sai: Bộ trưởng không trực tiếp quyết định.",
+    "Sai: công ty chứng khoán không có quyền."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 49 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 49 — sự cố hệ thống giao dịch.",
+    "Sai: chậm công bố của một công ty không phải căn cứ.",
+    "Sai: thua lỗ của nhà đầu tư không phải căn cứ.",
+    "Sai: giá một mã giảm sàn không phải căn cứ."
+   ]
   },
   {
    "type": "pair",

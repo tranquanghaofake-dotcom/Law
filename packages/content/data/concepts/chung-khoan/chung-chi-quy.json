@@ -70,7 +70,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 4 — một phần vốn góp của quỹ.",
+    "Sai: không phải vốn của công ty quản lý quỹ.",
+    "Sai: không phải nợ của ngân hàng giám sát.",
+    "Sai: chỉ một phần, không phải toàn bộ."
+   ]
   },
   {
    "type": "mcq",
@@ -87,7 +93,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 4 — cùng cổ phiếu, trái phiếu.",
+    "Sai: điểm b gồm chứng quyền, quyền mua, chứng chỉ lưu ký.",
+    "Sai: điểm c là chứng khoán phái sinh.",
+    "Sai: điểm d là loại do Chính phủ quy định."
+   ]
   },
   {
    "type": "pair",
