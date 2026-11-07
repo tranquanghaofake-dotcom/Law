@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 129 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: đoạn 2 khoản 1 Điều 129 Bộ luật Lao động — bồi thường nhiều nhất 03 tháng tiền lương, khấu trừ hằng tháng.",
+    "Sai: bồi thường toàn bộ là nguyên tắc chung; trường hợp sơ suất, thiệt hại nhỏ được giới hạn.",
+    "Sai: mức tối đa là 03 tháng, không phải 06 tháng.",
+    "Sai: luật đặt trần 03 tháng, không phải 01 tháng."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 129 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 129 — mất tài sản do thiên tai, bất khả kháng dù đã áp dụng mọi biện pháp thì không phải bồi thường.",
+    "Sai: đây là trường hợp loại trừ trách nhiệm.",
+    "Sai: không phải bồi thường một phần.",
+    "Sai: sa thải chỉ áp dụng với hành vi ở Điều 125, không phải bất khả kháng."
+   ]
   },
   {
    "type": "pair",

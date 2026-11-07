@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 236 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: Điều 236 — 10 năm đối với động sản.",
+    "Sai: luật không có mốc 5 năm.",
+    "Sai: luật không có mốc 20 năm.",
+    "Sai: 30 năm là mốc đối với bất động sản."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 236 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: Điều 236 không đòi đăng ký với Ủy ban nhân dân.",
+    "Sai: ngay tình là điều kiện.",
+    "Sai: liên tục là điều kiện.",
+    "Sai: công khai là điều kiện."
+   ]
   },
   {
    "type": "pair",

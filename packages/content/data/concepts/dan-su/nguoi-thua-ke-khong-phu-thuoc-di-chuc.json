@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 644 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 644 — hai phần ba suất của một người thừa kế theo pháp luật.",
+    "Sai: không phải một nửa di sản.",
+    "Sai: không phải toàn bộ suất.",
+    "Sai: không phải một phần ba."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 644 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 644 chỉ bảo vệ con thành niên không có khả năng lao động.",
+    "Sai: vợ, chồng thuộc diện được bảo vệ.",
+    "Sai: con chưa thành niên thuộc diện được bảo vệ.",
+    "Sai: cha, mẹ thuộc diện được bảo vệ."
+   ]
   },
   {
    "type": "pair",

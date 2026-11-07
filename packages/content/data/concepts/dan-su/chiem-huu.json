@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 179 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 179 — nắm giữ, chi phối tài sản trực tiếp hoặc gián tiếp như chủ thể có quyền.",
+    "Sai: định đoạt là quyền năng khác của chủ sở hữu (Điều 192).",
+    "Sai: đăng ký không phải chiếm hữu.",
+    "Sai: thừa kế không phải chiếm hữu."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 179 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 179 — chiếm hữu của người không phải chủ sở hữu không làm phát sinh quyền sở hữu, trừ trường hợp luật định (như Điều 236).",
+    "Sai: chiếm hữu không mặc nhiên tạo quyền sở hữu.",
+    "Sai: thời hạn xác lập quyền theo thời hiệu là 10 năm (động sản) hoặc 30 năm (bất động sản), không phải 1 năm.",
+    "Sai: giá trị tài sản không quyết định."
+   ]
   },
   {
    "type": "pair",

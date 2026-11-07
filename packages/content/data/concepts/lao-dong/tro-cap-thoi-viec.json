@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 46 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 46 — mỗi năm làm việc được trợ cấp một nửa tháng tiền lương.",
+    "Sai: một tháng tiền lương là mức trợ cấp mất việc làm (Điều 47).",
+    "Sai: hai tháng không phải mức luật định.",
+    "Sai: một phần tư tháng thấp hơn mức luật định."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 46 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 46 — tiền lương bình quân của 06 tháng liền kề trước khi thôi việc.",
+    "Sai: không lấy tháng cuối cùng.",
+    "Sai: không lấy lương tối thiểu vùng.",
+    "Sai: không lấy bình quân cả quá trình."
+   ]
   },
   {
    "type": "pair",

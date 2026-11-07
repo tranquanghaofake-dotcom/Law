@@ -88,7 +88,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 124 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 124 không có phạt tiền; Điều 127 cấm phạt tiền, cắt lương thay việc xử lý kỷ luật.",
+    "Sai: khiển trách là hình thức kỷ luật.",
+    "Sai: cách chức là hình thức kỷ luật.",
+    "Sai: sa thải là hình thức kỷ luật."
+   ]
   },
   {
    "type": "mcq",
@@ -105,7 +111,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 124 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 124 — kéo dài thời hạn nâng lương không quá 06 tháng.",
+    "Sai: 12 tháng vượt mức luật định.",
+    "Sai: 03 tháng thấp hơn mức tối đa.",
+    "Sai: 24 tháng vượt mức luật định."
+   ]
   },
   {
    "type": "pair",

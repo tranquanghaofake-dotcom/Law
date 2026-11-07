@@ -75,7 +75,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 38 Luật Phục hồi, phá sản 2025 (142/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 38 — chỉ chủ nợ không có bảo đảm và chủ nợ có bảo đảm một phần; chủ nợ có bảo đảm toàn bộ không có quyền.",
+    "Sai: chủ nợ không có bảo đảm có quyền nộp đơn.",
+    "Sai: chủ nợ có bảo đảm một phần có quyền nộp đơn.",
+    "Sai: người lao động, công đoàn có quyền nộp đơn (điểm b khoản 1 Điều 38)."
+   ]
   },
   {
    "type": "mcq",
@@ -92,7 +98,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 41 Luật Phục hồi, phá sản 2025 (142/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 41 — 30 ngày kể từ ngày thụ lý đơn.",
+    "Sai: 15 ngày ngắn hơn thời hạn luật định.",
+    "Sai: 60 ngày dài hơn thời hạn luật định.",
+    "Sai: 03 tháng dài hơn thời hạn luật định."
+   ]
   },
   {
    "type": "pair",

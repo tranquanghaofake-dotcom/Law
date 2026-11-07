@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 164 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 164 Bộ luật Dân sự 2015 — yêu cầu Tòa án buộc trả lại tài sản, chấm dứt hành vi cản trở, bồi thường thiệt hại.",
+    "Sai: tịch thu sung công là biện pháp công quyền, không phải phương thức bảo vệ dân sự.",
+    "Sai: xử lý hình sự theo Bộ luật Hình sự; bảo vệ dân sự gồm cả bồi thường.",
+    "Sai: Tòa án không cấp giấy chứng nhận quyền sở hữu cho người chiếm giữ."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 163 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 163 — chỉ khi thật cần thiết vì quốc phòng, an ninh, lợi ích quốc gia, tình trạng khẩn cấp… và có bồi thường theo giá thị trường.",
+    "Sai: phải có lý do luật định.",
+    "Sai: phải bồi thường theo giá thị trường.",
+    "Sai: phải có quyết định theo luật, không chỉ thông báo."
+   ]
   },
   {
    "type": "pair",

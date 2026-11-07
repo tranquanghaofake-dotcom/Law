@@ -84,7 +84,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 652 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: Điều 652 — con của người để lại di sản chết trước hoặc cùng thời điểm thì cháu được hưởng thế vị.",
+    "Sai: từ chối nhận di sản không làm phát sinh thế vị.",
+    "Sai: thế vị là thừa kế theo pháp luật, không theo di chúc.",
+    "Sai: con chết sau người để lại di sản thì phần của con thành di sản của con, không thế vị."
+   ]
   },
   {
    "type": "mcq",
@@ -101,7 +107,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 652 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: Điều 652 — cháu hưởng phần mà cha hoặc mẹ của cháu được hưởng nếu còn sống.",
+    "Sai: cháu không hưởng như một người hàng thứ nhất riêng.",
+    "Sai: không giảm còn một nửa.",
+    "Sai: 2/3 suất là mức của người thừa kế không phụ thuộc di chúc."
+   ]
   },
   {
    "type": "pair",

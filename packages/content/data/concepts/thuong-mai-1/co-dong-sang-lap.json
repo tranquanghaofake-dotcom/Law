@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 120 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 120 — chuyển nhượng cho người không phải cổ đông sáng lập trong 03 năm đầu cần Đại hội đồng cổ đông chấp thuận.",
+    "Sai: thẩm quyền chấp thuận là Đại hội đồng cổ đông, không phải Hội đồng quản trị.",
+    "Sai: luật có hạn chế trong 03 năm đầu.",
+    "Sai: không cấm tuyệt đối; được chuyển nhượng nếu có chấp thuận."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 120 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 120 — cùng đăng ký mua ít nhất 20% tổng số cổ phần phổ thông được quyền chào bán.",
+    "Sai: 10% thấp hơn mức luật định.",
+    "Sai: 50% cao hơn mức luật định.",
+    "Sai: 30% không phải mức luật định."
+   ]
   },
   {
    "type": "pair",

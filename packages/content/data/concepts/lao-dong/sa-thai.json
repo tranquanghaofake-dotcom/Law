@@ -86,7 +86,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 125 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 125 — sử dụng ma túy tại nơi làm việc là căn cứ sa thải.",
+    "Sai: đi làm muộn một lần không đủ căn cứ sa thải.",
+    "Sai: không đạt chỉ tiêu có thể là căn cứ chấm dứt khác, không phải sa thải.",
+    "Sai: nghỉ ốm có giấy là chính đáng."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 125 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 125 — tự ý bỏ việc 05 ngày cộng dồn trong 30 ngày (hoặc 20 ngày trong 365 ngày).",
+    "Sai: 03 ngày chưa đủ.",
+    "Sai: 10 ngày không phải mốc.",
+    "Sai: 20 ngày là mốc cộng dồn trong 365 ngày."
+   ]
   },
   {
    "type": "pair",

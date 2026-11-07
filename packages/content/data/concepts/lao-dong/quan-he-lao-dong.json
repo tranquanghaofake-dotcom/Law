@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 5 Điều 3 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 5 Điều 3 — gồm quan hệ lao động cá nhân và quan hệ lao động tập thể.",
+    "Sai: quan hệ công vụ thuộc luật khác.",
+    "Sai: quan hệ hành chính không phải quan hệ lao động.",
+    "Sai: có cả quan hệ lao động tập thể."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 5 Điều 3 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 5 Điều 3 — phát sinh trong việc thuê mướn, sử dụng lao động, trả lương.",
+    "Sai: mua bán hàng hóa là quan hệ thương mại.",
+    "Sai: thu thuế là quan hệ hành chính.",
+    "Sai: xét xử là quan hệ tố tụng."
+   ]
   },
   {
    "type": "pair",

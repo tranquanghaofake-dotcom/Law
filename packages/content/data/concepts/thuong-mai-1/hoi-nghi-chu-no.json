@@ -86,7 +86,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 61 Luật Phục hồi, phá sản 2025 (142/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 5 Điều 61 Luật Phục hồi, phá sản 2025 — nghị quyết thông qua khi số chủ nợ đại diện từ 65% tổng số nợ không có bảo đảm trở lên tán thành.",
+    "Sai: luật tính theo số nợ, không theo đầu người.",
+    "Sai: không đòi tất cả chủ nợ tán thành.",
+    "Sai: nghị quyết do Hội nghị chủ nợ thông qua, không do Thẩm phán đồng ý."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 61 Luật Phục hồi, phá sản 2025 (142/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 61 — Quản tài viên điều hành phiên họp Hội nghị chủ nợ.",
+    "Sai: Thẩm phán không điều hành phiên họp theo luật mới.",
+    "Sai: chủ nợ lớn nhất không điều hành.",
+    "Sai: Viện kiểm sát kiểm sát, không điều hành."
+   ]
   },
   {
    "type": "pair",

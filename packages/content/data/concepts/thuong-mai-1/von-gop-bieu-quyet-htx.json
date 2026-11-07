@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 74 Luật Hợp tác xã 2023 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 74 Luật Hợp tác xã 2023 — vốn góp của thành viên chính thức không quá 30% vốn điều lệ.",
+    "Sai: 20% không phải mức tối đa.",
+    "Sai: 50% vượt mức tối đa.",
+    "Sai: có giới hạn để tránh một thành viên chi phối."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 61 Luật Hợp tác xã 2023 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 61 — mỗi thành viên chính thức một phiếu, không phụ thuộc vốn góp hay chức vụ.",
+    "Sai: không theo tỷ lệ vốn góp.",
+    "Sai: không do Hội đồng quản trị quyết định.",
+    "Sai: thành viên sáng lập cũng chỉ một phiếu."
+   ]
   },
   {
    "type": "pair",

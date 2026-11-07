@@ -86,7 +86,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 111 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 1 Điều 111 — tối thiểu 03 cổ đông.",
+    "Sai: 02 là số thành viên tối thiểu của công ty trách nhiệm hữu hạn hai thành viên.",
+    "Sai: 05 không phải mức tối thiểu.",
+    "Sai: 07 không phải mức tối thiểu."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 111 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 111 — vốn điều lệ chia thành nhiều phần bằng nhau gọi là cổ phần.",
+    "Sai: chia theo tỷ lệ thỏa thuận là đặc điểm của công ty trách nhiệm hữu hạn.",
+    "Sai: phần vốn góp không bằng nhau là của công ty trách nhiệm hữu hạn.",
+    "Sai: vốn điều lệ công ty cổ phần luôn chia thành cổ phần."
+   ]
   },
   {
    "type": "pair",

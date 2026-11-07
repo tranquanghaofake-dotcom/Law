@@ -84,7 +84,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 204 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 204 — đình công khi tranh chấp đang được cơ quan có thẩm quyền giải quyết là bất hợp pháp.",
+    "Sai: đây là trường hợp bất hợp pháp.",
+    "Sai: Tòa án không \"công nhận ngay\"; luật xác định bất hợp pháp.",
+    "Sai: hậu quả không chỉ là nhắc nhở."
+   ]
   },
   {
    "type": "mcq",
@@ -101,7 +107,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 199, Điều 204 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: đình công do tổ chức đại diện lãnh đạo, đúng trình tự, sau hòa giải không thành là đình công hợp pháp (Điều 199), không thuộc Điều 204.",
+    "Sai: đình công tự phát, không do tổ chức đại diện lãnh đạo thuộc Điều 204.",
+    "Sai: vi phạm trình tự, thủ tục thuộc Điều 204.",
+    "Sai: tiếp tục đình công khi đã có quyết định hoãn, ngừng thuộc Điều 204."
+   ]
   },
   {
    "type": "pair",

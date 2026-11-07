@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 1 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: Điều 1 — chủ thể quan hệ dân sự là cá nhân, pháp nhân.",
+    "Sai: Điều 1 không liệt kê cơ quan nhà nước, tổ chức chính trị như nhóm chủ thể riêng.",
+    "Sai: còn pháp nhân.",
+    "Sai: không giới hạn ở cơ quan nhà nước và công dân."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 1 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: thuê nhà là quan hệ hình thành trên cơ sở bình đẳng, tự do ý chí — quan hệ dân sự.",
+    "Sai: xử phạt giao thông là quan hệ hành chính.",
+    "Sai: tuyên án hình sự là quan hệ tố tụng hình sự.",
+    "Sai: ấn định thuế là quan hệ hành chính – thuế."
+   ]
   },
   {
    "type": "pair",

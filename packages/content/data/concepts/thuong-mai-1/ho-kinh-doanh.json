@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 82 Nghị định 168/2025/NĐ-CP về đăng ký doanh nghiệp"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1, 2 Điều 82 Nghị định 168/2025/NĐ-CP — một cá nhân hoặc các thành viên hộ gia đình là công dân Việt Nam có năng lực hành vi dân sự đầy đủ.",
+    "Sai: tổ chức kinh tế không đăng ký hộ kinh doanh.",
+    "Sai: người nước ngoài không đăng ký hộ kinh doanh.",
+    "Sai: pháp nhân không đăng ký hộ kinh doanh."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 84 Nghị định 168/2025/NĐ-CP về đăng ký doanh nghiệp"
-   }
+   },
+   "why": [
+    "Đúng: khoản 5 Điều 84 Nghị định 168/2025/NĐ-CP — chủ hộ kinh doanh không được đồng thời là chủ doanh nghiệp tư nhân (trừ trường hợp luật định).",
+    "Sai: có hạn chế.",
+    "Sai: Ủy ban nhân dân xã không có quyền cho phép.",
+    "Sai: ngành nghề không phải tiêu chí."
+   ]
   },
   {
    "type": "pair",

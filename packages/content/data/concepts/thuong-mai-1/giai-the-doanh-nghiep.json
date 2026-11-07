@@ -73,7 +73,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 207 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm c khoản 1 Điều 207 — không đủ số thành viên tối thiểu trong 06 tháng liên tục mà không chuyển đổi loại hình.",
+    "Sai: 03 tháng ngắn hơn mức luật định.",
+    "Sai: 12 tháng dài hơn mức luật định.",
+    "Sai: 01 tháng ngắn hơn mức luật định."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 207 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 207 — chỉ giải thể khi bảo đảm thanh toán hết nợ; không trả hết nợ thì có thể thuộc thủ tục phá sản.",
+    "Sai: không trả hết nợ thì không đủ điều kiện giải thể.",
+    "Sai: Nhà nước không trả nợ thay.",
+    "Sai: doanh nghiệp không tự chấm dứt mà không qua thủ tục."
+   ]
   },
   {
    "type": "pair",

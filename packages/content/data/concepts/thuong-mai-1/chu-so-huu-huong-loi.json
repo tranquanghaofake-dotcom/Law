@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 35 Điều 4 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 35 Điều 4 Luật Doanh nghiệp — cá nhân có quyền sở hữu trên thực tế vốn điều lệ hoặc có quyền chi phối doanh nghiệp.",
+    "Sai: người đứng tên có thể không phải người hưởng lợi thực tế; khái niệm nhằm tìm người đứng sau.",
+    "Sai: người đại diện theo pháp luật có thể không sở hữu, không chi phối doanh nghiệp.",
+    "Sai: ngân hàng cho vay là chủ nợ, không phải chủ sở hữu hưởng lợi."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 35 Điều 4 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khái niệm được bổ sung bởi Luật 76/2025/QH15 sửa đổi Luật Doanh nghiệp (hợp nhất trong VBHN 67/VBHN-VPQH 2025).",
+    "Sai: Luật Doanh nghiệp 2014 chưa có khái niệm này và đã hết hiệu lực.",
+    "Sai: Bộ luật Dân sự không định nghĩa chủ sở hữu hưởng lợi của doanh nghiệp.",
+    "Sai: khái niệm nằm trong Luật Doanh nghiệp, không phải Luật Đầu tư, Luật Chứng khoán."
+   ]
   },
   {
    "type": "pair",

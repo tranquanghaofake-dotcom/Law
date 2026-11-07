@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 200 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 200 — hợp nhất tạo công ty mới, các công ty bị hợp nhất chấm dứt.",
+    "Sai: sáp nhập thì công ty nhận vẫn tồn tại.",
+    "Sai: chia là một công ty chia thành nhiều công ty.",
+    "Sai: tách là một công ty tách ra thêm công ty mới, công ty cũ vẫn tồn tại."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 199 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 199 — tách công ty: công ty bị tách vẫn tồn tại.",
+    "Sai: chia công ty thì công ty bị chia chấm dứt.",
+    "Sai: hợp nhất thì công ty bị hợp nhất chấm dứt.",
+    "Sai: công ty bị sáp nhập chấm dứt."
+   ]
   },
   {
    "type": "pair",

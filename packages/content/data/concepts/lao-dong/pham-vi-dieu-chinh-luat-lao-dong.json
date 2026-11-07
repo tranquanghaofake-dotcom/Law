@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 1 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 1 — tiêu chuẩn lao động; quyền, nghĩa vụ các chủ thể trong quan hệ lao động và quan hệ liên quan trực tiếp; quản lý nhà nước về lao động.",
+    "Sai: chế độ công vụ thuộc luật cán bộ, công chức.",
+    "Sai: tố tụng dân sự thuộc Bộ luật Tố tụng dân sự.",
+    "Sai: hợp đồng dịch vụ dân sự thuộc Bộ luật Dân sự."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 1 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 1 nêu tổ chức đại diện người lao động tại cơ sở.",
+    "Sai: Viện kiểm sát không phải chủ thể quan hệ lao động trong Điều 1.",
+    "Sai: Hội đồng nhân dân không được nêu.",
+    "Sai: Tòa án quân sự không được nêu."
+   ]
   },
   {
    "type": "pair",

@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 91 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 91 — mức lương tối thiểu xác lập theo vùng, ấn định theo tháng, theo giờ.",
+    "Sai: không theo ngành nghề, quy mô.",
+    "Sai: không theo từng doanh nghiệp.",
+    "Sai: không theo học vấn, kinh nghiệm."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 91 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 91 — Chính phủ quy định, công bố trên cơ sở khuyến nghị của Hội đồng tiền lương quốc gia.",
+    "Sai: Quốc hội không công bố mức lương tối thiểu.",
+    "Sai: Tổng Liên đoàn là thành viên Hội đồng tiền lương, không quyết định.",
+    "Sai: Ủy ban nhân dân tỉnh không quyết định."
+   ]
   },
   {
    "type": "pair",

@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 16 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 16 — có từ khi người đó sinh ra và chấm dứt khi chết.",
+    "Sai: 6 tuổi là mốc liên quan năng lực hành vi.",
+    "Sai: 18 tuổi là mốc thành niên.",
+    "Sai: khai sinh là thủ tục ghi nhận, không phải thời điểm phát sinh."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 16 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 16 — khả năng của cá nhân có quyền dân sự và nghĩa vụ dân sự.",
+    "Sai: khả năng bằng hành vi của mình xác lập quyền, nghĩa vụ là năng lực hành vi (Điều 19).",
+    "Sai: trách nhiệm hình sự thuộc luật hình sự.",
+    "Sai: quyền bầu cử là quyền chính trị."
+   ]
   },
   {
    "type": "pair",

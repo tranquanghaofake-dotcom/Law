@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 188 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 188 — chủ doanh nghiệp tư nhân chịu trách nhiệm bằng toàn bộ tài sản của mình.",
+    "Sai: trách nhiệm vô hạn, không giới hạn trong vốn đầu tư.",
+    "Sai: doanh nghiệp tư nhân không có vốn điều lệ.",
+    "Sai: trách nhiệm hữu hạn là của công ty."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 188 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 188 — mỗi cá nhân chỉ được thành lập một doanh nghiệp tư nhân.",
+    "Sai: chỉ một.",
+    "Sai: có giới hạn.",
+    "Sai: chỉ một."
+   ]
   },
   {
    "type": "pair",

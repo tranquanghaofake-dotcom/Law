@@ -72,7 +72,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 4 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 4 — Nhà nước khuyến khích thỏa thuận bảo đảm điều kiện thuận lợi hơn cho người lao động.",
+    "Sai: lương dưới mức tối thiểu vùng là trái luật (khoản 2 Điều 90).",
+    "Sai: không đóng bảo hiểm xã hội bắt buộc là trái luật.",
+    "Sai: làm thêm giờ bị giới hạn và phải trả lương làm thêm."
+   ]
   },
   {
    "type": "mcq",
@@ -89,7 +95,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 4 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 4 — Nhà nước bảo đảm quyền, lợi ích hợp pháp của người sử dụng lao động.",
+    "Sai: chính sách bảo vệ cả hai bên.",
+    "Sai: không phân biệt loại hình doanh nghiệp.",
+    "Sai: không phụ thuộc việc có tranh chấp."
+   ]
   },
   {
    "type": "pair",

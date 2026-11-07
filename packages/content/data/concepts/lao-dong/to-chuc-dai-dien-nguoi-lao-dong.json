@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 3 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 3 — gồm công đoàn cơ sở và tổ chức của người lao động tại doanh nghiệp.",
+    "Sai: còn tổ chức của người lao động tại doanh nghiệp; và không do cấp trên chỉ định.",
+    "Sai: Hội đồng quản trị, ban kiểm soát thuộc phía doanh nghiệp.",
+    "Sai: phòng nhân sự thuộc người sử dụng lao động."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 3 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 3 — thành lập trên cơ sở tự nguyện của người lao động.",
+    "Sai: không do người sử dụng lao động quyết định.",
+    "Sai: không do Ủy ban nhân dân chỉ định.",
+    "Sai: không bắt buộc mọi đơn vị phải có."
+   ]
   },
   {
    "type": "pair",

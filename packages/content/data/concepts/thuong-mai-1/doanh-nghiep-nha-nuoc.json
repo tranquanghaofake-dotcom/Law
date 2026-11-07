@@ -86,7 +86,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 11 Điều 4 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 11 Điều 4 — Nhà nước nắm giữ trên 50% vốn điều lệ hoặc tổng số cổ phần có quyền biểu quyết.",
+    "Sai: đúng 50% chưa phải \"trên 50%\".",
+    "Sai: 30% không đủ.",
+    "Sai: dưới 50% không phải doanh nghiệp nhà nước."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 88 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 88 — tổ chức dưới hình thức công ty trách nhiệm hữu hạn, công ty cổ phần.",
+    "Sai: doanh nghiệp tư nhân do cá nhân làm chủ.",
+    "Sai: công ty hợp danh không phải hình thức của doanh nghiệp nhà nước.",
+    "Sai: hộ kinh doanh không phải doanh nghiệp."
+   ]
   },
   {
    "type": "pair",

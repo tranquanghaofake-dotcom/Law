@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 3 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: đoạn 2 khoản 1 Điều 3 — độ tuổi lao động tối thiểu đủ 15 tuổi (trừ ngoại lệ ở Mục 1 Chương XI).",
+    "Sai: 18 tuổi là tuổi thành niên.",
+    "Sai: 16 tuổi không phải mốc tối thiểu.",
+    "Sai: 13 tuổi chỉ là ngoại lệ cho công việc nhẹ."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 3 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 3 — cá nhân sử dụng lao động phải có năng lực hành vi dân sự đầy đủ.",
+    "Sai: không bắt buộc đăng ký kinh doanh (ví dụ thuê người giúp việc).",
+    "Sai: không có điều kiện 21 tuổi, chứng chỉ.",
+    "Sai: không có điều kiện tài sản."
+   ]
   },
   {
    "type": "pair",

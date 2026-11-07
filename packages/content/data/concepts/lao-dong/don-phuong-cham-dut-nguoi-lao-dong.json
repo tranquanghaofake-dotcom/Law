@@ -74,7 +74,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 35 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 35 — hợp đồng không xác định thời hạn: báo trước ít nhất 45 ngày.",
+    "Sai: 30 ngày áp dụng cho hợp đồng từ 12 đến 36 tháng.",
+    "Sai: 60 ngày không phải mốc của Điều 35.",
+    "Sai: 03 ngày làm việc áp dụng cho hợp đồng dưới 12 tháng."
+   ]
   },
   {
    "type": "mcq",
@@ -91,7 +97,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 35 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm d khoản 2 Điều 35 — bị quấy rối tình dục tại nơi làm việc thì không cần báo trước.",
+    "Sai: muốn chuyển chỗ lương cao phải báo trước.",
+    "Sai: đi du lịch không phải căn cứ.",
+    "Sai: đi học không phải căn cứ không cần báo trước."
+   ]
   },
   {
    "type": "pair",

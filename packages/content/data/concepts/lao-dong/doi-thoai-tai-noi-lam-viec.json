@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 63 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 2 Điều 63 — đối thoại định kỳ ít nhất 01 năm một lần.",
+    "Sai: luật cũ quy định 03 tháng; luật 2019 đổi thành ít nhất 01 năm.",
+    "Sai: 06 tháng không phải mốc luật định.",
+    "Sai: 02 năm thưa hơn mức luật định."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 63 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 63 — trao đổi nhằm tăng cường hiểu biết, hợp tác, hướng tới giải pháp các bên cùng có lợi.",
+    "Sai: kỷ luật có thủ tục riêng (Điều 122).",
+    "Sai: giải quyết tranh chấp tại Tòa án là thủ tục tố tụng.",
+    "Sai: đình công có trình tự riêng."
+   ]
   },
   {
    "type": "pair",

@@ -71,7 +71,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 124 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 124 — giao dịch giả tạo vô hiệu, giao dịch bị che giấu vẫn có hiệu lực trừ khi tự nó vô hiệu.",
+    "Sai: giao dịch bị che giấu được xét riêng.",
+    "Sai: giao dịch bị che giấu trái điều cấm thì cũng vô hiệu.",
+    "Sai: Ủy ban nhân dân không quyết định hiệu lực giao dịch."
+   ]
   },
   {
    "type": "mcq",
@@ -88,7 +94,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 123 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: đoạn 2 Điều 123 — điều cấm của luật là quy định của luật không cho phép chủ thể thực hiện hành vi nhất định.",
+    "Sai: chuẩn mực đạo đức là \"đạo đức xã hội\", khái niệm khác.",
+    "Sai: điều cấm phải là của luật, không phải mọi quy định của nghị định.",
+    "Sai: tập quán không phải điều cấm của luật."
+   ]
   },
   {
    "type": "pair",

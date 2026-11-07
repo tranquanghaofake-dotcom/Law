@@ -76,7 +76,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 179 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 179 — tranh chấp giữa các tổ chức đại diện người lao động với nhau là tranh chấp lao động.",
+    "Sai: đây là tranh chấp lao động, không phải dân sự.",
+    "Sai: không phải tranh chấp hành chính.",
+    "Sai: không phụ thuộc việc có đình công."
+   ]
   },
   {
    "type": "mcq",
@@ -93,7 +99,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 179 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 179 — tranh chấp về quyền phát sinh khi khác nhau trong hiểu và thực hiện pháp luật, thỏa ước, nội quy.",
+    "Sai: yêu cầu cao hơn luật là tranh chấp về lợi ích.",
+    "Sai: cãi nhau giữa hai người lao động không phải tranh chấp lao động tập thể.",
+    "Sai: đòi bồi thường cá nhân là tranh chấp lao động cá nhân."
+   ]
   },
   {
    "type": "pair",

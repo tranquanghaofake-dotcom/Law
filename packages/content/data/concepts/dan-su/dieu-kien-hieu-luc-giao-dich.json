@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 117 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 117 — hình thức là điều kiện có hiệu lực trong trường hợp luật có quy định.",
+    "Sai: không phải mọi giao dịch đều đòi hình thức.",
+    "Sai: điều kiện hiệu lực do luật định, không theo ý các bên.",
+    "Sai: luật có trường hợp hình thức là điều kiện hiệu lực."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 117 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 1 Điều 117 — chủ thể tham gia hoàn toàn tự nguyện.",
+    "Sai: người làm chứng không phải điều kiện chung.",
+    "Sai: đăng ký tại Ủy ban nhân dân xã không phải điều kiện chung.",
+    "Sai: không có ngưỡng giá trị."
+   ]
   },
   {
    "type": "pair",

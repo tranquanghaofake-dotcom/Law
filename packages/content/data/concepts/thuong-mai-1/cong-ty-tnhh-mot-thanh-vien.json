@@ -84,7 +84,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 74 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 74 — do một tổ chức hoặc một cá nhân làm chủ sở hữu.",
+    "Sai: không giới hạn ở cá nhân quốc tịch Việt Nam.",
+    "Sai: chủ sở hữu không giới hạn ở tổ chức nước ngoài.",
+    "Sai: hai người trở lên thì là công ty hai thành viên trở lên."
+   ]
   },
   {
    "type": "mcq",
@@ -101,7 +107,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 74 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 74 — được phát hành trái phiếu theo quy định của luật.",
+    "Sai: luật cho phát hành trái phiếu.",
+    "Sai: không cần chuyển đổi loại hình để phát hành trái phiếu.",
+    "Sai: công ty trách nhiệm hữu hạn không phát hành cổ phiếu (trừ để chuyển thành công ty cổ phần)."
+   ]
   },
   {
    "type": "pair",
