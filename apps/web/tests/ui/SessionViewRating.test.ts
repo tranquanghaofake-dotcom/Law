@@ -37,11 +37,11 @@ describe('SessionView → repo.record: thông tin chấm FSRS', () => {
     expect(lastRating()).toEqual({ mode: 'recognize', chars: 'Câu hỏi?'.length + 'ĐúngSai 1Sai 2Sai 3'.length, partial: false });
   });
   it('tự nhớ lại, tự chấm "Gần đúng": mode produce, partial = true', async () => {
-    const item: Step['item'] = { type: 'recall', level: 5, q: 'Nêu khái niệm Hiến pháp.', model: 'Hiến pháp là luật cơ bản.', keywords: ['luật cơ bản'] };
+    const item: Step['item'] = { type: 'recall', level: 5, q: 'Nêu khái niệm Hiến pháp.', model: 'Hiến pháp là luật cơ bản.', keywords: ['luật cơ bản', 'hiệu lực cao nhất'] };
     const { container, getByRole } = render(SessionView, { props: { steps: [{ conceptId: 'a', level: 5, item }], concepts: [concept], levels: { a: 5 } } });
     await fireEvent.input(container.querySelector('textarea')!, { target: { value: 'luật cơ bản của nhà nước' } });
     await fireEvent.click(getByRole('button', { name: 'Xem đáp án' }));
-    await fireEvent.click(getByRole('button', { name: 'Gần đúng' }));
+    await fireEvent.click(getByRole('button', { name: /^Chốt: Gần đủ ý/ })); // 1/2 ý tick sẵn → gần đúng
     await vi.waitFor(() => expect(record).toHaveBeenCalled());
     expect(lastRating()).toMatchObject({ mode: 'produce', partial: true });
   });
