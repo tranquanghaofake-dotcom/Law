@@ -178,9 +178,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi công dân Việt Nam xin thôi quốc tịch để nhập quốc tịch nước khác đều được cho thôi.",
+   "statement": "Công dân Việt Nam xin thôi quốc tịch để nhập quốc tịch nước ngoài được thôi quốc tịch kể cả khi đang bị truy cứu trách nhiệm hình sự.",
    "answer": false,
-   "explain": "Sai. Khoản 2, 3 Điều 27 Luật Quốc tịch: chưa được thôi nếu đang nợ thuế, đang bị truy cứu trách nhiệm hình sự, đang chấp hành bản án…; không được thôi nếu làm phương hại đến lợi ích quốc gia. (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
+   "explain": "Sai. Khoản 2 Điều 27 Luật Quốc tịch Việt Nam (văn bản hợp nhất 2025): người xin thôi quốc tịch đang bị truy cứu trách nhiệm hình sự (điểm b) chưa được thôi quốc tịch."
   }
  ]
 }

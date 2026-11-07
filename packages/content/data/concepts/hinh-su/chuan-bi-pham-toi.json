@@ -152,9 +152,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi hành vi chuẩn bị phạm tội đều phải chịu trách nhiệm hình sự.",
+   "statement": "Người chuẩn bị phạm tội trộm cắp tài sản (Điều 173 Bộ luật Hình sự) phải chịu trách nhiệm hình sự.",
    "answer": false,
-   "explain": "Sai. Chỉ chuẩn bị các tội liệt kê ở khoản 2, 3 Điều 14."
+   "explain": "Sai. Khoản 2 Điều 14 chỉ liệt kê các điều (như 123, 134, 168, 169…); Điều 173 không nằm trong danh sách nên chuẩn bị phạm tội trộm cắp tài sản không phải chịu TNHS."
   },
   {
    "type": "recall",

@@ -158,9 +158,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Bộ luật Lao động chỉ điều chỉnh quan hệ giữa người lao động và người sử dụng lao động.",
+   "statement": "Bộ luật Lao động không điều chỉnh vấn đề quản lý nhà nước về lao động.",
    "answer": false,
-   "explain": "Sai. Còn điều chỉnh quan hệ của tổ chức đại diện các bên, quan hệ liên quan trực tiếp và quản lý nhà nước về lao động (Điều 1)."
+   "explain": "Sai. Điều 1: Bộ luật Lao động quy định cả quản lý nhà nước về lao động, bên cạnh tiêu chuẩn lao động và quyền, nghĩa vụ, trách nhiệm của các chủ thể trong quan hệ lao động."
   },
   {
    "type": "recall",

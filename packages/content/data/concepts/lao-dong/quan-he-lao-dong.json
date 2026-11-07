@@ -157,9 +157,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Cơ quan nhà nước có thẩm quyền không thể là chủ thể tham gia quan hệ lao động theo khoản 5 Điều 3.",
+   "statement": "Theo khoản 5 Điều 3, quan hệ lao động tập thể không phải là một loại quan hệ lao động.",
    "answer": false,
-   "explain": "Sai. Khoản 5 Điều 3 nêu cả cơ quan nhà nước có thẩm quyền."
+   "explain": "Sai. Khoản 5 Điều 3: quan hệ lao động bao gồm quan hệ lao động cá nhân và quan hệ lao động tập thể."
   },
   {
    "type": "recall",

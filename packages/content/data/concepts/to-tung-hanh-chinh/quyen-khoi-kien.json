@@ -98,9 +98,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Muốn khởi kiện quyết định hành chính, người dân bắt buộc phải khiếu nại trước.",
+   "statement": "Người dân phải khiếu nại với người có thẩm quyền và hết thời hạn giải quyết mà khiếu nại không được giải quyết thì mới được khởi kiện quyết định hành chính.",
    "answer": false,
-   "explain": "Sai. Khoản 1 Điều 115 cho khởi kiện khi không đồng ý với quyết định, hành vi đó; khiếu nại trước không bắt buộc."
+   "explain": "Sai. Khoản 1 Điều 115 cho khởi kiện khi không đồng ý với quyết định, hành vi đó; khiếu nại trước không phải điều kiện cho mọi trường hợp."
   },
   {
    "type": "recall",

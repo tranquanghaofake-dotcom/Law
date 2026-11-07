@@ -155,9 +155,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Quy phạm pháp luật chỉ có hiệu lực trong phạm vi cả nước.",
+   "statement": "Quy phạm pháp luật do Hội đồng nhân dân cấp tỉnh ban hành có hiệu lực trong phạm vi cả nước.",
    "answer": false,
-   "explain": "Sai. Khoản 1 Điều 3: trong phạm vi cả nước hoặc trong đơn vị hành chính nhất định (ví dụ nghị quyết HĐND cấp tỉnh)."
+   "explain": "Sai. Khoản 1 Điều 3 Luật Ban hành văn bản quy phạm pháp luật: quy phạm áp dụng trong phạm vi cả nước hoặc trong đơn vị hành chính nhất định; văn bản của HĐND cấp tỉnh có hiệu lực trong phạm vi đơn vị hành chính đó."
   },
   {
    "type": "recall",

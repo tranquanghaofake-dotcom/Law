@@ -156,9 +156,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Theo Điều 16 Hiến pháp 2013, quyền bình đẳng trước pháp luật chỉ dành cho công dân Việt Nam.",
+   "statement": "Theo Điều 16 Hiến pháp 2013, quyền bình đẳng trước pháp luật được quy định cho công dân Việt Nam, không áp dụng với người nước ngoài sinh sống tại Việt Nam.",
    "answer": false,
-   "explain": "Sai. Chủ thể là \"mọi người\"."
+   "explain": "Sai. Khoản 1 Điều 16 Hiến pháp 2013: \"Mọi người đều bình đẳng trước pháp luật\" — chủ thể là mọi người, không giới hạn ở công dân."
   },
   {
    "type": "recall",

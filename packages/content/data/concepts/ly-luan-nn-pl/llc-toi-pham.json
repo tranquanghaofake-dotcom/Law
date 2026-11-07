@@ -155,9 +155,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi pháp nhân đều có thể là chủ thể của tội phạm.",
+   "statement": "Pháp nhân phi thương mại có thể là chủ thể của tội phạm.",
    "answer": false,
-   "explain": "Sai. Chỉ pháp nhân thương mại và chỉ với các tội BLHS quy định (Điều 76)."
+   "explain": "Sai. Khoản 2 Điều 2 Bộ luật Hình sự: chỉ pháp nhân thương mại phạm tội quy định tại Điều 76 mới phải chịu trách nhiệm hình sự."
   },
   {
    "type": "recall",

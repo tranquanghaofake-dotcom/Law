@@ -154,7 +154,7 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Công ty chứng khoán xin cấp phép 3 nghiệp vụ chỉ cần tổng cộng 03 nhân viên có chứng chỉ hành nghề.",
+   "statement": "Công ty chứng khoán xin cấp phép 3 nghiệp vụ cần tổng cộng tối thiểu 03 nhân viên có chứng chỉ hành nghề, không phụ thuộc vào số nghiệp vụ xin cấp phép.",
    "answer": false,
    "explain": "Sai. Yêu cầu là tối thiểu 03 nhân viên có chứng chỉ phù hợp CHO MỖI nghiệp vụ (khoản 5 Điều 74), tức tối thiểu 09."
   },

@@ -181,9 +181,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Tất cả các phiên xét xử của Tòa án đều được tiến hành công khai.",
+   "statement": "Tòa án nhân dân xét xử công khai, không có trường hợp nào được xét xử kín.",
    "answer": false,
-   "explain": "Sai. Khoản 3 Điều 103 Hiến pháp 2013: trong trường hợp đặc biệt (bí mật nhà nước, thuần phong mỹ tục, bảo vệ người chưa thành niên, bí mật đời tư theo yêu cầu chính đáng), Tòa án có thể xét xử kín. (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
+   "explain": "Sai. Khoản 3 Điều 103 Hiến pháp 2013: trong trường hợp đặc biệt cần giữ bí mật nhà nước, thuần phong, mỹ tục của dân tộc, bảo vệ người chưa thành niên hoặc giữ bí mật đời tư theo yêu cầu chính đáng của đương sự, Tòa án nhân dân có thể xét xử kín."
   },
   {
    "type": "truefalse",

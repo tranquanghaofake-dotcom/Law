@@ -150,9 +150,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Tòa án chỉ căn cứ vào giá trị thiệt hại để quyết định hình phạt.",
+   "statement": "Khi quyết định hình phạt tiền, Tòa án căn cứ vào tình hình tài sản, khả năng thi hành của người phạm tội và không cần cân nhắc nhân thân người phạm tội.",
    "answer": false,
-   "explain": "Sai. Khoản 1 Điều 50 nêu nhiều căn cứ: quy định của Bộ luật, tính chất, mức độ nguy hiểm, nhân thân, tình tiết giảm nhẹ, tăng nặng."
+   "explain": "Sai. Khoản 2 Điều 50 quy định căn cứ tình hình tài sản, khả năng thi hành là căn cứ ngoài các căn cứ tại khoản 1 Điều 50 (trong đó có nhân thân người phạm tội)."
   },
   {
    "type": "recall",

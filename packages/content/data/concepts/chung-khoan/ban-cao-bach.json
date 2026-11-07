@@ -158,7 +158,7 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Bản cáo bạch chỉ được lập dưới dạng văn bản giấy.",
+   "statement": "Theo khoản 23 Điều 4, bản cáo bạch phải được lập bằng văn bản giấy, không được lập dưới dạng dữ liệu điện tử.",
    "answer": false,
    "explain": "Sai. Khoản 23 Điều 4: \"tài liệu hoặc dữ liệu điện tử\"."
   },

@@ -117,9 +117,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Khi vợ chồng cùng yêu cầu ly hôn, Tòa án luôn công nhận thuận tình ly hôn.",
+   "statement": "Khi vợ chồng cùng yêu cầu ly hôn, Tòa án công nhận thuận tình ly hôn dù thỏa thuận về con và tài sản không bảo đảm quyền lợi chính đáng của vợ và con.",
    "answer": false,
-   "explain": "Sai. Chỉ công nhận khi hai bên thật sự tự nguyện và đã thỏa thuận bảo đảm quyền lợi của vợ và con; nếu không, Tòa án giải quyết việc ly hôn (Điều 55)."
+   "explain": "Sai. Điều 55: Tòa án công nhận thuận tình ly hôn khi hai bên thật sự tự nguyện và đã thỏa thuận bảo đảm quyền lợi chính đáng của vợ và con; nếu không thỏa thuận được hoặc thỏa thuận không bảo đảm quyền lợi đó thì Tòa án giải quyết việc ly hôn."
   },
   {
    "type": "recall",

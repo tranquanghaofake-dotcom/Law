@@ -153,7 +153,7 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Một người thực hiện nhiều hành vi vi phạm thì chỉ bị xử phạt một lần cho hành vi nặng nhất.",
+   "statement": "Một người thực hiện nhiều hành vi vi phạm hành chính thì bị xử phạt một lần theo hành vi có mức phạt cao nhất.",
    "answer": false,
    "explain": "Sai. Điểm d khoản 1 Điều 3: bị xử phạt về từng hành vi (trừ trường hợp vi phạm nhiều lần là tình tiết tăng nặng)."
   },

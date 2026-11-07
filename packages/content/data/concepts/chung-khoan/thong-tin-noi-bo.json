@@ -162,7 +162,7 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Chỉ người nội bộ mới có thể nắm giữ thông tin nội bộ.",
+   "statement": "Kiểm toán viên của tổ chức phát hành biết thông tin nội bộ thì không bị cấm sử dụng thông tin đó để mua, bán chứng khoán theo khoản 2 Điều 12.",
    "answer": false,
    "explain": "Sai. Định nghĩa thông tin nội bộ (khoản 44) không gắn với chủ thể; người ngoài (kiểm toán, luật sư, người thân) cũng có thể biết, và khoản 2 Điều 12 cấm bất kỳ ai sử dụng, tiết lộ."
   },

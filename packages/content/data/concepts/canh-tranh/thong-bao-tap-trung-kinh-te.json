@@ -164,9 +164,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi giao dịch sáp nhập đều phải thông báo cho Ủy ban Cạnh tranh Quốc gia.",
+   "statement": "Ngưỡng thông báo tập trung kinh tế được xác định căn cứ vào vốn điều lệ của doanh nghiệp tham gia tập trung.",
    "answer": false,
-   "explain": "Sai. Chỉ khi thuộc ngưỡng thông báo tập trung kinh tế (khoản 1 Điều 33)."
+   "explain": "Sai. Khoản 2 Điều 33: ngưỡng căn cứ vào một trong các tiêu chí tổng tài sản, tổng doanh thu trên thị trường Việt Nam, giá trị giao dịch hoặc thị phần kết hợp — không có vốn điều lệ."
   },
   {
    "type": "recall",

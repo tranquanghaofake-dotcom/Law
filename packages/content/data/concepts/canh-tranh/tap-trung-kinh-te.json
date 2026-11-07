@@ -169,9 +169,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi giao dịch mua lại doanh nghiệp đều bị cấm theo Luật Cạnh tranh.",
+   "statement": "Giao dịch mua lại doanh nghiệp bị cấm theo Điều 30 Luật Cạnh tranh mà không cần xét tác động của giao dịch đối với cạnh tranh trên thị trường.",
    "answer": false,
-   "explain": "Sai. Chỉ tập trung kinh tế gây tác động hạn chế cạnh tranh đáng kể mới bị cấm (Điều 30)."
+   "explain": "Sai. Điều 30 chỉ cấm tập trung kinh tế gây tác động hoặc có khả năng gây tác động hạn chế cạnh tranh một cách đáng kể trên thị trường Việt Nam."
   },
   {
    "type": "recall",

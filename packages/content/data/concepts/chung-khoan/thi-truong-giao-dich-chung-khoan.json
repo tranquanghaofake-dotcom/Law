@@ -149,7 +149,7 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Theo khoản 27 Điều 4, thị trường giao dịch chứng khoán bắt buộc phải là một địa điểm vật lý.",
+   "statement": "Theo khoản 27 Điều 4, thị trường giao dịch chứng khoán phải là một địa điểm vật lý; giao dịch qua hệ thống điện tử không được coi là thị trường giao dịch chứng khoán.",
    "answer": false,
    "explain": "Sai. Luật dùng \"địa điểm HOẶC hình thức trao đổi thông tin\", nên giao dịch trực tuyến qua hệ thống điện tử vẫn là thị trường giao dịch chứng khoán."
   },

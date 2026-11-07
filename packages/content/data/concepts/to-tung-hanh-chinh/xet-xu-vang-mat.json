@@ -96,7 +96,7 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Đương sự vắng mặt tại phiên tòa thì Tòa án luôn phải hoãn phiên tòa.",
+   "statement": "Đương sự vắng mặt tại phiên tòa thì Tòa án phải hoãn phiên tòa, kể cả khi đương sự có đơn đề nghị xét xử vắng mặt.",
    "answer": false,
    "explain": "Sai. Điều 158: Tòa án vẫn xét xử nếu đương sự có đơn đề nghị xét xử vắng mặt hoặc có người đại diện tham gia, và trong các trường hợp ở điểm b, d khoản 2 Điều 157."
   },

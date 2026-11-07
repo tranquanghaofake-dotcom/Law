@@ -112,9 +112,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Vợ chồng chỉ được chia tài sản chung khi ly hôn.",
+   "statement": "Trong thời kỳ hôn nhân, vợ chồng không được thỏa thuận chia tài sản chung; muốn chia thì phải ly hôn.",
    "answer": false,
-   "explain": "Sai. Điều 38 cho phép chia một phần hoặc toàn bộ tài sản chung ngay trong thời kỳ hôn nhân."
+   "explain": "Sai. Khoản 1 Điều 38: trong thời kỳ hôn nhân, vợ chồng có quyền thỏa thuận chia một phần hoặc toàn bộ tài sản chung (trừ trường hợp Điều 42); không thỏa thuận được thì yêu cầu Tòa án giải quyết."
   },
   {
    "type": "recall",

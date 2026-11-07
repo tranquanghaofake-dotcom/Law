@@ -106,9 +106,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Hôn nhân chỉ chấm dứt khi một bên vợ hoặc chồng chết.",
+   "statement": "Hôn nhân chấm dứt kể từ ngày vợ chồng ký văn bản thỏa thuận ly hôn có công chứng.",
    "answer": false,
-   "explain": "Sai. Hôn nhân còn chấm dứt khi bản án, quyết định ly hôn của Tòa án có hiệu lực pháp luật (khoản 14 Điều 3, Điều 57)."
+   "explain": "Sai. Khoản 1 Điều 57: quan hệ hôn nhân chấm dứt kể từ ngày bản án, quyết định ly hôn của Tòa án có hiệu lực pháp luật (khoản 14 Điều 3); thỏa thuận ly hôn có công chứng không tự chấm dứt hôn nhân."
   },
   {
    "type": "recall",

@@ -155,9 +155,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Tranh chấp lao động chỉ là tranh chấp giữa người lao động và người sử dụng lao động.",
+   "statement": "Theo khoản 1 Điều 179, tranh chấp phát sinh từ quan hệ có liên quan trực tiếp đến quan hệ lao động không phải là tranh chấp lao động.",
    "answer": false,
-   "explain": "Sai. Khoản 1 Điều 179 còn gồm tranh chấp giữa các tổ chức đại diện người lao động và từ quan hệ liên quan trực tiếp."
+   "explain": "Sai. Khoản 1 Điều 179: tranh chấp lao động gồm cả tranh chấp phát sinh từ quan hệ có liên quan trực tiếp đến quan hệ lao động."
   },
   {
    "type": "recall",

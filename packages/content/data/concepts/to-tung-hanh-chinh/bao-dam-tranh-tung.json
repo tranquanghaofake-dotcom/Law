@@ -100,7 +100,7 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Quyền tranh tụng chỉ được bảo đảm ở phiên tòa sơ thẩm.",
+   "statement": "Quyền tranh tụng được bảo đảm ở xét xử sơ thẩm và phúc thẩm, còn giám đốc thẩm và tái thẩm không có tranh tụng.",
    "answer": false,
    "explain": "Sai. Khoản 1 Điều 18: tranh tụng được bảo đảm trong xét xử sơ thẩm, phúc thẩm, giám đốc thẩm, tái thẩm."
   },

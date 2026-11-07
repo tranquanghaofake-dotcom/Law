@@ -151,9 +151,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Người sử dụng lao động có quyền buộc người lao động làm thêm giờ mà không cần họ đồng ý trong mọi trường hợp.",
+   "statement": "Người sử dụng lao động được sử dụng người lao động làm thêm giờ khi chưa có sự đồng ý của người lao động, nếu số giờ làm thêm không quá 50% số giờ làm việc bình thường trong 01 ngày.",
    "answer": false,
-   "explain": "Sai. Điểm a khoản 2 Điều 107 yêu cầu sự đồng ý; chỉ một số trường hợp đặc biệt tại Điều 108 người lao động không được từ chối."
+   "explain": "Sai. Khoản 2 Điều 107: người sử dụng lao động chỉ được sử dụng người lao động làm thêm giờ khi đáp ứng đầy đủ các yêu cầu, trong đó có điểm a là phải được sự đồng ý của người lao động."
   },
   {
    "type": "recall",

@@ -109,9 +109,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Con riêng sống chung với cha dượng thì giữa họ có đầy đủ mọi quyền và nghĩa vụ như giữa cha và con đẻ.",
+   "statement": "Cha dượng, mẹ kế và con riêng cùng sống chung với nhau không có quyền và nghĩa vụ trông nom, chăm sóc, nuôi dưỡng nhau.",
    "answer": false,
-   "explain": "Sai. Điều 79 chỉ quy định nghĩa vụ, quyền trông nom, chăm sóc, nuôi dưỡng, giáo dục nhau; không phải mọi quyền như cha con đẻ (ví dụ thừa kế theo pháp luật cần thêm điều kiện của Bộ luật Dân sự)."
+   "explain": "Sai. Điều 79: cha dượng, mẹ kế có quyền và nghĩa vụ trông nom, nuôi dưỡng, chăm sóc, giáo dục con riêng cùng sống chung; con riêng có quyền và nghĩa vụ chăm sóc, phụng dưỡng cha dượng, mẹ kế cùng sống chung."
   },
   {
    "type": "recall",

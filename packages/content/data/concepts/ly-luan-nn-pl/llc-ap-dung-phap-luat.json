@@ -153,7 +153,7 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Văn bản áp dụng pháp luật được thực hiện nhiều lần đối với mọi chủ thể.",
+   "statement": "Văn bản áp dụng pháp luật chứa quy tắc xử sự chung và được thực hiện nhiều lần.",
    "answer": false,
    "explain": "Sai. Văn bản áp dụng pháp luật chứa quy tắc cá biệt, thực hiện một lần với chủ thể xác định."
   },

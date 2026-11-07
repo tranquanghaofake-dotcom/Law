@@ -162,9 +162,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Đại biểu Quốc hội chỉ được trình kiến nghị về luật, không được trình dự án luật.",
+   "statement": "Đại biểu Quốc hội có quyền trình kiến nghị về luật nhưng không có quyền trình dự án luật trước Quốc hội.",
    "answer": false,
-   "explain": "Sai. Khoản 2 Điều 84: đại biểu có quyền trình cả kiến nghị về luật, pháp lệnh và dự án luật, dự án pháp lệnh."
+   "explain": "Sai. Khoản 2 Điều 84 Hiến pháp 2013: đại biểu Quốc hội có quyền trình kiến nghị về luật, pháp lệnh và dự án luật, dự án pháp lệnh trước Quốc hội, Ủy ban thường vụ Quốc hội."
   },
   {
    "type": "recall",

@@ -151,7 +151,7 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Cảnh cáo có thể chỉ cần nói miệng với người vi phạm.",
+   "statement": "Cảnh cáo có thể được quyết định bằng lời nói tại chỗ nếu hành vi vi phạm nhẹ.",
    "answer": false,
    "explain": "Sai. Điều 22: cảnh cáo được quyết định bằng văn bản."
   },

@@ -158,9 +158,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Đối thoại tại nơi làm việc chỉ được tổ chức khi có tranh chấp lao động.",
+   "statement": "Người sử dụng lao động phải tổ chức đối thoại tại nơi làm việc định kỳ ít nhất 02 năm một lần.",
    "answer": false,
-   "explain": "Sai. Phải tổ chức định kỳ, khi có yêu cầu và các trường hợp luật định (khoản 2 Điều 63)."
+   "explain": "Sai. Điểm a khoản 2 Điều 63: định kỳ ít nhất 01 năm một lần, không phải 02 năm."
   },
   {
    "type": "recall",

@@ -157,9 +157,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Người không mong muốn hậu quả xảy ra thì không thể có lỗi cố ý.",
+   "statement": "Người thấy trước hậu quả có thể xảy ra, không mong muốn nhưng có ý thức để mặc cho hậu quả xảy ra là phạm tội do vô ý.",
    "answer": false,
-   "explain": "Sai. Cố ý gián tiếp: không mong muốn nhưng có ý thức để mặc hậu quả (khoản 2 Điều 10)."
+   "explain": "Sai. Đó là cố ý gián tiếp (khoản 2 Điều 10): không mong muốn nhưng có ý thức để mặc hậu quả xảy ra."
   },
   {
    "type": "recall",

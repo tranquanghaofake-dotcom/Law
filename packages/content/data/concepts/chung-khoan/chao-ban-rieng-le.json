@@ -150,7 +150,7 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Một công ty quảng cáo đợt bán cổ phần trên báo nhưng chỉ có 20 người mua thì vẫn là chào bán riêng lẻ.",
+   "statement": "Một công ty quảng cáo đợt bán cổ phần trên báo, bán cho 20 người mua thì vẫn là chào bán riêng lẻ.",
    "answer": false,
    "explain": "Sai. Đã dùng phương tiện thông tin đại chúng (điểm a khoản 19) thì là chào bán ra công chúng; khoản 20 loại trừ trường hợp này khỏi chào bán riêng lẻ, không phụ thuộc số người mua thực tế."
   },

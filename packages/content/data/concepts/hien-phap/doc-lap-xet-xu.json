@@ -158,9 +158,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Chánh án được chỉ đạo Thẩm phán về mức án trong một vụ án cụ thể.",
+   "statement": "Chánh án có quyền ra lệnh cho Thẩm phán về mức án phải tuyên trong một vụ án cụ thể.",
    "answer": false,
-   "explain": "Sai. Khoản 2 Điều 103: Thẩm phán xét xử độc lập, chỉ tuân theo pháp luật; nghiêm cấm can thiệp."
+   "explain": "Sai. Khoản 2 Điều 103 Hiến pháp 2013: Thẩm phán, Hội thẩm xét xử độc lập và chỉ tuân theo pháp luật; nghiêm cấm cơ quan, tổ chức, cá nhân can thiệp vào việc xét xử."
   },
   {
    "type": "recall",

@@ -163,9 +163,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Hội đồng nhân dân chỉ chịu trách nhiệm trước Nhân dân địa phương.",
+   "statement": "Hội đồng nhân dân chịu trách nhiệm trước Nhân dân địa phương, không chịu trách nhiệm trước cơ quan nhà nước cấp trên.",
    "answer": false,
-   "explain": "Sai. Khoản 1 Điều 113: chịu trách nhiệm trước Nhân dân địa phương và cơ quan nhà nước cấp trên."
+   "explain": "Sai. Khoản 1 Điều 113 Hiến pháp 2013: Hội đồng nhân dân chịu trách nhiệm trước Nhân dân địa phương và cơ quan nhà nước cấp trên."
   },
   {
    "type": "recall",

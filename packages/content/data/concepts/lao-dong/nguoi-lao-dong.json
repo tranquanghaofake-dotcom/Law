@@ -158,9 +158,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Hộ gia đình không thể là người sử dụng lao động.",
+   "statement": "Cá nhân có năng lực hành vi dân sự một phần được thuê mướn, sử dụng người lao động với tư cách người sử dụng lao động.",
    "answer": false,
-   "explain": "Sai. Khoản 2 Điều 3 liệt kê hộ gia đình."
+   "explain": "Sai. Khoản 2 Điều 3: người sử dụng lao động là cá nhân thì phải có năng lực hành vi dân sự đầy đủ."
   },
   {
    "type": "recall",

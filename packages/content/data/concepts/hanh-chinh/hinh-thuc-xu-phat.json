@@ -164,9 +164,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Tịch thu tang vật chỉ có thể là hình thức xử phạt bổ sung.",
+   "statement": "Phạt tiền có thể được quy định là hình thức xử phạt bổ sung.",
    "answer": false,
-   "explain": "Sai. Đoạn 2 khoản 2 Điều 21: có thể là hình thức bổ sung hoặc chính."
+   "explain": "Sai. Khoản 2 Điều 21: cảnh cáo và phạt tiền chỉ được quy định và áp dụng là hình thức xử phạt chính."
   },
   {
    "type": "recall",

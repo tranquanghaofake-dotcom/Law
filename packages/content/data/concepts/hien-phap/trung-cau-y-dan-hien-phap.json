@@ -164,9 +164,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Một bản Hiến pháp sửa đổi chỉ có hiệu lực sau khi được toàn dân bỏ phiếu tán thành qua trưng cầu ý dân.",
+   "statement": "Hiến pháp sửa đổi được thông qua khi có quá nửa tổng số đại biểu Quốc hội biểu quyết tán thành.",
    "answer": false,
-   "explain": "Sai. Hiến pháp được thông qua khi có ít nhất 2/3 tổng số đại biểu Quốc hội tán thành; trưng cầu ý dân chỉ tổ chức nếu Quốc hội quyết định (khoản 4 Điều 120)."
+   "explain": "Sai. Khoản 4 Điều 120 Hiến pháp 2013: Hiến pháp được thông qua khi có ít nhất hai phần ba tổng số đại biểu Quốc hội biểu quyết tán thành; việc trưng cầu ý dân về Hiến pháp do Quốc hội quyết định."
   },
   {
    "type": "case",

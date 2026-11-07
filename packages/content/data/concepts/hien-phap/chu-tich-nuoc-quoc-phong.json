@@ -162,9 +162,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Chủ tịch nước có thể tự công bố tình trạng khẩn cấp trong mọi trường hợp mà không cần nghị quyết của Ủy ban thường vụ Quốc hội.",
+   "statement": "Khi Ủy ban thường vụ Quốc hội vẫn họp được, Chủ tịch nước có thể tự công bố tình trạng khẩn cấp mà không cần nghị quyết của Ủy ban thường vụ Quốc hội.",
    "answer": false,
-   "explain": "Sai. Chủ tịch nước công bố căn cứ nghị quyết Ủy ban thường vụ; chỉ khi Ủy ban thường vụ không thể họp được thì mới tự công bố (khoản 5 Điều 88)."
+   "explain": "Sai. Khoản 5 Điều 88 Hiến pháp 2013: Chủ tịch nước công bố, bãi bỏ tình trạng khẩn cấp căn cứ vào nghị quyết của Ủy ban thường vụ Quốc hội; chỉ trong trường hợp Ủy ban thường vụ Quốc hội không thể họp được thì Chủ tịch nước mới tự công bố."
   },
   {
    "type": "recall",

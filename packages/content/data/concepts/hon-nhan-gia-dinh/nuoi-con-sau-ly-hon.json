@@ -115,9 +115,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Khi vợ chồng ly hôn, con dưới 36 tháng tuổi trong mọi trường hợp được giao cho người vợ trực tiếp nuôi.",
+   "statement": "Khi vợ chồng ly hôn, con dưới 24 tháng tuổi được giao cho mẹ trực tiếp nuôi, trừ trường hợp người mẹ không đủ điều kiện hoặc cha mẹ có thỏa thuận khác phù hợp với lợi ích của con.",
    "answer": false,
-   "explain": "Sai. Khoản 3 Điều 81 có ngoại lệ: người mẹ không đủ điều kiện, hoặc cha mẹ có thỏa thuận khác phù hợp với lợi ích của con."
+   "explain": "Sai. Khoản 3 Điều 81: mốc là con dưới 36 tháng tuổi (không phải 24 tháng); ngoại lệ là người mẹ không đủ điều kiện trực tiếp trông nom, chăm sóc, nuôi dưỡng, giáo dục con hoặc cha mẹ có thỏa thuận khác phù hợp với lợi ích của con."
   },
   {
    "type": "recall",

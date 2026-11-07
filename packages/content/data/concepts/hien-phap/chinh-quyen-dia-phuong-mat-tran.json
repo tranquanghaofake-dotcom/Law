@@ -164,9 +164,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Ủy ban nhân dân có quyền chỉ đạo hoạt động của Ủy ban Mặt trận Tổ quốc cùng cấp.",
+   "statement": "Ủy ban Mặt trận Tổ quốc Việt Nam cùng cấp là cơ quan trực thuộc Ủy ban nhân dân.",
    "answer": false,
-   "explain": "Sai. Quan hệ là thông báo, lắng nghe, phối hợp (Điều 116); Mặt trận là tổ chức liên minh chính trị do Đảng lãnh đạo (Điều 9), không trực thuộc Ủy ban nhân dân."
+   "explain": "Sai. Khoản 1 Điều 116 Hiến pháp 2013: Hội đồng nhân dân, Ủy ban nhân dân thông báo tình hình địa phương, lắng nghe ý kiến, kiến nghị và phối hợp với Mặt trận Tổ quốc; Mặt trận không trực thuộc Ủy ban nhân dân."
   },
   {
    "type": "recall",

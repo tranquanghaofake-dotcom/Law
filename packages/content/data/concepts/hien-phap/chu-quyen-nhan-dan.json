@@ -180,9 +180,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Theo Hiến pháp 2013, Quốc hội là chủ thể sở hữu tất cả quyền lực nhà nước.",
+   "statement": "Theo Hiến pháp 2013, quyền lực nhà nước thuộc về Quốc hội.",
    "answer": false,
-   "explain": "Sai. Chủ thể của quyền lực nhà nước là Nhân dân; Quốc hội là cơ quan đại biểu cao nhất của Nhân dân, thực hiện quyền lực do Nhân dân trao (khoản 2 Điều 2, Điều 69)."
+   "explain": "Sai. Khoản 2 Điều 2 Hiến pháp 2013: quyền lực nhà nước thuộc về Nhân dân; Quốc hội là cơ quan đại biểu cao nhất của Nhân dân, thực hiện quyền lực do Nhân dân trao (Điều 69)."
   },
   {
    "type": "recall",
@@ -199,9 +199,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Ở nước ta hiện nay, Nhân dân chỉ thực hiện quyền lực nhà nước gián tiếp thông qua Quốc hội và Hội đồng nhân dân.",
+   "statement": "Ở nước ta hiện nay, Nhân dân thực hiện quyền lực nhà nước thông qua Quốc hội và Hội đồng nhân dân, không thực hiện bằng dân chủ trực tiếp.",
    "answer": false,
-   "explain": "Sai. Điều 6 Hiến pháp 2013: Nhân dân thực hiện quyền lực nhà nước bằng dân chủ trực tiếp, bằng dân chủ đại diện thông qua Quốc hội, Hội đồng nhân dân và thông qua các cơ quan khác của Nhà nước. (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
+   "explain": "Sai. Điều 6 Hiến pháp 2013: Nhân dân thực hiện quyền lực nhà nước bằng dân chủ trực tiếp, bằng dân chủ đại diện thông qua Quốc hội, Hội đồng nhân dân và thông qua các cơ quan khác của Nhà nước."
   }
  ]
 }

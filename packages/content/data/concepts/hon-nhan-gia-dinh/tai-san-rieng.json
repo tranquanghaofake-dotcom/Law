@@ -112,9 +112,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Trong chế độ tài sản theo luật định, tài sản riêng của một bên vợ hoặc chồng chỉ được dùng để đáp ứng nhu cầu riêng của bên đó.",
+   "statement": "Trong chế độ tài sản theo luật định, vợ, chồng không được nhập tài sản riêng của mình vào tài sản chung.",
    "answer": false,
-   "explain": "Sai. Vợ, chồng có thể dùng tài sản riêng cho nhu cầu gia đình khi tài sản chung không đủ (khoản 2 Điều 30), hoặc nhập tài sản riêng vào tài sản chung (khoản 1 Điều 44)."
+   "explain": "Sai. Khoản 1 Điều 44: vợ, chồng có quyền nhập hoặc không nhập tài sản riêng vào tài sản chung."
   },
   {
    "type": "recall",

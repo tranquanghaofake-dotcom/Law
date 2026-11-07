@@ -156,7 +156,7 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Công ty chứng khoán chỉ có nghiệp vụ tư vấn đầu tư được cung cấp dịch vụ cho vay ký quỹ.",
+   "statement": "Công ty chứng khoán được cấp phép nghiệp vụ tư vấn đầu tư chứng khoán nhưng không có nghiệp vụ môi giới vẫn được cung cấp dịch vụ cho khách hàng vay tiền mua chứng khoán.",
    "answer": false,
    "explain": "Sai. Dịch vụ cho vay tiền mua chứng khoán gắn với nghiệp vụ MÔI GIỚI (khoản 1 Điều 86) và phải được Ủy ban chấp thuận (điểm e khoản 1 Điều 87)."
   },
