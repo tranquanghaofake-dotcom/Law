@@ -16,7 +16,13 @@
       "answer": 1,
       "explain": "Điều 1, khoản 3 Điều 2.",
       "basis": "Điều 1 Luật Cạnh tranh 2018",
-      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx",
+      "why": [
+        "Sai: Luật áp dụng cả với hành vi ngoài lãnh thổ có tác động tới thị trường Việt Nam.",
+        "Đúng: Điều 1, khoản 3 Điều 2 Luật Cạnh tranh — điều chỉnh hành vi gây tác động đến thị trường Việt Nam.",
+        "Sai: không cần điều ước hay thỏa thuận riêng.",
+        "Sai: không cần chi nhánh, văn phòng."
+      ]
     },
     {
       "q": "Sở Y tế ra văn bản khuyến nghị các bệnh viện chỉ mua vật tư của công ty X. Hành vi này thế nào?",
@@ -29,7 +35,13 @@
       "answer": 1,
       "explain": "Điểm a khoản 1 Điều 8.",
       "basis": "Điều 8 Luật Cạnh tranh 2018",
-      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx",
+      "why": [
+        "Sai: khuyến nghị buộc mua của một doanh nghiệp bị cấm.",
+        "Đúng: điểm a khoản 1 Điều 8 — cơ quan nhà nước không được buộc, khuyến nghị giao dịch với doanh nghiệp cụ thể.",
+        "Sai: không cần thiệt hại thực tế.",
+        "Sai: đây không phải quản lý bình thường."
+      ]
     },
     {
       "q": "Thị trường liên quan được xác định trên cơ sở nào?",
@@ -42,7 +54,13 @@
       "answer": 0,
       "explain": "Khoản 1 Điều 9.",
       "basis": "Điều 9 Luật Cạnh tranh 2018",
-      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx",
+      "why": [
+        "Đúng: khoản 1 Điều 9 — thị trường sản phẩm và thị trường địa lý liên quan.",
+        "Sai: không theo ranh giới hành chính.",
+        "Sai: không theo số doanh nghiệp, vốn.",
+        "Sai: không theo vốn, nhân viên."
+      ]
     },
     {
       "q": "Doanh nghiệp A có 25% và B có 12% thị phần, cùng tham gia một thỏa thuận. Thị phần kết hợp là bao nhiêu?",
@@ -55,7 +73,13 @@
       "answer": 1,
       "explain": "Khoản 2 Điều 10: tổng thị phần.",
       "basis": "Điều 10 Luật Cạnh tranh 2018",
-      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx",
+      "why": [
+        "Sai: chỉ tính thị phần A.",
+        "Đúng: khoản 2 Điều 10 — tổng thị phần: 37%.",
+        "Sai: chỉ tính thị phần B.",
+        "Sai: hiệu số không phải thị phần kết hợp."
+      ]
     },
     {
       "q": "Các hãng bia trong cùng thị trường liên quan thỏa thuận cùng tăng giá 10%. Theo Luật Cạnh tranh 2018, thỏa thuận này thế nào?",
@@ -68,7 +92,13 @@
       "answer": 0,
       "explain": "Khoản 1 Điều 12.",
       "basis": "Điều 12 Luật Cạnh tranh 2018",
-      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx",
+      "why": [
+        "Đúng: khoản 1 Điều 12 — thỏa thuận ấn định giá giữa đối thủ bị cấm.",
+        "Sai: không cần ngưỡng thị phần.",
+        "Sai: lợi ích của các bên không làm hợp pháp.",
+        "Sai: hình thức văn bản không làm hợp pháp."
+      ]
     },
     {
       "q": "Thỏa thuận thông đồng để một bên thắng thầu có thể được miễn trừ không?",
@@ -81,7 +111,13 @@
       "answer": 1,
       "explain": "Khoản 1 Điều 14 không bao gồm khoản 4 Điều 11.",
       "basis": "Điều 14 Luật Cạnh tranh 2018",
-      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx",
+      "why": [
+        "Sai: thông đồng thầu không được miễn trừ.",
+        "Đúng: khoản 1 Điều 14 không gồm khoản 4 Điều 11.",
+        "Sai: hiệp hội không cho phép được.",
+        "Sai: không có miễn trừ có thời hạn cho trường hợp này."
+      ]
     },
     {
       "q": "Thỏa thuận thống nhất điều kiện giao hàng, thanh toán (không liên quan đến giá) có lợi cho người tiêu dùng có thể được gì?",
@@ -94,7 +130,13 @@
       "answer": 0,
       "explain": "Điểm d khoản 1 Điều 14.",
       "basis": "Điều 14 Luật Cạnh tranh 2018",
-      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx",
+      "why": [
+        "Đúng: điểm d khoản 1 Điều 14 — có thể được miễn trừ có thời hạn.",
+        "Sai: miễn trừ luôn có thời hạn.",
+        "Sai: có thể được miễn trừ.",
+        "Sai: cần xem xét điều kiện miễn trừ."
+      ]
     },
     {
       "q": "Một doanh nghiệp có thị phần 32% trên thị trường liên quan. Doanh nghiệp này thế nào?",
@@ -107,7 +149,13 @@
       "answer": 0,
       "explain": "Khoản 1 Điều 24.",
       "basis": "Điều 24 Luật Cạnh tranh 2018",
-      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx",
+      "why": [
+        "Đúng: khoản 1 Điều 24 — từ 30% là vị trí thống lĩnh.",
+        "Sai: độc quyền là không có đối thủ cạnh tranh.",
+        "Sai: thống lĩnh không đương nhiên vi phạm.",
+        "Sai: 32% vượt ngưỡng 30%."
+      ]
     },
     {
       "q": "Hai doanh nghiệp có tổng thị phần 55%, cùng hành động gây tác động hạn chế cạnh tranh. Hai doanh nghiệp này thế nào?",
@@ -120,7 +168,13 @@
       "answer": 0,
       "explain": "Điểm a khoản 2 Điều 24.",
       "basis": "Điều 24 Luật Cạnh tranh 2018",
-      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx",
+      "why": [
+        "Đúng: điểm a khoản 2 Điều 24 — hai doanh nghiệp từ 50% là nhóm thống lĩnh.",
+        "Sai: xét theo tổng thị phần nhóm.",
+        "Sai: không phải độc quyền.",
+        "Sai: hai doanh nghiệp đã đủ."
+      ]
     },
     {
       "q": "Doanh nghiệp có vị trí thống lĩnh buộc đại lý phải mua kèm sản phẩm không liên quan mới được ký hợp đồng. Hành vi này là gì?",
@@ -133,7 +187,13 @@
       "answer": 0,
       "explain": "Điểm đ khoản 1 Điều 27.",
       "basis": "Điều 27 Luật Cạnh tranh 2018",
-      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx",
+      "why": [
+        "Đúng: điểm đ khoản 1 Điều 27 — áp điều kiện mua kèm là lạm dụng.",
+        "Sai: không phải khuyến mại.",
+        "Sai: không phải cạnh tranh không lành mạnh.",
+        "Sai: không phải tập trung kinh tế."
+      ]
     }
   ]
 }
