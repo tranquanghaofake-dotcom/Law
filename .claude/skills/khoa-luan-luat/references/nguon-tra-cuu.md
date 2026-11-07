@@ -41,10 +41,12 @@ Tra theo giai đoạn: **đề xuất xây dựng** (công văn xin ý kiến c�
 | congbobanan.toaan.gov.vn | bản án, quyết định đã công bố; lọc theo cấp tòa, loại án, năm |
 | vksndtc.gov.vn, tạp chí Kiểm sát | thông báo rút kinh nghiệm, quan điểm của Viện kiểm sát |
 | Giải đáp nghiệp vụ, công văn của TANDTC | ý kiến của TANDTC; không phải VBQPPL, ghi đúng loại |
+| Tuyển tập bản án do công ty luật, diễn đàn nghề luật tổng hợp (ví dụ "Tổng hợp 13 bản án áp dụng tập quán để giải quyết" của FDVN) | **nguồn thứ cấp để tìm bản án**, không phải nguồn để trích. Lấy số bản án, ngày, tòa từ tuyển tập rồi truy bản gốc trên congbobanan.toaan.gov.vn; chỉ trích bản gốc. Ghi tên tòa đúng tại thời điểm xét xử (Tòa án nhân dân huyện trước 01/7/2025), không tự đổi sang Tòa án nhân dân khu vực. Không tìm được bản gốc thì ghi "chưa đối chiếu bản gốc" trong sổ nguồn và không dùng làm bằng chứng chính cho luận điểm |
 
 ## Tạp chí khoa học pháp lý trong nước (ưu tiên số gần 5 năm)
 
 Nghiên cứu Lập pháp · Nhà nước và Pháp luật · Khoa học pháp lý Việt Nam (ĐH Luật TP.HCM) · Luật học (ĐH Luật Hà Nội) · Pháp luật và Thực tiễn (ĐH Luật, Đại học Huế) · VNU Journal of Science: Legal Studies · Tòa án nhân dân · Kiểm sát · Dân chủ và Pháp luật · Nghề Luật.
+Bài báo nhận dưới dạng file PDF không rõ nguồn (thư mục chia sẻ, tên file kiểu "1906-1-3706-1-10-20161103.pdf"): lấy thông tin xuất bản từ trang đầu (tác giả, tên bài, tạp chí, tập, năm, trang — ví dụ *Tạp chí Khoa học ĐHQGHN, Luật học* 25 (2009) 218–223), đối chiếu trên trang của tạp chí rồi mới đưa vào sổ nguồn; không trích theo tên file. Bài cũ hơn 10 năm dùng được cho khung lý luận, không dùng làm bằng chứng cho phần thực trạng.
 Danh mục tạp chí được tính điểm: tra danh mục mới nhất của Hội đồng Giáo sư nhà nước, ngành Luật học. Cần cho tiêu chí "công bố" của TT 45.
 
 ## Luận án, luận văn, đề tài
