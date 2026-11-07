@@ -152,7 +152,27 @@
    "level": 4,
    "statement": "Thành viên pháp nhân luôn phải chịu trách nhiệm bằng tài sản riêng về nghĩa vụ của pháp nhân.",
    "answer": false,
-   "explain": "Sai. Pháp nhân tự chịu trách nhiệm bằng tài sản của mình (điểm c khoản 1 Điều 74)."
+   "explain": "Sai. Pháp nhân tự chịu trách nhiệm bằng tài sản của mình (điểm c khoản 1 Điều 74).",
+   "parts": {
+    "basis": {
+     "options": [
+      "Điều 101 Bộ luật Dân sự 2015",
+      "Điều 16 Bộ luật Dân sự 2015",
+      "Khoản 1 Điều 74 Bộ luật Dân sự 2015",
+      "Điều 134 Bộ luật Dân sự 2015"
+     ],
+     "answer": 2
+    },
+    "reason": {
+     "options": [
+      "Thành viên luôn chịu trách nhiệm vô hạn về nợ của pháp nhân.",
+      "Pháp nhân không có tài sản riêng tách khỏi thành viên.",
+      "Thành viên chịu trách nhiệm thay khi pháp nhân có lãi.",
+      "Pháp nhân có tài sản độc lập và tự chịu trách nhiệm bằng tài sản của mình."
+     ],
+     "answer": 3
+    }
+   }
   },
   {
    "type": "recall",

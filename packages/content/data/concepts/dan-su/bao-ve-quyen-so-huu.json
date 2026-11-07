@@ -160,7 +160,27 @@
    "level": 4,
    "statement": "Chủ sở hữu được dùng mọi biện pháp, kể cả bạo lực, để tự bảo vệ tài sản.",
    "answer": false,
-   "explain": "Sai. Khoản 1 Điều 164: chỉ bằng biện pháp không trái với quy định của pháp luật."
+   "explain": "Sai. Khoản 1 Điều 164: chỉ bằng biện pháp không trái với quy định của pháp luật.",
+   "parts": {
+    "basis": {
+     "options": [
+      "Khoản 1 Điều 164 Bộ luật Dân sự 2015",
+      "Điều 158 Bộ luật Dân sự 2015",
+      "Khoản 1 Điều 179 Bộ luật Dân sự 2015",
+      "Điều 236 Bộ luật Dân sự 2015"
+     ],
+     "answer": 0
+    },
+    "reason": {
+     "options": [
+      "Quyền sở hữu là tuyệt đối nên chủ sở hữu được dùng mọi biện pháp cần thiết.",
+      "Chủ sở hữu chỉ được tự bảo vệ bằng biện pháp không trái với quy định của pháp luật.",
+      "Chủ sở hữu chỉ được nhờ Tòa án, không được tự bảo vệ tài sản.",
+      "Chủ sở hữu được dùng vũ lực nếu tài sản có giá trị lớn."
+     ],
+     "answer": 1
+    }
+   }
   },
   {
    "type": "recall",
@@ -184,6 +204,26 @@
     "kind": "statute",
     "cite": "Khoản 1 Điều 163 Bộ luật Dân sự 2015",
     "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   },
+   "parts": {
+    "basis": {
+     "options": [
+      "Khoản 1 Điều 164 Bộ luật Dân sự 2015",
+      "Khoản 1 Điều 163 Bộ luật Dân sự 2015",
+      "Điều 158 Bộ luật Dân sự 2015",
+      "Khoản 1 Điều 159 Bộ luật Dân sự 2015"
+     ],
+     "answer": 1
+    },
+    "reason": {
+     "options": [
+      "Luật bảo vệ quyền sở hữu, quyền khác đối với tài sản: không ai bị hạn chế, tước đoạt trái luật.",
+      "Quyền sở hữu chỉ được bảo vệ khi tài sản đã đăng ký.",
+      "Nhà nước có thể tước quyền sở hữu bằng quyết định hành chính bất kỳ.",
+      "Chỉ quyền sở hữu được bảo vệ, quyền khác đối với tài sản thì không."
+     ],
+     "answer": 0
+    }
    }
   }
  ]

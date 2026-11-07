@@ -165,7 +165,27 @@
    "level": 4,
    "statement": "Thừa kế thế vị áp dụng khi con của người để lại di sản chết sau người để lại di sản.",
    "answer": false,
-   "explain": "Sai. Điều 652 chỉ áp dụng khi con chết trước hoặc cùng thời điểm."
+   "explain": "Sai. Điều 652 chỉ áp dụng khi con chết trước hoặc cùng thời điểm.",
+   "parts": {
+    "basis": {
+     "options": [
+      "Điều 652 Bộ luật Dân sự 2015",
+      "Điều 651 Bộ luật Dân sự 2015",
+      "Điều 613 Bộ luật Dân sự 2015",
+      "Khoản 1 Điều 644 Bộ luật Dân sự 2015"
+     ],
+     "answer": 0
+    },
+    "reason": {
+     "options": [
+      "Thế vị áp dụng cả khi con chết sau người để lại di sản.",
+      "Thế vị chỉ đặt ra khi con chết trước hoặc cùng thời điểm với người để lại di sản.",
+      "Thế vị chỉ áp dụng khi có di chúc.",
+      "Cháu luôn hưởng thay cha mẹ trong mọi trường hợp."
+     ],
+     "answer": 1
+    }
+   }
   },
   {
    "type": "recall",

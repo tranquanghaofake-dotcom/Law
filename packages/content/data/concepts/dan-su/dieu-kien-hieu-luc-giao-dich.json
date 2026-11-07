@@ -170,7 +170,27 @@
    "level": 4,
    "statement": "Mọi hợp đồng không được lập thành văn bản đều vô hiệu.",
    "answer": false,
-   "explain": "Sai. Hình thức chỉ là điều kiện có hiệu lực khi luật có quy định (khoản 2 Điều 117)."
+   "explain": "Sai. Hình thức chỉ là điều kiện có hiệu lực khi luật có quy định (khoản 2 Điều 117).",
+   "parts": {
+    "basis": {
+     "options": [
+      "Khoản 2 Điều 117 Bộ luật Dân sự 2015",
+      "Khoản 1 Điều 117 Bộ luật Dân sự 2015",
+      "Điều 116 Bộ luật Dân sự 2015",
+      "Điều 123 Bộ luật Dân sự 2015"
+     ],
+     "answer": 0
+    },
+    "reason": {
+     "options": [
+      "Mọi hợp đồng phải lập văn bản mới có hiệu lực.",
+      "Hình thức chỉ là điều kiện có hiệu lực khi luật có quy định; hợp đồng có thể bằng lời nói, hành vi.",
+      "Hợp đồng không bằng văn bản chỉ có hiệu lực khi có người làm chứng.",
+      "Hình thức không bao giờ là điều kiện có hiệu lực của giao dịch."
+     ],
+     "answer": 1
+    }
+   }
   },
   {
    "type": "recall",
@@ -194,6 +214,26 @@
     "kind": "statute",
     "cite": "Khoản 2 Điều 117 Bộ luật Dân sự 2015",
     "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   },
+   "parts": {
+    "basis": {
+     "options": [
+      "Khoản 1 Điều 117 Bộ luật Dân sự 2015",
+      "Khoản 2 Điều 117 Bộ luật Dân sự 2015",
+      "Điều 116 Bộ luật Dân sự 2015",
+      "Điều 123 Bộ luật Dân sự 2015"
+     ],
+     "answer": 1
+    },
+    "reason": {
+     "options": [
+      "Luật chỉ đặt hình thức thành điều kiện có hiệu lực trong trường hợp luật có quy định.",
+      "Hình thức là điều kiện có hiệu lực của mọi giao dịch dân sự.",
+      "Hình thức chỉ cần khi các bên thỏa thuận.",
+      "Hình thức chỉ ảnh hưởng đến chứng cứ, không ảnh hưởng hiệu lực."
+     ],
+     "answer": 0
+    }
    }
   }
  ]

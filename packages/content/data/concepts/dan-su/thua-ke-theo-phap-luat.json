@@ -169,7 +169,27 @@
    "level": 4,
    "statement": "Anh ruột của người chết được hưởng thừa kế cùng lúc với con của người chết.",
    "answer": false,
-   "explain": "Sai. Anh ruột thuộc hàng hai, chỉ được hưởng khi không còn ai ở hàng thứ nhất (khoản 3 Điều 651)."
+   "explain": "Sai. Anh ruột thuộc hàng hai, chỉ được hưởng khi không còn ai ở hàng thứ nhất (khoản 3 Điều 651).",
+   "parts": {
+    "basis": {
+     "options": [
+      "Điều 649 Bộ luật Dân sự 2015",
+      "Khoản 3 Điều 651 Bộ luật Dân sự 2015",
+      "Điều 652 Bộ luật Dân sự 2015",
+      "Điều 613 Bộ luật Dân sự 2015"
+     ],
+     "answer": 1
+    },
+    "reason": {
+     "options": [
+      "Anh ruột ở hàng thừa kế thứ hai, chỉ hưởng khi không còn ai ở hàng thứ nhất.",
+      "Anh ruột và con của người chết cùng ở hàng thứ nhất.",
+      "Mọi người thân thích đều hưởng ngang nhau.",
+      "Anh ruột được ưu tiên hơn con vì là người lớn tuổi."
+     ],
+     "answer": 0
+    }
+   }
   },
   {
    "type": "recall",

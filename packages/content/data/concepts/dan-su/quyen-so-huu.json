@@ -165,7 +165,27 @@
    "level": 4,
    "statement": "Người thuê nhà có quyền định đoạt căn nhà đang thuê.",
    "answer": false,
-   "explain": "Sai. Người thuê chỉ được chiếm hữu, sử dụng theo hợp đồng; quyền định đoạt vẫn thuộc chủ sở hữu."
+   "explain": "Sai. Người thuê chỉ được chiếm hữu, sử dụng theo hợp đồng; quyền định đoạt vẫn thuộc chủ sở hữu.",
+   "parts": {
+    "basis": {
+     "options": [
+      "Khoản 1 Điều 179 Bộ luật Dân sự 2015",
+      "Điều 158 Bộ luật Dân sự 2015",
+      "Khoản 1 Điều 159 Bộ luật Dân sự 2015",
+      "Khoản 1 Điều 163 Bộ luật Dân sự 2015"
+     ],
+     "answer": 1
+    },
+    "reason": {
+     "options": [
+      "Người thuê chỉ chiếm hữu, sử dụng theo hợp đồng; quyền định đoạt vẫn thuộc chủ sở hữu.",
+      "Người thuê có đủ ba quyền năng như chủ sở hữu.",
+      "Người thuê được định đoạt nếu thuê trên một năm.",
+      "Thuê nhà làm chuyển quyền sở hữu sang người thuê."
+     ],
+     "answer": 0
+    }
+   }
   },
   {
    "type": "recall",
@@ -189,6 +209,26 @@
     "kind": "statute",
     "cite": "Điều 158 Bộ luật Dân sự 2015",
     "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   },
+   "parts": {
+    "basis": {
+     "options": [
+      "Khoản 1 Điều 159 Bộ luật Dân sự 2015",
+      "Khoản 1 Điều 179 Bộ luật Dân sự 2015",
+      "Điều 158 Bộ luật Dân sự 2015",
+      "Điều 105 Bộ luật Dân sự 2015"
+     ],
+     "answer": 2
+    },
+    "reason": {
+     "options": [
+      "Quyền sở hữu chỉ gồm quyền sử dụng và định đoạt.",
+      "Quyền sở hữu không gồm quyền chiếm hữu.",
+      "Quyền sở hữu là quyền khác đối với tài sản.",
+      "Quyền sở hữu gồm ba quyền năng: chiếm hữu, sử dụng, định đoạt."
+     ],
+     "answer": 3
+    }
    }
   }
  ]

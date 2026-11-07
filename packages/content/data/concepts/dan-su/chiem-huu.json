@@ -161,7 +161,27 @@
    "level": 4,
    "statement": "Chỉ chủ sở hữu mới có thể chiếm hữu tài sản.",
    "answer": false,
-   "explain": "Sai. Khoản 2 Điều 179: chiếm hữu gồm cả chiếm hữu của người không phải là chủ sở hữu."
+   "explain": "Sai. Khoản 2 Điều 179: chiếm hữu gồm cả chiếm hữu của người không phải là chủ sở hữu.",
+   "parts": {
+    "basis": {
+     "options": [
+      "Khoản 2 Điều 179 Bộ luật Dân sự 2015",
+      "Điều 158 Bộ luật Dân sự 2015",
+      "Khoản 1 Điều 163 Bộ luật Dân sự 2015",
+      "Điều 236 Bộ luật Dân sự 2015"
+     ],
+     "answer": 0
+    },
+    "reason": {
+     "options": [
+      "Chiếm hữu là một quyền năng chỉ chủ sở hữu mới có.",
+      "Chiếm hữu gồm cả chiếm hữu của người không phải chủ sở hữu, như người thuê, người mượn.",
+      "Người không phải chủ sở hữu chiếm hữu tài sản luôn là trái luật.",
+      "Chiếm hữu chỉ phát sinh sau khi đăng ký tài sản."
+     ],
+     "answer": 1
+    }
+   }
   },
   {
    "type": "recall",
@@ -185,6 +205,26 @@
     "kind": "statute",
     "cite": "Khoản 1 Điều 179 Bộ luật Dân sự 2015",
     "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   },
+   "parts": {
+    "basis": {
+     "options": [
+      "Khoản 2 Điều 179 Bộ luật Dân sự 2015",
+      "Khoản 1 Điều 179 Bộ luật Dân sự 2015",
+      "Điều 158 Bộ luật Dân sự 2015",
+      "Khoản 1 Điều 159 Bộ luật Dân sự 2015"
+     ],
+     "answer": 1
+    },
+    "reason": {
+     "options": [
+      "Chiếm hữu là sự nắm giữ, chi phối thực tế tài sản, trực tiếp hoặc gián tiếp, như chủ thể có quyền.",
+      "Chiếm hữu là quyền sở hữu đầy đủ đối với tài sản.",
+      "Chiếm hữu chỉ là nắm giữ trực tiếp, không có chiếm hữu gián tiếp.",
+      "Chiếm hữu chỉ áp dụng với bất động sản."
+     ],
+     "answer": 0
+    }
    }
   }
  ]

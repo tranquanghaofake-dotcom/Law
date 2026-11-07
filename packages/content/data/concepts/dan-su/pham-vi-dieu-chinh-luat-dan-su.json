@@ -161,7 +161,27 @@
    "level": 4,
    "statement": "Theo Bộ luật Dân sự 2015, hộ gia đình vẫn là chủ thể độc lập của quan hệ dân sự như pháp nhân.",
    "answer": false,
-   "explain": "Sai. Điều 1 chỉ nêu cá nhân, pháp nhân; quan hệ có sự tham gia của hộ gia đình, tổ hợp tác được giải quyết theo quy định riêng (Điều 101)."
+   "explain": "Sai. Điều 1 chỉ nêu cá nhân, pháp nhân; quan hệ có sự tham gia của hộ gia đình, tổ hợp tác được giải quyết theo quy định riêng (Điều 101).",
+   "parts": {
+    "basis": {
+     "options": [
+      "Điều 1 Bộ luật Dân sự 2015",
+      "Điều 101 Bộ luật Dân sự 2015",
+      "Khoản 1 Điều 74 Bộ luật Dân sự 2015",
+      "Điều 16 Bộ luật Dân sự 2015"
+     ],
+     "answer": 1
+    },
+    "reason": {
+     "options": [
+      "Hộ gia đình không phải chủ thể độc lập; khi tham gia quan hệ dân sự thì các thành viên là chủ thể.",
+      "Hộ gia đình có tư cách pháp nhân như doanh nghiệp.",
+      "Hộ gia đình là chủ thể độc lập nếu đã đăng ký hộ khẩu.",
+      "Hộ gia đình không được tham gia bất kỳ quan hệ dân sự nào."
+     ],
+     "answer": 0
+    }
+   }
   },
   {
    "type": "recall",

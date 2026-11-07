@@ -158,7 +158,27 @@
    "level": 4,
    "statement": "Người từ đủ 15 đến dưới 18 tuổi tự mình bán đất của mình mà không cần ai đồng ý.",
    "answer": false,
-   "explain": "Sai. Khoản 4 Điều 21: giao dịch liên quan đến bất động sản phải được người đại diện theo pháp luật đồng ý."
+   "explain": "Sai. Khoản 4 Điều 21: giao dịch liên quan đến bất động sản phải được người đại diện theo pháp luật đồng ý.",
+   "parts": {
+    "basis": {
+     "options": [
+      "Khoản 4 Điều 21 Bộ luật Dân sự 2015",
+      "Khoản 2 Điều 21 Bộ luật Dân sự 2015",
+      "Khoản 2 Điều 20 Bộ luật Dân sự 2015",
+      "Điều 19 Bộ luật Dân sự 2015"
+     ],
+     "answer": 0
+    },
+    "reason": {
+     "options": [
+      "Người từ đủ 15 tuổi có năng lực hành vi đầy đủ.",
+      "Giao dịch về bất động sản của người từ đủ 15 đến dưới 18 tuổi phải được người đại diện theo pháp luật đồng ý.",
+      "Người chưa thành niên không được sở hữu bất động sản.",
+      "Chỉ cần người mua đồng ý là giao dịch có hiệu lực."
+     ],
+     "answer": 1
+    }
+   }
   },
   {
    "type": "recall",
@@ -182,6 +202,26 @@
     "kind": "statute",
     "cite": "Khoản 2 Điều 21 Bộ luật Dân sự 2015",
     "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   },
+   "parts": {
+    "basis": {
+     "options": [
+      "Khoản 3 Điều 21 Bộ luật Dân sự 2015",
+      "Khoản 2 Điều 21 Bộ luật Dân sự 2015",
+      "Khoản 4 Điều 21 Bộ luật Dân sự 2015",
+      "Khoản 2 Điều 20 Bộ luật Dân sự 2015"
+     ],
+     "answer": 1
+    },
+    "reason": {
+     "options": [
+      "Người chưa đủ sáu tuổi không tự xác lập giao dịch; người đại diện theo pháp luật làm thay.",
+      "Người chưa đủ sáu tuổi tự xác lập mọi giao dịch nhỏ.",
+      "Giao dịch của trẻ dưới sáu tuổi do Ủy ban nhân dân xã xác lập.",
+      "Trẻ dưới sáu tuổi không thể có quyền, nghĩa vụ dân sự."
+     ],
+     "answer": 0
+    }
    }
   }
  ]

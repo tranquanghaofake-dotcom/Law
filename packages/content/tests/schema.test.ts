@@ -159,3 +159,16 @@ describe('quizQuestionSchema: why (tuỳ chọn) cho câu trong bộ đề', () 
     expect(quizQuestionSchema.safeParse({ ...qq, why: ['Đúng.', '', 'Sai.', 'Sai.'] }).success).toBe(false);
   });
 });
+
+describe('truefalse.parts — nhận định chấm 3 phần (tuỳ chọn)', () => {
+  const tf = { type: 'truefalse', level: 4, statement: 'S', answer: false, explain: 'Sai. Điều 1.' };
+  const part = { options: ['A', 'B', 'C', 'D'], answer: 1 };
+  const withItem = (it: object) => ({ ...base, items: [base.items[0], base.items[1], it] });
+  it('không có parts vẫn hợp lệ; có thì cần đủ basis và reason, mỗi phần 4 phương án, answer 0–3', () => {
+    expect(conceptSchema.safeParse(withItem(tf)).success).toBe(true);
+    expect(conceptSchema.safeParse(withItem({ ...tf, parts: { basis: part, reason: part } })).success).toBe(true);
+    expect(conceptSchema.safeParse(withItem({ ...tf, parts: { basis: part } })).success).toBe(false);
+    expect(conceptSchema.safeParse(withItem({ ...tf, parts: { basis: { ...part, options: ['A', 'B'] }, reason: part } })).success).toBe(false);
+    expect(conceptSchema.safeParse(withItem({ ...tf, parts: { basis: { ...part, answer: 4 }, reason: part } })).success).toBe(false);
+  });
+});
