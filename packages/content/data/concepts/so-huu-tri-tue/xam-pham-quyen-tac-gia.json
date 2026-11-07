@@ -158,9 +158,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Chỉ hành vi sao chép mới bị coi là xâm phạm quyền tác giả.",
+   "statement": "Cố ý gỡ bỏ thông tin quản lý quyền mà không được phép của chủ sở hữu không bị coi là xâm phạm quyền tác giả.",
    "answer": false,
-   "explain": "Sai. Điều 28 gồm nhiều hành vi: xâm phạm quyền nhân thân, quyền tài sản, nghĩa vụ khi dùng ngoại lệ, biện pháp công nghệ…"
+   "explain": "Sai. Khoản 6 Điều 28: cố ý xóa, gỡ bỏ hoặc thay đổi thông tin quản lý quyền khi không được phép là hành vi xâm phạm; Điều 28 còn gồm nhiều hành vi khác ngoài sao chép."
   },
   {
    "type": "recall",

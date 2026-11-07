@@ -168,9 +168,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Bằng độc quyền sáng chế cấp tại Việt Nam có hiệu lực ở mọi quốc gia.",
+   "statement": "Bằng độc quyền sáng chế có hiệu lực kéo dài đến hết mười năm kể từ ngày nộp đơn.",
    "answer": false,
-   "explain": "Sai. Khoản 1 Điều 93: hiệu lực trên toàn lãnh thổ Việt Nam."
+   "explain": "Sai. Khoản 2 Điều 93: hai mươi năm kể từ ngày nộp đơn; mười năm là thời hạn của bằng độc quyền giải pháp hữu ích (khoản 3)."
   },
   {
    "type": "recall",

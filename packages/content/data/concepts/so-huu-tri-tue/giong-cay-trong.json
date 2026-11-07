@@ -158,9 +158,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Giống cây hoang dại chỉ cần được phát hiện là đủ điều kiện bảo hộ.",
+   "statement": "Giống cây hoang dại được bảo hộ ngay khi được phát hiện, không cần được phát triển.",
    "answer": false,
-   "explain": "Sai. Điều 158: phải được chọn tạo hoặc phát hiện và phát triển, đủ năm điều kiện."
+   "explain": "Sai. Điều 158: giống cây trồng phải được chọn tạo hoặc phát hiện và phát triển, đồng thời đủ các điều kiện về tính mới, tính khác biệt, tính đồng nhất, tính ổn định và có tên phù hợp."
   },
   {
    "type": "recall",
