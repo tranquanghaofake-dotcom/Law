@@ -84,7 +84,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển I (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), tờ 3a"
-   }
+   },
+   "why": [
+    "Đúng: Toàn thư — tướng văn gọi là Lạc Hầu.",
+    "Sai: Lạc Tướng là tướng võ.",
+    "Sai: Bồ Chính là chức ở cấp chiềng chạ.",
+    "Sai: Quan Lang là con trai vua."
+   ]
   },
   {
    "type": "mcq",
@@ -101,7 +107,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển I (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), tờ 3a"
-   }
+   },
+   "why": [
+    "Đúng: Toàn thư — con gái vua gọi là Mị Nương.",
+    "Sai: Toàn thư không gọi vợ vua là Mị Nương.",
+    "Sai: Mị Nương không phải chức quan.",
+    "Sai: Mị Nương không đứng đầu bộ."
+   ]
   },
   {
    "type": "pair",
@@ -158,7 +170,13 @@
     "Sai, vì người đứng đầu bộ là Mị Nương, con gái vua, theo đúng nguyên văn Toàn thư và các sử gia xưa"
    ],
    "answer": 0,
-   "explain": "Phân biệt nguồn sử liệu (câu chữ Toàn thư) với quan điểm học thuật giải thích sử liệu. Khi làm bài, ghi rõ đâu là sử liệu, đâu là nhận định."
+   "explain": "Phân biệt nguồn sử liệu (câu chữ Toàn thư) với quan điểm học thuật giải thích sử liệu. Khi làm bài, ghi rõ đâu là sử liệu, đâu là nhận định.",
+   "why": [
+    "Đúng: Toàn thư chỉ ghi Lạc Tướng là tướng võ; Lạc tướng đứng đầu bộ là cách giải thích của giới nghiên cứu.",
+    "Sai: Toàn thư không ghi nguyên văn như vậy.",
+    "Sai: Toàn thư ghi Lạc Hầu là tướng văn, Lạc Tướng là tướng võ.",
+    "Sai: Mị Nương là con gái vua."
+   ]
   },
   {
    "type": "recall",

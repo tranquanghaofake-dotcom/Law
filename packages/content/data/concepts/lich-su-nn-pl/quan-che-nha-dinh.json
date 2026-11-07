@@ -75,7 +75,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển I, tờ 3b"
-   }
+   },
+   "why": [
+    "Đúng: năm 971 Lê Hoàn làm Thập đạo tướng quân.",
+    "Sai: không có chức Đô hộ tướng quân Hán.",
+    "Sai: Thứ sử là chức thời thuộc Hán.",
+    "Sai: Tăng thống là chức tăng quan."
+   ]
   },
   {
    "type": "mcq",
@@ -92,7 +98,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển I, tờ 4a"
-   }
+   },
+   "why": [
+    "Đúng: năm 974 — một lữ gồm 10 tốt (hệ thập phân).",
+    "Sai: không phải 5 tốt.",
+    "Sai: không phải 100 tốt.",
+    "Sai: không phải 12 tốt."
+   ]
   },
   {
    "type": "pair",

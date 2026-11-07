@@ -88,7 +88,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển XII, tờ 25a"
-   }
+   },
+   "why": [
+    "Đúng: năm 1466 chia nước thành 13 đạo thừa tuyên.",
+    "Sai: không kèm 12 lộ.",
+    "Sai: 12 lộ là thời Trần.",
+    "Sai: 9 quận là thời thuộc Hán."
+   ]
   },
   {
    "type": "mcq",
@@ -105,7 +111,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển XII, tờ 25a"
-   }
+   },
+   "why": [
+    "Đúng: năm 1466 đổi Xã quan thành Xã trưởng.",
+    "Sai: tiểu tư xã là chức thời Trần.",
+    "Sai: Lý trưởng là chức thời sau.",
+    "Sai: Tri huyện đứng đầu huyện."
+   ]
   },
   {
    "type": "pair",

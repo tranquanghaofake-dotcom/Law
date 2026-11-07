@@ -87,7 +87,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển II, tờ 2a–3a"
-   }
+   },
+   "why": [
+    "Đúng: năm 1010 dời đô từ Hoa Lư về thành Đại La, đổi tên Thăng Long.",
+    "Sai: không dời từ Cổ Loa; Đại La đổi tên Thăng Long.",
+    "Sai: Tây Đô là thành nhà Hồ.",
+    "Sai: không dời từ Mê Linh."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển II, tờ 39b"
-   }
+   },
+   "why": [
+    "Đúng: năm 1054 Lý Thánh Tông đặt quốc hiệu Đại Việt.",
+    "Sai: 1010 là năm dời đô.",
+    "Sai: 1042 là năm ban Hình thư.",
+    "Sai: 968 là năm đặt quốc hiệu Đại Cồ Việt."
+   ]
   },
   {
    "type": "pair",

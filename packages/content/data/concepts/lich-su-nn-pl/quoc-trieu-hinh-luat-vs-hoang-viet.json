@@ -80,7 +80,13 @@
    "source": {
     "kind": "textbook",
     "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 6 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
-   }
+   },
+   "why": [
+    "Đúng: theo giáo trình, Quốc triều hình luật bảo vệ quyền phụ nữ tốt hơn (con gái được thừa kế, giữ hương hỏa).",
+    "Sai: Hoàng Việt luật lệ hạn chế quyền phụ nữ hơn.",
+    "Sai: hai bộ luật khác nhau về quyền phụ nữ.",
+    "Sai: cả hai có quy định về phụ nữ."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "textbook",
     "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 6 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
-   }
+   },
+   "why": [
+    "Đúng: cả hai đều có ngũ hình, thập ác, bát nghị.",
+    "Sai: Quốc triều hình luật do nhà Lê ban hành.",
+    "Sai: chỉ Hoàng Việt luật lệ chịu ảnh hưởng chủ yếu luật Thanh.",
+    "Sai: số điều khác nhau (Hoàng Việt luật lệ 398 điều)."
+   ]
   },
   {
    "type": "pair",
@@ -154,7 +166,13 @@
     "Không so sánh được vì hai bộ luật thuộc hai thời kỳ khác nhau, không có điểm chung nào và không thể đối chiếu về nội dung chế định"
    ],
    "answer": 0,
-   "explain": "Ra đời sau không đồng nghĩa với tiến bộ hơn; cần dựa vào nội dung chế định."
+   "explain": "Ra đời sau không đồng nghĩa với tiến bộ hơn; cần dựa vào nội dung chế định.",
+   "why": [
+    "Đúng: Hoàng Việt luật lệ kỹ thuật chặt chẽ nhưng sao chép nhiều từ luật Thanh, kém tiến bộ hơn về quyền phụ nữ, dân sự.",
+    "Sai: ra đời sau không đồng nghĩa tiến bộ hơn.",
+    "Sai: Hoàng Việt luật lệ ít điều hơn và không nới quyền phụ nữ.",
+    "Sai: hai bộ luật có nhiều điểm để so sánh."
+   ]
   },
   {
    "type": "recall",

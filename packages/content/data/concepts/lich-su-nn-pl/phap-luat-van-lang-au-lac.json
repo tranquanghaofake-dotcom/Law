@@ -84,7 +84,13 @@
    "source": {
     "kind": "primary",
     "cite": "Hậu Hán thư, quyển 24"
-   }
+   },
+   "why": [
+    "Đúng: Hậu Hán thư, Mã Viện liệt truyện ghi luật Việt khác luật Hán hơn mười điều.",
+    "Sai: Quốc triều hình luật là bộ luật nhà Lê.",
+    "Sai: Hoàng Việt luật lệ là bộ luật nhà Nguyễn.",
+    "Sai: Bản kỷ nhà Lý chép thời sau."
+   ]
   },
   {
    "type": "mcq",
@@ -101,7 +107,13 @@
    "source": {
     "kind": "textbook",
     "cite": "Giáo trình Lịch sử nhà nước và pháp luật, Trường ĐH Luật Hà Nội, NXB Tư pháp 2025, Chương 5, mục 1.3"
-   }
+   },
+   "why": [
+    "Đúng: theo giáo trình, pháp luật thời Văn Lang – Âu Lạc chủ yếu là tập quán pháp.",
+    "Sai: chưa có sử liệu về luật thành văn.",
+    "Sai: chưa có án lệ triều đình.",
+    "Sai: không có điều ước với nhà Hán làm nguồn luật."
+   ]
   },
   {
    "type": "pair",

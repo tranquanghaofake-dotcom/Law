@@ -82,7 +82,13 @@
    "source": {
     "kind": "primary",
     "cite": "Quốc triều hình luật, Điều 2"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 2 — mưu phản là mưu mô làm nguy đến xã tắc.",
+    "Sai: mưu phản nước theo giặc là mưu chống đối (khoản 3).",
+    "Sai: mưu phá hủy tông miếu, cung điện là mưu đại nghịch.",
+    "Sai: đánh, mưu giết ông bà, cha mẹ là ác nghịch."
+   ]
   },
   {
    "type": "mcq",
@@ -99,7 +105,13 @@
    "source": {
     "kind": "primary",
     "cite": "Quốc triều hình luật, Điều 2"
-   }
+   },
+   "why": [
+    "Đúng: khoản 7 Điều 2 — rủa mắng, trái lời ông bà, cha mẹ là bất hiếu.",
+    "Sai: bất mục là mưu giết, bán người thân thuộc.",
+    "Sai: ác nghịch là đánh, mưu giết ông bà, cha mẹ.",
+    "Sai: nội loạn là gian dâm với người thân thuộc."
+   ]
   },
   {
    "type": "pair",

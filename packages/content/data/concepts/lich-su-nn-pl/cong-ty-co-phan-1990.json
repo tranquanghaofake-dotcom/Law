@@ -73,7 +73,13 @@
    "source": {
     "kind": "primary",
     "cite": "Luật Công ty 1990, Điều 30"
-   }
+   },
+   "why": [
+    "Đúng: Điều 30 Luật Công ty 1990 — công ty cổ phần có ít nhất bảy cổ đông.",
+    "Sai: ba là số tối thiểu theo Luật Doanh nghiệp hiện hành.",
+    "Sai: hai là số tối thiểu của công ty trách nhiệm hữu hạn hai thành viên hiện nay.",
+    "Sai: mười một không phải mốc."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "primary",
     "cite": "Luật Công ty 1990, Điều 25"
-   }
+   },
+   "why": [
+    "Đúng: Điều 25 — công ty trách nhiệm hữu hạn không được phát hành bất kỳ loại chứng khoán nào.",
+    "Sai: công ty trách nhiệm hữu hạn không phát hành cổ phiếu.",
+    "Sai: năm 1990 không được phát hành trái phiếu.",
+    "Sai: số thành viên không mở ra quyền phát hành."
+   ]
   },
   {
    "type": "pair",

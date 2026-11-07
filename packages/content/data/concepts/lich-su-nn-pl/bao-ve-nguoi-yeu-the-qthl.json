@@ -78,7 +78,13 @@
    "source": {
     "kind": "primary",
     "cite": "Quốc triều hình luật, Điều 295"
-   }
+   },
+   "why": [
+    "Đúng: Điều 295 Quốc triều hình luật giao quan sở tại thu nuôi người góa, mồ côi, tàn tật nặng không nơi nương tựa.",
+    "Sai: Điều 295 đặt trách nhiệm cho quan sở tại, không phải trưởng họ.",
+    "Sai: nhà chùa không được Điều 295 giao trách nhiệm này.",
+    "Sai: luật có quy định trách nhiệm, nếu bỏ mặc thì quan sở tại bị xử phạt."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "primary",
     "cite": "Quốc triều hình luật, Điều 308"
-   }
+   },
+   "why": [
+    "Đúng: Điều 308 — chưa có con thì 5 tháng không đi lại là mất vợ.",
+    "Sai: 1 năm là hạn khi vợ đã có con.",
+    "Sai: Điều 308 không dùng mốc 3 năm.",
+    "Sai: 1 tháng không phải mốc của Điều 308."
+   ]
   },
   {
    "type": "pair",

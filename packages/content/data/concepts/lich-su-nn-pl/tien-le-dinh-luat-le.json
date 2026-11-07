@@ -80,7 +80,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển I, tờ 23b"
-   }
+   },
+   "why": [
+    "Đúng: năm 1002 đổi mười đạo làm lộ, phủ, châu.",
+    "Sai: không bãi bỏ mà đổi thành đơn vị mới.",
+    "Sai: không gộp thành ba đạo.",
+    "Sai: thời sứ quân đã kết thúc."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển I, tờ 23b"
-   }
+   },
+   "why": [
+    "Đúng: năm 1002 \"định luật lệnh\".",
+    "Sai: Hình thư ban hành năm 1042.",
+    "Sai: Quốc triều hình luật thuộc nhà Hậu Lê.",
+    "Sai: Hoàng Việt luật lệ thuộc nhà Nguyễn."
+   ]
   },
   {
    "type": "pair",

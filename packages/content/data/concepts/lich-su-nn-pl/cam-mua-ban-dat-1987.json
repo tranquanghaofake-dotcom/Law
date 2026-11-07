@@ -79,7 +79,13 @@
    "source": {
     "kind": "primary",
     "cite": "Luật Đất đai 1987, Điều 5"
-   }
+   },
+   "why": [
+    "Đúng: Điều 5 Luật Đất đai 1987 cấm mua, bán, lấn, chiếm đất đai, phát canh thu tô.",
+    "Sai: thâm canh, tăng vụ được khuyến khích.",
+    "Sai: khai hoang được khuyến khích (Điều 2).",
+    "Sai: bán thành quả lao động trên đất được bảo đảm (Điều 3)."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "primary",
     "cite": "Luật Đất đai 1987, Điều 3"
-   }
+   },
+   "why": [
+    "Đúng: Điều 3 — được chuyển, nhượng, bán thành quả lao động, kết quả đầu tư trên đất.",
+    "Sai: đất đai thuộc sở hữu toàn dân, người sử dụng không có quyền sở hữu.",
+    "Sai: năm 1987 chưa cho chuyển nhượng quyền sử dụng đất (Luật Đất đai 1993 mới cho).",
+    "Sai: người sử dụng vẫn được hưởng thành quả lao động."
+   ]
   },
   {
    "type": "pair",

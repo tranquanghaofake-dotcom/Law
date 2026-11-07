@@ -78,7 +78,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển II, tờ 19b–20a"
-   }
+   },
+   "why": [
+    "Đúng: Toàn thư — lầu chuông để dân có việc kiện tụng oan uổng đánh chuông lên.",
+    "Sai: Toàn thư không ghi mục đích báo giờ.",
+    "Sai: không phải để triệu tập quân.",
+    "Sai: không phải để báo tin chiến thắng."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển II, tờ 19b"
-   }
+   },
+   "why": [
+    "Đúng: năm 1029, triều Lý Thái Tông.",
+    "Sai: Lý Thái Tổ mất năm 1028.",
+    "Sai: Đinh Tiên Hoàng thuộc thế kỷ X.",
+    "Sai: Trần Thái Tông thuộc thế kỷ XIII."
+   ]
   },
   {
    "type": "pair",

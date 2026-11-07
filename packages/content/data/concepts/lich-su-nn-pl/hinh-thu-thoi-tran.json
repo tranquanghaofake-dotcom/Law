@@ -87,7 +87,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển VII, tờ 11a"
-   }
+   },
+   "why": [
+    "Đúng: năm 1341 Trương Hán Siêu, Nguyễn Trung Ngạn được giao biên soạn.",
+    "Sai: Lê Văn Hưu, Ngô Sĩ Liên, Phan Huy Chú là sử gia.",
+    "Sai: Trần Thủ Độ, Trần Quốc Tuấn không được giao việc này.",
+    "Sai: Nguyễn Trãi, Lê Lợi, Lê Thánh Tông thuộc thời Lê."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển VII, tờ 11a"
-   }
+   },
+   "why": [
+    "Đúng: Hình thư thời Trần soạn năm 1341.",
+    "Sai: 1042 là Hình thư thời Lý.",
+    "Sai: 1230 là Quốc triều thông chế.",
+    "Sai: 1483 gắn với thời Hồng Đức (Lê Thánh Tông)."
+   ]
   },
   {
    "type": "pair",

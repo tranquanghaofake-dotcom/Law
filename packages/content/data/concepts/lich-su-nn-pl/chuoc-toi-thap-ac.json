@@ -79,7 +79,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển II, tờ 31a"
-   }
+   },
+   "why": [
+    "Đúng: chiếu 1042 — phạm thập ác thì không được chuộc.",
+    "Sai: người từ 70 tuổi trở lên được chuộc.",
+    "Sai: trẻ từ 15 tuổi trở xuống được chuộc.",
+    "Sai: người ốm yếu được chuộc."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển III, tờ 5b"
-   }
+   },
+   "why": [
+    "Đúng: năm 1071 định tiền chuộc tội theo thứ bậc.",
+    "Sai: năm 1071 không bãi bỏ chuộc tội.",
+    "Sai: chuộc tội không chỉ cho quý tộc.",
+    "Sai: thập ác vẫn không được chuộc."
+   ]
   },
   {
    "type": "pair",
@@ -153,7 +165,13 @@
     "Vừa bảo vệ đặc quyền của thân thuộc nhà vua, vừa cho phép chuộc cả tội thập ác bằng tiền để thể hiện sự khoan hồng của triều đình nhà Lý"
    ],
    "answer": 0,
-   "explain": "Đánh giá phổ biến của giáo trình dựa trên câu chữ chiếu năm 1042."
+   "explain": "Đánh giá phổ biến của giáo trình dựa trên câu chữ chiếu năm 1042.",
+   "why": [
+    "Đúng: chuộc tội 1042 vừa nhân đạo, vừa bảo vệ đặc quyền thân thuộc nhà vua, vừa nghiêm trị thập ác.",
+    "Sai: còn có yếu tố bảo vệ đặc quyền.",
+    "Sai: chiếu không xóa đặc quyền của thân thuộc nhà vua.",
+    "Sai: thập ác không được chuộc."
+   ]
   },
   {
    "type": "recall",

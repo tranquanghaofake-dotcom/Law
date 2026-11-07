@@ -82,7 +82,13 @@
    "source": {
     "kind": "textbook",
     "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 6 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
-   }
+   },
+   "why": [
+    "Đúng: Cơ mật viện (lập năm 1834) giúp vua bàn việc quan trọng, quân sự.",
+    "Sai: Lục khoa là cơ quan giám sát lục bộ, có từ thời Lê.",
+    "Sai: Hội đồng nhân dân là cơ quan hiện đại.",
+    "Sai: Thượng thư sảnh không phải cơ quan bàn việc quân cơ của Minh Mạng."
+   ]
   },
   {
    "type": "mcq",
@@ -99,7 +105,13 @@
    "source": {
     "kind": "textbook",
     "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 6 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
-   }
+   },
+   "why": [
+    "Đúng: Đô sát viện là cơ quan giám sát quan lại thời Nguyễn.",
+    "Sai: Lục khoa là của thời Lê Thánh Tông (thời Nguyễn sáp nhập vào Đô sát viện).",
+    "Sai: Hàn lâm viện soạn thảo văn thư.",
+    "Sai: Quốc tử giám là cơ quan giáo dục."
+   ]
   },
   {
    "type": "pair",
@@ -161,7 +173,13 @@
     "Là bốn bậc hình phạt được ghi trong Hoàng Việt luật lệ, áp dụng theo thứ tự nặng nhẹ"
    ],
    "answer": 0,
-   "explain": "Phân biệt nguồn pháp luật với câu nói dân gian."
+   "explain": "Phân biệt nguồn pháp luật với câu nói dân gian.",
+   "why": [
+    "Đúng: \"tứ bất\" là cách nói truyền miệng minh họa mức tập quyền, không phải văn bản luật; khi làm bài phải ghi rõ.",
+    "Sai: Hoàng Việt luật lệ không có điều luật nào gọi là \"tứ bất\".",
+    "Sai: \"tứ bất\" không phải tên cơ quan.",
+    "Sai: \"tứ bất\" không phải bậc hình phạt."
+   ]
   },
   {
    "type": "recall",

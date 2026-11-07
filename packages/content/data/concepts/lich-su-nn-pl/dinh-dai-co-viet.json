@@ -87,7 +87,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển I, tờ 2b"
-   }
+   },
+   "why": [
+    "Đúng: năm 968 đặt quốc hiệu Đại Cồ Việt.",
+    "Sai: Đại Ngu là quốc hiệu nhà Hồ.",
+    "Sai: Đại Nam là quốc hiệu nhà Nguyễn (từ 1838).",
+    "Sai: không có quốc hiệu Đại Hán của Việt Nam."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển I, tờ 2b"
-   }
+   },
+   "why": [
+    "Đúng: bầy tôi dâng tôn hiệu Đại Thắng Minh Hoàng Đế.",
+    "Sai: Vạn Thắng Vương là danh hiệu trước khi lên ngôi.",
+    "Sai: không có tôn hiệu này.",
+    "Sai: Giao Chỉ Quận Vương là tước nhà Tống phong."
+   ]
   },
   {
    "type": "pair",

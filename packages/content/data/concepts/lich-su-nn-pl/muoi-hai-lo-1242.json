@@ -86,7 +86,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển V, tờ 13a"
-   }
+   },
+   "why": [
+    "Đúng: năm 1242 nhà Trần chia nước làm 12 lộ.",
+    "Sai: 24 lộ là thời Lý (1010).",
+    "Sai: 13 đạo là thời Lê Thánh Tông.",
+    "Sai: 10 đạo là thời Đinh, Tiền Lê."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển V, tờ 13a"
-   }
+   },
+   "why": [
+    "Đúng: cấp xã thời Trần đặt đại tư xã, tiểu tư xã.",
+    "Sai: Lạc tướng, Bồ chính là thời Hùng Vương.",
+    "Sai: Thái thú, Huyện lệnh là thời Bắc thuộc.",
+    "Sai: An phủ sứ, trấn phủ sứ là quan cấp lộ, phủ."
+   ]
   },
   {
    "type": "pair",

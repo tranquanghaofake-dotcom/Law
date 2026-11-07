@@ -81,7 +81,13 @@
    "source": {
     "kind": "primary",
     "cite": "Sắc lệnh 47 ngày 10/10/1945, Điều thứ 2"
-   }
+   },
+   "why": [
+    "Đúng: Điều thứ 2 Sắc lệnh 47 — Bộ Dân luật Bắc kỳ ban bố bằng nghị định của Thống sứ (30/3/1931) và Toàn quyền (1/4/1931).",
+    "Sai: Thống đốc Nam Kỳ không ban bố Dân luật Bắc kỳ.",
+    "Sai: Dân luật Bắc kỳ không ban bố bằng Dụ.",
+    "Sai: Quốc hội Pháp không ban hành Dân luật Bắc kỳ."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "primary",
     "cite": "Sắc lệnh 47, Điều thứ 3"
-   }
+   },
+   "why": [
+    "Đúng: Điều thứ 3 — Bộ Dân luật Trung kỳ ban bố bằng các Dụ năm 1936, 1938, 1939.",
+    "Sai: Trung kỳ không có Thống sứ.",
+    "Sai: Nghị viện Pháp không ban hành.",
+    "Sai: Tổng thống Pháp không ban hành."
+   ]
   },
   {
    "type": "pair",

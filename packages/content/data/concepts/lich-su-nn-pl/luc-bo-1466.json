@@ -87,7 +87,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển XII, tờ 24a"
-   }
+   },
+   "why": [
+    "Đúng: năm 1466 đặt Thượng thư đứng đầu mỗi bộ.",
+    "Sai: Hành khiển là chức thời trước.",
+    "Sai: Lê Thánh Tông bỏ chức Tể tướng.",
+    "Sai: Đô đốc là chức võ."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển XII, tờ 24a"
-   }
+   },
+   "why": [
+    "Đúng: năm 1466 đổi Khâm hình viện thành Hình bộ.",
+    "Sai: Đại lý tự là cơ quan xét lại án.",
+    "Sai: Ngự sử đài là cơ quan giám sát.",
+    "Sai: Hình khoa thuộc Lục khoa."
+   ]
   },
   {
    "type": "pair",

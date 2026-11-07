@@ -80,7 +80,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển XII, tờ 67a"
-   }
+   },
+   "why": [
+    "Đúng: lời dụ năm 1471 — Lại khoa được bác bỏ việc thăng bổ lầm của Lại bộ.",
+    "Sai: Ngự sử đài không được nêu trong trường hợp này.",
+    "Sai: Hình bộ phụ trách hình án.",
+    "Sai: Đô ty là cơ quan quân sự địa phương."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển XII, tờ 67b"
-   }
+   },
+   "why": [
+    "Đúng: lời dụ — để uy quyền không bị lợi dụng, thế nước khó lay.",
+    "Sai: không chia quyền cho nhân dân.",
+    "Sai: mục đích không phải tiết kiệm chi phí.",
+    "Sai: không phải tam quyền phân lập."
+   ]
   },
   {
    "type": "pair",
@@ -153,7 +165,13 @@
     "Sai vì thời Lê không có cơ quan giám sát nào, mọi công việc đều do nhà vua quyết định trực tiếp không có ai kiểm tra"
    ],
    "answer": 0,
-   "explain": "Phân biệt kiểm soát chéo trong quân chủ tập quyền với phân quyền hiện đại."
+   "explain": "Phân biệt kiểm soát chéo trong quân chủ tập quyền với phân quyền hiện đại.",
+   "why": [
+    "Đúng: Lục khoa là cơ chế kiểm soát chéo để vua kiểm soát quan lại; mọi quyền vẫn tập trung ở vua.",
+    "Sai: Lục khoa không có quyền lập pháp, hành pháp, tư pháp độc lập.",
+    "Sai: Hình bộ chịu sự chi phối của vua.",
+    "Sai: thời Lê có cơ quan giám sát."
+   ]
   },
   {
    "type": "recall",

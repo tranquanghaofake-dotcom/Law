@@ -79,7 +79,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển II, tờ 4b"
-   }
+   },
+   "why": [
+    "Đúng: năm 1010 đổi 10 đạo làm 24 lộ, châu Hoan, châu Ái làm trại.",
+    "Sai: châu Hoan, châu Ái đổi làm trại.",
+    "Sai: 13 đạo thừa tuyên là thời Lê Thánh Tông.",
+    "Sai: 9 quận là thời thuộc Hán."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "primary",
     "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển II, tờ 4b"
-   }
+   },
+   "why": [
+    "Đúng: châu Hoan, châu Ái thời Lý gọi là trại.",
+    "Sai: quận là đơn vị thời Bắc thuộc.",
+    "Sai: thôn là đơn vị cơ sở.",
+    "Sai: bang không phải đơn vị hành chính thời Lý."
+   ]
   },
   {
    "type": "pair",

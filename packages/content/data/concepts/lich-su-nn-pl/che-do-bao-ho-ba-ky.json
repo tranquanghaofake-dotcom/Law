@@ -89,7 +89,13 @@
    "source": {
     "kind": "textbook",
     "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 7 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
-   }
+   },
+   "why": [
+    "Đúng: Nam Kỳ là thuộc địa; Bắc Kỳ, Trung Kỳ là xứ bảo hộ.",
+    "Sai: bảo hộ là chế độ của Bắc Kỳ, Trung Kỳ.",
+    "Sai: Nam Kỳ không tự trị dưới thời Pháp.",
+    "Sai: nhượng địa áp dụng cho Hà Nội, Hải Phòng, Đà Nẵng."
+   ]
   },
   {
    "type": "mcq",
@@ -106,7 +112,13 @@
    "source": {
     "kind": "textbook",
     "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 7 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
-   }
+   },
+   "why": [
+    "Đúng: Hiệp ước Patenôtre ký ngày 6/6/1884.",
+    "Sai: 1862 là Hiệp ước Nhâm Tuất.",
+    "Sai: 1874 là Hiệp ước Giáp Tuất.",
+    "Sai: 1887 là năm lập Liên bang Đông Dương."
+   ]
   },
   {
    "type": "pair",
@@ -168,7 +180,13 @@
     "Vì chỉ riêng Nam Kỳ có tòa án do người Pháp lập, còn Bắc và Trung thì không có"
    ],
    "answer": 0,
-   "explain": "Hệ quả của chế độ chia ba kỳ thời Pháp thuộc."
+   "explain": "Hệ quả của chế độ chia ba kỳ thời Pháp thuộc.",
+   "why": [
+    "Đúng: thời Pháp thuộc ba kỳ có chế độ cai trị và pháp luật khác nhau nên Sắc lệnh 47 phải quy định riêng.",
+    "Sai: lý do là khác biệt pháp luật thời thuộc địa, không phải ngôn ngữ.",
+    "Sai: Hiến pháp 1946 khẳng định nước Việt Nam thống nhất.",
+    "Sai: Pháp lập tòa án ở cả ba kỳ."
+   ]
   },
   {
    "type": "recall",
