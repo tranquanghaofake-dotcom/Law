@@ -158,9 +158,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Thị phần chỉ có thể xác định theo doanh thu bán ra.",
+   "statement": "Luật Cạnh tranh 2018 không cho phép xác định thị phần của doanh nghiệp theo số đơn vị hàng hóa, dịch vụ bán ra.",
    "answer": false,
-   "explain": "Sai. Khoản 1 Điều 10 có bốn phương pháp: doanh thu bán ra, doanh số mua vào, số đơn vị bán ra, số đơn vị mua vào."
+   "explain": "Sai. Khoản 1 Điều 10 có bốn phương pháp: doanh thu bán ra, doanh số mua vào, số đơn vị hàng hóa, dịch vụ bán ra (điểm c), số đơn vị mua vào."
   },
   {
    "type": "recall",

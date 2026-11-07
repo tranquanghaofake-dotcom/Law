@@ -157,9 +157,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Luật Cạnh tranh chỉ cấm hành vi của doanh nghiệp, không điều chỉnh hành vi của cơ quan nhà nước.",
+   "statement": "Cơ quan nhà nước khuyến nghị (không ép buộc) doanh nghiệp mua hàng của một doanh nghiệp cụ thể thì không thuộc hành vi bị nghiêm cấm tại Điều 8 Luật Cạnh tranh.",
    "answer": false,
-   "explain": "Sai. Khoản 1 Điều 8 nghiêm cấm cơ quan nhà nước thực hiện hành vi gây cản trở cạnh tranh."
+   "explain": "Sai. Điểm a khoản 1 Điều 8 cấm cơ quan nhà nước \"ép buộc, yêu cầu, khuyến nghị\" mua, bán hàng hóa với doanh nghiệp cụ thể, trừ hàng hóa, dịch vụ thuộc lĩnh vực độc quyền nhà nước hoặc trường hợp khẩn cấp theo quy định của pháp luật."
   },
   {
    "type": "recall",

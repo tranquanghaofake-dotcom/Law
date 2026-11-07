@@ -158,9 +158,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Thị trường liên quan chỉ được xác định theo ranh giới hành chính cấp tỉnh.",
+   "statement": "Thị trường địa lý liên quan được xác định theo ranh giới hành chính của tỉnh, thành phố nơi doanh nghiệp đặt trụ sở.",
    "answer": false,
-   "explain": "Sai. Thị trường địa lý xác định theo điều kiện cạnh tranh tương tự, không theo ranh giới hành chính (khoản 1 Điều 9)."
+   "explain": "Sai. Khoản 1 Điều 9: thị trường địa lý liên quan là khu vực địa lý cụ thể có điều kiện cạnh tranh tương tự và khác biệt đáng kể với khu vực lân cận, không dựa vào ranh giới hành chính."
   },
   {
    "type": "recall",
