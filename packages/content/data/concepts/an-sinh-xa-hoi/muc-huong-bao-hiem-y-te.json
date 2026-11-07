@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 22 Luật Bảo hiểm y tế (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm e khoản 1 Điều 22 Luật Bảo hiểm y tế — 80% chi phí với đối tượng khác.",
+    "Sai: 100% dành cho các nhóm ưu tiên ở điểm a khoản 1 Điều 22 (và một số trường hợp khác).",
+    "Sai: 95% dành cho các nhóm ở điểm đ khoản 1 Điều 22.",
+    "Sai: 50% không phải mức hưởng của khoản 1 Điều 22."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 22 Luật Bảo hiểm y tế (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 22 — hưởng theo đối tượng có quyền lợi cao nhất.",
+    "Sai: quyền lợi không được cộng dồn.",
+    "Sai: thứ tự đăng ký không quyết định quyền lợi.",
+    "Sai: cơ quan bảo hiểm xã hội không tự chọn; luật định theo quyền lợi cao nhất."
+   ]
   },
   {
    "type": "pair",

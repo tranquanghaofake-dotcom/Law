@@ -82,7 +82,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 35 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 35 (sửa bởi Luật 85/2025/QH15) — Tòa án nhân dân khu vực giải quyết sơ thẩm phần lớn vụ việc dân sự.",
+    "Sai: Tòa án nhân dân cấp huyện chấm dứt hoạt động từ 01/7/2025, thay bằng Tòa án nhân dân khu vực.",
+    "Sai: Tòa án nhân dân cấp cao đã chấm dứt hoạt động từ 01/7/2025 và trước đó cũng không xét xử sơ thẩm.",
+    "Sai: Tòa án nhân dân tối cao không xét xử sơ thẩm vụ việc dân sự."
+   ]
   },
   {
    "type": "mcq",
@@ -99,7 +105,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 37 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 37 — Tòa án nhân dân cấp tỉnh giải quyết theo thủ tục phúc thẩm bản án, quyết định chưa có hiệu lực của Tòa án nhân dân khu vực bị kháng cáo, kháng nghị.",
+    "Sai: kháng cáo dẫn đến phúc thẩm, không phải xét xử sơ thẩm lại.",
+    "Sai: Tòa án cấp tỉnh là cấp phúc thẩm của Tòa án khu vực.",
+    "Sai: giám đốc thẩm xét bản án đã có hiệu lực, còn bản án bị kháng cáo chưa có hiệu lực."
+   ]
   },
   {
    "type": "pair",

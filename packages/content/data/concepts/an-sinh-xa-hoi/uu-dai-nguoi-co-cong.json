@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 3 Pháp lệnh Ưu đãi người có công với cách mạng 2020 (02/2020/UBTVQH14)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 3 Pháp lệnh 2020 không liệt kê anh, chị, em ruột là thân nhân.",
+    "Sai: cha đẻ, mẹ đẻ là thân nhân theo khoản 2 Điều 3.",
+    "Sai: vợ hoặc chồng là thân nhân theo khoản 2 Điều 3.",
+    "Sai: người có công nuôi liệt sỹ là thân nhân theo khoản 2 Điều 3."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 3 Pháp lệnh Ưu đãi người có công với cách mạng 2020 (02/2020/UBTVQH14)"
-   }
+   },
+   "why": [
+    "Đúng: điểm d khoản 1 Điều 3 Pháp lệnh 2020 — Bà mẹ Việt Nam anh hùng.",
+    "Sai: người bệnh hiểm nghèo thuộc diện trợ giúp xã hội, không phải người có công.",
+    "Sai: người cao tuổi neo đơn thuộc diện bảo trợ xã hội.",
+    "Sai: hộ nghèo thuộc chính sách giảm nghèo, không phải người có công."
+   ]
   },
   {
    "type": "pair",

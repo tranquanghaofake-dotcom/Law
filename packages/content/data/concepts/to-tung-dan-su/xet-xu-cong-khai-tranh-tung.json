@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 24 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 24 — tranh tụng được bảo đảm trong xét xử sơ thẩm, phúc thẩm, giám đốc thẩm, tái thẩm.",
+    "Sai: tranh tụng không chỉ ở sơ thẩm.",
+    "Sai: khoản 1 Điều 24 có cả giám đốc thẩm, tái thẩm.",
+    "Sai: sơ thẩm là nơi tranh tụng đầy đủ nhất."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 11 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 11 — trừ trường hợp xét xử theo thủ tục rút gọn.",
+    "Sai: vụ án ly hôn xét xử sơ thẩm vẫn có Hội thẩm nhân dân.",
+    "Sai: số người trong vụ án lao động không phải ngoại lệ.",
+    "Sai: yếu tố nước ngoài không phải ngoại lệ của khoản 1 Điều 11."
+   ]
   },
   {
    "type": "pair",

@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 4 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 4 — Tòa án không được từ chối vì chưa có điều luật để áp dụng.",
+    "Sai: khoản 2 Điều 4 cấm từ chối vì lý do này.",
+    "Sai: vụ việc phức tạp không phải lý do từ chối.",
+    "Sai: chưa có án lệ không phải lý do từ chối; Tòa án áp dụng tập quán, tương tự pháp luật, nguyên tắc cơ bản, án lệ, lẽ công bằng."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 4 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 4 — cơ quan, tổ chức, cá nhân do Bộ luật quy định có quyền khởi kiện.",
+    "Sai: quyền khởi kiện không giới hạn ở công dân đủ 18 tuổi; người chưa thành niên khởi kiện qua người đại diện.",
+    "Sai: Tòa án không tự khởi kiện.",
+    "Sai: không bắt buộc phải có luật sư để khởi kiện."
+   ]
   },
   {
    "type": "pair",

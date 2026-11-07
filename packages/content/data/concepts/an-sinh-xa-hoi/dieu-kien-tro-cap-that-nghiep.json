@@ -86,7 +86,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 39 Luật Việc làm 2025 (74/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 39 Luật Việc làm 2025 — 60% bình quân tiền lương tháng đóng của 06 tháng gần nhất, có mức trần.",
+    "Sai: tính trên bình quân 06 tháng, tỷ lệ 60% và có mức tối đa.",
+    "Sai: không tính theo lương cơ sở, và mức hưởng phụ thuộc tiền lương đã đóng.",
+    "Sai: tỷ lệ là 60%, không phải 100%, và tính trên 06 tháng gần nhất."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 38 Luật Việc làm 2025 (74/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 38 — đơn phương chấm dứt hợp đồng trái pháp luật thì không được hưởng.",
+    "Sai: đây là trường hợp bị loại trừ, không hưởng như bình thường.",
+    "Sai: luật không có mức hưởng giảm 50% cho trường hợp này.",
+    "Sai: thời gian đóng dài không khắc phục được việc chấm dứt hợp đồng trái pháp luật."
+   ]
   },
   {
    "type": "pair",

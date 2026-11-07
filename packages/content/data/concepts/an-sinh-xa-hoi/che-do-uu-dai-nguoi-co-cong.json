@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 5 Pháp lệnh Ưu đãi người có công với cách mạng 2020 (02/2020/UBTVQH14)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 2 Điều 5 Pháp lệnh Ưu đãi người có công 2020 — điều dưỡng phục hồi sức khỏe.",
+    "Sai: trợ cấp thất nghiệp thuộc bảo hiểm thất nghiệp (Luật Việc làm), không phải ưu đãi người có công.",
+    "Sai: lương hưu thuộc bảo hiểm xã hội, tính theo thời gian đóng.",
+    "Sai: trợ cấp thai sản thuộc bảo hiểm xã hội."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 5 Pháp lệnh Ưu đãi người có công với cách mạng 2020 (02/2020/UBTVQH14)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 5 Pháp lệnh — \"Tùy từng đối tượng\" người có công và thân nhân được hưởng chế độ ưu đãi.",
+    "Sai: mỗi nhóm người có công có chế độ khác nhau, không hưởng như nhau.",
+    "Sai: ưu đãi người có công là đền đáp công lao, không dựa vào mức đóng góp tài chính.",
+    "Sai: Điều 5 không lấy thu nhập hiện tại làm căn cứ."
+   ]
   },
   {
    "type": "pair",

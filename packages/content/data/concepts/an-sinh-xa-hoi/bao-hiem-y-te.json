@@ -88,7 +88,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 2 Luật Bảo hiểm y tế (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 2 Luật Bảo hiểm y tế — bảo hiểm bắt buộc, không vì mục đích lợi nhuận, do Nhà nước tổ chức thực hiện.",
+    "Sai: bảo hiểm y tế là bắt buộc và không vì lợi nhuận; mức đóng tính theo tỷ lệ luật định (khoản 2 Điều 3).",
+    "Sai: bảo hiểm y tế do Nhà nước tổ chức, khác bảo hiểm sức khỏe thương mại của doanh nghiệp bảo hiểm.",
+    "Sai: bảo hiểm y tế hướng tới toàn dân (khoản 2 Điều 2), không riêng người có hợp đồng lao động."
+   ]
   },
   {
    "type": "mcq",
@@ -105,7 +111,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 3 Luật Bảo hiểm y tế (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 3 Luật Bảo hiểm y tế — quỹ bảo hiểm y tế và người tham gia cùng chi trả.",
+    "Sai: cơ sở khám bệnh được quỹ thanh toán, không tự chịu chi phí.",
+    "Sai: người sử dụng lao động chỉ đóng một phần phí, không chi trả chi phí khám chữa bệnh.",
+    "Sai: ngân sách chỉ đóng hoặc hỗ trợ đóng cho một số nhóm, không bảo đảm toàn bộ chi phí khám."
+   ]
   },
   {
    "type": "pair",

@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 3 Luật Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng 2020 (69/2020/QH14)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 3 Luật 69/2020/QH14 — công dân Việt Nam từ đủ 18 tuổi trở lên.",
+    "Sai: 15 tuổi là mốc tuổi lao động trong nước, không phải mốc đi làm việc ở nước ngoài.",
+    "Sai: 16 tuổi không phải mốc của khoản 1 Điều 3.",
+    "Sai: 21 tuổi cao hơn mốc luật định."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 3 Luật Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng 2020 (69/2020/QH14)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 3 Luật 69/2020/QH14 — trực tiếp thuê mướn, sử dụng người lao động Việt Nam làm việc cho mình ở nước ngoài.",
+    "Sai: doanh nghiệp dịch vụ chỉ đưa người lao động đi, không trực tiếp sử dụng họ ở nước ngoài.",
+    "Sai: cơ quan đại diện Việt Nam bảo hộ công dân, không sử dụng lao động.",
+    "Sai: cơ quan quản lý nhà nước không phải người sử dụng lao động."
+   ]
   },
   {
    "type": "pair",

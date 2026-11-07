@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 5 Luật Bảo hiểm xã hội 2024 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 5 Luật Bảo hiểm xã hội 2024 — mức hưởng tính trên mức đóng và thời gian đóng.",
+    "Sai: nhu cầu, hoàn cảnh là căn cứ của trợ giúp xã hội, không phải bảo hiểm xã hội.",
+    "Sai: tài sản, thu nhập khác không phải căn cứ tính mức hưởng.",
+    "Sai: người sử dụng lao động không quyết định mức hưởng bảo hiểm xã hội."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 5 Luật Bảo hiểm xã hội 2024 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 5 — mức đóng tự nguyện tính trên thu nhập làm căn cứ đóng do người tham gia lựa chọn.",
+    "Sai: lương tối thiểu vùng không phải căn cứ tính mức đóng tự nguyện.",
+    "Sai: tiền lương trong hợp đồng lao động là căn cứ của bảo hiểm xã hội bắt buộc.",
+    "Sai: người tham gia tự chọn, cơ quan bảo hiểm xã hội không ấn định."
+   ]
   },
   {
    "type": "pair",

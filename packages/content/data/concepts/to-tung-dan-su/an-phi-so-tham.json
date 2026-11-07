@@ -84,7 +84,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 147 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 147 — chịu án phí sơ thẩm nếu yêu cầu của họ không được chấp nhận, trừ trường hợp được miễn, không phải chịu.",
+    "Sai: yêu cầu được chấp nhận thì đương sự đó không phải chịu án phí (khoản 1 Điều 147).",
+    "Sai: án phí theo việc yêu cầu có được chấp nhận hay không, không theo vị trí bị đơn; yêu cầu của nguyên đơn bị bác thì nguyên đơn chịu.",
+    "Sai: hoãn phiên tòa không phải căn cứ xác định nghĩa vụ chịu án phí sơ thẩm."
+   ]
   },
   {
    "type": "mcq",
@@ -101,7 +107,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 147 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 147 — thỏa thuận được trước khi mở phiên tòa thì chỉ chịu 50% mức án phí sơ thẩm.",
+    "Sai: hòa giải thành vẫn phải chịu án phí, chỉ được giảm một nửa.",
+    "Sai: luật giảm còn 50% để khuyến khích hòa giải.",
+    "Sai: không có trường hợp chịu gấp đôi án phí."
+   ]
   },
   {
    "type": "pair",

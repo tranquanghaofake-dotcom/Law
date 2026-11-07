@@ -86,7 +86,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 5 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 5 — Tòa án chỉ thụ lý khi có đơn khởi kiện, đơn yêu cầu của đương sự.",
+    "Sai: Tòa án không tự khởi động vụ việc dân sự khi phát hiện vi phạm.",
+    "Sai: tin báo chí không làm phát sinh vụ việc dân sự.",
+    "Sai: Tòa án không tự thụ lý khi \"thấy cần thiết\"."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 5 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 5 — Tòa án chỉ giải quyết trong phạm vi đơn khởi kiện, đơn yêu cầu.",
+    "Sai: có lợi cho nguyên đơn không cho phép vượt phạm vi yêu cầu.",
+    "Sai: vi phạm mới phát hiện không được tự giải quyết nếu không có yêu cầu.",
+    "Sai: Chánh án không có quyền cho phép vượt phạm vi yêu cầu."
+   ]
   },
   {
    "type": "pair",

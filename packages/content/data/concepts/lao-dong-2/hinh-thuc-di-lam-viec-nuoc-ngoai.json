@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 5 Luật Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng 2020 (69/2020/QH14)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 5 Luật 69/2020/QH14 — người lao động trực tiếp giao kết với người sử dụng lao động ở nước ngoài.",
+    "Sai: ký với doanh nghiệp dịch vụ là hình thức ở điểm a khoản 2 Điều 5, đi thông qua trung gian.",
+    "Sai: ký với đơn vị sự nghiệp để thực hiện thỏa thuận quốc tế là hình thức ở khoản 1 Điều 5.",
+    "Sai: doanh nghiệp trúng thầu công trình, dự án ở nước ngoài là hình thức ở điểm b khoản 2 Điều 5."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 5 Luật Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng 2020 (69/2020/QH14)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 5 Luật 69/2020/QH14 — ký với đơn vị sự nghiệp để thực hiện thỏa thuận quốc tế.",
+    "Sai: kinh doanh dịch vụ là việc của doanh nghiệp dịch vụ (điểm a khoản 2 Điều 5), không phải đơn vị sự nghiệp.",
+    "Sai: đi theo dự án đầu tư ra nước ngoài là hình thức khác (điểm d khoản 2 Điều 5).",
+    "Sai: du học tự túc không thuộc phạm vi đi làm việc ở nước ngoài theo hợp đồng."
+   ]
   },
   {
    "type": "pair",

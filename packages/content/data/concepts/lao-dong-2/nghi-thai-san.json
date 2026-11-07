@@ -84,7 +84,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 139 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 139 (sửa bởi Luật Dân số 113/2025/QH15) — sinh con thứ hai được nghỉ 07 tháng.",
+    "Sai: 06 tháng là mức chung khi sinh con, không phải mức cho con thứ hai.",
+    "Sai: 08 tháng vượt mức luật định cho con thứ hai.",
+    "Sai: 04 tháng thấp hơn mức luật định cho con thứ hai."
+   ]
   },
   {
    "type": "mcq",
@@ -101,7 +107,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 139 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 139 — thời gian nghỉ trước khi sinh tối đa không quá 02 tháng.",
+    "Sai: 01 tháng thấp hơn mức tối đa luật cho phép.",
+    "Sai: 03 tháng vượt mức tối đa.",
+    "Sai: 04 tháng vượt mức tối đa."
+   ]
   },
   {
    "type": "pair",

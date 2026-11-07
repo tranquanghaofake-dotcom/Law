@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 161 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 161 loại trừ công việc liên quan đến hoạt động thương mại, như bán hàng ở cửa hàng.",
+    "Sai: chăm sóc trẻ em, người già là công việc trong gia đình theo khoản 1 Điều 161.",
+    "Sai: lái xe được khoản 1 Điều 161 liệt kê là công việc trong gia đình.",
+    "Sai: làm vườn được khoản 1 Điều 161 liệt kê là công việc trong gia đình."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 162 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 162 — một bên có quyền đơn phương chấm dứt bất kỳ khi nào nhưng phải báo trước 15 ngày.",
+    "Sai: không cần lý do chính đáng; 45 ngày là mốc báo trước của hợp đồng không xác định thời hạn nói chung, không áp dụng ở đây.",
+    "Sai: chấm dứt hợp đồng lao động không cần Tòa án cho phép.",
+    "Sai: báo trước đúng hạn thì không phải bồi thường."
+   ]
   },
   {
    "type": "pair",

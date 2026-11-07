@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 53 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 53 — thời hạn cho thuê lại đối với người lao động tối đa 12 tháng.",
+    "Sai: 06 tháng không phải mốc luật định.",
+    "Sai: 24 tháng vượt mức tối đa 12 tháng.",
+    "Sai: 36 tháng vượt mức tối đa 12 tháng."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 52 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 52 — người lao động giao kết hợp đồng lao động với doanh nghiệp cho thuê lại.",
+    "Sai: bên thuê lại chỉ sử dụng và điều hành, không giao kết hợp đồng lao động với người lao động.",
+    "Sai: quan hệ lao động chỉ tồn tại với doanh nghiệp cho thuê lại, không chia đều cho hai bên.",
+    "Sai: cơ quan quản lý lao động không phải bên của quan hệ lao động."
+   ]
   },
   {
    "type": "pair",

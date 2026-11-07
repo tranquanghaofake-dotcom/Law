@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
-   }
+   },
+   "why": [
+    "Đúng: theo giáo trình, bảo hiểm xã hội vận hành theo nguyên tắc có đóng – có hưởng (Điều 5 Luật Bảo hiểm xã hội 2024 cũng tính mức hưởng theo mức đóng, thời gian đóng).",
+    "Sai: trợ giúp xã hội do ngân sách và cộng đồng bảo đảm, người hưởng không phải đóng góp trước.",
+    "Sai: ưu đãi xã hội là sự đền đáp công lao với người có công, không dựa trên đóng góp tài chính.",
+    "Sai: từ thiện là hoạt động tự nguyện của xã hội, không có cơ chế đóng – hưởng."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
-   }
+   },
+   "why": [
+    "Đúng: Điều 34 Hiến pháp 2013 — \"Công dân có quyền được bảo đảm an sinh xã hội.\"",
+    "Sai: Điều 14 là nguyên tắc chung về công nhận, tôn trọng, bảo vệ và hạn chế quyền con người.",
+    "Sai: Điều 57 nói về khuyến khích tạo việc làm và quan hệ lao động.",
+    "Sai: Điều 60 nói về xây dựng và phát triển nền văn hóa Việt Nam."
+   ]
   },
   {
    "type": "pair",

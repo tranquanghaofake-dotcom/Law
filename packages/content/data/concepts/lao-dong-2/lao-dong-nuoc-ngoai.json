@@ -84,7 +84,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 151 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm d khoản 1 Điều 151 — có giấy phép lao động, trừ trường hợp miễn ở Điều 154.",
+    "Sai: người lao động nước ngoài là người có quốc tịch nước ngoài, không phải quốc tịch Việt Nam.",
+    "Sai: điều kiện tuổi là đủ 18 tuổi trở lên (điểm a khoản 1 Điều 151), không phải 15 tuổi.",
+    "Sai: Điều 151 không đặt điều kiện về tài sản hay nhà ở."
+   ]
   },
   {
    "type": "mcq",
@@ -101,7 +107,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 151 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 151 — thời hạn hợp đồng không được vượt quá thời hạn giấy phép lao động.",
+    "Sai: luật không đặt thời hạn tối thiểu 05 năm; giấy phép lao động tối đa chỉ 02 năm.",
+    "Sai: hợp đồng bị giới hạn theo thời hạn giấy phép nên không thể luôn là không xác định thời hạn.",
+    "Sai: thỏa thuận bị giới hạn bởi thời hạn giấy phép lao động."
+   ]
   },
   {
    "type": "pair",

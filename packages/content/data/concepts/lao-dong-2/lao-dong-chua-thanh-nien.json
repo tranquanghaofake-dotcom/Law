@@ -90,7 +90,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 143 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 143 — lao động chưa thành niên là người lao động chưa đủ 18 tuổi.",
+    "Sai: 16 tuổi không phải mốc của khoản 1 Điều 143.",
+    "Sai: 15 tuổi là mốc để phân nhóm công việc được làm, không phải mốc \"chưa thành niên\".",
+    "Sai: 21 tuổi không phải mốc luật lao động."
+   ]
   },
   {
    "type": "mcq",
@@ -107,7 +113,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 143 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 143 — chỉ được làm công việc nhẹ theo danh mục do Bộ trưởng ban hành.",
+    "Sai: không do hai bên tự thỏa thuận; phải thuộc danh mục công việc nhẹ.",
+    "Sai: người từ đủ 13 đến chưa đủ 15 tuổi vẫn được làm công việc nhẹ.",
+    "Sai: nghệ thuật, biểu diễn không phải giới hạn duy nhất; giới hạn là danh mục công việc nhẹ."
+   ]
   },
   {
    "type": "pair",

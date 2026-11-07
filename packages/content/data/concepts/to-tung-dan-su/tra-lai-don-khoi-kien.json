@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 192 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 1 Điều 192 — chưa có đủ điều kiện khởi kiện là một căn cứ trả lại đơn.",
+    "Sai: bị đơn vắng mặt khi hòa giải không phải căn cứ trả lại đơn; lúc đó vụ án đã được thụ lý.",
+    "Sai: vụ án phức tạp không phải căn cứ trả lại đơn.",
+    "Sai: không có luật sư không phải căn cứ trả lại đơn."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 192 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 1 Điều 192 — pháp luật có quy định điều kiện khởi kiện mà người khởi kiện khởi kiện khi còn thiếu một trong các điều kiện đó.",
+    "Sai: thiếu chứng cứ không phải \"chưa đủ điều kiện khởi kiện\"; Tòa án yêu cầu bổ sung trong quá trình giải quyết.",
+    "Sai: hết thời hiệu là căn cứ đình chỉ giải quyết khi có yêu cầu áp dụng thời hiệu, không phải \"chưa đủ điều kiện khởi kiện\".",
+    "Sai: không đủ năng lực hành vi tố tụng là căn cứ riêng ở điểm a khoản 1 Điều 192."
+   ]
   },
   {
    "type": "pair",

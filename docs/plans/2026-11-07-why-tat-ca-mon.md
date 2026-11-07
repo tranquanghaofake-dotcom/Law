@@ -11,7 +11,7 @@
 | Đợt | Môn | Số câu | Trạng thái |
 |---|---|---|---|
 | 1 | Hôn nhân và gia đình, Cạnh tranh | 50 + 32 | xong |
-| 2 | Lao động 2, An sinh xã hội, Tố tụng dân sự | 24 + 24 + 32 | |
+| 2 | Lao động 2, An sinh xã hội, Tố tụng dân sự | 24 + 24 + 32 | xong |
 | 3 | Tài chính, Tài chính doanh nghiệp, Đầu tư | 36 + 36 + 38 | |
 | 4 | Đất đai, Sở hữu trí tuệ, Quản trị tài sản trí tuệ | 38 + 46 + 40 | |
 | 5 | Xây dựng VBPL, Ngân hàng, Thương mại 2 | 40 + 42 + 44 | |

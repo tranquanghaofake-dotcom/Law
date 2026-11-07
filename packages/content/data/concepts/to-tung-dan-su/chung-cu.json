@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 93 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 93 không đòi chứng cứ phải được Viện kiểm sát phê duyệt.",
+    "Sai: \"những gì có thật\" là dấu hiệu đầu tiên của chứng cứ ở Điều 93.",
+    "Sai: chứng cứ có thể do đương sự giao nộp, xuất trình (Điều 93).",
+    "Sai: chứng cứ dùng để xác định tình tiết khách quan của vụ án (Điều 93)."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 94 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 94 — dữ liệu điện tử là tài liệu đọc được, thuộc nguồn chứng cứ.",
+    "Sai: nguồn chứng cứ không chỉ là văn bản giấy; dữ liệu điện tử được nêu rõ ở khoản 1 Điều 94.",
+    "Sai: luật không đòi dữ liệu điện tử phải công chứng mới là nguồn chứng cứ.",
+    "Sai: dữ liệu điện tử là nguồn chứng cứ trong mọi vụ việc dân sự, không riêng thương mại."
+   ]
   },
   {
    "type": "pair",
