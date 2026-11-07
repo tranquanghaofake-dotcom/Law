@@ -14,7 +14,7 @@ const EXPECTED: Record<string, Field> = {
   'lao-dong': 'lao-dong', 'lao-dong-2': 'lao-dong', 'an-sinh-xa-hoi': 'lao-dong', 'dat-dai': 'dat-dai',
   'thuong-mai-1': TM, 'thuong-mai': TM, 'canh-tranh': TM, 'dau-tu': TM,
   'ngan-hang': TC, 'tai-chinh': TC, 'tai-chinh-doanh-nghiep': TC, 'chung-khoan': TC,
-  'so-huu-tri-tue': 'dan-su', 'tai-san-tri-tue': 'dan-su', 'xay-dung-vbpl': 'lap-phap', 'ly-luan-nn-pl': 'ly-luan',
+  'so-huu-tri-tue': 'dan-su', 'tai-san-tri-tue': 'dan-su', 'hon-nhan-gia-dinh': 'dan-su', 'xay-dung-vbpl': 'lap-phap', 'ly-luan-nn-pl': 'ly-luan',
   'lich-su-nn-pl': 'lich-su', 'hien-phap': 'hien-phap',
 };
 const dir = resolve(process.cwd(), '../../packages/content/data/subjects');
@@ -22,7 +22,7 @@ const ids = readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => f.rep
 
 describe('lĩnh vực theo môn', () => {
   it('mọi môn trong dữ liệu có lĩnh vực đúng bảng (kể cả môn thêm mới phải khai báo)', () => {
-    expect(ids.length).toBe(23);
+    expect(ids.length).toBe(24);
     for (const id of ids) expect(EXPECTED[id], `thiếu bảng cho ${id}`).toBeDefined();
     for (const id of ids) expect(fieldOf(id, 'c1-bat-ky'), id).toBe(EXPECTED[id]);
   });

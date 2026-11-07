@@ -21,11 +21,11 @@ export const VIGNETTE_CORE: readonly VignetteName[] = ['quan-he', 'vi-pham', 'da
 export const VIGNETTE_MORE: readonly VignetteName[] = ['nha-nuoc', 'thu-tuc', 'thua-ke', 'boi-thuong', 'toi-pham', 'lao-dong-dac-thu', 'thua-dat', 'du-an', 'ngan-sach-thue', 'von-dn', 'canh-tranh', 'ban-quyen', 'nhan-hieu', 'bao-hiem', 'doanh-nghiep', 'mua-ban', 'khoi-kien', 'van-ban'];
 export const VIGNETTE_NAMES: readonly VignetteName[] = [...VIGNETTE_CORE, ...VIGNETTE_MORE];
 
-/** Cảnh đầu trang của từng môn (23 môn); mỗi cảnh ≤ 2 môn. */
+/** Cảnh đầu trang của từng môn (24 môn); mỗi cảnh ≤ 2 môn. */
 export const SUBJECT_ART: Record<string, ArtName> = {
   'hien-phap': 'quoc-hoi', 'lich-su-nn-pl': 'bia-tien-si', 'chung-khoan': 'san-giao-dich',
   'ly-luan-nn-pl': 'tam-quan', 'hanh-chinh': 'ngo-mon', 'to-tung-dan-su': 'toa-an',
-  'dan-su': 'nha-lang', 'dan-su-2': 'hop-dong', 'thuong-mai': 'cang-bien', 'thuong-mai-1': 'pho-hang', 'canh-tranh': 'pho-hang',
+  'dan-su': 'nha-lang', 'hon-nhan-gia-dinh': 'nha-lang', 'dan-su-2': 'hop-dong', 'thuong-mai': 'cang-bien', 'thuong-mai-1': 'pho-hang', 'canh-tranh': 'pho-hang',
   'lao-dong': 'nha-may', 'dau-tu': 'nha-may', 'lao-dong-2': 'san-bay', 'dat-dai': 'ruong-lua',
   'ngan-hang': 'toa-ngan-hang', 'tai-chinh-doanh-nghiep': 'toa-ngan-hang', 'tai-chinh': 'ngan-sach',
   'so-huu-tri-tue': 'tri-tue', 'tai-san-tri-tue': 'tri-tue', 'hinh-su': 'phap-dinh', 'an-sinh-xa-hoi': 'che-cho', 'xay-dung-vbpl': 'cuon-van-ban',
@@ -106,6 +106,9 @@ const CHAPTER_EMBLEM: Record<string, Record<string, EmblemName>> = {
   'chung-khoan': {
     'c1-khai-niem': 'nen', 'c2-chao-ban': 'co-phieu', 'c3-thi-truong-giao-dich': 'bang-dien', 'c4-dang-ky-luu-ky': 'luu-ky', 'c5-cong-ty-chung-khoan': 'van-phong',
     'c6-quy-dau-tu': 'quy', 'c7-quan-ly-quy-giam-sat': 'kinh-lup', 'c8-kinh-doanh-chung-khoan': 'bat-tay', 'c9-quan-ly-nha-nuoc': 'tru-so', 'c10-xu-ly-vi-pham': 'can-can',
+  },
+  'hon-nhan-gia-dinh': {
+    'c1-khai-quat': 'gia-pha', 'c2-ket-hon': 'trai-tim', 'c3-tai-san-vo-chong': 'dong-xu', 'c4-ly-hon': 'can-can', 'c5-cha-me-con': 'tre-em', 'c6-cap-duong': 'tui-do',
   },
   'lich-su-nn-pl': { 'c5-co-dai': 'trong-dong', 'c6-trung-dai': 'bia-rua', 'c7-can-dai': 'bo-luat-cu', 'c8-hien-dai': 'sac-lenh' },
   'an-sinh-xa-hoi': V(['bao-hiem', 'quy', 'tui-do', 'y-te', 'huan-chuong', 'trai-tim']),

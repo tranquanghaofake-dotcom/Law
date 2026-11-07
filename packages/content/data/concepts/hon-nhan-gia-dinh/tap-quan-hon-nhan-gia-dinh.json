@@ -1,0 +1,135 @@
+{
+ "id": "tap-quan-hon-nhan-gia-dinh",
+ "subject": "hon-nhan-gia-dinh",
+ "chapter": "c1-khai-quat",
+ "term": "Tập quán về hôn nhân và gia đình",
+ "definition": "Tập quán về hôn nhân và gia đình là quy tắc xử sự có nội dung rõ ràng về quyền, nghĩa vụ của các bên trong quan hệ hôn nhân và gia đình, được lặp đi, lặp lại trong một thời gian dài và được thừa nhận rộng rãi trong một vùng, miền hoặc cộng đồng.",
+ "plain": "Ba dấu hiệu: (1) nội dung RÕ RÀNG về quyền, nghĩa vụ; (2) LẶP ĐI LẶP LẠI trong thời gian dài; (3) được THỪA NHẬN RỘNG RÃI trong một vùng, miền, cộng đồng. Theo Điều 7, tập quán chỉ được áp dụng khi pháp luật không quy định và các bên không thỏa thuận, và không được vi phạm nguyên tắc ở Điều 2 hoặc điều cấm của Luật.",
+ "example": "Ở một số địa phương, vợ chồng trẻ ở nhà chồng một thời gian sau cưới là thói quen lặp lại lâu đời; nếu không trái luật thì đó là tập quán.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 4 Điều 3 Luật Hôn nhân và gia đình 2014",
+  "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "hon-nhan",
+  "gia-dinh"
+ ],
+ "keywords": [
+  "nội dung rõ ràng",
+  "lặp đi, lặp lại",
+  "thời gian dài",
+  "thừa nhận rộng rãi"
+ ],
+ "memo": {
+  "gist": "Tập quán là cách cư xử về hôn nhân, gia đình được làm theo lâu đời và cả cộng đồng công nhận.",
+  "kind": "checklist",
+  "hook": "Rõ – Lâu – Rộng: rõ nội dung, lặp lại lâu, nhiều người công nhận.",
+  "tree": [
+   {
+    "label": "Rõ ràng",
+    "icon": "check",
+    "children": [
+     "Rõ quyền, nghĩa vụ các bên"
+    ]
+   },
+   {
+    "label": "Lâu dài",
+    "icon": "clock",
+    "children": [
+     "Lặp đi lặp lại nhiều năm"
+    ]
+   },
+   {
+    "label": "Rộng rãi",
+    "icon": "village",
+    "children": [
+     "Vùng, miền, cộng đồng thừa nhận"
+    ]
+   },
+   {
+    "label": "Khi áp dụng",
+    "icon": "warn",
+    "children": [
+     "Luật không quy định",
+     "Các bên không thỏa thuận",
+     "Không trái nguyên tắc, điều cấm"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Tục bắt vợ buộc cô gái phải lấy người đàn ông bắt mình có được áp dụng không?",
+   "a": "Không. Tục đó trái nguyên tắc hôn nhân tự nguyện và là hành vi cưỡng ép kết hôn bị cấm."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Dấu hiệu nào KHÔNG có trong định nghĩa tập quán về hôn nhân và gia đình?",
+   "options": [
+    "Có nội dung rõ ràng về quyền, nghĩa vụ của các bên",
+    "Được lặp đi, lặp lại trong một thời gian dài",
+    "Được thừa nhận rộng rãi trong một vùng, miền",
+    "Được Ủy ban nhân dân cấp tỉnh công nhận bằng văn bản"
+   ],
+   "answer": 3,
+   "explain": "Khoản 4 Điều 3 không đòi hỏi cơ quan nhà nước công nhận tập quán.",
+   "why": [
+    "Sai: \"nội dung rõ ràng\" là dấu hiệu thứ nhất của tập quán.",
+    "Sai: \"lặp đi, lặp lại trong một thời gian dài\" là dấu hiệu thứ hai.",
+    "Sai: \"thừa nhận rộng rãi trong một vùng, miền hoặc cộng đồng\" là dấu hiệu thứ ba.",
+    "Đúng: tập quán được cộng đồng thừa nhận, không cần cơ quan nhà nước công nhận."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tập quán về hôn nhân và gia đình là quy tắc xử sự có nội dung {{rõ ràng}} về quyền, nghĩa vụ của các bên trong quan hệ hôn nhân và gia đình, được lặp đi, lặp lại trong một thời gian dài và được {{thừa nhận rộng rãi}} trong một vùng, miền hoặc cộng đồng."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tập quán về hôn nhân và gia đình là quy tắc xử sự có nội dung rõ ràng về quyền, nghĩa vụ của các bên trong quan hệ hôn nhân và gia đình, được {{lặp đi, lặp lại}} trong một {{thời gian dài}} và được thừa nhận rộng rãi trong một vùng, miền hoặc cộng đồng."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Hai bên tranh chấp một vấn đề mà Luật Hôn nhân và gia đình không quy định, cũng không thỏa thuận được. Ở địa phương có một tập quán rõ ràng, lâu đời, không trái nguyên tắc của Luật. Tòa án xử lý thế nào?",
+   "options": [
+    "Có thể áp dụng tập quán đó để giải quyết",
+    "Phải bác yêu cầu vì luật không có quy định",
+    "Chỉ áp dụng khi được Hội đồng nhân dân xã cho phép",
+    "Buộc hai bên tự hòa giải ở cơ sở rồi mới thụ lý"
+   ],
+   "answer": 0,
+   "explain": "Điều 7: pháp luật không quy định và các bên không thỏa thuận thì áp dụng tập quán tốt đẹp, không vi phạm nguyên tắc ở Điều 2 và điều cấm của Luật.",
+   "why": [
+    "Đúng: đủ điều kiện của Điều 7 thì tập quán được áp dụng.",
+    "Sai: thiếu quy định thì Tòa án vẫn phải giải quyết, theo thứ tự tập quán rồi tương tự pháp luật.",
+    "Sai: không có thủ tục xin Hội đồng nhân dân cho phép áp dụng tập quán.",
+    "Sai: hòa giải ở cơ sở được khuyến khích, không phải điều kiện bắt buộc để Tòa án thụ lý."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tập quán về hôn nhân và gia đình được áp dụng ngay cả khi pháp luật đã có quy định khác.",
+   "answer": false,
+   "explain": "Sai. Theo khoản 1 Điều 7, tập quán chỉ áp dụng khi pháp luật không quy định và các bên không có thỏa thuận."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu ba dấu hiệu của tập quán về hôn nhân và gia đình.",
+   "model": "Quy tắc xử sự có nội dung rõ ràng về quyền, nghĩa vụ; được lặp đi, lặp lại trong thời gian dài; được thừa nhận rộng rãi trong một vùng, miền hoặc cộng đồng.",
+   "keywords": [
+    "rõ ràng",
+    "lặp đi, lặp lại",
+    "thời gian dài",
+    "thừa nhận rộng rãi"
+   ]
+  }
+ ]
+}

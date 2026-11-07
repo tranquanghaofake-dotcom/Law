@@ -1,0 +1,137 @@
+{
+ "id": "thuan-tinh-ly-hon",
+ "subject": "hon-nhan-gia-dinh",
+ "chapter": "c4-ly-hon",
+ "term": "Thuận tình ly hôn",
+ "definition": "Trong trường hợp vợ chồng cùng yêu cầu ly hôn, nếu xét thấy hai bên thật sự tự nguyện ly hôn và đã thỏa thuận về việc chia tài sản, việc trông nom, nuôi dưỡng, chăm sóc, giáo dục con trên cơ sở bảo đảm quyền lợi chính đáng của vợ và con thì Tòa án công nhận thuận tình ly hôn; nếu không thỏa thuận được hoặc có thỏa thuận nhưng không bảo đảm quyền lợi chính đáng của vợ và con thì Tòa án giải quyết việc ly hôn.",
+ "plain": "Ba điều kiện để Tòa án CÔNG NHẬN: (1) CÙNG yêu cầu, THẬT SỰ TỰ NGUYỆN; (2) đã THỎA THUẬN về chia tài sản và về con; (3) thỏa thuận BẢO ĐẢM quyền lợi chính đáng của vợ và con. Thiếu (2) hoặc (3) thì Tòa án vẫn giải quyết ly hôn nhưng theo thủ tục vụ án (tự quyết phần chưa thỏa thuận được). Kết quả là QUYẾT ĐỊNH công nhận thuận tình ly hôn.",
+ "example": "Hai vợ chồng cùng ký đơn, thỏa thuận con 5 tuổi ở với mẹ, chồng cấp dưỡng 3 triệu đồng mỗi tháng, chia đôi tài sản: Tòa án ra quyết định công nhận.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 55 Luật Hôn nhân và gia đình 2014",
+  "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "ly-hon",
+  "ly-hon-theo-yeu-cau-mot-ben",
+  "nuoi-con-sau-ly-hon"
+ ],
+ "keywords": [
+  "cùng yêu cầu",
+  "thật sự tự nguyện",
+  "đã thỏa thuận",
+  "quyền lợi chính đáng của vợ và con"
+ ],
+ "memo": {
+  "gist": "Thuận tình ly hôn là hai vợ chồng cùng muốn ly hôn, tự thỏa thuận xong tài sản, con cái một cách công bằng.",
+  "kind": "checklist",
+  "hook": "Cùng muốn – Cùng chia – Công bằng cho vợ con: đủ ba thì Tòa án gật đầu.",
+  "tree": [
+   {
+    "label": "Cùng yêu cầu",
+    "icon": "handshake",
+    "children": [
+     "Thật sự tự nguyện"
+    ]
+   },
+   {
+    "label": "Đã thỏa thuận",
+    "icon": "list",
+    "children": [
+     "Chia tài sản",
+     "Nuôi dạy con"
+    ]
+   },
+   {
+    "label": "Bảo đảm quyền lợi",
+    "icon": "shield",
+    "children": [
+     "Của vợ và con"
+    ]
+   },
+   {
+    "label": "Thiếu điều kiện",
+    "icon": "scales",
+    "children": [
+     "Tòa án giải quyết như vụ án"
+    ]
+   }
+  ],
+  "contrast": [
+   {
+    "with": "ly-hon-theo-yeu-cau-mot-ben",
+    "text": "Thuận tình là cả hai cùng xin và tự thỏa thuận; theo yêu cầu một bên thì Tòa án phải có căn cứ về bạo lực hoặc vi phạm nghiêm trọng."
+   }
+  ]
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều kiện nào KHÔNG phải điều kiện để Tòa án công nhận thuận tình ly hôn?",
+   "options": [
+    "Vợ chồng đã ly thân tối thiểu sáu tháng",
+    "Hai bên thật sự tự nguyện ly hôn",
+    "Đã thỏa thuận về chia tài sản và về con",
+    "Bảo đảm quyền lợi chính đáng của vợ và con"
+   ],
+   "answer": 0,
+   "explain": "Điều 55 không đòi thời gian ly thân.",
+   "why": [
+    "Đúng: luật không yêu cầu ly thân trước.",
+    "Sai: tự nguyện thật sự là điều kiện thứ nhất.",
+    "Sai: thỏa thuận về tài sản và con là điều kiện thứ hai.",
+    "Sai: bảo đảm quyền lợi chính đáng của vợ và con là điều kiện thứ ba."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trong trường hợp vợ chồng cùng yêu cầu ly hôn, nếu xét thấy hai bên thật sự {{tự nguyện}} ly hôn và đã {{thỏa thuận}} về việc chia tài sản, việc trông nom, nuôi dưỡng, chăm sóc, giáo dục con trên cơ sở bảo đảm quyền lợi chính đáng của vợ và con thì Tòa án công nhận thuận tình ly hôn;"
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "nếu không thỏa thuận được hoặc có thỏa thuận nhưng không bảo đảm quyền lợi chính đáng của {{vợ và con}} thì Tòa án giải quyết việc ly hôn."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Hai vợ chồng cùng xin ly hôn, thỏa thuận được về con nhưng tranh chấp căn nhà chung. Tòa án xử lý thế nào?",
+   "options": [
+    "Giải quyết việc ly hôn, tự quyết phần tài sản chưa thỏa thuận được",
+    "Công nhận thuận tình ly hôn và bỏ qua phần tài sản tranh chấp",
+    "Bác yêu cầu ly hôn vì hai bên chưa thỏa thuận đủ",
+    "Buộc hai bên thỏa thuận xong tài sản rồi mới nộp đơn lại"
+   ],
+   "answer": 0,
+   "explain": "Điều 55: không thỏa thuận được thì Tòa án giải quyết việc ly hôn.",
+   "why": [
+    "Đúng: vế sau Điều 55 — Tòa án giải quyết việc ly hôn.",
+    "Sai: chưa thỏa thuận về tài sản thì không đủ điều kiện công nhận thuận tình.",
+    "Sai: Tòa án không bác mà chuyển sang giải quyết việc ly hôn.",
+    "Sai: luật không bắt nộp đơn lại."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khi vợ chồng cùng yêu cầu ly hôn, Tòa án luôn công nhận thuận tình ly hôn.",
+   "answer": false,
+   "explain": "Sai. Chỉ công nhận khi hai bên thật sự tự nguyện và đã thỏa thuận bảo đảm quyền lợi của vợ và con; nếu không, Tòa án giải quyết việc ly hôn (Điều 55)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu ba điều kiện công nhận thuận tình ly hôn.",
+   "model": "Vợ chồng cùng yêu cầu và thật sự tự nguyện; đã thỏa thuận về chia tài sản, nuôi dạy con; thỏa thuận bảo đảm quyền lợi chính đáng của vợ và con.",
+   "keywords": [
+    "cùng yêu cầu",
+    "tự nguyện",
+    "thỏa thuận",
+    "quyền lợi chính đáng"
+   ]
+  }
+ ]
+}

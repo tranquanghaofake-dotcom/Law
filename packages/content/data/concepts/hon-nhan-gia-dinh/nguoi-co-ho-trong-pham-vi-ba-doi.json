@@ -1,0 +1,129 @@
+{
+ "id": "nguoi-co-ho-trong-pham-vi-ba-doi",
+ "subject": "hon-nhan-gia-dinh",
+ "chapter": "c2-ket-hon",
+ "term": "Những người có họ trong phạm vi ba đời",
+ "definition": "Những người có họ trong phạm vi ba đời là những người cùng một gốc sinh ra gồm cha mẹ là đời thứ nhất; anh, chị, em cùng cha mẹ, cùng cha khác mẹ, cùng mẹ khác cha là đời thứ hai; anh, chị, em con chú, con bác, con cô, con cậu, con dì là đời thứ ba.",
+ "plain": "Đếm từ GỐC là cha mẹ (đời 1): anh chị em ruột, cùng cha khác mẹ, cùng mẹ khác cha là đời 2; anh chị em họ con chú, bác, cô, cậu, dì là đời 3. Những người này bị CẤM kết hôn với nhau (điểm d khoản 2 Điều 5). Khác với cùng dòng máu về TRỰC HỆ (khoản 17 Điều 3): người này sinh ra người kia kế tiếp nhau (ông – cha – con – cháu), cấm ở mọi đời.",
+ "example": "Minh là con của chú ruột Lan: hai người là anh em họ đời thứ ba, không được kết hôn với nhau.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 18 Điều 3 Luật Hôn nhân và gia đình 2014",
+  "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "dieu-kien-ket-hon",
+  "gia-dinh"
+ ],
+ "keywords": [
+  "cùng một gốc",
+  "đời thứ nhất",
+  "đời thứ hai",
+  "đời thứ ba"
+ ],
+ "memo": {
+  "gist": "Ba đời là cha mẹ, rồi anh chị em, rồi anh chị em họ con chú bác cô cậu dì; họ không được lấy nhau.",
+  "kind": "ladder",
+  "hook": "Đếm từ gốc: gốc là một, ngọn ruột là hai, ngọn họ là ba.",
+  "tree": [
+   {
+    "label": "Đời thứ nhất",
+    "icon": "n1",
+    "children": [
+     "Cha mẹ (gốc)"
+    ]
+   },
+   {
+    "label": "Đời thứ hai",
+    "icon": "n2",
+    "children": [
+     "Anh chị em ruột",
+     "Cùng cha khác mẹ, cùng mẹ khác cha"
+    ]
+   },
+   {
+    "label": "Đời thứ ba",
+    "icon": "n3",
+    "children": [
+     "Con chú, con bác, con cô",
+     "Con cậu, con dì"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Con riêng của vợ có được kết hôn với con chung của hai vợ chồng không?",
+   "a": "Không. Hai người cùng mẹ khác cha, là anh chị em đời thứ hai cùng một gốc."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 18 Điều 3, anh, chị, em con chú, con bác, con cô, con cậu, con dì là đời thứ mấy?",
+   "options": [
+    "Đời thứ ba",
+    "Đời thứ hai",
+    "Đời thứ nhất",
+    "Đời thứ tư"
+   ],
+   "answer": 0,
+   "explain": "Khoản 18 Điều 3: anh, chị, em con chú, con bác, con cô, con cậu, con dì là đời thứ ba.",
+   "why": [
+    "Đúng: anh chị em họ là đời thứ ba.",
+    "Sai: đời thứ hai là anh chị em cùng cha mẹ, cùng cha khác mẹ, cùng mẹ khác cha.",
+    "Sai: đời thứ nhất là cha mẹ, tức là gốc.",
+    "Sai: khoản 18 chỉ tính đến đời thứ ba; con của anh chị em họ không thuộc phạm vi này."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Những người có họ trong phạm vi ba đời là những người cùng một gốc sinh ra gồm {{cha mẹ}} là đời thứ nhất; anh, chị, em cùng cha mẹ, cùng cha khác mẹ, cùng mẹ khác cha là đời thứ {{hai}};"
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "anh, chị, em con chú, con bác, con cô, con cậu, con dì là đời thứ {{ba}}."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Ông A có con riêng là Tú; bà B có con riêng là Vy. Ông A cưới bà B. Tú và Vy (đều đủ tuổi) muốn kết hôn với nhau. Họ có bị cấm không?",
+   "options": [
+    "Không bị cấm, vì Tú và Vy không cùng một gốc sinh ra",
+    "Bị cấm, vì hai người là anh chị em đời thứ hai",
+    "Bị cấm, vì hai người là con riêng trong cùng một gia đình",
+    "Chỉ được kết hôn sau khi ông A và bà B đã ly hôn"
+   ],
+   "answer": 0,
+   "explain": "Tú và Vy không cùng cha, không cùng mẹ nên không phải người có họ trong ba đời (khoản 18 Điều 3); điểm d khoản 2 Điều 5 không cấm hai người con riêng kết hôn.",
+   "why": [
+    "Đúng: không có chung gốc nên không thuộc trường hợp cấm.",
+    "Sai: đời thứ hai đòi hỏi cùng cha hoặc cùng mẹ; Tú và Vy không có ai chung.",
+    "Sai: luật cấm cha dượng, mẹ kế với con riêng, không cấm giữa hai người con riêng.",
+    "Sai: không có điều kiện cha mẹ phải ly hôn."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Con riêng của một bên vợ hoặc chồng không được kết hôn với con chung của hai vợ chồng đó.",
+   "answer": true,
+   "explain": "Đúng. Hai người cùng cha khác mẹ hoặc cùng mẹ khác cha là đời thứ hai trong phạm vi ba đời, bị cấm kết hôn (điểm d khoản 2 Điều 5, khoản 18 Điều 3)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể ba đời trong \"những người có họ trong phạm vi ba đời\".",
+   "model": "Cha mẹ là đời thứ nhất; anh chị em cùng cha mẹ, cùng cha khác mẹ, cùng mẹ khác cha là đời thứ hai; anh chị em con chú, bác, cô, cậu, dì là đời thứ ba.",
+   "keywords": [
+    "cha mẹ",
+    "đời thứ hai",
+    "cùng mẹ khác cha",
+    "con chú",
+    "đời thứ ba"
+   ]
+  }
+ ]
+}

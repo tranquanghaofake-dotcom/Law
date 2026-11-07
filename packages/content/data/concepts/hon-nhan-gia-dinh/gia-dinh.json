@@ -1,0 +1,129 @@
+{
+ "id": "gia-dinh",
+ "subject": "hon-nhan-gia-dinh",
+ "chapter": "c1-khai-quat",
+ "term": "Gia đình",
+ "definition": "Gia đình là tập hợp những người gắn bó với nhau do hôn nhân, quan hệ huyết thống hoặc quan hệ nuôi dưỡng, làm phát sinh các quyền và nghĩa vụ giữa họ với nhau theo quy định của Luật này.",
+ "plain": "Ba CĂN CỨ gắn bó: hôn nhân (vợ chồng, dâu rể…), huyết thống (cha mẹ đẻ – con, ông bà – cháu, anh chị em), nuôi dưỡng (cha mẹ nuôi – con nuôi, cha dượng, mẹ kế – con riêng). Điểm mấu chốt: sự gắn bó phải làm phát sinh quyền và nghĩa vụ theo Luật Hôn nhân và gia đình. Danh sách thành viên gia đình ở khoản 16 Điều 3.",
+ "example": "Bà nội, cha mẹ và hai con sống chung là một gia đình; người giúp việc sống cùng nhà thì không phải thành viên gia đình.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 3 Luật Hôn nhân và gia đình 2014",
+  "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "hon-nhan",
+  "nguoi-co-ho-trong-pham-vi-ba-doi"
+ ],
+ "keywords": [
+  "hôn nhân",
+  "quan hệ huyết thống",
+  "quan hệ nuôi dưỡng",
+  "quyền và nghĩa vụ"
+ ],
+ "memo": {
+  "gist": "Gia đình là những người gắn bó vì hôn nhân, máu mủ hoặc nuôi dưỡng, nên có quyền và nghĩa vụ với nhau.",
+  "kind": "tree",
+  "hook": "Ba sợi dây buộc một nhà: sợi cưới hỏi, sợi máu mủ, sợi nuôi nấng.",
+  "tree": [
+   {
+    "label": "Hôn nhân",
+    "icon": "heart",
+    "children": [
+     "Vợ, chồng",
+     "Dâu, rể"
+    ]
+   },
+   {
+    "label": "Huyết thống",
+    "icon": "family",
+    "children": [
+     "Cha mẹ đẻ và con",
+     "Ông bà và cháu"
+    ]
+   },
+   {
+    "label": "Nuôi dưỡng",
+    "icon": "child",
+    "children": [
+     "Cha mẹ nuôi và con nuôi",
+     "Cha dượng, mẹ kế và con riêng"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Người giúp việc ở cùng nhà nhiều năm có là thành viên gia đình không?",
+   "a": "Không. Họ không gắn bó do hôn nhân, huyết thống hay nuôi dưỡng nên không phát sinh quyền, nghĩa vụ gia đình."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Căn cứ nào KHÔNG thuộc định nghĩa gia đình tại khoản 2 Điều 3?",
+   "options": [
+    "Quan hệ hôn nhân",
+    "Quan hệ huyết thống",
+    "Quan hệ nuôi dưỡng",
+    "Quan hệ lao động"
+   ],
+   "answer": 3,
+   "explain": "Khoản 2 Điều 3 chỉ nêu ba căn cứ: hôn nhân, huyết thống, nuôi dưỡng.",
+   "why": [
+    "Sai: hôn nhân là một trong ba căn cứ hình thành gia đình.",
+    "Sai: huyết thống là một trong ba căn cứ hình thành gia đình.",
+    "Sai: nuôi dưỡng là một trong ba căn cứ hình thành gia đình.",
+    "Đúng: quan hệ lao động không làm ai trở thành thành viên gia đình."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Gia đình là tập hợp những người gắn bó với nhau do {{hôn nhân}}, quan hệ {{huyết thống}} hoặc quan hệ {{nuôi dưỡng}}, làm phát sinh các quyền và nghĩa vụ giữa họ với nhau theo quy định của Luật này."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Gia đình là tập hợp những người gắn bó với nhau do hôn nhân, quan hệ huyết thống hoặc quan hệ nuôi dưỡng, làm phát sinh các {{quyền và nghĩa vụ}} giữa họ với nhau theo quy định của Luật này."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Ông Tâm cưới bà Lan; bà Lan có con riêng là Khoa, 10 tuổi, sống chung với hai vợ chồng. Giữa ông Tâm và Khoa có quan hệ gì theo Luật Hôn nhân và gia đình?",
+   "options": [
+    "Cha dượng và con riêng, có quyền, nghĩa vụ nuôi dưỡng nhau",
+    "Không có quan hệ gì vì giữa hai người không cùng huyết thống",
+    "Cha nuôi và con nuôi, vì ông Tâm đang trực tiếp nuôi dưỡng Khoa",
+    "Người giám hộ và người được giám hộ theo Bộ luật Dân sự"
+   ],
+   "answer": 0,
+   "explain": "Cha dượng và con riêng của vợ là thành viên gia đình (khoản 16 Điều 3); khi sống chung có nghĩa vụ, quyền theo Điều 79.",
+   "why": [
+    "Đúng: quan hệ nuôi dưỡng giữa cha dượng và con riêng sống chung (khoản 16 Điều 3, Điều 79).",
+    "Sai: gia đình không chỉ dựa vào huyết thống; quan hệ nuôi dưỡng cũng làm phát sinh quyền, nghĩa vụ.",
+    "Sai: muốn thành cha nuôi phải đăng ký nuôi con nuôi; sống chung chưa biến ông Tâm thành cha nuôi.",
+    "Sai: Khoa còn mẹ đẻ trực tiếp nuôi nên không cần người giám hộ."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Con riêng sống chung với cha dượng thì giữa họ có đầy đủ mọi quyền và nghĩa vụ như giữa cha và con đẻ.",
+   "answer": false,
+   "explain": "Sai. Điều 79 chỉ quy định nghĩa vụ, quyền trông nom, chăm sóc, nuôi dưỡng, giáo dục nhau; không phải mọi quyền như cha con đẻ (ví dụ thừa kế theo pháp luật cần thêm điều kiện của Bộ luật Dân sự)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu ba căn cứ hình thành gia đình theo khoản 2 Điều 3.",
+   "model": "Gia đình là tập hợp những người gắn bó do hôn nhân, quan hệ huyết thống hoặc quan hệ nuôi dưỡng, làm phát sinh quyền và nghĩa vụ giữa họ.",
+   "keywords": [
+    "hôn nhân",
+    "huyết thống",
+    "nuôi dưỡng",
+    "quyền và nghĩa vụ"
+   ]
+  }
+ ]
+}

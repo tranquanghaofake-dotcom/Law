@@ -75,6 +75,11 @@ export const COVERS: Record<string, CoverSpec> = {
     palette: { top: NEW_TOP, label: CREAM, labelText: SEAL_RED, body: '#B23A16', bodyTo: '#B8461A', title: '#FFF27A' },
     source: { book: 'Bộ luật Dân sự (hiện hành)', publisher: ST, url: 'https://www.nxbctqg.org.vn/bo-luat-dan-su-hien-hanh--85.html', note: 'bản mới theo ảnh Hào gửi: khối trên đỏ, thân cam-đỏ; thân sẫm hơn bìa thật để chữ vàng đủ tương phản' },
   },
+  'hon-nhan-gia-dinh': {
+    kind: 'st-cu', label: 'LUẬT', title: ['HÔN NHÂN', 'VÀ GIA ĐÌNH'], subtitle: '(HIỆN HÀNH)',
+    palette: { top: ST_TOP, topTo: ST_TOP_TO, label: RIB, labelTo: RIB_TO, labelText: RIB_TEXT, body: '#8E1F4F', title: '#FFF27A' },
+    source: { book: 'Luật Hôn nhân và gia đình (hiện hành)', publisher: ST, url: 'https://www.nxbctqg.org.vn/luat-hon-nhan-va-gia-dinh-hien-hanh--96.html', note: 'chưa đối chiếu màu với ảnh bìa thật; dùng khuôn sách luật hiện hành của NXB' },
+  },
   'dan-su-2': {
     kind: 'giao-trinh-hlu', label: 'GIÁO TRÌNH', title: ['LUẬT DÂN SỰ', 'VIỆT NAM'], subtitle: 'TẬP II', pattern: 'luoi-cham',
     palette: { top: '#DDF6E4', topTo: '#C2ECCF', label: '#0F7A37', labelText: '#FFE45C', body: '#0B7A2C', bodyTo: '#086A26', title: '#FFFFFF', topText: '#0B4F22' },

@@ -1,0 +1,131 @@
+{
+ "id": "dang-ky-ket-hon",
+ "subject": "hon-nhan-gia-dinh",
+ "chapter": "c2-ket-hon",
+ "term": "Đăng ký kết hôn",
+ "definition": "Việc kết hôn phải được đăng ký và do cơ quan nhà nước có thẩm quyền thực hiện theo quy định của Luật này và pháp luật về hộ tịch. Việc kết hôn không được đăng ký theo quy định tại khoản này thì không có giá trị pháp lý.",
+ "plain": "Đăng ký là thủ tục BẮT BUỘC; không đăng ký thì việc kết hôn KHÔNG CÓ GIÁ TRỊ PHÁP LÝ. Cơ quan đăng ký theo Luật Hộ tịch 2014: Ủy ban nhân dân cấp xã nơi cư trú của một trong hai bên (cư trú, không chỉ thường trú); có yếu tố nước ngoài thì theo quy định về thẩm quyền đăng ký hộ tịch có yếu tố nước ngoài (sau sắp xếp chính quyền hai cấp, cấp xã thực hiện — cần đối chiếu văn bản hướng dẫn hiện hành). Vợ chồng đã ly hôn muốn quay lại phải đăng ký kết hôn lại (khoản 2 Điều 9).",
+ "example": "Hai người ly hôn năm 2023, năm 2026 quay lại sống với nhau: muốn là vợ chồng hợp pháp thì phải đăng ký kết hôn lại.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 9 Luật Hôn nhân và gia đình 2014",
+  "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "ket-hon",
+  "chung-song-nhu-vo-chong",
+  "thoi-ky-hon-nhan"
+ ],
+ "keywords": [
+  "phải được đăng ký",
+  "cơ quan nhà nước có thẩm quyền",
+  "pháp luật về hộ tịch",
+  "không có giá trị pháp lý"
+ ],
+ "memo": {
+  "gist": "Kết hôn bắt buộc phải đăng ký tại cơ quan nhà nước; không đăng ký thì không có giá trị pháp lý.",
+  "kind": "steps",
+  "hook": "Không con dấu, không vợ chồng — kể cả khi quay lại với người cũ.",
+  "tree": [
+   {
+    "label": "Ai đăng ký",
+    "icon": "stamp",
+    "children": [
+     "Cơ quan nhà nước có thẩm quyền"
+    ]
+   },
+   {
+    "label": "Theo luật nào",
+    "icon": "book",
+    "children": [
+     "Luật Hôn nhân và gia đình",
+     "Pháp luật về hộ tịch"
+    ]
+   },
+   {
+    "label": "Không đăng ký",
+    "icon": "ban",
+    "children": [
+     "Không có giá trị pháp lý"
+    ]
+   },
+   {
+    "label": "Đã ly hôn, quay lại",
+    "icon": "cycle",
+    "children": [
+     "Phải đăng ký lại"
+    ]
+   }
+  ]
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Việc kết hôn không được đăng ký theo khoản 1 Điều 9 có hậu quả gì?",
+   "options": [
+    "Không có giá trị pháp lý",
+    "Có giá trị nếu có nhân chứng",
+    "Có giá trị sau 12 tháng",
+    "Bị phạt nhưng vẫn hợp pháp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 9: việc kết hôn không được đăng ký thì không có giá trị pháp lý.",
+   "why": [
+    "Đúng: không đăng ký thì không có giá trị pháp lý.",
+    "Sai: người làm chứng không thay được thủ tục đăng ký.",
+    "Sai: thời gian chung sống không làm phát sinh giá trị pháp lý.",
+    "Sai: không đăng ký thì không phải vợ chồng hợp pháp."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Việc kết hôn phải được {{đăng ký}} và do cơ quan nhà nước có thẩm quyền thực hiện theo quy định của Luật này và pháp luật về {{hộ tịch}}."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Việc kết hôn không được đăng ký theo quy định tại khoản này thì không có {{giá trị pháp lý}}."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Phong và Yến ly hôn năm 2022 theo bản án có hiệu lực. Năm 2025 hai người về sống chung lại, không làm thủ tục gì. Năm 2026 Phong mua một căn hộ. Căn hộ là gì?",
+   "options": [
+    "Không phải tài sản chung vợ chồng, vì hai người chưa đăng ký kết hôn lại",
+    "Tài sản chung vợ chồng, vì hai người từng là vợ chồng hợp pháp",
+    "Tài sản chung vợ chồng, vì quan hệ vợ chồng tự khôi phục khi sống chung",
+    "Tài sản chung vợ chồng nếu Yến chứng minh được hai người sống chung"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 9: vợ chồng đã ly hôn muốn xác lập lại quan hệ vợ chồng thì phải đăng ký kết hôn.",
+   "why": [
+    "Đúng: chưa đăng ký lại thì không có quan hệ vợ chồng.",
+    "Sai: hôn nhân trước đã chấm dứt bằng bản án ly hôn.",
+    "Sai: luật không có cơ chế tự khôi phục quan hệ vợ chồng.",
+    "Sai: chứng minh sống chung chỉ cho thấy chung sống như vợ chồng, không phát sinh tài sản chung vợ chồng."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Vợ chồng đã ly hôn muốn quay lại với nhau thì chỉ cần thông báo cho Ủy ban nhân dân xã, không cần đăng ký kết hôn lại.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 9: vợ chồng đã ly hôn muốn xác lập lại quan hệ vợ chồng thì phải đăng ký kết hôn."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Đăng ký kết hôn có vai trò gì theo Điều 9?",
+   "model": "Kết hôn phải được đăng ký tại cơ quan nhà nước có thẩm quyền theo Luật này và pháp luật hộ tịch; không đăng ký thì không có giá trị pháp lý; đã ly hôn muốn quay lại phải đăng ký lại.",
+   "keywords": [
+    "phải được đăng ký",
+    "cơ quan nhà nước có thẩm quyền",
+    "không có giá trị pháp lý",
+    "đăng ký lại"
+   ]
+  }
+ ]
+}

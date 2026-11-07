@@ -1,0 +1,127 @@
+{
+ "id": "cong-nhan-hon-nhan-khi-xu-ly-ket-hon-trai-phap-luat",
+ "subject": "hon-nhan-gia-dinh",
+ "chapter": "c2-ket-hon",
+ "term": "Công nhận hôn nhân khi xử lý kết hôn trái pháp luật",
+ "definition": "Trong trường hợp tại thời điểm Tòa án giải quyết yêu cầu hủy việc kết hôn trái pháp luật mà cả hai bên kết hôn đã có đủ các điều kiện kết hôn theo quy định tại Điều 8 của Luật này và hai bên yêu cầu công nhận quan hệ hôn nhân thì Tòa án công nhận quan hệ hôn nhân đó. Trong trường hợp này, quan hệ hôn nhân được xác lập từ thời điểm các bên đủ điều kiện kết hôn theo quy định của Luật này.",
+ "plain": "Hai điều kiện để Tòa án KHÔNG hủy mà CÔNG NHẬN: (1) lúc Tòa án giải quyết, CẢ HAI đã đủ điều kiện Điều 8; (2) HAI BÊN cùng yêu cầu công nhận. Mốc xác lập hôn nhân: từ thời điểm các bên đủ điều kiện kết hôn — không phải từ ngày đăng ký, cũng không phải ngày Tòa án quyết định.",
+ "example": "Đăng ký kết hôn khi vợ 17 tuổi; lúc Tòa án xét, vợ đã 19 tuổi và hai người cùng xin công nhận: Tòa án công nhận, hôn nhân tính từ ngày vợ đủ 18 tuổi.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 11 Luật Hôn nhân và gia đình 2014",
+  "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "ket-hon-trai-phap-luat",
+  "dieu-kien-ket-hon",
+  "thoi-ky-hon-nhan"
+ ],
+ "keywords": [
+  "thời điểm Tòa án giải quyết",
+  "đủ các điều kiện kết hôn",
+  "hai bên yêu cầu công nhận",
+  "thời điểm các bên đủ điều kiện"
+ ],
+ "memo": {
+  "gist": "Kết hôn trái luật mà lúc xét xử đã đủ điều kiện và hai bên cùng xin thì Tòa án công nhận thay vì hủy.",
+  "kind": "checklist",
+  "hook": "Lỗi cũ đã sửa, đôi bên cùng muốn ở lại: thẩm phán gật đầu giữ mối.",
+  "tree": [
+   {
+    "label": "Đủ điều kiện",
+    "icon": "check",
+    "children": [
+     "Tại thời điểm Tòa án giải quyết"
+    ]
+   },
+   {
+    "label": "Cùng yêu cầu",
+    "icon": "handshake",
+    "children": [
+     "Hai bên xin công nhận"
+    ]
+   },
+   {
+    "label": "Mốc hôn nhân",
+    "icon": "calendar",
+    "children": [
+     "Từ khi các bên đủ điều kiện"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Lúc Tòa án xét, hai bên đã đủ điều kiện nhưng chỉ người vợ xin công nhận thì sao?",
+   "a": "Chưa đủ: luật đòi hai bên cùng yêu cầu công nhận; thiếu thì Tòa án xử lý theo hướng hủy."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khi Tòa án công nhận quan hệ hôn nhân theo khoản 2 Điều 11, hôn nhân được xác lập từ thời điểm nào?",
+   "options": [
+    "Thời điểm các bên đủ điều kiện kết hôn",
+    "Thời điểm hai bên đăng ký kết hôn",
+    "Thời điểm quyết định của Tòa án có hiệu lực",
+    "Thời điểm bên yêu cầu nộp đơn ra Tòa án"
+   ],
+   "answer": 0,
+   "explain": "Câu cuối khoản 2 Điều 11: quan hệ hôn nhân được xác lập từ thời điểm các bên đủ điều kiện kết hôn.",
+   "why": [
+    "Đúng: mốc là lúc các bên đủ điều kiện.",
+    "Sai: lúc đăng ký các bên chưa đủ điều kiện, nên không lấy mốc này.",
+    "Sai: quyết định của Tòa án chỉ công nhận, không phải mốc xác lập hôn nhân.",
+    "Sai: ngày nộp đơn không có ý nghĩa xác lập quan hệ hôn nhân."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trong trường hợp tại thời điểm Tòa án giải quyết yêu cầu hủy việc kết hôn trái pháp luật mà {{cả hai bên}} kết hôn đã có đủ các điều kiện kết hôn theo quy định tại Điều 8 của Luật này và hai bên yêu cầu {{công nhận}} quan hệ hôn nhân thì Tòa án công nhận quan hệ hôn nhân đó."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trong trường hợp này, quan hệ hôn nhân được xác lập từ thời điểm các bên {{đủ điều kiện kết hôn}} theo quy định của Luật này."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Năm 2023 Tâm (19 tuổi) và Thu (17 tuổi) đăng ký kết hôn. Năm 2026 Hội Liên hiệp Phụ nữ yêu cầu hủy. Lúc Tòa án xét, cả hai tự nguyện, đủ điều kiện và cùng xin công nhận. Tòa án xử lý thế nào?",
+   "options": [
+    "Công nhận hôn nhân, tính từ khi cả hai đủ tuổi kết hôn",
+    "Hủy việc kết hôn vì lúc đăng ký Thu chưa đủ tuổi",
+    "Công nhận hôn nhân, tính từ ngày đăng ký năm 2023",
+    "Đình chỉ vì Hội Liên hiệp Phụ nữ không có quyền yêu cầu"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 11: đủ điều kiện lúc giải quyết và hai bên cùng yêu cầu thì công nhận; hôn nhân tính từ khi các bên đủ điều kiện.",
+   "why": [
+    "Đúng: đủ hai điều kiện của khoản 2 Điều 11.",
+    "Sai: vi phạm lúc đăng ký đã được khắc phục và hai bên cùng xin công nhận.",
+    "Sai: mốc là khi các bên đủ điều kiện, không phải ngày đăng ký.",
+    "Sai: điểm d khoản 2 Điều 10 cho Hội Liên hiệp Phụ nữ quyền yêu cầu hủy."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khi công nhận hôn nhân theo khoản 2 Điều 11, quan hệ hôn nhân được tính từ ngày Tòa án ra quyết định.",
+   "answer": false,
+   "explain": "Sai. Quan hệ hôn nhân được xác lập từ thời điểm các bên đủ điều kiện kết hôn."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Khi nào Tòa án công nhận thay vì hủy kết hôn trái pháp luật?",
+   "model": "Khi tại thời điểm Tòa án giải quyết cả hai bên đã đủ điều kiện kết hôn và hai bên cùng yêu cầu công nhận; hôn nhân tính từ thời điểm các bên đủ điều kiện.",
+   "keywords": [
+    "thời điểm Tòa án giải quyết",
+    "đủ điều kiện",
+    "hai bên yêu cầu",
+    "công nhận"
+   ]
+  }
+ ]
+}

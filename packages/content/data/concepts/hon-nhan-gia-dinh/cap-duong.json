@@ -1,0 +1,138 @@
+{
+ "id": "cap-duong",
+ "subject": "hon-nhan-gia-dinh",
+ "chapter": "c6-cap-duong",
+ "term": "Cấp dưỡng",
+ "definition": "Cấp dưỡng là việc một người có nghĩa vụ đóng góp tiền hoặc tài sản khác để đáp ứng nhu cầu thiết yếu của người không sống chung với mình mà có quan hệ hôn nhân, huyết thống hoặc nuôi dưỡng trong trường hợp người đó là người chưa thành niên, người đã thành niên mà không có khả năng lao động và không có tài sản để tự nuôi mình hoặc người gặp khó khăn, túng thiếu theo quy định của Luật này.",
+ "plain": "Bốn dấu hiệu: đóng góp TIỀN hoặc TÀI SẢN; cho NHU CẦU THIẾT YẾU; người được cấp dưỡng KHÔNG SỐNG CHUNG và có quan hệ hôn nhân, huyết thống, nuôi dưỡng; người đó CHƯA THÀNH NIÊN, hoặc đã thành niên KHÔNG CÓ KHẢ NĂNG LAO ĐỘNG VÀ KHÔNG CÓ TÀI SẢN, hoặc KHÓ KHĂN, TÚNG THIẾU. Nghĩa vụ cấp dưỡng không thể thay thế bằng nghĩa vụ khác và không chuyển giao được (khoản 1 Điều 107). Mức cấp dưỡng do các bên thỏa thuận theo thu nhập, khả năng thực tế và nhu cầu thiết yếu; không thỏa thuận được thì Tòa án giải quyết (Điều 116).",
+ "example": "Sau ly hôn, con 6 tuổi ở với mẹ; người cha không sống chung phải góp tiền hằng tháng cho con ăn, học, khám bệnh.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 24 Điều 3 Luật Hôn nhân và gia đình 2014",
+  "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "nuoi-con-sau-ly-hon",
+  "gia-dinh"
+ ],
+ "keywords": [
+  "tiền hoặc tài sản khác",
+  "nhu cầu thiết yếu",
+  "không sống chung",
+  "chưa thành niên",
+  "khó khăn, túng thiếu"
+ ],
+ "memo": {
+  "gist": "Cấp dưỡng là góp tiền hoặc tài sản cho người thân không sống chung, đang cần được nuôi, để lo nhu cầu thiết yếu.",
+  "kind": "checklist",
+  "hook": "Xa mặt nhưng không xa bổn phận: ở riêng vẫn phải gửi phần nuôi.",
+  "tree": [
+   {
+    "label": "Đóng góp gì",
+    "icon": "money",
+    "children": [
+     "Tiền hoặc tài sản khác"
+    ]
+   },
+   {
+    "label": "Để làm gì",
+    "icon": "home",
+    "children": [
+     "Nhu cầu thiết yếu"
+    ]
+   },
+   {
+    "label": "Cho ai",
+    "icon": "people",
+    "children": [
+     "Không sống chung",
+     "Có quan hệ hôn nhân, huyết thống, nuôi dưỡng"
+    ]
+   },
+   {
+    "label": "Khi nào",
+    "icon": "warn",
+    "children": [
+     "Chưa thành niên",
+     "Không có khả năng lao động và tài sản",
+     "Khó khăn, túng thiếu"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Người cha có thể trả một lần mảnh đất thay cho việc cấp dưỡng hằng tháng không?",
+   "a": "Được nếu các bên thỏa thuận cấp dưỡng một lần (Điều 117); nhưng không thể thay cấp dưỡng bằng một nghĩa vụ khác."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người nào KHÔNG thuộc đối tượng được cấp dưỡng theo khoản 24 Điều 3?",
+   "options": [
+    "Người đã thành niên, có khả năng lao động và có tài sản",
+    "Người chưa thành niên không sống chung",
+    "Người đã thành niên không có khả năng lao động, không có tài sản",
+    "Người gặp khó khăn, túng thiếu theo quy định của Luật"
+   ],
+   "answer": 0,
+   "explain": "Khoản 24 Điều 3 chỉ nêu người chưa thành niên, người thành niên không có khả năng lao động và không có tài sản, người khó khăn, túng thiếu.",
+   "why": [
+    "Đúng: người tự nuôi được mình không thuộc đối tượng được cấp dưỡng.",
+    "Sai: người chưa thành niên là đối tượng được cấp dưỡng.",
+    "Sai: đây là đối tượng thứ hai được cấp dưỡng.",
+    "Sai: đây là đối tượng thứ ba được cấp dưỡng."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cấp dưỡng là việc một người có nghĩa vụ đóng góp {{tiền hoặc tài sản khác}} để đáp ứng {{nhu cầu thiết yếu}} của người không sống chung với mình mà có quan hệ hôn nhân, huyết thống hoặc nuôi dưỡng"
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "trong trường hợp người đó là người {{chưa thành niên}}, người đã thành niên mà không có khả năng lao động và không có tài sản để tự nuôi mình hoặc người gặp {{khó khăn, túng thiếu}} theo quy định của Luật này."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Sau ly hôn, anh Toàn phải cấp dưỡng cho con nhưng muốn chuyển nghĩa vụ này cho em trai mình thực hiện thay. Việc này có được không?",
+   "options": [
+    "Không, nghĩa vụ cấp dưỡng không chuyển giao được",
+    "Được, nếu em trai đồng ý bằng văn bản có công chứng",
+    "Được, nếu người mẹ trực tiếp nuôi con đồng ý",
+    "Được, vì em trai là người thân thích của đứa trẻ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 107: nghĩa vụ cấp dưỡng không thể thay thế bằng nghĩa vụ khác và không thể chuyển giao cho người khác.",
+   "why": [
+    "Đúng: khoản 1 Điều 107.",
+    "Sai: công chứng không làm được việc luật cấm chuyển giao.",
+    "Sai: sự đồng ý của người mẹ không làm thay đổi tính không chuyển giao của nghĩa vụ.",
+    "Sai: quan hệ thân thích không cho phép nhận chuyển giao nghĩa vụ cấp dưỡng."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nghĩa vụ cấp dưỡng có thể thay thế bằng nghĩa vụ khác nếu các bên đồng ý.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 107: nghĩa vụ cấp dưỡng không thể thay thế bằng nghĩa vụ khác và không thể chuyển giao cho người khác."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Cấp dưỡng là gì? Ai được cấp dưỡng?",
+   "model": "Là đóng góp tiền hoặc tài sản khác cho nhu cầu thiết yếu của người không sống chung có quan hệ hôn nhân, huyết thống, nuôi dưỡng; người đó chưa thành niên, hoặc thành niên không có khả năng lao động và không có tài sản, hoặc khó khăn, túng thiếu.",
+   "keywords": [
+    "tiền hoặc tài sản",
+    "nhu cầu thiết yếu",
+    "không sống chung",
+    "chưa thành niên",
+    "túng thiếu"
+   ]
+  }
+ ]
+}

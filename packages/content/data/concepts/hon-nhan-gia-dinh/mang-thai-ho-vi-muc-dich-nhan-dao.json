@@ -1,0 +1,146 @@
+{
+ "id": "mang-thai-ho-vi-muc-dich-nhan-dao",
+ "subject": "hon-nhan-gia-dinh",
+ "chapter": "c5-cha-me-con",
+ "term": "Mang thai hộ vì mục đích nhân đạo",
+ "definition": "Mang thai hộ vì mục đích nhân đạo là việc một người phụ nữ tự nguyện, không vì mục đích thương mại giúp mang thai cho cặp vợ chồng mà người vợ không thể mang thai và sinh con ngay cả khi áp dụng kỹ thuật hỗ trợ sinh sản, bằng việc lấy noãn của người vợ và tinh trùng của người chồng để thụ tinh trong ống nghiệm, sau đó cấy vào tử cung của người phụ nữ tự nguyện mang thai để người này mang thai và sinh con.",
+ "plain": "Dấu hiệu: TỰ NGUYỆN, KHÔNG THƯƠNG MẠI; người vợ KHÔNG THỂ mang thai kể cả khi dùng kỹ thuật hỗ trợ sinh sản; NOÃN của vợ + TINH TRÙNG của chồng thụ tinh trong ống nghiệm rồi cấy vào người mang thai hộ. Con là con của BÊN NHỜ mang thai hộ từ khi sinh ra (Điều 94, khoản 2 Điều 98). Người mang thai hộ phải là người thân thích cùng hàng, đã từng sinh con, chỉ mang thai hộ một lần (khoản 3 Điều 95). Mang thai hộ vì mục đích THƯƠNG MẠI bị cấm.",
+ "example": "Vợ bị cắt tử cung; em gái ruột của vợ đã có con, tự nguyện mang thai hộ không nhận tiền công: đây là mang thai hộ vì mục đích nhân đạo.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 22 Điều 3 Luật Hôn nhân và gia đình 2014",
+  "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "xac-dinh-con-chung"
+ ],
+ "keywords": [
+  "tự nguyện",
+  "không vì mục đích thương mại",
+  "không thể mang thai",
+  "noãn của người vợ",
+  "tinh trùng của người chồng"
+ ],
+ "memo": {
+  "gist": "Một người phụ nữ tự nguyện, không lấy tiền, mang thai giúp vợ chồng mà người vợ không thể có thai.",
+  "kind": "checklist",
+  "hook": "Trứng vợ, tinh chồng, bụng người thân, không tiền công: con thuộc về vợ chồng nhờ.",
+  "tree": [
+   {
+    "label": "Mục đích",
+    "icon": "heart",
+    "children": [
+     "Tự nguyện",
+     "Không thương mại"
+    ]
+   },
+   {
+    "label": "Bên nhờ",
+    "icon": "family",
+    "children": [
+     "Vợ không thể mang thai",
+     "Đang không có con chung"
+    ]
+   },
+   {
+    "label": "Kỹ thuật",
+    "icon": "health",
+    "children": [
+     "Noãn vợ, tinh trùng chồng",
+     "Thụ tinh trong ống nghiệm"
+    ]
+   },
+   {
+    "label": "Người mang thai hộ",
+    "icon": "person",
+    "children": [
+     "Thân thích cùng hàng",
+     "Đã từng sinh con",
+     "Chỉ một lần"
+    ]
+   },
+   {
+    "label": "Con là của",
+    "icon": "child",
+    "children": [
+     "Bên nhờ mang thai hộ"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Người mang thai hộ sinh con xong không muốn giao con thì sao?",
+   "a": "Bên nhờ mang thai hộ có quyền yêu cầu Tòa án buộc bên mang thai hộ giao con (khoản 5 Điều 98)."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trong mang thai hộ vì mục đích nhân đạo, noãn và tinh trùng được lấy từ ai?",
+   "options": [
+    "Noãn của người vợ và tinh trùng của người chồng",
+    "Noãn của người mang thai hộ và tinh trùng của người chồng",
+    "Noãn và tinh trùng của người hiến tặng ẩn danh",
+    "Noãn của người mang thai hộ và tinh trùng của người hiến"
+   ],
+   "answer": 0,
+   "explain": "Khoản 22 Điều 3: lấy noãn của người vợ và tinh trùng của người chồng để thụ tinh trong ống nghiệm.",
+   "why": [
+    "Đúng: noãn vợ, tinh trùng chồng.",
+    "Sai: dùng noãn của người mang thai hộ thì không còn là mang thai hộ theo khoản 22 Điều 3.",
+    "Sai: nguồn hiến tặng không đáp ứng định nghĩa.",
+    "Sai: cả noãn và tinh trùng đều phải của cặp vợ chồng nhờ mang thai hộ."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mang thai hộ vì mục đích nhân đạo là việc một người phụ nữ {{tự nguyện}}, không vì mục đích {{thương mại}} giúp mang thai cho cặp vợ chồng mà người vợ không thể mang thai và sinh con ngay cả khi áp dụng kỹ thuật hỗ trợ sinh sản,"
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "bằng việc lấy {{noãn}} của người vợ và {{tinh trùng}} của người chồng để thụ tinh trong ống nghiệm, sau đó cấy vào tử cung của người phụ nữ tự nguyện mang thai để người này mang thai và sinh con."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Chị Hạnh (chị ruột của người vợ) đã từng mang thai hộ một lần. Nay một cặp vợ chồng khác trong họ nhờ chị mang thai hộ lần nữa. Chị Hạnh có được mang thai hộ không?",
+   "options": [
+    "Không, vì chỉ được mang thai hộ một lần",
+    "Được, nếu bên nhờ cũng là người thân thích",
+    "Được, nếu chồng chị Hạnh đồng ý bằng văn bản",
+    "Được, vì chị Hạnh đã từng sinh con"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 3 Điều 95: đã từng sinh con và chỉ được mang thai hộ một lần.",
+   "why": [
+    "Đúng: điểm b khoản 3 Điều 95.",
+    "Sai: quan hệ thân thích không thay được giới hạn \"một lần\".",
+    "Sai: sự đồng ý của chồng là điều kiện riêng (điểm d), không thay giới hạn một lần.",
+    "Sai: đã từng sinh con là điều kiện cần nhưng chưa đủ."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Con sinh ra từ mang thai hộ vì mục đích nhân đạo là con chung của bên nhờ mang thai hộ kể từ thời điểm con được sinh ra.",
+   "answer": true,
+   "explain": "Đúng. Điều 94 và khoản 2 Điều 98."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các dấu hiệu của mang thai hộ vì mục đích nhân đạo.",
+   "model": "Người phụ nữ tự nguyện, không vì mục đích thương mại; mang thai cho vợ chồng mà người vợ không thể mang thai kể cả khi dùng kỹ thuật hỗ trợ sinh sản; dùng noãn của vợ, tinh trùng của chồng thụ tinh trong ống nghiệm.",
+   "keywords": [
+    "tự nguyện",
+    "không vì mục đích thương mại",
+    "không thể mang thai",
+    "noãn",
+    "tinh trùng"
+   ]
+  }
+ ]
+}

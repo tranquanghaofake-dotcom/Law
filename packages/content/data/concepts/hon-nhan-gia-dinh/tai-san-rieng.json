@@ -1,0 +1,133 @@
+{
+ "id": "tai-san-rieng",
+ "subject": "hon-nhan-gia-dinh",
+ "chapter": "c3-tai-san-vo-chong",
+ "term": "Tài sản riêng của vợ, chồng",
+ "definition": "Tài sản riêng của vợ, chồng gồm tài sản mà mỗi người có trước khi kết hôn; tài sản được thừa kế riêng, được tặng cho riêng trong thời kỳ hôn nhân; tài sản được chia riêng cho vợ, chồng theo quy định tại các điều 38, 39 và 40 của Luật này; tài sản phục vụ nhu cầu thiết yếu của vợ, chồng và tài sản khác mà theo quy định của pháp luật thuộc sở hữu riêng của vợ, chồng.",
+ "plain": "Năm nguồn: CÓ TRƯỚC khi kết hôn; THỪA KẾ RIÊNG, TẶNG CHO RIÊNG; được CHIA RIÊNG khi chia tài sản chung trong thời kỳ hôn nhân; phục vụ NHU CẦU THIẾT YẾU (quần áo, đồ dùng cá nhân); tài sản khác pháp luật quy định là riêng. Tài sản hình thành từ tài sản riêng cũng là riêng (khoản 2). Chủ sở hữu tự định đoạt, nhưng nếu hoa lợi, lợi tức từ tài sản riêng là nguồn sống DUY NHẤT của gia đình thì định đoạt phải có sự đồng ý của người kia (khoản 4 Điều 44).",
+ "example": "Chồng bán chiếc xe có từ trước khi cưới, lấy tiền mua xe khác: chiếc xe mới vẫn là tài sản riêng của chồng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 43 Luật Hôn nhân và gia đình 2014",
+  "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "tai-san-chung",
+  "chia-tai-san-chung-trong-thoi-ky-hon-nhan"
+ ],
+ "keywords": [
+  "có trước khi kết hôn",
+  "thừa kế riêng",
+  "tặng cho riêng",
+  "chia riêng",
+  "nhu cầu thiết yếu"
+ ],
+ "memo": {
+  "gist": "Tài sản riêng là của cải có trước khi cưới, được cho hoặc thừa kế riêng, được chia riêng, đồ dùng thiết yếu.",
+  "kind": "checklist",
+  "hook": "Đồ mang theo khi về nhà chồng, quà ghi đích danh, phần đã tách, áo quần thường ngày.",
+  "tree": [
+   {
+    "label": "Có trước khi cưới",
+    "icon": "calendar"
+   },
+   {
+    "label": "Cho, thừa kế riêng",
+    "icon": "gift"
+   },
+   {
+    "label": "Được chia riêng",
+    "icon": "cut",
+    "children": [
+     "Điều 38, 39, 40"
+    ]
+   },
+   {
+    "label": "Đồ dùng thiết yếu",
+    "icon": "home"
+   },
+   {
+    "label": "Đổi từ tài sản riêng",
+    "icon": "cycle",
+    "children": [
+     "Vẫn là tài sản riêng"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Vợ có nhà riêng cho thuê, tiền thuê là nguồn sống duy nhất của gia đình. Vợ có tự bán nhà được không?",
+   "a": "Không. Khoản 4 Điều 44 buộc phải có sự đồng ý của chồng; nhà vẫn là tài sản riêng của vợ."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tài sản nào là tài sản riêng của vợ, chồng theo khoản 1 Điều 43?",
+   "options": [
+    "Tài sản được tặng cho riêng trong thời kỳ hôn nhân",
+    "Tiền lương của chồng nhận trong thời kỳ hôn nhân",
+    "Tiền thuê từ căn nhà riêng của vợ trong thời kỳ hôn nhân",
+    "Quyền sử dụng đất vợ chồng mua sau khi kết hôn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 43: tài sản được thừa kế riêng, được tặng cho riêng trong thời kỳ hôn nhân là tài sản riêng.",
+   "why": [
+    "Đúng: tặng cho riêng là tài sản riêng.",
+    "Sai: thu nhập do lao động trong thời kỳ hôn nhân là tài sản chung (khoản 1 Điều 33).",
+    "Sai: hoa lợi, lợi tức từ tài sản riêng trong thời kỳ hôn nhân là tài sản chung.",
+    "Sai: đất có sau kết hôn mà không phải thừa kế, tặng cho riêng hay mua bằng tài sản riêng là tài sản chung."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tài sản riêng của vợ, chồng gồm tài sản mà mỗi người có {{trước khi kết hôn}}; tài sản được thừa kế riêng, được {{tặng cho riêng}} trong thời kỳ hôn nhân;"
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "tài sản được chia riêng cho vợ, chồng theo quy định tại các điều 38, 39 và 40 của Luật này; tài sản phục vụ {{nhu cầu thiết yếu}} của vợ, chồng và tài sản khác mà theo quy định của pháp luật thuộc sở hữu riêng của vợ, chồng."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Chồng có căn nhà riêng trước khi cưới, cho thuê; tiền thuê là nguồn sống duy nhất của gia đình. Chồng muốn bán nhà. Điều kiện nào đúng?",
+   "options": [
+    "Phải có sự đồng ý của vợ, nhưng căn nhà vẫn là tài sản riêng của chồng",
+    "Chồng được tự bán vì đây là tài sản riêng, không cần hỏi ý kiến vợ",
+    "Căn nhà trở thành tài sản chung nên phải chia đôi trước khi bán",
+    "Chồng chỉ được bán sau khi có quyết định cho phép của Tòa án"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 44: hoa lợi, lợi tức từ tài sản riêng là nguồn sống duy nhất của gia đình thì định đoạt tài sản này phải có sự đồng ý của chồng, vợ.",
+   "why": [
+    "Đúng: khoản 4 Điều 44 chỉ thêm điều kiện đồng ý, không đổi loại tài sản.",
+    "Sai: trường hợp nguồn sống duy nhất là ngoại lệ, cần vợ đồng ý.",
+    "Sai: nhà không tự thành tài sản chung; chỉ hoa lợi, lợi tức là tài sản chung.",
+    "Sai: luật cần sự đồng ý của vợ, không cần quyết định của Tòa án."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Trong chế độ tài sản theo luật định, tài sản riêng của một bên vợ hoặc chồng chỉ được dùng để đáp ứng nhu cầu riêng của bên đó.",
+   "answer": false,
+   "explain": "Sai. Vợ, chồng có thể dùng tài sản riêng cho nhu cầu gia đình khi tài sản chung không đủ (khoản 2 Điều 30), hoặc nhập tài sản riêng vào tài sản chung (khoản 1 Điều 44)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể các loại tài sản riêng của vợ, chồng theo khoản 1 Điều 43.",
+   "model": "Tài sản có trước khi kết hôn; được thừa kế riêng, tặng cho riêng trong thời kỳ hôn nhân; được chia riêng theo các điều 38, 39, 40; phục vụ nhu cầu thiết yếu; tài sản khác pháp luật quy định là riêng.",
+   "keywords": [
+    "trước khi kết hôn",
+    "thừa kế riêng",
+    "tặng cho riêng",
+    "chia riêng",
+    "nhu cầu thiết yếu"
+   ]
+  }
+ ]
+}

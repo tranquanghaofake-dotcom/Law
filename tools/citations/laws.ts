@@ -36,6 +36,7 @@ export const LAWS: LawRef[] = [
   { label: 'Luật Ban hành VBQPPL 2025', pattern: 'Luật Ban hành văn bản quy phạm pháp luật|Luật BHVBQPPL|Luật Ban hành VBQPPL', file: 'bhvbqppl-vbhn-2025.txt', years: [2025] },
   { label: 'Luật Thương mại 2005', pattern: 'Luật Thương mại|LTM', file: 'ltm-vbhn-2025.txt', years: [2005, 2017, 2019, 2025] },
   { label: 'Luật Đất đai 2024', pattern: 'Luật Đất đai|LĐĐ', file: 'ldd-vbhn-2026.txt', years: [2024, 2025, 2026], oldYears: { 1987: LS } },
+  { label: 'Luật Hôn nhân và gia đình 2014', pattern: 'Luật Hôn nhân và gia đình|Luật HN(?:&|và)GĐ|Luật HNGĐ', file: 'hngd-vbhn-2025.txt', years: [2014, 2025] },
   { label: 'Luật Cạnh tranh 2018', pattern: 'Luật Cạnh tranh|LCT', file: 'luat-canh-tranh-2018.txt', years: [2018] },
   { label: 'Luật Đầu tư 2025', pattern: 'Luật Đầu tư|LĐT', file: 'ldt-vbhn-2026.txt', years: [2025, 2026] },
   { label: 'Luật Xử lý vi phạm hành chính', pattern: 'Luật Xử lý vi phạm hành chính|Luật XLVPHC', file: 'xlvphc-vbhn-2026.txt', years: [2012, 2014, 2017, 2020, 2022, 2024, 2025, 2026] },

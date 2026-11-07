@@ -1,0 +1,141 @@
+{
+ "id": "chung-song-nhu-vo-chong",
+ "subject": "hon-nhan-gia-dinh",
+ "chapter": "c2-ket-hon",
+ "term": "Chung sống như vợ chồng",
+ "definition": "Chung sống như vợ chồng là việc nam, nữ tổ chức cuộc sống chung và coi nhau là vợ chồng.",
+ "plain": "Hai dấu hiệu: TỔ CHỨC CUỘC SỐNG CHUNG và COI NHAU LÀ VỢ CHỒNG, nhưng KHÔNG đăng ký kết hôn. Hậu quả (khoản 1 Điều 14): không phát sinh quyền, nghĩa vụ giữa vợ và chồng; con giải quyết như con khi cha mẹ ly hôn (Điều 15), tài sản theo thỏa thuận hoặc Bộ luật Dân sự (Điều 16). Riêng các trường hợp chung sống trước 03/01/1987 vẫn có thể được công nhận là vợ chồng theo Nghị quyết 35/2000/QH10 — đây là quy định chuyển tiếp, không phải Luật 2014.",
+ "example": "Hai người ở trọ chung, gọi nhau là vợ chồng, có con nhưng không đăng ký: giữa họ không có quyền, nghĩa vụ vợ chồng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 7 Điều 3 Luật Hôn nhân và gia đình 2014",
+  "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "ket-hon",
+  "ket-hon-trai-phap-luat",
+  "hon-nhan"
+ ],
+ "keywords": [
+  "tổ chức cuộc sống chung",
+  "coi nhau là vợ chồng"
+ ],
+ "note": "Quy định chuyển tiếp về chung sống trước 03/01/1987 và từ 03/01/1987 đến 01/01/2001 nằm ở Nghị quyết 35/2000/QH10 và khoản 1 Điều 131 Luật Hôn nhân và gia đình 2014; kho chưa có toàn văn Nghị quyết 35/2000/QH10.",
+ "memo": {
+  "gist": "Chung sống như vợ chồng là sống chung, coi nhau là vợ chồng mà không đăng ký, nên luật không coi là vợ chồng.",
+  "kind": "compare",
+  "hook": "Thiếu tờ giấy đỏ thì trong mắt pháp lý chỉ là hai người bạn ở cùng phòng.",
+  "tree": [
+   {
+    "label": "Dấu hiệu",
+    "icon": "home",
+    "children": [
+     "Tổ chức cuộc sống chung",
+     "Coi nhau là vợ chồng",
+     "Không đăng ký"
+    ]
+   },
+   {
+    "label": "Giữa hai người",
+    "icon": "ban",
+    "children": [
+     "Không có quyền, nghĩa vụ vợ chồng"
+    ]
+   },
+   {
+    "label": "Với con",
+    "icon": "child",
+    "children": [
+     "Như cha mẹ ly hôn"
+    ]
+   },
+   {
+    "label": "Tài sản",
+    "icon": "money",
+    "children": [
+     "Theo thỏa thuận hoặc Bộ luật Dân sự"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Chung sống không đăng ký rồi một người nộp đơn xin ly hôn thì Tòa án làm gì?",
+   "a": "Tòa án thụ lý và tuyên bố không công nhận quan hệ vợ chồng; giải quyết con, tài sản nếu có yêu cầu."
+  },
+  "contrast": [
+   {
+    "with": "ket-hon",
+    "text": "Kết hôn có đăng ký nên phát sinh quyền, nghĩa vụ vợ chồng; chung sống như vợ chồng không đăng ký nên không phát sinh."
+   }
+  ]
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nam, nữ đủ điều kiện kết hôn chung sống như vợ chồng mà không đăng ký kết hôn thì hậu quả giữa hai người là gì?",
+   "options": [
+    "Không làm phát sinh quyền, nghĩa vụ giữa vợ và chồng",
+    "Phát sinh quyền, nghĩa vụ vợ chồng sau hai năm chung sống",
+    "Phát sinh quyền, nghĩa vụ vợ chồng khi đã có con chung",
+    "Được coi là vợ chồng nếu địa phương xác nhận bằng văn bản"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 14: không làm phát sinh quyền, nghĩa vụ giữa vợ và chồng.",
+   "why": [
+    "Đúng: khoản 1 Điều 14.",
+    "Sai: luật không có mốc thời gian chung sống làm phát sinh quan hệ vợ chồng.",
+    "Sai: có con chung không biến việc chung sống thành hôn nhân.",
+    "Sai: xác nhận của địa phương không thay được việc đăng ký kết hôn."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chung sống như vợ chồng là việc nam, nữ {{tổ chức cuộc sống chung}} và {{coi nhau là vợ chồng}}."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "{{Chung sống như vợ chồng}} là việc nam, nữ tổ chức cuộc sống chung và coi nhau là vợ chồng."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Hải và Ngọc chung sống từ năm 2015, không đăng ký kết hôn. Năm 2026 Ngọc nộp đơn xin ly hôn và yêu cầu chia tài sản. Tòa án giải quyết thế nào?",
+   "options": [
+    "Thụ lý và tuyên bố không công nhận quan hệ vợ chồng",
+    "Trả lại đơn vì hai người không phải vợ chồng nên không thể ly hôn",
+    "Xử cho ly hôn và chia đôi tài sản như tài sản chung của vợ chồng",
+    "Buộc hai người đăng ký kết hôn trước rồi mới giải quyết ly hôn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 53: không đăng ký mà có yêu cầu ly hôn thì Tòa án thụ lý và tuyên bố không công nhận quan hệ vợ chồng; con và tài sản theo Điều 15, Điều 16.",
+   "why": [
+    "Đúng: khoản 2 Điều 53.",
+    "Sai: Tòa án vẫn thụ lý, chỉ tuyên bố không công nhận quan hệ vợ chồng.",
+    "Sai: không có hôn nhân nên không xử cho ly hôn; tài sản giải quyết theo Điều 16, không mặc nhiên chia đôi.",
+    "Sai: Tòa án không buộc đăng ký kết hôn; đăng ký là quyền tự nguyện của hai bên."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi trường hợp nam, nữ chung sống như vợ chồng mà không đăng ký kết hôn đều không được pháp luật thừa nhận là vợ chồng.",
+   "answer": false,
+   "explain": "Sai. Chung sống trước 03/01/1987 vẫn có thể được công nhận là vợ chồng theo quy định chuyển tiếp (Nghị quyết 35/2000/QH10); quy tắc \"không công nhận\" của khoản 1 Điều 14 áp dụng cho chung sống từ 01/01/2001."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Chung sống như vợ chồng có hậu quả gì giữa hai người?",
+   "model": "Nam, nữ tổ chức cuộc sống chung và coi nhau là vợ chồng nhưng không đăng ký thì không phát sinh quyền, nghĩa vụ giữa vợ và chồng; con và tài sản giải quyết theo Điều 15, Điều 16.",
+   "keywords": [
+    "cuộc sống chung",
+    "không đăng ký",
+    "không phát sinh",
+    "quyền, nghĩa vụ"
+   ]
+  }
+ ]
+}

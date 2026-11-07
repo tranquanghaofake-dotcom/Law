@@ -1,0 +1,137 @@
+{
+ "id": "ket-hon",
+ "subject": "hon-nhan-gia-dinh",
+ "chapter": "c2-ket-hon",
+ "term": "Kết hôn",
+ "definition": "Kết hôn là việc nam và nữ xác lập quan hệ vợ chồng với nhau theo quy định của Luật này về điều kiện kết hôn và đăng ký kết hôn.",
+ "plain": "Hai yếu tố cùng lúc: (1) đủ ĐIỀU KIỆN kết hôn (Điều 8) và (2) ĐĂNG KÝ kết hôn tại cơ quan có thẩm quyền (Điều 9). Thiếu đăng ký thì việc kết hôn không có giá trị pháp lý; có đăng ký mà vi phạm điều kiện thì là kết hôn trái pháp luật. Nhà nước không thừa nhận hôn nhân giữa những người cùng giới tính.",
+ "example": "Hai người đủ tuổi, tự nguyện, cùng đến Ủy ban nhân dân xã đăng ký và nhận giấy chứng nhận kết hôn.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 5 Điều 3 Luật Hôn nhân và gia đình 2014",
+  "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "hon-nhan",
+  "dieu-kien-ket-hon",
+  "dang-ky-ket-hon",
+  "chung-song-nhu-vo-chong"
+ ],
+ "keywords": [
+  "nam và nữ",
+  "xác lập quan hệ vợ chồng",
+  "điều kiện kết hôn",
+  "đăng ký kết hôn"
+ ],
+ "memo": {
+  "gist": "Kết hôn là việc một nam và một nữ chính thức trở thành vợ chồng: đủ điều kiện và có đăng ký.",
+  "kind": "checklist",
+  "hook": "Kết hôn cần hai chìa: chìa điều kiện và chìa đăng ký, thiếu một chìa cửa không mở.",
+  "tree": [
+   {
+    "label": "Đủ điều kiện",
+    "icon": "check",
+    "children": [
+     "Tuổi",
+     "Tự nguyện",
+     "Năng lực hành vi",
+     "Không thuộc trường hợp cấm"
+    ]
+   },
+   {
+    "label": "Có đăng ký",
+    "icon": "stamp",
+    "children": [
+     "Cơ quan nhà nước có thẩm quyền"
+    ]
+   },
+   {
+    "label": "Một nam, một nữ",
+    "icon": "people",
+    "children": [
+     "Không thừa nhận hôn nhân cùng giới"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Hai người đủ điều kiện, đã cưới theo phong tục nhưng không đăng ký thì có kết hôn chưa?",
+   "a": "Chưa. Việc kết hôn không đăng ký thì không có giá trị pháp lý (khoản 1 Điều 9)."
+  },
+  "contrast": [
+   {
+    "with": "chung-song-nhu-vo-chong",
+    "text": "Chung sống như vợ chồng chỉ là sống chung và coi nhau là vợ chồng, không đăng ký nên không phát sinh quyền, nghĩa vụ vợ chồng."
+   }
+  ]
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 5 Điều 3, kết hôn phải theo quy định của Luật về những vấn đề nào?",
+   "options": [
+    "Điều kiện kết hôn và đăng ký kết hôn",
+    "Lễ cưới và sự đồng ý của cha mẹ hai bên",
+    "Đăng ký kết hôn và đăng ký thường trú",
+    "Điều kiện kết hôn và thỏa thuận về tài sản"
+   ],
+   "answer": 0,
+   "explain": "Khoản 5 Điều 3: theo quy định của Luật này về điều kiện kết hôn và đăng ký kết hôn.",
+   "why": [
+    "Đúng: đủ điều kiện và có đăng ký là hai yếu tố của kết hôn.",
+    "Sai: lễ cưới và ý kiến cha mẹ không phải điều kiện pháp lý của kết hôn.",
+    "Sai: đăng ký thường trú không liên quan đến việc xác lập quan hệ vợ chồng.",
+    "Sai: thỏa thuận tài sản là tùy chọn (Điều 47), không bắt buộc để kết hôn."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Kết hôn là việc nam và nữ xác lập quan hệ vợ chồng với nhau theo quy định của Luật này về {{điều kiện kết hôn}} và {{đăng ký kết hôn}}."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Kết hôn là việc {{nam và nữ}} xác lập {{quan hệ vợ chồng}} với nhau theo quy định của Luật này về điều kiện kết hôn và đăng ký kết hôn."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Hùng nhờ cha mình mang giấy tờ ra Ủy ban nhân dân xã đăng ký kết hôn thay cho Hùng và người yêu vì Hùng bận đi công tác. Việc này có được không?",
+   "options": [
+    "Không, hai bên nam nữ phải cùng có mặt khi đăng ký kết hôn",
+    "Được, nếu có văn bản ủy quyền có công chứng của Hùng",
+    "Được, vì cha là người thân thích trong phạm vi ba đời",
+    "Được, nếu người yêu của Hùng có mặt và đồng ý ký thay"
+   ],
+   "answer": 0,
+   "explain": "Kết hôn là quyền nhân thân gắn với từng người, không ủy quyền được; theo Điều 18 Luật Hộ tịch 2014, hai bên nam, nữ cùng ký vào Sổ hộ tịch và Giấy chứng nhận kết hôn.",
+   "why": [
+    "Đúng: hai bên phải có mặt, không ủy quyền được.",
+    "Sai: kết hôn không thể ủy quyền dù văn bản có công chứng.",
+    "Sai: quan hệ thân thích không cho phép ai đăng ký kết hôn thay.",
+    "Sai: một bên không thể ký thay bên kia khi đăng ký kết hôn."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nhà nước Việt Nam thừa nhận hôn nhân giữa những người cùng giới tính nếu hai người tự nguyện và đã đăng ký.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 8: Nhà nước không thừa nhận hôn nhân giữa những người cùng giới tính."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kết hôn gồm những yếu tố nào theo khoản 5 Điều 3?",
+   "model": "Nam và nữ xác lập quan hệ vợ chồng, phải đáp ứng điều kiện kết hôn và phải đăng ký kết hôn theo Luật Hôn nhân và gia đình.",
+   "keywords": [
+    "nam và nữ",
+    "quan hệ vợ chồng",
+    "điều kiện kết hôn",
+    "đăng ký kết hôn"
+   ]
+  }
+ ]
+}

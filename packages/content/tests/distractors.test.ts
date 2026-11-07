@@ -4,7 +4,7 @@ import { join } from 'node:path';
 import { DATA_DIR } from '../src/build';
 
 // Đợt 6: chặn tái phạm các mẹo đoán đáp án từ hình thức phương án (không cần biết luật).
-// Áp cho cả 24 đơn vị (23 môn + pldc: bộ đề không có thư mục khái niệm).
+// Áp cho cả 25 đơn vị (24 môn + pldc: bộ đề không có thư mục khái niệm).
 // Ngưỡng đặt theo số liệu sau khi sửa (03/11/2026), có chừa ít khoảng; số đo lúc đặt ghi cạnh từng ngưỡng.
 //
 // 1. Đáp án đúng được dài nhất nhưng không dài hơn nhiễu dài nhất quá 10 % (đo lúc đặt: 0 câu vi phạm).
@@ -85,9 +85,9 @@ const REP1 = /(?<![\p{L}])(\p{L}+)\s+\1(?![\p{L}])/giu;
 const REP2_OK = new Set(['khởi kiện']); // "người khởi kiện khởi kiện khi…"
 const REP1_OK = new Set(['vi', 'năm', 'chỉ', 'người', 'ngày', 'từng', 'luôn', 'chứng', 'phạm', 'song', 'dịch', 'tư']);
 
-describe('phương án nhiễu không để lộ đáp án qua hình thức (đợt 6, 24 đơn vị)', () => {
-  it('đủ 24 đơn vị, mỗi đơn vị có câu trắc nghiệm', () => {
-    expect(units.length).toBe(24);
+describe('phương án nhiễu không để lộ đáp án qua hình thức (đợt 6, 25 đơn vị)', () => {
+  it('đủ 25 đơn vị, mỗi đơn vị có câu trắc nghiệm', () => {
+    expect(units.length).toBe(25);
     for (const u of units) expect(items.filter((m) => m.unit === u).length).toBeGreaterThan(0);
   });
 
