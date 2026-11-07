@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'Nhắc: nếu câu hỏi liên quan pháp luật Việt Nam (kể cả câu ngắn, không phải đề thi), gọi skill vn-legal-exam-analysis TRƯỚC khi trả lời và tra điều luật trong packages/content/data/laws/ trước khi trích số điều.'"
+          }
+        ]
+      }
+    ]
+  }
+}

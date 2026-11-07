@@ -150,7 +150,7 @@ Nhóm này có file riêng vì nó đòi cả một tầng nguồn khác — đi
 
 ## Nhóm 13 — Bẫy chứng khoán và thị trường vốn
 
-*Nguồn đối chiếu: Luật Chứng khoán số 54/2019/QH14, văn bản hợp nhất số 102/VBHN-VPQH ngày 22/4/2026 (hợp nhất Luật số 56/2024/QH15 và Luật số 142/2025/QH15), bản chữ trong kho Luyện Luật (`packages/content/data/laws/chung-khoan-vbhn-2026.txt`) — mức B đến cấp khoản, chưa đối chiếu vbpl.vn.*
+*Nguồn đối chiếu: Luật Chứng khoán số 54/2019/QH14, văn bản hợp nhất số 102/VBHN-VPQH ngày 22/4/2026 (hợp nhất Luật số 56/2024/QH15 và Luật số 142/2025/QH15), bản chữ trong kho Luyện Luật (`packages/content/data/laws/chung-khoan-vbhn-2026.txt`) — mức B đến cấp khoản. Đã đối chiếu vbpl.vn ngày 07/11/2026 (bản cache 02/11/2026) cho khoản 19, 20, 21 Điều 4: mức A; điểm i khoản 1 Điều 15 chưa đối chiếu được, vẫn mức B.*
 
 **Đánh tráo thị trường sơ cấp và thứ cấp.** Ở thị trường sơ cấp, nhà đầu tư mua chứng khoán mới từ tổ chức phát hành và tiền chảy vào tổ chức phát hành (khoản 21 Điều 4: tổ chức phát hành là tổ chức thực hiện chào bán, phát hành chứng khoán; điểm i khoản 1 Điều 15: tổ chức phát hành mở tài khoản phong tỏa nhận tiền mua cổ phiếu của đợt chào bán). Tiền chuyển giữa các nhà đầu tư là đặc điểm của thị trường thứ cấp. Nhận định gán dòng tiền "giữa các nhà đầu tư" cho thị trường sơ cấp là sai. Lưu ý: luật không định nghĩa hai cụm "sơ cấp", "thứ cấp" — đây là phân loại học thuật, phải gắn nhãn như vậy.
 
