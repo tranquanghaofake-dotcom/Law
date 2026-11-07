@@ -163,9 +163,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi nghĩa vụ dân sự đều phát sinh từ hợp đồng.",
+   "statement": "Gây thiệt hại do hành vi trái pháp luật không phải là căn cứ phát sinh nghĩa vụ dân sự.",
    "answer": false,
-   "explain": "Sai. Điều 275 có sáu căn cứ."
+   "explain": "Sai. Khoản 5 Điều 275 quy định gây thiệt hại do hành vi trái pháp luật là một căn cứ phát sinh nghĩa vụ."
   },
   {
    "type": "recall",

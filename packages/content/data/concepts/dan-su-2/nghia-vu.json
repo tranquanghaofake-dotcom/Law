@@ -162,9 +162,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Nghĩa vụ dân sự chỉ có thể là nghĩa vụ chuyển giao tài sản.",
+   "statement": "Nghĩa vụ dân sự không bao gồm việc không được thực hiện công việc nhất định.",
    "answer": false,
-   "explain": "Sai. Điều 274 gồm cả thực hiện hoặc không thực hiện công việc nhất định."
+   "explain": "Sai. Điều 274 gồm cả thực hiện hoặc không được thực hiện công việc nhất định."
   },
   {
    "type": "recall",

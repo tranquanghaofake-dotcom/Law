@@ -156,9 +156,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi hợp đồng thuê người làm việc đều là hợp đồng dịch vụ.",
+   "statement": "Theo Bộ luật Dân sự 2015, bên sử dụng dịch vụ không phải trả tiền dịch vụ cho bên cung ứng dịch vụ.",
    "answer": false,
-   "explain": "Sai. Có yếu tố quản lý, điều hành, giám sát và trả lương thì là hợp đồng lao động."
+   "explain": "Sai. Điều 513: bên sử dụng dịch vụ phải trả tiền dịch vụ cho bên cung ứng dịch vụ."
   },
   {
    "type": "recall",
