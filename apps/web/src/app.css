@@ -1809,6 +1809,8 @@ select.qz-sort { min-height: var(--ctl-h); padding: 0 var(--sp-3); border: 1px s
 .review-empty p { margin: 0 0 var(--sp-3); }
 .review-empty .re-ok { display: flex; align-items: center; gap: var(--sp-2); font-weight: 600; }
 .review-empty .re-ok .glyph { color: var(--ok); flex: none; }
+.review-empty .re-weak { margin: var(--sp-3) 0 0; padding: var(--sp-3); border-left: 3px solid var(--accent); background: var(--paper-label, transparent); border-radius: 6px; }
+.review-empty .re-weak a { font-weight: 600; white-space: nowrap; }
 .review-empty .re-stale { display: flex; gap: var(--sp-2); align-items: flex-start; } .review-empty .re-stale .glyph { color: var(--seal); flex: none; margin-top: 2px; }
 .review-empty .row .btn { flex: 0 1 auto; }
 /* Kết quả quiz: điều hướng phụ là link chữ (đợt 3) */

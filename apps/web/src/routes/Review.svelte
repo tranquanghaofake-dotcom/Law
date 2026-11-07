@@ -10,6 +10,7 @@
   import { hashFor, route } from '$lib/router.svelte';
   import { nextReview } from '$lib/ui/dueByDay';
   import Glyph from '$lib/art/Glyph.svelte';
+  import { loadWeak, type WeakItem } from '$lib/ui/weak';
   const subjectId = route.params.subject as string | undefined;
 
   let data = $state<{ steps: Step[]; concepts: Concept[]; levels: Record<string, Level>; upDays: Record<string, string> } | null>(null);
@@ -21,8 +22,11 @@
     const all = await repo.all(subjectId);
     upcoming = { learned: all.length, next: nextReview(all.map((c) => c.card.due)), stale };
     empty = true;
+    loadWeak().then((w) => { weak = w.items[0] ?? null; }).catch(() => { /* không có gợi ý */ });
   }
   let error = $state('');
+  /** Bài hay sai nhất (90 ngày): gợi ý luyện thêm khi hết bài đến hạn, để trang Ôn không là ngõ cụt. */
+  let weak = $state<WeakItem | null>(null);
 
   async function load() {
     try {
@@ -77,6 +81,9 @@
       {:else}
         <p class="re-ok"><Glyph name="check" size={20} /> Hôm nay không còn khái niệm nào cần ôn{subjectId ? ' trong môn này' : ''}.</p>
         {#if upcoming.next}<p class="re-next">Lần ôn tới: <b>{upcoming.next.inDays === 1 ? 'ngày mai' : `${upcoming.next.inDays} ngày nữa`}</b> ({upcoming.next.date}) · {upcoming.next.count} khái niệm.</p>{/if}
+      {/if}
+      {#if weak && !upcoming.stale}
+        <p class="re-weak">Muốn luyện thêm? Bài bạn hay sai nhất: <b>{weak.lessonTitle}</b> ({weak.short}, đúng {weak.correct}/{weak.tries}). <a href={weak.href}>Ôn bài này →</a></p>
       {/if}
       <div class="row">
         <a class="btn primary" href={subjectId ? hashFor('subject', { subject: subjectId }) : hashFor('home')}>Học đợt mới →</a>
