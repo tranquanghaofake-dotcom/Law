@@ -152,7 +152,7 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Thỏa thuận hợp pháp giữa hai bên chỉ có giá trị với hai bên, người khác không phải tôn trọng.",
+   "statement": "Thỏa thuận hợp pháp giữa hai bên có hiệu lực với hai bên, còn người khác có thể bỏ qua thỏa thuận đó.",
    "answer": false,
    "explain": "Sai. Khoản 2 Điều 3: thỏa thuận hợp pháp có hiệu lực với các bên và phải được chủ thể khác tôn trọng.",
    "parts": {

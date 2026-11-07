@@ -150,9 +150,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Thành viên pháp nhân luôn phải chịu trách nhiệm bằng tài sản riêng về nghĩa vụ của pháp nhân.",
+   "statement": "Người của pháp nhân phải chịu trách nhiệm dân sự bằng tài sản riêng thay cho pháp nhân về nghĩa vụ pháp nhân xác lập, kể cả khi luật không có quy định như vậy.",
    "answer": false,
-   "explain": "Sai. Pháp nhân tự chịu trách nhiệm bằng tài sản của mình (điểm c khoản 1 Điều 74).",
+   "explain": "Sai. Khoản 3 Điều 87: người của pháp nhân không chịu trách nhiệm thay cho pháp nhân, trừ trường hợp luật có quy định khác; pháp nhân tự chịu trách nhiệm bằng tài sản của mình (điểm c khoản 1 Điều 74).",
    "parts": {
     "basis": {
      "options": [

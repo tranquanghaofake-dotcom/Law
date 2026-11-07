@@ -159,7 +159,7 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Chỉ chủ sở hữu mới có thể chiếm hữu tài sản.",
+   "statement": "Người không phải là chủ sở hữu mà đang nắm giữ, chi phối tài sản thì không được coi là chiếm hữu theo Bộ luật Dân sự 2015.",
    "answer": false,
    "explain": "Sai. Khoản 2 Điều 179: chiếm hữu gồm cả chiếm hữu của người không phải là chủ sở hữu.",
    "parts": {
