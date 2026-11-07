@@ -147,3 +147,13 @@ Nhóm này có file riêng vì nó đòi cả một tầng nguồn khác — đi
 **Tuyên bố mất tích không tự chấm dứt hôn nhân.** Vợ, chồng của người bị tuyên bố mất tích **yêu cầu ly hôn** thì Tòa giải quyết cho ly hôn (khoản 2 Điều 56) — hôn nhân chấm dứt bằng bản án, quyết định ly hôn, không bằng quyết định tuyên bố mất tích. Đối chiếu với tuyên bố chết: hôn nhân chấm dứt theo ngày chết ghi trong bản án, quyết định của Tòa án (Điều 65) — tuyên bố chết làm chấm dứt hôn nhân, tuyên bố mất tích thì không.
 
 **Hôn nhân thực tế là bẫy hiệu lực theo thời gian của môn này.** Công nhận quan hệ vợ chồng không đăng ký phụ thuộc vào mốc bắt đầu chung sống (trước 03/01/1987; từ 03/01/1987 đến trước 01/01/2001; từ 01/01/2001) theo Nghị quyết 35/2000/QH10 và các văn bản hướng dẫn (mức B — chưa đối chiếu trong phiên). Dấu hiệu: đề nêu năm bắt đầu chung sống — đó là dữ kiện quyết định, không phải chi tiết trang trí; cũng nhớ khoản 1 Điều 131 Luật 2014: quan hệ xác lập trước ngày luật có hiệu lực áp dụng pháp luật tại thời điểm xác lập.
+
+## Nhóm 13 — Bẫy chứng khoán và thị trường vốn
+
+*Nguồn đối chiếu: Luật Chứng khoán số 54/2019/QH14, văn bản hợp nhất số 102/VBHN-VPQH ngày 22/4/2026 (hợp nhất Luật số 56/2024/QH15 và Luật số 142/2025/QH15), bản chữ trong kho Luyện Luật (`packages/content/data/laws/chung-khoan-vbhn-2026.txt`) — mức B đến cấp khoản, chưa đối chiếu vbpl.vn.*
+
+**Đánh tráo thị trường sơ cấp và thứ cấp.** Ở thị trường sơ cấp, nhà đầu tư mua chứng khoán mới từ tổ chức phát hành và tiền chảy vào tổ chức phát hành (khoản 21 Điều 4: tổ chức phát hành là tổ chức thực hiện chào bán, phát hành chứng khoán; điểm i khoản 1 Điều 15: tổ chức phát hành mở tài khoản phong tỏa nhận tiền mua cổ phiếu của đợt chào bán). Tiền chuyển giữa các nhà đầu tư là đặc điểm của thị trường thứ cấp. Nhận định gán dòng tiền "giữa các nhà đầu tư" cho thị trường sơ cấp là sai. Lưu ý: luật không định nghĩa hai cụm "sơ cấp", "thứ cấp" — đây là phân loại học thuật, phải gắn nhãn như vậy.
+
+**Chào bán ra công chúng và chào bán riêng lẻ phân theo số nhà đầu tư và phương thức.** Chào bán ra công chúng gồm chào bán qua phương tiện thông tin đại chúng, cho từ 100 nhà đầu tư trở lên (không kể nhà đầu tư chứng khoán chuyên nghiệp), hoặc cho nhà đầu tư không xác định (khoản 19 Điều 4); chào bán riêng lẻ là phần còn lại theo khoản 20 Điều 4. Bẫy: đếm cả nhà đầu tư chuyên nghiệp vào ngưỡng 100, hoặc bỏ qua phương thức qua phương tiện thông tin đại chúng.
+
+**Cổ đông hiện hữu bán cổ phần đã phát hành không phải "chào bán" của tổ chức phát hành.** Đây là giao dịch thứ cấp dù đời thường gọi là "bán IPO"; phần này là suy luận từ khái niệm, không có điều luật nêu thẳng.

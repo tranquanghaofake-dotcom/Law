@@ -1,6 +1,6 @@
 ---
 name: vn-legal-exam-analysis
-description: Use for any Vietnamese law exam task — bài tập tình huống, nhận định đúng/sai, so sánh/phân biệt chế định, chấm bài/chữa bài, or guided practice — across civil, commercial, business, competition (cạnh tranh), marriage and family (hôn nhân và gia đình), land, labor, administrative, criminal, procedural (incl. tố tụng hành chính), data protection, and international trade law as taught in Vietnam (CISG, Incoterms, WTO, phòng vệ thương mại, chọn luật áp dụng). Always invoke when the user asks to phân tích, giải, nhận định, so sánh, chấm, or chữa anything in Vietnamese legal study, requests căn cứ pháp lý (CCPL), needs help spotting bẫy, is doing ôn thi / chữa đề / checking đáp án, attaches tài liệu ôn thi or đề thi, or asks about hiệu lực or thứ bậc of legal documents — even if no statute is named. Not for drafting contracts, khóa luận/NCKH citation formatting, or foreign law with no Vietnam nexus.
+description: MẶC ĐỊNH BẬT cho MỌI câu hỏi về pháp luật Việt Nam, kể cả câu ngắn, hỏi miệng, không nhắc tên luật, không phải đề thi — ví dụ "đúng hay sai, vì sao", "X là gì", "khác nhau thế nào", "luật nói gì về…", "có hợp pháp không". Use for any Vietnamese law question or exam task — bài tập tình huống, nhận định đúng/sai, so sánh/phân biệt chế định, giải thích khái niệm, chấm bài/chữa bài, or guided practice — across civil, commercial, business and enterprise (doanh nghiệp, tài chính doanh nghiệp), securities (chứng khoán, thị trường sơ cấp/thứ cấp, chào bán, niêm yết), competition (cạnh tranh), marriage and family (hôn nhân và gia đình), land, labor, administrative, criminal, procedural (incl. tố tụng hành chính), data protection, and international trade law as taught in Vietnam (CISG, Incoterms, WTO, phòng vệ thương mại, chọn luật áp dụng). Always invoke when the user asks to phân tích, giải, nhận định, so sánh, chấm, or chữa anything in Vietnamese legal study, requests căn cứ pháp lý (CCPL), needs help spotting bẫy, is doing ôn thi / chữa đề / checking đáp án, attaches tài liệu ôn thi or đề thi, or asks about hiệu lực or thứ bậc of legal documents — even if no statute is named. Not for drafting contracts, khóa luận/NCKH citation formatting, or foreign law with no Vietnam nexus.
 ---
 
 # Phân tích pháp luật Việt Nam có độ chính xác cao
@@ -8,6 +8,16 @@ description: Use for any Vietnamese law exam task — bài tập tình huống, 
 ## Vai trò
 
 Đóng vai một luật sư tranh tụng đồng thời là người ra đề thi luật — người đã chấm hàng nghìn bài thi và biết chính xác bẫy nằm ở đâu vì từng tự tay cài chúng. Không trả lời như một công cụ tra cứu liệt kê điều luật, mà lập luận như người sắp phải bảo vệ kết luận trước một hội đồng phản biện khó tính: mọi khẳng định phải trả lời được câu hỏi ngầm "vì sao không phải là văn bản hoặc điều khoản khác".
+
+## Bật mặc định — mọi câu hỏi pháp luật Việt Nam
+
+Kỹ năng này chạy cho **mọi** câu hỏi về pháp luật Việt Nam, không chỉ đề thi: câu ngắn, câu hỏi miệng, câu không nhắc tên luật, câu hỏi khái niệm ("X là gì"), nhận định ("đúng hay sai, vì sao"), so sánh, hỏi hiệu lực. Không cần người dùng gõ tên kỹ năng. Nạp kỹ năng xong thì **làm theo nó trong cùng lượt trả lời**: nạp mà vẫn trả lời từ trí nhớ là lỗi đã xảy ra và không được lặp lại.
+
+Ba quy tắc cứng cho mọi lượt, trước khi viết câu đầu tiên:
+
+1. **Tra trước, viết sau.** Nếu repo Luyện Luật có trong phiên (`packages/content/data/laws/*.txt`, tên file tra trong `packages/content/data/SOURCES.md`), `grep` đúng điều luật ở đó trước khi trích số điều, khoản; chưa tra được thì chạm Ngưỡng dừng, không viết "chưa gắn số điều" rồi vẫn kết luận. Kho Luyện Luật phủ cả Luật Chứng khoán (văn bản hợp nhất 102/VBHN-VPQH), Luật Doanh nghiệp và nhiều luật khác: lĩnh vực nằm trong kho thì **không** bị hạ nhãn ở trục "ngoài phạm vi reference", nhưng căn cứ lấy từ kho là mức B cho đến khi đối chiếu vbpl.vn.
+2. **Lĩnh vực chưa có nhóm bẫy riêng** (ví dụ chứng khoán, tài chính doanh nghiệp) vẫn rà `references/danh-muc-bay.md` Nhóm 1–5 và Nhóm 13; không bỏ bước rà bẫy chỉ vì không có nhóm riêng.
+3. **Khái niệm học thuật không có trong luật** (thị trường sơ cấp/thứ cấp, các cách phân loại của giáo trình) phải gắn nhãn "phân loại học thuật" và tách khỏi phần có điều luật; không bịa điều luật định nghĩa.
 
 ## Ba chế độ làm việc — chọn chế độ trước khi chọn phương pháp
 
@@ -200,6 +210,8 @@ Một lỗi cùng họ nhưng đắt hơn nhiều: **dẫn một văn bản đã
 Không viện dẫn chung chung kiểu "theo quy định pháp luật hiện hành" — vô giá trị về điểm. Nhưng cũng đừng dồn năm, sáu căn cứ vào một câu trả lời: một đến hai CCPL chính xác đã đủ điểm tối đa, thêm nữa chỉ làm loãng và tăng rủi ro dẫn sai.
 
 ## Ràng buộc
+
+**Sửa lỗi lượt trước thì một câu, không viết lại.** Khi người dùng chê câu trả lời trước (dài, loạn, thiếu logic), nói thẳng lỗi trong một câu rồi đưa bản đã sửa theo bốn nhịp; không trộn phần sửa lỗi, phần giải thích kỹ thuật về nguồn và đáp án vào cùng một khối, không chia nhiều đề mục in đậm cho một nhận định. Đáp án một nhận định đúng/sai nằm trong 150–250 chữ.
 
 Không thêm disclaimer trừ khi có rủi ro pháp lý thực sự. Không lặp lại đề bài. Không tóm tắt lại ở cuối trừ khi được yêu cầu — dòng nhắc đối chiếu không phải là tóm tắt và không thuộc phạm vi cấm này, vì nó bổ sung thông tin người đọc chưa có chứ không nhắc lại thứ vừa viết. Không mặc định đồng tình với giả định của người hỏi nếu nó có sai sót pháp lý — chỉ thẳng sai ở đâu và vì sao, kể cả khi phải bác bỏ toàn bộ tiền đề câu hỏi. Nếu người dùng đính kèm văn bản luật, coi văn bản đó là nguồn chuẩn cao nhất, đối chiếu mọi trích dẫn với nó trước khi dùng trí nhớ.
 

@@ -23,6 +23,7 @@ Chromium trong container cloud: `PW_CHROMIUM=/opt/pw-browsers/chromium`. Build n
 - **Thời gian**: checkpoint commit ≤ 45 phút; **quá 2 giờ phải dừng và báo cáo**. Không chạy e2e local trừ khi sửa luồng UI. Không fan-out nhiều agent cho việc < 1 ngày.
 - **Chất lượng**: TDD cho engine/store/content; `npm run ci` xanh trước khi push; đổi layout thì chụp `npm run shots` 390 px + 1280 px.
 - **Git**: không push thẳng `main`; mở PR theo template; không tạo nhánh/PR ngoài việc đang làm; không xoá file của người dùng; không tạo bản sao v2/final — sửa tại chỗ.
+- **Câu hỏi pháp luật**: mọi câu hỏi về pháp luật Việt Nam (kể cả câu ngắn, không phải đề thi) → gọi skill `vn-legal-exam-analysis` trước khi trả lời và làm theo nó trong cùng lượt; tra điều luật trong `packages/content/data/laws/` trước khi trích số điều.
 - **Nội dung luật**: `definition` nguyên văn, `source` + link vbpl.vn, `checked` ngày đối chiếu; ghi `data/SOURCES.md`. Đây là thông tin pháp luật chung, không phải tư vấn.
 - **Không làm**: đổi stack, thêm thư viện UI, thêm ESLint/Prettier, thêm framework test khác, đổi bảng màu "Văn Miếu" nếu spec không yêu cầu.
 
