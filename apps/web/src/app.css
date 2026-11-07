@@ -688,6 +688,7 @@ kbd { font: 600 var(--fs-xs)/1 var(--font-ui); background: rgba(255,255,255,.18)
 .entry-head { display: flex; align-items: center; gap: var(--sp-1); }
 .entry-h { flex: 1; min-width: 0; margin: 0; font-size: var(--fs-md); line-height: var(--lh-snug); font-weight: 600; display: flex; }
 .concept-group { font-size: var(--fs-md); margin: var(--sec-gap) 0 var(--sp-2); }
+.other-list { list-style: none; padding: 0; margin: 0 0 var(--sec-gap); display: grid; gap: var(--sp-1); } .other-list a { display: inline-block; min-height: 44px; padding: 10px 0; font-weight: 600; }
 .concept-count { margin: var(--sp-2) 0 0; }
 .entry-body .source { font-size: var(--fs-sm); margin: calc(-1 * var(--sp-2)) 0 var(--sp-3); }
 .entry-body .source a { display: inline-flex; align-items: center; gap: 2px; min-height: 24px; }

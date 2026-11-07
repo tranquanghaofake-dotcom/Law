@@ -5,12 +5,12 @@
   import { PAGE_ART } from '$lib/art/registry';
   // Danh mục khái niệm của một môn: đọc nhanh định nghĩa, căn cứ, khái niệm dễ nhầm; tìm không dấu; ★ đánh dấu.
   import type { Concept, Level, Subject } from '$lib/content/types';
-  import { loadConceptPool, loadSubject, loadSubjectConcepts } from '$lib/content/loader';
+  import { loadConceptPool, loadSubject, loadSubjectConcepts, loadTermIndex } from '$lib/content/loader';
   import { repo } from '$lib/store/progress-repo';
   import { stars } from '$lib/store/stars.svelte';
   import { hashFor, route } from '$lib/router.svelte';
   import { levelName } from '$lib/game/levels';
-  import { matchConcept } from '$lib/ui/conceptSearch';
+  import { matchConcept, searchOtherSubjects, type TermHit } from '$lib/ui/conceptSearch';
   import CompareTable from '$lib/ui/CompareTable.svelte';
   import { compareConcepts } from '$lib/engine/compare';
   import { tick } from 'svelte';
@@ -35,6 +35,15 @@
       concepts: l.concepts.map((id) => byId[id]).filter((c): c is Concept => !!c)
         .filter((c) => matchConcept(c, query) && (!onlyStarred || stars.has(c.id))),
     }))).filter((g) => g.concepts.length);
+  });
+  // Tìm cả ở môn khác (theo tên): người học có thuật ngữ nhưng không biết thuộc môn nào. Tải bảng tên khi bắt đầu gõ.
+  let others = $state<TermHit[]>([]);
+  $effect(() => {
+    const q = query; const sid = subject?.id;
+    if (!sid || q.trim().length < 2) { others = []; return; }
+    let alive = true;
+    loadTermIndex().then((ix) => { if (alive && q === query) others = searchOtherSubjects(q, ix, sid); }).catch(() => { if (alive) others = []; });
+    return () => { alive = false; };
   });
   const shown = $derived(groups.reduce((n, g) => n + g.concepts.length, 0));
   const total = $derived(Object.keys(byId).length);
@@ -143,4 +152,13 @@
       {/each}
     </ul>
   {/each}
+
+  {#if others.length}
+    <section class="other-subjects" aria-labelledby="other-h">
+      <h2 id="other-h" class="concept-group">Có ở môn khác</h2>
+      <ul class="other-list">
+        {#each others as o (o.subject + '/' + o.id)}<li><a href={hashFor('concepts', { subject: o.subject, concept: o.id })}>{o.term}</a> <span class="muted small">· {o.short}</span></li>{/each}
+      </ul>
+    </section>
+  {/if}
 {/if}
