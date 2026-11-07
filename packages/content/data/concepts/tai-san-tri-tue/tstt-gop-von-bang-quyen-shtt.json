@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 34 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 34 Luật Doanh nghiệp — quyền sở hữu trí tuệ là tài sản góp vốn.",
+    "Sai: quyền nhân thân không định giá được bằng tiền và không chuyển giao được.",
+    "Sai: uy tín cá nhân không phải tài sản góp vốn.",
+    "Sai: danh hiệu thi đua không phải tài sản."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 34 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 34 Luật Doanh nghiệp — chủ sở hữu hợp pháp hoặc người có quyền sử dụng hợp pháp.",
+    "Sai: hiểu biết về tài sản không tạo ra quyền góp vốn.",
+    "Sai: Nhà nước không góp vốn thay chủ sở hữu.",
+    "Sai: tác giả không phải chủ sở hữu thì không có quyền đem góp vốn."
+   ]
   },
   {
    "type": "pair",

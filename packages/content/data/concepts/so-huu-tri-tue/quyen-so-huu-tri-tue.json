@@ -83,7 +83,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 4 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 4 — quyền tác giả và quyền liên quan, quyền sở hữu công nghiệp, quyền đối với giống cây trồng.",
+    "Sai: thiếu quyền sở hữu công nghiệp và quyền đối với giống cây trồng, và không giới hạn trong nước.",
+    "Sai: đất đai, nhà ở không phải đối tượng sở hữu trí tuệ.",
+    "Sai: thừa kế thuộc pháp luật dân sự, không phải bộ phận của quyền sở hữu trí tuệ."
+   ]
   },
   {
    "type": "mcq",
@@ -100,7 +106,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 4 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 4 — quyền tác giả là quyền đối với tác phẩm do mình sáng tạo ra hoặc sở hữu.",
+    "Sai: nhãn hiệu thuộc quyền sở hữu công nghiệp.",
+    "Sai: giống cây trồng là đối tượng riêng.",
+    "Sai: sáng chế thuộc quyền sở hữu công nghiệp."
+   ]
   },
   {
    "type": "pair",

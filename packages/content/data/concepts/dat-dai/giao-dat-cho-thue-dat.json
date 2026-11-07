@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 118 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 118 — giao đất nông nghiệp trong hạn mức cho cá nhân trực tiếp sản xuất không thu tiền sử dụng đất.",
+    "Sai: trường hợp này không thu tiền sử dụng đất.",
+    "Sai: đây là giao đất, không phải cho thuê.",
+    "Sai: không áp dụng đấu giá cho trường hợp này."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 120 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 120 — các trường hợp còn lại Nhà nước cho thuê đất trả tiền một lần hoặc hằng năm.",
+    "Sai: giao đất không thu tiền chỉ áp dụng cho các trường hợp ở Điều 118.",
+    "Sai: tịch thu không phải hình thức giao, cho thuê đất.",
+    "Sai: trưng dụng là biện pháp khẩn cấp có thời hạn, không phải hình thức giao, cho thuê đất."
+   ]
   },
   {
    "type": "pair",

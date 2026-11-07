@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 143 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 143 — trong hợp đồng độc quyền, bên chuyển quyền chỉ được sử dụng khi bên được chuyển quyền cho phép.",
+    "Sai: được sử dụng song song là đặc điểm của hợp đồng không độc quyền.",
+    "Sai: bên chuyển quyền vẫn có thể sử dụng nếu bên được chuyển quyền cho phép.",
+    "Sai: điều kiện là sự cho phép của bên được chuyển quyền, không phải lãnh thổ hay hết hạn."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 143 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 143 — hợp đồng thứ cấp là hợp đồng mà bên chuyển quyền là người được chuyển giao quyền sử dụng theo một hợp đồng khác.",
+    "Sai: ký lại để gia hạn không phải hợp đồng thứ cấp.",
+    "Sai: giá trị hợp đồng không quyết định dạng hợp đồng.",
+    "Sai: việc đăng ký không quyết định dạng hợp đồng."
+   ]
   },
   {
    "type": "pair",

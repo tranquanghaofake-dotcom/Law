@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 28 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 28 — sử dụng theo ngoại lệ nhưng không nêu tên tác giả là xâm phạm quyền tác giả.",
+    "Sai: ngoại lệ ở Điều 25 luôn đòi nêu tên tác giả, nguồn gốc.",
+    "Sai: luật coi là hành vi xâm phạm.",
+    "Sai: đây là quyền tác giả, không phải nhãn hiệu."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 28 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 28 coi cố ý vô hiệu hóa biện pháp công nghệ bảo vệ quyền tác giả là hành vi xâm phạm.",
+    "Sai: đây là hành vi xâm phạm.",
+    "Sai: người dùng hợp pháp không có quyền phá biện pháp công nghệ.",
+    "Sai: hành vi xâm phạm quyền tác giả, không phải cạnh tranh không lành mạnh."
+   ]
   },
   {
    "type": "pair",

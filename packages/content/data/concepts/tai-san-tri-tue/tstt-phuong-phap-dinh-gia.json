@@ -76,7 +76,13 @@
     "Không định giá được"
    ],
    "answer": 0,
-   "explain": "Bài giảng: phương pháp chi phí phù hợp với tài sản trí tuệ mới hình thành."
+   "explain": "Bài giảng: phương pháp chi phí phù hợp với tài sản trí tuệ mới hình thành.",
+   "why": [
+    "Đúng: theo bài giảng, tài sản trí tuệ mới hình thành chưa có giao dịch, chưa có dòng thu nhập nên dùng tiếp cận theo chi phí.",
+    "Sai: tiếp cận thị trường cần giao dịch tương đương, tài sản mới chưa có.",
+    "Sai: tiếp cận thu nhập cần dòng thu nhập có thể dự báo, tài sản chưa có chỗ đứng khó áp dụng.",
+    "Sai: vẫn định giá được bằng tiếp cận chi phí."
+   ]
   },
   {
    "type": "mcq",
@@ -89,7 +95,13 @@
     "Có văn bằng bảo hộ đã được cấp"
    ],
    "answer": 0,
-   "explain": "Thị trường tích cực: phải có giao dịch tương đương."
+   "explain": "Thị trường tích cực: phải có giao dịch tương đương.",
+   "why": [
+    "Đúng: theo bài giảng, phải có giao dịch tương đương để so sánh.",
+    "Sai: sổ sách chi phí là dữ liệu của tiếp cận chi phí.",
+    "Sai: dự báo lợi nhuận là dữ liệu của tiếp cận thu nhập.",
+    "Sai: có văn bằng không phải điều kiện của tiếp cận thị trường."
+   ]
   },
   {
    "type": "pair",

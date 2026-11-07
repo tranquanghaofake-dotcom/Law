@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 131 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 131 Luật Đất đai 2024 — đăng ký bắt buộc đối với người sử dụng đất và người được giao đất để quản lý.",
+    "Sai: đăng ký đất đai là bắt buộc, không tùy nhu cầu.",
+    "Sai: nghĩa vụ đăng ký áp dụng cho mọi người sử dụng đất, kể cả cá nhân.",
+    "Sai: bắt buộc cả đăng ký lần đầu, không chỉ khi chuyển nhượng."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 131 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 131 — đăng ký điện tử có giá trị pháp lý như đăng ký trên giấy.",
+    "Sai: luật không coi đăng ký điện tử thấp hơn.",
+    "Sai: luật không coi đăng ký điện tử cao hơn.",
+    "Sai: đăng ký điện tử có giá trị pháp lý, không chỉ để tham khảo."
+   ]
   },
   {
    "type": "pair",

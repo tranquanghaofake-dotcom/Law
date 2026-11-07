@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 211 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 1 Điều 211 — sản xuất, nhập khẩu, vận chuyển, buôn bán hàng hóa giả mạo về sở hữu trí tuệ bị xử phạt hành chính.",
+    "Sai: sử dụng theo hợp đồng là hợp pháp.",
+    "Sai: nộp đơn đăng ký là quyền của người nộp đơn.",
+    "Sai: khiếu nại là quyền hợp pháp."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 205 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: bồi thường thiệt hại do Tòa án quyết định trong vụ kiện dân sự (Điều 204, 205); tiền phạt hành chính nộp ngân sách.",
+    "Sai: xử phạt hành chính không đem lại bồi thường cho chủ thể quyền.",
+    "Sai: tố cáo dẫn tới xử lý vi phạm, không phải bồi thường.",
+    "Sai: đăng ký lại không đem lại bồi thường."
+   ]
   },
   {
    "type": "pair",

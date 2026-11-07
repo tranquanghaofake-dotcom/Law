@@ -74,7 +74,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 123 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 123 — sử dụng, cho phép người khác sử dụng; ngăn cấm người khác sử dụng; định đoạt.",
+    "Sai: quyền của chủ sở hữu rộng hơn việc đứng tên trên sản phẩm.",
+    "Sai: quyền nhân thân thuộc tác giả sáng chế, kiểu dáng; quyền của chủ sở hữu là quyền tài sản.",
+    "Sai: chủ sở hữu không có quyền thu thuế."
+   ]
   },
   {
    "type": "mcq",
@@ -91,7 +97,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 125 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 2 Điều 125 — sử dụng sáng chế nhằm nghiên cứu khoa học, giảng dạy, phi thương mại thì chủ sở hữu không có quyền cấm.",
+    "Sai: đây là ngoại lệ, chủ sở hữu không được cấm.",
+    "Sai: thông báo trước không làm phát sinh quyền cấm.",
+    "Sai: thiệt hại không làm mất ngoại lệ."
+   ]
   },
   {
    "type": "pair",

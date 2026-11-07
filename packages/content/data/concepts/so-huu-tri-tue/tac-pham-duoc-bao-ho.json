@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 14 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 14 — tác phẩm phái sinh được bảo hộ nếu không gây phương hại đến quyền tác giả đối với tác phẩm gốc.",
+    "Sai: quốc tịch người sáng tạo không phải điều kiện này.",
+    "Sai: quyền tác giả không phụ thuộc đăng ký.",
+    "Sai: tác phẩm phái sinh có sáng tạo riêng, được bảo hộ."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 14, Điều 15 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm m khoản 1 Điều 14 — chương trình máy tính là tác phẩm được bảo hộ.",
+    "Sai: văn bản quy phạm pháp luật không được bảo hộ (Điều 15).",
+    "Sai: tin tức thời sự thuần túy không được bảo hộ (Điều 15).",
+    "Sai: số liệu không được bảo hộ (Điều 15)."
+   ]
   },
   {
    "type": "pair",

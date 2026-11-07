@@ -74,7 +74,13 @@
     "Có tính sáng tạo cao"
    ],
    "answer": 0,
-   "explain": "Tài sản trí tuệ không bị hao mòn, cạn kiệt khi sử dụng — khác tài sản hữu hình."
+   "explain": "Tài sản trí tuệ không bị hao mòn, cạn kiệt khi sử dụng — khác tài sản hữu hình.",
+   "why": [
+    "Đúng: theo bài giảng, tài sản trí tuệ không bị hao mòn, cạn kiệt khi sử dụng.",
+    "Sai: vô hình là đặc điểm của tài sản trí tuệ.",
+    "Sai: khả năng sinh lời là đặc điểm của tài sản trí tuệ.",
+    "Sai: tính sáng tạo là đặc điểm của tài sản trí tuệ."
+   ]
   },
   {
    "type": "mcq",
@@ -87,7 +93,13 @@
     "Quyền SHTT không giới hạn thời gian và không giới hạn lãnh thổ bảo hộ của pháp luật"
    ],
    "answer": 0,
-   "explain": "Tài sản trí tuệ là đối tượng; quyền SHTT là quyền pháp lý đối với đối tượng đó, giới hạn về không gian và thời hạn bảo hộ."
+   "explain": "Tài sản trí tuệ là đối tượng; quyền SHTT là quyền pháp lý đối với đối tượng đó, giới hạn về không gian và thời hạn bảo hộ.",
+   "why": [
+    "Đúng: theo bài giảng, quyền sở hữu trí tuệ là quyền pháp luật bảo hộ đối với tài sản trí tuệ, có giới hạn thời gian và lãnh thổ.",
+    "Sai: hai khái niệm khác nhau: một là đối tượng, một là quyền.",
+    "Sai: tài sản trí tuệ là đối tượng, không phải một loại quyền.",
+    "Sai: quyền sở hữu trí tuệ có giới hạn thời gian và lãnh thổ."
+   ]
   },
   {
    "type": "pair",

@@ -89,7 +89,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 13 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 5 Điều 13 — Nhà nước quyết định thu hồi đất, trưng dụng đất.",
+    "Sai: chuyển nhượng là quyền của người sử dụng đất.",
+    "Sai: thế chấp là quyền của người sử dụng đất.",
+    "Sai: thừa kế là quyền của người sử dụng đất."
+   ]
   },
   {
    "type": "mcq",
@@ -106,7 +112,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 13 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 13 — quyết định mục đích thông qua quy hoạch, kế hoạch, giao đất, cho thuê đất, công nhận quyền, cho phép chuyển mục đích.",
+    "Sai: thiếu giao đất, cho thuê đất, công nhận quyền, cho phép chuyển mục đích.",
+    "Sai: cấp Giấy chứng nhận và thu tiền không phải công cụ quyết định mục đích sử dụng.",
+    "Sai: giá đất, thuế không phải công cụ quyết định mục đích sử dụng."
+   ]
   },
   {
    "type": "pair",

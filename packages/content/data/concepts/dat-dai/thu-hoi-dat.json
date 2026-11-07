@@ -83,7 +83,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 79 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 79 — chỉ thu hồi trong trường hợp thật cần thiết, thuộc các trường hợp được liệt kê.",
+    "Sai: đề nghị của nhà đầu tư không đủ; phải thuộc trường hợp ở Điều 79.",
+    "Sai: giá đất tăng không phải căn cứ thu hồi.",
+    "Sai: nợ thuế xử lý theo pháp luật thuế, không phải căn cứ thu hồi vì lợi ích quốc gia, công cộng."
+   ]
   },
   {
    "type": "mcq",
@@ -100,7 +106,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 35 Điều 3 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 35 Điều 3 — cơ quan có thẩm quyền ra quyết định thu lại quyền sử dụng đất hoặc thu lại đất.",
+    "Sai: thu hồi là quyết định hành chính, không phải mua bán thỏa thuận.",
+    "Sai: trưng dụng là biện pháp có thời hạn, khác thu hồi.",
+    "Sai: đấu giá là phương thức giao đất, không phải thu hồi."
+   ]
   },
   {
    "type": "pair",

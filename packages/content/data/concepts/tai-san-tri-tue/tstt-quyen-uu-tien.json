@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 91 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 91 — quyền ưu tiên dựa trên đơn đầu tiên đăng ký bảo hộ cùng một đối tượng.",
+    "Sai: số vốn đầu tư không phải căn cứ.",
+    "Sai: thứ tự cấp văn bằng không phải căn cứ.",
+    "Sai: quốc tịch không phải căn cứ."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 91 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 91 — sáng chế, kiểu dáng công nghiệp, nhãn hiệu.",
+    "Sai: quyền tác giả không cần đăng ký nên không có quyền ưu tiên.",
+    "Sai: bí mật kinh doanh không đăng ký.",
+    "Sai: tên thương mại không đăng ký."
+   ]
   },
   {
    "type": "pair",

@@ -13,7 +13,7 @@
 | 1 | Hôn nhân và gia đình, Cạnh tranh | 50 + 32 | xong |
 | 2 | Lao động 2, An sinh xã hội, Tố tụng dân sự | 24 + 24 + 32 | xong |
 | 3 | Tài chính, Tài chính doanh nghiệp, Đầu tư | 36 + 36 + 38 | xong |
-| 4 | Đất đai, Sở hữu trí tuệ, Quản trị tài sản trí tuệ | 38 + 46 + 40 | |
+| 4 | Đất đai, Sở hữu trí tuệ, Quản trị tài sản trí tuệ | 38 + 46 + 40 | xong |
 | 5 | Xây dựng VBPL, Ngân hàng, Thương mại 2 | 40 + 42 + 44 | |
 | 6 | Dân sự, Thương mại 1, Lao động | 48 + 50 + 50 | |
 | 7 | Dân sự 2, Hành chính | 52 + 60 | |

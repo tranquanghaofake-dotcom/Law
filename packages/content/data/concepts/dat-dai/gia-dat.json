@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 19 Điều 3 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 19 Điều 3 — giá trị của quyền sử dụng đất tính bằng tiền trên một đơn vị diện tích đất.",
+    "Sai: đất đai thuộc sở hữu toàn dân; không có đất thuộc sở hữu tư nhân.",
+    "Sai: thuế sử dụng đất là nghĩa vụ tài chính, không phải giá đất.",
+    "Sai: giá thuê nhà, mặt bằng không phải giá đất."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 44 Điều 3 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 44 Điều 3 — nộp tiền sử dụng đất khi được giao đất có thu tiền, được chuyển mục đích hoặc trường hợp khác luật quy định.",
+    "Sai: thuê đất thì nộp tiền thuê đất, không phải tiền sử dụng đất.",
+    "Sai: nhận thừa kế không làm phát sinh tiền sử dụng đất.",
+    "Sai: cho mượn đất không làm phát sinh tiền sử dụng đất."
+   ]
   },
   {
    "type": "pair",

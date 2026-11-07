@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 36 Điều 3 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 36 Điều 3 — phân bổ chỉ tiêu sử dụng đất và khoanh vùng đất đai cho các mục đích trong thời kỳ xác định.",
+    "Sai: cấp Giấy chứng nhận là thủ tục hành chính, không phải quy hoạch.",
+    "Sai: định giá đất là nội dung riêng (Điều 158).",
+    "Sai: thu thuế đất không phải quy hoạch."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 36 Điều 3 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 36 Điều 3 — lập cho từng đơn vị hành chính, cho thời kỳ xác định.",
+    "Sai: quy hoạch không lập theo từng thửa đất.",
+    "Sai: quy hoạch không lập cho từng hộ gia đình.",
+    "Sai: quy hoạch không lập riêng cho từng dự án."
+   ]
   },
   {
    "type": "pair",

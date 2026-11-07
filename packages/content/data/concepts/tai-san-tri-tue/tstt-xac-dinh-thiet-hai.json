@@ -76,7 +76,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 204 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 204 — chi phí hợp lý để ngăn chặn, khắc phục thiệt hại là thiệt hại vật chất.",
+    "Sai: tổn thất danh dự là thiệt hại tinh thần (điểm b).",
+    "Sai: tiền phạt hành chính nộp ngân sách, không phải thiệt hại của chủ thể quyền.",
+    "Sai: án phí không phải thiệt hại do hành vi xâm phạm."
+   ]
   },
   {
    "type": "mcq",
@@ -93,7 +99,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 204 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 1 Điều 204 — tác giả, người biểu diễn và tác giả sáng chế, kiểu dáng, thiết kế bố trí, giống cây trồng.",
+    "Sai: thiệt hại tinh thần gắn với quyền nhân thân của tác giả, người biểu diễn, không phải mọi chủ sở hữu.",
+    "Sai: doanh nghiệp sở hữu nhãn hiệu không có quyền nhân thân nên không có thiệt hại tinh thần theo điểm b.",
+    "Sai: người tiêu dùng không phải chủ thể quyền."
+   ]
   },
   {
    "type": "pair",

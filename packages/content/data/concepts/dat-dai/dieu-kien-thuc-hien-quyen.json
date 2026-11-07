@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 45 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 45 không đòi người nhận chuyển nhượng có hộ khẩu tại địa phương.",
+    "Sai: đất không có tranh chấp (hoặc tranh chấp đã giải quyết) là điều kiện ở khoản 1 Điều 45.",
+    "Sai: quyền sử dụng đất không bị kê biên là điều kiện ở khoản 1 Điều 45.",
+    "Sai: còn trong thời hạn sử dụng đất là điều kiện ở khoản 1 Điều 45."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 45 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 45 — thừa kế quyền sử dụng đất là trường hợp ngoại lệ, không bắt buộc có Giấy chứng nhận.",
+    "Sai: chuyển nhượng phải có Giấy chứng nhận.",
+    "Sai: thế chấp phải có Giấy chứng nhận.",
+    "Sai: góp vốn bằng quyền sử dụng đất phải có Giấy chứng nhận."
+   ]
   },
   {
    "type": "pair",

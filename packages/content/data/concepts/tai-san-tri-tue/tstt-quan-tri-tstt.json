@@ -82,7 +82,13 @@
     "Bảo vệ quyền sở hữu trí tuệ đã xác lập"
    ],
    "answer": 0,
-   "explain": "Bốn khâu: tạo lập – xác lập quyền – khai thác – bảo vệ."
+   "explain": "Bốn khâu: tạo lập – xác lập quyền – khai thác – bảo vệ.",
+   "why": [
+    "Đúng: theo bài giảng, bốn khâu là tạo lập – xác lập quyền – khai thác – bảo vệ; nộp thuế cho tác giả không phải một khâu.",
+    "Sai: tạo lập, phát triển là khâu đầu tiên.",
+    "Sai: khai thác, thương mại hóa là một khâu.",
+    "Sai: bảo vệ quyền là một khâu."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
     "Không cần thiết phải theo dõi vì đã có văn bằng riêng của mình và thị phần"
    ],
    "answer": 0,
-   "explain": "Quản lý bên ngoài: theo dõi, cập nhật đăng ký mới của đối thủ để phản đối."
+   "explain": "Quản lý bên ngoài: theo dõi, cập nhật đăng ký mới của đối thủ để phản đối.",
+   "why": [
+    "Đúng: theo bài giảng, theo dõi đơn của đối thủ để kịp phản đối nếu xâm phạm quyền của mình.",
+    "Sai: sao chép sản phẩm của đối thủ có thể là xâm phạm.",
+    "Sai: không nộp thuế thay đối thủ.",
+    "Sai: theo dõi là cần thiết để bảo vệ quyền."
+   ]
   },
   {
    "type": "pair",

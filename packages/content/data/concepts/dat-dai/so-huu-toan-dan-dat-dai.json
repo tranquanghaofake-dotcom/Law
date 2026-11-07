@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 12 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 12 — đất đai thuộc sở hữu toàn dân do Nhà nước đại diện chủ sở hữu.",
+    "Sai: tổ chức kinh tế nhà nước chỉ là người sử dụng đất.",
+    "Sai: người có Giấy chứng nhận có quyền sử dụng, không sở hữu đất.",
+    "Sai: Ủy ban nhân dân xã không phải chủ sở hữu đất đai."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 12 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 12 — Nhà nước trao quyền sử dụng đất cho người sử dụng đất.",
+    "Sai: quyền sở hữu thuộc toàn dân, không trao cho người sử dụng.",
+    "Sai: quyền định đoạt đất đai thuộc Nhà nước với tư cách đại diện chủ sở hữu.",
+    "Sai: thu hồi đất là quyền của Nhà nước."
+   ]
   },
   {
    "type": "pair",

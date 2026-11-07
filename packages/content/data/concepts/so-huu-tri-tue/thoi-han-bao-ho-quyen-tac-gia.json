@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 27 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 2 Điều 27 — suốt cuộc đời tác giả và 50 năm tiếp theo năm tác giả chết.",
+    "Sai: 75 năm từ khi công bố áp dụng cho tác phẩm điện ảnh, nhiếp ảnh, mỹ thuật ứng dụng, khuyết danh (điểm a khoản 2 Điều 27).",
+    "Sai: 20 năm là thời hạn bằng sáng chế; quyền tác giả không cần văn bằng.",
+    "Sai: quyền tài sản có thời hạn."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 27 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 2 Điều 27 — tác phẩm nhiếp ảnh: 75 năm kể từ khi công bố lần đầu tiên.",
+    "Sai: suốt đời và 50 năm là quy tắc chung, nhiếp ảnh theo điểm a.",
+    "Sai: 100 năm áp dụng khi tác phẩm điện ảnh, nhiếp ảnh chưa công bố trong 25 năm kể từ khi định hình.",
+    "Sai: 10 năm không phải thời hạn bảo hộ quyền tác giả."
+   ]
   },
   {
    "type": "pair",

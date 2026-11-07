@@ -86,7 +86,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 79 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 79 — có nguồn gốc địa lý tương ứng và có danh tiếng, chất lượng, đặc tính chủ yếu do điều kiện địa lý quyết định.",
+    "Sai: tính mới, sáng tạo là điều kiện của sáng chế, kiểu dáng.",
+    "Sai: phân biệt chủ thể kinh doanh là chức năng của tên thương mại.",
+    "Sai: thời gian sử dụng không phải điều kiện bảo hộ chỉ dẫn địa lý."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 22 Điều 4 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 22 Điều 4 — chỉ dẫn địa lý là dấu hiệu chỉ sản phẩm có nguồn gốc từ khu vực, địa phương, vùng lãnh thổ hay quốc gia cụ thể.",
+    "Sai: phân biệt doanh nghiệp là chức năng của tên thương mại.",
+    "Sai: kiểu dáng công nghiệp là đối tượng riêng.",
+    "Sai: bảo vệ bí mật kinh doanh không phải chức năng của chỉ dẫn địa lý."
+   ]
   },
   {
    "type": "pair",

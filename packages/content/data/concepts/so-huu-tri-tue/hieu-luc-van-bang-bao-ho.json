@@ -89,7 +89,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 93 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 93 — có hiệu lực từ ngày cấp đến hết 20 năm kể từ ngày nộp đơn.",
+    "Sai: 10 năm là hiệu lực của bằng độc quyền giải pháp hữu ích, tính từ ngày nộp đơn.",
+    "Sai: bằng độc quyền sáng chế có thời hạn.",
+    "Sai: sáng chế không gia hạn; gia hạn 5 năm là của kiểu dáng công nghiệp."
+   ]
   },
   {
    "type": "mcq",
@@ -106,7 +112,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 93 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 93 — hiệu lực 5 năm, gia hạn hai lần liên tiếp, mỗi lần 5 năm.",
+    "Sai: kiểu dáng công nghiệp được gia hạn.",
+    "Sai: gia hạn nhiều lần, mỗi lần 10 năm là của nhãn hiệu.",
+    "Sai: không có gia hạn một lần 10 năm."
+   ]
   },
   {
    "type": "pair",

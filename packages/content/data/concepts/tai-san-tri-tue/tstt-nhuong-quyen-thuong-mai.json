@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 284 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 284 Luật Thương mại — bên nhận kinh doanh theo cách thức tổ chức do bên nhượng quyền quy định và chịu sự kiểm soát, trợ giúp.",
+    "Sai: dùng nhãn hiệu trong khu vực là đặc điểm chung của li-xăng; nhượng quyền thường có phí.",
+    "Sai: nhượng quyền thường có phí ban đầu, phí định kỳ.",
+    "Sai: hợp đồng nhượng quyền phải lập thành văn bản (Điều 285)."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 284 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 284 — nhãn hiệu hàng hóa, tên thương mại, bí quyết kinh doanh, khẩu hiệu, biểu tượng kinh doanh, quảng cáo.",
+    "Sai: giấy phép, con dấu, tài khoản không phải đối tượng nhượng quyền.",
+    "Sai: sáng chế, giống cây trồng… không phải nhóm đối tượng ở khoản 1 Điều 284.",
+    "Sai: quyền tác giả, chỉ dẫn địa lý không phải nhóm đối tượng ở khoản 1 Điều 284."
+   ]
   },
   {
    "type": "pair",

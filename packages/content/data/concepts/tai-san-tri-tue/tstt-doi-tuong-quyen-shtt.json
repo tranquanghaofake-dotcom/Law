@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 3 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 3 — bí mật kinh doanh là đối tượng quyền sở hữu công nghiệp.",
+    "Sai: tác phẩm văn học là đối tượng quyền tác giả.",
+    "Sai: cuộc biểu diễn là đối tượng quyền liên quan.",
+    "Sai: vật liệu nhân giống là đối tượng quyền đối với giống cây trồng."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 3 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 3 — vật liệu nhân giống và vật liệu thu hoạch.",
+    "Sai: sáng chế thuộc sở hữu công nghiệp; giống cây trồng không được bảo hộ dưới danh nghĩa sáng chế.",
+    "Sai: nhãn hiệu thuộc sở hữu công nghiệp.",
+    "Sai: chỉ dẫn địa lý thuộc sở hữu công nghiệp."
+   ]
   },
   {
    "type": "pair",

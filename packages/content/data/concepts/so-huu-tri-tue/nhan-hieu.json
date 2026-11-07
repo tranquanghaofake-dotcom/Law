@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 72 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 72 — dấu hiệu nhìn thấy được (hoặc âm thanh thể hiện được dưới dạng đồ họa) và có khả năng phân biệt.",
+    "Sai: tính mới, trình độ sáng tạo là điều kiện của sáng chế.",
+    "Sai: nguồn gốc địa lý là điều kiện của chỉ dẫn địa lý.",
+    "Sai: thời gian sử dụng, doanh thu không phải điều kiện bảo hộ nhãn hiệu."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 72 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 72 — âm thanh được bảo hộ nếu thể hiện được dưới dạng đồ họa và có khả năng phân biệt.",
+    "Sai: từ 2022 luật cho phép nhãn hiệu âm thanh.",
+    "Sai: điều kiện là thể hiện dưới dạng đồ họa và khả năng phân biệt, không phải nổi tiếng hay tính mới.",
+    "Sai: âm thanh có thể là nhãn hiệu, không chỉ là tác phẩm."
+   ]
   },
   {
    "type": "pair",
