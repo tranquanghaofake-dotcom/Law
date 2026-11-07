@@ -1,0 +1,199 @@
+{
+  "id": "chung-khoan-de-1",
+  "group": "chung-khoan",
+  "title": "Đề nhận định Luật Chứng khoán – Chương I",
+  "subtitle": "10 câu nhận định đúng/sai theo bài tập trên lớp (Luật Chứng khoán 2019)",
+  "updated": "2026-11-07",
+  "questions": [
+    {
+      "q": "Nhận định \"Cổ phiếu là loại chứng khoán nợ\" đúng hay sai?",
+      "options": [
+        "Đúng, vì cổ phiếu cho người mua quyền đòi tổ chức phát hành trả lại tiền gốc kèm lãi theo kỳ hạn mà hai bên đã thỏa thuận ngay từ đầu",
+        "Sai, vì cổ phiếu xác nhận quyền đối với một phần vốn cổ phần của tổ chức phát hành, tức là chứng khoán vốn; chứng khoán nợ là trái phiếu",
+        "Đúng, vì mọi chứng khoán do doanh nghiệp phát hành ra đều là khoản nợ mà doanh nghiệp phải hoàn trả cho người nắm giữ",
+        "Sai, vì cổ phiếu thuộc nhóm chứng khoán phái sinh nên không thể xếp vào nhóm chứng khoán nợ như trái phiếu doanh nghiệp"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 4: cổ phiếu xác nhận quyền đối với một phần vốn cổ phần. Luật không dùng cụm \"chứng khoán vốn/nợ\"; đây là cách phân loại học thuật.",
+      "basis": "Khoản 2 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
+      "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486",
+      "why": [
+        "Sai: cổ phiếu không cho quyền đòi gốc và lãi; cổ đông là chủ sở hữu một phần vốn cổ phần.",
+        "Đúng: cổ phiếu xác nhận quyền đối với một phần vốn cổ phần (khoản 2 Điều 4), nên là chứng khoán vốn.",
+        "Sai: chứng khoán doanh nghiệp phát hành gồm cả cổ phiếu (vốn) và trái phiếu (nợ).",
+        "Sai: cổ phiếu là chứng khoán cơ sở; chứng khoán phái sinh là loại riêng (điểm c khoản 1 Điều 4)."
+      ]
+    },
+    {
+      "q": "Nhận định \"Trên thị trường chứng khoán sơ cấp, nguồn tiền được luân chuyển từ nhà đầu tư này sang nhà đầu tư khác\" đúng hay sai?",
+      "options": [
+        "Sai, vì ở thị trường sơ cấp tiền của nhà đầu tư chảy vào chính tổ chức phát hành; còn tiền chuyển giữa các nhà đầu tư là của thị trường thứ cấp",
+        "Đúng, vì giao dịch trên thị trường sơ cấp cũng là mua bán lại chứng khoán đã phát hành giữa các nhà đầu tư với nhau thông qua công ty chứng khoán",
+        "Đúng, vì tổ chức phát hành chỉ đứng làm trung gian chuyển tiền của nhà đầu tư mua trước sang nhà đầu tư mua sau trong đợt chào bán",
+        "Sai, vì ở thị trường sơ cấp tiền mua chứng khoán được chuyển cho công ty chứng khoán và công ty chứng khoán giữ lại làm doanh thu của mình"
+      ],
+      "answer": 0,
+      "explain": "Khoản 21 Điều 4: tổ chức phát hành là tổ chức thực hiện chào bán, phát hành chứng khoán; điểm i khoản 1 Điều 15: tổ chức phát hành mở tài khoản phong tỏa nhận tiền mua cổ phiếu. Cụm \"sơ cấp, thứ cấp\" là phân loại học thuật.",
+      "basis": "Khoản 21 Điều 4 và điểm i khoản 1 Điều 15 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
+      "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486",
+      "why": [
+        "Đúng: người bán là tổ chức phát hành nên tiền chảy vào tổ chức phát hành (khoản 21 Điều 4, điểm i khoản 1 Điều 15).",
+        "Sai: mua bán lại giữa các nhà đầu tư là đặc điểm của thị trường thứ cấp, không phải sơ cấp.",
+        "Sai: tổ chức phát hành là bên bán chứng khoán mới, không chỉ làm trung gian chuyển tiền.",
+        "Sai: tiền mua cổ phiếu vào tài khoản phong tỏa do chính tổ chức phát hành mở (điểm i khoản 1 Điều 15)."
+      ]
+    },
+    {
+      "q": "Nhận định \"Mọi công ty cổ phần đều được quyền chào bán cổ phiếu ra công chúng\" đúng hay sai?",
+      "options": [
+        "Đúng, vì công ty cổ phần có quyền phát hành cổ phiếu theo Luật Doanh nghiệp nên Luật Chứng khoán không đặt thêm điều kiện nào cho việc chào bán",
+        "Sai, vì chỉ có doanh nghiệp nhà nước mới được chào bán cổ phiếu ra công chúng, công ty cổ phần thuộc thành phần khác không được phép làm việc này",
+        "Sai, vì công ty cổ phần phải đáp ứng điều kiện luật định, như vốn điều lệ đã góp từ 30 tỷ đồng trở lên và 02 năm liên tục kinh doanh có lãi",
+        "Sai, vì phải là công ty đã niêm yết cổ phiếu trên Sở giao dịch chứng khoán từ trước thì mới được chào bán cổ phiếu ra công chúng lần đầu"
+      ],
+      "answer": 2,
+      "explain": "Từ \"mọi\" là bẫy lượng từ. Khoản 1 Điều 15 đặt điều kiện chào bán cổ phiếu lần đầu ra công chúng, trong đó có điểm a (vốn điều lệ đã góp từ 30 tỷ đồng) và điểm b (02 năm liên tục có lãi).",
+      "basis": "Điểm a, điểm b khoản 1 Điều 15 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
+      "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486",
+      "why": [
+        "Sai: Điều 15 đặt rõ các điều kiện chào bán cổ phiếu ra công chúng, nên nói luật không đặt điều kiện là sai.",
+        "Sai: luật không giới hạn cho doanh nghiệp nhà nước; công ty cổ phần đủ điều kiện đều được chào bán.",
+        "Đúng: phải đáp ứng điều kiện luật định, như vốn điều lệ đã góp từ 30 tỷ đồng và 02 năm liên tục có lãi (điểm a, b khoản 1 Điều 15).",
+        "Sai: chào bán lần đầu diễn ra trước khi niêm yết; công ty chỉ cam kết niêm yết sau đợt chào bán (điểm h khoản 1 Điều 15)."
+      ]
+    },
+    {
+      "q": "Nhận định \"Mọi doanh nghiệp đều được quyền phát hành quyền mua cổ phần\" đúng hay sai?",
+      "options": [
+        "Đúng, vì doanh nghiệp nào cần huy động thêm vốn cũng được phát hành quyền mua cổ phần cho người đang góp vốn trong doanh nghiệp",
+        "Đúng, vì quyền mua cổ phần là chứng khoán thông dụng mà công ty trách nhiệm hữu hạn và công ty hợp danh cũng phát hành được như thường",
+        "Sai, vì chỉ công ty cổ phần đã niêm yết trên Sở giao dịch chứng khoán mới được phát hành quyền mua cổ phần cho cổ đông hiện hữu của mình",
+        "Sai, vì quyền mua cổ phần là loại chứng khoán do công ty cổ phần phát hành cho các cổ đông hiện hữu của mình"
+      ],
+      "answer": 3,
+      "explain": "Khoản 7 Điều 4: quyền mua cổ phần là loại chứng khoán do công ty cổ phần phát hành nhằm mang lại cho cổ đông hiện hữu quyền được mua cổ phần mới. Bẫy là thay \"công ty cổ phần\" bằng \"doanh nghiệp\".",
+      "basis": "Khoản 7 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
+      "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486",
+      "why": [
+        "Sai: nhu cầu huy động vốn không đủ để phát hành; quyền mua cổ phần gắn với cổ phần.",
+        "Sai: công ty trách nhiệm hữu hạn và công ty hợp danh không phát hành cổ phần nên không có quyền mua cổ phần.",
+        "Sai: luật không đòi công ty phải niêm yết mới được phát hành quyền mua cổ phần.",
+        "Đúng: chủ thể phát hành là công ty cổ phần cho cổ đông hiện hữu (khoản 7 Điều 4), không phải mọi doanh nghiệp."
+      ]
+    },
+    {
+      "q": "Nhận định \"Nhà đầu tư cá nhân chỉ được phép mua bán chứng khoán thông qua công ty chứng khoán\" đúng hay sai?",
+      "options": [
+        "Đúng, vì mọi giao dịch mua bán chứng khoán của cá nhân đều bắt buộc phải được thực hiện thông qua công ty chứng khoán mà cá nhân đó đã chọn",
+        "Sai, vì luật chỉ cấm giao dịch ngoài hệ thống đối với chứng khoán niêm yết, đăng ký giao dịch và vẫn có ngoại lệ như giao dịch không mang tính mua bán",
+        "Đúng, vì cá nhân không mở tài khoản tại công ty chứng khoán thì không được tham gia bất kỳ hoạt động mua bán chứng khoán nào trên thị trường",
+        "Sai, vì cá nhân được giao dịch tự do các loại chứng khoán ngoài hệ thống giao dịch, kể cả chứng khoán đã niêm yết trên Sở giao dịch chứng khoán"
+      ],
+      "answer": 1,
+      "explain": "Từ \"chỉ\" là bẫy lượng từ. Khoản 2 Điều 50: chứng khoán niêm yết, đăng ký giao dịch không được giao dịch bên ngoài hệ thống, trừ giao dịch không mang tính chất mua bán hoặc giao dịch không thể thực hiện qua hệ thống. Phạm vi cấm hẹp hơn nhận định.",
+      "basis": "Khoản 2 Điều 50 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
+      "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486",
+      "why": [
+        "Sai: luật không quy định mọi giao dịch chứng khoán đều bắt buộc qua công ty chứng khoán.",
+        "Đúng: luật chỉ cấm giao dịch ngoài hệ thống với chứng khoán niêm yết, đăng ký giao dịch, và có ngoại lệ (khoản 2 Điều 50).",
+        "Sai: luật không đòi mọi cá nhân phải mở tài khoản tại công ty chứng khoán mới được mua bán chứng khoán.",
+        "Sai: chứng khoán niêm yết, đăng ký giao dịch không được giao dịch ngoài hệ thống (khoản 2 Điều 50)."
+      ]
+    },
+    {
+      "q": "Nhận định \"Công ty đầu tư chứng khoán là một dạng của công ty chứng khoán\" đúng hay sai?",
+      "options": [
+        "Đúng, vì cả hai đều mang tên công ty và cùng hoạt động trong lĩnh vực chứng khoán nên được xếp chung vào một loại hình tổ chức kinh doanh",
+        "Đúng, vì công ty đầu tư chứng khoán là công ty chứng khoán chỉ được cấp phép thực hiện duy nhất nghiệp vụ tự doanh chứng khoán cho chính mình",
+        "Sai, vì công ty đầu tư chứng khoán là quỹ đầu tư theo loại hình công ty cổ phần, còn công ty chứng khoán là tổ chức kinh doanh chứng khoán",
+        "Sai, vì công ty đầu tư chứng khoán là một loại doanh nghiệp bảo hiểm nên thuộc phạm vi điều chỉnh của pháp luật về kinh doanh bảo hiểm"
+      ],
+      "answer": 2,
+      "explain": "Khoản 1 Điều 114: công ty đầu tư chứng khoán là quỹ đầu tư chứng khoán được tổ chức theo loại hình công ty cổ phần để đầu tư chứng khoán. Điều 72 quy định nghiệp vụ kinh doanh của công ty chứng khoán. Hai chủ thể khác bản chất.",
+      "basis": "Khoản 1 Điều 114 và Điều 72 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
+      "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486",
+      "why": [
+        "Sai: tên gọi giống nhau không làm hai chủ thể thành một loại hình.",
+        "Sai: công ty đầu tư chứng khoán là quỹ đầu tư, không phải công ty chứng khoán chỉ làm tự doanh.",
+        "Đúng: một bên là quỹ đầu tư tổ chức theo loại hình công ty cổ phần (khoản 1 Điều 114), một bên là tổ chức kinh doanh chứng khoán (Điều 72).",
+        "Sai: công ty đầu tư chứng khoán thuộc lĩnh vực chứng khoán, không phải doanh nghiệp bảo hiểm."
+      ]
+    },
+    {
+      "q": "Nhận định \"Cơ quan quản lý nhà nước về chứng khoán là Bộ Tài chính\" — phương án nào chính xác nhất theo Luật Chứng khoán?",
+      "options": [
+        "Chưa đầy đủ: Chính phủ thống nhất quản lý; Bộ Tài chính chịu trách nhiệm trước Chính phủ; Ủy ban Chứng khoán Nhà nước giúp Bộ trưởng",
+        "Chính xác hoàn toàn: chỉ Bộ Tài chính quản lý nhà nước về chứng khoán còn Chính phủ không có vai trò gì trong việc quản lý lĩnh vực này",
+        "Sai hoàn toàn: Ủy ban Chứng khoán Nhà nước là cơ quan độc lập, không thuộc Bộ Tài chính và tự mình quản lý nhà nước về chứng khoán trên cả nước",
+        "Sai hoàn toàn: Ngân hàng Nhà nước mới là cơ quan chịu trách nhiệm quản lý nhà nước về chứng khoán và thị trường chứng khoán"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1, 2 Điều 8: Chính phủ thống nhất quản lý, Bộ Tài chính chịu trách nhiệm trước Chính phủ. Khoản 1 Điều 9: Ủy ban Chứng khoán Nhà nước là cơ quan thuộc Bộ Tài chính, giúp Bộ trưởng quản lý nhà nước. Nhận định thiếu tầng Chính phủ và tầng Ủy ban.",
+      "basis": "Khoản 1, khoản 2 Điều 8 và khoản 1 Điều 9 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
+      "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486",
+      "why": [
+        "Đúng: phản ánh đủ ba tầng Chính phủ, Bộ Tài chính, Ủy ban Chứng khoán Nhà nước (khoản 1, 2 Điều 8; khoản 1 Điều 9).",
+        "Sai: khoản 1 Điều 8 giao Chính phủ thống nhất quản lý nhà nước, nên Chính phủ có vai trò.",
+        "Sai: khoản 1 Điều 9 xác định Ủy ban Chứng khoán Nhà nước là cơ quan thuộc Bộ Tài chính.",
+        "Sai: Điều 8 giao Bộ Tài chính, không phải Ngân hàng Nhà nước."
+      ]
+    },
+    {
+      "q": "Nhận định \"Sở Giao dịch Chứng khoán TP. Hồ Chí Minh (HOSE) và Sở Giao dịch Chứng khoán Hà Nội (HNX) là hai sàn giao dịch chứng khoán duy nhất tại Việt Nam\" đúng hay sai?",
+      "options": [
+        "Đúng, vì Luật Chứng khoán chỉ cho phép đúng hai sở giao dịch là HOSE và HNX hoạt động còn các sở khác đều không được thành lập",
+        "Đúng, vì mọi chứng khoán đều phải được giao dịch tại HOSE hoặc HNX và pháp luật Việt Nam không có thị trường giao dịch nào khác",
+        "Sai, vì ngoài hai sàn này, các công ty chứng khoán được tự tổ chức thị trường giao dịch riêng cho khách hàng của họ khi đủ vốn điều lệ",
+        "Sai, vì Sở giao dịch chứng khoán Việt Nam và công ty con tổ chức thị trường cả cho chứng khoán chưa niêm yết"
+      ],
+      "answer": 3,
+      "explain": "Khoản 1 Điều 42 và khoản 1 Điều 43: Sở giao dịch chứng khoán Việt Nam và công ty con tổ chức thị trường giao dịch cho nhiều nhóm chứng khoán; khoản 2 Điều 42 cấm tổ chức khác tổ chức thị trường. Luật không nêu tên HOSE, HNX. HOSE, HNX là công ty con của VNX theo Quyết định 37/2020/QĐ-TTg; UPCoM do HNX tổ chức (thực tiễn, cần đối chiếu). Từ 28/12/2026 cổ phiếu niêm yết trên HNX dự kiến chuyển sang HOSE.",
+      "basis": "Khoản 1, khoản 2 Điều 42 và khoản 1 Điều 43 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
+      "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486",
+      "why": [
+        "Sai: luật không nêu tên HOSE, HNX và không quy định chỉ có hai sở giao dịch.",
+        "Sai: khoản 1 Điều 42 cho phép tổ chức nhiều thị trường, không chỉ tại hai sàn.",
+        "Sai: khoản 2 Điều 42 cấm tổ chức, cá nhân ngoài Sở giao dịch chứng khoán Việt Nam và công ty con tổ chức thị trường giao dịch.",
+        "Đúng: Sở giao dịch chứng khoán Việt Nam và công ty con tổ chức thị trường cho nhiều nhóm chứng khoán, kể cả chưa niêm yết và phái sinh (khoản 1 Điều 42)."
+      ]
+    },
+    {
+      "q": "Nhận định \"Công ty chứng khoán được phép tự do quảng cáo dịch vụ chứng khoán của mình\" đúng hay sai?",
+      "options": [
+        "Đúng, vì pháp luật hiện hành không có quy định nào hạn chế nội dung quảng cáo dịch vụ chứng khoán của các công ty chứng khoán trên thị trường nói chung",
+        "Sai, vì khi cung cấp dịch vụ cho khách hàng, công ty chứng khoán không được quảng cáo, tuyên bố nội dung, hiệu quả, phương pháp phân tích của mình hơn công ty khác",
+        "Đúng, vì quảng cáo là quyền của mọi doanh nghiệp nên công ty chứng khoán đưa nội dung gì lên quảng cáo cũng được, miễn là có trả phí",
+        "Sai, vì công ty chứng khoán bị cấm hoàn toàn mọi hình thức quảng cáo dịch vụ chứng khoán của mình dưới bất kỳ phương tiện thông tin nào"
+      ],
+      "answer": 1,
+      "explain": "Điểm c khoản 6 Điều 4 Thông tư 121/2020/TT-BTC cấm quảng cáo, tuyên bố hơn công ty chứng khoán khác; điểm d, đ cùng khoản cấm thông tin sai sự thật, sai lệch, gây hiểu nhầm. Không tìm thấy điều khoản bắt buộc xin chấp thuận trước khi quảng cáo; nhận định sai vì \"tự do\", không phải vì cấm hoàn toàn.",
+      "basis": "Điểm c khoản 6 Điều 4 Thông tư 121/2020/TT-BTC (sửa đổi, bổ sung bởi Thông tư 68/2024/TT-BTC, Thông tư 08/2026/TT-BTC)",
+      "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-09-vbhn-btc-thong-tu-so-121-2020-tt-btc-quy-dinh-ve-hoat-dong-cua-cong-ty-chung-khoan--2ea4d830-6963-11f1-a883-418acdd95a20",
+      "why": [
+        "Sai: Thông tư 121/2020/TT-BTC có điều cấm cụ thể về nội dung quảng cáo.",
+        "Đúng: Thông tư 121/2020/TT-BTC cấm quảng cáo, tuyên bố hơn công ty chứng khoán khác (điểm c khoản 6 Điều 4).",
+        "Sai: quảng cáo của công ty chứng khoán vẫn chịu giới hạn về nội dung, không phải quyền không giới hạn.",
+        "Sai: văn bản không cấm hoàn toàn quảng cáo, chỉ cấm một số nội dung nhất định."
+      ]
+    },
+    {
+      "q": "Nhận định \"Nhà đầu tư nước ngoài được phép mua bán tự do tất cả các loại chứng khoán trên thị trường chứng khoán Việt Nam\" đúng hay sai?",
+      "options": [
+        "Đúng, vì Luật Chứng khoán đối xử hoàn toàn như nhau với nhà đầu tư trong nước và nhà đầu tư nước ngoài ở mọi loại chứng khoán trên thị trường",
+        "Đúng, vì chỉ có hạn chế khi mua cổ phiếu, còn các loại chứng khoán khác như trái phiếu hay chứng chỉ quỹ thì nhà đầu tư nước ngoài mua bán không bị giới hạn",
+        "Sai, vì nhà đầu tư nước ngoài khi tham gia thị trường chứng khoán phải tuân thủ quy định về tỷ lệ sở hữu nước ngoài, điều kiện, trình tự, thủ tục đầu tư",
+        "Sai, vì nhà đầu tư nước ngoài bị cấm hoàn toàn tham gia thị trường chứng khoán Việt Nam nên không thể mua bán bất cứ loại chứng khoán nào"
+      ],
+      "answer": 2,
+      "explain": "Khoản 1 Điều 51: nhà đầu tư nước ngoài tuân thủ quy định về tỷ lệ sở hữu nước ngoài, điều kiện, trình tự, thủ tục đầu tư; khoản 2 Điều 51: Chính phủ quy định chi tiết. Hai chữ \"tự do\" và \"tất cả\" làm nhận định sai.",
+      "basis": "Khoản 1, khoản 2 Điều 51 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
+      "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486",
+      "why": [
+        "Sai: Điều 51 đặt quy định riêng cho nhà đầu tư nước ngoài, không đối xử hoàn toàn như nhau.",
+        "Sai: khoản 1 Điều 51 không giới hạn quy định về tỷ lệ sở hữu nước ngoài ở riêng cổ phiếu.",
+        "Đúng: phải tuân thủ tỷ lệ sở hữu nước ngoài, điều kiện, trình tự, thủ tục đầu tư (khoản 1 Điều 51).",
+        "Sai: nhà đầu tư nước ngoài được tham gia thị trường, chỉ phải tuân thủ điều kiện luật định."
+      ]
+    }
+  ]
+}
