@@ -165,9 +165,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Luật 2025 vẫn bắt buộc thành lập Ban soạn thảo với tối thiểu 9 thành viên cho mọi dự án luật.",
+   "statement": "Cơ quan trình phải tự mình soạn thảo dự án luật, không được phân công cho cơ quan khác.",
    "answer": false,
-   "explain": "Sai. Khoản 1 Điều 33 chỉ quy định cơ quan trình tự soạn thảo hoặc phân công cơ quan chủ trì soạn thảo; quy định về Ban soạn thảo của Luật 2015 không còn."
+   "explain": "Sai. Khoản 1 Điều 33: cơ quan trình tự mình soạn thảo hoặc phân công cho một cơ quan tổ chức soạn thảo (cơ quan chủ trì soạn thảo)."
   },
   {
    "type": "recall",

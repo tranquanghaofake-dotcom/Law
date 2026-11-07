@@ -164,9 +164,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi dự án luật đều phải thực hiện quy trình xây dựng chính sách trước khi soạn thảo.",
+   "statement": "Nghị quyết thí điểm của Quốc hội không phải thực hiện quy trình xây dựng chính sách trước khi soạn thảo.",
    "answer": false,
-   "explain": "Sai. Khoản 1 Điều 27 chỉ bắt buộc với luật, pháp lệnh mới hoặc thay thế; luật sửa đổi có nội dung hạn chế quyền con người, quyền công dân; nghị quyết thí điểm của Quốc hội."
+   "explain": "Sai. Điểm c khoản 1 Điều 27: nghị quyết thí điểm của Quốc hội thuộc trường hợp phải thực hiện quy trình xây dựng chính sách trước khi soạn thảo."
   },
   {
    "type": "recall",
