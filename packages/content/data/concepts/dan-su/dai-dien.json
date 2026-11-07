@@ -158,7 +158,7 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Giao dịch do người đại diện vượt quá phạm vi đại diện luôn ràng buộc người được đại diện.",
+   "statement": "Giao dịch do người đại diện xác lập vượt quá phạm vi đại diện làm phát sinh nghĩa vụ của người được đại diện đối với phần vượt quá, dù người được đại diện không đồng ý, không biết và không có lỗi.",
    "answer": false,
    "explain": "Sai. Điều 143: không làm phát sinh quyền, nghĩa vụ với phần vượt quá, trừ khi người được đại diện đồng ý, biết mà không phản đối hoặc có lỗi.",
    "parts": {

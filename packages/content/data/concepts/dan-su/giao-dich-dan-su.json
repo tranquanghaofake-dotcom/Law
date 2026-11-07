@@ -160,9 +160,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi giao dịch dân sự đều cần sự thỏa thuận của ít nhất hai bên.",
+   "statement": "Hành vi pháp lý đơn phương làm phát sinh quyền, nghĩa vụ dân sự không phải là giao dịch dân sự vì thiếu sự thỏa thuận giữa các bên.",
    "answer": false,
-   "explain": "Sai. Hành vi pháp lý đơn phương (như lập di chúc) chỉ cần ý chí của một bên (Điều 116).",
+   "explain": "Sai. Điều 116: giao dịch dân sự là hợp đồng hoặc hành vi pháp lý đơn phương (như lập di chúc), nên chỉ cần ý chí của một bên.",
    "parts": {
     "basis": {
      "options": [
