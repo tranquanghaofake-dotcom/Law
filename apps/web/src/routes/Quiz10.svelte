@@ -184,7 +184,7 @@
   {#if chosen !== null}
     {@const pickedFb = pickedWhy(q, q.shuffled[chosen])}
     <div class="feedback {chosen === q.answerIdx ? 'ok' : 'bad'}" role="status">
-      <p class="verdict">{chosen === q.answerIdx ? 'Chính xác.' : `Chưa đúng. Đáp án: ${KEYS[q.answerIdx]}`}</p>
+      <p class="verdict">{chosen === q.answerIdx ? 'Chính xác.' : `Chưa đúng. Đáp án: ${KEYS[q.answerIdx]}. ${q.shuffled[q.answerIdx]}`}</p>
       {#if pickedFb}<p class="why-wrong"><b>Bạn chọn «{pickedFb.option}»:</b> {pickedFb.text}</p>{/if}
       <p>{q.explain}</p>
       <p class="source muted">Căn cứ: {q.basis}{#if q.url} · <a href={q.url} target="_blank" rel="noopener">Xem điều luật</a>{/if}</p>

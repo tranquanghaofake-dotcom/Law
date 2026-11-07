@@ -48,11 +48,17 @@ describe('Bài học gọn hơn (đợt 2: phần nhìn)', () => {
   });
   it('câu chốt hiện câu hỏi ngay (không chen màn chờ), nhãn nói rõ là câu cuối', () => {
     const boss: Step = { conceptId: 'a', level: 2, item: mcq(), meta: { kind: 'boss' } } as Step;
-    const { container } = render(SessionView, { props: { steps: [boss], concepts: [concept], levels: { a: 1 } } });
+    const { container } = render(SessionView, { props: { steps: [boss], concepts: [concept], levels: { a: 1 }, lessonId: 'ds/d1' } });
     expect(container.querySelector('.boss-intro')).toBeNull();
     // không hứa "câu cuối": vòng sửa sai có thể nối sau câu chốt (engine/runner.ts)
     expect(container.querySelector('.step-badge.boss')?.textContent).toMatch(/Câu chốt/);
     expect(container.querySelector('.step-badge.boss')?.textContent).not.toMatch(/câu cuối/);
     expect(container.textContent).toContain('Câu hỏi?');
+  });
+  it('phiên ôn 1 câu: không gắn nhãn "tổng hợp đợt vừa học"', () => {
+    const boss: Step = { conceptId: 'a', level: 2, item: mcq(), meta: { kind: 'boss' } } as Step;
+    const { container } = render(SessionView, { props: { steps: [boss], concepts: [concept], levels: { a: 1 } } });
+    expect(container.querySelector('.step-badge.boss')).toBeNull();
+    expect(container.textContent).not.toContain('đợt vừa học');
   });
 });
