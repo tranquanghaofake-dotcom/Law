@@ -58,7 +58,7 @@ export const SET_ART: Record<string, VignetteName> = {
   'dat-dai-de-1': 'thua-dat', 'dat-dai-de-2': 'thua-dat',
   'dau-tu-de-1': 'du-an', 'dau-tu-de-2': 'du-an',
   'tai-chinh-de-1': 'ngan-sach-thue', 'tai-chinh-de-2': 'ngan-sach-thue',
-  'tai-chinh-doanh-nghiep-de-1': 'von-dn', 'tai-chinh-doanh-nghiep-de-2': 'von-dn',
+  'tai-chinh-doanh-nghiep-de-1': 'von-dn', 'tai-chinh-doanh-nghiep-de-2': 'von-dn', 'chung-khoan-de-1': 'von-dn',
   'canh-tranh-de-1': 'canh-tranh', 'canh-tranh-de-2': 'canh-tranh',
   'so-huu-tri-tue-de-1': 'ban-quyen', 'tai-san-tri-tue-de-1': 'ban-quyen',
   'so-huu-tri-tue-de-2': 'nhan-hieu', 'tai-san-tri-tue-de-2': 'nhan-hieu',
