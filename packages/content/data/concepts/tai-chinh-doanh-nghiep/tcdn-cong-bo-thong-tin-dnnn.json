@@ -160,9 +160,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Doanh nghiệp nhà nước chỉ cần công bố báo cáo tài chính chưa kiểm toán.",
+   "statement": "Công ty nhà nước công bố báo cáo tài chính hằng năm đã kiểm toán trong thời hạn 90 ngày kể từ ngày kết thúc năm tài chính.",
    "answer": false,
-   "explain": "Sai. Điểm c khoản 1 Điều 109: báo cáo tài chính năm đã được kiểm toán bởi tổ chức kiểm toán độc lập."
+   "explain": "Sai. Điểm c khoản 1 Điều 109 Luật Doanh nghiệp 2020: thời hạn là 150 ngày, không phải 90 ngày."
   },
   {
    "type": "recall",

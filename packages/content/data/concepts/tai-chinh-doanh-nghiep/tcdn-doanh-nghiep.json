@@ -155,9 +155,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi tổ chức có tài sản và trụ sở đều là doanh nghiệp.",
+   "statement": "Tổ chức có tên riêng, tài sản, trụ sở giao dịch nhưng không nhằm mục đích kinh doanh vẫn là doanh nghiệp.",
    "answer": false,
-   "explain": "Sai. Còn phải được thành lập hoặc đăng ký theo pháp luật và nhằm mục đích kinh doanh (khoản 10 Điều 4)."
+   "explain": "Sai. Khoản 10 Điều 4 Luật Doanh nghiệp 2020: doanh nghiệp phải được thành lập hoặc đăng ký thành lập theo pháp luật và nhằm mục đích kinh doanh."
   },
   {
    "type": "recall",
