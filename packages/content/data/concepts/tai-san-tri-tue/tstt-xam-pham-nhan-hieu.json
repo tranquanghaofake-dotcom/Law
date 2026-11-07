@@ -158,9 +158,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Nhãn hiệu nổi tiếng chỉ được bảo vệ chống hành vi dùng dấu hiệu trùng cho hàng hóa cùng loại.",
+   "statement": "Dấu hiệu dịch nghĩa, phiên âm từ nhãn hiệu nổi tiếng nằm ngoài phạm vi hành vi xâm phạm quyền đối với nhãn hiệu.",
    "answer": false,
-   "explain": "Sai. Điểm d khoản 1 Điều 129: bảo vệ với hàng hóa, dịch vụ bất kỳ, kể cả không trùng, không tương tự, nếu gây nhầm lẫn hoặc ấn tượng sai lệch."
+   "explain": "Sai. Điểm d khoản 1 Điều 129: dấu hiệu trùng hoặc tương tự, kể cả dạng dịch nghĩa, phiên âm từ nhãn hiệu nổi tiếng, dùng cho hàng hóa, dịch vụ bất kỳ vẫn bị coi là xâm phạm nếu có khả năng gây nhầm lẫn về nguồn gốc hoặc gây ấn tượng sai lệch."
   },
   {
    "type": "recall",

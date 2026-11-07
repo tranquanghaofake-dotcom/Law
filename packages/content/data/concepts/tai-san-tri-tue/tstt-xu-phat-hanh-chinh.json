@@ -160,9 +160,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi hành vi xâm phạm quyền SHTT đều phải bị xử lý hình sự.",
+   "statement": "Việc áp dụng biện pháp hành chính đối với hành vi xâm phạm quyền SHTT thuộc thẩm quyền của Tòa án.",
    "answer": false,
-   "explain": "Sai. Xâm phạm có thể xử lý bằng biện pháp dân sự, hành chính (Điều 211) hoặc hình sự tùy tính chất, mức độ (Điều 199)."
+   "explain": "Sai. Khoản 3 Điều 200: biện pháp hành chính thuộc thẩm quyền của người có thẩm quyền xử phạt vi phạm hành chính; Tòa án áp dụng biện pháp dân sự, hình sự (khoản 2 Điều 200). Hành vi bị xử phạt hành chính nêu tại Điều 211."
   },
   {
    "type": "recall",
