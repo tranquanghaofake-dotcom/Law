@@ -1,0 +1,626 @@
+{
+  "skill_name": "vn-legal-exam-analysis",
+  "evals": [
+    {
+      "id": 1,
+      "name": "nhan-dinh-hieu-luc-thoi-gian-chu-tich-ubnd",
+      "category": "nhan-dinh+bay-hieu-luc",
+      "prompt": "Nhận định sau đúng hay sai: 'Chủ tịch Ủy ban nhân dân cấp tỉnh không có thẩm quyền ban hành văn bản quy phạm pháp luật.' Giải thích ngắn.",
+      "expected_output": "Sai (kể từ 01/7/2025), điều kiện hóa theo mốc thời gian vì đề không ghi thời điểm; gọi tên bẫy hiệu lực theo thời gian; có dòng nhắc đối chiếu cho Luật 64/2025/QH15 và Luật 87/2025/QH15.",
+      "files": [],
+      "source": [
+        "SKILL.md#vi-du-1",
+        "references/he-thong-van-ban-va-ap-dung.md"
+      ],
+      "expectations": [
+        "Câu đầu tiên bắt đầu bằng 'Sai' (hoặc 'Đúng một phần'), không mở đầu, không nhắc lại đề",
+        "Nêu mốc 01/7/2025 và phân biệt nhánh trước/sau mốc đó vì đề không ghi thời điểm",
+        "Nhắc đúng Điều 4 Luật số 64/2025/QH15 và Luật số 87/2025/QH15 (cấp Điều, không bịa khoản)",
+        "Gọi tên cơ chế bẫy (bẫy hiệu lực theo thời gian) và nói vì sao đáp án 'Đúng' hấp dẫn",
+        "Có đúng một dòng bắt đầu bằng 'Cần đối chiếu trước khi dùng:' nhắc văn bản mới",
+        "Không dùng bullet, không icon; tổng không quá 400 chữ",
+        "Không dẫn Luật 80/2015/QH13 như văn bản đang hiệu lực"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "nhan-dinh-bay-tu-cach-chu-the",
+      "category": "nhan-dinh",
+      "prompt": "Đúng hay sai: 'Chủ doanh nghiệp tư nhân không thể đồng thời là thành viên công ty hợp danh.'",
+      "expected_output": "Sai: khoản 3 Điều 188 Luật Doanh nghiệp 2020 chỉ cấm làm thành viên hợp danh; vẫn có thể là thành viên góp vốn (khoản 1 Điều 177). Không dẫn khoản 4 Điều 188 làm căn cứ kết luận vì chủ thể bị cấm ở đó là doanh nghiệp tư nhân.",
+      "files": [],
+      "source": [
+        "SKILL.md#vi-du-2",
+        "references/danh-muc-bay.md"
+      ],
+      "expectations": [
+        "Câu đầu tiên bắt đầu bằng 'Sai'",
+        "Nêu khoản 3 Điều 188 và khoản 1 Điều 177 Luật Doanh nghiệp năm 2020 theo đúng trật tự khoản trước Điều",
+        "Chỉ ra vế sai: chênh lệch giữa 'thành viên công ty hợp danh' và 'thành viên hợp danh'",
+        "Dừng ở một phản ví dụ (thành viên góp vốn), không liệt kê thêm nhiều ngoại lệ",
+        "Không dùng khoản 4 Điều 188 để chứng minh nhận định đúng (hoặc nếu nhắc thì chỉ ra chủ thể bị cấm là doanh nghiệp)",
+        "Từ 150 đến 400 chữ; không bullet"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "nhan-dinh-cisg-an-do",
+      "category": "nhan-dinh+tmqt",
+      "prompt": "Nhận định: 'Hợp đồng mua bán hàng hóa giữa một doanh nghiệp có trụ sở tại Việt Nam và một doanh nghiệp có trụ sở tại Ấn Độ đương nhiên được điều chỉnh bởi CISG, vì Việt Nam là thành viên của Công ước.' Đúng hay sai?",
+      "expected_output": "Sai: Điều 1(1)(a) CISG đòi cả hai quốc gia là thành viên; Ấn Độ chưa gia nhập (phải tra bảng UNCITRAL); chỉ còn nhánh Điều 1(1)(b) nếu quy tắc tư pháp quốc tế dẫn về luật nước thành viên.",
+      "files": [],
+      "source": [
+        "SKILL.md#vi-du-5",
+        "references/thuong-mai-quoc-te.md",
+        "references/danh-muc-bay.md"
+      ],
+      "expectations": [
+        "Câu đầu tiên bắt đầu bằng 'Sai'",
+        "Nêu Điều 1(1)(a) CISG đòi cả hai quốc gia có trụ sở thương mại là thành viên",
+        "Nhắc nhánh Điều 1(1)(b) và nói đó là điều kiện phải chứng minh, trái với chữ 'đương nhiên'",
+        "Gọi tên bẫy suy đoán tư cách thành viên và bẫy lượng từ tuyệt đối",
+        "Dòng 'Cần đối chiếu trước khi dùng:' nêu tình trạng thành viên CISG của Ấn Độ trên bảng UNCITRAL",
+        "Không khẳng định chắc về tình trạng của một quốc gia khác ngoài dữ kiện đề cho mà không có cảnh báo đối chiếu"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "nhan-dinh-tach-ve-hop-dong-mbhh-quoc-te",
+      "category": "nhan-dinh+tach-ve",
+      "prompt": "Đúng hay sai: 'Hợp đồng mua bán hàng hóa quốc tế bắt buộc lập thành văn bản, nếu không sẽ vô hiệu.'",
+      "expected_output": "Sai ở vế hệ quả: vế hình thức đúng nhưng chép thiếu (khoản 2 Điều 27 Luật Thương mại 2005 cho phép hình thức khác có giá trị pháp lý tương đương); vế vô hiệu sai vì Điều 129 Bộ luật Dân sự 2015 cho phép công nhận hiệu lực khi một bên đã thực hiện ít nhất hai phần ba nghĩa vụ.",
+      "files": [],
+      "source": [
+        "SKILL.md#nhan-dinh-dung-sai",
+        "references/thuong-mai-quoc-te.md"
+      ],
+      "expectations": [
+        "Câu đầu tiên bắt đầu bằng 'Sai'",
+        "Tách nhận định thành hai vế và chỉ rõ vế nào đúng (hình thức), vế nào sai (hệ quả vô hiệu)",
+        "Nhắc khoản 2 Điều 27 Luật Thương mại năm 2005 và Điều 129 Bộ luật Dân sự năm 2015",
+        "Nêu ngưỡng hai phần ba nghĩa vụ gắn với Điều 129 hoặc đặt trong dòng 'Cần đối chiếu trước khi dùng:'",
+        "Không quá 400 chữ; không bullet"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "tinh-huong-mau-so-my-kim",
+      "category": "tinh-huong-so-lieu",
+      "prompt": "Công ty TNHH Mỹ Kim có vốn điều lệ 3 tỷ đồng: Bình 1 tỷ, Minh 800 triệu, Thủy 700 triệu, Lan 500 triệu. Điều lệ không quy định khác Luật Doanh nghiệp. Minh triệu tập họp Hội đồng thành viên thông qua báo cáo tài chính, chỉ có Minh và Lan dự. Hai mươi ngày sau, Minh triệu tập họp thông qua nghị quyết sáp nhập công ty; lần này có Bình, Lan và Minh dự, khi biểu quyết chỉ Lan không chấp thuận. Hỏi hai cuộc họp có hợp lệ không và nghị quyết sáp nhập có được thông qua không.",
+      "expected_output": "Cuộc họp 1 không hợp lệ (1.300/3.000 = 43,33% < 65% vốn điều lệ, khoản 1 Điều 58); cuộc họp 2 hợp lệ (2.300/3.000 = 76,67%); nghị quyết được thông qua vì 1.800/2.300 = 78,26% >= 75% tính trên vốn góp của thành viên dự họp (khoản 3 Điều 59); nếu lấy nhầm vốn điều lệ ra 60% thì đảo chiều.",
+      "files": [],
+      "source": [
+        "SKILL.md#vi-du-3",
+        "references/bai-tap-dinh-luong.md"
+      ],
+      "expectations": [
+        "Câu đầu tiên chứa kết luận trọn: họp 1 không hợp lệ, họp 2 hợp lệ, nghị quyết sáp nhập được thông qua",
+        "Mỗi khối đặt kết luận trước phép tính; phép tính viết dạng phân số có tử và mẫu (1.300/3.000 = 43,33%; 2.300/3.000 = 76,67%; 1.800/2.300 = 78,26%)",
+        "Nêu mẫu số bằng chữ kèm điều khoản ấn định: vốn điều lệ theo khoản 1 Điều 58; tổng vốn góp của thành viên dự họp theo khoản 3 Điều 59",
+        "Nói rõ chỗ bẫy: lấy nhầm vốn điều lệ làm mẫu số thì ra 60% và đảo chiều kết luận",
+        "So ngưỡng bằng đúng cách diễn đạt của quy phạm ('từ 65% trở lên', 'từ 75% trở lên'), không làm tròn",
+        "Có dòng 'Cần đối chiếu trước khi dùng:' nhắc các ngưỡng 65% và 75% là mức B và Luật Doanh nghiệp đã được sửa đổi (Luật 76/2025/QH15)"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "tinh-huong-lay-y-kien-van-ban-mau-so-thu-ba",
+      "category": "tinh-huong-so-lieu",
+      "prompt": "Cùng công ty TNHH Mỹ Kim (vốn điều lệ 3 tỷ: Bình 1 tỷ, Minh 800 triệu, Thủy 700 triệu, Lan 500 triệu; Điều lệ không quy định khác). Lần này không họp mà Minh gửi văn bản lấy ý kiến về việc sáp nhập công ty; chỉ Bình và Minh gửi phiếu tán thành, Thủy và Lan không trả lời. Nghị quyết sáp nhập có được thông qua không?",
+      "expected_output": "Mẫu số của hình thức lấy ý kiến bằng văn bản là vốn điều lệ (tổng vốn góp của tất cả thành viên), không phải vốn của người dự họp: 1.800/3.000 = 60%. Ngưỡng thông qua của hình thức lấy ý kiến bằng văn bản KHÔNG có trong reference, và kết luận đảo chiều tùy ngưỡng đó, nên đây là ca chạm Ngưỡng dừng điều kiện thứ hai: nếu không có công cụ tra cứu thì câu đầu phải nói chưa đủ căn cứ để chốt, nêu mẫu số và phép tính, chỉ chỗ tra (Điều 59 Luật Doanh nghiệp năm 2020 trên vbpl.vn); nếu có công cụ thì tra rồi mới kết luận.",
+      "files": [],
+      "source": [
+        "references/bai-tap-dinh-luong.md#bay-mau-so",
+        "SKILL.md#vi-du-3"
+      ],
+      "expectations": [
+        "Không khẳng định ngưỡng % của hình thức lấy ý kiến bằng văn bản từ trí nhớ khi chưa tra",
+        "Nêu mẫu số bằng chữ: tổng số vốn góp của tất cả thành viên / vốn điều lệ (không phải của thành viên dự họp)",
+        "Có phép tính 1.800/3.000 = 60%",
+        "Phân biệt rõ với trường hợp có họp, nơi tỷ lệ thông qua tính trên vốn góp của thành viên dự họp",
+        "Nếu không tra được: câu đầu nói chưa đủ căn cứ để chốt và chỉ thao tác tra cụ thể; không viết kết luận như đã chốt",
+        "Không làm tròn 60% theo hướng có lợi"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "so-sanh-thanh-vien-hop-danh-gop-von",
+      "category": "so-sanh",
+      "prompt": "Phân biệt thành viên hợp danh và thành viên góp vốn trong công ty hợp danh.",
+      "expected_output": "So sánh theo hệ tiêu chí chung: tư cách chủ thể (điểm b khoản 1 Điều 177: thành viên hợp danh phải là cá nhân), trách nhiệm, quyền quản lý (khoản 1 Điều 187 cho thành viên góp vốn), hạn chế (Điều 180); kết bằng một câu hệ quả thực hành.",
+      "files": [],
+      "source": [
+        "SKILL.md#vi-du-4",
+        "references/cap-khai-niem-de-lan.md"
+      ],
+      "expectations": [
+        "Đặt hai đối tượng trên cùng một hệ tiêu chí (3 đến 4 tiêu chí), không viết hai đoạn mô tả rời",
+        "Nêu đúng tiêu chí tư cách chủ thể (cá nhân so với tổ chức hoặc cá nhân), trách nhiệm tài sản, quyền quản lý, hạn chế",
+        "Nhắc đúng điểm b khoản 1 Điều 177, khoản 1 Điều 187 và Điều 180 Luật Doanh nghiệp năm 2020 (trật tự điểm, khoản, Điều)",
+        "Câu cuối nêu hệ quả thực hành của sự khác biệt (cá nhân bị cấm vẫn có thể làm thành viên góp vốn)",
+        "Không dùng bảng mười dòng; nếu dùng bảng thì vẫn có câu hệ quả"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "so-sanh-phat-vi-pham-boi-thuong",
+      "category": "so-sanh",
+      "prompt": "So sánh phạt vi phạm và bồi thường thiệt hại trong hợp đồng thương mại và hợp đồng dân sự.",
+      "expected_output": "Luật Thương mại 2005: chỉ cần thỏa thuận phạt vi phạm là áp dụng được cả hai chế tài (Điều 307), trần 8% (Điều 301, trừ Điều 266); Bộ luật Dân sự 2015: Điều 418 đòi thỏa thuận cả hai chế tài mới áp dụng cả hai, không có trần phạt.",
+      "files": [],
+      "source": [
+        "references/cap-khai-niem-de-lan.md#phat-vi-pham-va-boi-thuong",
+        "references/bai-tap-dinh-luong.md"
+      ],
+      "expectations": [
+        "Nêu tách bạch hai chế độ: Luật Thương mại năm 2005 (Điều 307, Điều 301, Điều 266) và Bộ luật Dân sự năm 2015 (Điều 418)",
+        "Nêu trần 8% giá trị phần nghĩa vụ bị vi phạm chỉ cho quan hệ thương mại và không trần cho dân sự",
+        "Gọi tên bẫy: mang trần 8% áp vào hợp đồng dân sự thuần túy hoặc ngược lại",
+        "Điểm giống nêu trước, rồi đi từng tiêu chí khác biệt; có câu hệ quả thực hành ở cuối",
+        "Dòng 'Cần đối chiếu trước khi dùng:' ghi số điều là mức B (chưa đối chiếu trong phiên)"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "nhan-dinh-bay-luong-tu-chi-thuong-nhan",
+      "category": "nhan-dinh+bay-luong-tu",
+      "prompt": "Đúng hay sai: 'Chủ thể của Luật Thương mại năm 2005 chỉ là thương nhân.'",
+      "expected_output": "Sai: Luật còn điều chỉnh cả tổ chức, cá nhân khác có hoạt động liên quan đến thương mại; chữ 'chỉ' là từ tuyệt đối. Dừng ở một phản ví dụ.",
+      "files": [],
+      "source": [
+        "references/cap-khai-niem-de-lan.md#thuong-nhan-doanh-nghiep",
+        "SKILL.md#nhan-dinh-dung-sai"
+      ],
+      "expectations": [
+        "Câu đầu tiên bắt đầu bằng 'Sai'",
+        "Gọi tên chữ 'chỉ' là dấu hiệu từ tuyệt đối dẫn tới việc săn ngoại lệ, đồng thời nói đây chỉ là heuristic",
+        "Nhắc Điều 6 Luật Thương mại năm 2005 về thương nhân (cấp Điều)",
+        "Dừng ở một phản ví dụ có căn cứ, không liệt kê thêm ngoại lệ",
+        "Không giải thích bằng 'vì luật quy định như vậy'; từ 150 đến 400 chữ"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "bay-hieu-luc-nghi-dinh-13-2023",
+      "category": "bay-hieu-luc",
+      "prompt": "Em đang làm bài về xử lý dữ liệu cá nhân nhạy cảm, em định dẫn Nghị định 13/2023/NĐ-CP làm căn cứ chính. Được không?",
+      "expected_output": "Không nên: Nghị định 13/2023/NĐ-CP đã bị Nghị định 356/2025/NĐ-CP thay thế từ 01/01/2026; dẫn văn bản cũ như hiện hành là lỗi hiệu lực điển hình. Con số chi tiết (ví dụ mốc 72 giờ) chỉ nêu kèm cảnh báo đối chiếu.",
+      "files": [],
+      "source": [
+        "SKILL.md#quy-cach-ghi-ccpl",
+        "references/he-thong-van-ban-va-ap-dung.md"
+      ],
+      "expectations": [
+        "Câu đầu tiên nói thẳng là không nên dẫn Nghị định 13/2023/NĐ-CP vì đã bị thay thế",
+        "Nêu Nghị định 356/2025/NĐ-CP, hiệu lực 01/01/2026, đúng dạng số hiệu NN/YYYY/NĐ-CP",
+        "Nhắc thời điểm phát sinh sự kiện pháp lý quyết định văn bản áp dụng",
+        "Mọi con số cụ thể (ví dụ 72 giờ, 2 ngày làm việc, 15 ngày) nếu nêu thì kèm cảnh báo hoặc nằm trong dòng 'Cần đối chiếu trước khi dùng:'",
+        "Không có lần nào dẫn Nghị định 13/2023/NĐ-CP như văn bản đang hiệu lực (lint_ccpl không báo CCPL08 chưa kèm ngữ cảnh thay thế)"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "bay-hieu-luc-dieu-122-blds-2005",
+      "category": "bay-hieu-luc",
+      "prompt": "Sinh viên trả lời: 'Giao dịch dân sự có hiệu lực khi đáp ứng các điều kiện tại Điều 122 Bộ luật Dân sự.' Nhận định này có vấn đề gì không? Giao dịch ký năm 2023.",
+      "expected_output": "Điều kiện có hiệu lực của giao dịch dân sự nằm ở Điều 117 Bộ luật Dân sự năm 2015, không phải Điều 122 của bản năm 2005 đã hết hiệu lực; giao dịch năm 2023 áp dụng bản 2015.",
+      "files": [],
+      "source": [
+        "SKILL.md#quy-cach-ghi-ccpl"
+      ],
+      "expectations": [
+        "Câu đầu tiên chỉ ra lỗi: dẫn nhầm Điều 122 của bản năm 2005 đã hết hiệu lực",
+        "Nêu Điều 117 Bộ luật Dân sự năm 2015 là điều kiện có hiệu lực của giao dịch dân sự",
+        "Gắn việc chọn văn bản với thời điểm xác lập giao dịch (2023)",
+        "Gọi tên lỗi là căn cứ hết hiệu lực dù số điều có thể trích 'đúng' ở bản cũ",
+        "Không trích đến khoản/điểm của Điều 117 mà không có nhãn đối chiếu"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "bay-hieu-luc-cap-huyen-sau-28-02-2027",
+      "category": "bay-hieu-luc",
+      "prompt": "Giả sử hôm nay là 15/3/2027. Nghị quyết của HĐND cấp huyện ban hành trước khi sắp xếp chính quyền địa phương có còn hiệu lực chuyển tiếp không?",
+      "expected_output": "Không: hiệu lực chuyển tiếp của văn bản cấp huyện chỉ đến hết ngày 28/02/2027 (điều khoản chuyển tiếp Luật 87/2025/QH15); cấp huyện không còn thẩm quyền ban hành VBQPPL. Đây là mốc phải được đánh dấu cần đối chiếu.",
+      "files": [],
+      "source": [
+        "references/he-thong-van-ban-va-ap-dung.md"
+      ],
+      "expectations": [
+        "Câu đầu tiên kết luận không còn hiệu lực chuyển tiếp vì ngày hỏi sau 28/02/2027",
+        "Nêu đúng mốc hết ngày 28/02/2027 và nguồn là điều khoản chuyển tiếp Luật 87/2025/QH15 (cấp Luật, không bịa số khoản)",
+        "Nêu cấp huyện không còn thẩm quyền ban hành văn bản quy phạm pháp luật (mô hình hai cấp)",
+        "Dòng 'Cần đối chiếu trước khi dùng:' ghi văn bản mới và điều khoản chuyển tiếp cần xác nhận trên vbpl.vn",
+        "Không dùng bullet; không quá 400 chữ"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "nhan-dinh-an-le-chi-tham-khao",
+      "category": "nhan-dinh",
+      "prompt": "Đúng hay sai: 'Án lệ chỉ có giá trị tham khảo, Thẩm phán có thể áp dụng hoặc không tùy ý.'",
+      "expected_output": "Sai: án lệ có giá trị bắt buộc nghiên cứu và áp dụng trong xét xử; không áp dụng khi có tình huống pháp lý tương tự thì phải nêu rõ lý do (Điều 8 Nghị quyết 04/2019/NQ-HĐTP). Không gắn mệnh đề 'sửa đổi bởi Nghị quyết 02/2025' vào Điều 8.",
+      "files": [],
+      "source": [
+        "references/an-le.md"
+      ],
+      "expectations": [
+        "Câu đầu tiên bắt đầu bằng 'Sai'",
+        "Nêu nghĩa vụ nghiên cứu, áp dụng và nghĩa vụ nêu lý do khi không áp dụng",
+        "Dẫn Điều 8 Nghị quyết số 04/2019/NQ-HĐTP kèm ngày ban hành 18/6/2019",
+        "Không ghi rằng Điều 8 được sửa đổi bởi Nghị quyết 02/2025/NQ-HĐTP",
+        "Không dẫn Văn bản hợp nhất 11/VBHN-TANDTC làm căn cứ",
+        "Dòng 'Cần đối chiếu trước khi dùng:' ghi số khoản của Điều 8 là mức B nếu có nêu"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "cham-bai-sai-ket-luan-va-quy-cach",
+      "category": "cham-bai",
+      "prompt": "Đề: 'Chủ doanh nghiệp tư nhân không thể đồng thời là thành viên công ty hợp danh.' Em làm thế này, chấm giúp em:\n\nĐúng. Theo Đ.188 k.4 Luật Doanh nghiệp 2020, doanh nghiệp tư nhân không được góp vốn vào công ty hợp danh. Vì luật quy định như vậy nên chủ doanh nghiệp tư nhân cũng không thể làm thành viên công ty hợp danh.",
+      "expected_output": "Chấm theo bốn trục: kết luận sai (nói ngay đầu), căn cứ dẫn nhầm chủ thể và sai quy cách (Đ.188 k.4), giải thích 'vì luật quy định như vậy' là chép lại kết luận, hình thức. Trích nguyên văn câu hỏng, không viết lại hộ; riêng lỗi quy cách thì đưa dạng đúng.",
+      "files": [],
+      "source": [
+        "references/cham-bai-va-hoc.md#che-do-cham",
+        "SKILL.md#quy-cach-ghi-ccpl"
+      ],
+      "expectations": [
+        "Câu đầu tiên báo kết luận của bài là sai",
+        "Chấm theo bốn trục tách bạch (kết luận, căn cứ, giải thích, hình thức) và nói rõ trục nào hỏng",
+        "Trích nguyên văn câu hỏng của người học (ví dụ 'Vì luật quy định như vậy') và gọi tên lỗi",
+        "Chỉ ra khoản 4 Điều 188 cấm doanh nghiệp tư nhân chứ không phải chủ doanh nghiệp (dẫn nhầm chủ thể)",
+        "Đưa dạng viết đúng cho lỗi quy cách 'Đ.188 k.4' là 'khoản 4 Điều 188'",
+        "Không viết lại cả bài thay người học",
+        "Kết bằng một câu chỉ ra việc sửa có tác động lớn nhất",
+        "Không tuyên bố điểm số cụ thể như sự thật"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "cham-bai-hoi-diem-so",
+      "category": "cham-bai",
+      "prompt": "Em viết bài nhận định này, thầy cho em hỏi bài này được mấy điểm trên thang 10 ạ?\n\nĐề: 'Mọi nghị quyết của Hội đồng thành viên công ty TNHH đều phải được thông qua trên vốn điều lệ.'\nBài làm: Sai. Tỷ lệ thông qua tại cuộc họp tính trên tổng số vốn góp của các thành viên dự họp theo khoản 3 Điều 59 Luật Doanh nghiệp năm 2020, không phải trên vốn điều lệ. Bẫy ở chữ 'mọi' và ở mẫu số.",
+      "expected_output": "Trả lời trung thực rằng không có barem công khai để quy ra điểm, nêu kinh nghiệm (0,5 đến 1 điểm mỗi nhận định, kết luận sai thì giải thích mất trắng) và đưa đánh giá theo bốn trục.",
+      "files": [],
+      "source": [
+        "references/cham-bai-va-hoc.md#diem-so-va-barem",
+        "SKILL.md#nhan-dinh-dung-sai"
+      ],
+      "expectations": [
+        "Nói thẳng không có barem công khai nên không quy ra điểm số",
+        "Không đưa ra con số điểm kiểu 'X/10' hoặc 'được Y điểm cho phần giải thích'",
+        "Nếu nêu khoảng 0,5 đến 1 điểm mỗi nhận định thì ghi rõ là kinh nghiệm",
+        "Đánh giá theo bốn trục, nhận ra kết luận đúng và căn cứ khoản 3 Điều 59 đúng quy cách",
+        "Có thể chỉ ra điều kiện hóa còn thiếu (hình thức lấy ý kiến văn bản có mẫu số khác) mà không viết lại bài hộ"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "dan-duong-khong-giai-hoi-mau-so",
+      "category": "dan-duong",
+      "prompt": "Mình đang ôn thi nên đừng giải vội, gợi ý thôi nhé. Đề: Công ty TNHH Mỹ Kim vốn điều lệ 3 tỷ, Bình 1 tỷ, Minh 800 triệu, Thủy 700 triệu, Lan 500 triệu. Cuộc họp 1 chỉ Minh và Lan dự. Cuộc họp 2 có Bình, Lan, Minh dự, chỉ Lan không tán thành việc sáp nhập. Hỏi các cuộc họp có hợp lệ không và nghị quyết có được thông qua không.",
+      "expected_output": "Chế độ dẫn đường: chưa giải; tối đa ba câu hỏi theo trình tự giải đề trỏ vào mấu chốt (mẫu số của điều kiện họp và của tỷ lệ thông qua), không nhét đáp án vào câu hỏi.",
+      "files": [],
+      "source": [
+        "references/cham-bai-va-hoc.md#che-do-dan-duong",
+        "references/bai-tap-dinh-luong.md"
+      ],
+      "expectations": [
+        "Không đưa kết luận hợp lệ hoặc không hợp lệ cho bất kỳ cuộc họp nào",
+        "Không xuất hiện các kết quả phép tính 43,33%, 76,67%, 78,26% hoặc 60%",
+        "Có từ một đến ba câu hỏi, đánh số theo trình tự giải đề",
+        "Có ít nhất một câu hỏi định vị về mẫu số (mỗi phép tính lấy mẫu số là gì và điều khoản nào ấn định)",
+        "Không nhét đáp án vào câu hỏi (không có câu kiểu 'có phải cuộc họp 1 không hợp lệ vì thiếu 65% không')",
+        "Không tuyên bố điểm số"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "nguong-dung-con-so-nghi-dinh-xu-phat",
+      "category": "nguong-dung",
+      "prompt": "Đúng hay sai: 'Mức phạt tiền tối đa đối với hành vi không niêm yết giá hàng hóa theo nghị định xử phạt vi phạm hành chính trong lĩnh vực thương mại là 20 triệu đồng.' Mình không có internet, cứ trả lời luôn.",
+      "expected_output": "Chạm Ngưỡng dừng (con số cụ thể ở nghị định xử phạt, không có trong reference, không có công cụ tra): câu đầu nói chưa đủ căn cứ để chốt; nêu chuỗi nguồn và hướng ở cấp còn chắc; chỉ thao tác tra theo quy-trinh-xac-minh.md; không kết luận Đúng/Sai.",
+      "files": [],
+      "source": [
+        "SKILL.md#nguong-dung",
+        "references/quy-trinh-xac-minh.md",
+        "references/danh-muc-bay.md"
+      ],
+      "expectations": [
+        "Câu đầu tiên nói chưa đủ căn cứ để chốt và nêu rõ mắc ở đâu (không nắm được con số trong nghị định)",
+        "Không viết câu kết luận 'Đúng' hoặc 'Sai' như thể đã chốt",
+        "Không khẳng định hay phủ nhận mức 20 triệu đồng; không đưa ra con số mức phạt khác từ trí nhớ",
+        "Nêu phần lập luận ở cấp còn chắc (chuỗi nguồn: luật xử phạt vi phạm hành chính và nghị định xử phạt chuyên ngành)",
+        "Chỉ ra thao tác tra cụ thể (tra nghị định xử phạt hiện hành trên vbpl.vn, soát văn bản thay thế)",
+        "Không bịa số hiệu nghị định xử phạt; nếu nêu số hiệu thì gắn nhãn chưa đối chiếu"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "nguong-dung-luat-noi-dia-nuoc-ngoai",
+      "category": "nguong-dung",
+      "prompt": "Theo Bộ luật Dân sự Đức (BGB), người mua phải thông báo khuyết tật của hàng hóa trong bao nhiêu ngày và theo điều (Paragraph) nào? Hợp đồng hai công ty Đức với nhau, không liên quan Việt Nam.",
+      "expected_output": "Chạm Ngưỡng dừng (pháp luật nội địa nước ngoài thuần túy, không mắt xích Việt Nam): nói ngay ngoài phạm vi các reference; không nêu số Paragraph hay số ngày từ trí nhớ; vẫn có thể giúp ở tầng cấu trúc lập luận.",
+      "files": [],
+      "source": [
+        "SKILL.md#nguong-dung",
+        "references/lap-luan.md"
+      ],
+      "expectations": [
+        "Câu đầu tiên nói đây là pháp luật nội địa nước ngoài thuần túy nằm ngoài phạm vi và chưa đủ căn cứ để trả lời",
+        "Không nêu số Paragraph (§) của BGB và không nêu số ngày thông báo từ trí nhớ",
+        "Đề nghị giúp ở tầng cấu trúc lập luận hoặc yêu cầu người dùng đính kèm văn bản",
+        "Chỉ ra cần tra văn bản gốc của BGB hoặc hỏi luật sư Đức, không bịa nguồn",
+        "Không trả lời như thể có căn cứ rồi hạ giọng"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "nguong-dung-wto-ada-so-dieu",
+      "category": "nguong-dung+tmqt",
+      "prompt": "Điều mấy của Hiệp định Chống bán phá giá (ADA) quy định ngưỡng biên độ phá giá tối thiểu để chấm dứt điều tra, và ngưỡng đó là bao nhiêu phần trăm? Không có tài liệu đính kèm.",
+      "expected_output": "Chạm Ngưỡng dừng (số điều chi tiết hiệp định WTO ngoài GATT, không tài liệu gốc): nêu đúng tên hiệp định và cơ chế, chỉ chỗ tra (docs.wto.org), dừng trước số điều và con số phần trăm.",
+      "files": [],
+      "source": [
+        "SKILL.md#nguong-dung",
+        "references/thuong-mai-quoc-te.md",
+        "references/quy-trinh-xac-minh.md"
+      ],
+      "expectations": [
+        "Câu đầu tiên nói chưa đủ căn cứ để chốt số điều và con số",
+        "Nêu đúng tên Hiệp định Chống bán phá giá (ADA) và nói đây là cơ chế phòng vệ thương mại trong tầng WTO",
+        "Không nêu số điều ADA cụ thể và không nêu tỷ lệ phần trăm từ trí nhớ",
+        "Chỉ nơi tra gốc (docs.wto.org, văn bản hiệp định) thay cho vbpl.vn ở tầng điều ước",
+        "Không dùng bullet; ngắn gọn"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "viec-that-quyet-dinh-xu-phat",
+      "category": "viec-that",
+      "prompt": "Công ty em vừa nhận quyết định xử phạt vi phạm hành chính ngày 02/11/2026, giờ em phải làm gì? Có phải nộp phạt luôn không, hay còn đường nào khác?",
+      "expected_output": "Nhận ra đây là việc thật, không phải đề thi: đổi cách viết (dài hơn, đủ nhánh, nêu mốc thời hạn có thể mất quyền, nói chỗ cần luật sư có hồ sơ), hoặc hỏi lại một câu để xác nhận. Không bịa con số thời hạn ngoài reference.",
+      "files": [],
+      "source": [
+        "SKILL.md#rang-buoc",
+        "SKILL.md#nguong-dung",
+        "references/quy-trinh-xac-minh.md"
+      ],
+      "expectations": [
+        "Nhận diện đây là việc thật (có ngày tháng cụ thể, câu hỏi 'giờ em phải làm gì') chứ không áp ngân sách 250 chữ kiểu bài thi",
+        "Hoặc hỏi lại đúng một câu để xác nhận bối cảnh, hoặc trình bày nhiều nhánh (nộp phạt, khiếu nại, khởi kiện)",
+        "Nói có mốc thời hạn có thể mất quyền và chỉ cách tra thời hạn cụ thể; không nêu số ngày cụ thể như chắc chắn nếu không có trong reference",
+        "Nêu rõ chỗ nào cần luật sư có hồ sơ trong tay mới kết luận được",
+        "Không kết luận 'Đúng/Sai' kiểu nhận định",
+        "Không thêm disclaimer rập khuôn dài dòng; không bịa số hiệu nghị định"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "nhieu-nhan-dinh-mot-luot",
+      "category": "nhan-dinh-nhieu-cau",
+      "prompt": "Chữa giúp mình 3 nhận định sau, đúng hay sai:\n1. Án lệ là văn bản quy phạm pháp luật.\n2. Chủ thể của Luật Thương mại năm 2005 chỉ là thương nhân.\n3. Hợp đồng mua bán hàng hóa giữa doanh nghiệp Việt Nam và doanh nghiệp Ấn Độ đương nhiên áp dụng CISG vì Việt Nam là thành viên.",
+      "expected_output": "Ba khối độc lập, đánh số theo thứ tự đề, mỗi khối bốn nhịp, kết luận Sai ở cả ba; không gộp lập luận; giữ ngân sách chữ cho từng câu.",
+      "files": [],
+      "source": [
+        "SKILL.md#khi-chua-nhieu-nhan-dinh",
+        "references/an-le.md",
+        "references/cap-khai-niem-de-lan.md",
+        "references/thuong-mai-quoc-te.md"
+      ],
+      "expectations": [
+        "Đánh số 1, 2, 3 đúng thứ tự đề; mỗi câu một khối riêng",
+        "Mỗi khối bắt đầu bằng 'Sai' ở câu đầu của khối",
+        "Câu 1: án lệ không phải văn bản quy phạm pháp luật nhưng có giá trị bắt buộc nghiên cứu, áp dụng",
+        "Câu 2: gọi tên chữ 'chỉ' và nhắc Điều 6 Luật Thương mại năm 2005",
+        "Câu 3: nêu Điều 1(1)(a) CISG và tình trạng thành viên của Ấn Độ cần tra",
+        "Không gộp chung một đoạn giải thích cho nhiều câu",
+        "Mỗi khối không quá 250 chữ (tối đa 400 chữ); có một dòng 'Cần đối chiếu trước khi dùng:'"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "tmqt-bao-luu-dieu-96-hinh-thuc-hop-dong",
+      "category": "tmqt",
+      "prompt": "Đúng hay sai: 'Doanh nghiệp Việt Nam ký hợp đồng mua bán hàng hóa bằng lời nói với doanh nghiệp ở nước thành viên CISG; theo Điều 11 CISG hợp đồng không bắt buộc phải lập thành văn bản nên hợp đồng này hợp lệ.'",
+      "expected_output": "Sai (hoặc Đúng một phần nếu tách vế): Điều 11 CISG đặt nguyên tắc tự do hình thức, nhưng Việt Nam bảo lưu Điều 96 nên khi một bên có trụ sở tại Việt Nam, hợp đồng phải bằng văn bản hoặc hình thức tương đương, khớp khoản 2 Điều 27 Luật Thương mại 2005; khoản 15 Điều 3 coi điện báo, telex, fax, thông điệp dữ liệu là tương đương văn bản.",
+      "files": [],
+      "source": [
+        "references/thuong-mai-quoc-te.md#bao-luu-dieu-96",
+        "references/danh-muc-bay.md#nhom-9"
+      ],
+      "expectations": [
+        "Câu đầu tiên là kết luận Sai (hoặc Đúng một phần) và chỉ rõ chỗ sai",
+        "Nêu bảo lưu Điều 96 CISG của Việt Nam loại trừ Điều 11",
+        "Nhắc khoản 2 Điều 27 và khoản 15 Điều 3 Luật Thương mại năm 2005 theo đúng trật tự khoản trước Điều",
+        "Gọi tên bẫy trích Điều 11 CISG mà quên bảo lưu Điều 96 (bẫy 9.5)",
+        "Dòng 'Cần đối chiếu trước khi dùng:' nêu bảo lưu Điều 96 và tình trạng điều ước cần tra trên bảng UNCITRAL",
+        "Không bịa tình trạng thành viên của bất kỳ quốc gia cụ thể nào"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "thoi-hieu-thuong-mai-ngoai-le-logistics",
+      "category": "nhan-dinh+bay-luong-tu",
+      "prompt": "Đúng hay sai: 'Mọi tranh chấp thương mại đều có thời hiệu khởi kiện là 2 năm kể từ thời điểm quyền và lợi ích hợp pháp bị xâm phạm.'",
+      "expected_output": "Sai: Điều 319 Luật Thương mại 2005 đặt thời hiệu 2 năm nhưng có ngoại lệ tại điểm e khoản 1 Điều 237 — thương nhân kinh doanh dịch vụ logistics được miễn trách nhiệm nếu sau khi bị khiếu nại mà không nhận được thông báo bị kiện tại Trọng tài hoặc Tòa án trong 09 tháng kể từ ngày giao hàng. Chữ 'mọi' là từ tuyệt đối.",
+      "files": [],
+      "source": [
+        "references/he-thong-van-ban-va-ap-dung.md#bang-thoi-hieu-doi-chieu-nhanh",
+        "references/danh-muc-bay.md#nhom-3"
+      ],
+      "expectations": [
+        "Câu đầu tiên là kết luận Sai",
+        "Dẫn Điều 319 Luật Thương mại năm 2005 và nêu phần 'trừ trường hợp' dẫn chiếu điểm e khoản 1 Điều 237",
+        "Nêu mốc 09 tháng kể từ ngày giao hàng gắn với dịch vụ logistics",
+        "Gọi tên bẫy từ tuyệt đối 'mọi'",
+        "Viết 'điểm e khoản 1 Điều 237' đúng trật tự nhỏ đến lớn"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "luat-sua-doi-chua-co-hieu-luc",
+      "category": "nhan-dinh+bay-hieu-luc",
+      "prompt": "Hôm nay là 04/11/2026. Đúng hay sai: 'Luật số 24/2026/QH16 sửa Điều 6 Luật Đầu tư đã được Quốc hội thông qua nên phải áp dụng ngay cho dự án đăng ký trong tháng này.'",
+      "expected_output": "Sai: Luật số 24/2026/QH16 có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027); văn bản đã thông qua nhưng chưa có hiệu lực thì chưa áp dụng — dự án đăng ký tháng 11/2026 áp dụng Luật Đầu tư số 143/2025/QH15 theo câu chữ hiện hành.",
+      "files": [],
+      "source": [
+        "references/he-thong-van-ban-va-ap-dung.md#so-van-ban-sua-doi-2024-2025-hay-bi-bo-sot-so-hieu",
+        "references/danh-muc-bay.md#nhom-2"
+      ],
+      "expectations": [
+        "Câu đầu tiên là kết luận Sai",
+        "Phân biệt ngày thông qua với ngày có hiệu lực",
+        "Nêu mốc 01/3/2027 (và 01/01/2027 cho một phần Điều 6) của Luật số 24/2026/QH16",
+        "Kết luận áp dụng Luật Đầu tư số 143/2025/QH15 cho sự kiện tháng 11/2026",
+        "Không dẫn Luật Đầu tư năm 2020 như văn bản hiện hành"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "nhan-dinh-tthc-dao-chieu-sau-2025",
+      "category": "nhan-dinh+bay-hieu-luc",
+      "prompt": "Nhận định sau đúng hay sai: 'Tòa án nhân dân cấp tỉnh không có quyền xét xử theo thủ tục giám đốc thẩm và tái thẩm vụ án hành chính.' Tài liệu ôn của em ghi là Đúng, căn cứ Điều 266 và Điều 286 Luật Tố tụng hành chính 2015.",
+      "expected_output": "Sai theo luật hiện hành: khoản 1 Điều 266 (văn bản hợp nhất 2026) giao Ủy ban Thẩm phán Tòa án nhân dân cấp tỉnh giám đốc thẩm bản án của Tòa án nhân dân khu vực; Điều 286 cho tái thẩm theo quy định giám đốc thẩm. Đáp án Đúng chỉ khớp sơ đồ trước 01/7/2025.",
+      "files": [],
+      "source": [
+        "references/danh-muc-bay.md#nhom-10",
+        "SKILL.md"
+      ],
+      "expectations": [
+        "Câu đầu tiên bắt đầu bằng 'Sai'",
+        "Nêu mốc 01/7/2025 và giải thích vì sao tài liệu cũ chấm Đúng",
+        "Dẫn khoản 1 Điều 266 về thẩm quyền của Ủy ban Thẩm phán Tòa án nhân dân cấp tỉnh",
+        "Nhắc Điều 286 (tái thẩm theo quy định giám đốc thẩm)",
+        "Không dùng 'Tòa án nhân dân cấp huyện' như cơ quan đang tồn tại",
+        "Gọi tên bẫy (thay đổi tổ chức Tòa án làm đảo đáp án cũ)"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "nhan-dinh-tthc-hoi-tham-rut-gon",
+      "category": "nhan-dinh+bay-luong-tu",
+      "prompt": "Đúng hay sai, giải thích ngắn: 'Hội thẩm nhân dân là thành phần bắt buộc khi xét xử sơ thẩm tất cả các vụ án hành chính.'",
+      "expected_output": "Sai: khoản 1 Điều 12 Luật Tố tụng hành chính có Hội thẩm nhân dân tham gia xét xử sơ thẩm, trừ thủ tục rút gọn (điều kiện ở Điều 246).",
+      "files": [],
+      "source": [
+        "references/danh-muc-bay.md#nhom-10"
+      ],
+      "expectations": [
+        "Câu đầu tiên bắt đầu bằng 'Sai'",
+        "Dẫn khoản 1 Điều 12 và nêu ngoại lệ thủ tục rút gọn",
+        "Gọi tên lượng từ 'tất cả' như dấu hiệu bẫy nhưng kết luận dựa vào câu chữ điều luật, không dựa vào lượng từ",
+        "Tổng không quá 250 chữ"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "nhan-dinh-tthc-ky-luat-buoc-thoi-viec",
+      "category": "nhan-dinh",
+      "prompt": "Nhận định: 'Cán bộ, công chức bị xử lý kỷ luật có quyền khởi kiện quyết định kỷ luật ra Tòa án.' Đáp án nhóm em ghi: Sai, chỉ công chức bị kỷ luật buộc thôi việc từ Tổng Cục trưởng trở xuống mới được kiện (Điều 30). Đáp án này có ổn không?",
+      "expected_output": "Kết luận Sai giữ nguyên nhưng căn cứ phải sửa: khoản 2 Điều 30 hiện hành là công chức giữ chức vụ dưới Thứ trưởng và dưới tương đương Thứ trưởng; chỉ hình thức buộc thôi việc mới kiện được.",
+      "files": [],
+      "source": [
+        "references/danh-muc-bay.md#nhom-10",
+        "references/cham-bai-va-hoc.md"
+      ],
+      "expectations": [
+        "Xác nhận kết luận 'Sai' đúng nhưng căn cứ sai (ô 'sửa căn cứ')",
+        "Dẫn khoản 2 Điều 30 với ngưỡng 'dưới Thứ trưởng và dưới tương đương Thứ trưởng'",
+        "Chỉ ra cụm 'Tổng Cục trưởng' không còn khớp câu chữ hiện hành",
+        "Nói rõ các hình thức kỷ luật khác không thuộc thẩm quyền Tòa án theo điều này"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "chua-tai-lieu-canh-tranh-2004",
+      "category": "cham-bai",
+      "prompt": "Em có bộ nhận định Luật Cạnh tranh tải trên mạng, ví dụ: 'Câu 11: Mọi thỏa thuận phân chia thị trường tiêu thụ sản phẩm theo khoản 2 Điều 8 Luật cạnh tranh đều bị cấm. Trả lời: Sai, theo khoản 2 Điều 9 chỉ bị cấm khi các bên có thị phần kết hợp từ 30% trở lên.' Em học theo bộ này được không?",
+      "expected_output": "Không: bộ tài liệu viết theo Luật Cạnh tranh 2004 (Điều 8, 9, ngưỡng thị phần kết hợp 30%). Theo Luật 23/2018/QH14, thỏa thuận phân chia thị trường (khoản 2 Điều 11) bị cấm khi giữa doanh nghiệp trên cùng thị trường liên quan (khoản 1 Điều 12), không còn ngưỡng 30%. Báo cả bộ thuộc luật đã hết hiệu lực trước khi chữa từng câu.",
+      "files": [],
+      "source": [
+        "references/danh-muc-bay.md#nhom-11",
+        "references/cham-bai-va-hoc.md#chua-tai-lieu-on-thi-suu-tam",
+        "scripts/superseded.json"
+      ],
+      "expectations": [
+        "Câu đầu tiên nói tài liệu soạn theo Luật Cạnh tranh năm 2004 đã hết hiệu lực",
+        "Nêu ít nhất một dấu hiệu thế hệ luật (Điều 8, 9 / ngưỡng 30% / Cục Quản lý cạnh tranh)",
+        "Dẫn khoản 2 Điều 11 và khoản 1 Điều 12 Luật Cạnh tranh năm 2018 cho câu 11",
+        "Không chữa lại toàn bộ bộ đề khi người dùng chỉ đưa một câu; đề xuất cách phân loại theo bốn ô",
+        "Không dẫn Luật 27/2004/QH11 như văn bản đang hiệu lực"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "nhan-dinh-ban-duoi-gia-thanh",
+      "category": "nhan-dinh+tach-ve",
+      "prompt": "Đúng hay sai: 'Chỉ doanh nghiệp có vị trí thống lĩnh thị trường mới bị cấm bán hàng dưới giá thành toàn bộ.'",
+      "expected_output": "Sai: khoản 6 Điều 45 Luật Cạnh tranh 2018 cấm cả doanh nghiệp không thống lĩnh bán dưới giá thành toàn bộ dẫn đến hoặc có khả năng loại bỏ doanh nghiệp khác (cạnh tranh không lành mạnh); với doanh nghiệp thống lĩnh là điểm a khoản 1 Điều 27. Cả hai đều đòi hệ quả loại bỏ.",
+      "files": [],
+      "source": [
+        "references/danh-muc-bay.md#nhom-11",
+        "references/cap-khai-niem-de-lan.md"
+      ],
+      "expectations": [
+        "Câu đầu tiên bắt đầu bằng 'Sai'",
+        "Dẫn cả điểm a khoản 1 Điều 27 và khoản 6 Điều 45",
+        "Nêu điều kiện hệ quả 'dẫn đến hoặc có khả năng dẫn đến loại bỏ'",
+        "Không dẫn Nghị định 116/2005/NĐ-CP hay Pháp lệnh giá 2002 như văn bản đang hiệu lực"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "nhan-dinh-hngd-hoi-lhpn-tu-nguyen",
+      "category": "nhan-dinh+tach-ve",
+      "prompt": "Nhận định: 'Hội Liên hiệp Phụ nữ có quyền yêu cầu Tòa án hủy kết hôn trái pháp luật do vi phạm sự tự nguyện.' Đúng hay sai?",
+      "expected_output": "Sai nếu hiểu là quyền tự thân: khoản 2 Điều 10 Luật HNGĐ 2014 chỉ trao quyền cho Hội LHPN với vi phạm điểm a, c, d khoản 1 Điều 8. Nhưng khoản 1 Điều 10 cho người bị cưỡng ép, lừa dối đề nghị Hội LHPN yêu cầu — nên phải tách vế.",
+      "files": [],
+      "source": [
+        "references/danh-muc-bay.md#nhom-12"
+      ],
+      "expectations": [
+        "Câu đầu tiên kết luận Sai (hoặc 'Đúng một phần') và nêu ngay điều kiện",
+        "Dẫn khoản 2 Điều 10 và điểm b khoản 1 Điều 8",
+        "Nêu đường 'đề nghị' của khoản 1 Điều 10",
+        "Gọi tên kỹ thuật tách vế / dẫn chiếu loại trừ"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "nhan-dinh-hngd-ket-hon-trai-phap-luat",
+      "category": "nhan-dinh",
+      "prompt": "Đúng hay sai: 'Kết hôn vi phạm điều kiện kết hôn là kết hôn trái pháp luật.'",
+      "expected_output": "Sai (hoặc Đúng một phần): khoản 6 Điều 3 chỉ gọi là kết hôn trái pháp luật khi đã đăng ký kết hôn tại cơ quan có thẩm quyền; chung sống không đăng ký mà vi phạm điều kiện thì không phải kết hôn trái pháp luật (Điều 14).",
+      "files": [],
+      "source": [
+        "references/danh-muc-bay.md#nhom-12",
+        "references/cap-khai-niem-de-lan.md#ket-hon-trai-phap-luat"
+      ],
+      "expectations": [
+        "Câu đầu không kết luận 'Đúng' tuyệt đối",
+        "Dẫn khoản 6 Điều 3 với yếu tố 'đã đăng ký kết hôn'",
+        "Phân biệt với trường hợp chung sống không đăng ký (Điều 14)",
+        "Không viết quá 300 chữ"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "nhan-dinh-hngd-dang-ky-ket-hon-ytnn",
+      "category": "bay-hieu-luc",
+      "prompt": "Đúng hay sai: 'Chỉ Ủy ban nhân dân cấp huyện mới có thẩm quyền đăng ký kết hôn có yếu tố nước ngoài.'",
+      "expected_output": "Sai: từ 01/7/2025, Điều 4 Nghị định 120/2025/NĐ-CP giao thẩm quyền đăng ký hộ tịch có yếu tố nước ngoài cho Ủy ban nhân dân cấp xã; cấp huyện không còn. Trước mốc đó Sai vì ngoại lệ cấp xã khu vực biên giới. Có dòng nhắc đối chiếu cho Nghị định 120/2025/NĐ-CP.",
+      "files": [],
+      "source": [
+        "references/danh-muc-bay.md#nhom-12"
+      ],
+      "expectations": [
+        "Câu đầu tiên bắt đầu bằng 'Sai'",
+        "Nêu mốc 01/7/2025 và Nghị định 120/2025/NĐ-CP",
+        "Nói rõ lý do Sai trước và sau mốc là khác nhau",
+        "Có dòng 'Cần đối chiếu trước khi dùng:' vì nguồn chưa đối chiếu vbpl.vn",
+        "Không bịa số hiệu Luật Hộ tịch mới"
+      ]
+    }
+  ]
+}

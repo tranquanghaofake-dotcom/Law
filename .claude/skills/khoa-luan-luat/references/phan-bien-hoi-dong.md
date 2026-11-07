@@ -54,6 +54,16 @@ Lỗi CHẶN: … | Lỗi NẶNG: … (xếp theo điểm có thể lấy lại)
 
 Trả lời theo khuôn: **kết luận 1 câu → căn cứ (điều luật, nguồn, dữ liệu) → thừa nhận giới hạn nếu có**. Không cãi; nhận góp ý đúng, giải thích nếu có căn cứ.
 
+## Ba dạng câu chất vấn giảng viên hay dùng (mẫu lấy từ câu hỏi thực tế đặt cho nhóm thuyết trình môn Hôn nhân và gia đình, 2025)
+
+Soạn trước ý trả lời cho cả ba dạng; hội đồng khóa luận dùng đúng các dạng này, chỉ đổi chế định.
+
+1. **Câu hỏi chính sách — "quy định này có bất hợp lý không, có nên sửa không?"** Ví dụ: "Luật yêu cầu người mang thai hộ phải là người thân thích cùng hàng của bên vợ hoặc bên chồng — điều đó có tạo bất bình đẳng cho người không có người thân đủ điều kiện, có nên nới lỏng?" Khuôn trả lời: nguyên văn quy định hiện hành (điều, khoản) → mục đích lập pháp mà điều kiện đó phục vụ → cái giá của việc nới lỏng (rủi ro thương mại hóa, tranh chấp xác định cha mẹ) → nếu vẫn kiến nghị thì nêu **điều kiện kiểm soát thay thế** và **địa chỉ sửa** (sửa điều nào, cơ quan nào). Câu trả lời chỉ có "nên nới lỏng vì bất bình đẳng" là kiến nghị không có địa chỉ — lỗi đã liệt kê trong checklist.
+2. **Câu hỏi đảo ngược định nghĩa — "trường hợp X có còn là Y không?"** Ví dụ: "Con sinh ra trong thời kỳ hôn nhân nhưng không phải con của người chồng có là con chung không?" Hội đồng thử xem người bảo vệ có nắm ngoại lệ của chính khái niệm trung tâm hay không. Khuôn: quy tắc suy đoán → các ngoại lệ luật định → thủ tục để lật suy đoán (ai yêu cầu, chứng cứ gì).
+3. **Câu hỏi có yếu tố nước ngoài — "nếu một bên là người nước ngoài thì sao?"** Ví dụ: vợ Việt Nam, chồng Nhật kết hôn tại Nhật, nay ly hôn tại Việt Nam — Tòa Việt Nam có thẩm quyền không, luật nào áp dụng? Khuôn: thẩm quyền trước (tố tụng chặn nội dung), luật áp dụng sau, nêu điều luật chọn luật cụ thể. Đề tài trong nước thuần túy vẫn nên chuẩn bị một câu cho dạng này nếu đối tượng nghiên cứu có thể có yếu tố nước ngoài.
+
+Câu hỏi có điều luật trong câu (như "theo Điều 127...") thì tra lại đúng điều đó trên văn bản hợp nhất mới nhất trước buổi bảo vệ — số điều trong câu hỏi của giảng viên cũng có thể theo bản cũ.
+
 ## Khung slide bảo vệ (10–12 trang, 10–15 phút)
 
 Tên đề tài → Lý do và khoảng trống → Câu hỏi, phương pháp → (mỗi chương 1–2 trang: phát hiện chính, không chép chữ) → Bảng hạn chế ↔ kiến nghị → Điểm mới → Hạn chế, hướng tiếp → Cảm ơn (bỏ nếu bài dự giải ẩn danh ở vòng chấm).
