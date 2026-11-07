@@ -100,9 +100,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Khi người khởi kiện là cá nhân chết, Tòa án luôn phải đình chỉ giải quyết vụ án.",
+   "statement": "Khi người khởi kiện là cá nhân đã chết, Tòa án phải đình chỉ giải quyết vụ án dù quyền, nghĩa vụ của họ được thừa kế.",
    "answer": false,
-   "explain": "Sai. Điểm a khoản 1 Điều 143: chỉ đình chỉ khi quyền, nghĩa vụ của họ không được thừa kế."
+   "explain": "Sai. Điểm a khoản 1 Điều 143: đình chỉ khi quyền, nghĩa vụ của người chết không được thừa kế; nếu được thừa kế thì không thuộc trường hợp này."
   },
   {
    "type": "recall",

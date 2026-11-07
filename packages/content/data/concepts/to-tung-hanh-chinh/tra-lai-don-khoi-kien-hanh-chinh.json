@@ -105,7 +105,7 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Trả lại đơn khởi kiện và đình chỉ giải quyết vụ án đều xảy ra sau khi Tòa án đã thụ lý vụ án.",
+   "statement": "Thẩm phán trả lại đơn khởi kiện sau khi Tòa án đã thụ lý vụ án.",
    "answer": false,
    "explain": "Sai. Trả lại đơn khởi kiện xảy ra trước khi thụ lý (Điều 123); đình chỉ giải quyết vụ án xảy ra sau khi đã thụ lý (Điều 143)."
   },

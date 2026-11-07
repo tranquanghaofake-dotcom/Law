@@ -103,9 +103,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi quyết định hành chính đều là đối tượng khởi kiện vụ án hành chính.",
+   "statement": "Quyết định hành chính thuộc phạm vi bí mật nhà nước trong lĩnh vực quốc phòng, an ninh, ngoại giao vẫn thuộc thẩm quyền giải quyết của Tòa án.",
    "answer": false,
-   "explain": "Sai. Chỉ quyết định tác động tới quyền, lợi ích, nghĩa vụ (khoản 2 Điều 3) và không thuộc ngoại lệ ở khoản 1 Điều 30."
+   "explain": "Sai. Điểm a khoản 1 Điều 30 loại trừ quyết định hành chính, hành vi hành chính thuộc phạm vi bí mật nhà nước trong lĩnh vực quốc phòng, an ninh, ngoại giao."
   },
   {
    "type": "recall",
