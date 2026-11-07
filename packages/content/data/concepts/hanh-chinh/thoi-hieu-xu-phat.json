@@ -155,9 +155,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi vi phạm hành chính đều có thời hiệu xử phạt 02 năm.",
+   "statement": "Vi phạm hành chính về đất đai có thời hiệu xử phạt 01 năm.",
    "answer": false,
-   "explain": "Sai. Mặc định 01 năm; chỉ một số lĩnh vực là 02 năm (điểm a khoản 1 Điều 6)."
+   "explain": "Sai. Điểm a khoản 1 Điều 6: lĩnh vực đất đai thuộc nhóm ngoại lệ, thời hiệu xử phạt là 02 năm (mặc định mới là 01 năm)."
   },
   {
    "type": "recall",
