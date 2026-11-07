@@ -72,7 +72,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 6 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 6 — thời hiệu chung 01 năm.",
+    "Sai: 02 năm áp dụng cho một số lĩnh vực.",
+    "Sai: 06 tháng không phải thời hiệu chung.",
+    "Sai: 03 năm không phải thời hiệu chung."
+   ]
   },
   {
    "type": "mcq",
@@ -89,7 +95,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 6 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 6 — đất đai thuộc nhóm có thời hiệu 02 năm.",
+    "Sai: 01 năm là thời hiệu chung.",
+    "Sai: 05 năm không phải thời hiệu.",
+    "Sai: có thời hiệu."
+   ]
   },
   {
    "type": "pair",

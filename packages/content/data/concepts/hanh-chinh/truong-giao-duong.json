@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 92 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 92 — người từ đủ 12 đến dưới 14 tuổi thực hiện hành vi có dấu hiệu tội phạm đặc biệt nghiêm trọng.",
+    "Sai: vi phạm giao thông không thuộc căn cứ này.",
+    "Sai: trộm cắp nhỏ lần đầu không thuộc căn cứ.",
+    "Sai: đi học muộn không phải vi phạm pháp luật."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 92 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: người từ đủ 14 đến dưới 16 tuổi phạm các tội ở khoản 2 Điều 12 Bộ luật Hình sự phải chịu trách nhiệm hình sự, nên không xử lý hành chính.",
+    "Sai: các tội ở khoản 2 Điều 12 là tội nghiêm trọng trở lên.",
+    "Sai: các tội đó vẫn còn hiệu lực.",
+    "Sai: khoản 2 Điều 12 áp dụng cho người từ đủ 14 đến dưới 16 tuổi."
+   ]
   },
   {
    "type": "pair",

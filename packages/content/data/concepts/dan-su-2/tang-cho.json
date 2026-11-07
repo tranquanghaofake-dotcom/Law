@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 457 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: Điều 457 — bên tặng cho giao tài sản, không yêu cầu đền bù; bên được tặng cho đồng ý nhận.",
+    "Sai: tặng cho không có đền bù.",
+    "Sai: tặng cho là hợp đồng, cần bên nhận đồng ý.",
+    "Sai: tặng cho áp dụng cả bất động sản (Điều 459)."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 458 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 458 — có hiệu lực khi bên được tặng cho nhận tài sản.",
+    "Sai: ký hợp đồng chưa làm hợp đồng có hiệu lực với động sản.",
+    "Sai: không cần công chứng.",
+    "Sai: không có mốc 30 ngày."
+   ]
   },
   {
    "type": "pair",

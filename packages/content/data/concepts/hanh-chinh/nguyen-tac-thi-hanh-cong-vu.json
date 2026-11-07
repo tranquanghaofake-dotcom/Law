@@ -73,7 +73,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 2 Luật Cán bộ, công chức 2025 (80/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 2 Luật Cán bộ, công chức 2025 — công khai, minh bạch, đúng thẩm quyền, có kiểm tra, giám sát.",
+    "Sai: ưu tiên thân quen trái nguyên tắc công vụ.",
+    "Sai: công vụ phải công khai, minh bạch.",
+    "Sai: phải đúng thẩm quyền, trình tự."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 3 Luật Cán bộ, công chức 2025 (80/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 6 Điều 3 — bình đẳng giới thuộc nguyên tắc quản lý cán bộ, công chức.",
+    "Sai: Điều 2 là nguyên tắc thi hành công vụ, không chứa nội dung này.",
+    "Sai: đây không phải nghĩa vụ công dân.",
+    "Sai: nguyên tắc có trong luật."
+   ]
   },
   {
    "type": "pair",

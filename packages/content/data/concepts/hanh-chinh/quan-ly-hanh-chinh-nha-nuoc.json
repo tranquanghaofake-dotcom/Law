@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
-   }
+   },
+   "why": [
+    "Đúng: theo bài giảng, quản lý hành chính nhà nước là hoạt động chấp hành và điều hành.",
+    "Sai: lập pháp là hoạt động của Quốc hội.",
+    "Sai: xét xử là hoạt động của Tòa án.",
+    "Sai: kinh doanh không phải bản chất của quản lý hành chính."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
-   }
+   },
+   "why": [
+    "Đúng: theo bài giảng, chủ thể chủ yếu là cơ quan hành chính nhà nước.",
+    "Sai: Quốc hội, Hội đồng nhân dân là cơ quan quyền lực.",
+    "Sai: Tòa án là cơ quan xét xử.",
+    "Sai: Viện kiểm sát là cơ quan kiểm sát."
+   ]
   },
   {
    "type": "pair",

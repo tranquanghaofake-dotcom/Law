@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 418 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: đoạn 2 khoản 3 Điều 418 — không thỏa thuận vừa phạt vừa bồi thường thì chỉ chịu phạt vi phạm.",
+    "Sai: Bộ luật Dân sự khác Luật Thương mại; phải có thỏa thuận mới vừa phạt vừa bồi thường.",
+    "Sai: đã thỏa thuận phạt thì chịu phạt.",
+    "Sai: bên vi phạm phải chịu phạt."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 418 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 418 — mức phạt do các bên thỏa thuận, trừ trường hợp luật liên quan quy định khác.",
+    "Sai: trần 8% là của Luật Thương mại.",
+    "Sai: Tòa án không tự ấn định mức phạt.",
+    "Sai: Bộ luật Dân sự không đặt trần 5%."
+   ]
   },
   {
    "type": "pair",

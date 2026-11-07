@@ -76,7 +76,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 562 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: Điều 562 — bên được ủy quyền nhân danh bên ủy quyền.",
+    "Sai: nhân danh chính mình là ủy thác, đại lý.",
+    "Sai: không nhân danh người thứ ba.",
+    "Sai: không nhân danh Nhà nước."
+   ]
   },
   {
    "type": "mcq",
@@ -93,7 +99,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 563 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: Điều 563 — 01 năm kể từ ngày xác lập việc ủy quyền.",
+    "Sai: 06 tháng không phải mốc luật định.",
+    "Sai: 05 năm không phải mốc luật định.",
+    "Sai: có thời hạn mặc định 01 năm."
+   ]
   },
   {
    "type": "pair",

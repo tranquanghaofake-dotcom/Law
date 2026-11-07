@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 603 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 603 — người thứ ba hoàn toàn có lỗi thì người thứ ba bồi thường.",
+    "Sai: chủ sở hữu không phải bồi thường khi người thứ ba hoàn toàn có lỗi.",
+    "Sai: người bị thiệt hại được bồi thường.",
+    "Sai: Nhà nước không bồi thường."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 603 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 603 — người thứ ba và chủ sở hữu cùng có lỗi thì liên đới bồi thường.",
+    "Sai: không chỉ chủ sở hữu.",
+    "Sai: không chỉ người thứ ba.",
+    "Sai: có người phải bồi thường."
+   ]
   },
   {
    "type": "pair",

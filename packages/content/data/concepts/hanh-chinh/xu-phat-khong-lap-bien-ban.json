@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 56 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 56 — phạt tiền đến 500.000 đồng với cá nhân (1.000.000 đồng với tổ chức).",
+    "Sai: 250.000 đồng là mức của quy định trước khi sửa đổi.",
+    "Sai: 1.000.000 đồng là mức với tổ chức.",
+    "Sai: 5.000.000 đồng vượt mức."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 56 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 56 — vi phạm phát hiện bằng phương tiện kỹ thuật nghiệp vụ thì phải lập biên bản.",
+    "Sai: luật buộc lập biên bản.",
+    "Sai: không chỉ cảnh cáo.",
+    "Sai: vẫn xử phạt."
+   ]
   },
   {
    "type": "pair",

@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 468 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 468 — không vượt quá 20%/năm của khoản tiền vay (trừ luật khác quy định).",
+    "Sai: 10%/năm không phải mức trần.",
+    "Sai: 150% lãi suất cơ bản là quy định của Bộ luật Dân sự 2005, đã hết hiệu lực.",
+    "Sai: có mức trần 20%/năm."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 468 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 468 — 50% mức lãi suất giới hạn tại thời điểm trả nợ.",
+    "Sai: 20%/năm là mức trần, không phải mức áp dụng khi không rõ.",
+    "Sai: đã thỏa thuận có lãi thì vẫn trả lãi.",
+    "Sai: không lấy lãi suất ngân hàng lúc ký."
+   ]
   },
   {
    "type": "pair",

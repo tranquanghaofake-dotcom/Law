@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 3 Nghị định 63/2010/NĐ-CP — thủ tục hành chính để giải quyết một công việc cụ thể liên quan đến cá nhân, tổ chức.",
+    "Sai: tranh chấp dân sự giải quyết theo tố tụng dân sự.",
+    "Sai: vụ án hình sự giải quyết theo tố tụng hình sự.",
+    "Sai: ban hành văn bản quy phạm theo Luật Ban hành văn bản."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
-   }
+   },
+   "why": [
+    "Đúng: bản án của Tòa án không phải bộ phận của thủ tục hành chính.",
+    "Sai: hồ sơ là bộ phận tạo thành.",
+    "Sai: thời hạn giải quyết là bộ phận tạo thành.",
+    "Sai: cơ quan thực hiện là bộ phận tạo thành."
+   ]
   },
   {
    "type": "pair",

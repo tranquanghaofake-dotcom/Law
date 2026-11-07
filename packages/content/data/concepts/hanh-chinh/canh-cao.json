@@ -72,7 +72,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 22 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 22 — người từ đủ 14 đến dưới 16 tuổi vi phạm thì áp dụng cảnh cáo.",
+    "Sai: người từ đủ 14 đến dưới 16 tuổi không bị phạt tiền.",
+    "Sai: phạt tối đa một nửa áp dụng cho người từ đủ 16 đến dưới 18 tuổi (khoản 3 Điều 134).",
+    "Sai: trục xuất chỉ áp dụng với người nước ngoài."
+   ]
   },
   {
    "type": "mcq",
@@ -89,7 +95,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 22 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 22 — cảnh cáo được quyết định bằng văn bản.",
+    "Sai: cảnh cáo bằng lời nói không đúng luật.",
+    "Sai: tin nhắn không phải hình thức quyết định.",
+    "Sai: phải có văn bản."
+   ]
   },
   {
    "type": "pair",

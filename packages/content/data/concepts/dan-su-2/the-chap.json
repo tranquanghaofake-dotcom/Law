@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 317 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 317 — bên thế chấp giữ tài sản (trừ khi có thỏa thuận khác).",
+    "Sai: giao cho bên nhận là cầm cố.",
+    "Sai: Tòa án không giữ tài sản thế chấp.",
+    "Sai: văn phòng công chứng không giữ tài sản."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 317 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 317 — các bên có thể thỏa thuận giao cho người thứ ba giữ.",
+    "Sai: luật cho phép thỏa thuận giao người thứ ba.",
+    "Sai: cơ quan nhà nước không phải bên giữ theo thỏa thuận thông thường.",
+    "Sai: Ngân hàng Nhà nước không giữ tài sản thế chấp."
+   ]
   },
   {
    "type": "pair",

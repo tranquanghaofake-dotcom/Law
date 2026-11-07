@@ -72,7 +72,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 591 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 591 — không quá 100 lần mức lương cơ sở.",
+    "Sai: 50 lần là mức trần với sức khỏe bị xâm phạm (Điều 590).",
+    "Sai: 10 lần là mức trần với danh dự, nhân phẩm, uy tín (Điều 592).",
+    "Sai: có mức trần khi không thỏa thuận được."
+   ]
   },
   {
    "type": "mcq",
@@ -89,7 +95,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 591 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 591 — dành cho người thân thích thuộc hàng thừa kế thứ nhất.",
+    "Sai: bạn bè không phải người được bù đắp.",
+    "Sai: Nhà nước không nhận khoản này.",
+    "Sai: người gây thiệt hại là người phải trả."
+   ]
   },
   {
    "type": "pair",

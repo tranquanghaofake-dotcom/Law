@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 335 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 335 Bộ luật Dân sự — bên bảo lãnh là người thứ ba cam kết thực hiện nghĩa vụ thay cho bên có nghĩa vụ.",
+    "Sai: bên có quyền là bên nhận bảo lãnh.",
+    "Sai: bên có nghĩa vụ là bên được bảo lãnh.",
+    "Sai: công chứng viên không phải bên của quan hệ bảo lãnh."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 335 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 335 — khi đến hạn mà bên được bảo lãnh không thực hiện hoặc thực hiện không đúng nghĩa vụ.",
+    "Sai: ký hợp đồng chưa làm phát sinh nghĩa vụ trả thay.",
+    "Sai: bên được bảo lãnh đã thực hiện đúng thì không có nghĩa vụ trả thay.",
+    "Sai: chuyển giao quyền yêu cầu không phải điều kiện thực hiện bảo lãnh."
+   ]
   },
   {
    "type": "pair",

@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 275 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 275 — chiếm hữu, sử dụng, được lợi về tài sản không có căn cứ pháp luật.",
+    "Sai: không có hợp đồng giữa người gửi và người nhận nhầm.",
+    "Sai: chuyển nhầm không phải hành vi pháp lý đơn phương nhằm tạo nghĩa vụ.",
+    "Sai: người nhận không thực hiện công việc gì cho người gửi."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 275 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 275, Điều 570 — hứa thưởng là hành vi pháp lý đơn phương.",
+    "Sai: hứa thưởng không cần sự thỏa thuận của bên kia.",
+    "Sai: không có thiệt hại.",
+    "Sai: không có chiếm hữu."
+   ]
   },
   {
    "type": "pair",

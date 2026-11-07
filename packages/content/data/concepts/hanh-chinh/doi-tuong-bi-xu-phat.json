@@ -84,7 +84,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 5 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 5 — người từ đủ 14 đến dưới 16 tuổi bị xử phạt về vi phạm hành chính do cố ý.",
+    "Sai: lỗi vô ý không bị xử phạt ở độ tuổi này.",
+    "Sai: luật không có loại \"vi phạm giao thông nội bộ\".",
+    "Sai: người từ đủ 14 tuổi vẫn bị xử phạt khi cố ý."
+   ]
   },
   {
    "type": "mcq",
@@ -101,7 +107,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 5 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 5 — từ đủ 16 tuổi bị xử phạt về mọi vi phạm hành chính.",
+    "Sai: từ đủ 14 tuổi chỉ bị xử phạt với lỗi cố ý.",
+    "Sai: không phải chờ đủ 18 tuổi.",
+    "Sai: 15 tuổi không phải mốc."
+   ]
   },
   {
    "type": "pair",

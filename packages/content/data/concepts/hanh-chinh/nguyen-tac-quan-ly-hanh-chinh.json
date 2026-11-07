@@ -73,7 +73,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
-   }
+   },
+   "why": [
+    "Đúng: theo bài giảng, kết hợp quản lý theo ngành với quản lý theo địa giới hành chính là nguyên tắc tổ chức – kỹ thuật.",
+    "Sai: Đảng lãnh đạo là nguyên tắc chính trị – xã hội.",
+    "Sai: nhân dân tham gia quản lý là nguyên tắc chính trị – xã hội.",
+    "Sai: bình đẳng giữa các dân tộc là nguyên tắc chính trị – xã hội."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 8 Hiến pháp 2013 và khoản 1 Điều 5 Luật Tổ chức Chính phủ 2025 ghi nhận nguyên tắc tập trung dân chủ.",
+    "Sai: nguyên tắc được ghi nhận trong văn bản pháp luật.",
+    "Sai: Bộ luật Dân sự, Luật Đất đai không phải nơi ghi nhận nguyên tắc này.",
+    "Sai: nguyên tắc có trong Hiến pháp."
+   ]
   },
   {
    "type": "pair",

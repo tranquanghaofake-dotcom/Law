@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 463 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: Điều 463 — hoàn trả tài sản cùng loại đúng số lượng, chất lượng.",
+    "Sai: vay chuyển quyền sở hữu nên trả tài sản cùng loại, không phải chính tài sản đó.",
+    "Sai: không trả gấp đôi.",
+    "Sai: nghĩa vụ trả không phụ thuộc văn bản."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 463 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: Điều 463 — trả lãi nếu có thỏa thuận hoặc pháp luật quy định.",
+    "Sai: không phải mọi khoản vay đều có lãi.",
+    "Sai: thời hạn không quyết định việc trả lãi.",
+    "Sai: số tiền không quyết định việc trả lãi."
+   ]
   },
   {
    "type": "pair",

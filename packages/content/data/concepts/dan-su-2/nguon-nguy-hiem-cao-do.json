@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 601 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 601 — chủ sở hữu bồi thường cả khi không có lỗi, trừ thiệt hại hoàn toàn do lỗi cố ý của người bị thiệt hại, bất khả kháng, tình thế cấp thiết…",
+    "Sai: trách nhiệm không phụ thuộc lỗi của chủ sở hữu.",
+    "Sai: đây là trường hợp bồi thường không cần lỗi.",
+    "Sai: không có điều kiện về lỗi vô ý hay khả năng kinh tế."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 601 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 601 — phương tiện giao thông vận tải cơ giới là nguồn nguy hiểm cao độ.",
+    "Sai: đồ gia dụng thông thường không phải nguồn nguy hiểm cao độ.",
+    "Sai: đồ gia dụng không phải nguồn nguy hiểm cao độ.",
+    "Sai: sách vở không phải nguồn nguy hiểm cao độ."
+   ]
   },
   {
    "type": "pair",

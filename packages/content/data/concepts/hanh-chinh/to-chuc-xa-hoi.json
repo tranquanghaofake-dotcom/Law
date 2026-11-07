@@ -72,7 +72,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
-   }
+   },
+   "why": [
+    "Đúng: theo giáo trình, tổ chức xã hội hoạt động tự nguyện, tự quản, tự trang trải kinh phí, không vụ lợi.",
+    "Sai: mệnh lệnh – phục tùng là đặc trưng của cơ quan nhà nước.",
+    "Sai: hạch toán chia lợi nhuận là đặc trưng doanh nghiệp.",
+    "Sai: tổ chức xã hội tự quản, không do Nhà nước bổ nhiệm và cấp toàn bộ kinh phí."
+   ]
   },
   {
    "type": "mcq",
@@ -89,7 +95,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
-   }
+   },
+   "why": [
+    "Đúng: Liên đoàn Luật sư Việt Nam là tổ chức xã hội – nghề nghiệp.",
+    "Sai: Ủy ban nhân dân là cơ quan hành chính nhà nước.",
+    "Sai: Bộ là cơ quan của Chính phủ.",
+    "Sai: công ty cổ phần là doanh nghiệp."
+   ]
   },
   {
    "type": "pair",

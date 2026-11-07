@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 513 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: Điều 513, 514 — đối tượng là công việc bên cung ứng dịch vụ thực hiện.",
+    "Sai: chuyển quyền sở hữu là mua bán.",
+    "Sai: chuyển quyền sử dụng có thời hạn là thuê.",
+    "Sai: khoản tiền vay là đối tượng của hợp đồng vay."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 513 BLDS; Điều 13 BLLĐ Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 13 Bộ luật Lao động — có trả lương và chịu sự quản lý, giám sát thì là hợp đồng lao động.",
+    "Sai: bản chất quan hệ quyết định, không phải tên gọi.",
+    "Sai: ủy quyền là nhân danh người khác, không có quan hệ quản lý lao động.",
+    "Sai: hợp đồng không vô hiệu chỉ vì sai tên gọi."
+   ]
   },
   {
    "type": "pair",

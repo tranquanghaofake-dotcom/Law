@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 405 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 405 — điều khoản không rõ ràng giải thích theo hướng bất lợi cho bên đưa ra hợp đồng theo mẫu.",
+    "Sai: giải thích bất lợi cho bên soạn mẫu, không có lợi.",
+    "Sai: luật có quy tắc giải thích cụ thể.",
+    "Sai: điều khoản không bị coi là không có."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 405 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 405 — điều khoản miễn trách nhiệm của bên đưa ra mẫu không có hiệu lực, trừ khi có thỏa thuận khác.",
+    "Sai: điều khoản này mặc định không có hiệu lực.",
+    "Sai: cách trình bày không làm điều khoản có hiệu lực.",
+    "Sai: người làm chứng không làm điều khoản có hiệu lực."
+   ]
   },
   {
    "type": "pair",

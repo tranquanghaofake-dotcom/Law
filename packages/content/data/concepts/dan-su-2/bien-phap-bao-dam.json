@@ -82,7 +82,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 292 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: Điều 292 không có phạt vi phạm; phạt vi phạm là thỏa thuận trong hợp đồng (Điều 418).",
+    "Sai: cầm giữ tài sản là biện pháp ở Điều 292.",
+    "Sai: tín chấp là biện pháp ở Điều 292.",
+    "Sai: ký quỹ là biện pháp ở Điều 292."
+   ]
   },
   {
    "type": "mcq",
@@ -99,7 +105,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 297 Bộ luật Dân sự 2015"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 297 — từ khi đăng ký biện pháp bảo đảm hoặc bên nhận bảo đảm nắm giữ, chiếm giữ tài sản.",
+    "Sai: ký hợp đồng chỉ làm phát sinh hiệu lực giữa các bên.",
+    "Sai: vi phạm nghĩa vụ không phải mốc phát sinh hiệu lực đối kháng.",
+    "Sai: công chứng không tạo hiệu lực đối kháng."
+   ]
   },
   {
    "type": "pair",

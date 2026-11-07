@@ -75,7 +75,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 1 Luật Tổ chức Chính phủ 2025 (63/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 1 Luật Tổ chức Chính phủ 2025 — cơ quan hành chính nhà nước cao nhất, thực hiện quyền hành pháp, cơ quan chấp hành của Quốc hội.",
+    "Sai: cơ quan quyền lực nhà nước cao nhất là Quốc hội.",
+    "Sai: cơ quan xét xử là Tòa án.",
+    "Sai: lập pháp là chức năng của Quốc hội."
+   ]
   },
   {
    "type": "mcq",
@@ -92,7 +98,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 1 Luật Tổ chức Chính phủ 2025 (63/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 1 — Chính phủ chịu trách nhiệm trước Quốc hội và báo cáo công tác với Quốc hội, Ủy ban Thường vụ Quốc hội, Chủ tịch nước.",
+    "Sai: Chính phủ báo cáo công tác với Chủ tịch nước nhưng chịu trách nhiệm trước Quốc hội.",
+    "Sai: Tòa án không phải cơ quan Chính phủ chịu trách nhiệm trước.",
+    "Sai: Mặt trận Tổ quốc giám sát, không phải cơ quan Chính phủ chịu trách nhiệm trước."
+   ]
   },
   {
    "type": "pair",
