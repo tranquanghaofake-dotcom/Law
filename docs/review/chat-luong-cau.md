@@ -2,170 +2,67 @@
 
 Tổng khái niệm: 740. Chỉ liệt kê, không tự sửa. Ngưỡng chặn tăng nằm ở `packages/content/tests/quality.test.ts`.
 
-## Stem phủ định (cái nào KHÔNG/SAI…): đổi sang hỏi khẳng định — 115 câu
+## Stem phủ định (cái nào KHÔNG/SAI…): đổi sang hỏi khẳng định — 26 câu
 
-### chung-khoan (20)
-- `bao-lanh-phat-hanh-chung-khoan` #1: Tổ chức bảo lãnh phát hành chứng khoán ra công chúng KHÔNG được có quan hệ nào với tổ chức phát hành?
+### chung-khoan (4)
 - `chao-ban-ra-cong-chung` #1: Phương thức nào sau đây KHÔNG thuộc khoản 19 Điều 4?
-- `chao-ban-rieng-le` #0: Theo khoản 20 Điều 4, chào bán riêng lẻ phải KHÔNG thuộc trường hợp nào?
-- `chao-ban-rieng-le` #1: Chào bán chứng khoán riêng lẻ của tổ chức phát hành KHÔNG phải công ty đại chúng thực hiện theo luật nào?
-- `chung-chi-hanh-nghe-chung-khoan` #0: Loại nào KHÔNG phải chứng chỉ hành nghề chứng khoán theo khoản 1 Điều 97?
-- `chung-khoan-phai-sinh` #1: Loại nào KHÔNG được liệt kê là chứng khoán phái sinh tại khoản 9 Điều 4?
-- `chung-khoan` #1: Loại nào sau đây KHÔNG được liệt kê là chứng khoán tại khoản 1 Điều 4?
-- `dang-ky-chao-ban-ra-cong-chung` #1: Trường hợp nào KHÔNG phải đăng ký chào bán chứng khoán ra công chúng?
 - `dieu-kien-chao-ban-co-phieu-lan-dau` #5: Công ty G có vốn điều lệ đã góp 1.200 tỷ đồng, lãi 2 năm liền, không lỗ lũy kế, dự định IPO bán 12% cổ phiếu có quyền biểu quyết cho 300 nhà đầu tư không phải cổ đông lớn. Điều kiện về tỷ lệ bán ra (điểm d) đã đạt chưa?
-- `doi-tuong-cong-bo-thong-tin` #0: Chủ thể nào KHÔNG thuộc đối tượng công bố thông tin theo khoản 1 Điều 118?
-- `giai-quyet-tranh-chap-chung-khoan` #0: Theo khoản 1 Điều 133, phương thức nào KHÔNG được liệt kê để giải quyết tranh chấp chứng khoán?
-- `hoat-dong-phai-duoc-uy-ban-chap-thuan` #0: Trường hợp tạm ngừng hoạt động nào KHÔNG cần Ủy ban chấp thuận trước?
-- `kinh-doanh-chung-khoan` #0: Hoạt động nào sau đây KHÔNG phải kinh doanh chứng khoán theo khoản 28 Điều 4?
 - `muc-phat-tien-chung-khoan` #5: Công ty B công bố thông tin sai lệch (không phải giao dịch nội gián hay thao túng), không có khoản thu trái pháp luật. Mức phạt tiền tối đa có thể áp dụng cho B là bao nhiêu?
-- `nghiep-vu-cong-ty-chung-khoan` #1: Nghiệp vụ nào KHÔNG phải nghiệp vụ của công ty chứng khoán theo Điều 72?
-- `nghiep-vu-cong-ty-quan-ly-quy` #0: Nghiệp vụ nào KHÔNG thuộc công ty quản lý quỹ theo Điều 73?
-- `nguyen-tac-hoat-dong-chung-khoan` #1: Nguyên tắc nào sau đây KHÔNG có trong Điều 5?
 - `nha-dau-tu-chung-khoan-chuyen-nghiep` #5: Từ năm 2026, anh N (cá nhân, nhà đầu tư chứng khoán chuyên nghiệp) muốn mua trái phiếu doanh nghiệp riêng lẻ KHÔNG có xếp hạng tín nhiệm, không có tài sản bảo đảm. Anh có được mua không?
-- `pham-vi-dieu-chinh-luat-chung-khoan` #0: Nội dung nào KHÔNG thuộc phạm vi điều chỉnh nêu tại Điều 1 Luật Chứng khoán 2019?
-- `quy-mo` #1: Trường hợp nào công ty quản lý quỹ KHÔNG phải mua lại chứng chỉ quỹ mở?
 
-### hien-phap (8)
-- `chat-van` #0: Chủ thể nào KHÔNG thuộc đối tượng bị chất vấn theo khoản 1 Điều 80?
-- `chu-quyen-nhan-dan` #5: Một cơ quan nhà nước ban hành quyết định với lý lẽ "quyền lực này là của riêng cơ quan chúng tôi, không phải do ai trao". Lập luận này trái với nguyên tắc nào của Hiến pháp 2013?
-- `co-cau-chinh-phu` #0: Ai KHÔNG phải thành viên Chính phủ theo khoản 1 Điều 95?
-- `quyen-trinh-du-an-luat` #0: Chủ thể nào KHÔNG có quyền trình dự án luật trước Quốc hội theo Điều 84?
-- `sua-doi-hien-phap` #1: Chủ thể nào sau đây KHÔNG có quyền đề nghị làm, sửa đổi Hiến pháp theo khoản 1 Điều 120?
-- `thoi-quoc-tich-viet-nam` #0: Chủ thể nào KHÔNG được thôi quốc tịch Việt Nam theo khoản 4 Điều 27?
-- `truong-hop-khong-duoc-ung-cu` #0: Trường hợp nào KHÔNG được ứng cử theo Điều 37 Luật Bầu cử?
-- `vi-tri-quoc-hoi` #1: Chức năng nào KHÔNG thuộc Quốc hội theo Điều 69?
-
-### ngan-hang (7)
-- `bao-hiem-tien-gui` #1: Tổ chức nào KHÔNG phải tham gia bảo hiểm tiền gửi?
-- `cap-tin-dung` #0: Nghiệp vụ nào KHÔNG phải nghiệp vụ cấp tín dụng theo khoản 4 Điều 4?
-- `dich-vu-thanh-toan-qua-tai-khoan` #1: Tổ chức nào KHÔNG được cung ứng dịch vụ thanh toán qua tài khoản của khách hàng?
-- `giay-to-co-gia` #1: Loại giấy tờ nào KHÔNG phải giấy tờ có giá theo khoản 8 Điều 6?
-- `hoat-dong-ngan-hang` #0: Nghiệp vụ nào KHÔNG nằm trong định nghĩa hoạt động ngân hàng tại khoản 17 Điều 4 Luật Các tổ chức tín dụng?
-- `to-chuc-tin-dung-phi-ngan-hang` #0: Tổ chức tín dụng phi ngân hàng KHÔNG được thực hiện hoạt động nào?
-- `to-chuc-tin-dung` #0: Theo khoản 38 Điều 4, loại hình nào KHÔNG thuộc tổ chức tín dụng?
-
-### hinh-su (6)
-- `mat-khach-quan-toi-pham` #1: Xử sự nào KHÔNG phải hành vi khách quan theo luật hình sự?
-- `nguoi-chua-thanh-nien-pham-toi` #1: Hình phạt nào KHÔNG được áp dụng đối với người chưa thành niên phạm tội?
-- `nhiem-vu-bo-luat-hinh-su` #1: Nhiệm vụ nào KHÔNG được nêu trong Điều 1 Bộ luật Hình sự?
-- `tu-hinh` #1: Theo khoản 3 Điều 40 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025), trường hợp nào KHÔNG thi hành án tử hình?
-- `tuoi-chiu-trach-nhiem-hinh-su` #1: Người từ đủ bao nhiêu tuổi phải chịu TNHS về mọi tội phạm (trừ trường hợp luật quy định khác)?
-- `xu-ly-chuyen-huong` #1: Biện pháp nào là biện pháp xử lý chuyển hướng KHÔNG thuộc nhóm tại cộng đồng?
-
-### hon-nhan-gia-dinh (6)
-- `cap-duong` #0: Người nào KHÔNG thuộc đối tượng được cấp dưỡng theo khoản 24 Điều 3?
-- `chia-tai-san-khi-ly-hon` #0: Yếu tố nào KHÔNG được khoản 2 Điều 59 liệt kê khi chia tài sản chung khi ly hôn?
-- `gia-dinh` #0: Căn cứ nào KHÔNG thuộc định nghĩa gia đình tại khoản 2 Điều 3?
-- `ket-hon-trai-phap-luat` #3: Ông K đang có vợ nhưng che giấu, đăng ký kết hôn với bà M. Ai KHÔNG có quyền tự mình yêu cầu Tòa án hủy việc kết hôn này?
-- `tap-quan-hon-nhan-gia-dinh` #0: Dấu hiệu nào KHÔNG có trong định nghĩa tập quán về hôn nhân và gia đình?
-- `thuan-tinh-ly-hon` #0: Điều kiện nào KHÔNG phải điều kiện để Tòa án công nhận thuận tình ly hôn?
-
-### thuong-mai-1 (6)
-- `co-dong-sang-lap` #0: Trong 03 năm đầu, cổ đông sáng lập chuyển nhượng cổ phần phổ thông cho người không phải cổ đông sáng lập cần điều kiện gì?
-- `co-phan` #1: Loại nào KHÔNG được liệt kê là cổ phần ưu đãi tại khoản 2 Điều 114?
-- `doanh-nghiep` #1: Loại hình nào KHÔNG có tư cách pháp nhân?
-- `hop-tac-xa` #1: Tổ chức nào KHÔNG có tư cách pháp nhân?
-- `nguoi-nop-don-pha-san` #0: Chủ thể nào KHÔNG có quyền nộp đơn yêu cầu mở thủ tục phá sản theo khoản 1 Điều 38?
-- `thanh-lap-quan-ly-doanh-nghiep` #0: Ai KHÔNG có quyền thành lập và quản lý doanh nghiệp tại Việt Nam (trừ ngoại lệ)?
-
-### dan-su (5)
-- `chiem-huu` #1: Việc chiếm hữu của người không phải chủ sở hữu có làm phát sinh quyền sở hữu không?
-- `nang-luc-hanh-vi-dan-su` #1: Trường hợp nào người thành niên KHÔNG có năng lực hành vi dân sự đầy đủ?
-- `nguoi-thua-ke-khong-phu-thuoc-di-chuc` #1: Ai KHÔNG thuộc diện người thừa kế không phụ thuộc vào nội dung di chúc?
-- `phap-nhan` #0: Điều kiện nào KHÔNG thuộc điều kiện công nhận pháp nhân theo khoản 1 Điều 74?
-- `xac-lap-quyen-so-huu-theo-thoi-hieu` #1: Điều kiện nào KHÔNG phải điều kiện xác lập quyền sở hữu theo Điều 236?
-
-### hanh-chinh (5)
-- `bien-phap-xu-ly-hanh-chinh` #1: Biện pháp nào KHÔNG phải biện pháp xử lý hành chính?
-- `cong-dan-nguoi-nuoc-ngoai-hanh-chinh` #1: Người nước ngoài cư trú tại Việt Nam KHÔNG có quyền nào sau đây?
-- `khong-xu-phat-vi-pham-hanh-chinh` #0: Trường hợp nào KHÔNG xử phạt vi phạm hành chính?
-- `quyet-dinh-hanh-chinh` #1: Việc cơ quan có thẩm quyền KHÔNG giải quyết hồ sơ đúng hạn theo luật có thể là gì?
-- `thu-tuc-hanh-chinh` #1: Bộ phận nào KHÔNG phải bộ phận tạo thành thủ tục hành chính?
-
-### tai-san-tri-tue (5)
-- `tstt-chuyen-nhuong-quyen-shcn` #1: Quyền nào KHÔNG được chuyển nhượng?
-- `tstt-giam-dinh-shtt` #1: Tổ chức nào KHÔNG được kinh doanh dịch vụ giám định SHTT?
-- `tstt-quan-tri-tstt` #0: Khâu nào KHÔNG thuộc quy trình quản trị tài sản trí tuệ theo bài giảng?
-- `tstt-tai-san-tri-tue` #0: Theo bài giảng, đặc điểm nào KHÔNG phải của tài sản trí tuệ?
-- `tstt-xam-pham-nhan-hieu` #1: Trường hợp nào KHÔNG cần chứng minh khả năng gây nhầm lẫn?
-
-### an-sinh-xa-hoi (4)
-- `bao-hiem-that-nghiep` #0: Chế độ nào KHÔNG thuộc bảo hiểm thất nghiệp theo Luật Việc làm 2025?
-- `muc-huong-bao-hiem-y-te` #0: Mức hưởng BHYT của "đối tượng khác" (không thuộc nhóm ưu tiên) khi khám chữa bệnh đúng quy định là bao nhiêu?
-- `tro-cap-huu-tri-xa-hoi` #0: Công dân Việt Nam từ đủ bao nhiêu tuổi (không thuộc hộ nghèo) được hưởng trợ cấp hưu trí xã hội?
-- `uu-dai-nguoi-co-cong` #0: Ai KHÔNG thuộc thân nhân của người có công với cách mạng theo Pháp lệnh 2020?
-
-### dat-dai (4)
-- `dieu-kien-thuc-hien-quyen` #0: Điều kiện nào KHÔNG thuộc khoản 1 Điều 45 để chuyển nhượng quyền sử dụng đất?
-- `giao-dat-cho-thue-dat` #1: Trường hợp không thuộc Điều 118, 119 thì Nhà nước áp dụng hình thức nào?
-- `han-muc-giao-dat-nong-nghiep` #1: Hạn mức giao đất nuôi trồng thủy sản ở các tỉnh không thuộc Đông Nam Bộ, ĐBSCL là bao nhiêu?
-- `nguoi-su-dung-dat` #0: Trường hợp nào KHÔNG làm một người trở thành người sử dụng đất theo Điều 4?
-
-### lao-dong (4)
-- `dinh-cong-bat-hop-phap` #1: Trường hợp nào KHÔNG thuộc Điều 204?
-- `don-phuong-cham-dut-nguoi-lao-dong` #1: Trường hợp nào người lao động được đơn phương chấm dứt hợp đồng KHÔNG cần báo trước?
-- `ky-luat-lao-dong` #0: Hình thức nào KHÔNG phải là hình thức xử lý kỷ luật lao động theo Điều 124?
-- `thoa-uoc-lao-dong-tap-the` #1: Loại nào KHÔNG được liệt kê là thỏa ước lao động tập thể tại khoản 1 Điều 75?
-
-### thuong-mai (4)
-- `boi-thuong-thiet-hai-ltm` #1: Yếu tố nào KHÔNG thuộc căn cứ phát sinh trách nhiệm bồi thường theo Điều 303?
-- `che-tai-thuong-mai` #0: Chế tài nào KHÔNG được liệt kê tại Điều 292?
-- `giai-quyet-tranh-chap-thuong-mai` #1: Hình thức nào KHÔNG được liệt kê tại Điều 317?
-- `vi-pham-co-ban` #1: Chế tài hủy bỏ hợp đồng được áp dụng khi nào (trừ trường hợp miễn trách nhiệm)?
-
-### xay-dung-vbpl (4)
-- `xd-he-thong-vbqppl` #0: Văn bản nào sau đây KHÔNG thuộc hệ thống văn bản quy phạm pháp luật tại Điều 4?
+### xay-dung-vbpl (3)
 - `xd-nghi-quyet-quoc-hoi` #1: Nội dung nào phải quy định bằng luật chứ không phải nghị quyết?
 - `xd-quy-trinh-xay-dung-chinh-sach` #1: Dự án luật không thuộc khoản 1 Điều 27 thì cơ quan trình phải làm gì?
 - `xd-van-ban-qppl` #1: Văn bản có chứa quy phạm pháp luật nhưng ban hành không đúng thẩm quyền, hình thức thì bị xử lý thế nào?
 
-### canh-tranh (3)
-- `hanh-vi-cam-co-quan-nha-nuoc` #1: Cơ quan nhà nước khuyến nghị dân mua hàng của doanh nghiệp cụ thể trong trường hợp nào thì KHÔNG bị cấm?
-- `mien-tru-thoa-thuan` #1: Thỏa thuận nào KHÔNG thể được miễn trừ theo Điều 14?
-- `pham-vi-dieu-chinh-luat-canh-tranh` #0: Luật Cạnh tranh 2018 KHÔNG quy định nội dung nào?
+### an-sinh-xa-hoi (2)
+- `muc-huong-bao-hiem-y-te` #0: Mức hưởng BHYT của "đối tượng khác" (không thuộc nhóm ưu tiên) khi khám chữa bệnh đúng quy định là bao nhiêu?
+- `tro-cap-huu-tri-xa-hoi` #0: Công dân Việt Nam từ đủ bao nhiêu tuổi (không thuộc hộ nghèo) được hưởng trợ cấp hưu trí xã hội?
 
-### dan-su-2 (3)
-- `bien-phap-bao-dam` #0: Biện pháp nào KHÔNG thuộc Điều 292?
+### dan-su-2 (2)
 - `can-cu-boi-thuong-thiet-hai` #0: Người gây thiệt hại không phải bồi thường trong trường hợp nào theo khoản 2 Điều 584?
 - `tang-cho` #1: Tặng cho động sản không phải đăng ký có hiệu lực từ khi nào (trừ khi có thỏa thuận khác)?
 
-### ly-luan-nn-pl (3)
-- `llc-phap-nhan` #1: Tổ chức nào KHÔNG phải pháp nhân?
-- `llc-quy-pham-phap-luat` #1: Đặc điểm nào KHÔNG phải của quy phạm pháp luật?
-- `llc-vi-pham-phap-luat` #0: Dấu hiệu nào KHÔNG phải dấu hiệu của vi phạm pháp luật?
-
-### so-huu-tri-tue (3)
-- `giong-cay-trong` #0: Điều kiện nào KHÔNG thuộc điều kiện bảo hộ giống cây trồng theo Điều 158?
-- `sang-che` #0: Điều kiện nào KHÔNG bắt buộc để cấp Bằng độc quyền giải pháp hữu ích?
-- `sang-che` #1: Đối tượng nào KHÔNG được bảo hộ với danh nghĩa sáng chế?
-
-### tai-chinh (3)
-- `nguyen-tac-quan-ly-thue` #1: Ai tự xác định, kê khai và nộp nghĩa vụ thuế (trừ trường hợp cơ quan quản lý thuế tính thuế)?
-- `thue-tai-nguyen` #1: Tài nguyên nào KHÔNG thuộc đối tượng chịu thuế tài nguyên?
-- `thue-xuat-nhap-khau` #0: Hàng hóa nào KHÔNG thuộc đối tượng chịu thuế xuất khẩu, nhập khẩu?
-
-### tai-chinh-doanh-nghiep (3)
-- `tcdn-chao-ban-co-phan` #1: Hình thức nào KHÔNG phải hình thức chào bán cổ phần theo khoản 2 Điều 123?
-- `tcdn-dinh-gia-tai-san-gop-von` #0: Tài sản góp vốn nào KHÔNG phải định giá?
-- `tcdn-von-dieu-le` #1: Khoản nào KHÔNG phải vốn điều lệ?
-
-### to-tung-dan-su (3)
-- `chung-cu` #0: Yếu tố nào KHÔNG thuộc khái niệm chứng cứ theo Điều 93?
-- `hoa-giai-trong-to-tung-dan-su` #1: Vụ án nào KHÔNG phải tiến hành hòa giải theo khoản 1 Điều 205?
-- `xet-xu-cong-khai-tranh-tung` #1: Hội thẩm nhân dân tham gia xét xử sơ thẩm vụ án dân sự, trừ trường hợp nào?
+### dat-dai (2)
+- `giao-dat-cho-thue-dat` #1: Trường hợp không thuộc Điều 118, 119 thì Nhà nước áp dụng hình thức nào?
+- `han-muc-giao-dat-nong-nghiep` #1: Hạn mức giao đất nuôi trồng thủy sản ở các tỉnh không thuộc Đông Nam Bộ, ĐBSCL là bao nhiêu?
 
 ### dau-tu (2)
 - `ldt-dieu-kien-dau-tu-kinh-doanh` #0: Điều kiện đầu tư kinh doanh không bao gồm gì?
 - `ldt-uu-dai-dau-tu` #1: Hình thức nào là ưu đãi đầu tư (không phải hỗ trợ đầu tư)?
 
-### lich-su-nn-pl (2)
-- `chuoc-toi-thap-ac` #0: Theo chiếu năm 1042, trường hợp nào KHÔNG được chuộc tội?
+### canh-tranh (1)
+- `hanh-vi-cam-co-quan-nha-nuoc` #1: Cơ quan nhà nước khuyến nghị dân mua hàng của doanh nghiệp cụ thể trong trường hợp nào thì KHÔNG bị cấm?
+
+### dan-su (1)
+- `chiem-huu` #1: Việc chiếm hữu của người không phải chủ sở hữu có làm phát sinh quyền sở hữu không?
+
+### hien-phap (1)
+- `chu-quyen-nhan-dan` #5: Một cơ quan nhà nước ban hành quyết định với lý lẽ "quyền lực này là của riêng cơ quan chúng tôi, không phải do ai trao". Lập luận này trái với nguyên tắc nào của Hiến pháp 2013?
+
+### hinh-su (1)
+- `tuoi-chiu-trach-nhiem-hinh-su` #1: Người từ đủ bao nhiêu tuổi phải chịu TNHS về mọi tội phạm (trừ trường hợp luật quy định khác)?
+
+### lao-dong (1)
+- `dinh-cong-bat-hop-phap` #1: Trường hợp nào KHÔNG thuộc Điều 204?
+
+### lich-su-nn-pl (1)
 - `dieu-kien-ra-doi-nha-nuoc-van-lang` #0: Yếu tố nào thường được coi là yếu tố THÚC ĐẨY (không phải điều kiện kinh tế – xã hội) sự ra đời sớm của nhà nước Văn Lang?
 
-### to-tung-hanh-chinh (2)
+### tai-chinh (1)
+- `nguyen-tac-quan-ly-thue` #1: Ai tự xác định, kê khai và nộp nghĩa vụ thuế (trừ trường hợp cơ quan quản lý thuế tính thuế)?
+
+### thuong-mai (1)
+- `vi-pham-co-ban` #1: Chế tài hủy bỏ hợp đồng được áp dụng khi nào (trừ trường hợp miễn trách nhiệm)?
+
+### thuong-mai-1 (1)
+- `co-dong-sang-lap` #0: Trong 03 năm đầu, cổ đông sáng lập chuyển nhượng cổ phần phổ thông cho người không phải cổ đông sáng lập cần điều kiện gì?
+
+### to-tung-dan-su (1)
+- `xet-xu-cong-khai-tranh-tung` #1: Hội thẩm nhân dân tham gia xét xử sơ thẩm vụ án dân sự, trừ trường hợp nào?
+
+### to-tung-hanh-chinh (1)
 - `giam-doc-tham` #3: Bản án đã có hiệu lực của Tòa án nhân dân khu vực áp dụng sai điều luật, gây thiệt hại cho người khởi kiện. Thủ tục nào phù hợp để xem xét lại?
-- `khieu-kien-loai-tru` #0: Nhóm nào KHÔNG thuộc các trường hợp loại trừ ở khoản 1 Điều 30?
 
 ## Đáp án đúng trùng chữ với stem nhiều nhất: viết lại nhiễu cho trùng chữ tương đương — 215 câu
 

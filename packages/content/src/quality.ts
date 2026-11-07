@@ -34,7 +34,10 @@ export function lintConcept(c: Concept): Finding[] {
   c.items.forEach((it, item) => {
     const add = (rule: Rule, text: string) => out.push({ rule, subject: c.subject, conceptId: c.id, item, text });
     if (it.type === 'mcq' || it.type === 'case') {
-      if (NEGATIVE_STEM.test(it.q)) add('stem-phu-dinh', it.q);
+      // NBME: nếu buộc phải dùng stem phủ định thì in hoa chữ phủ định và để phương án ngắn — đạt cả hai thì chấp nhận
+      // (câu "loại nào KHÔNG thuộc danh sách khoản X" là dạng loại trừ hợp lệ trong đề luật).
+      const emphasized = /\bKHÔNG\b/.test(it.q) && it.options.every((o) => o.length <= 80);
+      if (NEGATIVE_STEM.test(it.q) && !emphasized) add('stem-phu-dinh', it.q);
       if (isClang(it.q, it.options, it.answer)) add('clang', it.q);
     }
     if (it.type === 'truefalse' && !it.answer && ABSOLUTE.test(it.statement)) add('tf-tuyet-doi', it.statement);

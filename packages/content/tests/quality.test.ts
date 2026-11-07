@@ -10,7 +10,10 @@ const mcq = (q: string, options: string[], answer = 0) => ({ type: 'mcq' as cons
 
 describe('quy tắc NBME: từng quy tắc bắt đúng và không bắt nhầm', () => {
   it('stem phủ định', () => {
-    expect(lintConcept(c([mcq('Trường hợp nào KHÔNG được ký hợp đồng?', ['a', 'b', 'c'])])).map((f) => f.rule)).toEqual(['stem-phu-dinh']);
+    expect(lintConcept(c([mcq('Trường hợp nào không phải hợp đồng?', ['a', 'b', 'c'])])).map((f) => f.rule)).toEqual(['stem-phu-dinh']);
+    // phủ định in hoa KHÔNG + phương án ngắn: chấp nhận (NBME cho phép khi buộc phải dùng)
+    expect(lintConcept(c([mcq('Loại nào KHÔNG thuộc danh sách tại khoản 1 Điều 4?', ['Sổ tiết kiệm', 'Cổ phiếu', 'Trái phiếu'])]))).toEqual([]);
+    expect(lintConcept(c([mcq('Loại nào KHÔNG thuộc danh sách tại khoản 1 Điều 4?', ['x'.repeat(90), 'b', 'c'])])).map((f) => f.rule)).toEqual(['stem-phu-dinh']);
     expect(lintConcept(c([mcq('Nhận định nào sau đây sai?', ['a', 'b', 'c'])])).map((f) => f.rule)).toEqual(['stem-phu-dinh']);
     expect(lintConcept(c([mcq('Tòa án không tự áp dụng thời hiệu khi nào?', ['a', 'b', 'c'])]))).toEqual([]); // "không" thường trong nội dung luật
   });
@@ -31,7 +34,7 @@ describe('quy tắc NBME: từng quy tắc bắt đúng và không bắt nhầm'
 // Ratchet: số câu vi phạm trên kho thật KHÔNG được tăng. Giảm được thì hạ ngưỡng xuống (đo 07/11/2026).
 // Danh sách chi tiết để viết lại: `npm run quality` → docs/review/chat-luong-cau.md.
 const concepts: Concept[] = readdirSync(join(DATA_DIR, 'concepts')).flatMap((s) => readdirSync(join(DATA_DIR, 'concepts', s)).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(readFileSync(join(DATA_DIR, 'concepts', s, f), 'utf8')) as Concept));
-const BASELINE = { 'stem-phu-dinh': 115, clang: 215, 'tf-tuyet-doi': 236 };
+const BASELINE = { 'stem-phu-dinh': 26, clang: 215, 'tf-tuyet-doi': 236 };
 
 describe('kho thật: không thêm câu vi phạm', () => {
   const found = lintAll(concepts);
