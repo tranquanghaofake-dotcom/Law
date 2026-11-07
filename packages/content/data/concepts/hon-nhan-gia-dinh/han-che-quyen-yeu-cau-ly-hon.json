@@ -109,9 +109,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Khi vợ đang nuôi con dưới 12 tháng tuổi thì cả vợ và chồng đều không có quyền yêu cầu ly hôn.",
+   "statement": "Chồng không có quyền yêu cầu ly hôn khi vợ đang nuôi con dưới 24 tháng tuổi.",
    "answer": false,
-   "explain": "Sai. Khoản 3 Điều 51 chỉ hạn chế người chồng; người vợ vẫn có quyền yêu cầu ly hôn."
+   "explain": "Sai. Khoản 3 Điều 51: chồng không có quyền yêu cầu ly hôn khi vợ đang có thai, sinh con hoặc đang nuôi con dưới 12 tháng tuổi (không phải 24 tháng)."
   },
   {
    "type": "recall",

@@ -113,9 +113,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi trường hợp kết hôn trái pháp luật đều bị Tòa án hủy khi có yêu cầu.",
+   "statement": "Dù tại thời điểm Tòa án giải quyết cả hai bên đã có đủ điều kiện kết hôn và cùng yêu cầu công nhận quan hệ hôn nhân, Tòa án vẫn hủy việc kết hôn trái pháp luật.",
    "answer": false,
-   "explain": "Sai. Khoản 2 Điều 11: nếu lúc Tòa án giải quyết cả hai bên đã đủ điều kiện kết hôn và cùng yêu cầu công nhận thì Tòa án công nhận quan hệ hôn nhân."
+   "explain": "Sai. Khoản 2 Điều 11: nếu lúc Tòa án giải quyết cả hai bên đã đủ điều kiện kết hôn và hai bên yêu cầu công nhận quan hệ hôn nhân thì Tòa án công nhận quan hệ hôn nhân đó."
   },
   {
    "type": "recall",
