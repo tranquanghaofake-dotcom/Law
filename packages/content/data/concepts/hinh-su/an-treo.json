@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 65 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 65 Bộ luật Hình sự — án treo khi bị phạt tù không quá 03 năm.",
+    "Sai: 05 năm vượt điều kiện án treo.",
+    "Sai: mốc là 03 năm, không phải 02 năm.",
+    "Sai: 07 năm vượt điều kiện án treo."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 65 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 65 — thời gian thử thách từ 01 năm đến 05 năm.",
+    "Sai: không phải 06 tháng đến 03 năm.",
+    "Sai: thời gian thử thách không bằng thời hạn tù.",
+    "Sai: không phải 02 đến 07 năm."
+   ]
   },
   {
    "type": "pair",

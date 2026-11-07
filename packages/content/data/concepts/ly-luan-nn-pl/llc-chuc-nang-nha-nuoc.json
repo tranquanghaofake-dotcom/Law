@@ -84,7 +84,13 @@
     "Diện tích lãnh thổ và dân số quốc gia, không phụ thuộc kinh tế"
    ],
    "answer": 0,
-   "explain": "Chức năng phù hợp bản chất, mục đích, nhiệm vụ, điều kiện kinh tế – xã hội."
+   "explain": "Chức năng phù hợp bản chất, mục đích, nhiệm vụ, điều kiện kinh tế – xã hội.",
+   "why": [
+    "Đúng: chức năng do bản chất, nhiệm vụ của nhà nước và điều kiện kinh tế – xã hội quyết định.",
+    "Sai: không do ý muốn chủ quan của người đứng đầu.",
+    "Sai: số cơ quan là bộ máy, không quyết định chức năng.",
+    "Sai: chức năng phụ thuộc điều kiện kinh tế – xã hội."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
     "Đối nội, đối ngoại và bảo đảm quốc phòng, an ninh cho toàn bộ đất nước"
    ],
    "answer": 0,
-   "explain": "Ba hình thức pháp lý; thuyết phục và cưỡng chế là phương pháp."
+   "explain": "Ba hình thức pháp lý; thuyết phục và cưỡng chế là phương pháp.",
+   "why": [
+    "Đúng: ba hình thức pháp lý: xây dựng pháp luật, tổ chức thực hiện pháp luật, bảo vệ pháp luật.",
+    "Sai: bảo vệ công dân, xử lý vi phạm là nội dung, không phải ba hình thức pháp lý.",
+    "Sai: thuyết phục, cưỡng chế là phương pháp thực hiện chức năng.",
+    "Sai: đối nội, đối ngoại là loại chức năng."
+   ]
   },
   {
    "type": "pair",

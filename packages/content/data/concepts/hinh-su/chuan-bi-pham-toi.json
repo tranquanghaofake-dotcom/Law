@@ -73,7 +73,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 14 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 14 — người từ đủ 14 đến dưới 16 tuổi chuẩn bị phạm tội giết người (Điều 123), cướp tài sản (Điều 168) phải chịu trách nhiệm hình sự.",
+    "Sai: không phải mọi tội rất nghiêm trọng.",
+    "Sai: trộm cắp, lừa đảo không thuộc khoản 3 Điều 14.",
+    "Sai: có hai tội phải chịu trách nhiệm."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 14 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 14 — tìm kiếm, sửa soạn công cụ, phương tiện là chuẩn bị phạm tội.",
+    "Sai: thực hiện xong hành vi khách quan là tội phạm hoàn thành.",
+    "Sai: che giấu tang vật sau khi phạm tội là hành vi khác.",
+    "Sai: không tố giác là tội riêng (Điều 390)."
+   ]
   },
   {
    "type": "pair",

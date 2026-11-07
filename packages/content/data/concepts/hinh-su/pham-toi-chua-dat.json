@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 15, Điều 16 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 15, 16 — chưa đạt là dừng vì nguyên nhân ngoài ý muốn; tự ý nửa chừng là tự mình không thực hiện đến cùng.",
+    "Sai: chưa đạt là đã cố ý thực hiện tội phạm.",
+    "Sai: bị ngăn cản là nguyên nhân khách quan, thuộc chưa đạt.",
+    "Sai: khác nhau ở ý chí dừng lại."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 15 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: đoạn 2 Điều 15 — chịu trách nhiệm hình sự về tội phạm chưa đạt.",
+    "Sai: không được miễn trách nhiệm.",
+    "Sai: không giới hạn ở tội rất nặng.",
+    "Sai: chịu về tội chưa đạt, mức hình phạt áp dụng theo Điều 57."
+   ]
   },
   {
    "type": "pair",

@@ -72,7 +72,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 53 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 53 — tái phạm với tội do vô ý chỉ tính khi là tội rất nghiêm trọng, đặc biệt nghiêm trọng.",
+    "Sai: tội ít nghiêm trọng do vô ý không tính là tái phạm.",
+    "Sai: không phải tái phạm nguy hiểm.",
+    "Sai: luật quy định rõ."
+   ]
   },
   {
    "type": "mcq",
@@ -89,7 +95,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 53 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 2 Điều 53 — đã tái phạm, chưa được xóa án tích mà lại phạm tội do cố ý.",
+    "Sai: đã được xóa án tích thì không tính.",
+    "Sai: phạm tội lần đầu không phải tái phạm.",
+    "Sai: phạm nhiều tội cùng lúc không phải tái phạm."
+   ]
   },
   {
    "type": "pair",

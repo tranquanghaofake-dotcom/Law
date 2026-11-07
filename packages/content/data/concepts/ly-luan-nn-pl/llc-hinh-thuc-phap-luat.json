@@ -81,7 +81,13 @@
     "Hiến pháp"
    ],
    "answer": 0,
-   "explain": "VD9."
+   "explain": "VD9.",
+   "why": [
+    "Đúng: tập quán pháp xuất hiện sớm nhất.",
+    "Sai: văn bản quy phạm xuất hiện muộn hơn.",
+    "Sai: tiền lệ pháp xuất hiện sau tập quán pháp.",
+    "Sai: hiến pháp ra đời rất muộn (thời cận đại)."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
     "Không được nhà nước bảo đảm thực hiện, chủ yếu mang tính khuyến nghị đối với các chủ thể"
    ],
    "answer": 0,
-   "explain": "VD9."
+   "explain": "VD9.",
+   "why": [
+    "Đúng: văn bản quy phạm khái quát nên khó dự liệu hết, kém linh hoạt, ban hành lâu, tốn kém.",
+    "Sai: đây là ưu điểm bị mô tả sai; văn bản quy phạm ban hành lâu.",
+    "Sai: văn bản quy phạm có tính khoa học, rõ ràng.",
+    "Sai: văn bản quy phạm được nhà nước bảo đảm thực hiện."
+   ]
   },
   {
    "type": "pair",

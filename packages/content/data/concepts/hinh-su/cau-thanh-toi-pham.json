@@ -83,7 +83,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết BLHS"
-   }
+   },
+   "why": [
+    "Đúng: theo giáo trình, bốn yếu tố: khách thể, mặt khách quan, chủ thể, mặt chủ quan.",
+    "Sai: hành vi, hậu quả, lỗi, động cơ chỉ là dấu hiệu bên trong các yếu tố.",
+    "Sai: công cụ, địa điểm là dấu hiệu của mặt khách quan.",
+    "Sai: hình phạt không phải yếu tố của tội phạm."
+   ]
   },
   {
    "type": "mcq",
@@ -100,7 +106,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết BLHS"
-   }
+   },
+   "why": [
+    "Đúng: hậu quả là dấu hiệu bắt buộc trong cấu thành vật chất; cấu thành hình thức chỉ cần hành vi.",
+    "Sai: cấu thành vật chất có ở nhiều nhóm tội, không chỉ tội xâm phạm sở hữu.",
+    "Sai: cấu thành hình thức vẫn có dấu hiệu hành vi.",
+    "Sai: loại cấu thành không quyết định nặng nhẹ của hình phạt."
+   ]
   },
   {
    "type": "pair",

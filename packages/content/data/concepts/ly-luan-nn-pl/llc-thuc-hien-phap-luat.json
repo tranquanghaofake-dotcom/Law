@@ -81,7 +81,13 @@
     "Sử dụng pháp luật"
    ],
    "answer": 0,
-   "explain": "VD12."
+   "explain": "VD12.",
+   "why": [
+    "Đúng: áp dụng pháp luật chỉ do chủ thể có thẩm quyền tiến hành.",
+    "Sai: tuân thủ do mọi chủ thể thực hiện.",
+    "Sai: thi hành do mọi chủ thể thực hiện.",
+    "Sai: sử dụng do mọi chủ thể thực hiện."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
     "Áp dụng pháp luật"
    ],
    "answer": 0,
-   "explain": "Chủ động thực hiện nghĩa vụ pháp luật bắt buộc."
+   "explain": "Chủ động thực hiện nghĩa vụ pháp luật bắt buộc.",
+   "why": [
+    "Đúng: nộp thuế đúng hạn là chủ động thực hiện nghĩa vụ — thi hành pháp luật.",
+    "Sai: tuân thủ là kiềm chế không làm điều cấm.",
+    "Sai: sử dụng là thực hiện quyền.",
+    "Sai: áp dụng do cơ quan có thẩm quyền."
+   ]
   },
   {
    "type": "pair",

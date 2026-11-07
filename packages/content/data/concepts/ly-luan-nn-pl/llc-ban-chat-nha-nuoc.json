@@ -67,7 +67,13 @@
     "Tính kinh tế và tính văn hóa"
    ],
    "answer": 0,
-   "explain": "Bài 2: tính giai cấp và tính xã hội."
+   "explain": "Bài 2: tính giai cấp và tính xã hội.",
+   "why": [
+    "Đúng: theo giáo trình, bản chất nhà nước thể hiện ở tính giai cấp và tính xã hội.",
+    "Sai: tính dân tộc, quốc tế không phải hai phương diện bản chất.",
+    "Sai: tính pháp lý, đạo đức không phải hai phương diện bản chất.",
+    "Sai: kinh tế, văn hóa là lĩnh vực, không phải phương diện bản chất."
+   ]
   },
   {
    "type": "mcq",
@@ -80,7 +86,13 @@
     "Duy trì quan hệ sản xuất có lợi cho giai cấp thống trị"
    ],
    "answer": 0,
-   "explain": "Giải quyết công việc chung của xã hội."
+   "explain": "Giải quyết công việc chung của xã hội.",
+   "why": [
+    "Đúng: tổ chức phòng chống dịch bệnh cho toàn dân là giải quyết việc chung của xã hội — tính xã hội.",
+    "Sai: bảo vệ đặc quyền giai cấp cầm quyền là tính giai cấp.",
+    "Sai: trấn áp giai cấp đối kháng là tính giai cấp.",
+    "Sai: duy trì quan hệ sản xuất có lợi cho giai cấp thống trị là tính giai cấp."
+   ]
   },
   {
    "type": "pair",

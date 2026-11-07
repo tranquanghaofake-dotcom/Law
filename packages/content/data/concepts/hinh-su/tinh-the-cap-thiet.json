@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 23 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 23 — thiệt hại gây ra phải nhỏ hơn thiệt hại cần ngăn ngừa.",
+    "Sai: bằng hoặc lớn hơn là vượt quá yêu cầu.",
+    "Sai: có giới hạn.",
+    "Sai: không có \"mức cho phép\" của cơ quan nhà nước."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 23 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: đoạn 2 khoản 1 Điều 23 — hành vi trong tình thế cấp thiết không phải tội phạm.",
+    "Sai: không phải tội phạm; chỉ vượt quá yêu cầu mới phải chịu trách nhiệm.",
+    "Sai: gây thiệt hại cho người khác là bản chất của tình thế cấp thiết, vẫn không phải tội phạm.",
+    "Sai: luật quy định rõ."
+   ]
   },
   {
    "type": "pair",

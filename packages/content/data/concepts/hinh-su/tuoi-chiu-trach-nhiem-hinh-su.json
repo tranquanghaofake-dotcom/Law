@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 12 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 12 — người từ đủ 14 đến dưới 16 tuổi chịu trách nhiệm về tội rất nghiêm trọng, đặc biệt nghiêm trọng ở các điều được liệt kê.",
+    "Sai: không chịu trách nhiệm về tội ít nghiêm trọng do vô ý.",
+    "Sai: không đòi có tổ chức, tái phạm.",
+    "Sai: vẫn phải chịu trách nhiệm với các tội được liệt kê."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 12 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 12 — từ đủ 16 tuổi chịu trách nhiệm về mọi tội phạm.",
+    "Sai: từ đủ 14 tuổi chỉ chịu với tội ở khoản 2.",
+    "Sai: không phải chờ 18 tuổi.",
+    "Sai: 15 tuổi không phải mốc."
+   ]
   },
   {
    "type": "pair",

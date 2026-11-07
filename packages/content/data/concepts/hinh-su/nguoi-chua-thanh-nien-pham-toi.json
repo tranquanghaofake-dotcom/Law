@@ -82,7 +82,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 3 Luật Tư pháp người chưa thành niên 2024 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 3 Luật Tư pháp người chưa thành niên — từ đủ 14 đến dưới 18 tuổi.",
+    "Sai: thiếu nhóm từ đủ 14 đến dưới 16 tuổi.",
+    "Sai: người dưới 14 tuổi không phạm tội.",
+    "Sai: người dưới 14 tuổi không có năng lực trách nhiệm hình sự."
+   ]
   },
   {
    "type": "mcq",
@@ -99,7 +105,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 12 Luật Tư pháp người chưa thành niên 2024 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 12 — không áp dụng tù chung thân, tử hình với người chưa thành niên.",
+    "Sai: cảnh cáo được áp dụng.",
+    "Sai: phạt tiền được áp dụng (với người từ đủ 16 tuổi).",
+    "Sai: cải tạo không giam giữ được áp dụng."
+   ]
   },
   {
    "type": "pair",

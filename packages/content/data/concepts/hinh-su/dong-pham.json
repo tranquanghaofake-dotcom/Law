@@ -88,7 +88,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 17 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 17 — người xúi giục kích động, dụ dỗ, thúc đẩy người khác thực hiện tội phạm.",
+    "Sai: người tổ chức chủ mưu, cầm đầu, chỉ huy.",
+    "Sai: người giúp sức tạo điều kiện tinh thần, vật chất.",
+    "Sai: người thực hành trực tiếp thực hiện tội phạm."
+   ]
   },
   {
    "type": "mcq",
@@ -105,7 +111,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 17 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 17 — người đồng phạm không chịu trách nhiệm về hành vi vượt quá của người thực hành.",
+    "Sai: luật loại trừ trách nhiệm với hành vi vượt quá.",
+    "Sai: người tổ chức cũng không chịu về hành vi vượt quá.",
+    "Sai: hậu quả không làm thay đổi quy tắc."
+   ]
   },
   {
    "type": "pair",

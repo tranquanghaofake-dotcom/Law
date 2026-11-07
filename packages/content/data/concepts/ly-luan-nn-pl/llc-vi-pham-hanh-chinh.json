@@ -75,7 +75,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 2 Luật Xử lý vi phạm hành chính — vi phạm quy định quản lý nhà nước, không phải tội phạm, bị xử phạt hành chính.",
+    "Sai: vi phạm hành chính phải có lỗi.",
+    "Sai: hình phạt tù là của tội phạm.",
+    "Sai: vi phạm hành chính không xét xử theo tố tụng hình sự."
+   ]
   },
   {
    "type": "mcq",
@@ -92,7 +98,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 2 — chủ thể là cá nhân, tổ chức.",
+    "Sai: thiếu tổ chức.",
+    "Sai: pháp nhân thương mại là chủ thể tội phạm, không phải danh sách đầy đủ.",
+    "Sai: không giới hạn cơ quan nhà nước."
+   ]
   },
   {
    "type": "pair",

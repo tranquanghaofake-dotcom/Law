@@ -82,7 +82,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 4 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 4 Hiến pháp 2013 — Đảng là lực lượng lãnh đạo Nhà nước và xã hội.",
+    "Sai: cơ quan quyền lực nhà nước cao nhất là Quốc hội.",
+    "Sai: cơ quan hành chính cao nhất là Chính phủ.",
+    "Sai: Đảng không phải tổ chức xã hội – nghề nghiệp."
+   ]
   },
   {
    "type": "mcq",
@@ -99,7 +105,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 4 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 4 Hiến pháp — tổ chức đảng, đảng viên hoạt động trong khuôn khổ Hiến pháp và pháp luật.",
+    "Sai: Hiến pháp đặt khuôn khổ là Hiến pháp và pháp luật.",
+    "Sai: Đảng cũng bị ràng buộc bởi Hiến pháp, pháp luật.",
+    "Sai: khuôn khổ do Hiến pháp xác định là Hiến pháp và pháp luật."
+   ]
   },
   {
    "type": "pair",

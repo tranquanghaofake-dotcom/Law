@@ -73,7 +73,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 40 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 40 — không áp dụng tử hình với người đủ 75 tuổi trở lên khi phạm tội hoặc khi xét xử (và người dưới 18 tuổi, phụ nữ có thai, nuôi con dưới 36 tháng).",
+    "Sai: 60 tuổi không phải mốc.",
+    "Sai: phạm tội lần đầu không phải căn cứ.",
+    "Sai: trình độ, thành tích không phải căn cứ."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 40 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm c khoản 3 Điều 40 (sửa đổi) — người mắc bệnh ung thư giai đoạn cuối không bị thi hành án tử hình.",
+    "Sai: thành tích học tập không phải căn cứ.",
+    "Sai: người thân là cán bộ không phải căn cứ.",
+    "Sai: có con đang đi học không phải căn cứ."
+   ]
   },
   {
    "type": "pair",

@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 6 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: đoạn 2 khoản 1 Điều 6 — người không quốc tịch thường trú ở Việt Nam phạm tội ở nước ngoài có thể bị truy cứu như công dân Việt Nam.",
+    "Sai: luật áp dụng cả với người không quốc tịch thường trú ở Việt Nam.",
+    "Sai: không cần yêu cầu của nước ngoài.",
+    "Sai: địa điểm ở nước ngoài không loại trừ hiệu lực theo Điều 6."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 6 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 6 — khi hành vi xâm hại quyền, lợi ích hợp pháp của công dân Việt Nam hoặc lợi ích của Việt Nam (hoặc theo điều ước quốc tế).",
+    "Sai: không phải mọi trường hợp.",
+    "Sai: việc từng du lịch qua Việt Nam không phải căn cứ.",
+    "Sai: nạn nhân nước thứ ba không liên quan Việt Nam không thuộc khoản 2."
+   ]
   },
   {
    "type": "pair",

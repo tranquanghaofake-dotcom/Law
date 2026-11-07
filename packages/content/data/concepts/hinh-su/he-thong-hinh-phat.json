@@ -82,7 +82,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 32 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1, 2 Điều 32 — phạt tiền và trục xuất vừa là hình phạt chính vừa có thể là hình phạt bổ sung.",
+    "Sai: cảnh cáo và tử hình chỉ là hình phạt chính.",
+    "Sai: quản chế, cấm cư trú chỉ là hình phạt bổ sung.",
+    "Sai: tù chung thân chỉ là hình phạt chính."
+   ]
   },
   {
    "type": "mcq",
@@ -99,7 +105,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 32 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 32 — mỗi tội chỉ bị áp dụng một hình phạt chính.",
+    "Sai: không áp dụng hai hình phạt chính.",
+    "Sai: có giới hạn một hình phạt chính.",
+    "Sai: người phạm tội bị áp dụng hình phạt (trừ trường hợp miễn)."
+   ]
   },
   {
    "type": "pair",

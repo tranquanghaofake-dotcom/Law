@@ -81,7 +81,13 @@
     "Lỗi đạo đức cá nhân và sự nhắc nhở của người xung quanh trong gia đình"
    ],
    "answer": 0,
-   "explain": "VD13."
+   "explain": "VD13.",
+   "why": [
+    "Đúng: theo giáo trình, cơ sở là vi phạm pháp luật (hoặc thiệt hại do nguyên nhân khác được pháp luật quy định).",
+    "Sai: vi phạm đạo đức không làm phát sinh trách nhiệm pháp lý.",
+    "Sai: ý định chưa thể hiện bằng hành vi không phải vi phạm.",
+    "Sai: lỗi đạo đức cá nhân không phải cơ sở."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
     "Trách nhiệm dân sự ngoài tố tụng"
    ],
    "answer": 0,
-   "explain": "Hình phạt chỉ do Tòa án tuyên."
+   "explain": "Hình phạt chỉ do Tòa án tuyên.",
+   "why": [
+    "Đúng: trách nhiệm hình sự chỉ do Tòa án áp dụng (tuyên hình phạt).",
+    "Sai: trách nhiệm hành chính do cơ quan hành chính áp dụng.",
+    "Sai: trách nhiệm kỷ luật do cơ quan, đơn vị áp dụng.",
+    "Sai: trách nhiệm dân sự có thể do các bên tự thỏa thuận."
+   ]
   },
   {
    "type": "pair",

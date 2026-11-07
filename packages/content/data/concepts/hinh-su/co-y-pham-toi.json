@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 10 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 10 — thấy trước hậu quả, không mong muốn nhưng có ý thức để mặc là cố ý gián tiếp.",
+    "Sai: cố ý trực tiếp là mong muốn hậu quả.",
+    "Sai: quá tự tin là cho rằng hậu quả không xảy ra.",
+    "Sai: cẩu thả là không thấy trước hậu quả."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 10 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 10 — cố ý trực tiếp: mong muốn hậu quả xảy ra.",
+    "Sai: để mặc là cố ý gián tiếp.",
+    "Sai: cho rằng hậu quả không xảy ra là vô ý vì quá tự tin.",
+    "Sai: không thấy trước là vô ý do cẩu thả."
+   ]
   },
   {
    "type": "pair",

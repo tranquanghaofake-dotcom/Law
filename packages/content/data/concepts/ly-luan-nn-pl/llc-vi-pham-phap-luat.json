@@ -74,7 +74,13 @@
     "Chủ thể có năng lực trách nhiệm pháp lý"
    ],
    "answer": 0,
-   "explain": "Thiệt hại không phải dấu hiệu bắt buộc; nhiều vi phạm chỉ cần hành vi."
+   "explain": "Thiệt hại không phải dấu hiệu bắt buộc; nhiều vi phạm chỉ cần hành vi.",
+   "why": [
+    "Đúng: gây thiệt hại vật chất lớn không phải dấu hiệu bắt buộc của vi phạm pháp luật.",
+    "Sai: hành vi trái pháp luật là dấu hiệu.",
+    "Sai: có lỗi là dấu hiệu.",
+    "Sai: chủ thể có năng lực trách nhiệm pháp lý là dấu hiệu."
+   ]
   },
   {
    "type": "mcq",
@@ -87,7 +93,13 @@
     "Tùy tòa án quyết định trong từng trường hợp cụ thể"
    ],
    "answer": 0,
-   "explain": "VD13: dấu hiệu hành vi."
+   "explain": "VD13: dấu hiệu hành vi.",
+   "why": [
+    "Đúng: vi phạm pháp luật phải là hành vi xác định; ý định chưa thể hiện ra hành vi thì chưa phải vi phạm.",
+    "Sai: ý định chưa đủ.",
+    "Sai: thái độ chưa thành hành vi chưa đủ.",
+    "Sai: không do Tòa án tùy ý."
+   ]
   },
   {
    "type": "pair",

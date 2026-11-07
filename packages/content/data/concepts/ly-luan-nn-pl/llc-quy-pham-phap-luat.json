@@ -76,7 +76,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 — quy tắc xử sự chung, bắt buộc chung, do cơ quan, người có thẩm quyền ban hành, Nhà nước bảo đảm thực hiện.",
+    "Sai: quy phạm bắt buộc chung, không chờ các bên đồng ý.",
+    "Sai: quy phạm có tính bắt buộc, không phải lời khuyên.",
+    "Sai: áp dụng một lần cho người cụ thể là văn bản cá biệt."
+   ]
   },
   {
    "type": "mcq",
@@ -93,7 +99,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025"
-   }
+   },
+   "why": [
+    "Đúng: áp dụng một lần cho chủ thể xác định là đặc điểm của văn bản áp dụng, không phải quy phạm.",
+    "Sai: bắt buộc chung là đặc điểm của quy phạm.",
+    "Sai: do nhà nước ban hành hoặc thừa nhận là đặc điểm của quy phạm.",
+    "Sai: được nhà nước bảo đảm là đặc điểm của quy phạm."
+   ]
   },
   {
    "type": "pair",

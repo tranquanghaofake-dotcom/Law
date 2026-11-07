@@ -17,7 +17,7 @@
 | 5 | Xây dựng VBPL, Ngân hàng, Thương mại 2 | 40 + 42 + 44 | xong |
 | 6 | Dân sự, Thương mại 1, Lao động | 48 + 50 + 50 | xong |
 | 7 | Dân sự 2, Hành chính | 52 + 60 | xong |
-| 8 | Lý luận NN&PL, Hình sự | 60 + 68 | |
+| 8 | Lý luận NN&PL, Hình sự | 60 + 68 | xong |
 | 9–10 | Lịch sử NN&PL | 131 | |
 | 11–12 | Hiến pháp | 221 | |
 | 13–14 | Chứng khoán | 235 | |

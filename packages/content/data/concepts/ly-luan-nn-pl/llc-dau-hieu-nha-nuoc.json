@@ -77,7 +77,13 @@
     "Có trụ sở riêng, con dấu và các thành viên"
    ],
    "answer": 0,
-   "explain": "Bài 2: chỉ nhà nước được ban hành pháp luật, thu thuế."
+   "explain": "Bài 2: chỉ nhà nước được ban hành pháp luật, thu thuế.",
+   "why": [
+    "Đúng: chỉ nhà nước có quyền ban hành pháp luật và thu thuế bắt buộc.",
+    "Sai: tổ chức xã hội cũng có điều lệ, cơ cấu riêng.",
+    "Sai: tổ chức nào cũng có thể có thành viên, họp định kỳ.",
+    "Sai: tổ chức khác cũng có trụ sở, con dấu."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
     "Nghề nghiệp và ngành sản xuất"
    ],
    "answer": 0,
-   "explain": "Khác thị tộc quản lý theo huyết thống."
+   "explain": "Khác thị tộc quản lý theo huyết thống.",
+   "why": [
+    "Đúng: nhà nước quản lý dân cư theo lãnh thổ, đơn vị hành chính.",
+    "Sai: quản lý theo huyết thống là đặc điểm của thị tộc, bộ lạc.",
+    "Sai: tôn giáo không phải tiêu chí quản lý dân cư.",
+    "Sai: nghề nghiệp không phải tiêu chí quản lý dân cư."
+   ]
   },
   {
    "type": "pair",

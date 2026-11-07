@@ -73,7 +73,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 16 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 16 — được miễn trách nhiệm hình sự về tội định phạm.",
+    "Sai: chỉ miễn về tội định phạm.",
+    "Sai: không phải giảm một nửa mà là miễn.",
+    "Sai: người tự ý nửa chừng được miễn."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 16 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: đoạn 2 Điều 16 — hành vi đã thực hiện cấu thành tội khác thì chịu trách nhiệm về tội đó.",
+    "Sai: không được miễn với tội khác đã cấu thành.",
+    "Sai: tội định phạm được miễn.",
+    "Sai: đây là trách nhiệm hình sự."
+   ]
   },
   {
    "type": "pair",
