@@ -156,9 +156,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Công dân Việt Nam phạm tội ở nước ngoài bắt buộc phải bị truy cứu trách nhiệm hình sự tại Việt Nam.",
+   "statement": "Công dân Việt Nam phạm tội ở nước ngoài thì được miễn trách nhiệm hình sự tại Việt Nam vì hành vi xảy ra ngoài lãnh thổ.",
    "answer": false,
-   "explain": "Sai. Khoản 1 Điều 6 dùng chữ \"có thể bị truy cứu\"."
+   "explain": "Sai. Khoản 1 Điều 6: công dân Việt Nam có hành vi phạm tội ở ngoài lãnh thổ mà Bộ luật quy định là tội phạm thì có thể bị truy cứu trách nhiệm hình sự tại Việt Nam."
   },
   {
    "type": "recall",

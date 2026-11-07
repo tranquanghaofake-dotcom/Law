@@ -158,9 +158,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Người 15 tuổi phải chịu TNHS về mọi tội phạm rất nghiêm trọng trong Bộ luật Hình sự.",
+   "statement": "Người 15 tuổi phải chịu trách nhiệm hình sự về tội phạm nghiêm trọng do cố ý.",
    "answer": false,
-   "explain": "Sai. Chỉ các tội tại 28 điều được liệt kê ở khoản 2 Điều 12."
+   "explain": "Sai. Khoản 2 Điều 12: người từ đủ 14 đến dưới 16 tuổi chỉ chịu TNHS về tội phạm rất nghiêm trọng, đặc biệt nghiêm trọng thuộc các điều được liệt kê, không phải tội phạm nghiêm trọng."
   },
   {
    "type": "recall",

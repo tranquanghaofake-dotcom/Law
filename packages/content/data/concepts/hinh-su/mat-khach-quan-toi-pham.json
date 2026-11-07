@@ -153,9 +153,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Hậu quả nguy hiểm cho xã hội là dấu hiệu bắt buộc trong mọi cấu thành tội phạm.",
+   "statement": "Trong cấu thành tội phạm hình thức, hậu quả nguy hiểm cho xã hội phải xảy ra thì hành vi mới cấu thành tội phạm.",
    "answer": false,
-   "explain": "Sai. Chỉ bắt buộc trong cấu thành tội phạm vật chất; cấu thành hình thức chỉ cần hành vi."
+   "explain": "Sai. Cấu thành tội phạm hình thức chỉ cần hành vi; hậu quả là dấu hiệu bắt buộc trong cấu thành tội phạm vật chất."
   },
   {
    "type": "recall",
