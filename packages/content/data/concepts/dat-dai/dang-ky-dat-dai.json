@@ -164,9 +164,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Đăng ký nhà ở gắn liền với đất là bắt buộc như đăng ký đất đai.",
+   "statement": "Đăng ký đất đai bằng hình thức điện tử có giá trị pháp lý thấp hơn đăng ký trên giấy.",
    "answer": false,
-   "explain": "Sai. Khoản 2 Điều 131: tài sản gắn liền với đất đăng ký theo yêu cầu của chủ sở hữu."
+   "explain": "Sai. Khoản 3 Điều 131: đăng ký trên giấy hoặc đăng ký điện tử có giá trị pháp lý như nhau."
   },
   {
    "type": "recall",

@@ -158,9 +158,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi tổ chức kinh tế đều được giao đất không thu tiền sử dụng đất.",
+   "statement": "Tổ chức kinh tế được giao đất để xây dựng nhà ở thương mại thì không phải nộp tiền sử dụng đất.",
    "answer": false,
-   "explain": "Sai. Tổ chức kinh tế thường được giao có thu tiền (Điều 119) hoặc thuê đất (Điều 120)."
+   "explain": "Sai. Khoản 2 Điều 119: giao đất có thu tiền sử dụng đất; trường hợp này không nằm trong Điều 118."
   },
   {
    "type": "recall",

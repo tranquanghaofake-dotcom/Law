@@ -156,9 +156,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Chỉ khi cả hai bên đều có Giấy chứng nhận thì Tòa án mới giải quyết.",
+   "statement": "Tranh chấp đất đai mà một bên có Giấy chứng nhận do Ủy ban nhân dân cấp xã giải quyết.",
    "answer": false,
-   "explain": "Sai. Khoản 1 Điều 236: chỉ cần một trong các bên có."
+   "explain": "Sai. Khoản 1 Điều 236: tranh chấp mà một trong các bên có Giấy chứng nhận hoặc giấy tờ tại Điều 137 do Tòa án giải quyết."
   },
   {
    "type": "recall",

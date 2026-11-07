@@ -160,9 +160,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi người sử dụng đất đều được chuyển nhượng quyền sử dụng đất như nhau.",
+   "statement": "Đất đang có tranh chấp chưa được giải quyết vẫn được chuyển nhượng quyền sử dụng đất.",
    "answer": false,
-   "explain": "Sai. Quyền chuyển nhượng phụ thuộc hình thức sử dụng đất và điều kiện Điều 45; Điều 26 chỉ là quyền chung."
+   "explain": "Sai. Điểm b khoản 1 Điều 45: đất không có tranh chấp hoặc tranh chấp đã được giải quyết là điều kiện thực hiện quyền."
   },
   {
    "type": "recall",

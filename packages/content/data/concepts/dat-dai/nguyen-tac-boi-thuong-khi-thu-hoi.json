@@ -165,9 +165,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Người có đất thu hồi được bồi thường bằng đất thì bắt buộc phải nhận đất, không được nhận tiền.",
+   "statement": "Không có đất để bồi thường thì Nhà nước bồi thường bằng tiền theo giá đất trong bảng giá đất.",
    "answer": false,
-   "explain": "Sai. Khoản 2 Điều 91: có nhu cầu thì được bồi thường bằng tiền theo nguyện vọng đã đăng ký."
+   "explain": "Sai. Khoản 2 Điều 91: bồi thường bằng tiền theo giá đất cụ thể do Ủy ban nhân dân cấp có thẩm quyền quyết định."
   },
   {
    "type": "recall",
