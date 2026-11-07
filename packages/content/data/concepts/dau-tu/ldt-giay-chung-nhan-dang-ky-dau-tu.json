@@ -159,9 +159,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Dự án đầu tư của nhà đầu tư trong nước luôn phải có Giấy chứng nhận đăng ký đầu tư.",
+   "statement": "Dự án đầu tư của nhà đầu tư nước ngoài không phải thực hiện thủ tục cấp Giấy chứng nhận đăng ký đầu tư.",
    "answer": false,
-   "explain": "Sai. Điểm a khoản 2 Điều 26: dự án của nhà đầu tư trong nước không phải thực hiện thủ tục cấp Giấy chứng nhận đăng ký đầu tư."
+   "explain": "Sai. Điểm a khoản 1 Điều 26: dự án của nhà đầu tư nước ngoài phải thực hiện thủ tục cấp Giấy chứng nhận đăng ký đầu tư."
   },
   {
    "type": "recall",
