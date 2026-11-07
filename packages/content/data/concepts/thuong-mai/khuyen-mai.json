@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 88 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 88 — xúc tiến mua bán bằng cách dành cho khách hàng những lợi ích nhất định.",
+    "Sai: quảng bá trên phương tiện truyền thông là quảng cáo.",
+    "Sai: trưng bày hàng là hoạt động khác.",
+    "Sai: đấu giá tài sản công không phải khuyến mại."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 92 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 92 — tặng hàng hóa không thu tiền là một hình thức khuyến mại.",
+    "Sai: treo băng rôn là quảng cáo.",
+    "Sai: hội chợ, triển lãm là hình thức xúc tiến khác.",
+    "Sai: đăng ký nhãn hiệu là thủ tục sở hữu trí tuệ."
+   ]
   },
   {
    "type": "pair",

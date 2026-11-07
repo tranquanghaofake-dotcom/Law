@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 233 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 233 — một hoặc nhiều công việc: nhận hàng, vận chuyển, lưu kho, thủ tục hải quan, đóng gói, giao hàng…",
+    "Sai: chỉ vận chuyển là một phần của logistics.",
+    "Sai: chỉ thủ tục hải quan là một phần của logistics.",
+    "Sai: chỉ lưu kho là một phần của logistics."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 239 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 239 — được cầm giữ hàng hóa, chứng từ theo quy định.",
+    "Sai: không được bán ngay; phải theo trình tự luật định.",
+    "Sai: không được tiêu hủy hàng hóa.",
+    "Sai: thương nhân có quyền cầm giữ."
+   ]
   },
   {
    "type": "pair",

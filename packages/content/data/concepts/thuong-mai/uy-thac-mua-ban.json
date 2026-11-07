@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 155 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 155 — bên nhận ủy thác mua bán với danh nghĩa của mình.",
+    "Sai: nhân danh bên giao là đại diện.",
+    "Sai: không nhân danh Nhà nước.",
+    "Sai: không nhân danh khách hàng."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 159 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 159 — hợp đồng ủy thác phải lập thành văn bản hoặc hình thức khác có giá trị pháp lý tương đương.",
+    "Sai: lời nói không đáp ứng hình thức.",
+    "Sai: hình thức là bắt buộc.",
+    "Sai: không bắt buộc công chứng."
+   ]
   },
   {
    "type": "pair",

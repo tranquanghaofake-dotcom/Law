@@ -86,7 +86,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 3 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 3 — hoạt động thương mại nhằm mục đích sinh lợi.",
+    "Sai: không cần Nhà nước tham gia.",
+    "Sai: không cần công chứng.",
+    "Sai: không có ngưỡng giá trị."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 3 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 3 — mọi loại động sản, kể cả hình thành trong tương lai, và vật gắn liền với đất đai.",
+    "Sai: quyền sử dụng đất không phải hàng hóa theo Luật Thương mại.",
+    "Sai: hàng hóa gồm cả động sản hình thành trong tương lai và vật gắn liền với đất.",
+    "Sai: hàng hóa không giới hạn ở hàng xuất nhập khẩu."
+   ]
   },
   {
    "type": "pair",

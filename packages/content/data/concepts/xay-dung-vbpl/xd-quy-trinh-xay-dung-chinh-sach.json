@@ -73,7 +73,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 27 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 27 — luật, pháp lệnh mới hoặc thay thế; luật sửa đổi có nội dung hạn chế quyền con người; nghị quyết thí điểm của Quốc hội…",
+    "Sai: nghị định thi hành luật không thuộc diện bắt buộc lập chính sách theo khoản 1 Điều 27.",
+    "Sai: thông tư không thuộc khoản 1 Điều 27.",
+    "Sai: nghị quyết Hội đồng nhân dân quy định chi tiết không thuộc khoản 1 Điều 27."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 27 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 27 — nêu rõ tác động của chính sách trong thuyết minh, không phải lập quy trình chính sách riêng.",
+    "Sai: không thuộc khoản 1 thì không phải thẩm định chính sách.",
+    "Sai: vẫn phải nêu tác động trong thuyết minh.",
+    "Sai: không có thủ tục xin ý kiến Chủ tịch nước, Chủ tịch Quốc hội."
+   ]
   },
   {
    "type": "pair",

@@ -88,7 +88,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 292 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 292 không có tịch thu tài sản; đó là biện pháp của pháp luật hành chính, hình sự.",
+    "Sai: phạt vi phạm là chế tài ở Điều 292.",
+    "Sai: tạm ngừng thực hiện hợp đồng là chế tài ở Điều 292.",
+    "Sai: hủy bỏ hợp đồng là chế tài ở Điều 292."
+   ]
   },
   {
    "type": "mcq",
@@ -105,7 +111,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 7 Điều 292 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 7 Điều 292 — các bên được thỏa thuận biện pháp khác không trái nguyên tắc cơ bản của pháp luật Việt Nam, điều ước, tập quán thương mại quốc tế.",
+    "Sai: luật cho thỏa thuận chế tài khác.",
+    "Sai: không cần Bộ Công Thương cho phép.",
+    "Sai: không giới hạn ở hợp đồng có yếu tố nước ngoài."
+   ]
   },
   {
    "type": "pair",

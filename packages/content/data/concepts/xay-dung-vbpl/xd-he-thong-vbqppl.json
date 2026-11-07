@@ -100,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 4 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 4 không còn chỉ thị là hình thức văn bản quy phạm pháp luật.",
+    "Sai: quyết định của Chủ tịch Ủy ban nhân dân cấp tỉnh có trong Điều 4.",
+    "Sai: nghị quyết của Chính phủ có trong Điều 4.",
+    "Sai: thông tư của Tổng Kiểm toán nhà nước có trong Điều 4."
+   ]
   },
   {
    "type": "mcq",
@@ -117,7 +123,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 4 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 4 không còn cấp huyện (chính quyền cấp huyện kết thúc từ 01/7/2025).",
+    "Sai: cấp tỉnh vẫn ban hành văn bản quy phạm pháp luật.",
+    "Sai: cấp xã vẫn ban hành văn bản quy phạm pháp luật.",
+    "Sai: đơn vị hành chính – kinh tế đặc biệt có trong Điều 4."
+   ]
   },
   {
    "type": "pair",

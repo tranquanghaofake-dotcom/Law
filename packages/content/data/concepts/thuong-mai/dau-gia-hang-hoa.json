@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 185 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 185 — bán hàng công khai để chọn người mua trả giá cao nhất.",
+    "Sai: chọn nhà cung cấp giá thấp nhất là đấu thầu.",
+    "Sai: khuyến mại là hoạt động xúc tiến khác.",
+    "Sai: môi giới là dịch vụ trung gian."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 185 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 2 Điều 185 — người đầu tiên chấp nhận ngay giá khởi điểm hoặc giá được hạ thấp hơn.",
+    "Sai: trả giá cao nhất là phương thức đặt giá lên.",
+    "Sai: không chọn theo thứ tự đăng ký.",
+    "Sai: không chỉ định trước người mua."
+   ]
   },
   {
    "type": "pair",

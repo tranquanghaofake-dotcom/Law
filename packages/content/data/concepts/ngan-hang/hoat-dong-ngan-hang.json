@@ -82,7 +82,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 17 Điều 4 Luật Các tổ chức tín dụng 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 17 Điều 4 — chỉ gồm nhận tiền gửi, cấp tín dụng, cung ứng dịch vụ thanh toán qua tài khoản.",
+    "Sai: nhận tiền gửi là nghiệp vụ của hoạt động ngân hàng.",
+    "Sai: cấp tín dụng là nghiệp vụ của hoạt động ngân hàng.",
+    "Sai: dịch vụ thanh toán qua tài khoản là nghiệp vụ của hoạt động ngân hàng."
+   ]
   },
   {
    "type": "mcq",
@@ -99,7 +105,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 8 Luật Các tổ chức tín dụng 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 8 — chỉ tổ chức đủ điều kiện, được Ngân hàng Nhà nước cấp Giấy phép mới thực hiện hoạt động ngân hàng.",
+    "Sai: đăng ký kinh doanh chưa đủ; phải có giấy phép của Ngân hàng Nhà nước.",
+    "Sai: vốn và trụ sở không thay được giấy phép.",
+    "Sai: cá nhân gửi tiết kiệm là khách hàng, không thực hiện hoạt động ngân hàng."
+   ]
   },
   {
    "type": "pair",

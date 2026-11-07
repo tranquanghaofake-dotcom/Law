@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 13 Điều 3 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 13 Điều 3 — vi phạm gây thiệt hại đến mức bên kia không đạt được mục đích giao kết hợp đồng.",
+    "Sai: không phải mọi vi phạm thời hạn đều là vi phạm cơ bản.",
+    "Sai: vi phạm không đáng kể không phải vi phạm cơ bản.",
+    "Sai: luật không đo bằng tỷ lệ 8%; 8% là mức trần phạt vi phạm."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 312 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 312 — vi phạm là điều kiện hủy bỏ đã thỏa thuận hoặc một bên vi phạm cơ bản.",
+    "Sai: vi phạm nhỏ không đủ căn cứ hủy bỏ.",
+    "Sai: hủy bỏ là chế tài bên bị vi phạm tự áp dụng, không cần Tòa án.",
+    "Sai: lý do cá nhân không phải căn cứ hủy bỏ."
+   ]
   },
   {
    "type": "pair",

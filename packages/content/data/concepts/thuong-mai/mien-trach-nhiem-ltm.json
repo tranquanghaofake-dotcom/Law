@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 294 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 294 — bên vi phạm có nghĩa vụ chứng minh trường hợp miễn trách nhiệm.",
+    "Sai: bên bị vi phạm không chứng minh miễn trách nhiệm cho bên kia.",
+    "Sai: Tòa án xem xét, không có nghĩa vụ chứng minh.",
+    "Sai: Trọng tài xem xét, không có nghĩa vụ chứng minh."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 294 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm d khoản 1 Điều 294 — thực hiện quyết định của cơ quan nhà nước mà các bên không thể biết khi giao kết.",
+    "Sai: khó khăn tài chính không phải căn cứ miễn trách nhiệm.",
+    "Sai: biến động giá không phải căn cứ miễn trách nhiệm theo Điều 294.",
+    "Sai: thay đổi lãnh đạo, trụ sở không phải căn cứ."
+   ]
   },
   {
    "type": "pair",

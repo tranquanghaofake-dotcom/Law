@@ -88,7 +88,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 307 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 307 Luật Thương mại — có thỏa thuận phạt thì bên bị vi phạm được áp dụng cả phạt và bồi thường, trừ trường hợp luật khác quy định.",
+    "Sai: Luật Thương mại cho áp dụng cả hai chế tài khi có thỏa thuận phạt.",
+    "Sai: đã thỏa thuận phạt thì được áp dụng phạt.",
+    "Sai: Luật Thương mại không buộc chọn một trong hai."
+   ]
   },
   {
    "type": "mcq",
@@ -105,7 +111,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 303 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 303 chỉ cần hành vi vi phạm, thiệt hại thực tế và quan hệ nhân quả; không đòi lỗi cố ý.",
+    "Sai: hành vi vi phạm là căn cứ ở Điều 303.",
+    "Sai: thiệt hại thực tế là căn cứ ở Điều 303.",
+    "Sai: quan hệ nhân quả là căn cứ ở Điều 303."
+   ]
   },
   {
    "type": "pair",

@@ -73,7 +73,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 10 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 10 — nghị quyết thí điểm chính sách mới khác luật; tạm ngưng, điều chỉnh hiệu lực, kéo dài thời hạn áp dụng luật.",
+    "Sai: tội phạm, hình phạt, tố tụng phải quy định bằng luật (khoản 1 Điều 10).",
+    "Sai: quyền cơ bản của công dân phải quy định bằng luật.",
+    "Sai: các thứ thuế phải quy định bằng luật."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 10 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 1 Điều 10 — tội phạm và hình phạt, tố tụng tư pháp phải quy định bằng luật.",
+    "Sai: thí điểm chính sách mới quy định bằng nghị quyết.",
+    "Sai: kéo dài thời hạn áp dụng luật quy định bằng nghị quyết.",
+    "Sai: tạm ngưng hiệu lực luật quy định bằng nghị quyết."
+   ]
   },
   {
    "type": "pair",

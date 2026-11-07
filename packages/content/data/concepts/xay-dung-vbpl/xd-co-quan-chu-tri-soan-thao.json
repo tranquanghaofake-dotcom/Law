@@ -86,7 +86,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 33 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 33 — cơ quan trình tự soạn thảo hoặc phân công cơ quan khác chủ trì soạn thảo.",
+    "Sai: Bộ Tư pháp chủ yếu thẩm định, chỉ chủ trì soạn thảo khi được phân công.",
+    "Sai: Ủy ban Pháp luật và Tư pháp thẩm tra, không mặc nhiên chủ trì soạn thảo.",
+    "Sai: Văn phòng Chủ tịch nước không phải cơ quan chủ trì soạn thảo luật."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 33 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 3 Điều 33 — lấy ý kiến phản biện xã hội của Ủy ban Trung ương Mặt trận Tổ quốc Việt Nam.",
+    "Sai: Hội Luật gia có thể được lấy ý kiến nhưng không phải chủ thể phản biện xã hội luật định.",
+    "Sai: Phòng Thương mại và Công nghiệp được lấy ý kiến về chính sách kinh doanh, không phải phản biện xã hội.",
+    "Sai: Liên đoàn Luật sư không phải chủ thể phản biện xã hội luật định."
+   ]
   },
   {
    "type": "pair",

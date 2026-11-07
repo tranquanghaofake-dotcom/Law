@@ -82,7 +82,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 27 Điều 4 Luật Các tổ chức tín dụng 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 27 Điều 4 — nhận tiền gửi dưới hình thức tiền gửi, phát hành chứng chỉ tiền gửi, kỳ phiếu, tín phiếu…",
+    "Sai: phát hành cổ phiếu là tăng vốn chủ sở hữu.",
+    "Sai: bán tài sản bảo đảm là xử lý nợ.",
+    "Sai: mua khoản phải thu là bao thanh toán."
+   ]
   },
   {
    "type": "mcq",
@@ -99,7 +105,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 27 Điều 4 Luật Các tổ chức tín dụng 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 27 Điều 4 — có hoàn trả đầy đủ gốc, lãi theo thỏa thuận.",
+    "Sai: ngân hàng phải hoàn trả gốc.",
+    "Sai: phải hoàn trả cả gốc và lãi.",
+    "Sai: hoàn trả theo thỏa thuận, không theo kết quả kinh doanh."
+   ]
   },
   {
    "type": "pair",

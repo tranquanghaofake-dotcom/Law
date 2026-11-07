@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 4 Luật Các tổ chức tín dụng 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 4 Luật Các tổ chức tín dụng 2024 — khách hàng nhận nợ và hoàn trả cho bên bảo lãnh theo thỏa thuận.",
+    "Sai: bảo lãnh không xóa nghĩa vụ của khách hàng; khách hàng phải hoàn trả cho ngân hàng.",
+    "Sai: nghĩa vụ hoàn trả phát sinh theo thỏa thuận, không chờ bản án.",
+    "Sai: nghĩa vụ với bên nhận bảo lãnh đã được ngân hàng thực hiện thay."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 4 Luật Các tổ chức tín dụng 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 4 — khi bên được bảo lãnh không thực hiện hoặc thực hiện không đúng, đầy đủ nghĩa vụ.",
+    "Sai: ký thư bảo lãnh chưa làm phát sinh việc trả thay.",
+    "Sai: điều kiện là vi phạm nghĩa vụ của bên được bảo lãnh, không phải nhu cầu của bên nhận.",
+    "Sai: lợi nhuận ngân hàng không liên quan."
+   ]
   },
   {
    "type": "pair",

@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 4 Pháp lệnh Ngoại hối 2005 (sửa đổi, bổ sung năm 2013)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 4 Pháp lệnh Ngoại hối — vay, trả nợ nước ngoài là giao dịch vốn.",
+    "Sai: thanh toán nhập khẩu là giao dịch vãng lai.",
+    "Sai: chuyển tiền giúp đỡ thân nhân là giao dịch vãng lai.",
+    "Sai: thanh toán dịch vụ du lịch là giao dịch vãng lai."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 4 Pháp lệnh Ngoại hối 2005 (sửa đổi, bổ sung năm 2013)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 4 — công dân Việt Nam ở nước ngoài dưới 12 tháng, hoặc đi học tập ở nước ngoài, là người cư trú.",
+    "Sai: đi học có thời hạn vẫn là người cư trú.",
+    "Sai: Pháp lệnh phân loại rõ người cư trú, không cư trú.",
+    "Sai: ngân hàng không tự quyết định tư cách cư trú."
+   ]
   },
   {
    "type": "pair",

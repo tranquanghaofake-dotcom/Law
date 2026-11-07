@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 10 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (sửa đổi, bổ sung năm 2022)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 10 Điều 6 Luật Ngân hàng Nhà nước — làm trung gian kết nối, truyền dẫn, xử lý dữ liệu điện tử các giao dịch thanh toán.",
+    "Sai: nhận tiền gửi để cho vay là hoạt động ngân hàng.",
+    "Sai: cho vay là cấp tín dụng.",
+    "Sai: không tổ chức nào phát hành tiền điện tử thay thế đồng Việt Nam; phát hành tiền là độc quyền của Ngân hàng Nhà nước."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 10 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (sửa đổi, bổ sung năm 2022)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 10 Điều 6 — kết nối tổ chức cung ứng dịch vụ thanh toán và người sử dụng dịch vụ thanh toán.",
+    "Sai: Quốc hội, cơ quan thuế không phải các bên được kết nối.",
+    "Sai: định nghĩa không giới hạn ở hai tổ chức tín dụng phi ngân hàng.",
+    "Sai: bên vay, bên bảo lãnh thuộc quan hệ tín dụng."
+   ]
   },
   {
    "type": "pair",

@@ -73,7 +73,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 4 Luật Trọng tài thương mại 2010 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 5 Điều 4 Luật Trọng tài thương mại — phán quyết trọng tài là chung thẩm.",
+    "Sai: không có kháng cáo phán quyết trọng tài.",
+    "Sai: phán quyết có giá trị bắt buộc.",
+    "Sai: Tòa án chỉ xem xét hủy, không công nhận phúc thẩm."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 4 Luật Trọng tài thương mại 2010 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 4 — giải quyết không công khai, trừ khi có thỏa thuận khác.",
+    "Sai: trọng tài bảo mật.",
+    "Sai: phán quyết cũng không công khai, trừ thỏa thuận.",
+    "Sai: nguyên tắc do luật định."
+   ]
   },
   {
    "type": "pair",

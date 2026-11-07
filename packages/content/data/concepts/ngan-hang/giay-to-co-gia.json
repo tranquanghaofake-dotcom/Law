@@ -82,7 +82,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 8 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (sửa đổi, bổ sung năm 2022)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 8 Điều 6 — giấy tờ có giá xác nhận nghĩa vụ trả nợ giữa tổ chức phát hành và người sở hữu.",
+    "Sai: quyền sở hữu phần vốn góp xác nhận bằng cổ phiếu, không phải giấy tờ có giá theo khoản 8.",
+    "Sai: quyền sử dụng đất xác nhận bằng Giấy chứng nhận.",
+    "Sai: quyền tác giả không phải giấy tờ có giá."
+   ]
   },
   {
    "type": "mcq",
@@ -99,7 +105,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 8 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (sửa đổi, bổ sung năm 2022)"
-   }
+   },
+   "why": [
+    "Đúng: cổ phiếu xác nhận quyền sở hữu, không xác nhận nghĩa vụ trả nợ.",
+    "Sai: kỳ phiếu xác nhận nghĩa vụ trả nợ của ngân hàng.",
+    "Sai: trái phiếu xác nhận nghĩa vụ trả nợ của doanh nghiệp.",
+    "Sai: tín phiếu xác nhận nghĩa vụ trả nợ của Nhà nước."
+   ]
   },
   {
    "type": "pair",

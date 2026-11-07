@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 5 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 5 Điều 3 — phát hiện quy định mâu thuẫn, chồng chéo, hết hiệu lực hoặc không còn phù hợp.",
+    "Sai: thiếu nhóm hết hiệu lực và không còn phù hợp.",
+    "Sai: lỗi chính tả không phải đối tượng rà soát theo khoản 5.",
+    "Sai: Công báo, ký số không phải nội dung rà soát."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 64 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 64 — Ủy ban Thường vụ Quốc hội quyết định tổng rà soát trên cơ sở đề xuất của Chính phủ.",
+    "Sai: Bộ Tư pháp không quyết định tổng rà soát.",
+    "Sai: Chủ tịch nước không quyết định tổng rà soát.",
+    "Sai: Tòa án không quyết định tổng rà soát."
+   ]
   },
   {
    "type": "pair",

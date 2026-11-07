@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 166 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 166 — bên đại lý nhân danh chính mình.",
+    "Sai: nhân danh bên giao là đại diện cho thương nhân.",
+    "Sai: không nhân danh khách hàng.",
+    "Sai: không nhân danh cơ quan nhà nước."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 170 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 170 — bên giao đại lý là chủ sở hữu hàng hóa giao cho đại lý.",
+    "Sai: bên đại lý chỉ giữ và bán hàng, không sở hữu.",
+    "Sai: khách hàng chỉ sở hữu khi đã mua.",
+    "Sai: không có đồng sở hữu."
+   ]
   },
   {
    "type": "pair",

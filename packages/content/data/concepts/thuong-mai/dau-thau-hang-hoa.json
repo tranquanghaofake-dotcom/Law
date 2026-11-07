@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 214 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 214 — bên mời thầu là bên mua hàng hóa, dịch vụ.",
+    "Sai: bên bán là bên dự thầu.",
+    "Sai: đấu thầu thương mại không giới hạn ở cơ quan nhà nước.",
+    "Sai: ngân hàng không phải bên mời thầu theo định nghĩa."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 214 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 214 — đấu thầu mua sắm công thực hiện theo pháp luật về đấu thầu.",
+    "Sai: Luật Thương mại không điều chỉnh đấu thầu mua sắm công.",
+    "Sai: quy mô dự án không thay đổi phạm vi áp dụng.",
+    "Sai: yếu tố nước ngoài không thay đổi phạm vi áp dụng."
+   ]
   },
   {
    "type": "pair",

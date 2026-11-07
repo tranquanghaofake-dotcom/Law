@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 7 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 7 — phần, chương, mục, tiểu mục, điều phải có tên.",
+    "Sai: khoản, điểm không bắt buộc có tên; luật không có đơn vị \"đoạn\".",
+    "Sai: thiếu \"phần\"; và khoản không bắt buộc có tên.",
+    "Sai: thiếu tiểu mục; khoản, điểm không bắt buộc có tên."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 7 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 7 — số thứ tự liên tục, năm ban hành, loại văn bản, cơ quan hoặc người ban hành.",
+    "Sai: tên người ký, nơi lưu, số bản sao không phải yếu tố của số, ký hiệu.",
+    "Sai: ngày ký, số trang, nơi nhận là thể thức khác, không thuộc số, ký hiệu.",
+    "Sai: số trang, dấu mật, chữ ký không thuộc số, ký hiệu."
+   ]
   },
   {
    "type": "pair",

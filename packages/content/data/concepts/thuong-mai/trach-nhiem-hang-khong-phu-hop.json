@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 40 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 40 — bên bán không chịu trách nhiệm nếu khi giao kết bên mua đã biết hoặc phải biết khiếm khuyết.",
+    "Sai: phát hiện sau giao hàng không loại trừ trách nhiệm (khoản 2 Điều 40).",
+    "Sai: giá trị hàng không quyết định trách nhiệm.",
+    "Sai: giao đúng hạn không loại trừ trách nhiệm về chất lượng."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 40 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 40 — khiếm khuyết có trước khi chuyển rủi ro thì bên bán chịu trách nhiệm, dù phát hiện sau.",
+    "Sai: bên mua không chịu khiếm khuyết đã có trước.",
+    "Sai: người vận chuyển không chịu khiếm khuyết có sẵn của hàng.",
+    "Sai: bên bán phải chịu."
+   ]
   },
   {
    "type": "pair",

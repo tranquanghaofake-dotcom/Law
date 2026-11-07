@@ -72,7 +72,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 21 Điều 4 Luật Các tổ chức tín dụng 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 21 Điều 4 — ngân hàng thương mại, ngân hàng chính sách, ngân hàng hợp tác xã.",
+    "Sai: công ty tài chính là tổ chức tín dụng phi ngân hàng; quỹ tín dụng nhân dân là loại riêng.",
+    "Sai: luật không phân loại như vậy; Ngân hàng Nhà nước là ngân hàng trung ương.",
+    "Sai: các tên gọi này không phải loại hình ở khoản 21 Điều 4."
+   ]
   },
   {
    "type": "mcq",
@@ -89,7 +95,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 40 Điều 4 Luật Các tổ chức tín dụng 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: ngân hàng liên doanh, ngân hàng 100% vốn nước ngoài là ngân hàng thương mại.",
+    "Sai: ngân hàng chính sách do Nhà nước lập, không vì lợi nhuận.",
+    "Sai: chúng là ngân hàng, không phải tổ chức phi ngân hàng.",
+    "Sai: chi nhánh ngân hàng nước ngoài không có tư cách pháp nhân, khác ngân hàng 100% vốn nước ngoài."
+   ]
   },
   {
    "type": "pair",

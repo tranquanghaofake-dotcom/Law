@@ -84,7 +84,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 141 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 141 — bên đại diện nhân danh và theo chỉ dẫn của bên giao đại diện.",
+    "Sai: nhân danh chính mình là đại lý, ủy thác.",
+    "Sai: đại diện không nhân danh khách hàng.",
+    "Sai: không nhân danh Nhà nước."
+   ]
   },
   {
    "type": "mcq",
@@ -101,7 +107,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 141 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 141 — cử nhân viên của mình làm đại diện thì áp dụng Bộ luật Dân sự.",
+    "Sai: quy định về đại diện cho thương nhân không áp dụng cho nhân viên của chính thương nhân.",
+    "Sai: Bộ luật Lao động điều chỉnh quan hệ lao động, không phải quan hệ đại diện.",
+    "Sai: Luật Doanh nghiệp không phải luật áp dụng theo khoản 2 Điều 141."
+   ]
   },
   {
    "type": "pair",

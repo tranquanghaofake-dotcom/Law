@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 4 Luật Các tổ chức tín dụng 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: nhận tiền gửi là nghiệp vụ huy động vốn, không phải cấp tín dụng.",
+    "Sai: cho vay là hình thức cấp tín dụng.",
+    "Sai: bao thanh toán là hình thức cấp tín dụng.",
+    "Sai: bảo lãnh ngân hàng là hình thức cấp tín dụng."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 4 Luật Các tổ chức tín dụng 2024 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 4 — cấp tín dụng là thỏa thuận để giao hoặc cam kết giao một khoản tiền với nguyên tắc có hoàn trả.",
+    "Sai: tín dụng luôn có hoàn trả.",
+    "Sai: tặng cho không phải tín dụng.",
+    "Sai: góp vốn chia lợi nhuận là đầu tư, không phải tín dụng."
+   ]
   },
   {
    "type": "pair",

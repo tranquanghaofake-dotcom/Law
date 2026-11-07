@@ -73,7 +73,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 319 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 319 — hai năm kể từ thời điểm quyền và lợi ích hợp pháp bị xâm phạm (trừ trường hợp ở điểm e khoản 1 Điều 237).",
+    "Sai: sáu tháng là thời hạn khiếu nại ở một số trường hợp, không phải thời hiệu khởi kiện chung.",
+    "Sai: một năm không phải thời hiệu ở Điều 319.",
+    "Sai: mười năm không phải thời hiệu ở Điều 319."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 317 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 317 không có khiếu nại lên Ủy ban nhân dân.",
+    "Sai: thương lượng là hình thức ở Điều 317.",
+    "Sai: hòa giải qua bên trung gian là hình thức ở Điều 317.",
+    "Sai: trọng tài, Tòa án là hình thức ở Điều 317."
+   ]
   },
   {
    "type": "pair",

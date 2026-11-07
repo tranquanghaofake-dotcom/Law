@@ -86,7 +86,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 284 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 284 — bên nhận quyền tự mình tiến hành mua bán hàng hóa, cung ứng dịch vụ.",
+    "Sai: bên nhượng quyền không trực tiếp mua bán thay bên nhận.",
+    "Sai: không có bên môi giới trong định nghĩa.",
+    "Sai: Nhà nước không tham gia."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 284 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 284 — bên nhượng quyền có quyền kiểm soát và trợ giúp bên nhận quyền.",
+    "Sai: bên nhượng quyền có quyền kiểm soát, trợ giúp.",
+    "Sai: bên nhượng quyền nhận phí, không thu toàn bộ lợi nhuận.",
+    "Sai: bên nhận quyền tự điều hành."
+   ]
   },
   {
    "type": "pair",

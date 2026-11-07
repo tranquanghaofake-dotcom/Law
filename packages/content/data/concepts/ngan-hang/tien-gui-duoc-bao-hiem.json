@@ -75,7 +75,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 17 Luật Bảo hiểm tiền gửi 2025 (111/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 17 Luật Bảo hiểm tiền gửi 2025 — tiền gửi bằng đồng Việt Nam của cá nhân tại tổ chức tham gia bảo hiểm.",
+    "Sai: tiền gửi bằng ngoại tệ không được bảo hiểm.",
+    "Sai: tiền gửi của tổ chức, doanh nghiệp không được bảo hiểm.",
+    "Sai: tiền mua cổ phiếu là đầu tư, không phải tiền gửi."
+   ]
   },
   {
    "type": "mcq",
@@ -92,7 +98,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 17 Luật Bảo hiểm tiền gửi 2025 (111/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 17 — chỉ tiền gửi của cá nhân.",
+    "Sai: tiền gửi của doanh nghiệp không được bảo hiểm.",
+    "Sai: tiền gửi của cơ quan nhà nước không được bảo hiểm.",
+    "Sai: tiền gửi liên ngân hàng không được bảo hiểm."
+   ]
   },
   {
    "type": "pair",

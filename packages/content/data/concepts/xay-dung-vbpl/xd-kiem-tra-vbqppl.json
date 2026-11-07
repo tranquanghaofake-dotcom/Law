@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 6 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 6 Điều 3 — kết luận về tính hợp hiến, hợp pháp, thống nhất với hệ thống pháp luật.",
+    "Sai: hiệu quả kinh tế là nội dung theo dõi thi hành, không phải kiểm tra.",
+    "Sai: mức độ hài lòng không phải nội dung kiểm tra.",
+    "Sai: thẩm mỹ không phải nội dung kiểm tra."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 63 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 1 Điều 63 — Chính phủ kiểm tra văn bản của Bộ trưởng, Thủ trưởng cơ quan ngang Bộ, Hội đồng nhân dân, Ủy ban nhân dân, Chủ tịch Ủy ban nhân dân cấp tỉnh.",
+    "Sai: Chính phủ không kiểm tra văn bản của Quốc hội và cơ quan của Quốc hội.",
+    "Sai: Chính phủ không kiểm tra văn bản của Chủ tịch nước.",
+    "Sai: Chính phủ không kiểm tra văn bản của Tòa án, Viện kiểm sát."
+   ]
   },
   {
    "type": "pair",
