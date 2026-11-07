@@ -154,9 +154,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Ngân hàng Nhà nước chỉ có chức năng quản lý nhà nước, không thực hiện nghiệp vụ ngân hàng.",
+   "statement": "Ngân hàng Nhà nước là cơ quan thuộc Quốc hội, là Ngân hàng trung ương của Việt Nam.",
    "answer": false,
-   "explain": "Sai. Khoản 3 Điều 2: Ngân hàng Nhà nước còn thực hiện chức năng Ngân hàng trung ương (phát hành tiền, ngân hàng của các tổ chức tín dụng, cung ứng dịch vụ tiền tệ cho Chính phủ)."
+   "explain": "Sai. Khoản 1 Điều 2: Ngân hàng Nhà nước là cơ quan ngang bộ của Chính phủ, đồng thời là Ngân hàng trung ương."
   },
   {
    "type": "recall",

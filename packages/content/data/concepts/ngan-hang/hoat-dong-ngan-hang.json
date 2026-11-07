@@ -161,9 +161,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi doanh nghiệp đã đăng ký kinh doanh đều được nhận tiền gửi của dân cư.",
+   "statement": "Doanh nghiệp đã đăng ký kinh doanh được nhận tiền gửi của dân cư mà không cần Giấy phép của Ngân hàng Nhà nước.",
    "answer": false,
-   "explain": "Sai. Điều 8: chỉ tổ chức được Ngân hàng Nhà nước cấp Giấy phép mới được thực hiện hoạt động ngân hàng."
+   "explain": "Sai. Điều 8: tổ chức đủ điều kiện và được Ngân hàng Nhà nước cấp Giấy phép thì được thực hiện hoạt động ngân hàng; đăng ký kinh doanh không thay thế Giấy phép."
   },
   {
    "type": "recall",
