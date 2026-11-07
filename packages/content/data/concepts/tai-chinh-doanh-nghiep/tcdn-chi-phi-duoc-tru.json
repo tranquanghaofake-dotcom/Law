@@ -152,9 +152,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi khoản chi thực tế doanh nghiệp bỏ ra đều được trừ khi tính thuế TNDN.",
+   "statement": "Khoản chi thực tế không liên quan đến hoạt động sản xuất, kinh doanh vẫn được trừ khi tính thuế TNDN.",
    "answer": false,
-   "explain": "Sai. Phải đáp ứng đủ điều kiện khoản 1 Điều 9 và không thuộc khoản 2 (chi không được trừ)."
+   "explain": "Sai. Điểm a khoản 1 Điều 9 Luật Thuế thu nhập doanh nghiệp 2025 (67/2025/QH15) đòi hỏi khoản chi liên quan đến hoạt động sản xuất, kinh doanh; còn phải đáp ứng các điều kiện khác và không thuộc khoản 2 (chi không được trừ)."
   },
   {
    "type": "recall",

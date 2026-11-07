@@ -159,9 +159,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Doanh nghiệp chỉ ghi nhận doanh thu tính thuế khi khách hàng đã thanh toán.",
+   "statement": "Khoản trợ giá, phụ thu mà doanh nghiệp được hưởng không tính vào doanh thu để tính thu nhập chịu thuế.",
    "answer": false,
-   "explain": "Sai. Khoản 1 Điều 8: không phân biệt đã thu được tiền hay chưa thu được tiền."
+   "explain": "Sai. Khoản 1 Điều 8 Luật Thuế thu nhập doanh nghiệp 2025: doanh thu gồm cả trợ giá, phụ thu, phụ trội mà doanh nghiệp được hưởng, không phân biệt đã thu được tiền hay chưa."
   },
   {
    "type": "recall",

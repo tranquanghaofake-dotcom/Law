@@ -161,9 +161,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Chỉ công ty niêm yết mới phải công bố thông tin trên thị trường chứng khoán.",
+   "statement": "Công ty đại chúng chưa niêm yết không phải công bố thông tin theo Luật Chứng khoán.",
    "answer": false,
-   "explain": "Sai. Khoản 1 Điều 118: còn công ty đại chúng, tổ chức phát hành trái phiếu ra công chúng, cổ đông lớn, người nội bộ…"
+   "explain": "Sai. Điểm a khoản 1 Điều 118 Luật Chứng khoán 2019: công ty đại chúng là đối tượng công bố thông tin, kể cả khi chưa niêm yết."
   },
   {
    "type": "recall",
