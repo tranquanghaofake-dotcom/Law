@@ -151,9 +151,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi hành vi có dấu hiệu tội phạm đều là tội phạm.",
+   "statement": "Hành vi nguy hiểm cho xã hội nhưng tính nguy hiểm không đáng kể vẫn là tội phạm.",
    "answer": false,
-   "explain": "Sai. Khoản 2 Điều 8 loại trừ hành vi có tính nguy hiểm cho xã hội không đáng kể."
+   "explain": "Sai. Khoản 2 Điều 8: những hành vi có tính chất nguy hiểm cho xã hội không đáng kể thì không phải là tội phạm và được xử lý bằng các biện pháp khác."
   },
   {
    "type": "recall",

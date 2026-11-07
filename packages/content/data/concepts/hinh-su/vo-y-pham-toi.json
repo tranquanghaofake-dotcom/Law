@@ -158,9 +158,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Người không thể thấy trước hậu quả vẫn có lỗi vô ý do cẩu thả.",
+   "statement": "Người đã thấy trước hậu quả có thể xảy ra nhưng cho rằng hậu quả đó sẽ không xảy ra là vô ý do cẩu thả.",
    "answer": false,
-   "explain": "Sai. Cẩu thả đòi hỏi \"phải thấy trước và có thể thấy trước\"; không thể thấy trước là sự kiện bất ngờ (Điều 20), không có lỗi."
+   "explain": "Sai. Đó là vô ý vì quá tự tin (khoản 1 Điều 11). Vô ý do cẩu thả là không thấy trước hậu quả dù phải thấy trước và có thể thấy trước (khoản 2 Điều 11)."
   },
   {
    "type": "recall",

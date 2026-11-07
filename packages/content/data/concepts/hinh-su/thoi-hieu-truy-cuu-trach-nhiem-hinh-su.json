@@ -159,9 +159,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Thời hiệu truy cứu TNHS được áp dụng cho mọi tội phạm, không có ngoại lệ.",
+   "statement": "Tội xâm phạm an ninh quốc gia quy định tại Chương XIII của Bộ luật Hình sự hết thời hiệu truy cứu trách nhiệm hình sự sau 20 năm.",
    "answer": false,
-   "explain": "Sai. Điều 28 quy định các tội không áp dụng thời hiệu (tội xâm phạm an ninh quốc gia, tội phá hoại hòa bình…)."
+   "explain": "Sai. Khoản 1 Điều 28: không áp dụng thời hiệu truy cứu trách nhiệm hình sự đối với các tội xâm phạm an ninh quốc gia quy định tại Chương XIII."
   },
   {
    "type": "recall",

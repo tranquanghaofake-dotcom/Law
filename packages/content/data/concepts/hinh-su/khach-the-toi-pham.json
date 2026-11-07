@@ -151,9 +151,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Đối tượng tác động của tội phạm luôn bị thiệt hại về vật chất.",
+   "statement": "Khách thể của tội phạm là bộ phận bị hành vi phạm tội tác động trực tiếp để gây thiệt hại cho quan hệ xã hội.",
    "answer": false,
-   "explain": "Sai. Đối tượng tác động có thể còn nguyên vẹn; cái luôn bị thiệt hại là khách thể (quan hệ xã hội)."
+   "explain": "Sai. Đó là đối tượng tác động. Khách thể của tội phạm là quan hệ xã hội được luật hình sự bảo vệ và bị tội phạm xâm hại."
   },
   {
    "type": "recall",
