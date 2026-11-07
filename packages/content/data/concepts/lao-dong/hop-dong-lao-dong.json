@@ -159,9 +159,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Chỉ văn bản có tiêu đề \"Hợp đồng lao động\" mới được coi là hợp đồng lao động.",
+   "statement": "Thỏa thuận bằng tên gọi khác nhưng có nội dung thể hiện việc làm có trả công, tiền lương và sự quản lý, điều hành, giám sát của một bên không được coi là hợp đồng lao động.",
    "answer": false,
-   "explain": "Sai. Đoạn 2 khoản 1 Điều 13: xét theo nội dung, không theo tên gọi."
+   "explain": "Sai. Đoạn 2 khoản 1 Điều 13: thỏa thuận có nội dung đó vẫn được coi là hợp đồng lao động, xét theo nội dung chứ không theo tên gọi."
   },
   {
    "type": "recall",

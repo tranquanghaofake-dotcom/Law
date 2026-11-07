@@ -162,9 +162,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi cuộc ngừng việc tập thể của người lao động đều là đình công hợp pháp.",
+   "statement": "Cuộc ngừng việc tập thể do nhóm người lao động tự phát tổ chức, không do tổ chức đại diện người lao động có quyền tổ chức và lãnh đạo đình công, là đình công hợp pháp.",
    "answer": false,
-   "explain": "Sai. Phải đáp ứng dấu hiệu Điều 198 và không thuộc các trường hợp bất hợp pháp tại Điều 204."
+   "explain": "Sai. Điều 198: đình công phải do tổ chức đại diện người lao động có quyền thương lượng tập thể tổ chức và lãnh đạo; khoản 2 Điều 204: không do tổ chức đại diện có quyền tổ chức và lãnh đạo là đình công bất hợp pháp."
   },
   {
    "type": "recall",

@@ -159,9 +159,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Theo BLLĐ 2019, công đoàn cơ sở là tổ chức đại diện người lao động duy nhất tại doanh nghiệp.",
+   "statement": "Theo khoản 3 Điều 3 BLLĐ 2019, tổ chức của người lao động tại doanh nghiệp không phải là tổ chức đại diện người lao động tại cơ sở.",
    "answer": false,
-   "explain": "Sai. Khoản 3 Điều 3: còn có tổ chức của người lao động tại doanh nghiệp."
+   "explain": "Sai. Khoản 3 Điều 3: tổ chức đại diện người lao động tại cơ sở bao gồm công đoàn cơ sở và tổ chức của người lao động tại doanh nghiệp."
   },
   {
    "type": "recall",
