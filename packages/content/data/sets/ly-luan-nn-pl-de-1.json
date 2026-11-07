@@ -16,7 +16,13 @@
       "answer": 0,
       "explain": "Khoản 1 Điều 2.",
       "basis": "Khoản 1 Điều 2 Hiến pháp 2013",
-      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801",
+      "why": [
+        "Đúng: khoản 1 Điều 2 Hiến pháp 2013 — nhà nước pháp quyền XHCN của Nhân dân, do Nhân dân, vì Nhân dân.",
+        "Sai: Việt Nam là nhà nước đơn nhất.",
+        "Sai: Việt Nam không theo chính thể quân chủ.",
+        "Sai: Việt Nam không phải nhà nước thần quyền."
+      ]
     },
     {
       "q": "Tất cả quyền lực nhà nước thuộc về ai?",
@@ -29,7 +35,13 @@
       "answer": 0,
       "explain": "Khoản 2 Điều 2.",
       "basis": "Khoản 2 Điều 2 Hiến pháp 2013",
-      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801",
+      "why": [
+        "Đúng: khoản 2 Điều 2 — quyền lực nhà nước thuộc về Nhân dân.",
+        "Sai: Quốc hội thực hiện quyền lực, không phải chủ thể nắm quyền lực.",
+        "Sai: Chính phủ thực hiện quyền hành pháp.",
+        "Sai: Đảng lãnh đạo, quyền lực thuộc về Nhân dân."
+      ]
     },
     {
       "q": "Quyền lực nhà nước là thống nhất, có sự gì giữa các cơ quan?",
@@ -42,7 +54,13 @@
       "answer": 0,
       "explain": "Khoản 3 Điều 2.",
       "basis": "Khoản 3 Điều 2 Hiến pháp 2013",
-      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801",
+      "why": [
+        "Đúng: khoản 3 Điều 2 — phân công, phối hợp, kiểm soát.",
+        "Sai: Việt Nam không theo phân lập, đối trọng.",
+        "Sai: Hiến pháp không nêu cạnh tranh quyền lực.",
+        "Sai: Hiến pháp không nêu thay thế, tranh chấp."
+      ]
     },
     {
       "q": "Nhân dân thực hiện quyền lực nhà nước bằng hình thức nào?",
@@ -55,7 +73,13 @@
       "answer": 0,
       "explain": "Điều 6.",
       "basis": "Điều 6 Hiến pháp 2013",
-      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801",
+      "why": [
+        "Đúng: Điều 6 — dân chủ trực tiếp và dân chủ đại diện.",
+        "Sai: còn có dân chủ trực tiếp.",
+        "Sai: Chủ tịch nước do Quốc hội bầu.",
+        "Sai: dân chủ đại diện qua Quốc hội, Hội đồng nhân dân, không phải đoàn thể."
+      ]
     },
     {
       "q": "Đảng Cộng sản Việt Nam được Hiến pháp xác định là gì?",
@@ -68,7 +92,13 @@
       "answer": 0,
       "explain": "Khoản 1 Điều 4.",
       "basis": "Khoản 1 Điều 4 Hiến pháp 2013",
-      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801",
+      "why": [
+        "Đúng: khoản 1 Điều 4 — lực lượng lãnh đạo Nhà nước và xã hội.",
+        "Sai: cơ quan quyền lực cao nhất là Quốc hội.",
+        "Sai: cơ quan lập pháp là Quốc hội.",
+        "Sai: Đảng không phải tổ chức xã hội nghề nghiệp."
+      ]
     },
     {
       "q": "Tổ chức đảng và đảng viên hoạt động trong khuôn khổ nào?",
@@ -81,7 +111,13 @@
       "answer": 0,
       "explain": "Khoản 3 Điều 4.",
       "basis": "Khoản 3 Điều 4 Hiến pháp 2013",
-      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801",
+      "why": [
+        "Đúng: khoản 3 Điều 4 — trong khuôn khổ Hiến pháp và pháp luật.",
+        "Sai: không chỉ Điều lệ Đảng.",
+        "Sai: không chỉ nghị quyết.",
+        "Sai: có giới hạn bởi Hiến pháp và pháp luật."
+      ]
     },
     {
       "q": "Nhà nước được tổ chức và hoạt động theo gì, thực hiện nguyên tắc nào?",
@@ -94,7 +130,13 @@
       "answer": 0,
       "explain": "Khoản 1 Điều 8.",
       "basis": "Khoản 1 Điều 8 Hiến pháp 2013",
-      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801",
+      "why": [
+        "Đúng: khoản 1 Điều 8 — theo Hiến pháp và pháp luật, nguyên tắc tập trung dân chủ.",
+        "Sai: Hiến pháp không dùng \"tập quyền thống nhất\".",
+        "Sai: Việt Nam không theo tam quyền phân lập.",
+        "Sai: không theo tập quán, điều lệ."
+      ]
     },
     {
       "q": "Nền tảng của liên minh làm chủ quyền lực nhà nước theo khoản 2 Điều 2 gồm ai?",
@@ -107,7 +149,13 @@
       "answer": 0,
       "explain": "Khoản 2 Điều 2.",
       "basis": "Khoản 2 Điều 2 Hiến pháp 2013",
-      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801",
+      "why": [
+        "Đúng: khoản 2 Điều 2 — công nhân, nông dân và đội ngũ trí thức.",
+        "Sai: Hiến pháp không nêu giai cấp tư sản.",
+        "Sai: Hiến pháp không nêu doanh nhân, tiểu thương.",
+        "Sai: Hiến pháp không nêu tiểu thương, giới chủ."
+      ]
     },
     {
       "q": "Cơ quan nào do Nhân dân bầu, thực hiện dân chủ đại diện ở địa phương?",
@@ -120,7 +168,13 @@
       "answer": 0,
       "explain": "Điều 6.",
       "basis": "Điều 6 Hiến pháp 2013",
-      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801",
+      "why": [
+        "Đúng: Điều 6 — Hội đồng nhân dân do Nhân dân bầu.",
+        "Sai: Ủy ban nhân dân do Hội đồng nhân dân bầu.",
+        "Sai: Tòa án không phải cơ quan dân cử.",
+        "Sai: Viện kiểm sát không phải cơ quan dân cử."
+      ]
     },
     {
       "q": "Mục tiêu nào được Điều 3 Hiến pháp 2013 nêu?",
@@ -133,7 +187,13 @@
       "answer": 0,
       "explain": "Điều 3.",
       "basis": "Điều 3 Hiến pháp 2013",
-      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801",
+      "why": [
+        "Đúng: Điều 3 — dân giàu, nước mạnh, dân chủ, công bằng, văn minh.",
+        "Sai: Điều 3 không nêu cụm \"tự do, bình đẳng, hòa bình\".",
+        "Sai: Hiến pháp thừa nhận sở hữu tư nhân.",
+        "Sai: Điều 3 không nêu tiền tệ khu vực."
+      ]
     }
   ]
 }
