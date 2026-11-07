@@ -158,9 +158,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Thương nhân chỉ thực hiện một công việc (ví dụ chỉ lưu kho) thì không phải là dịch vụ logistics.",
+   "statement": "Thương nhân phải thực hiện từ hai công việc trở lên (ví dụ vừa lưu kho vừa vận chuyển) thì mới là dịch vụ logistics.",
    "answer": false,
-   "explain": "Sai. Điều 233: \"một hoặc nhiều công việc\"."
+   "explain": "Sai. Điều 233: dịch vụ logistics là việc thương nhân tổ chức thực hiện \"một hoặc nhiều công việc\"."
   },
   {
    "type": "recall",

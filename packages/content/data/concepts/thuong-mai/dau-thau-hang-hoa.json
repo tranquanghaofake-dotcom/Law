@@ -164,9 +164,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Trong đấu thầu, bên mời thầu luôn phải chọn người chào giá thấp nhất.",
+   "statement": "Quy định về đấu thầu trong Luật Thương mại áp dụng cả đối với đấu thầu mua sắm công.",
    "answer": false,
-   "explain": "Sai. Khoản 1 Điều 214: chọn thương nhân đáp ứng tốt nhất các yêu cầu."
+   "explain": "Sai. Khoản 2 Điều 214: các quy định về đấu thầu trong Luật Thương mại không áp dụng đối với đấu thầu mua sắm công theo quy định của pháp luật."
   },
   {
    "type": "recall",
