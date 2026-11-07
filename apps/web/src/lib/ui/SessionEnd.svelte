@@ -94,7 +94,7 @@
     {:else if onagain}<button class="btn ghost" type="button" onclick={onagain}>Học lại đợt này</button>{/if}
   </div>
   {#if gate && !gate.done}
-    <p class="gate-note small muted">Đợt sau mở khi cả {gate.total} khái niệm đạt bậc 3 · {LEVEL_NAMES[3]} (còn {gate.remaining}). Mỗi lượt học lại đưa khái niệm lên bậc cao hơn.{#if onnext} <button type="button" class="linklike" onclick={onnext}>Học vượt sang đợt sau</button>{/if}</p>
+    <p class="gate-note small muted">Đợt sau mở khi cả {gate.total} khái niệm đạt bậc 3 · {LEVEL_NAMES[3]} (còn {gate.remaining}). Mỗi lượt học lại đưa khái niệm lên bậc cao hơn. {#if onnext}<button type="button" class="linklike" onclick={onnext}>Học vượt sang đợt sau</button>{/if}</p>
   {/if}
 </section>
 
