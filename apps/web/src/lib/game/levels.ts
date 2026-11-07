@@ -2,6 +2,10 @@
 import type { Level } from '$lib/content/types';
 
 export const LEVEL_NAMES: readonly string[] = ['Chưa học', 'Gặp', 'Nhận biết', 'Phân biệt', 'Điền', 'Tình huống', 'Tinh thông'];
+/** Tên bậc để hiển thị: bậc 0 nhưng đã có lượt trả lời (vd. gặp rồi trả lời sai) → "Đã gặp · cần ôn" thay cho "Chưa học". */
+export function levelName(level: number, seen = false): string {
+  return level === 0 && seen ? 'Đã gặp · cần ôn' : (LEVEL_NAMES[level] ?? '');
+}
 /** Bậc tính là "thuần thục" cho phẩm hàm và % môn. */
 export const MASTERED: Level = 5;
 

@@ -14,6 +14,12 @@ export function isLessonDone(lesson: Lesson, levels: Record<string, Level>): boo
   return lesson.concepts.every((c) => (levels[c] ?? 0) >= LESSON_DONE_LEVEL);
 }
 
+/** Cổng mở đợt sau: số khái niệm của đợt chưa đạt LESSON_DONE_LEVEL (dùng ở màn kết thúc để không mời "Học đợt tiếp" khi đợt sau còn khoá). */
+export function lessonGate(conceptIds: readonly string[], levels: Record<string, Level>): { done: boolean; remaining: number; total: number } {
+  const remaining = conceptIds.filter((c) => (levels[c] ?? 0) < LESSON_DONE_LEVEL).length;
+  return { done: remaining === 0, remaining, total: conceptIds.length };
+}
+
 /** done = mọi khái niệm ≥ 3; đợt chưa xong đầu tiên = current; còn lại locked. */
 export function lessonStates(subject: Subject, levels: Record<string, Level>): Record<string, LessonSt> {
   const out: Record<string, LessonSt> = {};

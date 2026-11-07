@@ -43,12 +43,15 @@
   import ComboStamp from '$lib/ui/session/ComboStamp.svelte';
   import { stampFor, TIMING, type Stamp } from '$lib/ui/session/reward';
   import { bossBadge } from '$lib/ui/session/badge';
+  import { lessonGate } from '$lib/ui/lessonState';
 
-  let { steps, concepts, levels, upDays = {}, lessonId, onagain, onnext, title }: {
+  let { steps, concepts, levels, upDays = {}, lessonId, lessonConcepts, onagain, onnext, title }: {
     steps: Step[]; concepts: Concept[]; levels: Record<string, Level>;
     /** Ngày lên bậc gần nhất theo khái niệm (luật giãn cách bậc ≥ 4, cùng luật với repo.record). */
     upDays?: Record<string, string>;
     lessonId?: string; onagain?: () => void; onnext?: () => void; title?: string;
+    /** Khái niệm của đợt (phiên học đợt): để màn kết thúc biết đợt sau đã mở chưa. */
+    lessonConcepts?: string[];
   } = $props();
 
   // svelte-ignore state_referenced_locally
@@ -260,7 +263,7 @@
 <div class="session-main">
   <h1 class="sr-only">{title ?? 'Phiên học'}</h1>
   {#if ended}
-    <SessionEnd summary={summary(run)} {sources} {record} retryTotal={summary(run).retried} {concepts} streak={ended.streak} streakEvent={ended.streakEvent} rankBefore={ended.rankBefore} rankAfter={ended.rankAfter} dueTomorrow={ended.dueTomorrow} promotion={ended.promotion} onhome={() => go('home')} {onagain} {onnext} mistakes={mistakes(run)} />
+    <SessionEnd summary={summary(run)} {sources} {record} retryTotal={summary(run).retried} {concepts} streak={ended.streak} streakEvent={ended.streakEvent} rankBefore={ended.rankBefore} rankAfter={ended.rankAfter} dueTomorrow={ended.dueTomorrow} promotion={ended.promotion} onhome={() => go('home')} {onagain} {onnext} gate={lessonConcepts ? lessonGate(lessonConcepts, run.levels) : null} mistakes={mistakes(run)} />
   {:else if step && Card}
     <SessionBar done={barDone} total={barTotal} {title} combo={run.combo} xp={shownXp} {marks} {inRetry} onexit={openConfirm} />
     {#if lessonId}<LessonStrip {concepts} levels={run.levels} current={hideCurrent ? '' : (step?.conceptId ?? '')} />{/if}

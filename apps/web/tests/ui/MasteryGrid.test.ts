@@ -49,10 +49,10 @@ describe('MasteryGrid — cấu trúc heading và bậc không chỉ bằng màu
     const { container } = render(MasteryGrid, { props: { subject, levels: { a: 6, b: 2 }, terms, states: {} } });
     expect([...container.querySelectorAll('.cell')].map((c) => c.textContent)).toEqual(['6', '2', '0', '0']);
   });
-  it('đợt khoá có nhãn chữ "Chưa mở", không chỉ xám', () => {
+  it('đợt khoá có nhãn chữ "Chưa tới lượt", không chỉ xám', () => {
     const { container } = render(MasteryGrid, { props: { subject, levels: {}, terms, states: { 'hp-1': 'current', 'hp-2': 'locked' } } });
-    expect(container.querySelector('#lesson-hp-2')?.textContent).toContain('Chưa mở');
-    expect(container.querySelector('#lesson-hp-1')?.textContent).not.toContain('Chưa mở');
+    expect(container.querySelector('#lesson-hp-2')?.textContent).toContain('Chưa tới lượt');
+    expect(container.querySelector('#lesson-hp-1')?.textContent).not.toContain('Chưa tới lượt');
   });
 });
 

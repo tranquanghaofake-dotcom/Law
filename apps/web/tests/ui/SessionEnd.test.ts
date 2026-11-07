@@ -14,6 +14,22 @@ describe('SessionEnd', () => {
     await fireEvent.click(getByRole('button', { name: /Học đợt tiếp/ }));
     expect(onnext).toHaveBeenCalled();
   });
+  it('đợt chưa xong (gate): không mời "Học đợt tiếp"; nút học lượt tiếp đợt này + giải thích + link học vượt', async () => {
+    const onnext = vi.fn(); const onagain = vi.fn();
+    const { container } = render(SessionEnd, { props: { ...base, onnext, onagain, gate: { done: false, remaining: 2, total: 3 } } });
+    const { getByRole, queryByRole } = within(container);
+    expect(queryByRole('button', { name: /Học đợt tiếp/ })).toBeNull();
+    expect(container.textContent).toContain('Đợt sau mở khi cả 3 khái niệm đạt bậc 3');
+    expect(container.textContent).toContain('còn 2');
+    await fireEvent.click(getByRole('button', { name: /Học lượt tiếp đợt này/ }));
+    expect(onagain).toHaveBeenCalled();
+    await fireEvent.click(getByRole('button', { name: /Học vượt sang đợt sau/ }));
+    expect(onnext).toHaveBeenCalled();
+  });
+  it('đợt đã xong (gate.done) → "Học đợt tiếp"', () => {
+    const { container } = render(SessionEnd, { props: { ...base, onnext: () => {}, gate: { done: true, remaining: 0, total: 3 } } });
+    expect(within(container).getByRole('button', { name: /Học đợt tiếp/ })).toBeTruthy();
+  });
   it('không có "Học đợt tiếp" khi không có đợt kế', () => {
     const { container } = render(SessionEnd, { props: base });
     const { queryByRole } = within(container);

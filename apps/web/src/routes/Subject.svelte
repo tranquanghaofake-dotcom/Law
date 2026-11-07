@@ -22,6 +22,7 @@
 
   let subject = $state<Subject | null>(null);
   let levels = $state<Record<string, Level>>({});
+  let seen = $state<Set<string>>(new Set());
   let terms = $state<Record<string, string>>({});
   let due = $state(0);
   let difficult = $state<{ id: string; term: string }[]>([]);
@@ -38,6 +39,8 @@
       const s = await loadSubject(route.params.subject);
       const ids = s.chapters.flatMap((c) => c.lessons.flatMap((l) => l.concepts));
       levels = await repo.levels(ids);
+      // phụ: lỗi đọc lượt trả lời không làm hỏng trang (chỉ mất nhãn "Đã gặp")
+      try { seen = new Set((await repo.all(s.id)).map((p) => p.conceptId)); } catch { seen = new Set(); }
       const known = new Set(ids);
       due = (await repo.due(new Date(), s.id)).filter((p) => known.has(p.conceptId)).length;
       const hard = (await repo.difficult()).filter((p) => p.subject === s.id && known.has(p.conceptId)).slice(0, 5).map((p) => p.conceptId);
@@ -86,5 +89,5 @@
     </details>
   {/if}
   <LevelLegend />
-  <MasteryGrid {subject} {levels} {terms} {states} />
+  <MasteryGrid {subject} {levels} {terms} {states} {seen} />
 {/if}

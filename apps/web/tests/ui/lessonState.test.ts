@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import type { Subject } from '$lib/content/types';
-import { currentLesson, inProgressLesson, lessonStates } from '$lib/ui/lessonState';
+import { currentLesson, inProgressLesson, lessonGate, lessonStates } from '$lib/ui/lessonState';
 
 const subject: Subject = {
   id: 'hp', title: 'Luật Hiến pháp', short: 'HP',
@@ -24,5 +24,12 @@ describe('lessonStates', () => {
   it('currentLesson: đợt đầu khi chưa học; null khi học hết', () => {
     expect(currentLesson(subject, {})?.id).toBe('hp-1');
     expect(currentLesson(subject, { a: 3, b: 3, c: 4, d: 6 })).toBeNull();
+  });
+});
+
+describe('lessonGate', () => {
+  it('đếm khái niệm chưa đạt bậc 3 của đợt; xong khi không còn khái niệm nào', () => {
+    expect(lessonGate(['a', 'b', 'c'], { a: 3, b: 1 })).toEqual({ done: false, remaining: 2, total: 3 });
+    expect(lessonGate(['a', 'b'], { a: 3, b: 4 })).toEqual({ done: true, remaining: 0, total: 2 });
   });
 });

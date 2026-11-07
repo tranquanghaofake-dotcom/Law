@@ -14,7 +14,7 @@
   import { LEVEL_NAMES } from '$lib/game/levels';
   import { reviewTexts } from './cards/answer';
   import type { XpSource } from './session/xpSources';
-  let { summary, concepts, streak, streakEvent, dueTomorrow, onhome, onagain, onnext, mistakes = [], promotion = null, sources = [], record = null, retryTotal: retryProp = 0}: {
+  let { summary, concepts, streak, streakEvent, dueTomorrow, onhome, onagain, onnext, mistakes = [], promotion = null, sources = [], record = null, retryTotal: retryProp = 0, gate = null }: {
     summary: { correct: number; total: number; xp: number; levelUps: { conceptId: string; to: Level }[]; bestCombo?: number; golden?: number; fixed?: number; retried?: number; pretest?: { total: number; correct: number }; held?: number };
     concepts: Concept[]; streak: number; streakEvent: StreakEvent; rankBefore: RankInfo; rankAfter: RankInfo; dueTomorrow: number;
     onhome: () => void; onagain?: () => void; onnext?: () => void; mistakes?: Step[]; promotion?: string | null;
@@ -24,6 +24,8 @@
     record?: { comboBeaten: boolean; rateBeaten: boolean; before: { bestCombo: number; bestRate: number } } | null;
     /** số câu bước vào vòng sửa sai (mẫu số của "sửa được x/y") */
     retryTotal?: number;
+    /** Cổng mở đợt sau (phiên học đợt): chưa xong thì mời học lượt tiếp đợt này thay vì "Học đợt tiếp". null = không xét. */
+    gate?: { done: boolean; remaining: number; total: number } | null;
   } = $props();
   const retryTotal = $derived(retryProp || summary.retried || 0);
   // màn thắp chuỗi toàn màn hình: lần đầu chuỗi tăng trong ngày (ghi ngày đã chiếu ở localStorage)
@@ -87,9 +89,13 @@
   <p class="muted">Hẹn ôn ngày mai: {dueTomorrow} khái niệm.</p>
   <div class="row">
     <button class="btn primary" type="button" onclick={onhome}>Về Hôm nay</button>
-    {#if onnext}<button class="btn ghost" type="button" onclick={onnext}>Học đợt tiếp →</button>
+    {#if gate && !gate.done && onagain}<button class="btn ghost" type="button" onclick={onagain}>Học lượt tiếp đợt này →</button>
+    {:else if onnext}<button class="btn ghost" type="button" onclick={onnext}>Học đợt tiếp →</button>
     {:else if onagain}<button class="btn ghost" type="button" onclick={onagain}>Học lại đợt này</button>{/if}
   </div>
+  {#if gate && !gate.done}
+    <p class="gate-note small muted">Đợt sau mở khi cả {gate.total} khái niệm đạt bậc 3 · {LEVEL_NAMES[3]} (còn {gate.remaining}). Mỗi lượt học lại đưa khái niệm lên bậc cao hơn.{#if onnext} <button type="button" class="linklike" onclick={onnext}>Học vượt sang đợt sau</button>{/if}</p>
+  {/if}
 </section>
 
 {#if mistakes.length}
