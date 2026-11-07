@@ -151,9 +151,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi thỏa thuận khác với Bộ luật Lao động đều vô hiệu.",
+   "statement": "Thỏa thuận bảo đảm cho người lao động có điều kiện thuận lợi hơn so với quy định của pháp luật về lao động bị Nhà nước ngăn cấm.",
    "answer": false,
-   "explain": "Sai. Thỏa thuận có lợi hơn cho người lao động được khuyến khích (khoản 1 Điều 4)."
+   "explain": "Sai. Khoản 1 Điều 4: Nhà nước khuyến khích những thỏa thuận bảo đảm cho người lao động có điều kiện thuận lợi hơn so với quy định của pháp luật về lao động."
   },
   {
    "type": "recall",

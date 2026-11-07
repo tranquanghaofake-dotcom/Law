@@ -158,9 +158,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Người lao động sơ suất làm hỏng thiết bị trị giá nhỏ luôn phải bồi thường toàn bộ giá trị thiệt hại.",
+   "statement": "Người lao động gây thiệt hại không nghiêm trọng do sơ suất, giá trị không quá 10 tháng lương tối thiểu vùng, phải bồi thường nhiều nhất là 06 tháng tiền lương.",
    "answer": false,
-   "explain": "Sai. Đoạn 2 khoản 1 Điều 129: tối đa 03 tháng tiền lương."
+   "explain": "Sai. Đoạn 2 khoản 1 Điều 129: bồi thường nhiều nhất là 03 tháng tiền lương, không phải 06 tháng."
   },
   {
    "type": "recall",
