@@ -154,7 +154,7 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi loại vàng mua bán trong nước đều là ngoại hối.",
+   "statement": "Vàng dưới dạng khối, thỏi, hạt, miếng là ngoại hối khi được mua bán trong nước.",
    "answer": false,
    "explain": "Sai. Điểm d khoản 1 Điều 4 chỉ coi vàng là ngoại hối trong các trường hợp liệt kê (dự trữ nhà nước, tài khoản ở nước ngoài của người cư trú, mang vào/ra lãnh thổ)."
   },

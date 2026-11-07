@@ -166,9 +166,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Người gửi tiền luôn được tổ chức bảo hiểm tiền gửi trả lại toàn bộ số tiền gửi, không giới hạn.",
+   "statement": "Hạn mức chi trả tiền bảo hiểm được tính riêng cho từng khoản tiền gửi của một người tại tổ chức tham gia bảo hiểm tiền gửi.",
    "answer": false,
-   "explain": "Sai. Khoản 1 Điều 4: chỉ trong hạn mức chi trả; phần vượt giải quyết khi xử lý tài sản (trừ trường hợp đặc biệt Thống đốc quyết định chi trả vượt hạn mức — khoản 2 Điều 22)."
+   "explain": "Sai. Khoản 6 Điều 4: hạn mức chi trả là số tiền tối đa trả cho tất cả các khoản tiền gửi được bảo hiểm của một người tại một tổ chức tham gia bảo hiểm tiền gửi, không tính riêng từng khoản."
   },
   {
    "type": "recall",
