@@ -3,7 +3,7 @@
 import type { Concept, ItemCloze, ItemMcq, ItemPair, ItemTrueFalse } from '$lib/content/types';
 import { normalize } from './grading';
 import type { MatchItem, SortItem } from './step';
-import { clip, coverage, informative, leaks, maskDefiningHead, maskTerms, nearDuplicate, overlaps, sharedWords, termParts } from './text';
+import { clip, coverage, informative, leaks, maskDefiningHead, maskTerms, nearDuplicate, overlaps, qualifierParts, sharedWords, termParts } from './text';
 
 /** Dữ liệu nạp thêm để làm phương án nhiễu: khái niệm dễ nhầm/cùng chương, bảng tên khái niệm theo môn. */
 export type GenContext = { pool?: Concept[]; terms?: Record<string, Record<string, string>> };
@@ -135,7 +135,7 @@ function distinctFrom(c: Concept, cands: Cand[]): Cand[] {
 
 /** Định nghĩa → thuật ngữ (bậc 1). Null nếu định nghĩa sau khi che vẫn lộ thuật ngữ / ít thông tin, hoặc thiếu phương án. */
 export function genDefTerm(c: Concept, cands: Cand[], rng: () => number): ItemMcq | null {
-  const text = shownDefinition(c, LIMITS.defQuestion);
+  const text = shownDefinition(c, LIMITS.defQuestion, qualifierParts(c.term));
   if (leaks(text, c.term) || normalize(text).length < 30) return null;
   if (!informative(text)) { genStats.lowInfo++; return null; }
   const wrong = pickDistractors(distinctFrom(c, cands), MAX_OPTIONS - 1, rng, c.term.length, (x) => x.term, { stem: text, correct: c.term });

@@ -62,6 +62,22 @@ export function maskDefiningHead(text: string, term: string): string {
   });
 }
 
+/**
+ * Phần trong ngoặc của tên khái niệm (vd. "Nguồn gốc của nhà nước (quan điểm Mác – Lênin)") kèm bản bỏ chữ dẫn chung
+ * ("quan điểm", "theo"…): định nghĩa nhắc lại cụm này sẽ lộ đáp án ở câu định nghĩa → thuật ngữ.
+ */
+export function qualifierParts(term: string): string[] {
+  const out: string[] = [];
+  for (const m of term.normalize('NFC').matchAll(/\(([^()]+)\)/gu)) {
+    const q = m[1].trim();
+    if (!q) continue;
+    out.push(q);
+    const core = q.replace(/^(theo\s+)?(quan điểm|học thuyết|cách hiểu|nghĩa|góc độ|chủ nghĩa)\s+(của\s+)?/iu, '').trim();
+    if (core && core !== q) out.push(core);
+  }
+  return out;
+}
+
 const escapeRe = (s: string): string => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
 /** Che mọi lần xuất hiện của các chuỗi `terms` (không phân biệt hoa thường, đúng ranh giới từ). */
