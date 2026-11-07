@@ -8,7 +8,7 @@
  "example": "Việt Nam: chính thể cộng hòa (Quốc hội do dân bầu, nhiệm kỳ 5 năm), cấu trúc đơn nhất, chế độ chính trị dân chủ xã hội chủ nghĩa.",
  "source": {
   "kind": "textbook",
-  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
  },
  "checked": "2026-11-01",
  "confusables": [
@@ -72,7 +72,7 @@
     "Trung ương, địa phương và các đơn vị hành chính cơ sở"
    ],
    "answer": 0,
-   "explain": "Bài 6 (quan điểm 3 yếu tố).",
+   "explain": "Tài liệu hướng dẫn môn học, Bài 6 (quan điểm 3 yếu tố).",
    "why": [
     "Đúng: theo quan điểm ba yếu tố, hình thức nhà nước gồm chính thể, cấu trúc, chế độ chính trị.",
     "Sai: lập pháp, hành pháp, tư pháp là quyền lực, không phải yếu tố hình thức.",
@@ -91,7 +91,7 @@
     "Hệ thống các đảng phái chính trị hoạt động hợp pháp trên lãnh thổ quốc gia"
    ],
    "answer": 0,
-   "explain": "Bài 6.",
+   "explain": "Tài liệu hướng dẫn môn học, Bài 6.",
    "why": [
     "Đúng: chế độ chính trị là toàn bộ phương pháp, cách thức thực hiện quyền lực nhà nước.",
     "Sai: cách tổ chức cơ quan quyền lực cao nhất là chính thể.",
@@ -124,7 +124,7 @@
      "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), Bài 6"
     }
    ],
-   "explain": "Bài 6."
+   "explain": "Tài liệu hướng dẫn môn học, Bài 6."
   },
   {
    "type": "cloze",
@@ -167,10 +167,10 @@
    "level": 4,
    "statement": "Hình thức nhà nước là cách thức tổ chức quyền lực nhà nước và những phương pháp để thực hiện quyền lực nhà nước, gồm ba yếu tố: hình thức chính thể, hình thức cấu trúc nhà nước và chế độ chính trị.",
    "answer": true,
-   "explain": "Đúng. Trích định nghĩa của khái niệm — nguồn: Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình.",
+   "explain": "Đúng. Trích định nghĩa của khái niệm — nguồn: Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình.",
    "source": {
     "kind": "textbook",
-    "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+    "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
    }
   }
  ]

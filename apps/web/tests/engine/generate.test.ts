@@ -65,6 +65,15 @@ describe('genDefTerm', () => {
     expect(it.q).toContain(MASK);
     expect(leaks(it.q, a.term)).toBe(false);
   });
+  it('che cả phần ngoặc của tên (vd. "quan điểm Mác – Lênin") để định nghĩa không lộ đáp án', () => {
+    const a = C('a', {
+      term: 'Nguồn gốc của nhà nước (quan điểm Mác – Lênin)',
+      definition: 'Theo chủ nghĩa Mác – Lênin, nhà nước không phải hiện tượng vĩnh cửu; nhà nước chỉ xuất hiện khi xã hội có chế độ tư hữu và phân hóa thành các giai cấp đối kháng.',
+    });
+    const it = genDefTerm(a, candidates(a, [a, C('b'), C('c'), C('d')]), rng)!;
+    expect(it.q).not.toMatch(/Mác/);
+    expect(it.options[it.answer]).toBe(a.term);
+  });
   it('thiếu phương án (< 2 nhiễu) → null', () => {
     const a = C('a');
     expect(genDefTerm(a, candidates(a, [a, C('b')]), rng)).toBeNull();

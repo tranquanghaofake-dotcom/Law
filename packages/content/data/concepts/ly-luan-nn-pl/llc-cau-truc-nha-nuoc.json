@@ -8,7 +8,7 @@
  "example": "Bang California có hiến pháp và luật riêng bên cạnh Hiến pháp Hoa Kỳ: cấu trúc liên bang. Tỉnh Nghệ An không có hiến pháp riêng: cấu trúc đơn nhất.",
  "source": {
   "kind": "textbook",
-  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
  },
  "checked": "2026-11-01",
  "confusables": [
@@ -67,7 +67,7 @@
     "Hai hệ thống pháp luật song song tồn tại, mỗi bên áp dụng luật và tòa án riêng"
    ],
    "answer": 0,
-   "explain": "Bài 6.",
+   "explain": "Tài liệu hướng dẫn môn học, Bài 6.",
    "why": [
     "Đúng: nhà nước đơn nhất có một chủ quyền chung; đơn vị hành chính – lãnh thổ không có chủ quyền riêng.",
     "Sai: nhiều chủ quyền, hiến pháp riêng là đặc điểm nhà nước liên bang.",
@@ -119,7 +119,7 @@
      "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), Bài 6"
     }
    ],
-   "explain": "Bài 6."
+   "explain": "Tài liệu hướng dẫn môn học, Bài 6."
   },
   {
    "type": "cloze",
@@ -163,10 +163,10 @@
    "level": 4,
    "statement": "Hình thức cấu trúc nhà nước là sự tổ chức nhà nước thành các đơn vị hành chính lãnh thổ và tính chất quan hệ giữa các bộ phận cấu thành nhà nước với nhau, giữa các cơ quan nhà nước ở trung ương và ở địa phương.",
    "answer": true,
-   "explain": "Đúng. Trích định nghĩa của khái niệm — nguồn: Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình.",
+   "explain": "Đúng. Trích định nghĩa của khái niệm — nguồn: Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình.",
    "source": {
     "kind": "textbook",
-    "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+    "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
    }
   }
  ]

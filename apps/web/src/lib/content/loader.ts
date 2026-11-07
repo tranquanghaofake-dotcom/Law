@@ -71,3 +71,11 @@ export const loadSubjectConcepts = (subjectId: string): Promise<Concept[]> =>
 /** Bảng tên khái niệm của môn (dist/terms): 1 file thay cho từng `loadConcepts` chỉ để lấy `term`. */
 export const loadTerms = (subjectId: string): Promise<Record<string, string>> =>
   once(`terms:${subjectId}`, () => getJson<Record<string, string>>(`terms/${encodeURIComponent(subjectId)}.json`));
+
+/** Bảng tên của mọi môn (tìm khái niệm liên môn). Môn nào lỗi tải thì để trống, không làm hỏng cả bảng. */
+export const loadTermIndex = (): Promise<{ id: string; short: string; terms: Record<string, string> }[]> =>
+  once('terms:all', async () => {
+    const ix = await loadIndex();
+    const all = await Promise.allSettled(ix.subjects.map((s) => loadTerms(s.id)));
+    return ix.subjects.map((s, i) => { const r = all[i]; return { id: s.id, short: s.short, terms: r.status === 'fulfilled' ? r.value : {} }; });
+  });

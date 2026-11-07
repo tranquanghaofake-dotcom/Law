@@ -42,12 +42,16 @@
   import { edgeGlow, fireStyle, glowLevel } from '$lib/ui/session/combo';
   import ComboStamp from '$lib/ui/session/ComboStamp.svelte';
   import { stampFor, TIMING, type Stamp } from '$lib/ui/session/reward';
+  import { bossBadge } from '$lib/ui/session/badge';
+  import { lessonGate } from '$lib/ui/lessonState';
 
-  let { steps, concepts, levels, upDays = {}, lessonId, onagain, onnext, title }: {
+  let { steps, concepts, levels, upDays = {}, lessonId, lessonConcepts, onagain, onnext, title }: {
     steps: Step[]; concepts: Concept[]; levels: Record<string, Level>;
     /** Ngày lên bậc gần nhất theo khái niệm (luật giãn cách bậc ≥ 4, cùng luật với repo.record). */
     upDays?: Record<string, string>;
     lessonId?: string; onagain?: () => void; onnext?: () => void; title?: string;
+    /** Khái niệm của đợt (phiên học đợt): để màn kết thúc biết đợt sau đã mở chưa. */
+    lessonConcepts?: string[];
   } = $props();
 
   // svelte-ignore state_referenced_locally
@@ -90,6 +94,7 @@
   const golden = $derived(!!step?.meta?.golden && step.item.type !== 'intro');
   const retry = $derived(step?.meta?.kind === 'retry');
   const pretest = $derived(step?.meta?.kind === 'pretest');
+  const bossText = $derived(bossBadge(!!lessonId, run.steps.slice(0, run.retryStart ?? run.steps.length).filter((s) => s.item.type !== 'intro').length));
   // câu đoán khái niệm từ định nghĩa/ví dụ: không tô khái niệm đang hỏi (lộ đáp án)
   const hideCurrent = $derived(step?.meta?.gen === 'def-term' || step?.meta?.gen === 'example-concept');
 
@@ -258,7 +263,7 @@
 <div class="session-main">
   <h1 class="sr-only">{title ?? 'Phiên học'}</h1>
   {#if ended}
-    <SessionEnd summary={summary(run)} {sources} {record} retryTotal={summary(run).retried} {concepts} streak={ended.streak} streakEvent={ended.streakEvent} rankBefore={ended.rankBefore} rankAfter={ended.rankAfter} dueTomorrow={ended.dueTomorrow} promotion={ended.promotion} onhome={() => go('home')} {onagain} {onnext} mistakes={mistakes(run)} />
+    <SessionEnd summary={summary(run)} {sources} {record} retryTotal={summary(run).retried} {concepts} streak={ended.streak} streakEvent={ended.streakEvent} rankBefore={ended.rankBefore} rankAfter={ended.rankAfter} dueTomorrow={ended.dueTomorrow} promotion={ended.promotion} onhome={() => go('home')} {onagain} {onnext} gate={lessonConcepts ? lessonGate(lessonConcepts, run.levels) : null} mistakes={mistakes(run)} />
   {:else if step && Card}
     <SessionBar done={barDone} total={barTotal} {title} combo={run.combo} xp={shownXp} {marks} {inRetry} onexit={openConfirm} />
     {#if lessonId}<LessonStrip {concepts} levels={run.levels} current={hideCurrent ? '' : (step?.conceptId ?? '')} />{/if}
@@ -272,10 +277,10 @@
         <div class="row"><button class="btn" type="button" onclick={exit}>Thoát</button><button class="btn ghost" type="button" onclick={closeConfirm} use:focusOnMount>Ở lại</button></div>
       </div>
     {/if}
-      <div class="step-wrap" class:golden class:retry class:boss={step.meta?.kind === 'boss'}>
+      <div class="step-wrap" class:golden class:retry class:boss={step.meta?.kind === 'boss' && !!bossText}>
         {#if golden}<p class="step-badge gold"><Glyph name="star-fill" size={14} /> Câu vàng · đúng được ×2 XP</p>
         {:else if retry}<p class="step-badge retry">Sửa sai · không ghi vào tiến độ nhớ</p>
-        {:else if step.meta?.kind === 'boss'}<p class="step-badge boss">Câu chốt · tổng hợp đợt vừa học</p>{/if}
+        {:else if step.meta?.kind === 'boss' && bossText}<p class="step-badge boss">{bossText}</p>{/if}
         {#if pretest}<PretestBar answered={!!result} onskip={skipPretest} />{/if}
         {#key run.i}
           <div class="step-in"><Card {concept} item={step.item} meta={step.meta} {rng} {onanswer} {onshown} onspeak={speak} mode={clozeMode} /></div>

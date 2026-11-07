@@ -11,7 +11,7 @@ import { coverStyle } from '$lib/ui/shelves';
  * - `st-moi`: sách luật NXB Sự thật bản mới — khối trên đỏ, nhãn kem bo góc có hoa văn cuộn vàng, thân màu riêng.
  * - `st-cu`: sách luật NXB Sự thật bản cũ — khối trên vàng nhạt, ruy băng cam-đỏ mép gấp đè ranh giới, thân màu riêng.
  * - `hien-phap`: Hiến pháp — cả bìa đỏ rượu, không nhãn, chữ vàng kim.
- * - `giao-trinh-hlu`: giáo trình ĐH Luật Hà Nội — khối trên nhạt ghi tên trường, dải "GIÁO TRÌNH" (đoạn vàng + đoạn màu), thân màu.
+ * - `giao-trinh-hlu`: khuôn theo giáo trình ĐH Luật Hà Nội — khối trên nhạt ghi "LUYỆN LUẬT · TÀI LIỆU HỌC" (không ghi tên trường thật), dải "GIÁO TRÌNH" (đoạn vàng + đoạn màu), thân màu.
  * - `giao-trinh-ulaw`: giáo trình ĐH Luật TP.HCM — cả bìa xanh than, tên trường ở đầu, khung màu chứa tên sách.
  */
 export type CoverKind = 'st-moi' | 'st-cu' | 'hien-phap' | 'giao-trinh-hlu' | 'giao-trinh-ulaw';

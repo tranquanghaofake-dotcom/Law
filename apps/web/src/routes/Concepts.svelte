@@ -5,12 +5,12 @@
   import { PAGE_ART } from '$lib/art/registry';
   // Danh mục khái niệm của một môn: đọc nhanh định nghĩa, căn cứ, khái niệm dễ nhầm; tìm không dấu; ★ đánh dấu.
   import type { Concept, Level, Subject } from '$lib/content/types';
-  import { loadConceptPool, loadSubject, loadSubjectConcepts } from '$lib/content/loader';
+  import { loadConceptPool, loadSubject, loadSubjectConcepts, loadTermIndex } from '$lib/content/loader';
   import { repo } from '$lib/store/progress-repo';
   import { stars } from '$lib/store/stars.svelte';
   import { hashFor, route } from '$lib/router.svelte';
-  import { LEVEL_NAMES } from '$lib/game/levels';
-  import { matchConcept } from '$lib/ui/conceptSearch';
+  import { levelName } from '$lib/game/levels';
+  import { matchConcept, searchOtherSubjects, type TermHit } from '$lib/ui/conceptSearch';
   import CompareTable from '$lib/ui/CompareTable.svelte';
   import { compareConcepts } from '$lib/engine/compare';
   import { tick } from 'svelte';
@@ -20,6 +20,8 @@
   let subject = $state<Subject | null>(null);
   let byId = $state<Record<string, Concept>>({});
   let levels = $state<Record<string, Level>>({});
+  /** Khái niệm đã có lượt trả lời (kể cả còn bậc 0 vì trả lời sai). */
+  let seen = $state<Set<string>>(new Set());
   let error = $state('');
   let query = $state('');
   let onlyStarred = $state(false);
@@ -33,6 +35,15 @@
       concepts: l.concepts.map((id) => byId[id]).filter((c): c is Concept => !!c)
         .filter((c) => matchConcept(c, query) && (!onlyStarred || stars.has(c.id))),
     }))).filter((g) => g.concepts.length);
+  });
+  // Tìm cả ở môn khác (theo tên): người học có thuật ngữ nhưng không biết thuộc môn nào. Tải bảng tên khi bắt đầu gõ.
+  let others = $state<TermHit[]>([]);
+  $effect(() => {
+    const q = query; const sid = subject?.id;
+    if (!sid || q.trim().length < 2) { others = []; return; }
+    let alive = true;
+    loadTermIndex().then((ix) => { if (alive && q === query) others = searchOtherSubjects(q, ix, sid); }).catch(() => { if (alive) others = []; });
+    return () => { alive = false; };
   });
   const shown = $derived(groups.reduce((n, g) => n + g.concepts.length, 0));
   const total = $derived(Object.keys(byId).length);
@@ -51,6 +62,8 @@
       for (const c of all) if (wanted.has(c.id)) m[c.id] = c; // giữ như cũ: chỉ khái niệm có trong đợt học
       byId = m;
       levels = await repo.levels(ids);
+      // phụ: lỗi đọc lượt trả lời không làm hỏng trang (chỉ mất nhãn "Đã gặp")
+      try { seen = new Set((await repo.all(s.id)).map((p) => p.conceptId)); } catch { seen = new Set(); }
       await stars.load();
       subject = s;
       document.title = `${(route.params.concept && byId[route.params.concept]?.term) || 'Khái niệm'} · ${s.title} · Luyện Luật`;
@@ -83,7 +96,7 @@
   <header class="page-head">
     <SubjectArt name={PAGE_ART.concepts} class="head-art" />
     <h1>Khái niệm {subject.short}</h1>
-    <p class="muted">{total} khái niệm. Bấm vào tên để xem định nghĩa nguyên văn, căn cứ và khái niệm dễ nhầm.</p>
+    <p class="muted">{total} khái niệm. Bấm vào tên để xem định nghĩa, nguồn và khái niệm dễ nhầm.</p>
     <LegalNote compact />
   </header>
 
@@ -110,9 +123,9 @@
         <li class="concept-entry" class:open={isOpen} id="c-{c.id}">
           <div class="entry-head">
             <h3 class="entry-h"><button type="button" class="entry-toggle" aria-expanded={isOpen} aria-controls="body-{c.id}" onclick={() => toggle(c.id)}>
-              <span class="cell cell-n lv{lv}" title="Bậc {lv} · {LEVEL_NAMES[lv]}" aria-hidden="true">{lv}</span>
+              <span class="cell cell-n lv{lv}" class:seen={lv === 0 && seen.has(c.id)} title="Bậc {lv} · {levelName(lv, seen.has(c.id))}" aria-hidden="true">{lv}</span>
               <span class="entry-term">{c.term}</span>
-              <span class="sr-only">, bậc {lv} {LEVEL_NAMES[lv]}</span>
+              <span class="sr-only">, bậc {lv} {levelName(lv, seen.has(c.id))}</span>
               <span class="chev" aria-hidden="true"><Glyph name={isOpen ? 'chevron-down' : 'chevron-right'} size={16} /></span>
             </button></h3>
             <button type="button" class="star" aria-pressed={stars.has(c.id)} aria-label="Đánh dấu {c.term}" title={stars.has(c.id) ? 'Bỏ đánh dấu' : 'Đánh dấu'} onclick={() => stars.toggle(c.id)}><Glyph name={stars.has(c.id) ? 'star-fill' : 'star'} size={20} /></button>
@@ -139,4 +152,13 @@
       {/each}
     </ul>
   {/each}
+
+  {#if others.length}
+    <section class="other-subjects" aria-labelledby="other-h">
+      <h2 id="other-h" class="concept-group">Có ở môn khác</h2>
+      <ul class="other-list">
+        {#each others as o (o.subject + '/' + o.id)}<li><a href={hashFor('concepts', { subject: o.subject, concept: o.id })}>{o.term}</a> <span class="muted small">· {o.short}</span></li>{/each}
+      </ul>
+    </section>
+  {/if}
 {/if}

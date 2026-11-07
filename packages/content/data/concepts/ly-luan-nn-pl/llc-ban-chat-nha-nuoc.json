@@ -8,7 +8,7 @@
  "example": "Nhà nước xây đê chống lũ (tính xã hội) đồng thời ban hành luật bảo vệ chế độ sở hữu của giai cấp cầm quyền (tính giai cấp).",
  "source": {
   "kind": "textbook",
-  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
  },
  "checked": "2026-11-01",
  "confusables": [
@@ -67,7 +67,7 @@
     "Tính kinh tế và tính văn hóa"
    ],
    "answer": 0,
-   "explain": "Bài 2: tính giai cấp và tính xã hội.",
+   "explain": "Tài liệu hướng dẫn môn học, Bài 2: tính giai cấp và tính xã hội.",
    "why": [
     "Đúng: theo giáo trình, bản chất nhà nước thể hiện ở tính giai cấp và tính xã hội.",
     "Sai: tính dân tộc, quốc tế không phải hai phương diện bản chất.",
@@ -119,7 +119,7 @@
      "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), Bài 2"
     }
    ],
-   "explain": "Bài 2."
+   "explain": "Tài liệu hướng dẫn môn học, Bài 2."
   },
   {
    "type": "cloze",

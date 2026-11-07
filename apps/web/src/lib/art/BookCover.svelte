@@ -51,7 +51,8 @@
   const tagW = $derived(Math.min(80, c.label.length * 7.4 + 20));
   /** Hoa văn cuộn (bản mới), gốc ở mép nhãn, hướng ra ngoài bên trái; bên phải lật gương. */
   const FLOURISH = 'M0 -1.2C-2.6-3.4-6.2-3.6-8.4-1.6C-10.2 0-9.2 2.4-7.2 1.9C-5.8 1.5-6 -.2-7.3-.1M-8.4-1.6C-10.4-3.6-12.6-3.2-13.6-1.4M-2.8-2.4C-3.4-4.8-1.6-5.8-.4-5M-4.6-3C-4.2-5.4-6-6.2-7-5.2';
-  const SCHOOL_HLU = 'TRƯỜNG ĐẠI HỌC LUẬT HÀ NỘI';
+  // Không ghi tên trường thật trên bìa giả lập (tránh hiểu nhầm là ấn phẩm của trường — README: không logo/tên NXB thật).
+  const COVER_HEAD = 'LUYỆN LUẬT · TÀI LIỆU HỌC';
 </script>
 
 <svg class="book-cover {state} {cls}" data-kind={c.kind} viewBox="0 0 120 160" width={w} height={w * 4 / 3} aria-hidden="true" focusable="false">
@@ -86,11 +87,11 @@
     </g>
     <text x={CX} y="11.5" text-anchor="middle" font-size="6.5" font-weight="800" letter-spacing="1.4" fill={GOLD} font-family={FONT}>LUYỆN LUẬT</text>
   {:else if c.kind === 'giao-trinh-hlu'}
-    <text x={CX} y="15" text-anchor="middle" font-size="5.6" font-weight="700" fill={p.topText} font-family={FONT}>{SCHOOL_HLU}</text>
+    <text x={CX} y="15" text-anchor="middle" font-size="5.6" font-weight="700" fill={p.topText} font-family={FONT}>{COVER_HEAD}</text>
     <path d="M30 19.5h65" stroke={p.topText} stroke-width=".4" opacity=".45" />
   {:else if c.kind === 'giao-trinh-ulaw'}
-    <text x={CX} y="14.5" text-anchor="middle" font-size="5.8" font-weight="700" fill={p.topText} font-family={FONT}>TRƯỜNG ĐẠI HỌC LUẬT</text>
-    <text x={CX} y="22" text-anchor="middle" font-size="5.8" font-weight="700" fill={p.topText} font-family={FONT}>TP. HỒ CHÍ MINH</text>
+    <text x={CX} y="14.5" text-anchor="middle" font-size="5.8" font-weight="700" fill={p.topText} font-family={FONT}>LUYỆN LUẬT</text>
+    <text x={CX} y="22" text-anchor="middle" font-size="5.8" font-weight="700" fill={p.topText} font-family={FONT}>TÀI LIỆU HỌC</text>
     <path d="M2 {split}h114" stroke="#fff" stroke-width=".5" opacity=".35" />
     <text x={CX} y="48" text-anchor="middle" font-size="7.5" font-weight="600" letter-spacing="2.4" fill={p.title} font-family={FONT}>{c.label}</text>
     <rect x="14" y="56" width="97" height="46" rx="1" fill={p.label} stroke="#fff" stroke-opacity=".3" stroke-width=".6" />

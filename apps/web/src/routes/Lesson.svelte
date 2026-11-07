@@ -46,6 +46,6 @@
   <Loading />
 {:else}
   {#key gen}
-    <SessionView steps={data.steps} concepts={data.concepts} levels={data.levels} upDays={data.upDays} lessonId={data.lessonId} title={data.title} onagain={() => (gen += 1)} onnext={data.next ? () => go('lesson', { subject: data!.subject, lesson: data!.next! }) : undefined} />
+    <SessionView steps={data.steps} concepts={data.concepts} levels={data.levels} upDays={data.upDays} lessonId={data.lessonId} lessonConcepts={data.concepts.map((c) => c.id)} title={data.title} onagain={() => (gen += 1)} onnext={data.next ? () => go('lesson', { subject: data!.subject, lesson: data!.next! }) : undefined} />
   {/key}
 {/if}
