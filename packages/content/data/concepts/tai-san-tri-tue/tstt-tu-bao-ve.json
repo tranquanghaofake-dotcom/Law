@@ -173,7 +173,7 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Thư khuyến cáo là thủ tục bắt buộc trước khi khởi kiện xâm phạm quyền SHTT.",
+   "statement": "Chủ thể quyền SHTT phải gửi thư khuyến cáo cho bên xâm phạm trước khi khởi kiện ra Tòa án.",
    "answer": false,
    "explain": "Sai. Điều 198 liệt kê các biện pháp chủ thể quyền \"có quyền\" áp dụng; không quy định phải khuyến cáo trước khi khởi kiện. Thư khuyến cáo là lựa chọn thực tiễn."
   },

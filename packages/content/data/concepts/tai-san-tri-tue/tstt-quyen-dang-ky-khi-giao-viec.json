@@ -159,9 +159,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Người lao động tạo ra sáng chế trong khi thực hiện công việc được giao luôn là chủ sở hữu sáng chế đó.",
+   "statement": "Tổ chức giao việc, đầu tư kinh phí cho tác giả không có quyền đăng ký sáng chế, kể cả khi hai bên không có thỏa thuận khác.",
    "answer": false,
-   "explain": "Sai. Quyền đăng ký thuộc tổ chức giao việc, đầu tư kinh phí (điểm b khoản 1 Điều 86), trừ thỏa thuận khác; người lao động là tác giả."
+   "explain": "Sai. Điểm b khoản 1 Điều 86: tổ chức đầu tư kinh phí, phương tiện vật chất cho tác giả dưới hình thức giao việc có quyền đăng ký, trừ trường hợp các bên có thỏa thuận khác."
   },
   {
    "type": "recall",
