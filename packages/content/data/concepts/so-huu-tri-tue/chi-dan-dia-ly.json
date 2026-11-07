@@ -165,9 +165,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi sản phẩm có nguồn gốc từ một tỉnh đều được bảo hộ chỉ dẫn địa lý mang tên tỉnh đó.",
+   "statement": "Sản phẩm mang tên địa danh được bảo hộ ở Việt Nam dù danh tiếng, chất lượng không do điều kiện địa lý của địa phương đó quyết định.",
    "answer": false,
-   "explain": "Sai. Còn cần danh tiếng, chất lượng, đặc tính chủ yếu do điều kiện địa lý quyết định (điểm b khoản 1 Điều 79)."
+   "explain": "Sai. Ngoài nguồn gốc địa lý, còn cần danh tiếng, chất lượng hoặc đặc tính chủ yếu do điều kiện địa lý quyết định (điểm b khoản 1 Điều 79)."
   },
   {
    "type": "recall",

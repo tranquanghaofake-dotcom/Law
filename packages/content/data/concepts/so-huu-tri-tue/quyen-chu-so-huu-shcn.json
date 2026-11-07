@@ -153,9 +153,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Chủ sở hữu nhãn hiệu có quyền cấm mọi hành vi sử dụng liên quan đến nhãn hiệu, không có giới hạn.",
+   "statement": "Chủ sở hữu nhãn hiệu có quyền cấm người khác sử dụng trung thực dấu hiệu mô tả nguồn gốc địa lý của hàng hóa.",
    "answer": false,
-   "explain": "Sai. Khoản 2 Điều 125 quy định các trường hợp chủ sở hữu không có quyền cấm."
+   "explain": "Sai. Điểm h khoản 2 Điều 125: chủ sở hữu không có quyền cấm việc sử dụng trung thực tên người, dấu hiệu mô tả chủng loại, chất lượng, nguồn gốc địa lý… của hàng hóa, dịch vụ."
   },
   {
    "type": "recall",

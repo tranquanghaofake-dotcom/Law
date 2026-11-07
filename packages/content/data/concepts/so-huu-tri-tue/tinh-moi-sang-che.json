@@ -158,9 +158,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Tính mới của sáng chế chỉ xét trong phạm vi lãnh thổ Việt Nam.",
+   "statement": "Sáng chế đã bị bộc lộ công khai ở nước ngoài trước ngày nộp đơn vẫn được coi là có tính mới tại Việt Nam.",
    "answer": false,
-   "explain": "Sai. Điểm a khoản 1 Điều 60: \"ở trong nước hoặc ở nước ngoài\"."
+   "explain": "Sai. Điểm a khoản 1 Điều 60: bộc lộ công khai \"ở trong nước hoặc ở nước ngoài\" trước ngày nộp đơn thì mất tính mới."
   },
   {
    "type": "recall",
