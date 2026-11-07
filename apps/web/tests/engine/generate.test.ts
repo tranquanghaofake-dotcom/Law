@@ -53,6 +53,35 @@ describe('pickDistractors', () => {
   });
 });
 
+describe('pickDistractors: nhiễu cùng dạng với đáp án (không lộ vì hình thức)', () => {
+  const c = (id: string, term: string, tier: 1 | 2 | 3 | 4 = 2) => ({ id, term, tier });
+  it('bỏ nhiễu dài gấp nhiều lần đáp án khi còn đủ nhiễu vừa dạng, kể cả ở tầng thấp hơn', () => {
+    const cands = [
+      c('a', 'Người thừa kế không phụ thuộc vào nội dung di chúc', 1),
+      c('b', 'Chiếm hữu', 2), c('c', 'Đại diện', 3), c('d', 'Thời hiệu', 3),
+    ];
+    const got = pickDistractors(cands, 3, mulberry32(1), 'Quyền sở hữu'.length, (x) => x.term).map((x) => x.cand.id).sort();
+    expect(got).toEqual(['b', 'c', 'd']);
+  });
+  it('thiếu nhiễu vừa dạng thì vẫn bù bằng nhiễu lệch dạng (không bỏ câu)', () => {
+    const cands = [c('a', 'Người thừa kế không phụ thuộc vào nội dung di chúc', 1), c('b', 'Chiếm hữu', 2)];
+    expect(pickDistractors(cands, 2, mulberry32(1), 12, (x) => x.term)).toHaveLength(2);
+  });
+});
+
+describe('genDefTerm: đề bài không che dày đặc', () => {
+  it('định nghĩa nhắc thuật ngữ ≥ 3 lần thì dùng đoạn đầu (ít chỗ che hơn) nếu đủ thông tin', () => {
+    const def = 'Đại diện là việc cá nhân, pháp nhân nhân danh và vì lợi ích của người được đại diện xác lập giao dịch dân sự với bên thứ ba. Người đại diện chỉ được hành động trong phạm vi đại diện. Giao dịch vượt phạm vi đại diện không làm phát sinh nghĩa vụ.';
+    const c = C('a', { term: 'Đại diện', definition: def });
+    const q = genDefTerm(c, ['b', 'c', 'd'].map((id) => ({ id, term: `Chế định ${id}`, tier: 2 as const, concept: C(id) })), mulberry32(3))!;
+    expect(q).not.toBeNull();
+    const stem = q.q.split('\n')[0];
+    expect((stem.match(/\[…\]/g) ?? []).length).toBeLessThanOrEqual(2);
+    expect(stem).toContain('xác lập giao dịch dân sự với bên thứ ba');
+    expect(stem).not.toContain('Giao dịch vượt phạm vi');
+  });
+});
+
 describe('genDefTerm', () => {
   it('che thuật ngữ trong định nghĩa, đáp án đúng nằm trong 4 phương án khác nhau', () => {
     const a = C('a', { confusables: ['b'] });

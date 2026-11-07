@@ -2,7 +2,7 @@ import type { Concept, Item, Level } from '$lib/content/types';
 import { interleave, nearConfusables, typeKey } from './arrange';
 import { candidates, clozeExtras, genDefTerm, genExampleConcept, genMatch, genSort, genTermDef, type Cand, type GenContext } from './generate';
 import type { Step, StepGen, StepItem, StepMeta } from './step';
-import { hasAbsoluteWord, leaks } from './text';
+import { coverage, hasAbsoluteWord, leaks } from './text';
 import { normalize } from './grading';
 import { REVIEW_MAX_STEPS } from './limits';
 
@@ -99,6 +99,8 @@ type Option = { family: string; gen?: StepGen; item: StepItem; key: string };
 const familyOf = (o: { gen?: StepGen; item: StepItem }) => (o.gen === 'def-tf' || o.item.type === 'truefalse' ? 'tf' : o.gen ?? o.item.type);
 // Đúng/Sai có 50 % đoán mò → ưu tiên thấp hơn các dạng khác cùng bậc.
 const FAMILY_BIAS: Record<string, number> = { tf: 0.5 };
+/** Câu Đúng có ≥ 80 % cặp tiếng nằm trong định nghĩa = chép định nghĩa (đo: 234/965 câu Đúng/Sai). */
+const COPY_COVERAGE = 0.8;
 
 class Picker {
   private known: Concept[];
@@ -159,6 +161,10 @@ class Picker {
     // câu Sai có từ tuyệt đối ("mọi/chỉ/luôn…") là mẹo đoán: bỏ nếu khái niệm còn dạng khác ở bậc này
     const isTell = (o: Option) => o.item.type === 'truefalse' && !o.item.answer && hasAbsoluteWord(o.item.statement);
     if (out.some((o) => !isTell(o))) { for (let i = out.length - 1; i >= 0; i--) if (isTell(out[i])) out.splice(i, 1); }
+    // câu Đúng chép nguyên định nghĩa chỉ kiểm nhận mặt chữ, không kiểm hiểu: bỏ nếu khái niệm còn dạng khác ở bậc này
+    const isCopy = (o: Option) => o.item.type === 'truefalse' && o.item.answer && coverage(o.item.statement, c.definition) >= COPY_COVERAGE;
+    // (chỉ khi có thay thế loại Đúng hoặc dạng khác: bỏ mà chỉ còn câu Sai thì phiên lệch về Sai, người học đoán "Sai" cũng trúng)
+    if (out.some((o) => !isCopy(o) && (o.item.type !== 'truefalse' || o.item.answer))) { for (let i = out.length - 1; i >= 0; i--) if (isCopy(out[i])) out.splice(i, 1); }
     const done = this.usedKeys.get(c.id);
     const fresh = done ? out.filter((o) => !done.has(o.key)) : out;
     return fresh.length ? fresh : out;

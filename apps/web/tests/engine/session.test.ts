@@ -182,6 +182,26 @@ describe('finalize', () => {
   });
 });
 
+describe('Đúng/Sai chép nguyên định nghĩa chỉ kiểm nhận mặt chữ: bỏ khi còn dạng khác ở bậc 4', () => {
+  const copy = (c: Concept) => ({ type: 'truefalse' as const, level: 4 as const, statement: c.definition, answer: true, explain: 'e' });
+  it('có câu tình huống/Đúng-Sai khác → không chọn câu chép định nghĩa', () => {
+    for (let seed = 1; seed <= 30; seed++) {
+      const base = concept('a', 0);
+      const c = { ...base, items: [...base.items, copy(base)] };
+      const steps = buildReviewSession([c], { a: 4 }, mulberry32(seed));
+      const it = steps[0].item;
+      expect(it.type === 'truefalse' && it.statement === c.definition).toBe(false);
+    }
+  });
+  it('khái niệm chỉ có câu chép định nghĩa ở bậc 4 → vẫn dùng (không bỏ khái niệm)', () => {
+    const base = concept('a', 0);
+    const c = { ...base, items: [...base.items.filter((i) => i.level !== 4), copy(base)] };
+    const steps = buildReviewSession([c], { a: 4 }, mulberry32(1));
+    expect(steps).toHaveLength(1);
+    expect(steps[0].item.type).toBe('truefalse');
+  });
+});
+
 // ---------- Dữ liệu thật: số liệu đợt 6 ----------
 const ROOT = resolve(process.cwd(), '../../packages/content/data');
 const all: Concept[] = readdirSync(`${ROOT}/concepts`).flatMap((s) => readdirSync(`${ROOT}/concepts/${s}`).map((f) => JSON.parse(readFileSync(`${ROOT}/concepts/${s}/${f}`, 'utf8')) as Concept));
