@@ -99,3 +99,18 @@ Nếu không trả lời: mặc định như đã ghi (1: `#/on` mọi môn; 2: 
 - Đổi thứ tự DOM có thể vỡ test kiểu `querySelector` theo vị trí → đã liệt kê test cần cập nhật ở mục 4.
 - Hai truy vấn thêm lúc kết thúc phiên (IndexedDB, cục bộ) — nhẹ; lỗi truy vấn phải rơi về `dueNow = 0`, `next = null`, không chặn màn kết thúc.
 - Nút chính đổi theo ngữ cảnh: phải có test cho mọi hàng bảng 2.3 để tránh nút chính sai hướng.
+
+## 7. Kết quả triển khai (07/11/2026)
+
+Đo trên phiên thật `#/hoc/hien-phap/hp-1` (tài khoản mới, chọn phương án đầu mỗi câu), trước = commit `213fcbe`, sau = bản này:
+
+| | 390 × 844 | 1280 × 800 |
+|---|---|---|
+| Vị trí nút chính (trước → sau) | y 947 → **464** (trước phải cuộn) | y 576 → **331** |
+| Chiều cao trang (trước → sau) | 2322 → 2335 px* | 1814 → 1745 px |
+
+\* Chiều cao trang gồm cả mục "Xem lại câu sai" nên dao động theo số câu sai mỗi lần chạy (3–4 câu); đại lượng đo mục tiêu là vị trí nút chính.
+
+- `npm run ci` xanh (788 test web). `e2e/a11y-keyboard.spec.ts`: axe và manifest xanh; test "Space đọc…" chập chờn ~1/16 lần (trên bản gốc `30bae2a` cũng chập chờn 1/24) — có sẵn từ trước, không do thay đổi này, chưa sửa.
+- Ghi nhận, chưa sửa: ô chỉ số "Sửa được" bị kéo rộng hết dòng ở 1280 px khi chỉ còn một chỉ số (lưới `auto-fit` có sẵn).
+- Quyết định 5.1–5.3 dùng mặc định.
