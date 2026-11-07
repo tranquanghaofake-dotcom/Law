@@ -149,7 +149,7 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Hạn chế tại Điều 117 chỉ áp dụng cho ngân hàng giám sát với tư cách pháp nhân, không áp dụng cho nhân viên.",
+   "statement": "Hạn chế tại Điều 117 áp dụng với ngân hàng giám sát với tư cách pháp nhân, không áp dụng với thành viên Hội đồng quản trị, người điều hành và nhân viên của ngân hàng giám sát.",
    "answer": false,
    "explain": "Sai. Điều 117 áp dụng cả thành viên Hội đồng quản trị, người điều hành và nhân viên làm nhiệm vụ giám sát, bảo quản tài sản."
   },
