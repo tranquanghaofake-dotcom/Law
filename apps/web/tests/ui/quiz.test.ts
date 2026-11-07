@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { estMinutes, nextAfter, orderIds, pickRandom, quizStats, quizStatus, shelfFor, shelfProgress, sortSets, suggestSets, ticketNo, verdictFor } from '$lib/ui/quiz';
+import { estMinutes, nextAfter, nextInGroup, studyLinks, orderIds, pickRandom, quizStats, quizStatus, shelfFor, shelfProgress, sortSets, suggestSets, ticketNo, verdictFor } from '$lib/ui/quiz';
+import type { TermIndex } from '$lib/ui/conceptSearch';
 
 // 5 đề: hai nhóm pldc, hai nhóm dan-su, một nhóm hinh-su (thứ tự kệ: pldc → dan-su → hinh-su theo GROUPS)
 const sets = [
@@ -167,5 +168,32 @@ describe('groupByShelf — heading mỗi kệ ở Luyện đề (Q-3)', () => {
   it('rỗng → []', async () => {
     const { groupByShelf } = await import('$lib/ui/quiz');
     expect(groupByShelf([])).toEqual([]);
+  });
+});
+
+describe('nextInGroup', () => {
+  it('ưu tiên đề kế tiếp cùng nhóm (vòng lại đầu nhóm), nhóm chỉ một đề → đề kế tiếp theo kệ', () => {
+    expect(nextInGroup(sets, 'd1')?.id).toBe('d2');
+    expect(nextInGroup(sets, 'd2')?.id).toBe('d1');
+    expect(nextInGroup(sets, 'h1')).toBeNull();
+    expect(nextInGroup([...sets, { id: 'x1', group: 'x', count: 1, title: 'X' }], 'h1')?.id).toBe('x1');
+  });
+});
+
+describe('studyLinks', () => {
+  const index: TermIndex = [
+    { id: 'dan-su', short: 'Dân sự 1', terms: { 'giao-dich': 'Giao dịch dân sự' } },
+    { id: 'dan-su-2', short: 'Dân sự 2', terms: { 'dat-coc': 'Đặt cọc', 'cam-co': 'Cầm cố tài sản' } },
+  ];
+  it('khái niệm gắn ở câu sai (môn = nhóm đề) đi trước, không trùng; tối đa 3', () => {
+    expect(studyLinks({ group: 'dan-su', title: 'Đề 1' }, ['giao-dich', 'giao-dich'], index)).toEqual([
+      { subject: 'dan-su', short: 'Dân sự 1', id: 'giao-dich', term: 'Giao dịch dân sự' },
+    ]);
+  });
+  it('câu không gắn khái niệm: tìm khái niệm trùng tên đề ở mọi môn (đề "Đặt cọc" nhóm dan-su → Dân sự 2)', () => {
+    expect(studyLinks({ group: 'dan-su', title: 'Đặt cọc' }, [], index)).toEqual([
+      { subject: 'dan-su-2', short: 'Dân sự 2', id: 'dat-coc', term: 'Đặt cọc' },
+    ]);
+    expect(studyLinks({ group: 'dan-su', title: 'Không có gì' }, [], index)).toEqual([]);
   });
 });

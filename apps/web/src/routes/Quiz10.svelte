@@ -2,7 +2,7 @@
   import Loading from '$lib/ui/Loading.svelte';
   import Glyph from '$lib/art/Glyph.svelte';
   import type { QuizSet, QuizQuestion } from '$lib/content/types';
-  import { loadIndex, loadSet } from '$lib/content/loader';
+  import { loadIndex, loadSet, loadTermIndex } from '$lib/content/loader';
   import { shuffle } from '$lib/engine/session';
   import { pickedWhy } from '$lib/engine/why';
   import { repo } from '$lib/store/progress-repo';
@@ -18,7 +18,8 @@
   import { hashFor, route } from '$lib/router.svelte';
   import { isInteractiveTarget, isTypingTarget, KEYS } from '$lib/ui/cards/types';
   import { GROUPS } from '$lib/ui/groups';
-  import { nextAfter, orderIds, quizConceptSubject, shelfFor, ticketNo, verdictFor } from '$lib/ui/quiz';
+  import { nextInGroup, orderIds, quizConceptSubject, shelfFor, studyLinks, ticketNo, verdictFor } from '$lib/ui/quiz';
+  import type { TermHit } from '$lib/ui/conceptSearch';
 
   type Q = QuizQuestion & { shuffled: string[]; answerIdx: number };
   let set = $state<QuizSet | null>(null);
@@ -33,6 +34,8 @@
   /** Mã các môn (để biết nhóm đề có phải mã môn không khi ghi tiến độ câu có `concept`). */
   let subjectIds: string[] = [];
   let finished = $state(false);
+  /** Khái niệm nên học lại (link ở màn kết quả), tải bảng tên khi xong đề. */
+  let study = $state<TermHit[]>([]);
   let error = $state('');
   let shareLabel = $state('Chia sẻ');
   // Thoát giữa bài: đã trả lời ≥ 1 câu thì hỏi trước (kết quả lần làm dở không được lưu)
@@ -78,6 +81,8 @@
     chosen = null;
     if (i + 1 < qs.length) { i += 1; await tick(); document.querySelector<HTMLElement>('.question-card .opt')?.focus({ preventScroll: true }); return; }
     finished = true;
+    study = [];
+    if (wrong.length) loadTermIndex().then((ix) => { study = studyLinks(set!, wrong.flatMap((w) => (w.q.concept ? [w.q.concept] : [])), ix); }).catch(() => { /* không có link học lại */ });
     window.scrollTo(0, 0); // màn kết quả bắt đầu từ vòng điểm, không giữ vị trí cuộn của câu cuối
     const b = await stats.best(set!.id);
     prevBest = b;
@@ -106,7 +111,7 @@
   const cls = (k: number) => chosen === null ? '' : k === q.answerIdx ? 'correct' : k === chosen ? 'wrong' : 'dim';
   const verdict = $derived(verdictFor(score, qs.length));
   const shelf = $derived(set ? shelfFor(set.group) : null);
-  const nextSet = $derived(set ? nextAfter(sets, set.id) : null);
+  const nextSet = $derived(set ? nextInGroup(sets, set.id) : null);
   const no = $derived(set ? ticketNo(orderIds(sets), set.id) : null);
   const R = 52, C = 2 * Math.PI * R; // vòng điểm (SVG)
   const record = $derived(prevBest == null ? 'Lần đầu làm đề này: điểm đã được ghi lại.' : score > prevBest ? `Kỷ lục mới: trước đó ${prevBest}/${qs.length}.` : score === prevBest ? `Bằng điểm cao nhất của bạn (${prevBest}/${qs.length}).` : `Điểm cao nhất của bạn vẫn là ${prevBest}/${qs.length}.`);
@@ -129,6 +134,7 @@
       <h1 id="qr-h" tabindex="-1" use:focusNext>{verdict.title}</h1>
       <p class="qr-set">{set.title}</p>
       <p class="msg">{verdict.msg}</p>
+      {#if study.length}<p class="qr-study">Học lại: {#each study as h, k (h.subject + '/' + h.id)}{k ? ' · ' : ''}<a href={hashFor('concepts', { subject: h.subject, concept: h.id })}>{h.term}</a> <span class="muted small">({h.short})</span>{/each}</p>{/if}
       <p class="qr-rec small muted">{record}</p>
       <ol class="qdots done" aria-label="Kết quả từng câu">
         {#each results as r, k (k)}<li class={r ? 'ok' : 'bad'}><span class="sr-only">Câu {k + 1} {r ? 'đúng' : 'sai'}</span></li>{/each}

@@ -1,6 +1,7 @@
 // Hàm thuần cho trang Luyện đề và màn kết quả: số liệu, gợi ý, ngẫu nhiên có seed, sắp xếp, nhận xét.
 import { groupSets, shelfOfGroup } from './groups';
 import { OTHER_SHELF, SHELVES, type Shelf } from './shelves';
+import { fold, type TermHit, type TermIndex } from './conceptSearch';
 
 type SetLike = { id: string; group: string; count: number };
 export type BestMap = Record<string, number | null | undefined>;
@@ -24,6 +25,32 @@ export function nextAfter<T extends { id: string; group: string }>(sets: readonl
   const i = order.indexOf(id);
   if (i < 0 || i + 1 >= order.length) return null;
   return sets.find((s) => s.id === order[i + 1]) ?? null;
+}
+
+/** "Đề tiếp theo": đề kế tiếp cùng nhóm môn (vòng lại đầu nhóm); nhóm chỉ có đề này → đề kế tiếp theo kệ. */
+export function nextInGroup<T extends { id: string; group: string }>(sets: readonly T[], id: string): T | null {
+  const cur = sets.find((s) => s.id === id);
+  if (!cur) return null;
+  const order = orderIds(sets).filter((x) => sets.find((s) => s.id === x)?.group === cur.group);
+  if (order.length > 1) {
+    const i = order.indexOf(id);
+    return sets.find((s) => s.id === order[(i + 1) % order.length]) ?? null;
+  }
+  return nextAfter(sets, id);
+}
+
+/**
+ * Khái niệm nên học lại sau khi làm đề (link ở màn kết quả): khái niệm gắn ở câu sai (môn = nhóm đề) trước,
+ * rồi khái niệm trùng tên đề ở bất kỳ môn nào (đề "Đặt cọc" nhóm dan-su nhưng khái niệm nằm ở Dân sự 2). Tối đa 3.
+ */
+export function studyLinks(set: { group: string; title: string }, wrongConcepts: readonly string[], index: TermIndex): TermHit[] {
+  const out: TermHit[] = [];
+  const add = (h: TermHit) => { if (out.length < 3 && !out.some((x) => x.subject === h.subject && x.id === h.id)) out.push(h); };
+  const own = index.find((s) => s.id === set.group);
+  if (own) for (const id of wrongConcepts) if (own.terms[id]) add({ subject: own.id, short: own.short, id, term: own.terms[id] });
+  const t = fold(set.title);
+  for (const s of index) for (const [id, term] of Object.entries(s.terms)) if (fold(term) === t) add({ subject: s.id, short: s.short, id, term });
+  return out;
 }
 
 /** Dải số liệu: đã làm / tổng, số đề đạt tối đa, điểm trung bình (%) trên các đề đã làm (null nếu chưa làm đề nào). */
