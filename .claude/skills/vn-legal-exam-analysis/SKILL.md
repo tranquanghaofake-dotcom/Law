@@ -13,11 +13,12 @@ description: MẶC ĐỊNH BẬT cho MỌI câu hỏi về pháp luật Việt N
 
 Kỹ năng này chạy cho **mọi** câu hỏi về pháp luật Việt Nam, không chỉ đề thi: câu ngắn, câu hỏi miệng, câu không nhắc tên luật, câu hỏi khái niệm ("X là gì"), nhận định ("đúng hay sai, vì sao"), so sánh, hỏi hiệu lực. Không cần người dùng gõ tên kỹ năng. Nạp kỹ năng xong thì **làm theo nó trong cùng lượt trả lời**: nạp mà vẫn trả lời từ trí nhớ là lỗi đã xảy ra và không được lặp lại.
 
-Ba quy tắc cứng cho mọi lượt, trước khi viết câu đầu tiên:
+Bốn quy tắc cứng cho mọi lượt, trước khi viết câu đầu tiên:
 
 1. **Tra trước, viết sau.** Nếu repo Luyện Luật có trong phiên (`packages/content/data/laws/*.txt`, tên file tra trong `packages/content/data/SOURCES.md`), `grep` đúng điều luật ở đó trước khi trích số điều, khoản; chưa tra được thì chạm Ngưỡng dừng, không viết "chưa gắn số điều" rồi vẫn kết luận. Kho Luyện Luật phủ cả Luật Chứng khoán (văn bản hợp nhất 102/VBHN-VPQH), Luật Doanh nghiệp và nhiều luật khác: lĩnh vực nằm trong kho thì **không** bị hạ nhãn ở trục "ngoài phạm vi reference", nhưng căn cứ lấy từ kho là mức B cho đến khi đối chiếu vbpl.vn.
 2. **Lĩnh vực chưa có nhóm bẫy riêng** (ví dụ chứng khoán, tài chính doanh nghiệp) vẫn rà `references/danh-muc-bay.md` Nhóm 1–5 và Nhóm 13; không bỏ bước rà bẫy chỉ vì không có nhóm riêng.
 3. **Khái niệm học thuật không có trong luật** (thị trường sơ cấp/thứ cấp, các cách phân loại của giáo trình) phải gắn nhãn "phân loại học thuật" và tách khỏi phần có điều luật; không bịa điều luật định nghĩa.
+4. **Đọc khung của giảng viên** trong `references/khung-giang-vien.md` trước khi trả lời nhận định hoặc so sánh thuộc môn đã có mục trong nhật ký, và dùng khung đó (điều nguyên tắc, khái niệm học thuật, tiêu chí chức năng) cùng với căn cứ luật. Căn cứ luật vẫn quyết định kết luận; khung giảng viên chỉ bổ sung cách lập luận.
 
 ## Ba chế độ làm việc — chọn chế độ trước khi chọn phương pháp
 
@@ -48,6 +49,7 @@ Hệ quả: một số khoản đoán ra không phải căn cứ yếu, nó là 
 - `references/thuong-mai-quoc-te.md` — ba tầng nguồn của Thương mại quốc tế và thứ tự ưu tiên, cây quyết định CISG năm cổng (kèm quy tắc tra tư cách thành viên và bảo lưu Điều 95, Điều 96), Incoterms, bảng ranh giới chế tài và thời hiệu giữa CISG và luật Việt Nam, tầng WTO và phòng vệ thương mại, quy cách viện dẫn tầng quốc tế, và Nhóm 9 của danh mục bẫy. Đọc cho mọi đề thuộc môn Thương mại quốc tế và mọi tình huống có yếu tố nước ngoài — kể cả khi câu hỏi trông như luật trong nước thuần túy nhưng có một bên trụ sở ở nước ngoài, vì chọn sai tầng nguồn là lỗi gốc không cứu được.
 - `references/cong-cu-tra-cuu.md` — công cụ nào trong môi trường Claude đọc được nguồn nào (Parallel `web_search`/`web_fetch` cho vbpl.vn, Firecrawl dự phòng), mẫu gọi, cách đọc URL và văn bản hợp nhất trên vbpl.vn, các nguồn không truy cập được. Mở cùng lúc với `quy-trinh-xac-minh.md` khi bước 6 cần tra cứu.
 - `references/cham-bai-va-hoc.md` — nhận diện ba chế độ làm việc, cách thiết kế câu hỏi dẫn đường trỏ vào mấu chốt, quy trình chấm bốn trục kèm quy tắc phản hồi không viết lại hộ, kỷ luật về barem và điểm số, cách xử lý khi đáp án mẫu hoặc đáp án của giảng viên sai, và quy trình chữa tài liệu ôn thi sưu tầm theo bốn ô (giữ / sửa căn cứ / đảo kết luận / không đủ căn cứ). Đọc khi người dùng nộp bài tự làm, khi ngữ cảnh đặt chế độ học, hoặc khi có một đáp án cần đối chiếu.
+- `references/khung-giang-vien.md` — quy trình khi người dùng đưa đáp án hoặc lập luận của giảng viên (ảnh slide, ghi chép), ba quy tắc rút ra về khung học thuật, điều nguyên tắc và tiêu chí chức năng, và nhật ký các lần so đáp án (môn Luật Chứng khoán, 07/11/2026). Đọc khi người dùng nói "thầy nói", "đáp án của thầy" hoặc đưa ảnh bài giảng; đọc cả khi trả lời nhận định cùng môn, để dùng khung đã biết. Ghi thêm mục mới vào nhật ký sau mỗi lần so.
 
 ## Công cụ tự kiểm
 
