@@ -1,0 +1,199 @@
+{
+  "id": "hon-nhan-gia-dinh-de-1",
+  "group": "hon-nhan-gia-dinh",
+  "title": "Đề kiểm tra Hôn nhân và gia đình 1 – Kết hôn, điều cấm, chung sống",
+  "subtitle": "10 câu theo Luật Hôn nhân và gia đình 2014 (sửa đổi, bổ sung năm 2025)",
+  "updated": "2026-11-07",
+  "questions": [
+    {
+      "q": "Theo Luật Hôn nhân và gia đình 2014, nam, nữ phải bao nhiêu tuổi mới đủ tuổi kết hôn?",
+      "options": [
+        "Nam và nữ cùng từ đủ 18 tuổi trở lên",
+        "Nam từ đủ 22 tuổi, nữ từ đủ 20 tuổi",
+        "Nam từ đủ 20 tuổi, nữ từ đủ 18 tuổi",
+        "Nam từ đủ 21 tuổi, nữ từ đủ 19 tuổi"
+      ],
+      "answer": 2,
+      "explain": "Điểm a khoản 1 Điều 8: nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên. Lấy vợ, lấy chồng khi chưa đủ tuổi là tảo hôn (khoản 8 Điều 3).",
+      "basis": "Điểm a khoản 1 Điều 8 Luật Hôn nhân và gia đình 2014",
+      "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx",
+      "why": [
+        "Sai: luật đặt tuổi khác nhau cho nam và nữ.",
+        "Sai: không phải mốc 22 và 20.",
+        "Đúng: điểm a khoản 1 Điều 8 — nam từ đủ 20 tuổi, nữ từ đủ 18 tuổi.",
+        "Sai: không phải mốc 21 và 19."
+      ]
+    },
+    {
+      "q": "Hai người tổ chức đám cưới linh đình nhưng không đăng ký kết hôn. Việc kết hôn này có giá trị pháp lý không?",
+      "options": [
+        "Không, kết hôn không đăng ký thì không có giá trị pháp lý",
+        "Có, vì đám cưới đã được họ hàng hai bên đến dự và chứng kiến",
+        "Có, nếu hai người đã sống chung từ một năm trở lên",
+        "Có, nếu được trưởng thôn nơi cư trú xác nhận bằng văn bản"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 9: việc kết hôn phải được đăng ký và do cơ quan nhà nước có thẩm quyền thực hiện; không đăng ký thì không có giá trị pháp lý.",
+      "basis": "Khoản 1 Điều 9 Luật Hôn nhân và gia đình 2014",
+      "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx",
+      "why": [
+        "Đúng: khoản 1 Điều 9 — kết hôn không đăng ký thì không có giá trị pháp lý.",
+        "Sai: sự chứng kiến của họ hàng không thay việc đăng ký.",
+        "Sai: thời gian chung sống không làm phát sinh hôn nhân.",
+        "Sai: chỉ cơ quan nhà nước có thẩm quyền đăng ký kết hôn."
+      ]
+    },
+    {
+      "q": "Anh A đang có vợ nhưng chung sống như vợ chồng với chị B. Hành vi này thế nào?",
+      "options": [
+        "Được phép vì hai người không đăng ký kết hôn",
+        "Bị cấm theo điểm c khoản 2 Điều 5",
+        "Chỉ bị cấm nếu hai người đã có con chung",
+        "Chỉ bị cấm nếu người vợ của A phản đối"
+      ],
+      "answer": 1,
+      "explain": "Điểm c khoản 2 Điều 5 cấm người đang có vợ, có chồng mà kết hôn hoặc chung sống như vợ chồng với người khác.",
+      "basis": "Điểm c khoản 2 Điều 5 Luật Hôn nhân và gia đình 2014",
+      "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx",
+      "why": [
+        "Sai: luật cấm cả việc chung sống như vợ chồng, không chỉ kết hôn.",
+        "Đúng: điểm c khoản 2 Điều 5 — người đang có vợ không được chung sống như vợ chồng với người khác.",
+        "Sai: có con hay không không làm thay đổi điều cấm.",
+        "Sai: điều cấm không phụ thuộc ý kiến của người vợ."
+      ]
+    },
+    {
+      "q": "Hai người là anh em họ trong phạm vi ba đời muốn kết hôn. Theo Luật Hôn nhân và gia đình 2014, việc này thế nào?",
+      "options": [
+        "Được phép nếu cả hai tự nguyện quyết định",
+        "Được phép nếu cha mẹ hai bên đồng ý",
+        "Chỉ bị cấm nếu là anh em ruột với nhau",
+        "Bị cấm vì có họ trong phạm vi ba đời"
+      ],
+      "answer": 3,
+      "explain": "Điểm d khoản 2 Điều 5 cấm kết hôn hoặc chung sống như vợ chồng giữa những người có họ trong phạm vi ba đời; điểm d khoản 1 Điều 8 dẫn chiếu điều cấm này làm điều kiện kết hôn.",
+      "basis": "Điểm d khoản 2 Điều 5 Luật Hôn nhân và gia đình 2014",
+      "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx",
+      "why": [
+        "Sai: tự nguyện không khắc phục được điều cấm.",
+        "Sai: sự đồng ý của cha mẹ không khắc phục được điều cấm.",
+        "Sai: điều cấm mở rộng đến người có họ trong phạm vi ba đời.",
+        "Đúng: điểm d khoản 2 Điều 5 — cấm kết hôn giữa những người có họ trong phạm vi ba đời."
+      ]
+    },
+    {
+      "q": "Luật Hôn nhân và gia đình 2014 xử lý hôn nhân giữa những người cùng giới tính thế nào?",
+      "options": [
+        "Thừa nhận nếu hai người đăng ký tại Ủy ban nhân dân cấp xã",
+        "Thừa nhận nếu hai người đã chung sống liên tục đủ năm năm",
+        "Không thừa nhận hôn nhân giữa những người cùng giới tính",
+        "Bị cấm và xử phạt như hành vi tảo hôn trong luật"
+      ],
+      "answer": 2,
+      "explain": "Khoản 2 Điều 8: Nhà nước không thừa nhận hôn nhân giữa những người cùng giới tính. Đây là \"không thừa nhận\", khác với các hành vi bị cấm ở khoản 2 Điều 5.",
+      "basis": "Khoản 2 Điều 8 Luật Hôn nhân và gia đình 2014",
+      "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx",
+      "why": [
+        "Sai: không có thủ tục đăng ký cho hôn nhân cùng giới.",
+        "Sai: thời gian chung sống không làm phát sinh hôn nhân.",
+        "Đúng: khoản 2 Điều 8 — Nhà nước không thừa nhận hôn nhân cùng giới.",
+        "Sai: luật dùng cụm \"không thừa nhận\", không xếp vào tảo hôn."
+      ]
+    },
+    {
+      "q": "A và B đăng ký kết hôn khi B mới 17 tuổi. Khi Tòa án giải quyết yêu cầu hủy, B đã đủ 18 tuổi và hai bên yêu cầu công nhận hôn nhân. Tòa án xử lý thế nào?",
+      "options": [
+        "Bắt buộc hủy vì lúc đăng ký B chưa đủ tuổi kết hôn",
+        "Công nhận quan hệ hôn nhân theo yêu cầu của hai bên",
+        "Buộc hai người đăng ký kết hôn lại từ đầu tại Ủy ban xã",
+        "Chuyển hồ sơ để xử lý hình sự về tội tảo hôn"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 11: nếu tại thời điểm Tòa án giải quyết cả hai bên đã có đủ điều kiện kết hôn và cùng yêu cầu công nhận thì Tòa án công nhận quan hệ hôn nhân đó.",
+      "basis": "Khoản 2 Điều 11 Luật Hôn nhân và gia đình 2014",
+      "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx",
+      "why": [
+        "Sai: khoản 2 Điều 11 cho công nhận khi lúc giải quyết đã đủ điều kiện.",
+        "Đúng: khoản 2 Điều 11 — đủ điều kiện và cùng yêu cầu thì Tòa án công nhận quan hệ hôn nhân.",
+        "Sai: Tòa công nhận bằng quyết định, không buộc đăng ký lại.",
+        "Sai: đây là vụ việc hôn nhân, không đương nhiên chuyển hình sự."
+      ]
+    },
+    {
+      "q": "Nam, nữ đủ điều kiện kết hôn chung sống như vợ chồng nhưng không đăng ký. Giữa họ có phát sinh quyền, nghĩa vụ vợ chồng không?",
+      "options": [
+        "Có, sau khi chung sống đủ hai năm liên tục",
+        "Có, nếu hai người đã có con chung với nhau",
+        "Có, nếu tổ chức lễ cưới theo phong tục địa phương",
+        "Không phát sinh quyền, nghĩa vụ giữa vợ và chồng"
+      ],
+      "answer": 3,
+      "explain": "Khoản 1 Điều 14: nam, nữ đủ điều kiện kết hôn chung sống như vợ chồng mà không đăng ký kết hôn thì không làm phát sinh quyền, nghĩa vụ giữa vợ và chồng; quan hệ với con, tài sản giải quyết theo Điều 15, Điều 16.",
+      "basis": "Khoản 1 Điều 14 Luật Hôn nhân và gia đình 2014",
+      "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx",
+      "why": [
+        "Sai: thời gian chung sống không làm phát sinh quan hệ vợ chồng.",
+        "Sai: con chung được bảo vệ theo quy định về cha mẹ và con, không tạo quan hệ vợ chồng.",
+        "Sai: lễ cưới không thay việc đăng ký kết hôn.",
+        "Đúng: khoản 1 Điều 14 — không làm phát sinh quyền, nghĩa vụ giữa vợ và chồng."
+      ]
+    },
+    {
+      "q": "Hai người chung sống như vợ chồng từ năm 2018, đến năm 2022 mới đăng ký kết hôn. Quan hệ hôn nhân được xác lập từ khi nào?",
+      "options": [
+        "Từ thời điểm đăng ký kết hôn năm 2022",
+        "Từ thời điểm bắt đầu chung sống năm 2018",
+        "Từ ngày tổ chức lễ cưới theo phong tục",
+        "Từ ngày sinh người con đầu tiên của hai người"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 14: nam, nữ chung sống như vợ chồng sau đó đăng ký kết hôn thì quan hệ hôn nhân được xác lập từ thời điểm đăng ký kết hôn.",
+      "basis": "Khoản 2 Điều 14 Luật Hôn nhân và gia đình 2014",
+      "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx",
+      "why": [
+        "Đúng: khoản 2 Điều 14 — hôn nhân xác lập từ thời điểm đăng ký kết hôn.",
+        "Sai: thời gian chung sống trước khi đăng ký không được tính.",
+        "Sai: lễ cưới không phải mốc xác lập hôn nhân.",
+        "Sai: việc sinh con không phải mốc xác lập hôn nhân."
+      ]
+    },
+    {
+      "q": "Hai người muốn chọn chế độ tài sản theo thỏa thuận. Thỏa thuận này phải được lập thế nào?",
+      "options": [
+        "Sau khi kết hôn, bằng văn bản có đủ chữ ký của cả hai bên",
+        "Bất cứ lúc nào, chỉ cần hai bên thỏa thuận bằng lời nói",
+        "Trước khi kết hôn, bằng văn bản công chứng hoặc chứng thực",
+        "Khi ly hôn, theo quyết định công nhận của Tòa án"
+      ],
+      "answer": 2,
+      "explain": "Điều 47: thỏa thuận xác lập chế độ tài sản phải được lập trước khi kết hôn, bằng hình thức văn bản có công chứng hoặc chứng thực; chế độ này được xác lập kể từ ngày đăng ký kết hôn.",
+      "basis": "Điều 47 Luật Hôn nhân và gia đình 2014",
+      "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx",
+      "why": [
+        "Sai: thỏa thuận phải lập trước khi kết hôn và phải công chứng, chứng thực.",
+        "Sai: luật đòi văn bản có công chứng hoặc chứng thực.",
+        "Đúng: Điều 47 — lập trước khi kết hôn, văn bản có công chứng hoặc chứng thực.",
+        "Sai: thỏa thuận chế độ tài sản phải có từ trước khi kết hôn."
+      ]
+    },
+    {
+      "q": "Thời kỳ hôn nhân được tính từ khi nào đến khi nào?",
+      "options": [
+        "Từ ngày tổ chức lễ cưới đến ngày ly thân thực tế",
+        "Từ ngày đăng ký kết hôn đến ngày chấm dứt hôn nhân",
+        "Từ ngày bắt đầu chung sống đến ngày một bên chết",
+        "Từ ngày đăng ký kết hôn đến ngày nộp đơn ly hôn"
+      ],
+      "answer": 1,
+      "explain": "Khoản 13 Điều 3: thời kỳ hôn nhân là khoảng thời gian tồn tại quan hệ vợ chồng, tính từ ngày đăng ký kết hôn đến ngày chấm dứt hôn nhân.",
+      "basis": "Khoản 13 Điều 3 Luật Hôn nhân và gia đình 2014",
+      "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Van-ban-hop-nhat-121-VBHN-VPQH-2025-Luat-Hon-nhan-va-gia-dinh-672447.aspx",
+      "why": [
+        "Sai: lễ cưới và ly thân không phải mốc pháp lý.",
+        "Đúng: khoản 13 Điều 3 — từ ngày đăng ký kết hôn đến ngày chấm dứt hôn nhân.",
+        "Sai: mốc bắt đầu là ngày đăng ký kết hôn.",
+        "Sai: nộp đơn chưa chấm dứt hôn nhân."
+      ]
+    }
+  ]
+}
