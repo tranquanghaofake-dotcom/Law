@@ -330,7 +330,7 @@ Tổng khái niệm: 740. Chỉ liệt kê, không tự sửa. Ngưỡng chặn 
 ### lao-dong-2 (1)
 - `nld-di-lam-viec-nuoc-ngoai` #1: Ai là "người sử dụng lao động ở nước ngoài" theo Luật 69/2020/QH14?
 
-## Nhận định Sai chứa từ tuyệt đối (mọi/chỉ/luôn/đều…): thêm nhận định Sai không có mẹo này — 121 câu
+## Nhận định Sai chứa từ tuyệt đối (mọi/chỉ/luôn/đều…): thêm nhận định Sai không có mẹo này — 51 câu
 
 ### hien-phap (12)
 - `bai-nhiem-dai-bieu` #5: Theo Hiến pháp 2013, chỉ Quốc hội mới có quyền bãi nhiệm đại biểu Quốc hội; cử tri không có quyền này.
@@ -346,45 +346,6 @@ Tổng khái niệm: 740. Chỉ liệt kê, không tự sửa. Ngưỡng chặn 
 - `tu-do-kinh-doanh` #5: Theo Hiến pháp 2013, người dân chỉ được kinh doanh những ngành nghề có trong danh mục Nhà nước cho phép.
 - `xet-xu-cong-khai-tap-the` #8: Tòa án chỉ xét xử kín khi có yêu cầu của Viện kiểm sát nhân dân.
 
-### so-huu-tri-tue (12)
-- `bien-phap-xu-ly-xam-pham-shtt` #5: Xâm phạm quyền sở hữu trí tuệ chỉ có thể bị xử lý hành chính.
-- `chi-dan-dia-ly` #5: Mọi sản phẩm có nguồn gốc từ một tỉnh đều được bảo hộ chỉ dẫn địa lý mang tên tỉnh đó.
-- `chu-so-huu-quyen-tac-gia` #5: Tác giả và chủ sở hữu quyền tác giả luôn là một người.
-- `chuong-trinh-may-tinh` #5: Mã máy (mã nhị phân) của phần mềm không được bảo hộ quyền tác giả, chỉ mã nguồn được bảo hộ.
-- `giong-cay-trong` #5: Giống cây hoang dại chỉ cần được phát hiện là đủ điều kiện bảo hộ.
-- `hieu-luc-van-bang-bao-ho` #5: Bằng độc quyền sáng chế cấp tại Việt Nam có hiệu lực ở mọi quốc gia.
-- `nhan-hieu` #5: Theo Luật SHTT hiện hành, chỉ dấu hiệu nhìn thấy được mới có thể là nhãn hiệu.
-- `quyen-chu-so-huu-shcn` #5: Chủ sở hữu nhãn hiệu có quyền cấm mọi hành vi sử dụng liên quan đến nhãn hiệu, không có giới hạn.
-- `quyen-nhan-than-tac-gia` #5: Quyền đứng tên trên tác phẩm chỉ được bảo hộ 50 năm sau khi tác giả chết.
-- `tinh-moi-sang-che` #5: Tính mới của sáng chế chỉ xét trong phạm vi lãnh thổ Việt Nam.
-- `xam-pham-quyen-tac-gia` #5: Chỉ hành vi sao chép mới bị coi là xâm phạm quyền tác giả.
-- `xam-pham-sang-che` #5: Chỉ sao chép nguyên vẹn kiểu dáng mới bị coi là xâm phạm.
-
-### dan-su-2 (11)
-- `bao-lanh` #5: Bên bảo lãnh luôn phải trả nợ ngay khi bên được bảo lãnh vay tiền.
-- `can-cu-boi-thuong-thiet-hai` #5: Theo BLDS 2015, người bị thiệt hại luôn phải chứng minh lỗi của người gây thiệt hại mới được bồi thường.
-- `can-cu-phat-sinh-nghia-vu` #5: Mọi nghĩa vụ dân sự đều phát sinh từ hợp đồng.
-- `dich-vu` #5: Mọi hợp đồng thuê người làm việc đều là hợp đồng dịch vụ.
-- `hop-dong` #5: Hợp đồng chỉ có hiệu lực khi được lập thành văn bản.
-- `nang-luc-chiu-trach-nhiem-boi-thuong` #5: Người 16 tuổi gây thiệt hại thì cha mẹ luôn phải bồi thường toàn bộ.
-- `nghia-vu` #5: Nghĩa vụ dân sự chỉ có thể là nghĩa vụ chuyển giao tài sản.
-- `suc-vat-gay-thiet-hai` #5: Chủ sở hữu súc vật luôn phải bồi thường, kể cả khi người thứ ba hoàn toàn có lỗi.
-- `trach-nhiem-do-vi-pham-nghia-vu` #5: Bên vi phạm nghĩa vụ do bất khả kháng vẫn luôn phải bồi thường.
-- `uy-quyen` #5: Hợp đồng ủy quyền luôn phải có thù lao.
-- `vay-tai-san` #5: Mọi hợp đồng vay tiền đều phải trả lãi.
-
-### thuong-mai (10)
-- `boi-thuong-thiet-hai-ltm` #5: Theo Luật Thương mại, có thỏa thuận phạt vi phạm thì bên bị vi phạm chỉ được đòi phạt, không được đòi bồi thường.
-- `che-tai-thuong-mai` #5: Luật Thương mại chỉ cho phép áp dụng các chế tài được liệt kê, cấm các bên thỏa thuận thêm.
-- `chuyen-rui-ro` #5: Rủi ro về hàng hóa luôn chuyển cùng lúc với quyền sở hữu.
-- `dau-gia-hang-hoa` #5: Đấu giá hàng hóa chỉ có một phương thức là trả giá lên.
-- `dau-thau-hang-hoa` #5: Trong đấu thầu, bên mời thầu luôn phải chọn người chào giá thấp nhất.
-- `logistics` #5: Thương nhân chỉ thực hiện một công việc (ví dụ chỉ lưu kho) thì không phải là dịch vụ logistics.
-- `mua-ban-hang-hoa` #5: Mọi hợp đồng mua bán hàng hóa giữa thương nhân đều phải lập bằng văn bản.
-- `trach-nhiem-hang-khong-phu-hop` #5: Bên bán không bao giờ chịu trách nhiệm với khiếm khuyết phát hiện sau khi chuyển rủi ro.
-- `trong-tai-thuong-mai` #5: Thỏa thuận trọng tài chỉ có giá trị nếu được lập trước khi xảy ra tranh chấp.
-- `vi-pham-co-ban` #5: Bên bị vi phạm có quyền hủy bỏ hợp đồng với mọi vi phạm nhỏ.
-
 ### hanh-chinh (8)
 - `cong-dan-nguoi-nuoc-ngoai-hanh-chinh` #5: Người nước ngoài tại Việt Nam được hưởng đầy đủ mọi quyền như công dân Việt Nam, kể cả quyền bầu cử.
 - `nguyen-tac-quan-ly-hanh-chinh` #5: Các nguyên tắc quản lý hành chính nhà nước không có giá trị bắt buộc.
@@ -395,70 +356,12 @@ Tổng khái niệm: 740. Chỉ liệt kê, không tự sửa. Ngưỡng chặn 
 - `thu-tuc-hanh-chinh` #5: Thủ tục hành chính chỉ do Quốc hội quy định.
 - `to-chuc-xa-hoi` #5: Tổ chức xã hội không bao giờ được thực hiện nhiệm vụ quản lý nhà nước.
 
-### dau-tu (7)
-- `ldt-chap-thuan-chu-truong-dau-tu` #5: Mọi dự án đầu tư đều phải qua thủ tục chấp thuận chủ trương đầu tư.
-- `ldt-dau-tu-kinh-doanh` #5: Luật Đầu tư chỉ áp dụng cho nhà đầu tư nước ngoài.
-- `ldt-giay-chung-nhan-dang-ky-dau-tu` #5: Dự án đầu tư của nhà đầu tư trong nước luôn phải có Giấy chứng nhận đăng ký đầu tư.
-- `ldt-hoat-dong-dau-tu-ra-nuoc-ngoai` #5: Nhà đầu tư ra nước ngoài chỉ phải tuân thủ pháp luật Việt Nam.
-- `ldt-khu-kinh-te` #5: Khu kinh tế chỉ có một khu chức năng là sản xuất công nghiệp.
-- `ldt-to-chuc-kinh-te-co-von-dtnn` #5: Mọi tổ chức kinh tế có vốn đầu tư nước ngoài đều phải làm thủ tục như nhà đầu tư nước ngoài khi đầu tư tiếp.
-- `ldt-von-dau-tu` #5: Vốn đầu tư chỉ có thể là tiền.
-
-### tai-chinh-doanh-nghiep (7)
-- `tcdn-chi-phi-duoc-tru` #5: Mọi khoản chi thực tế doanh nghiệp bỏ ra đều được trừ khi tính thuế TNDN.
-- `tcdn-cong-bo-thong-tin-dnnn` #5: Doanh nghiệp nhà nước chỉ cần công bố báo cáo tài chính chưa kiểm toán.
-- `tcdn-doanh-nghiep` #5: Mọi tổ chức có tài sản và trụ sở đều là doanh nghiệp.
-- `tcdn-doanh-thu` #5: Doanh nghiệp chỉ ghi nhận doanh thu tính thuế khi khách hàng đã thanh toán.
-- `tcdn-doi-tuong-cong-bo-thong-tin` #5: Chỉ công ty niêm yết mới phải công bố thông tin trên thị trường chứng khoán.
-- `tcdn-mua-lai-doanh-nghiep` #5: Mua lại doanh nghiệp chỉ xảy ra khi mua 100% vốn của doanh nghiệp khác.
-- `tcdn-quyen-ve-von` #5: Doanh nghiệp buộc phải đáp ứng mọi yêu cầu đóng góp nguồn lực của cơ quan nhà nước.
-
-### thuong-mai-1 (7)
-- `chu-so-huu-huong-loi` #5: Chủ sở hữu hưởng lợi luôn là người đứng tên trên Giấy chứng nhận đăng ký doanh nghiệp.
-- `co-phan` #5: Công ty cổ phần có thể chỉ phát hành cổ phần ưu đãi mà không có cổ phần phổ thông.
-- `cong-ty-me-con` #5: Công ty mẹ và các công ty con hợp thành một pháp nhân duy nhất.
-- `doanh-nghiep-nha-nuoc` #5: Theo Luật Doanh nghiệp 2020, chỉ doanh nghiệp do Nhà nước nắm 100% vốn mới là doanh nghiệp nhà nước.
-- `nguoi-nop-don-pha-san` #5: Người đại diện theo pháp luật của doanh nghiệp mất khả năng thanh toán chỉ có quyền, không có nghĩa vụ nộp đơn yêu cầu mở thủ tục phá sản.
-- `nguoi-quan-ly-doanh-nghiep` #5: Mọi cổ đông của công ty cổ phần đều là người quản lý doanh nghiệp.
-- `to-chuc-lai-doanh-nghiep` #5: Sau khi sáp nhập, cả công ty bị sáp nhập và công ty nhận sáp nhập đều chấm dứt tồn tại.
-
-### dat-dai (6)
-- `dang-ky-dat-dai` #5: Đăng ký nhà ở gắn liền với đất là bắt buộc như đăng ký đất đai.
-- `giao-dat-cho-thue-dat` #5: Mọi tổ chức kinh tế đều được giao đất không thu tiền sử dụng đất.
-- `nguyen-tac-boi-thuong-khi-thu-hoi` #5: Người có đất thu hồi được bồi thường bằng đất thì bắt buộc phải nhận đất, không được nhận tiền.
-- `quyen-chung-nguoi-su-dung-dat` #5: Mọi người sử dụng đất đều được chuyển nhượng quyền sử dụng đất như nhau.
-- `tham-quyen-giai-quyet-tranh-chap-dat-dai` #5: Chỉ khi cả hai bên đều có Giấy chứng nhận thì Tòa án mới giải quyết.
-- `thu-hoi-dat` #5: Theo Luật Đất đai 2024, Nhà nước được thu hồi đất cho mọi dự án kinh doanh nếu nhà đầu tư đề nghị.
-
-### tai-san-tri-tue (6)
-- `tstt-phuong-phap-dinh-gia` #5: Phương pháp tiếp cận theo thu nhập chỉ áp dụng được cho nhãn hiệu.
-- `tstt-quan-tri-tstt` #5: Mục tiêu duy nhất của quản trị tài sản trí tuệ là ngăn chặn hàng giả.
-- `tstt-quyen-dang-ky-khi-giao-viec` #5: Người lao động tạo ra sáng chế trong khi thực hiện công việc được giao luôn là chủ sở hữu sáng chế đó.
-- `tstt-tu-bao-ve` #5: Thư khuyến cáo là thủ tục bắt buộc trước khi khởi kiện xâm phạm quyền SHTT.
-- `tstt-xam-pham-nhan-hieu` #5: Nhãn hiệu nổi tiếng chỉ được bảo vệ chống hành vi dùng dấu hiệu trùng cho hàng hóa cùng loại.
-- `tstt-xu-phat-hanh-chinh` #5: Mọi hành vi xâm phạm quyền SHTT đều phải bị xử lý hình sự.
-
-### xay-dung-vbpl (6)
-- `xd-chinh-sach` #5: Mọi dự án luật đều phải thực hiện quy trình xây dựng chính sách trước khi soạn thảo.
-- `xd-co-quan-chu-tri-soan-thao` #5: Luật 2025 vẫn bắt buộc thành lập Ban soạn thảo với tối thiểu 9 thành viên cho mọi dự án luật.
-- `xd-nghi-quyet-quoc-hoi` #5: Mọi nghị quyết của Quốc hội đều là văn bản quy phạm pháp luật.
-- `xd-quy-trinh-xay-dung-chinh-sach` #5: Theo Luật 2025, mọi dự án luật đều phải được lập đề nghị xây dựng luật và đưa vào Chương trình xây dựng luật, pháp lệnh hằng năm như Luật 2015.
-- `xd-thu-tuc-rut-gon` #5: Văn bản ban hành theo thủ tục rút gọn bắt buộc phải chờ đủ 45 ngày mới có hiệu lực.
-- `xd-van-ban-qppl` #5: Mọi văn bản do cơ quan nhà nước ban hành đều là văn bản quy phạm pháp luật.
-
 ### chung-khoan (5)
 - `chung-chi-hanh-nghe-chung-khoan` #5: Người bị thu hồi chứng chỉ hành nghề vì vi phạm hành vi bị cấm tại Điều 12 được cấp lại sau 05 năm.
 - `chung-chi-quy` #5: Người mua chứng chỉ quỹ trở thành cổ đông của công ty quản lý quỹ.
 - `dieu-kien-nhan-su-cong-ty-chung-khoan` #5: Công ty chứng khoán xin cấp phép 3 nghiệp vụ cần tổng cộng tối thiểu 03 nhân viên có chứng chỉ hành nghề, không phụ thuộc vào số nghiệp vụ xin cấp phép.
 - `nguoi-hanh-nghe-chung-khoan` #5: Người có chứng chỉ hành nghề chứng khoán được tự mở văn phòng nhận môi giới cho khách với tư cách cá nhân.
 - `tam-ngung-dinh-chi-giao-dich-so` #5: Tổng giám đốc Sở giao dịch chứng khoán Việt Nam có quyền đình chỉ toàn bộ hoạt động giao dịch của Sở khi xảy ra thảm họa.
-
-### ngan-hang (5)
-- `bao-hiem-tien-gui` #5: Người gửi tiền luôn được tổ chức bảo hiểm tiền gửi trả lại toàn bộ số tiền gửi, không giới hạn.
-- `chinh-sach-tien-te-quoc-gia` #5: Thống đốc Ngân hàng Nhà nước quyết định chỉ tiêu lạm phát hằng năm.
-- `hoat-dong-ngan-hang` #5: Mọi doanh nghiệp đã đăng ký kinh doanh đều được nhận tiền gửi của dân cư.
-- `ngan-hang-nha-nuoc` #5: Ngân hàng Nhà nước chỉ có chức năng quản lý nhà nước, không thực hiện nghiệp vụ ngân hàng.
-- `ngoai-hoi` #5: Mọi loại vàng mua bán trong nước đều là ngoại hối.
 
 ### an-sinh-xa-hoi (4)
 - `an-sinh-xa-hoi` #5: Trợ giúp xã hội chỉ dành cho người đã đóng bảo hiểm xã hội.
@@ -478,6 +381,11 @@ Tổng khái niệm: 740. Chỉ liệt kê, không tự sửa. Ngưỡng chặn 
 - `tham-quyen-theo-vu-viec` #5: Mọi tranh chấp về sở hữu trí tuệ đều là tranh chấp dân sự.
 - `xet-xu-cong-khai-tranh-tung` #5: Quyền tranh tụng chỉ được bảo đảm ở phiên tòa sơ thẩm.
 
+### dan-su-2 (3)
+- `hop-dong` #5: Hợp đồng là sự thỏa thuận chỉ nhằm xác lập quyền, nghĩa vụ dân sự, không bao gồm việc thay đổi hay chấm dứt.
+- `suc-vat-gay-thiet-hai` #5: Người thứ ba và chủ sở hữu súc vật cùng có lỗi thì mỗi bên chỉ bồi thường phần lỗi của mình, không liên đới.
+- `vay-tai-san` #5: Bên vay tài sản chỉ trở thành chủ sở hữu tài sản vay sau khi đã hoàn trả cho bên cho vay.
+
 ### lich-su-nn-pl (3)
 - `cong-ty-co-phan-1990` #5: Theo Luật Công ty 1990, công ty cổ phần chỉ cần tối thiểu ba cổ đông.
 - `hngd-1959-ket-hon-ly-hon` #5: Theo Luật HNGĐ 1959, khi người vợ có thai, cả vợ và chồng đều không được xin ly hôn.
@@ -488,5 +396,15 @@ Tổng khái niệm: 740. Chỉ liệt kê, không tự sửa. Ngưỡng chặn 
 - `tam-dinh-chi-thi-hanh-quyet-dinh` #4: Tạm đình chỉ việc thi hành quyết định hành chính có thể áp dụng khi việc thi hành gây bất tiện cho người khởi kiện, dù chưa dẫn đến hậu quả nghiêm trọng không khắc phục được.
 - `thoi-han-khang-cao` #4: Thời hạn kháng cáo quyết định đình chỉ giải quyết vụ án của Tòa án cấp sơ thẩm là 15 ngày.
 
+### tai-san-tri-tue (2)
+- `tstt-phuong-phap-dinh-gia` #5: Phương pháp tiếp cận theo thu nhập chỉ áp dụng được cho nhãn hiệu.
+- `tstt-quan-tri-tstt` #5: Mục tiêu duy nhất của quản trị tài sản trí tuệ là ngăn chặn hàng giả.
+
 ### canh-tranh (1)
 - `thoa-thuan-han-che-canh-tranh-bi-cam` #5: Theo Luật Cạnh tranh 2018, thỏa thuận ấn định giá chỉ bị cấm khi thị phần kết hợp của các bên từ 30% trở lên.
+
+### ngan-hang (1)
+- `chinh-sach-tien-te-quoc-gia` #5: Thống đốc Ngân hàng Nhà nước quyết định chỉ tiêu lạm phát hằng năm.
+
+### tai-chinh-doanh-nghiep (1)
+- `tcdn-mua-lai-doanh-nghiep` #5: Mua lại doanh nghiệp chỉ là việc mua vốn góp, không bao gồm việc mua tài sản của doanh nghiệp khác.
