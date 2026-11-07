@@ -171,9 +171,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Luật Thương mại chỉ cho phép áp dụng các chế tài được liệt kê, cấm các bên thỏa thuận thêm.",
+   "statement": "Các bên không được thỏa thuận áp dụng biện pháp chế tài nào ngoài các chế tài Luật Thương mại đã liệt kê.",
    "answer": false,
-   "explain": "Sai. Khoản 7 Điều 292 cho phép biện pháp khác do các bên thỏa thuận."
+   "explain": "Sai. Khoản 7 Điều 292 cho phép các biện pháp khác do các bên thỏa thuận, không trái nguyên tắc cơ bản của pháp luật Việt Nam, điều ước quốc tế và tập quán thương mại quốc tế."
   },
   {
    "type": "recall",

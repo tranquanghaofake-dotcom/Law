@@ -157,9 +157,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Đấu giá hàng hóa chỉ có một phương thức là trả giá lên.",
+   "statement": "Theo phương thức đặt giá xuống, người trả giá cao nhất so với giá khởi điểm có quyền mua hàng.",
    "answer": false,
-   "explain": "Sai. Khoản 2 Điều 185 có hai phương thức: trả giá lên và đặt giá xuống."
+   "explain": "Sai. Điểm a khoản 2 Điều 185: đó là phương thức trả giá lên. Điểm b: đặt giá xuống thì người đầu tiên chấp nhận ngay mức giá khởi điểm hoặc mức giá hạ thấp hơn có quyền mua."
   },
   {
    "type": "recall",

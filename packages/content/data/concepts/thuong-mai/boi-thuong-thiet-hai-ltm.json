@@ -172,9 +172,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Theo Luật Thương mại, có thỏa thuận phạt vi phạm thì bên bị vi phạm chỉ được đòi phạt, không được đòi bồi thường.",
+   "statement": "Các bên đã thỏa thuận phạt vi phạm thì bên bị vi phạm phải chọn một trong hai: phạt vi phạm hoặc bồi thường thiệt hại.",
    "answer": false,
-   "explain": "Sai. Khoản 2 Điều 307: được áp dụng cả hai."
+   "explain": "Sai. Khoản 2 Điều 307: có thỏa thuận phạt vi phạm thì bên bị vi phạm có quyền áp dụng cả chế tài phạt vi phạm và buộc bồi thường thiệt hại, trừ trường hợp Luật này có quy định khác."
   },
   {
    "type": "recall",

@@ -156,9 +156,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Bên bị vi phạm có quyền hủy bỏ hợp đồng với mọi vi phạm nhỏ.",
+   "statement": "Vi phạm không cơ bản, mà các bên không thỏa thuận làm điều kiện hủy bỏ, vẫn đủ căn cứ để hủy bỏ hợp đồng.",
    "answer": false,
-   "explain": "Sai. Chỉ khi vi phạm là điều kiện đã thỏa thuận hoặc vi phạm cơ bản (khoản 4 Điều 312)."
+   "explain": "Sai. Khoản 4 Điều 312: chỉ hủy bỏ khi xảy ra hành vi vi phạm mà các bên đã thỏa thuận là điều kiện hủy bỏ, hoặc một bên vi phạm cơ bản nghĩa vụ hợp đồng."
   },
   {
    "type": "recall",

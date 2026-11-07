@@ -156,9 +156,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Bên bán không bao giờ chịu trách nhiệm với khiếm khuyết phát hiện sau khi chuyển rủi ro.",
+   "statement": "Khiếm khuyết đã có trước thời điểm chuyển rủi ro nhưng phát hiện sau đó thì bên bán được miễn trách nhiệm.",
    "answer": false,
-   "explain": "Sai. Khoản 2 Điều 40: chịu trách nhiệm với khiếm khuyết có trước thời điểm chuyển rủi ro, kể cả phát hiện sau."
+   "explain": "Sai. Khoản 2 Điều 40: trong thời hạn khiếu nại, bên bán phải chịu trách nhiệm về khiếm khuyết đã có trước thời điểm chuyển rủi ro, kể cả khi phát hiện sau đó (trừ trường hợp bên mua đã biết hoặc phải biết khi giao kết hợp đồng theo khoản 1)."
   },
   {
    "type": "recall",
