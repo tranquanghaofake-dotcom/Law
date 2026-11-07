@@ -16,7 +16,13 @@
       "answer": 0,
       "explain": "Đặt cọc là việc giao tiền, kim khí quý, đá quý hoặc vật có giá trị khác trong một thời hạn để bảo đảm giao kết hoặc thực hiện hợp đồng. Tiền trả trước là khoản khác, không có chức năng bảo đảm.",
       "basis": "Khoản 1 Điều 328 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_328"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_328",
+      "why": [
+        "Đúng: khoản 1 Điều 328 BLDS — bảo đảm giao kết hoặc thực hiện hợp đồng.",
+        "Sai: tiền trả trước là khoản khác, không có chức năng bảo đảm.",
+        "Sai: phạt cọc là hệ quả khi vi phạm, không phải mục đích.",
+        "Sai: đặt cọc không nhằm chứng minh tài chính."
+      ]
     },
     {
       "q": "Bạn đặt cọc 3 triệu để thuê phòng, rồi đổi ý không thuê nữa. Nếu hai bên không có thỏa thuận khác, khoản cọc được xử lý thế nào?",
@@ -29,7 +35,13 @@
       "answer": 1,
       "explain": "Bên đặt cọc từ chối giao kết, thực hiện hợp đồng thì tài sản đặt cọc thuộc về bên nhận đặt cọc. Bạn là người đổi ý nên mất khoản cọc.",
       "basis": "Khoản 2 Điều 328 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_328"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_328",
+      "why": [
+        "Sai: bên đặt cọc từ chối thì mất cọc.",
+        "Đúng: khoản 2 Điều 328 — bên đặt cọc từ chối thì cọc thuộc về bên nhận.",
+        "Sai: luật không chia đôi.",
+        "Sai: phạt thêm áp dụng cho bên nhận cọc vi phạm."
+      ]
     },
     {
       "q": "Ngược lại, chủ trọ đã nhận cọc 3 triệu của bạn nhưng cho người khác thuê vì được giá cao hơn. Không có thỏa thuận khác, bạn được nhận bao nhiêu?",
@@ -42,7 +54,13 @@
       "answer": 1,
       "explain": "Bên nhận đặt cọc từ chối giao kết, thực hiện hợp đồng thì phải trả lại tài sản đặt cọc và một khoản tiền tương đương giá trị tài sản đặt cọc: 3 triệu + 3 triệu = 6 triệu.",
       "basis": "Khoản 2 Điều 328 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_328"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_328",
+      "why": [
+        "Sai: còn được thêm khoản tương đương giá trị cọc.",
+        "Đúng: khoản 2 Điều 328 — trả lại cọc và thêm khoản tương đương: 6 triệu.",
+        "Sai: luật không phạt gấp ba nếu không thỏa thuận.",
+        "Sai: phạt cọc không cần chứng minh thiệt hại."
+      ]
     },
     {
       "q": "Hai bên đã ký hợp đồng thuê và thực hiện bình thường. Khoản cọc ban đầu sẽ được xử lý thế nào?",
@@ -55,7 +73,13 @@
       "answer": 2,
       "explain": "Khi hợp đồng được giao kết, thực hiện, tài sản đặt cọc được trả lại cho bên đặt cọc hoặc được trừ để thực hiện nghĩa vụ trả tiền.",
       "basis": "Khoản 2 Điều 328 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_328"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_328",
+      "why": [
+        "Sai: hợp đồng thực hiện bình thường thì cọc không mất.",
+        "Sai: luật không buộc gửi ngân hàng.",
+        "Đúng: khoản 2 Điều 328 — trả lại hoặc trừ vào nghĩa vụ trả tiền.",
+        "Sai: không có phạt khi không vi phạm."
+      ]
     },
     {
       "q": "Bạn chuyển 2 triệu cho người bán, hai bên không nói rõ đó là tiền cọc hay tiền trả trước. Pháp luật coi khoản này là gì?",
@@ -68,7 +92,13 @@
       "answer": 3,
       "explain": "Khoản tiền mà các bên không xác định rõ là tiền đặt cọc hay tiền trả trước thì được coi là tiền trả trước. Khi đó không áp dụng cơ chế mất cọc, phạt cọc của Điều 328.",
       "basis": "Điều 37 Nghị định 21/2021/NĐ-CP",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Nghi-dinh-21-2021-ND-CP-huong-dan-Bo-luat-Dan-su-bao-dam-thuc-hien-nghia-vu-468069.aspx?anchor=dieu_37"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Nghi-dinh-21-2021-ND-CP-huong-dan-Bo-luat-Dan-su-bao-dam-thuc-hien-nghia-vu-468069.aspx?anchor=dieu_37",
+      "why": [
+        "Sai: không ghi rõ thì không coi là đặt cọc.",
+        "Sai: ký quỹ là biện pháp khác (Điều 330).",
+        "Sai: không có căn cứ coi là bồi thường.",
+        "Đúng: Điều 37 Nghị định 21/2021 — không rõ thì coi là tiền trả trước."
+      ]
     },
     {
       "q": "Có thể dùng một chiếc điện thoại để đặt cọc không?",
@@ -81,7 +111,13 @@
       "answer": 0,
       "explain": "Tài sản đặt cọc gồm khoản tiền, kim khí quý, đá quý hoặc vật có giá trị khác. Điện thoại là vật có giá trị nên có thể dùng để đặt cọc.",
       "basis": "Khoản 1 Điều 328 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_328"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_328",
+      "why": [
+        "Đúng: khoản 1 Điều 328 — vật có giá trị khác cũng dùng để đặt cọc được.",
+        "Sai: không bắt buộc tiền mặt.",
+        "Sai: không cần công chứng.",
+        "Sai: không chỉ vàng, đá quý."
+      ]
     },
     {
       "q": "Hợp đồng đặt cọc ghi: nếu bên nhận cọc đổi ý thì phải trả gấp 3 lần tiền cọc. Thỏa thuận này có được áp dụng không?",
@@ -94,7 +130,13 @@
       "answer": 2,
       "explain": "Quy định phạt cọc bằng giá trị cọc áp dụng \"trừ trường hợp có thỏa thuận khác\". Các bên có thể tự nguyện thỏa thuận mức khác, miễn không vi phạm điều cấm của luật, không trái đạo đức xã hội.",
       "basis": "Khoản 2 Điều 328, khoản 2 Điều 3 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_328"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_328",
+      "why": [
+        "Sai: luật cho phép thỏa thuận khác.",
+        "Sai: mức 8% là phạt vi phạm trong Luật Thương mại, không phải phạt cọc.",
+        "Đúng: khoản 2 Điều 328 \"trừ trường hợp có thỏa thuận khác\".",
+        "Sai: thỏa thuận tự nguyện, không trái điều cấm."
+      ]
     },
     {
       "q": "Bạn đặt cọc thuê trọ chỉ qua tin nhắn Zalo, không có giấy tay. Theo BLDS 2015, việc đặt cọc này thế nào?",
@@ -107,7 +149,13 @@
       "answer": 1,
       "explain": "BLDS 2015 không bắt buộc đặt cọc phải lập văn bản (khác BLDS 2005). Giao dịch dân sự có thể bằng lời nói, văn bản hoặc hành vi; giao dịch qua phương tiện điện tử dưới dạng thông điệp dữ liệu được coi là giao dịch bằng văn bản. Hãy lưu lại tin nhắn.",
       "basis": "Điều 328, khoản 1 Điều 119 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_119"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_119",
+      "why": [
+        "Sai: BLDS 2015 không bắt buộc văn bản công chứng.",
+        "Đúng: không vô hiệu vì hình thức; tin nhắn là chứng cứ (khoản 1 Điều 119).",
+        "Sai: không bắt buộc người làm chứng.",
+        "Sai: không bắt buộc công chứng."
+      ]
     },
     {
       "q": "Thời hiệu khởi kiện tranh chấp hợp đồng đặt cọc là bao lâu?",
@@ -120,7 +168,13 @@
       "answer": 2,
       "explain": "Thời hiệu khởi kiện tranh chấp hợp đồng là 03 năm, kể từ ngày người có quyền yêu cầu biết hoặc phải biết quyền và lợi ích hợp pháp của mình bị xâm phạm.",
       "basis": "Điều 429 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_429"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_429",
+      "why": [
+        "Sai: không phải 01 năm.",
+        "Sai: không phải 02 năm.",
+        "Đúng: Điều 429 BLDS — 03 năm.",
+        "Sai: có thời hiệu."
+      ]
     },
     {
       "q": "Khi chuyển khoản tiền cọc, ghi nội dung thế nào là an toàn nhất?",
@@ -133,7 +187,13 @@
       "answer": 3,
       "explain": "Không xác định rõ thì khoản tiền bị coi là tiền trả trước. Ghi rõ bản chất khoản tiền (đặt cọc), mục đích và điều kiện giúp xác định đúng quyền, nghĩa vụ của hai bên khi có tranh chấp.",
       "basis": "Điều 328 BLDS 2015; Điều 37 Nghị định 21/2021/NĐ-CP",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Nghi-dinh-21-2021-ND-CP-huong-dan-Bo-luat-Dan-su-bao-dam-thuc-hien-nghia-vu-468069.aspx?anchor=dieu_37"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Nghi-dinh-21-2021-ND-CP-huong-dan-Bo-luat-Dan-su-bao-dam-thuc-hien-nghia-vu-468069.aspx?anchor=dieu_37",
+      "why": [
+        "Sai: thiếu bản chất khoản tiền và điều kiện.",
+        "Sai: biên lai không thể hiện thỏa thuận về cọc.",
+        "Sai: ghi \"cho mượn\" làm sai bản chất giao dịch.",
+        "Đúng: ghi rõ đặt cọc, mục đích, điều kiện để tránh bị coi là tiền trả trước."
+      ]
     }
   ]
 }

@@ -27,7 +27,7 @@ describe('why: giải thích từng phương án ở các môn đã làm', () =>
 });
 
 // Bộ đề 10 câu: bộ đã làm xong thì thêm id vào SETS_DONE (cùng quy tắc như trên).
-const SETS_DONE: string[] = [];
+const SETS_DONE: string[] = ['chuyen-khoan-nham', 'dat-coc', 'nghi-viec-giu-luong', 'dan-su-de-1', 'pldc-quan-he-phap-luat', 'pldc-vi-pham-phap-luat'];
 
 describe('why: bộ đề đã làm', () => {
   it('danh sách SETS_DONE trỏ tới bộ đề có thật', () => {

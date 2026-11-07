@@ -16,7 +16,13 @@
       "answer": 1,
       "explain": "Không phải quan hệ xã hội nào cũng là quan hệ pháp luật; chỉ những quan hệ được quy phạm pháp luật điều chỉnh, làm phát sinh quyền và nghĩa vụ pháp lý được Nhà nước bảo đảm.",
       "basis": "Lý luận chung về Nhà nước và pháp luật",
-      "url": ""
+      "url": "",
+      "why": [
+        "Sai: quan hệ tình cảm, phong tục không do pháp luật điều chỉnh thì không phải quan hệ pháp luật.",
+        "Đúng: quan hệ xã hội được quy phạm pháp luật điều chỉnh, quyền và nghĩa vụ được Nhà nước bảo đảm.",
+        "Sai: quan hệ pháp luật không chỉ giữa công dân và Nhà nước.",
+        "Sai: quan hệ do đạo đức điều chỉnh không phải quan hệ pháp luật."
+      ]
     },
     {
       "q": "Cấu trúc (thành phần) của một quan hệ pháp luật gồm những yếu tố nào?",
@@ -29,7 +35,13 @@
       "answer": 1,
       "explain": "Quan hệ pháp luật gồm chủ thể (các bên tham gia), khách thể (lợi ích mà các bên hướng tới) và nội dung (quyền, nghĩa vụ pháp lý). \"Giả định, quy định, chế tài\" là cấu trúc của quy phạm pháp luật; dễ nhầm.",
       "basis": "Lý luận chung về Nhà nước và pháp luật",
-      "url": ""
+      "url": "",
+      "why": [
+        "Sai: giả định, quy định, chế tài là cấu trúc quy phạm pháp luật.",
+        "Đúng: chủ thể, khách thể, nội dung.",
+        "Sai: đây là dấu hiệu của vi phạm pháp luật.",
+        "Sai: đây là yếu tố cấu thành vi phạm."
+      ]
     },
     {
       "q": "Năng lực chủ thể của cá nhân gồm những yếu tố nào?",
@@ -42,7 +54,13 @@
       "answer": 0,
       "explain": "Năng lực chủ thể gồm năng lực pháp luật (khả năng có quyền, nghĩa vụ) và năng lực hành vi (khả năng bằng hành vi của mình xác lập, thực hiện quyền, nghĩa vụ).",
       "basis": "Điều 16, Điều 19 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_16"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_16",
+      "why": [
+        "Đúng: năng lực pháp luật và năng lực hành vi.",
+        "Sai: tài chính, nhận thức không phải hai thành phần.",
+        "Sai: quốc tịch, cư trú không phải năng lực chủ thể.",
+        "Sai: quyền và nghĩa vụ là nội dung quan hệ."
+      ]
     },
     {
       "q": "Năng lực pháp luật dân sự của cá nhân có từ khi nào?",
@@ -55,7 +73,13 @@
       "answer": 3,
       "explain": "Năng lực pháp luật dân sự của cá nhân có từ khi người đó sinh ra và chấm dứt khi người đó chết; mọi cá nhân đều có năng lực pháp luật dân sự như nhau.",
       "basis": "Khoản 2, khoản 3 Điều 16 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_16"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_16",
+      "why": [
+        "Sai: 18 tuổi gắn với năng lực hành vi đầy đủ.",
+        "Sai: không giới hạn tuổi và không phụ thuộc giấy khai sinh.",
+        "Sai: không phụ thuộc căn cước.",
+        "Đúng: khoản 3 Điều 16 — có từ khi sinh ra, chấm dứt khi chết."
+      ]
     },
     {
       "q": "Theo BLDS 2015, người thành niên là người từ bao nhiêu tuổi?",
@@ -68,7 +92,13 @@
       "answer": 2,
       "explain": "Người thành niên là người từ đủ mười tám tuổi trở lên và có năng lực hành vi dân sự đầy đủ, trừ trường hợp mất, hạn chế năng lực hoặc có khó khăn trong nhận thức, làm chủ hành vi.",
       "basis": "Điều 20 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_20"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_20",
+      "why": [
+        "Sai: không phải 15 tuổi.",
+        "Sai: không phải 16 tuổi.",
+        "Đúng: Điều 20 — từ đủ 18 tuổi.",
+        "Sai: không phải 21 tuổi."
+      ]
     },
     {
       "q": "Giao dịch dân sự của người chưa đủ 6 tuổi do ai xác lập, thực hiện?",
@@ -81,7 +111,13 @@
       "answer": 1,
       "explain": "Giao dịch dân sự của người chưa đủ sáu tuổi do người đại diện theo pháp luật xác lập, thực hiện. (Ngoại lệ: giao dịch nhằm đáp ứng nhu cầu thiết yếu hằng ngày không bị vô hiệu, theo khoản 2 Điều 125.)",
       "basis": "Khoản 2 Điều 21 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_21"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_21",
+      "why": [
+        "Sai: người chưa đủ 6 tuổi không tự xác lập giao dịch.",
+        "Đúng: khoản 2 Điều 21 — người đại diện theo pháp luật.",
+        "Sai: Ủy ban xã không phải người đại diện.",
+        "Sai: người thân không phải là đại diện theo pháp luật."
+      ]
     },
     {
       "q": "Một bạn 10 tuổi tự mua hộp bút 30 nghìn đồng ở nhà sách. Giao dịch này thế nào?",
@@ -94,7 +130,13 @@
       "answer": 0,
       "explain": "Người từ đủ 6 đến chưa đủ 15 tuổi xác lập giao dịch phải được người đại diện đồng ý, trừ giao dịch phục vụ nhu cầu sinh hoạt hằng ngày phù hợp với lứa tuổi.",
       "basis": "Khoản 3 Điều 21 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_21"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_21",
+      "why": [
+        "Đúng: khoản 3 Điều 21 — giao dịch sinh hoạt hằng ngày phù hợp lứa tuổi.",
+        "Sai: có ngoại lệ cho giao dịch sinh hoạt hằng ngày.",
+        "Sai: không cần người đại diện đi cùng.",
+        "Sai: không cần ký xác nhận trước."
+      ]
     },
     {
       "q": "Bạn 16 tuổi muốn tự mua một chiếc xe máy (tài sản phải đăng ký). Theo BLDS 2015:",
@@ -107,7 +149,13 @@
       "answer": 2,
       "explain": "Người từ đủ 15 đến chưa đủ 18 tuổi tự mình xác lập giao dịch dân sự, trừ giao dịch liên quan đến bất động sản, động sản phải đăng ký và giao dịch khác theo luật phải được người đại diện theo pháp luật đồng ý.",
       "basis": "Khoản 4 Điều 21 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_21"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_21",
+      "why": [
+        "Sai: xe máy là động sản phải đăng ký.",
+        "Sai: người 15–18 tuổi vẫn được mua nếu người đại diện đồng ý.",
+        "Đúng: khoản 4 Điều 21 — động sản phải đăng ký cần người đại diện đồng ý.",
+        "Sai: giấy phép lái xe không liên quan năng lực giao dịch."
+      ]
     },
     {
       "q": "Sự kiện pháp lý nào sau đây là \"sự biến\"?",
@@ -120,7 +168,13 @@
       "answer": 3,
       "explain": "Sự biến là hiện tượng xảy ra không phụ thuộc vào ý chí con người nhưng làm phát sinh, thay đổi, chấm dứt quan hệ pháp luật (cái chết tự nhiên, thiên tai…). Ký hợp đồng, kết hôn, khởi kiện là hành vi.",
       "basis": "Lý luận chung về Nhà nước và pháp luật",
-      "url": ""
+      "url": "",
+      "why": [
+        "Sai: ký hợp đồng là hành vi.",
+        "Sai: kết hôn là hành vi.",
+        "Sai: khởi kiện là hành vi.",
+        "Đúng: cái chết tự nhiên không phụ thuộc ý chí là sự biến."
+      ]
     },
     {
       "q": "Điều nào sau đây KHÔNG phải điều kiện để một tổ chức được công nhận là pháp nhân theo BLDS 2015?",
@@ -133,7 +187,13 @@
       "answer": 3,
       "explain": "Bốn điều kiện của pháp nhân: thành lập hợp pháp; có cơ cấu tổ chức; có tài sản độc lập và tự chịu trách nhiệm bằng tài sản đó; nhân danh mình tham gia quan hệ pháp luật một cách độc lập. Luật không đặt điều kiện về số thành viên.",
       "basis": "Khoản 1 Điều 74 BLDS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_74"
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_74",
+      "why": [
+        "Sai: thành lập hợp pháp là điều kiện.",
+        "Sai: cơ cấu tổ chức là điều kiện.",
+        "Sai: tài sản độc lập là điều kiện.",
+        "Đúng: khoản 1 Điều 74 không đặt điều kiện số thành viên."
+      ]
     }
   ]
 }

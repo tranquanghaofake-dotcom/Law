@@ -16,7 +16,13 @@
       "answer": 2,
       "explain": "Vi phạm pháp luật là hành vi trái pháp luật, có lỗi, do chủ thể có năng lực trách nhiệm pháp lý thực hiện. Nhiều vi phạm không gây thiệt hại vật chất (ví dụ vượt đèn đỏ khi đường vắng) nhưng vẫn là vi phạm.",
       "basis": "Lý luận chung về Nhà nước và pháp luật",
-      "url": ""
+      "url": "",
+      "why": [
+        "Sai: trái pháp luật là dấu hiệu bắt buộc.",
+        "Sai: có lỗi là dấu hiệu bắt buộc.",
+        "Đúng: nhiều vi phạm không gây thiệt hại vật chất.",
+        "Sai: năng lực trách nhiệm pháp lý là dấu hiệu bắt buộc."
+      ]
     },
     {
       "q": "A nghĩ trong đầu về việc trộm xe của hàng xóm nhưng không làm gì. A có vi phạm pháp luật không?",
@@ -29,7 +35,13 @@
       "answer": 2,
       "explain": "Pháp luật chỉ điều chỉnh hành vi. Suy nghĩ, ý định chưa thể hiện ra bằng hành vi thì không phải vi phạm pháp luật.",
       "basis": "Lý luận chung về Nhà nước và pháp luật",
-      "url": ""
+      "url": "",
+      "why": [
+        "Sai: ý định chưa thành hành vi.",
+        "Sai: kể ý định chưa phải hành vi trái pháp luật.",
+        "Đúng: pháp luật chỉ điều chỉnh hành vi.",
+        "Sai: vi phạm đạo đức không bị xử phạt hành chính."
+      ]
     },
     {
       "q": "Người thực hiện nhận thức rõ hành vi của mình là nguy hiểm cho xã hội, thấy trước hậu quả và mong muốn hậu quả xảy ra. Đây là lỗi gì?",
@@ -42,7 +54,13 @@
       "answer": 0,
       "explain": "Điểm phân biệt của cố ý trực tiếp là \"mong muốn hậu quả xảy ra\". Cố ý gián tiếp thì không mong muốn nhưng có ý thức để mặc cho hậu quả xảy ra.",
       "basis": "Khoản 1 Điều 10 BLHS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Bo-luat-hinh-su-2015-296661.aspx?anchor=dieu_10"
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Bo-luat-hinh-su-2015-296661.aspx?anchor=dieu_10",
+      "why": [
+        "Đúng: khoản 1 Điều 10 BLHS — mong muốn hậu quả là cố ý trực tiếp.",
+        "Sai: cố ý gián tiếp là không mong muốn nhưng để mặc.",
+        "Sai: quá tự tin là tin hậu quả không xảy ra.",
+        "Sai: cẩu thả là không thấy trước hậu quả."
+      ]
     },
     {
       "q": "B giăng dây điện quanh vườn để chống trộm, biết người đi qua có thể bị điện giật nhưng mặc kệ. Một người bị giật chết. Lỗi của B là gì?",
@@ -55,7 +73,13 @@
       "answer": 1,
       "explain": "B thấy trước hậu quả có thể xảy ra, không mong muốn nhưng có ý thức để mặc cho hậu quả xảy ra, nên đây là lỗi cố ý gián tiếp. Mục đích \"chống trộm\" không loại trừ lỗi.",
       "basis": "Khoản 2 Điều 10 BLHS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Bo-luat-hinh-su-2015-296661.aspx?anchor=dieu_10"
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Bo-luat-hinh-su-2015-296661.aspx?anchor=dieu_10",
+      "why": [
+        "Sai: B không mong muốn hậu quả.",
+        "Đúng: khoản 2 Điều 10 — thấy trước, không mong muốn nhưng để mặc.",
+        "Sai: B không tin hậu quả sẽ không xảy ra; B mặc kệ.",
+        "Sai: mục đích chống trộm không loại trừ lỗi."
+      ]
     },
     {
       "q": "Tài xế thấy có thể va chạm với người đi bộ nhưng tin rằng mình phanh kịp, và rồi gây tai nạn. Đây là lỗi gì?",
@@ -68,7 +92,13 @@
       "answer": 2,
       "explain": "Vô ý vì quá tự tin: thấy trước hành vi có thể gây hậu quả nhưng cho rằng hậu quả sẽ không xảy ra hoặc có thể ngăn ngừa được. Vô ý do cẩu thả là không thấy trước hậu quả, dù phải thấy trước và có thể thấy trước.",
       "basis": "Điều 11 BLHS 2015",
-      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Bo-luat-hinh-su-2015-296661.aspx?anchor=dieu_11"
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Bo-luat-hinh-su-2015-296661.aspx?anchor=dieu_11",
+      "why": [
+        "Sai: tài xế không để mặc hậu quả.",
+        "Sai: cẩu thả là không thấy trước; tài xế đã thấy trước.",
+        "Đúng: Điều 11 — thấy trước nhưng tin ngăn được.",
+        "Sai: tài xế đã thấy trước nên không phải sự kiện bất ngờ."
+      ]
     },
     {
       "q": "Theo BLHS hiện hành, người từ bao nhiêu tuổi phải chịu trách nhiệm hình sự về mọi tội phạm (trừ những tội Bộ luật quy định khác)?",
@@ -81,7 +111,13 @@
       "answer": 1,
       "explain": "Người từ đủ 16 tuổi trở lên phải chịu trách nhiệm hình sự về mọi tội phạm, trừ những tội phạm mà Bộ luật có quy định khác.",
       "basis": "Khoản 1 Điều 12 BLHS 2015 (sđ 2017)",
-      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Bo-luat-hinh-su-2015-296661.aspx?anchor=dieu_12"
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Bo-luat-hinh-su-2015-296661.aspx?anchor=dieu_12",
+      "why": [
+        "Sai: 14 tuổi chỉ chịu trách nhiệm một số tội.",
+        "Đúng: khoản 1 Điều 12 BLHS — từ đủ 16 tuổi.",
+        "Sai: không phải 18 tuổi.",
+        "Sai: dưới 14 tuổi không chịu trách nhiệm hình sự."
+      ]
     },
     {
       "q": "Người từ đủ 14 tuổi đến dưới 16 tuổi chịu trách nhiệm hình sự trong trường hợp nào?",
@@ -94,7 +130,13 @@
       "answer": 2,
       "explain": "Nhóm tuổi này chỉ chịu trách nhiệm hình sự khi thỏa cả hai điều kiện: tội phạm rất nghiêm trọng hoặc đặc biệt nghiêm trọng, và thuộc danh sách điều luật liệt kê (giết người, cố ý gây thương tích, cướp, trộm cắp…).",
       "basis": "Khoản 2 Điều 12 BLHS 2015 (sđ 2017)",
-      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Bo-luat-hinh-su-2015-296661.aspx?anchor=dieu_12"
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Bo-luat-hinh-su-2015-296661.aspx?anchor=dieu_12",
+      "why": [
+        "Sai: không phải mọi tội.",
+        "Sai: chỉ tội rất nghiêm trọng, đặc biệt nghiêm trọng.",
+        "Đúng: khoản 2 Điều 12 — tội rất nghiêm trọng, đặc biệt nghiêm trọng thuộc danh sách.",
+        "Sai: nhóm tuổi này có chịu trách nhiệm ở một số tội."
+      ]
     },
     {
       "q": "Một bạn 15 tuổi thực hiện một vi phạm hành chính do VÔ Ý. Bạn đó có bị xử phạt vi phạm hành chính không?",
@@ -107,7 +149,13 @@
       "answer": 1,
       "explain": "Người từ đủ 14 tuổi đến dưới 16 tuổi chỉ bị xử phạt về vi phạm hành chính do cố ý; người từ đủ 16 tuổi trở lên bị xử phạt về mọi vi phạm hành chính.",
       "basis": "Điểm a khoản 1 Điều 5 Luật Xử lý vi phạm hành chính",
-      "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Luat-xu-ly-vi-pham-hanh-chinh-2012-142766.aspx?anchor=dieu_5"
+      "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Luat-xu-ly-vi-pham-hanh-chinh-2012-142766.aspx?anchor=dieu_5",
+      "why": [
+        "Sai: không xử phạt như người đủ 18 tuổi.",
+        "Đúng: điểm a khoản 1 Điều 5 Luật XLVPHC — chỉ xử phạt vi phạm cố ý.",
+        "Sai: lỗi vô ý không bị phạt ở nhóm tuổi này.",
+        "Sai: không truy cứu hình sự thay thế."
+      ]
     },
     {
       "q": "Một hành vi vi phạm hành chính bị xử phạt bao nhiêu lần?",
@@ -120,7 +168,13 @@
       "answer": 3,
       "explain": "Nguyên tắc: một hành vi vi phạm hành chính chỉ bị xử phạt một lần. Nhiều người cùng thực hiện một hành vi thì mỗi người đều bị xử phạt; một người thực hiện nhiều hành vi thì bị xử phạt về từng hành vi.",
       "basis": "Điểm d khoản 1 Điều 3 Luật Xử lý vi phạm hành chính",
-      "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Luat-xu-ly-vi-pham-hanh-chinh-2012-142766.aspx?anchor=dieu_3"
+      "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Luat-xu-ly-vi-pham-hanh-chinh-2012-142766.aspx?anchor=dieu_3",
+      "why": [
+        "Sai: không phải mỗi cơ quan một lần.",
+        "Sai: không phải hai lần.",
+        "Sai: không tùy mức thiệt hại.",
+        "Đúng: điểm d khoản 1 Điều 3 Luật XLVPHC — chỉ một lần."
+      ]
     },
     {
       "q": "Theo cách phân loại phổ biến trong giáo trình, vi phạm pháp luật gồm những loại nào?",
@@ -133,7 +187,13 @@
       "answer": 0,
       "explain": "Tương ứng là bốn loại trách nhiệm pháp lý: hình sự, hành chính, dân sự, kỷ luật. Phương án D là cách phân loại tội phạm (Điều 9 BLHS), không phải phân loại vi phạm pháp luật nói chung.",
       "basis": "Lý luận chung về Nhà nước và pháp luật",
-      "url": ""
+      "url": "",
+      "why": [
+        "Đúng: hình sự, hành chính, dân sự, kỷ luật.",
+        "Sai: đạo đức, tôn giáo không phải vi phạm pháp luật.",
+        "Sai: đây là hình thức lỗi và trường hợp loại trừ.",
+        "Sai: đây là phân loại tội phạm (Điều 9 BLHS)."
+      ]
     }
   ]
 }
