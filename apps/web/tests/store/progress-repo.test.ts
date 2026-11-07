@@ -121,6 +121,13 @@ describe('progress repo — fallback chỉ khi IndexedDB không mở được (C
     expect([...days].sort()).toEqual(['2026-10-30', '2026-10-31']);
     expect((await repo.reviewDays(new Date(2026, 9, 31))).has('2026-10-30')).toBe(false);
   });
+  it('reviews(since) trả các lượt trả lời từ mốc, kèm rating (1 = sai)', async () => {
+    const repo = createRepo('t-rev');
+    await repo.record({ conceptId: 'a', subject: 'hp', correct: true, elapsedMs: 1000, now: new Date(2026, 9, 20, 10) });
+    await repo.record({ conceptId: 'b', subject: 'hp', correct: false, elapsedMs: 1000, now: new Date(2026, 9, 30, 10) });
+    const rows = await repo.reviews(new Date(2026, 9, 25));
+    expect(rows.map((r) => [r.conceptId, r.rating])).toEqual([['b', 1]]);
+  });
 
   it('importAll file xuất cũ: bỏ hyperAt/conf, giữ phần còn lại', async () => {
     const repo = createRepo('t-old');

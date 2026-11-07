@@ -1,5 +1,7 @@
 <script lang="ts">
   import StreakPanel from '$lib/ui/StreakPanel.svelte';
+  import WeakPanel from '$lib/ui/WeakPanel.svelte';
+  import { loadWeak, type WeakData } from '$lib/ui/weak';
     import StreakBadge from '$lib/art/StreakBadge.svelte';
   import Bookcase from '$lib/ui/Bookcase.svelte';
   import CareerSection from '$lib/ui/career/CareerSection.svelte';
@@ -29,6 +31,8 @@
   let msg = $state('');
   let loaded = $state(false); // số liệu thật đã về (CountUp chỉ so/đếm khi true)
   let careerSec = $state<{ scrollToNext: () => void } | null>(null);
+  let weak = $state<WeakData>({ items: [], levels: [] });
+  let weakReady = $state(false);
 
   if (!shelf.ready) refreshShelf();
   const cs = $derived(careerState(shelf.books));
@@ -50,6 +54,8 @@
       byLevel = counts;
       week = weekFlags(await repo.reviewDays(weekStart()));
       loaded = true;
+      try { weak = await loadWeak(); } catch { /* không có dữ liệu điểm yếu: để trống */ }
+      weakReady = true;
     } catch (e) { msg = `Không tải được dữ liệu: ${(e as Error).message}`; }
   }
   $effect(() => { document.title = onSettings ? 'Cài đặt · Luyện Luật' : 'Hồ sơ · Luyện Luật'; });
@@ -67,6 +73,7 @@
   const SECTIONS = [
     { id: 'su-nghiep', title: 'Sự nghiệp' },
     { id: 'chuyen-can', title: 'Chuyên cần & tiến độ' },
+    { id: 'diem-yeu', title: 'Điểm yếu' },
   ] as const;
   type SecId = (typeof SECTIONS)[number]['id'];
   const LS_KEY = 'll-profile-open';
@@ -104,6 +111,7 @@
   const summary = $derived<Record<SecId, string>>({
     'su-nghiep': `${cs.achieved.size}/${POSTS.length} chức`,
     'chuyen-can': `${streak.count} ngày`,
+    'diem-yeu': weakReady ? (weak.items.length ? `${weak.items.length} bài cần ôn` : 'Chưa đủ dữ liệu') : '',
   });
 </script>
 
@@ -111,6 +119,7 @@
   <svg class="acc-ico" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
     {#if id === 'su-nghiep'}<rect x="8.5" y="3" width="7" height="4.5" rx="1" /><path d="M12 7.5V11M5 15.5V11h14v4.5" /><rect x="2.5" y="15.5" width="5" height="4.5" rx="1" /><rect x="16.5" y="15.5" width="5" height="4.5" rx="1" />
     {:else if id === 'chuyen-can'}<rect x="3" y="5.5" width="18" height="13" rx="2" /><path d="M12 8.5v7M8.5 10.5h7M7 14l2 .8M17 14l-2 .8" />
+    {:else if id === 'diem-yeu'}<circle cx="12" cy="12" r="8.5" /><circle cx="12" cy="12" r="4.5" /><circle cx="12" cy="12" r="1" />
     {/if}
   </svg>
 {/snippet}
@@ -179,6 +188,8 @@
               <div class="acc-body">
                 {#if s.id === 'su-nghiep'}
                   <CareerSection bind:this={careerSec} />
+                {:else if s.id === 'diem-yeu'}
+                  <WeakPanel data={weak} ready={weakReady} />
                 {:else}
                   <StreakPanel {streak} {xp} {week} {byLevel} ready={loaded} />
                 {/if}
