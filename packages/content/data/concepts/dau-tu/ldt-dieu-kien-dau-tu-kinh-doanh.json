@@ -75,7 +75,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 9 Điều 3 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 9 Điều 3 — điều kiện đầu tư kinh doanh không bao gồm tiêu chuẩn, quy chuẩn kỹ thuật về chất lượng sản phẩm, dịch vụ.",
+    "Sai: giấy phép là một hình thức điều kiện đầu tư kinh doanh.",
+    "Sai: yêu cầu về vốn tối thiểu có thể là điều kiện đầu tư kinh doanh.",
+    "Sai: chứng chỉ hành nghề là một hình thức điều kiện đầu tư kinh doanh."
+   ]
   },
   {
    "type": "mcq",
@@ -92,7 +98,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 9 Điều 3 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 9 Điều 3 — áp dụng khi kinh doanh ngành, nghề đầu tư kinh doanh có điều kiện.",
+    "Sai: mức vốn không quyết định việc áp dụng điều kiện.",
+    "Sai: nhà đầu tư nước ngoài áp dụng điều kiện tiếp cận thị trường, là khái niệm khác.",
+    "Sai: đầu tư ra nước ngoài có thủ tục riêng, không phải nội dung khoản 9 Điều 3."
+   ]
   },
   {
    "type": "pair",

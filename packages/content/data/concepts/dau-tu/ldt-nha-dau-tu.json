@@ -86,7 +86,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 18 Điều 3 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 18 Điều 3 — gồm nhà đầu tư trong nước, nhà đầu tư nước ngoài và tổ chức kinh tế có vốn đầu tư nước ngoài.",
+    "Sai: thiếu tổ chức kinh tế có vốn đầu tư nước ngoài.",
+    "Sai: doanh nghiệp nhà nước là nhà đầu tư trong nước, không phải nhóm riêng; và thiếu tổ chức có vốn nước ngoài.",
+    "Sai: thiếu nhà đầu tư trong nước."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 18 Điều 3 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 18 Điều 3 — nhà đầu tư thực hiện hoạt động đầu tư kinh doanh.",
+    "Sai: quản lý nhà nước là việc của cơ quan nhà nước.",
+    "Sai: đầu tư công thuộc Luật Đầu tư công.",
+    "Sai: tư vấn đầu tư là dịch vụ, không phải định nghĩa nhà đầu tư."
+   ]
   },
   {
    "type": "pair",

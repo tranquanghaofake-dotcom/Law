@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 2 Luật Thuế thu nhập cá nhân 2025 (109/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 2 Điều 2 Luật Thuế thu nhập cá nhân 2025 — có mặt từ 183 ngày trở lên trong năm dương lịch hoặc 12 tháng liên tục.",
+    "Sai: 90 ngày không phải mốc cư trú.",
+    "Sai: 120 ngày không phải mốc cư trú.",
+    "Sai: mốc là 183 ngày, không đòi cả năm."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 2 Luật Thuế thu nhập cá nhân 2025 (109/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 2 — cá nhân không cư trú nộp thuế với thu nhập chịu thuế phát sinh trong lãnh thổ Việt Nam.",
+    "Sai: thu nhập trong và ngoài lãnh thổ là phạm vi của cá nhân cư trú.",
+    "Sai: cá nhân không cư trú vẫn nộp thuế với thu nhập phát sinh tại Việt Nam.",
+    "Sai: thu nhập ở nước ngoài của người không cư trú không chịu thuế Việt Nam."
+   ]
   },
   {
    "type": "pair",

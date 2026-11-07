@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 128 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 128 — chào bán cho dưới 100 nhà đầu tư, không kể nhà đầu tư chứng khoán chuyên nghiệp.",
+    "Sai: 50 không phải ngưỡng luật định.",
+    "Sai: 200 vượt ngưỡng luật định.",
+    "Sai: chào bán riêng lẻ luôn bị giới hạn số nhà đầu tư."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 128 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 2 Điều 128 — trái phiếu chuyển đổi riêng lẻ chào bán cho nhà đầu tư chiến lược (và nhà đầu tư chứng khoán chuyên nghiệp).",
+    "Sai: có vốn lớn chưa đủ; luật không dùng tiêu chí này.",
+    "Sai: ngân hàng thương mại không phải nhóm được nêu riêng.",
+    "Sai: người lao động không phải đối tượng mua trái phiếu chuyển đổi riêng lẻ."
+   ]
   },
   {
    "type": "pair",

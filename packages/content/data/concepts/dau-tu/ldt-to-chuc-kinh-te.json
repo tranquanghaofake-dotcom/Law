@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 21 Điều 3 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 21 Điều 3 — tổ chức kinh tế thành lập và hoạt động theo pháp luật Việt Nam.",
+    "Sai: tổ chức thành lập theo pháp luật nước ngoài là nhà đầu tư nước ngoài.",
+    "Sai: điều ước quốc tế không phải căn cứ thành lập tổ chức kinh tế.",
+    "Sai: đây là tổ chức kinh tế tại Việt Nam, theo pháp luật Việt Nam."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 19 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 19 (Luật Đầu tư 2025) — nhà đầu tư nước ngoài được thành lập tổ chức kinh tế trước khi làm thủ tục cấp, điều chỉnh Giấy chứng nhận đăng ký đầu tư.",
+    "Sai: không phải chờ dự án hoàn thành.",
+    "Sai: không cần Quốc hội chấp thuận.",
+    "Sai: nhà đầu tư nước ngoài được thành lập tổ chức kinh tế."
+   ]
   },
   {
    "type": "pair",

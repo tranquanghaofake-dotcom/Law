@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 4 Luật Chứng khoán — trái phiếu xác nhận quyền đối với một phần nợ của tổ chức phát hành.",
+    "Sai: phần vốn cổ phần là cổ phiếu.",
+    "Sai: phần vốn góp của quỹ là chứng chỉ quỹ.",
+    "Sai: quyền mua cổ phiếu mới là quyền mua cổ phần hoặc chứng quyền."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: người sở hữu trái phiếu là chủ nợ của tổ chức phát hành.",
+    "Sai: cổ đông sở hữu cổ phần, không phải trái phiếu.",
+    "Sai: thành viên góp vốn có trong công ty trách nhiệm hữu hạn, không phải người mua trái phiếu.",
+    "Sai: người mua trái phiếu không tham gia quản lý doanh nghiệp."
+   ]
   },
   {
    "type": "pair",

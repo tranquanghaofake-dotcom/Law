@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 9 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 9 — tài sản hợp pháp không bị quốc hữu hóa hoặc tịch thu bằng biện pháp hành chính.",
+    "Sai: Điều 9 bảo đảm quyền sở hữu, không miễn thuế.",
+    "Sai: khoản 2 Điều 9 vẫn cho trưng mua, trưng dụng vì quốc phòng, an ninh, lợi ích quốc gia, khẩn cấp.",
+    "Sai: Nhà nước không bảo hiểm giá trị tài sản đầu tư."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 9 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 9 — được thanh toán, bồi thường theo pháp luật về trưng mua, trưng dụng tài sản.",
+    "Sai: luật buộc thanh toán, bồi thường.",
+    "Sai: Điều 9 không quy định cấp đất mới miễn phí.",
+    "Sai: không có miễn thuế vĩnh viễn."
+   ]
   },
   {
    "type": "pair",

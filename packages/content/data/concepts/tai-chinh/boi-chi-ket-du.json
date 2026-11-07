@@ -82,7 +82,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 74 Luật Ngân sách nhà nước 2025 (89/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 74 Luật Ngân sách nhà nước 2025 — sau khi trả nợ, còn dư thì trích 50% vào quỹ dự trữ tài chính cùng cấp, 50% vào thu ngân sách năm sau.",
+    "Sai: luật chia đôi, không trích toàn bộ vào quỹ dự trữ tài chính.",
+    "Sai: quỹ dự trữ ngoại hối do Ngân hàng Nhà nước quản lý theo luật khác, không nhận kết dư ngân sách.",
+    "Sai: kết dư không được dùng để chi thưởng."
+   ]
   },
   {
    "type": "mcq",
@@ -99,7 +105,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 74 Luật Ngân sách nhà nước 2025 (89/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 74 — kết dư ngân sách cấp xã được hạch toán vào thu ngân sách năm sau.",
+    "Sai: kết dư không được dùng để chi thưởng cán bộ.",
+    "Sai: kết dư thuộc ngân sách cấp xã, không hoàn trả trung ương.",
+    "Sai: kết dư là nguồn thu, không bị hủy."
+   ]
   },
   {
    "type": "pair",

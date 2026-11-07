@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 16 Điều 3 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 16 Điều 3 — chuyên sản xuất hàng công nghiệp và cung ứng dịch vụ cho sản xuất công nghiệp.",
+    "Sai: du lịch, nghỉ dưỡng không phải chức năng của khu công nghiệp.",
+    "Sai: phát triển đô thị, nhà ở không phải chức năng của khu công nghiệp.",
+    "Sai: nông nghiệp không phải chức năng của khu công nghiệp."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 15 Điều 3 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 15 Điều 3 — khu chế xuất là khu công nghiệp chuyên sản xuất hàng xuất khẩu.",
+    "Sai: khu kinh tế gồm nhiều khu chức năng (khoản 17 Điều 3).",
+    "Sai: khu công nghệ cao thuộc Luật Công nghệ cao, không định nghĩa là khu sản xuất hàng xuất khẩu.",
+    "Sai: khu đô thị không phải khu sản xuất."
+   ]
   },
   {
    "type": "pair",

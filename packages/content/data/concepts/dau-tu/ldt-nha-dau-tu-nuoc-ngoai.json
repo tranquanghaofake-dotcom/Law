@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 19 Điều 3 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 19 Điều 3 — tổ chức thành lập theo pháp luật nước ngoài.",
+    "Sai: quốc tịch của giám đốc không quyết định tổ chức là nhà đầu tư nước ngoài.",
+    "Sai: vị trí trụ sở không phải tiêu chí.",
+    "Sai: quy mô vốn không phải tiêu chí."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 19 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 19 — phải đáp ứng điều kiện tiếp cận thị trường đối với nhà đầu tư nước ngoài (Điều 8).",
+    "Sai: luật không đặt vốn tối thiểu chung một triệu USD.",
+    "Sai: không bắt buộc có đối tác Việt Nam góp trên 30%, trừ ngành có điều kiện riêng.",
+    "Sai: không cần nghị quyết của Quốc hội."
+   ]
   },
   {
    "type": "pair",

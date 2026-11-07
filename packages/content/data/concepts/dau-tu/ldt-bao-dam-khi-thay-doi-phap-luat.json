@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 12 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 12 Luật Đầu tư 2025 — ưu đãi mới cao hơn thì hưởng theo quy định mới cho thời gian hưởng ưu đãi còn lại.",
+    "Sai: nhà đầu tư được hưởng mức mới có lợi hơn, không bị buộc giữ mức cũ.",
+    "Sai: không cộng dồn hai mức ưu đãi.",
+    "Sai: nhà đầu tư được hưởng ngay cho thời gian còn lại."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 12 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 12 — ưu đãi mới thấp hơn thì tiếp tục hưởng ưu đãi cũ cho thời gian còn lại.",
+    "Sai: luật bảo đảm không áp mức thấp hơn cho dự án đang hưởng.",
+    "Sai: không phải hoàn lại ưu đãi đã hưởng hợp pháp.",
+    "Sai: thay đổi pháp luật không làm chấm dứt dự án."
+   ]
   },
   {
    "type": "pair",

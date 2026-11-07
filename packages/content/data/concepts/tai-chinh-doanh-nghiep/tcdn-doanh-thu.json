@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 8 Luật Thuế thu nhập doanh nghiệp 2025 (67/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 8 Luật Thuế thu nhập doanh nghiệp 2025 — doanh thu tính thuế không phân biệt đã thu được tiền hay chưa.",
+    "Sai: luật ghi nhận doanh thu khi phát sinh, không chờ tiền về tài khoản.",
+    "Sai: không đòi đối chiếu công nợ.",
+    "Sai: không đòi khách hàng thanh toán đủ."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 8 Luật Thuế thu nhập doanh nghiệp 2025 (67/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 8 — doanh thu gồm cả trợ giá, phụ thu, phụ trội mà doanh nghiệp được hưởng.",
+    "Sai: vốn góp là vốn chủ sở hữu, không phải doanh thu.",
+    "Sai: tiền vay là nợ phải trả, không phải doanh thu.",
+    "Sai: tiền ký quỹ phải hoàn trả, không phải doanh thu."
+   ]
   },
   {
    "type": "pair",

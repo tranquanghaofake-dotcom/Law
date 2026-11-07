@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 10 Nghị quyết 198/2025/QH15 về phát triển kinh tế tư nhân"
-   }
+   },
+   "why": [
+    "Đúng: khoản 7 Điều 10 Nghị quyết 198/2025/QH15 — chấm dứt thu, nộp lệ phí môn bài từ 01/01/2026.",
+    "Sai: Nghị quyết bỏ hẳn lệ phí môn bài, không tăng mức thu.",
+    "Sai: chấm dứt với mọi đối tượng, không giữ riêng doanh nghiệp lớn.",
+    "Sai: lệ phí môn bài không chuyển thành thuế tài nguyên."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 10 Nghị quyết 198/2025/QH15 về phát triển kinh tế tư nhân"
-   }
+   },
+   "why": [
+    "Đúng: khoản 6 Điều 10 Nghị quyết 198/2025/QH15 — bỏ thuế khoán, hộ kinh doanh nộp thuế theo pháp luật về quản lý thuế.",
+    "Sai: phương pháp khoán thuế bị bỏ từ 01/01/2026.",
+    "Sai: hộ kinh doanh vẫn phải nộp thuế và kê khai theo luật.",
+    "Sai: lệ phí môn bài đã chấm dứt và không thay thế thuế giá trị gia tăng."
+   ]
   },
   {
    "type": "pair",

@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 36 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 36 — tài sản không phải Đồng Việt Nam, ngoại tệ tự do chuyển đổi, vàng mới phải định giá; vàng không phải định giá.",
+    "Sai: quyền sử dụng đất phải định giá thành Đồng Việt Nam.",
+    "Sai: quyền sở hữu trí tuệ phải định giá.",
+    "Sai: máy móc thiết bị phải định giá."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 36 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 36 — các thành viên, cổ đông sáng lập liên đới góp thêm số chênh lệch và liên đới chịu trách nhiệm thiệt hại.",
+    "Sai: luật buộc góp bù chênh lệch, không để công ty tự giảm vốn.",
+    "Sai: trách nhiệm là liên đới của những người định giá, không chỉ người góp và không chỉ bị phạt.",
+    "Sai: định giá sai không làm hợp đồng góp vốn vô hiệu toàn bộ."
+   ]
   },
   {
    "type": "pair",

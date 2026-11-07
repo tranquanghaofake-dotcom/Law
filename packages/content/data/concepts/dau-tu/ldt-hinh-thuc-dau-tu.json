@@ -92,7 +92,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 18 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: Điều 18 — đầu tư theo hình thức hợp đồng BCC là một hình thức đầu tư.",
+    "Sai: gửi tiết kiệm không phải hình thức đầu tư kinh doanh.",
+    "Sai: cho vay nặng lãi là hành vi vi phạm, không phải hình thức đầu tư.",
+    "Sai: mua bảo hiểm nhân thọ là tiêu dùng dịch vụ tài chính, không phải đầu tư kinh doanh."
+   ]
   },
   {
    "type": "mcq",
@@ -109,7 +115,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 26 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: điểm c khoản 2 Điều 26 — đầu tư góp vốn, mua cổ phần không phải làm thủ tục cấp Giấy chứng nhận.",
+    "Sai: khoản 2 Điều 26 loại trừ hình thức góp vốn, mua cổ phần.",
+    "Sai: quy mô vốn không thay đổi việc loại trừ này.",
+    "Sai: nhà đầu tư là cá nhân hay tổ chức không thay đổi việc loại trừ."
+   ]
   },
   {
    "type": "pair",

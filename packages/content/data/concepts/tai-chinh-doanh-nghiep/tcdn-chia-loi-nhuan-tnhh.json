@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 69 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 69 Luật Doanh nghiệp — chỉ chia khi đã hoàn thành nghĩa vụ thuế, tài chính và bảo đảm thanh toán đủ nợ đến hạn sau khi chia.",
+    "Sai: Hội đồng thành viên phải tuân thủ điều kiện ở Điều 69, không tự do quyết định.",
+    "Sai: công ty trách nhiệm hữu hạn không niêm yết cổ phiếu; Điều 69 không có điều kiện vốn 100 tỷ đồng.",
+    "Sai: luật không đòi thời gian hoạt động 5 năm."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 69 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 2 Điều 135 — công ty cổ phần còn phải trích lập các quỹ và bù đắp lỗ trước đó.",
+    "Sai: cả hai loại công ty đều phải hoàn thành nghĩa vụ thuế trước khi chia.",
+    "Sai: cổ tức trả bằng tiền Đồng Việt Nam, cổ phần hoặc tài sản khác theo Điều lệ, không bắt buộc ngoại tệ.",
+    "Sai: trả cổ tức không cần ý kiến của Bộ Tài chính."
+   ]
   },
   {
    "type": "pair",

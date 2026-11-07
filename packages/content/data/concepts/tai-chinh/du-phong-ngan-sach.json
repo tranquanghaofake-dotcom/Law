@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 10 Luật Ngân sách nhà nước 2025 (89/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 10 — từ 2% đến 5% tổng chi ngân sách mỗi cấp.",
+    "Sai: tỷ lệ tính trên tổng chi, không phải tổng thu, và là 2–5%.",
+    "Sai: mức tối thiểu là 2% và áp dụng cho mọi cấp ngân sách, không riêng trung ương.",
+    "Sai: mức tối đa là 5% và do luật định, không do Thủ tướng quyết định."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 4 Luật Ngân sách nhà nước 2025 (89/2025/QH15)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 8 Điều 4 — một khoản trong dự toán chi ngân sách chưa phân bổ, đã được cấp có thẩm quyền quyết định ở từng cấp.",
+    "Sai: quỹ ngoại tệ để trả nợ không phải dự phòng ngân sách.",
+    "Sai: kết dư năm trước xử lý theo Điều 74; dự phòng là khoản chưa phân bổ, không phân bổ ngay đầu năm.",
+    "Sai: vay nước ngoài là nguồn bù đắp bội chi, không phải dự phòng."
+   ]
   },
   {
    "type": "pair",

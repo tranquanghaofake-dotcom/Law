@@ -72,7 +72,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 34 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 34 — được chuyển nhượng toàn bộ hoặc một phần dự án.",
+    "Sai: luật cho chuyển nhượng cả một phần dự án.",
+    "Sai: không giới hạn ở phần đã hoàn thành.",
+    "Sai: nhà đầu tư có quyền chuyển nhượng khi đủ điều kiện."
+   ]
   },
   {
    "type": "mcq",
@@ -89,7 +95,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 34 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 34 — dự án hoặc phần dự án không bị chấm dứt hoạt động theo khoản 1, 2 Điều 36.",
+    "Sai: luật không đòi dự án có lãi hai năm.",
+    "Sai: bên nhận không bắt buộc là doanh nghiệp nhà nước.",
+    "Sai: chuyển nhượng dự án không cần nghị quyết của Quốc hội."
+   ]
   },
   {
    "type": "pair",

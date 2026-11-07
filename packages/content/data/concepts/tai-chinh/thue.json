@@ -86,7 +86,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 70 Hiến pháp 2013 — Quốc hội quy định, sửa đổi, bãi bỏ các thứ thuế.",
+    "Sai: Chính phủ chỉ quy định chi tiết thi hành luật thuế.",
+    "Sai: Bộ Tài chính hướng dẫn thi hành, không đặt ra thuế.",
+    "Sai: Hội đồng nhân dân cấp tỉnh không có quyền đặt ra thuế."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
-   }
+   },
+   "why": [
+    "Đúng: thuế giá trị gia tăng cộng vào giá bán, người tiêu dùng chịu nên là thuế gián thu.",
+    "Sai: thuế thu nhập cá nhân đánh thẳng vào thu nhập, là thuế trực thu.",
+    "Sai: thuế thu nhập doanh nghiệp đánh vào thu nhập của doanh nghiệp, là thuế trực thu.",
+    "Sai: thuế sử dụng đất phi nông nghiệp đánh vào người sử dụng đất, là thuế trực thu."
+   ]
   },
   {
    "type": "pair",

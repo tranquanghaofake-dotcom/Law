@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 3 Luật Thuế tài nguyên 2009 (sửa đổi, bổ sung năm 2014, 2022)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 3 — tổ chức, cá nhân khai thác tài nguyên thuộc đối tượng chịu thuế.",
+    "Sai: người tiêu dùng không trực tiếp khai thác tài nguyên.",
+    "Sai: cơ quan quản lý không phải người nộp thuế.",
+    "Sai: người mua lại không khai thác; người khai thác mới nộp thuế."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 2 Luật Thuế tài nguyên 2009 (sửa đổi, bổ sung năm 2014, 2022)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 7 Điều 2 trừ nước thiên nhiên dùng cho nông nghiệp, lâm nghiệp, ngư nghiệp, diêm nghiệp.",
+    "Sai: dầu thô là đối tượng chịu thuế (khoản 3 Điều 2).",
+    "Sai: khoáng sản kim loại là đối tượng chịu thuế (khoản 1 Điều 2).",
+    "Sai: yến sào thiên nhiên là đối tượng chịu thuế (khoản 8 Điều 2)."
+   ]
   },
   {
    "type": "pair",

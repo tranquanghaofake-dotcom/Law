@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 17 Điều 3 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 17 Điều 3 — khu kinh tế gồm nhiều khu chức năng; khu công nghiệp chỉ chuyên sản xuất công nghiệp.",
+    "Sai: cả hai đều có ranh giới địa lý xác định.",
+    "Sai: chuyên sản xuất hàng xuất khẩu là khu chế xuất.",
+    "Sai: khu kinh tế do Nhà nước thành lập, không do nhà đầu tư nước ngoài lập."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 17 Điều 3 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 17 Điều 3 — thu hút đầu tư, phát triển kinh tế – xã hội và bảo vệ quốc phòng, an ninh.",
+    "Sai: sản xuất công nghiệp, xuất khẩu là chức năng của khu công nghiệp, khu chế xuất.",
+    "Sai: mục tiêu không phải thu hút vốn vay và du lịch.",
+    "Sai: nông nghiệp, bảo vệ rừng không phải mục tiêu của khu kinh tế theo khoản 17 Điều 3."
+   ]
   },
   {
    "type": "pair",

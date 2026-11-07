@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 8 Điều 3 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 8 Điều 3 — nhà đầu tư bỏ vốn để thực hiện hoạt động kinh doanh.",
+    "Sai: Nhà nước dùng ngân sách là đầu tư công, thuộc Luật Đầu tư công.",
+    "Sai: gửi tiết kiệm không phải hoạt động kinh doanh.",
+    "Sai: mua hàng tiêu dùng là tiêu dùng, không phải đầu tư."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 1 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: Điều 1 — điều chỉnh đầu tư kinh doanh tại Việt Nam và từ Việt Nam ra nước ngoài.",
+    "Sai: đầu tư công thuộc Luật Đầu tư công.",
+    "Sai: Luật Đầu tư áp dụng cho cả nhà đầu tư trong nước.",
+    "Sai: Luật Đầu tư điều chỉnh cả đầu tư tại Việt Nam."
+   ]
   },
   {
    "type": "pair",

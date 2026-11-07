@@ -82,7 +82,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 14 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 1 Điều 14 — dự án thuộc ngành, nghề ưu đãi đầu tư (Điều 15).",
+    "Sai: mới thành lập không phải tiêu chí ưu đãi chung.",
+    "Sai: quốc tịch nhà đầu tư không quyết định ưu đãi.",
+    "Sai: loại hình doanh nghiệp nhà nước không phải tiêu chí ưu đãi."
+   ]
   },
   {
    "type": "mcq",
@@ -99,7 +105,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 14 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: miễn, giảm tiền sử dụng đất, tiền thuê đất là hình thức ưu đãi đầu tư.",
+    "Sai: hỗ trợ đào tạo nguồn nhân lực là hỗ trợ đầu tư.",
+    "Sai: hỗ trợ tín dụng là hỗ trợ đầu tư.",
+    "Sai: hỗ trợ tiếp cận mặt bằng là hỗ trợ đầu tư."
+   ]
   },
   {
    "type": "pair",

@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 3 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 3 — chấp thuận về mục tiêu, địa điểm, quy mô, tiến độ, thời hạn; nhà đầu tư hoặc hình thức lựa chọn nhà đầu tư.",
+    "Sai: cơ cấu vốn điều lệ, cổ đông thuộc pháp luật doanh nghiệp.",
+    "Sai: giá đất, tiền thuê đất do pháp luật đất đai quyết định, không phải nội dung chấp thuận chủ trương.",
+    "Sai: lao động, tiền lương thuộc pháp luật lao động."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 24 Luật Đầu tư 2025"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 24 — dự án chuyển mục đích sử dụng đất trồng lúa nước hai vụ trở lên quy mô lớn thuộc diện chấp thuận chủ trương.",
+    "Sai: cửa hàng tạp hóa nhỏ là hoạt động kinh doanh thông thường.",
+    "Sai: góp vốn vào công ty không cần chấp thuận chủ trương.",
+    "Sai: thuê văn phòng không phải dự án cần chấp thuận chủ trương."
+   ]
   },
   {
    "type": "pair",
