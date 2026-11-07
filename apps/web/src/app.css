@@ -292,6 +292,9 @@ h2 { font-size: var(--fs-xl); line-height: var(--lh-snug); font-weight: 700; mar
 .word:disabled { opacity: .35; cursor: default; }
 .recall textarea { width: 100%; font: inherit; padding: var(--sp-3); border-radius: var(--r-md); border: 1px solid var(--line); background: var(--paper); color: inherit; resize: vertical; margin-bottom: var(--sp-3); }
 .recall mark { background: color-mix(in srgb, var(--ok) 25%, transparent); color: inherit; border-radius: var(--r-sm); padding: 0 2px; }
+.recall-check { border: 0; padding: 0; margin: var(--sp-3) 0 var(--sp-2); }
+.rc-row { display: flex; align-items: center; gap: var(--sp-2); min-height: 44px; cursor: pointer; }
+.rc-row input { width: 22px; height: 22px; flex: none; accent-color: var(--ok); }
 .kw.ok { color: var(--ok); font-weight: 600; } .kw.bad { color: var(--bad); text-decoration: line-through; }
 kbd { font: 600 var(--fs-xs)/1 var(--font-ui); background: rgba(255,255,255,.18); border-radius: var(--r-sm); padding: var(--sp-1); margin-left: var(--sp-1); }
 .btn.primary kbd { background: rgba(0,0,0,.12); }

@@ -51,6 +51,16 @@ export function buildBank(blanks: string[], extra: string[], rng: () => number):
   return out;
 }
 
+/**
+ * Tự chấm Tự nhớ lại theo từng ý (nguyên tắc "thông tin tối thiểu"): tick bao nhiêu ý bài có đủ.
+ * Cùng ngưỡng với nhận định 3 phần: đủ hết = đúng; ≥ một nửa = gần đúng; còn lại = sai. Không có ý nào để chấm → sai.
+ */
+export function gradeChecklist(ticked: boolean[]): 'dung' | 'gan' | 'sai' {
+  if (!ticked.length) return 'sai';
+  const score = ticked.filter(Boolean).length / ticked.length;
+  return score === 1 ? 'dung' : score >= 0.5 ? 'gan' : 'sai';
+}
+
 export function gradeRecall(text: string, keywords: string[]): { hits: string[]; missing: string[]; score: number } {
   const t = ` ${normalize(text)} `;
   const hits = keywords.filter((k) => t.includes(` ${normalize(k)} `) || t.includes(normalize(k)));

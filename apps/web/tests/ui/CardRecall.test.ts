@@ -18,8 +18,21 @@ describe('CardRecall', () => {
     await fireEvent.input(screen.getByRole('textbox'), { target: { value: 'Vì đó là quyền tài sản trị giá được bằng tiền.' } });
     await fireEvent.click(screen.getByRole('button', { name: /Xem đáp án/ }));
     expect(document.querySelectorAll('mark').length).toBe(2);
-    await fireEvent.click(screen.getByRole('button', { name: /Gần đúng/ }));
+    // 2/3 ý đã được tick sẵn → Gần đủ ý
+    const boxes = screen.getAllByRole('checkbox') as HTMLInputElement[];
+    expect(boxes.map((b) => b.checked)).toEqual([true, true, false]);
+    await fireEvent.click(screen.getByRole('button', { name: /Chốt: Gần đủ ý \(2\/3\)/ }));
     expect(onanswer.mock.calls[0][0]).toMatchObject({ correct: true, selfGrade: 'gan' });
+  });
+  it('người học tick lại từng ý: chưa tick ý nào → Thiếu nhiều ý; tick đủ → Đúng', async () => {
+    const onanswer = vi.fn();
+    render(CardRecall, { props: { concept, item, rng: () => 0.5, onanswer } });
+    await fireEvent.input(screen.getByRole('textbox'), { target: { value: 'không liên quan' } });
+    await fireEvent.click(screen.getByRole('button', { name: /Xem đáp án/ }));
+    expect(screen.getByRole('button', { name: /Chốt: Thiếu nhiều ý \(0\/3\)/ })).toBeTruthy();
+    for (const b of screen.getAllByRole('checkbox')) await fireEvent.click(b);
+    await fireEvent.click(screen.getByRole('button', { name: /Chốt: Đủ ý \(3\/3\)/ }));
+    expect(onanswer.mock.calls[0][0]).toMatchObject({ correct: true, selfGrade: 'dung' });
   });
 });
 
@@ -32,8 +45,7 @@ describe('CardRecall — elapsedMs (I4)', () => {
     await fireEvent.input(screen.getByRole('textbox'), { target: { value: 'quyền tài sản' } });
     await fireEvent.click(screen.getByRole('button', { name: /Xem đáp án/ }));
     vi.advanceTimersByTime(20000);
-    const btns = screen.getAllByRole('button', { name: /^Đúng$/ });
-    await fireEvent.click(btns[btns.length - 1]);
+    await fireEvent.click(screen.getByRole('button', { name: /^Chốt:/ }));
     expect(onanswer.mock.calls[0][0].elapsedMs).toBe(2000);
     vi.useRealTimers();
   });

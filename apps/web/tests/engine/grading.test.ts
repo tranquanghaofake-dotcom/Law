@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { buildBank, gradeCloze, gradeRecall, normalize, parseCloze, scoreNhanDinh } from '$lib/engine/grading';
+import { buildBank, gradeChecklist, gradeCloze, gradeRecall, normalize, parseCloze, scoreNhanDinh } from '$lib/engine/grading';
 
 describe('normalize', () => {
   it('hạ chữ thường, bỏ dấu câu, gộp khoảng trắng', () => {
@@ -59,5 +59,15 @@ describe('scoreNhanDinh: chấm nhận định 0,25 · 0,25 · 0,5', () => {
   });
   it('dưới 0,5: tính là sai', () => {
     expect(scoreNhanDinh(item, { tf: false, basis: 1, reason: 3 })).toMatchObject({ score: 0.25, correct: false, grade: 'sai' });
+  });
+});
+
+describe('gradeChecklist: tự chấm từng ý', () => {
+  it('đủ hết = dung; ≥ một nửa = gan; ít hơn = sai; rỗng = sai', () => {
+    expect(gradeChecklist([true, true, true])).toBe('dung');
+    expect(gradeChecklist([true, true, false, false])).toBe('gan');
+    expect(gradeChecklist([true, false, false, false])).toBe('sai');
+    expect(gradeChecklist([false, false])).toBe('sai');
+    expect(gradeChecklist([])).toBe('sai');
   });
 });
