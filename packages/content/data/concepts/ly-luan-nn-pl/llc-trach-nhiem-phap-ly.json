@@ -156,9 +156,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Trách nhiệm pháp lý chỉ phát sinh khi có vi phạm pháp luật.",
+   "statement": "Chủ sở hữu nguồn nguy hiểm cao độ gây thiệt hại phải bồi thường thì phải có lỗi.",
    "answer": false,
-   "explain": "Sai. Có trường hợp luật quy định trách nhiệm khi có thiệt hại dù không có vi phạm (ví dụ bồi thường thiệt hại do nguồn nguy hiểm cao độ)."
+   "explain": "Sai. Khoản 3 Điều 601 Bộ luật Dân sự 2015: chủ sở hữu, người chiếm hữu, sử dụng nguồn nguy hiểm cao độ phải bồi thường cả khi không có lỗi (trừ các trường hợp luật loại trừ)."
   },
   {
    "type": "recall",

@@ -142,9 +142,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi nhà nước trong lịch sử đều có tính giai cấp và tính xã hội với tỷ lệ như nhau.",
+   "statement": "Tỷ lệ giữa tính giai cấp và tính xã hội của nhà nước không thay đổi theo kiểu nhà nước và thời kỳ lịch sử.",
    "answer": false,
-   "explain": "Sai. Hai mặt luôn tồn tại nhưng mức độ biểu hiện khác nhau theo kiểu nhà nước và điều kiện lịch sử."
+   "explain": "Sai. Hai mặt thống nhất nhưng tỷ lệ thay đổi theo kiểu nhà nước và điều kiện lịch sử."
   },
   {
    "type": "recall",

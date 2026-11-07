@@ -158,9 +158,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi vi phạm pháp luật đều có yếu tố mục đích.",
+   "statement": "Vi phạm pháp luật với lỗi vô ý do cẩu thả vẫn có yếu tố mục đích.",
    "answer": false,
-   "explain": "Sai. Mục đích chỉ có ở vi phạm với lỗi cố ý trực tiếp."
+   "explain": "Sai. Mục đích chỉ có ở vi phạm với lỗi cố ý trực tiếp; lỗi vô ý không có mục đích."
   },
   {
    "type": "recall",

@@ -154,9 +154,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Hiến pháp 2013 chỉ ghi nhận hình thức dân chủ đại diện.",
+   "statement": "Theo Điều 6 Hiến pháp 2013, Nhân dân thực hiện quyền lực nhà nước bằng dân chủ đại diện, không bằng dân chủ trực tiếp.",
    "answer": false,
-   "explain": "Sai. Điều 6 ghi nhận cả dân chủ trực tiếp và dân chủ đại diện."
+   "explain": "Sai. Điều 6 Hiến pháp 2013 ghi nhận cả dân chủ trực tiếp và dân chủ đại diện."
   },
   {
    "type": "recall",
