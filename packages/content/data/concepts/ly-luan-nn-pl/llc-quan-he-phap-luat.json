@@ -153,9 +153,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi quan hệ xã hội đều là quan hệ pháp luật.",
+   "statement": "Quan hệ tình bạn giữa hai người là quan hệ pháp luật.",
    "answer": false,
-   "explain": "Sai. Chỉ quan hệ xã hội được quy phạm pháp luật điều chỉnh mới là quan hệ pháp luật."
+   "explain": "Sai. Chỉ quan hệ xã hội được quy phạm pháp luật điều chỉnh mới là quan hệ pháp luật; tình bạn, tình yêu không thuộc loại này."
   },
   {
    "type": "recall",

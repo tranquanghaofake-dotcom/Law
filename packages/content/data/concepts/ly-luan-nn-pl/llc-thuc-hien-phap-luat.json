@@ -156,9 +156,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Sử dụng pháp luật là hình thức bắt buộc chủ thể phải thực hiện.",
+   "statement": "Nộp thuế theo quy định là ví dụ về hình thức sử dụng pháp luật.",
    "answer": false,
-   "explain": "Sai. Sử dụng pháp luật là thực hiện quyền được phép, chủ thể có thể không thực hiện."
+   "explain": "Sai. Nộp thuế là nghĩa vụ bắt buộc nên thuộc hình thức thi hành pháp luật; sử dụng pháp luật là thực hiện quyền được phép."
   },
   {
    "type": "recall",

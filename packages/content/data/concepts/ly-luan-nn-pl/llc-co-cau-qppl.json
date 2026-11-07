@@ -155,7 +155,7 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mỗi điều luật luôn chứa đúng một quy phạm pháp luật với đủ ba bộ phận.",
+   "statement": "Quy phạm pháp luật và điều luật là hai khái niệm đồng nhất với nhau.",
    "answer": false,
    "explain": "Sai. Một điều luật có thể chứa nhiều quy phạm hoặc thiếu bộ phận (chế tài ở văn bản khác); quy phạm và điều luật không đồng nhất."
   },

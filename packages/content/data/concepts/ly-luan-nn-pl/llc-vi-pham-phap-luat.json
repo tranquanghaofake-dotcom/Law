@@ -149,9 +149,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi hành vi trái pháp luật đều là vi phạm pháp luật.",
+   "statement": "Hành vi gây thiệt hại trong tình thế cấp thiết là vi phạm pháp luật.",
    "answer": false,
-   "explain": "Sai. Còn cần có lỗi và chủ thể có năng lực trách nhiệm pháp lý; hành vi trái luật trong tình thế cấp thiết không có lỗi."
+   "explain": "Sai. Hành vi này không có lỗi nên không đủ dấu hiệu vi phạm pháp luật; vi phạm cần hành vi trái pháp luật, có lỗi, chủ thể có năng lực trách nhiệm pháp lý."
   },
   {
    "type": "recall",

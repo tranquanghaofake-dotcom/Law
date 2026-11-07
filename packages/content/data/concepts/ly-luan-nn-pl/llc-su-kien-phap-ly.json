@@ -150,9 +150,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi sự kiện xảy ra trong đời sống đều là sự kiện pháp lý.",
+   "statement": "Sự kiện thực tế mà pháp luật không dự liệu gắn với hậu quả pháp lý vẫn là sự kiện pháp lý.",
    "answer": false,
-   "explain": "Sai. Chỉ sự kiện được pháp luật dự liệu gắn với hậu quả pháp lý mới là sự kiện pháp lý."
+   "explain": "Sai. Sự kiện pháp lý phải được pháp luật dự liệu gắn với việc phát sinh, thay đổi hoặc chấm dứt quan hệ pháp luật."
   },
   {
    "type": "recall",

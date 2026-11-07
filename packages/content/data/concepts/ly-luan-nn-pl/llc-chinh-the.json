@@ -151,9 +151,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi nhà nước có vua đều là quân chủ tuyệt đối.",
+   "statement": "Ở chính thể quân chủ lập hiến, vua nắm toàn bộ quyền lực nhà nước.",
    "answer": false,
-   "explain": "Sai. Quân chủ hạn chế (lập hiến) vua bị giới hạn bởi hiến pháp, quyền lực thực tế thuộc nghị viện, chính phủ."
+   "explain": "Sai. Quân chủ hạn chế (lập hiến) vua bị giới hạn bởi hiến pháp, quyền lực thực tế thuộc nghị viện, chính phủ; vua nắm toàn bộ quyền lực là quân chủ tuyệt đối."
   },
   {
    "type": "recall",

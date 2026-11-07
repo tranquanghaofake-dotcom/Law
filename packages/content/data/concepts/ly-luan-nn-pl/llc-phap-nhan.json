@@ -154,9 +154,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi tổ chức được thành lập hợp pháp đều là pháp nhân.",
+   "statement": "Tổ chức được thành lập hợp pháp nhưng không có tài sản độc lập với cá nhân, pháp nhân khác vẫn được công nhận là pháp nhân.",
    "answer": false,
-   "explain": "Sai. Phải đủ cả bốn điều kiện khoản 1 Điều 74; nhiều tổ chức hợp pháp (hộ kinh doanh, doanh nghiệp tư nhân) không có tư cách pháp nhân."
+   "explain": "Sai. Điểm c khoản 1 Điều 74 Bộ luật Dân sự 2015 đòi hỏi có tài sản độc lập và tự chịu trách nhiệm bằng tài sản của mình; thiếu một trong bốn điều kiện thì không là pháp nhân."
   },
   {
    "type": "recall",
