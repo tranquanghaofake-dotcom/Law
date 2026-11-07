@@ -41,12 +41,12 @@ describe('Profile (thẻ căn cước + 2 tab + 3 phần đóng/mở)', () => {
     expect(container.textContent).not.toContain('Thuần thục theo môn');
     expect(container.querySelector('.page-head')).toBeNull();
   });
-  it('2 phần accordion (Sự nghiệp · Chuyên cần & tiến độ): button[aria-expanded] + vùng role=region; mặc định chỉ mở "Sự nghiệp"', async () => {
+  it('3 phần accordion (Sự nghiệp · Chuyên cần & tiến độ · Điểm yếu): button[aria-expanded] + vùng role=region; mặc định chỉ mở "Sự nghiệp"', async () => {
     stubFetch(); route.name = 'profile';
     const { container } = render(Profile);
     const btns = [...container.querySelectorAll<HTMLButtonElement>('.acc-btn')];
-    expect(btns.map((b) => b.querySelector('.acc-t')?.textContent)).toEqual(['Sự nghiệp', 'Chuyên cần & tiến độ']);
-    expect(btns.map((b) => b.getAttribute('aria-expanded'))).toEqual(['true', 'false']);
+    expect(btns.map((b) => b.querySelector('.acc-t')?.textContent)).toEqual(['Sự nghiệp', 'Chuyên cần & tiến độ', 'Điểm yếu']);
+    expect(btns.map((b) => b.getAttribute('aria-expanded'))).toEqual(['true', 'false', 'false']);
     for (const b of btns) {
       const panel = container.querySelector(`#${b.getAttribute('aria-controls')}`)!;
       expect(panel.getAttribute('role')).toBe('region');
@@ -75,7 +75,7 @@ describe('Profile (thẻ căn cước + 2 tab + 3 phần đóng/mở)', () => {
     stubFetch(); route.name = 'profile';
     localStorage.setItem(LS_KEY, JSON.stringify(['chuyen-can', 'khong-co']));
     const first = render(Profile);
-    expect([...first.container.querySelectorAll('.acc-btn')].map((b) => b.getAttribute('aria-expanded'))).toEqual(['false', 'true']);
+    expect([...first.container.querySelectorAll('.acc-btn')].map((b) => b.getAttribute('aria-expanded'))).toEqual(['false', 'true', 'false']);
     expect(first.container.querySelector('.sp')).not.toBeNull();
     await new Promise((r) => setTimeout(r, 50)); cleanup();
     localStorage.setItem(LS_KEY, '{không phải json');
@@ -87,11 +87,11 @@ describe('Profile (thẻ căn cước + 2 tab + 3 phần đóng/mở)', () => {
     stubFetch(); route.name = 'profile';
     localStorage.setItem(LS_KEY, JSON.stringify(['trung-bay', 'du-lieu']));
     const { container } = render(Profile);
-    expect([...container.querySelectorAll('.acc-btn')].map((b) => b.getAttribute('aria-expanded'))).toEqual(['true', 'false']);
+    expect([...container.querySelectorAll('.acc-btn')].map((b) => b.getAttribute('aria-expanded'))).toEqual(['true', 'false', 'false']);
     await new Promise((r) => setTimeout(r, 50)); cleanup();
     localStorage.setItem(LS_KEY, JSON.stringify(['cay', 'chuyen-can']));
     const second = render(Profile);
-    expect([...second.container.querySelectorAll('.acc-btn')].map((b) => b.getAttribute('aria-expanded'))).toEqual(['true', 'true']);
+    expect([...second.container.querySelectorAll('.acc-btn')].map((b) => b.getAttribute('aria-expanded'))).toEqual(['true', 'true', 'false']);
     await new Promise((r) => setTimeout(r, 20));
   });
   it('ở #/cai-dat hiện nội dung Cài đặt trong tab (không có các phần Hồ sơ)', async () => {
