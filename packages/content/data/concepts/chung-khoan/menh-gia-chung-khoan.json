@@ -154,7 +154,7 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Tổ chức phát hành không bao giờ được chào bán chứng khoán với giá thấp hơn mệnh giá.",
+   "statement": "Khi giá chứng khoán trên hệ thống giao dịch thấp hơn mệnh giá, tổ chức phát hành vẫn phải chào bán chứng khoán với giá không thấp hơn mệnh giá.",
    "answer": false,
    "explain": "Sai. Khoản 3 Điều 13: khi giá chứng khoán trên hệ thống giao dịch thấp hơn mệnh giá, tổ chức phát hành được chào bán với giá thấp hơn mệnh giá."
   },

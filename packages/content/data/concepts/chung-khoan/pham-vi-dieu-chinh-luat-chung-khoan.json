@@ -155,7 +155,7 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Luật Chứng khoán 2019 chỉ áp dụng cho tổ chức, cá nhân Việt Nam.",
+   "statement": "Luật Chứng khoán 2019 áp dụng với tổ chức, cá nhân Việt Nam, không áp dụng với tổ chức, cá nhân nước ngoài tham gia đầu tư chứng khoán tại Việt Nam.",
    "answer": false,
    "explain": "Sai. Khoản 1 Điều 2: áp dụng cho cả tổ chức, cá nhân nước ngoài tham gia đầu tư chứng khoán và hoạt động trên thị trường chứng khoán Việt Nam."
   },

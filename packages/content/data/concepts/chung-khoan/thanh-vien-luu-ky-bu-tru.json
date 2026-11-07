@@ -165,9 +165,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Thành viên lưu ký của Tổng công ty lưu ký và bù trừ chỉ có thể là công ty chứng khoán.",
+   "statement": "Ngân hàng thương mại và chi nhánh ngân hàng nước ngoài không được làm thành viên lưu ký của Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam.",
    "answer": false,
-   "explain": "Sai. Còn có ngân hàng thương mại, chi nhánh ngân hàng nước ngoài (điểm a khoản 1 Điều 56)."
+   "explain": "Sai. Thành viên lưu ký gồm công ty chứng khoán, ngân hàng thương mại, chi nhánh ngân hàng nước ngoài được Ủy ban cấp Giấy chứng nhận đăng ký hoạt động lưu ký (điểm a khoản 1 Điều 56)."
   },
   {
    "type": "recall",
