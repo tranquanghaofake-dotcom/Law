@@ -4,7 +4,7 @@
   import type { StepItem } from '$lib/engine/session';
   import type { AnswerResult } from './cards/types';
   import { isInteractiveTarget, isTypingTarget } from './cards/types';
-  import { answerText } from './cards/answer';
+  import { answerText, filledCloze } from './cards/answer';
   import { feedbackSpeech } from './session/speech';
   import { LEVEL_NAMES } from '$lib/game/levels';
   import WhyPanel from './WhyPanel.svelte';
@@ -47,6 +47,7 @@
     {#if levelTo !== null}<span class="chip level-chip">Lên bậc {levelTo}<small> · {LEVEL_NAMES[levelTo]}</small></span>{/if}
     {#if onspeak}<button class="speak" type="button" aria-label="Nghe giải thích" title="Nghe (Space)" onclick={() => onspeak?.(speakText)}><Glyph name="speaker" /></button>{/if}
   </p>
+  {#if item.type === 'cloze'}<p class="why-right cloze-full">{filledCloze(item)}</p>{/if}
   <WhyPanel {concept} {item} correct={result.correct} {explain} chosen={result.chosen} {confusables} />
   {#if item.type !== 'intro'}<MemoCard {concept} {item} />{/if}
   {#if compareWith && !result.correct}<details class="cmp-wrap" open><summary>So sánh «{concept.term}» và «{compareWith.term}»</summary><CompareTable a={concept} b={compareWith} /></details>{/if}

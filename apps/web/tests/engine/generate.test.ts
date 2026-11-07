@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import type { Concept, ItemMcq, ItemPair } from '$lib/content/types';
-import { candidates, definitionsOverlap, genDefTerm, genDefTrueFalse, genExampleConcept, genMatch, genSort, genStats, genTermDef, isGenericPair, pickDistractors, resetGenStats } from '$lib/engine/generate';
+import { candidates, definitionsOverlap, genDefTerm, genExampleConcept, genMatch, genSort, genStats, genTermDef, isGenericPair, pickDistractors, resetGenStats } from '$lib/engine/generate';
 import { mulberry32 } from '$lib/engine/rng';
 import { informative, leaks, MASK, overlaps } from '$lib/engine/text';
 
@@ -89,6 +89,42 @@ describe('genTermDef', () => {
   });
 });
 
+describe('genTermDef: phương án không bị cắt giữa chừng', () => {
+  it('định nghĩa đúng quá dài (phải cắt "…") → null', () => {
+    const a = C('a', { definition: `Chế định a là ${'việc chuyển giao tài sản có điều kiện cho bên kia '.repeat(8)}.` });
+    expect(genTermDef(a, candidates(a, [a, C('b'), C('c'), C('d')]), rng)).toBeNull();
+  });
+  it('nhiễu có định nghĩa quá dài bị bỏ; còn đủ nhiễu ngắn thì vẫn ra câu và không phương án nào có "…"', () => {
+    const a = C('a');
+    const long = C('x', { definition: `Chế định x là ${'quan hệ phức tạp giữa nhiều chủ thể khác nhau '.repeat(8)}.` });
+    const it = genTermDef(a, candidates(a, [a, long, C('b'), C('c'), C('d')]), rng)!;
+    for (const o of it.options) expect(/ …$|\(…\)$/.test(o)).toBe(false);
+  });
+});
+
+describe('genExampleConcept: ví dụ phải là minh hoạ, phương án không lồng nhau', () => {
+  it('ví dụ dạng so sánh/đối chiếu (không phải một minh hoạ) → null', () => {
+    const a = C('a', { example: 'So sánh với thời Lê: cả hai đều có Lục bộ; thời Nguyễn thêm Nội các và Cơ mật viện giúp vua.' });
+    expect(genExampleConcept(a, candidates(a, [a, C('b'), C('c'), C('d')]), rng)).toBeNull();
+  });
+  it('bỏ nhiễu là khái niệm con/cha của đáp án (tên lồng nhau)', () => {
+    const a = C('a', { term: 'Thời hiệu thừa kế', example: 'Người chết năm 2000, đến nay đã quá ba mươi năm mà không ai khởi kiện chia di sản.' });
+    const pool = [a, C('b', { term: 'Thời hiệu' }), C('c', { term: 'Quyền sở hữu' }), C('d', { term: 'Di chúc miệng' }), C('e', { term: 'Người thừa kế' })];
+    for (let seed = 1; seed <= 10; seed++) {
+      const it = genExampleConcept(a, candidates(a, pool), mulberry32(seed));
+      if (it) expect(it.options).not.toContain('Thời hiệu');
+    }
+  });
+  it('câu hỏi trung tính ("Ví dụ trên…"), lời giải thích nêu dấu hiệu của khái niệm', () => {
+    const a = C('a', { keywords: ['chuyển giao tài sản', 'nhận lại tiền', 'có hoàn trả'] });
+    const it = genExampleConcept(a, candidates(a, [a, C('b'), C('c'), C('d')]), rng)!;
+    expect(it.q).toContain('Ví dụ trên');
+    expect(it.q).not.toContain('Tình huống trên');
+    expect(it.explain).toContain('chuyển giao tài sản');
+    expect(it.explain).toContain('nhận lại tiền');
+  });
+});
+
 describe('genExampleConcept', () => {
   it('ví dụ chứa tên khái niệm → null (lộ đáp án)', () => {
     const a = C('a', { example: 'Đây là Chế định a điển hình.' });
@@ -117,42 +153,67 @@ describe('genMatch', () => {
   });
 });
 
+describe('genMatch: mô tả không bị cắt giữa chừng', () => {
+  it('khái niệm có cả định nghĩa lẫn plain đều quá dài → bị bỏ khỏi cặp', () => {
+    const long = `${'quan hệ phức tạp giữa nhiều chủ thể khác nhau '.repeat(8)}.`;
+    const x = C('x', { definition: `Chế định x là ${long}`, plain: long });
+    const m = genMatch(C('a'), [x, C('b'), C('d'), C('e')], rng)!;
+    expect(m.pairs.map((p) => p.conceptId)).not.toContain('x');
+    for (const p of m.pairs) expect(/ …$|\(…\)$/.test(p.text)).toBe(false);
+  });
+});
+
 describe('genSort', () => {
+  const T = (k: string) => `Nhà đầu tư gặp ${k} trong thực tế`; // tình huống đủ dài (≥ 3 tiếng)
   const pair = (left: string, right: string, cases: [string, 'left' | 'right'][]): ItemPair => ({ type: 'pair', level: 2, left, right, cases: cases.map(([text, answer]) => ({ text, answer })), explain: `${left}/${right}` });
   it('gộp tình huống cùng cặp nhãn và tình huống mang một nhãn ở pair khác; ≥ 4, trộn, có cả hai cột', () => {
-    const a = C('a', { term: 'Cổ phiếu', items: [pair('Cổ phiếu', 'Trái phiếu', [['t1', 'left'], ['t2', 'right']])] });
-    const b = C('b', { term: 'Trái phiếu', items: [pair('Trái phiếu', 'Cổ phiếu', [['t3', 'left'], ['t4', 'right']])] });
-    const c = C('c', { items: [pair('Cổ phiếu', 'Chứng chỉ quỹ', [['t5', 'left'], ['t6', 'right']])] });
+    const a = C('a', { term: 'Cổ phiếu', items: [pair('Cổ phiếu', 'Trái phiếu', [[T('t1'), 'left'], [T('t2'), 'right']])] });
+    const b = C('b', { term: 'Trái phiếu', items: [pair('Trái phiếu', 'Cổ phiếu', [[T('t3'), 'left'], [T('t4'), 'right']])] });
+    const c = C('c', { items: [pair('Cổ phiếu', 'Chứng chỉ quỹ', [[T('t5'), 'left'], [T('t6'), 'right']])] });
     const s = genSort(a, [b, c], rng)!;
     expect(s.type).toBe('sort');
     expect(s.cases.length).toBeGreaterThanOrEqual(4);
     expect(s.cases.length).toBeLessThanOrEqual(6);
     const byText = Object.fromEntries(s.cases.map((x) => [x.text.split(' — ').pop()!, x.answer]));
-    const t5 = s.cases.find((x) => x.text.endsWith('t5'));
-    if (t5) expect(t5.text).toBe('Chế định c — t5'); // gộp từ khái niệm khác: ghi kèm tên khái niệm gốc
-    expect(s.cases.find((x) => x.text.endsWith('t1'))!.text).toBe('t1'); // tên "Cổ phiếu" chính là nhãn → không ghi kèm
-    expect(byText).toMatchObject({ t1: 'left', t2: 'right' }); // tình huống của chính khái niệm luôn giữ
-    const expected: Record<string, string> = { t3: 'right', t4: 'left', t5: 'left', [a.example]: 'left', [b.example]: 'right' };
+    const t5 = s.cases.find((x) => x.text.endsWith(T('t5')));
+    if (t5) expect(t5.text).toBe(`Chế định c — ${T('t5')}`); // gộp từ khái niệm khác: ghi kèm tên khái niệm gốc
+    expect(s.cases.find((x) => x.text.endsWith(T('t1')))!.text).toBe(T('t1')); // tên "Cổ phiếu" chính là nhãn → không ghi kèm
+    expect(byText).toMatchObject({ [T('t1')]: 'left', [T('t2')]: 'right' }); // tình huống của chính khái niệm luôn giữ
+    const expected: Record<string, string> = { [T('t3')]: 'right', [T('t4')]: 'left', [T('t5')]: 'left', [a.example]: 'left', [b.example]: 'right' };
     for (const [t, ans] of Object.entries(byText)) if (t in expected) expect(ans).toBe(expected[t]);
-    expect(byText.t6).toBeUndefined(); // nhãn "Chứng chỉ quỹ" không thuộc cặp này
-    const t3 = s.cases.find((x) => x.text === 't3');
+    expect(byText[T('t6')]).toBeUndefined(); // nhãn "Chứng chỉ quỹ" không thuộc cặp này
+    const t3 = s.cases.find((x) => x.text === T('t3'));
     if (t3) expect(t3.conceptId).toBe('b');
   });
   it('nhãn chung chung ("Được phép | Bị cấm") không gộp từ khái niệm khác', () => {
-    const p = pair('Được phép', 'Bị cấm', [['x1', 'left'], ['x2', 'right']]);
+    const p = pair('Được phép', 'Bị cấm', [[T('x1'), 'left'], [T('x2'), 'right']]);
     expect(isGenericPair(p)).toBe(true);
     expect(isGenericPair(pair('Xâm phạm', 'Không xâm phạm', []))).toBe(true);
     expect(isGenericPair(pair('Quỹ đóng', 'Quỹ mở', []))).toBe(false);
     const a = C('a', { items: [p] });
-    const b = C('b', { items: [pair('Được phép', 'Bị cấm', [['x3', 'left'], ['x4', 'right']])] });
+    const b = C('b', { items: [pair('Được phép', 'Bị cấm', [[T('x3'), 'left'], [T('x4'), 'right']])] });
     expect(genSort(a, [b], rng)).toBeNull();
   });
+  it('nhãn đối lập "X | Không phải X" với tình huống chỉ là tên gọi trơn (< 5 tiếng) → bỏ cả câu', () => {
+    const p = pair('Đương sự', 'Không phải đương sự', [['Bị đơn', 'left'], ['Người làm chứng', 'right'], ['Nguyên đơn', 'left'], ['Người phiên dịch', 'right']]);
+    expect(isGenericPair(p)).toBe(true);
+    expect(genSort(C('a', { items: [p] }), [], rng)).toBeNull();
+  });
+  it('nhãn đối lập nhưng tình huống đủ ngữ cảnh (≥ 5 tiếng) thì giữ', () => {
+    const p = pair('Cần áp dụng pháp luật', 'Không cần áp dụng pháp luật', [['Cơ quan nhà nước ra quyết định giải quyết vụ việc cụ thể', 'left'], ['Hai bên tự nguyện thực hiện đúng hợp đồng đã ký', 'right'], ['Tòa án giải quyết tranh chấp thừa kế giữa các con', 'left'], ['Người dân tự thanh toán tiền theo hợp đồng', 'right']]);
+    expect(genSort(C('a', { items: [p] }), [], rng)).not.toBeNull();
+  });
+  it('tình huống quá cụt (< 3 tiếng) bị bỏ khỏi câu xếp cột thường', () => {
+    const a = C('a', { items: [pair('Quỹ đóng', 'Quỹ mở', [['Quỹ X', 'left'], ['Chứng chỉ bán lại trên sàn giao dịch', 'left'], ['Nhà đầu tư rút vốn bất cứ phiên nào', 'right'], ['Quỹ được mua lại theo yêu cầu của nhà đầu tư', 'right'], ['Cổ phiếu niêm yết trên sàn như thường', 'left']])] });
+    const s = genSort(a, [], rng)!;
+    expect(s.cases.map((x) => x.text)).not.toContain('Quỹ X');
+  });
   it('không đủ 4 tình huống → null (không hỏi câu suy ra được)', () => {
-    const a = C('a', { items: [pair('Quỹ đóng', 'Quỹ mở', [['q1', 'left'], ['q2', 'right'], ['q3', 'left']])] });
+    const a = C('a', { items: [pair('Quỹ đóng', 'Quỹ mở', [[T('q1'), 'left'], [T('q2'), 'right'], [T('q3'), 'left']])] });
     expect(genSort(a, [], rng)).toBeNull();
   });
   it('lấy ví dụ của khái niệm có tên trùng nhãn khi ví dụ không lộ nhãn', () => {
-    const a = C('a', { term: 'Quỹ đóng', example: 'Chứng chỉ chỉ bán lại trên sàn.', items: [pair('Quỹ đóng', 'Quỹ mở', [['q1', 'left'], ['q2', 'right'], ['q3', 'right']])] });
+    const a = C('a', { term: 'Quỹ đóng', example: 'Chứng chỉ chỉ bán lại trên sàn.', items: [pair('Quỹ đóng', 'Quỹ mở', [[T('q1'), 'left'], [T('q2'), 'right'], [T('q3'), 'right']])] });
     const b = C('b', { term: 'Quỹ mở', example: 'Nhà đầu tư bán lại chứng chỉ cho quỹ bất cứ phiên nào; quỹ mở luôn mua lại.' });
     const s = genSort(a, [b], rng)!;
     expect(s.cases.map((x) => x.text)).toContain('Chứng chỉ chỉ bán lại trên sàn.');
@@ -192,35 +253,8 @@ describe('dữ liệu thật: câu sinh hợp lệ', () => {
         expect(s.cases.length).toBeGreaterThanOrEqual(4);
         expect(s.cases.some((x) => x.answer === 'left') && s.cases.some((x) => x.answer === 'right')).toBe(true);
       }
-      const f = genDefTrueFalse(c, cands, false, r);
-      if (f) {
-        expect(f.answer).toBe(false);
-        expect(f.statement.endsWith(`«${c.term}».`)).toBe(false);
-      }
     }
   }, 30000);
-});
-
-describe('genDefTrueFalse', () => {
-  it('Đúng: ghép định nghĩa với chính thuật ngữ; Sai: với khái niệm dễ nhầm có định nghĩa khác hẳn', () => {
-    const a = C('a', { confusables: ['b'] });
-    const b = C('b', { term: 'Trách nhiệm tài sản', definition: 'Trách nhiệm tài sản là một hình thức trách nhiệm hoàn toàn khác về tài sản.' });
-    const cands = candidates(a, [a, b]);
-    const t = genDefTrueFalse(a, cands, true, rng)!;
-    expect(t).toMatchObject({ type: 'truefalse', level: 4, answer: true });
-    expect(t.statement).toContain(`«${a.term}»`);
-    expect(t.statement).toContain(MASK);
-    const f = genDefTrueFalse(a, cands, false, rng)!;
-    expect(f.answer).toBe(false);
-    expect(f.statement).toContain(`«${b.term}»`);
-    expect(f.explain).toContain(a.term);
-  }, 120_000); // quét toàn bộ 690 khái niệm: ~30 s khi máy bận, mặc định 30 s gây đỏ ngẫu nhiên
-  it('Sai: không dùng khái niệm có định nghĩa gần trùng, tên bao hàm, hay khái niệm khác chương xa', () => {
-    const a = C('a', { term: 'Quỹ đóng', definition: 'Quỹ đóng là quỹ đại chúng mà chứng chỉ quỹ không được mua lại theo yêu cầu.', confusables: ['b'] });
-    const b = C('b', { term: 'Quỹ đóng đại chúng', definition: 'Một định nghĩa khác hẳn về tổ chức quỹ.' });
-    const far = C('z', { chapter: 'xa', term: 'Chế định xa' });
-    expect(genDefTrueFalse(a, candidates(a, [a, b, far]), false, rng)).toBeNull();
-  });
 });
 
 // ---------- Hồi quy đợt 6 (ảnh a5/1280-light-01-match-mid): hai mô tả ghép cặp gần trùng ----------

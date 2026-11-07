@@ -1,8 +1,8 @@
 import type { Concept, Item, Level } from '$lib/content/types';
 import { interleave, nearConfusables, typeKey } from './arrange';
-import { candidates, genDefTerm, genDefTrueFalse, genExampleConcept, genMatch, genSort, genTermDef, type Cand, type GenContext } from './generate';
+import { candidates, genDefTerm, genExampleConcept, genMatch, genSort, genTermDef, type Cand, type GenContext } from './generate';
 import type { Step, StepGen, StepItem, StepMeta } from './step';
-import { leaks } from './text';
+import { hasAbsoluteWord, leaks } from './text';
 import { normalize } from './grading';
 import { REVIEW_MAX_STEPS } from './limits';
 
@@ -150,9 +150,10 @@ class Picker {
     }
     if (level === 4) {
       gen('example-concept', genExampleConcept(c, cands, this.rng));
-      const need = this.tally.t <= this.tally.f;
-      gen('def-tf', genDefTrueFalse(c, cands, need, this.rng) ?? (need ? null : genDefTrueFalse(c, cands, true, this.rng)));
     }
+    // câu Sai có từ tuyệt đối ("mọi/chỉ/luôn…") là mẹo đoán: bỏ nếu khái niệm còn dạng khác ở bậc này
+    const isTell = (o: Option) => o.item.type === 'truefalse' && !o.item.answer && hasAbsoluteWord(o.item.statement);
+    if (out.some((o) => !isTell(o))) { for (let i = out.length - 1; i >= 0; i--) if (isTell(out[i])) out.splice(i, 1); }
     const done = this.usedKeys.get(c.id);
     const fresh = done ? out.filter((o) => !done.has(o.key)) : out;
     return fresh.length ? fresh : out;
@@ -169,6 +170,10 @@ class Picker {
       const need = this.tally.t <= this.tally.f;
       const match = pool.filter((o) => o.item.type === 'truefalse' && o.item.answer === need);
       if (match.length) pool = match;
+      // tránh mẹo "có từ tuyệt đối ⇒ Sai": câu Sai ưu tiên không có từ tuyệt đối, câu Đúng ưu tiên có
+      const tell = (o: Option) => o.item.type === 'truefalse' && hasAbsoluteWord(o.item.statement);
+      const fair = pool.filter((o) => tell(o) === need);
+      if (fair.length) pool = fair;
     }
     return pool[Math.floor(this.rng() * pool.length)];
   }

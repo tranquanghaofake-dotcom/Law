@@ -16,6 +16,11 @@ export function promptText(item: StepItem): string {
   }
 }
 
+/** Câu điền khuyết đã điền đủ đáp án (sau khi trả lời hiện cả câu để đọc liền mạch, không chỉ từng chỗ trống). */
+export function filledCloze(item: StepItem): string {
+  return item.type === 'cloze' ? item.text.replace(BLANK, '$1') : '';
+}
+
 /** Lời giải thích của một item (recall dùng đáp án mẫu); chuỗi rỗng nếu không có. */
 export function explainText(item: StepItem): string {
   if (item.type === 'recall') return item.model;

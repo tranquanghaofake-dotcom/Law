@@ -147,3 +147,11 @@ export function overlaps(a: string, b: string): boolean {
 export function informative(text: string, min = 6): boolean {
   return normalize(text.split(MASK).join(' ').replace(/\(…\)/g, ' ')).split(' ').filter(Boolean).length >= min;
 }
+
+/**
+ * Từ tuyệt đối ("mọi", "chỉ", "luôn", "đều", "bắt buộc"…): trong kho nhận định, 84 % câu có từ này là Sai
+ * nên người học đoán Sai mà không cần biết luật. Bộ chọn câu dùng để tránh dồn Sai vào câu có dấu hiệu này.
+ */
+export function hasAbsoluteWord(text: string): boolean {
+  return /(?<![\p{L}])(?:luôn|mọi|tất cả|không bao giờ|duy nhất|đều|bắt buộc|không thể|chỉ)(?![\p{L}])/iu.test(text);
+}

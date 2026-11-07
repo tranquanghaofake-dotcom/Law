@@ -12,7 +12,11 @@ export type GenContext = { pool?: Concept[]; terms?: Record<string, Record<strin
 export type Cand = { id: string; term: string; tier: 1 | 2 | 3 | 4; concept?: Concept };
 
 /** Giới hạn độ dài khi hiển thị (ký tự). */
-export const LIMITS = { defQuestion: 380, defOption: 170, matchText: 150, explain: 240, sortCases: 6 } as const;
+export const LIMITS = { defQuestion: 380, defOption: 220, matchText: 200, explain: 240, sortCases: 6 } as const;
+/** Số tiếng tối thiểu của một tình huống xếp cột: ngắn hơn là tên gọi trơn ("Bị đơn"), mất ngữ cảnh. */
+const MIN_CASE_WORDS = 3;
+/** Cặp nhãn đối lập ("X | Không phải X") chỉ giữ khi mọi tình huống đủ ngữ cảnh. */
+const MIN_CASE_WORDS_NEG = 5;
 
 const MIN_OPTIONS = 3;
 const MAX_OPTIONS = 4;
@@ -84,6 +88,13 @@ function mcq(q: string, correct: string, wrong: string[], explain: string, rng: 
 
 const explainOf = (c: Concept, lead: string): string => `${lead} ${clip(c.plain, LIMITS.explain)}`;
 
+/** Định nghĩa đã che vẫn vừa `max` ký tự mà KHÔNG phải cắt "…" (phương án bị cắt giữa chừng làm người học đoán mò). */
+function wholeDefinition(c: Concept, max: number, alsoMask: string[] = []): string | null {
+  const full = shownText(c, c.definition, 100000, alsoMask);
+  return full.length <= max ? full : null;
+}
+const wordCount = (t: string): number => normalize(t).split(' ').filter(Boolean).length;
+
 /** Định nghĩa (đã che thuật ngữ của chính nó và `alsoMask`) để hiển thị. */
 function shownDefinition(c: Concept, max: number, alsoMask: string[] = []): string {
   return shownText(c, c.definition, max, alsoMask);
@@ -127,12 +138,12 @@ export function genDefTerm(c: Concept, cands: Cand[], rng: () => number): ItemMc
 
 /** Thuật ngữ → định nghĩa (bậc 2). Phương án là định nghĩa thật của các khái niệm khác, đã che thuật ngữ, cắt cùng mức. */
 export function genTermDef(c: Concept, cands: Cand[], rng: () => number): ItemMcq | null {
-  const correct = shownDefinition(c, LIMITS.defOption);
-  if (normalize(correct).length < 30) return null;
+  const correct = wholeDefinition(c, LIMITS.defOption);
+  if (!correct || normalize(correct).length < 30) return null;
   if (!informative(correct)) { genStats.lowInfo++; return null; }
   const wrong = pickDistractors(distinctFrom(c, cands.filter((x) => x.concept)), MAX_OPTIONS - 1, rng, correct.length, (x) => {
-    const t = shownDefinition(x.concept!, LIMITS.defOption, [c.term]);
-    return overlaps(t, correct) || !informative(t) || normalize(t).length < 30 ? null : t;
+    const t = wholeDefinition(x.concept!, LIMITS.defOption, [c.term]);
+    return !t || overlaps(t, correct) || !informative(t) || normalize(t).length < 30 ? null : t;
   });
   return mcq(`Đâu là định nghĩa của «${c.term}»?`, correct, wrong.map((w) => w.text), `«${c.term}»: ${clip(c.definition, LIMITS.explain)} (${c.source.cite}).`, rng, 1, c);
 }
@@ -140,40 +151,29 @@ export function genTermDef(c: Concept, cands: Cand[], rng: () => number): ItemMc
 /** Hai thuật ngữ quan hệ bao hàm (một cái gần như nằm trong cái kia) → không dùng làm nhiễu cho câu ví dụ. */
 const nested = (a: string, b: string): boolean => coverage(a, b) >= 0.6 || coverage(b, a) >= 0.6;
 
-/**
- * Ví dụ → khái niệm (bậc 4, như câu tình huống). Chỉ khi ví dụ gắn rõ với khái niệm:
- * ví dụ không chứa tên khái niệm (lộ đáp án), không chứa tên phương án nhiễu nào, nhiễu không bao hàm/nằm trong khái niệm.
- */
-export function genExampleConcept(c: Concept, cands: Cand[], rng: () => number): ItemMcq | null {
-  if (leaks(c.example, c.term)) return null;
-  const ok = distinctFrom(c, cands.filter((x) => !leaks(c.example, x.term) && !nested(x.term, c.term)));
-  const wrong = pickDistractors(ok, MAX_OPTIONS - 1, rng, c.term.length, (x) => x.term);
-  return mcq(`«${c.example}»\nTình huống trên minh hoạ cho khái niệm nào?`, c.term, wrong.map((w) => w.text), explainOf(c, `Ví dụ minh hoạ «${c.term}».`), rng, 4, c);
+/** `example` là một minh hoạ (tình huống/trường hợp) chứ không phải đoạn so sánh, đối chiếu hay bình luận. */
+const NOT_ILLUSTRATION = /^(so sánh|đối chiếu|phân biệt|khác với|quan hệ giữa|nhìn chung|theo cách)\b/iu;
+export function isIllustration(example: string): boolean {
+  return !NOT_ILLUSTRATION.test(example.trim());
 }
 
+/** Tên hai khái niệm lồng nhau (cha–con: "Thời hiệu" và "Thời hiệu thừa kế") → không cùng xuất hiện làm phương án. */
+const related = (a: string, b: string): boolean => nested(a, b) || leaks(a, b) || leaks(b, a);
+
 /**
- * Đúng/Sai từ định nghĩa (bậc 4): "«định nghĩa của c» là định nghĩa của «X»".
- * answer=true: X = c. answer=false: X là khái niệm dễ nhầm/cùng chương (tầng 1–2, đủ dữ liệu) sao cho câu chắc chắn Sai:
- * định nghĩa hai bên không gần trùng, tên không bao hàm nhau, và định nghĩa của c không mở đầu bằng "X là …".
- * Null nếu định nghĩa sau khi che vẫn lộ thuật ngữ, hoặc (với answer=false) không có X an toàn.
+ * Ví dụ → khái niệm (bậc 4). Chỉ khi ví dụ là minh hoạ gắn rõ với khái niệm:
+ * ví dụ không chứa tên khái niệm (lộ đáp án), không chứa tên phương án nhiễu nào, nhiễu không lồng nhau với khái niệm.
+ * Lời giải thích nêu dấu hiệu (`keywords`) vì sao ví dụ thuộc khái niệm này.
  */
-export function genDefTrueFalse(c: Concept, cands: Cand[], answer: boolean, rng: () => number): ItemTrueFalse | null {
-  const text = shownDefinition(c, LIMITS.defQuestion);
-  if (leaks(text, c.term) || normalize(text).length < 30 || !informative(text)) return null;
-  const cite = c.source.cite;
-  if (answer) {
-    return { type: 'truefalse', level: 4, statement: `«${text}» là định nghĩa của «${c.term}».`, answer: true, explain: `Đúng. Đây là định nghĩa «${c.term}» (${cite}).`, source: c.source };
-  }
-  const safe = cands.filter((x) => x.concept && x.tier <= 2
-    && !nested(x.term, c.term)
-    && maskDefiningHead(c.definition, x.term) === c.definition
-    && !definitionsOverlap(c, x.concept));
-  if (!safe.length) return null;
-  const x = safe[Math.floor(rng() * safe.length)];
-  return {
-    type: 'truefalse', level: 4, statement: `«${text}» là định nghĩa của «${x.term}».`, answer: false,
-    explain: `Sai. Đây là định nghĩa «${c.term}» (${cite}), không phải «${x.term}».`, source: c.source,
-  };
+export function genExampleConcept(c: Concept, cands: Cand[], rng: () => number): ItemMcq | null {
+  if (!isIllustration(c.example) || leaks(c.example, c.term)) return null;
+  const ok = distinctFrom(c, cands.filter((x) => !leaks(c.example, x.term) && !related(x.term, c.term)));
+  const wrong = pickDistractors(ok, MAX_OPTIONS - 1, rng, c.term.length, (x) => x.term);
+  const signs = c.keywords.filter((k) => k.trim()).slice(0, 3);
+  const explain = signs.length
+    ? `Ví dụ minh hoạ «${c.term}» (${c.source.cite}). Dấu hiệu: ${signs.join('; ')}.`
+    : explainOf(c, `Ví dụ minh hoạ «${c.term}».`);
+  return mcq(`«${c.example}»\nVí dụ trên minh hoạ cho khái niệm nào?`, c.term, wrong.map((w) => w.text), explain, rng, 4, c);
 }
 
 /**
@@ -185,9 +185,11 @@ export function genMatch(c: Concept, others: Concept[], rng: () => number, n = 4
   type Pick = { x: Concept; src: string };
   const chosen: Pick[] = [];
   const textOf = (p: Pick, terms: string[]) => shownText(p.x, p.src, LIMITS.matchText, terms.filter((t) => t !== p.x.term));
+  // mô tả bị cắt "…" giữa chừng thì bỏ (thử `plain`, không được thì bỏ khái niệm đó)
+  const whole = (p: Pick, terms: string[]) => shownText(p.x, p.src, 100000, terms.filter((t) => t !== p.x.term)).length <= LIMITS.matchText;
   const ok = (p: Pick, terms: string[], with_: Pick[]) => {
     const t = textOf(p, terms);
-    return normalize(t).length >= 20 && informative(t) && !with_.some((q) => q.x.id !== p.x.id && overlaps(textOf(q, terms), t));
+    return whole(p, terms) && normalize(t).length >= 20 && informative(t) && !with_.some((q) => q.x.id !== p.x.id && overlaps(textOf(q, terms), t));
   };
   const tryAdd = (x: Concept): boolean => {
     const terms = [...chosen.map((p) => p.x.term), x.term];
@@ -218,7 +220,7 @@ export function genMatch(c: Concept, others: Concept[], rng: () => number, n = 4
 // ---------- Phân biệt: gộp `pair` thành SortItem ----------
 
 const GENERIC_LABELS = new Set(['đúng', 'sai', 'có', 'không', 'được', 'không được', 'được phép', 'bị cấm', 'hợp lệ', 'không hợp lệ', 'hợp pháp', 'trái pháp luật', 'có hiệu lực', 'vô hiệu', 'đúng luật', 'sai luật', 'đúng nguyên tắc', 'sai nguyên tắc']);
-const NEG = /^(không được|không|chưa|được|bị)\s+/u;
+const NEG = /^(không phải|không được|không|chưa|được|bị|phải)\s+/u;
 
 /**
  * Cặp nhãn chung chung ("Được phép | Bị cấm", "Xâm phạm | Không xâm phạm"): nghĩa phụ thuộc ngữ cảnh khái niệm,
@@ -226,8 +228,12 @@ const NEG = /^(không được|không|chưa|được|bị)\s+/u;
  */
 export function isGenericPair(p: Pick<ItemPair, 'left' | 'right'>): boolean {
   const a = normalize(p.left), b = normalize(p.right);
-  if (GENERIC_LABELS.has(a) || GENERIC_LABELS.has(b)) return true;
-  return a.replace(NEG, '') === b.replace(NEG, '');
+  return GENERIC_LABELS.has(a) || GENERIC_LABELS.has(b) || isNegationPair(p);
+}
+
+/** Hai nhãn chỉ khác nhau ở chữ phủ định ("Đương sự" | "Không phải đương sự"). */
+function isNegationPair(p: Pick<ItemPair, 'left' | 'right'>): boolean {
+  return normalize(p.left).replace(NEG, '') === normalize(p.right).replace(NEG, '');
 }
 
 /**
@@ -240,12 +246,13 @@ export function genSort(c: Concept, scope: Concept[], rng: () => number): SortIt
   for (const p of c.items) {
     if (p.type !== 'pair') continue;
     const L = normalize(p.left), R = normalize(p.right);
+    const minWords = isNegationPair(p) ? MIN_CASE_WORDS_NEG : MIN_CASE_WORDS;
     const own: SortItem['cases'] = [];
     const extra: SortItem['cases'] = [];
     const seen = new Set<string>();
     const add = (list: SortItem['cases'], text: string, answer: 'left' | 'right', conceptId: string) => {
       const k = normalize(text);
-      if (seen.has(k)) return;
+      if (seen.has(k) || wordCount(text) < minWords) return;
       seen.add(k);
       list.push({ text, answer, conceptId });
     };

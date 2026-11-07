@@ -5,6 +5,7 @@ import type { Concept, Level, Subject } from '$lib/content/types';
 import { buildLearnSession, buildReviewSession, clozeModeFor, finalize, kickerFor, passFor, pickItem, type Step } from '$lib/engine/session';
 import { mulberry32 } from '$lib/engine/rng';
 import { typeKey } from '$lib/engine/arrange';
+import { hasAbsoluteWord } from '$lib/engine/text';
 
 const WORDS = ['tài sản', 'nghĩa vụ', 'hợp đồng', 'thừa kế', 'bồi thường', 'chiếm hữu', 'đại diện', 'thời hiệu'];
 // định nghĩa khác hẳn nhau (câu sinh loại các khái niệm có định nghĩa chồng nhau)
@@ -189,7 +190,7 @@ const subjects: Subject[] = readdirSync(`${ROOT}/subjects`).map((f) => JSON.pars
 describe('dữ liệu thật: mọi đợt học ghép được phiên hợp lệ', () => {
   it('mỗi đợt × 3 pass: có câu chốt, không pair suy ra được, Đúng/Sai trong phiên gần 50/50', () => {
     const byKey = new Map(all.map((c) => [`${c.subject}/${c.id}`, c]));
-    let tfT = 0, tfF = 0, sessions = 0, unbalanced = 0;
+    let tfT = 0, tfF = 0, sessions = 0, unbalanced = 0, absT = 0, absF = 0;
     for (const s of subjects) for (const ch of s.chapters) for (const l of ch.lessons) {
       const cs = l.concepts.map((id) => byKey.get(`${s.id}/${id}`)!);
       const pool = all.filter((x) => x.subject === s.id && (x.chapter === ch.id || cs.some((c) => c.confusables.includes(x.id))));
@@ -202,8 +203,18 @@ describe('dữ liệu thật: mọi đợt học ghép được phiên hợp l�
         for (const x of steps) if (x.item.type === 'truefalse') { if (x.item.answer) t++; else f++; }
         tfT += t; tfF += f;
         if (Math.abs(t - f) > 1) unbalanced++;
+        for (const x of steps) {
+          // không còn Đúng/Sai "…là định nghĩa của «X»" (vòng tròn: che tên rồi hỏi lại tên)
+          expect(x.meta?.gen).not.toBe('def-tf');
+          // phương án định nghĩa không bị cắt giữa chừng
+          if (x.meta?.gen === 'term-def' && x.item.type === 'mcq') for (const o of x.item.options) expect(/ …$|\(…\)$/.test(o)).toBe(false);
+          if (x.item.type === 'truefalse') { if (x.item.answer) absT += +hasAbsoluteWord(x.item.statement); else absF += +hasAbsoluteWord(x.item.statement); }
+        }
       }
     }
+    // mẹo "từ tuyệt đối ⇒ Sai": trong kho gốc 39 % câu Sai có từ tuyệt đối (84 % câu tuyệt đối là Sai); trong phiên phải thấp hơn hẳn
+    expect(absF / tfF).toBeLessThan(0.3); // còn lại do khái niệm chỉ có đúng một câu Đúng/Sai (cần viết thêm nội dung, không sửa được bằng code)
+    expect(absT).toBeGreaterThan(0);
     // ghi nhận: tỉ lệ Đúng trong các bước Đúng/Sai của mọi phiên thử
     expect(tfT / (tfT + tfF)).toBeGreaterThan(0.4);
     expect(unbalanced / sessions).toBeLessThan(0.1);
