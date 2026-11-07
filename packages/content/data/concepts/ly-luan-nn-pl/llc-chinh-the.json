@@ -8,7 +8,7 @@
  "example": "Vương quốc Anh có vua nhưng Thủ tướng và Nghị viện nắm quyền thực tế: quân chủ lập hiến đại nghị. Hoa Kỳ: cộng hòa tổng thống.",
  "source": {
   "kind": "textbook",
-  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
  },
  "checked": "2026-11-01",
  "confusables": [
@@ -76,7 +76,7 @@
     "Diện tích lãnh thổ và số lượng dân cư của quốc gia tại thời điểm bầu cử"
    ],
    "answer": 0,
-   "explain": "Bài 6.",
+   "explain": "Tài liệu hướng dẫn môn học, Bài 6.",
    "why": [
     "Đúng: tiêu chí là cách hình thành quyền lực tối cao: thừa kế (quân chủ) hay bầu cử có nhiệm kỳ (cộng hòa).",
     "Sai: phân chia quyền lực là tiêu chí phân biệt các dạng cộng hòa, không phải quân chủ với cộng hòa.",
@@ -95,7 +95,7 @@
     "Cộng hòa quý tộc"
    ],
    "answer": 0,
-   "explain": "Bài 6.",
+   "explain": "Tài liệu hướng dẫn môn học, Bài 6.",
    "why": [
     "Đúng: cộng hòa đại nghị — chính phủ do nghị viện thành lập và chịu trách nhiệm trước nghị viện.",
     "Sai: cộng hòa tổng thống: chính phủ chịu trách nhiệm trước tổng thống.",
@@ -128,7 +128,7 @@
      "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), Bài 6"
     }
    ],
-   "explain": "Bài 6."
+   "explain": "Tài liệu hướng dẫn môn học, Bài 6."
   },
   {
    "type": "cloze",

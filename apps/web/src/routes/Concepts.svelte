@@ -83,7 +83,7 @@
   <header class="page-head">
     <SubjectArt name={PAGE_ART.concepts} class="head-art" />
     <h1>Khái niệm {subject.short}</h1>
-    <p class="muted">{total} khái niệm. Bấm vào tên để xem định nghĩa nguyên văn, căn cứ và khái niệm dễ nhầm.</p>
+    <p class="muted">{total} khái niệm. Bấm vào tên để xem định nghĩa, nguồn và khái niệm dễ nhầm.</p>
     <LegalNote compact />
   </header>
 

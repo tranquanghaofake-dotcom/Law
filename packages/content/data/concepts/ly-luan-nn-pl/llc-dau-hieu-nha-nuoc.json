@@ -8,7 +8,7 @@
  "example": "Một tập đoàn đa quốc gia có nhân viên ở nhiều nước và \"nội quy\" riêng nhưng không phải nhà nước: không có chủ quyền, không ban hành pháp luật, không thu thuế bắt buộc.",
  "source": {
   "kind": "textbook",
-  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
  },
  "checked": "2026-11-01",
  "confusables": [
@@ -77,7 +77,7 @@
     "Có trụ sở riêng, con dấu và các thành viên"
    ],
    "answer": 0,
-   "explain": "Bài 2: chỉ nhà nước được ban hành pháp luật, thu thuế.",
+   "explain": "Tài liệu hướng dẫn môn học, Bài 2: chỉ nhà nước được ban hành pháp luật, thu thuế.",
    "why": [
     "Đúng: chỉ nhà nước có quyền ban hành pháp luật và thu thuế bắt buộc.",
     "Sai: tổ chức xã hội cũng có điều lệ, cơ cấu riêng.",
@@ -129,7 +129,7 @@
      "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), Bài 2"
     }
    ],
-   "explain": "Bài 2."
+   "explain": "Tài liệu hướng dẫn môn học, Bài 2."
   },
   {
    "type": "cloze",

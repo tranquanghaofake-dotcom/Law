@@ -13,6 +13,18 @@ const rng = () => 0.5;
 const item = { type: 'intro' as const };
 
 describe('CardIntro ba lớp', () => {
+  it('nhãn nút theo loại nguồn: giáo trình/ghi chép không gọi là "nguyên văn điều luật"', async () => {
+    const tb = { ...concept, source: { kind: 'textbook' as const, cite: 'Ghi chép ôn thi — chưa đối chiếu nguyên văn giáo trình' } };
+    render(CardIntro, { props: { concept: tb, item, rng, onanswer: vi.fn() } });
+    expect(screen.queryByRole('button', { name: 'Xem nguyên văn điều luật' })).toBeNull();
+    const btn = screen.getByRole('button', { name: 'Xem định nghĩa theo giáo trình' });
+    await fireEvent.click(btn);
+    expect(btn.textContent).toContain('Ẩn định nghĩa theo giáo trình');
+    cleanup();
+    const pr = { ...concept, source: { kind: 'primary' as const, cite: 'Nghị quyết 01/2020' } };
+    render(CardIntro, { props: { concept: pr, item, rng, onanswer: vi.fn() } });
+    expect(screen.getByRole('button', { name: 'Xem nguyên văn văn bản' })).toBeTruthy();
+  });
   it('mở đầu bằng sơ đồ dấu hiệu và ví dụ; nguyên văn điều luật ẩn cho tới khi bấm', async () => {
     const { container } = render(CardIntro, { props: { concept, item, rng, onanswer: vi.fn() } });
     expect(container.textContent).toContain('An giao 5 triệu');

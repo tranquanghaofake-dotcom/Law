@@ -19,6 +19,8 @@
   // tình huống hỏi–đáp: tự nghĩ trước, bấm mới hiện đáp (và đọc đáp)
   const quiz = $derived(concept.memo?.case ?? null);
   let reveal = $state(false);
+  // Nhãn theo loại nguồn: chỉ nguồn 'statute' mới là "điều luật"; giáo trình/ghi chép không gọi là nguyên văn điều luật.
+  const sourceWhat = $derived(concept.source?.kind === 'textbook' ? 'định nghĩa theo giáo trình' : concept.source?.kind === 'primary' ? 'nguyên văn văn bản' : 'nguyên văn điều luật');
   function showAnswer() { reveal = true; if (quiz) onspeak?.(`Đáp: ${quiz.a}`); }
   function ok() { if (done) return; done = true; onanswer({ correct: true, elapsedMs: Date.now() - start }); }
   function onkey(e: KeyboardEvent) {
@@ -48,7 +50,7 @@
   {/if}
   {#if concept.note && !open}<button class="intro-changed" type="button" aria-controls="intro-verbatim" onclick={() => (open = true)}><Glyph name="warn" size={15} /> Luật đã thay đổi</button>{/if}
   <button class="btn ghost plain intro-toggle" type="button" aria-expanded={open} aria-controls="intro-verbatim" onclick={() => (open = !open)}>
-    {open ? 'Ẩn nguyên văn điều luật' : 'Xem nguyên văn điều luật'}
+    {open ? `Ẩn ${sourceWhat}` : `Xem ${sourceWhat}`}
   </button>
   {#if open}
     <div id="intro-verbatim">
