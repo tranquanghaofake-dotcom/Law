@@ -81,7 +81,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 111 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 111 — 05% tổng doanh thu trên thị trường liên quan của năm tài chính liền kề trước năm vi phạm.",
+    "Sai: 10% là mức tối đa cho thỏa thuận hạn chế cạnh tranh, lạm dụng (khoản 1 Điều 111), và tính trên thị trường liên quan.",
+    "Sai: 2 tỷ đồng là mức tối đa cho cạnh tranh không lành mạnh (khoản 3 Điều 111).",
+    "Sai: 200 triệu đồng là mức tối đa cho hành vi vi phạm khác (khoản 4 Điều 111)."
+   ]
   },
   {
    "type": "mcq",
@@ -98,7 +104,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 5 Điều 111 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: khoản 5 Điều 111 — mức tối đa với cá nhân bằng một phần hai mức với tổ chức.",
+    "Sai: cá nhân không chịu mức tối đa bằng tổ chức.",
+    "Sai: mức với cá nhân thấp hơn, không gấp đôi tổ chức.",
+    "Sai: tỷ lệ luật định là một phần hai, không phải một phần ba."
+   ]
   },
   {
    "type": "pair",

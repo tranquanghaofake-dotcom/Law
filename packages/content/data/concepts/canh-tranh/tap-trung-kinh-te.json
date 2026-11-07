@@ -90,7 +90,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 29 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 29 — hai hoặc nhiều doanh nghiệp hình thành một doanh nghiệp mới, các doanh nghiệp cũ chấm dứt tồn tại.",
+    "Sai: sáp nhập (khoản 2 Điều 29) là chuyển sang một doanh nghiệp khác đã có, không hình thành doanh nghiệp mới.",
+    "Sai: liên doanh (khoản 5 Điều 29) chỉ góp một phần tài sản, các doanh nghiệp góp vẫn tồn tại.",
+    "Sai: mua lại (khoản 4 Điều 29) là mua vốn góp, tài sản đủ để kiểm soát, doanh nghiệp bị mua vẫn tồn tại."
+   ]
   },
   {
    "type": "mcq",
@@ -107,7 +113,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 30 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: Điều 30 — gây tác động hoặc có khả năng gây tác động hạn chế cạnh tranh một cách đáng kể trên thị trường Việt Nam.",
+    "Sai: thị phần, tài sản là tiêu chí ngưỡng thông báo (khoản 2 Điều 33) và yếu tố thẩm định, không phải điều kiện cấm.",
+    "Sai: giá trị giao dịch chỉ là tiêu chí ngưỡng thông báo; loại hình doanh nghiệp không quyết định việc cấm.",
+    "Sai: luật chỉ cấm tập trung kinh tế gây tác động hạn chế cạnh tranh đáng kể, không cấm mọi trường hợp."
+   ]
   },
   {
    "type": "pair",

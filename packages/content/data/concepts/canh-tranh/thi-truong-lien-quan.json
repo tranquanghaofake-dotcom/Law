@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 9 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 9 — thị trường liên quan gồm thị trường sản phẩm liên quan và thị trường địa lý liên quan.",
+    "Sai: doanh thu dùng để tính thị phần (Điều 10), không dùng để xác định thị trường liên quan.",
+    "Sai: số doanh nghiệp, số người tiêu dùng không phải hai yếu tố của thị trường liên quan.",
+    "Sai: vốn điều lệ, số lao động không liên quan đến xác định thị trường liên quan."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 9 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: đoạn 2 khoản 1 Điều 9 — có thể thay thế cho nhau về đặc tính, mục đích sử dụng và giá cả.",
+    "Sai: màu sắc, kích thước, kiểu dáng là đặc điểm bề ngoài, không phải ba tiêu chí của luật.",
+    "Sai: thương hiệu, xuất xứ không phải tiêu chí thay thế theo khoản 1 Điều 9.",
+    "Sai: các chủ thể trong chuỗi phân phối không phải tiêu chí thay thế của sản phẩm."
+   ]
   },
   {
    "type": "pair",

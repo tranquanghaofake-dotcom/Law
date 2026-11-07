@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 12 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 12 cấm thỏa thuận ấn định giá giữa doanh nghiệp cùng thị trường liên quan, không đòi chứng minh tác động.",
+    "Sai: Luật 2018 bỏ ngưỡng thị phần 30% của luật cũ; khoản 1 Điều 12 cấm không cần ngưỡng.",
+    "Sai: thông báo trước không làm thỏa thuận ấn định giá trở thành hợp pháp; chỉ có thể xin miễn trừ theo Điều 14.",
+    "Sai: khoản 1 Điều 12 không đòi thiệt hại thực tế hay khiếu nại."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 12 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 12 — khoản 7 Điều 11 chỉ bị cấm khi gây hoặc có khả năng gây tác động hạn chế cạnh tranh đáng kể.",
+    "Sai: cấm mặc nhiên chỉ áp dụng cho khoản 1, 2, 3 (cùng thị trường) và khoản 4, 5, 6 Điều 11.",
+    "Sai: miễn trừ không tự động; phải đủ điều kiện Điều 14 và được Ủy ban Cạnh tranh Quốc gia quyết định.",
+    "Sai: điều kiện cấm là mức độ tác động đến cạnh tranh, không phải có khiếu nại hay kết luận điều tra."
+   ]
   },
   {
    "type": "pair",

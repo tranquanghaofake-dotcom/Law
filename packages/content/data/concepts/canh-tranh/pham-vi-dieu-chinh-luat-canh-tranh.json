@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 1 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: đăng ký doanh nghiệp thuộc Luật Doanh nghiệp, không thuộc phạm vi Điều 1 Luật Cạnh tranh.",
+    "Sai: hành vi hạn chế cạnh tranh là nội dung đầu tiên của Điều 1.",
+    "Sai: hành vi cạnh tranh không lành mạnh nằm trong phạm vi Điều 1.",
+    "Sai: tố tụng cạnh tranh nằm trong phạm vi Điều 1."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 2 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 2 nêu rõ đơn vị sự nghiệp công lập.",
+    "Sai: Luật Cạnh tranh gọi chung tổ chức, cá nhân kinh doanh là doanh nghiệp, kể cả đơn vị sự nghiệp công lập.",
+    "Sai: khoản 1 Điều 2 không đặt điều kiện có vốn nước ngoài.",
+    "Sai: khoản 1 Điều 2 không đặt điều kiện niêm yết."
+   ]
   },
   {
    "type": "pair",

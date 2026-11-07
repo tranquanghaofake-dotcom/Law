@@ -86,7 +86,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 46 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 46 — Ủy ban Cạnh tranh Quốc gia là cơ quan thuộc Bộ Công Thương.",
+    "Sai: Ủy ban không trực thuộc Chính phủ mà thuộc Bộ Công Thương.",
+    "Sai: Bộ Tư pháp không quản lý Ủy ban Cạnh tranh Quốc gia.",
+    "Sai: Quốc hội là cơ quan lập pháp, không có cơ quan cạnh tranh trực thuộc."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 46 Luật Cạnh tranh 2018"
-   }
+   },
+   "why": [
+    "Đúng: điểm b khoản 2 Điều 46 — quyết định miễn trừ đối với thỏa thuận hạn chế cạnh tranh bị cấm.",
+    "Sai: xét xử là thẩm quyền của Tòa án; Ủy ban tiến hành tố tụng cạnh tranh, không xét xử hình sự, dân sự.",
+    "Sai: cấp giấy chứng nhận đăng ký doanh nghiệp thuộc cơ quan đăng ký kinh doanh.",
+    "Sai: ban hành luật, nghị quyết là thẩm quyền của Quốc hội."
+   ]
   },
   {
    "type": "pair",
