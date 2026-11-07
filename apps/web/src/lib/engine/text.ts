@@ -155,3 +155,21 @@ export function informative(text: string, min = 6): boolean {
 export function hasAbsoluteWord(text: string): boolean {
   return /(?<![\p{L}])(?:luôn|mọi|tất cả|không bao giờ|duy nhất|đều|bắt buộc|không thể|chỉ)(?![\p{L}])/iu.test(text);
 }
+
+const STOP = new Set('và của là các những trong theo cho được có không một để khi với về này đó tại do bởi như hoặc thì nào sau đây đã sẽ bị phải'.split(' '));
+const contentWords = (s: string): Set<string> => new Set((s.toLowerCase().match(/\p{L}+/gu) ?? []).filter((w) => w.length > 2 && !STOP.has(w)));
+
+/** Số tiếng nội dung (bỏ từ nối) hai chuỗi chung nhau. Giữ đồng bộ với `sharedWords` ở packages/content/src/quality.ts. */
+export function sharedWords(a: string, b: string): number {
+  const wb = contentWords(b);
+  let n = 0;
+  for (const w of contentWords(a)) if (wb.has(w)) n++;
+  return n;
+}
+
+/** Đáp án đúng là phương án DUY NHẤT trùng ≥ 2 tiếng với stem (clang association: đoán được bằng mặt chữ). */
+export function clangs(stem: string, options: string[], answer: number): boolean {
+  const sc = options.map((o) => sharedWords(stem, o));
+  const max = Math.max(...sc);
+  return max >= 2 && sc[answer] === max && sc.filter((x) => x === max).length === 1;
+}

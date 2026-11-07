@@ -1,9 +1,9 @@
 // Dạng câu sinh tự động từ dữ liệu đã kiểm (đợt 6). KHÔNG viết khẳng định pháp lý mới:
 // chỉ dùng `term`, `definition` (che thuật ngữ, cắt có đánh dấu "(…)"), `plain`, `example`, `confusables`, các câu `pair` có sẵn.
-import type { Concept, ItemMcq, ItemPair, ItemTrueFalse } from '$lib/content/types';
+import type { Concept, ItemCloze, ItemMcq, ItemPair, ItemTrueFalse } from '$lib/content/types';
 import { normalize } from './grading';
 import type { MatchItem, SortItem } from './step';
-import { clip, coverage, informative, leaks, maskDefiningHead, maskTerms, nearDuplicate, overlaps, termParts } from './text';
+import { clip, coverage, informative, leaks, maskDefiningHead, maskTerms, nearDuplicate, overlaps, sharedWords, termParts } from './text';
 
 /** Dữ liệu nạp thêm để làm phương án nhiễu: khái niệm dễ nhầm/cùng chương, bảng tên khái niệm theo môn. */
 export type GenContext = { pool?: Concept[]; terms?: Record<string, Record<string, string>> };
@@ -66,9 +66,15 @@ export function candidates(c: Concept, known: Concept[], terms?: Record<string, 
  * Chọn tối đa `n` phương án nhiễu: theo tầng trước; trong một tầng ưu tiên độ dài gần `targetLen`
  * (giảm mẹo "đáp án dài nhất"), ngang nhau thì ngẫu nhiên.
  */
-export function pickDistractors(cands: Cand[], n: number, rng: () => number, targetLen: number, show: (c: Cand) => string | null): { cand: Cand; text: string }[] {
+export function pickDistractors(cands: Cand[], n: number, rng: () => number, targetLen: number, show: (c: Cand) => string | null, ref?: { stem: string; correct: string }): { cand: Cand; text: string }[] {
   const ok = cands.flatMap((cand) => { const text = show(cand); return text ? [{ cand, text, r: rng() }] : []; });
-  ok.sort((a, b) => a.cand.tier - b.cand.tier
+  // Chống "clang association" (NBME): trong cùng tầng, ưu tiên nhiễu trùng chữ với stem ngang đáp án đúng,
+  // để đáp án đúng không nổi bật chỉ vì lặp lại chữ của câu hỏi.
+  const want = ref ? sharedWords(ref.stem, ref.correct) : 0;
+  const gap = (t: string) => (ref ? Math.abs(sharedWords(ref.stem, t) - want) : 0);
+  // gap đứng trước tầng khi có `ref`: nhiễu "cùng chương" nhưng không trùng chữ nào làm đáp án đúng lộ ra (đo: 43 % → giảm khi ưu tiên gap)
+  ok.sort((a, b) => (ref ? gap(a.text) - gap(b.text) : 0)
+    || a.cand.tier - b.cand.tier
     || Math.floor(Math.abs(a.text.length - targetLen) / 20) - Math.floor(Math.abs(b.text.length - targetLen) / 20)
     || a.r - b.r);
   const out: { cand: Cand; text: string }[] = [];
@@ -132,7 +138,7 @@ export function genDefTerm(c: Concept, cands: Cand[], rng: () => number): ItemMc
   const text = shownDefinition(c, LIMITS.defQuestion);
   if (leaks(text, c.term) || normalize(text).length < 30) return null;
   if (!informative(text)) { genStats.lowInfo++; return null; }
-  const wrong = pickDistractors(distinctFrom(c, cands), MAX_OPTIONS - 1, rng, c.term.length, (x) => x.term);
+  const wrong = pickDistractors(distinctFrom(c, cands), MAX_OPTIONS - 1, rng, c.term.length, (x) => x.term, { stem: text, correct: c.term });
   return mcq(`«${text}»\nĐịnh nghĩa trên là của khái niệm nào?`, c.term, wrong.map((w) => w.text), explainOf(c, `Đây là định nghĩa «${c.term}» (${c.source.cite}).`), rng, 1, c);
 }
 
@@ -144,7 +150,7 @@ export function genTermDef(c: Concept, cands: Cand[], rng: () => number): ItemMc
   const wrong = pickDistractors(distinctFrom(c, cands.filter((x) => x.concept)), MAX_OPTIONS - 1, rng, correct.length, (x) => {
     const t = wholeDefinition(x.concept!, LIMITS.defOption, [c.term]);
     return !t || overlaps(t, correct) || !informative(t) || normalize(t).length < 30 ? null : t;
-  });
+  }, { stem: c.term, correct });
   return mcq(`Đâu là định nghĩa của «${c.term}»?`, correct, wrong.map((w) => w.text), `«${c.term}»: ${clip(c.definition, LIMITS.explain)} (${c.source.cite}).`, rng, 1, c);
 }
 
@@ -168,7 +174,7 @@ const related = (a: string, b: string): boolean => nested(a, b) || leaks(a, b) |
 export function genExampleConcept(c: Concept, cands: Cand[], rng: () => number): ItemMcq | null {
   if (!isIllustration(c.example) || leaks(c.example, c.term)) return null;
   const ok = distinctFrom(c, cands.filter((x) => !leaks(c.example, x.term) && !related(x.term, c.term)));
-  const wrong = pickDistractors(ok, MAX_OPTIONS - 1, rng, c.term.length, (x) => x.term);
+  const wrong = pickDistractors(ok, MAX_OPTIONS - 1, rng, c.term.length, (x) => x.term, { stem: c.example, correct: c.term });
   const signs = c.keywords.filter((k) => k.trim()).slice(0, 3);
   const explain = signs.length
     ? `Ví dụ minh hoạ «${c.term}» (${c.source.cite}). Dấu hiệu: ${signs.join('; ')}.`
@@ -292,4 +298,45 @@ export function genSort(c: Concept, scope: Concept[], rng: () => number): SortIt
     return { type: 'sort', level: 2, left: p.left, right: p.right, cases: shuffle(cases, rng), explain: explains.join(' ') };
   }
   return null;
+}
+
+// ---------- Điền khuyết: nhiễu cho ngân hàng từ ----------
+
+const NUM_WORDS = /(?<![\p{L}])(?:hai|ba|bốn|sáu|bảy|tám|chín|mười|nửa|phần|trăm|nghìn|triệu|tỷ)(?![\p{L}])/iu;
+/** Chỗ trống là con số/tỉ lệ ("90 ngày", "hai phần ba") hay từ chữ. Nhiễu phải cùng loại với chỗ trống. */
+export function blankKind(b: string): 'num' | 'word' {
+  return /\d/.test(b) || NUM_WORDS.test(b) ? 'num' : 'word';
+}
+const BLANK_RE = /\{\{([^{}]+)\}\}/g;
+const blanksOf = (text: string): string[] => [...text.matchAll(BLANK_RE)].map((m) => m[1]);
+
+/**
+ * Nhiễu cho ngân hàng từ của câu điền khuyết: chỗ trống của các câu điền khuyết khác CÙNG MÔN, cùng loại (số với số, chữ với chữ),
+ * độ dài ±1 tiếng, không xuất hiện trong chính câu này; ưu tiên cùng chương. Thay `bank_extra` viết tay kiểu "thuế", "thương mại"
+ * vốn sai ngay từ ngữ pháp. Thiếu `n` nhiễu thì null (giữ `bank_extra` gốc).
+ */
+export function clozeExtras(c: Concept, item: ItemCloze, known: Concept[], rng: () => number, n = 2): string[] | null {
+  const mine = blanksOf(item.text);
+  if (!mine.length) return null;
+  const kinds = new Set(mine.map(blankKind));
+  const lens = mine.map((b) => normalize(b).split(' ').length);
+  const text = ` ${normalize(item.text.replace(BLANK_RE, ' '))} `;
+  const taken = new Set(mine.map(normalize));
+  const tiers: string[][] = [[], []];
+  for (const x of known) {
+    if (x.subject !== c.subject || x.id === c.id) continue;
+    for (const it of x.items) {
+      if (it.type !== 'cloze') continue;
+      for (const b of blanksOf(it.text)) {
+        const k = normalize(b);
+        const wc = k.split(' ').length;
+        if (taken.has(k) || !kinds.has(blankKind(b)) || !lens.some((l) => Math.abs(l - wc) <= 1) || text.includes(` ${k} `)) continue;
+        if (mine.some((m) => nearDuplicate(m, b))) continue;
+        taken.add(k);
+        tiers[x.chapter === c.chapter ? 0 : 1].push(b);
+      }
+    }
+  }
+  const out = [...shuffle(tiers[0], rng), ...shuffle(tiers[1], rng)].slice(0, n);
+  return out.length === n ? out : null;
 }

@@ -1,6 +1,6 @@
 import type { Concept, Item, Level } from '$lib/content/types';
 import { interleave, nearConfusables, typeKey } from './arrange';
-import { candidates, genDefTerm, genExampleConcept, genMatch, genSort, genTermDef, type Cand, type GenContext } from './generate';
+import { candidates, clozeExtras, genDefTerm, genExampleConcept, genMatch, genSort, genTermDef, type Cand, type GenContext } from './generate';
 import type { Step, StepGen, StepItem, StepMeta } from './step';
 import { hasAbsoluteWord, leaks } from './text';
 import { normalize } from './grading';
@@ -138,7 +138,12 @@ class Picker {
 
   private options(c: Concept, level: Level): Option[] {
     const out: Option[] = [];
-    const orig = (it: Item, i: number) => out.push({ family: familyOf({ item: it }), item: it, key: `i${i}` });
+    const withBank = (it: Item): Item => {
+      if (it.type !== 'cloze') return it;
+      const extras = clozeExtras(c, it, this.known, this.rng);
+      return extras ? { ...it, bank_extra: extras } : it;
+    };
+    const orig = (it: Item, i: number) => { const x = withBank(it); out.push({ family: familyOf({ item: x }), item: x, key: `i${i}` }); };
     c.items.forEach((it, i) => { if (it.level === level && it.type !== 'pair') orig(it, i); });
     const gen = (g: StepGen, item: StepItem | null) => { if (item) out.push({ family: familyOf({ gen: g, item }), gen: g, item, key: g }); };
     const cands = this.cands(c);

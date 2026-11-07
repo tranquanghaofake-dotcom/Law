@@ -1,10 +1,10 @@
 import { describe, expect, it } from 'vitest';
 import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
-import type { Concept, ItemMcq, ItemPair } from '$lib/content/types';
-import { candidates, definitionsOverlap, genDefTerm, genExampleConcept, genMatch, genSort, genStats, genTermDef, isGenericPair, pickDistractors, resetGenStats } from '$lib/engine/generate';
+import type { Concept, ItemCloze, ItemMcq, ItemPair } from '$lib/content/types';
+import { blankKind, candidates, clozeExtras, definitionsOverlap, genDefTerm, genExampleConcept, genMatch, genSort, genStats, genTermDef, isGenericPair, pickDistractors, resetGenStats } from '$lib/engine/generate';
 import { mulberry32 } from '$lib/engine/rng';
-import { informative, leaks, MASK, overlaps } from '$lib/engine/text';
+import { clangs, informative, leaks, MASK, overlaps } from '$lib/engine/text';
 
 const DEFS: Record<string, string> = {
   a: 'việc một bên chuyển giao tài sản cho bên kia để nhận lại một khoản tiền tương ứng',
@@ -316,5 +316,73 @@ describe('mô tả chồng nhau không cùng xuất hiện trong một câu', ()
     }
     // số liệu ghi engine.md (GEN_STATS_OUT=<file> để ghi ra file)
     if (process.env.GEN_STATS_OUT) writeFileSync(process.env.GEN_STATS_OUT, JSON.stringify({ match, defTerm, ...genStats }));
+  }, 60000);
+});
+
+describe('chống clang association: đáp án đúng không nổi bật vì trùng chữ với stem', () => {
+  it('pickDistractors: ưu tiên nhiễu trùng chữ với stem ngang đáp án đúng', () => {
+    const cands = [
+      { id: 'x', term: 'Quyền khác đối với vật', tier: 2 as const },
+      { id: 'y', term: 'Thời hiệu thừa kế', tier: 2 as const },
+      { id: 'z', term: 'Thời hiệu khởi kiện', tier: 2 as const },
+    ];
+    const out = pickDistractors(cands, 2, mulberry32(1), 20, (c) => c.term, { stem: 'Thời hiệu khởi kiện vụ án dân sự', correct: 'Thời hiệu khởi kiện' });
+    expect(out.map((o) => o.cand.id)).toEqual(['z', 'y']);
+  });
+  it('dữ liệu thật: tỉ lệ câu sinh mà đáp án đúng là phương án duy nhất trùng chữ với stem giảm so với trước (đo 42,6 % → 31 %; ngẫu nhiên thuần ≈ 25 %)', () => {
+    const r = mulberry32(5);
+    const bySubject = new Map<string, Concept[]>();
+    for (const c of all) bySubject.set(c.subject, [...(bySubject.get(c.subject) ?? []), c]);
+    const tally = { n: 0, clang: 0 };
+    for (const c of all) {
+      const known = bySubject.get(c.subject)!;
+      const cands = candidates(c, known, undefined, r);
+      for (const [it, stem] of [[genTermDef(c, cands, r), c.term], [genExampleConcept(c, cands, r), c.example]] as const) {
+        if (!it) continue;
+        tally.n++;
+        if (clangs(stem, it.options, it.answer)) tally.clang++;
+      }
+    }
+    expect(tally.n).toBeGreaterThan(100);
+    expect(tally.clang / tally.n).toBeLessThan(0.35);
+  }, 60000);
+});
+
+describe('clozeExtras: nhiễu ngân hàng từ cùng loại, cùng môn', () => {
+  const cl = (text: string) => ({ type: 'cloze' as const, level: 3 as const, text });
+  const a = C('a', { items: [cl('Thời hạn là {{90 ngày}} kể từ ngày nhận.')] });
+  const mk = (id: string, text: string, o: Partial<Concept> = {}) => C(id, { items: [cl(text)], ...o });
+  it('blankKind: số/tỉ lệ khác chữ', () => {
+    expect(blankKind('90 ngày')).toBe('num');
+    expect(blankKind('hai phần ba')).toBe('num');
+    expect(blankKind('an toàn xã hội')).toBe('word');
+  });
+  it('chỗ trống số → nhiễu là số của câu khác cùng môn, không lấy chữ, không lấy khác môn', () => {
+    const known = [a, mk('b', 'Tối đa {{60 ngày}} làm việc.'), mk('c', 'Quá {{một phần ba}} số thành viên.'), mk('d', 'Người {{đại diện}} ký.'), mk('e', 'Mức {{30 ngày}}.', { subject: 'khac' })];
+    const out = clozeExtras(a, a.items[0] as ItemCloze, known, rng)!;
+    expect(out.sort()).toEqual(['một phần ba', '60 ngày'].sort());
+  });
+  it('bỏ nhiễu xuất hiện trong chính câu, hoặc giống chỗ trống; thiếu nhiễu → null', () => {
+    const k1 = [a, mk('b', 'Còn {{kể từ ngày}} nhận.'), mk('c', 'Hạn {{90 ngày}} khác.')];
+    expect(clozeExtras(a, a.items[0] as ItemCloze, k1, rng)).toBeNull();
+  });
+  it('ưu tiên cùng chương', () => {
+    const near = mk('n', 'Tối đa {{45 ngày}}.', { chapter: 'c1' });
+    const far1 = mk('f1', 'Tối đa {{20 ngày}}.', { chapter: 'c9' });
+    const far2 = mk('f2', 'Tối đa {{10 ngày}}.', { chapter: 'c9' });
+    for (let seed = 1; seed <= 10; seed++) expect(clozeExtras(a, a.items[0] as ItemCloze, [a, far1, far2, near], mulberry32(seed))).toContain('45 ngày');
+  });
+  it('dữ liệu thật: nhiễu cùng loại với chỗ trống và không nằm trong câu', () => {
+    const r = mulberry32(3);
+    let n = 0;
+    for (const c of all) for (const it of c.items) {
+      if (it.type !== 'cloze') continue;
+      const ex = clozeExtras(c, it, all, r);
+      if (!ex) continue;
+      n++;
+      const kinds = new Set([...it.text.matchAll(/\{\{([^{}]+)\}\}/g)].map((m) => blankKind(m[1])));
+      for (const e of ex) { expect(kinds.has(blankKind(e))).toBe(true); expect(new RegExp(`(?<![\\p{L}\\p{N}])${e.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?![\\p{L}\\p{N}])`, 'iu').test(it.text.replace(/\{\{[^{}]+\}\}/g, ' '))).toBe(false); }
+    }
+    expect(n).toBeGreaterThan(800); // phần lớn trong 1.480 câu có nhiễu thay được
   }, 60000);
 });
