@@ -1,0 +1,159 @@
+{
+  "_ghi_chu": "Danh sach van ban da bi thay the/het hieu luc. Moi muc: id, pattern (regex, khong phan biet hoa thuong), ten, thay_boi (van ban thay the), nguon. Them muc moi o day, khong can sua code. Nguon: SKILL.md muc 'Quy cach ghi CCPL' va docs/research/vn-legal.md P2.",
+  "items": [
+    {
+      "id": "nd-13-2023",
+      "pattern": "\\b13/2023(?:/N[ĐD]-CP\\b|(?![/\\w]))",
+      "ten": "Nghị định 13/2023/NĐ-CP",
+      "thay_boi": "Nghị định 356/2025/NĐ-CP (từ 01/01/2026)",
+      "nguon": "SKILL.md, Quy cách ghi CCPL"
+    },
+    {
+      "id": "luat-bhvbqppl-2015",
+      "pattern": "Luật Ban hành văn bản quy phạm pháp luật\\s+(?:năm\\s+2015|(?:số\\s+)?80/2015)|\\b80/2015(?:/QH13\\b|(?![/\\w]))",
+      "ten": "Luật Ban hành văn bản quy phạm pháp luật năm 2015 (80/2015/QH13)",
+      "thay_boi": "Luật số 64/2025/QH15 (sửa đổi, bổ sung bởi Luật số 87/2025/QH15)",
+      "nguon": "SKILL.md, Quy cách ghi CCPL"
+    },
+    {
+      "id": "blds-2005-d122",
+      "pattern": "Điều\\s+122\\s+(?:của\\s+)?(?:Bộ luật Dân sự|BLDS)(?:\\s+năm)?\\s+2005",
+      "ten": "Điều 122 Bộ luật Dân sự năm 2005",
+      "thay_boi": "Điều 117 Bộ luật Dân sự năm 2015",
+      "nguon": "SKILL.md, Quy cách ghi CCPL"
+    },
+    {
+      "id": "tt-01-2011-bnv",
+      "pattern": "01/2011/TT-BNV",
+      "ten": "Thông tư 01/2011/TT-BNV",
+      "thay_boi": "Nghị định 30/2020/NĐ-CP về công tác văn thư",
+      "nguon": "SKILL.md, Quy cách ghi CCPL"
+    },
+    {
+      "id": "nd-69-2018",
+      "pattern": "\\b69/2018(?:/N[ĐD]-CP\\b|(?![/\\w]))",
+      "ten": "Nghị định 69/2018/NĐ-CP",
+      "thay_boi": "Nghị định 292/2026/NĐ-CP (hiệu lực 05/9/2026 theo nguồn thứ cấp; văn bản có trên vanban.chinhphu.vn — đối chiếu điều khoản thay thế trước khi khẳng định)",
+      "nguon": "references/thuong-mai-quoc-te.md; docs/research/vn-legal.md bảng (a) #9"
+    },
+    {
+      "id": "blds-d122-khong-nam",
+      "pattern": "Điều\\s+122\\s+(?:của\\s+)?(?:Bộ luật Dân sự|BLDS)(?!\\s+(?:năm\\s+)?20\\d\\d)",
+      "ten": "Điều 122 Bộ luật Dân sự (không ghi năm — Điều 122 BLDS 2005 là điều kiện có hiệu lực của giao dịch, đã hết hiệu lực; Điều 122 BLDS 2015 là điều khác)",
+      "thay_boi": "ghi rõ năm; điều kiện có hiệu lực của giao dịch dân sự: Điều 117 Bộ luật Dân sự năm 2015",
+      "nguon": "SKILL.md, Quy cách ghi CCPL"
+    },
+    {
+      "id": "luat-dau-tu-2020",
+      "pattern": "Luật Đầu tư\\s+(?:năm\\s+)?2020|(?<![/\\d])61/2020(?:/QH14\\b|(?![/\\w]))",
+      "ten": "Luật Đầu tư năm 2020 (61/2020/QH14)",
+      "thay_boi": "Luật Đầu tư số 143/2025/QH15 (từ 01/3/2026)",
+      "nguon": "Kho Luyện Luật, packages/content/data/SOURCES.md (đối chiếu 01–02/11/2026; mức B)"
+    },
+    {
+      "id": "luat-pha-san-2014",
+      "pattern": "Luật Phá sản\\s+(?:năm\\s+)?2014|(?<![/\\d])51/2014(?:/QH13\\b|(?![/\\w]))",
+      "ten": "Luật Phá sản năm 2014 (51/2014/QH13)",
+      "thay_boi": "Luật Phục hồi, phá sản số 142/2025/QH15 (từ 01/3/2026)",
+      "nguon": "Kho Luyện Luật, packages/content/data/SOURCES.md (đối chiếu 01–02/11/2026; mức B)"
+    },
+    {
+      "id": "luat-tndn-2008",
+      "pattern": "Luật Thuế thu nhập doanh nghiệp\\s+(?:năm\\s+)?2008|(?<![/\\d])14/2008(?:/QH12\\b|(?![/\\w]))",
+      "ten": "Luật Thuế thu nhập doanh nghiệp năm 2008 (14/2008/QH12)",
+      "thay_boi": "Luật số 67/2025/QH15 (từ 01/10/2025, áp dụng từ kỳ tính thuế 2025)",
+      "nguon": "Kho Luyện Luật, packages/content/data/SOURCES.md (đối chiếu 01–02/11/2026; mức B)"
+    },
+    {
+      "id": "luat-tncn-2007",
+      "pattern": "Luật Thuế thu nhập cá nhân\\s+(?:năm\\s+)?2007|(?<![/\\d])04/2007/QH12\\b",
+      "ten": "Luật Thuế thu nhập cá nhân năm 2007 (04/2007/QH12)",
+      "thay_boi": "Luật số 109/2025/QH15 (từ 01/7/2026)",
+      "nguon": "Kho Luyện Luật, packages/content/data/SOURCES.md (đối chiếu 01–02/11/2026; mức B)"
+    },
+    {
+      "id": "luat-ttdb-2008",
+      "pattern": "Luật Thuế tiêu thụ đặc biệt\\s+(?:năm\\s+)?2008|(?<![/\\d])27/2008(?:/QH12\\b|(?![/\\w]))",
+      "ten": "Luật Thuế tiêu thụ đặc biệt năm 2008 (27/2008/QH12)",
+      "thay_boi": "Luật số 66/2025/QH15 (từ 01/01/2026)",
+      "nguon": "Kho Luyện Luật, packages/content/data/SOURCES.md (đối chiếu 01–02/11/2026; mức B)"
+    },
+    {
+      "id": "luat-qlt-2019",
+      "pattern": "Luật Quản lý thuế\\s+(?:năm\\s+)?2019|(?<![/\\d])38/2019(?:/QH14\\b|(?![/\\w]))",
+      "ten": "Luật Quản lý thuế năm 2019 (38/2019/QH14)",
+      "thay_boi": "Luật số 108/2025/QH15 (từ 01/7/2026)",
+      "nguon": "Kho Luyện Luật, packages/content/data/SOURCES.md (đối chiếu 01–02/11/2026; mức B)"
+    },
+    {
+      "id": "luat-cbcc-2008",
+      "pattern": "Luật Cán bộ, công chức\\s+(?:năm\\s+)?2008|(?<![/\\d])22/2008(?:/QH12\\b|(?![/\\w]))",
+      "ten": "Luật Cán bộ, công chức năm 2008 (22/2008/QH12)",
+      "thay_boi": "Luật số 80/2025/QH15 (từ 01/7/2025)",
+      "nguon": "Kho Luyện Luật, packages/content/data/SOURCES.md (đối chiếu 01–02/11/2026; mức B)"
+    },
+    {
+      "id": "luat-viec-lam-2013",
+      "pattern": "Luật Việc làm\\s+(?:năm\\s+)?2013|(?<![/\\d])38/2013(?:/QH13\\b|(?![/\\w]))",
+      "ten": "Luật Việc làm năm 2013 (38/2013/QH13)",
+      "thay_boi": "Luật Việc làm số 74/2025/QH15 (từ 01/01/2026)",
+      "nguon": "Kho Luyện Luật, packages/content/data/SOURCES.md (đối chiếu 01–02/11/2026; mức B)"
+    },
+    {
+      "id": "luat-nsnn-2015",
+      "pattern": "Luật Ngân sách nhà nước\\s+(?:năm\\s+)?2015|(?<![/\\d])83/2015(?:/QH13\\b|(?![/\\w]))",
+      "ten": "Luật Ngân sách nhà nước năm 2015 (83/2015/QH13)",
+      "thay_boi": "Luật số 89/2025/QH15 (từ năm ngân sách 2026; một số nội dung từ 01/7/2025)",
+      "nguon": "Kho Luyện Luật, packages/content/data/SOURCES.md (đối chiếu 01–02/11/2026; mức B)"
+    },
+    {
+      "id": "luat-bhtg-2012",
+      "pattern": "Luật Bảo hiểm tiền gửi\\s+(?:năm\\s+)?2012|(?<![/\\d])06/2012/QH13\\b",
+      "ten": "Luật Bảo hiểm tiền gửi năm 2012 (06/2012/QH13)",
+      "thay_boi": "Luật số 111/2025/QH15 (từ 01/5/2026)",
+      "nguon": "Kho Luyện Luật, packages/content/data/SOURCES.md (đối chiếu 01–02/11/2026; mức B)"
+    },
+    {
+      "id": "nd-01-2021",
+      "pattern": "(?<![/\\d])01/2021/N[ĐD]-CP\\b",
+      "ten": "Nghị định 01/2021/NĐ-CP về đăng ký doanh nghiệp",
+      "thay_boi": "Nghị định 168/2025/NĐ-CP (từ 01/7/2025)",
+      "nguon": "Kho Luyện Luật, packages/content/data/SOURCES.md (đối chiếu 01–02/11/2026; mức B)"
+    },
+    {
+      "id": "luat-ct-2004",
+      "pattern": "Luật Cạnh tranh\\s+(?:năm\\s+)?2004|\\b27/2004(?:/QH11\\b|(?![/\\w]))",
+      "ten": "Luật Cạnh tranh năm 2004 (27/2004/QH11)",
+      "thay_boi": "Luật Cạnh tranh số 23/2018/QH14 (từ 01/7/2019)",
+      "nguon": "references/danh-muc-bay.md Nhóm 11, 12 (đối chiếu 07/11/2026)"
+    },
+    {
+      "id": "nd-116-2005",
+      "pattern": "\\b116/2005/N[ĐD]-CP",
+      "ten": "Nghị định 116/2005/NĐ-CP hướng dẫn Luật Cạnh tranh 2004",
+      "thay_boi": "văn bản hướng dẫn Luật Cạnh tranh số 23/2018/QH14 — tra số hiệu hiện hành",
+      "nguon": "references/danh-muc-bay.md Nhóm 11, 12 (đối chiếu 07/11/2026)"
+    },
+    {
+      "id": "nd-120-2005",
+      "pattern": "\\b120/2005/N[ĐD]-CP",
+      "ten": "Nghị định 120/2005/NĐ-CP xử lý vi phạm pháp luật về cạnh tranh",
+      "thay_boi": "nghị định xử phạt vi phạm hành chính về cạnh tranh theo Luật số 23/2018/QH14 — tra số hiệu hiện hành",
+      "nguon": "references/danh-muc-bay.md Nhóm 11, 12 (đối chiếu 07/11/2026)"
+    },
+    {
+      "id": "phap-lenh-gia-2002",
+      "pattern": "Pháp lệnh giá(?:\\s+năm)?\\s+2002",
+      "ten": "Pháp lệnh giá năm 2002",
+      "thay_boi": "Luật Giá số 16/2023/QH15",
+      "nguon": "references/danh-muc-bay.md Nhóm 11, 12 (đối chiếu 07/11/2026)"
+    },
+    {
+      "id": "luat-hngd-2000",
+      "pattern": "Luật Hôn nhân và gia đình\\s+(?:năm\\s+)?2000|\\b22/2000/QH10",
+      "ten": "Luật Hôn nhân và gia đình năm 2000 (22/2000/QH10)",
+      "thay_boi": "Luật Hôn nhân và gia đình số 52/2014/QH13 (Điều 132; VBHN 121/VBHN-VPQH năm 2025)",
+      "nguon": "references/danh-muc-bay.md Nhóm 11, 12 (đối chiếu 07/11/2026)"
+    }
+  ]
+}
