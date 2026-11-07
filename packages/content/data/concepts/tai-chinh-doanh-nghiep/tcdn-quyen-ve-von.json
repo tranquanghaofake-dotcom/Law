@@ -166,9 +166,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Doanh nghiệp buộc phải đáp ứng mọi yêu cầu đóng góp nguồn lực của cơ quan nhà nước.",
+   "statement": "Doanh nghiệp không được tự lựa chọn hình thức, phương thức huy động vốn.",
    "answer": false,
-   "explain": "Sai. Khoản 9 Điều 7: được từ chối yêu cầu cung cấp nguồn lực không theo quy định của pháp luật."
+   "explain": "Sai. Khoản 3 Điều 7 Luật Doanh nghiệp 2020: doanh nghiệp có quyền lựa chọn hình thức, phương thức huy động, phân bổ và sử dụng vốn."
   },
   {
    "type": "recall",

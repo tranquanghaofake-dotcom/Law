@@ -166,9 +166,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Xâm phạm quyền sở hữu trí tuệ chỉ có thể bị xử lý hành chính.",
+   "statement": "Luật SHTT không quy định xử lý hình sự đối với hành vi xâm phạm quyền sở hữu trí tuệ.",
    "answer": false,
-   "explain": "Sai. Khoản 1 Điều 199: dân sự, hành chính hoặc hình sự."
+   "explain": "Sai. Khoản 1 Điều 199: tùy tính chất, mức độ xâm phạm, có thể bị xử lý bằng biện pháp dân sự, hành chính hoặc hình sự."
   },
   {
    "type": "recall",

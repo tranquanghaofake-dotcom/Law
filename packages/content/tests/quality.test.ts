@@ -34,7 +34,7 @@ describe('quy tắc NBME: từng quy tắc bắt đúng và không bắt nhầm'
 // Ratchet: số câu vi phạm trên kho thật KHÔNG được tăng. Giảm được thì hạ ngưỡng xuống (đo 07/11/2026).
 // Danh sách chi tiết để viết lại: `npm run quality` → docs/review/chat-luong-cau.md.
 const concepts: Concept[] = readdirSync(join(DATA_DIR, 'concepts')).flatMap((s) => readdirSync(join(DATA_DIR, 'concepts', s)).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(readFileSync(join(DATA_DIR, 'concepts', s, f), 'utf8')) as Concept));
-const BASELINE = { 'stem-phu-dinh': 26, clang: 214, 'tf-tuyet-doi': 121 };
+const BASELINE = { 'stem-phu-dinh': 26, clang: 214, 'tf-tuyet-doi': 51 };
 
 describe('kho thật: không thêm câu vi phạm', () => {
   const found = lintAll(concepts);

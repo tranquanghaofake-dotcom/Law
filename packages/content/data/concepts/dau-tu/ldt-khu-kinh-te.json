@@ -160,9 +160,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Khu kinh tế chỉ có một khu chức năng là sản xuất công nghiệp.",
+   "statement": "Khu kinh tế được thành lập nhằm mục tiêu bảo vệ môi trường và phát triển du lịch.",
    "answer": false,
-   "explain": "Sai. Khoản 17 Điều 3: gồm nhiều khu chức năng."
+   "explain": "Sai. Khoản 17 Điều 3: khu kinh tế được thành lập để thu hút đầu tư, phát triển kinh tế - xã hội và bảo vệ quốc phòng, an ninh."
   },
   {
    "type": "recall",

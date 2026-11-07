@@ -160,9 +160,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Thỏa thuận trọng tài chỉ có giá trị nếu được lập trước khi xảy ra tranh chấp.",
+   "statement": "Thỏa thuận trọng tài lập sau khi tranh chấp đã phát sinh thì không có giá trị để giải quyết tranh chấp đó.",
    "answer": false,
-   "explain": "Sai. Khoản 1 Điều 5: có thể lập trước hoặc sau khi xảy ra tranh chấp."
+   "explain": "Sai. Khoản 1 Điều 5 Luật Trọng tài thương mại: thỏa thuận trọng tài có thể được lập trước hoặc sau khi xảy ra tranh chấp."
   },
   {
    "type": "recall",

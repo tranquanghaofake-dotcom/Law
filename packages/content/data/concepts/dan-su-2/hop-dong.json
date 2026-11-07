@@ -158,9 +158,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Hợp đồng chỉ có hiệu lực khi được lập thành văn bản.",
+   "statement": "Hợp đồng là sự thỏa thuận chỉ nhằm xác lập quyền, nghĩa vụ dân sự, không bao gồm việc thay đổi hay chấm dứt.",
    "answer": false,
-   "explain": "Sai. Hợp đồng là sự thỏa thuận; hình thức chỉ bắt buộc khi luật quy định (khoản 2 Điều 117, Điều 119)."
+   "explain": "Sai. Điều 385: hợp đồng là sự thỏa thuận về việc xác lập, thay đổi hoặc chấm dứt quyền, nghĩa vụ dân sự."
   },
   {
    "type": "recall",

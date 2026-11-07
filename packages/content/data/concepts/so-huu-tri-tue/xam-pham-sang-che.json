@@ -151,9 +151,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Chỉ sao chép nguyên vẹn kiểu dáng mới bị coi là xâm phạm.",
+   "statement": "Sử dụng sáng chế được bảo hộ sau khi văn bằng bảo hộ hết hiệu lực vẫn bị coi là xâm phạm quyền.",
    "answer": false,
-   "explain": "Sai. Khoản 1 Điều 126: cả kiểu dáng không khác biệt đáng kể."
+   "explain": "Sai. Khoản 1 Điều 126: xâm phạm khi sử dụng trong thời hạn hiệu lực của văn bằng bảo hộ mà không được phép của chủ sở hữu."
   },
   {
    "type": "recall",

@@ -150,9 +150,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi tổ chức kinh tế có vốn đầu tư nước ngoài đều phải làm thủ tục như nhà đầu tư nước ngoài khi đầu tư tiếp.",
+   "statement": "Tổ chức kinh tế có nhà đầu tư nước ngoài nắm giữ 30% vốn điều lệ phải thực hiện thủ tục đầu tư như nhà đầu tư nước ngoài.",
    "answer": false,
-   "explain": "Sai. Chỉ tổ chức kinh tế thuộc khoản 1 Điều 20 (ví dụ nhà đầu tư nước ngoài nắm trên 50% vốn điều lệ)."
+   "explain": "Sai. Điểm a khoản 1 Điều 20: phải nắm giữ trên 50% vốn điều lệ (hoặc thuộc các trường hợp tại điểm b, c) mới áp dụng như nhà đầu tư nước ngoài."
   },
   {
    "type": "recall",

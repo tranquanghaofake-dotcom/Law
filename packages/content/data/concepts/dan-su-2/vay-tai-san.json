@@ -157,9 +157,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi hợp đồng vay tiền đều phải trả lãi.",
+   "statement": "Bên vay tài sản chỉ trở thành chủ sở hữu tài sản vay sau khi đã hoàn trả cho bên cho vay.",
    "answer": false,
-   "explain": "Sai. Điều 463: chỉ trả lãi nếu có thỏa thuận hoặc pháp luật có quy định."
+   "explain": "Sai. Điều 464: bên vay trở thành chủ sở hữu tài sản vay kể từ thời điểm nhận tài sản đó."
   },
   {
    "type": "recall",

@@ -165,9 +165,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mã máy (mã nhị phân) của phần mềm không được bảo hộ quyền tác giả, chỉ mã nguồn được bảo hộ.",
+   "statement": "Chương trình máy tính dưới dạng mã máy không được bảo hộ quyền tác giả.",
    "answer": false,
-   "explain": "Sai. Khoản 1 Điều 22: dù dưới dạng mã nguồn hay mã máy."
+   "explain": "Sai. Khoản 1 Điều 22: chương trình máy tính được bảo hộ như tác phẩm văn học, dù dưới dạng mã nguồn hay mã máy."
   },
   {
    "type": "recall",

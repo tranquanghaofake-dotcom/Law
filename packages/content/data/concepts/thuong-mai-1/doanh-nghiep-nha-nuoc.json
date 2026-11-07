@@ -165,9 +165,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Theo Luật Doanh nghiệp 2020, chỉ doanh nghiệp do Nhà nước nắm 100% vốn mới là doanh nghiệp nhà nước.",
+   "statement": "Doanh nghiệp do Nhà nước nắm giữ đúng 50% vốn điều lệ là doanh nghiệp nhà nước.",
    "answer": false,
-   "explain": "Sai. Khoản 11 Điều 4: trên 50%."
+   "explain": "Sai. Khoản 11 Điều 4: phải là trên 50% vốn điều lệ, tổng số cổ phần có quyền biểu quyết."
   },
   {
    "type": "recall",

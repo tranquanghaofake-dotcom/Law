@@ -157,9 +157,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi hợp đồng mua bán hàng hóa giữa thương nhân đều phải lập bằng văn bản.",
+   "statement": "Hợp đồng mua bán hàng hóa xác lập bằng hành vi cụ thể thì không được Luật Thương mại thừa nhận.",
    "answer": false,
-   "explain": "Sai. Khoản 1 Điều 24: có thể bằng lời nói, văn bản, hành vi; chỉ bắt buộc văn bản khi luật quy định."
+   "explain": "Sai. Khoản 1 Điều 24: hợp đồng có thể thể hiện bằng lời nói, bằng văn bản hoặc được xác lập bằng hành vi cụ thể; chỉ khi pháp luật quy định phải lập thành văn bản thì mới phải theo (khoản 2)."
   },
   {
    "type": "recall",

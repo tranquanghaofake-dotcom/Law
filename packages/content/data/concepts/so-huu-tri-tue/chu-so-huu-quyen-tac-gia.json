@@ -158,9 +158,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Tác giả và chủ sở hữu quyền tác giả luôn là một người.",
+   "statement": "Tác giả sáng tạo tác phẩm theo nhiệm vụ do tổ chức giao là chủ sở hữu quyền tài sản đối với tác phẩm đó, nếu không có thỏa thuận khác.",
    "answer": false,
-   "explain": "Sai. Có thể khác nhau, như tác phẩm theo nhiệm vụ, hợp đồng (Điều 39)."
+   "explain": "Sai. Khoản 1 Điều 39: tổ chức giao nhiệm vụ là chủ sở hữu các quyền tại Điều 20 và khoản 3 Điều 19, trừ khi có thỏa thuận khác. Tác giả và chủ sở hữu có thể là hai chủ thể."
   },
   {
    "type": "recall",

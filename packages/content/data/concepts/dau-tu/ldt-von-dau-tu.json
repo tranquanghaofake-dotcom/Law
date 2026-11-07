@@ -159,9 +159,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Vốn đầu tư chỉ có thể là tiền.",
+   "statement": "Vốn đầu tư là tiền, tài sản khác theo quy định của pháp luật về thuế.",
    "answer": false,
-   "explain": "Sai. Khoản 23 Điều 3: tiền và tài sản khác theo pháp luật dân sự và điều ước quốc tế."
+   "explain": "Sai. Khoản 23 Điều 3: theo quy định của pháp luật về dân sự và điều ước quốc tế mà Việt Nam là thành viên."
   },
   {
    "type": "recall",

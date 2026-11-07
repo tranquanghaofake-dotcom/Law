@@ -155,9 +155,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Hợp đồng ủy quyền luôn phải có thù lao.",
+   "statement": "Bên được ủy quyền mặc nhiên được hưởng thù lao dù các bên không thỏa thuận.",
    "answer": false,
-   "explain": "Sai. Điều 562: chỉ trả thù lao nếu có thỏa thuận hoặc pháp luật quy định."
+   "explain": "Sai. Điều 562: bên ủy quyền chỉ phải trả thù lao nếu có thỏa thuận hoặc pháp luật có quy định."
   },
   {
    "type": "recall",

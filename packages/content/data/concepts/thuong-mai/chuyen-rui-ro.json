@@ -156,9 +156,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Rủi ro về hàng hóa luôn chuyển cùng lúc với quyền sở hữu.",
+   "statement": "Bên bán còn giữ chứng từ xác lập quyền sở hữu hàng hóa thì rủi ro chưa chuyển cho bên mua dù đã giao hàng tại địa điểm xác định.",
    "answer": false,
-   "explain": "Sai. Điều 57 nêu rõ rủi ro chuyển khi giao hàng kể cả khi bên bán còn giữ chứng từ sở hữu."
+   "explain": "Sai. Điều 57: rủi ro chuyển khi hàng đã được giao tại địa điểm đó, kể cả khi bên bán được ủy quyền giữ lại chứng từ xác lập quyền sở hữu."
   },
   {
    "type": "recall",

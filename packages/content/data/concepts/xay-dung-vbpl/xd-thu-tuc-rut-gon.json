@@ -161,9 +161,14 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Văn bản ban hành theo thủ tục rút gọn bắt buộc phải chờ đủ 45 ngày mới có hiệu lực.",
+   "statement": "Chính phủ quyết định việc áp dụng thủ tục rút gọn khi xây dựng luật của Quốc hội.",
    "answer": false,
-   "explain": "Sai. Đoạn 2 khoản 1 Điều 53: có thể có hiệu lực kể từ ngày thông qua hoặc ký ban hành nhưng phải đăng tải ngay."
+   "explain": "Sai. Điểm a khoản 2 Điều 50: Ủy ban Thường vụ Quốc hội tự mình hoặc theo đề nghị của cơ quan trình quyết định áp dụng thủ tục rút gọn với luật, nghị quyết của Quốc hội; Chính phủ chỉ quyết định với nghị định, nghị quyết của Chính phủ.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 50 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+   }
   },
   {
    "type": "recall",

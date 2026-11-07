@@ -168,9 +168,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi cổ đông của công ty cổ phần đều là người quản lý doanh nghiệp.",
+   "statement": "Cổ đông lớn của công ty cổ phần đương nhiên là người quản lý doanh nghiệp.",
    "answer": false,
-   "explain": "Sai. Khoản 24 Điều 4 chỉ liệt kê các chức danh quản lý."
+   "explain": "Sai. Khoản 24 Điều 4 chỉ liệt kê các chức danh quản lý; tư cách cổ đông không đương nhiên là người quản lý."
   },
   {
    "type": "recall",

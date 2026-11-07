@@ -158,9 +158,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Bên bảo lãnh luôn phải trả nợ ngay khi bên được bảo lãnh vay tiền.",
+   "statement": "Bên bảo lãnh phải thực hiện nghĩa vụ thay ngay từ khi hợp đồng bảo lãnh được xác lập, chưa cần đến thời hạn thực hiện nghĩa vụ.",
    "answer": false,
-   "explain": "Sai. Chỉ khi đến hạn mà bên được bảo lãnh không thực hiện hoặc thực hiện không đúng (khoản 1 Điều 335)."
+   "explain": "Sai. Bên bảo lãnh chỉ phải thực hiện nghĩa vụ thay khi đến thời hạn mà bên được bảo lãnh không thực hiện hoặc thực hiện không đúng (khoản 1 Điều 335)."
   },
   {
    "type": "recall",

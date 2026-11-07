@@ -164,9 +164,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Người 16 tuổi gây thiệt hại thì cha mẹ luôn phải bồi thường toàn bộ.",
+   "statement": "Người 16 tuổi gây thiệt hại thì cha mẹ phải bồi thường trước bằng tài sản của mình.",
    "answer": false,
-   "explain": "Sai. Đoạn 2 khoản 2 Điều 586: con bồi thường bằng tài sản của mình trước, cha mẹ bù phần thiếu."
+   "explain": "Sai. Đoạn 2 khoản 2 Điều 586: người từ đủ 15 đến chưa đủ 18 tuổi bồi thường bằng tài sản của mình trước; không đủ thì cha mẹ bồi thường phần còn thiếu."
   },
   {
    "type": "recall",

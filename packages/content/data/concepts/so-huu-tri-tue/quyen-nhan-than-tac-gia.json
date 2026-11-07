@@ -152,9 +152,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Quyền đứng tên trên tác phẩm chỉ được bảo hộ 50 năm sau khi tác giả chết.",
+   "statement": "Quyền đứng tên trên tác phẩm được bảo hộ suốt cuộc đời tác giả và năm mươi năm tiếp theo năm tác giả chết.",
    "answer": false,
-   "explain": "Sai. Khoản 1 Điều 27: quyền đặt tên, đứng tên, bảo vệ toàn vẹn được bảo hộ vô thời hạn."
+   "explain": "Sai. Khoản 1 Điều 27: quyền đặt tên, đứng tên, bảo vệ toàn vẹn (khoản 1, 2, 4 Điều 19) được bảo hộ vô thời hạn."
   },
   {
    "type": "recall",

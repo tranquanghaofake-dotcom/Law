@@ -165,9 +165,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mua lại doanh nghiệp chỉ xảy ra khi mua 100% vốn của doanh nghiệp khác.",
+   "statement": "Mua lại doanh nghiệp chỉ là việc mua vốn góp, không bao gồm việc mua tài sản của doanh nghiệp khác.",
    "answer": false,
-   "explain": "Sai. Khoản 4 Điều 29: toàn bộ hoặc một phần vốn góp, tài sản, miễn là đủ để kiểm soát, chi phối."
+   "explain": "Sai. Khoản 4 Điều 29 Luật Cạnh tranh 2018: mua toàn bộ hoặc một phần vốn góp, tài sản, miễn là đủ để kiểm soát, chi phối."
   },
   {
    "type": "recall",
