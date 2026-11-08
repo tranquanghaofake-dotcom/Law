@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { readdirSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import type { Concept, Level, Subject } from '$lib/content/types';
-import { buildLearnSession, buildReviewSession, clozeModeFor, finalize, kickerFor, makeRetryAlt, passFor, pickItem, type Step } from '$lib/engine/session';
+import { buildLearnSession, buildReviewSession, clozeModeFor, confusablePair, finalize, kickerFor, makeRetryAlt, passFor, pickItem, type Step } from '$lib/engine/session';
 import { mulberry32 } from '$lib/engine/rng';
 import { longRuns, typeKey } from '$lib/engine/arrange';
 import { hasAbsoluteWord } from '$lib/engine/text';
@@ -330,6 +330,31 @@ describe('dữ liệu thật: câu sửa sai khác câu sai (makeRetryAlt)', () 
     expect(rate(1)).toBeGreaterThanOrEqual(0.9);
     expect(rate(3)).toBeGreaterThanOrEqual(0.9);
     expect(got[5] ?? 0).toBe(0); // tự nhớ lại chỉ có một câu: lặp câu cũ như trước
+  }, 60000);
+});
+
+describe('dữ liệu thật: phiên ôn không dồn chuỗi cùng dạng, vẫn giữ cặp dễ nhầm gần nhau', () => {
+  it('300 phiên ôn (mỗi môn × 12 lần, ≤ 12 khái niệm, bậc ngẫu nhiên): hầu như không có ≥ 3 câu cùng dạng liền nhau; câu chốt không Đúng/Sai; cặp dễ nhầm còn gần nhau', () => {
+    // đo 07/11/2026 trước khi chạy breakRuns sau bước xếp cặp dễ nhầm: 34/300 phiên có chuỗi; sau: 0/300; cặp trong vòng 4 bước 1864 → 1853
+    const rng = mulberry32(5);
+    const bySubject = new Map<string, Concept[]>();
+    for (const c of all) (bySubject.get(c.subject) ?? bySubject.set(c.subject, []).get(c.subject)!).push(c);
+    let n = 0, withRun = 0, tfBoss = 0, pairs = 0, near = 0;
+    for (const [, cs] of bySubject) for (let rep = 0; rep < 12; rep++) {
+      const pick = cs.slice().sort(() => rng() - 0.5).slice(0, 12);
+      const levels = Object.fromEntries(pick.map((c) => [c.id, (1 + Math.floor(rng() * 6)) as Level]));
+      const st = buildReviewSession(pick, levels, mulberry32(++n), 20, { pool: cs });
+      if (longRuns(st) > 0) withRun++;
+      if (st.at(-1)!.item.type === 'truefalse' && st.some((x) => x.item.type !== 'truefalse')) tfBoss++;
+      const cm = new Map(pick.map((c) => [c.id, c]));
+      for (let i = 0; i < st.length; i++) for (let j = i + 1; j < st.length; j++) {
+        const a = cm.get(st[i].conceptId), b = cm.get(st[j].conceptId);
+        if (a && b && confusablePair(a, b)) { pairs++; if (j - i <= 4) near++; }
+      }
+    }
+    expect(withRun / n).toBeLessThanOrEqual(0.03);
+    expect(tfBoss).toBe(0);
+    expect(near / pairs).toBeGreaterThanOrEqual(0.6); // trước khi sửa: 0,674; sau: 0,668
   }, 60000);
 });
 

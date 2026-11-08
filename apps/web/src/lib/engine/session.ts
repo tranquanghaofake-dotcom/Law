@@ -380,7 +380,7 @@ export function buildReviewSession(concepts: Concept[], levels: Record<string, L
     const lv = (levels[c.id] ?? 1) as Level;
     return [picker.pick(c, lv < 1 ? 1 : lv)];
   });
-  return arrangeConfusables(finalize(interleave(queues, { rng }), rng), chosen);
+  return breakRuns(arrangeConfusables(finalize(interleave(queues, { rng }), rng), chosen));
 }
 
 // ---------- Đợt 7: xen kẽ cặp dễ nhầm (⑤), đoán trước + thẻ giới thiệu ba lớp (③) ----------
