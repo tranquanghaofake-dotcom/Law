@@ -1,5 +1,6 @@
 import { expect, test } from '@playwright/test';
 import { readdirSync, readFileSync } from 'node:fs';
+import { shelfOfGroup } from '../src/lib/ui/groups';
 const B = process.env.BASE_PATH ?? '/';
 
 test('trang chủ người mới: thẻ Bắt đầu, môn đang học, một thẻ kiểm tra nhanh', async ({ page }) => {
@@ -69,8 +70,9 @@ const setsDir = '../../packages/content/data/sets';
 const allSets: { title: string; group: string }[] = readdirSync(setsDir)
   .filter((f) => f.endsWith('.json'))
   .map((f) => JSON.parse(readFileSync(`${setsDir}/${f}`, 'utf8')));
-// Chip lọc theo kệ nhóm ngành (PR 3): kệ "Dân sự – Tố tụng" (`dan-su` trong src/lib/ui/shelves.ts) gồm các nhóm đề dưới đây, kể cả Hôn nhân và gia đình.
-const danSuTitles = allSets.filter((s) => ['dan-su', 'dan-su-2', 'hon-nhan-gia-dinh', 'to-tung-dan-su'].includes(s.group)).map((s) => s.title);
+// Chip lọc theo kệ nhóm ngành: kệ "Dân sự – Tố tụng" (id 'dan-su') lấy từ GROUP_SHELF, không liệt kê tay
+// (trước đây gõ cứng dan-su + to-tung-dan-su, thiếu hon-nhan-gia-dinh từ PR #47 nên e2e đỏ).
+const danSuTitles = allSets.filter((s) => shelfOfGroup(s.group) === 'dan-su').map((s) => s.title);
 
 test('Luyện đề: lọc theo nhóm chỉ còn đề của nhóm đó', async ({ page }) => {
   await page.goto(B + '#/luyen-de');
