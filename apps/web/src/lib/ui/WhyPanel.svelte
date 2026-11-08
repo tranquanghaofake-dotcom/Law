@@ -10,8 +10,21 @@
   // khái niệm đã có Hiểu nhanh (lời thường): không đặt đoạn nguyên văn dày đặc lên trước — nguyên văn ở "Xem thêm"
   const plainFirst = $derived(!!concept.memo?.gist);
   // câu phân biệt do người soạn cho đúng cặp đang nhầm: thay hai cột cụm từ
+  // "Dễ nhầm" mà bạn không chọn, trong khi đã có lời giải thích đúng lỗi bạn mắc: chỉ là thông tin phụ → gập lại
+  const mixupMore = $derived(!!why?.mixup && !why.mixup.picked && !!why.wrong);
   const contrast = $derived(why?.mixup ? concept.memo?.contrast?.find((x) => x.with === why.mixup?.id)?.text ?? null : null);
 </script>
+
+{#snippet mix(m: NonNullable<NonNullable<typeof why>['mixup']>)}
+  {#if contrast}
+    <p class="why-contrast"><b>{m.picked ? 'Bạn chọn' : 'Dễ nhầm'} «{m.term}».</b> {contrast}</p>
+  {:else}
+    <div class="why-mixup small" role="group" aria-label="{m.picked ? 'Bạn chọn' : 'Dễ nhầm với'} «{m.term}»">
+      <div class="mix-col theirs"><p class="mix-h">{m.picked ? 'Bạn chọn' : 'Dễ nhầm'}: «{m.term}»</p><ul>{#each m.theirs as k (k)}<li>{k}</li>{/each}</ul></div>
+      <div class="mix-col ours"><p class="mix-h">Đúng: «{concept.term}»</p><ul>{#each m.ours as k (k)}<li>{k}</li>{/each}</ul></div>
+    </div>
+  {/if}
+{/snippet}
 
 {#if why && correct && why.right}
   <section class="why why-ok" aria-label="Vì sao đúng">
@@ -30,13 +43,12 @@
       {#if why.excerpt && !plainFirst && !why.right}
         <blockquote class="why-quote">{#each segments(why.excerpt.text, why.excerpt.marks) as s, k (k)}{#if s.b}<mark>{s.t}</mark>{:else}{s.t}{/if}{/each}</blockquote>
       {/if}
-      {#if contrast && why.mixup}
-        <p class="why-contrast"><b>{why.mixup.picked ? 'Bạn chọn' : 'Dễ nhầm'} «{why.mixup.term}».</b> {contrast}</p>
-      {:else if why.mixup}
-        <div class="why-mixup small" role="group" aria-label="{why.mixup.picked ? 'Bạn chọn' : 'Dễ nhầm với'} «{why.mixup.term}»">
-          <div class="mix-col theirs"><p class="mix-h">{why.mixup.picked ? 'Bạn chọn' : 'Dễ nhầm'}: «{why.mixup.term}»</p><ul>{#each why.mixup.theirs as k (k)}<li>{k}</li>{/each}</ul></div>
-          <div class="mix-col ours"><p class="mix-h">Đúng: «{concept.term}»</p><ul>{#each why.mixup.ours as k (k)}<li>{k}</li>{/each}</ul></div>
-        </div>
+      {#if why.mixup}
+        {#if mixupMore}
+          <details class="why-mixup-more small"><summary>Dễ nhầm với «{why.mixup.term}»</summary>{@render mix(why.mixup)}</details>
+        {:else}
+          {@render mix(why.mixup)}
+        {/if}
       {/if}
   </section>
 {/if}

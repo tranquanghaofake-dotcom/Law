@@ -79,4 +79,43 @@ describe('SessionEnd — không lặp số liệu (đợt 2)', () => {
     expect(container.querySelector('.xp-sources i')).toBeNull();
     expect(container.querySelector('.xp-sources')?.textContent).toContain('+40');
   });
+  it('nút "Xem N câu sai" chỉ hiện khi có câu sai và gọi cuộn tới mục câu sai', async () => {
+    const mistakes = [{ conceptId: 'a', level: 1 as const, item: { type: 'mcq' as const, level: 1 as const, q: 'Q?', options: ['A', 'B'], answer: 1, explain: 'e' } }];
+    const { container } = render(SessionEnd, { props: { ...base, mistakes } });
+    const b = within(container).getByRole('button', { name: /Xem 1 câu sai/ });
+    const target = container.querySelector('.mistakes') as HTMLElement;
+    const scroll = vi.fn(); target.scrollIntoView = scroll;
+    await fireEvent.click(b);
+    expect(scroll).toHaveBeenCalled();
+    const { container: c2 } = render(SessionEnd, { props: base });
+    expect(within(c2).queryByRole('button', { name: /câu sai/ })).toBeNull();
+  });
+  it('combo, câu vàng, XP theo nguồn nằm trong "Chi tiết điểm" (đóng sẵn); kỷ lục và "Sửa được" vẫn hiện ngoài', () => {
+    const { container } = render(SessionEnd, { props: { ...base, summary: { ...base.summary, bestCombo: 5, golden: 1, fixed: 1 }, retryTotal: 2, sources: [{ key: 'base', label: 'Câu đúng', xp: 30 }], record: { comboBeaten: true, rateBeaten: false, before: { bestCombo: 2, bestRate: 0.5 } } } });
+    const d = container.querySelector('details.end-detail') as HTMLDetailsElement;
+    expect(d.open).toBe(false);
+    expect(d.textContent).toContain('Combo dài nhất');
+    expect(d.textContent).toContain('Câu vàng');
+    expect(d.querySelector('.xp-sources')).toBeTruthy();
+    expect(container.querySelector('.record-msg')!.closest('details')).toBeNull();
+    expect(container.textContent).toContain('Sửa được');
+    expect(container.querySelector('.stat-list dt')!.closest('details')).toBeNull();
+    const { container: c2 } = render(SessionEnd, { props: base });
+    expect(c2.querySelector('details.end-detail')).toBeNull();
+  });
+  it('hint lý do quay lại + nút chính theo tình huống: phiên ôn còn bài đến hạn → "Ôn tiếp" (link #/on), Về Hôm nay là nút phụ', () => {
+    const { container } = render(SessionEnd, { props: { ...base, kind: 'review' as const, dueNow: 4 } });
+    expect(container.querySelector('.end-hint')!.textContent).toBe('Còn 4 khái niệm đến hạn ôn ngay.');
+    const a = within(container).getByRole('link', { name: /Ôn tiếp \(còn 4\)/ });
+    expect(a.getAttribute('href')).toBe('#/on');
+    expect(a.className).toContain('primary');
+    expect(within(container).getByRole('button', { name: 'Về Hôm nay' }).className).not.toContain('primary');
+  });
+  it('hết bài: hint nêu lần ôn tới; không có gì → không hint, "Về Hôm nay" là nút chính', () => {
+    const { container } = render(SessionEnd, { props: { ...base, next: { inDays: 1, count: 3, date: '08/11/2026', time: '09:00' } } });
+    expect(container.querySelector('.end-hint')!.textContent).toBe('Ôn lại ngày mai · 3 khái niệm.');
+    expect(within(container).getByRole('button', { name: 'Về Hôm nay' }).className).toContain('primary');
+    const { container: c2 } = render(SessionEnd, { props: base });
+    expect(c2.querySelector('.end-hint')).toBeNull();
+  });
 });

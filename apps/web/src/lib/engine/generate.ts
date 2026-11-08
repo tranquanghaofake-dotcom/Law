@@ -3,7 +3,7 @@
 import type { Concept, ItemCloze, ItemMcq, ItemPair, ItemTrueFalse } from '$lib/content/types';
 import { normalize } from './grading';
 import type { MatchItem, SortItem } from './step';
-import { clip, coverage, informative, leaks, maskDefiningHead, maskTerms, nearDuplicate, overlaps, qualifierParts, sharedWords, termParts } from './text';
+import { MASK, clip, coverage, informative, leaks, maskDefiningHead, maskTerms, nearDuplicate, overlaps, qualifierParts, sharedWords, termParts } from './text';
 
 /** Dữ liệu nạp thêm để làm phương án nhiễu: khái niệm dễ nhầm/cùng chương, bảng tên khái niệm theo môn. */
 export type GenContext = { pool?: Concept[]; terms?: Record<string, Record<string, string>> };
@@ -77,14 +77,24 @@ export function pickDistractors(cands: Cand[], n: number, rng: () => number, tar
     || a.cand.tier - b.cand.tier
     || Math.floor(Math.abs(a.text.length - targetLen) / 20) - Math.floor(Math.abs(b.text.length - targetLen) / 20)
     || a.r - b.r);
+  // Nhiễu lệch dạng (dài/ngắn hơn đáp án nhiều lần: tên bài, cả mệnh đề) bị loại bằng hình thức chứ không bằng kiến thức.
+  // Chỉ dùng làm phương án bù khi không đủ nhiễu vừa dạng.
+  const fit = ok.filter((x) => !misfit(x.text, targetLen));
   const out: { cand: Cand; text: string }[] = [];
-  for (const x of ok) {
-    if (out.length >= n) break;
-    if (out.some((o) => overlaps(o.text, x.text))) continue;
-    out.push({ cand: x.cand, text: x.text });
+  for (const pool of [fit, ok.filter((x) => !fit.includes(x))]) {
+    for (const x of pool) {
+      if (out.length >= n) break;
+      if (out.some((o) => overlaps(o.text, x.text))) continue;
+      out.push({ cand: x.cand, text: x.text });
+    }
   }
   return out;
 }
+
+/** Độ dài lệch quá 2,5 lần so với đáp án (cộng đệm 8 ký tự cho tên rất ngắn). */
+const SHAPE_RATIO = 2.5;
+const misfit = (text: string, targetLen: number): boolean =>
+  text.length > targetLen * SHAPE_RATIO + 8 || text.length * SHAPE_RATIO + 8 < targetLen;
 
 function mcq(q: string, correct: string, wrong: string[], explain: string, rng: () => number, level: 1 | 4, c: Concept): ItemMcq | null {
   if (wrong.length + 1 < MIN_OPTIONS) return null;
@@ -133,9 +143,27 @@ function distinctFrom(c: Concept, cands: Cand[]): Cand[] {
   });
 }
 
+/** Số chỗ che tối đa mong muốn trong đề bài: nhiều hơn thì câu gãy, người học phải đoán ngữ pháp trước khi nghĩ đến luật. */
+const MAX_MASKS = 2;
+const maskCount = (t: string): number => t.split(MASK).length - 1;
+
+/**
+ * Đề bài che dày (≥ 3 chỗ `[…]`) → thử dùng đoạn đầu của định nghĩa (đến hết câu/vế), lấy đoạn ngắn nhất
+ * ≤ MAX_MASKS chỗ che mà vẫn đủ thông tin (≥ 10 tiếng). Không được thì giữ nguyên. Chỉ cắt ở ranh giới câu: không viết thêm chữ.
+ */
+function lighterStem(text: string): string {
+  if (maskCount(text) <= MAX_MASKS) return text;
+  const parts = text.split(/(?<=[.;])\s+/u);
+  for (let k = 1; k < parts.length; k++) {
+    const head = parts.slice(0, k).join(' ');
+    if (maskCount(head) <= MAX_MASKS && wordCount(head) >= 10 && informative(head)) return head;
+  }
+  return text;
+}
+
 /** Định nghĩa → thuật ngữ (bậc 1). Null nếu định nghĩa sau khi che vẫn lộ thuật ngữ / ít thông tin, hoặc thiếu phương án. */
 export function genDefTerm(c: Concept, cands: Cand[], rng: () => number): ItemMcq | null {
-  const text = shownDefinition(c, LIMITS.defQuestion, qualifierParts(c.term));
+  const text = lighterStem(shownDefinition(c, LIMITS.defQuestion, qualifierParts(c.term)));
   if (leaks(text, c.term) || normalize(text).length < 30) return null;
   if (!informative(text)) { genStats.lowInfo++; return null; }
   const wrong = pickDistractors(distinctFrom(c, cands), MAX_OPTIONS - 1, rng, c.term.length, (x) => x.term, { stem: text, correct: c.term });

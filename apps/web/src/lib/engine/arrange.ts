@@ -90,3 +90,61 @@ export function nearConfusables(
   }
   return out;
 }
+
+// ---------- Chống chuỗi cùng dạng ----------
+
+/** Số vị trí làm chuỗi cùng dạng dài quá `maxRun`. Thẻ giới thiệu không tính và cắt chuỗi (người học thấy nó xen giữa). */
+export function longRuns(steps: Step[], maxRun = 2): number {
+  let run = 0, n = 0, prev = '';
+  for (const s of steps) {
+    if (s.item.type === 'intro') { run = 0; prev = ''; continue; }
+    const k = typeKey(s);
+    run = k === prev ? run + 1 : 1;
+    prev = k;
+    if (run > maxRun) n++;
+  }
+  return n;
+}
+
+const adjacentSameConcept = (steps: Step[]): number =>
+  steps.reduce((n, s, k) => n + (k > 0 && s.conceptId === steps[k - 1].conceptId && s.item.type !== 'intro' ? 1 : 0), 0);
+
+/**
+ * Phá chuỗi ≥ 3 bước cùng dạng liền nhau bằng cách DỜI một bước của chuỗi sang vị trí khác (khi có chỗ).
+ * Không đổi: số bước, thứ tự các bước của cùng một khái niệm (kể cả thẻ giới thiệu đứng trước câu của nó),
+ * thẻ giới thiệu, câu chốt (`meta.kind` 'boss'/'pretest'); không tạo thêm cặp liền nhau cùng khái niệm.
+ * Mỗi lần dời phải giảm số chuỗi dài; không có cách dời thì giữ nguyên.
+ */
+export function breakRuns(steps: Step[], maxRun = 2): Step[] {
+  let out = steps.slice();
+  const fixedAt = (arr: Step[], k: number) => arr[k].item.type === 'intro' || arr[k].meta?.kind === 'boss' || arr[k].meta?.kind === 'pretest';
+  const conceptOrder = (arr: Step[], id: string) => arr.filter((x) => x.conceptId === id);
+  const sameOrder = (a: Step[], b: Step[], id: string) => { const x = conceptOrder(a, id), y = conceptOrder(b, id); return x.every((v, i) => v === y[i]); };
+  for (let guard = 0; guard < out.length * 4 && longRuns(out, maxRun) > 0; guard++) {
+    const before = longRuns(out, maxRun), clashes = adjacentSameConcept(out);
+    let run = 0, prev = '', at = -1;
+    for (let k = 0; k < out.length && at < 0; k++) {
+      if (out[k].item.type === 'intro') { run = 0; prev = ''; continue; }
+      const key = typeKey(out[k]);
+      run = key === prev ? run + 1 : 1; prev = key;
+      if (run > maxRun) at = k;
+    }
+    let best: Step[] | null = null;
+    for (const cand of [at, at - 1, at - 2]) {
+      if (cand < 0 || fixedAt(out, cand)) continue;
+      const rest = out.slice(0, cand).concat(out.slice(cand + 1));
+      for (let p = 0; p <= rest.length && !best; p++) {
+        if (p === cand) continue;
+        const next = rest.slice(0, p).concat(out[cand], rest.slice(p));
+        // câu chốt/đoán trước giữ vị trí tương đối; không chèn sau câu chốt cuối phiên
+        if (next.at(-1) !== out.at(-1) && fixedAt(out, out.length - 1)) continue;
+        if (!sameOrder(out, next, out[cand].conceptId)) continue;
+        if (longRuns(next, maxRun) < before && adjacentSameConcept(next) <= clashes) best = next;
+      }
+      if (best) break;
+    }
+    if (!best) break;
+    out = best;
+  }
+  return out;
+}

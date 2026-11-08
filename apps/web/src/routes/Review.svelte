@@ -2,7 +2,7 @@
   import Loading from '$lib/ui/Loading.svelte';
   import type { Concept, Level } from '$lib/content/types';
   import { loadIndex, loadSubject, loadConcepts, loadConceptPool, loadTerms } from '$lib/content/loader';
-  import { buildReviewSession, type Step } from '$lib/engine/session';
+  import { buildReviewSession, makeRetryAlt, type Step } from '$lib/engine/session';
   import { reviewPoolIds } from '$lib/engine/pool';
   import { repo } from '$lib/store/progress-repo';
   import { retrievability } from '$lib/engine/fsrs';
@@ -10,9 +10,10 @@
   import { hashFor, route } from '$lib/router.svelte';
   import { nextReview } from '$lib/ui/dueByDay';
   import Glyph from '$lib/art/Glyph.svelte';
+  import { loadWeak, type WeakItem } from '$lib/ui/weak';
   const subjectId = route.params.subject as string | undefined;
 
-  let data = $state<{ steps: Step[]; concepts: Concept[]; levels: Record<string, Level>; upDays: Record<string, string> } | null>(null);
+  let data = $state<{ steps: Step[]; retryAlt: (s: Step) => Step | null; concepts: Concept[]; levels: Record<string, Level>; upDays: Record<string, string> } | null>(null);
   let empty = $state(false);
   // Trạng thái rỗng: lần ôn tới (null = chưa có hẹn) và đã học khái niệm nào chưa
   let upcoming = $state<{ learned: number; next: ReturnType<typeof nextReview>; stale: number }>({ learned: 0, next: null, stale: 0 });
@@ -21,8 +22,11 @@
     const all = await repo.all(subjectId);
     upcoming = { learned: all.length, next: nextReview(all.map((c) => c.card.due)), stale };
     empty = true;
+    loadWeak().then((w) => { weak = w.items[0] ?? null; }).catch(() => { /* không có gợi ý */ });
   }
   let error = $state('');
+  /** Bài hay sai nhất (90 ngày): gợi ý luyện thêm khi hết bài đến hạn, để trang Ôn không là ngõ cụt. */
+  let weak = $state<WeakItem | null>(null);
 
   async function load() {
     try {
@@ -54,7 +58,7 @@
         Promise.all(subjectsInUse.map((sid) => loadTerms(sid).catch(() => ({})))),
       ]);
       const ctx = { pool: pools.flat(), terms: Object.fromEntries(subjectsInUse.map((sid, k) => [sid, termList[k]])) };
-      data = { steps: buildReviewSession(concepts, levels, Math.random, undefined, ctx, urgency), concepts, levels, upDays };
+      data = { steps: buildReviewSession(concepts, levels, Math.random, undefined, ctx, urgency), retryAlt: makeRetryAlt(concepts, Math.random, ctx), concepts, levels, upDays };
     } catch (e) { error = (e as Error).message; }
   }
   load();
@@ -78,6 +82,9 @@
         <p class="re-ok"><Glyph name="check" size={20} /> Hôm nay không còn khái niệm nào cần ôn{subjectId ? ' trong môn này' : ''}.</p>
         {#if upcoming.next}<p class="re-next">Lần ôn tới: <b>{upcoming.next.inDays === 1 ? 'ngày mai' : `${upcoming.next.inDays} ngày nữa`}</b> ({upcoming.next.date}) · {upcoming.next.count} khái niệm.</p>{/if}
       {/if}
+      {#if weak && !upcoming.stale}
+        <p class="re-weak">Muốn luyện thêm? Bài bạn hay sai nhất: <b>{weak.lessonTitle}</b> ({weak.short}, đúng {weak.correct}/{weak.tries}). <a href={weak.href}>Ôn bài này →</a></p>
+      {/if}
       <div class="row">
         <a class="btn primary" href={subjectId ? hashFor('subject', { subject: subjectId }) : hashFor('home')}>Học đợt mới →</a>
         <a class="btn ghost" href={hashFor('quizzes')}>Luyện đề</a>
@@ -87,5 +94,5 @@
 {:else if !data}
   <Loading />
 {:else}
-  <SessionView steps={data.steps} concepts={data.concepts} levels={data.levels} upDays={data.upDays} title="Ôn hôm nay" />
+  <SessionView steps={data.steps} retryAlt={data.retryAlt} concepts={data.concepts} levels={data.levels} upDays={data.upDays} title="Ôn hôm nay" />
 {/if}

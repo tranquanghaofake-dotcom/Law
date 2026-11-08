@@ -27,6 +27,7 @@
   import LessonPanel from '$lib/ui/LessonPanel.svelte';
   import LessonStrip from '$lib/ui/LessonStrip.svelte';
   import SessionEnd from '$lib/ui/SessionEnd.svelte';
+  import { nextReview } from '$lib/ui/dueByDay';
   import { isTypingTarget } from '$lib/ui/cards/types';
   import { onDestroy, onMount, tick, untrack } from 'svelte';
   import { feedbackSpeech, promptSpeech } from '$lib/ui/session/speech';
@@ -45,19 +46,21 @@
   import { bossBadge } from '$lib/ui/session/badge';
   import { lessonGate } from '$lib/ui/lessonState';
 
-  let { steps, concepts, levels, upDays = {}, lessonId, lessonConcepts, onagain, onnext, title }: {
+  let { steps, concepts, levels, upDays = {}, lessonId, lessonConcepts, onagain, onnext, title, retryAlt }: {
     steps: Step[]; concepts: Concept[]; levels: Record<string, Level>;
     /** Ngày lên bậc gần nhất theo khái niệm (luật giãn cách bậc ≥ 4, cùng luật với repo.record). */
     upDays?: Record<string, string>;
     lessonId?: string; onagain?: () => void; onnext?: () => void; title?: string;
     /** Khái niệm của đợt (phiên học đợt): để màn kết thúc biết đợt sau đã mở chưa. */
     lessonConcepts?: string[];
+    /** Vòng sửa sai: câu khác của cùng khái niệm/bậc (null → lặp câu cũ). Không truyền = lặp câu cũ. */
+    retryAlt?: (step: Step) => Step | null;
   } = $props();
 
   // svelte-ignore state_referenced_locally
   let run = $state<RunnerState>(createRunner(steps, levels, upDays));
   let result = $state<AnswerResult | null>(null);
-  let ended = $state<null | { streak: number; streakEvent: StreakEvent; rankBefore: RankInfo; rankAfter: RankInfo; dueTomorrow: number; promotion: string | null }>(null);
+  let ended = $state<null | { streak: number; streakEvent: StreakEvent; rankBefore: RankInfo; rankAfter: RankInfo; dueTomorrow: number; promotion: string | null; dueNow: number; nextDue: ReturnType<typeof nextReview> }>(null);
   let confirmExit = $state(false);
   /** Phần tử đang có focus trước khi mở hộp Thoát bằng Esc, để trả về khi đóng. */
   let returnFocus: HTMLElement | null = null;
@@ -197,7 +200,7 @@
     tts.stop();
     shownOptions = undefined;
     result = null;
-    run = runNext(run);
+    run = runNext(run, retryAlt);
     if (run.done) finish();
   }
 
@@ -218,13 +221,19 @@
     const titleBefore = currentTitle();
     const tomorrow = new Date(Date.now() + 86400000);
     const dueTomorrow = (await repo.due(tomorrow)).length;
+    // lý do quay lại ở màn cuối: còn bài đến hạn ngay + lần ôn tới; lỗi truy vấn không được chặn màn kết thúc
+    let dueNow = 0, nextDue: ReturnType<typeof nextReview> = null;
+    try {
+      dueNow = (await repo.due(new Date())).length;
+      nextDue = nextReview((await repo.all()).map((c) => c.card.due));
+    } catch { /* bỏ qua */ }
     await refreshHeader();
     await refreshShelf();
     await refreshSidenav();
     const titleAfter = currentTitle();
     const promotion = titleAfter !== titleBefore ? titleAfter : null;
     if (promotion) { sfx.play('rankup'); burst('rankup'); buzz('milestone'); }
-    ended = { streak: st.count, streakEvent: event, rankBefore, rankAfter, dueTomorrow, promotion };
+    ended = { streak: st.count, streakEvent: event, rankBefore, rankAfter, dueTomorrow, promotion, dueNow, nextDue };
   }
 
   /** Bỏ qua câu đoán trước: ghi như sai nhưng không đụng tiến độ, sang thẻ giới thiệu ngay. */
@@ -263,7 +272,7 @@
 <div class="session-main">
   <h1 class="sr-only">{title ?? 'Phiên học'}</h1>
   {#if ended}
-    <SessionEnd summary={summary(run)} {sources} {record} retryTotal={summary(run).retried} {concepts} streak={ended.streak} streakEvent={ended.streakEvent} rankBefore={ended.rankBefore} rankAfter={ended.rankAfter} dueTomorrow={ended.dueTomorrow} promotion={ended.promotion} onhome={() => go('home')} {onagain} {onnext} gate={lessonConcepts ? lessonGate(lessonConcepts, run.levels) : null} mistakes={mistakes(run)} />
+    <SessionEnd summary={summary(run)} {sources} {record} retryTotal={summary(run).retried} {concepts} streak={ended.streak} streakEvent={ended.streakEvent} rankBefore={ended.rankBefore} rankAfter={ended.rankAfter} dueTomorrow={ended.dueTomorrow} dueNow={ended.dueNow} next={ended.nextDue} kind={lessonConcepts ? 'lesson' : 'review'} promotion={ended.promotion} onhome={() => go('home')} {onagain} {onnext} gate={lessonConcepts ? lessonGate(lessonConcepts, run.levels) : null} mistakes={mistakes(run)} />
   {:else if step && Card}
     <SessionBar done={barDone} total={barTotal} {title} combo={run.combo} xp={shownXp} {marks} {inRetry} onexit={openConfirm} />
     {#if lessonId}<LessonStrip {concepts} levels={run.levels} current={hideCurrent ? '' : (step?.conceptId ?? '')} />{/if}

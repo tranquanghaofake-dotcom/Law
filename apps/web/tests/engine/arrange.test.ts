@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import type { Step } from '$lib/engine/step';
-import { interleave, spreadByConcept, typeKey } from '$lib/engine/arrange';
+import { breakRuns, interleave, longRuns, spreadByConcept, typeKey } from '$lib/engine/arrange';
 import { mulberry32 } from '$lib/engine/rng';
 
 const st = (id: string, type: 'mcq' | 'cloze' | 'recall', gen?: 'def-term'): Step =>
@@ -58,5 +58,45 @@ describe('mulberry32', () => {
       expect(x).toBeGreaterThanOrEqual(0);
       expect(x).toBeLessThan(1);
     }
+  });
+});
+
+describe('longRuns / breakRuns — không để ≥ 3 câu cùng dạng liền nhau', () => {
+  const intro = (id: string): Step => ({ conceptId: id, level: 0, item: { type: 'intro' } });
+  const seq = (...xs: [string, 'mcq' | 'cloze' | 'recall'][]) => xs.map(([id, t]) => st(id, t));
+
+  it('longRuns đếm vị trí làm chuỗi dài quá 2; thẻ giới thiệu không tính và cắt chuỗi', () => {
+    expect(longRuns(seq(['a', 'cloze'], ['b', 'cloze'], ['c', 'cloze']))).toBe(1);
+    expect(longRuns(seq(['a', 'cloze'], ['b', 'cloze'], ['c', 'mcq'], ['d', 'cloze']))).toBe(0);
+    expect(longRuns([intro('a'), intro('b'), intro('c'), ...seq(['a', 'mcq'])])).toBe(0);
+    expect(longRuns([...seq(['a', 'cloze'], ['b', 'cloze']), intro('c'), ...seq(['d', 'cloze'])])).toBe(0);
+  });
+
+  it('phá chuỗi bằng cách đổi chỗ khi có chỗ đổi: giữ đủ bước, thứ tự trong từng khái niệm, không tạo hai bước liền cùng khái niệm', () => {
+    const steps = seq(['a', 'cloze'], ['b', 'cloze'], ['c', 'cloze'], ['d', 'mcq'], ['e', 'recall']);
+    const out = breakRuns(steps);
+    expect(longRuns(out)).toBe(0);
+    expect([...out].sort((x, y) => x.conceptId.localeCompare(y.conceptId))).toEqual([...steps].sort((x, y) => x.conceptId.localeCompare(y.conceptId)));
+    expect(noAdjacent(out)).toBe(true);
+  });
+
+  it('không đảo thứ tự hai bước của cùng một khái niệm', () => {
+    // a1(cloze) b(cloze) c(cloze) a2(mcq): đổi c↔a2 sẽ đưa a2 lên trước a1? không — a1 đứng trước; nhưng đổi b↔... phải giữ a1 trước a2
+    const a1 = st('a', 'cloze'), a2 = st('a', 'mcq');
+    const out = breakRuns([a1, st('b', 'cloze'), st('c', 'cloze'), a2, st('d', 'recall')]);
+    expect(out.indexOf(a1)).toBeLessThan(out.indexOf(a2));
+  });
+
+  it('không động thẻ giới thiệu và câu chốt (cuối)', () => {
+    const boss: Step = { ...st('z', 'cloze'), meta: { kind: 'boss' } };
+    const steps = [intro('a'), ...seq(['a', 'cloze'], ['b', 'cloze'], ['c', 'mcq'], ['d', 'cloze']), boss];
+    const out = breakRuns(steps);
+    expect(out[0].item.type).toBe('intro');
+    expect(out.at(-1)).toBe(boss);
+  });
+
+  it('không có cách phá (mọi bước cùng dạng) → giữ nguyên, không lặp vô hạn', () => {
+    const steps = seq(['a', 'cloze'], ['b', 'cloze'], ['c', 'cloze'], ['d', 'cloze']);
+    expect(breakRuns(steps)).toEqual(steps);
   });
 });

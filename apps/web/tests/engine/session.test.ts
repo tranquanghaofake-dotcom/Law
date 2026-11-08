@@ -2,9 +2,9 @@ import { describe, expect, it } from 'vitest';
 import { readdirSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import type { Concept, Level, Subject } from '$lib/content/types';
-import { buildLearnSession, buildReviewSession, clozeModeFor, finalize, kickerFor, passFor, pickItem, type Step } from '$lib/engine/session';
+import { buildLearnSession, buildReviewSession, clozeModeFor, confusablePair, finalize, kickerFor, makeRetryAlt, passFor, pickItem, type Step } from '$lib/engine/session';
 import { mulberry32 } from '$lib/engine/rng';
-import { typeKey } from '$lib/engine/arrange';
+import { longRuns, typeKey } from '$lib/engine/arrange';
 import { hasAbsoluteWord } from '$lib/engine/text';
 
 const WORDS = ['tài sản', 'nghĩa vụ', 'hợp đồng', 'thừa kế', 'bồi thường', 'chiếm hữu', 'đại diện', 'thời hiệu'];
@@ -182,6 +182,70 @@ describe('finalize', () => {
   });
 });
 
+describe('Đúng/Sai chép nguyên định nghĩa chỉ kiểm nhận mặt chữ: bỏ khi còn dạng khác ở bậc 4', () => {
+  const copy = (c: Concept) => ({ type: 'truefalse' as const, level: 4 as const, statement: c.definition, answer: true, explain: 'e' });
+  it('có câu tình huống/Đúng-Sai khác → không chọn câu chép định nghĩa', () => {
+    for (let seed = 1; seed <= 30; seed++) {
+      const base = concept('a', 0);
+      const c = { ...base, items: [...base.items, copy(base)] };
+      const steps = buildReviewSession([c], { a: 4 }, mulberry32(seed));
+      const it = steps[0].item;
+      expect(it.type === 'truefalse' && it.statement === c.definition).toBe(false);
+    }
+  });
+  it('khái niệm chỉ có câu chép định nghĩa ở bậc 4 → vẫn dùng (không bỏ khái niệm)', () => {
+    const base = concept('a', 0);
+    const c = { ...base, items: [...base.items.filter((i) => i.level !== 4), copy(base)] };
+    const steps = buildReviewSession([c], { a: 4 }, mulberry32(1));
+    expect(steps).toHaveLength(1);
+    expect(steps[0].item.type).toBe('truefalse');
+  });
+});
+
+describe('câu chốt không phải Đúng/Sai khi còn dạng khác', () => {
+  const tf = (id: string, answer: boolean): Step => ({ conceptId: id, level: 4, item: { type: 'truefalse', level: 4, statement: `s ${id}`, answer, explain: 'e' } });
+  const rc = (id: string): Step => ({ conceptId: id, level: 5, item: { type: 'recall', level: 5, q: `q ${id}`, model: 'm', keywords: ['a', 'b', 'c'] } });
+  it('có dạng khác (tự nhớ lại) → câu chốt không phải Đúng/Sai', () => {
+    for (let seed = 1; seed <= 20; seed++) {
+      const out = finalize([tf('a', true), tf('b', false), rc('c'), tf('d', true)], mulberry32(seed));
+      expect(out.at(-1)!.meta?.kind).toBe('boss');
+      expect(out.at(-1)!.item.type).not.toBe('truefalse');
+    }
+  });
+  it('chỉ có Đúng/Sai → vẫn có câu chốt (Đúng/Sai)', () => {
+    const out = finalize([tf('a', true), tf('b', false), tf('c', true)], mulberry32(1));
+    expect(out.at(-1)!.meta?.kind).toBe('boss');
+  });
+});
+
+describe('makeRetryAlt — câu sửa sai khác câu sai', () => {
+  const cs = ['a', 'b', 'c'].map((id, k) => concept(id, k));
+  const sig = (s: Step) => JSON.stringify(s.item);
+  it('trả câu khác cùng khái niệm, cùng bậc (không phải câu vừa sai); gen thì kèm meta.gen', () => {
+    const steps = buildLearnSession(cs, { a: 0, b: 0, c: 0 }, mulberry32(3)).filter((s) => s.item.type !== 'intro');
+    const alt = makeRetryAlt(cs, mulberry32(9));
+    let got = 0;
+    for (const s of steps) {
+      const a = alt(s);
+      if (!a) continue;
+      got++;
+      expect(a.conceptId).toBe(s.conceptId);
+      expect(a.level).toBe(s.level);
+      expect(sig(a)).not.toBe(sig(s));
+    }
+    expect(got).toBeGreaterThan(0);
+  });
+  it('bậc chỉ có một câu (tự nhớ lại) → null, để runner lặp câu cũ', () => {
+    const c = concept('a', 0);
+    const recall: Step = { conceptId: 'a', level: 5, item: c.items.find((i) => i.type === 'recall')! };
+    expect(makeRetryAlt([c], mulberry32(1))(recall)).toBeNull();
+  });
+  it('khái niệm lạ → null', () => {
+    const s: Step = { conceptId: 'zzz', level: 1, item: { type: 'mcq', level: 1, q: 'q', options: ['1', '2'], answer: 0, explain: '' } };
+    expect(makeRetryAlt(cs, mulberry32(1))(s)).toBeNull();
+  });
+});
+
 // ---------- Dữ liệu thật: số liệu đợt 6 ----------
 const ROOT = resolve(process.cwd(), '../../packages/content/data');
 const all: Concept[] = readdirSync(`${ROOT}/concepts`).flatMap((s) => readdirSync(`${ROOT}/concepts/${s}`).map((f) => JSON.parse(readFileSync(`${ROOT}/concepts/${s}/${f}`, 'utf8')) as Concept));
@@ -190,7 +254,7 @@ const subjects: Subject[] = readdirSync(`${ROOT}/subjects`).map((f) => JSON.pars
 describe('dữ liệu thật: mọi đợt học ghép được phiên hợp lệ', () => {
   it('mỗi đợt × 3 pass: có câu chốt, không pair suy ra được, Đúng/Sai trong phiên gần 50/50', () => {
     const byKey = new Map(all.map((c) => [`${c.subject}/${c.id}`, c]));
-    let tfT = 0, tfF = 0, sessions = 0, unbalanced = 0, absT = 0, absF = 0;
+    let tfT = 0, tfF = 0, sessions = 0, unbalanced = 0, absT = 0, absF = 0, withRun = 0, tfBoss = 0;
     for (const s of subjects) for (const ch of s.chapters) for (const l of ch.lessons) {
       const cs = l.concepts.map((id) => byKey.get(`${s.id}/${id}`)!);
       const pool = all.filter((x) => x.subject === s.id && (x.chapter === ch.id || cs.some((c) => c.confusables.includes(x.id))));
@@ -199,6 +263,10 @@ describe('dữ liệu thật: mọi đợt học ghép được phiên hợp l�
         sessions++;
         expect(steps.at(-1)!.meta?.kind).toBe('boss');
         expect(steps.some((x) => x.item.type === 'pair' && x.item.cases.length < 4)).toBe(false);
+        // đo 07/11/2026: trước khi chống chuỗi, 20–36 % phiên có ≥ 3 câu cùng dạng liền nhau; câu chốt Đúng/Sai ở 58 % phiên pass 3
+        if (longRuns(steps) > 0) withRun++;
+        const scored = steps.filter((x) => x.item.type !== 'intro');
+        if (steps.at(-1)!.item.type === 'truefalse' && scored.some((x) => x.item.type !== 'truefalse')) tfBoss++;
         let t = 0, f = 0;
         for (const x of steps) if (x.item.type === 'truefalse') { if (x.item.answer) t++; else f++; }
         tfT += t; tfF += f;
@@ -218,6 +286,8 @@ describe('dữ liệu thật: mọi đợt học ghép được phiên hợp l�
     // ghi nhận: tỉ lệ Đúng trong các bước Đúng/Sai của mọi phiên thử
     expect(tfT / (tfT + tfF)).toBeGreaterThan(0.4);
     expect(unbalanced / sessions).toBeLessThan(0.1);
+    expect(withRun / sessions).toBeLessThan(0.1);
+    expect(tfBoss).toBe(0);
   }, 60000);
 });
 
@@ -232,3 +302,59 @@ describe('buildReviewSession — ưu tiên khái niệm sắp quên', () => {
     }
   });
 });
+
+describe('dữ liệu thật: câu sửa sai khác câu sai (makeRetryAlt)', () => {
+  it('bậc 1 và 3: ≥ 90 % có câu khác cùng khái niệm/bậc; câu thay thế luôn cùng khái niệm, cùng bậc, khác câu sai', () => {
+    const byKey = new Map(all.map((c) => [`${c.subject}/${c.id}`, c]));
+    const tot: Record<number, number> = {}, got: Record<number, number> = {};
+    let seed = 0;
+    for (const s of subjects) for (const ch of s.chapters) for (const l of ch.lessons) {
+      const cs = l.concepts.map((id) => byKey.get(`${s.id}/${id}`)!);
+      const pool = all.filter((x) => x.subject === s.id && x.chapter === ch.id);
+      const alt = makeRetryAlt(cs, mulberry32(++seed), { pool });
+      for (const lv of [0, 2, 4] as Level[]) {
+        for (const st of buildLearnSession(cs, Object.fromEntries(cs.map((c) => [c.id, lv])), mulberry32(++seed), { pool })) {
+          if (st.item.type === 'intro') continue;
+          tot[st.level] = (tot[st.level] ?? 0) + 1;
+          const a = alt(st);
+          if (!a) continue;
+          got[st.level] = (got[st.level] ?? 0) + 1;
+          expect(a.conceptId).toBe(st.conceptId);
+          expect(a.level).toBe(st.level);
+          expect(JSON.stringify(a.item)).not.toBe(JSON.stringify(st.item));
+        }
+      }
+    }
+    const rate = (l: number) => (got[l] ?? 0) / (tot[l] ?? 1);
+    console.info('tỉ lệ có câu thay thế theo bậc', Object.fromEntries([1, 2, 3, 4, 5].map((l) => [l, `${Math.round(rate(l) * 100)}% (${got[l] ?? 0}/${tot[l] ?? 0})`])));
+    expect(rate(1)).toBeGreaterThanOrEqual(0.9);
+    expect(rate(3)).toBeGreaterThanOrEqual(0.9);
+    expect(got[5] ?? 0).toBe(0); // tự nhớ lại chỉ có một câu: lặp câu cũ như trước
+  }, 60000);
+});
+
+describe('dữ liệu thật: phiên ôn không dồn chuỗi cùng dạng, vẫn giữ cặp dễ nhầm gần nhau', () => {
+  it('300 phiên ôn (mỗi môn × 12 lần, ≤ 12 khái niệm, bậc ngẫu nhiên): hầu như không có ≥ 3 câu cùng dạng liền nhau; câu chốt không Đúng/Sai; cặp dễ nhầm còn gần nhau', () => {
+    // đo 07/11/2026 trước khi chạy breakRuns sau bước xếp cặp dễ nhầm: 34/300 phiên có chuỗi; sau: 0/300; cặp trong vòng 4 bước 1864 → 1853
+    const rng = mulberry32(5);
+    const bySubject = new Map<string, Concept[]>();
+    for (const c of all) (bySubject.get(c.subject) ?? bySubject.set(c.subject, []).get(c.subject)!).push(c);
+    let n = 0, withRun = 0, tfBoss = 0, pairs = 0, near = 0;
+    for (const [, cs] of bySubject) for (let rep = 0; rep < 12; rep++) {
+      const pick = cs.slice().sort(() => rng() - 0.5).slice(0, 12);
+      const levels = Object.fromEntries(pick.map((c) => [c.id, (1 + Math.floor(rng() * 6)) as Level]));
+      const st = buildReviewSession(pick, levels, mulberry32(++n), 20, { pool: cs });
+      if (longRuns(st) > 0) withRun++;
+      if (st.at(-1)!.item.type === 'truefalse' && st.some((x) => x.item.type !== 'truefalse')) tfBoss++;
+      const cm = new Map(pick.map((c) => [c.id, c]));
+      for (let i = 0; i < st.length; i++) for (let j = i + 1; j < st.length; j++) {
+        const a = cm.get(st[i].conceptId), b = cm.get(st[j].conceptId);
+        if (a && b && confusablePair(a, b)) { pairs++; if (j - i <= 4) near++; }
+      }
+    }
+    expect(withRun / n).toBeLessThanOrEqual(0.03);
+    expect(tfBoss).toBe(0);
+    expect(near / pairs).toBeGreaterThanOrEqual(0.6); // trước khi sửa: 0,674; sau: 0,668
+  }, 60000);
+});
+
