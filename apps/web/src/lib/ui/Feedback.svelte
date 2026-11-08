@@ -8,6 +8,7 @@
   import { feedbackSpeech } from './session/speech';
   import { LEVEL_NAMES } from '$lib/game/levels';
   import { whyOf } from '$lib/engine/why';
+  import { revealFeedback } from './revealFeedback';
   import WhyPanel from './WhyPanel.svelte';
   import LegalNote from './LegalNote.svelte';
   import MemoCard from './MemoCard.svelte';
@@ -43,7 +44,7 @@
 </script>
 
 <svelte:window onkeydown={onkey} />
-<div class="feedback {result.correct ? 'ok' : 'bad'}" role="status" aria-live="polite">
+<div class="feedback {result.correct ? 'ok' : 'bad'}" role="status" aria-live="polite" use:revealFeedback>
   {#if result.correct && !partial}<span class="ok-seal" aria-hidden="true">ĐÚNG</span>{/if}
   <p class="verdict"><span class="vtext">{partial ? `Gần đúng. Nhận định ${correctText.toLowerCase()}; xem phần đúng ở thẻ trên.` : result.correct ? 'Chính xác.' : `Chưa đúng.${correctText && !answerInWhy ? ` Đáp án: ${correctText}` : ''}`}</span>
     {#if xp > 0}<span class="chip xp-chip" class:gold={golden}>+{xp} XP{golden ? ' · câu vàng' : ''}</span>{/if}
