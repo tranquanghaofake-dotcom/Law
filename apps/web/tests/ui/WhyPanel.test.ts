@@ -39,6 +39,30 @@ describe('WhyPanel', () => {
   });
 });
 
+describe('WhyPanel: "Dễ nhầm" không chọn thì gập khi đã có lời giải thích đúng lỗi (phần 2 "lúc sai")', () => {
+  const w: StepItem = { type: 'mcq', level: 1, q: 'Phân biệt với KN b: điều kiện thứ hai?', options: ['A', 'B', 'C', 'D'], answer: 1, explain: 'Khoản 2 Điều 1.', why: ['A sai.', 'B đúng vì khoản 2.', 'C sai vì điều kiện khác.', 'D sai.'] } as StepItem;
+  it('có lời giải thích đúng lỗi (why.wrong) + dễ nhầm không chọn → nằm trong <details> đóng', () => {
+    const { container } = render(WhyPanel, { props: { concept: c('a'), item: w, correct: false, explain: 'x', chosen: 'C', confusables: [c('b')] } });
+    const d = container.querySelector('details.why-mixup-more') as HTMLDetailsElement;
+    expect(d).not.toBeNull();
+    expect(d.open).toBe(false);
+    expect(d.querySelector('summary')!.textContent).toContain('KN b');
+    expect(d.querySelector('.why-mixup')).not.toBeNull();
+    expect(container.querySelector('.why-wrong')).not.toBeNull();
+  });
+  it('không có lời giải thích đúng lỗi → "Dễ nhầm" vẫn hiện sẵn như cũ', () => {
+    const noWhy = { ...w, why: undefined } as StepItem;
+    const { container } = render(WhyPanel, { props: { concept: c('a'), item: noWhy, correct: false, explain: 'x', chosen: 'C', confusables: [c('b')] } });
+    expect(container.querySelector('details.why-mixup-more')).toBeNull();
+    expect(container.querySelector('.why-mixup')).not.toBeNull();
+  });
+  it('bạn đã chọn đúng khái niệm dễ nhầm đó → không gập', () => {
+    const { container } = render(WhyPanel, { props: { concept: c('a'), item: w, correct: false, explain: 'x', chosen: 'KN b', confusables: [c('b')] } });
+    expect(container.querySelector('details.why-mixup-more')).toBeNull();
+    expect(container.querySelector('.why-mixup')).not.toBeNull();
+  });
+});
+
 describe('CompareTable', () => {
   it('hai cột có tên hai khái niệm; hàng Định nghĩa / Dấu hiệu / Ví dụ', () => {
     const { container } = render(CompareTable, { props: { a: c('a'), b: c('b') } });

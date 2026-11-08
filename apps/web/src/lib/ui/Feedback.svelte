@@ -7,6 +7,7 @@
   import { answerText, filledCloze } from './cards/answer';
   import { feedbackSpeech } from './session/speech';
   import { LEVEL_NAMES } from '$lib/game/levels';
+  import { whyOf } from '$lib/engine/why';
   import WhyPanel from './WhyPanel.svelte';
   import LegalNote from './LegalNote.svelte';
   import MemoCard from './MemoCard.svelte';
@@ -24,6 +25,8 @@
   const explain = $derived(item.type === 'recall' ? item.model : 'explain' in item ? item.explain : '');
   const source = $derived(('source' in item && item.source) ? item.source : concept.source);
   const speakText = $derived(feedbackSpeech(item, result));
+  // Trắc nghiệm/tình huống: phương án đúng đã tô xanh ở thẻ câu hỏi và "Vì sao" đã nêu "Đáp án đúng" → dòng đầu không lặp lại đáp án lần nữa.
+  const answerInWhy = $derived((item.type === 'mcq' || item.type === 'case') && !!whyOf(concept, item, { correct: result.correct, explain, chosen: result.chosen, confusables })?.right);
   /** Nhận định chấm 3 phần được 0,5–0,75 điểm: "gần đúng", không đóng dấu ĐÚNG. */
   const partial = $derived(item.type === 'truefalse' && !!item.parts && result.selfGrade === 'gan');
 
@@ -42,7 +45,7 @@
 <svelte:window onkeydown={onkey} />
 <div class="feedback {result.correct ? 'ok' : 'bad'}" role="status" aria-live="polite">
   {#if result.correct && !partial}<span class="ok-seal" aria-hidden="true">ĐÚNG</span>{/if}
-  <p class="verdict"><span class="vtext">{partial ? `Gần đúng. Nhận định ${correctText.toLowerCase()}; xem phần đúng ở thẻ trên.` : result.correct ? 'Chính xác.' : `Chưa đúng.${correctText ? ` Đáp án: ${correctText}` : ''}`}</span>
+  <p class="verdict"><span class="vtext">{partial ? `Gần đúng. Nhận định ${correctText.toLowerCase()}; xem phần đúng ở thẻ trên.` : result.correct ? 'Chính xác.' : `Chưa đúng.${correctText && !answerInWhy ? ` Đáp án: ${correctText}` : ''}`}</span>
     {#if xp > 0}<span class="chip xp-chip" class:gold={golden}>+{xp} XP{golden ? ' · câu vàng' : ''}</span>{/if}
     {#if levelTo !== null}<span class="chip level-chip">Lên bậc {levelTo}<small> · {LEVEL_NAMES[levelTo]}</small></span>{/if}
     {#if onspeak}<button class="speak" type="button" aria-label="Nghe giải thích" title="Nghe (Space)" onclick={() => onspeak?.(speakText)}><Glyph name="speaker" /></button>{/if}
