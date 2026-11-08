@@ -1,5 +1,5 @@
 import type { Concept, Item, Level } from '$lib/content/types';
-import { interleave, nearConfusables, typeKey } from './arrange';
+import { breakRuns, interleave, nearConfusables, typeKey } from './arrange';
 import { candidates, clozeExtras, genDefTerm, genExampleConcept, genMatch, genSort, genTermDef, type Cand, type GenContext } from './generate';
 import type { Step, StepGen, StepItem, StepMeta } from './step';
 import { coverage, hasAbsoluteWord, leaks } from './text';
@@ -212,7 +212,8 @@ class Picker {
 // ---------- Câu chốt, câu vàng ----------
 
 /** Ưu tiên chọn câu chốt: tình huống trước. */
-const BOSS_PRIORITY = ['case', 'example-concept', 'pair-merged', 'truefalse', 'def-tf', 'match', 'recall', 'cloze', 'term-def', 'def-term', 'mcq'];
+// Đúng/Sai xếp cuối: đoán mò 50 % thì không đáng làm "câu chốt" khi phiên còn dạng khác (đo: 58 % phiên pass 3 từng kết thúc bằng Đúng/Sai).
+const BOSS_PRIORITY = ['case', 'example-concept', 'pair-merged', 'match', 'recall', 'cloze', 'term-def', 'def-term', 'mcq', 'truefalse', 'def-tf'];
 const bossRank = (s: Step) => { const k = BOSS_PRIORITY.indexOf(typeKey(s)); return k < 0 ? BOSS_PRIORITY.length : k; };
 
 /** Hai bước liền nhau cùng khái niệm (intro → câu đầu của chính nó được phép). */
@@ -273,6 +274,8 @@ export function finalize(steps: Step[], rng: () => number): Step[] {
     }
   }
   repairClashes(out);
+  // ≥ 3 câu cùng dạng liền nhau (đo: 20–36 % phiên) → đổi chỗ khi có cách; không động intro/câu chốt
+  out.splice(0, out.length, ...(breakRuns(out) as typeof out)); // cùng các đối tượng, chỉ đổi thứ tự
   const eligible = out.flatMap((s, k) => (s.item.type === 'intro' || s.meta?.kind === 'boss' ? [] : [k]));
   const count = eligible.length + 1 >= 3 ? Math.max(1, Math.round((eligible.length + 1) / GOLDEN_EVERY)) : 0;
   for (const k of shuffle(eligible, rng).slice(0, count)) out[k].meta = { ...out[k].meta, golden: true };
