@@ -1809,6 +1809,8 @@ select.qz-sort { min-height: var(--ctl-h); padding: 0 var(--sp-3); border: 1px s
 .review-empty p { margin: 0 0 var(--sp-3); }
 .review-empty .re-ok { display: flex; align-items: center; gap: var(--sp-2); font-weight: 600; }
 .review-empty .re-ok .glyph { color: var(--ok); flex: none; }
+.review-empty .re-weak { margin: var(--sp-3) 0 0; padding: var(--sp-3); border-left: 3px solid var(--accent); background: var(--paper-label, transparent); border-radius: 6px; }
+.review-empty .re-weak a { font-weight: 600; white-space: nowrap; }
 .review-empty .re-stale { display: flex; gap: var(--sp-2); align-items: flex-start; } .review-empty .re-stale .glyph { color: var(--seal); flex: none; margin-top: 2px; }
 .review-empty .row .btn { flex: 0 1 auto; }
 /* Kết quả quiz: điều hướng phụ là link chữ (đợt 3) */
@@ -1889,3 +1891,18 @@ select.qz-sort { min-height: var(--ctl-h); padding: 0 var(--sp-3); border: 1px s
 .why-ok { margin-top: var(--sp-2); }
 .why-ok .why-right { margin-top: 0; }
 .why-contrast { margin: var(--sp-2) 0 0; line-height: 1.5; padding-left: var(--sp-2); border-left: 3px solid var(--accent); }
+
+/* Màn cuối phiên (spec 2026-11-07-man-cuoi-phien): khối "Tiếp theo", nút xem câu sai, chi tiết điểm gập */
+.session-end .end-mistakes { margin: var(--sp-2) 0 0; }
+.session-end .end-next { margin: var(--sp-3) 0 var(--sp-2); }
+.session-end .end-hint { margin: 0 0 var(--sp-2); font-weight: 600; }
+.session-end .end-detail { margin: var(--sp-3) 0 0; font-size: var(--fs-sm); }
+.session-end .end-detail summary { cursor: pointer; color: var(--muted); font-weight: 600; padding: var(--sp-1) 0; }
+.session-end .end-detail .stat-list { margin: var(--sp-2) 0; }
+
+/* Thẻ phản hồi (phần 2 "lúc sai"): "Dễ nhầm" phụ gập lại; nút "Câu tiếp" dính đáy màn hình điện thoại để không phải cuộn qua cả thẻ */
+.why-mixup-more { margin: var(--sp-1) 0 0; }
+.why-mixup-more > summary { cursor: pointer; font-weight: 600; color: var(--muted); min-height: 32px; display: flex; align-items: center; }
+@media (max-width: 767px) {
+  .feedback .btn[data-next] { position: sticky; bottom: calc(var(--sp-3) + env(safe-area-inset-bottom)); z-index: 5; box-shadow: 0 6px 18px rgba(0, 0, 0, .28); }
+}

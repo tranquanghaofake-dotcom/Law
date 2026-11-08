@@ -98,8 +98,8 @@ export function isLast(s: RunnerState): boolean {
   return s.retryStart !== null || wrongMain(s).length === 0;
 }
 
-/** Sang bước sau. Hết lượt chính mà có câu sai → nối vòng sửa sai (mỗi câu sai một lần, `meta.kind = 'retry'`). */
-export function next(s: RunnerState): RunnerState {
+/** Sang bước sau. Hết lượt chính mà có câu sai → nối vòng sửa sai (mỗi câu sai một lần, `meta.kind = 'retry'`; câu khác nếu có `alt`). */
+export function next(s: RunnerState, alt?: (step: Step) => Step | null): RunnerState {
   const i = s.i + 1;
   if (i < s.steps.length) return { ...s, i, done: false };
   if (s.retryStart === null) {
@@ -107,7 +107,9 @@ export function next(s: RunnerState): RunnerState {
     if (wrong.length) {
       const retries: Step[] = wrong.map((k) => {
         const st = s.steps[k];
-        return { ...st, meta: { ...st.meta, kind: 'retry', golden: false, retryOf: k } };
+        // `alt` (nếu có) cho câu KHÁC của cùng khái niệm/bậc: người học nhớ khái niệm chứ không nhớ vị trí đáp án; null → lặp câu cũ
+        const base = alt?.(st) ?? st;
+        return { ...base, meta: { ...base.meta, kind: 'retry', golden: false, retryOf: k } };
       });
       const ordered = spreadByConcept(retries, s.steps[s.steps.length - 1]?.conceptId);
       return { ...s, steps: [...s.steps, ...ordered], i, retryStart: s.steps.length, done: false };

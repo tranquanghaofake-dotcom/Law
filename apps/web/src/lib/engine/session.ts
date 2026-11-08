@@ -1,8 +1,8 @@
 import type { Concept, Item, Level } from '$lib/content/types';
-import { interleave, nearConfusables, typeKey } from './arrange';
+import { breakRuns, interleave, nearConfusables, typeKey } from './arrange';
 import { candidates, clozeExtras, genDefTerm, genExampleConcept, genMatch, genSort, genTermDef, type Cand, type GenContext } from './generate';
 import type { Step, StepGen, StepItem, StepMeta } from './step';
-import { hasAbsoluteWord, leaks } from './text';
+import { coverage, hasAbsoluteWord, leaks } from './text';
 import { normalize } from './grading';
 import { REVIEW_MAX_STEPS } from './limits';
 
@@ -99,6 +99,8 @@ type Option = { family: string; gen?: StepGen; item: StepItem; key: string };
 const familyOf = (o: { gen?: StepGen; item: StepItem }) => (o.gen === 'def-tf' || o.item.type === 'truefalse' ? 'tf' : o.gen ?? o.item.type);
 // Đúng/Sai có 50 % đoán mò → ưu tiên thấp hơn các dạng khác cùng bậc.
 const FAMILY_BIAS: Record<string, number> = { tf: 0.5 };
+/** Câu Đúng có ≥ 80 % cặp tiếng nằm trong định nghĩa = chép định nghĩa (đo: 234/965 câu Đúng/Sai). */
+const COPY_COVERAGE = 0.8;
 
 class Picker {
   private known: Concept[];
@@ -136,7 +138,8 @@ class Picker {
     return [...shuffle(mates, this.rng), ...rest];
   }
 
-  private options(c: Concept, level: Level): Option[] {
+  /** Mọi dạng câu hợp lệ của khái niệm ở một bậc (đã lọc câu mẹo/câu chép định nghĩa), chưa xét câu đã dùng trong phiên. */
+  private build(c: Concept, level: Level): Option[] {
     const out: Option[] = [];
     const withBank = (it: Item): Item => {
       if (it.type !== 'cloze') return it;
@@ -159,9 +162,28 @@ class Picker {
     // câu Sai có từ tuyệt đối ("mọi/chỉ/luôn…") là mẹo đoán: bỏ nếu khái niệm còn dạng khác ở bậc này
     const isTell = (o: Option) => o.item.type === 'truefalse' && !o.item.answer && hasAbsoluteWord(o.item.statement);
     if (out.some((o) => !isTell(o))) { for (let i = out.length - 1; i >= 0; i--) if (isTell(out[i])) out.splice(i, 1); }
+    // câu Đúng chép nguyên định nghĩa chỉ kiểm nhận mặt chữ, không kiểm hiểu: bỏ nếu khái niệm còn dạng khác ở bậc này
+    const isCopy = (o: Option) => o.item.type === 'truefalse' && o.item.answer && coverage(o.item.statement, c.definition) >= COPY_COVERAGE;
+    // (chỉ khi có thay thế loại Đúng hoặc dạng khác: bỏ mà chỉ còn câu Sai thì phiên lệch về Sai, người học đoán "Sai" cũng trúng)
+    if (out.some((o) => !isCopy(o) && (o.item.type !== 'truefalse' || o.item.answer))) { for (let i = out.length - 1; i >= 0; i--) if (isCopy(out[i])) out.splice(i, 1); }
+    return out;
+  }
+
+  /** Dạng câu của bậc, ưu tiên câu chưa dùng cho khái niệm này trong phiên. */
+  private options(c: Concept, level: Level): Option[] {
+    const out = this.build(c, level);
     const done = this.usedKeys.get(c.id);
     const fresh = done ? out.filter((o) => !done.has(o.key)) : out;
     return fresh.length ? fresh : out;
+  }
+
+  /** Câu khác `failed` của cùng khái niệm, cùng bậc (vòng sửa sai). Không có câu nào khác → null. */
+  alternative(c: Concept, failed: Step): Step | null {
+    const sig = stepSignature(failed);
+    const opts = this.build(c, failed.level).filter((o) => stepSignature({ conceptId: c.id, level: failed.level, item: o.item, meta: o.gen ? { gen: o.gen } : undefined }) !== sig);
+    if (!opts.length) return null;
+    const o = opts[Math.floor(this.rng() * opts.length)];
+    return { conceptId: c.id, item: o.item, level: failed.level, meta: { kind: 'learn', kicker: kickerFor(c, o.item, o.gen), ...(o.gen ? { gen: o.gen } : {}) } };
   }
 
   /** Chọn trong `opts`: họ dạng ít dùng nhất trong phiên; với họ Đúng/Sai chọn câu có đáp án đang thiếu. */
@@ -203,10 +225,35 @@ class Picker {
   }
 }
 
+/** Dấu vân tay của câu (dạng + đề), để biết hai bước có phải cùng một câu không. */
+export function stepSignature(s: Step): string {
+  const it = s.item;
+  const text = it.type === 'mcq' || it.type === 'case' || it.type === 'recall' ? it.q
+    : it.type === 'truefalse' ? it.statement
+    : it.type === 'cloze' ? it.text
+    : it.type === 'pair' || it.type === 'sort' ? `${it.left}|${it.right}`
+    : it.type === 'match' ? it.pairs.map((p) => p.term).join('|') : '';
+  return `${s.meta?.gen ?? it.type}|${text}`;
+}
+
+/**
+ * Hàm chọn câu thay thế cho vòng sửa sai: `(bước sai) → câu khác của cùng khái niệm/bậc | null`.
+ * Dùng cùng ngữ cảnh (`ctx`) với phiên để có đủ phương án nhiễu; null thì runner lặp câu cũ (bậc chỉ có một câu: phân biệt, tự nhớ lại…).
+ */
+export function makeRetryAlt(concepts: Concept[], rng: () => number, ctx: GenContext = {}): (step: Step) => Step | null {
+  const picker = new Picker(concepts, ctx, rng);
+  const by = new Map(concepts.map((c) => [c.id, c]));
+  return (step) => {
+    const c = by.get(step.conceptId);
+    return c && step.item.type !== 'intro' ? picker.alternative(c, step) : null;
+  };
+}
+
 // ---------- Câu chốt, câu vàng ----------
 
 /** Ưu tiên chọn câu chốt: tình huống trước. */
-const BOSS_PRIORITY = ['case', 'example-concept', 'pair-merged', 'truefalse', 'def-tf', 'match', 'recall', 'cloze', 'term-def', 'def-term', 'mcq'];
+// Đúng/Sai xếp cuối: đoán mò 50 % thì không đáng làm "câu chốt" khi phiên còn dạng khác (đo: 58 % phiên pass 3 từng kết thúc bằng Đúng/Sai).
+const BOSS_PRIORITY = ['case', 'example-concept', 'pair-merged', 'match', 'recall', 'cloze', 'term-def', 'def-term', 'mcq', 'truefalse', 'def-tf'];
 const bossRank = (s: Step) => { const k = BOSS_PRIORITY.indexOf(typeKey(s)); return k < 0 ? BOSS_PRIORITY.length : k; };
 
 /** Hai bước liền nhau cùng khái niệm (intro → câu đầu của chính nó được phép). */
@@ -267,6 +314,8 @@ export function finalize(steps: Step[], rng: () => number): Step[] {
     }
   }
   repairClashes(out);
+  // ≥ 3 câu cùng dạng liền nhau (đo: 20–36 % phiên) → đổi chỗ khi có cách; không động intro/câu chốt
+  out.splice(0, out.length, ...(breakRuns(out) as typeof out)); // cùng các đối tượng, chỉ đổi thứ tự
   const eligible = out.flatMap((s, k) => (s.item.type === 'intro' || s.meta?.kind === 'boss' ? [] : [k]));
   const count = eligible.length + 1 >= 3 ? Math.max(1, Math.round((eligible.length + 1) / GOLDEN_EVERY)) : 0;
   for (const k of shuffle(eligible, rng).slice(0, count)) out[k].meta = { ...out[k].meta, golden: true };
@@ -331,7 +380,7 @@ export function buildReviewSession(concepts: Concept[], levels: Record<string, L
     const lv = (levels[c.id] ?? 1) as Level;
     return [picker.pick(c, lv < 1 ? 1 : lv)];
   });
-  return arrangeConfusables(finalize(interleave(queues, { rng }), rng), chosen);
+  return breakRuns(arrangeConfusables(finalize(interleave(queues, { rng }), rng), chosen));
 }
 
 // ---------- Đợt 7: xen kẽ cặp dễ nhầm (⑤), đoán trước + thẻ giới thiệu ba lớp (③) ----------

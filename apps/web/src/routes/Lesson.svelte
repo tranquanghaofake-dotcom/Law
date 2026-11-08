@@ -2,7 +2,7 @@
   import Loading from '$lib/ui/Loading.svelte';
   import type { Concept, Level, Subject } from '$lib/content/types';
   import { loadConceptPool, loadConcepts, loadSubject, loadTerms } from '$lib/content/loader';
-  import { buildLearnSession, type Step } from '$lib/engine/session';
+  import { buildLearnSession, makeRetryAlt, type Step } from '$lib/engine/session';
   import { lessonPoolIds } from '$lib/engine/pool';
   import { repo } from '$lib/store/progress-repo';
   import { route } from '$lib/router.svelte';
@@ -11,7 +11,7 @@
   import { go } from '$lib/router.svelte';
   import { lessonsOf } from '$lib/ui/lessonState';
 
-  type Loaded = { steps: Step[]; concepts: Concept[]; levels: Record<string, Level>; upDays: Record<string, string>; lessonId: string; title: string; next: string | null; subject: string };
+  type Loaded = { steps: Step[]; retryAlt: (s: Step) => Step | null; concepts: Concept[]; levels: Record<string, Level>; upDays: Record<string, string>; lessonId: string; title: string; next: string | null; subject: string };
   let data = $state<Loaded | null>(null);
   let error = $state('');
   let gen = $state(0);
@@ -32,7 +32,8 @@
       ]);
       const steps = buildLearnSession(concepts, levels, Math.random, { pool, terms: { [subject.id]: terms } }, { pretest: getPref('pretest') ? 2 : 0 });
       const all = lessonsOf(subject); const i = all.findIndex((l) => l.id === lesson.id);
-      data = { steps, concepts, levels, upDays, lessonId: `${subject.id}/${lesson.id}`, title: lesson.title, next: all[i + 1]?.id ?? null, subject: subject.id };
+      const ctx = { pool, terms: { [subject.id]: terms } };
+      data = { steps, retryAlt: makeRetryAlt(concepts, Math.random, ctx), concepts, levels, upDays, lessonId: `${subject.id}/${lesson.id}`, title: lesson.title, next: all[i + 1]?.id ?? null, subject: subject.id };
       document.title = `${lesson.title} · Luyện Luật`;
     } catch (e) { error = (e as Error).message; }
   }
@@ -46,6 +47,6 @@
   <Loading />
 {:else}
   {#key gen}
-    <SessionView steps={data.steps} concepts={data.concepts} levels={data.levels} upDays={data.upDays} lessonId={data.lessonId} lessonConcepts={data.concepts.map((c) => c.id)} title={data.title} onagain={() => (gen += 1)} onnext={data.next ? () => go('lesson', { subject: data!.subject, lesson: data!.next! }) : undefined} />
+    <SessionView steps={data.steps} retryAlt={data.retryAlt} concepts={data.concepts} levels={data.levels} upDays={data.upDays} lessonId={data.lessonId} lessonConcepts={data.concepts.map((c) => c.id)} title={data.title} onagain={() => (gen += 1)} onnext={data.next ? () => go('lesson', { subject: data!.subject, lesson: data!.next! }) : undefined} />
   {/key}
 {/if}

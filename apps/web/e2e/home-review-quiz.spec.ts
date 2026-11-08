@@ -69,8 +69,8 @@ const setsDir = '../../packages/content/data/sets';
 const allSets: { title: string; group: string }[] = readdirSync(setsDir)
   .filter((f) => f.endsWith('.json'))
   .map((f) => JSON.parse(readFileSync(`${setsDir}/${f}`, 'utf8')));
-// Chip lọc theo kệ nhóm ngành (PR 3): kệ "Dân sự – Tố tụng" gồm nhóm dan-su và to-tung-dan-su (lib/ui/groups.ts GROUP_SHELF).
-const danSuTitles = allSets.filter((s) => ['dan-su', 'to-tung-dan-su'].includes(s.group)).map((s) => s.title);
+// Chip lọc theo kệ nhóm ngành (PR 3): kệ "Dân sự – Tố tụng" (`dan-su` trong src/lib/ui/shelves.ts) gồm các nhóm đề dưới đây, kể cả Hôn nhân và gia đình.
+const danSuTitles = allSets.filter((s) => ['dan-su', 'dan-su-2', 'hon-nhan-gia-dinh', 'to-tung-dan-su'].includes(s.group)).map((s) => s.title);
 
 test('Luyện đề: lọc theo nhóm chỉ còn đề của nhóm đó', async ({ page }) => {
   await page.goto(B + '#/luyen-de');

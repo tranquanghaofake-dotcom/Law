@@ -162,3 +162,31 @@ describe('runner đợt 6: câu vàng, combo dài nhất, vòng sửa sai', () =
     expect(r.xpGained).toBe(10);
   });
 });
+
+describe('runner: vòng sửa sai ra câu khác (alt)', () => {
+  const alt = (st: Step): Step | null => (st.conceptId === 'a' ? { ...st, item: { type: 'mcq', level: 1, q: 'câu khác', options: ['1', '2', '3', '4'], answer: 2, explain: 'e' } } : null);
+  const play = (oks: boolean[], a?: (s: Step) => Step | null) => {
+    let s = createRunner(steps, levels);
+    for (const ok of oks) s = next(answer(s, { correct: ok, elapsedMs: 1000 }).state, a);
+    return s;
+  };
+  it('có câu thay thế → bước sửa sai dùng câu đó, vẫn là retry, giữ retryOf, không câu vàng', () => {
+    const s = play([false, true, false], alt);
+    const [ra, rc] = s.steps.slice(3);
+    expect(ra.item.type === 'mcq' && ra.item.q).toBe('câu khác');
+    expect(ra.meta).toMatchObject({ kind: 'retry', retryOf: 0, golden: false });
+    expect(rc.item.type === 'mcq' && rc.item.q).toBe('q'); // alt trả null → lặp câu cũ
+    expect(rc.meta).toMatchObject({ kind: 'retry', retryOf: 2 });
+  });
+  it('không truyền alt → như cũ (lặp đúng câu sai)', () => {
+    const s = play([false, true, false]);
+    expect(s.steps.slice(3).every((x) => x.item.type === 'mcq' && x.item.q === 'q')).toBe(true);
+  });
+  it('câu thay thế đúng khái niệm: vòng sửa sai vẫn tính "sửa được" theo câu gốc', () => {
+    let s = play([false, true, true], alt);
+    s = next(answer(s, { correct: true, elapsedMs: 1000 }).state, alt);
+    expect(summary(s).fixed).toBe(1);
+    expect(unfixed(s)).toHaveLength(0);
+  });
+});
+
