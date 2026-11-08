@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { readdirSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import type { Concept, Level, Subject } from '$lib/content/types';
-import { buildLearnSession, buildReviewSession, clozeModeFor, finalize, kickerFor, passFor, pickItem, type Step } from '$lib/engine/session';
+import { buildLearnSession, buildReviewSession, clozeModeFor, finalize, kickerFor, makeRetryAlt, passFor, pickItem, type Step } from '$lib/engine/session';
 import { mulberry32 } from '$lib/engine/rng';
 import { longRuns, typeKey } from '$lib/engine/arrange';
 import { hasAbsoluteWord } from '$lib/engine/text';
@@ -218,6 +218,34 @@ describe('câu chốt không phải Đúng/Sai khi còn dạng khác', () => {
   });
 });
 
+describe('makeRetryAlt — câu sửa sai khác câu sai', () => {
+  const cs = ['a', 'b', 'c'].map((id, k) => concept(id, k));
+  const sig = (s: Step) => JSON.stringify(s.item);
+  it('trả câu khác cùng khái niệm, cùng bậc (không phải câu vừa sai); gen thì kèm meta.gen', () => {
+    const steps = buildLearnSession(cs, { a: 0, b: 0, c: 0 }, mulberry32(3)).filter((s) => s.item.type !== 'intro');
+    const alt = makeRetryAlt(cs, mulberry32(9));
+    let got = 0;
+    for (const s of steps) {
+      const a = alt(s);
+      if (!a) continue;
+      got++;
+      expect(a.conceptId).toBe(s.conceptId);
+      expect(a.level).toBe(s.level);
+      expect(sig(a)).not.toBe(sig(s));
+    }
+    expect(got).toBeGreaterThan(0);
+  });
+  it('bậc chỉ có một câu (tự nhớ lại) → null, để runner lặp câu cũ', () => {
+    const c = concept('a', 0);
+    const recall: Step = { conceptId: 'a', level: 5, item: c.items.find((i) => i.type === 'recall')! };
+    expect(makeRetryAlt([c], mulberry32(1))(recall)).toBeNull();
+  });
+  it('khái niệm lạ → null', () => {
+    const s: Step = { conceptId: 'zzz', level: 1, item: { type: 'mcq', level: 1, q: 'q', options: ['1', '2'], answer: 0, explain: '' } };
+    expect(makeRetryAlt(cs, mulberry32(1))(s)).toBeNull();
+  });
+});
+
 // ---------- Dữ liệu thật: số liệu đợt 6 ----------
 const ROOT = resolve(process.cwd(), '../../packages/content/data');
 const all: Concept[] = readdirSync(`${ROOT}/concepts`).flatMap((s) => readdirSync(`${ROOT}/concepts/${s}`).map((f) => JSON.parse(readFileSync(`${ROOT}/concepts/${s}/${f}`, 'utf8')) as Concept));
@@ -274,3 +302,34 @@ describe('buildReviewSession — ưu tiên khái niệm sắp quên', () => {
     }
   });
 });
+
+describe('dữ liệu thật: câu sửa sai khác câu sai (makeRetryAlt)', () => {
+  it('bậc 1 và 3: ≥ 90 % có câu khác cùng khái niệm/bậc; câu thay thế luôn cùng khái niệm, cùng bậc, khác câu sai', () => {
+    const byKey = new Map(all.map((c) => [`${c.subject}/${c.id}`, c]));
+    const tot: Record<number, number> = {}, got: Record<number, number> = {};
+    let seed = 0;
+    for (const s of subjects) for (const ch of s.chapters) for (const l of ch.lessons) {
+      const cs = l.concepts.map((id) => byKey.get(`${s.id}/${id}`)!);
+      const pool = all.filter((x) => x.subject === s.id && x.chapter === ch.id);
+      const alt = makeRetryAlt(cs, mulberry32(++seed), { pool });
+      for (const lv of [0, 2, 4] as Level[]) {
+        for (const st of buildLearnSession(cs, Object.fromEntries(cs.map((c) => [c.id, lv])), mulberry32(++seed), { pool })) {
+          if (st.item.type === 'intro') continue;
+          tot[st.level] = (tot[st.level] ?? 0) + 1;
+          const a = alt(st);
+          if (!a) continue;
+          got[st.level] = (got[st.level] ?? 0) + 1;
+          expect(a.conceptId).toBe(st.conceptId);
+          expect(a.level).toBe(st.level);
+          expect(JSON.stringify(a.item)).not.toBe(JSON.stringify(st.item));
+        }
+      }
+    }
+    const rate = (l: number) => (got[l] ?? 0) / (tot[l] ?? 1);
+    console.info('tỉ lệ có câu thay thế theo bậc', Object.fromEntries([1, 2, 3, 4, 5].map((l) => [l, `${Math.round(rate(l) * 100)}% (${got[l] ?? 0}/${tot[l] ?? 0})`])));
+    expect(rate(1)).toBeGreaterThanOrEqual(0.9);
+    expect(rate(3)).toBeGreaterThanOrEqual(0.9);
+    expect(got[5] ?? 0).toBe(0); // tự nhớ lại chỉ có một câu: lặp câu cũ như trước
+  }, 60000);
+});
+

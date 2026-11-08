@@ -2,7 +2,7 @@
   import Loading from '$lib/ui/Loading.svelte';
   import type { Concept, Level } from '$lib/content/types';
   import { loadIndex, loadSubject, loadConcepts, loadConceptPool, loadTerms } from '$lib/content/loader';
-  import { buildReviewSession, type Step } from '$lib/engine/session';
+  import { buildReviewSession, makeRetryAlt, type Step } from '$lib/engine/session';
   import { reviewPoolIds } from '$lib/engine/pool';
   import { repo } from '$lib/store/progress-repo';
   import { retrievability } from '$lib/engine/fsrs';
@@ -13,7 +13,7 @@
   import { loadWeak, type WeakItem } from '$lib/ui/weak';
   const subjectId = route.params.subject as string | undefined;
 
-  let data = $state<{ steps: Step[]; concepts: Concept[]; levels: Record<string, Level>; upDays: Record<string, string> } | null>(null);
+  let data = $state<{ steps: Step[]; retryAlt: (s: Step) => Step | null; concepts: Concept[]; levels: Record<string, Level>; upDays: Record<string, string> } | null>(null);
   let empty = $state(false);
   // Trạng thái rỗng: lần ôn tới (null = chưa có hẹn) và đã học khái niệm nào chưa
   let upcoming = $state<{ learned: number; next: ReturnType<typeof nextReview>; stale: number }>({ learned: 0, next: null, stale: 0 });
@@ -58,7 +58,7 @@
         Promise.all(subjectsInUse.map((sid) => loadTerms(sid).catch(() => ({})))),
       ]);
       const ctx = { pool: pools.flat(), terms: Object.fromEntries(subjectsInUse.map((sid, k) => [sid, termList[k]])) };
-      data = { steps: buildReviewSession(concepts, levels, Math.random, undefined, ctx, urgency), concepts, levels, upDays };
+      data = { steps: buildReviewSession(concepts, levels, Math.random, undefined, ctx, urgency), retryAlt: makeRetryAlt(concepts, Math.random, ctx), concepts, levels, upDays };
     } catch (e) { error = (e as Error).message; }
   }
   load();
@@ -94,5 +94,5 @@
 {:else if !data}
   <Loading />
 {:else}
-  <SessionView steps={data.steps} concepts={data.concepts} levels={data.levels} upDays={data.upDays} title="Ôn hôm nay" />
+  <SessionView steps={data.steps} retryAlt={data.retryAlt} concepts={data.concepts} levels={data.levels} upDays={data.upDays} title="Ôn hôm nay" />
 {/if}

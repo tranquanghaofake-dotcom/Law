@@ -138,7 +138,8 @@ class Picker {
     return [...shuffle(mates, this.rng), ...rest];
   }
 
-  private options(c: Concept, level: Level): Option[] {
+  /** Mọi dạng câu hợp lệ của khái niệm ở một bậc (đã lọc câu mẹo/câu chép định nghĩa), chưa xét câu đã dùng trong phiên. */
+  private build(c: Concept, level: Level): Option[] {
     const out: Option[] = [];
     const withBank = (it: Item): Item => {
       if (it.type !== 'cloze') return it;
@@ -165,9 +166,24 @@ class Picker {
     const isCopy = (o: Option) => o.item.type === 'truefalse' && o.item.answer && coverage(o.item.statement, c.definition) >= COPY_COVERAGE;
     // (chỉ khi có thay thế loại Đúng hoặc dạng khác: bỏ mà chỉ còn câu Sai thì phiên lệch về Sai, người học đoán "Sai" cũng trúng)
     if (out.some((o) => !isCopy(o) && (o.item.type !== 'truefalse' || o.item.answer))) { for (let i = out.length - 1; i >= 0; i--) if (isCopy(out[i])) out.splice(i, 1); }
+    return out;
+  }
+
+  /** Dạng câu của bậc, ưu tiên câu chưa dùng cho khái niệm này trong phiên. */
+  private options(c: Concept, level: Level): Option[] {
+    const out = this.build(c, level);
     const done = this.usedKeys.get(c.id);
     const fresh = done ? out.filter((o) => !done.has(o.key)) : out;
     return fresh.length ? fresh : out;
+  }
+
+  /** Câu khác `failed` của cùng khái niệm, cùng bậc (vòng sửa sai). Không có câu nào khác → null. */
+  alternative(c: Concept, failed: Step): Step | null {
+    const sig = stepSignature(failed);
+    const opts = this.build(c, failed.level).filter((o) => stepSignature({ conceptId: c.id, level: failed.level, item: o.item, meta: o.gen ? { gen: o.gen } : undefined }) !== sig);
+    if (!opts.length) return null;
+    const o = opts[Math.floor(this.rng() * opts.length)];
+    return { conceptId: c.id, item: o.item, level: failed.level, meta: { kind: 'learn', kicker: kickerFor(c, o.item, o.gen), ...(o.gen ? { gen: o.gen } : {}) } };
   }
 
   /** Chọn trong `opts`: họ dạng ít dùng nhất trong phiên; với họ Đúng/Sai chọn câu có đáp án đang thiếu. */
@@ -207,6 +223,30 @@ class Picker {
     const item = pickItem(c, level, this.rng);
     return { conceptId: c.id, item, level: level === 6 ? item.level : level, meta: { kind: 'learn', kicker: kickerFor(c, item) } };
   }
+}
+
+/** Dấu vân tay của câu (dạng + đề), để biết hai bước có phải cùng một câu không. */
+export function stepSignature(s: Step): string {
+  const it = s.item;
+  const text = it.type === 'mcq' || it.type === 'case' || it.type === 'recall' ? it.q
+    : it.type === 'truefalse' ? it.statement
+    : it.type === 'cloze' ? it.text
+    : it.type === 'pair' || it.type === 'sort' ? `${it.left}|${it.right}`
+    : it.type === 'match' ? it.pairs.map((p) => p.term).join('|') : '';
+  return `${s.meta?.gen ?? it.type}|${text}`;
+}
+
+/**
+ * Hàm chọn câu thay thế cho vòng sửa sai: `(bước sai) → câu khác của cùng khái niệm/bậc | null`.
+ * Dùng cùng ngữ cảnh (`ctx`) với phiên để có đủ phương án nhiễu; null thì runner lặp câu cũ (bậc chỉ có một câu: phân biệt, tự nhớ lại…).
+ */
+export function makeRetryAlt(concepts: Concept[], rng: () => number, ctx: GenContext = {}): (step: Step) => Step | null {
+  const picker = new Picker(concepts, ctx, rng);
+  const by = new Map(concepts.map((c) => [c.id, c]));
+  return (step) => {
+    const c = by.get(step.conceptId);
+    return c && step.item.type !== 'intro' ? picker.alternative(c, step) : null;
+  };
 }
 
 // ---------- Câu chốt, câu vàng ----------

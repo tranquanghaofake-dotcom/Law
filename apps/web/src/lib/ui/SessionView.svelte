@@ -46,13 +46,15 @@
   import { bossBadge } from '$lib/ui/session/badge';
   import { lessonGate } from '$lib/ui/lessonState';
 
-  let { steps, concepts, levels, upDays = {}, lessonId, lessonConcepts, onagain, onnext, title }: {
+  let { steps, concepts, levels, upDays = {}, lessonId, lessonConcepts, onagain, onnext, title, retryAlt }: {
     steps: Step[]; concepts: Concept[]; levels: Record<string, Level>;
     /** Ngày lên bậc gần nhất theo khái niệm (luật giãn cách bậc ≥ 4, cùng luật với repo.record). */
     upDays?: Record<string, string>;
     lessonId?: string; onagain?: () => void; onnext?: () => void; title?: string;
     /** Khái niệm của đợt (phiên học đợt): để màn kết thúc biết đợt sau đã mở chưa. */
     lessonConcepts?: string[];
+    /** Vòng sửa sai: câu khác của cùng khái niệm/bậc (null → lặp câu cũ). Không truyền = lặp câu cũ. */
+    retryAlt?: (step: Step) => Step | null;
   } = $props();
 
   // svelte-ignore state_referenced_locally
@@ -198,7 +200,7 @@
     tts.stop();
     shownOptions = undefined;
     result = null;
-    run = runNext(run);
+    run = runNext(run, retryAlt);
     if (run.done) finish();
   }
 
