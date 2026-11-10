@@ -15,7 +15,7 @@ Kỹ năng này chạy cho **mọi** câu hỏi về pháp luật Việt Nam, kh
 
 Ba quy tắc cứng cho mọi lượt, trước khi viết câu đầu tiên:
 
-1. **Tra trước, viết sau.** Nếu repo Luyện Luật có trong phiên (`packages/content/data/laws/*.txt`, tên file tra trong `packages/content/data/SOURCES.md`), tra đúng điều luật ở đó (`python3 -I scripts/tra_dieu.py "<tên luật>" <số điều>`, hoặc `grep`) trước khi trích số điều, khoản; chưa tra được thì chạm Ngưỡng dừng, không viết "chưa gắn số điều" rồi vẫn kết luận. Kho Luyện Luật phủ cả Luật Chứng khoán (văn bản hợp nhất 102/VBHN-VPQH), Luật Doanh nghiệp và nhiều luật khác: lĩnh vực nằm trong kho thì **không** bị hạ nhãn ở trục "ngoài phạm vi reference", nhưng căn cứ lấy từ kho là mức B cho đến khi đối chiếu vbpl.vn.
+1. **Tra trước, viết sau.** Kho luật có trong phiên (repo Luyện Luật, hoặc `kho-luat/` đóng kèm skill) thì tra đúng điều luật ở đó (`python3 -I scripts/tra_dieu.py "<tên luật>" <số điều>`) trước khi trích số điều, khoản; chưa tra được thì chạm Ngưỡng dừng, không viết "chưa gắn số điều" rồi vẫn kết luận. Kho Luyện Luật phủ cả Luật Chứng khoán (văn bản hợp nhất 102/VBHN-VPQH), Luật Doanh nghiệp và nhiều luật khác: lĩnh vực nằm trong kho thì **không** bị hạ nhãn ở trục "ngoài phạm vi reference", nhưng căn cứ lấy từ kho là mức B cho đến khi đối chiếu vbpl.vn.
 2. **Lĩnh vực chưa có nhóm bẫy riêng** (ví dụ tài chính doanh nghiệp, thuế, ngân hàng) vẫn rà `references/danh-muc-bay.md` Nhóm 1–5; đề chạm chứng khoán, thị trường vốn thì rà thêm Nhóm 13. Không bỏ bước rà bẫy chỉ vì không có nhóm riêng.
 3. **Khái niệm học thuật không có trong luật** (thị trường sơ cấp/thứ cấp, các cách phân loại của giáo trình) phải gắn nhãn "phân loại học thuật" và tách khỏi phần có điều luật; không bịa điều luật định nghĩa.
 
@@ -52,15 +52,17 @@ SKILL.md chỉ giữ phần chạy cho mọi câu hỏi. Chi tiết nằm ở `r
 | Bước 6 có căn cứ cần đối chiếu — mở cả hai: thao tác xác minh, và công cụ nào đọc được nguồn nào | `references/quy-trinh-xac-minh.md` · `references/cong-cu-tra-cuu.md` |
 | Người dùng nộp bài tự làm, ngữ cảnh đặt chế độ học, có đáp án cần đối chiếu, hoặc đính kèm tài liệu ôn thi | `references/cham-bai-va-hoc.md` |
 
-## Công cụ tự kiểm
+## Công cụ tự kiểm — kho luật và máy kiểm căn cứ
 
-Ba script, dùng khi có công cụ chạy lệnh. Chúng kiểm thứ máy kiểm được; không script nào thay bước 6.
+Skill có **kho luật nguyên văn** (khoảng 47 văn bản: các bộ luật, luật lớn và một số nghị định; trong repo Luyện Luật là `packages/content/data/laws`, trong bản tải lên claude.ai là thư mục `kho-luat/`, danh sách ở `kho-luat/MUC-LUC.md`). Khi có công cụ chạy lệnh, ba việc sau là bắt buộc, không phải tùy chọn:
 
-- **Tra nguyên văn trước khi trích:** `python3 -I scripts/tra_dieu.py "<tên luật hoặc tên file>" <số điều> [--khoan N]` in nguyên văn điều luật từ kho văn bản (repo Luyện Luật, hoặc thư mục chỉ bằng `--kho`); `--tim "<cụm từ>"` tìm điều chứa cụm từ, `--liet-ke` xem kho có gì. Căn cứ lấy từ kho là mức B cho đến khi đối chiếu vbpl.vn.
-- **Chấm hình thức trước khi gửi** mọi câu trả lời dài hơn một đoạn: lưu bản nháp rồi chạy `python3 -I scripts/kiem_dau_ra.py --dang nhan-dinh|tinh-huong|so-sanh nháp.txt` (hoặc `--stdin`; chữa nhiều nhận định thì ngăn mỗi câu bằng dòng `---`). Script bắt: câu đầu không phải kết luận, vượt ngân sách chữ, câu quá 40 chữ, đoạn quá sáu câu, gạch đầu dòng, viện dẫn chung chung, dòng nhắc đối chiếu sai chỗ, và mọi lỗi quy cách CCPL. Sửa hết lỗi mức error rồi mới gửi.
-- **Quy cách CCPL riêng:** `scripts/lint_ccpl.py` (viết hoa "Điều", trật tự điểm → khoản → Điều, viết tắt, văn bản dưới luật thiếu số hiệu, văn bản đã bị thay thế trong `scripts/superseded.json`) — `kiem_dau_ra.py` đã gọi sẵn; chạy riêng khi soát tài liệu dài.
+- **Tra trước khi trích:** `python3 -I scripts/tra_dieu.py "<tên luật>" <số điều> [--khoan N]` in nguyên văn; `--tim "<cụm từ>"` tìm điều chứa cụm từ; `--liet-ke` xem kho có gì.
+- **Chấm bản nháp trước khi gửi** mọi câu trả lời dài hơn một đoạn: `python3 -I scripts/kiem_dau_ra.py --dang nhan-dinh|tinh-huong|so-sanh nháp.txt` (hoặc `--stdin`; nhiều nhận định thì ngăn bằng dòng `---`). Một lệnh chấm cả hình thức (kết luận ở câu đầu, ngân sách chữ, câu quá 40 chữ, đoạn quá sáu câu, gạch đầu dòng, viện dẫn chung chung, quy cách CCPL) lẫn **từng căn cứ đối chiếu với kho**: điều, khoản, điểm có tồn tại không; câu trong ngoặc kép đặt sau viện dẫn có khớp nguyên văn không; bản được dẫn có cũ hơn bản trong kho không. Sửa hết lỗi mức error rồi mới gửi.
+- **Soát căn cứ cho văn bản dài** (tài liệu ôn thi, chương khóa luận, file reference): `python3 -I scripts/kiem_can_cu.py <file hoặc thư mục> [--chi-tiet]`.
 
-Bộ đề kiểm tra hành vi của kỹ năng nằm ở `evals/` (xem `evals/README.md`). Sau mỗi lần sửa chính kỹ năng này, chạy `python3 scripts/kiem_tra_skill.py` và `python3 -m unittest discover -s scripts -p 'test_*.py'` — bộ test bắt cả năm ví dụ mẫu phải qua `kiem_dau_ra.py`, vì ví dụ là thứ được bắt chước.
+Căn cứ "khớp kho" là mức B, không phải mức A: nó đúng với bản chữ trong kho tại ngày đối chiếu ghi ở đầu mỗi file. Căn cứ máy báo "ngoài kho" hoặc "không rõ văn bản" thì bước 6 chạy như cũ. `scripts/lint_ccpl.py` (quy cách viện dẫn, văn bản đã bị thay thế) đã được gọi sẵn trong lệnh chấm.
+
+Sau mỗi lần sửa chính kỹ năng này: `python3 scripts/kiem_tra_skill.py`, `python3 -m unittest discover -s scripts -p 'test_*.py'` (có test bắt năm ví dụ mẫu phải qua máy chấm), rồi `python3 scripts/dong_goi.py` để ra file zip kèm kho luật cho claude.ai. Bộ đề kiểm tra hành vi ở `evals/` (xem `evals/README.md`).
 
 ## Tài liệu ôn thi đính kèm
 

@@ -7,44 +7,16 @@ Dùng cho bước 6: trích nguyên văn quy phạm thay vì nhớ. Ví dụ:
   python3 -I scripts/tra_dieu.py ldn-vbhn-2025 59 --khoan 3      # chỉ khoản 3 Điều 59
   python3 -I scripts/tra_dieu.py "dân sự" --tim "hai phần ba"    # điều nào chứa cụm từ này
 
-Kho: --kho <thư mục>, hoặc biến môi trường KHO_LUAT, hoặc packages/content/data/laws tìm từ thư mục hiện tại đi lên
-(repo Luyện Luật). Căn cứ lấy từ kho là mức B cho đến khi đối chiếu vbpl.vn. Thoát mã 2 khi không tìm thấy.
+Kho: --kho <thư mục>, hoặc biến môi trường KHO_LUAT, hoặc packages/content/data/laws của repo Luyện Luật, hoặc thư mục
+kho-luat/ đóng kèm trong skill. Căn cứ lấy từ kho là mức B cho đến khi đối chiếu vbpl.vn. Thoát mã 2 khi không tìm thấy.
 """
 import argparse
 import os
 import re
 import sys
-import unicodedata
 
-DIEU = re.compile(r"^Điều\s+(\d+[a-zđ]?)\s*\.\s*(.*)$")
-TIEU_DE_KHAC = re.compile(r"^(Chương|Mục|Phần|Tiểu mục)\s+([IVXLC\d]+|thứ\s)", re.I)
-KHOAN = re.compile(r"^(\d+)\.\s")
-
-
-def bo_dau(s):
-    s = unicodedata.normalize("NFD", s.lower().replace("đ", "d"))
-    return "".join(c for c in s if unicodedata.category(c) != "Mn")
-
-
-def tim_kho(chi_dinh=None):
-    if chi_dinh:
-        return chi_dinh if os.path.isdir(chi_dinh) else None
-    if os.environ.get("KHO_LUAT") and os.path.isdir(os.environ["KHO_LUAT"]):
-        return os.environ["KHO_LUAT"]
-    d = os.getcwd()
-    while True:
-        thu = os.path.join(d, "packages", "content", "data", "laws")
-        if os.path.isdir(thu):
-            return thu
-        cha = os.path.dirname(d)
-        if cha == d:
-            return None
-        d = cha
-
-
-def dong_dau(duong):
-    with open(duong, encoding="utf-8") as f:
-        return f.readline().strip().lstrip("# ").strip()
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from kho_luat import bo_dau, doc_cac_dieu, dong_dau, lay_khoan, tim_kho  # noqa: E402
 
 
 def chon_van_ban(kho, tu_khoa):
@@ -67,35 +39,6 @@ def chon_van_ban(kho, tu_khoa):
     return (os.path.join(kho, ung[0]) if len(ung) == 1 else None), ung
 
 
-def doc_cac_dieu(duong):
-    """Trả dict số điều → danh sách dòng (kể cả dòng tiêu đề điều)."""
-    cac, hien = {}, None
-    with open(duong, encoding="utf-8") as f:
-        for dong in f.read().split("\n"):
-            m = DIEU.match(dong.strip())
-            if m:
-                hien = m.group(1)
-                cac.setdefault(hien, [])  # điều trùng số (hiếm) thì nối tiếp
-                cac[hien].append(dong.strip())
-            elif hien is not None:
-                if TIEU_DE_KHAC.match(dong.strip()):
-                    hien = None
-                else:
-                    cac[hien].append(dong.rstrip())
-    return {k: "\n".join(v).strip().split("\n") for k, v in cac.items()}
-
-
-def lay_khoan(dong_dieu, so):
-    lay, kq = False, []
-    for d in dong_dieu[1:]:
-        m = KHOAN.match(d.strip())
-        if m:
-            lay = m.group(1) == str(so)
-        if lay:
-            kq.append(d)
-    return [x for x in "\n".join(kq).strip().split("\n") if x or kq]
-
-
 def main(argv=None):
     ap = argparse.ArgumentParser(description="In nguyên văn một điều luật từ kho văn bản .txt")
     ap.add_argument("van_ban", nargs="?", help="tên file (không cần .txt) hoặc từ khóa trong tên văn bản")
@@ -108,7 +51,7 @@ def main(argv=None):
 
     kho = tim_kho(a.kho)
     if not kho:
-        print("Không tìm thấy kho luật (packages/content/data/laws). Chỉ thư mục bằng --kho hoặc biến KHO_LUAT;"
+        print("Không tìm thấy kho luật (repo Luyện Luật hoặc kho-luat/ đóng kèm skill). Chỉ thư mục bằng --kho hoặc biến KHO_LUAT;"
               " không có kho thì tra vbpl.vn theo references/quy-trinh-xac-minh.md.", file=sys.stderr)
         return 2
     if a.liet_ke or not a.van_ban:

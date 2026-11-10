@@ -2,6 +2,17 @@
 
 File này biến câu nhắc "cần đối chiếu văn bản gốc" thành các thao tác làm được. Nó cũng là căn cứ để quyết định một câu trả lời có chạm Ngưỡng dừng hay không: chạm ngưỡng không phải là cảm giác chưa chắc, mà là kết quả cụ thể của việc chạy quy trình dưới đây rồi vẫn không chốt được.
 
+## Bước 0 — máy kiểm căn cứ (khi có công cụ chạy lệnh)
+
+Trước mọi thao tác tra cứu tay: lưu bản nháp và chạy `python3 -I scripts/kiem_dau_ra.py --dang <dạng> nháp.txt`. Máy đối chiếu từng viện dẫn với kho luật nguyên văn và trả về bốn loại kết quả, mỗi loại một hành động:
+
+- **Khớp kho** → mức B. Vẫn đưa vào dòng nhắc đối chiếu, nhưng không cần tra tay nữa trừ khi điều khoản quyết định kết luận thuộc văn bản vừa sửa sau ngày đối chiếu ghi ở đầu file kho.
+- **SAI** (điều, khoản, điểm không tồn tại) hoặc **nguyên văn lệch** → sửa ngay bằng `python3 -I scripts/tra_dieu.py "<tên luật>" <số điều>`; không được gửi câu trả lời còn lỗi này.
+- **Khác bản** (dẫn bản cũ hơn bản trong kho) → xác định thời điểm sự kiện của đề; đề hỏi theo luật hiện hành thì đổi sang bản trong kho, đề về sự kiện cũ thì giữ và nói rõ bản áp dụng.
+- **Ngoài kho / không rõ văn bản** → đây là phần còn lại của bước 6: tra theo các mục dưới, hoặc chạm Ngưỡng dừng.
+
+Máy chỉ biết căn cứ có tồn tại và có khớp chữ hay không. Nó không biết điều đó có đúng là điều điều chỉnh tình huống hay không: tên điều in kèm kết quả (`--chi-tiet`) là để soát đúng chủ đề.
+
 ## Nguyên tắc ngân sách — xác minh cái gì, và biết dừng ở đâu
 
 Sai lầm đầu tiên khi có công cụ tra cứu là tra tất cả. Một câu trả lời thường chạm ba đến năm căn cứ; tra hết vừa tốn thời gian vừa làm loãng sự chú ý, và thứ đáng tra nhất thường bị tra qua loa vì đã mệt.

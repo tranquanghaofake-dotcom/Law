@@ -7,8 +7,9 @@ Dùng:
   python3 -I scripts/kiem_dau_ra.py --dang so-sanh nháp.txt
 Chữa nhiều nhận định trong một file: ngăn mỗi câu trả lời bằng một dòng chỉ có '---'.
 
-Thoát mã 1 nếu còn lỗi mức error. Script chỉ kiểm thứ nhìn là thấy (kết luận ở câu đầu, độ dài, câu quá dài,
-gạch đầu dòng, viện dẫn chung chung, quy cách CCPL qua lint_ccpl). Nó không biết căn cứ đúng hay sai: bước 6 vẫn phải chạy.
+Thoát mã 1 nếu còn lỗi mức error. Script kiểm thứ nhìn là thấy (kết luận ở câu đầu, độ dài, câu quá dài, gạch đầu dòng,
+viện dẫn chung chung, quy cách CCPL qua lint_ccpl) và, khi tìm thấy kho luật, đối chiếu luôn từng căn cứ với nguyên văn
+(kiem_can_cu: điều, khoản, điểm có tồn tại không; câu trong ngoặc kép có khớp không). Căn cứ ngoài kho: bước 6 vẫn phải chạy.
 """
 import argparse
 import os
@@ -17,6 +18,16 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import lint_ccpl  # noqa: E402
+import kho_luat  # noqa: E402
+import kiem_can_cu  # noqa: E402
+
+_MAY = {}
+
+
+def may_kiem(kho):
+    if kho not in _MAY:
+        _MAY[kho] = kiem_can_cu.May(kho)
+    return _MAY[kho]
 
 DONG_NHAC = "Cần đối chiếu trước khi dùng:"
 CAU_TOI_DA = 40          # "Câu quá 40 chữ phải tách"
@@ -58,8 +69,8 @@ def tach_cau(doan):
     return cau
 
 
-def kiem(van, dang="nhan-dinh", so_issue=1):
-    """Trả danh sách (mã, mức, lời). mức: error | warning | info."""
+def kiem(van, dang="nhan-dinh", so_issue=1, kho=None):
+    """Trả danh sách (mã, mức, lời). mức: error | warning | info. Có kho thì đối chiếu luôn từng căn cứ với nguyên văn luật."""
     kq = []
     van = van.strip()
     if not van:
@@ -148,6 +159,26 @@ def kiem(van, dang="nhan-dinh", so_issue=1):
     # quy cách CCPL
     for f in lint_ccpl.lint_text(van):
         kq.append((f.code, f.severity, f.message))
+
+    # CC01–CC04 — đối chiếu từng căn cứ với kho luật (điều, khoản, điểm có tồn tại không; nguyên văn có khớp không)
+    if kho:
+        dem, da = {}, set()
+        for r in may_kiem(kho).kiem(van):
+            dem[r["kq"]] = dem.get(r["kq"], 0) + 1
+            ten = r["vb"].ten if r["vb"] else ""
+            khoa = (r["vien_dan"], r["kq"])
+            if khoa in da:
+                continue
+            da.add(khoa)
+            if r["kq"] == "sai":
+                kq.append(("CC01", "warning" if r["suy"] else "error", f"căn cứ không khớp kho luật: {r['vien_dan']} {ten} — {r['loi']}"))
+            elif r["kq"] == "trich_lech":
+                kq.append(("CC02", "error", f"nguyên văn lệch: {r['vien_dan']} — {r['loi']}"))
+            elif r["kq"] == "khac_ban":
+                kq.append(("CC03", "warning", f"{r['vien_dan']} {ten} — {r['loi']}"))
+        chua = dem.get("ngoai_kho", 0) + dem.get("khong_ro", 0)
+        kq.append(("CC04", "info", f"{dem.get('khop', 0)} căn cứ khớp kho luật (mức B)"
+                   + (f"; {chua} căn cứ ngoài kho hoặc không rõ văn bản: phải đối chiếu theo bước 6 và nêu ở dòng nhắc" if chua else "")))
     return kq
 
 
@@ -157,6 +188,8 @@ def main(argv=None):
     ap.add_argument("--stdin", action="store_true", help="đọc nháp từ stdin")
     ap.add_argument("--dang", choices=["nhan-dinh", "tinh-huong", "so-sanh"], default="nhan-dinh")
     ap.add_argument("--so-issue", type=int, default=1, help="số issue của tình huống (ngân sách nhân theo)")
+    ap.add_argument("--kho", help="thư mục kho luật .txt (mặc định: tự tìm repo Luyện Luật hoặc kho-luat/ đóng kèm skill)")
+    ap.add_argument("--khong-kho", action="store_true", help="chỉ chấm hình thức, không đối chiếu căn cứ với kho luật")
     a = ap.parse_args(argv)
     if a.stdin:
         van = sys.stdin.read()
@@ -166,15 +199,18 @@ def main(argv=None):
     else:
         ap.error("cần file nháp hoặc --stdin")
     khoi = [k for k in re.split(r"(?m)^\s*---\s*$", van) if k.strip()] if a.dang == "nhan-dinh" else [van]
+    kho = None if a.khong_kho else kho_luat.tim_kho(a.kho)
+    if not kho and not a.khong_kho:
+        print("(không tìm thấy kho luật: chỉ chấm hình thức; căn cứ phải đối chiếu theo bước 6)")
     loi = 0
     for i, k in enumerate(khoi, 1):
-        kq = kiem(k, a.dang, a.so_issue)
+        kq = kiem(k, a.dang, a.so_issue, kho)
         nhan = f"Câu {i}: " if len(khoi) > 1 else ""
         print(f"{nhan}{so_chu(chr(10).join(d for d in k.split(chr(10)) if DONG_NHAC not in d))} chữ · dạng {a.dang}")
         for ma, muc, loi_van in kq:
             print(f"  {muc.upper():7} {ma}  {loi_van}")
         loi += sum(1 for _, muc, _ in kq if muc == "error")
-    print("ĐẠT hình thức" if not loi else f"CHƯA ĐẠT ({loi} lỗi error)")
+    print(("ĐẠT hình thức" + (" và căn cứ khớp kho" if kho else "")) if not loi else f"CHƯA ĐẠT ({loi} lỗi error)")
     return 1 if loi else 0
 
 
