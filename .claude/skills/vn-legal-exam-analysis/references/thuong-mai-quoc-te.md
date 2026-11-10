@@ -130,7 +130,11 @@ Trạng thái xác minh của file này: các dữ kiện về bảo lưu Điề
 
 **Đề bài:** "Hợp đồng mua bán hàng hóa giữa một doanh nghiệp có trụ sở tại Việt Nam và một doanh nghiệp có trụ sở tại Ấn Độ đương nhiên được điều chỉnh bởi Công ước Viên năm 1980 (CISG), vì Việt Nam là thành viên của Công ước."
 
-**Cách xử lý đúng:** Sai. Điều 1(1)(a) CISG đòi **cả hai** quốc gia nơi các bên có trụ sở thương mại đều là thành viên Công ước, trong khi Ấn Độ chưa gia nhập CISG (đối chiếu bảng tình trạng UNCITRAL) — căn cứ này không thỏa dù Việt Nam là thành viên từ 01/01/2017. Khi đó CISG chỉ còn có thể áp dụng qua Điều 1(1)(b), nếu quy tắc tư pháp quốc tế dẫn chiếu đến pháp luật của một quốc gia thành viên, chẳng hạn dẫn về pháp luật Việt Nam — một điều kiện phải chứng minh trong từng vụ việc, trái hẳn với chữ "đương nhiên" của nhận định. Bẫy ở đây là bẫy suy đoán tư cách thành viên chồng lên bẫy lượng từ tuyệt đối: đáp án mồi hấp dẫn vì người học nhớ đúng nửa dữ kiện — nửa về Việt Nam — và chính nửa đó được nhắc trong đề như mồi nhử; tư cách thành viên của phía bên kia mới là chỗ quyết định, và đó là dữ kiện phải tra chứ không suy được. Hệ quả: nếu CISG không áp dụng, luật điều chỉnh xác định theo thỏa thuận chọn luật của các bên hoặc quy tắc tại Điều 664 và các điều tiếp theo của Bộ luật Dân sự năm 2015.
+**Cách xử lý đúng:** Sai. Điều 1(1)(a) CISG đòi **cả hai** quốc gia nơi các bên có trụ sở thương mại đều là thành viên Công ước. Ấn Độ chưa gia nhập CISG (đối chiếu bảng tình trạng UNCITRAL), nên căn cứ này không thỏa dù Việt Nam là thành viên từ 01/01/2017. Khi đó CISG chỉ còn có thể áp dụng qua Điều 1(1)(b), nếu quy tắc tư pháp quốc tế dẫn chiếu đến pháp luật của một quốc gia thành viên, chẳng hạn pháp luật Việt Nam. Đó là một điều kiện phải chứng minh trong từng vụ việc, trái hẳn với chữ "đương nhiên" của nhận định.
+
+Bẫy ở đây là bẫy suy đoán tư cách thành viên chồng lên bẫy lượng từ tuyệt đối. Đáp án mồi hấp dẫn vì người học nhớ đúng nửa dữ kiện — nửa về Việt Nam — và chính nửa đó được nhắc trong đề như mồi nhử. Tư cách thành viên của phía bên kia mới là chỗ quyết định, và đó là dữ kiện phải tra chứ không suy được.
+
+Hệ quả: nếu CISG không áp dụng, luật điều chỉnh xác định theo thỏa thuận chọn luật của các bên hoặc quy tắc tại Điều 664 và các điều tiếp theo của Bộ luật Dân sự năm 2015.
 
 Cần đối chiếu trước khi dùng: tình trạng thành viên CISG của Ấn Độ trên bảng UNCITRAL — dữ kiện đúng tại thời điểm soạn ví dụ, thuộc nhóm phải tra lại mỗi lần dùng.
 

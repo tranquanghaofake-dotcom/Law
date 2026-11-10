@@ -74,10 +74,10 @@ Cuối cùng, nếu bài có một chỗ mà lấy nhầm mẫu số sẽ đảo
 
 Cuộc họp thứ nhất có Minh và Lan, tức 800 + 500 = 1.300/3.000 = 43,33% vốn điều lệ, dưới ngưỡng 65% tại khoản 1 Điều 58 Luật Doanh nghiệp năm 2020, nên không đủ điều kiện tiến hành.
 
-Cuộc họp thứ hai có Bình, Lan và Minh, tức 1.000 + 500 + 800 = 2.300/3.000 = 76,67% vốn điều lệ, vượt 65% nên hợp lệ. Không cần viện dẫn cơ chế triệu tập lần hai tại khoản 2 Điều 58: nội dung họp đã khác (sáp nhập thay vì báo cáo tài chính) và khoảng cách 20 ngày vượt thời hạn của cơ chế đó, nên đây là một cuộc họp mới đủ điều kiện ngay ở lần thứ nhất.
+Cuộc họp thứ hai có Bình, Lan và Minh, tức 1.000 + 500 + 800 = 2.300/3.000 = 76,67% vốn điều lệ, vượt 65% nên hợp lệ. Không cần viện dẫn cơ chế triệu tập lần hai tại khoản 2 Điều 58. Nội dung họp đã khác (sáp nhập thay vì báo cáo tài chính), và lần triệu tập sau 20 ngày đã quá thời hạn 15 ngày gửi thông báo mời họp lần thứ hai. Đây là một cuộc họp mới, đủ điều kiện ngay ở lần thứ nhất.
 
 Về tỷ lệ thông qua, **mẫu số đổi**: theo khoản 3 Điều 59, tỷ lệ tán thành tính trên tổng số vốn góp của các thành viên **dự họp**, không phải trên vốn điều lệ. Tán thành là Bình và Minh: 1.000 + 800 = 1.800/2.300 = 78,26%. Sáp nhập thuộc nhóm tổ chức lại công ty tại điểm b khoản 3 Điều 59, cần từ 75% trở lên, nên nghị quyết được thông qua.
 
-Đây chính là chỗ mất điểm của cả dạng bài: nếu lấy vốn điều lệ làm mẫu số thì ra 1.800/3.000 = 60%, dưới 75%, và kết luận đảo chiều thành "không được thông qua" — dù bài đã dẫn đủ cả Điều 58 lẫn Điều 59.
+Đây chính là chỗ mất điểm của cả dạng bài. Nếu lấy vốn điều lệ làm mẫu số thì ra 1.800/3.000 = 60%, dưới 75%, và kết luận đảo chiều thành "không được thông qua" — dù bài đã dẫn đủ cả Điều 58 lẫn Điều 59.
 
-*Phép tính viết ra dạng phân số, kết luận đặt trước phép tính ở mỗi khối. Quy trình đầy đủ ở các mục trên.*
+*Phép tính viết ra dạng phân số, kết luận đặt trước phép tính ở mỗi khối. Quy trình đầy đủ ở các mục trên. Không có dòng nhắc đối chiếu vì ví dụ giả định Điều 58 và Điều 59 đã được đối chiếu văn bản gốc trong phiên (mức A); chưa đối chiếu thì bắt buộc có dòng đó, vì mọi ngưỡng phần trăm mặc định là thứ phải tra.*

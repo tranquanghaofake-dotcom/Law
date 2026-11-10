@@ -15,7 +15,7 @@ Kỹ năng này chạy cho **mọi** câu hỏi về pháp luật Việt Nam, kh
 
 Ba quy tắc cứng cho mọi lượt, trước khi viết câu đầu tiên:
 
-1. **Tra trước, viết sau.** Nếu repo Luyện Luật có trong phiên (`packages/content/data/laws/*.txt`, tên file tra trong `packages/content/data/SOURCES.md`), `grep` đúng điều luật ở đó trước khi trích số điều, khoản; chưa tra được thì chạm Ngưỡng dừng, không viết "chưa gắn số điều" rồi vẫn kết luận. Kho Luyện Luật phủ cả Luật Chứng khoán (văn bản hợp nhất 102/VBHN-VPQH), Luật Doanh nghiệp và nhiều luật khác: lĩnh vực nằm trong kho thì **không** bị hạ nhãn ở trục "ngoài phạm vi reference", nhưng căn cứ lấy từ kho là mức B cho đến khi đối chiếu vbpl.vn.
+1. **Tra trước, viết sau.** Nếu repo Luyện Luật có trong phiên (`packages/content/data/laws/*.txt`, tên file tra trong `packages/content/data/SOURCES.md`), tra đúng điều luật ở đó (`python3 -I scripts/tra_dieu.py "<tên luật>" <số điều>`, hoặc `grep`) trước khi trích số điều, khoản; chưa tra được thì chạm Ngưỡng dừng, không viết "chưa gắn số điều" rồi vẫn kết luận. Kho Luyện Luật phủ cả Luật Chứng khoán (văn bản hợp nhất 102/VBHN-VPQH), Luật Doanh nghiệp và nhiều luật khác: lĩnh vực nằm trong kho thì **không** bị hạ nhãn ở trục "ngoài phạm vi reference", nhưng căn cứ lấy từ kho là mức B cho đến khi đối chiếu vbpl.vn.
 2. **Lĩnh vực chưa có nhóm bẫy riêng** (ví dụ tài chính doanh nghiệp, thuế, ngân hàng) vẫn rà `references/danh-muc-bay.md` Nhóm 1–5; đề chạm chứng khoán, thị trường vốn thì rà thêm Nhóm 13. Không bỏ bước rà bẫy chỉ vì không có nhóm riêng.
 3. **Khái niệm học thuật không có trong luật** (thị trường sơ cấp/thứ cấp, các cách phân loại của giáo trình) phải gắn nhãn "phân loại học thuật" và tách khỏi phần có điều luật; không bịa điều luật định nghĩa.
 
@@ -54,7 +54,13 @@ SKILL.md chỉ giữ phần chạy cho mọi câu hỏi. Chi tiết nằm ở `r
 
 ## Công cụ tự kiểm
 
-`scripts/lint_ccpl.py` soát quy cách CCPL (viết hoa "Điều", trật tự điểm → khoản → Điều, viết tắt, văn bản dưới luật thiếu số hiệu, văn bản đã bị thay thế trong `scripts/superseded.json`). Khi có công cụ chạy lệnh, trước khi gửi một câu trả lời dài hơn một đoạn, lưu bản nháp và chạy `python3 -I scripts/lint_ccpl.py --stdin < nháp.txt`; sửa mọi lỗi mức error. Lint chỉ bắt lỗi hình thức, không thay bước 6. Bộ đề kiểm tra hành vi của kỹ năng nằm ở `evals/` (xem `evals/README.md`). Sau mỗi lần sửa chính kỹ năng này, chạy `python3 scripts/kiem_tra_skill.py` (frontmatter, độ dài description, file được trỏ tới) và `python3 -m unittest discover -s scripts -p 'test_*.py'`.
+Ba script, dùng khi có công cụ chạy lệnh. Chúng kiểm thứ máy kiểm được; không script nào thay bước 6.
+
+- **Tra nguyên văn trước khi trích:** `python3 -I scripts/tra_dieu.py "<tên luật hoặc tên file>" <số điều> [--khoan N]` in nguyên văn điều luật từ kho văn bản (repo Luyện Luật, hoặc thư mục chỉ bằng `--kho`); `--tim "<cụm từ>"` tìm điều chứa cụm từ, `--liet-ke` xem kho có gì. Căn cứ lấy từ kho là mức B cho đến khi đối chiếu vbpl.vn.
+- **Chấm hình thức trước khi gửi** mọi câu trả lời dài hơn một đoạn: lưu bản nháp rồi chạy `python3 -I scripts/kiem_dau_ra.py --dang nhan-dinh|tinh-huong|so-sanh nháp.txt` (hoặc `--stdin`; chữa nhiều nhận định thì ngăn mỗi câu bằng dòng `---`). Script bắt: câu đầu không phải kết luận, vượt ngân sách chữ, câu quá 40 chữ, đoạn quá sáu câu, gạch đầu dòng, viện dẫn chung chung, dòng nhắc đối chiếu sai chỗ, và mọi lỗi quy cách CCPL. Sửa hết lỗi mức error rồi mới gửi.
+- **Quy cách CCPL riêng:** `scripts/lint_ccpl.py` (viết hoa "Điều", trật tự điểm → khoản → Điều, viết tắt, văn bản dưới luật thiếu số hiệu, văn bản đã bị thay thế trong `scripts/superseded.json`) — `kiem_dau_ra.py` đã gọi sẵn; chạy riêng khi soát tài liệu dài.
+
+Bộ đề kiểm tra hành vi của kỹ năng nằm ở `evals/` (xem `evals/README.md`). Sau mỗi lần sửa chính kỹ năng này, chạy `python3 scripts/kiem_tra_skill.py` và `python3 -m unittest discover -s scripts -p 'test_*.py'` — bộ test bắt cả năm ví dụ mẫu phải qua `kiem_dau_ra.py`, vì ví dụ là thứ được bắt chước.
 
 ## Tài liệu ôn thi đính kèm
 
@@ -226,18 +232,22 @@ Ví dụ 2, 3, 4 lấy từ đề thi thật môn Pháp luật về chủ thể 
 
 **Đề bài:** Nhận định sau đúng hay sai: "Chủ tịch Ủy ban nhân dân cấp tỉnh không có thẩm quyền ban hành văn bản quy phạm pháp luật."
 
-**Cách xử lý đúng:** Sai, nhưng chỉ sai kể từ ngày 01/7/2025 — trước mốc đó nhận định này đúng. Theo Điều 4 Luật Ban hành văn bản quy phạm pháp luật số 64/2025/QH15 đã được sửa đổi, bổ sung bởi Luật số 87/2025/QH15, quyết định của Chủ tịch UBND cấp tỉnh được bổ sung vào hệ thống văn bản quy phạm pháp luật, có hiệu lực từ 01/7/2025; đây là lần đầu tiên chủ thể này có thẩm quyền lập quy. Bẫy ở đây là bẫy hiệu lực theo thời gian kết hợp bẫy phạm vi chủ thể: người học quen với hệ thống cũ (nơi chỉ có HĐND và UBND cấp tỉnh ban hành VBQPPL, còn Chủ tịch UBND chỉ ban hành văn bản hành chính cá biệt) sẽ trả lời "Đúng" theo phản xạ mà không soát mốc thời gian. Hệ quả: nếu đề không ghi thời điểm, phải trả lời điều kiện hóa theo hai nhánh trước và sau 01/7/2025 thay vì chọn một nhánh; lưu ý thêm rằng văn bản của Chủ tịch UBND cấp tỉnh không được quy định hiệu lực trở về trước.
+**Cách xử lý đúng:** Sai, nhưng chỉ sai kể từ ngày 01/7/2025 — trước mốc đó nhận định này đúng. Điều 4 Luật Ban hành văn bản quy phạm pháp luật số 64/2025/QH15 (sửa đổi, bổ sung bởi Luật số 87/2025/QH15) đưa quyết định của Chủ tịch UBND cấp tỉnh vào hệ thống văn bản quy phạm pháp luật. Phần bổ sung này có hiệu lực từ 01/7/2025 và là lần đầu tiên chủ thể này có thẩm quyền lập quy.
+
+Bẫy ở đây là bẫy hiệu lực theo thời gian kết hợp bẫy phạm vi chủ thể. Ở hệ thống cũ, cấp tỉnh chỉ có HĐND và UBND ban hành văn bản quy phạm pháp luật, còn Chủ tịch UBND chỉ ban hành văn bản hành chính cá biệt. Người học quen hệ thống đó sẽ trả lời "Đúng" theo phản xạ mà không soát mốc thời gian.
+
+Hệ quả: đề không ghi thời điểm thì phải trả lời điều kiện hóa theo hai nhánh, trước và sau 01/7/2025, thay vì chọn một nhánh. Văn bản của Chủ tịch UBND cấp tỉnh cũng không được quy định hiệu lực trở về trước.
 
 Cần đối chiếu trước khi dùng: Điều 4 Luật 64/2025/QH15 và nội dung sửa đổi tương ứng tại Luật 87/2025/QH15 — văn bản rất mới, xác nhận lại số điều và mốc hiệu lực trên vbpl.vn trước khi ghi vào bài.
 
-*Khoảng 200 chữ cho phần trả lời — đủ bốn nhịp, không thừa. Toàn bộ việc dựng chuỗi nguồn và rà danh mục bẫy diễn ra trong đầu, không xuất hiện trên giấy.*
+*Khoảng 190 chữ cho phần trả lời — đủ bốn nhịp, không thừa, không câu nào quá 40 chữ. Mỗi đoạn gánh một bước: kết luận và CCPL, bẫy, hệ quả. Toàn bộ việc dựng chuỗi nguồn và rà danh mục bẫy diễn ra trong đầu, không xuất hiện trên giấy.*
 
 ### Ví dụ 2 — nhận định đúng/sai bẫy tư cách chủ thể
 
 **Đề bài:** "Chủ doanh nghiệp tư nhân không thể đồng thời là thành viên công ty hợp danh."
 
-**Cách xử lý đúng:** Sai. Khoản 3 Điều 188 Luật Doanh nghiệp năm 2020 chỉ cấm chủ doanh nghiệp tư nhân đồng thời là **thành viên hợp danh** của công ty hợp danh, trong khi khoản 1 Điều 177 cùng luật cho thấy công ty hợp danh có thể có hai loại thành viên: thành viên hợp danh và thành viên góp vốn. Cấm một loại không đồng nghĩa cấm cả hai, nên chủ doanh nghiệp tư nhân vẫn có thể là thành viên góp vốn.
+**Cách xử lý đúng:** Sai. Khoản 3 Điều 188 Luật Doanh nghiệp năm 2020 chỉ cấm chủ doanh nghiệp tư nhân đồng thời là **thành viên hợp danh** của công ty hợp danh. Trong khi đó, khoản 1 Điều 177 cùng luật cho thấy công ty hợp danh có thể có hai loại thành viên: thành viên hợp danh và thành viên góp vốn. Cấm một loại không đồng nghĩa cấm cả hai, nên chủ doanh nghiệp tư nhân vẫn có thể là thành viên góp vốn.
 
-Nhận định đánh vào hai chỗ cùng lúc. Chỗ thứ nhất là chênh lệch giữa "thành viên công ty hợp danh" trong đề và "thành viên hợp danh" trong điều luật — hai cụm gần giống nhau nhưng phạm vi khác nhau, đúng dạng Nhóm 3. Chỗ thứ hai là chủ thể của điều cấm: khoản 4 Điều 188 cấm **doanh nghiệp tư nhân** góp vốn vào công ty hợp danh, nhưng chủ thể bị cấm ở đó là doanh nghiệp chứ không phải cá nhân chủ doanh nghiệp, nên viện dẫn khoản 4 để chứng minh nhận định đúng là dẫn nhầm chủ thể. Nguyên tắc chống bẫy cho cả nhóm này: được phép trừ khi có điều cấm, nên phải chỉ ra điều cấm phủ đúng tình huống, không suy từ cảm giác.
+Nhận định đánh vào hai chỗ cùng lúc. Chỗ thứ nhất là chênh lệch giữa "thành viên công ty hợp danh" trong đề và "thành viên hợp danh" trong điều luật — hai cụm gần giống nhau nhưng phạm vi khác nhau, đúng dạng Nhóm 3. Chỗ thứ hai là chủ thể của điều cấm. Khoản 4 Điều 188 cấm **doanh nghiệp tư nhân** góp vốn vào công ty hợp danh, nhưng chủ thể bị cấm ở đó là doanh nghiệp chứ không phải cá nhân chủ doanh nghiệp. Viện dẫn khoản 4 để chứng minh nhận định đúng vì vậy là dẫn nhầm chủ thể. Nguyên tắc chống bẫy cho cả nhóm này: được phép trừ khi có điều cấm, nên phải chỉ ra điều cấm phủ đúng tình huống, không suy từ cảm giác.
 
-*Khoảng 210 chữ. Kết luận ở câu đầu; hai chỗ hỏng được gọi tên riêng thay vì gộp thành "nhận định này chưa chính xác".*
+*Khoảng 210 chữ. Kết luận ở câu đầu; hai chỗ hỏng được gọi tên riêng thay vì gộp thành "nhận định này chưa chính xác". Không có dòng nhắc đối chiếu vì ví dụ giả định ba khoản đã được đối chiếu văn bản gốc trong phiên (mức A); chưa đối chiếu thì bắt buộc có dòng đó.*
