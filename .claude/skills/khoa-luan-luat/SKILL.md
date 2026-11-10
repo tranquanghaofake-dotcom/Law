@@ -107,7 +107,7 @@ Làm: 3 vai đọc toàn bài: (1) phản biện học thuật; (2) người là
 Cổng: mọi lỗi CHẶN đã sửa; mỗi tiêu chí ≥ 70% điểm tối đa, **trừ tiêu chí công bố** (chấm riêng theo tiến độ công bố); dự giải Bộ: tổng **≥ 85 theo điểm độc lập** (TT 45/2020, Điều 13, khoản 3); khóa luận: theo phiếu của trường. Không đạt thì người dùng xác nhận chấp nhận rủi ro.
 
 ### Pha 8 — Hoàn thiện, nộp, bảo vệ
-Làm: chuẩn hóa footnote, danh mục (`references/trinh-bay-trich-dan.md`); câu chữ đề xuất đổi sang dạng `> Đề xuất: "…"`; kiểm hình thức, ẩn danh; tóm tắt; 15–20 câu hỏi bảo vệ; khung slide (skill `slide-chuan` nếu có). Xuất Word bằng skill docx nếu có, mở lại kiểm footnote, mục lục, số trang. Góp ý của GVHD, phản biện, hội đồng: bảng giải trình `09-giai-trinh.md` (khuôn trong `phan-bien-hoi-dong.md`), không bỏ góp ý nào.
+Làm: chuẩn hóa footnote, danh mục (`references/trinh-bay-trich-dan.md`); câu chữ đề xuất đổi sang dạng `> Đề xuất: "…"`; kiểm hình thức, ẩn danh; tóm tắt; 15–20 câu hỏi bảo vệ; khung slide (skill `slide-chuan` nếu có). Xuất Word: `python3 scripts/xuat_word.py 06-chuong-*.md -o <tên>.docx` (đúng hình thức trang mặc định, footnote tự động; Euréka thêm `--so-trang tren --an-danh`; quy định trường khác thì đổi tham số, xem `--help`); thiếu pandoc thì dựng bằng skill docx theo thông số script in ra. Mở lại kiểm footnote, mục lục, số trang. Góp ý của GVHD, phản biện, hội đồng: bảng giải trình `09-giai-trinh.md` (khuôn trong `phan-bien-hoi-dong.md`), không bỏ góp ý nào.
 Cổng: `kiem_tra_ban_thao.py <mọi file> --nop [--an-danh "<tên>,<trường>"] --nguyen-van … --van-ban …` thoát mã 0, mỗi lỗi NHẸ còn lại có lý do; checklist nộp trong `08-hoan-thien.md` đủ; `nhat-ky-ai.md` cập nhật.
 
 ## Tra nhanh
@@ -124,6 +124,7 @@ Cổng: `kiem_tra_ban_thao.py <mọi file> --nop [--an-danh "<tên>,<trường>"
 | Nhật ký AI, quy tắc diễn đạt lại, đạo văn | `references/liem-chinh-ai.md` |
 | Viết chương, kiểm nguồn, kiến nghị (a)–(f), bảng mã lỗi script | `references/viet-chuong.md` |
 | Kiểm bản nháp tự động | `python3 scripts/kiem_tra_ban_thao.py --help` |
+| Xuất file Word đúng hình thức trang | `python3 scripts/xuat_word.py --help` |
 | Kiểm cấu trúc chính skill này sau khi sửa | `python3 scripts/kiem_tra_skill.py` |
 | Ví dụ đã chạy (6 đề, điểm tự chấm và độc lập, bài học) | `vi-du/README.md` |
 
@@ -132,7 +133,7 @@ Cổng: `kiem_tra_ban_thao.py <mọi file> --nop [--an-danh "<tên>,<trường>"
 - Tìm web (WebSearch, Parallel/Firecrawl search): tìm công trình gần nhất và văn bản. Ưu tiên vbpl.vn, cổng toaan.gov.vn, tạp chí có ISSN.
 - `Legal_Data_Hunter` MCP: luật và án nước ngoài cho phần so sánh (EU, Mỹ, Pháp, Singapore…).
 - Firecrawl research, Google Scholar, SSRN: bài báo tiếng Anh.
-- Skill `docx`: xuất file Word đúng định dạng ở pha 8.
+- Skill `docx`: dự phòng khi `scripts/xuat_word.py` không chạy được (thiếu pandoc), và để dựng bìa, phụ bìa, lời cam đoan.
 
 Không có công cụ tìm kiếm thì nói rõ: mọi nguồn ở pha 2 và pha 5 là `[CẦN KIỂM]`, người dùng phải tự tra.
 
