@@ -171,7 +171,8 @@ def kiem(van, dang="nhan-dinh", so_issue=1, kho=None):
                 continue
             da.add(khoa)
             if r["kq"] == "sai":
-                kq.append(("CC01", "warning" if r["suy"] else "error", f"căn cứ không khớp kho luật: {r['vien_dan']} {ten} — {r['loi']}"))
+                kq.append(("CC01", "error" if r.get("dich_danh") else "warning",
+                           f"căn cứ không khớp kho luật: {r['vien_dan']} {ten}{'' if r.get('dich_danh') else ' (văn bản suy theo ngữ cảnh)'} — {r['loi']}"))
             elif r["kq"] == "trich_lech":
                 kq.append(("CC02", "error", f"nguyên văn lệch: {r['vien_dan']} — {r['loi']}"))
             elif r["kq"] == "khac_ban":

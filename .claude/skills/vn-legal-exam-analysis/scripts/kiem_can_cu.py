@@ -28,6 +28,8 @@ REF = re.compile(
     r"Điều\s+(?P<dieu>\d+[a-zđ]?(?:\s*(?:,|và|–|-|đến)\s*(?:Điều\s+)?\d+[a-zđ]?)*)(?![\d/])")
 SO_HIEU = re.compile(r"(?<![\d/])(\d+/\d{4}/[A-ZĐ][\wĐ-]*)")
 VB_LA = re.compile(r"\b(?:Bộ luật|Luật|Pháp lệnh|Nghị định|Nghị quyết|Thông tư|Công ước|Hiệp định|Quy tắc|Hiến chương)\s+(?:số\s+)?[A-ZĐÀ-Ỹ\d][\wÀ-ỹ/-]*"
+                   r"|\b(?:NĐ|TT|TTLT|NQ|QĐ|PL|CV)\s*(?:số\s*)?\d+(?:/\d{4})?(?:/[\wĐ-]+)?"  # viết tắt: "NĐ 155", "TT 45/2020"
+                   r"|\b(?:Quyết định|Công văn|Thông tư liên tịch|Chỉ thị)\s+(?:số\s+)?\d[\w/-]*"
                    r"|\b(?:CISG|GATT|GATS|TRIPS|DSU|ADA|SCM|UCP|ISBP|URC|Incoterms|EVFTA|CPTPP|RCEP|GDPR|BLTTHS|UNCITRAL)\b")
 CUNG_VB = re.compile(r"cùng (bộ )?luật|(bộ )?luật này|cùng văn bản", re.I)
 TRICH = re.compile(r"“([^”]{25,})”|\"([A-Za-zÀ-ỹĐđ\d][^\"\n]{24,})\"")  # ngoặc thẳng: phải mở bằng chữ, không vắt dòng
@@ -121,7 +123,8 @@ class May:
             # 1. văn bản đứng ngay sau viện dẫn ("Điều 59 Luật Doanh nghiệp")
             vb, nam, suy, ro, truc_tiep = None, None, False, False, False
             cuoi_dong = van.find("\n", m.end()) if van.find("\n", m.end()) > 0 else len(van)
-            dau_doan = max(van.rfind("\n\n", 0, m.start()) + 2, 0)
+            i = van.rfind("\n\n", 0, m.start())
+            dau_doan = i + 2 if i >= 0 else 0  # rfind trả -1 khi viện dẫn nằm ở đoạn đầu
             if re.match(r"\s*([-*+|]|\d+[.)])\s", ca_dong):  # mỗi gạch đầu dòng, mỗi hàng bảng là một đoạn riêng
                 dau_doan = dau_dong
             dau_muc = max([x for x in muc if x <= m.start()] or [0])
@@ -140,8 +143,11 @@ class May:
                 if not truoc:
                     truoc, suy = [x for x in ngu_canh if dau_muc <= x[0] < m.start()], True
                 if truoc:
-                    _, _, vb, nam = truoc[-1]
+                    _, cuoi_nhac, vb, nam = truoc[-1]
                     ro = True
+                    # văn bản đứng trước, cùng câu, sát viện dẫn ("Luật X quy định tại khoản 2 Điều 5") cũng là dẫn đích danh
+                    giua = van[cuoi_nhac:m.start()]
+                    truc_tiep = not suy and cuoi_nhac <= m.start() and len(giua) <= 120 and not re.search(r"[.;!?](\s|$)|\n", giua)
             cac_dieu = []
             for manh in re.split(r"\s*(?:,|và)\s*", re.sub(r"Điều\s+", "", m.group("dieu"))):
                 kh = re.split(r"\s*(?:–|-|đến)\s*", manh)
@@ -153,7 +159,7 @@ class May:
             diem = re.findall(r"\b[a-zđ]\b", re.sub(r"[Đđ]iểm|và", "", m.group("diem") or ""))
             bai_bo = bool(re.search(r"bãi bỏ|hết hiệu lực|đã bị thay|bị thay thế", van[max(dau_dong, m.start() - 60):m.end() + 40]))
             for so in cac_dieu:
-                r = {"dong": dong, "vien_dan": re.sub(r"\s+", " ", m.group(0)), "dieu": so, "vb": vb, "suy": suy, "cuoi": m.end(), "dau": m.start()}
+                r = {"dong": dong, "vien_dan": re.sub(r"\s+", " ", m.group(0)), "dieu": so, "vb": vb, "suy": suy, "dich_danh": truc_tiep, "cuoi": m.end(), "dau": m.start()}
                 if not ro:
                     r.update(kq="khong_ro", loi="không rõ văn bản nào")
                 elif vb is None:
@@ -190,7 +196,7 @@ class May:
                 r["trich"] = "khop"
                 continue
             noi_khac = [so for so, dd in r["vb"].dieu.items() if all(x in chuan(" ".join(dd)) for x in manh)]
-            kq.append({"dong": van.count("\n", 0, m.start()) + 1, "vien_dan": f"“{cau[:50]}…”", "dieu": r["dieu"], "vb": r["vb"], "suy": False,
+            kq.append({"dong": van.count("\n", 0, m.start()) + 1, "vien_dan": f"“{cau[:50]}…”", "dieu": r["dieu"], "vb": r["vb"], "suy": False, "dich_danh": True,
                        "kq": "trich_lech", "cuoi": m.end(), "dau": m.start(),
                        "loi": (f"câu trong ngoặc kép không có trong Điều {r['dieu']} mà nằm ở Điều {', '.join(noi_khac[:3])}" if noi_khac
                                else f"câu trong ngoặc kép không khớp nguyên văn Điều {r['dieu']} {r['vb'].ten}: bỏ ngoặc kép nếu là diễn đạt lại, hoặc chép lại đúng chữ")})
@@ -203,9 +209,10 @@ def in_ket_qua(ten, kq, chi_tiet):
         dem[r["kq"]] = dem.get(r["kq"], 0) + 1
     for r in kq:
         ten_vb = r["vb"].ten if r["vb"] else ""
-        suy = f" (văn bản suy theo ngữ cảnh: {ten_vb})" if r["suy"] and r["vb"] else ""
+        ngo = not r.get("dich_danh")
+        suy = f" (văn bản suy theo ngữ cảnh: {ten_vb})" if (r["suy"] or (ngo and r["kq"] == "sai")) and r["vb"] else ""
         if r["kq"] == "sai":
-            dong = f"{'⚠' if r['suy'] else '✗'} {ten}:{r['dong']}  {r['vien_dan']} {'' if r['suy'] else ten_vb}{suy} — {re.sub(r'Điều [0-9a-zđ]+ ', 'Điều … ', r['loi']) if ',' in r['vien_dan'] or 'đến' in r['vien_dan'] else r['loi']}"
+            dong = f"{'⚠' if ngo else '✗'} {ten}:{r['dong']}  {r['vien_dan']} {'' if ngo else ten_vb}{suy} — {re.sub(r'Điều [0-9a-zđ]+ ', 'Điều … ', r['loi']) if ',' in r['vien_dan'] or 'đến' in r['vien_dan'] else r['loi']}"
         elif r["kq"] == "khac_ban":
             dong = f"⚠ {ten}:{r['dong']}  {r['vien_dan']} {ten_vb} — {r['loi']}"
         elif r["kq"] == "trich_lech":
@@ -250,7 +257,7 @@ def main(argv=None):
     for ten, van in nguon:
         for k, n in in_ket_qua(ten, may.kiem(van), a.chi_tiet).items():
             tong[k] = tong.get(k, 0) + n
-    sai_ro = sum(1 for ten, van in nguon for r in may.kiem(van) if r["kq"] == "sai" and not r["suy"]) if tong.get("sai") else 0
+    sai_ro = sum(1 for ten, van in nguon for r in may.kiem(van) if r["kq"] == "sai" and r.get("dich_danh")) if tong.get("sai") else 0
     print(f"Kho: {kho} ({len(may.vb)} văn bản). {tong.get('khop', 0)} căn cứ khớp kho · {sai_ro} SAI · "
           f"{tong.get('sai', 0) - sai_ro} nghi sai (văn bản suy theo ngữ cảnh) · {tong.get('trich_lech', 0)} nguyên văn lệch · "
           f"{tong.get('khac_ban', 0)} khác bản · {tong.get('bai_bo', 0)} đã bãi bỏ · {tong.get('ngoai_kho', 0)} ngoài kho · {tong.get('khong_ro', 0)} không rõ văn bản")

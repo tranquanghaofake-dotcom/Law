@@ -13,6 +13,8 @@ import unicodedata
 
 GOC_SKILL = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DIEU = re.compile(r"^Điều\s+(\d+[a-zđ]?)\s*(?:\.\s*(.*))?$")  # Hiến pháp: "Điều 1" đứng một mình, không có tên điều
+# bản chữ chép từ PDF đôi khi dính tên chương với tiêu đề điều: "ĐIỀU KHOẢN THI HÀNH Điều 215. Trách nhiệm…"
+DINH_CHUONG = re.compile(r"^[A-ZĐÀ-Ỹ][A-ZĐÀ-Ỹ ,-]{6,}\s+(Điều\s+\d+[a-zđ]?\s*\..*)$")
 TIEU_DE_KHAC = re.compile(r"^(Chương|Mục|Phần|Tiểu mục)\s+([IVXLC\d]+|thứ\s)", re.I)
 KHOAN = re.compile(r"^(\d+)\.\s")
 DIEM = re.compile(r"^([a-zđ])\)\s")
@@ -84,6 +86,9 @@ def doc_cac_dieu(duong):
     cac, hien = {}, None
     with open(duong, encoding="utf-8") as f:
         for dong in f.read().split("\n"):
+            dinh = DINH_CHUONG.match(dong.strip())
+            if dinh:
+                dong = dinh.group(1)
             m = DIEU.match(dong.strip())
             if m:
                 hien = m.group(1)

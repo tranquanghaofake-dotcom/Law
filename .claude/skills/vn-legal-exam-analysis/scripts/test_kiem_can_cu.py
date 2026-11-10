@@ -47,6 +47,15 @@ class Kho(unittest.TestCase):
     def test_dieu_khong_co_ten_cua_hien_phap(self):
         self.assertEqual(sorted(K.doc_cac_dieu(os.path.join(self.tam.name, "hp-thu.txt"))), ["1", "2"])
 
+    def test_tieu_de_dieu_dinh_ten_chuong(self):
+        with open(os.path.join(self.tam.name, "dinh.txt"), "w", encoding="utf-8") as f:
+            f.write("# Luật Thử dính 01/2024/QH15\n\nĐiều 1. Phạm vi\n\nNội dung.\n\nChương X\n\nĐIỀU KHOẢN THI HÀNH Điều 2. Hiệu lực thi hành\n\nLuật này có hiệu lực.\n")
+        self.assertEqual(sorted(K.doc_cac_dieu(os.path.join(self.tam.name, "dinh.txt"))), ["1", "2"])
+
+    def test_van_ban_viet_tat_ngoai_kho_khong_bi_gan_nham(self):
+        van = "Hạn mức chấp thuận (Điều 58 LDN ↔ Điều 293 NĐ 155 sửa đổi bởi NĐ 245/2025) là ngách của đề tài."
+        self.assertEqual(self.kq(van), [("khop", "58", "Luật Doanh nghiệp"), ("ngoai_kho", "293", None)])
+
     # ---- căn cứ đúng
     def test_khop_dieu_khoan_diem(self):
         self.assertEqual(self.kq("Theo điểm a khoản 2 Điều 58 Luật Doanh nghiệp năm 2020 thì phải gửi thông báo."), [("khop", "58", "Luật Doanh nghiệp")])
@@ -64,8 +73,14 @@ class Kho(unittest.TestCase):
     # ---- căn cứ sai: đây là thứ máy sinh ra để bắt
     def test_dieu_khong_ton_tai(self):
         r = self.may.kiem("Theo Điều 300 Luật Doanh nghiệp năm 2020 thì hợp đồng vô hiệu.")[0]
-        self.assertEqual((r["kq"], r["suy"]), ("sai", False))
+        self.assertEqual((r["kq"], r["dich_danh"]), ("sai", True))
         self.assertIn("không có Điều 300", r["loi"])
+
+    def test_van_ban_dung_truoc_cung_cau_la_dich_danh_khac_cau_thi_khong(self):
+        r = self.may.kiem("Luật Doanh nghiệp năm 2020 quy định tại khoản 9 Điều 58 về điều kiện họp.")[0]
+        self.assertEqual((r["kq"], r["dich_danh"]), ("sai", True))
+        r = self.may.kiem("Luật Doanh nghiệp năm 2020 có nhiều quy định. Ngưỡng tại Điều 293 chưa rõ.")[0]
+        self.assertEqual((r["kq"], r["dich_danh"]), ("sai", False))
 
     def test_khoan_khong_ton_tai(self):
         r = self.may.kiem("khoản 5 Điều 58 Luật Doanh nghiệp năm 2020")[0]
