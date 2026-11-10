@@ -171,6 +171,14 @@ class TraDieu(unittest.TestCase):
         self.assertEqual(ma_thoat, 0)
         self.assertIn("Điều 2:", ra)
 
+    def test_tu_khoa_trung_nhieu_van_ban_uu_tien_ten_mo_dau(self):
+        with open(os.path.join(self.tam.name, "tttn-2010.txt"), "w", encoding="utf-8") as f:
+            f.write("# Luật Trọng tài thử nghiệm 54/2010/QH12\n\nĐiều 1. Phạm vi\n\nLuật này quy định về trọng tài.\n")
+        ma_thoat, ra, _ = self.chay("thử nghiệm", "1")
+        self.assertEqual(ma_thoat, 0)
+        self.assertIn("thu-nghiem-2020.txt", ra)
+        self.assertEqual(self.chay("luật", "1")[0], 2)  # vẫn mơ hồ thì liệt kê, không đoán
+
     def test_liet_ke(self):
         ma_thoat, ra, _ = self.chay("--liet-ke")
         self.assertEqual(ma_thoat, 0)

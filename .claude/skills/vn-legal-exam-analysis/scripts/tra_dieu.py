@@ -59,6 +59,11 @@ def chon_van_ban(kho, tu_khoa):
         ung = [t for t in tep if k in bo_dau(dong_dau(os.path.join(kho, t)).split("—")[0].split("(")[0])]
     if not ung:
         ung = [t for t in tep if k in bo_dau(dong_dau(os.path.join(kho, t)))]
+    if len(ung) > 1:  # "thương mại" khớp cả Luật Trọng tài thương mại: ưu tiên văn bản có tên MỞ ĐẦU bằng từ khóa
+        dau = [t for t in ung if re.match(r"(bo luat|luat|phap lenh|nghi dinh|nghi quyet|thong tu|hien phap)?\s*" + re.escape(k) + r"\b",
+                                          bo_dau(dong_dau(os.path.join(kho, t))))]
+        if len(dau) == 1:
+            ung = dau
     return (os.path.join(kho, ung[0]) if len(ung) == 1 else None), ung
 
 
