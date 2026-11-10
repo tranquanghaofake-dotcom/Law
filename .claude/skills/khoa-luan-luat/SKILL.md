@@ -1,6 +1,6 @@
 ---
 name: khoa-luan-luat
-description: Use when a Vietnamese law student brings a research topic (or only a vague area of law) and wants to build a tiểu luận, khóa luận tốt nghiệp, chuyên đề tốt nghiệp, or đề tài nghiên cứu khoa học sinh viên (NCKH, báo cáo tổng kết đề tài) — including dự thi Euréka, Giải thưởng KHCN sinh viên Bộ GD&ĐT, or cấp trường/cấp tỉnh — at any stage: chọn/thẩm định đề tài, tổng quan tình hình nghiên cứu, đề cương, phương pháp nghiên cứu luật học, viết khóa luận, kiến nghị hoàn thiện pháp luật, phản biện, bảo vệ, slide bảo vệ, or fixing trích dẫn/footnote/tài liệu tham khảo/đạo văn. Also matches unaccented requests (khoa luan, tieu luan, nckh, de cuong).
+description: "Use when a Vietnamese law student brings a research topic (or only a vague area of law) and wants to build a tiểu luận, khóa luận tốt nghiệp, chuyên đề tốt nghiệp, or đề tài nghiên cứu khoa học sinh viên (NCKH, báo cáo tổng kết đề tài) — including dự thi Euréka, Giải thưởng KHCN sinh viên Bộ GD&ĐT, or cấp trường/cấp tỉnh — at any stage: chọn/thẩm định đề tài, tổng quan tình hình nghiên cứu, đề cương, phương pháp nghiên cứu luật học, viết khóa luận, kiến nghị hoàn thiện pháp luật, phản biện, bảo vệ, slide bảo vệ, or fixing trích dẫn/footnote/tài liệu tham khảo/đạo văn. Also matches unaccented requests (khoa luan, tieu luan, nckh, de cuong)."
 ---
 
 # Khóa luận · NCKH luật — từ đề tài đến bảo vệ
@@ -62,8 +62,10 @@ nhat-ky-ai.md
 Mở lại phiên: đọc `00-ho-so.md` (phần NHẬT KÝ PHIÊN) trước, làm tiếp từ pha chưa qua cổng.
 
 ## Người dùng đã có bản nháp
-Chỉ cần sửa trích dẫn, footnote, danh mục: đọc `references/trinh-bay-trich-dan.md`, chạy script, sửa; không dựng lại hồ sơ. Còn lại:
-Không viết lại ngay. (1) Đọc toàn bộ (file .docx thì đọc bằng skill docx nếu có, giữ nguyên bản gốc). (2) Dựng lại `00-ho-so.md`, `05-nguon/van-ban.md`, `05-nguon/nguyen-van.md` từ chính bản nháp. (3) Chạy `kiem_tra_ban_thao.py` và lập **bảng luận điểm → bằng chứng** (pha 7). (4) Xác định bản nháp đã qua cổng pha nào, cổng nào còn hở; báo người dùng theo thứ tự ảnh hưởng lên điểm. (5) Người dùng chọn phạm vi sửa rồi mới sửa, sửa tại chỗ.
+
+**Chỉ cần sửa trích dẫn, footnote, danh mục:** đọc `references/trinh-bay-trich-dan.md`, chạy `scripts/kiem_tra_ban_thao.py`, sửa; không dựng lại hồ sơ.
+
+**Mọi trường hợp khác:** không viết lại ngay. (1) Đọc toàn bộ (file .docx thì đọc bằng skill docx nếu có, giữ nguyên bản gốc). (2) Dựng lại `00-ho-so.md`, `05-nguon/van-ban.md`, `05-nguon/nguyen-van.md` từ chính bản nháp. (3) Chạy `kiem_tra_ban_thao.py` và lập **bảng luận điểm → bằng chứng** (pha 7). (4) Xác định bản nháp đã qua cổng pha nào, cổng nào còn hở; báo người dùng theo thứ tự ảnh hưởng lên điểm. (5) Người dùng chọn phạm vi sửa rồi mới sửa, sửa tại chỗ.
 
 ## Quy trình 9 pha
 
@@ -122,6 +124,7 @@ Cổng: `kiem_tra_ban_thao.py <mọi file> --nop [--an-danh "<tên>,<trường>"
 | Nhật ký AI, quy tắc diễn đạt lại, đạo văn | `references/liem-chinh-ai.md` |
 | Viết chương, kiểm nguồn, kiến nghị (a)–(f), bảng mã lỗi script | `references/viet-chuong.md` |
 | Kiểm bản nháp tự động | `python3 scripts/kiem_tra_ban_thao.py --help` |
+| Kiểm cấu trúc chính skill này sau khi sửa | `python3 scripts/kiem_tra_skill.py` |
 | Ví dụ đã chạy (6 đề, điểm tự chấm và độc lập, bài học) | `vi-du/README.md` |
 
 ## Công cụ, nếu phiên có
