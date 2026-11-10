@@ -4,6 +4,20 @@ Mở file này khi đề thuộc môn Luật Thương mại quốc tế hoặc k
 
 Đặc thù quyết định của môn: **không có một văn bản trung tâm** mà có một trật tự ưu tiên nguồn. Chọn sai tầng nguồn là lỗi gốc — mọi phân tích phía sau dù đúng cũng vô nghĩa, giống như sai thẩm quyền trong tố tụng.
 
+## Mục lục
+
+1. Định vị công – tư trước khi làm bất cứ điều gì
+2. Ba tầng nguồn của tầng tư và thứ tự ưu tiên
+3. Cây quyết định CISG — năm cổng, đi đúng thứ tự
+4. Bảo lưu Điều 96 của Việt Nam — mắt xích ba điều khoản
+5. Incoterms — định nghĩa bằng ba điều nó KHÔNG làm
+6. Chế tài và thời hiệu — bảng ranh giới CISG và luật Việt Nam
+7. Tầng công — GATT, vụ kiện WTO và phòng vệ thương mại
+8. Nhóm 9 — danh mục bẫy thương mại quốc tế (9.1–9.8)
+9. Ngưỡng dừng ở vùng quốc tế
+10. Nhãn tin cậy và xác minh riêng cho tầng quốc tế
+11. Ví dụ 5 — bài mẫu nhận định thương mại quốc tế
+
 ## Định vị công – tư trước khi làm bất cứ điều gì
 
 Giáo trình chuẩn (Trường Đại học Luật Hà Nội, chủ biên PGS.TS. Nông Quốc Bình) chia môn thành hai tầng dùng nguồn và cơ chế khác hẳn nhau. **Tầng công** — quan hệ giữa các quốc gia: thiết chế WTO, GATT, các biện pháp quản lý và phòng vệ thương mại; chủ thể là nhà nước, tranh chấp giải quyết qua cơ chế DSU của WTO. **Tầng tư** — quan hệ giữa các thương nhân: hợp đồng mua bán hàng hóa quốc tế, vận tải, bảo hiểm, thanh toán; nguồn là CISG, tập quán ICC, pháp luật quốc gia; tranh chấp ra trọng tài hoặc tòa án.
@@ -96,6 +110,12 @@ Phần phòng vệ thương mại trong pháp luật Việt Nam nằm ở Luật
 
 **9.8 — Nhầm tầng công – tư và nhầm tên hiệp định.** Dùng CISG phân tích một vụ áp thuế chống bán phá giá, hoặc ngược lại. Cùng họ: gán nhầm tên FTA — tài liệu lưu hành hay nhầm **RCEP** (Ấn Độ đã rút khỏi đàm phán năm 2019, không phải thành viên) với **Hiệp định Thương mại hàng hóa ASEAN – Ấn Độ**, và nhầm **ATIGA** (nội khối ASEAN) với các hiệp định ASEAN cộng. Trước khi viện dẫn một FTA, xác nhận đúng hai điều: hiệp định đó có tồn tại giữa đúng các nước trong đề không, và đã có hiệu lực chưa.
 
+## Ngưỡng dừng ở vùng quốc tế
+
+Đây là phần áp dụng điều kiện thứ ba của Ngưỡng dừng (SKILL.md) cho vùng quốc tế. Đề Thương mại quốc tế trong chương trình luật Việt Nam — CISG, Incoterms, chọn luật áp dụng, phòng vệ thương mại, các điều kinh điển của GATT — nay nằm **trong** phạm vi: xử lý theo file này và chạy đủ tám bước như với luật trong nước, kể cả quy trình xác minh (bảng tình trạng UNCITRAL, docs.wto.org thay cho vbpl.vn ở tầng điều ước).
+
+Ở vùng quốc tế, điều kiện thứ ba chỉ còn chạm ở hai chỗ. Thứ nhất, **pháp luật nội địa của nước ngoài thuần túy, không có mắt xích với Việt Nam** — luật hợp đồng Đức, thủ tục tố tụng Hoa Kỳ: không file reference nào phủ, không có quy trình xác minh, và vẫn giúp được ở tầng cấu trúc lập luận theo `references/lap-luan.md` như trước. Thứ hai, **số điều chi tiết của các hiệp định WTO ngoài GATT (ADA, SCM, SA, GATS, DSU) và số đoạn trong báo cáo Ban hội thẩm hoặc Cơ quan Phúc thẩm** khi không có tài liệu đính kèm và không tra được tài liệu gốc — vùng này giữ nguyên lệnh cấm dẫn từ trí nhớ: nêu đúng tên hiệp định và cơ chế, chỉ chỗ tra, và dừng trước con số.
+
 ## Nhãn tin cậy và xác minh riêng cho tầng quốc tế
 
 Số điều CISG thuộc văn bản ổn định hơn bốn mươi năm — mặc định mức B, và các điều nêu trong file này (1, 2, 3, 4, 6, 11, 25, 74, 77, 79, 96) đã được đối chiếu chéo với tài liệu ôn thi có nhật ký xác minh khi soạn. Khi bài thi đòi **trích nguyên văn** một điều CISG, dùng bản dịch chính thức kèm bản tiếng Anh — bản dịch trôi nổi trên mạng lệch nhau nhiều, đặc biệt ở Điều 25 và Điều 74. Tư cách thành viên, bảo lưu của từng quốc gia, và danh mục FTA có hiệu lực: **luôn tra, không có ngoại lệ**, xếp cùng nhóm với con số trong danh mục cuối của `quy-trinh-xac-minh.md`.
@@ -103,3 +123,15 @@ Số điều CISG thuộc văn bản ổn định hơn bốn mươi năm — m�
 Nguồn tra cho tầng này, theo thứ tự: bảng tình trạng UNCITRAL (uncitral.un.org) cho CISG và các công ước UNCITRAL; docs.wto.org cho văn kiện WTO và báo cáo vụ kiện; Trung tâm WTO và Hội nhập — VCCI (trungtamwto.vn) cho bản dịch và tổng hợp FTA của Việt Nam; ấn phẩm gốc của ICC cho Incoterms và UCP. Với phần pháp luật Việt Nam của môn (Luật Thương mại, Luật Quản lý ngoại thương, Bộ luật Dân sự), quy trình vẫn là `quy-trinh-xac-minh.md` với vbpl.vn.
 
 Trạng thái xác minh của file này: các dữ kiện về bảo lưu Điều 95, Điều 96 (danh sách quốc gia, Việt Nam không bảo lưu Điều 95, Trung Quốc rút bảo lưu Điều 96), mốc gia nhập của Việt Nam, và nhóm quốc gia chưa gia nhập nêu tại cổng 2 đã được đối chiếu với bảng tình trạng UNCITRAL và cơ sở dữ liệu Pace/IICL vào tháng 8/2026. Các số điều luật Việt Nam trong file khớp với tài liệu ôn thi Thương mại quốc tế có nhật ký xác minh (đối chiếu độc lập tháng 7/2026). Đây là ảnh chụp tại thời điểm soạn — danh sách thành viên điều ước và văn bản dưới luật là hai vùng biến động, đối chiếu lại trước mỗi kỳ thi.
+
+## Ví dụ 5 — nhận định thương mại quốc tế (neo cây quyết định CISG)
+
+*Đề do kỹ năng tự dựng theo mẫu bẫy phổ biến nhất của môn Thương mại quốc tế; phần trả lời không phải barem của giảng viên. Ví dụ neo độ dài, thứ tự nhịp và giọng văn — khi quy tắc mâu thuẫn với ví dụ, ví dụ thắng.*
+
+**Đề bài:** "Hợp đồng mua bán hàng hóa giữa một doanh nghiệp có trụ sở tại Việt Nam và một doanh nghiệp có trụ sở tại Ấn Độ đương nhiên được điều chỉnh bởi Công ước Viên năm 1980 (CISG), vì Việt Nam là thành viên của Công ước."
+
+**Cách xử lý đúng:** Sai. Điều 1(1)(a) CISG đòi **cả hai** quốc gia nơi các bên có trụ sở thương mại đều là thành viên Công ước, trong khi Ấn Độ chưa gia nhập CISG (đối chiếu bảng tình trạng UNCITRAL) — căn cứ này không thỏa dù Việt Nam là thành viên từ 01/01/2017. Khi đó CISG chỉ còn có thể áp dụng qua Điều 1(1)(b), nếu quy tắc tư pháp quốc tế dẫn chiếu đến pháp luật của một quốc gia thành viên, chẳng hạn dẫn về pháp luật Việt Nam — một điều kiện phải chứng minh trong từng vụ việc, trái hẳn với chữ "đương nhiên" của nhận định. Bẫy ở đây là bẫy suy đoán tư cách thành viên chồng lên bẫy lượng từ tuyệt đối: đáp án mồi hấp dẫn vì người học nhớ đúng nửa dữ kiện — nửa về Việt Nam — và chính nửa đó được nhắc trong đề như mồi nhử; tư cách thành viên của phía bên kia mới là chỗ quyết định, và đó là dữ kiện phải tra chứ không suy được. Hệ quả: nếu CISG không áp dụng, luật điều chỉnh xác định theo thỏa thuận chọn luật của các bên hoặc quy tắc tại Điều 664 và các điều tiếp theo của Bộ luật Dân sự năm 2015.
+
+Cần đối chiếu trước khi dùng: tình trạng thành viên CISG của Ấn Độ trên bảng UNCITRAL — dữ kiện đúng tại thời điểm soạn ví dụ, thuộc nhóm phải tra lại mỗi lần dùng.
+
+*Khoảng 220 chữ cho phần trả lời. Cổng tư cách thành viên được xử lý như một dữ kiện phải tra; nhánh Điều 1(1)(b) được nêu để đóng đường lùi của nhận định thay vì bỏ lửng.*

@@ -50,6 +50,16 @@ Kiểm tra kỹ trước khi kết luận — chạy đủ bước 6, vì tuyên
 
 Kèm theo đó, gợi ý cách hỏi lại giữ được cả điểm lẫn quan hệ. Nguyên tắc của câu hỏi: nêu căn cứ của mình dưới dạng đề nghị đối chiếu, không dưới dạng phán xét. Kiểu câu dùng được: "Em đối chiếu [điểm, khoản, Điều] [tên văn bản gốc] sau khi được sửa đổi bởi [số hiệu luật sửa đổi] thì thấy có thêm điều kiện vốn chủ sở hữu — thầy/cô cho em hỏi đáp án đang tính theo bản trước sửa đổi hay em đang hiểu sót chỗ nào ạ?" Trong bài thi, khi chưa kịp làm rõ với giảng viên, kết luận theo luật thực định hiện hành và viện dẫn chặt — đó là vị trí an toàn nhất về điểm lẫn về nghề.
 
+## Tài liệu ôn thi đính kèm — ngân hàng căn cứ có nhật ký xác minh
+
+Người dùng có thể đính kèm tài liệu ôn thi tự soạn theo môn, có ngân hàng CCPL gắn nhãn A/B/C riêng và nhật ký xác minh ghi ngày, nguồn đối chiếu. Loại tài liệu này đứng ở một bậc riêng trong thứ tự nguồn: **không thay được văn bản gốc, nhưng thắng trí nhớ của mô hình** — vì nó đã qua đối chiếu có ghi vết, còn trí nhớ thì không.
+
+Ánh xạ nhãn khi trích: nhãn A của tài liệu (đã đối chiếu văn bản gốc, có ghi ngày) → dùng đến điểm/khoản với giọng chắc, và dòng nhắc đối chiếu cuối bài chỉ cần một câu chung "các căn cứ lấy theo tài liệu ôn thi đã đối chiếu ngày [X] — soát lại tình trạng hiệu lực trước kỳ thi" thay vì liệt kê từng căn cứ; nhãn B của tài liệu → mức B; nhãn C → mức C, dừng ở cấp Điều. Nhật ký xác minh giảm rủi ro chứ không triệt tiêu nó: khi có công cụ tra cứu và căn cứ quyết định kết luận thuộc nhóm rủi ro cao (văn bản sau 2020, nghị định xử phạt, con số), vẫn chạy một lần tra nhanh theo `references/quy-trinh-xac-minh.md`.
+
+Ba quy tắc xung đột. Văn bản gốc mâu thuẫn tài liệu → văn bản gốc thắng, và báo rõ cho người dùng để họ cập nhật nhật ký xác minh — tài liệu loại này được thiết kế để tiến hóa qua chính các lần phát hiện như vậy. Tài liệu mâu thuẫn trí nhớ mô hình → tài liệu thắng, trừ khi chỉ ra được bằng chứng cụ thể ngược lại, khi đó nêu mâu thuẫn cho người dùng thay vì im lặng chọn một bên. Và khi tài liệu phủ một môn mà các file reference chưa phủ, phần Bẫy và So sánh của chính tài liệu được dùng như phần mở rộng tạm thời của `danh-muc-bay.md` và `cap-khai-niem-de-lan.md` cho môn đó — trục hạ bậc "ngoài phạm vi reference" ở bước 6 không kích hoạt.
+
+**Tài liệu sưu tầm không có nhật ký xác minh** — file tải từ trang chia sẻ tài liệu, đáp án nhóm thuyết trình, đề cương khóa trên — không được hưởng bậc nguồn trên: nó đứng dưới trí nhớ đã kiểm của kỹ năng, và mỗi đáp án trong đó là một đáp án mồi. Trước khi chữa câu nào, định thế hệ luật của cả tài liệu (luật cũ, cơ quan đã đổi tên, văn bản hướng dẫn đã chết, sơ đồ tòa án trước 01/7/2025), rồi chữa theo bốn ô ở mục "Chữa tài liệu ôn thi sưu tầm" ngay dưới — ô "đảo kết luận" luôn đặt lên đầu.
+
 ## Chữa tài liệu ôn thi sưu tầm (bộ nhận định, đề cương, đáp án nhóm)
 
 Khác với tài liệu tự soạn có nhật ký xác minh (SKILL.md, mục tài liệu ôn thi đính kèm), tài liệu sưu tầm — file tải từ trang chia sẻ, đáp án nhóm thuyết trình, đề cương khóa trên — **không có nhãn A/B/C và không có ngày đối chiếu**, nên đứng **dưới** trí nhớ đã kiểm của kỹ năng chứ không trên. Coi mỗi đáp án trong đó là một "đáp án mồi" cần chứng minh lại, không phải căn cứ.
