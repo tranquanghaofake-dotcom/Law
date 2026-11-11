@@ -1,0 +1,41 @@
+<svg width="968" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 968 266" role="img">
+<rect width="968" height="266" x="0" y="0" fill="none"></rect>
+<path d="M0 0l968 0l0 266l-968 0Z" fill="#f3f0e8" class="zr0-cls-0"></path>
+<path d="M0 0l764.7781 0l0 266l-764.7781 0Z" fill="#f3f0e8" class="zr0-cls-0"></path>
+<path d="M0 0l195.2219 0l0 179.4737l-195.2219 0Z" transform="translate(772.7781 0)" fill="#f3f0e8" class="zr0-cls-0"></path>
+<path d="M0 0l93.611 0l0 78.5263l-93.611 0Z" transform="translate(772.7781 187.4737)" fill="#f3f0e8" class="zr0-cls-0"></path>
+<path d="M0 0l93.611 0l0 78.5263l-93.611 0Z" transform="translate(874.389 187.4737)" fill="#f3f0e8" class="zr0-cls-0"></path>
+<path d="M0 0l764.7781 0l0 266l-764.7781 0Z" fill="#111111" class="zr0-cls-0"></path>
+<path d="M0 0l195.2219 0l0 179.4737l-195.2219 0Z" transform="translate(772.7781 0)" fill="#e4dfd2" class="zr0-cls-0"></path>
+<path d="M0 0l93.611 0l0 78.5263l-93.611 0Z" transform="translate(772.7781 187.4737)" fill="#c81a07" class="zr0-cls-0"></path>
+<path d="M0 0l93.611 0l0 78.5263l-93.611 0Z" transform="translate(874.389 187.4737)" fill="#c81a07" class="zr0-cls-0"></path>
+<path d="M20 9l225 0l0 150l-225 0Z" fill="none" class="zr0-cls-1"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:150px;font-family:Archivo;font-weight:900;" x="20" y="84" fill="#ffffff">289</text>
+<path d="M20 157l153.8465 0l0 22l-153.8465 0Z" fill="none" class="zr0-cls-1"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:22px;font-family:Be Vietnam Pro;font-weight:700;" xml:space="preserve" x="20" y="168" fill="#ffffff">ngày làm việc</text>
+<path d="M11 6l84 0l0 84l-84 0Z" transform="translate(772.7781 0)" fill="none" class="zr0-cls-1"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:84px;font-family:Archivo;font-weight:900;" x="11" y="48" transform="translate(772.7781 0)" fill="#111111">52</text>
+<path d="M11 90.5l88.9014 0l0 18l-88.9014 0Z" transform="translate(772.7781 0)" fill="none" class="zr0-cls-1"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:18px;font-family:Be Vietnam Pro;font-weight:700;" xml:space="preserve" x="11" y="99.5" transform="translate(772.7781 0)" fill="#111111">ngày nghỉ</text>
+<path d="M11 113.5l91.6014 0l0 18l-91.6014 0Z" transform="translate(772.7781 0)" fill="none" class="zr0-cls-1"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:18px;font-family:Be Vietnam Pro;font-weight:700;" xml:space="preserve" x="11" y="122.5" transform="translate(772.7781 0)" fill="#111111">hằng tuần</text>
+<path d="M11 8l46 0l0 46l-46 0Z" transform="translate(772.7781 187.4737)" fill="none" class="zr0-cls-1"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:46px;font-family:Archivo;font-weight:900;" x="11" y="31" transform="translate(772.7781 187.4737)" fill="#ffffff">12</text>
+<path d="M11 56l74.3555 0l0 15l-74.3555 0Z" transform="translate(772.7781 187.4737)" fill="none" class="zr0-cls-1"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:15px;font-family:Be Vietnam Pro;font-weight:700;" xml:space="preserve" x="11" y="63.5" transform="translate(772.7781 187.4737)" fill="#ffffff">phép năm</text>
+<path d="M11 8l46 0l0 46l-46 0Z" transform="translate(874.389 187.4737)" fill="none" class="zr0-cls-1"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:46px;font-family:Archivo;font-weight:900;" x="11" y="31" transform="translate(874.389 187.4737)" fill="#ffffff">12</text>
+<path d="M11 56l44.8803 0l0 15l-44.8803 0Z" transform="translate(874.389 187.4737)" fill="none" class="zr0-cls-1"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:15px;font-family:Be Vietnam Pro;font-weight:700;" xml:space="preserve" x="11" y="63.5" transform="translate(874.389 187.4737)" fill="#ffffff">lễ, tết</text>
+<style ><![CDATA[
+.zr0-cls-0:hover {
+pointer-events:none;
+}
+.zr0-cls-1:hover {
+cursor:pointer;
+}
+
+]]>
+
+</style>
+</svg>

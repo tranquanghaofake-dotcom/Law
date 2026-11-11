@@ -1,0 +1,58 @@
+/* thuy-si: lưới Thuỵ Sĩ số lớn — giấy trắng ngà, mực đen, MỘT màu đỏ tín hiệu, chữ Archivo co hẹp, con số chiếm nửa trang, đường kẻ mảnh chia cột, không trang trí. Tầng ÁP PHÍCH (trang tràn lề). Hợp: một con số là cả thông điệp (mức trần, tỉ lệ, thời hạn), luật thương mại, doanh nghiệp, thuế — người đọc cần tra nhanh */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap');
+:root {
+  --paper: #f3f0e8; --ink: #111111; --muted: #4c4a45; --line: #111111; --soft: #e4dfd2;
+  --do: #c81a07;
+  --bad: var(--do); --bad-soft: #f6d3cd; --good: #111111; --good-soft: #e4dfd2; --info: #111111; --info-soft: #e4dfd2; --accent: var(--do); --accent-ink: #fff;
+  --font: 'Be Vietnam Pro', sans-serif; --font-display: 'Archivo', 'Be Vietnam Pro', sans-serif;
+  --radius: 0px; --gap: 0px; --pad-left: 0px; --bleed: 56px;
+}
+.sheet { padding: 56px var(--bleed) 56px; gap: 0; }
+.sheet > * { flex-shrink: 0; position: relative; }
+/* đường kẻ là xương của trang: mỗi khối mở bằng một nét ngang, số mục nằm trên nét */
+.sheet > section { border-top: 3px solid var(--ink); padding: 10px 0 15px; display: grid; grid-template-columns: 150px 1fr; column-gap: 26px; }
+.sheet > section > .secno { position: static; width: auto; text-align: left; font: 800 60px/1 var(--font-display); font-stretch: 70%; color: var(--ink); letter-spacing: -.02em; }
+.sheet > section > .than { min-width: 0; }
+h2 { font: 800 28px/1.18 var(--font-display); font-stretch: 88%; letter-spacing: -.01em; margin-bottom: 10px; }
+h2 small { display: block; font: 600 15px/1.4 var(--font); color: var(--muted); margin: 4px 0 0; letter-spacing: 0; }
+.card, .tile { background: transparent; border: 0; border-radius: 0; padding: 0; }
+
+/* ── đầu trang: hàng nhãn nhỏ + con số khổng lồ + câu khẳng định ── */
+.nhan-dau { display: grid; grid-template-columns: 1.1fr 1.3fr .5fr; gap: 26px; border-top: 3px solid var(--ink); padding: 8px 0 0; font: 600 14px/1.35 var(--font); color: var(--muted); }
+.nhan-dau b { display: block; color: var(--ink); font-weight: 800; } .nhan-dau > :last-child { text-align: right; }
+.dau { display: grid; grid-template-columns: 438px 1fr; column-gap: 26px; align-items: end; padding: 0 0 16px; }
+.dau .so { font: 900 392px/.84 var(--font-display); font-stretch: 62%; letter-spacing: -.045em; color: var(--do); margin: 14px 0 0 -10px; white-space: nowrap; }
+.dau .so small { font-size: .5em; letter-spacing: -.02em; }
+.dau h1 { font: 800 41px/1.12 var(--font-display); font-stretch: 86%; letter-spacing: -.012em; margin: 14px 0 14px; }
+.dau h1 em { font-style: normal; color: var(--do); }
+.dau .luoi { display: grid; grid-template-columns: 170px 1fr; gap: 20px; align-items: end; }
+.dau .luoi p { font: 600 16px/1.4 var(--font); } .dau .luoi p b { font-weight: 800; color: var(--do); }
+.dem.vuong { --c: var(--do); --g: 4px; } .dem.vuong > i { border-radius: 0; } .dem.vuong > i.off { background: transparent; box-shadow: inset 0 0 0 1.5px var(--ink); }
+
+/* ── thanh lồng đúng tỉ lệ: cả hợp đồng ⊃ phần bị vi phạm ⊃ mức phạt tối đa ── */
+.long { display: grid; gap: 10px; }
+.long .hang { display: grid; grid-template-columns: 1fr; }
+.long .thanh { position: relative; height: 46px; box-shadow: inset 0 0 0 2px var(--ink); }
+.long .thanh i { position: absolute; left: 0; top: 0; bottom: 0; display: block; }
+.long .thanh .vp { background: repeating-linear-gradient(135deg, var(--ink) 0 2px, transparent 2px 9px); box-shadow: inset 0 0 0 2px var(--ink); }
+.long .thanh .ph { background: var(--do); }
+.long .thanh span { position: absolute; top: 0; line-height: 52px; font: 800 18px/46px var(--font-display); font-stretch: 88%; white-space: nowrap; padding: 0 10px; }
+.long .thanh span.tr { color: #fff; } .long .thanh span.nen { background: var(--paper); line-height: 30px; top: 8px; padding: 0 8px; }
+.long .chu { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 8px; font: 500 15px/1.4 var(--font); }
+.long .chu b { display: block; font: 800 17px/1.3 var(--font); } .long .chu > div { border-top: 1.5px solid var(--ink); padding-top: 6px; }
+.long .chu .do b { color: var(--do); }
+
+/* ── hai cột đối chiếu, ngăn bằng đường kẻ ── */
+.doi { display: grid; grid-template-columns: 1fr 1fr; }
+.doi > div { padding: 0 22px 0 0; } .doi > div + div { border-left: 1.5px solid var(--ink); padding: 0 0 0 22px; }
+.doi .ten { font: 800 15px/1.3 var(--font); color: var(--muted); margin-bottom: 6px; }
+.doi .kl { font: 800 27px/1.15 var(--font-display); font-stretch: 86%; letter-spacing: -.01em; margin-bottom: 8px; }
+.doi .kl em { font-style: normal; color: var(--do); }
+.doi p { font: 500 15.5px/1.42 var(--font); } .doi p + p { margin-top: 6px; } .doi small { font: 700 14px/1.3 var(--font); color: var(--muted); }
+
+/* ── hàng mục ngắn: 3–4 cột, mỗi cột một chỉ số nhỏ + một câu ── */
+.cot { display: grid; grid-template-columns: repeat(var(--n, 3), 1fr); column-gap: 22px; }
+.cot > div { border-top: 1.5px solid var(--ink); padding-top: 8px; font: 500 15.5px/1.42 var(--font); }
+.cot b { display: block; font: 800 19px/1.25 var(--font-display); font-stretch: 88%; margin-bottom: 4px; } .cot b em { font-style: normal; color: var(--do); }
+.cot small { display: block; margin-top: 4px; font: 700 14px/1.3 var(--font); color: var(--muted); }
+.sheet > .sign { margin-top: auto; border-top: 3px solid var(--ink); padding-top: 8px; text-align: left; font: 600 14px/1.4 var(--font); color: var(--muted); display: flex; justify-content: space-between; gap: 30px; }

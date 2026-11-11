@@ -1,0 +1,34 @@
+<!-- mat-bang-phong-tro: mặt bằng một phòng trọ kiểu bản vẽ kỹ thuật (tự vẽ, dùng tự do). Màu theo currentColor. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <!-- tường dày -->
+  <path d="M40 30 H260 V200 H40 Z" stroke-width="8"/>
+  <!-- ô cửa đi (khoét tường) + cánh cửa + cung mở -->
+  <path d="M40 150 V190" stroke="#fbfdff" stroke-width="10"/>
+  <path d="M40 150 L76 150" stroke-width="2.5"/>
+  <path d="M76 150 A36 36 0 0 1 40 186" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <!-- cửa sổ -->
+  <path d="M120 30 H190" stroke="#fbfdff" stroke-width="10"/>
+  <path d="M120 26 H190 M120 34 H190" stroke-width="1.5"/>
+  <!-- giường -->
+  <rect x="180" y="110" width="70" height="82" rx="3" stroke-width="2"/>
+  <rect x="186" y="116" width="58" height="18" rx="4" stroke-width="1.5"/>
+  <!-- bàn học + ghế -->
+  <rect x="52" y="42" width="58" height="26" stroke-width="2"/>
+  <circle cx="81" cy="82" r="8" stroke-width="1.5"/>
+  <!-- tủ -->
+  <rect x="210" y="42" width="40" height="40" stroke-width="2"/>
+  <path d="M210 42 L250 82 M250 42 L210 82" stroke-width="1"/>
+  <!-- WC -->
+  <path d="M110 200 V150 H160 V200" stroke-width="4"/>
+  <circle cx="135" cy="180" r="9" stroke-width="1.5"/>
+  <!-- đường kích thước -->
+  <g stroke-width="1">
+    <path d="M40 222 H260 M40 214 V230 M260 214 V230"/>
+    <path d="M280 30 V200 M272 30 H288 M272 200 H288"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="Barlow, sans-serif" font-size="13" font-weight="700" text-anchor="middle">
+    <text x="150" y="218">4,0 m</text>
+    <text x="292" y="120" transform="rotate(90 292 120)">3,5 m</text>
+    <text x="145" y="120" font-size="15">PHÒNG 01</text>
+  </g>
+</svg>

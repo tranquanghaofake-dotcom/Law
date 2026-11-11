@@ -1,0 +1,123 @@
+{
+  "series": [
+    {
+      "type": "treemap",
+      "roam": false,
+      "nodeClick": false,
+      "silent": true,
+      "left": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "width": "100%",
+      "height": "100%",
+      "breadcrumb": {
+        "show": false
+      },
+      "squareRatio": 1.2,
+      "itemStyle": {
+        "borderColor": "$paper",
+        "borderWidth": 0,
+        "gapWidth": 8
+      },
+      "label": {
+        "show": true,
+        "position": "insideTopLeft",
+        "padding": [
+          8,
+          0,
+          0,
+          11
+        ],
+        "formatter": "{so|{c}}\n{ten|{b}}",
+        "rich": {
+          "so": {
+            "fontFamily": "Archivo",
+            "fontWeight": 900,
+            "fontSize": 46,
+            "lineHeight": 46
+          },
+          "ten": {
+            "fontWeight": 700,
+            "fontSize": 15,
+            "lineHeight": 19
+          }
+        }
+      },
+      "data": [
+        {
+          "name": "ngày làm việc",
+          "value": 289,
+          "itemStyle": {
+            "color": "$ink"
+          },
+          "label": {
+            "color": "#ffffff",
+            "padding": [
+              14,
+              0,
+              0,
+              20
+            ],
+            "rich": {
+              "so": {
+                "fontFamily": "Archivo",
+                "fontWeight": 900,
+                "fontSize": 150,
+                "lineHeight": 140
+              },
+              "ten": {
+                "fontWeight": 700,
+                "fontSize": 22,
+                "lineHeight": 28
+              }
+            }
+          }
+        },
+        {
+          "name": "ngày nghỉ\nhằng tuần",
+          "value": 52,
+          "itemStyle": {
+            "color": "$soft"
+          },
+          "label": {
+            "color": "$ink",
+            "rich": {
+              "so": {
+                "fontFamily": "Archivo",
+                "fontWeight": 900,
+                "fontSize": 84,
+                "lineHeight": 80
+              },
+              "ten": {
+                "fontWeight": 700,
+                "fontSize": 18,
+                "lineHeight": 23
+              }
+            }
+          }
+        },
+        {
+          "name": "lễ, tết",
+          "value": 12,
+          "itemStyle": {
+            "color": "$do"
+          },
+          "label": {
+            "color": "#ffffff"
+          }
+        },
+        {
+          "name": "phép năm",
+          "value": 12,
+          "itemStyle": {
+            "color": "$do"
+          },
+          "label": {
+            "color": "#ffffff"
+          }
+        }
+      ]
+    }
+  ]
+}
