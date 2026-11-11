@@ -1,0 +1,220 @@
+{
+ "theme": "teal",
+ "meta": {
+  "title": "Đô thị hoá và đất nông nghiệp",
+  "short": "Đô thị hoá & đất lúa",
+  "motif": "contour",
+  "frame": "arch",
+  "paper": true
+ },
+ "slides": [
+  {
+   "type": "cover",
+   "photo": "images/tphcm-ven-song.jpg",
+   "photoAlt": "Toàn cảnh TP. Hồ Chí Minh ven sông Sài Gòn lúc chiều tối",
+   "kicker": "Tiểu luận · Luật Đất đai",
+   "title": "Đô thị hoá nhanh — đất lúa [thu hẹp] ra sao?",
+   "subtitle": "Deck mẫu: ảnh tìm theo brief, mỗi slide một ảnh. Số liệu là GIẢ ĐỊNH.",
+   "author": "Nhóm 3",
+   "authorSub": "Lớp Luật Kinh tế K47",
+   "date": "11/2026",
+   "notes": "Bìa ảnh tràn viền, chữ đặt theo vùng yên tĩnh của ảnh."
+  },
+  {
+   "type": "agenda",
+   "kicker": "Nội dung",
+   "title": "Bài trình bày đi qua [ba chương]",
+   "items": [
+    "Hiện trạng: đô thị lấn ruộng",
+    "Pháp luật về chuyển mục đích sử dụng đất",
+    "Kiến nghị"
+   ],
+   "art": "land",
+   "notes": "Mục lục."
+  },
+  {
+   "type": "section",
+   "num": "1",
+   "title": "Hiện trạng: đô thị [lấn ruộng]",
+   "sub": "Ảnh và số liệu về tốc độ chuyển đổi",
+   "photo": "images/nha-giua-ruong.jpg",
+   "photoAlt": "Ngôi nhà mới dựng giữa cánh đồng lúa",
+   "notes": "Mở chương có ảnh: thẻ trắng đè mép ảnh, số chương màu của ảnh.",
+   "frame": "circle"
+  },
+  {
+   "type": "photostats",
+   "kicker": "Phần 1 · Quy mô",
+   "title": "Đồng bằng nuôi [nửa sản lượng lúa]",
+   "photo": "images/cu-lao-dung-iss.jpg",
+   "photoAlt": "Cù lao Dung và cửa sông Hậu chụp từ Trạm Vũ trụ Quốc tế",
+   "side": "left",
+   "stats": [
+    {
+     "value": "~50%",
+     "label": "sản lượng lúa cả nước",
+     "desc": "Giả định để kiểm bố cục"
+    },
+    {
+     "value": "3.200",
+     "label": "ha đất lúa chuyển đổi/năm",
+     "desc": "Giả định"
+    },
+    {
+     "value": "−8%",
+     "label": "sản lượng vùng ven đô",
+     "desc": "Sau 5 năm (giả định)",
+     "tone": "bad"
+    }
+   ],
+   "note": "Số liệu giả định",
+   "notes": "Số chính đè mép ảnh."
+  },
+  {
+   "type": "mosaic",
+   "kicker": "Phần 1 · Bối cảnh",
+   "title": "Nhà mọc dần [giữa ruộng lúa]",
+   "photos": [
+    {
+     "photo": "images/ruong-can-tho.jpg",
+     "caption": "Ruộng lúa ven đô",
+     "alt": "Ruộng lúa ven đô ở Cần Thơ"
+    },
+    {
+     "photo": "images/ruong-sau-gat.jpg",
+     "caption": "Đồng sau mùa gặt",
+     "alt": "Cánh đồng sau mùa gặt"
+    },
+    {
+     "photo": "images/rom-ra.jpg",
+     "caption": "Rơm sau gặt"
+    },
+    {
+     "photo": "images/ruong-xanh.jpg",
+     "caption": "Ruộng chờ gặt"
+    }
+   ],
+   "notes": "Ảnh chính có mảng màu lệch phía sau."
+  },
+  {
+   "type": "section",
+   "num": "2",
+   "title": "Pháp luật về [chuyển mục đích]",
+   "sub": "Ai được chuyển, điều kiện gì, thủ tục ra sao",
+   "notes": "Mở chương không ảnh: số lớn + bản đồ chương."
+  },
+  {
+   "type": "photostrip",
+   "kicker": "Phần 2 · Một thửa đất qua các giai đoạn",
+   "title": "Đất lúa thành [đất đô thị] qua ba bước",
+   "items": [
+    {
+     "photo": "images/ruong-kenh.jpg",
+     "date": "Giai đoạn 1",
+     "head": "Đất trồng lúa",
+     "text": "Sản xuất nông nghiệp"
+    },
+    {
+     "photo": "images/ruong-ven-nha.jpg",
+     "date": "Giai đoạn 2",
+     "head": "Bỏ hoang chờ chuyển",
+     "text": "Ruộng cháy cỏ, nhà mọc ven"
+    },
+    {
+     "photo": "images/cong-truong-tphcm.jpg",
+     "date": "Giai đoạn 3",
+     "head": "Đô thị hoá",
+     "text": "Cầu, cao ốc, hạ tầng"
+    }
+   ],
+   "focus": 1,
+   "notes": "Mốc chính màu, mốc khác đen trắng.",
+   "photoFocus": "top"
+  },
+  {
+   "type": "cards",
+   "kicker": "Phần 2 · Ba kiểu đô thị",
+   "title": "Cùng một luật, [ba bối cảnh] rất khác",
+   "focus": 2,
+   "items": [
+    {
+     "photo": "images/pho-co-ha-noi.jpg",
+     "name": "Phố cổ",
+     "who": "Đất ở đô thị",
+     "desc": "Bảo tồn kiến trúc, hạn chế xây cao"
+    },
+    {
+     "photo": "images/nha-co-nguoi-o.jpg",
+     "name": "Nhà ống ven đô",
+     "who": "Đất ở tự phát",
+     "desc": "Hợp thức hoá, cấp giấy chứng nhận"
+    },
+    {
+     "photo": "images/tphcm-dem.jpg",
+     "name": "Đô thị mới",
+     "who": "Đất dự án",
+     "desc": "Thu hồi, bồi thường, tái định cư"
+    }
+   ],
+   "notes": "Thẻ đang bàn màu, thẻ khác đen trắng."
+  },
+  {
+   "type": "section",
+   "num": "3",
+   "title": "Kiến nghị",
+   "sub": "Ba điểm cần sửa trong quy trình chuyển mục đích",
+   "notes": "Chương 3."
+  },
+  {
+   "type": "closing",
+   "kicker": "Kết luận",
+   "title": "Giữ [đất lúa] cần quy hoạch chặt hơn",
+   "lessons": [
+    {
+     "icon": "PiPlantDuotone",
+     "head": "Quy hoạch",
+     "text": "Khoanh vùng đất lúa cần bảo vệ"
+    },
+    {
+     "icon": "PiScalesDuotone",
+     "head": "Thủ tục",
+     "text": "Công khai điều kiện chuyển đổi"
+    },
+    {
+     "icon": "PiUsersDuotone",
+     "head": "Người dân",
+     "text": "Bồi thường theo giá đất cụ thể"
+    }
+   ],
+   "notes": "Kết luận."
+  },
+  {
+   "type": "end",
+   "kicker": "Hỏi đáp",
+   "title": "Cảm ơn thầy cô và các bạn",
+   "sub": "Mời thầy cô và các bạn đặt câu hỏi",
+   "photo": "images/gat-lua.jpg",
+   "photoAlt": "Người nông dân gặt lúa trên ruộng",
+   "team": [
+    {
+     "name": "Nguyễn Văn A",
+     "role": "Chương 1"
+    },
+    {
+     "name": "Trần Thị B",
+     "role": "Chương 2"
+    },
+    {
+     "name": "Lê Văn C",
+     "role": "Chương 3"
+    },
+    {
+     "name": "Phạm Thị D",
+     "role": "Thiết kế slide"
+    }
+   ],
+   "contact": "nhom3.luatkt@example.edu.vn",
+   "notes": "Slide cuối."
+  }
+ ]
+}

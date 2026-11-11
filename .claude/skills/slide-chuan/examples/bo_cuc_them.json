@@ -1,0 +1,314 @@
+{
+ "meta": {
+  "title": "Mẫu bố cục bổ sung đợt 2",
+  "short": "Bố cục bổ sung 2",
+  "kind": "report",
+  "art": "document",
+  "motif": "none"
+ },
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Mẫu kiểm thử",
+   "title": "Bốn biểu đồ và hai bố cục [mới]",
+   "subtitle": "checklist · bento · chart line, waterfall, gantt, progress · 3 theme mới toa, xanh, muc · chế độ --native",
+   "author": "slide-chuan",
+   "art": "document",
+   "notes": "Deck mẫu đợt 2. Số liệu pháp lý lấy theo Luật BHXH 41/2024/QH15, BLTTDS 2015 và các nghị định lương tối thiểu — kiểm lại trước khi dùng thật."
+  },
+  {
+   "type": "checklist",
+   "kicker": "Hưu trí",
+   "title": "Anh Nam đủ [ba điều kiện] hưởng lương hưu",
+   "items": [
+    {
+     "ok": "yes",
+     "head": "Đủ tuổi nghỉ hưu",
+     "text": "Năm 2026 nam cần đủ 61 tuổi 6 tháng — anh đã 62 tuổi",
+     "src": "Điều 169 BLLĐ"
+    },
+    {
+     "ok": "yes",
+     "head": "Đóng BHXH bắt buộc từ [15 năm]",
+     "text": "Anh đóng 15 năm 2 tháng",
+     "src": "Luật BHXH 2024"
+    },
+    {
+     "ok": "maybe",
+     "head": "Chưa rút BHXH một lần",
+     "text": "Cần đối chiếu sổ BHXH điện tử",
+     "src": "Hồ sơ"
+    }
+   ],
+   "verdict": {
+    "ok": "maybe",
+    "text": "Đủ hai điều kiện, còn một điều cần kiểm → nếu chưa rút một lần thì [hưởng 40%] bình quân lương"
+   },
+   "notes": "checklist: mỗi dòng một điều kiện, kết luận ở cuối. Điều kiện chưa rõ dùng ok maybe."
+  },
+  {
+   "type": "bento",
+   "kicker": "Bảo hiểm y tế",
+   "title": "BHYT nhìn từ [bốn phía]",
+   "cells": [
+    {
+     "icon": "PiHeartbeatDuotone",
+     "value": "4,5%",
+     "head": "Mức đóng của người đi làm",
+     "text": "Người lao động 1,5%, doanh nghiệp 3% tiền lương làm căn cứ đóng"
+    },
+    {
+     "icon": "PiUsersThreeDuotone",
+     "head": "Sáu nhóm đối tượng",
+     "text": "Từ người đi làm đến hộ gia đình"
+    },
+    {
+     "icon": "PiHospitalDuotone",
+     "head": "Quỹ chi gì",
+     "items": [
+      "Khám chữa bệnh",
+      "Dự phòng",
+      "Quản lý"
+     ]
+    },
+    {
+     "icon": "PiBankDuotone",
+     "head": "Ngân sách hỗ trợ",
+     "text": "Học sinh, sinh viên được hỗ trợ một phần"
+    },
+    {
+     "icon": "PiScalesDuotone",
+     "head": "Văn bản",
+     "text": "Luật BHYT sửa đổi 51/2024/QH15"
+    }
+   ],
+   "notes": "bento: thẻ lớn là ý chính, 2–4 thẻ nhỏ là các mặt phụ."
+  },
+  {
+   "type": "chart",
+   "kind": "waterfall",
+   "kicker": "Phiếu lương",
+   "title": "Lương 10 triệu, nhận về [8,95 triệu] trước thuế",
+   "unit": "đồng",
+   "items": [
+    {
+     "label": "Lương đóng BHXH",
+     "value": 10000000,
+     "total": true,
+     "display": "10.000.000"
+    },
+    {
+     "label": "BHXH 8%",
+     "value": -800000,
+     "display": "−800.000"
+    },
+    {
+     "label": "BHYT 1,5%",
+     "value": -150000,
+     "display": "−150.000"
+    },
+    {
+     "label": "BHTN 1%",
+     "value": -100000,
+     "display": "−100.000"
+    },
+    {
+     "label": "Còn lại",
+     "total": true,
+     "focus": true,
+     "display": "8.950.000"
+    }
+   ],
+   "insight": {
+    "value": "10,5%",
+    "unit": "trích vào ba quỹ",
+    "text": "Chưa tính thuế TNCN và [giảm trừ gia cảnh]"
+   },
+   "notes": "waterfall: cột tổng đầu và cuối, các khoản trừ màu đỏ ở giữa."
+  },
+  {
+   "type": "chart",
+   "kind": "line",
+   "kicker": "Mức sàn đã tăng bao nhiêu?",
+   "title": "Lương tối thiểu vùng I [tăng 20%] trong sáu năm",
+   "unit": "triệu đồng/tháng",
+   "base": 4,
+   "items": [
+    {
+     "label": "2020",
+     "value": 4.42
+    },
+    {
+     "label": "2021",
+     "value": 4.42
+    },
+    {
+     "label": "2022",
+     "value": 4.68
+    },
+    {
+     "label": "2023",
+     "value": 4.68
+    },
+    {
+     "label": "2024",
+     "value": 4.96
+    },
+    {
+     "label": "2025",
+     "value": 4.96
+    },
+    {
+     "label": "2026",
+     "value": 5.31,
+     "focus": true
+    }
+   ],
+   "insight": {
+    "value": "5,31",
+    "unit": "triệu đồng từ 01/01/2026",
+    "text": "Trần trợ cấp thất nghiệp vùng I = 5 × 5,31 = [26,55 triệu]"
+   },
+   "note": "Mức áp dụng tại tháng 7 mỗi năm (2026: tháng 1) · trục dọc từ 4 triệu",
+   "notes": "line: xu hướng; base khác 0 phải ghi ở note."
+  },
+  {
+   "type": "table",
+   "kicker": "Tỷ lệ đóng",
+   "title": "Doanh nghiệp gánh [hai phần ba] tổng mức đóng",
+   "cols": [
+    {
+     "label": "Quỹ"
+    },
+    {
+     "label": "Người lao động",
+     "align": "right"
+    },
+    {
+     "label": "Doanh nghiệp",
+     "align": "right"
+    }
+   ],
+   "rows": [
+    [
+     "Hưu trí, tử tuất",
+     "8%",
+     "14%"
+    ],
+    [
+     "Ốm đau, thai sản",
+     "—",
+     "3%"
+    ],
+    [
+     "Bảo hiểm thất nghiệp",
+     "1%",
+     "1%"
+    ],
+    [
+     "Bảo hiểm y tế",
+     "1,5%",
+     "3%"
+    ]
+   ],
+   "focus": 0,
+   "notes": "table: với --native thành bảng gốc PowerPoint."
+  },
+  {
+   "type": "chart",
+   "kind": "gantt",
+   "kicker": "Tố tụng dân sự sơ thẩm",
+   "title": "Chuẩn bị xét xử chiếm [phần lớn] thời gian",
+   "unit": "tháng",
+   "items": [
+    {
+     "label": "Chuẩn bị xét xử",
+     "from": 0,
+     "to": 4,
+     "focus": true
+    },
+    {
+     "label": "Gia hạn (vụ phức tạp)",
+     "from": 4,
+     "to": 6
+    },
+    {
+     "label": "Mở phiên toà",
+     "from": 6,
+     "to": 7
+    }
+   ],
+   "insight": {
+    "value": "≤ 7",
+    "unit": "tháng",
+    "text": "Nếu dùng hết gia hạn; có lý do chính đáng thời hạn mở phiên toà là 2 tháng"
+   },
+   "notes": "gantt: from/to là số tháng tính từ mốc chung.",
+   "note": "Tính từ ngày thụ lý vụ án"
+  },
+  {
+   "type": "chart",
+   "kind": "progress",
+   "kicker": "Tỷ lệ hưởng",
+   "title": "Thai sản trả [đủ lương], thất nghiệp trả 60%",
+   "items": [
+    {
+     "label": "Thai sản (bình quân 6 tháng)",
+     "value": 100,
+     "focus": true
+    },
+    {
+     "label": "Ốm đau thông thường",
+     "value": 75
+    },
+    {
+     "label": "Lương hưu tối đa",
+     "value": 75
+    },
+    {
+     "label": "Trợ cấp thất nghiệp",
+     "value": 60
+    }
+   ],
+   "insight": {
+    "value": "60%",
+    "unit": "mức thấp nhất",
+    "text": "Bảo hiểm bù [một phần] thu nhập — riêng thai sản trả đủ lương"
+   },
+   "notes": "progress: tỉ lệ 0–100, có thể thêm target."
+  },
+  {
+   "type": "quiz",
+   "kicker": "Kiểm tra",
+   "title": "Khoản nào KHÔNG trừ vào lương người lao động?",
+   "options": [
+    "BHXH hưu trí 8%",
+    "BHYT 1,5%",
+    "Quỹ ốm đau, thai sản 3%",
+    "BHTN 1%"
+   ],
+   "notes": "Câu hỏi."
+  },
+  {
+   "type": "quiz",
+   "kicker": "Đáp án",
+   "title": "Khoản nào KHÔNG trừ vào lương người lao động?",
+   "reveal": true,
+   "answer": 2,
+   "options": [
+    "BHXH hưu trí 8%",
+    "BHYT 1,5%",
+    "Quỹ ốm đau, thai sản 3%",
+    "BHTN 1%"
+   ],
+   "why": "Quỹ ốm đau, thai sản do doanh nghiệp đóng toàn bộ 3%.",
+   "whyNot": [
+    "Người lao động đóng 8%",
+    "Người lao động đóng 1,5%",
+    "",
+    "Người lao động đóng 1%"
+   ],
+   "notes": "Đáp án."
+  }
+ ]
+}

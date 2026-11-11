@@ -1,0 +1,84 @@
+{
+ "meta": {
+  "title": "Hub và giấy ghim",
+  "short": "Giao dịch dân sự",
+  "kind": "case",
+  "motif": "none"
+ },
+ "slides": [
+  {
+   "type": "cover",
+   "layout": "typo",
+   "kicker": "Mẫu kiểm thử",
+   "title": "Khi nào giao dịch dân sự [có hiệu lực]?",
+   "subtitle": "hub (một khái niệm, nhiều yếu tố) và pin (câu chính trên giấy ghim)",
+   "author": "slide-chuan"
+  },
+  {
+   "type": "hub",
+   "kicker": "Điều 117 BLDS 2015",
+   "title": "Bốn điều kiện để giao dịch [có hiệu lực]",
+   "center": {
+    "icon": "PiHandshakeDuotone",
+    "label": "Giao dịch có hiệu lực"
+   },
+   "items": [
+    {
+     "icon": "PiUserCheckDuotone",
+     "head": "Chủ thể phù hợp",
+     "text": "Có năng lực pháp luật và năng lực hành vi dân sự phù hợp"
+    },
+    {
+     "icon": "PiHeartDuotone",
+     "head": "Tự nguyện",
+     "text": "Các bên tham gia hoàn toàn tự nguyện"
+    },
+    {
+     "icon": "PiProhibitDuotone",
+     "head": "Mục đích, nội dung hợp pháp",
+     "text": "Không vi phạm điều cấm của luật, không trái đạo đức xã hội"
+    },
+    {
+     "icon": "PiFileTextDuotone",
+     "head": "Hình thức",
+     "text": "Là điều kiện có hiệu lực khi luật có quy định"
+    }
+   ],
+   "focus": 1,
+   "takeaway": "Thiếu một điều kiện → giao dịch có thể bị tuyên vô hiệu"
+  },
+  {
+   "type": "steps",
+   "kicker": "Giao dịch giả tạo",
+   "title": "Tách [hai giao dịch] rồi xét riêng từng cái",
+   "steps": [
+    {
+     "head": "Nhận diện",
+     "text": "Giao dịch bề ngoài che giấu giao dịch thật"
+    },
+    {
+     "head": "Tuyên vô hiệu",
+     "text": "Giao dịch giả tạo vô hiệu"
+    },
+    {
+     "head": "Xét giao dịch thật",
+     "text": "Có hiệu lực nếu tự nó đủ điều kiện"
+    }
+   ],
+   "pin": {
+    "text": "Giả tạo thì vô hiệu; giao dịch bị che giấu vẫn có thể có hiệu lực",
+    "by": "tóm tắt khoản 1 Điều 124 BLDS 2015"
+   }
+  },
+  {
+   "type": "quote",
+   "kicker": "Toà nhận định",
+   "quote": "Thực chất đây là [giao dịch giả tạo] xác lập nhằm che giấu giao dịch về việc ông P, bà T1 vay tiền của ông Q, bà D.",
+   "by": "TAND cấp cao tại Đà Nẵng",
+   "role": "Bản án 142/2019/DS-PT ngày 21/8/2019",
+   "cutout": "images/chia-khoa-nha_cut.png",
+   "cutoutAlt": "Chùm chìa khoá nhà",
+   "photoStyle": "bw"
+  }
+ ]
+}

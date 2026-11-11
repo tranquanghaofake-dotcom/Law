@@ -1,0 +1,10 @@
+Font của tầng hình ảnh (hinh/) — tạo bằng: node hinh/tao_font.js
+
+Anton-Regular.ttf          Anton 2.116 — nguyên bản (SIL OFL 1.1, xem OFL-Anton.txt).
+BeVietnamPro-Regular.ttf   Be Vietnam Pro 1.002 Regular — nguyên bản (SIL OFL 1.1, xem OFL-BeVietnamPro.txt).
+BeVietnam-Dam.ttf          Be Vietnam Pro 1.002 SemiBold, ĐÃ SỬA: tên họ đổi thành "Be Vietnam Dam", bỏ tên họ chung (name ID 16/17),
+                           độ đậm khai báo = 400, kiểu = Regular. Nét chữ và mọi bảng khác giữ nguyên.
+BeVietnam-Nang.ttf         Be Vietnam Pro 1.002 ExtraBold, ĐÃ SỬA y như trên; tên họ "Be Vietnam Nang".
+
+Lý do sửa: để PowerPoint coi mỗi độ đậm là một họ font độc lập khi nhúng vào file .pptx (xem ghi chú đầu file hinh/tao_font.js).
+Bản sửa vẫn theo SIL OFL 1.1: giữ nguyên dòng bản quyền và giấy phép trong font; không bán riêng font.

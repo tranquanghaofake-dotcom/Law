@@ -1,0 +1,622 @@
+{
+  "theme": "teal",
+  "meta": {
+    "title": "Bảo vệ người thứ ba ngay tình — BA 142/2019/DS-PT",
+    "author": "Trần Diệu Diệu",
+    "short": "Bản án 142/2019/DS-PT",
+    "chromeIcon": "FaScaleBalanced",
+    "logo": "logo.jpeg",
+    "notesFile": "banan142_notes.md",
+    "motif": [
+      "cadastral",
+      "lines"
+    ],
+    "motifLabel": "Thửa 622 · tờ bản đồ 23"
+  },
+  "slides": [
+    {
+      "type": "cover",
+      "kicker": "Tiểu luận · Bình luận bản án",
+      "title": "Bảo vệ người thứ ba [ngay tình] khi giao dịch dân sự [vô hiệu]",
+      "subtitle": "Bình luận Bản án số 142/2019/DS-PT ngày 21/8/2019 của TAND cấp cao tại Đà Nẵng",
+      "author": "Trần Diệu Diệu",
+      "authorSub": "Lớp LAW 308 A · GVHD: Nguyễn Thị Thu Na",
+      "initials": "DD",
+      "art": "courthouse",
+      "photo": "images/nha-co-nguoi-o.jpg",
+      "photoAlt": "Nhà ống có người đang ở (quần áo phơi ban công), TP. Hồ Chí Minh — ảnh minh hoạ, không phải ngôi nhà trong vụ án",
+      "photoLayout": "split"
+    },
+    {
+      "type": "statement",
+      "kicker": "Nghịch lý của vụ án",
+      "title": "Trả đủ tiền, có [GCN đứng tên] — vẫn bị tuyên [vô hiệu]",
+      "sub": "Mấu chốt ở cột thứ ba: tiền và giấy tờ đã đủ, nhưng người mua chưa từng nhận nhà.",
+      "stats": [
+        {
+          "label": "Đã thanh toán",
+          "value": "850 tr",
+          "desc": "Hợp đồng 20/8/2014"
+        },
+        {
+          "label": "Giấy tờ",
+          "value": "GCN",
+          "desc": "Đứng tên người mua từ 09/9/2014"
+        },
+        {
+          "label": "Nhà",
+          "value": "Chưa giao",
+          "desc": "Gia đình P vẫn ở trên đất",
+          "tone": "bad"
+        }
+      ],
+      "art": "gcn",
+      "stamp": "VÔ HIỆU",
+      "artCaption": "GCN BP 150838"
+    },
+    {
+      "type": "flow",
+      "kicker": "Các bên · thửa đất 102 m² tại Quảng Trị",
+      "title": "Một thửa đất, [bốn bên], ba giao dịch nối nhau",
+      "nodes": [
+        {
+          "id": "P",
+          "icon": "FaHouse",
+          "name": "Chủ nhà",
+          "who": "vợ chồng ông P",
+          "tag": "Có yêu cầu độc lập"
+        },
+        {
+          "id": "Q",
+          "icon": "FaHandHoldingDollar",
+          "name": "Người cho vay",
+          "who": "vợ chồng ông Q",
+          "tag": "Bị đơn"
+        },
+        {
+          "id": "D",
+          "icon": "FaUser",
+          "name": "Người mua",
+          "who": "vợ chồng ông D",
+          "tag": "Nguyên đơn"
+        },
+        {
+          "id": "V",
+          "icon": "FaBuildingColumns",
+          "name": "Ngân hàng V",
+          "who": "Ngân hàng TMCP V",
+          "tag": "Nhận thế chấp"
+        }
+      ],
+      "edges": [
+        {
+          "from": "Q",
+          "to": "P",
+          "label": "2010 · Cho vay 350 tr",
+          "tone": "muted"
+        },
+        {
+          "from": "P",
+          "to": "Q",
+          "label": "2010 · “Bán” giả tạo",
+          "tone": "bad",
+          "dash": true
+        },
+        {
+          "from": "Q",
+          "to": "D",
+          "label": "2014 · Bán lại 850 tr",
+          "tone": "good"
+        },
+        {
+          "from": "D",
+          "to": "V",
+          "label": "2017 · Thế chấp"
+        }
+      ],
+      "note": "Nét đứt = giao dịch giả tạo. Gia đình P [vẫn ở trên đất] — người mua chưa từng nhận nhà."
+    },
+    {
+      "type": "map",
+      "kicker": "Địa bàn vụ án",
+      "title": "Thửa đất ở [Quảng Trị] — xét xử qua [hai cấp toà]",
+      "route": true,
+      "places": [
+        {
+          "name": "Quảng Trị",
+          "label": "Quảng Trị",
+          "note": "Nơi có thửa đất 622 · TAND tỉnh xử sơ thẩm (BA 12/2018/DS-ST)"
+        },
+        {
+          "name": "Đà Nẵng",
+          "label": "Đà Nẵng",
+          "note": "TAND cấp cao xử phúc thẩm (BA 142/2019/DS-PT ngày 21/8/2019)"
+        }
+      ],
+      "admin": 63
+    },
+    {
+      "type": "scene",
+      "year": "2010",
+      "title": "Vay 350 triệu — nhưng ký hợp đồng [“bán”] nhà",
+      "sum": "2011–2013: Q tính nợ 785,7 triệu; P cho rằng chỉ vay 350 triệu, còn lại là lãi.",
+      "events": [
+        {
+          "date": "02/12/2010",
+          "text": "P vay Q 350 triệu đồng"
+        },
+        {
+          "date": "03/12/2010",
+          "text": "Ký chuyển nhượng có công chứng — gia đình P vẫn ở trên đất"
+        },
+        {
+          "date": "28/12/2010",
+          "text": "Q được cấp GCN BC 095737"
+        }
+      ],
+      "timeline": {
+        "ref": "tl",
+        "active": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "scene",
+      "year": "2014",
+      "title": "Bán lại cho [người mua] với giá 850 triệu",
+      "sum": "Giấy tờ đều hợp lệ: công chứng, trả đủ tiền, có GCN. Nhưng nhà chưa từng được bàn giao.",
+      "events": [
+        {
+          "date": "20/8/2014",
+          "text": "Q chuyển nhượng cho người mua; người mua trả đủ 850 triệu"
+        },
+        {
+          "date": "09/9/2014",
+          "text": "Người mua được cấp GCN BP 150838"
+        }
+      ],
+      "timeline": {
+        "ref": "tl",
+        "active": [
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "type": "scene",
+      "year": "2014–17",
+      "title": "[14 ngày] sau, người mua phải kiện đòi nhà",
+      "sum": "Vụ án kéo dài — trong lúc chờ, thửa đất tiếp tục bị thế chấp và chuyển nợ.",
+      "events": [
+        {
+          "date": "23/9/2014",
+          "text": "Khởi kiện: đòi giao nhà, nếu không thì Q hoàn 850 triệu"
+        },
+        {
+          "date": "02/10/2017",
+          "text": "Người mua thế chấp đất cho Ngân hàng V, vay 500 triệu"
+        },
+        {
+          "date": "10/12/2017",
+          "text": "Q chuyển cho người mua quyền đòi P 785 triệu"
+        }
+      ],
+      "timeline": {
+        "ref": "tl",
+        "active": [
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "type": "duel",
+      "paired": true,
+      "title": "Phúc thẩm giữ phần [vô hiệu], sửa phần còn lại",
+      "left": {
+        "tag": "Sơ thẩm",
+        "sub": "BA 12/2018/DS-ST · TAND tỉnh Quảng Trị",
+        "items": [
+          "Bác yêu cầu giao nhà đất",
+          "Hai hợp đồng vô hiệu, huỷ hai GCN",
+          "Buộc Q trả người mua 850 triệu",
+          "Tách yêu cầu đòi nợ"
+        ]
+      },
+      "right": {
+        "tag": "Phúc thẩm",
+        "sub": "BA 142/2019/DS-PT · TAND cấp cao tại Đà Nẵng",
+        "items": [
+          "Sửa án: [công nhận thoả thuận] (Điều 300 BLTTDS)",
+          "Vô hiệu, huỷ GCN: “đúng pháp luật”",
+          "Buộc trả 850 tr: [vượt yêu cầu]",
+          "Tách yêu cầu: “tùy tiện”"
+        ]
+      }
+    },
+    {
+      "type": "ledger",
+      "kicker": "Kết quả thoả thuận được công nhận",
+      "title": "Người làm đúng thủ tục lại [thiệt nhất]",
+      "unit": "triệu đồng",
+      "rows": [
+        {
+          "name": "Chủ nhà",
+          "sub": "ông P · lấy lại nhà đất",
+          "steps": [
+            {
+              "label": "Vay của Q",
+              "value": 350
+            },
+            {
+              "label": "Giao người mua",
+              "value": -500
+            }
+          ]
+        },
+        {
+          "name": "Người cho vay",
+          "sub": "ông Q",
+          "steps": [
+            {
+              "label": "Cho P vay",
+              "value": -350
+            },
+            {
+              "label": "Tiền bán nhà",
+              "value": 850
+            }
+          ]
+        },
+        {
+          "name": "Người mua",
+          "sub": "ông D · mất nhà",
+          "focus": true,
+          "steps": [
+            {
+              "label": "Trả Q",
+              "value": -850
+            },
+            {
+              "label": "Nhận từ P",
+              "value": 500
+            }
+          ]
+        }
+      ],
+      "note": "Chưa tính lãi. Hợp đồng thế chấp với Ngân hàng V [chưa được giải quyết]."
+    },
+    {
+      "type": "chart",
+      "kind": "span",
+      "kicker": "Thời gian tố tụng",
+      "title": "Ký thời [luật cũ], xử khi [luật mới] đã có hiệu lực",
+      "items": [
+        {
+          "label": "Các giao dịch",
+          "from": "03/12/2010",
+          "to": "20/8/2014"
+        },
+        {
+          "label": "Sơ thẩm",
+          "from": "23/9/2014",
+          "to": "20/11/2018",
+          "focus": true
+        },
+        {
+          "label": "Phúc thẩm",
+          "from": "20/11/2018",
+          "to": "21/8/2019"
+        }
+      ],
+      "markers": [
+        {
+          "date": "01/01/2017",
+          "label": "BLDS 2015 có hiệu lực"
+        }
+      ],
+      "insight": {
+        "value": "59",
+        "unit": "tháng",
+        "text": "Từ khởi kiện đến phúc thẩm. Giao dịch xác lập [trước] 01/01/2017 → phải chọn luật theo Điều 688."
+      }
+    },
+    {
+      "type": "agenda",
+      "kicker": "Phần phân tích",
+      "title": "Vụ án đặt ra [ba câu hỏi]",
+      "items": [
+        "Hợp đồng 2010 là mua bán thật hay [vay trá hình]?",
+        "Người mua có là [người thứ ba ngay tình]? Theo luật nào?",
+        "Ngân hàng nhận thế chấp ra sao khi GCN bị huỷ?"
+      ]
+    },
+    {
+      "type": "evidence",
+      "kicker": "Câu 01 · Mua bán hay vay?",
+      "title": "Không phải mua bán — mà là [vay trá hình]",
+      "listTitle": "Ba dấu hiệu từ hồ sơ",
+      "items": [
+        {
+          "head": "Chỉ 1 ngày",
+          "desc": "Ký chuyển nhượng ngay sau khoản vay"
+        },
+        {
+          "head": "Vẫn ở trong nhà",
+          "desc": "Không bàn giao nhà đất"
+        },
+        {
+          "head": "Bán để trả nợ",
+          "desc": "Văn bản 2013: không trả nợ thì giao nhà"
+        }
+      ],
+      "quote": "Thực chất đây là giao dịch giả tạo xác lập nhằm che giấu giao dịch về việc ông P, bà T1 vay tiền của ông Q, bà D.",
+      "quoteBy": "TAND cấp cao tại Đà Nẵng",
+      "foot": "[Điều 129 BLDS 2005] → hợp đồng vay vẫn có hiệu lực, Q vẫn đòi được nợ.",
+      "quoteDoc": "BẢN ÁN 142/2019/DS-PT · NHẬN ĐỊNH"
+    },
+    {
+      "type": "compare",
+      "kicker": "Câu 02 · Người mua có được bảo vệ?",
+      "title": "Luật cũ và luật mới [trả lời ngược nhau]",
+      "left": {
+        "title": "BLDS 2005 · khoản 2 Điều 138",
+        "tag": "33/2005/QH11 · hết hiệu lực 01/01/2017",
+        "value": "Người mua mất",
+        "tone": "bad",
+        "text": "Bất động sản: giao dịch với người thứ ba ngay tình vẫn vô hiệu.",
+        "note": "Trừ mua qua đấu giá hoặc theo bản án sau bị huỷ, sửa."
+      },
+      "right": {
+        "title": "BLDS 2015 · khoản 2 Điều 133",
+        "tag": "91/2015/QH13 · đang có hiệu lực",
+        "value": "Người mua giữ",
+        "tone": "good",
+        "text": "Tin vào đăng ký và ngay tình → giao dịch không vô hiệu.",
+        "note": "Chủ cũ chỉ đòi người có lỗi bồi thường (khoản 3)."
+      },
+      "footer": "[Vụ án:] không thuộc ngoại lệ → theo BLDS 2005, vô hiệu là phù hợp."
+    },
+    {
+      "type": "fork",
+      "kicker": "Câu 02 · Áp dụng luật nào?",
+      "title": "[Điều 688 BLDS 2015] có hai cách đọc",
+      "axis": [
+        [
+          "20/8/2014",
+          "Ký hợp đồng"
+        ],
+        [
+          "01/01/2017",
+          "BLDS 2015"
+        ],
+        [
+          "2018–2019",
+          "Xét xử"
+        ]
+      ],
+      "checklist": {
+        "title": "Hợp đồng 2014",
+        "items": [
+          {
+            "ok": true,
+            "text": "Đã trả đủ tiền"
+          },
+          {
+            "ok": true,
+            "text": "Đã có GCN"
+          },
+          {
+            "ok": false,
+            "text": "Chưa nhận nhà"
+          }
+        ],
+        "q": "→ “thực hiện xong”?"
+      },
+      "branches": [
+        {
+          "tag": "Cách 1 → BLDS 2015",
+          "head": "Điểm b khoản 1",
+          "text": "Chưa giao nhà → hợp đồng còn “đang thực hiện”.",
+          "src": "Giải đáp VKSND tối cao; Án lệ 55/2022/AL"
+        },
+        {
+          "tag": "Cách 2 → BLDS 2005",
+          "head": "Điểm c khoản 1",
+          "text": "Tranh chấp thì áp dụng điểm c, không phải điểm b.",
+          "src": "Quan điểm học thuật (Chu Xuân Minh, 2019)"
+        }
+      ],
+      "footer": "[Lỗ hổng:] không cấp xét xử nào lập luận việc chọn luật."
+    },
+    {
+      "type": "bignum",
+      "kicker": "Câu 02 · Kể cả theo luật mới",
+      "title": "Người mua [khó chứng minh] mình ngay tình",
+      "num": "14",
+      "unit": "ngày",
+      "numDesc": "từ khi có GCN đến khi kiện đòi nhà",
+      "condTitle": "Khoản 2 Điều 133 BLDS 2015 cần đủ hai điều kiện",
+      "conds": [
+        {
+          "ok": "yes",
+          "head": "Căn cứ vào đăng ký",
+          "desc": "Công chứng trên GCN đứng tên Q",
+          "verdict": "Đạt"
+        },
+        {
+          "ok": "maybe",
+          "head": "Ngay tình",
+          "desc": "Người cẩn trọng sẽ đến xem nhà, hỏi người đang ở",
+          "verdict": "Nghi vấn"
+        }
+      ],
+      "note": "[Quan điểm người viết]",
+      "days": [
+        "09/9/2014",
+        "23/9/2014"
+      ],
+      "daysLabels": [
+        "Có GCN",
+        "Khởi kiện"
+      ]
+    },
+    {
+      "type": "panelrows",
+      "kicker": "Câu 03 · Quyền của ngân hàng",
+      "title": "Ngân hàng đang giữ một [GCN đã bị huỷ]",
+      "icon": "FaBuildingColumns",
+      "art": "gcn",
+      "stamp": "HUỶ",
+      "artCaption": "GCN BP 150838 — tài sản bảo đảm",
+      "rows": [
+        {
+          "head": "Công văn 64/TANDTC-PC · 03/4/2019",
+          "text": "Thế chấp đúng luật không vô hiệu; không cần huỷ GCN.",
+          "note": "Giải đáp nghiệp vụ, không phải văn bản QPPL"
+        },
+        {
+          "head": "Bản án",
+          "text": "Huỷ GCN nhưng không xét hợp đồng thế chấp.",
+          "tone": "bad"
+        },
+        {
+          "head": "Thoả thuận",
+          "text": "Buộc người mua “giải chấp” — Ngân hàng không phải một bên.",
+          "note": "Ngân hàng không yêu cầu → Toà không xét (Điều 5 BLTTDS)",
+          "tone": "bad"
+        }
+      ]
+    },
+    {
+      "type": "scorecard",
+      "kicker": "Đánh giá",
+      "title": "[Đúng] kết quả, [thiếu] lập luận",
+      "colA": "Toà làm được",
+      "colB": "Còn bỏ ngỏ",
+      "rows": [
+        {
+          "q": "Mua hay vay",
+          "a": "Xác định đúng hợp đồng 2010 là giả tạo"
+        },
+        {
+          "q": "Người mua",
+          "a": "Áp dụng nhất quán khoản 2 Điều 138 BLDS 2005",
+          "b": "Chọn luật theo Điều 688; ngay tình và lỗi"
+        },
+        {
+          "q": "Ngân hàng",
+          "b": "Quyền khi GCN thế chấp bị huỷ"
+        }
+      ],
+      "footer": "[Thủ tục:] phúc thẩm sửa đúng hai sai sót của sơ thẩm."
+    },
+    {
+      "type": "cards",
+      "kicker": "Bài học thực tiễn",
+      "title": "Mỗi bên đều có thể [tránh] được vụ án này",
+      "labels": [
+        "Hậu quả",
+        "Lẽ ra nên"
+      ],
+      "items": [
+        {
+          "icon": "FaUser",
+          "name": "Người mua",
+          "who": "Thiệt 350 triệu",
+          "desc": "Đến xem nhà, hỏi người đang ở trước khi trả tiền"
+        },
+        {
+          "icon": "FaHandHoldingDollar",
+          "name": "Bên cho vay",
+          "who": "Vẫn đòi được nợ",
+          "desc": "Đừng “bán” nhà để bảo đảm khoản vay — dùng thế chấp"
+        },
+        {
+          "icon": "FaBuildingColumns",
+          "name": "Ngân hàng",
+          "who": "Giữ GCN đã bị huỷ",
+          "desc": "Thẩm định thực tế tài sản, chủ động tham gia tố tụng"
+        }
+      ]
+    },
+    {
+      "type": "photo",
+      "kicker": "Lời kết",
+      "photo": "images/chia-khoa-nha.jpg",
+      "photoAlt": "Bàn tay cầm chùm chìa khoá nhà — tượng trưng cho việc giao nhà",
+      "title": "“Có GCN, trả đủ tiền — nhưng người mua [chưa từng cầm chìa khoá] ngôi nhà.”",
+      "sub": "Luật chỉ bảo vệ người [thật sự ngay tình] — và ngay tình bắt đầu từ việc đến xem nhà, hỏi người đang ở."
+    },
+    {
+      "type": "closing",
+      "kicker": "Kết luận",
+      "title": "Luật chỉ bảo vệ người [thật sự ngay tình]",
+      "verdict": "Bản án [đúng kết quả], thiếu lập luận chọn luật",
+      "answers": [
+        {
+          "q": "Câu 01 · Mua hay vay",
+          "a": "[Vay trá hình] — hợp đồng vay vẫn có hiệu lực"
+        },
+        {
+          "q": "Câu 02 · Người mua",
+          "a": "Không — khoản 2 Điều 138 BLDS 2005; luật mới cũng khó chứng minh ngay tình"
+        },
+        {
+          "q": "Câu 03 · Ngân hàng",
+          "a": "[Còn bỏ ngỏ] — GCN bị huỷ, thế chấp chưa được xét",
+          "tone": "bad"
+        }
+      ],
+      "rec": {
+        "title": "Kiến nghị HĐTP TAND tối cao",
+        "items": [
+          "Tiêu chí ngay tình, gồm kiểm tra hiện trạng",
+          "Khoản 1 Điều 688 cho giao dịch qua 01/01/2017"
+        ]
+      },
+      "thanks": "Cảm ơn thầy cô và các bạn."
+    }
+  ],
+  "timelines": {
+    "tl": [
+      [
+        "02/12/2010",
+        "Vay 350 tr"
+      ],
+      [
+        "03/12/2010",
+        "Ký chuyển nhượng"
+      ],
+      [
+        "28/12/2010",
+        "GCN tên Q"
+      ],
+      [
+        "20/8/2014",
+        "Bán lại"
+      ],
+      [
+        "09/9/2014",
+        "GCN người mua"
+      ],
+      [
+        "23/9/2014",
+        "Khởi kiện"
+      ],
+      [
+        "02/10/2017",
+        "Thế chấp"
+      ],
+      [
+        "10/12/2017",
+        "Chuyển quyền nợ"
+      ]
+    ]
+  }
+}

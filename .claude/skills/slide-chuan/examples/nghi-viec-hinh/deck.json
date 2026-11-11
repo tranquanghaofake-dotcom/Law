@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "title": "Nghỉ việc phải báo trước bao lâu?",
+    "short": "Điều 35 · Bộ luật Lao động 2019",
+    "author": "(điền tên)",
+    "minutes": 8,
+    "hinh": { "mau": "son", "chuyen": "morph" },
+    "ghiChu": "Căn cứ: Điều 35, 39, 40 Bộ luật Lao động số 45/2019/QH14 (hiệu lực 01/01/2021) — nguyên văn lấy từ kho văn bản của dự án, chưa đối chiếu vbpl.vn."
+  },
+  "slides": [
+    {
+      "type": "book", "id": "bia", "toc": "Mở sách",
+      "kicker": "Bài thuyết trình mẫu · Luật lao động",
+      "title": "Mở bộ luật,\n[tìm câu trả lời]",
+      "sub": "Một câu hỏi ai đi làm cũng gặp: muốn nghỉ việc thì phải báo trước bao lâu?",
+      "hint": "Bấm để mở sách", "found": "Đây rồi. Bấm để vào bài.",
+      "cover": { "title": "Bộ luật\nLao động", "year": "2019", "code": "Số 45/2019/QH14" },
+      "label": "Điều",
+      "left": {
+        "head": "Bộ luật Lao động 2019", "chapter": "Chương III", "name": "Hợp đồng lao động",
+        "section": "Mục 2. Thực hiện hợp đồng lao động", "page": 26,
+        "rows": [
+          [28, "Thực hiện công việc theo hợp đồng lao động"],
+          [29, "Chuyển người lao động làm công việc khác so với hợp đồng lao động"],
+          [30, "Tạm hoãn thực hiện hợp đồng lao động"],
+          [31, "Nhận lại người lao động hết thời hạn tạm hoãn thực hiện hợp đồng lao động"],
+          [32, "Làm việc không trọn thời gian"],
+          [33, "Sửa đổi, bổ sung hợp đồng lao động"]
+        ]
+      },
+      "right": {
+        "head": "Chương III · Hợp đồng lao động", "section": "Mục 3. Chấm dứt hợp đồng lao động", "page": 27,
+        "rows": [
+          [34, "Các trường hợp chấm dứt hợp đồng lao động"],
+          [35, "Quyền đơn phương chấm dứt hợp đồng lao động của người lao động"],
+          [36, "Quyền đơn phương chấm dứt hợp đồng lao động của người sử dụng lao động"],
+          [37, "Trường hợp người sử dụng lao động không được thực hiện quyền đơn phương chấm dứt hợp đồng lao động"],
+          [38, "Hủy bỏ việc đơn phương chấm dứt hợp đồng lao động"],
+          [39, "Đơn phương chấm dứt hợp đồng lao động trái pháp luật"],
+          [40, "Nghĩa vụ của người lao động khi đơn phương chấm dứt hợp đồng lao động trái pháp luật"],
+          [41, "Nghĩa vụ của người sử dụng lao động khi đơn phương chấm dứt hợp đồng lao động trái pháp luật"]
+        ]
+      },
+      "stops": [28, 31, 33], "find": 35,
+      "notes": "Mở bài bằng vật thật: cuốn Bộ luật Lao động trên bàn. Bấm một lần: sách tự dời ra giữa, mở bìa, kính lúp tự soi tới Điều 35."
+    },
+    {
+      "type": "bigq", "id": "tieu-de", "toc": "Câu hỏi của bài",
+      "lines": ["Nghỉ việc", "phải báo trước"], "box": "bao lâu?",
+      "emoji": "tear-off-calendar", "emoji2": "hourglass-not-done",
+      "by": "Người trình bày: (điền tên) · Lớp (điền lớp)",
+      "notes": "Dòng Điều 35 thành ô đỏ của câu hỏi; cuốn sách thu về góc, từ giờ là nút Mục lục. Tờ lịch là hình chủ đạo của bài."
+    },
+    {
+      "type": "picks", "id": "ba-cau-hoi", "toc": "Ba câu hỏi",
+      "kicker": "Mở đầu", "title": "Ba câu hỏi [trước khi nộp đơn]",
+      "items": [
+        { "q": "Phải báo trước bao nhiêu ngày?", "emoji": "tear-off-calendar", "go": "ba-muc" },
+        { "q": "Khi nào được nghỉ ngay, không cần báo?", "emoji": "door", "go": "ngoai-le" },
+        { "q": "Nghỉ ngang thì mất những gì?", "emoji": "money-with-wings", "go": "hau-qua" }
+      ],
+      "notes": "Ba câu hỏi dẫn bài. Tờ lịch của tiêu đề bay vào thẻ 01. Bấm vào thẻ nào thì nhảy tới slide trả lời câu đó."
+    },
+    {
+      "type": "lawquote", "id": "dieu-luat", "toc": "Nguyên văn điều luật",
+      "kicker": "Căn cứ", "title": "Luật nói [nguyên văn] thế này",
+      "head": "Bộ luật Lao động 2019 · Điều 35 · Khoản 1",
+      "quote": "Người lao động có quyền đơn phương chấm dứt hợp đồng lao động nhưng [phải báo trước] cho người sử dụng lao động như sau:",
+      "art": "35", "artLabel": "Điều", "stamp": "Khoản 1",
+      "source": "Nguồn: Bộ luật Lao động số 45/2019/QH14, có hiệu lực từ 01/01/2021 — nguyên văn lấy từ kho văn bản của dự án, chưa đối chiếu vbpl.vn.",
+      "notes": "Đọc nguyên văn phần mở đầu khoản 1 Điều 35. Nét bút vàng chạy qua cụm “phải báo trước” là ý chính."
+    },
+    {
+      "type": "tiles", "id": "ba-muc", "toc": "Ba mức báo trước",
+      "kicker": "Khoản 1", "title": "Ba mức [báo trước]", "legend": "Mỗi ô là một ngày",
+      "ref": { "head": "Bộ luật Lao động 2019 · Điều 35 · Khoản 1", "text": "… nhưng [phải báo trước] cho người sử dụng lao động như sau:" },
+      "cols": [
+        { "n": 45, "unit": "ngày", "label": "Hợp đồng không xác định thời hạn", "emoji": "briefcase" },
+        { "n": 30, "unit": "ngày", "label": "Hợp đồng từ 12 đến 36 tháng", "emoji": "page-facing-up", "morph": true },
+        { "n": 3, "unit": "ngày làm việc", "label": "Hợp đồng dưới 12 tháng", "emoji": "stopwatch" }
+      ],
+      "source": "Điểm a, b, c khoản 1 Điều 35. Ngành, nghề, công việc đặc thù: thời hạn theo quy định của Chính phủ (điểm d).",
+      "notes": "Tờ trích khoản 1 thu lại thành thẻ nhỏ; ba cột xếp lên từng ô, mỗi ô là một ngày, con số đếm theo."
+    },
+    {
+      "type": "strip", "id": "vi-du", "toc": "Ví dụ 30 ngày",
+      "kicker": "Ví dụ", "title": "Hợp đồng 24 tháng: [30 ngày]", "lead": "Mỗi tờ là một ngày của thời hạn báo trước.",
+      "n": 30,
+      "marks": [
+        { "emoji": "envelope", "head": "Ngày báo", "text": "Gửi thông báo nghỉ việc cho công ty" },
+        { "emoji": "office-worker", "head": "30 ngày", "text": "Vẫn đi làm, bàn giao công việc" },
+        { "emoji": "waving-hand", "head": "Nghỉ việc", "text": "Hết thời hạn báo trước: nghỉ đúng luật" }
+      ],
+      "source": "Điểm b khoản 1 Điều 35. Slide chỉ minh hoạ độ dài 30 ngày; cách tính ngày đầu và ngày cuối của thời hạn theo Bộ luật Dân sự, chưa nêu ở đây.",
+      "notes": "30 ô của cột giữa bay ra, mở thành 30 tờ lịch có số. Từng ngày được đánh dấu; tới tờ 30 màu đỏ là lúc được nghỉ."
+    },
+    {
+      "type": "cases", "id": "ngoai-le", "toc": "Bảy trường hợp nghỉ ngay",
+      "kicker": "Khoản 2", "title": "Bảy trường hợp [nghỉ ngay], không cần báo",
+      "items": [
+        { "k": "a", "emoji": "office-building", "text": "Không được bố trí đúng việc, đúng nơi, đủ điều kiện đã thoả thuận" },
+        { "k": "b", "emoji": "money-with-wings", "text": "Không được trả đủ lương hoặc trả không đúng hạn" },
+        { "k": "c", "emoji": "person-gesturing-no", "text": "Bị ngược đãi, đánh đập, nhục mạ; bị cưỡng bức lao động" },
+        { "k": "d", "emoji": "stop-sign", "text": "Bị quấy rối tình dục tại nơi làm việc" },
+        { "k": "đ", "emoji": "pregnant-woman", "text": "Lao động nữ mang thai phải nghỉ việc" },
+        { "k": "e", "emoji": "older-person", "text": "Đủ tuổi nghỉ hưu" },
+        { "k": "g", "emoji": "face-with-monocle", "text": "Người sử dụng lao động cung cấp thông tin không trung thực" }
+      ],
+      "big": { "value": "0", "label": "ngày báo trước" },
+      "source": "Rút gọn từ khoản 2 Điều 35. Điểm a, b, đ, e, g có điều kiện hoặc ngoại lệ kèm theo — đọc nguyên văn trước khi áp dụng.",
+      "notes": "Khoản 2 Điều 35: bảy trường hợp không cần báo trước. Các thẻ rơi xuống lần lượt."
+    },
+    {
+      "type": "chain", "id": "hau-qua", "toc": "Nghỉ ngang thì mất gì",
+      "kicker": "Hậu quả", "title": "Nghỉ ngang thì [mất gì?]",
+      "cause": { "tag": "Tình huống", "text": "Nghỉ không báo trước và không thuộc khoản 2" },
+      "emojis": ["person-walking", "door"],
+      "stamp": { "text": "Trái\npháp luật", "sub": "Điều 39" },
+      "results": [
+        { "emoji": "prohibited", "text": "Không được trợ cấp thôi việc", "ref": "Khoản 1 Điều 40" },
+        { "emoji": "dollar-banknote", "text": "Bồi thường nửa tháng tiền lương và tiền lương những ngày không báo trước", "ref": "Khoản 2 Điều 40" },
+        { "emoji": "graduation-cap", "text": "Hoàn trả chi phí đào tạo", "ref": "Khoản 3 Điều 40" }
+      ],
+      "source": "Điều 39, Điều 40 Bộ luật Lao động số 45/2019/QH14. Chi phí đào tạo: theo Điều 62.",
+      "notes": "Nghỉ không đúng Điều 35 là đơn phương chấm dứt trái pháp luật (Điều 39), kéo theo ba nghĩa vụ ở Điều 40."
+    },
+    {
+      "type": "quizgo", "id": "cau-hoi", "toc": "Câu hỏi nhanh",
+      "kicker": "Câu hỏi nhanh", "title": "Hợp đồng 24 tháng. Muốn nghỉ, báo trước [ít nhất] bao lâu?",
+      "options": [
+        { "text": "3 ngày làm việc" },
+        { "text": "30 ngày", "ok": true },
+        { "text": "45 ngày" },
+        { "text": "Không cần báo trước" }
+      ],
+      "wrong": { "title": "Chưa đúng", "hint": "Gợi ý: hợp đồng 24 tháng là hợp đồng xác định thời hạn từ 12 đến 36 tháng. Xem lại điểm b khoản 1 Điều 35.", "button": "Thử lại" },
+      "right": { "title": "Chính xác!", "text": "Hợp đồng xác định thời hạn từ 12 đến 36 tháng: báo trước ít nhất 30 ngày — điểm b khoản 1 Điều 35.", "button": "Tiếp tục" },
+      "next": "ket",
+      "notes": "Bấm thẳng vào một đáp án. Bấm chỗ khác không sang slide."
+    },
+    {
+      "type": "recap", "id": "ket", "toc": "Ghi nhớ và căn cứ",
+      "lines": ["Báo đủ ngày", "rồi hãy nghỉ"], "emoji": "tear-off-calendar", "emoji2": "check-mark-button",
+      "chips": [
+        { "n": "45 · 30 · 3", "text": "Số ngày báo trước, tuỳ loại hợp đồng (3 là ngày làm việc)", "go": "ba-muc" },
+        { "n": "7", "text": "trường hợp nghỉ ngay, không cần báo trước", "go": "ngoai-le" },
+        { "n": "3", "text": "nghĩa vụ nếu nghỉ trái pháp luật", "go": "hau-qua" }
+      ],
+      "basis": "Điều 35, Điều 39, Điều 40 Bộ luật Lao động số 45/2019/QH14, có hiệu lực từ 01/01/2021. Đây là thông tin pháp luật chung, không phải tư vấn cho trường hợp cụ thể.",
+      "buttons": [ { "text": "Mục lục", "go": "muc-luc" }, { "text": "Xem lại điều luật", "go": "dieu-luat" } ],
+      "notes": "Câu chốt, ba con số cần nhớ (bấm vào để xem lại) và căn cứ."
+    },
+    {
+      "type": "toc", "id": "muc-luc",
+      "title": "Mục lục — [bấm để nhảy tới]",
+      "notes": "Bấm vào ảnh nào thì nhảy tới slide đó."
+    }
+  ]
+}

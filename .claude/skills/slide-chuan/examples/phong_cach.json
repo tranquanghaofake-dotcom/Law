@@ -1,0 +1,166 @@
+{
+ "meta": {
+  "title": "Bảo vệ người thứ ba ngay tình khi giao dịch dân sự vô hiệu",
+  "short": "Bản án 142/2019/DS-PT",
+  "kind": "case",
+  "motif": "cadastral",
+  "style": "dossier",
+  "motifLabel": "Thửa 622 · tờ số 23"
+ },
+ "slides": [
+  {
+   "type": "cover",
+   "layout": "art",
+   "kicker": "Bình luận bản án",
+   "title": "Bảo vệ người thứ ba [ngay tình] khi giao dịch dân sự vô hiệu",
+   "subtitle": "Bản án 142/2019/DS-PT · TAND cấp cao tại Đà Nẵng",
+   "author": "Trần Diệu Diệu",
+   "date": "11/2026",
+   "notes": "Ghi chú thử."
+  },
+  {
+   "type": "agenda",
+   "kicker": "Phân tích",
+   "title": "Vụ án đặt ra [ba câu hỏi]",
+   "items": [
+    "Hợp đồng 2010 là mua bán hay vay?",
+    "Người mua có ngay tình?",
+    "Ngân hàng giữ GCN bị huỷ?"
+   ],
+   "notes": "Ghi chú thử."
+  },
+  {
+   "type": "section",
+   "num": "1",
+   "title": "Mua bán hay vay trá hình?",
+   "sub": "Ba dấu hiệu từ hồ sơ",
+   "notes": "Ghi chú thử."
+  },
+  {
+   "type": "evidence",
+   "title": "Không phải mua bán — mà là vay trá hình",
+   "quote": "Thực chất đây là giao dịch giả tạo",
+   "items": [
+    {
+     "head": "Chỉ 1 ngày",
+     "desc": "Ký chuyển nhượng sau khoản vay"
+    },
+    {
+     "head": "Vẫn ở trong nhà",
+     "desc": "Không bàn giao"
+    },
+    {
+     "head": "Bán để trả nợ",
+     "desc": "Văn bản 2013"
+    }
+   ],
+   "notes": "Ghi chú thử.",
+   "quoteBy": "TAND cấp cao tại Đà Nẵng"
+  },
+  {
+   "type": "section",
+   "num": "2",
+   "title": "Người mua có ngay tình?",
+   "sub": "Luật cũ và luật mới trả lời ngược nhau",
+   "notes": "Ghi chú thử."
+  },
+  {
+   "type": "compare",
+   "title": "Luật cũ và luật mới trả lời ngược nhau",
+   "left": {
+    "title": "BLDS 2005",
+    "value": "Người mua mất"
+   },
+   "right": {
+    "title": "BLDS 2015",
+    "value": "Người mua giữ"
+   },
+   "notes": "Ghi chú thử."
+  },
+  {
+   "type": "stats",
+   "title": "Ngân hàng đang giữ một GCN đã bị huỷ",
+   "items": [
+    {
+     "label": "Khoản vay",
+     "value": "500 tr"
+    },
+    {
+     "label": "GCN",
+     "value": "Huỷ"
+    }
+   ],
+   "notes": "Ghi chú thử."
+  },
+  {
+   "type": "section",
+   "num": "3",
+   "title": "Quyền của ngân hàng",
+   "sub": "GCN đã bị huỷ",
+   "notes": "Ghi chú thử."
+  },
+  {
+   "type": "stats",
+   "title": "Người mua khó chứng minh mình ngay tình",
+   "items": [
+    {
+     "label": "Ngày có GCN",
+     "value": "14"
+    },
+    {
+     "label": "Lần xem nhà",
+     "value": "0"
+    }
+   ],
+   "notes": "Ghi chú thử."
+  },
+  {
+   "type": "closing",
+   "kicker": "Kết luận",
+   "title": "Luật chỉ bảo vệ người [thật sự ngay tình]",
+   "verdict": "Đúng kết quả, thiếu lập luận chọn luật",
+   "answers": [
+    {
+     "q": "Mua hay vay",
+     "a": "Vay trá hình — HĐ 2010 vô hiệu"
+    },
+    {
+     "q": "Người mua",
+     "a": "Khó chứng minh ngay tình"
+    },
+    {
+     "q": "Ngân hàng",
+     "a": "Còn bỏ ngỏ"
+    }
+   ],
+   "rec": {
+    "title": "Kiến nghị",
+    "items": [
+     "Hướng dẫn kiểm tra thực tế tài sản"
+    ]
+   },
+   "notes": "Ghi chú thử."
+  },
+  {
+   "type": "end",
+   "title": "Cảm ơn thầy cô và các bạn",
+   "sub": "Hỏi đáp",
+   "team": [
+    {
+     "name": "Trần Diệu Diệu",
+     "role": "Thuyết trình"
+    },
+    {
+     "name": "Nguyễn Văn An",
+     "role": "Tìm tài liệu"
+    },
+    {
+     "name": "Lê Thu Hà",
+     "role": "Thiết kế slide"
+    }
+   ],
+   "contact": "nhom3@example.edu.vn",
+   "notes": "Ghi chú thử."
+  }
+ ]
+}

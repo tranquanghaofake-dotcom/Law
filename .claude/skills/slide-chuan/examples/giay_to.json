@@ -1,0 +1,432 @@
+{
+ "meta": {
+  "title": "Mười hai khối giấy tờ và ảnh dẫn chuyện",
+  "short": "Giấy tờ & ảnh"
+ },
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Deck kiểm thử",
+   "title": "Hoá đơn, sao kê, biên bản — [vật thật] lên slide",
+   "subtitle": "Số liệu trong deck này là GIẢ ĐỊNH để kiểm bố cục — không dùng làm dẫn chứng",
+   "author": "slide-chuan",
+   "notes": "Deck soát 12 bố cục: match, headline, lens, collage, sheet, calendar, riskbar, plan, receipt, account, captable, record."
+  },
+  {
+   "type": "match",
+   "kicker": "Điều 117 ↔ Điều 123–129 BLDS 2015",
+   "title": "Mỗi căn cứ vô hiệu là [mặt trái] của một điều kiện",
+   "colL": "Điều kiện có hiệu lực (Điều 117)",
+   "colR": "Căn cứ vô hiệu",
+   "pairs": [
+    {
+     "left": "Chủ thể có năng lực phù hợp",
+     "right": "Điều 125 · Năng lực hành vi"
+    },
+    {
+     "left": "Chủ thể có năng lực phù hợp",
+     "right": "Điều 128 · Không nhận thức, làm chủ hành vi"
+    },
+    {
+     "left": "Hoàn toàn tự nguyện",
+     "right": "Điều 126–127 · Nhầm lẫn, lừa dối, đe doạ"
+    },
+    {
+     "left": "Mục đích, nội dung hợp pháp",
+     "right": "Điều 123 · Điều cấm; Điều 124 · Giả tạo"
+    },
+    {
+     "left": "Hình thức (khi luật quy định)",
+     "right": "Điều 129 · Vi phạm hình thức",
+     "note": "Có ngoại lệ đã thực hiện 2/3 nghĩa vụ"
+    }
+   ],
+   "focus": 4,
+   "note": "Bộ luật Dân sự 91/2015/QH13 — kiểm lại nguyên văn trước khi dùng",
+   "notes": "match: hai hàng cùng vế trái gộp một ô."
+  },
+  {
+   "type": "headline",
+   "kicker": "Bước ngoặt",
+   "lines": [
+    "Có giấy chứng nhận",
+    "mà [chưa từng]",
+    "[được vào nhà]"
+   ],
+   "sub": "Ảnh bối cảnh tràn khung, một câu khẳng định duy nhất.",
+   "photo": "images/nha-co-nguoi-o.jpg",
+   "notes": "headline: tối đa 1–2 slide mỗi deck."
+  },
+  {
+   "type": "lens",
+   "kicker": "Chi tiết làm chứng",
+   "title": "Quần áo phơi nói lên [ai đang ở]",
+   "photo": "images/nha-co-nguoi-o.jpg",
+   "focus": {
+    "x": 0.62,
+    "y": 0.3,
+    "r": 0.16,
+    "label": "Quần áo phơi ở ban công"
+   },
+   "items": [
+    {
+     "head": "Sinh hoạt hằng ngày",
+     "text": "Dấu hiệu nhà đang có người sử dụng"
+    },
+    {
+     "head": "Việc cần làm",
+     "text": "Đến xem nhà, hỏi người đang ở trước khi mua"
+    }
+   ],
+   "note": "Ảnh minh hoạ",
+   "notes": "lens: một chi tiết được rọi sáng, phần còn lại tối đi."
+  },
+  {
+   "type": "collage",
+   "kicker": "Một cánh đồng, ba thời điểm",
+   "title": "Mùa gặt đi qua [trong ba tấm ảnh]",
+   "photos": [
+    {
+     "photo": "images/ruong-xanh.jpg",
+     "caption": "Lúa đang xanh"
+    },
+    {
+     "photo": "images/gat-lua.jpg",
+     "caption": "Ngày gặt"
+    },
+    {
+     "photo": "images/rom-ra.jpg",
+     "caption": "Rơm sau gặt"
+    }
+   ],
+   "items": [
+    {
+     "head": "Ảnh in chồng lên nhau",
+     "text": "Như trải ảnh trên bàn"
+    },
+    {
+     "head": "Tối đa ba ảnh",
+     "text": "Nhiều hơn thì dùng mosaic"
+    }
+   ],
+   "note": "Ảnh minh hoạ, không cùng một thửa",
+   "notes": "collage."
+  },
+  {
+   "type": "sheet",
+   "kicker": "Có năm nào giảm?",
+   "title": "Số người đóng chỉ [đi ngang] năm 2020",
+   "rows": [
+    {
+     "label": "2018",
+     "value": 14.7,
+     "display": "14,7",
+     "note": "Tăng đều"
+    },
+    {
+     "label": "2019",
+     "value": 15.2,
+     "display": "15,2",
+     "note": "Mức cao trước dịch"
+    },
+    {
+     "label": "2020",
+     "value": 15.1,
+     "display": "15,1",
+     "tone": "bad",
+     "focus": true,
+     "note": "Giãn cách, doanh nghiệp cắt giảm"
+    },
+    {
+     "label": "2021",
+     "value": 15.1,
+     "display": "15,1",
+     "note": "Đi ngang"
+    },
+    {
+     "label": "2022",
+     "value": 16.2,
+     "display": "16,2",
+     "note": "Phục hồi"
+    }
+   ],
+   "note": "Triệu người — số liệu giả định",
+   "notes": "sheet: mỗi dòng có lý do riêng."
+  },
+  {
+   "type": "calendar",
+   "kicker": "Báo trước bao lâu?",
+   "title": "Hợp đồng 12–36 tháng: báo trước [ít nhất 30 ngày]",
+   "month": "Tháng 7/2026",
+   "startDay": 3,
+   "days": 31,
+   "marks": [
+    {
+     "from": 1,
+     "to": 30,
+     "label": "Thời gian báo trước"
+    },
+    {
+     "from": 31,
+     "to": 31,
+     "label": "Ngày nghỉ việc",
+     "tone": "bad"
+    }
+   ],
+   "note": "Điểm b khoản 1 Điều 35 Bộ luật Lao động 45/2019/QH14 (hiệu lực 01/01/2021)",
+   "notes": "calendar: khoảng ngày tô màu là thời hạn."
+  },
+  {
+   "type": "riskbar",
+   "kicker": "Ai chịu tới đâu?",
+   "title": "Rủi ro sang người mua ở [chặng khác nhau]",
+   "stages": [
+    "Kho bên bán",
+    "Cảng đi",
+    "Lên tàu",
+    "Cảng đến",
+    "Kho bên mua"
+   ],
+   "rows": [
+    {
+     "label": "EXW",
+     "sub": "Giao tại xưởng",
+     "at": 1
+    },
+    {
+     "label": "FOB",
+     "sub": "Giao lên tàu",
+     "at": 3
+    },
+    {
+     "label": "CIF",
+     "sub": "Tiền hàng, bảo hiểm, cước",
+     "at": 3,
+     "pay": 4
+    },
+    {
+     "label": "DAP",
+     "sub": "Giao tại nơi đến",
+     "at": 5
+    }
+   ],
+   "legend": [
+    "Bên bán chịu rủi ro",
+    "Bên mua chịu rủi ro",
+    "Bên bán còn trả cước"
+   ],
+   "note": "Minh hoạ theo Incoterms 2020 — đối chiếu bản quy tắc trước khi dùng",
+   "notes": "riskbar."
+  },
+  {
+   "type": "plan",
+   "kicker": "Tách thửa được không?",
+   "title": "Phần lấn lộ giới [không được cấp giấy]",
+   "width": "6 m",
+   "height": "10 m",
+   "ratio": 0.8,
+   "zones": [
+    {
+     "label": "Lấn lộ giới",
+     "x": 0,
+     "y": 0,
+     "w": 1,
+     "h": 0.2,
+     "tone": "bad"
+    },
+    {
+     "label": "Nhà đang ở",
+     "x": 0.15,
+     "y": 0.35,
+     "w": 0.7,
+     "h": 0.45
+    }
+   ],
+   "items": [
+    {
+     "head": "Phần lấn",
+     "text": "Không tính vào diện tích xét cấp giấy"
+    },
+    {
+     "head": "Phần còn lại",
+     "text": "Xét điều kiện tách thửa theo quy định địa phương"
+    }
+   ],
+   "note": "Tình huống giả định",
+   "notes": "plan."
+  },
+  {
+   "type": "receipt",
+   "kicker": "Thuế cộng vào đâu?",
+   "title": "Thuế GTGT tính trên [giá chưa thuế]",
+   "head": "Hoá đơn minh hoạ",
+   "unit": "đồng",
+   "items": [
+    {
+     "label": "Bàn làm việc",
+     "display": "2.000.000"
+    },
+    {
+     "label": "Ghế xoay",
+     "display": "1.000.000"
+    },
+    {
+     "label": "Phí lắp đặt",
+     "display": "500.000",
+     "focus": true
+    }
+   ],
+   "sub": {
+    "label": "Cộng tiền hàng",
+    "display": "3.500.000"
+   },
+   "tax": {
+    "label": "Thuế suất 10%",
+    "display": "350.000"
+   },
+   "total": {
+    "label": "Tổng thanh toán",
+    "display": "3.850.000"
+   },
+   "points": [
+    {
+     "head": "Giá chưa thuế",
+     "text": "Là căn cứ tính thuế"
+    },
+    {
+     "head": "Phí lắp đặt",
+     "text": "Cũng nằm trong giá tính thuế"
+    }
+   ],
+   "note": "Số liệu giả định",
+   "notes": "receipt."
+  },
+  {
+   "type": "account",
+   "kicker": "Tiền đi đâu?",
+   "title": "Khoản trừ lớn nhất là [phí trả nợ trước hạn]",
+   "unit": "nghìn đồng",
+   "open": "50.000",
+   "close": "31.200",
+   "rows": [
+    {
+     "date": "01/03",
+     "desc": "Nhận lương",
+     "amount": 15000,
+     "balance": "65.000"
+    },
+    {
+     "date": "05/03",
+     "desc": "Trả nợ gốc",
+     "amount": -20000,
+     "balance": "45.000"
+    },
+    {
+     "date": "05/03",
+     "desc": "Phí trả nợ trước hạn",
+     "amount": -13000,
+     "balance": "32.000",
+     "focus": true
+    },
+    {
+     "date": "10/03",
+     "desc": "Phí dịch vụ",
+     "amount": -800,
+     "balance": "31.200"
+    }
+   ],
+   "note": "Số liệu giả định",
+   "notes": "account."
+  },
+  {
+   "type": "captable",
+   "kicker": "Nghị quyết cần bao nhiêu phiếu?",
+   "title": "Cổ đông A [một mình] thông qua được nghị quyết thường",
+   "company": "Công ty cổ phần X — mọi cổ đông đều dự họp và biểu quyết",
+   "holders": [
+    {
+     "name": "Cổ đông A",
+     "pct": 55,
+     "sub": "Sáng lập",
+     "focus": true
+    },
+    {
+     "name": "Cổ đông B",
+     "pct": 25
+    },
+    {
+     "name": "Cổ đông C",
+     "pct": 12
+    }
+   ],
+   "thresholds": [
+    {
+     "pct": 50,
+     "label": "Trên 50%: nghị quyết thường"
+    },
+    {
+     "pct": 65,
+     "label": "Từ 65%: nội dung ở khoản 1"
+    }
+   ],
+   "note": "Khoản 1, 2 Điều 148 Luật Doanh nghiệp 59/2020/QH14 — tỉ lệ tính trên phiếu của cổ đông dự họp và biểu quyết; Điều lệ có thể quy định tỉ lệ cụ thể",
+   "notes": "captable."
+  },
+  {
+   "type": "record",
+   "kicker": "Biên bản thiếu gì?",
+   "title": "Người vi phạm từ chối ký thì [phải ghi rõ lý do]",
+   "head": "BIÊN BẢN (MINH HOẠ)",
+   "fields": [
+    {
+     "label": "Thời gian",
+     "value": "9 giờ, ngày 12/3"
+    },
+    {
+     "label": "Địa điểm",
+     "value": "Trước số 10 đường A"
+    },
+    {
+     "label": "Hành vi",
+     "value": "Đỗ xe trên vỉa hè"
+    },
+    {
+     "label": "Lý do không ký",
+     "value": "Chưa ghi",
+     "tone": "bad"
+    }
+   ],
+   "signs": [
+    {
+     "role": "Người lập",
+     "state": "signed"
+    },
+    {
+     "role": "Người vi phạm",
+     "state": "refused"
+    },
+    {
+     "role": "Người chứng kiến",
+     "state": "absent"
+    }
+   ],
+   "points": [
+    {
+     "head": "Từ chối ký",
+     "text": "Biên bản phải ghi rõ lý do"
+    },
+    {
+     "head": "Chỗ để trống",
+     "text": "Là điểm dễ bị khiếu nại nhất"
+    }
+   ],
+   "note": "Tình huống giả định — kiểm lại Luật Xử lý vi phạm hành chính trước khi dùng",
+   "notes": "record."
+  },
+  {
+   "type": "end",
+   "title": "Hết phần kiểm thử",
+   "message": "Mỗi khối là một vật thật người học đã thấy ngoài đời."
+  }
+ ]
+}
