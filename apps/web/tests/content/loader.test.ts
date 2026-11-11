@@ -5,6 +5,7 @@ import {
   loadIndex,
   loadSet,
   loadSubject,
+  loadSubjects,
   loadTerms,
   loadSubjectConcepts,
 } from '$lib/content/loader';
@@ -38,15 +39,42 @@ describe('content/loader — mỗi file chỉ tải một lần', () => {
     expect(c).toBe(a);
   });
 
-  it('loadSubject theo khoá: cùng id gọi song song chỉ fetch 1 lần, id khác fetch riêng', async () => {
-    const f = mockFetch((url) => ({ id: url }));
+  it('loadSubject lấy từ file gộp subjects.json: 25 môn gọi song song chỉ fetch 1 lần', async () => {
+    const f = mockFetch(() => [{ id: 'hien-phap' }, { id: 'dan-su' }]);
     vi.stubGlobal('fetch', f);
-    await Promise.all([loadSubject('hien-phap'), loadSubject('hien-phap'), loadSubject('dan-su')]);
-    expect(f).toHaveBeenCalledTimes(2);
-    expect(f.mock.calls.map((c) => c[0])).toEqual([
-      '/content/subjects/hien-phap.json',
-      '/content/subjects/dan-su.json',
-    ]);
+    const [a, b, c] = await Promise.all([loadSubject('hien-phap'), loadSubject('hien-phap'), loadSubject('dan-su')]);
+    expect(f).toHaveBeenCalledTimes(1);
+    expect(f.mock.calls[0][0]).toBe('/content/subjects.json');
+    expect(a.id).toBe('hien-phap');
+    expect(b).toBe(a);
+    expect(c.id).toBe('dan-su');
+  });
+
+  it('loadSubjects trả mọi môn và dùng chung bộ nhớ với loadSubject', async () => {
+    const f = mockFetch(() => [{ id: 'hien-phap' }, { id: 'dan-su' }]);
+    vi.stubGlobal('fetch', f);
+    const all = await loadSubjects();
+    expect(all.map((s) => s.id)).toEqual(['hien-phap', 'dan-su']);
+    expect(await loadSubject('dan-su')).toBe(all[1]);
+    expect(f).toHaveBeenCalledTimes(1);
+  });
+
+  it('file gộp lỗi thì loadSubject quay về file lẻ của môn', async () => {
+    const f = mockFetch((url) => ({ id: url }), ['status']);
+    vi.stubGlobal('fetch', f);
+    const s = await loadSubject('hien-phap');
+    expect(f.mock.calls.map((c) => c[0])).toEqual(['/content/subjects.json', '/content/subjects/hien-phap.json']);
+    expect(s.id).toBe('/content/subjects/hien-phap.json');
+  });
+
+  it('môn không có trong file gộp: hỏi file lẻ, không có thì báo lỗi như trước', async () => {
+    const f = vi.fn(async (url: string) =>
+      url.endsWith('subjects.json')
+        ? { ok: true, status: 200, json: async () => [{ id: 'hien-phap' }] }
+        : { ok: false, status: 404, json: async () => ({}) },
+    );
+    vi.stubGlobal('fetch', f);
+    await expect(loadSubject('khong-co')).rejects.toThrow('Không tải được subjects/khong-co.json (404)');
   });
 
   it('loadTerms theo môn: gọi lặp chỉ fetch 1 lần', async () => {

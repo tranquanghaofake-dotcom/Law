@@ -275,11 +275,6 @@
     <SessionEnd summary={summary(run)} {sources} {record} retryTotal={summary(run).retried} {concepts} streak={ended.streak} streakEvent={ended.streakEvent} rankBefore={ended.rankBefore} rankAfter={ended.rankAfter} dueTomorrow={ended.dueTomorrow} dueNow={ended.dueNow} next={ended.nextDue} kind={lessonConcepts ? 'lesson' : 'review'} promotion={ended.promotion} onhome={() => go('home')} {onagain} {onnext} gate={lessonConcepts ? lessonGate(lessonConcepts, run.levels) : null} mistakes={mistakes(run)} />
   {:else if step && Card}
     <SessionBar done={barDone} total={barTotal} {title} combo={run.combo} xp={shownXp} {marks} {inRetry} onexit={openConfirm} />
-    {#if lessonId}<LessonStrip {concepts} levels={run.levels} current={hideCurrent ? '' : (step?.conceptId ?? '')} />{/if}
-    {#if showHint}
-      <!-- Một dòng (không phải hộp): thẻ học vẫn ở màn đầu trên điện thoại -->
-      <p class="session-hint small"><Glyph name="flame" size={16} /> <span>Mẹo: trả lời đúng liên tiếp để <b>giữ lửa chuỗi</b> và nhận XP nhân thêm; sai thì chuỗi về 0, điểm đã có vẫn giữ.</span><button class="hint-x" type="button" aria-label="Ẩn gợi ý" onclick={dismissHint}><Glyph name="close" size={16} /></button></p>
-    {/if}
     {#if confirmExit}
       <div class="card confirm" role="dialog" aria-label="Thoát phiên">
         <p>Thoát, giữ tiến độ? Những câu đã trả lời đã được lưu.</p>
@@ -298,6 +293,12 @@
       {#if result}
         <Feedback {result} item={step.item} {concept} {confusableTerms} confusables={confusableConcepts} {compareWith} onnext={runNextStep} onspeak={speak} last={isLast(run)} xp={reward.xp} golden={reward.golden} levelTo={reward.levelTo} retry={reward.retry} />
       {/if}
+    <!-- Hướng B, đợt 1: dải khái niệm của đợt và dòng mẹo nằm DƯỚI câu hỏi — là bối cảnh, không phải việc đang làm (trước đây đẩy câu hỏi xuống 31% màn hình). -->
+    {#if lessonId}<LessonStrip {concepts} levels={run.levels} current={hideCurrent ? '' : (step?.conceptId ?? '')} />{/if}
+    {#if showHint}
+      <!-- Một dòng (không phải hộp): thẻ học vẫn ở màn đầu trên điện thoại -->
+      <p class="session-hint small"><Glyph name="flame" size={16} /> <span>Mẹo: trả lời đúng liên tiếp để <b>giữ lửa chuỗi</b> và nhận XP nhân thêm; sai thì chuỗi về 0, điểm đã có vẫn giữ.</span><button class="hint-x" type="button" aria-label="Ẩn gợi ý" onclick={dismissHint}><Glyph name="close" size={16} /></button></p>
+    {/if}
   {/if}
 </div>
 {#if !ended}

@@ -30,8 +30,15 @@ export function clearContentCache(): void {
 
 export const loadIndex = (): Promise<ContentIndex> => once('index', () => getJson<ContentIndex>('index.json'));
 
+/** Mọi môn trong 1 file (dist/subjects.json): Hôm nay, Môn học, thanh bên đều cần đủ các môn — 1 request thay vì 25. */
+export const loadSubjects = (): Promise<Subject[]> => once('subjects', () => getJson<Subject[]>('subjects.json'));
+
+/** Một môn: lấy từ file gộp; file gộp lỗi hoặc không có môn này thì hỏi file lẻ của môn (không có thì báo lỗi như trước). */
 export const loadSubject = (id: string): Promise<Subject> =>
-  once(`subject:${id}`, () => getJson<Subject>(`subjects/${encodeURIComponent(id)}.json`));
+  once(`subject:${id}`, async () => {
+    const all = await loadSubjects().catch(() => null);
+    return all?.find((s) => s.id === id) ?? getJson<Subject>(`subjects/${encodeURIComponent(id)}.json`);
+  });
 
 export const loadSet = (id: string): Promise<QuizSet> =>
   once(`set:${id}`, () => getJson<QuizSet>(`sets/${encodeURIComponent(id)}.json`));
