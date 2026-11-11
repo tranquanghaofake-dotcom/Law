@@ -1,3 +1,14 @@
+/* Font tự host — dựng bằng tools/fonts/build.py từ bản gốc OFL (giấy phép: fonts/LICENSE.txt).
+   Mỗi độ đậm một file gộp nhóm ký tự Latin + tiếng Việt, cùng máy chủ với web: không còn 16 file và 1 CSS chặn hiển thị từ Google Fonts. */
+@font-face { font-family: "Be Vietnam Pro"; font-style: normal; font-weight: 400; font-display: swap; src: url("./fonts/be-vietnam-pro-400.woff2") format("woff2"); }
+@font-face { font-family: "Be Vietnam Pro"; font-style: normal; font-weight: 500; font-display: swap; src: url("./fonts/be-vietnam-pro-500.woff2") format("woff2"); }
+@font-face { font-family: "Be Vietnam Pro"; font-style: normal; font-weight: 600; font-display: swap; src: url("./fonts/be-vietnam-pro-600.woff2") format("woff2"); }
+@font-face { font-family: "Be Vietnam Pro"; font-style: normal; font-weight: 700; font-display: swap; src: url("./fonts/be-vietnam-pro-700.woff2") format("woff2"); }
+@font-face { font-family: "Be Vietnam Pro"; font-style: normal; font-weight: 800; font-display: swap; src: url("./fonts/be-vietnam-pro-800.woff2") format("woff2"); }
+@font-face { font-family: "Noto Serif"; font-style: normal; font-weight: 400 600; font-display: swap; src: url("./fonts/noto-serif-400-600.woff2") format("woff2"); }
+@font-face { font-family: "Noto Serif"; font-style: italic; font-weight: 400; font-display: swap; src: url("./fonts/noto-serif-italic-400.woff2") format("woff2"); }
+@font-face { font-family: "Noto Serif Display"; font-style: normal; font-weight: 700 800; font-display: swap; src: url("./fonts/noto-serif-display-700-800.woff2") format("woff2"); }
+
 /* Token thiết kế — "Văn Miếu hiện đại": giấy dó, mực tàu, son đỏ. Chi tiết layout thêm ở Task 7. */
 :root {
   color-scheme: light; /* đợt 7: bỏ hẳn chế độ tối theo yêu cầu của Hào — chỉ một bảng màu sáng */

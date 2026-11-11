@@ -67,3 +67,16 @@ describe('buildContent — gói khái niệm theo môn (đợt 4 audit, HT12)', 
     expect(bundle.map((c) => c.id).sort()).toEqual(['a', 'b']);
   });
 });
+
+describe('buildContent — mọi môn trong một file (tải trang chủ 1 request thay vì 25)', () => {
+  it('dist/subjects.json chứa đủ môn hợp lệ, cùng nội dung với file lẻ', () => {
+    const root = fixture();
+    writeFileSync(join(root, 'subjects', 'zz.json'), '{ hỏng');
+    const out = mkdtempSync(join(tmpdir(), 'll-dist-'));
+    buildContent(root, out);
+    const all = JSON.parse(readFileSync(join(out, 'subjects.json'), 'utf8')) as Array<{ id: string }>;
+    // zz.json hỏng JSON → không có trong file gộp
+    expect(all.map((s) => s.id)).toEqual(['hp']);
+    expect(all[0]).toEqual(JSON.parse(readFileSync(join(out, 'subjects', 'hp.json'), 'utf8')));
+  });
+});

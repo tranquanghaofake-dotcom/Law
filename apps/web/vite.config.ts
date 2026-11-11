@@ -32,13 +32,15 @@ export default defineConfig({
         ],
       },
       workbox: {
-        // Nội dung nhỏ (~165 kB: index + môn + bảng tên) precache để mở Hôm nay/Môn học/trang môn offline ngay lần đầu.
+        // Nội dung nhỏ (~165 kB: index + file gộp môn + bảng tên) precache để mở Hôm nay/Môn học/trang môn offline ngay lần đầu.
         globPatterns: [
           '**/*.{js,css,html,svg,png,webp,ogg,woff2}',
           'content/index.json',
-          'content/subjects/*.json',
+          'content/subjects.json',
           'content/terms/*.json',
         ],
+        // Ảnh xem trước khi chia sẻ link chỉ dành cho mạng xã hội đọc, app không dùng: không precache.
+        globIgnores: ['og.png'],
         runtimeCaching: [
           // Khái niệm (3,6 MB) và bộ đề: đặt TRƯỚC luật chung bên dưới (workbox khớp theo thứ tự).
           // Giọng đọc dựng sẵn (tools/tts): không precache (~100 MB), nghe tới đâu lưu tới đó.
@@ -49,7 +51,6 @@ export default defineConfig({
           // Gói khái niệm theo môn (vài trăm KB/môn): cache riêng để không đẩy khái niệm lẻ của bài học ra khỏi LRU.
           { urlPattern: /\/content\/bundles\/.*\.json$/, handler: 'StaleWhileRevalidate', options: { cacheName: 'content-bundles', expiration: { maxEntries: 30 } } },
           { urlPattern: /\/content\/.*\.json$/, handler: 'StaleWhileRevalidate', options: { cacheName: 'content' } },
-          { urlPattern: /^https:\/\/fonts\.(googleapis|gstatic)\.com\//, handler: 'CacheFirst', options: { cacheName: 'fonts', expiration: { maxEntries: 20, maxAgeSeconds: 60 * 60 * 24 * 365 } } },
         ],
       },
     }),

@@ -106,6 +106,8 @@ export function buildContent(root: string, outDir: string = root): { errors: str
     const all = [...(concepts.get(s.id) ?? new Map<string, Concept>()).values()];
     writeFileSync(join(outDir, 'bundles', `${s.id}.json`), JSON.stringify(all) + '\n', 'utf8');
   }
+  // dist/subjects.json: mọi môn hợp lệ trong 1 file — Hôm nay, Môn học và thanh bên cần đủ các môn, tải 1 request thay vì mỗi môn một request.
+  if (outDir !== root) writeFileSync(join(outDir, 'subjects.json'), JSON.stringify(subjects) + '\n', 'utf8');
   writeFileSync(join(outDir, 'index.json'), JSON.stringify(index, null, 1) + '\n', 'utf8');
   return { errors, index };
 }
