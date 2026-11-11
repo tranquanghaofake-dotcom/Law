@@ -13,7 +13,7 @@ export function reducedMotion(): boolean {
 
 function colors(): string[] {
   const css = getComputedStyle(document.documentElement);
-  return [css.getPropertyValue('--accent').trim() || '#d97a1e', css.getPropertyValue('--seal').trim() || '#b3261e', '#f2c14e'];
+  return [css.getPropertyValue('--accent').trim() || '#f6b93b', css.getPropertyValue('--seal').trim() || '#b3261e', '#f2c14e'];
 }
 
 export function burst(kind: 'small' | 'levelup' | 'rankup'): void {

@@ -1,6 +1,6 @@
 # Kế hoạch đột phá đồ hoạ và UX — Luyện Luật
 
-Ngày 11/11/2026 · trạng thái: **chờ Hào duyệt** · tài liệu này chỉ là kế hoạch, chưa sửa dòng code nào.
+Ngày 11/11/2026 · trạng thái: **Hào đã duyệt hướng B ngày 11/11** (cho vẽ lại Hồ sơ; font Anton do Claude chọn; câu 3 ở mục 7 chưa trả lời). Đã làm: nền móng màu và chữ, phần đầu đợt 1 — xem `docs/specs/2026-11-11-giay-va-san-khau-design.md`. Đợt 0 (ảnh thử A/B) bỏ vì hướng đã được chọn.
 Cách làm: chụp và đo bản build thật (32 ảnh, 390 và 1280 px, đi hết 5 phiên học), đọc lại các quyết định thiết kế đã chốt, đọc nguồn tham khảo bên ngoài và repo mã nguồn mở.
 
 ## 0. Kết luận trước

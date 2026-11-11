@@ -33,7 +33,6 @@ JOBS = [
     ("BeVietnamPro-ExtraBold.ttf", "be-vietnam-pro-800.woff2", None),
     ("NotoSerif[wdth,wght].ttf", "noto-serif-400-600.woff2", {"wdth": 100, "wght": (400, 600)}),
     ("NotoSerif-Italic[wdth,wght].ttf", "noto-serif-italic-400.woff2", {"wdth": 100, "wght": 400}),
-    ("NotoSerifDisplay[wdth,wght].ttf", "noto-serif-display-700-800.woff2", {"wdth": 100, "wght": (700, 800)}),
 ]
 
 

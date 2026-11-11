@@ -71,5 +71,5 @@
   .nd-step { margin: var(--sp-3) 0 var(--sp-2); }
   .nd-pt { white-space: nowrap; }
   .nd-score { margin: var(--sp-3) 0 0; padding: var(--sp-2) var(--sp-3); border-radius: var(--r-sm, 8px); background: color-mix(in srgb, var(--accent) 10%, var(--paper)); }
-  :global(.opt.picked) { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, var(--paper)); }
+  :global(.opt.picked) { border-color: var(--accent-line); background: color-mix(in srgb, var(--accent) 12%, var(--paper)); }
 </style>
