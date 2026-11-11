@@ -1,6 +1,6 @@
 ---
 name: khoa-luan-luat
-description: Use when a Vietnamese law student brings a research topic (or only a vague area of law) and wants to build a tiểu luận, khóa luận tốt nghiệp, chuyên đề tốt nghiệp, or đề tài nghiên cứu khoa học sinh viên (NCKH, báo cáo tổng kết đề tài) — including dự thi Euréka, Giải thưởng KHCN sinh viên Bộ GD&ĐT, or cấp trường/cấp tỉnh — at any stage: chọn/thẩm định đề tài, tổng quan tình hình nghiên cứu, đề cương, phương pháp nghiên cứu luật học, viết khóa luận, kiến nghị hoàn thiện pháp luật, phản biện, bảo vệ, slide bảo vệ, or fixing trích dẫn/footnote/tài liệu tham khảo/đạo văn. Also matches unaccented requests (khoa luan, tieu luan, nckh, de cuong).
+description: "Use when a Vietnamese law student brings a research topic (or only a vague area of law) and wants to build a tiểu luận, khóa luận tốt nghiệp, chuyên đề tốt nghiệp, or đề tài nghiên cứu khoa học sinh viên (NCKH, báo cáo tổng kết đề tài) — including dự thi Euréka, Giải thưởng KHCN sinh viên Bộ GD&ĐT, or cấp trường/cấp tỉnh — at any stage: chọn/thẩm định đề tài, tổng quan tình hình nghiên cứu, đề cương, phương pháp nghiên cứu luật học, viết khóa luận, kiến nghị hoàn thiện pháp luật, phản biện, bảo vệ, slide bảo vệ, or fixing trích dẫn/footnote/tài liệu tham khảo/đạo văn. Also matches unaccented requests (khoa luan, tieu luan, nckh, de cuong)."
 ---
 
 # Khóa luận · NCKH luật — từ đề tài đến bảo vệ
@@ -62,8 +62,10 @@ nhat-ky-ai.md
 Mở lại phiên: đọc `00-ho-so.md` (phần NHẬT KÝ PHIÊN) trước, làm tiếp từ pha chưa qua cổng.
 
 ## Người dùng đã có bản nháp
-Chỉ cần sửa trích dẫn, footnote, danh mục: đọc `references/trinh-bay-trich-dan.md`, chạy script, sửa; không dựng lại hồ sơ. Còn lại:
-Không viết lại ngay. (1) Đọc toàn bộ (file .docx thì đọc bằng skill docx nếu có, giữ nguyên bản gốc). (2) Dựng lại `00-ho-so.md`, `05-nguon/van-ban.md`, `05-nguon/nguyen-van.md` từ chính bản nháp. (3) Chạy `kiem_tra_ban_thao.py` và lập **bảng luận điểm → bằng chứng** (pha 7). (4) Xác định bản nháp đã qua cổng pha nào, cổng nào còn hở; báo người dùng theo thứ tự ảnh hưởng lên điểm. (5) Người dùng chọn phạm vi sửa rồi mới sửa, sửa tại chỗ.
+
+**Chỉ cần sửa trích dẫn, footnote, danh mục:** đọc `references/trinh-bay-trich-dan.md`, chạy `scripts/kiem_tra_ban_thao.py`, sửa; không dựng lại hồ sơ.
+
+**Mọi trường hợp khác:** không viết lại ngay. (1) Đọc toàn bộ (file .docx thì đọc bằng skill docx nếu có, giữ nguyên bản gốc). (2) Dựng lại `00-ho-so.md`, `05-nguon/van-ban.md`, `05-nguon/nguyen-van.md` từ chính bản nháp. (3) Chạy `kiem_tra_ban_thao.py` và lập **bảng luận điểm → bằng chứng** (pha 7). (4) Xác định bản nháp đã qua cổng pha nào, cổng nào còn hở; báo người dùng theo thứ tự ảnh hưởng lên điểm. (5) Người dùng chọn phạm vi sửa rồi mới sửa, sửa tại chỗ.
 
 ## Quy trình 9 pha
 
@@ -98,14 +100,14 @@ Cổng: mọi VBQPPL trong đề cương có dòng trong bảng hiệu lực; m�
 
 ### Pha 6 — Viết từng chương
 Làm: một chương một lần, 2 bước: (a) **dàn ý luận điểm**, mỗi câu ghi bằng chứng sẽ dùng, người dùng duyệt ("tiếp tục" ở bước này chỉ là duyệt dàn ý); (b) viết văn. Chuỗi mỗi luận điểm: **Vấn đề → Quy định (nguyên văn) → Quan điểm khoa học → Thực tiễn → Đánh giá theo khung lý thuyết → (nếu có) Kiến nghị.** Chương thực trạng chia ưu điểm / hạn chế / nguyên nhân. Bắt buộc theo `references/viet-chuong.md` mục 2: diễn đạt đúng phạm vi, xét hiệu lực lệch, định dạng hạn chế, **kiểm phản chứng**, kiến nghị đủ 6 yêu cầu (a)–(f) kèm bảng phủ, cách ghi câu chữ đề xuất.
-Cổng mỗi chương: `python3 scripts/kiem_tra_ban_thao.py <chương> <phụ lục> <chương thực trạng nếu đang viết kiến nghị> --nguyen-van 05-nguon/nguyen-van.md --van-ban 05-nguon/van-ban.md [--trang N]` thoát mã 0 (không còn CHẶN, NẶNG; bảng mã lỗi ở `viet-chuong.md` mục 3); người dùng duyệt.
+Cổng mỗi chương: `python3 scripts/kiem_tra_ban_thao.py <chương> <phụ lục> <chương thực trạng nếu đang viết kiến nghị> --nguyen-van 05-nguon/nguyen-van.md --van-ban 05-nguon/van-ban.md [--trang N]` thoát mã 0 (không còn CHẶN, NẶNG; bảng mã lỗi ở `viet-chuong.md` mục 3); phiên có skill `vn-legal-exam-analysis` thì chạy thêm `kiem_can_cu.py <chương>` (trong thư mục `scripts/` của skill đó) — máy đối chiếu từng điều, khoản, điểm được dẫn với kho luật nguyên văn; dòng ✗ phải sửa, dòng ⚠ soát tay; người dùng duyệt.
 
 ### Pha 7 — Phản biện giả lập hội đồng
 Làm: 3 vai đọc toàn bài: (1) phản biện học thuật; (2) người làm thực tiễn; (3) thư ký chấm theo **đúng khung** của cuộc thi hoặc trường (`references/tieu-chi-cham.md`). Trước khi chấm, lập bảng luận điểm → bằng chứng; mỗi góp ý đủ 5 phần và tiêu chí đóng (`references/phan-bien-hoi-dong.md`). Người dùng cho phép thì chạy mỗi vai bằng một subagent cách ly theo khuôn brief trong file đó; không thì tự chấm, phần chưa viết chấm 0 và ghi "trần nếu hoàn thành". Tự chấm thường cao hơn điểm độc lập 15–30 điểm (`vi-du/README.md`).
 Cổng: mọi lỗi CHẶN đã sửa; mỗi tiêu chí ≥ 70% điểm tối đa, **trừ tiêu chí công bố** (chấm riêng theo tiến độ công bố); dự giải Bộ: tổng **≥ 85 theo điểm độc lập** (TT 45/2020, Điều 13, khoản 3); khóa luận: theo phiếu của trường. Không đạt thì người dùng xác nhận chấp nhận rủi ro.
 
 ### Pha 8 — Hoàn thiện, nộp, bảo vệ
-Làm: chuẩn hóa footnote, danh mục (`references/trinh-bay-trich-dan.md`); câu chữ đề xuất đổi sang dạng `> Đề xuất: "…"`; kiểm hình thức, ẩn danh; tóm tắt; 15–20 câu hỏi bảo vệ; khung slide (skill `slide-chuan` nếu có). Xuất Word bằng skill docx nếu có, mở lại kiểm footnote, mục lục, số trang. Góp ý của GVHD, phản biện, hội đồng: bảng giải trình `09-giai-trinh.md` (khuôn trong `phan-bien-hoi-dong.md`), không bỏ góp ý nào.
+Làm: chuẩn hóa footnote, danh mục (`references/trinh-bay-trich-dan.md`); câu chữ đề xuất đổi sang dạng `> Đề xuất: "…"`; kiểm hình thức, ẩn danh; tóm tắt; 15–20 câu hỏi bảo vệ; khung slide (skill `slide-chuan` nếu có). Xuất Word: `python3 scripts/xuat_word.py 06-chuong-*.md -o <tên>.docx` (đúng hình thức trang mặc định, footnote tự động; Euréka thêm `--so-trang tren --an-danh`; quy định trường khác thì đổi tham số, xem `--help`); thiếu pandoc thì dựng bằng skill docx theo thông số script in ra. Mở lại kiểm footnote, mục lục, số trang. Góp ý của GVHD, phản biện, hội đồng: bảng giải trình `09-giai-trinh.md` (khuôn trong `phan-bien-hoi-dong.md`), không bỏ góp ý nào.
 Cổng: `kiem_tra_ban_thao.py <mọi file> --nop [--an-danh "<tên>,<trường>"] --nguyen-van … --van-ban …` thoát mã 0, mỗi lỗi NHẸ còn lại có lý do; checklist nộp trong `08-hoan-thien.md` đủ; `nhat-ky-ai.md` cập nhật.
 
 ## Tra nhanh
@@ -122,6 +124,8 @@ Cổng: `kiem_tra_ban_thao.py <mọi file> --nop [--an-danh "<tên>,<trường>"
 | Nhật ký AI, quy tắc diễn đạt lại, đạo văn | `references/liem-chinh-ai.md` |
 | Viết chương, kiểm nguồn, kiến nghị (a)–(f), bảng mã lỗi script | `references/viet-chuong.md` |
 | Kiểm bản nháp tự động | `python3 scripts/kiem_tra_ban_thao.py --help` |
+| Xuất file Word đúng hình thức trang | `python3 scripts/xuat_word.py --help` |
+| Kiểm cấu trúc chính skill này sau khi sửa | `python3 scripts/kiem_tra_skill.py` |
 | Ví dụ đã chạy (6 đề, điểm tự chấm và độc lập, bài học) | `vi-du/README.md` |
 
 ## Công cụ, nếu phiên có
@@ -129,7 +133,7 @@ Cổng: `kiem_tra_ban_thao.py <mọi file> --nop [--an-danh "<tên>,<trường>"
 - Tìm web (WebSearch, Parallel/Firecrawl search): tìm công trình gần nhất và văn bản. Ưu tiên vbpl.vn, cổng toaan.gov.vn, tạp chí có ISSN.
 - `Legal_Data_Hunter` MCP: luật và án nước ngoài cho phần so sánh (EU, Mỹ, Pháp, Singapore…).
 - Firecrawl research, Google Scholar, SSRN: bài báo tiếng Anh.
-- Skill `docx`: xuất file Word đúng định dạng ở pha 8.
+- Skill `docx`: dự phòng khi `scripts/xuat_word.py` không chạy được (thiếu pandoc), và để dựng bìa, phụ bìa, lời cam đoan.
 
 Không có công cụ tìm kiếm thì nói rõ: mọi nguồn ở pha 2 và pha 5 là `[CẦN KIỂM]`, người dùng phải tự tra.
 

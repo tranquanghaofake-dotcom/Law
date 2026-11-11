@@ -19,7 +19,15 @@ def main():
     if not m:
         loi.append("thiếu frontmatter YAML")
     else:
-        fm = dict(re.findall(r"^(\w+):\s*(.+)$", m.group(1), re.M))
+        fm = {}
+        for khoa, gt in re.findall(r"^([\w-]+):\s*(.+)$", m.group(1), re.M):
+            gt = gt.strip()
+            if len(gt) >= 2 and gt[0] == gt[-1] and gt[0] in "\"'":
+                gt = gt[1:-1].replace('\\"', '"')
+            elif re.search(r":\s", gt):
+                # YAML chuẩn (và claude.ai khi tải skill lên) không đọc được giá trị trần có ": "
+                loi.append(f"{khoa}: giá trị chứa ': ' phải đặt trong ngoặc kép")
+            fm[khoa] = gt
         ten, mo_ta = fm.get("name", ""), fm.get("description", "")
         if not re.fullmatch(r"[a-z0-9-]{1,64}", ten):
             loi.append(f"name không hợp lệ: {ten!r}")
@@ -45,6 +53,10 @@ def main():
     for ten_tep in os.listdir(os.path.join(GOC, "references")):
         if f"references/{ten_tep}" not in tham_chieu:
             loi.append(f"references/{ten_tep} không được SKILL.md trỏ tới")
+
+    for thu_muc, _, tep in os.walk(GOC):
+        if "__pycache__" in thu_muc or any(t.endswith(".pyc") for t in tep):
+            loi.append(f"file rác trong gói: {os.path.relpath(thu_muc, GOC)}")
 
     print(f"SKILL.md: {so_dong} dòng · {so_chu} chữ · {len(tham_chieu)} tham chiếu")
     for l in loi:

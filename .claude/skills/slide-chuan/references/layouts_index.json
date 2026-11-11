@@ -1,0 +1,673 @@
+{
+ "meta": {
+  "grammar": "Mỗi mục là LUẬT CHỌN, không phải mô tả: pick = chọn khi …; skip = bỏ qua khi … → alt = loại thay thế. Học từ charts_index của hugohe3/ppt-master (MIT).",
+  "groups": {
+   "mo-ket": "Mở – kết bài",
+   "cau-truc": "Cấu trúc ý",
+   "so-sanh": "So sánh",
+   "so-lieu": "Số liệu",
+   "quy-trinh": "Quy trình – thời gian",
+   "phap-ly": "Lập luận pháp lý",
+   "bai-giang": "Bài giảng – luyện tập",
+   "anh": "Ảnh thật"
+  }
+ },
+ "types": {
+  "cover": {
+   "group": "mo-ket",
+   "pick": "Slide đầu: tên đề tài, người trình bày, ngày",
+   "skip": "Không bao giờ bỏ — mọi deck đều có bìa",
+   "alt": []
+  },
+  "statement": {
+   "group": "mo-ket",
+   "pick": "Ngay sau bìa: nêu nghịch lý / ý cốt lõi bằng 1–3 con số",
+   "skip": "Câu hỏi pháp lý (để ở agenda); nhiều hơn 3 số",
+   "alt": [
+    "stats",
+    "agenda"
+   ]
+  },
+  "agenda": {
+   "group": "mo-ket",
+   "pick": "Liệt kê 2–4 câu hỏi / phần của bài, khớp số section",
+   "skip": "Hơn 4 phần → gộp phần",
+   "alt": [
+    "section"
+   ]
+  },
+  "section": {
+   "group": "mo-ket",
+   "pick": "Mở mỗi phần khi bài ≥ 2 phần (có bản đồ chương)",
+   "skip": "Bài chỉ 1 phần",
+   "alt": []
+  },
+  "closing": {
+   "group": "mo-ket",
+   "pick": "Trả lời TỪNG câu của agenda + nhận định + kiến nghị",
+   "skip": "Bài học cho các bên (đặt ở cards trước đó)",
+   "alt": [
+    "cards"
+   ]
+  },
+  "end": {
+   "group": "mo-ket",
+   "pick": "Slide cuối: hỏi đáp, nhóm thực hiện, liên hệ",
+   "skip": "Lời cảm ơn nhét vào closing",
+   "alt": []
+  },
+  "cards": {
+   "group": "cau-truc",
+   "pick": "3–4 bên / yếu tố ngang hàng, mỗi cái một mô tả ngắn",
+   "skip": "Có thứ tự (steps) hoặc thứ bậc (pyramid); 2 bên đối lập (compare)",
+   "alt": [
+    "steps",
+    "pyramid",
+    "compare",
+    "bento"
+   ]
+  },
+  "bento": {
+   "group": "cau-truc",
+   "pick": "Một chủ đề nhiều mặt: 1 thẻ chính (kết luận / số then chốt) + 2–4 thẻ phụ khác cỡ",
+   "skip": "Các mặt ngang hàng, cùng cỡ (cards); chỉ số liệu (stats)",
+   "alt": [
+    "cards",
+    "stats"
+   ]
+  },
+  "panelrows": {
+   "group": "cau-truc",
+   "pick": "Một đối tượng (giấy tờ, tài sản) nhìn từ 2–3 góc độ pháp lý",
+   "skip": "Nhiều đối tượng (cards)",
+   "alt": [
+    "cards"
+   ]
+  },
+  "pyramid": {
+   "group": "cau-truc",
+   "pick": "Thứ bậc thật: văn bản QPPL, cấp toà, thứ tự ưu tiên (3–5 tầng)",
+   "skip": "Các tầng ngang hàng (cards)",
+   "alt": [
+    "cards",
+    "steps"
+   ]
+  },
+  "matrix": {
+   "group": "cau-truc",
+   "pick": "Kết quả phụ thuộc HAI tiêu chí cùng lúc (2×2)",
+   "skip": "Một trục không quyết định gì (compare / tree)",
+   "alt": [
+    "tree",
+    "compare"
+   ]
+  },
+  "venn": {
+   "group": "cau-truc",
+   "pick": "Hai chế định có phần chung và phần riêng",
+   "skip": "Không có điểm chung (compare)",
+   "alt": [
+    "compare",
+    "duel"
+   ]
+  },
+  "tree": {
+   "group": "cau-truc",
+   "pick": "'Nếu … thì …': hệ quả khác theo điều kiện (2–3 nhánh)",
+   "skip": "Điều kiện phải thoả đồng thời (checklist)",
+   "alt": [
+    "checklist",
+    "matrix"
+   ]
+  },
+  "cheatsheet": {
+   "group": "cau-truc",
+   "pick": "Bảng ôn: 3–5 đối tượng × 2–3 câu hỏi cố định (ai / khi nào / bao nhiêu)",
+   "skip": "Cần con số chính xác nhiều cột (table)",
+   "alt": [
+    "table",
+    "cards"
+   ]
+  },
+  "journey": {
+   "group": "cau-truc",
+   "pick": "Một người / hồ sơ đi qua 3–6 sự kiện, mỗi sự kiện gắn một chế độ / chế định",
+   "skip": "Mốc có ngày chính xác (scene / chart span)",
+   "alt": [
+    "timeline",
+    "scene",
+    "steps"
+   ]
+  },
+  "compare": {
+   "group": "so-sanh",
+   "pick": "Hai quy định / phương án đối lập, một bên đang áp dụng",
+   "skip": "Có điểm chung đáng nói (venn); ≥ 3 quy định (changelog / table)",
+   "alt": [
+    "venn",
+    "duel",
+    "changelog"
+   ]
+  },
+  "duel": {
+   "group": "so-sanh",
+   "pick": "Hai cấp xử / hai phía, mỗi bên ≤ 4 ý",
+   "skip": "Chỉ một con số mỗi bên (compare)",
+   "alt": [
+    "compare"
+   ]
+  },
+  "fork": {
+   "group": "so-sanh",
+   "pick": "Một quy định có hai cách hiểu",
+   "skip": "Hai quy định khác nhau (compare)",
+   "alt": [
+    "compare"
+   ]
+  },
+  "changelog": {
+   "group": "so-sanh",
+   "pick": "Luật cũ → luật mới theo 2–6 quy định, nhãn Mới / Đổi / Bỏ / Giữ",
+   "skip": "Một thay đổi (compare)",
+   "alt": [
+    "compare",
+    "table"
+   ]
+  },
+  "scorecard": {
+   "group": "so-sanh",
+   "pick": "Tổng kết được / chưa được của một bản án, chính sách",
+   "skip": "Kiểm điều kiện có kết luận (checklist)",
+   "alt": [
+    "checklist"
+   ]
+  },
+  "beforeafter": {
+   "group": "so-sanh",
+   "pick": "Cùng đối tượng ở hai thời điểm, có 2 ảnh",
+   "skip": "Không có ảnh (compare / chart slope)",
+   "alt": [
+    "compare",
+    "chart"
+   ]
+  },
+  "stats": {
+   "group": "so-lieu",
+   "pick": "2–4 con số độc lập cùng tầm quan trọng",
+   "skip": "Một số quyết định (bignum); có quan hệ cộng/trừ (chart waterfall)",
+   "alt": [
+    "bignum",
+    "chart"
+   ]
+  },
+  "bignum": {
+   "group": "so-lieu",
+   "pick": "MỘT số ≤ 3 ký tự + 2 điều kiện / lịch ngày",
+   "skip": "Số tiền dài (calc); nhiều điều kiện (checklist)",
+   "alt": [
+    "calc",
+    "checklist",
+    "stats"
+   ]
+  },
+  "share": {
+   "group": "so-lieu",
+   "pick": "Một tỷ lệ / ngưỡng % để người xem 'đếm' được",
+   "skip": "Nhiều tỷ lệ (chart progress / donut)",
+   "alt": [
+    "chart"
+   ]
+  },
+  "chart": {
+   "group": "so-lieu",
+   "pick": "So độ lớn, tỉ trọng, xu hướng, giai đoạn bằng số liệu THẬT, luôn kèm insight + source",
+   "skip": "Chỉ 1 giá trị (bignum); cần tra con số chính xác (table)",
+   "alt": [
+    "bignum",
+    "table",
+    "stats"
+   ]
+  },
+  "table": {
+   "group": "so-lieu",
+   "pick": "Tra giá trị chính xác ≥ 3 hàng × ≥ 2 cột, có focus/note + source",
+   "skip": "Cần thấy to–nhỏ (chart); < 3 hàng (compare)",
+   "alt": [
+    "chart",
+    "cheatsheet",
+    "compare"
+   ]
+  },
+  "ledger": {
+   "group": "so-lieu",
+   "pick": "Mỗi bên bỏ ra / nhận về bao nhiêu, cuối cùng được–mất",
+   "skip": "Một chuỗi cộng trừ ra một số (chart waterfall)",
+   "alt": [
+    "chart"
+   ]
+  },
+  "funnel": {
+   "group": "so-lieu",
+   "pick": "Nhiều nguồn đổ vào MỘT quỹ / đích rồi chia nhiều hướng",
+   "skip": "Quan hệ nhiều bên không qua một điểm chung (flow)",
+   "alt": [
+    "flow"
+   ]
+  },
+  "map": {
+   "group": "so-lieu",
+   "pick": "Ở đâu / đi qua tỉnh nào; quy định khác theo nhóm tỉnh",
+   "skip": "Địa điểm không quyết định lập luận",
+   "alt": []
+  },
+  "flow": {
+   "group": "quy-trinh",
+   "pick": "Ai chuyển gì cho ai (tiền, tài sản, hợp đồng), 2–5 bên",
+   "skip": "≥ 2 mũi tên cùng đổ về một nút (funnel); có thứ tự thời gian (steps)",
+   "alt": [
+    "funnel",
+    "steps"
+   ]
+  },
+  "steps": {
+   "group": "quy-trinh",
+   "pick": "Thủ tục có thứ tự + thời hạn từng bước (3–5 bước)",
+   "skip": "Giai đoạn theo ngày thật (chart span / gantt)",
+   "alt": [
+    "chart",
+    "timeline"
+   ]
+  },
+  "timeline": {
+   "group": "quy-trinh",
+   "pick": "Mốc chữ tự do (thế kỷ, giai đoạn), 3–6 mốc",
+   "skip": "Có ngày dd/mm/yyyy (scene / chart span)",
+   "alt": [
+    "scene",
+    "chart",
+    "journey"
+   ]
+  },
+  "scene": {
+   "group": "quy-trinh",
+   "pick": "Diễn biến vụ việc: một năm + 1–3 sự kiện có ngày, nối dòng thời gian",
+   "skip": "Không có ngày chính xác (timeline)",
+   "alt": [
+    "timeline"
+   ]
+  },
+  "evidence": {
+   "group": "phap-ly",
+   "pick": "Kết luận dựa trên 3 dấu hiệu + một đoạn trích bản án",
+   "skip": "Một câu trích là đủ (quote)",
+   "alt": [
+    "quote"
+   ]
+  },
+  "quote": {
+   "group": "phap-ly",
+   "pick": "MỘT câu nguyên văn là cả luận điểm (điều luật, nhận định toà)",
+   "skip": "Cần phân tích kèm dấu hiệu (evidence)",
+   "alt": [
+    "evidence"
+   ]
+  },
+  "checklist": {
+   "group": "phap-ly",
+   "pick": "Kiểm 2–6 điều kiện cần (đủ / thiếu / chưa rõ) rồi ra MỘT kết luận",
+   "skip": "Hệ quả rẽ nhánh theo điều kiện (tree)",
+   "alt": [
+    "tree",
+    "bignum",
+    "scorecard"
+   ]
+  },
+  "formula": {
+   "group": "bai-giang",
+   "pick": "Công thức: biến nào nhân / chia với biến nào (2–5 biến)",
+   "skip": "Một con số (bignum); thủ tục (steps)",
+   "alt": [
+    "bignum",
+    "steps"
+   ]
+  },
+  "exercise": {
+   "group": "bai-giang",
+   "pick": "Đề bài tập trên màn hình (đề + dữ kiện + yêu cầu), slide sau là calc",
+   "skip": "Ví dụ minh hoạ không cần học viên tự làm",
+   "alt": [
+    "calc"
+   ]
+  },
+  "calc": {
+   "group": "bai-giang",
+   "pick": "Lời giải có số trung gian + đáp số (số tiền dài)",
+   "skip": "Chỉ cần đáp số ngắn (bignum)",
+   "alt": [
+    "bignum"
+   ]
+  },
+  "quiz": {
+   "group": "bai-giang",
+   "pick": "Trắc nghiệm A–D: slide hỏi → slide đáp án (why, whyNot)",
+   "skip": "Câu tự luận (exercise)",
+   "alt": [
+    "exercise"
+   ]
+  },
+  "photo": {
+   "group": "anh",
+   "pick": "Ảnh thật tràn viền: mở phần / lời kết (≤ 3 slide)",
+   "skip": "Không có ảnh đúng chủ đề (section / quote)",
+   "alt": [
+    "section",
+    "quote"
+   ]
+  },
+  "split": {
+   "group": "anh",
+   "pick": "Đối tượng thật + 2–3 ý về nó",
+   "skip": "Ảnh minh hoạ chung chung",
+   "alt": [
+    "cards"
+   ]
+  },
+  "gallery": {
+   "group": "anh",
+   "pick": "2–3 ảnh hiện trạng / chứng cứ",
+   "skip": "Một ảnh (frame / split)",
+   "alt": [
+    "frame",
+    "split"
+   ]
+  },
+  "frame": {
+   "group": "anh",
+   "pick": "Ảnh là chứng cứ, chỉ 2–4 chi tiết, giữ nền trắng",
+   "skip": "Không cần chỉ chi tiết (split)",
+   "alt": [
+    "split",
+    "photo"
+   ]
+  },
+  "mosaic": {
+   "group": "anh",
+   "pick": "4–5 ảnh giới thiệu địa bàn / bối cảnh",
+   "skip": "< 4 ảnh (gallery)",
+   "alt": [
+    "gallery"
+   ]
+  },
+  "photostats": {
+   "group": "anh",
+   "pick": "Đối tượng thật + 2–3 con số quy mô",
+   "skip": "Không có ảnh (stats)",
+   "alt": [
+    "stats"
+   ]
+  },
+  "photostrip": {
+   "group": "anh",
+   "pick": "Một đối tượng qua 3–5 giai đoạn có ảnh",
+   "skip": "Không có ảnh từng giai đoạn (timeline)",
+   "alt": [
+    "timeline"
+   ]
+  },
+  "isotype": {
+   "group": "so-lieu",
+   "pick": "Một số lượng / số tiền người xem nên ĐẾM được (mỗi hình = 1 đơn vị: 10 triệu, 1 hộ, 2 người), nhất là phần mất / thiếu",
+   "skip": "Số quá lớn (> 120 hình) hoặc cần so tỉ lệ chính xác giữa nhiều nhóm (→ chart bar); một tỷ lệ % (→ share)",
+   "alt": [
+    "chart",
+    "share",
+    "bignum"
+   ]
+  },
+  "iso": {
+   "group": "cau-truc",
+   "pick": "Ai ở đâu, trên thửa nào: thửa đất, nhà, ngân hàng, toà án đặt cạnh nhau — hiện trạng vụ việc nhà đất",
+   "skip": "Quan hệ chuyển tiền / tài sản giữa các bên (→ flow); vị trí địa lý thật (→ map)",
+   "alt": [
+    "flow",
+    "map",
+    "split"
+   ]
+  },
+  "hero": {
+   "group": "mo-ket",
+   "pick": "MỘT con số là bước ngoặt của cả bài (14 ngày, 850 triệu) — tối đa 1–2 slide/deck",
+   "skip": "Con số cần điều kiện đi kèm (→ bignum); nhiều con số (→ stats)",
+   "alt": [
+    "bignum",
+    "statement",
+    "stats"
+   ]
+  },
+  "redline": {
+   "group": "phap-ly",
+   "pick": "Một điều luật bị sửa CÂU CHỮ giữa hai văn bản (cũ → mới) — người xem thấy đúng chữ nào bị bỏ, chữ nào thêm",
+   "skip": "Nhiều quy định thay đổi (→ changelog); khác về nội dung / hệ quả chứ không phải câu chữ (→ compare)",
+   "alt": [
+    "changelog",
+    "compare",
+    "quote"
+   ]
+  },
+  "deadline": {
+   "group": "quy-trinh",
+   "pick": "Thời hạn dài tính bằng tháng / năm (thời hiệu khởi kiện, thời hạn kháng nghị) — thấy đã trôi bao nhiêu, còn bao nhiêu",
+   "skip": "Thời hạn ngắn < 45 ngày (→ bignum + days); nhiều giai đoạn nối nhau (→ chart span / gantt)",
+   "alt": [
+    "bignum",
+    "chart"
+   ]
+  },
+  "hub": {
+   "group": "cau-truc",
+   "pick": "Một khái niệm + 4–6 yếu tố ngang hàng (điều kiện, yếu tố cấu thành, thành phần)",
+   "skip": "Yếu tố có thứ tự / thời hạn (steps); chỉ 2–3 yếu tố (cards); hai khái niệm giao nhau (venn)",
+   "alt": [
+    "cards",
+    "match",
+    "steps",
+    "venn"
+   ]
+  },
+  "match": {
+   "group": "phap-ly",
+   "pick": "Mỗi điều kiện / dấu hiệu ứng với một hệ quả / căn cứ cụ thể — người xem cần đọc từng cặp A → B",
+   "skip": "Các yếu tố ngang hàng quanh một khái niệm (→ hub); tra nhiều cột số liệu (→ table); một cặp duy nhất (→ compare)",
+   "alt": [
+    "hub",
+    "table",
+    "compare"
+   ]
+  },
+  "headline": {
+   "group": "anh",
+   "pick": "Một câu khẳng định ở bước ngoặt + ảnh bối cảnh mạnh (tối đa 1–2/deck)",
+   "skip": "Không có ảnh đúng sự việc, hoặc câu dài > 3 dòng (statement / quote)",
+   "alt": [
+    "statement",
+    "quote"
+   ]
+  },
+  "lens": {
+   "group": "anh",
+   "pick": "Ảnh có MỘT chi tiết là bằng chứng cần phóng to (con dấu, dòng chữ, màn hình, hàng người)",
+   "skip": "Nhiều chi tiết cần đánh số (frame) hoặc ảnh chỉ để minh hoạ (split)",
+   "alt": [
+    "frame",
+    "split"
+   ]
+  },
+  "collage": {
+   "group": "anh",
+   "pick": "2–3 ảnh về nhiều mặt của MỘT sự việc + 1–3 ý",
+   "skip": "4–5 ảnh giới thiệu địa bàn (mosaic) hoặc ảnh so sánh trước/sau (beforeafter)",
+   "alt": [
+    "mosaic",
+    "gallery",
+    "beforeafter"
+   ]
+  },
+  "sheet": {
+   "group": "so-lieu",
+   "pick": "Chuỗi 3–12 mốc mà MỖI dòng cần lý do / căn cứ riêng",
+   "skip": "Chỉ cần thấy hình dạng xu hướng (chart column) hoặc tra nhiều cột (table)",
+   "alt": [
+    "chart",
+    "table"
+   ]
+  },
+  "calendar": {
+   "group": "quy-trinh",
+   "pick": "Thời hạn tính bằng ngày trong một tháng, 1–4 khoảng",
+   "skip": "Thời hạn dài nhiều tháng / năm (deadline, chart span)",
+   "alt": [
+    "deadline",
+    "bignum"
+   ]
+  },
+  "riskbar": {
+   "group": "so-sanh",
+   "pick": "Nhiều phương án, mỗi phương án chuyển rủi ro / chi phí ở một chặng khác nhau",
+   "skip": "Chỉ một quy trình (steps) hoặc chỉ hai phía (compare)",
+   "alt": [
+    "steps",
+    "table"
+   ]
+  },
+  "plan": {
+   "group": "phap-ly",
+   "pick": "Thửa đất / nhà / phòng có kích thước và vùng cần chỉ ra",
+   "skip": "Vị trí trên bản đồ hành chính (map) hoặc cảnh nhà trên thửa (iso)",
+   "alt": [
+    "iso",
+    "map"
+   ]
+  },
+  "receipt": {
+   "group": "so-lieu",
+   "pick": "Một khoản tiền cộng từ nhiều dòng: giá chưa thuế + thuế = tổng; phí, lệ phí, tiền phạt",
+   "skip": "So hai phương án (compare) hoặc một con số (bignum)",
+   "alt": [
+    "formula",
+    "bignum"
+   ]
+  },
+  "account": {
+   "group": "so-lieu",
+   "pick": "Dòng tiền ra / vào theo ngày và số dư: khoản vay, phí, lãi, trả nợ trước hạn",
+   "skip": "Chuỗi theo năm cần lý do từng dòng (sheet)",
+   "alt": [
+    "sheet",
+    "table"
+   ]
+  },
+  "captable": {
+   "group": "so-sanh",
+   "pick": "Ai nắm bao nhiêu phần trăm và có vượt ngưỡng biểu quyết không (cổ đông, thành viên góp vốn)",
+   "skip": "Cơ cấu tổ chức bộ máy không có tỉ lệ (tree)",
+   "alt": [
+    "share",
+    "tree"
+   ]
+  },
+  "record": {
+   "group": "phap-ly",
+   "pick": "Một biên bản / văn bản tố tụng và chỗ thiếu sót: trường bỏ trống, người từ chối ký, vắng mặt",
+   "skip": "Điều kiện cần kiểm từng ý (checklist) hoặc so hai văn bản (redline)",
+   "alt": [
+    "checklist",
+    "evidence"
+   ]
+  }
+ },
+ "charts": {
+  "bar": {
+   "pick": "So độ lớn 2–6 nhóm KHÔNG phải thời gian",
+   "skip": "Nhãn là năm (column / line)",
+   "alt": [
+    "column"
+   ]
+  },
+  "column": {
+   "pick": "Chuỗi theo năm/quý ≤ 12 mốc, đủ các năm; 2 chuỗi chồng hoặc cạnh nhau",
+   "skip": "> 12 mốc giữ nguyên giữa các năm (step)",
+   "alt": [
+    "step",
+    "line"
+   ]
+  },
+  "line": {
+   "pick": "Xu hướng liên tục ≤ 12 mốc, 1–2 chuỗi, cần thấy hướng đi lên/xuống",
+   "skip": "Giá trị giữ nguyên rồi nhảy nấc (step); so độ lớn từng năm (column)",
+   "alt": [
+    "step",
+    "column"
+   ]
+  },
+  "step": {
+   "pick": "Giá trị giữ nguyên rồi nhảy nấc theo lộ trình (tuổi hưu, lương cơ sở), ≤ 20 mốc",
+   "skip": "Biến động liên tục (line)",
+   "alt": [
+    "line"
+   ]
+  },
+  "donut": {
+   "pick": "Tỉ trọng của một tổng, ≤ 4 lát",
+   "skip": "> 4 lát (bar)",
+   "alt": [
+    "bar",
+    "share"
+   ]
+  },
+  "slope": {
+   "pick": "Trước → sau của 2–6 chỉ số (hai mốc)",
+   "skip": "> 2 mốc (column / line)",
+   "alt": [
+    "column",
+    "line"
+   ]
+  },
+  "span": {
+   "pick": "Giai đoạn trên trục ngày dd/mm/yyyy + mốc luật đổi",
+   "skip": "Chỉ có số ngày tương đối (gantt)",
+   "alt": [
+    "gantt"
+   ]
+  },
+  "gantt": {
+   "pick": "Thời hạn tính bằng số ngày / tháng từ một mốc chung (tố tụng, thủ tục)",
+   "skip": "Có ngày thật (span)",
+   "alt": [
+    "span"
+   ]
+  },
+  "waterfall": {
+   "pick": "Cộng / trừ từng khoản ra một số cuối (thuế, bồi thường, lương thực nhận), ≤ 8 cột, có total",
+   "skip": "Các khoản độc lập không cộng dồn (bar)",
+   "alt": [
+    "bar"
+   ]
+  },
+  "progress": {
+   "pick": "2–6 tỉ lệ hoàn thành / bao phủ 0–100%, có thể có mục tiêu",
+   "skip": "Một tỷ lệ (share)",
+   "alt": [
+    "share",
+    "bar"
+   ]
+  }
+ },
+ "themes": {
+  "teal": "Luật, tư vấn, học thuật hiện đại",
+  "kem": "Trang trọng, hội thảo, bảo vệ",
+  "son": "Thuyết trình nhanh, cuộc thi, startup",
+  "toa": "Bình luận bản án, phiên toà giả định, văn bản nhà nước",
+  "xanh": "Báo cáo số liệu, tài chính – bảo hiểm, pháp chế doanh nghiệp",
+  "muc": "Khoá luận, NCKH, bài giảng lý thuyết (chữ có chân toàn bài)"
+ }
+}

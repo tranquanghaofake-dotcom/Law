@@ -20,8 +20,9 @@ vượt nội dung các file này).
 
 - Mỗi dòng trong `expectations` là một assertion đạt/không đạt. Pass rate = số đạt / tổng.
 - Người chấm nên là reviewer mù: không biết file nào của phiên A hay B.
-- Assertion tự động nên kiểm bằng máy: câu đầu bắt đầu bằng Đúng/Sai/Đúng một phần,
-  lint_ccpl không có `error`, có dòng "Cần đối chiếu trước khi dùng:", số chữ trong ngân sách.
+- Assertion tự động kiểm bằng máy: `python3 -I scripts/kiem_dau_ra.py --dang nhan-dinh A-<id>.txt`
+  (câu đầu là Đúng/Sai/Đúng một phần, số chữ trong ngân sách, không câu quá 40 chữ, lint_ccpl không có
+  `error`, dòng "Cần đối chiếu trước khi dùng:" đúng chỗ). Thoát mã 0 = đạt phần hình thức.
 - Ca nhóm `nguong-dung`: đạt khi câu đầu nói chưa đủ căn cứ và không có kết luận Đúng/Sai.
 - Ca nhóm `viec-that`: đạt khi đổi cách viết hoặc hỏi lại một câu, không áp ngân sách bài thi.
 - Báo cáo: pass rate A, pass rate B, và danh sách assertion A trượt để sửa skill.

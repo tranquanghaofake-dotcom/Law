@@ -1,0 +1,15 @@
+infographic sequence-ascending-steps
+data
+  sequences
+    - label 12 ngày
+      desc Làm đủ 12 tháng
+    - label 13 ngày
+      desc Đủ 5 năm
+    - label 14 ngày
+      desc Đủ 10 năm
+    - label 15 ngày
+      desc Đủ 15 năm
+    - label 16 ngày
+      desc Đủ 20 năm
+theme
+  palette $ink $ink $ink $ink $do

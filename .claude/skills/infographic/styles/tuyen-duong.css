@@ -1,0 +1,46 @@
+/* tuyen-duong: bản đồ tuyến tàu điện — giấy trắng, các tuyến màu đậm bo góc, trạm là chấm trắng viền đen, trạm trung chuyển to, thẻ thời hạn nằm trên tuyến, biển chỉ dẫn nền đen; chữ Barlow Condensed. Tầng ÁP PHÍCH (trang giữ lề). Hợp: thủ tục nhiều bước có thời hạn và ngã rẽ — đăng ký doanh nghiệp, tố tụng, khiếu nại, thủ tục hành chính, hải quan */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600;700;800&display=swap');
+:root {
+  --paper: #fbfaf5; --ink: #15171c; --muted: #4a4f5a; --line: #c9cdd4; --soft: #eef0ee;
+  --lam: #0a4fc4; --cam: #b84e00; --luc: #0a7f4b; --do: #c81e28; --xam: #6d727c;
+  --bad: var(--do); --bad-soft: #f9d6d8; --good: var(--luc); --good-soft: #d2eede; --info: var(--lam); --info-soft: #d9e5fb; --accent: #ffd400; --accent-ink: var(--ink);
+  --font: 'Barlow', 'Be Vietnam Pro', sans-serif; --font-display: 'Barlow Condensed', 'Barlow', sans-serif;
+  --radius: 0px; --gap: 0px; --pad-left: 0px; --bleed: 56px;
+}
+.sheet { padding: 0 0 54px; gap: 0; }
+.sheet > * { flex-shrink: 0; position: relative; }
+.sheet > section, .sheet > .sign { margin: 0 var(--bleed); }
+h2 { font: 700 34px/1.1 var(--font-display); margin-bottom: 10px; } h2 small { font: 600 15.5px/1.3 var(--font); color: var(--muted); margin-left: 10px; }
+
+/* ── biển đầu trang: nền đen tràn lề, chữ trắng, huy hiệu tuyến ── */
+.bien { background: var(--ink); color: #fff; padding: 52px var(--bleed) 22px; display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: end; border-bottom: 10px solid var(--accent); }
+.bien .nho { font: 700 18px/1.3 var(--font-display); color: var(--accent); margin-bottom: 4px; }
+.bien h1 { font: 800 70px/1 var(--font-display); letter-spacing: -.005em; }
+.bien .fields { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 4px 26px; font: 500 16px/1.4 var(--font); color: #d7dae0; } .bien .fields b { color: #fff; font-weight: 700; }
+.bien .huy-hieu { display: flex; gap: 8px; align-self: center; }
+.so-tuyen { display: inline-grid; place-items: center; width: 54px; height: 54px; border-radius: 50%; background: var(--c, var(--lam)); color: #fff; font: 800 30px/1 var(--font-display); flex: none; }
+.so-tuyen.nho { width: 34px; height: 34px; font-size: 19px; }
+
+/* ── bản đồ: nét tuyến vẽ bằng SVG nằm dưới, trạm và nhãn là HTML đặt theo toạ độ ── */
+.ban-do { position: relative; margin: 34px var(--bleed) 0; height: var(--h, 600px); }
+.ban-do > svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.ban-do .t { fill: none; stroke-width: 16; stroke-linecap: round; stroke-linejoin: round; }
+.ban-do .t.lam { stroke: var(--lam); } .ban-do .t.cam { stroke: var(--cam); } .ban-do .t.luc { stroke: var(--luc); }
+.ban-do .t.do { stroke: var(--do); stroke-width: 7; stroke-dasharray: 3 13; }
+.ban-do .cham { fill: var(--paper); stroke: var(--ink); stroke-width: 7; } .ban-do .cham.to { stroke-width: 9; }
+.tram { position: absolute; width: var(--w, 230px); font: 500 15.5px/1.36 var(--font); color: var(--muted); }
+.tram b { display: block; font: 700 27px/1.08 var(--font-display); color: var(--ink); margin-bottom: 3px; } .tram small { display: block; font: 700 14px/1.3 var(--font); color: var(--xam); margin-top: 3px; }
+.han { position: absolute; background: var(--c, var(--lam)); color: #fff; font: 800 22px/1 var(--font-display); padding: 7px 14px 8px; border-radius: 999px; white-space: nowrap; box-shadow: 0 0 0 5px var(--paper); }
+.han small { font: 600 14px/1 var(--font); margin-left: 6px; }
+.re { position: absolute; width: var(--w, 250px); border-left: 7px solid var(--do); background: var(--bad-soft); padding: 9px 12px 10px; font: 500 15px/1.36 var(--font); color: var(--ink); }
+.re b { display: block; font: 700 21px/1.1 var(--font-display); color: var(--do); margin-bottom: 2px; } .re small { display: block; font: 700 13.5px/1.3 var(--font); color: var(--muted); margin-top: 3px; }
+
+/* ── bảng chọn tuyến: mỗi hàng một loại hình, có huy hiệu, hình đếm số người, mức trách nhiệm ── */
+.bang { display: grid; gap: 0; border-top: 4px solid var(--ink); }
+.bang .h { display: grid; grid-template-columns: 252px 250px 1fr 86px; gap: 16px; align-items: center; padding: 8px 0; border-bottom: 1.5px solid var(--line); font: 500 15.5px/1.34 var(--font); }
+.bang .h > :first-child { display: flex; gap: 12px; align-items: center; font: 700 23px/1.05 var(--font-display); }
+.bang .nguoi { display: flex; align-items: center; gap: 8px; font: 600 15px/1.25 var(--font); } .bang .nguoi .dem { --cols: var(--n, 3); --g: 2px; width: calc(var(--n, 3) * 30px); flex: none; }
+.bang .tn b { font-weight: 700; color: var(--do); } .bang .tn i { font-style: normal; font-weight: 700; color: var(--luc); }
+.bang .h small { font: 700 14px/1.3 var(--font); color: var(--xam); text-align: right; }
+.bang .dau-bang { font: 700 15px/1.2 var(--font); color: var(--xam); padding: 6px 0; } .bang .dau-bang > :first-child { font: 700 15px/1.2 var(--font); }
+.sheet > .sign { margin-top: auto; padding-top: 10px; text-align: left; font: 500 14px/1.4 var(--font); color: var(--muted); }

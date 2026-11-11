@@ -1,0 +1,443 @@
+{
+ "meta": {
+  "title": "Mẫu bố cục bài giảng có tính toán",
+  "short": "Bố cục bài tính",
+  "kind": "lecture",
+  "art": "umbrella",
+  "motif": "none"
+ },
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Mẫu kiểm thử",
+   "title": "Bài giảng có [công thức] và [bài tính]",
+   "subtitle": "formula · calc · exercise · funnel · changelog · journey · cheatsheet · chart step · quiz whyNot",
+   "author": "slide-chuan",
+   "art": "umbrella",
+   "notes": "Deck mẫu cho 7 bố cục mới và 2 mở rộng. Nội dung lấy từ chế độ BHXH theo Luật BHXH 41/2024/QH15 — kiểm lại điều luật trước khi dùng thật."
+  },
+  {
+   "type": "journey",
+   "kicker": "Năm chế độ BHXH",
+   "title": "Một đời đi làm chạm vào [năm chế độ]",
+   "who": {
+    "name": "Chị Lan",
+    "sub": "Công nhân, lương 10 triệu"
+   },
+   "stages": [
+    {
+     "when": "Tuổi 26",
+     "event": "Sốt xuất huyết, nghỉ 5 ngày",
+     "link": "Ốm đau",
+     "icon": "PiThermometerDuotone"
+    },
+    {
+     "when": "Tuổi 29",
+     "event": "Sinh con đầu lòng",
+     "link": "Thai sản",
+     "icon": "PiBabyDuotone"
+    },
+    {
+     "when": "Tuổi 41",
+     "event": "Tai nạn trong xưởng",
+     "link": "TNLĐ-BNN",
+     "icon": "PiFirstAidKitDuotone"
+    },
+    {
+     "when": "Tuổi 60",
+     "event": "Đủ tuổi, đủ 30 năm đóng",
+     "link": "Hưu trí",
+     "icon": "PiArmchairDuotone"
+    },
+    {
+     "when": "Sau đó",
+     "event": "Gia đình lo hậu sự",
+     "link": "Tử tuất",
+     "icon": "PiFlowerLotusDuotone"
+    }
+   ],
+   "focus": 3,
+   "note": "Nhân vật giả định để nối 5 chế độ thành một câu chuyện",
+   "notes": "Mỗi chặng là một chế độ. Chặng được tô là chặng sẽ học sâu nhất."
+  },
+  {
+   "type": "cheatsheet",
+   "kicker": "Ôn thi",
+   "title": "Năm chế độ trong [một lưới]",
+   "rows": [
+    {
+     "label": "Khi nào"
+    },
+    {
+     "label": "Bao nhiêu"
+    }
+   ],
+   "cols": [
+    {
+     "icon": "PiThermometerDuotone",
+     "name": "Ốm đau",
+     "cells": [
+      "Ốm, tai nạn ngoài lao động",
+      "75% lương ÷ 24 × ngày"
+     ]
+    },
+    {
+     "icon": "PiBabyDuotone",
+     "name": "Thai sản",
+     "cells": [
+      "Sinh con, khám thai",
+      "100% bình quân 6 tháng"
+     ]
+    },
+    {
+     "icon": "PiFirstAidKitDuotone",
+     "name": "TNLĐ-BNN",
+     "cells": [
+      "Suy giảm từ 5%",
+      "Một lần / hằng tháng"
+     ]
+    },
+    {
+     "icon": "PiArmchairDuotone",
+     "name": "Hưu trí",
+     "cells": [
+      "Đủ tuổi + 15 năm đóng",
+      "[40–75%] bình quân lương"
+     ]
+    },
+    {
+     "icon": "PiFlowerLotusDuotone",
+     "name": "Tử tuất",
+     "cells": [
+      "Người lao động chết",
+      "Mai táng + tiền tuất"
+     ]
+    }
+   ],
+   "focus": 3,
+   "notes": "Cột tô là chế độ thay đổi nhiều nhất theo luật mới."
+  },
+  {
+   "type": "formula",
+   "kicker": "Ốm đau",
+   "title": "Trợ cấp ốm = lương ÷ 24 × [75%] × số ngày",
+   "result": {
+    "sym": "TC",
+    "label": "Trợ cấp ốm đau"
+   },
+   "terms": [
+    {
+     "sym": "L",
+     "label": "Lương đóng BHXH",
+     "note": "Tháng gần nhất trước tháng nghỉ"
+    },
+    {
+     "sym": "24",
+     "label": "Ngày công",
+     "op": "÷",
+     "note": "Một tháng tính 24 ngày"
+    },
+    {
+     "sym": "75%",
+     "label": "Tỷ lệ hưởng",
+     "note": "Ốm thông thường"
+    },
+    {
+     "sym": "N",
+     "label": "Số ngày nghỉ",
+     "note": "Chỉ đếm ngày làm việc"
+    }
+   ],
+   "focus": 2,
+   "example": "3.000.000 ÷ 24 × 75% × 12 ngày = [1.125.000 đồng]",
+   "notes": "Mỗi ô là một biến; ô tô là biến người nói chỉ vào."
+  },
+  {
+   "type": "exercise",
+   "kicker": "Bài tập",
+   "title": "Bài 5: trợ cấp ốm tính theo [ngày làm việc]",
+   "label": "Bài 5",
+   "prompt": "Bà Hoa ốm thông thường, nghỉ việc từ [10/02 đến 25/02]. Thứ Bảy đầu tiên của tháng là ngày 12/02; nghỉ hằng tuần thứ Bảy, Chủ nhật. Bà làm việc điều kiện bình thường, tham gia BHXH từ 01/01/2014, từ đầu năm chưa nghỉ ốm. Lương đóng BHXH tháng trước khi nghỉ là [3 triệu đồng].",
+   "given": [
+    {
+     "label": "Thời gian nghỉ",
+     "value": "10/02 – 25/02"
+    },
+    {
+     "label": "Lương đóng BHXH",
+     "value": "3.000.000 đ"
+    },
+    {
+     "label": "Đã đóng",
+     "value": "Từ 2014 (< 15 năm)"
+    }
+   ],
+   "ask": "Tính số tiền trợ cấp ốm đau bà Hoa được hưởng.",
+   "hint": "Gợi ý: ốm đau chỉ đếm ngày làm việc",
+   "notes": "Cho lớp 3 phút tự tính trước khi chuyển sang lời giải."
+  },
+  {
+   "type": "calc",
+   "kicker": "Lời giải Bài 5",
+   "title": "16 ngày lịch, chỉ trả [12 ngày làm việc]",
+   "given": [
+    {
+     "label": "Lương đóng BHXH",
+     "value": "3.000.000 đ"
+    },
+    {
+     "label": "Nghỉ",
+     "value": "10/02 – 25/02"
+    },
+    {
+     "label": "Tỷ lệ",
+     "value": "75%"
+    }
+   ],
+   "steps": [
+    {
+     "label": "Đếm ngày làm việc",
+     "expr": "16 ngày lịch − 4 ngày cuối tuần",
+     "value": "12 ngày"
+    },
+    {
+     "label": "Lương một ngày",
+     "expr": "3.000.000 ÷ 24",
+     "value": "125.000"
+    },
+    {
+     "label": "Nhân tỷ lệ và số ngày",
+     "expr": "125.000 × 75% × 12",
+     "value": "1.125.000"
+    }
+   ],
+   "answer": {
+    "value": "1.125.000",
+    "unit": "đồng",
+    "label": "Trong giới hạn 30 ngày/năm (đóng dưới 15 năm)"
+   },
+   "note": "Lỗi hay gặp: nhân với 16 ngày lịch",
+   "notes": "Đáp số là thứ người học đối chiếu — đặt to nhất."
+  },
+  {
+   "type": "funnel",
+   "kicker": "Quỹ BHXH",
+   "title": "Ba bên đóng vào, [một quỹ] chi ra",
+   "unit": "%",
+   "sources": [
+    {
+     "label": "Người lao động",
+     "value": 8,
+     "display": "8%"
+    },
+    {
+     "label": "Doanh nghiệp",
+     "value": 17.5,
+     "display": "17,5%",
+     "focus": true
+    },
+    {
+     "label": "Nhà nước",
+     "display": "Hỗ trợ, bảo hộ"
+    }
+   ],
+   "pool": {
+    "label": "Quỹ BHXH",
+    "sub": "Các quỹ thành phần"
+   },
+   "uses": [
+    {
+     "label": "Trợ cấp các chế độ"
+    },
+    {
+     "label": "Chi phí quản lý"
+    },
+    {
+     "label": "Đầu tư tăng trưởng"
+    }
+   ],
+   "note": "Tỷ lệ tính trên tiền lương làm căn cứ đóng",
+   "notes": "Độ dày dải theo tỉ trọng đóng góp."
+  },
+  {
+   "type": "changelog",
+   "kicker": "Cập nhật luật",
+   "title": "Sáu điểm [đã đổi] so với Luật BHXH 2014",
+   "colOld": "Luật 2014",
+   "colNew": "Luật 2024",
+   "rows": [
+    {
+     "topic": "Năm đóng để có lương hưu",
+     "old": "20 năm",
+     "new": "[15 năm]",
+     "status": "changed"
+    },
+    {
+     "topic": "Mức tính trợ cấp",
+     "old": "Lương cơ sở",
+     "new": "Mức tham chiếu",
+     "status": "changed"
+    },
+    {
+     "topic": "Thai sản BHXH tự nguyện",
+     "old": "Không có",
+     "new": "2 triệu đồng mỗi con",
+     "status": "new"
+    },
+    {
+     "topic": "Chồng nghỉ khi vợ sinh",
+     "old": "Trong 30 ngày đầu",
+     "new": "Trong 60 ngày đầu",
+     "status": "changed"
+    },
+    {
+     "topic": "Số ngày nghỉ ốm tối đa",
+     "old": "30 / 40 / 60 ngày",
+     "new": "30 / 40 / 60 ngày",
+     "status": "kept"
+    }
+   ],
+   "focus": 0,
+   "notes": "Dòng tô là thay đổi quan trọng nhất."
+  },
+  {
+   "type": "chart",
+   "kind": "step",
+   "kicker": "Hưu trí",
+   "title": "Tuổi nghỉ hưu tăng [từng nấc] tới 2035",
+   "unit": "tuổi",
+   "base": 54,
+   "series": [
+    "Nam",
+    "Nữ"
+   ],
+   "items": [
+    {
+     "label": "2020",
+     "value": 60,
+     "value2": 55
+    },
+    {
+     "label": "2021",
+     "value": 60.25,
+     "value2": 55.33
+    },
+    {
+     "label": "2022",
+     "value": 60.5,
+     "value2": 55.67
+    },
+    {
+     "label": "2023",
+     "value": 60.75,
+     "value2": 56
+    },
+    {
+     "label": "2024",
+     "value": 61,
+     "value2": 56.33
+    },
+    {
+     "label": "2025",
+     "value": 61.25,
+     "value2": 56.67
+    },
+    {
+     "label": "2026",
+     "value": 61.5,
+     "value2": 57
+    },
+    {
+     "label": "2027",
+     "value": 61.75,
+     "value2": 57.33
+    },
+    {
+     "label": "2028",
+     "value": 62,
+     "value2": 57.67,
+     "focus": true,
+     "display": "62",
+     "display2": "57t8th"
+    },
+    {
+     "label": "2029",
+     "value": 62,
+     "value2": 58
+    },
+    {
+     "label": "2030",
+     "value": 62,
+     "value2": 58.33
+    },
+    {
+     "label": "2031",
+     "value": 62,
+     "value2": 58.67
+    },
+    {
+     "label": "2032",
+     "value": 62,
+     "value2": 59
+    },
+    {
+     "label": "2033",
+     "value": 62,
+     "value2": 59.33
+    },
+    {
+     "label": "2034",
+     "value": 62,
+     "value2": 59.67
+    },
+    {
+     "label": "2035",
+     "value": 62,
+     "value2": 60,
+     "display": "62",
+     "display2": "60"
+    }
+   ],
+   "insight": {
+    "value": "2035",
+    "unit": "năm nữ đủ 60",
+    "text": "Nam dừng ở 62 từ 2028; nữ tăng dần tới 2035"
+   },
+   "note": "Trục dọc bắt đầu từ 54 tuổi",
+   "notes": "Bậc thang: giá trị giữ nguyên cả năm rồi mới tăng."
+  },
+  {
+   "type": "quiz",
+   "kicker": "Kiểm tra nhanh",
+   "title": "Nam đủ tuổi hưu, đóng BHXH 15 năm được gì?",
+   "options": [
+    "Không có lương hưu, chỉ rút một lần",
+    "Lương hưu 40% bình quân lương",
+    "Lương hưu 45% bình quân lương",
+    "Lương hưu 75% bình quân lương"
+   ],
+   "notes": "Một phút chọn đáp án."
+  },
+  {
+   "type": "quiz",
+   "kicker": "Đáp án",
+   "title": "Nam đủ tuổi hưu, đóng BHXH 15 năm được gì?",
+   "reveal": true,
+   "answer": 1,
+   "options": [
+    "Không có lương hưu, chỉ rút một lần",
+    "Lương hưu 40% bình quân lương",
+    "Lương hưu 45% bình quân lương",
+    "Lương hưu 75% bình quân lương"
+   ],
+   "why": "Luật 2024 hạ ngưỡng còn 15 năm; nam 15 đến dưới 20 năm hưởng 40%, mỗi năm thêm 1%.",
+   "whyNot": [
+    "Đúng theo Luật 2014 — đã hết hiệu lực",
+    "",
+    "Tỷ lệ của lao động nữ đóng 15 năm",
+    "Mức tối đa — nam phải đóng 35 năm"
+   ],
+   "notes": "whyNot hiện dưới từng phương án sai."
+  }
+ ]
+}

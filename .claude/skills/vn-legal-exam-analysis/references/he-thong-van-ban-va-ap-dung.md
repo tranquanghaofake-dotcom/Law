@@ -2,6 +2,18 @@
 
 Nội dung file này được xác minh với nguồn chính thống (xaydungchinhsach.chinhphu.vn, danchuphapluat.vn — Tạp chí Dân chủ và Pháp luật của Bộ Tư pháp, luatvietnam.vn, cổng PBGDPL Sở Tư pháp Cần Thơ) vào tháng 7/2026. Luật Việt Nam sửa đổi thường xuyên: khi có công cụ tìm kiếm, vẫn phải đối chiếu lại tình trạng hiệu lực trước khi chốt câu trả lời, đặc biệt với nội dung sau ngày xác minh.
 
+## Mục lục
+
+1. Khung văn bản nền
+2. Hệ thống văn bản theo Điều 4 (sau sửa đổi bởi Luật 87/2025/QH15)
+3. Nguyên tắc áp dụng văn bản — Điều 58 Luật 64/2025/QH15
+4. Giải thích và hướng dẫn áp dụng — hai căn cứ hay bị bỏ sót
+5. Cụm văn bản bảo vệ dữ liệu cá nhân
+6. Bảng thời hiệu đối chiếu nhanh
+7. Nguồn tra cứu ưu tiên khi có công cụ tìm kiếm
+8. Mốc theo dõi để giữ file này còn đúng
+9. Sổ văn bản sửa đổi 2024–2025 hay bị bỏ sót số hiệu
+
 ## Khung văn bản nền
 
 Luật Ban hành văn bản quy phạm pháp luật số 64/2025/QH15 (9 chương, 72 điều, hiệu lực từ 01/4/2025) thay thế Luật năm 2015; được sửa đổi, bổ sung bởi Luật số 87/2025/QH15 (hiệu lực từ 01/7/2025). Nghị định số 78/2025/NĐ-CP quy định chi tiết và hướng dẫn thi hành. Hai mốc hiệu lực 01/4/2025 và 01/7/2025 khác nhau — đề thi có thể cài bẫy vào chính khoảng giữa hai mốc này.

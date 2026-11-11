@@ -1,0 +1,255 @@
+{
+ "theme": "teal",
+ "meta": {
+  "title": "Mẫu 8 bố cục bổ sung",
+  "short": "Bố cục bổ sung",
+  "motif": "lines"
+ },
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Mẫu kiểm thử",
+   "title": "Tám bố cục mới cho [slide luật]",
+   "subtitle": "Tháp thứ bậc, quy trình có thời hạn, ma trận, Venn, cây điều kiện, trích dẫn, ảnh có chú thích, trước – sau",
+   "author": "slide-chuan",
+   "notes": "Deck mẫu dùng đủ 8 type mới. Nội dung pháp lý chỉ để minh hoạ bố cục — kiểm lại điều luật trước khi dùng thật."
+  },
+  {
+   "type": "pyramid",
+   "kicker": "Thứ bậc văn bản",
+   "title": "Văn bản [cấp dưới] không được trái văn bản cấp trên",
+   "levels": [
+    {
+     "head": "Hiến pháp",
+     "text": "Hiệu lực pháp lý cao nhất"
+    },
+    {
+     "head": "Luật, nghị quyết của Quốc hội",
+     "text": "Cụ thể hoá Hiến pháp"
+    },
+    {
+     "head": "Pháp lệnh, nghị quyết UBTVQH"
+    },
+    {
+     "head": "Nghị định của Chính phủ",
+     "text": "Quy định chi tiết luật"
+    },
+    {
+     "head": "Thông tư của Bộ trưởng",
+     "text": "Hướng dẫn nghị định — nơi hay [trái luật] nhất"
+    }
+   ],
+   "focus": 4,
+   "note": "Minh hoạ, rút gọn — chưa liệt kê đủ các loại văn bản",
+   "notes": "Tháp đọc từ trên xuống: tầng trên có hiệu lực cao hơn. Tầng được tô đặc là chỗ người nói muốn nhấn — thông tư hướng dẫn. Kiểm lại danh mục đầy đủ ở điều luật về hệ thống văn bản quy phạm pháp luật trong luật ban hành văn bản hiện hành."
+  },
+  {
+   "type": "steps",
+   "kicker": "Tố tụng dân sự sơ thẩm",
+   "title": "Vụ án sơ thẩm có [năm mốc thời hạn]",
+   "steps": [
+    {
+     "head": "Nộp đơn khởi kiện",
+     "text": "Kèm chứng cứ chứng minh yêu cầu"
+    },
+    {
+     "head": "Nộp tạm ứng án phí",
+     "when": "7 ngày",
+     "text": "Từ khi nhận thông báo — quá hạn thì trả lại đơn"
+    },
+    {
+     "head": "Chuẩn bị xét xử",
+     "when": "4 tháng",
+     "text": "Vụ án phức tạp được gia hạn thêm tối đa 2 tháng"
+    },
+    {
+     "head": "Mở phiên toà",
+     "when": "1 tháng",
+     "text": "Kể từ ngày có quyết định đưa vụ án ra xét xử"
+    },
+    {
+     "head": "Kháng cáo",
+     "when": "15 ngày",
+     "text": "Kể từ ngày tuyên án"
+    }
+   ],
+   "focus": 2,
+   "notes": "Bước được tô đặc là chuẩn bị xét xử — giai đoạn dài nhất và là nơi vụ án thường bị kéo dài. Thời hạn lấy theo BLTTDS 2015; kiểm lại văn bản hợp nhất trước khi dùng."
+  },
+  {
+   "type": "matrix",
+   "kicker": "Điều 585 BLDS 2015",
+   "title": "Chỉ một ô được [giảm mức bồi thường]",
+   "x": {
+    "label": "Lỗi gây thiệt hại",
+    "lo": "Cố ý",
+    "hi": "Vô ý"
+   },
+   "y": {
+    "label": "Thiệt hại",
+    "hi": "Quá lớn so với tài sản",
+    "lo": "Bình thường"
+   },
+   "cells": [
+    {
+     "head": "Bồi thường toàn bộ",
+     "text": "Cố ý thì không được giảm, dù thiệt hại lớn"
+    },
+    {
+     "head": "[Có thể giảm] mức bồi thường",
+     "text": "Trường hợp duy nhất được giảm theo khoản 2 Điều 585",
+     "tone": "good"
+    },
+    {
+     "head": "Bồi thường toàn bộ",
+     "text": "Nguyên tắc chung: kịp thời, toàn bộ"
+    },
+    {
+     "head": "Bồi thường toàn bộ",
+     "text": "Thiệt hại vừa sức thì không có căn cứ giảm"
+    }
+   ],
+   "focus": 1,
+   "notes": "Ma trận cho thấy ngay vì sao chỉ một ô được giảm: phải hội đủ hai điều kiện cùng lúc."
+  },
+  {
+   "type": "venn",
+   "kicker": "Biện pháp bảo đảm",
+   "title": "Đặt cọc và ký quỹ khác nhau ở [nơi giữ tài sản]",
+   "left": {
+    "label": "Đặt cọc · Điều 328",
+    "items": [
+     "Giao tài sản cho bên kia",
+     "Vi phạm: mất cọc hoặc trả gấp đôi"
+    ]
+   },
+   "both": {
+    "label": "Điểm chung",
+    "items": [
+     "Biện pháp bảo đảm",
+     "Tiền, kim khí quý, đá quý"
+    ]
+   },
+   "right": {
+    "label": "Ký quỹ · Điều 330",
+    "items": [
+     "Gửi vào tài khoản phong toả",
+     "Tổ chức tín dụng trả cho bên có quyền"
+    ]
+   },
+   "note": "BLDS 2015, Điều 292, 328, 330",
+   "notes": "Điểm khác cốt lõi là ai giữ tài sản: đặt cọc thì bên nhận cọc giữ, ký quỹ thì tổ chức tín dụng giữ."
+  },
+  {
+   "type": "tree",
+   "kicker": "Điều 129 BLDS 2015",
+   "title": "Làm xong [2/3 nghĩa vụ] thì vẫn có hiệu lực",
+   "root": {
+    "q": "Hợp đồng vi phạm quy định về [hình thức] có vô hiệu không?",
+    "src": "Ví dụ: mua bán nhà chưa công chứng"
+   },
+   "branches": [
+    {
+     "when": "Chưa thực hiện 2/3",
+     "head": "Vô hiệu",
+     "text": "Nguyên tắc chung của Điều 129",
+     "tone": "bad"
+    },
+    {
+     "when": "Đã thực hiện ≥ 2/3",
+     "head": "Toà công nhận hiệu lực",
+     "text": "Theo yêu cầu của một hoặc các bên",
+     "tone": "good"
+    },
+    {
+     "when": "Luật không bắt buộc",
+     "head": "Hình thức tự do",
+     "text": "Lời nói, văn bản hoặc hành vi đều được"
+    }
+   ],
+   "focus": 1,
+   "notes": "Nhánh được tô là nhánh áp dụng cho vụ việc. Nhánh thứ ba nhắc lại rằng không phải hợp đồng nào cũng có hình thức bắt buộc."
+  },
+  {
+   "type": "quote",
+   "kicker": "Nguyên tắc cơ bản",
+   "quote": "Cá nhân, pháp nhân phải xác lập, thực hiện, chấm dứt quyền, nghĩa vụ dân sự của mình một cách [thiện chí, trung thực].",
+   "by": "Khoản 3 Điều 3 BLDS 2015",
+   "role": "Nguyên tắc cơ bản của pháp luật dân sự",
+   "notes": "Một câu trích đủ làm luận điểm: dùng khi cả lập luận phía sau dựa vào đúng câu này."
+  },
+  {
+   "type": "frame",
+   "kicker": "Hiện trạng",
+   "title": "Ngôi nhà [vẫn có người ở] — chưa từng được giao",
+   "photo": "images/nha-co-nguoi-o.jpg",
+   "photoAlt": "Nhà ống có quần áo phơi ở ban công (ảnh minh hoạ, không phải ngôi nhà trong vụ án)",
+   "points": [
+    {
+     "x": 0.75,
+     "y": 0.3,
+     "head": "Quần áo phơi",
+     "text": "Sinh hoạt hằng ngày của người đang ở"
+    },
+    {
+     "x": 0.42,
+     "y": 0.4,
+     "head": "Cây cảnh ban công",
+     "text": "Được chăm sóc thường xuyên"
+    },
+    {
+     "x": 0.8,
+     "y": 0.75,
+     "head": "Tầng trệt có đồ dùng",
+     "text": "Không có dấu hiệu bàn giao"
+    }
+   ],
+   "note": "Ảnh minh hoạ",
+   "notes": "Ảnh minh hoạ chứ không phải hiện vật vụ án; chú thích chỉ ra chi tiết cho thấy nhà đang có người ở."
+  },
+  {
+   "type": "panelrows",
+   "kicker": "Vật chứng minh",
+   "title": "Người mua [chưa từng cầm] chìa khoá",
+   "cutout": "images/chia-khoa-nha_cut.png",
+   "cutoutAlt": "Bàn tay cầm chùm chìa khoá (ảnh minh hoạ, đã tách nền)",
+   "rows": [
+    {
+     "head": "Hợp đồng",
+     "text": "Đã ký, đã trả đủ tiền"
+    },
+    {
+     "head": "Giao nhà",
+     "text": "Bên bán vẫn ở, chưa giao chìa khoá",
+     "tone": "bad"
+    },
+    {
+     "head": "Hệ quả",
+     "text": "Hợp đồng còn đang thực hiện"
+    }
+   ],
+   "notes": "Ảnh vật thật đã tách nền thay cho hình vẽ minh hoạ — dùng cutout.py."
+  },
+  {
+   "type": "beforeafter",
+   "kicker": "Trước – sau",
+   "title": "Một mùa gặt đổi [cả cánh đồng]",
+   "before": {
+    "photo": "images/ruong-kenh.jpg",
+    "label": "Trước",
+    "date": "Chờ gặt",
+    "caption": "Lúa chín, [chưa gặt]",
+    "alt": "Cánh đồng lúa xanh ven kênh (ảnh minh hoạ)"
+   },
+   "after": {
+    "photo": "images/ruong-sau-gat.jpg",
+    "label": "Sau",
+    "date": "Sau gặt",
+    "caption": "Gốc rạ — [đất trống] chờ vụ sau",
+    "alt": "Cánh đồng sau gặt (ảnh minh hoạ)"
+   },
+   "note": "Ảnh minh hoạ, không cùng một thửa",
+   "notes": "Hai trạng thái của đồng lúa."
+  }
+ ]
+}

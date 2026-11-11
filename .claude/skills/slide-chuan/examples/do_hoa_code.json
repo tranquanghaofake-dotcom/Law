@@ -1,0 +1,401 @@
+{
+ "theme": "teal",
+ "meta": {
+  "title": "Bảo vệ người thứ ba ngay tình khi giao dịch dân sự vô hiệu",
+  "short": "Bản án 142/2019/DS-PT",
+  "motif": "cadastral",
+  "kind": "case"
+ },
+ "timelines": {
+  "tl": [
+   [
+    "02/12/2010",
+    "Vay 350 tr"
+   ],
+   [
+    "03/12/2010",
+    "Ký chuyển nhượng"
+   ],
+   [
+    "28/12/2010",
+    "GCN tên Q"
+   ],
+   [
+    "20/8/2014",
+    "Bán lại"
+   ],
+   [
+    "09/9/2014",
+    "GCN người mua"
+   ],
+   [
+    "23/9/2014",
+    "Khởi kiện"
+   ],
+   [
+    "02/10/2017",
+    "Thế chấp"
+   ],
+   [
+    "10/12/2017",
+    "Chuyển quyền nợ"
+   ]
+  ]
+ },
+ "slides": [
+  {
+   "type": "cover",
+   "layout": "paper",
+   "kicker": "Bình luận bản án",
+   "title": "Bảo vệ người thứ ba [ngay tình] khi giao dịch dân sự vô hiệu",
+   "subtitle": "Bản án 142/2019/DS-PT · TAND cấp cao tại Đà Nẵng",
+   "author": "Ví dụ đồ hoạ bằng code",
+   "date": "11/2026",
+   "notes": "Bìa dạng paper: các lớp giấy cắt sinh từ tên đề tài, không dùng ảnh."
+  },
+  {
+   "type": "iso",
+   "kicker": "Hiện trạng thửa đất",
+   "title": "Người mua có GCN, gia đình P [vẫn ở] trên đất",
+   "objects": [
+    {
+     "kind": "parcel",
+     "x": -6,
+     "y": 0,
+     "w": 4,
+     "d": 4
+    },
+    {
+     "kind": "parcel",
+     "x": 5,
+     "y": 0,
+     "w": 4,
+     "d": 4
+    },
+    {
+     "kind": "parcel",
+     "x": 0,
+     "y": -5,
+     "w": 4,
+     "d": 4
+    },
+    {
+     "kind": "parcel",
+     "x": 0,
+     "y": 5,
+     "w": 4,
+     "d": 4
+    },
+    {
+     "kind": "parcel",
+     "x": 0,
+     "y": 0,
+     "w": 4,
+     "d": 4,
+     "focus": true,
+     "label": "Thửa đất tranh chấp",
+     "sub": "GCN BP 150838 đứng tên người mua"
+    },
+    {
+     "kind": "house",
+     "x": 0.6,
+     "y": 0.6,
+     "w": 2.6,
+     "d": 2.4,
+     "focus": true,
+     "pin": true,
+     "label": "Gia đình P vẫn ở",
+     "sub": "chưa từng bàn giao nhà"
+    },
+    {
+     "kind": "tree",
+     "x": 0.6,
+     "y": 6,
+     "w": 1,
+     "d": 1
+    },
+    {
+     "kind": "bank",
+     "x": 5.7,
+     "y": 0.6,
+     "w": 2.6,
+     "d": 2.2,
+     "label": "Ngân hàng V",
+     "sub": "nhận thế chấp ngày 02/10/2017"
+    }
+   ],
+   "notes": "Hình isometric dựng bằng toạ độ: thửa đang tranh chấp tô màu nhấn, ghim đỏ đặt trên ngôi nhà gia đình P vẫn ở."
+  },
+  {
+   "type": "scene",
+   "year": "2014",
+   "title": "Bán lại cho [người mua] với giá 850 triệu",
+   "sum": "Giấy tờ đều hợp lệ: công chứng, trả đủ tiền, có GCN. Nhưng nhà chưa từng được bàn giao.",
+   "events": [
+    {
+     "date": "20/8/2014",
+     "text": "Q chuyển nhượng cho người mua; người mua trả đủ 850 triệu"
+    },
+    {
+     "date": "09/9/2014",
+     "text": "Người mua được cấp GCN BP 150838"
+    }
+   ],
+   "timeline": {
+    "ref": "tl",
+    "active": [
+     3,
+     4
+    ]
+   },
+   "notes": "Năm 2014: người mua trả đủ 850 triệu và được cấp GCN — giấy tờ đều hợp lệ."
+  },
+  {
+   "type": "scene",
+   "year": "2014–17",
+   "title": "[14 ngày] sau, người mua phải kiện đòi nhà",
+   "sum": "Vụ án kéo dài — trong lúc chờ, thửa đất tiếp tục bị thế chấp và chuyển nợ.",
+   "events": [
+    {
+     "date": "23/9/2014",
+     "text": "Khởi kiện: đòi giao nhà, nếu không thì Q hoàn 850 triệu"
+    },
+    {
+     "date": "02/10/2017",
+     "text": "Người mua thế chấp đất cho Ngân hàng V, vay 500 triệu"
+    },
+    {
+     "date": "10/12/2017",
+     "text": "Q chuyển cho người mua quyền đòi P 785 triệu"
+    }
+   ],
+   "timeline": {
+    "ref": "tl",
+    "active": [
+     5,
+     6,
+     7
+    ]
+   },
+   "notes": "Từ 2014 đến 2017: người mua khởi kiện, trong lúc chờ thửa đất tiếp tục bị thế chấp và chuyển nợ. Chuyển slide bằng Morph: chấm mốc trượt sang phải."
+  },
+  {
+   "type": "isotype",
+   "kicker": "Được – mất của người mua",
+   "title": "Trả [85 tờ], chỉ lấy lại 50",
+   "icon": "note",
+   "unit": {
+    "value": 10,
+    "label": "triệu đồng",
+    "short": "tr"
+   },
+   "lostLabel": "không lấy lại được",
+   "rows": [
+    {
+     "label": "Đã trả",
+     "value": 850
+    },
+    {
+     "label": "Lấy lại",
+     "value": 850,
+     "lost": 350,
+     "display": "500 tr"
+    }
+   ],
+   "notes": "Mỗi tờ tiền là 10 triệu. Người mua trả 85 tờ, theo thoả thuận được công nhận chỉ lấy lại 50 tờ — 35 khung rỗng là 350 triệu mất."
+  },
+  {
+   "type": "redline",
+   "kicker": "Luật cũ → luật mới",
+   "title": "BLDS 2015 chỉ còn vô hiệu khi tài sản [chưa đăng ký]",
+   "old": {
+    "label": "BLDS 2005 · khoản 2 Điều 138",
+    "text": "Trong trường hợp tài sản giao dịch là bất động sản hoặc là động sản phải đăng ký quyền sở hữu đã được chuyển giao bằng một giao dịch khác cho người thứ ba ngay tình thì giao dịch với người thứ ba bị vô hiệu, trừ trường hợp người thứ ba ngay tình nhận được tài sản này thông qua bán đấu giá hoặc giao dịch với người mà theo bản án, quyết định của cơ quan nhà nước có thẩm quyền là chủ sở hữu tài sản nhưng sau đó người này không phải là chủ sở hữu tài sản do bản án, quyết định bị huỷ, sửa."
+   },
+   "new": {
+    "label": "BLDS 2015 · khoản 2 Điều 133 (đoạn 2)",
+    "text": "Trường hợp tài sản phải đăng ký mà chưa được đăng ký tại cơ quan nhà nước có thẩm quyền thì giao dịch dân sự với người thứ ba bị vô hiệu, trừ trường hợp người thứ ba ngay tình nhận được tài sản này thông qua bán đấu giá tại tổ chức có thẩm quyền hoặc giao dịch với người mà theo bản án, quyết định của cơ quan nhà nước có thẩm quyền là chủ sở hữu tài sản nhưng sau đó chủ thể này không phải là chủ sở hữu tài sản do bản án, quyết định bị huỷ, sửa."
+   },
+   "note": "Đoạn 1 thêm mới: tài sản ĐÃ đăng ký → giao dịch với người thứ ba ngay tình không vô hiệu",
+   "notes": "So từng chữ: phần gạch đỏ là chữ của BLDS 2005 bị bỏ, phần tô là chữ BLDS 2015 thêm. Điểm mấu chốt: luật mới chỉ tuyên vô hiệu khi tài sản CHƯA được đăng ký."
+  },
+  {
+   "type": "chart",
+   "kind": "span",
+   "kicker": "Thời gian tố tụng",
+   "title": "Ký thời [luật cũ], xử khi [luật mới] đã có hiệu lực",
+   "items": [
+    {
+     "label": "Các giao dịch",
+     "from": "03/12/2010",
+     "to": "20/08/2014"
+    },
+    {
+     "label": "Sơ thẩm",
+     "from": "23/09/2014",
+     "to": "20/11/2018",
+     "focus": true
+    },
+    {
+     "label": "Phúc thẩm",
+     "from": "20/11/2018",
+     "to": "21/08/2019"
+    },
+    {
+     "label": "Thế chấp NH V",
+     "from": "02/10/2017",
+     "to": "21/08/2019",
+     "hatch": true
+    }
+   ],
+   "markers": [
+    {
+     "date": "01/01/2017",
+     "label": "BLDS 2015 có hiệu lực"
+    }
+   ],
+   "annotate": {
+    "item": 1,
+    "text": "Luật đổi giữa lúc xử"
+   },
+   "insight": {
+    "value": "59",
+    "unit": "tháng",
+    "text": "Từ khởi kiện đến phúc thẩm"
+   },
+   "note": "Gạch chéo = quan hệ thế chấp chưa được giải quyết",
+   "notes": "Các giao dịch xác lập khi BLDS 2005 còn hiệu lực; vụ án kéo dài qua mốc 01/01/2017. Phần gạch chéo là quan hệ thế chấp chưa được giải quyết."
+  },
+  {
+   "type": "chart",
+   "kind": "bar",
+   "kicker": "Kết quả thoả thuận",
+   "title": "Người làm đúng thủ tục lại [thiệt nhất]",
+   "unit": "tr",
+   "items": [
+    {
+     "label": "Chủ nhà (P)",
+     "value": 150
+    },
+    {
+     "label": "Người cho vay (Q)",
+     "value": 500
+    },
+    {
+     "label": "Người mua",
+     "value": 350,
+     "tone": "bad",
+     "focus": true
+    }
+   ],
+   "annotate": {
+    "item": 2,
+    "text": "Đã công chứng, có GCN"
+   },
+   "insight": {
+    "value": "350",
+    "unit": "triệu",
+    "text": "Người mua mất sau thoả thuận"
+   },
+   "note": "Chủ nhà: số tiền bỏ ra thêm; người cho vay: số nhận về; người mua: phần mất",
+   "notes": "Người mua làm đúng thủ tục công chứng, đăng ký nhưng lại là bên thiệt nhiều nhất."
+  },
+  {
+   "type": "checklist",
+   "kicker": "Câu 02 · Người mua có ngay tình?",
+   "title": "Người mua [chưa đủ] điều kiện ngay tình",
+   "items": [
+    {
+     "ok": "yes",
+     "head": "Hợp đồng có công chứng",
+     "src": "HĐ 20/8/2014"
+    },
+    {
+     "ok": "yes",
+     "head": "Có GCN đứng tên",
+     "src": "GCN BP 150838"
+    },
+    {
+     "ok": "no",
+     "head": "Không đến xem nhà, không hỏi người đang ở",
+     "text": "Gia đình P vẫn sống trên đất suốt thời gian giao dịch"
+    }
+   ],
+   "verdict": {
+    "ok": "no",
+    "text": "Khó chứng minh ngay tình — quan điểm người viết"
+   },
+   "build": true,
+   "notes": "Bấm để hiện lần lượt từng điều kiện rồi mới hiện kết luận."
+  },
+  {
+   "type": "hero",
+   "num": "14",
+   "unit": "ngày",
+   "kicker": "Bước ngoặt",
+   "title": "Có GCN được [14 ngày], người mua đã phải đi kiện",
+   "sub": "Giấy tờ đầy đủ không thay được việc đến xem nhà, hỏi người đang ở.",
+   "note": "Từ 09/9/2014 (cấp GCN) đến 23/9/2014 (khởi kiện)",
+   "notes": "Chỉ 14 ngày sau khi được cấp GCN, người mua phải khởi kiện vì không nhận được nhà."
+  },
+  {
+   "type": "deadline",
+   "kicker": "Sau phúc thẩm",
+   "title": "Còn [3 năm] để xem xét lại theo giám đốc thẩm",
+   "from": "21/08/2019",
+   "to": "21/08/2022",
+   "fromLabel": "Bản án phúc thẩm có hiệu lực",
+   "toLabel": "Hết hạn kháng nghị (tự tính)",
+   "display": "3 năm",
+   "label": "Thời hạn kháng nghị giám đốc thẩm",
+   "today": "21/08/2020",
+   "markers": [
+    {
+     "date": "21/08/2020",
+     "label": "Ví dụ: một năm đã trôi qua"
+    }
+   ],
+   "note": "Ngày cuối do người viết tính — cần kiểm theo Điều 147–148 BLDS 2015",
+   "notes": "Lịch tô theo từng tháng: phần đậm là thời gian đã trôi tính đến mốc ví dụ, phần nhạt là thời gian còn lại."
+  },
+  {
+   "type": "quiz",
+   "kicker": "Kiểm tra nhanh",
+   "title": "Ngày 20/8/2014, văn bản nào đang có hiệu lực?",
+   "options": [
+    "Bộ luật Dân sự 2005",
+    "Bộ luật Dân sự 2015",
+    "Bộ luật Dân sự 1995",
+    "Luật Đất đai 2024"
+   ],
+   "notes": "Cho lớp 20 giây suy nghĩ trước khi chuyển sang đáp án."
+  },
+  {
+   "type": "quiz",
+   "kicker": "Kiểm tra nhanh",
+   "title": "Ngày 20/8/2014, văn bản nào đang có hiệu lực?",
+   "options": [
+    "Bộ luật Dân sự 2005",
+    "Bộ luật Dân sự 2015",
+    "Bộ luật Dân sự 1995",
+    "Luật Đất đai 2024"
+   ],
+   "reveal": true,
+   "answer": 0,
+   "why": "BLDS 2015 (Luật 91/2015/QH13) chỉ có hiệu lực từ 01/01/2017 — năm 2014 BLDS 2005 đang áp dụng",
+   "whyNot": [
+    "",
+    "Có hiệu lực từ 01/01/2017 — sau ngày ký",
+    "Hết hiệu lực từ 01/01/2006",
+    "Ban hành năm 2024"
+   ],
+   "notes": "Đáp án A. BLDS 2015 có hiệu lực từ 01/01/2017 nên năm 2014 vẫn áp dụng BLDS 2005."
+  },
+  {
+   "type": "end",
+   "title": "Cảm ơn thầy cô và các bạn",
+   "sub": "Hỏi đáp",
+   "notes": "Cảm ơn và mời đặt câu hỏi."
+  }
+ ]
+}

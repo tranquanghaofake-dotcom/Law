@@ -63,3 +63,21 @@ Bốn quy tắc, tất cả đều nhằm một việc: để người chấm th
 **So với ngưỡng bằng đúng cách diễn đạt của văn bản.** "Vượt mức từ 65% trở lên" chứ không phải "trên 65%" — sao chép đúng dạng so sánh của quy phạm là cách rẻ nhất để chứng minh mình đã đọc nguyên văn.
 
 Cuối cùng, nếu bài có một chỗ mà lấy nhầm mẫu số sẽ đảo chiều kết luận, nói thẳng ra chỗ đó trong một câu. Đây vừa là phần gọi tên bẫy theo yêu cầu chung của kỹ năng, vừa là thứ người chấm nhìn vào để phân biệt bài hiểu cơ chế với bài tính đúng ngẫu nhiên.
+
+## Ví dụ 3 — bài tập tình huống có số liệu (neo dạng định lượng)
+
+*Đề thi thật môn Pháp luật về chủ thể kinh doanh, Đại học Luật TP. Hồ Chí Minh; phần trả lời do kỹ năng soạn, không phải barem của giảng viên. Ví dụ neo độ dài, thứ tự nhịp và giọng văn — khi quy tắc mâu thuẫn với ví dụ, ví dụ thắng.*
+
+**Đề bài rút gọn:** Công ty TNHH Mỹ Kim có vốn điều lệ 3 tỷ đồng: Bình 1 tỷ, Minh 800 triệu, Thủy 700 triệu, Lan 500 triệu. Điều lệ không quy định khác Luật Doanh nghiệp. Minh triệu tập họp Hội đồng thành viên thông qua báo cáo tài chính, chỉ có Minh và Lan dự. Hai mươi ngày sau, Minh triệu tập họp thông qua nghị quyết sáp nhập công ty; lần này có Bình, Lan và Minh dự, khi biểu quyết chỉ Lan không chấp thuận. Hỏi hai cuộc họp có hợp lệ không và nghị quyết sáp nhập có được thông qua không.
+
+**Cách xử lý đúng:** Cuộc họp thứ nhất không hợp lệ, cuộc họp thứ hai hợp lệ, và nghị quyết sáp nhập được thông qua.
+
+Cuộc họp thứ nhất có Minh và Lan, tức 800 + 500 = 1.300/3.000 = 43,33% vốn điều lệ, dưới ngưỡng 65% tại khoản 1 Điều 58 Luật Doanh nghiệp năm 2020, nên không đủ điều kiện tiến hành.
+
+Cuộc họp thứ hai có Bình, Lan và Minh, tức 1.000 + 500 + 800 = 2.300/3.000 = 76,67% vốn điều lệ, vượt 65% nên hợp lệ. Không cần viện dẫn cơ chế triệu tập lần hai tại khoản 2 Điều 58. Nội dung họp đã khác (sáp nhập thay vì báo cáo tài chính), và lần triệu tập sau 20 ngày đã quá thời hạn 15 ngày gửi thông báo mời họp lần thứ hai. Đây là một cuộc họp mới, đủ điều kiện ngay ở lần thứ nhất.
+
+Về tỷ lệ thông qua, **mẫu số đổi**: theo khoản 3 Điều 59, tỷ lệ tán thành tính trên tổng số vốn góp của các thành viên **dự họp**, không phải trên vốn điều lệ. Tán thành là Bình và Minh: 1.000 + 800 = 1.800/2.300 = 78,26%. Sáp nhập thuộc nhóm tổ chức lại công ty tại điểm b khoản 3 Điều 59, cần từ 75% trở lên, nên nghị quyết được thông qua.
+
+Đây chính là chỗ mất điểm của cả dạng bài. Nếu lấy vốn điều lệ làm mẫu số thì ra 1.800/3.000 = 60%, dưới 75%, và kết luận đảo chiều thành "không được thông qua" — dù bài đã dẫn đủ cả Điều 58 lẫn Điều 59.
+
+*Phép tính viết ra dạng phân số, kết luận đặt trước phép tính ở mỗi khối. Quy trình đầy đủ ở các mục trên. Không có dòng nhắc đối chiếu vì ví dụ giả định Điều 58 và Điều 59 đã được đối chiếu văn bản gốc trong phiên (mức A); chưa đối chiếu thì bắt buộc có dòng đó, vì mọi ngưỡng phần trăm mặc định là thứ phải tra.*

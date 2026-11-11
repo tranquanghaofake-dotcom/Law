@@ -1,0 +1,7 @@
+[
+  { "name": "quiz", "url": "http://localhost:8765/Law/#/bo/dat-coc", "viewport": [432, 768], "scale": 2.5, "sec": 3, "waitFor": "text=Bảo đảm việc giao kết",
+    "actions": [{ "at": 0.6, "type": "click", "target": "text=Bảo đảm việc giao kết" }] },
+  { "name": "tim", "url": "http://localhost:8765/Law/#/mon/dan-su-2/khai-niem", "viewport": [432, 768], "scale": 2.5, "sec": 2.5, "waitFor": "input",
+    "actions": [{ "at": 0.3, "type": "type", "target": "input", "text": "dat coc", "every": 0.12 }] },
+  { "name": "khai-niem", "url": "http://localhost:8765/Law/#/mon/dan-su-2/khai-niem/dat-coc", "viewport": [432, 768], "scale": 2.5, "reducedMotion": true }
+]

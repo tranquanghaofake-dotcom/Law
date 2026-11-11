@@ -1,0 +1,15 @@
+<!-- route: ma trận "điều kiện × chặng đường" — mỗi hàng 1 thanh: bên A chịu tới điểm chuyển, bên B chịu sau; có thể thêm đường chi phí và huy hiệu | Incoterms, chuyển rủi ro, phân chia trách nhiệm theo chặng -->
+<section>
+  <div class="secno" data-margin>1</div>
+  <h2>Rủi ro chuyển ở đâu? <small>căn cứ</small></h2>
+  <div class="card route" style="--stops:6">
+    <div class="rt-head">
+      <span></span>
+      <div class="rt-stops"><span><span class="ico" data-icon="warehouse"></span>Chặng 0</span><span><span class="ico" data-icon="truck"></span>Chặng 1</span><span><span class="ico" data-icon="container"></span>Chặng 2</span><span><span class="ico" data-icon="ship"></span>Chặng 3</span><span><span class="ico" data-icon="flag"></span>Chặng 4</span><span><span class="ico" data-icon="package-open"></span>Chặng 5</span></div>
+      <span class="rt-badge-h">Cột phụ</span>
+    </div>
+    <div class="rt-group">Nhóm</div>
+    <!-- --at: điểm chuyển (0…stops-1); --cost: điểm bên A trả phí tới (tùy chọn) -->
+    <div class="rt-row"><b class="rt-code">XXX<small>tên</small></b><div class="rt-track" style="--at:3; --cost:4"><i class="rt-cost"></i></div><span class="rt-badge">A</span></div>
+  </div>
+</section>

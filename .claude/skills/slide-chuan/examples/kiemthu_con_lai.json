@@ -1,0 +1,362 @@
+{
+ "theme": "teal",
+ "meta": {
+  "title": "Kiểm thử các bố cục còn lại",
+  "short": "Kiểm thử bố cục",
+  "motif": [
+   "contour",
+   "dots"
+  ]
+ },
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Deck kiểm thử engine",
+   "title": "Đủ [mọi type] còn lại của slide-chuan",
+   "subtitle": "Số liệu trong deck này là GIẢ ĐỊNH để kiểm bố cục — không dùng làm dẫn chứng",
+   "author": "slide-chuan",
+   "art": "land",
+   "notes": "Deck dùng để soát bố cục: section, split, gallery, share, table, 5 dạng chart, map tô nhóm, photo có chú thích."
+  },
+  {
+   "type": "section",
+   "num": "1",
+   "title": "Đất đai và [quy hoạch]",
+   "sub": "Các bố cục ảnh thật và bản đồ",
+   "notes": "Slide chuyển phần."
+  },
+  {
+   "type": "split",
+   "kicker": "Phần 1 · Đối tượng",
+   "title": "Phố cổ — [đất ở] gắn với nhà",
+   "sub": "Ảnh thật chiếm hơn nửa slide, thẻ chữ đè mép ảnh.",
+   "photo": "images/pho-co-ha-noi.jpg",
+   "photoAlt": "Phố cổ Hà Nội",
+   "photoMark": {
+    "x": 0.55,
+    "y": 0.45,
+    "label": "Nhà ống san sát"
+   },
+   "items": [
+    {
+     "icon": "PiHouseDuotone",
+     "head": "Nhà ống mặt phố",
+     "text": "Mặt tiền hẹp, sâu"
+    },
+    {
+     "icon": "PiStorefrontDuotone",
+     "head": "Ở kết hợp kinh doanh",
+     "text": "Tầng trệt bán hàng"
+    }
+   ],
+   "notes": "split: ảnh bên phải, thẻ chữ trái."
+  },
+  {
+   "type": "gallery",
+   "kicker": "Phần 1 · Hiện trạng",
+   "title": "Hai ảnh cho thấy nhà [mọc giữa ruộng]",
+   "photos": [
+    {
+     "photo": "images/nha-giua-ruong.jpg",
+     "caption": "Nhà ở xen giữa ruộng lúa",
+     "alt": "Nhà giữa ruộng"
+    },
+    {
+     "photo": "images/rom-ra.jpg",
+     "caption": "Ruộng sau gặt",
+     "alt": "Rơm rạ"
+    }
+   ],
+   "note": "Ảnh minh hoạ",
+   "notes": "gallery 2 ảnh."
+  },
+  {
+   "type": "share",
+   "kicker": "Phần 1 · Ngưỡng đồng thuận",
+   "title": "Cần [75%] chủ sử dụng đất đồng ý",
+   "pct": 75,
+   "style": "parcels",
+   "label": "Tỉ lệ giả định để kiểm bố cục",
+   "legend": [
+    "Đồng ý",
+    "Chưa đồng ý"
+   ],
+   "items": [
+    {
+     "icon": "PiUsersDuotone",
+     "head": "Đủ ngưỡng",
+     "text": "Dự án được tiếp tục"
+    },
+    {
+     "icon": "PiWarningDuotone",
+     "head": "Thiếu ngưỡng",
+     "text": "Phải vận động thêm"
+    }
+   ],
+   "notes": "share dạng thửa đất."
+  },
+  {
+   "type": "map",
+   "kicker": "Phần 1 · Sắp xếp đơn vị hành chính",
+   "title": "Sau sắp xếp còn [34 tỉnh, thành]",
+   "groups": [
+    {
+     "label": "Tỉnh, thành hợp nhất",
+     "preset": "merged"
+    },
+    {
+     "label": "Giữ nguyên",
+     "preset": "kept",
+     "tone": "muted"
+    }
+   ],
+   "note": "Nghị quyết 202/2025/QH15",
+   "notes": "map tô nhóm 34 tỉnh."
+  },
+  {
+   "type": "photo",
+   "kicker": "Phần 1 · Chi tiết",
+   "title": "Chi tiết nhỏ nói lên [ai đang ở]",
+   "sub": "Ảnh là chứng cứ — chú thích đánh số chỉ thẳng vào chi tiết.",
+   "side": "left",
+   "photo": "images/nha-co-nguoi-o.jpg",
+   "photoStyle": "natural",
+   "photoAlt": "Nhà ống có người ở (ảnh minh hoạ)",
+   "callouts": [
+    {
+     "x": 0.75,
+     "y": 0.33,
+     "label": "Quần áo phơi"
+    },
+    {
+     "x": 0.6,
+     "y": 0.62,
+     "label": "Rèm tầng một"
+    }
+   ],
+   "notes": "photo có callouts."
+  },
+  {
+   "type": "section",
+   "num": "2",
+   "title": "Số liệu và [nguồn]",
+   "sub": "Bảng, biểu đồ, tài liệu tham khảo",
+   "notes": "Slide chuyển phần."
+  },
+  {
+   "type": "chart",
+   "kind": "bar",
+   "kicker": "Phần 2 · So sánh",
+   "title": "Tranh chấp đất đai [chiếm nhiều nhất]",
+   "unit": "vụ",
+   "items": [
+    {
+     "label": "Đất đai",
+     "value": 420,
+     "focus": true
+    },
+    {
+     "label": "Hợp đồng",
+     "value": 260
+    },
+    {
+     "label": "Thừa kế",
+     "value": 180
+    },
+    {
+     "label": "Hôn nhân",
+     "value": 140
+    }
+   ],
+   "insight": {
+    "value": "42%",
+    "unit": "tổng số vụ",
+    "text": "Đất đai gần bằng hợp đồng và thừa kế cộng lại"
+   },
+   "notes": "chart bar."
+  },
+  {
+   "type": "chart",
+   "kind": "donut",
+   "kicker": "Phần 2 · Tỉ trọng",
+   "title": "Hơn nửa số vụ [hoà giải thành]",
+   "center": "1.000",
+   "items": [
+    {
+     "label": "Hoà giải thành",
+     "value": 540,
+     "focus": true
+    },
+    {
+     "label": "Xét xử",
+     "value": 310
+    },
+    {
+     "label": "Đình chỉ",
+     "value": 150
+    }
+   ],
+   "insight": {
+    "value": "54%",
+    "unit": "hoà giải thành",
+    "text": "Hoà giải tiết kiệm thời gian cho cả hai bên"
+   },
+   "notes": "chart donut."
+  },
+  {
+   "type": "table",
+   "kicker": "Phần 2 · Tra cứu",
+   "title": "Mức xử phạt [tăng theo diện tích] vi phạm",
+   "cols": [
+    {
+     "label": "Diện tích"
+    },
+    {
+     "label": "Nông thôn",
+     "align": "right"
+    },
+    {
+     "label": "Đô thị",
+     "align": "right"
+    }
+   ],
+   "rows": [
+    [
+     "Dưới 0,05 ha",
+     "3–5 tr",
+     "6–10 tr"
+    ],
+    [
+     "0,05 – 0,1 ha",
+     "5–10 tr",
+     "10–20 tr"
+    ],
+    [
+     "0,1 – 0,5 ha",
+     "10–20 tr",
+     "20–40 tr"
+    ],
+    [
+     "Từ 0,5 ha",
+     "20–50 tr",
+     "40–100 tr"
+    ]
+   ],
+   "focus": 3,
+   "note": "Đô thị gấp đôi nông thôn",
+   "notes": "table có focus."
+  },
+  {
+   "type": "chart",
+   "kind": "slope",
+   "kicker": "Phần 2 · Trước và sau",
+   "title": "Luật mới [rút ngắn] thời gian giải quyết",
+   "ends": [
+    "Trước",
+    "Sau"
+   ],
+   "unit": "ngày",
+   "items": [
+    {
+     "label": "Cấp GCN lần đầu",
+     "value": 30,
+     "after": 20,
+     "focus": true
+    },
+    {
+     "label": "Đăng ký biến động",
+     "value": 10,
+     "after": 8
+    },
+    {
+     "label": "Tách thửa",
+     "value": 15,
+     "after": 12
+    }
+   ],
+   "insight": {
+    "value": "−33%",
+    "unit": "cấp GCN",
+    "text": "Thủ tục cấp GCN rút ngắn nhiều nhất"
+   },
+   "notes": "chart slope."
+  },
+  {
+   "type": "chart",
+   "kind": "column",
+   "kicker": "Phần 2 · Xu hướng",
+   "title": "Số vụ [tăng đều] qua sáu năm",
+   "unit": "vụ",
+   "items": [
+    {
+     "label": "2019",
+     "value": 300
+    },
+    {
+     "label": "2020",
+     "value": 280
+    },
+    {
+     "label": "2021",
+     "value": 260
+    },
+    {
+     "label": "2022",
+     "value": 340
+    },
+    {
+     "label": "2023",
+     "value": 380
+    },
+    {
+     "label": "2024",
+     "value": 420,
+     "focus": true
+    }
+   ],
+   "bands": [
+    {
+     "from": "2020",
+     "to": "2021",
+     "label": "COVID-19"
+    }
+   ],
+   "insight": {
+    "value": "+40%",
+    "unit": "2019 → 2024",
+    "text": "Giảm trong dịch, tăng mạnh sau đó"
+   },
+   "notes": "chart column."
+  },
+  {
+   "type": "closing",
+   "kicker": "Kết",
+   "title": "Bố cục nào cũng phải [trả lời một câu hỏi]",
+   "lessons": [
+    {
+     "icon": "PiChartBarDuotone",
+     "head": "Số liệu",
+     "text": "Biểu đồ khi cần so sánh"
+    },
+    {
+     "icon": "PiTableDuotone",
+     "head": "Tra cứu",
+     "text": "Bảng khi cần con số chính xác"
+    },
+    {
+     "icon": "PiImageDuotone",
+     "head": "Ảnh",
+     "text": "Ảnh khi ảnh là chứng cứ"
+    }
+   ],
+   "rec": {
+    "title": "Kiểm tra trước khi nộp",
+    "items": [
+     "Chạy --strict",
+     "Xem ảnh sheet bằng mắt"
+    ]
+   },
+   "notes": "closing dạng bài học."
+  }
+ ]
+}

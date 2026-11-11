@@ -1,0 +1,257 @@
+{
+ "title": "Nghỉ việc phải báo trước bao lâu? — mẫu bộ cảnh áp phích 9:16",
+ "format": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 60
+ },
+ "music": {
+  "bpm": 100,
+  "offsetSec": 0,
+  "phraseBars": 4,
+  "gapBeats": 1,
+  "file": null
+ },
+ "theme": {
+  "ground": "#f4eddc",
+  "ground2": "#fffaf0",
+  "ink": "#0c1222",
+  "inkSoft": "#5b5443",
+  "accent": "#e2402a",
+  "accent2": "#2c9566",
+  "pop": "#f6b93b",
+  "display": "anton",
+  "ui": "be-vietnam-pro"
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "PosterHook",
+   "bars": 2,
+   "bg": "dark",
+   "props": {
+    "kicker": "Luật lao động",
+    "glyph": "?",
+    "lines": [
+     {
+      "text": "Nghỉ việc",
+      "at": -1
+     },
+     {
+      "text": "phải báo trước",
+      "at": 0,
+      "tone": "pop"
+     },
+     {
+      "text": "bao lâu?",
+      "at": 2,
+      "tone": "box"
+     }
+    ],
+    "hits": [
+     2
+    ]
+   }
+  },
+  {
+   "id": "dieu-35",
+   "type": "PosterLaw",
+   "bars": 2,
+   "props": {
+    "cite": "Điều 35",
+    "source": "Bộ luật Lao động 2019 · khoản 1",
+    "quote": "…đơn phương chấm dứt hợp đồng lao động nhưng [phải báo trước]…",
+    "at": 0,
+    "quoteAt": 1,
+    "markAt": 3.5,
+    "stamp": {
+     "text": "Khoản 1",
+     "at": 5.5
+    },
+    "hits": [
+     5.5
+    ]
+   }
+  },
+  {
+   "id": "ba-muc",
+   "type": "PosterSteps",
+   "bars": 4,
+   "props": {
+    "kicker": "Khoản 1 Điều 35",
+    "title": "Ba mức báo trước",
+    "start": 2,
+    "every": 4,
+    "steps": [
+     {
+      "big": "45",
+      "label": "ngày",
+      "sub": "Hợp đồng không xác định thời hạn"
+     },
+     {
+      "big": "30",
+      "label": "ngày",
+      "sub": "Hợp đồng 12–36 tháng"
+     },
+     {
+      "big": "3",
+      "label": "ngày làm việc",
+      "sub": "Hợp đồng dưới 12 tháng"
+     }
+    ],
+    "hits": [
+     2,
+     6,
+     10
+    ]
+   }
+  },
+  {
+   "id": "ngoai-le",
+   "type": "PosterVersus",
+   "bars": 4,
+   "props": {
+    "left": {
+     "label": "Phải báo trước",
+     "sub": "Khoản 1"
+    },
+    "right": {
+     "label": "Không cần báo",
+     "sub": "Khoản 2 — ví dụ",
+     "items": [
+      "Không được trả đủ lương",
+      "Bị ngược đãi, quấy rối",
+      "Mang thai phải nghỉ việc"
+     ]
+    },
+    "vs": "HAY",
+    "at": 0,
+    "atRight": 1,
+    "atVs": 2,
+    "itemsAt": 4,
+    "itemEvery": 2,
+    "hits": [
+     2
+    ]
+   }
+  },
+  {
+   "id": "trai-luat",
+   "type": "PosterVerdict",
+   "bars": 4,
+   "props": {
+    "question": "Nghỉ không báo?",
+    "word": "Trái luật",
+    "tone": "bad",
+    "at": 2,
+    "reasons": [
+     {
+      "text": "Mất trợ cấp thôi việc",
+      "at": 4
+     },
+     {
+      "text": "Bồi thường nửa tháng lương và lương những ngày không báo trước",
+      "at": 6
+     },
+     {
+      "text": "Hoàn trả chi phí đào tạo",
+      "at": 9
+     }
+    ],
+    "cite": "Điều 40",
+    "citeAt": 11,
+    "hits": [
+     2
+    ]
+   }
+  },
+  {
+   "id": "45-ngay",
+   "type": "PosterNumber",
+   "bars": 2,
+   "bg": "dark",
+   "props": {
+    "kicker": "Mức dài nhất",
+    "value": 45,
+    "unit": "ngày",
+    "label": "Hợp đồng không xác định thời hạn",
+    "cells": 45,
+    "at": 0,
+    "dur": 3,
+    "hits": [
+     3
+    ]
+   }
+  },
+  {
+   "id": "ket",
+   "type": "PosterEnd",
+   "bars": 2,
+   "bg": "dark",
+   "props": {
+    "glyph": "§",
+    "lines": [
+     "Báo đủ ngày",
+     "[rồi hãy nghỉ]"
+    ],
+    "at": 0,
+    "every": 1,
+    "cta": "Lưu lại để dùng khi cần",
+    "ctaAt": 3,
+    "sources": [
+     "Điều 35, Điều 40 Bộ luật Lao động số 45/2019/QH14, có hiệu lực từ 01/01/2021.",
+     "Ngành, nghề đặc thù: thời hạn báo trước theo quy định của Chính phủ (điểm d khoản 1 Điều 35).",
+     "Thông tin pháp luật chung, không phải tư vấn cho trường hợp cụ thể."
+    ],
+    "sourcesAt": 4
+   }
+  }
+ ],
+ "cues": [
+  {
+   "sfx": "drop_002",
+   "beat": 2,
+   "volume": 0.4
+  },
+  {
+   "sfx": "bong_001",
+   "beat": 13.5,
+   "volume": 0.35
+  },
+  {
+   "sfx": "select_001",
+   "beat": 18,
+   "volume": 0.3
+  },
+  {
+   "sfx": "select_001",
+   "beat": 22,
+   "volume": 0.3
+  },
+  {
+   "sfx": "select_001",
+   "beat": 26,
+   "volume": 0.3
+  },
+  {
+   "sfx": "bong_001",
+   "beat": 34,
+   "volume": 0.35
+  },
+  {
+   "sfx": "drop_002",
+   "beat": 50,
+   "volume": 0.45
+  },
+  {
+   "sfx": "confirmation_001",
+   "beat": 67,
+   "volume": 0.35
+  },
+  {
+   "sfx": "maximize_006",
+   "beat": 75,
+   "volume": 0.3
+  }
+ ]
+}

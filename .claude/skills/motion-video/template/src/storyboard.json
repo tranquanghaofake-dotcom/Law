@@ -1,0 +1,156 @@
+{
+ "title": "Mẫu tối thiểu — bộ cảnh áp phích, chỉ chữ và đồ hoạ, không cần asset",
+ "format": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 60
+ },
+ "music": {
+  "bpm": 100,
+  "offsetSec": 0,
+  "phraseBars": 4,
+  "gapBeats": 1,
+  "file": null
+ },
+ "theme": {
+  "ground": "#f4eddc",
+  "ground2": "#fffaf0",
+  "ink": "#0c1222",
+  "inkSoft": "#5b5443",
+  "accent": "#e2402a",
+  "accent2": "#2c9566",
+  "pop": "#f6b93b",
+  "display": "anton",
+  "ui": "be-vietnam-pro"
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "PosterHook",
+   "bars": 2,
+   "bg": "dark",
+   "props": {
+    "kicker": "Chủ đề",
+    "glyph": "?",
+    "lines": [
+     {
+      "text": "Một câu hỏi",
+      "at": -1
+     },
+     {
+      "text": "người xem gặp",
+      "at": 0,
+      "tone": "pop"
+     },
+     {
+      "text": "mỗi ngày?",
+      "at": 2,
+      "tone": "box"
+     }
+    ],
+    "hits": [
+     2
+    ]
+   }
+  },
+  {
+   "id": "so",
+   "type": "PosterNumber",
+   "bars": 2,
+   "props": {
+    "kicker": "Con số chính",
+    "value": 75,
+    "suffix": "%",
+    "label": "Một dòng nói con số này đo cái gì",
+    "cells": 100,
+    "at": 0,
+    "dur": 3,
+    "hits": [
+     3
+    ]
+   }
+  },
+  {
+   "id": "buoc",
+   "type": "PosterSteps",
+   "bars": 4,
+   "props": {
+    "title": "Ba bước",
+    "start": 2,
+    "every": 4,
+    "steps": [
+     {
+      "label": "Bước một",
+      "sub": "Việc cụ thể phải làm"
+     },
+     {
+      "label": "Bước hai",
+      "sub": "Việc cụ thể phải làm"
+     },
+     {
+      "label": "Bước ba",
+      "sub": "Kết quả nhận được"
+     }
+    ],
+    "hits": [
+     2,
+     6,
+     10
+    ]
+   }
+  },
+  {
+   "id": "ket",
+   "type": "PosterEnd",
+   "bars": 4,
+   "bg": "dark",
+   "props": {
+    "glyph": "§",
+    "lines": [
+     "Một câu",
+     "[để nhớ]"
+    ],
+    "at": 0,
+    "every": 1,
+    "cta": "Lời kêu gọi một dòng",
+    "ctaAt": 3,
+    "sources": [
+     "Nguồn: ghi tên tài liệu, số hiệu văn bản, điều khoản, hiệu lực."
+    ],
+    "sourcesAt": 5
+   }
+  }
+ ],
+ "cues": [
+  {
+   "sfx": "drop_002",
+   "beat": 2,
+   "volume": 0.4
+  },
+  {
+   "sfx": "confirmation_001",
+   "beat": 11,
+   "volume": 0.35
+  },
+  {
+   "sfx": "select_001",
+   "beat": 18,
+   "volume": 0.3
+  },
+  {
+   "sfx": "select_001",
+   "beat": 22,
+   "volume": 0.3
+  },
+  {
+   "sfx": "select_001",
+   "beat": 26,
+   "volume": 0.3
+  },
+  {
+   "sfx": "maximize_006",
+   "beat": 35,
+   "volume": 0.3
+  }
+ ]
+}

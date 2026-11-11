@@ -1,0 +1,366 @@
+{
+ "title": "Đặt cọc — ai bỏ cuộc thì mất (explainer 16:9, thử skill)",
+ "format": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 60
+ },
+ "music": {
+  "bpm": 111,
+  "offsetSec": 0,
+  "phraseBars": 8,
+  "gapBeats": 1.5,
+  "file": null
+ },
+ "theme": {
+  "ground": "#f7f4ee",
+  "ground2": "#ffffff",
+  "ink": "#14213d",
+  "inkSoft": "#5b6475",
+  "accent": "#d97a1e",
+  "accent2": "#1f7a4d",
+  "display": "noto-serif-display",
+  "ui": "be-vietnam-pro"
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "TitleSlam",
+   "bars": 2,
+   "bg": "dark",
+   "props": {
+    "lines": [
+     {
+      "text": "Đặt cọc 20 triệu",
+      "at": 0
+     },
+     {
+      "text": "chủ nhà bán người khác",
+      "at": 2
+     },
+     {
+      "text": "ĐƯỢC TRẢ BAO NHIÊU?",
+      "at": 5,
+      "size": "hero",
+      "color": "accent",
+      "glitch": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "the",
+   "type": "KnowledgeCard",
+   "bars": 6,
+   "props": {
+    "kicker": "Hiểu nhanh",
+    "term": "Đặt cọc",
+    "gist": "Giao trước một khoản để bảo đảm ký hoặc làm hợp đồng; bên đặt bỏ thì mất cọc, bên nhận bỏ thì trả gấp đôi.",
+    "branches": [
+     {
+      "label": "Mục đích",
+      "icon": "target",
+      "children": [],
+      "tone": "accent"
+     },
+     {
+      "label": "Thực hiện xong",
+      "icon": "check",
+      "children": [],
+      "tone": "accent2"
+     },
+     {
+      "label": "Bên đặt cọc từ chối",
+      "icon": "ban",
+      "children": [],
+      "tone": "warn"
+     },
+     {
+      "label": "Bên nhận cọc từ chối",
+      "icon": "money",
+      "children": [],
+      "tone": "accent"
+     }
+    ],
+    "hook": "Ai bỏ cuộc, người đó mất",
+    "at": {
+     "gist": 1,
+     "branches": 12,
+     "hook": 17
+    }
+   }
+  },
+  {
+   "id": "dap",
+   "type": "TitleSlam",
+   "bars": 2,
+   "bg": "accent",
+   "props": {
+    "lines": [
+     {
+      "text": "Chủ nhà bỏ cuộc",
+      "at": 0
+     },
+     {
+      "text": "→ TRẢ 40 TRIỆU",
+      "at": 2,
+      "size": "hero",
+      "color": "ink"
+     }
+    ],
+    "sub": {
+     "text": "20 triệu cọc + 20 triệu",
+     "at": 4
+    }
+   }
+  },
+  {
+   "id": "quiz",
+   "type": "DeviceDemo",
+   "bars": 4,
+   "bg": "dark",
+   "props": {
+    "kicker": "Luyện ngay trên web",
+    "title": "Trả lời là biết vì sao",
+    "accentWords": [
+     3,
+     4
+    ],
+    "device": "phone",
+    "media": {
+     "kind": "video",
+     "src": "cap/quiz.mp4"
+    },
+    "poster": "cap/quiz-0.png",
+    "syncSec": 0.6,
+    "syncBeat": 2,
+    "hits": [
+     2
+    ],
+    "chips": [
+     {
+      "text": "Căn cứ Khoản 1 Điều 328",
+      "at": 4,
+      "x": 140,
+      "y": 620,
+      "tone": "accent"
+     },
+     {
+      "text": "Xem nguyên văn điều luật",
+      "at": 6,
+      "x": 140,
+      "y": 760,
+      "tone": "accent2"
+     }
+    ]
+   }
+  },
+  {
+   "id": "tim",
+   "type": "DeviceDemo",
+   "bars": 2,
+   "props": {
+    "kicker": "Tìm khái niệm",
+    "title": "Gõ không dấu vẫn ra",
+    "accentWords": [
+     1,
+     2
+    ],
+    "device": "phone",
+    "media": {
+     "kind": "video",
+     "src": "cap/tim.mp4"
+    },
+    "poster": "cap/tim-0.png",
+    "syncSec": 0.3,
+    "syncBeat": 1,
+    "chips": []
+   }
+  },
+  {
+   "id": "so",
+   "type": "StatCount",
+   "bars": 4,
+   "bg": "dark",
+   "props": {
+    "kicker": "Cả thư viện như vậy",
+    "stats": [
+     {
+      "value": 23,
+      "label": "môn",
+      "at": 0
+     },
+     {
+      "value": 690,
+      "label": "khái niệm",
+      "at": 1
+     },
+     {
+      "value": 47,
+      "label": "bộ đề luyện",
+      "at": 2
+     }
+    ],
+    "ring": [
+     {
+      "kind": "image",
+      "src": "cap/cover-an-sinh-xa-hoi.png"
+     },
+     {
+      "kind": "image",
+      "src": "cap/cover-canh-tranh.png"
+     },
+     {
+      "kind": "image",
+      "src": "cap/cover-chung-khoan.png"
+     },
+     {
+      "kind": "image",
+      "src": "cap/cover-dan-su-2.png"
+     },
+     {
+      "kind": "image",
+      "src": "cap/cover-dan-su.png"
+     },
+     {
+      "kind": "image",
+      "src": "cap/cover-dat-dai.png"
+     },
+     {
+      "kind": "image",
+      "src": "cap/cover-dau-tu.png"
+     },
+     {
+      "kind": "image",
+      "src": "cap/cover-hanh-chinh.png"
+     },
+     {
+      "kind": "image",
+      "src": "cap/cover-hien-phap.png"
+     },
+     {
+      "kind": "image",
+      "src": "cap/cover-hinh-su.png"
+     },
+     {
+      "kind": "image",
+      "src": "cap/cover-lao-dong-2.png"
+     },
+     {
+      "kind": "image",
+      "src": "cap/cover-lao-dong.png"
+     },
+     {
+      "kind": "image",
+      "src": "cap/cover-lich-su-nn-pl.png"
+     },
+     {
+      "kind": "image",
+      "src": "cap/cover-ly-luan-nn-pl.png"
+     },
+     {
+      "kind": "image",
+      "src": "cap/cover-ngan-hang.png"
+     },
+     {
+      "kind": "image",
+      "src": "cap/cover-so-huu-tri-tue.png"
+     },
+     {
+      "kind": "image",
+      "src": "cap/cover-tai-chinh-doanh-nghiep.png"
+     },
+     {
+      "kind": "image",
+      "src": "cap/cover-tai-chinh.png"
+     },
+     {
+      "kind": "image",
+      "src": "cap/cover-tai-san-tri-tue.png"
+     },
+     {
+      "kind": "image",
+      "src": "cap/cover-thuong-mai-1.png"
+     },
+     {
+      "kind": "image",
+      "src": "cap/cover-thuong-mai.png"
+     },
+     {
+      "kind": "image",
+      "src": "cap/cover-to-tung-dan-su.png"
+     },
+     {
+      "kind": "image",
+      "src": "cap/cover-xay-dung-vbpl.png"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ket",
+   "type": "EndCard",
+   "bars": 4,
+   "props": {
+    "mark": {
+     "text": "§"
+    },
+    "name": "Luyện Luật",
+    "tags": [
+     "23 môn",
+     "690 khái niệm"
+    ],
+    "cta": "Link ở mô tả",
+    "url": "tranquanghaofake-dotcom.github.io/Law",
+    "disclaimer": "Thông tin pháp luật chung để học tập, không phải tư vấn pháp lý."
+   }
+  }
+ ],
+ "cues": [
+  {
+   "sfx": "select_001",
+   "beat": 20,
+   "volume": 0.22
+  },
+  {
+   "sfx": "select_001",
+   "beat": 21,
+   "volume": 0.22
+  },
+  {
+   "sfx": "select_001",
+   "beat": 22,
+   "volume": 0.22
+  },
+  {
+   "sfx": "select_001",
+   "beat": 23,
+   "volume": 0.22
+  },
+  {
+   "sfx": "maximize_006",
+   "beat": 30.5,
+   "volume": 0.3
+  },
+  {
+   "sfx": "drop_002",
+   "beat": 32,
+   "volume": 0.3
+  },
+  {
+   "sfx": "confirmation_001",
+   "beat": 42,
+   "volume": 0.4
+  },
+  {
+   "sfx": "maximize_006",
+   "beat": 62.5,
+   "volume": 0.3
+  },
+  {
+   "sfx": "bong_001",
+   "beat": 80,
+   "volume": 0.4
+  }
+ ]
+}

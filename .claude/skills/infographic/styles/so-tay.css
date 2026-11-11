@@ -1,0 +1,55 @@
+/* so-tay: sổ tay cắt dán — nền giấy kraft chấm bi, các mảnh giấy trắng dán băng keo washi, bút dạ quang tô chữ, mũi tên vẽ tay, giấy nhớ, hình dán người; chữ Mali viết tay tròn. Tầng ÁP PHÍCH (trang giữ lề giấy). Hợp: dân sự, hôn nhân gia đình, thừa kế, chuyện của một gia đình hay một vụ việc — đề tài cần kể như một câu chuyện */
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@500;600;700&family=Patrick+Hand&family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap');
+:root {
+  --paper: #ead9bb; --ink: #2a2a35; --muted: #5a5345; --line: #c9b78f; --soft: #f6ecd6; --giay: #fffdf5;
+  --but: #2447b8; --vang: #ffe34d; --hong: #f2607c; --la: #23805a;
+  --bad: #b3243f; --bad-soft: #fbd5dc; --good: var(--la); --good-soft: #d3ecdf; --info: var(--but); --info-soft: #dbe3fa; --accent: var(--vang); --accent-ink: var(--ink);
+  --font: 'Be Vietnam Pro', sans-serif; --font-display: 'Mali', 'Be Vietnam Pro', sans-serif; --font-hand: 'Patrick Hand', 'Mali', sans-serif;
+  --radius: 4px; --gap: 0px; --pad-left: 0px; --bleed: 56px;
+}
+.sheet { padding: 54px var(--bleed) 54px; gap: 0; background: radial-gradient(circle, rgba(42,42,53,.16) 1.3px, transparent 1.6px) 0 0 / 26px 26px, var(--paper); }
+.sheet > * { flex-shrink: 0; position: relative; }
+h2 { font: 700 27px/1.25 var(--font-display); margin-bottom: 8px; } h2 small { font: 600 15px var(--font); color: var(--muted); margin-left: 8px; }
+/* bút dạ quang tô nửa dưới dòng chữ */
+mark, .to-vang { background: linear-gradient(transparent 52%, var(--vang) 52% 92%, transparent 92%); color: inherit; padding: 0 4px; white-space: nowrap; }
+.to-hong { background: linear-gradient(transparent 52%, #ffc2cd 52% 92%, transparent 92%); padding: 0 4px; }
+/* mảnh giấy dán: nền trắng ngà, bóng mềm, băng keo ở mép trên */
+.to { position: relative; background: var(--giay); border-radius: 3px; padding: 13px 20px; box-shadow: 0 2px 0 rgba(42,42,53,.10), 3px 6px 14px rgba(42,42,53,.16); }
+.to::before { content: ""; position: absolute; left: var(--bx, 34px); top: -13px; width: 96px; height: 26px; rotate: var(--br, -3deg); opacity: .86;
+  background: repeating-linear-gradient(115deg, var(--bk, #f2607c) 0 9px, #ffffff66 9px 13px), var(--bk, #f2607c); }
+.to.b2::after { content: ""; position: absolute; right: 30px; top: -13px; width: 80px; height: 26px; rotate: 4deg; opacity: .86; background: repeating-linear-gradient(115deg, var(--bk, #f2607c) 0 9px, #ffffff66 9px 13px), var(--bk, #f2607c); }
+.card, .tile { background: var(--giay); border: 0; border-radius: 3px; box-shadow: 0 2px 0 rgba(42,42,53,.10), 3px 6px 14px rgba(42,42,53,.16); }
+.tay { font-family: var(--font-hand); font-weight: 400; }
+
+/* ── đầu trang: tiêu đề viết tay lớn + ảnh lấy liền ── */
+.dau { display: grid; grid-template-columns: 1fr 238px; gap: 26px; align-items: start; margin-bottom: 12px; }
+.dau .nhan { display: inline-block; background: var(--but); color: #fff; font: 700 17px/1.3 var(--font-display); padding: 4px 14px; rotate: -2deg; }
+.dau h1 { font: 700 55px/1.2 var(--font-display); margin: 8px 0 10px; }
+.dau .fields { display: flex; flex-wrap: wrap; gap: 4px 22px; font: 600 15.5px/1.4 var(--font); color: var(--muted); } .dau .fields b { color: var(--ink); font-weight: 800; }
+.anh { background: #fff; padding: 12px 12px 10px; box-shadow: 3px 6px 14px rgba(42,42,53,.22); rotate: 4deg; text-align: center; }
+.anh .khung { background: var(--soft); height: 138px; display: grid; place-items: center; } .anh .khung .emo { --s: 100px; }
+.anh figcaption { font: 400 21px/1.2 var(--font-hand); margin-top: 8px; }
+
+/* ── các hàng: mỗi hàng một mảnh giấy, bên trái là số hàng viết tay, bên phải là các nhóm người ── */
+.hang { display: grid; grid-template-columns: 138px 1fr; gap: 18px; align-items: center; }
+.hang .so { text-align: center; font: 700 21px/1.15 var(--font-display); color: var(--but); } .hang .so b { display: block; font: 700 64px/1 var(--font-display); }
+.hang .nhom { display: grid; grid-template-columns: repeat(var(--n, 4), 1fr); gap: 10px; }
+.hang .nhom > div { text-align: center; font: 700 16.5px/1.25 var(--font); border-left: 2px dashed var(--line); padding: 0 6px; } .hang .nhom > div:first-child { border-left: 0; }
+.hang .nhom .emo { --s: 52px; margin: 0 -3px 3px; } .hang .nhom small { display: block; font: 500 13.5px/1.3 var(--font); color: var(--muted); margin-top: 2px; }
+/* mũi tên vẽ tay giữa hai hàng + lời ghi */
+.xuong { display: grid; grid-template-columns: 138px 1fr; gap: 18px; align-items: center; height: 50px; }
+.xuong i { justify-self: center; width: 44px; height: 50px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 50'%3E%3Cpath d='M23 3c-3 12 2 22-1 38M9 28c5 6 9 11 13 16c3-6 8-12 14-17' fill='none' stroke='%232447b8' stroke-width='4.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat; }
+.xuong span { font: 400 22px/1.15 var(--font-hand); color: var(--but); }
+
+/* ── hàng dưới: ví dụ chia phần + giấy nhớ ── */
+.duoi { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 24px; margin-top: 22px; align-items: start; }
+.chia { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 10px 0 8px; text-align: center; font: 700 14.5px/1.25 var(--font); }
+.chia .emo { --s: 48px; display: block; margin: 0 auto 2px; } .chia b { display: block; font: 700 19px/1.15 var(--font-display); color: var(--la); white-space: nowrap; }
+.to p { font: 500 15px/1.42 var(--font); } .to p + p { margin-top: 6px; } .to small { font: 700 13.5px/1.3 var(--font); color: var(--muted); }
+.nho { position: relative; background: var(--vang); padding: 16px 16px 14px; box-shadow: 3px 6px 12px rgba(42,42,53,.2); rotate: var(--r, 2deg); font: 500 15px/1.4 var(--font); }
+.nho.hong { background: #ffc2cd; } .nho h3 { font: 700 21px/1.2 var(--font-display); margin-bottom: 6px; } .nho small { display: block; margin-top: 6px; font: 700 13.5px/1.3 var(--font); color: #5a4a12; } .nho.hong small { color: #6e2334; }
+/* dải cuối: vòng tỉ lệ + lời dặn */
+.dan { display: grid; grid-template-columns: 118px 1fr 190px; gap: 22px; align-items: center; margin-top: 22px; }
+.dan .vong { --s: 112px; --c: var(--hong); } .dan .vong::before { background: var(--giay); } .dan .vong b { font: 700 32px/1 var(--font-display); }
+.dan .ai { display: flex; flex-wrap: wrap; gap: 4px; justify-content: center; } .dan .ai .emo { --s: 44px; } .dan .ai small { flex-basis: 100%; text-align: center; }
+.sheet > .sign { margin-top: auto; padding-top: 10px; text-align: left; font: 600 14px/1.4 var(--font); color: var(--muted); }

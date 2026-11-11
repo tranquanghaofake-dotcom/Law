@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mỗi năm ít nhất 24 ngày nghỉ mà vẫn nhận đủ lương</title>
+<link rel="stylesheet" href="../../styles/_base.css">
+<link rel="stylesheet" href="../../styles/thuy-si.css">
+<style>
+  /* chỉnh riêng cho bài này: hình chính là bản đồ ô 365 ngày (ECharts), bậc thang thâm niên (AntV) — sinh bằng scripts/bieu-do.mjs từ du-lieu/ */
+  .dau2 { padding: 12px 0 10px; }
+  .dau2 h1 { font: 900 68px/1.04 var(--font-display); font-stretch: 72%; letter-spacing: -.018em; }
+  .dan-giai { display: grid; grid-template-columns: 1fr 1fr 1.25fr; column-gap: 26px; margin-top: 12px; font: 600 15px/1.4 var(--font); }
+  .dan-giai > div { border-top: 1.5px solid var(--ink); padding-top: 6px; } .dan-giai b { font-weight: 800; color: var(--do); }
+  .o-365 { margin: 2px 0 12px; }
+  .le { display: grid; grid-template-columns: repeat(7, 1fr); column-gap: 14px; }
+  .le > div { border-top: 1.5px solid var(--ink); padding-top: 8px; font: 500 14px/1.36 var(--font); }
+  .le .dem { --cols: 5; --g: 3px; }
+  .le b { display: block; font: 800 16.5px/1.2 var(--font-display); font-stretch: 88%; margin: 6px 0 2px; }
+  .le .moi { display: inline-block; margin-left: 6px; padding: 0 6px 1px; background: var(--do); color: #fff; font: 800 13px/1.35 var(--font); }
+  .ghi { margin-top: 8px; font: 600 14px/1.4 var(--font); color: var(--muted); }
+  .bac { position: relative; margin: 0 0 2px; }
+  .bac .muc { position: absolute; right: 0; bottom: 0; width: 318px; border-top: 1.5px solid var(--ink); padding-top: 6px; font: 600 14px/1.4 var(--font); } .bac .muc b { font-weight: 800; color: var(--do); }
+</style>
+</head>
+<body>
+<main class="sheet">
+  <div class="nhan-dau">
+    <div>Căn cứ pháp lý<b>Điều 111 đến Điều 115 Bộ luật Lao động; Nghị quyết 28/2026/QH16</b></div>
+    <div>Dành cho<b>người lao động làm việc theo hợp đồng lao động</b></div>
+    <div>Khổ<b>A4</b></div>
+  </div>
+  <header class="dau2">
+    <h1 data-big>Mỗi năm ít nhất 24 ngày nghỉ<br>mà vẫn nhận đủ lương</h1>
+    <div class="dan-giai">
+      <div><b>12 ngày lễ, tết</b> cộng <b>12 ngày làm việc nghỉ hằng năm</b>, đều hưởng nguyên lương.</div>
+      <div>Tính cho người làm đủ 12 tháng, công việc trong điều kiện bình thường.</div>
+      <div>Mỗi ô dưới đây rộng đúng tỉ lệ số ngày trong 365 ngày; giả định mỗi tuần nghỉ một ngày, mức tối thiểu luật định.</div>
+    </div>
+  </header>
+  <div class="illus o-365" data-illus="365-ngay" data-big><svg width="968" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 968 266" role="img">
+<rect width="968" height="266" x="0" y="0" fill="none"></rect>
+<path d="M0 0l968 0l0 266l-968 0Z" fill="#f3f0e8" class="zr0-cls-0"></path>
+<path d="M0 0l764.7781 0l0 266l-764.7781 0Z" fill="#f3f0e8" class="zr0-cls-0"></path>
+<path d="M0 0l195.2219 0l0 179.4737l-195.2219 0Z" transform="translate(772.7781 0)" fill="#f3f0e8" class="zr0-cls-0"></path>
+<path d="M0 0l93.611 0l0 78.5263l-93.611 0Z" transform="translate(772.7781 187.4737)" fill="#f3f0e8" class="zr0-cls-0"></path>
+<path d="M0 0l93.611 0l0 78.5263l-93.611 0Z" transform="translate(874.389 187.4737)" fill="#f3f0e8" class="zr0-cls-0"></path>
+<path d="M0 0l764.7781 0l0 266l-764.7781 0Z" fill="#111111" class="zr0-cls-0"></path>
+<path d="M0 0l195.2219 0l0 179.4737l-195.2219 0Z" transform="translate(772.7781 0)" fill="#e4dfd2" class="zr0-cls-0"></path>
+<path d="M0 0l93.611 0l0 78.5263l-93.611 0Z" transform="translate(772.7781 187.4737)" fill="#c81a07" class="zr0-cls-0"></path>
+<path d="M0 0l93.611 0l0 78.5263l-93.611 0Z" transform="translate(874.389 187.4737)" fill="#c81a07" class="zr0-cls-0"></path>
+<path d="M20 9l225 0l0 150l-225 0Z" fill="none" class="zr0-cls-1"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:150px;font-family:Archivo;font-weight:900;" x="20" y="84" fill="#ffffff">289</text>
+<path d="M20 157l153.8465 0l0 22l-153.8465 0Z" fill="none" class="zr0-cls-1"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:22px;font-family:Be Vietnam Pro;font-weight:700;" xml:space="preserve" x="20" y="168" fill="#ffffff">ngày làm việc</text>
+<path d="M11 6l84 0l0 84l-84 0Z" transform="translate(772.7781 0)" fill="none" class="zr0-cls-1"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:84px;font-family:Archivo;font-weight:900;" x="11" y="48" transform="translate(772.7781 0)" fill="#111111">52</text>
+<path d="M11 90.5l88.9014 0l0 18l-88.9014 0Z" transform="translate(772.7781 0)" fill="none" class="zr0-cls-1"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:18px;font-family:Be Vietnam Pro;font-weight:700;" xml:space="preserve" x="11" y="99.5" transform="translate(772.7781 0)" fill="#111111">ngày nghỉ</text>
+<path d="M11 113.5l91.6014 0l0 18l-91.6014 0Z" transform="translate(772.7781 0)" fill="none" class="zr0-cls-1"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:18px;font-family:Be Vietnam Pro;font-weight:700;" xml:space="preserve" x="11" y="122.5" transform="translate(772.7781 0)" fill="#111111">hằng tuần</text>
+<path d="M11 8l46 0l0 46l-46 0Z" transform="translate(772.7781 187.4737)" fill="none" class="zr0-cls-1"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:46px;font-family:Archivo;font-weight:900;" x="11" y="31" transform="translate(772.7781 187.4737)" fill="#ffffff">12</text>
+<path d="M11 56l74.3555 0l0 15l-74.3555 0Z" transform="translate(772.7781 187.4737)" fill="none" class="zr0-cls-1"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:15px;font-family:Be Vietnam Pro;font-weight:700;" xml:space="preserve" x="11" y="63.5" transform="translate(772.7781 187.4737)" fill="#ffffff">phép năm</text>
+<path d="M11 8l46 0l0 46l-46 0Z" transform="translate(874.389 187.4737)" fill="none" class="zr0-cls-1"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:46px;font-family:Archivo;font-weight:900;" x="11" y="31" transform="translate(874.389 187.4737)" fill="#ffffff">12</text>
+<path d="M11 56l44.8803 0l0 15l-44.8803 0Z" transform="translate(874.389 187.4737)" fill="none" class="zr0-cls-1"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:15px;font-family:Be Vietnam Pro;font-weight:700;" xml:space="preserve" x="11" y="63.5" transform="translate(874.389 187.4737)" fill="#ffffff">lễ, tết</text>
+<style ><![CDATA[
+.zr0-cls-0:hover {
+pointer-events:none;
+}
+.zr0-cls-1:hover {
+cursor:pointer;
+}
+
+]]>
+
+</style>
+</svg></div>
+
+  <section>
+    <div class="secno">01</div>
+    <div class="than">
+      <h2>12 ngày lễ, tết: thêm Ngày Văn hóa Việt Nam từ năm 2026<small>khoản 1 Điều 112 Bộ luật Lao động (11 ngày); Nghị quyết 28/2026/QH16 (thêm ngày 24/11)</small></h2>
+      <div class="le">
+        <div><div class="dem vuong" data-dem="1"><i class="on"></i></div><b>Tết Dương lịch</b>01/01</div>
+        <div><div class="dem vuong" data-dem="5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div><b>Tết Âm lịch</b>5 ngày</div>
+        <div><div class="dem vuong" data-dem="1"><i class="on"></i></div><b>Giỗ Tổ Hùng Vương</b>10/3 âm lịch</div>
+        <div><div class="dem vuong" data-dem="1"><i class="on"></i></div><b>Ngày Chiến thắng</b>30/4</div>
+        <div><div class="dem vuong" data-dem="1"><i class="on"></i></div><b>Quốc tế lao động</b>01/5</div>
+        <div><div class="dem vuong" data-dem="2"><i class="on"></i><i class="on"></i></div><b>Quốc khánh</b>02/9 và một ngày liền kề</div>
+        <div><div class="dem vuong" data-dem="1"><i class="on"></i></div><b>Ngày Văn hóa Việt Nam</b>24/11<span class="moi">mới</span></div>
+      </div>
+      <p class="ghi">Lễ, tết trùng ngày nghỉ hằng tuần thì được nghỉ bù vào ngày làm việc kế tiếp (khoản 3 Điều 111).</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="secno">02</div>
+    <div class="than">
+      <h2>Cứ đủ 5 năm làm việc, nghỉ hằng năm thêm 1 ngày<small>khoản 1 Điều 113 và Điều 114 Bộ luật Lao động; 5 năm tính cho cùng một người sử dụng lao động</small></h2>
+      <div class="bac">
+        <div class="illus" data-illus="tham-nien"><svg height="276" font-family="Be Vietnam Pro" xmlns="http://www.w3.org/2000/svg" viewBox="66 37.2 648 208.8" role="img"><defs /><g><g><g><g transform="translate(72, 96)"><g transform="translate(28, 0)"><foreignObject height="60" width="112" y="0" x="0" overflow="visible"><span style="overflow:visible;color:#5a5a5a;font-size:12px;line-height:1.4;width:100%;height:100%;display:flex;flex-wrap:wrap;word-break:break-word;white-space:pre-wrap;text-align:left;justify-content:flex-start;align-content:flex-end;align-items:flex-end" xmlns="http://www.w3.org/1999/xhtml">Làm đủ 12 tháng</span></foreignObject></g><polygon fill="#111111" opacity="0.9" width="16" height="16" points="0,88 16,72 16,88" /><path d="M 28 144 L 28 76 L 140 76" stroke="#111111" stroke-width="8" fill="none" /><g transform="translate(32, 120)"><foreignObject height="20" width="112" y="0" x="0" overflow="visible"><span style="overflow:visible;color:#262626;font-weight:bold;font-size:14px;line-height:1.4;width:100%;height:100%;display:flex;flex-wrap:wrap;word-break:break-word;white-space:pre-wrap;text-align:center;justify-content:center;align-content:center;align-items:center" xmlns="http://www.w3.org/1999/xhtml">12 ngày</span></foreignObject></g></g><g transform="translate(196, 72)"><g transform="translate(28, 0)"><foreignObject height="60" width="112" y="0" x="0" overflow="visible"><span style="overflow:visible;color:#5a5a5a;font-size:12px;line-height:1.4;width:100%;height:100%;display:flex;flex-wrap:wrap;word-break:break-word;white-space:pre-wrap;text-align:left;justify-content:flex-start;align-content:flex-end;align-items:flex-end" xmlns="http://www.w3.org/1999/xhtml">Đủ 5 năm</span></foreignObject></g><polygon fill="#111111" opacity="0.9" width="16" height="16" points="0,88 16,72 16,88" /><path d="M 28 144 L 28 76 L 140 76" stroke="#111111" stroke-width="8" fill="none" /><g transform="translate(32, 120)"><foreignObject height="20" width="112" y="0" x="0" overflow="visible"><span style="overflow:visible;color:#262626;font-weight:bold;font-size:14px;line-height:1.4;width:100%;height:100%;display:flex;flex-wrap:wrap;word-break:break-word;white-space:pre-wrap;text-align:center;justify-content:center;align-content:center;align-items:center" xmlns="http://www.w3.org/1999/xhtml">13 ngày</span></foreignObject></g></g><g transform="translate(320, 48)"><g transform="translate(28, 0)"><foreignObject height="60" width="112" y="0" x="0" overflow="visible"><span style="overflow:visible;color:#5a5a5a;font-size:12px;line-height:1.4;width:100%;height:100%;display:flex;flex-wrap:wrap;word-break:break-word;white-space:pre-wrap;text-align:left;justify-content:flex-start;align-content:flex-end;align-items:flex-end" xmlns="http://www.w3.org/1999/xhtml">Đủ 10 năm</span></foreignObject></g><polygon fill="#111111" opacity="0.9" width="16" height="16" points="0,88 16,72 16,88" /><path d="M 28 144 L 28 76 L 140 76" stroke="#111111" stroke-width="8" fill="none" /><g transform="translate(32, 120)"><foreignObject height="20" width="112" y="0" x="0" overflow="visible"><span style="overflow:visible;color:#262626;font-weight:bold;font-size:14px;line-height:1.4;width:100%;height:100%;display:flex;flex-wrap:wrap;word-break:break-word;white-space:pre-wrap;text-align:center;justify-content:center;align-content:center;align-items:center" xmlns="http://www.w3.org/1999/xhtml">14 ngày</span></foreignObject></g></g><g transform="translate(444, 24)"><g transform="translate(28, 0)"><foreignObject height="60" width="112" y="0" x="0" overflow="visible"><span style="overflow:visible;color:#5a5a5a;font-size:12px;line-height:1.4;width:100%;height:100%;display:flex;flex-wrap:wrap;word-break:break-word;white-space:pre-wrap;text-align:left;justify-content:flex-start;align-content:flex-end;align-items:flex-end" xmlns="http://www.w3.org/1999/xhtml">Đủ 15 năm</span></foreignObject></g><polygon fill="#111111" opacity="0.9" width="16" height="16" points="0,88 16,72 16,88" /><path d="M 28 144 L 28 76 L 140 76" stroke="#111111" stroke-width="8" fill="none" /><g transform="translate(32, 120)"><foreignObject height="20" width="112" y="0" x="0" overflow="visible"><span style="overflow:visible;color:#262626;font-weight:bold;font-size:14px;line-height:1.4;width:100%;height:100%;display:flex;flex-wrap:wrap;word-break:break-word;white-space:pre-wrap;text-align:center;justify-content:center;align-content:center;align-items:center" xmlns="http://www.w3.org/1999/xhtml">15 ngày</span></foreignObject></g></g><g transform="translate(568, 0)"><g transform="translate(28, 0)"><foreignObject height="60" width="112" y="0" x="0" overflow="visible"><span style="overflow:visible;color:#5a5a5a;font-size:12px;line-height:1.4;width:100%;height:100%;display:flex;flex-wrap:wrap;word-break:break-word;white-space:pre-wrap;text-align:left;justify-content:flex-start;align-content:flex-end;align-items:flex-end" xmlns="http://www.w3.org/1999/xhtml">Đủ 20 năm</span></foreignObject></g><polygon fill="#c81a07" opacity="0.9" width="16" height="16" points="0,88 16,72 16,88" /><path d="M 28 144 L 28 76 L 140 76" stroke="#c81a07" stroke-width="8" fill="none" /><g transform="translate(32, 120)"><foreignObject height="20" width="112" y="0" x="0" overflow="visible"><span style="overflow:visible;color:#262626;font-weight:bold;font-size:14px;line-height:1.4;width:100%;height:100%;display:flex;flex-wrap:wrap;word-break:break-word;white-space:pre-wrap;text-align:center;justify-content:center;align-content:center;align-items:center" xmlns="http://www.w3.org/1999/xhtml">16 ngày</span></foreignObject></g></g></g></g></g></svg></div>
+        <p class="muc">Người chưa thành niên, người khuyết tật, người làm nghề nặng nhọc, độc hại, nguy hiểm: từ <b>14 ngày</b>. Nghề đặc biệt nặng nhọc, độc hại, nguy hiểm: từ <b>16 ngày</b>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="secno">03</div>
+    <div class="than">
+      <h2>Ba điều dễ bỏ sót</h2>
+      <div class="cot" style="--n:3">
+        <div><b>Chưa đủ 12 tháng</b>Số ngày nghỉ hằng năm tính theo tỉ lệ số tháng đã làm.<small>khoản 2 Điều 113</small></div>
+        <div><b>Nghỉ việc khi còn phép</b>Thôi việc, mất việc mà chưa nghỉ hết: được trả lương cho những ngày chưa nghỉ.<small>khoản 3 Điều 113</small></div>
+        <div><b>Việc riêng vẫn đủ lương</b>Kết hôn: 3 ngày. Con kết hôn: 1 ngày. Cha mẹ hai bên, vợ hoặc chồng, con mất: 3 ngày.<small>khoản 1 Điều 115</small></div>
+      </div>
+    </div>
+  </section>
+
+  <p class="sign"><span>Luyện Luật — thông tin pháp luật phổ thông, không thay thế tư vấn pháp lý.</span><span>Bộ luật Lao động số 45/2019/QH14 (văn bản hợp nhất 2026); Nghị quyết số 28/2026/QH16.</span></p>
+</main>
+</body>
+</html>

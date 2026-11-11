@@ -1,0 +1,72 @@
+/* giay-cat: giấy cắt dán nhiều lớp — mảng màu tươi bo tròn, mép viền vỏ sò, bóng giấy lệch cùng tông, hình dán màu, chữ tròn Baloo 2. Tầng ÁP PHÍCH (trang tràn lề, mở bằng khối hero). Hợp: quyền lợi người lao động, sinh viên, tiêu dùng, gia đình — đề tài cần giọng thân thiện, người đọc trẻ */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Patrick+Hand&display=swap');
+:root {
+  --paper: #fff5e1; --ink: #1d2240; --muted: #51556f; --line: #ecd9b4; --soft: #ffeac4;
+  --coral: #f2543d; --coral-d: #c93a26; --teal: #0b7a71; --teal-d: #075e57; --sun: #ffc533; --plum: #5a3fc4;
+  --bad: var(--coral-d); --bad-soft: #ffd9d1; --good: var(--teal-d); --good-soft: #cdeeea; --info: var(--plum); --info-soft: #e3dbfa; --accent: var(--sun); --accent-ink: var(--ink);
+  --font: 'Be Vietnam Pro', sans-serif; --font-display: 'Baloo 2', 'Be Vietnam Pro', sans-serif; --font-hand: 'Patrick Hand', 'Be Vietnam Pro', sans-serif;
+  --radius: 26px; --gap: 0px; --pad-left: 0px; --bleed: 56px;
+}
+/* trang tràn lề: mỗi khối tự giữ lề; các mảng màu chồng lên nhau như giấy dán */
+.sheet { padding: 0; gap: 0; }
+.sheet > * { flex-shrink: 0; position: relative; }
+.sheet > section { padding: 14px var(--bleed) 0; }
+.secno { position: static; float: left; width: 46px; height: 46px; margin: 0 14px 0 0; border-radius: 50%; background: var(--ink); color: var(--sun); font: 800 28px/48px var(--font-display); text-align: center; }
+h2 { font: 800 31px/46px var(--font-display); color: var(--ink); margin-bottom: 8px; }
+h2 small { font: 700 15px var(--font); color: var(--muted); margin-left: 10px; }
+/* mọi "tấm giấy": không viền, bóng lệch cùng tông đậm hơn (lớp giấy bên dưới) */
+.card, .tile, .giay { background: #fff; border: 0; border-radius: var(--radius); box-shadow: 7px 8px 0 rgba(29,34,64,.14); }
+.emo.dan img { filter: drop-shadow(4px 0 0 #fff) drop-shadow(-4px 0 0 #fff) drop-shadow(0 4px 0 #fff) drop-shadow(0 -4px 0 #fff) drop-shadow(5px 7px 0 rgba(29,34,64,.24)); }
+
+/* ── hero: mảng san hô, mép dưới viền vỏ sò, vật chủ đạo là hình dán lớn ── */
+.hero { z-index: 3; background: var(--coral); color: #fff; padding: 58px var(--bleed) 18px; display: grid; grid-template-columns: 1fr 250px; gap: 10px; align-items: center; }
+.hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: -23px; height: 24px; background: radial-gradient(circle at 24px 0, var(--coral) 23.4px, transparent 24px) 0 0 / 48px 24px repeat-x; }
+.hero::before { content: ""; position: absolute; right: -90px; top: -110px; width: 420px; height: 420px; border-radius: 50%; background: var(--coral-d); opacity: .55; }
+.hero > * { position: relative; }
+.hero .ribbon { display: inline-block; background: var(--sun); color: var(--ink); font: 800 22px/1.3 var(--font-display); padding: 4px 20px 2px; border-radius: 999px; rotate: -3deg; box-shadow: 4px 5px 0 rgba(29,34,64,.25); }
+.hero h1 { font: 800 62px/1.2 var(--font-display); margin: 12px 0 8px; letter-spacing: -.01em; }
+.hero h1 em { font-style: normal; background: var(--sun); color: var(--ink); padding: 0 14px; border-radius: 16px; white-space: nowrap; }
+.hero .fields { display: flex; flex-wrap: wrap; gap: 8px 12px; font: 600 16px/1.3 var(--font); }
+.hero .fields span { background: rgba(29,34,64,.28); padding: 6px 14px; border-radius: 999px; } .hero .fields b { font-weight: 800; }
+.hero .vat { position: relative; height: 200px; }
+.hero .vat .emo { position: absolute; }
+
+/* ── chồng tờ lịch: giấy trắng bo góc, băng màu theo cột, cạnh giấy màu kem ── */
+.chong { gap: 26px; align-items: flex-end; padding: 6px 6px 0; }
+.chong .xep { max-width: 270px; }
+.chong .xep::after { border: 0; border-radius: 0 0 14px 14px; background: repeating-linear-gradient(to bottom, #fffdf6 0 calc(var(--t, 5px) - 1.4px), #d9c7a0 calc(var(--t, 5px) - 1.4px) var(--t, 5px)); box-shadow: 7px 8px 0 rgba(29,34,64,.16); }
+.chong .mat { border: 0; border-radius: 18px 18px 0 0; box-shadow: 7px 0 0 rgba(29,34,64,.16); }
+.chong .mat .tren { font: 800 16px/1.3 var(--font); padding: 6px 10px 5px; }
+.chong .mat .so { font: 800 92px/1 var(--font-display); padding-top: 6px; height: 84px; }
+.chong .mat .don-vi { font: 800 18px/1.3 var(--font); padding: 0 6px 8px; }
+.chong .nhan { margin-top: 14px; display: grid; grid-template-columns: 62px 1fr; gap: 10px; align-items: center; text-align: left; font: 800 17.5px/1.28 var(--font); } .chong .nhan small { font: 600 14.5px/1.35 var(--font); } .chong .nhan .emo { --s: 62px; }
+.chu-thich { font: 400 21px/1.2 var(--font-hand); color: var(--muted); }
+.chu-thich.goc { position: absolute; right: var(--bleed); top: 78px; width: 250px; text-align: center; font-size: 25px; line-height: 1.15; color: var(--coral-d); rotate: -4deg; }
+
+/* ── dải màu lục: các trường hợp là huy hiệu giấy tròn ── */
+.sheet > section.dai-luc { margin-top: 32px; padding: 12px var(--bleed) 16px; background: var(--teal); color: #fff; }
+.dai-luc::before, .dai-luc::after { content: ""; position: absolute; left: 0; right: 0; height: 24px; }
+.dai-luc::before { top: -23px; background: radial-gradient(circle at 24px 24px, var(--teal) 23.4px, transparent 24px) 0 0 / 48px 24px repeat-x; }
+.dai-luc h2 { color: #fff; } .dai-luc h2 small { color: #fff; } .dai-luc .secno { background: #fff; color: var(--teal-d); }
+.huy { display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; clear: both; }
+.huy > div { text-align: center; font: 700 15px/1.26 var(--font); }
+.huy .tron { position: relative; width: 88px; height: 88px; margin: 0 auto 8px; border-radius: 50%; background: #fff5e1; box-shadow: 5px 6px 0 var(--teal-d); display: grid; place-items: center; }
+.huy .tron .emo { --s: 62px; } .huy .tron b { position: absolute; left: -4px; top: -4px; width: 34px; height: 34px; border-radius: 50%; background: var(--sun); color: var(--ink); font: 800 19px/36px var(--font-display); }
+.dai-luc .ghi { margin-top: 10px; font: 600 15px/1.4 var(--font); color: #fff; }
+
+/* ── hệ quả: ba tấm giấy có hình dán thò ra ngoài mép ── */
+.ba { display: grid; grid-template-columns: .8fr 1.35fr .85fr; gap: 20px; clear: both; padding: 8px 0 26px 8px; }
+.ba .giay { position: relative; padding: 14px 16px 12px 82px; font: 700 16.5px/1.3 var(--font); min-height: 78px; }
+.ba .giay .emo { position: absolute; left: -10px; top: -8px; --s: 80px; }
+.ba .giay small { display: block; margin-top: 6px; font: 700 14px/1.3 var(--font); color: var(--coral-d); }
+
+/* ── dải hành động vàng ở đáy ── */
+.sheet > section.dai { margin-top: auto; padding: 14px var(--bleed) 60px; background: var(--sun); color: var(--ink); }
+.dai h2 { color: var(--ink); font: 800 27px/1.12 var(--font-display); margin: 0; align-self: center; }
+.dai::before { content: ""; position: absolute; left: 0; right: 0; top: -23px; height: 24px; background: radial-gradient(circle at 24px 24px, var(--sun) 23.4px, transparent 24px) 0 0 / 48px 24px repeat-x; }
+.dai .secno { background: var(--ink); color: var(--sun); }
+.dai .flow { display: grid; grid-template-columns: 132px repeat(3, 1fr); gap: 14px; }
+.dai .go { display: flex; gap: 10px; align-items: center; background: #fff; color: var(--ink); border-radius: 20px; padding: 9px 12px; box-shadow: 5px 6px 0 rgba(29,34,64,.2); font: 600 14.5px/1.3 var(--font); }
+.dai .go b { display: block; font: 800 16.5px/1.25 var(--font); } .dai .go .emo { --s: 44px; }
+.dai .go.hot { background: var(--ink); color: #fff; }
+.dai .sign { margin-top: 10px; text-align: left; font: 600 14px/1.4 var(--font); color: #4a3a05; }

@@ -1,0 +1,14 @@
+/* TẦNG HÌNH ẢNH — khung chung cho deck HTML sẽ dựng thành PPTX thật bằng hinh/build.js.
+   Quy ước: chữ nội dung gắn data-t; hình cần động / cần di chuyển gắn data-l; cửa sổ soi gắn data-w; xoay nghiêng chỉ dùng thuộc tính `rotate`. */
+/* Font nằm trong hinh/fonts/ (tạo bằng hinh/tao_font.js). Trong CSS cứ viết 'Be Vietnam Pro' + font-weight;
+   khi dựng PPTX, mỗi độ đậm thành một họ độc lập: Be Vietnam Pro (thường) · Be Vietnam Dam (600–700) · Be Vietnam Nang (800–900). */
+@font-face { font-family: 'Anton'; font-weight: 400; src: url('fonts/Anton-Regular.ttf') format('truetype'); }
+@font-face { font-family: 'Be Vietnam Pro'; font-weight: 400 500; src: url('fonts/BeVietnamPro-Regular.ttf') format('truetype'); }
+@font-face { font-family: 'Be Vietnam Pro'; font-weight: 600 700; src: url('fonts/BeVietnam-Dam.ttf') format('truetype'); }
+@font-face { font-family: 'Be Vietnam Pro'; font-weight: 800 900; src: url('fonts/BeVietnam-Nang.ttf') format('truetype'); }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+/* tắt kerning và chữ ghép: PowerPoint dàn chữ theo bề ngang ký tự thô, HTML phải dàn giống thế thì chỗ xuống dòng mới trùng */
+html, body { background: #05070d; font-kerning: none; font-variant-ligatures: none; -webkit-font-smoothing: antialiased; }
+section.s { position: relative; width: 1920px; height: 1080px; overflow: hidden; font: 400 30px/1.4 'Be Vietnam Pro', sans-serif; }
+section.s + section.s { margin-top: 24px; }
+.an { font-family: 'Anton', sans-serif; font-weight: 400; text-transform: uppercase; letter-spacing: 0; }

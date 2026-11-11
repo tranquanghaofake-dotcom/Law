@@ -1,8 +1,28 @@
 # Danh mục bẫy — rà cho mọi câu hỏi trước khi kết luận
 
-Bẫy trong đề thi luật Việt Nam không phải chi tiết ngẫu nhiên: người ra đề cài chúng để phân loại người đọc kỹ và người đọc lướt. Mỗi mục dưới đây gồm cơ chế bẫy và dấu hiệu nhận diện trong đề. Rà tuần tự cả danh mục, kể cả khi đề trông đơn giản — và khi trả lời, gọi tên bẫy tường minh để người học xây được phản xạ.
+Bẫy trong đề thi luật Việt Nam không phải chi tiết ngẫu nhiên: người ra đề cài chúng để phân loại người đọc kỹ và người đọc lướt. Mỗi mục dưới đây gồm cơ chế bẫy và dấu hiệu nhận diện trong đề. Rà tuần tự Nhóm 1–5 và nhóm của đúng lĩnh vực đề, kể cả khi đề trông đơn giản — và khi trả lời, gọi tên bẫy tường minh để người học xây được phản xạ.
 
 Một giới hạn của chính file này cần ý thức khi dùng: danh mục dưới đây phủ những lĩnh vực đã được rà soát, không phủ toàn bộ pháp luật Việt Nam. Khi đề rơi vào lĩnh vực nằm ngoài phạm vi file này và người dùng không đính kèm văn bản, bước rà bẫy coi như không chạy được — hạ nhãn CCPL xuống tối đa mức B theo quy tắc ở bước 6 của SKILL.md, và nếu điều khoản quyết định kết luận cũng không tra được thì đã chạm Ngưỡng dừng.
+
+## Mục lục và cách đọc
+
+Nhóm 1–5 là bẫy chung, rà cho **mọi** đề. Nhóm 6–13 theo lĩnh vực: đọc nhóm khớp lĩnh vực của đề; đề chạm hai lĩnh vực thì đọc cả hai nhóm. Định vị bằng `grep -n "^## Nhóm" references/danh-muc-bay.md` rồi đọc đúng khoảng dòng.
+
+| Nhóm | Nội dung | Đọc khi |
+|---|---|---|
+| 1 | Chọn sai nguồn luật | mọi đề |
+| 2 | Hiệu lực và thời gian | mọi đề |
+| 3 | Đọc sai câu chữ quy phạm | mọi đề |
+| 4 | Hình thức và thẩm quyền của chính văn bản | mọi đề |
+| 5 | Tố tụng chặn nội dung | mọi đề |
+| 6 | Bẫy lao động | lao động, việc làm, bảo hiểm xã hội |
+| 7 | Bẫy đất đai | đất đai, nhà ở |
+| 8 | Bẫy hình sự | hình sự |
+| 9 | Bẫy thương mại quốc tế (danh mục 9.1–9.8 nằm ở `thuong-mai-quoc-te.md`) | có yếu tố nước ngoài |
+| 10 | Bẫy tố tụng hành chính | khiếu kiện hành chính, khiếu nại |
+| 11 | Bẫy cạnh tranh | cạnh tranh |
+| 12 | Bẫy hôn nhân và gia đình | hôn nhân và gia đình |
+| 13 | Bẫy chứng khoán và thị trường vốn | chứng khoán, chào bán, niêm yết |
 
 ## Nhóm 1 — Chọn sai nguồn luật
 

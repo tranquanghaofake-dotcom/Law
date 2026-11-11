@@ -1,6 +1,6 @@
 ---
 name: vn-legal-exam-analysis
-description: MẶC ĐỊNH BẬT cho MỌI câu hỏi về pháp luật Việt Nam, kể cả câu ngắn, hỏi miệng, không nhắc tên luật, không phải đề thi — ví dụ "đúng hay sai, vì sao", "X là gì", "khác nhau thế nào", "luật nói gì về…", "có hợp pháp không". Use for any Vietnamese law question or exam task — bài tập tình huống, nhận định đúng/sai, so sánh/phân biệt chế định, giải thích khái niệm, chấm bài/chữa bài, or guided practice — across civil, commercial, business and enterprise (doanh nghiệp, tài chính doanh nghiệp), securities (chứng khoán, thị trường sơ cấp/thứ cấp, chào bán, niêm yết), competition (cạnh tranh), marriage and family (hôn nhân và gia đình), land, labor, administrative, criminal, procedural (incl. tố tụng hành chính), data protection, and international trade law as taught in Vietnam (CISG, Incoterms, WTO, phòng vệ thương mại, chọn luật áp dụng). Always invoke when the user asks to phân tích, giải, nhận định, so sánh, chấm, or chữa anything in Vietnamese legal study, requests căn cứ pháp lý (CCPL), needs help spotting bẫy, is doing ôn thi / chữa đề / checking đáp án, attaches tài liệu ôn thi or đề thi, or asks about hiệu lực or thứ bậc of legal documents — even if no statute is named. Not for drafting contracts, khóa luận/NCKH citation formatting, or foreign law with no Vietnam nexus.
+description: "Use when the user asks ANY question about Vietnamese law — MẶC ĐỊNH BẬT cho mọi câu hỏi pháp luật Việt Nam, kể cả câu ngắn, hỏi miệng, không nhắc tên luật, không phải đề thi (“đúng hay sai, vì sao”, “X là gì”, “khác nhau thế nào”, “luật nói gì về…”, “có hợp pháp không”). Covers exam work — bài tập tình huống, nhận định đúng/sai, so sánh/phân biệt chế định, giải thích khái niệm, chấm bài/chữa bài, ôn thi, chữa đề, kiểm đáp án, tài liệu ôn thi hoặc đề thi đính kèm — in dân sự, thương mại, doanh nghiệp, chứng khoán, cạnh tranh, hôn nhân và gia đình, đất đai, lao động, hành chính, hình sự, tố tụng, dữ liệu cá nhân, thương mại quốc tế (CISG, Incoterms, WTO, phòng vệ thương mại); also requests for căn cứ pháp lý (CCPL), bẫy đề thi, hiệu lực or thứ bậc văn bản, even if no statute is named. Also matches unaccented input (phap luat, nhan dinh dung sai, bai tap tinh huong, can cu phap ly, on thi luat). Not for drafting contracts, khóa luận/NCKH (use khoa-luan-luat), or foreign law with no Vietnam nexus."
 ---
 
 # Phân tích pháp luật Việt Nam có độ chính xác cao
@@ -15,8 +15,8 @@ Kỹ năng này chạy cho **mọi** câu hỏi về pháp luật Việt Nam, kh
 
 Ba quy tắc cứng cho mọi lượt, trước khi viết câu đầu tiên:
 
-1. **Tra trước, viết sau.** Nếu repo Luyện Luật có trong phiên (`packages/content/data/laws/*.txt`, tên file tra trong `packages/content/data/SOURCES.md`), `grep` đúng điều luật ở đó trước khi trích số điều, khoản; chưa tra được thì chạm Ngưỡng dừng, không viết "chưa gắn số điều" rồi vẫn kết luận. Kho Luyện Luật phủ cả Luật Chứng khoán (văn bản hợp nhất 102/VBHN-VPQH), Luật Doanh nghiệp và nhiều luật khác: lĩnh vực nằm trong kho thì **không** bị hạ nhãn ở trục "ngoài phạm vi reference", nhưng căn cứ lấy từ kho là mức B cho đến khi đối chiếu vbpl.vn.
-2. **Lĩnh vực chưa có nhóm bẫy riêng** (ví dụ chứng khoán, tài chính doanh nghiệp) vẫn rà `references/danh-muc-bay.md` Nhóm 1–5 và Nhóm 13; không bỏ bước rà bẫy chỉ vì không có nhóm riêng.
+1. **Tra trước, viết sau.** Kho luật có trong phiên (repo Luyện Luật, hoặc `kho-luat/` đóng kèm skill) thì tra đúng điều luật ở đó (`python3 -I scripts/tra_dieu.py "<tên luật>" <số điều>`) trước khi trích số điều, khoản; chưa tra được thì chạm Ngưỡng dừng, không viết "chưa gắn số điều" rồi vẫn kết luận. Kho Luyện Luật phủ cả Luật Chứng khoán (văn bản hợp nhất 102/VBHN-VPQH), Luật Doanh nghiệp và nhiều luật khác: lĩnh vực nằm trong kho thì **không** bị hạ nhãn ở trục "ngoài phạm vi reference", nhưng căn cứ lấy từ kho là mức B cho đến khi đối chiếu vbpl.vn.
+2. **Lĩnh vực chưa có nhóm bẫy riêng** (ví dụ tài chính doanh nghiệp, thuế, ngân hàng) vẫn rà `references/danh-muc-bay.md` Nhóm 1–5; đề chạm chứng khoán, thị trường vốn thì rà thêm Nhóm 13. Không bỏ bước rà bẫy chỉ vì không có nhóm riêng.
 3. **Khái niệm học thuật không có trong luật** (thị trường sơ cấp/thứ cấp, các cách phân loại của giáo trình) phải gắn nhãn "phân loại học thuật" và tách khỏi phần có điều luật; không bịa điều luật định nghĩa.
 
 ## Ba chế độ làm việc — chọn chế độ trước khi chọn phương pháp
@@ -35,33 +35,40 @@ Truyền thống dân luật làm ràng buộc này chặt hơn hẳn thông lu�
 
 Hệ quả: một số khoản đoán ra không phải căn cứ yếu, nó là căn cứ sai, và nguy hiểm hơn bỏ trống vì câu trả lời vẫn trông như có căn cứ. Khi không xác minh được, hành vi đúng là dừng và nói rõ đang dừng ở đâu, không phải hạ giọng rồi vẫn trả lời.
 
-## Tài liệu kèm theo — đọc khi nào
+## Tài liệu kèm theo — mở file nào, khi nào
 
-- `references/he-thong-van-ban-va-ap-dung.md` — hệ thống văn bản quy phạm pháp luật sau Luật 64/2025/QH15 và Luật 87/2025/QH15, nguyên tắc áp dụng và giải quyết xung đột, hiệu lực thời gian/không gian, cụm văn bản bảo vệ dữ liệu cá nhân, bảng thời hiệu đối chiếu, nguồn tra cứu. Đọc khi câu hỏi động đến thứ bậc văn bản, xung đột giữa các nguồn, hiệu lực, văn bản của chính quyền địa phương, dữ liệu cá nhân, hoặc bất kỳ đề bài nào có yếu tố "văn bản nào áp dụng". Nội dung đã được xác minh với nguồn chính thống; ngày xác minh và các mốc cần theo dõi ghi trong file.
-- `references/danh-muc-bay.md` — danh mục bẫy đầy đủ kèm ví dụ nhận diện, gồm cả các nhóm bẫy chung (nguồn luật, hiệu lực, câu chữ, thẩm quyền, tố tụng) và các nhóm bẫy riêng theo lĩnh vực (lao động, đất đai, hình sự, tố tụng hành chính, cạnh tranh, hôn nhân và gia đình — ba nhóm sau gắn ghi chú các đáp án cũ bị đảo chiều do luật hoặc tổ chức bộ máy thay đổi). Đọc cho mọi câu nhận định đúng/sai và bài tập tình huống trước khi kết luận, kể cả khi đề trông đơn giản — bẫy được cài chính xác ở chỗ trông đơn giản nhất.
-- `references/cap-khai-niem-de-lan.md` — thư viện các cặp khái niệm dễ lẫn kèm địa chỉ điều luật, phủ dân sự/thương mại, lao động, đất đai, hình sự, hôn nhân và gia đình, cạnh tranh, tố tụng hành chính: phạt vi phạm và bồi thường, thương nhân và doanh nghiệp, vô hiệu tuyệt đối và tương đối, tạm ngừng và đình chỉ và hủy bỏ hợp đồng, cùng các cặp khác. Đọc khi đề chạm bất kỳ khái niệm nào trong nhóm này, và cho mọi câu hỏi so sánh — đây là nơi tra ranh giới phân biệt và số điều thay vì dựa vào trí nhớ, vì nhầm cặp gần như luôn kéo theo sai kết luận.
-- `references/giai-thich-phap-luat.md` — thẩm quyền giải thích chính thức và hệ quả với giọng văn, năm phương pháp giải thích cùng thứ tự bắt buộc, kỹ thuật đọc câu chữ tiếng Việt pháp lý (và/hoặc, phải/có quyền/có thể, "trừ trường hợp", liệt kê đóng và mở, phạm vi của Điều giải thích từ ngữ, dẫn chiếu đích danh và dẫn chiếu mở), và ranh giới giữa giải thích với áp dụng tương tự pháp luật theo Điều 5, Điều 6 Bộ luật Dân sự năm 2015. Đọc khi đề xoay quanh nghĩa của một cụm từ, khi hai bên cùng dẫn một điều luật mà kết luận ngược nhau, khi luật im lặng hoặc quy định không rõ. Đây là bộ công cụ cho loại tranh chấp thứ ba và thứ tư nêu trong `references/lap-luan.md`.
-- `references/bai-tap-dinh-luong.md` — dạng bài có con số: bẫy mẫu số (điều kiện tiến hành họp tính trên vốn điều lệ theo khoản 1 Điều 58 Luật Doanh nghiệp năm 2020, còn tỷ lệ thông qua nghị quyết tính trên tổng vốn góp của các thành viên **dự họp** theo khoản 3 Điều 59 — hai mẫu số khác nhau trong cùng một bài), quy trình bốn bước, danh mục ngưỡng phải tra, cách trình bày phép tính. Đọc khi đề cho số liệu và kết luận pháp lý phụ thuộc vào số liệu đó. Dạng này có thể **dẫn đúng điều luật mà vẫn sai kết quả**, nên bước rà bẫy thông thường không thay thế được file này.
-- `references/lap-luan.md` — cấu trúc lập luận và văn phong: bốn dạng lan man cần tự nhận ra, bốn loại tranh chấp pháp lý duy nhất (công cụ rút gọn mạnh nhất), khung Quan điểm đối lập → Chỗ hỏng → Kết luận, ba tầng bác bỏ (luận điểm / luận cứ / lập luận) kèm tên gọi chuẩn, ngân hàng cụm từ của thực tiễn xét xử, và ngân sách hình thức kiểm tra được bằng mắt. **Đọc trước khi viết câu trả lời, không phải sau.** Ba file kia trả lời "đúng hay sai"; file này trả lời "viết ra thế nào để không lan man". Bắt buộc đọc cho mọi câu trả lời dài hơn một đoạn.
-- `references/an-le.md` — vị trí của án lệ trong chuỗi nguồn, hiệu lực áp dụng theo Điều 8 Nghị quyết 04/2019/NQ-HĐTP, quy cách viện dẫn bốn thành phần, kỹ thuật phân biệt (distinguishing) qua cụm "tình huống pháp lý tương tự", ba lớp quy định/suy luận/tranh cãi học thuật, và danh mục bẫy riêng về án lệ. Đọc khi đề nhắc đến án lệ, khi câu hỏi hỏi về nguồn của pháp luật Việt Nam, khi một nhận định khẳng định hoặc phủ định giá trị bắt buộc của án lệ, và khi đề đưa hai vụ việc rồi hỏi có phải giải quyết như nhau không. Lưu ý phạm vi sửa đổi: Nghị quyết 02/2025/NQ-HĐTP (hiệu lực 01/7/2025) chỉ sửa điểm c khoản 2 Điều 6 và thay ba mẫu, **không sửa Điều 8** — gắn mệnh đề sửa đổi vào Điều 8 là dẫn sai phạm vi, gắn thiếu nó khi trích điểm c khoản 2 Điều 6 là dẫn văn bản đã lỗi phần.
-- `references/quy-trinh-xac-minh.md` — quy trình thao tác của bước 6: xác minh căn cứ nào trước khi hết ngân sách thời gian, mẫu truy vấn tra cứu, đọc gì trên trang kết quả, xử lý bốn tình huống kết quả tra cứu, và quy trình thay thế khi không có công cụ tra cứu. Mở file này ngay khi bước 6 phát hiện có căn cứ cần đối chiếu — nó là chỗ biến "cần đối chiếu" từ một lời nhắc thành các thao tác cụ thể, và là căn cứ để quyết định có chạm Ngưỡng dừng hay không.
-- `references/thuong-mai-quoc-te.md` — ba tầng nguồn của Thương mại quốc tế và thứ tự ưu tiên, cây quyết định CISG năm cổng (kèm quy tắc tra tư cách thành viên và bảo lưu Điều 95, Điều 96), Incoterms, bảng ranh giới chế tài và thời hiệu giữa CISG và luật Việt Nam, tầng WTO và phòng vệ thương mại, quy cách viện dẫn tầng quốc tế, và Nhóm 9 của danh mục bẫy. Đọc cho mọi đề thuộc môn Thương mại quốc tế và mọi tình huống có yếu tố nước ngoài — kể cả khi câu hỏi trông như luật trong nước thuần túy nhưng có một bên trụ sở ở nước ngoài, vì chọn sai tầng nguồn là lỗi gốc không cứu được.
-- `references/cong-cu-tra-cuu.md` — công cụ nào trong môi trường Claude đọc được nguồn nào (Parallel `web_search`/`web_fetch` cho vbpl.vn, Firecrawl dự phòng), mẫu gọi, cách đọc URL và văn bản hợp nhất trên vbpl.vn, các nguồn không truy cập được. Mở cùng lúc với `quy-trinh-xac-minh.md` khi bước 6 cần tra cứu.
-- `references/cham-bai-va-hoc.md` — nhận diện ba chế độ làm việc, cách thiết kế câu hỏi dẫn đường trỏ vào mấu chốt, quy trình chấm bốn trục kèm quy tắc phản hồi không viết lại hộ, kỷ luật về barem và điểm số, cách xử lý khi đáp án mẫu hoặc đáp án của giảng viên sai, và quy trình chữa tài liệu ôn thi sưu tầm theo bốn ô (giữ / sửa căn cứ / đảo kết luận / không đủ căn cứ). Đọc khi người dùng nộp bài tự làm, khi ngữ cảnh đặt chế độ học, hoặc khi có một đáp án cần đối chiếu.
+SKILL.md chỉ giữ phần chạy cho mọi câu hỏi. Chi tiết nằm ở `references/`; mở đúng file khi chạm điều kiện ở cột trái, không dựng lại từ trí nhớ thứ đã có bản kiểm chứng. Ngày xác minh và các mốc cần theo dõi ghi trong từng file.
 
-## Công cụ tự kiểm
+| Mở khi | File |
+|---|---|
+| Mọi câu trả lời dài hơn một đoạn — **đọc trước khi viết, không phải sau**: bốn loại tranh chấp, khung bác bỏ, ngân sách hình thức | `references/lap-luan.md` |
+| Mọi nhận định đúng/sai và bài tập tình huống, kể cả khi đề trông đơn giản: rà Nhóm 1–5 (bẫy chung) và nhóm của đúng lĩnh vực đề theo mục lục đầu file | `references/danh-muc-bay.md` |
+| Đề chạm một khái niệm trong thư viện cặp dễ lẫn; mọi câu hỏi so sánh, phân biệt (cuối file có Ví dụ 4) | `references/cap-khai-niem-de-lan.md` |
+| Thứ bậc văn bản, xung đột giữa các nguồn, hiệu lực thời gian và không gian, văn bản của chính quyền địa phương, dữ liệu cá nhân, thời hiệu, sổ văn bản sửa đổi, mọi đề có yếu tố "văn bản nào áp dụng" | `references/he-thong-van-ban-va-ap-dung.md` |
+| Kết luận phụ thuộc nghĩa của một cụm từ; hai bên cùng dẫn một điều luật mà kết luận ngược nhau; luật im lặng hoặc quy định không rõ | `references/giai-thich-phap-luat.md` |
+| Đề cho số liệu và kết luận pháp lý phụ thuộc số liệu đó — dạng dẫn đúng điều luật mà vẫn sai kết quả (cuối file có Ví dụ 3) | `references/bai-tap-dinh-luong.md` |
+| Đề nhắc án lệ, hỏi về nguồn của pháp luật, khẳng định hoặc phủ định giá trị bắt buộc của án lệ, hoặc đưa hai vụ việc rồi hỏi có giải quyết như nhau không | `references/an-le.md` |
+| Môn Thương mại quốc tế và mọi tình huống có yếu tố nước ngoài, kể cả khi chỉ một bên có trụ sở ở nước ngoài (có phạm vi Ngưỡng dừng ở vùng quốc tế và Ví dụ 5) | `references/thuong-mai-quoc-te.md` |
+| Bước 6 có căn cứ cần đối chiếu — mở cả hai: thao tác xác minh, và công cụ nào đọc được nguồn nào | `references/quy-trinh-xac-minh.md` · `references/cong-cu-tra-cuu.md` |
+| Người dùng nộp bài tự làm, ngữ cảnh đặt chế độ học, có đáp án cần đối chiếu, hoặc đính kèm tài liệu ôn thi | `references/cham-bai-va-hoc.md` |
 
-`scripts/lint_ccpl.py` soát quy cách CCPL (viết hoa "Điều", trật tự điểm → khoản → Điều, viết tắt, văn bản dưới luật thiếu số hiệu, văn bản đã bị thay thế trong `scripts/superseded.json`). Khi có công cụ chạy lệnh, trước khi gửi một câu trả lời dài hơn một đoạn, lưu bản nháp và chạy `python3 -I scripts/lint_ccpl.py --stdin < nháp.txt`; sửa mọi lỗi mức error. Lint chỉ bắt lỗi hình thức, không thay bước 6. Bộ đề kiểm tra hành vi của kỹ năng nằm ở `evals/` (xem `evals/README.md`).
+## Công cụ tự kiểm — kho luật và máy kiểm căn cứ
 
-## Tài liệu ôn thi đính kèm — ngân hàng căn cứ có nhật ký xác minh
+Skill có **kho luật nguyên văn** (khoảng 47 văn bản: các bộ luật, luật lớn và một số nghị định; trong repo Luyện Luật là `packages/content/data/laws`, trong bản tải lên claude.ai là thư mục `kho-luat/`, danh sách ở `kho-luat/MUC-LUC.md`). Khi có công cụ chạy lệnh, ba việc sau là bắt buộc, không phải tùy chọn:
 
-Người dùng có thể đính kèm tài liệu ôn thi tự soạn theo môn, có ngân hàng CCPL gắn nhãn A/B/C riêng và nhật ký xác minh ghi ngày, nguồn đối chiếu. Loại tài liệu này đứng ở một bậc riêng trong thứ tự nguồn: **không thay được văn bản gốc, nhưng thắng trí nhớ của mô hình** — vì nó đã qua đối chiếu có ghi vết, còn trí nhớ thì không.
+- **Tra trước khi trích:** `python3 -I scripts/tra_dieu.py "<tên luật>" <số điều> [--khoan N]` in nguyên văn; `--tim "<cụm từ>"` tìm điều chứa cụm từ; `--liet-ke` xem kho có gì.
+- **Chấm bản nháp trước khi gửi** mọi câu trả lời dài hơn một đoạn: `python3 -I scripts/kiem_dau_ra.py --dang nhan-dinh|tinh-huong|so-sanh nháp.txt` (hoặc `--stdin`; nhiều nhận định thì ngăn bằng dòng `---`). Một lệnh chấm cả hình thức (kết luận ở câu đầu, ngân sách chữ, câu quá 40 chữ, đoạn quá sáu câu, gạch đầu dòng, viện dẫn chung chung, quy cách CCPL) lẫn **từng căn cứ đối chiếu với kho**: điều, khoản, điểm có tồn tại không; câu trong ngoặc kép đặt sau viện dẫn có khớp nguyên văn không; bản được dẫn có cũ hơn bản trong kho không. Sửa hết lỗi mức error rồi mới gửi.
+- **Soát căn cứ cho văn bản dài** (tài liệu ôn thi, chương khóa luận, file reference): `python3 -I scripts/kiem_can_cu.py <file hoặc thư mục> [--chi-tiet]`.
 
-Ánh xạ nhãn khi trích: nhãn A của tài liệu (đã đối chiếu văn bản gốc, có ghi ngày) → dùng đến điểm/khoản với giọng chắc, và dòng nhắc đối chiếu cuối bài chỉ cần một câu chung "các căn cứ lấy theo tài liệu ôn thi đã đối chiếu ngày [X] — soát lại tình trạng hiệu lực trước kỳ thi" thay vì liệt kê từng căn cứ; nhãn B của tài liệu → mức B; nhãn C → mức C, dừng ở cấp Điều. Nhật ký xác minh giảm rủi ro chứ không triệt tiêu nó: khi có công cụ tra cứu và căn cứ quyết định kết luận thuộc nhóm rủi ro cao (văn bản sau 2020, nghị định xử phạt, con số), vẫn chạy một lần tra nhanh theo `references/quy-trinh-xac-minh.md`.
+Căn cứ "khớp kho" là mức B, không phải mức A: nó đúng với bản chữ trong kho tại ngày đối chiếu ghi ở đầu mỗi file. Căn cứ máy báo "ngoài kho" hoặc "không rõ văn bản" thì bước 6 chạy như cũ. `scripts/lint_ccpl.py` (quy cách viện dẫn, văn bản đã bị thay thế) đã được gọi sẵn trong lệnh chấm.
 
-Ba quy tắc xung đột. Văn bản gốc mâu thuẫn tài liệu → văn bản gốc thắng, và báo rõ cho người dùng để họ cập nhật nhật ký xác minh — tài liệu loại này được thiết kế để tiến hóa qua chính các lần phát hiện như vậy. Tài liệu mâu thuẫn trí nhớ mô hình → tài liệu thắng, trừ khi chỉ ra được bằng chứng cụ thể ngược lại, khi đó nêu mâu thuẫn cho người dùng thay vì im lặng chọn một bên. Và khi tài liệu phủ một môn mà các file reference chưa phủ, phần Bẫy và So sánh của chính tài liệu được dùng như phần mở rộng tạm thời của `danh-muc-bay.md` và `cap-khai-niem-de-lan.md` cho môn đó — trục hạ bậc "ngoài phạm vi reference" ở bước 6 không kích hoạt.
+Sau mỗi lần sửa chính kỹ năng này: `python3 scripts/kiem_tra_skill.py`, `python3 -m unittest discover -s scripts -p 'test_*.py'` (có test bắt năm ví dụ mẫu phải qua máy chấm), rồi `python3 scripts/dong_goi.py` để ra file zip kèm kho luật cho claude.ai. Bộ đề kiểm tra hành vi ở `evals/` (xem `evals/README.md`).
 
-**Tài liệu sưu tầm không có nhật ký xác minh** — file tải từ trang chia sẻ tài liệu, đáp án nhóm thuyết trình, đề cương khóa trên — không được hưởng bậc nguồn trên: nó đứng dưới trí nhớ đã kiểm của kỹ năng, và mỗi đáp án trong đó là một đáp án mồi. Trước khi chữa câu nào, định thế hệ luật của cả tài liệu (luật cũ, cơ quan đã đổi tên, văn bản hướng dẫn đã chết, sơ đồ tòa án trước 01/7/2025), rồi chữa theo bốn ô trong `references/cham-bai-va-hoc.md`, mục chữa tài liệu ôn thi sưu tầm — ô "đảo kết luận" luôn đặt lên đầu.
+## Tài liệu ôn thi đính kèm
+
+Thấy file ôn thi đính kèm thì xếp bậc nguồn trước khi dùng. Tài liệu tự soạn **có nhật ký xác minh** (ngân hàng CCPL gắn nhãn A/B/C, ghi ngày và nguồn đối chiếu) không thay được văn bản gốc nhưng thắng trí nhớ của mô hình — vì nó đã qua đối chiếu có ghi vết, còn trí nhớ thì không. Tài liệu **sưu tầm không có nhật ký xác minh** (file tải từ trang chia sẻ, đáp án nhóm thuyết trình, đề cương khóa trên) đứng dưới trí nhớ đã kiểm của kỹ năng, và mỗi đáp án trong đó là một đáp án mồi.
+
+Ánh xạ nhãn khi trích, ba quy tắc xung đột và quy trình chữa theo bốn ô nằm trong `references/cham-bai-va-hoc.md`, mục "Tài liệu ôn thi đính kèm" — mở file đó trước khi trích hoặc chữa bất kỳ câu nào từ tài liệu.
 
 ## Quy trình bắt buộc, theo đúng trình tự
 
@@ -129,9 +136,7 @@ Ba điều kiện chạm ngưỡng, chỉ cần một là đủ. Thứ nhất, *
 
 Khi chạm ngưỡng, làm bốn việc theo thứ tự. Nói ngay ở câu đầu là chưa đủ căn cứ để chốt, và nói rõ mắc ở đâu: thiếu số khoản, nghi văn bản đã bị thay thế, hay không nắm được con số. Đưa ra phần lập luận **ở đúng cấp độ còn chắc** — thường là chuỗi nguồn điều chỉnh, quan hệ luật chung với luật riêng, hướng kết luận, và điều khoản đến cấp Điều; phần này vẫn có giá trị thật, không nên bỏ. Chỉ ra thao tác tra cứu cụ thể theo `references/quy-trinh-xac-minh.md` để người dùng tự chốt trong vài phút. Và không viết câu kết luận Đúng/Sai như thể đã chốt, kể cả khi trực giác nghiêng hẳn về một phía — "nghiêng về hướng này nhưng chưa đủ căn cứ" là một câu khác hẳn về mặt thông tin so với "Sai, vì...".
 
-**Áp dụng điều kiện thứ ba cho vùng quốc tế.** Đề Thương mại quốc tế trong chương trình luật Việt Nam — CISG, Incoterms, chọn luật áp dụng, phòng vệ thương mại, các điều kinh điển của GATT — nay nằm **trong** phạm vi: xử lý theo `references/thuong-mai-quoc-te.md` và chạy đủ tám bước như với luật trong nước, kể cả quy trình xác minh (bảng tình trạng UNCITRAL, docs.wto.org thay cho vbpl.vn ở tầng điều ước).
-
-Ở vùng quốc tế, điều kiện thứ ba chỉ còn chạm ở hai chỗ. Thứ nhất, **pháp luật nội địa của nước ngoài thuần túy, không có mắt xích với Việt Nam** — luật hợp đồng Đức, thủ tục tố tụng Hoa Kỳ: không file reference nào phủ, không có quy trình xác minh, và vẫn giúp được ở tầng cấu trúc lập luận theo `references/lap-luan.md` như trước. Thứ hai, **số điều chi tiết của các hiệp định WTO ngoài GATT (ADA, SCM, SA, GATS, DSU) và số đoạn trong báo cáo Ban hội thẩm hoặc Cơ quan Phúc thẩm** khi không có tài liệu đính kèm và không tra được tài liệu gốc — vùng này giữ nguyên lệnh cấm dẫn từ trí nhớ: nêu đúng tên hiệp định và cơ chế, chỉ chỗ tra, và dừng trước con số.
+**Vùng quốc tế.** Đề Thương mại quốc tế trong chương trình luật Việt Nam — CISG, Incoterms, chọn luật áp dụng, phòng vệ thương mại, các điều kinh điển của GATT — nằm **trong** phạm vi và chạy đủ tám bước. Điều kiện thứ ba chỉ còn chạm ở pháp luật nội địa của nước ngoài không có mắt xích với Việt Nam và ở số điều chi tiết của các hiệp định WTO ngoài GATT; ranh giới cụ thể ở `references/thuong-mai-quoc-te.md`, mục "Ngưỡng dừng ở vùng quốc tế".
 
 Một lưu ý ngược chiều, quan trọng không kém: **ngưỡng này không phải cái cớ để né câu khó**. Đề khó, đề nhiều chế định chồng nhau, đề mà kết luận phụ thuộc tình tiết chưa rõ đều không chạm ngưỡng; cách xử lý đúng cho chúng là điều kiện hóa theo bước 7. Ngưỡng dừng nói về độ tin cậy của căn cứ, không nói về độ khó của đề. Dùng sai chỗ thì kỹ năng mất tác dụng nhanh hơn cả việc trả lời ẩu.
 
@@ -219,7 +224,9 @@ Một ranh giới cần nhận ra sớm: **khi câu hỏi không phải đề th
 
 ## Ví dụ minh họa
 
-Năm ví dụ dưới đây neo ba thứ cùng lúc: độ dài, thứ tự nhịp, và giọng văn. Khi quy tắc trong file này mâu thuẫn với ví dụ, ví dụ thắng — vì ví dụ là thứ được bắt chước.
+Năm ví dụ neo ba thứ cùng lúc: độ dài, thứ tự nhịp, và giọng văn. Khi quy tắc trong file này mâu thuẫn với ví dụ, ví dụ thắng — vì ví dụ là thứ được bắt chước.
+
+Hai ví dụ dạng nhận định nằm ngay dưới. Ba ví dụ còn lại nằm cuối file reference của đúng dạng đề — đọc trước khi viết dạng đó: Ví dụ 3 (tình huống có số liệu) ở `references/bai-tap-dinh-luong.md`, Ví dụ 4 (so sánh chế định) ở `references/cap-khai-niem-de-lan.md`, Ví dụ 5 (nhận định thương mại quốc tế) ở `references/thuong-mai-quoc-te.md`.
 
 Ví dụ 2, 3, 4 lấy từ đề thi thật môn Pháp luật về chủ thể kinh doanh, Đại học Luật TP. Hồ Chí Minh (các đề CLC01 học kỳ II 2023–2024 và 13BB2CQ học kỳ II 2021–2022); ví dụ 5 do kỹ năng tự dựng theo mẫu bẫy phổ biến nhất của môn Thương mại quốc tế. Đề là thật hoặc theo mẫu thật; phần trả lời do kỹ năng này soạn, không phải barem của giảng viên.
 
@@ -227,56 +234,22 @@ Ví dụ 2, 3, 4 lấy từ đề thi thật môn Pháp luật về chủ thể 
 
 **Đề bài:** Nhận định sau đúng hay sai: "Chủ tịch Ủy ban nhân dân cấp tỉnh không có thẩm quyền ban hành văn bản quy phạm pháp luật."
 
-**Cách xử lý đúng:** Sai, nhưng chỉ sai kể từ ngày 01/7/2025 — trước mốc đó nhận định này đúng. Theo Điều 4 Luật Ban hành văn bản quy phạm pháp luật số 64/2025/QH15 đã được sửa đổi, bổ sung bởi Luật số 87/2025/QH15, quyết định của Chủ tịch UBND cấp tỉnh được bổ sung vào hệ thống văn bản quy phạm pháp luật, có hiệu lực từ 01/7/2025; đây là lần đầu tiên chủ thể này có thẩm quyền lập quy. Bẫy ở đây là bẫy hiệu lực theo thời gian kết hợp bẫy phạm vi chủ thể: người học quen với hệ thống cũ (nơi chỉ có HĐND và UBND cấp tỉnh ban hành VBQPPL, còn Chủ tịch UBND chỉ ban hành văn bản hành chính cá biệt) sẽ trả lời "Đúng" theo phản xạ mà không soát mốc thời gian. Hệ quả: nếu đề không ghi thời điểm, phải trả lời điều kiện hóa theo hai nhánh trước và sau 01/7/2025 thay vì chọn một nhánh; lưu ý thêm rằng văn bản của Chủ tịch UBND cấp tỉnh không được quy định hiệu lực trở về trước.
+**Cách xử lý đúng:** Sai, nhưng chỉ sai kể từ ngày 01/7/2025 — trước mốc đó nhận định này đúng. Điều 4 Luật Ban hành văn bản quy phạm pháp luật số 64/2025/QH15 (sửa đổi, bổ sung bởi Luật số 87/2025/QH15) đưa quyết định của Chủ tịch UBND cấp tỉnh vào hệ thống văn bản quy phạm pháp luật. Phần bổ sung này có hiệu lực từ 01/7/2025 và là lần đầu tiên chủ thể này có thẩm quyền lập quy.
+
+Bẫy ở đây là bẫy hiệu lực theo thời gian kết hợp bẫy phạm vi chủ thể. Ở hệ thống cũ, cấp tỉnh chỉ có HĐND và UBND ban hành văn bản quy phạm pháp luật, còn Chủ tịch UBND chỉ ban hành văn bản hành chính cá biệt. Người học quen hệ thống đó sẽ trả lời "Đúng" theo phản xạ mà không soát mốc thời gian.
+
+Hệ quả: đề không ghi thời điểm thì phải trả lời điều kiện hóa theo hai nhánh, trước và sau 01/7/2025, thay vì chọn một nhánh. Văn bản của Chủ tịch UBND cấp tỉnh cũng không được quy định hiệu lực trở về trước.
 
 Cần đối chiếu trước khi dùng: Điều 4 Luật 64/2025/QH15 và nội dung sửa đổi tương ứng tại Luật 87/2025/QH15 — văn bản rất mới, xác nhận lại số điều và mốc hiệu lực trên vbpl.vn trước khi ghi vào bài.
 
-*Khoảng 200 chữ cho phần trả lời — đủ bốn nhịp, không thừa. Toàn bộ việc dựng chuỗi nguồn và rà danh mục bẫy diễn ra trong đầu, không xuất hiện trên giấy.*
+*Khoảng 190 chữ cho phần trả lời — đủ bốn nhịp, không thừa, không câu nào quá 40 chữ. Mỗi đoạn gánh một bước: kết luận và CCPL, bẫy, hệ quả. Toàn bộ việc dựng chuỗi nguồn và rà danh mục bẫy diễn ra trong đầu, không xuất hiện trên giấy.*
 
 ### Ví dụ 2 — nhận định đúng/sai bẫy tư cách chủ thể
 
 **Đề bài:** "Chủ doanh nghiệp tư nhân không thể đồng thời là thành viên công ty hợp danh."
 
-**Cách xử lý đúng:** Sai. Khoản 3 Điều 188 Luật Doanh nghiệp năm 2020 chỉ cấm chủ doanh nghiệp tư nhân đồng thời là **thành viên hợp danh** của công ty hợp danh, trong khi khoản 1 Điều 177 cùng luật cho thấy công ty hợp danh có thể có hai loại thành viên: thành viên hợp danh và thành viên góp vốn. Cấm một loại không đồng nghĩa cấm cả hai, nên chủ doanh nghiệp tư nhân vẫn có thể là thành viên góp vốn.
+**Cách xử lý đúng:** Sai. Khoản 3 Điều 188 Luật Doanh nghiệp năm 2020 chỉ cấm chủ doanh nghiệp tư nhân đồng thời là **thành viên hợp danh** của công ty hợp danh. Trong khi đó, khoản 1 Điều 177 cùng luật cho thấy công ty hợp danh có thể có hai loại thành viên: thành viên hợp danh và thành viên góp vốn. Cấm một loại không đồng nghĩa cấm cả hai, nên chủ doanh nghiệp tư nhân vẫn có thể là thành viên góp vốn.
 
-Nhận định đánh vào hai chỗ cùng lúc. Chỗ thứ nhất là chênh lệch giữa "thành viên công ty hợp danh" trong đề và "thành viên hợp danh" trong điều luật — hai cụm gần giống nhau nhưng phạm vi khác nhau, đúng dạng Nhóm 3. Chỗ thứ hai là chủ thể của điều cấm: khoản 4 Điều 188 cấm **doanh nghiệp tư nhân** góp vốn vào công ty hợp danh, nhưng chủ thể bị cấm ở đó là doanh nghiệp chứ không phải cá nhân chủ doanh nghiệp, nên viện dẫn khoản 4 để chứng minh nhận định đúng là dẫn nhầm chủ thể. Nguyên tắc chống bẫy cho cả nhóm này: được phép trừ khi có điều cấm, nên phải chỉ ra điều cấm phủ đúng tình huống, không suy từ cảm giác.
+Nhận định đánh vào hai chỗ cùng lúc. Chỗ thứ nhất là chênh lệch giữa "thành viên công ty hợp danh" trong đề và "thành viên hợp danh" trong điều luật — hai cụm gần giống nhau nhưng phạm vi khác nhau, đúng dạng Nhóm 3. Chỗ thứ hai là chủ thể của điều cấm. Khoản 4 Điều 188 cấm **doanh nghiệp tư nhân** góp vốn vào công ty hợp danh, nhưng chủ thể bị cấm ở đó là doanh nghiệp chứ không phải cá nhân chủ doanh nghiệp. Viện dẫn khoản 4 để chứng minh nhận định đúng vì vậy là dẫn nhầm chủ thể. Nguyên tắc chống bẫy cho cả nhóm này: được phép trừ khi có điều cấm, nên phải chỉ ra điều cấm phủ đúng tình huống, không suy từ cảm giác.
 
-*Khoảng 210 chữ. Kết luận ở câu đầu; hai chỗ hỏng được gọi tên riêng thay vì gộp thành "nhận định này chưa chính xác".*
-
-### Ví dụ 3 — bài tập tình huống có số liệu (neo dạng định lượng)
-
-**Đề bài rút gọn:** Công ty TNHH Mỹ Kim có vốn điều lệ 3 tỷ đồng: Bình 1 tỷ, Minh 800 triệu, Thủy 700 triệu, Lan 500 triệu. Điều lệ không quy định khác Luật Doanh nghiệp. Minh triệu tập họp Hội đồng thành viên thông qua báo cáo tài chính, chỉ có Minh và Lan dự. Hai mươi ngày sau, Minh triệu tập họp thông qua nghị quyết sáp nhập công ty; lần này có Bình, Lan và Minh dự, khi biểu quyết chỉ Lan không chấp thuận. Hỏi hai cuộc họp có hợp lệ không và nghị quyết sáp nhập có được thông qua không.
-
-**Cách xử lý đúng:** Cuộc họp thứ nhất không hợp lệ, cuộc họp thứ hai hợp lệ, và nghị quyết sáp nhập được thông qua.
-
-Cuộc họp thứ nhất có Minh và Lan, tức 800 + 500 = 1.300/3.000 = 43,33% vốn điều lệ, dưới ngưỡng 65% tại khoản 1 Điều 58 Luật Doanh nghiệp năm 2020, nên không đủ điều kiện tiến hành.
-
-Cuộc họp thứ hai có Bình, Lan và Minh, tức 1.000 + 500 + 800 = 2.300/3.000 = 76,67% vốn điều lệ, vượt 65% nên hợp lệ. Không cần viện dẫn cơ chế triệu tập lần hai tại khoản 2 Điều 58: nội dung họp đã khác (sáp nhập thay vì báo cáo tài chính) và khoảng cách 20 ngày vượt thời hạn của cơ chế đó, nên đây là một cuộc họp mới đủ điều kiện ngay ở lần thứ nhất.
-
-Về tỷ lệ thông qua, **mẫu số đổi**: theo khoản 3 Điều 59, tỷ lệ tán thành tính trên tổng số vốn góp của các thành viên **dự họp**, không phải trên vốn điều lệ. Tán thành là Bình và Minh: 1.000 + 800 = 1.800/2.300 = 78,26%. Sáp nhập thuộc nhóm tổ chức lại công ty tại điểm b khoản 3 Điều 59, cần từ 75% trở lên, nên nghị quyết được thông qua.
-
-Đây chính là chỗ mất điểm của cả dạng bài: nếu lấy vốn điều lệ làm mẫu số thì ra 1.800/3.000 = 60%, dưới 75%, và kết luận đảo chiều thành "không được thông qua" — dù bài đã dẫn đủ cả Điều 58 lẫn Điều 59.
-
-*Phép tính viết ra dạng phân số, kết luận đặt trước phép tính ở mỗi khối. Xem `references/bai-tap-dinh-luong.md` cho quy trình đầy đủ.*
-
-### Ví dụ 4 — so sánh (neo dạng phân biệt chế định)
-
-**Đề bài:** Phân biệt thành viên hợp danh và thành viên góp vốn trong công ty hợp danh.
-
-**Cách xử lý đúng:** Đặt hai đối tượng trên cùng một hệ tiêu chí, mỗi tiêu chí một dòng cho cả hai bên, không viết thành hai đoạn mô tả rời.
-
-Về tư cách chủ thể, thành viên hợp danh phải là cá nhân theo điểm b khoản 1 Điều 177 Luật Doanh nghiệp năm 2020, còn thành viên góp vốn có thể là tổ chức hoặc cá nhân. Về chế độ trách nhiệm, thành viên hợp danh chịu trách nhiệm bằng toàn bộ tài sản của mình về nghĩa vụ của công ty, còn thành viên góp vốn chỉ chịu trách nhiệm trong phạm vi số vốn đã cam kết góp. Về quyền quản lý, thành viên hợp danh trực tiếp điều hành và là người đại diện theo pháp luật; thành viên góp vốn không điều hành, quyền biểu quyết chỉ giới hạn trong nhóm vấn đề liệt kê tại khoản 1 Điều 187. Về hạn chế, thành viên hợp danh chịu các cấm đoán tại Điều 180 (không được làm chủ doanh nghiệp tư nhân, không được làm thành viên hợp danh của công ty hợp danh khác trừ khi được các thành viên hợp danh còn lại nhất trí), còn thành viên góp vốn không chịu các hạn chế này — đây chính là điểm neo cho Ví dụ 2.
-
-Bắt buộc phải có ở cuối: một câu về **hệ quả thực hành của sự khác biệt**, không chỉ liệt kê điểm khác. Ở đây là: một cá nhân đang bị cấm thành lập, quản lý doanh nghiệp hoặc đang là chủ doanh nghiệp tư nhân vẫn có thể tham gia công ty hợp danh với tư cách thành viên góp vốn, nên khi tư vấn cơ cấu sở hữu, tư cách góp vốn là đường đi hợp pháp còn lại.
-
-*Ba đến bốn tiêu chí là đủ. Bảng so sánh mười dòng không có câu hệ quả thì kém hơn bốn dòng có câu hệ quả.*
-
-### Ví dụ 5 — nhận định thương mại quốc tế (neo cây quyết định CISG)
-
-**Đề bài:** "Hợp đồng mua bán hàng hóa giữa một doanh nghiệp có trụ sở tại Việt Nam và một doanh nghiệp có trụ sở tại Ấn Độ đương nhiên được điều chỉnh bởi Công ước Viên năm 1980 (CISG), vì Việt Nam là thành viên của Công ước."
-
-**Cách xử lý đúng:** Sai. Điều 1(1)(a) CISG đòi **cả hai** quốc gia nơi các bên có trụ sở thương mại đều là thành viên Công ước, trong khi Ấn Độ chưa gia nhập CISG (đối chiếu bảng tình trạng UNCITRAL) — căn cứ này không thỏa dù Việt Nam là thành viên từ 01/01/2017. Khi đó CISG chỉ còn có thể áp dụng qua Điều 1(1)(b), nếu quy tắc tư pháp quốc tế dẫn chiếu đến pháp luật của một quốc gia thành viên, chẳng hạn dẫn về pháp luật Việt Nam — một điều kiện phải chứng minh trong từng vụ việc, trái hẳn với chữ "đương nhiên" của nhận định. Bẫy ở đây là bẫy suy đoán tư cách thành viên chồng lên bẫy lượng từ tuyệt đối: đáp án mồi hấp dẫn vì người học nhớ đúng nửa dữ kiện — nửa về Việt Nam — và chính nửa đó được nhắc trong đề như mồi nhử; tư cách thành viên của phía bên kia mới là chỗ quyết định, và đó là dữ kiện phải tra chứ không suy được. Hệ quả: nếu CISG không áp dụng, luật điều chỉnh xác định theo thỏa thuận chọn luật của các bên hoặc quy tắc tại Điều 664 và các điều tiếp theo của Bộ luật Dân sự năm 2015.
-
-Cần đối chiếu trước khi dùng: tình trạng thành viên CISG của Ấn Độ trên bảng UNCITRAL — dữ kiện đúng tại thời điểm soạn ví dụ, thuộc nhóm phải tra lại mỗi lần dùng.
-
-*Khoảng 220 chữ cho phần trả lời. Cổng tư cách thành viên được xử lý như một dữ kiện phải tra; nhánh Điều 1(1)(b) được nêu để đóng đường lùi của nhận định thay vì bỏ lửng.*
+*Khoảng 210 chữ. Kết luận ở câu đầu; hai chỗ hỏng được gọi tên riêng thay vì gộp thành "nhận định này chưa chính xác". Không có dòng nhắc đối chiếu vì ví dụ giả định ba khoản đã được đối chiếu văn bản gốc trong phiên (mức A); chưa đối chiếu thì bắt buộc có dòng đó.*

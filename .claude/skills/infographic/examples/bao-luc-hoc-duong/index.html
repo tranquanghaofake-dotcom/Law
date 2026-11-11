@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bạo lực học đường — tuổi và trách nhiệm</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Patrick+Hand&display=swap" rel="stylesheet">
+<style>
+  /* Ý tưởng: trang vở ô li của học trò. Khổ A4 dọc: 1080×1528 px = 210×297 mm (1 mm ≈ 5,14 px).
+     Vùng an toàn khi in: nội dung cách mép ≥ 52 px (~10 mm). Lề đỏ, lỗ gáy là trang trí, bị xén không sao. */
+  :root {
+    --paper: #fefefc;
+    --grid: #e6edf6;
+    --grid-main: #cbd8ec;
+    --margin: #e57373;
+    --violet: #3d2c8d;
+    --ink: #1f2333;
+    --muted: #4c5266;
+    --red: #b3261e;
+    --red-soft: #fbe4e1;
+    --blue: #1857a4;
+    --blue-soft: #e2edfb;
+    --ruler: #f7d046;
+    --ruler-ink: #3b3100;
+    --u: 108px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #c9cfd8; font-family: 'Be Vietnam Pro', Inter, sans-serif; color: var(--ink); }
+
+  .sheet {
+    position: relative; width: 1080px; height: 1528px; margin: 0 auto; overflow: hidden;
+    background-color: var(--paper);
+    background-image:
+      linear-gradient(var(--grid-main) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid-main) 1px, transparent 1px),
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 48px 48px, 48px 48px, 12px 12px, 12px 12px;
+    padding: 52px 52px 52px 128px;
+    display: flex; flex-direction: column; gap: 13px;
+  }
+  .sheet::before { content: ""; position: absolute; top: 0; bottom: 0; left: 104px; width: 2px; background: var(--margin); }
+  .holes { position: absolute; left: 14px; top: 0; bottom: 0; display: flex; flex-direction: column; justify-content: space-around; }
+  .holes i { width: 22px; height: 22px; border-radius: 50%; background: #c9cfd8; box-shadow: inset 0 2px 3px rgba(0,0,0,.25); }
+
+  .hand { font-family: 'Patrick Hand', 'Be Vietnam Pro', cursive; }
+  .ico { display: inline-flex; width: 1em; height: 1em; flex: none; }
+  .ico svg { width: 100%; height: 100%; }
+
+  section { position: relative; }
+  .bai { position: absolute; left: -106px; top: 3px; width: 72px; text-align: right; color: var(--violet); font-size: 23px; line-height: 1; }
+  h2 { font-size: 24px; font-weight: 700; color: var(--violet); line-height: 1.25; margin-bottom: 10px; }
+  h2 small { font-size: 15px; font-weight: 500; color: var(--muted); margin-left: 8px; background: var(--paper); padding: 0 4px; }
+
+  /* Nhãn vở */
+  .label { position: relative; background: #fff; border: 3px solid var(--violet); border-radius: 26px; padding: 18px 210px 16px 28px; box-shadow: 0 0 0 6px #fff, 0 0 0 8px var(--grid-main); }
+  .label::before, .label::after { content: ""; position: absolute; width: 16px; height: 16px; border: 3px solid var(--violet); border-radius: 50%; background: var(--ruler); top: 50%; transform: translateY(-50%); }
+  .label::before { left: -12px; } .label::after { right: -12px; }
+  .label h1 { font-size: 40px; line-height: 1.13; font-weight: 800; color: var(--violet); letter-spacing: -0.01em; }
+  .fields { display: flex; gap: 22px; margin-top: 10px; font-size: 16px; color: var(--muted); }
+  .fields span { border-bottom: 2px dotted var(--grid-main); padding-bottom: 2px; }
+  .fields b { color: var(--ink); font-weight: 600; }
+  .trio { position: absolute; right: 12px; bottom: -4px; display: flex; }
+  .trio img { width: 84px; height: 84px; margin-left: -22px; }
+
+  /* Bài 1 — 4 dạng hành vi bằng hình */
+  .acts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .act { background: #fff; border: 1.5px solid var(--grid-main); border-radius: 14px; padding: 12px 10px 10px; text-align: center; }
+  .act .pic { width: 54px; height: 54px; margin: 0 auto 6px; border-radius: 50%; background: var(--red-soft); color: var(--red); display: flex; align-items: center; justify-content: center; font-size: 28px; border: 2px solid #efc3be; }
+  .act b { display: block; font-size: 16.5px; line-height: 1.25; }
+  .scope { display: flex; gap: 18px; justify-content: center; margin-top: 10px; font-size: 15px; color: var(--muted); }
+  .scope span { display: inline-flex; gap: 6px; align-items: center; background: var(--paper); padding: 0 4px; }
+  .scope .ico { font-size: 18px; color: var(--violet); }
+
+  /* Bài 2 — thước */
+  .board { background: #fff; border: 1.5px solid var(--grid-main); border-radius: 14px; padding: 14px 18px 14px; }
+  .track { position: relative; width: calc(var(--u) * 8); }
+  .ruler {
+    position: relative; height: 64px; border-radius: 6px; background: var(--ruler);
+    box-shadow: 0 3px 0 #d9b21f, inset 0 1px 0 rgba(255,255,255,.6);
+    background-image:
+      repeating-linear-gradient(90deg, var(--ruler-ink) 0 2px, transparent 2px var(--u)),
+      repeating-linear-gradient(90deg, var(--ruler-ink) 0 1.5px, transparent 1.5px calc(var(--u) / 2)),
+      repeating-linear-gradient(90deg, var(--ruler-ink) 0 1px, transparent 1px calc(var(--u) / 10));
+    background-size: 100% 26px, 100% 18px, 100% 11px; background-repeat: no-repeat;
+  }
+  .ruler .n { position: absolute; top: 28px; transform: translateX(-50%); font-weight: 700; font-size: 18px; color: var(--ruler-ink); }
+  .ruler .n.key { top: 25px; width: 34px; height: 34px; border-radius: 50%; background: var(--violet); color: #fff; display: flex; align-items: center; justify-content: center; }
+  .guides { position: absolute; top: 64px; bottom: 0; left: 0; right: 0; pointer-events: none; }
+  .guides i { position: absolute; top: 0; bottom: 0; border-left: 2px dashed #9aa8c4; }
+
+  .lane { position: relative; height: 74px; margin-top: 32px; }
+  .lane-name { position: absolute; top: -27px; left: 0; display: flex; gap: 6px; align-items: center; font-size: 16.5px; font-weight: 700; background: #fff; padding-right: 6px; }
+  .lane-name small { font-weight: 500; color: var(--muted); font-size: 14.5px; }
+  .lane-name .ico { font-size: 20px; }
+  .bar { position: absolute; top: 0; height: 100%; border-radius: 10px; padding: 0 12px; display: flex; align-items: center; gap: 10px; font-size: 16.5px; font-weight: 700; line-height: 1.2; }
+  .bar .ico { font-size: 30px; }
+  .bar small { display: block; font-weight: 500; font-size: 14px; color: var(--muted); margin-top: 2px; }
+  .bar.none { background: #eceef2; border: 2px dashed #9aa3b5; color: var(--muted); }
+  .bar.crim { background: var(--red-soft); border: 2px solid #e4aaa4; border-left: 7px solid var(--red); }
+  .bar.crim .ico { color: var(--red); }
+  /* dân sự: chấm bi để phân biệt khi photo đen trắng */
+  .bar.civ { background-color: var(--blue-soft); background-image: radial-gradient(#c3d6f1 1.6px, transparent 1.7px); background-size: 12px 12px; border: 2px solid #aec6ea; border-left: 7px solid var(--blue); }
+  .bar.civ .ico { color: var(--blue); }
+  .bar.civ b, .bar.civ small { background: var(--blue-soft); }
+  .bar.cut { border-left-width: 2px; clip-path: polygon(10px 0, 100% 0, 100% 100%, 10px 100%, 0 85%, 10px 70%, 0 55%, 10px 40%, 0 25%, 10px 10%); padding-left: 20px; }
+  .bar.open { border-top-right-radius: 0; border-bottom-right-radius: 0; clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%); padding-right: 22px; }
+  .crim-t { color: var(--red); } .civ-t { color: var(--blue); }
+
+  .notes { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+  .note { position: relative; background: #fff7c2; padding: 10px 14px 10px 56px; border-radius: 3px; box-shadow: 0 6px 10px -6px rgba(60,40,0,.35); color: var(--red); font-size: 19.5px; line-height: 1.18; }
+  .note:nth-child(1) { transform: rotate(-1.4deg); } .note:nth-child(2) { transform: rotate(1deg); }
+  .note::before { content: ""; position: absolute; top: -9px; left: 50%; width: 80px; height: 18px; transform: translateX(-50%) rotate(2deg); background: rgba(203,216,236,.8); }
+  .note .ico { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); font-size: 34px; }
+
+  /* Bài 3 — ba khung truyện */
+  .cases { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .case { background: #fff; border: 1.5px solid var(--grid-main); border-radius: 14px; padding: 12px 14px 14px; display: flex; flex-direction: column; }
+  .case .stamps { margin-top: auto; padding-top: 22px; }
+  .who { display: flex; gap: 10px; align-items: center; }
+  .who img { width: 76px; height: 76px; border-radius: 50%; background: #eef2f8; border: 2px solid var(--grid-main); }
+  .who b { font-size: 20px; color: var(--violet); line-height: 1.1; }
+  .age { display: inline-block; margin-top: 4px; font-size: 14px; font-weight: 700; color: #fff; background: var(--violet); border-radius: 999px; padding: 1px 10px; }
+  .did { display: flex; gap: 10px; align-items: center; margin: 10px 0 6px; font-size: 16px; font-weight: 600; line-height: 1.25; }
+  .did .ico { font-size: 28px; color: var(--violet); }
+  .meter { position: relative; height: 12px; border-radius: 6px; background: linear-gradient(90deg, #eceef2 31%, #f8d9a8 31% 61%, #f1b3ab 61%); border: 1px solid #c9ced8; margin: 22px 0 4px; }
+  .meter i { position: absolute; top: -3px; height: 16px; width: 4px; border-radius: 2px; background: var(--ink); }
+  .meter em { position: absolute; top: -21px; transform: translateX(-50%); font-style: normal; font-size: 13.5px; font-weight: 700; }
+  .meter span { position: absolute; top: 14px; transform: translateX(-50%); font-size: 12.5px; color: var(--muted); font-weight: 600; }
+  .meter-key { display: flex; gap: 14px; justify-content: center; align-items: center; margin-top: 10px; font-size: 14.5px; color: var(--ink); }
+  .meter-key i { display: inline-block; width: 22px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: 1px; border: 1px solid #c9ced8; }
+  .chain { display: flex; gap: 6px; align-items: center; justify-content: center; margin: 14px 0 0; color: var(--violet); }
+  .chain .ico { font-size: 26px; } .chain .ico.sm { font-size: 18px; color: var(--muted); }
+  .stamps { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 26px; }
+  .stamp { border: 2.5px solid currentColor; border-radius: 8px; padding: 5px 6px; text-align: center; font-weight: 800; font-size: 14.5px; line-height: 1.15; display: flex; flex-direction: column; align-items: center; gap: 2px; }
+  .stamp .ico { font-size: 22px; }
+  .stamp small { font-weight: 600; font-size: 12.5px; }
+  .stamp.no { color: var(--muted); border-style: dashed; transform: rotate(-2deg); }
+  .stamp.yes { color: var(--red); transform: rotate(-2deg); }
+  .stamp.civ { color: var(--blue); transform: rotate(1.5deg); }
+  .ref { font-size: 13px; color: var(--muted); margin-top: 8px; text-align: right; }
+
+  /* Bài 4 — dòng hành động */
+  .flow { display: grid; grid-template-columns: 1fr 30px 1fr 30px 1.2fr; align-items: stretch; }
+  .flow > .ico { align-self: center; }
+  .go { display: flex; gap: 12px; align-items: center; background: #fff; border: 1.5px solid var(--grid-main); border-radius: 14px; padding: 12px 14px; font-size: 16px; font-weight: 700; line-height: 1.25; height: 100%; }
+  .go .pic { width: 58px; height: 58px; border-radius: 16px; background: var(--violet); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 30px; flex: none; }
+  .go small { display: block; font-weight: 500; font-size: 14px; color: var(--muted); }
+  .flow > .ico { font-size: 26px; color: var(--violet); justify-self: center; }
+  .go.hot { background: var(--ruler); border-color: #d9b21f; }
+  .go.hot .pic { background: var(--ink); }
+  .go.hot .big { display: block; font-size: 48px; font-weight: 800; line-height: .95; letter-spacing: -0.02em; }
+  .go.hot small { color: var(--ruler-ink); }
+
+  .sign { margin-top: auto; text-align: right; font-size: 13.5px; color: var(--muted); }
+  .sign span { background: var(--paper); padding: 0 4px; }
+  .sheet { text-wrap: balance; } /* cân dòng, chống chữ mồ côi */
+</style>
+</head>
+<body>
+<main class="sheet">
+  <div class="holes" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+  <header class="label">
+    <h1>Bạo lực học đường: bao nhiêu tuổi thì chịu trách nhiệm gì?</h1>
+    <div class="fields">
+      <span>Môn: <b>Pháp luật phổ thông</b></span>
+      <span>Dành cho: <b>học sinh, phụ huynh</b></span>
+    </div>
+    <div class="trio" aria-hidden="true">
+      <img src="../../assets/avatars/notionists-An.svg" alt="">
+      <img src="../../assets/avatars/notionists-Binh.svg" alt="">
+      <img src="../../assets/avatars/notionists-Chi.svg" alt="">
+    </div>
+  </header>
+
+  <section>
+    <div class="bai hand" data-margin>Bài 1.</div>
+    <h2>Bạo lực học đường là <small>với người học, trong cơ sở giáo dục hoặc lớp độc lập (khoản 5 Điều 2 Nghị định 80/2017)</small></h2>
+    <div class="acts">
+      <div class="act"><div class="pic"><span class="ico" data-icon="bandage"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M10 10.01h.01" /> <path d="M10 14.01h.01" /> <path d="M14 10.01h.01" /> <path d="M14 14.01h.01" /> <path d="M18 6v11.5" /> <path d="M6 6v12" /> <rect x="2" y="6" width="20" height="12" rx="2" /> </svg></span></div><b>Đánh đập, hành hạ, xâm hại thân thể</b></div>
+      <div class="act"><div class="pic"><span class="ico" data-icon="message-circle-warning"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /> <path d="M12 8v4" /> <path d="M12 16h.01" /> </svg></span></div><b>Lăng mạ, xúc phạm danh dự, nhân phẩm</b></div>
+      <div class="act"><div class="pic"><span class="ico" data-icon="user-x"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <circle cx="9" cy="7" r="4" /> <line x1="17" x2="22" y1="8" y2="13" /> <line x1="22" x2="17" y1="8" y2="13" /> </svg></span></div><b>Cô lập, xua đuổi</b></div>
+      <div class="act"><div class="pic"><span class="ico" data-icon="heart-crack"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" /> <path d="m12 13-1-1 2-2-3-3 2-2" /> </svg></span></div><b>Hành vi cố ý khác gây tổn hại</b></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="bai hand" data-margin>Bài 2.</div>
+    <h2>Đặt thước vào tuổi của em <small>tuổi tròn theo ngày sinh, không tính tuổi mụ</small></h2>
+    <div class="board">
+      <div class="track">
+        <div class="ruler">
+          <span class="n" style="left:14px">12</span>
+          <span class="n" style="left:calc(var(--u)*1)">13</span>
+          <span class="n key" style="left:calc(var(--u)*2)">14</span>
+          <span class="n key" style="left:calc(var(--u)*3)">15</span>
+          <span class="n key" style="left:calc(var(--u)*4)">16</span>
+          <span class="n" style="left:calc(var(--u)*5)">17</span>
+          <span class="n key" style="left:calc(var(--u)*6)">18</span>
+          <span class="n" style="left:calc(var(--u)*7)">19</span>
+        </div>
+        <div class="guides" aria-hidden="true">
+          <i style="left:calc(var(--u)*2)"></i><i style="left:calc(var(--u)*3)"></i><i style="left:calc(var(--u)*4)"></i><i style="left:calc(var(--u)*6)"></i>
+        </div>
+
+        <div class="lane">
+          <div class="lane-name crim-t"><span class="ico" data-icon="gavel"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="m14.5 12.5-8 8a2.119 2.119 0 1 1-3-3l8-8" /> <path d="m16 16 6-6" /> <path d="m8 8 6-6" /> <path d="m9 7 8 8" /> <path d="m21 11-8-8" /> </svg></span>Bị truy cứu hình sự? <small>Điều 12 Bộ luật Hình sự</small></div>
+          <div class="bar none cut" style="left:0; width:calc(var(--u)*2 - 4px)"><span class="ico" data-icon="circle-slash"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <circle cx="12" cy="12" r="10" /> <line x1="9" x2="15" y1="15" y2="9" /> </svg></span><b>Không</b></div>
+          <div class="bar crim" style="left:calc(var(--u)*2 + 4px); width:calc(var(--u)*2 - 8px)"><b>Rất nghiêm trọng trở lên<small>chỉ 28 tội luật liệt kê</small></b></div>
+          <div class="bar crim open" style="left:calc(var(--u)*4 + 4px); width:calc(var(--u)*4 - 4px)"><span class="ico" data-icon="gavel"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="m14.5 12.5-8 8a2.119 2.119 0 1 1-3-3l8-8" /> <path d="m16 16 6-6" /> <path d="m8 8 6-6" /> <path d="m9 7 8 8" /> <path d="m21 11-8-8" /> </svg></span><b>Mọi tội phạm<small>trừ trường hợp luật quy định khác</small></b></div>
+        </div>
+
+        <div class="lane">
+          <div class="lane-name civ-t"><span class="ico" data-icon="wallet"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" /> <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" /> </svg></span>Ai trả tiền bồi thường? <small>Điều 586 Bộ luật Dân sự</small></div>
+          <div class="bar civ cut" style="left:0; width:calc(var(--u)*3 - 4px)"><span class="ico" data-icon="users"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <circle cx="9" cy="7" r="4" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <path d="M16 3.13a4 4 0 0 1 0 7.75" /> </svg></span><b>Cha mẹ trả<small>thiếu thì lấy tài sản của con</small></b></div>
+          <div class="bar civ" style="left:calc(var(--u)*3 + 4px); width:calc(var(--u)*3 - 8px)"><span class="ico" data-icon="wallet"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" /> <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" /> </svg></span><b>Tự trả<small>thiếu thì cha mẹ bù</small></b></div>
+          <div class="bar civ open" style="left:calc(var(--u)*6 + 4px); width:calc(var(--u)*2 - 4px)"><span class="ico" data-icon="wallet"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" /> <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" /> </svg></span><b>Tự trả</b></div>
+        </div>
+      </div>
+
+      <div class="notes">
+        <div class="note hand"><span class="ico" data-icon="pencil-line"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M12 20h9" /> <path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z" /> <path d="m15 5 3 3" /> </svg></span>Mốc 15: đã tự trả tiền, nhưng hình sự vẫn chỉ tính tội rất nghiêm trọng.</div>
+        <div class="note hand"><span class="ico" data-icon="school"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M14 22v-4a2 2 0 1 0-4 0v4" /> <path d="m18 10 3.447 1.724a1 1 0 0 1 .553.894V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7.382a1 1 0 0 1 .553-.894L6 10" /> <path d="M18 5v17" /> <path d="m4 6 7.106-3.553a2 2 0 0 1 1.788 0L20 6" /> <path d="M6 5v17" /> <circle cx="12" cy="9" r="2" /> </svg></span>Dưới 15, xảy ra lúc trường đang quản lý: trường trả, trừ khi trường không có lỗi (Điều 599).</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="bai hand" data-margin>Bài 3.</div>
+    <h2>Áp thước vào ba bạn</h2>
+    <div class="cases">
+      <article class="case">
+        <div class="who"><img src="../../assets/avatars/notionists-An.svg" alt=""><div><b>An</b><br><span class="age">15 tuổi</span></div></div>
+        <div class="did"><span class="ico" data-icon="bandage"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M10 10.01h.01" /> <path d="M10 14.01h.01" /> <path d="M14 10.01h.01" /> <path d="M14 14.01h.01" /> <path d="M18 6v11.5" /> <path d="M6 6v12" /> <rect x="2" y="6" width="20" height="12" rx="2" /> </svg></span>Đánh bạn 14 tuổi, tổn thương 12%</div>
+        <div class="meter" data-free aria-label="Tỉ lệ tổn thương 12%"><i style="left:12%"></i><em style="left:12%">12%</em><span style="left:31%">31%</span><span style="left:61%">61%</span></div>
+        <div class="stamps">
+          <div class="stamp no"><span class="ico" data-icon="gavel"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="m14.5 12.5-8 8a2.119 2.119 0 1 1-3-3l8-8" /> <path d="m16 16 6-6" /> <path d="m8 8 6-6" /> <path d="m9 7 8 8" /> <path d="m21 11-8-8" /> </svg></span>KHÔNG<small>chưa tới rất nghiêm trọng</small></div>
+          <div class="stamp civ"><span class="ico" data-icon="wallet"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" /> <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" /> </svg></span>TỰ TRẢ<small>cha mẹ bù phần thiếu</small></div>
+        </div>
+        <div class="ref">khoản 2 Điều 134: tội nghiêm trọng</div>
+      </article>
+      <article class="case">
+        <div class="who"><img src="../../assets/avatars/notionists-Binh.svg" alt=""><div><b>Bình</b><br><span class="age">15 tuổi</span></div></div>
+        <div class="did"><span class="ico" data-icon="bandage"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M10 10.01h.01" /> <path d="M10 14.01h.01" /> <path d="M14 10.01h.01" /> <path d="M14 14.01h.01" /> <path d="M18 6v11.5" /> <path d="M6 6v12" /> <rect x="2" y="6" width="20" height="12" rx="2" /> </svg></span>Đánh bạn 14 tuổi, tổn thương 35%</div>
+        <div class="meter" data-free aria-label="Tỉ lệ tổn thương 35%"><i style="left:35%"></i><em style="left:35%">35%</em><span style="left:31%">31%</span><span style="left:61%">61%</span></div>
+        <div class="stamps">
+          <div class="stamp yes"><span class="ico" data-icon="gavel"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="m14.5 12.5-8 8a2.119 2.119 0 1 1-3-3l8-8" /> <path d="m16 16 6-6" /> <path d="m8 8 6-6" /> <path d="m9 7 8 8" /> <path d="m21 11-8-8" /> </svg></span>CÓ THỂ<small>rất nghiêm trọng</small></div>
+          <div class="stamp civ"><span class="ico" data-icon="wallet"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" /> <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" /> </svg></span>TỰ TRẢ<small>cha mẹ bù phần thiếu</small></div>
+        </div>
+        <div class="ref">khoản 3 Điều 134 điểm c: bạn dưới 16 tuổi</div>
+      </article>
+      <article class="case">
+        <div class="who"><img src="../../assets/avatars/notionists-Chi.svg" alt=""><div><b>Chi</b><br><span class="age">16 tuổi</span></div></div>
+        <div class="did"><span class="ico" data-icon="video"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" /> <rect x="2" y="6" width="14" height="12" rx="2" /> </svg></span>Quay clip lăng mạ bạn, đăng lên mạng</div>
+        <div class="chain" aria-hidden="true"><span class="ico" data-icon="video"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" /> <rect x="2" y="6" width="14" height="12" rx="2" /> </svg></span><span class="ico sm" data-icon="arrow-right"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /> </svg></span><span class="ico" data-icon="smartphone"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect width="14" height="20" x="5" y="2" rx="2" ry="2" /> <path d="M12 18h.01" /> </svg></span><span class="ico sm" data-icon="arrow-right"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /> </svg></span><span class="ico" data-icon="users"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <circle cx="9" cy="7" r="4" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <path d="M16 3.13a4 4 0 0 1 0 7.75" /> </svg></span></div>
+        <div class="stamps">
+          <div class="stamp yes"><span class="ico" data-icon="gavel"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="m14.5 12.5-8 8a2.119 2.119 0 1 1-3-3l8-8" /> <path d="m16 16 6-6" /> <path d="m8 8 6-6" /> <path d="m9 7 8 8" /> <path d="m21 11-8-8" /> </svg></span>CÓ THỂ<small>tội làm nhục</small></div>
+          <div class="stamp civ"><span class="ico" data-icon="wallet"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" /> <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" /> </svg></span>TỰ TRẢ<small>cả tổn thất tinh thần</small></div>
+        </div>
+        <div class="ref">khoản 2 Điều 155: phạm tội qua mạng</div>
+      </article>
+    </div>
+    <p class="meter-key"><span><i style="background:#eceef2"></i>dưới 31%</span><span><i style="background:#f8d9a8"></i>31–60%: rất nghiêm trọng nếu bạn bị đánh <b>dưới 16 tuổi</b>, dùng hung khí, côn đồ…</span><span><i style="background:#f1b3ab"></i>từ 61%</span></p>
+  </section>
+
+  <section>
+    <div class="bai hand" data-margin>Bài 4.</div>
+    <h2>Gặp hoặc chứng kiến bạo lực</h2>
+    <div class="flow">
+      <div class="go"><span class="pic"><span class="ico" data-icon="megaphone"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="m3 11 18-5v12L3 14v-3z" /> <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6" /> </svg></span></span><div>Báo thầy cô, bố mẹ<small>ngay khi xảy ra</small></div></div>
+      <span class="ico" data-icon="arrow-right"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /> </svg></span>
+      <div class="go"><span class="pic"><span class="ico" data-icon="camera"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" /> <circle cx="12" cy="13" r="3" /> </svg></span></span><div>Giữ bằng chứng<small>ảnh, tin nhắn, giấy khám bệnh</small></div></div>
+      <span class="ico" data-icon="arrow-right"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /> </svg></span>
+      <div class="go hot"><span class="pic"><span class="ico" data-icon="phone-call"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /> <path d="M14.05 2a9 9 0 0 1 8 7.94" /> <path d="M14.05 6A5 5 0 0 1 18 10" /> </svg></span></span><div><span class="big">111</span>Tổng đài bảo vệ trẻ em<small>miễn phí, 24/7. Khẩn cấp: 113</small></div></div>
+    </div>
+  </section>
+
+  <p class="sign"><span>Luyện Luật — thông tin pháp luật phổ thông, không thay thế tư vấn pháp lý</span></p>
+</main>
+</body>
+</html>

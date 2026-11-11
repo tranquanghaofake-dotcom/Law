@@ -4,6 +4,20 @@
 
 Cảnh báo chung về số điều: các số điều dưới đây thuộc văn bản ổn định lâu năm nên độ tin cậy khá cao, nhưng khi có công cụ tra cứu vẫn đối chiếu lại — đặc biệt số khoản, vốn là thứ hay trôi nhất. Số điều lấy từ file này mặc định là mức B, chỉ lên mức A sau khi đối chiếu văn bản gốc trong phiên; thao tác đối chiếu theo `quy-trinh-xac-minh.md`.
 
+## Mục lục
+
+Định vị mục bằng `grep -n "^## " references/cap-khai-niem-de-lan.md` rồi đọc đúng mục cần; file không cần đọc cả.
+
+- Dân sự, thương mại: phạt vi phạm và bồi thường thiệt hại · thương nhân, doanh nghiệp, chủ thể kinh doanh · vô hiệu tuyệt đối và tương đối · tạm ngừng, đình chỉ, hủy bỏ hợp đồng · quan hệ Luật Thương mại và Bộ luật Dân sự
+- Lao động: đơn phương chấm dứt hợp đồng lao động và sa thải
+- Đất đai: giao đất và cho thuê đất · thu hồi đất và trưng dụng đất
+- Hình sự: chuẩn bị phạm tội, phạm tội chưa đạt, tội phạm hoàn thành · lỗi cố ý và lỗi vô ý
+- Hôn nhân và gia đình: kết hôn trái pháp luật và chung sống như vợ chồng không đăng ký
+- Cạnh tranh: lạm dụng vị trí thống lĩnh và cạnh tranh không lành mạnh
+- Tố tụng hành chính: thời hiệu khởi kiện vụ án hành chính và thời hạn giải quyết khiếu nại
+- Các cặp khác cần phân biệt trước khi trả lời
+- Ví dụ 4 — bài mẫu dạng so sánh (cuối file)
+
 ## Phạt vi phạm và bồi thường thiệt hại
 
 Đây là cặp bị nhầm nhiều nhất trong Luật Kinh tế, và nhầm ở đây hầu như luôn kéo theo sai kết luận vì hai luật quy định ngược nhau.
@@ -133,3 +147,19 @@ Thời hiệu khởi kiện (Điều 116) là khoảng thời gian **người kh
 Những cặp sau ít gặp hơn nhưng cùng cơ chế bẫy — dùng khái niệm A mà mô tả hệ quả của khái niệm B:
 
 Đại diện theo pháp luật và đại diện theo ủy quyền; cầm cố (có chuyển giao tài sản) và thế chấp (không chuyển giao); thời hiệu (khoảng thời gian mà hết thì mất quyền yêu cầu) và thời hạn (mốc thực hiện nghĩa vụ); trách nhiệm trong hợp đồng và ngoài hợp đồng; giải thể (doanh nghiệp còn khả năng thanh toán) và phá sản (mất khả năng thanh toán, có thủ tục tư pháp).
+
+## Ví dụ 4 — so sánh (neo dạng phân biệt chế định)
+
+*Đề thi thật môn Pháp luật về chủ thể kinh doanh, Đại học Luật TP. Hồ Chí Minh; phần trả lời do kỹ năng soạn, không phải barem của giảng viên. Ví dụ neo độ dài, thứ tự nhịp và giọng văn — khi quy tắc mâu thuẫn với ví dụ, ví dụ thắng.*
+
+**Đề bài:** Phân biệt thành viên hợp danh và thành viên góp vốn trong công ty hợp danh.
+
+**Cách xử lý đúng:** Đặt hai đối tượng trên cùng một hệ tiêu chí, mỗi tiêu chí một dòng cho cả hai bên, không viết thành hai đoạn mô tả rời.
+
+Về tư cách chủ thể, thành viên hợp danh phải là cá nhân theo điểm b khoản 1 Điều 177 Luật Doanh nghiệp năm 2020, còn thành viên góp vốn có thể là tổ chức hoặc cá nhân. Về chế độ trách nhiệm, thành viên hợp danh chịu trách nhiệm bằng toàn bộ tài sản của mình về nghĩa vụ của công ty. Thành viên góp vốn chỉ chịu trách nhiệm trong phạm vi số vốn đã cam kết góp.
+
+Về quyền quản lý, thành viên hợp danh trực tiếp điều hành và là người đại diện theo pháp luật. Thành viên góp vốn không điều hành; quyền biểu quyết của họ chỉ giới hạn trong nhóm vấn đề liệt kê tại khoản 1 Điều 187. Về hạn chế, thành viên hợp danh chịu các cấm đoán tại Điều 180, trước hết là không được làm chủ doanh nghiệp tư nhân. Họ cũng không được làm thành viên hợp danh của công ty hợp danh khác, trừ khi các thành viên hợp danh còn lại nhất trí. Thành viên góp vốn không chịu các hạn chế này — đây chính là điểm neo cho Ví dụ 2 trong SKILL.md.
+
+Bắt buộc phải có ở cuối: một câu về **hệ quả thực hành của sự khác biệt**, không chỉ liệt kê điểm khác. Ở đây là: chủ doanh nghiệp tư nhân vẫn có thể tham gia công ty hợp danh với tư cách thành viên góp vốn. Người thuộc diện không được thành lập, quản lý doanh nghiệp cũng vậy, trừ nhóm bị cấm góp vốn tại khoản 3 Điều 17. Khi tư vấn cơ cấu sở hữu, tư cách góp vốn vì thế là đường đi hợp pháp còn lại.
+
+*Ba đến bốn tiêu chí là đủ. Bảng so sánh mười dòng không có câu hệ quả thì kém hơn bốn dòng có câu hệ quả. Câu hệ quả nêu luôn ngoại lệ (khoản 3 Điều 17): hệ quả viết thành khẳng định tuyệt đối chính là thứ đề thi sẽ bẫy. Không có dòng nhắc đối chiếu vì ví dụ giả định các điều trên đã được đối chiếu văn bản gốc trong phiên (mức A); chưa đối chiếu thì bắt buộc có dòng đó.*
