@@ -8,6 +8,8 @@ Hào yêu cầu: logic ra đề vừa dễ vào đầu, vừa dễ nhìn/ít kh�
 
 1. **Cuối phiên (spec này).**
 2. Lúc sai (kiểm vòng sửa sai và giải thích đã đủ chưa) — spec riêng.
+   - **Rà ngày 11/11/2026: phần code đã xong, không cần spec riêng.** Vòng sửa sai ra câu khác (`d18f26c`), lúc sai bớt lặp đáp án + nút "Câu tiếp" dính đáy (`627a909`), tự cuộn tới thẻ phản hồi (`8a41263`) đều đã lên `main` qua PR #59.
+   - Đo trên 5.422 câu của 740 khái niệm: trắc nghiệm 1.430/1.430 và tình huống 117/117 có giải thích từng phương án (`why`); nhận định Sai 620/623 có lời giải thích. Chỗ còn hở là **44 câu nhận định (41 Đúng, 3 Sai) mà `explain` chỉ ghi số điều** — việc nội dung, ghi ở `docs/plans/2026-11-07-why-tat-ca-mon.md`.
 3. Đầu bài và giữa bài (câu khởi động, nhịp độ khó thích ứng) — spec riêng, sau khi có dữ liệu.
 
 Đã có từ đợt trước (bài này không làm lại): câu sinh nhiễu cùng dạng, đề bài ít che chữ, trang Ôn gợi ý bài yếu khi hết bài đến hạn (commit `213fcbe`, `1794069`).

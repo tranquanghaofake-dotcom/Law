@@ -23,6 +23,21 @@
 | 13–14 | Chứng khoán | 235 | xong |
 | 15 | Bộ đề (470 câu) | schema + Quiz10 hỗ trợ `why`; 47/47 bộ có trong SETS_DONE | xong |
 
+## Còn lại sau khi rà "lúc sai" (đo 11/11/2026) — nhánh `content/nhan-dinh-giai-thich`, chưa làm
+44 câu nhận định có `explain` chỉ là số điều (ví dụ "Đúng. Khoản 2 Điều 39."), nên lúc trả lời sai người học không thấy lý do. Cần viết lại thành 1–2 câu nêu nội dung điều khoản, đối chiếu `packages/content/data/laws/` từng câu:
+
+| Môn | Số câu | Môn | Số câu |
+|---|---|---|---|
+| Chứng khoán | 13 | Hình sự | 2 |
+| Hiến pháp | 7 | Hôn nhân và gia đình | 2 |
+| Tài chính | 4 | Lao động 2 | 2 |
+| Đầu tư | 3 | Thương mại 1 | 2 |
+| Quản trị tài sản trí tuệ | 3 | Lao động | 1 |
+| An sinh xã hội | 2 | Xây dựng VBPL | 1 |
+| Hành chính | 2 | | |
+
+Cách đếm: câu `truefalse` mà `isCiteOnly(explain)` (trong `apps/web/src/lib/engine/why.ts`) trả `true`. Dạng "Phân biệt" (`pair`) có 528/690 câu cũng chỉ ghi số điều nhưng lúc sai đã có bảng so sánh hai khái niệm, không xếp vào việc này.
+
 ## Việc kèm theo (mỗi việc một nhánh `feat/`, cần spec trước)
 - Nhận định chấm 3 phần (Đúng/Sai 0,25 · căn cứ 0,25 · lập luận 0,5).
 - Bản đồ điểm yếu ở trang Hồ sơ (tỷ lệ đúng theo môn/chương/dạng bài, nút ôn phần yếu).
