@@ -104,3 +104,36 @@ test('ô trên lưới bậc dẫn tới đúng khái niệm trong danh mục', 
   await expect(page).toHaveURL(/#\/mon\/hien-phap\/khai-niem\/[a-z-]+$/);
   await expect(page.locator('.concept-entry.open')).toHaveCount(1, { timeout: 15_000 });
 });
+
+test('tìm kiếm toàn cục: mở bằng nút, gõ không dấu, bấm kết quả mở đúng khái niệm; phím / và Esc', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(B + '#/luyen-de');
+  await page.getByRole('button', { name: 'Tìm kiếm' }).click();
+  const box = page.getByRole('dialog', { name: 'Tìm kiếm' });
+  await expect(box.getByRole('searchbox')).toBeFocused();
+  await box.getByRole('searchbox').fill('chu quyen nhan dan');
+  const hit = box.getByRole('link', { name: /Chủ quyền Nhân dân/ });
+  await expect(hit).toBeVisible();
+  await hit.click();
+  await expect(page).toHaveURL(/#\/mon\/hien-phap\/khai-niem\/chu-quyen-nhan-dan$/);
+  await expect(box).toBeHidden();
+  // phím "/" mở lại hộp; ô nhập trống thì Esc đóng ngay
+  await page.locator('#main').focus();
+  await page.keyboard.press('/');
+  await expect(box.getByRole('searchbox')).toBeFocused();
+  await expect(box.getByRole('searchbox')).toHaveValue('');
+  await box.getByRole('searchbox').fill('zzzz');
+  await expect(box.getByText('Không thấy kết quả cho “zzzz”.')).toBeVisible();
+  await box.getByRole('searchbox').fill('');
+  await page.keyboard.press('Escape');
+  await expect(box).toBeHidden();
+});
+
+test('điện thoại hẹp 360 px: thanh trên có nút tìm vẫn một dòng, không cuộn ngang', async ({ page }) => {
+  await page.setViewportSize({ width: 360, height: 740 });
+  await page.goto(B + '');
+  await expect(page.getByRole('button', { name: 'Tìm kiếm' })).toBeVisible();
+  const h = await page.locator('.topbar .brand').evaluate((e) => e.getBoundingClientRect().height);
+  expect(h).toBeLessThan(40);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)).toBe(0);
+});

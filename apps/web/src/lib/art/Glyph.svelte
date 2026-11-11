@@ -1,6 +1,6 @@
 <script lang="ts">
   // Icon nét nhỏ thay emoji màu (🔥 🔊 ⚙) và ký tự Unicode (★ ▸ ← ⚠ ✓, HT14) để đồng bộ phong cách nét vẽ. stroke = currentColor.
-  let { name, size = 18 }: { name: 'flame' | 'speaker' | 'gear' | 'star' | 'star-fill' | 'chevron-right' | 'chevron-down' | 'back' | 'warn' | 'check' | 'close' | 'lock' | 'dot' | 'dot-empty' | 'external'; size?: number } = $props();
+  let { name, size = 18 }: { name: 'flame' | 'speaker' | 'gear' | 'star' | 'star-fill' | 'chevron-right' | 'chevron-down' | 'back' | 'warn' | 'check' | 'close' | 'lock' | 'dot' | 'dot-empty' | 'external' | 'search'; size?: number } = $props();
 </script>
 
 <svg class="glyph" viewBox="0 0 24 24" width={size} height={size} aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -21,6 +21,8 @@
     <path d="M12 4l9 16H3zM12 10v4.5M12 17.5v.01" />
   {:else if name === 'check'}
     <path d="M5 12.5l4.5 4.5L19 7.5" />
+  {:else if name === 'search'}
+    <circle cx="11" cy="11" r="6.5" /><path d="M16 16l4.5 4.5" />
   {:else if name === 'close'}
     <path d="M6 6l12 12M18 6L6 18" />
   {:else if name === 'lock'}

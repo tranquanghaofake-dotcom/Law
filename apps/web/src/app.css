@@ -1315,6 +1315,48 @@ h1 { text-wrap: balance; }
 .sheet-body { display: grid; gap: 10px; align-content: start; overflow: auto; overscroll-behavior: contain; padding: 12px 16px calc(20px + env(safe-area-inset-bottom, 0px)); }
 .sheet-body > * { margin: 0; }
 body:has(dialog.sheet[open]) { overflow: hidden; }
+
+/* Tìm kiếm toàn cục (spec 2026-11-11): nút mở ở thanh trên (điện thoại) và thanh bên (từ 768), hộp tìm neo phía trên màn hình. */
+.search-btn { flex: none; display: inline-grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 0; border-radius: var(--r-md); background: transparent; color: var(--ink); cursor: pointer; }
+.search-btn:hover { background: color-mix(in srgb, var(--ink) 6%, transparent); }
+.side-search { display: flex; flex-direction: column; align-items: center; gap: var(--sp-1); width: 100%; padding: var(--sp-2) var(--sp-1); border: 1px solid transparent; border-radius: var(--r-md); background: transparent; color: var(--muted); font: 600 var(--fs-xs)/1.2 var(--font-ui); cursor: pointer; }
+.side-search:hover { color: var(--ink); background: color-mix(in srgb, var(--ink) 5%, transparent); }
+.side-search .long, .side-search kbd { display: none; }
+@media (min-width: 1280px) {
+  .side-search { flex-direction: row; gap: var(--sp-2); min-height: var(--ctl-h); margin-bottom: var(--sp-2); padding: 0 var(--sp-2) 0 var(--sp-3); border-color: var(--line); background: var(--paper); font-size: var(--fs-sm); font-weight: 500; text-align: left; }
+  .side-search:hover { border-color: var(--accent); background: var(--paper); }
+  .side-search .short { display: none; }
+  .side-search .long { display: block; flex: 1; min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  .side-search kbd { display: block; margin: 0; padding: 3px 7px; background: color-mix(in srgb, var(--ink) 8%, transparent); color: var(--muted); }
+}
+.search-dlg { box-sizing: border-box; width: 100%; max-width: 100%; max-height: 100dvh; margin: 0 auto auto; padding: 0; border: 0; background: transparent; color: var(--ink); overflow: visible; }
+.search-dlg::backdrop { background: rgba(10, 16, 30, .6); }
+.search-card { display: flex; flex-direction: column; max-height: min(100dvh, 640px); padding-top: env(safe-area-inset-top, 0px); border-bottom: 1px solid var(--line); border-radius: 0 0 var(--r-lg) var(--r-lg); background: var(--card); box-shadow: 0 12px 40px rgba(0, 0, 0, .3); overflow: hidden; }
+.search-top { display: flex; align-items: center; gap: var(--sp-2); padding: var(--sp-3) var(--sp-4); border-bottom: 1px solid var(--line); }
+.search-field { flex: 1; min-width: 0; display: flex; align-items: center; gap: var(--sp-2); min-height: 44px; padding: 0 var(--sp-3); border: 1px solid var(--line); border-radius: var(--r-md); background: var(--paper); color: var(--muted); }
+.search-field:focus-within { outline: 3px solid var(--focus); outline-offset: 1px; }
+.search-field input { flex: 1; min-width: 0; height: 42px; padding: 0; border: 0; outline: 0; background: transparent; color: var(--ink); font: 400 var(--fs-md)/1.2 var(--font-ui); /* ≥ 16px: iOS không tự phóng to khi chạm ô nhập */ }
+.search-body { overflow: auto; overscroll-behavior: contain; padding: var(--sp-3) var(--sp-4) calc(var(--sp-4) + env(safe-area-inset-bottom, 0px)); }
+.search-body > p { margin: 0 0 var(--sp-2); }
+.sr-group { margin: var(--sp-3) 0 var(--sp-1); font: 700 var(--fs-xs)/1.2 var(--font-ui); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.sr-group:first-child { margin-top: 0; }
+.sr-list { list-style: none; margin: 0; padding: 0; }
+.sr-hit { display: flex; align-items: center; justify-content: space-between; gap: var(--sp-3); min-height: 44px; padding: var(--sp-2) var(--sp-2); border-radius: var(--r-md); color: var(--ink); text-decoration: none; }
+.sr-hit b { font-weight: 600; }
+.sr-hit .chip { flex: none; max-width: 45%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.sr-hit:hover, .sr-hit:focus-visible { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+.sr-hit:focus-visible { outline-offset: -3px; }
+.sr-more { margin: var(--sp-1) var(--sp-2) 0; }
+body:has(dialog.search-dlg[open]) { overflow: hidden; }
+/* Thanh trên có thêm nút tìm: giữ tên trên một dòng; màn hẹp thu chữ, dưới 360 px chỉ còn dấu § (tên vẫn đọc được bằng trình đọc màn hình).
+   Đo ở 360 px: tên 137 + khoảng cách 12 + cụm nút 153 + lề 32 = 334, còn chỗ cho chuỗi ngày 3 chữ số. */
+.shell > .topbar .brand { white-space: nowrap; }
+@media (max-width: 399px) { .shell > .topbar .brand { font-size: var(--fs-lg); } }
+@media (max-width: 359px) { .shell > .topbar .brand .name { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); } }
+@media (min-width: 768px) {
+  .search-dlg { width: min(560px, calc(100% - 32px)); margin-top: 10vh; }
+  .search-card { max-height: min(70dvh, 640px); padding-top: 0; border: 1px solid var(--line); border-radius: var(--r-lg); box-shadow: 0 20px 60px rgba(0, 0, 0, .45); }
+}
 @media (min-width: 768px) {
   .sheet { width: min(640px, calc(100% - 32px)); margin: auto; }
   .sheet-card { border-radius: var(--r-lg); box-shadow: 0 20px 60px rgba(0, 0, 0, .45); }
