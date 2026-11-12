@@ -1,15 +1,14 @@
-# Bộ sinh giọng clone v5b (tools/tts/clone.py) — chỉ gói từ PyPI, ghim phiên bản để lần chạy nào cũng ra cùng một giọng.
-# pip install -r tools/tts/requirements-clone.txt && pip install --no-deps voicefixer==0.1.3
+# Bộ sinh giọng clone (tools/tts/clone.py) — chỉ gói từ PyPI, ghim phiên bản để lần chạy nào cũng ra cùng một giọng.
+# pip install -r tools/tts/requirements-clone.txt   (Python 3.12)
 --extra-index-url https://download.pytorch.org/whl/cpu
-vieneu==3.8.3
+voxcpm==2.0.3
 torch==2.15.0
+torchaudio==2.11.1
 faster-whisper==1.2.1
 Resemblyzer==0.1.4
 pedalboard==0.9.26
 pyloudnorm==0.1.1
-torchlibrosa==0.1.0
-progressbar==2.5
-matplotlib==3.11.2  # voicefixer import librosa.display
 librosa==1.0.0
 scipy==1.18.1
+soundfile==0.14.0
 setuptools==78.1.0  # webrtcvad (Resemblyzer) còn dùng pkg_resources

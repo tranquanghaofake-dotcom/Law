@@ -1,19 +1,21 @@
-"""Sinh giọng clone "v5b" cho mọi câu app đọc (giọng kênh kiến thức xã hội — đã được phép, web phi thương mại).
+"""Sinh giọng clone cho mọi câu app đọc (giọng kênh kiến thức xã hội — đã được phép, web phi thương mại).
 
 Mỗi câu:
   1. chuẩn hoá cách đọc (vi_norm: số, số hiệu văn bản, chữ viết tắt → chữ);
-  2. VieNeu-TTS v3 Turbo (Apache-2.0, ONNX/CPU) clone từ voice/ref.wav, phong cách "tin tức", nhiệt độ 0,5;
+  2. VoxCPM2 (https://github.com/OpenBMB/VoxCPM, Apache-2.0, 2 tỉ tham số, chạy CPU) clone "kèm lời mẫu": nối tiếp từ voice/ref.wav
+     + đúng lời của clip (REF_TEXT) nên giữ cả âm sắc lẫn lối đọc của mẫu; câu dài cắt khúc ở dấu câu (MAX_CHARS);
   3. KHÂU CHẶN LỖI: Whisper small nghe lại, so với câu gốc (sai chữ) + độ giống giọng mẫu (Resemblyzer).
      Không đạt → sinh lại (tối đa TRIES lần), giữ bản tốt nhất; vẫn không đạt → ghi cờ trong báo cáo để người nghe lại;
-     câu ngắn/hay gặp ("Chính xác.") luôn sinh BEST_OF bản, chọn bản tốt nhất;
-  4. hậu kỳ v5b: VoiceFixer (phục hồi, mở dải tần) → EQ cố định voice/eq.json → chuỗi phòng thu ấm/dày → chuẩn độ lớn.
+     câu ngắn/hay gặp ("Chính xác.") sinh tới khi có SHORT_OK bản đạt (tối đa BEST_OF), chọn bản tốt nhất;
+     câu đọc SAI SỐ (điều, khoản, năm) không được đưa vào manifest — app đọc lời đó bằng giọng trình duyệt;
+  4. hậu kỳ: chuỗi phòng thu ấm/dày → de-esser → chuẩn độ lớn (model ra thẳng 48 kHz nên không còn VoiceFixer + EQ của bản v5b).
 Tên tệp = textKey(câu GỐC) như gen.py/app. Chạy lại chỉ sinh câu thiếu (manifest cùng STYLE).
 
-  pip install -r tools/tts/requirements-clone.txt && pip install --no-deps voicefixer==0.1.3   (+ ffmpeg)
+  pip install -r tools/tts/requirements-clone.txt   (+ ffmpeg; model ~4,7 GB tự tải từ Hugging Face lần đầu)
   python tools/tts/clone.py plan  --texts .tts-texts.json --cache .tts-cache --shards 20 --out plan   # chia việc
-  python tools/tts/clone.py run   --todo plan/shard-3.json --onnx-dir models/vieneu --out out-3      # một máy
+  python tools/tts/clone.py run   --todo plan/shard-3.json --out out-3                               # một máy
   python tools/tts/clone.py merge --cache .tts-cache --texts .tts-texts.json --parts 'out-*'        # gộp + manifest + báo cáo
-  python tools/tts/clone.py run   --text "Chính xác." --onnx-dir models/vieneu --out /tmp/thu       # thử một câu
+  python tools/tts/clone.py run   --text "Chính xác." --out /tmp/thu                                 # thử một câu
 """
 import argparse, glob, json, os, re, shutil, subprocess, sys, tempfile, time, unicodedata
 
@@ -23,15 +25,22 @@ from vi_norm import normalize  # noqa: E402
 from gen import FIXED, collect, norm, text_key  # noqa: E402
 
 # Đổi bất kỳ tham số giọng nào dưới đây → đổi STYLE để lần chạy sau sinh lại TOÀN BỘ (không lẫn hai kiểu trong một lời).
-STYLE = 'v5b-2'       # v5b + de-esser
+STYLE = 'vox2-1'      # VoxCPM2 clone kèm lời mẫu (thay v5b-2 = VieNeu v3 Turbo; Hào chọn qua nghe mù 12/11/2026)
 VOICE = 'clone:kienthucxahoi0'
-STYLE_ID = 17          # VieNeu v3: 16 tự nhiên · 17 tin tức · 18 đọc truyện
-TEMPERATURE = 0.5
-MAX_CHARS = 90         # VieNeu tự chia câu dài theo dấu câu
-TRIES = 4              # số lần sinh tối đa cho câu thường
-MIN_TAKES = 2          # luôn sinh ít nhất 2 bản để chọn bản biểu cảm hơn (ngữ điệu lên xuống rõ hơn)
+MODEL = 'openbmb/VoxCPM2'
+# lời của voice/ref.wav (đối chiếu bằng Whisper medium) — chế độ "kèm lời mẫu" cần đúng từng chữ
+REF_TEXT = ('Sự bóc lột này rất khó thấy bằng mắt thường, khi lương tăng nhẹ mà thời gian làm việc không đổi, '
+            'công nhân tưởng mình có lợi, nhưng thực chất số giá trị thặng dư tạo ra cho nhà tư bản đã vượt xa mức mong đợi.')
+USE_REF_TEXT = True    # False = chỉ lấy âm sắc từ clip mẫu (kém giống lối đọc hơn)
+CFG = 2.0              # độ bám điều kiện của VoxCPM2 (mặc định thư viện)
+STEPS = 10             # số bước khuếch tán mỗi khung (mặc định thư viện)
+MAX_CHARS = 300        # câu dài hơn thì cắt khúc ở dấu câu, mỗi khúc sinh riêng rồi ghép (model quen đoạn ≤ ~15 giây)
+CHUNK_GAP = 0.18       # nghỉ giữa hai khúc (giây) — bằng quãng nghỉ sau dấu câu của giọng mẫu
+TRIES = 5              # số lần sinh tối đa cho câu thường
+MIN_TAKES = 1          # câu thường: bản đầu đạt chặn lỗi là dùng (mỗi bản VoxCPM2 tốn ~4–9 giây máy cho 1 giây âm thanh)
 EXPRESS = 0.03         # trọng số độ lên xuống giọng (bán âm) khi chọn giữa các bản đã đạt
-BEST_OF = 5            # câu ngắn/hay gặp: luôn sinh đủ, chọn bản tốt nhất
+BEST_OF = 5            # câu ngắn/hay gặp: sinh tối đa ngần này bản
+SHORT_OK = 2           # … và dừng sớm khi đã có ngần này bản đạt để chọn (VoxCPM2 dễ đọc trệch câu 1–4 từ)
 SHORT_WORDS = 4
 SHORT_CHECK = 8        # câu dưới 8 từ: kiểm tra bằng Whisper medium
 SIM_MIN = 0.75         # độ giống tối thiểu so với voice/ref.wav (đầu ra thô, chưa hậu kỳ)
@@ -42,6 +51,8 @@ BITRATE = '64k'
 DEESS_DB = -5.0        # đo trên 40 câu: đỉnh dải xì −6,8 → −11,7 dB (CD Media −10,8, kênh gốc −8,9); chất âm và độ giống không đổi
 DEESS_CUT = 4.0
 EDGE = 0.03            # giữ 30 ms hai đầu khi cắt im lặng (app tự chèn khoảng nghỉ giữa câu)
+NEXT = 'next'          # thư mục chờ trong cache: bộ giọng kiểu MỚI đang sinh dở, web vẫn dùng bộ cũ nằm ngoài
+PROMOTE = 0.995        # bộ mới phủ ngần này số câu thì mới thay bộ cũ trên web (sinh lại toàn bộ mất hơn một ngày, nhiều lần chạy)
 
 
 # ───────────── hàm thuần (có test: tools/tts/test_clone.py) ─────────────
@@ -54,6 +65,8 @@ def sound(w: str) -> str:
     giọng Bắc đọc x = s, tr = ch, d = gi = r nên Whisper không phân biệt được."""
     if w == 'đê':  # tên chữ cái "đ": Whisper viết thành "D" (dê)
         w = 'dê'
+    if w == 'khoảng':  # Whisper gần như luôn viết "khoảng" cho "khoản" (khoản 1, khoản 2…): không tính là lỗi đọc
+        w = 'khoản'
     d = unicodedata.normalize('NFD', w)
     w = unicodedata.normalize('NFC', ''.join(c for c in d if c not in TONES)) + ''.join(c for c in d if c in TONES)
     for a, b in (('tr', 'ch'), ('gi', 'd'), ('x', 's'), ('r', 'd')):
@@ -98,6 +111,23 @@ def tail_cut(hyp_words: list[str], ref_words: list[str]) -> int:
     return best_j
 
 
+def head_extra(hyp_words: list[str], ref_words: list[str]) -> int:
+    """Số từ THỪA ở đầu lời nghe được (tiếng lạ trước từ đầu của câu — lỗi của chế độ nối tiếp clip mẫu); 0 = không thừa.
+    Chỉ tính khi bỏ j từ đầu làm số lỗi giảm đúng j (thừa hẳn, không phải Whisper nghe nhầm từ đầu)."""
+    def dist(h):
+        d = list(range(len(h) + 1))
+        for i, x in enumerate(ref_words, 1):
+            prev, d[0] = d[:], i
+            for j, y in enumerate(h, 1):
+                d[j] = min(prev[j] + 1, d[j - 1] + 1, prev[j - 1] + (x != y))
+        return d[-1]
+    full = dist(hyp_words)
+    for j in (2, 1):
+        if len(hyp_words) > j and dist(hyp_words[j:]) <= full - j:
+            return j
+    return 0
+
+
 def allowed_errors(n_words: int) -> int:
     """Whisper small cũng nghe nhầm: câu dưới 6 từ phải đúng hết; từ 6 từ cho phép ~1 lỗi mỗi 12 từ (làm tròn)."""
     return 0 if n_words < 6 else (n_words + 6) // 12
@@ -106,16 +136,28 @@ def allowed_errors(n_words: int) -> int:
 NUMBER_WORDS = set('không một mốt hai ba bốn tư năm lăm sáu bảy tám chín mười mươi lẻ linh trăm nghìn ngàn triệu tỷ'.split())
 
 
+UNIT_WORDS = {'điều', 'khoản', 'điểm', 'chương', 'mục'}
+
+
+def citations(text: str) -> list[str]:
+    """Dãy tên đơn vị đứng NGAY TRƯỚC một số (điều 5, khoản 2, chương ba…). Whisper hay viết "khoảng" cho "khoản" và
+    "đều" cho "điều" khi đọc nhanh ("khoản 5 đến 8 điều 26"): hai cặp đó tính như nhau; "điểm"/"tiểu" hay mất chữ thì vẫn bị bắt."""
+    same = {'khoảng': 'khoản', 'đều': 'điều'}
+    ws = [same.get(w, w) for w in re.findall(r'\w+', normalize(text).lower())]
+    return [w for w, nxt in zip(ws, ws[1:]) if w in UNIT_WORDS and nxt in NUMBER_WORDS]
+
+
 def numbers_match(hyp: str, ref: str) -> bool:
-    """Số điều, khoản, năm, tỷ lệ phải đọc đúng TUYỆT ĐỐI: dãy từ chỉ số của hai bên phải trùng nhau."""
+    """Số điều, khoản, năm, tỷ lệ phải đọc đúng TUYỆT ĐỐI: dãy từ chỉ số của hai bên phải trùng nhau,
+    và tên đơn vị trước mỗi số cũng vậy ("Điểm 275" hay "275" không thay được "Điều 275")."""
     pick = lambda t: [w for w in re.findall(r'\w+', normalize(t)) if w in NUMBER_WORDS]
-    return pick(hyp) == pick(ref)
+    return pick(hyp) == pick(ref) and citations(hyp) == citations(ref)
 
 
 def passes(c: dict, text: str) -> bool:
     n = len(words(text))
     # câu quá ngắn (< 2 giây) thì đo độ giống giọng không tin được: chỉ xét đúng chữ
-    return c['err'] <= allowed_errors(n) and c.get('num', True) and (n < 6 or c['sim'] >= SIM_MIN)
+    return c['err'] <= allowed_errors(n) and c.get('num', True) and not c.get('head', 0) and (n < 6 or c['sim'] >= SIM_MIN)
 
 
 def rank(c: dict, text: str) -> tuple:
@@ -132,6 +174,50 @@ def best(cands: list[dict], text: str) -> dict:
 
 def is_short(text: str) -> bool:
     return text in FIXED or len(words(text)) <= SHORT_WORDS
+
+
+def enough(takes: int, ok: int, short: bool) -> bool:
+    """Đã đủ bản để dừng sinh thêm chưa: câu thường cần 1 bản đạt (và ít nhất MIN_TAKES bản), câu ngắn cần SHORT_OK bản đạt để chọn."""
+    return ok >= SHORT_OK if short else ok >= 1 and takes >= MIN_TAKES
+
+
+def usable(r: dict) -> bool:
+    """Tệp có được đưa vào manifest không: câu đọc sai số (điều, khoản, năm, tỷ lệ) thì KHÔNG — thà để giọng trình duyệt đọc đúng."""
+    return r.get('num', True) is not False
+
+
+def chunks(spoken: str, max_chars: int = MAX_CHARS) -> list[str]:
+    """Cắt câu đã chuẩn hoá thành các khúc ≤ max_chars ở dấu câu (ưu tiên giữ trọn vế); vế quá dài thì cắt ở khoảng trắng."""
+    spoken = spoken.strip()
+    if len(spoken) <= max_chars:
+        return [spoken] if spoken else []
+    atoms = []
+    for a in re.findall(r'[^,;:.!?…]+[,;:.!?…]*\s*|[,;:.!?…]+\s*', spoken):
+        while len(a) > max_chars:  # một vế không có dấu câu mà vẫn quá dài
+            cut = a.rfind(' ', 0, max_chars)
+            cut = cut if cut > 0 else max_chars
+            atoms.append(a[:cut + 1]); a = a[cut + 1:]
+        if a:
+            atoms.append(a)
+    out, cur = [], ''
+    for a in atoms:
+        if cur and len(cur) + len(a.rstrip()) > max_chars:
+            out.append(cur.strip()); cur = ''
+        cur += a
+    if cur.strip():
+        out.append(cur.strip())
+    return out
+
+
+def cpu_bf16(cpuinfo: str | None = None) -> bool:
+    """CPU có lệnh bfloat16 gốc (AMX) không. Không có mà vẫn chạy bfloat16 thì VoxCPM2 chậm hàng chục lần → phải chuyển float32."""
+    if cpuinfo is None:
+        try:
+            with open('/proc/cpuinfo', encoding='utf-8') as fh:
+                cpuinfo = fh.read()
+        except OSError:
+            return False
+    return bool(re.search(r'\bamx_bf16\b', cpuinfo))
 
 
 def shard_of(key: str, n: int) -> int:
@@ -182,13 +268,6 @@ def sample(texts: list[str], n: int, seed: int = 7) -> list[str]:
             if pool and len(out) < n:
                 seen.add(pool[-1]); out.append(pool.pop())
     return out
-
-
-def eq_gains(hz: list[float], db: list[float], freqs):
-    """Nội suy đường cong EQ (theo log tần số) tại các tần số cho trước; ngoài dải thì giữ mức biên."""
-    import numpy as np
-    f = np.clip(np.asarray(freqs, dtype=float), hz[0], hz[-1])
-    return np.interp(np.log(f), np.log(hz), db)
 
 
 def peak_limit(x, sr: int, ceiling: float = 0.89):
@@ -249,38 +328,49 @@ def trim(x, sr: int, threshold: float = 0.012):
 # ───────────── phần nặng (model) ─────────────
 
 class Engine:
-    def __init__(self, onnx_dir: str, threads: int = 4):
+    def __init__(self, threads: int = 4):
         import numpy as np
         import torch
         from faster_whisper import WhisperModel
         from resemblyzer import VoiceEncoder, preprocess_wav
-        from vieneu import Vieneu
-        from voicefixer import VoiceFixer
+        import voxcpm.model.voxcpm2 as vox2
+        from voxcpm import VoxCPM
         from pedalboard import Pedalboard, HighpassFilter, LowShelfFilter, PeakFilter, HighShelfFilter, Compressor, Limiter, Gain
         import pyloudnorm, librosa, soundfile
         torch.set_num_threads(threads)
         self.np, self.librosa, self.sf, self.pre = np, librosa, soundfile, preprocess_wav
-        self.tts = Vieneu(onnx_dir=onnx_dir, threads=threads)
-        self.tts.engine.default_style_id = STYLE_ID
-        emb, codes = self.tts.encode_reference(os.path.join(HERE, 'voice', 'ref.wav'))
-        self.voice = {'speaker_emb': emb, 'codes': codes}
+        if not cpu_bf16():  # phần lớn máy GitHub: không có AMX → float32 (chậm gấp đôi máy có AMX nhưng dùng được; bfloat16 thì không)
+            vox2.pick_runtime_dtype = lambda device, dtype: 'float32'
+        self.tts = VoxCPM.from_pretrained(MODEL, load_denoiser=False, optimize=False)
+        self.sr = self.tts.tts_model.sample_rate
+        self.ref = os.path.join(HERE, 'voice', 'ref.wav')
         # small cho câu dài (nhanh); medium cho câu ngắn — small hay nghe nhầm câu 1–2 giây, medium bắt được cả tiếng nói thừa cuối câu
         self.whisper = WhisperModel('small', device='cpu', compute_type='int8', cpu_threads=threads)
         self.whisper_short = WhisperModel('medium', device='cpu', compute_type='int8', cpu_threads=threads)
         self.enc = VoiceEncoder('cpu', verbose=False)
         ref, rsr = soundfile.read(os.path.join(HERE, 'voice', 'ref.wav'), dtype='float32')
         self.ref_emb = self.enc.embed_utterance(preprocess_wav(ref, source_sr=rsr))
-        self.vf = VoiceFixer()
-        with open(os.path.join(HERE, 'voice', 'eq.json'), encoding='utf-8') as fh:
-            eq = json.load(fh)
-        self.eq = (eq['hz'], eq['db'])
-        # chuỗi phòng thu "E5" của bản v5b đã duyệt: ấm (low shelf), bớt đục 350 Hz, nén nhẹ, chặn đỉnh
+        # chuỗi phòng thu "E5" (giữ từ bản v5b đã duyệt): ấm (low shelf), bớt đục 350 Hz, nén nhẹ, chặn đỉnh
         self.chain = Pedalboard([HighpassFilter(70), LowShelfFilter(160, 2.0, 0.7), PeakFilter(350, -1.0, 1.0), PeakFilter(3200, 0.0, 0.9),
                                  HighShelfFilter(8000, -0.5, 0.7), Compressor(-20, 2.0, 15, 150), Gain(1.5), Limiter(-1.0)])
         self.meter = pyloudnorm.Meter(OUT_SR, block_size=0.2)
 
     def synth(self, spoken: str):
-        return self.tts.infer(spoken, voice=self.voice, temperature=TEMPERATURE, max_chars=MAX_CHARS, apply_watermark=False)
+        np = self.np
+        # VoxCPM2 ghép thẳng lời mẫu + câu cần đọc: thiếu khoảng trắng ("…mong đợi.Chính xác.") thì chỗ nối méo —
+        # thừa tiếng hoặc nuốt âm đầu (đo 12/11/2026: "Chính xác." đạt 0/5 khi không có, 5/5 khi có).
+        kw = {'prompt_wav_path': self.ref, 'prompt_text': REF_TEXT + ' '} if USE_REF_TEXT else {}
+        parts = []
+        for c in chunks(spoken):
+            a = np.asarray(self.tts.generate(text=c, reference_wav_path=self.ref, cfg_value=CFG, inference_timesteps=STEPS, normalize=False, **kw), dtype=np.float32)
+            parts.append(a)
+        if len(parts) == 1:
+            return parts[0]
+        gap = np.zeros(int(CHUNK_GAP * self.sr), dtype=np.float32)
+        out = []
+        for a in parts:  # cắt im lặng hai đầu từng khúc rồi ghép với quãng nghỉ đều
+            out += [trim(a, self.sr), gap]
+        return np.concatenate(out[:-1])
 
     def hear(self, w16, careful: bool) -> str:
         model = self.whisper_short if careful else self.whisper
@@ -290,7 +380,7 @@ class Engine:
     def cut_tail(self, audio, text: str):
         """Cắt phần nói thừa sau từ cuối của câu (lỗi hay gặp của model với câu ngắn). Trả về (audio, đã_cắt)."""
         np = self.np
-        w16 = self.librosa.resample(np.asarray(audio, dtype=np.float32), orig_sr=self.tts.sample_rate, target_sr=16000)
+        w16 = self.librosa.resample(np.asarray(audio, dtype=np.float32), orig_sr=self.sr, target_sr=16000)
         segs, _ = self.whisper_short.transcribe(w16, language='vi', beam_size=5, word_timestamps=True, condition_on_previous_text=False)
         ws = [w for s in segs for w in (s.words or [])]
         hyp = [words(w.word)[0] if words(w.word) else '' for w in ws]
@@ -298,24 +388,25 @@ class Engine:
         if keep >= len(ws) or keep == 0:
             return audio, False
         end = min(ws[keep - 1].end + 0.12, ws[keep].start + 0.02) if keep < len(ws) else ws[-1].end
-        n = int(end * self.tts.sample_rate)
-        fade = np.linspace(1, 0, int(0.03 * self.tts.sample_rate), dtype=np.float32)
+        n = int(end * self.sr)
+        fade = np.linspace(1, 0, int(0.03 * self.sr), dtype=np.float32)
         out = np.asarray(audio[:n], dtype=np.float32).copy()
         out[-len(fade):] *= fade[: len(out)]
         return out, True
 
     def recheck(self, c: dict, audio, text: str) -> dict:
         """Nghe lại lần hai bằng Whisper medium: tách lỗi do Whisper small nghe nhầm thuật ngữ khỏi lỗi đọc thật."""
-        w16 = self.librosa.resample(self.np.asarray(audio, dtype=self.np.float32), orig_sr=self.tts.sample_rate, target_sr=16000)
+        w16 = self.librosa.resample(self.np.asarray(audio, dtype=self.np.float32), orig_sr=self.sr, target_sr=16000)
         heard = self.hear(w16, True)
-        return {**c, 'err': errors(heard, text), 'num': numbers_match(heard, text), 'heard': heard, 'rechecked': True}
+        return {**c, 'err': errors(heard, text), 'num': numbers_match(heard, text), 'head': head_extra(words(heard), words(text)), 'heard': heard, 'rechecked': True}
 
     def score(self, audio, text: str) -> dict:
         np = self.np
-        w16 = self.librosa.resample(np.asarray(audio, dtype=np.float32), orig_sr=self.tts.sample_rate, target_sr=16000)
+        w16 = self.librosa.resample(np.asarray(audio, dtype=np.float32), orig_sr=self.sr, target_sr=16000)
         heard = self.hear(w16, len(words(text)) < SHORT_CHECK)
         sim = float(self.enc.embed_utterance(self.pre(w16, source_sr=16000)) @ self.ref_emb)
-        return {'err': errors(heard, text), 'num': numbers_match(heard, text), 'sim': round(sim, 4), 'pv': self.pitch_var(w16), 'heard': heard}
+        return {'err': errors(heard, text), 'num': numbers_match(heard, text), 'head': head_extra(words(heard), words(text)),
+                'sim': round(sim, 4), 'pv': self.pitch_var(w16), 'heard': heard}
 
     def pitch_var(self, w16) -> float:
         """Độ lên xuống giọng (độ lệch chuẩn cao độ, bán âm) trên các khung có tiếng — đo nhanh bằng YIN."""
@@ -337,12 +428,7 @@ class Engine:
 
     def post(self, audio):
         np, librosa = self.np, self.librosa
-        x = librosa.resample(np.asarray(audio, dtype=np.float32), orig_sr=self.tts.sample_rate, target_sr=OUT_SR)
-        x = np.asarray(self.vf.restore_inmem(x, cuda=False, mode=0), dtype=np.float32).reshape(-1)
-        n = len(x)
-        spec = np.fft.rfft(x)
-        spec *= 10 ** (eq_gains(*self.eq, np.fft.rfftfreq(n, 1 / OUT_SR) + 1e-3) / 20)  # EQ pha 0, không trễ
-        x = np.fft.irfft(spec, n).astype(np.float32)
+        x = librosa.resample(np.asarray(audio, dtype=np.float32), orig_sr=self.sr, target_sr=OUT_SR)
         x = self.gain_to(x, PRE_LUFS)
         y = self.chain(x[None], OUT_SR)[0]
         y = 0.97 * y + 0.03 * np.tanh(2 * y) / np.tanh(2)  # bão hoà rất nhẹ cho giọng dày
@@ -363,14 +449,16 @@ class Engine:
                 a2, cut = self.cut_tail(a, text)
                 if cut:
                     a, c = a2, {**self.score(a2, text), 'tail_cut': True}
+            if not passes(c, text) and len(words(text)) >= SHORT_CHECK:
+                # nghe lại bằng Whisper medium TRƯỚC khi sinh bản mới: Whisper small hay nghe nhầm thuật ngữ,
+                # mà mỗi bản VoxCPM2 mới tốn 1–4 phút trên máy GitHub, nghe lại chỉ vài giây
+                c = self.recheck(c, a, text)
             c['k'] = k
             cands.append((c, a))
-            if not short and k + 1 >= MIN_TAKES and any(passes(x, text) for x, _ in cands):
+            if enough(len(cands), sum(1 for x, _ in cands if passes(x, text)), short):
                 break
-        if not any(passes(x, text) for x, _ in cands) and len(words(text)) >= SHORT_CHECK:
-            cands = [(self.recheck(x, a, text), a) for x, a in cands]
         c, a = min(cands, key=lambda p: rank(p[0], text))
-        info = {'text': text, 'spoken': spoken, 'tries': len(cands), 'ok': passes(c, text), **{k: c[k] for k in ('err', 'num', 'sim', 'pv', 'heard')}, 'rechecked': c.get('rechecked', False), 'tail_cut': c.get('tail_cut', False)}
+        info = {'text': text, 'spoken': spoken, 'tries': len(cands), 'ok': passes(c, text), **{k: c[k] for k in ('err', 'num', 'head', 'sim', 'pv', 'heard')}, 'rechecked': c.get('rechecked', False), 'tail_cut': c.get('tail_cut', False)}
         return self.post(a), info
 
 
@@ -396,6 +484,20 @@ def load_texts(path: str | None) -> list[str]:
     return texts
 
 
+def is_current(m: dict) -> bool:
+    return m.get('style') == STYLE and m.get('voice') == VOICE
+
+
+def ready(n_keys: int, n_want: int) -> bool:
+    """Bộ giọng mới đã đủ để thay bộ cũ trên web chưa."""
+    return n_want > 0 and n_keys >= PROMOTE * n_want
+
+
+def stage_of(cache: str) -> str:
+    """Nơi cất tệp của kiểu giọng hiện tại: thẳng trong cache nếu web đang dùng đúng kiểu này, còn không thì thư mục chờ cache/next."""
+    return cache if is_current(read_manifest(cache)) else os.path.join(cache, NEXT)
+
+
 def read_manifest(cache: str) -> dict:
     p = os.path.join(cache, 'manifest.json')
     if os.path.exists(p):
@@ -410,16 +512,16 @@ def cmd_plan(a):
         texts = texts[: a.limit]
     if a.sample:
         texts = sample(texts, a.sample)
-    m = read_manifest(a.cache)
-    same = m.get('style') == STYLE and m.get('voice') == VOICE
-    done = {k for k in m.get('keys', []) if os.path.exists(os.path.join(a.cache, k + '.mp3'))} if same else set()
+    stage = stage_of(a.cache)
+    m = read_manifest(stage)
+    done = {k for k in m.get('keys', []) if os.path.exists(os.path.join(stage, k + '.mp3'))} if is_current(m) else set()
     parts = plan(texts, done, a.shards)
     os.makedirs(a.out, exist_ok=True)
     for i, p in enumerate(parts):
         with open(os.path.join(a.out, f'shard-{i}.json'), 'w', encoding='utf-8') as fh:
             json.dump(p, fh, ensure_ascii=False)
     chars = sum(len(t) for p in parts for t in p)
-    print(f"{len(texts)} câu · đã có {len(done)}{'' if same else ' (kiểu giọng đổi → sinh lại toàn bộ)'} · cần sinh {sum(map(len, parts))} câu (~{chars / 20 / 3600:.1f} giờ âm thanh) · {len(parts)} phần")
+    print(f"{len(texts)} câu · đã có {len(done)}{'' if stage == a.cache else ' (kiểu giọng mới đang sinh dở trong thư mục chờ, web vẫn dùng bộ cũ)'} · cần sinh {sum(map(len, parts))} câu (~{chars / 20 / 3600:.1f} giờ âm thanh) · {len(parts)} phần")
     if a.github_output:
         with open(a.github_output, 'a') as fh:
             fh.write(f"shards={json.dumps(list(range(len(parts))))}\ncount={len(parts)}\n")
@@ -435,7 +537,7 @@ def cmd_run(a):
     if os.path.exists(rep_path):  # làm tiếp sau khi bị ngắt
         with open(rep_path, encoding='utf-8') as fh:
             have = {json.loads(l)['key'] for l in fh if l.strip()}
-    eng = Engine(a.onnx_dir, a.threads)
+    eng = Engine(a.threads)
     t0, n = time.time(), 0
     with open(rep_path, 'a', encoding='utf-8') as rep:
         for t in texts:
@@ -461,20 +563,23 @@ def cmd_run(a):
 def cmd_merge(a):
     texts = load_texts(a.texts)
     want = {text_key(t) for t in texts}
-    m = read_manifest(a.cache)
-    same = m.get('style') == STYLE and m.get('voice') == VOICE
     os.makedirs(a.cache, exist_ok=True)
-    if not same:  # kiểu giọng đổi: bỏ toàn bộ tệp cũ để không lẫn giọng
-        for f in glob.glob(os.path.join(a.cache, '*.mp3')):
-            os.remove(f)
+    stage = stage_of(a.cache)  # web đang dùng kiểu khác → gom vào thư mục chờ, KHÔNG đụng bộ cũ cho tới khi bộ mới đủ
+    os.makedirs(stage, exist_ok=True)
     old = {}
-    rp = os.path.join(a.cache, 'report.json')
-    if same and os.path.exists(rp):
-        with open(rp, encoding='utf-8') as fh:
-            old = {r['key']: r for r in json.load(fh).get('items', [])}
+    rp = os.path.join(stage, 'report.json')
+    if is_current(read_manifest(stage)):
+        if os.path.exists(rp):
+            with open(rp, encoding='utf-8') as fh:
+                old = {r['key']: r for r in json.load(fh).get('items', [])}
+    else:  # thư mục chờ là của một kiểu giọng khác: bỏ để không lẫn giọng
+        for f in glob.glob(os.path.join(stage, '*.mp3')):
+            os.remove(f)
+    added = 0
     for d in sorted(glob.glob(a.parts)):
         for f in glob.glob(os.path.join(d, '*.mp3')):
-            shutil.copy2(f, os.path.join(a.cache, os.path.basename(f)))
+            shutil.copy2(f, os.path.join(stage, os.path.basename(f)))
+            added += 1
         rj = os.path.join(d, 'report.jsonl')
         if os.path.exists(rj):
             with open(rj, encoding='utf-8') as fh:
@@ -482,29 +587,43 @@ def cmd_merge(a):
                     if l.strip():
                         r = json.loads(l)
                         old[r['key']] = r
-    for f in glob.glob(os.path.join(a.cache, '*.mp3')):  # dọn câu không còn dùng
+    for f in glob.glob(os.path.join(stage, '*.mp3')):  # dọn câu không còn dùng
         if os.path.basename(f)[:-4] not in want:
             os.remove(f)
-    keys = sorted(k for k in want if os.path.exists(os.path.join(a.cache, k + '.mp3')))
-    items = [old[k] for k in keys if k in old]
+    have = sorted(k for k in want if os.path.exists(os.path.join(stage, k + '.mp3')))
+    keys = [k for k in have if usable(old.get(k, {}))]  # câu đọc sai số: có tệp nhưng không vào manifest (lần chạy sau sinh lại)
+    items = [old[k] for k in have if k in old]
     flagged = [r for r in items if not r.get('ok')]
-    with open(os.path.join(a.cache, 'manifest.json'), 'w', encoding='utf-8') as fh:
+    wrong_num = [r for r in items if not usable(r)]
+    waiting = stage != a.cache and not ready(len(keys), len(want))  # bộ mới chưa đủ: để trong thư mục chờ, web giữ bộ cũ
+    if stage != a.cache and not waiting:  # bộ mới đã đủ: thay bộ cũ
+        for f in glob.glob(os.path.join(a.cache, '*.mp3')):
+            os.remove(f)
+        for f in glob.glob(os.path.join(stage, '*.mp3')):
+            shutil.move(f, os.path.join(a.cache, os.path.basename(f)))
+        shutil.rmtree(stage)
+        stage, rp = a.cache, os.path.join(a.cache, 'report.json')
+    if a.github_output:  # switched: web dùng được bộ vừa gộp → deploy; more: còn thiếu mà lần này có thêm tệp → workflow tự chạy tiếp
+        with open(a.github_output, 'a') as fh:
+            fh.write(f"switched={'false' if waiting else 'true'}\nmore={'true' if added and len(have) < len(want) else 'false'}\n")
+    with open(os.path.join(stage, 'manifest.json'), 'w', encoding='utf-8') as fh:
         json.dump({'voice': VOICE, 'style': STYLE, 'keys': keys}, fh)
     with open(rp, 'w', encoding='utf-8') as fh:
         json.dump({'style': STYLE, 'items': items}, fh, ensure_ascii=False)
     sims = [r['sim'] for r in items if 'sim' in r]
-    lines = [f'## Giọng đọc {STYLE}', '',
-             f'- Có tệp: **{len(keys)} / {len(want)}** câu',
+    lines = [f'## Giọng đọc {STYLE}', ''] + ([
+        f'**Đang sinh dở bộ giọng mới: {len(keys)} / {len(want)} câu ({len(keys) / max(1, len(want)):.1%}).** Web vẫn dùng bộ cũ; đủ {PROMOTE:.1%} thì tự thay.', ''] if waiting else []) + [
+             f'- Dùng được: **{len(keys)} / {len(want)}** câu' + (f' (bỏ {len(wrong_num)} câu đọc sai số — app đọc các lời đó bằng giọng trình duyệt)' if wrong_num else ''),
              f'- Đạt khâu chặn lỗi: **{len(items) - len(flagged)} / {len(items)}** ({(len(items) - len(flagged)) / max(1, len(items)):.1%})',
              f'- Độ giống giọng mẫu trung bình: {sum(sims) / max(1, len(sims)):.3f}', '']
     if flagged:
         lines += ['### Câu cần nghe lại (tệp vẫn được dùng; sai thì sửa chữ trong dữ liệu hoặc thêm cách đọc vào vi_norm.py)', '',
                   '| Tệp | Câu | Whisper nghe được | Lỗi | Giống |', '|---|---|---|---|---|']
-        for r in sorted(flagged, key=lambda r: -r.get('err', 99))[:300]:
+        for r in sorted(flagged, key=lambda r: (usable(r), -r.get('err', 99)))[:300]:
             esc = lambda s: str(s).replace('|', '\\|')[:140]
-            lines.append(f"| `{r['key']}.mp3` | {esc(r['text'])} | {esc(r.get('heard', r.get('error', '')))} | {r.get('err', '—')} | {r.get('sim', '—')} |")
+            lines.append(f"| `{r['key']}.mp3` | {esc(r['text'])} | {esc(r.get('heard', r.get('error', '')))} | {r.get('err', '—')}{'' if usable(r) else ' · SAI SỐ, không dùng'} | {r.get('sim', '—')} |")
     summary = '\n'.join(lines) + '\n'
-    with open(os.path.join(a.cache, 'report.md'), 'w', encoding='utf-8') as fh:
+    with open(os.path.join(stage, 'report.md'), 'w', encoding='utf-8') as fh:
         fh.write(summary)
     if a.summary:
         with open(a.summary, 'a', encoding='utf-8') as fh:
@@ -520,11 +639,12 @@ def main():
     p.add_argument('--out', required=True); p.add_argument('--limit', type=int, default=0); p.add_argument('--github-output')
     p.add_argument('--sample', type=int, default=0, help='chạy thử N câu chọn đều theo loại câu khó (số điều khoản, viết tắt, ký hiệu…)')
     r = sub.add_parser('run')
-    r.add_argument('--todo'); r.add_argument('--text'); r.add_argument('--onnx-dir', required=True); r.add_argument('--out', required=True)
+    r.add_argument('--todo'); r.add_argument('--text'); r.add_argument('--out', required=True)
     r.add_argument('--threads', type=int, default=4); r.add_argument('--limit', type=int, default=0)
     r.add_argument('--deadline', type=float, default=0, help='phút; quá thì dừng an toàn (giới hạn 6 giờ của Actions)')
     g = sub.add_parser('merge')
     g.add_argument('--cache', required=True); g.add_argument('--texts'); g.add_argument('--parts', required=True); g.add_argument('--summary')
+    g.add_argument('--github-output')
     a = ap.parse_args()
     {'plan': cmd_plan, 'run': cmd_run, 'merge': cmd_merge}[a.cmd](a)
 
