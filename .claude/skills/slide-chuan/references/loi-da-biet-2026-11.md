@@ -51,6 +51,8 @@ Hai phiên độc lập, cùng đề tài hình sự, **cùng ba kết luận** 
 | M9 | Thiếu type "thang khung hình phạt" (ngưỡng tiền → mức án theo khoản) | `table` + `bar` thay thế, mất khoảng min–max | **Đã sửa:** `bcthang` (`hinh/bang_chung.js`) — thanh min–max theo từng bậc, nhiều tội trên cùng bậc, `ct` cho "hoặc chung thân". Còn: bản không phụ thuộc môn |
 | M10 | SKILL.md 74 KB, nạp trọn mỗi lần | `wc -c` | **Một phần**: thêm mục "Nguyên tắc trước quy trình" ở đầu; chưa tách |
 
+| M11 | Morph "xấu, chỉ có vân tay bay qua bay về": Morph không được thiết kế; PowerPoint tự ghép các hình trùng ảnh (vân tay) ở hai slide kề, còn dây đỏ cùng tên bị kéo giãn | Người dùng chê; XML: không có tên `!!` nào cho các cặp có nghĩa | **Đã sửa** cho bộ `bc*` (vân tay vào nền, dây đỏ tên riêng, cặp `tieu` / `chuong` / `pa*`) + `scripts/morph_cap.py` kiểm cặp Morph. Còn: bộ cảnh khác (`book`…) và tầng lưới Office chưa rà theo cách này |
+
 ### Điều rút ra khi gộp hai phiên
 1. **Đo trước, khẳng định sau.** Một phiên ghi "tầng lưới Office mất Morph" và phiên kia đo lại thấy sai (L11). Một lần tôi tưởng skill thiếu dò Chromium, thật ra đã có và tôi đặt sai biến. Mọi nhận định về năng lực của skill phải kèm lệnh đo.
 2. **Khi hai nguồn báo cùng một lỗi độc lập thì sửa ngay, đừng bàn thêm.**

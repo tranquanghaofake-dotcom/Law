@@ -46,6 +46,7 @@ Chi tiết, bằng chứng và trạng thái sửa từng lỗi: `references/loi
 | World (`meta.kit`: đồ vật, khung, nhãn theo môn) | **Không chạy** (bỏ qua, nay có `ℹ`) | Chạy |
 | `art` trên slide | Chỉ `panelrows`, `lawquote` đọc; type khác bị bỏ qua (nay có `ℹ`) | Chạy |
 | Kiểm tràn | `dung.js --soat` (Chromium + đúng font). `check_overflow.py` **không dùng được** (tự bỏ qua, thoát 0) | `check_overflow.py` |
+| `morph_cap.py` | Liệt kê cặp Morph có chủ ý giữa hai slide kề nhau của PPTX tầng hình ảnh (kiểm Morph khi không có PowerPoint) | Bước 8 (tầng hình ảnh) |
 | Type chỉ có ở tầng này | 11 "cảnh" (`book`, `lawquote`, `quizgo`…) và 16 kiểu `bc*` (bộ hình riêng cho hình sự, xem `references/canh.md` mục 8) | — (báo rõ, kèm type gần nghĩa) |
 | `chart` kind | Vẽ riêng: `bar` `column` `line` `step` `span`. `gantt` / `waterfall` / `progress` / `donut` / `slope` rơi về thanh ngang (`gantt` đọc `to`), có `⚠` | Vẽ đủ |
 

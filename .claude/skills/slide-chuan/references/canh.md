@@ -216,3 +216,11 @@ Vì sao có: hình dán Fluent Emoji và nền của bảng màu chỉ là chấ
 - Mọi kiểu `bc*` dùng chung **tờ tiêu đề** (kicker + title một dòng, cỡ chữ tự co theo độ dài) và **dải chú thích** ở đáy cho `note` / `source`.
 - Lề an toàn: nội dung trong vùng y 300–1040, x 110–1810. Tiêu đề ≤ ~54 ký tự (một dòng). Khối tự vẽ **không được máy đo tràn của `--soat` kiểm** — phải mở `soat-*.jpg` / `p-*.png` xem từng slide.
 - Màu chữ trên nền bần là kem; chữ trên giấy là mực. Chữ kem đặt trên dải giấy (`.bc-strip`) đã có luật riêng — lỗi cũ: chú thích biến mất.
+
+### Morph có chủ ý trong bộ `bc*` (và cách kiểm)
+Lỗi đã gặp: Morph chỉ là "vân tay bay qua bay về". Nguyên nhân: PowerPoint chỉ ghép **chắc chắn** các hình có tên `!!tên` trùng ở hai slide liền nhau (bộ dựng đặt tên từ `data-m`); hình không có tên `!!` mà **trùng ảnh** thì PowerPoint tự đoán ghép — vân tay là cùng một ảnh ở vị trí khác nhau nên bay. Quy tắc:
+1. Vật trang trí lặp (vân tay) đưa vào **nền** slide, không làm lớp ảnh. Dây đỏ đặt tên riêng từng slide (`s<i>-…`) rồi vào bằng hiệu ứng `wipe`, không để Morph kéo giãn.
+2. Chuyển động có nghĩa dùng `data-m`: `tieu` — tờ lớn của bìa / chương thu nhỏ thành tờ tiêu đề của slide nội dung (và ngược lại); `chuong` — thẻ số to của slide mở chương thu thành thẻ nhỏ ở góc các slide trong chương, sang chương mới lớn lên thành thẻ kế tiếp (trường `ch` của slide nội dung); `pa1…pa4`, `de` — thẻ đáp án và đề giữ nguyên chỗ khi từ slide hỏi sang slide đáp án.
+3. Phần tử là đích Morph **không** có `data-a` (hiệu ứng vào): lúc chuyển cảnh nó đang ẩn nên Morph không có gì để bay tới (bộ dựng báo `⚠`).
+4. Chữ trong lớp có `data-m` tự ghép theo thứ tự (`tên-chu1`, `tên-chu2`…): giữ cùng thứ tự các hộp chữ ở hai slide (kicker rồi tiêu đề) thì chữ trượt từ chỗ này sang chỗ kia.
+5. Kiểm khi không có PowerPoint: `python3 scripts/morph_cap.py file.pptx` in cặp Morph có chủ ý giữa mọi cặp slide kề nhau. Slide nào ghi "— (chỉ mờ dần …)" là chưa có chuyển động nào được thiết kế.

@@ -18,10 +18,12 @@ const A = (a, at) => `data-a="${a}" data-at="${at}"`;
 // tờ giấy ghim: trả về html và toạ độ đinh (cx, cy) để kéo dây
 const giay = (name, x, y, w, h, rot, inner, o = {}) => ({
   cx: x + w / 2 + (o.dx || 0), cy: y + 10,
-  html: `<div class="bc-pp ${o.cls || ""}" data-l="${name}" data-pad="${o.pad || 48}" ${A(o.a || "drop", o.at || 300)} ${o.go ? `data-go="${esc(o.go)}"` : ""} style="left:${x}px;top:${y}px;width:${w}px;height:${h}px;rotate:${rot}deg">${o.pin === false ? "" : `<i class="bc-pin" style="left:calc(50% + ${o.dx || 0}px)"></i>`}${inner}</div>`,
+  html: `<div class="bc-pp ${o.cls || ""}" data-l="${name}" data-pad="${o.pad || 48}" ${o.a === false ? "" : A(o.a || "drop", o.at || 300)} ${o.m ? `data-m="${o.m}"` : ""} ${o.go ? `data-go="${esc(o.go)}"` : ""} style="left:${x}px;top:${y}px;width:${w}px;height:${h}px;rotate:${rot}deg">${o.pin === false ? "" : `<i class="bc-pin" style="left:calc(50% + ${o.dx || 0}px)"></i>`}${inner}</div>`,
 });
 // dây đỏ giữa hai đinh (đường cong võng xuống), có bóng đổ
-const day = (name, p, q, sag, at) => {
+let SL = 0;   // chỉ số slide đang dựng: dây đỏ, vân tay đặt tên riêng từng slide để PowerPoint không ghép nhầm rồi kéo giãn
+const day = (name0, p, q, sag, at) => {
+  const name = `s${SL}-${name0}`;
   const L = Math.min(p.cx, q.cx) - 30, T = Math.min(p.cy, q.cy) - 30, W = Math.abs(q.cx - p.cx) + 60, H = Math.abs(q.cy - p.cy) + sag + 70;
   const d = `M${p.cx - L} ${p.cy - T} C${p.cx - L} ${p.cy - T + sag}, ${q.cx - L} ${q.cy - T + sag}, ${q.cx - L} ${q.cy - T}`;
   return `<svg class="bc-rope" data-l="${name}" data-pad="4" ${A("wipe", at)} style="left:${L}px;top:${T}px;width:${W}px;height:${H}px" viewBox="0 0 ${W} ${H}"><path d="${d}" transform="translate(7 12)" stroke="rgba(14,6,0,.4)" stroke-width="8" fill="none" stroke-linecap="round"/><path d="${d}" stroke="#c8261e" stroke-width="8" fill="none" stroke-linecap="round"/><path d="${d}" stroke="#ff7a6a" stroke-width="2" fill="none" stroke-linecap="round" opacity=".55" transform="translate(-1 -2)"/></svg>`;
@@ -30,7 +32,7 @@ const day = (name, p, q, sag, at) => {
 const vanTay = (name, x, y, w) => { let g = ""; for (let i = 1; i <= 24; i++) { const r = i * 12.5; g += `<ellipse cx="200" cy="235" rx="${(r * 0.8).toFixed(1)}" ry="${r}" stroke-dasharray="${38 + i * 6} ${8 + (i % 5) * 4} ${70 - i * 2} 11" stroke-dashoffset="${i * 23}"/>`; }
   return `<svg class="bc-fp" data-l="${name}" data-pad="4" viewBox="0 0 400 480" style="left:${x}px;top:${y}px;width:${w}px;height:${Math.round(w * 1.2)}px">${g}</svg>`; };
 // thẻ tang vật (giấy manila có lỗ xỏ dây)
-const the = (name, x, y, w, h, rot, inner, at = 500) => `<div class="bc-tag" data-l="${name}" data-pad="40" ${A("drop", at)} style="left:${x}px;top:${y}px;width:${w}px;height:${h}px;rotate:${rot}deg"><i class="bc-hole"></i>${inner}</div>`;
+const the = (name, x, y, w, h, rot, inner, at = 500, o = {}) => `<div class="bc-tag" data-l="${name}" data-pad="40" ${o.a === false ? "" : A("drop", at)} ${o.m ? `data-m="${o.m}"` : ""} style="left:${x}px;top:${y}px;width:${w}px;height:${h}px;rotate:${rot}deg"><i class="bc-hole"></i>${inner}</div>`;
 const nhan = (name, x, y, rot, text, at = 100) => `<div class="bc-lab" data-l="${name}" data-pad="14" ${A("rise", at)} style="left:${x}px;top:${y}px;rotate:${rot}deg"><span data-t>${esc(text)}</span></div>`;
 
 const S1 = {};
@@ -40,12 +42,12 @@ S1.bcbia = (s) => {
     `<div class="bc-lb" data-t style="left:60px;top:54px">${esc(s.kicker || "")}</div>
      <div class="bc-t1" data-t style="left:60px;top:112px;width:900px;font-size:158px">${tx(s.title || "")}</div>
      ${s.subtitle ? `<div class="bc-tx" data-t style="left:60px;top:430px;width:700px;font-size:35px">${tx(s.subtitle)}</div>` : ""}
-     <div class="bc-stp" style="right:44px;bottom:48px;rotate:7deg"><span data-t>${esc(s.stamp || "Phân biệt")}</span></div>`, { dx: 380, at: 250 });
+     <div class="bc-stp" style="right:44px;bottom:48px;rotate:7deg"><span data-t>${esc(s.stamp || "Phân biệt")}</span></div>`, { dx: 380, m: "tieu", a: false });
   const C = (s.cites || []).slice(0, 3), pos = [[1290, 140, 3], [1380, 420, -3], [1240, 712, 2]], ps = [];
   const papers = C.map((c, i) => { const [x, y, r] = pos[i], p = giay(`bc1-d${i + 1}`, x, y, 440, 236, r,
     `<div class="bc-lb" data-t style="left:36px;top:38px;font-size:26px">ĐIỀU</div><div class="bc-t1" data-t style="left:36px;top:68px;font-size:118px">${esc(c.n)}</div><div class="bc-tx" data-t style="left:230px;top:104px;width:190px;font-size:31px;font-weight:700">${tx(c.t)}</div>`, { at: 700 + i * 220 }); ps.push(p); return p.html; });
   const ropes = ps.map((p, i) => day(`bc1-day${i + 1}`, main, p, [70, 110, 130][i], 1000 + i * 200));
-  return { cls: "dark bc", bare: true, html: `<div class="cv" data-tay>${vanTay("bc1-vt", 1390, 560, 470)}${ropes.join("")}${main.html}${papers.join("")}
+  return { cls: "dark bc", bare: true, html: `<div class="cv" data-tay>${ropes.join("")}${main.html}${papers.join("")}
     ${the("bc1-the", 120, 850, 560, 190, -2.5, `<div class="bc-t1" data-t style="left:70px;top:80px;font-size:50px;color:#2a1c0a">${esc(s.author || "")}</div><div class="bc-tx" data-t style="left:70px;top:138px;font-size:27px;color:#4a3519">${esc([s.authorSub, s.date].filter(Boolean).join(" · "))}</div>`, 1500)}</div>` };
 };
 
@@ -64,19 +66,19 @@ S1.bcso = (s) => {
 S1.bcchuong = (s) => {
   const num = pad2(s.num ?? 1);
   const main = giay("bc3-chinh", 110, 230, 1070, 600, -1.1,
-    `<div class="bc-t1" data-t style="left:62px;top:60px;width:950px;font-size:112px;line-height:1.1">${tx(s.title || "")}</div>
-     ${s.sub ? `<div class="bc-tx" data-t style="left:62px;top:480px;width:900px;font-size:34px;color:#5a4d36;font-weight:600">${tx(s.sub)}</div>` : ""}`, { dx: 400, at: 250 });
+    `<div class="bc-lb" data-t style="left:62px;top:40px;width:950px">${esc(`${s.partWord || "Chương"} ${s.num ?? 1} · ${s.part || ""}`)}</div><div class="bc-t1" data-t style="left:62px;top:96px;width:950px;font-size:108px;line-height:1.1">${tx(s.title || "")}</div>
+     ${s.sub ? `<div class="bc-tx" data-t style="left:62px;top:480px;width:900px;font-size:34px;color:#5a4d36;font-weight:600">${tx(s.sub)}</div>` : ""}`, { dx: 400, m: "tieu", a: false });
   const tagC = { cx: 1530, cy: 190 };
-  return { cls: "dark bc", html: `<div class="cv" data-tay>${vanTay("bc3-vt", 60, 520, 520)}
+  return { cls: "dark bc", html: `<div class="cv" data-tay>
     ${day("bc3-day", main, tagC, 100, 900)}${main.html}
-    ${the("bc3-the", 1290, 170, 470, 650, 4.5, `<div class="bc-lb" data-t style="left:0;top:96px;width:470px;text-align:center;font-size:34px">${esc(s.partWord || "Chương")}</div><div class="bc-t1" data-t style="left:0;top:150px;width:470px;text-align:center;font-size:370px;line-height:1;color:#2a1c0a">${num}</div><div class="bc-tx" data-t style="left:30px;top:548px;width:410px;text-align:center;font-size:30px;font-weight:700;color:#4a3519">${esc(s.part || "")}</div>`, 600)}
+    ${the("bc3-the", 1290, 170, 470, 650, 4.5, `<div class="bc-lb" data-t style="left:0;top:96px;width:470px;text-align:center;font-size:34px">${esc(s.partWord || "Chương")}</div><div class="bc-t1" data-t style="left:0;top:150px;width:470px;text-align:center;font-size:370px;line-height:1;color:#2a1c0a">${num}</div><div class="bc-tx" data-t style="left:30px;top:548px;width:410px;text-align:center;font-size:30px;font-weight:700;color:#4a3519">${esc(s.part || "")}</div>`, 600, { m: "chuong", a: false })}
     ${nhan("bc3-nhan", 110, 130, -2, `${s.partWord || "Chương"} ${s.num ?? 1}`, 100)}</div>` };
 };
 
 
 // ───────────── các kiểu còn lại: dùng chung tờ tiêu đề + dải chú thích ─────────────
 const tieuDe = (s) => { const len = Math.max(8, plain(s.title || "").length), fs = Math.max(46, Math.min(72, Math.floor(1440 / (0.41 * len))));
-  return giay("bc-tieu", 110, 104, 1560, 170, -0.5, `<div class="bc-lb" data-t style="left:56px;top:22px">${esc(s.kicker || "")}</div><div class="bc-t2" data-t style="left:56px;top:62px;width:1460px;font-size:${fs}px;white-space:nowrap">${tx(s.title || "")}</div>`, { dx: 690, at: 100, a: "rise" }); };
+  return giay("bc-tieu", 110, 104, 1560, 170, -0.5, `<div class="bc-lb" data-t style="left:56px;top:22px">${esc(s.kicker || "")}</div><div class="bc-t2" data-t style="left:56px;top:62px;width:1460px;font-size:${fs}px;white-space:nowrap">${tx(s.title || "")}</div>`, { dx: 690, m: "tieu", a: false }); };
 const dai = (name, x, y, w, h, inner, at = 1200) => giay(name, x, y, w, h, 0.4, inner, { pin: false, at, cls: "bc-strip", pad: 40 });
 const noi = (ps, sag, at0 = 900) => ps.slice(1).map((q, i) => day(`bc-day${i + 1}`, ps[i], q, sag, at0 + i * 200)).join("");
 const trang = (inner) => ({ cls: "dark bc", html: `<div class="cv" data-tay>${inner}</div>` });
@@ -84,7 +86,7 @@ const chuNho = (txt, x, y, w, size = 27, name = "") => `<div class="bc-cap" data
 
 S1.bccauhoi = (s) => { const T = tieuDe(s), it = (s.items || []).slice(0, 3), xs = [110, 700, 1290], rot = [-1.4, 1, -1.1];
   const ps = it.map((x, i) => giay(`bc-q${i + 1}`, xs[i], 360 + (i === 1 ? 26 : 0), 520, 580, rot[i], `<div class="bc-t1" data-t style="left:44px;top:46px;font-size:160px;color:#c8261e">${pad2(i + 1)}</div><div class="bc-tx" data-t style="left:44px;top:250px;width:432px;font-size:44px;font-weight:700;line-height:1.3">${tx(x.q || x.text || "")}</div>`, { at: 400 + i * 220, go: x.go }));
-  return trang(`${vanTay("bc-vt", 1400, 640, 440)}${noi(ps, 60)}${T.html}${ps.map((p) => p.html).join("")}`); };
+  return trang(`${noi(ps, 60)}${T.html}${ps.map((p) => p.html).join("")}`); };
 
 S1.bctrich = (s) => { const T = tieuDe(s);
   const q = giay("bc-trich", 110, 330, 1130, 580, -0.9, `<div class="bc-lb" data-t style="left:56px;top:48px;width:1000px">${esc(s.head || "")}</div><div class="bc-tx" data-t style="left:56px;top:120px;width:1020px;font-size:48px;line-height:1.42">${tx("“" + (s.quote || "") + "”")}</div>`, { dx: 420, at: 300 });
@@ -96,7 +98,7 @@ S1.bcbang = (s) => { const T = tieuDe(s), cols = s.cols || [], rows = (s.rows ||
   const inner = `<div class="bc-hdr" style="left:36px;top:40px;width:1628px;height:76px"></div>${cols.map((c, j) => `<div class="bc-hc" data-t style="left:${cx[j] + 12}px;top:57px;width:${cw[j]}px">${esc(c.label || c)}</div>`).join("")}
     ${rows.map((r, i) => `${i === s.focus ? `<div class="bc-fo" style="left:30px;top:${116 + i * rh + 4}px;width:1640px;height:${rh - 8}px"></div>` : `<div class="bc-ru" style="left:48px;top:${116 + (i + 1) * rh - 1}px;width:1604px"></div>`}${r.map((c, j) => cell(c, j, 116 + i * rh + 24, j === 0 ? "bc-b" : "")).join("")}`).join("")}`;
   const B = giay("bc-bang", 110, 318, 1700, H, -0.3, inner, { dx: -700, at: 300 });
-  return trang(`${vanTay("bc-vt", 1440, 560, 440)}${T.html}${B.html}${s.note ? dai("bc-ghichu", 110, 318 + H + 30, 1700, 80, chuNho(s.note, 40, 20, 1620, 29), 1000).html : ""}`); };
+  return trang(`${T.html}${B.html}${s.note ? dai("bc-ghichu", 110, 318 + H + 30, 1700, 80, chuNho(s.note, 40, 20, 1620, 29), 1000).html : ""}`); };
 
 S1.bcnhanh = (s) => { const T = tieuDe(s), r = s.root || {}, B = (s.branches || []).slice(0, 3), xs = [110, 700, 1290];
   const root = giay("bc-goc", 540, 300, 840, 190, -0.5, `<div class="bc-tx" data-t style="left:40px;top:34px;width:760px;font-size:38px;font-weight:700;line-height:1.3">${tx(r.q || "")}</div><div class="bc-lb" data-t style="left:40px;top:140px;width:760px;font-size:22px">${esc(r.src || "")}</div>`, { at: 300 });
@@ -124,7 +126,7 @@ S1.bccot = (s) => { const T = tieuDe(s), C = (s.cols || []).slice(0, 3), out = [
 S1.bcsolieu = (s) => { const T = tieuDe(s);
   const tg = the("bc-so", 150, 320, 520, 690, -3.5, `<div class="bc-t1" data-t style="left:0;top:120px;width:520px;text-align:center;font-size:${String(s.num || "").length > 2 ? 330 : 520}px;line-height:1;color:#2a1c0a">${esc(String(s.num ?? ""))}</div>`, 400);
   const pp = giay("bc-ct", 760, 360, 1050, 520, 0.8, `<div class="bc-t1" data-t style="left:56px;top:56px;width:940px;font-size:80px">${tx(s.unit || "")}</div><div class="bc-tx" data-t style="left:56px;top:230px;width:940px;font-size:40px;line-height:1.4">${tx(s.sub || "")}</div>`, { dx: -440, at: 700 });
-  return trang(`${vanTay("bc-vt", 1380, 520, 420)}${T.html}${tg}${pp.html}${s.note ? dai("bc-ghichu", 760, 920, 1050, 80, chuNho(s.note, 36, 20, 980, 27), 1100).html : ""}`); };
+  return trang(`${T.html}${tg}${pp.html}${s.note ? dai("bc-ghichu", 760, 920, 1050, 80, chuNho(s.note, 36, 20, 980, 27), 1100).html : ""}`); };
 
 S1.bcdieukien = (s) => { const T = tieuDe(s), it = (s.items || []).slice(0, 5), ps = [];
   const rows = it.map((c, i) => { const p = giay(`bc-dk${i + 1}`, 110, 330 + i * 132, 1290, 112, i % 2 ? 0.35 : -0.35, `<div class="bc-ck"><svg viewBox="0 0 60 60" width="60" height="60"><polyline points="10,32 25,47 52,12" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="bc-tx" data-t style="left:112px;top:${c.text ? 14 : 30}px;width:900px;font-size:35px;font-weight:700;line-height:1.2">${tx(c.head || c.text || "")}</div>${c.text ? `<div class="bc-tx" data-t style="left:112px;top:62px;width:840px;font-size:26px;color:#5a4d36">${tx(c.text)}</div>` : ""}<div class="bc-chip" data-t style="right:30px;top:36px">${esc(c.src || "")}</div>`, { dx: 300, at: 300 + i * 170 }); ps.push(p); return p.html; });
@@ -138,18 +140,18 @@ S1.bcnhanqua = (s) => { const T = tieuDe(s), c = s.cause || {}, st = s.stamp || 
   return trang(`${ropes}${T.html}${cause.html}${rs.map((p) => p.html).join("")}<div class="bc-stp bc-bg" data-l="bc-dau" data-pad="20" ${A("slam", 700)} style="left:720px;top:520px;rotate:-8deg;font-size:62px;text-align:center;padding:14px 30px"><span data-t>${tx(st.text || "")}</span><br><span data-t style="font-size:30px">${esc(st.sub || "")}</span></div>${s.source ? chuNho(s.source, 110, 1018, 1700, 25) : ""}`); };
 
 S1.bchoi = (s) => { const T = tieuDe({ kicker: s.kicker, title: s.title }), O = (s.options || []).slice(0, 4), ans = s.answer ?? -1, W = s.whyNot || [];
-  const stem = giay("bc-de", 110, 300, 1700, 150, -0.3, `<div class="bc-tx" data-t style="left:50px;top:26px;width:1600px;font-size:34px;line-height:1.38">${tx(s.stem || "")}</div>`, { pin: false, at: 300 });
+  const stem = giay("bc-de", 110, 300, 1700, 150, -0.3, `<div class="bc-tx" data-t style="left:50px;top:26px;width:1600px;font-size:34px;line-height:1.38">${tx(s.stem || "")}</div>`, { pin: false, at: 300, m: "de", a: s.reveal ? false : undefined });
   const ps = O.map((o, i) => { const dung = s.reveal && i === ans, sai = s.reveal && i !== ans, x = 110 + (i % 2) * 870, y = 490 + Math.floor(i / 2) * 230;
-    return giay(`bc-pa${i + 1}`, x, y, 830, 204, [-0.5, 0.5, 0.4, -0.4][i], `<div class="bc-no2" data-t>${"ABCD"[i]}</div><div class="bc-tx" data-t style="left:130px;top:${sai && W[i] ? 22 : 44}px;width:660px;font-size:37px;font-weight:700;line-height:1.2">${tx(o)}</div>${sai && W[i] ? `<div class="bc-tx" data-t style="left:130px;top:112px;width:660px;font-size:25px;color:#b3241c;font-weight:600;line-height:1.25">${tx(W[i])}</div>` : ""}${dung ? `<div class="bc-stp bc-g" style="right:26px;top:22px;rotate:6deg;font-size:44px"><span data-t>Đúng</span></div>` : ""}`, { at: 400 + i * 140, cls: dung ? "bc-ok" : "" }); });
+    return giay(`bc-pa${i + 1}`, x, y, 830, 204, [-0.5, 0.5, 0.4, -0.4][i], `<div class="bc-no2" data-t>${"ABCD"[i]}</div><div class="bc-tx" data-t style="left:130px;top:${sai && W[i] ? 22 : 44}px;width:660px;font-size:37px;font-weight:700;line-height:1.2">${tx(o)}</div>${sai && W[i] ? `<div class="bc-tx" data-t style="left:130px;top:112px;width:660px;font-size:25px;color:#b3241c;font-weight:600;line-height:1.25">${tx(W[i])}</div>` : ""}${dung ? `<div class="bc-stp bc-g" style="right:26px;top:22px;rotate:6deg;font-size:44px"><span data-t>Đúng</span></div>` : ""}`, { at: 400 + i * 140, cls: dung ? "bc-ok" : "", m: `pa${i + 1}`, a: s.reveal ? false : undefined }); });
   return trang(`${T.html}${stem.html}${ps.map((p) => p.html).join("")}${s.reveal && s.why ? dai("bc-vi", 110, 952, 1700, 100, `<div class="bc-tx" data-t style="left:40px;top:18px;width:1620px;font-size:29px;line-height:1.3"><b>Vì sao:</b> ${tx(s.why)}</div>`, 1000).html : ""}`); };
 
 S1.bcchot = (s) => { const T = tieuDe({ kicker: s.kicker || "Kết luận", title: s.title || "Ba ranh giới cần nhớ" }), ch = (s.chips || []).slice(0, 3), xs = [110, 700, 1290], rot = [-1.2, 1, -1];
   const ps = ch.map((c, i) => giay(`bc-ch${i + 1}`, xs[i], 330, 520, 440, rot[i], `<div class="bc-t1" data-t style="left:40px;top:40px;width:440px;font-size:96px;color:#c8261e;line-height:1.02">${esc(c.n || "")}</div><div class="bc-tx" data-t style="left:40px;top:170px;width:440px;font-size:35px;font-weight:600;line-height:1.32">${tx(c.text || "")}</div>`, { at: 400 + i * 220, go: c.go }));
-  return trang(`${vanTay("bc-vt", 1480, 700, 380)}${noi(ps, 60)}${T.html}${ps.map((p) => p.html).join("")}${dai("bc-cc", 110, 820, 1700, 200, `<div class="bc-lb" data-t style="left:44px;top:26px">Căn cứ</div><div class="bc-tx" data-t style="left:44px;top:66px;width:1610px;font-size:27px;line-height:1.36">${tx(s.basis || "")}</div>`, 1200).html}`); };
+  return trang(`${noi(ps, 60)}${T.html}${ps.map((p) => p.html).join("")}${dai("bc-cc", 110, 820, 1700, 200, `<div class="bc-lb" data-t style="left:44px;top:26px">Căn cứ</div><div class="bc-tx" data-t style="left:44px;top:66px;width:1610px;font-size:27px;line-height:1.36">${tx(s.basis || "")}</div>`, 1200).html}`); };
 
 S1.bccamon = (s) => { const tm = (s.team || [])[0] || {};
   const main = giay("bc-chinh", 190, 230, 1080, 600, -1.2, `<div class="bc-t1" data-t style="left:64px;top:70px;width:960px;font-size:150px;line-height:1.02">${tx(s.title || "Cảm ơn và hỏi đáp")}</div><div class="bc-tx" data-t style="left:64px;top:380px;width:930px;font-size:40px;line-height:1.4">${tx(s.message || "")}</div>`, { dx: 400, at: 250 });
-  return { cls: "dark bc", bare: true, html: `<div class="cv" data-tay>${vanTay("bc-vt", 1300, 480, 520)}${main.html}
+  return { cls: "dark bc", bare: true, html: `<div class="cv" data-tay>${main.html}
    ${the("bc-ten", 1330, 260, 460, 420, 4, `<div class="bc-t1" data-t style="left:30px;top:96px;width:400px;font-size:62px;text-align:center;color:#2a1c0a;line-height:1.1">${esc(tm.name || "")}</div><div class="bc-tx" data-t style="left:30px;top:250px;width:400px;font-size:30px;text-align:center;color:#4a3519;font-weight:600">${esc(tm.role || "")}</div>`, 600)}
    ${dai("bc-lh", 190, 900, 1080, 90, `<div class="bc-tx" data-t style="left:40px;top:22px;width:1000px;font-size:29px">${esc(s.contact || "")}</div>`, 900).html}</div>` }; };
 
@@ -165,14 +167,20 @@ S1.bcthang = (s) => { const T = tieuDe(s), R = (s.rows || []).slice(0, 5), ax = 
       return `<div class="bc-bar" style="left:${x}px;top:${by}px;width:${w}px;height:36px;background:${COL[k]}"></div><div class="bc-bl ${inside ? "in" : ""}" data-t style="left:${inside ? x + 14 : x + w + 14}px;top:${by}px;${inside ? `width:${w - 20}px` : ""}">${esc(txt)}</div>`; }).join("");
     return `${i === s.focus ? `<div class="bc-fo" style="left:30px;top:${y + 4}px;width:1640px;height:${RH - 8}px"></div>` : `<div class="bc-ru" style="left:40px;top:${y + RH - 1}px;width:1620px"></div>`}<div class="bc-tx bc-b" data-t style="left:44px;top:${y + 16}px;width:480px;font-size:${R.length >= 4 ? 31 : 33}px;line-height:1.2">${tx(r.label || "")}</div>${r.sub ? `<div class="bc-tx" data-t style="left:44px;top:${y + (R.length >= 4 ? 64 : 70)}px;width:480px;font-size:23px;line-height:1.25;color:#5a4d36">${tx(r.sub)}</div>` : ""}${bars}`; }).join("");
   const B = giay("bc-thang", 110, 318, 1700, H, -0.3, `${leg}${ticks}${rows}`, { dx: -700, at: 300 });
-  return trang(`${vanTay("bc-vt", 1440, 600, 420)}${T.html}${B.html}${s.note ? dai("bc-ghichu", 110, 318 + H + 28, 1700, 80, chuNho(s.note, 40, 20, 1620, 29), 1000).html : ""}`); };
+  return trang(`${T.html}${B.html}${s.note ? dai("bc-ghichu", 110, 318 + H + 28, 1700, 80, chuNho(s.note, 40, 20, 1620, 29), 1000).html : ""}`); };
 
+// thẻ chương nhỏ ở góc: cùng tên Morph "chuong" với thẻ số to của slide mở chương → thẻ thu nhỏ vào góc, sang chương mới thì lớn lên thành thẻ mới
+const theNho = (s) => the("bc-chn", 1700, 98, 116, 186, 4, `<div class="bc-lb" data-t style="left:0;top:76px;width:116px;text-align:center;font-size:16px;letter-spacing:.06em">Chương</div><div class="bc-t1" data-t style="left:0;top:98px;width:116px;text-align:center;font-size:66px;line-height:1;color:#2a1c0a">${pad2(s.ch)}</div>`, 500, { m: "chuong", a: false });
 function render(s, deck, ctx, { i, n }) {
-  kit.reset();
+  SL = i; kit.reset();
   const o = S1[s.type](s, deck, ctx);
-  return [{ id: s.id || `s${i + 1}`, html: wrap(o, s, deck, i, n), tu: true }];
+  let html = wrap(o, s, deck, i, n);
+  if (s.ch && !["bcbia", "bcchuong", "bccamon"].includes(s.type)) html = html.replace(/<\/div><\/section>\s*$/, `${theNho(s)}</div></section>`);
+  return [{ id: s.id || `s${i + 1}`, html, tu: true, dur: s.dur || 1000 }];
 }
 
+const fpSvg = (() => { let g = ""; for (let i = 1; i <= 24; i++) { const r = i * 12.5; g += `<ellipse cx='200' cy='235' rx='${(r * 0.8).toFixed(1)}' ry='${r}' stroke-dasharray='${38 + i * 6} ${8 + (i % 5) * 4} ${70 - i * 2} 11' stroke-dashoffset='${i * 23}'/>`; }
+  return `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 480' fill='none' stroke='%232a170b' stroke-opacity='.17' stroke-width='6' stroke-linecap='round'>${g}</svg>")`; })();
 const cork = "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='640' height='640'><filter id='a' x='0' y='0' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 .11 0 0 0 0 .05 0 0 0 0 .02 0 0 0 1.9 -.78'/></filter><filter id='b' x='0' y='0' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='.55' numOctaves='2' seed='11'/><feColorMatrix values='0 0 0 0 .97 0 0 0 0 .8 0 0 0 0 .55 0 0 0 1.7 -.82'/></filter><rect width='640' height='640' filter='url(%23a)'/><rect width='640' height='640' filter='url(%23b)' opacity='.8'/></svg>\")";
 
 const css = `
@@ -198,7 +206,7 @@ const css = `
 
 /* ── bảng bằng chứng (hình sự) ── */
 .s.bc { background-color: #79502f; background-image: radial-gradient(1500px 900px at 45% 38%, rgba(255,222,170,.28), transparent 68%), radial-gradient(2000px 1300px at 50% 50%, transparent 50%, rgba(18,8,2,.62) 100%), ${cork}; color: #f4ecd8; --fg: #f4ecd8; --mut: #ead9ba; --hl: #ffd27a; }
-.s.bc::before { display: none; } .s.bc::after { opacity: .1; }
+.s.bc::before { content: "" !important; display: block !important; position: absolute !important; left: auto !important; top: auto !important; right: -60px !important; bottom: -150px !important; width: 560px !important; height: 672px !important; background: ${fpSvg} no-repeat center / contain !important; border-radius: 0 !important; pointer-events: none; z-index: 1; } .s.bc::after { opacity: .1; }
 .s.bc .bar span, .s.bc .bar .cnt { color: #f4ecd8; text-shadow: 0 2px 6px rgba(0,0,0,.5); }
 .s.bc .prog { background: #c8261e; }
 .bc-hd { position: absolute; inset: 0; z-index: 3; } .bc-hd > * { position: absolute; }
