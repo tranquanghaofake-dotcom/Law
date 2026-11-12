@@ -37,3 +37,12 @@ test("chế độ A không Morph (không data-m), chế độ B có; đinh và c
   assert.ok(/data-l="bc-tieu"[^>]*data-a="rise"/.test(a.html), "A: tờ tiêu đề vào nhẹ (rise)");
   assert.ok(!/data-l="bc-tieu"[^>]*data-a=/.test(b.html), "B: tờ tiêu đề là đích Morph nên không có hiệu ứng vào");
 });
+test("chế độ C (mặc định): không hiệu ứng vào nào, còn các cặp Morph có nghĩa, không ghép q1–q3", () => {
+  const d = { meta: {}, slides: [] };
+  const hs = [["bcbia", { cites: [{ n: "1", t: "t" }] }], ["bccauhoi", { items: [{ q: "q" }] }], ["bcso", { left: { items: ["a"] }, right: { items: ["b"] }, mid: {} }], ["bcchuong", { num: 1 }]]
+    .map(([type, x], i) => bc.render({ type, title: "T", ch: 1, ...x }, d, {}, { i, n: 9 })[0].html);
+  for (const h of hs) { assert.ok(!/data-a=/.test(h), "không data-a"); assert.ok(!/data-em=/.test(h), "không data-em"); assert.ok(!/data-m="q\d/.test(h), "không ghép q1–q3"); }
+  assert.ok(hs[3].includes('data-m="tieu"') && hs[3].includes('data-m="chuong"'));
+  assert.ok(hs[2].includes('data-m="ranh"'));
+  assert.equal(bc.render({ type: "bcchuong", num: 1, title: "T" }, d, {}, { i: 0, n: 2 })[0].dur, 900);
+});

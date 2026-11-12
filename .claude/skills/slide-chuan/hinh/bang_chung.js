@@ -13,18 +13,19 @@ const { esc, f } = kit;
 const TYPES = ["bcbia", "bcso", "bcchuong", "bccauhoi", "bctrich", "bcbang", "bcnhanh", "bctinhhuong", "bcdoiung", "bccot", "bcsolieu", "bcdieukien", "bcnhanqua", "bchoi", "bcchot", "bccamon", "bcthang"];
 const tx = (s) => f(s).replace(/\n/g, "<br>");
 const pad2 = (n) => String(n).padStart(2, "0");
-const A = (a, at) => `data-a="${a}" data-at="${at}"`;
+const A = (a, at) => (MODE === "C" ? "" : `data-a="${a}" data-at="${at}"`);   // chế độ C: không hiệu ứng vào nào
 
 // tờ giấy ghim: trả về html và toạ độ đinh (cx, cy) để kéo dây
-// MODE: "A" = hiệu ứng vào phong phú, KHÔNG Morph (meta.bc = "A", đi cùng meta.hinh.chuyen = "fade"); "B" = Morph "nhân vật xuyên suốt" (mặc định).
-let MODE = "B";
-const pairM = (m) => (m && MODE === "B" ? `data-m="${m}"` : "");
-const khongVao = (o) => o.na || (o.a === false && MODE === "B");   // đích Morph không có hiệu ứng vào
+// MODE: "C" = GỌN (mặc định): không hiệu ứng vào, chỉ vài cặp Morph có nghĩa (tờ tiêu đề, thẻ chương, thẻ "ranh giới", thẻ đáp án), 900 ms.
+//       "B" = thêm "nhân vật xuyên suốt" (ba tờ ở bìa → thẻ câu hỏi) + toàn bộ hiệu ứng vào. "A" = hiệu ứng vào phong phú, không Morph. (B, A bị chê rối / tệ — giữ để so sánh.)
+let MODE = "C";
+const pairM = (m) => (m && MODE !== "A" ? `data-m="${m}"` : "");
+const khongVao = (o) => o.na || (o.a === false && MODE !== "A");   // đích Morph không có hiệu ứng vào
 // tờ giấy ghim. Đinh là LỚP RIÊNG (nện xuống sau khi giấy rơi), đặt đúng chỗ kể cả khi giấy nghiêng; cx, cy = toạ độ đinh để kéo dây.
 const giay = (name, x, y, w, h, rot, inner, o = {}) => {
   const th = rot * Math.PI / 180, dx = o.dx || 0, dy = 10 - h / 2, px = x + w / 2 + dx * Math.cos(th) - dy * Math.sin(th), py = y + h / 2 + dx * Math.sin(th) + dy * Math.cos(th);
   const at = o.at || 300, no = khongVao(o), kind = o.a === false ? (o.kA || "drop") : (o.a || "drop");
-  const paper = `<div class="bc-pp ${o.cls || ""}" data-l="${name}" data-pad="${o.pad || 48}" ${no ? "" : A(kind, at)} ${o.em ? `data-em="${o.em}"` : ""} ${pairM(o.m)} ${o.go ? `data-go="${esc(o.go)}"` : ""} style="left:${x}px;top:${y}px;width:${w}px;height:${h}px;rotate:${rot}deg">${inner}</div>`;
+  const paper = `<div class="bc-pp ${o.cls || ""}" data-l="${name}" data-pad="${o.pad || 48}" ${no ? "" : A(kind, at)} ${o.em && MODE !== "C" ? `data-em="${o.em}"` : ""} ${pairM(o.m)} ${o.go ? `data-go="${esc(o.go)}"` : ""} style="left:${x}px;top:${y}px;width:${w}px;height:${h}px;rotate:${rot}deg">${inner}</div>`;
   const pin = o.pin === false ? "" : `<i class="bc-pin" data-l="pin-${name}" data-pad="18" ${no ? "" : A("slam", at + 420)} ${pairM(o.m ? `${o.m}-pin` : "")} style="left:${(px - 23).toFixed(1)}px;top:${(py - 23).toFixed(1)}px;margin:0"></i>`;
   return { cx: px, cy: py, html: paper + pin };
 };
@@ -42,7 +43,7 @@ const day = (name0, p, q, sag, at) => {
 const vanTay = (name, x, y, w) => { let g = ""; for (let i = 1; i <= 24; i++) { const r = i * 12.5; g += `<ellipse cx="200" cy="235" rx="${(r * 0.8).toFixed(1)}" ry="${r}" stroke-dasharray="${38 + i * 6} ${8 + (i % 5) * 4} ${70 - i * 2} 11" stroke-dashoffset="${i * 23}"/>`; }
   return `<svg class="bc-fp" data-l="${name}" data-pad="4" viewBox="0 0 400 480" style="left:${x}px;top:${y}px;width:${w}px;height:${Math.round(w * 1.2)}px">${g}</svg>`; };
 // thẻ tang vật (giấy manila có lỗ xỏ dây)
-const the = (name, x, y, w, h, rot, inner, at = 500, o = {}) => `<div class="bc-tag" data-l="${name}" data-pad="40" ${khongVao(o) ? "" : `${A("drop", at)} ${o.noem ? "" : 'data-em="teeter"'}`} ${pairM(o.m)} style="left:${x}px;top:${y}px;width:${w}px;height:${h}px;rotate:${rot}deg"><i class="bc-hole"></i>${inner}</div>`;
+const the = (name, x, y, w, h, rot, inner, at = 500, o = {}) => `<div class="bc-tag" data-l="${name}" data-pad="40" ${khongVao(o) ? "" : `${A("drop", at)} ${o.noem || MODE === "C" ? "" : 'data-em="teeter"'}`} ${pairM(o.m)} style="left:${x}px;top:${y}px;width:${w}px;height:${h}px;rotate:${rot}deg"><i class="bc-hole"></i>${inner}</div>`;
 const nhan = (name, x, y, rot, text, at = 100) => `<div class="bc-lab" data-l="${name}" data-pad="14" ${A("rise", at)} style="left:${x}px;top:${y}px;rotate:${rot}deg"><span data-t>${esc(text)}</span></div>`;
 
 const S1 = {};
@@ -55,7 +56,7 @@ S1.bcbia = (s) => {
      `, { dx: 380, m: "tieu", a: false });
   const C = (s.cites || []).slice(0, 3), pos = [[1290, 140, 3], [1380, 420, -3], [1240, 712, 2]], ps = [];
   const papers = C.map((c, i) => { const [x, y, r] = pos[i], p = giay(`bc1-d${i + 1}`, x, y, 440, 236, r,
-    `<div class="bc-t1" data-t style="left:36px;top:68px;font-size:118px">${esc(c.n)}</div><div class="bc-tx" data-t style="left:230px;top:104px;width:190px;font-size:31px;font-weight:700">${tx(c.t)}</div><div class="bc-lb" data-t style="left:36px;top:38px;font-size:26px">ĐIỀU</div>`, { at: 700 + i * 220, m: `q${i + 1}`, em: "teeter" }); ps.push(p); return p.html; });
+    `<div class="bc-t1" data-t style="left:36px;top:68px;font-size:118px">${esc(c.n)}</div><div class="bc-tx" data-t style="left:230px;top:104px;width:190px;font-size:31px;font-weight:700">${tx(c.t)}</div><div class="bc-lb" data-t style="left:36px;top:38px;font-size:26px">ĐIỀU</div>`, { at: 700 + i * 220, m: MODE === "B" ? `q${i + 1}` : undefined, em: "teeter" }); ps.push(p); return p.html; });
   const ropes = ps.map((p, i) => day(`bc1-day${i + 1}`, main, p, [70, 110, 130][i], 1000 + i * 200));
   return { cls: "dark bc", bare: true, html: `<div class="cv" data-tay>${ropes.join("")}${main.html}${papers.join("")}${stp("bc1-dau", "right:834px;bottom:318px", 7, s.stamp || "Phân biệt", 1500)}
     ${the("bc1-the", 120, 850, 560, 190, -2.5, `<div class="bc-t1" data-t style="left:70px;top:80px;font-size:50px;color:#2a1c0a">${esc(s.author || "")}</div><div class="bc-tx" data-t style="left:70px;top:138px;font-size:27px;color:#4a3519">${esc([s.authorSub, s.date].filter(Boolean).join(" · "))}</div>`, 1500)}</div>` };
@@ -95,7 +96,7 @@ const trang = (inner) => ({ cls: "dark bc", html: `<div class="cv" data-tay>${in
 const chuNho = (txt, x, y, w, size = 27, name = "") => `<div class="bc-cap" data-t style="left:${x}px;top:${y}px;width:${w}px;font-size:${size}px">${tx(txt)}</div>`;
 
 S1.bccauhoi = (s) => { const T = tieuDe(s), it = (s.items || []).slice(0, 3), xs = [110, 700, 1290], rot = [-1.4, 1, -1.1];
-  const ps = it.map((x, i) => giay(`bc-q${i + 1}`, xs[i], 360 + (i === 1 ? 26 : 0), 520, 580, rot[i], `<div class="bc-t1" data-t style="left:44px;top:46px;font-size:160px;color:#c8261e">${pad2(i + 1)}</div><div class="bc-tx" data-t style="left:44px;top:250px;width:432px;font-size:44px;font-weight:700;line-height:1.3">${tx(x.q || x.text || "")}</div>`, { at: 400 + i * 220, go: x.go, m: `q${i + 1}`, a: false }));
+  const ps = it.map((x, i) => giay(`bc-q${i + 1}`, xs[i], 360 + (i === 1 ? 26 : 0), 520, 580, rot[i], `<div class="bc-t1" data-t style="left:44px;top:46px;font-size:160px;color:#c8261e">${pad2(i + 1)}</div><div class="bc-tx" data-t style="left:44px;top:250px;width:432px;font-size:44px;font-weight:700;line-height:1.3">${tx(x.q || x.text || "")}</div>`, { at: 400 + i * 220, go: x.go, m: MODE === "B" ? `q${i + 1}` : undefined, a: MODE === "B" ? false : undefined }));
   return trang(`${noi(ps, 60)}${T.html}${ps.map((p) => p.html).join("")}`); };
 
 S1.bctrich = (s) => { const T = tieuDe(s);
@@ -186,11 +187,11 @@ S1.bcthang = (s) => { const T = tieuDe(s), R = (s.rows || []).slice(0, 5), ax = 
 // thẻ chương nhỏ ở góc: cùng tên Morph "chuong" với thẻ số to của slide mở chương → thẻ thu nhỏ vào góc, sang chương mới thì lớn lên thành thẻ mới
 const theNho = (s) => the("bc-chn", 1700, 98, 116, 186, 4, `<div class="bc-lb" data-t style="left:0;top:76px;width:116px;text-align:center;font-size:16px;letter-spacing:.06em">Chương</div><div class="bc-t1" data-t style="left:0;top:98px;width:116px;text-align:center;font-size:66px;line-height:1;color:#2a1c0a">${pad2(s.ch)}</div>`, 500, { m: "chuong", a: false, na: true, noem: true });
 function render(s, deck, ctx, { i, n }) {
-  SL = i; MODE = (deck.meta && deck.meta.bc) || "B"; kit.reset();
+  SL = i; MODE = (deck.meta && deck.meta.bc) || "C"; kit.reset();
   const o = S1[s.type](s, deck, ctx);
   let html = wrap(o, s, deck, i, n);
   if (s.ch && !["bcbia", "bcchuong", "bccamon"].includes(s.type)) html = html.replace(/<\/div><\/section>\s*$/, `${theNho(s)}</div></section>`);
-  return [{ id: s.id || `s${i + 1}`, html, tu: true, dur: s.dur || (MODE === "B" ? 1200 : 450) }];
+  return [{ id: s.id || `s${i + 1}`, html, tu: true, dur: s.dur || (MODE === "A" ? 450 : MODE === "C" ? 900 : 1200) }];
 }
 
 const fpSvg = (() => { let g = ""; for (let i = 1; i <= 24; i++) { const r = i * 12.5; g += `<ellipse cx='200' cy='235' rx='${(r * 0.8).toFixed(1)}' ry='${r}' stroke-dasharray='${38 + i * 6} ${8 + (i % 5) * 4} ${70 - i * 2} 11' stroke-dashoffset='${i * 23}'/>`; }
