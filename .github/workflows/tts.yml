@@ -46,7 +46,7 @@ jobs:
       - run: npm ci --no-audit --no-fund
       # Gom mọi câu app có thể đọc (kể cả câu sinh tự động) bằng chính code app → .tts-texts.json
       - run: npm run content && npm run tts:texts -w @luyen-luat/web
-      - run: python3 -m unittest tools/tts/test_clone.py tools/tts/test_vi_norm.py
+      - run: python3 -m unittest tools/tts/test_clone.py tools/tts/test_vi_norm.py tools/tts/test_ab.py
       - uses: actions/cache/restore@v5
         with:
           path: .tts-cache
@@ -84,7 +84,7 @@ jobs:
           cache-dependency-path: tools/tts/requirements-clone.txt
       - run: sudo apt-get install -y -qq ffmpeg
       - run: pip install -q -r tools/tts/requirements-clone.txt
-      - run: python -m unittest tools/tts/test_clone.py tools/tts/test_ab.py
+      - run: python -m unittest tools/tts/test_clone.py
       - uses: actions/cache@v5
         with:
           path: ~/.cache/huggingface
