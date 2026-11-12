@@ -166,6 +166,91 @@ class ChiaViec(unittest.TestCase):
         self.assertEqual(clone.plan([], set(), 20), [])
 
 
+def _write(path, text):
+    with open(path, 'w', encoding='utf-8') as fh:
+        fh.write(text)
+
+
+def _read(path):
+    with open(path, encoding='utf-8') as fh:
+        return fh.read()
+
+
+class GopTheoDot(unittest.TestCase):
+    """Đổi kiểu giọng: bộ mới gom vào thư mục chờ, bộ cũ trên web chỉ bị thay khi bộ mới phủ đủ PROMOTE số câu."""
+
+    def setUp(self):
+        import json, tempfile, types
+        self.json, self.types = json, types
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        self.texts = [f'Câu số {i}.' for i in range(200)]
+        self.keys = [text_key(t) for t in self.texts]
+        self._load = clone.load_texts
+        clone.load_texts = lambda path: list(self.texts)
+        self.addCleanup(lambda: setattr(clone, 'load_texts', self._load))
+        self.cache = os.path.join(self.tmp.name, 'cache')
+        os.makedirs(self.cache)
+        for k in self.keys:  # bộ cũ đang chạy trên web
+            _write(os.path.join(self.cache, k + '.mp3'), 'cu')
+        _write(os.path.join(self.cache, 'manifest.json'), json.dumps({'voice': clone.VOICE, 'style': 'kieu-cu', 'keys': self.keys}))
+
+    def part(self, name, keys, bad=()):
+        d = os.path.join(self.tmp.name, name)
+        os.makedirs(d)
+        with open(os.path.join(d, 'report.jsonl'), 'w', encoding='utf-8') as rep:
+            for k in keys:
+                _write(os.path.join(d, k + '.mp3'), 'moi')
+                rep.write(self.json.dumps({'key': k, 'text': k, 'ok': k not in bad, 'err': 0, 'num': k not in bad, 'sim': 0.9}) + '\n')
+        return d
+
+    def merge(self, parts):
+        out = os.path.join(self.tmp.name, 'gh-output')
+        _write(out, '')
+        clone.cmd_merge(self.types.SimpleNamespace(cache=self.cache, texts=None, parts=parts, summary=None, github_output=out))
+        return dict(l.split('=') for l in _read(out).split())
+
+    def top(self):
+        return self.json.loads(_read(os.path.join(self.cache, 'manifest.json')))
+
+    def test_chua_du_thi_giu_bo_cu_va_chay_tiep(self):
+        self.part('out-0', self.keys[:120])
+        got = self.merge(os.path.join(self.tmp.name, 'out-*'))
+        self.assertEqual(got, {'switched': 'false', 'more': 'true'})
+        self.assertEqual(self.top()['style'], 'kieu-cu')                                  # web vẫn bộ cũ, không mất tệp nào
+        self.assertEqual(_read(os.path.join(self.cache, self.keys[0] + '.mp3')), 'cu')
+        nxt = self.json.loads(_read(os.path.join(self.cache, clone.NEXT, 'manifest.json')))
+        self.assertEqual((nxt['style'], len(nxt['keys'])), (clone.STYLE, 120))
+        plan_out = os.path.join(self.tmp.name, 'plan')                                     # lần chạy sau chỉ sinh phần thiếu
+        clone.cmd_plan(self.types.SimpleNamespace(texts=None, limit=0, sample=0, cache=self.cache, shards=4, out=plan_out, github_output=None))
+        todo = [t for f in sorted(os.listdir(plan_out)) for t in self.json.loads(_read(os.path.join(plan_out, f)))]
+        self.assertEqual(sorted(todo), sorted(self.texts[120:]))
+
+    def test_du_thi_thay_bo_cu(self):
+        self.part('out-0', self.keys[:120])
+        self.merge(os.path.join(self.tmp.name, 'out-0'))
+        self.part('out-1', self.keys[120:], bad={self.keys[199]})                          # 1 câu đọc sai số: 199/200 = 99,5% vẫn đủ
+        got = self.merge(os.path.join(self.tmp.name, 'out-1'))
+        self.assertEqual(got, {'switched': 'true', 'more': 'false'})
+        m = self.top()
+        self.assertEqual((m['style'], len(m['keys'])), (clone.STYLE, 199))
+        self.assertNotIn(self.keys[199], m['keys'])
+        self.assertEqual(_read(os.path.join(self.cache, self.keys[0] + '.mp3')), 'moi')
+        self.assertFalse(os.path.exists(os.path.join(self.cache, clone.NEXT)))
+
+    def test_khong_tien_trien_thi_khong_tu_chay_tiep(self):
+        self.part('out-0', [])
+        self.assertEqual(self.merge(os.path.join(self.tmp.name, 'out-*')), {'switched': 'false', 'more': 'false'})
+
+    def test_cung_kieu_thi_gop_thang_nhu_cu(self):
+        _write(os.path.join(self.cache, 'manifest.json'), self.json.dumps({'voice': clone.VOICE, 'style': clone.STYLE, 'keys': self.keys[:150]}))
+        self.part('out-0', self.keys[150:160])
+        got = self.merge(os.path.join(self.tmp.name, 'out-*'))
+        self.assertEqual(got['switched'], 'true')
+        self.assertEqual(len(self.top()['keys']), 200)                                     # tệp sẵn có trong cache đều được tính
+        self.assertFalse(os.path.exists(os.path.join(self.cache, clone.NEXT)))
+
+
 @unittest.skipUnless(importlib.util.find_spec('numpy') and importlib.util.find_spec('scipy'), 'cần numpy + scipy (chạy trong môi trường requirements-clone.txt)')
 class HauKy(unittest.TestCase):
     def test_chan_dinh_khong_tang_am_luong(self):

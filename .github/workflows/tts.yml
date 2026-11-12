@@ -126,7 +126,9 @@ jobs:
       - uses: actions/download-artifact@v7
         with:
           path: parts
-      - run: python3 tools/tts/clone.py merge --cache .tts-cache --texts parts/plan/.tts-texts.json --parts 'parts/out-*' --summary "$GITHUB_STEP_SUMMARY"
+      # Đổi kiểu giọng: bộ mới gom trong .tts-cache/next, chỉ thay bộ cũ (switched=true) khi đã phủ 99,5% số câu — web không rơi về giọng trình duyệt giữa chừng.
+      - id: merge
+        run: python3 tools/tts/clone.py merge --cache .tts-cache --texts parts/plan/.tts-texts.json --parts 'parts/out-*' --summary "$GITHUB_STEP_SUMMARY" --github-output "$GITHUB_OUTPUT"
       - uses: actions/cache/save@v5
         with:
           path: .tts-cache
@@ -137,9 +139,16 @@ jobs:
           path: |
             .tts-cache/report.md
             .tts-cache/report.json
+            .tts-cache/next/report.md
+            .tts-cache/next/report.json
           include-hidden-files: true
       - name: Deploy lại trang để dùng giọng mới
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main' && steps.merge.outputs.switched == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run deploy.yml --repo "${{ github.repository }}" --ref main
+      - name: Còn câu chưa sinh và lần này có thêm tệp → tự chạy tiếp (không áp dụng cho lần chạy thử)
+        if: github.ref == 'refs/heads/main' && steps.merge.outputs.more == 'true' && (inputs.sample || '0') == '0' && (inputs.limit || '0') == '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run tts.yml --repo "${{ github.repository }}" --ref main

@@ -51,6 +51,8 @@ BITRATE = '64k'
 DEESS_DB = -5.0        # đo trên 40 câu: đỉnh dải xì −6,8 → −11,7 dB (CD Media −10,8, kênh gốc −8,9); chất âm và độ giống không đổi
 DEESS_CUT = 4.0
 EDGE = 0.03            # giữ 30 ms hai đầu khi cắt im lặng (app tự chèn khoảng nghỉ giữa câu)
+NEXT = 'next'          # thư mục chờ trong cache: bộ giọng kiểu MỚI đang sinh dở, web vẫn dùng bộ cũ nằm ngoài
+PROMOTE = 0.995        # bộ mới phủ ngần này số câu thì mới thay bộ cũ trên web (sinh lại toàn bộ mất hơn một ngày, nhiều lần chạy)
 
 
 # ───────────── hàm thuần (có test: tools/tts/test_clone.py) ─────────────
@@ -476,6 +478,20 @@ def load_texts(path: str | None) -> list[str]:
     return texts
 
 
+def is_current(m: dict) -> bool:
+    return m.get('style') == STYLE and m.get('voice') == VOICE
+
+
+def ready(n_keys: int, n_want: int) -> bool:
+    """Bộ giọng mới đã đủ để thay bộ cũ trên web chưa."""
+    return n_want > 0 and n_keys >= PROMOTE * n_want
+
+
+def stage_of(cache: str) -> str:
+    """Nơi cất tệp của kiểu giọng hiện tại: thẳng trong cache nếu web đang dùng đúng kiểu này, còn không thì thư mục chờ cache/next."""
+    return cache if is_current(read_manifest(cache)) else os.path.join(cache, NEXT)
+
+
 def read_manifest(cache: str) -> dict:
     p = os.path.join(cache, 'manifest.json')
     if os.path.exists(p):
@@ -490,16 +506,16 @@ def cmd_plan(a):
         texts = texts[: a.limit]
     if a.sample:
         texts = sample(texts, a.sample)
-    m = read_manifest(a.cache)
-    same = m.get('style') == STYLE and m.get('voice') == VOICE
-    done = {k for k in m.get('keys', []) if os.path.exists(os.path.join(a.cache, k + '.mp3'))} if same else set()
+    stage = stage_of(a.cache)
+    m = read_manifest(stage)
+    done = {k for k in m.get('keys', []) if os.path.exists(os.path.join(stage, k + '.mp3'))} if is_current(m) else set()
     parts = plan(texts, done, a.shards)
     os.makedirs(a.out, exist_ok=True)
     for i, p in enumerate(parts):
         with open(os.path.join(a.out, f'shard-{i}.json'), 'w', encoding='utf-8') as fh:
             json.dump(p, fh, ensure_ascii=False)
     chars = sum(len(t) for p in parts for t in p)
-    print(f"{len(texts)} câu · đã có {len(done)}{'' if same else ' (kiểu giọng đổi → sinh lại toàn bộ)'} · cần sinh {sum(map(len, parts))} câu (~{chars / 20 / 3600:.1f} giờ âm thanh) · {len(parts)} phần")
+    print(f"{len(texts)} câu · đã có {len(done)}{'' if stage == a.cache else ' (kiểu giọng mới đang sinh dở trong thư mục chờ, web vẫn dùng bộ cũ)'} · cần sinh {sum(map(len, parts))} câu (~{chars / 20 / 3600:.1f} giờ âm thanh) · {len(parts)} phần")
     if a.github_output:
         with open(a.github_output, 'a') as fh:
             fh.write(f"shards={json.dumps(list(range(len(parts))))}\ncount={len(parts)}\n")
@@ -541,20 +557,23 @@ def cmd_run(a):
 def cmd_merge(a):
     texts = load_texts(a.texts)
     want = {text_key(t) for t in texts}
-    m = read_manifest(a.cache)
-    same = m.get('style') == STYLE and m.get('voice') == VOICE
     os.makedirs(a.cache, exist_ok=True)
-    if not same:  # kiểu giọng đổi: bỏ toàn bộ tệp cũ để không lẫn giọng
-        for f in glob.glob(os.path.join(a.cache, '*.mp3')):
-            os.remove(f)
+    stage = stage_of(a.cache)  # web đang dùng kiểu khác → gom vào thư mục chờ, KHÔNG đụng bộ cũ cho tới khi bộ mới đủ
+    os.makedirs(stage, exist_ok=True)
     old = {}
-    rp = os.path.join(a.cache, 'report.json')
-    if same and os.path.exists(rp):
-        with open(rp, encoding='utf-8') as fh:
-            old = {r['key']: r for r in json.load(fh).get('items', [])}
+    rp = os.path.join(stage, 'report.json')
+    if is_current(read_manifest(stage)):
+        if os.path.exists(rp):
+            with open(rp, encoding='utf-8') as fh:
+                old = {r['key']: r for r in json.load(fh).get('items', [])}
+    else:  # thư mục chờ là của một kiểu giọng khác: bỏ để không lẫn giọng
+        for f in glob.glob(os.path.join(stage, '*.mp3')):
+            os.remove(f)
+    added = 0
     for d in sorted(glob.glob(a.parts)):
         for f in glob.glob(os.path.join(d, '*.mp3')):
-            shutil.copy2(f, os.path.join(a.cache, os.path.basename(f)))
+            shutil.copy2(f, os.path.join(stage, os.path.basename(f)))
+            added += 1
         rj = os.path.join(d, 'report.jsonl')
         if os.path.exists(rj):
             with open(rj, encoding='utf-8') as fh:
@@ -562,20 +581,32 @@ def cmd_merge(a):
                     if l.strip():
                         r = json.loads(l)
                         old[r['key']] = r
-    for f in glob.glob(os.path.join(a.cache, '*.mp3')):  # dọn câu không còn dùng
+    for f in glob.glob(os.path.join(stage, '*.mp3')):  # dọn câu không còn dùng
         if os.path.basename(f)[:-4] not in want:
             os.remove(f)
-    have = sorted(k for k in want if os.path.exists(os.path.join(a.cache, k + '.mp3')))
+    have = sorted(k for k in want if os.path.exists(os.path.join(stage, k + '.mp3')))
     keys = [k for k in have if usable(old.get(k, {}))]  # câu đọc sai số: có tệp nhưng không vào manifest (lần chạy sau sinh lại)
     items = [old[k] for k in have if k in old]
     flagged = [r for r in items if not r.get('ok')]
     wrong_num = [r for r in items if not usable(r)]
-    with open(os.path.join(a.cache, 'manifest.json'), 'w', encoding='utf-8') as fh:
+    waiting = stage != a.cache and not ready(len(keys), len(want))  # bộ mới chưa đủ: để trong thư mục chờ, web giữ bộ cũ
+    if stage != a.cache and not waiting:  # bộ mới đã đủ: thay bộ cũ
+        for f in glob.glob(os.path.join(a.cache, '*.mp3')):
+            os.remove(f)
+        for f in glob.glob(os.path.join(stage, '*.mp3')):
+            shutil.move(f, os.path.join(a.cache, os.path.basename(f)))
+        shutil.rmtree(stage)
+        stage, rp = a.cache, os.path.join(a.cache, 'report.json')
+    if a.github_output:  # switched: web dùng được bộ vừa gộp → deploy; more: còn thiếu mà lần này có thêm tệp → workflow tự chạy tiếp
+        with open(a.github_output, 'a') as fh:
+            fh.write(f"switched={'false' if waiting else 'true'}\nmore={'true' if added and len(have) < len(want) else 'false'}\n")
+    with open(os.path.join(stage, 'manifest.json'), 'w', encoding='utf-8') as fh:
         json.dump({'voice': VOICE, 'style': STYLE, 'keys': keys}, fh)
     with open(rp, 'w', encoding='utf-8') as fh:
         json.dump({'style': STYLE, 'items': items}, fh, ensure_ascii=False)
     sims = [r['sim'] for r in items if 'sim' in r]
-    lines = [f'## Giọng đọc {STYLE}', '',
+    lines = [f'## Giọng đọc {STYLE}', ''] + ([
+        f'**Đang sinh dở bộ giọng mới: {len(keys)} / {len(want)} câu ({len(keys) / max(1, len(want)):.1%}).** Web vẫn dùng bộ cũ; đủ {PROMOTE:.1%} thì tự thay.', ''] if waiting else []) + [
              f'- Dùng được: **{len(keys)} / {len(want)}** câu' + (f' (bỏ {len(wrong_num)} câu đọc sai số — app đọc các lời đó bằng giọng trình duyệt)' if wrong_num else ''),
              f'- Đạt khâu chặn lỗi: **{len(items) - len(flagged)} / {len(items)}** ({(len(items) - len(flagged)) / max(1, len(items)):.1%})',
              f'- Độ giống giọng mẫu trung bình: {sum(sims) / max(1, len(sims)):.3f}', '']
@@ -586,7 +617,7 @@ def cmd_merge(a):
             esc = lambda s: str(s).replace('|', '\\|')[:140]
             lines.append(f"| `{r['key']}.mp3` | {esc(r['text'])} | {esc(r.get('heard', r.get('error', '')))} | {r.get('err', '—')}{'' if usable(r) else ' · SAI SỐ, không dùng'} | {r.get('sim', '—')} |")
     summary = '\n'.join(lines) + '\n'
-    with open(os.path.join(a.cache, 'report.md'), 'w', encoding='utf-8') as fh:
+    with open(os.path.join(stage, 'report.md'), 'w', encoding='utf-8') as fh:
         fh.write(summary)
     if a.summary:
         with open(a.summary, 'a', encoding='utf-8') as fh:
@@ -607,6 +638,7 @@ def main():
     r.add_argument('--deadline', type=float, default=0, help='phút; quá thì dừng an toàn (giới hạn 6 giờ của Actions)')
     g = sub.add_parser('merge')
     g.add_argument('--cache', required=True); g.add_argument('--texts'); g.add_argument('--parts', required=True); g.add_argument('--summary')
+    g.add_argument('--github-output')
     a = ap.parse_args()
     {'plan': cmd_plan, 'run': cmd_run, 'merge': cmd_merge}[a.cmd](a)
 
