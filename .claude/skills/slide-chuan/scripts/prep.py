@@ -81,7 +81,7 @@ def problems(pr):
     src = [s for s in pr.get("sources") or [] if str(s.get("title") or "").strip()]
     if not src: out.append("sources: chưa có nguồn nào (tài liệu gốc, giáo trình, văn bản luật, nguồn số liệu)")
     for i, s in enumerate(src):
-        if s.get("legal") and s.get("status") not in STATUS: out.append(f"sources[{i}] \"{s['title'][:40]}\": văn bản luật cần status ({' / '.join(STATUS)})")
+        if s.get("legal") and not any(str(s.get("status") or "").strip().startswith(x) for x in STATUS): out.append(f"sources[{i}] \"{s['title'][:40]}\": văn bản luật cần status ({' / '.join(STATUS)})")
     wd = pr.get("world") or {}
     if pr.get("kind") in ("report", "lecture") and (len(wd.get("objects") or []) < 8 or not str(wd.get("main") or "").strip() or len(wd.get("minor") or []) < 2 or not str(wd.get("kit") or "").strip()):
         out.append("world: bước 0 thế giới hình ảnh chưa đủ — ≥ 8 vật thấy tận mắt (objects), 1 vật chủ đạo (main), 2 vật phụ (minor), world chọn (kit) — xem references/the-gioi-hinh-anh.md")
@@ -102,8 +102,8 @@ def problems(pr):
     if len(plan) < 3: out.append("plan: chưa có kế hoạch slide (mỗi slide: question, title = câu kết luận, type)")
     for q in plan:
         t = str(q.get("title") or "")
-        if t.strip().endswith("?") and q.get("type") not in ("agenda", "quiz", "section", "cover", "end"): out.append(f"plan slide {q.get('slide')}: tiêu đề là câu hỏi — viết thành câu kết luận")
-    if pr.get("kind") == "lecture" and not any(q.get("type") == "quiz" for q in plan): out.append("plan: bài giảng cần ít nhất 1 cặp quiz (hỏi → đáp án)")
+        if t.strip().endswith("?") and q.get("type") not in ("agenda", "quiz", "quizgo", "bigq", "picks", "section", "cover", "end"): out.append(f"plan slide {q.get('slide')}: tiêu đề là câu hỏi — viết thành câu kết luận")
+    if pr.get("kind") == "lecture" and not any(q.get("type") in ("quiz", "quizgo") for q in plan): out.append("plan: bài giảng cần ít nhất 1 cặp quiz (hỏi → đáp án)")
     return out
 
 

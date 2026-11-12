@@ -9,6 +9,11 @@ Nguyên tắc: **AI chỉ viết nội dung (deck.json); bố cục, màu, font,
 
 Câu hỏi gốc của mỗi slide: **người nghe nhìn 10 giây thì hiểu được điều gì?** Slide không phải bản tóm tắt tài liệu — tài liệu đầy đủ để ở `notes`.
 
+## Nguyên tắc trước quy trình (đọc đầu tiên)
+- **Mục tiêu là deck người xem thấy đẹp và hiểu được; quy trình chỉ là công cụ.** Khi một quy tắc, danh sách type hay kế hoạch đã duyệt xung đột với mục tiêu, giữ mục tiêu, sửa kế hoạch và nói lý do trong báo cáo — không giữ nguyên kế hoạch rồi giao deck sơ sài.
+- **Đừng tin một tính năng chỉ vì SKILL.md nhắc tên nó.** Tầng hình ảnh (mặc định) KHÔNG vẽ: `chart` kind `gantt` / `waterfall` / `progress` / `donut` / `slope` (ra thanh ngang), `art`, `meta.style`, `meta.kit` (world), `layout: poster`, `photo` ngoài `cover` và các type ảnh. `dung.js` in `⚠` / `ℹ` cho từng mục — xử lý trước khi giao.
+- **Hình ở tầng hình ảnh = cảnh + hình dán + ảnh thật.** Bài giảng 15 phút nên có 4–8 cảnh, chọn theo nội dung: điều luật cụ thể → `book` (rồi `bigq`) và `lawquote` · so mức / ngưỡng / thời hạn → `tiles`, `strip` · tình huống → `cases`, `chain` · kiểm tra → `quizgo` (không có `whyNot`: đưa lý do từng phương án vào `notes`) · chốt ý → `recap` · hỏi đáp → `toc`. Bìa, `statement`, `section`, `end` nhận hình dán qua `emoji` / `emoji2` (tên trong `hinh/emoji.json`; chỉnh chỗ bằng `emojiPos: {s,l,t,r}`).
+
 ## Đầu ra là file PowerPoint — chọn cách dựng trước khi làm
 
 Cùng một `deck.json` (đủ 65 type), hai cách dựng, **đều ra file `.pptx` mở và sửa được trong PowerPoint**. Skill không còn xuất bản HTML hay PDF. **Hỏi người dùng nếu chưa rõ; không rõ thì dựng tầng hình ảnh và nói cách đổi.**
@@ -28,7 +33,7 @@ Lệnh: `node hinh/dung.js <deck.json> [out.pptx] [--mau=son|luc|lam|nau] [--chu
 - **Tự kiểm bắt buộc**: dựng với `--soat` rồi xử lý từng dòng in ra — `⚠ … tràn` → **rút chữ hoặc tách slide trong `deck.json`**, không thu cỡ chữ; `⚠ slide N: bản PPTX lệch bản HTML` → mở tờ soát tìm khối lệch; `⚠ font … không có ký tự` → đổi ký tự; `ℹ … dùng mẫu chung` → type gõ sai. Sau đó **mở từng tờ `<tên>_lop/soat-*.jpg`** (trái: bản thiết kế · phải: file PPTX dựng lại qua LibreOffice) xem bằng mắt trước khi gửi. Bảng đầy đủ: `references/canh.md` mục 6. Mọi quy tắc nội dung ở Quy trình bên dưới (Bước 0 gói chuẩn bị, nguồn luật, ảnh có giấy phép, ghi chú thuyết trình) áp dụng y nguyên cho cả hai tầng.
 - **Nói với người dùng khi giao file tầng hình ảnh** (bộ dựng không mở được PowerPoint nên ba điều này chỉ kiểm được cấu trúc): (1) mở bằng PowerPoint 2019 / Microsoft 365 — bản cũ, LibreOffice, Google Slides không chạy Morph và không đọc font nhúng; (2) file tải về phải bấm **Enable Editing** rồi mới xem phông; (3) lần đầu, nhờ họ báo lại phông, Morph, hiệu ứng có chạy đúng không. Phông vẫn sai trên máy họ → dựng lại bằng tầng lưới Office.
 - **Viết cho tầng hình ảnh**: tiêu đề ≤ 54 ký tự giữ cỡ chữ lớn nhất (dài hơn tự hạ một nấc); đánh dấu `[cụm nhấn]` đúng **một** cụm mỗi tiêu đề; slide số liệu để một con số làm chủ (`hero`, `bignum`, `tiles`, `chart` có `insight`); mở phần bằng `section`, bước ngoặt bằng `headline` / `photo` (tối đa 1–2 lần mỗi deck) để deck có nhịp tối – sáng – đỏ; đừng dùng ký hiệu lạ (↔ ⇒ ➜) trong chữ — viết bằng lời.
-- Cần Playwright có Chromium (`PW_CHROMIUM=<đường dẫn chromium>` nếu không tự tìm thấy). Không có thì không dựng được tầng này: dùng tầng lưới Office.
+- Cần Playwright có Chromium (`PW_CHROMIUM=<FILE chạy được, ví dụ /opt/pw-browsers/chromium>`; không đặt thì tự dò, đặt sai thì cảnh báo rồi tự dò). Không có thì không dựng được tầng này: dùng tầng lưới Office.
 - Muốn có **cả hai**: dựng tầng hình ảnh để thuyết trình, dựng thêm `engine/build.js` cho bản nộp theo mẫu — cùng một `deck.json` (các type cảnh chỉ có ở tầng hình ảnh; engine sẽ báo type lạ).
 
 ## Quy trình (theo đúng thứ tự)
@@ -284,7 +289,7 @@ Lời giải trên màn hình phải đi đủ thứ tự này — engine gợi 
 4. **Hệ quả**: Toà xử lý thế nào; điểm còn tranh luận ghi "quan điểm" ở `note`.
 - `quiz`: phương án đúng không được chứa sẵn thuật ngữ của lời giải, không dài hơn hẳn phương án khác (engine cảnh báo cả hai).
 - Trạng thái trung tính: `ok: "na"` (bignum `conds`, `checklist`) = "không áp dụng / khác loại" — xám, dấu gạch. Đỏ (`no`, `tone: "bad"`) chỉ cho điều tiêu cực thật; nhánh `tree` chỉ là một hệ quả khác thì bỏ `tone` (mũi tên trung tính), đừng gắn `good` cho nhánh có chữ "vô hiệu".
-- **Slide không ghi nguồn** (không dòng "Nguồn: …", không trường `source`, không slide tài liệu): danh mục nguồn nằm trong bản Word đi kèm. Căn cứ pháp lý là NỘI DUNG lập luận, không phải ghi nguồn — vẫn viết "k2 Điều 129" trong câu / `src` khi nó là lý do của kết luận. Ghi `source` → engine cảnh báo đã bỏ.
+- **Slide không ghi nguồn** (không dòng "Nguồn: …", không trường `source`, không slide tài liệu): danh mục nguồn nằm trong bản Word đi kèm. **Ngoại lệ:** cảnh `lawquote`, `tiles`, `cases`, `chain` có trường `source` và tầng hình ảnh vẽ nó thành dòng chú thích cuối slide — dùng cho căn cứ pháp lý của chính slide đó (số hiệu văn bản, điều khoản, tình trạng hiệu lực). Căn cứ pháp lý là NỘI DUNG lập luận, không phải ghi nguồn — vẫn viết "k2 Điều 129" trong câu / `src` khi nó là lý do của kết luận. Ghi `source` → engine cảnh báo đã bỏ.
 - **Đối chiếu nguyên văn trước khi dựng**: mọi điều luật trên slide phải mở văn bản gốc kiểm lại (ví dụ thật: mốc thời hiệu Điều 128 tính từ ngày xác lập giao dịch — điểm d k1 Điều 132 BLDS 2015 — không phải "từ khi biết"). Ghi kết quả đối chiếu vào `prep.json` → `sources[].checked`.
 
 ## Bài học từ phản biện thiết kế (2 agent, 11/2026)
