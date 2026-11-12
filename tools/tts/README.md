@@ -16,7 +16,17 @@ App đọc lời theo 2 lớp (`apps/web/src/lib/fx/tts.svelte.ts`):
 | Hậu kỳ | [VoiceFixer](https://github.com/haoheliu/voicefixer) (MIT) → EQ cố định `voice/eq.json` → [pedalboard](https://github.com/spotify/pedalboard) | phục hồi + mở dải tần → âm sắc như bản v5b đã duyệt → ấm/dày (low shelf 160 Hz, bớt đục 350 Hz, nén nhẹ) → −16 LUFS, đỉnh ≤ −1 dBFS |
 
 Đổi bất kỳ tham số giọng nào (đầu `clone.py`) → đổi `STYLE` để lần chạy sau sinh lại toàn bộ.
-Test phần thuần: `python3 -m unittest tools/tts/test_clone.py tools/tts/test_vi_norm.py`.
+Test phần thuần: `python3 -m unittest tools/tts/test_clone.py tools/tts/test_vi_norm.py tools/tts/test_ab.py`.
+
+## Nghe thử trước khi đổi giọng (`ab.py`)
+
+Đổi tham số là phải sinh lại ~13 800 câu, nên nghe thử trước: `ab.py` sinh **12 câu thật của app × các cấu hình trong `CONFIGS`** (cột đầu luôn là bản đang chạy), rồi viết một trang `index.html` tự chứa. Trang ẩn tên cấu hình và xáo thứ tự từng câu (nghe mù); chọn bản hay nhất ở mỗi câu rồi bấm "Xem kết quả" để thấy số phiếu kèm số đo của máy (lỗi chữ, độ giống giọng, độ lên xuống cao độ, tốc độ).
+
+```bash
+python tools/tts/ab.py --onnx-dir models/vieneu/onnx_update --out /tmp/ab     # ~40 phút trên máy 4 nhân; chạy lại thì làm tiếp phần thiếu
+```
+
+Script chỉ ghi đè tham số lúc chạy, không đụng cache hay manifest. Máy không nghe được hay dở: số đo chỉ để loại bản đọc sai, quyết định là của người nghe. Không commit mp3 hay trang kết quả vào repo.
 
 ## Chạy trên GitHub (cách dùng hằng ngày)
 

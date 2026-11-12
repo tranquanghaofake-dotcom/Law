@@ -278,6 +278,7 @@ class Engine:
         self.chain = Pedalboard([HighpassFilter(70), LowShelfFilter(160, 2.0, 0.7), PeakFilter(350, -1.0, 1.0), PeakFilter(3200, 0.0, 0.9),
                                  HighShelfFilter(8000, -0.5, 0.7), Compressor(-20, 2.0, 15, 150), Gain(1.5), Limiter(-1.0)])
         self.meter = pyloudnorm.Meter(OUT_SR, block_size=0.2)
+        self.restore = True  # ab.py tắt cho giọng không phải v5b: VoiceFixer + voice/eq.json là của riêng giọng này
 
     def synth(self, spoken: str):
         return self.tts.infer(spoken, voice=self.voice, temperature=TEMPERATURE, max_chars=MAX_CHARS, apply_watermark=False)
@@ -338,11 +339,12 @@ class Engine:
     def post(self, audio):
         np, librosa = self.np, self.librosa
         x = librosa.resample(np.asarray(audio, dtype=np.float32), orig_sr=self.tts.sample_rate, target_sr=OUT_SR)
-        x = np.asarray(self.vf.restore_inmem(x, cuda=False, mode=0), dtype=np.float32).reshape(-1)
-        n = len(x)
-        spec = np.fft.rfft(x)
-        spec *= 10 ** (eq_gains(*self.eq, np.fft.rfftfreq(n, 1 / OUT_SR) + 1e-3) / 20)  # EQ pha 0, không trễ
-        x = np.fft.irfft(spec, n).astype(np.float32)
+        if self.restore:
+            x = np.asarray(self.vf.restore_inmem(x, cuda=False, mode=0), dtype=np.float32).reshape(-1)
+            n = len(x)
+            spec = np.fft.rfft(x)
+            spec *= 10 ** (eq_gains(*self.eq, np.fft.rfftfreq(n, 1 / OUT_SR) + 1e-3) / 20)  # EQ pha 0, không trễ
+            x = np.fft.irfft(spec, n).astype(np.float32)
         x = self.gain_to(x, PRE_LUFS)
         y = self.chain(x[None], OUT_SR)[0]
         y = 0.97 * y + 0.03 * np.tanh(2 * y) / np.tanh(2)  # bão hoà rất nhẹ cho giọng dày
