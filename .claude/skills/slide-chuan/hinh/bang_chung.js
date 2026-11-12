@@ -10,7 +10,7 @@
 const { wrap, plain, kit } = require("../stage/templates");
 const { esc, f } = kit;
 
-const TYPES = ["bcbia", "bcso", "bcchuong", "bccauhoi", "bctrich", "bcbang", "bcnhanh", "bctinhhuong", "bcdoiung", "bccot", "bcsolieu", "bcdieukien", "bcnhanqua", "bchoi", "bcchot", "bccamon", "bcthang"];
+const TYPES = ["bcbia", "bcso", "bcchuong", "bccauhoi", "bctrich", "bcbang", "bcnhanh", "bctinhhuong", "bcdoiung", "bccot", "bcsolieu", "bcdieukien", "bcnhanqua", "bchoi", "bcchot", "bccamon", "bcthang", "bcsan"];
 const tx = (s) => f(s).replace(/\n/g, "<br>");
 const pad2 = (n) => String(n).padStart(2, "0");
 const A = (a, at) => (MODE === "C" ? "" : `data-a="${a}" data-at="${at}"`);   // chế độ C: không hiệu ứng vào nào
@@ -186,6 +186,40 @@ S1.bcthang = (s) => { const T = tieuDe(s), R = (s.rows || []).slice(0, 5), ax = 
 
 // thẻ chương nhỏ ở góc: cùng tên Morph "chuong" với thẻ số to của slide mở chương → thẻ thu nhỏ vào góc, sang chương mới thì lớn lên thành thẻ mới
 const theNho = (s) => the("bc-chn", 1700, 98, 116, 186, 4, `<div class="bc-lb" data-t style="left:0;top:76px;width:116px;text-align:center;font-size:16px;letter-spacing:.06em">Chương</div><div class="bc-t1" data-t style="left:0;top:98px;width:116px;text-align:center;font-size:66px;line-height:1;color:#2a1c0a">${pad2(s.ch)}</div>`, 500, { m: "chuong", a: false, na: true, noem: true });
+
+// ───────────── bcsan: SÂN KHẤU — dàn nhân vật xuyên suốt ─────────────
+// Ý tưởng: không dựng từng slide tĩnh rồi gắn Morph; dựng MỘT dàn nhân vật cố định (mỗi nhân vật một "chìa" `ca-…` dùng chung mọi slide)
+// rồi mỗi slide chỉ khai báo VỊ TRÍ MỚI của chính họ → Morph tự là "nhân vật dời chỗ". Minh hoạ vẽ bằng SVG (không dùng hình dán có sẵn).
+//   cast: { A:{x,y,w,rot,cap,sub,deco}, B:{…}, tui:{x,y,w,rot,label}, yd:{x,y,w,rot,label} }   expl:{x,y,w,h,lb,q,n | cols[{h,t}]}
+//   caps:[{t,x,y,w,size}]   bia:{kicker,title,subtitle,stamp,author,authorSub,date}  (bìa: tờ lớn là cặp Morph `tieu`)
+const MAU = { A: { skin: "#f2c9a0", hair: "#2b2118", shirt: "#2f7d8c", bg: "#cfe6ea" }, B: { skin: "#e8b98f", hair: "#5a3a1e", shirt: "#d9822b", bg: "#f5dcc0" } };
+const nguoi = (k, sz, deco) => { const c = MAU[k] || MAU.A;
+  const hair = k === "B" ? `<path d="M58 90 C50 44 92 30 124 38 C150 46 148 76 144 92 C138 70 120 60 100 60 C78 60 64 72 58 90Z" fill="${c.hair}"/>` : `<path d="M60 84 C56 40 98 26 128 40 C146 50 146 70 142 84 C134 62 112 56 96 58 C80 58 66 66 60 84Z" fill="${c.hair}"/>`;
+  const glasses = k === "B" ? `<g fill="none" stroke="#2b2118" stroke-width="3"><circle cx="86" cy="88" r="11"/><circle cx="114" cy="88" r="11"/><path d="M97 88h6"/></g>` : "";
+  const badge = deco === "badge" ? `<g><rect x="118" y="150" width="34" height="34" rx="6" fill="#f6b93b" stroke="#8a5a00" stroke-width="3"/><path d="M135 156l4 9 10 1-8 6 3 10-9-6-9 6 3-10-8-6 10-1z" fill="#8a5a00"/></g>` : "";
+  return `<svg viewBox="0 0 200 200" width="${sz}" height="${sz}" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="200" fill="${c.bg}"/><path d="M24 200 C24 150 62 134 100 134 C138 134 176 150 176 200Z" fill="${c.shirt}"/><path d="M82 134 L100 162 L118 134Z" fill="#fff" opacity=".9"/><rect x="87" y="104" width="26" height="34" rx="12" fill="${c.skin}"/><ellipse cx="100" cy="86" rx="38" ry="42" fill="${c.skin}"/>${hair}<circle cx="86" cy="88" r="4" fill="#2b2118"/><circle cx="114" cy="88" r="4" fill="#2b2118"/>${glasses}<path d="M88 106 Q100 114 112 106" stroke="#8a4b3a" stroke-width="3" fill="none" stroke-linecap="round"/>${badge}</svg>`; };
+const polaroid = (k, c) => { const w = c.w || 240, h = Math.round(w * 1.36), im = Math.round(w * 0.84), m = Math.round((w - im) / 2);
+  return giay(`ca-${k}`, c.x, c.y, w, h, c.rot || 0, `<div class="bc-pi" style="left:${m}px;top:${m + 6}px;width:${im}px;height:${im}px">${nguoi(k, im, c.deco)}</div><div class="bc-t1" data-t style="left:0;top:${m + im + 8}px;width:${w}px;text-align:center;font-size:${Math.round(w * 0.19)}px;color:#1b1713">${esc(c.cap || k)}</div><div class="bc-tx" data-t style="left:0;top:${m + im + 10 + Math.round(w * 0.22)}px;width:${w}px;text-align:center;font-size:${Math.round(w * 0.1)}px;color:#5a4d36;font-weight:600">${esc(c.sub || "")}</div>`, { m: `ca-${k}`, a: false, pad: 56 }); };
+const tui = (c) => { const w = c.w || 260, h = Math.round(w * 0.77);
+  return `<div class="bc-bag" data-l="ca-tui" data-pad="30" ${pairM("ca-tui")} style="left:${c.x}px;top:${c.y}px;width:${w}px;height:${h}px;rotate:${c.rot || 0}deg"><svg viewBox="0 0 260 200" width="${w}" height="${h}" xmlns="http://www.w3.org/2000/svg"><rect x="14" y="26" width="232" height="164" rx="14" fill="#eef3f0" fill-opacity=".6" stroke="#4a5a52" stroke-width="5"/><rect x="14" y="26" width="232" height="28" rx="14" fill="#c8261e"/><rect x="26" y="72" width="150" height="78" rx="6" fill="#2e8b57" stroke="#1d5d3a" stroke-width="4" transform="rotate(-6 100 110)"/><rect x="48" y="80" width="150" height="78" rx="6" fill="#3aa56b" stroke="#1d5d3a" stroke-width="4" transform="rotate(3 120 120)"/><circle cx="122" cy="118" r="22" fill="#d9f2e2" stroke="#1d5d3a" stroke-width="4"/><path d="M122 104v28M114 111c0-6 16-6 16 0s-16 8-16 14 16 6 16 0" fill="none" stroke="#1d5d3a" stroke-width="4" stroke-linecap="round"/><rect x="150" y="62" width="26" height="100" fill="#f6eedb" stroke="#5a4d36" stroke-width="3" transform="rotate(3 163 112)"/><rect x="62" y="150" width="136" height="34" rx="4" fill="#fff" stroke="#8a9a92" stroke-width="2"/></svg><div class="bc-t1" data-t style="left:0;top:${Math.round(h * 0.755)}px;width:${w}px;text-align:center;font-size:${Math.round(w * 0.125)}px;line-height:1;color:#1b1713">${esc(c.label || "")}</div></div>`; };
+const den = (c) => { const w = c.w || 160;
+  return `<div class="bc-den" data-l="ca-yd" data-pad="26" ${pairM("ca-yd")} style="left:${c.x}px;top:${c.y}px;width:${w}px;height:${Math.round(w * 1.22)}px;rotate:${c.rot || 0}deg"><svg viewBox="0 0 160 140" width="${w}" height="${Math.round(w * 0.875)}" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="104" width="100" height="22" rx="6" fill="#2a2a2a"/><path d="M44 104 C44 58 66 34 80 34 C94 34 116 58 116 104Z" fill="#d3281f" stroke="#7d130d" stroke-width="5"/><path d="M58 98 C58 70 68 54 78 46" stroke="#ffb3a8" stroke-width="7" fill="none" stroke-linecap="round" opacity=".85"/><g stroke="#ffcf5a" stroke-width="7" stroke-linecap="round"><line x1="80" y1="8" x2="80" y2="22"/><line x1="26" y1="30" x2="36" y2="40"/><line x1="134" y1="30" x2="124" y2="40"/><line x1="12" y1="68" x2="26" y2="72"/><line x1="148" y1="68" x2="134" y2="72"/></g></svg><div class="bc-lb" data-t style="left:-30px;top:${Math.round(w * 0.9)}px;width:${w + 60}px;text-align:center;font-size:${Math.round(w * 0.15)}px;line-height:1.15;color:#f4ecd8;text-shadow:0 2px 6px rgba(0,0,0,.7);letter-spacing:.04em">${esc(c.label || "")}</div></div>`; };
+const giaiThich = (e) => { const inner = e.cols
+    ? e.cols.map((c, i) => `<div class="bc-t1" data-t style="left:${40 + i * 556}px;top:40px;width:520px;font-size:46px;color:#c8261e">${esc(c.h)}</div><div class="bc-tx" data-t style="left:${40 + i * 556}px;top:112px;width:520px;font-size:33px;font-weight:600;line-height:1.3">${tx(c.t)}</div>`).join("")
+    : `<div class="bc-lb" data-t style="left:44px;top:34px;width:1600px">${esc(e.lb || "")}</div>${e.q ? `<div class="bc-tx" data-t style="left:44px;top:84px;width:1610px;font-size:${e.qs || 42}px;line-height:1.32">${tx(e.q)}</div>` : ""}${e.n ? `<div class="bc-tx" data-t style="left:44px;top:${e.nt ?? (84 + Math.ceil(plain(e.q || "").length / Math.floor(1610 / ((e.qs || 42) * 0.5))) * Math.round((e.qs || 42) * 1.32) + 14)}px;width:1610px;font-size:31px;color:#5a4d36;font-weight:600;line-height:1.3">${tx(e.n)}</div>` : ""}`;
+  return giay("ca-expl", e.x, e.y, e.w, e.h, e.rot ?? -0.3, inner, { m: "ca-expl", a: false, dx: e.dx ?? (e.w / 2 - 150) }); };
+S1.bcsan = (s) => { const C = s.cast || {}, pins = {}, parts = [];
+  let head;
+  if (s.bia) { const b = s.bia, main = giay("bc1-chinh", 110, 170, 1020, 640, -1.6, `<div class="bc-lb" data-t style="left:60px;top:54px">${esc(b.kicker || "")}</div><div class="bc-t1" data-t style="left:60px;top:112px;width:900px;font-size:158px">${tx(b.title || "")}</div>${b.subtitle ? `<div class="bc-tx" data-t style="left:60px;top:430px;width:700px;font-size:35px">${tx(b.subtitle)}</div>` : ""}`, { dx: 380, m: "tieu", a: false });
+    head = main.html + stp("bc1-dau", "left:830px;top:640px", 7, b.stamp || "Phân biệt", 0) + the("bc1-the", 120, 850, 560, 190, -2.5, `<div class="bc-t1" data-t style="left:70px;top:80px;font-size:50px;color:#2a1c0a">${esc(b.author || "")}</div><div class="bc-tx" data-t style="left:70px;top:138px;font-size:27px;color:#4a3519">${esc([b.authorSub, b.date].filter(Boolean).join(" · "))}</div>`, 0); }
+  else head = tieuDe(s).html;
+  ["A", "B"].forEach((k) => { if (C[k]) { pins[k] = polaroid(k, C[k]); parts.push(pins[k].html); } });
+  const rope = pins.A && pins.B ? day("day", pins.A, pins.B, s.sag ?? 90, 0) : "";
+  if (C.tui) parts.push(tui(C.tui)); if (C.yd) parts.push(den(C.yd));
+  if (s.expl) parts.push(giaiThich(s.expl).html);
+  (s.caps || []).forEach((c) => parts.push(chuNho(c.t, c.x, c.y, c.w || 500, c.size || 28)));
+  return trang(`${rope}${head}${parts.join("")}`); };
+
 function render(s, deck, ctx, { i, n }) {
   SL = i; MODE = (deck.meta && deck.meta.bc) || "C"; kit.reset();
   const o = S1[s.type](s, deck, ctx);
@@ -213,6 +247,9 @@ const css = `
 .bc-stp.bc-bg { background: #f6eedb; box-shadow: 8px 12px 16px rgba(14,6,0,.45); opacity: 1; }
 .bc-stp.bc-g { color: #1f6b44; border-color: #1f6b44; }
 .bc-dim { opacity: .9; }
+.bc-pi { position: absolute; overflow: hidden; box-shadow: inset 0 0 0 2px rgba(0,0,0,.14); }
+.bc-bag, .bc-den { position: absolute; } .bc-bag > *, .bc-den > * { position: absolute; }
+.bc-bag { filter: drop-shadow(8px 12px 10px rgba(14,6,0,.45)); } .bc-den { filter: drop-shadow(6px 10px 8px rgba(14,6,0,.45)); }
 .bc-bar { position: absolute; border-radius: 4px; box-shadow: 3px 4px 0 rgba(14,6,0,.28); }
 .bc-bl { position: absolute; font: 700 27px/36px var(--fb); color: #1b1713; white-space: nowrap; } .bc-bl.in { color: #f4ecd8; overflow: hidden; } .bc-bl.sm { font-size: 23px; }
 .bc-gl { position: absolute; width: 2px; background: rgba(27,23,19,.2); }

@@ -231,3 +231,11 @@ Lỗi đã gặp: Morph chỉ là "vân tay bay qua bay về". Nguyên nhân: Po
 - **`"B"`** (mặc định) — **nhân vật xuyên suốt** bằng Morph (`meta.hinh.chuyen: "morph"`, 1200 ms): ba tờ điều luật ở bìa lớn lên thành ba thẻ câu hỏi (`q1`–`q3`, kèm đinh `q1-pin`…); tờ bìa / chương ↔ tờ tiêu đề (`tieu`); thẻ số chương to ↔ thẻ nhỏ ở góc (`chuong`); thẻ "ranh giới" từ slide so sánh sang slide thang (`ranh`); thẻ đáp án giữ chỗ (`pa1`–`pa4`, `de`). Đích Morph không có hiệu ứng vào.
 - Đinh và con dấu là **lớp ảnh riêng** (không nằm trong ảnh tờ giấy) để có hiệu ứng riêng; đinh được tính vị trí theo góc nghiêng của giấy, nên dây đỏ cũng bám đúng đinh.
 - So sánh hai chế độ: dựng hai bản từ cùng `deck.json` chỉ khác `meta.bc` và `meta.hinh.chuyen`.
+
+### Dàn nhân vật xuyên suốt — `bcsan` (cách dựng deck Morph đúng từ đầu)
+Bài học (12/11/2026): dựng từng slide tĩnh rồi gắn Morph sau thì Morph chỉ nối được vài vật ngẫu nhiên và bị chê "đơn giản, xấu, rối, gượng ép". **Dựng dàn trước, bố cục sau.**
+1. Chọn một câu chuyện và 3–5 nhân vật cố định (hình sự: A người cho vay, B người vay, túi tiền, đèn "ý định chiếm đoạt", tờ giải thích). Mỗi nhân vật có một "chìa" (`ca-A`, `ca-B`, `ca-tui`, `ca-yd`, `ca-expl`) dùng chung ở mọi slide.
+2. Mỗi slide khai báo VỊ TRÍ MỚI của chính họ (`cast`, `expl`); nhân vật nào vắng thì mờ đi. Morph là "nhân vật dời chỗ" — luôn có nghĩa, không có cặp ghép vật khác nghĩa.
+3. Nghĩa nằm ở vị trí: trục A — B là thời gian (trái = trước khi nhận tiền, phải = sau); đèn "ý định" trượt qua túi tiền từ trái sang phải = khác biệt giữa Điều 174 và 175.
+4. Không hiệu ứng vào (chế độ `"C"`). Minh hoạ nhân vật vẽ bằng SVG trong code (`nguoi`, `tui`, `den`), không dùng hình dán có sẵn.
+Trường: `cast{A,B:{x,y,w,rot,cap,sub,deco:"badge"}, tui:{x,y,w,rot,label}, yd:{x,y,w,rot,label}}` · `expl{x,y,w,h, lb,q,n | cols[{h,t}]}` · `caps[{t,x,y,w,size}]` · `bia{…}` (bìa) · `ch` · `sag`.

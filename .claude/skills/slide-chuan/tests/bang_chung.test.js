@@ -46,3 +46,10 @@ test("chế độ C (mặc định): không hiệu ứng vào nào, còn các c�
   assert.ok(hs[2].includes('data-m="ranh"'));
   assert.equal(bc.render({ type: "bcchuong", num: 1, title: "T" }, d, {}, { i: 0, n: 2 })[0].dur, 900);
 });
+test("bcsan: dàn nhân vật dùng chung tên Morph ở mọi slide, vị trí do từng slide khai báo", () => {
+  const d = { meta: {}, slides: [] }, cast = (x) => ({ A: { x: 120, y: 330 }, B: { x: 1560, y: 330 }, tui: { x, y: 470, label: "300 triệu" }, yd: { x: 880, y: 285, label: "Ý định" } });
+  const a = bc.render({ type: "bcsan", title: "T", ch: 1, cast: cast(830) }, d, {}, { i: 2, n: 6 })[0].html, b = bc.render({ type: "bcsan", title: "T", ch: 1, cast: cast(1060) }, d, {}, { i: 3, n: 6 })[0].html;
+  for (const k of ["ca-A", "ca-B", "ca-tui", "ca-yd"]) assert.ok(a.includes(`data-m="${k}"`) && b.includes(`data-m="${k}"`), k);
+  assert.ok(a.includes("left:830px") && b.includes("left:1060px"), "mỗi slide một vị trí túi tiền");
+  assert.ok(!/data-a=/.test(a) && !/data-a=/.test(b), "chế độ gọn: không hiệu ứng vào");
+});
