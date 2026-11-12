@@ -11,6 +11,7 @@
 const fs = require("fs"), path = require("path"), { pathToFileURL } = require("url");
 const { render, plain, TYPES } = require("../stage/templates");
 const { doiMau } = require("./bang_mau");
+const { kiemDeck } = require("./kiem");
 let canh = { TYPES: [], render: null, css: "", script: "" };
 const bc = require("./bang_chung");
 try { canh = require("./canh"); } catch (e) { if (e.code !== "MODULE_NOT_FOUND" || !/canh/.test(e.message)) throw e; }
@@ -80,7 +81,7 @@ hinhKhiSanSang(() => document.querySelectorAll("section.s[data-tu]").forEach((S)
 }
 
 // tự kiểm trong trang: chữ tràn khỏi slide, khối tràn đáy — báo để sửa deck.json (cắt chữ, tách slide), không âm thầm cắt
-const kiemTran = (page) => page.evaluate(() => [...document.querySelectorAll("section.s[data-tu]")].map((s) => {
+const kiemTranCu = (page) => page.evaluate(() => [...document.querySelectorAll("section.s[data-tu]")].map((s) => {
   const R = s.getBoundingClientRect(); let worst = 0, who = "";
   for (const el of s.querySelectorAll(".body, .h, .note, .an, .cl ul, .cover .mid")) {
     const r = el.getBoundingClientRect(); let inner = 0;   // nội dung bên trong: đo hộp các khối con (không dùng scrollHeight — chữ Anton cỡ lớn có vùng nét cao hơn dòng)
@@ -90,6 +91,8 @@ const kiemTran = (page) => page.evaluate(() => [...document.querySelectorAll("se
   }
   return worst > 6 ? `slide "${(s.dataset.title || s.dataset.type || "").slice(0, 50)}" (${s.dataset.type}) tràn ${Math.round(worst)} px ở .${who.split(" ")[0]} — rút chữ hoặc tách slide trong deck.json` : null;
 }).filter(Boolean));
+// lawquote: nét bút vàng chỉ phủ được cụm nhấn nằm trọn một dòng
+const kiemTran = async (page) => [...(await kiemTranCu(page)), ...(await page.evaluate(() => [...document.querySelectorAll(".paper .pq b")].filter((b) => b.getClientRects().length > 1).map((b) => `slide "${((b.closest("section.s") || {}).dataset || {}).title || "lawquote"}" (lawquote): cụm nhấn [ ] bị xuống dòng — nét bút chỉ phủ dòng đầu; rút ngắn cụm hoặc đặt ở cuối câu`)))];
 
 async function dung({ deckPath, outPath, mau, chuyen, soat = false, nhungFont = true, htmlOnly = false }) {
   deckPath = path.resolve(deckPath); const deckDir = path.dirname(deckPath), name = path.basename(deckPath, ".json");
@@ -100,6 +103,7 @@ async function dung({ deckPath, outPath, mau, chuyen, soat = false, nhungFont = 
   fs.rmSync(work, { recursive: true, force: true }); fs.mkdirSync(work, { recursive: true });
   const htmlPath = path.join(work, "deck.html"); fs.writeFileSync(htmlPath, r.html);
   console.log(`✓ ${deck.slides.length} slide trong deck.json → ${r.n} slide PowerPoint · bảng màu ${r.mau} · chuyển cảnh ${r.chuyen}`);
+  for (const m of kiemDeck(deck, { deckDir })) console.log(m);
   for (const l of require("./kiem_tang").kiemTang(deck)) console.log(l);
   if (r.generic.length) console.log(`ℹ ${r.generic.length} slide dùng mẫu chung vì type chưa có mẫu riêng: ${r.generic.join(", ")}. Có mẫu: ${[...TYPES, ...canh.TYPES].join(", ")}.`);
   for (const p of new Set(r.missing)) console.warn(`⚠ không thấy ảnh ${p} — dựng không ảnh`);

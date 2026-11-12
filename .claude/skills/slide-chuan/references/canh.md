@@ -188,3 +188,30 @@ Quy tắc khi viết cảnh mới trong `hinh/canh.js`:
 4. Một vật vừa có `data-m` vừa có `data-a` chỉ được khi slide trước **không** có vật cùng tên (bộ dựng cảnh báo trường hợp ngược lại).
 5. Đặt chỗ theo kích thước chữ (kính lúp, nét bút) phải làm trong `hinhKhiSanSang(...)` — lúc trang vừa tải, chữ còn ở font tạm.
 6. Thêm type vào `TYPES`, viết ví dụ vào `examples/`, chạy `node --test tests/hinh.test.js` và dựng `--soat`.
+
+## 8. Bộ hình riêng theo môn: "bảng bằng chứng" (hình sự) — `hinh/bang_chung.js`
+
+Vì sao có: hình dán Fluent Emoji và nền của bảng màu chỉ là chất liệu chung, không nói gì về môn học; người dùng đã chê đúng điểm đó (phiên 12/11/2026). Bộ này **vẽ mới bằng SVG/CSS** theo một ẩn dụ — bảng bần của kíp điều tra: giấy ghim đinh đỏ, dây đỏ nối các điều luật, thẻ tang vật có lỗ xỏ dây, con dấu, vân tay mờ. Chữ vẫn là hộp chữ sửa được; hình là lớp ảnh rời. Viết cho môn khác: sao chép file, đổi ẩn dụ (vd. dân sự: hợp đồng + dấu giáp lai; lao động: bảng chấm công), giữ nguyên cách gắn nhãn (`data-t`, `data-l`, `data-pad`, `data-a`).
+
+| type | Dùng cho | Trường chính (dùng lại trường của type thường tương ứng) |
+|---|---|---|
+| `bcbia` | Bìa | `kicker` `title` `subtitle` `stamp` `author` `authorSub` `date` `cites[{n,t}]` (≤ 3 điều luật nối dây đỏ) |
+| `bccauhoi` | Mục lục / 3 câu hỏi (bấm nhảy) | `kicker` `title` `items[{q,go}]` |
+| `bcchuong` | Mở chương | `num` `part` `title` `sub` (`partWord`) |
+| `bctrich` | Trích nguyên văn điều luật | `head` `quote` (`[cụm nhấn]`) `art` `artLabel` `stamp` `source` |
+| `bcso` | So hai điều / hai quy định | `left` `right` {`tag` `sub` `items[≤4]`} `focus` `mid{head,text}` |
+| `bcbang` | Bảng tra cứu | `cols[{label}]` `rows[≤5][3 ô]` `focus` `note` |
+| `bcnhanh` | Cây điều kiện | `root{q,src}` `branches[3]{when,head,text,tone}` `focus` `note` |
+| `bctinhhuong` | Tình huống giả định (4 thẻ) | `items[{text: "tình huống → kết luận"}]` `source` |
+| `bcdoiung` | Dấu hiệu ↔ tội danh | `pairs[≤5]{left,right,note}` `colL` `colR` `focus` `note` |
+| `bccot` | Cột ô đếm (mỗi ô một đơn vị) | `cols[≤3]{n,unit,label}` `legend` `source` |
+| `bcsolieu` | Một con số bước ngoặt | `num` `unit` `sub` `note` |
+| `bcdieukien` | Điều kiện cần (✓) + kết luận | `items[≤5]{head,src}` `verdict{text}` |
+| `bcnhanqua` | Tình huống → con dấu → hệ quả | `cause{tag,text}` `stamp{text,sub}` `results[3]{text,ref}` `source` |
+| `bchoi` | Trắc nghiệm: slide hỏi, rồi slide đáp án (`reveal: true`) | `title` `stem` `options[4]` `answer` `why` `whyNot[]` |
+| `bcchot` | Chốt ý, trả lời lại các câu hỏi đầu giờ | `chips[≤3]{n,text,go}` `basis` |
+| `bccamon` | Cảm ơn / hỏi đáp (không có thanh đầu) | `title` `message` `team[{name,role}]` `contact` |
+
+- Mọi kiểu `bc*` dùng chung **tờ tiêu đề** (kicker + title một dòng, cỡ chữ tự co theo độ dài) và **dải chú thích** ở đáy cho `note` / `source`.
+- Lề an toàn: nội dung trong vùng y 300–1040, x 110–1810. Tiêu đề ≤ ~54 ký tự (một dòng). Khối tự vẽ **không được máy đo tràn của `--soat` kiểm** — phải mở `soat-*.jpg` / `p-*.png` xem từng slide.
+- Màu chữ trên nền bần là kem; chữ trên giấy là mực. Chữ kem đặt trên dải giấy (`.bc-strip`) đã có luật riêng — lỗi cũ: chú thích biến mất.

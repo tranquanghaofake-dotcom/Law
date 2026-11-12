@@ -81,7 +81,9 @@ const SCHEMA = {
   closing: { photo: "s", photoAlt: "s", photoCredit: "s", photoSource: "s", photoStyle: { enum: ["tint", "natural", "bw", "duotone"] }, kicker: "s", title: "s!", answers: ["a", { q: "s!", a: "s!", tone: { enum: ["good", "bad", "muted"] } }], verdict: "s", lessons: ["a", { icon: "icon", head: "s", text: "s!" }], rec: { title: "s", items: ["a", "s!"] }, thanks: "s", art },
 };
 const KINDS = ["lecture", "case", "report"]; // loại bài (meta.kind) — quyết định khung slide, hình mặc định; ghi ở bước 0 (prep.json)
-const COMMON = ["type", "mode", "notes", "covers", "transition", "build", "motion", "takeaway", "pin", "activitySec", "basis", "scopeOk"]; // basis: [số slide] — hạn chế / nhận định dựa trên slide số liệu nào ở phần thực trạng // scopeOk: true — slide được phép nhắc nội dung ngoài phạm vi (meta.scopeOut), vd. bảng tổng đầu tiên; // activitySec: số giây lớp tự làm (exercise / quiz) — cộng vào thời lượng ước tính; // pin: câu / số chính trên tờ giấy ghim (chuỗi hoặc { text, by }) // takeaway: câu chốt của slide → dải "Ghi nhớ" ở đáy, cùng vị trí mọi slide // transition: fade | push | morph | none — riêng slide này // covers: các đề mục của tài liệu mà slide này trình bày (đối chiếu với meta.outline)
+// id, toc, trans, dur: trường của tầng hình ảnh (hinh/dung.js) — cho phép để cùng một deck.json dựng được ở cả hai tầng
+const HINH_ONLY = { book: "cover", bigq: "statement", picks: "agenda", lawquote: "quote", tiles: "chart", strip: "bignum", cases: "cards", chain: "tree", quizgo: "quiz", recap: "closing", toc: "agenda" };
+const COMMON = ["type", "id", "toc", "trans", "dur", "mode", "notes", "covers", "transition", "build", "motion", "takeaway", "pin", "activitySec", "basis", "scopeOk"]; // basis: [số slide] — hạn chế / nhận định dựa trên slide số liệu nào ở phần thực trạng // scopeOk: true — slide được phép nhắc nội dung ngoài phạm vi (meta.scopeOut), vd. bảng tổng đầu tiên; // activitySec: số giây lớp tự làm (exercise / quiz) — cộng vào thời lượng ước tính; // pin: câu / số chính trên tờ giấy ghim (chuỗi hoặc { text, by }) // takeaway: câu chốt của slide → dải "Ghi nhớ" ở đáy, cùng vị trí mọi slide // transition: fade | push | morph | none — riêng slide này // covers: các đề mục của tài liệu mà slide này trình bày (đối chiếu với meta.outline)
 // Số mục tối đa engine hiển thị; vượt thì bị cắt im lặng.
 const CAPS = {
   quiz: { options: 4, whyNot: 4 }, timeline: { items: 6 },
@@ -217,7 +219,7 @@ function validate(deck, themes) {
     if (!isObj(sl)) { E(n, "?", "slide", "phải là đối tượng { type: ..., ... }"); return; }
     const spec = SCHEMA[sl.type];
     if (sl.type === "refs") { E(n, "refs", "type", 'kiểu "refs" (slide tài liệu + mã QR) đã bỏ khỏi skill — nguồn ghi trong bản Word đi kèm, không ghi trên slide'); return; }
-    if (!spec) { E(n, sl.type == null ? "?" : sl.type, "type", sl.type == null ? `thiếu "type" (chọn: ${Object.keys(SCHEMA).join(", ")})` : `kiểu "${sl.type}" không tồn tại (chọn: ${Object.keys(SCHEMA).join(", ")})`); return; }
+    if (!spec) { E(n, sl.type == null ? "?" : sl.type, "type", sl.type == null ? `thiếu "type" (chọn: ${Object.keys(SCHEMA).join(", ")})` : (HINH_ONLY[sl.type] ? `kiểu "${sl.type}" chỉ có ở tầng hình ảnh (node hinh/dung.js), engine/build.js không dựng được — đổi sang "${HINH_ONLY[sl.type]}" (gần nghĩa nhất) hoặc dựng bằng hinh/dung.js` : `kiểu "${sl.type}" không tồn tại (chọn: ${Object.keys(SCHEMA).join(", ")})`)); return; }
     if (sl.mode != null && !["d", "l", "a"].includes(sl.mode)) E(n, sl.type, "mode", `"${sl.mode}" không hợp lệ (d = nền tối, l = nền sáng, a = nền màu nhấn)`);
     walk(sl, spec, "", (p, m) => E(n, sl.type, p, m), true);
     if (sl.source != null) warnings.push(`Slide ${n} (${sl.type}): trường "source" đã bỏ — slide không ghi nguồn (nguồn nằm trong bản Word đi kèm); xoá trường này`);
