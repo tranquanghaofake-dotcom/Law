@@ -1,6 +1,6 @@
 // Kiểm "bản đồ hỗ trợ" của tầng hình ảnh: nói TRƯỚC điều deck.json đòi mà tầng này không vẽ, thay vì lặng lẽ bỏ qua
 // (nguyên nhân gốc của deck "sơ sài": gantt ra vạch mảnh, art / style / world bị bỏ, deck toàn type thường không có hình).
-const CANH = ["book", "bigq", "picks", "lawquote", "tiles", "strip", "cases", "chain", "quizgo", "recap", "toc"];
+const CANH = [...require("./bang_chung").TYPES, "book", "bigq", "picks", "lawquote", "tiles", "strip", "cases", "chain", "quizgo", "recap", "toc"];
 const CHART_OK = ["bar", "column", "line", "step", "span"];
 const ANH_OK = ["cover", "photo", "split", "photostats", "frame", "headline", "lens", "collage", "beforeafter", "photostrip", "gallery", "mosaic", "panelrows"];
 const META_BO_QUA = ["style", "kit", "art", "motif", "frame", "paper", "native"];
