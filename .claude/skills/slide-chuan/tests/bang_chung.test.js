@@ -53,3 +53,9 @@ test("bcsan: dàn nhân vật dùng chung tên Morph ở mọi slide, vị trí 
   assert.ok(a.includes("left:830px") && b.includes("left:1060px"), "mỗi slide một vị trí túi tiền");
   assert.ok(!/data-a=/.test(a) && !/data-a=/.test(b), "chế độ gọn: không hiệu ứng vào");
 });
+test("bcsan: dây là một lớp thẳng có tên Morph; chữ đổi nội dung không ghép từng chữ", () => {
+  const d = { meta: {}, slides: [] }, h = bc.render({ type: "bcsan", title: "T", ch: 1, cast: { A: { x: 120, y: 330 }, B: { x: 1560, y: 330 } }, expl: { x: 110, y: 700, w: 1700, h: 290, lb: "l", q: "q" } }, d, {}, { i: 2, n: 6 })[0].html;
+  assert.ok(/data-l="ca-day"[^>]*data-m="ca-day"/.test(h) || /data-m="ca-day"/.test(h), "dây có tên Morph");
+  assert.ok(/data-m="ca-expl"[^>]*data-mt="0"/.test(h) && /data-m="tieu"[^>]*data-mt="0"/.test(h), "tờ tiêu đề và tờ giải thích không ghép chữ");
+  assert.ok(!/data-m="ca-A"[^>]*data-mt="0"/.test(h), "chữ nhãn A, B (không đổi) vẫn đi theo ảnh");
+});
