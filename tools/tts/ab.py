@@ -108,7 +108,7 @@ main{max-width:1100px;margin:0 auto;padding:24px 16px 80px}h1{font-size:1.6rem;m
 .chon{display:flex;gap:8px;align-items:center;cursor:pointer;min-height:32px}.so{color:var(--mo)}.thieu{color:var(--mo);margin:0}
 button{font:inherit;padding:10px 16px;border-radius:10px;border:1px solid var(--nhan);background:var(--nhan);color:#fff;cursor:pointer}button.phu{background:transparent;color:var(--nhan)}
 .nut{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0 16px}table{border-collapse:collapse;width:100%;font-size:.95rem}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--vien);vertical-align:top}
-td.so2,th.so2{text-align:right;white-space:nowrap}.cuon{overflow-x:auto}textarea{width:100%;min-height:150px;font:13px/1.4 ui-monospace,monospace;background:var(--giay);color:var(--chu);border:1px solid var(--vien);border-radius:8px;padding:8px}
+td.so2,th.so2{text-align:right;white-space:nowrap}td:first-child{min-width:190px}.cuon{overflow-x:auto}textarea{width:100%;min-height:150px;font:13px/1.4 ui-monospace,monospace;background:var(--giay);color:var(--chu);border:1px solid var(--vien);border-radius:8px;padding:8px}
 </style></head><body><main>
 <h1>Nghe thử giọng đọc</h1>
 <p class="dan">__N__ câu, mỗi câu __M__ bản. Tên cấu hình đang ẩn và thứ tự các bản xáo khác nhau ở từng câu để tai không bị dẫn trước.
