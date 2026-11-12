@@ -28,6 +28,8 @@ python tools/tts/ab.py --onnx-dir models/vieneu/onnx_update --out /tmp/ab     # 
 
 `--only a,b` giới hạn cấu hình (cả lúc sinh lẫn cột trên trang). `--extra them.json` thêm cấu hình ngoài `CONFIGS`; engine khác VieNeu thì sinh sẵn bản thô `<khoá câu>-<số>.wav` vào một thư mục và khai `{"id", "name", "note", "raw": "<thư mục>"}` — các bản đó đi qua đúng khâu chặn lỗi, chọn bản và hậu kỳ như giọng VieNeu (mặc định bỏ VoiceFixer + EQ của riêng v5b).
 
+`vox_raw.py` sinh bản thô như vậy bằng [VoxCPM2](https://github.com/OpenBMB/VoxCPM) (Apache-2.0, 2 tỉ tham số, có tiếng Việt) theo ba cách clone từ `voice/ref.wav`; cần môi trường Python riêng, ~4 giây máy cho mỗi giây âm thanh trên CPU 4 nhân.
+
 Script chỉ ghi đè tham số lúc chạy, không đụng cache hay manifest. Máy không nghe được hay dở: số đo chỉ để loại bản đọc sai, quyết định là của người nghe. Không commit mp3 hay trang kết quả vào repo.
 
 ## Chạy trên GitHub (cách dùng hằng ngày)
