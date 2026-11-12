@@ -57,6 +57,19 @@ class ChanLoi(unittest.TestCase):
         self.assertEqual(clone.tail_cut(clone.words('Chính xác'), clone.words('Chính xác.')), 2)  # không thừa: giữ nguyên
         self.assertEqual(clone.tail_cut(clone.words('Đáp án cùng loại lại chia sẻ'), ref), 5)  # sai thanh vẫn giữ, chỉ cắt phần thừa
 
+    def test_tieng_thua_dau_cau(self):
+        ref = clone.words('Khoản 1 Điều 19: công dân nước ngoài có đơn thì có thể được nhập quốc tịch.')
+        self.assertEqual(clone.head_extra(clone.words('Càng khoản 1 điều 19, công dân nước ngoài có đơn thì có thể được nhập quốc tịch.'), ref), 1)
+        self.assertEqual(clone.head_extra(clone.words('à ờ khoản 1 điều 19, công dân nước ngoài có đơn thì có thể được nhập quốc tịch.'), ref), 2)
+        self.assertEqual(clone.head_extra(clone.words('Khoản 1 điều 19, công dân nước ngoài có đơn thì có thể được nhập quốc tịch.'), ref), 0)
+        self.assertEqual(clone.head_extra(clone.words('Khoảng 1 điều 19, công dân nước ngoài có đơn thì có thể được nhập quốc tịch.'), ref), 0)  # nghe nhầm từ đầu ≠ thừa
+        self.assertEqual(clone.head_extra(clone.words('Hình xác.'), clone.words('Chính xác.')), 0)
+
+    def test_thua_dau_cau_thi_truot(self):
+        t = 'Hiến pháp là luật cơ bản của nhà nước.'
+        self.assertTrue(clone.passes({'err': 0, 'num': True, 'head': 0, 'sim': 0.9}, t))
+        self.assertFalse(clone.passes({'err': 1, 'num': True, 'head': 1, 'sim': 0.9}, t))
+
     def test_nguong_loi_theo_do_dai(self):
         self.assertEqual(clone.allowed_errors(5), 0)
         self.assertEqual(clone.allowed_errors(7), 1)
@@ -77,6 +90,45 @@ class ChanLoi(unittest.TestCase):
         self.assertTrue(clone.is_short('Chính xác.'))
         self.assertTrue(clone.is_short('Đáp án: Đúng.'))
         self.assertFalse(clone.is_short('Hiến pháp là luật cơ bản của nhà nước.'))
+
+    def test_dung_sinh_khi_du_ban_dat(self):
+        self.assertTrue(clone.enough(1, 1, short=False))       # câu thường: bản đầu đạt là dùng
+        self.assertFalse(clone.enough(3, 0, short=False))      # chưa bản nào đạt: sinh tiếp
+        self.assertFalse(clone.enough(1, 1, short=True))       # câu ngắn: cần 2 bản đạt để chọn
+        self.assertTrue(clone.enough(3, 2, short=True))
+
+    def test_doc_sai_so_thi_khong_vao_manifest(self):
+        self.assertTrue(clone.usable({'ok': True, 'num': True}))
+        self.assertTrue(clone.usable({'ok': False, 'err': 3, 'num': True}))   # sai chữ: vẫn dùng, ghi cờ để nghe lại
+        self.assertFalse(clone.usable({'ok': False, 'err': 1, 'num': False}))
+        self.assertTrue(clone.usable({}))                                      # tệp cũ không có báo cáo
+
+
+class CatKhuc(unittest.TestCase):
+    def test_cau_vua_thi_giu_nguyen(self):
+        self.assertEqual(clone.chunks('Hiến pháp là luật cơ bản.'), ['Hiến pháp là luật cơ bản.'])
+        self.assertEqual(clone.chunks('   '), [])
+
+    def test_cat_o_dau_cau_va_khong_mat_chu(self):
+        s = 'tòa án nơi bị đơn cư trú, làm việc; ' * 20
+        got = clone.chunks(s, 100)
+        self.assertGreater(len(got), 3)
+        self.assertTrue(all(len(c) <= 100 for c in got))
+        self.assertTrue(all(c[-1] in ',;' for c in got))
+        self.assertEqual(' '.join(got).split(), s.split())
+
+    def test_ve_khong_dau_cau_thi_cat_o_khoang_trang(self):
+        s = ' '.join(['chữ'] * 120)
+        got = clone.chunks(s, 100)
+        self.assertTrue(all(len(c) <= 100 for c in got))
+        self.assertEqual(' '.join(got).split(), s.split())
+
+
+class KieuSo(unittest.TestCase):
+    def test_chi_dung_bfloat16_khi_cpu_co_amx(self):
+        self.assertTrue(clone.cpu_bf16('flags : fpu avx2 avx512f amx_bf16 amx_tile'))
+        self.assertFalse(clone.cpu_bf16('flags : fpu avx2 avx512f avx512_bf16'))
+        self.assertFalse(clone.cpu_bf16('flags : fpu avx2'))
 
 
 class ChiaViec(unittest.TestCase):
@@ -107,11 +159,6 @@ class ChiaViec(unittest.TestCase):
 
 @unittest.skipUnless(importlib.util.find_spec('numpy') and importlib.util.find_spec('scipy'), 'cần numpy + scipy (chạy trong môi trường requirements-clone.txt)')
 class HauKy(unittest.TestCase):
-    def test_eq_noi_suy_va_giu_bien(self):
-        g = clone.eq_gains([100, 1000, 10000], [-4, 0, 2], [50, 100, 316.2, 1000, 20000])
-        self.assertAlmostEqual(g[0], -4); self.assertAlmostEqual(g[1], -4); self.assertAlmostEqual(g[2], -2, places=2)
-        self.assertAlmostEqual(g[3], 0); self.assertAlmostEqual(g[4], 2)
-
     def test_chan_dinh_khong_tang_am_luong(self):
         import numpy as np
         sr = 8000; x = (0.3 * np.sin(np.arange(sr) / 5)).astype(np.float32)

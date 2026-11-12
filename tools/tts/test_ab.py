@@ -31,11 +31,11 @@ class CauHinh(unittest.TestCase):
     def test_them_va_loc_giu_thu_tu(self):
         extra = [{'id': 'may-khac', 'name': 'Máy khác', 'note': '', 'raw': '/x'}]
         self.assertEqual([c['id'] for c in all_configs(extra)], [c['id'] for c in CONFIGS] + ['may-khac'])
-        self.assertEqual([c['id'] for c in all_configs(extra, {'may-khac', 'tu-nhien'})], ['tu-nhien', 'may-khac'])
+        self.assertEqual([c['id'] for c in all_configs(extra, {'may-khac', 'am-sac'})], ['am-sac', 'may-khac'])
 
     def test_trung_id_la_loi(self):
         with self.assertRaises(ValueError):
-            all_configs([{'id': 'thoang', 'name': 'x', 'note': ''}])
+            all_configs([{'id': 'am-sac', 'name': 'x', 'note': ''}])
 
     def test_ban_tho_quay_vong(self):
         files = ['k-1.wav', 'k-0.wav']

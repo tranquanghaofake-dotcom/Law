@@ -4,15 +4,16 @@ Dùng trước khi đổi bất kỳ tham số giọng nào trong clone.py (đ�
 Chỉ ghi đè tham số LÚC CHẠY — không sửa clone.py, không đụng .tts-cache hay manifest. Máy chỉ đo được lỗi chữ, độ giống giọng,
 độ lên xuống và tốc độ; hay hay dở phải do người nghe quyết định.
 
-  pip install -r tools/tts/requirements-clone.txt && pip install --no-deps voicefixer==0.1.3   (+ ffmpeg, model như README)
-  python tools/tts/ab.py --onnx-dir models/vieneu/onnx_update --out /tmp/ab      # sinh + viết /tmp/ab/index.html
-  python tools/tts/ab.py --out /tmp/ab --page-only                               # dựng lại trang từ report.json có sẵn
-  python tools/tts/ab.py --onnx-dir … --out /tmp/ab --only thoang,tu-nhien       # chỉ các cấu hình này (cả lúc sinh lẫn trên trang; chạy tiếp được)
-  python tools/tts/ab.py --onnx-dir … --out /tmp/ab --extra them.json            # thêm cấu hình ngoài CONFIGS, kể cả engine khác (xem `raw`)
+  pip install -r tools/tts/requirements-clone.txt   (+ ffmpeg; model như README)
+  python tools/tts/ab.py --out /tmp/ab                              # sinh + viết /tmp/ab/index.html
+  python tools/tts/ab.py --out /tmp/ab --page-only                  # dựng lại trang từ report.json có sẵn
+  python tools/tts/ab.py --out /tmp/ab --only hien-tai,am-sac       # chỉ các cấu hình này (cả lúc sinh lẫn trên trang; chạy tiếp được)
+  python tools/tts/ab.py --out /tmp/ab --extra them.json            # thêm cấu hình ngoài CONFIGS, kể cả engine khác (xem `raw`)
 
 Thêm/bớt cấu hình: sửa CONFIGS. Bộ câu SENTENCES giữ cố định để các đợt nghe thử so được với nhau.
-Engine khác (không phải VieNeu): sinh sẵn bản thô `<khoá câu>-<số>.wav` vào một thư mục rồi khai cấu hình {"id", "name", "note", "raw": "<thư mục>"}
-trong tệp --extra; các bản đó đi qua đúng khâu chặn lỗi, chọn bản và hậu kỳ như giọng VieNeu nên so được công bằng.
+Engine khác (không phải VoxCPM2): sinh sẵn bản thô `<khoá câu>-<số>.wav` vào một thư mục rồi khai cấu hình {"id", "name", "note", "raw": "<thư mục>"}
+trong tệp --extra; các bản đó đi qua đúng khâu chặn lỗi, chọn bản và hậu kỳ như giọng chính nên so được công bằng.
+Hai vòng nghe ngày 12/11/2026 (VieNeu v3 Turbo với 5 cấu hình, rồi VoxCPM2 với 3 cách clone) chọn ra bản đang chạy: VoxCPM2 kèm lời mẫu.
 """
 import argparse, base64, glob, html, json, os, random, sys, time
 
@@ -36,21 +37,15 @@ SENTENCES = [
     'Đáp án: 75 năm kể từ khi công bố lần đầu tiên.',
 ]
 
-# Mỗi cấu hình ghi đè đúng các hằng số tương ứng của clone.py. `preset` = giọng dựng sẵn của VieNeu (không clone);
-# `restore: False` = bỏ VoiceFixer + EQ của riêng giọng v5b (voice/eq.json), vẫn qua chuỗi phòng thu và chuẩn độ lớn.
+# Mỗi cấu hình ghi đè đúng các hằng số tương ứng của clone.py (USE_REF_TEXT, CFG, STEPS). Cột đầu luôn là bản đang chạy trên web.
 CONFIGS = [
-    {'id': 'hien-tai', 'name': 'Hiện tại (v5b-2)', 'note': 'đúng bản đang chạy trên web: nhiệt độ 0,5 · cắt khúc 90 ký tự · token "tin tức"',
-     'temperature': 0.5, 'max_chars': 90, 'style_id': 17},
-    {'id': 'thoang', 'name': 'Thoáng hơn', 'note': 'nhiệt độ 0,75 · cắt khúc 220 ký tự · token "tin tức"',
-     'temperature': 0.75, 'max_chars': 220, 'style_id': 17},
-    {'id': 'tu-nhien', 'name': 'Thoáng + tự nhiên', 'note': 'nhiệt độ 0,75 · cắt khúc 220 ký tự · token "tự nhiên" (mặc định của thư viện)',
-     'temperature': 0.75, 'max_chars': 220, 'style_id': 16},
-    {'id': 'ke-chuyen', 'name': 'Thoáng + kể chuyện', 'note': 'nhiệt độ 0,75 · cắt khúc 220 ký tự · token "đọc truyện"',
-     'temperature': 0.75, 'max_chars': 220, 'style_id': 18},
-    {'id': 'co-san', 'name': 'Giọng có sẵn "Thiện Minh"', 'note': 'giọng dựng sẵn của VieNeu (nam, Bắc, kể chuyện) · thông số mặc định của thư viện · không qua VoiceFixer/EQ của v5b',
-     'temperature': 0.8, 'max_chars': 256, 'style_id': 16, 'preset': 'Thiện Minh', 'restore': False},
+    {'id': 'hien-tai', 'name': 'Hiện tại (vox2-1)', 'note': 'đúng bản đang chạy trên web: VoxCPM2 clone kèm lời mẫu · cfg 2,0 · 10 bước',
+     'ref_text': True, 'cfg': 2.0, 'steps': 10},
+    {'id': 'am-sac', 'name': 'Chỉ lấy âm sắc', 'note': 'VoxCPM2 clone không kèm lời mẫu · cfg 2,0 · 10 bước',
+     'ref_text': False, 'cfg': 2.0, 'steps': 10},
+    {'id': 'bam-mau', 'name': 'Bám mẫu hơn', 'note': 'VoxCPM2 clone kèm lời mẫu · cfg 2,6 · 10 bước',
+     'ref_text': True, 'cfg': 2.6, 'steps': 10},
 ]
-ANCHOR = 'Xin chào, đây là giọng đọc thử của Luyện Luật.'  # câu mốc để đo độ giống cho giọng dựng sẵn (không có clip mẫu)
 
 
 # ───────────── hàm thuần (có test: tools/tts/test_ab.py) ─────────────
@@ -179,25 +174,17 @@ def raw_synth(eng, raw_dir: str):
         y, sr = eng.sf.read(take_file(files, k), dtype='float32')
         if y.ndim > 1:
             y = y.mean(axis=1)
-        return y if sr == eng.tts.sample_rate else eng.librosa.resample(y, orig_sr=sr, target_sr=eng.tts.sample_rate)
+        return y if sr == eng.sr else eng.librosa.resample(y, orig_sr=sr, target_sr=eng.sr)
     return synth
 
 
-def apply(eng, clone, cfg: dict, base: tuple):
+def apply(eng, clone, cfg: dict):
     """Đặt một cấu hình lên Engine đang chạy (ghi đè hằng số của clone.py trong tiến trình này, không ghi ra tệp)."""
     eng.__dict__.pop('synth', None)  # bỏ bước sinh thay thế của cấu hình trước
-    eng.voice, eng.ref_emb = base
     if cfg.get('raw'):
-        eng.synth, eng.restore = raw_synth(eng, cfg['raw']), cfg.get('restore', False)
+        eng.synth = raw_synth(eng, cfg['raw'])
         return
-    clone.TEMPERATURE, clone.MAX_CHARS = cfg['temperature'], cfg['max_chars']
-    eng.tts.engine.default_style_id = cfg['style_id']
-    eng.restore = cfg.get('restore', True)
-    if cfg.get('preset'):
-        eng.voice = eng.tts.get_preset_voice(cfg['preset'])
-        a = eng.tts.infer(ANCHOR, voice=eng.voice, temperature=0.5, apply_watermark=False)
-        w16 = eng.librosa.resample(eng.np.asarray(a, dtype=eng.np.float32), orig_sr=eng.tts.sample_rate, target_sr=16000)
-        eng.ref_emb = eng.enc.embed_utterance(eng.pre(w16, source_sr=16000))
+    clone.USE_REF_TEXT, clone.CFG, clone.STEPS = cfg['ref_text'], cfg['cfg'], cfg['steps']
 
 
 def load(out: str) -> tuple[dict, dict]:
@@ -218,7 +205,6 @@ def load(out: str) -> tuple[dict, dict]:
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--out', required=True)
-    ap.add_argument('--onnx-dir')
     ap.add_argument('--threads', type=int, default=4)
     ap.add_argument('--only', default='', help='id cấu hình, cách nhau bằng dấu phẩy (mặc định: tất cả) — áp cho cả lúc sinh lẫn các cột trên trang')
     ap.add_argument('--extra', help='tệp JSON: mảng cấu hình thêm ngoài CONFIGS (kể cả engine khác qua khoá "raw")')
@@ -235,10 +221,9 @@ def main():
     report, _ = load(a.out)
     if not a.page_only:
         import clone
-        eng = clone.Engine(a.onnx_dir, a.threads)
-        base = (eng.voice, eng.ref_emb)
+        eng = clone.Engine(a.threads)
         for cfg in cfgs:
-            apply(eng, clone, cfg, base)
+            apply(eng, clone, cfg)
             os.makedirs(os.path.join(a.out, cfg['id']), exist_ok=True)
             done = report.setdefault(cfg['id'], {})
             for s in sents:

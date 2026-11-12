@@ -1,19 +1,20 @@
-# Giọng đọc clone v5b (tools/tts/clone.py): chia câu cho nhiều máy chạy song song → gộp vào cache Actions → deploy lấy cache chép vào trang.
+# Giọng đọc clone (tools/tts/clone.py, VoxCPM2 kèm lời mẫu): chia câu cho nhiều máy chạy song song → gộp vào cache Actions → deploy lấy cache chép vào trang.
 # Chạy tay: Actions → "Giọng đọc" → Run workflow. Chạy lại / tự chạy chỉ sinh câu mới hoặc câu đã sửa.
-# Lần đầu (~13 800 câu, ~20 giờ âm thanh) mất khoảng 5–6 giờ (40 phần, 20 máy cùng lúc, đo thật trên máy GitHub). Báo cáo (câu cần nghe lại) ở trang tóm tắt của lần chạy.
+# Sinh lại toàn bộ (~13 800 câu) là việc nặng: 80 phần, 20 máy cùng lúc; phần nào chưa xong trong 5 giờ 20 phút thì tự dừng, lần chạy sau làm tiếp.
+# Giọng cũ vẫn ở trên web cho tới khi bước gộp của lần chạy mới xong. Báo cáo (câu cần nghe lại) ở trang tóm tắt của lần chạy.
 name: Giọng đọc
 
 on:
   workflow_dispatch:
     inputs:
       shards:
-        description: Số phần chia việc (chạy tối đa 20 máy cùng lúc; 40 phần ≈ 2,8 giờ/phần, không chạm giới hạn 6 giờ)
-        default: '40'
+        description: Số phần chia việc (chạy tối đa 20 máy cùng lúc; mỗi phần phải xong trong 5 giờ 20 phút)
+        default: '80'
       limit:
         description: Chỉ sinh N câu đầu để thử (0 = tất cả)
         default: '0'
       sample:
-        description: Chạy thử N câu chọn đều theo loại câu khó — số điều khoản, viết tắt, ký hiệu… (0 = tắt; nên dùng 40 với 1 máy)
+        description: Chạy thử N câu chọn đều theo loại câu khó — số điều khoản, viết tắt, ký hiệu… (0 = tắt; nên dùng 24 với 1 máy)
         default: '0'
   push:
     branches: [main]
@@ -52,7 +53,7 @@ jobs:
           key: tts-${{ github.run_id }}
           restore-keys: tts-
       - id: plan
-        run: python3 tools/tts/clone.py plan --texts .tts-texts.json --cache .tts-cache --shards "${{ inputs.shards || '40' }}" --limit "${{ inputs.limit || '0' }}" --sample "${{ inputs.sample || '0' }}" --out plan --github-output "$GITHUB_OUTPUT"
+        run: python3 tools/tts/clone.py plan --texts .tts-texts.json --cache .tts-cache --shards "${{ inputs.shards || '80' }}" --limit "${{ inputs.limit || '0' }}" --sample "${{ inputs.sample || '0' }}" --out plan --github-output "$GITHUB_OUTPUT"
       - uses: actions/upload-artifact@v6
         with:
           name: plan
@@ -82,33 +83,27 @@ jobs:
           cache: pip
           cache-dependency-path: tools/tts/requirements-clone.txt
       - run: sudo apt-get install -y -qq ffmpeg
-      - run: pip install -q -r tools/tts/requirements-clone.txt && pip install -q --no-deps voicefixer==0.1.3
-      - run: python -m unittest tools/tts/test_clone.py
+      - run: pip install -q -r tools/tts/requirements-clone.txt
+      - run: python -m unittest tools/tts/test_clone.py tools/tts/test_ab.py
       - uses: actions/cache@v5
         with:
-          path: |
-            models
-            ~/.cache/huggingface
-            ~/.cache/voicefixer
-          key: giongmodel-v1
-      - name: Tải model VieNeu + bộ giải mã MOSS (tệp thật, không symlink — onnxruntime từ chối dữ liệu ngoài nằm ngoài thư mục model)
+          path: ~/.cache/huggingface
+          key: giongmodel-v2
+      - name: Tải model VoxCPM2 (~4,7 GB) + Whisper small/medium
         run: |
+          grep -m1 'model name' /proc/cpuinfo; grep -o -m1 -w 'amx_bf16' /proc/cpuinfo || echo 'CPU không có AMX → float32'
           python - <<'PY'
-          import os, shutil
           from huggingface_hub import snapshot_download as d
-          d('pnnbao-ump/VieNeu-TTS-v3-Turbo', allow_patterns=['onnx_update/*'], local_dir='models/vieneu')
-          snap = d('OpenMOSS-Team/MOSS-Audio-Tokenizer-Nano-ONNX')
-          for f in os.listdir(snap):
-              p = os.path.join(snap, f)
-              if os.path.islink(p):
-                  real = os.path.realpath(p); os.unlink(p); shutil.copy2(real, p)
-          print('bộ giải mã:', snap, os.listdir(snap))
+          from faster_whisper import WhisperModel
+          print('VoxCPM2:', d('openbmb/VoxCPM2'))
+          for size in ('small', 'medium'):
+              WhisperModel(size, device='cpu', compute_type='int8')
           PY
       - uses: actions/download-artifact@v7
         with:
           name: plan
       - name: Sinh giọng phần ${{ matrix.shard }}
-        run: python tools/tts/clone.py run --todo plan/shard-${{ matrix.shard }}.json --onnx-dir models/vieneu/onnx_update --out out --deadline 320
+        run: python tools/tts/clone.py run --todo plan/shard-${{ matrix.shard }}.json --out out --deadline 320
       - uses: actions/upload-artifact@v6
         if: always()
         with:
