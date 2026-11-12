@@ -57,6 +57,15 @@ class ChanLoi(unittest.TestCase):
         self.assertEqual(clone.tail_cut(clone.words('Chính xác'), clone.words('Chính xác.')), 2)  # không thừa: giữ nguyên
         self.assertEqual(clone.tail_cut(clone.words('Đáp án cùng loại lại chia sẻ'), ref), 5)  # sai thanh vẫn giữ, chỉ cắt phần thừa
 
+    def test_ten_don_vi_truoc_so_phai_dung(self):
+        self.assertTrue(clone.numbers_match('Điều 275', 'Điều 275.'))
+        self.assertFalse(clone.numbers_match('Điểm 275', 'Điều 275.'))
+        self.assertFalse(clone.numbers_match('tiểu 275', 'Điều 275.'))
+        self.assertFalse(clone.numbers_match('khoảng 3.106.', 'Khoản 3 Điều 106.'))
+        self.assertTrue(clone.numbers_match('khoảng 3 điều 106.', 'Khoản 3 Điều 106.'))      # Whisper viết "khoảng" cho "khoản"
+        self.assertTrue(clone.numbers_match('Điều 309, Điều 317', 'Điều 309, 317.'))            # vi_norm đọc lặp tên đơn vị
+        self.assertTrue(clone.numbers_match('điều kiện để được nhập quốc tịch', 'Điều kiện để được nhập quốc tịch.'))  # "điều" thường: không xét
+
     def test_tieng_thua_dau_cau(self):
         ref = clone.words('Khoản 1 Điều 19: công dân nước ngoài có đơn thì có thể được nhập quốc tịch.')
         self.assertEqual(clone.head_extra(clone.words('Càng khoản 1 điều 19, công dân nước ngoài có đơn thì có thể được nhập quốc tịch.'), ref), 1)

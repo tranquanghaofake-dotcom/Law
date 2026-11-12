@@ -132,10 +132,20 @@ def allowed_errors(n_words: int) -> int:
 NUMBER_WORDS = set('không một mốt hai ba bốn tư năm lăm sáu bảy tám chín mười mươi lẻ linh trăm nghìn ngàn triệu tỷ'.split())
 
 
+UNIT_WORDS = {'điều', 'khoản', 'điểm', 'chương', 'mục'}
+
+
+def citations(text: str) -> list[str]:
+    """Dãy tên đơn vị đứng NGAY TRƯỚC một số (điều 5, khoản 2, chương ba…). "khoảng" tính như "khoản": Whisper không phân biệt hai âm này."""
+    ws = ['khoản' if w == 'khoảng' else w for w in re.findall(r'\w+', normalize(text).lower())]
+    return [w for w, nxt in zip(ws, ws[1:]) if w in UNIT_WORDS and nxt in NUMBER_WORDS]
+
+
 def numbers_match(hyp: str, ref: str) -> bool:
-    """Số điều, khoản, năm, tỷ lệ phải đọc đúng TUYỆT ĐỐI: dãy từ chỉ số của hai bên phải trùng nhau."""
+    """Số điều, khoản, năm, tỷ lệ phải đọc đúng TUYỆT ĐỐI: dãy từ chỉ số của hai bên phải trùng nhau,
+    và tên đơn vị trước mỗi số cũng vậy ("Điểm 275" hay "275" không thay được "Điều 275")."""
     pick = lambda t: [w for w in re.findall(r'\w+', normalize(t)) if w in NUMBER_WORDS]
-    return pick(hyp) == pick(ref)
+    return pick(hyp) == pick(ref) and citations(hyp) == citations(ref)
 
 
 def passes(c: dict, text: str) -> bool:
@@ -341,7 +351,9 @@ class Engine:
 
     def synth(self, spoken: str):
         np = self.np
-        kw = {'prompt_wav_path': self.ref, 'prompt_text': REF_TEXT} if USE_REF_TEXT else {}
+        # VoxCPM2 ghép thẳng lời mẫu + câu cần đọc: thiếu khoảng trắng ("…mong đợi.Chính xác.") thì chỗ nối méo —
+        # thừa tiếng hoặc nuốt âm đầu (đo 12/11/2026: "Chính xác." đạt 0/5 khi không có, 5/5 khi có).
+        kw = {'prompt_wav_path': self.ref, 'prompt_text': REF_TEXT + ' '} if USE_REF_TEXT else {}
         parts = []
         for c in chunks(spoken):
             a = np.asarray(self.tts.generate(text=c, reference_wav_path=self.ref, cfg_value=CFG, inference_timesteps=STEPS, normalize=False, **kw), dtype=np.float32)
