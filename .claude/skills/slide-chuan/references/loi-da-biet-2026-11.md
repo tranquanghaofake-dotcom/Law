@@ -48,7 +48,7 @@ Hai phiên độc lập, cùng đề tài hình sự, **cùng ba kết luận** 
 | M6 | Mâu thuẫn quy tắc nguồn: SKILL.md nói slide không ghi nguồn, nhưng `lawquote`, `tiles`, `cases`, `chain` có `source` và tầng hình ảnh **vẽ** nó | Slide lawquote / tiles | **Đã sửa tài liệu** |
 | M7 | Số slide khai báo ≠ số slide PowerPoint (`book` 5–9, `quizgo` 3) | Mẫu 11 → 20 | **Còn** (cần bảng type → số slide) |
 | M8 | `quizgo` không có `whyNot` | `canh.md` | **Còn** |
-| M9 | Thiếu type "thang khung hình phạt" (ngưỡng tiền → mức án theo khoản) | `table` + `bar` thay thế, mất khoảng min–max | **Còn** (đề xuất `ladder`) |
+| M9 | Thiếu type "thang khung hình phạt" (ngưỡng tiền → mức án theo khoản) | `table` + `bar` thay thế, mất khoảng min–max | **Đã sửa:** `bcthang` (`hinh/bang_chung.js`) — thanh min–max theo từng bậc, nhiều tội trên cùng bậc, `ct` cho "hoặc chung thân". Còn: bản không phụ thuộc môn |
 | M10 | SKILL.md 74 KB, nạp trọn mỗi lần | `wc -c` | **Một phần**: thêm mục "Nguyên tắc trước quy trình" ở đầu; chưa tách |
 
 ### Điều rút ra khi gộp hai phiên

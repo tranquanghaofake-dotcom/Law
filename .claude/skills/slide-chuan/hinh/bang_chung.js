@@ -10,7 +10,7 @@
 const { wrap, plain, kit } = require("../stage/templates");
 const { esc, f } = kit;
 
-const TYPES = ["bcbia", "bcso", "bcchuong", "bccauhoi", "bctrich", "bcbang", "bcnhanh", "bctinhhuong", "bcdoiung", "bccot", "bcsolieu", "bcdieukien", "bcnhanqua", "bchoi", "bcchot", "bccamon"];
+const TYPES = ["bcbia", "bcso", "bcchuong", "bccauhoi", "bctrich", "bcbang", "bcnhanh", "bctinhhuong", "bcdoiung", "bccot", "bcsolieu", "bcdieukien", "bcnhanqua", "bchoi", "bcchot", "bccamon", "bcthang"];
 const tx = (s) => f(s).replace(/\n/g, "<br>");
 const pad2 = (n) => String(n).padStart(2, "0");
 const A = (a, at) => `data-a="${a}" data-at="${at}"`;
@@ -153,6 +153,20 @@ S1.bccamon = (s) => { const tm = (s.team || [])[0] || {};
    ${the("bc-ten", 1330, 260, 460, 420, 4, `<div class="bc-t1" data-t style="left:30px;top:96px;width:400px;font-size:62px;text-align:center;color:#2a1c0a;line-height:1.1">${esc(tm.name || "")}</div><div class="bc-tx" data-t style="left:30px;top:250px;width:400px;font-size:30px;text-align:center;color:#4a3519;font-weight:600">${esc(tm.role || "")}</div>`, 600)}
    ${dai("bc-lh", 190, 900, 1080, 90, `<div class="bc-tx" data-t style="left:40px;top:22px;width:1000px;font-size:29px">${esc(s.contact || "")}</div>`, 900).html}</div>` }; };
 
+
+// bcthang: THANG khung hình phạt — mỗi bậc (giá trị chiếm đoạt, khoản…) là một hàng, mỗi tội một thanh trải từ mức THẤP NHẤT đến CAO NHẤT trên trục.
+// Khác bccot (chỉ có mức tối đa) và bcbang (chữ). rows[{label, sub, bars[{name,min,max,text,ct}]}] — ct: true = "hoặc chung thân". order: "up" (mặc định, bậc đầu ở dưới) | "down".
+S1.bcthang = (s) => { const T = tieuDe(s), R = (s.rows || []).slice(0, 5), ax = s.axis || { max: 20, unit: "năm tù", ticks: [0, 5, 10, 15, 20] }, X0 = 560, W = 1050, sc = W / ax.max, RH = R.length >= 4 ? 112 : 130, up = s.order !== "down";
+  const COL = ["#c8261e", "#1b1713", "#2e6b8a"], names = ((R[0] || {}).bars || []).map((b) => b.name).filter(Boolean), fmt = (v) => String(v).replace(".", ","), top0 = 96, H = top0 + R.length * RH + 74;
+  const ticks = (ax.ticks || [0, 5, 10, 15, 20]).map((v) => `<div class="bc-gl" style="left:${X0 + v * sc}px;top:${top0}px;height:${R.length * RH + 6}px"></div><div class="bc-cap2" data-t style="left:${X0 + v * sc - 50}px;top:${top0 + R.length * RH + 18}px;width:100px;text-align:center">${v}</div>`).join("") + `<div class="bc-cap2" data-t style="left:${X0 - 230}px;top:${top0 + R.length * RH + 18}px;width:200px;text-align:right">${esc(ax.unit || "")}</div>`;
+  const leg = names.length > 1 ? names.map((n, k) => `<i class="bc-sw" style="left:${X0 + k * 300}px;top:34px;background:${COL[k]}"></i><div class="bc-tx" data-t style="left:${X0 + k * 300 + 42}px;top:28px;width:250px;font-size:28px;font-weight:700">${esc(n)}</div>`).join("") : "";
+  const rows = R.map((r, i) => { const y = top0 + (up ? R.length - 1 - i : i) * RH, B = (r.bars || []).slice(0, 3), nb = B.length, y0 = y + (RH - (nb * 46 - 10)) / 2;
+    const bars = B.map((b, k) => { const x = X0 + b.min * sc, w = Math.max(24, (b.max - b.min) * sc), by = y0 + k * 46, txt = b.text || `${fmt(b.min)}–${fmt(b.max)} ${b.unit || "năm"}${b.ct ? " hoặc chung thân" : ""}`, inside = w >= (b.ct ? 400 : 300);
+      return `<div class="bc-bar" style="left:${x}px;top:${by}px;width:${w}px;height:36px;background:${COL[k]}"></div><div class="bc-bl ${inside ? "in" : ""}" data-t style="left:${inside ? x + 14 : x + w + 14}px;top:${by}px;${inside ? `width:${w - 20}px` : ""}">${esc(txt)}</div>`; }).join("");
+    return `${i === s.focus ? `<div class="bc-fo" style="left:30px;top:${y + 4}px;width:1640px;height:${RH - 8}px"></div>` : `<div class="bc-ru" style="left:40px;top:${y + RH - 1}px;width:1620px"></div>`}<div class="bc-tx bc-b" data-t style="left:44px;top:${y + 16}px;width:480px;font-size:${R.length >= 4 ? 31 : 33}px;line-height:1.2">${tx(r.label || "")}</div>${r.sub ? `<div class="bc-tx" data-t style="left:44px;top:${y + (R.length >= 4 ? 64 : 70)}px;width:480px;font-size:23px;line-height:1.25;color:#5a4d36">${tx(r.sub)}</div>` : ""}${bars}`; }).join("");
+  const B = giay("bc-thang", 110, 318, 1700, H, -0.3, `${leg}${ticks}${rows}`, { dx: -700, at: 300 });
+  return trang(`${vanTay("bc-vt", 1440, 600, 420)}${T.html}${B.html}${s.note ? dai("bc-ghichu", 110, 318 + H + 28, 1700, 80, chuNho(s.note, 40, 20, 1620, 29), 1000).html : ""}`); };
+
 function render(s, deck, ctx, { i, n }) {
   kit.reset();
   const o = S1[s.type](s, deck, ctx);
@@ -176,6 +190,11 @@ const css = `
 .bc-stp.bc-bg { background: #f6eedb; box-shadow: 8px 12px 16px rgba(14,6,0,.45); opacity: 1; }
 .bc-stp.bc-g { color: #1f6b44; border-color: #1f6b44; }
 .bc-dim { opacity: .9; }
+.bc-bar { position: absolute; border-radius: 4px; box-shadow: 3px 4px 0 rgba(14,6,0,.28); }
+.bc-bl { position: absolute; font: 700 27px/36px var(--fb); color: #1b1713; white-space: nowrap; } .bc-bl.in { color: #f4ecd8; overflow: hidden; }
+.bc-gl { position: absolute; width: 2px; background: rgba(27,23,19,.2); }
+.bc-cap2 { position: absolute; font: 700 24px/1 var(--fb); color: #5a4d36; }
+.bc-sw { position: absolute; width: 28px; height: 28px; }
 
 /* ── bảng bằng chứng (hình sự) ── */
 .s.bc { background-color: #79502f; background-image: radial-gradient(1500px 900px at 45% 38%, rgba(255,222,170,.28), transparent 68%), radial-gradient(2000px 1300px at 50% 50%, transparent 50%, rgba(18,8,2,.62) 100%), ${cork}; color: #f4ecd8; --fg: #f4ecd8; --mut: #ead9ba; --hl: #ffd27a; }

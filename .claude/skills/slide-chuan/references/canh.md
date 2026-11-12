@@ -206,6 +206,7 @@ Vì sao có: hình dán Fluent Emoji và nền của bảng màu chỉ là chấ
 | `bcdoiung` | Dấu hiệu ↔ tội danh | `pairs[≤5]{left,right,note}` `colL` `colR` `focus` `note` |
 | `bccot` | Cột ô đếm (mỗi ô một đơn vị) | `cols[≤3]{n,unit,label}` `legend` `source` |
 | `bcsolieu` | Một con số bước ngoặt | `num` `unit` `sub` `note` |
+| `bcthang` | **Thang khung hình phạt**: mỗi bậc (giá trị, khoản) một hàng, mỗi tội một thanh từ mức thấp nhất đến cao nhất trên trục | `axis{max,unit,ticks}` `rows[≤5]{label,sub,bars[≤3]{name,min,max,text,ct}}` `focus` `order` ("up" mặc định: bậc đầu ở dưới) `note`; `ct: true` = "hoặc chung thân" |
 | `bcdieukien` | Điều kiện cần (✓) + kết luận | `items[≤5]{head,src}` `verdict{text}` |
 | `bcnhanqua` | Tình huống → con dấu → hệ quả | `cause{tag,text}` `stamp{text,sub}` `results[3]{text,ref}` `source` |
 | `bchoi` | Trắc nghiệm: slide hỏi, rồi slide đáp án (`reveal: true`) | `title` `stem` `options[4]` `answer` `why` `whyNot[]` |
