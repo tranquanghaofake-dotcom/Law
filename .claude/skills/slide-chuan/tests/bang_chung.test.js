@@ -24,3 +24,16 @@ test("Morph có chủ ý: tờ tiêu đề, thẻ chương, thẻ đáp án; kh�
   assert.ok(!/data-m="pa1"[^>]*data-a=/.test(q(true)) && !/data-a="[^"]*"[^>]*data-m="pa1"/.test(q(true)), "slide đáp án: đích Morph không có hiệu ứng vào");
   assert.ok(nd.includes('s3-day') || !nd.includes("bc-rope") || true);
 });
+test("chế độ A không Morph (không data-m), chế độ B có; đinh và con dấu là lớp riêng có hiệu ứng", () => {
+  const mk = (bcm) => ({ meta: bcm ? { bc: bcm } : {}, slides: [] }), s = { type: "bctrich", title: "T", ch: 1, quote: "q", art: "174", stamp: "Khoản 1" };
+  const a = bc.render(s, mk("A"), {}, { i: 3, n: 9 })[0], b = bc.render(s, mk("B"), {}, { i: 3, n: 9 })[0];
+  assert.ok(!a.html.includes("data-m="), "A: không ghép Morph");
+  assert.ok(b.html.includes('data-m="tieu"'), "B: có ghép Morph");
+  for (const h of [a.html, b.html]) {
+    assert.ok(/data-l="pin-[^"]+"[^>]*data-a="slam"/.test(h), "đinh là lớp riêng, đóng bằng slam");
+    assert.ok(h.includes('data-l="bc-khoan"') && h.includes('data-a="stamp"'), "con dấu là lớp riêng, đóng bằng stamp");
+  }
+  assert.ok(a.dur < b.dur, "A chuyển cảnh gọn hơn B");
+  assert.ok(/data-l="bc-tieu"[^>]*data-a="rise"/.test(a.html), "A: tờ tiêu đề vào nhẹ (rise)");
+  assert.ok(!/data-l="bc-tieu"[^>]*data-a=/.test(b.html), "B: tờ tiêu đề là đích Morph nên không có hiệu ứng vào");
+});

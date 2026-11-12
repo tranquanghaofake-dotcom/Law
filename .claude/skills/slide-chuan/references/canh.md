@@ -224,3 +224,9 @@ Lỗi đã gặp: Morph chỉ là "vân tay bay qua bay về". Nguyên nhân: Po
 3. Phần tử là đích Morph **không** có `data-a` (hiệu ứng vào): lúc chuyển cảnh nó đang ẩn nên Morph không có gì để bay tới (bộ dựng báo `⚠`).
 4. Chữ trong lớp có `data-m` tự ghép theo thứ tự (`tên-chu1`, `tên-chu2`…): giữ cùng thứ tự các hộp chữ ở hai slide (kicker rồi tiêu đề) thì chữ trượt từ chỗ này sang chỗ kia.
 5. Kiểm khi không có PowerPoint: `python3 scripts/morph_cap.py file.pptx` in cặp Morph có chủ ý giữa mọi cặp slide kề nhau. Slide nào ghi "— (chỉ mờ dần …)" là chưa có chuyển động nào được thiết kế.
+
+### Hai chế độ chuyển động của bộ `bc*` (`meta.bc`)
+- **`"A"`** — hiệu ứng vào phong phú, **không Morph** (đặt cùng `meta.hinh.chuyen: "fade"`): giấy rơi (xoay nhẹ) rồi **đinh nện xuống** (lớp riêng, hiệu ứng `slam`), dây đỏ chạy nối (`wipe`), **con dấu đóng** (lớp riêng, `stamp`), thẻ lắc sau khi rơi (`teeter`). Tờ tiêu đề vào nhẹ (`rise`). Chuyển giữa slide 450 ms.
+- **`"B"`** (mặc định) — **nhân vật xuyên suốt** bằng Morph (`meta.hinh.chuyen: "morph"`, 1200 ms): ba tờ điều luật ở bìa lớn lên thành ba thẻ câu hỏi (`q1`–`q3`, kèm đinh `q1-pin`…); tờ bìa / chương ↔ tờ tiêu đề (`tieu`); thẻ số chương to ↔ thẻ nhỏ ở góc (`chuong`); thẻ "ranh giới" từ slide so sánh sang slide thang (`ranh`); thẻ đáp án giữ chỗ (`pa1`–`pa4`, `de`). Đích Morph không có hiệu ứng vào.
+- Đinh và con dấu là **lớp ảnh riêng** (không nằm trong ảnh tờ giấy) để có hiệu ứng riêng; đinh được tính vị trí theo góc nghiêng của giấy, nên dây đỏ cũng bám đúng đinh.
+- So sánh hai chế độ: dựng hai bản từ cùng `deck.json` chỉ khác `meta.bc` và `meta.hinh.chuyen`.

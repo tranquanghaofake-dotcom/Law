@@ -16,10 +16,20 @@ const pad2 = (n) => String(n).padStart(2, "0");
 const A = (a, at) => `data-a="${a}" data-at="${at}"`;
 
 // tờ giấy ghim: trả về html và toạ độ đinh (cx, cy) để kéo dây
-const giay = (name, x, y, w, h, rot, inner, o = {}) => ({
-  cx: x + w / 2 + (o.dx || 0), cy: y + 10,
-  html: `<div class="bc-pp ${o.cls || ""}" data-l="${name}" data-pad="${o.pad || 48}" ${o.a === false ? "" : A(o.a || "drop", o.at || 300)} ${o.m ? `data-m="${o.m}"` : ""} ${o.go ? `data-go="${esc(o.go)}"` : ""} style="left:${x}px;top:${y}px;width:${w}px;height:${h}px;rotate:${rot}deg">${o.pin === false ? "" : `<i class="bc-pin" style="left:calc(50% + ${o.dx || 0}px)"></i>`}${inner}</div>`,
-});
+// MODE: "A" = hiệu ứng vào phong phú, KHÔNG Morph (meta.bc = "A", đi cùng meta.hinh.chuyen = "fade"); "B" = Morph "nhân vật xuyên suốt" (mặc định).
+let MODE = "B";
+const pairM = (m) => (m && MODE === "B" ? `data-m="${m}"` : "");
+const khongVao = (o) => o.na || (o.a === false && MODE === "B");   // đích Morph không có hiệu ứng vào
+// tờ giấy ghim. Đinh là LỚP RIÊNG (nện xuống sau khi giấy rơi), đặt đúng chỗ kể cả khi giấy nghiêng; cx, cy = toạ độ đinh để kéo dây.
+const giay = (name, x, y, w, h, rot, inner, o = {}) => {
+  const th = rot * Math.PI / 180, dx = o.dx || 0, dy = 10 - h / 2, px = x + w / 2 + dx * Math.cos(th) - dy * Math.sin(th), py = y + h / 2 + dx * Math.sin(th) + dy * Math.cos(th);
+  const at = o.at || 300, no = khongVao(o), kind = o.a === false ? (o.kA || "drop") : (o.a || "drop");
+  const paper = `<div class="bc-pp ${o.cls || ""}" data-l="${name}" data-pad="${o.pad || 48}" ${no ? "" : A(kind, at)} ${o.em ? `data-em="${o.em}"` : ""} ${pairM(o.m)} ${o.go ? `data-go="${esc(o.go)}"` : ""} style="left:${x}px;top:${y}px;width:${w}px;height:${h}px;rotate:${rot}deg">${inner}</div>`;
+  const pin = o.pin === false ? "" : `<i class="bc-pin" data-l="pin-${name}" data-pad="18" ${no ? "" : A("slam", at + 420)} ${pairM(o.m ? `${o.m}-pin` : "")} style="left:${(px - 23).toFixed(1)}px;top:${(py - 23).toFixed(1)}px;margin:0"></i>`;
+  return { cx: px, cy: py, html: paper + pin };
+};
+// con dấu là lớp riêng: đóng xuống (xoay + thu từ to về đúng cỡ) sau khi giấy đã ghim
+const stp = (name, pos, rot, text, at, cls = "", size = 0) => `<div class="bc-stp ${cls}" data-l="${name}" data-pad="24" ${A("stamp", at)} style="${pos};rotate:${rot}deg${size ? `;font-size:${size}px` : ""}"><span data-t>${esc(text)}</span></div>`;
 // dây đỏ giữa hai đinh (đường cong võng xuống), có bóng đổ
 let SL = 0;   // chỉ số slide đang dựng: dây đỏ, vân tay đặt tên riêng từng slide để PowerPoint không ghép nhầm rồi kéo giãn
 const day = (name0, p, q, sag, at) => {
@@ -32,7 +42,7 @@ const day = (name0, p, q, sag, at) => {
 const vanTay = (name, x, y, w) => { let g = ""; for (let i = 1; i <= 24; i++) { const r = i * 12.5; g += `<ellipse cx="200" cy="235" rx="${(r * 0.8).toFixed(1)}" ry="${r}" stroke-dasharray="${38 + i * 6} ${8 + (i % 5) * 4} ${70 - i * 2} 11" stroke-dashoffset="${i * 23}"/>`; }
   return `<svg class="bc-fp" data-l="${name}" data-pad="4" viewBox="0 0 400 480" style="left:${x}px;top:${y}px;width:${w}px;height:${Math.round(w * 1.2)}px">${g}</svg>`; };
 // thẻ tang vật (giấy manila có lỗ xỏ dây)
-const the = (name, x, y, w, h, rot, inner, at = 500, o = {}) => `<div class="bc-tag" data-l="${name}" data-pad="40" ${o.a === false ? "" : A("drop", at)} ${o.m ? `data-m="${o.m}"` : ""} style="left:${x}px;top:${y}px;width:${w}px;height:${h}px;rotate:${rot}deg"><i class="bc-hole"></i>${inner}</div>`;
+const the = (name, x, y, w, h, rot, inner, at = 500, o = {}) => `<div class="bc-tag" data-l="${name}" data-pad="40" ${khongVao(o) ? "" : `${A("drop", at)} ${o.noem ? "" : 'data-em="teeter"'}`} ${pairM(o.m)} style="left:${x}px;top:${y}px;width:${w}px;height:${h}px;rotate:${rot}deg"><i class="bc-hole"></i>${inner}</div>`;
 const nhan = (name, x, y, rot, text, at = 100) => `<div class="bc-lab" data-l="${name}" data-pad="14" ${A("rise", at)} style="left:${x}px;top:${y}px;rotate:${rot}deg"><span data-t>${esc(text)}</span></div>`;
 
 const S1 = {};
@@ -42,12 +52,12 @@ S1.bcbia = (s) => {
     `<div class="bc-lb" data-t style="left:60px;top:54px">${esc(s.kicker || "")}</div>
      <div class="bc-t1" data-t style="left:60px;top:112px;width:900px;font-size:158px">${tx(s.title || "")}</div>
      ${s.subtitle ? `<div class="bc-tx" data-t style="left:60px;top:430px;width:700px;font-size:35px">${tx(s.subtitle)}</div>` : ""}
-     <div class="bc-stp" style="right:44px;bottom:48px;rotate:7deg"><span data-t>${esc(s.stamp || "Phân biệt")}</span></div>`, { dx: 380, m: "tieu", a: false });
+     `, { dx: 380, m: "tieu", a: false });
   const C = (s.cites || []).slice(0, 3), pos = [[1290, 140, 3], [1380, 420, -3], [1240, 712, 2]], ps = [];
   const papers = C.map((c, i) => { const [x, y, r] = pos[i], p = giay(`bc1-d${i + 1}`, x, y, 440, 236, r,
-    `<div class="bc-lb" data-t style="left:36px;top:38px;font-size:26px">ĐIỀU</div><div class="bc-t1" data-t style="left:36px;top:68px;font-size:118px">${esc(c.n)}</div><div class="bc-tx" data-t style="left:230px;top:104px;width:190px;font-size:31px;font-weight:700">${tx(c.t)}</div>`, { at: 700 + i * 220 }); ps.push(p); return p.html; });
+    `<div class="bc-t1" data-t style="left:36px;top:68px;font-size:118px">${esc(c.n)}</div><div class="bc-tx" data-t style="left:230px;top:104px;width:190px;font-size:31px;font-weight:700">${tx(c.t)}</div><div class="bc-lb" data-t style="left:36px;top:38px;font-size:26px">ĐIỀU</div>`, { at: 700 + i * 220, m: `q${i + 1}`, em: "teeter" }); ps.push(p); return p.html; });
   const ropes = ps.map((p, i) => day(`bc1-day${i + 1}`, main, p, [70, 110, 130][i], 1000 + i * 200));
-  return { cls: "dark bc", bare: true, html: `<div class="cv" data-tay>${ropes.join("")}${main.html}${papers.join("")}
+  return { cls: "dark bc", bare: true, html: `<div class="cv" data-tay>${ropes.join("")}${main.html}${papers.join("")}${stp("bc1-dau", "right:834px;bottom:318px", 7, s.stamp || "Phân biệt", 1500)}
     ${the("bc1-the", 120, 850, 560, 190, -2.5, `<div class="bc-t1" data-t style="left:70px;top:80px;font-size:50px;color:#2a1c0a">${esc(s.author || "")}</div><div class="bc-tx" data-t style="left:70px;top:138px;font-size:27px;color:#4a3519">${esc([s.authorSub, s.date].filter(Boolean).join(" · "))}</div>`, 1500)}</div>` };
 };
 
@@ -60,7 +70,7 @@ S1.bcso = (s) => {
   const m = s.mid || {};
   return { cls: "dark bc", html: `<div class="cv" data-tay>${giay("bc2-tieu", 110, 104, 1560, 170, -0.5, `<div class="bc-lb" data-t style="left:56px;top:22px">${esc(s.kicker || "So sánh")}</div><div class="bc-t2" data-t style="left:56px;top:62px;width:1460px;white-space:nowrap">${tx(s.title || "")}</div>`, { dx: 690, at: 100, a: "rise" }).html}
     ${day("bc2-day", L, R, 190, 1000)}${L.html}${R.html}
-    ${the("bc2-the", 830, 500, 260, 220, -4, `<div class="bc-t1" data-t style="left:20px;top:70px;font-size:42px;color:#2a1c0a;width:220px;text-align:center">${esc(m.head || "Ranh giới")}</div><div class="bc-tx" data-t style="left:24px;top:128px;width:212px;font-size:23px;line-height:1.28;color:#4a3519;text-align:center">${tx(m.text || "")}</div>`, 1400)}</div>` };
+    ${the("bc2-the", 830, 500, 260, 220, -4, `<div class="bc-t1" data-t style="left:20px;top:70px;font-size:42px;color:#2a1c0a;width:220px;text-align:center">${esc(m.head || "Ranh giới")}</div><div class="bc-tx" data-t style="left:24px;top:128px;width:212px;font-size:23px;line-height:1.28;color:#4a3519;text-align:center">${tx(m.text || "")}</div>`, 1400, { m: "ranh" })}</div>` };
 };
 
 S1.bcchuong = (s) => {
@@ -78,20 +88,20 @@ S1.bcchuong = (s) => {
 
 // ───────────── các kiểu còn lại: dùng chung tờ tiêu đề + dải chú thích ─────────────
 const tieuDe = (s) => { const len = Math.max(8, plain(s.title || "").length), fs = Math.max(46, Math.min(72, Math.floor(1440 / (0.41 * len))));
-  return giay("bc-tieu", 110, 104, 1560, 170, -0.5, `<div class="bc-lb" data-t style="left:56px;top:22px">${esc(s.kicker || "")}</div><div class="bc-t2" data-t style="left:56px;top:62px;width:1460px;font-size:${fs}px;white-space:nowrap">${tx(s.title || "")}</div>`, { dx: 690, m: "tieu", a: false }); };
+  return giay("bc-tieu", 110, 104, 1560, 170, -0.5, `<div class="bc-lb" data-t style="left:56px;top:22px">${esc(s.kicker || "")}</div><div class="bc-t2" data-t style="left:56px;top:62px;width:1460px;font-size:${fs}px;white-space:nowrap">${tx(s.title || "")}</div>`, { dx: 690, m: "tieu", a: false, kA: "rise" }); };
 const dai = (name, x, y, w, h, inner, at = 1200) => giay(name, x, y, w, h, 0.4, inner, { pin: false, at, cls: "bc-strip", pad: 40 });
 const noi = (ps, sag, at0 = 900) => ps.slice(1).map((q, i) => day(`bc-day${i + 1}`, ps[i], q, sag, at0 + i * 200)).join("");
 const trang = (inner) => ({ cls: "dark bc", html: `<div class="cv" data-tay>${inner}</div>` });
 const chuNho = (txt, x, y, w, size = 27, name = "") => `<div class="bc-cap" data-t style="left:${x}px;top:${y}px;width:${w}px;font-size:${size}px">${tx(txt)}</div>`;
 
 S1.bccauhoi = (s) => { const T = tieuDe(s), it = (s.items || []).slice(0, 3), xs = [110, 700, 1290], rot = [-1.4, 1, -1.1];
-  const ps = it.map((x, i) => giay(`bc-q${i + 1}`, xs[i], 360 + (i === 1 ? 26 : 0), 520, 580, rot[i], `<div class="bc-t1" data-t style="left:44px;top:46px;font-size:160px;color:#c8261e">${pad2(i + 1)}</div><div class="bc-tx" data-t style="left:44px;top:250px;width:432px;font-size:44px;font-weight:700;line-height:1.3">${tx(x.q || x.text || "")}</div>`, { at: 400 + i * 220, go: x.go }));
+  const ps = it.map((x, i) => giay(`bc-q${i + 1}`, xs[i], 360 + (i === 1 ? 26 : 0), 520, 580, rot[i], `<div class="bc-t1" data-t style="left:44px;top:46px;font-size:160px;color:#c8261e">${pad2(i + 1)}</div><div class="bc-tx" data-t style="left:44px;top:250px;width:432px;font-size:44px;font-weight:700;line-height:1.3">${tx(x.q || x.text || "")}</div>`, { at: 400 + i * 220, go: x.go, m: `q${i + 1}`, a: false }));
   return trang(`${noi(ps, 60)}${T.html}${ps.map((p) => p.html).join("")}`); };
 
 S1.bctrich = (s) => { const T = tieuDe(s);
   const q = giay("bc-trich", 110, 330, 1130, 580, -0.9, `<div class="bc-lb" data-t style="left:56px;top:48px;width:1000px">${esc(s.head || "")}</div><div class="bc-tx" data-t style="left:56px;top:120px;width:1020px;font-size:48px;line-height:1.42">${tx("“" + (s.quote || "") + "”")}</div>`, { dx: 420, at: 300 });
-  const tg = the("bc-so", 1330, 300, 440, 560, 4, `<div class="bc-lb" data-t style="left:0;top:96px;width:440px;text-align:center;font-size:34px">${esc(s.artLabel || "Điều")}</div><div class="bc-t1" data-t style="left:0;top:160px;width:440px;text-align:center;font-size:${String(s.art || "").length > 2 ? 250 : 340}px;line-height:1;color:#2a1c0a">${esc(s.art || "")}</div><div class="bc-stp" style="left:60px;bottom:50px;rotate:-6deg"><span data-t>${esc(s.stamp || "")}</span></div>`, 700);
-  return trang(`${day("bc-day", q, { cx: 1550, cy: 322 }, 80, 900)}${T.html}${q.html}${tg}${dai("bc-nguon", 110, 950, 1700, 86, chuNho(s.source || "", 40, 22, 1620, 26), 1100).html}`); };
+  const tg = the("bc-so", 1330, 300, 440, 560, 4, `<div class="bc-lb" data-t style="left:0;top:96px;width:440px;text-align:center;font-size:34px">${esc(s.artLabel || "Điều")}</div><div class="bc-t1" data-t style="left:0;top:160px;width:440px;text-align:center;font-size:${String(s.art || "").length > 2 ? 250 : 340}px;line-height:1;color:#2a1c0a">${esc(s.art || "")}</div>`, 700);
+  return trang(`${day("bc-day", q, { cx: 1550, cy: 322 }, 80, 900)}${T.html}${q.html}${tg}${s.stamp ? stp("bc-khoan", "left:1390px;bottom:270px", -6, s.stamp, 1200) : ""}${dai("bc-nguon", 110, 950, 1700, 86, chuNho(s.source || "", 40, 22, 1620, 26), 1100).html}`); };
 
 S1.bcbang = (s) => { const T = tieuDe(s), cols = s.cols || [], rows = (s.rows || []).slice(0, 5), cx = [48, 608, 1148], cw = [540, 520, 520], rh = 104, H = 76 + rows.length * rh + 130;
   const cell = (txt, j, y, o = "") => `<div class="bc-tx ${o}" data-t style="left:${cx[j] + 12}px;top:${y}px;width:${cw[j] - 24}px;font-size:35px;line-height:1.25">${tx(txt)}</div>`;
@@ -108,8 +118,9 @@ S1.bcnhanh = (s) => { const T = tieuDe(s), r = s.root || {}, B = (s.branches || 
 
 S1.bctinhhuong = (s) => { const T = tieuDe(s), it = (s.items || []).slice(0, 4), xs = [110, 540, 970, 1400], rot = [-1.5, 1.1, -1, 1.4];
   const ps = it.map((x, i) => { const [a, b] = String(x.text || "").split("→").map((z) => z.trim()), dan = /dân sự/i.test(b || "");
-    return giay(`bc-th${i + 1}`, xs[i], 340 + (i % 2) * 20, 400, 540, rot[i], `<div class="bc-t1" data-t style="left:38px;top:34px;font-size:130px;color:#c8261e">${esc(String(x.k || "abcd"[i]).toUpperCase())}</div><div class="bc-tx" data-t style="left:38px;top:190px;width:326px;font-size:35px;font-weight:600;line-height:1.3">${tx(a)}</div><div class="bc-stp ${dan ? "bc-g" : ""}" style="left:30px;bottom:40px;rotate:${[-4, 3, -3, 4][i]}deg;font-size:36px"><span data-t>${esc(b || "")}</span></div>`, { at: 400 + i * 200 }); });
-  return trang(`${noi(ps, 50)}${T.html}${ps.map((p) => p.html).join("")}${s.source ? chuNho(s.source, 110, 990, 1700, 26) : ""}`); };
+    return giay(`bc-th${i + 1}`, xs[i], 340 + (i % 2) * 20, 400, 540, rot[i], `<div class="bc-t1" data-t style="left:38px;top:34px;font-size:130px;color:#c8261e">${esc(String(x.k || "abcd"[i]).toUpperCase())}</div><div class="bc-tx" data-t style="left:38px;top:190px;width:326px;font-size:35px;font-weight:600;line-height:1.3">${tx(a)}</div>`, { at: 400 + i * 200 }); });
+  const dau = it.map((x, i) => { const b = String(x.text || "").split("→").map((z) => z.trim())[1] || ""; return stp(`bc-sd${i + 1}`, `left:${xs[i] + 30}px;bottom:${1080 - (340 + (i % 2) * 20 + 540 - 40)}px`, [-4, 3, -3, 4][i], b, 900 + i * 300, /dân sự/i.test(b) ? "bc-g" : "", 36); });
+  return trang(`${noi(ps, 50)}${T.html}${ps.map((p) => p.html).join("")}${dau.join("")}${s.source ? chuNho(s.source, 110, 990, 1700, 26) : ""}`); };
 
 S1.bcdoiung = (s) => { const T = tieuDe(s), P = (s.pairs || []).slice(0, 5), ps = [];
   const rows = P.map((p, i) => { const y = 350 + i * 150, L = giay(`bc-dl${i + 1}`, 110, y, 740, 128, -0.4, `<div class="bc-tx" data-t style="left:40px;top:24px;width:660px;font-size:34px;font-weight:600;line-height:1.28">${tx(p.left || "")}</div>`, { dx: 330, at: 300 + i * 150 }),
@@ -141,9 +152,11 @@ S1.bcnhanqua = (s) => { const T = tieuDe(s), c = s.cause || {}, st = s.stamp || 
 
 S1.bchoi = (s) => { const T = tieuDe({ kicker: s.kicker, title: s.title }), O = (s.options || []).slice(0, 4), ans = s.answer ?? -1, W = s.whyNot || [];
   const stem = giay("bc-de", 110, 300, 1700, 150, -0.3, `<div class="bc-tx" data-t style="left:50px;top:26px;width:1600px;font-size:34px;line-height:1.38">${tx(s.stem || "")}</div>`, { pin: false, at: 300, m: "de", a: s.reveal ? false : undefined });
+  const stamps = [];
   const ps = O.map((o, i) => { const dung = s.reveal && i === ans, sai = s.reveal && i !== ans, x = 110 + (i % 2) * 870, y = 490 + Math.floor(i / 2) * 230;
-    return giay(`bc-pa${i + 1}`, x, y, 830, 204, [-0.5, 0.5, 0.4, -0.4][i], `<div class="bc-no2" data-t>${"ABCD"[i]}</div><div class="bc-tx" data-t style="left:130px;top:${sai && W[i] ? 22 : 44}px;width:660px;font-size:37px;font-weight:700;line-height:1.2">${tx(o)}</div>${sai && W[i] ? `<div class="bc-tx" data-t style="left:130px;top:112px;width:660px;font-size:25px;color:#b3241c;font-weight:600;line-height:1.25">${tx(W[i])}</div>` : ""}${dung ? `<div class="bc-stp bc-g" style="right:26px;top:22px;rotate:6deg;font-size:44px"><span data-t>Đúng</span></div>` : ""}`, { at: 400 + i * 140, cls: dung ? "bc-ok" : "", m: `pa${i + 1}`, a: s.reveal ? false : undefined }); });
-  return trang(`${T.html}${stem.html}${ps.map((p) => p.html).join("")}${s.reveal && s.why ? dai("bc-vi", 110, 952, 1700, 100, `<div class="bc-tx" data-t style="left:40px;top:18px;width:1620px;font-size:29px;line-height:1.3"><b>Vì sao:</b> ${tx(s.why)}</div>`, 1000).html : ""}`); };
+    if (dung) stamps.push(stp("bc-dung", `right:${1920 - (x + 830 - 26)}px;top:${y + 22}px`, 6, "Đúng", 600, "bc-g", 44));
+    return giay(`bc-pa${i + 1}`, x, y, 830, 204, [-0.5, 0.5, 0.4, -0.4][i], `<div class="bc-no2" data-t>${"ABCD"[i]}</div><div class="bc-tx" data-t style="left:130px;top:${sai && W[i] ? 22 : 44}px;width:660px;font-size:37px;font-weight:700;line-height:1.2">${tx(o)}</div>${sai && W[i] ? `<div class="bc-tx" data-t style="left:130px;top:112px;width:660px;font-size:25px;color:#b3241c;font-weight:600;line-height:1.25">${tx(W[i])}</div>` : ""}`, { at: 400 + i * 140, dx: -330, cls: dung ? "bc-ok" : "", m: `pa${i + 1}`, a: s.reveal ? false : undefined }); });
+  return trang(`${T.html}${stem.html}${ps.map((p) => p.html).join("")}${stamps.join("")}${s.reveal && s.why ? dai("bc-vi", 110, 952, 1700, 100, `<div class="bc-tx" data-t style="left:40px;top:18px;width:1620px;font-size:29px;line-height:1.3"><b>Vì sao:</b> ${tx(s.why)}</div>`, 1000).html : ""}`); };
 
 S1.bcchot = (s) => { const T = tieuDe({ kicker: s.kicker || "Kết luận", title: s.title || "Ba ranh giới cần nhớ" }), ch = (s.chips || []).slice(0, 3), xs = [110, 700, 1290], rot = [-1.2, 1, -1];
   const ps = ch.map((c, i) => giay(`bc-ch${i + 1}`, xs[i], 330, 520, 440, rot[i], `<div class="bc-t1" data-t style="left:40px;top:40px;width:440px;font-size:96px;color:#c8261e;line-height:1.02">${esc(c.n || "")}</div><div class="bc-tx" data-t style="left:40px;top:170px;width:440px;font-size:35px;font-weight:600;line-height:1.32">${tx(c.text || "")}</div>`, { at: 400 + i * 220, go: c.go }));
@@ -158,25 +171,26 @@ S1.bccamon = (s) => { const tm = (s.team || [])[0] || {};
 
 // bcthang: THANG khung hình phạt — mỗi bậc (giá trị chiếm đoạt, khoản…) là một hàng, mỗi tội một thanh trải từ mức THẤP NHẤT đến CAO NHẤT trên trục.
 // Khác bccot (chỉ có mức tối đa) và bcbang (chữ). rows[{label, sub, bars[{name,min,max,text,ct}]}] — ct: true = "hoặc chung thân". order: "up" (mặc định, bậc đầu ở dưới) | "down".
-S1.bcthang = (s) => { const T = tieuDe(s), R = (s.rows || []).slice(0, 5), ax = s.axis || { max: 20, unit: "năm tù", ticks: [0, 5, 10, 15, 20] }, X0 = 560, W = 1050, sc = W / ax.max, RH = R.length >= 4 ? 112 : 130, up = s.order !== "down";
+S1.bcthang = (s) => { const T = tieuDe(s), R = (s.rows || []).slice(0, 5), ax = s.axis || { max: 20, unit: "năm tù", ticks: [0, 5, 10, 15, 20] }, X0 = s.tag ? 500 : 560, W = s.tag ? 840 : 1050, PW = s.tag ? 1400 : 1700, sc = W / ax.max, RH = R.length >= 4 ? 112 : 130, up = s.order !== "down";
   const COL = ["#c8261e", "#1b1713", "#2e6b8a"], names = ((R[0] || {}).bars || []).map((b) => b.name).filter(Boolean), fmt = (v) => String(v).replace(".", ","), top0 = 96, H = top0 + R.length * RH + 74;
   const ticks = (ax.ticks || [0, 5, 10, 15, 20]).map((v) => `<div class="bc-gl" style="left:${X0 + v * sc}px;top:${top0}px;height:${R.length * RH + 6}px"></div><div class="bc-cap2" data-t style="left:${X0 + v * sc - 50}px;top:${top0 + R.length * RH + 18}px;width:100px;text-align:center">${v}</div>`).join("") + `<div class="bc-cap2" data-t style="left:${X0 - 230}px;top:${top0 + R.length * RH + 18}px;width:200px;text-align:right">${esc(ax.unit || "")}</div>`;
   const leg = names.length > 1 ? names.map((n, k) => `<i class="bc-sw" style="left:${X0 + k * 300}px;top:34px;background:${COL[k]}"></i><div class="bc-tx" data-t style="left:${X0 + k * 300 + 42}px;top:28px;width:250px;font-size:28px;font-weight:700">${esc(n)}</div>`).join("") : "";
   const rows = R.map((r, i) => { const y = top0 + (up ? R.length - 1 - i : i) * RH, B = (r.bars || []).slice(0, 3), nb = B.length, y0 = y + (RH - (nb * 46 - 10)) / 2;
-    const bars = B.map((b, k) => { const x = X0 + b.min * sc, w = Math.max(24, (b.max - b.min) * sc), by = y0 + k * 46, txt = b.text || `${fmt(b.min)}–${fmt(b.max)} ${b.unit || "năm"}${b.ct ? " hoặc chung thân" : ""}`, inside = w >= (b.ct ? 400 : 300);
-      return `<div class="bc-bar" style="left:${x}px;top:${by}px;width:${w}px;height:36px;background:${COL[k]}"></div><div class="bc-bl ${inside ? "in" : ""}" data-t style="left:${inside ? x + 14 : x + w + 14}px;top:${by}px;${inside ? `width:${w - 20}px` : ""}">${esc(txt)}</div>`; }).join("");
-    return `${i === s.focus ? `<div class="bc-fo" style="left:30px;top:${y + 4}px;width:1640px;height:${RH - 8}px"></div>` : `<div class="bc-ru" style="left:40px;top:${y + RH - 1}px;width:1620px"></div>`}<div class="bc-tx bc-b" data-t style="left:44px;top:${y + 16}px;width:480px;font-size:${R.length >= 4 ? 31 : 33}px;line-height:1.2">${tx(r.label || "")}</div>${r.sub ? `<div class="bc-tx" data-t style="left:44px;top:${y + (R.length >= 4 ? 64 : 70)}px;width:480px;font-size:23px;line-height:1.25;color:#5a4d36">${tx(r.sub)}</div>` : ""}${bars}`; }).join("");
-  const B = giay("bc-thang", 110, 318, 1700, H, -0.3, `${leg}${ticks}${rows}`, { dx: -700, at: 300 });
-  return trang(`${T.html}${B.html}${s.note ? dai("bc-ghichu", 110, 318 + H + 28, 1700, 80, chuNho(s.note, 40, 20, 1620, 29), 1000).html : ""}`); };
+    const bars = B.map((b, k) => { const x = X0 + b.min * sc, w = Math.max(24, (b.max - b.min) * sc), by = y0 + k * 46, txt = b.text || `${fmt(b.min)}–${fmt(b.max)} ${b.unit || "năm"}${b.ct ? " hoặc chung thân" : ""}`, inside = w >= (s.tag ? (b.ct ? 330 : 200) : (b.ct ? 400 : 300)), sm = s.tag && b.ct;
+      return `<div class="bc-bar" style="left:${x}px;top:${by}px;width:${w}px;height:36px;background:${COL[k]}"></div><div class="bc-bl ${inside ? "in" : ""} ${sm ? "sm" : ""}" data-t style="left:${inside ? x + 14 : x + w + 14}px;top:${by}px;${inside ? `width:${w - 20}px` : ""}">${esc(txt)}</div>`; }).join("");
+    return `${i === s.focus ? `<div class="bc-fo" style="left:30px;top:${y + 4}px;width:${PW - 60}px;height:${RH - 8}px"></div>` : `<div class="bc-ru" style="left:40px;top:${y + RH - 1}px;width:${PW - 80}px"></div>`}<div class="bc-tx bc-b" data-t style="left:44px;top:${y + 16}px;width:480px;font-size:${R.length >= 4 ? 31 : 33}px;line-height:1.2">${tx(r.label || "")}</div>${r.sub ? `<div class="bc-tx" data-t style="left:44px;top:${y + (R.length >= 4 ? 64 : 70)}px;width:480px;font-size:23px;line-height:1.25;color:#5a4d36">${tx(r.sub)}</div>` : ""}${bars}`; }).join("");
+  const B = giay("bc-thang", 110, 318, PW, H, -0.3, `${leg}${ticks}${rows}`, { dx: s.tag ? -520 : -700, at: 300 });
+  const fy = top0 + (up ? R.length - 1 - (s.focus ?? 0) : (s.focus ?? 0)) * RH, tg = s.tag ? the("bc2-the", 1565, 318 + fy + RH / 2 - 110, 260, 220, -4, `<div class="bc-t1" data-t style="left:20px;top:70px;font-size:42px;color:#2a1c0a;width:220px;text-align:center">${esc(s.tag.head || "Ranh giới")}</div><div class="bc-tx" data-t style="left:24px;top:128px;width:212px;font-size:23px;line-height:1.28;color:#4a3519;text-align:center">${tx(s.tag.text || "")}</div>`, 700, { m: "ranh", a: false }) : "";
+  return trang(`${T.html}${B.html}${tg}${s.note ? dai("bc-ghichu", 110, 318 + H + 28, 1700, 80, chuNho(s.note, 40, 20, 1620, 29), 1000).html : ""}`); };
 
 // thẻ chương nhỏ ở góc: cùng tên Morph "chuong" với thẻ số to của slide mở chương → thẻ thu nhỏ vào góc, sang chương mới thì lớn lên thành thẻ mới
-const theNho = (s) => the("bc-chn", 1700, 98, 116, 186, 4, `<div class="bc-lb" data-t style="left:0;top:76px;width:116px;text-align:center;font-size:16px;letter-spacing:.06em">Chương</div><div class="bc-t1" data-t style="left:0;top:98px;width:116px;text-align:center;font-size:66px;line-height:1;color:#2a1c0a">${pad2(s.ch)}</div>`, 500, { m: "chuong", a: false });
+const theNho = (s) => the("bc-chn", 1700, 98, 116, 186, 4, `<div class="bc-lb" data-t style="left:0;top:76px;width:116px;text-align:center;font-size:16px;letter-spacing:.06em">Chương</div><div class="bc-t1" data-t style="left:0;top:98px;width:116px;text-align:center;font-size:66px;line-height:1;color:#2a1c0a">${pad2(s.ch)}</div>`, 500, { m: "chuong", a: false, na: true, noem: true });
 function render(s, deck, ctx, { i, n }) {
-  SL = i; kit.reset();
+  SL = i; MODE = (deck.meta && deck.meta.bc) || "B"; kit.reset();
   const o = S1[s.type](s, deck, ctx);
   let html = wrap(o, s, deck, i, n);
   if (s.ch && !["bcbia", "bcchuong", "bccamon"].includes(s.type)) html = html.replace(/<\/div><\/section>\s*$/, `${theNho(s)}</div></section>`);
-  return [{ id: s.id || `s${i + 1}`, html, tu: true, dur: s.dur || 1000 }];
+  return [{ id: s.id || `s${i + 1}`, html, tu: true, dur: s.dur || (MODE === "B" ? 1200 : 450) }];
 }
 
 const fpSvg = (() => { let g = ""; for (let i = 1; i <= 24; i++) { const r = i * 12.5; g += `<ellipse cx='200' cy='235' rx='${(r * 0.8).toFixed(1)}' ry='${r}' stroke-dasharray='${38 + i * 6} ${8 + (i % 5) * 4} ${70 - i * 2} 11' stroke-dashoffset='${i * 23}'/>`; }
@@ -199,7 +213,7 @@ const css = `
 .bc-stp.bc-g { color: #1f6b44; border-color: #1f6b44; }
 .bc-dim { opacity: .9; }
 .bc-bar { position: absolute; border-radius: 4px; box-shadow: 3px 4px 0 rgba(14,6,0,.28); }
-.bc-bl { position: absolute; font: 700 27px/36px var(--fb); color: #1b1713; white-space: nowrap; } .bc-bl.in { color: #f4ecd8; overflow: hidden; }
+.bc-bl { position: absolute; font: 700 27px/36px var(--fb); color: #1b1713; white-space: nowrap; } .bc-bl.in { color: #f4ecd8; overflow: hidden; } .bc-bl.sm { font-size: 23px; }
 .bc-gl { position: absolute; width: 2px; background: rgba(27,23,19,.2); }
 .bc-cap2 { position: absolute; font: 700 24px/1 var(--fb); color: #5a4d36; }
 .bc-sw { position: absolute; width: 28px; height: 28px; }
