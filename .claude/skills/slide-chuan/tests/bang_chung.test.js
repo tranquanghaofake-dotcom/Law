@@ -59,3 +59,14 @@ test("bcsan: dây là một lớp thẳng có tên Morph; chữ đổi nội dun
   assert.ok(/data-m="ca-expl"[^>]*data-mt="0"/.test(h) && /data-m="tieu"[^>]*data-mt="0"/.test(h), "tờ tiêu đề và tờ giải thích không ghép chữ");
   assert.ok(!/data-m="ca-A"[^>]*data-mt="0"/.test(h), "chữ nhãn A, B (không đổi) vẫn đi theo ảnh");
 });
+test("bcsan: bong bóng thoại ghép Morph theo người nói, đèn bật/tắt đổi màu, biểu cảm đổi nét mặt, con dấu riêng từng slide", () => {
+  const d = { meta: {}, slides: [] }, cast = (mood, on) => ({ A: { x: 140, y: 300, mood }, B: { x: 1450, y: 300 }, yd: { x: 500, y: 490, label: "Ý định", on } });
+  const mk = (mood, on, i, stamps) => bc.render({ type: "bcsan", title: "T", ch: 1, cast: cast(mood, on), noi: [{ who: "A", x: 480, y: 310, t: "Trả tiền cho tôi!" }, { who: "B", x: 1040, y: 310, t: "Tôi chưa có." }], stamps }, d, {}, { i, n: 6 })[0].html;
+  const a = mk("vui", false, 2), b = mk("gian", true, 3, [{ x: 780, y: 560, t: "Điều 174" }]);
+  for (const k of ["ca-noi-A", "ca-noi-B"]) assert.ok(a.includes(`data-m="${k}"`) && b.includes(`data-m="${k}"`), k);
+  const noiA = a.match(/<div class="bc-noi"[^>]*data-l="ca-noi-A"[^>]*>/)[0]; assert.ok(noiA.includes('data-m="ca-noi-A"') && noiA.includes('data-mt="0"'), "chữ trong bóng thoại đổi theo slide, không ghép từng chữ");
+  assert.notStrictEqual(a.match(/ca-A[\s\S]*?<\/svg>/)[0], b.match(/ca-A[\s\S]*?<\/svg>/)[0], "nét mặt đổi theo mood");
+  assert.ok(b.includes("#d3281f") && a.includes("#8f8f8f"), "đèn bật đỏ, tắt xám");
+  assert.ok(b.includes("Điều 174") && !a.includes("Điều 174"), "con dấu chỉ có ở slide khai báo");
+  assert.ok(!/data-m="s3-dau0"/.test(b), "con dấu không có tên Morph chung");
+});

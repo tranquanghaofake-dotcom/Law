@@ -238,4 +238,8 @@ Bài học (12/11/2026): dựng từng slide tĩnh rồi gắn Morph sau thì Mo
 2. Mỗi slide khai báo VỊ TRÍ MỚI của chính họ (`cast`, `expl`); nhân vật nào vắng thì mờ đi. Morph là "nhân vật dời chỗ" — luôn có nghĩa, không có cặp ghép vật khác nghĩa.
 3. Nghĩa nằm ở vị trí: trục A — B là thời gian (trái = trước khi nhận tiền, phải = sau); đèn "ý định" trượt qua túi tiền từ trái sang phải = khác biệt giữa Điều 174 và 175.
 4. Không hiệu ứng vào (chế độ `"C"`). Minh hoạ nhân vật vẽ bằng SVG trong code (`nguoi`, `tui`, `den`), không dùng hình dán có sẵn.
-Trường: `cast{A,B:{x,y,w,rot,cap,sub,deco:"badge"}, tui:{x,y,w,rot,label}, yd:{x,y,w,rot,label}}` · `expl{x,y,w,h, lb,q,n | cols[{h,t}]}` · `caps[{t,x,y,w,size}]` · `bia{…}` (bìa) · `ch` · `sag`.
+Trường: `cast{A,B:{x,y,w,rot,cap,sub,deco:"badge",mood}, tui:{x,y,w,rot,label}, yd:{x,y,w,rot,label,on}}` · `expl{x,y,w,h, lb,q,qs,n,nt | cols[{h,t}]}` · `noi[{who:"A"|"B",x,y,w,h,t,size}]` (bong bóng thoại) · `stamps[{x,y,t,rot,size,xanh}]` · `caps[{t,x,y,w,size}]` · `bia{…}` (bìa) · `ch` · `sag` · `dur` (ms, riêng từng lần chuyển).
+- `mood` đổi nét mặt: `vui` · `gian` · `buon` · `xao` (xảo quyệt) · `nghi`. `yd.on:false` = đèn tắt (xám), mặc định sáng (đỏ, có tia).
+- `noi` kể chuyện bằng lời thoại: tên Morph `ca-noi-A/B` (bóng dời chỗ/biến mất), chữ trong bóng không ghép từng chữ. Mỗi bước chỉ MỘT thay đổi lớn (túi sang phải, đèn sáng, nhân vật chạy khỏi khung) để mắt biết nhìn đâu; `dur` 1000–1300 ms cho bước lớn, ~700 ms cho bước nhỏ.
+- `stamps` là con dấu điểm nhấn (vd. "Điều 174"): tên riêng từng slide nên xuất hiện cùng lúc chuyển cảnh, không ghép Morph.
+- Cỡ chữ tối thiểu cho slide chiếu: câu giải thích ≥ 50 px nếu một dòng, ≥ 34 px với trích luật; bong bóng ≥ 40 px. Khung giải thích một dòng quá trống thì tăng cỡ chữ, đừng thu nhỏ khung giữa các slide (khung phải dời chỗ có nghĩa).
