@@ -2,7 +2,7 @@
 import os, sys, unittest
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from ab import CONFIGS, SENTENCES, order, page, summary  # noqa: E402
+from ab import CONFIGS, SENTENCES, all_configs, order, page, summary, take_file  # noqa: E402
 from gen import collect, text_key  # noqa: E402
 
 
@@ -25,6 +25,21 @@ class BoCau(unittest.TestCase):
         ids = [c['id'] for c in CONFIGS]
         self.assertEqual(len(ids), len(set(ids)))
         self.assertEqual(ids[0], 'hien-tai')  # cột đối chứng luôn có
+
+
+class CauHinh(unittest.TestCase):
+    def test_them_va_loc_giu_thu_tu(self):
+        extra = [{'id': 'may-khac', 'name': 'Máy khác', 'note': '', 'raw': '/x'}]
+        self.assertEqual([c['id'] for c in all_configs(extra)], [c['id'] for c in CONFIGS] + ['may-khac'])
+        self.assertEqual([c['id'] for c in all_configs(extra, {'may-khac', 'tu-nhien'})], ['tu-nhien', 'may-khac'])
+
+    def test_trung_id_la_loi(self):
+        with self.assertRaises(ValueError):
+            all_configs([{'id': 'thoang', 'name': 'x', 'note': ''}])
+
+    def test_ban_tho_quay_vong(self):
+        files = ['k-1.wav', 'k-0.wav']
+        self.assertEqual([take_file(files, k) for k in range(5)], ['k-0.wav', 'k-1.wav', 'k-0.wav', 'k-1.wav', 'k-0.wav'])
 
 
 class Summary(unittest.TestCase):

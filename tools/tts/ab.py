@@ -7,11 +7,14 @@ Chỉ ghi đè tham số LÚC CHẠY — không sửa clone.py, không đụng .
   pip install -r tools/tts/requirements-clone.txt && pip install --no-deps voicefixer==0.1.3   (+ ffmpeg, model như README)
   python tools/tts/ab.py --onnx-dir models/vieneu/onnx_update --out /tmp/ab      # sinh + viết /tmp/ab/index.html
   python tools/tts/ab.py --out /tmp/ab --page-only                               # dựng lại trang từ report.json có sẵn
-  python tools/tts/ab.py --onnx-dir … --out /tmp/ab --only thoang,tu-nhien       # chỉ sinh lại vài cấu hình (chạy tiếp được)
+  python tools/tts/ab.py --onnx-dir … --out /tmp/ab --only thoang,tu-nhien       # chỉ các cấu hình này (cả lúc sinh lẫn trên trang; chạy tiếp được)
+  python tools/tts/ab.py --onnx-dir … --out /tmp/ab --extra them.json            # thêm cấu hình ngoài CONFIGS, kể cả engine khác (xem `raw`)
 
 Thêm/bớt cấu hình: sửa CONFIGS. Bộ câu SENTENCES giữ cố định để các đợt nghe thử so được với nhau.
+Engine khác (không phải VieNeu): sinh sẵn bản thô `<khoá câu>-<số>.wav` vào một thư mục rồi khai cấu hình {"id", "name", "note", "raw": "<thư mục>"}
+trong tệp --extra; các bản đó đi qua đúng khâu chặn lỗi, chọn bản và hậu kỳ như giọng VieNeu nên so được công bằng.
 """
-import argparse, base64, html, json, os, random, sys, time
+import argparse, base64, glob, html, json, os, random, sys, time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
@@ -57,6 +60,21 @@ def order(n: int, row: int, seed: int = 11) -> list[int]:
     idx = list(range(n))
     random.Random(f'{seed}:{row}').shuffle(idx)
     return idx
+
+
+def all_configs(extra: list[dict] | None = None, only: set[str] | None = None) -> list[dict]:
+    """CONFIGS + cấu hình thêm (--extra), lọc theo --only và giữ nguyên thứ tự. Trùng id là lỗi: mỗi id một thư mục tệp."""
+    cfgs = CONFIGS + list(extra or [])
+    ids = [c['id'] for c in cfgs]
+    dup = sorted({i for i in ids if ids.count(i) > 1})
+    if dup:
+        raise ValueError(f'trùng id cấu hình: {dup}')
+    return [c for c in cfgs if not only or c['id'] in only]
+
+
+def take_file(files: list[str], k: int) -> str:
+    """Bản thô thứ k của một câu; khâu chặn lỗi xin nhiều bản hơn số tệp có thì quay vòng."""
+    return sorted(files)[k % len(files)]
 
 
 def summary(configs: list[dict], report: dict) -> list[dict]:
@@ -148,8 +166,30 @@ document.getElementById('chep').onclick=()=>{const t=document.getElementById('va
 
 # ───────────── phần nặng (model) ─────────────
 
+def raw_synth(eng, raw_dir: str):
+    """Thay bước sinh giọng bằng bản thô có sẵn của engine khác: mỗi lần được gọi trả tệp kế tiếp của câu đang làm (eng.ab_key)."""
+    served: dict[str, int] = {}
+
+    def synth(_spoken: str):
+        files = glob.glob(os.path.join(raw_dir, f'{eng.ab_key}-*.wav'))
+        if not files:
+            raise FileNotFoundError(f'thiếu bản thô {eng.ab_key}-*.wav trong {raw_dir}')
+        k = served.get(eng.ab_key, 0)
+        served[eng.ab_key] = k + 1
+        y, sr = eng.sf.read(take_file(files, k), dtype='float32')
+        if y.ndim > 1:
+            y = y.mean(axis=1)
+        return y if sr == eng.tts.sample_rate else eng.librosa.resample(y, orig_sr=sr, target_sr=eng.tts.sample_rate)
+    return synth
+
+
 def apply(eng, clone, cfg: dict, base: tuple):
     """Đặt một cấu hình lên Engine đang chạy (ghi đè hằng số của clone.py trong tiến trình này, không ghi ra tệp)."""
+    eng.__dict__.pop('synth', None)  # bỏ bước sinh thay thế của cấu hình trước
+    eng.voice, eng.ref_emb = base
+    if cfg.get('raw'):
+        eng.synth, eng.restore = raw_synth(eng, cfg['raw']), cfg.get('restore', False)
+        return
     clone.TEMPERATURE, clone.MAX_CHARS = cfg['temperature'], cfg['max_chars']
     eng.tts.engine.default_style_id = cfg['style_id']
     eng.restore = cfg.get('restore', True)
@@ -158,8 +198,6 @@ def apply(eng, clone, cfg: dict, base: tuple):
         a = eng.tts.infer(ANCHOR, voice=eng.voice, temperature=0.5, apply_watermark=False)
         w16 = eng.librosa.resample(eng.np.asarray(a, dtype=eng.np.float32), orig_sr=eng.tts.sample_rate, target_sr=16000)
         eng.ref_emb = eng.enc.embed_utterance(eng.pre(w16, source_sr=16000))
-    else:
-        eng.voice, eng.ref_emb = base
 
 
 def load(out: str) -> tuple[dict, dict]:
@@ -182,21 +220,24 @@ def main():
     ap.add_argument('--out', required=True)
     ap.add_argument('--onnx-dir')
     ap.add_argument('--threads', type=int, default=4)
-    ap.add_argument('--only', default='', help='id cấu hình, cách nhau bằng dấu phẩy (mặc định: tất cả)')
+    ap.add_argument('--only', default='', help='id cấu hình, cách nhau bằng dấu phẩy (mặc định: tất cả) — áp cho cả lúc sinh lẫn các cột trên trang')
+    ap.add_argument('--extra', help='tệp JSON: mảng cấu hình thêm ngoài CONFIGS (kể cả engine khác qua khoá "raw")')
     ap.add_argument('--limit', type=int, default=0, help='chỉ N câu đầu (thử nhanh)')
     ap.add_argument('--page-only', action='store_true')
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
     sents = SENTENCES[: a.limit] if a.limit else SENTENCES
+    extra = []
+    if a.extra:
+        with open(a.extra, encoding='utf-8') as fh:
+            extra = json.load(fh)
+    cfgs = all_configs(extra, {x for x in a.only.split(',') if x})
     report, _ = load(a.out)
     if not a.page_only:
         import clone
-        only = {x for x in a.only.split(',') if x}
         eng = clone.Engine(a.onnx_dir, a.threads)
         base = (eng.voice, eng.ref_emb)
-        for cfg in CONFIGS:
-            if only and cfg['id'] not in only:
-                continue
+        for cfg in cfgs:
             apply(eng, clone, cfg, base)
             os.makedirs(os.path.join(a.out, cfg['id']), exist_ok=True)
             done = report.setdefault(cfg['id'], {})
@@ -206,6 +247,7 @@ def main():
                 if key in done and 'err' in done[key] and os.path.exists(path):
                     continue
                 t0 = time.time()
+                eng.ab_key = key
                 try:
                     y, info = eng.make(s)
                     clone.write_mp3(y, path)
@@ -218,8 +260,8 @@ def main():
                 print(f"{cfg['id']} · {'đạt' if info.get('ok') else 'CỜ'} · {done[key]['secs']} s · {s[:50]}", flush=True)
     report, audio = load(a.out)
     with open(os.path.join(a.out, 'index.html'), 'w', encoding='utf-8') as fh:
-        fh.write(page(sents, CONFIGS, report, audio))
-    for row in summary(CONFIGS, report):
+        fh.write(page(sents, cfgs, report, audio))
+    for row in summary(cfgs, report):
         print(row)
     print('trang nghe thử:', os.path.join(a.out, 'index.html'))
 
