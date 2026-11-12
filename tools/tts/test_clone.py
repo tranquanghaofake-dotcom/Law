@@ -57,6 +57,11 @@ class ChanLoi(unittest.TestCase):
         self.assertEqual(clone.tail_cut(clone.words('Chính xác'), clone.words('Chính xác.')), 2)  # không thừa: giữ nguyên
         self.assertEqual(clone.tail_cut(clone.words('Đáp án cùng loại lại chia sẻ'), ref), 5)  # sai thanh vẫn giữ, chỉ cắt phần thừa
 
+    def test_whisper_viet_khoang_cho_khoan_khong_tinh_loi(self):
+        ref = 'Khoản 1, 2, 5–8 Điều 26 Luật Đất đai 2024.'
+        self.assertEqual(clone.errors('Khoảng 1, khoảng 2, khoảng 5 đến 8 Điều 26 Luật đất đai 2024.', ref), 0)
+        self.assertEqual(clone.errors('Khoảng 1, khoảng 2, khoảng 5 đến 9 Điều 26 Luật đất đai 2024.', ref), 1)
+
     def test_ten_don_vi_truoc_so_phai_dung(self):
         self.assertTrue(clone.numbers_match('Điều 275', 'Điều 275.'))
         self.assertFalse(clone.numbers_match('Điểm 275', 'Điều 275.'))
@@ -64,6 +69,8 @@ class ChanLoi(unittest.TestCase):
         self.assertFalse(clone.numbers_match('khoảng 3.106.', 'Khoản 3 Điều 106.'))
         self.assertTrue(clone.numbers_match('khoảng 3 điều 106.', 'Khoản 3 Điều 106.'))      # Whisper viết "khoảng" cho "khoản"
         self.assertTrue(clone.numbers_match('Điều 309, Điều 317', 'Điều 309, 317.'))            # vi_norm đọc lặp tên đơn vị
+        self.assertTrue(clone.numbers_match('Khoảng 1, khoảng 2, khoảng 5 đến 8 đều 26 luật đất đai 2024', 'Khoản 1, 2, 5–8 Điều 26 Luật Đất đai 2024.'))
+        self.assertFalse(clone.numbers_match('Khoảng 1, khoảng 2, khoảng 5 đến 8.26 luật đất đai 2024', 'Khoản 1, 2, 5–8 Điều 26 Luật Đất đai 2024.'))
         self.assertTrue(clone.numbers_match('điều kiện để được nhập quốc tịch', 'Điều kiện để được nhập quốc tịch.'))  # "điều" thường: không xét
 
     def test_tieng_thua_dau_cau(self):

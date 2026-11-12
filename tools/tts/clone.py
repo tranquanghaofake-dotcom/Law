@@ -65,6 +65,8 @@ def sound(w: str) -> str:
     giọng Bắc đọc x = s, tr = ch, d = gi = r nên Whisper không phân biệt được."""
     if w == 'đê':  # tên chữ cái "đ": Whisper viết thành "D" (dê)
         w = 'dê'
+    if w == 'khoảng':  # Whisper gần như luôn viết "khoảng" cho "khoản" (khoản 1, khoản 2…): không tính là lỗi đọc
+        w = 'khoản'
     d = unicodedata.normalize('NFD', w)
     w = unicodedata.normalize('NFC', ''.join(c for c in d if c not in TONES)) + ''.join(c for c in d if c in TONES)
     for a, b in (('tr', 'ch'), ('gi', 'd'), ('x', 's'), ('r', 'd')):
@@ -138,8 +140,10 @@ UNIT_WORDS = {'điều', 'khoản', 'điểm', 'chương', 'mục'}
 
 
 def citations(text: str) -> list[str]:
-    """Dãy tên đơn vị đứng NGAY TRƯỚC một số (điều 5, khoản 2, chương ba…). "khoảng" tính như "khoản": Whisper không phân biệt hai âm này."""
-    ws = ['khoản' if w == 'khoảng' else w for w in re.findall(r'\w+', normalize(text).lower())]
+    """Dãy tên đơn vị đứng NGAY TRƯỚC một số (điều 5, khoản 2, chương ba…). Whisper hay viết "khoảng" cho "khoản" và
+    "đều" cho "điều" khi đọc nhanh ("khoản 5 đến 8 điều 26"): hai cặp đó tính như nhau; "điểm"/"tiểu" hay mất chữ thì vẫn bị bắt."""
+    same = {'khoảng': 'khoản', 'đều': 'điều'}
+    ws = [same.get(w, w) for w in re.findall(r'\w+', normalize(text).lower())]
     return [w for w, nxt in zip(ws, ws[1:]) if w in UNIT_WORDS and nxt in NUMBER_WORDS]
 
 
@@ -445,12 +449,14 @@ class Engine:
                 a2, cut = self.cut_tail(a, text)
                 if cut:
                     a, c = a2, {**self.score(a2, text), 'tail_cut': True}
+            if not passes(c, text) and len(words(text)) >= SHORT_CHECK:
+                # nghe lại bằng Whisper medium TRƯỚC khi sinh bản mới: Whisper small hay nghe nhầm thuật ngữ,
+                # mà mỗi bản VoxCPM2 mới tốn 1–4 phút trên máy GitHub, nghe lại chỉ vài giây
+                c = self.recheck(c, a, text)
             c['k'] = k
             cands.append((c, a))
             if enough(len(cands), sum(1 for x, _ in cands if passes(x, text)), short):
                 break
-        if not any(passes(x, text) for x, _ in cands) and len(words(text)) >= SHORT_CHECK:
-            cands = [(self.recheck(x, a, text), a) for x, a in cands]
         c, a = min(cands, key=lambda p: rank(p[0], text))
         info = {'text': text, 'spoken': spoken, 'tries': len(cands), 'ok': passes(c, text), **{k: c[k] for k in ('err', 'num', 'head', 'sim', 'pv', 'heard')}, 'rechecked': c.get('rechecked', False), 'tail_cut': c.get('tail_cut', False)}
         return self.post(a), info

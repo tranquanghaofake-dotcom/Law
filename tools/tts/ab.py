@@ -1,6 +1,6 @@
 """Nghe thử A/B giọng đọc: cùng một bộ câu, nhiều cấu hình → MỘT trang HTML tự chứa để nghe mù rồi chọn.
 
-Dùng trước khi đổi bất kỳ tham số giọng nào trong clone.py (đổi là phải sinh lại ~13 800 câu): sinh thử vài câu, nghe, rồi mới chốt.
+Dùng trước khi đổi bất kỳ tham số giọng nào trong clone.py (đổi là phải sinh lại toàn bộ ~28 900 câu): sinh thử vài câu, nghe, rồi mới chốt.
 Chỉ ghi đè tham số LÚC CHẠY — không sửa clone.py, không đụng .tts-cache hay manifest. Máy chỉ đo được lỗi chữ, độ giống giọng,
 độ lên xuống và tốc độ; hay hay dở phải do người nghe quyết định.
 

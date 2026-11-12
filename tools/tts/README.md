@@ -12,7 +12,7 @@ App đọc lời theo 2 lớp (`apps/web/src/lib/fx/tts.svelte.ts`):
 |---|---|---|
 | Chuẩn hoá cách đọc | `vi_norm.py` | số, ngày, số hiệu văn bản (51/2001/QH10), chữ viết tắt (BLDS, NĐ-CP…) → chữ. Tên tệp vẫn tính trên câu GỐC |
 | Sinh giọng | [VoxCPM2](https://github.com/OpenBMB/VoxCPM) (Apache-2.0, 2 tỉ tham số, chạy CPU, ra thẳng 48 kHz) | clone **kèm lời mẫu**: nối tiếp từ `voice/ref.wav` (8 s, đã tách nhạc nền) + đúng lời của clip (`REF_TEXT`) nên giữ cả âm sắc lẫn lối đọc của mẫu. Câu dài hơn 300 ký tự cắt khúc ở dấu câu, mỗi khúc sinh riêng rồi ghép |
-| **Chặn lỗi** | [faster-whisper](https://github.com/SYSTRAN/faster-whisper) small/medium + [Resemblyzer](https://github.com/resemble-ai/Resemblyzer) | nghe lại và so với câu gốc theo ÂM giọng Bắc (x = s, tr = ch, d = gi = r). **Số (điều, khoản, năm) phải đúng tuyệt đối**; câu dưới 6 từ phải đúng hết; câu dài cho phép ~1 lỗi/12 từ vì Whisper cũng nghe nhầm. Câu thường: bản đầu đạt là dùng, không đạt thì sinh lại tối đa 5 lần; câu ngắn (≤ 4 từ, VoxCPM2 dễ đọc trệch): sinh tới khi có 2 bản đạt (tối đa 5), chọn bản giống giọng + biểu cảm nhất. **Câu vẫn đọc sai số thì không vào manifest** — app đọc lời đó bằng giọng trình duyệt, lần chạy sau sinh lại |
+| **Chặn lỗi** | [faster-whisper](https://github.com/SYSTRAN/faster-whisper) small/medium + [Resemblyzer](https://github.com/resemble-ai/Resemblyzer) | nghe lại và so với câu gốc theo ÂM giọng Bắc (x = s, tr = ch, d = gi = r). **Số (điều, khoản, năm) phải đúng tuyệt đối**; câu dưới 6 từ phải đúng hết; câu dài cho phép ~1 lỗi/12 từ vì Whisper cũng nghe nhầm. Câu thường: bản đầu đạt là dùng; bản trượt được nghe lại bằng Whisper medium trước, vẫn trượt mới sinh lại (tối đa 5 lần); câu ngắn (≤ 4 từ, VoxCPM2 dễ đọc trệch): sinh tới khi có 2 bản đạt (tối đa 5), chọn bản giống giọng + biểu cảm nhất. **Câu vẫn đọc sai số thì không vào manifest** — app đọc lời đó bằng giọng trình duyệt, lần chạy sau sinh lại |
 | Hậu kỳ | [pedalboard](https://github.com/spotify/pedalboard) | ấm/dày (low shelf 160 Hz, bớt đục 350 Hz, nén nhẹ) → de-esser → −16 LUFS, đỉnh ≤ −1 dBFS |
 
 Vì sao là bản này: hai vòng nghe mù ngày 12/11/2026 (xem `ab.py`) — VieNeu v3 Turbo với 5 cấu hình, rồi VoxCPM2 với 3 cách clone — Hào chọn "VoxCPM2 clone kèm lời mẫu".
@@ -22,7 +22,7 @@ Test phần thuần: `python3 -m unittest tools/tts/test_clone.py tools/tts/test
 
 ## Nghe thử trước khi đổi giọng (`ab.py`)
 
-Đổi tham số là phải sinh lại ~13 800 câu, nên nghe thử trước: `ab.py` sinh **12 câu thật của app × các cấu hình trong `CONFIGS`** (cột đầu luôn là bản đang chạy), rồi viết một trang `index.html` tự chứa. Trang ẩn tên cấu hình và xáo thứ tự từng câu (nghe mù); chọn bản hay nhất ở mỗi câu rồi bấm "Xem kết quả" để thấy số phiếu kèm số đo của máy (lỗi chữ, độ giống giọng, độ lên xuống cao độ, tốc độ).
+Đổi tham số là phải sinh lại toàn bộ (~28 900 câu, hơn một ngày máy GitHub), nên nghe thử trước: `ab.py` sinh **12 câu thật của app × các cấu hình trong `CONFIGS`** (cột đầu luôn là bản đang chạy), rồi viết một trang `index.html` tự chứa. Trang ẩn tên cấu hình và xáo thứ tự từng câu (nghe mù); chọn bản hay nhất ở mỗi câu rồi bấm "Xem kết quả" để thấy số phiếu kèm số đo của máy (lỗi chữ, độ giống giọng, độ lên xuống cao độ, tốc độ).
 
 ```bash
 python tools/tts/ab.py --out /tmp/ab     # chạy lại thì làm tiếp phần thiếu
@@ -45,7 +45,9 @@ Actions → **Giọng đọc** → Run workflow:
 
 **Cách đọc đúng logic** (`vi_norm.py`, có test): dãy "Khoản 2, 3, 4" → "khoản hai, khoản ba, khoản bốn"; "VBHN 67/VBHN-VPQH 2025" → "văn bản hợp nhất số sáu mươi bảy năm hai nghìn không trăm hai mươi lăm"; ký hiệu (= ≥ · ×…), đơn vị (ha, cm3…), số La Mã, khoảng số "24.000–90.000" đọc ra chữ; bỏ khỏi lời đọc đường dẫn Drive, tên tệp, tên miền, mã học phần — nhưng GIỮ cảnh báo độ tin cậy ("chưa đối chiếu nguyên văn", "quan điểm học thuật"). Đã quét cả ~13 000 câu: không còn chữ số, ký hiệu hay chữ viết tắt chưa đọc được.
 
-Sinh lại toàn bộ ~13 800 câu: mặc định chia 80 phần, chạy 20 máy cùng lúc (miễn phí với repo public). Mỗi bản tốn khoảng 4 giây máy cho 1 giây âm thanh trên máy có AMX, khoảng 9 giây trên máy không có (đo giả lập AVX2). Phần nào chưa xong sau 5 giờ 20 phút thì tự dừng, lần chạy sau làm tiếp; giọng cũ vẫn ở trên web cho tới khi bước gộp xong. Sau đó workflow tự chạy khi dữ liệu luật đổi và mỗi tuần một lần — chỉ sinh câu mới.
+Sinh lại toàn bộ (~28 900 câu, ~29 giờ âm thanh): mặc định chia 200 phần, chạy 20 máy cùng lúc (miễn phí với repo public). Đo thật trên máy GitHub ngày 12/11/2026 (CPU không có AMX, float32): mỗi câu tốn khoảng 40 giây cố định + 10 giây cho mỗi giây âm thanh, tức 600–800 giờ máy ≈ **1,5–2 ngày**. Máy có AMX (bfloat16) nhanh gấp đôi.
+
+**Đổi kiểu giọng không làm web mất giọng**: bộ mới được gom trong thư mục chờ `.tts-cache/next`; web giữ bộ cũ cho tới khi bộ mới phủ 99,5% số câu rồi mới thay. Phần nào chưa xong sau 5 giờ 20 phút thì tự dừng; còn thiếu mà lần chạy có thêm tệp thì workflow tự chạy tiếp. Muốn dừng hẳn: huỷ lần chạy trong tab Actions — phần đã sinh vẫn nằm trong thư mục chờ. Sau đó workflow tự chạy khi dữ liệu luật đổi và mỗi tuần một lần, chỉ sinh câu mới (~1 phút máy mỗi câu).
 
 **Báo cáo**: trang tóm tắt của lần chạy (và artifact `bao-cao-giong-doc`) liệt kê câu bị gắn cờ: câu gốc, chữ Whisper nghe được, số lỗi. Chỉ cần nghe các câu này; đọc sai thì sửa cách đọc trong `vi_norm.py` (chữ viết tắt mới, số hiệu lạ) rồi chạy lại.
 

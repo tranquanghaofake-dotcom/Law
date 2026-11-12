@@ -63,6 +63,10 @@ class ChuanHoaCau(unittest.TestCase):
         self.assertEqual(normalize('Các điểm a, b, c, d và đ khoản 1.'), 'các điểm a, bê, xê, dê và đê khoản một.')
         self.assertEqual(normalize('Nghị quyết 51/2001/QH10.'), 'nghị quyết số năm mươi mốt năm hai nghìn không trăm lẻ một quốc hội mười.')
 
+    def test_so_la_ma_sau_quyen_tap(self):
+        self.assertIn('quyển hai', normalize('Đại Việt sử ký toàn thư, Bản kỷ, quyển II.').lower())
+        self.assertIn('tập ba', normalize('Giáo trình, tập III.').lower())
+
     def test_ky_hieu_don_vi_la_ma(self):
         self.assertEqual(normalize('Đáp án: Nhà nước · phải tham gia.'), 'đáp án, nhà nước, phải tham gia.')
         self.assertEqual(normalize('Tự doanh = đầu tư bằng tiền của mình.'), 'tự doanh là đầu tư bằng tiền của mình.')

@@ -198,8 +198,8 @@ def normalize(text: str) -> str:
     t = re.sub(r'([A-ZĐ]{2,})(\d+)', r'\1 \2', t)
     for k in sorted(ABBR, key=len, reverse=True):
         t = re.sub(rf'(?<![\w]){re.escape(k)}(?![\w])', ABBR[k], t)
-    # số La Mã sau "chương/phần/mục/khoá"
-    t = re.sub(r'\b(Chương|chương|Phần|phần|Mục|mục|Khoá|khoá|Khóa|khóa)\s+([IVXLC]{1,7})\b',
+    # số La Mã sau "chương/phần/mục/khoá/quyển/tập"
+    t = re.sub(r'\b(Chương|chương|Phần|phần|Mục|mục|Khoá|khoá|Khóa|khóa|Quyển|quyển|Tập|tập)\s+([IVXLC]{1,7})\b',
                lambda m: f'{m.group(1)} {number_words(roman(m.group(2)))}' if roman(m.group(2)) else m.group(0), t)
     t = re.sub(r'(\d+(?:[.,]\d+)*)\s*%', r'\1 phần trăm', t)
     t = re.sub(r'(\d+)/(\d+)/(\d{4})', lambda m: f'ngày {m.group(1)} tháng {m.group(2)} năm {m.group(3)}', t)

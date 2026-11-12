@@ -1,7 +1,9 @@
 # Giọng đọc clone (tools/tts/clone.py, VoxCPM2 kèm lời mẫu): chia câu cho nhiều máy chạy song song → gộp vào cache Actions → deploy lấy cache chép vào trang.
 # Chạy tay: Actions → "Giọng đọc" → Run workflow. Chạy lại / tự chạy chỉ sinh câu mới hoặc câu đã sửa.
-# Sinh lại toàn bộ (~13 800 câu) là việc nặng: 80 phần, 20 máy cùng lúc; phần nào chưa xong trong 5 giờ 20 phút thì tự dừng, lần chạy sau làm tiếp.
-# Giọng cũ vẫn ở trên web cho tới khi bước gộp của lần chạy mới xong. Báo cáo (câu cần nghe lại) ở trang tóm tắt của lần chạy.
+# Sinh lại toàn bộ (~28 900 câu, ~29 giờ âm thanh) là việc nặng: đo trên máy GitHub mỗi câu tốn ~40 giây + ~10 giây cho mỗi giây âm thanh,
+# tức khoảng 600–800 giờ máy ≈ 1,5–2 ngày với 20 máy cùng lúc. Chia 200 phần (~3–4 giờ/phần); phần nào chưa xong trong 5 giờ 20 phút thì tự dừng.
+# Đổi kiểu giọng: bộ mới gom trong thư mục chờ, web giữ giọng cũ tới khi bộ mới phủ 99,5% số câu; còn thiếu thì workflow tự chạy tiếp.
+# Báo cáo (câu cần nghe lại) ở trang tóm tắt của lần chạy.
 name: Giọng đọc
 
 on:
@@ -9,7 +11,7 @@ on:
     inputs:
       shards:
         description: Số phần chia việc (chạy tối đa 20 máy cùng lúc; mỗi phần phải xong trong 5 giờ 20 phút)
-        default: '80'
+        default: '200'
       limit:
         description: Chỉ sinh N câu đầu để thử (0 = tất cả)
         default: '0'
@@ -53,7 +55,7 @@ jobs:
           key: tts-${{ github.run_id }}
           restore-keys: tts-
       - id: plan
-        run: python3 tools/tts/clone.py plan --texts .tts-texts.json --cache .tts-cache --shards "${{ inputs.shards || '80' }}" --limit "${{ inputs.limit || '0' }}" --sample "${{ inputs.sample || '0' }}" --out plan --github-output "$GITHUB_OUTPUT"
+        run: python3 tools/tts/clone.py plan --texts .tts-texts.json --cache .tts-cache --shards "${{ inputs.shards || '200' }}" --limit "${{ inputs.limit || '0' }}" --sample "${{ inputs.sample || '0' }}" --out plan --github-output "$GITHUB_OUTPUT"
       - uses: actions/upload-artifact@v6
         with:
           name: plan
@@ -61,7 +63,7 @@ jobs:
             plan
             .tts-texts.json
           include-hidden-files: true
-          retention-days: 3
+          retention-days: 7
 
   gen:
     needs: plan
@@ -109,7 +111,7 @@ jobs:
         with:
           name: out-${{ matrix.shard }}
           path: out
-          retention-days: 3
+          retention-days: 7
 
   merge:
     needs: [plan, gen]
