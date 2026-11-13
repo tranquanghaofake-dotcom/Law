@@ -11,7 +11,8 @@
 // --strict  dừng (mã 3) khi deck dùng nền, khung chung mà prep.json chưa ghi người dùng đồng ý (chapNhanNenChung) — lỗi L10.
 const fs = require("fs"), path = require("path"), { pathToFileURL } = require("url");
 const { render, plain, TYPES } = require("../stage/templates");
-const { doiMau } = require("./bang_mau");
+const { doiMau, doiMauBang } = require("./bang_mau");
+const DA = require("./da");   // da theo môn: chất liệu của môn phủ mọi type thường (spec: một tầng hình ảnh, 11/2026)
 const { kiemDeck } = require("./kiem");
 let canh = { TYPES: [], render: null, css: "", script: "" };
 const bc = require("./bang_chung");
@@ -37,8 +38,11 @@ const decoGan = (s, ctx, i, html, prev = new Set(), now = new Set()) => { const 
   return g ? html.replace(/<\/section>\s*$/, g + "</section>") : html; };
 function dungHtml(deck, { deckDir = process.cwd(), mau, chuyen } = {}) {
   const src = deck.slides || []; if (!src.length) throw new Error("deck.json không có slide nào.");
-  const H = deck.meta?.hinh || {}; mau = mau || H.mau || deck.meta?.stage?.palette || "son"; chuyen = chuyen || H.chuyen || "morph";
-  const tomau = doiMau(mau), here = __dirname, url = (p) => pathToFileURL(p).href;
+  const H = deck.meta?.hinh || {}; chuyen = chuyen || H.chuyen || "morph";
+  // da: meta.da → bộ hình bc / qt → meta.kit / meta.style cũ → đề tài khớp → meta.kind. Có da thì màu của da thay bảng màu (--mau chỉ dùng khi da = none)
+  const da = DA.chonDa(deck, { bcTypes: bc.TYPES, qtTypes: qt.TYPES }), daTen = da.ten;
+  mau = mau || H.mau || deck.meta?.stage?.palette || "son";
+  const tomau = daTen ? doiMauBang(DA.daMau(daTen)) : doiMau(mau), here = __dirname, url = (p) => pathToFileURL(p).href;
   // ghi chú thuyết trình: slide.notes, hoặc meta.notesFile (các phần cách nhau bằng dòng ---, dòng "# tên" đầu phần bị bỏ)
   let parts = [];
   if (deck.meta?.notesFile && fs.existsSync(path.resolve(deckDir, deck.meta.notesFile))) parts = fs.readFileSync(path.resolve(deckDir, deck.meta.notesFile), "utf8").split(/^\s*---\s*$/m).map((p) => p.replace(/^\s*#.*$/m, "").trim());
@@ -51,10 +55,12 @@ function dungHtml(deck, { deckDir = process.cwd(), mau, chuyen } = {}) {
     const note = s.notes || parts[i] || "";
     if (qt.TYPES.includes(s.type)) { const secs = qt.render(s, deck, ctx, { i, n, st }); secs.forEach((sec) => out.push({ ...sec, notes: note, src: i })); st.prev = new Set(); return; }
     if (bc.TYPES.includes(s.type)) { const secs = bc.render(s, deck, ctx, { i, n, st }); secs.forEach((sec) => out.push({ ...sec, notes: note, src: i })); st.prev = new Set(); return; }
-    if (canh.TYPES.includes(s.type)) { const secs = canh.render(s, deck, ctx, { i, n, st }); secs.forEach((sec, k) => out.push({ ...sec, notes: sec.notes ?? (k === 0 ? note : ""), src: i })); if (s.type === "book") sauSach = out.length; return; }
+    if (canh.TYPES.includes(s.type)) { const secs = canh.render(s, deck, ctx, { i, n, st }); secs.forEach((sec, k) => out.push({ ...sec, html: daTen ? DA.khungSlide(sec.html, daTen) : sec.html, notes: sec.notes ?? (k === 0 ? note : ""), src: i })); if (s.type === "book") sauSach = out.length; return; }
     const prev = st.prev || new Set(); st.prev = new Set();
     const r = render(s, deck, ctx, i, n); if (r.generic) generic.push(`#${i + 1} ${s.type}`);
-    out.push({ id: s.id || `s${i + 1}`, html: decoGan(s, ctx, i, r.html, prev, st.prev), tu: true, notes: note, src: i, trans: s.trans, dur: s.dur });
+    let h = decoGan(s, ctx, i, r.html, prev, st.prev);
+    if (daTen) h = DA.phuSlide(h, daTen, { type: s.type, i, coHinhDan: !!((s.emoji && ctx.hasEmoji(s.emoji)) || s.cutout), coAnh: !!ctx.img(s.photo), art: s.art });
+    out.push({ id: s.id || `s${i + 1}`, html: h, tu: true, notes: note, src: i, trans: s.trans, dur: s.dur });
   });
   // nút Mục lục ở thanh đầu slide (khi deck có slide toc): chữ "Mục lục" + cuốn sách thu nhỏ nếu deck mở bằng cảnh book
   if (tocId) out.forEach((o, k) => { if (o.src === toc || !/class="bar"/.test(o.html)) return;
@@ -73,6 +79,7 @@ ${tomau(css)}
 /* bản PowerPoint: bỏ lớp hạt in phủ toàn slide (lớp ảnh và nền phải cùng chất), bỏ chế độ trình chiếu trong trình duyệt */
 .s::after { display: none !important; }
 ${tomau((canh.css || "") + (bc.css || "") + (qt.css || ""))}
+${daTen ? DA.daCss(daTen) : ""}
 </style></head>
 <body>
 ${tomau(body)}
@@ -81,10 +88,11 @@ ${tomau(body)}
 <script>
 ${canh.script || ""}
 hinhKhiSanSang(() => document.querySelectorAll("section.s").forEach((S) => hinhDatHinhDan(S)));
-hinhKhiSanSang(() => document.querySelectorAll("section.s[data-tu]").forEach((S) => hinhTuGan(S, ${JSON.stringify({ nhip: +H.nhip || 110 })})));
+hinhKhiSanSang(() => document.querySelectorAll("section.s[data-tu]").forEach((S) => hinhDatVatDa(S)));
+hinhKhiSanSang(() => document.querySelectorAll("section.s[data-tu]").forEach((S) => hinhTuGan(S, ${JSON.stringify({ nhip: +H.nhip || 110, fx: daTen ? DA.CHUYEN[DA.DA[daTen].chuyen] : null })})));
 </script>
 </body></html>`;
-  return { html, generic, missing, n: out.length, mau, chuyen };
+  return { html, generic, missing, n: out.length, mau: daTen ? `da ${daTen}` : mau, chuyen, da };
 }
 
 // tự kiểm trong trang: chữ tràn khỏi slide, khối tràn đáy — báo để sửa deck.json (cắt chữ, tách slide), không âm thầm cắt
@@ -110,7 +118,9 @@ async function dung({ deckPath, outPath, mau, chuyen, soat = false, nhungFont = 
   const work = path.join(path.dirname(outPath), path.basename(outPath, ".pptx") + "_lop");
   fs.rmSync(work, { recursive: true, force: true }); fs.mkdirSync(work, { recursive: true });
   const htmlPath = path.join(work, "deck.html"); fs.writeFileSync(htmlPath, r.html);
-  console.log(`✓ ${deck.slides.length} slide trong deck.json → ${r.n} slide PowerPoint · bảng màu ${r.mau} · chuyển cảnh ${r.chuyen}`);
+  console.log(`✓ ${deck.slides.length} slide trong deck.json → ${r.n} slide PowerPoint · ${r.da.ten ? `da "${r.da.ten}" (${DA.DA[r.da.ten].mon}) — ${r.da.lyDo}` : `nền chung, bảng màu ${r.mau}`} · chuyển cảnh ${r.chuyen}`);
+  if (r.da.loi) { const e = new Error(r.da.lyDo); e.code = 2; throw e; }
+  if (r.da.goiY) console.log(`ℹ chưa ghi meta.da — tự chọn da "${r.da.ten}" theo đề tài; ghi "meta": { "da": "${r.da.ten}" } để cố định`);
   const kiem = kiemDeck(deck, { deckDir }); for (const m of kiem) console.log(m);
   // --strict: deck nền chung chưa được người dùng đồng ý thì không dựng (lỗi L10 — references/loi-da-biet-2026-11.md mục E)
   const chan = strict ? kiem.find((m) => m.startsWith("⚠ Nền chung")) : null;

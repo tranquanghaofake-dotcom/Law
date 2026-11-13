@@ -31,6 +31,19 @@
       const l = parseFloat(e.style.left), t = parseFloat(e.style.top); dat.push({ l, t, r: l + s, b: t + s });
     }
   };
+  // đồ vật tiền cảnh của da (.da-vat[data-da-vat], hinh/da.js): đặt vào góc trống đầu tiên không chạm chữ / thẻ / hình; không còn chỗ thì bỏ
+  window.hinhDatVatDa = (S) => {
+    const v = S.querySelector(".da-vat[data-da-vat]"); if (!v) return;
+    const B = S.getBoundingClientRect(), k = S.offsetWidth / B.width, s = v.offsetWidth, vat = [];
+    for (const el of S.querySelectorAll(".h, .k, .sub, .note, .card, table, .stat, .body svg, .body img, [data-in], .emo, .da-art")) {
+      if (el.closest(".da-vat")) continue; const q = el.getBoundingClientRect(); if (!q.width || !q.height) continue;
+      vat.push({ l: (q.left - B.left) * k - 30, t: (q.top - B.top) * k - 30, r: (q.right - B.left) * k + 30, b: (q.bottom - B.top) * k + 30 }); }
+    const trung = (l, t) => vat.some((q) => l < q.r && l + s > q.l && t < q.b && t + s > q.t);
+    const thu = [[1660, 830], [1660, 110], [1480, 830], [70, 840], [1660, 470], [1300, 840]];
+    const ok = thu.find(([l, t]) => !trung(l, t));
+    if (!ok) { v.remove(); return; }
+    v.style.left = ok[0] + "px"; v.style.top = ok[1] + "px"; v.style.rotate = (ok[0] > 900 ? -8 : 7) + "deg";
+  };
   window.hinhCuaSo = (S, g, fx, fy) => {
     const Z = +g.dataset.z || 1, R = g.offsetWidth / 2, RH = g.offsetHeight / 2, cl = S.querySelector(g.dataset.of).cloneNode(true);
     // bản sao chỉ để nhìn: bỏ mọi thuộc tính data-* để bộ dựng không coi nó là nội dung

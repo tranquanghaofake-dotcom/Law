@@ -46,13 +46,13 @@
     // 3) khối vào theo thứ tự (data-in): có hình → lớp ảnh có hiệu ứng; chỉ có chữ → hiệu ứng gắn thẳng lên từng hộp chữ
     const mine = (el, c) => c.closest("[data-in]") === el;                   // c thuộc khối này, không thuộc khối con vào riêng
     S.querySelectorAll("[data-in]").forEach((el) => {
-      const i = +el.style.getPropertyValue("--i") || 0, at = Math.round(opt.tre + i * opt.nhip), fx = el.getAttribute("data-in") === "pop" ? "pop" : "rise";
+      const i = +el.style.getPropertyValue("--i") || 0, at = Math.round(opt.tre + i * opt.nhip), fx = el.getAttribute("data-in") === "pop" ? "pop" : "rise", fxL = opt.fx && fx === "rise" ? opt.fx : fx;   // fxL: kiểu hiện thẻ của da (đóng dấu, lật lịch, trượt…)
       const cs = getComputedStyle(el), R = el.getBoundingClientRect(); let vis = el.matches(GFX) || painted(cs) || pseudo(el), pad = shadow(cs);
       for (const c of el.querySelectorAll("*")) { if (!mine(el, c)) continue; if (c.matches(GFX)) vis = true; if (c.closest("svg") && !c.matches("svg")) continue;
         const k = getComputedStyle(c); if (k.display === "none" || k.visibility === "hidden") continue; const pv = painted(k) || pseudo(c) || c.matches(GFX); if (pv) vis = true;
         const q = c.getBoundingClientRect(); if (!q.width && !q.height) continue;
         if (pv) pad = Math.max(pad, Math.max(0, R.left - q.left, q.right - R.right, R.top - q.top, q.bottom - R.bottom) + shadow(k)); }
-      if (vis) { el.setAttribute("data-l", "khoi-" + (i + 1)); el.setAttribute("data-a", fx); el.setAttribute("data-at", at); el.setAttribute("data-pad", Math.min(260, Math.ceil(pad) + 3)); }
+      if (vis) { el.setAttribute("data-l", "khoi-" + (i + 1)); el.setAttribute("data-a", fxL); el.setAttribute("data-at", at); el.setAttribute("data-pad", Math.min(260, Math.ceil(pad) + 3)); }
       else el.setAttribute("data-chu", fx + "," + at);
     });
     blocks.forEach((tb) => { const host = tb.closest("[data-in]"); if (!host || host.hasAttribute("data-l") || tb.hasAttribute("data-a")) return;
