@@ -209,12 +209,14 @@ function tienDoCss(kind, c, S) {
 const doSang = (h) => { const f = (c) => { c /= 255; return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4); }; const v = [0, 2, 4].map((i) => parseInt(h.slice(i, i + 2), 16)); return 0.2126 * f(v[0]) + 0.7152 * f(v[1]) + 0.0722 * f(v[2]); };
 const tuongPhan = (a, b) => { const [x, y] = [doSang(a), doSang(b)].sort((p, q) => q - p); return (x + 0.05) / (y + 0.05); };
 const vangTren = (vang, nen, nguong = 3.6) => { let v = vang; for (let k = 1; k <= 8 && tuongPhan(v, nen) < nguong; k++) v = mix(vang, "FFFFFF", k * 0.1); return v; };   // 3,6: biên cho hoạ tiết nền làm sáng màu nhấn; chữ thường (< 24 px) cần 4,5
+// chữ phụ (--mut) trên nền giấy của da: pha dần về màu mực tới ≥ 4,6 : 1 (chữ thường 22–26 px cần 4,5; ho-so / giay từng chỉ 4,37 — số trang "/ 20")
+const xamDu = (xam, nen, muc, nguong = 4.6) => { let v = xam; for (let k = 1; k <= 10 && tuongPhan(v, nen) < nguong; k++) v = mix(xam, muc, k * 0.08); return v; };
 function daCss(ten) {
   const c = DA[ten], S = `.s.da-${ten}`, T = `${S}[data-tu]`, A = c.acc;
   const dark = mix(A, "000000", 0.6), dark2 = mix(A, "000000", 0.45);
   const nenL = nenSvg(c.nen, c, false), nenD = nenSvg(c.nen, c, true);
   let css = `${S} { --da-tint: ${rgba(A, 0.1)}; --sec-tint: ${rgba(A, 0.88)}; }
-    ${S}.light { ${c.to ? "" : `background-color: #${c.page}; ${nenL ? `background-image: ${b64(nenL)}; background-size: 100% 100%;` : ""}`} --fg: #${c.ink}; --mut: #${c.muted}; --hl: #${A}; --card: #fff; --rule: #${c.line}; --edge: #${A}; --bad: #${c.bad}; --good: #${c.good}; --shadow: ${rgba(c.ink, 0.25)}; color: #${c.ink}; }
+    ${S}.light { ${c.to ? "" : `background-color: #${c.page}; ${nenL ? `background-image: ${b64(nenL)}; background-size: 100% 100%;` : ""}`} --fg: #${c.ink}; --mut: #${xamDu(c.muted, c.page, c.ink)}; --hl: #${A}; --card: #fff; --rule: #${c.line}; --edge: #${A}; --bad: #${c.bad}; --good: #${c.good}; --shadow: ${rgba(c.ink, 0.25)}; color: #${c.ink}; }
     ${S}.dark { ${c.to ? "" : `background-color: #${dark}; ${nenD ? `background-image: ${b64(nenD)}; background-size: 100% 100%;` : ""}`} --hl: #${c.gold}; --card: #${dark2}; --rule: ${rgba("FFFFFF", 0.28)}; }
     ${S}.dark::before { background: radial-gradient(closest-side, ${rgba(mix(A, "FFFFFF", 0.35), 0.35)}, transparent 72%); }
     ${S}.red { ${c.to ? "" : `background-color: #${A}; ${nenD ? `background-image: ${b64(nenD)}; background-size: 100% 100%;` : ""}`} --hl: #${vangTren(c.gold, A)}; --card: #${dark2}; --bad: #${mix(c.bad, "FFFFFF", 0.55)}; --good: #fff; }

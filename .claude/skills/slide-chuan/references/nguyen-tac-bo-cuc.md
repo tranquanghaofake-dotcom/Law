@@ -26,7 +26,7 @@ Luật đi kèm:
 - **Không lặp một vật hai lần trên cùng slide**: vật vẽ đặt cạnh ảnh đã có vật thật đó, hai biểu tượng giống nhau, cùng một con số hai đơn vị.
 - **Vị trí suy ra được**: mỗi thứ canh theo lưới lề hoặc theo vật nó thuộc về (dải đánh dấu mọc từ mép trang sổ, chú thích cùng hàng với năm nó giải thích); không có toạ độ "đặt cho đẹp".
 - **Thẳng theo NÉT chữ, không theo hộp chữ**: chữ trưng bày ≥ 48 px tự **căn lề quang học** (`hinh/hinh.js`: dịch trái đúng khoảng trống trước nét của chữ đầu — Anton "N" 186 px trống 7 px) → nét tiêu đề thẳng với dòng chữ nhỏ; đừng bù tay bằng toạ độ (100, 96…), sẽ bị bù hai lần. Lề trong của nhãn = lề trong của thẻ (24 px) để chữ chung cột. `scripts/soat_chi_tiet.js` (tự chạy trong `--soat`) báo chỗ lệch 4–10 px.
-- **Ngắt dòng tại nghĩa**: công thức xuống dòng tại dấu "=", nhãn điều luật một dòng ("Đ.40, 41"), không để trình duyệt tự ngắt giữa một cụm.
+- **Ngắt dòng tại nghĩa**: công thức xuống dòng tại dấu "=", nhãn điều luật một dòng ("Đ.40, 41"), không để trình duyệt tự ngắt giữa một cụm. Mọi slide có `text-wrap: pretty` (`hinh/hinh.css`): trình duyệt tự né dòng cuối một chữ, `build.js` chép đúng chỗ xuống dòng sang PPTX. Từ ghép tiếng Việt ("hệ / thống") máy không biết — đọc lại tiêu đề hai dòng, ngắt sai thì ghi `\n` (xuống dòng chủ ý) hoặc `\u00a0` (dấu cách không ngắt: `"hệ\u00a0thống"`) trong chuỗi, hoặc sửa câu.
 - **Thứ tự xuất hiện theo logic**: thẻ căn cứ của luật mới chỉ hiện ở bước "luật mới"; số ô năm khớp con số trong tình huống.
 - Cách soát: lập bảng `chi tiết → nghĩa → luật` cho bộ hình (mẫu: `references/canh.md` mục 10); chi tiết nào không điền được cột "nghĩa" thì bỏ hoặc đổi thành chi tiết mang nghĩa (bong bóng trang trí → vân bảo an đúng của bìa sổ BHXH).
 

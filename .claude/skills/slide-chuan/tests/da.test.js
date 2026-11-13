@@ -137,3 +137,10 @@ test("dấu ✓ / chữ nhấn / chú thích ảnh đọc được ở mọi da 
     }
   } finally { await b.close(); }
 });
+
+test("trường tầng hình ảnh không đọc thì phải nói ra: mode lệch nền của type, transition / build / motion", () => {
+  const d = deck({ da: "giay" }, [{ type: "cover", title: "Bìa" }, { type: "statement", title: "Bước ngoặt", mode: "a" }, { type: "cards", title: "Ba thẻ", mode: "d", items: [{ name: "A" }], build: true }]);
+  const r = dungHtml(d, { deckDir: path.join(__dirname, "..") });
+  assert.deepEqual(r.boMode, ['slide 3 (cards) mode "d"'], "statement nhận mode a; cards không đổi nền → phải báo");
+  assert.ok(kiemDeck(d).some((m) => /"build" bị bỏ qua: slide 3/.test(m)));
+});

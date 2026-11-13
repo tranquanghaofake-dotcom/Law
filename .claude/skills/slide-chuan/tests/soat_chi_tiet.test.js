@@ -36,3 +36,17 @@ test("bắt dòng mồ côi một chữ; không bắt đoạn một dòng hay d�
   const [s] = await soat(f);
   assert.strictEqual(s.moCoi.length, 1, s.moCoi.join(" | ")); assert.match(s.moCoi[0], /“này”/);
 });
+
+test("bắt nét vẽ dọc (đường ngưỡng nét đứt) cắt qua chữ; không bắt chữ trên nền yên hay chữ trên ảnh", { skip: !hasPw && "không có Playwright", timeout: 120000 }, async () => {
+  const { soat } = require("../scripts/soat_chi_tiet");
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), "soat-cat-")), f = path.join(dir, "deck.html");
+  const o = (x, y, chu) => `<div data-t style="position:absolute;left:${x}px;top:${y}px;font:800 28px/1.2 sans-serif;color:#7a1a10;white-space:nowrap">${chu}</div>`;
+  const soc = Array.from({ length: 60 }, (_, i) => `<i style="position:absolute;left:${i * 10}px;top:0;width:5px;height:200px;background:hsl(${i * 37} 70% 50%)"></i>`).join("");
+  fs.writeFileSync(f, `<!doctype html><html><body style="margin:0"><section class="s" data-type="thu" data-title="Thử" style="position:relative;width:1920px;height:1080px;background:#fff">
+    <div style="position:absolute;left:300px;top:80px;height:300px;border-left:6px dashed #7a1a10"></div>${o(200, 120, "Trên 50%: nghị quyết thường")}
+    ${o(200, 500, "Nhãn trên nền trắng yên")}
+    <div style="position:absolute;left:900px;top:700px;width:600px;height:200px">${soc}</div>${o(950, 780, "Chữ trên ảnh sọc màu")}
+  </section></body></html>`);
+  const [s] = await soat(f);
+  assert.strictEqual(s.cat.length, 1, s.cat.join(" | ")); assert.match(s.cat[0], /Trên 50%/);
+});

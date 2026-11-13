@@ -88,7 +88,7 @@ Cấu trúc file:
 **Da theo môn** `meta.da` (tên cũ `meta.kit`: `file` → `ho-so`, `paper` → `giay`, `glass` → `kinh`): chất liệu phủ mọi slide — xem SKILL.md mục "Da theo môn" và `hinh/da.js`. Không ghi thì tự chọn theo kiểu `bc*` / `qt*`, đề tài, rồi `meta.kind`.
 **Khung ảnh** `frame` (ở bìa `cover`, `agenda`, `section` và `end` có ảnh; `meta.frame` = mặc định cả deck): `rect` bo góc · `arch` vòm cửa (trang trọng, toà án) · `circle` tròn (chân dung, vật thể) · `ogee` cửa sổ hoa văn (CHỈ văn hoá, di sản phương Đông) — cắt bằng CSS, ảnh vẫn là ảnh thật. Bìa `layout: "poster"` / `"full"` + `photo` (+ `facts`) = ảnh tràn viền; `end` + `photo` = cảm ơn poster; `section` + `photo` + `photoLayout: "backdrop"` = nền ảnh mờ.
 `meta.style` (tầng Office cũ) không còn tác dụng — dùng da. Mọi slide nhận thêm `trans`: `morph` | `fade` (riêng slide đó) và `dur` (ms).
-Nền mặc định: mọi slide nền trắng (`l`), riêng `photo` nền tối (`d`, ảnh tràn viền). Ghi `"mode"` để đổi: `a` (nền màu nhấn) chỉ cho 1–3 slide bước ngoặt, `d` khi người dùng muốn slide tối.
+Nền do từng type chọn (phần lớn nền sáng; `statement`, `section`, `photo`, `hero`… nền tối). `"mode"` chỉ còn tác dụng ở `statement` (`a` = nền màu nhấn, cho 1–3 slide bước ngoặt); ghi `mode` ở type khác → `dung.js` báo ℹ "mode bị bỏ qua" (tầng Office cũ đổi nền mọi type, tầng hình ảnh thì không).
 `cutout` (ảnh vật thật đã tách nền bằng `scripts/cutout.py`) dùng được ở `statement`, `agenda`, `panelrows`, `section` — thay chỗ hình vẽ `art`; kèm `cutoutAlt` (mô tả ảnh).
 
 ## Kiểm tra tự động khi dựng

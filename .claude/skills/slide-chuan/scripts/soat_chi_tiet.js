@@ -35,8 +35,14 @@ async function soat(html) {
       const rgb = (c) => (c.match(/[\d.]+/g) || []).slice(0, 4).map(Number);
       const hop = [...s.querySelectorAll("[data-t]")].filter((t) => (t.textContent || "").trim() && getComputedStyle(t).display !== "none").map((t, i) => { const cs = getComputedStyle(t), r = t.getBoundingClientRect();
         // màu từng đoạn: hộp chữ + con có màu riêng (b, em…)
-        const doan = [{ mau: rgb(cs.color), dam: +cs.fontWeight || 400, q: [...(() => { const g = document.createRange(); g.selectNodeContents(t); return g.getClientRects(); })()].map((q) => [q.left, q.top, q.width, q.height]) }];
-        for (const c of t.querySelectorAll("*")) { if (c.closest("[data-t]") !== t) continue; const cc = getComputedStyle(c); if (cc.color !== cs.color) doan.push({ mau: rgb(cc.color), dam: +cc.fontWeight || 400, co: parseFloat(cc.fontSize), q: [...c.getClientRects()].map((q) => [q.left, q.top, q.width, q.height]), con: true }); }
+        // hộp của DÒNG CHỮ thật (từng nút chữ), không lấy Range trên cả phần tử — Range.getClientRects() trả cả hộp của phần tử con
+        // (ô icon, ô chú giải gạch chéo) làm phép đo nét / nền lấy nhầm hình
+        const chuQ = (el, rieng) => { const o = [], w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+          for (let n; (n = w.nextNode());) { const p = n.parentElement; if (!n.textContent.trim() || !p || p.closest("[data-t]") !== t || (rieng && p !== el)) continue;
+            const g = document.createRange(); g.selectNodeContents(n); for (const q of g.getClientRects()) if (q.width && q.height) o.push([q.left, q.top, q.width, q.height]); }
+          return o; };
+        const doan = [{ mau: rgb(cs.color), dam: +cs.fontWeight || 400, q: chuQ(t, false) }];
+        for (const c of t.querySelectorAll("*")) { if (c.closest("[data-t]") !== t) continue; const cc = getComputedStyle(c), q = chuQ(c, true); if (cc.color !== cs.color && q.length) doan.push({ mau: rgb(cc.color), dam: +cc.fontWeight || 400, co: parseFloat(cc.fontSize), q, con: true }); }
         const longR = [...t.querySelectorAll("[data-t]")].map((c) => { const q = c.getBoundingClientRect(); return [q.left, q.top, q.width, q.height]; });   // hộp chữ con lồng bên trong: đo riêng
         // các dòng: gộp khung Range theo hàng; dòng cuối: số chữ (để bắt "dòng mồ côi một chữ")
         const hang = []; for (const q of doan[0].q) { const h = hang.find((x) => Math.abs(x.t - q[1]) < q[3] * 0.5); if (h) { h.l = Math.min(h.l, q[0]); h.r = Math.max(h.r, q[0] + q[2]); } else hang.push({ t: q[1], l: q[0], r: q[0] + q[2] }); }
@@ -53,13 +59,14 @@ async function soat(html) {
     // NÉT của màu m: điểm đổi khi ẩn chữ VÀ lúc hiện chữ gần màu m hơn hẳn (loại viền chữ / bóng khác màu chữ)
     const kc = (p, m) => Math.abs(p[0] - m[0]) + Math.abs(p[1] - m[1]) + Math.abs(p[2] - m[2]);
     const net = (x, y, m) => khac(x, y) && kc(px(A, x, y), m) < kc(px(B, x, y), m) * 0.7;
-    const ketQua = { slide: k + 1, type: meta.type, ten: meta.ten, lech: [], tuongPhan: [], moCoi: [] };
+    const ketQua = { slide: k + 1, type: meta.type, ten: meta.ten, lech: [], tuongPhan: [], moCoi: [], cat: [] };
     // DÒNG MỒ CÔI: đoạn ≥ 2 dòng mà dòng cuối chỉ một chữ (bỏ qua số, ký hiệu) — sửa câu chữ hoặc bề rộng hộp, đừng thu cỡ chữ
     for (const h of meta.hop) if (h.cuoi && h.cuoi.soChu === 1 && /\p{L}{2,}/u.test(h.cuoi.chu) && h.cuoi.rong < h.cuoi.rongMax * 0.3) ketQua.moCoi.push(`“${h.chu}” .${h.lop}: dòng cuối chỉ còn “${h.cuoi.chu}”`);
     // mép trái nét chữ của từng hộp canh trái (dòng đầu)
     const mep = [];
     for (const h of meta.hop) { if (h.dl || h.xoay || (h.canh !== "left" && h.canh !== "start") || h.r[2] < 120) continue; const q = h.doan[0].q[0]; if (!q) continue;
-      const y0 = Math.max(0, Math.round(q[1])), y1 = Math.min(1079, Math.round(q[1] + q[3])), x0 = Math.max(0, Math.round(h.r[0]) - 4), x1 = Math.min(1919, Math.round(h.r[0] + 80));
+      const sau = h.doan[0].q.find((p) => p[1] > q[1] + q[3] * 0.4);   // dòng 2: hộp dòng chữ trưng bày chồng lên dòng 1 (line-height < cỡ chữ) — "T" dòng 2 từng bị tính là nét đầu của dòng 1
+      const y0 = Math.max(0, Math.round(q[1])), y1 = Math.min(1079, Math.round(q[1] + q[3]), sau ? Math.round(sau[1]) - 1 : 1079), x0 = Math.max(0, Math.round(h.r[0]) - 4), x1 = Math.min(1919, Math.round(h.r[0] + 80));
       let L = null; const m0 = h.doan[0].mau; for (let x = x0; x <= x1 && L == null; x++) for (let y = y0; y <= y1; y += 2) if (net(x, y, m0)) { L = x; break; }
       if (L != null) mep.push({ L, y: q[1], h }); }
     for (let i = 0; i < mep.length; i++) for (let j = i + 1; j < mep.length; j++) { const d = Math.abs(mep[i].L - mep[j].L);
@@ -74,6 +81,21 @@ async function soat(html) {
       if (ds[Math.floor(ds.length / 2)] < 1.25) continue;   // nền sau nét chữ trùng màu chữ ở đa số điểm: chữ còn nằm trong một lớp ảnh (huy hiệu dựng sẵn) — không đo được, soát bằng mắt
       const co = dn.co || h.co, v = ds[Math.floor(ds.length * 0.15)], lon = (co >= 24 && dn.dam >= 700) || co >= 32, nguong = lon ? 3 : 4.5;
       if (v < nguong) ketQua.tuongPhan.push(`“${h.chu}”${dn.con ? " (đoạn nhấn)" : ""} .${h.lop} ${Math.round(co)} px: ${v.toFixed(2)} : 1 < ${nguong} : 1`); }
+    // ĐƯỜNG CẮT CHỮ: ở ảnh ẩn chữ, nền sau một dòng chữ phải yên; một cột hẹp (≤ 14 px) khác hẳn màu nền chạy dọc ≥ 40 % chiều cao dòng
+    // = đường kẻ / nét đứt của hình vẽ đi xuyên qua chữ (vd. đường ngưỡng của captable cắt nhãn "Trên 50%" và số "25%"). Nền ảnh (lộn xộn) bỏ qua.
+    for (const h of meta.hop) for (const dn of h.doan) for (const q of dn.q) {
+      const x0 = Math.max(0, Math.round(q[0]) + 4), x1 = Math.min(1919, Math.round(q[0] + q[2]) - 4), y0 = Math.max(0, Math.round(q[1])), y1 = Math.min(1079, Math.round(q[1] + q[3]));
+      if (x1 - x0 < 12 || y1 - y0 < 14) continue;
+      const dem = new Map(); for (let x = x0; x < x1; x += 3) for (let y = y0; y < y1; y += 3) { const c = px(B, x, y), k = c.map((v) => v >> 4).join(","); dem.set(k, (dem.get(k) || 0) + 1); }
+      const [mk, mn] = [...dem.entries()].sort((a, b) => b[1] - a[1])[0], tong = [...dem.values()].reduce((a, v) => a + v, 0);
+      if (mn / tong < 0.6) continue;   // nền không yên (ảnh, hoạ tiết dày): không kết luận được
+      const mode = mk.split(",").map((v) => (+v << 4) + 8), cot = [];
+      for (let x = x0; x < x1; x++) { let n = 0; for (let y = y0; y < y1; y++) if (kc(px(B, x, y), mode) > 90) n++; cot.push(n / (y1 - y0)); }
+      const sach = (x) => x >= 0 && x < cot.length && cot[x] < 0.15;   // hai bên nét phải là nền sạch — nền chuyển màu có chấm lẻ (dither) không tính
+      for (let i = 0; i < cot.length; i++) { if (cot[i] < 0.4) continue; let j = i; while (j + 1 < cot.length && cot[j + 1] >= 0.4) j++;
+        if (j - i + 1 <= 14 && sach(i - 4) && sach(j + 4)) { ketQua.cat.push(`“${h.chu}” bị một nét dọc cắt qua ở x ${x0 + i}`); break; } i = j; }   // chạm mép hộp chữ: nền chuyển màu bị cắt, không phải nét
+    }
+    ketQua.cat = [...new Set(ketQua.cat)];
     out.push(ketQua);
   }
   await b.close(); return out;
@@ -81,9 +103,10 @@ async function soat(html) {
 
 if (require.main === module && !pos.length) { console.error("Dùng: node scripts/soat_chi_tiet.js <deck.html> [--json=out.json] [--lech=4..10]"); process.exit(2); }
 if (require.main === module) soat(pos[0]).then((kq) => { let nl = 0, nt = 0;
-  let nm = 0; for (const s of kq) { if (!s.lech.length && !s.tuongPhan.length && !s.moCoi.length) continue; console.log(`slide ${s.slide} (${s.type}) ${s.ten}`);
+  let nm = 0, nc = 0; for (const s of kq) { if (!s.lech.length && !s.tuongPhan.length && !s.moCoi.length && !s.cat.length) continue; console.log(`slide ${s.slide} (${s.type}) ${s.ten}`);
+    for (const m of s.cat) { nc++; console.log(`  ✂ nét cắt chữ: ${m}`); }
     for (const m of s.moCoi) { nm++; console.log(`  ¶ dòng mồ côi: ${m}`); }
     for (const m of s.lech) { nl++; console.log(`  ↔ gần thẳng hàng: ${m}`); } for (const m of s.tuongPhan) { nt++; console.log(`  ◐ tương phản thấp: ${m}`); } }
-  console.log(`Soát chi tiết: ${kq.length} slide · ${nl} chỗ gần thẳng hàng (lệch ${LO}–${HI} px) · ${nt} chỗ tương phản thấp · ${nm} dòng mồ côi`);
+  console.log(`Soát chi tiết: ${kq.length} slide · ${nl} chỗ gần thẳng hàng (lệch ${LO}–${HI} px) · ${nt} chỗ tương phản thấp · ${nm} dòng mồ côi · ${nc} chỗ nét cắt chữ`);
   if (opt("json")) fs.writeFileSync(opt("json"), JSON.stringify(kq, null, 1)); }).catch((e) => { console.error(e); process.exit(1); });
 module.exports = { soat, tp };

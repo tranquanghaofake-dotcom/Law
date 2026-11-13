@@ -5,7 +5,7 @@ const Server = require("react-dom/server");
 const PACKS = ["fa6", "fa", "pi", "lu", "tb"].map((p) => { try { return require("react-icons/" + p); } catch { return {}; } });
 
 const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-const f = (s) => esc(s).replace(/\[([^\]]+)\]/g, "<em>$1</em>");          // [từ khoá] → nhấn
+const f = (s) => esc(s).replace(/\[([^\]]+)\]/g, "<em>$1</em>").replace(/\n/g, "<br>");   // "\n" trong chuỗi = xuống dòng chủ ý (ngắt tại nghĩa)          // [từ khoá] → nhấn
 const plain = (s) => String(s ?? "").replace(/[[\]]/g, "");
 const ico = (name) => { for (const p of PACKS) if (name && p[name]) return `<span class="ico">${Server.renderToStaticMarkup(React.createElement(p[name]))}</span>`; return ""; };
 let I = 0;

@@ -53,7 +53,7 @@ function dungHtml(deck, { deckDir = process.cwd(), mau, chuyen } = {}) {
   if (deck.meta?.notesFile && fs.existsSync(path.resolve(deckDir, deck.meta.notesFile))) parts = fs.readFileSync(path.resolve(deckDir, deck.meta.notesFile), "utf8").split(/^\s*---\s*$/m).map((p) => p.replace(/^\s*#.*$/m, "").trim());
   const missing = [], ctx = { img: (p) => { if (!p) return ""; const abs = path.resolve(deckDir, p); if (!fs.existsSync(abs)) { missing.push(p); return ""; } return url(abs); }, emoji: (n) => (n in khoEmoji() ? "data:image/svg+xml;base64," + Buffer.from(khoEmoji()[n], "utf8").toString("base64") : url(path.join(here, "emoji", n + ".svg"))), hasEmoji: (n) => n in khoEmoji() || fs.existsSync(path.join(here, "emoji", n + ".svg")) };
   // một slide của deck.json có thể nở thành nhiều slide PowerPoint (cảnh mở sách = 8 slide tự chạy)
-  const out = [], generic = [], n = src.length, st = { prev: new Set() };
+  const out = [], generic = [], bo = [], n = src.length, st = { prev: new Set() };
   const toc = src.findIndex((s) => s.type === "toc"), tocId = toc < 0 ? null : src[toc].id || `s${toc + 1}`;
   let sauSach = -1;                                                        // vị trí slide đầu tiên sau cảnh mở sách (cuốn sách thu về góc thành nút Mục lục)
   src.forEach((s, i) => {
@@ -64,6 +64,9 @@ function dungHtml(deck, { deckDir = process.cwd(), mau, chuyen } = {}) {
     if (canh.TYPES.includes(s.type)) { const secs = canh.render(s, deck, ctx, { i, n, st }); secs.forEach((sec, k) => out.push({ ...sec, html: daTen ? DA.khungSlide(sec.html, daTen) : sec.html, notes: sec.notes ?? (k === 0 ? note : ""), src: i })); if (s.type === "book") sauSach = out.length; return; }
     const prev = st.prev || new Set(); st.prev = new Set();
     const r = render(s, deck, ctx, i, n); if (r.generic) generic.push(`#${i + 1} ${s.type}`);
+    // mode d / l / a: mỗi mẫu tự chọn nền (statement nhận "a"); mode khác nền mẫu chọn → nói rõ, không im lặng bỏ qua
+    if (s.mode) { const nen = (r.html.match(/^<section class="s ([^"]*)"/) || [])[1] || "", muon = { d: "dark", l: "light", a: "red" }[s.mode];
+      if (muon && !nen.split(/\s+/).includes(muon)) bo.push(`slide ${i + 1} (${s.type}) mode "${s.mode}"`); }
     let h = decoGan(s, ctx, i, r.html, prev, st.prev);
     if (deck.meta?.motif && !ctx.img(s.photo)) h = DA.motifSlide(h, deck.meta.motif, daTen, s.type, i);
     if (daTen) h = DA.phuSlide(h, daTen, { type: s.type, i, chu: [s.kicker, s.title, s.sub].filter(Boolean).join(" ").replace(/[[\]]/g, ""), coHinhDan: !!((s.emoji && ctx.hasEmoji(s.emoji)) || s.cutout), coAnh: !!ctx.img(s.photo), art: s.art });
@@ -104,7 +107,7 @@ hinhKhiSanSang(() => document.querySelectorAll("section.s[data-tu]").forEach((S)
 hinhKhiSanSang(() => hinhCanLeQuangHoc());
 </script>
 </body></html>`;
-  return { html, generic, missing, n: out.length, mau: daTen ? `da ${daTen}` : mau, chuyen, da };
+  return { html, generic, missing, n: out.length, mau: daTen ? `da ${daTen}` : mau, chuyen, da, boMode: bo };
 }
 
 // tự kiểm trong trang: chữ tràn khỏi slide, khối tràn đáy — báo để sửa deck.json (cắt chữ, tách slide), không âm thầm cắt
@@ -137,6 +140,7 @@ async function dung({ deckPath, outPath, mau, chuyen, soat = false, nhungFont = 
   if (r.da.loi) { const e = new Error(r.da.lyDo); e.code = 2; throw e; }
   if (r.da.goiY) console.log(`ℹ chưa ghi meta.da — tự chọn da "${r.da.ten}" theo đề tài; ghi "meta": { "da": "${r.da.ten}" } để cố định`);
   const kiem = [...kiemDeck(deck, { deckDir }), ...require("./kiem_tang").kiemTang(deck)]; for (const m of kiem) console.log(m);
+  if (r.boMode.length) console.log(`ℹ "mode" bị bỏ qua ở ${r.boMode.join(", ")} — ở tầng hình ảnh mỗi type tự chọn nền (chỉ statement nhận "a"); cần nền màu nhấn cho bước ngoặt thì dùng statement / hero / headline, hoặc bỏ "mode"`);
   if (nd.limits.length) console.warn("⚠ Vượt giới hạn ký tự (rút gọn để tránh tràn):\n  " + nd.limits.join("\n  "));
   if (nd.warnings.length) console.warn("⚠ Cảnh báo nội dung / cấu trúc:\n  " + nd.warnings.join("\n  "));
   if (nd.hints.length) console.log("ℹ Gợi ý nội dung (không chặn --strict):\n  " + nd.hints.join("\n  "));
@@ -162,9 +166,9 @@ async function dung({ deckPath, outPath, mau, chuyen, soat = false, nhungFont = 
     const anh = (nm.stdout || "").trim().split("\n").pop();
     console.log(nm.status === 0 && anh ? `✓ Nhìn mờ: ${anh} — mở xem: che chữ đi có đoán được đề tài không? Không → chưa giao` : `ℹ không dựng được ảnh nhìn mờ (scripts/nhin_mo.py): ${(nm.stderr || "").trim().split("\n").pop() || "?"}`);
     // soát chi tiết bằng máy (nguyên tắc "mỗi chi tiết một lý do"): chữ gần thẳng hàng mà không thẳng, chữ thiếu tương phản trên nền thật
-    try { const kq = await require("../scripts/soat_chi_tiet").soat(htmlPath), dong = kq.flatMap((s) => [...s.lech.map((m) => `slide ${s.slide}: ↔ ${m}`), ...s.tuongPhan.map((m) => `slide ${s.slide}: ◐ ${m}`), ...(s.moCoi || []).map((m) => `slide ${s.slide}: ¶ ${m}`)]);
-      if (!dong.length) console.log("✓ Soát chi tiết: chữ thẳng hàng (không lệch 4–10 px), tương phản đạt WCAG trên nền thật, không dòng mồ côi");
-      else { console.log(`ℹ Soát chi tiết: ${dong.length} chỗ (scripts/soat_chi_tiet.js — ↔ lệch 4–10 px: canh lại cho thẳng; ◐ tương phản: đậm chữ hoặc làm yên nền sau chữ; ¶ dòng mồ côi: sửa câu hoặc bề rộng hộp)`); for (const m of dong.slice(0, 15)) console.log(`  ${m}`); if (dong.length > 15) console.log(`  … và ${dong.length - 15} chỗ nữa`); } }
+    try { const kq = await require("../scripts/soat_chi_tiet").soat(htmlPath), dong = kq.flatMap((s) => [...s.lech.map((m) => `slide ${s.slide}: ↔ ${m}`), ...s.tuongPhan.map((m) => `slide ${s.slide}: ◐ ${m}`), ...(s.moCoi || []).map((m) => `slide ${s.slide}: ¶ ${m}`), ...(s.cat || []).map((m) => `slide ${s.slide}: ✂ ${m}`)]);
+      if (!dong.length) console.log("✓ Soát chi tiết: chữ thẳng hàng (không lệch 4–10 px), tương phản đạt WCAG trên nền thật, không dòng mồ côi, không nét vẽ cắt qua chữ");
+      else { console.log(`ℹ Soát chi tiết: ${dong.length} chỗ (scripts/soat_chi_tiet.js — ↔ lệch 4–10 px: canh lại cho thẳng; ◐ tương phản: đậm chữ hoặc làm yên nền sau chữ; ¶ dòng mồ côi: sửa câu hoặc bề rộng hộp; ✂ nét vẽ cắt qua chữ: dời chữ hoặc dời nét)`); for (const m of dong.slice(0, 15)) console.log(`  ${m}`); if (dong.length > 15) console.log(`  … và ${dong.length - 15} chỗ nữa`); } }
     catch (e) { console.log(`ℹ không chạy được soát chi tiết: ${String(e.message || e).split("\n")[0]}`); } }
   return { ...r, ...res, htmlPath, outPath };
 }

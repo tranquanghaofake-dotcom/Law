@@ -265,7 +265,7 @@
   {
    "type": "bhduong",
    "kicker": "Phần 1 · Đóng rồi được gì?",
-   "title": "Năm chế độ bắt buộc đi cùng người lao động cả đời làm việc",
+   "title": "Năm chế độ bắt buộc đi cùng người lao động cả\u00a0đời\u00a0làm\u00a0việc",
    "who": {
     "name": "Chị Hoa",
     "sub": "Công nhân may, đóng BHXH bắt buộc",
@@ -716,7 +716,7 @@
    "kicker": "Phần 2 · Điều gì đe doạ quỹ dài hạn?",
    "num": "800.000",
    "unit": "người rút BHXH một lần năm 2023 (theo tài liệu của nhóm)",
-   "title": "Năm 2023, hơn 800.000 người rút BHXH một lần, rời hệ thống an sinh",
+   "title": "Năm 2023, hơn 800.000 người rút BHXH một lần, rời hệ\u00a0thống an sinh",
    "covers": [
     "3.2",
     "3.4.3"

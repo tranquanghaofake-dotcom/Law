@@ -385,7 +385,7 @@ figure { margin: 0; } .pi { position: relative; height: 480px; background-size: 
 .ph-shade.ph-nhoe { background: linear-gradient(110deg, var(--sec-tint, rgba(226,64,42,.9)) 0, rgba(12,18,34,.78) 70%); } .ph-shade.toi { background: linear-gradient(90deg, rgba(12,18,34,.95) 0, rgba(12,18,34,.8) 55%, rgba(12,18,34,.55)); }
 .cover.poster .top, .cover.poster .mid, .cover.poster .bot { position: relative; z-index: 3; max-width: 1300px; }
 .facts { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 30px; position: relative; z-index: 3; }
-.facts span { font: 700 27px/1 var(--fb); padding: 16px 26px; border: 2px solid rgba(244,237,220,.55); background: rgba(244,237,220,.12); border-radius: 999px; color: var(--paper); }
+.facts span { font: 700 27px/1 var(--fb); padding: 16px 26px; border: 2px solid rgba(244,237,220,.55); background: rgba(8,10,16,.58); border-radius: 999px; color: var(--paper); }   /* nền tối mờ: chip nằm trên ảnh bất kỳ — vùng ảnh sáng (lúa, trời) từng làm chữ còn 2,7 : 1 */
 .phk { background-size: cover; background-position: center; box-shadow: 0 0 0 10px rgba(244,237,220,.9), 0 24px 46px rgba(0,0,0,.35); flex: none; }
 .ag-ph { display: grid; grid-template-columns: 1fr 520px; gap: 80px; align-items: center; }
 .end.poster { justify-content: flex-end; padding-bottom: 110px; } .end.poster > .k, .end.poster > .h, .end.poster > .sub, .end.poster > .facts { position: relative; z-index: 3; } .end.poster .h { font-size: 140px; max-width: 1400px; }

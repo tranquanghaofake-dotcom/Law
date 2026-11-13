@@ -26,6 +26,10 @@ function kiemDeck(deck, { deckDir = process.cwd() } = {}) {
   const mat = slides.map((s, i) => [s, i + 1]).filter(([s]) => s.art && !ART_TYPES.has(s.type));
   if (mat.length) out.push(`ℹ trường "art" bị bỏ qua : ${mat.map(([s, i]) => `slide ${i} (${s.type})`).join(", ")} — chỉ ${[...ART_TYPES].join(", ")} đọc "art". Dùng "emoji" / "icon" / "cutout" / "photo".`);
 
+  // 1b. trường chuyển cảnh / hiệu ứng của tầng Office cũ: tầng hình ảnh không đọc (chuyển cảnh = trans, dur; hiệu ứng vào = theo da)
+  for (const k of ["transition", "build", "motion"]) { const c = slides.map((s, i) => [s, i + 1]).filter(([s]) => s && s[k] != null);
+    if (c.length) out.push(`ℹ trường "${k}" bị bỏ qua: ${c.map(([s, i]) => `slide ${i} (${s.type})`).join(", ")} — tên của tầng Office cũ; chuyển cảnh ghi "trans" / "dur" (hoặc meta.hinh.chuyen), hiệu ứng vào do da quyết định.`); }
+
   // 2. tên cũ của tầng Office: meta.kit / meta.style nay đổi thành da (hinh/da.js) — vẫn đọc, nhắc đổi tên
   if (deck.meta?.kit && !deck.meta.da) out.push(`ℹ meta.kit "${deck.meta.kit}" là tên cũ — nay đọc thành da${DA.ALIAS[deck.meta.kit] ? ` "${DA.ALIAS[deck.meta.kit]}"` : ""}; ghi "meta": { "da": "${DA.ALIAS[deck.meta.kit] || deck.meta.kit}" }.`);
   if (deck.meta?.style && !deck.meta.da) out.push(`ℹ meta.style "${deck.meta.style}" (phong cách bìa – chương – kết của tầng Office cũ) không còn vẽ riêng${DA.ALIAS[deck.meta.style] ? ` — dùng da "${DA.ALIAS[deck.meta.style]}"` : ""}.`);
