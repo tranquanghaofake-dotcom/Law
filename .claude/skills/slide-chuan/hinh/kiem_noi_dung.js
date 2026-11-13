@@ -49,7 +49,7 @@ function ghiCongAnh(ph, PHOTOS) {
 
 // ảnh tối thiểu (px chiều ngang) theo cách ảnh chiếm slide: tràn viền có chữ lớn đè lên thì ảnh nhỏ vỡ hạt khi chiếu
 const rongToiThieu = (sl, ph) => (ph._cut ? 600 : sl.type === "cards" ? 700
-  : ["gallery", "frame", "beforeafter", "mosaic", "photostats", "photostrip", "lens", "collage", "picks", "cases"].includes(sl.type) ? 1000
+  : ["gallery", "frame", "beforeafter", "mosaic", "photostats", "photostrip", "lens", "collage", "picks", "cases", "bhbia", "bhket"].includes(sl.type) ? 1000
   : (sl.type === "headline" || sl.type === "hero" || (sl.type === "cover" && sl.layout === "poster") || (sl.type === "end" && sl.style === "poster") || (sl.type === "section" && sl.photoLayout === "backdrop")) ? 2000 : 1600);
 
 /**

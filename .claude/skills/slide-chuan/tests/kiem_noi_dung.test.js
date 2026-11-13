@@ -103,3 +103,9 @@ test("--titles: slide trích dẫn của bộ hình (chỉ có quote) và câu h
   assert.ok(!/Slide 3: tiêu đề là câu hỏi/.test(r), r);
   assert.ok(/Bảo hiểm xã hội bắt buộc/.test(r), r);
 });
+
+test("ảnh nửa slide ở bìa / kết của bộ hình BHXH chỉ cần rộng ≥ 1000px (ảnh tràn cả slide mới cần 1600px)", async () => {
+  const dir = thuMuc(), p = await anh(dir, "nua.jpg", 1500);
+  const r = await KND.kiemNoiDung({ slides: [{ type: "bhket", title: "Cảm ơn", photo: p, photoCredit: "Ảnh: thử", photoSource: "https://example.org/a" }] }, { deckDir: dir, extraTypes: ["bhket"] });
+  assert.ok(!r.warnings.some((w) => /vỡ hạt/.test(w)), r.warnings.join("\n"));
+});
