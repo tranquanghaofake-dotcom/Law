@@ -59,3 +59,58 @@ Hai phiên độc lập, cùng đề tài hình sự, **cùng ba kết luận** 
 3. **Cảnh báo không thay được khả năng.** Cả hai phiên đều chỉ dừng ở "báo lỗi"; người dùng chỉ hài lòng khi có hình thật (M5). Ưu tiên thứ tự: có khả năng → có cảnh báo → có tài liệu.
 4. **Cổng quy trình phải đo kết quả nhìn thấy** (hình, nhìn mờ, chữ không đè), không chỉ đo tuân thủ (đủ mục trong `prep.json`).
 5. **Giữ kế hoạch đã duyệt không phải là mục tiêu.** Khi kế hoạch xung đột với mục tiêu "đẹp và hiểu được", sửa kế hoạch và nói lý do.
+
+## E. Phiên thứ ba (12–13/11/2026, dựng bài "Tổng quan Công pháp quốc tế", 15 phút, tầng hình ảnh)
+
+
+**Kết luận một dòng:** lỗi L10 ("che chữ không đoán được đề tài") lặp lại lần thứ ba ở môn thứ ba. Nguyên nhân không nằm ở deck: bộ hình theo môn đang là code viết tay cho từng môn, và quy trình không có cổng nào dừng lại khi môn chưa có bộ hình.
+
+### E1. Ngách (lỗi của skill, có bằng chứng)
+
+| # | Ngách | Bằng chứng phiên này | Trạng thái | Đề xuất |
+|---|---|---|---|---|
+| N1 | Tầng hình ảnh không có dấu hiệu môn học ngoài hình sự (L10, M5) | Bản 1 (21 slide) qua `--soat` không cảnh báo, nhưng `nhin_mo.py` chỉ còn khối đỏ, khối xanh. Người dùng chê "phông nền không liên quan gì đến luật quốc tế" | **Một phần**: bộ hình `qt*` "bàn hội nghị quốc tế" (`hinh/hoi_nghi.js`, test `tests/hoi_nghi.test.js`) có 3 kiểu: `qtbia`, `qtchuong`, `qtban`. Còn thiếu khoảng 8 kiểu cho so sánh, trích luật, kim tự tháp, cây điều kiện, chuỗi, bảy nguyên tắc, trắc nghiệm, chốt | Xem E3-P3: làm "da theo môn" thay vì viết type mới cho từng môn |
+| N2 | Cổng Bước 0 không chặn khi môn chưa có bộ hình | `prep.py check` báo "đủ mục" dù `world.kit` ghi "không dùng" và `assets.missing` ghi rõ "chưa có bộ hình". `dung.js` chỉ in `ℹ` | **Đã sửa** (P1): `prep.json` → `tang` / `boHinh` / `chapNhanNenChung`; `check` chặn, `summary` nói ở dòng đầu; `kiem.js` `⚠ Nền chung`; `dung.js --strict` dừng (mã 3). Test `tests/cong_bo_hinh.test.js` | `prep.py check` thất bại khi tầng hình ảnh, môn khác hình sự / quốc tế và không có bộ hình, trừ khi `prep.json` có `"chapNhanNenChung": true` do người dùng tự duyệt. `prep.py summary` in câu cảnh báo này lên **dòng đầu** bản tóm tắt |
+| N3 | `nhin_mo.py` chỉ xuất ảnh, không chấm điểm, nên người làm xem rồi bỏ qua | Đã chạy, đã thấy ảnh toàn khối màu, vẫn giao | **Còn** | Chấm tự động: tỉ lệ slide mà ảnh làm mờ chỉ gồm màu của bảng màu engine (biểu đồ màu, ≥ 90 % điểm ảnh rơi vào 6 màu nền / thẻ) → `⚠`; `--strict` dừng khi > 50 % slide như vậy. Cho chạy luôn trong `dung.js --soat` (đề xuất B4 cũ) |
+| N4 | Bộ hình theo môn là code cứng, mỗi môn viết lại từ đầu | `bang_chung.js` 302 dòng, 18 type; `hoi_nghi.js` 161 dòng mới được 3 type. Muốn áp cho cả deck phải viết lại từng bố cục (`cards` → `qtban`…) | **Còn** | E3-P3 |
+| N5 | `--soat` không kiểm **lớp ảnh đè chữ** | 5 lỗi chỉ thấy bằng mắt, máy không báo: hình dán chương đè dấu hỏi và phụ đề; tên người ký xuống dòng đè nhãn; nhãn "Đấu tranh giành độc lập" 2 dòng đè tên; chữ "Phần 1" đè dải lụa; lá cờ xanh đêm chìm vào nền | **Đã sửa** (P2) — `hinh/kiem_de.js`: chữ bị lớp ảnh đè (theo thứ tự vẽ, bỏ vùng trong suốt), hai hộp chữ đè nhau (so lõi dòng). Đo báo nhầm trên 3 deck mẫu: 30 dòng → 2, cả 2 là lỗi thật (N16). Chưa làm: tương phản lớp nhỏ với nền | Trong `kiemTran`: đo khung của mọi `data-l` (trừ nền) và mọi `data-t`, báo `⚠` khi hộp chữ của slide A giao với lớp ảnh không chứa nó; báo `⚠` khi hai hộp chữ trong cùng một khối giao nhau. Đo tương phản lớp ảnh nhỏ với nền ngay sau nó |
+| N6 | Cảnh báo tràn chỉ nêu khối cha (`.body`), không nêu khối con gây tràn | Slide `chain` tràn 41 px. Tôi rút ô "tình huống" trước, vẫn tràn 41 px. Thủ phạm thật là thẻ hệ quả 3 dòng ở cột phải. Mất một lần dựng | **Đã sửa** (P2): `— khối gây tràn: <thẻ.lớp> "<chữ đầu>"` | `kiemTran` in thêm phần tử con cao nhất / vượt đáy nhiều nhất (selector + chữ đầu) |
+| N7 | Hình dán ở `section` đặt chỗ cố định (`l:1050, t:560`) | Đè dấu hỏi ở tiêu đề 2 dòng (chương 1, 3), đè phụ đề (chương 2). Phải ghi tay `emojiPos` cho từng slide | **Còn** | Đặt trong `hinhKhiSanSang`: đo khung tiêu đề và phụ đề, đặt hình vào vùng trống lớn nhất bên phải |
+| N8 | Morph ở deck dùng type thường gần như không có | `morph_cap.py`: 23 slide, ngoài thanh đầu chỉ có **1** cặp có chủ ý (2→3, hình địa cầu `bigq` → `picks`). Hình dán của `section` mang tên `deco-*`, nên `picks` → `section` cùng hình không ghép được. Bộ `qt*` có tờ tiêu đề `tieu` nên mẫu 3 slide có Morph 1→2, 2→3 | **Còn** (type thường) | Đặt tên hình dán trang trí là `hd-<tên>` như cảnh; ghi số cặp Morph vào dòng tổng kết của `dung.js` |
+| N9 | Tầng hình ảnh bỏ ảnh ở `section`, `end` (M2), nên deck chỉ được 3 ảnh thật | Kế hoạch có 4–8 ảnh, chỉ dựng được bìa, `split`, `headline` | **Còn** | Cho `section` / `end` nhận `photo` ở tầng hình ảnh, hoặc ghi rõ ở Bước 0: "tầng này tối đa N ảnh" |
+| N10 | `find_images.py` treo lâu, không in tiến độ | Wikimedia 429 và Openverse 504; chạy hơn 12 phút. Lệnh kiểu `… \| tail` giữ hết đầu ra tới cuối, nhìn như treo | **Còn** | `print(..., flush=True)` theo từng brief; giới hạn thời gian mỗi nguồn (ví dụ 90 s); thử lại ít hơn với 429 (lỗi giới hạn tần suất, không phải lỗi mạng) |
+| N11 | Kho hình dán thiếu hình cho đề tài quốc tế | Không có địa cầu, bồ câu, gươm, khiên, bản đồ. Đã tải 6 hình: `api.iconify.design/fluent-emoji/<tên>.svg` dùng được từ cloud; `raw.githubusercontent.com` dùng được, GitHub API bị chặn | **Đã sửa**: 6 hình trong `hinh/emoji.json` (96 hình) | Thêm vào `emoji.json`: `globe-showing-asia-australia`, `globe-with-meridians`, `dove`, `world-map`, `crossed-swords`, `shield` |
+| N12 | Bản đồ thế giới dạng chấm (Natural Earth 1:110m) **không có Hoàng Sa, Trường Sa** | Dữ liệu 110m bỏ đảo nhỏ | **Đã sửa** trong `the_gioi_cham.json` (dựng lại: `scripts/build_the_gioi_cham.py`), có test | Ghi thành quy tắc: mọi bản đồ có Việt Nam, kể cả bản đồ thế giới trang trí, phải có Hoàng Sa, Trường Sa (mở rộng quy tắc của `map`) |
+| N13 | Cờ trừu tượng dễ trùng cờ thật | Kiểu "chấm tròn trên nền một màu" ra lá cờ nền trắng, chấm đỏ, giống cờ Nhật Bản | **Đã sửa** (bỏ kiểu chấm tròn; test; quy tắc ở `canh.md` mục 9) | Quy tắc: không dùng hình tròn giữa nền trơn, không dùng sọc ngang hoặc dọc 2–3 màu (dễ trùng cờ quốc gia), không dùng biểu tượng LHQ (bị hạn chế sử dụng theo Nghị quyết 92(I) Đại hội đồng LHQ). Chỉ dùng chéo góc, tam giác cán, ô góc cán, màu ngoài bộ đỏ–trắng–xanh thuần |
+| N14 | Kho luật của dự án chưa có văn bản mà deck cần | Luật Điều ước quốc tế 108/2016/QH13 **đã sửa bởi Luật 137/2025/QH15 (hiệu lực 01/01/2026)**: suýt trích theo bản cũ. `vbpl.vn`, `thuvienphapluat.vn` trả 403 từ cloud; văn bản hợp nhất trên `datafiles.chinhphu.vn` (10/VBHN-VPQH) đọc được | **Một phần**: SKILL.md ghi cách tra văn bản sửa đổi / hợp nhất khi vbpl.vn chặn. Kho luật dự án vẫn chưa có Luật Điều ước quốc tế | Thêm vào `references`: khi vbpl.vn chặn, đọc văn bản hợp nhất ở datafiles.chinhphu.vn. Bước 0 bắt buộc tra "văn bản sửa đổi sau năm ban hành" cho mọi luật trích |
+| N16 | Kiểu `collage` để ảnh thứ ba che chú thích hai ảnh dưới | `examples/giay_to.json` slide 5: "Lúa đang xanh" bị che một nửa, "Ngày gặt" bị che hết. Các kiểm tra cũ để lọt; `kiem_de.js` (P2) bắt được | **Còn** | Đặt chú thích trên phần ảnh lộ ra, hoặc cho ảnh sau lệch xa hơn; thêm test dựng `giay_to.json` không có dòng "đè" |
+| N15 | `quizgo` vẫn không có `whyNot` (M8) | Lý do từng phương án sai phải viết vào `notes` | **Còn** | Như M8 |
+
+### E2. Kinh nghiệm (lỗi của người làm, không phải của engine)
+
+1. **Đọc thấy lỗi hệ thống còn "Còn / Đề xuất" thì phải nói thẳng ở tin nhắn xin duyệt.** Phiên này đọc L10, ghi vào `prep.json` → `assets.missing`, nhưng tin nhắn xin duyệt chỉ nói "deck có 3 ảnh". Mẫu câu bắt buộc: *"Deck sẽ mắc lỗi X (đã bị chê ở bài Y). Chọn: (a) chấp nhận; (b) làm bộ hình trước, thêm khoảng N giờ."*
+2. **Cách chữa đã bị chê thì không dùng lại làm cách chữa chính.** `canh.md` mục 8 ghi hình dán Fluent bị chê "rập khuôn", phiên này vẫn dùng hình dán làm cách bù chính.
+3. **Bằng chứng nhìn thấy phải là cổng, không phải ảnh tham khảo.** Đã chạy `nhin_mo.py`, đã thấy kết quả xấu, vẫn giao. Quy tắc: ảnh làm mờ không đoán được đề tài thì không giao.
+4. **Làm mẫu 3 slide trước khi áp cả deck.** Khoảng 40 phút, 4 vòng sửa, bắt được 6 lỗi (cờ giống cờ Nhật Bản, chữ xuống dòng đè nhãn, khoảng trống trên văn kiện, chữ đè dải lụa, lưng ghế trông như bia mộ, cờ chìm nền) trước khi chúng nhân lên 21 slide.
+5. **Soát ở độ phân giải đầy đủ, từng slide.** Ảnh ghép thu nhỏ không cho thấy chữ đè nhau và màu chìm nền. Cả 6 lỗi ở mục 4 đều không được `--soat` báo (xem N5).
+6. **Ẩn dụ phải nói về nội dung, không chỉ trang trí.** "Bàn hội nghị" chạy được vì nó *là* lập luận của bài: chủ thể là ai được ngồi vào bàn; luật do các bên tự ký (khối "các bên ký tên" ở bìa); thi hành dựa vào cam kết (dấu xi). Khi chọn ẩn dụ cho môn mới, hỏi trước: *vật này chứng minh điều gì của bài?*
+7. **Bộ hình có yếu tố nhạy cảm cần danh mục cấm riêng:** quốc huy, biểu tượng LHQ, cờ thật, chữ ký thật, bản đồ thiếu Hoàng Sa, Trường Sa.
+8. **Trả lời ngắn, mơ hồ (ví dụ "lam") thì ghi rõ cách hiểu trong báo cáo** và lưu nguyên văn vào `approvedBy`, như phiên này đã làm.
+
+### E3. Lộ trình sửa skill (xếp theo lợi ích / công sức)
+
+| Ưu tiên | Việc | Chặn được | Công sức |
+|---|---|---|---|
+| **P1** | Cổng "môn chưa có bộ hình" ở `prep.py check` / `summary` và `dung.js --strict` (N2), kèm câu hỏi bắt buộc ở tin xin duyệt (E2-1) | Lặp lỗi L10 ở môn mới mà người dùng không biết trước | ~30 phút |
+| **P2** | Kiểm va chạm lớp ảnh ↔ hộp chữ, chữ ↔ chữ, tương phản lớp nhỏ trong `--soat` (N5); cảnh báo tràn chỉ đúng khối con (N6) | 5/6 lỗi chỉ thấy bằng mắt ở phiên này | ~1–1,5 giờ |
+| **P3** | **"Da theo môn"**: tách bộ hình thành cấu hình gồm nền (mẫu SVG), giấy (màu, viền), vật giữ tiêu đề (đinh / dấu xi / kẹp), con dấu, vật trang trí phụ (cờ, micro, dây). Lớp da áp lên **65 type thường** (nền `.s`, tiêu đề thành tờ giấy, `.card` thành vật của môn) thay vì viết type mới cho từng bố cục. Làm từ 2 bộ đang có: `bc` (hình sự) và `qt` (quốc tế). Môn mới = 1 file cấu hình + 1–2 hàm vẽ vật riêng | N1, N4; môn mới không còn bắt đầu từ số 0 | Nhiều giờ: cần spec trong `docs/specs`, duyệt rồi mới làm |
+| **P4** | Chấm điểm tự động cho `nhin_mo.py` và chạy trong `--soat` (N3) | Giao deck "nền chung" mà không ai biết | ~1 giờ |
+| P5 | Hình dán chương tự tìm chỗ trống (N7); tên Morph `hd-*` cho hình trang trí (N8) | Đè chữ; Morph rời rạc | ~1 giờ |
+| P6 | `find_images.py` in tiến độ, giới hạn thời gian mỗi nguồn (N10) | Treo 10+ phút | ~30 phút |
+| P7 | Thêm 6 hình dán (N11); quy tắc cờ trừu tượng (N13), bản đồ có Hoàng Sa, Trường Sa (N12); nguồn văn bản hợp nhất chinhphu.vn (N14); `quizgo` có `whyNot` (N15) | Lỗi nhỏ lặp lại | ~1 giờ tổng |
+
+### E4. Số liệu đo phiên này
+
+- Bản 1: 21 slide khai báo → 23 slide PowerPoint, 8 cảnh, 3 ảnh thật; `--soat` cuối 0 cảnh báo; nhìn mờ: không đoán được đề tài; Morph có chủ ý ngoài thanh đầu: 1 cặp.
+- Mẫu bộ `qt*`: 3 slide, `--soat` 0 cảnh báo, lệch PPTX so với HTML 0,00 %; nhìn mờ: thấy văn kiện + dấu xi, hàng cờ, bàn họp và bảng tên; Morph 2/2 cặp (`tieu`).
+- Môi trường: Chromium `/opt/pw-browsers/chromium-1243`; LibreOffice có sẵn; không có PowerPoint, nên font nhúng, Morph và hiệu ứng mới chỉ kiểm được cấu trúc.
