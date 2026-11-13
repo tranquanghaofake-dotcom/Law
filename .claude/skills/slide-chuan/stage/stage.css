@@ -377,9 +377,9 @@ figure { margin: 0; } .pi { position: relative; height: 480px; background-size: 
 
 /* ── ảnh tràn viền (bìa poster, cảm ơn poster, mở chương nền mờ, số lớn trên ảnh) + khung ảnh — chuyển từ tầng Office cũ (11/2026) ── */
 .ph-full { position: absolute; inset: 0; z-index: 1; background-size: cover; background-position: center; }
-.ph-full.mo { filter: blur(6px) saturate(.8); inset: -20px; } .ph-full.toi { filter: grayscale(.4) contrast(1.05); }
+.ph-full.ph-nhoe { filter: blur(6px) saturate(.8); inset: -20px; } .ph-full.toi { filter: grayscale(.4) contrast(1.05); }
 .ph-shade { position: absolute; inset: 0; z-index: 1; background: linear-gradient(90deg, rgba(12,18,34,.94) 0, rgba(12,18,34,.72) 46%, rgba(12,18,34,.12) 88%), linear-gradient(0deg, rgba(12,18,34,.85), transparent 42%); }
-.ph-shade.mo { background: linear-gradient(110deg, var(--sec-tint, rgba(226,64,42,.9)) 0, rgba(12,18,34,.78) 70%); } .ph-shade.toi { background: linear-gradient(90deg, rgba(12,18,34,.95) 0, rgba(12,18,34,.8) 55%, rgba(12,18,34,.55)); }
+.ph-shade.ph-nhoe { background: linear-gradient(110deg, var(--sec-tint, rgba(226,64,42,.9)) 0, rgba(12,18,34,.78) 70%); } .ph-shade.toi { background: linear-gradient(90deg, rgba(12,18,34,.95) 0, rgba(12,18,34,.8) 55%, rgba(12,18,34,.55)); }
 .cover.poster .top, .cover.poster .mid, .cover.poster .bot { position: relative; z-index: 3; max-width: 1300px; }
 .facts { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 30px; position: relative; z-index: 3; }
 .facts span { font: 700 27px/1 var(--fb); padding: 16px 26px; border: 2px solid rgba(244,237,220,.55); background: rgba(244,237,220,.12); border-radius: 999px; color: var(--paper); }

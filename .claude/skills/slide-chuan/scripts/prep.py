@@ -74,8 +74,8 @@ def init(d, kind, minutes, topic):
         "unsure": [],
         # phạm vi bài: "in" = đúng đối tượng phân tích (vd. "BHXH bắt buộc"), "out" = cụm từ KHÔNG được xuất hiện (vd. "BHYT") → chép sang deck.json meta.scopeOut
         "scope": {"in": "", "out": []},
-        # bước 0 — thế giới hình ảnh (references/the-gioi-hinh-anh.md): 10 vật thấy tận mắt → 1 vật chủ đạo + 2 vật phụ → world (meta.kit)
-        "world": {"objects": [], "main": "", "minor": [], "kit": ""},
+        # bước 0 — thế giới hình ảnh (references/the-gioi-hinh-anh.md): 10 vật thấy tận mắt → 1 vật chủ đạo + 2 vật phụ → chọn da (trường "da" ở dưới), ảnh, hình dán
+        "world": {"objects": [], "main": "", "minor": []},
         # da theo môn (hinh/da.js) — chất liệu phủ mọi slide; tự gợi ý theo đề tài, người dùng duyệt cùng gói chuẩn bị.
         # "none" = nền chung: chỉ khi người dùng đồng ý (chapNhanNenChung: true — chỉ người dùng quyết)
         "da": goi_y_da(topic, kind), "chapNhanNenChung": False,
@@ -103,8 +103,8 @@ def problems(pr):
     for i, s in enumerate(src):
         if s.get("legal") and not any(str(s.get("status") or "").strip().startswith(x) for x in STATUS): out.append(f"sources[{i}] \"{s['title'][:40]}\": văn bản luật cần status ({' / '.join(STATUS)})")
     wd = pr.get("world") or {}
-    if pr.get("kind") in ("report", "lecture") and (len(wd.get("objects") or []) < 8 or not str(wd.get("main") or "").strip() or len(wd.get("minor") or []) < 2 or not str(wd.get("kit") or "").strip()):
-        out.append("world: bước 0 thế giới hình ảnh chưa đủ — ≥ 8 vật thấy tận mắt (objects), 1 vật chủ đạo (main), 2 vật phụ (minor), world chọn (kit) — xem references/the-gioi-hinh-anh.md")
+    if pr.get("kind") in ("report", "lecture") and (len(wd.get("objects") or []) < 8 or not str(wd.get("main") or "").strip() or len(wd.get("minor") or []) < 2):
+        out.append("world: bước 0 thế giới hình ảnh chưa đủ — ≥ 8 vật thấy tận mắt (objects), 1 vật chủ đạo (main), 2 vật phụ (minor) — xem references/the-gioi-hinh-anh.md")
     da = str(pr.get("da") or pr.get("boHinh") or "").strip()
     if not da: out.append(f"da: chưa chọn chất liệu theo môn — gợi ý \"{goi_y_da(pr.get('topic'), pr.get('kind'))}\" (có: {', '.join(DA)}); môn chưa có da thì thêm một khối vào hinh/da.js")
     elif da == "none" and not pr.get("chapNhanNenChung"): out.append("da: \"none\" → " + NEN_CHUNG + ". Chỉ ghi chapNhanNenChung: true khi người dùng tự chọn nền chung")
@@ -150,7 +150,7 @@ def summary(d):
     for s in pr.get("sources") or []:
         if s.get("title"): L.append(f"- {s['title']}" + (f" — **{s.get('status') or 'chưa ghi tình trạng'}**" if s.get("legal") else "") + (f" ({s['note']})" if s.get("note") else ""))
     wd = pr.get("world") or {}
-    if wd.get("main"): L.append(f"\n## Thế giới hình ảnh\n- Vật chủ đạo: {wd['main']} · vật phụ: {', '.join(wd.get('minor') or [])} · world: `{wd.get('kit') or '?'}`\n- Thấy tận mắt: {', '.join(wd.get('objects') or [])}")
+    if wd.get("main"): L.append(f"\n## Thế giới hình ảnh\n- Vật chủ đạo: {wd['main']} · vật phụ: {', '.join(wd.get('minor') or [])}\n- Thấy tận mắt: {', '.join(wd.get('objects') or [])}")
     sc = pr.get("scope") or {}
     if sc.get("in") or sc.get("out"): L.append(f"\n## Phạm vi\n- Phân tích: {sc.get('in') or '?'}" + (f"\n- Không đưa vào: {', '.join(sc.get('out') or [])}" if sc.get("out") else ""))
     dt = [x for x in pr.get("data") or [] if str(x.get("figure") or "").strip()]

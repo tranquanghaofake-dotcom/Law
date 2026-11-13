@@ -99,7 +99,8 @@ test("deck mẫu nghỉ việc: 11 slide deck.json → 20 slide PowerPoint, id k
 test("cảnh: báo lỗi rõ khi điều cần tìm không có trong sách; chuyển cảnh và bảng màu đổi được", () => {
   const d = sample(); d.slides[0].find = 99;
   assert.throws(() => dungHtml(d), /find/);
-  const r = dungHtml(sample(), { mau: "luc", chuyen: "fade" });
+  const d2 = sample(); d2.meta = { ...d2.meta, da: "none" };   // bảng màu (--mau) chỉ áp khi deck không dùng da; có da thì màu của da thắng
+  const r = dungHtml(d2, { mau: "luc", chuyen: "fade" });
   assert.ok(r.html.includes("--ink: #0e2a22") && !/data-trans="morph"[^>]*data-tu/.test(r.html.split("</section>").slice(8).join("")));
 });
 

@@ -55,7 +55,7 @@ T.agendaChu = (s) => ({ cls: "light", html: `${head(s)}<div class="body"><div>${
 
 T.section = (s, deck, ctx) => { const ph = ctx && ctx.img(s.photo);
   const chu = `${s.kicker ? `<div class="k" ${inn()}>${f(s.kicker)}</div>` : s.num != null ? `<div class="k" ${inn()}>Phần ${esc(s.num)}</div>` : ""}<h2 class="h" ${inn()}>${f(s.title)}</h2>${s.sub ? `<p class="sub" ${inn()}>${f(s.sub)}</p>` : ""}`;
-  if (ph && s.photoLayout === "backdrop") return { cls: "red sec sec-ph", html: `${anhPhu(ph, "mo")}<div class="big">${esc(s.num ?? "")}</div><div class="body">${chu}</div>` };
+  if (ph && s.photoLayout === "backdrop") return { cls: "red sec sec-ph", html: `${anhPhu(ph, "ph-nhoe")}<div class="big">${esc(s.num ?? "")}</div><div class="body">${chu}</div>` };
   if (ph) return { cls: "red sec sec-ph", html: `${anhKhung(ph, khungAnh(s, deck) || "rect", s.photoAlt, "position:absolute;right:110px;top:150px;width:700px;height:800px;z-index:2")}<div class="body" style="max-width:900px">${chu}</div>` };
   return T.sectionChu(s); };
 T.sectionChu = (s) => ({ cls: "red sec", html: `<div class="big">${esc(s.num ?? "")}</div><div class="body">${s.kicker ? `<div class="k" ${inn()}>${f(s.kicker)}</div>` : s.num != null ? `<div class="k" ${inn()}>Phần ${esc(s.num)}</div>` : ""}<h2 class="h" ${inn()}>${f(s.title)}</h2>${s.sub ? `<p class="sub" ${inn()}>${f(s.sub)}</p>` : ""}</div>` });

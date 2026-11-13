@@ -28,7 +28,7 @@ test("hatch = gạch chéo, annotate = vòng khoanh viết tay + câu", () => {
 
 test("bố cục ảnh: bìa poster + thẻ dữ kiện, chương nền mờ / ảnh trong khung, số lớn trên ảnh, kết luận có ảnh, cảm ơn poster", () => {
   assert.ok(/class="s dark cover poster"[\s\S]*class="ph-full[\s\S]*class="facts"/.test(R({ type: "cover", title: "T", layout: "poster", photo: "a.jpg", facts: ["x", "y"] })));
-  assert.ok(R({ type: "section", num: 1, title: "T", photo: "a.jpg", photoLayout: "backdrop" }).includes('class="ph-full mo"'));
+  assert.ok(R({ type: "section", num: 1, title: "T", photo: "a.jpg", photoLayout: "backdrop" }).includes('class="ph-full ph-nhoe"'));
   const sk = R({ type: "section", num: 1, title: "T", photo: "a.jpg", frame: "arch" });
   assert.ok(/class="phk" data-in style="--i:\d+;[^"]*background-image:url\('file:\/\/\/anh\/a\.jpg'\);border-radius:999px/.test(sk), "khung vòm, một thuộc tính style");
   assert.ok(R({ type: "hero", num: "0,8", title: "T", photo: "a.jpg" }).includes('class="ph-full toi"'));
