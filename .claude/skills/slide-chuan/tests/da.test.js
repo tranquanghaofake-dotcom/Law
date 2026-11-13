@@ -204,4 +204,7 @@ test("quote + cutout: ảnh tách nền được vẽ, mép bị cắt (alpha ch
   assert.equal(mep["images/chia-khoa-nha_cut.png"], "l", "ảnh bàn tay cầm chìa khoá bị cắt ở cổ tay (mép trái)");
   const h = dungHtml(d, { deckDir: dir, mepCat: mep }).html;
   assert.match(h, /<img class="qcut [^"]*cut-l"[^>]*alt="Chìa khoá"/);
+  for (const t of ["statement", "section", "end"]) {   // có cutout thì da tắt hình lớn — phải vẽ cutout, không được để slide trống
+    const d2 = deck({ da: "ho-so" }, [{ type: "cover", title: "Bìa" }, { type: t, num: 1, title: "Tiêu đề", cutout: "images/chia-khoa-nha_cut.png" }]);
+    assert.match(dungHtml(d2, { deckDir: dir, mepCat: mep }).html.split("<section").slice(2).join(""), /<img class="qcut cut-l"/, `${t}: cutout không được vẽ`); }
 });

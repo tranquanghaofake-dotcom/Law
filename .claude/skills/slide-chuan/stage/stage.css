@@ -431,3 +431,4 @@ th.on { background: var(--hl); } td.on { background: var(--paper-2); font-weight
 /* mép cắt của ảnh trùng mép slide: cắt trái → lật ngang, dán mép phải; cắt phải → dán mép phải; cắt trên → chạm mép trên; cắt dưới / không cắt → chạm đáy */
 .qcut.cut-l, .qcut.cut-r { right: 0; bottom: auto; top: 250px; height: 620px; max-width: 760px; } .qcut.cut-l { object-position: left center; transform: scaleX(-1); } .qcut.cut-r { object-position: right center; }
 .qcut.cut-t { top: 0; bottom: auto; object-position: right top; }
+.q-cut.sec .h, .q-cut.end .h { max-width: 1040px; } .q-cut .sub { max-width: 1040px; } .q-cut.sec .big { opacity: .25; }

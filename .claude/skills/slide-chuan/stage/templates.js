@@ -294,6 +294,9 @@ function render(slide, deck, ctx, i, n) {
       out.html = out.html.replace(/<(div|figure|span)([^>]*?)style="([^"]*?)"([^>]*)>/g, (m, tag, a, st, b) => { if (!st.includes(k)) return m;
         const st2 = pos && !/background-position/.test(st) ? `${st};background-position:center ${pos}` : st, al = slide.photoAlt && !/aria-label=/.test(a + b) ? ` role="img" aria-label="${esc(slide.photoAlt)}"` : "";
         return `<${tag}${a}style="${st2}"${b}${al}>`; }); } }
+  // cutout ở statement / section / end: SCHEMA cho phép, có cutout thì da tắt hình lớn — trước đây không vẽ gì cả → slide trống
+  if (ctx && typeof slide.cutout === "string" && ["statement", "section", "end"].includes(slide.type)) { const cu = ctx.img(slide.cutout);
+    if (cu && !out.html.includes(cu)) { out.cls += " q-cut"; out.html = `<img class="qcut cut-${(ctx.mepCat && ctx.mepCat(slide.cutout)) || "b"}" src="${cu}" alt="${esc(slide.cutoutAlt || "")}" ${inn("pop")}>` + out.html; } }
   out.html = gopStyle(out.html);
   return { html: wrap(out, slide, deck, i, n), generic: !fn };
 }
