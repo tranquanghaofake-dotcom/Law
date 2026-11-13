@@ -111,7 +111,7 @@ html, body { background: #05070d; }
 /* ── ledger ── */
 .lg { display: grid; gap: 22px; }
 .lg-r { display: grid; grid-template-columns: 350px 1fr 280px; gap: 30px; align-items: center; padding: 22px 26px; }
-.lg-r.on { background: var(--amber); border: 5px solid var(--ink); box-shadow: 12px 12px 0 var(--ink); }
+.lg-r.on { background: var(--amber); border: 5px solid var(--ink); box-shadow: 12px 12px 0 var(--ink); padding: 17px 21px; }   /* viền 5 px ăn vào lề trong: bớt đúng 5 px để chữ hàng nhấn thẳng với các hàng khác */
 .lg-r b { display: block; font: 400 54px/1.2 var(--fd); } .lg-r > div > span { font: 500 26px/1.3 var(--fb); color: var(--mut); } .lg-r.on > div > span { color: #4a3b12; }
 .lg-b { position: relative; height: 128px; }
 .lg-b::before { content: ""; position: absolute; left: 50%; top: -6px; bottom: -6px; width: 5px; margin-left: -2px; background: var(--ink); }

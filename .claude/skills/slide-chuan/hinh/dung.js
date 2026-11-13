@@ -97,6 +97,7 @@ ${canh.script || ""}
 hinhKhiSanSang(() => document.querySelectorAll("section.s").forEach((S) => hinhDatHinhDan(S)));
 hinhKhiSanSang(() => document.querySelectorAll("section.s[data-tu]").forEach((S) => hinhDatVatDa(S)));
 hinhKhiSanSang(() => document.querySelectorAll("section.s[data-tu]").forEach((S) => hinhTuGan(S, ${JSON.stringify({ nhip: +H.nhip || 110, fx: daTen ? DA.CHUYEN[DA.DA[daTen].chuyen] : null })})));
+hinhKhiSanSang(() => hinhCanLeQuangHoc());
 </script>
 </body></html>`;
   return { html, generic, missing, n: out.length, mau: daTen ? `da ${daTen}` : mau, chuyen, da };

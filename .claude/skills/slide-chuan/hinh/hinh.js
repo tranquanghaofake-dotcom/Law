@@ -20,17 +20,20 @@
   const netDau = (ch, font, px) => { const pad = Math.ceil(px * 0.3), W = Math.ceil(px * 1.6), H = Math.ceil(px * 1.6), c = document.createElement("canvas"); c.width = W; c.height = H;
     const g = c.getContext("2d"); g.font = font; g.textBaseline = "alphabetic"; g.fillStyle = "#000"; g.fillText(ch, pad, Math.round(px * 1.15));
     const d = g.getImageData(0, 0, W, H).data; for (let x = 0; x < W; x++) for (let y = 0; y < H; y++) if (d[(y * W + x) * 4 + 3] > 96) return x - pad; return 0; };
+  // chỉ tính XOAY thật (thuộc tính rotate, hoặc ma trận transform có thành phần xoay) — scale / dịch của hiệu ứng vào (pop, rise) không tính
+  const coXoay = (c) => { const m = (c.transform.match(/matrix\(([^)]+)\)/) || [])[1]; return (c.rotate && c.rotate !== "none" && c.rotate !== "0deg") || (m && Math.abs(+m.split(",")[1]) > 0.01); };
   const canLeQuangHoc = () => {
-    for (const el of document.querySelectorAll("section.s [data-t]")) { const cs = getComputedStyle(el), px = parseFloat(cs.fontSize);
+    for (const el of document.querySelectorAll("section.s [data-t]")) try { const cs = getComputedStyle(el), px = parseFloat(cs.fontSize);
       if (!(px >= 48) || !["left", "start"].includes(cs.textAlign) || el.dataset.quangHoc) continue;
-      let a = el, xoay = false; while (a && !a.matches("section.s")) { const c = getComputedStyle(a); if ((c.rotate && c.rotate !== "none" && c.rotate !== "0deg") || c.transform !== "none") { xoay = true; break; } a = a.parentElement; }
+      let a = el, xoay = false; while (a && !a.matches("section.s")) { if (coXoay(getComputedStyle(a))) { xoay = true; break; } a = a.parentElement; }
       if (xoay) continue;
       const w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT); let n, ch = "";
       while (!ch && (n = w.nextNode())) ch = (n.textContent.match(/\S/u) || [""])[0];   // nút chữ đầu tiên có ký tự thấy được (đo đúng font của chính nút đó)
       if (!ch) continue; const pc = getComputedStyle(n.parentElement || el);
       if (pc.textTransform === "uppercase") ch = ch.toLocaleUpperCase("vi");
       const lech = netDau(ch, `${pc.fontStyle} ${pc.fontWeight} ${parseFloat(pc.fontSize)}px ${pc.fontFamily}`, parseFloat(pc.fontSize));   // > 0: nét chữ bắt đầu sau điểm gốc
-      if (lech > 0.75 && lech < px * 0.2) { el.style.marginLeft = `${(parseFloat(cs.marginLeft) || 0) - lech}px`; el.dataset.quangHoc = lech.toFixed(1); } } };
+      if (lech > 0.75 && lech < px * 0.2) { el.style.marginLeft = `${(parseFloat(cs.marginLeft) || 0) - lech}px`; el.dataset.quangHoc = lech.toFixed(1); } } catch (e) { el.dataset.quangHocLoi = String(e && e.message || e).slice(0, 80); } };   // một phần tử lỗi không chặn cả trang
+  window.hinhCanLeQuangHoc = canLeQuangHoc;   // dung.js gọi lại sau hinhTuGan: slide từ bộ mẫu chỉ có data-t sau bước tự gắn nhãn (phần tử đã dịch thì bỏ qua)
   window.hinhKhiSanSang(canLeQuangHoc);
   window.hinhDatHinhDan = (S) => {
     const em = [...S.querySelectorAll(".emo[data-tu-dat]")]; if (!em.length) return;
