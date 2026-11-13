@@ -38,7 +38,6 @@
     "BHXH bắt buộc"
    ],
    "box": "đi bao xa?",
-   "by": "Nhóm thuyết trình BNK405 · 11/2026",
    "covers": [],
    "notes": "Câu hỏi lớn của bài: sau mười năm, từ 2015 đến 2025, bảo hiểm xã hội bắt buộc ở Việt Nam đã đi được bao xa — về luật, về số người tham gia và về sức khoẻ của quỹ. Slide sau là câu trả lời ngắn nhất.",
    "kicker": "Câu hỏi của bài"
@@ -57,14 +56,12 @@
     {
      "label": "2025 · triệu người",
      "value": "18,91",
-     "desc": "đóng BHXH bắt buộc",
-     "tone": "good"
+     "desc": "đóng BHXH bắt buộc"
     },
     {
      "label": "Năm đi lùi",
      "value": "2022",
-     "desc": "giảm 0,75 triệu người sau COVID-19",
-     "tone": "bad"
+     "desc": "giảm 0,75 triệu người sau COVID-19"
     }
    ],
    "covers": [
@@ -80,17 +77,14 @@
    "items": [
     {
      "q": "Ai phải đóng BHXH, được hưởng gì?",
-     "emoji": "open-book",
      "go": "p1"
     },
     {
      "q": "Mười năm qua, bao nhiêu người đóng và quỹ ra sao?",
-     "emoji": "bar-chart",
      "go": "p2"
     },
     {
      "q": "Đạt được gì, vướng ở đâu, cần sửa gì?",
-     "emoji": "balance-scale",
      "go": "p3"
     }
    ],
@@ -130,19 +124,16 @@
    "title": "Nhà nước bắt buộc tham gia vì BHXH giữ ba vai trò",
    "items": [
     {
-     "icon": "PiUmbrellaDuotone",
      "name": "Thay thu nhập",
      "who": "Trụ cột an sinh",
      "desc": "Bù một phần thu nhập khi ốm, sinh con, tai nạn, nghỉ hưu, chết (k1 Điều 3)"
     },
     {
-     "icon": "PiScalesDuotone",
      "name": "Công bằng",
      "who": "Đóng – hưởng tương ứng",
      "desc": "Hưởng theo mức và thời gian đóng, có chia sẻ giữa người tham gia (k1 Điều 5)"
     },
     {
-     "icon": "PiChartLineUpDuotone",
      "name": "Ổn định kinh tế",
      "who": "Giữ sức mua",
      "desc": "Thu nhập thay thế giữ đời sống gia đình khi người lao động gặp rủi ro"
@@ -160,19 +151,16 @@
    "title": "Điều 2 Luật 2024 buộc ba nhóm tham gia BHXH bắt buộc",
    "items": [
     {
-     "icon": "PiUserDuotone",
      "name": "NLĐ Việt Nam",
      "who": "14 nhóm · k1 Điều 2",
      "desc": "HĐLĐ từ đủ 1 tháng, công chức, viên chức, lực lượng vũ trang, quản lý DN…"
     },
     {
-     "icon": "PiGlobeDuotone",
      "name": "NLĐ nước ngoài",
      "who": "k2 Điều 2",
      "desc": "HĐLĐ xác định thời hạn từ đủ 12 tháng; trừ di chuyển nội bộ, đã đủ tuổi hưu"
     },
     {
-     "icon": "PiBuildingsDuotone",
      "name": "Bên thuê lao động",
      "who": "k3 Điều 2",
      "desc": "Cơ quan, doanh nghiệp, HTX, hộ kinh doanh, cá nhân thuê lao động theo HĐLĐ"
@@ -194,27 +182,22 @@
    "items": [
     {
      "k": "l",
-     "emoji": "office-worker",
      "text": "Làm không trọn thời gian"
     },
     {
      "k": "m",
-     "emoji": "receipt",
      "text": "Chủ hộ kinh doanh có đăng ký"
     },
     {
      "k": "n",
-     "emoji": "briefcase",
      "text": "Quản lý DN, HTX không lương"
     },
     {
      "k": "e",
-     "emoji": "shield",
      "text": "Dân quân thường trực"
     },
     {
      "k": "k",
-     "emoji": "classical-building",
      "text": "Không chuyên trách ở thôn, tổ dân phố"
     }
    ],
@@ -244,15 +227,11 @@
    "cols": [
     {
      "n": 20,
-     "unit": "năm đóng",
-     "label": "Luật 2014 — đã hết hiệu lực",
-     "emoji": "hourglass-not-done"
+     "label": "Luật 2014 — đã hết hiệu lực"
     },
     {
      "n": 15,
-     "unit": "năm đóng",
-     "label": "Luật 2024 — từ 01/7/2025",
-     "emoji": "older-person"
+     "label": "Luật 2024 — từ 01/7/2025"
     }
    ],
    "source": "Khoản 1 Điều 64 Luật BHXH số 41/2024/QH15 (hiện hành); Luật số 58/2014/QH13 hết hiệu lực từ 01/7/2025 (khoản 2 Điều 140).",
@@ -268,39 +247,33 @@
    "title": "Năm chế độ bắt buộc đi cùng người lao động cả\u00a0đời\u00a0làm\u00a0việc",
    "who": {
     "name": "Chị Hoa",
-    "sub": "Công nhân may, đóng BHXH bắt buộc",
-    "icon": "PiUserDuotone"
+    "sub": "Công nhân may, đóng BHXH bắt buộc"
    },
    "stages": [
     {
      "when": "Tuổi 25",
      "event": "Sốt xuất huyết, nghỉ 7 ngày",
-     "link": "Ốm đau · Điều 42",
-     "icon": "PiThermometerDuotone"
+     "link": "Ốm đau · Điều 42"
     },
     {
      "when": "Tuổi 28",
      "event": "Sinh con đầu lòng",
-     "link": "Thai sản · Điều 50",
-     "icon": "PiBabyDuotone"
+     "link": "Thai sản · Điều 50"
     },
     {
      "when": "Tuổi 40",
      "event": "Tai nạn ở xưởng, suy giảm 10%",
-     "link": "TNLĐ · Luật ATVSLĐ",
-     "icon": "PiFirstAidKitDuotone"
+     "link": "TNLĐ · Luật ATVSLĐ"
     },
     {
      "when": "Tuổi 60",
      "event": "Đủ tuổi hưu, đóng 32 năm",
-     "link": "Hưu trí · Điều 64",
-     "icon": "PiArmchairDuotone"
+     "link": "Hưu trí · Điều 64"
     },
     {
      "when": "Sau này",
      "event": "Gia đình lo mai táng",
-     "link": "Tử tuất · Điều 84",
-     "icon": "PiFlowerLotusDuotone"
+     "link": "Tử tuất · Điều 84"
     }
    ],
    "focus": 3,
@@ -330,7 +303,6 @@
    ],
    "cols": [
     {
-     "icon": "PiThermometerDuotone",
      "name": "Ốm đau",
      "cells": [
       "Nghỉ điều trị, chăm con dưới 7 tuổi (Đ42)",
@@ -338,7 +310,6 @@
      ]
     },
     {
-     "icon": "PiBabyDuotone",
      "name": "Thai sản",
      "cells": [
       "Đóng đủ 6/12 tháng trước sinh (Đ50)",
@@ -346,7 +317,6 @@
      ]
     },
     {
-     "icon": "PiFirstAidKitDuotone",
      "name": "TNLĐ – BNN",
      "cells": [
       "Suy giảm từ 5% (Đ45, 46 ATVSLĐ)",
@@ -354,7 +324,6 @@
      ]
     },
     {
-     "icon": "PiArmchairDuotone",
      "name": "Hưu trí",
      "cells": [
       "Đủ tuổi + đóng đủ 15 năm (Đ64)",
@@ -362,7 +331,6 @@
      ]
     },
     {
-     "icon": "PiFlowerLotusDuotone",
      "name": "Tử tuất",
      "cells": [
       "Đóng đủ 15 năm / đang hưởng hưu (Đ86)",
@@ -385,23 +353,18 @@
    "kicker": "Phần 1 · Lương hưu tính thế nào?",
    "title": "Lương hưu bằng 45–75% bình quân tiền lương đóng BHXH",
    "result": {
-    "sym": "LH",
     "label": "Lương hưu hằng tháng"
    },
    "terms": [
     {
-     "sym": "%",
      "label": "Tỷ lệ hưởng",
      "note": "Nữ 45% ở 15 năm, nam 45% ở 20 năm; +2%/năm, tối đa 75%"
     },
     {
-     "sym": "BQ",
      "label": "Bình quân tiền lương",
-     "op": "×",
      "note": "Tiền lương làm căn cứ đóng, đã điều chỉnh (Điều 72)"
     }
    ],
-   "focus": 0,
    "example": "Nữ đóng 25 năm: 45% + 10 × 2% = 65%, nên lương hưu = [65% × bình quân tiền lương]",
    "note": "Nam đóng 15 đến dưới 20 năm: 40% ở 15 năm, mỗi năm thêm 1% (k1 Điều 66)",
    "covers": [
@@ -424,7 +387,6 @@
   },
   {
    "type": "bhcot2",
-   "kind": "column",
    "kicker": "Phần 2 · Số người tham gia",
    "title": "Số người đóng BHXH bắt buộc tăng đều, chỉ giảm năm 2022",
    "unit": "triệu người",
@@ -517,17 +479,13 @@
    "cols": [
     {
      "n": 21,
-     "unit": "%",
      "value": "42",
-     "label": "Có BHXH (cả tự nguyện)",
-     "emoji": "check-mark-button"
+     "label": "Có BHXH (cả tự nguyện)"
     },
     {
      "n": 29,
-     "unit": "%",
      "value": "58",
-     "label": "Chưa tham gia — khoảng 30 triệu người",
-     "emoji": "warning"
+     "label": "Chưa tham gia — khoảng 30 triệu người"
     }
    ],
    "source": "Tỷ lệ theo tài liệu của nhóm (BHXH VN công bố 45,1% năm 2025). Nợ, trốn đóng 2025: 14.887 tỷ đồng, 3,4% số phải thu (BHXH VN).",
@@ -540,7 +498,6 @@
   },
   {
    "type": "bhcot2",
-   "kind": "column",
    "kicker": "Phần 2 · Ngoài diện bắt buộc thì sao?",
    "title": "BHXH tự nguyện tăng gấp 10 lần, vẫn chỉ bằng 1/7 bắt buộc",
    "unit": "triệu người",
@@ -623,11 +580,6 @@
    "type": "bhquy",
    "kicker": "Phần 2 · Quỹ có đủ chi?",
    "title": "Quỹ thu vượt chi suốt 2015–2022",
-   "cols": [
-    "Năm",
-    "Thu − chi",
-    "Ghi chú"
-   ],
    "unit": "nghìn tỷ đồng",
    "rows": [
     {
@@ -684,7 +636,6 @@
      "value": -10.8,
      "display": "−10,8",
      "note": "Phạm vi khác: thu chỉ bằng nửa 2022",
-     "tone": "bad",
      "hatch": true
     },
     {
@@ -692,7 +643,6 @@
      "value": -19.5,
      "display": "−19,5",
      "note": "Phạm vi khác — chưa so được",
-     "tone": "bad",
      "hatch": true
     },
     {
@@ -700,7 +650,6 @@
      "value": -11.8,
      "display": "−11,8",
      "note": "Phạm vi khác — chưa so được",
-     "tone": "bad",
      "hatch": true
     }
    ],
@@ -746,22 +695,16 @@
     "tag": "Tình huống",
     "text": "Đã đóng 6 năm, nghỉ việc 12 tháng, không đóng tiếp, rút BHXH một lần"
    },
-   "emojis": [
-    "person-walking",
-    "door"
-   ],
    "stamp": {
     "text": "Mất\nthời gian",
     "sub": "k3 Điều 5"
    },
    "results": [
     {
-     "emoji": "hourglass-done",
      "text": "Thời gian đã rút không còn được tính để hưởng lương hưu",
      "ref": "Khoản 3 Điều 5"
     },
     {
-     "emoji": "older-person",
      "text": "Muốn có lương hưu phải đóng lại từ đầu đủ 15 năm",
      "ref": "Khoản 1 Điều 64"
     }
@@ -793,25 +736,21 @@
    "title": "BHXH phủ rộng và quản lý gọn hơn",
    "cells": [
     {
-     "icon": "PiUsersThreeDuotone",
      "value": "+57%",
      "head": "Người đóng bắt buộc 2015–2025",
      "text": "Tăng đều, chỉ giảm năm 2022"
     },
     {
-     "icon": "PiDeviceMobileDuotone",
      "value": "25",
      "head": "Thủ tục (năm 2015: 114)",
      "text": "100% trực tuyến, có VssID"
     },
     {
-     "icon": "PiDatabaseDuotone",
      "value": "99%",
      "head": "Khớp dữ liệu dân cư",
      "text": "89,6 triệu người (2024)"
     },
     {
-     "icon": "PiScalesDuotone",
      "head": "Luật mới hoàn thiện hơn",
      "text": "Hưu từ 15 năm; trợ cấp cho người thiếu năm đóng (Điều 23)"
     }
@@ -838,21 +777,18 @@
    ],
    "items": [
     {
-     "icon": "PiDoorOpenDuotone",
      "name": "Rút một lần",
      "who": "Mất thời gian tính hưu",
      "desc": "Thời gian đã rút không còn tính hưởng (k3 Điều 5); quỹ mất nguồn thu dài hạn",
      "ref": "Số liệu: slide 19–20"
     },
     {
-     "icon": "PiWarningDuotone",
      "name": "Nợ, trốn đóng",
      "who": "3,4% số phải thu (2025)",
      "desc": "Người lao động bị trừ lương nhưng không được ghi nhận, dễ mất thai sản, hưu",
      "ref": "Số liệu: slide 16"
     },
     {
-     "icon": "PiUserMinusDuotone",
      "name": "Ngoài hệ thống",
      "who": "Khoảng 30 triệu người",
      "desc": "Lao động tự do, phi chính thức chưa tham gia, nên về già không có lương hưu",
@@ -875,19 +811,16 @@
    ],
    "items": [
     {
-     "icon": "PiDoorOpenDuotone",
      "name": "Rút một lần",
      "who": "Điểm đ khoản 1 Điều 70",
      "desc": "Chỉ cho rút tối đa 50% thời gian đóng, bảo lưu phần còn lại để hưởng hưu"
     },
     {
-     "icon": "PiWarningDuotone",
      "name": "Nợ, trốn đóng",
      "who": "Điều 40, Điều 41",
      "desc": "Giải quyết trước ốm đau, thai sản cho người lao động, rồi truy thu doanh nghiệp"
     },
     {
-     "icon": "PiStorefrontDuotone",
      "name": "Chủ hộ kinh doanh",
      "who": "Điểm m khoản 1 Điều 2",
      "desc": "Lộ trình theo doanh thu, hỗ trợ mức đóng năm đầu; đến 2/2026 mới 36.000 người"
@@ -999,7 +932,6 @@
    "covers": [],
    "notes": "Nhóm cảm ơn thầy cô và các bạn đã lắng nghe. Nhóm sẵn sàng trả lời câu hỏi, nhất là về số liệu: chỗ nào bảng của nhóm khác số công bố của BHXH Việt Nam, nhóm đã ghi trong ghi chú từng slide.",
    "kicker": "Hết phần trình bày",
-   "stamp": "Cảm ơn",
    "team": [
     {
      "name": "Nhóm thuyết trình BNK405"

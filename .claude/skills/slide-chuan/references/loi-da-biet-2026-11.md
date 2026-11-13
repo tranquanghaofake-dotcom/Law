@@ -148,6 +148,12 @@ Hai phiên độc lập, cùng đề tài hình sự, **cùng ba kết luận** 
 | F3.6 | Chip dữ kiện trên ảnh bìa / kết nền trong suốt — gặp vùng ảnh sáng còn 2,7 : 1 | ◐ | nền tối mờ |
 | F3.7 | Tiêu đề ngắt giữa từ ghép ("rời hệ / thống") | đọc chỗ xuống dòng của chữ ≥ 40 px | `hinh.js` giữ liền ~90 từ ghép thường gặp bằng dấu cách không ngắt; `\n` trong chuỗi = xuống dòng chủ ý |
 
+| F3.8 | **Hai thuộc tính `style` trên một thẻ** (style="left…" rồi `${inn()}` cũng ghi style) ở 22 chỗ → trình duyệt bỏ cái sau, mất `--i` → tầng kim tự tháp, nút flow, thẻ checklist, ảnh collage… hiện cùng lúc trong PPTX | điểm đánh số của `photo` dồn một chỗ; dò mẫu bằng regex | `render()` gộp mọi style của một thẻ; test trên 9 deck mẫu |
+| F3.9 | `focus` bị bỏ ở cards / steps / hub / matrix / cheatsheet / photostrip; `duel` luôn tô phải, luôn đánh số | bộ theo dõi trường đọc (Proxy) | nhấn bằng đúng mã đã có (vàng = đang bàn, nền mực, viền trong); duel nhận focus, paired |
+| F3.10 | `quote` / `statement` / `section` / `end` + `cutout` không vẽ ảnh; có cutout thì da còn tắt hình lớn → slide trống | bộ theo dõi + mắt | vẽ; đo alpha 4 mép (sharp) để dán mép cắt vào mép slide |
+| F3.11 | Ảnh nào trong PPTX cũng có chữ thay thế "Hình minh hoạ" — `photoAlt` / `alt` không tới bộ dựng | đọc `build.js` (chỉ lấy `data-alt`) | `tu_gan.js` lấy từ `aria-label` / `alt` của ảnh trong khối |
+| F3.12 | `cards.items[].photo`, `isotype.icon`, `photo.callouts / photoMark / side / photoStyle`, `split.photoMark / items[].icon`, `statement.stats[].tone`, `chart span hatch` bị bỏ | bộ theo dõi trường đọc | vẽ đủ |
+
 ### F4. Kinh nghiệm (lỗi của người làm, phiên này)
 - **Thêm một quy tắc CSS "tốt" có thể đè quy tắc tốt hơn**: `section.s { text-wrap: pretty }` (hinh.css) có độ ưu tiên cao hơn `.s { text-wrap: balance }` (stage.css) → đè mất balance; Chromium `pretty` lại không sửa đoạn 2 dòng → tiêu đề mồ côi trở lại ("…850 / triệu"). Trước khi thêm thuộc tính toàn cục: `grep` thuộc tính đó trong mọi file CSS; thử cả trường hợp 2 dòng.
 - **Script chụp kiểm tra cũng phải giống bản dựng**: ép `display: block` lên slide (để ẩn slide khác) làm mất `flex` → dải Ghi nhớ "trôi" lên giữa slide trong ảnh chụp, dễ sửa nhầm. Ẩn slide khác bằng `:not(.xem) { display: none }`, không đụng slide đang xem.
