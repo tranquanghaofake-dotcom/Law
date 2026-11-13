@@ -50,3 +50,15 @@ test("bắt nét vẽ dọc (đường ngưỡng nét đứt) cắt qua chữ; k
   const [s] = await soat(f);
   assert.strictEqual(s.cat.length, 1, s.cat.join(" | ")); assert.match(s.cat[0], /Trên 50%/);
 });
+
+test("viên nhãn có nền: so MÉP VIÊN với lề, không so chữ bên trong (lề trong của viên không phải lệch)", { skip: !hasPw && "không có Playwright", timeout: 120000 }, async () => {
+  const { soat } = require("../scripts/soat_chi_tiet");
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), "soat-vien-")), f = path.join(dir, "deck.html");
+  const vien = (x, y, chu) => `<div data-t style="position:absolute;left:${x}px;top:${y}px;padding:6px 18px;background:#1f4fa8;color:#fff;font:700 24px/1.2 sans-serif">${chu}</div>`;
+  const o = (x, y, chu) => `<div data-t style="position:absolute;left:${x}px;top:${y}px;width:700px;font:700 30px/1.2 sans-serif;color:#13213f">${chu}</div>`;
+  fs.writeFileSync(f, `<!doctype html><html><body style="margin:0"><section class="s" data-type="thu" data-title="Thử" style="position:relative;width:1920px;height:1080px;background:#fff">
+    ${vien(110, 100, "Nhãn thẳng lề")}${o(110, 200, "Tiêu đề cùng lề")}${vien(1004, 100, "Nhãn lệch sáu")}${o(1010, 200, "Chữ ở cột phải")}
+  </section></body></html>`);
+  const [s] = await soat(f);
+  assert.strictEqual(s.lech.length, 1, s.lech.join(" | ")); assert.match(s.lech[0], /Nhãn lệch sáu/);
+});

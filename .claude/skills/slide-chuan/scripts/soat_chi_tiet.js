@@ -52,7 +52,9 @@ async function soat(html) {
           return { soChu: chu.length, chu: chu.join(" "), rong: h.r - h.l, rongMax: Math.max(...hang.map((x) => x.r - x.l)) }; })();
         // chữ đặt trên ẢNH CHỤP (không phải hoạ tiết SVG của da): mép vật trong ảnh không phải "nét vẽ cắt chữ" — bỏ phép ✂
         const tam = [r.left + Math.min(r.width, 200) / 2, r.top + r.height / 2], trenAnh = document.elementsFromPoint(...tam).some((e) => e !== s && !e.matches("section.s") && (e.tagName === "IMG" || /url\("?(?!data:image\/svg)/.test(getComputedStyle(e).backgroundImage)));
-        return { i, longR, cuoi, soDong: hang.length, dl: t.hasAttribute("data-dl"), trenAnh, chu: t.textContent.trim().replace(/\s+/g, " ").slice(0, 40), lop: t.className.split(" ")[0], r: [r.left, r.top, r.width, r.height], canh: cs.textAlign, co: parseFloat(cs.fontSize), dam: +cs.fontWeight || 400, xoay: (() => { for (let a = t; a && !a.matches("section.s"); a = a.parentElement) { const c = getComputedStyle(a), m = (c.transform.match(/matrix\(([^)]+)\)/) || [])[1]; if ((c.rotate && c.rotate !== "none" && c.rotate !== "0deg") || (m && Math.abs(+m.split(",")[1]) > 0.01)) return true; } return false; })() /* chỉ tính xoay thật; scale / dịch của hiệu ứng vào không tính */, doan }; });
+        // viên nhãn / ô có nền hoặc viền: thứ phải thẳng lề là MÉP VIÊN, chữ bên trong lùi theo lề trong của viên (so nét chữ của nó với chữ thường là báo nhầm)
+        const vien = !/rgba\(0, 0, 0, 0\)|transparent/.test(cs.backgroundColor) || ["Left", "Top"].some((k) => parseFloat(cs["border" + k + "Width"]) > 0 && cs["border" + k + "Style"] !== "none");
+        return { i, longR, cuoi, soDong: hang.length, dl: t.hasAttribute("data-dl"), trenAnh, vien, chu: t.textContent.trim().replace(/\s+/g, " ").slice(0, 40), lop: t.className.split(" ")[0], r: [r.left, r.top, r.width, r.height], canh: cs.textAlign, co: parseFloat(cs.fontSize), dam: +cs.fontWeight || 400, xoay: (() => { for (let a = t; a && !a.matches("section.s"); a = a.parentElement) { const c = getComputedStyle(a), m = (c.transform.match(/matrix\(([^)]+)\)/) || [])[1]; if ((c.rotate && c.rotate !== "none" && c.rotate !== "0deg") || (m && Math.abs(+m.split(",")[1]) > 0.01)) return true; } return false; })() /* chỉ tính xoay thật; scale / dịch của hiệu ứng vào không tính */, doan }; });
       return { ten: (s.dataset.title || s.dataset.type || "").slice(0, 48), type: s.dataset.type, hop }; }, k);
     await page.waitForTimeout(60); const A = await anh();
     await page.evaluate((k) => document.querySelectorAll("section.s")[k].classList.add("anchu"), k); await page.waitForTimeout(40); const B = await anh();
@@ -69,7 +71,7 @@ async function soat(html) {
     for (const h of meta.hop) { if (h.dl || h.xoay || (h.canh !== "left" && h.canh !== "start") || h.r[2] < 120) continue; const q = h.doan[0].q[0]; if (!q) continue;
       const sau = h.doan[0].q.find((p) => p[1] > q[1] + q[3] * 0.4);   // dòng 2: hộp dòng chữ trưng bày chồng lên dòng 1 (line-height < cỡ chữ) — "T" dòng 2 từng bị tính là nét đầu của dòng 1
       const y0 = Math.max(0, Math.round(q[1])), y1 = Math.min(1079, Math.round(q[1] + q[3]), sau ? Math.round(sau[1]) - 1 : 1079), x0 = Math.max(0, Math.round(h.r[0]) - 4), x1 = Math.min(1919, Math.round(h.r[0] + 80));
-      let L = null; const m0 = h.doan[0].mau; for (let x = x0; x <= x1 && L == null; x++) for (let y = y0; y <= y1; y += 2) if (net(x, y, m0)) { L = x; break; }
+      let L = h.vien ? Math.round(h.r[0]) : null; const m0 = h.doan[0].mau; for (let x = x0; x <= x1 && L == null; x++) for (let y = y0; y <= y1; y += 2) if (net(x, y, m0)) { L = x; break; }
       if (L != null) mep.push({ L, y: q[1], h }); }
     for (let i = 0; i < mep.length; i++) for (let j = i + 1; j < mep.length; j++) { const d = Math.abs(mep[i].L - mep[j].L);
       if (mep[i].h.co >= 80 && mep[j].h.co >= 80) continue;   // hai dòng chữ trưng bày cỡ lớn: canh theo mắt, lề trong của nét chữ khác nhau
