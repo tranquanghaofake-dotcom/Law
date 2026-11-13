@@ -630,6 +630,17 @@ function validate(deck, { extraTypes = [] } = {}) {
     if (["section", "cover", "agenda", "end", "closing"].includes(sl.type) || !/hoàn thiện pháp luật|kiến nghị|sửa đổi|bổ sung quy định/i.test(head(sl))) return;
     const key = ["items", "rows", "cells", "steps", "branches", "pairs", "levels"].find(k => Array.isArray(sl[k]) && sl[k].length);
     if (key) sl[key].forEach((u, j) => { if (!LAWREF.test(unitText(u))) RW(`Slide ${n} (${sl.type}): ${key}[${j}] là kiến nghị nhưng không chỉ ra điều, khoản nào — nêu quy định cụ thể chưa hợp lý và hướng sửa`); }); });
+  // CÙNG MỘT CON SỐ HAI CÁCH GHI trên một slide ("800.000" ở tiêu đề, "0,8" + "triệu" ở số lớn): người nghe phải đổi đơn vị
+  // trong đầu; chọn một cách ghi cho cả slide (references/nguyen-tac-bo-cuc.md mục 8). Chỉ xét số ≥ 1.000 (số đếm), bỏ năm, số điều luật.
+  { const BO = new Set(["notes", "covers", "id", "photo", "photoAlt", "photoCredit", "photoSource", "cutout", "url", "go", "next", "icon", "emoji", "emoji2", "art", "type", "basis"]);
+    const chu = (v, k) => (BO.has(k) ? "" : typeof v === "string" ? v + " " : typeof v === "number" ? v + " " : Array.isArray(v) ? v.map((x) => chu(x)).join(" ") : isObj(v) ? Object.entries(v).filter(([kk]) => !(kk === "value" && "display" in v)).map(([kk, x]) => chu(x, kk)).join(" ") : "");   // có display thì số thô không hiện
+    const NHAN = { nghìn: 1e3, ngàn: 1e3, triệu: 1e6, tỷ: 1e9, tỉ: 1e9 };
+    deck.slides.forEach((sl, i) => { if (!isObj(sl)) return; const t = chu(sl).replace(/[[\]]/g, "").replace(/(Điều|khoản|điểm|Đ\.)\s*\d+/gi, ""), so = [];
+      for (const m of t.matchAll(/(?<![\d\p{L}.,])(\d{1,3}(?:\.\d{3})+|\d+(?:,\d+)?)(?:\s*(nghìn|ngàn|triệu|tỷ|tỉ)(?!\p{L}))?/gu)) {
+        const raw = m[1], dv = (m[2] || "").toLowerCase(), v = parseFloat(raw.replace(/\.(?=\d{3})/g, "").replace(",", ".")) * (NHAN[dv] || 1);
+        if (v >= 1000 && !(!dv && /^(19|20)\d\d$/.test(raw))) so.push({ v, ghi: m[0].trim().replace(/\s+/g, " "), dv }); }
+      const da = new Set(); for (const a of so) for (const b of so) if (a.dv !== b.dv && Math.abs(a.v - b.v) / a.v < 0.005) { const k = [a.ghi, b.ghi].sort().join("|"); if (da.has(k)) continue; da.add(k);
+        warnings.push(`Slide ${i + 1} (${sl.type}): cùng một con số hai cách ghi — "${a.ghi}" và "${b.ghi}"; chọn một cách ghi cho cả slide (người nghe không phải đổi đơn vị trong đầu)`); } }); }
   return { errors, warnings, hints };
 }
 
