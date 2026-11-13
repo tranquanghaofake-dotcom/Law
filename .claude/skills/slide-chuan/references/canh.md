@@ -270,36 +270,37 @@ Vì sao có: bài "Tổng quan Công pháp quốc tế" (13/11/2026) dựng bằ
 - **Còn thiếu** (deck dùng type thường cho các slide này, nên nền và khung chưa đồng bộ): so sánh hai bên, trích điều luật, thứ bậc, cây điều kiện, chuỗi hệ quả, danh sách nguyên tắc, trắc nghiệm, chốt ý, cảm ơn. Hướng sửa gốc: "da theo môn" — mục E3-P3 của `loi-da-biet-2026-11.md`.
 - Ví dụ: `examples/hoi-nghi-qt/deck.json` (3 slide). Dựng: `node hinh/dung.js examples/hoi-nghi-qt/deck.json /tmp/qt.pptx --soat`.
 
-## 10. Bộ hình riêng theo môn: "sổ BHXH trên bàn làm việc" (An sinh xã hội) — `hinh/so_bhxh.js`, `hinh/bhxh_vat.js`
+## 10. Bộ hình riêng theo môn: BHXH "báo cáo sáng" (An sinh xã hội) — `hinh/so_bhxh.js`, icon `hinh/icon.js`
 
-Vì sao có: bài BNK405 "Tình hình triển khai BHXH bắt buộc 2015–2025" dựng bằng type thường bị chê "quá xấu, đơn giản", "Morph vô lí", "asset ít, dùng lại bị trùng lặp". Ẩn dụ: **mặt bàn bọc da xanh than dưới đèn bàn**, trên bàn là đồ vật của hồ sơ BHXH (sổ, phong bì lương hưu, tập hồ sơ, bình quỹ); **chị Hoa** — một lao động giả định, người cắt giấy viền trắng — đi suốt bài. Kịch bản đầy đủ 28 slide: `docs/specs/2026-11-13-bhxh-kich-ban-morph.md` (ở gốc repo). Chọn bằng `"meta": { "da": "so-bhxh" }` và type `bh*`.
+Lịch sử: bản đầu là "sổ BHXH trên bàn làm việc" (mặt bàn da, người cắt giấy, sổ, bình quỹ vẽ bằng code, Morph kéo 20–50 vật mỗi lần bấm). Người dùng chê **xấu, rối, khó hiểu, chóng mặt, lỗi font** (11/2026). Bài học, giữ cho mọi bộ hình sau:
+1. **Morph = MỘT vật đổi trong cùng khung**, không phải "mọi thứ cùng bay". Nhiều vật cùng trượt (kể cả có nghĩa) làm người xem chóng mặt.
+2. **Không ẩn dụ phải giải mã** (người dưới ô = có BHXH, khối năm rơi = mất thời gian). Bài báo cáo luật: kết luận + con số + căn cứ, đọc được ngay.
+3. **Một hệ hình**: không trộn ảnh giống thật, icon phẳng, người cắt giấy, đồng hồ trong cùng bài. Hình tự vẽ bằng code có trần chất lượng — dùng bộ icon mã nguồn mở nét đồng nhất.
+4. **Một lưới**: lề 110 px, kicker y 76, tiêu đề y 116 (đo số dòng bằng chính file font — `fontkit`, không ước lượng theo số ký tự), nội dung từ y ≈ 320, nguồn y ≈ 950, chân trang y 1014.
 
-**Ba luật Morph của bộ này**
-1. **Morph = động từ của tiêu đề.** Tiêu đề nói "tăng" thì sổ xếp thêm; "rút ngắn 20 → 15 năm" thì phong bì trượt về sau khối năm thứ 15, 5 khối thừa rơi xuống; "rút một lần" thì chồng sổ đi ra cửa. Vật nào không minh hoạ động từ thì đứng yên hoặc mờ đi — không bay cho có.
-2. **Cùng một vật giữ cùng tên `data-m` xuyên slide**: sổ nhỏ `bh-ms*` (1 cuốn = 1 triệu người), khối năm `bh-kn*`, phong bì `bh-phongbi`, ô `bh-o`, bình quỹ `bh-binh-*` / `bh-xu-quy`, cửa `bh-cua`, tập hồ sơ `bh-tap1…3`, chị Hoa `bh-hoa`. Hộp chữ không đặt tên tự nhận tên theo nội dung, nên chữ giống hệt ở hai slide kề (vd. số "01" của tập hồ sơ) cũng trượt theo.
-3. **Slide hai bước** (`bhmorong`, `bhrutngan`, `bhquy`, `bhmat`, `bhcongthuc`, `bhcot2`, `bhrut`, `bhdat`): 1 slide deck.json → 2 slide PowerPoint, bấm sang bước 2 thì thay đổi xảy ra **trong chính slide** (cột mọc, kim quay, mực quỹ dâng). Trắc nghiệm `bhhoi` → 3 slide (hỏi, sai, đúng), bấm phong bì đáp án.
-
-**Luật trình bày**: chữ ≥ 26 px; mỗi slide có đơn vị đếm thì có **chú giải ngay trên slide** (thẻ kraft "1 cuốn sổ = 1 triệu người đóng", tự cao theo số dòng); một vật chính to, không rải vật nhỏ; bút và đồng xu chỉ ở bìa và slide kết; chị Hoa chỉ di chuyển khi việc đó có nghĩa (đổi vai, đổi tâm trạng); tiêu đề cùng một dải (x 110, y 92 / 132).
+Thiết kế hiện tại: nền sáng `#f5f3ee`, thẻ trắng viền mảnh bo 20, màu xanh `#1f6b57` (tích cực), hổ phách (trọng tâm), đỏ `#b23a30` (tiêu cực); icon Phosphor duotone (MIT) trong vòng tròn nhạt; một họ chữ Be Vietnam Pro 400 / 600 / 800 (không Anton, không ký hiệu ngoài font: ✓ → icon, → → chữ). Chuyển cảnh mờ nhẹ; Morph chỉ ở bước 2 của slide hai bước.
 
 | type | Dùng cho | Trường chính |
 |---|---|---|
-| `bhbia` · `bhket` | Bìa / kết: sổ BHXH lớn, giấy ghi, thước dây, chị Hoa | `kicker` `title` `subtitle` `author` `authorSub` `date` · kết: `kicker` `title` `message` `team[≤4]{name}` |
-| `bhdo` · `bhtang` | Câu hỏi lớn trên thước dây 2015 → 2025 · kết luận chính: sổ trượt sang vạch cuối, đặt thêm, dấu đỏ năm đi lùi | `lines` `box` · `title` `sub` `stats[3]{value,label,desc}` |
-| `bhba` · `bhtraloi` | Ba câu hỏi = ba tập hồ sơ (bấm để nhảy) · trả lời lại đúng ba tập + nhận định đóng dấu | `items[3]{q,go}` · `answers[3]{q,a}` `verdict` |
-| `bhchuong` | Mở phần: tập hồ sơ của phần phóng to | `num` `part` `title` `sub` |
-| `bhtrich` | Trích nguyên văn trên cuốn luật mở + giấy ghi ý then chốt | `quote` (`**tô**`) `by` `role` `note` |
-| `bhvaitro` · `bhnhom` | Ba vai trò (ô, cân, giỏ hàng) · ba nhóm đối tượng (phiếu + người cắt giấy) | `items[3]{name,who,desc}` |
-| `bhmorong` | Mở rộng diện: tập hồ sơ xếp ngăn giãn ra, người mới đi vào | `items[≤5]{text,k}` `big{value,label}` `source` |
-| `bhrutngan` | Mốc năm đóng: khối năm + phong bì | `cols[2]{n,label}` `legend` `ref{head,text}` `source` |
-| `bhduong` · `bhphieu5` | Năm chế độ trên con đường đời · năm phiếu điều kiện / mức hưởng | `stages[5]{when,event,link}` `focus` · `cols[5]{name,cells[2]}` `rows[2]` `focus` |
-| `bhcongthuc` | Công thức có tỷ lệ: đồng hồ %, phiếu lương, phong bì | `terms[]` `result{sym,label}` `example` `note` |
-| `bhcot2` · `bhquy` | Chuỗi năm in trên tờ rời, nguyên nhân tại năm, thẻ kết luận kẹp mép · bảng thu − chi + bình quỹ | `items[]{label,value,display,why,focus,tone}` `bands` `insight{value,unit,text}` `unit` · `rows[]{label,value,display,note}` `den` `unit` |
-| `bhche` | Tỷ lệ bao phủ: người tí hon dưới ô / ngoài mưa | `cols[2]{n,value,label}` `legend` `source` |
-| `bhrut` · `bhmat` | Số người rút một lần (chồng sổ ra cửa) · hệ quả trên sổ của chị Hoa | `num` `unit` `sub` · `cause{tag,text}` `results[2]{text,ref}` `stamp{text,sub}` `source` |
-| `bhdat` | Kết quả: chồng thủ tục xẹp, điện thoại sáng, ba thẻ | `cells[4]{value,head,text}` |
-| `bhhanche` · `bhkiennghi` | Ba hạn chế quay lại đúng vật ở phần thực trạng · kiến nghị đặt vật vá lên vật đó | `items[3]{name,who,desc,ref}` `labels` |
-| `bhhoi` · `bhghinho` | Trắc nghiệm 4 phong bì · ba thẻ số nhớ (bấm quay lại slide chứng minh) | `options[4]{text,ok}` `right` `wrong` `next` · `lines` `chips[3]{n,text,go}` `basis` |
+| `bhbia` · `bhket` | Bìa / kết: chữ bên trái, ảnh thật nửa phải | `kicker` `title` `subtitle` `author` `authorSub` `date` `photo` `photoCredit` `photoSource` · kết: `title` `message` `sub` `team[≤4]{name}` `photo` |
+| `bhdo` | Câu hỏi lớn + ba mặt sẽ đo (thẻ icon) | `lines` `box` `dims[3]{icon,t,d}` (mặc định: luật · người tham gia · quỹ) `by` |
+| `bhtang` | Kết luận chính: hai thanh cùng thang + thẻ hệ số tăng + thẻ năm đi lùi | `title` `sub` `stats[3]{value,label,desc}` |
+| `bhba` · `bhtraloi` | Ba câu hỏi (thẻ bấm) · trả lời lại đúng ba câu + nhận định | `items[3]{q,go}` · `answers[3]{q,a}` `verdict` |
+| `bhchuong` | Mở phần: dải màu trái (icon + số phần), câu hỏi bên phải | `num` `part` `title` `sub` |
+| `bhtrich` | Trích nguyên văn (cụm nhấn tô) + thẻ "ý then chốt" | `title` `quote` (`[nhấn]`) `by` `role` `note` ("Tiêu đề: ý 1 · ý 2") |
+| `bhvaitro` · `bhnhom` | Ba thẻ cùng khuôn: icon, tên, dòng nhấn, giải thích | `items[3]{icon,name,who,desc}` |
+| `bhmorong` | Năm thẻ nhỏ + dải số lớn | `items[≤5]{k,text}` (`k`: l · m · n · e · k → icon) `big{value,label}` `source` |
+| `bhrutngan` | **Hai bước**: dải 20 ô năm; bước 2 năm ô cuối thành nét đứt, mốc "lương hưu" trượt về sau ô 15 | `cols[2]{n,label}` `legend` `ref{head,text}` `source` |
+| `bhduong` · `bhphieu5` | Trục thời gian 5 mốc · năm thẻ cột (điều kiện, mức hưởng) | `who{name,sub}` `stages[5]{when,event,link,icon}` `focus` · `cols[5]{name,icon,cells[2]}` `rows[2]` `focus` |
+| `bhcongthuc` | **Hai bước**: ba hộp công thức; thanh tỷ lệ hưởng 45 % → 65 % | `terms[2]{label,note}` `result{label}` `example` `note` `buoc1` `buoc2` |
+| `bhcot2` | Biểu đồ cột (**hai bước**: cột mọc; `"grow": false` → một slide), số chú thích tại năm, thẻ kết luận | `items[]{label,value,display,why,focus,tone}` `bands` `insight{value,unit,text}` `unit` `note` |
+| `bhche` | Lưới 50 hình người (1 người = 2 %) + hai thẻ phần trăm | `cols[2]{n,value,label}` `legend` `source` |
+| `bhquy` | Thanh ngang thu − chi từng năm; năm khác phạm vi vẽ nét đứt xám | `rows[]{label,value,display,note,focus}` `den` `unit` `note` `ngoai` |
+| `bhrut` · `bhmat` | Số lớn + ba thẻ ý · luồng: tình huống → hệ quả pháp lý → hai hệ quả | `num` `unit` `facts[3]{icon,text}` · `cause{tag,text}` `stamp{text,sub}` `results[2]{text,ref}` `source` |
+| `bhdat` | Bốn thẻ số liệu 2 × 2 | `cells[4]{icon,value,head,text}` |
+| `bhhanche` · `bhkiennghi` | Ba thẻ cùng chỗ ở hai slide (đỏ → xanh), nối được từng cặp | `items[3]{icon,name,who,desc,ref}` `labels` |
+| `bhhoi` · `bhghinho` | Trắc nghiệm 4 thẻ (→ 3 slide hỏi / sai / đúng) · câu chốt + ba thẻ số bấm quay lại | `options[4]{text,ok}` `right` `wrong` `next` · `lines` `chips[3]{n,text,go}` `basis` |
 
-- **Kiểm Morph khi không có PowerPoint**: `python3 scripts/morph_cap.py out.pptx` (đếm cặp) và `node scripts/xem_morph.js <tên>_lop/deck.html out.mp4 --giu=1600` (quay video xấp xỉ chuyển động để soát nhịp, ý đồ). Bản thật vẫn phải mở bằng PowerPoint 2019 / 365.
-- **Giới hạn đã biết**: file nặng (bài 28 slide ≈ 24 MB vì mỗi vật là một lớp ảnh); LibreOffice ngắt dòng tiêu đề bìa khác PowerPoint (tờ soát lệch ~3 %).
-- Ví dụ: `examples/so-bhxh/deck.json` (28 slide → 39 slide PowerPoint). Dựng: `node hinh/dung.js examples/so-bhxh/deck.json /tmp/bhxh.pptx --soat`.
+- Icon: `icon` nhận tên Phosphor dạng `"chart-line-up"` hoặc tên cũ `"PiChartLineUpDuotone"`; thiếu thì dùng icon mặc định của kiểu. Thêm icon: chép `<tên>-duotone.svg` từ gói `@phosphor-icons/core` vào `hinh/icons/<tên>.svg`.
+- Kiểm Morph khi không có PowerPoint: `python3 scripts/morph_cap.py out.pptx` và `node scripts/xem_morph.js <tên>_lop/deck.html out.mp4`.
+- Ví dụ: `examples/so-bhxh/deck.json` (28 slide). Dựng: `node hinh/dung.js examples/so-bhxh/deck.json /tmp/bhxh.pptx --soat`.

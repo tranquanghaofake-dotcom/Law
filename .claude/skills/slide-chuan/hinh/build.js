@@ -307,7 +307,7 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
       // nút đứng riêng (chữ tự mang data-go): đặt một ô trong suốt có liên kết NẰM DƯỚI chữ để cả mặt nút bấm được, chữ vẫn chọn sửa được
       if (hl && it.goOwn) sl.addShape(pp.ShapeType.rect, { x: (it.cx - M.ew / 2) * IN, y: (it.cy - M.eh / 2) * IN, w: M.ew * IN, h: M.eh * IN, fill: { color: "FFFFFF", transparency: 100 }, line: { type: "none" }, hyperlink: hl, objectName: `nut${si + 1}-${++auto}` });
       if (hl) (s.tlinks = s.tlinks || []).push({ name: nm, to: hl.slide }); // liên kết ở cấp HỘP CHỮ, gắn bằng XML ở bước 5 (để pptxgenjs gắn thì chữ bị gạch chân, đổi màu)
-      sl.addText(runs, { x: (cx - bw / 2) * IN, y: (cy - hgt / 2) * IN, w: bw * IN, h: hgt * IN, margin: 0, valign: "top", align: al, lineSpacing: +(L * PT).toFixed(2), paraSpaceBefore: 0, paraSpaceAfter: 0, rotate: deg(it.ang), objectName: nm, fit: "none", wrap: n > 1, isTextBox: true });   // một dòng: không tự xuống dòng — máy thiếu font thì chữ rộng ra chứ con số không gãy đôi
+      sl.addText(runs, { x: (cx - bw / 2) * IN, y: (cy - hgt / 2) * IN, w: bw * IN, h: hgt * IN, margin: 0, valign: "top", align: al, lineSpacing: +(L * PT).toFixed(2), paraSpaceBefore: 0, paraSpaceAfter: 0, rotate: deg(it.ang), objectName: nm, fit: "none", wrap: n > 1 && t0.st.s < 44, isTextBox: true });   // một dòng, hoặc chữ cỡ tiêu đề (≥ 44 px): không tự xuống dòng — dòng đã ngắt sẵn theo bản HTML; máy đo chữ hơi khác (thiếu font, LibreOffice) thì chữ rộng ra chứ không gãy thêm dòng đè lên khối dưới. Chữ thường nhiều dòng vẫn tự xuống dòng để sửa chữ
       fx(it, nm);
     }
     plan.push({ effects, s });

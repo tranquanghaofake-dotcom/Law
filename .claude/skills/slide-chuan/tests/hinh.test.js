@@ -120,7 +120,7 @@ test("dựng PPTX thật: chữ là hộp chữ sửa được, Morph và liên 
   if (chromiumPath) process.env.PW_CHROMIUM = chromiumPath;
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), "hinh-")), deckPath = path.join(dir, "thu.json");
   fs.writeFileSync(deckPath, JSON.stringify({ meta: { title: "Thử", short: "Bài thử" }, slides: [
-    { type: "cover", id: "bia", title: "Bìa [thử]", kicker: "Deck thử" },
+    { type: "cover", id: "bia", title: "Bìa [thử] của bộ dựng, tiêu đề cố ý dài để phải xuống hai dòng", kicker: "Deck thử" },
     { type: "statement", id: "y", title: "Một ý [cốt lõi] duy nhất", sub: "Nền tối, không có hình trang trí; câu phụ này cố ý viết dài để chắc chắn phải xuống hai dòng trong hộp chữ của slide một ý duy nhất." },
     { type: "tiles", id: "cot", title: "Hai mức [báo trước]", cols: [{ n: 12, unit: "ngày", label: "Mức A", morph: true }, { n: 3, unit: "ngày", label: "Mức B" }] },
     { type: "strip", id: "dai", title: "Mười hai ngày", n: 12, marks: [{ head: "Bắt đầu", text: "Ngày một" }, { head: "Kết thúc", text: "Ngày mười hai" }] },
@@ -137,9 +137,11 @@ test("dựng PPTX thật: chữ là hộp chữ sửa được, Morph và liên 
   assert.ok(s3.includes("p159:morph") && s3.includes("<p:timing>"), "Morph và chuỗi hiệu ứng gốc");
   // hộp chữ MỘT dòng không tự xuống dòng (máy thiếu font → chữ rộng hơn nhưng con số không gãy đôi); hộp nhiều dòng vẫn tự xuống dòng để sửa chữ
   const boxes = (x) => [...x.matchAll(/<p:sp>[\s\S]*?<\/p:sp>/g)].map((m) => m[0]).filter((b) => b.includes("<a:t>"));
-  const motDong = boxes(s2).find((b) => /cốt lõi/i.test(b)), nhieuDong = [s1, s2, s3, s4, s5].flatMap(boxes).find((b) => (b.match(/<a:p>/g) || []).length > 1);
+  const motDong = boxes(s2).find((b) => /cốt lõi/i.test(b)), coChu = (b) => Math.max(...[...b.matchAll(/ sz="(\d+)"/g)].map((m) => +m[1])), nhieuDong = [s1, s2, s3, s4, s5].flatMap(boxes).find((b) => (b.match(/<a:p>/g) || []).length > 1 && coChu(b) < 3300);
   assert.ok(motDong && /<a:bodyPr[^>]*wrap="none"/.test(motDong), "tiêu đề một dòng: wrap=none");
-  assert.ok(nhieuDong && /<a:bodyPr[^>]*wrap="square"/.test(nhieuDong), "chữ nhiều dòng: wrap=square");
+  assert.ok(nhieuDong && /<a:bodyPr[^>]*wrap="square"/.test(nhieuDong), "chữ thường nhiều dòng: wrap=square");
+  const bia = boxes(s1).find((b) => /bìa/iu.test(b));
+  assert.ok(bia && (bia.match(/<a:p>/g) || []).length > 1 && /<a:bodyPr[^>]*wrap="none"/.test(bia), "tiêu đề cỡ lớn nhiều dòng: wrap=none (dòng đã ngắt sẵn, không để trình mở file ngắt thêm)");
   for (let k = 1; k <= 12; k++) assert.ok(s3.includes(`name="!!o-${k}"`) && s4.includes(`name="!!o-${k}"`), `ô ${k} phải ghép Morph giữa cột và dải ngày`);
   assert.ok(s2.includes('name="!!td"') && s3.includes('name="!!td"') && s2.includes('name="!!ten-bai"'), "thanh tiến độ và tên bài chạy liền qua các slide");
   assert.ok((s5.match(/ppaction:\/\/hlinksldjump/g) || []).length >= 2 && /advClick="0"/.test(s5), "đáp án là liên kết nhảy slide; slide hỏi chặn bấm");

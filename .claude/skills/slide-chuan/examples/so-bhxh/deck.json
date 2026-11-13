@@ -13,7 +13,7 @@
   ],
   "partWord": "Phần",
   "hinh": {
-   "chuyen": "morph"
+   "chuyen": "fade"
   },
   "da": "so-bhxh"
  },
@@ -120,7 +120,8 @@
     "1.3",
     "1.3.1"
    ],
-   "notes": "Đây là định nghĩa nguyên văn tại khoản 3 Điều 3 Luật Bảo hiểm xã hội 2024. Hai chữ cần nhớ: Nhà nước tổ chức, và phải tham gia. Khác với bảo hiểm thương mại, người lao động và người sử dụng lao động thuộc diện không được chọn có tham gia hay không. Còn bảo hiểm xã hội nói chung, theo khoản 1 Điều 3, là sự bảo đảm thay thế hoặc bù đắp một phần thu nhập khi người tham gia bị giảm hoặc mất thu nhập do ốm đau, thai sản, tai nạn lao động, bệnh nghề nghiệp, khi nghỉ hưu hoặc chết, trên cơ sở đóng vào quỹ hoặc do ngân sách bảo đảm. Định nghĩa này giữ nguyên câu chữ so với khoản 1 Điều 3 Luật 2014 mà tài liệu của nhóm trích."
+   "notes": "Đây là định nghĩa nguyên văn tại khoản 3 Điều 3 Luật Bảo hiểm xã hội 2024. Hai chữ cần nhớ: Nhà nước tổ chức, và phải tham gia. Khác với bảo hiểm thương mại, người lao động và người sử dụng lao động thuộc diện không được chọn có tham gia hay không. Còn bảo hiểm xã hội nói chung, theo khoản 1 Điều 3, là sự bảo đảm thay thế hoặc bù đắp một phần thu nhập khi người tham gia bị giảm hoặc mất thu nhập do ốm đau, thai sản, tai nạn lao động, bệnh nghề nghiệp, khi nghỉ hưu hoặc chết, trên cơ sở đóng vào quỹ hoặc do ngân sách bảo đảm. Định nghĩa này giữ nguyên câu chữ so với khoản 1 Điều 3 Luật 2014 mà tài liệu của nhóm trích.",
+   "title": "BHXH bắt buộc: Nhà nước tổ chức, người thuộc diện [phải tham gia]"
   },
   {
    "type": "bhvaitro",
@@ -400,7 +401,7 @@
     }
    ],
    "focus": 0,
-   "example": "Nữ đóng 25 năm: 45% + 10 × 2% = 65% → lương hưu = [65% × bình quân tiền lương]",
+   "example": "Nữ đóng 25 năm: 45% + 10 × 2% = 65%, nên lương hưu = [65% × bình quân tiền lương]",
    "note": "Nam đóng 15 đến dưới 20 năm: 40% ở 15 năm, mỗi năm thêm 1% (k1 Điều 66)",
    "covers": [
     "2.4"
@@ -614,7 +615,8 @@
    "covers": [
     "3.2x"
    ],
-   "notes": "Đây là slide bối cảnh duy nhất về bảo hiểm xã hội tự nguyện, để so tỷ trọng với bắt buộc. Giai đoạn 2015–2018 số người tham gia thấp và đi ngang, khoảng 200 đến 250 nghìn người: phần lớn là lao động tự do, nông dân thu nhập không ổn định, mức đóng là gánh nặng. Năm 2019 bật lên 0,55 triệu, năm 2020 vượt 1 triệu: Nghị quyết 28-NQ/TW năm 2018 và chính sách ngân sách hỗ trợ một phần tiền đóng. Năm 2022 giảm còn 1,4 triệu do COVID-19 kéo dài. Đến 2025 đạt 2,62 triệu. Tuy vậy, tự nguyện vẫn chỉ bằng khoảng 1/7 bắt buộc, tỷ trọng 12,16%. Nguồn: bảng của nhóm; công thức tỷ trọng theo tài liệu."
+   "notes": "Đây là slide bối cảnh duy nhất về bảo hiểm xã hội tự nguyện, để so tỷ trọng với bắt buộc. Giai đoạn 2015–2018 số người tham gia thấp và đi ngang, khoảng 200 đến 250 nghìn người: phần lớn là lao động tự do, nông dân thu nhập không ổn định, mức đóng là gánh nặng. Năm 2019 bật lên 0,55 triệu, năm 2020 vượt 1 triệu: Nghị quyết 28-NQ/TW năm 2018 và chính sách ngân sách hỗ trợ một phần tiền đóng. Năm 2022 giảm còn 1,4 triệu do COVID-19 kéo dài. Đến 2025 đạt 2,62 triệu. Tuy vậy, tự nguyện vẫn chỉ bằng khoảng 1/7 bắt buộc, tỷ trọng 12,16%. Nguồn: bảng của nhóm; công thức tỷ trọng theo tài liệu.",
+   "grow": false
   },
   {
    "type": "bhquy",
@@ -712,14 +714,27 @@
    "type": "bhrut",
    "kicker": "Phần 2 · Điều gì đe doạ quỹ dài hạn?",
    "num": "0,8",
-   "unit": "triệu người rút BHXH một lần",
+   "unit": "triệu người rút BHXH một lần năm 2023 (theo tài liệu của nhóm)",
    "title": "Năm 2023, hơn 800.000 người rút BHXH một lần, rời hệ thống an sinh",
-   "sub": "Rút một lần là mất thời gian đã đóng để tính lương hưu; phần lớn người rút ở tuổi 20–40",
    "covers": [
     "3.2",
     "3.4.3"
    ],
-   "notes": "Theo tài liệu của nhóm, năm 2023 có hơn 800.000 người rút bảo hiểm xã hội một lần. Số BHXH Việt Nam công bố còn cao hơn: năm 2024 gần 1,1 triệu người, giảm 1,6% so với 2023 — tức năm 2023 khoảng 1,1 triệu. Khoảng 78% người rút ở độ tuổi 20 đến 40 và khoảng 98% là người nghỉ việc sau một năm không đóng tiếp. Hệ quả: theo khoản 3 Điều 5 Luật 2024, thời gian đã tính hưởng một lần không còn được tính để hưởng lương hưu; quỹ mất nguồn thu dài hạn, còn người lao động mất đường tới lương hưu. Tín hiệu tích cực: năm 2025 số người rút giảm 24,43% so với 2024, sau khi Luật 2024 hạ mốc hưu xuống 15 năm. Nguồn: BHXH Việt Nam, dẫn theo LSVN 15/01/2025, Báo Người Lao Động 15/6/2024, Tạp chí Kinh tế – Tài chính 14/7/2026."
+   "notes": "Theo tài liệu của nhóm, năm 2023 có hơn 800.000 người rút bảo hiểm xã hội một lần. Số BHXH Việt Nam công bố còn cao hơn: năm 2024 gần 1,1 triệu người, giảm 1,6% so với 2023 — tức năm 2023 khoảng 1,1 triệu. Khoảng 78% người rút ở độ tuổi 20 đến 40 và khoảng 98% là người nghỉ việc sau một năm không đóng tiếp. Hệ quả: theo khoản 3 Điều 5 Luật 2024, thời gian đã tính hưởng một lần không còn được tính để hưởng lương hưu; quỹ mất nguồn thu dài hạn, còn người lao động mất đường tới lương hưu. Tín hiệu tích cực: năm 2025 số người rút giảm 24,43% so với 2024, sau khi Luật 2024 hạ mốc hưu xuống 15 năm. Nguồn: BHXH Việt Nam, dẫn theo LSVN 15/01/2025, Báo Người Lao Động 15/6/2024, Tạp chí Kinh tế – Tài chính 14/7/2026.",
+   "facts": [
+    {
+     "icon": "hourglass",
+     "text": "Thời gian đã rút không còn được tính để hưởng lương hưu"
+    },
+    {
+     "icon": "users-three",
+     "text": "Phần lớn người rút ở tuổi 20–40"
+    },
+    {
+     "icon": "piggy-bank",
+     "text": "Quỹ mất nguồn thu dài hạn"
+    }
+   ]
   },
   {
    "type": "bhmat",
@@ -838,7 +853,7 @@
      "icon": "PiUserMinusDuotone",
      "name": "Ngoài hệ thống",
      "who": "Khoảng 30 triệu người",
-     "desc": "Lao động tự do, phi chính thức chưa tham gia → về già không có lương hưu",
+     "desc": "Lao động tự do, phi chính thức chưa tham gia, nên về già không có lương hưu",
      "ref": "Số liệu: slide 16"
     }
    ],
