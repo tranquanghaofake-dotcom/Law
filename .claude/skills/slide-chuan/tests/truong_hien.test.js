@@ -19,7 +19,7 @@ const NGOAI_LE = {
   "chart.items[0].why": "chỉ kind column", "chart.markers[0].date": "chỉ kind span", "chart.markers[0].label": "chỉ kind span", "chart.bands[0].from": "chỉ kind column", "chart.bands[0].to": "chỉ kind column", "chart.bands[0].label": "chỉ kind column",
   "bignum.days[0]": "danh sách ngày (số)", "bignum.daysLabels[0]": "đi cùng days", "flow.edges[0].from": "mã nút", "flow.edges[0].to": "mã nút",
   "isotype.unit.short": "chỉ khi hàng không có display", "deadline.today": "dùng để tính, không in",
-  "statement.artCaption": "TỒN: chú thích hình lớn chưa vẽ", "scene.timeline.ref": "TỒN: chưa vẽ",
+  "scene.timeline.ref": "mã tra deck.timelines, không phải chữ", "statement.artCaption": "chỉ khi slide mang hình lớn của da (mẫu thử có cutout) — test riêng ở dưới",
 };
 const ma = (p) => "QQ" + p.replace(/[^a-z0-9]/gi, "") + "ZZ";
 function dien(sc, p, giu) {
@@ -41,4 +41,9 @@ test("mọi trường chuỗi validate.js nhận đều hiện trên slide (tr�
         .replace(/data-[a-z-]+="[^"]*"|aria-label="[^"]*"|alt="[^"]*"|title="[^"]*"/g, "");
       if (!h.includes(ma(p))) mat.push(ten); } }
   assert.deepEqual(mat, [], `trường nhận mà không vẽ (vẽ ra, hoặc thêm vào NGOAI_LE kèm lý do):\n  ${mat.join("\n  ")}`);
+});
+
+test("statement.artCaption: chú thích ngay dưới hình lớn của da", () => {
+  const h = dungHtml({ meta: { da: "giay" }, slides: [{ type: "cover", title: "B" }, { type: "statement", title: "T", artCaption: "CHÚ THÍCH HÌNH" }] }, { deckDir: R }).html;
+  assert.match(h, /class="da-artcap" style="left:1520px;top:352px;width:300px">CHÚ THÍCH HÌNH</);
 });

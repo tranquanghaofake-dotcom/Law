@@ -226,7 +226,7 @@ function daCss(ten) {
     ${T}.light .stat, ${T}.light table { background: #fff; }
     .da-khung, .da-art, .da-vat, .da-to { position: absolute; pointer-events: none; }
     .da-khung { inset: 0; z-index: 1; } .da-khung svg, .da-art svg, .da-vat svg { width: 100%; height: 100%; display: block; }
-    .da-art { z-index: 1; } .da-vat { z-index: 3; }
+    .da-art { z-index: 1; } .da-vat { z-index: 3; } .da-artcap { position: absolute; z-index: 2; text-align: center; font: 600 22px/1.3 var(--fb); color: var(--mut); }
     ${S}.sec .big { opacity: .45; } ${S}.sec:has(.da-art) .h, ${S}.sec:has(.da-art) .sub { max-width: 1080px; } ${S}.end:has(.da-art) .h { max-width: 1120px; }
     `;
   css += theCss(c.the, c, T + ".light") + nhanCss(c.nhan, S) + soCss(c.so, c, S) + tienDoCss(c.tienDo, c, S);
@@ -268,7 +268,7 @@ const VAT_Y = { coins: /tiền|đồng|quỹ|lương|thuế|phí|giá|triệu|t�
 // thứ tự xét theo độ cụ thể của dấu hiệu: trích điều luật > phép tính > tiền > … (một từ chung như "lương" yếu hơn "Điều 64")
 const UU_TIEN = ["stamp", "calculator", "coins", "bankcard", "crate", "ruler", "lens", "booklet", "bars", "clip", "pen", "pin", "orb", "pencil"];
 const chonVat = (vat, chu = "") => UU_TIEN.find((v) => vat.includes(v) && VAT_Y[v].test(chu)) || vat[0];
-function phuSlide(html, ten, { type, i, coHinhDan, coAnh, art, chu = "" }) {
+function phuSlide(html, ten, { type, i, coHinhDan, coAnh, art, chu = "", artCaption = "" }) {
   const c = DA[ten]; if (!c) return html;
   const m = html.match(/^<section class="s ([^"]*)"/); if (!m) return html;
   const cls = m[1].split(/\s+/), sang = cls.includes("light"), toi = cls.includes("dark") || cls.includes("red");
@@ -281,6 +281,9 @@ function phuSlide(html, ten, { type, i, coHinhDan, coAnh, art, chu = "" }) {
   if (!coHinhDan && !coAnh && hinh) {
     const P = { section: "left:1250px;top:300px;width:560px;height:430px", end: "left:1270px;top:170px;width:520px;height:400px", cover: "left:1180px;top:250px;width:620px;height:480px", statement: "left:1520px;top:110px;width:300px;height:230px" }[type];
     if (P) them += `<div class="da-art" style="${P}">${artSvg(hinh, toi ? { ...c, acc: c.gold, bad: mix(c.bad, "FFFFFF", 0.4) } : c, nenArt)}</div>`;
+    // chú thích hình lớn (statement.artCaption): ngay dưới hình, cùng bề ngang — hình minh hoạ gì thì nói ra
+    const m = P && artCaption && P.match(/left:(\d+)px;top:(\d+)px;width:(\d+)px;height:(\d+)px/);
+    if (m) them += `<div class="da-artcap" style="left:${m[1]}px;top:${+m[2] + +m[4] + 12}px;width:${m[3]}px">${String(artCaption).replace(/&/g, "&amp;").replace(/</g, "&lt;")}</div>`;
   }
   // đồ vật tiền cảnh: chỉ slide nội dung sáng; hinh.js (hinhDatVatDa) tìm góc trống, không có thì bỏ
   if (sang && !["cover", "section", "end", "closing"].includes(type) && c.vat.length) them += `<div class="da-vat" data-da-vat style="width:190px;height:190px">${vatSvg(chonVat(c.vat, chu), c)}</div>`;
