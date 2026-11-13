@@ -174,3 +174,19 @@ test("takeaway hiện đúng một lần thành dải Ghi nhớ ở MỌI type v
     assert.ok(dungHtml(d, { deckDir: path.join(__dirname, "..") }).html.includes("CHÚ THÍCH ZZ"), `${t}: note bị bỏ mất`);
   }
 });
+
+test("tiêu đề hai dòng chia đều (text-wrap: balance), không còn dòng cuối một chữ", { skip: (() => { try { require.resolve("playwright"); return false; } catch { return "không có Playwright"; } })(), timeout: 60000 }, async () => {
+  const { chromium } = require("playwright"), fs = require("fs"), os = require("os");
+  const exe = process.env.PW_CHROMIUM || ["/opt/pw-browsers/chromium"].find((p) => fs.existsSync(p));
+  const b = await chromium.launch(exe ? { executablePath: exe } : {}), page = await (await b.newContext({ viewport: { width: 1920, height: 1080 } })).newPage();
+  try {
+    const d = deck({ da: "ho-so" }, [{ type: "cover", title: "Bìa" }, { type: "scene", year: "2014", title: "Bán lại cho [người mua] với giá 850 triệu", events: [{ date: "09/9/2014", text: "Ký hợp đồng" }] }]);
+    const f = path.join(fs.mkdtempSync(path.join(os.tmpdir(), "bal-")), "deck.html"); fs.writeFileSync(f, dungHtml(d, { deckDir: path.join(__dirname, "..") }).html);
+    await page.goto("file://" + f); await page.evaluate(() => window.hinhSanSang);
+    const q = await page.evaluate(() => { const h = document.querySelectorAll("section.s")[1].querySelector(".h"), w = document.createTreeWalker(h, NodeFilter.SHOW_TEXT), top = []; let n;
+      while ((n = w.nextNode())) { const g = document.createRange(); for (const m of n.textContent.matchAll(/\S+/gu)) { g.setStart(n, m.index); g.setEnd(n, m.index + m[0].length); top.push(Math.round(g.getBoundingClientRect().top)); } }
+      const cuoi = top.filter((t) => t === Math.max(...top)).length; return { wrap: getComputedStyle(h).textWrapStyle, dong: new Set(top).size, cuoi }; });
+    assert.equal(q.wrap, "balance");
+    assert.ok(q.dong === 1 || q.cuoi >= 2, `dòng cuối chỉ ${q.cuoi} chữ`);
+  } finally { await b.close(); }
+});
