@@ -52,7 +52,9 @@
         const k = getComputedStyle(c); if (k.display === "none" || k.visibility === "hidden") continue; const pv = painted(k) || pseudo(c) || c.matches(GFX); if (pv) vis = true;
         const q = c.getBoundingClientRect(); if (!q.width && !q.height) continue;
         if (pv) pad = Math.max(pad, Math.max(0, R.left - q.left, q.right - R.right, R.top - q.top, q.bottom - R.bottom) + shadow(k)); }
-      if (vis) { el.setAttribute("data-l", "khoi-" + (i + 1)); el.setAttribute("data-a", fxL); el.setAttribute("data-at", at); el.setAttribute("data-pad", Math.min(260, Math.ceil(pad) + 3)); }
+      if (vis) { el.setAttribute("data-l", "khoi-" + (i + 1)); el.setAttribute("data-a", fxL); el.setAttribute("data-at", at); el.setAttribute("data-pad", Math.min(260, Math.ceil(pad) + 3));
+        // chữ thay thế cho lớp ảnh trong PowerPoint: lấy từ aria-label / alt của ảnh trong khối (photoAlt, items[].alt) — trước đây mọi ảnh đều "Hình minh hoạ"
+        if (!el.hasAttribute("data-alt")) { const a = [el, ...el.querySelectorAll("[aria-label], img[alt]")].filter((c) => c === el || mine(el, c)).map((c) => c.getAttribute("aria-label") || c.getAttribute("alt") || "").find((t) => t.trim()); if (a) el.setAttribute("data-alt", a.trim().slice(0, 250)); } }
       else el.setAttribute("data-chu", fx + "," + at);
     });
     blocks.forEach((tb) => { const host = tb.closest("[data-in]"); if (!host || host.hasAttribute("data-l") || tb.hasAttribute("data-a")) return;

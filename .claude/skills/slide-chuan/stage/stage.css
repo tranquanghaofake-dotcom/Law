@@ -412,3 +412,17 @@ figure { margin: 0; } .pi { position: relative; height: 480px; background-size: 
 .cg .card .in > .tg { font: 800 21px/1.2 var(--fb); letter-spacing: .06em; text-transform: uppercase; color: var(--hl); margin-bottom: 8px; }
 .sh2 > .sh-h { border-bottom: 0; padding-bottom: 0; } .sh2 > .sh-h span { font: 800 22px/1.2 var(--fb); letter-spacing: .06em; text-transform: uppercase; color: var(--mut); } .sh2 > .sh-h span:nth-child(3) { text-align: right; }
 .shr { display: flex; gap: 44px; align-items: center; } .shi { list-style: none; display: grid; gap: 22px; width: 340px; }   /* hệ quả của ngưỡng đứng cạnh lưới 100 ô, không chồng thêm chiều cao */ .shi li { display: grid; grid-template-columns: auto 1fr; gap: 16px; align-items: start; font: 600 26px/1.3 var(--fb); } .shi .ico { font-size: 38px; color: var(--hl); } .shi b { display: block; font-weight: 800; } .shi span { color: var(--mut); }
+
+/* focus (điểm nhấn) ở các type từng bỏ qua nó — dùng lại đúng ngôn ngữ nhấn đã có: dải đầu thẻ màu nhấn, thẻ nền mực, viền trong màu nhấn */
+.cg .card.on .top { background: var(--amber); color: var(--ink); } .cg .card.on .top .ico { color: var(--ink); }   /* vàng = "đang bàn" (cùng mã với .ev.hot, tr.on); màu nhấn của da có thể trùng màu mực của dải thường */
+.hb .card.on { background: var(--ink); color: var(--paper); --fg: var(--paper); --mut: #c3cadb; }
+.mx .card.on { box-shadow: inset 0 0 0 6px var(--hl); }
+th.on { background: var(--hl); } td.on { background: var(--paper-2); font-weight: 800; } th .ico { vertical-align: -4px; }
+.pg figure.on .pi { box-shadow: inset 0 0 0 8px var(--hl); } .pg figure.on figcaption b { color: var(--hl); }
+.cg .cpi { height: 210px; background-size: cover; background-position: center; }   /* ảnh của từng thẻ (items[].photo): dải ảnh đầu thẻ, thẻ nào cũng cùng cao */
+/* photo: kiểu ảnh, phía chữ, điểm đánh số */
+.pho.ps-natural .img { filter: none; } .pho.ps-duotone .img { filter: grayscale(1) sepia(.55) contrast(1.1); } .pho.ps-natural .tint { opacity: .82; }
+.pho.ben-phai .in { align-self: flex-end; max-width: 1180px; }
+.co-m { position: absolute; z-index: 2; width: 64px; height: 64px; margin: -32px 0 0 -32px; border-radius: 50%; background: var(--amber); color: var(--ink); border: 4px solid var(--ink); font: 400 36px/56px var(--fd); text-align: center; box-shadow: 0 6px 16px rgba(0,0,0,.45); }
+.co-r { position: absolute; z-index: 2; width: 150px; height: 150px; margin: -75px 0 0 -75px; border-radius: 50%; border: 6px solid var(--amber); box-shadow: 0 0 0 4px rgba(0,0,0,.35); } .co-r span { position: absolute; left: 50%; top: 100%; transform: translate(-50%, 10px); white-space: nowrap; padding: 6px 14px; background: var(--ink); color: var(--paper); font: 800 24px/1.2 var(--fb); }
+.co-l { list-style: none; margin-top: 22px; display: flex; flex-wrap: wrap; gap: 10px 30px; font: 600 26px/1.3 var(--fb); } .co-l b { display: inline-block; width: 40px; height: 40px; margin-right: 12px; border-radius: 50%; background: var(--amber); color: var(--ink); font: 400 24px/40px var(--fd); text-align: center; }

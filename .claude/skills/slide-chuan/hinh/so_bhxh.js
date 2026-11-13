@@ -408,7 +408,7 @@ const ba = (s, kn) => { const H = tieuDe(s), it = (s.items || []).slice(0, 3), l
       ${chu("bh-hd", X + 36, top + 236, 470, tx(x.desc || ""), o)}${x.ref ? nhan(`bh-href${k}`, X + 36, top + 460, x.ref, { px: 18, ...o }) : ""}`; }).join("")}`; };
 const baTab = (s, kn) => { const H = tieuDe(s), it = (s.items || []).slice(0, 3), lab = s.labels || [], top = Math.max(320, H.day + 50), VD = kn ? ["khoa", "sua-chua", "cua-hang"] : ["cua", "canh-bao", "nguoi-chay"];
   const MAU = kn ? [P.navy, P.navy, P.navy] : [P.red, P.red, P.red], TG = kn ? ["navy", "navy", "navy"] : ["do", "do", "do"];
-  const rows = it.map((x, k) => ({ name: x.name, desc: x.desc, ref: `${lab[0] ? `${lab[0]}: ` : ""}${x.who || ""}`, icon: VD[k] }));
+  const rows = it.map((x, k) => ({ name: x.name, desc: x.desc, ref: `${lab[0] ? `${lab[0]}: ` : ""}${x.who || ""}${x.ref ? ` · ${x.ref}` : ""}`, icon: VD[k] }));   // ref = slide số liệu làm căn cứ ("Số liệu: slide 16")
   const W = 1150, X = 660, hs = rows.map((x) => hangH(x, W)), gap = Math.max(20, Math.min(36, (990 - top - hs.reduce((a, b) => a + b, 0)) / 2));
   let y = top;
   const tam = rows.map((x, k) => top + hs.slice(0, k).reduce((a, b) => a + b + gap, 0) + hs[k] / 2);

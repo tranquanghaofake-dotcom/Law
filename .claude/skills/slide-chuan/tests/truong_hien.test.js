@@ -47,3 +47,11 @@ test("statement.artCaption: chú thích ngay dưới hình lớn của da", () =
   const h = dungHtml({ meta: { da: "giay" }, slides: [{ type: "cover", title: "B" }, { type: "statement", title: "T", artCaption: "CHÚ THÍCH HÌNH" }] }, { deckDir: R }).html;
   assert.match(h, /class="da-artcap" style="left:1520px;top:352px;width:300px">CHÚ THÍCH HÌNH</);
 });
+
+test("không thẻ nào mang hai thuộc tính style (cái sau bị bỏ → mất --i, khối hiện sai thứ tự)", () => {
+  const fs = require("fs"); const ex = ["anh_va_chuong", "bai_tinh", "banan142", "bo_cuc_them", "bocuc_moi", "giay_to", "hub_pin", "kiemthu_con_lai", "khung_anh"];
+  for (const n of ex) { const d = JSON.parse(fs.readFileSync(path.join(R, "examples", n + ".json"), "utf8"));
+    const h = dungHtml(d, { deckDir: path.join(R, "examples") }).html.split("</style>").slice(-1)[0];
+    const xau = (h.match(/<[a-zA-Z][^<>]*>/g) || []).filter((t) => (t.match(/\sstyle="/g) || []).length > 1);
+    assert.deepEqual(xau.slice(0, 3), [], `${n}: thẻ có hai style`); }
+});
