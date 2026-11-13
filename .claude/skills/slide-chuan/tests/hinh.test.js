@@ -121,7 +121,7 @@ test("dựng PPTX thật: chữ là hộp chữ sửa được, Morph và liên 
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), "hinh-")), deckPath = path.join(dir, "thu.json");
   fs.writeFileSync(deckPath, JSON.stringify({ meta: { title: "Thử", short: "Bài thử" }, slides: [
     { type: "cover", id: "bia", title: "Bìa [thử]", kicker: "Deck thử" },
-    { type: "statement", id: "y", title: "Một ý [cốt lõi] duy nhất", sub: "Nền tối, không có hình trang trí." },
+    { type: "statement", id: "y", title: "Một ý [cốt lõi] duy nhất", sub: "Nền tối, không có hình trang trí; câu phụ này cố ý viết dài để chắc chắn phải xuống hai dòng trong hộp chữ của slide một ý duy nhất." },
     { type: "tiles", id: "cot", title: "Hai mức [báo trước]", cols: [{ n: 12, unit: "ngày", label: "Mức A", morph: true }, { n: 3, unit: "ngày", label: "Mức B" }] },
     { type: "strip", id: "dai", title: "Mười hai ngày", n: 12, marks: [{ head: "Bắt đầu", text: "Ngày một" }, { head: "Kết thúc", text: "Ngày mười hai" }] },
     { type: "quizgo", id: "hoi", title: "Mấy ngày?", options: [{ text: "Ba" }, { text: "Mười hai", ok: true }], right: { text: "Đúng là mười hai." }, next: "ml" },
@@ -135,6 +135,11 @@ test("dựng PPTX thật: chữ là hộp chữ sửa được, Morph và liên 
   for (const [x, words] of [[s1, ["Bìa", "thử"]], [s2, ["cốt lõi"]], [s3, ["12", "Mức A"]], [s4, ["Bắt đầu"]], [s5, ["Mười hai"]]]) for (const w of words) assert.ok(x.toLocaleLowerCase("vi").includes(w.toLocaleLowerCase("vi")), `chữ “${w}” phải nằm trong hộp chữ`);   // tiêu đề bìa được viết hoa
   for (const x of [s1, s2, s3, s4, s5]) assert.ok(wellFormed(x.replace(/<a:t>[^<]*<\/a:t>/g, "<a:t></a:t>")), "XML slide phải khớp thẻ");
   assert.ok(s3.includes("p159:morph") && s3.includes("<p:timing>"), "Morph và chuỗi hiệu ứng gốc");
+  // hộp chữ MỘT dòng không tự xuống dòng (máy thiếu font → chữ rộng hơn nhưng con số không gãy đôi); hộp nhiều dòng vẫn tự xuống dòng để sửa chữ
+  const boxes = (x) => [...x.matchAll(/<p:sp>[\s\S]*?<\/p:sp>/g)].map((m) => m[0]).filter((b) => b.includes("<a:t>"));
+  const motDong = boxes(s2).find((b) => /cốt lõi/i.test(b)), nhieuDong = [s1, s2, s3, s4, s5].flatMap(boxes).find((b) => (b.match(/<a:p>/g) || []).length > 1);
+  assert.ok(motDong && /<a:bodyPr[^>]*wrap="none"/.test(motDong), "tiêu đề một dòng: wrap=none");
+  assert.ok(nhieuDong && /<a:bodyPr[^>]*wrap="square"/.test(nhieuDong), "chữ nhiều dòng: wrap=square");
   for (let k = 1; k <= 12; k++) assert.ok(s3.includes(`name="!!o-${k}"`) && s4.includes(`name="!!o-${k}"`), `ô ${k} phải ghép Morph giữa cột và dải ngày`);
   assert.ok(s2.includes('name="!!td"') && s3.includes('name="!!td"') && s2.includes('name="!!ten-bai"'), "thanh tiến độ và tên bài chạy liền qua các slide");
   assert.ok((s5.match(/ppaction:\/\/hlinksldjump/g) || []).length >= 2 && /advClick="0"/.test(s5), "đáp án là liên kết nhảy slide; slide hỏi chặn bấm");
