@@ -406,9 +406,11 @@ const ba = (s, kn) => { const H = tieuDe(s), it = (s.items || []).slice(0, 3), l
     return `${the(`bh-hc${k}`, { x: X, y: top, w: 540, h: 540 }, { dai: kn ? "xanh" : "do", daiH: 120, ...o })}${chu("bh-hn", X + 36, top + (nl ? 18 : 38), 320, esc(x.name || ""), { color: "ffffff", size: nl ? 34 : 40, ...o })}${vong(`bh-hi${k}`, X + 380, top + 26, 130, VD[k], { mau: kn ? "" : "do", ...o })}
       ${chu("bh-hw", X + 36, top + 160, 470, `${lab[0] ? `<i>${esc(lab[0])}:</i> ` : ""}${esc(x.who || "")}`, { color: kn ? P.blue : P.redD, ...o })}
       ${chu("bh-hd", X + 36, top + 236, 470, tx(x.desc || ""), o)}${x.ref ? nhan(`bh-href${k}`, X + 36, top + 460, x.ref, { px: 18, ...o }) : ""}`; }).join("")}`; };
-const baTab = (s, kn) => { const H = tieuDe(s), it = (s.items || []).slice(0, 3), lab = s.labels || [], top = Math.max(320, H.day + 50), VD = kn ? ["khoa", "sua-chua", "cua-hang"] : ["cua", "canh-bao", "nguoi-chay"];
+const baTab = (s, kn, deck) => { const H = tieuDe(s), it = (s.items || []).slice(0, 3), lab = s.labels || [], top = Math.max(320, H.day + 50), VD = kn ? ["khoa", "sua-chua", "cua-hang"] : ["cua", "canh-bao", "nguoi-chay"];
   const MAU = kn ? [P.navy, P.navy, P.navy] : [P.red, P.red, P.red], TG = kn ? ["navy", "navy", "navy"] : ["do", "do", "do"];
-  const rows = it.map((x, k) => ({ name: x.name, desc: x.desc, ref: `${lab[0] ? `${lab[0]}: ` : ""}${x.who || ""}${x.ref ? ` · ${x.ref}` : ""}`, icon: VD[k] }));   // ref = slide số liệu làm căn cứ ("Số liệu: slide 16")
+  // ref = slide số liệu làm căn cứ ("Số liệu: slide 16") → cả thẻ bấm được, nhảy tới slide đó (hỏi đáp: "số nào?" → mở ngay)
+  const toiSlide = (r) => { const m = String(r || "").match(/slide\s+(\d+)/i), d = m && deck && deck.slides[+m[1] - 1]; return d ? d.id || `s${+m[1]}` : undefined; };
+  const rows = it.map((x, k) => ({ name: x.name, desc: x.desc, ref: `${lab[0] ? `${lab[0]}: ` : ""}${x.who || ""}${x.ref ? ` · ${x.ref}` : ""}`, icon: VD[k], go: x.go || toiSlide(x.ref) }));
   const W = 1150, X = 660, hs = rows.map((x) => hangH(x, W)), gap = Math.max(20, Math.min(36, (990 - top - hs.reduce((a, b) => a + b, 0)) / 2));
   let y = top;
   const tam = rows.map((x, k) => top + hs.slice(0, k).reduce((a, b) => a + b + gap, 0) + hs[k] / 2);
@@ -418,7 +420,7 @@ const baTab = (s, kn) => { const H = tieuDe(s), it = (s.items || []).slice(0, 3)
     return `${dai(`bh-tab${k}`, RV, Y + h / 2, 60, X, TG[k], o)}${nhanTab ? chu("bh-tabt", mep, Y + h / 2 - 16, X - mep, esc(nhanTab), { align: "center", color: "ffffff", ...o }) : ""}
       ${hang(`bh-hc${k}`, X, Y, W, x, { mau: MAU[k], vmau: kn ? "" : "do", h, fx: o })}`; }).join("");
   return `${H.html}${vat}${hang3}`; };
-S.bhhanche = (s) => baTab(s, false);
+S.bhhanche = (s, deck) => baTab(s, false, deck);
 S.bhkiennghi = (s) => baTab(s, true);
 
 // 25 · TRẮC NGHIỆM — bốn thẻ đáp án; phong bì lương hưu ở góc; slide sai / đúng
