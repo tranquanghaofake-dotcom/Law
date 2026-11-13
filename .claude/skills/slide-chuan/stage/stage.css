@@ -441,3 +441,5 @@ th.on { background: var(--hl); } td.on { background: var(--paper-2); font-weight
 /* chú giải lưới 100 ô: ô mẫu ĐÚNG màu của ô thật (ký tự ■ □ mang màu chữ — chú giải nói sai mã màu, lại cần font ký hiệu của máy) */
 .dl .sw { display: inline-block; width: 24px; height: 24px; margin-right: 10px; vertical-align: -4px; background: var(--ink-3); } .dl .sw.on { background: var(--hl); } .wf.parcels + .dl .sw { background: var(--paper-2); border: 1.5px solid var(--ink-3); } .wf.parcels + .dl .sw.on { background: var(--hl); }
 .ls .ico.ls-o { display: block; width: 40px; height: 40px; margin-top: 12px; background: var(--hl); }   /* ô vuông vẽ bằng CSS thay ký tự ■ (cần font ký hiệu của máy) */
+/* mũi tên trang trí là icon SVG (ký tự → ← phải nhờ font ký hiệu của máy chiếu) */
+.ma .ico, .fn .arw .ico { display: block; margin: 0 auto; } .ma .ico svg { width: .9em; height: .9em; } .fn .arw .ico svg { width: .8em; height: .8em; } .lg-h .ico { vertical-align: -3px; }
