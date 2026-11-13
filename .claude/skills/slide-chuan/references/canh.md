@@ -270,19 +270,24 @@ Vì sao có: bài "Tổng quan Công pháp quốc tế" (13/11/2026) dựng bằ
 - **Còn thiếu** (deck dùng type thường cho các slide này, nên nền và khung chưa đồng bộ): so sánh hai bên, trích điều luật, thứ bậc, cây điều kiện, chuỗi hệ quả, danh sách nguyên tắc, trắc nghiệm, chốt ý, cảm ơn. Hướng sửa gốc: "da theo môn" — mục E3-P3 của `loi-da-biet-2026-11.md`.
 - Ví dụ: `examples/hoi-nghi-qt/deck.json` (3 slide). Dựng: `node hinh/dung.js examples/hoi-nghi-qt/deck.json /tmp/qt.pptx --soat`.
 
-## 10. Bộ hình riêng theo môn: BHXH "báo cáo sáng" (An sinh xã hội) — `hinh/so_bhxh.js`, icon `hinh/icon.js`
+## 10. Bộ hình riêng theo môn: BHXH "Flashslide xanh" (An sinh xã hội) — `hinh/so_bhxh.js`, vật 3D `hinh/bhxh_3d.js` + `hinh/f3d.js`
 
-Lịch sử: bản đầu là "sổ BHXH trên bàn làm việc" (mặt bàn da, người cắt giấy, sổ, bình quỹ vẽ bằng code, Morph kéo 20–50 vật mỗi lần bấm). Người dùng chê **xấu, rối, khó hiểu, chóng mặt, lỗi font** (11/2026). Bài học, giữ cho mọi bộ hình sau:
-1. **Morph = MỘT vật đổi trong cùng khung**, không phải "mọi thứ cùng bay". Nhiều vật cùng trượt (kể cả có nghĩa) làm người xem chóng mặt.
-2. **Không ẩn dụ phải giải mã** (người dưới ô = có BHXH, khối năm rơi = mất thời gian). Bài báo cáo luật: kết luận + con số + căn cứ, đọc được ngay.
-3. **Một hệ hình**: không trộn ảnh giống thật, icon phẳng, người cắt giấy, đồng hồ trong cùng bài. Hình tự vẽ bằng code có trần chất lượng — dùng bộ icon mã nguồn mở nét đồng nhất.
-4. **Một lưới**: lề 110 px, kicker y 76, tiêu đề y 116 (đo số dòng bằng chính file font — `fontkit`, không ước lượng theo số ký tự), nội dung từ y ≈ 320, nguồn y ≈ 950, chân trang y 1014.
+Lịch sử (11/2026), ba lần bị chê trước khi đạt:
+1. "Bàn hồ sơ": vật tự vẽ phẳng (người cắt giấy, sổ, bình quỹ), Morph kéo 20–50 vật mỗi lần bấm → **xấu, rối, chóng mặt, khó hiểu** (ẩn dụ phải giải mã).
+2. "Báo cáo sáng": nền trắng trơn, icon nét phẳng, mỗi slide một hình → sạch nhưng **xấu, đơn giản**.
+3. "Flashslide xanh" (hiện tại): người dùng đưa mẫu flashslide.com + TikTok @flashslide.com. Đẹp nhờ **chất liệu**, không nhờ bố cục.
 
-Thiết kế hiện tại: nền sáng `#f5f3ee`, thẻ trắng viền mảnh bo 20, màu xanh `#1f6b57` (tích cực), hổ phách (trọng tâm), đỏ `#b23a30` (tiêu cực); icon Phosphor duotone (MIT) trong vòng tròn nhạt; một họ chữ Be Vietnam Pro 400 / 600 / 800 (không Anton, không ký hiệu ngoài font: ✓ → icon, → → chữ). Chuyển cảnh mờ nhẹ; Morph chỉ ở bước 2 của slide hai bước.
+Luật rút ra (giữ cho mọi bộ hình sau):
+- **Một màu chủ đạo đậm** cho cả bài (xanh BHXH `#0b57d0`, xanh đậm `#0b2559`), nền trắng pha xanh **có chiều sâu**: gradient, quầng sáng góc, lưới chấm rất mờ — không nền trơn.
+- **Tiêu đề chữ in hoa đứng rất đậm** (Anton — đủ dấu tiếng Việt; giãn dòng ≥ 1.16 để dấu không chạm dòng trên; số dòng đo bằng chính file font). Nhãn hình viên thuốc; số lớn Anton.
+- **Chất liệu 3D**: vật chính vẽ bằng code kiểu 3D bóng (gradient, mặt sáng / tối, viền phản quang, bóng đổ mềm — chỉ vật ít chi tiết); người và vật nhỏ lấy Fluent Emoji 3D (MIT, 256 px — dùng nét ở cỡ ≤ 260 px, to hơn thì làm mờ làm tiền cảnh). **Không tự vẽ người bằng code** (lần 1 bị chê trẻ con).
+- Thẻ trắng bo 28, dải màu đầu thẻ, bóng đổ xanh mềm; số lớn đặt trong thẻ xanh đậm / đỏ chữ trắng.
+- **Chuyển cảnh**: mờ nhẹ; Morph chỉ khi **1–3 vật lớn** trôi như máy quay lia (bìa → câu hỏi lớn: sổ + khiên lùi về góc; mở phần → slide đầu phần: hình chính thu về góc) và ở 3 slide hai bước (mốc hưu, thanh tỷ lệ, cột mọc). Lớp ảnh được thêm tiền tố kiểu slide vào tên Morph để hai kiểu khác nhau không ghép nhầm; chỉ vật tên `bh-p-…` mới trôi qua slide.
+- Không ký hiệu ngoài font (✓ → hình, → → chữ); hộp chữ một dòng / cỡ tiêu đề không tự xuống dòng (build.js).
 
 | type | Dùng cho | Trường chính |
 |---|---|---|
-| `bhbia` · `bhket` | Bìa / kết: chữ bên trái, ảnh thật nửa phải | `kicker` `title` `subtitle` `author` `authorSub` `date` `photo` `photoCredit` `photoSource` · kết: `title` `message` `sub` `team[≤4]{name}` `photo` |
+| `bhbia` · `bhket` | Bìa / kết: tiêu đề in hoa lớn bên trái; bên phải ảnh thật đóng khung + sổ / khiên / xu 3D (`titleSize`, tiêu đề có thể ngắt dòng chủ động bằng `\n`) | `kicker` `title` `subtitle` `author` `authorSub` `date` `photo` `photoCredit` `photoSource` · kết: `title` `message` `sub` `team[≤4]{name}` `photo` |
 | `bhdo` | Câu hỏi lớn + ba mặt sẽ đo (thẻ icon) | `lines` `box` `dims[3]{icon,t,d}` (mặc định: luật · người tham gia · quỹ) `by` |
 | `bhtang` | Kết luận chính: hai thanh cùng thang + thẻ hệ số tăng + thẻ năm đi lùi | `title` `sub` `stats[3]{value,label,desc}` |
 | `bhba` · `bhtraloi` | Ba câu hỏi (thẻ bấm) · trả lời lại đúng ba câu + nhận định | `items[3]{q,go}` · `answers[3]{q,a}` `verdict` |
@@ -301,6 +306,6 @@ Thiết kế hiện tại: nền sáng `#f5f3ee`, thẻ trắng viền mảnh bo
 | `bhhanche` · `bhkiennghi` | Ba thẻ cùng chỗ ở hai slide (đỏ → xanh), nối được từng cặp | `items[3]{icon,name,who,desc,ref}` `labels` |
 | `bhhoi` · `bhghinho` | Trắc nghiệm 4 thẻ (→ 3 slide hỏi / sai / đúng) · câu chốt + ba thẻ số bấm quay lại | `options[4]{text,ok}` `right` `wrong` `next` · `lines` `chips[3]{n,text,go}` `basis` |
 
-- Icon: `icon` nhận tên Phosphor dạng `"chart-line-up"` hoặc tên cũ `"PiChartLineUpDuotone"`; thiếu thì dùng icon mặc định của kiểu. Thêm icon: chép `<tên>-duotone.svg` từ gói `@phosphor-icons/core` vào `hinh/icons/<tên>.svg`.
+- Vật 3D theo kiểu slide là cố định trong code (vd. ba câu hỏi: cân · biểu đồ · bảng kẹp; năm chế độ: nhiệt kế · bình sữa · băng dán · người cao tuổi · hoa sen). Thêm vật: tải PNG 3D từ github.com/microsoft/fluentui-emoji vào `hinh/f3d/<tên>.png` (xem đầu `hinh/f3d.js`). Bộ icon nét Phosphor (`hinh/icon.js`) vẫn còn cho bộ hình khác.
 - Kiểm Morph khi không có PowerPoint: `python3 scripts/morph_cap.py out.pptx` và `node scripts/xem_morph.js <tên>_lop/deck.html out.mp4`.
 - Ví dụ: `examples/so-bhxh/deck.json` (28 slide). Dựng: `node hinh/dung.js examples/so-bhxh/deck.json /tmp/bhxh.pptx --soat`.
