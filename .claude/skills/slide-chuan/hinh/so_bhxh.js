@@ -524,7 +524,12 @@ function render(s, deck, ctx, { i, n }) {
     // slide ngay sau slide mở phần: máy quay phóng vào hình chính của phần. Bước 2 của slide hai bước: Morph thường (một vật đổi). Trắc nghiệm sai / đúng: mờ.
     const quiz = typeof b === "string", prev = deck.slides[i - 1];
     const cam = quiz || b === 2 || i === 0 ? null : s.type === "bhchuong" ? "pan:0,1" : prev && prev.type === "bhchuong" ? (prev.photo ? "zoom:2.4,700,520" : "zoom:2.6,1460,500") : "pan:1,0";
-    return { id: b === 2 ? `${id}-b2` : quiz ? `${id}-${b}` : id, html: sec, tu: false, trans: quiz ? "fade" : "morph", cam, dur: b === 2 ? 900 : quiz ? 400 : cam && cam.startsWith("zoom") ? 1000 : 850, noclick: s.type === "bhhoi" && b !== "dung" }; });
+    // slide phản hồi của trắc nghiệm: ghi chú riêng — người trình bày thấy ngay phương án vừa chọn và điều cần nói, không lặp ghi chú slide hỏi
+    const plain = (t) => String(t || "").replace(/[[\]]/g, "").trim(), L4 = "ABCD", opQ = quiz ? (s.options || []).slice(0, 4) : [], kOk = opQ.findIndex((x) => x.ok);
+    const ghiQ = !quiz ? undefined : b === "dung" ? `Đáp án đúng: ${kOk >= 0 ? `${L4[kOk]} · ${plain(opQ[kOk].text)}` : ""}. ${plain((s.right || {}).text)} Bấm «${plain((s.right || {}).button) || "Tiếp tục"}» để sang slide sau.`
+      : b === "sai" ? `Phản hồi chung khi chọn phương án sai. ${plain((s.wrong || {}).hint || (s.wrong || {}).text)} Bấm «${plain((s.wrong || {}).button) || "Thử lại"}» để quay về câu hỏi.`
+      : (() => { const k = L4.indexOf(b.slice(4)); return `Người học chọn ${L4[k]} · ${plain((opQ[k] || {}).text)} — vì sao sai: ${plain((s.whyNot || [])[k])} Bấm «${plain((s.wrong || {}).button) || "Thử lại"}» để quay về câu hỏi.`; })();
+    return { ...(ghiQ ? { notes: ghiQ.replace(/\s+/g, " ") } : {}), id: b === 2 ? `${id}-b2` : quiz ? `${id}-${b}` : id, html: sec, tu: false, trans: quiz ? "fade" : "morph", cam, dur: b === 2 ? 900 : quiz ? 400 : cam && cam.startsWith("zoom") ? 1000 : 850, noclick: s.type === "bhhoi" && b !== "dung" }; });
 }
 
 // vân bảo an: đúng hoa văn hoa thị trên bìa sổ BHXH (hinh/bhxh_3d.js soBHXH) — in mờ ở mép phải (dưới dải đầu, không cắt thanh tiến độ) và góc dưới trái

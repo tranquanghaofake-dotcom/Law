@@ -106,3 +106,16 @@ test("quizgo / bhhoi: chữ của slide phản hồi (whyNot, right, wrong) khô
       whyNot: [null, "ngắn"], right: { text: dai }, wrong: { hint: dai } }] }, { extraTypes: [type] }).warnings;
     assert.ok(!w.some((x) => /tiếng trên slide/.test(x)), `${type}: ${w.join(" | ")}`); }
 });
+
+test("slide phản hồi của bhhoi / quizgo có ghi chú riêng (phương án vừa chọn + lý do / đáp án), không lặp ghi chú slide hỏi", () => {
+  const ghi = (h, id) => { const m = h.match(new RegExp(`data-id="${id}"[^>]*data-notes="([^"]*)"`)); return m ? m[1] : ""; };
+  const hoi = { id: "cau-hoi", title: "Nam đóng 15 năm được gì?", options: [{ text: "Rút một lần" }, { text: "Lương hưu 40%", ok: true }, { text: "Lương hưu 45%" }],
+    whyNot: ["LYDO_A", null, null], wrong: { hint: "GOI_Y" }, right: { text: "GIAI_THICH" }, notes: "GHI_CHU_HOI" };
+  for (const [da, type, bia, ket] of [["so-bhxh", "bhhoi", "bhbia", "bhket"], ["giay", "quizgo", "cover", "end"]]) {
+    const h = dungHtml({ meta: { da }, slides: [{ type: bia, title: "B" }, { type, ...hoi }, { type: ket, title: "K" }] }, { deckDir: R }).html;
+    assert.match(ghi(h, "cau-hoi"), /GHI_CHU_HOI/, `${type}: slide hỏi giữ ghi chú`);
+    const a = ghi(h, "cau-hoi-sai-A"), s = ghi(h, "cau-hoi-sai"), d = ghi(h, "cau-hoi-dung");
+    assert.ok(/A · Rút một lần/.test(a) && /LYDO_A/.test(a) && !/GHI_CHU_HOI/.test(a), `${type} sai-A: ${a}`);
+    assert.ok(/GOI_Y/.test(s) && !/GHI_CHU_HOI/.test(s), `${type} sai: ${s}`);
+    assert.ok(/B · Lương hưu 40%/.test(d) && /GIAI_THICH/.test(d) && !/GHI_CHU_HOI/.test(d), `${type} dung: ${d}`); }
+});
