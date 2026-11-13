@@ -151,6 +151,8 @@ test("dựng PPTX thật: chữ là hộp chữ sửa được, Morph và liên 
     assert.ok(t && /<p:ph type="title"\/>/.test(t) && /<a:off x="\d+" y="-\d+"\/>/.test(t), "có tiêu đề ẩn nằm ngoài khung (y âm)");
     assert.ok(t.toLocaleLowerCase("vi").includes("mấy ngày?") && t.toLocaleLowerCase("vi").includes(chu), t.slice(0, 300));
     assert.equal((x.match(/<p:ph type="title"\/>/g) || []).length, 1, "chỉ một placeholder tiêu đề"); }
+  // slide phản hồi là NHÁNH (chỉ nói khi người học chọn): tên slide trong PPTX ghi rõ — bản in ghi chú (scripts/ban_ghi_chu.py) không cộng giờ nhánh sai
+  assert.match(s6, /<p:cSld name="Nhánh trắc nghiệm: sai[^"]*"/); assert.match(s7, /<p:cSld name="Nhánh trắc nghiệm: đúng[^"]*"/); assert.doesNotMatch(s5, /<p:cSld name="Nhánh/);
   const pres = await z.file("ppt/presentation.xml").async("string"), emb = [...pres.matchAll(/<p:embeddedFont><p:font typeface="([^"]+)"/g)].map((m) => m[1]);
   const usedFaces = new Set(); for (let n = 1; n <= 8; n++) for (const m of (await sl(n)).matchAll(/<a:latin typeface="([^"]+)"/g)) usedFaces.add(m[1]);
   for (const f of usedFaces) assert.ok(emb.includes(f), `font “${f}” dùng mà không nhúng`);
