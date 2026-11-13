@@ -136,3 +136,22 @@ Hai phiên độc lập, cùng đề tài hình sự, **cùng ba kết luận** 
 - **Vòng `while ((n = w.nextNode()) && !ch)`** gọi `nextNode()` thêm một lần sau khi đã tìm thấy → đo font của nút chữ kế tiếp: đặt điều kiện dừng trước (`while (!ch && (n = …))`).
 - **Ảnh chụp deck.html để soát bằng mắt** còn trạng thái đầu của hiệu ứng vào (khối bị dịch, phóng) → dễ tưởng vỡ bố cục: soát trên ảnh dựng thật (`--soat`, `<tên>_lop/h-*.jpg`).
 - **Công cụ đo cũng phải được kiểm**: `soat_chi_tiet.js` từng báo nhầm vì ẩn chữ bằng `visibility` (mất cả nền của viên nhãn), vì tính bóng chữ / viền chữ là nét, vì đo hộp chữ con lồng trong hộp chữ cha. Mỗi lần báo lạ: chụp hai trạng thái, in điểm ảnh, rồi mới sửa — không sửa template theo một phép đo chưa kiểm.
+
+### F3. Đợt quét `--soat` toàn bộ deck mẫu (13/11/2026, tối) — lỗi của skill, đã sửa
+| # | Lỗi | Bằng chứng | Sửa |
+|---|---|---|---|
+| F3.1 | **Trường "nhận mà không vẽ"**: validate.js kiểm hợp lệ rồi tầng hình ảnh bỏ âm thầm — `takeaway` ở 28/32 type, `pin`, `section.part / inside`, `end.teamTitle`, `chart.unit` (9/10 kind), `calc.given`, `changelog.colTopic`, `funnel.inLabel / outLabel`, `quote.role`, `mode` ngoài statement… (~50 trường) | điền mã riêng vào từng trường chuỗi của SCHEMA, dựng, tìm mã trên slide | vẽ đủ (takeaway = dải "Ghi nhớ" ở chân slide; pin = tờ giấy ghim tự tìm chỗ); `mode` / `transition` / `build` / `motion` không vẽ được thì báo ℹ; `tests/truong_hien.test.js` chặn tái phạm, ngoại lệ phải ghi lý do |
+| F3.2 | Dấu ✓ ✕ là ký tự chữ — Anton / Be Vietnam Pro không có, bộ chọn `.cd span` còn tô xám cả ô (1,07 : 1) | soát chi tiết ◐ | icon SVG; bộ chọn chỉ trúng dòng mô tả |
+| F3.3 | Đường ngưỡng nét đứt (captable) cắt qua nhãn ngưỡng và số % trong thanh | mắt + ✂ mới | ngưỡng xếp tăng dần, đường bắt đầu ở hàng nhãn của nó; số né đường |
+| F3.4 | Ảnh in chồng (collage): tấm sau che chú thích tấm trước | ⚠ "chữ bị lớp ảnh đè" | xếp bậc thang, chú thích tấm bị đè ≤ 200 px |
+| F3.5 | Pyramid 5 tầng + tiêu đề 2 dòng tràn 10 px; chữ nhấn vàng trên tầng đỏ 3,27 : 1 | ⚠ tràn, ◐ | thu khoảng cách; vàng pha sáng tới ≥ 4,5 theo từng da |
+| F3.6 | Chip dữ kiện trên ảnh bìa / kết nền trong suốt — gặp vùng ảnh sáng còn 2,7 : 1 | ◐ | nền tối mờ |
+| F3.7 | Tiêu đề ngắt giữa từ ghép ("rời hệ / thống") | đọc chỗ xuống dòng của chữ ≥ 40 px | `hinh.js` giữ liền ~90 từ ghép thường gặp bằng dấu cách không ngắt; `\n` trong chuỗi = xuống dòng chủ ý |
+
+### F4. Kinh nghiệm (lỗi của người làm, phiên này)
+- **Thêm một quy tắc CSS "tốt" có thể đè quy tắc tốt hơn**: `section.s { text-wrap: pretty }` (hinh.css) có độ ưu tiên cao hơn `.s { text-wrap: balance }` (stage.css) → đè mất balance; Chromium `pretty` lại không sửa đoạn 2 dòng → tiêu đề mồ côi trở lại ("…850 / triệu"). Trước khi thêm thuộc tính toàn cục: `grep` thuộc tính đó trong mọi file CSS; thử cả trường hợp 2 dòng.
+- **Script chụp kiểm tra cũng phải giống bản dựng**: ép `display: block` lên slide (để ẩn slide khác) làm mất `flex` → dải Ghi nhớ "trôi" lên giữa slide trong ảnh chụp, dễ sửa nhầm. Ẩn slide khác bằng `:not(.xem) { display: none }`, không đụng slide đang xem.
+- **`Range.getClientRects()` trên cả phần tử trả cả hộp của phần tử con** (ô icon, ô chú giải gạch chéo) — đo nét chữ phải lấy hộp của từng nút chữ.
+- **Hộp dòng chữ trưng bày chồng nhau** (line-height < cỡ chữ): quét nét đầu của dòng 1 trúng chữ "T" của dòng 2 → báo lệch 3–4 px giả (gốc của "tiêu đề x 106" tồn từ phiên trước).
+- **Vẽ thêm trường bị bỏ thì phải dựng lại mọi deck mẫu**: hiện `share.items`, dải Ghi nhớ cao hơn chú thích → hai slide mẫu tràn 9 px và 82 px; chỉ đợt quét lại mới thấy.
+
