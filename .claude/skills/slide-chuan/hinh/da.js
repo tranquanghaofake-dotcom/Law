@@ -249,7 +249,17 @@ const artSvg = (ten, c, nen) => { const f = ART[ten]; return f ? f(c.acc, c.bad,
 
 const LOAI_SANG = new Set(["light"]);
 /** Thêm chất liệu vào một <section> của type thường: lớp da-<tên>, khung, tờ giấy (bc / qt), hình lớn (bìa / chương / kết), đồ vật tiền cảnh. */
-function phuSlide(html, ten, { type, i, coHinhDan, coAnh, art }) {
+// đồ vật tiền cảnh chọn theo NỘI DUNG slide (kicker + tiêu đề) trong các vật của da; không khớp → vật chủ đạo (vat[0]).
+// Trước đây chọn theo số thứ tự slide (i % n) — slide nói về quỹ có thể mang con dấu: khác biệt không mang nghĩa (nguyen-tac-bo-cuc.md mục 8).
+const VAT_Y = { coins: /tiền|đồng|quỹ|lương|thuế|phí|giá|triệu|tỷ|thu nhập|trợ cấp|chi trả/i, calculator: /tính|công thức|bình quân|tỷ lệ|%/i,
+  stamp: /điều\s*\d|khoản|luật|nghị định|nghị quyết|quyết định|xử phạt|thủ tục|cơ quan|văn bản|bản án/i, booklet: /sổ|tham gia|đăng ký|người lao động/i,
+  lens: /chứng cứ|xem xét|tình tiết|vụ án|giám định/i, pen: /ký|hợp đồng|cam kết/i, clip: /hồ sơ|giấy tờ|tài liệu/i, bankcard: /thẻ|thanh toán|ngân hàng|tài khoản|tín dụng/i,
+  bars: /tăng|giảm|số liệu|tỷ trọng|thống kê/i, crate: /hàng hoá|hàng hóa|vận tải|xuất khẩu|nhập khẩu|cảng|container/i, ruler: /diện tích|kích thước|ranh giới|thửa|mét/i,
+  pencil: /bài tập|ôn tập|ghi nhớ|học/i, pin: /địa điểm|nơi|tỉnh|bản đồ/i, orb: /quốc tế|toàn cầu|thế giới|điều ước/i };
+// thứ tự xét theo độ cụ thể của dấu hiệu: trích điều luật > phép tính > tiền > … (một từ chung như "lương" yếu hơn "Điều 64")
+const UU_TIEN = ["stamp", "calculator", "coins", "bankcard", "crate", "ruler", "lens", "booklet", "bars", "clip", "pen", "pin", "orb", "pencil"];
+const chonVat = (vat, chu = "") => UU_TIEN.find((v) => vat.includes(v) && VAT_Y[v].test(chu)) || vat[0];
+function phuSlide(html, ten, { type, i, coHinhDan, coAnh, art, chu = "" }) {
   const c = DA[ten]; if (!c) return html;
   const m = html.match(/^<section class="s ([^"]*)"/); if (!m) return html;
   const cls = m[1].split(/\s+/), sang = cls.includes("light"), toi = cls.includes("dark") || cls.includes("red");
@@ -264,7 +274,7 @@ function phuSlide(html, ten, { type, i, coHinhDan, coAnh, art }) {
     if (P) them += `<div class="da-art" style="${P}">${artSvg(hinh, toi ? { ...c, acc: c.gold, bad: mix(c.bad, "FFFFFF", 0.4) } : c, nenArt)}</div>`;
   }
   // đồ vật tiền cảnh: chỉ slide nội dung sáng; hinh.js (hinhDatVatDa) tìm góc trống, không có thì bỏ
-  if (sang && !["cover", "section", "end", "closing"].includes(type) && c.vat.length) them += `<div class="da-vat" data-da-vat style="width:190px;height:190px">${vatSvg(c.vat[i % c.vat.length], c)}</div>`;
+  if (sang && !["cover", "section", "end", "closing"].includes(type) && c.vat.length) them += `<div class="da-vat" data-da-vat style="width:190px;height:190px">${vatSvg(chonVat(c.vat, chu), c)}</div>`;
   return html.replace(/^<section class="s /, `<section class="s da da-${ten} `).replace(/<\/section>\s*$/, them + "</section>");
 }
 

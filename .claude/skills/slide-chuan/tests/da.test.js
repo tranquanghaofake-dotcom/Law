@@ -81,3 +81,12 @@ test("khung và nền của mọi da là SVG hợp lệ (hoặc rỗng khi da kh
     }
   }
 });
+
+test("đồ vật tiền cảnh chọn theo NỘI DUNG slide, không theo số thứ tự (nguyên tắc mỗi chi tiết một lý do)", () => {
+  const sec = (title) => DA.phuSlide(`<section class="s light"><div class="cv"></div></section>`, "so-bhxh", { type: "cards", i: 7, chu: title });
+  const vat = (html) => (html.match(/data-da-vat[^>]*>([\s\S]*?)<\/div>/) || [])[1] || "";
+  const c = DA.DA["so-bhxh"], xu = DA.vatSvg("coins", c), dau = DA.vatSvg("stamp", c), so = DA.vatSvg("booklet", c);
+  assert.equal(vat(sec("Quỹ thu vượt chi suốt 2015–2022")), xu, "slide về quỹ → xu");
+  assert.equal(vat(sec("Điều 64: mốc lương hưu còn 15 năm")), dau, "slide về điều luật → con dấu");
+  assert.equal(vat(sec("Một câu hỏi khác")), so, "không khớp từ khoá → vật chủ đạo của da");
+});

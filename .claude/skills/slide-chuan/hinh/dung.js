@@ -66,7 +66,7 @@ function dungHtml(deck, { deckDir = process.cwd(), mau, chuyen } = {}) {
     const r = render(s, deck, ctx, i, n); if (r.generic) generic.push(`#${i + 1} ${s.type}`);
     let h = decoGan(s, ctx, i, r.html, prev, st.prev);
     if (deck.meta?.motif && !ctx.img(s.photo)) h = DA.motifSlide(h, deck.meta.motif, daTen, s.type, i);
-    if (daTen) h = DA.phuSlide(h, daTen, { type: s.type, i, coHinhDan: !!((s.emoji && ctx.hasEmoji(s.emoji)) || s.cutout), coAnh: !!ctx.img(s.photo), art: s.art });
+    if (daTen) h = DA.phuSlide(h, daTen, { type: s.type, i, chu: [s.kicker, s.title, s.sub].filter(Boolean).join(" ").replace(/[[\]]/g, ""), coHinhDan: !!((s.emoji && ctx.hasEmoji(s.emoji)) || s.cutout), coAnh: !!ctx.img(s.photo), art: s.art });
     out.push({ id: s.id || `s${i + 1}`, html: h, tu: true, notes: note, src: i, trans: s.trans, dur: s.dur });
   });
   // nút Mục lục ở thanh đầu slide (khi deck có slide toc): chữ "Mục lục" + cuốn sách thu nhỏ nếu deck mở bằng cảnh book
