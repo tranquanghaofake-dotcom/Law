@@ -72,7 +72,7 @@ function collectInPage() {
       let m = own("m");
       if (!m && lay && lay.getAttribute("data-m") && lay.getAttribute("data-mt") !== "0") { const k = (perLayer.get(lay) || 0) + 1; perLayer.set(lay, k); m = `${lay.getAttribute("data-m")}-chu${k}`; } // chữ trong lớp có Morph đi theo lớp
       const sauRaw = inherit(el, "sau");
-      const base = { i, m, n: own("n"), go: own("go") || inherit(el, "go"), goOwn: el.hasAttribute("data-go"), an, alt: own("alt") || "", sau: sauRaw == null ? 1 : num(sauRaw, 1), td: isT && el.matches(".h, .bh-h, .bh-h1, .bh-hc, .bh-qd, .bc-t1, .bc-t2, .qt-t1, .qt-t2, [data-tieu-de]") };
+      const base = { i, m, n: own("n"), go: own("go") || inherit(el, "go"), goOwn: el.hasAttribute("data-go"), an, alt: own("alt") || "", sau: sauRaw == null ? 1 : num(sauRaw, 1), td: isT && el.matches(".h, .bh-h, .bh-h1, .bh-hc, .bh-qd, .bh-q, .bh-gh, .bc-t1, .bc-t2, .qt-t1, .qt-t2, [data-tieu-de]") };
       if (isW) {
         const src = S.querySelector(own("of")); if (!src) { console.warn("data-of không tìm thấy:", own("of")); return; }
         const q = src.getBoundingClientRect(), cs = getComputedStyle(el), key = `${si}-${i}`;
