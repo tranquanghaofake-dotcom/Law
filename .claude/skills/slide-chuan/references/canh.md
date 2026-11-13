@@ -270,20 +270,21 @@ Vì sao có: bài "Tổng quan Công pháp quốc tế" (13/11/2026) dựng bằ
 - **Còn thiếu** (deck dùng type thường cho các slide này, nên nền và khung chưa đồng bộ): so sánh hai bên, trích điều luật, thứ bậc, cây điều kiện, chuỗi hệ quả, danh sách nguyên tắc, trắc nghiệm, chốt ý, cảm ơn. Hướng sửa gốc: "da theo môn" — mục E3-P3 của `loi-da-biet-2026-11.md`.
 - Ví dụ: `examples/hoi-nghi-qt/deck.json` (3 slide). Dựng: `node hinh/dung.js examples/hoi-nghi-qt/deck.json /tmp/qt.pptx --soat`.
 
-## 10. Bộ hình riêng theo môn: BHXH "Flashslide xanh" (An sinh xã hội) — `hinh/so_bhxh.js`, vật 3D `hinh/bhxh_3d.js` + `hinh/f3d.js`
+## 10. Bộ hình riêng theo môn: BHXH bản gộp "sạch · nhận ra đề tài · sinh động" (An sinh xã hội) — `hinh/so_bhxh.js`, vật `hinh/bhxh_3d.js` + `hinh/f3d.js`
 
-Lịch sử (11/2026), ba lần bị chê trước khi đạt:
-1. "Bàn hồ sơ": vật tự vẽ phẳng (người cắt giấy, sổ, bình quỹ), Morph kéo 20–50 vật mỗi lần bấm → **xấu, rối, chóng mặt, khó hiểu** (ẩn dụ phải giải mã).
-2. "Báo cáo sáng": nền trắng trơn, icon nét phẳng, mỗi slide một hình → sạch nhưng **xấu, đơn giản**.
-3. "Flashslide xanh" (hiện tại): người dùng đưa mẫu flashslide.com + TikTok @flashslide.com. Đẹp nhờ **chất liệu**, không nhờ bố cục.
+Lịch sử (11/2026), bốn lần làm trước khi đạt:
+1. "Bàn hồ sơ": vật tự vẽ phẳng, nền tối, Morph kéo 20–50 vật mỗi lần bấm → **xấu, rối, chóng mặt, khó hiểu** (ẩn dụ phải giải mã).
+2. "Báo cáo sáng": nền trắng trơn, icon nét phẳng → sạch nhưng **xấu, đơn giản**.
+3. "Flashslide xanh": tiêu đề in hoa Anton, vật 3D bóng, thẻ đậm → bóng bẩy nhưng **chưa đạt ý**: hình chung chung (khiên, xu, biểu đồ kính), che chữ không nhận ra BHXH.
+4. Bản gộp (hiện tại) — người dùng yêu cầu học ba điều, áp đồng thời:
 
-Luật rút ra (giữ cho mọi bộ hình sau):
-- **Một màu chủ đạo đậm** cho cả bài (xanh BHXH `#0b57d0`, xanh đậm `#0b2559`), nền trắng pha xanh **có chiều sâu**: gradient, quầng sáng góc, lưới chấm rất mờ — không nền trơn.
-- **Tiêu đề chữ in hoa đứng rất đậm** (Anton — đủ dấu tiếng Việt; giãn dòng ≥ 1.16 để dấu không chạm dòng trên; số dòng đo bằng chính file font). Nhãn hình viên thuốc; số lớn Anton.
-- **Chất liệu 3D**: vật chính vẽ bằng code kiểu 3D bóng (gradient, mặt sáng / tối, viền phản quang, bóng đổ mềm — chỉ vật ít chi tiết); người và vật nhỏ lấy Fluent Emoji 3D (MIT, 256 px — dùng nét ở cỡ ≤ 260 px, to hơn thì làm mờ làm tiền cảnh). **Không tự vẽ người bằng code** (lần 1 bị chê trẻ con).
-- Thẻ trắng bo 28, dải màu đầu thẻ, bóng đổ xanh mềm; số lớn đặt trong thẻ xanh đậm / đỏ chữ trắng.
-- **Chuyển cảnh**: mờ nhẹ; Morph chỉ khi **1–3 vật lớn** trôi như máy quay lia (bìa → câu hỏi lớn: sổ + khiên lùi về góc; mở phần → slide đầu phần: hình chính thu về góc) và ở 3 slide hai bước (mốc hưu, thanh tỷ lệ, cột mọc). Lớp ảnh được thêm tiền tố kiểu slide vào tên Morph để hai kiểu khác nhau không ghép nhầm; chỉ vật tên `bh-p-…` mới trôi qua slide.
-- Không ký hiệu ngoài font (✓ → hình, → → chữ); hộp chữ một dòng / cỡ tiêu đề không tự xuống dòng (build.js).
+**Sạch như bản lưới Office cũ**: khung viền đôi mảnh + dải đầu (tên phần trái, số trang + thanh tiến độ phải) **giống hệt mọi slide** và đứng yên khi chuyển; nhãn câu hỏi khung viền trên tiêu đề; tiêu đề **chữ thường** (Be Vietnam Pro 800); Anton chỉ cho số lớn; một màu xanh BHXH + đỏ cảnh báo + vàng nhấn; nhiều khoảng trắng.
+
+**Che chữ vẫn nhận ra đề tài** (luật của skill infographic: một hình chính lấy từ thế giới đề tài và CHỞ DỮ LIỆU): vật vẽ bằng code từ những thứ người xem thấy tận mắt — sổ BHXH, trang "quá trình đóng", phiếu lương có dòng trích đóng BHXH, phong bì lương hưu, điện thoại tra cứu, sách Luật BHXH 2024. Ví dụ: số người tham gia = **chồng sổ đếm được** (12 → 19 cuốn, 1 cuốn = 1 triệu người); mốc hưu = **20 ô năm trên trang sổ**, bước 2 còn 15 và phong bì lương hưu trượt về; công thức = phiếu lương → thanh tỷ lệ → phong bì; rút một lần = **sổ bị đóng dấu**, ô năm bị gạch. Khiên, xu, biểu đồ chung chung chỉ còn là vật phụ.
+
+**Sinh động như Flashslide** (xem từng khung hình video mẫu): mặt bàn sáng có bút + thước **trôi theo máy quay** mỗi slide (Morph 0,65 s, cùng một hướng; slide mở phần đặt lại); hình chính của slide mở phần thu về góc slide kế; nội dung **hiện lần lượt tự chạy** (`data-a="rise"`, cách nhau 0,15 s — người trình bày chỉ bấm để sang slide); slide hai bước đổi đúng một vật. Không có vật nhỏ bay lung tung.
+
+Kỹ thuật: lớp ảnh được thêm tiền tố kiểu slide vào tên Morph (hai kiểu khác nhau không ghép nhầm); vật `bh-p-…` và phần khung `bh-hd-…` giữ tên để trôi / đứng yên. Ở bước 2 của slide hai bước tắt hiệu ứng vào (mọi thứ đã có), chỉ vật mới hiện sau Morph. Đo chữ bằng chính file font; không ký hiệu ngoài font; hộp chữ một dòng / cỡ tiêu đề không tự xuống dòng (build.js).
 
 | type | Dùng cho | Trường chính |
 |---|---|---|
