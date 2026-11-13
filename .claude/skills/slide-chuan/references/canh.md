@@ -289,6 +289,10 @@ Hệ hình hiện tại:
 - Nền sáng ngả xanh rõ (không trắng trơn), quầng xanh góc phải; slide tối = ảnh + phủ xanh `#072a6b`.
 - **Nền ảnh theo phần** (`nenAnh`): slide nội dung không có ảnh tràn mép lấy ảnh của phần (mở đầu = bìa, mỗi phần = slide mở phần, kết luận = slide kết), làm mờ 22 px + phủ trắng ngả xanh, nằm trong ảnh nền slide (đứng yên khi máy quay trôi) — kiểu nền nhà kính / bệnh viện mờ sau thẻ của Flashslide. Tắt: `meta.hinh.nenAnh = false`.
 - Danh sách 3 ý dùng chung một ngữ pháp "vật lớn bên trái + dải đánh dấu kéo ra thành hàng": ba câu hỏi = sổ BHXH (dải xanh · vàng · đỏ); hạn chế = sổ BHXH có biển cảnh báo (dải đỏ, hàng ghi quy mô); kiến nghị = sách Luật BHXH 2024, dải ghi số điều ("Đ.70", "Đ.40 · Đ.41", "Đ.2"). Trắc nghiệm không ảnh: phong bì lương hưu lớn + bốn đáp án 2 × 2.
+- **Số liệu thành vật đếm được** (học từ mẫu Flashslide năng lượng / Bảo Việt, 11/2026): biểu đồ cột có đơn vị là người → mỗi cột là **chồng sổ BHXH** (`iso`, tự chọn số người mỗi cuốn để cột cao nhất 10–22 cuốn, ghi "Mỗi cuốn sổ = …" ở đầu khung; cột mọc bằng hiệu ứng `up` — không Morph kéo giãn vì làm méo sổ); thu − chi của quỹ → **cuộn xu vàng** nằm ngang; tỷ lệ bao phủ → **vòng phần trăm** + cuốn sổ nhỏ ở góc thẻ. `iso: false` để về cột trơn.
+- **Gọi lại hình cũ để khép mạch**: slide trả lời ba câu hỏi dùng đúng cuốn sổ + ba dải của slide "Ba câu hỏi", dải giờ kéo ra câu trả lời; dải "Nhận định" cao theo số dòng.
+- **Kiểu ngành bảo hiểm** (mẫu Bảo Việt): slide Ghi nhớ nền xanh đậm, vòng sáng vàng kim, khiên kính, thẻ kính số vàng.
+- `s.nenAnh` (một slide) thay ảnh nền của phần khi ảnh phần không hợp nội dung (đường đời người lao động: ảnh công nhân thay hội trường Quốc hội).
 - Vật code còn dùng: chở dữ liệu (chồng sổ đếm được, trang sổ 20 → 15 ô, phiếu lương → phong bì, sổ đóng dấu) và **tiền cảnh mờ** (`tienCanh`: sổ, sách luật, phong bì làm mờ ở góc — chiều sâu).
 - **Máy quay** (`data-cam`, `hinh/may_quay.js`): khung + dải đầu đứng yên, cả cảnh trôi trái (vật gần nhanh hơn — `data-sau`), vào phần mới đi xuống, sau slide mở phần phóng vào; hàng danh sách đứng ngoài máy quay (`data-sau="0"`) và hiện lần lượt khi máy quay dừng.
 

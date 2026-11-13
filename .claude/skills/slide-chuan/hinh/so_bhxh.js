@@ -263,14 +263,23 @@ S.bhcongthuc = (s, deck, b) => { const t = s.terms || [], p = b === 2 ? 65 : 45,
     ${nguon(s.note)}`; };
 
 // 15 · 17 · BIỂU ĐỒ CỘT (hai bước khi "grow" khác false) — cột bóng mọc; số chú thích tại năm; thẻ kết luận; chồng sổ ở góc
-S.bhcot2 = (s, deck, b) => { const H = tieuDe(s, { w: 1460, px: 60 }), hai = s.grow !== false, xong = !hai || b === 2, it = s.items || [], n = it.length, top = Math.max(290, H.day + 40);
+S.bhcot2 = (s, deck, b) => { const H = tieuDe(s, { w: 1460, px: 60 }), hai = s.grow !== false && !(/người/.test(s.unit || "") && s.iso !== false), xong = !hai || b === 2, it = s.items || [], n = it.length, top = Math.max(290, H.day + 40);
   const CR = s.insight ? 1340 : 1810, X0 = 190, X1 = CR - 50, Y0 = top + 410, Y1 = top + 130, hi = Math.max(...it.map((x) => x.value)) * 1.08;
   const cw = (X1 - X0) / n, bw = cw * 0.58, xs = (k) => X0 + cw * (k + 0.5), ys = (v) => Y0 - (Y0 - Y1) * v / hi;
+  // isotype: đơn vị là người → cột = chồng sổ; chọn số người mỗi cuốn để cột cao nhất có 10–22 cuốn
+  const iso = /người/.test(s.unit || "") && s.iso !== false, vmax = Math.max(...it.map((x) => x.value)), mot = [0.1, 0.2, 0.25, 0.5, 1, 2, 5, 10].find((u) => vmax / u <= 22) || 10, day = mot * (Y0 - Y1) / hi;
+  const soDon = (u) => (u >= 1 ? `${so(u)} ${String(s.unit).replace(/^triệu\s*/, "triệu ")}` : `${so(Math.round(u * 1000)).replace(/\B(?=(\d{3})+(?!\d))/g, ".")}.000 người`);
   const mau = (x, k) => (x.focus ? "vang" : x.tone === "bad" || (k && x.value < it[k - 1].value) ? "do" : "xanh");
-  const sau = (ms) => (b === 2 ? { a: "fade", at: ms, dur: 400 } : hai ? {} : vao(Math.round(ms / 300), "fade"));
+  const sau = (ms) => (iso ? { a: "fade", at: ms + 500, dur: 400 } : b === 2 ? { a: "fade", at: ms, dur: 400 } : hai ? {} : vao(Math.round(ms / 300), "fade"));
   const bands = (s.bands || []).map((bd) => { const a = it.findIndex((x) => x.label === bd.from), e = it.findIndex((x) => x.label === bd.to); if (a < 0 || e < 0) return ""; const x0 = xs(a) - cw / 2, x1 = xs(e) + cw / 2;
     return `${lop("bh-band", { x: x0, y: Y1 - 44, w: x1 - x0, h: Y0 - Y1 + 44 }, tron(P.redT), { shadow: false, z: 5, alt: "Dải giai đoạn" })}${chu("bh-bl", x0, Y1 - 36, x1 - x0, esc(String(bd.label)), { align: "center" })}`; }).join("");
-  const cot = it.map((x, k) => { const y = xong ? ys(x.value) : Y0 - 6, g = uid("cg"); return lop(`bh-cot${k + 1}`, { x: xs(k) - bw / 2, y, w: bw, h: Y0 - y }, `<svg viewBox="0 0 10 100" width="100%" height="100%" preserveAspectRatio="none"><defs><linearGradient id="${g}" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#${GRAD[mau(x, k)][0]}"/><stop offset="1" stop-color="#${GRAD[mau(x, k)][1]}"/></linearGradient></defs><rect width="10" height="100" fill="url(#${g})"/><rect x="1" width="2" height="100" fill="#fff" opacity=".3"/></svg>`, { shadow: false, m: `bh-cot${k + 1}`, z: 7, alt: `Cột ${x.label}`, ...(hai ? {} : vao(1 + Math.floor(k / 4), "rise")) }); }).join("");
+  const chong = (x, k, h) => { const g = uid("cs"), m = GRAD[mau(x, k)], N = Math.ceil(h / day) + 1, w = bw;
+    return `<svg viewBox="0 0 ${w.toFixed(1)} ${h.toFixed(1)}" width="100%" height="100%"><defs><linearGradient id="${g}" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#${m[0]}"/><stop offset="1" stop-color="#${m[1]}"/></linearGradient></defs>
+      ${Array.from({ length: N }, (_, i) => { const y = h - (i + 1) * day, l = ((i * 37) % 7) - 3, c = Math.max(1.4, day * 0.2);
+        return `<g transform="translate(${l * 0.8} ${y.toFixed(2)})"><rect x="3" y="0" width="${w - 6}" height="${day.toFixed(2)}" rx="1.5" fill="#fbfcff"/><rect x="3" y="0" width="${w - 6}" height="${c.toFixed(2)}" fill="url(#${g})"/><rect x="3" y="${(day - c).toFixed(2)}" width="${w - 6}" height="${c.toFixed(2)}" fill="url(#${g})"/><rect x="3" y="0" width="7" height="${day.toFixed(2)}" fill="url(#${g})"/><path d="M12 ${(day / 2).toFixed(2)} H${w - 8}" stroke="#d9e2ef" stroke-width="1"/></g>`; }).join("")}</svg>`; };
+  const cot = it.map((x, k) => { if (iso) { if (hai && !xong) return ""; const y = ys(x.value);
+      return lop(`bh-cot${k + 1}`, { x: xs(k) - bw / 2, y, w: bw, h: Y0 - y }, chong(x, k, Y0 - y), { shadow: false, z: 7, alt: `Cột ${x.label}: chồng sổ BHXH`, a: "up", at: 120 + k * 90, dur: 520 }); }
+    const y = xong ? ys(x.value) : Y0 - 6, g = uid("cg"); return lop(`bh-cot${k + 1}`, { x: xs(k) - bw / 2, y, w: bw, h: Y0 - y }, `<svg viewBox="0 0 10 100" width="100%" height="100%" preserveAspectRatio="none"><defs><linearGradient id="${g}" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#${GRAD[mau(x, k)][0]}"/><stop offset="1" stop-color="#${GRAD[mau(x, k)][1]}"/></linearGradient></defs><rect width="10" height="100" fill="url(#${g})"/><rect x="1" width="2" height="100" fill="#fff" opacity=".3"/></svg>`, { shadow: false, m: `bh-cot${k + 1}`, z: 7, alt: `Cột ${x.label}`, ...(hai ? {} : vao(1 + Math.floor(k / 4), "rise")) }); }).join("");
   const nhanC = it.map((x, k) => `${chu("bh-cy", xs(k) - 55, Y0 + 14, 110, esc(x.label), { align: "center" })}${xong ? chu("bh-cv", xs(k) - 75, ys(x.value) - 50, 150, esc(x.display || so(x.value)), { align: "center", color: mau(x, k) === "do" ? P.redD : mau(x, k) === "vang" ? P.goldD : P.navy, ...sau(1000) }) : ""}`).join("");
   const whys = it.map((x, k) => (x.why ? k : -1)).filter((k) => k >= 0).slice(0, 4);
   const cham = (name, x, y, j, trong, o = {}) => `${lop(name, { x, y, w: 42, h: 42 }, `<svg viewBox="0 0 42 42" width="100%" height="100%"><circle cx="21" cy="21" r="19" fill="#${trong ? "ffffff" : P.red}" stroke="#${trong ? P.red : "ffffff"}" stroke-width="3"/></svg>`, { shadow: false, z: 9, alt: "Số chú thích", ...o })}${chu("bh-wn", x, y + 6, 42, String(j + 1), { align: "center", color: trong ? P.red : "ffffff", ...o })}`;
@@ -278,7 +287,7 @@ S.bhcot2 = (s, deck, b) => { const H = tieuDe(s, { w: 1460, px: 60 }), hai = s.g
   const why = xong ? whys.map((k, j) => { const x = 150 + (j % 2) * ((CR - 150) / 2), y = Y0 + 70 + Math.floor(j / 2) * 70; return `${cham(`bh-wc${j}`, x, y, j, false, sau(1500))}${chu("bh-wt", x + 56, y + 4, (CR - 150) / 2 - 80, `<b>${esc(it[k].label)}</b> ${f(it[k].why)}`, sau(1500))}`; }).join("") : "";
   const ins = s.insight || {};
   const the2 = s.insight && xong ? `${the("bh-ins", { x: 1380, y: top, w: 430, h: 480 }, { nen: "dam", ...sau(1700) })}${chu("bh-iv", 1414, top + 44, 380, f(ins.value || ""), { size: String(ins.value || "").length > 5 ? 96 : 120, color: "ffffff", ...sau(1700) })}${chu("bh-iu", 1414, top + 200, 370, f(ins.unit || ""), { color: "ffffff", ...sau(1700) })}${chu("bh-it", 1414, top + 300, 370, f(ins.text || ""), { color: "dce9ff", ...sau(1700) })}` : "";
-  return `${H.html}${the("bh-khung2", { x: 110, y: top, w: CR - 110, h: 630 }, hai ? {} : vao(0, "fade"))}${chu("bh-cu", 150, top + 30, 700, esc(s.unit ? `Đơn vị: ${s.unit}` : ""))}
+  return `${H.html}${the("bh-khung2", { x: 110, y: top, w: CR - 110, h: 630 }, hai ? {} : vao(0, "fade"))}${chu("bh-cu", 150, top + 30, 1100, esc(iso ? `Mỗi cuốn sổ = ${soDon(mot)} · đơn vị: ${s.unit}` : s.unit ? `Đơn vị: ${s.unit}` : ""))}
     ${lop("bh-truc", { x: X0 - 20, y: Y0, w: X1 - X0 + 40, h: 4 }, tron(P.ink2), { shadow: false, z: 8, alt: "Trục" })}${bands}${cot}${nhanC}${so1}${why}${the2}${nguon(s.note)}`; };
 
 // 16 · ĐÃ PHỦ BAO NHIÊU — 50 người 3D (1 người = 2 %): màu = có BHXH, xám = chưa; hai thẻ phần trăm
@@ -287,16 +296,23 @@ S.bhche = (s, deck, b, ctx) => { const H = tieuDe(s), c0 = (s.cols || [])[0] || 
   const luoi = `<div style="position:relative;width:100%;height:100%">${Array.from({ length: N }, (_, k) => `<img src="${u}" style="position:absolute;left:${(k % 10) * 94}px;top:${Math.floor(k / 10) * 94}px;width:84px;height:84px;${k < n0 ? "" : "filter:grayscale(1);opacity:.38;"}">`).join("")}</div>`;
   return `${H.html}${coAnh ? anhKhung(ctx, s, { x: 110, y: top, w: 990, h: 560 }, { fx: vao(0, "fade") }) : `${the("bh-lk", { x: 110, y: top, w: 990, h: 560 }, vao(0, "fade"))}${lop("bh-luoi", { x: 150, y: top + 40, w: 930, h: 460 }, luoi, { shadow: false, alt: `${N} người, ${n0} người có BHXH`, ...vao(0, "fade") })}
     ${chu("bh-leg", 150, top + 506, 900, esc(s.legend || "Mỗi người = 2% lực lượng lao động"), vao(0, "fade"))}`}
-    ${the("bh-s0", { x: 1150, y: top, w: 660, h: 265 }, { nen: "dam", ...vao(1) })}${chu("bh-pv", 1190, top + 34, 400, `${esc(c0.value || "42")}%`, { color: "ffffff", ...vao(1) })}${chu("bh-pl", 1190, top + 178, 600, esc(c0.label || ""), { color: "ffffff", ...vao(1) })}
-    ${the("bh-s1", { x: 1150, y: top + 295, w: 660, h: 265 }, { nen: "do", ...vao(2) })}${chu("bh-pv", 1190, top + 329, 400, `${esc(c1.value || "58")}%`, { color: "ffffff", ...vao(2) })}${chu("bh-pl", 1190, top + 473, 600, esc(c1.label || ""), { color: "ffffff", ...vao(2) })}
+    ${(() => { const v = parseFloat(String(c0.value || "42").replace(",", ".")) / 100, D = 370, R = 150, C = 2 * Math.PI * R, X = 1170, g = uid("dn"), cx = 1480;
+      const vong = `<svg viewBox="0 0 ${D} ${D}" width="100%" height="100%"><defs><linearGradient id="${g}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4b97ff"/><stop offset="1" stop-color="#0b57d0"/></linearGradient></defs>
+        <circle cx="${D / 2}" cy="${D / 2}" r="${R}" fill="none" stroke="#ffd2cc" stroke-width="40"/><circle cx="${D / 2}" cy="${D / 2}" r="${R}" fill="none" stroke="url(#${g})" stroke-width="44" stroke-dasharray="${(C * v).toFixed(1)} ${C.toFixed(1)}" transform="rotate(-90 ${D / 2} ${D / 2})"/></svg>`;
+      return `${the("bh-vtk", { x: 1150, y: top, w: 660, h: 560 }, vao(1))}${lop("bh-vong", { x: cx - D / 2, y: top + 20, w: D, h: D }, vong, { shadow: false, z: 6, alt: `Vòng phần trăm: ${c0.value}% có BHXH`, ...vao(1, "grow") })}
+        ${chu("bh-dv0", cx - 120, top + 20 + D / 2 - 56, 240, `${esc(c0.value || "42")}%`, { align: "center", size: 88, ...vao(1) })}${chu("bh-dvl", cx - 110, top + 20 + D / 2 + 36, 220, "có BHXH", { align: "center", ...vao(1) })}
+        ${hero("bh-vso", "so", { x: 1176, y: top + 22, w: 92, r: -10 }, vao(2))}
+        ${lop("bh-dot0", { x: 1190, y: top + 410, w: 26, h: 26 }, tron("1e6ff0"), { shadow: false, alt: "Chấm xanh", ...vao(2) })}${chu("bh-dl", 1232, top + 402, 560, `<b>${esc(c0.value || "42")}%</b> ${esc(c0.label || "")}`, vao(2))}
+        ${lop("bh-dot1", { x: 1190, y: top + 470, w: 26, h: 26 }, tron("f2958a"), { shadow: false, alt: "Chấm đỏ", ...vao(3) })}${chu("bh-dl", 1232, top + 462, 560, `<b class="do">${esc(c1.value || "58")}%</b> ${esc(c1.label || "")}`, vao(3))}`; })()}
     ${nguon(s.source)}`; };
 
 // 18 · QUỸ — thanh ngang thu − chi từng năm; 2023–2025 nét đứt xám (khác phạm vi); chồng xu ở góc
 S.bhquy = (s) => { const H = tieuDe(s, { w: 1460 }), rows = s.rows || [], k1 = rows.findIndex((x) => x.label === (s.den || "2022")), RH = 50, top = Math.max(340, H.day + 80), Z = 420, KX = 620 / Math.max(...rows.map((x) => Math.abs(x.value)));
   const W = 960, g = uid("qg"), g2 = uid("qv");
   const bars = rows.map((x, k) => { const y = k * RH + 8, w = Math.abs(x.value) * KX, xa = k > k1, x0 = x.value < 0 ? Z - 110 - w : Z - 110;
-    return xa ? `<rect x="${x0 + 1.5}" y="${y + 1.5}" width="${w - 3}" height="${RH - 19}" rx="8" fill="#ffffff" stroke="#${P.faint}" stroke-width="3" stroke-dasharray="7 5"/>` : `<rect x="${x0}" y="${y}" width="${w}" height="${RH - 16}" rx="8" fill="url(#${x.focus ? g2 : g})"/><rect x="${x0 + 4}" y="${y + 4}" width="${Math.max(0, w - 8)}" height="7" rx="3.5" fill="#fff" opacity=".3"/>`; }).join("");
-  const svg = `<svg viewBox="0 0 ${W} ${rows.length * RH}" width="100%" height="100%"><defs><linearGradient id="${g}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a8bff"/><stop offset="1" stop-color="#0b57d0"/></linearGradient><linearGradient id="${g2}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc94a"/><stop offset="1" stop-color="#e8930c"/></linearGradient></defs>${bars}<path d="M${Z - 110} 0 V${rows.length * RH}" stroke="#${P.ink2}" stroke-width="3"/></svg>`;
+    const xu = (n) => Array.from({ length: n }, (_, c) => `<rect x="${(x0 + c * 11).toFixed(1)}" y="${y}" width="10" height="${RH - 16}" rx="4" fill="url(#${x.focus ? g2 : g})" stroke="#${x.focus ? "b5520a" : "9a6a10"}" stroke-width="1.2"/><rect x="${(x0 + c * 11 + 2).toFixed(1)}" y="${y + 3}" width="2.4" height="${RH - 22}" rx="1.2" fill="#fff" opacity=".45"/>`).join("");
+    return xa ? `<rect x="${x0 + 1.5}" y="${y + 1.5}" width="${w - 3}" height="${RH - 19}" rx="8" fill="#ffffff" stroke="#${P.faint}" stroke-width="3" stroke-dasharray="7 5"/>` : xu(Math.max(1, Math.round(w / 11))); }).join("");
+  const svg = `<svg viewBox="0 0 ${W} ${rows.length * RH}" width="100%" height="100%"><defs><linearGradient id="${g}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".45" stop-color="#f2b53a"/><stop offset="1" stop-color="#b9861f"/></linearGradient><linearGradient id="${g2}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd2a0"/><stop offset=".45" stop-color="#f08a24"/><stop offset="1" stop-color="#b5520a"/></linearGradient></defs>${bars}<path d="M${Z - 110} 0 V${rows.length * RH}" stroke="#${P.ink2}" stroke-width="3"/></svg>`;
   const chuBang = rows.map((x, k) => { const y = top + k * RH, xa = k > k1, w = Math.abs(x.value) * KX;
     return `${chu("bh-qy", 150, y + 6, 120, esc(x.label), { color: xa ? P.mute : P.navy, ...vao(1, "fade") })}${chu("bh-qv", x.value < 0 ? Z - w - 150 : Z + w + 16, y + 4, 130, esc(x.display || so(x.value)), { align: x.value < 0 ? "right" : "left", color: xa ? P.mute : x.focus ? P.goldD : P.navy, ...vao(1, "fade") })}`; }).join("");
   const ghi = rows.map((x, k) => ({ x, k })).filter(({ x, k }) => x.note && k <= k1).map(({ x, k }) => chu("bh-qn", 1350, top + k * RH + 6, 430, `<b>${esc(x.label)}</b> ${esc(x.note)}`, vao(2, "fade"))).join("");
@@ -373,19 +389,29 @@ S.bhhoi = (s, deck, b, ctx) => { const op = (s.options || []).slice(0, 4), id = 
       ${chu("bh-opl", X + 36, Y + 58, 104, "ABCD"[k], { align: "center", go, size: 60, ...o })}${chu("bh-opt", X + 36, Y + 168, 470, esc(x.text), { go, size: 34, ...o })}`; }).join("")}`; };
 
 // 26 · KẾT LUẬN — trả lời lại đúng ba câu hỏi đầu bài + nhận định
-S.bhtraloi = (s) => { const H = tieuDe(s), an = (s.answers || []).slice(0, 3), top = Math.max(310, H.day + 50);
-  const ve = [(R, o) => hero("bh-tlv0", "sach", R, o), (R, o) => chongSo("bh-tlv1", 6, R, o), (R, o) => hero("bh-tlv2", "kiem", R, o)];
-  return `${H.html}${an.map((x, k) => { const X = 110 + k * 580, o = vao(k);
-    return `${the(`bh-a${k}`, { x: X, y: top, w: 540, h: 460 }, { dai: "xanh", daiH: 10, ...o })}${ve[k]({ x: X + 410, y: top + 30, w: 90 }, o)}${chu("bh-an", X + 36, top + 30, 140, `0${k + 1}`, o)}
-      ${chu("bh-aq", X + 36, top + 140, 470, esc(x.q || ""), o)}${chu("bh-aa", X + 36, top + 250, 470, f(x.a || ""), o)}`; }).join("")}
-    ${s.verdict ? `${the("bh-ver", { x: 110, y: top + 490, w: 1700, h: 120 }, { nen: "dam", ...vao(3) })}${chu("bh-vd", 150, top + 526, 1620, `<b>Nhận định:</b> ${f(s.verdict)}`, { color: "ffffff", ...vao(3) })}` : ""}`; };
-
+S.bhtraloi = (s) => { const H = tieuDe(s), an = (s.answers || []).slice(0, 3), top = Math.max(310, H.day + 44), RH = 156, G = 22;
+  return `${H.html}${hero("bh-baso", "so", { x: 90, y: top + 6, w: 470, r: -4 }, { sau: 1.35, ...vao(0) })}
+    ${an.map((x, k) => { const Y = top + k * (RH + G), o = { ...vao(1 + k), sau: 0 };
+      return `${lop(`bh-tab${k}`, { x: 470, y: Y + RH / 2 - 30, w: 200, h: 60 }, thanh(TABG[k], 3), { alt: "Dải đánh dấu", z: 4, ...o })}
+        ${the(`bh-a${k}`, { x: 640, y: Y, w: 1170, h: RH }, { trai: TAB[k], traiW: 12, ...o })}${chu("bh-bn", 690, Y + 30, 140, `0${k + 1}`, { color: k === 1 ? P.goldD : TAB[k], ...o })}
+        ${chu("bh-aq", 830, Y + 24, 950, esc(x.q || ""), o)}${chu("bh-aa", 830, Y + 62, 950, f(x.a || ""), o)}`; }).join("")}
+    ${s.verdict ? (() => { const Y = top + 3 * (RH + G) + 6, n = dong(`Nhận định: ${s.verdict}`, 1090, 30, 400), h = 44 + n * 40;
+      return `${the("bh-ver", { x: 640, y: Y, w: 1170, h }, { nen: "dam", ...vao(4) })}${chu("bh-vd", 680, Y + 22, 1090, `<b>Nhận định:</b> ${f(s.verdict)}`, { color: "ffffff", size: 30, ...vao(4) })}`; })() : ""}`; };
 // 27 · GHI NHỚ — câu chốt lớn + ba thẻ số (bấm để quay lại slide chứng minh); người cao tuổi nhận phong bì lương hưu
+const vongVang = () => { const g = uid("vv");
+  return `<svg viewBox="0 0 900 900" width="100%" height="100%"><defs><linearGradient id="${g}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff2c4" stop-opacity="0"/><stop offset=".45" stop-color="#ffd76a"/><stop offset=".7" stop-color="#e8b84a"/><stop offset="1" stop-color="#e8b84a" stop-opacity="0"/></linearGradient>
+    <radialGradient id="${g}q" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#2f7bff" stop-opacity=".55"/><stop offset="1" stop-color="#2f7bff" stop-opacity="0"/></radialGradient></defs>
+    <circle cx="450" cy="450" r="430" fill="url(#${g}q)"/>
+    ${[[0, 300, 120, 4], [-18, 360, 150, 2.5], [22, 260, 90, 2]].map(([r, rx, ry, w]) => `<ellipse cx="450" cy="470" rx="${rx}" ry="${ry}" fill="none" stroke="url(#${g})" stroke-width="${w}" transform="rotate(${r} 450 470)"/>`).join("")}
+    ${[[210, 300], [690, 380], [600, 650], [300, 640], [470, 200]].map(([x, y], k) => `<circle cx="${x}" cy="${y}" r="${3 + (k % 3)}" fill="#ffe7a3"/>`).join("")}</svg>`; };
 S.bhghinho = (s) => { const ch = (s.chips || []).slice(0, 3);
-  return `${vat("bh-gg", "nguoi-gia", { x: 1500, y: 150, w: 260 }, vao(0))}${hero("bh-gp", "phongbi", { x: 1330, y: 330, w: 260, r: -6 }, vao(1))}
-    ${kick(s.kicker || "Ghi nhớ")}${chu("bh-gh", 110, 160, 1200, tx((s.lines || []).join("\n")))}
-    ${ch.map((x, k) => { const X = 110 + k * 580, Y = 560, o = vao(2 + k); return `${the(`bh-g${k}`, { x: X, y: Y, w: 540, h: 300 }, { nen: "dam", go: x.go, ...o })}${chu("bh-gn", X + 40, Y + 36, 460, esc(x.n), { go: x.go, color: "ffffff", ...o })}${chu("bh-gt", X + 40, Y + 196, 460, esc(x.text), { go: x.go, color: "ffffff", ...o })}`; }).join("")}
-    ${s.basis ? nguon(s.basis) : ""}`; };
+  return `${lop("bh-gvong", { x: 1080, y: 40, w: 840, h: 840 }, vongVang(), { shadow: false, alt: "Vòng sáng", z: 2, sau: 0.7, ...vao(0, "fade") })}${lop("bh-gkhien", { x: 1330, y: 170, w: 340, h: 408 }, V.khien(), { shadow: false, alt: "Khiên an sinh", z: 4, sau: 1.3, ...vao(0, "pop") })}
+    ${hero("bh-gp", "phongbi", { x: 1580, y: 410, w: 240, r: 8 }, { sau: 1.5, ...vao(1) })}
+    ${kick(s.kicker || "Ghi nhớ", 110, 150, { mau: "vang" })}${chu("bh-gh", 110, 220, 1100, tx((s.lines || []).join("\n")))}
+    ${ch.map((x, k) => { const X = 110 + k * 580, Y = 600, o = { ...vao(2 + k), sau: 0 }, g = uid("gk");
+      return `${lop(`bh-g${k}`, { x: X, y: Y, w: 540, h: 290 }, `<svg viewBox="0 0 540 290" width="100%" height="100%"><defs><linearGradient id="${g}" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffd76a"/><stop offset="1" stop-color="#e8930c"/></linearGradient></defs><rect x="1" y="1" width="538" height="288" rx="26" fill="#ffffff" fill-opacity=".09" stroke="#ffffff" stroke-opacity=".28" stroke-width="2"/><rect x="40" y="1" width="120" height="6" rx="3" fill="url(#${g})"/></svg>`, { shadow: false, go: x.go, alt: "Thẻ kính", z: 5, ...o })}
+        ${chu("bh-gn", X + 40, Y + 40, 460, esc(x.n), { go: x.go, color: "ffc94a", ...o })}${chu("bh-gt", X + 40, Y + 190, 460, esc(x.text), { go: x.go, color: "ffffff", ...o })}`; }).join("")}
+    ${s.basis ? chu("bh-src", 110, 960, 1700, esc(s.basis), { color: "9fb3d9" }) : ""}`; };
 
 // 28 · KẾT — lời cảm ơn; mặt bàn khép bài: ảnh người nhận lương hưu đóng khung, sổ BHXH, phong bì lương hưu
 S.bhket = (s, deck, b, ctx) => { if (anhU(ctx, s)) { const px = 96, n = dong(s.title, 1050, px, "anton"), y0 = 300, y = y0 + n * Math.round(px * 1.06) + 30, team = (s.team || []).slice(0, 4).map((t) => t.name).join(" · ");
@@ -408,13 +434,15 @@ function tenMorph(html, type) { const dem = {};
   return html.replace(/<div class="([^"]+)" data-t(?! data-m)([^>]*>)([\s\S]*?)<\/div>/g, (m0, cls, st, inner) => `<div class="${cls}" data-t data-m="${mot(`t-${bam(type + "|" + cls + "|" + inner)}`)}"${st}${inner}</div>`); }
 
 const KET_LUAN = new Set(["bhhoi", "bhtraloi", "bhghinho"]);
-const anhPhan = (deck, i) => { const s = deck.slides[i]; if (["bhbia", "bhket", "bhchuong"].includes(s.type) || (deck.meta && deck.meta.hinh && deck.meta.hinh.nenAnh === false)) return null;
+const anhPhan = (deck, i) => { const s = deck.slides[i]; if (["bhbia", "bhket", "bhchuong", "bhghinho"].includes(s.type) || (deck.meta && deck.meta.hinh && deck.meta.hinh.nenAnh === false)) return null;
+  if (s.nenAnh) return s.nenAnh;
   if (KET_LUAN.has(s.type)) { const k = deck.slides.find((x) => x.type === "bhket"); return (k && k.photo) || null; }
   for (let k = i; k >= 0; k--) { const c = deck.slides[k]; if (c.type === "bhchuong" || c.type === "bhbia") return c.photo || null; } return null; };
 const nenAnh = (u) => `<div class="bh-nenanh" style="background-image:url('${u}')"></div><div class="bh-nenphu"></div>`;
 function render(s, deck, ctx, { i, n }) {
   kit.reset();
-  const hai = HAI_BUOC.has(s.type) && s.grow !== false;
+  const isoCot = s.type === "bhcot2" && /người/.test(s.unit || "") && s.iso !== false;
+  const hai = HAI_BUOC.has(s.type) && s.grow !== false && !isoCot;
   const buoc = s.type === "bhhoi" ? [0, "sai", "dung"] : hai ? [1, 2] : [0], id = s.id || `s${i + 1}`;
   if (s.type === "bhhoi" && !s.next) s = { ...s, next: (deck.slides[i + 1] || {}).id || `s${i + 2}` };
   return buoc.map((b) => { HV = b !== 2;
@@ -423,7 +451,7 @@ function render(s, deck, ctx, { i, n }) {
     const pa = phai && anhPhan(deck, i), ua = pa && ctx && ctx.img(pa);
     const html = tenMorph(`${ua ? nenAnh(ua) : ""}${khung(s, deck, i, n, s.type !== "bhbia" && s.type !== "bhket", phai)}${coBan ? ban(deck, i) : ""}${than}`, s.type);
     HV = true;
-    const toi = ["bhbia", "bhket", "bhchuong"].includes(s.type) && !!(ctx && s.photo && ctx.img(s.photo));
+    const toi = s.type === "bhghinho" || (["bhbia", "bhket", "bhchuong"].includes(s.type) && !!(ctx && s.photo && ctx.img(s.photo)));
     const sec = `<section class="s bh${toi ? " toi" : ""}" data-type="${esc(s.type)}" data-title="${esc(String(s.title || "").replace(/[[\]]/g, ""))}"><div class="cv">${html}</div></section>`;
     // chuyển cảnh: MÁY QUAY (hinh/may_quay.js) — khung + dải đầu đứng yên, cả cảnh trôi sang trái theo mạch bài; vào phần mới máy quay đi xuống;
     // slide ngay sau slide mở phần: máy quay phóng vào hình chính của phần. Bước 2 của slide hai bước: Morph thường (một vật đổi). Trắc nghiệm sai / đúng: mờ.
@@ -436,6 +464,10 @@ const cham = `url("data:image/svg+xml;utf8,${encodeURIComponent("<svg xmlns='htt
 const css = `
 .s.bh { background: radial-gradient(ellipse 45% 55% at 97% 0%, rgba(30,123,255,.24), transparent 66%), radial-gradient(ellipse 40% 50% at 0% 100%, rgba(30,123,255,.12), transparent 66%), linear-gradient(160deg, #ffffff 0%, #eaf2ff 62%, #d9e8ff 100%); color: #${P.ink}; }
 .s.bh.toi { background: #072a6b; }
+.s.bh.toi[data-type="bhghinho"] { background: radial-gradient(ellipse 60% 70% at 78% 40%, #1450b8 0%, #0a3486 45%, #061f57 100%); }
+.s.bh.toi .bh-gh { color: #ffffff; } .s.bh.toi .bh-gh em { color: #ffc94a; }
+.bh-dv0 { font: 400 104px/1 'Anton', sans-serif; color: #072a6b; } .bh-dvl { font: 800 24px/1.2 var(--fb); letter-spacing: .06em; text-transform: uppercase; color: #${P.mute}; }
+.bh-dl { font: 400 26px/1.3 var(--fb); color: #${P.ink2}; } .bh-dl b { font: 400 40px/1 'Anton', sans-serif; color: #0b57d0; margin-right: 10px; } .bh-dl b.do { color: #${P.red}; }
 .bh-nenanh { position: absolute; inset: -40px; background-size: cover; background-position: center; filter: blur(10px) saturate(1.3); opacity: .9; }
 .bh-nenphu { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(246,249,255,.9) 0%, rgba(246,249,255,0) 30%), linear-gradient(100deg, rgba(246,249,255,.93) 0%, rgba(240,246,255,.86) 42%, rgba(228,238,255,.72) 75%, rgba(216,231,255,.64) 100%); }
 .s.bh.toi .bh-hdp { color: rgba(255,255,255,.72); } .s.bh.toi .bh-hdn { color: #ffc94a; }
