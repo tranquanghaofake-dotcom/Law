@@ -95,3 +95,11 @@ test("bhchuong được tính là slide mở phần; mã môn dính chữ (BNK40
   assert.ok(!/Số "405"/.test(all), all);
   assert.ok(!/thiếu chủ ngữ/.test(all), all);
 });
+
+test("--titles: slide trích dẫn của bộ hình (chỉ có quote) và câu hỏi trắc nghiệm bhhoi không bị cảnh báo", () => {
+  const r = KND.machTieuDe({ slides: [{ type: "bhbia", title: "Bìa" }, { type: "bhtrich", kicker: "Phần 1 · Khái niệm", quote: "Bảo hiểm xã hội bắt buộc là loại hình…" },
+    { type: "bhhoi", kicker: "Câu hỏi nhanh", title: "Nam đóng đủ 15 năm, hưu 9/2025: được gì?" }] });
+  assert.ok(!/Slide 2: không có tiêu đề/.test(r), r);
+  assert.ok(!/Slide 3: tiêu đề là câu hỏi/.test(r), r);
+  assert.ok(/Bảo hiểm xã hội bắt buộc/.test(r), r);
+});
