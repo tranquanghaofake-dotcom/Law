@@ -3,6 +3,7 @@
 //   node scripts/xem_morph.js <thư_mục>_lop/deck.html <out.gif|out.mp4> [--tu=1] [--den=N] [--giu=1200] [--rong=960]
 // Mô phỏng cách PowerPoint làm Morph: phần tử cùng tên (data-m) ở hai slide kề nhau trượt / đổi cỡ / xoay sang chỗ mới
 // (hình khác nhau thì hoà dần), phần tử không có cặp thì mờ ra (slide trước) / mờ vào (slide sau). Thời lượng = data-dur của slide sau.
+// Slide có data-cam (máy quay, hinh/may_quay.js): phần tử không có cặp trôi ra / vào khung theo máy quay thay vì mờ.
 // Đây là BẢN XẤP XỈ để soát nhịp và ý đồ chuyển động; bản thật vẫn phải mở bằng PowerPoint 2019 / 365.
 const path = require("path"), fs = require("fs"), os = require("os"), { execFileSync } = require("child_process");
 let chromium; try { ({ chromium } = require("playwright")); } catch { ({ chromium } = require(path.join(process.cwd(), "node_modules", "playwright"))); }
@@ -17,6 +18,7 @@ const [html, out] = pos, GIU = opt("giu", 1200), RONG = opt("rong", 960);
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), "xem-morph-")), FPS = 20;
   const page = await (await b.newContext({ viewport: { width: 1920, height: 1080 }, deviceScaleFactor: RONG / 1920 })).newPage();
   await page.goto("file://" + path.resolve(html)); await page.evaluate(() => window.hinhSanSang); await page.waitForTimeout(500);
+  await page.addScriptTag({ path: path.join(__dirname, "..", "hinh", "may_quay.js") });
   const n = await page.evaluate(() => {
     const st = document.createElement("style");
     st.textContent = `html, body { margin: 0 !important; background: #000; overflow: hidden; } section.s { position: fixed !important; left: 0 !important; top: 0 !important; margin: 0 !important; display: none !important; }
@@ -27,6 +29,7 @@ const [html, out] = pos, GIU = opt("giu", 1200), RONG = opt("rong", 960);
     window.__xmSet = (t) => { const e = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2, L = (x, y) => x + (y - x) * e;
       for (const { el, a, b } of window.__xm || []) { for (const k of ["l", "t", "w", "h"]) if (a[k] != null) el.style.setProperty({ l: "left", t: "top", w: "width", h: "height" }[k], L(a[k], b[k]) + "px", "important");
         if (a.r != null) el.style.setProperty("rotate", L(a.r, b.r) + "deg", "important"); if (a.fs != null) el.style.setProperty("font-size", L(a.fs, b.fs) + "px", "important");
+        if (a.tx != null) { el.style.setProperty("translate", `${L(a.tx, b.tx)}px ${L(a.ty, b.ty)}px`, "important"); el.style.setProperty("scale", String(L(a.sc, b.sc)), "important"); }
         const vao = b.op > a.op, tt = vao ? Math.min(1, t / 0.4) : Math.max(0, (t - 0.3) / 0.7); el.style.setProperty("opacity", String(a.op + (b.op - a.op) * tt), "important"); } };
     return document.querySelectorAll("section.s").length; });
   const tu = Math.max(1, opt("tu", 1)), den = Math.min(n, opt("den", n));
@@ -48,12 +51,20 @@ const [html, out] = pos, GIU = opt("giu", 1200), RONG = opt("rong", 960);
       const top = (R) => [...R.querySelectorAll("[data-t], [data-l]")].filter((el) => !(el.parentElement && el.parentElement.closest("[data-t], [data-l]")));
       const aAll = top(A), bAll = top(B), aMap = new Map(aAll.filter(key).map((el) => [key(el), el])), ha = new Map(aAll.map((el) => [el, hop(el)])), hb = new Map(bAll.map((el) => [el, hop(el)]));
       const ds = [{ el: bg, a: { op: giongNen ? 0 : 1 }, b: { op: 0 } }], dung = new Set();
+      // máy quay: hộp trên slide → chỗ của bản nhân (tâm khớp tâm, đổi cỡ quanh tâm)
+      const cam = window.MQ.camOf(B.dataset.cam), sau = (el) => { const h = el.closest("[data-sau]"); return h ? parseFloat(h.dataset.sau) : 1; };
+      const quay = (el, S, f) => { const R = S.getBoundingClientRect(), q = el.getBoundingClientRect(), r = { x: q.left - R.left, y: q.top - R.top, w: q.width, h: q.height }, v = f(r, cam, sau(el));
+        return { tx: v.x + v.w / 2 - (r.x + r.w / 2), ty: v.y + v.h / 2 - (r.y + r.h / 2), sc: v.k || 1 }; };
+      const theoMay = (el) => cam && B.dataset.trans === "morph" && sau(el) !== 0;
       for (const el of bAll) { const h = hb.get(el), m = key(el), p = m && aMap.get(m); nho(el);
+        if (!p && theoMay(el)) { const g = quay(el, B, window.MQ.vao); ds.push({ el, a: { op: h.op, ...g }, b: { op: h.op, tx: 0, ty: 0, sc: 1 } }); continue; }
         if (!p) { ds.push({ el, a: { ...h, l: null, fs: null, r: null, op: 0 }, b: h }); continue; }
         dung.add(p); nho(p); const h0 = ha.get(p);
         if (p.innerHTML === el.innerHTML) { ds.push({ el: p, a: h0, b: h }); ds.push({ el, a: { ...h, l: null, fs: null, r: null, op: 0 }, b: { op: 0 } }); }   // giống hệt: bản ở lớp trên (A) di chuyển, bản B ẩn tới cuối
         else { ds.push({ el, a: { ...h0, op: 0 }, b: h }); ds.push({ el: p, a: h0, b: { ...h, op: 0 } }); } }
-      for (const el of aAll) if (!dung.has(el)) { const h = ha.get(el); nho(el); ds.push({ el, a: { ...h, l: null, fs: null, r: null }, b: { ...h, op: 0 } }); }
+      for (const el of aAll) if (!dung.has(el)) { const h = ha.get(el); nho(el);
+        if (theoMay(el)) { const g = quay(el, A, window.MQ.ra); ds.push({ el, a: { op: h.op, tx: 0, ty: 0, sc: 1 }, b: { op: h.op, ...g } }); continue; }
+        ds.push({ el, a: { ...h, l: null, fs: null, r: null }, b: { ...h, op: 0 } }); }
       window.__xm = ds; window.__xmGiu = giu; window.__xmAB = [A, B]; window.__xmSet(0); return dur;
     }, k);
     const F = Math.max(2, Math.round(dur / 1000 * FPS));

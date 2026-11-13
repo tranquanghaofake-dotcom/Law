@@ -23,6 +23,7 @@
 //   data-m="tên"      ghép cặp Morph với phần tử cùng tên ở slide kề            data-go="id"    bấm vào thì nhảy tới slide có data-id đó
 //   data-pad="px"     nới khung chụp lớp ảnh (bóng đổ)
 // Thuộc tính trên <section class="s">: data-id, data-trans="morph|fade|push|none", data-dur="ms", data-auto="ms" (tự sang slide sau), data-notes,
+//   data-cam="pan:dx,dy" | "zoom:k,x,y" (máy quay khi Morph vào slide này — hinh/may_quay.js; vật mang data-sau="hệ số" để có thị sai, "0" = đứng ngoài),
 //   data-noclick (bấm chuột không sang slide — chỉ đi bằng nút liên kết; dùng cho slide trắc nghiệm).
 // data-prop trên một khối: chữ bên trong là đạo cụ (bìa sách, trang sách…), cố ý để làm ảnh.
 // Quy ước CSS: xoay nghiêng chỉ dùng thuộc tính `rotate:` (không dùng transform: rotate). Lớp ảnh tự xoay (rotate đặt ngay trên phần tử data-l)
@@ -31,6 +32,7 @@ const fs = require("fs"), path = require("path"), crypto = require("crypto");
 const { spawnSync } = require("child_process");
 const PptxGenJS = require("pptxgenjs"), JSZip = require("jszip"), fontkit = require("fontkit");
 const X = require("./xml");
+const MQ = require("./may_quay");
 
 const md5 = (b) => crypto.createHash("md5").update(b).digest("hex").slice(0, 16);
 
@@ -69,7 +71,8 @@ function collectInPage() {
         em: own("em") || (el.hasAttribute("data-pulse") ? "pulse" : null), emAt: own("emat") == null ? null : num(own("emat")), mv: mv ? { dx: mv[0] / 1920, dy: mv[1] / 1080, at: mv[2] || 0, dur: mv[3] || 1000 } : null };
       let m = own("m");
       if (!m && lay && lay.getAttribute("data-m") && lay.getAttribute("data-mt") !== "0") { const k = (perLayer.get(lay) || 0) + 1; perLayer.set(lay, k); m = `${lay.getAttribute("data-m")}-chu${k}`; } // chữ trong lớp có Morph đi theo lớp
-      const base = { i, m, n: own("n"), go: own("go") || inherit(el, "go"), goOwn: el.hasAttribute("data-go"), an, alt: own("alt") || "" };
+      const sauRaw = inherit(el, "sau");
+      const base = { i, m, n: own("n"), go: own("go") || inherit(el, "go"), goOwn: el.hasAttribute("data-go"), an, alt: own("alt") || "", sau: sauRaw == null ? 1 : num(sauRaw, 1) };
       if (isW) {
         const src = S.querySelector(own("of")); if (!src) { console.warn("data-of không tìm thấy:", own("of")); return; }
         const q = src.getBoundingClientRect(), cs = getComputedStyle(el), key = `${si}-${i}`;
@@ -93,7 +96,7 @@ function collectInPage() {
       items.push({ ...base, kind: "text", cx: r.left + r.width / 2 - R.left, cy: r.top + r.height / 2 - R.top, ang, el: `${si}-${i}` });
       el.setAttribute("data-ti", `${si}-${i}`);
     });
-    out.push({ id: S.getAttribute("data-id") || `s${si + 1}`, trans: S.getAttribute("data-trans") || "fade", dur: num(S.getAttribute("data-dur"), 1000), auto: S.hasAttribute("data-auto") ? num(S.getAttribute("data-auto")) : null, noClick: S.hasAttribute("data-noclick"), notes: S.getAttribute("data-notes") || "", items, words: (() => { let w = ""; const tw = document.createTreeWalker(S, NodeFilter.SHOW_TEXT); for (let n = tw.nextNode(); n; n = tw.nextNode()) { const pe = n.parentElement; if (!pe || pe.closest("[data-prop], [data-w], script, style")) continue; const cs = getComputedStyle(pe); if (cs.display === "none" || cs.visibility === "hidden") continue; w += " " + (cs.textTransform === "uppercase" ? n.textContent.toLocaleUpperCase("vi") : n.textContent); } return w.replace(/\s+/g, " ").trim(); })() });
+    out.push({ id: S.getAttribute("data-id") || `s${si + 1}`, cam: S.getAttribute("data-cam"), trans: S.getAttribute("data-trans") || "fade", dur: num(S.getAttribute("data-dur"), 1000), auto: S.hasAttribute("data-auto") ? num(S.getAttribute("data-auto")) : null, noClick: S.hasAttribute("data-noclick"), notes: S.getAttribute("data-notes") || "", items, words: (() => { let w = ""; const tw = document.createTreeWalker(S, NodeFilter.SHOW_TEXT); for (let n = tw.nextNode(); n; n = tw.nextNode()) { const pe = n.parentElement; if (!pe || pe.closest("[data-prop], [data-w], script, style")) continue; const cs = getComputedStyle(pe); if (cs.display === "none" || cs.visibility === "hidden") continue; w += " " + (cs.textTransform === "uppercase" ? n.textContent.toLocaleUpperCase("vi") : n.textContent); } return w.replace(/\s+/g, " ").trim(); })() });
   });
   return out;
 }
@@ -121,6 +124,35 @@ function measureTextInPage() {
     const cs = getComputedStyle(el);
     res[el.getAttribute("data-ti")] = { lines, ex: E.left, ey: E.top, ew: E.width, eh: E.height, align: cs.textAlign, lh: cs.lineHeight === "normal" ? null : parseFloat(cs.lineHeight), pl: parseFloat(cs.paddingLeft) || 0, pr: parseFloat(cs.paddingRight) || 0 };
   });
+  return res;
+}
+
+// Máy quay: hai slide kề nhau, slide sau có data-cam. Vật ở slide trước không có cặp ở slide sau → thêm bản nhân (cùng tên !!…) ở slide sau,
+// đặt ngoài khung theo hướng máy quay: Morph đẩy nó ra. Vật mới ở slide sau → bản nhân ở slide trước: Morph kéo nó vào. Vật cùng tên giữ đường riêng.
+// Vật đến bằng máy quay bỏ hiệu ứng vào (đang ẩn lúc chuyển cảnh thì Morph không có gì để kéo); data-sau="0" = đứng ngoài máy quay.
+function mayQuay(slides, ops, plan) {
+  let uid = 0; const res = { n: 0, ghost: 0, bo: 0 };
+  const nm = (op) => op.o.objectName, rect = (op) => ({ x: op.o.x / IN, y: op.o.y / IN, w: op.o.w / IN, h: op.o.h / IN });
+  const rename = (si, op) => { const old = nm(op); if (old.startsWith("!!")) return; const nw = `!!mq${si + 1}-${++uid}`; op.o.objectName = nw;
+    for (const e of plan[si].effects) if (e.name === old) e.name = nw; for (const l of plan[si].s.tlinks || []) if (l.name === old) l.name = nw; };
+  const ghost = (op, r) => { const k = r.k || 1, o = { ...op.o, x: r.x * IN, y: r.y * IN, w: r.w * IN, h: r.h * IN }; delete o.hyperlink; res.ghost++;
+    if (op.t === "text") { if (o.lineSpacing) o.lineSpacing = Math.max(1, +(o.lineSpacing * k).toFixed(2));
+      return { t: "text", g: true, o, runs: op.runs.map((u) => ({ text: u.text, options: { ...u.options, fontSize: Math.max(1, +(u.options.fontSize * k).toFixed(1)), ...(u.options.charSpacing ? { charSpacing: +(u.options.charSpacing * k).toFixed(2) } : {}) } })) }; }
+    if (o.sizing) o.sizing = { ...o.sizing, x: o.sizing.x * k, y: o.sizing.y * k, w: o.sizing.w * k, h: o.sizing.h * k };
+    return { t: "img", g: true, o }; };
+  for (let si = 1; si < slides.length; si++) {
+    const cam = MQ.camOf(slides[si].cam); if (!cam || slides[si].trans !== "morph") continue;
+    const A = ops[si - 1], B = ops[si], can = (op) => op.t !== "shape" && !op.g && op.it && op.it.sau !== 0;
+    const nA = new Set(A.map(nm)), nB = new Set(B.map(nm));
+    const di = A.filter((op) => can(op) && !nB.has(nm(op))), den = B.filter((op) => can(op) && !nA.has(nm(op)));
+    di.forEach((op) => rename(si - 1, op)); den.forEach((op) => rename(si, op));
+    for (const op of di) B.push(ghost(op, MQ.ra(rect(op), cam, op.it.sau)));
+    const vao = den.map((op) => ghost(op, MQ.vao(rect(op), cam, op.it.sau)));
+    if (cam.kind === "zoom") A.unshift(...vao); else A.push(...vao);      // phóng: vật mới mọc ra từ điểm phóng, nằm sau mọi vật của slide trước
+    const tenDen = new Set(den.map(nm));
+    plan[si].effects = plan[si].effects.filter((e) => { if (!tenDen.has(e.name) || !e.fx) return true; res.bo++; if (e.em || e.mv) { e.fx = null; return true; } return false; });
+    res.n++;
+  }
   return res;
 }
 
@@ -252,8 +284,11 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
   pp.title = name; const idNo = Object.fromEntries(slides.map((s, i) => [s.id, i + 1]));
   const used = new Set(), symUsed = new Set(), plan = [], lost = [], warn = [...them];
   const deg = (a) => Math.round((((a % 360) + 360) % 360) * 100) / 100;
+  // 4a) mỗi slide thành một danh sách vẽ (chưa ghi vào pptxgenjs) — bước máy quay còn thêm bản nhân ngoài khung
+  const ops = [];
   slides.forEach((s, si) => {
-    const sl = pp.addSlide(); sl.background = { path: s.bg }; if (s.notes) sl.addNotes(s.notes);
+    const ve = [], sl = { addImage: (o) => ve.push({ t: "img", o, it: cur }), addShape: (st, o) => ve.push({ t: "shape", st, o }), addText: (runs, o) => ve.push({ t: "text", runs, o, it: cur }) };
+    let cur = null; ops.push(ve);
     const effects = []; let auto = 0;
     const nameOf = (it, pre) => (it.m ? `!!${it.m}` : it.n || `${pre}${si + 1}-${++auto}`);
     const link = (it) => { const to = it.go && idNo[it.go]; if (it.go && !to) warn.push(`slide ${si + 1}: data-go="${it.go}" không trỏ tới slide nào`); return to ? { slide: to } : null; };
@@ -262,6 +297,7 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
       // đối tượng vừa là đích Morph vừa có hiệu ứng vào: lúc chuyển cảnh nó đang ẩn nên Morph không có gì để bay tới
       if (a.a && it.m && s.trans === "morph" && si > 0 && slides[si - 1].items.some((p) => p.m === it.m)) warn.push(`slide ${si + 1}: “${it.m}” vừa ghép Morph với slide trước vừa có data-a="${a.a}" — bỏ một trong hai`); };
     for (const it of s.items) {
+      cur = it;
       if (it.kind === "layer") {
         if (it.skip) continue;
         const nm = nameOf(it, "hinh"), hl = link(it);
@@ -312,6 +348,10 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
     }
     plan.push({ effects, s });
   });
+  // 4b) máy quay giữa hai slide (data-cam): vật không có cặp Morph được nhân một bản đặt ngoài khung slide kia — xem hinh/may_quay.js
+  const mq = mayQuay(slides, ops, plan); if (mq.n) console.log(`✓ Máy quay: ${mq.n} lần chuyển cảnh, ${mq.ghost} bản nhân ngoài khung, ${mq.bo} hiệu ứng vào được thay bằng máy quay`);
+  slides.forEach((s, si) => { const sl = pp.addSlide(); sl.background = { path: s.bg }; if (s.notes) sl.addNotes(s.notes);
+    for (const op of ops[si]) { if (op.t === "img") sl.addImage(op.o); else if (op.t === "shape") sl.addShape(op.st, op.o); else sl.addText(op.runs, op.o); } });
   const buf = await pp.write({ outputType: "nodebuffer" });
 
   // 5) XML gốc: chuyển cảnh, chuỗi hiệu ứng, liên kết, font nhúng; gộp các ảnh trùng nhau

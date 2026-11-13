@@ -196,4 +196,41 @@ function giayNho() { const g = id("gn");
     ${[80, 112, 144].map((y) => `<rect x="44" y="${y}" width="${y === 144 ? 90 : 150}" height="9" rx="4.5" fill="#9a5f00" opacity=".35"/>`).join("")}
     <circle cx="120" cy="34" r="16" fill="#e0453a"/><circle cx="114" cy="28" r="5" fill="#fff" opacity=".6"/></svg>`; }
 
-module.exports = { soBHXH, khien, chongXu, bieuDoKinh, bangKiem, sachLuat, soMo, phieuLuong, phongBi, dienThoai, chongSo, but, thuoc, giayNho };
+// Ô CHE (an sinh xã hội che chắn khi gặp rủi ro): tán 6 múi xanh căng tròn, mép lượn, cán móc, vài giọt mưa phía trên
+function oChe() { const g = id("oc"), N = 6, L = 34, R = 606, Y = 300, AX = 320, AY = 52, xs = Array.from({ length: N + 1 }, (_, i) => L + (i * (R - L)) / N);
+  const mui = (i) => { const a = xs[i], b = xs[i + 1], m = (a + b) / 2, ca = AX + (a - AX) * 1.06, cb = AX + (b - AX) * 1.06;
+    return `<path d="M${AX} ${AY} Q${ca} 96 ${a} ${Y} Q${m} ${Y - 40} ${b} ${Y} Q${cb} 96 ${AX} ${AY} Z" fill="url(#${g}${i % 2 ? "b" : "a"})"/>`; };
+  const giot = (x, y, s) => `<path d="M${x} ${y} q${-9 * s} ${14 * s} ${-9 * s} ${21 * s} a${9 * s} ${9 * s} 0 0 0 ${18 * s} 0 q0 ${-7 * s} ${-9 * s} ${-21 * s} Z" fill="url(#${g}g)"/>`;
+  return `<svg viewBox="0 0 640 540" width="100%" height="100%"><defs>
+    <linearGradient id="${g}a" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4b97ff"/><stop offset="1" stop-color="#0b57d0"/></linearGradient>
+    <linearGradient id="${g}b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a76f0"/><stop offset="1" stop-color="#0a3a9a"/></linearGradient>
+    <linearGradient id="${g}g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe2ff"/><stop offset="1" stop-color="#7fb1ff"/></linearGradient>
+    <linearGradient id="${g}s" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".5"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <linearGradient id="${g}v" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff2c4"/><stop offset="1" stop-color="#d9a23a"/></linearGradient></defs>
+    ${giot(70, 6, 1)}${giot(560, 20, 1.1)}${giot(150, 60, 0.8)}${giot(488, 70, 0.75)}${giot(30, 120, 0.7)}${giot(612, 140, 0.7)}
+    <path d="M${AX} ${Y - 10} V470" stroke="#33415c" stroke-width="11" stroke-linecap="round"/>
+    <path d="M${AX} 466 q0 46 -38 46 q-34 0 -34 -30" fill="none" stroke="#0a3a9a" stroke-width="14" stroke-linecap="round"/>
+    ${Array.from({ length: N }, (_, i) => mui(i)).join("")}
+    <path d="M${AX} ${AY} Q${AX - 320} 70 ${L} ${Y} L${AX} ${Y - 60} Z" fill="url(#${g}s)"/>
+    ${xs.slice(0, -1).map((a, i) => `<path d="M${a} ${Y} Q${(a + xs[i + 1]) / 2} ${Y - 40} ${xs[i + 1]} ${Y}" fill="none" stroke="#08307f" stroke-width="3" opacity=".55"/>`).join("")}
+    <circle cx="${AX}" cy="${AY - 6}" r="11" fill="url(#${g}v)"/></svg>`; }
+
+// SÁCH LUẬT MỞ (bìa đỏ, giấy ngà, dải đánh dấu vàng): chữ trên trang do slide đặt bằng hộp chữ
+function sachMo(w = 1500, h = 640) { const g = id("sm");
+  return `<svg viewBox="0 0 ${w} ${h}" width="100%" height="100%" preserveAspectRatio="none"><defs>${bong(g)}
+    <linearGradient id="${g}c" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c0392b"/><stop offset="1" stop-color="#6e0f0b"/></linearGradient>
+    <linearGradient id="${g}p" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fffdf7"/><stop offset="1" stop-color="#f6efdf"/></linearGradient>
+    <linearGradient id="${g}gL" x1="0" y1="0" x2="1" y2="0"><stop offset=".84" stop-color="#5a3a10" stop-opacity="0"/><stop offset="1" stop-color="#5a3a10" stop-opacity=".2"/></linearGradient>
+    <linearGradient id="${g}gR" x1="1" y1="0" x2="0" y2="0"><stop offset=".84" stop-color="#5a3a10" stop-opacity="0"/><stop offset="1" stop-color="#5a3a10" stop-opacity=".2"/></linearGradient>
+    <linearGradient id="${g}v" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd76a"/><stop offset="1" stop-color="#d9a23a"/></linearGradient></defs>
+    ${bongVe(g, w / 2, h - 10, w * 0.48, 22)}
+    <rect x="0" y="8" width="${w}" height="${h - 28}" rx="20" fill="url(#${g}c)"/><rect x="10" y="18" width="${w - 20}" height="${h - 48}" rx="14" fill="none" stroke="#e8b84a" stroke-width="2" opacity=".7"/>
+    ${[0, 1, 2].map((k) => `<rect x="${22 + k * 3}" y="${4 + k * 3}" width="${w / 2 - 26 - k * 3}" height="${h - 40}" rx="10" fill="#efe5cc"/><rect x="${w / 2 + 4}" y="${4 + k * 3}" width="${w / 2 - 26 - k * 3}" height="${h - 40}" rx="10" fill="#efe5cc"/>`).join("")}
+    <rect x="22" y="0" width="${w / 2 - 26}" height="${h - 46}" rx="10" fill="url(#${g}p)"/><rect x="${w / 2 + 4}" y="0" width="${w / 2 - 26}" height="${h - 46}" rx="10" fill="url(#${g}p)"/>
+    <rect x="22" y="0" width="${w / 2 - 26}" height="${h - 46}" fill="url(#${g}gL)"/><rect x="${w / 2 + 4}" y="0" width="${w / 2 - 26}" height="${h - 46}" fill="url(#${g}gR)"/>
+    <path d="M${w - 150} -6 h44 v130 l-22 -18 l-22 18 Z" fill="url(#${g}v)"/></svg>`; }
+
+// DẤU ĐÓNG TRÊN GIẤY (mực đỏ / vàng / xanh): khung kép bo góc, nền giấy hơi trong — chữ của dấu đặt bằng hộp chữ
+function dau(w, h, mau = "d63b2f") { return `<svg viewBox="0 0 ${w} ${h}" width="100%" height="100%"><rect x="4" y="4" width="${w - 8}" height="${h - 8}" rx="14" fill="#ffffff" fill-opacity=".78" stroke="#${mau}" stroke-width="6"/><rect x="14" y="14" width="${w - 28}" height="${h - 28}" rx="8" fill="none" stroke="#${mau}" stroke-width="2"/></svg>`; }
+
+module.exports = { soBHXH, khien, chongXu, bieuDoKinh, bangKiem, sachLuat, soMo, phieuLuong, phongBi, dienThoai, chongSo, but, thuoc, giayNho, oChe, sachMo, dau };

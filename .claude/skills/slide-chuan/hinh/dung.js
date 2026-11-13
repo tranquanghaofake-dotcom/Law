@@ -75,7 +75,7 @@ function dungHtml(deck, { deckDir = process.cwd(), mau, chuyen } = {}) {
     o.html = o.html.replace(/<\/section>\s*$/, `<div class="zml" data-t data-go="${esc(tocId)}">Mục lục</div>${sach}</section>`); });
   const ids = new Set();
   const body = out.map((o, k) => { let id = o.id || `s${k + 1}`; while (ids.has(id)) id += "-"; ids.add(id);
-    const tr = o.trans || (k === 0 ? "fade" : chuyen), at = [`data-id="${esc(id)}"`, `data-trans="${tr}"`, `data-dur="${o.dur || (tr === "morph" ? 700 : 500)}"`, o.auto != null ? `data-auto="${o.auto}"` : "", o.noclick ? "data-noclick" : "", o.tu ? "data-tu" : "", o.notes ? `data-notes="${esc(o.notes)}"` : ""].filter(Boolean).join(" ");
+    const tr = o.trans || (k === 0 ? "fade" : chuyen), at = [`data-id="${esc(id)}"`, `data-trans="${tr}"`, `data-dur="${o.dur || (tr === "morph" ? 700 : 500)}"`, o.auto != null ? `data-auto="${o.auto}"` : "", o.cam ? `data-cam="${esc(o.cam)}"` : "", o.noclick ? "data-noclick" : "", o.tu ? "data-tu" : "", o.notes ? `data-notes="${esc(o.notes)}"` : ""].filter(Boolean).join(" ");
     return o.html.replace(/^<section /, `<section ${at} `); }).join("\n");
   const css = fs.readFileSync(path.join(here, "..", "stage", "stage.css"), "utf8");
   const html = `<!doctype html>
