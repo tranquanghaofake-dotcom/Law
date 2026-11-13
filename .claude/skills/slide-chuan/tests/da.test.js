@@ -208,3 +208,10 @@ test("quote + cutout: ảnh tách nền được vẽ, mép bị cắt (alpha ch
     const d2 = deck({ da: "ho-so" }, [{ type: "cover", title: "Bìa" }, { type: t, num: 1, title: "Tiêu đề", cutout: "images/chia-khoa-nha_cut.png" }]);
     assert.match(dungHtml(d2, { deckDir: dir, mepCat: mep }).html.split("<section").slice(2).join(""), /<img class="qcut cut-l"/, `${t}: cutout không được vẽ`); }
 });
+
+test("meta.logo (đã hướng dẫn trong layouts.md) được vẽ ở bìa, chỉ ở bìa", () => {
+  const d = deck({ da: "ho-so", logo: "logo.jpeg" }, [{ type: "cover", title: "Bìa" }, { type: "cards", title: "Ba thẻ", items: [{ name: "A" }] }]);
+  const secs = dungHtml(d, { deckDir: path.join(__dirname, "..", "examples") }).html.split("<section").slice(1);
+  assert.match(secs[0], /<img class="cv-logo" src="[^"]*logo\.jpeg"/);
+  assert.ok(!/cv-logo/.test(secs[1]));
+});

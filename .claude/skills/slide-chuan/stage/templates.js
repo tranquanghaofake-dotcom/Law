@@ -300,6 +300,8 @@ function render(slide, deck, ctx, i, n) {
   // cutout ở statement / section / end: SCHEMA cho phép, có cutout thì da tắt hình lớn — trước đây không vẽ gì cả → slide trống
   if (ctx && typeof slide.cutout === "string" && ["statement", "section", "end"].includes(slide.type)) { const cu = ctx.img(slide.cutout);
     if (cu && !out.html.includes(cu)) { out.cls += " q-cut"; out.html = `<img class="qcut cut-${(ctx.mepCat && ctx.mepCat(slide.cutout)) || "b"}" src="${cu}" alt="${esc(slide.cutoutAlt || "")}" ${inn("pop")}>` + out.html; } }
+  // meta.logo (logo trường / đơn vị, layouts.md) chỉ ở bìa, góc trên phải — từng được hướng dẫn mà không mẫu nào vẽ
+  if (slide.type === "cover" && ctx && deck.meta && typeof deck.meta.logo === "string") { const lg = ctx.img(deck.meta.logo); if (lg) out.html += `<img class="cv-logo" src="${lg}" alt="Logo">`; }
   out.html = gopStyle(out.html);
   return { html: wrap(out, slide, deck, i, n), generic: !fn };
 }

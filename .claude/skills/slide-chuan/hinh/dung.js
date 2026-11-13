@@ -157,9 +157,11 @@ const kiemTran = async (page) => [...(await kiemTranCu(page)), ...(await kiemGhi
 async function dung({ deckPath, outPath, mau, chuyen, soat = false, nhungFont = true, htmlOnly = false, strict = false, titles = false }) {
   deckPath = path.resolve(deckPath); const deckDir = path.dirname(deckPath), name = path.basename(deckPath, ".json");
   outPath = path.resolve(outPath || path.join(deckDir, name + ".pptx"));
-  let deck; try { deck = JSON.parse(fs.readFileSync(deckPath, "utf8")); }
+  let deck, metaDoc = new Set(); try { deck = JSON.parse(fs.readFileSync(deckPath, "utf8")); }
   catch (e) { const er = new Error(e.code === "ENOENT" ? `Không tìm thấy file deck: ${deckPath}` : `Không đọc được ${deckPath} (JSON sai cú pháp?): ${e.message}`); er.code = 2; throw er; }
   if (titles) { console.log(KND.machTieuDe(deck)); return { titles: true }; }
+  const metaGoc = deck.meta && typeof deck.meta === "object" ? deck.meta : null;
+  if (metaGoc) deck = { ...deck, meta: new Proxy(metaGoc, { get(t, k, r) { if (typeof k === "string") metaDoc.add(k); return Reflect.get(t, k, r); } }) };   // theo dõi khoá meta được đọc (kiểm + dựng)
   // kiểm nội dung (chuyển từ tầng Office cũ): lỗi cấu trúc / ảnh không có → dừng trước khi dựng
   const nd = await KND.kiemNoiDung(deck, { deckDir, extraTypes: [...canh.TYPES, ...bc.TYPES, ...qt.TYPES, ...bh.TYPES] });
   if (nd.errors.length) { const e = new Error(`deck.json có ${nd.errors.length} lỗi, chưa dựng:\n  - ${nd.errors.join("\n  - ")}`); e.code = 2; throw e; }
@@ -199,7 +201,10 @@ async function dung({ deckPath, outPath, mau, chuyen, soat = false, nhungFont = 
       if (!dong.length) console.log("✓ Soát chi tiết: chữ thẳng hàng (không lệch 4–10 px), tương phản đạt WCAG trên nền thật, không dòng mồ côi, không nét vẽ cắt qua chữ");
       else { console.log(`ℹ Soát chi tiết: ${dong.length} chỗ (scripts/soat_chi_tiet.js — ↔ lệch 4–10 px: canh lại cho thẳng; ◐ tương phản: đậm chữ hoặc làm yên nền sau chữ; ¶ dòng mồ côi: sửa câu hoặc bề rộng hộp; ✂ nét vẽ cắt qua chữ: dời chữ hoặc dời nét)`); for (const m of dong.slice(0, 15)) console.log(`  ${m}`); if (dong.length > 15) console.log(`  … và ${dong.length - 15} chỗ nữa`); } }
     catch (e) { console.log(`ℹ không chạy được soát chi tiết: ${String(e.message || e).split("\n")[0]}`); } }
-  return { ...r, ...res, htmlPath, outPath };
+  // khoá meta không bước nào đọc (kiểm, dựng, đóng gói PPTX): gõ sai tên hoặc tính năng không có ở tầng hình ảnh
+  const metaBo = metaGoc ? Object.keys(metaGoc).filter((k) => !metaDoc.has(k) && !["author", "$schema", "comment"].includes(k) && !/^[_$]/.test(k)) : [];
+  if (metaBo.length) console.log(`ℹ meta không bước nào đọc: ${metaBo.join(", ")} — gõ sai tên, hoặc tính năng không có ở tầng hình ảnh (references/layouts.md)`);
+  return { ...r, ...res, htmlPath, outPath, metaBo };
 }
 
 module.exports = { dung, dungHtml, kiemTran, tinhMepCat };
