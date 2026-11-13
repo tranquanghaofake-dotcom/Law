@@ -21,6 +21,7 @@ const KND = require("./kiem_noi_dung");
 let canh = { TYPES: [], render: null, css: "", script: "" };
 const bc = require("./bang_chung");
 const qt = require("./hoi_nghi");   // bộ hình "bàn hội nghị quốc tế" (Công pháp quốc tế)
+const bh = require("./so_bhxh");    // bộ hình "bàn hồ sơ BHXH" (bảo hiểm xã hội) — máy quay trên mặt bàn
 try { canh = require("./canh"); } catch (e) { if (e.code !== "MODULE_NOT_FOUND" || !/canh/.test(e.message)) throw e; }
 
 const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -57,6 +58,7 @@ function dungHtml(deck, { deckDir = process.cwd(), mau, chuyen } = {}) {
   let sauSach = -1;                                                        // vị trí slide đầu tiên sau cảnh mở sách (cuốn sách thu về góc thành nút Mục lục)
   src.forEach((s, i) => {
     const note = s.notes || parts[i] || "";
+    if (bh.TYPES.includes(s.type)) { const secs = bh.render(s, deck, ctx, { i, n, st }); secs.forEach((sec) => out.push({ ...sec, notes: note, src: i })); st.prev = new Set(); return; }
     if (qt.TYPES.includes(s.type)) { const secs = qt.render(s, deck, ctx, { i, n, st }); secs.forEach((sec) => out.push({ ...sec, notes: note, src: i })); st.prev = new Set(); return; }
     if (bc.TYPES.includes(s.type)) { const secs = bc.render(s, deck, ctx, { i, n, st }); secs.forEach((sec) => out.push({ ...sec, notes: note, src: i })); st.prev = new Set(); return; }
     if (canh.TYPES.includes(s.type)) { const secs = canh.render(s, deck, ctx, { i, n, st }); secs.forEach((sec, k) => out.push({ ...sec, html: daTen ? DA.khungSlide(sec.html, daTen) : sec.html, notes: sec.notes ?? (k === 0 ? note : ""), src: i })); if (s.type === "book") sauSach = out.length; return; }
@@ -83,7 +85,7 @@ function dungHtml(deck, { deckDir = process.cwd(), mau, chuyen } = {}) {
 ${tomau(css)}
 /* bản PowerPoint: bỏ lớp hạt in phủ toàn slide (lớp ảnh và nền phải cùng chất), bỏ chế độ trình chiếu trong trình duyệt */
 .s::after { display: none !important; }
-${tomau((canh.css || "") + (bc.css || "") + (qt.css || ""))}
+${tomau((canh.css || "") + (bc.css || "") + (qt.css || "") + (bh.css || ""))}
 ${daTen ? DA.daCss(daTen) : ""}
 </style></head>
 <body>
@@ -122,7 +124,7 @@ async function dung({ deckPath, outPath, mau, chuyen, soat = false, nhungFont = 
   catch (e) { const er = new Error(e.code === "ENOENT" ? `Không tìm thấy file deck: ${deckPath}` : `Không đọc được ${deckPath} (JSON sai cú pháp?): ${e.message}`); er.code = 2; throw er; }
   if (titles) { console.log(KND.machTieuDe(deck)); return { titles: true }; }
   // kiểm nội dung (chuyển từ tầng Office cũ): lỗi cấu trúc / ảnh không có → dừng trước khi dựng
-  const nd = await KND.kiemNoiDung(deck, { deckDir, extraTypes: [...canh.TYPES, ...bc.TYPES, ...qt.TYPES] });
+  const nd = await KND.kiemNoiDung(deck, { deckDir, extraTypes: [...canh.TYPES, ...bc.TYPES, ...qt.TYPES, ...bh.TYPES] });
   if (nd.errors.length) { const e = new Error(`deck.json có ${nd.errors.length} lỗi, chưa dựng:\n  - ${nd.errors.join("\n  - ")}`); e.code = 2; throw e; }
   const r = dungHtml(deck, { deckDir, mau, chuyen });
   console.log(`✓ ${deck.slides.length} slide trong deck.json → ${r.n} slide PowerPoint · ${r.da.ten ? `da "${r.da.ten}" (${DA.DA[r.da.ten].mon}) — ${r.da.lyDo}` : `nền chung, bảng màu ${r.mau}`} · chuyển cảnh ${r.chuyen}`);

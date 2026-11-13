@@ -1,6 +1,6 @@
 // Kiểm "bản đồ hỗ trợ" của tầng hình ảnh — phần BỔ SUNG cho hinh/kiem.js (kiem.js lo: `art`, `meta.kit`, deck toàn chữ, Bước 0).
 // Ở đây: chart kind lạ, meta không còn tác dụng, `photo` sai type, `emoji` sai type, deck ít cảnh.
-const CANH = [...require("./bang_chung").TYPES, ...require("./hoi_nghi").TYPES, "book", "bigq", "picks", "lawquote", "tiles", "strip", "cases", "chain", "quizgo", "recap", "toc"];
+const CANH = [...require("./bang_chung").TYPES, ...require("./hoi_nghi").TYPES, ...require("./so_bhxh").TYPES, "book", "bigq", "picks", "lawquote", "tiles", "strip", "cases", "chain", "quizgo", "recap", "toc"];
 const CHART_OK = require("../stage/bieu_do").KINDS;   // đủ 10 kind (stage/bieu_do.js)
 const ANH_OK = ["cover", "agenda", "section", "hero", "closing", "end", "photo", "split", "photostats", "frame", "headline", "lens", "collage", "beforeafter", "photostrip", "gallery", "mosaic", "panelrows"];
 // meta không còn tác dụng (của tầng Office cũ, đã bỏ 11/2026); meta.kit / meta.style do kiem.js báo (đọc thành da)

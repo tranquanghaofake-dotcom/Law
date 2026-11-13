@@ -9,7 +9,7 @@ const ART_TYPES = new Set(["panelrows", "lawquote", "bctrich", "cover", "section
 // trường làm ra hình thật trong tầng hình ảnh
 const VISUAL_KEYS = new Set(["photo", "cutout", "emoji", "emoji2", "icon"]);
 // type tự mang hình, không cần trường riêng (mở sách luôn có vật trên bàn)
-const BO_HINH_TYPES = new Set([...require("./bang_chung").TYPES, ...require("./hoi_nghi").TYPES]);   // bộ hình riêng theo môn (references/canh.md mục 8–9)
+const BO_HINH_TYPES = new Set([...require("./bang_chung").TYPES, ...require("./hoi_nghi").TYPES, ...require("./so_bhxh").TYPES]);   // bộ hình riêng theo môn (references/canh.md mục 8–9)
 const INTRINSIC = new Set(["book", ...BO_HINH_TYPES]);   // book: vật trên bàn; bc*: bộ hình "bảng bằng chứng" (hinh/bang_chung.js)
 
 function coHinh(o) {

@@ -167,7 +167,9 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
 
   // 1) ảnh từng slide nguyên vẹn (để soát và làm ảnh thu nhỏ cho slide mục lục)
   const full = [];
-  for (let i = 0; i < secs.length; i++) { const p = path.join(work, `h-${String(i + 1).padStart(2, "0")}.jpg`); await secs[i].screenshot({ path: p, type: "jpeg", quality: 82 }); full.push(p); }
+  // chờ Chromium vẽ xong slide (bộ lọc SVG nặng như vân giấy vẽ chậm — chụp sớm thì mất từng ô hình chữ nhật, tờ soát báo lệch giả)
+  const choVe = (i) => page.evaluate((i) => new Promise((ok) => { document.querySelectorAll("section.s")[i].scrollIntoView(); requestAnimationFrame(() => requestAnimationFrame(() => setTimeout(ok, 250))); }), i);
+  for (let i = 0; i < secs.length; i++) { const p = path.join(work, `h-${String(i + 1).padStart(2, "0")}.jpg`); await choVe(i); await secs[i].screenshot({ path: p, type: "jpeg", quality: 82 }); full.push(p); }
   const ids = await page.$$eval("section.s", (ss) => ss.map((s, i) => s.getAttribute("data-id") || `s${i + 1}`));
   await page.evaluate(({ ids, full }) => { document.querySelectorAll("img[data-thumb]").forEach((im) => { const k = ids.indexOf(im.getAttribute("data-thumb")); if (k >= 0) im.src = "file://" + full[k]; }); return Promise.all([...document.images].map((im) => im.decode().catch(() => 0))); }, { ids, full });
 
@@ -220,7 +222,7 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
       await page.evaluate(({ k, flat }) => { const el = document.querySelector(`[data-li="${k}"]`); document.body.classList.remove("solo"); el.classList.remove("solo-on");
         if (flat) { el.style.removeProperty("rotate"); if (el.dataset.keepRot) el.style.rotate = el.dataset.keepRot; delete el.dataset.keepRot; }
         if (el.dataset.keepTr != null) { el.style.removeProperty("translate"); if (el.dataset.keepTr) el.style.translate = el.dataset.keepTr; delete el.dataset.keepTr; } }, { k: it.key, flat });
-      it.file = await canon(buf, "png", (b) => (b.length > 60e3 ? sharp(b).png({ compressionLevel: 9, effort: 8 }).toBuffer() : b));
+      it.file = await canon(buf, "png", async (b) => (b.length > 600e3 ? (async () => { const w = (await sharp(b).metadata()).width || 0; /* lớp lớn có vân giấy, nhiễu hạt: hạ về ~1,4× cỡ trên slide (đủ nét khi chiếu) + nén bảng màu */ return sharp(b).resize(w > 2000 ? { width: Math.round(w * 0.7) } : undefined).png({ palette: true, quality: 92, effort: 8, dither: 0.6 }).toBuffer(); })() : b.length > 60e3 ? sharp(b).png({ compressionLevel: 9, effort: 8 }).toBuffer() : b));
       if (flat && it.cx != null) { it.x = it.cx - it.w / 2; it.y = it.cy - it.h / 2; }   // PowerPoint xoay quanh tâm ảnh: đặt ảnh thẳng sao cho tâm trùng tâm khung nghiêng
     }
     // nguồn của cửa sổ soi: chụp nguyên phần tử nguồn (có cả chữ), làm phẳng trên màu nền của cửa sổ, lưu JPEG
