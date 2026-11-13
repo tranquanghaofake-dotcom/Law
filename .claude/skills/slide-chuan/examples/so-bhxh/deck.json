@@ -897,7 +897,8 @@
     "3.4.3",
     "KL"
    ],
-   "notes": "Đây là quan điểm của nhóm, không phải quy định hiện hành. Một, điểm đ khoản 1 Điều 70 vẫn cho người có thời gian đóng trước 01/7/2025 rút toàn bộ sau 12 tháng không đóng. Nhóm đề xuất chỉ cho rút tối đa 50% thời gian đóng, phần còn lại bảo lưu — đây cũng là phương án hai từng được đưa ra khi soạn thảo luật. Hai, Điều 40 và 41 xử lý chậm đóng, trốn đóng bằng truy thu kèm 0,03% mỗi ngày, xử phạt, và Điều 35 cho phép công khai đơn vị nợ; nhưng luật chưa có cơ chế để người lao động vẫn được giải quyết ốm đau, thai sản trong lúc doanh nghiệp nợ. Nhóm đề xuất cơ quan bảo hiểm xã hội giải quyết trước rồi truy thu — cần kiểm thêm nghị định hướng dẫn trước khi khẳng định. Ba, điểm m khoản 1 Điều 2 đưa chủ hộ kinh doanh có đăng ký vào diện nhưng 'theo quy định của Chính phủ'; đến tháng 2/2026 mới khoảng 36.000 chủ hộ tham gia (Bộ Nội vụ, dẫn theo Báo Người Lao Động 24/6/2026), nên cần lộ trình rõ theo doanh thu và hỗ trợ mức đóng giai đoạn đầu."
+   "notes": "Đây là quan điểm của nhóm, không phải quy định hiện hành. Một, điểm đ khoản 1 Điều 70 vẫn cho người có thời gian đóng trước 01/7/2025 rút toàn bộ sau 12 tháng không đóng. Nhóm đề xuất chỉ cho rút tối đa 50% thời gian đóng, phần còn lại bảo lưu — đây cũng là phương án hai từng được đưa ra khi soạn thảo luật. Hai, Điều 40 và 41 xử lý chậm đóng, trốn đóng bằng truy thu kèm 0,03% mỗi ngày, xử phạt, và Điều 35 cho phép công khai đơn vị nợ; nhưng luật chưa có cơ chế để người lao động vẫn được giải quyết ốm đau, thai sản trong lúc doanh nghiệp nợ. Nhóm đề xuất cơ quan bảo hiểm xã hội giải quyết trước rồi truy thu — cần kiểm thêm nghị định hướng dẫn trước khi khẳng định. Ba, điểm m khoản 1 Điều 2 đưa chủ hộ kinh doanh có đăng ký vào diện nhưng 'theo quy định của Chính phủ'; đến tháng 2/2026 mới khoảng 36.000 chủ hộ tham gia (Bộ Nội vụ, dẫn theo Báo Người Lao Động 24/6/2026), nên cần lộ trình rõ theo doanh thu và hỗ trợ mức đóng giai đoạn đầu.",
+   "id": "kien-nghi"
   },
   {
    "type": "bhhoi",
@@ -981,7 +982,7 @@
     {
      "n": "3",
      "text": "kiến nghị gắn với điều khoản",
-     "go": "p3"
+     "go": "kien-nghi"
     }
    ],
    "basis": "Luật BHXH số 41/2024/QH15 (hiện hành từ 01/7/2025); Luật An toàn, vệ sinh lao động số 84/2015/QH13. Thông tin pháp luật chung, không phải tư vấn.",
