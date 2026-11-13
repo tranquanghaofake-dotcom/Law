@@ -14,9 +14,9 @@
   },
   {
    "type": "match",
-   "kicker": "Điều 117 ↔ Điều 123–129 BLDS 2015",
+   "kicker": "Điều 117 ↔ Điều 123–129",
    "title": "Mỗi căn cứ vô hiệu là [mặt trái] của một điều kiện",
-   "colL": "Điều kiện có hiệu lực (Điều 117)",
+   "colL": "Điều kiện có hiệu lực",
    "colR": "Căn cứ vô hiệu",
    "pairs": [
     {
@@ -38,11 +38,11 @@
     {
      "left": "Hình thức (khi luật quy định)",
      "right": "Điều 129 · Vi phạm hình thức",
-     "note": "Có ngoại lệ đã thực hiện 2/3 nghĩa vụ"
+     "note": "Trừ khi đã thực hiện 2/3 nghĩa vụ"
     }
    ],
    "focus": 4,
-   "note": "Bộ luật Dân sự 91/2015/QH13 — kiểm lại nguyên văn trước khi dùng",
+   "note": "Bộ luật Dân sự 91/2015/QH13 — đối chiếu nguyên văn",
    "notes": "match: hai hàng cùng vế trái gộp một ô."
   },
   {
@@ -50,7 +50,7 @@
    "kicker": "Bước ngoặt",
    "lines": [
     "Có giấy chứng nhận",
-    "mà [chưa từng]",
+    "mà chưa từng",
     "[được vào nhà]"
    ],
    "sub": "Ảnh bối cảnh tràn khung, một câu khẳng định duy nhất.",
@@ -342,7 +342,7 @@
    "type": "captable",
    "kicker": "Nghị quyết cần bao nhiêu phiếu?",
    "title": "Cổ đông A [một mình] thông qua được nghị quyết thường",
-   "company": "Công ty cổ phần X — mọi cổ đông đều dự họp và biểu quyết",
+   "company": "Công ty X — mọi cổ đông dự họp",
    "holders": [
     {
      "name": "Cổ đông A",
@@ -369,7 +369,7 @@
      "label": "Từ 65%: nội dung ở khoản 1"
     }
    ],
-   "note": "Khoản 1, 2 Điều 148 Luật Doanh nghiệp 59/2020/QH14 — tỉ lệ tính trên phiếu của cổ đông dự họp và biểu quyết; Điều lệ có thể quy định tỉ lệ cụ thể",
+   "note": "Khoản 1, 2 Điều 148 Luật Doanh nghiệp 59/2020/QH14; tỉ lệ cụ thể do Điều lệ quy định",
    "notes": "captable."
   },
   {
