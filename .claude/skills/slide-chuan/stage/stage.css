@@ -23,7 +23,7 @@ html, body { background: #05070d; }
 /* thanh trên: tên bài, số trang, vạch tiến độ */
 .prog { position: absolute; left: 0; top: 0; height: 10px; background: var(--hl); z-index: 45; }
 .bar { position: absolute; left: 110px; right: 110px; top: 46px; display: flex; justify-content: space-between; align-items: center; font: 600 22px/1 var(--fb); color: var(--mut); z-index: 45; }
-.bar .cnt { font: 400 30px/1 var(--fd); color: var(--fg); letter-spacing: .03em; } .bar .cnt small { font-size: 22px; color: var(--mut); }
+.bar .cnt { font: 400 30px/1 var(--fd); color: var(--fg); letter-spacing: .03em; } .bar .cnt small { font-size: 22px; color: inherit; }   /* "/ 20" phân cấp bằng CỠ (22 < 30), cùng màu với số trang (da bc / qt đặt màu sáng cho .cnt): Anton 22 px màu xám chỉ đo được 4,4 : 1 trên giấy có hoạ tiết */
 
 .k { display: inline-flex; align-items: center; gap: 16px; font: 700 27px/1.2 var(--fb); color: var(--hl); margin-bottom: 16px; }
 .k::before { content: ""; width: 40px; height: 9px; background: currentColor; flex: none; }
