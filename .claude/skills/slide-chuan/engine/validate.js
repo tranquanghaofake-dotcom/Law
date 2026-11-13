@@ -647,6 +647,16 @@ function validate(deck, { extraTypes = [] } = {}) {
     deck.slides.forEach((sl, i) => { if (!isObj(sl)) return;
       for (const m of chu(sl).matchAll(/\bslide\s+(\d+)(?:\s*[–-]\s*(\d+))?/gi)) for (const v of [m[1], m[2]].filter(Boolean).map(Number))
         if (v < 1 || v > M) warnings.push(`Slide ${i + 1} (${sl.type}): nhắc "${m[0]}" nhưng deck chỉ có ${M} slide — sửa số sau khi thêm / bớt slide`); }); }
+  // CĂN CỨ SỐ LIỆU: một khối ghi "Số liệu: slide N" (hoặc N–M) kèm con số → con số đó phải có trên slide N…M (chữ hoặc ghi chú)
+  // — "mỗi hạn chế phải dựa trên số liệu đã trình bày"; gợi ý, không chặn (số có thể được làm tròn khác cách ghi)
+  { const txt = (v) => (typeof v === "string" ? v + " " : Array.isArray(v) ? v.map(txt).join(" ") : isObj(v) ? Object.values(v).map(txt).join(" ") : typeof v === "number" ? v + " " : "");
+    const so = (t) => [...t.replace(/(Điều|khoản|điểm|Đ\.|slide)\s*\d+([–-]\d+)?/gi, "").matchAll(/(?<![\d\p{L}])\d+(?:[.,]\d+)*(?:\s?%)?/gu)].map((m) => m[0].replace(/\s/g, "")).filter((x) => !/^(19|20)\d\d$/.test(x) && x.replace(/[^\d]/g, "").length >= 2);
+    const di = (o, i) => { if (Array.isArray(o)) return o.forEach((x) => di(x, i)); if (!isObj(o)) return;
+      const t = txt(o), m = t.match(/Số liệu:\s*slide\s+(\d+)(?:\s*[–-]\s*(\d+))?/i);
+      if (m && !Object.values(o).some((v) => isObj(v) || Array.isArray(v))) { const a = +m[1], b = +(m[2] || m[1]), noi = deck.slides.slice(a - 1, b).map((x) => txt(x)).join(" ").replace(/\s/g, "");
+        for (const x of so(t)) if (noi && !noi.includes(x)) hints.push(`Slide ${i + 1} (${deck.slides[i].type}): "${x}" dẫn "Số liệu: slide ${m[1]}${m[2] ? "–" + m[2] : ""}" nhưng không thấy trên slide đó — kiểm lại số hoặc số slide`); }
+      else Object.values(o).forEach((v) => di(v, i)); };
+    deck.slides.forEach((sl, i) => { if (isObj(sl)) Object.entries(sl).forEach(([k, v]) => k !== "notes" && di(v, i)); }); }
   return { errors, warnings, hints };
 }
 

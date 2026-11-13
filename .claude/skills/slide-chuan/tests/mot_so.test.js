@@ -21,3 +21,9 @@ test("\"slide N\" trong chữ phải trỏ tới slide có thật (thêm / bớt
   assert.strictEqual(w([cover, { type: "cards", title: "Ba hạn chế", items: [{ name: "A", desc: "Số liệu: slide 9" }] }]).length, 1);
   assert.strictEqual(w([cover, { type: "cards", title: "Ba hạn chế", items: [{ name: "A", desc: "Số liệu: slide 1–2" }] }]).length, 0);
 });
+
+test("căn cứ số liệu: con số dẫn \"Số liệu: slide N\" phải có trên slide N (gợi ý, không chặn)", () => {
+  const goiY = (so) => validate({ meta: {}, slides: [cover, { type: "stats", title: "Nợ đóng tăng", items: [{ label: "Nợ", value: "3,4%" }] },
+    { type: "cards", title: "Ba hạn chế", items: [{ name: "Nợ đóng", desc: `${so} số phải thu (2025) · Số liệu: slide 2` }] }] }).hints.filter((x) => /Số liệu: slide/.test(x));
+  assert.strictEqual(goiY("3,4%").length, 0); const h = goiY("9,9%"); assert.strictEqual(h.length, 1); assert.match(h[0], /9,9%/);
+});
