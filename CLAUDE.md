@@ -20,12 +20,19 @@ Chromium trong container cloud: `PW_CHROMIUM=/opt/pw-browsers/chromium`. Build n
 ## Luật làm việc
 - **Ngôn ngữ**: mọi văn bản, commit, comment, UI bằng tiếng Việt **có dấu**; giữ thuật ngữ tiếng Anh khi cần.
 - **Phạm vi**: 1 phiên = 1 issue/1 nhánh (`feat/ fix/ content/ docs/ chore/`). Việc mới ngoài phạm vi → ghi lại, không làm.
-- **Thời gian**: checkpoint commit ≤ 45 phút; **quá 2 giờ phải dừng và báo cáo**. Không chạy e2e local trừ khi sửa luồng UI. Không fan-out nhiều agent cho việc < 1 ngày.
+- **Thời gian**: checkpoint commit ≤ 45 phút; **quá 2 giờ phải dừng và báo cáo**. Không chạy e2e local trừ khi sửa luồng UI.
 - **Chất lượng**: TDD cho engine/store/content; `npm run ci` xanh trước khi push; đổi layout thì chụp `npm run shots` 390 px + 1280 px.
 - **Git**: không push thẳng `main`; mở PR theo template; không tạo nhánh/PR ngoài việc đang làm; không xoá file của người dùng; không tạo bản sao v2/final — sửa tại chỗ.
 - **Câu hỏi pháp luật**: mọi câu hỏi về pháp luật Việt Nam (kể cả câu ngắn, không phải đề thi) → gọi skill `vn-legal-exam-analysis` trước khi trả lời và làm theo nó trong cùng lượt; tra điều luật trong `packages/content/data/laws/` trước khi trích số điều.
 - **Nội dung luật**: `definition` nguyên văn, `source` + link vbpl.vn, `checked` ngày đối chiếu; ghi `data/SOURCES.md`. Đây là thông tin pháp luật chung, không phải tư vấn.
 - **Không làm**: đổi stack, thêm thư viện UI, thêm ESLint/Prettier, thêm framework test khác, đổi bảng màu "Văn Miếu" nếu spec không yêu cầu.
 
+## Agent, model, cache (tiết kiệm token)
+- **Mặc định tự làm.** Subagent mới không thấy hội thoại và không đọc được cache của phiên chính (cache tách theo model và theo prefix); lợi ích duy nhất là giữ output dài (quét nhiều file, log test, tài liệu web) ngoài context chính. Đọc 1–3 file đã biết đường dẫn → tự đọc. Không fan-out nhiều agent cho việc < 1 ngày.
+- **Gọi Agent thì luôn ghi `model`** — bỏ trống là chạy bằng model phiên chính: `haiku` tìm/đọc/tóm tắt file, việc cơ học (Explore trên gói subscription mặc định chạy Opus → gọi kèm `model: "haiku"`); `sonnet` viết code theo brief rõ; `opus` review/soát lỗi độc lập. `fable` và fork (luôn chạy bằng model phiên chính) chỉ dùng khi Hào yêu cầu.
+- **Việc lớn, nhiều task độc lập** → đề xuất Hào gõ `/dieuphoi` (đội sẵn: dp-cohoc haiku · dp-tho sonnet · dp-review opus), không tự dựng đội.
+- **Không đề xuất đổi model giữa phiên** (mỗi model một cache: đổi là đọc lại toàn bộ hội thoại không cache). Model phiên không hợp việc → nói 1 dòng để Hào chọn cho phiên sau.
+
 ## Phong cách trả lời cho Hào
 Thẳng, ngắn, nói rõ khi giả định của Hào sai; nêu phân biệt quan trọng về thực hành kể cả khi không được hỏi; không đồng ý mặc định.
+Báo cáo cuối lượt ≤ 5 dòng: **Đã xong** (kèm bằng chứng: lệnh nào xanh, commit nào) / **Còn** (việc triển khai tiếp theo) / **Việc Hào cần làm** (nếu có). Không dán diff, log, nội dung file dài ra màn hình — ghi đường dẫn. Giữa chừng: 1 câu khi bắt đầu bước lớn, đổi hướng hoặc gặp vướng.
