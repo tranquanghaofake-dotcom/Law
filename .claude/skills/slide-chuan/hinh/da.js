@@ -1,6 +1,6 @@
 // DA THEO MÔN — chất liệu của một môn phủ lên MỌI type thường của tầng hình ảnh (65 type ở stage/templates.js).
 // Spec: docs/specs/2026-11-13-slide-chuan-da-theo-mon-design.md (repo Law). Chuyển từ "world" và "bộ chất liệu" của tầng lưới Office cũ
-// (engine/kits.js, engine/build.js: worldBg, worldFrame, box) sang HTML/CSS: thẻ là lớp ảnh nên vỏ thẻ chỉ cần CSS.
+// (engine/kits.js, engine/build.js của tầng Office cũ, đã bỏ: worldBg, worldFrame, box) sang HTML/CSS: thẻ là lớp ảnh nên vỏ thẻ chỉ cần CSS.
 //
 // Một da = màu (mực, nhấn, trang, viền, xấu, tốt, vàng) + nền trang + khung slide + vỏ thẻ + nhãn + ô số + thanh tiến độ
 //          + đồ vật tiền cảnh (PROPS) + hình minh hoạ lớn cho bìa / chương / kết (hinh/art.js) + kiểu hiện ý (hiệu ứng vào).

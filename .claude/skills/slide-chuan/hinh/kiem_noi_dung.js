@@ -57,7 +57,7 @@ const rongToiThieu = (sl, ph) => (ph._cut ? 600 : sl.type === "cards" ? 700
  * extraTypes: kiểu của bộ cảnh / bộ hình (không có trong engine/validate.js SCHEMA).
  */
 async function kiemNoiDung(deck, { deckDir = process.cwd(), extraTypes = [] } = {}) {
-  const v = validate(deck, null, { extraTypes });
+  const v = validate(deck, { extraTypes });
   const errors = [...v.errors], warnings = [...v.warnings], hints = [...(v.hints || [])], info = [], credits = [];
   if (errors.length) return { errors, warnings, hints, info, credits, icons: [], limits: [] };
   const meta = deck.meta || {}, slides = deck.slides;

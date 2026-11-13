@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-"""Kiểm "NHÌN MỜ": xoá hết chữ, làm mờ ảnh slide — còn đoán được đề tài không? (tiêu chí world, 11/2026)
+"""Kiểm "NHÌN MỜ": xoá hết chữ, làm mờ ảnh slide — còn đoán được đề tài không? (tiêu chí "che chữ", 11/2026)
 
 Dùng:
   python3 scripts/nhin_mo.py deck.pptx [out.jpg]
       → ảnh tổng các slide đã xoá chữ + làm mờ.
-  python3 scripts/nhin_mo.py --worlds deck.json [out.jpg] [--slides 2,3,5] [--kits so-bhxh,hoa-don,...]
-      → dựng CÙNG deck ở mọi world (meta.kit thay lần lượt), mỗi world một hàng, rồi in độ khác nhau
-        giữa các world (0–100, trung bình chênh lệch điểm ảnh của ảnh mờ). Hai world < 6 điểm = khó phân biệt (điểm = khác màu + khác HÌNH sau khi bỏ nền phẳng).
-Cần LibreOffice + pdftoppm + Pillow (như scripts/render.py)."""
+  python3 scripts/nhin_mo.py --da deck.json [out.jpg] [--slides 2,3,5] [--ds so-bhxh,hoa-don,...]
+      → dựng CÙNG deck ở nhiều da (meta.da thay lần lượt, bằng hinh/dung.js), mỗi da một hàng, rồi in độ khác nhau
+        giữa các da (0–100, trung bình chênh lệch điểm ảnh của ảnh mờ). Hai da < 6 điểm = khó phân biệt (điểm = khác màu + khác HÌNH sau khi bỏ nền phẳng).
+        (--worlds / --kits: tên cũ, vẫn nhận.)
+Cần LibreOffice + pdftoppm + Pillow; --da cần thêm Chromium (như hinh/dung.js)."""
 import sys, os, re, json, shutil, subprocess, tempfile, zipfile, glob
 from PIL import Image, ImageFilter, ImageChops, ImageStat, ImageDraw
 
@@ -55,28 +56,29 @@ def diff(a, b):
 
 def main(argv):
     if not argv: sys.exit(__doc__)
-    if argv[0] != "--worlds":
+    if argv[0] not in ("--da", "--worlds"):
         src = os.path.abspath(argv[0]); out = argv[1] if len(argv) > 1 else os.path.splitext(src)[0] + "_nhinmo.jpg"
         with tempfile.TemporaryDirectory() as t: ims = squint(src, t)
         print(sheet([ims], [os.path.basename(src)[:20]], out)); return
-    deck = json.load(open(argv[1], encoding="utf-8")); out = next((a for a in argv[2:] if a.endswith(".jpg")), os.path.splitext(argv[1])[0] + "_worlds.jpg")
+    deck = json.load(open(argv[1], encoding="utf-8")); out = next((a for a in argv[2:] if a.endswith(".jpg")), os.path.splitext(argv[1])[0] + "_da.jpg")
     opt = dict(zip(argv[2::1], argv[3::1]))
     sys.path.insert(0, ROOT)
-    kits = opt.get("--kits", "").split(",") if opt.get("--kits") else json.loads(subprocess.run(["node", "-e", "const K=require('./engine/kits');console.log(JSON.stringify(Object.keys(K.KITS).filter(k=>K.KITS[k].fits)))"], cwd=ROOT, capture_output=True, text=True).stdout)
+    ds = opt.get("--ds") or opt.get("--kits")
+    kits = ds.split(",") if ds else [k for k in json.loads(subprocess.run(["node", "-e", "console.log(JSON.stringify(require('./hinh/da').NAMES))"], cwd=ROOT, capture_output=True, text=True).stdout or "[]") if k not in ("bc", "qt")]
     pick = [int(x) for x in opt["--slides"].split(",")] if opt.get("--slides") else None
     rows, labels = [], []
     deck_dir = os.path.dirname(os.path.abspath(argv[1]))
     for k in kits:
-        d = json.loads(json.dumps(deck)); d.setdefault("meta", {})["kit"] = k
+        d = json.loads(json.dumps(deck)); d.setdefault("meta", {})["da"] = k
         with tempfile.TemporaryDirectory(dir=deck_dir) as t:
             dj = os.path.join(t, "deck.json"); json.dump(d, open(dj, "w", encoding="utf-8"), ensure_ascii=False)
             px = os.path.join(t, "out.pptx")
-            r = subprocess.run(["node", os.path.join(ROOT, "engine", "build.js"), dj, px], capture_output=True, text=True, env=dict(os.environ, SLIDE_CHUAN_NO_PREP="1"))
+            r = subprocess.run(["node", os.path.join(ROOT, "hinh", "dung.js"), dj, px, "--khong-nhung-font"], capture_output=True, text=True, env=dict(os.environ, SLIDE_CHUAN_NO_PREP="1"))
             if not os.path.isfile(px): print(f"✗ {k}: không dựng được\n{r.stdout[-400:]}{r.stderr[-400:]}"); continue
             ims = squint(px, t)
         rows.append([ims[i - 1] for i in pick] if pick else ims); labels.append(k)
     print(sheet(rows, labels, out))
-    print("Độ khác nhau giữa các world khi đã xoá chữ (màu + hình, trung bình theo slide, 0–100; < 6 = khó phân biệt):")
+    print("Độ khác nhau giữa các da khi đã xoá chữ (màu + hình, trung bình theo slide, 0–100; < 6 = khó phân biệt):")
     worst = []
     for a in range(len(rows)):
         for b in range(a + 1, len(rows)):

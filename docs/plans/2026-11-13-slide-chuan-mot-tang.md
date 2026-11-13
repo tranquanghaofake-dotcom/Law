@@ -11,3 +11,9 @@ Người dùng cho phép vượt giới hạn 2 giờ/phiên; vẫn commit check
 | 3 | `hinh/kiem_noi_dung.js`: validate + giới hạn chữ + dàn ý + thời lượng + prep + chính sách ảnh + ghi công + `--titles` trong `dung.js` | Các cảnh báo cũ của tầng Office in ra khi dựng bằng `dung.js` | test chuyển từ tầng Office |
 | 4 | Xoá tầng Office: `engine/build.js`, `measure.js`, `themes.js`, `styles.js`, script Office, test Office; viết lại SKILL.md + references | `grep` không còn `engine/build.js`; `npm test` xanh | `npm test` |
 | 5 | Dựng lại BHXH, hình sự, quốc tế; push; báo cáo | 3 deck `--soat` sạch | `morph_cap.py`, nhìn mờ |
+
+## Tiến độ (13/11/2026)
+- Đợt 0–2: xong (commit 4c7dbb3 → 8d15fe2).
+- Đợt 3: xong — `hinh/kiem_noi_dung.js`, `--titles`, `--strict` dừng mã 3 khi còn ⚠, `_ghi-cong.md`.
+- Đợt 4: xong — xoá `engine/build.js`, `measure.js`, `themes.js`, `styles.js`, `shapes.js`, `kits.js`, `scripts/render.py`, `preview.py`, `check_overflow.py`; test Office soi PPTX bị xoá (test chỉ kiểm thông báo nội dung chuyển sang chạy qua `hinh/dung.js`); SKILL.md và references viết lại cho một tầng; `npm test` 206/206.
+- Đợt 5: đang làm.

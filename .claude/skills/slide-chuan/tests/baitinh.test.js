@@ -7,8 +7,8 @@ const { ROOT, buildDeck, cover } = require("./helpers");
 
 const EX = JSON.parse(fs.readFileSync(path.join(ROOT, "examples", "bai_tinh.json"), "utf8"));
 
-test("examples/bai_tinh.json qua --strict ở cả 3 theme", () => {
-  for (const th of ["teal", "kem", "son"]) {
+test("examples/bai_tinh.json qua --strict", () => {
+  for (const th of ["mặc định"]) {
     const r = buildDeck(EX, ["--strict", "--theme", th]);
     assert.strictEqual(r.code, 0, `theme ${th}:\n${r.all}`);
   }

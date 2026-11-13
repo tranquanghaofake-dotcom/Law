@@ -24,25 +24,16 @@ const SL = {
     points: [{ head: "Từ chối ký", text: "Ví dụ: ghi “không ký vì không đồng ý”" }], notes: "x" } };
 const KIT = { receipt: "hoa-don", account: "sao-ke", captable: "co-cau", record: "bien-ban" };
 
-test("world đợt 2: mỗi khối hình chính dựng --strict trong world của nó và ở theme mặc định; motion tự chạy", async () => {
-  for (const [k, kit] of Object.entries(KIT)) {
-    const r = buildDeck({ meta: { kit, short: "Thử", motion: true }, slides: [cover, SL[k], { type: "end", title: "Cảm ơn", notes: "x" }] }, ["--strict"]);
-    assert.strictEqual(r.code, 0, `${k}/${kit}: ${r.all}`);
-    const x = await xmlOf(r.pptx, 2); assert.ok(x.includes('evt="onBegin"'), `${k}: thiếu motion`);
-    for (const m of x.matchAll(/spTgt spid="(\d+)"/g)) assert.ok(x.includes(`<p:cNvPr id="${m[1]}"`), `${k}: spid ${m[1]} lạc`);
-    const plain = buildDeck({ slides: [cover, SL[k]] }, ["--strict"]); assert.strictEqual(plain.code, 0, `${k} (không world): ${plain.all}`);
-  }
-});
-
-test("world đợt 2: chặn dữ liệu sai; gợi ý world theo đề tài; gợi ý khối hình chính", () => {
+test("khối hình đợt 2: chặn dữ liệu sai; gợi ý da theo đề tài; da lệch đề tài → gợi ý", () => {
   assert.ok(validate({ slides: [cover, Object.assign({}, SL.captable, { holders: [{ name: "A", pct: 70 }, { name: "B", pct: 40 }] })] }).errors.join().includes("holders"));
   assert.ok(validate({ slides: [cover, Object.assign({}, SL.captable, { thresholds: [{ pct: 120, label: "x" }] })] }).errors.join().includes("thresholds[0].pct"));
   assert.ok(validate({ slides: [cover, Object.assign({}, SL.receipt, { items: [{ label: "x", display: "1" }] })] }).errors.join().includes("items"));
   assert.ok(validate({ slides: [cover, Object.assign({}, SL.record, { signs: [{ role: "A", state: "maybe" }] })] }).errors.length);
   assert.ok(validate({ slides: [cover, Object.assign({}, SL.account, { rows: SL.account.rows.map(r => Object.assign({}, r, { focus: true })) })] }).warnings.join().includes("nhiều dòng focus"));
   for (const [kit, short] of [["hoa-don", "Luật Quản lý thuế"], ["sao-ke", "Hợp đồng tín dụng ngân hàng"], ["co-cau", "Cổ đông công ty cổ phần"], ["bien-ban", "Xử phạt vi phạm hành chính"]])
-    assert.match(validate({ meta: { kind: "report", short }, slides: [Object.assign({}, cover, { title: short })] }).hints.join(), new RegExp(`hợp world "${kit}"`), short);
-  assert.match(validate({ meta: { kit: "hoa-don", short: "Thuế" }, slides: [cover] }).hints.join(), /khối hình chính "receipt"/);
+    assert.match(validate({ meta: { kind: "report", short }, slides: [Object.assign({}, cover, { title: short })] }).hints.join(), new RegExp(`hợp da "${kit}"`), short);
+  assert.match(validate({ meta: { da: "hoa-don", short: "Giao thông đường bộ" }, slides: [cover] }).hints.join(), /Da "hoa-don" .* không hợp đề tài/);
+  assert.doesNotMatch(validate({ meta: { da: "hoa-don", short: "Luật Quản lý thuế" }, slides: [cover] }).hints.join(), /không hợp đề tài/);
 });
 
 test("rà soát độc lập: tỉ lệ âm/>100 bị chặn; dấu display khác amount bị chặn; receipt bỏ sub/tax vẫn dựng; thiếu total bị chặn", () => {
@@ -52,13 +43,4 @@ test("rà soát độc lập: tỉ lệ âm/>100 bị chặn; dấu display khá
   const r = buildDeck({ slides: [cover, bare] }, ["--strict"]); assert.strictEqual(r.code, 0, r.all);
   const nt = Object.assign({}, SL.receipt); delete nt.total;
   assert.ok(validate({ slides: [cover, nt] }).errors.join().includes("total"));
-});
-
-test("rà soát độc lập: record có TỪ CHỐI KÝ + cột ý → đúng 1 cú nện; 3 ngưỡng sát nhau không đè; 5 cổ đông không focus đủ tương phản", async () => {
-  const r = buildDeck({ meta: { motion: true }, slides: [cover, SL.record] }, ["--strict"]); assert.strictEqual(r.code, 0, r.all);
-  assert.strictEqual(((await xmlOf(r.pptx, 2)).match(/<p:attrName>ppt_w<\/p:attrName>/g) || []).length, 1);
-  const th = Object.assign({}, SL.captable, { thresholds: [{ pct: 50, label: "> 50%: thường" }, { pct: 51, label: "51%: thử" }, { pct: 52, label: "52%: thử nữa" }] });
-  const t = buildDeck({ slides: [cover, th] }, ["--strict"]); assert.strictEqual(t.code, 0, t.all);
-  for (const kit of [null, "co-cau"]) { const five = Object.assign({}, SL.captable, { holders: [30, 25, 20, 15, 10].map((p, i) => ({ name: "Cổ đông " + "ABCDE"[i], pct: p })) });
-    const f = buildDeck({ meta: kit ? { kit, short: "Thử" } : {}, slides: [cover, five] }, ["--strict"]); assert.strictEqual(f.code, 0, `${kit}: ${f.all}`); }
 });

@@ -1,5 +1,8 @@
 # Lỗi và ngách cải tiến tìm ra khi dựng bài hình sự (12/11/2026)
 
+> **Cập nhật 13/11/2026 — một tầng hình ảnh + da theo môn.** Tầng lưới Office (`engine/build.js`) đã bỏ khỏi skill. Các dòng nhắc tới nó (L3, L6, L10, L11, N2) là lịch sử: L10 nay xử lý bằng da theo môn (`hinh/da.js` — mọi slide mang chất liệu của môn); L6 hết đối tượng vì công cụ kiểm tràn cũ của tầng Office đã bỏ (kiểm tràn bằng `dung.js --soat`).
+
+
 Nguồn: dựng bộ 15 slide "Mấy tuổi thì chịu trách nhiệm hình sự?" (Điều 9, 12 BLHS 2015) bằng tầng hình ảnh, rồi bị người dùng chê "che chữ đi không đoán được slide nói về gì". Mỗi dòng dưới đây có bằng chứng đo được; **Đã sửa** = có code + test (`tests/loi_da_biet.test.js`), **Cảnh báo** = engine nay báo thay vì im lặng, **Còn** = chưa sửa, **Đề xuất** = chưa làm.
 
 ## A. Lỗi kỹ thuật
@@ -11,7 +14,7 @@ Nguồn: dựng bộ 15 slide "Mấy tuổi thì chịu trách nhiệm hình s�
 | L3 | Engine báo `kiểu "lawquote" không tồn tại` — người dùng tưởng gõ sai, thật ra type chỉ có ở tầng hình ảnh | Lỗi exit 2 khi dựng bằng `engine/build.js` | **Đã sửa** | Thông báo nay nói rõ "chỉ có ở tầng hình ảnh" và gợi ý type gần nghĩa (`lawquote → quote`…) |
 | L4 | Tầng hình ảnh **bỏ qua im lặng** `art` (chỉ `panelrows`, `lawquote` đọc) và `meta.kit` | `art: justice` ở `statement`, `art: book` ở `agenda` không vẽ gì; `grep` `stage/templates.js` chỉ một chỗ đọc `art` | **Cảnh báo** | `hinh/kiem.js` in `ℹ trường "art" bị bỏ qua…` và `ℹ meta.kit … không được tầng hình ảnh đọc` |
 | L5 | `lawquote`: cụm nhấn `[ ]` bị xuống dòng thì nét bút vàng chỉ phủ dòng đầu, lệch | Cụm "một trong các điều" nằm ở hai dòng | **Cảnh báo** | `hinh/dung.js` (`kiemTran`) báo sau khi dựng. Cách tránh: cụm ngắn, đặt cuối câu |
-| L6 | `scripts/check_overflow.py` báo `Font dự phòng … Inter` và thoát 1 với mọi PPTX tầng hình ảnh | LibreOffice không đọc font nhúng (Anton, Be Vietnam) | **Đã sửa** | Phát hiện `ppt/fonts/`, in lý do, thoát 0; ép chạy: `SLIDE_CHUAN_FORCE_OVERFLOW=1`. Kiểm tràn của tầng này là `hinh/dung.js --soat` |
+| L6 | công cụ kiểm tràn của tầng Office cũ (`check_overflow.py`, đã bỏ) báo `Font dự phòng … Inter` và thoát 1 với mọi PPTX tầng hình ảnh | LibreOffice không đọc font nhúng (Anton, Be Vietnam) | **Đã sửa** | Phát hiện `ppt/fonts/`, in lý do, thoát 0; ép chạy: `SLIDE_CHUAN_FORCE_OVERFLOW=1`. Kiểm tràn của tầng này là `hinh/dung.js --soat` |
 | L7 | `hinh/dung.js` không nhắc Bước 0 (`prep.json`) | Dựng 15 slide không một dòng nhắc | **Cảnh báo** | `ℹ Bước 0: chưa có / chưa được duyệt prep.json`; tắt bằng `SLIDE_CHUAN_NO_PREP=1` |
 | L8 | Deck 15 slide **không có ảnh / icon / sticker nào** vẫn "xanh" | `deck.json`: 0 `photo`, 0 `emoji`, 0 `icon`; ảnh "nhìn mờ" chỉ còn ô, thanh, số lớn | **Cảnh báo** | `⚠` khi 0 hình (deck ≥ 6 slide), `ℹ` khi < 1/3 slide có hình; kiểm bằng `scripts/nhin_mo.py` |
 | L9 | `quiz` đáp án (`reveal` + `whyNot`) dễ tràn: tiêu đề 2 dòng + `stem` 2 dòng + ô đáp án có dòng `whyNot` | Tràn 22 px → hết sau khi rút `whyNot` còn ≤ ~30 ký tự một dòng | **Còn** | Tầng hình ảnh chỉ báo sau khi dựng; engine báo `> 110 tiếng` nhưng không chạy ở tầng này. Viết `whyNot` ngắn, `stem` ≤ 2 dòng |

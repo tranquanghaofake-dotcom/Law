@@ -24,7 +24,7 @@ function kiemDeck(deck, { deckDir = process.cwd() } = {}) {
 
   // 1. `art` ở type mà tầng hình ảnh không vẽ
   const mat = slides.map((s, i) => [s, i + 1]).filter(([s]) => s.art && !ART_TYPES.has(s.type));
-  if (mat.length) out.push(`ℹ trường "art" bị bỏ qua ở tầng hình ảnh: ${mat.map(([s, i]) => `slide ${i} (${s.type})`).join(", ")} — chỉ ${[...ART_TYPES].join(", ")} đọc "art". Dùng "emoji" / "icon" / "cutout" / "photo", hoặc dựng bằng engine/build.js.`);
+  if (mat.length) out.push(`ℹ trường "art" bị bỏ qua : ${mat.map(([s, i]) => `slide ${i} (${s.type})`).join(", ")} — chỉ ${[...ART_TYPES].join(", ")} đọc "art". Dùng "emoji" / "icon" / "cutout" / "photo".`);
 
   // 2. tên cũ của tầng Office: meta.kit / meta.style nay đổi thành da (hinh/da.js) — vẫn đọc, nhắc đổi tên
   if (deck.meta?.kit && !deck.meta.da) out.push(`ℹ meta.kit "${deck.meta.kit}" là tên cũ — nay đọc thành da${DA.ALIAS[deck.meta.kit] ? ` "${DA.ALIAS[deck.meta.kit]}"` : ""}; ghi "meta": { "da": "${DA.ALIAS[deck.meta.kit] || deck.meta.kit}" }.`);

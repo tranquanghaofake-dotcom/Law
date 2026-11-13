@@ -81,8 +81,7 @@ const SCHEMA = {
   closing: { photo: "s", photoAlt: "s", photoCredit: "s", photoSource: "s", photoStyle: { enum: ["tint", "natural", "bw", "duotone"] }, kicker: "s", title: "s!", answers: ["a", { q: "s!", a: "s!", tone: { enum: ["good", "bad", "muted"] } }], verdict: "s", lessons: ["a", { icon: "icon", head: "s", text: "s!" }], rec: { title: "s", items: ["a", "s!"] }, thanks: "s", art },
 };
 const KINDS = ["lecture", "case", "report"]; // loại bài (meta.kind) — quyết định khung slide, hình mặc định; ghi ở bước 0 (prep.json)
-// id, toc, trans, dur: trường của tầng hình ảnh (hinh/dung.js) — cho phép để cùng một deck.json dựng được ở cả hai tầng
-const HINH_ONLY = { book: "cover", bigq: "statement", picks: "agenda", lawquote: "quote", tiles: "chart", strip: "bignum", cases: "cards", chain: "tree", quizgo: "quiz", recap: "closing", toc: "agenda" };
+// id, toc, trans, dur, emoji…: trường của tầng hình ảnh (hinh/dung.js)
 const COMMON = ["type", "id", "emoji", "emoji2", "emojiPos", "toc", "trans", "dur", "mode", "notes", "covers", "transition", "build", "motion", "takeaway", "pin", "activitySec", "basis", "scopeOk"]; // basis: [số slide] — hạn chế / nhận định dựa trên slide số liệu nào ở phần thực trạng // scopeOk: true — slide được phép nhắc nội dung ngoài phạm vi (meta.scopeOut), vd. bảng tổng đầu tiên; // activitySec: số giây lớp tự làm (exercise / quiz) — cộng vào thời lượng ước tính; // pin: câu / số chính trên tờ giấy ghim (chuỗi hoặc { text, by }) // takeaway: câu chốt của slide → dải "Ghi nhớ" ở đáy, cùng vị trí mọi slide // transition: fade | push | morph | none — riêng slide này // covers: các đề mục của tài liệu mà slide này trình bày (đối chiếu với meta.outline)
 // Số mục tối đa engine hiển thị; vượt thì bị cắt im lặng.
 const CAPS = {
@@ -188,14 +187,14 @@ function clarity(sl, n, warnings) {
   scan(sl, "");
 }
 
-// extraTypes: kiểu của bộ cảnh / bộ hình (hinh/canh.js, bang_chung.js, hoi_nghi.js) — có kiểm riêng ở module đó, ở đây chỉ bỏ qua phần SCHEMA
-function validate(deck, themes, { extraTypes = [] } = {}) {
+// extraTypes: kiểu của bộ cảnh / bộ hình (hinh/canh.js, bang_chung.js, hoi_nghi.js) — ở đây chỉ bỏ qua phần SCHEMA của chúng
+function validate(deck, { extraTypes = [] } = {}) {
   const hints = []; // gợi ý (ℹ) — in ra nhưng không tính vào --strict
   const errors = [], warnings = [];
   const E = (slide, type, path, msg) => errors.push(slide ? `Slide ${slide} (${type}): ${path} — ${msg}` : `${path} — ${msg}`);
   if (!isObj(deck)) return { errors: ["deck.json phải là một đối tượng { ... }"], warnings };
   if (!Array.isArray(deck.slides) || !deck.slides.length) return { errors: ['deck.json thiếu mảng "slides" (cần ít nhất 1 slide)'], warnings };
-  if (deck.theme && themes && !themes[deck.theme]) E(0, "", "theme", `"${deck.theme}" không tồn tại (chọn: ${Object.keys(themes).join(" | ")})`);
+  if (deck.theme != null) warnings.push(`"theme": "${deck.theme}" là trường của tầng Office cũ (đã bỏ 11/2026) — màu theo da (meta.da, hinh/da.js); xoá trường này`);
   if (deck.meta && deck.meta.chromeIcon) { const m = checkIcon(String(deck.meta.chromeIcon)); if (m) E(0, "", "meta.chromeIcon", m); }
   if (deck.meta != null && !isObj(deck.meta)) E(0, "", "meta", "phải là đối tượng {...}");
   if (deck.meta && deck.meta.imagePolicy != null && !["open", "classroom"].includes(deck.meta.imagePolicy)) E(0, "", "meta.imagePolicy", 'chọn "classroom" (mặc định — cho phép ảnh web có ghi nguồn, chỉ chiếu trên lớp) hoặc "open" (chỉ ảnh giấy phép mở — khi đăng công khai, nộp cuộc thi)');
@@ -204,7 +203,9 @@ function validate(deck, themes, { extraTypes = [] } = {}) {
     for (const m of ms) if (!MOTIFS.includes(m)) E(0, "", "meta.motif", `"${m}" không hợp lệ (chọn theo chủ đề: ${MOTIFS.join(" | ")})`); }
   if (deck.meta && deck.meta.motion != null && typeof deck.meta.motion !== "boolean") E(0, "meta", "meta.motion", "chỉ nhận true | false (các ý tự lộ dần khi vào slide)");
   if (deck.meta && deck.meta.thread != null && typeof deck.meta.thread !== "boolean") E(0, "meta", "meta.thread", "chỉ nhận true | false (Morph nối mạch trong chương)");
-  { const KN = require("./kits").NAMES; if (deck.meta && deck.meta.kit != null && ![...KN, "none", "auto"].includes(deck.meta.kit)) E(0, "meta", "meta.kit", `chỉ nhận ${KN.join(" | ")} | none | auto (bộ chất liệu / thế giới: engine/kits.js)`); }
+  { const DA = require("../hinh/da"), ok = [...DA.NAMES, ...Object.keys(DA.ALIAS), "none", "auto"];
+    if (deck.meta && deck.meta.da != null && ![...DA.NAMES, "none"].includes(deck.meta.da)) E(0, "meta", "meta.da", `"${deck.meta.da}" không có — chọn: ${DA.NAMES.join(" | ")} | none (chất liệu theo môn: hinh/da.js)`);
+    if (deck.meta && deck.meta.kit != null && !ok.includes(deck.meta.kit)) E(0, "meta", "meta.kit", `"${deck.meta.kit}" không có (meta.kit là tên cũ của meta.da — chọn: ${DA.NAMES.join(" | ")})`); }
   if (deck.meta && deck.meta.frame != null && !["rect", "arch", "circle", "ogee", "none"].includes(deck.meta.frame)) E(0, "meta", "meta.frame", "chỉ nhận rect | arch | circle | ogee | none (khung ảnh: engine/shapes.js)");
   if (deck.meta && deck.meta.paper != null && typeof deck.meta.paper !== "boolean") E(0, "meta", "meta.paper", "chỉ nhận true | false (nền vân giấy)");
   if (deck.meta && deck.meta.style != null && !["dossier", "cadastral", "portico"].includes(deck.meta.style)) E(0, "meta", "meta.style", "chỉ nhận dossier | cadastral | portico");
@@ -221,7 +222,7 @@ function validate(deck, themes, { extraTypes = [] } = {}) {
     const spec = SCHEMA[sl.type];
     if (!spec && extraTypes.includes(sl.type)) return;
     if (sl.type === "refs") { E(n, "refs", "type", 'kiểu "refs" (slide tài liệu + mã QR) đã bỏ khỏi skill — nguồn ghi trong bản Word đi kèm, không ghi trên slide'); return; }
-    if (!spec) { E(n, sl.type == null ? "?" : sl.type, "type", sl.type == null ? `thiếu "type" (chọn: ${Object.keys(SCHEMA).join(", ")})` : (HINH_ONLY[sl.type] ? `kiểu "${sl.type}" chỉ có ở tầng hình ảnh (node hinh/dung.js), engine/build.js không dựng được — đổi sang "${HINH_ONLY[sl.type]}" (gần nghĩa nhất) hoặc dựng bằng hinh/dung.js` : `kiểu "${sl.type}" không tồn tại (chọn: ${Object.keys(SCHEMA).join(", ")})`)); return; }
+    if (!spec) { E(n, sl.type == null ? "?" : sl.type, "type", sl.type == null ? `thiếu "type" (chọn: ${Object.keys(SCHEMA).join(", ")})` : `kiểu "${sl.type}" không tồn tại (chọn: ${[...Object.keys(SCHEMA), ...extraTypes].join(", ")})`); return; }
     if (sl.mode != null && !["d", "l", "a"].includes(sl.mode)) E(n, sl.type, "mode", `"${sl.mode}" không hợp lệ (d = nền tối, l = nền sáng, a = nền màu nhấn)`);
     walk(sl, spec, "", (p, m) => E(n, sl.type, p, m), true);
     if (sl.source != null) warnings.push(`Slide ${n} (${sl.type}): trường "source" đã bỏ — slide không ghi nguồn (nguồn nằm trong bản Word đi kèm); xoá trường này`);
@@ -597,13 +598,12 @@ function validate(deck, themes, { extraTypes = [] } = {}) {
     const agd = deck.slides.find(sl => isObj(sl) && sl.type === "agenda" && Array.isArray(sl.items));
     if (agd && secs.length >= 2) secs.forEach((sc, j) => { const it = String((agd.items || [])[j] || ""), q = String(sc.title || "").replace(/[\[\]]/g, "").trim();
       if (q && it.replace(/[\[\]]/g, "").trim() !== q) RW(`Mục lục mục ${j + 1} "${it.slice(0, 40)}" khác tiêu đề chương ${sc.num} "${q.slice(0, 40)}" — dùng ĐÚNG câu chữ của chương (chương là câu hỏi thì mục lục là câu hỏi đó; kết luận trả lời theo đúng thứ tự)`); }); }
-  // THẾ GIỚI HÌNH ẢNH: world đang dùng có hợp đề tài không (từ khoá fits của world xuất hiện trong tiêu đề bìa / meta.short / tiêu đề chương)
-  { const KM = require("./kits"), kn = deck.meta && deck.meta.kit && deck.meta.kit !== "auto" ? deck.meta.kit : (KM.AUTO[(deck.meta || {}).kind] || null), K = kn && KM.KITS[kn];
-    const topic = [deck.meta && deck.meta.short, ...deck.slides.filter(sl => isObj(sl) && ["cover", "section"].includes(sl.type)).map(sl => sl.title)].join(" ").toLowerCase();
-    if (K && Array.isArray(K.fits) && topic.trim() && !K.fits.some(f => topic.includes(f))) hints.push(`Bộ chất liệu "${kn}" (${K.label}) có vẻ không hợp đề tài — làm bước 0 "thế giới hình ảnh" (references/the-gioi-hinh-anh.md) rồi chọn world hợp, hoặc thêm world mới`);
-    if (K && K.hero && !deck.slides.some(sl => isObj(sl) && sl.type === K.hero)) hints.push(`World "${kn}" có khối hình chính "${K.hero}" (vật chủ đạo CHỞ dữ liệu) nhưng deck chưa dùng — đặt cho slide số liệu / lập luận chính để người xem nhận ra đề tài ngay cả khi che chữ`);
-    if (REP && (!deck.meta || !deck.meta.kit || deck.meta.kit === "auto")) { const hit = Object.entries(KM.KITS).find(([, k]) => Array.isArray(k.fits) && k.fits.some(f => topic.includes(f)));
-      if (hit) hints.push(`Đề tài có vẻ hợp world "${hit[0]}" (${hit[1].label}) — đặt "meta": { "kit": "${hit[0]}" } để cả deck mang chất của môn, thay vì bộ mặc định theo loại bài`); } }
+  // DA THEO MÔN (hinh/da.js): da đang dùng có hợp đề tài không (từ khoá fits của da có trong tiêu đề bìa / meta.short / tiêu đề chương)
+  { const DA = require("../hinh/da"), m = deck.meta || {}, kn = m.da || (m.kit && (DA.ALIAS[m.kit] || m.kit)), K = kn && DA.DA[kn], CHUNG = ["ho-so", "giay", "kinh"];
+    const topic = [m.short, m.title, ...deck.slides.filter(sl => isObj(sl) && ["cover", "section", "bcbia", "qtbia"].includes(sl.type)).map(sl => sl.title)].join(" ").toLowerCase();
+    if (K && !CHUNG.includes(kn) && !["bc", "qt"].includes(kn) && topic.trim() && !K.fits.some(f => topic.includes(f))) hints.push(`Da "${kn}" (${K.mon}) có vẻ không hợp đề tài — xem lại bước 0 "thế giới hình ảnh" (references/the-gioi-hinh-anh.md) rồi chọn da hợp, hoặc thêm da mới vào hinh/da.js`);
+    if ((!kn || CHUNG.includes(kn)) && topic.trim()) { const hit = Object.entries(DA.DA).find(([k, d]) => !CHUNG.includes(k) && d.fits.some(f => topic.includes(f)));
+      if (hit) hints.push(`Đề tài có vẻ hợp da "${hit[0]}" (${hit[1].mon}) — đặt "meta": { "da": "${hit[0]}" } để cả deck mang chất của môn, thay vì da chung theo loại bài`); } }
   // (2) PHẠM VI: meta.scopeOut = cụm từ ngoài phạm vi bài (vd. "bảo hiểm y tế", "BHYT"); slide được phép nhắc thì ghi "scopeOk": true
   const outs = deck.meta && Array.isArray(deck.meta.scopeOut) ? deck.meta.scopeOut.filter(x => typeof x === "string" && x.trim()) : [];
   if (deck.meta && deck.meta.scopeOut != null && !Array.isArray(deck.meta.scopeOut)) E(0, "", "meta.scopeOut", 'phải là danh sách cụm từ, vd ["bảo hiểm y tế", "BHYT"]');

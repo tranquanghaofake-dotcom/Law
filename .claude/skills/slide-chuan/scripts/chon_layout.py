@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Gợi ý type / kiểu biểu đồ / theme từ mô tả nội dung, dựa trên references/layouts_index.json (luật "chọn khi / bỏ qua khi → thay bằng").
+"""Gợi ý type / kiểu biểu đồ từ mô tả nội dung, dựa trên references/layouts_index.json (luật "chọn khi / bỏ qua khi → thay bằng").
 Dùng: python3 scripts/chon_layout.py "hai quy định cũ và mới về thời hạn nộp hồ sơ"
       python3 scripts/chon_layout.py --list            # in toàn bộ thư viện theo nhóm
 Chỉ là gợi ý theo từ khoá — quyết định cuối vẫn theo câu hỏi "người nghe cần thấy gì" (SKILL.md bước 3)."""
@@ -28,8 +28,7 @@ def main(argv):
                 if e["group"] == g: print(f"  {t:12} chọn: {e['pick']}\n  {'':12} bỏ qua: {e['skip']} → {', '.join(e['alt']) or '—'}")
         print("\n## Biểu đồ (chart kind)")
         for t, e in IDX["charts"].items(): print(f"  {t:10} chọn: {e['pick']} · bỏ qua: {e['skip']} → {', '.join(e['alt'])}")
-        print("\n## Theme")
-        for t, e in IDX["themes"].items(): print(f"  {t:6} {e}")
+        print("\n## Da theo môn: xem SKILL.md mục \"Da theo môn\" (hinh/da.js)")
         return 0
     q = toks(" ".join(argv))
     rows = [(score(q, e["pick"], e["skip"]), "type", t, e) for t, e in IDX["types"].items()]

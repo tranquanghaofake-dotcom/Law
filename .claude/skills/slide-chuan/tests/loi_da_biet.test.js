@@ -23,11 +23,10 @@ test("L2 engine: trường id / toc của tầng hình ảnh không bị báo 't
   assert.ok(!r.warnings.join("\n").includes('trường lạ "toc"'), r.warnings.join("\n"));
 });
 
-test("L3 engine: type chỉ có ở tầng hình ảnh được giải thích, kèm type gần nghĩa", () => {
-  const r = validate({ meta: {}, slides: [{ type: "lawquote", title: "T", quote: "q" }] });
-  const e = r.errors.join("\n");
-  assert.match(e, /chỉ có ở tầng hình ảnh/);
-  assert.match(e, /"quote"/);
+test("L3 validate: kiểu cảnh / bộ hình được nhận khi khai trong extraTypes; kiểu lạ báo kèm danh sách cả kiểu cảnh", () => {
+  assert.deepStrictEqual(validate({ meta: {}, slides: [{ type: "lawquote", title: "T", quote: "q" }] }, { extraTypes: ["lawquote"] }).errors, []);
+  const e = validate({ meta: {}, slides: [{ type: "lawquot", title: "T" }] }, { extraTypes: ["lawquote"] }).errors.join("\n");
+  assert.match(e, /"lawquot" không tồn tại/); assert.match(e, /lawquote/);
   const lạ = validate({ meta: {}, slides: [{ type: "khong-co-that", title: "T" }] }).errors.join("\n");
   assert.match(lạ, /không tồn tại/);
 });
@@ -58,16 +57,4 @@ test("L4b hinh/kiem: nhắc Bước 0 khi thiếu / chưa duyệt prep.json (tr�
     process.env.SLIDE_CHUAN_NO_PREP = "1";
     assert.doesNotMatch(kiemDeck({ meta: {}, slides: [{ type: "cover", title: "T" }] }, { deckDir: tmpdir() }).join("\n"), /Bước 0/);
   } finally { if (old === undefined) delete process.env.SLIDE_CHUAN_NO_PREP; else process.env.SLIDE_CHUAN_NO_PREP = old; }
-});
-
-test("L6 check_overflow.py: PPTX có font nhúng (tầng hình ảnh) được bỏ qua kèm lời giải thích, thoát 0", async () => {
-  const dir = tmpdir(), f = path.join(dir, "hinh.pptx"), z = new JSZip();
-  z.file("[Content_Types].xml", "<Types/>"); z.file("ppt/fonts/font1.fntdata", "x");
-  fs.writeFileSync(f, await z.generateAsync({ type: "nodebuffer" }));
-  const r = spawnSync("python3", [path.join(ROOT, "scripts", "check_overflow.py"), f], { encoding: "utf8" });
-  // cần python-pptx + pdfplumber để vào tới main(); thiếu thì thoát 2 với thông báo thiếu thư viện — khi đó bỏ qua test này
-  if (r.status === 2 && /Thiếu thư viện/.test(r.stdout)) return;
-  assert.equal(r.status, 0, r.stdout + r.stderr);
-  assert.match(r.stdout, /tầng hình ảnh/);
-  assert.match(r.stdout, /--soat/);
 });
