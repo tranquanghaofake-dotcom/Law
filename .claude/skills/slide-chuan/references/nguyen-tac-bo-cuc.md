@@ -25,6 +25,7 @@ Luật đi kèm:
 - **Mã màu không được nói dối**: đỏ chỉ cho điều tiêu cực (năm giảm, mất, nợ); một chấm chú thích mang màu của chiều thay đổi nó chú thích; không gán đỏ cho cả một phần chỉ để "đủ ba màu".
 - **Không lặp một vật hai lần trên cùng slide**: vật vẽ đặt cạnh ảnh đã có vật thật đó, hai biểu tượng giống nhau, cùng một con số hai đơn vị.
 - **Vị trí suy ra được**: mỗi thứ canh theo lưới lề hoặc theo vật nó thuộc về (dải đánh dấu mọc từ mép trang sổ, chú thích cùng hàng với năm nó giải thích); không có toạ độ "đặt cho đẹp".
+- **Thẳng theo NÉT chữ, không theo hộp chữ**: chữ trưng bày ≥ 48 px tự **căn lề quang học** (`hinh/hinh.js`: dịch trái đúng khoảng trống trước nét của chữ đầu — Anton "N" 186 px trống 7 px) → nét tiêu đề thẳng với dòng chữ nhỏ; đừng bù tay bằng toạ độ (100, 96…), sẽ bị bù hai lần. Lề trong của nhãn = lề trong của thẻ (24 px) để chữ chung cột. `scripts/soat_chi_tiet.js` (tự chạy trong `--soat`) báo chỗ lệch 4–10 px.
 - **Ngắt dòng tại nghĩa**: công thức xuống dòng tại dấu "=", nhãn điều luật một dòng ("Đ.40, 41"), không để trình duyệt tự ngắt giữa một cụm.
 - **Thứ tự xuất hiện theo logic**: thẻ căn cứ của luật mới chỉ hiện ở bước "luật mới"; số ô năm khớp con số trong tình huống.
 - Cách soát: lập bảng `chi tiết → nghĩa → luật` cho bộ hình (mẫu: `references/canh.md` mục 10); chi tiết nào không điền được cột "nghĩa" thì bỏ hoặc đổi thành chi tiết mang nghĩa (bong bóng trang trí → vân bảo an đúng của bìa sổ BHXH).
