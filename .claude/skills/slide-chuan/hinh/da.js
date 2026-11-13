@@ -128,7 +128,9 @@ function khungSvg(kind, c, toi) {
 
 // ---------- vỏ thẻ (CSS cho .card trên trang sáng) ----------
 const pad = (s) => s.replace(/\n\s*/g, " ");
-function theCss(kind, c, S) {
+function theCss(kind, c, S0) {
+  // :where() hạ độ ưu tiên về ngang ".card": thẻ vốn nền tối của từng bố cục (bento chính, đáp án đúng, khối kết luận…) giữ nền của nó
+  const S = `:where(${S0})`;
   const A = c.acc, L = c.line, B = c.bad, W = "#fff", sh = "0 10px 22px rgba(0,0,0,.09)";
   const base = `${S} .card { position: relative; background: ${W}; border: 2px solid #${L}; box-shadow: ${sh}; }`;
   const K = {

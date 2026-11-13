@@ -76,23 +76,13 @@ T.ledger = (s) => {
   }).join("")}</div></div>${note(s.note)}` };
 };
 
+const { veBieuDo } = require("./bieu_do");
+// chart: SVG ở stage/bieu_do.js (đủ 10 kind của tầng Office cũ); nguyên nhân tại năm (items[].why) là HỘP CHỮ THẬT dưới biểu đồ, đánh số khớp số tròn trên cột
 T.chart = (s) => {
-  const it = s.items || [], ins = s.insight, W = ins ? 1150 : 1700, H = 520;
-  let svg = "";
-  if (s.kind === "span") {
-    const a = it.flatMap((x) => [dmy(x.from), dmy(x.to)]).concat((s.markers || []).map((m) => dmy(m.date))), lo = Math.floor(Math.min(...a)), hi = Math.ceil(Math.max(...a)), L = 250, X = (v) => L + (v - lo) / (hi - lo) * (W - L - 20), rh = Math.min(120, (H - 110) / it.length);
-    for (let y = lo; y <= hi; y++) svg += `<line x1="${X(y)}" x2="${X(y)}" y1="40" y2="${H - 56}" stroke="#0c1222" stroke-opacity=".14" stroke-width="3"/><text x="${X(y)}" y="${H - 18}" text-anchor="middle" font-size="24" font-weight="700" fill="#5b5443">${y}</text>`;
-    it.forEach((x, i) => { const y = 56 + i * rh, x1 = X(dmy(x.from)), x2 = X(dmy(x.to)), mo = Math.round((dmy(x.to) - dmy(x.from)) * 12); svg += `<text x="0" y="${y + 44}" font-size="30" font-weight="800" fill="#0c1222">${esc(plain(x.label))}</text><rect x="${x1}" y="${y}" width="${Math.max(8, x2 - x1)}" height="${rh - 46}" fill="${x.focus ? "#e2402a" : "#0c1222"}" stroke="#0c1222" stroke-width="5"/><text x="${x1 + 16}" y="${y + (rh - 46) / 2 + 10}" font-size="26" font-weight="800" fill="#f4eddc">${x2 - x1 > 150 ? `≈ ${mo} tháng` : ""}</text>`; });
-    (s.markers || []).forEach((m) => { const x = X(dmy(m.date)); svg += `<line x1="${x}" x2="${x}" y1="6" y2="${H - 56}" stroke="#e2402a" stroke-width="6" stroke-dasharray="14 10"/><rect x="${x - 190}" y="-14" width="380" height="44" fill="#f6b93b" stroke="#0c1222" stroke-width="4"/><text x="${x}" y="17" text-anchor="middle" font-size="24" font-weight="800" fill="#0c1222">${esc(plain(m.label))}</text>`; });
-  } else if (s.kind === "column" || s.kind === "line" || s.kind === "step") {
-    const max = Math.max(1, ...it.map((x) => Math.abs(+x.value || 0))), bw = (W - 40) / it.length;
-    it.forEach((x, i) => { const v = +x.value || 0, h = Math.abs(v) / max * (H - 150), cx = 20 + i * bw; svg += `<rect x="${cx + bw * 0.16}" y="${H - 70 - h}" width="${bw * 0.68}" height="${h}" fill="${x.tone === "bad" || v < 0 ? "#e2402a" : x.focus ? "#f6b93b" : "#0c1222"}" stroke="#0c1222" stroke-width="5"/><text x="${cx + bw / 2}" y="${H - 86 - h}" text-anchor="middle" font-size="${it.length > 8 ? 24 : 34}" font-weight="800" fill="#0c1222">${esc(x.display ?? x.value)}</text><text x="${cx + bw / 2}" y="${H - 26}" text-anchor="middle" font-size="${it.length > 8 ? 22 : 26}" font-weight="700" fill="#5b5443">${esc(plain(x.label))}</text>`; });
-    svg += `<line x1="10" x2="${W - 10}" y1="${H - 68}" y2="${H - 68}" stroke="#0c1222" stroke-width="6"/>`;
-  } else {
-    const max = Math.max(1, ...it.map((x) => Math.abs(+(x.value ?? x.to) || 0))), rh = Math.min(96, H / Math.max(1, it.length));
-    it.forEach((x, i) => { const w = Math.abs(+(x.value ?? x.to) || 0) / max * (W - 560), y = i * rh + 8; svg += `<text x="0" y="${y + rh * 0.55}" font-size="28" font-weight="800" fill="#0c1222">${esc(plain(x.label))}</text><rect x="360" y="${y}" width="${Math.max(6, w)}" height="${rh - 26}" fill="${x.tone === "bad" ? "#e2402a" : x.focus ? "#f6b93b" : "#0c1222"}" stroke="#0c1222" stroke-width="5"/><text x="${376 + w}" y="${y + rh * 0.55}" font-size="34" font-weight="800" fill="#0c1222">${esc(x.display ?? x.value)}</text>`; });
-  }
-  return { cls: "light", html: `${head(s)}<div class="body"><div class="ch ${ins ? "" : "solo"}"><div ${inn()}><svg viewBox="0 -20 ${W} ${H + 20}" font-family="Be Vietnam Pro, sans-serif">${svg}</svg></div>${ins ? `<div class="ins" ${inn("pop")}><div class="v" style="font-size:${[230, 230, 230, 150, 140, 120][plain(String(ins.value)).length] || 100}px">${f(ins.value)}</div><div class="u">${f(ins.unit || "")}</div><p>${f(ins.text || "")}</p></div>` : ""}</div></div>${note(s.note)}` };
+  const ins = s.insight, nWhy = s.kind === "column" ? Math.min(4, (s.items || []).filter((x) => x.why).length) : 0, W = ins ? 1150 : 1700, H = nWhy ? 380 : 520;
+  const { svg, why } = veBieuDo(s, W, H);
+  const wh = why.length ? `<div class="why" style="--n:${why.length}">${why.map((w, k) => `<div class="card wy" ${inn()}><span class="wn">${k + 1}</span><div><b>${esc(w.label)}</b> ${f(w.text)}</div></div>`).join("")}</div>` : "";
+  return { cls: "light", html: `${head(s)}<div class="body"><div class="ch ${ins ? "" : "solo"}"><div class="chw"><div ${inn()}>${svg}</div>${wh}</div>${ins ? `<div class="ins" ${inn("pop")}><div class="v" style="font-size:${[230, 230, 230, 150, 140, 120][plain(String(ins.value)).length] || 100}px">${f(ins.value)}</div><div class="u">${f(ins.unit || "")}</div><p>${f(ins.text || "")}</p></div>` : ""}</div></div>${note(s.note || s.takeaway)}` };
 };
 
 T.evidence = (s) => ({ cls: "light", html: `${head(s)}<div class="body"><div class="evd"><div>${s.listTitle ? `<div class="lt" ${inn()}>${f(s.listTitle)}</div>` : ""}<ol class="nl">${(s.items || []).map((x) => `<li ${inn()}><div><b>${f(x.head)}</b><span>${f(x.desc || "")}</span></div></li>`).join("")}</ol></div>
