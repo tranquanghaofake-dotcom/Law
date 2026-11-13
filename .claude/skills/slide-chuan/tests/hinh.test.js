@@ -145,6 +145,12 @@ test("dựng PPTX thật: chữ là hộp chữ sửa được, Morph và liên 
   for (let k = 1; k <= 12; k++) assert.ok(s3.includes(`name="!!o-${k}"`) && s4.includes(`name="!!o-${k}"`), `ô ${k} phải ghép Morph giữa cột và dải ngày`);
   assert.ok(s2.includes('name="!!td"') && s3.includes('name="!!td"') && s2.includes('name="!!ten-bai"'), "thanh tiến độ và tên bài chạy liền qua các slide");
   assert.ok((s5.match(/ppaction:\/\/hlinksldjump/g) || []).length >= 2 && /advClick="0"/.test(s5), "đáp án là liên kết nhảy slide; slide hỏi chặn bấm");
+  // slide phản hồi "Chưa đúng" / "Chính xác!": tiêu đề hiện ra trùng nhau giữa các câu hỏi → tiêu đề ĐẦY ĐỦ đặt ngoài khung slide (cách Microsoft hướng dẫn), hộp chữ hiện giữ nguyên
+  const s6 = await sl(6), s7 = await sl(7), tdAn = (x) => { const m = x.match(/<p:sp><p:nvSpPr><p:cNvPr id="\d+" name="Tiêu đề ẩn"[\s\S]*?<\/p:sp>/); return m ? m[0] : ""; };
+  for (const [x, chu] of [[s6, "chưa đúng"], [s7, "chính xác"]]) { const t = tdAn(x);
+    assert.ok(t && /<p:ph type="title"\/>/.test(t) && /<a:off x="\d+" y="-\d+"\/>/.test(t), "có tiêu đề ẩn nằm ngoài khung (y âm)");
+    assert.ok(t.toLocaleLowerCase("vi").includes("mấy ngày?") && t.toLocaleLowerCase("vi").includes(chu), t.slice(0, 300));
+    assert.equal((x.match(/<p:ph type="title"\/>/g) || []).length, 1, "chỉ một placeholder tiêu đề"); }
   const pres = await z.file("ppt/presentation.xml").async("string"), emb = [...pres.matchAll(/<p:embeddedFont><p:font typeface="([^"]+)"/g)].map((m) => m[1]);
   const usedFaces = new Set(); for (let n = 1; n <= 8; n++) for (const m of (await sl(n)).matchAll(/<a:latin typeface="([^"]+)"/g)) usedFaces.add(m[1]);
   for (const f of usedFaces) assert.ok(emb.includes(f), `font “${f}” dùng mà không nhúng`);

@@ -96,7 +96,7 @@ function collectInPage() {
       items.push({ ...base, kind: "text", cx: r.left + r.width / 2 - R.left, cy: r.top + r.height / 2 - R.top, ang, el: `${si}-${i}` });
       el.setAttribute("data-ti", `${si}-${i}`);
     });
-    out.push({ id: S.getAttribute("data-id") || `s${si + 1}`, cam: S.getAttribute("data-cam"), trans: S.getAttribute("data-trans") || "fade", dur: num(S.getAttribute("data-dur"), 1000), auto: S.hasAttribute("data-auto") ? num(S.getAttribute("data-auto")) : null, noClick: S.hasAttribute("data-noclick"), notes: S.getAttribute("data-notes") || "", items, words: (() => { let w = ""; const tw = document.createTreeWalker(S, NodeFilter.SHOW_TEXT); for (let n = tw.nextNode(); n; n = tw.nextNode()) { const pe = n.parentElement; if (!pe || pe.closest("[data-prop], [data-w], script, style")) continue; const cs = getComputedStyle(pe); if (cs.display === "none" || cs.visibility === "hidden") continue; w += " " + (cs.textTransform === "uppercase" ? n.textContent.toLocaleUpperCase("vi") : n.textContent); } return w.replace(/\s+/g, " ").trim(); })() });
+    out.push({ id: S.getAttribute("data-id") || `s${si + 1}`, cam: S.getAttribute("data-cam"), trans: S.getAttribute("data-trans") || "fade", dur: num(S.getAttribute("data-dur"), 1000), auto: S.hasAttribute("data-auto") ? num(S.getAttribute("data-auto")) : null, noClick: S.hasAttribute("data-noclick"), notes: S.getAttribute("data-notes") || "", tieuDeAn: S.getAttribute("data-tieu-de-an") || "", items, words: (() => { let w = ""; const tw = document.createTreeWalker(S, NodeFilter.SHOW_TEXT); for (let n = tw.nextNode(); n; n = tw.nextNode()) { const pe = n.parentElement; if (!pe || pe.closest("[data-prop], [data-w], script, style")) continue; const cs = getComputedStyle(pe); if (cs.display === "none" || cs.visibility === "hidden") continue; w += " " + (cs.textTransform === "uppercase" ? n.textContent.toLocaleUpperCase("vi") : n.textContent); } return w.replace(/\s+/g, " ").trim(); })() });
   });
   return out;
 }
@@ -375,6 +375,13 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
       '$1<a:extLst><a:ext uri="{C183D7F6-B498-43B3-948B-1728B52AA6E4}"><adec:decorative xmlns:adec="http://schemas.microsoft.com/office/drawing/2017/decorative" val="1"/></a:ext></a:extLst></p:cNvPr>');
     // TIÊU ĐỀ SLIDE: hộp chữ tiêu đề thành placeholder tiêu đề — bộ kiểm khả năng tiếp cận hết báo "thiếu tiêu đề", danh sách slide khi
     // trình chiếu / hộp liên kết / dàn ý có tên slide. Mọi định dạng đã ghi rõ trong XML; thêm noAutofit để PowerPoint không tự co chữ
+    // TIÊU ĐỀ ẨN (data-tieu-de-an): chữ tiêu đề hiện ra là một mảnh ("Mười năm, BHXH bắt buộc" + ô "đi bao xa?") hoặc trùng giữa nhiều slide
+    // ("Chưa đúng" ở ba slide phản hồi) → placeholder tiêu đề chứa câu ĐẦY ĐỦ đặt NGOÀI khung slide, đứng đầu thứ tự đọc
+    // (cách Microsoft hướng dẫn cho slide không muốn hiện tiêu đề); hộp chữ hiện ra giữ nguyên là hộp chữ thường
+    if (s.tieuDeAn) { const id = Math.max(0, ...[...t.matchAll(/<p:cNvPr id="(\d+)"/g)].map((m) => +m[1])) + 1, g = t.indexOf("</p:grpSpPr>");
+      const x = s.tieuDeAn.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      const sp = `<p:sp><p:nvSpPr><p:cNvPr id="${id}" name="Tiêu đề ẩn"/><p:cNvSpPr><a:spLocks noGrp="1"/></p:cNvSpPr><p:nvPr><p:ph type="title"/></p:nvPr></p:nvSpPr><p:spPr><a:xfrm><a:off x="0" y="-1371600"/><a:ext cx="12192000" cy="914400"/></a:xfrm></p:spPr><p:txBody><a:bodyPr><a:noAutofit/></a:bodyPr><a:lstStyle/><a:p><a:r><a:rPr lang="vi-VN" sz="2400"/><a:t>${x}</a:t></a:r></a:p></p:txBody></p:sp>`;
+      if (g > 0) { t = t.slice(0, g + 12) + sp + t.slice(g + 12); s.tieuDe = null; } }
     if (s.tieuDe) { const nm = s.tieuDe.replace(/&/g, "&amp;"), a = `name="${nm}"></p:cNvPr><p:cNvSpPr txBox="1"/><p:nvPr></p:nvPr>`, k = t.indexOf(a);
       if (k >= 0) { t = t.slice(0, k) + `name="${nm}"></p:cNvPr><p:cNvSpPr><a:spLocks noGrp="1"/></p:cNvSpPr><p:nvPr><p:ph type="title"/></p:nvPr>` + t.slice(k + a.length);
         const b = t.indexOf("<a:bodyPr", k), e = t.indexOf("</a:bodyPr>", b), e2 = t.indexOf(">", b);
