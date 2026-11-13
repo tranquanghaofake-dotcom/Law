@@ -104,8 +104,11 @@ test("--titles: slide trích dẫn của bộ hình (chỉ có quote) và câu h
   assert.ok(/Bảo hiểm xã hội bắt buộc/.test(r), r);
 });
 
-test("ảnh nửa slide ở bìa / kết của bộ hình BHXH chỉ cần rộng ≥ 1000px (ảnh tràn cả slide mới cần 1600px)", async () => {
-  const dir = thuMuc(), p = await anh(dir, "nua.jpg", 1500);
-  const r = await KND.kiemNoiDung({ slides: [{ type: "bhket", title: "Cảm ơn", photo: p, photoCredit: "Ảnh: thử", photoSource: "https://example.org/a" }] }, { deckDir: dir, extraTypes: ["bhket"] });
-  assert.ok(!r.warnings.some((w) => /vỡ hạt/.test(w)), r.warnings.join("\n"));
+test("ảnh của bộ hình BHXH: ngưỡng theo cỡ ảnh hiện trên slide — nền mở phần / bìa / kết ≥ 1200px, khung ảnh ≥ 1000px", async () => {
+  const dir = thuMuc(), p = await anh(dir, "nua.jpg", 1500), nho = await anh(dir, "nho.jpg", 1100), khung = await anh(dir, "khung.jpg", 1020);
+  const ck = (type, photo) => KND.kiemNoiDung({ slides: [{ type, title: "Thử", photo, photoCredit: "Ảnh: thử", photoSource: "https://example.org/a" }] }, { deckDir: dir, extraTypes: [type] });
+  const vo = (r) => r.warnings.some((w) => /vỡ hạt/.test(w));
+  assert.ok(!vo(await ck("bhket", p)), "1500px đủ cho ảnh nền slide kết");
+  assert.ok(vo(await ck("bhchuong", nho)), "1100px chưa đủ cho ảnh nền slide mở phần (hiện 1360px)");
+  assert.ok(!vo(await ck("bhrut", khung)), "1020px đủ cho khung ảnh ≤ 880px");
 });

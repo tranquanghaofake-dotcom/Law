@@ -43,7 +43,7 @@ const fxa = (o) => (o.a ? ` data-a="${o.a}" data-at="${Math.round(o.at || 0)}"${
 
 // ---------- khối dựng ----------
 const BONG = "drop-shadow(0 3px 6px rgba(11,58,154,.07)) drop-shadow(0 14px 26px rgba(11,58,154,.12))";
-const lop = (name, R, inner, o = {}) => `<div class="bh-l" data-l="${name}"${o.m ? ` data-m="${o.m}" data-mt="0"` : ""}${o.go ? ` data-go="${o.go}"` : ""}${o.sau != null ? ` data-sau="${o.sau}"` : ""}${fxa(o)} data-pad="${o.pad ?? (o.shadow === false ? 6 : 44)}" data-alt="${esc(o.alt || "Hình minh hoạ")}" style="left:${Math.round(R.x)}px;top:${Math.round(R.y)}px;width:${Math.round(R.w)}px;height:${Math.round(R.h)}px;z-index:${o.z ?? 5};${R.r ? `rotate:${R.r}deg;` : ""}${o.shadow === false ? "" : `filter:${BONG};`}">${inner}</div>`;
+const lop = (name, R, inner, o = {}) => `<div class="bh-l" data-l="${name}"${o.m ? ` data-m="${o.m}" data-mt="0"` : ""}${o.go ? ` data-go="${o.go}"` : ""}${o.sau != null ? ` data-sau="${o.sau}"` : ""}${fxa(o)} data-pad="${o.pad ?? (o.shadow === false ? 6 : 44)}" data-alt="${esc(o.alt || "Hình minh hoạ")}" style="left:${Math.round(R.x)}px;top:${Math.round(R.y)}px;width:${Math.round(R.w)}px;height:${Math.round(R.h)}px;z-index:${o.z ?? 5};${R.r ? `rotate:${R.r}deg;` : ""}${o.css ? o.css : o.shadow === false ? "" : `filter:${BONG};`}">${inner}</div>`;
 const chu = (cls, x, y, w, html, o = {}) => `<div class="${cls}" data-t${o.m ? ` data-m="${o.m}"` : ""}${o.go ? ` data-go="${o.go}"` : ""}${o.sau != null ? ` data-sau="${o.sau}"` : ""}${fxa(o)} style="left:${Math.round(x)}px;top:${Math.round(y)}px;${w ? `width:${Math.round(w)}px;` : ""}${o.size ? `font-size:${o.size}px;` : ""}${o.color ? `color:#${o.color};` : ""}${o.align ? `text-align:${o.align};` : ""}z-index:${o.z ?? 30};">${html}</div>`;
 const anh = (src) => `<img src="${src}" style="width:100%;height:100%;object-fit:contain;display:block">`;
 const vat = (name, ten, R, o = {}) => (coF3d(ten) ? lop(name, { h: R.w, ...R }, anh(f3d(ten)), { shadow: false, ...o, alt: o.alt || `Hình 3D: ${ten}` }) : "");
@@ -75,16 +75,38 @@ const tenPhan = (deck, i) => { const s = deck.slides[i]; if (["bhhoi", "bhtraloi
 const viTriTrongPhan = (deck, i) => { let k = 0; for (let j = i; j > 0 && deck.slides[j - 1].type !== "bhchuong"; j--) k++; return k; };
 const KHUNG = `<svg viewBox="0 0 1920 1080" width="100%" height="100%"><rect x="26" y="26" width="1868" height="1028" rx="22" fill="none" stroke="#c6d6ee" stroke-width="2"/><rect x="34" y="34" width="1852" height="1012" rx="16" fill="none" stroke="#e1eaf7" stroke-width="1.5"/></svg>`;
 const tienDo = (i, n) => { const W = 360, g = 3, w = (W - (n - 1) * g) / n; return `<svg viewBox="0 0 ${W} 14" width="100%" height="100%">${Array.from({ length: n }, (_, k) => `<rect x="${(k * (w + g)).toFixed(2)}" y="0" width="${w.toFixed(2)}" height="14" rx="2" fill="#${k < i ? "7fa9ea" : k === i ? P.blue : "dbe6f7"}"/>`).join("")}</svg>`; };
-const khung = (s, deck, i, n, dau = true) => `${lop("bh-khung", { x: 0, y: 0, w: 1920, h: 1080 }, KHUNG, { shadow: false, m: "bh-khung", z: 1, pad: 2, alt: "Khung slide" })}
-  ${dau ? `${chu("bh-hdp", 110, 52, 1000, esc(tenPhan(deck, i)), { m: "bh-hd-phan" })}${chu("bh-hdn", 1300, 48, 110, `${String(i + 1).padStart(2, "0")} / ${n}`, { align: "right", m: "bh-hd-so" })}
-    ${lop("bh-tiendo", { x: 1450, y: 54, w: 360, h: 14 }, tienDo(i, n), { shadow: false, m: "bh-hd-tiendo", pad: 2, alt: "Thanh tiến độ" })}` : ""}`;
+const khung = (s, deck, i, n, dau = true, phai = true) => `
+  ${dau ? `${chu("bh-hdp", 110, 52, 1000, esc(tenPhan(deck, i)), { m: "bh-hd-phan" })}${phai ? `${chu("bh-hdn", 1300, 48, 110, `${String(i + 1).padStart(2, "0")} / ${n}`, { align: "right", m: "bh-hd-so" })}` : ""}
+    ${phai ? lop("bh-tiendo", { x: 1450, y: 54, w: 360, h: 14 }, tienDo(i, n), { shadow: false, m: "bh-hd-tiendo", pad: 2, alt: "Thanh tiến độ" }) : ""}` : ""}`;
 // mặt bàn: bút + thước trôi sang trái theo "máy quay" mỗi slide trong một phần (slide mở phần: không có)
 const ban = () => "";   // bản gộp có bút + thước trôi ở chân slide — bị bỏ: vật không mang nghĩa làm rối (chuyển động giờ do máy quay lo)
 // dải tiêu đề: nhãn câu hỏi (khung viền) + tiêu đề chữ thường
-const kick = (t, x = 110, y = 100, o = {}) => (t ? `${lop("bh-kbar", { x, y: y + 9, w: 36, h: 7 }, tron(P.gold), { shadow: false, pad: 2, m: o.m === false ? undefined : "bh-hd-kbar", alt: "Vạch nhấn" })}${chu("bh-kk", x + 52, y, 1300, esc(t), o.fx || {})}` : "");
-const tieuDe = (s, o = {}) => { const w = o.w || 1500, px = o.px || 54, n = dong(s.title, w, px, 800), y = 140 + n * Math.round(px * 1.18);
-  const subH = s.sub && !o.boSub ? 14 + dong(s.sub, o.subW || 1400, 28, 400) * 40 : 0;
-  return { html: `${kick(s.kicker)}${chu("bh-h", 110, 140, w, tx(s.title || ""), { size: px })}${s.sub && !o.boSub ? chu("bh-sub", 110, y + 14, o.subW || 1400, tx(s.sub)) : ""}`, day: y + subH }; };
+// viên thuốc (nhãn đặc bo tròn) — kiểu Flashslide: chữ đậm in hoa trên nền màu
+const vien = (name, x, y, text, o = {}) => { const px = o.px || 22, T = String(text).toLocaleUpperCase("vi"), w = Math.round(rong(T, px, 800) + T.length * px * 0.07 + px * 2.4), h = Math.round(px * 2), g = uid("vi"), m = o.mau === "vang" ? ["ffc94a", "e8930c"] : o.mau === "trang" ? ["ffffff", "ffffff"] : ["1e7bff", "0b57d0"];
+  return `${lop(name, { x, y, w, h }, `<svg viewBox="0 0 ${w} ${h}" width="100%" height="100%"><defs><linearGradient id="${g}" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#${m[0]}"/><stop offset="1" stop-color="#${m[1]}"/></linearGradient></defs><rect width="${w}" height="${h}" rx="${h / 2}" fill="url(#${g})"/></svg>`, { shadow: o.mau === "trang" ? undefined : false, pad: 30, alt: "Nhãn", z: o.z || 9, sau: o.sau, ...(o.fx || {}) })}${chu(o.cls || "bh-kk", x, y + (h - px * 1.2) / 2, w, esc(text), { align: "center", color: o.chu || (o.mau === "vang" ? "3a2400" : o.mau === "trang" ? "072a6b" : "ffffff"), size: px, z: (o.z || 9) + 22, sau: o.sau, ...(o.fx || {}) })}`; };
+const kick = (t, x = 110, y = 88, o = {}) => (t ? vien("bh-kick", x, y, t, o) : "");
+// tiêu đề chữ đứng (Anton) in hoa: 72 px, dài quá hai dòng thì 60 px
+const tieuDe = (s, o = {}) => { const w = o.w || 1680; let px = o.px || 72, n = dong(s.title, w, px, "anton"); if (n > 2 && !o.px) { px = 60; n = dong(s.title, w, px, "anton"); }
+  const y = 150 + n * Math.round(px * 1.1), subH = s.sub && !o.boSub ? 14 + dong(s.sub, o.subW || 1400, 28, 400) * 40 : 0;
+  return { html: `${kick(s.kicker)}${chu("bh-h", 110, 150, w, tx(s.title || ""), { size: px })}${s.sub && !o.boSub ? chu("bh-sub", 110, y + 12, o.subW || 1400, tx(s.sub)) : ""}`, day: y + subH }; };
+// ẢNH THẬT (ảnh báo — chỉ chiếu trên lớp, ghi công ở chân slide và trong _ghi-cong.md)
+const anhU = (ctx, s) => (ctx && s.photo ? ctx.img(s.photo) : null);
+const imgTag = (u, s) => `<img src="${u}" style="width:100%;height:100%;object-fit:cover;object-position:${s.photoPos || "center"};display:block">`;
+const ghiAnh = (s, toi) => (s.photoCredit ? chu("bh-cr", 110, 1030, 1200, esc(s.photoCredit), { color: toi ? "b9c9e8" : P.mute, sau: 0 }) : "");
+// khung ảnh bo góc + bóng đổ (+ nhãn trắng ở góc dưới)
+const anhKhung = (ctx, s, R, o = {}) => { const u = anhU(ctx, s); if (!u) return "";
+  return `${lop(o.name || "bh-anh", R, `<div style="width:100%;height:100%;border-radius:30px;overflow:hidden">${imgTag(u, s)}</div>`, { alt: s.photoAlt || "Ảnh", z: 3, pad: 50, sau: o.sau ?? 1.15, ...(o.fx || {}) })}
+    ${s.photoTag ? vien("bh-anhtag", R.x + 30, R.y + R.h - 76, s.photoTag, { mau: "trang", px: 20, sau: o.sau ?? 1.15, fx: o.fx }) : ""}${ghiAnh(s)}`; };
+// ảnh tràn mép phải, dải mờ dần vào nền bên trái
+const anhBen = (ctx, s, x0, o = {}) => { const u = anhU(ctx, s); if (!u) return ""; const g = uid("mo");
+  return `${lop("bh-anhben", { x: x0, y: 0, w: 1920 - x0, h: 1080 }, imgTag(u, s), { shadow: false, alt: s.photoAlt || "Ảnh", z: 2, pad: 0, sau: 1.15, ...(o.fx || {}) })}
+    ${lop("bh-anhmo", { x: x0 - 2, y: 0, w: 380, h: 1080 }, `<svg viewBox="0 0 10 10" width="100%" height="100%" preserveAspectRatio="none"><defs><linearGradient id="${g}" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#eef4ff"/><stop offset=".55" stop-color="#eef4ff" stop-opacity=".55"/><stop offset="1" stop-color="#eef4ff" stop-opacity="0"/></linearGradient></defs><rect width="10" height="10" fill="url(#${g})"/></svg>`, { shadow: false, alt: "Dải mờ", z: 3, pad: 0, sau: 1.15, ...(o.fx || {}) })}${ghiAnh(s)}`; };
+// ảnh tràn cả slide, phủ xanh BHXH đậm bên trái (bìa, mở phần, kết)
+const anhTran = (ctx, s, o = {}) => { const u = anhU(ctx, s); if (!u) return ""; const g = uid("ph"), x0 = o.x0 ?? 560;
+  return `${lop("bh-anhtran", { x: x0, y: 0, w: 1920 - x0, h: 1080 }, imgTag(u, s), { shadow: false, alt: s.photoAlt || "Ảnh", z: 1, pad: 0, sau: 0.8 })}
+    ${lop("bh-phu", { x: 0, y: 0, w: 1920, h: 1080 }, `<svg viewBox="0 0 1920 1080" width="100%" height="100%" preserveAspectRatio="none"><defs><linearGradient id="${g}" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#062463"/><stop offset=".3" stop-color="#072a6b"/><stop offset=".52" stop-color="#083082" stop-opacity=".8"/><stop offset="1" stop-color="#0b57d0" stop-opacity=".12"/></linearGradient><radialGradient id="${g}q" cx=".05" cy="1" r=".45"><stop offset="0" stop-color="#2f7bff" stop-opacity=".5"/><stop offset="1" stop-color="#2f7bff" stop-opacity="0"/></radialGradient></defs><rect width="1920" height="1080" fill="url(#${g})"/><rect width="1920" height="1080" fill="url(#${g}q)"/></svg>`, { shadow: false, alt: "Lớp phủ màu", z: 2, pad: 0, sau: 0.8 })}${ghiAnh(s, true)}`; };
+// vật vẽ bằng code làm mờ ở tiền cảnh (chiều sâu kiểu Flashslide)
+const tienCanh = (name, ten, R, o = {}) => hero(name, ten, R, { css: `filter:blur(${o.mo ?? 5}px) drop-shadow(0 30px 40px rgba(0,0,0,.35));`, z: 40, sau: 1.7, alt: "Vật tiền cảnh", ...o });
 // HÀNG (danh sách kiểu bản Office): thẻ trắng có vạch màu trái · vòng vật 3D · tên · một dòng giải thích · căn cứ nhỏ
 const hangH = (x, W) => 26 + 48 + (x.desc ? dong(x.desc, W - 192, 27, 400) * 37 : 0) + (x.ref ? 40 : 0) + 24;
 const hang = (name, X, Y, W, x, o = {}) => { const H = o.h || hangH(x, W), tw = W - 192, nd = x.desc ? dong(x.desc, tw, 27, 400) : 0, mau = o.mau || P.blue, fx = o.fx || {}, ty = Y + Math.max(26, (H - hangH(x, W)) / 2 + 26);
@@ -102,17 +124,27 @@ const goc = (k, R) => (HERO_PHAN[k] === "so" ? chongSo("bh-p-hero2", 10, { x: 16
 
 const S = {};
 
-// 1 · BÌA — chữ bên trái; mặt bàn bên phải: ảnh công nhân đóng khung, sổ BHXH, phiếu lương, phong bì lương hưu (hiện lần lượt)
-S.bhbia = (s, deck, b, ctx) => { const px = s.titleSize || 76, n = dong(s.title, 900, px, 800), yS = 280 + n * Math.round(px * 1.16) + 26;
+// 1 · BÌA — có ảnh: ảnh thật tràn viền phủ xanh BHXH, tiêu đề chữ đứng in hoa trắng (cụm nhấn vàng), sổ BHXH mờ ở tiền cảnh.
+//            không ảnh: mặt bàn sổ · phiếu lương · phong bì (bản cũ)
+S.bhbia = (s, deck, b, ctx) => { if (anhU(ctx, s)) { const px = 104, n = dong(s.title, 1100, px, "anton"), y0 = 300, yS = y0 + n * Math.round(px * 1.06) + 30;
+    return `${anhTran(ctx, s)}${tienCanh("bh-p-so", "so", { x: 1480, y: 640, w: 400, r: -14 }, vao(2))}
+      ${kick(s.kicker, 116, 220, { mau: "vang", fx: vao(0) })}${chu("bh-h1", 110, y0, 1150, tx(s.title || ""), { size: px, ...vao(0) })}
+      ${s.subtitle ? chu("bh-sub", 116, yS, 900, tx(s.subtitle), vao(1)) : ""}
+      ${s.author ? `${chu("bh-au", 116, 880, 900, esc(s.author), vao(1))}${chu("bh-aus", 116, 930, 900, esc([s.authorSub, s.date].filter(Boolean).join(" · ")), vao(1))}` : ""}`; }
+  const px = s.titleSize || 76, n = dong(s.title, 900, px, 800), yS = 280 + n * Math.round(px * 1.16) + 26;
   return `${khungAnh(ctx, s, { x: 1120, y: 96, w: 690, h: 450, r: 3 }, "bh-anh", vao(0, "fade"))}
     ${hero("bh-p-so", "so", { x: 1170, y: 440, w: 330, r: -8 }, vao(1))}${hero("bh-phieu", "phieu", { x: 1540, y: 470, w: 270, r: 6 }, vao(2))}${hero("bh-p-phongbi", "phongbi", { x: 1240, y: 800, w: 300, r: -3 }, vao(3))}
-    ${kick(s.kicker, 110, 220, { m: false })}${chu("bh-h1", 110, 280, 900, tx(s.title || ""), { size: px })}
+    ${kick(s.kicker, 110, 210)}${chu("bh-h1", 110, 280, 900, tx(s.title || ""), { size: Math.min(px, 84) })}
     ${s.subtitle ? chu("bh-sub", 110, yS, 880, tx(s.subtitle)) : ""}
     ${s.author ? `${chu("bh-au", 110, 840, 900, esc(s.author))}${chu("bh-aus", 110, 890, 900, esc([s.authorSub, s.date].filter(Boolean).join(" · ")))}` : ""}
-    ${s.photoCredit ? chu("bh-cr", 110, 962, 900, esc(s.photoCredit)) : ""}`; };
+    ${s.photoCredit ? chu("bh-cr", 110, 1030, 900, esc(s.photoCredit)) : ""}`; };
 
 // 2 · CÂU HỎI LỚN — câu hỏi lớn bên trái; bên phải ba vật lớn đứng như tĩnh vật (sách luật · chồng sổ · chồng xu) = ba mặt sẽ đo, nhãn dưới chân
-S.bhdo = (s) => { const dims = s.dims || [{ t: "Về luật", d: "Ai phải đóng, được gì" }, { t: "Người tham gia", d: "Bao nhiêu người đóng" }, { t: "Về quỹ", d: "Thu có đủ chi không" }];
+S.bhdo = (s, deck, b, ctx) => { if (anhU(ctx, s)) { const L = (s.lines || []).length;
+    const anh = s.photoLayout === "khung" ? anhKhung(ctx, s, { x: 1000, y: 250, w: 820, h: 560 }, { fx: vao(0, "fade") }) : anhBen(ctx, s, 1000);
+    return `${anh}${kick(s.kicker, 110, 300)}${chu("bh-q", 110, 380, 860, tx((s.lines || []).join("\n")))}${chu("bh-qb", 110, 390 + L * 128, 860, tx(s.box || ""))}
+      ${tienCanh("bh-p-so", "so", { x: 1600, y: 700, w: 300, r: 12 })}`; }
+  const dims = s.dims || [{ t: "Về luật", d: "Ai phải đóng, được gì" }, { t: "Người tham gia", d: "Bao nhiêu người đóng" }, { t: "Về quỹ", d: "Thu có đủ chi không" }];
   const L = (s.lines || []).length, day = 800, cx = [1080, 1400, 1700];
   const ve = [(o) => hero("bh-dimv0", "sach", { x: cx[0] - 150, y: day - 390, w: 300, r: -4 }, o), (o) => chongSo("bh-dimv1", 12, { x: cx[1] - 150, y: day - 300 * (40 + 18 + 12 * 24 + 50) / 314 + 14, w: 300 }, o), (o) => hero("bh-dimv2", "xu", { x: cx[2] - 140, y: day - 280, w: 280 }, o)];
   return `${lop("bh-san", { x: 900, y: day - 12, w: 940, h: 8 }, tron(P.line), { shadow: false, pad: 2, alt: "Mặt kệ", ...vao(0, "wipe") })}
@@ -139,10 +171,15 @@ S.bhba = (s) => { const H = tieuDe(s), it = (s.items || []).slice(0, 3), top = M
     ${chu("bh-hint", 640, top + 20 + 3 * (RH + G) - 10, 1100, esc(s.hint || "Bấm vào một hàng để mở phần đó"))}`; };
 
 // 5 · 14 · 21 · MỞ PHẦN — số phần lớn + câu hỏi; bên phải hình chính của phần trên quầng sáng (slide sau thu về góc)
-S.bhchuong = (s) => { const k = Math.max(0, Math.min(2, (+s.num || 1) - 1)), n = dong(s.title, 900, 64, 800), q = uid("q");
+S.bhchuong = (s, deck, b, ctx) => { const k = Math.max(0, Math.min(2, (+s.num || 1) - 1));
+  if (anhU(ctx, s)) { const px = 100, n = dong(s.title, 1000, px, "anton"), ten = ["sach", "so", "kiem"][k];
+    return `${anhTran(ctx, s)}${tienCanh(`bh-p-hero${k + 1}`, ten, { x: 1500, y: 560, w: 360, r: k === 1 ? 10 : -10 }, vao(2))}
+      ${kick(`${s.partWord || "Phần"} ${String(s.num).padStart(2, "0")} / 03`, 116, 250, { mau: "vang", px: 26, fx: vao(0) })}${chu("bh-hc", 110, 340, 1050, tx(s.title || ""), { size: px, ...vao(0) })}
+      ${s.sub ? chu("bh-sub", 116, 350 + n * Math.round(px * 1.06) + 30, 900, tx(s.sub), vao(1)) : ""}`; }
+  const n = dong(s.title, 900, 64, 800), q = uid("q");
   const H = k === 0 ? hero("bh-p-hero1", "sach", { x: 1230, y: 200, w: 470, r: -4 }, { sau: 1.3, ...vao(0) }) : k === 1 ? `${chongSo("bh-p-hero2", 16, { x: 1240, y: 220, w: 350 }, { sau: 1.3, ...vao(0) })}${hero("bh-xu", "xu", { x: 1570, y: 600, w: 240 }, { sau: 1.5, ...vao(1) })}` : `${hero("bh-p-hero3", "kiem", { x: 1250, y: 210, w: 470 }, { sau: 1.3, ...vao(0) })}${hero("bh-pb", "phongbi", { x: 1120, y: 700, w: 280, r: -6 }, { sau: 1.5, ...vao(1) })}`;
   return `${lop("bh-quang", { x: 1060, y: 120, w: 860, h: 860 }, `<svg viewBox="0 0 100 100" width="100%" height="100%"><defs><radialGradient id="${q}" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#dbe9ff" stop-opacity=".9"/><stop offset="1" stop-color="#dbe9ff" stop-opacity="0"/></radialGradient></defs><circle cx="50" cy="50" r="50" fill="url(#${q})"/></svg>`, { shadow: false, alt: "Quầng sáng", z: 2, sau: 0.6 })}${H}
-    ${kick(`${s.partWord || "Phần"} ${String(s.num).padStart(2, "0")} / 03`, 110, 240)}${chu("bh-pnum", 100, 290, 600, String(s.num).padStart(2, "0"))}
+    ${kick(`${s.partWord || "Phần"} ${String(s.num).padStart(2, "0")} / 03`, 110, 230)}${chu("bh-pnum", 100, 290, 600, String(s.num).padStart(2, "0"))}
     ${chu("bh-hc", 110, 560, 900, tx(s.title || ""))}${s.sub ? chu("bh-sub", 110, 560 + n * 76 + 26, 880, tx(s.sub)) : ""}`; };
 
 // 6 · TRÍCH LUẬT — sách Luật BHXH 2024 mở ngay trên slide: trang trái là câu trích nguyên văn (cụm nhấn tô vàng), trang phải là hai ý then chốt
@@ -155,12 +192,17 @@ S.bhtrich = (s) => { const H = tieuDe(s, { w: 1500 }), top = Math.max(300, H.day
 
 // 7 · VAI TRÒ — ô che BHXH che cả gia đình và cuốn sổ (hình chính bên trái); ba vai trò thành ba hàng bên phải
 const hangTu = (x, icon) => ({ name: x.name, desc: x.desc, ref: x.who, icon });
-S.bhvaitro = (s) => { const H = tieuDe(s), it = (s.items || []).slice(0, 3), top = Math.max(300, H.day + 44), VD = ["o-mua", "can", "gio-hang"];
+S.bhvaitro = (s, deck, b, ctx) => { const VD = ["o-mua", "can", "gio-hang"], it = (s.items || []).slice(0, 3);
+  if (anhU(ctx, s)) { const H = tieuDe(s, { w: 900 }), top = Math.max(300, H.day + 40); return `${anhBen(ctx, s, 1040)}${H.html}${cot3(it.map((x, k) => hangTu(x, VD[k])), 110, top, 920, 1000)}${tienCanh("bh-p-phongbi", "phongbi", { x: 1560, y: 820, w: 320, r: 6 }, { mo: 2, ...vao(3) })}`; }
+  const H = tieuDe(s), top = Math.max(300, H.day + 44);
   return `${H.html}${lop("bh-oche", { x: 100, y: top, w: 640, h: 540 }, V.oChe(), { shadow: false, alt: "Ô che: BHXH che chắn người lao động", sau: 1.35, ...vao(0) })}
     ${vat("bh-nguoi1", "cong-nhan-nu", { x: 150, y: top + 440, w: 200 }, { sau: 1.35, ...vao(0) })}${vat("bh-nguoi2", "nguoi-gia", { x: 330, y: top + 470, w: 170 }, { sau: 1.35, ...vao(0) })}${hero("bh-vtso", "so", { x: 520, y: top + 450, w: 180, r: 8 }, { sau: 1.35, ...vao(0) })}
     ${cot3(it.map((x, k) => hangTu(x, VD[k])), 830, top, 980, 990)}`; };
 // 8 · BA NHÓM — ba cuốn sổ BHXH xoè như quạt, mỗi cuốn mang hình của một nhóm; ba hàng bên phải
-S.bhnhom = (s) => { const H = tieuDe(s), it = (s.items || []).slice(0, 3), top = Math.max(300, H.day + 44), VD = ["cong-nhan", "dia-cau", "van-phong"];
+S.bhnhom = (s, deck, b, ctx) => { const VD = ["cong-nhan", "dia-cau", "van-phong"], it = (s.items || []).slice(0, 3);
+  if (anhU(ctx, s)) { const kh = s.photoLayout === "khung", H = tieuDe(s, { w: kh ? 1680 : 900 }), top = Math.max(300, H.day + 40);
+    return `${kh ? anhKhung(ctx, s, { x: 1090, y: top, w: 720, h: 470 }, { fx: vao(0, "fade") }) : anhBen(ctx, s, 1040)}${H.html}${cot3(it.map((x, k) => hangTu(x, VD[k])), 110, top, 920, 1000)}${tienCanh("bh-p-so", "so", { x: kh ? 1500 : 1600, y: kh ? 700 : 760, w: 300, r: -10 }, { mo: 3, ...vao(3) })}`; }
+  const H = tieuDe(s), top = Math.max(300, H.day + 44);
   const so3 = [{ x: 90, y: top + 90, r: -14 }, { x: 260, y: top + 30, r: 0 }, { x: 430, y: top + 90, r: 14 }].map((p, k) => `${hero(`bh-nso${k}`, "so", { x: p.x, y: p.y, w: 300, r: p.r }, { sau: 1.35, ...vao(k) })}${vong(`bh-nsi${k}`, p.x + 96, p.y + 380, 118, VD[k], { z: 8, ...vao(k) })}`).join("");
   return `${H.html}${so3}${cot3(it.map((x, k) => hangTu(x, VD[k])), 830, top, 980, 990)}`; };
 
@@ -221,8 +263,8 @@ S.bhcongthuc = (s, deck, b) => { const t = s.terms || [], p = b === 2 ? 65 : 45,
     ${nguon(s.note)}`; };
 
 // 15 · 17 · BIỂU ĐỒ CỘT (hai bước khi "grow" khác false) — cột bóng mọc; số chú thích tại năm; thẻ kết luận; chồng sổ ở góc
-S.bhcot2 = (s, deck, b) => { const H = tieuDe(s, { w: 1460 }), hai = s.grow !== false, xong = !hai || b === 2, it = s.items || [], n = it.length, top = Math.max(290, H.day + 40);
-  const CR = s.insight ? 1340 : 1810, X0 = 190, X1 = CR - 50, Y0 = top + 440, Y1 = top + 140, hi = Math.max(...it.map((x) => x.value)) * 1.08;
+S.bhcot2 = (s, deck, b) => { const H = tieuDe(s, { w: 1460, px: 60 }), hai = s.grow !== false, xong = !hai || b === 2, it = s.items || [], n = it.length, top = Math.max(290, H.day + 40);
+  const CR = s.insight ? 1340 : 1810, X0 = 190, X1 = CR - 50, Y0 = top + 410, Y1 = top + 130, hi = Math.max(...it.map((x) => x.value)) * 1.08;
   const cw = (X1 - X0) / n, bw = cw * 0.58, xs = (k) => X0 + cw * (k + 0.5), ys = (v) => Y0 - (Y0 - Y1) * v / hi;
   const mau = (x, k) => (x.focus ? "vang" : x.tone === "bad" || (k && x.value < it[k - 1].value) ? "do" : "xanh");
   const sau = (ms) => (b === 2 ? { a: "fade", at: ms, dur: 400 } : hai ? {} : vao(Math.round(ms / 300), "fade"));
@@ -236,7 +278,7 @@ S.bhcot2 = (s, deck, b) => { const H = tieuDe(s, { w: 1460 }), hai = s.grow !== 
   const why = xong ? whys.map((k, j) => { const x = 150 + (j % 2) * ((CR - 150) / 2), y = Y0 + 70 + Math.floor(j / 2) * 70; return `${cham(`bh-wc${j}`, x, y, j, false, sau(1500))}${chu("bh-wt", x + 56, y + 4, (CR - 150) / 2 - 80, `<b>${esc(it[k].label)}</b> ${f(it[k].why)}`, sau(1500))}`; }).join("") : "";
   const ins = s.insight || {};
   const the2 = s.insight && xong ? `${the("bh-ins", { x: 1380, y: top, w: 430, h: 480 }, { nen: "dam", ...sau(1700) })}${chu("bh-iv", 1414, top + 44, 380, f(ins.value || ""), { size: String(ins.value || "").length > 5 ? 96 : 120, color: "ffffff", ...sau(1700) })}${chu("bh-iu", 1414, top + 200, 370, f(ins.unit || ""), { color: "ffffff", ...sau(1700) })}${chu("bh-it", 1414, top + 300, 370, f(ins.text || ""), { color: "dce9ff", ...sau(1700) })}` : "";
-  return `${H.html}${the("bh-khung2", { x: 110, y: top, w: CR - 110, h: 660 }, hai ? {} : vao(0, "fade"))}${chu("bh-cu", 150, top + 30, 700, esc(s.unit ? `Đơn vị: ${s.unit}` : ""))}
+  return `${H.html}${the("bh-khung2", { x: 110, y: top, w: CR - 110, h: 630 }, hai ? {} : vao(0, "fade"))}${chu("bh-cu", 150, top + 30, 700, esc(s.unit ? `Đơn vị: ${s.unit}` : ""))}
     ${lop("bh-truc", { x: X0 - 20, y: Y0, w: X1 - X0 + 40, h: 4 }, tron(P.ink2), { shadow: false, z: 8, alt: "Trục" })}${bands}${cot}${nhanC}${so1}${why}${the2}${nguon(s.note)}`; };
 
 // 16 · ĐÃ PHỦ BAO NHIÊU — 50 người 3D (1 người = 2 %): màu = có BHXH, xám = chưa; hai thẻ phần trăm
@@ -262,8 +304,13 @@ S.bhquy = (s) => { const H = tieuDe(s, { w: 1460 }), rows = s.rows || [], k1 = r
     ${lop("bh-quy", { x: 110, y: top, w: W, h: rows.length * RH }, svg, { shadow: false, alt: "Biểu đồ thu − chi", ...vao(1, "wipe") })}${chuBang}${ghi}${ngoai}${nguon(s.note)}`; };
 
 // 19 · RÚT MỘT LẦN — số đỏ lớn; sổ BHXH bị đóng dấu "đã rút một lần"; ba thẻ ý
-S.bhrut = (s) => { const H = tieuDe(s, { boSub: true }), top = Math.max(330, H.day + 50), fa = (s.facts || []).slice(0, 3), VD = ["dong-ho-cat", "cong-nhan", "xu"];
+S.bhrut = (s, deck, b, ctx) => { const H = tieuDe(s, { boSub: true }), top = Math.max(330, H.day + 50), fa = (s.facts || []).slice(0, 3), VD = ["dong-ho-cat", "cong-nhan", "xu"];
   const ic = (x, k) => tenVat(x.icon === "hourglass" ? "dong-ho-cat" : x.icon === "users-three" ? "cong-nhan" : x.icon === "piggy-bank" ? "xu" : x.icon, VD[k]);
+  if (anhU(ctx, s)) { const R = { x: 110, y: top, w: 880, h: 1000 - top };
+    return `${H.html}${anhKhung(ctx, s, R, { fx: vao(0, "fade") })}
+      ${lop("bh-daurut", { x: R.x + R.w - 330, y: R.y + 30, w: 340, h: 120, r: -10 }, conDau(340, 120), { shadow: false, alt: "Dấu đã rút một lần", z: 12, ...vao(1, "pop") })}${chu("bh-daut", R.x + R.w - 320, R.y + 72, 320, "Đã rút một lần", { align: "center", z: 40, ...vao(1, "pop") })}
+      ${chu("bh-hero", 1040, top - 40, 420, esc(s.num || ""), { size: 220, ...vao(2, "pop") })}${chu("bh-heu", 1050 + rong(String(s.num || ""), 220, "anton") + 24, top + 20, 740 - rong(String(s.num || ""), 220, "anton"), esc(s.unit || ""), { size: 30, ...vao(2) })}
+      ${fa.map((x, k) => { const Y = top + 250 + k * 150, o = { ...vao(3 + k), sau: 0 }; return `${the(`bh-r${k}`, { x: 1040, y: Y, w: 770, h: 128 }, { trai: P.red, traiW: 10, ...o })}${chu("bh-rnum", 1076, Y + 30, 90, `0${k + 1}`, { color: P.red, ...o })}${chu("bh-rt", 1170, Y + (dong(x.text || x, 600, 30, 700) > 1 ? 22 : 42), 610, esc(x.text || x), o)}`; }).join("")}`; }
   return `${H.html}${chu("bh-hero", 96, top - 40, 560, esc(s.num || ""), vao(0, "pop"))}${chu("bh-heu", 110, top + 300, 520, esc(s.unit || ""), vao(0))}
     ${hero("bh-sorut", "so", { x: 660, y: top, w: 300, r: -6 }, vao(1))}${lop("bh-daurut", { x: 640, y: top + 150, w: 340, h: 120, r: -12 }, conDau(340, 120), { shadow: false, alt: "Dấu đã rút một lần", ...vao(2, "pop") })}${chu("bh-daut", 650, top + 192, 320, "Đã rút một lần", { align: "center", ...vao(2, "pop") })}
     ${fa.map((x, k) => { const Y = top + k * 196, o = vao(3 + k); return `${the(`bh-r${k}`, { x: 1040, y: Y, w: 770, h: 172 }, { dai: "do", daiH: 8, ...o })}${vong(`bh-ri${k}`, 1068, Y + 26, 120, ic(x, k), { mau: "do", ...o })}${chu("bh-rt", 1216, Y + 46, 570, esc(x.text || x), o)}`; }).join("")}`; };
@@ -295,13 +342,18 @@ S.bhhanche = (s) => ba(s, false);
 S.bhkiennghi = (s) => ba(s, true);
 
 // 25 · TRẮC NGHIỆM — bốn thẻ đáp án; phong bì lương hưu ở góc; slide sai / đúng
-S.bhhoi = (s, deck, b) => { const op = (s.options || []).slice(0, 4), id = s.id || "cau-hoi", ok = op.findIndex((x) => x.ok);
+S.bhhoi = (s, deck, b, ctx) => { const op = (s.options || []).slice(0, 4), id = s.id || "cau-hoi", ok = op.findIndex((x) => x.ok);
   const nut = (txt, go, x, y, mau) => nhan("bh-nut", x, y, txt, { dac: true, mau, px: 28, w: 340, go });
   if (b === "sai" || b === "dung") { const d = b === "dung" ? s.right || {} : s.wrong || {}, dung = b === "dung";
-    return `${nhan("bh-kicker", 110, 98, s.kicker || "")}${vat("bh-kq", dung ? "dau-tich" : "dau-x", { x: 110, y: 190, w: 150 }, vao(0, "pop"))}${chu("bh-qd", 300, 214, 1400, esc(d.title || ""), { color: dung ? "14a06a" : P.red, ...vao(0) })}
+    return `${kick(s.kicker)}${vat("bh-kq", dung ? "dau-tich" : "dau-x", { x: 110, y: 190, w: 150 }, vao(0, "pop"))}${chu("bh-qd", 300, 214, 1400, esc(d.title || ""), { color: dung ? "14a06a" : P.red, ...vao(0) })}
       ${dung && ok >= 0 ? `${the("bh-dung", { x: 110, y: 410, w: 835, h: 150 }, { trai: "14a06a", ...vao(1) })}${chu("bh-opl2", 160, 444, 90, "ABCD"[ok], { color: P.blue, ...vao(1) })}${chu("bh-opt", 260, 456, 650, esc(op[ok].text), vao(1))}` : ""}
       ${chu("bh-qx", 110, dung ? 610 : 410, 1500, f(d.text || d.hint || ""), vao(2))}${nut(d.button || (dung ? "Tiếp tục" : "Thử lại"), dung ? (s.next || null) : id, 110, 860, dung ? "xanh" : "do")}
       ${hero("bh-pbq", "phongbi", { x: 1460, y: 700, w: 330, r: 4 }, vao(1))}`; }
+  if (anhU(ctx, s)) { const H = tieuDe(s, { w: 1040 }), top = Math.max(330, H.day + 50);
+    return `${anhBen(ctx, s, 1240)}${H.html}${op.map((x, k) => { const X = 110 + (k % 2) * 530, Y = top + Math.floor(k / 2) * 250, go = `${id}-${x.ok ? "dung" : "sai"}`, o = { ...vao(k), sau: 0 };
+      return `${the(`bh-op${k}`, { x: X, y: Y, w: 500, h: 220 }, { go, ...o })}${lop(`bh-opc${k}`, { x: X + 30, y: Y + 30, w: 96, h: 96 }, `<svg viewBox="0 0 100 100" width="100%" height="100%"><defs><linearGradient id="og${k}${U}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a8bff"/><stop offset="1" stop-color="#0b57d0"/></linearGradient></defs><circle cx="50" cy="50" r="50" fill="url(#og${k}${U})"/></svg>`, { shadow: false, go, alt: "Vòng chữ cái", ...o })}
+        ${chu("bh-opl", X + 30, Y + 48, 96, "ABCD"[k], { align: "center", go, size: 56, ...o })}${chu("bh-opt", X + 30, Y + 146, 440, esc(x.text), { go, size: 32, ...o })}`; }).join("")}
+      ${chu("bh-hint", 110, top + 510, 1000, "Bấm vào một thẻ để chọn")}`; }
   const H = tieuDe(s);
   return `${H.html}${hero("bh-pbq", "phongbi", { x: 1580, y: 860, w: 230, r: -4 })}${op.map((x, k) => { const X = 110 + (k % 2) * 865, Y = 330 + Math.floor(k / 2) * 250, go = `${id}-${x.ok ? "dung" : "sai"}`, o = vao(k);
     return `${the(`bh-op${k}`, { x: X, y: Y, w: 835, h: 210 }, { go, ...o })}${lop(`bh-opc${k}`, { x: X + 40, y: Y + 45, w: 120, h: 120 }, `<svg viewBox="0 0 100 100" width="100%" height="100%"><defs><linearGradient id="og${k}${U}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a8bff"/><stop offset="1" stop-color="#0b57d0"/></linearGradient></defs><circle cx="50" cy="50" r="50" fill="url(#og${k}${U})"/></svg>`, { shadow: false, go, alt: "Vòng chữ cái", ...o })}
@@ -319,12 +371,17 @@ S.bhtraloi = (s) => { const H = tieuDe(s), an = (s.answers || []).slice(0, 3), t
 // 27 · GHI NHỚ — câu chốt lớn + ba thẻ số (bấm để quay lại slide chứng minh); người cao tuổi nhận phong bì lương hưu
 S.bhghinho = (s) => { const ch = (s.chips || []).slice(0, 3);
   return `${vat("bh-gg", "nguoi-gia", { x: 1500, y: 150, w: 260 }, vao(0))}${hero("bh-gp", "phongbi", { x: 1330, y: 330, w: 260, r: -6 }, vao(1))}
-    ${nhan("bh-kicker", 110, 98, s.kicker || "Ghi nhớ")}${chu("bh-gh", 110, 160, 1200, tx((s.lines || []).join("\n")))}
+    ${kick(s.kicker || "Ghi nhớ")}${chu("bh-gh", 110, 160, 1200, tx((s.lines || []).join("\n")))}
     ${ch.map((x, k) => { const X = 110 + k * 580, Y = 560, o = vao(2 + k); return `${the(`bh-g${k}`, { x: X, y: Y, w: 540, h: 300 }, { nen: "dam", go: x.go, ...o })}${chu("bh-gn", X + 40, Y + 36, 460, esc(x.n), { go: x.go, color: "ffffff", ...o })}${chu("bh-gt", X + 40, Y + 196, 460, esc(x.text), { go: x.go, color: "ffffff", ...o })}`; }).join("")}
     ${s.basis ? nguon(s.basis) : ""}`; };
 
 // 28 · KẾT — lời cảm ơn; mặt bàn khép bài: ảnh người nhận lương hưu đóng khung, sổ BHXH, phong bì lương hưu
-S.bhket = (s, deck, b, ctx) => { const n = dong(s.title, 880, 72, 800), y = 280 + n * 84 + 30, team = (s.team || []).slice(0, 4).map((t) => t.name).join(" · ");
+S.bhket = (s, deck, b, ctx) => { if (anhU(ctx, s)) { const px = 96, n = dong(s.title, 1050, px, "anton"), y0 = 300, y = y0 + n * Math.round(px * 1.06) + 30, team = (s.team || []).slice(0, 4).map((t) => t.name).join(" · ");
+    return `${anhTran(ctx, s)}${tienCanh("bh-p-phongbi", "phongbi", { x: 1460, y: 760, w: 420, r: 8 }, vao(2))}
+      ${kick(s.kicker, 116, 220, { mau: "vang", fx: vao(0) })}${chu("bh-h1", 110, y0, 1100, tx(s.title || "Cảm ơn"), { size: px, ...vao(0) })}
+      ${s.message ? chu("bh-sub", 116, y, 900, tx(s.message), vao(1)) : ""}${s.sub ? chu("bh-ks", 116, y + 20 + dong(s.message, 900, 30, 400) * 42, 900, esc(s.sub), vao(1)) : ""}
+      ${team ? chu("bh-au", 116, 900, 900, esc(team), vao(1)) : ""}`; }
+  const n = dong(s.title, 880, 72, 800), y = 280 + n * 84 + 30, team = (s.team || []).slice(0, 4).map((t) => t.name).join(" · ");
   return `${khungAnh(ctx, s, { x: 1080, y: 130, w: 730, h: 540, r: -3 }, "bh-anh", vao(0, "fade"))}${hero("bh-p-so", "so", { x: 1010, y: 560, w: 280, r: -10 }, vao(1))}${hero("bh-p-phongbi", "phongbi", { x: 1520, y: 690, w: 300, r: 4 }, vao(2))}
     ${kick(s.kicker, 110, 220, { m: false })}${chu("bh-h1", 110, 280, 880, tx(s.title || "Cảm ơn"), { size: 72 })}
     ${s.message ? chu("bh-sub", 110, y, 860, tx(s.message)) : ""}${s.sub ? chu("bh-ks", 110, y + 20 + dong(s.message, 860, 30, 400) * 42, 860, esc(s.sub)) : ""}
@@ -345,37 +402,43 @@ function render(s, deck, ctx, { i, n }) {
   if (s.type === "bhhoi" && !s.next) s = { ...s, next: (deck.slides[i + 1] || {}).id || `s${i + 2}` };
   return buoc.map((b) => { HV = b !== 2;
     const coBan = !["bhbia", "bhket", "bhchuong"].includes(s.type);
-    const html = tenMorph(`${khung(s, deck, i, n, s.type !== "bhbia" && s.type !== "bhket")}${coBan ? ban(deck, i) : ""}${S[s.type](s, deck, b, ctx)}`, s.type);
+    const than = S[s.type](s, deck, b, ctx), phai = !than.includes('data-l="bh-anhben"');   // ảnh tràn mép phải: bỏ số trang + thanh tiến độ (đè lên ảnh)
+    const html = tenMorph(`${khung(s, deck, i, n, s.type !== "bhbia" && s.type !== "bhket", phai)}${coBan ? ban(deck, i) : ""}${than}`, s.type);
     HV = true;
-    const sec = `<section class="s bh" data-type="${esc(s.type)}" data-title="${esc(String(s.title || "").replace(/[[\]]/g, ""))}"><div class="cv">${html}</div></section>`;
+    const toi = ["bhbia", "bhket", "bhchuong"].includes(s.type) && !!(ctx && s.photo && ctx.img(s.photo));
+    const sec = `<section class="s bh${toi ? " toi" : ""}" data-type="${esc(s.type)}" data-title="${esc(String(s.title || "").replace(/[[\]]/g, ""))}"><div class="cv">${html}</div></section>`;
     // chuyển cảnh: MÁY QUAY (hinh/may_quay.js) — khung + dải đầu đứng yên, cả cảnh trôi sang trái theo mạch bài; vào phần mới máy quay đi xuống;
     // slide ngay sau slide mở phần: máy quay phóng vào hình chính của phần. Bước 2 của slide hai bước: Morph thường (một vật đổi). Trắc nghiệm sai / đúng: mờ.
     const quiz = typeof b === "string", prev = deck.slides[i - 1];
-    const cam = quiz || b === 2 || i === 0 ? null : s.type === "bhchuong" ? "pan:0,1" : prev && prev.type === "bhchuong" ? "zoom:2.6,1460,500" : "pan:1,0";
+    const cam = quiz || b === 2 || i === 0 ? null : s.type === "bhchuong" ? "pan:0,1" : prev && prev.type === "bhchuong" ? (prev.photo ? "zoom:2.4,700,520" : "zoom:2.6,1460,500") : "pan:1,0";
     return { id: b === 2 ? `${id}-b2` : quiz ? `${id}-${b}` : id, html: sec, tu: false, trans: quiz ? "fade" : "morph", cam, dur: b === 2 ? 900 : quiz ? 400 : cam && cam.startsWith("zoom") ? 1000 : 850, noclick: s.type === "bhhoi" && b !== "dung" }; });
 }
 
 const cham = `url("data:image/svg+xml;utf8,${encodeURIComponent("<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><circle cx='2' cy='2' r='1.6' fill='#0b57d0' fill-opacity='.06'/></svg>")}")`;
 const css = `
-.s.bh { background: radial-gradient(ellipse 50% 55% at 96% 0%, rgba(130,180,255,.20), transparent 64%), linear-gradient(180deg, #ffffff 0%, #f6f9fe 70%, #eef4fc 100%); color: #${P.ink}; }
+.s.bh { background: radial-gradient(ellipse 45% 55% at 97% 0%, rgba(30,123,255,.24), transparent 66%), radial-gradient(ellipse 40% 50% at 0% 100%, rgba(30,123,255,.12), transparent 66%), linear-gradient(160deg, #ffffff 0%, #eaf2ff 62%, #d9e8ff 100%); color: #${P.ink}; }
+.s.bh.toi { background: #072a6b; }
+.s.bh.toi .bh-hdp { color: rgba(255,255,255,.72); } .s.bh.toi .bh-hdn { color: #ffc94a; }
+.s.bh.toi .bh-h1, .s.bh.toi .bh-hc { color: #ffffff; } .s.bh.toi .bh-h1 em, .s.bh.toi .bh-hc em { color: #ffc94a; }
+.s.bh.toi .bh-sub { color: rgba(255,255,255,.88); } .s.bh.toi .bh-au { color: #ffffff; } .s.bh.toi .bh-aus { color: rgba(255,255,255,.7); } .s.bh.toi .bh-ks { color: #ffc94a; }
 .s.bh .cv { position: absolute; inset: 0; }
 .bh-l { position: absolute; } .bh-l > svg, .bh-l > img { display: block; width: 100%; height: 100%; }
 .s.bh [data-t] { position: absolute; }
 .s.bh em { font-style: normal; color: #${P.blue}; }
 .bh-nhan { font: 800 20px/1.2 var(--fb); letter-spacing: .08em; text-transform: uppercase; }
 .bh-hdp { font: 800 18px/1.2 var(--fb); letter-spacing: .1em; text-transform: uppercase; color: #6f8bb8; } .bh-hdn { font: 800 20px/1 var(--fb); color: #${P.blue}; }
-.bh-h { font: 800 54px/1.18 var(--fb); color: #${P.navy}; }
-.bh-kk { font: 800 22px/1.2 var(--fb); letter-spacing: .1em; text-transform: uppercase; color: #${P.blue}; }
+.bh-h { font: 400 72px/1.1 'Anton', sans-serif; text-transform: uppercase; color: #072a6b; }
+.bh-kk { font: 800 22px/1.2 var(--fb); letter-spacing: .06em; text-transform: uppercase; color: #ffffff; }
 .bh-rn1 { font: 800 34px/1.2 var(--fb); color: #${P.navy}; } .bh-rd { font: 400 27px/1.37 var(--fb); color: #${P.ink2}; } .bh-rr { font: 800 20px/1.2 var(--fb); letter-spacing: .08em; text-transform: uppercase; }
 .bh-sh { font: 800 22px/1.25 var(--fb); letter-spacing: .08em; text-transform: uppercase; color: #9a2a20; } .bh-mdt { font: 800 52px/1 var(--fb); letter-spacing: .12em; text-transform: uppercase; color: #c77a06; }
-.bh-h1 { font: 800 76px/1.16 var(--fb); color: #${P.navy}; }
-.bh-hc { font: 800 64px/1.18 var(--fb); color: #${P.navy}; }
+.bh-h1 { font: 400 84px/1.06 'Anton', sans-serif; text-transform: uppercase; color: #072a6b; }
+.bh-hc { font: 400 72px/1.06 'Anton', sans-serif; text-transform: uppercase; color: #072a6b; }
 .bh-pnum { font: 400 250px/1 'Anton', sans-serif; color: #${P.blue}; }
 .bh-sub { font: 400 30px/1.4 var(--fb); color: #${P.ink2}; }
 .bh-au { font: 800 32px/1.2 var(--fb); color: #${P.navy}; } .bh-aus { font: 400 24px/1.3 var(--fb); color: #${P.mute}; } .bh-ks { font: 800 28px/1.3 var(--fb); color: #${P.blue}; }
 .bh-cr { font: 400 20px/1.2 var(--fb); color: #${P.mute}; }
 .bh-src { font: 400 22px/1.35 var(--fb); color: #${P.mute}; }
-.bh-q { font: 800 96px/1.14 var(--fb); color: #${P.navy}; } .bh-qb { font: 800 112px/1.1 var(--fb); color: #${P.blue}; }
+.bh-q { font: 400 112px/1.08 'Anton', sans-serif; text-transform: uppercase; color: #072a6b; } .bh-qb { font: 400 128px/1.05 'Anton', sans-serif; text-transform: uppercase; color: #${P.blue}; }
 .bh-ct { font: 800 34px/1.2 var(--fb); color: #${P.navy}; } .bh-cd { font: 400 26px/1.3 var(--fb); color: #${P.ink2}; }
 .bh-yr { font: 400 50px/1 'Anton', sans-serif; color: #${P.navy}; } .bh-bv { font: 400 80px/1 'Anton', sans-serif; } .bh-leg { font: 400 24px/1.3 var(--fb); color: #${P.mute}; }
 .bh-hev { font: 400 130px/1 'Anton', sans-serif; } .bh-hel { font: 700 28px/1.3 var(--fb); }
@@ -404,7 +467,7 @@ const css = `
 .bh-iv { font: 400 120px/1 'Anton', sans-serif; } .bh-iu { font: 800 32px/1.2 var(--fb); } .bh-it { font: 400 27px/1.38 var(--fb); }
 .bh-pv { font: 400 140px/1 'Anton', sans-serif; } .bh-pl { font: 700 30px/1.3 var(--fb); }
 .bh-qy { font: 400 34px/1 'Anton', sans-serif; } .bh-qv { font: 400 34px/1.1 'Anton', sans-serif; } .bh-qn { font: 400 26px/1.3 var(--fb); color: #${P.ink2}; } .bh-qn b { font-weight: 800; color: #${P.navy}; }
-.bh-hero { font: 400 300px/1 'Anton', sans-serif; color: #${P.red}; } .bh-heu { font: 800 36px/1.25 var(--fb); color: #${P.navy}; } .bh-rt { font: 700 30px/1.3 var(--fb); color: #${P.ink}; }
+.bh-hero { font: 400 300px/1 'Anton', sans-serif; color: #${P.red}; } .bh-heu { font: 800 36px/1.25 var(--fb); color: #${P.navy}; } .bh-rt { font: 700 30px/1.3 var(--fb); color: #${P.ink}; } .bh-rnum { font: 400 54px/1 'Anton', sans-serif; }
 .bh-daut { font: 800 28px/1.2 var(--fb); color: #${P.red}; text-transform: uppercase; }
 .bh-ctg { font: 800 22px/1.2 var(--fb); letter-spacing: .1em; text-transform: uppercase; color: #${P.blue}; } .bh-ctx { font: 800 30px/1.3 var(--fb); color: #${P.navy}; }
 .bh-mkn { font: 700 22px/1.2 var(--fb); color: #${P.mute}; }
@@ -413,10 +476,10 @@ const css = `
 .bh-dv { font: 400 104px/1 'Anton', sans-serif; color: #${P.blue}; } .bh-dh { font: 800 30px/1.2 var(--fb); color: #${P.navy}; } .bh-dt { font: 400 26px/1.3 var(--fb); color: #${P.ink2}; }
 .bh-hn { font: 800 40px/1.15 var(--fb); } .bh-hw { font: 800 27px/1.25 var(--fb); } .bh-hw i { font-style: normal; color: #${P.mute}; font-weight: 400; } .bh-hd { font: 400 28px/1.4 var(--fb); color: #${P.ink2}; }
 .bh-opl { font: 400 64px/1 'Anton', sans-serif; color: #ffffff; } .bh-opl2 { font: 400 72px/1 'Anton', sans-serif; } .bh-opt { font: 800 38px/1.2 var(--fb); color: #${P.navy}; }
-.bh-qd { font: 800 104px/1.05 var(--fb); } .bh-qx { font: 400 36px/1.45 var(--fb); color: #${P.ink}; } .bh-qx em { color: #${P.blue}; font-weight: 800; }
+.bh-qd { font: 400 112px/1.05 'Anton', sans-serif; text-transform: uppercase; } .bh-qx { font: 400 36px/1.45 var(--fb); color: #${P.ink}; } .bh-qx em { color: #${P.blue}; font-weight: 800; }
 .bh-an { font: 400 96px/1 'Anton', sans-serif; color: #${P.sky2}; } .bh-aq { font: 700 26px/1.3 var(--fb); color: #${P.mute}; } .bh-aa { font: 800 32px/1.32 var(--fb); color: #${P.navy}; } .bh-aa em { color: #${P.blue}; }
 .bh-vd { font: 400 34px/1.3 var(--fb); } .bh-vd b { font-weight: 800; color: #ffd76a; margin-right: 8px; }
-.bh-gh { font: 800 120px/1.12 var(--fb); color: #${P.navy}; } .bh-gh em { color: #${P.blue}; }
+.bh-gh { font: 400 128px/1.06 'Anton', sans-serif; text-transform: uppercase; color: #072a6b; } .bh-gh em { color: #${P.blue}; }
 .bh-gn { font: 400 130px/1 'Anton', sans-serif; } .bh-gt { font: 700 30px/1.3 var(--fb); }`;
 
 module.exports = { TYPES, render, css };

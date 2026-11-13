@@ -270,21 +270,27 @@ Vì sao có: bài "Tổng quan Công pháp quốc tế" (13/11/2026) dựng bằ
 - **Còn thiếu** (deck dùng type thường cho các slide này, nên nền và khung chưa đồng bộ): so sánh hai bên, trích điều luật, thứ bậc, cây điều kiện, chuỗi hệ quả, danh sách nguyên tắc, trắc nghiệm, chốt ý, cảm ơn. Hướng sửa gốc: "da theo môn" — mục E3-P3 của `loi-da-biet-2026-11.md`.
 - Ví dụ: `examples/hoi-nghi-qt/deck.json` (3 slide). Dựng: `node hinh/dung.js examples/hoi-nghi-qt/deck.json /tmp/qt.pptx --soat`.
 
-## 10. Bộ hình riêng theo môn: BHXH bản gộp "sạch · nhận ra đề tài · sinh động" (An sinh xã hội) — `hinh/so_bhxh.js`, vật `hinh/bhxh_3d.js` + `hinh/f3d.js`
+## 10. Bộ hình riêng theo môn: BHXH — hướng "ảnh thật kiểu Flashslide" (An sinh xã hội) — `hinh/so_bhxh.js`, vật `hinh/bhxh_3d.js` + `hinh/f3d.js`, máy quay `hinh/may_quay.js`
 
-Lịch sử (11/2026), bốn lần làm trước khi đạt:
-1. "Bàn hồ sơ": vật tự vẽ phẳng, nền tối, Morph kéo 20–50 vật mỗi lần bấm → **xấu, rối, chóng mặt, khó hiểu** (ẩn dụ phải giải mã).
-2. "Báo cáo sáng": nền trắng trơn, icon nét phẳng → sạch nhưng **xấu, đơn giản**.
-3. "Flashslide xanh": tiêu đề in hoa Anton, vật 3D bóng, thẻ đậm → bóng bẩy nhưng **chưa đạt ý**: hình chung chung (khiên, xu, biểu đồ kính), che chữ không nhận ra BHXH.
-4. Bản gộp (hiện tại) — người dùng yêu cầu học ba điều, áp đồng thời:
+Lịch sử (11/2026), sáu lần làm — năm lần đầu bị chê "chưa đạt":
+1. "Bàn hồ sơ": vật tự vẽ phẳng, nền tối, Morph kéo 20–50 vật mỗi lần bấm → **xấu, rối, chóng mặt, khó hiểu**.
+2. "Báo cáo sáng": nền trắng trơn, icon nét phẳng → sạch nhưng **nhạt**.
+3. "Flashslide xanh": tiêu đề Anton, vật 3D bóng chung chung (khiên, xu) → che chữ không nhận ra BHXH.
+4. Bản gộp: khung Office + vật BHXH chở dữ liệu + bút/thước trôi → **chưa đạt** (13/33 slide danh sách chỉ là thẻ trắng).
+5. Mẫu lần 5: bỏ bút/thước, "một vật BHXH lớn + hàng gọn", **máy quay Morph** → vẫn **chưa đạt**.
+6. **Ảnh thật (hiện tại)** — sau khi đo 30 slide Flashslide đơn lẻ.
 
-**Sạch như bản lưới Office cũ**: khung viền đôi mảnh + dải đầu (tên phần trái, số trang + thanh tiến độ phải) **giống hệt mọi slide** và đứng yên khi chuyển; nhãn câu hỏi khung viền trên tiêu đề; tiêu đề **chữ thường** (Be Vietnam Pro 800); Anton chỉ cho số lớn; một màu xanh BHXH + đỏ cảnh báo + vàng nhấn; nhiều khoảng trắng.
+**Gốc của năm lần chê: chất liệu hình, không phải bố cục.** Đo bằng máy (`độ bão hoà · nền trơn · vùng có vân ảnh chụp`): Flashslide 0,36 · 23% · 41%; bản vẽ bằng code 0,11 · 42% · 26%; ba slide thử bằng ảnh báo 0,34 · 30% · 41%. Flashslide sống nhờ **ảnh chụp / ảnh 3D dựng thật chiếm ~40% slide**, **một màu chủ đạo đậm phủ cả bộ**, **tiêu đề chữ đứng in hoa cỡ lớn + viên nhãn màu**, thẻ trắng nổi trên nền ảnh, vật mờ ở tiền cảnh. Vật vẽ bằng code trên nền trắng **không với tới** được — đừng hứa "kiểu Flashslide" khi chỉ có hình vẽ code.
 
-**Che chữ vẫn nhận ra đề tài** (luật của skill infographic: một hình chính lấy từ thế giới đề tài và CHỞ DỮ LIỆU): vật vẽ bằng code từ những thứ người xem thấy tận mắt — sổ BHXH, trang "quá trình đóng", phiếu lương có dòng trích đóng BHXH, phong bì lương hưu, điện thoại tra cứu, sách Luật BHXH 2024. Ví dụ: số người tham gia = **chồng sổ đếm được** (12 → 19 cuốn, 1 cuốn = 1 triệu người); mốc hưu = **20 ô năm trên trang sổ**, bước 2 còn 15 và phong bì lương hưu trượt về; công thức = phiếu lương → thanh tỷ lệ → phong bì; rút một lần = **sổ bị đóng dấu**, ô năm bị gạch. Khiên, xu, biểu đồ chung chung chỉ còn là vật phụ.
+Hệ hình hiện tại:
+- **Ảnh báo thật** (deck `imagePolicy: "classroom"`: chỉ chiếu trên lớp, `photoSource` = bài gốc, `photoCredit` = "Ảnh: tác giả / báo" in nhỏ ở chân slide): quầy BHXH, nhân viên BHXH hỗ trợ người cao tuổi, công nhân, đám đông chờ rút một lần, phiên Quốc hội… **Đọc chú thích gốc trước khi gắn ảnh vào slide**: ảnh "người bán rau" hoá ra là "công nhân KCX mua rau sau giờ làm" → không được dùng cho slide "lao động chưa có BHXH". Mỗi bài báo một ảnh.
+- Ba cách đặt ảnh: `anhTran` (bìa, mở phần, kết — ảnh tràn viền phủ xanh BHXH đậm, chữ trắng, cụm nhấn vàng, lớp `.toi`), `anhBen` (ảnh tràn mép phải, dải mờ vào nền; slide này bỏ số trang + thanh tiến độ), `anhKhung` (khung bo 30 px + bóng + viên chú thích trắng). Không có `photo` → bố cục vật BHXH vẽ bằng code (bản lần 5) — ví dụ `examples/so-bhxh` dùng nhánh này.
+- Chữ: tiêu đề **Anton in hoa** 72 px (dài quá 2 dòng → 60 px), bìa 104, mở phần 100; kicker = **viên thuốc** gradient xanh (trên nền tối: vàng); thân Be Vietnam Pro ≥ 26 px.
+- Nền sáng ngả xanh rõ (không trắng trơn), quầng xanh góc phải; slide tối = ảnh + phủ xanh `#072a6b`.
+- Vật code còn dùng: chở dữ liệu (chồng sổ đếm được, trang sổ 20 → 15 ô, phiếu lương → phong bì, sổ đóng dấu) và **tiền cảnh mờ** (`tienCanh`: sổ, sách luật, phong bì làm mờ ở góc — chiều sâu).
+- **Máy quay** (`data-cam`, `hinh/may_quay.js`): khung + dải đầu đứng yên, cả cảnh trôi trái (vật gần nhanh hơn — `data-sau`), vào phần mới đi xuống, sau slide mở phần phóng vào; hàng danh sách đứng ngoài máy quay (`data-sau="0"`) và hiện lần lượt khi máy quay dừng.
 
-**Sinh động như Flashslide** (xem từng khung hình video mẫu): mặt bàn sáng có bút + thước **trôi theo máy quay** mỗi slide (Morph 0,65 s, cùng một hướng; slide mở phần đặt lại); hình chính của slide mở phần thu về góc slide kế; nội dung **hiện lần lượt tự chạy** (`data-a="rise"`, cách nhau 0,15 s — người trình bày chỉ bấm để sang slide); slide hai bước đổi đúng một vật. Không có vật nhỏ bay lung tung.
-
-Kỹ thuật: lớp ảnh được thêm tiền tố kiểu slide vào tên Morph (hai kiểu khác nhau không ghép nhầm); vật `bh-p-…` và phần khung `bh-hd-…` giữ tên để trôi / đứng yên. Ở bước 2 của slide hai bước tắt hiệu ứng vào (mọi thứ đã có), chỉ vật mới hiện sau Morph. Đo chữ bằng chính file font; không ký hiệu ngoài font; hộp chữ một dòng / cỡ tiêu đề không tự xuống dòng (build.js).
+Kỹ thuật: lớp ảnh thêm tiền tố kiểu slide vào tên Morph; vật `bh-p-…` và dải đầu `bh-hd-…` giữ tên. Bước 2 của slide hai bước: Morph thường. Đo chữ bằng file font (Anton đo ở dạng in hoa). Hộp chữ một dòng / cỡ tiêu đề không tự xuống dòng (build.js).
 
 | type | Dùng cho | Trường chính |
 |---|---|---|
