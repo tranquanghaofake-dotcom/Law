@@ -2,7 +2,8 @@
 // SOÁT CHI TIẾT (nguyên tắc "mỗi chi tiết một lý do", references/nguyen-tac-bo-cuc.md mục 8) — đo trên deck.html của hinh/dung.js:
 //   node scripts/soat_chi_tiet.js <thư_mục>_lop/deck.html [--json=out.json] [--lech=2..10]
 // Dữ liệu đặt theo số (nhãn giá trị cạnh thanh): hộp chữ có data-dl → không xét thẳng hàng.
-// Bóng chữ (text-shadow) tắt ở cả hai lần chụp: thẳng hàng / tương phản xét trên NÉT chữ, không trên bóng.
+// Bóng chữ (text-shadow) GIỮ ở cả hai lần chụp: chữ trong suốt vẫn đổ bóng → nền đo được có bóng (bóng giúp đọc rõ là có thật);
+// nét chữ chỉ tính điểm gần màu chữ nên bóng không làm lệch phép đo thẳng hàng.
 // Mỗi slide chụp hai lần: đủ chữ và ẩn chữ (chữ trong suốt — GIỮ nền riêng của hộp chữ: viên nhãn, nút, vòng chữ cái). Hiệu hai ảnh = NÉT CHỮ THẬT (không phải hộp chữ).
 //   (1) GẦN THẲNG HÀNG: mép trái nét chữ của hai hộp chữ canh trái lệch nhau 2–10 px — gần như thẳng mà không thẳng (Robin Williams:
 //       "Nothing should be placed on the page arbitrarily"). Cố ý lệch thì lệch hẳn (≥ 16 px); thẳng thì thẳng tới từng px.
@@ -25,7 +26,7 @@ async function soat(html) {
   await page.goto("file://" + path.resolve(html)); await page.evaluate(() => window.hinhSanSang); await page.waitForTimeout(400);
   const n = await page.evaluate(() => { const st = document.createElement("style");
     st.textContent = `html, body { margin: 0 !important; overflow: hidden; } section.s { position: fixed !important; left: 0 !important; top: 0 !important; margin: 0 !important; display: none !important; }
-      section.s.xem { display: block !important; } section.s.xem [data-t], section.s.xem [data-t] * { text-shadow: none !important; } section.s.anchu [data-t], section.s.anchu [data-t] * { color: transparent !important; -webkit-text-fill-color: transparent !important; text-shadow: none !important; text-decoration-color: transparent !important; } [data-a] { opacity: 1 !important; }`;
+      section.s.xem { display: block !important; } section.s.anchu [data-t], section.s.anchu [data-t] * { color: transparent !important; -webkit-text-fill-color: transparent !important; text-decoration-color: transparent !important; } [data-a] { opacity: 1 !important; }`;
     document.head.appendChild(st); window.scrollTo(0, 0); return document.querySelectorAll("section.s").length; });
   const anh = async () => { const { data, info } = await sharp(await page.screenshot({ type: "png" })).removeAlpha().raw().toBuffer({ resolveWithObject: true }); return { d: data, w: info.width, h: info.height }; };
   const out = [];

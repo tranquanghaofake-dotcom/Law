@@ -187,7 +187,7 @@ table { border-collapse: collapse; width: 100%; }
 th { font: 800 24px/1.2 var(--fb); text-align: left; padding: 14px 22px; background: var(--ink); color: var(--paper); }
 td { font: 600 32px/1.36 var(--fb); padding: 26px 22px; border-bottom: 5px solid var(--ink); vertical-align: top; }
 td.q { font: 400 54px/1.15 var(--fd); width: 380px; } td .mk { display: inline-flex; margin-right: 14px; vertical-align: -8px; }
-td.e { color: var(--paper-3); font: 400 40px/1 var(--fd); }
+td.e { color: var(--mut); font: 400 40px/1 var(--fd); }   /* "—" = ô không có: nhạt nhưng vẫn đọc được (≥ 3 : 1) */
 tr.on td { background: var(--amber); }
 
 /* ── cards ── */
@@ -200,7 +200,8 @@ tr.on td { background: var(--amber); }
 /* ── photo ── */
 .pho { padding: 0; justify-content: flex-end; }
 .pho .img { position: absolute; inset: 0; z-index: 1; background-size: cover; background-position: center; filter: grayscale(1) contrast(1.1); }
-.pho .tint { position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, rgba(12,18,34,.25) 0, rgba(12,18,34,.94) 78%), linear-gradient(120deg, rgba(226,64,42,.55), transparent 60%); }
+/* lớp phủ ảnh: đậm ở cả đầu (da đặt chữ trên) và chân (chữ dưới) — chữ nhấn màu trên ảnh phải đạt 3 : 1 (scripts/soat_chi_tiet.js), giữa để thoáng cho ảnh */
+.pho .tint { position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, rgba(12,18,34,.78) 0, rgba(12,18,34,.62) 34%, rgba(12,18,34,.5) 52%, rgba(12,18,34,.94) 82%), linear-gradient(120deg, rgba(226,64,42,.45), transparent 60%); }
 .pho .in { padding: 0 110px 96px; z-index: 3; } .pho .h { font-size: 92px; max-width: 1500px; }
 
 /* ── closing ── */
