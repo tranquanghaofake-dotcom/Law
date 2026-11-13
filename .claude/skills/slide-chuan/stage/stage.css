@@ -444,3 +444,4 @@ th.on { background: var(--hl); } td.on { background: var(--paper-2); font-weight
 /* mũi tên trang trí là icon SVG (ký tự → ← phải nhờ font ký hiệu của máy chiếu) */
 .ma .ico, .fn .arw .ico { display: block; margin: 0 auto; } .ma .ico svg { width: .9em; height: .9em; } .fn .arw .ico svg { width: .8em; height: .8em; } .lg-h .ico { vertical-align: -3px; }
 .cv-logo { position: absolute; right: 110px; top: 70px; height: 96px; max-width: 280px; object-fit: contain; z-index: 4; }
+.fc .card .fv { display: block; height: 8px; margin-top: 10px; background: var(--hl); } .fc .card.hot .fv { background: var(--ink); }
