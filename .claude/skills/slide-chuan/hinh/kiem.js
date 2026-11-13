@@ -8,7 +8,7 @@ const ART_TYPES = new Set(["panelrows", "lawquote", "bctrich"]);   // bctrich (h
 // trường làm ra hình thật trong tầng hình ảnh
 const VISUAL_KEYS = new Set(["photo", "cutout", "emoji", "emoji2", "icon"]);
 // type tự mang hình, không cần trường riêng (mở sách luôn có vật trên bàn)
-const INTRINSIC = new Set(["book", ...require("./bang_chung").TYPES]);   // book: vật trên bàn; bc*: bộ hình "bảng bằng chứng" (hinh/bang_chung.js)
+const INTRINSIC = new Set(["book", ...require("./bang_chung").TYPES, ...require("./hoi_nghi").TYPES]);   // book: vật trên bàn; bc*: bộ hình "bảng bằng chứng" (hinh/bang_chung.js)
 
 function coHinh(o) {
   if (Array.isArray(o)) return o.some(coHinh);

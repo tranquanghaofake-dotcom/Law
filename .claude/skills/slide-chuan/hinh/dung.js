@@ -14,6 +14,7 @@ const { doiMau } = require("./bang_mau");
 const { kiemDeck } = require("./kiem");
 let canh = { TYPES: [], render: null, css: "", script: "" };
 const bc = require("./bang_chung");
+const qt = require("./hoi_nghi");   // bộ hình "bàn hội nghị quốc tế" (Công pháp quốc tế)
 try { canh = require("./canh"); } catch (e) { if (e.code !== "MODULE_NOT_FOUND" || !/canh/.test(e.message)) throw e; }
 
 const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -44,6 +45,7 @@ function dungHtml(deck, { deckDir = process.cwd(), mau, chuyen } = {}) {
   let sauSach = -1;                                                        // vị trí slide đầu tiên sau cảnh mở sách (cuốn sách thu về góc thành nút Mục lục)
   src.forEach((s, i) => {
     const note = s.notes || parts[i] || "";
+    if (qt.TYPES.includes(s.type)) { const secs = qt.render(s, deck, ctx, { i, n, st }); secs.forEach((sec) => out.push({ ...sec, notes: note, src: i })); st.prev = new Set(); return; }
     if (bc.TYPES.includes(s.type)) { const secs = bc.render(s, deck, ctx, { i, n, st }); secs.forEach((sec) => out.push({ ...sec, notes: note, src: i })); st.prev = new Set(); return; }
     if (canh.TYPES.includes(s.type)) { const secs = canh.render(s, deck, ctx, { i, n, st }); secs.forEach((sec, k) => out.push({ ...sec, notes: sec.notes ?? (k === 0 ? note : ""), src: i })); if (s.type === "book") sauSach = out.length; return; }
     st.prev = new Set();
@@ -66,7 +68,7 @@ function dungHtml(deck, { deckDir = process.cwd(), mau, chuyen } = {}) {
 ${tomau(css)}
 /* bản PowerPoint: bỏ lớp hạt in phủ toàn slide (lớp ảnh và nền phải cùng chất), bỏ chế độ trình chiếu trong trình duyệt */
 .s::after { display: none !important; }
-${tomau((canh.css || "") + (bc.css || ""))}
+${tomau((canh.css || "") + (bc.css || "") + (qt.css || ""))}
 </style></head>
 <body>
 ${tomau(body)}

@@ -1,11 +1,11 @@
 // Kiểm "bản đồ hỗ trợ" của tầng hình ảnh — phần BỔ SUNG cho hinh/kiem.js (kiem.js lo: `art`, `meta.kit`, deck toàn chữ, Bước 0).
 // Ở đây: chart kind không có hình riêng, meta ngoài kit bị bỏ qua, kiểu poster, `photo` sai type, `emoji` sai type, deck ít cảnh.
-const CANH = [...require("./bang_chung").TYPES, "book", "bigq", "picks", "lawquote", "tiles", "strip", "cases", "chain", "quizgo", "recap", "toc"];
+const CANH = [...require("./bang_chung").TYPES, ...require("./hoi_nghi").TYPES, "book", "bigq", "picks", "lawquote", "tiles", "strip", "cases", "chain", "quizgo", "recap", "toc"];
 const CHART_OK = ["bar", "column", "line", "step", "span"];
 const ANH_OK = ["cover", "photo", "split", "photostats", "frame", "headline", "lens", "collage", "beforeafter", "photostrip", "gallery", "mosaic", "panelrows"];
 const META_BO_QUA = ["style", "art", "motif", "frame", "paper", "native"];   // meta.kit do kiem.js báo
 const DECO_TYPES = ["cover", "statement", "section", "end"];
-const GOI_Y = "điều luật → book + lawquote · so mức / ngưỡng → tiles · tình huống → cases / chain · kiểm tra → quizgo · chốt → recap · hỏi đáp → toc · riêng hình sự: kiểu bc* (hinh/bang_chung.js)";
+const GOI_Y = "điều luật → book + lawquote · so mức / ngưỡng → tiles · tình huống → cases / chain · kiểm tra → quizgo · chốt → recap · hỏi đáp → toc · riêng hình sự: kiểu bc* (hinh/bang_chung.js) · Công pháp quốc tế: kiểu qt* (hinh/hoi_nghi.js)";
 
 function kiemTang(deck) {
   const out = [], S = deck.slides || [], meta = deck.meta || {};

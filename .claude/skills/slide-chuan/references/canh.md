@@ -243,3 +243,24 @@ Trường: `cast{A,B:{x,y,w,rot,cap,sub,deco:"badge",mood}, tui:{x,y,w,rot,label
 - `noi` kể chuyện bằng lời thoại: tên Morph `ca-noi-A/B` (bóng dời chỗ/biến mất), chữ trong bóng không ghép từng chữ. Mỗi bước chỉ MỘT thay đổi lớn (túi sang phải, đèn sáng, nhân vật chạy khỏi khung) để mắt biết nhìn đâu; `dur` 1000–1300 ms cho bước lớn, ~700 ms cho bước nhỏ.
 - `stamps` là con dấu điểm nhấn (vd. "Điều 174"): tên riêng từng slide nên xuất hiện cùng lúc chuyển cảnh, không ghép Morph.
 - Cỡ chữ tối thiểu cho slide chiếu: câu giải thích ≥ 50 px nếu một dòng, ≥ 34 px với trích luật; bong bóng ≥ 40 px. Khung giải thích một dòng quá trống thì tăng cỡ chữ, đừng thu nhỏ khung giữa các slide (khung phải dời chỗ có nghĩa).
+
+## 9. Bộ hình riêng theo môn: "bàn hội nghị quốc tế" (Công pháp quốc tế) — `hinh/hoi_nghi.js`
+
+Vì sao có: bài "Tổng quan Công pháp quốc tế" (13/11/2026) dựng bằng type thường + hình dán bị chê "phông nền không liên quan gì đến luật quốc tế" — lỗi L10 lặp lần ba (xem `loi-da-biet-2026-11.md` mục E). Ẩn dụ: **phòng hội nghị đa phương** — luật do các bên tự thoả thuận và tự ký, chủ thể là ai được ngồi vào bàn, thi hành dựa vào cam kết.
+
+| Lớp | Vật |
+|---|---|
+| Nền (mọi slide `qt*`) | Xanh đêm + **bản đồ thế giới bằng chấm** (`hinh/the_gioi_cham.json`, Natural Earth 1:110m, phạm vi công cộng, có Hoàng Sa, Trường Sa; dựng lại: `scripts/build_the_gioi_cham.py`) + lưới kinh–vĩ tuyến |
+| Giấy | Văn kiện điều ước: giấy ngà, viền kép nhũ vàng; tờ tiêu đề slide nội dung là dải văn kiện có **dấu xi + dải lụa** ở đầu phải |
+| Vật | Dấu xi đỏ (ngôi sao nổi hoặc số La Mã), hàng cờ trừu tượng, bàn họp, bảng tên phái đoàn, micro cổ ngỗng, cờ để bàn |
+
+| type | Dùng cho | Trường |
+|---|---|---|
+| `qtbia` | Bìa: văn kiện + khối "Các bên ký tên" (người trình bày · lớp · ngày) + dấu xi + hàng cờ | `kicker` `title` (`[cụm nhấn]`) `subtitle` `author` `authorSub` `date` |
+| `qtchuong` | Mở chương: trang văn kiện "Phần N" + dấu xi lớn mang số La Mã (giấy cao vừa chữ, căn giữa dọc) | `num` `part` `title` `sub` (`partWord`, mặc định "Phần") |
+| `qtban` | 3–4 chủ thể / bên / yếu tố ngang hàng: bảng tên phái đoàn trên bàn họp | `kicker` `title` `items[≤4]{name(≤16), who(≤24, một dòng), desc(≤80)}` `focus` (bảng có vạch vàng) `note` |
+
+- **Morph**: tờ văn kiện mang tên `tieu` ở cả ba kiểu (bìa → chương → nội dung trượt và co lại); dấu xi chương mang tên `chuong`. Không hiệu ứng vào (chế độ gọn, như `bc*` chế độ C).
+- **Cấm**: biểu tượng Liên hợp quốc (bị hạn chế sử dụng — Nghị quyết 92(I) Đại hội đồng LHQ), quốc huy, cờ thật, chữ ký thật. Cờ chỉ dùng hình học trừu tượng: chéo góc, tam giác cán, ô góc cán — **không** hình tròn giữa nền trơn (đã ra lá giống cờ Nhật Bản), **không** sọc ngang / dọc 2–3 màu. Bản đồ có Việt Nam phải có Hoàng Sa, Trường Sa, kể cả bản đồ trang trí.
+- **Còn thiếu** (deck dùng type thường cho các slide này, nên nền và khung chưa đồng bộ): so sánh hai bên, trích điều luật, thứ bậc, cây điều kiện, chuỗi hệ quả, danh sách nguyên tắc, trắc nghiệm, chốt ý, cảm ơn. Hướng sửa gốc: "da theo môn" — mục E3-P3 của `loi-da-biet-2026-11.md`.
+- Ví dụ: `examples/hoi-nghi-qt/deck.json` (3 slide). Dựng: `node hinh/dung.js examples/hoi-nghi-qt/deck.json /tmp/qt.pptx --soat`.
