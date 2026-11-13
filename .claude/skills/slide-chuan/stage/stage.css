@@ -436,3 +436,8 @@ th.on { background: var(--hl); } td.on { background: var(--paper-2); font-weight
 .gl li.ic { padding-left: 52px; } .gl li.ic::before { display: none; } .gl li.ic > .ico { position: absolute; left: 0; top: 2px; font-size: 38px; color: var(--hl); }
 .sp-ph .co-r { width: 130px; height: 130px; margin: -65px 0 0 -65px; }
 .ig.ig-ic { grid-template-columns: repeat(22, 1fr); } .ig.ig-ic.ic-note { grid-template-columns: repeat(17, 1fr); } .ig.ig-ic i.ic { aspect-ratio: 1; background: none; border: 0; color: var(--green); } .ig.ig-ic.ic-note i.ic { aspect-ratio: 1.5; }   /* hình vuông (người, nhà, ngày) → lưới 22 cột cho cùng chiều cao; tờ tiền giữ 1,5 : 1 */ .ig.ig-ic i.ic .ico, .ig.ig-ic i.ic svg { display: block; width: 100%; height: 100%; } .ig.ig-ic i.ic.lost { border: 0; color: var(--red); }
+/* share style "parcels": 100 thửa liền nhau như tờ bản đồ địa chính (ranh giới mảnh, không khe) — dùng cho tỉ lệ chủ sử dụng đất */
+.wf.parcels { gap: 0; border: 4px solid var(--ink); } .wf.parcels i { background: var(--paper-2); border: 1.5px solid var(--ink-3); } .wf.parcels i.on { background: var(--hl); border-color: var(--ink); }
+/* chú giải lưới 100 ô: ô mẫu ĐÚNG màu của ô thật (ký tự ■ □ mang màu chữ — chú giải nói sai mã màu, lại cần font ký hiệu của máy) */
+.dl .sw { display: inline-block; width: 24px; height: 24px; margin-right: 10px; vertical-align: -4px; background: var(--ink-3); } .dl .sw.on { background: var(--hl); } .wf.parcels + .dl .sw { background: var(--paper-2); border: 1.5px solid var(--ink-3); } .wf.parcels + .dl .sw.on { background: var(--hl); }
+.ls .ico.ls-o { display: block; width: 40px; height: 40px; margin-top: 12px; background: var(--hl); }   /* ô vuông vẽ bằng CSS thay ký tự ■ (cần font ký hiệu của máy) */
