@@ -207,7 +207,7 @@ function daCss(ten) {
   const c = DA[ten], S = `.s.da-${ten}`, T = `${S}[data-tu]`, A = c.acc;
   const dark = mix(A, "000000", 0.6), dark2 = mix(A, "000000", 0.45);
   const nenL = nenSvg(c.nen, c, false), nenD = nenSvg(c.nen, c, true);
-  let css = `${S} { --da-tint: ${rgba(A, 0.1)}; }
+  let css = `${S} { --da-tint: ${rgba(A, 0.1)}; --sec-tint: ${rgba(A, 0.88)}; }
     ${S}.light { ${c.to ? "" : `background-color: #${c.page}; ${nenL ? `background-image: ${b64(nenL)}; background-size: 100% 100%;` : ""}`} --fg: #${c.ink}; --mut: #${c.muted}; --hl: #${A}; --card: #fff; --rule: #${c.line}; --edge: #${A}; --bad: #${c.bad}; --good: #${c.good}; --shadow: ${rgba(c.ink, 0.25)}; color: #${c.ink}; }
     ${S}.dark { ${c.to ? "" : `background-color: #${dark}; ${nenD ? `background-image: ${b64(nenD)}; background-size: 100% 100%;` : ""}`} --hl: #${c.gold}; --card: #${dark2}; --rule: ${rgba("FFFFFF", 0.28)}; }
     ${S}.dark::before { background: radial-gradient(closest-side, ${rgba(mix(A, "FFFFFF", 0.35), 0.35)}, transparent 72%); }
@@ -218,7 +218,7 @@ function daCss(ten) {
     .da-khung, .da-art, .da-vat, .da-to { position: absolute; pointer-events: none; }
     .da-khung { inset: 0; z-index: 1; } .da-khung svg, .da-art svg, .da-vat svg { width: 100%; height: 100%; display: block; }
     .da-art { z-index: 1; } .da-vat { z-index: 3; }
-    ${S}.sec .big { opacity: .45; }
+    ${S}.sec .big { opacity: .45; } ${S}.sec:has(.da-art) .h, ${S}.sec:has(.da-art) .sub { max-width: 1080px; } ${S}.end:has(.da-art) .h { max-width: 1120px; }
     `;
   css += theCss(c.the, c, T + ".light") + nhanCss(c.nhan, S) + soCss(c.so, c, S) + tienDoCss(c.tienDo, c, S);
   if (c.to === "bc") css += `${T}.light .da-to { left: 64px; right: 64px; top: 96px; bottom: 40px; z-index: 0; background: #F6EEDB; box-shadow: inset 0 1px 0 rgba(255,255,255,.7), 3px 4px 0 rgba(60,40,20,.14), 15px 22px 28px rgba(14,6,0,.5); }
@@ -276,5 +276,16 @@ function khungSlide(html, ten) {
   return html.replace(/<\/section>\s*$/, `<div class="da-khung">${kh}</div></section>`);
 }
 
+/** meta.motif (hoạ tiết nền theo CHỦ ĐỀ của tầng Office cũ: cadastral, contour, dots, landscape, certificate, lines, waves, blobs, grid) — vẽ nửa phải
+ *  của bìa không ảnh / mở chương / slide cuối, dưới hình lớn của da. Tên đầu dùng cho bìa / chương / kết như trước. */
+function motifSlide(html, motif, ten, type, i) {
+  const ds = Array.isArray(motif) ? motif : [motif], m = ds[0]; if (!m || m === "none" || !["cover", "section", "end"].includes(type)) return html;
+  const { MOTIFS } = require("../engine/motifs"); if (!MOTIFS[m]) return html;
+  const c = DA[ten] || { acc: "E2402A", gold: "F6B93B", page: "0C1222" }, toi = !/class="s [^"]*\blight\b/.test(html);
+  const nen = toi ? (ten ? (type === "section" ? c.acc : mix(c.acc, "000000", 0.6)) : type === "section" ? "E2402A" : "0C1222") : c.page;
+  let svg = ""; try { svg = MOTIFS[m](toi ? "FFFFFF" : c.acc, c.gold, nen, 900, 1000, {}, 7 + i); } catch { return html; }
+  return html.replace(/<\/section>\s*$/, `<div class="da-motif" style="position:absolute;left:1000px;top:60px;width:900px;height:1000px;z-index:1;opacity:${toi ? 0.35 : 0.8}">${svg}</div></section>`);
+}
+
 const CHUYEN = { stamp: "stamp", flip: "flip", slide: "slide", wipe: "wipe", drop: "drop", pop: "pop", rise: "rise" };
-module.exports = { DA, NAMES, ALIAS, AUTO, chonDa, daCss, daMau, phuSlide, khungSlide, khungSvg, nenSvg, vatSvg, artSvg, CHUYEN, mix };
+module.exports = { DA, NAMES, ALIAS, AUTO, chonDa, daCss, daMau, phuSlide, khungSlide, motifSlide, khungSvg, nenSvg, vatSvg, artSvg, CHUYEN, mix };

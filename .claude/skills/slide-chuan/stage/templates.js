@@ -17,9 +17,23 @@ const dmy = (d) => { const m = String(d).match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
 const days = (a, b) => { const p = (d) => { const m = String(d).match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/); return m ? new Date(+m[3], +m[2] - 1, +m[1]) : null; }; const x = p(a), y = p(b); return x && y ? { from: x, n: Math.round((y - x) / 864e5) } : null; };
 
 const T = {};
+// khung ảnh (frame / meta.frame): rect bo góc · arch vòm · circle tròn · ogee vòm nhọn — CSS cắt khung, ảnh vẫn là ảnh thật (lớp ảnh trong PowerPoint)
+const KHUNG = { rect: "border-radius:28px", arch: "border-radius:999px 999px 18px 18px / 420px 420px 18px 18px", circle: "border-radius:50%", ogee: "clip-path:polygon(50% 0, 66% 6%, 80% 18%, 90% 34%, 96% 52%, 100% 70%, 100% 100%, 0 100%, 0 70%, 4% 52%, 10% 34%, 20% 18%, 34% 6%)" };
+const khungAnh = (s, deck) => { const k = s.frame || deck?.meta?.frame; return KHUNG[k] ? k : null; };
+const anhKhung = (url, k, alt, st) => `<div class="phk" data-in style="--i:${I++};${st};background-image:url('${url}');${KHUNG[k] || KHUNG.rect}" role="img" aria-label="${esc(alt || "")}"></div>`;   // một thuộc tính style duy nhất (inn() cũng ghi style — hai cái thì trình duyệt bỏ cái sau)
+const anhPhu = (url, cls = "") => `<div class="ph-full ${cls}" style="background-image:url('${url}')"></div><div class="ph-shade ${cls}"></div>`;
 
 T.cover = (s, deck, ctx) => {
-  const len = plain(s.title).length, fs = len > 62 ? 76 : len > 44 ? 90 : len > 28 ? 108 : 132, photo = ctx.img(s.photo);
+  const len = plain(s.title).length, fs = len > 62 ? 76 : len > 44 ? 90 : len > 28 ? 108 : 132, photo = ctx.img(s.photo), k = khungAnh(s, deck);
+  // bìa poster: ảnh tràn viền phủ tối dần, tiêu đề rất lớn, 1–3 thẻ dữ kiện — đi cặp với end "poster"
+  if (photo && (s.layout === "poster" || s.layout === "full")) return { cls: "dark cover poster", bare: true, html: `${anhPhu(photo)}
+  <div class="top">${s.kicker ? `<div class="k" ${inn()}>${f(s.kicker)}</div>` : ""}</div>
+  <div class="mid"><h1 class="h" style="--fs:${fs + 8}px" ${inn()}>${f(s.title)}</h1>${s.subtitle ? `<p class="sub" ${inn()}>${f(s.subtitle)}</p>` : ""}${(s.facts || []).length ? `<div class="facts">${s.facts.slice(0, 3).map((x) => `<span ${inn()}>${f(x)}</span>`).join("")}</div>` : ""}</div>
+  <div class="bot who" ${inn()}><div><b>${esc(s.author || deck.meta?.author || "")}</b><span>${esc([s.authorSub, s.date].filter(Boolean).join(" — "))}</span></div></div>` };
+  if (photo && k) return { cls: "dark cover", bare: true, html: `${anhKhung(photo, k, s.photoAlt, "position:absolute;right:110px;top:130px;width:640px;height:820px;z-index:2")}
+  <div class="top">${s.kicker ? `<div class="k" ${inn()}>${f(s.kicker)}</div>` : ""}</div>
+  <div class="mid" style="max-width:980px"><h1 class="h" style="--fs:${Math.min(fs, 100)}px" ${inn()}>${f(s.title)}</h1>${s.subtitle ? `<p class="sub" ${inn()}>${f(s.subtitle)}</p>` : ""}</div>
+  <div class="bot who" ${inn()}><div><b>${esc(s.author || deck.meta?.author || "")}</b><span>${esc([s.authorSub, s.date].filter(Boolean).join(" — "))}</span></div></div>` };
   return { cls: "dark cover", bare: true, html: `${photo ? `<div class="ph" style="background-image:url('${photo}')"></div><div class="ph-tint"></div><div class="slash"></div>` : `<div class="glyph">§</div>`}
   <div class="top">${s.kicker ? `<div class="k" ${inn()}>${f(s.kicker)}</div>` : ""}</div>
   <div class="mid"><h1 class="h" style="--fs:${fs}px" ${inn()}>${f(s.title)}</h1>${s.subtitle ? `<p class="sub" ${inn()}>${f(s.subtitle)}</p>` : ""}</div>
@@ -35,9 +49,16 @@ T.statement = (s) => {
 };
 T.quote = (s) => ({ cls: "dark", html: `${s.kicker ? `<div class="k" ${inn()}>${f(s.kicker)}</div>` : ""}<div class="body"><h2 class="h" ${inn()}>“${f(s.quote || s.title)}”</h2>${s.by ? `<p class="sub" ${inn()}>${f(s.by)}</p>` : ""}</div>` });
 
-T.agenda = (s) => ({ cls: "light", html: `${head(s)}<div class="body"><div>${(s.items || []).map((x, i) => `<div class="ag-row" ${inn()}><div class="ag-no">${String(i + 1).padStart(2, "0")}</div><div class="ag-t">${f(typeof x === "string" ? x : x.text || x.title)}</div></div>`).join("")}</div></div>` });
+T.agenda = (s, deck, ctx) => { const ph = ctx && ctx.img(s.photo); if (ph) return { cls: "light", html: `${head(s)}<div class="body"><div class="ag-ph"><div>${(s.items || []).map((x, i) => `<div class="ag-row" ${inn()}><div class="ag-no">${String(i + 1).padStart(2, "0")}</div><div class="ag-t" style="font-size:38px">${f(typeof x === "string" ? x : x.text || x.title)}</div></div>`).join("")}</div>${anhKhung(ph, khungAnh(s, deck) || "arch", s.photoAlt, "width:520px;height:640px")}</div></div>` };
+  return T.agendaChu(s); };
+T.agendaChu = (s) => ({ cls: "light", html: `${head(s)}<div class="body"><div>${(s.items || []).map((x, i) => `<div class="ag-row" ${inn()}><div class="ag-no">${String(i + 1).padStart(2, "0")}</div><div class="ag-t">${f(typeof x === "string" ? x : x.text || x.title)}</div></div>`).join("")}</div></div>` });
 
-T.section = (s) => ({ cls: "red sec", html: `<div class="big">${esc(s.num ?? "")}</div><div class="body">${s.kicker ? `<div class="k" ${inn()}>${f(s.kicker)}</div>` : s.num != null ? `<div class="k" ${inn()}>Phần ${esc(s.num)}</div>` : ""}<h2 class="h" ${inn()}>${f(s.title)}</h2>${s.sub ? `<p class="sub" ${inn()}>${f(s.sub)}</p>` : ""}</div>` });
+T.section = (s, deck, ctx) => { const ph = ctx && ctx.img(s.photo);
+  const chu = `${s.kicker ? `<div class="k" ${inn()}>${f(s.kicker)}</div>` : s.num != null ? `<div class="k" ${inn()}>Phần ${esc(s.num)}</div>` : ""}<h2 class="h" ${inn()}>${f(s.title)}</h2>${s.sub ? `<p class="sub" ${inn()}>${f(s.sub)}</p>` : ""}`;
+  if (ph && s.photoLayout === "backdrop") return { cls: "red sec sec-ph", html: `${anhPhu(ph, "mo")}<div class="big">${esc(s.num ?? "")}</div><div class="body">${chu}</div>` };
+  if (ph) return { cls: "red sec sec-ph", html: `${anhKhung(ph, khungAnh(s, deck) || "rect", s.photoAlt, "position:absolute;right:110px;top:150px;width:700px;height:800px;z-index:2")}<div class="body" style="max-width:900px">${chu}</div>` };
+  return T.sectionChu(s); };
+T.sectionChu = (s) => ({ cls: "red sec", html: `<div class="big">${esc(s.num ?? "")}</div><div class="body">${s.kicker ? `<div class="k" ${inn()}>${f(s.kicker)}</div>` : s.num != null ? `<div class="k" ${inn()}>Phần ${esc(s.num)}</div>` : ""}<h2 class="h" ${inn()}>${f(s.title)}</h2>${s.sub ? `<p class="sub" ${inn()}>${f(s.sub)}</p>` : ""}</div>` });
 
 const timelineStrip = (pts, active) => `<div class="tl" ${inn()}>${pts.map((p, i) => { const x = ((i + 0.5) / pts.length * 100).toFixed(2), on = active.includes(i) ? "on" : ""; return `<i class="${on}" style="left:${x}%"></i><span class="${on}" style="left:${x}%">${esc(on ? p[0] : p[1] || p[0])}</span>`; }).join("")}</div>`;
 T.scene = (s, deck) => {
@@ -98,7 +119,7 @@ T.bignum = (s) => {
   return { cls: "dark", html: `${head(s)}<div class="body"><div class="bn"><div><div class="n" ${inn("pop")}>${f(s.num)}</div><div class="u" ${inn()}>${f(s.unit || "")}</div><div class="nd" ${inn()}>${f(s.numDesc || "")}</div></div>
   <div>${s.condTitle ? `<div class="lt" ${inn()}>${f(s.condTitle)}</div>` : ""}<div class="cds">${(s.conds || []).map((c) => `<div class="cd" ${inn()}>${mark(c.ok)}<div><b>${f(c.head)}</b><span>${f(c.desc || "")}</span></div>${c.verdict ? `<span class="vd">${f(c.verdict)}</span>` : ""}</div>`).join("")}</div>${strip}</div></div></div>${note(s.note)}` };
 };
-T.hero = (s) => ({ cls: "dark", html: `${head(s)}<div class="body"><div class="bn"><div class="n" ${inn("pop")}>${f(s.num ?? s.value)}</div><div><div class="u" ${inn()}>${f(s.unit || "")}</div><div class="nd" ${inn()}>${f(s.text || s.numDesc || s.sub || "")}</div></div></div></div>${note(s.note)}` });
+T.hero = (s, deck, ctx) => ({ cls: "dark", html: `${ctx && ctx.img(s.photo) ? anhPhu(ctx.img(s.photo), "toi") : ""}${head(s)}<div class="body"><div class="bn"><div class="n" ${inn("pop")}>${f(s.num ?? s.value)}</div><div><div class="u" ${inn()}>${f(s.unit || "")}</div><div class="nd" ${inn()}>${f(s.text || s.numDesc || s.sub || "")}</div></div></div></div>${note(s.note)}` });
 
 T.panelrows = (s, deck, ctx) => ({ cls: "light", html: `${head(s)}<div class="body"><div class="pr"><div ${inn()}><div class="art ${ctx.img(s.cutout) ? "cut" : ""}">${ctx.img(s.cutout) ? `<img src="${ctx.img(s.cutout)}" alt="${esc(s.cutoutAlt || "")}">` : ico(s.icon) || "§"}${s.stamp ? `<div class="stamp" style="right:-40px;bottom:36px">${esc(s.stamp)}</div>` : ""}</div>${s.artCaption ? `<div class="cap">${f(s.artCaption)}</div>` : ""}</div>
   <div class="rows">${(s.rows || []).map((r) => `<div class="rw ${r.tone || ""}" ${inn()}><b>${f(r.head)}</b><p>${f(r.text || "")}</p>${r.note ? `<small>${f(r.note)}</small>` : ""}</div>`).join("")}</div></div></div>${note(s.note)}` });
@@ -112,14 +133,18 @@ T.checklist = (s) => ({ cls: "light", html: `${head(s)}<div class="body"><div cl
 
 T.photo = (s, deck, ctx) => { const p = ctx.img(s.photo); return { cls: "dark pho", bare: true, html: `${p ? `<div class="img" style="background-image:url('${p}')"></div>` : ""}<div class="tint"></div><div class="in">${s.kicker ? `<div class="k" ${inn()}>${f(s.kicker)}</div>` : ""}<h2 class="h" ${inn()}>${f(s.title)}</h2>${s.sub ? `<p class="sub" ${inn()}>${f(s.sub)}</p>` : ""}</div>` }; };
 
-T.closing = (s) => {
+T.closing = (s, deck, ctx) => {
+  const ph = ctx && ctx.img(s.photo);
   const ls = (s.lessons || []).length ? `<div class="ls">${s.lessons.map((x) => `<div ${inn()}>${ico(x.icon) || `<span class="ico">■</span>`}<div><b>${f(x.head)}</b><span>${f(x.text || "")}</span></div></div>`).join("")}</div>` : "";
   const right = `${s.verdict ? `<div class="k" ${inn()}>Nhận định</div><div class="vd" ${inn()}>${f(s.verdict)}</div>` : ""}${s.rec ? `<div class="k" ${inn()}>${f(s.rec.title || "Kiến nghị")}</div><ul>${(s.rec.items || []).map((x) => `<li ${inn()}>${f(x)}</li>`).join("")}</ul>` : ""}${s.thanks ? `<div class="th" ${inn()}>${f(s.thanks)}</div>` : ""}`;
   return { cls: "light cl", html: `<div class="g"><div class="l">${head(s)}<div class="an">${(s.answers || []).map((a) => `<div class="${a.tone || ""}" ${inn()}><small>${f(a.q)}</small><p>${f(a.a)}</p></div>`).join("")}</div>${right ? ls : ""}</div>
-  <div class="r">${right || ls}</div></div>` };
+  <div class="r ${ph && !s.rec ? "rph" : ""}" ${ph && !s.rec ? `style="background-image:linear-gradient(0deg, rgba(12,18,34,.94), rgba(12,18,34,.15) 62%), url('${ph}')"` : ""}>${right || ls}</div></div>` };
 };
 
-T.end = (s, deck) => ({ cls: "dark end", bare: true, html: `<div class="glyph" style="position:absolute;right:40px;bottom:-150px;font:400 900px/1 var(--fd);color:transparent;-webkit-text-stroke:5px rgba(244,237,220,.14)">?</div>${s.kicker ? `<div class="k" ${inn()}>${f(s.kicker)}</div>` : ""}<h2 class="h" ${inn()}>${f(s.title || s.thanks || "Cảm ơn")}</h2>${s.message || s.sub ? `<p class="sub" ${inn()}>${f(s.message || s.sub)}</p>` : ""}${(s.team || []).length ? `<p class="sub" style="margin-top:30px" ${inn()}>${s.team.map((t) => esc(typeof t === "string" ? t : t.name)).join(" — ")}</p>` : ""}${s.contact ? `<p class="sub" ${inn()}>${esc(s.contact)}</p>` : ""}` });
+T.end = (s, deck, ctx) => { const ph = ctx && ctx.img(s.photo);
+  if (ph) return { cls: "dark end poster", bare: true, html: `${anhPhu(ph)}${s.kicker ? `<div class="k" ${inn()}>${f(s.kicker)}</div>` : ""}<h2 class="h" ${inn()}>${f(s.title || s.thanks || "Cảm ơn")}</h2>${s.message || s.sub ? `<p class="sub" ${inn()}>${f(s.message || s.sub)}</p>` : ""}${(s.team || []).length ? `<div class="facts">${s.team.map((t) => `<span ${inn()}>${esc(typeof t === "string" ? t : t.name)}${t.role ? ` · ${esc(t.role)}` : ""}</span>`).join("")}</div>` : ""}${s.contact ? `<p class="sub" ${inn()}>${esc(s.contact)}</p>` : ""}` };
+  return T.endChu(s, deck); };
+T.endChu = (s, deck) => ({ cls: "dark end", bare: true, html: `<div class="glyph" style="position:absolute;right:40px;bottom:-150px;font:400 900px/1 var(--fd);color:transparent;-webkit-text-stroke:5px rgba(244,237,220,.14)">?</div>${s.kicker ? `<div class="k" ${inn()}>${f(s.kicker)}</div>` : ""}<h2 class="h" ${inn()}>${f(s.title || s.thanks || "Cảm ơn")}</h2>${s.message || s.sub ? `<p class="sub" ${inn()}>${f(s.message || s.sub)}</p>` : ""}${(s.team || []).length ? `<p class="sub" style="margin-top:30px" ${inn()}>${s.team.map((t) => esc(typeof t === "string" ? t : t.name)).join(" — ")}</p>` : ""}${s.contact ? `<p class="sub" ${inn()}>${esc(s.contact)}</p>` : ""}` });
 
 let VN = null;
 const fold = (x) => String(x).normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/đ/gi, "d").toLowerCase().replace(/^(tinh|thanh pho|tp\.?)\s+/, "").trim();
@@ -233,4 +258,4 @@ function render(slide, deck, ctx, i, n) {
   return { html: wrap(out, slide, deck, i, n), generic: !fn };
 }
 // kit: các hàm dựng chung, để tầng hình ảnh (hinh/canh.js) viết thêm mẫu cùng giọng với bộ mẫu này
-module.exports = { render, wrap, plain, TYPES: Object.keys(T).filter((k) => k !== "generic"), kit: { esc, f, head, note, inn, ico, reset: () => { I = 0; } } };
+module.exports = { render, wrap, plain, TYPES: Object.keys(T).filter((k) => k !== "generic" && !/Chu$/.test(k)), kit: { esc, f, head, note, inn, ico, reset: () => { I = 0; } } };
