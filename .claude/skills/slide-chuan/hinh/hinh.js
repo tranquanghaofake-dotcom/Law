@@ -13,6 +13,25 @@
   let chain = loaded;
   window.hinhSanSang = loaded;
   window.hinhKhiSanSang = (fn) => { chain = chain.then(fn); window.hinhSanSang = chain; return chain; };
+  // CĂN LỀ QUANG HỌC: chữ trưng bày (≥ 48 px, canh trái) có khoảng trống trước nét của chữ đầu (Anton "N" ~7 px ở 120 px) → nét chữ
+  // thụt vào so với dòng chữ nhỏ cùng lề. Dịch hộp chữ sang trái đúng khoảng đó (đo bằng canvas measureText) để NÉT chữ thẳng lề.
+  // Chạy đầu tiên trong chuỗi sau khi font nạp — trước mọi việc đặt chỗ theo vị trí chữ (kính lúp, nét bút).
+  // vẽ ký tự lên canvas rồi quét cột có nét đầu tiên (measureText().actualBoundingBoxLeft lệch với nét thật ở vài chữ Anton)
+  const netDau = (ch, font, px) => { const pad = Math.ceil(px * 0.3), W = Math.ceil(px * 1.6), H = Math.ceil(px * 1.6), c = document.createElement("canvas"); c.width = W; c.height = H;
+    const g = c.getContext("2d"); g.font = font; g.textBaseline = "alphabetic"; g.fillStyle = "#000"; g.fillText(ch, pad, Math.round(px * 1.15));
+    const d = g.getImageData(0, 0, W, H).data; for (let x = 0; x < W; x++) for (let y = 0; y < H; y++) if (d[(y * W + x) * 4 + 3] > 96) return x - pad; return 0; };
+  const canLeQuangHoc = () => {
+    for (const el of document.querySelectorAll("section.s [data-t]")) { const cs = getComputedStyle(el), px = parseFloat(cs.fontSize);
+      if (!(px >= 48) || !["left", "start"].includes(cs.textAlign) || el.dataset.quangHoc) continue;
+      let a = el, xoay = false; while (a && !a.matches("section.s")) { const c = getComputedStyle(a); if ((c.rotate && c.rotate !== "none" && c.rotate !== "0deg") || c.transform !== "none") { xoay = true; break; } a = a.parentElement; }
+      if (xoay) continue;
+      const w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT); let n, ch = "";
+      while (!ch && (n = w.nextNode())) ch = (n.textContent.match(/\S/u) || [""])[0];   // nút chữ đầu tiên có ký tự thấy được (đo đúng font của chính nút đó)
+      if (!ch) continue; const pc = getComputedStyle(n.parentElement || el);
+      if (pc.textTransform === "uppercase") ch = ch.toLocaleUpperCase("vi");
+      const lech = netDau(ch, `${pc.fontStyle} ${pc.fontWeight} ${parseFloat(pc.fontSize)}px ${pc.fontFamily}`, parseFloat(pc.fontSize));   // > 0: nét chữ bắt đầu sau điểm gốc
+      if (lech > 0.75 && lech < px * 0.2) { el.style.marginLeft = `${(parseFloat(cs.marginLeft) || 0) - lech}px`; el.dataset.quangHoc = lech.toFixed(1); } } };
+  window.hinhKhiSanSang(canLeQuangHoc);
   window.hinhDatHinhDan = (S) => {
     const em = [...S.querySelectorAll(".emo[data-tu-dat]")]; if (!em.length) return;
     const B = S.getBoundingClientRect(), W = S.offsetWidth, H = S.offsetHeight, k = W / B.width, chu = [], dat = [];
