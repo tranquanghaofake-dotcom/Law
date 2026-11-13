@@ -175,7 +175,7 @@ function theCss(kind, c, S0) {
 // ---------- nhãn (kicker), ô số, thanh tiến độ ----------
 // lề trong của nhãn (viền + đệm) = 24 px, bằng lề trong của thẻ bên dưới → chữ nhãn và chữ thẻ chung một cột (soat_chi_tiet.js)
 function nhanCss(kind, S) {
-  if (kind === "outline") return `${S} .k { border: 2px solid currentColor; padding: 7px 22px 6px; } ${S} .k::before { display: none; }`;
+  if (kind === "outline") return `${S} .k { border: 2px solid currentColor; padding: 7px 22px 6px; } ${S} .k::before { display: none; } ${S}:is(.pho, .sec-ph, .poster) .k { background: rgba(8,10,16,.5); }`;   // nhãn viền nằm trên ảnh: nền tối mờ, chữ không lẫn vào chi tiết ảnh
   if (kind === "solid") return `${S}.light .k { background: var(--hl); color: #fff; padding: 7px 24px 6px; } ${S}.light .k::before { display: none; } ${S}.light .k em { color: #fff; }`;
   if (kind === "tab") return `${S} .k { border: 2px solid currentColor; border-bottom: none; border-radius: 10px 10px 0 0; padding: 7px 22px 8px; box-shadow: 0 2px 0 currentColor; } ${S} .k::before { display: none; }`;
   if (kind === "pill") return `${S} .k { background: ${"var(--da-tint)"}; border-radius: 999px; padding: 7px 18px 6px; } ${S} .k::before { width: 14px; height: 14px; border-radius: 50%; }`;

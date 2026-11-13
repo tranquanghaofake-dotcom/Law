@@ -50,7 +50,9 @@ async function soat(html) {
         const cuoi = (() => { if (hang.length < 2) return null; const h = hang[hang.length - 1], w = document.createTreeWalker(t, NodeFilter.SHOW_TEXT), chu = []; let n;
           while ((n = w.nextNode())) { const g = document.createRange(); for (const m of n.textContent.matchAll(/\S+/gu)) { g.setStart(n, m.index); g.setEnd(n, m.index + m[0].length); const r = g.getBoundingClientRect(); if (r.width && Math.abs(r.top - h.t) < r.height * 0.6) chu.push(m[0]); } }
           return { soChu: chu.length, chu: chu.join(" "), rong: h.r - h.l, rongMax: Math.max(...hang.map((x) => x.r - x.l)) }; })();
-        return { i, longR, cuoi, soDong: hang.length, dl: t.hasAttribute("data-dl"), chu: t.textContent.trim().replace(/\s+/g, " ").slice(0, 40), lop: t.className.split(" ")[0], r: [r.left, r.top, r.width, r.height], canh: cs.textAlign, co: parseFloat(cs.fontSize), dam: +cs.fontWeight || 400, xoay: (() => { for (let a = t; a && !a.matches("section.s"); a = a.parentElement) { const c = getComputedStyle(a), m = (c.transform.match(/matrix\(([^)]+)\)/) || [])[1]; if ((c.rotate && c.rotate !== "none" && c.rotate !== "0deg") || (m && Math.abs(+m.split(",")[1]) > 0.01)) return true; } return false; })() /* chỉ tính xoay thật; scale / dịch của hiệu ứng vào không tính */, doan }; });
+        // chữ đặt trên ẢNH CHỤP (không phải hoạ tiết SVG của da): mép vật trong ảnh không phải "nét vẽ cắt chữ" — bỏ phép ✂
+        const tam = [r.left + Math.min(r.width, 200) / 2, r.top + r.height / 2], trenAnh = document.elementsFromPoint(...tam).some((e) => e !== s && !e.matches("section.s") && (e.tagName === "IMG" || /url\("?(?!data:image\/svg)/.test(getComputedStyle(e).backgroundImage)));
+        return { i, longR, cuoi, soDong: hang.length, dl: t.hasAttribute("data-dl"), trenAnh, chu: t.textContent.trim().replace(/\s+/g, " ").slice(0, 40), lop: t.className.split(" ")[0], r: [r.left, r.top, r.width, r.height], canh: cs.textAlign, co: parseFloat(cs.fontSize), dam: +cs.fontWeight || 400, xoay: (() => { for (let a = t; a && !a.matches("section.s"); a = a.parentElement) { const c = getComputedStyle(a), m = (c.transform.match(/matrix\(([^)]+)\)/) || [])[1]; if ((c.rotate && c.rotate !== "none" && c.rotate !== "0deg") || (m && Math.abs(+m.split(",")[1]) > 0.01)) return true; } return false; })() /* chỉ tính xoay thật; scale / dịch của hiệu ứng vào không tính */, doan }; });
       return { ten: (s.dataset.title || s.dataset.type || "").slice(0, 48), type: s.dataset.type, hop }; }, k);
     await page.waitForTimeout(60); const A = await anh();
     await page.evaluate((k) => document.querySelectorAll("section.s")[k].classList.add("anchu"), k); await page.waitForTimeout(40); const B = await anh();
@@ -83,7 +85,7 @@ async function soat(html) {
       if (v < nguong) ketQua.tuongPhan.push(`“${h.chu}”${dn.con ? " (đoạn nhấn)" : ""} .${h.lop} ${Math.round(co)} px: ${v.toFixed(2)} : 1 < ${nguong} : 1`); }
     // ĐƯỜNG CẮT CHỮ: ở ảnh ẩn chữ, nền sau một dòng chữ phải yên; một cột hẹp (≤ 14 px) khác hẳn màu nền chạy dọc ≥ 40 % chiều cao dòng
     // = đường kẻ / nét đứt của hình vẽ đi xuyên qua chữ (vd. đường ngưỡng của captable cắt nhãn "Trên 50%" và số "25%"). Nền ảnh (lộn xộn) bỏ qua.
-    for (const h of meta.hop) for (const dn of h.doan) for (const q of dn.q) {
+    for (const h of meta.hop) for (const dn of h.doan) for (const q of dn.q) { if (h.trenAnh) continue;
       const x0 = Math.max(0, Math.round(q[0]) + 4), x1 = Math.min(1919, Math.round(q[0] + q[2]) - 4), y0 = Math.max(0, Math.round(q[1])), y1 = Math.min(1079, Math.round(q[1] + q[3]));
       if (x1 - x0 < 12 || y1 - y0 < 14) continue;
       const dem = new Map(); for (let x = x0; x < x1; x += 3) for (let y = y0; y < y1; y += 3) { const c = px(B, x, y), k = c.map((v) => v >> 4).join(","); dem.set(k, (dem.get(k) || 0) + 1); }

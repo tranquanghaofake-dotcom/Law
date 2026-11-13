@@ -78,7 +78,7 @@ function dungHtml(deck, { deckDir = process.cwd(), mau, chuyen } = {}) {
   // nút Mục lục ở thanh đầu slide (khi deck có slide toc): chữ "Mục lục" + cuốn sách thu nhỏ nếu deck mở bằng cảnh book
   if (tocId) out.forEach((o, k) => { if (o.src === toc || !/class="bar"/.test(o.html)) return;
     const sach = st.book && sauSach >= 0 && k >= sauSach ? canh.miniBook(st.book, k === sauSach, tocId) : "";
-    o.html = o.html.replace(/<\/section>\s*$/, `<div class="zml" data-t data-go="${esc(tocId)}">Mục lục</div>${sach}</section>`); });
+    o.html = o.html.replace(/<\/section>\s*$/, `<div class="zml" data-t data-dl data-go="${esc(tocId)}">Mục lục</div>${sach}</section>`); });
   const ids = new Set();
   const body = out.map((o, k) => { let id = o.id || `s${k + 1}`; while (ids.has(id)) id += "-"; ids.add(id);
     const tr = o.trans || (k === 0 ? "fade" : chuyen), at = [`data-id="${esc(id)}"`, `data-trans="${tr}"`, `data-dur="${o.dur || (tr === "morph" ? 700 : 500)}"`, o.auto != null ? `data-auto="${o.auto}"` : "", o.cam ? `data-cam="${esc(o.cam)}"` : "", o.noclick ? "data-noclick" : "", o.tu ? "data-tu" : "", o.notes ? `data-notes="${esc(o.notes)}"` : ""].filter(Boolean).join(" ");
