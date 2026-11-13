@@ -188,6 +188,8 @@ function clarity(sl, n, warnings) {
 }
 
 // extraTypes: kiểu của bộ cảnh / bộ hình (hinh/canh.js, bang_chung.js, hoi_nghi.js) — ở đây chỉ bỏ qua phần SCHEMA của chúng
+// slide mở phần: section của engine và slide chương của các bộ hình
+const CHUONG = ["section", "bcchuong", "qtchuong", "bhchuong"];
 function validate(deck, { extraTypes = [] } = {}) {
   const hints = []; // gợi ý (ℹ) — in ra nhưng không tính vào --strict
   const errors = [], warnings = [];
@@ -450,7 +452,8 @@ function validate(deck, { extraTypes = [] } = {}) {
   { // ảnh thật: deck dài mà không có ảnh nào → gợi ý (không chặn); ảnh làm bài nói có bối cảnh, người nghe nhớ lâu hơn
     const PH = new Set(["photo", "split", "gallery", "frame", "beforeafter", "mosaic", "photostats", "photostrip"]);
     const has = (deck.slides || []).some(sl => sl && (PH.has(sl.type) || sl.photo || sl.cutout || (Array.isArray(sl.items) && sl.items.some(x => x && x.photo))));
-    if ((deck.slides || []).length >= 10 && !has) hints.push(`Deck ${deck.slides.length} slide chưa có ảnh thật nào — tìm 3–5 ảnh đúng chủ đề (scripts/find_images.py): bìa band/split, mở chương có ảnh, photostats, mosaic, frame (SKILL.md bước 5)`);
+    const veTay = (deck.slides || []).filter(sl => sl && extraTypes.includes(sl.type)).length;   // bộ hình tự vẽ (bh*, bc*, qt*…) thay ảnh thật bằng vật của môn
+    if ((deck.slides || []).length >= 10 && !has && veTay * 2 < (deck.slides || []).length) hints.push(`Deck ${deck.slides.length} slide chưa có ảnh thật nào — tìm 3–5 ảnh đúng chủ đề (scripts/find_images.py): bìa band/split, mở chương có ảnh, photostats, mosaic, frame (SKILL.md bước 5)`);
   }
   // BÀI TẬP LUẬT: đề có năm / ngày mà lời giải (slide ngay sau) không nhắc thời hiệu / thời hạn / luật áp dụng theo thời điểm
   // → dễ bỏ sót bước "còn thời hiệu không?" (vd. hợp đồng sai hình thức: 2 năm từ ngày xác lập — khoản 1 Điều 132 BLDS 2015)
@@ -482,7 +485,7 @@ function validate(deck, { extraTypes = [] } = {}) {
   const parts = [...new Set([...deck.slides.map(partOf), ...deck.slides.map(sl => sl && sl.type === "section" && /^\d+$/.test(String(sl.num || "").trim()) ? +sl.num : null)].filter(x => x != null))]; // phần = kicker "Phần N" hoặc slide section có num
   // chỉ "Phần"/"Chương" cần slide mở đầu; "Câu"/"Mục" là chuỗi câu hỏi đã nêu ở mục lục
   const big = new Set(deck.slides.map(sl => String((sl && sl.kicker) || "").match(/^(Phần|Chương)\s*(\d+)/i)).filter(Boolean).map(m => +m[2]));
-  for (const p of parts) if (big.has(p) && !deck.slides.some(sl => sl && ((sl.type === "photo" && partOf(sl) === p) || (["section", "bcchuong", "qtchuong"].includes(sl.type) && +(sl.num ?? 1) === p))))
+  for (const p of parts) if (big.has(p) && !deck.slides.some(sl => sl && ((sl.type === "photo" && partOf(sl) === p) || (CHUONG.includes(sl.type) && +(sl.num ?? 1) === p))))
     warnings.push(`Phần ${p} không có slide mở đầu (section, hoặc photo có kicker "Phần ${p} · …") — người xem không nhận ra đã sang phần mới`);
   const ag = deck.slides.find(sl => sl && sl.type === "agenda");
   if (ag && parts.length > 1 && Array.isArray(ag.items) && ag.items.length !== parts.length)
@@ -567,7 +570,7 @@ function validate(deck, { extraTypes = [] } = {}) {
   // TIÊU ĐỀ PHẢI ĐỌC RIÊNG VẪN HIỂU (người dùng 11/2026: "tiêu đề tối nghĩa") — câu kết luận bị nén thường mất CHỦ NGỮ
   // ("Tăng đều, chỉ giảm năm 2020" — cái gì tăng?) hoặc thành nhãn ("Bốn phần"). Luật: chủ ngữ + vị ngữ + phạm vi (thời gian / đối tượng).
   const NOSUBJ = /^(tăng|giảm|thu luôn|chi luôn|chỉ|luôn|cần|phải|được|bị|có thể|không|đã|đang|sẽ|mở rộng|chững|đi ngang|vượt|đạt|gắn với|chiếm|chuyển sang|còn)(?![\p{L}\p{N}])/iu;
-  deck.slides.forEach((sl, i) => { if (!isObj(sl) || ["cover", "section", "end", "quote", "quiz"].includes(sl.type)) return;
+  deck.slides.forEach((sl, i) => { if (!isObj(sl) || ["cover", "end", "quote", "quiz", ...CHUONG].includes(sl.type)) return;
     const t = String(sl.title || "").replace(/[\[\]]/g, "").trim(); if (!t) return;
     if (NOSUBJ.test(t)) RW(`Slide ${i + 1} (${sl.type}): tiêu đề "${t.slice(0, 50)}" thiếu chủ ngữ — người xem không biết CÁI GÌ ${t.split(/\s+/)[0].toLowerCase()}; viết chủ ngữ + vị ngữ + phạm vi (vd. "Số người đóng BHXH bắt buộc chỉ giảm năm 2020")`);
     else if (sl.type !== "agenda" && t.split(/\s+/).length <= 3) RW(`Slide ${i + 1} (${sl.type}): tiêu đề "${t}" chỉ ${t.split(/\s+/).length} tiếng — là nhãn, không phải câu; viết điều người nghe cần nhớ ở slide này`); });
@@ -590,7 +593,7 @@ function validate(deck, { extraTypes = [] } = {}) {
       if (k.length >= 1 && k.filter(w => t.has(w)).length / k.length >= 0.6) RW(`Slide ${i + 1} (${sl.type}): nhãn "${sl.kicker}" lặp lại chữ của tiêu đề — nhãn nên là ngữ cảnh / câu hỏi người nghe đang có (vd. "Phần 3 · Vì sao quỹ thâm hụt?"), không nhắc lại tiêu đề`); });
     // (b) MỘT con số xuất hiện ở > 2 slide → người nghe thấy lặp, không thấy bài đi tiếp (năm, số điều luật không tính)
     const numsOf = (sl) => { const out = new Set(), txt = textOf(Object.fromEntries(Object.entries(sl).filter(([k]) => !["notes", "covers", "basis", "items"].includes(k) || (k === "items" && sl.type !== "chart"))));
-      for (const m of txt.replace(/(Điều|khoản|điểm|Đ\.)\s*\d+/gi, "").matchAll(/(?<![\d.,])(\d{1,3}(?:[.,]\d+)+|\d{3,})(?![\d.,])/g)) { const v = m[1]; if (/^(19|20)\d\d$/.test(v) || v.replace(/\D/g, "").length < 3 /* "1,5", "12": số nhỏ hay trùng ngẫu nhiên, khác nghĩa */) continue; out.add(v); } return out; };
+      for (const m of txt.replace(/(Điều|khoản|điểm|Đ\.)\s*\d+/gi, "").matchAll(/(?<![\d.,\p{L}])(\d{1,3}(?:[.,]\d+)+|\d{3,})(?![\d.,\p{L}])/gu)   /* số dính chữ (mã môn BNK405) không phải số liệu */) { const v = m[1]; if (/^(19|20)\d\d$/.test(v) || v.replace(/\D/g, "").length < 3 /* "1,5", "12": số nhỏ hay trùng ngẫu nhiên, khác nghĩa */) continue; out.add(v); } return out; };
     const where = {}; deck.slides.forEach((sl, i) => { if (!isObj(sl) || ["cover", "end"].includes(sl.type)) return; for (const v of numsOf(sl)) (where[v] = where[v] || []).push(i + 1); });
     for (const [v, ss] of Object.entries(where)) if (ss.length > 2) RW(`Số "${v}" xuất hiện ở ${ss.length} slide (${ss.join(", ")}) — mỗi slide nên thêm thông tin MỚI; giữ con số ở slide chứng minh nó, slide sau chỉ nhắc kết luận`);
     // (c) mục lục dùng đúng tên / câu hỏi của từng chương (section) — người nghe nhận ra chương khi tới

@@ -144,7 +144,7 @@ async function kiemNoiDung(deck, { deckDir = process.cwd(), extraTypes = [] } = 
 
 /** --titles: "deck ma" — chỉ đọc kicker + tiêu đề từ đầu đến cuối. Đọc liền mà không thành một lập luận thì sửa storyboard trước khi tốn công dựng. */
 function machTieuDe(deck) {
-  const sl = deck.slides || [], out = [], warn = [], seen = {}, CHUONG = new Set(["section", "bcchuong", "qtchuong"]);
+  const sl = deck.slides || [], out = [], warn = [], seen = {}, CHUONG = new Set(["section", "bcchuong", "qtchuong", "bhchuong"]);
   sl.forEach((d, i) => {
     const noTitle = LIMITS[d.type] && !("title" in LIMITS[d.type]), n = String(i + 1).padStart(2, "0"), k = bo(d.kicker || d.year).trim();
     const q = bo(d.quote).trim(), t = noTitle ? (q.length > 70 ? "“" + q.slice(0, 68) + "…”" : q && "“" + q + "”") : bo(d.title || d.q || d.question || (Array.isArray(d.lines) ? d.lines.join(" ") : "")).trim();   // recap: lines là câu chốt

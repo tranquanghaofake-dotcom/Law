@@ -78,3 +78,20 @@ test("dung --strict dừng (mã 3) khi còn cảnh báo nội dung; --titles kh�
   const h = await dung({ deckPath: f, htmlOnly: true });   // không --strict: vẫn dựng nháp
   assert.ok(fs.existsSync(h.htmlPath));
 });
+
+test("deck dựng bằng bộ hình tự vẽ (bh*, bc*, qt*) không bị nhắc 'chưa có ảnh thật'", async () => {
+  const sl = Array.from({ length: 12 }, (_, i) => ({ type: i ? "bhchuong" : "bhbia", title: `Slide bộ hình số ${i + 1}`, num: String(i + 1) }));
+  const r = await KND.kiemNoiDung({ meta: { da: "so-bhxh" }, slides: sl }, { extraTypes: ["bhbia", "bhchuong"] });
+  assert.ok(!r.hints.some((h) => /chưa có ảnh thật nào/.test(h)), r.hints.join("\n"));
+});
+
+test("bhchuong được tính là slide mở phần; mã môn dính chữ (BNK405) không bị đếm là con số lặp", async () => {
+  const sl = [{ type: "bhbia", title: "Bìa bài BNK405", kicker: "BNK405 · Báo cáo" }, { type: "bhdo", lines: ["Câu hỏi lớn"], kicker: "BNK405" }];
+  for (const p of [1, 2, 3]) { sl.push({ type: "bhchuong", num: String(p), title: p === 3 ? "Đạt được gì, vướng ở đâu?" : `Câu hỏi phần ${p} của bài`, sub: "Tài liệu BNK405" });
+    sl.push({ type: "bhtrich", kicker: `Phần ${p} · Nội dung`, quote: "Trích dẫn" }, { type: "bhtrich", kicker: `Phần ${p} · Nội dung tiếp`, quote: "Trích dẫn khác" }); }
+  const r = await KND.kiemNoiDung({ meta: { kind: "report" }, slides: sl }, { extraTypes: ["bhbia", "bhdo", "bhchuong", "bhtrich"] });
+  const all = [...r.errors, ...r.warnings].join("\n");
+  assert.ok(!/không có slide mở đầu/.test(all), all);
+  assert.ok(!/Số "405"/.test(all), all);
+  assert.ok(!/thiếu chủ ngữ/.test(all), all);
+});

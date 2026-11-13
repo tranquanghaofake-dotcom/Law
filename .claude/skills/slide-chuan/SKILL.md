@@ -176,7 +176,7 @@ Một da đổi CẢ deck: màu, nền, khung slide, vỏ thẻ, kiểu nhãn, �
    - Không có ô trống, thẻ trống, dòng mồ côi một chữ; mũi tên không xuyên qua chữ.
    - Bài báo cáo: mỗi ý con khớp ý lớn; mỗi hạn chế trỏ được về số liệu đã trình bày; mỗi kiến nghị có điều, khoản.
    - Màu đỏ (`bad`) chỉ dùng cho điều tiêu cực thật.
-   - Morph có chủ ý: `python3 scripts/morph_cap.py out.pptx` liệt kê cặp Morph giữa hai slide kề nhau.
+   - Morph có chủ ý: `python3 scripts/morph_cap.py out.pptx` liệt kê cặp Morph giữa hai slide kề nhau; `node scripts/xem_morph.js <tên>_lop/deck.html xem.mp4` quay video xấp xỉ để xem nhịp (không thay được PowerPoint thật).
 9. Gửi file .pptx (+ tờ soát, `_ghi-cong.md`), kèm ba lời nhắc ở mục "Đầu ra". Nhắc người dùng kiểm lại số liệu pháp lý nếu có con số tự tính.
 
 ## Bài học từ deck bài giảng có tính toán (BNK405 Chương 2, 11/2026)
@@ -231,11 +231,13 @@ Cần Node 18+, Playwright + Chromium (`npm install playwright && npx playwright
 | `cutout.py` | Tách nền ảnh thật → trường `cutout` | Bước 5 |
 | `nhin_mo.py` | Xoá chữ + làm mờ để kiểm "che chữ vẫn đoán được đề tài"; `--da deck.json` dựng cùng deck ở nhiều da và chấm độ khác nhau | Bước 8 (`--soat` tự chạy) |
 | `morph_cap.py` | Liệt kê cặp Morph có chủ ý giữa hai slide kề nhau | Bước 8 |
+| `xem_morph.js` | Quay video / GIF xấp xỉ Morph từ `deck.html` (cùng tên trượt, khác hình hoà dần) khi không có PowerPoint | Bước 8 |
 | `build_vn_map.py`, `build_vn_map34.py` | Công cụ phát triển: dựng dữ liệu bản đồ 63 / 34 tỉnh (đã có sẵn trong `engine/assets`) | Không cần khi làm slide |
 
 ## Ví dụ
 - `examples/nghi-viec-hinh/deck.json` — 11 slide khai báo → 20 slide PowerPoint, đủ 11 cảnh (mở sách soi tới Điều 35 Bộ luật Lao động 2019, cột ô lịch, trắc nghiệm bấm, mục lục ảnh), da `bang-cong`: `node hinh/dung.js examples/nghi-viec-hinh/deck.json /tmp/nghi-viec.pptx --soat`.
 - `examples/hoi-nghi-qt/deck.json` — bộ `qt*` (Công pháp quốc tế), da `qt`.
+- `examples/so-bhxh/deck.json` — bộ `bh*` (BHXH, 28 slide → 39 slide PowerPoint, Morph theo động từ tiêu đề, slide hai bước, trắc nghiệm), da `so-bhxh`; xem `references/canh.md` mục 10.
 - `examples/giay_to.json` — 12 khối giấy tờ và ảnh dẫn chuyện (`match`, `headline`, `lens`, `collage`, `sheet`, `calendar`, `riskbar`, `plan`, `receipt`, `account`, `captable`, `record`).
 - `examples/banan142.json` — bình luận Bản án 142/2019/DS-PT, 20 slide, da `ho-so`, `map`, `flow`, `ledger`, `chart` `span`, lịch 14 ngày, `closing` trả lời 3 câu hỏi, 3 `scene`, ghi chú ở `banan142_notes.md`.
 - `examples/bai_tinh.json` (bài giảng có tính toán: `formula`, `exercise` → `calc`, `funnel`, `changelog`, `journey`, `cheatsheet`, `chart` `step`, `quiz` `whyNot` — BHXH theo Luật 41/2024/QH15), `examples/bo_cuc_them.json` (`checklist`, `bento`, `chart` `line` / `waterfall` / `gantt` / `progress`), `examples/do_hoa_code.json` (`iso`, `isotype`, `redline`, `chart` có `annotate` + `hatch`, `hero`, `deadline`), `examples/anh_va_chuong.json` (ảnh ở chương, `photostats`, `mosaic`, `photostrip`), `examples/khung_anh.json` (`meta.frame`), `examples/hub_pin.json` (`hub`), `examples/bocuc_moi.json`, `examples/kiemthu_con_lai.json` (số liệu GIẢ ĐỊNH — chỉ để kiểm bố cục). Mọi ví dụ được test qua `--strict`.
