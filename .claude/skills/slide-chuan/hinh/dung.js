@@ -39,7 +39,7 @@ const DECO = { cover: [{ s: 520, l: 1230, t: 190, r: 6 }, { s: 250, l: 1130, t: 
 const decoGan = (s, ctx, i, html, prev = new Set(), now = new Set()) => { const P = DECO[s.type]; if (!P) return html;
   const g = [s.emoji, s.emoji2].map((n, k) => { const p = (k === 0 && s.emojiPos) || P[k]; if (!n || !p || !ctx.hasEmoji(n)) return "";
     const noi = prev.has(n); now.add(n);
-    return `<div class="emo" data-l="deco-${i}-${k}" data-m="hd-${n}" data-pad="${Math.round(p.s * 0.1 + 14)}" data-alt="Hình minh hoạ" ${noi ? "" : `data-a="pop" data-at="${300 + k * 250}"`}${k === 0 && s.emojiPos ? "" : " data-tu-dat"} style="position:absolute;left:${p.l}px;top:${p.t}px;width:${p.s}px;height:${p.s}px;rotate:${p.r}deg"><img src="${ctx.emoji(n)}" alt=""></div>`; }).join("");
+    return `<div class="emo" data-l="deco-${i}-${k}" data-m="hd-${n}" data-pad="${Math.round(p.s * 0.1 + 14)}" data-alt="Hình dán: ${esc(String(n).replace(/-/g, " "))}" ${noi ? "" : `data-a="pop" data-at="${300 + k * 250}"`}${k === 0 && s.emojiPos ? "" : " data-tu-dat"} style="position:absolute;left:${p.l}px;top:${p.t}px;width:${p.s}px;height:${p.s}px;rotate:${p.r}deg"><img src="${ctx.emoji(n)}" alt=""></div>`; }).join("");
   return g ? html.replace(/<\/section>\s*$/, g + "</section>") : html; };
 // THEO DÕI TRƯỜNG ĐƯỢC ĐỌC KHI DỰNG: mỗi slide bọc trong Proxy ghi lại đường dẫn khoá được đọc (mảng → "[]"). Trường có trong deck.json mà
 // không mẫu nào đọc = gõ sai tên, hoặc type đó không vẽ trường đó — trước đây bị bỏ âm thầm (takeaway, pin, part… — loi-da-biet F3.1)

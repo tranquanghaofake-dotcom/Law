@@ -49,7 +49,9 @@ const anh = (src) => `<img src="${src}" style="width:100%;height:100%;object-fit
 const vat = (name, ten, R, o = {}) => (coF3d(ten) ? lop(name, { h: R.w, ...R }, anh(f3d(ten)), { shadow: false, ...o, alt: o.alt || `Hình 3D: ${ten}` }) : "");
 // vật vẽ bằng code: [hàm, tỉ lệ rộng / cao]
 const HERO = { so: [V.soBHXH, 560 / 640], sach: [V.sachLuat, 440 / 560], phieu: [V.phieuLuong, 400 / 500], phongbi: [V.phongBi, 440 / 320], dt: [V.dienThoai, 300 / 560], kiem: [V.bangKiem, 460 / 560], xu: [V.chongXu, 300 / 310] };
-const hero = (name, ten, R, o = {}) => { const [fn, k] = HERO[ten]; return lop(name, { h: R.w / k, ...R }, fn(), { shadow: false, alt: o.alt || "Hình minh hoạ", ...o }); };
+// chữ thay thế mặc định theo VẬT (trước đây mọi vật là "Hình minh hoạ" — trình đọc màn hình không biết đó là sổ hay phong bì lương hưu)
+const HERO_ALT = { so: "Sổ bảo hiểm xã hội", sach: "Cuốn Luật Bảo hiểm xã hội", phieu: "Phiếu lương có dòng trích đóng BHXH", phongbi: "Phong bì lương hưu", dt: "Điện thoại tra cứu quá trình tham gia BHXH", kiem: "Bảng kiểm điều kiện", xu: "Chồng xu" };
+const hero = (name, ten, R, o = {}) => { const [fn, k] = HERO[ten]; return lop(name, { h: R.w / k, ...R }, fn(), { shadow: false, alt: o.alt || HERO_ALT[ten] || "Hình minh hoạ", ...o }); };
 // vật có dải đánh dấu: chọn bề rộng để chiều cao phủ từ dải đầu tới dải cuối (+ lề), canh giữa theo nhóm dải
 // lề trong của hình vẽ (phần của khung): bìa từ t tới b theo chiều cao; mép trang ở r, gáy ở l theo chiều rộng (hinh/bhxh_3d.js)
 const LE_VAT = { so: { t: 40 / 640, b: 560 / 640, r: 500 / 560, l: 100 / 560 }, sach: { t: 40 / 560, b: 520 / 560, r: 392 / 440, l: 40 / 440 } };

@@ -371,7 +371,7 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
       zip.file(rf, rels); }
     // lớp thuần trang trí (nền viên nhãn, nền thẻ, vòng nền, thanh tiến độ, lớp phủ, vạch…): đánh dấu "decorative" (Office 2019+, Mark as decorative)
     // để trình đọc màn hình bỏ qua — chữ của chúng là hộp chữ riêng; ảnh có nội dung giữ alt
-    t = t.replace(/(<p:cNvPr [^>]*descr="(?:Nhãn|Thẻ|Vòng nền|Thanh tiến độ|Tiến độ bài|Lớp phủ màu|Vạch|Trục|Dải đánh dấu|Hình trang trí|Số chú thích|Khung của: [^"]*)"[^>]*>)\s*<\/p:cNvPr>/g,
+    t = t.replace(/(<p:cNvPr [^>]*descr="(?:Nhãn|Thẻ|Vòng nền|Thanh tiến độ|Tiến độ bài|Lớp phủ màu|Vạch|Trục|Dải đánh dấu|Hình trang trí|Số chú thích|Vật tiền cảnh|Mũi tên|Khung của: [^"]*)"[^>]*>)\s*<\/p:cNvPr>/g,
       '$1<a:extLst><a:ext uri="{C183D7F6-B498-43B3-948B-1728B52AA6E4}"><adec:decorative xmlns:adec="http://schemas.microsoft.com/office/drawing/2017/decorative" val="1"/></a:ext></a:extLst></p:cNvPr>');
     // TIÊU ĐỀ SLIDE: hộp chữ tiêu đề thành placeholder tiêu đề — bộ kiểm khả năng tiếp cận hết báo "thiếu tiêu đề", danh sách slide khi
     // trình chiếu / hộp liên kết / dàn ý có tên slide. Mọi định dạng đã ghi rõ trong XML; thêm noAutofit để PowerPoint không tự co chữ
