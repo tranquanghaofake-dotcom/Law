@@ -90,3 +90,20 @@ test("đồ vật tiền cảnh chọn theo NỘI DUNG slide, không theo số t
   assert.equal(vat(sec("Điều 64: mốc lương hưu còn 15 năm")), dau, "slide về điều luật → con dấu");
   assert.equal(vat(sec("Một câu hỏi khác")), so, "không khớp từ khoá → vật chủ đạo của da");
 });
+
+test("vỏ thẻ của da không phá bố cục định vị: nút sơ đồ flow vẫn nằm một hàng ở mọi da", { skip: (() => { try { require.resolve("playwright"); return false; } catch { return "không có Playwright"; } })(), timeout: 180000 }, async () => {
+  const { chromium } = require("playwright"), fs = require("fs"), os = require("os");
+  const exe = process.env.PW_CHROMIUM || ["/opt/pw-browsers/chromium"].find((p) => fs.existsSync(p));
+  const b = await chromium.launch(exe ? { executablePath: exe } : {}), page = await (await b.newContext({ viewport: { width: 1920, height: 1080 } })).newPage();
+  try {
+    for (const ten of Object.keys(DA.DA)) {
+      const d = { meta: { da: ten }, slides: [{ type: "cover", title: "Thử" }, { type: "flow", title: "Bốn bên nối nhau", nodes: ["A", "B", "C", "D"].map((id) => ({ id, name: `Bên ${id}`, who: "ai đó" })), edges: [{ from: "A", to: "B", label: "x" }, { from: "B", to: "C", label: "y" }] }] };
+      const r = dungHtml(d, { deckDir: path.join(__dirname, "..") }), f = path.join(fs.mkdtempSync(path.join(os.tmpdir(), "da-flow-")), "deck.html"); fs.writeFileSync(f, r.html);
+      await page.goto("file://" + f);
+      const q = await page.evaluate(() => [...document.querySelectorAll(".fl-n")].map((e) => ({ pos: getComputedStyle(e).position, top: Math.round(e.getBoundingClientRect().top) })));
+      assert.equal(q.length, 4, ten);
+      assert.ok(q.every((x) => x.pos === "absolute"), `${ten}: nút flow phải position:absolute (${q.map((x) => x.pos)})`);
+      assert.ok(new Set(q.map((x) => x.top)).size === 1, `${ten}: bốn nút phải cùng một hàng (${q.map((x) => x.top)})`);
+    }
+  } finally { await b.close(); }
+});

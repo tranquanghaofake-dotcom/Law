@@ -88,7 +88,7 @@ html, body { background: #05070d; }
 /* ── flow ── */
 .flow { position: relative; height: 640px; }
 .flow > svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
-.fl-n { position: absolute; top: 210px; width: 370px; margin-left: -185px; text-align: center; padding: 26px 16px 24px; }
+.fl-n, .card.fl-n { position: absolute; top: 210px; width: 370px; margin-left: -185px; text-align: center; padding: 26px 16px 24px; }   /* .card.fl-n: thắng ".card { position: relative }" của vỏ thẻ da (cùng độ ưu tiên, nạp sau) — nếu không, nút rơi về luồng thường, xếp bậc thang, tràn slide */
 .fl-n .pic { width: 104px; height: 104px; margin: -78px auto 12px; background: var(--ink); color: var(--amber); display: flex; align-items: center; justify-content: center; font-size: 50px; border: 5px solid var(--edge); }
 .fl-n .tg { font: 700 24px/1.2 var(--fb); color: var(--hl); } .fl-n b { display: block; font: 400 56px/1.2 var(--fd); } .fl-n > span { font: 500 27px/1.3 var(--fb); color: var(--mut); }
 .fl-l { position: absolute; transform: translate(-50%, -50%); font: 800 26px/1.2 var(--fb); padding: 8px 18px; background: var(--ink); color: var(--paper); white-space: nowrap; }
