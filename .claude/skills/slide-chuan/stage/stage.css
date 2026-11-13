@@ -126,7 +126,8 @@ html, body { background: #05070d; }
 .ch { display: grid; grid-template-columns: 1fr 400px; gap: 50px; align-items: stretch; }
 .ch.solo { grid-template-columns: 1fr; }
 .ch svg { width: 100%; height: 100%; overflow: visible; display: block; }
-.chw { display: flex; flex-direction: column; min-width: 0; } .chw > div:first-child { flex: 1; min-height: 0; }
+.body > .ch { flex: 0 1 auto; min-height: 0; }   /* biểu đồ co lại khi tiêu đề 2 dòng + hàng nguyên nhân (không phình ra) */
+.chw { display: flex; flex-direction: column; min-width: 0; min-height: 0; } .chw > div:first-child { flex: 1 1 auto; min-height: 0; }
 .why { display: grid; grid-template-columns: repeat(var(--n), 1fr); gap: 18px; margin-top: 22px; }
 .why .wy { display: flex; gap: 14px; align-items: flex-start; padding: 14px 18px; font: 500 23px/1.32 var(--fb); }
 .why .wn { flex: none; width: 36px; height: 36px; background: var(--fg); color: var(--card); font: 800 22px/36px var(--fb); text-align: center; }

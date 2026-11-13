@@ -138,7 +138,7 @@ function theCss(kind, c, S0) {
       ${S} .card::after { content: ""; position: absolute; inset: 24px 8px 8px 8px; border: 1.5px solid ${rgba(A, 0.4)}; pointer-events: none; }
       ${S} .card:nth-child(even) { box-shadow: inset 16px 0 0 #${A}, ${sh}; }
       ${S} .card:nth-child(even)::before { content: ""; position: absolute; left: 6px; top: 14px; bottom: 14px; width: 3px; background: repeating-linear-gradient(#fff 0 12px, transparent 12px 26px); }
-      ${S} .card:nth-child(even)::after { inset: auto -18px -18px auto; width: 58px; height: 58px; border-radius: 50%; border: 3px solid ${rgba(B, 0.45)}; background: ${rgba(B, 0.06)}; }`,
+      ${S} .card:not(.wy):nth-child(even)::after { inset: auto -18px -18px auto; width: 58px; height: 58px; border-radius: 50%; border: 3px solid ${rgba(B, 0.45)}; background: ${rgba(B, 0.06)}; }`,
     timecard: `${S} .card { border-color: #${L}; box-shadow: inset 0 20px 0 #${A}, ${sh}; }
       ${S} .card::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 20px; background: linear-gradient(90deg, transparent 85.7%, #${B} 85.7%), repeating-linear-gradient(90deg, transparent 0 calc(14.2857% - 2px), rgba(255,255,255,.9) calc(14.2857% - 2px) 14.2857%); }
       ${S} .card::after { content: ""; position: absolute; left: calc(50% - 11px); top: 30px; width: 22px; height: 22px; border-radius: 50%; background: #${c.page}; box-shadow: inset 0 0 0 2px ${rgba(A, 0.5)}; }`,
