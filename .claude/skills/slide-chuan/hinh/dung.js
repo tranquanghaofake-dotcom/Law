@@ -1,13 +1,14 @@
 #!/usr/bin/env node
 // TẦNG HÌNH ẢNH — dựng deck.json thành FILE POWERPOINT THẬT: chữ sửa được, hình là lớp ảnh, hiệu ứng và Morph gốc của PowerPoint, font nhúng sẵn.
 //
-//   node hinh/dung.js <deck.json> [out.pptx] [--mau=son|luc|lam|nau] [--chuyen=morph|fade] [--soat] [--khong-nhung-font] [--html]
+//   node hinh/dung.js <deck.json> [out.pptx] [--mau=son|luc|lam|nau] [--chuyen=morph|fade] [--soat] [--strict] [--khong-nhung-font] [--html]
 //
 // Đường đi:  deck.json ──(bộ mẫu: stage/templates.js + hinh/canh.js)──► <tên>_lop/deck.html ──(hinh/build.js)──► <tên>.pptx
 //   · 65 type của deck.json lấy ở bộ mẫu stage/templates.js; hinh/tu_gan.js tự biến từng khối thành hộp chữ / lớp ảnh có hiệu ứng.
 //   · type là "cảnh" (mở sách, soi điều luật, cột ô lịch, dải ngày, trắc nghiệm bấm được, mục lục ảnh) lấy ở hinh/canh.js.
 // Tuỳ chọn trong deck.json: meta.hinh = { "mau": "son", "chuyen": "morph", "nhip": 110 } (nhip = ms giữa hai khối vào kế tiếp).
 // --soat  dựng lại qua LibreOffice, ghép tờ soát trái HTML · phải PPTX.   --html  chỉ sinh deck.html (không cần trình duyệt).
+// --strict  dừng (mã 3) khi deck dùng nền, khung chung mà prep.json chưa ghi người dùng đồng ý (chapNhanNenChung) — lỗi L10.
 const fs = require("fs"), path = require("path"), { pathToFileURL } = require("url");
 const { render, plain, TYPES } = require("../stage/templates");
 const { doiMau } = require("./bang_mau");
@@ -96,7 +97,7 @@ const kiemTranCu = (page) => page.evaluate(() => [...document.querySelectorAll("
 // lawquote: nét bút vàng chỉ phủ được cụm nhấn nằm trọn một dòng
 const kiemTran = async (page) => [...(await kiemTranCu(page)), ...(await page.evaluate(() => [...document.querySelectorAll(".paper .pq b")].filter((b) => b.getClientRects().length > 1).map((b) => `slide "${((b.closest("section.s") || {}).dataset || {}).title || "lawquote"}" (lawquote): cụm nhấn [ ] bị xuống dòng — nét bút chỉ phủ dòng đầu; rút ngắn cụm hoặc đặt ở cuối câu`)))];
 
-async function dung({ deckPath, outPath, mau, chuyen, soat = false, nhungFont = true, htmlOnly = false }) {
+async function dung({ deckPath, outPath, mau, chuyen, soat = false, nhungFont = true, htmlOnly = false, strict = false }) {
   deckPath = path.resolve(deckPath); const deckDir = path.dirname(deckPath), name = path.basename(deckPath, ".json");
   outPath = path.resolve(outPath || path.join(deckDir, name + ".pptx"));
   const deck = JSON.parse(fs.readFileSync(deckPath, "utf8"));
@@ -105,7 +106,10 @@ async function dung({ deckPath, outPath, mau, chuyen, soat = false, nhungFont = 
   fs.rmSync(work, { recursive: true, force: true }); fs.mkdirSync(work, { recursive: true });
   const htmlPath = path.join(work, "deck.html"); fs.writeFileSync(htmlPath, r.html);
   console.log(`✓ ${deck.slides.length} slide trong deck.json → ${r.n} slide PowerPoint · bảng màu ${r.mau} · chuyển cảnh ${r.chuyen}`);
-  for (const m of kiemDeck(deck, { deckDir })) console.log(m);
+  const kiem = kiemDeck(deck, { deckDir }); for (const m of kiem) console.log(m);
+  // --strict: deck nền chung chưa được người dùng đồng ý thì không dựng (lỗi L10 — references/loi-da-biet-2026-11.md mục E)
+  const chan = strict ? kiem.find((m) => m.startsWith("⚠ Nền chung")) : null;
+  if (chan) { const e = new Error(`--strict: ${chan}`); e.code = 3; throw e; }
   for (const l of require("./kiem_tang").kiemTang(deck)) console.log(l);
   if (r.generic.length) console.log(`ℹ ${r.generic.length} slide dùng mẫu chung vì type chưa có mẫu riêng: ${r.generic.join(", ")}. Có mẫu: ${[...TYPES, ...canh.TYPES].join(", ")}.`);
   for (const p of new Set(r.missing)) console.warn(`⚠ không thấy ảnh ${p} — dựng không ảnh`);
@@ -118,8 +122,8 @@ async function dung({ deckPath, outPath, mau, chuyen, soat = false, nhungFont = 
 module.exports = { dung, dungHtml };
 if (require.main === module) {
   const args = process.argv.slice(2), flags = args.filter((a) => a.startsWith("--")), pos = args.filter((a) => !a.startsWith("--")), opt = (k) => (flags.find((x) => x.startsWith(`--${k}=`)) || "").slice(k.length + 3) || undefined;
-  if (!pos[0]) { console.error("Dùng: node hinh/dung.js <deck.json> [out.pptx] [--mau=son|luc|lam|nau] [--chuyen=morph|fade] [--soat] [--khong-nhung-font] [--html]"); process.exit(2); }
-  dung({ deckPath: pos[0], outPath: pos[1], mau: opt("mau"), chuyen: opt("chuyen"), soat: flags.includes("--soat"), nhungFont: !flags.includes("--khong-nhung-font"), htmlOnly: flags.includes("--html") })
+  if (!pos[0]) { console.error("Dùng: node hinh/dung.js <deck.json> [out.pptx] [--mau=son|luc|lam|nau] [--chuyen=morph|fade] [--soat] [--strict] [--khong-nhung-font] [--html]"); process.exit(2); }
+  dung({ deckPath: pos[0], outPath: pos[1], mau: opt("mau"), chuyen: opt("chuyen"), soat: flags.includes("--soat"), nhungFont: !flags.includes("--khong-nhung-font"), htmlOnly: flags.includes("--html"), strict: flags.includes("--strict") })
     .then((r) => { if (r.warn && r.warn.some((w) => /tràn/.test(w))) process.exitCode = 1; })
-    .catch((e) => { console.error("✗ " + (e.stack || e.message)); process.exit(1); });
+    .catch((e) => { console.error("✗ " + (e.code === 3 ? e.message : e.stack || e.message)); process.exit(e.code === 3 ? 3 : 1); });
 }

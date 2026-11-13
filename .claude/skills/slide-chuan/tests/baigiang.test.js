@@ -88,7 +88,7 @@ test("bước 0: thiếu prep.json / chưa duyệt → --strict dừng; đủ v�
   assert.strictEqual(P(["init", dir, "--kind", "report", "--minutes", "5", "--topic", "Thử"]).status, 0);
   assert.strictEqual(P(["approve", dir, "--by", "Người dùng"]).status, 1, "chưa điền đủ thì không duyệt được");
   const pf = path.join(dir, "prep.json"), pr = JSON.parse(fs.readFileSync(pf, "utf8"));
-  Object.assign(pr, { audience: "Lớp", sources: [{ title: "Luật X", legal: true, status: "hiện hành" }],
+  Object.assign(pr, { tang: "luoi", audience: "Lớp", sources: [{ title: "Luật X", legal: true, status: "hiện hành" }],
     plan: [{ slide: 1, type: "cover", title: "Bìa" }, { slide: 2, type: "statement", title: "Phát hiện chính" }, { slide: 3, type: "end", title: "Cảm ơn" }] });
   fs.writeFileSync(pf, JSON.stringify(pr));
   // bài report còn phải khai phạm vi (scope.in) và nguồn từng số liệu (data) — thiếu thì check báo

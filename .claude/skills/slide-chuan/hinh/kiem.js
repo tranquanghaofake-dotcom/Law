@@ -8,7 +8,8 @@ const ART_TYPES = new Set(["panelrows", "lawquote", "bctrich"]);   // bctrich (h
 // trường làm ra hình thật trong tầng hình ảnh
 const VISUAL_KEYS = new Set(["photo", "cutout", "emoji", "emoji2", "icon"]);
 // type tự mang hình, không cần trường riêng (mở sách luôn có vật trên bàn)
-const INTRINSIC = new Set(["book", ...require("./bang_chung").TYPES, ...require("./hoi_nghi").TYPES]);   // book: vật trên bàn; bc*: bộ hình "bảng bằng chứng" (hinh/bang_chung.js)
+const BO_HINH_TYPES = new Set([...require("./bang_chung").TYPES, ...require("./hoi_nghi").TYPES]);   // bộ hình riêng theo môn (references/canh.md mục 8–9)
+const INTRINSIC = new Set(["book", ...BO_HINH_TYPES]);   // book: vật trên bàn; bc*: bộ hình "bảng bằng chứng" (hinh/bang_chung.js)
 
 function coHinh(o) {
   if (Array.isArray(o)) return o.some(coHinh);
@@ -40,6 +41,12 @@ function kiemDeck(deck, { deckDir = process.cwd() } = {}) {
     if (!fs.existsSync(p)) out.push(`ℹ Bước 0: chưa có prep.json cạnh deck.json (python3 scripts/prep.py init <thư_mục_deck> --kind lecture|case|report). Bản này chỉ là nháp.`);
     else { let pr = null; try { pr = JSON.parse(fs.readFileSync(p, "utf8")); } catch { /* prep.py check sẽ báo */ }
       if (pr && pr.approved !== true) out.push(`ℹ Bước 0: prep.json chưa được người dùng duyệt (scripts/prep.py approve chỉ chạy khi người dùng nói duyệt). Bản này chỉ là nháp.`); }
+  }
+  // 5. Nền chung: deck không dùng bộ hình theo môn nào — lỗi L10 lặp ở 3 bài (loi-da-biet-2026-11.md mục E). Im lặng khi prep.json
+  //    ghi người dùng đã đồng ý (chapNhanNenChung) hoặc dựng tầng lưới Office (tang: "luoi"). dung.js --strict dừng ở dòng này.
+  if (n >= 6 && !slides.some((s) => BO_HINH_TYPES.has(s.type))) {
+    let pr = {}; try { pr = JSON.parse(fs.readFileSync(path.resolve(deckDir, deck.meta?.prep || "prep.json"), "utf8")) || {}; } catch { /* không có prep.json */ }
+    if (!pr.chapNhanNenChung && pr.tang !== "luoi") out.push(`⚠ Nền chung: deck ${n} slide không dùng bộ hình theo môn nào (bc* hình sự, qt* Công pháp quốc tế) — nền, khung, hình dán là chất liệu chung, che chữ đi không đoán được đề tài (lỗi L10). Dùng bộ có sẵn, làm bộ mới (references/canh.md mục 8–9), hoặc ghi người dùng đã đồng ý: prep.json → chapNhanNenChung: true.`);
   }
   return out;
 }

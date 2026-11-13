@@ -38,9 +38,10 @@ test("L4 hinh/kiem: art bị bỏ qua, meta.kit, deck toàn chữ", () => {
   assert.match(msg, /"art" bị bỏ qua.*slide 2 \(statement\)/);
   assert.match(msg, /meta\.kit "bien-ban" không được tầng hình ảnh đọc/);
   assert.match(msg, /⚠ deck 7 slide nhưng không có ảnh, icon hay sticker/);
-  // có sticker thì hết cảnh báo ⚠; art ở panelrows không bị coi là bỏ qua
+  // có sticker thì hết cảnh báo "deck toàn chữ"; nhưng sticker KHÔNG thay được bộ hình theo môn (mục E, 13/11/2026) → còn ⚠ Nền chung
   const ok = kiemDeck({ meta: {}, slides: slides({ emoji: "balance-scale" }).map((s, i) => (i < 3 ? { ...s, emoji: "judge" } : s)) }, { deckDir: tmpdir() }).join("\n");
-  assert.doesNotMatch(ok, /⚠/);
+  assert.doesNotMatch(ok, /⚠ deck \d+ slide nhưng không có ảnh/);
+  assert.match(ok, /⚠ Nền chung/);
   const pr = kiemDeck({ meta: {}, slides: [{ type: "panelrows", title: "x", art: "gcn" }] }, { deckDir: tmpdir() }).join("\n");
   assert.doesNotMatch(pr, /"art" bị bỏ qua/);
 });
