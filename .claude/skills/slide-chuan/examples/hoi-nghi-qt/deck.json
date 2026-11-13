@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "Bộ hình bàn hội nghị quốc tế — 3 slide mẫu",
+    "short": "Công pháp quốc tế · Nhập môn",
+    "author": "(điền tên)",
+    "minutes": 2,
+    "hinh": {
+      "mau": "lam",
+      "chuyen": "morph"
+    },
+    "ghiChu": "Mẫu của bộ hình qt* (hinh/hoi_nghi.js). Nội dung: Hiến chương LHQ 1945 khoản 2 Điều 1; Công ước Montevideo 1933 Điều 1 (bốn dấu hiệu quốc gia, quan điểm phổ biến coi là tập quán)."
+  },
+  "slides": [
+    {
+      "type": "qtbia",
+      "id": "bia",
+      "kicker": "Bài thuyết trình · Công pháp quốc tế",
+      "title": "Luật quốc tế: luật giữa [những quốc gia ngang hàng]",
+      "subtitle": "Khác luật trong nước ở đâu · nằm ở nguồn nào · bảy nguyên tắc cơ bản",
+      "author": "(điền tên)",
+      "authorSub": "(điền lớp)",
+      "date": "11/2026",
+      "notes": "Chào thầy cô và các bạn. Hôm nay nhóm trình bày tổng quan về Công pháp quốc tế — môn mà nhiều bạn thấy xa vời vì nó điều chỉnh quan hệ giữa các quốc gia chứ không phải giữa người với người. Phía sau là hội trường Đại hội đồng Liên hợp quốc ở New York: một trăm chín mươi ba quốc gia thành viên ngồi ngang hàng, mỗi nước một phiếu. Chính hình ảnh này gợi ra câu hỏi xuyên suốt bài hôm nay."
+    },
+    {
+      "type": "qtchuong",
+      "id": "p1",
+      "num": 1,
+      "part": "Khác luật trong nước",
+      "title": "Luật quốc tế khác luật trong nước ở đâu?",
+      "sub": "Ai làm ra luật, ai chịu luật, ai bảo đảm thi hành",
+      "notes": "Phần một: luật quốc tế khác luật trong nước ở đâu."
+    },
+    {
+      "type": "qtban",
+      "id": "chu-the",
+      "toc": "Chủ thể",
+      "kicker": "Phần 1 · Chủ thể",
+      "title": "Quốc gia là chủ thể [cơ bản] của luật quốc tế",
+      "items": [
+        {
+          "icon": "PiFlagDuotone",
+          "name": "Quốc gia",
+          "who": "Chủ thể cơ bản",
+          "desc": "Có chủ quyền; dân cư, lãnh thổ, chính phủ, khả năng quan hệ với nước khác"
+        },
+        {
+          "icon": "PiBuildingsDuotone",
+          "name": "Tổ chức quốc tế",
+          "who": "Chủ thể phái sinh",
+          "desc": "Liên chính phủ, do quốc gia lập bằng điều ước — Liên hợp quốc, ASEAN"
+        },
+        {
+          "icon": "PiUsersThreeDuotone",
+          "name": "Dân tộc tự quyết",
+          "who": "Đấu tranh giành độc lập",
+          "desc": "Quyền tự quyết của các dân tộc — khoản 2 Điều 1 Hiến chương LHQ"
+        },
+        {
+          "icon": "PiChurchDuotone",
+          "name": "Chủ thể đặc biệt",
+          "who": "Toà thánh (Vatican)",
+          "desc": "Không đủ dấu hiệu thông thường nhưng được cộng đồng quốc tế thừa nhận"
+        }
+      ],
+      "notes": "Quốc gia là chủ thể cơ bản vì có chủ quyền. Bốn dấu hiệu của quốc gia thường được dẫn từ Điều 1 Công ước Montevideo năm 1933: dân cư thường xuyên, lãnh thổ xác định, chính phủ, và khả năng quan hệ với quốc gia khác. Tổ chức quốc tế liên chính phủ là chủ thể phái sinh: quốc gia lập ra bằng điều ước và trao cho nó năng lực trong phạm vi điều ước. Dân tộc đang đấu tranh giành quyền tự quyết và một số chủ thể đặc biệt như Toà thánh cũng được thừa nhận. Còn cá nhân, công ty đa quốc gia có phải chủ thể không? Giáo trình ở Việt Nam thường cho là không; đây là điểm còn tranh luận trong học thuật.",
+      "focus": 0
+    }
+  ]
+}

@@ -27,6 +27,10 @@ FRAMES = {
                "chart/table/map — số liệu có nguồn (insight là câu kết luận)", "closing — lessons + rec", "end"],
 }
 STATUS = ["hiện hành", "hết hiệu lực", "dự thảo", "học thuật", "chưa kiểm"]
+# bộ hình riêng theo môn của tầng hình ảnh (references/canh.md mục 8–9). Môn khác: nền, khung chung — lỗi L10 đã bị chê 3 lần
+BO_HINH = {"bc": "hình sự — bảng bằng chứng (hinh/bang_chung.js, kiểu bc*)",
+           "qt": "Công pháp quốc tế — bàn hội nghị (hinh/hoi_nghi.js, kiểu qt*)"}
+NEN_CHUNG = "deck sẽ chỉ có nền, khung chung của skill — che chữ đi không đoán được đề tài (lỗi L10, đã bị chê ở 3 bài)"
 
 
 def path_of(d): return os.path.join(d, "prep.json")
@@ -59,6 +63,9 @@ def init(d, kind, minutes, topic):
         "scope": {"in": "", "out": []},
         # bước 0 — thế giới hình ảnh (references/the-gioi-hinh-anh.md): 10 vật thấy tận mắt → 1 vật chủ đạo + 2 vật phụ → world (meta.kit)
         "world": {"objects": [], "main": "", "minor": [], "kit": ""},
+        # tầng dựng: "hinh" (hinh/dung.js, mặc định) | "luoi" (engine/build.js). Tầng hình ảnh cần bộ hình theo môn (boHinh: bc | qt);
+        # môn chưa có bộ → hỏi người dùng TRƯỚC khi duyệt: làm bộ mới, hay chấp nhận nền chung (chapNhanNenChung: true — chỉ người dùng quyết)
+        "tang": "hinh", "boHinh": "", "chapNhanNenChung": False,
         # số liệu (bài report): mỗi con số dùng trên slide một dòng — nguồn + ngày đối chiếu; số mâu thuẫn giữa các bảng ghi ở note
         "data": [{"figure": "", "value": "", "source": "", "checked": "", "note": ""}],
         # nhận xét của giảng viên / người duyệt cho bản trước: mỗi ý ghi cách đã xử lý (fix) — build không biết, người làm phải tự đối chiếu
@@ -81,10 +88,17 @@ def problems(pr):
     src = [s for s in pr.get("sources") or [] if str(s.get("title") or "").strip()]
     if not src: out.append("sources: chưa có nguồn nào (tài liệu gốc, giáo trình, văn bản luật, nguồn số liệu)")
     for i, s in enumerate(src):
-        if s.get("legal") and s.get("status") not in STATUS: out.append(f"sources[{i}] \"{s['title'][:40]}\": văn bản luật cần status ({' / '.join(STATUS)})")
+        if s.get("legal") and not any(str(s.get("status") or "").strip().startswith(x) for x in STATUS): out.append(f"sources[{i}] \"{s['title'][:40]}\": văn bản luật cần status ({' / '.join(STATUS)})")
     wd = pr.get("world") or {}
     if pr.get("kind") in ("report", "lecture") and (len(wd.get("objects") or []) < 8 or not str(wd.get("main") or "").strip() or len(wd.get("minor") or []) < 2 or not str(wd.get("kit") or "").strip()):
         out.append("world: bước 0 thế giới hình ảnh chưa đủ — ≥ 8 vật thấy tận mắt (objects), 1 vật chủ đạo (main), 2 vật phụ (minor), world chọn (kit) — xem references/the-gioi-hinh-anh.md")
+    if (pr.get("tang") or "hinh") == "hinh" and not pr.get("chapNhanNenChung"):
+        bh = str(pr.get("boHinh") or "").strip()
+        if bh and bh not in BO_HINH: out.append(f"boHinh: \"{bh}\" không có — chọn: {', '.join(BO_HINH)}")
+        elif not bh: out.append("boHinh: tầng hình ảnh chưa có bộ hình cho môn này → " + NEN_CHUNG + ". Chọn một: (a) boHinh = "
+                                + " | ".join(f"{k} ({v.split(' — ')[0]})" for k, v in BO_HINH.items())
+                                + "; (b) làm bộ hình mới cho môn trước (references/canh.md mục 8–9); (c) người dùng đồng ý nền chung → chapNhanNenChung: true"
+                                + " (nói rõ trong tin xin duyệt, không tự đặt); hoặc tang: \"luoi\" (engine/build.js, world meta.kit)")
     sc = pr.get("scope") or {}
     if pr.get("kind") == "report" and not str(sc.get("in") or "").strip(): out.append("scope.in: bài báo cáo cần ghi rõ đối tượng phân tích (vd. \"chỉ BHXH bắt buộc\") — nội dung ngoài phạm vi ghi ở scope.out")
     if pr.get("kind") == "report":
@@ -102,8 +116,8 @@ def problems(pr):
     if len(plan) < 3: out.append("plan: chưa có kế hoạch slide (mỗi slide: question, title = câu kết luận, type)")
     for q in plan:
         t = str(q.get("title") or "")
-        if t.strip().endswith("?") and q.get("type") not in ("agenda", "quiz", "section", "cover", "end"): out.append(f"plan slide {q.get('slide')}: tiêu đề là câu hỏi — viết thành câu kết luận")
-    if pr.get("kind") == "lecture" and not any(q.get("type") == "quiz" for q in plan): out.append("plan: bài giảng cần ít nhất 1 cặp quiz (hỏi → đáp án)")
+        if t.strip().endswith("?") and q.get("type") not in ("agenda", "quiz", "quizgo", "bigq", "picks", "section", "cover", "end"): out.append(f"plan slide {q.get('slide')}: tiêu đề là câu hỏi — viết thành câu kết luận")
+    if pr.get("kind") == "lecture" and not any(q.get("type") in ("quiz", "quizgo") for q in plan): out.append("plan: bài giảng cần ít nhất 1 cặp quiz (hỏi → đáp án)")
     return out
 
 
@@ -118,6 +132,11 @@ def summary(d):
     pr = load(d); L = []
     L.append(f"# Gói chuẩn bị — {pr.get('topic') or '(chưa có chủ đề)'}")
     L.append(f"Loại bài: **{pr.get('kind')}** · Người nghe: {pr.get('audience') or '?'} · Thời lượng: {pr.get('minutes') or '?'} phút · Dự kiến {len(pr.get('plan') or [])} slide\n")
+    bh = str(pr.get("boHinh") or "").strip()
+    if (pr.get("tang") or "hinh") == "luoi": L.append(f"Tầng lưới Office (engine/build.js) · world: `{(pr.get('world') or {}).get('kit') or '?'}`\n")
+    elif bh in BO_HINH: L.append(f"Bộ hình: {bh} — {BO_HINH[bh]}\n")
+    elif pr.get("chapNhanNenChung"): L.append(f"> ⚠ **Người dùng đã đồng ý dùng nền, khung chung**: {NEN_CHUNG}.\n")
+    else: L.append(f"> ⚠ **CHƯA CHỌN BỘ HÌNH** — {NEN_CHUNG}. Cần người dùng chọn: dùng bộ có sẵn ({', '.join(BO_HINH)}), làm bộ mới, hay chấp nhận nền, khung chung.\n")
     L.append("## Nguồn")
     for s in pr.get("sources") or []:
         if s.get("title"): L.append(f"- {s['title']}" + (f" — **{s.get('status') or 'chưa ghi tình trạng'}**" if s.get("legal") else "") + (f" ({s['note']})" if s.get("note") else ""))
