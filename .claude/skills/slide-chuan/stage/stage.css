@@ -34,6 +34,8 @@ html, body { background: #05070d; }
 .sub { font: 500 32px/1.42 var(--fb); color: var(--mut); max-width: 1400px; }
 .body { flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: center; }
 .note { margin-top: 18px; font: 500 25px/1.35 var(--fb); color: var(--mut); } .note em { color: var(--fg); font-weight: 800; }
+/* takeaway = dải "Ghi nhớ": cùng chỗ (chân slide) ở mọi slide có nó; chữ mực đậm hơn chú thích thường, vạch màu nhấn bên trái (kết luận ≠ chú thích) */
+.note.gn { font: 700 28px/1.35 var(--fb); color: var(--fg); border-left: 8px solid var(--hl); padding: 4px 0 4px 20px; } .note.gn .gn-t { display: inline-block; margin-right: 16px; font: 800 20px/1 var(--fb); letter-spacing: .08em; text-transform: uppercase; color: var(--hl); vertical-align: 3px; }
 .ico { display: inline-flex; } .ico svg { width: 1em; height: 1em; display: block; }
 /* thẻ: tấm giấy viền mực, bóng cứng lệch — cùng ngôn ngữ với áp phích tranh cổ động */
 .card { background: var(--card); border: 5px solid var(--edge); box-shadow: 12px 12px 0 var(--shadow); padding: 26px 30px; }

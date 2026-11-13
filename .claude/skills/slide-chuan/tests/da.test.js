@@ -158,3 +158,19 @@ test("chữ trưng bày giữ liền từ ghép (hệ thống, lao động…) b
     assert.ok(!q.than.includes(" "), "chữ thân (< 40 px) giữ dấu cách thường");
   } finally { await b.close(); }
 });
+
+test("takeaway hiện đúng một lần thành dải Ghi nhớ ở MỌI type validate.js cho phép; note không bị mẫu bỏ mất", () => {
+  const src = require("fs").readFileSync(path.join(__dirname, "..", "engine", "validate.js"), "utf8");
+  const TAKE = eval(src.match(/const TAKE_OK = new Set\((\[[^\]]*\])\)/)[1]);   // eslint-disable-line no-eval
+  assert.ok(TAKE.length >= 30);
+  for (const t of TAKE) {
+    const d = deck({ da: "giay" }, [{ type: "cover", title: "Bìa" }, { type: t, title: "Tiêu đề thử", takeaway: "CÂU CHỐT XYZ" }]);
+    const sec = dungHtml(d, { deckDir: path.join(__dirname, "..") }).html.split("<section").slice(2).join("");
+    assert.equal(sec.split("CÂU CHỐT XYZ").length - 1, 1, `${t}: takeaway phải hiện đúng một lần`);
+    assert.ok(/class="note gn"[^>]*><b class="gn-t">Ghi nhớ<\/b>CÂU CHỐT XYZ/.test(sec), `${t}: takeaway phải là dải Ghi nhớ`);
+  }
+  for (const t of ["isotype", "quote", "quiz"]) {
+    const d = deck({ da: "giay" }, [{ type: "cover", title: "Bìa" }, { type: t, title: "T", quote: "Q", note: "CHÚ THÍCH ZZ" }]);
+    assert.ok(dungHtml(d, { deckDir: path.join(__dirname, "..") }).html.includes("CHÚ THÍCH ZZ"), `${t}: note bị bỏ mất`);
+  }
+});

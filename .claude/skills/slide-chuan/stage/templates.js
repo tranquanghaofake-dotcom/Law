@@ -260,6 +260,16 @@ function wrap(out, slide, deck, i, n) {
 function render(slide, deck, ctx, i, n) {
   I = 0;
   const fn = T[slide.type], out = (fn || T.generic)(slide, deck, ctx);
+  // note / takeaway: validate.js cho phép, nhưng nhiều mẫu không vẽ (28/32 type từng bỏ mất takeaway, isotype / quote / quiz bỏ note) →
+  // vẽ ở chân slide — chỗ cố định của câu chú thích; takeaway thành dải "Ghi nhớ" (vạch nhấn + nhãn) ở cùng chỗ trên mọi slide
+  if (!out.bare) {
+    if (typeof slide.takeaway === "string" && slide.takeaway.trim()) { const gn = `<p class="note gn" ${inn()}><b class="gn-t">Ghi nhớ</b>${f(slide.takeaway)}</p>`;
+      const k = out.html.lastIndexOf(`>${f(slide.takeaway)}</p>`);
+      const a = k >= 0 ? out.html.lastIndexOf('<p class="note"', k) : -1;
+      if (a >= 0 && !out.html.slice(a, k).includes("</p>")) out.html = out.html.slice(0, a) + gn + out.html.slice(k + f(slide.takeaway).length + 5);   // mẫu đã vẽ takeaway như chú thích thường → đổi thành dải
+      else out.html += gn; }
+    else if (typeof slide.note === "string" && slide.note.trim() && !out.html.includes(f(slide.note))) out.html += note(slide.note);
+  }
   return { html: wrap(out, slide, deck, i, n), generic: !fn };
 }
 // kit: các hàm dựng chung, để tầng hình ảnh (hinh/canh.js) viết thêm mẫu cùng giọng với bộ mẫu này
