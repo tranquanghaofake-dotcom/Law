@@ -319,7 +319,7 @@ Hệ hình hiện tại:
 | Phong bì lương hưu | mốc được hưởng; ở Ghi nhớ cùng tên Morph với slide kết → phong bì tới tay người nhận lương hưu trong ảnh; ở slide kết quả trắc nghiệm mang **nhãn dán đáp án** ở góc ("40%" khi đúng, "?" khi sai) — đọc liền với nhãn in "LƯƠNG HƯU" | nhãn dán không che nhãn in |
 | Công thức | vế trái một dòng, "= vế phải" một dòng | ngắt dòng tại nghĩa, không để trình duyệt tự ngắt |
 
-Đã bỏ vì không điền được cột "nghĩa": chùm bong bóng, chấm lấp lánh quanh khiên, cuốn sổ nhỏ ở góc vòng phần trăm, biển cảnh báo trên sổ hạn chế (trùng biểu tượng hàng 2), sổ / phong bì vẽ đặt cạnh ảnh đã có vật thật, màu vàng ở dải giữa của hạn chế / kiến nghị.
+Đã bỏ vì không điền được cột "nghĩa": chùm bong bóng, chấm lấp lánh quanh khiên, cuốn sổ nhỏ ở góc vòng phần trăm, biển cảnh báo trên sổ hạn chế (trùng biểu tượng hàng 2), sổ / phong bì vẽ đặt cạnh ảnh đã có vật thật, màu vàng ở dải giữa của hạn chế / kiến nghị, chồng xu ở góc slide quỹ (thanh đã là cuộn xu), chồng 16 cuốn không mang số ở slide mở Phần 2 (nay 19 cuốn = 18,91 triệu).
 - **Máy quay** (`data-cam`, `hinh/may_quay.js`): khung + dải đầu đứng yên, cả cảnh trôi trái (vật gần nhanh hơn — `data-sau`), vào phần mới đi xuống, sau slide mở phần phóng vào; hàng danh sách đứng ngoài máy quay (`data-sau="0"`) và hiện lần lượt khi máy quay dừng.
 
 Kỹ thuật: lớp ảnh thêm tiền tố kiểu slide vào tên Morph; vật `bh-p-…` và dải đầu `bh-hd-…` giữ tên. Bước 2 của slide hai bước: Morph thường. Đo chữ bằng file font (Anton đo ở dạng in hoa). Hộp chữ một dòng / cỡ tiêu đề không tự xuống dòng (build.js).
