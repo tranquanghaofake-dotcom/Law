@@ -135,7 +135,10 @@ hinhKhiSanSang(() => hinhCanLeQuangHoc());
 </script>
 </body></html>`;
   const khongDoc = goc.map((sl, j) => ({ j, type: sl.type, k: td.chuaDoc(sl, j) })).filter((x) => x.k.length);
-  return { html, generic, missing, n: out.length, mau: daTen ? `da ${daTen}` : mau, chuyen, da, boMode: bo, khongDoc };
+  // làm tròn xuống thành số khác, xét trên CHỮ ĐÃ DỰNG (có số do mẫu tự tính: bhtang 12,07 → 18,91 in "1,57") — engine/validate.js chỉ thấy deck.json
+  const lt = require("../engine/validate").kiemLamTron(out.map((o) => o.html.replace(/<(style|script)[\s\S]*?<\/\1>/g, " ").replace(/<[^>]+>/g, " ").replace(/&nbsp;|\u00a0/g, " ").replace(/&amp;/g, "&")));
+  const lamTron = [...new Set(lt.map((h) => `Slide ${(out[h.i].src ?? h.i) + 1}: ${h.text}`))];
+  return { html, generic, missing, n: out.length, mau: daTen ? `da ${daTen}` : mau, chuyen, da, boMode: bo, khongDoc, lamTron };
 }
 
 // tự kiểm trong trang: chữ tràn khỏi slide, khối tràn đáy — báo để sửa deck.json (cắt chữ, tách slide), không âm thầm cắt
@@ -174,6 +177,7 @@ async function dung({ deckPath, outPath, mau, chuyen, soat = false, nhungFont = 
   if (r.boMode.length) console.log(`ℹ "mode" bị bỏ qua ở ${r.boMode.join(", ")} — ở tầng hình ảnh mỗi type tự chọn nền (chỉ statement nhận "a"); cần nền màu nhấn cho bước ngoặt thì dùng statement / hero / headline, hoặc bỏ "mode"`);
   if (nd.limits.length) console.warn("⚠ Vượt giới hạn ký tự (rút gọn để tránh tràn):\n  " + nd.limits.join("\n  "));
   if (nd.warnings.length) console.warn("⚠ Cảnh báo nội dung / cấu trúc:\n  " + nd.warnings.join("\n  "));
+  for (const h of r.lamTron || []) if (!nd.hints.includes(h)) nd.hints.push(h);   // làm tròn xét trên chữ đã dựng
   if (nd.hints.length) console.log("ℹ Gợi ý nội dung (không chặn --strict):\n  " + nd.hints.join("\n  "));
   for (const m of nd.info) console.log(m);
   const tong = nd.limits.length + nd.warnings.length + kiem.filter((m) => m.startsWith("⚠") && !m.startsWith("⚠ Nền chung")).length, buoc0 = nd.warnings.filter((w) => /^Bước 0/.test(w)).length;

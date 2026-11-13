@@ -192,6 +192,20 @@ function clarity(sl, n, warnings) {
 // extraTypes: kiểu của bộ cảnh / bộ hình (hinh/canh.js, bang_chung.js, hoi_nghi.js) — ở đây chỉ bỏ qua phần SCHEMA của chúng
 // slide mở phần: section của engine và slide chương của các bộ hình
 const CHUONG = ["section", "bcchuong", "qtchuong", "bhchuong"];
+/** LÀM TRÒN XUỐNG THÀNH SỐ KHÁC: trong các đoạn chữ (mỗi phần tử một slide), tỉ lệ có 2 chữ số thập phân (1,57 lần) mà chỗ khác ghi
+ *  "1,5×" / "1,5 lần" không kèm "hơn / gần / khoảng" → người nghe nhớ một con số sai (bộ BHXH 11/2026: thẻ Ghi nhớ "1,5×").
+ *  Làm tròn đúng (1,6) không báo. Trả [{ i, text }] — i là chỉ số đoạn. Gợi ý, không chặn. */
+function kiemLamTron(txt) {
+  const chinhXac = new Set(); txt.forEach((t) => { for (const m of String(t).matchAll(/(?<![\d.,])(\d+),(\d{2})(?![\d])/g)) chinhXac.add(+`${m[1]}.${m[2]}`); });
+  const out = [], da = new Set();
+  txt.forEach((t0, i) => { const t = String(t0); for (const m of t.matchAll(/(?<![\d.,])(\d+),(\d)(?![\d,])\s*(×|x\b|lần)/g)) { const v = +`${m[1]}.${m[2]}`;
+    const goc = [...chinhXac].find((x) => Math.floor(x * 10 + 1e-9) / 10 === v && Math.round(x * 10) / 10 !== v); if (goc == null) continue;
+    if (/(hơn|gần|khoảng|trên|xấp xỉ|~|≈)\s*$/i.test(t.slice(Math.max(0, m.index - 12), m.index))) continue;
+    const k = `${i}|${m[0]}`; if (da.has(k)) continue; da.add(k);
+    out.push({ i, text: `"${m[0].replace(/\s+/g, " ")}" là làm tròn xuống của ${String(goc).replace(".", ",")} ở slide khác — ghi đúng chữ số, hoặc thêm "hơn" / "khoảng" (người nghe nhớ một con số sai)` }); } });
+  return out;
+}
+
 function validate(deck, { extraTypes = [] } = {}) {
   const hints = []; // gợi ý (ℹ) — in ra nhưng không tính vào --strict
   const errors = [], warnings = [];
@@ -655,6 +669,10 @@ function validate(deck, { extraTypes = [] } = {}) {
     deck.slides.forEach((sl, i) => { if (!isObj(sl)) return;
       for (const m of chu(sl).matchAll(/\bslide\s+(\d+)(?:\s*[–-]\s*(\d+))?/gi)) for (const v of [m[1], m[2]].filter(Boolean).map(Number))
         if (v < 1 || v > M) warnings.push(`Slide ${i + 1} (${sl.type}): nhắc "${m[0]}" nhưng deck chỉ có ${M} slide — sửa số sau khi thêm / bớt slide`); }); }
+  // LÀM TRÒN XUỐNG THÀNH SỐ KHÁC (kiemLamTron, dùng chung với hinh/dung.js — chạy lại trên chữ đã dựng, vì có số do mẫu tự tính, vd. bhtang "1,57")
+  { const BO = new Set(["notes", "covers", "id", "photo", "url", "go", "next", "icon", "emoji", "type"]);
+    const chu = (v, k) => (BO.has(k) ? "" : typeof v === "string" ? v + " " : typeof v === "number" ? v + " " : Array.isArray(v) ? v.map((x) => chu(x)).join(" ") : isObj(v) ? Object.entries(v).map(([k2, x]) => chu(x, k2)).join(" ") : "");
+    hints.push(...kiemLamTron(deck.slides.map((sl) => (isObj(sl) ? chu(sl).replace(/[[\]]/g, "") : ""))).map((h) => `Slide ${h.i + 1}: ${h.text}`)); }
   // CĂN CỨ SỐ LIỆU: một khối ghi "Số liệu: slide N" (hoặc N–M) kèm con số → con số đó phải có trên slide N…M (chữ hoặc ghi chú)
   // — "mỗi hạn chế phải dựa trên số liệu đã trình bày"; gợi ý, không chặn (số có thể được làm tròn khác cách ghi)
   { const txt = (v) => (typeof v === "string" ? v + " " : Array.isArray(v) ? v.map(txt).join(" ") : isObj(v) ? Object.values(v).map(txt).join(" ") : typeof v === "number" ? v + " " : "");
@@ -668,4 +686,4 @@ function validate(deck, { extraTypes = [] } = {}) {
   return { errors, warnings, hints };
 }
 
-module.exports = { validate, SCHEMA, CAPS, checkIcon, words, MAX_WORDS };
+module.exports = { validate, SCHEMA, CAPS, checkIcon, words, MAX_WORDS, kiemLamTron };

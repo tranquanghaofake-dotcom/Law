@@ -406,7 +406,9 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
   for (const f of FACES) if (f.miss.size) warn.push(`font “${f.face}” không có ${f.miss.size} ký tự: ${[...f.miss].join(" ")} — PowerPoint sẽ lấy font khác cho các ký tự này (đổi ký tự hoặc đổi font)`);
   warn.forEach((w) => console.log("⚠ " + w));
   if (symUsed.size) console.log(`ℹ Ký hiệu ${[...symUsed].join(" ")} đặt bằng font “${SYM}” của máy (font chữ của deck không có các ký hiệu này).`);
-  if (lost.length) { console.log(`ℹ Chữ nằm trong ảnh (không gõ lại được trong PowerPoint):`); lost.forEach((l) => console.log("  " + l)); }
+  // cùng một nhãn in trên hình (vd. bìa sổ "SỔ BẢO HIỂM XÃ HỘI" ở 6 slide) → gộp một dòng, kê các slide
+  if (lost.length) { const gop = new Map(); for (const l of lost) { const m = l.match(/^slide (\d+) \(([^)]*)\): (.*)$/); const k = m ? m[3] : l; if (!gop.has(k)) gop.set(k, []); if (m) gop.get(k).push(m[1]); }
+    console.log(`ℹ Chữ nằm trong ảnh (không gõ lại được trong PowerPoint):`); for (const [k, ss] of gop) console.log(`  ${ss.length ? `slide ${ss.join(", ")}: ` : ""}${k}`); }
 
   // 7) --soat: LibreOffice dựng lại PPTX thành ảnh, ghép cạnh bản HTML để so bố cục (không soát được Morph / hiệu ứng / font nhúng)
   const res = { slides: plan.length, text: nText, pics: nPic, fx: nFx, morph: nMorph, fonts: nFont, warn, lost, work, full };

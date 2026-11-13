@@ -886,7 +886,7 @@
     },
     {
      "q": "Mười năm qua, bao nhiêu người đóng và quỹ ra sao?",
-     "a": "Tăng 1,5 lần, chỉ giảm 2022; thu vượt chi 2015–2022"
+     "a": "Tăng hơn 1,5 lần, chỉ giảm 2022; thu vượt chi 2015–2022"
     },
     {
      "q": "Đạt được gì, vướng ở đâu, cần sửa gì?",
@@ -908,7 +908,7 @@
    ],
    "chips": [
     {
-     "n": "1,5×",
+     "n": "1,57×",
      "text": "người đóng bắt buộc sau mười năm",
      "go": "so-nguoi"
     },
