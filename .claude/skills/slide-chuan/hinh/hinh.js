@@ -81,7 +81,10 @@
     const g = S.querySelector(".ghim-giay[data-ghim]"); if (!g) return;
     const vat = vungChiem(S, (el) => el.closest(".ghim-giay, .da-vat"), 22), w = g.offsetWidth, h = g.offsetHeight, H = S.offsetHeight;
     const trung = (l, t) => vat.some((q) => l < q.r && l + w > q.l && t < q.b && t + h > q.t);
-    for (const l of [1920 - 110 - w, 1920 - 110 - w - 160, 1100, 820, 540, 110]) for (let t = 96; t + h <= H - 36; t += 12) if (!trung(l, t)) { g.style.left = l + "px"; g.style.top = t + "px"; return; }
+    // ưu tiên CHỖ CỐ ĐỊNH: góc dưới phải (mép phải thẳng lề nội dung) — tờ ghim là câu chốt, người xem quen nhìn một chỗ; rồi góc trên phải cạnh tiêu đề; rồi tìm dần
+    const R0 = 1920 - 110 - w, day = H - 44 - h;
+    for (const [l, t] of [[R0, day], [R0, 96]]) if (!trung(l, t)) { g.style.left = l + "px"; g.style.top = t + "px"; return; }
+    for (const l of [R0, R0 - 160, 1100, 820, 540, 110]) for (let t = day; t >= 96; t -= 12) if (!trung(l, t)) { g.style.left = l + "px"; g.style.top = t + "px"; return; }
     g.dataset.khongCho = "1"; g.style.display = "none";
   };
   // đồ vật tiền cảnh của da (.da-vat[data-da-vat], hinh/da.js): đặt vào góc trống đầu tiên không chạm chữ / thẻ / hình; không còn chỗ thì bỏ

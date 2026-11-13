@@ -31,10 +31,10 @@ test("pin: tờ giấy ghim hiện trên slide, không đè thẻ / chữ; hết
       const q = await page.evaluate(() => { const g = document.querySelector(".ghim-giay"); const r = g.getBoundingClientRect(), S = g.closest("section.s"), B = S.getBoundingClientRect();
         const dam = [...S.querySelectorAll(".card, .h, .k")].filter((e) => { const c = e.getBoundingClientRect(); return c.left < r.right && c.right > r.left && c.top < r.bottom && c.bottom > r.top; }).map((e) => e.className);
         return { an: getComputedStyle(g).display === "none", chu: g.textContent, trong: r.left >= B.left && r.right <= B.right && r.bottom <= B.bottom, dam }; });
-      assert.ok(!q.an && /Giả tạo thì vô hiệu/.test(q.chu) && /Điều 124/.test(q.chu), `${k}: tờ giấy ghim phải hiện đủ câu và nguồn (${JSON.stringify(q)})`);
+      assert.ok(!q.an && /Giả\stạo\sthì\svô\shiệu/.test(q.chu) && /Điều\s124/.test(q.chu), `${k}: tờ giấy ghim phải hiện đủ câu và nguồn (${JSON.stringify(q)})`);
       assert.ok(q.trong && q.dam.length === 0, `${k}: tờ giấy ghim nằm trong slide, không đè thẻ / tiêu đề (${JSON.stringify(q)})`);
     }
-    const day = { meta: { da: "giay" }, slides: [cover, { type: "table", title: "Bảng dày kín slide", head: ["A", "B"], rows: Array.from({ length: 7 }, (_, i) => [`Dòng ${i + 1}`, "nội dung khá dài để chiếm chỗ"]), pin: "Câu chính của slide này nằm trên tờ giấy ghim" }] };
+    const day = { meta: { da: "giay" }, slides: [cover, { type: "table", title: "Bảng dày kín slide với tiêu đề rất dài chiếm gần hết bề ngang", head: ["A", "B"], rows: Array.from({ length: 6 }, (_, i) => [`Dòng ${i + 1}`, "nội dung khá dài để chiếm chỗ"]), pin: { text: "Câu chính của slide này khá dài, nằm trên tờ giấy ghim và chiếm nhiều dòng chữ", by: "nguồn dài ghi rõ văn bản, điều khoản và ngày ban hành" } }] };
     await mo(day); const loi = await kiemTran(page);
     assert.ok(loi.some((m) => /giấy ghim \(pin\) không có chỗ/.test(m)), `slide kín chỗ phải được báo:\n${loi.join("\n")}`);
   } finally { await b.close(); }
