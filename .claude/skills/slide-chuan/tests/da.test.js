@@ -229,3 +229,14 @@ test("lớp ảnh của khối có chữ thay thế đọc được (không ph�
     assert.ok(alt.some((a) => /Người mua · Mất nhà/.test(a)), JSON.stringify(alt));
   } finally { await b.close(); }
 });
+
+test("PPTX: lớp thuần trang trí mang cờ decorative (trình đọc màn hình bỏ qua); ảnh có nội dung giữ alt", { skip: (() => { try { require.resolve("playwright"); return false; } catch { return "không có Playwright"; } })(), timeout: 240000 }, () => {
+  const { buildDeck, tmpdir } = require("./helpers"), fs = require("fs"), JSZip = require("jszip");
+  const dir = tmpdir(); fs.mkdirSync(path.join(dir, "images")); fs.copyFileSync(path.join(__dirname, "..", "examples", "images", "gat-lua.jpg"), path.join(dir, "images", "gat-lua.jpg"));
+  const d = deck({ da: "giay" }, [{ type: "cover", title: "Bìa" }, { type: "cards", title: "Ba thẻ", items: [{ name: "Người mua", desc: "Mất nhà", photo: "images/gat-lua.jpg", alt: "Ruộng lúa đang gặt" }, { name: "Ngân hàng", desc: "Giữ thế chấp" }] }]);
+  const r = buildDeck(d, [], dir, { pptx: true }); assert.equal(r.code, 0, r.all);
+  return JSZip.loadAsync(fs.readFileSync(r.pptx)).then((z) => z.file("ppt/slides/slide2.xml").async("string")).then((x) => {
+    assert.ok(/descr="Khung của: [^"]*"><a:extLst><a:ext uri="\{C183D7F6-B498-43B3-948B-1728B52AA6E4\}"><adec:decorative/.test(x), "nền thẻ phải là decorative");
+    assert.ok(/descr="Ruộng lúa đang gặt"/.test(x) && !/descr="Ruộng lúa đang gặt"><a:extLst/.test(x), "khối có ảnh giữ alt, không decorative");
+  });
+});

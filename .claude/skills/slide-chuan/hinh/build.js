@@ -368,6 +368,10 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
         const esc = l.name.replace(/&/g, "&amp;"), a = `name="${esc}"></p:cNvPr>`;
         if (t.includes(a)) t = t.replace(a, `name="${esc}"><a:hlinkClick r:id="${rid}" action="ppaction://hlinksldjump"/></p:cNvPr>`); else warn.push(`slide ${i + 1}: không gắn được liên kết cho hộp chữ "${l.name}"`); }
       zip.file(rf, rels); }
+    // lớp thuần trang trí (nền viên nhãn, nền thẻ, vòng nền, thanh tiến độ, lớp phủ, vạch…): đánh dấu "decorative" (Office 2019+, Mark as decorative)
+    // để trình đọc màn hình bỏ qua — chữ của chúng là hộp chữ riêng; ảnh có nội dung giữ alt
+    t = t.replace(/(<p:cNvPr [^>]*descr="(?:Nhãn|Thẻ|Vòng nền|Thanh tiến độ|Tiến độ bài|Lớp phủ màu|Vạch|Trục|Dải đánh dấu|Hình trang trí|Số chú thích|Khung của: [^"]*)"[^>]*>)\s*<\/p:cNvPr>/g,
+      '$1<a:extLst><a:ext uri="{C183D7F6-B498-43B3-948B-1728B52AA6E4}"><adec:decorative xmlns:adec="http://schemas.microsoft.com/office/drawing/2017/decorative" val="1"/></a:ext></a:extLst></p:cNvPr>');
     const map = X.shapeIds(t), fx = effects.map((e) => (map[e.name] ? { ...e, sp: map[e.name].sp, isText: map[e.name].isText } : null)).filter(Boolean);
     if (fx.length !== effects.length) warn.push(`slide ${i + 1}: ${effects.length - fx.length} hiệu ứng không tìm thấy đối tượng`);
     const tm = X.timing(fx); if (tm) t = t.replace("</p:sld>", tm + "</p:sld>");
