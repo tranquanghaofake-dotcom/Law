@@ -215,3 +215,17 @@ test("meta.logo (đã hướng dẫn trong layouts.md) được vẽ ở bìa, c
   assert.match(secs[0], /<img class="cv-logo" src="[^"]*logo\.jpeg"/);
   assert.ok(!/cv-logo/.test(secs[1]));
 });
+
+test("lớp ảnh của khối có chữ thay thế đọc được (không phải tên lớp khoi-N)", { skip: (() => { try { require.resolve("playwright"); return false; } catch { return "không có Playwright"; } })(), timeout: 60000 }, async () => {
+  const { chromium } = require("playwright"), fs = require("fs"), os = require("os");
+  const exe = process.env.PW_CHROMIUM || ["/opt/pw-browsers/chromium"].find((p) => fs.existsSync(p));
+  const b = await chromium.launch(exe ? { executablePath: exe } : {}), page = await (await b.newContext({ viewport: { width: 1920, height: 1080 } })).newPage();
+  try {
+    const d = deck({ da: "giay" }, [{ type: "cover", title: "Bìa" }, { type: "cards", title: "Ba thẻ", items: [{ name: "Người mua", desc: "Mất nhà" }, { name: "Ngân hàng", desc: "Giữ thế chấp" }] }]);
+    const f = path.join(fs.mkdtempSync(path.join(os.tmpdir(), "alt-")), "deck.html"); fs.writeFileSync(f, dungHtml(d, { deckDir: path.join(__dirname, "..") }).html);
+    await page.goto("file://" + f); await page.evaluate(() => window.hinhSanSang);
+    const alt = await page.evaluate(() => [...document.querySelectorAll("section.s")[1].querySelectorAll("[data-l]")].map((e) => e.getAttribute("data-alt") || ""));
+    assert.ok(alt.length && alt.every((a) => a && !/^khoi-\d+$/.test(a)), JSON.stringify(alt));
+    assert.ok(alt.some((a) => /Người mua · Mất nhà/.test(a)), JSON.stringify(alt));
+  } finally { await b.close(); }
+});

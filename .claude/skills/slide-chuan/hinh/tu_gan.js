@@ -54,7 +54,8 @@
         if (pv) pad = Math.max(pad, Math.max(0, R.left - q.left, q.right - R.right, R.top - q.top, q.bottom - R.bottom) + shadow(k)); }
       if (vis) { el.setAttribute("data-l", "khoi-" + (i + 1)); el.setAttribute("data-a", fxL); el.setAttribute("data-at", at); el.setAttribute("data-pad", Math.min(260, Math.ceil(pad) + 3));
         // chữ thay thế cho lớp ảnh trong PowerPoint: lấy từ aria-label / alt của ảnh trong khối (photoAlt, items[].alt) — trước đây mọi ảnh đều "Hình minh hoạ"
-        if (!el.hasAttribute("data-alt")) { const a = [el, ...el.querySelectorAll("[aria-label], img[alt]")].filter((c) => c === el || mine(el, c)).map((c) => c.getAttribute("aria-label") || c.getAttribute("alt") || "").find((t) => t.trim()); if (a) el.setAttribute("data-alt", a.trim().slice(0, 250)); } }
+        if (!el.hasAttribute("data-alt")) { const a = [el, ...el.querySelectorAll("[aria-label], img[alt]")].filter((c) => c === el || mine(el, c)).map((c) => c.getAttribute("aria-label") || c.getAttribute("alt") || "").find((t) => t.trim()); if (a) el.setAttribute("data-alt", a.trim().slice(0, 250));
+          else { const t = (el.innerText || el.textContent || "").replace(/\s*\n\s*/g, " · ").replace(/\s+/g, " ").trim(); el.setAttribute("data-alt", t ? `Khung của: ${t.slice(0, 80)}` : "Hình trang trí"); } } }   // "khoi-4" (tên lớp) vô nghĩa với trình đọc màn hình
       else el.setAttribute("data-chu", fx + "," + at);
     });
     blocks.forEach((tb) => { const host = tb.closest("[data-in]"); if (!host || host.hasAttribute("data-l") || tb.hasAttribute("data-a")) return;
