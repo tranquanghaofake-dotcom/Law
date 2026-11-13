@@ -126,7 +126,7 @@ S.bhchuong = (s) => { const k = Math.max(0, Math.min(2, (+s.num || 1) - 1)), n =
 // 6 · TRÍCH LUẬT — thẻ trích nguyên văn (dấu ngoặc khổng lồ, cụm nhấn tô vàng) + thẻ xanh đậm "ý then chốt"
 S.bhtrich = (s) => { const H = tieuDe(s), top = Math.max(300, H.day + 44), nt = String(s.note || ""), [dauN, sauN] = nt.includes(":") ? [nt.slice(0, nt.indexOf(":")), nt.slice(nt.indexOf(":") + 1)] : ["Ý then chốt", nt];
   const y = sauN.split("·").map((t) => t.trim()).filter(Boolean).slice(0, 3), VY = ["toa-nha", "khoa", "dau-tich"], h = 620;
-  return `${H.html}${goc("khien", "bh-p-hero1")}${the("bh-qc", { x: 110, y: top, w: 1150, h })}${chu("bh-qm", 150, top - 6, 200, "“")}
+  return `${H.html}${goc("khien", "bh-p-hero1")}${the("bh-qc", { x: 110, y: top, w: 1150, h })}${lop("bh-qm", { x: 160, y: top + 14, w: 106, h: 90 }, `<svg viewBox="0 0 130 110" width="100%" height="100%"><path d="M8 104 V62 C8 30 22 10 54 4 L58 22 C42 28 36 40 36 56 H58 V104 Z M72 104 V62 C72 30 86 10 118 4 L122 22 C106 28 100 40 100 56 H122 V104 Z" fill="#${P.sky2}"/></svg>`, { shadow: false, alt: "Dấu trích dẫn" })}
     ${chu("bh-qt", 170, top + 120, 1040, f(s.quote || ""))}${vien("bh-qby", 170, top + h - 150, s.by || "", { px: 24 })}${chu("bh-qro", 170, top + h - 82, 1040, esc(s.role || ""))}
     ${nt ? `${the("bh-yc", { x: 1300, y: top, w: 510, h }, { nen: "dam" })}${chu("bh-ych", 1340, top + 40, 430, esc(dauN.trim()), { color: "ffffff" })}
       ${y.map((t, k) => `${vong(`bh-yi${k}`, 1340, top + 130 + k * 210, 140, VY[k])}${chu("bh-yt", 1500, top + 172 + k * 210, 290, esc(t.charAt(0).toUpperCase() + t.slice(1)), { color: "ffffff" })}`).join("")}` : ""}`; };
