@@ -190,3 +190,9 @@ test("tiêu đề hai dòng chia đều (text-wrap: balance), không còn dòng 
     assert.ok(q.dong === 1 || q.cuoi >= 2, `dòng cuối chỉ ${q.cuoi} chữ`);
   } finally { await b.close(); }
 });
+
+test("trường có trong deck.json mà không mẫu nào đọc khi dựng thì được liệt kê (gõ sai tên, type không vẽ)", () => {
+  const d = deck({ da: "giay" }, [{ type: "cover", title: "Bìa" }, { type: "cards", title: "Ba thẻ", titel: "gõ sai", notes: "ghi chú", items: [{ name: "A", desk: "gõ sai", desc: "đúng" }] }]);
+  const r = dungHtml(d, { deckDir: path.join(__dirname, "..") });
+  assert.deepEqual(r.khongDoc, [{ j: 1, type: "cards", k: ["titel", "items[].desk"] }]);
+});

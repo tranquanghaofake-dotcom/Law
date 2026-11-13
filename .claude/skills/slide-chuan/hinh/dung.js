@@ -41,8 +41,24 @@ const decoGan = (s, ctx, i, html, prev = new Set(), now = new Set()) => { const 
     const noi = prev.has(n); now.add(n);
     return `<div class="emo" data-l="deco-${i}-${k}" data-m="hd-${n}" data-pad="${Math.round(p.s * 0.1 + 14)}" data-alt="Hình minh hoạ" ${noi ? "" : `data-a="pop" data-at="${300 + k * 250}"`}${k === 0 && s.emojiPos ? "" : " data-tu-dat"} style="position:absolute;left:${p.l}px;top:${p.t}px;width:${p.s}px;height:${p.s}px;rotate:${p.r}deg"><img src="${ctx.emoji(n)}" alt=""></div>`; }).join("");
   return g ? html.replace(/<\/section>\s*$/, g + "</section>") : html; };
+// THEO DÕI TRƯỜNG ĐƯỢC ĐỌC KHI DỰNG: mỗi slide bọc trong Proxy ghi lại đường dẫn khoá được đọc (mảng → "[]"). Trường có trong deck.json mà
+// không mẫu nào đọc = gõ sai tên, hoặc type đó không vẽ trường đó — trước đây bị bỏ âm thầm (takeaway, pin, part… — loi-da-biet F3.1)
+const KHONG_XET = new Set(["covers", "basis", "scopeOk", "activitySec", "photoCredit", "photoSource", "photoLicense", "license", "source", "credit", "notes", "check"]);
+function theoDoi(slides) {
+  const doc = slides.map(() => new Set()), kho = new WeakMap();
+  const boc = (o, j, p) => { if (!o || typeof o !== "object") return o; let m = kho.get(o); if (!m) { m = new Map(); kho.set(o, m); } if (m.has(j + p)) return m.get(j + p);
+    const pr = new Proxy(o, { get(t, k, r) { const v = Reflect.get(t, k, r); if (typeof k !== "string" || (Array.isArray(t) && !/^\d+$/.test(k))) return v;
+      const q = p + (Array.isArray(t) ? "[]" : (p && !p.endsWith("[]") ? "." : p ? "." : "") + k); doc[j].add(q); return boc(v, j, q); } });
+    m.set(j + p, pr); return pr; };
+  const chuaDoc = (raw, j) => { const out = [], di = (o, p) => { if (Array.isArray(o)) { if (o.some((x) => x && typeof x === "object")) o.forEach((x) => di(x, p + "[]")); return; }
+      if (!o || typeof o !== "object") return; for (const k of Object.keys(o)) { if (!p && (KHONG_XET.has(k) || /^[_$]/.test(k))) continue; const q = p + (p ? "." : "") + k;
+        if (!doc[j].has(q)) { out.push(q); continue; } di(o[k], q); } };
+    di(raw, ""); return [...new Set(out)]; };
+  return { slides: slides.map((s, j) => boc(s, j, "")), chuaDoc };
+}
 function dungHtml(deck, { deckDir = process.cwd(), mau, chuyen } = {}) {
-  const src = deck.slides || []; if (!src.length) throw new Error("deck.json không có slide nào.");
+  const goc = deck.slides || []; if (!goc.length) throw new Error("deck.json không có slide nào.");
+  const td = theoDoi(goc); deck = { ...deck, slides: td.slides }; const src = deck.slides;
   const H = deck.meta?.hinh || {}; chuyen = chuyen || H.chuyen || "morph";
   // da: meta.da → bộ hình bc / qt → meta.kit / meta.style cũ → đề tài khớp → meta.kind. Có da thì màu của da thay bảng màu (--mau chỉ dùng khi da = none)
   const da = DA.chonDa(deck, { bcTypes: bc.TYPES, qtTypes: qt.TYPES }), daTen = da.ten;
@@ -107,7 +123,8 @@ hinhKhiSanSang(() => document.querySelectorAll("section.s[data-tu]").forEach((S)
 hinhKhiSanSang(() => hinhCanLeQuangHoc());
 </script>
 </body></html>`;
-  return { html, generic, missing, n: out.length, mau: daTen ? `da ${daTen}` : mau, chuyen, da, boMode: bo };
+  const khongDoc = goc.map((sl, j) => ({ j, type: sl.type, k: td.chuaDoc(sl, j) })).filter((x) => x.k.length);
+  return { html, generic, missing, n: out.length, mau: daTen ? `da ${daTen}` : mau, chuyen, da, boMode: bo, khongDoc };
 }
 
 // tự kiểm trong trang: chữ tràn khỏi slide, khối tràn đáy — báo để sửa deck.json (cắt chữ, tách slide), không âm thầm cắt
@@ -140,6 +157,7 @@ async function dung({ deckPath, outPath, mau, chuyen, soat = false, nhungFont = 
   if (r.da.loi) { const e = new Error(r.da.lyDo); e.code = 2; throw e; }
   if (r.da.goiY) console.log(`ℹ chưa ghi meta.da — tự chọn da "${r.da.ten}" theo đề tài; ghi "meta": { "da": "${r.da.ten}" } để cố định`);
   const kiem = [...kiemDeck(deck, { deckDir }), ...require("./kiem_tang").kiemTang(deck)]; for (const m of kiem) console.log(m);
+  if (r.khongDoc.length) console.log(`ℹ Trường có trong deck.json nhưng không mẫu nào đọc khi dựng (gõ sai tên, hoặc type đó không vẽ trường này):\n  ${r.khongDoc.slice(0, 12).map((x) => `slide ${x.j + 1} (${x.type}): ${x.k.join(", ")}`).join("\n  ")}${r.khongDoc.length > 12 ? `\n  … và ${r.khongDoc.length - 12} slide nữa` : ""}`);
   if (r.boMode.length) console.log(`ℹ "mode" bị bỏ qua ở ${r.boMode.join(", ")} — ở tầng hình ảnh mỗi type tự chọn nền (chỉ statement nhận "a"); cần nền màu nhấn cho bước ngoặt thì dùng statement / hero / headline, hoặc bỏ "mode"`);
   if (nd.limits.length) console.warn("⚠ Vượt giới hạn ký tự (rút gọn để tránh tràn):\n  " + nd.limits.join("\n  "));
   if (nd.warnings.length) console.warn("⚠ Cảnh báo nội dung / cấu trúc:\n  " + nd.warnings.join("\n  "));
