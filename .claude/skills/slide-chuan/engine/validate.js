@@ -172,7 +172,7 @@ function clarity(sl, n, warnings) {
   if (t && !QUESTION_OK.has(sl.type) && /\?\s*$/.test(t)) W(`tiêu đề là câu hỏi ("${t.slice(0, 40)}") — người nghe nhớ câu trả lời chứ không nhớ câu hỏi: viết thành câu kết luận, đưa câu hỏi vào kicker`);
   if (t && !["cover", "section", "end"].includes(sl.type) && LABEL_TITLE.test(t) && t.split(/\s+/).length <= 5) W(`tiêu đề là nhãn ("${t}") — viết thành một câu kết luận`);
   // match: ô trái trùng nhau ở các hàng liền nhau được GỘP thành một ô trên slide → chỉ đếm một lần
-  const wc = sl.type === "match" && Array.isArray(sl.pairs) ? words(Object.assign({}, sl, { pairs: sl.pairs.map((p, j) => (j && isObj(p) && isObj(sl.pairs[j - 1]) && p.left === sl.pairs[j - 1].left ? Object.assign({}, p, { left: "" }) : p)) })) : words(sl);
+  const wc = sl.type === "match" && Array.isArray(sl.pairs) ? words(Object.assign({}, sl, { pairs: sl.pairs.map((p, j) => (j && isObj(p) && isObj(sl.pairs[j - 1]) && p.left === sl.pairs[j - 1].left ? Object.assign({}, p, { left: "" }) : p)) })) : ["quizgo", "bhhoi"].includes(sl.type) ? words(Object.assign({}, sl, { whyNot: null, right: null, wrong: null })) /* phản hồi đúng / sai là slide KHÁC, không cộng vào slide hỏi */ : words(sl);
   if (wc > MAX_WORDS && !["redline", "book", "lawquote"].includes(sl.type) /* nguyên văn điều luật: không được cắt chữ */) W(`${wc} tiếng trên slide (tối đa ${MAX_WORDS}, nên ≤ 80) — giữ ý chính, chuyển phần giải thích vào notes`);
   // ký tự phải có nghĩa: chỉ dùng bộ ký hiệu chuẩn (→ hệ quả · ngăn cách — đối lập/giải thích ≈ xấp xỉ “ ” trích nguyên văn ? chưa rõ)
   const raw = textOf(sl);
@@ -224,11 +224,11 @@ function validate(deck, { extraTypes = [] } = {}) {
     const n = i + 1;
     if (!isObj(sl)) { E(n, "?", "slide", "phải là đối tượng { type: ..., ... }"); return; }
     const spec = SCHEMA[sl.type];
-    if (sl.type === "quizgo" && sl.whyNot != null) {   // cảnh quizgo (hinh/canh.js): whyNot[k] → slide phản hồi riêng cho phương án sai k
-      if (!Array.isArray(sl.whyNot)) warnings.push(`Slide ${n} (quizgo): "whyNot" phải là mảng song song với options (null ở phương án đúng)`);
+    if (["quizgo", "bhhoi"].includes(sl.type) && sl.whyNot != null) {   // quizgo (hinh/canh.js), bhhoi (hinh/so_bhxh.js): whyNot[k] → slide phản hồi riêng cho phương án sai k
+      if (!Array.isArray(sl.whyNot)) warnings.push(`Slide ${n} (${sl.type}): "whyNot" phải là mảng song song với options (null ở phương án đúng)`);
       else (sl.options || []).forEach((o, k) => { const w = sl.whyNot[k];
-        if (o && o.ok && w) warnings.push(`Slide ${n} (quizgo): whyNot[${k}] là phương án ĐÚNG — lời giải ghi ở right.text`);
-        else if (typeof w === "string" && w.replace(/[\[\]]/g, "").length > 130) warnings.push(`Slide ${n} (quizgo): whyNot[${k}] ${w.replace(/[\[\]]/g, "").length}/130 ký tự — slide phản hồi chỉ đủ 3 dòng dưới phương án vừa chọn`); }); }
+        if (o && o.ok && w) warnings.push(`Slide ${n} (${sl.type}): whyNot[${k}] là phương án ĐÚNG — lời giải ghi ở right.text`);
+        else if (typeof w === "string" && w.replace(/[\[\]]/g, "").length > 130) warnings.push(`Slide ${n} (${sl.type}): whyNot[${k}] ${w.replace(/[\[\]]/g, "").length}/130 ký tự — slide phản hồi chỉ đủ 3 dòng dưới phương án vừa chọn`); }); }
     // cảnh / bộ hình: không kiểm SCHEMA ở đây, nhưng VẪN lint nội dung (quá 110 tiếng, cụm đệm, tiêu đề là câu hỏi, ký tự trang trí) — trước 13/11/2026 bị bỏ qua cả phần này
     if (!spec && extraTypes.includes(sl.type)) { clarity(sl, n, warnings); return; }
     if (sl.type === "refs") { E(n, "refs", "type", 'kiểu "refs" (slide tài liệu + mã QR) đã bỏ khỏi skill — nguồn ghi trong bản Word đi kèm, không ghi trên slide'); return; }

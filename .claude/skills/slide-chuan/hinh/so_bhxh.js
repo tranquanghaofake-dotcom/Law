@@ -427,22 +427,25 @@ S.bhkiennghi = (s) => baTab(s, true);
 
 // 25 · TRẮC NGHIỆM — bốn thẻ đáp án; phong bì lương hưu ở góc; slide sai / đúng
 S.bhhoi = (s, deck, b, ctx) => { const op = (s.options || []).slice(0, 4), id = s.id || "cau-hoi", ok = op.findIndex((x) => x.ok);
+  // whyNot[k] (song song options, như quizgo) → phương án sai k có slide phản hồi riêng "sai-A"…: thẻ phương án vừa chọn (viền đỏ) + vì sao sai
+  const WN = Array.isArray(s.whyNot) ? s.whyNot : [], rieng = (k) => op[k] && !op[k].ok && typeof WN[k] === "string" && WN[k].trim() !== "";
+  const diToi = (x, k) => `${id}-${x.ok ? "dung" : rieng(k) ? "sai-" + "ABCD"[k] : "sai"}`, kSai = typeof b === "string" && b.startsWith("sai-") ? "ABCD".indexOf(b.slice(4)) : -1;
   const nut = (txt, go, x, y, mau) => nhan("bh-nut", x, y, txt, { dac: true, mau, px: 28, w: 340, go });
-  if (b === "sai" || b === "dung") { const d = b === "dung" ? s.right || {} : s.wrong || {}, dung = b === "dung";
+  if (b === "sai" || b === "dung" || kSai >= 0) { const d = b === "dung" ? s.right || {} : s.wrong || {}, dung = b === "dung", kThe = dung ? ok : kSai;
     return `${kick(s.kicker)}${vat("bh-kq", dung ? "dau-tich" : "dau-x", { x: 110, y: 190, w: 150 }, vao(0, "pop"))}${chu("bh-qd", 300, 214, 1400, esc(d.title || ""), { color: dung ? "0f8a5a" : P.red, ...vao(0) })}
-      ${dung && ok >= 0 ? `${the("bh-dung", { x: 110, y: 410, w: 835, h: 150 }, { trai: "14a06a", ...vao(1) })}${chu("bh-opl2", 160, 444, 90, "ABCD"[ok], { color: P.blue, ...vao(1) })}${chu("bh-opt", 260, 456, 650, esc(op[ok].text), vao(1))}` : ""}
-      ${chu("bh-qx", 110, dung ? 610 : 410, 1080, f(d.text || d.hint || ""), vao(2))}${nut(d.button || (dung ? "Tiếp tục" : "Thử lại"), dung ? (s.next || null) : id, 110, 860, dung ? "xanh" : "do")}
+      ${kThe >= 0 && op[kThe] ? `${the("bh-dung", { x: 110, y: 410, w: 835, h: 150 }, { trai: dung ? "14a06a" : P.red.replace("#", ""), ...vao(1) })}${chu("bh-opl2", 160, 444, 90, "ABCD"[kThe], { color: dung ? P.blue : P.red, ...vao(1) })}${chu("bh-opt", 260, 456, 650, esc(op[kThe].text), vao(1))}` : ""}
+      ${chu("bh-qx", 110, kThe >= 0 ? 610 : 410, 1080, f(kSai >= 0 ? WN[kSai] : d.text || d.hint || ""), vao(2))}${nut(d.button || (dung ? "Tiếp tục" : "Thử lại"), dung ? (s.next || null) : id, 110, 860, dung ? "xanh" : "do")}
       ${(() => { // phong bì lương hưu chở đáp án: nhãn dán ở góc — đúng → mức hưởng của đáp án ("40%"), sai → "?" (điều chưa giải quyết); nhãn "LƯƠNG HƯU" in trên phong bì giữ nguyên → đọc thành "lương hưu 40%"
         const PB = { x: 1290, y: 380, w: 500 }, pbH = PB.w / HERO.phongbi[1], nhanPb = dung ? ((op[ok] && String(op[ok].text).match(/\d+(?:[.,]\d+)?\s*%/)) || ["ABCD"[ok] || "?"])[0].replace(/\s+/g, "") : "?", pxP = 46;
         const wP = Math.round(rong(nhanPb, pxP, 800) + nhanPb.length * pxP * 0.07 + pxP * 2.4);
         return `${hero("bh-pbq", "phongbi", { ...PB, r: 4 }, vao(1))}${vien("bh-pbqn", PB.x + PB.w - wP * 0.75, PB.y + pbH * 0.02, nhanPb, { px: pxP, mau: dung ? "vang" : undefined, z: 12, fx: vao(2, "pop") })}`; })()}`; }
   if (anhU(ctx, s)) { const H = tieuDe(s, { w: 1040 }), top = Math.max(330, H.day + 50);
-    return `${anhBen(ctx, s, 1240)}${H.html}${op.map((x, k) => { const X = 110 + (k % 2) * 530, Y = top + Math.floor(k / 2) * 250, go = `${id}-${x.ok ? "dung" : "sai"}`, o = { ...vao(k), sau: 0 };
+    return `${anhBen(ctx, s, 1240)}${H.html}${op.map((x, k) => { const X = 110 + (k % 2) * 530, Y = top + Math.floor(k / 2) * 250, go = diToi(x, k), o = { ...vao(k), sau: 0 };
       return `${the(`bh-op${k}`, { x: X, y: Y, w: 500, h: 220 }, { go, ...o })}${lop(`bh-opc${k}`, { x: X + 30, y: Y + 30, w: 96, h: 96 }, `<svg viewBox="0 0 100 100" width="100%" height="100%"><defs><linearGradient id="og${k}${U}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a8bff"/><stop offset="1" stop-color="#0b57d0"/></linearGradient></defs><circle cx="50" cy="50" r="50" fill="url(#og${k}${U})"/></svg>`, { shadow: false, go, alt: "Vòng chữ cái", ...o })}
         ${chu("bh-opl", X + 30, Y + 48, 96, "ABCD"[k], { align: "center", go, size: 56, ...o })}${chu("bh-opt", X + 30, Y + 146, 440, esc(x.text), { go, size: 32, ...o })}`; }).join("")}
       ${chu("bh-hint", 110, top + 510, 1000, "Bấm vào một thẻ để chọn")}`; }
   const H = tieuDe(s), top = Math.max(330, H.day + 60);
-  return `${H.html}${hero("bh-pbq", "phongbi", { x: 100, y: top + 60, w: 560, r: -5 }, { sau: 1.35, ...vao(0) })}${chu("bh-hint", 130, top + 520, 520, "Bấm vào một thẻ để chọn")}${op.map((x, k) => { const X = 720 + (k % 2) * 555, Y = top + Math.floor(k / 2) * 290, go = `${id}-${x.ok ? "dung" : "sai"}`, o = { ...vao(1 + k), sau: 0 };
+  return `${H.html}${hero("bh-pbq", "phongbi", { x: 100, y: top + 60, w: 560, r: -5 }, { sau: 1.35, ...vao(0) })}${chu("bh-hint", 130, top + 520, 520, "Bấm vào một thẻ để chọn")}${op.map((x, k) => { const X = 720 + (k % 2) * 555, Y = top + Math.floor(k / 2) * 290, go = diToi(x, k), o = { ...vao(1 + k), sau: 0 };
     return `${the(`bh-op${k}`, { x: X, y: Y, w: 535, h: 260 }, { go, ...o })}${lop(`bh-opc${k}`, { x: X + 36, y: Y + 36, w: 104, h: 104 }, `<svg viewBox="0 0 100 100" width="100%" height="100%"><defs><linearGradient id="og${k}${U}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a8bff"/><stop offset="1" stop-color="#0b57d0"/></linearGradient></defs><circle cx="50" cy="50" r="50" fill="url(#og${k}${U})"/></svg>`, { shadow: false, go, alt: "Vòng chữ cái", ...o })}
       ${chu("bh-opl", X + 36, Y + 58, 104, "ABCD"[k], { align: "center", go, size: 60, ...o })}${chu("bh-opt", X + 36, Y + 168, 470, esc(x.text), { go, size: 34, ...o })}`; }).join("")}`; };
 
@@ -506,7 +509,8 @@ function render(s, deck, ctx, { i, n }) {
   kit.reset();
   const isoCot = s.type === "bhcot2" && /người/.test(s.unit || "") && s.iso !== false;
   const hai = HAI_BUOC.has(s.type) && s.grow !== false && !isoCot;
-  const buoc = s.type === "bhhoi" ? [0, "sai", "dung"] : hai ? [1, 2] : [0], id = s.id || `s${i + 1}`;
+  const opH = s.type === "bhhoi" ? (s.options || []).slice(0, 4) : [], wnH = Array.isArray(s.whyNot) ? s.whyNot : [], coLy = (k) => !opH[k].ok && typeof wnH[k] === "string" && wnH[k].trim() !== "";
+  const buoc = s.type === "bhhoi" ? [0, ...opH.map((x, k) => (coLy(k) ? "sai-" + "ABCD"[k] : null)).filter(Boolean), ...(opH.some((x, k) => !x.ok && !coLy(k)) || !opH.length ? ["sai"] : []), "dung"] : hai ? [1, 2] : [0], id = s.id || `s${i + 1}`;
   if (s.type === "bhhoi" && !s.next) s = { ...s, next: (deck.slides[i + 1] || {}).id || `s${i + 2}` };
   return buoc.map((b) => { HV = b !== 2;
     const coBan = !["bhbia", "bhket", "bhchuong"].includes(s.type);

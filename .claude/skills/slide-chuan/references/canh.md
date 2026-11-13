@@ -350,7 +350,7 @@ Kỹ thuật: lớp ảnh thêm tiền tố kiểu slide vào tên Morph; vật 
 | `bhrut` · `bhmat` | Số lớn + ba thẻ ý · luồng: tình huống → hệ quả pháp lý → hai hệ quả | `num` `unit` `facts[3]{icon,text}` · `cause{tag,text}` `stamp{text,sub}` `results[2]{text,ref}` `source` |
 | `bhdat` | Bốn thẻ số liệu 2 × 2 | `cells[4]{icon,value,head,text}` |
 | `bhhanche` · `bhkiennghi` | Ba thẻ cùng chỗ ở hai slide (đỏ → xanh), nối được từng cặp | `items[3]{icon,name,who,desc,ref}` `labels` |
-| `bhhoi` · `bhghinho` | Trắc nghiệm 4 thẻ (→ 3 slide hỏi / sai / đúng) · câu chốt + ba thẻ số bấm quay lại | `options[4]{text,ok}` `right` `wrong` `next` · `lines` `chips[3]{n,text,go}` `basis` |
+| `bhhoi` · `bhghinho` | Trắc nghiệm 4 thẻ (→ slide hỏi / sai / đúng; có `whyNot` thì mỗi phương án sai có lý do được một slide "sai" riêng: thẻ phương án vừa chọn viền đỏ + vì sao sai, như `quizgo`) · câu chốt + ba thẻ số bấm quay lại | `options[4]{text,ok}` `whyNot[4]` `right` `wrong` `next` · `lines` `chips[3]{n,text,go}` `basis` |
 
 - Vật 3D theo kiểu slide là cố định trong code (vd. ba câu hỏi: cân · biểu đồ · bảng kẹp; năm chế độ: nhiệt kế · bình sữa · băng dán · người cao tuổi · hoa sen). Thêm vật: tải PNG 3D từ github.com/microsoft/fluentui-emoji vào `hinh/f3d/<tên>.png` (xem đầu `hinh/f3d.js`). Bộ icon nét Phosphor (`hinh/icon.js`) vẫn còn cho bộ hình khác.
 - Kiểm Morph khi không có PowerPoint: `python3 scripts/morph_cap.py out.pptx` và `node scripts/xem_morph.js <tên>_lop/deck.html out.mp4`.

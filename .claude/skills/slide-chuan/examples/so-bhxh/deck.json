@@ -852,9 +852,14 @@
      "text": "Lương hưu 75%"
     }
    ],
+   "whyNot": [
+    "Luật 2014 cần 20 năm mới có lương hưu (hết hiệu lực từ 01/7/2025); nay đủ 15 năm đã được hưởng (Điều 64).",
+    null,
+    "45% ở mốc 15 năm là mức của lao động nữ (điểm a khoản 1 Điều 66); nam cần 20 năm.",
+    "75% là mức tối đa: nam phải đóng đủ 35 năm (điểm b khoản 1 Điều 66)."
+   ],
    "wrong": {
     "title": "Chưa đúng",
-    "hint": "Gợi ý: luật mới chỉ cần 15 năm; xem tỷ lệ của lao động nam ở khoản 1 Điều 66.",
     "button": "Thử lại"
    },
    "right": {

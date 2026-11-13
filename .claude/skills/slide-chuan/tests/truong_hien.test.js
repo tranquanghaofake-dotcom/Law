@@ -88,3 +88,21 @@ test("cảnh / bộ hình vẫn qua lint nội dung: quá 110 tiếng, tiêu đ�
   assert.ok(!w.some((x) => /Slide [45] /.test(x)), "chương bh và quizgo được hỏi ở tiêu đề");
   assert.ok(!w.some((x) => /Slide 6 \(book\): \d+ tiếng/.test(x)), "book là nguyên văn điều luật — không đếm tiếng");
 });
+
+test("bhhoi.whyNot: như quizgo — phương án sai có lý do được slide phản hồi riêng", () => {
+  const d = { meta: { da: "so-bhxh" }, slides: [{ type: "bhbia", title: "B" }, { type: "bhhoi", id: "cau-hoi", title: "Nam đóng 15 năm được gì?",
+    options: [{ text: "Rút một lần" }, { text: "Lương hưu 40%", ok: true }, { text: "Lương hưu 45%" }], whyNot: ["LYDO_A theo luật cũ", null, null], wrong: { title: "Chưa đúng", hint: "GOI_Y chung" } }, { type: "bhket", title: "K" }] };
+  const r = dungHtml(d, { deckDir: R }), h = r.html;
+  assert.match(h, /data-go="cau-hoi-sai-A"/); assert.match(h, /data-go="cau-hoi-sai"/);
+  assert.ok(h.includes("LYDO_A") && h.includes("GOI_Y chung") && h.indexOf("LYDO_A") < h.indexOf("GOI_Y chung"));
+  assert.ok(!(r.khongDoc || []).some((k) => /whyNot/.test(k)));
+});
+
+test("quizgo / bhhoi: chữ của slide phản hồi (whyNot, right, wrong) không cộng vào số tiếng của slide hỏi", () => {
+  const { validate } = require("../engine/validate");
+  const dai = Array.from({ length: 50 }, (_, k) => `từ${k}`).join(" ");
+  for (const type of ["quizgo", "bhhoi"]) {
+    const w = validate({ meta: {}, slides: [{ type: "cover", title: "B" }, { type, title: "Hỏi gì đó", options: [{ text: "a", ok: true }, { text: "b" }],
+      whyNot: [null, "ngắn"], right: { text: dai }, wrong: { hint: dai } }] }, { extraTypes: [type] }).warnings;
+    assert.ok(!w.some((x) => /tiếng trên slide/.test(x)), `${type}: ${w.join(" | ")}`); }
+});
