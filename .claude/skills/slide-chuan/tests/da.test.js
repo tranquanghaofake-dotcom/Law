@@ -107,3 +107,33 @@ test("vỏ thẻ của da không phá bố cục định vị: nút sơ đồ fl
     }
   } finally { await b.close(); }
 });
+
+test("dấu ✓ / chữ nhấn / chú thích ảnh đọc được ở mọi da (checklist, pyramid, collage — lỗi quét --soat 11/2026)", { skip: (() => { try { require.resolve("playwright"); return false; } catch { return "không có Playwright"; } })(), timeout: 240000 }, async () => {
+  const { chromium } = require("playwright"), fs = require("fs"), os = require("os");
+  const exe = process.env.PW_CHROMIUM || ["/opt/pw-browsers/chromium"].find((p) => fs.existsSync(p));
+  const b = await chromium.launch(exe ? { executablePath: exe } : {}), page = await (await b.newContext({ viewport: { width: 1920, height: 1080 } })).newPage();
+  const anh = "examples/images/gat-lua.jpg";
+  try {
+    for (const ten of Object.keys(DA.DA)) {
+      const d = { meta: { da: ten }, slides: [{ type: "cover", title: "Thử" },
+        { type: "checklist", title: "Anh A đủ hai điều kiện", items: [{ head: "Đủ tuổi", text: "62 tuổi", ok: true, src: "Điều 169" }, { head: "Chưa rút", text: "Cần kiểm", ok: false }], verdict: { ok: "yes", text: "Đủ điều kiện thì [hưởng 45%] bình quân lương" } },
+        { type: "pyramid", title: "Văn bản cấp dưới không được trái văn bản cấp trên", focus: 4, levels: [1, 2, 3, 4, 5].map((k) => ({ head: `Tầng ${k}`, text: k === 5 ? "Nơi hay [trái luật] nhất" : "Mô tả" })) },
+        { type: "collage", title: "Ba tấm ảnh", photos: [1, 2, 3].map((k) => ({ photo: anh, caption: `Chú thích số ${k}` })), items: [{ head: "Ý", text: "chữ" }] }] };
+      const r = dungHtml(d, { deckDir: path.join(__dirname, "..") }), f = path.join(fs.mkdtempSync(path.join(os.tmpdir(), "da-doc-")), "deck.html"); fs.writeFileSync(f, r.html);
+      await page.goto("file://" + f); await page.evaluate(() => window.hinhSanSang);
+      const q = await page.evaluate(() => {
+        const rgb = (c) => (c.match(/[\d.]+/g) || []).slice(0, 3).map(Number), L = (v) => { const g = v.map((x) => { x /= 255; return x <= 0.03928 ? x / 12.92 : Math.pow((x + 0.055) / 1.055, 2.4); }); return 0.2126 * g[0] + 0.7152 * g[1] + 0.0722 * g[2]; };
+        const tp = (a, b) => { const [x, y] = [L(rgb(a)), L(rgb(b))].sort((p, q) => q - p); return (x + 0.05) / (y + 0.05); };
+        const ok = [...document.querySelectorAll(".cd .ok, .cd .no")].map((e) => ({ svg: !!e.querySelector("svg"), tp: tp(getComputedStyle(e).color, getComputedStyle(e).backgroundColor) }));
+        const vdb = document.querySelector(".vdb em"), py = document.querySelector(".py .on em");
+        const che = [...document.querySelectorAll(".clg figcaption")].map((c) => { const s = c.closest("section.s"); s.scrollIntoView(); const r = c.getBoundingClientRect(), w = c.firstChild ? (() => { const g = document.createRange(); g.selectNodeContents(c); return g.getBoundingClientRect(); })() : r;
+          return [0.1, 0.5, 0.9].every((k) => { const el = document.elementFromPoint(w.left + w.width * k, w.top + w.height / 2); return el && c.closest("figure").contains(el); }); });
+        return { ok, vdb: tp(getComputedStyle(vdb).color, getComputedStyle(vdb.closest(".vdb")).backgroundColor), py: tp(getComputedStyle(py).color, getComputedStyle(py.closest(".on")).backgroundColor), che };
+      });
+      assert.ok(q.ok.length === 2 && q.ok.every((x) => x.svg && x.tp >= 3), `${ten}: ô ✓ / ✕ phải là icon SVG, tương phản ≥ 3 : 1 (${JSON.stringify(q.ok)})`);
+      assert.ok(q.vdb >= 3, `${ten}: chữ nhấn trong dải kết luận ${q.vdb.toFixed(2)} : 1`);
+      assert.ok(q.py >= 4.5, `${ten}: chữ nhấn trên tầng nhấn của kim tự tháp ${q.py.toFixed(2)} : 1`);
+      assert.deepEqual(q.che, [true, true, true], `${ten}: chú thích ảnh collage bị tấm sau che`);
+    }
+  } finally { await b.close(); }
+});

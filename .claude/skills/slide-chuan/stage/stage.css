@@ -169,7 +169,7 @@ html, body { background: #05070d; }
 .bn .u { font: 400 96px/1.1 var(--fd); } .bn .nd { font: 500 30px/1.35 var(--fb); color: var(--mut); max-width: 520px; margin-top: 6px; }
 .cds { display: grid; gap: 22px; } .cd { display: grid; grid-template-columns: 64px 1fr auto; gap: 22px; align-items: center; padding: 22px 26px; background: var(--card); border: 4px solid var(--rule); }
 .cd .ok, .cd .no, .cd .mb { width: 64px; height: 64px; font-size: 38px; }
-.cd b { display: block; font: 800 36px/1.25 var(--fb); } .cd span { font: 500 26px/1.35 var(--fb); color: var(--mut); }
+.cd b { display: block; font: 800 36px/1.25 var(--fb); } .cd > div > span { font: 500 26px/1.35 var(--fb); color: var(--mut); }   /* chỉ dòng mô tả — ".cd span" từng tô xám cả ô ✓ (span.ok) */
 .cd .vd { font: 800 22px/1 var(--fb); padding: 9px 14px; border: 3px solid currentColor; color: var(--mut); white-space: nowrap; }
 .days { display: flex; gap: 8px; margin-top: 30px; align-items: flex-end; } .days i { flex: 1; height: 40px; background: var(--ink-3); font: 700 19px/40px var(--fb); font-style: normal; text-align: center; color: #c3cadb; }
 .days i.on { background: var(--hl); color: var(--ink); height: 58px; line-height: 58px; font-size: 24px; }
@@ -292,11 +292,11 @@ figure { margin: 0; } .pi { position: relative; height: 480px; background-size: 
 
 /* ── chỉnh sau khi soát tờ mẫu ── */
 .fm.many { flex-wrap: nowrap; gap: 14px; } .fm.many .tm { flex: 1 1 0; min-width: 0; padding: 16px 20px 18px; } .fm.many .tm b { font-size: 88px; } .fm.many > i { font-size: 76px; line-height: 150px; }
-.py.c5 { gap: 8px; } .py.c5 > div { padding: 8px 24px 10px; } .py.c5 b { font-size: 36px; } .py.c5 span { font-size: 22px; }
+.py.c5 { gap: 6px; } .py.c5 > div { padding: 6px 24px 8px; } .py.c5 b { font-size: 36px; } .py.c5 span { font-size: 22px; }
 .vn .card:first-child { padding-right: 56px; } .vn .card:last-child { padding-left: 56px; }
 .mx .card { min-height: 190px; }
 .rl del + ins, .rl ins + del { margin-left: .22em; } .rl del, .rl ins { padding: 0 .1em; }
-.vdb { margin-top: 26px; display: grid; grid-template-columns: 64px 1fr; gap: 22px; align-items: center; background: var(--ink); color: var(--paper); font: 800 34px/1.3 var(--fb); padding: 20px 26px; box-shadow: 12px 12px 0 var(--red); }
+.vdb { margin-top: 26px; display: grid; grid-template-columns: 64px 1fr; gap: 22px; align-items: center; background: var(--ink); color: var(--paper); --hl: var(--amber); font: 800 34px/1.3 var(--fb); padding: 20px 26px; box-shadow: 12px 12px 0 var(--red); }
 .vdb.good { box-shadow: 12px 12px 0 var(--green); } .vdb .ok, .vdb .no, .vdb .mb { width: 64px; height: 64px; font-size: 38px; }
 .pr .art.cut { background: var(--amber); } .pr .art.cut img { position: absolute; left: -36px; bottom: 0; width: 500px; height: 500px; object-fit: contain; object-position: center bottom; filter: drop-shadow(12px 10px 0 rgba(12,18,34,.3)); }
 .isc { position: relative; width: 1700px; height: 640px; } .isc > svg { position: absolute; inset: 0; width: 1700px; height: 640px; overflow: visible; }
@@ -321,10 +321,11 @@ figure { margin: 0; } .pi { position: relative; height: 480px; background-size: 
 .pho.hdl .h { font-size: 128px; line-height: 1.12; text-transform: uppercase; }
 .lz { overflow: hidden; } .lz .ring { position: absolute; aspect-ratio: 1; translate: -50% -50%; border: 8px solid var(--amber); border-radius: 50%; box-shadow: 0 0 0 2400px rgba(12,18,34,.62); }
 .lz .lzl { position: absolute; left: 20px; bottom: 20px; background: var(--amber); color: var(--ink) !important; font-size: 26px; }
-.clg { position: relative; height: 600px; } .clg figure { position: absolute; width: 520px; background: #fffdf6; padding: 14px 14px 12px; border: 4px solid var(--ink); box-shadow: 12px 14px 0 rgba(12,18,34,.3); }
-.clg .pi { height: 300px; border: 0; } .clg figcaption { margin-top: 8px; font: 700 25px/1.3 var(--fb); color: var(--ink); }
-.clg figure:nth-child(1) { left: 0; top: 10px; } .clg figure:nth-child(2) { left: 400px; top: 120px; z-index: 2; } .clg figure:nth-child(3) { left: 90px; top: 200px; z-index: 3; }
-.clg.n2 figure:nth-child(2) { left: 330px; top: 220px; } .clg.n1 figure { width: 760px; top: 60px; } .clg.n1 .pi { height: 440px; }
+/* ảnh in xếp bậc thang: tấm sau lệch phải 226 px + xuống ~100 px → phần trái của mỗi tấm (nơi có chú thích) luôn lộ ra; chú thích tấm bị đè giới hạn 200 px (xuống dòng thay vì bị che) */
+.clg { position: relative; height: 600px; } .clg figure { position: absolute; width: 400px; background: #fffdf6; padding: 14px 14px 12px; border: 4px solid var(--ink); box-shadow: 12px 14px 0 rgba(12,18,34,.3); }
+.clg .pi { height: 300px; border: 0; } .clg figcaption { margin-top: 8px; font: 700 25px/1.3 var(--fb); color: var(--ink); } .clg figure:not(:last-child) figcaption { max-width: 200px; }
+.clg figure:nth-child(1) { left: 0; top: 10px; } .clg figure:nth-child(2) { left: 226px; top: 105px; z-index: 2; } .clg figure:nth-child(3) { left: 452px; top: 200px; z-index: 3; }
+.clg.n2 figure:nth-child(2) { left: 330px; top: 170px; } .clg.n1 figure { width: 760px; top: 60px; } .clg.n1 .pi { height: 440px; }
 /* ── bảng tính từng dòng có lý do ── */
 .sh2 { display: grid; } .sh2 > div { display: grid; grid-template-columns: 170px 1fr 190px 1.1fr; gap: 26px; align-items: center; border-bottom: 5px solid var(--ink); padding: 12px 14px; }
 .sh2 b { font: 400 46px/1.1 var(--fd); } .sh2 strong { font: 400 60px/1 var(--fd); text-align: right; } .sh2 span { font: 600 27px/1.3 var(--fb); color: var(--mut); }

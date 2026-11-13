@@ -208,7 +208,7 @@ function tienDoCss(kind, c, S) {
 // da ho-so: vàng D9AE3A trên nâu đỏ chỉ 2,9 : 1 (scripts/soat_chi_tiet.js)
 const doSang = (h) => { const f = (c) => { c /= 255; return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4); }; const v = [0, 2, 4].map((i) => parseInt(h.slice(i, i + 2), 16)); return 0.2126 * f(v[0]) + 0.7152 * f(v[1]) + 0.0722 * f(v[2]); };
 const tuongPhan = (a, b) => { const [x, y] = [doSang(a), doSang(b)].sort((p, q) => q - p); return (x + 0.05) / (y + 0.05); };
-const vangTren = (vang, nen) => { let v = vang; for (let k = 1; k <= 8 && tuongPhan(v, nen) < 3.6; k++) v = mix(vang, "FFFFFF", k * 0.1); return v; };   // 3,6: biên cho hoạ tiết nền làm sáng màu nhấn
+const vangTren = (vang, nen, nguong = 3.6) => { let v = vang; for (let k = 1; k <= 8 && tuongPhan(v, nen) < nguong; k++) v = mix(vang, "FFFFFF", k * 0.1); return v; };   // 3,6: biên cho hoạ tiết nền làm sáng màu nhấn; chữ thường (< 24 px) cần 4,5
 function daCss(ten) {
   const c = DA[ten], S = `.s.da-${ten}`, T = `${S}[data-tu]`, A = c.acc;
   const dark = mix(A, "000000", 0.6), dark2 = mix(A, "000000", 0.45);
@@ -219,6 +219,7 @@ function daCss(ten) {
     ${S}.dark::before { background: radial-gradient(closest-side, ${rgba(mix(A, "FFFFFF", 0.35), 0.35)}, transparent 72%); }
     ${S}.red { ${c.to ? "" : `background-color: #${A}; ${nenD ? `background-image: ${b64(nenD)}; background-size: 100% 100%;` : ""}`} --hl: #${vangTren(c.gold, A)}; --card: #${dark2}; --bad: #${mix(c.bad, "FFFFFF", 0.55)}; --good: #fff; }
     ${S} .prog { background: var(--hl); }
+    ${S} .py .on em { color: #${vangTren(c.gold, c.bad, 4.5)}; }
     ${S} .k { align-self: flex-start; }
     ${T}.light .stat, ${T}.light table { background: #fff; }
     .da-khung, .da-art, .da-vat, .da-to { position: absolute; pointer-events: none; }

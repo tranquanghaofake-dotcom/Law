@@ -12,7 +12,8 @@ let I = 0;
 const inn = (kind) => `data-in${kind ? `="${kind}"` : ""} style="--i:${I++}"`;   // thứ tự vào (thành hiệu ứng vào lần lượt trong PowerPoint)
 const head = (s, c = "") => `${s.kicker ? `<div class="k" ${inn()}>${f(s.kicker)}</div>` : ""}${s.title ? `<h2 class="h ${c} ${plain(s.title).length > 54 ? "sm" : ""}" ${inn()}>${f(s.title)}</h2>` : ""}`;
 const note = (t) => (t ? `<p class="note" ${inn()}>${f(t)}</p>` : "");
-const mark = (ok) => (ok === true || ok === "yes" ? `<span class="ok">✓</span>` : ok === false || ok === "no" ? `<span class="no">✕</span>` : ok === "na" ? `<span class="mb">–</span>` : `<span class="mb">?</span>`);
+// ✓ ✕ vẽ bằng icon SVG (thành lớp ảnh): Anton / Be Vietnam Pro không có hai ký tự này → trình duyệt, PowerPoint lấy font khác, có máy hiện xám mờ trên ô xanh (soát chi tiết đo 1,47 : 1)
+const mark = (ok) => (ok === true || ok === "yes" ? `<span class="ok">${ico("PiCheckBold")}</span>` : ok === false || ok === "no" ? `<span class="no">${ico("PiXBold")}</span>` : ok === "na" ? `<span class="mb">–</span>` : `<span class="mb">?</span>`);
 const dmy = (d) => { const m = String(d).match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/); return m ? +m[3] + (+m[2] - 1) / 12 + (+m[1] - 1) / 365 : parseFloat(String(d).match(/\d{4}/)?.[0] ?? NaN); };
 const days = (a, b) => { const p = (d) => { const m = String(d).match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/); return m ? new Date(+m[3], +m[2] - 1, +m[1]) : null; }; const x = p(a), y = p(b); return x && y ? { from: x, n: Math.round((y - x) / 864e5) } : null; };
 
