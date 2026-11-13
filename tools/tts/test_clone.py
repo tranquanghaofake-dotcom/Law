@@ -36,6 +36,10 @@ class ChanLoi(unittest.TestCase):
         self.assertFalse(clone.numbers_match('Tiêu điều mới 9 Bộ luật Dân sự 2015, năng lực hành vi dân sự của cá nhân là khả năng', ref))
         self.assertFalse(clone.passes({'err': 1, 'num': False, 'sim': 0.9}, ref))
 
+    def test_cau_duoi_8_tu_khong_xet_do_giong(self):
+        self.assertTrue(clone.passes({'err': 0, 'num': True, 'head': 0, 'sim': 0.6}, 'Hợp đồng có hiệu lực không?'))
+        self.assertFalse(clone.passes({'err': 0, 'num': True, 'head': 0, 'sim': 0.6}, 'Hợp đồng dân sự này có hiệu lực pháp luật không?'))
+
     def test_khong_giong_thi_truot(self):
         t = 'Hiến pháp là luật cơ bản của nhà nước.'
         self.assertFalse(clone.passes({'err': 0, 'sim': clone.SIM_MIN - 0.01}, t))
@@ -172,6 +176,15 @@ class ChiaViec(unittest.TestCase):
         self.assertEqual(len(clone.plan(['A.', 'B.'], set(), 20)), 2)
         self.assertEqual(clone.plan([], set(), 20), [])
 
+    def test_it_viec_thi_gop_vao_it_phan(self):
+        texts = [f'Câu còn thiếu số {i} của phần bị hỏng.' for i in range(150)]      # ~5 400 ký tự
+        self.assertEqual(len(clone.plan(texts, set(), 200, 3000)), 1)                 # không rải 150 câu ra 150 máy
+        many = [f'Câu còn thiếu số {i} của phần bị hỏng.' for i in range(600)]
+        self.assertEqual(len(clone.plan(many, set(), 200, 3000)), sum(map(len, many)) // 3000)
+        self.assertEqual(len(clone.plan(many, set(), 5, 3000)), 5)                    # vẫn không vượt số máy xin
+        self.assertEqual(sum(map(len, clone.plan(texts, set(), 200, 3000))), 150)
+        self.assertEqual(len(clone.plan(['A.'], set(), 200, 3000)), 1)                # ít hơn ngưỡng vẫn có một phần
+
 
 def _write(path, text):
     with open(path, 'w', encoding='utf-8') as fh:
@@ -248,6 +261,26 @@ class GopTheoDot(unittest.TestCase):
     def test_khong_tien_trien_thi_khong_tu_chay_tiep(self):
         self.part('out-0', [])
         self.assertEqual(self.merge(os.path.join(self.tmp.name, 'out-*')), {'switched': 'false', 'more': 'false'})
+
+    def test_sinh_lai_cau_bi_co_chi_thay_khi_ban_moi_dat(self):
+        _write(os.path.join(self.cache, 'manifest.json'), self.json.dumps({'voice': clone.VOICE, 'style': clone.STYLE, 'keys': self.keys[:199]}))
+        items = [{'key': k, 'text': t, 'ok': i not in (5, 6, 199), 'err': 0, 'num': i != 199, 'sim': 0.9} for i, (k, t) in enumerate(zip(self.keys, self.texts))]
+        _write(os.path.join(self.cache, 'report.json'), self.json.dumps({'style': clone.STYLE, 'items': items}))
+        plan_out = os.path.join(self.tmp.name, 'plan')
+        ns = dict(texts=None, limit=0, sample=0, cache=self.cache, shards=4, out=plan_out, github_output=None)
+        clone.cmd_plan(self.types.SimpleNamespace(**ns))                                   # chạy thường: chỉ câu sai số (không có trong manifest)
+        todo = [t for f in sorted(os.listdir(plan_out)) for t in self.json.loads(_read(os.path.join(plan_out, f)))]
+        self.assertEqual(todo, [self.texts[199]])
+        clone.cmd_plan(self.types.SimpleNamespace(**ns, retry_flagged=True))               # sinh lại: thêm 2 câu bị cờ đang dùng
+        todo = [t for f in sorted(os.listdir(plan_out)) for t in self.json.loads(_read(os.path.join(plan_out, f)))]
+        self.assertEqual(sorted(todo), sorted([self.texts[5], self.texts[6], self.texts[199]]))
+        self.part('out-0', [self.keys[5], self.keys[199]])                                 # run --retry chỉ nộp bản đạt: câu 6 vẫn hỏng nên không có tệp
+        got = self.merge(os.path.join(self.tmp.name, 'out-*'))
+        self.assertEqual(got, {'switched': 'true', 'more': 'false'})
+        self.assertEqual(len(self.top()['keys']), 200)                                     # câu sai số được thay bằng bản đạt → vào manifest
+        self.assertEqual(_read(os.path.join(self.cache, self.keys[5] + '.mp3')), 'moi')
+        self.assertEqual(_read(os.path.join(self.cache, self.keys[6] + '.mp3')), 'cu')     # giữ tệp cũ
+        self.assertEqual(clone.flagged_keys(self.cache), {self.keys[6]})                   # và cờ cũ
 
     def test_cung_kieu_thi_gop_thang_nhu_cu(self):
         _write(os.path.join(self.cache, 'manifest.json'), self.json.dumps({'voice': clone.VOICE, 'style': clone.STYLE, 'keys': self.keys[:150]}))

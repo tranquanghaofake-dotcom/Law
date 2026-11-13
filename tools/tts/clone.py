@@ -41,6 +41,9 @@ MIN_TAKES = 1          # câu thường: bản đầu đạt chặn lỗi là d�
 EXPRESS = 0.03         # trọng số độ lên xuống giọng (bán âm) khi chọn giữa các bản đã đạt
 BEST_OF = 5            # câu ngắn/hay gặp: sinh tối đa ngần này bản
 SHORT_OK = 2           # … và dừng sớm khi đã có ngần này bản đạt để chọn (VoxCPM2 dễ đọc trệch câu 1–4 từ)
+RETRY_TRIES = 10       # run --retry (câu đang bị gắn cờ): số lần sinh tối đa, mỗi lần một cách trong RETRY_PLAN
+CARRIER = ' Ta sang phần tiếp theo.'  # câu đệm đọc sau câu rất ngắn rồi cắt đi
+RETRY_PLAN = [(2.0, 10, False)]  # (cfg, số bước, có câu đệm) — __RETRY_PLAN__
 SHORT_WORDS = 4
 SHORT_CHECK = 8        # câu dưới 8 từ: kiểm tra bằng Whisper medium
 SIM_MIN = 0.75         # độ giống tối thiểu so với voice/ref.wav (đầu ra thô, chưa hậu kỳ)
@@ -51,6 +54,7 @@ BITRATE = '64k'
 DEESS_DB = -5.0        # đo trên 40 câu: đỉnh dải xì −6,8 → −11,7 dB (CD Media −10,8, kênh gốc −8,9); chất âm và độ giống không đổi
 DEESS_CUT = 4.0
 EDGE = 0.03            # giữ 30 ms hai đầu khi cắt im lặng (app tự chèn khoảng nghỉ giữa câu)
+SHARD_MIN_CHARS = 3000 # mỗi phần phải đáng công nạp model (~4 phút): ít câu thì gộp vào ít phần hơn số máy xin
 NEXT = 'next'          # thư mục chờ trong cache: bộ giọng kiểu MỚI đang sinh dở, web vẫn dùng bộ cũ nằm ngoài
 PROMOTE = 0.995        # bộ mới phủ ngần này số câu thì mới thay bộ cũ trên web (sinh lại toàn bộ mất hơn một ngày, nhiều lần chạy)
 
@@ -156,8 +160,8 @@ def numbers_match(hyp: str, ref: str) -> bool:
 
 def passes(c: dict, text: str) -> bool:
     n = len(words(text))
-    # câu quá ngắn (< 2 giây) thì đo độ giống giọng không tin được: chỉ xét đúng chữ
-    return c['err'] <= allowed_errors(n) and c.get('num', True) and not c.get('head', 0) and (n < 6 or c['sim'] >= SIM_MIN)
+    # câu quá ngắn (dưới 8 từ, ~2 giây) thì đo độ giống giọng không tin được — câu hỏi 6–7 từ đọc đúng vẫn bị loại oan: chỉ xét đúng chữ
+    return c['err'] <= allowed_errors(n) and c.get('num', True) and not c.get('head', 0) and (n < SHORT_CHECK or c['sim'] >= SIM_MIN)
 
 
 def rank(c: dict, text: str) -> tuple:
@@ -224,10 +228,12 @@ def shard_of(key: str, n: int) -> int:
     return int(key, 16) % n
 
 
-def plan(texts: list[str], done: set[str], shards: int) -> list[list[str]]:
-    """Chia câu chưa có tệp thành `shards` phần, cân theo độ dài (tổng ký tự) để các máy xong gần cùng lúc."""
+def plan(texts: list[str], done: set[str], shards: int, min_chars: int = 1) -> list[list[str]]:
+    """Chia câu chưa có tệp thành tối đa `shards` phần, cân theo độ dài (tổng ký tự) để các máy xong gần cùng lúc.
+    Mỗi phần phải có ít nhất `min_chars` ký tự: 150 câu còn thiếu không bị rải ra 200 máy, mỗi máy nạp model cho một câu."""
     todo = sorted({text_key(t): t for t in texts if text_key(t) not in done}.values(), key=len, reverse=True)
-    parts: list[list[str]] = [[] for _ in range(max(1, shards))]
+    shards = min(max(1, shards), max(1, sum(map(len, todo)) // max(1, min_chars)))
+    parts: list[list[str]] = [[] for _ in range(shards)]
     load = [0] * len(parts)
     for t in todo:
         i = load.index(min(load))
@@ -355,14 +361,14 @@ class Engine:
                                  HighShelfFilter(8000, -0.5, 0.7), Compressor(-20, 2.0, 15, 150), Gain(1.5), Limiter(-1.0)])
         self.meter = pyloudnorm.Meter(OUT_SR, block_size=0.2)
 
-    def synth(self, spoken: str):
+    def synth(self, spoken: str, cfg: float | None = None, steps: int | None = None):
         np = self.np
         # VoxCPM2 ghép thẳng lời mẫu + câu cần đọc: thiếu khoảng trắng ("…mong đợi.Chính xác.") thì chỗ nối méo —
         # thừa tiếng hoặc nuốt âm đầu (đo 12/11/2026: "Chính xác." đạt 0/5 khi không có, 5/5 khi có).
         kw = {'prompt_wav_path': self.ref, 'prompt_text': REF_TEXT + ' '} if USE_REF_TEXT else {}
         parts = []
         for c in chunks(spoken):
-            a = np.asarray(self.tts.generate(text=c, reference_wav_path=self.ref, cfg_value=CFG, inference_timesteps=STEPS, normalize=False, **kw), dtype=np.float32)
+            a = np.asarray(self.tts.generate(text=c, reference_wav_path=self.ref, cfg_value=cfg or CFG, inference_timesteps=steps or STEPS, normalize=False, **kw), dtype=np.float32)
             parts.append(a)
         if len(parts) == 1:
             return parts[0]
@@ -436,14 +442,19 @@ class Engine:
         y = trim(y, OUT_SR)  # cắt im lặng TRƯỚC khi đo độ lớn: câu ngắn hay dài đều cùng mức
         return peak_limit(self.gain_to(y, TARGET_LUFS), OUT_SR)
 
-    def make(self, text: str) -> tuple[object, dict]:
+    def make(self, text: str, retry: bool = False) -> tuple[object, dict]:
+        """retry=True: câu đã hỏng ở lần sinh thường → thử tới RETRY_TRIES lần, mỗi lần một cách sinh trong RETRY_PLAN."""
         spoken = normalize(text)
         if not re.search(r'\w', spoken):  # mảnh câu không có gì để đọc ("VD11.", "(…)."): im lặng ngắn để cả lời vẫn dùng giọng clone
             return self.np.zeros(int(0.05 * OUT_SR), dtype=self.np.float32), {'text': text, 'spoken': spoken, 'tries': 0, 'ok': True, 'silent': True}
         short = is_short(text)
         cands = []
-        for k in range(BEST_OF if short else TRIES):
-            a = self.synth(spoken)
+        for k in range(RETRY_TRIES if retry else BEST_OF if short else TRIES):
+            cfg, steps, carrier = RETRY_PLAN[k % len(RETRY_PLAN)] if retry else (None, None, False)
+            if carrier:  # câu rất ngắn dễ hỏng: đọc kèm một câu đệm phía sau rồi cắt câu đệm đi (cut_tail dùng mốc từng từ của Whisper)
+                a, cut = self.cut_tail(self.synth(spoken + CARRIER, cfg, steps), text)
+            else:
+                a = self.synth(spoken, cfg, steps)
             c = self.score(a, text)
             if not passes(c, text) and len(words(c['heard'])) > len(words(text)):  # nói thừa: cắt đuôi rồi chấm lại
                 a2, cut = self.cut_tail(a, text)
@@ -498,6 +509,15 @@ def stage_of(cache: str) -> str:
     return cache if is_current(read_manifest(cache)) else os.path.join(cache, NEXT)
 
 
+def flagged_keys(stage: str) -> set[str]:
+    """Khoá các câu mà báo cáo gần nhất ghi là không đạt chặn lỗi (kể cả câu đọc sai số)."""
+    rp = os.path.join(stage, 'report.json')
+    if not os.path.exists(rp):
+        return set()
+    with open(rp, encoding='utf-8') as fh:
+        return {r['key'] for r in json.load(fh).get('items', []) if not r.get('ok')}
+
+
 def read_manifest(cache: str) -> dict:
     p = os.path.join(cache, 'manifest.json')
     if os.path.exists(p):
@@ -515,7 +535,10 @@ def cmd_plan(a):
     stage = stage_of(a.cache)
     m = read_manifest(stage)
     done = {k for k in m.get('keys', []) if os.path.exists(os.path.join(stage, k + '.mp3'))} if is_current(m) else set()
-    parts = plan(texts, done, a.shards)
+    retry = getattr(a, 'retry_flagged', False)
+    if retry:  # sinh lại cả các câu đang có tệp nhưng bị gắn cờ (run --retry chỉ ghi đè khi bản mới đạt)
+        done -= flagged_keys(stage)
+    parts = plan(texts, done, a.shards, SHARD_MIN_CHARS // 4 if retry else SHARD_MIN_CHARS)
     os.makedirs(a.out, exist_ok=True)
     for i, p in enumerate(parts):
         with open(os.path.join(a.out, f'shard-{i}.json'), 'w', encoding='utf-8') as fh:
@@ -538,19 +561,23 @@ def cmd_run(a):
         with open(rep_path, encoding='utf-8') as fh:
             have = {json.loads(l)['key'] for l in fh if l.strip()}
     eng = Engine(a.threads)
-    t0, n = time.time(), 0
+    t0, n, still = time.time(), 0, 0
     with open(rep_path, 'a', encoding='utf-8') as rep:
         for t in texts:
             key = text_key(t)
             if key in have and os.path.exists(os.path.join(a.out, key + '.mp3')):
                 continue
             try:
-                y, info = eng.make(t)
-                write_mp3(y, os.path.join(a.out, key + '.mp3'))
+                y, info = eng.make(t, retry=a.retry)
+                if info.get('ok') or not a.retry:  # sinh lại câu bị cờ: chỉ nộp bản ĐẠT, không đạt thì giữ tệp và báo cáo cũ
+                    write_mp3(y, os.path.join(a.out, key + '.mp3'))
             except Exception as e:  # một câu lỗi không làm hỏng cả phần
                 info = {'text': t, 'ok': False, 'error': str(e)[:200]}
-            rep.write(json.dumps({'key': key, **info}, ensure_ascii=False) + '\n')
-            rep.flush()
+            if info.get('ok') or not a.retry:
+                rep.write(json.dumps({'key': key, **info}, ensure_ascii=False) + '\n')
+                rep.flush()
+            else:
+                still += 1
             n += 1
             if n % 25 == 0 or a.text:
                 el = time.time() - t0
@@ -558,6 +585,8 @@ def cmd_run(a):
             if a.deadline and time.time() - t0 > a.deadline * 60:
                 print(f'hết giờ ({a.deadline} phút): dừng, phần còn lại để lần chạy sau', flush=True)
                 break
+    if a.retry:
+        print(f'sinh lại {n} câu bị cờ: {n - still} câu đã đạt, {still} câu vẫn chưa đạt (giữ tệp cũ)', flush=True)
 
 
 def cmd_merge(a):
@@ -638,10 +667,12 @@ def main():
     p.add_argument('--texts'); p.add_argument('--cache', required=True); p.add_argument('--shards', type=int, default=20)
     p.add_argument('--out', required=True); p.add_argument('--limit', type=int, default=0); p.add_argument('--github-output')
     p.add_argument('--sample', type=int, default=0, help='chạy thử N câu chọn đều theo loại câu khó (số điều khoản, viết tắt, ký hiệu…)')
+    p.add_argument('--retry-flagged', action='store_true', help='sinh lại cả các câu đang bị gắn cờ trong báo cáo (dùng kèm run --retry)')
     r = sub.add_parser('run')
     r.add_argument('--todo'); r.add_argument('--text'); r.add_argument('--out', required=True)
     r.add_argument('--threads', type=int, default=4); r.add_argument('--limit', type=int, default=0)
     r.add_argument('--deadline', type=float, default=0, help='phút; quá thì dừng an toàn (giới hạn 6 giờ của Actions)')
+    r.add_argument('--retry', action='store_true', help='các câu này đang bị gắn cờ: thử nhiều cách sinh hơn, chỉ ghi tệp khi bản mới đạt chặn lỗi')
     g = sub.add_parser('merge')
     g.add_argument('--cache', required=True); g.add_argument('--texts'); g.add_argument('--parts', required=True); g.add_argument('--summary')
     g.add_argument('--github-output')

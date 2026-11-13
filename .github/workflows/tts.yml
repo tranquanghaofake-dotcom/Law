@@ -18,6 +18,9 @@ on:
       sample:
         description: Chạy thử N câu chọn đều theo loại câu khó — số điều khoản, viết tắt, ký hiệu… (0 = tắt; nên dùng 24 với 1 máy)
         default: '0'
+      retry:
+        description: Sinh lại các câu đang bị gắn cờ trong báo cáo (true/false) — thử nhiều cách hơn, chỉ ghi đè khi bản mới đạt
+        default: 'false'
   push:
     branches: [main]
     paths: ['packages/content/data/**', 'apps/web/scripts/tts-texts.ts', 'tools/tts/**']
@@ -55,7 +58,7 @@ jobs:
           key: tts-${{ github.run_id }}
           restore-keys: tts-
       - id: plan
-        run: python3 tools/tts/clone.py plan --texts .tts-texts.json --cache .tts-cache --shards "${{ inputs.shards || '200' }}" --limit "${{ inputs.limit || '0' }}" --sample "${{ inputs.sample || '0' }}" --out plan --github-output "$GITHUB_OUTPUT"
+        run: python3 tools/tts/clone.py plan --texts .tts-texts.json --cache .tts-cache --shards "${{ inputs.shards || '200' }}" --limit "${{ inputs.limit || '0' }}" --sample "${{ inputs.sample || '0' }}" ${{ inputs.retry == 'true' && '--retry-flagged' || '' }} --out plan --github-output "$GITHUB_OUTPUT"
       - uses: actions/upload-artifact@v6
         with:
           name: plan
@@ -105,7 +108,7 @@ jobs:
         with:
           name: plan
       - name: Sinh giọng phần ${{ matrix.shard }}
-        run: python tools/tts/clone.py run --todo plan/shard-${{ matrix.shard }}.json --out out --deadline 320
+        run: python tools/tts/clone.py run --todo plan/shard-${{ matrix.shard }}.json --out out --deadline 320 ${{ inputs.retry == 'true' && '--retry' || '' }}
       - uses: actions/upload-artifact@v6
         if: always()
         with:
