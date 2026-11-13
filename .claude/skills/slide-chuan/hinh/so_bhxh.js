@@ -524,7 +524,10 @@ function render(s, deck, ctx, { i, n }) {
     const sach = (t) => String(t || "").replace(/[[\]]/g, "").replace(/\s+/g, " ").trim(), L4a = "ABCD", opA = (s.options || []).slice(0, 4);
     const an = typeof b === "string" ? (b === "dung" ? `${sach(s.title)} — chọn ${L4a[opA.findIndex((x) => x.ok)] || ""} (${sach((opA.find((x) => x.ok) || {}).text)}): chính xác`
         : b === "sai" ? `${sach(s.title)} — phương án chưa đúng` : `${sach(s.title)} — chọn ${b.slice(4)} (${sach((opA[L4a.indexOf(b.slice(4))] || {}).text)}): chưa đúng`)
-      : s.type === "bhdo" && !s.title ? sach([...(s.lines || []), s.box || ""].join(" ")) : "";
+      : s.type === "bhdo" && !s.title ? sach([...(s.lines || []), s.box || ""].join(" "))
+      // slide hai bước: hai bước cùng tiêu đề hiện → cả hai dùng tiêu đề ẩn ("…" / "… (tiếp)") — hộp tiêu đề hiện ở hai bước đều là hộp thường cùng tên,
+      // Morph vẫn ghép cặp; nếu chỉ bước 2 có tiêu đề ẩn thì một bên là placeholder, một bên không → Morph có thể không ghép, tiêu đề nháy
+      : hai && b === 1 ? sach(s.title) : hai && b === 2 ? `${sach(s.title)} (tiếp)` : "";
     const sec = `<section class="s bh${toi ? " toi" : ""}" data-type="${esc(s.type)}" data-title="${esc(String(s.title || "").replace(/[[\]]/g, ""))}"${an ? ` data-tieu-de-an="${esc(an)}"` : ""}><div class="cv">${html}</div></section>`;
     // chuyển cảnh: MÁY QUAY (hinh/may_quay.js) — khung + dải đầu đứng yên, cả cảnh trôi sang trái theo mạch bài; vào phần mới máy quay đi xuống;
     // slide ngay sau slide mở phần: máy quay phóng vào hình chính của phần. Bước 2 của slide hai bước: Morph thường (một vật đổi). Trắc nghiệm sai / đúng: mờ.

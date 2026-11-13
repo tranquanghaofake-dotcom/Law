@@ -119,3 +119,11 @@ test("slide phản hồi của bhhoi / quizgo có ghi chú riêng (phương án 
     assert.ok(/GOI_Y/.test(s) && !/GHI_CHU_HOI/.test(s), `${type} sai: ${s}`);
     assert.ok(/B · Lương hưu 40%/.test(d) && /GIAI_THICH/.test(d) && !/GHI_CHU_HOI/.test(d), `${type} dung: ${d}`); }
 });
+
+test("slide hai bước (bh*): hai bước cùng tiêu đề hiện → tiêu đề ẩn '…' và '… (tiếp)' để không trùng tiêu đề slide", () => {
+  const goc = require("../examples/so-bhxh/deck.json"), hai = goc.slides.find((s) => s.type === "bhrutngan");
+  const q = console.log; console.log = () => {}; let h;
+  try { h = dungHtml({ meta: { da: "so-bhxh" }, slides: [{ type: "bhbia", title: "B" }, hai, { type: "bhket", title: "K" }] }, { deckDir: path.join(R, "examples", "so-bhxh") }).html; } finally { console.log = q; }
+  const an = [...h.matchAll(/data-tieu-de-an="([^"]*)"/g)].map((m) => m[1]), t = String(hai.title).replace(/[[\]]/g, "");
+  assert.deepEqual(an, [t, `${t} (tiếp)`], an.join(" | "));
+});
