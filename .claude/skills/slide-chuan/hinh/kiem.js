@@ -30,9 +30,10 @@ function kiemDeck(deck, { deckDir = process.cwd() } = {}) {
   for (const k of ["transition", "build", "motion"]) { const c = slides.map((s, i) => [s, i + 1]).filter(([s]) => s && s[k] != null);
     if (c.length) out.push(`ℹ trường "${k}" bị bỏ qua: ${c.map(([s, i]) => `slide ${i} (${s.type})`).join(", ")} — tên của tầng Office cũ; chuyển cảnh ghi "trans" / "dur" (hoặc meta.hinh.chuyen), hiệu ứng vào do da quyết định.`); }
 
-  // 1c. bìa: tầng hình ảnh chỉ có poster / full (ảnh tràn) và khung ảnh (mặc định); band / split / art / typo / paper của tầng Office cũ thành kiểu mặc định
-  const bia = slides.map((s, i) => [s, i + 1]).filter(([s]) => s && s.type === "cover" && s.layout && !["poster", "full", "frame"].includes(s.layout));
-  if (bia.length) out.push(`ℹ cover.layout không có ở tầng hình ảnh: ${bia.map(([s, i]) => `slide ${i} "${s.layout}"`).join(", ")} — dựng thành ${bia.some(([s]) => s.photo) ? "bìa khung ảnh" : "bìa có hình lớn của da"}; có ảnh thì chọn "poster" (ảnh tràn) hoặc bỏ layout.`);
+  // 1c. bìa: tầng hình ảnh có poster / full (ảnh tràn), frame (khung ảnh, mặc định khi có ảnh), art (hình lớn của da, mặc định khi không ảnh), typo (thuần chữ);
+  //     band / split / paper của tầng Office cũ thành kiểu mặc định
+  const bia = slides.map((s, i) => [s, i + 1]).filter(([s]) => s && s.type === "cover" && s.layout && !["poster", "full", "frame", "art", "typo"].includes(s.layout));
+  if (bia.length) out.push(`ℹ cover.layout không có ở tầng hình ảnh: ${bia.map(([s, i]) => `slide ${i} "${s.layout}"`).join(", ")} — dựng thành ${bia.some(([s]) => s.photo) ? "bìa khung ảnh" : "bìa có hình lớn của da"}; có ảnh thì chọn "poster" (ảnh tràn), không ảnh thì "art" hoặc "typo" (thuần chữ), hoặc bỏ layout.`);
 
   // 2. tên cũ của tầng Office: meta.kit / meta.style nay đổi thành da (hinh/da.js) — vẫn đọc, nhắc đổi tên
   if (deck.meta?.kit && !deck.meta.da) out.push(`ℹ meta.kit "${deck.meta.kit}" là tên cũ — nay đọc thành da${DA.ALIAS[deck.meta.kit] ? ` "${DA.ALIAS[deck.meta.kit]}"` : ""}; ghi "meta": { "da": "${DA.ALIAS[deck.meta.kit] || deck.meta.kit}" }.`);
