@@ -123,7 +123,7 @@ function soMo(w = 1100, h = 520) { const g = id("sm");
     <rect x="18" y="0" width="${w / 2 - 22}" height="${h - 34}" rx="10" fill="url(#${g}p)"/><rect x="${w / 2 + 4}" y="0" width="${w / 2 - 22}" height="${h - 34}" rx="10" fill="url(#${g}p)"/>
     <rect x="18" y="0" width="${w / 2 - 22}" height="${h - 34}" fill="url(#${g}gL)"/><rect x="${w / 2 + 4}" y="0" width="${w / 2 - 22}" height="${h - 34}" fill="url(#${g}gR)"/>
     ${Array.from({ length: 9 }, (_, k) => `<path d="M40 ${70 + k * 46} H${w / 2 - 24} M${w / 2 + 26} ${70 + k * 46} H${w - 40}" stroke="#dbe6f7" stroke-width="2"/>`).join("")}
-    <rect x="40" y="22" width="150" height="10" rx="5" fill="#0b57d0" opacity=".55"/><rect x="${w / 2 + 26}" y="22" width="110" height="10" rx="5" fill="#0b57d0" opacity=".3"/></svg>`; }
+</svg>`; }   // tiêu đề trang = hộp chữ của slide (vạch "đầu trang in sẵn" cũ đè lên nhãn — bỏ)
 
 // PHIẾU LƯƠNG: tờ giấy mép răng cưa; dòng "trích đóng BHXH" tô vàng — chữ trên phiếu là đạo cụ (số liệu thật đặt bằng hộp chữ ở slide)
 function phieuLuong() { const g = id("pl"), rang = Array.from({ length: 17 }, (_, k) => `L${370 - k * 20 - 10} 470 L${370 - (k + 1) * 20} 452`).join(" ");   // mép răng cưa đáy phiếu

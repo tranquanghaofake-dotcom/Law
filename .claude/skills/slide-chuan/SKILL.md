@@ -12,6 +12,7 @@ Câu hỏi gốc của mỗi slide: **người nghe nhìn 10 giây thì hiểu �
 ## Nguyên tắc trước quy trình (đọc đầu tiên)
 - **Mục tiêu là deck người xem thấy đẹp và hiểu được; quy trình chỉ là công cụ.** Khi một quy tắc, danh sách type hay kế hoạch đã duyệt xung đột với mục tiêu, giữ mục tiêu, sửa kế hoạch và nói lý do trong báo cáo — không giữ nguyên kế hoạch rồi giao deck sơ sài.
 - **Che chữ vẫn phải đoán được đề tài.** Mỗi deck mang **da của môn** (mục dưới) + 4–8 cảnh + ảnh thật / hình dán đúng chủ đề. Nền, khung chung (`"da": "none"`) chỉ khi người dùng tự chọn — lỗi này đã bị chê ở 4 bài (`references/loi-da-biet-2026-11.md` L10).
+- **Mỗi chi tiết một lý do.** Chi tiết nào (màu, chấm, dải, vật, hoạ tiết) cũng phải chở dữ liệu, điều hướng, nhận diện đề tài hoặc phân loại theo một mã cố định cả deck; không nói được nghĩa thì bỏ. Đỏ chỉ cho điều tiêu cực thật; không vẽ vật cạnh ảnh đã có vật đó (`references/nguyen-tac-bo-cuc.md` mục 8).
 - **Đừng tin một tính năng chỉ vì tài liệu nhắc tên nó.** `dung.js` in `⚠` / `ℹ` cho trường bị bỏ qua, type gõ sai, ảnh thiếu — đọc và xử lý trước khi giao.
 
 ## Đầu ra: một file PowerPoint
@@ -25,7 +26,7 @@ node hinh/dung.js <deck.json> --titles
 - **Chuyển động** (tính năng gốc PowerPoint): từng khối vào lần lượt theo tính cách da (đóng dấu, lật lịch, trượt…), Morph giữa các slide, số đếm, liên kết bấm được. `meta.hinh = { "chuyen": "morph", "nhip": 110 }` (nhịp = ms giữa hai khối); slide riêng: `trans`, `dur`.
   **Máy quay** (`data-cam` trên slide, `hinh/may_quay.js`): khi Morph vào slide, cả cảnh trôi cùng một hướng (`pan:1,0`) hoặc phóng vào hình chính (`zoom:k,x,y`) như Flashslide — vật không có cặp được nhân một bản đặt ngoài khung slide kia (cùng tên `!!…`); `data-sau` trên vật = thị sai (vật gần trôi nhanh hơn, `0` = đứng ngoài máy quay, giữ hiệu ứng vào). Trong PowerPoint, các vật nằm ngoài khung slide là bản ghép Morph — đừng xoá. Bộ `bh*` dùng sẵn; `xem_morph.js` mô phỏng được.
 - **Kiểm trước khi dựng** (`hinh/kiem_noi_dung.js`): lỗi cấu trúc / type lạ / ảnh không có → dừng, mã 2; cảnh báo nội dung (giới hạn chữ, ảnh nhỏ, thiếu ghi công, ghi chú thiếu, thời lượng lệch, dàn ý chưa phủ, Bước 0) → `--strict` dừng, mã 3. `--titles` chỉ in mạch tiêu đề, không dựng.
-- **Kiểm sau khi dựng** (`--soat`): tràn, chữ bị lớp ảnh đè, hai hộp chữ đè nhau (mã thoát 1) · PPTX lệch HTML · font thiếu ký tự · tờ soát `<tên>_lop/soat-*.jpg` (trái: thiết kế · phải: PPTX dựng lại qua LibreOffice) · ảnh "nhìn mờ" (xoá chữ + làm mờ). Bảng thông báo đầy đủ: `references/canh.md` mục 6.
+- **Kiểm sau khi dựng** (`--soat`): tràn, chữ bị lớp ảnh đè, hai hộp chữ đè nhau (mã thoát 1) · PPTX lệch HTML · font thiếu ký tự · tờ soát `<tên>_lop/soat-*.jpg` (trái: thiết kế · phải: PPTX dựng lại qua LibreOffice) · ảnh "nhìn mờ" (xoá chữ + làm mờ) · **soát chi tiết** (`scripts/soat_chi_tiet.js`: chữ lệch nhau 4–10 px — gần thẳng mà không thẳng; chữ dưới 4,5 : 1 / chữ lớn dưới 3 : 1 trên nền thật, kể cả nền ảnh). Bảng thông báo đầy đủ: `references/canh.md` mục 6.
 - **Bản giao người dùng phải qua `--strict` và `--soat` sạch**, rồi mở từng tờ soát và ảnh nhìn mờ bằng mắt.
 - **Nói với người dùng khi giao** (môi trường dựng không có PowerPoint, ba điều này chỉ kiểm được cấu trúc): (1) mở bằng PowerPoint 2019 / Microsoft 365 — bản cũ, LibreOffice, Google Slides không chạy Morph và không đọc font nhúng; (2) file tải về phải bấm **Enable Editing** rồi mới xem phông; (3) lần đầu, nhờ họ báo lại phông, Morph, hiệu ứng có chạy đúng không. Làm việc với OneDrive / Microsoft 365: `references/microsoft-365.md`.
 - Cần Playwright có Chromium (`PW_CHROMIUM=<FILE chạy được, ví dụ /opt/pw-browsers/chromium>`; không đặt thì tự dò). `--soat` cần thêm LibreOffice + `pdftoppm`.
@@ -177,6 +178,7 @@ Một da đổi CẢ deck: màu, nền, khung slide, vỏ thẻ, kiểu nhãn, �
    - Không có ô trống, thẻ trống, dòng mồ côi một chữ; mũi tên không xuyên qua chữ.
    - Bài báo cáo: mỗi ý con khớp ý lớn; mỗi hạn chế trỏ được về số liệu đã trình bày; mỗi kiến nghị có điều, khoản.
    - Màu đỏ (`bad`) chỉ dùng cho điều tiêu cực thật.
+   - Chỉ vào từng chi tiết nhỏ (chấm, dải, vật, hoạ tiết, màu nhấn) và nói được nó mang nghĩa gì; không nói được → bỏ (`references/nguyen-tac-bo-cuc.md` mục 8).
    - Morph có chủ ý: `python3 scripts/morph_cap.py out.pptx` liệt kê cặp Morph giữa hai slide kề nhau; `node scripts/xem_morph.js <tên>_lop/deck.html xem.mp4` quay video xấp xỉ để xem nhịp (không thay được PowerPoint thật).
 9. Gửi file .pptx (+ tờ soát, `_ghi-cong.md`), kèm ba lời nhắc ở mục "Đầu ra". Nhắc người dùng kiểm lại số liệu pháp lý nếu có con số tự tính.
 
@@ -231,6 +233,7 @@ Cần Node 18+, Playwright + Chromium (`npm install playwright && npx playwright
 | `fetch_image.py` | Tải một ảnh từ URL (chế độ `classroom`), lưu thông tin ghi công | Bước 5 |
 | `cutout.py` | Tách nền ảnh thật → trường `cutout` | Bước 5 |
 | `nhin_mo.py` | Xoá chữ + làm mờ để kiểm "che chữ vẫn đoán được đề tài"; `--da deck.json` dựng cùng deck ở nhiều da và chấm độ khác nhau | Bước 8 (`--soat` tự chạy) |
+| `soat_chi_tiet.js` | Chụp mỗi slide đủ chữ / ẩn chữ → nét chữ thật: báo chữ gần thẳng hàng (lệch 4–10 px) và chữ thiếu tương phản trên nền thật (WCAG); nhãn số liệu đặt theo dữ liệu đánh `data-dl` để bỏ qua | Bước 8 (`--soat` tự chạy) |
 | `morph_cap.py` | Liệt kê cặp Morph có chủ ý giữa hai slide kề nhau | Bước 8 |
 | `xem_morph.js` | Quay video / GIF xấp xỉ Morph từ `deck.html` (cùng tên trượt, khác hình hoà dần) khi không có PowerPoint | Bước 8 |
 | `build_vn_map.py`, `build_vn_map34.py` | Công cụ phát triển: dựng dữ liệu bản đồ 63 / 34 tỉnh (đã có sẵn trong `engine/assets`) | Không cần khi làm slide |
