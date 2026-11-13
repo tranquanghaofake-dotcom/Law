@@ -1,0 +1,83 @@
+// Da theo môn (hinh/da.js) — chất liệu của môn phủ mọi type thường của tầng hình ảnh (spec: một tầng hình ảnh, 11/2026).
+const test = require("node:test"), assert = require("node:assert"), path = require("path");
+const DA = require("../hinh/da");
+const { dungHtml } = require("../hinh/dung");
+const { kiemDeck } = require("../hinh/kiem");
+const { ART, NAMES: ART_NAMES } = require("../hinh/art");
+const { PROPS } = require("../hinh/do_vat");
+process.env.SLIDE_CHUAN_NO_PREP = "1";
+
+const deck = (meta, slides) => ({ meta: { short: "Thử", ...meta }, slides: slides || [
+  { type: "cover", title: "Bìa thử" }, { type: "section", num: 1, title: "Phần một" },
+  { type: "cards", title: "Ba thẻ thử nghiệm", items: [{ name: "A", desc: "a" }, { name: "B", desc: "b" }, { name: "C", desc: "c" }] },
+  { type: "statement", title: "Một phát hiện", stats: [{ label: "x", value: "1" }] }, { type: "end", title: "Cảm ơn" }] });
+
+test("13 da đủ trường bắt buộc; đồ vật và hình lớn của da đều có thật", () => {
+  assert.equal(DA.NAMES.length, 13);
+  for (const [ten, c] of Object.entries(DA.DA)) {
+    for (const k of ["mon", "fits", "ink", "acc", "page", "muted", "line", "bad", "good", "gold", "nen", "khung", "the", "nhan", "so", "tienDo", "vat", "chuyen", "art"]) assert.ok(c[k] != null, `${ten}.${k}`);
+    for (const v of c.vat) assert.ok(PROPS[v], `${ten}: đồ vật "${v}" không có trong hinh/do_vat.js`);
+    assert.ok(ART[c.art], `${ten}: hình "${c.art}" không có trong hinh/art.js`);
+    assert.ok(DA.CHUYEN[c.chuyen], `${ten}: kiểu hiện "${c.chuyen}"`);
+  }
+});
+
+test("chọn da: meta.da → bộ hình → meta.kit cũ → đề tài → meta.kind; none = nền chung; tên sai báo lỗi", () => {
+  assert.equal(DA.chonDa(deck({ da: "ban-ve" })).ten, "ban-ve");
+  assert.equal(DA.chonDa(deck({ da: "none" })).ten, null);
+  assert.ok(DA.chonDa(deck({ da: "khong-co" })).loi);
+  assert.equal(DA.chonDa({ meta: {}, slides: [{ type: "bcbia" }] }, { bcTypes: ["bcbia"] }).ten, "bc");
+  assert.equal(DA.chonDa(deck({ kit: "glass" })).ten, "kinh");
+  assert.equal(DA.chonDa(deck({ kit: "so-bhxh" })).ten, "so-bhxh");
+  assert.equal(DA.chonDa(deck({ title: "Tình hình triển khai BHXH bắt buộc" })).ten, "so-bhxh");
+  assert.equal(DA.chonDa(deck({ kind: "lecture" })).ten, "giay");
+  assert.equal(DA.chonDa(deck({})).ten, "ho-so");
+});
+
+test("dungHtml phủ da lên slide type thường: lớp da-<tên>, khung, đồ vật, hình lớn ở chương / bìa / kết; màu của da thay bảng màu gốc", () => {
+  const r = dungHtml(deck({ da: "so-bhxh" }), { deckDir: path.join(__dirname, "..") });
+  assert.equal(r.da.ten, "so-bhxh");
+  const secs = r.html.split("<section ").slice(1);
+  assert.ok(secs.every((s) => /class="s da da-so-bhxh /.test(s)), "mọi slide type thường mang lớp da");
+  assert.ok(secs.every((s) => s.includes('class="da-khung"')), "mọi slide có khung viền đôi của sổ");
+  assert.ok(secs[2].includes("data-da-vat"), "slide nội dung sáng có đồ vật tiền cảnh");
+  assert.ok(secs[1].includes('class="da-art"') && secs[0].includes('class="da-art"'), "chương và bìa không ảnh có hình lớn (sổ BHXH)");
+  assert.ok(!/#e2402a/i.test(r.html.split("</style>")[1]), "màu son gốc đã đổi sang màu của da trong thân trang");
+  assert.ok(r.html.includes(".s.da-so-bhxh"), "CSS của da có trong trang");
+});
+
+test("da bc / qt: slide thường thành tờ giấy trên nền của bộ (bảng bần, bản đồ chấm)", () => {
+  for (const ten of ["bc", "qt"]) {
+    const h = dungHtml(deck({ da: ten }), { deckDir: path.join(__dirname, "..") }).html;
+    const sec = h.split("<section ").slice(1);
+    assert.ok(sec.every((s) => { const c = (s.match(/class="([^"]*)"/) || [])[1].split(" "); return c.includes(ten) && c.includes(`da-${ten}`); }), `${ten}: mọi slide mang nền của bộ`);
+    assert.ok(sec[2].includes('class="da-to"'), `${ten}: slide sáng có tờ giấy`);
+  }
+});
+
+test("hiệu ứng vào của thẻ theo tính cách da (đóng dấu, lật lịch, trượt…)", () => {
+  const h = dungHtml(deck({ da: "bang-cong" }), { deckDir: path.join(__dirname, "..") }).html;
+  assert.ok(h.includes('"fx":"flip"'));
+});
+
+test("kiem: chỉ báo Nền chung khi da = none; deck có da không còn ⚠ Nền chung", () => {
+  const sl = Array.from({ length: 7 }, () => ({ type: "cards", title: "Thẻ", items: [{ name: "a" }] }));
+  assert.ok(kiemDeck({ meta: { da: "none" }, slides: sl }).some((m) => m.startsWith("⚠ Nền chung")));
+  assert.ok(!kiemDeck({ meta: { da: "so-bhxh" }, slides: sl }).some((m) => m.startsWith("⚠ Nền chung")));
+  assert.ok(!kiemDeck({ meta: { kind: "case" }, slides: sl }).some((m) => m.startsWith("⚠ Nền chung")), "mặc định theo loại bài cũng có da");
+});
+
+test("hình minh hoạ chuyển từ tầng Office đủ 21 hình, mỗi hình là SVG có viewBox", () => {
+  assert.ok(ART_NAMES.length >= 21);
+  for (const n of ART_NAMES) assert.match(ART[n]("2F6B3F", "9A3324", "FFFFFF"), /^<svg[^>]+viewBox="0 0 \d+ \d+"/, n);
+});
+
+test("khung và nền của mọi da là SVG hợp lệ (hoặc rỗng khi da không có)", () => {
+  for (const [ten, c] of Object.entries(DA.DA)) {
+    for (const toi of [false, true]) {
+      const k = DA.khungSvg(c.khung, c, toi), n = DA.nenSvg(c.nen, c, toi);
+      if (k) assert.match(k, /^<svg[\s\S]*<\/svg>$/, `${ten} khung`);
+      if (n) assert.match(n, /^<svg[\s\S]*<\/svg>$/, `${ten} nền`);
+    }
+  }
+});
