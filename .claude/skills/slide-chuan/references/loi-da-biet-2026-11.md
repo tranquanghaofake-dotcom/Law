@@ -153,7 +153,7 @@ Hai phiên độc lập, cùng đề tài hình sự, **cùng ba kết luận** 
 | F3.10 | `quote` / `statement` / `section` / `end` + `cutout` không vẽ ảnh; có cutout thì da còn tắt hình lớn → slide trống | bộ theo dõi + mắt | vẽ; đo alpha 4 mép (sharp) để dán mép cắt vào mép slide |
 | F3.11 | Ảnh nào trong PPTX cũng có chữ thay thế "Hình minh hoạ" — `photoAlt` / `alt` không tới bộ dựng | đọc `build.js` (chỉ lấy `data-alt`) | `tu_gan.js` lấy từ `aria-label` / `alt` của ảnh trong khối |
 | F3.12 | `cards.items[].photo`, `isotype.icon`, `photo.callouts / photoMark / side / photoStyle`, `split.photoMark / items[].icon`, `statement.stats[].tone`, `chart span hatch` bị bỏ | bộ theo dõi trường đọc | vẽ đủ |
-| F3.13 | Chữ thân ngắt giữa số hiệu và từ ghép ("điểm / m", "trợ / cấp") | mắt, slide 9 và 22 deck BHXH | `hinh.js` nối bằng dấu cách không ngắt ở mọi cỡ: Điều / khoản / điểm + số hiệu, số + đơn vị, ~90 từ ghép. Hệ quả: tìm "Điều 2" bằng dấu cách thường trong PowerPoint sẽ không khớp |
+| F3.13 | Chữ thân ngắt giữa số hiệu và từ ghép ("điểm / m", "trợ / cấp") | mắt, slide 9 và 22 deck BHXH | `hinh.js` nối bằng dấu cách không ngắt ở mọi cỡ: Điều / khoản / điểm + số hiệu, số + đơn vị, ~90 từ ghép. Hệ quả có thể có (chưa kiểm trên PowerPoint thật): tìm "Điều 2" gõ dấu cách thường có thể không khớp |
 | F3.14 | Ký tự ✓ ✕ → ← ■ □ do mẫu vẽ cần font ký hiệu của máy chiếu; chú giải ■ □ mang màu chữ, không khớp màu ô | ℹ "Ký hiệu … Segoe UI Symbol"; mắt | icon SVG / ô mẫu CSS đúng màu; ký hiệu người viết gõ trong nội dung vẫn là chữ |
 | F3.15 | Soát thẳng hàng so chữ trong viên nhãn (có lề trong) với chữ thường → báo lệch giả 5 px ở mọi deck | soát chi tiết | phần tử có nền / viền: so mép hộp |
 
