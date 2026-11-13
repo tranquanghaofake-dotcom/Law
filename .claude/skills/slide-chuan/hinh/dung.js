@@ -85,17 +85,18 @@ hinhKhiSanSang(() => document.querySelectorAll("section.s[data-tu]").forEach((S)
 
 // tự kiểm trong trang: chữ tràn khỏi slide, khối tràn đáy — báo để sửa deck.json (cắt chữ, tách slide), không âm thầm cắt
 const kiemTranCu = (page) => page.evaluate(() => [...document.querySelectorAll("section.s[data-tu]")].map((s) => {
-  const R = s.getBoundingClientRect(); let worst = 0, who = "";
+  const R = s.getBoundingClientRect(); let worst = 0, who = "", con = null;
   for (const el of s.querySelectorAll(".body, .h, .note, .an, .cl ul, .cover .mid")) {
-    const r = el.getBoundingClientRect(); let inner = 0;   // nội dung bên trong: đo hộp các khối con (không dùng scrollHeight — chữ Anton cỡ lớn có vùng nét cao hơn dòng)
-    if (!el.classList.contains("h")) for (const c of el.querySelectorAll("*")) { if (c.closest("svg") || getComputedStyle(c).display === "inline") continue; const q = c.getBoundingClientRect(); if (q.height) inner = Math.max(inner, q.bottom - r.bottom, r.top - q.top); }
+    const r = el.getBoundingClientRect(); let inner = 0, ke = null;   // nội dung bên trong: đo hộp các khối con (không dùng scrollHeight — chữ Anton cỡ lớn có vùng nét cao hơn dòng)
+    if (!el.classList.contains("h")) for (const c of el.querySelectorAll("*")) { if (c.closest("svg") || getComputedStyle(c).display === "inline") continue; const q = c.getBoundingClientRect(); const v = Math.max(q.bottom - r.bottom, r.top - q.top); if (q.height && v > inner) { inner = v; ke = c; } }
     const d = Math.max(r.bottom - (R.bottom - 30), r.right - (R.right - 40), inner);
-    if (d > worst) { worst = d; who = el.className; }
+    if (d > worst) { worst = d; who = el.className; con = d === inner ? ke : null; }
   }
-  return worst > 6 ? `slide "${(s.dataset.title || s.dataset.type || "").slice(0, 50)}" (${s.dataset.type}) tràn ${Math.round(worst)} px ở .${who.split(" ")[0]} — rút chữ hoặc tách slide trong deck.json` : null;
+  return worst > 6 ? `slide "${(s.dataset.title || s.dataset.type || "").slice(0, 50)}" (${s.dataset.type}) tràn ${Math.round(worst)} px ở .${who.split(" ")[0]}${con ? ` — khối gây tràn: ${con.tagName.toLowerCase()}${[...con.classList].filter((k) => k !== "x").slice(0, 1).map((k) => "." + k).join("")} "${(con.textContent || "").trim().replace(/\s+/g, " ").slice(0, 30)}"` : ""} — rút chữ hoặc tách slide trong deck.json` : null;
 }).filter(Boolean));
-// lawquote: nét bút vàng chỉ phủ được cụm nhấn nằm trọn một dòng
-const kiemTran = async (page) => [...(await kiemTranCu(page)), ...(await page.evaluate(() => [...document.querySelectorAll(".paper .pq b")].filter((b) => b.getClientRects().length > 1).map((b) => `slide "${((b.closest("section.s") || {}).dataset || {}).title || "lawquote"}" (lawquote): cụm nhấn [ ] bị xuống dòng — nét bút chỉ phủ dòng đầu; rút ngắn cụm hoặc đặt ở cuối câu`)))];
+// lawquote: nét bút vàng chỉ phủ được cụm nhấn nằm trọn một dòng; kiem_de: chữ bị lớp ảnh đè, hai hộp chữ đè nhau (mục E, N5)
+const { kiemDeTrongTrang } = require("./kiem_de");
+const kiemTran = async (page) => [...(await kiemTranCu(page)), ...(await page.evaluate(kiemDeTrongTrang)), ...(await page.evaluate(() => [...document.querySelectorAll(".paper .pq b")].filter((b) => b.getClientRects().length > 1).map((b) => `slide "${((b.closest("section.s") || {}).dataset || {}).title || "lawquote"}" (lawquote): cụm nhấn [ ] bị xuống dòng — nét bút chỉ phủ dòng đầu; rút ngắn cụm hoặc đặt ở cuối câu`)))];
 
 async function dung({ deckPath, outPath, mau, chuyen, soat = false, nhungFont = true, htmlOnly = false, strict = false }) {
   deckPath = path.resolve(deckPath); const deckDir = path.dirname(deckPath), name = path.basename(deckPath, ".json");
@@ -119,11 +120,11 @@ async function dung({ deckPath, outPath, mau, chuyen, soat = false, nhungFont = 
   return { ...r, ...res, htmlPath, outPath };
 }
 
-module.exports = { dung, dungHtml };
+module.exports = { dung, dungHtml, kiemTran };
 if (require.main === module) {
   const args = process.argv.slice(2), flags = args.filter((a) => a.startsWith("--")), pos = args.filter((a) => !a.startsWith("--")), opt = (k) => (flags.find((x) => x.startsWith(`--${k}=`)) || "").slice(k.length + 3) || undefined;
   if (!pos[0]) { console.error("Dùng: node hinh/dung.js <deck.json> [out.pptx] [--mau=son|luc|lam|nau] [--chuyen=morph|fade] [--soat] [--strict] [--khong-nhung-font] [--html]"); process.exit(2); }
   dung({ deckPath: pos[0], outPath: pos[1], mau: opt("mau"), chuyen: opt("chuyen"), soat: flags.includes("--soat"), nhungFont: !flags.includes("--khong-nhung-font"), htmlOnly: flags.includes("--html"), strict: flags.includes("--strict") })
-    .then((r) => { if (r.warn && r.warn.some((w) => /tràn/.test(w))) process.exitCode = 1; })
+    .then((r) => { if (r.warn && r.warn.some((w) => /tràn|đè/.test(w))) process.exitCode = 1; })
     .catch((e) => { console.error("✗ " + (e.code === 3 ? e.message : e.stack || e.message)); process.exit(e.code === 3 ? 3 : 1); });
 }
