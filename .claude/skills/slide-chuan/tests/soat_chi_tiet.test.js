@@ -25,3 +25,14 @@ test("bắt chữ lệch 6 px và chữ xám nhạt trên nền trắng; bỏ qu
   assert.strictEqual(s.tuongPhan.length, 1, s.tuongPhan.join(" | "));
   assert.match(s.tuongPhan[0], /Chữ quá nhạt/);
 });
+
+test("bắt dòng mồ côi một chữ; không bắt đoạn một dòng hay dòng cuối đủ dài", { skip: !hasPw && "không có Playwright", timeout: 120000 }, async () => {
+  const { soat } = require("../scripts/soat_chi_tiet");
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), "soat-mc-")), f = path.join(dir, "deck.html");
+  const o = (y, html) => `<div data-t style="position:absolute;left:110px;top:${y}px;width:900px;font:400 30px/1.3 sans-serif;color:#13213f">${html}</div>`;
+  fs.writeFileSync(f, `<!doctype html><html><body style="margin:0"><section class="s" data-type="thu" data-title="Thử" style="position:relative;width:1920px;height:1080px;background:#fff">
+    ${o(100, "Thời gian đã rút không còn được tính để hưởng lương hưu sau<br>này")}${o(300, "Một dòng thôi")}${o(500, "Dòng đầu của đoạn hai dòng<br>dòng cuối đủ dài nhiều chữ")}
+  </section></body></html>`);
+  const [s] = await soat(f);
+  assert.strictEqual(s.moCoi.length, 1, s.moCoi.join(" | ")); assert.match(s.moCoi[0], /“này”/);
+});

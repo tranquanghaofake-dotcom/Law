@@ -157,9 +157,9 @@ async function dung({ deckPath, outPath, mau, chuyen, soat = false, nhungFont = 
     const anh = (nm.stdout || "").trim().split("\n").pop();
     console.log(nm.status === 0 && anh ? `✓ Nhìn mờ: ${anh} — mở xem: che chữ đi có đoán được đề tài không? Không → chưa giao` : `ℹ không dựng được ảnh nhìn mờ (scripts/nhin_mo.py): ${(nm.stderr || "").trim().split("\n").pop() || "?"}`);
     // soát chi tiết bằng máy (nguyên tắc "mỗi chi tiết một lý do"): chữ gần thẳng hàng mà không thẳng, chữ thiếu tương phản trên nền thật
-    try { const kq = await require("../scripts/soat_chi_tiet").soat(htmlPath), dong = kq.flatMap((s) => [...s.lech.map((m) => `slide ${s.slide}: ↔ ${m}`), ...s.tuongPhan.map((m) => `slide ${s.slide}: ◐ ${m}`)]);
-      if (!dong.length) console.log("✓ Soát chi tiết: chữ thẳng hàng (không lệch 4–10 px), tương phản đạt WCAG trên nền thật");
-      else { console.log(`ℹ Soát chi tiết: ${dong.length} chỗ (scripts/soat_chi_tiet.js — lệch 4–10 px: canh lại cho thẳng; tương phản: đậm chữ hoặc làm yên nền sau chữ)`); for (const m of dong.slice(0, 15)) console.log(`  ${m}`); if (dong.length > 15) console.log(`  … và ${dong.length - 15} chỗ nữa`); } }
+    try { const kq = await require("../scripts/soat_chi_tiet").soat(htmlPath), dong = kq.flatMap((s) => [...s.lech.map((m) => `slide ${s.slide}: ↔ ${m}`), ...s.tuongPhan.map((m) => `slide ${s.slide}: ◐ ${m}`), ...(s.moCoi || []).map((m) => `slide ${s.slide}: ¶ ${m}`)]);
+      if (!dong.length) console.log("✓ Soát chi tiết: chữ thẳng hàng (không lệch 4–10 px), tương phản đạt WCAG trên nền thật, không dòng mồ côi");
+      else { console.log(`ℹ Soát chi tiết: ${dong.length} chỗ (scripts/soat_chi_tiet.js — ↔ lệch 4–10 px: canh lại cho thẳng; ◐ tương phản: đậm chữ hoặc làm yên nền sau chữ; ¶ dòng mồ côi: sửa câu hoặc bề rộng hộp)`); for (const m of dong.slice(0, 15)) console.log(`  ${m}`); if (dong.length > 15) console.log(`  … và ${dong.length - 15} chỗ nữa`); } }
     catch (e) { console.log(`ℹ không chạy được soát chi tiết: ${String(e.message || e).split("\n")[0]}`); } }
   return { ...r, ...res, htmlPath, outPath };
 }
