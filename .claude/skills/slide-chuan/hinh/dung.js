@@ -28,9 +28,12 @@ const khoEmoji = () => _khoEmoji || (_khoEmoji = fs.existsSync(path.join(__dirna
 // Hình dán cho bìa / mở bài / chuyển chương / cảm ơn (các type thường vốn không có hình): `emoji`, `emoji2`, tuỳ chọn `emojiPos` {s,l,t,r}.
 const DECO = { cover: [{ s: 520, l: 1230, t: 190, r: 6 }, { s: 250, l: 1130, t: 640, r: -9 }], statement: [{ s: 300, l: 1500, t: 90, r: 7 }],
   section: [{ s: 300, l: 1050, t: 560, r: -8 }], end: [{ s: 360, l: 1440, t: 100, r: 8 }, { s: 230, l: 1130, t: 720, r: -8 }] };
-const decoGan = (s, ctx, i, html) => { const P = DECO[s.type]; if (!P) return html;
+// Tên Morph hd-<hình> như cảnh (hinh/canh.js): cùng hình ở slide kề (picks → section) thì bay sang, đích Morph không có hiệu ứng vào (prev / now).
+// Không ghi emojiPos → data-tu-dat: hinh.js (hinhDatHinhDan) dời hình khỏi chữ sau khi font nạp (mục E, N7 — từng đè dấu hỏi của tiêu đề 2 dòng).
+const decoGan = (s, ctx, i, html, prev = new Set(), now = new Set()) => { const P = DECO[s.type]; if (!P) return html;
   const g = [s.emoji, s.emoji2].map((n, k) => { const p = (k === 0 && s.emojiPos) || P[k]; if (!n || !p || !ctx.hasEmoji(n)) return "";
-    return `<div class="emo" data-l="deco-${i}-${k}" data-pad="${Math.round(p.s * 0.1 + 14)}" data-alt="Hình minh hoạ" data-a="pop" data-at="${300 + k * 250}" style="position:absolute;left:${p.l}px;top:${p.t}px;width:${p.s}px;height:${p.s}px;rotate:${p.r}deg"><img src="${ctx.emoji(n)}" alt=""></div>`; }).join("");
+    const noi = prev.has(n); now.add(n);
+    return `<div class="emo" data-l="deco-${i}-${k}" data-m="hd-${n}" data-pad="${Math.round(p.s * 0.1 + 14)}" data-alt="Hình minh hoạ" ${noi ? "" : `data-a="pop" data-at="${300 + k * 250}"`}${k === 0 && s.emojiPos ? "" : " data-tu-dat"} style="position:absolute;left:${p.l}px;top:${p.t}px;width:${p.s}px;height:${p.s}px;rotate:${p.r}deg"><img src="${ctx.emoji(n)}" alt=""></div>`; }).join("");
   return g ? html.replace(/<\/section>\s*$/, g + "</section>") : html; };
 function dungHtml(deck, { deckDir = process.cwd(), mau, chuyen } = {}) {
   const src = deck.slides || []; if (!src.length) throw new Error("deck.json không có slide nào.");
@@ -49,9 +52,9 @@ function dungHtml(deck, { deckDir = process.cwd(), mau, chuyen } = {}) {
     if (qt.TYPES.includes(s.type)) { const secs = qt.render(s, deck, ctx, { i, n, st }); secs.forEach((sec) => out.push({ ...sec, notes: note, src: i })); st.prev = new Set(); return; }
     if (bc.TYPES.includes(s.type)) { const secs = bc.render(s, deck, ctx, { i, n, st }); secs.forEach((sec) => out.push({ ...sec, notes: note, src: i })); st.prev = new Set(); return; }
     if (canh.TYPES.includes(s.type)) { const secs = canh.render(s, deck, ctx, { i, n, st }); secs.forEach((sec, k) => out.push({ ...sec, notes: sec.notes ?? (k === 0 ? note : ""), src: i })); if (s.type === "book") sauSach = out.length; return; }
-    st.prev = new Set();
+    const prev = st.prev || new Set(); st.prev = new Set();
     const r = render(s, deck, ctx, i, n); if (r.generic) generic.push(`#${i + 1} ${s.type}`);
-    out.push({ id: s.id || `s${i + 1}`, html: decoGan(s, ctx, i, r.html), tu: true, notes: note, src: i, trans: s.trans, dur: s.dur });
+    out.push({ id: s.id || `s${i + 1}`, html: decoGan(s, ctx, i, r.html, prev, st.prev), tu: true, notes: note, src: i, trans: s.trans, dur: s.dur });
   });
   // nút Mục lục ở thanh đầu slide (khi deck có slide toc): chữ "Mục lục" + cuốn sách thu nhỏ nếu deck mở bằng cảnh book
   if (tocId) out.forEach((o, k) => { if (o.src === toc || !/class="bar"/.test(o.html)) return;
@@ -77,6 +80,7 @@ ${tomau(body)}
 <script src="${url(path.join(here, "tu_gan.js"))}"></script>
 <script>
 ${canh.script || ""}
+hinhKhiSanSang(() => document.querySelectorAll("section.s").forEach((S) => hinhDatHinhDan(S)));
 hinhKhiSanSang(() => document.querySelectorAll("section.s[data-tu]").forEach((S) => hinhTuGan(S, ${JSON.stringify({ nhip: +H.nhip || 110 })})));
 </script>
 </body></html>`;
