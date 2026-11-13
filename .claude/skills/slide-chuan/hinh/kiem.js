@@ -44,6 +44,14 @@ function kiemDeck(deck, { deckDir = process.cwd() } = {}) {
   }
   // 5. Nền chung: deck không dùng bộ hình theo môn nào — lỗi L10 lặp ở 3 bài (loi-da-biet-2026-11.md mục E). Im lặng khi prep.json
   //    ghi người dùng đã đồng ý (chapNhanNenChung) hoặc dựng tầng lưới Office (tang: "luoi"). dung.js --strict dừng ở dòng này.
+  // 6. Nền chung một phần (P4): có bộ hình nhưng < 1/2 slide mang dấu hiệu môn — bộ hình theo môn hoặc ảnh thật. Hình dán / icon KHÔNG tính
+  //    (chất liệu chung, đã bị chê "rập khuôn"). Đo cấu trúc thay cho chấm điểm ảnh nhìn mờ: điểm ảnh không phân biệt hình theo môn với hình trang trí.
+  const dauHieu = slides.filter((s) => BO_HINH_TYPES.has(s.type) || ["photo", "cutout"].some((k) => s[k]) || (Array.isArray(s.items) && s.items.some((x) => x && x.photo))).length;
+  if (n >= 6) {
+    let pr = {}; try { pr = JSON.parse(fs.readFileSync(path.resolve(deckDir, deck.meta?.prep || "prep.json"), "utf8")) || {}; } catch { /* không có prep.json */ }
+    const coBo = slides.some((s) => BO_HINH_TYPES.has(s.type)), boQua = pr.chapNhanNenChung || pr.tang === "luoi";
+    if (!boQua && coBo && dauHieu / n < 0.5) out.push(`⚠ Nền chung một phần: ${dauHieu}/${n} slide mang dấu hiệu môn (bộ hình theo môn hoặc ảnh thật) — các slide còn lại là nền, khung chung; hình dán không tính. Chuyển thêm slide sang kiểu của bộ hình, thêm ảnh thật đúng hành vi của slide, hoặc ghi người dùng đã đồng ý (chapNhanNenChung).`);
+  }
   if (n >= 6 && !slides.some((s) => BO_HINH_TYPES.has(s.type))) {
     let pr = {}; try { pr = JSON.parse(fs.readFileSync(path.resolve(deckDir, deck.meta?.prep || "prep.json"), "utf8")) || {}; } catch { /* không có prep.json */ }
     if (!pr.chapNhanNenChung && pr.tang !== "luoi") out.push(`⚠ Nền chung: deck ${n} slide không dùng bộ hình theo môn nào (bc* hình sự, qt* Công pháp quốc tế) — nền, khung, hình dán là chất liệu chung, che chữ đi không đoán được đề tài (lỗi L10). Dùng bộ có sẵn, làm bộ mới (references/canh.md mục 8–9), hoặc ghi người dùng đã đồng ý: prep.json → chapNhanNenChung: true.`);

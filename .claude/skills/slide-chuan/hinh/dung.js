@@ -121,6 +121,10 @@ async function dung({ deckPath, outPath, mau, chuyen, soat = false, nhungFont = 
   if (htmlOnly) { console.log(`✓ ${htmlPath}`); return { ...r, htmlPath }; }
   const { build } = require("./build");
   const res = await build({ htmlPath, outPath, soat, nhungFont, giuLop: true, truoc: kiemTran });
+  // --soat tự dựng ảnh "nhìn mờ" (xoá chữ + làm mờ) — trước đây là bước tay, người làm chạy rồi bỏ qua (mục E, N3)
+  if (soat) { const nm = require("child_process").spawnSync("python3", [path.join(__dirname, "..", "scripts", "nhin_mo.py"), outPath], { encoding: "utf8" });
+    const anh = (nm.stdout || "").trim().split("\n").pop();
+    console.log(nm.status === 0 && anh ? `✓ Nhìn mờ: ${anh} — mở xem: che chữ đi có đoán được đề tài không? Không → chưa giao` : `ℹ không dựng được ảnh nhìn mờ (scripts/nhin_mo.py): ${(nm.stderr || "").trim().split("\n").pop() || "?"}`); }
   return { ...r, ...res, htmlPath, outPath };
 }
 

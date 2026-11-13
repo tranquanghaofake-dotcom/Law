@@ -160,6 +160,8 @@ Chạy với `--soat`, đọc từng dòng in ra:
 | `⚠ slide "…" tràn N px` | Chữ nhiều hơn chỗ; `— khối gây tràn: …` nêu đúng khối con (thẻ, ô) cần rút | Rút chữ ở đúng khối được nêu, hoặc tách slide trong `deck.json` — không thu cỡ chữ |
 | `⚠ slide N "…": chữ "…" bị lớp ảnh "…" đè` | Hình dán, ảnh, dấu, dải lụa… vẽ đè lên chữ (`hinh/kiem_de.js`, đo theo thứ tự vẽ thật) | Dời hình (`emojiPos`), rút chữ hoặc đổi chỗ khối |
 | `⚠ slide N "…": hai hộp chữ đè nhau` | Một dòng chữ xuống dòng đè lên khối bên dưới (nhãn đè tên, tên người ký đè nhãn) | Rút chữ, giữ một dòng, hoặc dời khối |
+| `⚠ Nền chung một phần: x/n slide …` | Có bộ hình nhưng chưa tới nửa số slide mang dấu hiệu môn (kiểu của bộ hình hoặc ảnh thật; hình dán không tính) | Chuyển thêm slide sang kiểu của bộ hình, thêm ảnh thật đúng hành vi của slide |
+| `✓ Nhìn mờ: …_nhinmo.jpg` | `--soat` tự dựng ảnh xoá chữ + làm mờ | Mở xem: che chữ có đoán được đề tài không — không thì chưa giao |
 | `⚠ Nền chung: …` | Deck không dùng bộ hình theo môn nào (`bc*`, `qt*`) mà `prep.json` chưa ghi người dùng đồng ý | Xem SKILL.md Bước 0 "Bộ hình theo môn"; `--strict` dừng ở dòng này |
 | `⚠ slide N: bản PPTX lệch bản HTML x %` | Có khối đặt sai chỗ, thiếu hoặc thừa | Mở `<tên>_lop/soat-*.jpg` (trái HTML · phải PPTX), tìm khối lệch |
 | `⚠ font “…” không có ký tự: …` | Ký tự lạ, PowerPoint sẽ lấy font khác | Đổi ký tự trong `deck.json` |

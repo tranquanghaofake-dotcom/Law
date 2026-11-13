@@ -50,8 +50,8 @@ test("kiem.js: deck ≥ 6 slide không dùng bộ hình theo môn → ⚠ Nền 
   const dir = tmp(), sl = (t) => Array.from({ length: 6 }, (_, i) => ({ type: i ? "cards" : t, title: "T", items: [] }));
   fs.writeFileSync(path.join(dir, "prep.json"), JSON.stringify({ approved: true }));
   assert.match(kiemDeck({ meta: {}, slides: sl("cover") }, { deckDir: dir }).join("\n"), /⚠ Nền chung/);
-  assert.doesNotMatch(kiemDeck({ meta: {}, slides: sl("qtbia") }, { deckDir: dir }).join("\n"), /Nền chung/);
-  assert.doesNotMatch(kiemDeck({ meta: {}, slides: sl("bcbia") }, { deckDir: dir }).join("\n"), /Nền chung/);
+  assert.doesNotMatch(kiemDeck({ meta: {}, slides: sl("qtbia") }, { deckDir: dir }).join("\n"), /⚠ Nền chung:/);
+  assert.doesNotMatch(kiemDeck({ meta: {}, slides: sl("bcbia") }, { deckDir: dir }).join("\n"), /⚠ Nền chung:/);
   fs.writeFileSync(path.join(dir, "prep.json"), JSON.stringify({ approved: true, chapNhanNenChung: true }));
   assert.doesNotMatch(kiemDeck({ meta: {}, slides: sl("cover") }, { deckDir: dir }).join("\n"), /⚠ Nền chung/);
 });
@@ -63,4 +63,15 @@ test("dung.js --strict: dừng trước khi dựng khi deck dùng nền chung m�
   const run = (f) => spawnSync("node", [path.join(ROOT, "hinh", "dung.js"), dp, "--html", ...f], { encoding: "utf8" });
   const a = run(["--strict"]); assert.strictEqual(a.status, 3, a.stdout + a.stderr); assert.match(a.stderr, /--strict/);
   const b = run([]); assert.strictEqual(b.status, 0, b.stdout + b.stderr); assert.match(b.stdout, /⚠ Nền chung/);
+});
+
+test("P4 kiem.js: có bộ hình nhưng < 1/2 slide mang dấu hiệu môn (bộ hình / ảnh thật) → ⚠ Nền chung một phần; hình dán không tính", () => {
+  const dir = tmp(); fs.writeFileSync(path.join(dir, "prep.json"), JSON.stringify({ approved: true }));
+  const deck = (qt, thuong, extra = {}) => ({ meta: {}, slides: [...Array.from({ length: qt }, () => ({ type: "qtban", title: "T", items: [] })), ...Array.from({ length: thuong }, () => ({ type: "cards", title: "T", items: [], emoji: "dove", ...extra }))] });
+  const a = kiemDeck(deck(2, 6), { deckDir: dir }).join("\n");
+  assert.match(a, /⚠ Nền chung một phần: 2\/8 slide/); assert.doesNotMatch(a, /⚠ Nền chung:/);
+  assert.doesNotMatch(kiemDeck(deck(5, 3), { deckDir: dir }).join("\n"), /Nền chung/);
+  assert.doesNotMatch(kiemDeck(deck(2, 6, { photo: "images/a.jpg" }), { deckDir: dir }).join("\n"), /Nền chung/, "ảnh thật tính là dấu hiệu môn");
+  fs.writeFileSync(path.join(dir, "prep.json"), JSON.stringify({ approved: true, chapNhanNenChung: true }));
+  assert.doesNotMatch(kiemDeck(deck(2, 6), { deckDir: dir }).join("\n"), /Nền chung/);
 });
