@@ -75,7 +75,7 @@ const nhan = (name, x, y, text, o = {}) => { const px = o.px || 20, w = o.w || M
 const muiTen = () => { const g = uid("mt"); return `<svg viewBox="0 0 100 70" width="100%" height="100%"><defs><linearGradient id="${g}" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9cc3ff"/><stop offset="1" stop-color="#0b57d0"/></linearGradient></defs><path d="M6 24 H58 V8 L94 35 L58 62 V46 H6 Z" fill="url(#${g})"/></svg>`; };
 const thanh = (mau, r = 0.5) => { const g = uid("th"), m = GRAD[mau] || [mau, mau]; return `<svg viewBox="0 0 100 10" width="100%" height="100%" preserveAspectRatio="none"><defs><linearGradient id="${g}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#${m[0]}"/><stop offset="1" stop-color="#${m[1]}"/></linearGradient></defs><rect width="100" height="10" rx="${r}" fill="url(#${g})"/><rect x="1" y="1" width="98" height="3" rx="${r / 2}" fill="#fff" opacity=".28"/></svg>`; };
 const tron = (mau) => `<svg viewBox="0 0 10 10" width="100%" height="100%" preserveAspectRatio="none"><rect width="10" height="10" fill="#${mau}"/></svg>`;
-const conDau = (w, h, mau = P.red) => `<svg viewBox="0 0 ${w} ${h}" width="100%" height="100%"><rect x="4" y="4" width="${w - 8}" height="${h - 8}" rx="14" fill="#ffffff" fill-opacity=".72" stroke="#${mau}" stroke-width="6"/><rect x="14" y="14" width="${w - 28}" height="${h - 28}" rx="8" fill="none" stroke="#${mau}" stroke-width="2"/></svg>`;
+const conDau = (w, h, mau = P.red) => `<svg viewBox="0 0 ${w} ${h}" width="100%" height="100%"><rect x="4" y="4" width="${w - 8}" height="${h - 8}" rx="14" fill="#ffffff" fill-opacity=".9" stroke="#${mau}" stroke-width="6"/><rect x="14" y="14" width="${w - 28}" height="${h - 28}" rx="8" fill="none" stroke="#${mau}" stroke-width="2"/></svg>`;
 
 // ---------- KHUNG + DẢI ĐẦU (giống hệt mọi slide) ----------
 const tenPhan = (deck, i) => { const s = deck.slides[i]; if (["bhhoi", "bhtraloi", "bhghinho", "bhket"].includes(s.type)) return "Kết luận";
@@ -202,7 +202,7 @@ S.bhchuong = (s, deck, b, ctx) => { const k = Math.max(0, Math.min(2, (+s.num ||
       ${kick(`${s.partWord || "Phần"} ${String(s.num).padStart(2, "0")} / 03`, 110, 250, { mau: "vang", px: 26, fx: vao(0) })}${chu("bh-hc", 110, 340, 1050, tx(s.title || ""), { size: px, ...vao(0) })}
       ${s.sub ? chu("bh-sub", 110, 350 + n * Math.round(px * 1.06) + 30, 900, tx(s.sub), vao(1)) : ""}`; }
   const n = dong(s.title, 900, 64, 800), q = uid("q");
-  const H = k === 0 ? hero("bh-p-hero1", "sach", { x: 1230, y: 200, w: 470, r: -4 }, { sau: 1.3, ...vao(0) }) : k === 1 ? `${chongSo("bh-p-hero2", 16, { x: 1240, y: 220, w: 350 }, { sau: 1.3, ...vao(0) })}${hero("bh-xu", "xu", { x: 1570, y: 600, w: 240 }, { sau: 1.5, ...vao(1) })}` : `${hero("bh-p-hero3", "kiem", { x: 1250, y: 210, w: 470 }, { sau: 1.3, ...vao(0) })}${hero("bh-pb", "phongbi", { x: 1120, y: 700, w: 280, r: -6 }, { sau: 1.5, ...vao(1) })}`;
+  const H = k === 0 ? hero("bh-p-hero1", "sach", { x: 1230, y: 200, w: 470, r: -4 }, { sau: 1.3, ...vao(0) }) : k === 1 ? `${chongSo("bh-p-hero2", 19, { x: 1240, y: 200, w: 330 }, { sau: 1.3, alt: "Chồng 19 cuốn sổ: 18,91 triệu người đóng BHXH bắt buộc năm 2025", ...vao(0) })}${hero("bh-xu", "xu", { x: 1570, y: 600, w: 240 }, { sau: 1.5, ...vao(1) })}` : `${hero("bh-p-hero3", "kiem", { x: 1250, y: 210, w: 470 }, { sau: 1.3, ...vao(0) })}${hero("bh-pbl", "sach", { x: 1130, y: 600, w: 230, r: -8 }, { sau: 1.5, alt: "Sách Luật BHXH 2024: kiến nghị sửa luật", ...vao(1) })}`;
   return `${lop("bh-quang", { x: 1060, y: 120, w: 860, h: 860 }, `<svg viewBox="0 0 100 100" width="100%" height="100%"><defs><radialGradient id="${q}" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#dbe9ff" stop-opacity=".9"/><stop offset="1" stop-color="#dbe9ff" stop-opacity="0"/></radialGradient></defs><circle cx="50" cy="50" r="50" fill="url(#${q})"/></svg>`, { shadow: false, alt: "Quầng sáng", z: 2, sau: 0.6 })}${H}
     ${kick(`${s.partWord || "Phần"} ${String(s.num).padStart(2, "0")} / 03`, 110, 230)}${chu("bh-pnum", 110, 290, 600, String(s.num).padStart(2, "0"))}
     ${chu("bh-hc", 110, 560, 900, tx(s.title || ""))}${s.sub ? chu("bh-sub", 110, 560 + n * 76 + 26, 880, tx(s.sub)) : ""}`; };
@@ -463,7 +463,11 @@ S.bhket = (s, deck, b, ctx) => { if (anhU(ctx, s)) { const px = 96, n = dong(s.t
       ${s.message ? chu("bh-sub", 110, y, 900, tx(s.message), vao(1)) : ""}${s.sub ? chu("bh-ks", 110, y + 20 + dong(s.message, 900, 30, 400) * 42, 900, esc(s.sub), vao(1)) : ""}
       ${team ? chu("bh-au", 110, 900, 900, esc(team), vao(1)) : ""}`; }
   const n = dong(s.title, 880, 72, 800), y = 280 + n * 84 + 30, team = (s.team || []).slice(0, 4).map((t) => t.name).join(" · ");
-  return `${khungAnh(ctx, s, { x: 1080, y: 130, w: 730, h: 540, r: -3 }, "bh-anh", vao(0, "fade"))}${hero("bh-p-so", "so", { x: 1010, y: 560, w: 280, r: -10 }, vao(1))}${hero("bh-p-phongbi", "phongbi", { x: 1520, y: 690, w: 300, r: 4 }, vao(2))}
+  // không ảnh: câu chốt thành một câu bằng hình — chồng 15 cuốn sổ ("15 năm đóng", mốc Điều 64 Luật 2024) → mũi tên → phong bì lương hưu
+  const nKet = 15, wK = 300, hK = wK * (40 + 18 + nKet * 24 + 50) / 314, dayK = 880;
+  return `${chongSo("bh-ketso", nKet, { x: 1080, y: dayK - hK, w: wK }, { alt: "Chồng 15 cuốn sổ BHXH: 15 năm đóng", ...vao(0, "rise") })}${chu("bh-ct", 1060, dayK + 16, wK + 40, "15 năm đóng", { align: "center", ...vao(0) })}
+    ${lop("bh-ketmt", { x: 1425, y: dayK - 150, w: 120, h: 84 }, muiTen(), { shadow: false, alt: "Mũi tên: đóng → hưởng", ...vao(1, "wipe") })}
+    ${hero("bh-p-phongbi", "phongbi", { x: 1570, y: dayK - 200, w: 260, r: 4 })}${chu("bh-ct", 1560, dayK + 16, 280, "Lương hưu", { align: "center", ...vao(1) })}
     ${kick(s.kicker, 110, 220, { m: false })}${chu("bh-h1", 110, 280, 880, tx(s.title || "Cảm ơn"), { size: 72 })}
     ${s.message ? chu("bh-sub", 110, y, 860, tx(s.message)) : ""}${s.sub ? chu("bh-ks", 110, y + 20 + dong(s.message, 860, 30, 400) * 42, 860, esc(s.sub)) : ""}
     ${team ? chu("bh-au", 110, 880, 880, esc(team)) : ""}${s.photoCredit ? chu("bh-cr", 110, 962, 900, esc(s.photoCredit)) : ""}`; };

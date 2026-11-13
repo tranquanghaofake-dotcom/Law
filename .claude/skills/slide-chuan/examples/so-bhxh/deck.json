@@ -744,7 +744,7 @@
    "title": "Rút một lần là [mất thời gian đã đóng]",
    "cause": {
     "tag": "Tình huống",
-    "text": "Nghỉ việc 12 tháng, không đóng tiếp, rút BHXH một lần"
+    "text": "Đã đóng 6 năm, nghỉ việc 12 tháng, không đóng tiếp, rút BHXH một lần"
    },
    "emojis": [
     "person-walking",
@@ -771,7 +771,8 @@
     "3.2",
     "3.4.3"
    ],
-   "notes": "Vì sao rút một lần là vấn đề? Người đã tham gia trước 01/7/2025 vẫn được rút sau 12 tháng không đóng (điểm đ khoản 1 Điều 70). Nhưng khoản 3 Điều 5 nói rõ: thời gian đã tính hưởng một lần thì không được tính vào thời gian làm cơ sở hưởng chế độ. Nghĩa là muốn có lương hưu, người đó phải đóng lại từ đầu đủ 15 năm. Người rút đổi lương hưu suốt đời lấy một khoản tiền trước mắt."
+   "notes": "Vì sao rút một lần là vấn đề? Người đã tham gia trước 01/7/2025 vẫn được rút sau 12 tháng không đóng (điểm đ khoản 1 Điều 70). Nhưng khoản 3 Điều 5 nói rõ: thời gian đã tính hưởng một lần thì không được tính vào thời gian làm cơ sở hưởng chế độ. Nghĩa là muốn có lương hưu, người đó phải đóng lại từ đầu đủ 15 năm. Người rút đổi lương hưu suốt đời lấy một khoản tiền trước mắt.",
+   "years": 6
   },
   {
    "type": "bhchuong",
