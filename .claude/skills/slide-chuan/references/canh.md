@@ -188,3 +188,58 @@ Quy tắc khi viết cảnh mới trong `hinh/canh.js`:
 4. Một vật vừa có `data-m` vừa có `data-a` chỉ được khi slide trước **không** có vật cùng tên (bộ dựng cảnh báo trường hợp ngược lại).
 5. Đặt chỗ theo kích thước chữ (kính lúp, nét bút) phải làm trong `hinhKhiSanSang(...)` — lúc trang vừa tải, chữ còn ở font tạm.
 6. Thêm type vào `TYPES`, viết ví dụ vào `examples/`, chạy `node --test tests/hinh.test.js` và dựng `--soat`.
+
+## 8. Bộ hình riêng theo môn: "bảng bằng chứng" (hình sự) — `hinh/bang_chung.js`
+
+Vì sao có: hình dán Fluent Emoji và nền của bảng màu chỉ là chất liệu chung, không nói gì về môn học; người dùng đã chê đúng điểm đó (phiên 12/11/2026). Bộ này **vẽ mới bằng SVG/CSS** theo một ẩn dụ — bảng bần của kíp điều tra: giấy ghim đinh đỏ, dây đỏ nối các điều luật, thẻ tang vật có lỗ xỏ dây, con dấu, vân tay mờ. Chữ vẫn là hộp chữ sửa được; hình là lớp ảnh rời. Viết cho môn khác: sao chép file, đổi ẩn dụ (vd. dân sự: hợp đồng + dấu giáp lai; lao động: bảng chấm công), giữ nguyên cách gắn nhãn (`data-t`, `data-l`, `data-pad`, `data-a`).
+
+| type | Dùng cho | Trường chính (dùng lại trường của type thường tương ứng) |
+|---|---|---|
+| `bcbia` | Bìa | `kicker` `title` `subtitle` `stamp` `author` `authorSub` `date` `cites[{n,t}]` (≤ 3 điều luật nối dây đỏ) |
+| `bccauhoi` | Mục lục / 3 câu hỏi (bấm nhảy) | `kicker` `title` `items[{q,go}]` |
+| `bcchuong` | Mở chương | `num` `part` `title` `sub` (`partWord`) |
+| `bctrich` | Trích nguyên văn điều luật | `head` `quote` (`[cụm nhấn]`) `art` `artLabel` `stamp` `source` |
+| `bcso` | So hai điều / hai quy định | `left` `right` {`tag` `sub` `items[≤4]`} `focus` `mid{head,text}` |
+| `bcbang` | Bảng tra cứu | `cols[{label}]` `rows[≤5][3 ô]` `focus` `note` |
+| `bcnhanh` | Cây điều kiện | `root{q,src}` `branches[3]{when,head,text,tone}` `focus` `note` |
+| `bctinhhuong` | Tình huống giả định (4 thẻ) | `items[{text: "tình huống → kết luận"}]` `source` |
+| `bcdoiung` | Dấu hiệu ↔ tội danh | `pairs[≤5]{left,right,note}` `colL` `colR` `focus` `note` |
+| `bccot` | Cột ô đếm (mỗi ô một đơn vị) | `cols[≤3]{n,unit,label}` `legend` `source` |
+| `bcsolieu` | Một con số bước ngoặt | `num` `unit` `sub` `note` |
+| `bcthang` | **Thang khung hình phạt**: mỗi bậc (giá trị, khoản) một hàng, mỗi tội một thanh từ mức thấp nhất đến cao nhất trên trục | `axis{max,unit,ticks}` `rows[≤5]{label,sub,bars[≤3]{name,min,max,text,ct}}` `focus` `order` ("up" mặc định: bậc đầu ở dưới) `note`; `ct: true` = "hoặc chung thân" |
+| `bcdieukien` | Điều kiện cần (✓) + kết luận | `items[≤5]{head,src}` `verdict{text}` |
+| `bcnhanqua` | Tình huống → con dấu → hệ quả | `cause{tag,text}` `stamp{text,sub}` `results[3]{text,ref}` `source` |
+| `bchoi` | Trắc nghiệm: slide hỏi, rồi slide đáp án (`reveal: true`) | `title` `stem` `options[4]` `answer` `why` `whyNot[]` |
+| `bcchot` | Chốt ý, trả lời lại các câu hỏi đầu giờ | `chips[≤3]{n,text,go}` `basis` |
+| `bccamon` | Cảm ơn / hỏi đáp (không có thanh đầu) | `title` `message` `team[{name,role}]` `contact` |
+
+- Mọi kiểu `bc*` dùng chung **tờ tiêu đề** (kicker + title một dòng, cỡ chữ tự co theo độ dài) và **dải chú thích** ở đáy cho `note` / `source`.
+- Lề an toàn: nội dung trong vùng y 300–1040, x 110–1810. Tiêu đề ≤ ~54 ký tự (một dòng). Khối tự vẽ **không được máy đo tràn của `--soat` kiểm** — phải mở `soat-*.jpg` / `p-*.png` xem từng slide.
+- Màu chữ trên nền bần là kem; chữ trên giấy là mực. Chữ kem đặt trên dải giấy (`.bc-strip`) đã có luật riêng — lỗi cũ: chú thích biến mất.
+
+### Morph có chủ ý trong bộ `bc*` (và cách kiểm)
+Lỗi đã gặp: Morph chỉ là "vân tay bay qua bay về". Nguyên nhân: PowerPoint chỉ ghép **chắc chắn** các hình có tên `!!tên` trùng ở hai slide liền nhau (bộ dựng đặt tên từ `data-m`); hình không có tên `!!` mà **trùng ảnh** thì PowerPoint tự đoán ghép — vân tay là cùng một ảnh ở vị trí khác nhau nên bay. Quy tắc:
+1. Vật trang trí lặp (vân tay) đưa vào **nền** slide, không làm lớp ảnh. Dây đỏ đặt tên riêng từng slide (`s<i>-…`) rồi vào bằng hiệu ứng `wipe`, không để Morph kéo giãn.
+2. Chuyển động có nghĩa dùng `data-m`: `tieu` — tờ lớn của bìa / chương thu nhỏ thành tờ tiêu đề của slide nội dung (và ngược lại); `chuong` — thẻ số to của slide mở chương thu thành thẻ nhỏ ở góc các slide trong chương, sang chương mới lớn lên thành thẻ kế tiếp (trường `ch` của slide nội dung); `pa1…pa4`, `de` — thẻ đáp án và đề giữ nguyên chỗ khi từ slide hỏi sang slide đáp án.
+3. Phần tử là đích Morph **không** có `data-a` (hiệu ứng vào): lúc chuyển cảnh nó đang ẩn nên Morph không có gì để bay tới (bộ dựng báo `⚠`).
+4. Chữ trong lớp có `data-m` tự ghép theo thứ tự (`tên-chu1`, `tên-chu2`…): giữ cùng thứ tự các hộp chữ ở hai slide (kicker rồi tiêu đề) thì chữ trượt từ chỗ này sang chỗ kia.
+5. Kiểm khi không có PowerPoint: `python3 scripts/morph_cap.py file.pptx` in cặp Morph có chủ ý giữa mọi cặp slide kề nhau. Slide nào ghi "— (chỉ mờ dần …)" là chưa có chuyển động nào được thiết kế.
+
+### Hai chế độ chuyển động của bộ `bc*` (`meta.bc`)
+- **`"C"` (mặc định, khuyên dùng)** — **gọn**: không hiệu ứng vào nào; chỉ vài cặp Morph có nghĩa (`tieu`, `chuong`, `ranh`, `pa1`–`pa4`/`de`), 900 ms. Người dùng chê A "rất tệ" và B "rối mắt, gượng ép": nhiều thứ cùng động (rơi, nện, đóng dấu, lắc) + cặp ghép vô nghĩa. Quy tắc rút ra: hiệu ứng vào chỉ đáng giữ khi người xem thấy cần; cặp Morph phải có **nghĩa** (cùng một vật), không ghép hai vật khác nghĩa chỉ để có chuyển động.
+- **`"A"`** — hiệu ứng vào phong phú, **không Morph** (đặt cùng `meta.hinh.chuyen: "fade"`): giấy rơi (xoay nhẹ) rồi **đinh nện xuống** (lớp riêng, hiệu ứng `slam`), dây đỏ chạy nối (`wipe`), **con dấu đóng** (lớp riêng, `stamp`), thẻ lắc sau khi rơi (`teeter`). Tờ tiêu đề vào nhẹ (`rise`). Chuyển giữa slide 450 ms.
+- **`"B"`** (mặc định) — **nhân vật xuyên suốt** bằng Morph (`meta.hinh.chuyen: "morph"`, 1200 ms): ba tờ điều luật ở bìa lớn lên thành ba thẻ câu hỏi (`q1`–`q3`, kèm đinh `q1-pin`…); tờ bìa / chương ↔ tờ tiêu đề (`tieu`); thẻ số chương to ↔ thẻ nhỏ ở góc (`chuong`); thẻ "ranh giới" từ slide so sánh sang slide thang (`ranh`); thẻ đáp án giữ chỗ (`pa1`–`pa4`, `de`). Đích Morph không có hiệu ứng vào.
+- Đinh và con dấu là **lớp ảnh riêng** (không nằm trong ảnh tờ giấy) để có hiệu ứng riêng; đinh được tính vị trí theo góc nghiêng của giấy, nên dây đỏ cũng bám đúng đinh.
+- So sánh hai chế độ: dựng hai bản từ cùng `deck.json` chỉ khác `meta.bc` và `meta.hinh.chuyen`.
+
+### Dàn nhân vật xuyên suốt — `bcsan` (cách dựng deck Morph đúng từ đầu)
+Bài học (12/11/2026): dựng từng slide tĩnh rồi gắn Morph sau thì Morph chỉ nối được vài vật ngẫu nhiên và bị chê "đơn giản, xấu, rối, gượng ép". **Dựng dàn trước, bố cục sau.**
+1. Chọn một câu chuyện và 3–5 nhân vật cố định (hình sự: A người cho vay, B người vay, túi tiền, đèn "ý định chiếm đoạt", tờ giải thích). Mỗi nhân vật có một "chìa" (`ca-A`, `ca-B`, `ca-tui`, `ca-yd`, `ca-expl`) dùng chung ở mọi slide.
+2. Mỗi slide khai báo VỊ TRÍ MỚI của chính họ (`cast`, `expl`); nhân vật nào vắng thì mờ đi. Morph là "nhân vật dời chỗ" — luôn có nghĩa, không có cặp ghép vật khác nghĩa.
+3. Nghĩa nằm ở vị trí: trục A — B là thời gian (trái = trước khi nhận tiền, phải = sau); đèn "ý định" trượt qua túi tiền từ trái sang phải = khác biệt giữa Điều 174 và 175.
+4. Không hiệu ứng vào (chế độ `"C"`). Minh hoạ nhân vật vẽ bằng SVG trong code (`nguoi`, `tui`, `den`), không dùng hình dán có sẵn.
+Trường: `cast{A,B:{x,y,w,rot,cap,sub,deco:"badge",mood}, tui:{x,y,w,rot,label}, yd:{x,y,w,rot,label,on}}` · `expl{x,y,w,h, lb,q,qs,n,nt | cols[{h,t}]}` · `noi[{who:"A"|"B",x,y,w,h,t,size}]` (bong bóng thoại) · `stamps[{x,y,t,rot,size,xanh}]` · `caps[{t,x,y,w,size}]` · `bia{…}` (bìa) · `ch` · `sag` · `dur` (ms, riêng từng lần chuyển).
+- `mood` đổi nét mặt: `vui` · `gian` · `buon` · `xao` (xảo quyệt) · `nghi`. `yd.on:false` = đèn tắt (xám), mặc định sáng (đỏ, có tia).
+- `noi` kể chuyện bằng lời thoại: tên Morph `ca-noi-A/B` (bóng dời chỗ/biến mất), chữ trong bóng không ghép từng chữ. Mỗi bước chỉ MỘT thay đổi lớn (túi sang phải, đèn sáng, nhân vật chạy khỏi khung) để mắt biết nhìn đâu; `dur` 1000–1300 ms cho bước lớn, ~700 ms cho bước nhỏ.
+- `stamps` là con dấu điểm nhấn (vd. "Điều 174"): tên riêng từng slide nên xuất hiện cùng lúc chuyển cảnh, không ghép Morph.
+- Cỡ chữ tối thiểu cho slide chiếu: câu giải thích ≥ 50 px nếu một dòng, ≥ 34 px với trích luật; bong bóng ≥ 40 px. Khung giải thích một dòng quá trống thì tăng cỡ chữ, đừng thu nhỏ khung giữa các slide (khung phải dời chỗ có nghĩa).

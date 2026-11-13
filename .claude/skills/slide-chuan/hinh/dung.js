@@ -11,7 +11,9 @@
 const fs = require("fs"), path = require("path"), { pathToFileURL } = require("url");
 const { render, plain, TYPES } = require("../stage/templates");
 const { doiMau } = require("./bang_mau");
+const { kiemDeck } = require("./kiem");
 let canh = { TYPES: [], render: null, css: "", script: "" };
+const bc = require("./bang_chung");
 try { canh = require("./canh"); } catch (e) { if (e.code !== "MODULE_NOT_FOUND" || !/canh/.test(e.message)) throw e; }
 
 const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -21,6 +23,13 @@ const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").
 // Hình thêm của người dùng đặt lẻ ở hinh/emoji/<tên>.svg; trùng tên thì kho gộp thắng.
 let _khoEmoji = null;
 const khoEmoji = () => _khoEmoji || (_khoEmoji = fs.existsSync(path.join(__dirname, "emoji.json")) ? JSON.parse(fs.readFileSync(path.join(__dirname, "emoji.json"), "utf8")) : {});
+// Hình dán cho bìa / mở bài / chuyển chương / cảm ơn (các type thường vốn không có hình): `emoji`, `emoji2`, tuỳ chọn `emojiPos` {s,l,t,r}.
+const DECO = { cover: [{ s: 520, l: 1230, t: 190, r: 6 }, { s: 250, l: 1130, t: 640, r: -9 }], statement: [{ s: 300, l: 1500, t: 90, r: 7 }],
+  section: [{ s: 300, l: 1050, t: 560, r: -8 }], end: [{ s: 360, l: 1440, t: 100, r: 8 }, { s: 230, l: 1130, t: 720, r: -8 }] };
+const decoGan = (s, ctx, i, html) => { const P = DECO[s.type]; if (!P) return html;
+  const g = [s.emoji, s.emoji2].map((n, k) => { const p = (k === 0 && s.emojiPos) || P[k]; if (!n || !p || !ctx.hasEmoji(n)) return "";
+    return `<div class="emo" data-l="deco-${i}-${k}" data-pad="${Math.round(p.s * 0.1 + 14)}" data-alt="Hình minh hoạ" data-a="pop" data-at="${300 + k * 250}" style="position:absolute;left:${p.l}px;top:${p.t}px;width:${p.s}px;height:${p.s}px;rotate:${p.r}deg"><img src="${ctx.emoji(n)}" alt=""></div>`; }).join("");
+  return g ? html.replace(/<\/section>\s*$/, g + "</section>") : html; };
 function dungHtml(deck, { deckDir = process.cwd(), mau, chuyen } = {}) {
   const src = deck.slides || []; if (!src.length) throw new Error("deck.json không có slide nào.");
   const H = deck.meta?.hinh || {}; mau = mau || H.mau || deck.meta?.stage?.palette || "son"; chuyen = chuyen || H.chuyen || "morph";
@@ -35,10 +44,11 @@ function dungHtml(deck, { deckDir = process.cwd(), mau, chuyen } = {}) {
   let sauSach = -1;                                                        // vị trí slide đầu tiên sau cảnh mở sách (cuốn sách thu về góc thành nút Mục lục)
   src.forEach((s, i) => {
     const note = s.notes || parts[i] || "";
+    if (bc.TYPES.includes(s.type)) { const secs = bc.render(s, deck, ctx, { i, n, st }); secs.forEach((sec) => out.push({ ...sec, notes: note, src: i })); st.prev = new Set(); return; }
     if (canh.TYPES.includes(s.type)) { const secs = canh.render(s, deck, ctx, { i, n, st }); secs.forEach((sec, k) => out.push({ ...sec, notes: sec.notes ?? (k === 0 ? note : ""), src: i })); if (s.type === "book") sauSach = out.length; return; }
     st.prev = new Set();
     const r = render(s, deck, ctx, i, n); if (r.generic) generic.push(`#${i + 1} ${s.type}`);
-    out.push({ id: s.id || `s${i + 1}`, html: r.html, tu: true, notes: note, src: i, trans: s.trans, dur: s.dur });
+    out.push({ id: s.id || `s${i + 1}`, html: decoGan(s, ctx, i, r.html), tu: true, notes: note, src: i, trans: s.trans, dur: s.dur });
   });
   // nút Mục lục ở thanh đầu slide (khi deck có slide toc): chữ "Mục lục" + cuốn sách thu nhỏ nếu deck mở bằng cảnh book
   if (tocId) out.forEach((o, k) => { if (o.src === toc || !/class="bar"/.test(o.html)) return;
@@ -56,7 +66,7 @@ function dungHtml(deck, { deckDir = process.cwd(), mau, chuyen } = {}) {
 ${tomau(css)}
 /* bản PowerPoint: bỏ lớp hạt in phủ toàn slide (lớp ảnh và nền phải cùng chất), bỏ chế độ trình chiếu trong trình duyệt */
 .s::after { display: none !important; }
-${tomau(canh.css || "")}
+${tomau((canh.css || "") + (bc.css || ""))}
 </style></head>
 <body>
 ${tomau(body)}
@@ -71,7 +81,7 @@ hinhKhiSanSang(() => document.querySelectorAll("section.s[data-tu]").forEach((S)
 }
 
 // tự kiểm trong trang: chữ tràn khỏi slide, khối tràn đáy — báo để sửa deck.json (cắt chữ, tách slide), không âm thầm cắt
-const kiemTran = (page) => page.evaluate(() => [...document.querySelectorAll("section.s[data-tu]")].map((s) => {
+const kiemTranCu = (page) => page.evaluate(() => [...document.querySelectorAll("section.s[data-tu]")].map((s) => {
   const R = s.getBoundingClientRect(); let worst = 0, who = "";
   for (const el of s.querySelectorAll(".body, .h, .note, .an, .cl ul, .cover .mid")) {
     const r = el.getBoundingClientRect(); let inner = 0;   // nội dung bên trong: đo hộp các khối con (không dùng scrollHeight — chữ Anton cỡ lớn có vùng nét cao hơn dòng)
@@ -81,6 +91,8 @@ const kiemTran = (page) => page.evaluate(() => [...document.querySelectorAll("se
   }
   return worst > 6 ? `slide "${(s.dataset.title || s.dataset.type || "").slice(0, 50)}" (${s.dataset.type}) tràn ${Math.round(worst)} px ở .${who.split(" ")[0]} — rút chữ hoặc tách slide trong deck.json` : null;
 }).filter(Boolean));
+// lawquote: nét bút vàng chỉ phủ được cụm nhấn nằm trọn một dòng
+const kiemTran = async (page) => [...(await kiemTranCu(page)), ...(await page.evaluate(() => [...document.querySelectorAll(".paper .pq b")].filter((b) => b.getClientRects().length > 1).map((b) => `slide "${((b.closest("section.s") || {}).dataset || {}).title || "lawquote"}" (lawquote): cụm nhấn [ ] bị xuống dòng — nét bút chỉ phủ dòng đầu; rút ngắn cụm hoặc đặt ở cuối câu`)))];
 
 async function dung({ deckPath, outPath, mau, chuyen, soat = false, nhungFont = true, htmlOnly = false }) {
   deckPath = path.resolve(deckPath); const deckDir = path.dirname(deckPath), name = path.basename(deckPath, ".json");
@@ -91,6 +103,8 @@ async function dung({ deckPath, outPath, mau, chuyen, soat = false, nhungFont = 
   fs.rmSync(work, { recursive: true, force: true }); fs.mkdirSync(work, { recursive: true });
   const htmlPath = path.join(work, "deck.html"); fs.writeFileSync(htmlPath, r.html);
   console.log(`✓ ${deck.slides.length} slide trong deck.json → ${r.n} slide PowerPoint · bảng màu ${r.mau} · chuyển cảnh ${r.chuyen}`);
+  for (const m of kiemDeck(deck, { deckDir })) console.log(m);
+  for (const l of require("./kiem_tang").kiemTang(deck)) console.log(l);
   if (r.generic.length) console.log(`ℹ ${r.generic.length} slide dùng mẫu chung vì type chưa có mẫu riêng: ${r.generic.join(", ")}. Có mẫu: ${[...TYPES, ...canh.TYPES].join(", ")}.`);
   for (const p of new Set(r.missing)) console.warn(`⚠ không thấy ảnh ${p} — dựng không ảnh`);
   if (htmlOnly) { console.log(`✓ ${htmlPath}`); return { ...r, htmlPath }; }
