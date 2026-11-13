@@ -73,3 +73,18 @@ test("quizgo.whyNot: validate cảnh báo lý do đặt ở phương án đúng 
   assert.equal(w.length, 2, w.join("\n"));
   assert.match(w[0], /whyNot\[0\] là phương án ĐÚNG/); assert.match(w[1], /whyNot\[1\] 140\/130/);
 });
+
+test("cảnh / bộ hình vẫn qua lint nội dung: quá 110 tiếng, tiêu đề là câu hỏi (trừ chương / bìa / slide hỏi), cụm đệm", () => {
+  const { validate } = require("../engine/validate");
+  const dai = Array.from({ length: 60 }, (_, k) => `chữ${k} thêm`).join(" ");
+  const w = validate({ meta: {}, slides: [{ type: "cover", title: "B" },
+    { type: "cases", title: "Bảy trường hợp nghỉ ngay", items: [{ text: dai }], source: "Nhìn chung là vậy" },
+    { type: "chain", title: "Nghỉ ngang thì mất gì?" },
+    { type: "bhchuong", title: "Ai phải đóng BHXH?" }, { type: "quizgo", title: "Báo trước bao lâu?" }, { type: "book", title: "Điều 35 nói gì về báo trước", items: [{ text: dai }] },
+  ] }, { extraTypes: ["cases", "chain", "bhchuong", "quizgo", "book"] }).warnings;
+  assert.ok(w.some((x) => /Slide 2 \(cases\): \d+ tiếng/.test(x)), "cases quá 110 tiếng phải bị báo");
+  assert.ok(w.some((x) => /Slide 2 \(cases\).*nhìn chung/i.test(x)), "cụm đệm trong cảnh phải bị báo");
+  assert.ok(w.some((x) => /Slide 3 \(chain\): tiêu đề là câu hỏi/.test(x)), "chain lấy câu hỏi làm tiêu đề phải bị báo");
+  assert.ok(!w.some((x) => /Slide [45] /.test(x)), "chương bh và quizgo được hỏi ở tiêu đề");
+  assert.ok(!w.some((x) => /Slide 6 \(book\): \d+ tiếng/.test(x)), "book là nguyên văn điều luật — không đếm tiếng");
+});

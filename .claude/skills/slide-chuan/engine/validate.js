@@ -137,10 +137,12 @@ function walk(val, spec, p, err, req) {
 // ---------- kiểm tra "người nghe hiểu được gì" ----------
 // Đây là cảnh báo về CÁCH VIẾT, không phải lỗi kỹ thuật: tiêu đề phải là câu trả lời, chữ phải ít.
 const MAX_WORDS = 110;           // đếm theo TIẾNG (âm tiết, tách bằng khoảng trắng). Quá ngưỡng này người nghe không đọc kịp khi đang nghe giảng (mục tiêu ≤ 80; ~100 tiếng ≈ 50 từ tiếng Anh)
-const NO_WORDS = new Set(["covers", "url", "cutout", "cutoutAlt", "photo", "photoAlt", "photoCredit", "photoSource", "photoStyle", "photoLayout", "photoMark", "alt", "route", "side", "name", "quoteDoc", "pick", "id", "from", "to", "type", "mode", "notes", "icon", "art", "tone", "ok", "ref", "active", "chain", "dash", "focus", "value", "initials"]);
+const NO_WORDS = new Set(["covers", "url", "cutout", "cutoutAlt", "photo", "photoAlt", "photoCredit", "photoSource", "photoStyle", "photoLayout", "photoMark", "alt", "route", "side", "name", "quoteDoc", "pick", "id", "from", "to", "type", "mode", "notes", "icon", "art", "tone", "ok", "ref", "active", "chain", "dash", "focus", "value", "initials", /* không hiện trên CHÍNH slide này: nhãn ở mục lục, đích liên kết, tên hình dán */ "toc", "go", "next", "emoji", "emoji2", "emojis"]);
 const FILLER = ["có thể thấy", "nhìn chung", "như đã biết", "bên cạnh đó", "ngoài ra", "đáng chú ý là", "cần lưu ý rằng", "không thể phủ nhận", "vô cùng", "hết sức", "một cách", "trong đó có", "đối với vấn đề", "về cơ bản"];
 const LABEL_TITLE = /^(giới thiệu|tổng quan|nội dung|khái quát|khái niệm|cơ sở lý luận|thực trạng|kết luận|phân tích|bình luận|tóm tắt|một số|vấn đề)\b/i;
 const QUESTION_OK = new Set(["agenda", "section", "cover", "end", "quiz"]); // quiz: tiêu đề CHÍNH LÀ câu hỏi // end: "Câu hỏi?" là lời mời thảo luận
+// cảnh / bộ hình được hỏi ở tiêu đề: bìa, chương, kết (như cover / section / end) và slide mà câu hỏi CHÍNH LÀ nội dung (đố, chọn câu hỏi, bài tập)
+["bcbia", "bhbia", "qtbia", "bcchuong", "bhchuong", "qtchuong", "bccamon", "bhket", "quizgo", "bigq", "picks", "bhdo", "bhba", "bhhoi", "bccauhoi", "bchoi"].forEach((t) => QUESTION_OK.add(t));
 function words(v, k) {
   if (NO_WORDS.has(k)) return 0;
   if (typeof v === "string") return v.replace(/[\[\]]/g, "").split(/\s+/).filter(Boolean).length;
@@ -171,7 +173,7 @@ function clarity(sl, n, warnings) {
   if (t && !["cover", "section", "end"].includes(sl.type) && LABEL_TITLE.test(t) && t.split(/\s+/).length <= 5) W(`tiêu đề là nhãn ("${t}") — viết thành một câu kết luận`);
   // match: ô trái trùng nhau ở các hàng liền nhau được GỘP thành một ô trên slide → chỉ đếm một lần
   const wc = sl.type === "match" && Array.isArray(sl.pairs) ? words(Object.assign({}, sl, { pairs: sl.pairs.map((p, j) => (j && isObj(p) && isObj(sl.pairs[j - 1]) && p.left === sl.pairs[j - 1].left ? Object.assign({}, p, { left: "" }) : p)) })) : words(sl);
-  if (wc > MAX_WORDS && sl.type !== "redline" /* nguyên văn điều luật: không được cắt chữ */) W(`${wc} tiếng trên slide (tối đa ${MAX_WORDS}, nên ≤ 80) — giữ ý chính, chuyển phần giải thích vào notes`);
+  if (wc > MAX_WORDS && !["redline", "book", "lawquote"].includes(sl.type) /* nguyên văn điều luật: không được cắt chữ */) W(`${wc} tiếng trên slide (tối đa ${MAX_WORDS}, nên ≤ 80) — giữ ý chính, chuyển phần giải thích vào notes`);
   // ký tự phải có nghĩa: chỉ dùng bộ ký hiệu chuẩn (→ hệ quả · ngăn cách — đối lập/giải thích ≈ xấp xỉ “ ” trích nguyên văn ? chưa rõ)
   const raw = textOf(sl);
   const deco = raw.match(/[\u2600-\u27BF\u{1F300}-\u{1FAFF}★☆●○■□◆◇►▶•❖✦✧✔✘✓✗]/u);
@@ -227,7 +229,8 @@ function validate(deck, { extraTypes = [] } = {}) {
       else (sl.options || []).forEach((o, k) => { const w = sl.whyNot[k];
         if (o && o.ok && w) warnings.push(`Slide ${n} (quizgo): whyNot[${k}] là phương án ĐÚNG — lời giải ghi ở right.text`);
         else if (typeof w === "string" && w.replace(/[\[\]]/g, "").length > 130) warnings.push(`Slide ${n} (quizgo): whyNot[${k}] ${w.replace(/[\[\]]/g, "").length}/130 ký tự — slide phản hồi chỉ đủ 3 dòng dưới phương án vừa chọn`); }); }
-    if (!spec && extraTypes.includes(sl.type)) return;
+    // cảnh / bộ hình: không kiểm SCHEMA ở đây, nhưng VẪN lint nội dung (quá 110 tiếng, cụm đệm, tiêu đề là câu hỏi, ký tự trang trí) — trước 13/11/2026 bị bỏ qua cả phần này
+    if (!spec && extraTypes.includes(sl.type)) { clarity(sl, n, warnings); return; }
     if (sl.type === "refs") { E(n, "refs", "type", 'kiểu "refs" (slide tài liệu + mã QR) đã bỏ khỏi skill — nguồn ghi trong bản Word đi kèm, không ghi trên slide'); return; }
     if (!spec) { E(n, sl.type == null ? "?" : sl.type, "type", sl.type == null ? `thiếu "type" (chọn: ${Object.keys(SCHEMA).join(", ")})` : `kiểu "${sl.type}" không tồn tại (chọn: ${[...Object.keys(SCHEMA), ...extraTypes].join(", ")})`); return; }
     if (sl.mode != null && !["d", "l", "a"].includes(sl.mode)) E(n, sl.type, "mode", `"${sl.mode}" không hợp lệ (d = nền tối, l = nền sáng, a = nền màu nhấn)`);

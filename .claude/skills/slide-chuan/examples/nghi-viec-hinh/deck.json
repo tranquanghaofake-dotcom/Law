@@ -100,19 +100,19 @@
       "items": [
         { "k": "a", "emoji": "office-building", "text": "Không được bố trí đúng việc, đúng nơi, đủ điều kiện đã thoả thuận" },
         { "k": "b", "emoji": "money-with-wings", "text": "Không được trả đủ lương hoặc trả không đúng hạn" },
-        { "k": "c", "emoji": "person-gesturing-no", "text": "Bị ngược đãi, đánh đập, nhục mạ; bị cưỡng bức lao động" },
+        { "k": "c", "emoji": "person-gesturing-no", "text": "Bị ngược đãi, đánh đập, nhục mạ hoặc cưỡng bức lao động" },
         { "k": "d", "emoji": "stop-sign", "text": "Bị quấy rối tình dục tại nơi làm việc" },
         { "k": "đ", "emoji": "pregnant-woman", "text": "Lao động nữ mang thai phải nghỉ việc" },
         { "k": "e", "emoji": "older-person", "text": "Đủ tuổi nghỉ hưu" },
         { "k": "g", "emoji": "face-with-monocle", "text": "Người sử dụng lao động cung cấp thông tin không trung thực" }
       ],
       "big": { "value": "0", "label": "ngày báo trước" },
-      "source": "Rút gọn từ khoản 2 Điều 35. Điểm a, b, đ, e, g có điều kiện hoặc ngoại lệ kèm theo — đọc nguyên văn trước khi áp dụng.",
+      "source": "Rút gọn khoản 2 Điều 35 (điểm a, b, đ, e, g có điều kiện, ngoại lệ) — đọc nguyên văn.",
       "notes": "Khoản 2 Điều 35: bảy trường hợp không cần báo trước. Các thẻ rơi xuống lần lượt."
     },
     {
       "type": "chain", "id": "hau-qua", "toc": "Nghỉ ngang thì mất gì",
-      "kicker": "Hậu quả", "title": "Nghỉ ngang thì [mất gì?]",
+      "kicker": "Hậu quả", "title": "Nghỉ ngang thì [mất trợ cấp] và phải bồi thường",
       "cause": { "tag": "Tình huống", "text": "Nghỉ không báo trước và không thuộc khoản 2" },
       "emojis": ["person-walking", "door"],
       "stamp": { "text": "Trái\npháp luật", "sub": "Điều 39" },
