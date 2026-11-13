@@ -47,10 +47,12 @@
   // mọi cỡ chữ: số hiệu pháp lý ("Điều 2", "khoản 1", "điểm m" — từng tách "điểm / m") và số + đơn vị ("15 năm", "75 %", "800.000 người")
   const reLuat = /(?<![\p{L}\p{M}])(Điều|điều|Khoản|khoản|Điểm|điểm|Chương|chương|Mục|mục|Đ\.)\s+(\d+[a-zđ]?|[a-zđ])(?![\p{L}\p{M}\d])/gu;
   const reSo = /(\d[\d.,]*)\s+(%|triệu|tỷ|tỉ|nghìn|ngàn|năm|tháng|ngày|tuổi|người|đồng|đ)(?![\p{L}\p{M}])/gu;
+  // mốc thời gian: "từ 01/7/2025", "đến 2030", "tháng 9/2025", "năm 2024" — từng tách "từ / 01/7/2025" ở cuối dòng
+  const reNgay = /(?<![\p{L}\p{M}])(từ|Từ|đến|tới|ngày|trước|sau|tháng|năm|Năm)\s+(\d{1,2}\/\d{1,2}(?:\/\d{2,4})?|\d{1,2}\/\d{4}|\d{4})(?![\p{L}\p{M}\d\/])/gu;
   const giuTuGhep = () => {
     for (const S of document.querySelectorAll("section.s")) { const w = document.createTreeWalker(S, NodeFilter.SHOW_TEXT);
       for (let n; (n = w.nextNode());) { const p = n.parentElement; if (!p || !/\s/.test(n.textContent) || p.closest("svg, script, style")) continue;
-        const moi = n.textContent.normalize("NFC").replace(reGhep, (m) => m.replace(/\s+/g, "\u00a0")).replace(reLuat, "$1\u00a0$2").replace(reSo, "$1\u00a0$2");
+        const moi = n.textContent.normalize("NFC").replace(reGhep, (m) => m.replace(/\s+/g, "\u00a0")).replace(reLuat, "$1\u00a0$2").replace(reSo, "$1\u00a0$2").replace(reNgay, "$1\u00a0$2");
         if (moi !== n.textContent) n.textContent = moi; } } };
   window.hinhKhiSanSang(giuTuGhep);   // trước căn lề quang học và mọi việc đặt chỗ theo vị trí chữ
   window.hinhKhiSanSang(canLeQuangHoc);

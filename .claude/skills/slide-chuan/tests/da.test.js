@@ -150,12 +150,14 @@ test("giữ liền từ ghép (hệ thống, lao động…) bằng dấu cách 
   const exe = process.env.PW_CHROMIUM || ["/opt/pw-browsers/chromium"].find((p) => fs.existsSync(p));
   const b = await chromium.launch(exe ? { executablePath: exe } : {}), page = await (await b.newContext({ viewport: { width: 1920, height: 1080 } })).newPage();
   try {
-    const d = deck({ da: "giay" }, [{ type: "cover", title: "Bìa" }, { type: "cards", title: "Người rút một lần rời hệ thống an sinh", items: [{ name: "A", desc: "rời hệ thống an sinh" }] }]);
+    const d = deck({ da: "giay" }, [{ type: "cover", title: "Bìa" }, { type: "cards", title: "Người rút một lần rời hệ thống an sinh", items: [{ name: "A", desc: "rời hệ thống an sinh" }, { name: "B", desc: "hết hiệu lực từ 01/7/2025, áp dụng năm 2025" }] }]);
     const f = path.join(fs.mkdtempSync(path.join(os.tmpdir(), "ghep-")), "deck.html"); fs.writeFileSync(f, dungHtml(d, { deckDir: path.join(__dirname, "..") }).html);
     await page.goto("file://" + f); await page.evaluate(() => window.hinhSanSang);
     const q = await page.evaluate(() => { const s = document.querySelectorAll("section.s")[1]; return { h: s.querySelector(".h").textContent, than: [...s.querySelectorAll(".card *")].map((e) => e.textContent).find((t) => /rời hệ/.test(t)) || "" }; });
     assert.ok(q.h.includes("hệ thống") && q.h.includes("một lần") && q.h.includes("an sinh"), JSON.stringify(q.h));
     assert.ok(q.than.includes("hệ\u00a0thống"), "chữ thân cũng giữ liền từ ghép (từng tách trợ / cấp)");
+    const ngay = await page.evaluate(() => [...document.querySelectorAll("section.s")[1].querySelectorAll(".card *")].map((e) => e.textContent).find((t) => /01\/7/.test(t)) || "");
+    assert.ok(ngay.includes("từ\u00a001/7/2025") && ngay.includes("năm\u00a02025"), "giới từ / danh từ chỉ thời gian đi liền ngày tháng (từng tách “từ / 01/7/2025”): " + JSON.stringify(ngay));
   } finally { await b.close(); }
 });
 
