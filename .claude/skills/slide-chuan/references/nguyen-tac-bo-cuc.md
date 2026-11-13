@@ -32,7 +32,7 @@ Luật đi kèm:
 
 Hai quy tắc phụ rút ra khi làm slide `quote`:
 - **Chữ là hình**: khi câu chữ là nhân vật chính (trích dẫn, khẩu hiệu), phóng một ký tự của nó (dấu ngoặc kép) thành hình nền rất nhạt, BÁM vào khối chữ — không bám góc slide (sẽ đè nhãn).
-- **Chỗ ảnh bị cắt phải trùng mép slide**: ảnh tách nền mà chủ thể chạm mép ảnh (cổ tay, thân người, chân tượng) → đặt mép đó sát mép slide (lật ngang nếu cần) để chủ thể "đi vào" từ ngoài khung; đặt lơ lửng giữa slide trông như bị cụt. Engine đọc kênh alpha 4 mép ảnh để biết (`cutEdges`).
+- **Chỗ ảnh bị cắt phải trùng mép slide**: ảnh tách nền mà chủ thể chạm mép ảnh (cổ tay, thân người, chân tượng) → đặt mép đó sát mép slide (lật ngang nếu cần) để chủ thể "đi vào" từ ngoài khung; đặt lơ lửng giữa slide trông như bị cụt. Engine đọc kênh alpha 4 mép ảnh để biết (`tinhMepCat` trong `hinh/dung.js`, dùng cho `cutout` của quote / statement / section / end: cắt trái → lật ngang, dán mép phải; cắt dưới → chạm đáy).
 
 ## Không học (lỗi lặp lại ở nhiều mẫu)
 - Chữ thân 9–11 pt khi chiếu — skill giữ sàn 15–16 pt cho thân, 13 pt cho chú thích.
