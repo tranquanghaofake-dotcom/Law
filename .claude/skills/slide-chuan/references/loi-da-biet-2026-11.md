@@ -109,6 +109,8 @@ Hai phiên độc lập, cùng đề tài hình sự, **cùng ba kết luận** 
 | P6 | `find_images.py` in tiến độ, giới hạn thời gian mỗi nguồn (N10) | Treo 10+ phút | ~30 phút |
 | P7 | Thêm 6 hình dán (N11); quy tắc cờ trừu tượng (N13), bản đồ có Hoàng Sa, Trường Sa (N12); nguồn văn bản hợp nhất chinhphu.vn (N14); `quizgo` có `whyNot` (N15) | Lỗi nhỏ lặp lại | ~1 giờ tổng |
 
+**Trạng thái lộ trình (13/11/2026, nhánh `claude/lucid-goldberg-yzikct` của repo Law):** P1 xong · P2 xong · P4 xong (đổi cách: đo cấu trúc thay cho chấm điểm ảnh) · P5 xong · P6 xong · P7 xong phần tài liệu, hình dán, quy tắc cờ / bản đồ (còn `quizgo` có `whyNot`) · **P3 mới có spec**: `docs/specs/2026-11-13-slide-chuan-da-theo-mon-design.md`, chờ duyệt · N16 (collage che chú thích) còn.
+
 ### E4. Số liệu đo phiên này
 
 - Bản 1: 21 slide khai báo → 23 slide PowerPoint, 8 cảnh, 3 ảnh thật; `--soat` cuối 0 cảnh báo; nhìn mờ: không đoán được đề tài; Morph có chủ ý ngoài thanh đầu: 1 cặp.
