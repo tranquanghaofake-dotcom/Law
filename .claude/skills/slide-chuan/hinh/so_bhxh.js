@@ -552,7 +552,7 @@ const css = `
 .bh-sub { font: 400 30px/1.4 var(--fb); color: #${P.ink2}; }
 .bh-au { font: 800 32px/1.2 var(--fb); color: #${P.navy}; } .bh-aus { font: 400 24px/1.3 var(--fb); color: #${P.mute}; } .bh-ks { font: 800 28px/1.3 var(--fb); color: #${P.blue}; }
 .bh-cr { font: 400 20px/1.2 var(--fb); color: #${P.mute}; }
-.bh-src { font: 400 22px/1.35 var(--fb); color: #${P.mute}; }
+.bh-src { font: 400 22px/1.35 var(--fb); color: #${P.ink2}; }   /* nguồn 22 px nét mảnh: mute chỉ đo được 4,38 : 1 trên nền thật */
 .bh-q { font: 400 112px/1.08 'Anton', sans-serif; text-transform: uppercase; color: #072a6b; } .bh-qb { font: 400 128px/1.05 'Anton', sans-serif; text-transform: uppercase; color: #${P.blue}; }
 .bh-ct { font: 800 34px/1.2 var(--fb); color: #${P.navy}; } .bh-cd { font: 400 26px/1.3 var(--fb); color: #${P.ink2}; }
 .bh-yr { font: 400 50px/1 'Anton', sans-serif; color: #${P.navy}; } .bh-bv { font: 400 80px/1 'Anton', sans-serif; } .bh-leg { font: 400 24px/1.3 var(--fb); color: #${P.mute}; }
