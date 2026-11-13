@@ -234,8 +234,10 @@ S.bhnhom = (s, deck, b, ctx) => { const VD = ["cong-nhan", "dia-cau", "van-phong
 // 9 · NHÓM MỚI — bên trái: chồng năm cuốn sổ mới, dấu vàng "MỚI", số người nhóm mới đã tham gia; bên phải: năm hàng gọn
 const VAT_NHOM = { l: "dong-ho", m: "cua-hang", n: "cap", e: "mu-quan", k: "nha" };
 S.bhmorong = (s) => { const H = tieuDe(s), it = (s.items || []).slice(0, 5), top = Math.max(290, H.day + 40), RH = 110, G = Math.min(22, (930 - top - 5 * RH) / 4);
-  return `${H.html}${chongSo("bh-mso", 5, { x: 120, y: top, w: 420 }, { sau: 1.35, ...vao(0) })}
-    ${lop("bh-mdau", { x: 350, y: top + 70, w: 250, h: 110, r: -10 }, V.dau(250, 110, "e8930c"), { shadow: false, alt: "Dấu MỚI", z: 8, ...vao(1, "pop") })}${chu("bh-mdt", 360, top + 92, 230, "Mới", { align: "center", z: 31, ...vao(1, "pop") })}
+  // N cuốn sổ XOÈ (mỗi cuốn = một nhóm mới, cùng thứ tự với các hàng) — không xếp CHỒNG: chồng sổ trong bộ này luôn là SỐ NGƯỜI (1 cuốn = 1 triệu)
+  const nS = it.length || 5, soXoe = Array.from({ length: nS }, (_, k) => { const d = k - (nS - 1) / 2; return hero(`bh-mso${k}`, "so", { x: 120 + k * (440 / Math.max(1, nS - 1)) - 20, y: top + 20 + Math.abs(d) * 16, w: 150, r: d * 9 }, { sau: 1.35, alt: `Sổ BHXH của nhóm mới ${k + 1}`, ...vao(0) }); }).join("");
+  return `${H.html}${soXoe}
+    ${lop("bh-mdau", { x: 260, y: top + 150, w: 250, h: 110, r: -10 }, V.dau(250, 110, "e8930c"), { shadow: false, alt: "Dấu MỚI", z: 8, ...vao(1, "pop") })}${chu("bh-mdt", 270, top + 172, 230, "Mới", { align: "center", z: 31, ...vao(1, "pop") })}
     ${s.big ? `${soChay("bh-bigv", 110, top + 400, 680, 140, s.big.value, { at: 900 })}${chu("bh-bigl", 110, top + 530, 640, esc(s.big.label || ""), vao(2))}` : ""}
     ${it.map((x, k) => { const Y = top + k * (RH + G), o = { ...vao(1 + k), sau: 0 };
       return `${the(`bh-m${k}`, { x: 830, y: Y, w: 980, h: RH }, { trai: P.blue, traiW: 10, ...o })}${vong(`bh-mi${k}`, 862, Y + 13, 84, VAT_NHOM[x.k] || "nguoi", o)}${chu("bh-mt", 976, Y + (RH - 40) / 2, 800, esc(x.text), o)}`; }).join("")}
@@ -303,6 +305,9 @@ S.bhcot2 = (s, deck, b, ctx) => { const H = tieuDe(s, { w: 1460, px: 60 }), hai 
   const cw = (X1 - X0) / n, bw = cw * 0.58, xs = (k) => X0 + cw * (k + 0.5), ys = (v) => Y0 - (Y0 - Y1) * v / hi;
   // isotype: đơn vị là người → cột = chồng sổ; chọn số người mỗi cuốn để cột cao nhất có 10–22 cuốn
   const iso = /người/.test(s.unit || "") && s.iso !== false, vmax = Math.max(...it.map((x) => x.value)), mot = [0.1, 0.2, 0.25, 0.5, 1, 2, 5, 10].find((u) => vmax / u <= 22) || 10, day = mot * (Y0 - Y1) / hi;
+  // biểu đồ chồng sổ khác trong deck dùng thang lớn hơn → nói rõ thang đã phóng to (cột cao ngang nhau không có nghĩa số người ngang nhau)
+  const thangKhac = (m) => { const ds = deck.slides.map((x, j) => ({ x, j })).filter(({ x }) => x !== s && x.type === "bhcot2" && /người/.test(x.unit || "") && x.iso !== false);
+    for (const { x, j } of ds) { const vm = Math.max(...(x.items || []).map((q) => q.value)), m2 = [0.1, 0.2, 0.25, 0.5, 1, 2, 5, 10].find((u) => vm / u <= 22) || 10; if (m2 > m) return ` (thang phóng to ${so(m2 / m)} lần so với slide ${j + 1})`; } return ""; };
   const soDon = (u) => (u >= 1 ? `${so(u)} ${String(s.unit).replace(/^triệu\s*/, "triệu ")}` : `${so(Math.round(u * 1000)).replace(/\B(?=(\d{3})+(?!\d))/g, ".")}.000 người`);
   const mau = (x, k) => (x.focus ? "vang" : x.tone === "bad" || (k && x.value < it[k - 1].value) ? "do" : "xanh");
   const sau = (ms) => (iso ? { a: "fade", at: ms + 500, dur: 400 } : b === 2 ? { a: "fade", at: ms, dur: 400 } : hai ? {} : vao(Math.round(ms / 300), "fade"));
@@ -326,7 +331,7 @@ S.bhcot2 = (s, deck, b, ctx) => { const H = tieuDe(s, { w: 1460, px: 60 }), hai 
   const pa = s.insightPhoto || null, ua = pa && ctx && ctx.img(pa), gi = uid("di");
   const dai = ua && xong ? `${lop("bh-insanh", { x: 1380, y: top + 450, w: 430, h: 180 }, `<div style="position:relative;width:100%;height:100%;border-radius:0 0 22px 22px;overflow:hidden"><img src="${ua}" style="width:100%;height:100%;object-fit:cover;display:block"><svg viewBox="0 0 10 10" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%"><defs><linearGradient id="${gi}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a3a9a"/><stop offset=".55" stop-color="#0a3a9a" stop-opacity=".25"/><stop offset="1" stop-color="#0a3a9a" stop-opacity="0"/></linearGradient></defs><rect width="10" height="10" fill="url(#${gi})"/></svg></div>`, { shadow: false, alt: "Dải ảnh", z: 5, pad: 0, ...sau(1700) })}` : "";
   const the2 = s.insight && xong ? `${the("bh-ins", { x: 1380, y: top, w: 430, h: ua ? 630 : 480 }, { nen: "dam", ...sau(1700) })}${dai}${soChay("bh-iv", 1414, top + 44, 380, 130, ins.value || "", { size: String(ins.value || "").length > 5 ? 96 : 120, color: "ffffff", at: (sau(1700).at || 1700) + 200 })}${chu("bh-iu", 1414, top + 200, 370, f(ins.unit || ""), { color: "ffffff", ...sau(1700) })}${chu("bh-it", 1414, top + 300, 370, f(ins.text || ""), { color: "dce9ff", ...sau(1700) })}` : "";
-  return `${H.html}${the("bh-khung2", { x: 110, y: top, w: CR - 110, h: 630 }, hai ? {} : vao(0, "fade"))}${chu("bh-cu", 150, top + 30, 1100, esc(iso ? `Đơn vị: ${s.unit} · mỗi cuốn sổ = ${soDon(mot)}` : s.unit ? `Đơn vị: ${s.unit}` : ""))}
+  return `${H.html}${the("bh-khung2", { x: 110, y: top, w: CR - 110, h: 630 }, hai ? {} : vao(0, "fade"))}${chu("bh-cu", 150, top + 30, 1100, esc(iso ? `Đơn vị: ${s.unit} · mỗi cuốn sổ = ${soDon(mot)}${thangKhac(mot)}` : s.unit ? `Đơn vị: ${s.unit}` : ""))}
     ${lop("bh-truc", { x: X0 - 20, y: Y0, w: X1 - X0 + 40, h: 4 }, tron(P.ink2), { shadow: false, z: 8, alt: "Trục" })}${bands}${cot}${nhanC}${so1}${why}${the2}${nguon(s.note)}`; };
 
 // 16 · ĐÃ PHỦ BAO NHIÊU — 50 người 3D (1 người = 2 %): màu = có BHXH, xám = chưa; hai thẻ phần trăm

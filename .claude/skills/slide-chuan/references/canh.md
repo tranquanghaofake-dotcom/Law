@@ -313,6 +313,7 @@ Hệ hình hiện tại:
 | Nền ảnh mờ | ảnh của phần đang nói | |
 | Số phần in mờ | nhận ra slide mở phần từ xa | chỉ slide mở phần |
 | Dải đánh dấu | trang được đánh dấu trong sổ / sách → mọc từ mép trang | dải có nhãn ghi đúng số điều |
+| Chồng sổ / sổ xoè | **chồng** sổ = SỐ NGƯỜI (1 cuốn = N người, ghi ở dòng đơn vị); sổ **xoè** = NHÓM (mỗi cuốn một nhóm, cùng thứ tự các hàng) | không dùng chồng sổ để đếm nhóm; biểu đồ khác thang thì dòng đơn vị ghi "thang phóng to k lần so với slide n" |
 | Ô năm trong sổ mở | 1 ô = 1 năm đóng; số ô = số năm nêu ở tình huống | |
 | Thẻ trích Điều 64 Luật 2024 | căn cứ của mốc mới | chỉ hiện ở bước 2 (bước 1 là luật cũ: 20 ô xám) |
 | Phong bì lương hưu | mốc được hưởng; ở Ghi nhớ cùng tên Morph với slide kết → phong bì tới tay người nhận lương hưu trong ảnh; ở slide kết quả trắc nghiệm mang **nhãn dán đáp án** ở góc ("40%" khi đúng, "?" khi sai) — đọc liền với nhãn in "LƯƠNG HƯU" | nhãn dán không che nhãn in |
