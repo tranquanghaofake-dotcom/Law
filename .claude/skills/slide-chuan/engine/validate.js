@@ -83,7 +83,7 @@ const SCHEMA = {
 const KINDS = ["lecture", "case", "report"]; // loại bài (meta.kind) — quyết định khung slide, hình mặc định; ghi ở bước 0 (prep.json)
 // id, toc, trans, dur: trường của tầng hình ảnh (hinh/dung.js) — cho phép để cùng một deck.json dựng được ở cả hai tầng
 const HINH_ONLY = { book: "cover", bigq: "statement", picks: "agenda", lawquote: "quote", tiles: "chart", strip: "bignum", cases: "cards", chain: "tree", quizgo: "quiz", recap: "closing", toc: "agenda" };
-const COMMON = ["type", "id", "toc", "trans", "dur", "mode", "notes", "covers", "transition", "build", "motion", "takeaway", "pin", "activitySec", "basis", "scopeOk"]; // basis: [số slide] — hạn chế / nhận định dựa trên slide số liệu nào ở phần thực trạng // scopeOk: true — slide được phép nhắc nội dung ngoài phạm vi (meta.scopeOut), vd. bảng tổng đầu tiên; // activitySec: số giây lớp tự làm (exercise / quiz) — cộng vào thời lượng ước tính; // pin: câu / số chính trên tờ giấy ghim (chuỗi hoặc { text, by }) // takeaway: câu chốt của slide → dải "Ghi nhớ" ở đáy, cùng vị trí mọi slide // transition: fade | push | morph | none — riêng slide này // covers: các đề mục của tài liệu mà slide này trình bày (đối chiếu với meta.outline)
+const COMMON = ["type", "id", "emoji", "emoji2", "emojiPos", "toc", "trans", "dur", "mode", "notes", "covers", "transition", "build", "motion", "takeaway", "pin", "activitySec", "basis", "scopeOk"]; // basis: [số slide] — hạn chế / nhận định dựa trên slide số liệu nào ở phần thực trạng // scopeOk: true — slide được phép nhắc nội dung ngoài phạm vi (meta.scopeOut), vd. bảng tổng đầu tiên; // activitySec: số giây lớp tự làm (exercise / quiz) — cộng vào thời lượng ước tính; // pin: câu / số chính trên tờ giấy ghim (chuỗi hoặc { text, by }) // takeaway: câu chốt của slide → dải "Ghi nhớ" ở đáy, cùng vị trí mọi slide // transition: fade | push | morph | none — riêng slide này // covers: các đề mục của tài liệu mà slide này trình bày (đối chiếu với meta.outline)
 // Số mục tối đa engine hiển thị; vượt thì bị cắt im lặng.
 const CAPS = {
   quiz: { options: 4, whyNot: 4 }, timeline: { items: 6 },
@@ -188,7 +188,8 @@ function clarity(sl, n, warnings) {
   scan(sl, "");
 }
 
-function validate(deck, themes) {
+// extraTypes: kiểu của bộ cảnh / bộ hình (hinh/canh.js, bang_chung.js, hoi_nghi.js) — có kiểm riêng ở module đó, ở đây chỉ bỏ qua phần SCHEMA
+function validate(deck, themes, { extraTypes = [] } = {}) {
   const hints = []; // gợi ý (ℹ) — in ra nhưng không tính vào --strict
   const errors = [], warnings = [];
   const E = (slide, type, path, msg) => errors.push(slide ? `Slide ${slide} (${type}): ${path} — ${msg}` : `${path} — ${msg}`);
@@ -218,6 +219,7 @@ function validate(deck, themes) {
     const n = i + 1;
     if (!isObj(sl)) { E(n, "?", "slide", "phải là đối tượng { type: ..., ... }"); return; }
     const spec = SCHEMA[sl.type];
+    if (!spec && extraTypes.includes(sl.type)) return;
     if (sl.type === "refs") { E(n, "refs", "type", 'kiểu "refs" (slide tài liệu + mã QR) đã bỏ khỏi skill — nguồn ghi trong bản Word đi kèm, không ghi trên slide'); return; }
     if (!spec) { E(n, sl.type == null ? "?" : sl.type, "type", sl.type == null ? `thiếu "type" (chọn: ${Object.keys(SCHEMA).join(", ")})` : (HINH_ONLY[sl.type] ? `kiểu "${sl.type}" chỉ có ở tầng hình ảnh (node hinh/dung.js), engine/build.js không dựng được — đổi sang "${HINH_ONLY[sl.type]}" (gần nghĩa nhất) hoặc dựng bằng hinh/dung.js` : `kiểu "${sl.type}" không tồn tại (chọn: ${Object.keys(SCHEMA).join(", ")})`)); return; }
     if (sl.mode != null && !["d", "l", "a"].includes(sl.mode)) E(n, sl.type, "mode", `"${sl.mode}" không hợp lệ (d = nền tối, l = nền sáng, a = nền màu nhấn)`);
@@ -479,7 +481,7 @@ function validate(deck, themes) {
   const parts = [...new Set([...deck.slides.map(partOf), ...deck.slides.map(sl => sl && sl.type === "section" && /^\d+$/.test(String(sl.num || "").trim()) ? +sl.num : null)].filter(x => x != null))]; // phần = kicker "Phần N" hoặc slide section có num
   // chỉ "Phần"/"Chương" cần slide mở đầu; "Câu"/"Mục" là chuỗi câu hỏi đã nêu ở mục lục
   const big = new Set(deck.slides.map(sl => String((sl && sl.kicker) || "").match(/^(Phần|Chương)\s*(\d+)/i)).filter(Boolean).map(m => +m[2]));
-  for (const p of parts) if (big.has(p) && !deck.slides.some(sl => sl && ((sl.type === "photo" && partOf(sl) === p) || (sl.type === "section" && +sl.num === p))))
+  for (const p of parts) if (big.has(p) && !deck.slides.some(sl => sl && ((sl.type === "photo" && partOf(sl) === p) || (["section", "bcchuong", "qtchuong"].includes(sl.type) && +(sl.num ?? 1) === p))))
     warnings.push(`Phần ${p} không có slide mở đầu (section, hoặc photo có kicker "Phần ${p} · …") — người xem không nhận ra đã sang phần mới`);
   const ag = deck.slides.find(sl => sl && sl.type === "agenda");
   if (ag && parts.length > 1 && Array.isArray(ag.items) && ag.items.length !== parts.length)
@@ -609,7 +611,7 @@ function validate(deck, themes) {
     const hit = outs.find(o => new RegExp(`(?<![\\p{L}\\p{N}])${o.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?![\\p{L}\\p{N}])`, "u").test(low));
     if (hit) warnings.push(`Slide ${i + 1} (${sl.type}): nhắc "${hit}" — ngoài phạm vi bài (meta.scopeOut); bỏ đi, hoặc ghi "scopeOk": true nếu slide này cố ý nêu tổng (vd. bảng đầu tiên)`); });
   // (5) HẠN CHẾ phải dựa trên số liệu đã trình bày ở phần thực trạng: "basis": [số slide]
-  deck.slides.forEach((sl, i) => { if (!isObj(sl) || ["section", "cover", "agenda", "end", "closing"].includes(sl.type)) return; const n = i + 1;
+  deck.slides.forEach((sl, i) => { if (!isObj(sl) || !SCHEMA[sl.type] /* recap: basis là chuỗi căn cứ */ || ["section", "cover", "agenda", "end", "closing"].includes(sl.type)) return; const n = i + 1;
     if (sl.basis != null && !(Array.isArray(sl.basis) && sl.basis.every(Number.isInteger))) { E(n, sl.type, "basis", "phải là danh sách số slide, vd [7, 9]"); return; }
     const lim = /hạn chế|tồn tại|bất cập|yếu kém/i.test(head(sl));
     if (lim && !(sl.basis || []).length) RW(`Slide ${n} (${sl.type}): slide hạn chế không có "basis" — mỗi hạn chế phải dựa trên số liệu đã trình bày ở phần thực trạng; ghi "basis": [số slide chứa số liệu đó]`);
