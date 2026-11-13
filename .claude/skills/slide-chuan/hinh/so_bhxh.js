@@ -16,8 +16,8 @@ const { wrap, kit } = require("../stage/templates");
 const { handMarks } = require("../engine/codeart");
 const { esc, f } = kit;
 
-const TYPES = ["bhbia", "bhdo", "bhtang", "bhnhom", "bhmorong", "bhrutngan", "bhquy", "bhmat", "bhmo", "bhcot", "bhket"];
-const HAI_BUOC = new Set(["bhmorong", "bhrutngan", "bhquy", "bhmat"]);   // một slide deck.json → 2 slide PowerPoint (bấm sang bước 2): thay đổi nằm trong chính slide
+const TYPES = ["bhbia", "bhdo", "bhtang", "bhba", "bhchuong", "bhtrich", "bhvaitro", "bhnhom", "bhmorong", "bhrutngan", "bhduong", "bhphieu5", "bhcongthuc", "bhcot2", "bhche", "bhquy", "bhrut", "bhmat", "bhdat", "bhhanche", "bhkiennghi", "bhhoi", "bhtraloi", "bhghinho", "bhmo", "bhcot", "bhket"];
+const HAI_BUOC = new Set(["bhmorong", "bhrutngan", "bhquy", "bhmat", "bhcongthuc", "bhcot2", "bhrut", "bhdat"]);   // một slide deck.json → 2 slide PowerPoint (bấm sang bước 2): thay đổi nằm trong chính slide
 const V = require("./bhxh_vat");
 let U = 0; const uid = (p) => `${p}${++U}`;
 const tx = (s) => f(s).replace(/\n/g, "<br>");
@@ -32,9 +32,9 @@ const cam = (c = {}) => ({ x: c.x ?? SW / 2, y: c.y ?? SH / 2, z: c.z ?? 1 });
 const chieu = (c, o) => ({ x: (o.x - c.x) * c.z + SW / 2, y: (o.y - c.y) * c.z + SH / 2, w: o.w * c.z, h: o.h * c.z, r: o.r || 0 });
 // lớp ảnh: name (data-l), m (tên Morph), rect màn hình, svg bên trong; bóng đổ hai lớp theo cỡ (đèn ở góc trên trái)
 const lop = (name, R, inner, o = {}) => { const k = Math.max(0.6, (o.k ?? R.w / 600)), sh = o.shadow === false ? "" : `filter:drop-shadow(${(2 * k).toFixed(1)}px ${(3 * k).toFixed(1)}px ${(2.5 * k).toFixed(1)}px rgba(4,8,14,.5)) drop-shadow(${(16 * k).toFixed(1)}px ${(26 * k).toFixed(1)}px ${(26 * k).toFixed(1)}px rgba(4,8,14,.42));`;
-  return `<div class="bh-l" data-l="${name}"${o.m ? ` data-m="${o.m}" data-mt="0"` : ""} data-pad="${Math.round(o.pad ?? 40 * k + 16)}" data-alt="${esc(o.alt || "Hình minh hoạ")}" style="left:${R.x.toFixed(1)}px;top:${R.y.toFixed(1)}px;width:${R.w.toFixed(1)}px;height:${R.h.toFixed(1)}px;${R.r ? `rotate:${R.r}deg;` : ""}${o.z ? `z-index:${o.z};` : ""}${sh}">${inner}</div>`; };
+  return `<div class="bh-l" data-l="${name}"${o.m ? ` data-m="${o.m}" data-mt="0"` : ""}${o.go ? ` data-go="${o.go}"` : ""} data-pad="${Math.round(o.pad ?? 40 * k + 16)}" data-alt="${esc(o.alt || "Hình minh hoạ")}" style="left:${R.x.toFixed(1)}px;top:${R.y.toFixed(1)}px;width:${R.w.toFixed(1)}px;height:${R.h.toFixed(1)}px;${R.r ? `rotate:${R.r}deg;` : ""}${o.z ? `z-index:${o.z};` : ""}${sh}">${inner}</div>`; };
 // hộp chữ sửa được, toạ độ màn hình
-const chu = (cls, x, y, w, html, o = {}) => `<div class="${cls}" data-t${o.m ? ` data-m="${o.m}"` : ""} style="left:${Math.round(x)}px;top:${Math.round(y)}px;${w ? `width:${Math.round(w)}px;` : ""}${o.size ? `font-size:${o.size}px;` : ""}${o.color ? `color:#${o.color};` : ""}${o.align ? `text-align:${o.align};` : ""}z-index:${o.z ?? 30};${o.r ? `rotate:${o.r}deg;` : ""}">${html}</div>`;
+const chu = (cls, x, y, w, html, o = {}) => `<div class="${cls}" data-t${o.m ? ` data-m="${o.m}"` : ""}${o.go ? ` data-go="${o.go}"` : ""} style="left:${Math.round(x)}px;top:${Math.round(y)}px;${w ? `width:${Math.round(w)}px;` : ""}${o.size ? `font-size:${o.size}px;` : ""}${o.color ? `color:#${o.color};` : ""}${o.align ? `text-align:${o.align};` : ""}z-index:${o.z ?? 30};${o.r ? `rotate:${o.r}deg;` : ""}">${html}</div>`;
 
 // ---------- VẬT TRÊN BÀN (SVG) ----------
 const giayNen = (id, w, h, tone = M.paper) => `<defs><filter id="${id}" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="11"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .25 0 0 0 .16 0"/></filter>
@@ -201,8 +201,9 @@ const bia2 = () => "";   // slide nội dung: không bút, không xu (chỉ bìa
 const tieuDe = (s, o = {}) => `${chu("bh-k", 110, 92, 1300, esc(s.kicker || ""))}${chu("bh-h2", 110, 132, o.w || 1400, tx(s.title || ""), { size: s.titleSize || o.size || 62 })}${s.sub ? chu("bh-sub2", 110, o.subY ?? 292, o.subW || 1100, tx(s.sub)) : ""}`;
 const nguon = (t) => (t ? chu("bh-src", 110, 952, 1500, esc(t)) : "");
 // chú giải đơn vị: thẻ kraft nhỏ có hình mẫu + chữ (đứng yên giữa các slide dùng chung đơn vị → Morph giữ nguyên)
-const chuGiai = (ten, x, y, hinh, chuT, w = 470) => `${lop(ten, { x, y, w, h: 84, r: -1.5 }, `<svg viewBox="0 0 ${w} 84" width="100%" height="100%" preserveAspectRatio="none"><rect width="${w}" height="84" rx="6" fill="#d9bf8a"/><rect x="5" y="5" width="${w - 10}" height="74" rx="4" fill="none" stroke="#8a6a3c" stroke-width="1.5" stroke-dasharray="5 4"/></svg>`, { z: 11, k: 0.5, alt: "Chú giải" })}
-  ${lop(`${ten}-h`, { x: x + 14, y: y + 10, w: 46, h: 64 }, hinh, { z: 12, k: 0.3, shadow: false, alt: "Mẫu" })}${chu("bh-cg", x + 74, y + 24, w - 90, esc(chuT), { r: -1.5 })}`;
+const chuGiai = (ten, x, y, hinh, chuT, w = 470) => { const H = 53 + Math.max(1, Math.ceil(String(chuT).length * 14 / (w - 90))) * 31;
+  return `${lop(ten, { x, y, w, h: H, r: -1.5 }, `<svg viewBox="0 0 ${w} ${H}" width="100%" height="100%" preserveAspectRatio="none"><rect width="${w}" height="${H}" rx="6" fill="#d9bf8a"/><rect x="5" y="5" width="${w - 10}" height="${H - 10}" rx="4" fill="none" stroke="#8a6a3c" stroke-width="1.5" stroke-dasharray="5 4"/></svg>`, { z: 11, k: 0.5, alt: "Chú giải" })}
+  ${lop(`${ten}-h`, { x: x + 14, y: y + 10, w: 46, h: 64 }, hinh, { z: 12, k: 0.3, shadow: false, alt: "Mẫu" })}${chu("bh-cg", x + 74, y + 24, w - 90, esc(chuT), { r: -1.5 })}`; };
 const luoi = (n, cot, x0, y0, dx, dy) => Array.from({ length: n }, (_, k) => ({ x: x0 + (k % cot) * dx, y: y0 + Math.floor(k / cot) * dy }));
 const SN = { w: 76, h: 106, dx: 88, dy: 116 };   // sổ nhỏ trong hàng đếm
 const soNhoLop = (k, P, o = {}) => lop(`bh-ms${k}`, { x: P.x, y: P.y, w: SN.w, h: SN.h, r: o.r ?? ((k * 37) % 7) - 3 }, V.soNho(), { m: `bh-ms${k}`, z: 8, k: 0.4, alt: "Sổ BHXH (1 cuốn = 1 triệu người)" });
@@ -225,7 +226,7 @@ S.bhtang = (s, deck) => { const st = s.stats || [], a = st[0] || {}, b = st[1] |
     ${chuGiai("bh-cg-so", CG_SO.x, CG_SO.y, V.soNho(), s.legend || "1 cuốn sổ = 1 triệu người đóng", 560)}
     ${d.value ? `${lop("bh-dau22", { x: xNam(d.value) - 250, y: TY + 70, w: 540, h: 112, r: -3 }, dauMuc(540, 112, M.red, { seed: 21 }), { shadow: false, z: 11, alt: "Dấu năm đi lùi" })}${chu("bh-d22", xNam(d.value) - 230, TY + 84, 500, `${esc(d.value)} <small>${esc(d.desc || "")}</small>`, { align: "center", color: M.red, r: -3 })}` : ""}
     ${chu("bh-k", 110, 92, 1300, esc(s.kicker || ""))}${chu("bh-h2", 110, 132, 1150, tx(s.title || ""), { size: 62 })}${s.sub ? chu("bh-sub2", 110, 292, 1000, tx(s.sub)) : ""}
-    ${chu("bh-sv", 270, 560, 360, `${esc(a.value)}<small>${esc(a.label || "")}</small>`, { color: "d8c08a", align: "center" })}${chu("bh-sv", 1290, 168, 460, `${esc(b.value)}<small>${esc(b.label || "")}</small>`, { color: M.gold })}`; };
+    ${chu("bh-sv", 270, 560, 360, esc(a.value), { color: "d8c08a", align: "center" })}${chu("bh-svl", 270, 662, 360, esc(a.label || ""), { align: "center" })}${chu("bh-sv", 1290, 168, 460, esc(b.value), { color: M.gold })}${chu("bh-svl", 1290, 270, 460, esc(b.label || ""))}`; };
 
 // BA NHÓM — ba phiếu, người cắt giấy đứng vắt mép đáy phiếu (chị Hoa là nhóm 1)
 const VAI = { vn: { ...HOA }, nn: { kieuToc: "hoi", toc: "8a5a2b", ao: "e8eef3", quan: "39465c", vat: "ho-chieu" }, sd: { kieuToc: "ngan", ao: "23324f", quan: "23324f", vat: "cap" },
@@ -279,18 +280,166 @@ S.bhquy = (s, deck, b) => { const rows = s.rows || [], k1 = rows.findIndex((x) =
 // MẤT (hai bước) — sổ của chị Hoa có các khối năm đã đóng; bước 2: khối năm rơi khỏi trang, dấu "Mất thời gian" đóng xuống, chị Hoa buồn
 S.bhmat = (s, deck, b) => { const ca = s.cause || {}, rs = s.results || [], NK = s.years || 6, SX = 740, SY = 300;
   const trang = `${lop("bh-so-hoa", { x: SX, y: SY, w: 500, h: 640, r: -1.5 }, soTrang(), { m: "bh-so-hoa", z: 6, k: 1, alt: "Sổ BHXH của chị Hoa" })}${chu("bh-sh", SX + 44, SY + 64, 420, esc(s.book || "Sổ BHXH · chị Hoa"), { r: -1.5 })}`;
-  const khoi = Array.from({ length: NK }, (_, k) => { const P = b === 2 ? { x: 990 + k * 64, y: 966 + (k % 3) * 18, r: ((k * 41) % 50) - 25 } : { x: SX + 52 + (k % 3) * 136, y: SY + 190 + Math.floor(k / 3) * 140, r: 0 };
-    return lop(`bh-khoa${k + 1}`, { x: P.x, y: P.y, w: 116, h: 116, r: P.r }, V.khoiNam(k + 1, { mo: b === 2 }), { m: `bh-khoa${k + 1}`, z: 8, k: 0.45, alt: "Năm đã đóng" }); }).join("");
+  const khoi = Array.from({ length: NK }, (_, k) => { const P = b === 2 ? { x: 1000 + k * 62, y: 930 + (k % 3) * 14, r: ((k * 41) % 50) - 25, s: 100 } : { x: SX + 52 + (k % 3) * 136, y: SY + 190 + Math.floor(k / 3) * 140, r: 0 };
+    return lop(`bh-khoa${k + 1}`, { x: P.x, y: P.y, w: P.s || 116, h: P.s || 116, r: P.r }, V.khoiNam(k + 1, { mo: b === 2 }), { m: `bh-khoa${k + 1}`, z: 8, k: 0.45, alt: "Năm đã đóng" }); }).join("");
   const dau = b === 2 ? `${lop("bh-dau-mat", { x: SX + 60, y: SY + 236, w: 380, h: 220, r: -9 }, dauMuc(380, 220, M.red, { seed: 41 }), { shadow: false, z: 10, alt: "Dấu mất thời gian" })}${chu("bh-dm", SX + 80, SY + 262, 340, tx(s.stamp?.text || "Mất thời gian"), { align: "center", color: M.red, r: -9 })}${chu("bh-dms", SX + 80, SY + 398, 340, esc(s.stamp?.sub || ""), { align: "center", color: M.red, r: -9 })}` : "";
   const the = `${lop("bh-cause", { x: 110, y: 300, w: 560, h: 320, r: -1 }, V.phieu("8a6a3c", { dau: 12 }), { z: 5, alt: "Tình huống" })}${chu("bh-ct", 150, 338, 480, esc(ca.tag || "Tình huống"))}${chu("bh-cx", 150, 386, 490, tx(ca.text || ""))}`;
   const kq = b === 2 ? rs.slice(0, 2).map((x, k) => `${lop(`bh-kq${k}`, { x: 1300, y: 300 + k * 320, w: 520, h: 290, r: k ? 0.8 : -0.8 }, V.phieu(M.red, { dau: 10 }), { z: 5, alt: "Hệ quả" })}${chu("bh-kt", 1340, 336 + k * 320, 450, tx(x.text || ""))}${chu("bh-kr", 1340, 516 + k * 320, 450, esc(x.ref || ""))}`).join("") : "";
   return `${bia2()}${tieuDe(s, { w: 1500 })}${chuGiai("bh-cg-khoi", SX, 226, V.khoiNam(1), s.legend || "1 khối = 1 năm đã đóng", 500)}${the}${hoa({ x: 300, y: 640, w: 150 }, b === 2 ? { nhan: "buon" } : {})}${trang}${khoi}${dau}${kq}${s.source ? chu("bh-src", 110, 946, 820, esc(s.source)) : ""}`; };
 
+// ================= 16 KIỂU CÒN LẠI CỦA BÀI (kịch bản: docs/specs/2026-11-13-bhxh-kich-ban-morph.md) =================
+const TAP = [{ mau: "c9a36a", bieu: "sach" }, { mau: "9fb7c9", bieu: "" }, { mau: "c98a6a", bieu: "dau" }];
+const tapLop = (k, R, o = {}) => lop(`bh-tap${k + 1}`, { x: R.x, y: R.y, w: R.w, h: R.w * 400 / 440, r: R.r || 0 }, V.tapHoSo(String(k + 1), TAP[k].mau, o.bieu ?? TAP[k].bieu), { m: `bh-tap${k + 1}`, z: 6, k: R.w / 500, go: o.go, alt: `Tập hồ sơ phần ${k + 1}` });
+const POS3 = [0, 1, 2].map((k) => ({ x: 110 + k * 600, y: 330, w: 500 }));   // ba tập hồ sơ xếp hàng (slide 4 và slide 26 dùng chung chỗ)
+
+// 4 · BA CÂU HỎI — ba tập hồ sơ; chồng 19 cuốn sổ gom lại, cất vào tập 2; bấm tập để mở phần đó
+S.bhba = (s, deck) => { const it = (s.items || []).slice(0, 3), P2 = POS3[1];
+  const so = Array.from({ length: 19 }, (_, k) => lop(`bh-ms${k + 1}`, { x: P2.x + 170 + (k % 5) * 3, y: P2.y + 150 - (k % 5) * 3, w: 120 * 0.76, h: 120 * 1.06 * 0.76 * 1.4 / 1.06 * 0.72, r: (k % 3) - 1 }, V.soNho(), { m: `bh-ms${k + 1}`, z: 8, k: 0.4, alt: "Sổ BHXH" })).join("");
+  return `${tieuDe(s, { w: 1500 })}${it.map((x, k) => { const P = POS3[k]; return `${tapLop(k, P, { go: x.go })}${chu("bh-bso", P.x + 30, P.y + 120, 140, `0${k + 1}`, { go: x.go })}${chu("bh-bq", P.x + 40, P.y + 330, 420, esc(x.q), { go: x.go })}`; }).join("")}${so}
+    ${chu("bh-hint", 110, 952, 1500, esc(s.hint || "Bấm vào một tập hồ sơ để mở phần đó"))}`; };
+
+// 5 · 14 · 21 · CHƯƠNG — tập hồ sơ của phần phóng to bên phải; số phần + câu hỏi chương bên trái (phần 1: cuốn luật nằm trên bìa)
+S.bhchuong = (s, deck) => { const k = (+s.num || 1) - 1, R = { x: 930, y: 190, w: 860 }, sachRieng = k === 0;
+  return `${tapLop(k, R, { bieu: sachRieng ? "" : k === 1 ? "so" : undefined })}${sachRieng ? lop("bh-sach", { x: R.x + 290, y: R.y + 270, w: 240, h: 326, r: -4 }, V.sachLuatDong(), { m: "bh-sach", z: 9, k: 0.6, alt: "Luật BHXH 2024" }) : ""}
+    ${chu("bh-k", 110, 200, 760, esc(`${s.partWord || "Phần"} ${s.num} · ${s.part || ""}`))}${chu("bh-cso", 100, 236, 600, String(s.num).padStart(2, "0"))}
+    ${chu("bh-h2", 110, 590, 760, tx(s.title || ""), { size: 64 })}${s.sub ? chu("bh-sub2", 110, 820, 740, tx(s.sub)) : ""}`; };
+
+// 6 · TRÍCH LUẬT — cuốn luật mở; bút dạ quang nằm ngay cuối cụm vừa tô; cây ô gấp nằm trên bàn (slide sau bung ra)
+S.bhtrich = (s, deck) => { const B = { x: 110, y: 200, w: 1260, h: 840 };
+  return `${lop("bh-sach", B, V.sachLuatMo(), { m: "bh-sach", z: 6, k: 2, alt: "Luật BHXH 2024 mở" })}
+    ${chu("bh-k", 110, 92, 1300, esc(s.kicker || ""))}${chu("bh-qt", B.x + B.w * 0.535, B.y + 110, B.w * 0.42, f(s.quote || ""))}
+    ${chu("bh-qby", B.x + B.w * 0.535, B.y + 620, B.w * 0.42, esc(s.by || ""))}${chu("bh-qro", B.x + B.w * 0.535, B.y + 660, B.w * 0.42, esc(s.role || ""))}
+    ${lop("bh-bdq", { x: B.x + B.w * 0.62, y: B.y + 520, w: 300, h: 50, r: -18 }, V.butDaQuang(), { m: "bh-bdq", z: 10, k: 0.5, alt: "Bút dạ quang" })}
+    ${s.note ? `${lop("bh-giayghi", { x: 1420, y: 300, w: 400, h: 300, r: 2 }, V.phieu(M.gold, { dau: 14 }), { z: 6, alt: "Giấy ghi" })}${chu("bh-gn", 1460, 350, 330, tx(s.note), { r: 2 })}` : ""}
+    ${lop("bh-o", { x: 1500, y: 640, w: 96, h: 336, r: 62 }, V.o(false), { m: "bh-o", z: 7, k: 0.5, alt: "Cây ô gấp" })}`; };
+
+// 7 · BA VAI TRÒ — ô bung che chị Hoa (thay thu nhập) · cân (đóng – hưởng) · giỏ hàng (giữ sức mua)
+S.bhvaitro = (s, deck) => { const it = (s.items || []).slice(0, 3), C = [110, 710, 1310];
+  const vat = [`${lop("bh-o", { x: C[0] + 20, y: 270, w: 460, h: 429 }, V.o(true), { m: "bh-o", z: 7, k: 0.9, alt: "Ô che" })}${hoa({ x: C[0] + 175, y: 420, w: 150 })}`,
+    lop("bh-can", { x: C[1] + 60, y: 300, w: 380, h: 362 }, V.can(), { m: "bh-can", z: 7, k: 0.8, alt: "Cân hai đĩa" }),
+    lop("bh-gio", { x: C[2] + 60, y: 340, w: 380, h: 326 }, V.gioHang(), { m: "bh-gio", z: 7, k: 0.8, alt: "Giỏ hàng" })];
+  return `${tieuDe(s, { w: 1500 })}${it.map((x, k) => `${vat[k]}${chu("bh-vn", C[k], 730, 500, esc(x.name || ""))}${chu("bh-vw", C[k], 784, 500, esc(x.who || ""))}${chu("bh-vd", C[k], 826, 480, tx(x.desc || ""))}`).join("")}`; };
+
+// 11 · CON ĐƯỜNG ĐỜI — 15 khối năm của slide trước nối thành đường; 5 điểm dừng; phong bì lương hưu ở điểm nghỉ hưu
+const DUONG = (t) => ({ x: 230 + 1300 * t, y: 800 - 60 * t - 50 * Math.sin(Math.PI * 2 * t) });
+const STOP = [{ k: 2, ic: "nhietKe" }, { k: 5, ic: "binhSua" }, { k: 9, ic: "hopCuuThuong" }, { k: 14, ic: "phongBi" }, { k: 17.4, ic: "hoaSen" }];
+const ICON = { nhietKe: [V.nhietKe, 60, 180], binhSua: [V.binhSua, 80, 180], hopCuuThuong: [V.hopCuuThuong, 150, 120], phongBi: [V.phongBi, 170, 111], hoaSen: [V.hoaSen, 150, 141] };
+const icLop = (k, ic, R) => (ic === "phongBi" ? lop("bh-phongbi", { x: R.x, y: R.y, w: R.w, h: R.w * 170 / 260, r: R.r || -4 }, V.phongBi(), { m: "bh-phongbi", z: 11, k: 0.6, alt: "Phong bì lương hưu" }) : lop(`bh-ic${k + 1}`, { x: R.x, y: R.y, w: R.w, h: R.h, r: R.r || 0 }, ICON[ic][0](), { m: `bh-ic${k + 1}`, z: 11, k: 0.5, alt: "Biểu tượng chế độ" }));
+S.bhduong = (s, deck) => { const st = (s.stages || []).slice(0, 5);
+  const khoi = Array.from({ length: 15 }, (_, k) => { const P = DUONG(k / 15); return lop(`bh-kn${k + 1}`, { x: P.x - 44, y: P.y - 44, w: 88, h: 88, r: ((k * 17) % 9) - 4 }, V.khoiNam(k + 1), { m: `bh-kn${k + 1}`, z: 8, k: 0.4, alt: `Năm đóng thứ ${k + 1}` }); }).join("");
+  const dung = st.map((x, k) => { const S0 = STOP[k], P = DUONG(S0.k / 15), [, w, h] = ICON[S0.ic], cy = P.y - 70 - h;
+    const ic = icLop(k, S0.ic, { x: P.x - w / 2, y: cy, w, h });
+    const ty = Math.max(286, cy - 176);
+    const lx = Math.min(P.x, 1660) - 140;
+    return `${ic}${chu("bh-dw", lx, ty, 280, esc(x.when || ""), { align: "center", color: k === (s.focus ?? 3) ? M.gold : "efe3c4" })}${chu("bh-de", lx, ty + 44, 280, esc(x.event || ""), { align: "center" })}${chu("bh-dl2", lx, ty + 112, 280, esc(x.link || ""), { align: "center" })}`; }).join("");
+  return `${chu("bh-k", 110, 92, 1300, esc(s.kicker || ""))}${chu("bh-h2", 110, 132, 1400, tx(s.title || ""), { size: 58 })}${hoa({ x: 64, y: 560, w: 130 })}${khoi}${dung}${s.note ? chu("bh-src", 110, 970, 1500, esc(s.note)) : ""}`; };
+
+// 12 · NĂM PHIẾU CHẾ ĐỘ — biểu tượng ở điểm dừng bay lên thành dấu đầu phiếu; phiếu hưu trí là phiếu chính
+S.bhphieu5 = (s, deck) => { const cols = (s.cols || []).slice(0, 5), rows = s.rows || [], W = 330, G = 18;
+  return `${tieuDe(s, { w: 1500 })}${cols.map((c, k) => { const X = 110 + k * (W + G), Y = 290, chinh = k === s.focus, S0 = STOP[k], [, w, h] = ICON[S0.ic], sc = S0.ic === "phongBi" ? 0.7 : 0.55;
+    return `${lop(`bh-phieu5-${k}`, { x: X, y: Y, w: W, h: 650, r: chinh ? 0 : [-0.8, 0.6, -0.4, 0, 0.7][k] }, V.phieu(chinh ? M.gold : M.green, { dau: chinh ? 18 : 12 }), { z: 5, alt: "Phiếu chế độ" })}
+      ${icLop(k, S0.ic, { x: X + W / 2 - (w * sc) / 2, y: Y + 34, w: w * sc, h: h * sc })}
+      ${chu("bh-fn", X + 24, Y + 170, W - 48, esc(c.name || ""), { align: "center" })}
+      ${(c.cells || []).slice(0, 2).map((t, j) => `${chu("bh-fr", X + 24, Y + 240 + j * 200, W - 48, esc(rows[j]?.label || ""))}${chu("bh-fc", X + 24, Y + 276 + j * 200, W - 48, f(t))}`).join("")}`; }).join("")}`; };
+
+// 13 · CÔNG THỨC (hai bước) — đồng hồ %: kim 45 % (nữ đóng 15 năm) → 65 % (nữ đóng 25 năm); phong bì dày lên
+S.bhcongthuc = (s, deck, b) => { const t = s.terms || [], GX = 640, GY = 340, GW = 640, k = GW / 520, cx = GX + 260 * k, cy = GY + 260 * k, p = b === 2 ? 65 : 45, kk = (190 * k) / 218;
+  const kim = lop("bh-kim", { x: cx - 20 * kk, y: cy - 230 * kk, w: 40 * kk, h: 460 * kk, r: 1.8 * p - 90 }, V.kimDongHo(), { m: "bh-kim", z: 9, k: 0.4, shadow: false, alt: "Kim chỉ tỷ lệ" });
+  const pb = b === 2 ? { x: 1420, y: 330, w: 340 } : { x: 1450, y: 360, w: 280 };
+  return `${tieuDe(s, { w: 1500 })}${lop("bh-dongho", { x: GX, y: GY, w: GW, h: 320 * k }, V.dongHo(), { m: "bh-dongho", z: 7, k: 1.1, alt: "Đồng hồ tỷ lệ hưởng" })}${kim}
+    ${lop("bh-luong", { x: 130, y: 380, w: 380, h: 309 }, V.phieuLuong(), { m: "bh-luong", z: 7, k: 0.7, alt: "Xấp phiếu lương" })}
+    ${lop("bh-phongbi", { x: pb.x, y: pb.y, w: pb.w, h: pb.w * 170 / 260, r: -4 }, V.phongBi(), { m: "bh-phongbi", z: 9, k: 0.7, alt: "Phong bì lương hưu" })}
+    ${chu("bh-ftm", 130, 710, 400, `<b>BQ</b> ${esc(t[1]?.label || "")}`)}${chu("bh-ftn", 130, 760, 400, esc(t[1]?.note || ""))}
+    ${chu("bh-ftm", 1420, 610, 400, `<b>${esc(s.result?.sym || "LH")}</b> ${esc(s.result?.label || "")}`)}
+    ${chu("bh-ctp", GX, cy + 70, GW, `<b>${p}%</b> ${esc(b === 2 ? (s.buoc2 || "nữ đóng 25 năm") : (s.buoc1 || "nữ đóng 15 năm"))}`, { align: "center" })}
+    ${chu("bh-cte", 130, 880, 1700, f(b === 2 ? (s.example || "") : (t[0]?.note || "")))}${s.note ? chu("bh-src", 130, 958, 1600, esc(s.note)) : ""}`; };
+
+// 15 · 17 · BIỂU ĐỒ CỘT IN TRÊN TỜ RỜI (hai bước) — bước 1 cột ở mức 0, bước 2 cột mọc đúng số liệu; nguyên nhân đặt tại năm; thẻ kết luận kẹp mép
+S.bhcot2 = (s, deck, b) => { const R = { x: 70, y: 60, w: 1440, h: 950 }, it = s.items || [], n = it.length, hi = Math.max(...it.map((x) => x.value)) * 1.12, X0 = R.x + 90, X1 = R.x + (s.insight ? 1270 : 1380), Y0 = R.y + 700, Y1 = R.y + 330;
+  const cw = (X1 - X0) / n, bw = cw * 0.58, xs = (k) => X0 + cw * (k + 0.5), ys = (v) => Y0 - (Y0 - Y1) * v / hi;
+  const mau = (x, k) => (x.focus ? M.gold2 : x.tone === "bad" || (k && x.value < it[k - 1].value) ? M.red : M.ink);
+  const cot = it.map((x, k) => { const y = b === 2 ? ys(x.value) : Y0 - 6; return lop(`bh-cot${k + 1}`, { x: xs(k) - bw / 2, y, w: bw, h: Y0 - y }, `<svg viewBox="0 0 10 10" width="100%" height="100%" preserveAspectRatio="none"><rect width="10" height="10" fill="#${mau(x, k)}"/></svg>`, { m: `bh-cot${k + 1}`, z: 9, shadow: false, alt: `Cột ${x.label}` }); }).join("");
+  const nhan = it.map((x, k) => `${chu("bh-cy", xs(k) - 50, Y0 + 14, 100, esc(x.label), { align: "center", color: x.focus ? M.ink : "5a5040" })}${b === 2 ? chu("bh-cv2", xs(k) - 70, ys(x.value) - 50, 140, esc(x.display || num(x.value)), { align: "center", color: mau(x, k) }) : ""}`).join("");
+  const bands = (s.bands || []).map((bd) => { const a = it.findIndex((x) => x.label === bd.from), e = it.findIndex((x) => x.label === bd.to); if (a < 0 || e < 0) return ""; const x0 = xs(a) - cw / 2, x1 = xs(e) + cw / 2;
+    return `${lop("bh-band", { x: x0, y: Y1 - 40, w: x1 - x0, h: Y0 - Y1 + 40 }, `<svg viewBox="0 0 100 100" width="100%" height="100%" preserveAspectRatio="none"><rect width="100" height="100" fill="#b8322a" fill-opacity=".08"/><path d="M0.5 0 V100 M99.5 0 V100" stroke="#b8322a" stroke-opacity=".5" stroke-width="1" stroke-dasharray="4 4" vector-effect="non-scaling-stroke"/></svg>`, { z: 8, shadow: false, alt: "Dải giai đoạn" })}${chu("bh-bl", x0, Y1 - 82, x1 - x0, esc(String(bd.label).toUpperCase()), { align: "center", color: M.red })}`; }).join("");
+  const whys = it.map((x, k) => (x.why ? k : -1)).filter((k) => k >= 0).slice(0, 4);
+  const so = b === 2 ? whys.map((k, j) => chu("bh-wn2", xs(k) + bw / 2 - 6, ys(it[k].value) - 90, 40, String(j + 1))).join("") : "";
+  const why = b === 2 ? whys.map((k, j) => chu("bh-wt2", R.x + 90 + (j % 2) * 640, R.y + 764 + Math.floor(j / 2) * 70, 610, `<span class="bh-wnb">${j + 1}</span> <b>${esc(it[k].label)}</b> ${f(it[k].why)}`)).join("") : "";
+  const ins = s.insight || {};
+  const the = s.insight ? `${lop("bh-ins", { x: 1420, y: 300, w: 430, h: 520, r: 2 }, `<svg viewBox="0 0 430 520" width="100%" height="100%" preserveAspectRatio="none">${giayNen(uid("ip"), 430, 520, "fbf4e2")}<rect width="430" height="16" fill="#${M.gold}"/></svg>`, { m: "bh-ins", z: 10, alt: "Thẻ kết luận" })}${lop("bh-kep", { x: 1478, y: 258, w: 44, h: 110, r: 2 }, kep(), { z: 11, k: 0.7, alt: "Kẹp giấy" })}
+    ${chu("bh-iv", 1456, 360, 370, f(ins.value || ""), { r: 2, size: String(ins.value || "").length > 5 ? 96 : 128 })}${chu("bh-iu", 1456, 490, 370, f(ins.unit || ""), { r: 2 })}${chu("bh-it", 1456, 590, 360, f(ins.text || ""), { r: 2 })}` : "";
+  return `${lop("bh-roi", R, toRoi(""), { m: "bh-roi", z: 6, k: 2.2, alt: "Tờ rời" })}${chu("bh-ck", R.x + 60, R.y + 70, 900, esc(s.kicker || ""))}${chu("bh-ch", R.x + 60, R.y + 108, s.insight ? 1250 : 1340, tx(s.title || ""), { size: 50 })}${chu("bh-cu", R.x + 60, R.y + 236, 900, esc(s.unit ? `Đơn vị: ${s.unit}` : ""))}
+    ${lop("bh-truc", { x: X0 - 20, y: Y0, w: X1 - X0 + 40, h: 4 }, `<svg viewBox="0 0 10 1" width="100%" height="100%" preserveAspectRatio="none"><rect width="10" height="1" fill="#276a58"/></svg>`, { z: 8, shadow: false, alt: "Trục" })}${bands}${cot}${nhan}${so}${why}${the}${s.note ? chu("bh-src", R.x + 60, R.y + 908, 1300, esc(s.note)) : ""}`; };
+
+// 16 · ĐÃ PHỦ BAO NHIÊU — 50 người tí hon (1 người = 2 %): 21 dưới ô, 29 ngoài mưa
+S.bhche = (s, deck) => { const c0 = (s.cols || [])[0] || {}, c1 = (s.cols || [])[1] || {}, n0 = c0.n || 21, n1 = c1.n || 29;
+  const duoi = Array.from({ length: n0 }, (_, k) => lop(`bh-tn${k + 1}`, { x: 230 + (k % 7) * 76, y: 540 + Math.floor(k / 7) * 104, w: 52, h: 95 }, V.nguoiNho("4f86a8"), { m: `bh-tn${k + 1}`, z: 9, k: 0.25, alt: "Người có BHXH" })).join("");
+  const ngoai = Array.from({ length: n1 }, (_, k) => lop(`bh-tn${n0 + k + 1}`, { x: 1010 + (k % 10) * 80, y: 540 + Math.floor(k / 10) * 104, w: 52, h: 95 }, V.nguoiNho("9aa3b2", true), { m: `bh-tn${n0 + k + 1}`, z: 9, k: 0.25, alt: "Người chưa có BHXH" })).join("");
+  return `${tieuDe(s, { w: 1500 })}${lop("bh-o", { x: 150, y: 250, w: 690, h: 644 }, V.o(true), { m: "bh-o", z: 7, k: 1.2, alt: "Ô che BHXH" })}${duoi}
+    ${lop("bh-mua", { x: 980, y: 300, w: 840, h: 560 }, V.mua(840, 560), { z: 8, shadow: false, alt: "Mưa" })}${ngoai}
+    ${chu("bh-pc", 150, 856, 700, `<b>${esc(c0.value || "42")}%</b> ${esc(c0.label || "")}`)}${chu("bh-pc", 1010, 856, 820, `<b class="do">${esc(c1.value || "58")}%</b> ${esc(c1.label || "")}`)}
+    ${chuGiai("bh-cg-nguoi", 1290, 92, V.nguoiNho(), s.legend || "Mỗi người = 2% lực lượng lao động", 560)}${nguon(s.source)}`; };
+
+// 19 · RÚT MỘT LẦN (hai bước) — 8 chồng sổ (1 chồng = 100.000 người) cạnh bình quỹ → bước 2 đi ra cửa, nửa đã khuất
+S.bhrut = (s, deck, b) => { const D = { x: 1540, y: 300, w: 300, h: 488 };
+  const chong = Array.from({ length: 8 }, (_, k) => { const P = b === 2 ? (k < 4 ? { x: 1010 + k * 120, y: 600 + (k % 2) * 26, r: 4, s: 1 } : { x: 1600 + (k - 4) * 50, y: 560 - (k - 4) * 34, r: 2, s: 0.8 - (k - 4) * 0.13 }) : { x: 620 + (k % 4) * 140, y: 470 + Math.floor(k / 4) * 180, r: ((k * 23) % 9) - 4, s: 1 };
+    return lop(`bh-cs${k + 1}`, { x: P.x, y: P.y, w: 120 * P.s, h: 150 * P.s, r: P.r }, V.chongSo(), { m: `bh-cs${k + 1}`, z: 9, k: 0.5, alt: "Chồng sổ BHXH (100.000 người)" }); }).join("");
+  return `${chu("bh-k", 110, 92, 1300, esc(s.kicker || ""))}${chu("bh-h2", 110, 132, 1500, tx(s.title || ""), { size: 54 })}
+    ${chu("bh-hero", 100, 300, 520, esc(s.num || ""))}${chu("bh-heu", 110, 640, 460, esc(s.unit || ""))}${s.sub ? chu("bh-sub2", 110, 760, 480, tx(s.sub)) : ""}
+    ${lop("bh-binh-sau", { x: 600, y: 300, w: 140, h: 182 }, V.binhQuySau(), { m: "bh-binh-sau", z: 7, k: 0.4, alt: "Bình quỹ" })}${lop("bh-xu-quy", { x: 612, y: 390, w: 116, h: 86 }, V.xuTrongBinh(), { m: "bh-xu-quy", z: 8, shadow: false, alt: "Xu" })}${lop("bh-binh-truoc", { x: 600, y: 300, w: 140, h: 182 }, V.binhQuyKinh("QUỸ"), { m: "bh-binh-truoc", z: 9, shadow: false, alt: "Bình quỹ" })}
+    ${lop("bh-cua", D, V.cua(), { m: "bh-cua", z: 6, k: 0.7, alt: "Cửa ra" })}${chong}
+    ${chuGiai("bh-cg-chong", 760, 300, V.chongSo(), s.legend || "1 chồng sổ = 100.000 người", 540)}`; };
+
+// 22 · ĐẠT ĐƯỢC (hai bước) — chồng giấy thủ tục 114 tờ xẹp còn 25, điện thoại sáng; ba thẻ kết quả bên phải
+S.bhdat = (s, deck, b) => { const c = s.cells || [], hS = b === 2 ? 110 : 470;
+  const the = [c[0], c[2], c[3]].filter(Boolean).map((x, k) => `${lop(`bh-dt${k}`, { x: 1180, y: 290 + k * 230, w: 640, h: 210, r: [-0.6, 0.5, -0.3][k] }, V.phieu(M.green, { dau: 10 }), { z: 5, alt: "Kết quả" })}${chu("bh-dh", 1214, 314 + k * 230, 570, esc(x.head || ""))}${chu("bh-dv2", 1214, 364 + k * 230, 200, esc(x.value || "✓"))}${chu("bh-dtx", 1430, 370 + k * 230, 360, f(x.text || ""))}`).join("");
+  const c1 = c[1] || {};
+  return `${tieuDe(s, { w: 1050 })}${lop("bh-giay", { x: 150, y: 900 - hS, w: 420, h: hS }, V.chongGiay(hS), { m: "bh-giay", z: 7, k: 0.8, alt: "Chồng giấy thủ tục" })}
+    ${chu("bh-dsn", 150, 900 - hS - 120, 440, b === 2 ? esc(c1.value || "25") : "114", { align: "center", color: b === 2 ? M.gold : "b9c2cf" })}${chu("bh-dsl", 150, 916, 440, b === 2 ? esc(c1.head || "") : esc(s.truoc || "Thủ tục năm 2015"), { align: "center" })}
+    ${lop("bh-dthoai", { x: 690, y: 330, w: 300, h: 575 }, V.dienThoai(b === 2), { m: "bh-dthoai", z: 8, k: 0.8, alt: "Điện thoại — sổ BHXH điện tử" })}${b === 2 ? chu("bh-dsl", 640, 916, 400, esc(c1.text || ""), { align: "center" }) : ""}${the}`; };
+
+// 23 · 24 · HẠN CHẾ → KIẾN NGHỊ — ba vật quay lại từ phần thực trạng, mỗi vật một cột; slide kiến nghị đặt vật vá lên đúng vật đó
+const VAT3 = (kn) => [
+  `${lop("bh-cua", { x: 190, y: 290, w: 240, h: 390 }, V.cua(), { m: "bh-cua", z: 6, k: 0.6, alt: "Cửa ra" })}${lop("bh-cs1", { x: 360, y: 520, w: 100, h: 125, r: 6 }, V.chongSo(), { m: "bh-cs1", z: 9, k: 0.4, alt: "Chồng sổ" })}${kn ? lop("bh-khoa", { x: 330, y: 430, w: 130, h: 156, r: -6 }, V.oKhoa(), { m: "bh-khoa", z: 10, k: 0.5, alt: "Ổ khoá" }) : ""}`,
+  `${lop("bh-binh-sau", { x: 800, y: 290, w: 300, h: 390 }, V.binhQuySau(), { m: "bh-binh-sau", z: 7, k: 0.6, alt: "Bình quỹ" })}${lop("bh-xu-quy", { x: 826, y: 470, w: 248, h: 200 }, V.xuTrongBinh(), { m: "bh-xu-quy", z: 8, shadow: false, alt: "Xu" })}${lop("bh-binh-truoc", { x: 800, y: 290, w: 300, h: 390 }, V.binhQuyKinh("QUỸ"), { m: "bh-binh-truoc", z: 9, shadow: false, alt: "Bình quỹ" })}${lop("bh-rao", { x: 790, y: 250, w: 320, h: 171 }, V.raoChan(), { m: "bh-rao", z: 10, k: 0.5, alt: "Rào chắn: xu không vào quỹ" })}${kn ? lop("bh-va", { x: 1010, y: 520, w: 120, h: 120, r: 10 }, V.miengVa(), { m: "bh-va", z: 11, k: 0.4, alt: "Miếng vá" }) : ""}`,
+  `${lop("bh-o", { x: kn ? 1300 : 1350, y: kn ? 250 : 280, w: kn ? 500 : 360, h: kn ? 466 : 336 }, V.o(true), { m: "bh-o", z: 7, k: 0.8, alt: "Ô che" })}${Array.from({ length: 8 }, (_, k) => lop(`bh-tn${k + 1}`, { x: 1330 + (k % 4) * 110, y: (k < 4 ? 520 : 610) + (kn && k < 4 ? -40 : 0), w: 50, h: 92 }, V.nguoiNho(kn && k < 4 ? "4f86a8" : "9aa3b2", !(kn && k < 4)), { m: `bh-tn${k + 1}`, z: 9, k: 0.25, alt: "Người lao động" })).join("")}`];
+const ba = (s, kn) => { const it = (s.items || []).slice(0, 3), C = [110, 710, 1310], lab = s.labels || [];
+  return `${tieuDe(s, { w: 1600 })}${VAT3(kn).join("")}${it.map((x, k) => `${lop(`bh-hc${k}`, { x: C[k], y: 700, w: 520, h: 250, r: [-0.6, 0.4, -0.3][k] }, V.phieu(kn ? M.green : M.red, { dau: 10 }), { z: 5, alt: "Thẻ" })}
+    ${chu("bh-hn", C[k] + 30, 726, 460, esc(x.name || ""))}${chu("bh-hw", C[k] + 30, 776, 460, `${lab[0] ? `<i>${esc(lab[0])}:</i> ` : ""}${esc(x.who || "")}`)}${chu("bh-hd", C[k] + 30, 818, 460, f(x.desc || ""))}${x.ref ? chu("bh-href", C[k] + 30, 1004, 460, esc(x.ref)) : ""}`).join("")}`; };
+S.bhhanche = (s) => ba(s, false);
+S.bhkiennghi = (s) => ba(s, true);
+
+// 25 · TRẮC NGHIỆM — anh Nam + 15 khối năm; 4 phong bì là 4 đáp án (bấm); slide sai / đúng riêng
+const NAM_VAI = { kieuToc: "ngan", ao: "6a8f4f", quan: "39465c", vat: "so", da: "e6b48d" };
+S.bhhoi = (s, deck, b) => { const op = (s.options || []).slice(0, 4), id = s.id || "cau-hoi";
+  const nam = (o) => lop("bh-nam", { x: 130, y: 380, w: 190, h: 371 }, V.nguoi({ ...NAM_VAI, ...o }), { m: "bh-nam", z: 9, k: 0.6, alt: "Anh Nam" });
+  const khoi = Array.from({ length: 15 }, (_, k) => lop(`bh-nk${k + 1}`, { x: 360 + (k % 5) * 70, y: 600 + Math.floor(k / 5) * 70, w: 60, h: 60 }, V.khoiNam(k + 1), { m: `bh-nk${k + 1}`, z: 8, k: 0.3, alt: "Năm đóng" })).join("");
+  if (b === "sai" || b === "dung") { const d = b === "dung" ? s.right || {} : s.wrong || {}, ok = op.findIndex((x) => x.ok);
+    return `${nam(b === "sai" ? { nhan: "lo" } : {})}${khoi}${b === "dung" ? `${lop(`bh-pb-op${ok}`, { x: 1200, y: 300, w: 520, h: 340, r: -3 }, V.phongBi(op[ok]?.text?.toUpperCase().slice(0, 16) || "LƯƠNG HƯU"), { m: `bh-pb-op${ok}`, z: 9, k: 0.9, alt: "Phong bì đáp án đúng" })}` : ""}
+      ${chu("bh-qd", 110, 150, 1400, esc(d.title || ""), { color: b === "dung" ? M.gold : "e46a5a" })}${chu("bh-qx", 760, b === "dung" ? 680 : 380, 1000, f(d.text || d.hint || ""))}
+      ${chu("bh-nut", b === "dung" ? 1500 : 760, 920, 300, esc(d.button || (b === "dung" ? "Tiếp tục" : "Thử lại")), { go: b === "dung" ? (s.next || null) : id, align: "center" })}`; }
+  return `${chu("bh-k", 110, 92, 1300, esc(s.kicker || ""))}${chu("bh-h2", 110, 132, 1500, tx(s.title || ""), { size: 62 })}${nam({})}${khoi}
+    ${op.map((x, k) => { const X = 900 + (k % 2) * 470, Y = 320 + Math.floor(k / 2) * 300;
+      return `${lop(`bh-pb-op${k}`, { x: X, y: Y, w: 420, h: 275, r: [-3, 2, 1, -2][k] }, V.phongBi(""), { m: `bh-pb-op${k}`, z: 9, k: 0.7, go: `${id}-${x.ok ? "dung" : "sai"}`, alt: `Phương án ${"ABCD"[k]}` })}${chu("bh-opl", X + 30, Y + 20, 60, "ABCD"[k], { go: `${id}-${x.ok ? "dung" : "sai"}`, r: [-3, 2, 1, -2][k] })}${chu("bh-opt", X + 40, Y + 190, 340, esc(x.text), { align: "center", go: `${id}-${x.ok ? "dung" : "sai"}`, r: [-3, 2, 1, -2][k] })}`; }).join("")}
+    ${chu("bh-hint", 900, 952, 900, "Bấm vào một phong bì để chọn")}`; };
+
+// 26 · KẾT LUẬN — ba tập hồ sơ về đúng hàng của slide 4, mỗi tập ghi câu trả lời; nhận định đóng dấu
+S.bhtraloi = (s, deck) => { const an = (s.answers || []).slice(0, 3);
+  return `${tieuDe(s, { w: 1500 })}${an.map((x, k) => { const P = { x: 110 + k * 590, y: 280, w: 560 }; return `${tapLop(k, P, { bieu: "" })}${chu("bh-bso", P.x + 34, P.y + 110, 140, `0${k + 1}`)}${chu("bh-aq", P.x + 40, P.y + 196, 470, esc(x.q || ""))}${chu("bh-aa", P.x + 40, P.y + 290, 470, f(x.a || ""))}`; }).join("")}
+    ${s.verdict ? `${lop("bh-verdict", { x: 110, y: 820, w: 1700, h: 130, r: -0.6 }, dauMuc(1700, 130, M.red, { seed: 51 }), { shadow: false, z: 10, alt: "Nhận định" })}${chu("bh-vd2", 150, 856, 1620, `<b>Nhận định:</b> ${f(s.verdict)}`, { color: M.red, r: -0.6 })}` : ""}`; };
+
+// 27 · GHI NHỚ — chị Hoa cầm phong bì lương hưu; ba thẻ số (bấm để quay lại slide chứng minh)
+S.bhghinho = (s, deck) => { const ch = (s.chips || []).slice(0, 3);
+  return `${hoa({ x: 1350, y: 300, w: 300 })}${lop("bh-phongbi", { x: 1500, y: 620, w: 300, h: 196, r: -8 }, V.phongBi(), { m: "bh-phongbi", z: 13, k: 0.7, alt: "Phong bì lương hưu" })}
+    ${chu("bh-gh", 110, 150, 1180, tx((s.lines || []).join("\n")))}
+    ${ch.map((x, k) => { const X = 110 + k * 400, Y = 620; return `${lop(`bh-chip${k}`, { x: X, y: Y, w: 370, h: 240, r: [-2, 1, -1][k] }, V.phieu(M.gold, { dau: 12 }), { z: 6, go: x.go, alt: "Thẻ ghi nhớ" })}${chu("bh-chn", X + 30, Y + 40, 320, esc(x.n), { go: x.go, r: [-2, 1, -1][k] })}${chu("bh-cht", X + 30, Y + 150, 320, esc(x.text), { go: x.go, r: [-2, 1, -1][k] })}`; }).join("")}
+    ${s.basis ? chu("bh-src", 110, 940, 1200, esc(s.basis)) : ""}`; };
+
 // KẾT — lùi máy quay: sổ gấp lại, tờ rời cất dưới sổ; lời cảm ơn trên mặt bàn, thẻ nhóm
 S.bhket = (s, deck, c0) => { const c = cam(s.cam || { x: 1000, y: 560, z: 0.9 });
   const roi = lop("bh-roi", chieu(c, VAT.roi), toRoi(), { m: "bh-roi", z: 3, alt: "Tờ rời quá trình đóng bảo hiểm xã hội" });
   const team = (s.team || []).slice(0, 4).map((t) => esc(t.name)).join(" · ");
-  return `${roi}${sach(c, false, { r: 3 })}${vatBan(c)}
+  return `${roi}${sach(c, false, { r: 3 })}${vatBan(c)}${hoa({ x: 905, y: 610, w: 150 })}${thuoc({ hop: { x: 760, y: 846, w: 150 }, day: { x: 770, y: 935, w: 30 } })}
     ${chu("bh-k", 110, 200, 900, esc(s.kicker || ""))}${chu("bh-h1", 110, 255, 860, tx(s.title || "Cảm ơn"), { size: s.titleSize || 92 })}
     ${s.message ? chu("bh-sub", 110, 600, 680, tx(s.message)) : ""}
     ${team ? `${lop("bh-the", { x: 96, y: 846, w: 640, h: 150, r: -2 }, theKraft(), { m: "bh-the", z: 6, alt: "Thẻ tên nhóm" })}${chu("bh-tn", 176, 884, 520, team, { r: -2 })}` : ""}`; };
@@ -305,10 +454,11 @@ function tenMorph(html) { const dem = {};
 
 function render(s, deck, ctx, { i, n }) {
   kit.reset();
-  const buoc = HAI_BUOC.has(s.type) ? [1, 2] : [0], id = s.id || `s${i + 1}`;
+  const buoc = s.type === "bhhoi" ? [0, "sai", "dung"] : HAI_BUOC.has(s.type) ? [1, 2] : [0], id = s.id || `s${i + 1}`;
+  if (s.type === "bhhoi" && !s.next) s = { ...s, next: (deck.slides[i + 1] || {}).id || `s${i + 2}` };
   return buoc.map((b) => { const html = tenMorph(S[s.type](s, deck, b));
     const sec = `<section class="s bh" data-type="${esc(s.type)}" data-title="${esc(String(s.title || "").replace(/[[\]]/g, ""))}"><div class="cv">${html}${chan(s, deck, i, n)}</div></section>`;
-    return { id: b === 2 ? `${id}-b2` : id, html: sec, tu: false, trans: s.trans || "morph", dur: b === 2 ? (s.dur2 || 1300) : (s.dur || 1100) }; });
+    return { id: b === 2 ? `${id}-b2` : typeof b === "string" ? `${id}-${b}` : id, html: sec, tu: false, trans: s.trans || "morph", dur: b === 2 ? (s.dur2 || 1300) : (s.dur || 1100), noclick: s.type === "bhhoi" && b !== "dung" }; });
 }
 
 // mặt bàn: da xanh đêm, vân sần + loang lớn, đèn ấm góc trên trái, tối dần ra mép; đường chỉ khâu viền tấm lót
@@ -344,7 +494,7 @@ const css = `
 .bh-sub2 { font: 500 30px/1.4 var(--fb); color: #b9c2cf; }
 .bh-q { font: 800 92px/1.02 var(--fb); color: #${M.ivory}; } .bh-qb { font: 400 120px/1 var(--fd); color: #${M.gold}; letter-spacing: .01em; }
 .bh-nam { font: 700 28px/1.25 var(--fb); color: #d8c08a; }
-.bh-sv { font: 400 92px/1 var(--fd); } .bh-sv small { display: block; margin-top: 8px; font: 700 28px/1.2 var(--fb); color: #b9c2cf; }
+.bh-sv { font: 400 92px/1 var(--fd); } .bh-svl { font: 700 28px/1.2 var(--fb); color: #b9c2cf; }
 .bh-d22 { font: 400 44px/1 var(--fd); } .bh-d22 small { display: block; margin-top: 6px; font: 800 26px/1.15 var(--fb); }
 .bh-pn { font: 800 40px/1.1 var(--fb); color: #${M.ink}; } .bh-pw { font: 700 26px/1.2 var(--fb); color: #${M.green}; letter-spacing: .02em; } .bh-pd { font: 500 27px/1.36 var(--fb); color: #3d4658; }
 .bh-mt2 { font: 700 26px/1.2 var(--fb); color: #e8dcc0; }
@@ -357,6 +507,30 @@ const css = `
 .bh-ct { font: 800 26px/1 var(--fb); letter-spacing: .12em; text-transform: uppercase; color: #8a6a3c; } .bh-cx { font: 700 33px/1.3 var(--fb); color: #${M.ink}; }
 .bh-dm { font: 400 62px/1 var(--fd); letter-spacing: .03em; } .bh-dms { font: 800 26px/1 var(--fb); }
 .bh-sh { font: 800 26px/1.2 var(--fb); letter-spacing: .1em; text-transform: uppercase; color: #${M.green}; }
+.bh-bso { font: 400 64px/1 var(--fd); color: #3b2a14; } .bh-bq { font: 800 32px/1.22 var(--fb); color: #2a1f10; } .bh-hint { font: 600 26px/1.2 var(--fb); color: #8f98a8; }
+.bh-cso { font: 400 300px/1 var(--fd); color: #${M.gold}; opacity: .9; }
+.bh-qt { font: 500 36px/1.42 var(--fb); color: #${M.ink}; } .bh-qt em { font-style: normal; font-weight: 800; background: linear-gradient(transparent 12%, rgba(242,211,58,.85) 12%, rgba(242,211,58,.85) 92%, transparent 92%); }
+.bh-qby { font: 800 28px/1.2 var(--fb); color: #7a2230; } .bh-qro { font: 600 26px/1.3 var(--fb); color: #6b5e45; } .bh-gn { font: 800 32px/1.3 var(--fb); color: #${M.ink}; }
+.bh-vn { font: 800 40px/1.1 var(--fb); color: #${M.ivory}; } .bh-vw { font: 800 26px/1.2 var(--fb); color: #8fc7ad; } .bh-vd { font: 500 28px/1.38 var(--fb); color: #c9d0db; }
+.bh-dw { font: 400 38px/1 var(--fd); } .bh-de { font: 700 26px/1.25 var(--fb); color: #e8dcc0; } .bh-dl2 { font: 800 26px/1.2 var(--fb); color: #8fc7ad; }
+.bh-fn { font: 800 32px/1.1 var(--fb); color: #${M.ink}; } .bh-fr { font: 800 26px/1.2 var(--fb); letter-spacing: .04em; color: #${M.green}; } .bh-fc { font: 600 28px/1.3 var(--fb); color: #3d4658; } .bh-fc em { font-style: normal; font-weight: 800; color: #${M.red}; }
+.bh-ftm { font: 700 28px/1.2 var(--fb); color: #e8dcc0; } .bh-ftm b { font: 400 54px/1 var(--fd); color: #${M.gold}; margin-right: 10px; } .bh-ftn { font: 500 26px/1.35 var(--fb); color: #b9c2cf; }
+.bh-ctp { font: 700 32px/1.2 var(--fb); color: #e8dcc0; } .bh-ctp b { font: 400 72px/1 var(--fd); color: #${M.gold}; margin-right: 12px; } .bh-cte { font: 600 32px/1.35 var(--fb); color: #e8dcc0; } .bh-cte em { font-style: normal; color: #${M.gold}; font-weight: 800; }
+.bh-cy { font: 700 26px/1 var(--fb); } .bh-cv2 { font: 400 40px/1 var(--fd); } .bh-bl { font: 800 26px/1 var(--fb); letter-spacing: .1em; }
+.bh-wn2 { width: 40px; height: 40px; border-radius: 50%; background: #${M.red}; color: #fff; font: 800 24px/40px var(--fb); text-align: center; }
+.bh-wt2 { font: 500 26px/1.3 var(--fb); color: #3d4658; } .bh-wt2 b { color: #${M.ink}; font-weight: 800; } .bh-wnb { display: inline-block; width: 32px; height: 32px; border-radius: 50%; background: #${M.red}; color: #fff; font: 800 20px/32px var(--fb); text-align: center; }
+.bh-pc { font: 700 30px/1.3 var(--fb); color: #e8dcc0; } .bh-pc b { font: 400 72px/1 var(--fd); color: #${M.gold}; margin-right: 12px; } .bh-pc b.do { color: #e46a5a; }
+.bh-hero { font: 400 300px/1 var(--fd); color: #${M.gold}; } .bh-heu { font: 800 34px/1.2 var(--fb); color: #${M.ivory}; }
+.bh-dsn { font: 400 110px/1 var(--fd); } .bh-dsl { font: 700 28px/1.25 var(--fb); color: #e8dcc0; }
+.bh-dv2 { font: 400 72px/1 var(--fd); color: #${M.green}; } .bh-dh { font: 800 30px/1.15 var(--fb); color: #${M.ink}; } .bh-dtx { font: 500 26px/1.3 var(--fb); color: #4a4232; }
+.bh-hn { font: 800 38px/1.1 var(--fb); color: #${M.ink}; } .bh-hw { font: 800 26px/1.2 var(--fb); color: #${M.red}; } .bh-hw i { font-style: normal; color: #6b5e45; font-weight: 600; } .bh-hd { font: 500 27px/1.3 var(--fb); color: #3d4658; } .bh-href { font: 700 26px/1 var(--fb); color: #8f98a8; }
+.bh-qd { font: 800 110px/1 var(--fb); } .bh-qx { font: 600 36px/1.4 var(--fb); color: #e8dcc0; } .bh-qx em { font-style: normal; color: #${M.gold}; font-weight: 800; }
+.bh-nut { font: 800 30px/1 var(--fb); color: #1a2433; background: #${M.gold}; padding: 18px 0; border-radius: 10px; }
+.bh-opl { font: 400 56px/1 var(--fd); color: #6e5426; } .bh-opt { font: 800 32px/1.15 var(--fb); color: #3b2a14; }
+.bh-aq { font: 800 28px/1.2 var(--fb); color: #2a1f10; } .bh-aa { font: 600 28px/1.3 var(--fb); color: #3b2a14; } .bh-aa em { font-style: normal; font-weight: 800; }
+.bh-vd2 { font: 600 34px/1.25 var(--fb); } .bh-vd2 b { font-weight: 800; }
+.bh-gh { font: 800 120px/1.02 var(--fb); color: #${M.ivory}; } .bh-gh em { font-style: normal; color: #${M.gold}; }
+.bh-chn { font: 400 92px/1 var(--fd); color: #${M.gold2}; } .bh-cht { font: 700 28px/1.25 var(--fb); color: #${M.ink}; }
 .bh-kt { font: 700 31px/1.3 var(--fb); color: #${M.ink}; } .bh-kr { font: 800 26px/1 var(--fb); color: #${M.red}; letter-spacing: .04em; }
 
 .bh-cg { font: 800 26px/1.2 var(--fb); color: #3b2a14; }`;
