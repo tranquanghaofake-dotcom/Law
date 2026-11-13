@@ -119,3 +119,20 @@ Hai phiên độc lập, cùng đề tài hình sự, **cùng ba kết luận** 
 - Bản 1: 21 slide khai báo → 23 slide PowerPoint, 8 cảnh, 3 ảnh thật; `--soat` cuối 0 cảnh báo; nhìn mờ: không đoán được đề tài; Morph có chủ ý ngoài thanh đầu: 1 cặp.
 - Mẫu bộ `qt*`: 3 slide, `--soat` 0 cảnh báo, lệch PPTX so với HTML 0,00 %; nhìn mờ: thấy văn kiện + dấu xi, hàng cờ, bàn họp và bảng tên; Morph 2/2 cặp (`tieu`).
 - Môi trường: Chromium `/opt/pw-browsers/chromium-1243`; LibreOffice có sẵn; không có PowerPoint, nên font nhúng, Morph và hiệu ứng mới chỉ kiểm được cấu trúc.
+
+## F. Phiên thứ tư (13/11/2026, bộ BHXH "mỗi chi tiết một lý do" + 6 giờ cải thiện tự động)
+
+### F1. Lỗi của skill (có bằng chứng, đã sửa)
+| # | Lỗi | Bằng chứng | Sửa |
+|---|---|---|---|
+| F1.1 | Sơ đồ `flow` tràn 485 px ở da có vỏ thẻ: `:where(.da-…) .card { position: relative }` cùng độ ưu tiên với `.fl-n { position: absolute }`, nạp sau → nút rơi về luồng thường, xếp bậc thang | Bản án 142, slide 3: chú thích đè thẻ, nút thứ tư ra ngoài slide; có từ trước phiên | `.card.fl-n` (stage.css); test dựng flow với cả 13 da |
+| F1.2 | Tiêu đề Anton cỡ lớn thụt 5–7 px so với dòng chữ nhỏ cùng lề (khoảng trống trước nét của chữ đầu) | `soat_chi_tiet.js`: 87 chỗ lệch ở deck BHXH | căn lề quang học trong `hinh.js` (đo nét chữ đầu trên canvas), gọi lại sau `hinhTuGan` cho slide từ bộ mẫu |
+| F1.3 | Đồ vật tiền cảnh của da chọn theo số thứ tự slide (`i % n`) — slide nói về quỹ mang con dấu | đọc mã `da.js` | chọn theo nội dung (kicker + tiêu đề) |
+| F1.4 | Cùng một con số hai cách ghi trên một slide không ai báo | deck mẫu: "3 triệu đồng" cạnh "3.000.000 đ"; "10 triệu" cạnh "10.000.000" | `validate.js` cảnh báo; sửa hai deck mẫu |
+| F1.5 | Chữ nhấn màu trên ảnh (photo / headline) 1,8–2,3 : 1 | `soat_chi_tiet.js` | lớp phủ `.pho .tint` đậm ở đầu ảnh |
+
+### F2. Kinh nghiệm (lỗi của người làm)
+- **Chèn chú thích `//` vào giữa một dòng mã dài** làm nuốt phần còn lại của dòng (hai lần trong phiên): chú thích giữa dòng dùng `/* */`.
+- **Vòng `while ((n = w.nextNode()) && !ch)`** gọi `nextNode()` thêm một lần sau khi đã tìm thấy → đo font của nút chữ kế tiếp: đặt điều kiện dừng trước (`while (!ch && (n = …))`).
+- **Ảnh chụp deck.html để soát bằng mắt** còn trạng thái đầu của hiệu ứng vào (khối bị dịch, phóng) → dễ tưởng vỡ bố cục: soát trên ảnh dựng thật (`--soat`, `<tên>_lop/h-*.jpg`).
+- **Công cụ đo cũng phải được kiểm**: `soat_chi_tiet.js` từng báo nhầm vì ẩn chữ bằng `visibility` (mất cả nền của viên nhãn), vì tính bóng chữ / viền chữ là nét, vì đo hộp chữ con lồng trong hộp chữ cha. Mỗi lần báo lạ: chụp hai trạng thái, in điểm ảnh, rồi mới sửa — không sửa template theo một phép đo chưa kiểm.
