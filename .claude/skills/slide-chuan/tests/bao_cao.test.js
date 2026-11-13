@@ -141,7 +141,7 @@ test("mở – kết: bìa poster + facts, closing answers + photo, end poster, 
 test("khối hình chính: sheet / calendar / riskbar / plan dựng --strict; chặn dữ liệu sai", () => {
   const sl = {
     sheet: { type: "sheet", kicker: "Có năm nào giảm?", title: "Số người đóng chỉ giảm năm 2020", rows: [{ label: "2019", value: 15.2, display: "15,2" }, { label: "2020", value: 15.1, display: "15,1", tone: "bad", focus: true, note: "COVID-19" }, { label: "2021", value: 15.1, display: "15,1", note: "Đi ngang" }], notes: "x" },
-    calendar: { type: "calendar", kicker: "Báo trước bao lâu?", title: "Nghỉ việc phải báo trước 30 ngày", month: "Tháng 7/2026", startDay: 3, days: 31, marks: [{ from: 1, to: 30, label: "Báo trước 30 ngày (Điều 35)" }], notes: "x" },
+    calendar: { type: "calendar", kicker: "Báo trước bao lâu?", title: "Nghỉ việc phải báo trước 30 ngày", month: "Tháng 7/2026", startDay: 3, days: 31, marks: [{ from: 1, to: 30, label: "Báo trước 30 ngày (Điều 35)" }], notes: "Điều 35 Bộ luật Lao động 45/2019/QH14." },
     riskbar: { type: "riskbar", kicker: "Ai chịu tới đâu?", title: "Rủi ro sang người mua ở chặng khác nhau", stages: ["Kho bán", "Lên tàu", "Cảng đến"], rows: [{ label: "FOB", sub: "Giao lên tàu", at: 2 }, { label: "CIF", sub: "Có cước", at: 2, pay: 3 }], legend: ["Bên bán", "Bên mua", "Bên bán trả cước"], notes: "x" },
     plan: { type: "plan", kicker: "Tách thửa được không?", title: "Phần lấn lộ giới không được cấp giấy", width: "6 m", height: "10 m", ratio: 0.8, zones: [{ label: "Lấn lộ giới", x: 0, y: 0, w: 1, h: 0.2, tone: "bad" }], items: [{ head: "Phần còn lại", text: "Xét tách thửa" }], notes: "x" } };
   for (const [k, da] of [["sheet", "so-bhxh"], ["calendar", "bang-cong"], ["riskbar", "cang-bien"], ["plan", "ban-ve"]]) {

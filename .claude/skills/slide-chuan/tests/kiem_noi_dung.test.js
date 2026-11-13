@@ -112,3 +112,25 @@ test("ảnh của bộ hình BHXH: ngưỡng theo cỡ ảnh hiện trên slide 
   assert.ok(vo(await ck("bhchuong", nho)), "1100px chưa đủ cho ảnh nền slide mở phần (hiện 1360px)");
   assert.ok(!vo(await ck("bhrut", khung)), "1020px đủ cho khung ảnh ≤ 880px");
 });
+
+test("căn cứ pháp lý đối chiếu kho luật: dẫn đích danh điều không tồn tại → cảnh báo theo đúng số slide; điều trần lấy luật chính ở prep.json", { skip: !fs.existsSync(path.join(__dirname, "..", "..", "vn-legal-exam-analysis", "scripts", "kiem_can_cu.py")) && "không có bộ đối chiếu căn cứ" }, () => {
+  const deck = { meta: {}, slides: [bia,
+    { type: "statement", title: "Lương hưu tính theo Điều 66 Luật Bảo hiểm xã hội" },
+    { type: "statement", title: "Mức trần nằm ở Điều 999 Luật Bảo hiểm xã hội" },
+    { type: "statement", title: "Khoản 9 Điều 66 không có thật" }] };
+  const r = KND.kiemCanCu(deck, { luatChinh: "Luật Bảo hiểm xã hội số 41/2024/QH15" });
+  assert.ok(r.warnings.some((x) => /^Slide 3: căn cứ sai — .*Điều 999/.test(x)), r.warnings.join("\n"));
+  assert.ok(!r.warnings.some((x) => /^Slide 2:/.test(x)), "Điều 66 có thật — không báo");
+  assert.ok([...r.warnings, ...r.hints].some((x) => /^Slide 4: .*khoản 9/i.test(x)), "điều trần lấy luật chính: Điều 66 không có khoản 9");
+  assert.match(r.info.join(" "), /căn cứ khớp kho/);
+});
+
+test("deck dẫn điều luật: phải có số hiệu văn bản ở đâu đó (cảnh báo); thiếu tình trạng hiệu lực / câu 'không phải tư vấn' → gợi ý", async () => {
+  const thieu = { meta: { minutes: 1 }, slides: [bia, { type: "statement", title: "Lương hưu tính theo Điều 66 Luật Bảo hiểm xã hội", notes: "Đọc Điều 66." }] };
+  const r = await KND.kiemNoiDung(thieu, { deckDir: thuMuc() });
+  assert.ok(r.warnings.some((x) => /số hiệu văn bản/.test(x)), r.warnings.join("\n"));
+  assert.ok(r.hints.some((x) => /hiệu lực/.test(x)) && r.hints.some((x) => /không phải tư vấn/.test(x)), r.hints.join("\n"));
+  const du = { meta: { minutes: 1 }, slides: [bia, { type: "statement", title: "Lương hưu tính theo Điều 66 Luật Bảo hiểm xã hội", notes: "Luật Bảo hiểm xã hội số 41/2024/QH15, hiệu lực từ 01/7/2025. Thông tin pháp luật chung, không phải tư vấn." }] };
+  const r2 = await KND.kiemNoiDung(du, { deckDir: thuMuc() });
+  assert.ok(![...r2.warnings, ...r2.hints].some((x) => /số hiệu văn bản|tình trạng hiệu lực|không phải tư vấn/.test(x)), [...r2.warnings, ...r2.hints].join("\n"));
+});

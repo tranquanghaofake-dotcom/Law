@@ -78,7 +78,7 @@ test("closing phải trả lời đúng số câu hỏi của agenda; không ch�
   const cl = { type: "closing", title: "Người mua thiệt nhất", rec: { title: "Kiến nghị", items: ["Hướng dẫn tiêu chí ngay tình"] } };
   const a = buildDeck({ slides: [cover, ag, cl] }); assert.ok(a.all.includes("kết luận không trả lời"), a.all);
   const b = buildDeck({ slides: [cover, ag, Object.assign({}, cl, { answers: [{ q: "Câu 01", a: "Vay trá hình" }] })] }); assert.ok(b.all.includes("1 câu trả lời nhưng mục lục có 2"), b.all);
-  const ok = Object.assign({}, cl, { verdict: "Đúng kết quả, thiếu lập luận", answers: [{ q: "Câu 01 · Mua hay vay", a: "Vay trá hình — Điều 129 BLDS 2005" }, { q: "Câu 02 · Ai thiệt", a: "Người mua thiệt 350 triệu", tone: "bad" }] });
+  const ok = Object.assign({}, cl, { verdict: "Đúng kết quả, thiếu lập luận", answers: [{ q: "Câu 01 · Mua hay vay", a: "Vay trá hình — Điều 129 BLDS 33/2005/QH11" }, { q: "Câu 02 · Ai thiệt", a: "Người mua thiệt 350 triệu", tone: "bad" }] });
   const c = buildDeck({ slides: [cover, ag, ok] }, ["--strict"]); assert.strictEqual(c.code, 0, c.all);
   assert.ok(buildDeck({ slides: [cover, Object.assign({}, cl, { title: "Kết thúc." })] }).all.includes("dấu chấm"));
 });
@@ -118,7 +118,7 @@ test("ảnh thật: thiếu file -> lỗi; thiếu thông tin ghi công -> cản
   });
 });
 test("fork: branches[].pick làm nổi cách được chọn", () => {
-  const r = buildDeck({ slides: [cover, { type: "fork", title: "Hai cách đọc điều luật", branches: [{ tag: "Cách 1", head: "Điểm b", text: "Theo khoản 1 Điều 688" }, { tag: "Cách 2", head: "Điểm c", text: "Theo khoản 1 Điều 688", pick: true }] }] }, ["--strict"]);
+  const r = buildDeck({ slides: [cover, { type: "fork", title: "Hai cách đọc điều luật", branches: [{ tag: "Cách 1", head: "Điểm b", text: "Theo khoản 1 Điều 688 BLDS 91/2015/QH13" }, { tag: "Cách 2", head: "Điểm c", text: "Theo khoản 1 Điều 688", pick: true }] }] }, ["--strict"]);
   assert.strictEqual(r.code, 0, r.all);
 });
 test("split / gallery / quoteDoc / imagePolicy", () => {

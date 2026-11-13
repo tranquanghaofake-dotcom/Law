@@ -140,7 +140,67 @@ async function kiemNoiDung(deck, { deckDir = process.cwd(), extraTypes = [] } = 
           if (diff.length) hints.push(`Bước 0: ${diff.length} slide đổi type so với kế hoạch (${diff.slice(0, 6).join(", ")}${diff.length > 6 ? "…" : ""}) — nêu lý do khi báo người dùng`); }
       } }
   }
+  // CĂN CỨ PHÁP LÝ: luật chính = nguồn legal đầu tiên còn hiệu lực trong prep.json (hoặc meta.law)
+  let luatChinh = meta.law || ""; try { const pf = path.resolve(deckDir, meta.prep || "prep.json");
+    if (!luatChinh && fs.existsSync(pf)) { const ng = (JSON.parse(fs.readFileSync(pf, "utf8")).sources || []).find((x) => x && x.legal && /^hiện hành/i.test(String(x.status || "")));
+      if (ng) luatChinh = String(ng.title || "").replace(/\s*\(.*$/, "").trim(); } } catch { /* prep hỏng: đã báo ở Bước 0 */ }
+  const biDanh = {}, demNam = {}; let nguonLuat = [];
+  try { const pf = path.resolve(deckDir, meta.prep || "prep.json"); if (fs.existsSync(pf)) nguonLuat = (JSON.parse(fs.readFileSync(pf, "utf8")).sources || []).filter((x) => x && x.legal && /^hiện hành/i.test(String(x.status || ""))); } catch { /* đã báo */ }   // văn bản hết hiệu lực: không dịch "Luật 2014" (kho không có, chỉ sinh nhiễu "dẫn bản cũ")
+  for (const t of [luatChinh, ...nguonLuat.map((x) => String(x.title || "").replace(/\s*\(.*$/, "").trim())]) { const y = (t.match(/\b\d+\/(\d{4})\/QH\d+/) || [])[1], loai = (t.match(/^(Bộ luật|Luật)/) || [])[1];
+    if (y && loai) { const k = `${loai} ${y}`; if (!(k in biDanh)) { biDanh[k] = t; demNam[k] = 1; } else if (biDanh[k] !== t) demNam[k]++; } }
+  for (const k of Object.keys(biDanh)) if (demNam[k] > 1) delete biDanh[k];   // hai văn bản cùng năm → viết tắt không rõ là cái nào
+  const cc = kiemCanCu(deck, { luatChinh, ghiChu: gc.notes, biDanh }); warnings.push(...cc.warnings); hints.push(...cc.hints); info.push(...cc.info);
+  // VỆ SINH PHÁP LÝ (quy tắc của chủ dự án: trích luật phải có số hiệu, điều / khoản, tình trạng hiệu lực; nói rõ là thông tin chung)
+  { const tatCa = slides.map((sl, i) => `${JSON.stringify(sl || {})} ${gc.notes[i] || ""}`).join(" ").replace(/\\u00a0/g, " ");
+    const soDieu = (tatCa.match(/Điều\s+\d+/g) || []).length;
+    if (soDieu) {
+      if (!/\b\d+\/\d{4}\/(?:QH|NĐ|TT|NQ|PL|UBTVQH|QĐ)[\wĐ-]*/u.test(tatCa)) warnings.push(`Deck dẫn ${soDieu} chỗ "Điều N" nhưng không chỗ nào ghi số hiệu văn bản (vd. "Luật Bảo hiểm xã hội số 41/2024/QH15") — ghi ở dòng nguồn / basis / note của slide dẫn luật đầu tiên`);
+      if (!/hiệu lực|hết hiệu lực|dự thảo|đã bãi bỏ|còn áp dụng/i.test(tatCa)) hints.push("Deck dẫn luật nhưng không nói tình trạng hiệu lực ở đâu — ghi \"hiệu lực từ …\" / \"hết hiệu lực\" / \"dự thảo\" cạnh số hiệu văn bản");
+      if (!/không phải (là )?tư vấn/i.test(tatCa)) hints.push("Deck dẫn luật mà chưa có câu \"thông tin pháp luật chung, không phải tư vấn\" — thêm ở basis của recap / closing, hoặc ghi chú slide cuối");
+    } }
   return { errors, warnings, hints, info, credits, icons: [...icons], limits: kiemGioiHan(slides) };
+}
+
+/** CĂN CỨ PHÁP LÝ — đối chiếu mọi "điểm / khoản / Điều N <văn bản>" trên slide và trong ghi chú với kho luật
+ *  (packages/content/data/laws), bằng bộ đối chiếu của skill vn-legal-exam-analysis (scripts/kiem_can_cu.py).
+ *  Mỗi slide là một mục riêng; đầu mục ghi luật chính của deck (prep.json: nguồn legal đầu tiên còn hiệu lực) để "Điều 66" trần
+ *  được hiểu là điều của luật đó. Dẫn ĐÍCH DANH mà điều / khoản / điểm không có → cảnh báo (--strict dừng); suy theo ngữ cảnh,
+ *  nguyên văn lệch, khác bản → gợi ý. Không có bộ đối chiếu hoặc kho → chỉ ℹ. */
+const CAN_CU = path.join(__dirname, "..", "..", "vn-legal-exam-analysis", "scripts", "kiem_can_cu.py");
+const KHONG_CHU_CC = new Set(["photo", "photoAlt", "photoCredit", "photoSource", "photoStyle", "photoLayout", "id", "go", "next", "type", "icon", "emoji", "emoji2", "emojis", "art", "tone", "covers", "cutout", "cutoutAlt", "url", "route", "mode", "kind", "layout", "trans", "dur", "notes"]);
+function kiemCanCu(deck, { luatChinh = "", ghiChu = [], biDanh = {} } = {}) {
+  // biDanh: "Luật 2024" → "Luật Bảo hiểm xã hội số 41/2024/QH15" (lấy từ số hiệu các nguồn pháp luật trong prep.json) — cách viết tắt hay gặp
+  // trên slide mà bộ đối chiếu không tự nhận ra, làm mọi "Điều N" theo sau bị xếp "ngoài kho"
+  const reBD = Object.keys(biDanh).length ? new RegExp(`(?<![\\p{L}\\p{N}])(?:${Object.keys(biDanh).map((k) => k.replace(/\s+/g, "\\s+")).join("|")})(?![\\p{L}\\p{N}/])`, "giu") : null;
+  const doiBD = (t) => (reBD ? t.replace(reBD, (m) => biDanh[m.replace(/\s+/g, " ").replace(/^l/, "L")] || m) : t);
+  const warnings = [], hints = [], info = [];
+  if (!fs.existsSync(CAN_CU)) { info.push("ℹ Căn cứ pháp lý: không thấy bộ đối chiếu (skill vn-legal-exam-analysis) — tự đối chiếu số điều với kho luật / vbpl.vn"); return { warnings, hints, info }; }
+  const dong = [], cuaSlide = [];   // dòng thứ k của văn bản gửi đi ↔ slide nào
+  const them = (t, i) => { for (const x of doiBD(String(t)).split("\n")) { dong.push(x); cuaSlide.push(i); } };
+  const chu = (v, k) => (KHONG_CHU_CC.has(k) ? [] : typeof v === "string" ? [v.replace(/[\[\]]/g, "")] : Array.isArray(v) ? v.flatMap((x) => chu(x)) : v && typeof v === "object" ? Object.entries(v).flatMap(([a, b]) => chu(b, a)) : []);
+  (deck.slides || []).forEach((sl, i) => {
+    them(`## Slide ${i + 1}`, i); them("", i);
+    // mỗi trường chữ là một đoạn, luật chính đứng ngay trước: "Luật 2014 …" ở trường này không kéo "Điều 64" ở trường khác về luật cũ
+    const g = ghiChu[i] || (sl && sl.notes);
+    for (const doan of [...chu(sl).filter((x) => x.trim()), ...(g ? [String(g).replace(/\s*\n\s*/g, " ")] : [])]) {
+      if (luatChinh) { them(`${luatChinh}.`, i); them("", i); }
+      them(doan.replace(/\s*\n\s*/g, " "), i); them("", i); }
+  });
+  const r = require("child_process").spawnSync("python3", ["-I", CAN_CU, "--stdin"], { input: dong.join("\n"), encoding: "utf8", timeout: 60000 });
+  if (r.status !== 0 && r.status !== 1) { info.push(`ℹ Căn cứ pháp lý: bộ đối chiếu không chạy được (${(r.stderr || r.error || "").toString().trim().split("\n").pop().slice(0, 120)})`); return { warnings, hints, info }; }
+  for (const l of (r.stdout || "").split("\n")) {
+    const m = l.match(/^(✗|⚠) <stdin>:(\d+)\s+(.*)$/); if (m) { const sl = (cuaSlide[+m[2] - 1] ?? -1) + 1, noi = m[3].trim();
+      const dongBao = `Slide ${sl}: ${m[1] === "✗" ? "căn cứ sai" : "căn cứ cần soát"} — ${noi.replace(/^([Kk])hoản/, "khoản").replace(/^([Đđ])iểm/, "điểm")}`, ds = m[1] === "✗" ? warnings : hints;
+      if (!ds.includes(dongBao)) ds.push(dongBao); continue; }   // một căn cứ ở cả slide lẫn ghi chú → báo một lần
+    const k = l.match(/^Kho: .*?\((\d+) văn bản\)\. (.*)$/); if (k) info.push(`ℹ Căn cứ pháp lý (kho ${k[1]} văn bản${luatChinh ? `, điều trần hiểu là của ${luatChinh}` : ""}): ${k[2]} — "khớp kho" là đúng với bản chữ trong kho, chưa phải vbpl.vn; "ngoài kho" phải tự đối chiếu`);
+  }
+  // "dẫn bản cũ hơn kho" lặp ở từng viện dẫn (bản án áp dụng BLDS 2005: 8 dòng) → gộp một dòng cho mỗi văn bản + năm
+  const cu = {}, conLai = [];
+  for (const h of hints) { const m = h.match(/^Slide (\d+): căn cứ cần soát — (?:(?:điểm|khoản|Điều)\s+[\w\s,]+?\s)?(?:Điều\s+\d+[a-zđ]?\s+)?(.+?) — dẫn bản năm (\d{4}), kho có bản (\d{4}) \(([^)]+)\)/);
+    if (!m) { conLai.push(h); continue; } const k = `${m[2]}|${m[3]}|${m[4]}|${m[5]}`; (cu[k] = cu[k] || { s: new Set(), n: 0 }).s.add(+m[1]); cu[k].n++; }
+  for (const [k, v] of Object.entries(cu)) { const [vb, nam, namKho, so] = k.split("|");
+    conLai.push(`Slide ${[...v.s].sort((x, y) => x - y).join(", ")}: căn cứ cần soát — dẫn ${vb} bản ${nam} ở ${v.n} chỗ, kho có bản ${namKho} (${so}): đúng nếu vụ việc / bản án áp dụng luật cũ (ghi rõ trên slide), nếu không thì đổi sang bản hiện hành`); }
+  return { warnings, hints: conLai, info };
 }
 
 /** --titles: "deck ma" — chỉ đọc kicker + tiêu đề từ đầu đến cuối. Đọc liền mà không thành một lập luận thì sửa storyboard trước khi tốn công dựng. */
@@ -171,4 +231,4 @@ function ghiFileGhiCong(outPath, credits, icons) {
   const f = outPath.replace(/\.pptx$/i, "") + "_ghi-cong.md"; fs.writeFileSync(f, L.join("\n")); return f;
 }
 
-module.exports = { kiemNoiDung, kiemGioiHan, machTieuDe, ghiFileGhiCong, docGhiChu, ghiCongAnh };
+module.exports = { kiemNoiDung, kiemCanCu, kiemGioiHan, machTieuDe, ghiFileGhiCong, docGhiChu, ghiCongAnh };

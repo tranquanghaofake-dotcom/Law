@@ -34,30 +34,25 @@
     {
       "type": "qtban",
       "id": "chu-the",
-      "toc": "Chủ thể",
       "kicker": "Phần 1 · Chủ thể",
       "title": "Quốc gia là chủ thể [cơ bản] của luật quốc tế",
       "items": [
         {
-          "icon": "PiFlagDuotone",
           "name": "Quốc gia",
           "who": "Chủ thể cơ bản",
           "desc": "Có chủ quyền; dân cư, lãnh thổ, chính phủ, khả năng quan hệ với nước khác"
         },
         {
-          "icon": "PiBuildingsDuotone",
           "name": "Tổ chức quốc tế",
           "who": "Chủ thể phái sinh",
           "desc": "Liên chính phủ, do quốc gia lập bằng điều ước — Liên hợp quốc, ASEAN"
         },
         {
-          "icon": "PiUsersThreeDuotone",
           "name": "Dân tộc tự quyết",
           "who": "Đấu tranh giành độc lập",
           "desc": "Quyền tự quyết của các dân tộc — khoản 2 Điều 1 Hiến chương LHQ"
         },
         {
-          "icon": "PiChurchDuotone",
           "name": "Chủ thể đặc biệt",
           "who": "Toà thánh (Vatican)",
           "desc": "Không đủ dấu hiệu thông thường nhưng được cộng đồng quốc tế thừa nhận"
