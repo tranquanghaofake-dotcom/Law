@@ -23,9 +23,11 @@ const [html, out] = pos, GIU = opt("giu", 1200), RONG = opt("rong", 960);
       section.s.xem { display: block !important; } section.s.do { display: block !important; visibility: hidden !important; }`;
     document.head.appendChild(st); window.scrollTo(0, 0);
     // nội suy một lần chuyển: mỗi mục { el, a, b } — a, b = hộp (trái, trên, rộng, cao, xoay, cỡ chữ, độ đục)
+    // hoà hình như PowerPoint: hình mới hiện nhanh (40 % đầu), hình cũ tắt chậm (từ 30 %) — giữa chừng không bị trong suốt nhìn xuyên nền
     window.__xmSet = (t) => { const e = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2, L = (x, y) => x + (y - x) * e;
       for (const { el, a, b } of window.__xm || []) { for (const k of ["l", "t", "w", "h"]) if (a[k] != null) el.style.setProperty({ l: "left", t: "top", w: "width", h: "height" }[k], L(a[k], b[k]) + "px", "important");
-        if (a.r != null) el.style.setProperty("rotate", L(a.r, b.r) + "deg", "important"); if (a.fs != null) el.style.setProperty("font-size", L(a.fs, b.fs) + "px", "important"); el.style.setProperty("opacity", String(L(a.op, b.op)), "important"); } };
+        if (a.r != null) el.style.setProperty("rotate", L(a.r, b.r) + "deg", "important"); if (a.fs != null) el.style.setProperty("font-size", L(a.fs, b.fs) + "px", "important");
+        const vao = b.op > a.op, tt = vao ? Math.min(1, t / 0.4) : Math.max(0, (t - 0.3) / 0.7); el.style.setProperty("opacity", String(a.op + (b.op - a.op) * tt), "important"); } };
     return document.querySelectorAll("section.s").length; });
   const tu = Math.max(1, opt("tu", 1)), den = Math.min(n, opt("den", n));
   let f = 0; const chup = async (lap = 1) => { const p = path.join(dir, `f${String(f).padStart(5, "0")}.jpg`); await page.screenshot({ path: p, type: "jpeg", quality: 85 }); f++; for (let i = 1; i < lap; i++) { fs.copyFileSync(p, path.join(dir, `f${String(f).padStart(5, "0")}.jpg`)); f++; } };
@@ -33,22 +35,23 @@ const [html, out] = pos, GIU = opt("giu", 1200), RONG = opt("rong", 960);
   await page.waitForTimeout(200); await chup(Math.round(GIU / 1000 * FPS));
   for (let k = tu; k < den; k++) {
     const dur = await page.evaluate((k) => {
-      // hai slide cùng hiện (B đè lên A, nền của B mờ vào); dời thẳng phần tử thật — không nhân bản (nhân bản làm trùng id gradient của SVG)
+      // hai slide cùng hiện: A NẰM TRÊN (bỏ nền), B nằm dưới giữ nền — vật cũ tắt dần lộ vật mới bên dưới, như PowerPoint hoà hình
+      // dời thẳng phần tử thật — không nhân bản (nhân bản làm trùng id gradient của SVG)
       const S = [...document.querySelectorAll("section.s")], A = S[k - 1], B = S[k], dur = +(B.dataset.dur || 900);
       const key = (el) => el.getAttribute("data-m"), so = (v) => parseFloat(v) || 0, giu = new Map();
       const nho = (el) => { if (!giu.has(el)) giu.set(el, el.style.cssText); };
       const hop = (el) => { const c = getComputedStyle(el); return { l: el.offsetLeft, t: el.offsetTop, w: el.offsetWidth, h: el.offsetHeight, r: c.rotate === "none" ? 0 : so(c.rotate), fs: so(c.fontSize), op: so(c.opacity) }; };
       A.classList.add("xem"); B.classList.add("xem");
-      const cB = getComputedStyle(B), bg = document.createElement("div");
-      bg.className = "xm-bg"; bg.style.cssText = `position:absolute;inset:0;z-index:-1;background-image:${cB.backgroundImage};background-color:${cB.backgroundColor};background-size:${cB.backgroundSize};background-position:${cB.backgroundPosition};background-repeat:${cB.backgroundRepeat}`;
-      nho(B); B.style.setProperty("background", "none", "important"); B.prepend(bg);
+      const cA = getComputedStyle(A), cB = getComputedStyle(B), giongNen = cA.backgroundImage === cB.backgroundImage && cA.backgroundColor === cB.backgroundColor, bg = document.createElement("div");
+      bg.className = "xm-bg"; bg.style.cssText = `position:absolute;inset:0;z-index:-1;background-image:${cA.backgroundImage};background-color:${cA.backgroundColor};background-size:${cA.backgroundSize};background-position:${cA.backgroundPosition};background-repeat:${cA.backgroundRepeat}`;
+      nho(A); nho(B); A.style.setProperty("background", "none", "important"); A.style.setProperty("z-index", "2", "important"); B.style.setProperty("z-index", "1", "important"); A.prepend(bg);
       const top = (R) => [...R.querySelectorAll("[data-t], [data-l]")].filter((el) => !(el.parentElement && el.parentElement.closest("[data-t], [data-l]")));
       const aAll = top(A), bAll = top(B), aMap = new Map(aAll.filter(key).map((el) => [key(el), el])), ha = new Map(aAll.map((el) => [el, hop(el)])), hb = new Map(bAll.map((el) => [el, hop(el)]));
-      const ds = [{ el: bg, a: { op: 0 }, b: { op: 1 } }], dung = new Set();
+      const ds = [{ el: bg, a: { op: giongNen ? 0 : 1 }, b: { op: 0 } }], dung = new Set();
       for (const el of bAll) { const h = hb.get(el), m = key(el), p = m && aMap.get(m); nho(el);
         if (!p) { ds.push({ el, a: { ...h, l: null, fs: null, r: null, op: 0 }, b: h }); continue; }
         dung.add(p); nho(p); const h0 = ha.get(p);
-        if (p.innerHTML === el.innerHTML) { ds.push({ el, a: { ...h0, op: h.op }, b: h }); ds.push({ el: p, a: { ...h0, l: null, fs: null, r: null, op: 0 }, b: { op: 0 } }); }
+        if (p.innerHTML === el.innerHTML) { ds.push({ el: p, a: h0, b: h }); ds.push({ el, a: { ...h, l: null, fs: null, r: null, op: 0 }, b: { op: 0 } }); }   // giống hệt: bản ở lớp trên (A) di chuyển, bản B ẩn tới cuối
         else { ds.push({ el, a: { ...h0, op: 0 }, b: h }); ds.push({ el: p, a: h0, b: { ...h, op: 0 } }); } }
       for (const el of aAll) if (!dung.has(el)) { const h = ha.get(el); nho(el); ds.push({ el, a: { ...h, l: null, fs: null, r: null }, b: { ...h, op: 0 } }); }
       window.__xm = ds; window.__xmGiu = giu; window.__xmAB = [A, B]; window.__xmSet(0); return dur;
