@@ -299,4 +299,6 @@ const css = `
 .bc-no { flex: none; width: 46px; height: 46px; background: #c8261e; color: #fff; font: 400 30px/46px var(--fd); text-align: center; margin-top: 4px; }
 `;
 
-module.exports = { TYPES, render, css };
+// type thường tương đương (Bước 0 so với kế hoạch prep.json) — chỉ các cặp rõ; type khác vẫn được kể là đổi type
+const TUONG_DUONG = { bcbia: ["cover"], bcchuong: ["section"], bccamon: ["end"], bcso: ["compare", "duel"], bccauhoi: ["quizgo", "quiz", "bigq"], bchoi: ["end"] };
+module.exports = { TYPES, render, css, TUONG_DUONG };

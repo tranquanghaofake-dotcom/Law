@@ -158,4 +158,6 @@ const css = `
 .qt-cap { position: absolute; font: 700 30px/1.3 var(--fb); color: #eef2f8; text-shadow: 0 2px 8px rgba(0,0,0,.6); }
 `;
 
-module.exports = { TYPES, render, css };
+// type thường tương đương (Bước 0 so với kế hoạch prep.json)
+const TUONG_DUONG = { qtbia: ["cover"], qtchuong: ["section"], qtban: ["cards"] };
+module.exports = { TYPES, render, css, TUONG_DUONG };

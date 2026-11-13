@@ -134,3 +134,13 @@ test("deck dẫn điều luật: phải có số hiệu văn bản ở đâu đ�
   const r2 = await KND.kiemNoiDung(du, { deckDir: thuMuc() });
   assert.ok(![...r2.warnings, ...r2.hints].some((x) => /số hiệu văn bản|tình trạng hiệu lực|không phải tư vấn/.test(x)), [...r2.warnings, ...r2.hints].join("\n"));
 });
+
+test("Bước 0: type của bộ hình tương đương type kế hoạch (cover → bhbia, section → bhchuong) không bị kể là 'đổi type'", async () => {
+  const dir = thuMuc(), cu = process.env.SLIDE_CHUAN_NO_PREP; process.env.SLIDE_CHUAN_NO_PREP = "0";
+  fs.writeFileSync(path.join(dir, "prep.json"), JSON.stringify({ approved: true, plan: [{ slide: 1, type: "cover" }, { slide: 2, type: "section" }, { slide: 3, type: "chart" }, { slide: 4, type: "end" }] }));
+  try {
+    const r = await KND.kiemNoiDung({ meta: {}, slides: [{ type: "bhbia", title: "B" }, { type: "bhchuong", title: "Phần một của bài" }, { type: "bhmat", title: "Rút một lần là mất thời gian" }, { type: "bhket", title: "K" }] }, { deckDir: dir, extraTypes: require("../hinh/so_bhxh").TYPES });
+    const h = r.hints.find((x) => /đổi type/.test(x)) || "";
+    assert.match(h, /1 slide đổi type .*3: chart→bhmat/, h); assert.doesNotMatch(h, /cover→bhbia|section→bhchuong|end→bhket/);
+  } finally { process.env.SLIDE_CHUAN_NO_PREP = cu; }
+});

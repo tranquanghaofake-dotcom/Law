@@ -613,4 +613,10 @@ const css = `
 .bh-gh { font: 400 128px/1.06 'Anton', sans-serif; text-transform: uppercase; color: #072a6b; } .bh-gh em { color: #${P.blue}; }
 .bh-gn { font: 400 130px/1 'Anton', sans-serif; } .bh-gt { font: 700 30px/1.3 var(--fb); }`;
 
-module.exports = { TYPES, render, css };
+// type thường mà mỗi type bh* đảm nhận (prep.json lập kế hoạch bằng type thường) — Bước 0 không kể là "đổi type" khi khớp
+const TUONG_DUONG = { bhbia: ["cover"], bhdo: ["bigq", "statement"], bhtang: ["statement", "stats", "hero"], bhba: ["picks", "agenda"], bhchuong: ["section"],
+  bhtrich: ["quote", "lawquote", "book"], bhvaitro: ["cards"], bhnhom: ["cards"], bhmorong: ["cases", "cards"], bhrutngan: ["tiles", "compare"],
+  bhduong: ["journey", "timeline"], bhphieu5: ["cheatsheet", "table"], bhcongthuc: ["formula"], bhcot2: ["chart"], bhche: ["tiles", "chart"],
+  bhquy: ["sheet", "chart"], bhrut: ["hero"], bhmat: ["chain"], bhdat: ["bento", "stats"], bhhanche: ["cards"], bhkiennghi: ["cards"],
+  bhhoi: ["quizgo", "quiz"], bhtraloi: ["closing"], bhghinho: ["recap"], bhket: ["end"] };
+module.exports = { TYPES, render, css, TUONG_DUONG };

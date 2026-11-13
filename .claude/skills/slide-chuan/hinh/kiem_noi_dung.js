@@ -136,7 +136,9 @@ async function kiemNoiDung(deck, { deckDir = process.cwd(), extraTypes = [] } = 
         if (thieu.length) hints.push(`Bước 0: hình chưa có (${thieu.join("; ")}) — deck này dùng cách thể hiện khác; ghi lại để bổ sung skill sau, không sửa skill giữa lúc làm deck`);
         const plan = Array.isArray(pr.plan) ? pr.plan : [];
         if (plan.length && Math.abs(plan.length - slides.length) / plan.length > 0.25) warnings.push(`Bước 0: kế hoạch duyệt ${plan.length} slide nhưng deck có ${slides.length} — lệch > 25%: cập nhật prep.json và báo người dùng`);
-        if (plan.length) { const diff = plan.map((q, i) => (q && q.type && slides[i] && slides[i].type !== q.type ? `${i + 1}: ${q.type}→${slides[i].type}` : null)).filter(Boolean);
+        if (plan.length) { const TD = Object.assign({}, ...["so_bhxh", "bang_chung", "hoi_nghi"].map((m) => { try { return require(`./${m}`).TUONG_DUONG || {}; } catch { return {}; } }));
+          const khac = (q, sl) => sl.type !== q.type && !(TD[sl.type] || []).includes(q.type);   // bhbia thay cover: cùng ý định, không kể là đổi
+          const diff = plan.map((q, i) => (q && q.type && slides[i] && khac(q, slides[i]) ? `${i + 1}: ${q.type}→${slides[i].type}` : null)).filter(Boolean);
           if (diff.length) hints.push(`Bước 0: ${diff.length} slide đổi type so với kế hoạch (${diff.slice(0, 6).join(", ")}${diff.length > 6 ? "…" : ""}) — nêu lý do khi báo người dùng`); }
       } }
   }
