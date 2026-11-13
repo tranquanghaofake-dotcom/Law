@@ -59,6 +59,12 @@ def main():
         print("Thiếu thư viện Python:", e, "(pip install python-pptx pdfplumber)"); sys.exit(2)
     pptx = os.path.abspath(sys.argv[1])
     if not os.path.isfile(pptx): print(f"✗ Không có file {pptx} — build chưa tạo ra PPTX (xem lỗi của engine/build.js)."); sys.exit(2)
+    import zipfile
+    if os.environ.get("SLIDE_CHUAN_FORCE_OVERFLOW") != "1" and any(n.startswith("ppt/fonts/") for n in zipfile.ZipFile(pptx).namelist()):
+        print("ℹ PPTX tầng hình ảnh (có font nhúng Anton / Be Vietnam): LibreOffice không đọc font nhúng nên phép đo này sẽ sai.\n"
+              "  Kiểm tràn của tầng này: node hinh/dung.js <deck.json> --soat (đo bằng Chromium với đúng font). Bỏ qua, thoát 0.\n"
+              "  Muốn chạy vẫn: SLIDE_CHUAN_FORCE_OVERFLOW=1")
+        sys.exit(0)
     tmp = tempfile.mkdtemp()
     pdf = os.path.abspath(sys.argv[2]) if len(sys.argv) > 2 else render_pdf(pptx, tmp)
     prs = Presentation(pptx)

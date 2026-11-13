@@ -68,7 +68,7 @@ function collectInPage() {
       const an = { a: inh("a"), at: num(inh("at")), dur: inh("dur") == null ? null : num(inh("dur")), lin: own("lin") != null || (lay && lay.hasAttribute("data-lin")), out: inh("out"), click: num(inh("click")),
         em: own("em") || (el.hasAttribute("data-pulse") ? "pulse" : null), emAt: own("emat") == null ? null : num(own("emat")), mv: mv ? { dx: mv[0] / 1920, dy: mv[1] / 1080, at: mv[2] || 0, dur: mv[3] || 1000 } : null };
       let m = own("m");
-      if (!m && lay && lay.getAttribute("data-m")) { const k = (perLayer.get(lay) || 0) + 1; perLayer.set(lay, k); m = `${lay.getAttribute("data-m")}-chu${k}`; } // chữ trong lớp có Morph đi theo lớp
+      if (!m && lay && lay.getAttribute("data-m") && lay.getAttribute("data-mt") !== "0") { const k = (perLayer.get(lay) || 0) + 1; perLayer.set(lay, k); m = `${lay.getAttribute("data-m")}-chu${k}`; } // chữ trong lớp có Morph đi theo lớp
       const base = { i, m, n: own("n"), go: own("go") || inherit(el, "go"), goOwn: el.hasAttribute("data-go"), an, alt: own("alt") || "" };
       if (isW) {
         const src = S.querySelector(own("of")); if (!src) { console.warn("data-of không tìm thấy:", own("of")); return; }
@@ -137,6 +137,7 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
   if (!giuLop) fs.rmSync(work, { recursive: true, force: true }); fs.mkdirSync(work, { recursive: true });
   for (const f of FACES) f.miss = new Set();
   const { chromium } = require("playwright");
+  if (process.env.PW_CHROMIUM && !require("fs").existsSync(process.env.PW_CHROMIUM)) { console.warn(`⚠ PW_CHROMIUM=${process.env.PW_CHROMIUM} không phải file chạy được — bỏ qua và tự dò (ví dụ đúng: /opt/pw-browsers/chromium).`); delete process.env.PW_CHROMIUM; }
   const browser = await (process.env.PW_CHROMIUM ? chromium.launch({ executablePath: process.env.PW_CHROMIUM }) : chromium.launch().catch(() => chromium.launch({ executablePath: "/opt/pw-browsers/chromium" })));
   const page = await browser.newPage({ viewport: { width: SW, height: SH }, deviceScaleFactor: 2 });
   page.on("console", (m) => { if (m.type() === "warning" || m.type() === "error") console.warn("⚠ trang:", m.text()); });

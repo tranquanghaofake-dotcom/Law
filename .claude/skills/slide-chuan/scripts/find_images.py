@@ -27,16 +27,42 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from img_quality import assess, label  # chấm chất lượng kỹ thuật (nét, sáng, cháy, nhiễu, cỡ)
 
 
+# In tiến độ ngay từng dòng kể cả khi chạy qua ống ("… | tail" từng giữ hết đầu ra tới cuối, nhìn như treo — mục E, N10).
+try: sys.stdout.reconfigure(line_buffering=True)
+except Exception: pass
+
+# Máy chủ bị bỏ qua cho hết lượt chạy: đã trả 429 (giới hạn tần suất — thử lại chỉ tốn thời gian) hoặc đã tiêu hết ngân sách thời gian.
+BO_QUA = {}
+DA_TIEU = {}
+NGAN_SACH = float(os.environ.get("FIND_IMAGES_NGAN_SACH", "90"))   # giây cho mỗi máy chủ trong một lượt chạy
+
+
 def get(url, tries=4):
+    host = urllib.parse.urlsplit(url).netloc
+    if host in BO_QUA:
+        raise RuntimeError(f"{host}: bỏ qua cho hết lượt chạy ({BO_QUA[host]})")
+    loi5 = 0
     for k in range(tries):
+        t0 = time.monotonic()
         try:
             req = urllib.request.Request(url, headers={"User-Agent": UA})
             with urllib.request.urlopen(req, timeout=30) as r:
                 return r.read()
-        except Exception as e:
+        except urllib.error.HTTPError as e:
+            if e.code == 429:
+                BO_QUA[host] = "đã trả 429 — giới hạn tần suất"; raise
+            loi5 += e.code >= 500
+            if k == tries - 1 or loi5 > 1 or e.code < 500:
+                raise
+            time.sleep(2 ** (k + 1))
+        except Exception:
             if k == tries - 1:
                 raise
             time.sleep(2 ** (k + 1))
+        finally:
+            DA_TIEU[host] = DA_TIEU.get(host, 0) + time.monotonic() - t0
+            if DA_TIEU[host] > NGAN_SACH and host not in BO_QUA:
+                BO_QUA[host] = f"đã dùng hết {NGAN_SACH:.0f} s (FIND_IMAGES_NGAN_SACH)"
 
 
 def norm_license(s):
