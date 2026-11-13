@@ -67,6 +67,9 @@ function dungHtml(deck, { deckDir = process.cwd(), mau, chuyen } = {}) {
     let h = decoGan(s, ctx, i, r.html, prev, st.prev);
     if (deck.meta?.motif && !ctx.img(s.photo)) h = DA.motifSlide(h, deck.meta.motif, daTen, s.type, i);
     if (daTen) h = DA.phuSlide(h, daTen, { type: s.type, i, chu: [s.kicker, s.title, s.sub].filter(Boolean).join(" ").replace(/[[\]]/g, ""), coHinhDan: !!((s.emoji && ctx.hasEmoji(s.emoji)) || s.cutout), coAnh: !!ctx.img(s.photo), art: s.art });
+    // pin: MỘT câu chính trên tờ giấy ghim (validate.js kiểm ≤ 90 ký tự, có "by" khi là câu trích); hinh.js tự tìm chỗ trống, không có chỗ → kiemTran báo
+    if (s.pin != null && !["cover", "section", "end"].includes(s.type)) { const pt = typeof s.pin === "string" ? s.pin : s.pin.text || "", by = typeof s.pin === "object" ? s.pin.by : "";
+      h = h.replace(/^<section class="s /, `<section class="s co-ghim `).replace(/<\/section>\s*$/, `<div class="ghim-giay" data-ghim data-in="pop" style="--i:60"><p>${esc(pt).replace(/\[([^\]]+)\]/g, "<em>$1</em>")}</p>${by ? `<small>— ${esc(by)}</small>` : ""}</div></section>`); }
     out.push({ id: s.id || `s${i + 1}`, html: h, tu: true, notes: note, src: i, trans: s.trans, dur: s.dur });
   });
   // nút Mục lục ở thanh đầu slide (khi deck có slide toc): chữ "Mục lục" + cuốn sách thu nhỏ nếu deck mở bằng cảnh book
@@ -95,6 +98,7 @@ ${tomau(body)}
 <script>
 ${canh.script || ""}
 hinhKhiSanSang(() => document.querySelectorAll("section.s").forEach((S) => hinhDatHinhDan(S)));
+hinhKhiSanSang(() => document.querySelectorAll("section.s[data-tu]").forEach((S) => hinhDatGiayGhim(S)));
 hinhKhiSanSang(() => document.querySelectorAll("section.s[data-tu]").forEach((S) => hinhDatVatDa(S)));
 hinhKhiSanSang(() => document.querySelectorAll("section.s[data-tu]").forEach((S) => hinhTuGan(S, ${JSON.stringify({ nhip: +H.nhip || 110, fx: daTen ? DA.CHUYEN[DA.DA[daTen].chuyen] : null })})));
 hinhKhiSanSang(() => hinhCanLeQuangHoc());
@@ -116,7 +120,8 @@ const kiemTranCu = (page) => page.evaluate(() => [...document.querySelectorAll("
 }).filter(Boolean));
 // lawquote: nét bút vàng chỉ phủ được cụm nhấn nằm trọn một dòng; kiem_de: chữ bị lớp ảnh đè, hai hộp chữ đè nhau (mục E, N5)
 const { kiemDeTrongTrang } = require("./kiem_de");
-const kiemTran = async (page) => [...(await kiemTranCu(page)), ...(await page.evaluate(kiemDeTrongTrang)), ...(await page.evaluate(() => [...document.querySelectorAll(".paper .pq b")].filter((b) => b.getClientRects().length > 1).map((b) => `slide "${((b.closest("section.s") || {}).dataset || {}).title || "lawquote"}" (lawquote): cụm nhấn [ ] bị xuống dòng — nét bút chỉ phủ dòng đầu; rút ngắn cụm hoặc đặt ở cuối câu`)))];
+const kiemGhim = (page) => page.evaluate(() => [...document.querySelectorAll(".ghim-giay[data-khong-cho]")].map((g) => `slide "${((g.closest("section.s") || {}).dataset || {}).title || "?"}": tờ giấy ghim (pin) không có chỗ trống — đã ẩn; rút nội dung slide, rút câu pin, hoặc chuyển câu đó vào takeaway / notes`));
+const kiemTran = async (page) => [...(await kiemTranCu(page)), ...(await kiemGhim(page)), ...(await page.evaluate(kiemDeTrongTrang)), ...(await page.evaluate(() => [...document.querySelectorAll(".paper .pq b")].filter((b) => b.getClientRects().length > 1).map((b) => `slide "${((b.closest("section.s") || {}).dataset || {}).title || "lawquote"}" (lawquote): cụm nhấn [ ] bị xuống dòng — nét bút chỉ phủ dòng đầu; rút ngắn cụm hoặc đặt ở cuối câu`)))];
 
 async function dung({ deckPath, outPath, mau, chuyen, soat = false, nhungFont = true, htmlOnly = false, strict = false, titles = false }) {
   deckPath = path.resolve(deckPath); const deckDir = path.dirname(deckPath), name = path.basename(deckPath, ".json");

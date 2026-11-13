@@ -53,12 +53,26 @@
       const l = parseFloat(e.style.left), t = parseFloat(e.style.top); dat.push({ l, t, r: l + s, b: t + s });
     }
   };
+  // tờ giấy ghim (pin trong deck.json): tìm chỗ trống không chạm chữ / thẻ / hình, ưu tiên bên phải rồi từ trên xuống; không có → ẩn + data-khong-cho (dung.js báo)
+  const vungChiem = (S, bo, le) => { const B = S.getBoundingClientRect(), k = S.offsetWidth / B.width, v = [];
+    for (const el of S.querySelectorAll(".h, .k, .sub, .note, .card, table, .stat, .body svg, .body img, [data-in], .emo, .da-art, .bar, .zml")) {
+      if (bo(el)) continue; let q = el.getBoundingClientRect(); if (!q.width || !q.height) continue;
+      if (el.matches(".h, .k, .sub, .note")) { const r = document.createRange(); r.selectNodeContents(el); const c = r.getBoundingClientRect(); if (c.width) q = { left: Math.min(c.left, q.left), top: q.top, right: c.right, bottom: q.bottom }; }   // khối chữ: hộp rộng hết dòng, chỉ tính tới nét chữ cuối
+      v.push({ l: (q.left - B.left) * k - le, t: (q.top - B.top) * k - le, r: (q.right - B.left) * k + le, b: (q.bottom - B.top) * k + le }); }
+    return v; };
+  window.hinhDatGiayGhim = (S) => {
+    const g = S.querySelector(".ghim-giay[data-ghim]"); if (!g) return;
+    const vat = vungChiem(S, (el) => el.closest(".ghim-giay, .da-vat"), 22), w = g.offsetWidth, h = g.offsetHeight, H = S.offsetHeight;
+    const trung = (l, t) => vat.some((q) => l < q.r && l + w > q.l && t < q.b && t + h > q.t);
+    for (const l of [1920 - 110 - w, 1920 - 110 - w - 160, 1100, 820, 540, 110]) for (let t = 96; t + h <= H - 36; t += 12) if (!trung(l, t)) { g.style.left = l + "px"; g.style.top = t + "px"; return; }
+    g.dataset.khongCho = "1"; g.style.display = "none";
+  };
   // đồ vật tiền cảnh của da (.da-vat[data-da-vat], hinh/da.js): đặt vào góc trống đầu tiên không chạm chữ / thẻ / hình; không còn chỗ thì bỏ
   window.hinhDatVatDa = (S) => {
     const v = S.querySelector(".da-vat[data-da-vat]"); if (!v) return;
     const B = S.getBoundingClientRect(), k = S.offsetWidth / B.width, s = v.offsetWidth, vat = [];
-    for (const el of S.querySelectorAll(".h, .k, .sub, .note, .card, table, .stat, .body svg, .body img, [data-in], .emo, .da-art")) {
-      if (el.closest(".da-vat")) continue; const q = el.getBoundingClientRect(); if (!q.width || !q.height) continue;
+    for (const el of S.querySelectorAll(".h, .k, .sub, .note, .card, table, .stat, .body svg, .body img, [data-in], .emo, .da-art, .ghim-giay")) {
+      if (el.closest(".da-vat") || el.matches(".ghim-giay[data-khong-cho]")) continue; const q = el.getBoundingClientRect(); if (!q.width || !q.height) continue;
       vat.push({ l: (q.left - B.left) * k - 30, t: (q.top - B.top) * k - 30, r: (q.right - B.left) * k + 30, b: (q.bottom - B.top) * k + 30 }); }
     const trung = (l, t) => vat.some((q) => l < q.r && l + s > q.l && t < q.b && t + s > q.t);
     const thu = [[1660, 830], [1660, 110], [1480, 830], [70, 840], [1660, 470], [1300, 840]];
