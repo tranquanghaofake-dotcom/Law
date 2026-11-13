@@ -89,7 +89,8 @@ T.flow = (s) => {
 };
 
 const li = (x) => `<li ${inn()}><span>${f(typeof x === "string" ? x : x.text || x.head)}</span></li>`;
-T.duel = (s) => { const side = (d, c) => `<div class="card ${c}" ${inn()}><h3>${f(d.tag || d.title)}</h3><div class="s2">${f(d.sub || "")}</div><ol>${(d.items || []).map(li).join("")}</ol></div>`; return { cls: "light", html: `${head(s)}<div class="body"><div class="duo">${side(s.left || {}, "l")}${side(s.right || {}, "r")}</div></div>${note(s.footer || s.note)}` }; };
+// duel: focus = bên nền đậm (mặc định phải); paired = ý thứ i hai bên đối ứng → đánh số; không paired → chấm tròn (hai danh sách độc lập, số thứ tự sẽ nói dối là có cặp)
+T.duel = (s) => { const dam = s.focus === "left" ? "l" : "r", side = (d, c) => `<div class="card ${c} ${c === dam ? "dam" : ""}" ${inn()}><h3>${f(d.tag || d.title)}</h3><div class="s2">${f(d.sub || "")}</div><ol>${(d.items || []).map(li).join("")}</ol></div>`; return { cls: "light", html: `${head(s)}<div class="body"><div class="duo ${s.paired ? "cap" : ""}">${side(s.left || {}, "l")}${side(s.right || {}, "r")}</div></div>${note(s.footer || s.note)}` }; };
 T.compare = (s) => { const side = (d) => `<div class="card ${d.tone || ""}" ${inn()}><h3>${f(d.title)}</h3><div class="tg">${f(d.tag || "")}</div><div class="val">${f(d.value || d.head || "")}</div><p>${f(d.text || "")}</p>${d.note ? `<small>${f(d.note)}</small>` : ""}${(d.items || []).length ? `<ul class="gl">${d.items.map((x) => `<li>${f(typeof x === "string" ? x : x.text)}</li>`).join("")}</ul>` : ""}</div>`; return { cls: "light", html: `${head(s)}<div class="body"><div class="duo cmp">${side(s.left || {})}${side(s.right || {})}</div></div>${note(s.footer || s.note)}` }; };
 
 T.ledger = (s) => {
