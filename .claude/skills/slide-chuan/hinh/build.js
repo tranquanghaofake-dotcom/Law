@@ -72,7 +72,7 @@ function collectInPage() {
       let m = own("m");
       if (!m && lay && lay.getAttribute("data-m") && lay.getAttribute("data-mt") !== "0") { const k = (perLayer.get(lay) || 0) + 1; perLayer.set(lay, k); m = `${lay.getAttribute("data-m")}-chu${k}`; } // chữ trong lớp có Morph đi theo lớp
       const sauRaw = inherit(el, "sau");
-      const base = { i, m, n: own("n"), go: own("go") || inherit(el, "go"), goOwn: el.hasAttribute("data-go"), an, alt: own("alt") || "", sau: sauRaw == null ? 1 : num(sauRaw, 1) };
+      const base = { i, m, n: own("n"), go: own("go") || inherit(el, "go"), goOwn: el.hasAttribute("data-go"), an, alt: own("alt") || "", sau: sauRaw == null ? 1 : num(sauRaw, 1), td: isT && el.matches(".h, .bh-h, [data-tieu-de]") };
       if (isW) {
         const src = S.querySelector(own("of")); if (!src) { console.warn("data-of không tìm thấy:", own("of")); return; }
         const q = src.getBoundingClientRect(), cs = getComputedStyle(el), key = `${si}-${i}`;
@@ -342,6 +342,7 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
       const nm = nameOf(it, "chu"), hl = link(it);
       // nút đứng riêng (chữ tự mang data-go): đặt một ô trong suốt có liên kết NẰM DƯỚI chữ để cả mặt nút bấm được, chữ vẫn chọn sửa được
       if (hl && it.goOwn) sl.addShape(pp.ShapeType.rect, { x: (it.cx - M.ew / 2) * IN, y: (it.cy - M.eh / 2) * IN, w: M.ew * IN, h: M.eh * IN, fill: { color: "FFFFFF", transparency: 100 }, line: { type: "none" }, hyperlink: hl, objectName: `nut${si + 1}-${++auto}` });
+      if (it.td && !hl && !s.tieuDe) s.tieuDe = nm;   // hộp chữ tiêu đề đầu tiên của slide → placeholder tiêu đề (bước 5)
       if (hl) (s.tlinks = s.tlinks || []).push({ name: nm, to: hl.slide }); // liên kết ở cấp HỘP CHỮ, gắn bằng XML ở bước 5 (để pptxgenjs gắn thì chữ bị gạch chân, đổi màu)
       sl.addText(runs, { x: (cx - bw / 2) * IN, y: (cy - hgt / 2) * IN, w: bw * IN, h: hgt * IN, margin: 0, valign: "top", align: al, lineSpacing: +(L * PT).toFixed(2), paraSpaceBefore: 0, paraSpaceAfter: 0, rotate: deg(it.ang), objectName: nm, fit: "none", wrap: n > 1 && t0.st.s < 44, isTextBox: true });   // một dòng, hoặc chữ cỡ tiêu đề (≥ 44 px): không tự xuống dòng — dòng đã ngắt sẵn theo bản HTML; máy đo chữ hơi khác (thiếu font, LibreOffice) thì chữ rộng ra chứ không gãy thêm dòng đè lên khối dưới. Chữ thường nhiều dòng vẫn tự xuống dòng để sửa chữ
       fx(it, nm);
@@ -372,6 +373,12 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
     // để trình đọc màn hình bỏ qua — chữ của chúng là hộp chữ riêng; ảnh có nội dung giữ alt
     t = t.replace(/(<p:cNvPr [^>]*descr="(?:Nhãn|Thẻ|Vòng nền|Thanh tiến độ|Tiến độ bài|Lớp phủ màu|Vạch|Trục|Dải đánh dấu|Hình trang trí|Số chú thích|Khung của: [^"]*)"[^>]*>)\s*<\/p:cNvPr>/g,
       '$1<a:extLst><a:ext uri="{C183D7F6-B498-43B3-948B-1728B52AA6E4}"><adec:decorative xmlns:adec="http://schemas.microsoft.com/office/drawing/2017/decorative" val="1"/></a:ext></a:extLst></p:cNvPr>');
+    // TIÊU ĐỀ SLIDE: hộp chữ tiêu đề thành placeholder tiêu đề — bộ kiểm khả năng tiếp cận hết báo "thiếu tiêu đề", danh sách slide khi
+    // trình chiếu / hộp liên kết / dàn ý có tên slide. Mọi định dạng đã ghi rõ trong XML; thêm noAutofit để PowerPoint không tự co chữ
+    if (s.tieuDe) { const nm = s.tieuDe.replace(/&/g, "&amp;"), a = `name="${nm}"></p:cNvPr><p:cNvSpPr txBox="1"/><p:nvPr></p:nvPr>`, k = t.indexOf(a);
+      if (k >= 0) { t = t.slice(0, k) + `name="${nm}"></p:cNvPr><p:cNvSpPr><a:spLocks noGrp="1"/></p:cNvSpPr><p:nvPr><p:ph type="title"/></p:nvPr>` + t.slice(k + a.length);
+        const b = t.indexOf("<a:bodyPr", k), e = t.indexOf("</a:bodyPr>", b), e2 = t.indexOf(">", b);
+        if (b > 0 && e > 0 && t[e2 - 1] !== "/" && t.slice(b, e).indexOf("Autofit") < 0) t = t.slice(0, e) + "<a:noAutofit/>" + t.slice(e); } }
     const map = X.shapeIds(t), fx = effects.map((e) => (map[e.name] ? { ...e, sp: map[e.name].sp, isText: map[e.name].isText } : null)).filter(Boolean);
     if (fx.length !== effects.length) warn.push(`slide ${i + 1}: ${effects.length - fx.length} hiệu ứng không tìm thấy đối tượng`);
     const tm = X.timing(fx); if (tm) t = t.replace("</p:sld>", tm + "</p:sld>");
