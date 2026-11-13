@@ -432,3 +432,7 @@ th.on { background: var(--hl); } td.on { background: var(--paper-2); font-weight
 .qcut.cut-l, .qcut.cut-r { right: 0; bottom: auto; top: 250px; height: 620px; max-width: 760px; } .qcut.cut-l { object-position: left center; transform: scaleX(-1); } .qcut.cut-r { object-position: right center; }
 .qcut.cut-t { top: 0; bottom: auto; object-position: right top; }
 .q-cut.sec .h, .q-cut.end .h { max-width: 1040px; } .q-cut .sub { max-width: 1040px; } .q-cut.sec .big { opacity: .25; }
+.stat.t-bad .v { color: var(--bad); } .stat.t-good .v { color: var(--good); }   /* tone theo dữ liệu thắng màu nhấn "ô cuối" */
+.gl li.ic { padding-left: 52px; } .gl li.ic::before { display: none; } .gl li.ic > .ico { position: absolute; left: 0; top: 2px; font-size: 38px; color: var(--hl); }
+.sp-ph .co-r { width: 130px; height: 130px; margin: -65px 0 0 -65px; }
+.ig.ig-ic { grid-template-columns: repeat(22, 1fr); } .ig.ig-ic.ic-note { grid-template-columns: repeat(17, 1fr); } .ig.ig-ic i.ic { aspect-ratio: 1; background: none; border: 0; color: var(--green); } .ig.ig-ic.ic-note i.ic { aspect-ratio: 1.5; }   /* hình vuông (người, nhà, ngày) → lưới 22 cột cho cùng chiều cao; tờ tiền giữ 1,5 : 1 */ .ig.ig-ic i.ic .ico, .ig.ig-ic i.ic svg { display: block; width: 100%; height: 100%; } .ig.ig-ic i.ic.lost { border: 0; color: var(--red); }
