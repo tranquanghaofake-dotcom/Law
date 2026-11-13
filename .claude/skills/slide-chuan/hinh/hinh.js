@@ -34,7 +34,7 @@
       const lech = netDau(ch, `${pc.fontStyle} ${pc.fontWeight} ${parseFloat(pc.fontSize)}px ${pc.fontFamily}`, parseFloat(pc.fontSize));   // > 0: nét chữ bắt đầu sau điểm gốc
       if (lech > 0.75 && lech < px * 0.2) { el.style.marginLeft = `${(parseFloat(cs.marginLeft) || 0) - lech}px`; el.dataset.quangHoc = lech.toFixed(1); } } catch (e) { el.dataset.quangHocLoi = String(e && e.message || e).slice(0, 80); } };   // một phần tử lỗi không chặn cả trang
   window.hinhCanLeQuangHoc = canLeQuangHoc;   // dung.js gọi lại sau hinhTuGan: slide từ bộ mẫu chỉ có data-t sau bước tự gắn nhãn (phần tử đã dịch thì bỏ qua)
-  // GIỮ LIỀN TỪ GHÉP trong chữ trưng bày (≥ 40 px: tiêu đề, số lớn): trình duyệt không biết "hệ thống" là một từ → từng ngắt "rời hệ / thống".
+  // GIỮ LIỀN TỪ GHÉP (mọi cỡ chữ; trước 11/2026 chỉ chữ ≥ 40 px — chữ thân vẫn tách "trợ / cấp"): trình duyệt không biết "hệ thống" là một từ → từng ngắt "rời hệ / thống".
   // Thay dấu cách giữa hai âm tiết của từ ghép thường gặp bằng dấu cách không ngắt (U+00A0); build.js chép đúng dòng sang PPTX.
   const TU_GHEP = ("hệ thống|lao động|bảo hiểm|xã hội|an sinh|y tế|thất nghiệp|hưu trí|tử tuất|ốm đau|thai sản|lương hưu|tiền lương|thu nhập|trợ cấp|một lần|"
     + "doanh nghiệp|hợp đồng|pháp luật|quy định|điều kiện|nghĩa vụ|quyền lợi|giao dịch|vô hiệu|tài sản|nhà nước|cơ quan|toà án|tòa án|bản án|thế chấp|"
@@ -42,10 +42,14 @@
     + "thời gian|thời hạn|người dân|việc làm|làm việc|chính sách|quỹ bảo|tham gia|bắt buộc|tự nguyện|phạm vi|đối tượng|hình sự|dân sự|hành chính|"
     + "trách nhiệm|bồi thường|thiệt hại|vi phạm|xử phạt|tố tụng|khởi kiện|ngân hàng|tín dụng|hoá đơn|hóa đơn|thuế suất|quốc tế|điều ước|lãnh thổ").split("|");
   const reGhep = new RegExp(`(?<![\\p{L}\\p{M}])(?:${TU_GHEP.map((t) => t.replace(" ", "\\s+")).join("|")})(?![\\p{L}\\p{M}])`, "giu");
+  // mọi cỡ chữ: số hiệu pháp lý ("Điều 2", "khoản 1", "điểm m" — từng tách "điểm / m") và số + đơn vị ("15 năm", "75 %", "800.000 người")
+  const reLuat = /(?<![\p{L}\p{M}])(Điều|điều|Khoản|khoản|Điểm|điểm|Chương|chương|Mục|mục|Đ\.)\s+(\d+[a-zđ]?|[a-zđ])(?![\p{L}\p{M}\d])/gu;
+  const reSo = /(\d[\d.,]*)\s+(%|triệu|tỷ|tỉ|nghìn|ngàn|năm|tháng|ngày|tuổi|người|đồng|đ)(?![\p{L}\p{M}])/gu;
   const giuTuGhep = () => {
     for (const S of document.querySelectorAll("section.s")) { const w = document.createTreeWalker(S, NodeFilter.SHOW_TEXT);
-      for (let n; (n = w.nextNode());) { const p = n.parentElement; if (!p || !/\s/.test(n.textContent) || parseFloat(getComputedStyle(p).fontSize) < 40) continue;
-        const moi = n.textContent.normalize("NFC").replace(reGhep, (m) => m.replace(/\s+/g, "\u00a0")); if (moi !== n.textContent) n.textContent = moi; } } };
+      for (let n; (n = w.nextNode());) { const p = n.parentElement; if (!p || !/\s/.test(n.textContent) || p.closest("svg, script, style")) continue;
+        const moi = n.textContent.normalize("NFC").replace(reGhep, (m) => m.replace(/\s+/g, "\u00a0")).replace(reLuat, "$1\u00a0$2").replace(reSo, "$1\u00a0$2");
+        if (moi !== n.textContent) n.textContent = moi; } } };
   window.hinhKhiSanSang(giuTuGhep);   // trước căn lề quang học và mọi việc đặt chỗ theo vị trí chữ
   window.hinhKhiSanSang(canLeQuangHoc);
   window.hinhDatHinhDan = (S) => {

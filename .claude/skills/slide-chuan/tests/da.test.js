@@ -145,7 +145,7 @@ test("trường tầng hình ảnh không đọc thì phải nói ra: mode lệc
   assert.ok(kiemDeck(d).some((m) => /"build" bị bỏ qua: slide 3/.test(m)));
 });
 
-test("chữ trưng bày giữ liền từ ghép (hệ thống, lao động…) bằng dấu cách không ngắt; chữ thân không đổi", { skip: (() => { try { require.resolve("playwright"); return false; } catch { return "không có Playwright"; } })(), timeout: 60000 }, async () => {
+test("giữ liền từ ghép (hệ thống, lao động…) bằng dấu cách không ngắt, ở cả tiêu đề và chữ thân", { skip: (() => { try { require.resolve("playwright"); return false; } catch { return "không có Playwright"; } })(), timeout: 60000 }, async () => {
   const { chromium } = require("playwright"), fs = require("fs"), os = require("os");
   const exe = process.env.PW_CHROMIUM || ["/opt/pw-browsers/chromium"].find((p) => fs.existsSync(p));
   const b = await chromium.launch(exe ? { executablePath: exe } : {}), page = await (await b.newContext({ viewport: { width: 1920, height: 1080 } })).newPage();
@@ -155,7 +155,7 @@ test("chữ trưng bày giữ liền từ ghép (hệ thống, lao động…) b
     await page.goto("file://" + f); await page.evaluate(() => window.hinhSanSang);
     const q = await page.evaluate(() => { const s = document.querySelectorAll("section.s")[1]; return { h: s.querySelector(".h").textContent, than: [...s.querySelectorAll(".card *")].map((e) => e.textContent).find((t) => /rời hệ/.test(t)) || "" }; });
     assert.ok(q.h.includes("hệ thống") && q.h.includes("một lần") && q.h.includes("an sinh"), JSON.stringify(q.h));
-    assert.ok(!q.than.includes(" "), "chữ thân (< 40 px) giữ dấu cách thường");
+    assert.ok(q.than.includes("hệ\u00a0thống"), "chữ thân cũng giữ liền từ ghép (từng tách trợ / cấp)");
   } finally { await b.close(); }
 });
 
