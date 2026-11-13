@@ -415,8 +415,11 @@ S.bhhoi = (s, deck, b, ctx) => { const op = (s.options || []).slice(0, 4), id = 
   if (b === "sai" || b === "dung") { const d = b === "dung" ? s.right || {} : s.wrong || {}, dung = b === "dung";
     return `${kick(s.kicker)}${vat("bh-kq", dung ? "dau-tich" : "dau-x", { x: 110, y: 190, w: 150 }, vao(0, "pop"))}${chu("bh-qd", 300, 214, 1400, esc(d.title || ""), { color: dung ? "0f8a5a" : P.red, ...vao(0) })}
       ${dung && ok >= 0 ? `${the("bh-dung", { x: 110, y: 410, w: 835, h: 150 }, { trai: "14a06a", ...vao(1) })}${chu("bh-opl2", 160, 444, 90, "ABCD"[ok], { color: P.blue, ...vao(1) })}${chu("bh-opt", 260, 456, 650, esc(op[ok].text), vao(1))}` : ""}
-      ${chu("bh-qx", 110, dung ? 610 : 410, 1500, f(d.text || d.hint || ""), vao(2))}${nut(d.button || (dung ? "Tiếp tục" : "Thử lại"), dung ? (s.next || null) : id, 110, 860, dung ? "xanh" : "do")}
-      ${hero("bh-pbq", "phongbi", { x: 1460, y: 700, w: 330, r: 4 }, vao(1))}`; }
+      ${chu("bh-qx", 110, dung ? 610 : 410, 1080, f(d.text || d.hint || ""), vao(2))}${nut(d.button || (dung ? "Tiếp tục" : "Thử lại"), dung ? (s.next || null) : id, 110, 860, dung ? "xanh" : "do")}
+      ${(() => { // phong bì lương hưu chở đáp án: nhãn dán ở góc — đúng → mức hưởng của đáp án ("40%"), sai → "?" (điều chưa giải quyết); nhãn "LƯƠNG HƯU" in trên phong bì giữ nguyên → đọc thành "lương hưu 40%"
+        const PB = { x: 1290, y: 380, w: 500 }, pbH = PB.w / HERO.phongbi[1], nhanPb = dung ? ((op[ok] && String(op[ok].text).match(/\d+(?:[.,]\d+)?\s*%/)) || ["ABCD"[ok] || "?"])[0].replace(/\s+/g, "") : "?", pxP = 46;
+        const wP = Math.round(rong(nhanPb, pxP, 800) + nhanPb.length * pxP * 0.07 + pxP * 2.4);
+        return `${hero("bh-pbq", "phongbi", { ...PB, r: 4 }, vao(1))}${vien("bh-pbqn", PB.x + PB.w - wP * 0.75, PB.y + pbH * 0.02, nhanPb, { px: pxP, mau: dung ? "vang" : undefined, z: 12, fx: vao(2, "pop") })}`; })()}`; }
   if (anhU(ctx, s)) { const H = tieuDe(s, { w: 1040 }), top = Math.max(330, H.day + 50);
     return `${anhBen(ctx, s, 1240)}${H.html}${op.map((x, k) => { const X = 110 + (k % 2) * 530, Y = top + Math.floor(k / 2) * 250, go = `${id}-${x.ok ? "dung" : "sai"}`, o = { ...vao(k), sau: 0 };
       return `${the(`bh-op${k}`, { x: X, y: Y, w: 500, h: 220 }, { go, ...o })}${lop(`bh-opc${k}`, { x: X + 30, y: Y + 30, w: 96, h: 96 }, `<svg viewBox="0 0 100 100" width="100%" height="100%"><defs><linearGradient id="og${k}${U}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a8bff"/><stop offset="1" stop-color="#0b57d0"/></linearGradient></defs><circle cx="50" cy="50" r="50" fill="url(#og${k}${U})"/></svg>`, { shadow: false, go, alt: "Vòng chữ cái", ...o })}

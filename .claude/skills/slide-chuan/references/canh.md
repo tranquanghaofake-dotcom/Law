@@ -315,7 +315,7 @@ Hệ hình hiện tại:
 | Dải đánh dấu | trang được đánh dấu trong sổ / sách → mọc từ mép trang | dải có nhãn ghi đúng số điều |
 | Ô năm trong sổ mở | 1 ô = 1 năm đóng; số ô = số năm nêu ở tình huống | |
 | Thẻ trích Điều 64 Luật 2024 | căn cứ của mốc mới | chỉ hiện ở bước 2 (bước 1 là luật cũ: 20 ô xám) |
-| Phong bì lương hưu | mốc được hưởng; ở Ghi nhớ cùng tên Morph với slide kết → phong bì tới tay người nhận lương hưu trong ảnh | |
+| Phong bì lương hưu | mốc được hưởng; ở Ghi nhớ cùng tên Morph với slide kết → phong bì tới tay người nhận lương hưu trong ảnh; ở slide kết quả trắc nghiệm mang **nhãn dán đáp án** ở góc ("40%" khi đúng, "?" khi sai) — đọc liền với nhãn in "LƯƠNG HƯU" | nhãn dán không che nhãn in |
 | Công thức | vế trái một dòng, "= vế phải" một dòng | ngắt dòng tại nghĩa, không để trình duyệt tự ngắt |
 
 Đã bỏ vì không điền được cột "nghĩa": chùm bong bóng, chấm lấp lánh quanh khiên, cuốn sổ nhỏ ở góc vòng phần trăm, biển cảnh báo trên sổ hạn chế (trùng biểu tượng hàng 2), sổ / phong bì vẽ đặt cạnh ảnh đã có vật thật, màu vàng ở dải giữa của hạn chế / kiến nghị.
