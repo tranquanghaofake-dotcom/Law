@@ -10,7 +10,7 @@ const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").
 // o: { nu, da, toc, kieuToc: "ngan"|"dai"|"buoc"|"hoi", mu: "non"|"bao-ho"|"coi"|"luoi-trai", ao, quan, vay, taDe, vat: "thuoc-day"|"ho-chieu"|"cap"|"bien-kd"|"dong-ho"|"loa"|"so"|"phong-bi"|"con-dau", nhan: "vui"|"buon"|"lo" }
 const DA = ["f1c7a1", "e6b48d", "d39b72", "c08560"];
 function nguoi(o = {}) {
-  const g = uid("ng"), da = o.da || DA[0], toc = o.toc || "2b2118", ao = o.ao || "3f7cac", quan = o.quan || "2f3b52", toi = (h, k = 0.78) => { const n = parseInt(h, 16); return [16, 8, 0].map((s) => Math.round(((n >> s) & 255) * k).toString(16).padStart(2, "0")).join(""); };
+  const g = uid("ng"), da = o.da || DA[0], toc = o.toc || "2b2118", ao = o.ao || "3f7cac", quan = o.quan || "2f3b52", toi = (h, k = 0.78) => { const n = parseInt(h, 16); return [16, 8, 0].map((s) => Math.min(255, Math.round(((n >> s) & 255) * k)).toString(16).padStart(2, "0")).join(""); }, sang = (h, k = 0.35) => { const n = parseInt(h, 16); return [16, 8, 0].map((s) => { const v = (n >> s) & 255; return Math.round(v + (255 - v) * k).toString(16).padStart(2, "0"); }).join(""); };
   // các mảng hình: [kiểu, thuộc tính, màu] — vẽ hai lượt: lượt 1 viền giấy trắng dày (cả khối), lượt 2 tô màu
   const P = [];
   const tay = (x1, y1, x2, y2) => P.push(["line", `x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}"`, ao, 26]);
@@ -26,6 +26,7 @@ function nguoi(o = {}) {
   P.push(["path", `d="M58 132 Q100 114 142 132 L150 252 Q100 264 50 252 Z"`, ao]);
   P.push(["circle", `cx="44" cy="246" r="13"`, da]); P.push(["circle", `cx="156" cy="246" r="13"`, da]);
   P.push(["rect", `x="89" y="104" width="22" height="22" rx="6"`, da]);
+  P.push(["circle", `cx="64" cy="84" r="8"`, da]); P.push(["circle", `cx="136" cy="84" r="8"`, da]);
   P.push(["circle", `cx="100" cy="78" r="36"`, da]);
   const vien = P.map(([k, a, , w]) => (k === "line" ? `<line ${a} stroke-width="${w + 16}"/>` : `<${k} ${a}/>`)).join("");
   const to = P.map(([k, a, c, w]) => (k === "line" ? `<line ${a} stroke="#${c}" stroke-width="${w}" stroke-linecap="round"/>` : `<${k} ${a} fill="#${c}"/>`)).join("");
@@ -36,8 +37,19 @@ function nguoi(o = {}) {
     "bao-ho": `<path d="M58 70 Q60 30 100 30 Q140 30 142 70 Z" fill="#f2c230"/><rect x="50" y="66" width="100" height="10" rx="5" fill="#d9a816"/><path d="M100 30 V68" stroke="#d9a816" stroke-width="6"/>`,
     coi: `<path d="M60 68 Q62 28 100 28 Q138 28 140 68 Z" fill="#5f6f3d"/><ellipse cx="100" cy="68" rx="52" ry="9" fill="#4b5830"/><circle cx="100" cy="48" r="7" fill="#d8b35e"/>`,
     "luoi-trai": `<path d="M62 64 Q64 32 100 32 Q136 32 138 64 Z" fill="#${toi(ao, 0.9)}"/><path d="M118 62 Q150 60 162 70 L120 70 Z" fill="#${toi(ao, 0.7)}"/>` }[o.mu] || "";
-  const mat = `<circle cx="87" cy="82" r="3.6" fill="#2a2018"/><circle cx="113" cy="82" r="3.6" fill="#2a2018"/><circle cx="80" cy="94" r="5.5" fill="#e98f7a" opacity=".35"/><circle cx="120" cy="94" r="5.5" fill="#e98f7a" opacity=".35"/>
+  const mat = `<ellipse cx="100" cy="112" rx="18" ry="5" fill="#${toi(da, 0.8)}" opacity=".55"/>
+    <ellipse cx="86" cy="82" rx="5.4" ry="4.4" fill="#fff"/><ellipse cx="114" cy="82" rx="5.4" ry="4.4" fill="#fff"/><circle cx="87" cy="82.5" r="3.4" fill="#2a2018"/><circle cx="115" cy="82.5" r="3.4" fill="#2a2018"/><circle cx="88.2" cy="81.2" r="1.1" fill="#fff"/><circle cx="116.2" cy="81.2" r="1.1" fill="#fff"/>
+    <path d="M79 ${o.nhan === "buon" ? 72 : 73} Q86 ${o.nhan === "buon" ? 70 : 69} 93 ${o.nhan === "buon" ? 74 : 72} M107 ${o.nhan === "buon" ? 74 : 72} Q114 ${o.nhan === "buon" ? 70 : 69} 121 ${o.nhan === "buon" ? 72 : 73}" stroke="#${toc}" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    <path d="M100 86 Q97 93 101 95" stroke="#${toi(da, 0.72)}" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <circle cx="79" cy="95" r="5.5" fill="#e98f7a" opacity=".35"/><circle cx="121" cy="95" r="5.5" fill="#e98f7a" opacity=".35"/>
     ${o.nhan === "buon" ? `<path d="M91 101 Q100 95 109 101" stroke="#7a3d2c" stroke-width="3" fill="none" stroke-linecap="round"/>` : o.nhan === "lo" ? `<path d="M92 99 H108" stroke="#7a3d2c" stroke-width="3" stroke-linecap="round"/>` : `<path d="M90 96 Q100 104 110 96" stroke="#7a3d2c" stroke-width="3" fill="none" stroke-linecap="round"/>`}`;
+  const chiTiet = `<path d="M142 132 L150 252 Q132 258 118 259 Q132 200 128 140 Z" fill="#000" opacity=".1"/>
+    <path d="M70 206 Q100 214 130 206" stroke="#${toi(ao, 0.75)}" stroke-width="2" fill="none" opacity=".7"/><path d="M84 236 L90 222 M116 236 L110 222" stroke="#${toi(ao, 0.75)}" stroke-width="2" opacity=".6"/>
+    ${o.taDe ? "" : `<rect x="70" y="150" width="22" height="18" rx="2" fill="none" stroke="#${toi(ao, 0.72)}" stroke-width="2"/><circle cx="100" cy="158" r="2.6" fill="#${toi(ao, 0.6)}"/><circle cx="100" cy="182" r="2.6" fill="#${toi(ao, 0.6)}"/><circle cx="100" cy="206" r="2.6" fill="#${toi(ao, 0.6)}"/>`}
+    <path d="M36 226 L52 230 M164 226 L148 230" stroke="#${toi(ao, 0.7)}" stroke-width="4" stroke-linecap="round"/>
+    ${o.vay ? `<path d="M100 250 L100 330" stroke="#${toi(quan, 0.75)}" stroke-width="2" opacity=".6"/>` : `<path d="M81 262 V392 M119 262 V392" stroke="#${toi(quan, 0.7)}" stroke-width="2" opacity=".7"/><path d="M97 244 V300" stroke="#${toi(quan, 0.6)}" stroke-width="2.5"/>`}
+    <ellipse cx="74" cy="400" rx="9" ry="3.5" fill="#fff" opacity=".25"/><ellipse cx="114" cy="400" rx="9" ry="3.5" fill="#fff" opacity=".25"/>
+    ${o.mu ? "" : `<path d="M74 60 Q90 46 108 48 M84 54 Q100 44 120 52 M96 46 Q116 44 128 60" stroke="#${sang(toc, 0.3)}" stroke-width="2" fill="none" stroke-linecap="round" opacity=".7"/>`}`;
   const coAo = `<path d="M88 126 L100 140 L112 126" stroke="#${toi(ao, 0.7)}" stroke-width="4" fill="none" stroke-linejoin="round"/>${o.taDe ? `<path d="M74 170 H126 L132 250 Q100 258 68 250 Z" fill="#fbf4e2"/><path d="M80 168 L72 136 M120 168 L128 136" stroke="#fbf4e2" stroke-width="5"/>` : ""}`;
   // vật cầm tay (tay phải người trong hình = bên phải khung)
   const vat = { "thuoc-day": `<path d="M78 124 Q72 170 70 214" stroke="#f2c230" stroke-width="9" fill="none"/><path d="M122 124 Q128 170 130 214" stroke="#f2c230" stroke-width="9" fill="none"/>${[0, 1, 2, 3, 4, 5].map((k) => `<path d="M${71 - k * 0.2} ${138 + k * 14} h6 M${127 + k * 0.4} ${138 + k * 14} h-6" stroke="#2a2018" stroke-width="1.5"/>`).join("")}`,
@@ -52,7 +64,7 @@ function nguoi(o = {}) {
   return `<svg viewBox="-10 0 220 430" width="100%" height="100%"><defs><linearGradient id="${g}l" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient></defs>
     <g fill="#fbf8f1" stroke="#fbf8f1" stroke-width="16" stroke-linejoin="round" stroke-linecap="round">${vien}${o.mu === "non" ? `<path d="M30 70 L100 12 L170 70 Q100 82 30 70 Z"/>` : o.mu ? `<path d="M56 72 Q60 26 100 26 Q140 26 144 72 Z"/>` : ""}</g>${vat ? `<style>.${g}o *{stroke:#fbf8f1!important;stroke-width:12px!important;fill:#fbf8f1!important;stroke-linejoin:round}</style><g class="${g}o">${vat}</g>` : ""}
     <g stroke="#e3dccb" stroke-width="1.5" fill="none" opacity=".9">${vien.replace(/stroke-width="\d+"/g, "")}</g>
-    ${to}${tocTruoc}${mu}${mat}${coAo}${vat}</svg>`;
+    ${to}${chiTiet}${tocTruoc}${mu}${mat}${coAo}${vat}</svg>`;
 }
 
 // ---------- SỔ BHXH NHỎ (nhìn từ trên, dùng cho chồng / hàng đếm được) ----------
