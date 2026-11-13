@@ -142,7 +142,7 @@ function giaiDoan(s, W, H) {   // span theo ngày dd/mm/yyyy + mốc luật đ�
   let g = "", box = [];
   for (let y = lo; y <= hi; y++) g += `<line x1="${X(y)}" x2="${X(y)}" y1="40" y2="${H - 56}" stroke="${INK}" stroke-opacity=".14" stroke-width="3"/>${T(X(y), H - 18, y, { fs: 24, fw: 700, c: MUT })}`;
   it.forEach((x, i) => { const y = 56 + i * rh, x1 = X(dmy(x.from)), x2 = X(dmy(x.to)), mo = Math.round((dmy(x.to) - dmy(x.from)) * 12);
-    g += T(0, y + 44, x.label, { a: "start", fs: 30, fw: 800 }) + `<rect x="${x1}" y="${y}" width="${Math.max(8, x2 - x1)}" height="${rh - 46}" fill="${x.focus ? BAD : INK}" stroke="${INK}" stroke-width="5"/>` + (x2 - x1 > 150 ? T(x1 + 16, y + (rh - 46) / 2 + 10, `≈ ${mo} tháng`, { a: "start", fs: 26, fw: 800, c: PAPER }) : "");
+    g += T(0, y + 44, x.label, { a: "start", fs: 30, fw: 800 }) + `<rect x="${x1}" y="${y}" width="${Math.max(8, x2 - x1)}" height="${rh - 46}" fill="${x.hatch ? `url(#${x.focus ? "gcb" : "gc"})` : x.focus ? BAD : INK}" stroke="${x.focus ? BAD : INK}" stroke-width="5"${dash(x)}/>` + (x2 - x1 > 150 ? T(x1 + 16, y + (rh - 46) / 2 + 10, `≈ ${mo} tháng`, { a: "start", fs: 26, fw: 800, c: x.hatch ? INK : PAPER }) : "");   // hatch: thời hạn ước tính / chưa chắc (nghĩa ghi ở note)
     box[i] = { x: x1, y, w: Math.max(8, x2 - x1), h: rh - 46 }; });
   (s.markers || []).forEach((m) => { const x = X(dmy(m.date)); g += `<line x1="${x}" x2="${x}" y1="6" y2="${H - 56}" stroke="${BAD}" stroke-width="6" stroke-dasharray="14 10"/><rect x="${x - 190}" y="-14" width="380" height="44" fill="${HL}" stroke="${INK}" stroke-width="4"/>${T(x, 17, m.label, { fs: 24, fw: 800 })}`; });
   return { svg: g, box };

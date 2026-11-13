@@ -56,7 +56,18 @@ function theoDoi(slides) {
     di(raw, ""); return [...new Set(out)]; };
   return { slides: slides.map((s, j) => boc(s, j, "")), chuaDoc };
 }
-function dungHtml(deck, { deckDir = process.cwd(), mau, chuyen } = {}) {
+// MÉP CẮT của ảnh tách nền (cutout): mép nào còn nhiều điểm ảnh đặc chạm biên = chủ thể bị cắt ở đó (cổ tay, thân người) →
+// mẫu đặt mép đó trùng mép slide (nguyen-tac-bo-cuc: "chỗ ảnh bị cắt phải trùng mép slide"). Đo trước khi dựng (sharp là hàm async).
+async function tinhMepCat(deck, deckDir) {
+  const out = {}, ds = [...new Set((deck.slides || []).map((s) => s && s.cutout).filter((p) => typeof p === "string"))];
+  let sharp; try { sharp = require("sharp"); } catch { return out; }
+  for (const p of ds) { const abs = path.resolve(deckDir, p); if (!fs.existsSync(abs)) continue;
+    try { const { data, info } = await sharp(abs).ensureAlpha().raw().toBuffer({ resolveWithObject: true }); const W = info.width, H = info.height, c = info.channels, a = (x, y) => data[(y * W + x) * c + 3] > 128;
+      const m = { l: 0, r: 0, t: 0, b: 0 }; for (let y = 0; y < H; y++) { if (a(0, y)) m.l++; if (a(W - 1, y)) m.r++; } for (let x = 0; x < W; x++) { if (a(x, 0)) m.t++; if (a(x, H - 1)) m.b++; }
+      const f = { l: m.l / H, r: m.r / H, t: m.t / W, b: m.b / W }, k = Object.keys(f).sort((x, y) => f[y] - f[x])[0]; out[p] = f[k] > 0.08 ? k : ""; } catch { /* ảnh hỏng: để mẫu đặt mặc định */ } }
+  return out;
+}
+function dungHtml(deck, { deckDir = process.cwd(), mau, chuyen, mepCat = {} } = {}) {
   const goc = deck.slides || []; if (!goc.length) throw new Error("deck.json không có slide nào.");
   const td = theoDoi(goc); deck = { ...deck, slides: td.slides }; const src = deck.slides;
   const H = deck.meta?.hinh || {}; chuyen = chuyen || H.chuyen || "morph";
@@ -67,7 +78,7 @@ function dungHtml(deck, { deckDir = process.cwd(), mau, chuyen } = {}) {
   // ghi chú thuyết trình: slide.notes, hoặc meta.notesFile (các phần cách nhau bằng dòng ---, dòng "# tên" đầu phần bị bỏ)
   let parts = [];
   if (deck.meta?.notesFile && fs.existsSync(path.resolve(deckDir, deck.meta.notesFile))) parts = fs.readFileSync(path.resolve(deckDir, deck.meta.notesFile), "utf8").split(/^\s*---\s*$/m).map((p) => p.replace(/^\s*#.*$/m, "").trim());
-  const missing = [], ctx = { img: (p) => { if (!p) return ""; const abs = path.resolve(deckDir, p); if (!fs.existsSync(abs)) { missing.push(p); return ""; } return url(abs); }, emoji: (n) => (n in khoEmoji() ? "data:image/svg+xml;base64," + Buffer.from(khoEmoji()[n], "utf8").toString("base64") : url(path.join(here, "emoji", n + ".svg"))), hasEmoji: (n) => n in khoEmoji() || fs.existsSync(path.join(here, "emoji", n + ".svg")) };
+  const missing = [], ctx = { mepCat: (p) => mepCat[p] || "", img: (p) => { if (!p) return ""; const abs = path.resolve(deckDir, p); if (!fs.existsSync(abs)) { missing.push(p); return ""; } return url(abs); }, emoji: (n) => (n in khoEmoji() ? "data:image/svg+xml;base64," + Buffer.from(khoEmoji()[n], "utf8").toString("base64") : url(path.join(here, "emoji", n + ".svg"))), hasEmoji: (n) => n in khoEmoji() || fs.existsSync(path.join(here, "emoji", n + ".svg")) };
   // một slide của deck.json có thể nở thành nhiều slide PowerPoint (cảnh mở sách = 8 slide tự chạy)
   const out = [], generic = [], bo = [], n = src.length, st = { prev: new Set() };
   const toc = src.findIndex((s) => s.type === "toc"), tocId = toc < 0 ? null : src[toc].id || `s${toc + 1}`;
@@ -152,7 +163,7 @@ async function dung({ deckPath, outPath, mau, chuyen, soat = false, nhungFont = 
   // kiểm nội dung (chuyển từ tầng Office cũ): lỗi cấu trúc / ảnh không có → dừng trước khi dựng
   const nd = await KND.kiemNoiDung(deck, { deckDir, extraTypes: [...canh.TYPES, ...bc.TYPES, ...qt.TYPES, ...bh.TYPES] });
   if (nd.errors.length) { const e = new Error(`deck.json có ${nd.errors.length} lỗi, chưa dựng:\n  - ${nd.errors.join("\n  - ")}`); e.code = 2; throw e; }
-  const r = dungHtml(deck, { deckDir, mau, chuyen });
+  const r = dungHtml(deck, { deckDir, mau, chuyen, mepCat: await tinhMepCat(deck, deckDir) });
   console.log(`✓ ${deck.slides.length} slide trong deck.json → ${r.n} slide PowerPoint · ${r.da.ten ? `da "${r.da.ten}" (${DA.DA[r.da.ten].mon}) — ${r.da.lyDo}` : `nền chung, bảng màu ${r.mau}`} · chuyển cảnh ${r.chuyen}`);
   if (r.da.loi) { const e = new Error(r.da.lyDo); e.code = 2; throw e; }
   if (r.da.goiY) console.log(`ℹ chưa ghi meta.da — tự chọn da "${r.da.ten}" theo đề tài; ghi "meta": { "da": "${r.da.ten}" } để cố định`);
@@ -191,7 +202,7 @@ async function dung({ deckPath, outPath, mau, chuyen, soat = false, nhungFont = 
   return { ...r, ...res, htmlPath, outPath };
 }
 
-module.exports = { dung, dungHtml, kiemTran };
+module.exports = { dung, dungHtml, kiemTran, tinhMepCat };
 if (require.main === module) {
   const args = process.argv.slice(2), flags = args.filter((a) => a.startsWith("--")), pos = args.filter((a) => !a.startsWith("--")), opt = (k) => (flags.find((x) => x.startsWith(`--${k}=`)) || "").slice(k.length + 3) || undefined;
   if (!pos[0]) { console.error("Dùng: node hinh/dung.js <deck.json> [out.pptx] [--mau=son|luc|lam|nau] [--chuyen=morph|fade] [--soat] [--strict] [--khong-nhung-font] [--html]\n      node hinh/dung.js <deck.json> --titles"); process.exit(2); }

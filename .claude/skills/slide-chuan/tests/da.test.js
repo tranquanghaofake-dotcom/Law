@@ -196,3 +196,12 @@ test("trường có trong deck.json mà không mẫu nào đọc khi dựng thì
   const r = dungHtml(d, { deckDir: path.join(__dirname, "..") });
   assert.deepEqual(r.khongDoc, [{ j: 1, type: "cards", k: ["titel", "items[].desk"] }]);
 });
+
+test("quote + cutout: ảnh tách nền được vẽ, mép bị cắt (alpha chạm biên) dán vào mép slide", async () => {
+  const { tinhMepCat } = require("../hinh/dung");
+  const d = deck({ da: "ho-so" }, [{ type: "cover", title: "Bìa" }, { type: "quote", quote: "Câu trích", by: "Toà", cutout: "images/chia-khoa-nha_cut.png", cutoutAlt: "Chìa khoá" }]);
+  const dir = path.join(__dirname, "..", "examples"), mep = await tinhMepCat(d, dir);
+  assert.equal(mep["images/chia-khoa-nha_cut.png"], "l", "ảnh bàn tay cầm chìa khoá bị cắt ở cổ tay (mép trái)");
+  const h = dungHtml(d, { deckDir: dir, mepCat: mep }).html;
+  assert.match(h, /<img class="qcut [^"]*cut-l"[^>]*alt="Chìa khoá"/);
+});

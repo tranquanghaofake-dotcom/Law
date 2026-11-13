@@ -48,7 +48,8 @@ T.statement = (s) => {
   ${st.length ? `<div class="stats" style="--n:${st.length}">${st.map((x) => `<div class="stat" ${inn()}><div class="l">${f(x.label)}</div><div class="v">${f(x.value)}</div><div class="d">${f(x.desc)}</div></div>`).join("")}</div>` : ""}
   </div>${s.stamp ? `<div class="stamp" style="right:130px;top:190px" ${inn("pop")}>${esc(s.stamp)}</div>` : ""}` };
 };
-T.quote = (s) => ({ cls: "dark", html: `${s.kicker ? `<div class="k" ${inn()}>${f(s.kicker)}</div>` : ""}<div class="body"><h2 class="h" ${inn()}>“${f(s.quote || s.title)}”</h2>${s.by ? `<p class="sub" ${inn()}>${f(s.by)}${s.role ? `, ${f(s.role)}` : ""}</p>` : ""}</div>` });
+// quote + cutout: ảnh tách nền (người nói, vật của vụ việc) đứng ở mép phải, chân chạm mép dưới slide (chỗ ảnh bị cắt trùng mép slide); photoStyle bw = đen trắng
+T.quote = (s, deck, ctx) => { const cu = ctx && s.cutout ? ctx.img(s.cutout) : ""; return { cls: `dark ${cu ? "q-cut" : ""}`, html: `${cu ? `<img class="qcut ${s.photoStyle === "bw" ? "bw" : ""} cut-${ctx.mepCat ? ctx.mepCat(s.cutout) || "b" : "b"}" src="${cu}" alt="${esc(s.cutoutAlt || "")}" ${inn("pop")}>` : ""}${s.kicker ? `<div class="k" ${inn()}>${f(s.kicker)}</div>` : ""}<div class="body"><h2 class="h" ${inn()}>“${f(s.quote || s.title)}”</h2>${s.by ? `<p class="sub" ${inn()}>${f(s.by)}${s.role ? `, ${f(s.role)}` : ""}</p>` : ""}</div>` }; };
 
 T.agenda = (s, deck, ctx) => { const ph = ctx && ctx.img(s.photo); if (ph) return { cls: "light", html: `${head(s)}<div class="body"><div class="ag-ph"><div>${(s.items || []).map((x, i) => `<div class="ag-row" ${inn()}><div class="ag-no">${String(i + 1).padStart(2, "0")}</div><div class="ag-t" style="font-size:38px">${f(typeof x === "string" ? x : x.text || x.title)}</div></div>`).join("")}</div>${anhKhung(ph, khungAnh(s, deck) || "arch", s.photoAlt, "width:520px;height:640px")}</div></div>` };
   return T.agendaChu(s); };
