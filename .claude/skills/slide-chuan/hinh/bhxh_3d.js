@@ -91,4 +91,109 @@ function bangKiem() { const g = id("bk");
     ${dongK(176, "x")}${dongK(276, "x")}${dongK(376, "b")}
     <path d="M44 94 a34 34 0 0 1 34 -34 H300 C220 120 140 160 44 260 Z" fill="url(#${g}h)"/></svg>`; }
 
-module.exports = { soBHXH, khien, chongXu, bieuDoKinh, bangKiem };
+// ================= VẬT CỦA THẾ GIỚI BHXH (người xem thấy tận mắt; vật chủ đạo chở dữ liệu) =================
+const bong = (g, cx, cy, rx, ry, op = 0.3) => `<radialGradient id="${g}bo" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#0a2a66" stop-opacity="${op}"/><stop offset="1" stop-color="#0a2a66" stop-opacity="0"/></radialGradient>`;
+const bongVe = (g, cx, cy, rx, ry) => `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" fill="url(#${g}bo)"/>`;
+
+// SÁCH LUẬT bìa cứng đỏ sẫm, chữ nhũ "LUẬT BẢO HIỂM XÃ HỘI 2024" (không quốc huy)
+function sachLuat() { const g = id("sl");
+  return `<svg viewBox="0 0 440 560" width="100%" height="100%"><defs>${bong(g)}
+    <linearGradient id="${g}b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c0392b"/><stop offset=".55" stop-color="#8e1b17"/><stop offset="1" stop-color="#5e0f0c"/></linearGradient>
+    <linearGradient id="${g}gay" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a0b09"/><stop offset=".5" stop-color="#7a1612"/><stop offset="1" stop-color="#4a0b09"/></linearGradient>
+    <linearGradient id="${g}v" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff2c4"/><stop offset=".5" stop-color="#e8b84a"/><stop offset="1" stop-color="#b9861f"/></linearGradient>
+    <linearGradient id="${g}s" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".4"/><stop offset=".4" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+    ${bongVe(g, 230, 530, 200, 24)}
+    <path d="M360 40 L392 58 L392 520 L360 500 Z" fill="#efe6cf"/>${Array.from({ length: 8 }, (_, k) => `<path d="M${364 + k * 3.6} ${42 + k * 2} V${502 + k * 2}" stroke="#d2c6a6" stroke-width="1"/>`).join("")}
+    <path d="M40 500 L360 500 L392 520 L72 520 Z" fill="#e3d9bd"/>
+    <rect x="40" y="40" width="320" height="460" rx="10" fill="url(#${g}b)"/><rect x="40" y="40" width="34" height="460" rx="8" fill="url(#${g}gay)"/>
+    <rect x="96" y="76" width="240" height="388" rx="4" fill="none" stroke="url(#${g}v)" stroke-width="3"/>
+    <g text-anchor="middle" font-family="Be Vietnam Pro" font-weight="800" fill="url(#${g}v)"><text x="216" y="170" font-size="36" letter-spacing="4">LUẬT</text><text x="216" y="226" font-size="27" letter-spacing="1">BẢO HIỂM</text><text x="216" y="266" font-size="27" letter-spacing="1">XÃ HỘI</text>
+      <rect x="156" y="330" width="120" height="2" fill="url(#${g}v)"/><text x="216" y="392" font-size="40" letter-spacing="3">2024</text></g>
+    <rect x="40" y="40" width="320" height="460" rx="10" fill="url(#${g}s)"/></svg>`; }
+
+// SỔ BHXH MỞ (trang "quá trình đóng"): hai trang giấy có lưới mờ; ô năm do slide đặt lên (hộp chữ / lớp ảnh riêng)
+function soMo(w = 1100, h = 520) { const g = id("sm");
+  return `<svg viewBox="0 0 ${w} ${h}" width="100%" height="100%" preserveAspectRatio="none"><defs>${bong(g)}
+    <linearGradient id="${g}p" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f6fc"/></linearGradient>
+    <linearGradient id="${g}gL" x1="0" y1="0" x2="1" y2="0"><stop offset=".86" stop-color="#0a2a66" stop-opacity="0"/><stop offset="1" stop-color="#0a2a66" stop-opacity=".16"/></linearGradient>
+    <linearGradient id="${g}gR" x1="1" y1="0" x2="0" y2="0"><stop offset=".86" stop-color="#0a2a66" stop-opacity="0"/><stop offset="1" stop-color="#0a2a66" stop-opacity=".16"/></linearGradient>
+    <linearGradient id="${g}c" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2f7bff"/><stop offset="1" stop-color="#0a3a9a"/></linearGradient></defs>
+    ${bongVe(g, w / 2, h - 10, w * 0.48, 22)}
+    <rect x="0" y="6" width="${w}" height="${h - 26}" rx="22" fill="url(#${g}c)"/>
+    <rect x="18" y="0" width="${w / 2 - 22}" height="${h - 34}" rx="10" fill="url(#${g}p)"/><rect x="${w / 2 + 4}" y="0" width="${w / 2 - 22}" height="${h - 34}" rx="10" fill="url(#${g}p)"/>
+    <rect x="18" y="0" width="${w / 2 - 22}" height="${h - 34}" fill="url(#${g}gL)"/><rect x="${w / 2 + 4}" y="0" width="${w / 2 - 22}" height="${h - 34}" fill="url(#${g}gR)"/>
+    ${Array.from({ length: 9 }, (_, k) => `<path d="M40 ${70 + k * 46} H${w / 2 - 24} M${w / 2 + 26} ${70 + k * 46} H${w - 40}" stroke="#dbe6f7" stroke-width="2"/>`).join("")}
+    <rect x="40" y="22" width="150" height="10" rx="5" fill="#0b57d0" opacity=".55"/><rect x="${w / 2 + 26}" y="22" width="110" height="10" rx="5" fill="#0b57d0" opacity=".3"/></svg>`; }
+
+// PHIẾU LƯƠNG: tờ giấy mép răng cưa; dòng "trích đóng BHXH" tô vàng — chữ trên phiếu là đạo cụ (số liệu thật đặt bằng hộp chữ ở slide)
+function phieuLuong() { const g = id("pl"), rang = Array.from({ length: 17 }, (_, k) => `L${370 - k * 20 - 10} 470 L${370 - (k + 1) * 20} 452`).join(" ");   // mép răng cưa đáy phiếu
+  const dong = (y, t, nhan = false) => `${nhan ? `<rect x="54" y="${y - 26}" width="292" height="40" rx="8" fill="#ffe08a"/>` : ""}<text x="66" y="${y}" font-family="Be Vietnam Pro" font-weight="${nhan ? 800 : 600}" font-size="19" fill="#${nhan ? "6b4400" : "46526b"}">${t}</text><rect x="${nhan ? 260 : 270}" y="${y - 12}" width="${nhan ? 70 : 60}" height="10" rx="5" fill="#${nhan ? "9a5f00" : "b9c6dc"}"/>`;
+  return `<svg viewBox="0 0 400 500" width="100%" height="100%"><defs>${bong(g)}
+    <linearGradient id="${g}p" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eef3fb"/></linearGradient></defs>
+    ${bongVe(g, 200, 482, 170, 16)}
+    <path d="M30 20 H370 V452 ${rang} Z" fill="url(#${g}p)" stroke="#d7e2f3" stroke-width="2"/>
+    <rect x="30" y="20" width="340" height="70" fill="#0b57d0"/><text x="200" y="66" text-anchor="middle" font-family="Be Vietnam Pro" font-weight="800" font-size="26" letter-spacing="4" fill="#ffffff">PHIẾU LƯƠNG</text>
+    ${dong(150, "Lương hợp đồng")}${dong(204, "Phụ cấp")}${dong(270, "Trích đóng BHXH", true)}${dong(330, "Khấu trừ khác")}
+    <path d="M54 368 H346" stroke="#0b2559" stroke-width="2" stroke-dasharray="6 6"/><text x="66" y="410" font-family="Be Vietnam Pro" font-weight="800" font-size="22" fill="#0b2559">Thực lĩnh</text><rect x="250" y="396" width="80" height="14" rx="7" fill="#0b2559"/></svg>`; }
+
+// PHONG BÌ LƯƠNG HƯU: phong bì trắng xanh, nhãn "LƯƠNG HƯU", nắp dán con dấu tròn xanh
+function phongBi() { const g = id("pb");
+  return `<svg viewBox="0 0 440 320" width="100%" height="100%"><defs>${bong(g)}
+    <linearGradient id="${g}a" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e3edfb"/></linearGradient>
+    <linearGradient id="${g}n" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7faff"/><stop offset="1" stop-color="#d6e4f8"/></linearGradient>
+    <linearGradient id="${g}d" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5aa0ff"/><stop offset="1" stop-color="#0b4fc0"/></linearGradient></defs>
+    ${bongVe(g, 220, 300, 190, 16)}
+    <rect x="20" y="30" width="400" height="250" rx="18" fill="url(#${g}a)" stroke="#d2def0" stroke-width="2"/>
+    <path d="M20 48 L220 176 L420 48" fill="none" stroke="#c9d8ee" stroke-width="3"/><path d="M20 260 L170 150 M420 260 L270 150" stroke="#dbe6f7" stroke-width="3"/>
+    <path d="M24 40 Q220 200 416 40 L416 36 Q416 30 410 30 H30 Q24 30 24 36 Z" fill="url(#${g}n)" stroke="#c9d8ee" stroke-width="2"/>
+    <circle cx="220" cy="150" r="34" fill="url(#${g}d)"/><path d="M204 150 l11 11 l21 -23" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="128" y="206" width="184" height="46" rx="23" fill="#0b57d0"/><text x="220" y="237" text-anchor="middle" font-family="Be Vietnam Pro" font-weight="800" font-size="21" letter-spacing="2" fill="#ffffff">LƯƠNG HƯU</text></svg>`; }
+
+// ĐIỆN THOẠI tra cứu quá trình tham gia (không logo ứng dụng thật)
+function dienThoai() { const g = id("dt");
+  const hang = (y, xanh) => `<rect x="44" y="${y}" width="212" height="54" rx="12" fill="#ffffff"/><circle cx="72" cy="${y + 27}" r="13" fill="#${xanh ? "16a36b" : "0b57d0"}"/><path d="M65 ${y + 27} l5 5 l9 -10" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="96" y="${y + 16}" width="120" height="9" rx="4.5" fill="#0b2559" opacity=".7"/><rect x="96" y="${y + 32}" width="80" height="7" rx="3.5" fill="#6c7891" opacity=".5"/>`;
+  return `<svg viewBox="0 0 300 560" width="100%" height="100%"><defs>${bong(g)}
+    <linearGradient id="${g}f" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a4256"/><stop offset="1" stop-color="#0f1422"/></linearGradient>
+    <linearGradient id="${g}s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eaf2ff"/><stop offset="1" stop-color="#d5e5ff"/></linearGradient>
+    <linearGradient id="${g}h" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset=".4" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+    ${bongVe(g, 150, 544, 120, 14)}
+    <rect x="16" y="10" width="268" height="520" rx="44" fill="url(#${g}f)"/><rect x="28" y="22" width="244" height="496" rx="34" fill="url(#${g}s)"/>
+    <rect x="110" y="32" width="80" height="16" rx="8" fill="#0f1422"/>
+    <rect x="28" y="60" width="244" height="80" fill="#0b57d0"/><rect x="44" y="84" width="150" height="12" rx="6" fill="#ffffff"/><rect x="44" y="106" width="100" height="9" rx="4.5" fill="#cfe2ff"/>
+    ${hang(158, true)}${hang(224, true)}${hang(290, true)}${hang(356, false)}
+    <rect x="44" y="436" width="212" height="52" rx="26" fill="#0b57d0"/><rect x="104" y="457" width="92" height="10" rx="5" fill="#ffffff"/>
+    <rect x="16" y="10" width="268" height="520" rx="44" fill="url(#${g}h)"/></svg>`; }
+
+// CHỒNG SỔ BHXH: n cuốn xếp chồng (đếm được — 1 cuốn = 1 triệu người); nhìn nghiêng thấy bìa xanh trên / dưới, mép giấy trắng ở giữa
+function chongSo(n = 12) { const g = id("cs"), D = 24, W = 260, sx = 34, sy = 18, top = 40, H = top + sy + n * D + 50;
+  const cuon = (k) => { const y = top + sy + (n - 1 - k) * D, l = ((k * 37) % 7) - 3, x = 10 + l;
+    return `<path d="M${x} ${y} h${W} l${sx} ${-sy} v${D} l${-sx} ${sy} Z" fill="#e9eef7"/><path d="M${x + W} ${y} l${sx} ${-sy} v${D} l${-sx} ${sy} Z" fill="url(#${g}s)"/>
+      <rect x="${x}" y="${y}" width="${W}" height="${D}" fill="url(#${g}p)"/><rect x="${x}" y="${y}" width="${W}" height="5" fill="url(#${g}c)"/><rect x="${x}" y="${y + D - 5}" width="${W}" height="5" fill="url(#${g}c)"/>
+      ${[9, 13, 17].map((d) => `<path d="M${x + 6} ${y + d} H${x + W - 6}" stroke="#d9e2ef" stroke-width="1"/>`).join("")}<rect x="${x}" y="${y}" width="10" height="${D}" fill="url(#${g}c)"/>`; };
+  const yt = top + sy, x0 = 10 + ((((n - 1) * 37) % 7) - 3);
+  return `<svg viewBox="0 0 ${W + sx + 20} ${H}" width="100%" height="100%"><defs>${bong(g)}
+    <linearGradient id="${g}c" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2f7bff"/><stop offset="1" stop-color="#0a3a9a"/></linearGradient>
+    <linearGradient id="${g}p" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eef2f8"/></linearGradient>
+    <linearGradient id="${g}s" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d2dbea"/><stop offset="1" stop-color="#b9c6dc"/></linearGradient>
+    <linearGradient id="${g}t" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6fb0ff"/><stop offset="1" stop-color="#0b57d0"/></linearGradient>
+    <linearGradient id="${g}v" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff2c4"/><stop offset="1" stop-color="#e8b84a"/></linearGradient></defs>
+    ${bongVe(g, (W + sx) / 2 + 10, top + sy + n * D + 22, (W + sx) * 0.55, 18)}${Array.from({ length: n }, (_, k) => cuon(k)).join("")}
+    <path d="M${x0} ${yt} h${W} l${sx} ${-sy} h${-W} Z" fill="url(#${g}t)"/><path d="M${x0 + W * 0.36} ${yt - sy * 0.55} h${W * 0.3}" stroke="url(#${g}v)" stroke-width="4" stroke-linecap="round"/></svg>`; }
+
+// VẬT TRÊN MẶT BÀN (trôi theo máy quay giữa các slide): bút bi, thước kẻ trong, giấy nhớ vàng có ghim
+function but() { const g = id("bt");
+  return `<svg viewBox="0 0 520 60" width="100%" height="100%"><defs><linearGradient id="${g}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5aa0ff"/><stop offset=".5" stop-color="#0b57d0"/><stop offset="1" stop-color="#0a3a9a"/></linearGradient>
+    <linearGradient id="${g}k" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f7fb"/><stop offset=".5" stop-color="#aab6c8"/><stop offset="1" stop-color="#6d7b90"/></linearGradient></defs>
+    <ellipse cx="260" cy="50" rx="240" ry="6" fill="#0a2a66" opacity=".12"/><path d="M430 16 L512 30 L430 44 Z" fill="url(#${g}k)"/><path d="M496 27 L512 30 L496 33 Z" fill="#2a3346"/>
+    <rect x="20" y="12" width="420" height="36" rx="18" fill="url(#${g})"/><rect x="60" y="6" width="160" height="10" rx="5" fill="url(#${g}k)"/><rect x="380" y="12" width="14" height="36" fill="url(#${g}k)"/><rect x="30" y="18" width="380" height="7" rx="3.5" fill="#fff" opacity=".3"/></svg>`; }
+function thuoc() { const g = id("th");
+  return `<svg viewBox="0 0 640 90" width="100%" height="100%"><defs><linearGradient id="${g}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".9"/><stop offset="1" stop-color="#cfe2ff" stop-opacity=".85"/></linearGradient></defs>
+    <rect x="4" y="8" width="632" height="74" rx="10" fill="url(#${g})" stroke="#9cc3ff" stroke-width="2"/>${Array.from({ length: 61 }, (_, k) => `<path d="M${20 + k * 10} 10 V${k % 10 === 0 ? 40 : k % 5 === 0 ? 32 : 24}" stroke="#0b57d0" stroke-opacity=".6" stroke-width="2"/>`).join("")}
+    <rect x="10" y="60" width="300" height="8" rx="4" fill="#fff" opacity=".7"/></svg>`; }
+function giayNho() { const g = id("gn");
+  return `<svg viewBox="0 0 240 230" width="100%" height="100%"><defs><linearGradient id="${g}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff3b0"/><stop offset="1" stop-color="#ffd76a"/></linearGradient></defs>
+    <path d="M20 30 H220 V196 Q170 186 150 214 H20 Z" fill="url(#${g})"/><path d="M150 214 Q170 186 220 196 Q190 200 150 214 Z" fill="#e8b84a"/>
+    ${[80, 112, 144].map((y) => `<rect x="44" y="${y}" width="${y === 144 ? 90 : 150}" height="9" rx="4.5" fill="#9a5f00" opacity=".35"/>`).join("")}
+    <circle cx="120" cy="34" r="16" fill="#e0453a"/><circle cx="114" cy="28" r="5" fill="#fff" opacity=".6"/></svg>`; }
+
+module.exports = { soBHXH, khien, chongXu, bieuDoKinh, bangKiem, sachLuat, soMo, phieuLuong, phongBi, dienThoai, chongSo, but, thuoc, giayNho };
