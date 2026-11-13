@@ -210,7 +210,7 @@ function machTieuDe(deck) {
   const sl = deck.slides || [], out = [], warn = [], seen = {}, CHUONG = new Set(["section", "bcchuong", "qtchuong", "bhchuong"]);
   sl.forEach((d, i) => {
     const noTitle = LIMITS[d.type] && !("title" in LIMITS[d.type]), n = String(i + 1).padStart(2, "0"), k = bo(d.kicker || d.year).trim();
-    const q = bo(d.quote).trim(), t = noTitle || (!d.title && q) ? (q.length > 70 ? "“" + q.slice(0, 68) + "…”" : q && "“" + q + "”") : bo(d.title || d.q || d.question || (Array.isArray(d.lines) ? d.lines.join(" ") : "")).trim();   // recap: lines là câu chốt
+    const q = bo(d.quote).trim(), t = noTitle || (!d.title && q) ? (q.length > 70 ? "“" + q.slice(0, 68) + "…”" : q && "“" + q + "”") : bo(d.title || d.q || d.question || (Array.isArray(d.lines) ? [...d.lines, d.box || ""].join(" ") : "")).trim();   // recap: lines là câu chốt; bhdo: lines + box ("Mười năm, BHXH bắt buộc" + "đi bao xa?") mới thành câu
     if (CHUONG.has(d.type)) { out.push(`\n${n}  ── ${(d.partWord || "Phần").toUpperCase()} ${d.num ?? ""}: ${t.toUpperCase()} ──`); return; }
     out.push(`${n}  ${k ? k + " — " : ""}${t || "(không tiêu đề)"}   [${d.type}]`);
     if (!["cover", "end", "section", "quiz", "quizgo", "agenda", "toc", "picks", "book", "bigq", "bcbia", "bccamon", "bccauhoi", "qtbia", "bhbia", "bhdo", "bhba", "bhhoi", "bhghinho", "bhket"].includes(d.type) && !noTitle && !(!d.title && q)) {
