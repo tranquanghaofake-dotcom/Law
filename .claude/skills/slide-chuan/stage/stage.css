@@ -87,8 +87,8 @@ html, body { background: #05070d; }
 .tl span.on { font-weight: 800; color: var(--fg); font-size: 23px; }
 .evs { display: grid; grid-template-columns: repeat(var(--n), 1fr); gap: 34px; }
 .ev .d { font: 400 46px/1.15 var(--fd); color: var(--hl); margin-bottom: 8px; }
-.ev .t { font: 600 33px/1.36 var(--fb); }
-.ev .w { font: 700 22px/1.2 var(--fb); color: var(--mut); margin-bottom: 6px; }
+.ev .t { font: 600 33px/1.36 var(--fb); } .ev .t > b { display: block; }   /* tên bước là khối riêng (không dùng <br>) để đoạn mô tả được chia dòng đều */
+.ev .w { font: 700 22px/1.2 var(--fb); color: var(--mut); margin-bottom: 6px; } .ev.hot .w, .ev.hot .d { color: var(--ink); }   /* trên nền vàng của bước đang bàn: chữ xám chỉ 3,5 : 1 */
 
 /* ── flow ── */
 .flow { position: relative; height: 640px; }
@@ -421,7 +421,7 @@ th.on { background: var(--hl); } td.on { background: var(--paper-2); font-weight
 .pg figure.on .pi { box-shadow: inset 0 0 0 8px var(--hl); } .pg figure.on figcaption b { color: var(--hl); }
 .cg .cpi { height: 210px; background-size: cover; background-position: center; }   /* ảnh của từng thẻ (items[].photo): dải ảnh đầu thẻ, thẻ nào cũng cùng cao */
 /* photo: kiểu ảnh, phía chữ, điểm đánh số */
-.pho.ps-natural .img { filter: none; } .pho.ps-duotone .img { filter: grayscale(1) sepia(.55) contrast(1.1); } .pho.ps-natural .tint { opacity: .82; }
+.pho.ps-natural .img { filter: none; } .pho.ps-duotone .img { filter: grayscale(1) sepia(.55) contrast(1.1); }   /* natural chỉ bỏ lọc màu của ảnh; lớp phủ giữ nguyên để chữ trên ảnh đủ tương phản (giảm phủ từng làm chữ còn 2,6 : 1) */
 .pho.ben-phai .in { align-self: flex-end; max-width: 1180px; }
 .co-m { position: absolute; z-index: 2; width: 64px; height: 64px; margin: -32px 0 0 -32px; border-radius: 50%; background: var(--amber); color: var(--ink); border: 4px solid var(--ink); font: 400 36px/56px var(--fd); text-align: center; box-shadow: 0 6px 16px rgba(0,0,0,.45); }
 .co-r { position: absolute; z-index: 2; width: 150px; height: 150px; margin: -75px 0 0 -75px; border-radius: 50%; border: 6px solid var(--amber); box-shadow: 0 0 0 4px rgba(0,0,0,.35); } .co-r span { position: absolute; left: 50%; top: 100%; transform: translate(-50%, 10px); white-space: nowrap; padding: 6px 14px; background: var(--ink); color: var(--paper); font: 800 24px/1.2 var(--fb); }
