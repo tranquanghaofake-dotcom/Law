@@ -29,7 +29,7 @@ Chromium trong container cloud: `PW_CHROMIUM=/opt/pw-browsers/chromium`. Build n
 
 ## Agent, model, cache (tiết kiệm token)
 - **Mặc định tự làm.** Subagent mới không thấy hội thoại và không đọc được cache của phiên chính (cache tách theo model và theo prefix); lợi ích duy nhất là giữ output dài (quét nhiều file, log test, tài liệu web) ngoài context chính. Đọc 1–3 file đã biết đường dẫn → tự đọc. Không fan-out nhiều agent cho việc < 1 ngày.
-- **Gọi Agent thì luôn ghi `model`** — bỏ trống là chạy bằng model phiên chính: `haiku` tìm/đọc/tóm tắt file, việc cơ học (Explore trên gói subscription mặc định chạy Opus → gọi kèm `model: "haiku"`); `sonnet` viết code theo brief rõ; `opus` review/soát lỗi độc lập. `fable` và fork (luôn chạy bằng model phiên chính) chỉ dùng khi Hào yêu cầu.
+- **Gọi Agent thì luôn ghi `model`** — bỏ trống thì general-purpose chạy `sonnet` (mặc định đặt trong `.claude/settings.json`), Plan chạy model phiên chính: `haiku` tìm/đọc/tóm tắt file, việc cơ học (Explore trên gói subscription mặc định chạy Opus → gọi kèm `model: "haiku"`); `sonnet` viết code theo brief rõ; `opus` review/soát lỗi độc lập. `fable` và fork (luôn chạy bằng model phiên chính) chỉ dùng khi Hào yêu cầu.
 - **Việc lớn, nhiều task độc lập** → đề xuất Hào gõ `/dieuphoi` (đội sẵn: dp-cohoc haiku · dp-tho sonnet · dp-review opus), không tự dựng đội.
 - **Không đề xuất đổi model giữa phiên** (mỗi model một cache: đổi là đọc lại toàn bộ hội thoại không cache). Model phiên không hợp việc → nói 1 dòng để Hào chọn cho phiên sau.
 
