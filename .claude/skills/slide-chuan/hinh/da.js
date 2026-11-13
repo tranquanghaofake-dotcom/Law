@@ -204,6 +204,11 @@ function tienDoCss(kind, c, S) {
 }
 
 /** CSS của da cho deck (đã thay màu của bảng gốc "son" bằng màu của da qua bang_mau). S = bộ chọn slide. */
+// vàng nhấn trên slide nền màu nhấn (.red): pha dần với trắng tới khi đạt ≥ 3,6 : 1 với nền (chữ lớn: 3 : 1 WCAG, cộng biên) —
+// da ho-so: vàng D9AE3A trên nâu đỏ chỉ 2,9 : 1 (scripts/soat_chi_tiet.js)
+const doSang = (h) => { const f = (c) => { c /= 255; return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4); }; const v = [0, 2, 4].map((i) => parseInt(h.slice(i, i + 2), 16)); return 0.2126 * f(v[0]) + 0.7152 * f(v[1]) + 0.0722 * f(v[2]); };
+const tuongPhan = (a, b) => { const [x, y] = [doSang(a), doSang(b)].sort((p, q) => q - p); return (x + 0.05) / (y + 0.05); };
+const vangTren = (vang, nen) => { let v = vang; for (let k = 1; k <= 8 && tuongPhan(v, nen) < 3.6; k++) v = mix(vang, "FFFFFF", k * 0.1); return v; };   // 3,6: biên cho hoạ tiết nền làm sáng màu nhấn
 function daCss(ten) {
   const c = DA[ten], S = `.s.da-${ten}`, T = `${S}[data-tu]`, A = c.acc;
   const dark = mix(A, "000000", 0.6), dark2 = mix(A, "000000", 0.45);
@@ -212,7 +217,7 @@ function daCss(ten) {
     ${S}.light { ${c.to ? "" : `background-color: #${c.page}; ${nenL ? `background-image: ${b64(nenL)}; background-size: 100% 100%;` : ""}`} --fg: #${c.ink}; --mut: #${c.muted}; --hl: #${A}; --card: #fff; --rule: #${c.line}; --edge: #${A}; --bad: #${c.bad}; --good: #${c.good}; --shadow: ${rgba(c.ink, 0.25)}; color: #${c.ink}; }
     ${S}.dark { ${c.to ? "" : `background-color: #${dark}; ${nenD ? `background-image: ${b64(nenD)}; background-size: 100% 100%;` : ""}`} --hl: #${c.gold}; --card: #${dark2}; --rule: ${rgba("FFFFFF", 0.28)}; }
     ${S}.dark::before { background: radial-gradient(closest-side, ${rgba(mix(A, "FFFFFF", 0.35), 0.35)}, transparent 72%); }
-    ${S}.red { ${c.to ? "" : `background-color: #${A}; ${nenD ? `background-image: ${b64(nenD)}; background-size: 100% 100%;` : ""}`} --hl: #${c.gold}; --card: #${dark2}; --bad: #${mix(c.bad, "FFFFFF", 0.55)}; --good: #fff; }
+    ${S}.red { ${c.to ? "" : `background-color: #${A}; ${nenD ? `background-image: ${b64(nenD)}; background-size: 100% 100%;` : ""}`} --hl: #${vangTren(c.gold, A)}; --card: #${dark2}; --bad: #${mix(c.bad, "FFFFFF", 0.55)}; --good: #fff; }
     ${S} .prog { background: var(--hl); }
     ${S} .k { align-self: flex-start; }
     ${T}.light .stat, ${T}.light table { background: #fff; }
