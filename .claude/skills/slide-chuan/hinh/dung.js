@@ -202,7 +202,7 @@ async function dung({ deckPath, outPath, mau, chuyen, soat = false, nhungFont = 
       else { console.log(`ℹ Soát chi tiết: ${dong.length} chỗ (scripts/soat_chi_tiet.js — ↔ lệch 4–10 px: canh lại cho thẳng; ◐ tương phản: đậm chữ hoặc làm yên nền sau chữ; ¶ dòng mồ côi: sửa câu hoặc bề rộng hộp; ✂ nét vẽ cắt qua chữ: dời chữ hoặc dời nét)`); for (const m of dong.slice(0, 15)) console.log(`  ${m}`); if (dong.length > 15) console.log(`  … và ${dong.length - 15} chỗ nữa`); } }
     catch (e) { console.log(`ℹ không chạy được soát chi tiết: ${String(e.message || e).split("\n")[0]}`); } }
   // khoá meta không bước nào đọc (kiểm, dựng, đóng gói PPTX): gõ sai tên hoặc tính năng không có ở tầng hình ảnh
-  const metaBo = metaGoc ? Object.keys(metaGoc).filter((k) => !metaDoc.has(k) && !["author", "$schema", "comment"].includes(k) && !/^[_$]/.test(k)) : [];
+  const metaBo = metaGoc ? Object.keys(metaGoc).filter((k) => !metaDoc.has(k) && !["author", "$schema", "comment", "ghiChu", "ghichu", "note"].includes(k) && !/^[_$]/.test(k)) : [];
   if (metaBo.length) console.log(`ℹ meta không bước nào đọc: ${metaBo.join(", ")} — gõ sai tên, hoặc tính năng không có ở tầng hình ảnh (references/layouts.md)`);
   return { ...r, ...res, htmlPath, outPath, metaBo };
 }
