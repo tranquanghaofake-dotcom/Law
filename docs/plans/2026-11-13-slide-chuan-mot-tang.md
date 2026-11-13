@@ -16,4 +16,4 @@ Người dùng cho phép vượt giới hạn 2 giờ/phiên; vẫn commit check
 - Đợt 0–2: xong (commit 4c7dbb3 → 8d15fe2).
 - Đợt 3: xong — `hinh/kiem_noi_dung.js`, `--titles`, `--strict` dừng mã 3 khi còn ⚠, `_ghi-cong.md`.
 - Đợt 4: xong — xoá `engine/build.js`, `measure.js`, `themes.js`, `styles.js`, `shapes.js`, `kits.js`, `scripts/render.py`, `preview.py`, `check_overflow.py`; test Office soi PPTX bị xoá (test chỉ kiểm thông báo nội dung chuyển sang chạy qua `hinh/dung.js`); SKILL.md và references viết lại cho một tầng; `npm test` 206/206.
-- Đợt 5: đang làm.
+- Đợt 5: xong — bài BHXH (`meta.da: "so-bhxh"`, slide 15 thành `chart` `column` có `why` + dải COVID-19 lấy từ bản lưới) qua `--strict --soat`: 0 cảnh báo, 0/30 slide lệch; `examples/nghi-viec-hinh` (da `bang-cong`) và `examples/hoi-nghi-qt` (da `qt`) `--soat` sạch. Deck hình sự không có trong repo (làm ở phiên khác) → da `bc` chỉ kiểm bằng test tự động.
