@@ -15,3 +15,9 @@ test("không báo: cùng cách ghi, số khác nhau, năm, số điều luật",
   assert.deepStrictEqual(canhBao({ type: "bignum", title: "Từ 2015 đến 2025 tăng 6,8 triệu người", num: "18,91", unit: "triệu người" }), []);
   assert.deepStrictEqual(canhBao({ type: "statement", title: "Điều 2000 không có; năm 2000 là năm, 2.000 người là số" }), []);
 });
+
+test("\"slide N\" trong chữ phải trỏ tới slide có thật (thêm / bớt slide làm lệch số)", () => {
+  const w = (d) => validate({ meta: {}, slides: d }).warnings.filter((x) => /nhắc "slide/.test(x));
+  assert.strictEqual(w([cover, { type: "cards", title: "Ba hạn chế", items: [{ name: "A", desc: "Số liệu: slide 9" }] }]).length, 1);
+  assert.strictEqual(w([cover, { type: "cards", title: "Ba hạn chế", items: [{ name: "A", desc: "Số liệu: slide 1–2" }] }]).length, 0);
+});

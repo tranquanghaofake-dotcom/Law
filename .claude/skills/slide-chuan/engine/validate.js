@@ -641,6 +641,12 @@ function validate(deck, { extraTypes = [] } = {}) {
         if (v >= 1000 && !(!dv && /^(19|20)\d\d$/.test(raw))) so.push({ v, ghi: m[0].trim().replace(/\s+/g, " "), dv }); }
       const da = new Set(); for (const a of so) for (const b of so) if (a.dv !== b.dv && Math.abs(a.v - b.v) / a.v < 0.005) { const k = [a.ghi, b.ghi].sort().join("|"); if (da.has(k)) continue; da.add(k);
         warnings.push(`Slide ${i + 1} (${sl.type}): cùng một con số hai cách ghi — "${a.ghi}" và "${b.ghi}"; chọn một cách ghi cho cả slide (người nghe không phải đổi đơn vị trong đầu)`); } }); }
+  // "slide N" trong chữ của deck ("Số liệu: slide 16", "xem slide 9–10") phải trỏ tới slide có thật — thêm / bớt slide làm lệch số là lỗi hay gặp
+  { const BO = new Set(["notes", "covers", "id", "photo", "url", "go", "next", "basis"]), M = deck.slides.length;
+    const chu = (v, k) => (BO.has(k) ? "" : typeof v === "string" ? v + " " : Array.isArray(v) ? v.map((x) => chu(x)).join(" ") : isObj(v) ? Object.entries(v).map(([k2, x]) => chu(x, k2)).join(" ") : "");
+    deck.slides.forEach((sl, i) => { if (!isObj(sl)) return;
+      for (const m of chu(sl).matchAll(/\bslide\s+(\d+)(?:\s*[–-]\s*(\d+))?/gi)) for (const v of [m[1], m[2]].filter(Boolean).map(Number))
+        if (v < 1 || v > M) warnings.push(`Slide ${i + 1} (${sl.type}): nhắc "${m[0]}" nhưng deck chỉ có ${M} slide — sửa số sau khi thêm / bớt slide`); }); }
   return { errors, warnings, hints };
 }
 
