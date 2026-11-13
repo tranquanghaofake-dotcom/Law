@@ -96,9 +96,10 @@ Tối đa 3 hệ quả; mỗi hệ quả kèm `ref` = điều khoản là căn c
 ```json
 { "type": "quizgo", "id": "cau-hoi", "kicker": "Câu hỏi nhanh", "title": "Hợp đồng 24 tháng. Muốn nghỉ, báo trước [ít nhất] bao lâu?",
   "options": [ { "text": "3 ngày làm việc" }, { "text": "30 ngày", "ok": true }, { "text": "45 ngày" }, { "text": "Không cần báo trước" } ],
+  "whyNot": [ "3 ngày làm việc chỉ dành cho hợp đồng dưới 12 tháng (điểm c).", null, "45 ngày là mức của hợp đồng không xác định thời hạn (điểm a).", null ],
   "wrong": { "hint": "Gợi ý: …" }, "right": { "text": "… — điểm b khoản 1 Điều 35." }, "next": "ket" }
 ```
-2–4 đáp án, đúng một `"ok": true`. Bấm sai → slide gợi ý có nút "Thử lại"; bấm đúng → slide giải thích, nút "Tiếp tục" tới `next` (không ghi thì tới slide kế). Slide hỏi **không sang slide khi bấm ra ngoài đáp án** — nói điều này với người trình bày. Khác `quiz` của bộ mẫu (hỏi rồi lật đáp án, không bấm chọn).
+2–4 đáp án, đúng một `"ok": true`. Bấm sai → slide gợi ý có nút "Thử lại"; **`whyNot`** (mảng song song với `options`, `null` ở phương án đúng, ≤ 130 ký tự) → phương án sai có lý do được slide phản hồi **riêng**: dòng đậm "C · 45 ngày" rồi vì sao sai — nên dùng cho phương án là bẫy (luật cũ, nhầm loại hợp đồng); phương án sai không có lý do dùng chung slide `wrong.hint`; bấm đúng → slide giải thích, nút "Tiếp tục" tới `next` (không ghi thì tới slide kế). Slide hỏi **không sang slide khi bấm ra ngoài đáp án** — nói điều này với người trình bày. Khác `quiz` của bộ mẫu (hỏi rồi lật đáp án, không bấm chọn).
 
 ### `recap` — câu chốt + thẻ ghi nhớ + căn cứ
 ```json

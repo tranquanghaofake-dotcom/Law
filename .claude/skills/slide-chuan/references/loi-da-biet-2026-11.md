@@ -22,7 +22,7 @@ Nguồn: dựng bộ 15 slide "Mấy tuổi thì chịu trách nhiệm hình s�
 | L11 | Mô tả "tầng lưới Office mất Morph" là **sai**; hai tầng khác độ phủ | Cùng deck 15 slide: tầng hình ảnh 14/15 slide Morph; tầng lưới Office (`thread: true`) 6/15 — chỉ giữa slide cùng chương | **Đã sửa tài liệu** | `SKILL.md` mục "Giới hạn đã biết" |
 | L12 | `timeline` 3 mốc dư ≈ 2,2 in trống theo chiều dọc | Gợi ý bố cục của engine | **Còn** | Gộp với slide kề hoặc thêm `note`; không nhồi chữ |
 
-## B. Ngách cải tiến (đề xuất, chưa làm)
+## B. Ngách cải tiến (đề xuất; mục 4 đã làm — `--soat` tự dựng ảnh nhìn mờ, xem `hinh/dung.js`)
 
 1. **Nối kho luật**: số điều, số năm phải gõ tay rồi mới đối chiếu bằng `kiem_can_cu.py`. Thêm trường `cite: { law, dieu, khoan }` để build tự lấy nguyên văn / so khớp và in "khớp kho" hay "lệch".
 2. **Chế độ nháp nhanh** (`--nhap`) cho "slide mẫu" 1–3 slide: bỏ Bước 0 nhưng gắn nhãn "NHÁP" trên slide cuối.
@@ -112,7 +112,7 @@ Hai phiên độc lập, cùng đề tài hình sự, **cùng ba kết luận** 
 | P6 | `find_images.py` in tiến độ, giới hạn thời gian mỗi nguồn (N10) | Treo 10+ phút | ~30 phút |
 | P7 | Thêm 6 hình dán (N11); quy tắc cờ trừu tượng (N13), bản đồ có Hoàng Sa, Trường Sa (N12); nguồn văn bản hợp nhất chinhphu.vn (N14); `quizgo` có `whyNot` (N15) | Lỗi nhỏ lặp lại | ~1 giờ tổng |
 
-**Trạng thái lộ trình (13/11/2026, nhánh `claude/lucid-goldberg-yzikct` của repo Law):** P1 xong · P2 xong · P4 xong (đổi cách: đo cấu trúc thay cho chấm điểm ảnh) · P5 xong · P6 xong · P7 xong phần tài liệu, hình dán, quy tắc cờ / bản đồ (còn `quizgo` có `whyNot`) · **P3 mới có spec**: `docs/specs/2026-11-13-slide-chuan-da-theo-mon-design.md`, chờ duyệt · N16 (collage che chú thích) còn.
+**Trạng thái lộ trình (13/11/2026, nhánh `claude/lucid-goldberg-yzikct` của repo Law):** P1 xong · P2 xong · P4 xong (đổi cách: đo cấu trúc thay cho chấm điểm ảnh) · P5 xong · P6 xong · P7 xong phần tài liệu, hình dán, quy tắc cờ / bản đồ (`quizgo` có `whyNot` xong 13/11/2026 tối: mỗi phương án sai một slide phản hồi riêng, validate cảnh báo lý do đặt nhầm ở phương án đúng / quá 130 ký tự) · **P3 mới có spec**: `docs/specs/2026-11-13-slide-chuan-da-theo-mon-design.md`, chờ duyệt · N16 (collage che chú thích) còn.
 
 ### E4. Số liệu đo phiên này
 

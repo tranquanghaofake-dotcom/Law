@@ -222,6 +222,11 @@ function validate(deck, { extraTypes = [] } = {}) {
     const n = i + 1;
     if (!isObj(sl)) { E(n, "?", "slide", "phải là đối tượng { type: ..., ... }"); return; }
     const spec = SCHEMA[sl.type];
+    if (sl.type === "quizgo" && sl.whyNot != null) {   // cảnh quizgo (hinh/canh.js): whyNot[k] → slide phản hồi riêng cho phương án sai k
+      if (!Array.isArray(sl.whyNot)) warnings.push(`Slide ${n} (quizgo): "whyNot" phải là mảng song song với options (null ở phương án đúng)`);
+      else (sl.options || []).forEach((o, k) => { const w = sl.whyNot[k];
+        if (o && o.ok && w) warnings.push(`Slide ${n} (quizgo): whyNot[${k}] là phương án ĐÚNG — lời giải ghi ở right.text`);
+        else if (typeof w === "string" && w.replace(/[\[\]]/g, "").length > 130) warnings.push(`Slide ${n} (quizgo): whyNot[${k}] ${w.replace(/[\[\]]/g, "").length}/130 ký tự — slide phản hồi chỉ đủ 3 dòng dưới phương án vừa chọn`); }); }
     if (!spec && extraTypes.includes(sl.type)) return;
     if (sl.type === "refs") { E(n, "refs", "type", 'kiểu "refs" (slide tài liệu + mã QR) đã bỏ khỏi skill — nguồn ghi trong bản Word đi kèm, không ghi trên slide'); return; }
     if (!spec) { E(n, sl.type == null ? "?" : sl.type, "type", sl.type == null ? `thiếu "type" (chọn: ${Object.keys(SCHEMA).join(", ")})` : `kiểu "${sl.type}" không tồn tại (chọn: ${[...Object.keys(SCHEMA), ...extraTypes].join(", ")})`); return; }

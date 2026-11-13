@@ -55,3 +55,21 @@ test("không thẻ nào mang hai thuộc tính style (cái sau bị bỏ → m�
     const xau = (h.match(/<[a-zA-Z][^<>]*>/g) || []).filter((t) => (t.match(/\sstyle="/g) || []).length > 1);
     assert.deepEqual(xau.slice(0, 3), [], `${n}: thẻ có hai style`); }
 });
+
+test("quizgo.whyNot: mỗi phương án sai có slide phản hồi riêng nói vì sao sai; phương án thiếu lý do về slide chung", () => {
+  const d = { meta: { da: "giay" }, slides: [{ type: "cover", title: "B" }, { type: "quizgo", id: "hoi", title: "Mấy ngày?",
+    options: [{ text: "Ba" }, { text: "Mười hai", ok: true }, { text: "Bốn lăm" }], whyNot: ["LYDO_A là mức của hợp đồng dưới 12 tháng", null, null], wrong: { hint: "GOI_Y chung" } }] };
+  const r = dungHtml(d, { deckDir: R }), h = r.html;
+  assert.match(h, /data-go="hoi-sai-A"/, "đáp án A trỏ tới slide phản hồi riêng");
+  assert.match(h, /data-go="hoi-sai"/, "đáp án C không có lý do → slide phản hồi chung");
+  assert.ok(h.includes("LYDO_A"), "lý do của A phải hiện");
+  assert.ok(!(r.khongDoc || []).some((k) => /whyNot/.test(k)), "whyNot không được báo là trường bị bỏ");
+  assert.ok(h.indexOf("LYDO_A") < h.indexOf("GOI_Y chung"), "slide riêng đứng trước slide chung");
+});
+
+test("quizgo.whyNot: validate cảnh báo lý do đặt ở phương án đúng và lý do quá 3 dòng", () => {
+  const { validate } = require("../engine/validate");
+  const w = validate({ meta: {}, slides: [{ type: "cover", title: "B" }, { type: "quizgo", title: "Hỏi", options: [{ text: "a", ok: true }, { text: "b" }, { text: "c" }], whyNot: ["x", "y".repeat(140), "ngắn"] }] }, { extraTypes: ["quizgo"] }).warnings.filter((x) => /quizgo/.test(x));
+  assert.equal(w.length, 2, w.join("\n"));
+  assert.match(w[0], /whyNot\[0\] là phương án ĐÚNG/); assert.match(w[1], /whyNot\[1\] 140\/130/);
+});
