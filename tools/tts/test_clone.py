@@ -66,6 +66,14 @@ class ChanLoi(unittest.TestCase):
         self.assertEqual(clone.errors('Khoảng 1, khoảng 2, khoảng 5 đến 8 Điều 26 Luật đất đai 2024.', ref), 0)
         self.assertEqual(clone.errors('Khoảng 1, khoảng 2, khoảng 5 đến 9 Điều 26 Luật đất đai 2024.', ref), 1)
 
+    def test_don_loi_may_nghe(self):
+        self.assertEqual(clone.clean_heard('đáp án quỹ thành viên. unk.'), 'đáp án quỹ thành viên. .')
+        self.assertEqual(clone.errors(clone.clean_heard('đáp án quỹ thành viên. unk.'), 'Đáp án: Quỹ thành viên.'), 0)
+        self.assertTrue(clone.numbers_match(clone.clean_heard('bẩy ngày.'), '07 ngày.'))
+        self.assertTrue(clone.numbers_match(clone.clean_heard('khoản chín điêu bảy.'), 'Khoản 9 Điều 7.'))     # sai dấu nhẹ ở "điều": không coi là mất tên đơn vị
+        self.assertFalse(clone.numbers_match(clone.clean_heard('khoản chín điều bày.'), 'Khoản 9 Điều 7.'))    # số thì vẫn phải đúng
+        self.assertEqual(clone.clean_heard('bằng....................'), 'bằng.')
+
     def test_ten_don_vi_truoc_so_phai_dung(self):
         self.assertTrue(clone.numbers_match('Điều 275', 'Điều 275.'))
         self.assertFalse(clone.numbers_match('Điểm 275', 'Điều 275.'))
@@ -272,8 +280,9 @@ class GopTheoDot(unittest.TestCase):
         todo = [t for f in sorted(os.listdir(plan_out)) for t in self.json.loads(_read(os.path.join(plan_out, f)))]
         self.assertEqual(todo, [self.texts[199]])
         clone.cmd_plan(self.types.SimpleNamespace(**ns, retry_flagged=True))               # sinh lại: thêm 2 câu bị cờ đang dùng
-        todo = [t for f in sorted(os.listdir(plan_out)) for t in self.json.loads(_read(os.path.join(plan_out, f)))]
+        todo = [t for f in sorted(os.listdir(plan_out)) if f.endswith('.json') for t in self.json.loads(_read(os.path.join(plan_out, f)))]
         self.assertEqual(sorted(todo), sorted([self.texts[5], self.texts[6], self.texts[199]]))
+        self.assertEqual(sorted(os.listdir(os.path.join(plan_out, 'old'))), sorted(self.keys[i] + '.mp3' for i in (5, 6, 199)))  # kèm tệp cũ để chấm lại
         self.part('out-0', [self.keys[5], self.keys[199]])                                 # run --retry chỉ nộp bản đạt: câu 6 vẫn hỏng nên không có tệp
         got = self.merge(os.path.join(self.tmp.name, 'out-*'))
         self.assertEqual(got, {'switched': 'true', 'more': 'false'})

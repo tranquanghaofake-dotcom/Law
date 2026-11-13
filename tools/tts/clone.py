@@ -4,10 +4,12 @@ Mỗi câu:
   1. chuẩn hoá cách đọc (vi_norm: số, số hiệu văn bản, chữ viết tắt → chữ);
   2. VoxCPM2 (https://github.com/OpenBMB/VoxCPM, Apache-2.0, 2 tỉ tham số, chạy CPU) clone "kèm lời mẫu": nối tiếp từ voice/ref.wav
      + đúng lời của clip (REF_TEXT) nên giữ cả âm sắc lẫn lối đọc của mẫu; câu dài cắt khúc ở dấu câu (MAX_CHARS);
-  3. KHÂU CHẶN LỖI: Whisper small nghe lại, so với câu gốc (sai chữ) + độ giống giọng mẫu (Resemblyzer).
+  3. KHÂU CHẶN LỖI: nghe lại rồi so với câu gốc (sai chữ) + độ giống giọng mẫu (Resemblyzer). Câu từ 8 từ: Whisper small trước (nhanh),
+     trượt thì PhoWhisper nghe lại; câu ngắn hơn: PhoWhisper luôn (Whisper đa ngữ nghe câu 1–4 từ tiếng Việt rất kém).
      Không đạt → sinh lại (tối đa TRIES lần), giữ bản tốt nhất; vẫn không đạt → ghi cờ trong báo cáo để người nghe lại;
      câu ngắn/hay gặp ("Chính xác.") sinh tới khi có SHORT_OK bản đạt (tối đa BEST_OF), chọn bản tốt nhất;
      câu đọc SAI SỐ (điều, khoản, năm) không được đưa vào manifest — app đọc lời đó bằng giọng trình duyệt;
+     run --retry làm lại các câu đang bị cờ: chấm lại tệp cũ bằng máy nghe hiện tại trước, không đạt mới sinh lại (tối đa RETRY_TRIES lần);
   4. hậu kỳ: chuỗi phòng thu ấm/dày → de-esser → chuẩn độ lớn (model ra thẳng 48 kHz nên không còn VoiceFixer + EQ của bản v5b).
 Tên tệp = textKey(câu GỐC) như gen.py/app. Chạy lại chỉ sinh câu thiếu (manifest cùng STYLE).
 
@@ -41,11 +43,13 @@ MIN_TAKES = 1          # câu thường: bản đầu đạt chặn lỗi là d�
 EXPRESS = 0.03         # trọng số độ lên xuống giọng (bán âm) khi chọn giữa các bản đã đạt
 BEST_OF = 5            # câu ngắn/hay gặp: sinh tối đa ngần này bản
 SHORT_OK = 2           # … và dừng sớm khi đã có ngần này bản đạt để chọn (VoxCPM2 dễ đọc trệch câu 1–4 từ)
-RETRY_TRIES = 10       # run --retry (câu đang bị gắn cờ): số lần sinh tối đa, mỗi lần một cách trong RETRY_PLAN
-CARRIER = ' Ta sang phần tiếp theo.'  # câu đệm đọc sau câu rất ngắn rồi cắt đi
-RETRY_PLAN = [(2.0, 10, False)]  # (cfg, số bước, có câu đệm) — __RETRY_PLAN__
+RETRY_TRIES = 10       # run --retry (câu đang bị gắn cờ): số lần sinh tối đa
+# Máy nghe cho câu ngắn và cho lần nghe lại: PhoWhisper (VinAI, Whisper tinh chỉnh tiếng Việt), đổi sang CTranslate2 int8 để chạy bằng
+# faster-whisper. Whisper medium đa ngữ nghe câu 1–4 từ rất kém: chấm lại 85 tệp nó gắn cờ thì PhoWhisper cho đạt 64 tệp, và máy nghe thứ ba
+# (wav2vec2 tiếng Việt, không có mô hình ngôn ngữ) đồng ý ở phần lớn — "Công ty cổ phần." nó nghe ra "cổ phân", "6." ra "xấu" (đo 13/11/2026).
+JUDGE = 'vinai/PhoWhisper-medium'
 SHORT_WORDS = 4
-SHORT_CHECK = 8        # câu dưới 8 từ: kiểm tra bằng Whisper medium
+SHORT_CHECK = 8        # câu dưới 8 từ: kiểm tra thẳng bằng PhoWhisper (JUDGE) và không xét độ giống giọng
 SIM_MIN = 0.75         # độ giống tối thiểu so với voice/ref.wav (đầu ra thô, chưa hậu kỳ)
 OUT_SR = 44100
 PRE_LUFS = -16.0       # độ lớn vào chuỗi phòng thu (đo: −16 cho chất âm bằng bản v5b đã duyệt, −13 làm nén quá tay)
@@ -132,6 +136,13 @@ def head_extra(hyp_words: list[str], ref_words: list[str]) -> int:
     return 0
 
 
+def clean_heard(h: str) -> str:
+    """Dọn lời máy nghe trước khi so: PhoWhisper đôi khi chèn "unk", viết "bẩy" cho "bảy" (cùng một số), kéo dài dấu chấm."""
+    h = re.sub(r'\bunk\b', ' ', h, flags=re.I)
+    h = re.sub(r'\b([Bb])ẩy\b', r'\1ảy', unicodedata.normalize('NFC', h))
+    return re.sub(r'\s+', ' ', re.sub(r'\.{2,}', '.', h)).strip()
+
+
 def allowed_errors(n_words: int) -> int:
     """Whisper small cũng nghe nhầm: câu dưới 6 từ phải đúng hết; từ 6 từ cho phép ~1 lỗi mỗi 12 từ (làm tròn)."""
     return 0 if n_words < 6 else (n_words + 6) // 12
@@ -146,7 +157,7 @@ UNIT_WORDS = {'điều', 'khoản', 'điểm', 'chương', 'mục'}
 def citations(text: str) -> list[str]:
     """Dãy tên đơn vị đứng NGAY TRƯỚC một số (điều 5, khoản 2, chương ba…). Whisper hay viết "khoảng" cho "khoản" và
     "đều" cho "điều" khi đọc nhanh ("khoản 5 đến 8 điều 26"): hai cặp đó tính như nhau; "điểm"/"tiểu" hay mất chữ thì vẫn bị bắt."""
-    same = {'khoảng': 'khoản', 'đều': 'điều'}
+    same = {'khoảng': 'khoản', 'đều': 'điều', 'điêu': 'điều'}
     ws = [same.get(w, w) for w in re.findall(r'\w+', normalize(text).lower())]
     return [w for w, nxt in zip(ws, ws[1:]) if w in UNIT_WORDS and nxt in NUMBER_WORDS]
 
@@ -350,9 +361,9 @@ class Engine:
         self.tts = VoxCPM.from_pretrained(MODEL, load_denoiser=False, optimize=False)
         self.sr = self.tts.tts_model.sample_rate
         self.ref = os.path.join(HERE, 'voice', 'ref.wav')
-        # small cho câu dài (nhanh); medium cho câu ngắn — small hay nghe nhầm câu 1–2 giây, medium bắt được cả tiếng nói thừa cuối câu
+        # small cho câu dài (nhanh); câu ngắn và mọi lần nghe lại dùng PhoWhisper — Whisper đa ngữ hay nghe nhầm dấu ở câu 1–2 giây
         self.whisper = WhisperModel('small', device='cpu', compute_type='int8', cpu_threads=threads)
-        self.whisper_short = WhisperModel('medium', device='cpu', compute_type='int8', cpu_threads=threads)
+        self.whisper_short = WhisperModel(judge_dir(), device='cpu', compute_type='int8', cpu_threads=threads)
         self.enc = VoiceEncoder('cpu', verbose=False)
         ref, rsr = soundfile.read(os.path.join(HERE, 'voice', 'ref.wav'), dtype='float32')
         self.ref_emb = self.enc.embed_utterance(preprocess_wav(ref, source_sr=rsr))
@@ -361,14 +372,14 @@ class Engine:
                                  HighShelfFilter(8000, -0.5, 0.7), Compressor(-20, 2.0, 15, 150), Gain(1.5), Limiter(-1.0)])
         self.meter = pyloudnorm.Meter(OUT_SR, block_size=0.2)
 
-    def synth(self, spoken: str, cfg: float | None = None, steps: int | None = None):
+    def synth(self, spoken: str):
         np = self.np
         # VoxCPM2 ghép thẳng lời mẫu + câu cần đọc: thiếu khoảng trắng ("…mong đợi.Chính xác.") thì chỗ nối méo —
         # thừa tiếng hoặc nuốt âm đầu (đo 12/11/2026: "Chính xác." đạt 0/5 khi không có, 5/5 khi có).
         kw = {'prompt_wav_path': self.ref, 'prompt_text': REF_TEXT + ' '} if USE_REF_TEXT else {}
         parts = []
         for c in chunks(spoken):
-            a = np.asarray(self.tts.generate(text=c, reference_wav_path=self.ref, cfg_value=cfg or CFG, inference_timesteps=steps or STEPS, normalize=False, **kw), dtype=np.float32)
+            a = np.asarray(self.tts.generate(text=c, reference_wav_path=self.ref, cfg_value=CFG, inference_timesteps=STEPS, normalize=False, **kw), dtype=np.float32)
             parts.append(a)
         if len(parts) == 1:
             return parts[0]
@@ -381,7 +392,7 @@ class Engine:
     def hear(self, w16, careful: bool) -> str:
         model = self.whisper_short if careful else self.whisper
         segs, _ = model.transcribe(w16, language='vi', beam_size=5 if careful else 1, condition_on_previous_text=False)
-        return ' '.join(s.text for s in segs).strip()
+        return clean_heard(' '.join(s.text for s in segs))
 
     def cut_tail(self, audio, text: str):
         """Cắt phần nói thừa sau từ cuối của câu (lỗi hay gặp của model với câu ngắn). Trả về (audio, đã_cắt)."""
@@ -401,7 +412,7 @@ class Engine:
         return out, True
 
     def recheck(self, c: dict, audio, text: str) -> dict:
-        """Nghe lại lần hai bằng Whisper medium: tách lỗi do Whisper small nghe nhầm thuật ngữ khỏi lỗi đọc thật."""
+        """Nghe lại lần hai bằng PhoWhisper: tách lỗi do Whisper small nghe nhầm thuật ngữ khỏi lỗi đọc thật."""
         w16 = self.librosa.resample(self.np.asarray(audio, dtype=self.np.float32), orig_sr=self.sr, target_sr=16000)
         heard = self.hear(w16, True)
         return {**c, 'err': errors(heard, text), 'num': numbers_match(heard, text), 'head': head_extra(words(heard), words(text)), 'heard': heard, 'rechecked': True}
@@ -442,26 +453,36 @@ class Engine:
         y = trim(y, OUT_SR)  # cắt im lặng TRƯỚC khi đo độ lớn: câu ngắn hay dài đều cùng mức
         return peak_limit(self.gain_to(y, TARGET_LUFS), OUT_SR)
 
+    def rejudge(self, path: str, text: str) -> dict | None:
+        """Chấm lại một tệp mp3 ĐÃ CÓ bằng máy nghe hiện tại (PhoWhisper). Đạt → trả báo cáo mới (không cần sinh lại); không đạt → None."""
+        raw = subprocess.run(['ffmpeg', '-v', 'error', '-i', path, '-f', 's16le', '-ar', '16000', '-ac', '1', '-'], capture_output=True).stdout
+        w16 = self.np.frombuffer(raw, dtype=self.np.int16).astype(self.np.float32) / 32768.0
+        if len(w16) < 1600:
+            return None
+        heard = self.hear(w16, True)
+        sim = float(self.enc.embed_utterance(self.pre(w16, source_sr=16000)) @ self.ref_emb)
+        c = {'err': errors(heard, text), 'num': numbers_match(heard, text), 'head': head_extra(words(heard), words(text)),
+             'sim': round(sim, 4), 'pv': self.pitch_var(w16), 'heard': heard}
+        if not passes(c, text):
+            return None
+        return {'text': text, 'spoken': normalize(text), 'tries': 0, 'ok': True, **c, 'rechecked': True, 'tail_cut': False, 'rejudged': True}
+
     def make(self, text: str, retry: bool = False) -> tuple[object, dict]:
-        """retry=True: câu đã hỏng ở lần sinh thường → thử tới RETRY_TRIES lần, mỗi lần một cách sinh trong RETRY_PLAN."""
+        """retry=True: câu đã hỏng ở lần sinh thường → thử tới RETRY_TRIES lần thay vì 5."""
         spoken = normalize(text)
         if not re.search(r'\w', spoken):  # mảnh câu không có gì để đọc ("VD11.", "(…)."): im lặng ngắn để cả lời vẫn dùng giọng clone
             return self.np.zeros(int(0.05 * OUT_SR), dtype=self.np.float32), {'text': text, 'spoken': spoken, 'tries': 0, 'ok': True, 'silent': True}
         short = is_short(text)
         cands = []
         for k in range(RETRY_TRIES if retry else BEST_OF if short else TRIES):
-            cfg, steps, carrier = RETRY_PLAN[k % len(RETRY_PLAN)] if retry else (None, None, False)
-            if carrier:  # câu rất ngắn dễ hỏng: đọc kèm một câu đệm phía sau rồi cắt câu đệm đi (cut_tail dùng mốc từng từ của Whisper)
-                a, cut = self.cut_tail(self.synth(spoken + CARRIER, cfg, steps), text)
-            else:
-                a = self.synth(spoken, cfg, steps)
+            a = self.synth(spoken)
             c = self.score(a, text)
             if not passes(c, text) and len(words(c['heard'])) > len(words(text)):  # nói thừa: cắt đuôi rồi chấm lại
                 a2, cut = self.cut_tail(a, text)
                 if cut:
                     a, c = a2, {**self.score(a2, text), 'tail_cut': True}
             if not passes(c, text) and len(words(text)) >= SHORT_CHECK:
-                # nghe lại bằng Whisper medium TRƯỚC khi sinh bản mới: Whisper small hay nghe nhầm thuật ngữ,
+                # nghe lại bằng PhoWhisper TRƯỚC khi sinh bản mới: Whisper small hay nghe nhầm thuật ngữ,
                 # mà mỗi bản VoxCPM2 mới tốn 1–4 phút trên máy GitHub, nghe lại chỉ vài giây
                 c = self.recheck(c, a, text)
             c['k'] = k
@@ -518,6 +539,19 @@ def flagged_keys(stage: str) -> set[str]:
         return {r['key'] for r in json.load(fh).get('items', []) if not r.get('ok')}
 
 
+def judge_dir() -> str:
+    """Thư mục model máy nghe (CTranslate2 int8, ~750 MB) trong cache Hugging Face; chưa có thì tải bản gốc và đổi một lần (~1 phút)."""
+    out = os.path.join(os.path.expanduser(os.environ.get('HF_HOME', '~/.cache/huggingface')), 'luyen-luat', JUDGE.replace('/', '--') + '-ct2-int8')
+    if not os.path.exists(os.path.join(out, 'model.bin')):
+        from ctranslate2.converters import TransformersConverter
+        from huggingface_hub import snapshot_download
+        os.makedirs(os.path.dirname(out), exist_ok=True)
+        with tempfile.TemporaryDirectory() as tmp:  # bản gốc 2,9 GB chỉ cần lúc đổi: tải vào thư mục tạm rồi bỏ, không để chiếm cache của Actions
+            src = snapshot_download(JUDGE, local_dir=tmp)
+            TransformersConverter(src, copy_files=['tokenizer.json', 'preprocessor_config.json']).convert(out, quantization='int8', force=True)
+    return out
+
+
 def read_manifest(cache: str) -> dict:
     p = os.path.join(cache, 'manifest.json')
     if os.path.exists(p):
@@ -536,10 +570,15 @@ def cmd_plan(a):
     m = read_manifest(stage)
     done = {k for k in m.get('keys', []) if os.path.exists(os.path.join(stage, k + '.mp3'))} if is_current(m) else set()
     retry = getattr(a, 'retry_flagged', False)
-    if retry:  # sinh lại cả các câu đang có tệp nhưng bị gắn cờ (run --retry chỉ ghi đè khi bản mới đạt)
-        done -= flagged_keys(stage)
-    parts = plan(texts, done, a.shards, SHARD_MIN_CHARS // 4 if retry else SHARD_MIN_CHARS)
     os.makedirs(a.out, exist_ok=True)
+    if retry:  # làm lại cả các câu đang có tệp nhưng bị gắn cờ; kèm tệp cũ để run --retry chấm lại trước, không đạt mới sinh lại
+        flagged = flagged_keys(stage)
+        done -= flagged
+        os.makedirs(os.path.join(a.out, 'old'), exist_ok=True)
+        for k in flagged:
+            if os.path.exists(os.path.join(stage, k + '.mp3')):
+                shutil.copy2(os.path.join(stage, k + '.mp3'), os.path.join(a.out, 'old', k + '.mp3'))
+    parts = plan(texts, done, a.shards, SHARD_MIN_CHARS // 4 if retry else SHARD_MIN_CHARS)
     for i, p in enumerate(parts):
         with open(os.path.join(a.out, f'shard-{i}.json'), 'w', encoding='utf-8') as fh:
             json.dump(p, fh, ensure_ascii=False)
@@ -561,16 +600,21 @@ def cmd_run(a):
         with open(rep_path, encoding='utf-8') as fh:
             have = {json.loads(l)['key'] for l in fh if l.strip()}
     eng = Engine(a.threads)
-    t0, n, still = time.time(), 0, 0
+    t0, n, still, kept = time.time(), 0, 0, 0
     with open(rep_path, 'a', encoding='utf-8') as rep:
         for t in texts:
             key = text_key(t)
             if key in have and os.path.exists(os.path.join(a.out, key + '.mp3')):
                 continue
             try:
-                y, info = eng.make(t, retry=a.retry)
-                if info.get('ok') or not a.retry:  # sinh lại câu bị cờ: chỉ nộp bản ĐẠT, không đạt thì giữ tệp và báo cáo cũ
-                    write_mp3(y, os.path.join(a.out, key + '.mp3'))
+                old = os.path.join(a.old, key + '.mp3') if a.retry and a.old else ''
+                info = eng.rejudge(old, t) if old and os.path.exists(old) else None
+                if info:  # tệp cũ thật ra đọc đúng (máy nghe cũ nhầm): chỉ nộp báo cáo mới, giữ nguyên tệp
+                    kept += 1
+                else:
+                    y, info = eng.make(t, retry=a.retry)
+                    if info.get('ok') or not a.retry:  # sinh lại câu bị cờ: chỉ nộp bản ĐẠT, không đạt thì giữ tệp và báo cáo cũ
+                        write_mp3(y, os.path.join(a.out, key + '.mp3'))
             except Exception as e:  # một câu lỗi không làm hỏng cả phần
                 info = {'text': t, 'ok': False, 'error': str(e)[:200]}
             if info.get('ok') or not a.retry:
@@ -586,7 +630,7 @@ def cmd_run(a):
                 print(f'hết giờ ({a.deadline} phút): dừng, phần còn lại để lần chạy sau', flush=True)
                 break
     if a.retry:
-        print(f'sinh lại {n} câu bị cờ: {n - still} câu đã đạt, {still} câu vẫn chưa đạt (giữ tệp cũ)', flush=True)
+        print(f'làm lại {n} câu bị cờ: {kept} câu tệp cũ đọc đúng (máy nghe mới cho đạt), {n - still - kept} câu sinh lại đạt, {still} câu vẫn chưa đạt (giữ tệp cũ)', flush=True)
 
 
 def cmd_merge(a):
@@ -672,7 +716,8 @@ def main():
     r.add_argument('--todo'); r.add_argument('--text'); r.add_argument('--out', required=True)
     r.add_argument('--threads', type=int, default=4); r.add_argument('--limit', type=int, default=0)
     r.add_argument('--deadline', type=float, default=0, help='phút; quá thì dừng an toàn (giới hạn 6 giờ của Actions)')
-    r.add_argument('--retry', action='store_true', help='các câu này đang bị gắn cờ: thử nhiều cách sinh hơn, chỉ ghi tệp khi bản mới đạt chặn lỗi')
+    r.add_argument('--retry', action='store_true', help='các câu này đang bị gắn cờ: thử nhiều lần hơn, chỉ ghi tệp khi bản mới đạt chặn lỗi')
+    r.add_argument('--old', help='thư mục tệp mp3 cũ của các câu bị cờ (plan --retry-flagged chép vào <out>/old): chấm lại trước, đạt thì không sinh lại')
     g = sub.add_parser('merge')
     g.add_argument('--cache', required=True); g.add_argument('--texts'); g.add_argument('--parts', required=True); g.add_argument('--summary')
     g.add_argument('--github-output')

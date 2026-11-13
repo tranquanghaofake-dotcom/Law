@@ -19,7 +19,7 @@ on:
         description: Chạy thử N câu chọn đều theo loại câu khó — số điều khoản, viết tắt, ký hiệu… (0 = tắt; nên dùng 24 với 1 máy)
         default: '0'
       retry:
-        description: Sinh lại các câu đang bị gắn cờ trong báo cáo (true/false) — thử nhiều cách hơn, chỉ ghi đè khi bản mới đạt
+        description: Làm lại các câu đang bị gắn cờ trong báo cáo (true/false) — chấm lại tệp cũ bằng máy nghe hiện tại, trượt mới sinh lại; chỉ ghi đè khi bản mới đạt
         default: 'false'
   push:
     branches: [main]
@@ -93,22 +93,25 @@ jobs:
       - uses: actions/cache@v5
         with:
           path: ~/.cache/huggingface
-          key: giongmodel-v2
-      - name: Tải model VoxCPM2 (~4,7 GB) + Whisper small/medium
+          key: giongmodel-v3
+      - name: Tải model VoxCPM2 (~4,7 GB) + Whisper small + máy nghe PhoWhisper (đổi sang CTranslate2 một lần, ~750 MB)
         run: |
           grep -m1 'model name' /proc/cpuinfo; grep -o -m1 -w 'amx_bf16' /proc/cpuinfo || echo 'CPU không có AMX → float32'
           python - <<'PY'
+          import sys
+          sys.path.insert(0, 'tools/tts')
           from huggingface_hub import snapshot_download as d
           from faster_whisper import WhisperModel
+          import clone
           print('VoxCPM2:', d('openbmb/VoxCPM2'))
-          for size in ('small', 'medium'):
-              WhisperModel(size, device='cpu', compute_type='int8')
+          WhisperModel('small', device='cpu', compute_type='int8')
+          print('máy nghe:', clone.judge_dir())
           PY
       - uses: actions/download-artifact@v7
         with:
           name: plan
       - name: Sinh giọng phần ${{ matrix.shard }}
-        run: python tools/tts/clone.py run --todo plan/shard-${{ matrix.shard }}.json --out out --deadline 320 ${{ inputs.retry == 'true' && '--retry' || '' }}
+        run: python tools/tts/clone.py run --todo plan/shard-${{ matrix.shard }}.json --out out --deadline 320 ${{ inputs.retry == 'true' && '--retry --old plan/old' || '' }}
       - uses: actions/upload-artifact@v6
         if: always()
         with:
