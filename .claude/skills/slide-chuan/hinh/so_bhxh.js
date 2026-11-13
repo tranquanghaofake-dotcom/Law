@@ -364,9 +364,15 @@ S.bhrut = (s, deck, b, ctx) => { const H = tieuDe(s, { boSub: true }), top = Mat
   if (anhU(ctx, s)) { const R = { x: 110, y: top, w: 880, h: 1000 - top };
     return `${H.html}${anhKhung(ctx, s, R, { fx: vao(0, "fade") })}
       ${lop("bh-daurut", { x: R.x + R.w - 330, y: R.y + 30, w: 340, h: 120, r: -10 }, conDau(340, 120), { shadow: false, alt: "Dấu đã rút một lần", z: 12, ...vao(1, "pop") })}${chu("bh-daut", R.x + R.w - 320, R.y + 72, 320, "Đã rút một lần", { align: "center", z: 40, ...vao(1, "pop") })}
-      ${soChay("bh-hero", 1040, top - 40, 420, 240, s.num || "", { size: 220, at: 600 })}${chu("bh-heu", 1050 + rong(String(s.num || ""), 220, "anton") + 24, top + 20, 740 - rong(String(s.num || ""), 220, "anton"), esc(s.unit || ""), { size: 30, ...vao(2) })}
-      ${fa.map((x, k) => { const Y = top + 250 + k * 150, o = { ...vao(3 + k), sau: 0 }; return `${the(`bh-r${k}`, { x: 1040, y: Y, w: 770, h: 128 }, { trai: P.red, traiW: 10, ...o })}${chu("bh-rnum", 1076, Y + 30, 90, `0${k + 1}`, { color: P.red, ...o })}${chu("bh-rt", 1170, Y + (dong(x.text || x, 600, 30, 700) > 1 ? 22 : 42), 610, esc(x.text || x), o)}`; }).join("")}`; }
-  return `${H.html}${chu("bh-hero", 110, top - 40, 560, esc(s.num || ""), vao(0, "pop"))}${chu("bh-heu", 110, top + 300, 520, esc(s.unit || ""), vao(0))}
+      ${(() => { // số lớn cùng đơn vị với tiêu đề ("800.000", không "0,8" triệu): số dài → đơn vị xuống dưới số, ba thẻ ý dịch xuống và gọn lại
+        const ns = String(s.num || ""), w220 = rong(ns, 220, "anton"), dai = w220 > 480, pxN = dai ? Math.min(200, Math.floor(740 * 220 / w220)) : 220;
+        const donVi = dai ? chu("bh-heu", 1050, top - 40 + pxN + 8, 740, esc(s.unit || ""), { size: 30, ...vao(2) }) : chu("bh-heu", 1050 + w220 + 24, top + 20, 740 - w220, esc(s.unit || ""), { size: 30, ...vao(2) });
+        // đáy thẻ cuối trùng đáy ảnh (1000); trên cùng chừa chỗ cho dòng đơn vị
+        const HR = dai ? 116 : 128, DY = dai ? 132 : 150, dayDV = dai ? top - 40 + pxN + 8 + dong(s.unit || "", 740, 30, 800) * 38 : top + 200, Y0 = Math.max(dayDV + 18, 1000 - (2 * DY + HR));
+        return `${soChay("bh-hero", 1040, top - 40, dai ? 770 : 420, 240, ns, { size: pxN, at: 600 })}${donVi}
+        ${fa.map((x, k) => { const Y = Y0 + k * DY, o = { ...vao(3 + k), sau: 0 }; return `${the(`bh-r${k}`, { x: 1040, y: Y, w: 770, h: HR }, { trai: P.red, traiW: 10, ...o })}${chu("bh-rnum", 1076, Y + (HR - 54) / 2, 90, `0${k + 1}`, { color: P.red, ...o })}${chu("bh-rt", 1170, Y + (dong(x.text || x, 600, 30, 700) > 1 ? (HR - 78) / 2 : (HR - 39) / 2), 610, esc(x.text || x), o)}`; }).join("")}`; })()}`; }
+  const pxH = Math.min(300, Math.floor(540 * 300 / Math.max(1, rong(String(s.num || ""), 300, "anton"))));
+  return `${H.html}${chu("bh-hero", 110, top - 40 + (300 - pxH), 560, esc(s.num || ""), { size: pxH, ...vao(0, "pop") })}${chu("bh-heu", 110, top + 300, 520, esc(s.unit || ""), vao(0))}
     ${hero("bh-sorut", "so", { x: 660, y: top, w: 300, r: -6 }, vao(1))}${lop("bh-daurut", { x: 640, y: top + 150, w: 340, h: 120, r: -12 }, conDau(340, 120), { shadow: false, alt: "Dấu đã rút một lần", ...vao(2, "pop") })}${chu("bh-daut", 650, top + 192, 320, "Đã rút một lần", { align: "center", ...vao(2, "pop") })}
     ${fa.map((x, k) => { const Y = top + k * 196, o = vao(3 + k); return `${the(`bh-r${k}`, { x: 1040, y: Y, w: 770, h: 172 }, { dai: "do", daiH: 8, ...o })}${vong(`bh-ri${k}`, 1068, Y + 26, 120, ic(x, k), { mau: "do", ...o })}${chu("bh-rt", 1216, Y + 46, 570, esc(x.text || x), o)}`; }).join("")}`; };
 
