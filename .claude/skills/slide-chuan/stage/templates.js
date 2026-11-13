@@ -64,7 +64,7 @@ T.sectionChu = (s) => ({ cls: "red sec", html: `<div class="big">${esc(s.num ?? 
 function secChu(s) { const nhan = s.kicker ? f(s.kicker) : [s.num != null ? `Phần ${esc(s.num)}` : "", s.part ? f(s.part) : ""].filter(Boolean).join(" · ");
   return `${nhan ? `<div class="k" ${inn()}>${nhan}</div>` : ""}<h2 class="h" ${inn()}>${f(s.title)}</h2>${s.sub ? `<p class="sub" ${inn()}>${f(s.sub)}</p>` : ""}${(s.inside || []).length ? `<ul class="sec-in">${s.inside.slice(0, 5).map((x) => `<li ${inn()}>${f(x)}</li>`).join("")}</ul>` : ""}`; }
 
-const timelineStrip = (pts, active) => `<div class="tl" ${inn()}>${pts.map((p, i) => { const x = ((i + 0.5) / pts.length * 100).toFixed(2), on = active.includes(i) ? "on" : ""; return `<i class="${on}" style="left:${x}%"></i><span class="${on}" style="left:${x}%">${esc(on ? p[0] : p[1] || p[0])}</span>`; }).join("")}</div>`;
+const timelineStrip = (pts, active) => `<div class="tl" ${inn()}>${pts.map((p, i) => { const x = ((i + 0.5) / pts.length * 100).toFixed(2), on = active.includes(i) ? "on" : ""; return `<i class="${on}" style="left:${x}%"></i><span class="${on}" data-dl style="left:${x}%">${esc(on ? p[0] : p[1] || p[0])}</span>`; }).join("")}</div>`;
 T.scene = (s, deck) => {
   const pts = s.timeline && deck.timelines?.[s.timeline.ref], ev = s.events || [];
   return { cls: "light", html: `<div class="sc-top">${s.year ? `<div class="yr" ${inn("pop")}>${esc(s.year)}</div>` : "<span></span>"}<div>${head(s)}${s.sum ? `<p class="sub" ${inn()}>${f(s.sum)}</p>` : ""}</div></div>
@@ -81,7 +81,7 @@ T.flow = (s) => {
     const a = idx[e.from], b = idx[e.to]; if (a == null || b == null) return;
     const up = a < b ? !(e.side === "below") : e.side === "above", gap = Math.abs(b - a), lift = 74 + 46 * gap, y0 = up ? 112 : 508, yc = up ? y0 - lift : y0 + lift, x1 = x(a) + (a < b ? 60 : -60), x2 = x(b) + (a < b ? -60 : 60), c = col[e.tone] || "#0c1222";
     paths += `<path d="M${x1} ${y0} C${x1} ${yc}, ${x2} ${yc}, ${x2} ${y0}" fill="none" stroke="${c}" stroke-width="7" ${e.dash ? 'stroke-dasharray="16 12"' : ""} marker-end="url(#m-${e.tone || "ink"})"/>`;
-    labels += `<div class="fl-l ${e.tone || ""}" style="left:${(x1 + x2) / 2}px;top:${up ? y0 - lift * 0.75 : y0 + lift * 0.75}px" ${inn()}>${f(e.label)}</div>`;
+    labels += `<div data-dl class="fl-l ${e.tone || ""}" style="left:${(x1 + x2) / 2}px;top:${up ? y0 - lift * 0.75 : y0 + lift * 0.75}px" ${inn()}>${f(e.label)}</div>`;
   });
   const mk = Object.entries({ ink: "#0c1222", ...col }).map(([k, c]) => `<marker id="m-${k}" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="${c}"/></marker>`).join("");
   return { cls: "light", html: `${head(s)}<div class="body"><div class="flow"><svg viewBox="0 0 ${W} 640"><defs>${mk}</defs>${paths}</svg>${N.map((n, i) => `<div class="card fl-n" style="left:${x(i)}px" ${inn()}><div class="pic">${ico(n.icon)}</div>${n.tag ? `<div class="tg">${f(n.tag)}</div>` : ""}<b>${f(n.name)}</b><span>${f(n.who || "")}</span></div>`).join("")}${labels}</div></div>${note(s.note)}` };
