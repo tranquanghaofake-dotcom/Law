@@ -153,6 +153,14 @@ test("dựng PPTX thật: chữ là hộp chữ sửa được, Morph và liên 
     assert.equal((x.match(/<p:ph type="title"\/>/g) || []).length, 1, "chỉ một placeholder tiêu đề"); }
   // slide phản hồi là NHÁNH (chỉ nói khi người học chọn): tên slide trong PPTX ghi rõ — bản in ghi chú (scripts/ban_ghi_chu.py) không cộng giờ nhánh sai
   assert.match(s6, /<p:cSld name="Nhánh trắc nghiệm: sai[^"]*"/); assert.match(s7, /<p:cSld name="Nhánh trắc nghiệm: đúng[^"]*"/); assert.doesNotMatch(s5, /<p:cSld name="Nhánh/);
+  // chữ Việt trong PowerPoint: font phụ Đông Á / phức hợp KHÔNG được mang bảng mã Trung Quốc (pptxgenjs mặc định GB2312 −122, Big5 −120 → PowerPoint
+  // vẽ "ố, đ, ả, ư" bằng font Trung: ô vuông, chữ giãn); ngôn ngữ vi-VN (không gạch đỏ chính tả cả slide)
+  for (let k = 1; k <= 8; k++) { const x = await sl(k);
+    assert.doesNotMatch(x, /charset="-12[02]"/, `slide ${k}: còn bảng mã Trung Quốc ở font phụ`);
+    assert.doesNotMatch(x, /lang="en-US"/, `slide ${k}: còn lang en-US`); assert.match(x, /lang="vi-VN"/); }
+  const pres0 = await z.file("ppt/presentation.xml").async("string");
+  assert.doesNotMatch(pres0, /lang="en-US"/, "kiểu chữ mặc định cũng vi-VN");
+  assert.match(pres0, /<p:font typeface="[^"]+" panose="[0-9A-F]{20}" pitchFamily="\d+" charset="0"\/>/, "font nhúng khai họ + bảng mã để PowerPoint chọn font thay thế phương Tây nếu không nạp được");
   const pres = await z.file("ppt/presentation.xml").async("string"), emb = [...pres.matchAll(/<p:embeddedFont><p:font typeface="([^"]+)"/g)].map((m) => m[1]);
   const usedFaces = new Set(); for (let n = 1; n <= 8; n++) for (const m of (await sl(n)).matchAll(/<a:latin typeface="([^"]+)"/g)) usedFaces.add(m[1]);
   for (const f of usedFaces) assert.ok(emb.includes(f), `font “${f}” dùng mà không nhúng`);

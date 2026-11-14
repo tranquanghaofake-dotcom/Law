@@ -200,9 +200,6 @@ async function dung({ deckPath, outPath, mau, chuyen, soat = false, nhungFont = 
   if (soat) { const nm = require("child_process").spawnSync("python3", [path.join(__dirname, "..", "scripts", "nhin_mo.py"), outPath], { encoding: "utf8" });
     const anh = (nm.stdout || "").trim().split("\n").pop();
     console.log(nm.status === 0 && anh ? `✓ Nhìn mờ: ${anh} — mở xem: che chữ đi có đoán được đề tài không? Không → chưa giao` : `ℹ không dựng được ảnh nhìn mờ (scripts/nhin_mo.py): ${(nm.stderr || "").trim().split("\n").pop() || "?"}`);
-    // bản in ghi chú cho người trình bày (ảnh slide của bước soát + ghi chú + giây nói) — giao kèm PPTX để nhóm tập
-    const bg = require("child_process").spawnSync("python3", [path.join(__dirname, "..", "scripts", "ban_ghi_chu.py"), outPath], { encoding: "utf8" });
-    console.log(bg.status === 0 ? (bg.stdout || "").trim().split("\n").pop().replace(/^✓ /, "✓ Bản in ghi chú: ") : `ℹ không dựng được bản in ghi chú (scripts/ban_ghi_chu.py cần python-pptx + reportlab): ${(bg.stderr || "").trim().split("\n").pop() || "?"}`);
     // soát chi tiết bằng máy (nguyên tắc "mỗi chi tiết một lý do"): chữ gần thẳng hàng mà không thẳng, chữ thiếu tương phản trên nền thật
     try { const kq = await require("../scripts/soat_chi_tiet").soat(htmlPath), dong = kq.flatMap((s) => [...s.lech.map((m) => `slide ${s.slide}: ↔ ${m}`), ...s.tuongPhan.map((m) => `slide ${s.slide}: ◐ ${m}`), ...(s.moCoi || []).map((m) => `slide ${s.slide}: ¶ ${m}`), ...(s.cat || []).map((m) => `slide ${s.slide}: ✂ ${m}`)]);
       if (!dong.length) console.log("✓ Soát chi tiết: chữ thẳng hàng (không lệch 4–10 px), tương phản đạt WCAG trên nền thật, không dòng mồ côi, không nét vẽ cắt qua chữ");

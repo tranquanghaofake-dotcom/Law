@@ -147,7 +147,11 @@ async function embedFonts(zip, fonts) {
     const id = `rIdFont${++n}`;
     zip.file(`ppt/fonts/font${n}.fntdata`, ttfToEot(fs.readFileSync(f.file)));
     rels = rels.replace("</Relationships>", `<Relationship Id="${id}" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/font" Target="fonts/font${n}.fntdata"/></Relationships>`);
-    lst += `<p:embeddedFont><p:font typeface="${f.face}"/><p:regular r:id="${id}"/></p:embeddedFont>`;
+    // panose + họ (pitchFamily 34 = sans, độ rộng thay đổi) + bảng mã Latin: nếu máy không nạp được font nhúng, PowerPoint chọn font thay thế
+    // gần nhất theo các trường này — thiếu chúng có máy chọn font Đông Á (không có chữ Việt)
+    const fk = require("fontkit").create(fs.readFileSync(f.file)), pan = Array.from(fk["OS/2"].panose || []).slice(0, 10);
+    const panose = pan.length === 10 ? pan.map((v) => (v & 0xff).toString(16).toUpperCase().padStart(2, "0")).join("") : "00000000000000000000";
+    lst += `<p:embeddedFont><p:font typeface="${f.face}" panose="${panose}" pitchFamily="34" charset="0"/><p:regular r:id="${id}"/></p:embeddedFont>`;
   }
   if (!n) return 0;
   const block = `<p:embeddedFontLst>${lst}</p:embeddedFontLst>`;

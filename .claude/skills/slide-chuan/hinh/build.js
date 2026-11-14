@@ -355,11 +355,17 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
     for (const op of ops[si]) { if (op.t === "img") sl.addImage(op.o); else if (op.t === "shape") sl.addShape(op.st, op.o); else sl.addText(op.runs, op.o); } });
   const buf = await pp.write({ outputType: "nodebuffer" });
 
+  // CHỮ VIỆT TRONG POWERPOINT: pptxgenjs gắn mọi đoạn chữ lang="en-US" và font phụ Đông Á / phức hợp mang bảng mã TRUNG QUỐC
+  // (charset −122 GB2312, −120 Big5). PowerPoint coi chữ có dấu chồng (ố, ặ, ử…) là ký tự "mơ hồ" và có thể vẽ bằng font Đông Á; khi font
+  // chính chưa nạp, nó chọn font Trung thay thế → "ố, đ, ả, ư" thành ô vuông, chữ giãn như máy đánh chữ (ảnh người dùng 11/2026).
+  // Sửa: font phụ = chính font đó với bảng mã Latin (charset 0); ngôn ngữ vi-VN (đúng chính tả, không gạch đỏ cả slide).
+  const chuViet = (x) => x.replace(/(<a:(?:ea|cs) typeface="[^"]*"[^>]*?) charset="-?\d+"/g, '$1 charset="0"').replace(/\blang="en-US"/g, 'lang="vi-VN"').replace(/\baltLang="en-US"/g, 'altLang="vi-VN"');
   // 5) XML gốc: chuyển cảnh, chuỗi hiệu ứng, liên kết, font nhúng; gộp các ảnh trùng nhau
   const zip = await JSZip.loadAsync(buf);
   for (const [i, { effects, s }] of plan.entries()) {
     const f = `ppt/slides/slide${i + 1}.xml`; let t = await zip.file(f).async("string");
     t = t.replace(/<a:stretch\/>/g, "<a:stretch><a:fillRect/></a:stretch>");
+    t = chuViet(t);
     const tr = X.transition(i === 0 && s.trans === "morph" ? "fade" : s.trans, { dur: s.dur, auto: s.auto, noClick: s.noClick });
     if (tr) t = t.replace("</p:clrMapOvr>", "</p:clrMapOvr>" + tr);
     if (s.tlinks) { // liên kết nhảy slide trên hộp chữ: thêm quan hệ tới slide đích rồi đặt a:hlinkClick vào p:cNvPr của hộp chữ
@@ -397,6 +403,8 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
   const seen = new Map(), remap = new Map();
   for (const f of Object.keys(zip.files).filter((k) => k.startsWith("ppt/media/") && !zip.files[k].dir).sort()) { const h = md5(await zip.file(f).async("nodebuffer")); if (seen.has(h)) { remap.set(path.basename(f), seen.get(h)); zip.remove(f); } else seen.set(h, path.basename(f)); }
   if (remap.size) for (const rf of Object.keys(zip.files).filter((k) => /^ppt\/slides\/_rels\/.*\.rels$/.test(k))) { const r0 = await zip.file(rf).async("string"), r1 = r0.replace(/Target="\.\.\/media\/([^"]+)"/g, (m, b) => (remap.has(b) ? `Target="../media/${remap.get(b)}"` : m)); if (r1 !== r0) zip.file(rf, r1); }
+  for (const f of Object.keys(zip.files).filter((k) => /^ppt\/(notesSlides\/notesSlide\d+|presentation|slideMasters\/slideMaster\d+|slideLayouts\/slideLayout\d+|notesMasters\/notesMaster\d+)\.xml$/.test(k))) {
+    const x0 = await zip.file(f).async("string"), x1 = chuViet(x0); if (x1 !== x0) zip.file(f, x1); }
   const nFont = !nhungFont ? 0 : await X.embedFonts(zip, FACES.filter((f) => used.has(f.face)).map((f) => ({ face: f.face, file: f.path })));
   fs.writeFileSync(outPath, await zip.generateAsync({ type: "nodebuffer", compression: "DEFLATE" }));
 
