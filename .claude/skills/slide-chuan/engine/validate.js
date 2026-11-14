@@ -83,7 +83,7 @@ const SCHEMA = {
 };
 const KINDS = ["lecture", "case", "report"]; // loại bài (meta.kind) — quyết định khung slide, hình mặc định; ghi ở bước 0 (prep.json)
 // id, toc, trans, dur, emoji…: trường của tầng hình ảnh (hinh/dung.js)
-const COMMON = ["type", "id", "emoji", "emoji2", "emojiPos", "toc", "trans", "dur", "mode", "notes", "covers", "transition", "build", "motion", "takeaway", "pin", "activitySec", "basis", "scopeOk"]; // basis: [số slide] — hạn chế / nhận định dựa trên slide số liệu nào ở phần thực trạng // scopeOk: true — slide được phép nhắc nội dung ngoài phạm vi (meta.scopeOut), vd. bảng tổng đầu tiên; // activitySec: số giây lớp tự làm (exercise / quiz) — cộng vào thời lượng ước tính; // pin: câu / số chính trên tờ giấy ghim (chuỗi hoặc { text, by }) // takeaway: câu chốt của slide → dải "Ghi nhớ" ở đáy, cùng vị trí mọi slide // transition: fade | push | morph | none — riêng slide này // covers: các đề mục của tài liệu mà slide này trình bày (đối chiếu với meta.outline)
+const COMMON = ["type", "id", "emoji", "emoji2", "emojiPos", "toc", "trans", "dur", "mode", "notes", "covers", "transition", "build", "motion", "takeaway", "pin", "activitySec", "basis", "scopeOk", "phong", "dien", "cam"]; // basis: [số slide] — hạn chế / nhận định dựa trên slide số liệu nào ở phần thực trạng // scopeOk: true — slide được phép nhắc nội dung ngoài phạm vi (meta.scopeOut), vd. bảng tổng đầu tiên; // activitySec: số giây lớp tự làm (exercise / quiz) — cộng vào thời lượng ước tính; // pin: câu / số chính trên tờ giấy ghim (chuỗi hoặc { text, by }) // takeaway: câu chốt của slide → dải "Ghi nhớ" ở đáy, cùng vị trí mọi slide // transition: fade | push | morph | none — riêng slide này // covers: các đề mục của tài liệu mà slide này trình bày (đối chiếu với meta.outline)
 // Số mục tối đa engine hiển thị; vượt thì bị cắt im lặng.
 const CAPS = {
   quiz: { options: 4, whyNot: 4 }, timeline: { items: 6 },
@@ -255,6 +255,11 @@ function validate(deck, { extraTypes = [] } = {}) {
     if (sl.mode != null && !["d", "l", "a"].includes(sl.mode)) E(n, sl.type, "mode", `"${sl.mode}" không hợp lệ (d = nền tối, l = nền sáng, a = nền màu nhấn)`);
     walk(sl, spec, "", (p, m) => E(n, sl.type, p, m), true);
     if (sl.source != null) warnings.push(`Slide ${n} (${sl.type}): trường "source" đã bỏ — slide không ghi nguồn (nguồn nằm trong bản Word đi kèm); xoá trường này`);
+    // cảnh phim (hinh/dung.js dungPhim): phông nền theo giờ + diễn viên tự vẽ có tên Morph + máy quay
+    if (sl.phong != null) { const G = Object.keys(require("../hinh/ve_bh").GIO); if (typeof sl.phong !== "object" || (sl.phong.gio && !G.includes(sl.phong.gio))) errors.push(`Slide ${n} (${sl.type}): phong — {gio: ${G.join(" | ")}, pan: 0–1}`); }
+    if (sl.dien != null) { const { coVe } = require("../hinh/ve_bh"); if (!Array.isArray(sl.dien)) errors.push(`Slide ${n} (${sl.type}): dien — phải là danh sách [{ve, x, y, w, m}]`);
+      else sl.dien.forEach((d, j) => { if (!d || !coVe(d.ve)) errors.push(`Slide ${n} (${sl.type}): dien[${j}].ve "${d && d.ve}" không có trong hinh/ve_bh.js`); }); }
+    if (sl.cam != null && !/^(pan:-?[\d.]+,-?[\d.]+|zoom:[\d.]+(,[\d.]+,[\d.]+)?)$/.test(String(sl.cam))) errors.push(`Slide ${n} (${sl.type}): cam — "pan:dx,dy" hoặc "zoom:k,x,y" (hinh/may_quay.js)`);
     for (const k of Object.keys(sl)) if (k !== "source" && !(k in spec) && !COMMON.includes(k)) warnings.push(`Slide ${n} (${sl.type}): trường lạ "${k}" (engine bỏ qua — gõ sai tên?)`);
     if (sl.type === "scene" && sl.timeline) {
       const tl = sl.timeline;

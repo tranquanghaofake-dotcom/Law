@@ -32,6 +32,26 @@ const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").
 // Tên "3d:<vật>" = vật 3D Fluent Emoji (hinh/f3d, PNG) thay cho hình dán phẳng — dùng được ở mọi trường emoji / emojis / art / vat.
 const { f3d, coF3d } = require("./f3d");
 const VEBH = require("./ve_bh");   // "ve:<vật>" = vật tự vẽ (hinh/ve_bh.js), tô theo màu của da
+// DỰNG CẢNH PHIM trên slide type thường (11/2026): "phong" = phông nền theo giờ (hinh/ve_bh.js phong, rộng 2400 px; pan 0–1 = máy quay lia dọc phông),
+// "dien" = diễn viên (vật tự vẽ) đặt tuyệt đối, tên Morph "dv-<m>" — cùng diễn viên ở slide kề nhau thì Morph dời nó như một cảnh quay liền;
+// diễn viên mới xuất hiện thì bật vào (hoặc data-a riêng). Slide có phông nền chuyển sang nền sáng (chữ mực trên trời sáng).
+function dungPhim(s, h, daTen, i, st) {
+  const c = DA.DA[daTen] || DA.DA["hop-dong-bh"], toi = s.phong && s.phong.gio === "giong";
+  const uri = (svg) => `data:image/svg+xml;base64,${Buffer.from(svg, "utf8").toString("base64")}`;
+  const P = { acc: c.acc, gold: c.gold, ink: c.ink, bad: c.bad };
+  let them = "", truoc = "";
+  if (s.phong) { const pan = Math.max(0, Math.min(1, +s.phong.pan || 0)) * 480;
+    truoc += `<div class="emo phim-phong" data-l="phong-${i}" data-m="phong" data-sau="0.35" data-alt="Phông nền: ${esc(s.phong.gio || "sang")}" style="left:${-pan}px;top:0;width:2400px;height:1080px;z-index:0"><img src="${uri(VEBH.phong(P, s.phong.gio))}" alt="" style="filter:none"></div>`;
+    // màn sương ở nửa trên: chữ đọc rõ trên trời (cảnh vẫn thấy dưới chân chữ)
+    truoc += `<div class="phim-veil" style="position:absolute;left:0;top:0;width:1920px;height:620px;z-index:1;background:linear-gradient(180deg, ${toi ? "rgba(40,52,58,.72)" : "rgba(247,243,234,.82)"} 0%, ${toi ? "rgba(40,52,58,.35)" : "rgba(247,243,234,.45)"} 55%, transparent 100%)"></div>`;
+    h = h.replace(/^<section class="s ([^"]*)"/, (m, cl) => `<section class="s ${cl.replace(/\b(dark|red)\b/g, "light")} phim ${toi ? "phim-toi" : ""}"`); }
+  const truocDv = st.prevDv || new Set(), nay = new Set();
+  (s.dien || []).forEach((d, k) => { const ten = d.ve; if (!VEBH.coVe(ten)) return; const m = d.m || ten, noi = truocDv.has(m); nay.add(m);
+    const svg = VEBH.veSvg(ten, toi ? { ...P, ink: DA.mix(c.ink, "FFFFFF", 0.1) } : P);
+    them += `<div class="emo phim-dv" data-l="dv-${i}-${k}" data-m="dv-${esc(m)}" data-sau="${d.sau ?? 1}" data-pad="8" data-alt="${esc(d.alt || "Hình vẽ: " + ten.replace(/-/g, " "))}" ${noi ? "" : `data-a="${esc(d.a || "pop")}" data-at="${d.at ?? 300 + k * 160}"`} style="left:${+d.x || 0}px;top:${+d.y || 0}px;width:${+d.w || 240}px;height:${+d.w || 240}px;z-index:${d.z ?? 2}"><img src="${uri(svg)}" alt="" style="filter:none;${d.lat ? "transform:scaleX(-1)" : ""}"></div>`; });
+  st.prevDv = nay;
+  return h.replace(/^(<section [^>]*>)/, `$1${truoc}`).replace(/<\/section>\s*$/, them + "</section>");
+}
 let _khoEmoji = null;
 const khoEmoji = () => _khoEmoji || (_khoEmoji = fs.existsSync(path.join(__dirname, "emoji.json")) ? JSON.parse(fs.readFileSync(path.join(__dirname, "emoji.json"), "utf8")) : {});
 // Hình dán cho bìa / mở bài / chuyển chương / cảm ơn (các type thường vốn không có hình): `emoji`, `emoji2`, tuỳ chọn `emojiPos` {s,l,t,r}.
@@ -46,7 +66,7 @@ const decoGan = (s, ctx, i, html, prev = new Set(), now = new Set()) => { const 
   return g ? html.replace(/<\/section>\s*$/, g + "</section>") : html; };
 // THEO DÕI TRƯỜNG ĐƯỢC ĐỌC KHI DỰNG: mỗi slide bọc trong Proxy ghi lại đường dẫn khoá được đọc (mảng → "[]"). Trường có trong deck.json mà
 // không mẫu nào đọc = gõ sai tên, hoặc type đó không vẽ trường đó — trước đây bị bỏ âm thầm (takeaway, pin, part… — loi-da-biet F3.1)
-const KHONG_XET = new Set(["covers", "basis", "scopeOk", "activitySec", "photoCredit", "photoSource", "photoLicense", "license", "source", "credit", "notes", "check"]);
+const KHONG_XET = new Set(["phong", "dien", "cam", "covers", "basis", "scopeOk", "activitySec", "photoCredit", "photoSource", "photoLicense", "license", "source", "credit", "notes", "check"]);
 function theoDoi(slides) {
   const doc = slides.map(() => new Set()), kho = new WeakMap();
   const boc = (o, j, p) => { if (!o || typeof o !== "object") return o; let m = kho.get(o); if (!m) { m = new Map(); kho.set(o, m); } if (m.has(j + p)) return m.get(j + p);
@@ -99,11 +119,12 @@ function dungHtml(deck, { deckDir = process.cwd(), mau, chuyen, mepCat = {} } = 
       if (muon && !nen.split(/\s+/).includes(muon)) bo.push(`slide ${i + 1} (${s.type}) mode "${s.mode}"`); }
     let h = decoGan(s, ctx, i, r.html, prev, st.prev);
     if (deck.meta?.motif && !ctx.img(s.photo)) h = DA.motifSlide(h, deck.meta.motif, daTen, s.type, i);
-    if (daTen) h = DA.phuSlide(h, daTen, { type: s.type, i, chu: [s.kicker, s.title, s.sub].filter(Boolean).join(" ").replace(/[[\]]/g, ""), coHinhDan: !!((s.emoji && ctx.hasEmoji(s.emoji)) || s.cutout || (s.type === "cover" && s.layout === "typo")), coAnh: !!ctx.img(s.photo), art: s.art, artCaption: s.artCaption });
+    if (daTen) h = DA.phuSlide(h, daTen, { type: s.type, i, chu: [s.kicker, s.title, s.sub].filter(Boolean).join(" ").replace(/[[\]]/g, ""), coHinhDan: !!((s.emoji && ctx.hasEmoji(s.emoji)) || s.cutout || (s.type === "cover" && s.layout === "typo")), coAnh: !!ctx.img(s.photo) || !!s.phong, art: s.art, artCaption: s.artCaption });
+    if (s.phong || s.dien) h = dungPhim(s, h, daTen, i, st); else st.prevDv = new Set();
     // pin: MỘT câu chính trên tờ giấy ghim (validate.js kiểm ≤ 90 ký tự, có "by" khi là câu trích); hinh.js tự tìm chỗ trống, không có chỗ → kiemTran báo
     if (s.pin != null && !["cover", "section", "end"].includes(s.type)) { const pt = typeof s.pin === "string" ? s.pin : s.pin.text || "", by = typeof s.pin === "object" ? s.pin.by : "";
       h = h.replace(/^<section class="s /, `<section class="s co-ghim `).replace(/<\/section>\s*$/, `<div class="ghim-giay" data-ghim data-in="pop" style="--i:60"><p>${esc(pt).replace(/\[([^\]]+)\]/g, "<em>$1</em>")}</p>${by ? `<small>— ${esc(by)}</small>` : ""}</div></section>`); }
-    out.push({ id: s.id || `s${i + 1}`, html: h, tu: true, notes: note, src: i, trans: s.trans, dur: s.dur });
+    out.push({ id: s.id || `s${i + 1}`, html: h, tu: true, notes: note, src: i, trans: s.trans, dur: s.dur, cam: s.cam });
   });
   // nút Mục lục ở thanh đầu slide (khi deck có slide toc): chữ "Mục lục" + cuốn sách thu nhỏ nếu deck mở bằng cảnh book
   if (tocId) out.forEach((o, k) => { if (o.src === toc || !/class="bar"/.test(o.html)) return;

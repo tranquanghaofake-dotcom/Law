@@ -251,7 +251,42 @@ ${vom(P, 400, 980, 390, 760, 0.1)}${vom({ ...P, acc: mix(P.acc, "FFFFFF", 0.25) 
 ${nhanCanh(250, 250, "DN nhận tái", P)}${nhanCanh(270, 560, "DNBH gốc", P)}${dat("tau", P, 150, 740, 250)}${dat("nha-may", P, 380, 720, 250)}</svg>`,
 });
 
+// ---------- DIỄN VIÊN TOÀN THÂN (cảnh phim): anh X (người mua BH) và nhân viên DNBH ----------
+const nguoiDung = (ao, quan, P, tay = "xuoi", ca = "") => (Q) => khung(Q, (S) => `
+<rect x="98" y="150" width="20" height="56" rx="8" fill="#${quan}"/><rect x="122" y="150" width="20" height="56" rx="8" fill="#${mix(quan, "000000", 0.15)}"/>
+<ellipse cx="106" cy="208" rx="16" ry="7" fill="${INK(Q)}"/><ellipse cx="134" cy="208" rx="16" ry="7" fill="${INK(Q)}"/>
+<path d="M90 160 Q88 100 120 96 Q152 100 150 160Z" fill="#${ao}"/><path d="M120 96 Q152 100 150 160 H128Z" fill="#000" fill-opacity=".1"/>
+${tay === "gio" ? `<path d="M148 112 Q170 92 176 64" fill="none" stroke="#${ao}" stroke-width="16" stroke-linecap="round"/><circle cx="177" cy="58" r="9" fill="#${DA_NGUOI}"/>` : `<path d="M150 110 Q160 134 156 158" fill="none" stroke="#${ao}" stroke-width="15" stroke-linecap="round"/><circle cx="156" cy="162" r="8" fill="#${DA_NGUOI}"/>`}
+<path d="M90 110 Q80 134 84 158" fill="none" stroke="#${mix(ao, "000000", 0.12)}" stroke-width="15" stroke-linecap="round"/><circle cx="84" cy="162" r="8" fill="#${DA_NGUOI}"/>
+${ca}<rect x="112" y="80" width="16" height="18" rx="6" fill="#${mix(DA_NGUOI, "000000", 0.08)}"/>
+<ellipse cx="120" cy="62" rx="24" ry="27" fill="#${DA_NGUOI}"/><path d="M96 60 Q94 32 120 32 Q148 32 145 60 Q138 44 120 44 Q102 44 96 60Z" fill="${INK(Q)}"/>
+<circle cx="111" cy="64" r="2.8" fill="${INK(Q)}"/><circle cx="129" cy="64" r="2.8" fill="${INK(Q)}"/><path d="M113 75 Q120 80 127 75" fill="none" stroke="${INK(Q)}" stroke-width="2.5" stroke-linecap="round"/>`, { rx: 48 });
+VE["anh-x"] = (P) => nguoiDung(P.acc, "3E4F5C", P)(P);
+VE["anh-x-gio"] = (P) => nguoiDung(P.acc, "3E4F5C", P, "gio")(P);
+VE["nhan-vien"] = (P) => nguoiDung("F4F1EA", P.ink, P, "xuoi", `<path d="M114 100 L120 140 L126 100Z" fill="#${P.gold}"/>`)(P);
+// toà DN nhận tái bảo hiểm: khối thấp rộng, mái vàng — khác toà DNBH gốc để người xem phân biệt hai doanh nghiệp
+VE["toa-nhan-tai"] = (P) => khung(P, (S) => `
+<path d="M30 92 L120 50 L210 92Z" fill="${S("g")}"/><rect x="40" y="92" width="160" height="118" rx="4" fill="#${mix(P.acc, "FFFFFF", 0.25)}"/><rect x="120" y="92" width="80" height="118" fill="#000" fill-opacity=".08"/>
+${[0, 1, 2, 3, 4].map((c) => `<rect x="${52 + c * 30}" y="104" width="14" height="76" rx="3" fill="#F4F1EA"/>`).join("")}<rect x="100" y="182" width="40" height="28" fill="${INK(P)}"/><rect x="28" y="206" width="184" height="8" rx="4" fill="${INK(P)}"/>`, { rx: 100 });
+
+// ---------- PHÔNG NỀN THEO GIỜ (2400 × 1080, rộng hơn slide 480 px để máy quay lia) ----------
+// lớp xa → gần: trời · mặt trời · mây · đồi xa (nhạt, phối cảnh không khí) · phố xa · biển + cần cẩu (bên phải) · đất gần
+const GIO = { sang: ["FDE9D3", "DCEFEC"], trua: ["CFEAEA", "F3F7F2"], chieu: ["FFE2B8", "F7F0E3"], giong: ["7C8D96", "C4CDCF"], "hoang-hon": ["F6B27A", "F7DCC4"] };
+function phong(P, gio = "sang") {
+  const [t1, t2] = GIO[gio] || GIO.sang, toi = gio === "giong", xa = (k) => mix(P.acc, toi ? "9AA6AB" : "FFFFFF", k);
+  const may = (x, y, s, o) => `<g opacity="${o}" fill="#fff"><ellipse cx="${x}" cy="${y}" rx="${90 * s}" ry="${34 * s}"/><ellipse cx="${x + 60 * s}" cy="${y - 20 * s}" rx="${70 * s}" ry="${40 * s}"/><ellipse cx="${x + 130 * s}" cy="${y}" rx="${80 * s}" ry="${30 * s}"/></g>`;
+  let pho = ""; for (let i = 0; i < 16; i++) { const x = 80 + i * 92, h = 60 + ((i * 37) % 90); pho += `<rect x="${x}" y="${640 - h}" width="70" height="${h}" fill="#${xa(0.68)}"/>`; }
+  let cau = ""; for (const x of [1980, 2180]) cau += `<path d="M${x} 640 V420 H${x + 150} M${x} 440 L${x + 120} 420 M${x + 110} 420 V470" fill="none" stroke="#${xa(0.5)}" stroke-width="10"/>`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1080"><defs><linearGradient id="ph-t" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#${t1}"/><stop offset="1" stop-color="#${t2}"/></linearGradient>
+<radialGradient id="ph-m"><stop offset="0" stop-color="#FFF6D8"/><stop offset="1" stop-color="#FFF6D8" stop-opacity="0"/></radialGradient></defs>
+<rect width="2400" height="1080" fill="url(#ph-t)"/>${toi ? may(300, 150, 2.2, 0.35) + may(1300, 120, 2.6, 0.3) + may(2000, 170, 2, 0.35) : `<circle cx="${gio === "hoang-hon" ? 1700 : 1900}" cy="${gio === "hoang-hon" ? 560 : 210}" r="260" fill="url(#ph-m)"/><circle cx="${gio === "hoang-hon" ? 1700 : 1900}" cy="${gio === "hoang-hon" ? 560 : 210}" r="78" fill="#${gio === "hoang-hon" ? "F7A35C" : mix(P.gold, "FFFFFF", 0.45)}"/>` + may(420, 200, 1, 0.8) + may(1250, 140, 0.8, 0.7)}
+<path d="M0 620 Q300 520 620 590 T1260 560 T1900 600 V700 H0Z" fill="#${xa(0.78)}"/>${pho}${cau}
+<rect x="1880" y="640" width="520" height="90" fill="#${xa(0.55)}"/><path d="M1880 660 Q1960 650 2040 660 T2200 660 T2400 660" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="5"/>
+<path d="M0 700 Q480 650 980 690 T1880 680 V1080 H0Z" fill="#${xa(0.6)}"/><path d="M0 820 Q600 760 1200 800 T2400 790 V1080 H0Z" fill="#${xa(0.45)}"/>
+${toi ? [...Array(60).keys()].map((i) => `<path d="M${(i * 131) % 2400} ${(i * 71) % 760} l-12 30" stroke="#E6ECEE" stroke-width="5" stroke-linecap="round" opacity=".55"/>`).join("") : ""}</svg>`;
+}
+
 const coVe = (ten) => Object.prototype.hasOwnProperty.call(VE, ten);
 const veSvg = (ten, P) => (coVe(ten) ? VE[ten](P) : "");
 const veUri = (ten, P) => `data:image/svg+xml;base64,${Buffer.from(veSvg(ten, P), "utf8").toString("base64")}`;
-module.exports = { CANH, VE, coVe, veSvg, veUri, NAMES: Object.keys(VE) };
+module.exports = { phong, GIO, CANH, VE, coVe, veSvg, veUri, NAMES: Object.keys(VE) };

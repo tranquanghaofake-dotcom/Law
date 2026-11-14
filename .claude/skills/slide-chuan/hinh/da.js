@@ -268,6 +268,12 @@ function daCss(ten) {
   if (c.tieuDe === "tron") css += `${S} { --fd: 'Be Vietnam Pro', sans-serif; } ${chonFd().map((x) => `${S} :is(${x})`).join(", ")} { font-weight: 800; letter-spacing: -.01em; text-transform: none; } ${S} .h { font-family: var(--fb); font-weight: 800; letter-spacing: -.02em; line-height: 1.14; font-size: 70px; text-transform: none; }
     ${S}.cover .h { font-size: var(--fs, 96px); text-transform: none; } ${S}.sec .h { font-size: 104px; } ${S}.end .h { font-size: 128px; text-transform: none; } ${S}.pho.hdl .h { text-transform: none; }
     ${S} .k { font-weight: 700; letter-spacing: .02em; } ${S}.light { --card: #fff; }`;
+  // cảnh phim (dung.js dungPhim): chữ dồn lên khoảng trời, cảnh và diễn viên chiếm nửa dưới
+  css += `.s.phim { justify-content: flex-start; } .s.phim > .k, .s.phim > .body, .s.phim .h, .s.phim .sub, .s.phim .msg { position: relative; z-index: 3; }
+    .s.phim .body { flex: 0 0 auto; justify-content: flex-start; } .s.phim .h { font-size: 66px; max-width: 1240px; margin-bottom: 14px; } .s.phim .sub { font-size: 29px; max-width: 1180px; }
+    .s.phim.end { justify-content: flex-start; } .s.phim.end .h { font-size: 120px; }
+    .s.phim-toi { --fg: #F4F1EA; --mut: #E8ECEC; --hl: #${c.gold}; color: #F4F1EA; } .s.phim-toi .h { color: #fff; } .s.phim-toi .h em { color: #${c.gold}; } .s.phim-toi .sub { color: #EEF1F1; }
+    .s.phim-toi .k { background: rgba(255,255,255,.14); color: #fff; }`;
   if (c.canhNhan) css += `.s.da-${ten}-canh { --red: #${A}; --red-d: #${mix(A, "000000", 0.25)}; }`;
   css += theCss(c.the, c, T + ".light") + nhanCss(c.nhan, S) + soCss(c.so, c, S) + tienDoCss(c.tienDo, c, S);
   if (c.to === "bc") css += `${T}.light .da-to { left: 64px; right: 64px; top: 96px; bottom: 40px; z-index: 0; background: #F6EEDB; box-shadow: inset 0 1px 0 rgba(255,255,255,.7), 3px 4px 0 rgba(60,40,20,.14), 15px 22px 28px rgba(14,6,0,.5); }
