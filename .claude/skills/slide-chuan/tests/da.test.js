@@ -303,3 +303,13 @@ test("biểu đồ dựng lên theo lập luận: tách lớp theo dấu, sàn d
   const h = dungHtml(deck({ da: "hop-dong-bh" }, [{ type: "statement", title: "Thử", bieuDo: { kieu: "toa-chay", toa: [{ t: "A", stbh: 2, thiet: 1, nhanStbh: "2", nhanThiet: "1" }] } }]), { deckDir: path.join(__dirname, "..") }).html;
   assert.ok((h.match(/class="emo bd-hinh"/g) || []).length >= 4 && /bd-nhan[^>]*data-a="rise" data-at="\d+" style="left/.test(h));
 });
+
+test("lộ trình + cột trụ + số bước trên mũi tên: đủ trạm / cột, số là chữ số thường (font nhúng có glyph)", () => {
+  const BDV = require("../hinh/bieu_do_ve"), P = { acc: "0F5C55", gold: "EFA23F", ink: "17302E", bad: "B0302A" };
+  const l = BDV.KIEU["lo-trinh"]({ tram: [{ t: "A", ve: "o-mua" }, { t: "B" }, { t: "C" }, { t: "D" }] }, P, 1600, 700);
+  assert.deepEqual(l.nhan.filter((n) => /so-tram/.test(n.cls)).map((n) => n.t), ["1", "2", "3", "4"]);
+  const c = BDV.KIEU["cot-tru"]({ cot: [{ t: "a" }, { t: "b" }, { t: "c" }, { t: "d" }, { t: "e" }] }, P, 1600, 700);
+  assert.equal(c.nhan.filter((n) => n.cls === "ten").length, 5);
+  const h = dungHtml(deck({ da: "hop-dong-bh" }, [{ type: "statement", title: "Thử", phong: { gio: "sang" }, dien: [{ ve: "anh-x", x: 100, y: 600, w: 200, m: "a" }, { ve: "toa-dnbh", x: 900, y: 400, w: 300, m: "b" }], noi: [{ tu: "a", den: "b", nhan: "Phí", so: "1" }] }]), { deckDir: path.join(__dirname, "..") }).html;
+  assert.ok(/<span class="so-buoc">1<\/span>Phí/.test(h) && !/[①②③]/.test(h));
+});

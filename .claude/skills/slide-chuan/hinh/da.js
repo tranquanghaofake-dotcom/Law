@@ -271,7 +271,8 @@ function daCss(ten) {
   // cảnh phim (dung.js dungPhim): chữ dồn lên khoảng trời, cảnh và diễn viên chiếm nửa dưới
   // nhãn chữ gắn vào cảnh: viên giấy kem có mũi nhọn chỉ xuống vật, chữ mực — hộp chữ thật (sửa được trong PowerPoint)
   css += `.phim-nhan { position: absolute; z-index: 5; width: 420px; text-align: center; } .phim-nhan b { display: inline-block; white-space: nowrap; background: #FFFBF2; color: #${c.ink}; font: 800 30px/1.2 var(--fb); padding: 10px 22px; border-radius: 999px; box-shadow: 0 10px 24px ${rgba(c.ink, 0.18)}; }
-    .phim-nhan small { display: block; margin-top: 8px; font: 600 23px/1.3 var(--fb); color: #${c.ink}; text-shadow: 0 0 10px #FFFBF2, 0 0 4px #FFFBF2; } .phim-nhan.noi b { background: #${c.gold}; color: #${c.ink}; font-size: 26px; padding: 8px 20px; }
+    .phim-nhan small { display: block; margin-top: 8px; font: 600 23px/1.3 var(--fb); color: #${c.ink}; text-shadow: 0 0 10px #FFFBF2, 0 0 4px #FFFBF2; } .phim-nhan .so-buoc { display: inline-block; width: 30px; height: 30px; margin-right: 8px; border-radius: 50%; background: #${c.ink}; color: #fff; font: 800 20px/30px var(--fb); text-align: center; vertical-align: 2px; }
+    .phim-nhan.noi b { background: #${c.gold}; color: #${c.ink}; font-size: 26px; padding: 8px 20px; }
     .s.phim-toi .phim-nhan small { color: #fff; text-shadow: 0 1px 6px rgba(0,0,0,.6); }`;
   // biểu đồ cách điệu: chữ chiếm nửa trái, hình nửa phải; nhãn số trên hình
   css += `.s.co-bd { justify-content: flex-start; } .s.co-bd .body { flex: 0 0 auto; justify-content: flex-start; max-width: 860px; } .s.co-bd .h { font-size: 64px; } .s.co-bd .sub { font-size: 29px; }
@@ -281,9 +282,11 @@ function daCss(ten) {
     .bd-nhan.the-cam b { background: #D9542A; } .bd-nhan.the-xanh small, .bd-nhan.the-cam small { display: table; margin: 4px auto 0; padding: 1px 10px; border-radius: 999px; background: #fff; border: 2px solid #${c.acc}; font: 800 17px/1.2 var(--fb); letter-spacing: .05em; text-transform: uppercase; color: #${c.acc}; opacity: 1; }
     .bd-nhan.the-cam small { color: #B8441F; border-color: #D9542A; } .bd-nhan.trai.the-cam small { margin-left: 0; }
     .bd-nhan.trang-nen b, .bd-nhan.trang-nen small { color: #fff; } .bd-nhan.trang-nen small { opacity: .9; }
+    .bd-nhan.so-tram b { font: 800 38px/1 var(--fb); color: #fff; } .bd-nhan.so-tram.nho-tron b { font-size: 30px; }
     .bd-nhan.chu-giai { width: auto; text-align: right; } .bd-nhan.chu-giai b { font: 600 22px/1.3 var(--fb); color: #${c.muted}; }`;
   css += `.s.phim { justify-content: flex-start; } .s.phim > .k, .s.phim > .body, .s.phim .h, .s.phim .sub, .s.phim .msg { position: relative; z-index: 3; }
     .s.phim .body { flex: 0 0 auto; justify-content: flex-start; } .s.phim .h { font-size: 66px; max-width: 1240px; margin-bottom: 14px; } .s.phim .sub { font-size: 29px; max-width: 1180px; }
+    .s.phim.phim-lon .h { font-size: 118px; line-height: 1.05; } .s.phim.phim-lon .sub { font-size: 32px; max-width: 980px; }
     .s.phim.end { justify-content: flex-start; } .s.phim.sec .big { -webkit-text-stroke-color: rgba(23,48,46,.12); z-index: 0; } .s.phim.sec .h { font-size: 84px; max-width: 980px; } .s.phim.sec .sub { max-width: 820px; } .s.phim.end .h { font-size: 120px; }
     .s.phim-toi { --fg: #F4F1EA; --mut: #E8ECEC; --hl: #${c.gold}; color: #F4F1EA; } .s.phim-toi .h { color: #fff; } .s.phim-toi .h em { color: #${c.gold}; } .s.phim-toi .sub { color: #EEF1F1; }
     .s.phim-toi .k { background: rgba(255,255,255,.14); color: #fff; } .s.phim-toi .bar, .s.phim-toi .bar *, .s.phim-toi .zml { color: #fff; } .s.phim-toi .h em { color: #${vangTren(c.gold, "28343A", 4.5)}; }`;

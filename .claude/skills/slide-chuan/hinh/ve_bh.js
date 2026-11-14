@@ -292,6 +292,58 @@ function phong(P, gio = "sang") {
 ${toi ? [...Array(60).keys()].map((i) => `<path d="M${(i * 131) % 2400} ${(i * 71) % 760} l-12 30" stroke="#E6ECEE" stroke-width="5" stroke-linecap="round" opacity=".55"/>`).join("") : ""}<rect width="2400" height="1080" filter="url(#ph-h)"/></svg>`;
 }
 
+// ================= BẢN CHI TIẾT (11/2026, lượt "chau chuốt"): ghi đè các vật dùng chung xuất hiện trong nhiều cảnh =================
+// toà DNBH: tường kính có khung, phản chiếu trời, dải sàn, sảnh có mái che + cửa xoay, biển khiên phát sáng trên đỉnh, máy lạnh trên mái
+VE["toa-dnbh"] = (P) => khung(P, (S) => { const A = P.acc, sang = mix(A, "FFFFFF", 0.78), toi = mix(A, "000000", 0.25); let w = "";
+  for (let r = 0; r < 8; r++) for (let c = 0; c < 4; c++) { const x = 66 + c * 26, y = 74 + r * 15; w += `<rect x="${x}" y="${y}" width="22" height="11" fill="${(r + c) % 5 ? "url(#kt)" : "#FFE3A0"}"/>`; }
+  return `<defs><linearGradient id="kt" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#${sang}"/><stop offset=".55" stop-color="#${mix(A, "FFFFFF", 0.45)}"/><stop offset="1" stop-color="#${mix(A, "FFFFFF", 0.3)}"/></linearGradient></defs>
+<rect x="54" y="40" width="132" height="168" fill="${S("a")}"/><rect x="164" y="40" width="22" height="168" fill="#${toi}"/>${w}
+<path d="M66 74 L170 194" stroke="#fff" stroke-width="10" opacity=".12"/><path d="M90 74 L170 166" stroke="#fff" stroke-width="5" opacity=".1"/>
+${[0, 1, 2, 3, 4, 5, 6, 7].map((r) => `<rect x="54" y="${86 + r * 15}" width="132" height="2" fill="#${toi}" opacity=".5"/>`).join("")}
+<rect x="48" y="34" width="144" height="10" fill="#${toi}"/><rect x="72" y="24" width="20" height="12" rx="2" fill="#${mix(P.ink, "FFFFFF", 0.6)}"/><line x1="160" y1="34" x2="160" y2="10" stroke="#${P.ink}" stroke-width="3"/><circle cx="160" cy="9" r="3.5" fill="#${P.bad}"/>
+<circle cx="120" cy="56" r="18" fill="#FFE7A6" opacity=".35"/><path d="M120 44 L134 49 V58 Q134 66 120 71 Q106 66 106 58 V49Z" fill="${S("g")}" stroke="#fff" stroke-width="2"/><path d="M114 57 l4 4 l8 -8" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+<rect x="74" y="186" width="92" height="6" fill="#${P.gold}"/><rect x="92" y="192" width="56" height="18" fill="url(#kt)"/><line x1="120" y1="192" x2="120" y2="210" stroke="#${toi}" stroke-width="2"/>
+<rect x="40" y="208" width="160" height="8" rx="4" fill="${INK(P)}"/>`; }, { rx: 82 });
+
+// toà DN nhận tái: kiến trúc cổ điển (ngân hàng / tái BH lâu đời) — bậc thềm, cột có rãnh + đầu cột, trán tường, cờ trên mái
+VE["toa-nhan-tai"] = (P) => khung(P, (S) => { const G = P.gold, cot = mix("F4F1EA", "000000", 0.04);
+  return `<path d="M24 92 L120 46 L216 92Z" fill="${S("g")}"/><path d="M120 46 L216 92 H120Z" fill="#000" opacity=".1"/><path d="M52 86 L120 56 L188 86Z" fill="none" stroke="#fff" stroke-width="2" opacity=".6"/>
+<line x1="120" y1="46" x2="120" y2="16" stroke="${INK(P)}" stroke-width="3"/><path d="M121 17 h26 l-6 7 l6 7 h-26Z" fill="#${P.acc}"/>
+<rect x="30" y="92" width="180" height="12" fill="#${mix(G, "000000", 0.2)}"/>
+${[0, 1, 2, 3, 4].map((k) => { const x = 44 + k * 34; return `<rect x="${x}" y="104" width="20" height="82" fill="#${cot}"/><rect x="${x + 4}" y="104" width="2" height="82" fill="#000" opacity=".08"/><rect x="${x + 10}" y="104" width="2" height="82" fill="#000" opacity=".08"/><rect x="${x + 15}" y="104" width="5" height="82" fill="#000" opacity=".1"/><rect x="${x - 3}" y="102" width="26" height="6" fill="#${mix(G, "FFFFFF", 0.2)}"/><rect x="${x - 3}" y="184" width="26" height="5" fill="#${mix(G, "FFFFFF", 0.2)}"/>`; }).join("")}
+<rect x="36" y="104" width="168" height="84" fill="#${P.acc}" opacity=".18"/><rect x="108" y="140" width="24" height="46" fill="${INK(P)}"/>
+<rect x="26" y="189" width="188" height="8" fill="#${mix("E8E0D0", "000000", 0.05)}"/><rect x="18" y="197" width="204" height="8" fill="#${mix("E8E0D0", "000000", 0.12)}"/><rect x="10" y="205" width="220" height="8" fill="#${mix("E8E0D0", "000000", 0.2)}"/>`; }, { rx: 104 });
+
+// nhà: tường kem có gradient, mái ngói xếp hàng, ống khói gạch, cửa sổ ô kính + rèm + bậu, cửa có tay nắm + bậc, bụi cây, hàng rào
+VE.nha = (P) => khung(P, (S) => { const NG = "C8653A", ngd = mix(NG, "000000", 0.22);
+  return `<defs><linearGradient id="tuong" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF8EC"/><stop offset="1" stop-color="#F1E6D2"/></linearGradient></defs>
+<rect x="148" y="58" width="20" height="40" fill="#${ngd}"/>${[0, 1, 2].map((r) => `<line x1="148" y1="${66 + r * 10}" x2="168" y2="${66 + r * 10}" stroke="#${mix(NG, "000000", 0.4)}" stroke-width="1.5"/>`).join("")}
+<path d="M48 206 V112 L120 62 L192 112 V206Z" fill="url(#tuong)"/><path d="M120 62 L192 112 V206 H150 V118Z" fill="#000" fill-opacity=".05"/>
+<path d="M30 118 L120 50 L210 118 L198 128 L120 70 L42 128Z" fill="#${NG}"/>${[1, 2, 3, 4].map((k) => `<path d="M${30 + k * 11} ${118 - k * 8.3} L${210 - k * 11} ${118 - k * 8.3}" stroke="#${ngd}" stroke-width="2" opacity=".55"/>`).join("")}
+<path d="M120 50 L210 118 L198 128 L120 70Z" fill="#000" fill-opacity=".14"/>
+${[62, 152].map((x) => `<rect x="${x}" y="132" width="28" height="28" fill="#FFE7A8" stroke="#fff" stroke-width="4"/><path d="M${x} 132 q8 12 0 28 M${x + 28} 132 q-8 12 0 28" fill="#${mix(P.bad, "FFFFFF", 0.55)}" opacity=".85"/><line x1="${x + 14}" y1="132" x2="${x + 14}" y2="160" stroke="#fff" stroke-width="2.5"/><rect x="${x - 4}" y="160" width="36" height="5" fill="#${ngd}"/>`).join("")}
+<rect x="100" y="150" width="40" height="56" rx="3" fill="${S("a")}"/><rect x="106" y="156" width="28" height="18" rx="2" fill="#fff" opacity=".18"/><circle cx="131" cy="182" r="3" fill="#${P.gold}"/><rect x="94" y="204" width="52" height="6" fill="#C9BFAE"/>
+<circle cx="42" cy="196" r="14" fill="#3F7F5E"/><circle cx="58" cy="200" r="10" fill="#4C8F6A"/><circle cx="198" cy="198" r="12" fill="#3F7F5E"/>
+<rect x="36" y="206" width="168" height="7" rx="3.5" fill="#${mix(P.acc, "FFFFFF", 0.2)}"/>`; });
+
+// tàu container: thân hai màu + vạch nước, ô cửa tròn, container có gân + 4 màu, cabin có cửa kính, ống khói, bọt sóng đuôi
+VE.tau = (P) => khung(P, (S) => { const mau = [P.acc, P.gold, "C8653A", mix(P.acc, "FFFFFF", 0.35)]; let ct = "";
+  for (let r = 0; r < 3; r++) for (let c = 0; c < 4; c++) { if (r === 2 && c > 2) continue; const x = 40 + c * 30, y = 120 - r * 20; ct += `<rect x="${x}" y="${y}" width="29" height="19" fill="#${mau[(r * 3 + c) % 4]}"/>` + [5, 10, 15, 20, 25].map((g) => `<line x1="${x + g}" y1="${y + 2}" x2="${x + g}" y2="${y + 17}" stroke="#000" stroke-opacity=".14" stroke-width="1.5"/>`).join(""); }
+  return `${ct}<rect x="164" y="80" width="40" height="60" fill="#F4F7F8"/><rect x="164" y="80" width="40" height="6" fill="#${P.acc}"/>${[0, 1, 2].map((c) => `<rect x="${168 + c * 12}" y="92" width="9" height="7" fill="#${mix(P.acc, "FFFFFF", 0.45)}"/>`).join("")}<rect x="182" y="58" width="12" height="22" fill="#${P.bad}"/><rect x="182" y="58" width="12" height="5" fill="${INK(P)}"/>
+<path d="M12 140 H226 L206 186 H38Z" fill="${INK(P)}"/><path d="M28 172 H214 L206 186 H38Z" fill="#${P.bad}" opacity=".8"/><path d="M18 152 H222" stroke="#${P.gold}" stroke-width="4"/>${[60, 90, 120, 150, 180].map((x) => `<circle cx="${x}" cy="162" r="3.5" fill="#FFE3A0"/>`).join("")}
+<path d="M2 194 Q22 184 42 194 T82 194 T122 194 T162 194 T202 194 T242 194" fill="none" stroke="${S("a")}" stroke-width="7" stroke-linecap="round"/><path d="M200 188 q18 -8 34 2" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".9"/>`; }, { rx: 104 });
+
+// nhà máy: mái răng cưa có cửa kính mái, tường gạch có lưới cửa sổ, ống dẫn, hai ống khói sọc + khói nhiều lớp
+VE["nha-may"] = (P) => khung(P, (S) => `
+${[[64, 26, 16], [80, 14, 20], [100, 6, 16], [150, 40, 13], [164, 30, 16]].map(([x, y, r]) => `<circle cx="${x}" cy="${y}" r="${r}" fill="#${mix("C9D3D6", "FFFFFF", 0.3)}" opacity=".9"/>`).join("")}
+<rect x="56" y="44" width="20" height="90" fill="#${mix(P.ink, "FFFFFF", 0.3)}"/><rect x="56" y="58" width="20" height="7" fill="#${P.bad}"/><rect x="56" y="74" width="20" height="7" fill="#${P.bad}"/>
+<rect x="142" y="60" width="18" height="74" fill="#${mix(P.ink, "FFFFFF", 0.3)}"/><rect x="142" y="72" width="18" height="7" fill="#${P.bad}"/>
+<path d="M24 210 V130 L70 104 V130 L116 104 V130 L162 104 V130 L216 104 V210Z" fill="${S("a")}"/>${[0, 1, 2, 3].map((k) => `<path d="M${24 + k * 46} 130 L${70 + k * 46} 104 V${k === 3 ? 104 : 130}" fill="none"/><path d="M${54 + k * 46} 112 L${70 + k * 46} 104 V124 L${54 + k * 46} 130Z" fill="#${mix(P.acc, "FFFFFF", 0.6)}" opacity=".8"/>`).join("")}
+<path d="M162 104 V130 L216 104 V210 H170Z" fill="#000" fill-opacity=".1"/>
+${[0, 1, 2, 3, 4].map((c) => [0, 1].map((r) => `<rect x="${34 + c * 34}" y="${146 + r * 22}" width="22" height="15" fill="${(c + r) % 3 ? "url(#bdKg)" : "#FFE3A0"}" stroke="#${mix(P.acc, "000000", 0.2)}" stroke-width="2"/>`).join("")).join("")}
+<defs><linearGradient id="bdKg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DCEDF0"/><stop offset="1" stop-color="#8FB2BC"/></linearGradient></defs>
+<path d="M210 150 H226 V208" fill="none" stroke="#${P.gold}" stroke-width="6"/><rect x="96" y="186" width="44" height="24" fill="${INK(P)}"/>`);
+
 const coVe = (ten) => Object.prototype.hasOwnProperty.call(VE, ten);
 const veSvg = (ten, P) => (coVe(ten) ? VE[ten](P) : "");
 const veUri = (ten, P) => `data:image/svg+xml;base64,${Buffer.from(veSvg(ten, P), "utf8").toString("base64")}`;

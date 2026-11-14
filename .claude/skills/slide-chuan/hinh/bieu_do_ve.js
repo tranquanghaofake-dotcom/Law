@@ -245,6 +245,37 @@ const KIEU = {
     s += vat("anh-x-gio", P, 6, day - bh - 165, 150).replace("<svg", "<!--L:pop:300--><svg");
     return { svg: khungSvg(w, h, P, s), nhan };
   },
+
+  // LỘ TRÌNH CHƯƠNG: con đường uốn qua n trạm (mỗi trạm = một phần), cột biển có số, vật đúng chủ đề phần; anh X ở điểm xuất phát
+  "lo-trinh": (d, P, w, h) => {
+    const tr = d.tram || [], n = tr.length, y0 = h - 150; let s = "", nhan = [];
+    const X = (k) => 120 + (k * (w - 240)) / Math.max(1, n - 1), Y = (k) => y0 - (k % 2 ? 70 : 0);
+    let path = `M0 ${f1(y0 + 40)}`; for (let k = 0; k < n; k++) path += ` S${f1(X(k) - 80)} ${f1(Y(k))} ${f1(X(k))} ${f1(Y(k))}`; path += ` S${f1(w - 40)} ${f1(Y(n - 1) - 30)} ${w} ${f1(Y(n - 1) - 30)}`;
+    s += `<!--L:wipe:300--><path d="${path}" fill="none" stroke="#${mix(P.ink, "FFFFFF", 0.3)}" stroke-width="46" stroke-linecap="round"/><path d="${path}" fill="none" stroke="#FFE3B0" stroke-width="4" stroke-dasharray="22 16"/>`;
+    s += vat("anh-x-gio", P, 0, y0 - 150, 140).replace("<svg", "<!--L:pop:400--><svg");
+    tr.forEach((t, k) => { const x = X(k), y = Y(k), T = 800 + k * 450, mau = [P.acc, mix(P.acc, "000000", 0.2), mix(P.gold, "000000", 0.38), mix(P.ink, "FFFFFF", 0.1)][k % 4];   /* vòng số đủ tối cho chữ trắng */
+      s += `<!--L:drop:${T}--><line x1="${f1(x)}" y1="${f1(y)}" x2="${f1(x)}" y2="${f1(y - 120)}" stroke="#${P.ink}" stroke-width="7"/><circle cx="${f1(x)}" cy="${f1(y - 150)}" r="36" fill="#${mau}" stroke="#fff" stroke-width="6"/>`
+        + `<circle cx="${f1(x)}" cy="${f1(y)}" r="14" fill="#${P.gold}" stroke="#fff" stroke-width="5"/>` + (t.ve ? vat(t.ve, P, x - 80, y - 360, 160) : "");
+      nhan.push({ x, y: y - 182, t: String(k + 1), cls: "so-tram", w: 80, at: T + 100 });
+      nhan.push({ x, y: y + 34, t: t.t, b: t.b, cls: "ten", w: Math.min(360, (w - 240) / Math.max(1, n - 1) + 40), at: T + 200 }); });
+    return { svg: khungSvg(w, h, P, s), nhan };
+  },
+
+  // CỘT TRỤ: mái "BHTM" đặt trên n cột — mỗi cột một nguyên tắc chung; thiếu một cột thì mái nghiêng (nền móng của hoạt động bảo hiểm)
+  "cot-tru": (d, P, w, h) => {
+    const ct = d.cot || [], n = ct.length, mx = 60, top = 140, day = h - 170, cw = (w - 2 * mx) / n, colw = Math.min(110, cw * 0.42); let s = "", nhan = [];
+    s += `<!--L:up:300--><rect x="${mx - 30}" y="${day}" width="${w - 2 * mx + 60}" height="22" fill="#${mix(P.ink, "FFFFFF", 0.5)}"/><rect x="${mx - 50}" y="${day + 22}" width="${w - 2 * mx + 100}" height="18" fill="#${mix(P.ink, "FFFFFF", 0.35)}"/>`;
+    ct.forEach((c, k) => { const cx = mx + cw * k + cw / 2, T = 600 + k * 300, x = cx - colw / 2;
+      s += `<!--L:up:${T}--><rect x="${f1(x)}" y="${top + 40}" width="${f1(colw)}" height="${f1(day - top - 40)}" fill="#F4F1EA"/>` + [0.2, 0.42, 0.64].map((fx) => `<rect x="${f1(x + colw * fx)}" y="${top + 40}" width="${f1(colw * 0.06)}" height="${f1(day - top - 40)}" fill="#000" opacity=".07"/>`).join("")
+        + `<rect x="${f1(x + colw * 0.8)}" y="${top + 40}" width="${f1(colw * 0.2)}" height="${f1(day - top - 40)}" fill="#000" opacity=".09"/>`
+        + `<rect x="${f1(x - 10)}" y="${top + 30}" width="${f1(colw + 20)}" height="16" fill="#${mix(P.gold, "FFFFFF", 0.2)}"/><rect x="${f1(x - 10)}" y="${f1(day - 14)}" width="${f1(colw + 20)}" height="14" fill="#${mix(P.gold, "FFFFFF", 0.2)}"/>`
+        + `<circle cx="${f1(cx)}" cy="${f1(top + 110)}" r="30" fill="#${P.acc}"/>` + (c.ve ? vat(c.ve, P, cx - 45, top + 170, 90) : "");
+      nhan.push({ x: cx, y: top + 88, t: String(k + 1), cls: "so-tram nho-tron", w: 70, at: T + 100 });
+      nhan.push({ x: cx, y: day + 54, t: c.t, b: c.b, cls: "ten", w: cw - 8, at: T + 200 }); });
+    s += `<!--L:drop:${600 + n * 300 + 200}--><path d="M${mx - 40} ${top + 32} L${w / 2} ${top - 70} L${w - mx + 40} ${top + 32}Z" fill="#${P.acc}"/><path d="M${w / 2} ${top - 70} L${w - mx + 40} ${top + 32} H${w / 2}Z" fill="#000" opacity=".12"/><rect x="${mx - 50}" y="${top + 26}" width="${w - 2 * mx + 100}" height="16" fill="#${mix(P.acc, "000000", 0.25)}"/>`;
+    nhan.push({ x: w / 2, y: top - 22, t: d.mai || "Bảo hiểm thương mại", cls: "trang", w: 600, at: 600 + n * 300 + 400 });
+    return { svg: khungSvg(w, h, P, s), nhan };
+  },
   // HŨ PHÍ + VẠCH NGƯỠNG (minh hoạ, không theo số liệu): hũ = phí BH; nước = bồi thường; vạch = tỷ lệ bồi thường giữ lại; phần trên vạch chảy sang DN nhận tái
   "hu-nguong": (d, P, w, h) => {
     const x0 = w * 0.08, jw = w * 0.36, top = 70, bot = h - 60, mucN = d.muc ?? 0.78, mucV = d.nguong ?? 0.55, yN = bot - (bot - top) * mucN, yV = bot - (bot - top) * mucV;
