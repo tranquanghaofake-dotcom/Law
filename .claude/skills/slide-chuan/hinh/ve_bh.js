@@ -284,6 +284,7 @@ ${[0, 1, 2, 3, 4].map((c) => `<rect x="${52 + c * 30}" y="104" width="14" height
 // lớp xa → gần: trời · mặt trời · mây · đồi xa (nhạt, phối cảnh không khí) · phố xa · biển + cần cẩu (bên phải) · đất gần
 const GIO = { sang: ["FDE9D3", "DCEFEC"], trua: ["CFEAEA", "F3F7F2"], chieu: ["FFE2B8", "F7F0E3"], giong: ["7C8D96", "C4CDCF"], "hoang-hon": ["F6B27A", "F7DCC4"] };
 function phong(P, gio = "sang") {
+  if (/^thuc/.test(gio)) return VT.phong(P, gio.split("-")[1] || "sang");
   const [t1, t2] = GIO[gio] || GIO.sang, toi = gio === "giong", xa = (k) => mix(P.acc, toi ? "9AA6AB" : "FFFFFF", k);
   const may = (x, y, s, o) => `<g opacity="${o}" fill="#fff"><ellipse cx="${x}" cy="${y}" rx="${90 * s}" ry="${34 * s}"/><ellipse cx="${x + 60 * s}" cy="${y - 20 * s}" rx="${70 * s}" ry="${40 * s}"/><ellipse cx="${x + 130 * s}" cy="${y}" rx="${80 * s}" ry="${30 * s}"/></g>`;
   let pho = ""; for (let i = 0; i < 16; i++) { const x = 80 + i * 92, h = 60 + ((i * 37) % 90); pho += `<rect x="${x}" y="${640 - h}" width="70" height="${h}" fill="#${xa(0.68)}"/>`; }
@@ -352,6 +353,8 @@ ${[0, 1, 2, 3, 4].map((c) => [0, 1].map((r) => `<rect x="${34 + c * 34}" y="${14
 <defs><linearGradient id="bdKg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DCEDF0"/><stop offset="1" stop-color="#8FB2BC"/></linearGradient></defs>
 <path d="M210 150 H226 V208" fill="none" stroke="#${P.gold}" stroke-width="6"/><rect x="96" y="186" width="44" height="24" fill="${INK(P)}"/>`);
 
+// bộ bán tả thực (hinh/ve_thuc.js): tên "thuc-*"; phông "thuc" / "thuc-<giờ>"
+const VT = require("./ve_thuc"); Object.assign(VE, VT.VE);
 const coVe = (ten) => Object.prototype.hasOwnProperty.call(VE, ten);
 const veSvg = (ten, P) => (coVe(ten) ? VE[ten](P) : "");
 const veUri = (ten, P) => `data:image/svg+xml;base64,${Buffer.from(veSvg(ten, P), "utf8").toString("base64")}`;

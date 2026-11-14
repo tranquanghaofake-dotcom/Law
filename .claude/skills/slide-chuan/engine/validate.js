@@ -256,7 +256,7 @@ function validate(deck, { extraTypes = [] } = {}) {
     walk(sl, spec, "", (p, m) => E(n, sl.type, p, m), true);
     if (sl.source != null) warnings.push(`Slide ${n} (${sl.type}): trường "source" đã bỏ — slide không ghi nguồn (nguồn nằm trong bản Word đi kèm); xoá trường này`);
     // cảnh phim (hinh/dung.js dungPhim): phông nền theo giờ + diễn viên tự vẽ có tên Morph + máy quay
-    if (sl.phong != null) { const G = Object.keys(require("../hinh/ve_bh").GIO); if (typeof sl.phong !== "object" || (sl.phong.gio && !G.includes(sl.phong.gio))) errors.push(`Slide ${n} (${sl.type}): phong — {gio: ${G.join(" | ")}, pan: 0–1}`); }
+    if (sl.phong != null) { const G = Object.keys(require("../hinh/ve_bh").GIO); if (typeof sl.phong !== "object" || (sl.phong.gio && !G.includes(sl.phong.gio) && !/^thuc(-[a-z]+)?$/.test(sl.phong.gio))) errors.push(`Slide ${n} (${sl.type}): phong — {gio: ${G.join(" | ")} | thuc-<giờ>, pan: 0–1}`); }
     if (sl.dien != null) { const { coVe } = require("../hinh/ve_bh"); if (!Array.isArray(sl.dien)) errors.push(`Slide ${n} (${sl.type}): dien — phải là danh sách [{ve, x, y, w, m}]`);
       else sl.dien.forEach((d, j) => { if (!d || !coVe(d.ve)) errors.push(`Slide ${n} (${sl.type}): dien[${j}].ve "${d && d.ve}" không có trong hinh/ve_bh.js`); }); }
     if (sl.cam != null && !/^(pan:-?[\d.]+,-?[\d.]+|zoom:[\d.]+(,[\d.]+,[\d.]+)?)$/.test(String(sl.cam))) errors.push(`Slide ${n} (${sl.type}): cam — "pan:dx,dy" hoặc "zoom:k,x,y" (hinh/may_quay.js)`);
