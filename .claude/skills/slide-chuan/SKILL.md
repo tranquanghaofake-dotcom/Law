@@ -13,6 +13,7 @@ Câu hỏi gốc của mỗi slide: **người nghe nhìn 10 giây thì hiểu �
 - **Mục tiêu là deck người xem thấy đẹp và hiểu được; quy trình chỉ là công cụ.** Khi một quy tắc, danh sách type hay kế hoạch đã duyệt xung đột với mục tiêu, giữ mục tiêu, sửa kế hoạch và nói lý do trong báo cáo — không giữ nguyên kế hoạch rồi giao deck sơ sài.
 - **Che chữ vẫn phải đoán được đề tài.** Mỗi deck mang **da của môn** (mục dưới) + 4–8 cảnh + ảnh thật / hình dán đúng chủ đề. Nền, khung chung (`"da": "none"`) chỉ khi người dùng tự chọn — lỗi này đã bị chê ở 4 bài (`references/loi-da-biet-2026-11.md` L10).
 - **Mỗi chi tiết một lý do.** Chi tiết nào (màu, chấm, dải, vật, hoạ tiết) cũng phải chở dữ liệu, điều hướng, nhận diện đề tài hoặc phân loại theo một mã cố định cả deck; không nói được nghĩa thì bỏ. Đỏ chỉ cho điều tiêu cực thật; không vẽ vật cạnh ảnh đã có vật đó (`references/nguyen-tac-bo-cuc.md` mục 8).
+- **Hình minh hoạ: tự vẽ, không lấy kho có sẵn.** Người dùng chê kho Fluent Emoji 3D (`hinh/f3d`, `hinh/emoji.json`) "quá xấu" (11/2026). Vật, cảnh, hình lớn của bìa / chương / kết phải **tự vẽ bằng SVG theo một phong cách thống nhất** (bảng màu của da, cùng nét, cùng cách đổ bóng) trong `hinh/art.js` / `hinh/do_vat.js`; chỉ dùng hình dán / `3d:` khi người dùng tự yêu cầu. Vẽ xong phải dựng bảng xem thử và nhìn bằng mắt trước khi đưa vào deck.
 - **Đừng tin một tính năng chỉ vì tài liệu nhắc tên nó.** `dung.js` in `⚠` / `ℹ` cho trường bị bỏ qua, type gõ sai, ảnh thiếu — đọc và xử lý trước khi giao.
 
 ## Đầu ra: một file PowerPoint

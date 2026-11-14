@@ -26,6 +26,7 @@ Chromium trong container cloud: `PW_CHROMIUM=/opt/pw-browsers/chromium`. Build n
 - **Câu hỏi pháp luật**: mọi câu hỏi về pháp luật Việt Nam (kể cả câu ngắn, không phải đề thi) → gọi skill `vn-legal-exam-analysis` trước khi trả lời và làm theo nó trong cùng lượt; tra điều luật trong `packages/content/data/laws/` trước khi trích số điều.
 - **Nội dung luật**: `definition` nguyên văn, `source` + link vbpl.vn, `checked` ngày đối chiếu; ghi `data/SOURCES.md`. Đây là thông tin pháp luật chung, không phải tư vấn.
 - **Gửi skill dạng zip (tải lên claude.ai)**: claude.ai từ chối zip > 200 file. Chỉ đóng bằng `python3 .claude/skills/<tên>/scripts/dong_goi.py` (có ở slide-chuan, infographic, vn-legal-exam-analysis), không `git archive` / `zip -r` tay. Skill chưa có script: zip từ `git ls-files`, đếm ≤ 200 trước khi gửi; > 200 thì viết `dong_goi.py` (gộp tài nguyên lẻ vào kho JSON) rồi mới gửi.
+- **Hình minh hoạ (slide, infographic, video)**: luôn **tự vẽ** bằng công cụ thích hợp (SVG viết tay theo một phong cách thống nhất, dựng hình bằng code); **không** dùng kho hình dán / icon 3D có sẵn (Fluent Emoji…) làm hình chính — Hào đánh giá "quá xấu" (11/2026).
 - **Không làm**: đổi stack, thêm thư viện UI, thêm ESLint/Prettier, thêm framework test khác, đổi bảng màu "Văn Miếu" nếu spec không yêu cầu.
 
 ## Agent, model, cache (tiết kiệm token)
