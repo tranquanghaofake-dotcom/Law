@@ -254,7 +254,11 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
       await page.evaluate(({ k, flat }) => { const el = document.querySelector(`[data-li="${k}"]`); document.body.classList.remove("solo"); el.classList.remove("solo-on");
         if (flat) { el.style.removeProperty("rotate"); if (el.dataset.keepRot) el.style.rotate = el.dataset.keepRot; delete el.dataset.keepRot; }
         if (el.dataset.keepTr != null) { el.style.removeProperty("translate"); if (el.dataset.keepTr) el.style.translate = el.dataset.keepTr; delete el.dataset.keepTr; } }, { k: it.key, flat });
-      it.file = await canon(buf, "png", async (b) => (b.length > 600e3 ? (async () => { const w = (await sharp(b).metadata()).width || 0; /* lớp lớn có vân giấy, nhiễu hạt: hạ về ~1,4× cỡ trên slide (đủ nét khi chiếu) + nén bảng màu */ return sharp(b).resize(w > 2000 ? { width: Math.round(w * 0.7) } : undefined).png({ palette: true, quality: 92, effort: 8, dither: 0.6 }).toBuffer(); })() : b.length > 60e3 ? sharp(b).png({ compressionLevel: 9, effort: 8 }).toBuffer() : b));
+      /* chất lượng ảnh (11/2026): KHÔNG thu nhỏ, KHÔNG ép bảng 256 màu — hai bước đó làm vằn sọc vùng chuyển màu (trời, sàn, vầng sáng) và mềm nét.
+         Lớp lớn không trong suốt → JPEG 4:4:4 chất lượng 92 (nét, nhẹ); lớp trong suốt → PNG đủ màu nén tối đa. */
+      const opaque = buf.length > 600e3 && (await sharp(buf).stats()).isOpaque;
+      it.file = opaque ? await canon(buf, "jpg", (b) => sharp(b).flatten({ background: "#ffffff" }).jpeg({ quality: 92, chromaSubsampling: "4:4:4", mozjpeg: true }).toBuffer())
+        : await canon(buf, "png", async (b) => (b.length > 60e3 ? sharp(b).png({ compressionLevel: 9, effort: 8 }).toBuffer() : b));
       if (flat && it.cx != null) { it.x = it.cx - it.w / 2; it.y = it.cy - it.h / 2; }   // PowerPoint xoay quanh tâm ảnh: đặt ảnh thẳng sao cho tâm trùng tâm khung nghiêng
     }
     // nguồn của cửa sổ soi: chụp nguyên phần tử nguồn (có cả chữ), làm phẳng trên màu nền của cửa sổ, lưu JPEG
@@ -275,7 +279,7 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
     await page.evaluate(() => document.body.classList.add("nolayer"));
     const raw = await shot(si, { x: 0, y: 0, w: SW, h: SH });
     await page.evaluate(() => document.body.classList.remove("nolayer"));
-    s.bg = await canon(await sharp(raw).resize({ width: 2880 }).png().toBuffer(), "jpg", (b) => sharp(b).jpeg({ quality: 88, chromaSubsampling: "4:4:4" }).toBuffer());
+    s.bg = await canon(await sharp(raw).resize({ width: 3840 }).png().toBuffer(), "jpg", (b) => sharp(b).jpeg({ quality: 92, chromaSubsampling: "4:4:4" }).toBuffer());
   }
   await browser.close();
 
