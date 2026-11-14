@@ -9,6 +9,7 @@ Dùng:
 - Số giây nói = số tiếng ÷ 160 tiếng/phút — cùng cách tính thời lượng của hinh/dung.js.
 - Mặc định ghi <tên>_ghi-chu.pdf cạnh file PPTX. Ảnh trong bản in là ảnh slide — deck dùng ảnh "chỉ chiếu trên lớp" thì bản in cũng chỉ dùng trong lớp.
 """
+import html
 import io
 import os
 import re
@@ -41,6 +42,19 @@ def tieu_de(slide):
     return s[:1] + s[1:].lower() if s and s == s.upper() and any(c.isalpha() for c in s) else s
 
 
+def tieu_de_html(lop):
+    """Tiêu đề đúng cách viết hoa của deck.json, lấy từ <tên>_lop/deck.html (data-tieu-de-an trước, rồi data-title) — chữ trong PPTX
+    thường là chữ in hoa (Anton), đổi về chữ thường sẽ làm hỏng "BHXH", "Việt Nam"."""
+    f = os.path.join(lop, "deck.html")
+    if not os.path.exists(f):
+        return []
+    out = []
+    for at in re.findall(r"<section ([^>]*)>", open(f, encoding="utf-8").read()):
+        m = re.search(r'data-tieu-de-an="([^"]*)"', at) or re.search(r'data-title="([^"]*)"', at)
+        out.append(re.sub(r"\s+", " ", html.unescape(m.group(1))).strip() if m else "")
+    return out
+
+
 def ghi_chu(slide):
     if not slide.has_notes_slide:
         return ""
@@ -57,6 +71,10 @@ def main(argv):
     lop = goc + "_lop"
     pr = Presentation(pptx)
     n = len(pr.slides)
+    td_html = tieu_de_html(lop)
+    if len(td_html) != n:
+        td_html = []   # deck.html không khớp số slide (dựng lại PPTX mà chưa dựng lại thư mục _lop) → dùng tiêu đề trong PPTX
+    tieu = lambda i, sl: (td_html[i - 1] if td_html and td_html[i - 1] else tieu_de(sl))
 
     s_dau = ParagraphStyle("dau", fontName="BVP", fontSize=9, textColor=XAM, leading=12)
     s_dau_phai = ParagraphStyle("dau_phai", parent=s_dau, alignment=2)
@@ -66,7 +84,7 @@ def main(argv):
 
     W = A4[0] - 36 * mm
     truyen = []
-    tong_giay, truoc = 0, None
+    tong_giay, truoc, lich = 0, None, []
     for i, sl in enumerate(pr.slides, 1):
         gc = ghi_chu(sl)
         lap = bool(gc) and gc == truoc   # slide hai bước: bước 2 mang lại nguyên ghi chú bước 1 — in một lần, không cộng giờ hai lần
@@ -77,6 +95,7 @@ def main(argv):
         nhanh = (sl.name or "").split("Nhánh trắc nghiệm:", 1)[1].strip() if (sl.name or "").startswith("Nhánh trắc nghiệm:") else ""
         if not nhanh.startswith("sai"):
             tong_giay += giay
+        lich.append((i, tieu(i, sl), giay, nhanh, lap, None if nhanh.startswith("sai") else tong_giay))
         nhan = f" · Nhánh {nhanh} — chỉ nói khi người học chọn{' (không tính vào tổng)' if nhanh.startswith('sai') else ''}" if nhanh else ""
         dau = Table([[Paragraph(f"Slide {i} / {n}{escape(nhan)}", s_dau), Paragraph(f"~{giay} giây nói · {tieng} tiếng" if tieng else "", s_dau_phai)]],
                     colWidths=[W / 2, W / 2])
@@ -90,7 +109,7 @@ def main(argv):
             im.save(buf, "JPEG", quality=82)
             buf.seek(0)
             khoi.append(Image(buf, width=W, height=W * 9 / 16))
-        td = tieu_de(sl)
+        td = tieu(i, sl)
         if td:
             khoi.append(Paragraph(escape(td), s_td))
         truyen.append(KeepTogether(khoi))
@@ -104,6 +123,21 @@ def main(argv):
         truyen.append(PageBreak())
 
     ten = os.path.basename(goc)
+    # TRANG ĐẦU — LỊCH NÓI: mỗi slide một dòng, mốc thời gian cộng dồn ("đến slide 14 nên ở phút 9") để người trình bày biết mình nhanh hay chậm
+    mmss = lambda g: f"{g // 60}:{g % 60:02d}"
+    s_o = ParagraphStyle("o", fontName="BVP", fontSize=8.5, textColor=MUC, leading=11)
+    s_oh = ParagraphStyle("oh", parent=s_o, fontName="BVP-Dam")
+    hang = [[Paragraph(x, s_oh) for x in ("Slide", "Tiêu đề", "Giây", "Mốc")]]
+    for i, td, g, nh, lap, moc in lich:
+        ghi = " (bước tiếp, cùng ghi chú)" if lap else f" — nhánh {nh}, chỉ khi người học chọn" if nh else ""
+        hang.append([Paragraph(str(i), s_o), Paragraph(escape(td + ghi), s_o), Paragraph(str(g) if g else "—", s_o), Paragraph(mmss(moc) if moc is not None else "—", s_o)])
+    bang = Table(hang, colWidths=[14 * mm, W - 44 * mm, 14 * mm, 16 * mm], repeatRows=1)
+    bang.setStyle(TableStyle([("LINEBELOW", (0, 0), (-1, 0), 0.8, MUC), ("LINEBELOW", (0, 1), (-1, -1), 0.25, HexColor("#d6e2f3")),
+                              ("VALIGN", (0, 0), (-1, -1), "TOP"), ("TOPPADDING", (0, 0), (-1, -1), 2), ("BOTTOMPADDING", (0, 0), (-1, -1), 2)]))
+    dau_lich = [Paragraph("Lịch nói", ParagraphStyle("lich", parent=s_td, fontSize=18, leading=24)),
+                Paragraph(f"Tổng ~{tong_giay // 60} phút {tong_giay % 60} giây nói ({TIENG_PHUT} tiếng/phút; nhánh sai của câu hỏi không tính). "
+                          "Cột Mốc = thời điểm nên nói xong slide đó, tính từ lúc bắt đầu.", s_rong), Spacer(1, 4), bang, PageBreak()]
+    truyen = dau_lich + truyen
 
     def chan_trang(c, doc):
         c.saveState()
