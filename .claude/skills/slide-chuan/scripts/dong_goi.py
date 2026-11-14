@@ -5,13 +5,9 @@
 
 claude.ai từ chối zip skill có hơn 200 file ("Zip contains too many files (maximum 200)"). Vì vậy:
 - chỉ lấy file đã commit (git ls-files) — không lẫn ảnh "chỉ chiếu trên lớp", file .pptx, thư mục *_lop/ sinh ra khi dựng;
-- icon lẻ hinh/icons/*.svg gộp thành hinh/icons.json (tên → SVG), vật 3D hinh/f3d/*.png gộp thành hinh/f3d.json
-  (tên → PNG base64); hinh/icon.js, hinh/f3d.js đọc kho gộp khi không có file lẻ. File lẻ ở lại repo làm nguồn;
 - không đóng gói tests/ (chỉ dùng khi sửa skill), node_modules, __pycache__.
 Script dừng với mã lỗi 1 nếu zip vượt 200 file — đừng gửi zip đóng tay (git archive, zip -r).
 """
-import base64
-import json
 import os
 import subprocess
 import sys
@@ -41,31 +37,16 @@ def ds_tep():
 
 
 def dong_goi(ra):
-    tep, icons, f3d = [], {}, {}
-    for rel in ds_tep():
-        if rel.startswith(BO_DAU) or "/__pycache__/" in rel or rel.endswith((".pyc", ".DS_Store")):
-            continue
-        if rel.startswith("hinh/icons/") and rel.endswith(".svg"):
-            icons[rel[len("hinh/icons/"):-4]] = open(os.path.join(GOC, rel), encoding="utf-8").read()
-            continue
-        if rel.startswith("hinh/f3d/") and rel.endswith(".png"):
-            f3d[rel[len("hinh/f3d/"):-4]] = base64.b64encode(open(os.path.join(GOC, rel), "rb").read()).decode("ascii")
-            continue
-        tep.append(rel)
-    kho = {"hinh/icons.json": icons, "hinh/f3d.json": f3d}
-    tong = len(tep) + len(kho)
-    if tong > GIOI_HAN:
-        print(f"ĐỎ: {tong} file > {GIOI_HAN} — claude.ai sẽ từ chối. Gộp thêm tài nguyên vào kho JSON hoặc bỏ file chỉ dùng khi phát triển.",
-              file=sys.stderr)
+    tep = [rel for rel in ds_tep() if not (rel.startswith(BO_DAU) or "/__pycache__/" in rel or rel.endswith((".pyc", ".DS_Store")))]
+    if len(tep) > GIOI_HAN:
+        print(f"ĐỎ: {len(tep)} file > {GIOI_HAN} — claude.ai sẽ từ chối. Bỏ file chỉ dùng khi phát triển.", file=sys.stderr)
         return 1
     tam = ra + ".moi"
     with zipfile.ZipFile(tam, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
         for rel in tep:
             z.write(os.path.join(GOC, rel), TEN + "/" + rel)
-        for rel, du_lieu in kho.items():
-            z.writestr(TEN + "/" + rel, json.dumps(dict(sorted(du_lieu.items())), ensure_ascii=False, separators=(",", ":")))
     os.replace(tam, ra)
-    print(f"XANH: {tong} / {GIOI_HAN} file · {os.path.getsize(ra) / 1e6:.1f} MB · kho gộp: {len(icons)} icon, {len(f3d)} vật 3D → {ra}")
+    print(f"XANH: {len(tep)} / {GIOI_HAN} file · {os.path.getsize(ra) / 1e6:.1f} MB → {ra}")
     return 0
 
 

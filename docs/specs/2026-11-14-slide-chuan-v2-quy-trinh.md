@@ -1,6 +1,6 @@
 # slide-chuan v2: quy trình thay một đội làm slide (đề xuất chờ duyệt)
 
-Ngày: 14/11/2026 · Người yêu cầu: Hào · Trạng thái: **đề xuất, chưa duyệt**
+Ngày: 14/11/2026 · Người yêu cầu: Hào · Trạng thái: **đã duyệt 14/11/2026** — Q1: B (tự do hoàn toàn, máy kiểm tối đa để ít lỗi) · Q2: theo khuyến nghị (3 điểm duyệt với bài có tài liệu gốc, 5 với bài mới) · Q3: A (người duyệt độc lập `opus`)
 
 ## 1. Vì sao viết lại
 Skill hiện tại làm kiểu **chọn mẫu rồi điền chữ**: 65 mẫu bố cục (`stage/templates.js`), 14 "da" theo môn (`hinh/da.js`), kho hình vẽ sẵn (`hinh/ve_bh.js`, `bieu_do_ve.js`, `so_bhxh.js`, `f3d/`…), `SKILL.md` 252 dòng. Mỗi lần bị chê lại thêm một mẫu hoặc một luật, nên skill phình to mà bài mới vẫn rập khuôn. Hào muốn ngược lại: mỗi bài mới đều **nghiên cứu → kịch bản → vẽ asset riêng → tìm ảnh → ghép sáng tạo**, và skill chỉ giữ **quy trình** cùng **công cụ máy móc**.

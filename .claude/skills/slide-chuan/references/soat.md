@@ -1,0 +1,41 @@
+# Soát — từng slide và cả deck
+
+## 1. Mười điều kiểm mỗi slide (nhìn bằng mắt trên `h-NN.jpg`)
+1. **Glance test 3 giây**: nhìn 3 giây rồi quay đi, nói lại được ý chính (Duarte).
+2. **Một ý**; tiêu đề là câu khẳng định đầy đủ (chủ ngữ + vị ngữ + phạm vi), ≤ 2 dòng (Alley).
+3. **Bằng chứng là hình** (sơ đồ, bảng, ảnh, hình vẽ đúng tỉ lệ) — không phải gạch đầu dòng.
+4. **Không chi tiết thừa**: chỉ vào từng chấm, dải, vật, màu — nói được nó mang nghĩa gì; không nói được thì bỏ (Mayer: coherence).
+5. **Không chép lời nói lên slide**: chữ trên slide là từ khoá, định nghĩa, số cần nhìn; giải thích để ở notes (Mayer: redundancy).
+6. **Tối đa 1–2 điểm nhấn** (màu nhấn, mũi tên, đậm) đúng chỗ cần chú ý (Mayer: signaling).
+7. **Nhãn sát hình**: tên đặt ngay cạnh vật nó gọi, không bắt tra chú giải xa (Mayer: contiguity).
+8. **Thứ bậc**: tiêu đề > nội dung > chú thích; nheo mắt vẫn thấy điểm nhấn.
+9. **Đọc được khi chiếu**: tương phản ≥ 4,5 : 1 (chữ lớn ≥ 3 : 1); chữ ≥ 12 pt, chữ thân ≥ 14 pt (máy kiểm, mắt kiểm lại trên nền ảnh).
+10. **Đúng và có nguồn**: số, điều luật khớp `noi-dung.md`; luật có số hiệu, điều, hiệu lực; ảnh có nguồn trong `ghi-cong.md` và `data-alt`.
+
+Thêm cho hình: **hình là chính sự vật** (không ẩn dụ phải giải thích); **tỉ lệ hình = tỉ lệ số liệu** khi hình chở số; **một phong cách** cho cả deck.
+
+## 2. Rubric cả deck (người duyệt độc lập chấm 1–5, kèm lý do)
+| Hạng | 5 | 3 | 1 |
+|---|---|---|---|
+| Nội dung | đúng, đủ mục tiêu, mọi nhận định có nguồn | vài chỗ thiếu nguồn / thiếu ý | sai luật, sai số |
+| Thiết kế | thứ bậc rõ, khoảng thở, nhất quán, hình đúng sự vật | nhất quán nhưng dày / nhạt | rối, lệch phong cách, hình sai nghĩa |
+| Mạch lạc | đọc liền tiêu đề thành lập luận | có chỗ nhảy ý | rời rạc |
+| Dễ hiểu | sinh viên mới học hiểu từng slide trong 3 giây | phải nghe giảng mới hiểu | khó hiểu cả khi nghe |
+Giao khi mọi hạng ≥ 4 (PPTEval dùng Nội dung / Thiết kế / Mạch lạc, thang 1–5 — arXiv 2501.03936).
+
+## 3. Máy kiểm (`scripts/dung.js`) — đọc thông báo thế nào
+| Thông báo | Sửa |
+|---|---|
+| chữ không nằm trong [data-t] | gắn `data-t` cho khối chữ (hoặc `data-prop` nếu cố ý làm ảnh: bìa sách, biển hiệu trong hình) |
+| chữ trong SVG | xoá `<text>`, đặt chữ HTML `data-t` đè lên hình |
+| tràn khỏi hộp | rút chữ, nới hộp, hoặc tách slide — không thu cỡ chữ dưới ngưỡng |
+| ra ngoài vùng an toàn | dời vào trong lề 40 px ngang / 24 px dọc (`data-ngoai` nếu cố ý cho Morph) |
+| bị lớp ảnh đè / hai hộp chữ đè nhau | dời hình hoặc chữ; đặt chữ ở lớp trên |
+| chữ < 12 pt / % chữ ≥ 14 pt thấp | tăng cỡ, rút chữ |
+| ◐ tương phản | đậm chữ, làm yên nền sau chữ (lớp phủ, thẻ nền) |
+| ¶ mồ côi | sửa câu hoặc bề rộng hộp |
+| ↔ lệch 4–10 px | canh thẳng hàng |
+| không có tiêu đề | `data-tieu-de` trên hộp chữ tiêu đề |
+| thiếu data-alt | mô tả hình; trang trí → `data-alt="Hình trang trí"` |
+| từ chỉ có trong ảnh | chữ bị chụp vào ảnh — tách ra thành `data-t` |
+| PPTX lệch HTML (tờ soát) | dùng thuộc tính CSS mà PowerPoint dựng lại được (`hop-dong-html.md`) |
