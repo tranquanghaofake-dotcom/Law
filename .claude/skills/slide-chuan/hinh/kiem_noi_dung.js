@@ -94,12 +94,15 @@ async function kiemNoiDung(deck, { deckDir = process.cwd(), extraTypes = [] } = 
   const coGhi = gc.notes.filter(Boolean).length;
   if (coGhi && coGhi < slides.length) warnings.push(`Ghi chú thuyết trình thiếu ở slide ${gc.notes.map((t, i) => (t ? null : i + 1)).filter(Boolean).join(", ")}`);
   const syl = gc.notes.reduce((a, t) => a + (t ? t.split(/\s+/).filter(Boolean).length : 0), 0);
-  const actSec = slides.reduce((a, sl) => a + (!sl ? 0 : sl.activitySec != null ? +sl.activitySec || 0 : ["exercise", "bctinhhuong"].includes(sl.type) ? 120 : ["quiz", "quizgo", "bccauhoi"].includes(sl.type) && sl.reveal !== true ? 60 : 0), 0);
+  const actSec = slides.reduce((a, sl) => a + (!sl ? 0 : sl.activitySec != null ? +sl.activitySec || 0 : ["exercise", "bctinhhuong"].includes(sl.type) ? 120 : ["quiz", "quizgo", "bccauhoi", "bhhoi"].includes(sl.type) && sl.reveal !== true ? 60 : 0), 0);   // bhhoi: trắc nghiệm của bộ BHXH (trước bị bỏ sót)
   const talkMin = syl / 160 + actSec / 60;
   if (meta.minutes) {   // ~40–65 giây / slide; làm tròn VÀO TRONG khoảng (13 phút: 12–19)
     const m = +meta.minutes, n = slides.length, lo = Math.ceil(m * 0.9), hi = Math.floor(m * 1.5);
     if (n < lo || n > hi) warnings.push(`meta.minutes = ${m} phút → nên có ${lo}–${hi} slide (40–65 giây/slide), deck đang có ${n} — ${n < lo ? "thiếu: nội dung bị nén, người nghe không theo kịp; tách các slide dày" : "thừa: gộp các slide cùng ý"}`);
     if (syl && Math.abs(talkMin - m) / m > 0.25) warnings.push(`Ghi chú thuyết trình + hoạt động ~${Math.round(talkMin)} phút nhưng meta.minutes = ${m} — viết lại ghi chú cho khớp thời lượng (±25%)`);
+    // vượt 10–25%: chưa chặn, nhưng khung giờ của lớp thường cứng (deck BHXH: ~23,5 phút cho khung 20) → chỉ ra slide nói dài nhất để rút
+    else if (syl && (talkMin - m) / m > 0.10) { const dai = gc.notes.map((t, i) => ({ i, g: Math.round((t ? t.split(/\s+/).filter(Boolean).length : 0) / 160 * 60) })).sort((x, y) => y.g - x.g).slice(0, 3);
+      hints.push(`Ghi chú + hoạt động ~${talkMin.toFixed(1).replace(".", ",")} phút, vượt khung ${m} phút khoảng ${Math.round((talkMin - m) / m * 100)}% — chưa chặn (ngưỡng ±25%), nhưng giờ thuyết trình trên lớp thường cứng: rút ghi chú ở ${dai.map((x) => `slide ${x.i + 1} (~${x.g} giây)`).join(", ")}`); }
   }
   if (syl) info.push(`ℹ Thời lượng ước tính: ~${Math.max(1, Math.round(talkMin))} phút (nói ${syl} tiếng ≈ ${Math.round(syl / 160)} phút, ~160 tiếng/phút${actSec ? ` + hoạt động trên lớp ${Math.round(actSec / 60)} phút` : ""})`);
 

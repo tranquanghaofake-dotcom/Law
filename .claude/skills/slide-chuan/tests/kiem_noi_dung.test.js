@@ -144,3 +144,15 @@ test("Bước 0: type của bộ hình tương đương type kế hoạch (cover
     assert.match(h, /1 slide đổi type .*3: chart→bhmat/, h); assert.doesNotMatch(h, /cover→bhbia|section→bhchuong|end→bhket/);
   } finally { process.env.SLIDE_CHUAN_NO_PREP = cu; }
 });
+
+test("thời lượng: vượt khung 10–25% → gợi ý kèm 3 slide nói dài nhất; bhhoi cộng 60 giây hoạt động như quizgo", async () => {
+  const noi = (n) => Array.from({ length: n }, (_, k) => `tiếng${k}`).join(" ");
+  const d = { meta: { minutes: 2 }, slides: [{ ...bia, notes: noi(40) }, { type: "statement", title: "Một ý dài cần nói kỹ hơn", notes: noi(160) }, { type: "statement", title: "Một ý ngắn hơn ở đây", notes: noi(80) }] };
+  const r = await KND.kiemNoiDung(d, { deckDir: thuMuc() });   // 280 tiếng = 1,75 phút… + 0 → dưới khung: không gợi ý vượt
+  assert.ok(!r.hints.some((h) => /vượt khung/.test(h)), r.hints.join("\n"));
+  d.slides[1].notes = noi(260);   // 380 tiếng ≈ 2,4 phút: vượt 19%
+  const r2 = await KND.kiemNoiDung(d, { deckDir: thuMuc() });
+  const h = r2.hints.find((x) => /vượt khung/.test(x)) || ""; assert.match(h, /19%/); assert.match(h, /slide 2 \(~98 giây\)/, h);
+  const q = await KND.kiemNoiDung({ meta: { minutes: 1 }, slides: [{ ...bia, notes: noi(20) }, { type: "bhhoi", title: "Hỏi gì?", options: [{ text: "a", ok: true }, { text: "b" }], notes: noi(20) }] }, { deckDir: thuMuc(), extraTypes: ["bhhoi"] });
+  assert.ok(q.info.some((x) => /hoạt động trên lớp 1 phút/.test(x)), q.info.join("\n"));
+});
