@@ -8,28 +8,35 @@
 const mixc = (a, b, t) => { const h = (x) => [0, 2, 4].map((i) => parseInt(x.slice(i, i + 2), 16)); const A = h(a), B = h(b); return A.map((v, i) => Math.round(v + (B[i] - v) * t).toString(16).padStart(2, "0")).join(""); };
 const rnd = (seed) => () => ((seed = (seed * 9301 + 49297) % 233280) / 233280);
 
-function bia(P) {
-  const R = rnd(7), SANG = "F6A877", BONG = "4B3F6B";              // ánh hoàng hôn (cam đào) · bóng ngả tím
+// hai khung giờ cùng bố cục (bìa = hoàng hôn, kết = đêm): đổi nguồn sáng, trời, nước, sương — vật giữ nguyên chỗ để hai cảnh là một cặp mở–đóng
+const GIO_CANH = {
+  "hoang-hon": { sang: "F6A877", bong: "4B3F6B", tr: ["E9876F", "F7B98C", "FCE0B8"], may: "FFE9D2", nuoc: ["F2A783", "C98A8E", "3F6F86"], suong: "FCE0B8", nen: "C9B79C", pho: "E9876F" },
+  dem: { sang: "6F7FB8", bong: "141B33", tr: ["0F1630", "26315A", "4A4F7E"], may: "3A456E", nuoc: ["4A4F7E", "2C3560", "121A35"], suong: "4A4F7E", nen: "5B5E7E", pho: "26315A" },
+};
+function bia(P, gio = "hoang-hon") {
+  const T = GIO_CANH[gio] || GIO_CANH["hoang-hon"], R = rnd(7), SANG = T.sang, BONG = T.bong;
   const den = (c, k = 0.28) => mixc(c, SANG, k), toi = (c, k = 0.35) => mixc(c, BONG, k);
   const W = 1920, H = 1080, VX = 1390, VY = 600;                  // điểm tụ: chân toà DNBH
   let s = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}"><defs>
-<linearGradient id="tr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9876F"/><stop offset=".55" stop-color="#F7B98C"/><stop offset="1" stop-color="#FCE0B8"/></linearGradient>
+<linearGradient id="tr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#${T.tr[0]}"/><stop offset=".55" stop-color="#${T.tr[1]}"/><stop offset="1" stop-color="#${T.tr[2]}"/></linearGradient>
 <radialGradient id="khienSang" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFE7A6" stop-opacity=".95"/><stop offset=".45" stop-color="#FFD27A" stop-opacity=".35"/><stop offset="1" stop-color="#FFD27A" stop-opacity="0"/></radialGradient>
 <linearGradient id="duong" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#${toi("6B6F86", 0.2)}"/><stop offset="1" stop-color="#${den("8C8AA0", 0.35)}"/></linearGradient>
 <linearGradient id="giong" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5E4E79"/><stop offset="1" stop-color="#8B6F8E"/></linearGradient>
-<linearGradient id="nuoc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F2A783"/><stop offset=".35" stop-color="#C98A8E"/><stop offset="1" stop-color="#3F6F86"/></linearGradient>
-<linearGradient id="suong" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FCE0B8" stop-opacity="0"/><stop offset=".6" stop-color="#FCE0B8" stop-opacity=".55"/><stop offset="1" stop-color="#FCE0B8" stop-opacity="0"/></linearGradient>
+<linearGradient id="nuoc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#${T.nuoc[0]}"/><stop offset=".35" stop-color="#${T.nuoc[1]}"/><stop offset="1" stop-color="#${T.nuoc[2]}"/></linearGradient>
+<linearGradient id="suong" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#${T.suong}" stop-opacity="0"/><stop offset=".6" stop-color="#${T.suong}" stop-opacity=".55"/><stop offset="1" stop-color="#${T.suong}" stop-opacity="0"/></linearGradient>
 <linearGradient id="mat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".18"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
 <linearGradient id="bongDai" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3B2F55" stop-opacity=".32"/><stop offset="1" stop-color="#3B2F55" stop-opacity="0"/></linearGradient>
 <filter id="hat" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="3"/><feColorMatrix values="0 0 0 0 .2  0 0 0 0 .15  0 0 0 0 .25  0 0 0 .09 0"/></filter></defs>
 <rect width="${W}" height="${H}" fill="url(#tr)"/>`;
+  if (gio === "dem") { for (let i = 0; i < 90; i++) s += `<circle cx="${(R() * W).toFixed(0)}" cy="${(R() * 460).toFixed(0)}" r="${(1 + R() * 2.2).toFixed(1)}" fill="#FFF6D8" opacity="${(0.4 + R() * 0.6).toFixed(2)}"/>`;
+    s += `<circle cx="420" cy="200" r="120" fill="#FFF1C2" opacity=".12"/><circle cx="420" cy="200" r="56" fill="#FFF3CF"/><circle cx="444" cy="186" r="50" fill="#${T.tr[0]}" opacity=".9"/>`; }
   // mây xa (dải ngang bo tròn — ngôn ngữ hình của mây kiểu Kurzgesagt)
-  for (const [x, y, w] of [[120, 120, 380], [420, 210, 300], [980, 150, 420], [60, 300, 260]]) s += `<rect x="${x}" y="${y}" width="${w}" height="44" rx="22" fill="#FFE9D2" opacity=".75"/><rect x="${x + w * 0.25}" y="${y - 30}" width="${w * 0.45}" height="40" rx="20" fill="#FFE9D2" opacity=".75"/>`;
+  for (const [x, y, w] of [[120, 120, 380], [420, 210, 300], [980, 150, 420], [60, 300, 260]]) s += `<rect x="${x}" y="${y}" width="${w}" height="44" rx="22" fill="#${T.may}" opacity=".75"/><rect x="${x + w * 0.25}" y="${y - 30}" width="${w * 0.45}" height="40" rx="20" fill="#${T.may}" opacity=".75"/>`;
   // GIÔNG kéo tới (góc trên phải): khối mây tím, mưa xiên — dừng ở vầng sáng của khiên
   s += `<g>${[[1560, 40, 420], [1700, 110, 300], [1500, 120, 260]].map(([x, y, w]) => `<rect x="${x}" y="${y}" width="${w}" height="90" rx="45" fill="url(#giong)"/><rect x="${x + w * 0.2}" y="${y - 50}" width="${w * 0.5}" height="80" rx="40" fill="url(#giong)"/>`).join("")}</g>`;
   for (let i = 0; i < 70; i++) { const x = 1500 + R() * 440, y = 200 + R() * 260; const dx = x - VX, dy = y - 330; if (dx * dx / (330 * 330) + dy * dy / (230 * 230) < 1) continue; s += `<path d="M${x.toFixed(0)} ${y.toFixed(0)} l-14 34" stroke="#7E6C97" stroke-width="4" stroke-linecap="round" opacity=".7"/>`; }
   // hậu cảnh: phố xa một tầng độ sáng (bóng phẳng nhuộm màu trời)
-  let px = 0; s += `<path d="M0 ${VY}`; while (px < W) { const w = 40 + R() * 70, h = 40 + R() * 110; s += ` V${VY - h} H${px + w}`; px += w; } s += ` V${VY + 40} H0Z" fill="#${mixc("E9876F", BONG, 0.18)}" opacity=".55"/>`;
+  let px = 0; s += `<path d="M0 ${VY}`; while (px < W) { const w = 40 + R() * 70, h = 40 + R() * 110; s += ` V${VY - h} H${px + w}`; px += w; } s += ` V${VY + 40} H0Z" fill="#${mixc(T.pho, BONG, 0.18)}" opacity=".55"/>`;
   s += `<path d="M0 ${VY + 10} Q500 ${VY - 40} 1000 ${VY + 6} T${W} ${VY - 10} V${VY + 80} H0Z" fill="#${mixc("D98A7E", BONG, 0.25)}"/>`;
   s += `<rect x="0" y="${VY - 140}" width="${W}" height="220" fill="url(#suong)"/>`;   // sương chân trời: chỉ phủ hậu cảnh (phối cảnh không khí)
   // vầng sáng của khiên (tiêu điểm) — sau toà nhà
@@ -41,7 +48,7 @@ function bia(P) {
   s += `<path d="M${VX} 220 L${VX + 44} 236 V262 Q${VX + 44} 290 ${VX} 304 Q${VX - 44} 290 ${VX - 44} 262 V236Z" fill="#F7C04A" stroke="#FFF1C2" stroke-width="4"/><path d="M${VX - 16} 262 l12 12 l22 -24" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>`;
   // con phố chéo (đường dẫn mắt): từ góc dưới trái về điểm tụ
   // nền đất phía trước (vỉa hè) + MẶT NƯỚC CẢNG bên phải: phản chiếu ánh trời, vệt sáng lấp lánh, một con tàu
-  s += `<path d="M0 700 L${VX - 30} ${VY + 30} L${W} ${VY + 30} V${H} H0Z" fill="#${den("C9B79C", 0.35)}"/>`;
+  s += `<path d="M0 700 L${VX - 30} ${VY + 30} L${W} ${VY + 30} V${H} H0Z" fill="#${den(T.nen, 0.35)}"/>`;
   s += `<path d="M1000 ${H} L${VX + 60} ${VY + 40} L${W} ${VY + 40} V${H}Z" fill="url(#nuoc)"/>`;
   s += `<rect x="${VX - 70}" y="${VY + 44}" width="140" height="190" fill="#2C4E5E" opacity=".22"/><rect x="${VX - 20}" y="${VY + 44}" width="40" height="260" fill="#FFD98A" opacity=".18"/>`;
   for (let i = 0; i < 46; i++) { const y = VY + 60 + R() * (H - VY - 80), xmin = 1000 + (VX + 60 - 1000) * ((H - y) / (H - VY - 40)), x = xmin + 40 + R() * (W - xmin - 40), w = 20 + R() * 60; s += `<rect x="${x.toFixed(0)}" y="${y.toFixed(0)}" width="${w.toFixed(0)}" height="6" rx="3" fill="#${R() > 0.5 ? "FFD9A0" : "F7A87A"}" opacity=".8"/>`; }
@@ -64,6 +71,10 @@ function bia(P) {
   s += `<path d="M0 700 L${VX - 30} ${VY + 30} L${VX - 30} ${VY + 36} L0 718Z" fill="#${den("E8D9BE", 0.3)}"/>`;
   // đèn đường dọc phố (đường dẫn mắt thứ hai), bóng đèn phát sáng
   for (let k = 0; k < 6; k++) { const t = 0.08 + k * 0.15, sc = 1 - t * 0.86, x = 470 + (VX + 60 - 470) * t, y = H - 40 + (VY + 40 - (H - 40)) * t; s += `<line x1="${x}" y1="${y}" x2="${x}" y2="${y - 170 * sc}" stroke="#${toi("3B3550", 0.1)}" stroke-width="${7 * sc + 1}"/><circle cx="${x}" cy="${y - 170 * sc}" r="${34 * sc}" fill="#FFE3A0" opacity=".35"/><circle cx="${x}" cy="${y - 170 * sc}" r="${11 * sc + 2}" fill="#FFE9B5"/>`; }
+  // DÒNG NGƯỜI trên vỉa hè dọc chân nhà (khung "số đông" cắt từ đây): nhiều người tí hon, màu áo khác nhau, thưa dần về xa
+  const AO = ["3D8A87", "E07A5F", "F2C14E", "6D8EAD", "81B29A", "D6A2AD", "F4F1DE"];
+  for (let k = 0; k < 46; k++) { const t = 0.02 + Math.pow(R(), 1.4) * 0.62, sc = 1 - t * 0.86, x = -40 + (VX - 30 + 40) * t + R() * 30 * sc, y = 712 + (VY + 34 - 712) * t + R() * 26 * sc, c = AO[Math.floor(R() * AO.length)];
+    s += `<ellipse cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" rx="${(10 * sc).toFixed(1)}" ry="${(3 * sc).toFixed(1)}" fill="#000" opacity=".18"/><rect x="${(x - 6 * sc).toFixed(1)}" y="${(y - 34 * sc).toFixed(1)}" width="${(12 * sc).toFixed(1)}" height="${(26 * sc).toFixed(1)}" rx="${(5 * sc).toFixed(1)}" fill="#${toi(c, 0.2)}"/><circle cx="${x.toFixed(1)}" cy="${(y - 41 * sc).toFixed(1)}" r="${(7 * sc).toFixed(1)}" fill="#${den("F2C29B", 0.25)}"/>`; }
   // người tí hon + một chiếc xe trên phố (tỉ lệ)
   for (const [t, c] of [[0.18, "3D8A87"], [0.33, "E07A5F"], [0.5, "F2C14E"], [0.64, "6D8EAD"]]) { const sc = 1 - t * 0.86, x = 330 + (VX - 330) * t, y = H - 60 + (VY + 32 - (H - 60)) * t; s += `<ellipse cx="${x}" cy="${y}" rx="${12 * sc}" ry="${3 * sc}" fill="#000" opacity=".2"/><rect x="${x - 7 * sc}" y="${y - 40 * sc}" width="${14 * sc}" height="${30 * sc}" rx="${6 * sc}" fill="#${toi(c, 0.15)}"/><circle cx="${x}" cy="${y - 48 * sc}" r="${8 * sc}" fill="#${den("F2C29B", 0.2)}"/>`; }
   { const t = 0.42, sc = 1 - t * 0.86, x = 520 + (VX - 520) * t, y = H - 20 + (VY + 30 - (H - 20)) * t; s += `<g transform="translate(${x} ${y}) scale(${sc})"><rect x="-70" y="-46" width="140" height="34" rx="12" fill="#${den("2F6F8F", 0.2)}"/><path d="M-44 -46 L-28 -72 H30 L46 -46Z" fill="#${den("2F6F8F", 0.1)}"/><path d="M-34 -48 L-22 -66 H0 V-48Z M6 -48 V-66 H26 L38 -48Z" fill="#FFE3B0" opacity=".85"/><circle cx="-40" cy="-12" r="14" fill="#2B2438"/><circle cx="40" cy="-12" r="14" fill="#2B2438"/><rect x="58" y="-38" width="12" height="8" fill="#FFF1C2"/></g>`; }
@@ -78,4 +89,6 @@ function bia(P) {
   s += `<rect width="${W}" height="${H}" filter="url(#hat)"/>`;   // hạt nhiễu mịn: bề mặt "in" thay vì phẳng lì
   return s + `</svg>`;
 }
-module.exports = { bia };
+// cắt một khung từ cảnh gốc (cùng thế giới, khác góc máy): đổi viewBox, giữ nguyên nội dung
+const cat = (svg, x, y, w, h) => svg.replace(/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" viewBox="[^"]*"/, `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${x} ${y} ${w} ${h}" preserveAspectRatio="xMidYMid slice"`);
+module.exports = { bia, cat, GIO_CANH };
