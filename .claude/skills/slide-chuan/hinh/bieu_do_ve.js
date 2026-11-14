@@ -192,25 +192,34 @@ const KIEU = {
 
   // HAI QUỸ = HAI KỸ THUẬT: trái — xô nhận phí năm nay rồi chảy ra chi trả ngay (phân bổ); phải — hũ cao xếp lớp quỹ qua từng năm, chi trả về sau (dồn tích)
   "hai-quy": (d, P, w, h) => {
-    const day = h - 110, L = w * 0.25, Rr = w * 0.72, nam = d.nam || 6; let s = `<rect x="0" y="${day}" width="${w}" height="8" rx="4" fill="#${P.ink}" opacity=".2"/>`, nhan = [];
-    // TRÁI: vòi phí → xô → chảy ra
-    s += `<!--L:up:400--><rect x="${f1(L - 110)}" y="${f1(day - 330)}" width="120" height="22" rx="6" fill="#${mix(P.ink, "FFFFFF", 0.3)}"/><rect x="${f1(L + 6)}" y="${f1(day - 332)}" width="26" height="42" rx="6" fill="#${mix(P.ink, "FFFFFF", 0.3)}"/>`
-      + `<path d="M${f1(L - 90)} ${f1(day - 220)} L${f1(L - 70)} ${f1(day - 20)} H${f1(L + 70)} L${f1(L + 90)} ${f1(day - 220)}Z" fill="#${mix(P.ink, "FFFFFF", 0.82)}" stroke="#${mix(P.ink, "FFFFFF", 0.4)}" stroke-width="5"/>`
-      + `<path d="M${f1(L - 90)} ${f1(day - 220)} Q${f1(L)} ${f1(day - 300)} ${f1(L + 90)} ${f1(day - 220)}" fill="none" stroke="#${mix(P.ink, "FFFFFF", 0.4)}" stroke-width="4"/>`;
-    s += `<!--L:wipe:900--><path d="M${f1(L + 19)} ${f1(day - 290)} V${f1(day - 140)}" stroke="#${P.gold}" stroke-width="14" stroke-linecap="round"/>`
-      + [0, 1, 2].map((q) => `<ellipse cx="${f1(L + 19)}" cy="${f1(day - 270 + q * 40)}" rx="12" ry="4" fill="#FFE7A8"/>`).join("")
-      + `<rect x="${f1(L - 70)}" y="${f1(day - 140)}" width="140" height="${118}" fill="#${P.gold}" opacity=".75"/>`;
-    s += `<!--L:wipe:1500--><path d="M${f1(L + 72)} ${f1(day - 40)} Q${f1(L + 150)} ${f1(day - 40)} ${f1(L + 170)} ${f1(day + 10)}" fill="none" stroke="#${P.gold}" stroke-width="16" stroke-linecap="round"/>` + vat("nha", P, L + 150, day - 140, 150);
-    nhan.push({ x: L + 19, y: day - 380, t: "Phí năm nay", cls: "nho", at: 900 }, { x: L + 230, y: day - 190, t: "Chi trả ngay", cls: "nho", at: 1500, w: 220 });
-    nhan.push({ x: L, y: day + 22, t: "Kỹ thuật phân bổ", b: "ngắn hạn · rủi ro không gắn tuổi thọ", cls: "ten", w: w * 0.44, at: 400 });
-    // PHẢI: hũ cao, mỗi lớp = một năm đóng phí (lớp lần lượt dâng lên), chi trả về sau
-    const jw = 210, jh = day - 120, jx = Rr - jw / 2, ly = (jh - 30) / nam;
-    s += `<!--L:fade:400--><path d="M${f1(jx)} ${f1(day - jh)} H${f1(jx + jw)} V${f1(day - 24)} Q${f1(jx + jw)} ${f1(day)} ${f1(jx + jw - 24)} ${f1(day)} H${f1(jx + 24)} Q${f1(jx)} ${f1(day)} ${f1(jx)} ${f1(day - 24)}Z" fill="#${mix(P.acc, "FFFFFF", 0.88)}" stroke="#${mix(P.acc, "FFFFFF", 0.35)}" stroke-width="6"/><rect x="${f1(jx + 20)}" y="${f1(day - jh - 22)}" width="${jw - 40}" height="24" rx="8" fill="#${P.ink}"/>`;
-    for (let k = 0; k < nam; k++) { const yy = day - 8 - (k + 1) * ly; s += `<!--L:up:${1100 + k * 260}--><rect x="${f1(jx + 8)}" y="${f1(yy)}" width="${jw - 16}" height="${f1(ly - 4)}" rx="${k ? 3 : 14}" fill="#${mix(P.acc, "FFFFFF", 0.1 + (k % 2) * 0.12)}"/>`;
-      nhan.push({ x: jx + jw + 18, y: yy + ly / 2 - 16, t: `năm ${k + 1}`, cls: "trai nho", w: 120, at: 1100 + k * 260 }); }
-    s += `<!--L:wipe:${1100 + nam * 260 + 200}--><path d="M${f1(jx - 8)} ${f1(day - 50)} Q${f1(jx - 80)} ${f1(day - 50)} ${f1(jx - 110)} ${f1(day - 10)}" fill="none" stroke="#${P.gold}" stroke-width="16" stroke-linecap="round"/>` + vat("nguoi-vang", P, jx - 240, day - 170, 150);
-    nhan.push({ x: jx - 170, y: day - 240, t: "Chi trả sau nhiều năm", cls: "nho", w: 260, at: 1100 + nam * 260 + 300 });
-    nhan.push({ x: Rr, y: day + 22, t: "Kỹ thuật dồn tích", b: "dài hạn · rủi ro gắn tuổi thọ con người", cls: "ten", w: w * 0.44, at: 400 });
+    const day = h - 130, nam = d.nam || 6, nhat = mix(P.ink, "FFFFFF", 0.3); let s = "", nhan = [];
+    // mặt đất hai bên + vạch chia ở giữa: hai kỹ thuật là hai "sân" riêng, đọc trái → phải theo dòng tiền
+    s += `<rect x="0" y="${day}" width="${f1(w * 0.47)}" height="8" rx="4" fill="#${P.ink}" opacity=".2"/><rect x="${f1(w * 0.53)}" y="${day}" width="${f1(w * 0.47)}" height="8" rx="4" fill="#${P.ink}" opacity=".2"/>`
+      + `<line x1="${f1(w / 2)}" y1="40" x2="${f1(w / 2)}" y2="${day + 60}" stroke="#${P.ink}" stroke-opacity=".18" stroke-width="4" stroke-dasharray="14 12"/>`;
+    // TRÁI — PHÂN BỔ: vòi phí → xô (quỹ năm nay) → ống → nhà đang cháy được chi trả luôn
+    const L = w * 0.13, xn = w * 0.36;
+    s += `<!--L:up:400-->` + bong(L, day + 4, 130) + `<rect x="${f1(L - 150)}" y="${f1(day - 360)}" width="150" height="24" rx="8" fill="#${nhat}"/><rect x="${f1(L - 14)}" y="${f1(day - 362)}" width="30" height="46" rx="8" fill="#${nhat}"/><circle cx="${f1(L - 120)}" cy="${f1(day - 372)}" r="12" fill="#${P.bad}"/>`
+      + `<path d="M${f1(L - 110)} ${f1(day - 250)} L${f1(L - 88)} ${f1(day - 4)} H${f1(L + 88)} L${f1(L + 110)} ${f1(day - 250)}Z" fill="#${mix(P.ink, "FFFFFF", 0.86)}" stroke="#${mix(P.ink, "FFFFFF", 0.4)}" stroke-width="6"/>`
+      + `<path d="M${f1(L - 110)} ${f1(day - 250)} Q${f1(L)} ${f1(day - 340)} ${f1(L + 110)} ${f1(day - 250)}" fill="none" stroke="#${mix(P.ink, "FFFFFF", 0.4)}" stroke-width="5"/>`;
+    s += `<!--L:wipe:900--><path d="M${f1(L + 1)} ${f1(day - 316)} V${f1(day - 150)}" stroke="#${P.gold}" stroke-width="16" stroke-linecap="round"/>` + [0, 1, 2].map((q) => `<ellipse cx="${f1(L + 1)}" cy="${f1(day - 290 + q * 44)}" rx="13" ry="4" fill="#FFE7A8"/>`).join("")
+      + `<path d="M${f1(L - 92)} ${f1(day - 150)} H${f1(L + 92)} L${f1(L + 86)} ${f1(day - 10)} H${f1(L - 86)}Z" fill="#${P.gold}" opacity=".85"/><path d="M${f1(L - 70)} ${f1(day - 136)} H${f1(L + 40)}" stroke="#fff" stroke-opacity=".5" stroke-width="6" stroke-linecap="round"/>`;
+    s += `<!--L:pop:1400-->` + vat("nha", P, xn - 120, day - 230, 240) + vat("lua", P, xn + 20, day - 300, 120);
+    s += `<!--L:wipe:1900--><path d="M${f1(L + 96)} ${f1(day - 60)} C${f1(L + 200)} ${f1(day - 60)} ${f1(xn - 220)} ${f1(day - 40)} ${f1(xn - 130)} ${f1(day - 40)}" fill="none" stroke="#${P.gold}" stroke-width="18" stroke-linecap="round"/><path d="M${f1(xn - 150)} ${f1(day - 62)} L${f1(xn - 112)} ${f1(day - 40)} L${f1(xn - 150)} ${f1(day - 18)}Z" fill="#${P.gold}"/>`;
+    nhan.push({ x: L - 70, y: day - 430, t: "Phí năm nay", cls: "nho", w: 240, at: 900 },
+      { x: L, y: day - 120, t: "Quỹ", cls: "nho", w: 140, at: 900 },
+      { x: (L + xn) / 2 + 10, y: day - 140, t: "Chi trả luôn", cls: "the-cam", w: 240, at: 1900 },
+      { x: xn, y: day - 360, t: "Rủi ro xảy ra", cls: "nho", w: 240, at: 1400 });
+    nhan.push({ x: w * 0.235, y: day + 26, t: "Kỹ thuật phân bổ", b: "thời hạn ngắn · rủi ro tương đối độc lập với tuổi thọ", cls: "ten", w: w * 0.44, at: 400 });
+    // PHẢI — DỒN TÍCH: mỗi năm thêm một lớp phí vào bể; nhiều năm sau mới chi trả cho người đã già
+    const jw = 220, jh = day - 70, Rr = w * 0.66, jx = Rr - jw / 2, ly = (jh - 30) / nam, xg = w * 0.88;
+    s += `<!--L:fade:400-->` + bong(Rr, day + 4, 160) + `<path d="M${f1(jx)} ${f1(day - jh)} H${f1(jx + jw)} V${f1(day - 24)} Q${f1(jx + jw)} ${f1(day)} ${f1(jx + jw - 24)} ${f1(day)} H${f1(jx + 24)} Q${f1(jx)} ${f1(day)} ${f1(jx)} ${f1(day - 24)}Z" fill="#${mix(P.acc, "FFFFFF", 0.88)}" stroke="#${mix(P.acc, "FFFFFF", 0.35)}" stroke-width="6"/><rect x="${f1(jx + 20)}" y="${f1(day - jh - 22)}" width="${jw - 40}" height="24" rx="8" fill="#${P.ink}"/>`;
+    for (let k = 0; k < nam; k++) { const yy = day - 8 - (k + 1) * ly; s += `<!--L:up:${1100 + k * 260}--><rect x="${f1(jx + 8)}" y="${f1(yy)}" width="${jw - 16}" height="${f1(ly - 4)}" rx="${k ? 3 : 14}" fill="#${mix(P.acc, "FFFFFF", 0.1 + (k % 2) * 0.14)}"/><rect x="${f1(jx + 18)}" y="${f1(yy + 6)}" width="${jw * 0.35}" height="6" rx="3" fill="#fff" opacity=".3"/>`;
+      nhan.push({ x: jx - 112, y: yy + ly / 2 - 16, t: `năm ${k + 1}`, cls: "trai nho", w: 100, at: 1100 + k * 260 }); }
+    const Tc = 1100 + nam * 260 + 200;
+    s += `<!--L:pop:${Tc}-->` + vat("nguoi-vang", P, xg - 110, day - 230, 220);
+    s += `<!--L:wipe:${Tc + 300}--><path d="M${f1(jx + jw + 8)} ${f1(day - jh + 40)} C${f1(jx + jw + 120)} ${f1(day - jh + 40)} ${f1(xg - 40)} ${f1(day - jh + 80)} ${f1(xg - 10)} ${f1(day - 250)}" fill="none" stroke="#${P.gold}" stroke-width="18" stroke-linecap="round"/><path d="M${f1(xg - 34)} ${f1(day - 266)} L${f1(xg - 8)} ${f1(day - 232)} L${f1(xg + 14)} ${f1(day - 270)}Z" fill="#${P.gold}"/>`;
+    nhan.push({ x: xg, y: day - jh - 10, t: "Nhiều năm sau mới chi trả", cls: "the-cam", w: 330, at: Tc + 300 });
+    nhan.push({ x: w * 0.765, y: day + 26, t: "Kỹ thuật dồn tích", b: "thời hạn dài · rủi ro gắn liền tuổi thọ con người", cls: "ten", w: w * 0.44, at: 400 });
     return { svg: khungSvg(w, h, P, s), nhan };
   },
 
@@ -263,15 +272,16 @@ const KIEU = {
 
   // CỘT TRỤ: mái "BHTM" đặt trên n cột — mỗi cột một nguyên tắc chung; thiếu một cột thì mái nghiêng (nền móng của hoạt động bảo hiểm)
   "cot-tru": (d, P, w, h) => {
-    const ct = d.cot || [], n = ct.length, mx = 60, top = 140, day = h - 170, cw = (w - 2 * mx) / n, colw = Math.min(110, cw * 0.42); let s = "", nhan = [];
+    const ct = d.cot || [], n = ct.length, mx = 60, top = 140, day = h - 220, cw = (w - 2 * mx) / n, colw = Math.min(110, cw * 0.42); let s = "", nhan = [];
     s += `<!--L:up:300--><rect x="${mx - 30}" y="${day}" width="${w - 2 * mx + 60}" height="22" fill="#${mix(P.ink, "FFFFFF", 0.5)}"/><rect x="${mx - 50}" y="${day + 22}" width="${w - 2 * mx + 100}" height="18" fill="#${mix(P.ink, "FFFFFF", 0.35)}"/>`;
     ct.forEach((c, k) => { const cx = mx + cw * k + cw / 2, T = 600 + k * 300, x = cx - colw / 2;
       s += `<!--L:up:${T}--><rect x="${f1(x)}" y="${top + 40}" width="${f1(colw)}" height="${f1(day - top - 40)}" fill="#F4F1EA"/>` + [0.2, 0.42, 0.64].map((fx) => `<rect x="${f1(x + colw * fx)}" y="${top + 40}" width="${f1(colw * 0.06)}" height="${f1(day - top - 40)}" fill="#000" opacity=".07"/>`).join("")
         + `<rect x="${f1(x + colw * 0.8)}" y="${top + 40}" width="${f1(colw * 0.2)}" height="${f1(day - top - 40)}" fill="#000" opacity=".09"/>`
         + `<rect x="${f1(x - 10)}" y="${top + 30}" width="${f1(colw + 20)}" height="16" fill="#${mix(P.gold, "FFFFFF", 0.2)}"/><rect x="${f1(x - 10)}" y="${f1(day - 14)}" width="${f1(colw + 20)}" height="14" fill="#${mix(P.gold, "FFFFFF", 0.2)}"/>`
-        + `<circle cx="${f1(cx)}" cy="${f1(top + 110)}" r="30" fill="#${P.acc}"/>` + (c.ve ? vat(c.ve, P, cx - 45, top + 170, 90) : "");
-      nhan.push({ x: cx, y: top + 88, t: String(k + 1), cls: "so-tram nho-tron", w: 70, at: T + 100 });
-      nhan.push({ x: cx, y: day + 54, t: c.t, b: c.b, cls: "ten", w: cw - 8, at: T + 200 }); });
+        + `<circle cx="${f1(cx)}" cy="${f1(top + 100)}" r="30" fill="#${P.acc}"/>`
+        + (c.ve ? `<circle cx="${f1(cx + 4)}" cy="${f1(top + 254)}" r="84" fill="#000" opacity=".1"/><circle cx="${f1(cx)}" cy="${f1(top + 250)}" r="84" fill="#FFFDF7" stroke="#${mix(P.gold, "FFFFFF", 0.2)}" stroke-width="8"/>` + vat(c.ve, P, cx - 70, top + 180, 140) : "");
+      nhan.push({ x: cx, y: top + 78, t: String(k + 1), cls: "so-tram nho-tron", w: 70, at: T + 100 });
+      nhan.push({ x: cx, y: day + 52, t: c.t, b: c.b, cls: "ten", w: cw - 4, at: T + 200 }); });
     s += `<!--L:drop:${600 + n * 300 + 200}--><path d="M${mx - 40} ${top + 32} L${w / 2} ${top - 70} L${w - mx + 40} ${top + 32}Z" fill="#${P.acc}"/><path d="M${w / 2} ${top - 70} L${w - mx + 40} ${top + 32} H${w / 2}Z" fill="#000" opacity=".12"/><rect x="${mx - 50}" y="${top + 26}" width="${w - 2 * mx + 100}" height="16" fill="#${mix(P.acc, "000000", 0.25)}"/>`;
     nhan.push({ x: w / 2, y: top - 22, t: d.mai || "Bảo hiểm thương mại", cls: "trang", w: 600, at: 600 + n * 300 + 400 });
     return { svg: khungSvg(w, h, P, s), nhan };
