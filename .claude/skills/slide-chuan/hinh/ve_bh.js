@@ -263,6 +263,9 @@ ${ca}<rect x="112" y="80" width="16" height="18" rx="6" fill="#${mix(DA_NGUOI, "
 <circle cx="111" cy="64" r="2.8" fill="${INK(Q)}"/><circle cx="129" cy="64" r="2.8" fill="${INK(Q)}"/><path d="M113 75 Q120 80 127 75" fill="none" stroke="${INK(Q)}" stroke-width="2.5" stroke-linecap="round"/>`, { rx: 48 });
 VE["anh-x"] = (P) => nguoiDung(P.acc, "3E4F5C", P)(P);
 VE["anh-x-gio"] = (P) => nguoiDung(P.acc, "3E4F5C", P, "gio")(P);
+// thêm hai người khác màu áo để phân biệt các chủ thể trong cùng một cảnh (người được BH, người thụ hưởng)
+VE["nguoi-vang"] = (P) => nguoiDung(P.gold, "4A3F55", P)(P);
+VE["nguoi-cam"] = (P) => nguoiDung("E07A5F", "3E4F5C", P, "gio")(P);
 VE["nhan-vien"] = (P) => nguoiDung("F4F1EA", P.ink, P, "xuoi", `<path d="M114 100 L120 140 L126 100Z" fill="#${P.gold}"/>`)(P);
 // toà DN nhận tái bảo hiểm: khối thấp rộng, mái vàng — khác toà DNBH gốc để người xem phân biệt hai doanh nghiệp
 VE["toa-nhan-tai"] = (P) => khung(P, (S) => `
