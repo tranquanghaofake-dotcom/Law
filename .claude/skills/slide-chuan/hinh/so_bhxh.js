@@ -71,7 +71,7 @@ const the = (name, R, o = {}) => lop(name, R, theSvg(R.w, R.h, o), { go: o.go, a
 const vong = (name, x, y, d, ten, o = {}) => { const g = uid("vg"), mau = o.mau === "do" ? ["fff0ee", "ffd2cc"] : o.mau === "vang" ? ["fff6dc", "ffe2a0"] : ["ffffff", "dceaff"];
   return `${lop(name, { x, y, w: d, h: d }, `<svg viewBox="0 0 100 100" width="100%" height="100%"><defs><linearGradient id="${g}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#${mau[0]}"/><stop offset="1" stop-color="#${mau[1]}"/></linearGradient></defs><circle cx="50" cy="50" r="49" fill="url(#${g})" stroke="#ffffff" stroke-width="2"/></svg>`, { go: o.go, alt: "Vòng nền", z: o.z || 5, a: o.a, at: o.at, dur: o.dur, sau: o.sau })}${vat(`${name}v`, ten, { x: x + d * 0.14, y: y + d * 0.12, w: d * 0.72 }, { go: o.go, z: (o.z || 5) + 1, a: o.a, at: o.at, dur: o.dur, sau: o.sau })}`; };
 // nhãn khung viền (kiểu bản Office) hoặc nhãn đặc (viên thuốc)
-const nhan = (name, x, y, text, o = {}) => { const px = o.px || 20, w = o.w || Math.round(rong(String(text).toLocaleUpperCase("vi"), px, 800) * 1.06 + text.length * px * 0.1 + 40), h = Math.round(px * 1.9), dac = o.dac;
+const nhan = (name, x, y, text, o = {}) => { const px = o.px || 24, w = o.w || Math.round(rong(String(text).toLocaleUpperCase("vi"), px, 800) * 1.06 + text.length * px * 0.1 + 40), h = Math.round(px * 1.9), dac = o.dac;
   const g = uid("nh"), m = { xanh: ["2f6fe0", "0b57d0"], do: ["d63b2f", "a8231b"] }[o.mau || "xanh"] || GRAD[o.mau];
   return `${lop(name, { x, y, w, h }, `<svg viewBox="0 0 ${w} ${h}" width="100%" height="100%">${dac ? `<defs><linearGradient id="${g}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#${m[0]}"/><stop offset="1" stop-color="#${m[1]}"/></linearGradient></defs><rect width="${w}" height="${h}" rx="${h / 2}" fill="url(#${g})"/>` : `<rect x="1.5" y="1.5" width="${w - 3}" height="${h - 3}" rx="6" fill="#ffffff" stroke="#${o.vien || P.blue}" stroke-width="2.5"/>`}</svg>`, { shadow: false, go: o.go, alt: "Nhãn", z: o.z || 6, a: o.a, at: o.at, dur: o.dur })}${chu("bh-nhan", x, y + (h - px * 1.2) / 2, w, esc(text), { size: px, align: "center", color: o.chu || (dac ? "ffffff" : P.blue), go: o.go, a: o.a, at: o.at, dur: o.dur })}`; };
 const muiTen = () => { const g = uid("mt"); return `<svg viewBox="0 0 100 70" width="100%" height="100%"><defs><linearGradient id="${g}" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9cc3ff"/><stop offset="1" stop-color="#0b57d0"/></linearGradient></defs><path d="M6 24 H58 V8 L94 35 L58 62 V46 H6 Z" fill="url(#${g})"/></svg>`; };
@@ -107,7 +107,7 @@ const docSo = (t) => { const m = String(t).match(/^([^\d]*)(\d[\d.,]*)(.*)$/); i
 const soChay = (cls, x, y, w, h, giaTri, o = {}) => { const t0 = o.at ?? 250, { a, at, dur, ...r } = o;
   return chu(cls, x, y, w, esc(String(giaTri)), HV ? { ...r, a: "pop", at: t0, dur: 420, em: "pulse", emat: t0 + 700, sau: 0 } : r); };
 // viên thuốc (nhãn đặc bo tròn) — kiểu Flashslide: chữ đậm in hoa trên nền màu
-const vien = (name, x, y, text, o = {}) => { const px = o.px || 22, T = String(text).toLocaleUpperCase("vi"), w = Math.round(rong(T, px, 800) + T.length * px * 0.07 + px * 2.4), h = Math.round(px * 2), g = uid("vi"), m = o.mau === "vang" ? ["ffc94a", "e8930c"] : o.mau === "trang" ? ["ffffff", "ffffff"] : ["0f3f9c", "072a6b"];
+const vien = (name, x, y, text, o = {}) => { const px = o.px || 24, T = String(text).toLocaleUpperCase("vi"), w = Math.round(rong(T, px, 800) + T.length * px * 0.07 + px * 2.4), h = Math.round(px * 2), g = uid("vi"), m = o.mau === "vang" ? ["ffc94a", "e8930c"] : o.mau === "trang" ? ["ffffff", "ffffff"] : ["0f3f9c", "072a6b"];
   return `${lop(name, { x, y, w, h }, `<svg viewBox="0 0 ${w} ${h}" width="100%" height="100%"><defs><linearGradient id="${g}" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#${m[0]}"/><stop offset="1" stop-color="#${m[1]}"/></linearGradient></defs><rect width="${w}" height="${h}" rx="${h / 2}" fill="url(#${g})"/></svg>`, { shadow: o.mau === "trang" ? undefined : false, pad: 30, alt: "Nhãn", z: o.z || 9, sau: o.sau, ...(o.fx || {}) })}${chu(o.cls || "bh-kk", x, y + (h - px * 1.2) / 2, w, esc(text), { align: "center", color: o.chu || (o.mau === "vang" ? "3a2400" : o.mau === "trang" ? "072a6b" : "ffd76a"), size: px, z: (o.z || 9) + 22, sau: o.sau, ...(o.fx || {}) })}`; };
 const kick = (t, x = 110, y = 92, o = {}) => (t ? vien("bh-kick", x, y, t, o) : "");
 const boPhan = (t) => String(t || "").replace(/^(Phần|Chương)\s*\d+\s*·\s*/i, "");
@@ -118,11 +118,11 @@ const tieuDe = (s, o = {}) => { const w = o.w || 1680; let px = o.px || 72, n = 
 // ẢNH THẬT (ảnh báo — chỉ chiếu trên lớp, ghi công ở chân slide và trong _ghi-cong.md)
 const anhU = (ctx, s) => (ctx && s.photo ? ctx.img(s.photo) : null);
 const imgTag = (u, s) => `<img src="${u}" style="width:100%;height:100%;object-fit:cover;object-position:${s.photoPos || "center"};display:block">`;
-const ghiAnh = (s, toi) => (s.photoCredit ? chu("bh-cr", 110, 1030, 1200, esc(s.photoCredit), { color: toi ? "b9c9e8" : P.mute, sau: 0 }) : "");
+const ghiAnh = (s, toi) => (s.photoCredit ? chu("bh-cr", 110, 1030, 1200, esc(s.photoCredit), { color: toi ? "b9c9e8" : P.ink2, sau: 0 }) : "");   // ink2: mute chỉ 4,46 : 1 khi cụm thẻ dài xuống sát (nền sau chữ đổi)
 // khung ảnh bo góc + bóng đổ (+ nhãn trắng ở góc dưới)
 const anhKhung = (ctx, s, R, o = {}) => { const u = anhU(ctx, s); if (!u) return "";
   return `${lop(o.name || "bh-anh", R, `<div style="width:100%;height:100%;border-radius:30px;overflow:hidden">${imgTag(u, s)}</div>`, { alt: s.photoAlt || "Ảnh", z: 3, pad: 50, sau: o.sau ?? 1.15, ...(o.fx || {}) })}
-    ${s.photoTag ? vien("bh-anhtag", R.x + 30, R.y + R.h - 76, s.photoTag, { mau: "trang", px: 20, sau: o.sau ?? 1.15, fx: o.fx }) : ""}${ghiAnh(s)}`; };
+    ${s.photoTag ? vien("bh-anhtag", R.x + 30, R.y + R.h - 84, s.photoTag, { mau: "trang", px: 24, sau: o.sau ?? 1.15, fx: o.fx }) : ""}${ghiAnh(s)}`; };
 // ảnh tràn mép phải, dải mờ dần vào nền bên trái
 const anhBen = (ctx, s, x0, o = {}) => { const u = anhU(ctx, s); if (!u) return ""; const g = uid("mo");
   return `${lop("bh-anhben", { x: x0, y: 0, w: 1920 - x0, h: 1080 }, imgTag(u, s), { shadow: false, alt: s.photoAlt || "Ảnh", z: 2, pad: 0, sau: 1.15, ...(o.fx || {}) })}
@@ -134,10 +134,10 @@ const anhTran = (ctx, s, o = {}) => { const u = anhU(ctx, s); if (!u) return "";
 // vật vẽ bằng code làm mờ ở tiền cảnh (chiều sâu kiểu Flashslide)
 const tienCanh = (name, ten, R, o = {}) => hero(name, ten, R, { css: `filter:blur(${o.mo ?? 5}px) drop-shadow(0 30px 40px rgba(0,0,0,.35));`, z: 40, sau: 1.7, alt: "Vật tiền cảnh", ...o });
 // HÀNG (danh sách kiểu bản Office): thẻ trắng có vạch màu trái · vòng vật 3D · tên · một dòng giải thích · căn cứ nhỏ
-const hangH = (x, W) => 26 + 48 + (x.desc ? dong(x.desc, W - 192, 27, 400) * 37 : 0) + (x.ref ? 40 : 0) + 24;
-const hang = (name, X, Y, W, x, o = {}) => { const H = o.h || hangH(x, W), tw = W - 192, nd = x.desc ? dong(x.desc, tw, 27, 400) : 0, mau = o.mau || P.blue, fx = o.fx || {}, ty = Y + Math.max(26, (H - hangH(x, W)) / 2 + 26);
+const hangH = (x, W) => 22 + 46 + (x.desc ? dong(x.desc, W - 192, 30, 400) * 41 : 0) + (x.ref ? 46 : 0) + 18;   // mô tả 30 px (15 pt), căn cứ 24 px (12 pt)
+const hang = (name, X, Y, W, x, o = {}) => { const H = o.h || hangH(x, W), tw = W - 192, nd = x.desc ? dong(x.desc, tw, 30, 400) : 0, mau = o.mau || P.blue, fx = o.fx || {}, ty = Y + Math.max(22, (H - hangH(x, W)) / 2 + 22);
   return `${the(name, { x: X, y: Y, w: W, h: H }, { trai: mau, traiW: 10, go: x.go, ...fx })}${x.icon ? vong(`${name}i`, X + 34, Y + (H - 104) / 2, 104, x.icon, { mau: o.vmau, go: x.go, ...fx }) : ""}
-    ${chu("bh-rn1", X + 162, ty, tw, esc(x.name || ""), { go: x.go, ...fx })}${x.desc ? chu("bh-rd", X + 162, ty + 50, tw, tx(x.desc), { go: x.go, ...fx }) : ""}${x.ref ? chu("bh-rr", X + 162, ty + 58 + nd * 37, tw, esc(x.ref), { color: mau, go: x.go, ...fx }) : ""}`; };
+    ${chu("bh-rn1", X + 162, ty, tw, esc(x.name || ""), { go: x.go, ...fx })}${x.desc ? chu("bh-rd", X + 162, ty + 48, tw, tx(x.desc), { go: x.go, ...fx }) : ""}${x.ref ? chu("bh-rr", X + 162, ty + 56 + nd * 41, tw, esc(x.ref), { color: mau, go: x.go, ...fx }) : ""}`; };
 const cot3 = (rows, X, top, W, bot, o = {}) => { const hs = rows.map((x) => hangH(x, W)), gap = Math.max(18, Math.min(34, (bot - top - hs.reduce((a, b) => a + b, 0)) / Math.max(1, rows.length - 1)));
   let y = top; return rows.map((x, k) => { const h = hang(`${o.ten || "bh-row"}${k}`, X, y, W, x, { mau: (o.mau || [])[k], vmau: (o.vmau || [])[k], fx: { ...vao(o.tre ?? 1 + k), sau: 0 } }); y += hs[k] + gap; return h; }).join(""); };
 const nguon = (t) => (t ? chu("bh-src", 110, String(t).length > 150 ? 940 : 966, 1700, esc(t)) : "");
@@ -303,7 +303,7 @@ S.bhcongthuc = (s, deck, b) => { const t = s.terms || [], p = b === 2 ? 65 : 45,
 
 // 15 · 17 · BIỂU ĐỒ CỘT (hai bước khi "grow" khác false) — cột bóng mọc; số chú thích tại năm; thẻ kết luận; chồng sổ ở góc
 S.bhcot2 = (s, deck, b, ctx) => { const H = tieuDe(s, { w: 1460, px: 60 }), hai = s.grow !== false && !(/người/.test(s.unit || "") && s.iso !== false), xong = !hai || b === 2, it = s.items || [], n = it.length, top = Math.max(290, H.day + 40);
-  const CR = s.insight ? 1340 : 1810, X0 = 190, X1 = CR - 50, Y0 = top + 410, Y1 = top + 130, hi = Math.max(...it.map((x) => x.value)) * 1.08;
+  const CR = s.insight ? 1340 : 1810, X0 = 190, X1 = CR - 50, Y0 = top + 392, Y1 = top + 130, hi = Math.max(...it.map((x) => x.value)) * 1.08;
   const cw = (X1 - X0) / n, bw = cw * 0.58, xs = (k) => X0 + cw * (k + 0.5), ys = (v) => Y0 - (Y0 - Y1) * v / hi;
   // isotype: đơn vị là người → cột = chồng sổ; chọn số người mỗi cuốn để cột cao nhất có 10–22 cuốn
   const iso = /người/.test(s.unit || "") && s.iso !== false, vmax = Math.max(...it.map((x) => x.value)), mot = [0.1, 0.2, 0.25, 0.5, 1, 2, 5, 10].find((u) => vmax / u <= 22) || 10, day = mot * (Y0 - Y1) / hi;
@@ -328,7 +328,9 @@ S.bhcot2 = (s, deck, b, ctx) => { const H = tieuDe(s, { w: 1460, px: 60 }), hai 
   const mauCham = (k) => (mau(it[k], k) === "do" ? P.red : P.blue);
   const cham = (name, x, y, j, trong, m, o = {}) => `${lop(name, { x, y, w: 42, h: 42 }, `<svg viewBox="0 0 42 42" width="100%" height="100%"><circle cx="21" cy="21" r="19" fill="#${trong ? "ffffff" : m}" stroke="#${trong ? m : "ffffff"}" stroke-width="3"/></svg>`, { shadow: false, z: 9, alt: "Số chú thích", ...o })}${chu("bh-wn", x, y + 6, 42, String(j + 1), { align: "center", color: trong ? m : "ffffff", ...o })}`;
   const so1 = xong ? whys.map((k, j) => { const y = ys(it[k].value), trong = Y0 - y > 70; return cham(`bh-wd${j}`, xs(k) - 21, trong ? y + 10 : y - 102, j, trong, mauCham(k), sau(1300)); }).join("") : "";
-  const why = xong ? whys.map((k, j) => { const x = 150 + (j % 2) * ((CR - 150) / 2), y = Y0 + 70 + Math.floor(j / 2) * 70; return `${cham(`bh-wc${j}`, x, y, j, false, mauCham(k), sau(1500))}${chu("bh-wt", x + 56, y + 4, (CR - 150) / 2 - 80, `<b>${esc(it[k].label)}</b> ${f(it[k].why)}`, sau(1500))}`; }).join("") : "";
+  // hàng chú thích cao theo số dòng thật (chữ 28 px, dòng 36 px) — hàng cố định 70 px làm chú thích 2 dòng dính vào nhau
+  const wN = (CR - 150) / 2 - 80, hW = []; for (let j = 0; j < whys.length; j += 2) hW.push(Math.max(...whys.slice(j, j + 2).map((k) => dong(`${it[k].label} ${String(it[k].why || "").replace(/[[\]]/g, "")}`, wN, 28, 400))) * 36 + 12);
+  const why = xong ? whys.map((k, j) => { const x = 150 + (j % 2) * ((CR - 150) / 2), y = Y0 + 62 + hW.slice(0, Math.floor(j / 2)).reduce((a, b) => a + b, 0); return `${cham(`bh-wc${j}`, x, y, j, false, mauCham(k), sau(1500))}${chu("bh-wt", x + 56, y + 4, (CR - 150) / 2 - 80, `<b>${esc(it[k].label)}</b> ${f(it[k].why)}`, sau(1500))}`; }).join("") : "";
   const ins = s.insight || {};
   const pa = s.insightPhoto || null, ua = pa && ctx && ctx.img(pa), gi = uid("di");
   const dai = ua && xong ? `${lop("bh-insanh", { x: 1380, y: top + 450, w: 430, h: 180 }, `<div style="position:relative;width:100%;height:100%;border-radius:0 0 22px 22px;overflow:hidden"><img src="${ua}" style="width:100%;height:100%;object-fit:cover;display:block"><svg viewBox="0 0 10 10" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%"><defs><linearGradient id="${gi}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a3a9a"/><stop offset=".55" stop-color="#0a3a9a" stop-opacity=".25"/><stop offset="1" stop-color="#0a3a9a" stop-opacity="0"/></linearGradient></defs><rect width="10" height="10" fill="url(#${gi})"/></svg></div>`, { shadow: false, alt: "Dải ảnh", z: 5, pad: 0, ...sau(1700) })}` : "";
@@ -361,7 +363,7 @@ S.bhquy = (s) => { const H = tieuDe(s, { w: 1460 }), rows = s.rows || [], k1 = r
   const chuBang = rows.map((x, k) => { const y = top + k * RH, xa = x.hatch != null ? !!x.hatch : k > k1,   /* nét đứt theo dữ liệu từng năm (hatch), mặc định: sau năm s.den */ w = Math.abs(x.value) * KX;
     return `${chu("bh-qy", 150, y + 6, 120, esc(x.label), { color: xa ? P.mute : P.navy, ...vao(1, "fade") })}${chu("bh-qv", x.value < 0 ? Z - w - 150 : Z + w + 16, y + 4, 130, esc(x.display || so(x.value)), { dl: true, align: x.value < 0 ? "right" : "left", color: xa ? P.mute : x.focus ? P.goldD : P.navy, ...vao(1, "fade") })}`; }).join("");
   const ghi = rows.map((x, k) => ({ x, k })).filter(({ x, k }) => x.note && k <= k1).map(({ x, k }) => chu("bh-qn", 1350, top + k * RH + 6, 430, `<b>${esc(x.label)}</b> ${esc(x.note)}`, vao(2, "fade"))).join("");
-  const ngoai = k1 >= 0 && k1 < rows.length - 1 ? `${lop("bh-qngoac", { x: 1260, y: top + (k1 + 1) * RH, w: 14, h: (rows.length - k1 - 1) * RH - 10 }, `<svg viewBox="0 0 14 100" width="100%" height="100%" preserveAspectRatio="none"><path d="M2 2 H12 V98 H2" stroke="#${P.faint}" stroke-width="3" fill="none"/></svg>`, { shadow: false, alt: "Ngoặc", ...vao(3, "fade") })}${chu("bh-qn", 1350, top + (k1 + 1) * RH + 34, 430, esc(s.ngoai || "Phạm vi khác — chưa so được với 2015–2022"), { color: P.mute, ...vao(3, "fade") })}` : "";
+  const ngoai = k1 >= 0 && k1 < rows.length - 1 ? `${lop("bh-qngoac", { x: 1260, y: top + (k1 + 1) * RH, w: 14, h: (rows.length - k1 - 1) * RH - 10 }, `<svg viewBox="0 0 14 100" width="100%" height="100%" preserveAspectRatio="none"><path d="M2 2 H12 V98 H2" stroke="#${P.faint}" stroke-width="3" fill="none"/></svg>`, { shadow: false, alt: "Ngoặc", ...vao(3, "fade") })}${chu("bh-qn", 1350, top + (k1 + 1) * RH + 60, 430, esc(s.ngoai || "Phạm vi khác — chưa so được với 2015–2022"), { color: P.mute, ...vao(3, "fade") })}` : "";
   // (bỏ chồng xu trang trí ở góc: các thanh đã là cuộn xu — cùng một vật hai lần, chồng xu không mang số nào)
   return `${H.html}${the("bh-qk", { x: 110, y: top - 70, w: 1180, h: rows.length * RH + 110 }, vao(0, "fade"))}${chu("bh-cu", 150, top - 48, 900, esc(s.unit ? `Đơn vị: ${s.unit} · thu − chi` : ""), vao(0, "fade"))}
     ${the("bh-qghi", { x: 1320, y: top - 70, w: 490, h: rows.length * RH + 110 }, vao(2, "fade"))}${lop("bh-quy", { x: 110, y: top, w: W, h: rows.length * RH }, svg, { shadow: false, alt: "Biểu đồ thu − chi", ...vao(1, "wipe") })}${chuBang}${ghi}${ngoai}${nguon(s.note)}`; };
@@ -387,20 +389,20 @@ S.bhrut = (s, deck, b, ctx) => { const H = tieuDe(s, { boSub: true }), top = Mat
 // 20 · HỆ QUẢ RÚT MỘT LẦN — sổ BHXH mở: các ô năm đã đóng bị gạch, dấu đỏ "mất thời gian"; hai hệ quả bên phải
 S.bhmat = (s) => { const H = tieuDe(s), ca = s.cause || {}, rs = (s.results || []).slice(0, 2), top = Math.max(300, H.day + 40), st = s.stamp || {}, NK = s.years || 6;
   const BX = 110, BY = top + 130, BW = 1000, BH = 420, CW = 96, G = 22;
-  return `${H.html}${the("bh-ca", { x: 110, y: top, w: 1000, h: 112 }, { trai: P.blue, ...vao(0) })}${chu("bh-ctg", 150, top + 40, 170, esc(ca.tag || "Tình huống"), vao(0))}${chu("bh-ctx", 330, top + 20, 750, esc(ca.text || ""), { size: 28, ...vao(0) })}
+  return `${H.html}${the("bh-ca", { x: 110, y: top, w: 1000, h: 112 }, { trai: P.blue, ...vao(0) })}${chu("bh-ctg", 150, top + 40, 196, esc(ca.tag || "Tình huống"), vao(0))}${chu("bh-ctx", 360, top + 20, 720, esc(ca.text || ""), { size: 28, ...vao(0) })}
     ${lop("bh-somo", { x: BX, y: BY, w: BW, h: BH }, V.soMo(BW, BH), { shadow: false, alt: "Sổ BHXH mở trang quá trình đóng", ...vao(1, "fade") })}${chu("bh-sot", BX + 40, BY + 26, 420, "Quá trình đóng BHXH", vao(1, "fade"))}
     ${Array.from({ length: NK }, (_, k) => { const x = BX + 70 + (k % 3) * (CW + G), y = BY + 110 + Math.floor(k / 3) * (CW + 30);
       return `${lop(`bh-mk${k}`, { x, y, w: CW, h: CW }, `<svg viewBox="0 0 100 100" width="100%" height="100%"><rect x="3" y="3" width="94" height="94" rx="18" fill="#eef2f8" stroke="#${P.faint}" stroke-width="4" stroke-dasharray="10 8"/><path d="M24 24 L76 76 M76 24 L24 76" stroke="#${P.red}" stroke-width="8" stroke-linecap="round" opacity=".75"/></svg>`, { shadow: false, alt: "Năm đã đóng bị mất", ...vao(2, "fade") })}${chu("bh-mkn", x, y + CW + 4, CW, `Năm ${k + 1}`, { align: "center", ...vao(2, "fade") })}`; }).join("")}
     ${lop("bh-daumat", { x: BX + 520, y: BY + 150, w: 420, h: 170, r: -8 }, conDau(420, 170), { shadow: false, alt: "Dấu mất thời gian", ...vao(3, "pop") })}${chu("bh-dmt", BX + 534, BY + 178, 392, esc(String(st.text || "Mất thời gian").replace(/\n/g, " ")), { align: "center", ...vao(3, "pop") })}${chu("bh-dms", BX + 534, BY + 262, 392, esc(st.sub || ""), { align: "center", ...vao(3, "pop") })}
-    ${rs.map((x, k) => { const Y = top + k * 275, o = vao(4 + k); return `${the(`bh-kq${k}`, { x: 1170, y: Y, w: 640, h: 245 }, { dai: "do", daiH: 8, ...o })}${chu("bh-kt", 1210, Y + 40, 570, esc(x.text || ""), o)}${nhan(`bh-kr${k}`, 1210, Y + 170, x.ref || "", { dac: true, mau: "do", px: 20, ...o })}`; }).join("")}
+    ${rs.map((x, k) => { const Y = top + k * 275, o = vao(4 + k); return `${the(`bh-kq${k}`, { x: 1170, y: Y, w: 640, h: 245 }, { dai: "do", daiH: 8, ...o })}${chu("bh-kt", 1210, Y + 40, 570, esc(x.text || ""), o)}${nhan(`bh-kr${k}`, 1210, Y + 166, x.ref || "", { dac: true, mau: "do", px: 24, ...o })}`; }).join("")}
     ${nguon(s.source)}`; };
 
 // 22 · ĐẠT ĐƯỢC — điện thoại tra cứu quá trình đóng (thủ tục trực tuyến) + bốn thẻ số liệu; bảng kiểm của slide mở phần thu về góc
 S.bhdat = (s, deck, b, ctx) => { const H = tieuDe(s, { w: 1460 }), c = (s.cells || []).slice(0, 4), top = Math.max(310, H.day + 50), VD = ["bieu-do-tang", "dien-thoai", "hop-ho-so", "can"], coAnh = !!anhU(ctx, s);
   const X0 = coAnh ? 640 : 470, CW = coAnh ? 575 : 660, G = coAnh ? 20 : 20, TW = CW - 200;
-  return `${H.html}${coAnh ? anhKhung(ctx, s, { x: 110, y: top, w: 500, h: 580 }, { fx: vao(0, "fade") }) : hero("bh-dt", "dt", { x: 120, y: top, w: 290 }, vao(0))}${c.map((x, k) => { const X = X0 + (k % 2) * (CW + G), Y = top + Math.floor(k / 2) * 300, o = { ...vao(1 + k), sau: 0 };
-    return `${the(`bh-d${k}`, { x: X, y: Y, w: CW, h: 280 }, { dai: "xanh", daiH: 8, ...o })}${vong(`bh-di${k}`, X + 28, Y + 40, coAnh ? 108 : 120, VD[k], o)}
-      ${x.value ? soChay("bh-dv", X + 166, Y + 34, TW, 112, x.value, { at: 500 + k * 250 }) : ""}${chu("bh-dh", X + 166, Y + (x.value ? 146 : 50), TW, esc(x.head || ""), o)}${chu("bh-dt", X + 166, Y + (x.value ? 192 : 100) + (dong(x.head, TW, 30, 800) - 1) * 36, TW, esc(x.text || ""), o)}`; }).join("")}`; };
+  return `${H.html}${coAnh ? anhKhung(ctx, s, { x: 110, y: top, w: 500, h: 664 }, { fx: vao(0, "fade") }) : hero("bh-dt", "dt", { x: 120, y: top, w: 290 }, vao(0))}${c.map((x, k) => { const X = X0 + (k % 2) * (CW + G), Y = top + Math.floor(k / 2) * 340, o = { ...vao(1 + k), sau: 0 };   // thẻ 324 px: đủ tiêu đề 2 dòng 32 px + mô tả 2 dòng 28 px
+    return `${the(`bh-d${k}`, { x: X, y: Y, w: CW, h: 324 }, { dai: "xanh", daiH: 8, ...o })}${vong(`bh-di${k}`, X + 28, Y + 40, coAnh ? 108 : 120, VD[k], o)}
+      ${x.value ? soChay("bh-dv", X + 166, Y + 34, TW, 112, x.value, { at: 500 + k * 250 }) : ""}${chu("bh-dh", X + 166, Y + (x.value ? 146 : 50), TW, esc(x.head || ""), o)}${chu("bh-dt", X + 166, Y + (x.value ? 194 : 100) + (dong(x.head, TW, 32, 800) - 1) * 39, TW, esc(x.text || ""), o)}`; }).join("")}`; };
 
 // 23 · 24 · HẠN CHẾ / KIẾN NGHỊ — ba thẻ cùng chỗ ở hai slide: dải đỏ (hạn chế) → dải xanh (kiến nghị)
 const ba = (s, kn) => { const H = tieuDe(s), it = (s.items || []).slice(0, 3), lab = s.labels || [], top = Math.max(330, H.day + 56), VD = kn ? ["khoa", "sua-chua", "cua-hang"] : ["cua", "canh-bao", "nguoi-chay"];
@@ -412,7 +414,9 @@ const baTab = (s, kn, deck) => { const H = tieuDe(s), it = (s.items || []).slice
   const MAU = kn ? [P.navy, P.navy, P.navy] : [P.red, P.red, P.red], TG = kn ? ["navy", "navy", "navy"] : ["do", "do", "do"];
   // ref = slide số liệu làm căn cứ ("Số liệu: slide 16") → cả thẻ bấm được, nhảy tới slide đó (hỏi đáp: "số nào?" → mở ngay)
   const toiSlide = (r) => { const m = String(r || "").match(/slide\s+(\d+)/i), d = m && deck && deck.slides[+m[1] - 1]; return d ? d.id || `s${+m[1]}` : undefined; };
-  const rows = it.map((x, k) => ({ name: x.name, desc: x.desc, ref: `${lab[0] ? `${lab[0]}: ` : ""}${x.who || ""}${x.ref ? ` · ${x.ref}` : ""}`, icon: VD[k], go: x.go || toiSlide(x.ref) }));
+  // sau "Quy định:" / "Quy mô:" viết thường như văn bản luật ("điểm đ khoản 1 Điều 70"); giữ hoa: Điều, Luật, tên riêng, chữ viết tắt
+  const sauHaiCham = (t) => { const w = String(t).split(/\s/)[0]; return /^[A-ZĐÀ-Ỹ][a-zđà-ỹ]+$/u.test(w) && !/^(Điều|Luật|Nghị|Bộ|Hiến|Chính|Quốc|Nhà|Thông|Việt)$/.test(w) ? t.charAt(0).toLocaleLowerCase("vi") + t.slice(1) : t; };
+  const rows = it.map((x, k) => ({ name: x.name, desc: x.desc, ref: `${lab[0] ? `${lab[0]}: ${sauHaiCham(x.who || "")}` : x.who || ""}${x.ref ? ` · ${x.ref}` : ""}`, icon: VD[k], go: x.go || toiSlide(x.ref) }));
   const W = 1150, X = 660, hs = rows.map((x) => hangH(x, W)), gap = Math.max(20, Math.min(36, (990 - top - hs.reduce((a, b) => a + b, 0)) / 2));
   let y = top;
   const tam = rows.map((x, k) => top + hs.slice(0, k).reduce((a, b) => a + b + gap, 0) + hs[k] / 2);
@@ -551,8 +555,8 @@ const css = `
 .bh-pnumbg { font: 400 700px/0.95 'Anton', sans-serif; color: rgba(255,255,255,.075); letter-spacing: -.02em; }
 .s.bh.toi[data-type="bhghinho"] { background: radial-gradient(ellipse 60% 70% at 78% 40%, #1450b8 0%, #0a3486 45%, #061f57 100%); }
 .s.bh.toi .bh-gh { color: #ffffff; } .s.bh.toi .bh-gh em { color: #ffc94a; }
-.bh-dv0 { font: 400 104px/1 'Anton', sans-serif; color: #072a6b; } .bh-dvl { font: 800 24px/1.2 var(--fb); letter-spacing: .06em; text-transform: uppercase; color: #${P.mute}; }
-.bh-dl { font: 400 26px/1.3 var(--fb); color: #${P.ink2}; } .bh-dl b { font: 400 40px/1 'Anton', sans-serif; color: #0b57d0; margin-right: 10px; } .bh-dl b.do { color: #${P.red}; }
+.bh-dv0 { font: 400 104px/1 'Anton', sans-serif; color: #072a6b; } .bh-dvl { font: 800 26px/1.2 var(--fb); letter-spacing: .06em; text-transform: uppercase; color: #${P.mute}; }
+.bh-dl { font: 400 28px/1.3 var(--fb); color: #${P.ink2}; } .bh-dl b { font: 400 40px/1 'Anton', sans-serif; color: #0b57d0; margin-right: 10px; } .bh-dl b.do { color: #${P.red}; }
 .bh-nenanh { position: absolute; inset: -40px; background-size: cover; background-position: center; filter: blur(10px) saturate(1.3); opacity: .9; }
 .bh-nenphu { position: absolute; inset: 0; background: url("data:image/svg+xml;utf8,${VAN}") center / 100% 100% no-repeat, linear-gradient(180deg, rgba(246,249,255,.9) 0%, rgba(246,249,255,0) 30%), linear-gradient(0deg, rgba(246,249,255,.9) 0%, rgba(246,249,255,0) 15%), linear-gradient(100deg, rgba(246,249,255,.94) 0%, rgba(240,246,255,.88) 42%, rgba(232,241,255,.8) 75%, rgba(224,236,255,.74) 100%); }
 .s.bh.toi .bh-hdp { color: rgba(255,255,255,.72); } .s.bh.toi .bh-hdn { color: #ffc94a; }
@@ -562,62 +566,62 @@ const css = `
 .bh-l { position: absolute; } .bh-l > svg, .bh-l > img { display: block; width: 100%; height: 100%; }
 .s.bh [data-t] { position: absolute; }
 .s.bh em { font-style: normal; color: #${P.blue}; }
-.bh-nhan { font: 800 20px/1.2 var(--fb); letter-spacing: .08em; text-transform: uppercase; }
+.bh-nhan { font: 800 24px/1.2 var(--fb); letter-spacing: .08em; text-transform: uppercase; }
 .bh-hdp { font: 800 18px/1.2 var(--fb); letter-spacing: .1em; text-transform: uppercase; color: #4f6a98; } .bh-hdn { font: 800 20px/1 var(--fb); color: #${P.blue}; }
 .bh-h { font: 400 72px/1.1 'Anton', sans-serif; text-transform: uppercase; color: #072a6b; }
-.bh-kk { font: 800 22px/1.2 var(--fb); letter-spacing: .06em; text-transform: uppercase; color: #ffffff; }
-.bh-rn1 { font: 800 34px/1.2 var(--fb); color: #${P.navy}; } .bh-rd { font: 400 27px/1.37 var(--fb); color: #${P.ink2}; } .bh-rr { font: 800 20px/1.2 var(--fb); letter-spacing: .08em; text-transform: uppercase; }
-.bh-sh { font: 800 22px/1.25 var(--fb); letter-spacing: .08em; text-transform: uppercase; color: #9a2a20; } .bh-mdt { font: 800 52px/1 var(--fb); letter-spacing: .12em; text-transform: uppercase; color: #c77a06; }
+.bh-kk { font: 800 24px/1.2 var(--fb); letter-spacing: .06em; text-transform: uppercase; color: #ffffff; }
+.bh-rn1 { font: 800 34px/1.2 var(--fb); color: #${P.navy}; } .bh-rd { font: 400 30px/1.37 var(--fb); color: #${P.ink2}; } .bh-rr { font: 700 24px/1.2 var(--fb); letter-spacing: .01em; }
+.bh-sh { font: 700 24px/1.25 var(--fb); letter-spacing: .01em; color: #9a2a20; } .bh-mdt { font: 800 52px/1 var(--fb); letter-spacing: .12em; text-transform: uppercase; color: #c77a06; }
 .bh-h1 { font: 400 84px/1.06 'Anton', sans-serif; text-transform: uppercase; color: #072a6b; }
 .bh-hc { font: 400 72px/1.06 'Anton', sans-serif; text-transform: uppercase; color: #072a6b; }
 .bh-pnum { font: 400 250px/1 'Anton', sans-serif; color: #${P.blue}; }
-.bh-sub { font: 400 30px/1.4 var(--fb); color: #${P.ink2}; }
-.bh-au { font: 800 32px/1.2 var(--fb); color: #${P.navy}; } .bh-aus { font: 400 24px/1.3 var(--fb); color: #${P.mute}; } .bh-ks { font: 800 28px/1.3 var(--fb); color: #${P.blue}; }
+.bh-sub { font: 400 32px/1.4 var(--fb); color: #${P.ink2}; }
+.bh-au { font: 800 32px/1.2 var(--fb); color: #${P.navy}; } .bh-aus { font: 400 26px/1.3 var(--fb); color: #${P.mute}; } .bh-ks { font: 800 30px/1.3 var(--fb); color: #${P.blue}; }
 .bh-cr { font: 400 20px/1.2 var(--fb); color: #${P.mute}; }
-.bh-src { font: 400 22px/1.35 var(--fb); color: #${P.ink2}; }   /* nguồn 22 px nét mảnh: mute chỉ đo được 4,38 : 1 trên nền thật */
+.bh-src { font: 400 24px/1.35 var(--fb); color: #${P.ink2}; }   /* nguồn 22 px nét mảnh: mute chỉ đo được 4,38 : 1 trên nền thật */
 .bh-q { font: 400 112px/1.08 'Anton', sans-serif; text-transform: uppercase; color: #072a6b; } .bh-qb { font: 400 128px/1.05 'Anton', sans-serif; text-transform: uppercase; color: #${P.blue}; }
 .bh-ct { font: 800 34px/1.2 var(--fb); color: #${P.navy}; } .bh-cd { font: 400 26px/1.3 var(--fb); color: #${P.ink2}; }
-.bh-yr { font: 400 50px/1 'Anton', sans-serif; color: #${P.navy}; } .bh-bv { font: 400 80px/1 'Anton', sans-serif; } .bh-leg { font: 400 24px/1.3 var(--fb); color: #${P.mute}; }
-.bh-hev { font: 400 130px/1 'Anton', sans-serif; } .bh-hel { font: 700 28px/1.3 var(--fb); }
-.bh-bn { font: 400 96px/1 'Anton', sans-serif; } .bh-bk { font: 800 22px/1.2 var(--fb); letter-spacing: .1em; text-transform: uppercase; } .bh-bq { font: 800 38px/1.25 var(--fb); color: #${P.navy}; }
-.bh-hint { font: 400 26px/1.2 var(--fb); color: #${P.mute}; }
+.bh-yr { font: 400 50px/1 'Anton', sans-serif; color: #${P.navy}; } .bh-bv { font: 400 80px/1 'Anton', sans-serif; } .bh-leg { font: 400 26px/1.3 var(--fb); color: #${P.mute}; }
+.bh-hev { font: 400 130px/1 'Anton', sans-serif; } .bh-hel { font: 700 30px/1.3 var(--fb); }
+.bh-bn { font: 400 96px/1 'Anton', sans-serif; } .bh-bk { font: 800 24px/1.2 var(--fb); letter-spacing: .1em; text-transform: uppercase; } .bh-bq { font: 800 38px/1.25 var(--fb); color: #${P.navy}; }
+.bh-hint { font: 400 28px/1.2 var(--fb); color: #${P.mute}; }
 .bh-qt { font: 400 36px/1.5 var(--fb); color: #3a2a12; } .bh-qt em { color: #${P.ink}; font-weight: 800; background: #ffe7a3; }
-.bh-qby { font: 800 28px/1.2 var(--fb); color: #${P.blue}; } .bh-qro { font: 400 24px/1.3 var(--fb); color: #${P.mute}; }
+.bh-qby { font: 800 28px/1.2 var(--fb); color: #${P.blue}; } .bh-qro { font: 400 26px/1.3 var(--fb); color: #${P.mute}; }
 .bh-ych { font: 800 32px/1.2 var(--fb); color: #${P.navy}; } .bh-yt { font: 800 36px/1.25 var(--fb); color: #${P.navy}; }
 .bh-cn { font: 800 38px/1.2 var(--fb); color: #${P.navy}; } .bh-cw { font: 800 26px/1.2 var(--fb); color: #${P.blue}; } .bh-cx { font: 400 28px/1.42 var(--fb); color: #${P.ink2}; }
 .bh-mt { font: 800 32px/1.25 var(--fb); color: #${P.navy}; }
 .bh-bigv { font: 400 128px/1 'Anton', sans-serif; color: #${P.blue}; } .bh-bigl { font: 700 32px/1.3 var(--fb); color: #${P.ink2}; }
-.bh-sot { font: 800 22px/1.2 var(--fb); letter-spacing: .1em; text-transform: uppercase; color: #${P.blue}; } .bh-sot2 { font: 700 24px/1.2 var(--fb); color: #${P.mute}; }
+.bh-sot { font: 800 24px/1.2 var(--fb); letter-spacing: .1em; text-transform: uppercase; color: #${P.blue}; } .bh-sot2 { font: 700 26px/1.2 var(--fb); color: #${P.mute}; }
 .bh-oso { font: 400 40px/1 'Anton', sans-serif; }
 .bh-rn { font: 400 32px/1.2 var(--fb); color: #${P.ink2}; } .bh-rn b { font: 800 56px/1 var(--fb); color: #${P.navy}; margin-right: 18px; }
-.bh-tick { font: 700 26px/1 var(--fb); color: #${P.mute}; }
-.bh-refh { font: 800 22px/1.25 var(--fb); letter-spacing: .06em; text-transform: uppercase; color: #${P.blue}; } .bh-reft { font: 400 28px/1.45 var(--fb); color: #${P.ink}; } .bh-reft em { color: #${P.ink}; font-weight: 800; background: #ffe7a3; }
-.bh-whon { font: 800 34px/1.1 var(--fb); color: #${P.navy}; } .bh-whos { font: 400 24px/1.3 var(--fb); color: #${P.ink2}; }
-.bh-dw { font: 800 40px/1 var(--fb); } .bh-de { font: 400 26px/1.32 var(--fb); color: #${P.ink2}; } .bh-dl { font: 800 26px/1.2 var(--fb); }
+.bh-tick { font: 700 28px/1 var(--fb); color: #${P.mute}; }
+.bh-refh { font: 700 24px/1.25 var(--fb); letter-spacing: .01em; color: #${P.blue}; } .bh-reft { font: 400 30px/1.45 var(--fb); color: #${P.ink}; } .bh-reft em { color: #${P.ink}; font-weight: 800; background: #ffe7a3; }
+.bh-whon { font: 800 34px/1.1 var(--fb); color: #${P.navy}; } .bh-whos { font: 400 26px/1.3 var(--fb); color: #${P.ink2}; }
+.bh-dw { font: 800 40px/1 var(--fb); } .bh-de { font: 400 28px/1.32 var(--fb); color: #${P.ink2}; } .bh-dl { font: 800 28px/1.2 var(--fb); }
 .bh-fn { font: 800 34px/1.15 var(--fb); color: #${P.navy}; } .bh-fr { font: 800 22px/1.2 var(--fb); letter-spacing: .08em; text-transform: uppercase; } .bh-fc { font: 400 27px/1.36 var(--fb); color: #${P.ink}; } .bh-fc em { color: #${P.goldD}; font-weight: 800; }
-.bh-ftt { font: 400 34px/1.3 var(--fb); color: #${P.ink2}; } .bh-ftt b { font-weight: 800; color: #${P.navy}; } .bh-hnote { font: 400 24px/1.3 var(--fb); color: #${P.ink2}; }
+.bh-ftt { font: 400 34px/1.3 var(--fb); color: #${P.ink2}; } .bh-ftt b { font-weight: 800; color: #${P.navy}; } .bh-hnote { font: 400 28px/1.3 var(--fb); color: #${P.ink2}; }
 .bh-ctp { font: 700 32px/1.2 var(--fb); color: #${P.ink2}; } .bh-ctp b { font: 400 80px/1 'Anton', sans-serif; color: #${P.blue}; margin-right: 12px; }
 .bh-cte { font: 400 32px/1.35 var(--fb); color: #${P.ink}; } .bh-cte em { color: #${P.blue}; font-weight: 800; }
-.bh-cu { font: 700 26px/1.2 var(--fb); color: #${P.mute}; } .bh-cy { font: 700 26px/1 var(--fb); color: #${P.ink2}; } .bh-cv { font: 400 40px/1 'Anton', sans-serif; }
-.bh-bl { font: 800 24px/1 var(--fb); letter-spacing: .1em; color: #${P.redD}; }
-.bh-wn { font: 800 24px/1.25 var(--fb); } .bh-wt { font: 400 26px/1.3 var(--fb); color: #${P.ink2}; } .bh-wt b { font-weight: 800; color: #${P.navy}; }
-.bh-iv { font: 400 120px/1 'Anton', sans-serif; } .bh-iu { font: 800 32px/1.2 var(--fb); } .bh-it { font: 400 27px/1.38 var(--fb); }
+.bh-cu { font: 700 28px/1.2 var(--fb); color: #${P.mute}; } .bh-cy { font: 700 28px/1 var(--fb); color: #${P.ink2}; } .bh-cv { font: 400 40px/1 'Anton', sans-serif; }
+.bh-bl { font: 800 26px/1 var(--fb); letter-spacing: .1em; color: #${P.redD}; }
+.bh-wn { font: 800 28px/1.25 var(--fb); } .bh-wt { font: 400 28px/1.3 var(--fb); color: #${P.ink2}; } .bh-wt b { font-weight: 800; color: #${P.navy}; }
+.bh-iv { font: 400 120px/1 'Anton', sans-serif; } .bh-iu { font: 800 32px/1.2 var(--fb); } .bh-it { font: 400 28px/1.38 var(--fb); }
 .bh-pv { font: 400 140px/1 'Anton', sans-serif; } .bh-pl { font: 700 30px/1.3 var(--fb); }
-.bh-qy { font: 400 34px/1 'Anton', sans-serif; } .bh-qv { font: 400 34px/1.1 'Anton', sans-serif; } .bh-qn { font: 400 26px/1.3 var(--fb); color: #${P.ink2}; } .bh-qn b { font-weight: 800; color: #${P.navy}; }
+.bh-qy { font: 400 34px/1 'Anton', sans-serif; } .bh-qv { font: 400 34px/1.1 'Anton', sans-serif; } .bh-qn { font: 400 28px/1.3 var(--fb); color: #${P.ink2}; } .bh-qn b { font-weight: 800; color: #${P.navy}; }
 .bh-hero { font: 400 300px/1 'Anton', sans-serif; color: #${P.red}; } .bh-heu { font: 800 36px/1.25 var(--fb); color: #${P.navy}; } .bh-rt { font: 700 30px/1.3 var(--fb); color: #${P.ink}; } .bh-rnum { font: 400 54px/1 'Anton', sans-serif; }
 .bh-daut { font: 800 28px/1.2 var(--fb); color: #${P.red}; text-transform: uppercase; }
-.bh-ctg { font: 800 22px/1.2 var(--fb); letter-spacing: .1em; text-transform: uppercase; color: #${P.blue}; } .bh-ctx { font: 800 30px/1.3 var(--fb); color: #${P.navy}; }
-.bh-mkn { font: 700 22px/1.2 var(--fb); color: #${P.mute}; }
-.bh-dmt { font: 800 48px/1.15 var(--fb); color: #${P.red}; text-transform: uppercase; } .bh-dms { font: 800 26px/1.2 var(--fb); color: #${P.red}; }
+.bh-ctg { font: 800 24px/1.2 var(--fb); letter-spacing: .1em; text-transform: uppercase; color: #${P.blue}; } .bh-ctx { font: 800 30px/1.3 var(--fb); color: #${P.navy}; }
+.bh-mkn { font: 700 24px/1.2 var(--fb); color: #${P.mute}; }
+.bh-dmt { font: 800 48px/1.15 var(--fb); color: #${P.red}; text-transform: uppercase; } .bh-dms { font: 800 28px/1.2 var(--fb); color: #${P.red}; }
 .bh-kt { font: 700 30px/1.3 var(--fb); color: #${P.ink}; }
-.bh-dv { font: 400 104px/1 'Anton', sans-serif; color: #${P.blue}; } .bh-dh { font: 800 30px/1.2 var(--fb); color: #${P.navy}; } .bh-dt { font: 400 26px/1.3 var(--fb); color: #${P.ink2}; }
+.bh-dv { font: 400 104px/1 'Anton', sans-serif; color: #${P.blue}; } .bh-dh { font: 800 32px/1.2 var(--fb); color: #${P.navy}; } .bh-dt { font: 400 28px/1.3 var(--fb); color: #${P.ink2}; }
 .bh-hn { font: 800 40px/1.15 var(--fb); } .bh-hw { font: 800 27px/1.25 var(--fb); } .bh-hw i { font-style: normal; color: #${P.mute}; font-weight: 400; } .bh-hd { font: 400 28px/1.4 var(--fb); color: #${P.ink2}; }
 .bh-opl { font: 400 64px/1 'Anton', sans-serif; color: #ffffff; } .bh-opl2 { font: 400 72px/1 'Anton', sans-serif; } .bh-opt { font: 800 38px/1.2 var(--fb); color: #${P.navy}; }
-.bh-th { font: 800 20px/1.2 var(--fb); letter-spacing: .1em; text-transform: uppercase; color: #${P.ink2}; }
-.bh-5n { font: 800 32px/1.25 var(--fb); } .bh-5c { font: 400 26px/1.35 var(--fb); color: #${P.ink}; } .bh-5c em { font-weight: 800; color: #${P.goldD}; }
-.bh-tabt { font: 800 22px/1.2 var(--fb); letter-spacing: .02em; }
+.bh-th { font: 800 24px/1.2 var(--fb); letter-spacing: .1em; text-transform: uppercase; color: #${P.ink2}; }
+.bh-5n { font: 800 32px/1.25 var(--fb); } .bh-5c { font: 400 28px/1.35 var(--fb); color: #${P.ink}; } .bh-5c em { font-weight: 800; color: #${P.goldD}; }
+.bh-tabt { font: 800 24px/1.2 var(--fb); letter-spacing: .02em; }
 .bh-qd { font: 400 112px/1.05 'Anton', sans-serif; text-transform: uppercase; } .bh-qx { font: 400 36px/1.45 var(--fb); color: #${P.ink}; } .bh-qx em { color: #${P.blue}; font-weight: 800; }
-.bh-an { font: 400 96px/1 'Anton', sans-serif; color: #${P.sky2}; } .bh-aq { font: 700 26px/1.3 var(--fb); color: #${P.mute}; } .bh-aa { font: 800 32px/1.32 var(--fb); color: #${P.navy}; } .bh-aa em { color: #${P.blue}; }
+.bh-an { font: 400 96px/1 'Anton', sans-serif; color: #${P.sky2}; } .bh-aq { font: 700 28px/1.3 var(--fb); color: #${P.mute}; } .bh-aa { font: 800 32px/1.32 var(--fb); color: #${P.navy}; } .bh-aa em { color: #${P.blue}; }
 .bh-vd { font: 400 34px/1.3 var(--fb); } .bh-vd b { font-weight: 800; color: #ffd76a; margin-right: 8px; }
 .bh-gh { font: 400 128px/1.06 'Anton', sans-serif; text-transform: uppercase; color: #072a6b; } .bh-gh em { color: #${P.blue}; }
 .bh-gn { font: 400 130px/1 'Anton', sans-serif; } .bh-gt { font: 700 30px/1.3 var(--fb); }`;

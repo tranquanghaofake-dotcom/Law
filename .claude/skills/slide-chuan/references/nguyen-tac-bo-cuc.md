@@ -14,6 +14,9 @@ Câu hỏi kiểm tra trước khi thêm bất kỳ thứ gì vào engine: **"C�
 | 6 | **Một điểm nhấn, kết luận ở chỗ cố định** | Người nghe biết nhìn đâu; câu chốt ở cùng một chỗ mọi slide → thành thói quen đọc | `hub`: một tâm, các ý toả ra (icon vắt mép phía tâm); `takeaway` → dải "Ghi nhớ" ở đáy (chỉ ở bố cục dùng hàng chú thích chung); `focus` của các bố cục (có sẵn) |
 | 7 | **Nhịp** — dày/thưa, trái/phải, sáng/tối xen nhau; phần tử chung trượt qua slide | Ba slide liền nhau cùng dáng hoặc cùng dày chữ làm người nghe mất tập trung | `validate.js` gợi ý khi 3 slide liền nhau cùng type hoặc cùng > 520 ký tự; Morph giữa slide kề nhau có cùng vật (`hinh/tu_gan.js`, cảnh `hinh/canh.js`) |
 
+## Cỡ chữ đọc được khi chiếu (11/2026)
+1 px ở khung 1920 = 0,5 pt PowerPoint. Chữ thân (mô tả, ô bảng, chú thích biểu đồ) **≥ 28 px (14 pt)**, chữ thân chính ≥ 30–32 px; nhãn, dòng căn cứ, dòng nguồn **≥ 24 px (12 pt)**; chỉ số trang, dải đầu trang, dòng ghi công ảnh được nhỏ hơn. Nhãn dài (căn cứ "Quy định: điểm đ khoản 1 Điều 70") viết thường — in hoa cả câu dài khó đọc; nhãn 1–3 tiếng ("CHẾ ĐỘ", "CÂU HỎI CỦA BÀI") giữ in hoa. Không đủ chỗ thì rút chữ hoặc nới khung, không thu nhỏ chữ. Bộ `bh*` được giữ bằng `tests/co_chu.test.js`; đo nhanh bất kỳ deck nào: đếm cỡ chữ của từng nút chữ trên HTML đã dựng (cách làm trong test đó). Chữ lan khỏi nền thẻ thì bộ kiểm tràn / đè KHÔNG bắt — phải nhìn ảnh từng slide.
+
 ## 8. Mỗi chi tiết một lý do (11/2026)
 "Kể cả chi tiết nhỏ nhất đặt xuống cũng phải có logic và ý nghĩa" (người dùng, bộ BHXH). Cùng gốc với Robin Williams — *"Nothing should be placed on the page arbitrarily"* — và Tufte — khác biệt nhỏ nhất vẫn đủ thấy (mỗi khác biệt về màu, cỡ, dáng phải nói một điều). Một chi tiết chỉ được giữ khi nói được nó thuộc **một trong bốn loại nghĩa**:
 1. **Chở dữ liệu** — đếm được, đo được (1 cuốn sổ = 1 triệu người, 1 ô = 1 năm đóng, chiều dài thanh = tỷ lệ).

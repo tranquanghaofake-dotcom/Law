@@ -39,7 +39,7 @@
   const TU_GHEP = ("hệ thống|lao động|bảo hiểm|xã hội|an sinh|y tế|thất nghiệp|hưu trí|tử tuất|ốm đau|thai sản|lương hưu|tiền lương|thu nhập|trợ cấp|một lần|"
     + "doanh nghiệp|hợp đồng|pháp luật|quy định|điều kiện|nghĩa vụ|quyền lợi|giao dịch|vô hiệu|tài sản|nhà nước|cơ quan|toà án|tòa án|bản án|thế chấp|"
     + "đất đai|chứng nhận|công ty|cổ đông|cổ phần|biểu quyết|nghị quyết|nghị định|thông tư|hiệu lực|thực trạng|kiến nghị|giải pháp|chế độ|bình quân|"
-    + "thời gian|thời hạn|người dân|việc làm|làm việc|chính sách|quỹ bảo|tham gia|bắt buộc|tự nguyện|phạm vi|đối tượng|hình sự|dân sự|hành chính|"
+    + "thời gian|thời hạn|người dân|việc làm|làm việc|đi lùi|chính sách|quỹ bảo|tham gia|bắt buộc|tự nguyện|phạm vi|đối tượng|hình sự|dân sự|hành chính|"
     + "trách nhiệm|bồi thường|thiệt hại|vi phạm|xử phạt|tố tụng|khởi kiện|ngân hàng|tín dụng|hoá đơn|hóa đơn|thuế suất|quốc tế|điều ước|lãnh thổ|"
     + "thông qua|giao kết|chấm dứt|sử dụng|ngay tình|chứng cứ|xét xử|sơ thẩm|phúc thẩm|giám đốc|thi hành|án lệ|thời hiệu|khởi tố|điều tra|truy tố|bị cáo|bị hại|"
     + "kinh doanh|doanh thu|lợi nhuận|phụ cấp|ngân sách|quốc hội|chính phủ|viện kiểm sát|người mua|người bán|đăng ký|giấy phép|công chứng|chứng thực").split("|");
