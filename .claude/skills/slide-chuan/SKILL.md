@@ -222,6 +222,7 @@ File nhúng bốn họ font: `Anton` (tiêu đề), `Be Vietnam Pro` (chữ thư
 cd <skill> && npm install
 ```
 `<skill>` là thư mục chứa file này; mọi lệnh `node hinh/…`, `python3 scripts/…` tính từ đó. Thư mục skill chỉ-đọc (claude.ai, skill đồng bộ từ tài khoản) → `cp -r <skill> <thư mục làm việc>/slide-chuan`, rồi `npm install` và chạy từ bản sao. `deck.json`, `prep.json`, ảnh và file .pptx luôn nằm ở thư mục deck của người dùng.
+**Gửi skill cho người khác / tải lên claude.ai**: `python3 scripts/dong_goi.py` → `slide-chuan.zip` (claude.ai nhận tối đa 200 file; script gộp icon, vật 3D thành kho JSON, bỏ `tests/`, chỉ lấy file đã commit, vượt 200 thì dừng). Không zip tay bằng `git archive` / `zip -r`.
 Cần Node 18+, Playwright + Chromium (`npm install playwright && npx playwright install chromium`, hoặc `PW_CHROMIUM=<đường dẫn>`). Soát cần LibreOffice + poppler (`pdftoppm`) + Python Pillow, python-pptx; thiếu thì vẫn dựng được PPTX. Kiểm skill: `npm test`.
 
 ## Các script (thư mục `scripts/`)
