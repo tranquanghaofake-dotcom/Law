@@ -12,8 +12,8 @@ const deck = (meta, slides) => ({ meta: { short: "Thử", ...meta }, slides: sli
   { type: "cards", title: "Ba thẻ thử nghiệm", items: [{ name: "A", desc: "a" }, { name: "B", desc: "b" }, { name: "C", desc: "c" }] },
   { type: "statement", title: "Một phát hiện", stats: [{ label: "x", value: "1" }] }, { type: "end", title: "Cảm ơn" }] });
 
-test("13 da đủ trường bắt buộc; đồ vật và hình lớn của da đều có thật", () => {
-  assert.equal(DA.NAMES.length, 13);
+test("14 da đủ trường bắt buộc; đồ vật và hình lớn của da đều có thật", () => {
+  assert.equal(DA.NAMES.length, 14);
   for (const [ten, c] of Object.entries(DA.DA)) {
     for (const k of ["mon", "fits", "ink", "acc", "page", "muted", "line", "bad", "good", "gold", "nen", "khung", "the", "nhan", "so", "tienDo", "vat", "chuyen", "art"]) assert.ok(c[k] != null, `${ten}.${k}`);
     for (const v of c.vat) assert.ok(PROPS[v], `${ten}: đồ vật "${v}" không có trong hinh/do_vat.js`);
@@ -30,6 +30,7 @@ test("chọn da: meta.da → bộ hình → meta.kit cũ → đề tài → meta
   assert.equal(DA.chonDa(deck({ kit: "glass" })).ten, "kinh");
   assert.equal(DA.chonDa(deck({ kit: "so-bhxh" })).ten, "so-bhxh");
   assert.equal(DA.chonDa(deck({ title: "Tình hình triển khai BHXH bắt buộc" })).ten, "so-bhxh");
+  assert.equal(DA.chonDa(deck({ title: "Chương 3: Bảo hiểm thương mại" })).ten, "hop-dong-bh");
   assert.equal(DA.chonDa(deck({ kind: "lecture" })).ten, "giay");
   assert.equal(DA.chonDa(deck({})).ten, "ho-so");
 });

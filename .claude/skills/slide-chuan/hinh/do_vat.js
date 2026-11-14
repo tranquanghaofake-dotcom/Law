@@ -50,6 +50,14 @@ const PROPS = {
   // vòng kính (xuyến dẹt)
   ring: (P) => ({ ratio: 1.6, svg: svg(320, 200, `<ellipse cx="160" cy="100" rx="130" ry="62" fill="none" stroke="url(#rg)" stroke-width="34"/>`,
     `<linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".5" stop-color="#${P.accLight}"/><stop offset="1" stop-color="#${P.acc}"/></linearGradient>`) }),
+  // ---- da hop-dong-bh (bảo hiểm thương mại, 11/2026) ----
+  // ô che mở: tán 6 múi xen màu nhấn / vàng, cán cong — vật chủ đạo "chuyển giao rủi ro"
+  umbrella: (P) => { const m = [0, 1, 2, 3, 4, 5].map(i => { const x0 = 20 + i * 40, x1 = x0 + 40; return `<path d="M120 30 L${x0} 120 Q${x0 + 20} 104 ${x1} 120 Z" fill="#${i % 2 ? P.gold : P.acc}"/>`; }).join("");
+    return { ratio: 1, svg: svg(240, 240, `<g transform="rotate(-10 120 120)">${m}<path d="M120 30 Q60 34 20 120 M120 30 Q180 34 260 120" fill="none" stroke="#${P.ink}" stroke-opacity=".15" stroke-width="2"/><line x1="120" y1="18" x2="120" y2="30" stroke="#${P.ink}" stroke-width="6" stroke-linecap="round"/>`
+      + `<path d="M120 120 L120 200 Q120 222 100 222 Q84 222 84 206" fill="none" stroke="#${P.ink}" stroke-width="8" stroke-linecap="round"/></g>`) }; },
+  // khiên có dấu chọn trống (không chữ, không biểu trưng): phạm vi / trách nhiệm bảo hiểm
+  shield: (P) => ({ ratio: 0.85, svg: svg(204, 240, `<path d="M102 16 L184 46 L184 118 Q184 190 102 226 Q20 190 20 118 L20 46 Z" fill="#${P.acc}"/><path d="M102 16 L184 46 L184 118 Q184 190 102 226 Z" fill="#000" fill-opacity=".12"/>`
+    + `<path d="M102 40 L162 62 L162 118 Q162 172 102 200 Q42 172 42 118 L42 62 Z" fill="none" stroke="#${P.gold}" stroke-width="6"/><path d="M70 118 L94 142 L138 96" fill="none" stroke="#fff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>`) }),
 };
 
 module.exports = { PROPS };

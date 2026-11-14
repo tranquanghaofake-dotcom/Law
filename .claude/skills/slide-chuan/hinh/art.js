@@ -81,6 +81,16 @@ ${[...Array(12).keys()].map(i => { const a = i * Math.PI / 6, r1 = i % 3 ? 100 :
 <line x1="160" y1="150" x2="160" y2="78" stroke="#${c}" stroke-width="10"/><line x1="160" y1="150" x2="214" y2="176" stroke="#${s}" stroke-width="8"/><circle cx="160" cy="150" r="12" fill="#${c}"/>
 ${[0, 1, 2, 3, 4].map(i => `<ellipse cx="330" cy="${282 - i * 26}" rx="62" ry="20" fill="#${s}" fill-opacity="${0.55 + i * 0.08}" stroke="#${s}" stroke-width="4"/>`).join("")}
 <ellipse cx="330" cy="178" rx="62" ry="20" fill="#FFFFFF" fill-opacity=".35"/></svg>`,
+  // ô che lớn trùm ba đối tượng bảo hiểm thương mại: nhà (tài sản) · người (con người) · ô tô (trách nhiệm dân sự với người thứ ba); hạt mưa = rủi ro
+  umbrella: (c, s) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320" stroke-linejoin="round" stroke-linecap="round">
+${[[40, 20], [92, 46], [330, 30], [380, 60], [20, 90], [400, 120]].map(([x, y]) => `<line x1="${x}" y1="${y}" x2="${x - 8}" y2="${y + 22}" stroke="#${s}" stroke-width="6" stroke-opacity=".6"/>`).join("")}
+<path d="M210 40 Q90 44 50 150 Q80 128 110 150 Q140 128 170 150 Q190 136 210 150 Q230 136 250 150 Q280 128 310 150 Q340 128 370 150 Q330 44 210 40 Z" fill="#${c}"/>
+<path d="M210 40 Q170 80 170 150 M210 40 Q250 80 250 150 M210 40 L210 150" fill="none" stroke="#FFFFFF" stroke-opacity=".35" stroke-width="4"/>
+<line x1="210" y1="26" x2="210" y2="40" stroke="#${c}" stroke-width="8"/><line x1="210" y1="150" x2="210" y2="300" stroke="#${c}" stroke-width="7"/>
+<g fill="none" stroke="#${c}" stroke-width="6"><path d="M86 250 L86 206 L118 182 L150 206 L150 250 Z"/><rect x="108" y="222" width="20" height="28"/>
+<circle cx="250" cy="196" r="14"/><path d="M228 250 Q228 220 250 216 Q272 220 272 250"/>
+<path d="M300 236 L308 214 L352 214 L362 236 Z"/><rect x="292" y="236" width="80" height="18" rx="6"/><circle cx="312" cy="258" r="8"/><circle cx="352" cy="258" r="8"/></g>
+<line x1="60" y1="270" x2="380" y2="270" stroke="#${c}" stroke-width="4" stroke-opacity=".4"/></svg>`,
 };
 // ---------- cảnh minh hoạ lớn & hoạ tiết nền (vẽ hoàn toàn bằng code) ----------
 // justice: vòng tròn nền + chồng sách + búa toà + cán cân — "hero" cho bìa / chuyển phần / kết luận.

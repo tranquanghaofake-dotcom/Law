@@ -25,6 +25,7 @@ Một khối trong `DA` của `hinh/da.js`: `mon`, `fits` (từ khoá đề tài
 ## Bảng môn → da (đã nghiên cứu)
 | Môn / đề tài | Da | Vật chủ đạo → thể hiện | Vật phụ |
 |---|---|---|---|
+| Bảo hiểm thương mại, kinh doanh bảo hiểm, tái bảo hiểm (BNK405, 11/2026) | `hop-dong-bh` | Ô che rủi ro (mép tán vòm) → nền hàng vòm mờ, khung mép tán ô ở đỉnh, thẻ có dải vòm + khiên vàng (= trong phạm vi bảo hiểm); hình lớn: ô che nhà · người · xe (BHTS · BHCN · TNDS) | khiên, xu |
 | Luật An sinh xã hội, BHXH, BHYT, BHTN | `so-bhxh` | Sổ BHXH (bìa xanh lá nhạt, khung viền đôi; tờ rời là bảng "quá trình đóng") → trang xanh nhạt, khung viền đôi, thẻ = tờ rời; khối chính `sheet` | sổ, xu, con dấu |
 | Luật Lao động (tiền lương, thời giờ làm việc, kỷ luật) | `bang-cong` | Bảng chấm công (lưới ô ngày, ô Chủ nhật đỏ) → nền ô lịch, thẻ chấm công; khối chính `calendar` | thẻ nhân viên, máy tính |
 | Thương mại quốc tế, vận tải, hải quan, logistics | `cang-bien` | Container (tôn gợn, gỉ sét / navy, băng cảnh báo vàng – đen) → nền tôn gợn, băng cảnh báo, thẻ container; khối chính `riskbar` | thùng hàng, cột hàng |

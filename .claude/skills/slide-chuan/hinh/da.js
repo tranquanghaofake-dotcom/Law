@@ -22,6 +22,10 @@ const b64 = (svg) => `url("data:image/svg+xml;base64,${Buffer.from(svg, "utf8").
 // gold: điểm nhấn trên nền tối (số lớn, cụm nhấn); nen: nền trang; khung: khung toàn slide; the: vỏ thẻ; nhan: kiểu nhãn kicker;
 // so: ô số (cell | square | round); tienDo: thanh tiến độ; vat: đồ vật tiền cảnh; chuyen: kiểu hiện thẻ; art: hình lớn bìa / chương / kết
 const DA = {
+  // đơn / giấy chứng nhận bảo hiểm thương mại: ô che (vật chủ đạo) + khiên (phạm vi bảo hiểm) + xu (phí); đặt trước so-bhxh vì fits của so-bhxh có "bảo hiểm"
+  "hop-dong-bh": { mon: "Đơn bảo hiểm / ô che rủi ro (Bảo hiểm thương mại, kinh doanh bảo hiểm, tái bảo hiểm)", fits: ["bảo hiểm thương mại", "kinh doanh bảo hiểm", "hợp đồng bảo hiểm", "tái bảo hiểm", "doanh nghiệp bảo hiểm", "bảo hiểm nhân thọ", "phi nhân thọ", "bhtm", "bảo hiểm tài sản", "bảo hiểm trách nhiệm", "nghiệp vụ bảo hiểm"],
+    ink: "13262B", acc: "0E6E66", page: "F3F8F7", muted: "4A5E61", line: "B5D3CF", bad: "B0302A", good: "0E6E66", gold: "F0A23B",
+    nen: "canopy", khung: "policy", the: "policy", nhan: "pill", so: "round", tienDo: "canopy", vat: ["umbrella", "shield", "coins"], chuyen: "pop", art: "umbrella" },
   "so-bhxh": { mon: "Sổ BHXH (An sinh xã hội, BHXH, BHYT, BHTN, lương hưu)", fits: ["bảo hiểm", "bhxh", "bhyt", "bhtn", "an sinh", "lương hưu", "hưu trí", "thai sản", "ốm đau", "tử tuất", "trợ cấp"],
     ink: "1E2A22", acc: "2F6B3F", page: "F3F8F1", muted: "4E5F53", line: "9CC29A", bad: "9A3324", good: "2F6B3F", gold: "D9AE3A",
     nen: "sage", khung: "double", the: "ledger", nhan: "outline", so: "cell", tienDo: "stamps", vat: ["booklet", "coins", "stamp"], chuyen: "stamp", art: "passbook" },
@@ -97,6 +101,8 @@ function nenSvg(kind, c, toi) {
   else if (kind === "lined") for (let y = 36; y < 900; y += 36) b += `<line x1="0" y1="${y}" x2="1600" y2="${y}" stroke="#${toi ? "FFFFFF" : c.muted}" stroke-opacity="${0.15 * o}" stroke-dasharray="1 5"/>`;
   else if (kind === "ruled") { for (let y = 64; y < 900; y += 32) b += `<line x1="0" y1="${y}" x2="1600" y2="${y}" stroke="#${A}" stroke-opacity="${0.1 * o}"/>`; b += `<line x1="96" y1="0" x2="96" y2="900" stroke="#${c.bad}" stroke-opacity="${0.35 * o}" stroke-width="2"/>`; }
   else if (kind === "sage") b = `<rect x="0" y="0" width="1600" height="900" fill="url(#g)"/>` + Array.from({ length: 9 }, (_, i) => `<line x1="0" y1="${100 * i + 50}" x2="1600" y2="${100 * i + 50}" stroke="#${A}" stroke-opacity="${0.035 * o}"/>`).join("");
+  else if (kind === "canopy") { for (let y = 70; y < 900; y += 90) { let d0 = `M0 ${y}`; for (let x = 0; x < 1600; x += 80) d0 += ` Q${x + 40} ${y + 26} ${x + 80} ${y}`; b += `<path d="${d0}" fill="none" stroke="#${A}" stroke-opacity="${0.07 * o}" stroke-width="2"/>`; }
+    b += `<g transform="translate(1390 780)" fill="#${A}" fill-opacity="${0.05 * o}"><path d="M-260 0 A260 230 0 0 1 260 0 Q217 -30 173 0 Q130 -30 87 0 Q43 -30 0 0 Q-43 -30 -87 0 Q-130 -30 -173 0 Q-217 -30 -260 0 Z"/></g>`; }
   else if (kind === "grain") b = `<rect width="1600" height="900" filter="url(#n)" opacity="${toi ? 0.18 : 0.32}"/>`;
   else if (kind === "glow") b = `<circle cx="1420" cy="80" r="560" fill="url(#q)"/><circle cx="120" cy="860" r="460" fill="url(#q)"/>`;
   else return "";
@@ -121,6 +127,8 @@ function khungSvg(kind, c, toi) {
   else if (kind === "seal") b = `<g transform="translate(${1600 - 0.55 * P} ${900 - 0.2 * P}) rotate(-35)"><rect x="-150" y="-13" width="300" height="26" fill="#${B}" fill-opacity=".8"/><line x1="-150" y1="-9" x2="150" y2="-9" stroke="#fff" stroke-dasharray="6 5" stroke-opacity=".8"/><line x1="-150" y1="9" x2="150" y2="9" stroke="#fff" stroke-dasharray="6 5" stroke-opacity=".8"/></g><line x1="${0.14 * P}" y1="0" x2="${0.14 * P}" y2="900" stroke="#${B}" stroke-opacity=".35" stroke-width="2"/>`;
   else if (kind === "daystrip") { const x0 = 0.6 * P, cw = (1600 - 1.2 * P) / 31, y = 0.04 * P, h = 0.11 * P; for (let i = 0; i < 31; i++) b += `<rect x="${x0 + i * cw + 1}" y="${y}" width="${cw - 2}" height="${h}" fill="#${i % 7 === 6 ? B : A}" fill-opacity="${i % 7 === 6 ? 0.55 : 0.18}"/>`; }
   else if (kind === "tabs") { const y = 900 - 0.13 * P; for (let i = 0; i < 4; i++) b += `<path d="M${1100 + i * 115} 900 L${1106 + i * 115} ${y} L${1196 + i * 115} ${y} L${1202 + i * 115} 900 Z" fill="#${i === 0 ? A : c.line}" fill-opacity="${i === 0 ? 0.85 : 0.9}"/>`; }
+  else if (kind === "policy") { const m = 0.14 * P, y = 0.07 * P; let d0 = `M0 0 H1600 V${y}`; for (let x = 1600; x > 0; x -= 40) d0 += ` Q${x - 20} ${y + 14} ${x - 40} ${y}`;
+    b = `<path d="${d0} Z" fill="#${A}" fill-opacity="${toi ? 0.55 : 0.9}"/><rect x="${m}" y="${m + 10}" width="${1600 - 2 * m}" height="${900 - 2 * m - 10}" rx="18" fill="none" stroke="#${A}" stroke-opacity="${toi ? 0.5 : 0.45}" stroke-width="1.6"/>`; }
   else if (kind === "margin") b = `<line x1="${0.5 * P}" y1="0" x2="${0.5 * P}" y2="900" stroke="#${B}" stroke-opacity=".45" stroke-width="2"/><line x1="${0.5 * P + 6}" y1="0" x2="${0.5 * P + 6}" y2="900" stroke="#${B}" stroke-opacity=".3" stroke-width="1"/>`;
   else return "";
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="none">${b}</svg>`;
@@ -162,6 +170,9 @@ function theCss(kind, c, S0) {
       ${S} .card::after { content: ""; position: absolute; left: 30px; right: 18px; bottom: 12px; border-bottom: 2px dotted ${rgba(c.muted, 0.45)}; }`,
     file: `${S} .card { background: #FFFDF7; border: 1.5px solid #${L}; box-shadow: 10px 10px 0 #${mix(c.page, c.ink, 0.06)}, 10px 10px 0 1.5px #${L}, ${sh}; }
       ${S} .card::after { content: ""; position: absolute; right: 26px; top: -22px; width: 26px; height: 70px; border: 5px solid #8C96A3; border-radius: 13px; border-bottom-color: transparent; }`,
+    policy: `${S} .card { border: 1.5px solid #${L}; border-radius: 14px; box-shadow: inset 0 10px 0 #${A}, ${sh}; }
+      ${S} .card::before { content: ""; position: absolute; left: 0; right: 0; top: 10px; height: 8px; background: radial-gradient(circle at 10px 0, #${A} 9px, transparent 10px) 0 0 / 20px 8px repeat-x; }
+      ${S} .card::after { content: ""; position: absolute; right: 16px; top: -12px; width: 30px; height: 36px; background: #${c.gold}; clip-path: polygon(50% 0, 100% 16%, 100% 52%, 50% 100%, 0 52%, 0 16%); }`,
     tape: `${S} .card { border: none; box-shadow: 0 12px 26px rgba(0,0,0,.1); }
       ${S} .card::before { content: ""; position: absolute; left: calc(50% - 70px); top: -16px; width: 140px; height: 34px; background: ${rgba(c.gold, 0.55)}; rotate: -3deg; }`,
     glass: `${S} .card { background: rgba(255,255,255,.74); border: 2px solid ${rgba(A, 0.22)}; border-radius: 24px; box-shadow: 0 18px 36px ${rgba(A, 0.16)}, inset 0 1px 0 #fff; }`,
@@ -198,6 +209,7 @@ function tienDoCss(kind, c, S) {
     balance: `height: 18px; background: repeating-linear-gradient(90deg, #${A} 0 18px, transparent 18px 26px); clip-path: polygon(0 70%, 100% 0, 100% 100%, 0 100%);`,
     nodes: `height: 14px; background: radial-gradient(circle at 7px 7px, #${A} 6px, transparent 7px) 0 0 / 34px 14px repeat-x, linear-gradient(#${A}, #${A}) 0 6px / 100% 2px no-repeat;`,
     folio: `height: 12px; background: repeating-linear-gradient(90deg, #${A} 0 40px, ${rgba(A, 0.45)} 40px 44px);`,
+    canopy: `height: 14px; background: radial-gradient(circle at 12px 0, #${A} 11px, transparent 12px) 0 0 / 24px 14px repeat-x;`,
     plain: "",
   };
   return P[kind] ? `${S} .prog { ${P[kind]} }` : "";
@@ -264,9 +276,10 @@ const VAT_Y = { coins: /tiền|đồng|quỹ|lương|thuế|phí|giá|triệu|t�
   stamp: /điều\s*\d|khoản|luật|nghị định|nghị quyết|quyết định|xử phạt|thủ tục|cơ quan|văn bản|bản án/i, booklet: /sổ|tham gia|đăng ký|người lao động/i,
   lens: /chứng cứ|xem xét|tình tiết|vụ án|giám định/i, pen: /ký|hợp đồng|cam kết/i, clip: /hồ sơ|giấy tờ|tài liệu/i, bankcard: /thẻ|thanh toán|ngân hàng|tài khoản|tín dụng/i,
   bars: /tăng|giảm|số liệu|tỷ trọng|thống kê/i, crate: /hàng hoá|hàng hóa|vận tải|xuất khẩu|nhập khẩu|cảng|container/i, ruler: /diện tích|kích thước|ranh giới|thửa|mét/i,
-  pencil: /bài tập|ôn tập|ghi nhớ|học/i, pin: /địa điểm|nơi|tỉnh|bản đồ/i, orb: /quốc tế|toàn cầu|thế giới|điều ước/i };
+  pencil: /bài tập|ôn tập|ghi nhớ|học/i, pin: /địa điểm|nơi|tỉnh|bản đồ/i, orb: /quốc tế|toàn cầu|thế giới|điều ước/i,
+  umbrella: /rủi ro|tổn thất|sự kiện bảo hiểm|chuyển giao|bảo vệ/i, shield: /phạm vi|trách nhiệm|bồi thường|cam kết|trung thực|quyền lợi/i };
 // thứ tự xét theo độ cụ thể của dấu hiệu: trích điều luật > phép tính > tiền > … (một từ chung như "lương" yếu hơn "Điều 64")
-const UU_TIEN = ["stamp", "calculator", "coins", "bankcard", "crate", "ruler", "lens", "booklet", "bars", "clip", "pen", "pin", "orb", "pencil"];
+const UU_TIEN = ["stamp", "calculator", "shield", "coins", "umbrella", "bankcard", "crate", "ruler", "lens", "booklet", "bars", "clip", "pen", "pin", "orb", "pencil"];
 const chonVat = (vat, chu = "") => UU_TIEN.find((v) => vat.includes(v) && VAT_Y[v].test(chu)) || vat[0];
 function phuSlide(html, ten, { type, i, coHinhDan, coAnh, art, chu = "", artCaption = "" }) {
   const c = DA[ten]; if (!c) return html;

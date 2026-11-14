@@ -36,7 +36,7 @@ def _doc_da():
                              cwd=os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."), capture_output=True, text=True, timeout=20).stdout
         return json.loads(out)
     except Exception:
-        return {k: {"mon": k, "fits": []} for k in ["so-bhxh", "bang-cong", "cang-bien", "ban-ve", "hoa-don", "sao-ke", "co-cau", "bien-ban", "ho-so", "giay", "kinh", "bc", "qt"]}
+        return {k: {"mon": k, "fits": []} for k in ["hop-dong-bh", "so-bhxh", "bang-cong", "cang-bien", "ban-ve", "hoa-don", "sao-ke", "co-cau", "bien-ban", "ho-so", "giay", "kinh", "bc", "qt"]}
 DA = _doc_da()
 AUTO_DA = {"case": "ho-so", "lecture": "giay", "report": "kinh"}
 def goi_y_da(topic, kind):

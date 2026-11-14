@@ -4,7 +4,7 @@ Chọn type theo luật "chọn khi / bỏ qua khi → thay bằng": `references
 
 Cấu trúc file:
 ```json
-{ "meta": { "da": "da theo môn — so-bhxh | bang-cong | cang-bien | ban-ve | hoa-don | sao-ke | co-cau | bien-ban | bc | qt | ho-so | giay | kinh | none (xem SKILL.md mục Da theo môn)", "title": "...", "author": "...", "short": "Nhãn góc trên (≤30 ký tự)", "chromeIcon": "FaScaleBalanced",
+{ "meta": { "da": "da theo môn — hop-dong-bh | so-bhxh | bang-cong | cang-bien | ban-ve | hoa-don | sao-ke | co-cau | bien-ban | bc | qt | ho-so | giay | kinh | none (xem SKILL.md mục Da theo môn)", "title": "...", "author": "...", "short": "Nhãn góc trên (≤30 ký tự)", "chromeIcon": "FaScaleBalanced",
             "logo": "logo.png (tuỳ chọn)", "notesFile": "notes.md (tuỳ chọn; các phần cách nhau bởi dòng ---)",
             "motif": "none | cadastral | certificate | landscape | contour | dots | lines | waves | blobs | grid, hoặc mảng 2 tên (hoạ tiết nền — PHẢI hợp chủ đề, xem SKILL.md)",
             "minutes": "thời lượng thuyết trình (phút) — dung.js so số slide + độ dài ghi chú",

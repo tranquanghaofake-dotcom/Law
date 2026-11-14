@@ -37,6 +37,7 @@ Một da đổi CẢ deck: màu, nền, khung slide, vỏ thẻ, kiểu nhãn, �
 
 | `da` | Môn / đề tài | Vật thấy được | Khối hiện ra |
 |---|---|---|---|
+| `hop-dong-bh` | Bảo hiểm thương mại, kinh doanh bảo hiểm, tái bảo hiểm | ô che, khiên, xu; ô che ba đối tượng (nhà · người · xe) | bật ra |
 | `so-bhxh` | An sinh xã hội, BHXH, BHYT, BHTN, lương hưu | sổ, xu, con dấu; hình sổ BHXH | đóng dấu |
 | `bang-cong` | Lao động, tiền lương, thời giờ làm việc | xu, sổ, máy tính; thẻ nhân viên | lật lịch |
 | `cang-bien` | Thương mại quốc tế, vận tải, hải quan, logistics | container, thanh, xu; bến cảng | trượt vào |
