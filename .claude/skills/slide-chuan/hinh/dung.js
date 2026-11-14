@@ -204,7 +204,12 @@ async function dung({ deckPath, outPath, mau, chuyen, soat = false, nhungFont = 
     try { const kq = await require("../scripts/soat_chi_tiet").soat(htmlPath), dong = kq.flatMap((s) => [...s.lech.map((m) => `slide ${s.slide}: ↔ ${m}`), ...s.tuongPhan.map((m) => `slide ${s.slide}: ◐ ${m}`), ...(s.moCoi || []).map((m) => `slide ${s.slide}: ¶ ${m}`), ...(s.cat || []).map((m) => `slide ${s.slide}: ✂ ${m}`)]);
       if (!dong.length) console.log("✓ Soát chi tiết: chữ thẳng hàng (không lệch 4–10 px), tương phản đạt WCAG trên nền thật, không dòng mồ côi, không nét vẽ cắt qua chữ");
       else { console.log(`ℹ Soát chi tiết: ${dong.length} chỗ (scripts/soat_chi_tiet.js — ↔ lệch 4–10 px: canh lại cho thẳng; ◐ tương phản: đậm chữ hoặc làm yên nền sau chữ; ¶ dòng mồ côi: sửa câu hoặc bề rộng hộp; ✂ nét vẽ cắt qua chữ: dời chữ hoặc dời nét)`); for (const m of dong.slice(0, 15)) console.log(`  ${m}`); if (dong.length > 15) console.log(`  … và ${dong.length - 15} chỗ nữa`); } }
-    catch (e) { console.log(`ℹ không chạy được soát chi tiết: ${String(e.message || e).split("\n")[0]}`); } }
+    catch (e) { console.log(`ℹ không chạy được soát chi tiết: ${String(e.message || e).split("\n")[0]}`); }
+    // cỡ chữ đọc được khi chiếu (mọi deck): chữ < 12 pt, tỉ lệ chữ ≥ 14 pt — gợi ý, không chặn (scripts/co_chu.js)
+    try { const cc = await require("../scripts/co_chu").coChu(htmlPath), pc = (100 * cc.than).toFixed(0);
+      if (!cc.nho.length && cc.than >= 0.7) console.log(`✓ Cỡ chữ: ${pc}% chữ thường ≥ 14 pt, không chữ < 12 pt (trừ dải đầu, số trang, ghi công ảnh)`);
+      else console.log(`ℹ Cỡ chữ (1 px = 0,5 pt; chiếu trên lớp nên chữ thân ≥ 14 pt, nhãn ≥ 12 pt — references/nguyen-tac-bo-cuc.md): ${pc}% chữ thường ≥ 14 pt${cc.nho.length ? `, ${cc.nho.length} mẩu < 12 pt:\n  ` + cc.nho.slice(0, 10).map((x) => `slide ${x.slide}: ${x.pt} pt “${x.chu}”`).join("\n  ") : ""}`); }
+    catch (e) { console.log(`ℹ không đo được cỡ chữ: ${String(e.message || e).split("\n")[0]}`); } }
   // khoá meta không bước nào đọc (kiểm, dựng, đóng gói PPTX): gõ sai tên hoặc tính năng không có ở tầng hình ảnh
   const metaBo = metaGoc ? Object.keys(metaGoc).filter((k) => !metaDoc.has(k) && !["author", "$schema", "comment", "ghiChu", "ghichu", "note"].includes(k) && !/^[_$]/.test(k)) : [];
   if (metaBo.length) console.log(`ℹ meta không bước nào đọc: ${metaBo.join(", ")} — gõ sai tên, hoặc tính năng không có ở tầng hình ảnh (references/layouts.md)`);

@@ -31,3 +31,15 @@ test("deck mẫu so-bhxh: không chữ hiện < 12 pt (trừ số trang / dải 
     assert.ok(lon / tu >= 0.85, `chữ thân ≥ 14 pt chỉ ${(100 * lon / tu).toFixed(1)}%`);
   } finally { await b.close(); }
 });
+
+test("scripts/co_chu.js (chạy trong --soat cho mọi deck): báo chữ < 12 pt theo slide, miễn dải đầu / số trang / ghi công ảnh", { skip: !coPw && "không có Playwright", timeout: 60000 }, async () => {
+  const f = path.join(fs.mkdtempSync(path.join(os.tmpdir(), "cochu2-")), "deck.html");
+  fs.writeFileSync(f, `<!doctype html><meta charset="utf-8"><style>body{margin:0}.s{position:relative;width:1920px;height:1080px;font-family:sans-serif}.s div{position:absolute}</style>
+<section class="s"><div style="left:100px;top:20px;font-size:18px">Phần 1 · Luật áp dụng</div><div style="left:1700px;top:20px;font-size:20px">03 / 28</div>
+<div style="left:100px;top:300px;font-size:32px">Chữ thân đủ to để đọc từ cuối lớp học</div><div style="left:100px;top:600px;font-size:20px">Quy định: điểm đ khoản 1 Điều 70</div>
+<div style="left:100px;top:1030px;font-size:20px">Ảnh: Tác giả / Báo</div></section>`);
+  const { coChu } = require("../scripts/co_chu");
+  const r = await coChu(f);
+  assert.deepEqual(r.nho.map((x) => `${x.slide}:${x.pt}:${x.chu}`), ["1:10:Quy định: điểm đ khoản 1 Điều 70"]);
+  assert.ok(r.than > 0.5 && r.than < 1, String(r.than));
+});
