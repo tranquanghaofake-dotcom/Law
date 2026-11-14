@@ -156,6 +156,43 @@ VE["phan-tan"] = (P) => { const o = (x, y, w) => `<svg x="${x}" y="${y}" width="
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240"><path d="M120 128 L46 70 M120 128 L194 70 M120 128 L120 200" stroke="#${P.gold}" stroke-width="4" stroke-dasharray="6 6"/>`
     + `${o(0, 6, 92)}${o(148, 6, 92)}${o(74, 150, 92)}<svg x="84" y="88" width="72" height="72" viewBox="0 0 240 240">${trong(VE.khien(P))}</svg></svg>`; };
 
+// kính lúp soi tờ khai: khai báo trung thực / giám định — tờ giấy có ô khai, kính lúp phóng to một dòng có dấu chọn
+VE["kinh-lup"] = (P) => khung(P, (S) => `
+<rect x="40" y="26" width="120" height="164" rx="6" fill="${S("w")}" stroke="#D5DEE1" stroke-width="2"/>
+${[50, 74, 98, 122, 146].map((y, i) => `<rect x="54" y="${y}" width="14" height="14" rx="3" fill="none" stroke="#${mix(P.ink, "FFFFFF", 0.45)}" stroke-width="2"/><rect x="76" y="${y + 4}" width="${[66, 54, 70, 48, 62][i]}" height="6" rx="3" fill="#C5D0D4"/>`).join("")}
+<path d="M56 79 l4 4 l7 -9" fill="none" stroke="#${P.acc}" stroke-width="3" stroke-linecap="round"/>
+<line x1="168" y1="162" x2="210" y2="204" stroke="${INK(P)}" stroke-width="18" stroke-linecap="round"/><line x1="168" y1="162" x2="180" y2="174" stroke="${S("g")}" stroke-width="18"/>
+<circle cx="138" cy="130" r="50" fill="#${mix(P.acc, "FFFFFF", 0.82)}" fill-opacity=".85" stroke="${S("a")}" stroke-width="12"/>
+<rect x="104" y="118" width="16" height="16" rx="3" fill="none" stroke="${INK(P)}" stroke-width="3"/><path d="M107 125 l5 5 l9 -11" fill="none" stroke="#${P.acc}" stroke-width="4" stroke-linecap="round"/><rect x="126" y="122" width="40" height="8" rx="4" fill="#9AA8AD"/>
+<path d="M108 100 Q120 90 136 90" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-opacity=".8"/>`);
+
+// đại lý bảo hiểm: người mặc vest màu nhấn, thẻ tên vàng trên ngực, cặp hồ sơ
+VE["dai-ly"] = (P) => khung(P, (S) => `
+<path d="M48 212 Q48 148 120 144 Q192 148 192 212Z" fill="${INK(P)}"/><path d="M96 148 L120 200 L144 148 Q132 144 120 144 Q108 144 96 148Z" fill="#fff"/>
+<path d="M114 150 L120 160 L126 150 L124 188 L120 196 L116 188Z" fill="#${P.acc}"/>
+<path d="M48 212 Q48 150 98 146 L118 212Z" fill="${S("a")}"/><path d="M192 212 Q192 150 142 146 L122 212Z" fill="${S("a")}"/>
+<rect x="146" y="166" width="30" height="18" rx="3" fill="${S("g")}"/><rect x="150" y="171" width="18" height="3" rx="1.5" fill="#fff"/>
+<rect x="108" y="118" width="24" height="28" rx="8" fill="#${mix(DA_NGUOI, "000000", 0.08)}"/><ellipse cx="120" cy="94" rx="34" ry="38" fill="#${DA_NGUOI}"/>
+<path d="M86 92 Q84 56 120 56 Q158 56 154 92 Q146 72 120 72 Q96 72 86 92Z" fill="${INK(P)}"/>
+<circle cx="107" cy="98" r="3.5" fill="${INK(P)}"/><circle cx="133" cy="98" r="3.5" fill="${INK(P)}"/><path d="M111 113 Q120 119 129 113" fill="none" stroke="${INK(P)}" stroke-width="3" stroke-linecap="round"/>
+<rect x="20" y="168" width="56" height="42" rx="6" fill="#${NAU}"/><rect x="38" y="160" width="20" height="10" rx="3" fill="none" stroke="#${NAU}" stroke-width="4"/><rect x="20" y="182" width="56" height="4" fill="#000" fill-opacity=".18"/>`, { rx: 90 });
+
+// hũ quỹ: nhiều đồng xu (nhiều người đóng) rơi vào một hũ thuỷ tinh — quỹ bảo hiểm / số đông / dồn tích
+VE["hu-quy"] = (P) => khung(P, (S) => `
+${[[70, 26], [112, 10], [154, 30], [92, 50], [136, 56]].map(([x, y], i) => `<ellipse cx="${x}" cy="${y + 8}" rx="15" ry="${i % 2 ? 6 : 15}" fill="${S("g")}" stroke="#${mix(P.gold, "000000", 0.25)}" stroke-width="2"/>`).join("")}
+<rect x="76" y="70" width="88" height="16" rx="6" fill="${S("a")}"/>
+<path d="M64 98 Q64 86 80 86 H160 Q176 86 176 98 V188 Q176 210 152 210 H88 Q64 210 64 188Z" fill="#${mix(P.acc, "FFFFFF", 0.82)}" fill-opacity=".9" stroke="#${mix(P.acc, "FFFFFF", 0.4)}" stroke-width="3"/>
+${[0, 1, 2, 3, 4, 5].map((k) => `<ellipse cx="${120 + (k % 2 ? 10 : -8)}" cy="${196 - k * 14}" rx="${44 - (k % 3) * 4}" ry="9" fill="${S("g")}" stroke="#${mix(P.gold, "000000", 0.25)}" stroke-width="2"/>`).join("")}
+<path d="M76 104 V180" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-opacity=".7"/>`);
+
+// đồng hồ cát: thời gian / thời hạn dài / tích quỹ nhiều năm
+VE["dong-ho-cat"] = (P) => khung(P, (S) => `
+<rect x="56" y="22" width="128" height="18" rx="6" fill="#${NAU}"/><rect x="56" y="196" width="128" height="18" rx="6" fill="#${NAU}"/>
+<rect x="66" y="40" width="8" height="156" fill="#${mix(NAU, "000000", 0.2)}"/><rect x="166" y="40" width="8" height="156" fill="#${mix(NAU, "000000", 0.2)}"/>
+<path d="M82 40 H158 Q158 92 126 116 V120 Q158 144 158 196 H82 Q82 144 114 120 V116 Q82 92 82 40Z" fill="#${mix(P.acc, "FFFFFF", 0.82)}" stroke="#${mix(P.acc, "FFFFFF", 0.4)}" stroke-width="3"/>
+<path d="M98 72 H142 Q136 96 120 108 Q104 96 98 72Z" fill="${S("g")}"/><path d="M90 194 Q96 156 120 150 Q144 156 150 194Z" fill="${S("g")}"/><path d="M120 110 V150" stroke="#${P.gold}" stroke-width="3" stroke-dasharray="3 4"/>
+<path d="M92 50 Q90 80 104 98" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-opacity=".8"/>`, { rx: 70 });
+
 const coVe = (ten) => Object.prototype.hasOwnProperty.call(VE, ten);
 const veSvg = (ten, P) => (coVe(ten) ? VE[ten](P) : "");
 const veUri = (ten, P) => `data:image/svg+xml;base64,${Buffer.from(veSvg(ten, P), "utf8").toString("base64")}`;

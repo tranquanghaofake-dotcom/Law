@@ -96,10 +96,13 @@
     const v = S.querySelector(".da-vat[data-da-vat]"); if (!v) return;
     const B = S.getBoundingClientRect(), k = S.offsetWidth / B.width, s = v.offsetWidth, vat = [];
     for (const el of S.querySelectorAll(".h, .k, .sub, .note, .card, table, .stat, .body svg, .body img, [data-in], .emo, .da-art, .ghim-giay")) {
-      if (el.closest(".da-vat") || el.matches(".ghim-giay[data-khong-cho]")) continue; const q = el.getBoundingClientRect(); if (!q.width || !q.height) continue;
+      if (el.closest(".da-vat") || el.matches(".ghim-giay[data-khong-cho]")) continue; let q = el.getBoundingClientRect(); if (!q.width || !q.height) continue;
+      // tiêu đề / phụ đề là khối rộng hết slide: đo phần CHỮ thật (dòng ngắn để lại góc phải trống cho vật)
+      if (el.matches(".h, .sub")) { const rs = [...(() => { const r = document.createRange(); r.selectNodeContents(el); return r.getClientRects(); })()].filter((x) => x.width && x.height);
+        if (rs.length) q = { left: Math.min(...rs.map((x) => x.left)), top: Math.min(...rs.map((x) => x.top)), right: Math.max(...rs.map((x) => x.right)), bottom: Math.max(...rs.map((x) => x.bottom)) }; }
       vat.push({ l: (q.left - B.left) * k - 30, t: (q.top - B.top) * k - 30, r: (q.right - B.left) * k + 30, b: (q.bottom - B.top) * k + 30 }); }
     const trung = (l, t) => vat.some((q) => l < q.r && l + s > q.l && t < q.b && t + s > q.t);
-    const thu = [[1660, 830], [1660, 110], [1480, 830], [70, 840], [1660, 470], [1300, 840]];
+    const thu = [[1660, 830], [1660, 110], [1660, 250], [1480, 830], [70, 840], [1660, 470], [1300, 840]];
     const ok = thu.find(([l, t]) => !trung(l, t));
     if (!ok) { v.remove(); return; }
     v.style.left = ok[0] + "px"; v.style.top = ok[1] + "px"; v.style.rotate = (ok[0] > 900 ? -8 : 7) + "deg";
