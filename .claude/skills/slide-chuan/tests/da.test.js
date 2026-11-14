@@ -277,7 +277,18 @@ test("biểu đồ cách điệu (hinh/bieu_do_ve.js): tán ô chia đúng tỉ 
   const o = BDV.KIEU["o-ty-le"]({ phan: [{ v: 35, t: "A" }, { v: 65, t: "B" }] }, P, 800, 700);
   assert.deepEqual(o.nhan.filter((n) => /so-lon/.test(n.cls)).map((n) => n.t), ["35%", "65%"]);
   const t = BDV.KIEU["thap-tang"]({ nhom: [{ n: 1, t: "a" }, { n: 15, t: "b" }, { n: 20, t: "c" }] }, P, 800, 860);
-  assert.equal((t.svg.match(/rx="2"/g) || []).length, 36, "36 tầng = 1 + 15 + 20");
+  assert.equal((t.svg.match(/<rect [^>]*fill="#000" opacity=".16"\/>/g) || []).length, 36, "36 tầng = 1 + 15 + 20 (mỗi tầng một dải bóng)");
   const h = dungHtml(deck({ da: "hop-dong-bh" }, [{ type: "statement", title: "Thử", bieuDo: { kieu: "o-ty-le", phan: [{ v: 35, t: "Giữ lại" }, { v: 65, t: "Nhận tái" }] } }]), { deckDir: path.join(__dirname, "..") }).html;
   assert.ok(/class="s [^"]*light[^"]*co-bd/.test(h) && h.includes('data-m="bd-o-ty-le"') && /bd-nhan so-lon trang[^>]*><b>35%<\/b>/.test(h));
+});
+
+test("biểu đồ cách điệu mới: toa-chay đúng tỉ lệ STBH / thiệt hại; duong-moc tán ô che đúng đoạn; hu-nguong có đủ nhãn", () => {
+  const BDV = require("../hinh/bieu_do_ve"), P = { acc: "0F5C55", gold: "EFA23F", ink: "17302E", bad: "B0302A" };
+  const t = BDV.KIEU["toa-chay"]({ toa: [{ t: "HĐ 1", stbh: 10, thiet: 8, nhanStbh: "10", nhanThiet: "8" }, { t: "HĐ 2", stbh: 5, thiet: 0, nhanStbh: "5" }] }, P, 800, 600);
+  const cao = [...t.svg.matchAll(/<rect x="[\d.]+" y="([\d.]+)" width="[\d.]+" height="([\d.]+)" fill="#81B29A"\/>|<rect x="[\d.]+" y="([\d.]+)" width="[\d.]+" height="([\d.]+)" fill="#F2C14E"\/>/g)].map((m) => +(m[2] || m[4]));
+  assert.ok(Math.abs(cao[0] / cao[1] - 2) < 0.01, "toà HĐ 1 cao gấp đôi HĐ 2 (STBH 10 / 5)");
+  assert.ok(t.nhan.some((n) => n.t === "8" && /trang/.test(n.cls)) && t.nhan.every((n) => !n.w || n.w < 400), "nhãn thiệt hại trên lửa; nhãn rộng theo cột");
+  const d = BDV.KIEU["duong-moc"]({ moc: [{ t: "Ký" }, { t: "Hiệu lực", bat: true }, { t: "Hết", het: true }] }, P, 1600, 500);
+  assert.equal(d.nhan.filter((n) => n.cls === "ten").length, 3);
+  assert.equal(BDV.KIEU["hu-nguong"]({}, P, 1600, 600).nhan.length, 5);
 });

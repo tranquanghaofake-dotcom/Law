@@ -275,14 +275,14 @@ function daCss(ten) {
     .s.phim-toi .phim-nhan small { color: #fff; text-shadow: 0 1px 6px rgba(0,0,0,.6); }`;
   // biểu đồ cách điệu: chữ chiếm nửa trái, hình nửa phải; nhãn số trên hình
   css += `.s.co-bd { justify-content: flex-start; } .s.co-bd .body { flex: 0 0 auto; justify-content: flex-start; max-width: 860px; } .s.co-bd .h { font-size: 64px; } .s.co-bd .sub { font-size: 29px; }
-    .bd-nhan { position: absolute; z-index: 5; width: 400px; text-align: center; } .bd-nhan b { font: 800 28px/1.2 var(--fb); color: #${c.ink}; } .bd-nhan small { display: block; font: 600 22px/1.3 var(--fb); color: #${c.muted}; margin-top: 4px; }
+    .bd-nhan { position: absolute; z-index: 5; width: 400px; text-align: center; } .bd-nhan b { font: 800 28px/1.2 var(--fb); color: #${c.ink}; } .bd-nhan small { display: block; font: 600 22px/1.3 var(--fb); color: #${c.ink}; opacity: .85; margin-top: 4px; }
     .bd-nhan.so-lon b { font-size: 72px; line-height: 1; } .bd-nhan.trang b { color: #fff; text-shadow: 0 2px 8px rgba(0,0,0,.25); } .bd-nhan.trai { text-align: left; width: 460px; } .bd-nhan.nho b { font-size: 24px; }
     .bd-nhan.chu-giai { width: auto; text-align: right; } .bd-nhan.chu-giai b { font: 600 22px/1.3 var(--fb); color: #${c.muted}; }`;
   css += `.s.phim { justify-content: flex-start; } .s.phim > .k, .s.phim > .body, .s.phim .h, .s.phim .sub, .s.phim .msg { position: relative; z-index: 3; }
     .s.phim .body { flex: 0 0 auto; justify-content: flex-start; } .s.phim .h { font-size: 66px; max-width: 1240px; margin-bottom: 14px; } .s.phim .sub { font-size: 29px; max-width: 1180px; }
     .s.phim.end { justify-content: flex-start; } .s.phim.end .h { font-size: 120px; }
     .s.phim-toi { --fg: #F4F1EA; --mut: #E8ECEC; --hl: #${c.gold}; color: #F4F1EA; } .s.phim-toi .h { color: #fff; } .s.phim-toi .h em { color: #${c.gold}; } .s.phim-toi .sub { color: #EEF1F1; }
-    .s.phim-toi .k { background: rgba(255,255,255,.14); color: #fff; }`;
+    .s.phim-toi .k { background: rgba(255,255,255,.14); color: #fff; } .s.phim-toi .bar, .s.phim-toi .bar *, .s.phim-toi .zml { color: #fff; } .s.phim-toi .h em { color: #${vangTren(c.gold, "28343A", 4.5)}; }`;
   if (c.canhNhan) css += `.s.da-${ten}-canh { --red: #${A}; --red-d: #${mix(A, "000000", 0.25)}; }`;
   css += theCss(c.the, c, T + ".light") + nhanCss(c.nhan, S) + soCss(c.so, c, S) + tienDoCss(c.tienDo, c, S);
   if (c.to === "bc") css += `${T}.light .da-to { left: 64px; right: 64px; top: 96px; bottom: 40px; z-index: 0; background: #F6EEDB; box-shadow: inset 0 1px 0 rgba(255,255,255,.7), 3px 4px 0 rgba(60,40,20,.14), 15px 22px 28px rgba(14,6,0,.5); }

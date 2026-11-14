@@ -52,5 +52,9 @@ Số liệu và quan hệ định lượng mang **hình của chính vật trong
 | Chia theo tỷ lệ % (tái BH số thành 35 / 65) | `o-ty-le`: tán ô = biểu đồ tròn, góc ∝ % | ô che rủi ro được chia cho các bên |
 | Đơn vị lặp, bội số (mức dôi: 1 lần + 15 lần + 20 lần) | `thap-tang`: mỗi tầng = một đơn vị, nhóm tầng cùng màu | "lần" (line) đếm được bằng mắt |
 | So hai đại lượng cùng thang (STBH với GTBH, 4 trường hợp) | `nha-khien`: nhà cao = GTBH, khiên cao = STBH, nhiều khiên chồng = BH trùng | so chiều cao trên một thang chung |
+| Khoảng thời gian có mốc (thời hạn BH) | `duong-moc`: con đường + cột mốc, tán ô chỉ che đoạn `bat` → `het`, mưa rơi ngoài đoạn đó | thấy ngay lúc nào được che, lúc nào chưa |
+| Nhiều hợp đồng, mỗi cái 2–3 đại lượng (Bài 11: STBH, thiệt hại, phí) | `toa-chay`: toà cao ∝ STBH, lửa ∝ thiệt hại (cùng thang), đồng xu ghi phí | thay được bảng — ghi đủ số, không trình bày dữ liệu hai lần |
+| Ngưỡng và phần vượt (tái BH vượt mức tỷ lệ bồi thường) | `hu-nguong`: hũ = phí, nước = bồi thường, vạch = ngưỡng giữ lại, phần vượt chảy sang DN nhận tái | MINH HOẠ — ghi rõ "không theo số liệu" khi tài liệu không có số |
+Hoàn thiện (học từ lượt 11/2026): vật có chi tiết thật (nan ô, chóp, cửa sổ sáng đèn ngẫu nhiên, ống khói, viền vàng + dấu tích trên khiên); bên liên quan đứng đúng chỗ của mình trong biểu đồ (toà DNBH dưới múi 35 %); mưa chỉ rơi ngoài vùng được che; nhãn rộng theo cột (`w`) để không chồng nhau.
 Luật: (1) tỉ lệ hình = tỉ lệ số liệu, một thang chung cho cả biểu đồ; (2) mỗi vật chở đúng một đại lượng, nói rõ trong phụ đề ("nhà cao = GTBH"); (3) không thêm vật trang trí cạnh biểu đồ; (4) số liệu phải có trong tài liệu gốc — không tự suy ra đáp số bài tập.
 Thêm kiểu mới: một hàm trong `KIEU` trả `{ svg, nhan }`, cùng phong cách `ve_bh.js`, kèm test.
