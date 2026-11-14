@@ -21,5 +21,6 @@ p.save(${JSON.stringify(pp)})`]);
   assert.match(txt, /Lịch nói/); assert.match(txt, /Mốc/);
   const lich = txt.split("Slide 1 / 3")[0];   // trang đầu: bảng lịch nói đứng trước trang của slide 1
   assert.match(lich, /Lương hưu bằng 45–75%[\s\S]*0:3\d/, "dòng slide 1: mốc cộng dồn 0:3x"); assert.match(lich, /nhánh sai/i, "slide nhánh sai ghi rõ, không cộng mốc");
+  assert.match(txt, /nói xong lúc 0:3\d/, "trang slide 1 ghi mốc nói xong");
   assert.match(txt, /Nhánh sai A — chỉ nói khi người học chọn/); assert.match(txt, /tổng ~0 phút 3[0-9] giây/, "nhánh sai không cộng vào tổng (chỉ 64 tiếng của slide 1)");
 });

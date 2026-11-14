@@ -51,7 +51,8 @@ def tieu_de_html(lop):
     out = []
     for at in re.findall(r"<section ([^>]*)>", open(f, encoding="utf-8").read()):
         m = re.search(r'data-tieu-de-an="([^"]*)"', at) or re.search(r'data-title="([^"]*)"', at)
-        out.append(re.sub(r"\s+", " ", html.unescape(m.group(1))).strip() if m else "")
+        t = re.search(r'data-type="([^"]*)"', at)
+        out.append((re.sub(r"\s+", " ", html.unescape(m.group(1))).strip() if m else "", t.group(1) if t else ""))
     return out
 
 
@@ -74,7 +75,9 @@ def main(argv):
     td_html = tieu_de_html(lop)
     if len(td_html) != n:
         td_html = []   # deck.html không khớp số slide (dựng lại PPTX mà chưa dựng lại thư mục _lop) → dùng tiêu đề trong PPTX
-    tieu = lambda i, sl: (td_html[i - 1] if td_html and td_html[i - 1] else tieu_de(sl))
+    tieu = lambda i, sl: (td_html[i - 1][0] if td_html and td_html[i - 1][0] else tieu_de(sl))
+    CHUONG = {"section", "bhchuong", "bcchuong", "qtchuong"}
+    la_chuong = lambda i: bool(td_html) and td_html[i - 1][1] in CHUONG
 
     s_dau = ParagraphStyle("dau", fontName="BVP", fontSize=9, textColor=XAM, leading=12)
     s_dau_phai = ParagraphStyle("dau_phai", parent=s_dau, alignment=2)
@@ -97,7 +100,8 @@ def main(argv):
             tong_giay += giay
         lich.append((i, tieu(i, sl), giay, nhanh, lap, None if nhanh.startswith("sai") else tong_giay))
         nhan = f" · Nhánh {nhanh} — chỉ nói khi người học chọn{' (không tính vào tổng)' if nhanh.startswith('sai') else ''}" if nhanh else ""
-        dau = Table([[Paragraph(f"Slide {i} / {n}{escape(nhan)}", s_dau), Paragraph(f"~{giay} giây nói · {tieng} tiếng" if tieng else "", s_dau_phai)]],
+        moc = "" if nhanh.startswith("sai") else f" · nói xong lúc {tong_giay // 60}:{tong_giay % 60:02d}"
+        dau = Table([[Paragraph(f"Slide {i} / {n}{escape(nhan)}", s_dau), Paragraph((f"~{giay} giây nói · {tieng} tiếng" if tieng else "") + moc, s_dau_phai)]],
                     colWidths=[W / 2, W / 2])
         dau.setStyle(TableStyle([("LEFTPADDING", (0, 0), (-1, -1), 0), ("RIGHTPADDING", (0, 0), (-1, -1), 0), ("BOTTOMPADDING", (0, 0), (-1, -1), 4)]))
         khoi = [dau]
@@ -130,7 +134,8 @@ def main(argv):
     hang = [[Paragraph(x, s_oh) for x in ("Slide", "Tiêu đề", "Giây", "Mốc")]]
     for i, td, g, nh, lap, moc in lich:
         ghi = " (bước tiếp, cùng ghi chú)" if lap else f" — nhánh {nh}, chỉ khi người học chọn" if nh else ""
-        hang.append([Paragraph(str(i), s_o), Paragraph(escape(td + ghi), s_o), Paragraph(str(g) if g else "—", s_o), Paragraph(mmss(moc) if moc is not None else "—", s_o)])
+        st = s_oh if la_chuong(i) else s_o   # dòng mở chương in đậm: thấy từng phần chiếm bao lâu
+        hang.append([Paragraph(str(i), st), Paragraph(escape(td + ghi), st), Paragraph(str(g) if g else "—", st), Paragraph(mmss(moc) if moc is not None else "—", st)])
     bang = Table(hang, colWidths=[14 * mm, W - 44 * mm, 14 * mm, 16 * mm], repeatRows=1)
     bang.setStyle(TableStyle([("LINEBELOW", (0, 0), (-1, 0), 0.8, MUC), ("LINEBELOW", (0, 1), (-1, -1), 0.25, HexColor("#d6e2f3")),
                               ("VALIGN", (0, 0), (-1, -1), "TOP"), ("TOPPADDING", (0, 0), (-1, -1), 2), ("BOTTOMPADDING", (0, 0), (-1, -1), 2)]))
