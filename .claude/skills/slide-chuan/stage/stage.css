@@ -239,7 +239,7 @@ tr.on td { background: var(--amber); }
 .fm { display: flex; align-items: stretch; gap: 20px; flex-wrap: wrap; }
 .fm > i { font: 400 110px/190px var(--fd); font-style: normal; color: var(--mut); }
 .tm { background: var(--card); border: 4px solid var(--rule); padding: 20px 28px 22px; min-width: 210px; max-width: 330px; }
-.tm b { display: block; font: 400 110px/1.1 var(--fd); } .tm span { display: block; font: 700 27px/1.3 var(--fb); } .tm small { display: block; margin-top: 6px; font: 500 22px/1.35 var(--fb); color: var(--mut); }
+.tm b { display: block; font: 400 110px/1.1 var(--fd); } .tm span { display: block; font: 700 27px/1.3 var(--fb); } .tm small { display: block; margin-top: 6px; font: 500 24px/1.35 var(--fb); color: var(--mut); }
 .tm.res b, .tm.on b { color: var(--hl); } .tm.on { border-color: var(--hl); box-shadow: 12px 12px 0 rgba(0,0,0,.5); }
 .exm { margin-top: 40px; font: 600 36px/1.4 var(--fb); border-left: 12px solid var(--hl); padding-left: 26px; }
 .doc .pp { font: 600 31px/1.5 var(--fb); }

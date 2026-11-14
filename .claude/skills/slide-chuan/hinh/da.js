@@ -26,16 +26,16 @@ const b64 = (svg) => `url("data:image/svg+xml;base64,${Buffer.from(svg, "utf8").
 // gold: điểm nhấn trên nền tối (số lớn, cụm nhấn); nen: nền trang; khung: khung toàn slide; the: vỏ thẻ; nhan: kiểu nhãn kicker;
 // so: ô số (cell | square | round); tienDo: thanh tiến độ; vat: đồ vật tiền cảnh; chuyen: kiểu hiện thẻ; art: hình lớn bìa / chương / kết
 const DA = {
-  // đơn / giấy chứng nhận bảo hiểm thương mại: ô che (vật chủ đạo) + khiên (phạm vi bảo hiểm) + xu (phí); đặt trước so-bhxh vì fits của so-bhxh có "bảo hiểm"
-  "hop-dong-bh": { mon: "Đơn bảo hiểm / ô che rủi ro (Bảo hiểm thương mại, kinh doanh bảo hiểm, tái bảo hiểm)", fits: ["bảo hiểm thương mại", "kinh doanh bảo hiểm", "hợp đồng bảo hiểm", "tái bảo hiểm", "doanh nghiệp bảo hiểm", "bảo hiểm nhân thọ", "phi nhân thọ", "bhtm", "bảo hiểm tài sản", "bảo hiểm trách nhiệm", "nghiệp vụ bảo hiểm"],
+  // đơn / giấy chứng nhận bảo hiểm thương mại: hợp đồng (vật chủ đạo) + khiên (phạm vi bảo hiểm) + xu (phí); đặt trước so-bhxh vì fits của so-bhxh có "bảo hiểm"
+  "hop-dong-bh": { mon: "Hợp đồng / đơn bảo hiểm (Bảo hiểm thương mại, kinh doanh bảo hiểm, tái bảo hiểm)", fits: ["bảo hiểm thương mại", "kinh doanh bảo hiểm", "hợp đồng bảo hiểm", "tái bảo hiểm", "doanh nghiệp bảo hiểm", "bảo hiểm nhân thọ", "phi nhân thọ", "bhtm", "bảo hiểm tài sản", "bảo hiểm trách nhiệm", "nghiệp vụ bảo hiểm"],
     // v2 (11/2026, sau nghiên cứu mẫu bảo hiểm Behance / Envato): nền kem sáng nhiều khoảng thở, thẻ bo mềm không viền, tiêu đề chữ thường font tròn đậm,
     // hình minh hoạ lớn là nhân vật chính (cảnh hinh/ve_bh.js CANH); bỏ dải vòm, khiên lặp trên mọi thẻ (chi tiết không mang nghĩa)
     ink: "17302E", acc: "0F5C55", page: "F7F3EA", muted: "56645F", line: "E4DCCB", bad: "B0302A", good: "0F5C55", gold: "EFA23F",
-    nen: "soft", khung: "none", the: "soft", nhan: "pill", so: "round", tienDo: "plain", tieuDe: "tron", vat: ["ve:o-mua", "ve:dai-ly", "ve:kinh-lup", "ve:ho-so", "ve:hu-quy", "ve:dong-ho-cat", "ve:lua", "ve:o-to", "ve:nha", "ve:tai-bh", "ve:hop-dong", "ve:hoa-don", "ve:khien", "ve:dam-dong", "ve:can-can", "ve:may-giong", "ve:lich"], chuyen: "pop", art: "ve:o-mua,nha,nguoi,o-to",
-    // vật tiền cảnh theo nội dung slide (xét trước các vật chung); không khớp → vật đầu (ô che mưa = rủi ro được che). Vật tự vẽ: hinh/ve_bh.js
+    nen: "soft", khung: "none", the: "soft", nhan: "pill", so: "round", tienDo: "plain", tieuDe: "tron", vat: ["ve:hop-dong", "ve:dai-ly", "ve:kinh-lup", "ve:ho-so", "ve:hu-quy", "ve:dong-ho-cat", "ve:lua", "ve:o-to", "ve:nha", "ve:toa-nhan-tai", "ve:hoa-don", "ve:khien", "ve:dam-dong", "ve:can-can", "ve:may-giong", "ve:lich"], chuyen: "pop", art: "ve:hop-dong,nha,nguoi,o-to",
+    // vật tiền cảnh theo nội dung slide (xét trước các vật chung); không khớp → vật đầu (tờ hợp đồng BH; bỏ ẩn dụ ô che theo yêu cầu, 11/2026). Vật tự vẽ: hinh/ve_bh.js
     canhNhan: true,   // cảnh (chain, cases, tiles…) dùng màu nhấn của da thay đỏ: đỏ chỉ cho điều tiêu cực, "chuyển giao rủi ro" không phải điều xấu
     vatY: { "ve:dai-ly": /đại lý|có quyền/i, "ve:kinh-lup": /trung thực|khai báo|giám định/i, "ve:ho-so": /phân loại|tiêu chí/i, "ve:hu-quy": /quỹ|dồn tích|tích tụ|số đông/i,
-      "ve:dong-ho-cat": /thời hạn dài|lâu năm|kỹ thuật/i, "ve:tai-bh": /tái|nhượng|nhận tái|mức dôi|số thành/i, "ve:hop-dong": /hợp đồng|HĐBH|ký|thoả thuận|thỏa thuận|chỗ trống/i, "ve:hoa-don": /phí|giá cả|thu phí|hoá đơn/i,
+      "ve:dong-ho-cat": /thời hạn dài|lâu năm|kỹ thuật/i, "ve:toa-nhan-tai": /tái|nhượng|nhận tái|mức dôi|số thành/i, "ve:hop-dong": /hợp đồng|HĐBH|ký|thoả thuận|thỏa thuận|chỗ trống/i, "ve:hoa-don": /phí|giá cả|thu phí|hoá đơn/i,
       "ve:lich": /thời hạn|hiệu lực|ngày/i, "ve:lua": /hoả hoạn|hỏa hoạn|cháy|tổn thất|thiệt hại/i, "ve:dam-dong": /số đông|nhiều người|chủ thể|bên mua/i, "ve:can-can": /pháp luật|bắt buộc|pháp lý|luật|nghĩa vụ/i,
       "ve:khien": /trách nhiệm|giới hạn|phạm vi|trung thực|quyền lợi/i, "ve:nha": /tài sản|giá trị/i, "ve:o-to": /dân sự|người thứ ba/i, "ve:may-giong": /rủi ro|ngẫu nhiên|bất ngờ/i } },
   "so-bhxh": { mon: "Sổ BHXH (An sinh xã hội, BHXH, BHYT, BHTN, lương hưu)", fits: ["bảo hiểm", "bhxh", "bhyt", "bhtn", "an sinh", "lương hưu", "hưu trí", "thai sản", "ốm đau", "tử tuất", "trợ cấp"],
