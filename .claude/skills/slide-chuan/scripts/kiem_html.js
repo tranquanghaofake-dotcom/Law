@@ -24,7 +24,8 @@ function kiemHtml() {
       const E = el.getBoundingClientRect(), r = document.createRange(); r.selectNodeContents(el);
       const Q = [...r.getClientRects()].filter((q) => q.width > 2 && q.height > 2); if (!Q.length) continue;
       const lo = (a, b) => Math.round((a - b) * k), ten = `“${txt(el.textContent).slice(0, 30)}”`;
-      const tran = Math.max(...Q.map((q) => Math.max(lo(q.right, E.right), lo(E.left, q.left), lo(q.bottom, E.bottom) - 4)));
+      const fs = parseFloat(getComputedStyle(el).fontSize) || 30, du = Math.max(4, 0.3 * fs * k);   // vùng dấu tiếng Việt / nét chữ cỡ lớn cao hơn khoảng dòng: nới theo cỡ chữ
+      const tran = Math.max(...Q.map((q) => Math.max(lo(q.right, E.right), lo(E.left, q.left), lo(q.bottom, E.bottom) - du)));
       if (tran > 3) out.push(`slide ${n}: ${ten} tràn khỏi hộp của nó ${tran} px — rút chữ, nới hộp hoặc tách slide`);
       const x0 = Math.min(...Q.map((q) => q.left)), x1 = Math.max(...Q.map((q) => q.right)), y0 = Math.min(...Q.map((q) => q.top)), y1 = Math.max(...Q.map((q) => q.bottom));
       const mep = Math.max(lo(S.left + 40 / k, x0), lo(x1, S.right - 40 / k), lo(S.top + 24 / k, y0), lo(y1, S.bottom - 24 / k));
