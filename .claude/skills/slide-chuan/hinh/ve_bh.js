@@ -193,7 +193,65 @@ VE["dong-ho-cat"] = (P) => khung(P, (S) => `
 <path d="M98 72 H142 Q136 96 120 108 Q104 96 98 72Z" fill="${S("g")}"/><path d="M90 194 Q96 156 120 150 Q144 156 150 194Z" fill="${S("g")}"/><path d="M120 110 V150" stroke="#${P.gold}" stroke-width="3" stroke-dasharray="3 4"/>
 <path d="M92 50 Q90 80 104 98" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-opacity=".8"/>`, { rx: 70 });
 
+// toà nhà doanh nghiệp bảo hiểm: khối văn phòng màu nhấn, cửa kính, huy hiệu khiên trên mặt tiền (không chữ, không biểu trưng thật)
+VE["toa-dnbh"] = (P) => khung(P, (S) => `
+<rect x="56" y="40" width="128" height="170" rx="6" fill="${S("a")}"/><rect x="120" y="40" width="64" height="170" fill="#000" fill-opacity=".1"/>
+${[0, 1, 2, 3, 4].map((r) => [0, 1, 2].map((c) => `<rect x="${70 + c * 36}" y="${92 + r * 20}" width="26" height="12" rx="2" fill="#${mix(P.acc, "FFFFFF", 0.7)}" fill-opacity="${(r + c) % 3 ? 0.9 : 0.55}"/>`).join("")).join("")}
+<path d="M120 50 L142 58 V72 Q142 84 120 90 Q98 84 98 72 V58Z" fill="${S("g")}"/><path d="M110 70 l7 7 l13 -13" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+<rect x="104" y="184" width="32" height="26" fill="${INK(P)}"/><rect x="44" y="206" width="152" height="8" rx="4" fill="${INK(P)}"/>`, { rx: 80 });
+
+// ---------- CẢNH LỚN (khổ 1600 × 1000) — dùng làm "ảnh" cho bố cục split / cover / section: hình minh hoạ là nhân vật chính của slide ----------
+const dat = (ten, P, x, y, w) => `<svg x="${x}" y="${y}" width="${w}" height="${w}" viewBox="0 0 240 240">${VE[ten](P).replace(/^<svg[^>]*>/, "").replace(/<\/svg>$/, "")}</svg>`;
+const nenCanh = (P, nen) => `<defs><linearGradient id="trg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#${mix(P.acc, "FFFFFF", 0.86)}"/><stop offset="1" stop-color="#${nen}"/></linearGradient></defs>
+<rect width="1600" height="1000" fill="url(#trg)"/><circle cx="1260" cy="210" r="90" fill="#${mix(P.gold, "FFFFFF", 0.55)}"/>
+<path d="M0 760 Q300 650 640 720 T1300 690 T1600 720 V1000 H0Z" fill="#${mix(P.acc, "FFFFFF", 0.72)}"/><path d="M0 830 Q420 760 820 810 T1600 790 V1000 H0Z" fill="#${mix(P.acc, "FFFFFF", 0.55)}"/>`;
+// mưa: bỏ giọt rơi trong vòm (cx, cy, rx, ry) — trong vòm là vùng được che
+const mua = (P, n, x0, x1, y0, y1, v) => { let b = ""; for (let i = 0; i < n * 2; i++) { const x = x0 + ((i * 97) % (x1 - x0)), y = y0 + ((i * 53) % (y1 - y0));
+    if (v && ((x - v[0]) / v[2]) ** 2 + ((y - v[1]) / v[3]) ** 2 < 1.15) continue; b += `<path d="M${x} ${y} l-10 26" stroke="#${mix(P.acc, "FFFFFF", 0.35)}" stroke-width="7" stroke-linecap="round" opacity=".75"/>`; } return b; };
+const vom = (P, cx, cy, rx, ry, a = 0.16) => `<path d="M${cx - rx} ${cy} A${rx} ${ry} 0 0 1 ${cx + rx} ${cy}Z" fill="#${P.acc}" fill-opacity="${a}"/><path d="M${cx - rx} ${cy} A${rx} ${ry} 0 0 1 ${cx + rx} ${cy}" fill="none" stroke="#${P.acc}" stroke-width="10" stroke-opacity=".55"/>`
+  + `<path d="M${cx - rx} ${cy} ${[...Array(8).keys()].map((k) => `Q${cx - rx + (k + 0.5) * rx / 4} ${cy - 30} ${cx - rx + (k + 1) * rx / 4} ${cy}`).join(" ")}" fill="none" stroke="#${P.gold}" stroke-width="8"/>`;
+const mui = (x1, y1, x2, y2, P, nhan = "") => `<path d="M${x1} ${y1} Q${(x1 + x2) / 2} ${Math.min(y1, y2) - 90} ${x2} ${y2}" fill="none" stroke="#${P.gold}" stroke-width="9" stroke-dasharray="20 14" stroke-linecap="round"/><path d="M${x2} ${y2} l-30 -26 M${x2} ${y2} l-36 8" stroke="#${P.gold}" stroke-width="9" stroke-linecap="round"/>`;
+const CANH = {
+  // bìa: phố nhỏ dưới vòm ô che — nhà, xe, người (ba đối tượng BH) được che, mưa rơi ngoài vòm
+  bia: (P) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">${nenCanh(P, "F7F3EA")}${mua(P, 40, 30, 1570, 30, 760, [800, 860, 640, 600])}
+${vom(P, 800, 860, 640, 600)}<line x1="800" y1="260" x2="800" y2="200" stroke="#${P.ink}" stroke-width="12" stroke-linecap="round"/>${dat("nha", P, 280, 520, 380)}${dat("nguoi", P, 680, 560, 330)}${dat("o-to", P, 980, 600, 360)}</svg>`,
+  // chuyển giao rủi ro: bên mua đóng phí → DNBH → khi rủi ro xảy ra (nhà cháy), DNBH bồi thường
+  "chuyen-giao": (P) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">${nenCanh(P, "F7F3EA")}
+${dat("nguoi", P, 80, 500, 330)}${dat("xu", P, 340, 610, 190)}${mui(400, 560, 600, 520, P)}${dat("toa-dnbh", P, 560, 260, 520)}
+${mui(1040, 480, 1200, 560, P)}${dat("nha", P, 1130, 480, 400)}${dat("lua", P, 1330, 420, 200)}${dat("khien", P, 1120, 330, 170)}</svg>`,
+  // số đông: nhiều người góp xu vào một hũ quỹ; một người gặp rủi ro được chi trả từ hũ
+  "so-dong": (P) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">${nenCanh(P, "F7F3EA")}
+${dat("dam-dong", P, 40, 420, 520)}${mui(470, 560, 640, 560, P)}${dat("hu-quy", P, 560, 330, 480)}${mui(1010, 560, 1180, 600, P)}${dat("nha", P, 1130, 540, 330)}${dat("may-giong", P, 1150, 300, 280)}</svg>`,
+  // tái bảo hiểm: vòm lớn (DN nhận tái) phủ vòm nhỏ (DNBH gốc) phủ tàu + nhà máy — rủi ro lớn chia cho nhiều tầng
+  "tai-bh": (P) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">${nenCanh(P, "F7F3EA")}${mua(P, 40, 30, 1570, 30, 800, [800, 880, 720, 640])}
+${vom(P, 800, 880, 720, 640, 0.1)}${vom({ ...P, acc: mix(P.acc, "FFFFFF", 0.25) }, 800, 880, 460, 400, 0.16)}${dat("tau", P, 360, 560, 420)}${dat("nha-may", P, 820, 520, 400)}${dat("lua", P, 1180, 640, 200)}</svg>`,
+};
+
+// ---------- CẢNH KHỔ ĐỨNG 800 × 1080 (ô ảnh của split / photostats / cover frame): câu chuyện đọc từ trên xuống ----------
+const nenDoc = (P) => `<defs><linearGradient id="trd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#${mix(P.acc, "FFFFFF", 0.86)}"/><stop offset="1" stop-color="#F7F3EA"/></linearGradient></defs>
+<rect width="800" height="1080" fill="url(#trd)"/><circle cx="640" cy="150" r="70" fill="#${mix(P.gold, "FFFFFF", 0.55)}"/>
+<path d="M0 900 Q200 840 420 880 T800 860 V1080 H0Z" fill="#${mix(P.acc, "FFFFFF", 0.72)}"/><path d="M0 960 Q300 910 560 950 T800 940 V1080 H0Z" fill="#${mix(P.acc, "FFFFFF", 0.55)}"/>`;
+const doc = (x1, y1, x2, y2, P) => `<path d="M${x1} ${y1} Q${Math.max(x1, x2) + 120} ${(y1 + y2) / 2} ${x2} ${y2}" fill="none" stroke="#${P.gold}" stroke-width="9" stroke-dasharray="20 14" stroke-linecap="round"/><path d="M${x2} ${y2} l12 -38 M${x2} ${y2} l38 -10" stroke="#${P.gold}" stroke-width="9" stroke-linecap="round"/>`;
+// nhãn trong cảnh: chỉ viên trống (chữ thật đặt ở hộp chữ của slide — SVG làm ảnh không dùng được font của trang)
+const nhanCanh = () => "";
+const _nhanCu = (x, y, t, P) => `<g><rect x="${x}" y="${y}" width="${t.length * 17 + 40}" height="46" rx="23" fill="#fff" stroke="#${mix(P.acc, "FFFFFF", 0.6)}" stroke-width="2"/><text x="${x + 20}" y="${y + 31}" font-family="Be Vietnam Pro" font-weight="700" font-size="24" fill="#${P.ink}">${t}</text></g>`;
+Object.assign(CANH, {
+  "bia-doc": (P) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1080">${nenDoc(P)}${mua(P, 30, 20, 780, 20, 980, [400, 960, 380, 560])}
+${vom(P, 400, 960, 380, 560)}<line x1="400" y1="400" x2="400" y2="350" stroke="#${P.ink}" stroke-width="12" stroke-linecap="round"/>${dat("nha", P, 60, 680, 290)}${dat("nguoi", P, 290, 700, 250)}${dat("o-to", P, 480, 730, 270)}</svg>`,
+  "chuyen-giao-doc": (P) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1080">${nenDoc(P)}
+${dat("nguoi", P, 70, 70, 250)}${dat("xu", P, 280, 150, 170)}${nhanCanh(80, 330, "Đóng phí", P)}${doc(330, 330, 380, 450, P)}
+${dat("toa-dnbh", P, 300, 380, 330)}${nhanCanh(560, 560, "DNBH", P)}${doc(470, 720, 300, 800, P)}
+${dat("nha", P, 120, 720, 290)}${dat("lua", P, 300, 690, 140)}${dat("khien", P, 430, 780, 170)}${nhanCanh(470, 960, "Bồi thường", P)}</svg>`,
+  "so-dong-doc": (P) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1080">${nenDoc(P)}
+${dat("dam-dong", P, 140, 10, 420)}${nhanCanh(60, 370, "Số đông đóng phí", P)}${doc(470, 380, 420, 470, P)}
+${dat("hu-quy", P, 250, 420, 300)}${nhanCanh(520, 600, "Quỹ chung", P)}${doc(420, 730, 330, 820, P)}
+${dat("may-giong", P, 470, 690, 200)}${dat("nha", P, 120, 760, 260)}${nhanCanh(420, 960, "Số ít bị tổn thất", P)}</svg>`,
+  "tai-bh-doc": (P) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1080">${nenDoc(P)}${mua(P, 40, 20, 780, 20, 980, [400, 980, 390, 760])}
+${vom(P, 400, 980, 390, 760, 0.1)}${vom({ ...P, acc: mix(P.acc, "FFFFFF", 0.25) }, 400, 980, 260, 460, 0.16)}
+${nhanCanh(250, 250, "DN nhận tái", P)}${nhanCanh(270, 560, "DNBH gốc", P)}${dat("tau", P, 150, 740, 250)}${dat("nha-may", P, 380, 720, 250)}</svg>`,
+});
+
 const coVe = (ten) => Object.prototype.hasOwnProperty.call(VE, ten);
 const veSvg = (ten, P) => (coVe(ten) ? VE[ten](P) : "");
 const veUri = (ten, P) => `data:image/svg+xml;base64,${Buffer.from(veSvg(ten, P), "utf8").toString("base64")}`;
-module.exports = { VE, coVe, veSvg, veUri, NAMES: Object.keys(VE) };
+module.exports = { CANH, VE, coVe, veSvg, veUri, NAMES: Object.keys(VE) };

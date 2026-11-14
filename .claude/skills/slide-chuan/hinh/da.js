@@ -28,8 +28,10 @@ const b64 = (svg) => `url("data:image/svg+xml;base64,${Buffer.from(svg, "utf8").
 const DA = {
   // đơn / giấy chứng nhận bảo hiểm thương mại: ô che (vật chủ đạo) + khiên (phạm vi bảo hiểm) + xu (phí); đặt trước so-bhxh vì fits của so-bhxh có "bảo hiểm"
   "hop-dong-bh": { mon: "Đơn bảo hiểm / ô che rủi ro (Bảo hiểm thương mại, kinh doanh bảo hiểm, tái bảo hiểm)", fits: ["bảo hiểm thương mại", "kinh doanh bảo hiểm", "hợp đồng bảo hiểm", "tái bảo hiểm", "doanh nghiệp bảo hiểm", "bảo hiểm nhân thọ", "phi nhân thọ", "bhtm", "bảo hiểm tài sản", "bảo hiểm trách nhiệm", "nghiệp vụ bảo hiểm"],
-    ink: "13262B", acc: "0E6E66", page: "F3F8F7", muted: "4A5E61", line: "B5D3CF", bad: "B0302A", good: "0E6E66", gold: "F0A23B",
-    nen: "canopy", khung: "policy", the: "policy", nhan: "pill", so: "round", tienDo: "canopy", vat: ["ve:o-mua", "ve:dai-ly", "ve:kinh-lup", "ve:ho-so", "ve:hu-quy", "ve:dong-ho-cat", "ve:lua", "ve:o-to", "ve:nha", "ve:tai-bh", "ve:hop-dong", "ve:hoa-don", "ve:khien", "ve:dam-dong", "ve:can-can", "ve:may-giong", "ve:lich"], chuyen: "pop", art: "ve:o-mua,nha,nguoi,o-to",
+    // v2 (11/2026, sau nghiên cứu mẫu bảo hiểm Behance / Envato): nền kem sáng nhiều khoảng thở, thẻ bo mềm không viền, tiêu đề chữ thường font tròn đậm,
+    // hình minh hoạ lớn là nhân vật chính (cảnh hinh/ve_bh.js CANH); bỏ dải vòm, khiên lặp trên mọi thẻ (chi tiết không mang nghĩa)
+    ink: "17302E", acc: "0F5C55", page: "F7F3EA", muted: "56645F", line: "E4DCCB", bad: "B0302A", good: "0F5C55", gold: "EFA23F",
+    nen: "soft", khung: "none", the: "soft", nhan: "pill", so: "round", tienDo: "plain", tieuDe: "tron", vat: ["ve:o-mua", "ve:dai-ly", "ve:kinh-lup", "ve:ho-so", "ve:hu-quy", "ve:dong-ho-cat", "ve:lua", "ve:o-to", "ve:nha", "ve:tai-bh", "ve:hop-dong", "ve:hoa-don", "ve:khien", "ve:dam-dong", "ve:can-can", "ve:may-giong", "ve:lich"], chuyen: "pop", art: "ve:o-mua,nha,nguoi,o-to",
     // vật tiền cảnh theo nội dung slide (xét trước các vật chung); không khớp → vật đầu (ô che mưa = rủi ro được che). Vật tự vẽ: hinh/ve_bh.js
     canhNhan: true,   // cảnh (chain, cases, tiles…) dùng màu nhấn của da thay đỏ: đỏ chỉ cho điều tiêu cực, "chuyển giao rủi ro" không phải điều xấu
     vatY: { "ve:dai-ly": /đại lý|có quyền/i, "ve:kinh-lup": /trung thực|khai báo|giám định/i, "ve:ho-so": /phân loại|tiêu chí/i, "ve:hu-quy": /quỹ|dồn tích|tích tụ|số đông/i,
@@ -113,6 +115,7 @@ function nenSvg(kind, c, toi) {
   else if (kind === "sage") b = `<rect x="0" y="0" width="1600" height="900" fill="url(#g)"/>` + Array.from({ length: 9 }, (_, i) => `<line x1="0" y1="${100 * i + 50}" x2="1600" y2="${100 * i + 50}" stroke="#${A}" stroke-opacity="${0.035 * o}"/>`).join("");
   else if (kind === "canopy") { for (let y = 70; y < 900; y += 90) { let d0 = `M0 ${y}`; for (let x = 0; x < 1600; x += 80) d0 += ` Q${x + 40} ${y + 26} ${x + 80} ${y}`; b += `<path d="${d0}" fill="none" stroke="#${A}" stroke-opacity="${0.07 * o}" stroke-width="2"/>`; }
     b += `<g transform="translate(1390 780)" fill="#${A}" fill-opacity="${0.05 * o}"><path d="M-260 0 A260 230 0 0 1 260 0 Q217 -30 173 0 Q130 -30 87 0 Q43 -30 0 0 Q-43 -30 -87 0 Q-130 -30 -173 0 Q-217 -30 -260 0 Z"/></g>`; }
+  else if (kind === "soft") b = `<circle cx="1540" cy="-40" r="420" fill="#${A}" fill-opacity="${0.05 * o}"/><circle cx="60" cy="960" r="300" fill="#${c.gold}" fill-opacity="${0.08 * o}"/>`;
   else if (kind === "grain") b = `<rect width="1600" height="900" filter="url(#n)" opacity="${toi ? 0.18 : 0.32}"/>`;
   else if (kind === "glow") b = `<circle cx="1420" cy="80" r="560" fill="url(#q)"/><circle cx="120" cy="860" r="460" fill="url(#q)"/>`;
   else return "";
@@ -180,6 +183,7 @@ function theCss(kind, c, S0) {
       ${S} .card::after { content: ""; position: absolute; left: 30px; right: 18px; bottom: 12px; border-bottom: 2px dotted ${rgba(c.muted, 0.45)}; }`,
     file: `${S} .card { background: #FFFDF7; border: 1.5px solid #${L}; box-shadow: 10px 10px 0 #${mix(c.page, c.ink, 0.06)}, 10px 10px 0 1.5px #${L}, ${sh}; }
       ${S} .card::after { content: ""; position: absolute; right: 26px; top: -22px; width: 26px; height: 70px; border: 5px solid #8C96A3; border-radius: 13px; border-bottom-color: transparent; }`,
+    soft: `${S} .card { border: none; border-radius: 26px; box-shadow: 0 18px 40px ${rgba(c.ink, 0.08)}, 0 2px 6px ${rgba(c.ink, 0.05)}; }`,
     policy: `${S} .card { border: 1.5px solid #${L}; border-radius: 14px; box-shadow: inset 0 10px 0 #${A}, ${sh}; }
       ${S} .card::before { content: ""; position: absolute; left: 0; right: 0; top: 10px; height: 8px; background: radial-gradient(circle at 10px 0, #${A} 9px, transparent 10px) 0 0 / 20px 8px repeat-x; }
       ${S} .card::after { content: ""; position: absolute; right: 16px; top: -12px; width: 30px; height: 36px; background: #${c.gold}; clip-path: polygon(50% 0, 100% 16%, 100% 52%, 50% 100%, 0 52%, 0 16%); }`,
@@ -233,6 +237,15 @@ const tuongPhan = (a, b) => { const [x, y] = [doSang(a), doSang(b)].sort((p, q) 
 const vangTren = (vang, nen, nguong = 3.6) => { let v = vang; for (let k = 1; k <= 8 && tuongPhan(v, nen) < nguong; k++) v = mix(vang, "FFFFFF", k * 0.1); return v; };   // 3,6: biên cho hoạ tiết nền làm sáng màu nhấn; chữ thường (< 24 px) cần 4,5
 // chữ phụ (--mut) trên nền giấy của da: pha dần về màu mực tới ≥ 4,6 : 1 (chữ thường 22–26 px cần 4,5; ho-so / giay từng chỉ 4,37 — số trang "/ 20")
 const xamDu = (xam, nen, muc, nguong = 4.6) => { let v = xam; for (let k = 1; k <= 10 && tuongPhan(v, nen) < nguong; k++) v = mix(xam, muc, k * 0.08); return v; };
+// mọi bộ chọn đang dùng font hiển thị (var(--fd), Anton) trong stage.css và CSS của cảnh — da "tieuDe: tron" đổi chúng sang Be Vietnam Pro 800
+// (build.js chọn font PowerPoint theo độ đậm: ≥ 750 → "Be Vietnam Nang"), để bản HTML và PPTX cùng một font
+let _fd = null;
+function chonFd() {
+  if (_fd) return _fd; const fs = require("fs"), path = require("path"), out = new Set();
+  const nguon = [fs.readFileSync(path.join(__dirname, "../stage/stage.css"), "utf8"), fs.readFileSync(path.join(__dirname, "canh.js"), "utf8")].join("\n").replace(/\/\*[\s\S]*?\*\//g, "");
+  for (const m of nguon.matchAll(/([^{}`;]+)\{([^{}]*)\}/g)) if (/var\(--fd\)/.test(m[2])) m[1].split(",").map((x) => x.trim()).filter((x) => x && !/^[@:]|root|html|body|\$|%/.test(x)).forEach((x) => out.add(x));
+  return (_fd = [...out]);
+}
 function daCss(ten) {
   const c = DA[ten], S = `.s.da-${ten}`, T = `${S}[data-tu]`, A = c.acc;
   const dark = mix(A, "000000", 0.6), dark2 = mix(A, "000000", 0.45);
@@ -251,6 +264,10 @@ function daCss(ten) {
     .da-art { z-index: 1; } .da-vat { z-index: 3; } .da-artcap { position: absolute; z-index: 2; text-align: center; font: 600 22px/1.3 var(--fb); color: var(--mut); }
     ${S}.sec .big { opacity: .45; } ${S}.sec:has(.da-art) .h, ${S}.sec:has(.da-art) .sub { max-width: 1080px; } ${S}.end:has(.da-art) .h { max-width: 1120px; }
     `;
+  // tiêu đề chữ thường bằng Be Vietnam Pro 800 (build.js nhúng thành "Be Vietnam Nang"); Anton chỉ còn cho số lớn
+  if (c.tieuDe === "tron") css += `${S} { --fd: 'Be Vietnam Pro', sans-serif; } ${chonFd().map((x) => `${S} :is(${x})`).join(", ")} { font-weight: 800; letter-spacing: -.01em; text-transform: none; } ${S} .h { font-family: var(--fb); font-weight: 800; letter-spacing: -.02em; line-height: 1.14; font-size: 70px; text-transform: none; }
+    ${S}.cover .h { font-size: var(--fs, 96px); text-transform: none; } ${S}.sec .h { font-size: 104px; } ${S}.end .h { font-size: 128px; text-transform: none; } ${S}.pho.hdl .h { text-transform: none; }
+    ${S} .k { font-weight: 700; letter-spacing: .02em; } ${S}.light { --card: #fff; }`;
   if (c.canhNhan) css += `.s.da-${ten}-canh { --red: #${A}; --red-d: #${mix(A, "000000", 0.25)}; }`;
   css += theCss(c.the, c, T + ".light") + nhanCss(c.nhan, S) + soCss(c.so, c, S) + tienDoCss(c.tienDo, c, S);
   if (c.to === "bc") css += `${T}.light .da-to { left: 64px; right: 64px; top: 96px; bottom: 40px; z-index: 0; background: #F6EEDB; box-shadow: inset 0 1px 0 rgba(255,255,255,.7), 3px 4px 0 rgba(60,40,20,.14), 15px 22px 28px rgba(14,6,0,.5); }
@@ -325,7 +342,7 @@ function phuSlide(html, ten, { type, i, coHinhDan, coAnh, art, chu = "", artCapt
   }
   // đồ vật tiền cảnh: chỉ slide nội dung sáng; hinh.js (hinhDatVatDa) tìm góc trống, không có thì bỏ
   const vatToi = c.vat.some((v) => v.startsWith("ve:"));   // vật tự vẽ có bảng màu nền tối → đặt cả trên slide tối
-  if ((sang || vatToi) && !["cover", "section", "end", "closing"].includes(type) && c.vat.length) them += `<div class="da-vat" data-da-vat style="width:190px;height:190px">${vatSvg(chonVat(c.vat, chu, c.vatY), c, !sang)}</div>`;
+  if ((sang || vatToi) && !coAnh && !["cover", "section", "end", "closing"].includes(type) && c.vat.length) them += `<div class="da-vat" data-da-vat style="width:190px;height:190px">${vatSvg(chonVat(c.vat, chu, c.vatY), c, !sang)}</div>`;
   return html.replace(/^<section class="s /, `<section class="s da da-${ten} `).replace(/<\/section>\s*$/, them + "</section>");
 }
 
