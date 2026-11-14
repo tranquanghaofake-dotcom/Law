@@ -5,7 +5,8 @@ const fa = require("react-icons/fa6");
 const ART = ["justice", "gcn", "courthouse", "scales", "document", "house", "gavel", "land", "umbrella", "shield", "fund", "book", "quiz", "passbook", "idcard", "pension", "receipt", "bankbook", "orgchart", "sealed", "harbor", "none"];
 const TONE = ["good", "bad", "muted"];
 const MOTIFS = ["none", "cadastral", "certificate", "landscape", "contour", "dots", "lines", "waves", "blobs", "grid"];
-const tone = { enum: TONE }, art = { enum: ART };
+// art: tên hình vẽ (ART) hoặc "3d:vật1,vật2,…" = hình lớn ghép từ vật 3D trong hinh/f3d (vật đầu là vai chính)
+const tone = { enum: TONE }, art = { art3d: true };
 const pair = { pair: true };
 const stats = ["a", { label: "s!", value: "s!", desc: "s", tone }];
 
@@ -127,6 +128,9 @@ function walk(val, spec, p, err, req) {
     val.forEach((x, i) => walk(x, spec[1], `${p}[${i}]`, err, true));
     return;
   }
+  if (spec.art3d) { if (val == null) return; if (typeof val === "string" && val.startsWith("3d:")) { const { coF3d } = require("../hinh/f3d"); const thieu = val.slice(3).split(",").filter((v) => !coF3d(v.trim()));
+      if (thieu.length || !val.slice(3).trim()) err(label, `vật 3D không có trong hinh/f3d: ${thieu.join(", ") || "(trống)"}`); return; }
+    if (!ART.includes(val)) err(label, `giá trị "${val}" không hợp lệ (chọn: ${ART.join(" | ")} | 3d:vật1,vật2)`); return; }
   if (spec.enum) { if (val != null && !spec.enum.includes(val)) err(label, `giá trị "${val}" không hợp lệ (chọn: ${spec.enum.join(" | ")})`); return; }
   if (spec.pair) { if (!Array.isArray(val) || val.length < 2 || !isStr(val[0]) || !isStr(val[1])) err(label, 'phải có dạng ["mốc", "nhãn"]'); return; }
   // đối tượng

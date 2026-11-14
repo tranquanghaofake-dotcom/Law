@@ -9,6 +9,7 @@
 // Không mô phỏng giấy tờ đến mức giả được: không quốc huy, không biểu trưng cơ quan, không số hiệu biểu mẫu.
 const { PROPS } = require("./do_vat");
 const { ART } = require("./art");
+const { f3d, coF3d } = require("./f3d");
 
 // ---------- màu ----------
 const hx = (h) => [0, 2, 4].map((i) => parseInt(h.slice(i, i + 2), 16));
@@ -25,7 +26,11 @@ const DA = {
   // đơn / giấy chứng nhận bảo hiểm thương mại: ô che (vật chủ đạo) + khiên (phạm vi bảo hiểm) + xu (phí); đặt trước so-bhxh vì fits của so-bhxh có "bảo hiểm"
   "hop-dong-bh": { mon: "Đơn bảo hiểm / ô che rủi ro (Bảo hiểm thương mại, kinh doanh bảo hiểm, tái bảo hiểm)", fits: ["bảo hiểm thương mại", "kinh doanh bảo hiểm", "hợp đồng bảo hiểm", "tái bảo hiểm", "doanh nghiệp bảo hiểm", "bảo hiểm nhân thọ", "phi nhân thọ", "bhtm", "bảo hiểm tài sản", "bảo hiểm trách nhiệm", "nghiệp vụ bảo hiểm"],
     ink: "13262B", acc: "0E6E66", page: "F3F8F7", muted: "4A5E61", line: "B5D3CF", bad: "B0302A", good: "0E6E66", gold: "F0A23B",
-    nen: "canopy", khung: "policy", the: "policy", nhan: "pill", so: "round", tienDo: "canopy", vat: ["umbrella", "shield", "coins"], chuyen: "pop", art: "umbrella" },
+    nen: "canopy", khung: "policy", the: "policy", nhan: "pill", so: "round", tienDo: "canopy", vat: ["3d:o-mua", "3d:lua", "3d:o-to", "3d:nha", "3d:tau", "3d:but-may", "3d:hoa-don", "3d:khien", "3d:nhom-nguoi", "3d:can", "3d:may-giong"], chuyen: "pop", art: "3d:o-mua,nha,nguoi,o-to",
+    // vật tiền cảnh theo nội dung slide (xét trước các vật chung); không khớp → vật đầu (ô che mưa = rủi ro được che)
+    vatY: { "3d:tau": /tái|nhượng|nhận tái|mức dôi|số thành/i, "3d:but-may": /hợp đồng|HĐBH|ký|thoả thuận|thỏa thuận/i, "3d:hoa-don": /phí|giá cả|thu phí|hoá đơn/i,
+      "3d:lua": /hoả hoạn|hỏa hoạn|cháy|tổn thất|thiệt hại/i, "3d:nhom-nguoi": /số đông|nhiều người|chủ thể|bên mua/i, "3d:can": /pháp luật|bắt buộc|pháp lý|luật/i,
+      "3d:khien": /trách nhiệm|giới hạn|phạm vi|trung thực|quyền lợi/i, "3d:nha": /tài sản|giá trị/i, "3d:o-to": /dân sự|người thứ ba/i, "3d:may-giong": /rủi ro|ngẫu nhiên|bất ngờ/i } },
   "so-bhxh": { mon: "Sổ BHXH (An sinh xã hội, BHXH, BHYT, BHTN, lương hưu)", fits: ["bảo hiểm", "bhxh", "bhyt", "bhtn", "an sinh", "lương hưu", "hưu trí", "thai sản", "ốm đau", "tử tuất", "trợ cấp"],
     ink: "1E2A22", acc: "2F6B3F", page: "F3F8F1", muted: "4E5F53", line: "9CC29A", bad: "9A3324", good: "2F6B3F", gold: "D9AE3A",
     nen: "sage", khung: "double", the: "ledger", nhan: "outline", so: "cell", tienDo: "stamps", vat: ["booklet", "coins", "stamp"], chuyen: "stamp", art: "passbook" },
@@ -265,8 +270,19 @@ function daMau(ten) {
 }
 
 // đồ vật / hình lớn → SVG (màu của da)
-const vatSvg = (ten, c) => { const f = PROPS[ten]; return f ? f({ acc: c.acc, gold: c.gold, ink: c.ink, tape: c.gold, accLight: mix(c.acc, "FFFFFF", 0.5), bad: c.bad }).svg : ""; };
-const artSvg = (ten, c, nen) => { const f = ART[ten]; return f ? f(c.acc, c.bad, nen || "FFFFFF") : ""; };
+// vật 3D (PNG Fluent Emoji) bọc trong SVG: bóng đổ mềm dưới chân — "3d:lua"
+const vat3d = (ten) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><ellipse cx="100" cy="186" rx="64" ry="10" fill="#000" fill-opacity=".16"/><image href="${f3d(ten)}" x="10" y="4" width="180" height="180"/></svg>`;
+// hình lớn ghép từ vật 3D: "3d:o-mua,nha,o-to,tim" → vật đầu là vai chính (lớn, giữa), các vật sau xếp hàng dưới trên một vệt sàn; đĩa sáng màu nhấn phía sau
+function art3d(ds, c) {
+  const [chinh, ...phu] = ds.filter(coF3d); if (!chinh) return "";
+  const A = c.acc, n = Math.min(phu.length, 4), w = n ? Math.min(128, 400 / n) : 0, x0 = 210 - (n * w) / 2;
+  const hang = phu.slice(0, 4).map((t, k) => `<ellipse cx="${x0 + k * w + w / 2}" cy="${300}" rx="${w * 0.36}" ry="7" fill="#000" fill-opacity=".14"/><image href="${f3d(t)}" x="${x0 + k * w + 6}" y="${300 - w + 8}" width="${w - 12}" height="${w - 12}"/>`).join("");
+  const S = n ? 186 : 240, y = n ? 24 : 40;
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320"><circle cx="210" cy="${n ? 130 : 160}" r="${n ? 112 : 130}" fill="#${A}" fill-opacity=".16"/><circle cx="210" cy="${n ? 130 : 160}" r="${n ? 128 : 148}" fill="none" stroke="#${A}" stroke-opacity=".35" stroke-width="2" stroke-dasharray="2 10"/>`
+    + `${n ? `<rect x="${x0 - 10}" y="296" width="${n * w + 20}" height="6" rx="3" fill="#${A}" fill-opacity=".3"/>` : ""}<image href="${f3d(chinh)}" x="${210 - S / 2}" y="${y}" width="${S}" height="${S}"/>${hang}</svg>`;
+}
+const vatSvg = (ten, c) => { if (String(ten).startsWith("3d:")) return coF3d(ten.slice(3)) ? vat3d(ten.slice(3)) : ""; const f = PROPS[ten]; return f ? f({ acc: c.acc, gold: c.gold, ink: c.ink, tape: c.gold, accLight: mix(c.acc, "FFFFFF", 0.5), bad: c.bad }).svg : ""; };
+const artSvg = (ten, c, nen) => { if (String(ten).startsWith("3d:")) return art3d(ten.slice(3).split(","), c); const f = ART[ten]; return f ? f(c.acc, c.bad, nen || "FFFFFF") : ""; };
 
 const LOAI_SANG = new Set(["light"]);
 /** Thêm chất liệu vào một <section> của type thường: lớp da-<tên>, khung, tờ giấy (bc / qt), hình lớn (bìa / chương / kết), đồ vật tiền cảnh. */
@@ -280,7 +296,8 @@ const VAT_Y = { coins: /tiền|đồng|quỹ|lương|thuế|phí|giá|triệu|t�
   umbrella: /rủi ro|tổn thất|sự kiện bảo hiểm|chuyển giao|bảo vệ/i, shield: /phạm vi|trách nhiệm|bồi thường|cam kết|trung thực|quyền lợi/i };
 // thứ tự xét theo độ cụ thể của dấu hiệu: trích điều luật > phép tính > tiền > … (một từ chung như "lương" yếu hơn "Điều 64")
 const UU_TIEN = ["stamp", "calculator", "shield", "coins", "umbrella", "bankcard", "crate", "ruler", "lens", "booklet", "bars", "clip", "pen", "pin", "orb", "pencil"];
-const chonVat = (vat, chu = "") => UU_TIEN.find((v) => vat.includes(v) && VAT_Y[v].test(chu)) || vat[0];
+const chonVat = (vat, chu = "", vatY = {}) => Object.keys(vatY).find((v) => vat.includes(v) && vatY[v].test(chu)) || chonVatCu(vat, chu);
+const chonVatCu = (vat, chu = "") => UU_TIEN.find((v) => vat.includes(v) && VAT_Y[v].test(chu)) || vat[0];
 function phuSlide(html, ten, { type, i, coHinhDan, coAnh, art, chu = "", artCaption = "" }) {
   const c = DA[ten]; if (!c) return html;
   const m = html.match(/^<section class="s ([^"]*)"/); if (!m) return html;
@@ -299,7 +316,7 @@ function phuSlide(html, ten, { type, i, coHinhDan, coAnh, art, chu = "", artCapt
     if (m) them += `<div class="da-artcap" style="left:${m[1]}px;top:${+m[2] + +m[4] + 12}px;width:${m[3]}px">${String(artCaption).replace(/&/g, "&amp;").replace(/</g, "&lt;")}</div>`;
   }
   // đồ vật tiền cảnh: chỉ slide nội dung sáng; hinh.js (hinhDatVatDa) tìm góc trống, không có thì bỏ
-  if (sang && !["cover", "section", "end", "closing"].includes(type) && c.vat.length) them += `<div class="da-vat" data-da-vat style="width:190px;height:190px">${vatSvg(chonVat(c.vat, chu), c)}</div>`;
+  if (sang && !["cover", "section", "end", "closing"].includes(type) && c.vat.length) them += `<div class="da-vat" data-da-vat style="width:190px;height:190px">${vatSvg(chonVat(c.vat, chu, c.vatY), c)}</div>`;
   return html.replace(/^<section class="s /, `<section class="s da da-${ten} `).replace(/<\/section>\s*$/, them + "</section>");
 }
 

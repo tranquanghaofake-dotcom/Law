@@ -5,6 +5,7 @@ const { dungHtml } = require("../hinh/dung");
 const { kiemDeck } = require("../hinh/kiem");
 const { ART, NAMES: ART_NAMES } = require("../hinh/art");
 const { PROPS } = require("../hinh/do_vat");
+const { coF3d } = require("../hinh/f3d");
 process.env.SLIDE_CHUAN_NO_PREP = "1";
 
 const deck = (meta, slides) => ({ meta: { short: "Thử", ...meta }, slides: slides || [
@@ -16,8 +17,8 @@ test("14 da đủ trường bắt buộc; đồ vật và hình lớn của da �
   assert.equal(DA.NAMES.length, 14);
   for (const [ten, c] of Object.entries(DA.DA)) {
     for (const k of ["mon", "fits", "ink", "acc", "page", "muted", "line", "bad", "good", "gold", "nen", "khung", "the", "nhan", "so", "tienDo", "vat", "chuyen", "art"]) assert.ok(c[k] != null, `${ten}.${k}`);
-    for (const v of c.vat) assert.ok(PROPS[v], `${ten}: đồ vật "${v}" không có trong hinh/do_vat.js`);
-    assert.ok(ART[c.art], `${ten}: hình "${c.art}" không có trong hinh/art.js`);
+    for (const v of c.vat) assert.ok(v.startsWith("3d:") ? coF3d(v.slice(3)) : PROPS[v], `${ten}: đồ vật "${v}" không có trong hinh/do_vat.js / hinh/f3d`);
+    assert.ok(c.art.startsWith("3d:") ? c.art.slice(3).split(",").every(coF3d) : ART[c.art], `${ten}: hình "${c.art}" không có trong hinh/art.js / hinh/f3d`);
     assert.ok(DA.CHUYEN[c.chuyen], `${ten}: kiểu hiện "${c.chuyen}"`);
   }
 });
@@ -244,4 +245,13 @@ test("PPTX: lớp trang trí mang cờ decorative; ảnh có nội dung giữ al
     const tt = x.match(/<p:sp><p:nvSpPr><p:cNvPr[^>]*><\/p:cNvPr><p:cNvSpPr><a:spLocks noGrp="1"\/><\/p:cNvSpPr><p:nvPr><p:ph type="title"\/><\/p:nvPr>[\s\S]*?<\/p:sp>/);
     assert.ok(tt && /<a:noAutofit\/>/.test(tt[0]) && /Ba thẻ/.test(tt[0]), "tiêu đề slide là placeholder tiêu đề (có noAutofit, đúng chữ)");
   });
+});
+
+test("vật 3D (hinh/f3d): \"3d:<vật>\" ở đồ vật tiền cảnh và hình lớn ghép; vật chọn theo nội dung slide (vatY)", () => {
+  const c = DA.DA["hop-dong-bh"];
+  assert.match(DA.vatSvg("3d:lua", c), /<image href="data:image\/png;base64,/);
+  const a = DA.artSvg("3d:o-mua,nha,o-to", c); assert.equal((a.match(/<image /g) || []).length, 3);
+  assert.equal(DA.artSvg("3d:khong-co", c), "");
+  const h = dungHtml(deck({ da: "hop-dong-bh" }, [{ type: "cards", kicker: "Tái bảo hiểm", title: "Nhượng tái cho DN khác", items: [{ name: "A", desc: "a" }, { name: "B", desc: "b" }, { name: "C", desc: "c" }] }]), { deckDir: path.join(__dirname, "..") }).html;
+  assert.ok(h.includes("data-da-vat") && h.includes(require("../hinh/f3d").f3d("tau").slice(0, 80)), "slide nói về tái BH mang con tàu");
 });
