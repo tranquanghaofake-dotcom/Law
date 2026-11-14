@@ -277,6 +277,9 @@ function daCss(ten) {
   css += `.s.co-bd { justify-content: flex-start; } .s.co-bd .body { flex: 0 0 auto; justify-content: flex-start; max-width: 860px; } .s.co-bd .h { font-size: 64px; } .s.co-bd .sub { font-size: 29px; }
     .bd-nhan { position: absolute; z-index: 5; width: 400px; text-align: center; } .bd-nhan b { font: 800 28px/1.2 var(--fb); color: #${c.ink}; } .bd-nhan small { display: block; font: 600 22px/1.3 var(--fb); color: #${c.ink}; opacity: .85; margin-top: 4px; }
     .bd-nhan.so-lon b { font-size: 72px; line-height: 1; } .bd-nhan.trang b { color: #fff; text-shadow: 0 2px 8px rgba(0,0,0,.25); } .bd-nhan.trai { text-align: left; width: 460px; } .bd-nhan.nho b { font-size: 24px; }
+    .bd-nhan.the-xanh b, .bd-nhan.the-cam b { display: inline-block; padding: 4px 14px; border-radius: 999px; font-size: 25px; color: #fff; background: #${c.acc}; box-shadow: 0 6px 14px ${rgba(c.ink, 0.18)}; }
+    .bd-nhan.the-cam b { background: #D9542A; } .bd-nhan.the-xanh small, .bd-nhan.the-cam small { display: table; margin: 4px auto 0; padding: 1px 10px; border-radius: 999px; background: #fff; border: 2px solid #${c.acc}; font: 800 17px/1.2 var(--fb); letter-spacing: .05em; text-transform: uppercase; color: #${c.acc}; opacity: 1; }
+    .bd-nhan.the-cam small { color: #B8441F; border-color: #D9542A; } .bd-nhan.trai.the-cam small { margin-left: 0; }
     .bd-nhan.chu-giai { width: auto; text-align: right; } .bd-nhan.chu-giai b { font: 600 22px/1.3 var(--fb); color: #${c.muted}; }`;
   css += `.s.phim { justify-content: flex-start; } .s.phim > .k, .s.phim > .body, .s.phim .h, .s.phim .sub, .s.phim .msg { position: relative; z-index: 3; }
     .s.phim .body { flex: 0 0 auto; justify-content: flex-start; } .s.phim .h { font-size: 66px; max-width: 1240px; margin-bottom: 14px; } .s.phim .sub { font-size: 29px; max-width: 1180px; }

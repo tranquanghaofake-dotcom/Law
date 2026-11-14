@@ -19,41 +19,57 @@ const KIEU = {
   "o-ty-le": (d, P, w, h) => {
     const ph = d.phan || [], tong = ph.reduce((a, x) => a + (+x.v || 0), 0) || 1, cx = w / 2, cy = h * 0.5, R = Math.min(w * 0.44, h * 0.46), M = [P.acc, P.gold, mix(P.acc, "FFFFFF", 0.4)];
     const R0 = rnd(5); let s = "", nhan = [], a0 = Math.PI;
-    for (let i = 0; i < 26; i++) { const x = R0() * w, y = R0() * h * 0.62; if (Math.abs(x - cx) < R * 1.08 && y > cy - R * 1.05) continue; /* dưới và trong tán: không mưa */ s += `<path d="M${f1(x)} ${f1(y)} l-8 22" stroke="#${mix(P.acc, "FFFFFF", 0.45)}" stroke-width="5" stroke-linecap="round" opacity=".7"/>`; }
-    s += bong(cx, h - 18, R * 0.85);
+    for (let i = 0; i < 60; i++) { const x = R0() * w, y = R0() * h * 0.7; if (Math.abs(x - cx) < R * 1.08 && y > cy - R * 1.05) continue; /* dưới và trong tán: không mưa */ s += `<path d="M${f1(x)} ${f1(y)} l-9 28" stroke="#${mix(P.acc, "FFFFFF", 0.4)}" stroke-width="4" stroke-linecap="round" opacity=".75"/><circle cx="${f1(x - 10)}" cy="${f1(y + 31)}" r="3" fill="#${mix(P.acc, "FFFFFF", 0.4)}" opacity=".75"/>`; }
+    s += `<ellipse cx="${f1(cx)}" cy="${f1(h - 22)}" rx="${f1(w * 0.48)}" ry="26" fill="#${mix(P.acc, "FFFFFF", 0.7)}" opacity=".7"/><ellipse cx="${f1(cx)}" cy="${f1(h - 22)}" rx="${f1(R * 1.02)}" ry="20" fill="#F7F1E4"/>` + bong(cx, h - 22, R * 0.85);
+    for (let i = 0; i < 9; i++) { const x = (i % 2 ? cx + R * 1.12 + R0() * (w / 2 - R * 1.15) : R0() * (cx - R * 1.12)), yy = h - 30 + R0() * 14; s += `<ellipse cx="${f1(x)}" cy="${f1(yy)}" rx="${f1(10 + R0() * 8)}" ry="3.5" fill="none" stroke="#${mix(P.acc, "FFFFFF", 0.35)}" stroke-width="2" opacity=".8"/>`; }
     const p = (a, r = R) => [cx + r * Math.cos(a), cy + r * Math.sin(a)];
     ph.forEach((x, k) => { const a1 = a0 + Math.PI * (x.v / tong), mau = x.mau || M[k % M.length], [x0, y0] = p(a0), [x1, y1] = p(a1), lon = a1 - a0 > Math.PI ? 1 : 0, T = 900 + k * 700;
       s += `<!--L:grow:${T}--><path d="M${f1(cx)} ${f1(cy)} L${f1(x0)} ${f1(y0)} A${f1(R)} ${f1(R)} 0 ${lon} 1 ${f1(x1)} ${f1(y1)}Z" fill="#${mau}"/><path d="M${f1(cx)} ${f1(cy)} L${f1(x0)} ${f1(y0)} A${f1(R)} ${f1(R)} 0 ${lon} 1 ${f1(x1)} ${f1(y1)}Z" fill="url(#bdS)"/>`;
       const n = Math.max(2, Math.round(9 * (x.v / tong)));
       for (let j = 0; j < n; j++) { const b0 = a0 + ((a1 - a0) * j) / n, b1 = a0 + ((a1 - a0) * (j + 1)) / n, bm = (b0 + b1) / 2, [u0, v0] = p(b0), [u1, v1] = p(b1), [q0, q1] = p(bm, R * 0.86);
-        s += `<path d="M${f1(u0)} ${f1(v0)} Q${f1(q0)} ${f1(q1)} ${f1(u1)} ${f1(v1)} Z" fill="#${mix(mau, "000000", 0.22)}"/>`;
-        if (j) s += `<line x1="${f1(cx)}" y1="${f1(cy)}" x2="${f1(u0)}" y2="${f1(v0)}" stroke="#${mix(mau, "FFFFFF", 0.35)}" stroke-width="2.5" opacity=".7"/>`; }
+        s += `<path d="M${f1(cx)} ${f1(cy)} L${f1(u0)} ${f1(v0)} A${f1(R)} ${f1(R)} 0 0 1 ${f1(u1)} ${f1(v1)}Z" fill="#${j % 2 ? mix(mau, "000000", 0.07) : mix(mau, "FFFFFF", 0.06)}"/>`
+          + `<path d="M${f1(u0)} ${f1(v0)} Q${f1(q0)} ${f1(q1)} ${f1(u1)} ${f1(v1)} Z" fill="#${mix(mau, "000000", 0.3)}"/>`
+          + `<path d="M${f1(u0)} ${f1(v0)} Q${f1(q0)} ${f1(q1)} ${f1(u1)} ${f1(v1)}" fill="none" stroke="#fff" stroke-width="1.6" stroke-dasharray="5 5" opacity=".55"/>`;
+        if (j) s += `<line x1="${f1(cx)}" y1="${f1(cy)}" x2="${f1(u0)}" y2="${f1(v0)}" stroke="#${mix(mau, "FFFFFF", 0.4)}" stroke-width="2.5" opacity=".75"/><line x1="${f1(cx + (u0 - cx) * 0.05)}" y1="${f1(cy + (v0 - cy) * 0.05)}" x2="${f1(u0)}" y2="${f1(v0)}" stroke="#fff" stroke-width="1.2" stroke-dasharray="4 6" opacity=".6"/>`; }
       s += `<line x1="${f1(cx)}" y1="${f1(cy)}" x2="${f1(x1)}" y2="${f1(y1)}" stroke="#fff" stroke-width="6"/>`;
       const am = (a0 + a1) / 2; nhan.push({ x: cx + R * 0.56 * Math.cos(am), y: cy + R * 0.56 * Math.sin(am) - 38, t: `${x.v}%`, cls: "so-lon trang", at: T + 350 });
       // bên gánh phần này đứng dưới múi của mình
       const xv = cx + (k ? 1 : -1) * R * 0.5; if (x.ve) s += vat(x.ve, P, xv - 75, h - 190, 150);
       nhan.push({ x: xv, y: h - 30, t: x.t, b: x.b, cls: "ten", at: T + 350 });
       a0 = a1; });
-    s += `<!--L:up:350--><path d="M${f1(cx - R)} ${f1(cy)} H${f1(cx + R)}" stroke="#${mix(P.ink, "FFFFFF", 0.2)}" stroke-width="3" opacity=".35"/>`
-      + `<circle cx="${f1(cx)}" cy="${f1(cy - R - 10)}" r="9" fill="#${P.ink}"/><line x1="${f1(cx)}" y1="${f1(cy - R - 4)}" x2="${f1(cx)}" y2="${f1(cy - R + 6)}" stroke="#${P.ink}" stroke-width="10"/>`
-      + `<path d="M${f1(cx)} ${f1(cy)} V${f1(h - 70)} Q${f1(cx)} ${f1(h - 40)} ${f1(cx - 30)} ${f1(h - 40)} Q${f1(cx - 54)} ${f1(h - 40)} ${f1(cx - 54)} ${f1(h - 64)}" fill="none" stroke="#${P.ink}" stroke-width="11" stroke-linecap="round"/>`;
+    s += `<!--L:up:350--><path d="M${f1(cx - R)} ${f1(cy)} Q${f1(cx)} ${f1(cy + 22)} ${f1(cx + R)} ${f1(cy)}" fill="#${mix(P.ink, "FFFFFF", 0.15)}" opacity=".35"/>`
+      + `<defs><linearGradient id="kl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8E9AA0"/><stop offset=".45" stop-color="#F2F5F6"/><stop offset="1" stop-color="#6D777C"/></linearGradient><linearGradient id="go" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5A3B26"/><stop offset=".5" stop-color="#9A6A43"/><stop offset="1" stop-color="#4E331F"/></linearGradient></defs>`
+      + `<path d="M${f1(cx - 7)} ${f1(cy - R + 4)} L${f1(cx)} ${f1(cy - R - 34)} L${f1(cx + 7)} ${f1(cy - R + 4)}Z" fill="url(#kl)"/><circle cx="${f1(cx)}" cy="${f1(cy - R - 34)}" r="5" fill="url(#kl)"/>`
+      + `<rect x="${f1(cx - 4.5)}" y="${f1(cy)}" width="9" height="${f1(h - 130 - cy)}" fill="url(#kl)"/>`
+      + `<path d="M${f1(cx)} ${f1(h - 130)} V${f1(h - 70)} Q${f1(cx)} ${f1(h - 38)} ${f1(cx - 30)} ${f1(h - 38)} Q${f1(cx - 56)} ${f1(h - 38)} ${f1(cx - 56)} ${f1(h - 64)}" fill="none" stroke="url(#go)" stroke-width="16" stroke-linecap="round"/>`
+      + [0, 1, 2].map((q) => `<line x1="${f1(cx - 4)}" y1="${f1(h - 125 + q * 18)}" x2="${f1(cx + 4)}" y2="${f1(h - 118 + q * 18)}" stroke="#3A2414" stroke-width="1.5" opacity=".6"/>`).join("") + `<rect x="${f1(cx - 9)}" y="${f1(h - 134)}" width="18" height="8" rx="3" fill="url(#kl)"/>`;
     return { svg: khungSvg(w, h, P, s), nhan };
   },
 
   // THÁP XẾP TẦNG = BIỂU ĐỒ CHỒNG: mỗi tầng = một đơn vị ("lần" / line), nhóm tầng cùng màu; tầng của nhóm đầu (mức giữ lại) viền vàng nổi bật
   "thap-tang": (d, P, w, h) => {
-    const nh = d.nhom || [], tong = nh.reduce((a, x) => a + (+x.n || 0), 0) || 1, day = h - 40, H = day - 70, t = H / tong, bw = Math.min(w * 0.34, 290), x0 = w * 0.1, R = rnd(11);
+    const nh = d.nhom || [], tong = nh.reduce((a, x) => a + (+x.n || 0), 0) || 1, day = h - 40, H = day - 190, t = H / tong, bw = Math.min(w * 0.34, 290), x0 = w * 0.1, R = rnd(11);
     const M = [mix(P.ink, "FFFFFF", 0.15), P.acc, P.gold, mix(P.acc, "FFFFFF", 0.4)];
-    let y = day, s = bong(x0 + bw / 2, day + 10, bw * 0.8), nhan = [];
+    let y = day, s = `<defs><linearGradient id="kinhT" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DCEDF0"/><stop offset="1" stop-color="#7FA3AE"/></linearGradient></defs>` + bong(x0 + bw / 2, day + 10, bw * 0.8), nhan = [];
+    // sảnh kính ở chân tháp (dưới mặt đất của biểu đồ, không tính là tầng) + người ra vào
+    s += `<rect x="${f1(x0 - 14)}" y="${f1(day + 2)}" width="${f1(bw + 28)}" height="26" fill="#${mix(P.ink, "FFFFFF", 0.25)}"/><rect x="${f1(x0 + bw * 0.3)}" y="${f1(day + 5)}" width="${f1(bw * 0.4)}" height="20" fill="url(#kinhT)"/>`
+      + [0.18, 0.82].map((fx) => `<rect x="${f1(x0 + bw * fx - 4)}" y="${f1(day + 8)}" width="8" height="16" rx="3" fill="#${fx < 0.5 ? P.gold : "E07A5F"}"/><circle cx="${f1(x0 + bw * fx)}" cy="${f1(day + 5)}" r="4" fill="#F2C29B"/>`).join("");
     nh.forEach((g, k) => { const mau = g.mau || M[k % M.length], y1 = y - g.n * t, T = 500 + k * 900; s += `<!--L:${k ? "wipe" : "up"}:${T}-->`;
       for (let j = 0; j < g.n; j++) { const yy = y - (j + 1) * t;
         s += `<rect x="${f1(x0)}" y="${f1(yy)}" width="${f1(bw)}" height="${f1(t - 2)}" fill="#${mix(mau, "FFFFFF", j % 2 ? 0.07 : 0)}"/><rect x="${f1(x0 + bw * 0.74)}" y="${f1(yy)}" width="${f1(bw * 0.26)}" height="${f1(t - 2)}" fill="#000" opacity=".16"/>`;
-        if (t > 9) for (let c = 0; c < 5; c++) s += `<rect x="${f1(x0 + 12 + c * bw * 0.14)}" y="${f1(yy + t * 0.22)}" width="${f1(bw * 0.08)}" height="${f1(Math.max(2, t * 0.42))}" rx="1" fill="#${R() > 0.35 ? "FFE3A0" : mix(mau, "000000", 0.3)}"/>`; }
+        if (t > 9) for (let c = 0; c < 5; c++) { const wx = x0 + 12 + c * bw * 0.14, wy = yy + t * 0.2, ww = bw * 0.09, wh = Math.max(3, t * 0.48), sang = R() > 0.4;
+          s += `<rect x="${f1(wx - 1.5)}" y="${f1(wy - 1.5)}" width="${f1(ww + 3)}" height="${f1(wh + 3)}" fill="#${mix(mau, "FFFFFF", 0.55)}"/><rect x="${f1(wx)}" y="${f1(wy)}" width="${f1(ww)}" height="${f1(wh)}" fill="${sang ? "#FFE3A0" : "url(#kinhT)"}"/><line x1="${f1(wx + ww / 2)}" y1="${f1(wy)}" x2="${f1(wx + ww / 2)}" y2="${f1(wy + wh)}" stroke="#${mix(mau, "FFFFFF", 0.55)}" stroke-width="1"/>`; }
+        s += `<line x1="${f1(x0)}" y1="${f1(yy + t - 2)}" x2="${f1(x0 + bw)}" y2="${f1(yy + t - 2)}" stroke="#${mix(mau, "000000", 0.3)}" stroke-width="1.5"/>`; }
       if (k === 0) s += `<rect x="${f1(x0 - 4)}" y="${f1(y1 - 2)}" width="${f1(bw + 8)}" height="${f1(g.n * t + 2)}" fill="none" stroke="#${P.gold}" stroke-width="5"/>`;
       const xb = x0 + bw + 26; s += `<path d="M${f1(xb)} ${f1(y - 3)} h18 V${f1(y1 + 3)} h-18" fill="none" stroke="#${k === 0 ? P.gold : mau}" stroke-width="5"/>`;
       nhan.push({ x: xb + 40, y: (y + y1) / 2 - (g.b ? 34 : 18), t: g.t, b: g.b, cls: "trai", at: T + 450 });
       y = y1; });
-    s += `<!--L:drop:${500 + nh.length * 900}--><rect x="${f1(x0 + bw * 0.1)}" y="${f1(y - 22)}" width="${f1(bw * 0.8)}" height="22" fill="#${mix(P.ink, "FFFFFF", 0.2)}"/><line x1="${f1(x0 + bw * 0.5)}" y1="${f1(y - 22)}" x2="${f1(x0 + bw * 0.5)}" y2="${f1(y - 70)}" stroke="#${P.ink}" stroke-width="5"/><circle cx="${f1(x0 + bw * 0.5)}" cy="${f1(y - 72)}" r="6" fill="#${P.bad}"/>`
+    const cy0 = y - 22, cxr = x0 + bw * 0.78, cang = Math.min(240, w - cxr - 20);
+    s += `<!--L:drop:${500 + nh.length * 900}--><path d="M${f1(cxr)} ${f1(cy0)} V${f1(cy0 - 120)} M${f1(cxr - 40)} ${f1(cy0 - 112)} H${f1(cxr + cang)} M${f1(cxr)} ${f1(cy0 - 120)} L${f1(cxr + cang * 0.6)} ${f1(cy0 - 112)} M${f1(cxr)} ${f1(cy0 - 120)} L${f1(cxr - 40)} ${f1(cy0 - 112)}" fill="none" stroke="#${P.gold}" stroke-width="6" stroke-linejoin="round"/>`
+      + [...Array(6).keys()].map((q) => `<path d="M${f1(cxr - 6)} ${f1(cy0 - q * 20)} l12 -20 M${f1(cxr + 6)} ${f1(cy0 - q * 20)} l-12 -20" stroke="#${P.gold}" stroke-width="2"/>`).join("")
+      + `<rect x="${f1(cxr - 46)}" y="${f1(cy0 - 116)}" width="22" height="16" fill="#${P.ink}"/><line x1="${f1(cxr + cang * 0.75)}" y1="${f1(cy0 - 112)}" x2="${f1(cxr + cang * 0.75)}" y2="${f1(cy0 - 52)}" stroke="#${P.ink}" stroke-width="2"/>`
+      + `<rect x="${f1(cxr + cang * 0.75 - 48)}" y="${f1(cy0 - 52)}" width="96" height="${f1(Math.max(8, t - 2))}" fill="#${P.gold}" stroke="#fff" stroke-width="2"/>`;
+    s += `<rect x="${f1(x0 + bw * 0.1)}" y="${f1(y - 22)}" width="${f1(bw * 0.8)}" height="22" fill="#${mix(P.ink, "FFFFFF", 0.2)}"/><line x1="${f1(x0 + bw * 0.5)}" y1="${f1(y - 22)}" x2="${f1(x0 + bw * 0.5)}" y2="${f1(y - 70)}" stroke="#${P.ink}" stroke-width="5"/><circle cx="${f1(x0 + bw * 0.5)}" cy="${f1(y - 72)}" r="6" fill="#${P.bad}"/>`
       + `<rect x="${f1(x0 - 24)}" y="${f1(day)}" width="${f1(bw + 48)}" height="12" rx="6" fill="#${P.ink}"/>`;
     return { svg: khungSvg(w, h, P, s), nhan };
   },
@@ -64,15 +80,20 @@ const KIEU = {
     const khien = (cx, y0, hh, mau) => { const ww = Math.min(hh * 0.8, cw * 0.36);
       const path = `M${f1(cx)} ${f1(y0)} L${f1(cx + ww / 2)} ${f1(y0 + hh * 0.1)} V${f1(y0 + hh * 0.5)} Q${f1(cx + ww / 2)} ${f1(y0 + hh * 0.85)} ${f1(cx)} ${f1(y0 + hh)} Q${f1(cx - ww / 2)} ${f1(y0 + hh * 0.85)} ${f1(cx - ww / 2)} ${f1(y0 + hh * 0.5)} V${f1(y0 + hh * 0.1)}Z`;
       const c0 = y0 + hh * 0.45, sc = Math.min(ww, hh) * 0.18;
-      return `<path d="${path}" fill="#${mau}" stroke="#${P.gold}" stroke-width="5" stroke-linejoin="round"/><path d="M${f1(cx)} ${f1(y0)} L${f1(cx + ww / 2)} ${f1(y0 + hh * 0.1)} V${f1(y0 + hh * 0.5)} Q${f1(cx + ww / 2)} ${f1(y0 + hh * 0.85)} ${f1(cx)} ${f1(y0 + hh)}Z" fill="#000" opacity=".13"/>`
+      return `<path d="${path}" fill="#${mau}" stroke="#${P.gold}" stroke-width="5" stroke-linejoin="round"/><path d="M${f1(cx)} ${f1(y0 + 8)} L${f1(cx - ww / 2 + 8)} ${f1(y0 + hh * 0.13)} V${f1(y0 + hh * 0.45)}" fill="none" stroke="#fff" stroke-width="4" opacity=".45" stroke-linecap="round"/><path d="M${f1(cx)} ${f1(y0)} L${f1(cx + ww / 2)} ${f1(y0 + hh * 0.1)} V${f1(y0 + hh * 0.5)} Q${f1(cx + ww / 2)} ${f1(y0 + hh * 0.85)} ${f1(cx)} ${f1(y0 + hh)}Z" fill="#000" opacity=".13"/>`
         + `<path d="M${f1(cx - sc)} ${f1(c0)} l${f1(sc * 0.75)} ${f1(sc * 0.75)} l${f1(sc * 1.4)} ${f1(-sc * 1.4)}" fill="none" stroke="#fff" stroke-width="${f1(Math.max(4, sc * 0.45))}" stroke-linecap="round" stroke-linejoin="round"/>`; };
     ca.forEach((c, k) => { const cx = cw * k + cw / 2, hn = gt, bw = Math.min(cw * 0.4, hn * 0.92), xL = cx - bw - 6, top = day - hn, T = 1100 + k * 650;
       s += `<!--L:up:${350 + k * 120}-->` + bong(cx, day + 6, cw * 0.42);
       s += `<rect x="${f1(xL + bw * 0.66)}" y="${f1(top - bw * 0.42)}" width="${f1(bw * 0.14)}" height="${f1(bw * 0.3)}" fill="#${mix("C8653A", "000000", 0.2)}"/>`
         + `<rect x="${f1(xL)}" y="${f1(top)}" width="${f1(bw)}" height="${f1(hn)}" fill="#FBF3E4"/><rect x="${f1(xL + bw * 0.7)}" y="${f1(top)}" width="${f1(bw * 0.3)}" height="${f1(hn)}" fill="#000" opacity=".07"/>`
         + `<path d="M${f1(xL - 12)} ${f1(top)} L${f1(xL + bw / 2)} ${f1(top - bw * 0.42)} L${f1(xL + bw + 12)} ${f1(top)}Z" fill="#C8653A"/><path d="M${f1(xL + bw / 2)} ${f1(top - bw * 0.42)} L${f1(xL + bw + 12)} ${f1(top)} H${f1(xL + bw / 2)}Z" fill="#000" opacity=".14"/>`
-        + [0.22, 0.58].map((fx) => `<rect x="${f1(xL + bw * fx)}" y="${f1(top + hn * 0.16)}" width="${f1(bw * 0.2)}" height="${f1(hn * 0.18)}" fill="#${mix(P.gold, "FFFFFF", 0.3)}" stroke="#fff" stroke-width="3"/>`).join("")
-        + `<rect x="${f1(xL + bw * 0.38)}" y="${f1(day - hn * 0.34)}" width="${f1(bw * 0.24)}" height="${f1(hn * 0.34)}" fill="#${P.acc}"/>`
+        + [1, 2, 3].map((q) => `<path d="M${f1(xL - 12 + q * 10)} ${f1(top - q * bw * 0.1)} L${f1(xL + bw + 12 - q * 10)} ${f1(top - q * bw * 0.1)}" stroke="#${mix("C8653A", "000000", 0.25)}" stroke-width="2" opacity=".6"/>`).join("")
+        + [0.2, 0.58].map((fx) => { const wx = xL + bw * fx, wy = top + hn * 0.15, ww = bw * 0.22, wh = hn * 0.2;
+          return `<rect x="${f1(wx)}" y="${f1(wy)}" width="${f1(ww)}" height="${f1(wh)}" fill="#${mix(P.gold, "FFFFFF", 0.35)}" stroke="#fff" stroke-width="4"/><path d="M${f1(wx)} ${f1(wy)} q${f1(ww * 0.25)} ${f1(wh * 0.5)} 0 ${f1(wh)} M${f1(wx + ww)} ${f1(wy)} q${f1(-ww * 0.25)} ${f1(wh * 0.5)} 0 ${f1(wh)}" fill="#${mix(P.bad, "FFFFFF", 0.55)}" opacity=".8"/><line x1="${f1(wx + ww / 2)}" y1="${f1(wy)}" x2="${f1(wx + ww / 2)}" y2="${f1(wy + wh)}" stroke="#fff" stroke-width="2"/><rect x="${f1(wx - 4)}" y="${f1(wy + wh)}" width="${f1(ww + 8)}" height="5" fill="#${mix("C8653A", "000000", 0.2)}"/>`; }).join("")
+        + `<rect x="${f1(xL + bw * 0.34)}" y="${f1(day - 6)}" width="${f1(bw * 0.32)}" height="6" fill="#B9AE9A"/>`
+        + `<circle cx="${f1(xL - 2)}" cy="${f1(day - 12)}" r="14" fill="#3F7F5E"/><circle cx="${f1(xL + 14)}" cy="${f1(day - 8)}" r="10" fill="#4C8F6A"/>`
+        + [...Array(5).keys()].map((q) => `<rect x="${f1(xL - 40 + q * 9)}" y="${f1(day - 22)}" width="5" height="22" fill="#fff" stroke="#D8CFC0"/>`).join("") + `<line x1="${f1(xL - 42)}" y1="${f1(day - 14)}" x2="${f1(xL - 2)}" y2="${f1(day - 14)}" stroke="#D8CFC0" stroke-width="3"/>`
+        + `<rect x="${f1(xL + bw * 0.38)}" y="${f1(day - hn * 0.34)}" width="${f1(bw * 0.24)}" height="${f1(hn * 0.34 - 6)}" fill="#${P.acc}"/><circle cx="${f1(xL + bw * 0.57)}" cy="${f1(day - hn * 0.17)}" r="3" fill="#${P.gold}"/>`
         + `<line x1="${f1(cx - cw * 0.47)}" y1="${f1(top)}" x2="${f1(cx + cw * 0.47)}" y2="${f1(top)}" stroke="#${P.ink}" stroke-width="3" stroke-dasharray="10 8" opacity=".5"/>`;
       const sx = cx + cw * 0.17; s += `<!--L:up:${T}-->`;
       if (c.kieu === "trung") { const n = c.so || 3, hh = (gt * (c.ty || 2)) / n; for (let j = 0; j < n; j++) s += khien(sx, day - (j + 1) * hh, hh - 6, j % 2 ? mix(P.acc, "FFFFFF", 0.3) : P.acc); }
@@ -106,22 +127,65 @@ const KIEU = {
     return { svg: khungSvg(w, h, P, s), nhan };
   },
 
-  // TOÀ NHÀ CHÁY = BIỂU ĐỒ CỘT KÉP: chiều cao toà ∝ STBH, phần lửa ∝ thiệt hại (cùng thang); phí BH ghi trên đồng xu ở chân toà
+  // TOÀ NHÀ CHÁY = BIỂU ĐỒ CỘT KÉP (v2, chi tiết): chiều cao toà ∝ STBH, vùng cháy ∝ thiệt hại (cùng thang); thước đo hai màu bên phải mỗi toà
+  // để ĐỌC SỐ rõ ràng (xanh = STBH, cam = thiệt hại); chồng xu = phí BH (số đồng ∝ phí). Toà có mặt tiền thật: cửa sổ khung + kính phản chiếu,
+  // bậu cửa, ban công, tầng trệt cửa hàng có mái hiên sọc, bồn nước trên mái; vùng cháy: cửa sổ rực lửa, tường ám khói, lửa liếm + khói bốc
   "toa-chay": (d, P, w, h) => {
-    const ds = d.toa || [], n = ds.length, day = h - 120, max = Math.max(...ds.map((x) => +x.stbh || 0)) || 1, H = day - 70, cw = w / n, bw = Math.min(cw * 0.56, 170), R0 = rnd(3);
-    const MAU = ["81B29A", "F2C14E", "6D8EAD", "D6A2AD", "3D8A87"];
-    let s = `<rect x="0" y="${f1(day)}" width="${w}" height="8" rx="4" fill="#${P.ink}" opacity=".3"/>`, nhan = [];
-    ds.forEach((x, k) => { const cx = cw * k + cw / 2, hh = (H * x.stbh) / max, ht = (H * (x.thiet || 0)) / max, xL = cx - bw / 2, top = day - hh, mau = x.mau || MAU[k % MAU.length], T = 450 + k * 300, TF = 450 + n * 300 + 300 + k * 300;
-      s += `<!--L:up:${T}-->` + bong(cx, day + 4, bw * 0.75) + `<rect x="${f1(xL)}" y="${f1(top)}" width="${f1(bw)}" height="${f1(hh)}" fill="#${mau}"/><rect x="${f1(xL + bw * 0.72)}" y="${f1(top)}" width="${f1(bw * 0.28)}" height="${f1(hh)}" fill="#000" opacity=".14"/>`
-        + `<rect x="${f1(xL - 6)}" y="${f1(top - 12)}" width="${f1(bw + 12)}" height="14" fill="#${mix(mau, "000000", 0.35)}"/>`;
-      const rows = Math.max(1, Math.floor(hh / 34)); for (let r = 0; r < rows; r++) for (let c = 0; c < 3; c++) { const yy = top + 14 + r * 34; if (yy + 18 > day) continue; s += `<rect x="${f1(xL + 12 + c * bw * 0.24)}" y="${f1(yy)}" width="${f1(bw * 0.15)}" height="16" fill="#${R0() > 0.4 ? "FFE3A0" : mix(mau, "000000", 0.3)}"/>`; }
-      if (ht > 0) { // lửa chiếm phần dưới của toà, cao ∝ thiệt hại; ngọn lửa trồi trên mép
-        const fy = day - ht; s += `<!--L:up:${TF}--><rect x="${f1(xL)}" y="${f1(fy)}" width="${f1(bw)}" height="${f1(ht)}" fill="url(#bdL)" opacity=".9"/>`;
-        for (let j = 0; j < 4; j++) { const fx = xL + (j + 0.5) * (bw / 4), fh = 18 + R0() * 22; s += `<path d="M${f1(fx - bw / 9)} ${f1(fy)} Q${f1(fx - bw / 14)} ${f1(fy - fh * 0.6)} ${f1(fx)} ${f1(fy - fh)} Q${f1(fx + bw / 14)} ${f1(fy - fh * 0.6)} ${f1(fx + bw / 9)} ${f1(fy)}Z" fill="#FFB347"/>`; }
-        nhan.push({ x: cx, y: fy + Math.min(ht / 2, ht - 10) - 16, t: x.nhanThiet, cls: "nho trang", w: cw - 16, at: TF + 250 }); }
-      nhan.push({ x: cx, y: top - 58, t: x.nhanStbh, cls: "nho", w: cw - 16, at: T + 250 }); s += `<!--L:up:${T}-->`;
-      s += `<ellipse cx="${f1(cx)}" cy="${f1(day + 46)}" rx="34" ry="12" fill="#${mix(P.gold, "000000", 0.25)}"/><rect x="${f1(cx - 34)}" y="${f1(day + 34)}" width="68" height="12" fill="#${mix(P.gold, "000000", 0.25)}"/><ellipse cx="${f1(cx)}" cy="${f1(day + 34)}" rx="34" ry="12" fill="#${P.gold}"/>`;
-      nhan.push({ x: cx, y: day + 62, t: x.t, b: x.nhanPhi, cls: "ten", w: cw - 16, at: T + 250 }); });
+    const ds = d.toa || [], n = ds.length, day = h - 150, max = Math.max(...ds.map((x) => +x.stbh || 0)) || 1, H = day - 90, cw = w / n, bw = Math.min(cw * 0.5, 160), R0 = rnd(3);
+    const phiMin = Math.min(...ds.map((x) => +x.phi || Infinity)), MAU = ["7FA88F", "E9B949", "6B8CB0", "C995A5", "3F8A86"];
+    let s = `<defs><linearGradient id="kinh" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DCEDF0"/><stop offset=".5" stop-color="#A9C7CF"/><stop offset="1" stop-color="#7FA3AE"/></linearGradient>
+<linearGradient id="kinhLua" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#FF6A2B"/><stop offset=".6" stop-color="#FFB13B"/><stop offset="1" stop-color="#FFE38A"/></linearGradient>
+<linearGradient id="am" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3A2A28" stop-opacity=".55"/><stop offset=".35" stop-color="#7A3A20" stop-opacity=".28"/><stop offset="1" stop-color="#C2501E" stop-opacity=".22"/></linearGradient>
+<radialGradient id="khoi"><stop offset="0" stop-color="#6C6466" stop-opacity=".75"/><stop offset="1" stop-color="#6C6466" stop-opacity="0"/></radialGradient></defs>`;
+    // nền đường phố: vỉa hè lát gạch + lòng đường
+    s += `<rect x="0" y="${f1(day)}" width="${w}" height="26" fill="#${mix(P.ink, "FFFFFF", 0.78)}"/>` + [...Array(Math.ceil(w / 46)).keys()].map((k) => `<line x1="${k * 46}" y1="${f1(day)}" x2="${k * 46}" y2="${f1(day + 26)}" stroke="#fff" stroke-width="2" opacity=".6"/>`).join("")
+      + `<rect x="0" y="${f1(day + 26)}" width="${w}" height="12" fill="#${mix(P.ink, "FFFFFF", 0.45)}"/>`;
+    const nhan = [];
+    ds.forEach((x, k) => {
+      const cx = cw * k + cw / 2 - 18, hh = (H * x.stbh) / max, ht = (H * (x.thiet || 0)) / max, xL = cx - bw / 2, top = day - hh, mau = x.mau || MAU[k % MAU.length], T = 450 + k * 300, TF = 450 + n * 300 + 300 + k * 320;
+      const dam = mix(mau, "000000", 0.28), sang = mix(mau, "FFFFFF", 0.62), fy = day - ht;
+      s += `<!--L:up:${T}-->` + bong(cx, day + 4, bw * 0.8);
+      // cây xanh bên trái toà (không ở toà đầu)
+      if (k) { const tx = cw * k - 10; s += `<rect x="${f1(tx - 3)}" y="${f1(day - 46)}" width="6" height="46" fill="#6B4F3A"/><circle cx="${f1(tx)}" cy="${f1(day - 62)}" r="26" fill="#3F7F5E"/><circle cx="${f1(tx - 14)}" cy="${f1(day - 50)}" r="18" fill="#356F52"/><path d="M${f1(tx - 18)} ${f1(day - 78)} q14 -12 30 -2" fill="none" stroke="#7DBA92" stroke-width="5" stroke-linecap="round"/>`; }
+      // thân toà + mặt tối + gờ mái
+      s += `<rect x="${f1(xL)}" y="${f1(top)}" width="${f1(bw)}" height="${f1(hh)}" fill="#${mau}"/><rect x="${f1(xL + bw * 0.76)}" y="${f1(top)}" width="${f1(bw * 0.24)}" height="${f1(hh)}" fill="#${dam}" opacity=".55"/>`
+        + `<rect x="${f1(xL - 6)}" y="${f1(top - 10)}" width="${f1(bw + 12)}" height="12" fill="#${dam}"/><rect x="${f1(xL - 6)}" y="${f1(top - 10)}" width="${f1(bw + 12)}" height="3" fill="#fff" opacity=".35"/>`;
+      if (hh > 160) s += `<rect x="${f1(xL + bw * 0.58)}" y="${f1(top - 40)}" width="30" height="30" rx="4" fill="#${mix(P.ink, "FFFFFF", 0.55)}"/><rect x="${f1(xL + bw * 0.58 + 4)}" y="${f1(top - 10)}" width="4" height="10" fill="#${P.ink}"/><rect x="${f1(xL + bw * 0.58 + 22)}" y="${f1(top - 10)}" width="4" height="10" fill="#${P.ink}"/>`
+        + `<rect x="${f1(xL + 14)}" y="${f1(top - 24)}" width="26" height="14" fill="#${mix(P.ink, "FFFFFF", 0.7)}"/><circle cx="${f1(xL + 27)}" cy="${f1(top - 17)}" r="4" fill="#${P.ink}"/>`;
+      // tầng: cửa sổ khung, kính phản chiếu, bậu; ban công mỗi 4 tầng
+      const fh = 34, tret = 52, so = Math.max(0, Math.floor((hh - tret - 14) / fh)), cot = bw > 120 ? 3 : 2, ow = (bw * 0.7) / cot, gap = (bw * 0.7 - ow * 0.62 * cot) / (cot + 1);
+      const chay = [];
+      for (let r = 0; r < so; r++) { const yy = top + 12 + r * fh;
+        for (let c = 0; c < cot; c++) { const wx = xL + bw * 0.06 + gap + c * (ow * 0.62 + gap), ww = ow * 0.62, wh = fh * 0.6, cua = yy + wh * 0.5 >= fy;
+          s += `<rect x="${f1(wx - 3)}" y="${f1(yy - 3)}" width="${f1(ww + 6)}" height="${f1(wh + 6)}" fill="#${sang}"/><rect x="${f1(wx)}" y="${f1(yy)}" width="${f1(ww)}" height="${f1(wh)}" fill="url(#kinh)"/>`
+            + `<path d="M${f1(wx + ww * 0.15)} ${f1(yy + wh)} L${f1(wx + ww * 0.55)} ${f1(yy)}" stroke="#fff" stroke-width="3" opacity=".55"/><line x1="${f1(wx + ww / 2)}" y1="${f1(yy)}" x2="${f1(wx + ww / 2)}" y2="${f1(yy + wh)}" stroke="#${sang}" stroke-width="2"/>`
+            + `<rect x="${f1(wx - 5)}" y="${f1(yy + wh + 3)}" width="${f1(ww + 10)}" height="4" fill="#${dam}"/>`;
+          if (cua) chay.push([wx, yy, ww, wh]); }
+        if (r % 4 === 3 && r < so - 1) s += `<rect x="${f1(xL - 4)}" y="${f1(yy + fh - 6)}" width="${f1(bw * 0.78)}" height="5" fill="#${dam}"/>` + [...Array(6).keys()].map((q) => `<line x1="${f1(xL + q * bw * 0.13)}" y1="${f1(yy + fh - 18)}" x2="${f1(xL + q * bw * 0.13)}" y2="${f1(yy + fh - 6)}" stroke="#${dam}" stroke-width="2"/>`).join("") + `<line x1="${f1(xL - 4)}" y1="${f1(yy + fh - 18)}" x2="${f1(xL + bw * 0.74)}" y2="${f1(yy + fh - 18)}" stroke="#${dam}" stroke-width="2"/>`; }
+      // tầng trệt: cửa hàng có mái hiên sọc + cửa kính
+      const ty = day - tret; s += `<rect x="${f1(xL)}" y="${f1(ty)}" width="${f1(bw)}" height="${tret}" fill="#${mix(mau, "000000", 0.12)}"/>`
+        + [...Array(8).keys()].map((q) => `<path d="M${f1(xL - 4 + q * (bw + 8) / 8)} ${f1(ty)} h${f1((bw + 8) / 8)} l-4 14 h${f1(-(bw + 8) / 8 + 8)}Z" fill="${q % 2 ? "#fff" : "#" + P.acc}"/>`).join("")
+        + `<rect x="${f1(xL + bw * 0.12)}" y="${f1(ty + 20)}" width="${f1(bw * 0.4)}" height="${tret - 20}" fill="url(#kinh)"/><rect x="${f1(xL + bw * 0.6)}" y="${f1(ty + 18)}" width="${f1(bw * 0.2)}" height="${tret - 18}" fill="#${P.ink}"/>`;
+      // thước STBH (xanh) cạnh phải: đất → mái
+      const xr = xL + bw + 16; s += `<path d="M${f1(xr)} ${f1(day)} V${f1(top - 10)} M${f1(xr - 7)} ${f1(top - 10)} h14 M${f1(xr - 7)} ${f1(day)} h14" stroke="#${P.acc}" stroke-width="4"/>`;
+      nhan.push({ x: cx, y: top - 92, t: x.nhanStbh, b: "STBH", cls: "the-xanh", w: cw - 10, at: T + 250 });
+      // chồng xu = phí (số đồng ∝ phí)
+      const dong = Math.max(1, Math.round((x.phi || phiMin) / phiMin)), xc = cx - 78;
+      for (let q = 0; q < dong; q++) { const yc = day + 70 - q * 9; s += `<ellipse cx="${f1(xc)}" cy="${f1(yc + 5)}" rx="20" ry="7" fill="#${mix(P.gold, "000000", 0.3)}"/><ellipse cx="${f1(xc)}" cy="${f1(yc)}" rx="20" ry="7" fill="#${P.gold}" stroke="#${mix(P.gold, "000000", 0.2)}" stroke-width="1.5"/><ellipse cx="${f1(xc)}" cy="${f1(yc)}" rx="12" ry="4" fill="none" stroke="#FFE7A8" stroke-width="1.5"/>`; }
+      nhan.push({ x: cx, y: day + 44, t: x.t, b: x.nhanPhi, cls: "ten", w: cw - 10, at: T + 250 });
+      // VÙNG CHÁY (lớp riêng, hiện sau): tường ám khói, cửa sổ rực lửa, lửa liếm ở tầng cháy cao nhất, khói bốc; thước thiệt hại (cam)
+      if (ht > 0) { s += `<!--L:up:${TF}--><rect x="${f1(xL)}" y="${f1(fy)}" width="${f1(bw)}" height="${f1(ht - tret * 0.3)}" fill="url(#am)"/>`;
+        chay.forEach(([wx, yy, ww, wh]) => { s += `<rect x="${f1(wx)}" y="${f1(yy)}" width="${f1(ww)}" height="${f1(wh)}" fill="url(#kinhLua)"/><path d="M${f1(wx + 2)} ${f1(yy + wh)} q${f1(ww * 0.2)} ${f1(-wh * 0.8)} ${f1(ww * 0.35)} ${f1(-wh * 0.2)} q${f1(ww * 0.1)} ${f1(-wh * 0.9)} ${f1(ww * 0.3)} ${f1(-wh * 0.3)} q${f1(ww * 0.1)} ${f1(-wh * 0.6)} ${f1(ww * 0.3)} ${f1(wh * 0.5)}Z" fill="#FFF0A8" opacity=".85"/>`; });
+        const top3 = chay.length ? Math.min(...chay.map((c) => c[1])) : fy;
+        for (let q = 0; q < 5; q++) { const fx = xL + 8 + q * (bw - 16) / 4, fhh = 26 + R0() * 30; s += `<path d="M${f1(fx - 14)} ${f1(top3 + 4)} Q${f1(fx - 12)} ${f1(top3 - fhh * 0.5)} ${f1(fx)} ${f1(top3 - fhh)} Q${f1(fx + 4)} ${f1(top3 - fhh * 0.45)} ${f1(fx + 14)} ${f1(top3 + 4)}Z" fill="#FF7A2E"/><path d="M${f1(fx - 7)} ${f1(top3 + 4)} Q${f1(fx - 5)} ${f1(top3 - fhh * 0.3)} ${f1(fx)} ${f1(top3 - fhh * 0.6)} Q${f1(fx + 3)} ${f1(top3 - fhh * 0.25)} ${f1(fx + 7)} ${f1(top3 + 4)}Z" fill="#FFD25E"/>`; }
+        for (let q = 0; q < 4; q++) s += `<circle cx="${f1(cx - 20 + q * 16 + R0() * 10)}" cy="${f1(top3 - 50 - q * 26)}" r="${f1(22 + q * 7)}" fill="url(#khoi)"/>`;
+        for (let q = 0; q < 6; q++) s += `<circle cx="${f1(xL + R0() * bw)}" cy="${f1(top3 - 20 - R0() * 60)}" r="2.2" fill="#FFB347"/>`;
+        const xo = xr + 10; s += `<path d="M${f1(xo)} ${f1(day)} V${f1(fy)} M${f1(xo - 7)} ${f1(fy)} h14" stroke="#E5572B" stroke-width="5"/>`;
+        nhan.push(hh < 115 ? { x: xr + 26, y: fy - 66, t: x.nhanThiet, b: "thiệt hại", cls: "trai the-cam", w: 220, at: TF + 250 } : { x: cx, y: Math.max(fy + 6, top + 30), t: x.nhanThiet, b: "thiệt hại", cls: "the-cam", w: cw - 10, at: TF + 250 }); }
+      s += `<!--L:fade:${T}-->`;
+    });
+    // người tí hon đứng nhìn ở vỉa hè (câu chuyện: tổn thất xảy ra với người thật)
+    for (let q = 0; q < 9; q++) { const px = 40 + R0() * (w - 80), pc = ["3D8A87", "E07A5F", "6D8EAD", "F2C14E"][q % 4]; s += `<rect x="${f1(px - 5)}" y="${f1(day - 4)}" width="10" height="20" rx="4" fill="#${pc}" transform="translate(0 ${f1(-12)})"/><circle cx="${f1(px)}" cy="${f1(day - 22)}" r="6" fill="#F2C29B"/>`; }
     return { svg: khungSvg(w, h, P, s), nhan };
   },
 

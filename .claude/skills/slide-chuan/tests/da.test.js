@@ -285,9 +285,9 @@ test("biểu đồ cách điệu (hinh/bieu_do_ve.js): tán ô chia đúng tỉ 
 test("biểu đồ cách điệu mới: toa-chay đúng tỉ lệ STBH / thiệt hại; duong-moc tán ô che đúng đoạn; hu-nguong có đủ nhãn", () => {
   const BDV = require("../hinh/bieu_do_ve"), P = { acc: "0F5C55", gold: "EFA23F", ink: "17302E", bad: "B0302A" };
   const t = BDV.KIEU["toa-chay"]({ toa: [{ t: "HĐ 1", stbh: 10, thiet: 8, nhanStbh: "10", nhanThiet: "8" }, { t: "HĐ 2", stbh: 5, thiet: 0, nhanStbh: "5" }] }, P, 800, 600);
-  const cao = [...t.svg.matchAll(/<rect x="[\d.]+" y="([\d.]+)" width="[\d.]+" height="([\d.]+)" fill="#81B29A"\/>|<rect x="[\d.]+" y="([\d.]+)" width="[\d.]+" height="([\d.]+)" fill="#F2C14E"\/>/g)].map((m) => +(m[2] || m[4]));
+  const cao = [...t.svg.matchAll(/<rect x="[\d.]+" y="([\d.]+)" width="[\d.]+" height="([\d.]+)" fill="#7FA88F"\/>|<rect x="[\d.]+" y="([\d.]+)" width="[\d.]+" height="([\d.]+)" fill="#E9B949"\/>/g)].map((m) => +(m[2] || m[4]));
   assert.ok(Math.abs(cao[0] / cao[1] - 2) < 0.01, "toà HĐ 1 cao gấp đôi HĐ 2 (STBH 10 / 5)");
-  assert.ok(t.nhan.some((n) => n.t === "8" && /trang/.test(n.cls)) && t.nhan.every((n) => !n.w || n.w < 400), "nhãn thiệt hại trên lửa; nhãn rộng theo cột");
+  assert.ok(t.nhan.some((n) => n.t === "8" && /the-cam/.test(n.cls)) && t.nhan.some((n) => n.t === "10" && /the-xanh/.test(n.cls)) && t.nhan.every((n) => !n.w || n.w < 400), "nhãn thiệt hại trên lửa; nhãn rộng theo cột");
   const d = BDV.KIEU["duong-moc"]({ moc: [{ t: "Ký" }, { t: "Hiệu lực", bat: true }, { t: "Hết", het: true }] }, P, 1600, 500);
   assert.equal(d.nhan.filter((n) => n.cls === "ten").length, 3);
   assert.equal(BDV.KIEU["hu-nguong"]({}, P, 1600, 600).nhan.length, 5);
@@ -297,7 +297,7 @@ test("biểu đồ dựng lên theo lập luận: tách lớp theo dấu, sàn d
   const BDV = require("../hinh/bieu_do_ve"), P = { acc: "0F5C55", gold: "EFA23F", ink: "17302E", bad: "B0302A" };
   const r = BDV.KIEU["toa-chay"]({ toa: [{ t: "HĐ 1", stbh: 10, thiet: 8, nhanStbh: "10", nhanThiet: "8" }, { t: "HĐ 2", stbh: 5, thiet: 2, nhanStbh: "5", nhanThiet: "2" }] }, P, 800, 600);
   assert.ok(r.lop.length >= 6 && r.lop[0].svg.includes("snG") && r.lop[r.lop.length - 1].tren, "sàn diễn → toà → lửa → hạt nhiễu");
-  const lua = r.lop.filter((l) => l.svg.includes("url(#bdL)")).map((l) => l.at), toa = r.lop.filter((l) => l.a === "up" && !l.svg.includes("url(#bdL)")).map((l) => l.at);
+  const lua = r.lop.filter((l) => l.svg.includes("url(#am)")).map((l) => l.at), toa = r.lop.filter((l) => l.a === "up" && !l.svg.includes("url(#am)")).map((l) => l.at);
   assert.ok(lua.length === 2 && Math.min(...lua) > Math.max(...toa), "lửa chỉ bốc lên sau khi mọi toà đã mọc (thiệt hại đọc sau STBH)");
   assert.ok(r.nhan.every((n) => n.at > 0) && !r.svg.includes("<!--L:"), "mọi nhãn có thời điểm; bản gộp không còn dấu tách lớp");
   const h = dungHtml(deck({ da: "hop-dong-bh" }, [{ type: "statement", title: "Thử", bieuDo: { kieu: "toa-chay", toa: [{ t: "A", stbh: 2, thiet: 1, nhanStbh: "2", nhanThiet: "1" }] } }]), { deckDir: path.join(__dirname, "..") }).html;
