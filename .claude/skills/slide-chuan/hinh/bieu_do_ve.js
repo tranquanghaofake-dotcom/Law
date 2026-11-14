@@ -293,6 +293,59 @@ const KIEU = {
       { x: xd + 30, y: bot + 26, t: d.tNhan || "DN nhận tái trả phần vượt", cls: "ten", at: 2600 }];
     return { svg: khungSvg(w, h, P, s), nhan };
   },
+  // CÂY PHÂN LOẠI: thân = khái niệm gốc (biển gỗ đóng trên thân), mỗi cành lớn = một nhóm (biển treo), mỗi quả = một loại; nhãn quả ghi slide giảng loại đó
+  "cay-phan-loai": (d, P, w, h) => {
+    const cn = d.canh || [], n = cn.length, day = h - 24, cx = w / 2, fy = h * 0.5, R = rnd(11); let s = "", nhan = [];
+    const nau = "6B4A2E", nauT = "4E3420", la = [mix(P.acc, "FFFFFF", 0.28), mix(P.acc, "FFFFFF", 0.45), P.acc, mix(P.acc, "000000", 0.18)];
+    // rễ + thân
+    s += `<!--L:up:300-->` + bong(cx, day + 4, 260) + [-1, 1].map((k) => `<path d="M${f1(cx + k * 30)} ${day - 30} Q${f1(cx + k * 90)} ${day - 4} ${f1(cx + k * 170)} ${day + 2}" fill="none" stroke="#${nauT}" stroke-width="20" stroke-linecap="round"/>`).join("")
+      + `<path d="M${f1(cx - 62)} ${day} C${f1(cx - 40)} ${f1(day - 120)} ${f1(cx - 46)} ${f1(fy + 60)} ${f1(cx - 30)} ${f1(fy)} L${f1(cx + 30)} ${f1(fy)} C${f1(cx + 46)} ${f1(fy + 60)} ${f1(cx + 40)} ${f1(day - 120)} ${f1(cx + 62)} ${day}Z" fill="#${nau}"/>`
+      + `<path d="M${f1(cx + 8)} ${f1(fy + 10)} C${f1(cx + 26)} ${f1(fy + 90)} ${f1(cx + 22)} ${f1(day - 100)} ${f1(cx + 44)} ${day}" fill="none" stroke="#${nauT}" stroke-width="10" opacity=".6"/>`
+      + `<rect x="${f1(cx - 175)}" y="${f1(day - 150)}" width="350" height="74" rx="10" fill="#${mix(nau, "FFFFFF", 0.12)}" stroke="#${nauT}" stroke-width="5"/><circle cx="${f1(cx - 155)}" cy="${f1(day - 113)}" r="6" fill="#${nauT}"/><circle cx="${f1(cx + 155)}" cy="${f1(day - 113)}" r="6" fill="#${nauT}"/>`;
+    nhan.push({ x: cx, y: day - 133, t: d.goc || "Gốc", cls: "trang", w: 330, at: 500 });
+    cn.forEach((c, k) => { const T = 900 + k * 1100, dir = n === 1 ? 0 : k / (n - 1) * 2 - 1, tx = cx + dir * w * 0.27, ty = h * 0.24, qua = c.qua || [];
+      // cành
+      let g = `<!--L:wipe:${T}--><path d="M${f1(cx + dir * 10)} ${f1(fy + 20)} C${f1(cx + dir * 60)} ${f1(fy - 60)} ${f1(tx - dir * 120)} ${f1(ty + 120)} ${f1(tx)} ${f1(ty + 40)}" fill="none" stroke="#${nau}" stroke-width="38" stroke-linecap="round"/>`;
+      // tán lá: cụm tròn nhiều sắc, viền sáng phía nguồn sáng
+      g += `<!--L:zoom:${T + 300}-->`; const R2 = rnd(7 + k * 13); for (let j = 0; j < 20; j++) { const a = R2() * Math.PI * 2, rr = 40 + R2() * 56, x = tx + Math.cos(a) * (40 + R2() * 170), y = ty + Math.sin(a) * (20 + R2() * 42), m = la[j % 4];
+        g += `<circle cx="${f1(x)}" cy="${f1(y)}" r="${f1(rr)}" fill="#${m}"/><path d="M${f1(x - rr * 0.6)} ${f1(y - rr * 0.7)} Q${f1(x)} ${f1(y - rr * 1.02)} ${f1(x + rr * 0.6)} ${f1(y - rr * 0.7)}" fill="none" stroke="#fff" stroke-width="5" opacity=".28" stroke-linecap="round"/>`; }
+      g += `<rect x="${f1(tx - 180)}" y="${f1(ty - 36)}" width="360" height="72" rx="36" fill="#${mix(P.acc, "000000", 0.3)}" stroke="#fff" stroke-width="5"/>`;
+      s += g; nhan.push({ x: tx, y: ty - 20, t: c.t, cls: "trang", w: 340, at: T + 500 });
+      if (c.b) nhan.push({ x: tx, y: ty + 52, t: c.b, cls: "nho trang-nen", w: 320, at: T + 500 });
+      // quả: treo dưới tán, cuống + lá nhỏ + điểm sáng
+      qua.forEach((q, j) => { const qx = tx + (qua.length === 1 ? 0 : (j / (qua.length - 1) * 2 - 1) * 175), qy = h * 0.47 + (j % 2) * 14, TT = T + 700 + j * 250, rq = 44;
+        s += `<!--L:drop:${TT}--><path d="M${f1(qx)} ${f1(ty + 90)} Q${f1(qx + 10)} ${f1(qy - 60)} ${f1(qx)} ${f1(qy - rq)}" fill="none" stroke="#${nauT}" stroke-width="6"/><path d="M${f1(qx)} ${f1(qy - rq - 6)} q24 -26 48 -10 q-22 20 -48 10Z" fill="#${la[3]}"/>`
+          + `<circle cx="${f1(qx)}" cy="${f1(qy)}" r="${rq}" fill="#${mix(P.gold, "000000", 0.34)}"/><circle cx="${f1(qx + 10)}" cy="${f1(qy + 10)}" r="${rq}" fill="#000" opacity=".1"/><circle cx="${f1(qx - 3)}" cy="${f1(qy - 3)}" r="${rq - 6}" fill="#${mix(P.gold, "000000", 0.3)}"/><ellipse cx="${f1(qx - 15)}" cy="${f1(qy - 16)}" rx="12" ry="8" fill="#fff" opacity=".55"/>`;
+        nhan.push({ x: qx, y: qy - 20, t: String(q.so ?? ""), cls: "so-tram nho-tron", w: 70, at: TT + 100 });
+        nhan.push({ x: qx, y: qy + rq + 14, t: q.t, b: q.b, cls: "ten", w: 330, at: TT + 150 }); }); });
+    return { svg: khungSvg(w, h, P, s), nhan };
+  },
+  // BA TẬP HỒ SƠ: mỗi tập (tab màu = nhóm) chứa đúng số tờ của nhóm, tờ thò lên khỏi mép; danh sách đánh số liên tục 1..n trên mặt tập — đếm được đủ số tài liệu
+  "ho-so": (d, P, w, h) => {
+    const tp = d.tap || [], n = tp.length, gap = 46, fw = (w - gap * (n - 1)) / n, top = 64, mat = 250, day = h - 16, R = rnd(5); let s = "", nhan = [], so = 0;
+    const MAU = [P.acc, mix(P.gold, "000000", 0.38), mix(P.ink, "FFFFFF", 0.12)];
+    tp.forEach((t, k) => { const x = k * (fw + gap), T = 300 + k * 900, m = MAU[k % 3], gs = t.giay || [];
+      s += `<!--L:up:${T}-->` + bong(x + fw / 2, day + 4, fw * 0.55)
+        + `<path d="M${f1(x)} ${top + 50} H${f1(x + 26)} L${f1(x + 46)} ${top} H${f1(x + 336)} L${f1(x + 356)} ${top + 50} H${f1(x + fw)} V${f1(day)} H${f1(x)}Z" fill="#${m}"/>`
+        + `<rect x="${f1(x)}" y="${top + 50}" width="${f1(fw)}" height="10" fill="#000" opacity=".12"/>`;
+      nhan.push({ x: x + 191, y: top + 8, t: t.t, cls: "trang nho", w: 300, at: T + 100 });
+      // các tờ giấy, lệch nhẹ như được xếp tay
+      let g = `<!--L:drop:${T + 300}-->`; gs.forEach((ten, j) => { const px = x + 30 + j * 22, py = top + 82 + j * 26, pw = fw - 60 - (gs.length - 1) * 22, rot = (R() - 0.5) * 3;
+        g += `<g transform="rotate(${rot.toFixed(2)} ${f1(px + pw / 2)} ${f1(py + 100)})"><rect x="${f1(px + 5)}" y="${f1(py + 5)}" width="${f1(pw)}" height="${mat}" fill="#000" opacity=".1"/><rect x="${f1(px)}" y="${f1(py)}" width="${f1(pw)}" height="${mat}" fill="#FFFDF7" stroke="#${mix(P.ink, "FFFFFF", 0.75)}" stroke-width="2"/>`
+          + `<rect x="${f1(px + 22)}" y="${f1(py + 18)}" width="${f1(pw * 0.42)}" height="10" rx="5" fill="#${m}"/>` + [0, 1].map((r) => `<rect x="${f1(px + 22)}" y="${f1(py + 40 + r * 16)}" width="${f1(pw * (0.78 - r * 0.2))}" height="6" rx="3" fill="#${mix(P.ink, "FFFFFF", 0.7)}"/>`).join("")
+          + (/chứng nhận/i.test(ten) ? `<circle cx="${f1(px + pw - 46)}" cy="${f1(py + 40)}" r="22" fill="none" stroke="#${P.bad}" stroke-width="4" opacity=".75"/><circle cx="${f1(px + pw - 46)}" cy="${f1(py + 40)}" r="13" fill="none" stroke="#${P.bad}" stroke-width="2" opacity=".75"/>` : "")
+          + (/hoá đơn|thu phí/i.test(ten) ? `<text x="${f1(px + pw - 54)}" y="${f1(py + 52)}" font-family="Arial" font-weight="700" font-size="30" fill="#${P.gold}">₫</text>` : "") + `</g>`; });
+      s += g;
+      // mặt trước tập: danh sách đánh số
+      const mt = top + 82 + gs.length * 26 + 70;
+      s += `<!--L:up:${T + 600}--><path d="M${f1(x - 8)} ${f1(mt)} H${f1(x + fw + 8)} L${f1(x + fw)} ${f1(day)} H${f1(x)}Z" fill="#${mix(m, "FFFFFF", 0.86)}"/><rect x="${f1(x - 8)}" y="${f1(mt)}" width="${f1(fw + 16)}" height="8" fill="#${m}"/>`
+        + `<rect x="${f1(x + fw - 70)}" y="${f1(mt - 30)}" width="16" height="70" rx="8" fill="none" stroke="#${mix(P.ink, "FFFFFF", 0.4)}" stroke-width="5"/>`;
+      gs.forEach((ten, j) => { so++; const ly = mt + 34 + j * 66;
+        s += `<circle cx="${f1(x + 46)}" cy="${f1(ly + 18)}" r="24" fill="#${m}"/>`;
+        nhan.push({ x: x + 46, y: ly + 2, t: String(so), cls: "so-tram nho-tron", w: 60, at: T + 700 + j * 120 });
+        nhan.push({ x: x + 84, y: ly + 2, t: ten, cls: "trai nho", w: fw - 96, at: T + 700 + j * 120 }); }); });
+    return { svg: khungSvg(w, h, P, s), nhan };
+  },
 };
 // SÀN DIỄN: vầng sáng sau biểu đồ + mặt sàn gradient — biểu đồ đứng trong một không gian có ánh sáng, không "trôi" trên nền
 const san = (w, h, P) => `<defs><radialGradient id="snG" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#${mix(P.gold, "FFFFFF", 0.55)}" stop-opacity=".55"/><stop offset="1" stop-color="#${mix(P.gold, "FFFFFF", 0.55)}" stop-opacity="0"/></radialGradient>

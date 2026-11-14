@@ -62,7 +62,8 @@ function dungPhim(s, h, daTen, i, st) {
     const L = Math.min(x1, x2) - 40, T = cy - 40, Wd = Math.abs(x2 - x1) + 80, Hd = Math.max(y1, y2) - T + 40, q = (v, o) => (v - o).toFixed(0);
     const mau = n.mau || c.gold, svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${Wd.toFixed(0)} ${Hd.toFixed(0)}"><path d="M${q(x1, L)} ${q(y1, T)} Q${q((x1 + x2) / 2, L)} ${q(cy, T)} ${q(x2, L)} ${q(y2, T)}" fill="none" stroke="#${mau}" stroke-width="9" stroke-dasharray="22 14" stroke-linecap="round"/>`
       + `<circle cx="${q(x2, L)}" cy="${q(y2, T)}" r="14" fill="#${mau}"/></svg>`;
-    them += `<div class="emo phim-noi" data-l="noi-${i}-${k}" data-m="noi-${esc(n.tu)}-${esc(n.den)}" data-sau="1" data-a="wipe" data-at="${700 + k * 300}" data-alt="Mũi tên: ${esc(n.nhan || "")}" style="left:${L.toFixed(0)}px;top:${T.toFixed(0)}px;width:${Wd.toFixed(0)}px;height:${Hd.toFixed(0)}px;z-index:2"><img src="${uri(svg)}" alt="" style="filter:none"></div>`;
+    const mn = `noi-${n.tu}-${n.den}`, daCo = truocDv.has(mn); nay.add(mn);   /* mũi tên đã có ở slide trước → chỉ Morph, không hiện lại */
+    them += `<div class="emo phim-noi" data-l="noi-${i}-${k}" data-m="noi-${esc(n.tu)}-${esc(n.den)}" data-sau="1" ${daCo ? "" : `data-a="wipe" data-at="${700 + k * 300}"`} data-alt="Mũi tên: ${esc(n.nhan || "")}" style="left:${L.toFixed(0)}px;top:${T.toFixed(0)}px;width:${Wd.toFixed(0)}px;height:${Hd.toFixed(0)}px;z-index:2"><img src="${uri(svg)}" alt="" style="filter:none"></div>`;
     // nhãn đặt tại điểm vt (0–1) dọc đường cong — hai mũi tên cùng xuất phát thì cho vt khác nhau để nhãn không chồng
     const vt = n.vt ?? 0.5, bx = (1 - vt) ** 2 * x1 + 2 * (1 - vt) * vt * ((x1 + x2) / 2) + vt * vt * x2, by = (1 - vt) ** 2 * y1 + 2 * (1 - vt) * vt * cy + vt * vt * y2;
     if (n.nhan) them += `<div class="phim-nhan noi" data-in="rise" style="--i:${20 + k * 3};left:${(bx - 210).toFixed(0)}px;top:${(by - 30).toFixed(0)}px"><b>${n.so ? `<span class="so-buoc">${esc(n.so)}</span>` : ""}${esc(n.nhan)}</b></div>`; });
@@ -77,7 +78,7 @@ function dungPhim(s, h, daTen, i, st) {
     // mỗi lớp của biểu đồ là một ảnh có hiệu ứng + thời điểm riêng: biểu đồ DỰNG LÊN theo lập luận khi trình chiếu
     (r.lop || [{ svg: r.svg, a: "rise", at: 350 }]).forEach((l, k) => { them += `<div class="emo bd-hinh" data-l="bd-${i}-${k}" data-m="bd-${esc(b.kieu)}-${k}" data-a="${esc(l.a)}" data-at="${l.at}" data-alt="${k ? "" : `Biểu đồ: ${esc(b.alt || b.kieu)}`}" style="left:${X}px;top:${Y}px;width:${Wb}px;height:${Hb}px;z-index:${l.tren ? 3 : 2}"><img src="${uri(l.svg)}" alt="" style="filter:none"></div>`; });
     r.nhan.forEach((n, k) => { const cl = n.cls || "", trai = /\btrai\b/.test(cl), phai = /chu-giai/.test(cl);
-      const pos = trai ? `left:${(X + n.x).toFixed(0)}px;top:${(Y + n.y).toFixed(0)}px` : phai ? `right:${(1920 - X - n.x).toFixed(0)}px;top:${(Y + n.y).toFixed(0)}px` : `left:${(X + n.x - (n.w || 400) / 2).toFixed(0)}px;top:${(Y + n.y).toFixed(0)}px;${n.w ? `width:${n.w}px` : ""}`;
+      const pos = trai ? `left:${(X + n.x).toFixed(0)}px;top:${(Y + n.y).toFixed(0)}px${n.w ? `;width:${n.w}px` : ""}` : phai ? `right:${(1920 - X - n.x).toFixed(0)}px;top:${(Y + n.y).toFixed(0)}px` : `left:${(X + n.x - (n.w || 400) / 2).toFixed(0)}px;top:${(Y + n.y).toFixed(0)}px;${n.w ? `width:${n.w}px` : ""}`;
       them += `<div class="bd-nhan ${esc(cl)}" ${n.at ? `data-a="rise" data-at="${n.at}" style="${pos}"` : `data-in="rise" style="--i:${10 + k * 2};${pos}"`}><b>${esc(n.t)}</b>${n.b ? `<small>${esc(n.b)}</small>` : ""}</div>`; });
     if (!s.phong) h = h.replace(/^<section class="s ([^"]*)"/, (m, cl) => `<section class="s ${cl.replace(/\b(dark|red)\b/g, "light")} co-bd"`); }
   st.prevDv = nay;

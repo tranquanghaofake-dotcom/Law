@@ -313,3 +313,15 @@ test("lộ trình + cột trụ + số bước trên mũi tên: đủ trạm / c
   const h = dungHtml(deck({ da: "hop-dong-bh" }, [{ type: "statement", title: "Thử", phong: { gio: "sang" }, dien: [{ ve: "anh-x", x: 100, y: 600, w: 200, m: "a" }, { ve: "toa-dnbh", x: 900, y: 400, w: 300, m: "b" }], noi: [{ tu: "a", den: "b", nhan: "Phí", so: "1" }] }]), { deckDir: path.join(__dirname, "..") }).html;
   assert.ok(/<span class="so-buoc">1<\/span>Phí/.test(h) && !/[①②③]/.test(h));
 });
+
+test("cây phân loại + tập hồ sơ: đếm đủ quả / tờ, số thứ tự liên tục, nhãn nằm trong khung", () => {
+  const BDV = require("../hinh/bieu_do_ve"), P = { acc: "0F5C55", gold: "EFA23F", ink: "17302E", bad: "B0302A" };
+  const c = BDV.KIEU["cay-phan-loai"]({ goc: "Tái BH", canh: [{ t: "Tỷ lệ", qua: [{ so: 1, t: "Số thành" }, { so: 2, t: "Mức dôi" }] }, { t: "Phi tỷ lệ", qua: [{ so: 3, t: "a" }, { so: 4, t: "b" }] }] }, P, 1760, 760);
+  assert.deepEqual(c.nhan.filter((n) => /so-tram/.test(n.cls)).map((n) => n.t), ["1", "2", "3", "4"]);
+  assert.ok(c.nhan.every((n) => n.y >= 0 && n.y < 760 && n.x > 0 && n.x < 1760));
+  assert.ok(c.lop.length >= 6, "thân, cành, tán, quả dựng lên từng lớp");
+  const h = BDV.KIEU["ho-so"]({ tap: [{ t: "A", giay: ["1", "2"] }, { t: "B", giay: ["3", "4"] }, { t: "C", giay: ["5", "6", "7"] }] }, P, 1760, 600);
+  assert.deepEqual(h.nhan.filter((n) => /so-tram/.test(n.cls)).map((n) => n.t), ["1", "2", "3", "4", "5", "6", "7"]);
+  assert.equal((h.svg.match(/fill="#FFFDF7"/g) || []).length, 7, "đúng bảy tờ giấy");
+  assert.ok(h.nhan.filter((n) => /trai/.test(n.cls)).every((n) => n.w > 300));
+});

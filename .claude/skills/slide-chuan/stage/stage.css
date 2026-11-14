@@ -110,7 +110,7 @@ html, body { background: #05070d; }
 .cmp .val { font: 400 116px/1.12 var(--fd); margin: 10px 0 14px; }
 .cmp .bad .val { color: var(--bad); } .cmp .good .val { color: var(--good); }
 .cmp .card { border-top-width: 22px; } .cmp .bad.card { border-top-color: var(--red); } .cmp .good.card { border-top-color: var(--green); }
-.cmp h3 { font: 800 34px/1.25 var(--fb); } .cmp .tg { font: 600 22px/1.3 var(--fb); color: var(--mut); margin-top: 4px; }
+.cmp h3 { font: 800 34px/1.25 var(--fb); } .cmp .tg { font: 600 24px/1.3 var(--fb); color: var(--mut); margin-top: 4px; }
 .cmp p { font: 600 34px/1.4 var(--fb); } .cmp small { display: block; margin-top: 14px; font: 500 26px/1.38 var(--fb); color: var(--mut); }
 
 /* ── ledger ── */
@@ -148,7 +148,7 @@ html, body { background: #05070d; }
 .nl b { display: block; font: 400 46px/1.2 var(--fd); } .nl span { font: 500 28px/1.38 var(--fb); color: var(--mut); }
 .lt { font: 700 25px/1.2 var(--fb); color: var(--mut); margin-bottom: 22px; }
 .doc { background: #fffdf4; color: var(--ink); padding: 44px 50px 40px; transform: rotate(1.6deg); border: 5px solid var(--ink); box-shadow: 16px 16px 0 var(--ink); }
-.doc .dh { font: 800 20px/1.2 var(--fb); letter-spacing: .08em; color: #6c6452; border-bottom: 4px solid var(--ink); padding-bottom: 12px; margin-bottom: 22px; }
+.doc .dh { font: 800 24px/1.2 var(--fb); letter-spacing: .08em; color: #6c6452; border-bottom: 4px solid var(--ink); padding-bottom: 12px; margin-bottom: 22px; }
 .doc q { display: block; font: 600 34px/1.5 var(--fb); quotes: "“" "”"; }
 .doc q mark, .hlm { background: linear-gradient(transparent 12%, rgba(246,185,59,.7) 12% 92%, transparent 92%); color: inherit; padding: 0 4px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .doc .by { margin-top: 22px; font: 700 24px/1.3 var(--fb); color: var(--red-d); text-align: right; }
@@ -409,7 +409,7 @@ figure { margin: 0; } .pi { position: relative; height: 480px; background-size: 
 .hsub { margin: -6px 0 18px; font: 600 27px/1.3 var(--fb); color: var(--mut); }
 .giv { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 30px; margin-bottom: 22px; font: 600 27px/1.3 var(--fb); } .giv > b { font: 800 22px/1.2 var(--fb); letter-spacing: .08em; text-transform: uppercase; color: var(--hl); } .giv strong { font-weight: 800; }
 .lg-t small { display: block; margin-top: 6px; font: 600 22px/1.25 var(--fb); color: var(--mut); }
-.cg .card .in > .tg { font: 800 21px/1.2 var(--fb); letter-spacing: .06em; text-transform: uppercase; color: var(--hl); margin-bottom: 8px; }
+.cg .card .in > .tg { font: 800 24px/1.2 var(--fb); letter-spacing: .06em; text-transform: uppercase; color: var(--hl); margin-bottom: 8px; }
 .sh2 > .sh-h { border-bottom: 0; padding-bottom: 0; } .sh2 > .sh-h span { font: 800 22px/1.2 var(--fb); letter-spacing: .06em; text-transform: uppercase; color: var(--mut); } .sh2 > .sh-h span:nth-child(3) { text-align: right; }
 .shr { display: flex; gap: 44px; align-items: center; } .shi { list-style: none; display: grid; gap: 22px; width: 340px; }   /* hệ quả của ngưỡng đứng cạnh lưới 100 ô, không chồng thêm chiều cao */ .shi li { display: grid; grid-template-columns: auto 1fr; gap: 16px; align-items: start; font: 600 26px/1.3 var(--fb); } .shi .ico { font-size: 38px; color: var(--hl); } .shi b { display: block; font-weight: 800; } .shi span { color: var(--mut); }
 

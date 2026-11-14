@@ -256,11 +256,19 @@ const nguoiDung = (ao, quan, P, tay = "xuoi", ca = "") => (Q) => khung(Q, (S) =>
 <rect x="98" y="150" width="20" height="56" rx="8" fill="#${quan}"/><rect x="122" y="150" width="20" height="56" rx="8" fill="#${mix(quan, "000000", 0.15)}"/>
 <ellipse cx="106" cy="208" rx="16" ry="7" fill="${INK(Q)}"/><ellipse cx="134" cy="208" rx="16" ry="7" fill="${INK(Q)}"/>
 <path d="M90 160 Q88 100 120 96 Q152 100 150 160Z" fill="#${ao}"/><path d="M120 96 Q152 100 150 160 H128Z" fill="#000" fill-opacity=".1"/>
+<path d="M108 97 L120 112 L132 97 L126 95 L120 104 L114 95Z" fill="#fff" fill-opacity=".85"/><line x1="120" y1="112" x2="120" y2="158" stroke="#000" stroke-opacity=".15" stroke-width="2"/>
+${[124, 138].map((y) => `<circle cx="123" cy="${y}" r="2.4" fill="#fff" fill-opacity=".8"/>`).join("")}<rect x="91" y="150" width="58" height="6" fill="#000" fill-opacity=".22"/><rect x="117" y="149" width="8" height="8" rx="1.5" fill="#${P.gold}"/>
+<path d="M96 113 Q99 128 97 146" fill="none" stroke="#fff" stroke-opacity=".18" stroke-width="3" stroke-linecap="round"/>
 ${tay === "gio" ? `<path d="M148 112 Q170 92 176 64" fill="none" stroke="#${ao}" stroke-width="16" stroke-linecap="round"/><circle cx="177" cy="58" r="9" fill="#${DA_NGUOI}"/>` : `<path d="M150 110 Q160 134 156 158" fill="none" stroke="#${ao}" stroke-width="15" stroke-linecap="round"/><circle cx="156" cy="162" r="8" fill="#${DA_NGUOI}"/>`}
 <path d="M90 110 Q80 134 84 158" fill="none" stroke="#${mix(ao, "000000", 0.12)}" stroke-width="15" stroke-linecap="round"/><circle cx="84" cy="162" r="8" fill="#${DA_NGUOI}"/>
 ${ca}<rect x="112" y="80" width="16" height="18" rx="6" fill="#${mix(DA_NGUOI, "000000", 0.08)}"/>
-<ellipse cx="120" cy="62" rx="24" ry="27" fill="#${DA_NGUOI}"/><path d="M96 60 Q94 32 120 32 Q148 32 145 60 Q138 44 120 44 Q102 44 96 60Z" fill="${INK(Q)}"/>
-<circle cx="111" cy="64" r="2.8" fill="${INK(Q)}"/><circle cx="129" cy="64" r="2.8" fill="${INK(Q)}"/><path d="M113 75 Q120 80 127 75" fill="none" stroke="${INK(Q)}" stroke-width="2.5" stroke-linecap="round"/>`, { rx: 48 });
+<ellipse cx="96" cy="64" rx="4.5" ry="6.5" fill="#${mix(DA_NGUOI, "000000", 0.1)}"/><ellipse cx="144" cy="64" rx="4.5" ry="6.5" fill="#${mix(DA_NGUOI, "000000", 0.14)}"/>
+<ellipse cx="120" cy="62" rx="24" ry="27" fill="#${DA_NGUOI}"/><path d="M134 44 Q146 58 140 80 Q132 88 120 89 Q136 80 136 60Z" fill="#000" fill-opacity=".07"/><path d="M96 60 Q94 32 120 32 Q148 32 145 60 Q138 44 120 44 Q102 44 96 60Z" fill="${INK(Q)}"/>
+<path d="M104 40 Q114 34 126 36" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round"/>
+<path d="M106 56 Q111 53 116 56 M124 56 Q129 53 134 56" fill="none" stroke="${INK(Q)}" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="111" cy="64" r="2.8" fill="${INK(Q)}"/><circle cx="129" cy="64" r="2.8" fill="${INK(Q)}"/><circle cx="111.9" cy="63.1" r=".9" fill="#fff"/><circle cx="129.9" cy="63.1" r=".9" fill="#fff"/>
+<ellipse cx="106" cy="72" rx="4.5" ry="2.6" fill="#E9967A" fill-opacity=".45"/><ellipse cx="134" cy="72" rx="4.5" ry="2.6" fill="#E9967A" fill-opacity=".45"/><path d="M120 66 Q122 70 119 71" fill="none" stroke="#000" stroke-opacity=".18" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M113 75 Q120 80 127 75" fill="none" stroke="${INK(Q)}" stroke-width="2.5" stroke-linecap="round"/>`, { rx: 48 });
 VE["anh-x"] = (P) => nguoiDung(P.acc, "3E4F5C", P)(P);
 VE["anh-x-gio"] = (P) => nguoiDung(P.acc, "3E4F5C", P, "gio")(P);
 // thêm hai người khác màu áo để phân biệt các chủ thể trong cùng một cảnh (người được BH, người thụ hưởng)
