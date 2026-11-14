@@ -43,12 +43,31 @@ function dungPhim(s, h, daTen, i, st) {
   if (s.phong) { const pan = Math.max(0, Math.min(1, +s.phong.pan || 0)) * 480;
     truoc += `<div class="emo phim-phong" data-l="phong-${i}" data-m="phong" data-sau="0.35" data-alt="Phông nền: ${esc(s.phong.gio || "sang")}" style="left:${-pan}px;top:0;width:2400px;height:1080px;z-index:0"><img src="${uri(VEBH.phong(P, s.phong.gio))}" alt="" style="filter:none"></div>`;
     // màn sương ở nửa trên: chữ đọc rõ trên trời (cảnh vẫn thấy dưới chân chữ)
-    truoc += `<div class="phim-veil" style="position:absolute;left:0;top:0;width:1920px;height:620px;z-index:1;background:linear-gradient(180deg, ${toi ? "rgba(40,52,58,.72)" : "rgba(247,243,234,.82)"} 0%, ${toi ? "rgba(40,52,58,.35)" : "rgba(247,243,234,.45)"} 55%, transparent 100%)"></div>`;
+    { const m0 = toi ? "28343A" : "F7F3EA", a0 = toi ? 0.72 : 0.82, a1 = toi ? 0.35 : 0.45;   // màn sương là LỚP ẢNH (div gradient không sang được PPTX)
+      const sv = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 620" preserveAspectRatio="none"><defs><linearGradient id="v" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#${m0}" stop-opacity="${a0}"/><stop offset=".55" stop-color="#${m0}" stop-opacity="${a1}"/><stop offset="1" stop-color="#${m0}" stop-opacity="0"/></linearGradient></defs><rect width="1920" height="620" fill="url(#v)"/></svg>`;
+      truoc += `<div class="emo phim-veil" data-l="veil-${i}" data-m="veil" data-sau="0" data-alt="Màn sương sau chữ" style="left:0;top:0;width:1920px;height:620px;z-index:1"><img src="${uri(sv)}" alt="" style="filter:none"></div>`; }
     h = h.replace(/^<section class="s ([^"]*)"/, (m, cl) => `<section class="s ${cl.replace(/\b(dark|red)\b/g, "light")} phim ${toi ? "phim-toi" : ""}"`); }
   const truocDv = st.prevDv || new Set(), nay = new Set();
   (s.dien || []).forEach((d, k) => { const ten = d.ve; if (!VEBH.coVe(ten)) return; const m = d.m || ten, noi = truocDv.has(m); nay.add(m);
     const svg = VEBH.veSvg(ten, toi ? { ...P, ink: DA.mix(c.ink, "FFFFFF", 0.1) } : P);
     them += `<div class="emo phim-dv" data-l="dv-${i}-${k}" data-m="dv-${esc(m)}" data-sau="${d.sau ?? 1}" data-pad="8" data-alt="${esc(d.alt || "Hình vẽ: " + ten.replace(/-/g, " "))}" ${noi ? "" : `data-a="${esc(d.a || "pop")}" data-at="${d.at ?? 300 + k * 160}"`} style="left:${+d.x || 0}px;top:${+d.y || 0}px;width:${+d.w || 240}px;height:${+d.w || 240}px;z-index:${d.z ?? 2}"><img src="${uri(svg)}" alt="" style="filter:none;${d.lat ? "transform:scaleX(-1)" : ""}"></div>`; });
+  // NỘI DUNG GẮN VÀO CẢNH (references/dung-canh.md): nhãn chữ thật cạnh diễn viên; mũi tên nối diễn viên có nhãn; tiền cảnh tối đóng khung
+  const tam = {}; (s.dien || []).forEach((d) => { const w = +d.w || 240; tam[d.m || d.ve] = { x: (+d.x || 0) + w / 2, y: (+d.y || 0), w, d }; });
+  (s.dien || []).forEach((d, k) => { if (!d.nhan) return; const t = tam[d.m || d.ve], n = typeof d.nhan === "string" ? { t: d.nhan } : d.nhan, ben = n.ben || "tren";
+    const pos = ben === "duoi" ? `left:${t.x - 210}px;top:${t.y + t.w * 0.92}px` : ben === "trai" ? `left:${t.x - t.w / 2 - 330}px;top:${t.y + t.w * 0.4}px` : ben === "phai" ? `left:${t.x + t.w / 2 + 10}px;top:${t.y + t.w * 0.4}px` : `left:${t.x - 210}px;top:${t.y - 70}px`;
+    them += `<div class="phim-nhan ${ben}" data-in="rise" style="--i:${8 + k * 2};${pos}"><b>${esc(n.t)}</b>${n.b ? `<small>${esc(n.b)}</small>` : ""}</div>`; });
+  (s.noi || []).forEach((n, k) => { const a = tam[n.tu], b = tam[n.den]; if (!a || !b) return;
+    const x1 = a.x + Math.sign(b.x - a.x) * a.w * 0.3, y1 = a.y + a.w * 0.3, x2 = b.x - Math.sign(b.x - a.x) * b.w * 0.3, y2 = b.y + b.w * 0.3, cy = Math.max(Math.min(y1, y2) - 120, 470);   // vòm mũi tên không lên vùng chữ (tiêu đề ở khoảng trời phía trên)
+    const L = Math.min(x1, x2) - 40, T = cy - 40, Wd = Math.abs(x2 - x1) + 80, Hd = Math.max(y1, y2) - T + 40, q = (v, o) => (v - o).toFixed(0);
+    const mau = n.mau || c.gold, svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${Wd.toFixed(0)} ${Hd.toFixed(0)}"><path d="M${q(x1, L)} ${q(y1, T)} Q${q((x1 + x2) / 2, L)} ${q(cy, T)} ${q(x2, L)} ${q(y2, T)}" fill="none" stroke="#${mau}" stroke-width="9" stroke-dasharray="22 14" stroke-linecap="round"/>`
+      + `<circle cx="${q(x2, L)}" cy="${q(y2, T)}" r="14" fill="#${mau}"/></svg>`;
+    them += `<div class="emo phim-noi" data-l="noi-${i}-${k}" data-m="noi-${esc(n.tu)}-${esc(n.den)}" data-sau="1" data-a="wipe" data-at="${700 + k * 300}" data-alt="Mũi tên: ${esc(n.nhan || "")}" style="left:${L.toFixed(0)}px;top:${T.toFixed(0)}px;width:${Wd.toFixed(0)}px;height:${Hd.toFixed(0)}px;z-index:2"><img src="${uri(svg)}" alt="" style="filter:none"></div>`;
+    if (n.nhan) them += `<div class="phim-nhan noi" data-in="rise" style="--i:${20 + k * 3};left:${((x1 + x2) / 2 - 210).toFixed(0)}px;top:${(cy + (Math.min(y1, y2) - cy) / 2 - 30).toFixed(0)}px"><b>${esc(n.nhan)}</b></div>`; });
+  if (s.tienCanh) { const T0 = DA.mix(c.ink, "000000", 0.15), vien = DA.mix(c.acc, "FFFFFF", 0.25);
+    const bui = (cx, cy, r) => [[0, 0, 1], [-0.75, 0.25, 0.7], [0.7, 0.3, 0.75], [0.1, -0.55, 0.62]].map(([dx, dy, kk]) => { const x = cx + dx * r, y = cy + dy * r, rr = r * kk; return `<rect x="${x - rr}" y="${y - rr}" width="${2 * rr}" height="${2 * rr}" rx="${rr * 0.85}" fill="#${T0}"/><path d="M${x - rr * 0.6} ${y - rr * 0.78} Q${x} ${y - rr * 1.02} ${x + rr * 0.6} ${y - rr * 0.78}" fill="none" stroke="#${vien}" stroke-width="7" stroke-linecap="round"/>`; }).join("");
+    const goc = (ten, svgBody, l) => `<div class="emo phim-tien" data-l="tien-${ten}-${i}" data-m="tien-${ten}" data-sau="1.6" data-alt="Tiền cảnh: bụi cây" style="left:${l}px;top:760px;width:420px;height:320px;z-index:4"><img src="${uri(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320">${svgBody}</svg>`)}" alt="" style="filter:none"></div>`;
+    if (s.tienCanh !== "phai") them += goc("trai", bui(60, 330, 170) + bui(250, 380, 140), -60);
+    if (s.tienCanh !== "trai") them += goc("phai", bui(360, 320, 180) + bui(170, 390, 140), 1560); }
   st.prevDv = nay;
   return h.replace(/^(<section [^>]*>)/, `$1${truoc}`).replace(/<\/section>\s*$/, them + "</section>");
 }
@@ -66,7 +85,7 @@ const decoGan = (s, ctx, i, html, prev = new Set(), now = new Set()) => { const 
   return g ? html.replace(/<\/section>\s*$/, g + "</section>") : html; };
 // THEO DÕI TRƯỜNG ĐƯỢC ĐỌC KHI DỰNG: mỗi slide bọc trong Proxy ghi lại đường dẫn khoá được đọc (mảng → "[]"). Trường có trong deck.json mà
 // không mẫu nào đọc = gõ sai tên, hoặc type đó không vẽ trường đó — trước đây bị bỏ âm thầm (takeaway, pin, part… — loi-da-biet F3.1)
-const KHONG_XET = new Set(["phong", "dien", "cam", "covers", "basis", "scopeOk", "activitySec", "photoCredit", "photoSource", "photoLicense", "license", "source", "credit", "notes", "check"]);
+const KHONG_XET = new Set(["phong", "dien", "cam", "noi", "tienCanh", "covers", "basis", "scopeOk", "activitySec", "photoCredit", "photoSource", "photoLicense", "license", "source", "credit", "notes", "check"]);
 function theoDoi(slides) {
   const doc = slides.map(() => new Set()), kho = new WeakMap();
   const boc = (o, j, p) => { if (!o || typeof o !== "object") return o; let m = kho.get(o); if (!m) { m = new Map(); kho.set(o, m); } if (m.has(j + p)) return m.get(j + p);
@@ -120,7 +139,7 @@ function dungHtml(deck, { deckDir = process.cwd(), mau, chuyen, mepCat = {} } = 
     let h = decoGan(s, ctx, i, r.html, prev, st.prev);
     if (deck.meta?.motif && !ctx.img(s.photo)) h = DA.motifSlide(h, deck.meta.motif, daTen, s.type, i);
     if (daTen) h = DA.phuSlide(h, daTen, { type: s.type, i, chu: [s.kicker, s.title, s.sub].filter(Boolean).join(" ").replace(/[[\]]/g, ""), coHinhDan: !!((s.emoji && ctx.hasEmoji(s.emoji)) || s.cutout || (s.type === "cover" && s.layout === "typo")), coAnh: !!ctx.img(s.photo) || !!s.phong, art: s.art, artCaption: s.artCaption });
-    if (s.phong || s.dien) h = dungPhim(s, h, daTen, i, st); else st.prevDv = new Set();
+    if (s.phong || s.dien || s.tienCanh) h = dungPhim(s, h, daTen, i, st); else st.prevDv = new Set();
     // pin: MỘT câu chính trên tờ giấy ghim (validate.js kiểm ≤ 90 ký tự, có "by" khi là câu trích); hinh.js tự tìm chỗ trống, không có chỗ → kiemTran báo
     if (s.pin != null && !["cover", "section", "end"].includes(s.type)) { const pt = typeof s.pin === "string" ? s.pin : s.pin.text || "", by = typeof s.pin === "object" ? s.pin.by : "";
       h = h.replace(/^<section class="s /, `<section class="s co-ghim `).replace(/<\/section>\s*$/, `<div class="ghim-giay" data-ghim data-in="pop" style="--i:60"><p>${esc(pt).replace(/\[([^\]]+)\]/g, "<em>$1</em>")}</p>${by ? `<small>— ${esc(by)}</small>` : ""}</div></section>`); }

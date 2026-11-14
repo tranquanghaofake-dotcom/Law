@@ -269,6 +269,10 @@ function daCss(ten) {
     ${S}.cover .h { font-size: var(--fs, 96px); text-transform: none; } ${S}.sec .h { font-size: 104px; } ${S}.end .h { font-size: 128px; text-transform: none; } ${S}.pho.hdl .h { text-transform: none; }
     ${S} .k { font-weight: 700; letter-spacing: .02em; } ${S}.light { --card: #fff; }`;
   // cảnh phim (dung.js dungPhim): chữ dồn lên khoảng trời, cảnh và diễn viên chiếm nửa dưới
+  // nhãn chữ gắn vào cảnh: viên giấy kem có mũi nhọn chỉ xuống vật, chữ mực — hộp chữ thật (sửa được trong PowerPoint)
+  css += `.phim-nhan { position: absolute; z-index: 5; width: 420px; text-align: center; } .phim-nhan b { display: inline-block; white-space: nowrap; background: #FFFBF2; color: #${c.ink}; font: 800 30px/1.2 var(--fb); padding: 10px 22px; border-radius: 999px; box-shadow: 0 10px 24px ${rgba(c.ink, 0.18)}; }
+    .phim-nhan small { display: block; margin-top: 8px; font: 600 23px/1.3 var(--fb); color: #${c.ink}; text-shadow: 0 0 10px #FFFBF2, 0 0 4px #FFFBF2; } .phim-nhan.noi b { background: #${c.gold}; color: #${c.ink}; font-size: 26px; padding: 8px 20px; }
+    .s.phim-toi .phim-nhan small { color: #fff; text-shadow: 0 1px 6px rgba(0,0,0,.6); }`;
   css += `.s.phim { justify-content: flex-start; } .s.phim > .k, .s.phim > .body, .s.phim .h, .s.phim .sub, .s.phim .msg { position: relative; z-index: 3; }
     .s.phim .body { flex: 0 0 auto; justify-content: flex-start; } .s.phim .h { font-size: 66px; max-width: 1240px; margin-bottom: 14px; } .s.phim .sub { font-size: 29px; max-width: 1180px; }
     .s.phim.end { justify-content: flex-start; } .s.phim.end .h { font-size: 120px; }

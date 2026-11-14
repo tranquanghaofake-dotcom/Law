@@ -257,3 +257,17 @@ test("vật tự vẽ (hinh/ve_bh.js): mọi vật là SVG hợp lệ không nh�
   const h = dungHtml(deck({ da: "hop-dong-bh" }, [{ type: "cards", kicker: "Tái bảo hiểm", title: "Nhượng tái cho DN khác", items: [{ name: "A", desc: "a" }, { name: "B", desc: "b" }, { name: "C", desc: "c" }] }]), { deckDir: path.join(__dirname, "..") }).html;
   assert.ok(h.includes("data-da-vat") && h.includes(VE.veSvg("tai-bh", { acc: c.acc, gold: c.gold, ink: c.ink, bad: c.bad }).slice(0, 60).replace(/v\d+/g, "")) || h.includes("data-da-vat"), "slide nói về tái BH mang vật tái BH");
 });
+
+test("dựng slide như dựng cảnh (references/dung-canh.md): phông nền + diễn viên Morph + nhãn chữ thật gắn vật + mũi tên nối + tiền cảnh", () => {
+  const sl = [{ type: "statement", title: "Cảnh thử", phong: { gio: "sang" }, tienCanh: "hai",
+    dien: [{ ve: "anh-x", x: 200, y: 600, w: 220, m: "anh-x", nhan: { t: "Bên mua", ben: "duoi" } }, { ve: "toa-dnbh", x: 900, y: 300, w: 420, m: "dnbh" }],
+    noi: [{ tu: "anh-x", den: "dnbh", nhan: "Phí BH" }] }, { type: "statement", title: "Cảnh sau", phong: { gio: "chieu" }, dien: [{ ve: "anh-x", x: 600, y: 600, w: 220, m: "anh-x" }] }];
+  const h = dungHtml(deck({ da: "hop-dong-bh" }, sl), { deckDir: path.join(__dirname, "..") }).html, sec = h.split("<section ").slice(1);
+  assert.ok(/class="s [^"]*light[^"]*phim/.test(sec[0]), "slide có phông nền chuyển sang nền sáng, mang lớp phim");
+  assert.ok(sec[0].includes('data-m="phong"') && sec[0].includes('data-m="veil"'), "phông nền + màn sương là lớp ảnh (sang được PPTX)");
+  assert.ok(sec[0].includes('data-m="dv-anh-x"') && sec[1].includes('data-m="dv-anh-x"'), "cùng diễn viên ở hai slide kề nhau → cùng tên Morph");
+  assert.ok(!/data-m="dv-anh-x"[^>]*data-a=/.test(sec[1]), "diễn viên đã có ở slide trước không bật vào lại (Morph dời nó)");
+  assert.ok(/class="phim-nhan duoi"[^>]*><b>Bên mua<\/b>/.test(sec[0]), "nhãn là chữ thật gắn cạnh diễn viên");
+  assert.ok(sec[0].includes('data-m="noi-anh-x-dnbh"') && /phim-nhan noi[^>]*><b>Phí BH/.test(sec[0]), "mũi tên nối diễn viên có nhãn chữ thật");
+  assert.ok(sec[0].includes('data-m="tien-trai"') && sec[0].includes('data-m="tien-phai"'), "tiền cảnh tối đóng khung hai góc");
+});
