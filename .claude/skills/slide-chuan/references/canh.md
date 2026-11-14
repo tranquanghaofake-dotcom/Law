@@ -96,9 +96,10 @@ Tối đa 3 hệ quả; mỗi hệ quả kèm `ref` = điều khoản là căn c
 ```json
 { "type": "quizgo", "id": "cau-hoi", "kicker": "Câu hỏi nhanh", "title": "Hợp đồng 24 tháng. Muốn nghỉ, báo trước [ít nhất] bao lâu?",
   "options": [ { "text": "3 ngày làm việc" }, { "text": "30 ngày", "ok": true }, { "text": "45 ngày" }, { "text": "Không cần báo trước" } ],
+  "whyNot": [ "3 ngày làm việc chỉ dành cho hợp đồng dưới 12 tháng (điểm c).", null, "45 ngày là mức của hợp đồng không xác định thời hạn (điểm a).", null ],
   "wrong": { "hint": "Gợi ý: …" }, "right": { "text": "… — điểm b khoản 1 Điều 35." }, "next": "ket" }
 ```
-2–4 đáp án, đúng một `"ok": true`. Bấm sai → slide gợi ý có nút "Thử lại"; bấm đúng → slide giải thích, nút "Tiếp tục" tới `next` (không ghi thì tới slide kế). Slide hỏi **không sang slide khi bấm ra ngoài đáp án** — nói điều này với người trình bày. Khác `quiz` của bộ mẫu (hỏi rồi lật đáp án, không bấm chọn).
+2–4 đáp án, đúng một `"ok": true`. Bấm sai → slide gợi ý có nút "Thử lại"; **`whyNot`** (mảng song song với `options`, `null` ở phương án đúng, ≤ 130 ký tự) → phương án sai có lý do được slide phản hồi **riêng**: dòng đậm "C · 45 ngày" rồi vì sao sai — nên dùng cho phương án là bẫy (luật cũ, nhầm loại hợp đồng); phương án sai không có lý do dùng chung slide `wrong.hint`; mỗi slide phản hồi có ghi chú thuyết trình riêng (phương án vừa chọn + lý do / đáp án + nút cần bấm) và tiêu đề đầy đủ đặt ngoài khung slide cho trình đọc màn hình (các slide "Chưa đúng" không trùng tiêu đề); bấm đúng → slide giải thích, nút "Tiếp tục" tới `next` (không ghi thì tới slide kế). Slide hỏi **không sang slide khi bấm ra ngoài đáp án** — nói điều này với người trình bày. Khác `quiz` của bộ mẫu (hỏi rồi lật đáp án, không bấm chọn).
 
 ### `recap` — câu chốt + thẻ ghi nhớ + căn cứ
 ```json
@@ -157,12 +158,24 @@ Chạy với `--soat`, đọc từng dòng in ra:
 
 | Dòng | Nghĩa | Việc phải làm |
 |---|---|---|
-| `⚠ slide "…" tràn N px` | Chữ nhiều hơn chỗ; `— khối gây tràn: …` nêu đúng khối con (thẻ, ô) cần rút | Rút chữ ở đúng khối được nêu, hoặc tách slide trong `deck.json` — không thu cỡ chữ |
+| `⚠ slide "…" tràn N px` | Chữ nhiều hơn chỗ; `— khối gây tràn: …` nêu đúng khối con (thẻ, ô) cần rút | Rút chữ ở đúng khối được nêu, hoặc tách slide trong `deck.json` — không thu cỡ chữ. `¶`: đoạn ≥ 2 dòng mà dòng cuối chỉ một chữ → sửa câu chữ / bề rộng hộp |
 | `⚠ slide N "…": chữ "…" bị lớp ảnh "…" đè` | Hình dán, ảnh, dấu, dải lụa… vẽ đè lên chữ (`hinh/kiem_de.js`, đo theo thứ tự vẽ thật) | Dời hình (`emojiPos`), rút chữ hoặc đổi chỗ khối |
 | `⚠ slide N "…": hai hộp chữ đè nhau` | Một dòng chữ xuống dòng đè lên khối bên dưới (nhãn đè tên, tên người ký đè nhãn) | Rút chữ, giữ một dòng, hoặc dời khối |
-| `⚠ Nền chung một phần: x/n slide …` | Có bộ hình nhưng chưa tới nửa số slide mang dấu hiệu môn (kiểu của bộ hình hoặc ảnh thật; hình dán không tính) | Chuyển thêm slide sang kiểu của bộ hình, thêm ảnh thật đúng hành vi của slide |
 | `✓ Nhìn mờ: …_nhinmo.jpg` | `--soat` tự dựng ảnh xoá chữ + làm mờ | Mở xem: che chữ có đoán được đề tài không — không thì chưa giao |
-| `⚠ Nền chung: …` | Deck không dùng bộ hình theo môn nào (`bc*`, `qt*`) mà `prep.json` chưa ghi người dùng đồng ý | Xem SKILL.md Bước 0 "Bộ hình theo môn"; `--strict` dừng ở dòng này |
+| `ℹ meta không bước nào đọc: …` | Khoá `meta` không bước kiểm / dựng / đóng gói nào đọc | Gõ sai tên (`minute` → `minutes`) → sửa; trường của slide đặt nhầm vào `meta` (vd. `partWord`) → chuyển về slide hoặc xoá |
+| `ℹ "mode" bị bỏ qua ở …` · `ℹ trường "transition" / "build" / "motion" bị bỏ qua` · `ℹ cover.layout không có ở tầng hình ảnh` | Tên / kiểu của tầng Office cũ mà tầng hình ảnh không vẽ | `mode` chỉ còn ở `statement`; chuyển cảnh ghi `trans` / `dur`; bìa dùng `poster` / `frame` / `art` / `typo` |
+| `⚠ slide "…": tờ giấy ghim (pin) không có chỗ trống — đã ẩn` | Không còn vùng trống đủ lớn cho tờ ghim (ưu tiên góc dưới phải, rồi góc trên phải) | Rút nội dung slide hoặc câu `pin`; hoặc chuyển câu đó vào `takeaway` (dải Ghi nhớ) |
+| Gợi ý: `"x" dẫn "Số liệu: slide N" nhưng không thấy trên slide đó` · cảnh báo: `nhắc "slide N" nhưng deck chỉ có M slide` | Con số trong thẻ không có ở slide căn cứ; số slide lệch sau khi thêm / bớt slide | Sửa con số hoặc số slide; số làm tròn khác cách ghi thì ghi cùng một cách ở cả hai slide |
+| `ℹ Trường có trong deck.json nhưng không mẫu nào đọc khi dựng` | `dung.js` bọc từng slide trong Proxy ghi lại khoá được đọc lúc dựng (mọi type, kể cả bộ `bh*` / `bc*` / `qt*` / cảnh); khoá không ai đọc được liệt kê theo slide | Gõ sai tên → sửa; type đó không vẽ trường này → đổi type hoặc xoá trường; trường mang nghĩa mà mẫu không vẽ → báo để thêm vào mẫu (`tests/truong_hien.test.js`) |
+| `ℹ Soát chi tiết: N chỗ` · `↔` · `◐` · `¶` · `✂` | `scripts/soat_chi_tiet.js` (tự chạy trong `--soat`): `↔` hai dòng chữ canh trái lệch 4–10 px (đo trên nét chữ thật, từng dòng); `◐` chữ dưới 4,5 : 1 (chữ lớn ≥ 24 px đậm / ≥ 32 px: dưới 3 : 1) so với nền thật sau nét chữ; `✂` một nét vẽ dọc hẹp (đường ngưỡng, nét đứt, vạch chia) chạy xuyên qua dòng chữ trên nền yên | `↔`: đặt cùng lề (cố ý thụt thì thụt hẳn ≥ 16 px); nhãn số liệu đặt theo dữ liệu → thêm `data-dl`. `◐`: đậm màu chữ, hoặc làm yên nền sau chữ (lớp phủ dày hơn ở vùng có chữ) — không thu cỡ chữ. `✂`: dời chữ khỏi nét (đẩy số sang phía xa đường ngưỡng) hoặc cho nét bắt đầu / dừng trước chữ. Chữ nhỏ nét mảnh (Anton 22 px) trên giấy có hoạ tiết đo thấp hơn màu danh nghĩa (khử răng cưa) — đừng dùng màu xám cho nó; số trang "/ 20" đã đổi sang cùng màu mực, phân cấp bằng cỡ |
+| `Slide N (cases): 130 tiếng trên slide` · `tiêu đề là câu hỏi` · cụm đệm (cảnh / bộ hình) | Lint nội dung chạy cho CẢ type cảnh, `bc*`, `qt*`, `bh*` (trước 13/11/2026 bị bỏ qua). Được hỏi ở tiêu đề: bìa, chương, kết, slide hỏi (`quizgo`, `bigq`, `picks`, `bhdo`, `bhba`, `bhhoi`, `bccauhoi`, `bchoi`); `book` / `lawquote` không đếm tiếng (nguyên văn) | Rút chữ (phần giải thích chuyển vào `notes`), viết tiêu đề thành câu kết luận, câu hỏi để ở `kicker` |
+| `Slide N: căn cứ sai — …` · gợi ý `căn cứ cần soát — …` · `ℹ Căn cứ pháp lý: x căn cứ khớp kho · …` | Đối chiếu kho luật (`kiemCanCu` trong `hinh/kiem_noi_dung.js` gọi `kiem_can_cu.py` của skill `vn-legal-exam-analysis`). Sai = dẫn đích danh ("khoản 9 Điều 66 Luật Bảo hiểm xã hội") mà điều / khoản / điểm không có; cần soát = văn bản suy theo ngữ cảnh, dẫn bản cũ hơn kho (bản án áp dụng luật cũ thì đúng là vậy — giữ), nguyên văn lệch. "Luật 2024" được hiểu theo số hiệu nguồn còn hiệu lực trong `prep.json` | Sửa số điều theo kho; điều trần bị hiểu sai luật → ghi `meta.law` hoặc nêu tên luật ngay sau viện dẫn; "ngoài kho" / "không rõ văn bản" phải tự đối chiếu vbpl.vn |
+| `Deck dẫn N chỗ "Điều N" nhưng không chỗ nào ghi số hiệu văn bản` · gợi ý thiếu tình trạng hiệu lực / câu "không phải tư vấn" | Quy tắc nội dung pháp lý của chủ dự án: trích luật phải có số hiệu, điều / khoản, tình trạng hiệu lực, và nói rõ là thông tin pháp luật chung (tìm trong cả chữ slide lẫn ghi chú) | Ghi "Bộ luật Dân sự 91/2015/QH13" (không chỉ "BLDS 2015") ở dòng nguồn / basis của slide dẫn luật đầu tiên; thêm "hiệu lực từ …" / "hết hiệu lực"; câu "thông tin pháp luật chung, không phải tư vấn" ở basis của `recap` / `closing` hoặc ghi chú slide cuối |
+| Gợi ý `Slide N: "1,5×" là làm tròn xuống của 1,57 ở slide khác` | Deck có tỉ lệ 2 chữ số thập phân mà chỗ khác ghi gọn thành số NHỎ hơn ("1,5 lần" cho 1,57), không kèm "hơn / gần / khoảng". Xét cả `deck.json` lẫn chữ đã dựng (số do mẫu tự tính, vd. `bhtang`) | Thẻ số to ghi đúng chữ số ("1,57×"); câu chữ làm tròn thì thêm "hơn" ("tăng hơn 1,5 lần") |
+| Gợi ý `Ghi chú + hoạt động ~23,4 phút, vượt khung 20 phút khoảng 17% … rút ghi chú ở slide …` | Vượt `meta.minutes` 10–25%: chưa chặn (ngưỡng cảnh báo ±25%) nhưng giờ thuyết trình trên lớp thường cứng; kèm 3 slide nói dài nhất. Hoạt động trên lớp: `exercise` 120 s, `quiz` / `quizgo` / `bccauhoi` / `bhhoi` 60 s (hoặc `activitySec`) | Rút ghi chú ở các slide được nêu, hoặc hỏi người dùng khung giờ có cứng không |
+| `ℹ Cỡ chữ: X% chữ thường ≥ 14 pt, N mẩu < 12 pt` / `✓ Cỡ chữ` | `scripts/co_chu.js` đo cỡ chữ thật trên HTML (1 px = 0,5 pt), miễn dải đầu trang, số trang "n / N", dòng "Ảnh: …"; ✓ khi không có chữ < 12 pt và ≥ 70% chữ thường ≥ 14 pt (tính cả nhãn / nguồn 12 pt) | Nâng cỡ ở lớp CSS của mẫu (chữ thân 28–32 px, nhãn / nguồn 24 px), tính lại chiều cao thẻ / hàng, rồi NHÌN ảnh từng slide — chữ lòi khỏi nền thẻ không bị báo |
+| `⚠ Nền chung: …` | Deck ghi `"da": "none"` mà `prep.json` chưa ghi người dùng đồng ý (`chapNhanNenChung`) | Chọn da theo môn (SKILL.md mục "Da theo môn"); `--strict` dừng ở dòng này |
+| `ℹ da "…" là bộ chung theo loại bài` | Deck dùng da chung `ho-so` / `giay` / `kinh` | Môn có da riêng thì ghi `meta.da`; chưa có thì báo người dùng ở Bước 0 |
 | `⚠ slide N: bản PPTX lệch bản HTML x %` | Có khối đặt sai chỗ, thiếu hoặc thừa | Mở `<tên>_lop/soat-*.jpg` (trái HTML · phải PPTX), tìm khối lệch |
 | `⚠ font “…” không có ký tự: …` | Ký tự lạ, PowerPoint sẽ lấy font khác | Đổi ký tự trong `deck.json` |
 | `⚠ … data-go="…" không trỏ tới slide nào` | Sai `id` | Sửa `go` |
@@ -269,3 +282,81 @@ Vì sao có: bài "Tổng quan Công pháp quốc tế" (13/11/2026) dựng bằ
 - **Cấm**: biểu tượng Liên hợp quốc (bị hạn chế sử dụng — Nghị quyết 92(I) Đại hội đồng LHQ), quốc huy, cờ thật, chữ ký thật. Cờ chỉ dùng hình học trừu tượng: chéo góc, tam giác cán, ô góc cán — **không** hình tròn giữa nền trơn (đã ra lá giống cờ Nhật Bản), **không** sọc ngang / dọc 2–3 màu. Bản đồ có Việt Nam phải có Hoàng Sa, Trường Sa, kể cả bản đồ trang trí.
 - **Còn thiếu** (deck dùng type thường cho các slide này, nên nền và khung chưa đồng bộ): so sánh hai bên, trích điều luật, thứ bậc, cây điều kiện, chuỗi hệ quả, danh sách nguyên tắc, trắc nghiệm, chốt ý, cảm ơn. Hướng sửa gốc: "da theo môn" — mục E3-P3 của `loi-da-biet-2026-11.md`.
 - Ví dụ: `examples/hoi-nghi-qt/deck.json` (3 slide). Dựng: `node hinh/dung.js examples/hoi-nghi-qt/deck.json /tmp/qt.pptx --soat`.
+
+## 10. Bộ hình riêng theo môn: BHXH — hướng "ảnh thật kiểu Flashslide" (An sinh xã hội) — `hinh/so_bhxh.js`, vật `hinh/bhxh_3d.js` + `hinh/f3d.js`, máy quay `hinh/may_quay.js`
+
+Lịch sử (11/2026), sáu lần làm — năm lần đầu bị chê "chưa đạt":
+1. "Bàn hồ sơ": vật tự vẽ phẳng, nền tối, Morph kéo 20–50 vật mỗi lần bấm → **xấu, rối, chóng mặt, khó hiểu**.
+2. "Báo cáo sáng": nền trắng trơn, icon nét phẳng → sạch nhưng **nhạt**.
+3. "Flashslide xanh": tiêu đề Anton, vật 3D bóng chung chung (khiên, xu) → che chữ không nhận ra BHXH.
+4. Bản gộp: khung Office + vật BHXH chở dữ liệu + bút/thước trôi → **chưa đạt** (13/33 slide danh sách chỉ là thẻ trắng).
+5. Mẫu lần 5: bỏ bút/thước, "một vật BHXH lớn + hàng gọn", **máy quay Morph** → vẫn **chưa đạt**.
+6. **Ảnh thật (hiện tại)** — sau khi đo 30 slide Flashslide đơn lẻ.
+
+**Gốc của năm lần chê: chất liệu hình, không phải bố cục.** Đo bằng máy (`độ bão hoà · nền trơn · vùng có vân ảnh chụp`): Flashslide 0,36 · 23% · 41%; bản vẽ bằng code 0,11 · 42% · 26%; ba slide thử bằng ảnh báo 0,34 · 30% · 41%. Flashslide sống nhờ **ảnh chụp / ảnh 3D dựng thật chiếm ~40% slide**, **một màu chủ đạo đậm phủ cả bộ**, **tiêu đề chữ đứng in hoa cỡ lớn + viên nhãn màu**, thẻ trắng nổi trên nền ảnh, vật mờ ở tiền cảnh. Vật vẽ bằng code trên nền trắng **không với tới** được — đừng hứa "kiểu Flashslide" khi chỉ có hình vẽ code.
+
+Hệ hình hiện tại:
+- **Ảnh báo thật** (deck `imagePolicy: "classroom"`: chỉ chiếu trên lớp, `photoSource` = bài gốc, `photoCredit` = "Ảnh: tác giả / báo" in nhỏ ở chân slide): quầy BHXH, nhân viên BHXH hỗ trợ người cao tuổi, công nhân, đám đông chờ rút một lần, phiên Quốc hội… **Đọc chú thích gốc trước khi gắn ảnh vào slide**: ảnh "người bán rau" hoá ra là "công nhân KCX mua rau sau giờ làm" → không được dùng cho slide "lao động chưa có BHXH". Mỗi bài báo một ảnh.
+- Ba cách đặt ảnh: `anhTran` (bìa, mở phần, kết — ảnh tràn viền phủ xanh BHXH đậm, chữ trắng, cụm nhấn vàng, lớp `.toi`), `anhBen` (ảnh tràn mép phải, dải mờ vào nền; slide này bỏ số trang + thanh tiến độ), `anhKhung` (khung bo 30 px + bóng + viên chú thích trắng). Không có `photo` → bố cục vật BHXH vẽ bằng code (bản lần 5) — ví dụ `examples/so-bhxh` dùng nhánh này.
+- Chữ: tiêu đề **Anton in hoa** 72 px (dài quá 2 dòng → 60 px), bìa 104, mở phần 100; kicker = **viên thuốc** gradient xanh (trên nền tối: vàng); thân Be Vietnam Pro ≥ 26 px.
+- Nền sáng ngả xanh rõ (không trắng trơn), quầng xanh góc phải; slide tối = ảnh + phủ xanh `#072a6b`.
+- **Nền ảnh theo phần** (`nenAnh`): slide nội dung không có ảnh tràn mép lấy ảnh của phần (mở đầu = bìa, mỗi phần = slide mở phần, kết luận = slide kết), làm mờ 22 px + phủ trắng ngả xanh, nằm trong ảnh nền slide (đứng yên khi máy quay trôi) — kiểu nền nhà kính / bệnh viện mờ sau thẻ của Flashslide. Tắt: `meta.hinh.nenAnh = false`.
+- Danh sách 3 ý dùng chung một ngữ pháp "vật lớn bên trái + dải đánh dấu kéo ra thành hàng": ba câu hỏi = sổ BHXH (dải mang **màu của phần**: xanh · vàng · xanh đậm); hạn chế = sổ BHXH (ba dải đỏ — ba hạn chế ngang hàng, hàng ghi quy mô); kiến nghị = sách Luật BHXH 2024, dải xanh đậm ghi số điều ("Đ.70", "Đ.40, 41", "Đ.2"). Sổ / sách tự chọn cỡ và canh giữa nhóm hàng (`giuaDai`, theo lề thật của hình vẽ `LE_VAT`) để **mọi dải mọc từ mép trang** — không dải nào lơ lửng dưới đáy sổ. Trắc nghiệm không ảnh: phong bì lương hưu lớn + bốn đáp án 2 × 2.
+- **Số liệu thành vật đếm được** (học từ mẫu Flashslide năng lượng / Bảo Việt, 11/2026): biểu đồ cột có đơn vị là người → mỗi cột là **chồng sổ BHXH** (`iso`, tự chọn số người mỗi cuốn để cột cao nhất 10–22 cuốn, dòng đầu khung ghi "Đơn vị: … · mỗi cuốn sổ = …"; cột mọc bằng hiệu ứng `up` — không Morph kéo giãn vì làm méo sổ); thu − chi của quỹ → **cuộn xu vàng** nằm ngang; tỷ lệ bao phủ → **vòng phần trăm**. `iso: false` để về cột trơn.
+- **Gọi lại hình cũ để khép mạch**: slide trả lời ba câu hỏi dùng đúng cuốn sổ + ba dải của slide "Ba câu hỏi", dải giờ kéo ra câu trả lời; dải "Nhận định" cao theo số dòng.
+- **Kiểu ngành bảo hiểm** (mẫu Bảo Việt): slide Ghi nhớ nền xanh đậm, vòng sáng vàng kim, khiên kính, thẻ kính số vàng.
+- Ngữ pháp "sổ + dải đánh dấu" dùng thêm cho **bảng 5 chế độ** (5 dải → 5 hàng: chế độ · điều kiện chính · mức hưởng, hưu trí dải vàng); **dòng thời gian đời người** nằm trên trang "quá trình tham gia" của sổ (`trangSo`); thẻ nhận định của biểu đồ có **dải ảnh ở chân thẻ** (học từ thẻ số mẫu năng lượng tái tạo) — ảnh do slide chỉ định bằng `insightPhoto` và phải là **đúng nhóm người của biểu đồ** (bắt buộc: công nhân; tự nguyện: lao động tự do), không tự lấy ảnh của phần.
+- Số lớn (1,57 · 800.000 · 292.000 · +6,8 · +57% · 99% · 42%) **bật ra rồi nhấp một nhịp** khi máy quay dừng (`pop` + `pulse`, đứng ngoài máy quay). Đã thử "số chạy" bằng chuỗi khung hiện / tắt (như cảnh `tiles`) — bỏ: trên thẻ màu chuyển sắc không có tấm nền đặc để che, trong khung soạn thảo PowerPoint các khung chồng lên nhau, rối khi sửa chữ.
+- **Đối chiếu ba trang bán slide** (11/2026): Flashslide (giàu hình, nền trơn ~21%), SlideModel bảo hiểm (sạch kiểu Office, nền trơn 67%, cảnh rủi ro vẽ vector phẳng, ảnh gia đình), Slidesgo (Luật lao động: mũ bảo hộ + cân công lý làm vật chủ đạo; bảo hiểm: xanh đậm + vàng, nền trơn 57%). Cả ba thống nhất **xanh đậm + vàng** cho ngành bảo hiểm → viên nhãn trên nền sáng đổi sang xanh đậm chữ vàng; slide mở phần có **số phần khổng lồ in mờ** sau tiêu đề (`bh-sonen`, như số năm sau tiêu đề bìa Flashslide Bibica); slide nội dung từng có chùm bong bóng mờ (như SlideModel Insurance Agency) — **đã thay** bằng vân bảo an của bìa sổ (xem "Mỗi chi tiết một lý do" dưới đây). Bộ BHXH đứng giữa hai cực: nền trơn ~34%, bão hoà 0,23.
+- `s.nenAnh` (một slide) thay ảnh nền của phần khi ảnh phần không hợp nội dung (đường đời người lao động: ảnh công nhân thay hội trường Quốc hội).
+- Vật code còn dùng: chở dữ liệu (chồng sổ đếm được, trang sổ 20 → 15 ô, phiếu lương → phong bì, sổ đóng dấu) và **tiền cảnh mờ** (`tienCanh`: sổ, sách luật, bảng kiểm, phong bì làm mờ ở góc — chiều sâu) — chỉ ở bìa, slide mở phần, slide kết; **không** đặt cạnh ảnh đã có chính vật đó (ảnh tay cầm sổ BHXH + sổ vẽ bên cạnh = hai cuốn sổ, một thật một giả).
+
+**Mỗi chi tiết một lý do** (vòng 7, 11/2026 — người dùng: "kể cả chi tiết nhỏ nhất đặt xuống cũng phải có logic và ý nghĩa"). Nguồn nguyên tắc: Robin Williams, *The Non-Designer's Design Book* — "Nothing should be placed on the page arbitrarily"; Tufte, *Visual Explanations* — khác biệt nhỏ nhất vẫn đủ thấy (đừng thêm khác biệt không mang nghĩa); The Economist — đơn vị ở dòng phụ, nguồn ở góc dưới trái; VnExpress longform "Lương hưu chệch đường ray" — cùng một mã màu nối mốc luật với điểm số liệu; clarify.nl (thiết kế thông tin lương hưu Hà Lan) — hoạ tiết nền phải là một nơi chốn (giấy dán tường chấm = ở nhà). Mỗi lần thêm chi tiết, điền được cột "nghĩa" thì giữ, không điền được thì bỏ:
+
+| Chi tiết | Nghĩa | Luật đi kèm |
+|---|---|---|
+| Dải đầu trái | đang ở phần nào | giống hệt mọi slide |
+| Thanh tiến độ | một ô một slide; **khe rộng ngăn hai phần**; mỗi nhóm mang màu của phần (Mở đầu, Kết luận xám · Phần 1 xanh · Phần 2 vàng · Phần 3 xanh đậm) | đã qua nhạt, đang ở đậm, chưa tới rất nhạt |
+| Viên nhãn trên tiêu đề | câu người nghe đang hỏi | bỏ tiền tố "Phần N ·" (dải đầu đã ghi); tiêu đề là câu trả lời |
+| Màu đỏ | chỉ điều tiêu cực thật: năm giảm, mất thời gian đóng, nợ, chưa có BHXH | chấm chú thích biểu đồ mang màu chiều thay đổi của năm đó (giảm đỏ, tăng xanh); không gán đỏ cho cả một phần |
+| Màu vàng | nhấn · tiền (xu, quỹ, phong bì) · Phần 2 (người đóng và quỹ) | |
+| Xám, nét đứt | luật hết hiệu lực, khác phạm vi, chưa có | |
+| Vân bảo an ở mép phải và góc dưới trái | đúng hoa thị trên bìa sổ BHXH (`hinh/bhxh_3d.js`) = giấy tờ có giá trị | in mờ, không cắt dải đầu |
+| Nền ảnh mờ | ảnh của phần đang nói | |
+| Số phần in mờ | nhận ra slide mở phần từ xa | chỉ slide mở phần |
+| Dải đánh dấu | trang được đánh dấu trong sổ / sách → mọc từ mép trang | dải có nhãn ghi đúng số điều |
+| Chồng sổ / sổ xoè | **chồng** sổ = SỐ NGƯỜI (1 cuốn = N người, ghi ở dòng đơn vị); sổ **xoè** = NHÓM (mỗi cuốn một nhóm, cùng thứ tự các hàng) | không dùng chồng sổ để đếm nhóm; biểu đồ khác thang thì dòng đơn vị ghi "thang phóng to k lần so với slide n" |
+| Ô năm trong sổ mở | 1 ô = 1 năm đóng; số ô = số năm nêu ở tình huống | |
+| Thẻ trích Điều 64 Luật 2024 | căn cứ của mốc mới | chỉ hiện ở bước 2 (bước 1 là luật cũ: 20 ô xám) |
+| Phong bì lương hưu | mốc được hưởng; ở Ghi nhớ cùng tên Morph với slide kết → phong bì tới tay người nhận lương hưu trong ảnh; ở slide kết quả trắc nghiệm mang **nhãn dán đáp án** ở góc ("40%" khi đúng, "?" khi sai) — đọc liền với nhãn in "LƯƠNG HƯU" | nhãn dán không che nhãn in |
+| Công thức | vế trái một dòng, "= vế phải" một dòng | ngắt dòng tại nghĩa, không để trình duyệt tự ngắt |
+
+Đã bỏ vì không điền được cột "nghĩa": chùm bong bóng, chấm lấp lánh quanh khiên, cuốn sổ nhỏ ở góc vòng phần trăm, biển cảnh báo trên sổ hạn chế (trùng biểu tượng hàng 2), sổ / phong bì vẽ đặt cạnh ảnh đã có vật thật, màu vàng ở dải giữa của hạn chế / kiến nghị, chồng xu ở góc slide quỹ (thanh đã là cuộn xu), chồng 16 cuốn không mang số ở slide mở Phần 2 (nay 19 cuốn = 18,91 triệu).
+- **Máy quay** (`data-cam`, `hinh/may_quay.js`): khung + dải đầu đứng yên, cả cảnh trôi trái (vật gần nhanh hơn — `data-sau`), vào phần mới đi xuống, sau slide mở phần phóng vào; hàng danh sách đứng ngoài máy quay (`data-sau="0"`) và hiện lần lượt khi máy quay dừng.
+
+Kỹ thuật: lớp ảnh thêm tiền tố kiểu slide vào tên Morph; vật `bh-p-…` và dải đầu `bh-hd-…` giữ tên. Bước 2 của slide hai bước: Morph thường. Đo chữ bằng file font (Anton đo ở dạng in hoa). Hộp chữ một dòng / cỡ tiêu đề không tự xuống dòng (build.js).
+
+| type | Dùng cho | Trường chính |
+|---|---|---|
+| `bhbia` · `bhket` | Bìa / kết: tiêu đề in hoa lớn bên trái; bên phải ảnh thật đóng khung + sổ / khiên / xu 3D (`titleSize`, tiêu đề có thể ngắt dòng chủ động bằng `\n`) | `kicker` `title` `subtitle` `author` `authorSub` `date` `photo` `photoCredit` `photoSource` · kết: `title` `message` `sub` `team[≤4]{name}` `photo` |
+| `bhdo` | Câu hỏi lớn + ba mặt sẽ đo (thẻ icon) | `lines` `box` `dims[3]{icon,t,d}` (mặc định: luật · người tham gia · quỹ) `by` |
+| `bhtang` | Kết luận chính: hai thanh cùng thang + thẻ hệ số tăng + thẻ năm đi lùi | `title` `sub` `stats[3]{value,label,desc}` |
+| `bhba` · `bhtraloi` | Ba câu hỏi (thẻ bấm) · trả lời lại đúng ba câu + nhận định | `items[3]{q,go}` · `answers[3]{q,a}` `verdict` |
+| `bhchuong` | Mở phần: dải màu trái (icon + số phần), câu hỏi bên phải | `num` `part` `title` `sub` |
+| `bhtrich` | Trích nguyên văn (cụm nhấn tô) + thẻ "ý then chốt" | `title` `quote` (`[nhấn]`) `by` `role` `note` ("Tiêu đề: ý 1 · ý 2") |
+| `bhvaitro` · `bhnhom` | Ba thẻ cùng khuôn: icon, tên, dòng nhấn, giải thích | `items[3]{icon,name,who,desc}` |
+| `bhmorong` | Năm thẻ nhỏ + dải số lớn | `items[≤5]{k,text}` (`k`: l · m · n · e · k → icon) `big{value,label}` `source` |
+| `bhrutngan` | **Hai bước**: dải 20 ô năm; bước 2 năm ô cuối thành nét đứt, mốc "lương hưu" trượt về sau ô 15 | `cols[2]{n,label}` `legend` `ref{head,text}` `source` |
+| `bhduong` · `bhphieu5` | Trục thời gian 5 mốc · năm thẻ cột (điều kiện, mức hưởng) | `who{name,sub}` `stages[5]{when,event,link,icon}` `focus` · `cols[5]{name,icon,cells[2]}` `rows[2]` `focus` |
+| `bhcongthuc` | **Hai bước**: ba hộp công thức; thanh tỷ lệ hưởng 45 % → 65 % | `terms[2]{label,note}` `result{label}` `example` `note` `buoc1` `buoc2` |
+| `bhcot2` | Biểu đồ cột (**hai bước**: cột mọc; `"grow": false` → một slide), số chú thích tại năm, thẻ kết luận | `items[]{label,value,display,why,focus,tone}` `bands` `insight{value,unit,text}` `unit` `note` |
+| `bhche` | Lưới 50 hình người (1 người = 2 %) + hai thẻ phần trăm | `cols[2]{n,value,label}` `legend` `source` |
+| `bhquy` | Thanh ngang thu − chi từng năm; năm khác phạm vi vẽ nét đứt xám | `rows[]{label,value,display,note,focus}` `den` `unit` `note` `ngoai` |
+| `bhrut` · `bhmat` | Số lớn + ba thẻ ý · luồng: tình huống → hệ quả pháp lý → hai hệ quả | `num` `unit` `facts[3]{icon,text}` · `cause{tag,text}` `stamp{text,sub}` `results[2]{text,ref}` `source` |
+| `bhdat` | Bốn thẻ số liệu 2 × 2 | `cells[4]{icon,value,head,text}` |
+| `bhhanche` · `bhkiennghi` | Ba thẻ cùng chỗ ở hai slide (đỏ → xanh), nối được từng cặp | `items[3]{icon,name,who,desc,ref}` `labels` |
+| `bhhoi` · `bhghinho` | Trắc nghiệm 4 thẻ (→ slide hỏi / sai / đúng; có `whyNot` thì mỗi phương án sai có lý do được một slide "sai" riêng: thẻ phương án vừa chọn viền đỏ + vì sao sai, như `quizgo`) · câu chốt + ba thẻ số bấm quay lại | `options[4]{text,ok}` `whyNot[4]` `right` `wrong` `next` · `lines` `chips[3]{n,text,go}` `basis` |
+
+- Vật 3D theo kiểu slide là cố định trong code (vd. ba câu hỏi: cân · biểu đồ · bảng kẹp; năm chế độ: nhiệt kế · bình sữa · băng dán · người cao tuổi · hoa sen). Thêm vật: tải PNG 3D từ github.com/microsoft/fluentui-emoji vào `hinh/f3d/<tên>.png` (xem đầu `hinh/f3d.js`). Bộ icon nét Phosphor (`hinh/icon.js`) vẫn còn cho bộ hình khác.
+- Kiểm Morph khi không có PowerPoint: `python3 scripts/morph_cap.py out.pptx` và `node scripts/xem_morph.js <tên>_lop/deck.html out.mp4`.
+- Ví dụ: `examples/so-bhxh/deck.json` (28 slide). Dựng: `node hinh/dung.js examples/so-bhxh/deck.json /tmp/bhxh.pptx --soat`.

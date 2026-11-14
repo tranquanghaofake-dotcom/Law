@@ -81,9 +81,8 @@ const SCHEMA = {
   closing: { photo: "s", photoAlt: "s", photoCredit: "s", photoSource: "s", photoStyle: { enum: ["tint", "natural", "bw", "duotone"] }, kicker: "s", title: "s!", answers: ["a", { q: "s!", a: "s!", tone: { enum: ["good", "bad", "muted"] } }], verdict: "s", lessons: ["a", { icon: "icon", head: "s", text: "s!" }], rec: { title: "s", items: ["a", "s!"] }, thanks: "s", art },
 };
 const KINDS = ["lecture", "case", "report"]; // loại bài (meta.kind) — quyết định khung slide, hình mặc định; ghi ở bước 0 (prep.json)
-// id, toc, trans, dur: trường của tầng hình ảnh (hinh/dung.js) — cho phép để cùng một deck.json dựng được ở cả hai tầng
-const HINH_ONLY = { book: "cover", bigq: "statement", picks: "agenda", lawquote: "quote", tiles: "chart", strip: "bignum", cases: "cards", chain: "tree", quizgo: "quiz", recap: "closing", toc: "agenda" };
-const COMMON = ["type", "id", "toc", "trans", "dur", "mode", "notes", "covers", "transition", "build", "motion", "takeaway", "pin", "activitySec", "basis", "scopeOk"]; // basis: [số slide] — hạn chế / nhận định dựa trên slide số liệu nào ở phần thực trạng // scopeOk: true — slide được phép nhắc nội dung ngoài phạm vi (meta.scopeOut), vd. bảng tổng đầu tiên; // activitySec: số giây lớp tự làm (exercise / quiz) — cộng vào thời lượng ước tính; // pin: câu / số chính trên tờ giấy ghim (chuỗi hoặc { text, by }) // takeaway: câu chốt của slide → dải "Ghi nhớ" ở đáy, cùng vị trí mọi slide // transition: fade | push | morph | none — riêng slide này // covers: các đề mục của tài liệu mà slide này trình bày (đối chiếu với meta.outline)
+// id, toc, trans, dur, emoji…: trường của tầng hình ảnh (hinh/dung.js)
+const COMMON = ["type", "id", "emoji", "emoji2", "emojiPos", "toc", "trans", "dur", "mode", "notes", "covers", "transition", "build", "motion", "takeaway", "pin", "activitySec", "basis", "scopeOk"]; // basis: [số slide] — hạn chế / nhận định dựa trên slide số liệu nào ở phần thực trạng // scopeOk: true — slide được phép nhắc nội dung ngoài phạm vi (meta.scopeOut), vd. bảng tổng đầu tiên; // activitySec: số giây lớp tự làm (exercise / quiz) — cộng vào thời lượng ước tính; // pin: câu / số chính trên tờ giấy ghim (chuỗi hoặc { text, by }) // takeaway: câu chốt của slide → dải "Ghi nhớ" ở đáy, cùng vị trí mọi slide // transition: fade | push | morph | none — riêng slide này // covers: các đề mục của tài liệu mà slide này trình bày (đối chiếu với meta.outline)
 // Số mục tối đa engine hiển thị; vượt thì bị cắt im lặng.
 const CAPS = {
   quiz: { options: 4, whyNot: 4 }, timeline: { items: 6 },
@@ -138,10 +137,12 @@ function walk(val, spec, p, err, req) {
 // ---------- kiểm tra "người nghe hiểu được gì" ----------
 // Đây là cảnh báo về CÁCH VIẾT, không phải lỗi kỹ thuật: tiêu đề phải là câu trả lời, chữ phải ít.
 const MAX_WORDS = 110;           // đếm theo TIẾNG (âm tiết, tách bằng khoảng trắng). Quá ngưỡng này người nghe không đọc kịp khi đang nghe giảng (mục tiêu ≤ 80; ~100 tiếng ≈ 50 từ tiếng Anh)
-const NO_WORDS = new Set(["covers", "url", "cutout", "cutoutAlt", "photo", "photoAlt", "photoCredit", "photoSource", "photoStyle", "photoLayout", "photoMark", "alt", "route", "side", "name", "quoteDoc", "pick", "id", "from", "to", "type", "mode", "notes", "icon", "art", "tone", "ok", "ref", "active", "chain", "dash", "focus", "value", "initials"]);
+const NO_WORDS = new Set(["covers", "url", "cutout", "cutoutAlt", "photo", "photoAlt", "photoCredit", "photoSource", "photoStyle", "photoLayout", "photoMark", "alt", "route", "side", "name", "quoteDoc", "pick", "id", "from", "to", "type", "mode", "notes", "icon", "art", "tone", "ok", "ref", "active", "chain", "dash", "focus", "value", "initials", /* không hiện trên CHÍNH slide này: nhãn ở mục lục, đích liên kết, tên hình dán */ "toc", "go", "next", "emoji", "emoji2", "emojis"]);
 const FILLER = ["có thể thấy", "nhìn chung", "như đã biết", "bên cạnh đó", "ngoài ra", "đáng chú ý là", "cần lưu ý rằng", "không thể phủ nhận", "vô cùng", "hết sức", "một cách", "trong đó có", "đối với vấn đề", "về cơ bản"];
 const LABEL_TITLE = /^(giới thiệu|tổng quan|nội dung|khái quát|khái niệm|cơ sở lý luận|thực trạng|kết luận|phân tích|bình luận|tóm tắt|một số|vấn đề)\b/i;
 const QUESTION_OK = new Set(["agenda", "section", "cover", "end", "quiz"]); // quiz: tiêu đề CHÍNH LÀ câu hỏi // end: "Câu hỏi?" là lời mời thảo luận
+// cảnh / bộ hình được hỏi ở tiêu đề: bìa, chương, kết (như cover / section / end) và slide mà câu hỏi CHÍNH LÀ nội dung (đố, chọn câu hỏi, bài tập)
+["bcbia", "bhbia", "qtbia", "bcchuong", "bhchuong", "qtchuong", "bccamon", "bhket", "quizgo", "bigq", "picks", "bhdo", "bhba", "bhhoi", "bccauhoi", "bchoi"].forEach((t) => QUESTION_OK.add(t));
 function words(v, k) {
   if (NO_WORDS.has(k)) return 0;
   if (typeof v === "string") return v.replace(/[\[\]]/g, "").split(/\s+/).filter(Boolean).length;
@@ -171,8 +172,8 @@ function clarity(sl, n, warnings) {
   if (t && !QUESTION_OK.has(sl.type) && /\?\s*$/.test(t)) W(`tiêu đề là câu hỏi ("${t.slice(0, 40)}") — người nghe nhớ câu trả lời chứ không nhớ câu hỏi: viết thành câu kết luận, đưa câu hỏi vào kicker`);
   if (t && !["cover", "section", "end"].includes(sl.type) && LABEL_TITLE.test(t) && t.split(/\s+/).length <= 5) W(`tiêu đề là nhãn ("${t}") — viết thành một câu kết luận`);
   // match: ô trái trùng nhau ở các hàng liền nhau được GỘP thành một ô trên slide → chỉ đếm một lần
-  const wc = sl.type === "match" && Array.isArray(sl.pairs) ? words(Object.assign({}, sl, { pairs: sl.pairs.map((p, j) => (j && isObj(p) && isObj(sl.pairs[j - 1]) && p.left === sl.pairs[j - 1].left ? Object.assign({}, p, { left: "" }) : p)) })) : words(sl);
-  if (wc > MAX_WORDS && sl.type !== "redline" /* nguyên văn điều luật: không được cắt chữ */) W(`${wc} tiếng trên slide (tối đa ${MAX_WORDS}, nên ≤ 80) — giữ ý chính, chuyển phần giải thích vào notes`);
+  const wc = sl.type === "match" && Array.isArray(sl.pairs) ? words(Object.assign({}, sl, { pairs: sl.pairs.map((p, j) => (j && isObj(p) && isObj(sl.pairs[j - 1]) && p.left === sl.pairs[j - 1].left ? Object.assign({}, p, { left: "" }) : p)) })) : ["quizgo", "bhhoi"].includes(sl.type) ? words(Object.assign({}, sl, { whyNot: null, right: null, wrong: null })) /* phản hồi đúng / sai là slide KHÁC, không cộng vào slide hỏi */ : words(sl);
+  if (wc > MAX_WORDS && !["redline", "book", "lawquote"].includes(sl.type) /* nguyên văn điều luật: không được cắt chữ */) W(`${wc} tiếng trên slide (tối đa ${MAX_WORDS}, nên ≤ 80) — giữ ý chính, chuyển phần giải thích vào notes`);
   // ký tự phải có nghĩa: chỉ dùng bộ ký hiệu chuẩn (→ hệ quả · ngăn cách — đối lập/giải thích ≈ xấp xỉ “ ” trích nguyên văn ? chưa rõ)
   const raw = textOf(sl);
   const deco = raw.match(/[\u2600-\u27BF\u{1F300}-\u{1FAFF}★☆●○■□◆◇►▶•❖✦✧✔✘✓✗]/u);
@@ -188,13 +189,30 @@ function clarity(sl, n, warnings) {
   scan(sl, "");
 }
 
-function validate(deck, themes) {
+// extraTypes: kiểu của bộ cảnh / bộ hình (hinh/canh.js, bang_chung.js, hoi_nghi.js) — ở đây chỉ bỏ qua phần SCHEMA của chúng
+// slide mở phần: section của engine và slide chương của các bộ hình
+const CHUONG = ["section", "bcchuong", "qtchuong", "bhchuong"];
+/** LÀM TRÒN XUỐNG THÀNH SỐ KHÁC: trong các đoạn chữ (mỗi phần tử một slide), tỉ lệ có 2 chữ số thập phân (1,57 lần) mà chỗ khác ghi
+ *  "1,5×" / "1,5 lần" không kèm "hơn / gần / khoảng" → người nghe nhớ một con số sai (bộ BHXH 11/2026: thẻ Ghi nhớ "1,5×").
+ *  Làm tròn đúng (1,6) không báo. Trả [{ i, text }] — i là chỉ số đoạn. Gợi ý, không chặn. */
+function kiemLamTron(txt) {
+  const chinhXac = new Set(); txt.forEach((t) => { for (const m of String(t).matchAll(/(?<![\d.,])(\d+),(\d{2})(?![\d])/g)) chinhXac.add(+`${m[1]}.${m[2]}`); });
+  const out = [], da = new Set();
+  txt.forEach((t0, i) => { const t = String(t0); for (const m of t.matchAll(/(?<![\d.,])(\d+),(\d)(?![\d,])\s*(×|x\b|lần)/g)) { const v = +`${m[1]}.${m[2]}`;
+    const goc = [...chinhXac].find((x) => Math.floor(x * 10 + 1e-9) / 10 === v && Math.round(x * 10) / 10 !== v); if (goc == null) continue;
+    if (/(hơn|gần|khoảng|trên|xấp xỉ|~|≈)\s*$/i.test(t.slice(Math.max(0, m.index - 12), m.index))) continue;
+    const k = `${i}|${m[0]}`; if (da.has(k)) continue; da.add(k);
+    out.push({ i, text: `"${m[0].replace(/\s+/g, " ")}" là làm tròn xuống của ${String(goc).replace(".", ",")} ở slide khác — ghi đúng chữ số, hoặc thêm "hơn" / "khoảng" (người nghe nhớ một con số sai)` }); } });
+  return out;
+}
+
+function validate(deck, { extraTypes = [] } = {}) {
   const hints = []; // gợi ý (ℹ) — in ra nhưng không tính vào --strict
   const errors = [], warnings = [];
   const E = (slide, type, path, msg) => errors.push(slide ? `Slide ${slide} (${type}): ${path} — ${msg}` : `${path} — ${msg}`);
   if (!isObj(deck)) return { errors: ["deck.json phải là một đối tượng { ... }"], warnings };
   if (!Array.isArray(deck.slides) || !deck.slides.length) return { errors: ['deck.json thiếu mảng "slides" (cần ít nhất 1 slide)'], warnings };
-  if (deck.theme && themes && !themes[deck.theme]) E(0, "", "theme", `"${deck.theme}" không tồn tại (chọn: ${Object.keys(themes).join(" | ")})`);
+  if (deck.theme != null) warnings.push(`"theme": "${deck.theme}" là trường của tầng Office cũ (đã bỏ 11/2026) — màu theo da (meta.da, hinh/da.js); xoá trường này`);
   if (deck.meta && deck.meta.chromeIcon) { const m = checkIcon(String(deck.meta.chromeIcon)); if (m) E(0, "", "meta.chromeIcon", m); }
   if (deck.meta != null && !isObj(deck.meta)) E(0, "", "meta", "phải là đối tượng {...}");
   if (deck.meta && deck.meta.imagePolicy != null && !["open", "classroom"].includes(deck.meta.imagePolicy)) E(0, "", "meta.imagePolicy", 'chọn "classroom" (mặc định — cho phép ảnh web có ghi nguồn, chỉ chiếu trên lớp) hoặc "open" (chỉ ảnh giấy phép mở — khi đăng công khai, nộp cuộc thi)');
@@ -203,7 +221,9 @@ function validate(deck, themes) {
     for (const m of ms) if (!MOTIFS.includes(m)) E(0, "", "meta.motif", `"${m}" không hợp lệ (chọn theo chủ đề: ${MOTIFS.join(" | ")})`); }
   if (deck.meta && deck.meta.motion != null && typeof deck.meta.motion !== "boolean") E(0, "meta", "meta.motion", "chỉ nhận true | false (các ý tự lộ dần khi vào slide)");
   if (deck.meta && deck.meta.thread != null && typeof deck.meta.thread !== "boolean") E(0, "meta", "meta.thread", "chỉ nhận true | false (Morph nối mạch trong chương)");
-  { const KN = require("./kits").NAMES; if (deck.meta && deck.meta.kit != null && ![...KN, "none", "auto"].includes(deck.meta.kit)) E(0, "meta", "meta.kit", `chỉ nhận ${KN.join(" | ")} | none | auto (bộ chất liệu / thế giới: engine/kits.js)`); }
+  { const DA = require("../hinh/da"), ok = [...DA.NAMES, ...Object.keys(DA.ALIAS), "none", "auto"];
+    if (deck.meta && deck.meta.da != null && ![...DA.NAMES, "none"].includes(deck.meta.da)) E(0, "meta", "meta.da", `"${deck.meta.da}" không có — chọn: ${DA.NAMES.join(" | ")} | none (chất liệu theo môn: hinh/da.js)`);
+    if (deck.meta && deck.meta.kit != null && !ok.includes(deck.meta.kit)) E(0, "meta", "meta.kit", `"${deck.meta.kit}" không có (meta.kit là tên cũ của meta.da — chọn: ${DA.NAMES.join(" | ")})`); }
   if (deck.meta && deck.meta.frame != null && !["rect", "arch", "circle", "ogee", "none"].includes(deck.meta.frame)) E(0, "meta", "meta.frame", "chỉ nhận rect | arch | circle | ogee | none (khung ảnh: engine/shapes.js)");
   if (deck.meta && deck.meta.paper != null && typeof deck.meta.paper !== "boolean") E(0, "meta", "meta.paper", "chỉ nhận true | false (nền vân giấy)");
   if (deck.meta && deck.meta.style != null && !["dossier", "cadastral", "portico"].includes(deck.meta.style)) E(0, "meta", "meta.style", "chỉ nhận dossier | cadastral | portico");
@@ -218,8 +238,15 @@ function validate(deck, themes) {
     const n = i + 1;
     if (!isObj(sl)) { E(n, "?", "slide", "phải là đối tượng { type: ..., ... }"); return; }
     const spec = SCHEMA[sl.type];
+    if (["quizgo", "bhhoi"].includes(sl.type) && sl.whyNot != null) {   // quizgo (hinh/canh.js), bhhoi (hinh/so_bhxh.js): whyNot[k] → slide phản hồi riêng cho phương án sai k
+      if (!Array.isArray(sl.whyNot)) warnings.push(`Slide ${n} (${sl.type}): "whyNot" phải là mảng song song với options (null ở phương án đúng)`);
+      else (sl.options || []).forEach((o, k) => { const w = sl.whyNot[k];
+        if (o && o.ok && w) warnings.push(`Slide ${n} (${sl.type}): whyNot[${k}] là phương án ĐÚNG — lời giải ghi ở right.text`);
+        else if (typeof w === "string" && w.replace(/[\[\]]/g, "").length > 130) warnings.push(`Slide ${n} (${sl.type}): whyNot[${k}] ${w.replace(/[\[\]]/g, "").length}/130 ký tự — slide phản hồi chỉ đủ 3 dòng dưới phương án vừa chọn`); }); }
+    // cảnh / bộ hình: không kiểm SCHEMA ở đây, nhưng VẪN lint nội dung (quá 110 tiếng, cụm đệm, tiêu đề là câu hỏi, ký tự trang trí) — trước 13/11/2026 bị bỏ qua cả phần này
+    if (!spec && extraTypes.includes(sl.type)) { clarity(sl, n, warnings); return; }
     if (sl.type === "refs") { E(n, "refs", "type", 'kiểu "refs" (slide tài liệu + mã QR) đã bỏ khỏi skill — nguồn ghi trong bản Word đi kèm, không ghi trên slide'); return; }
-    if (!spec) { E(n, sl.type == null ? "?" : sl.type, "type", sl.type == null ? `thiếu "type" (chọn: ${Object.keys(SCHEMA).join(", ")})` : (HINH_ONLY[sl.type] ? `kiểu "${sl.type}" chỉ có ở tầng hình ảnh (node hinh/dung.js), engine/build.js không dựng được — đổi sang "${HINH_ONLY[sl.type]}" (gần nghĩa nhất) hoặc dựng bằng hinh/dung.js` : `kiểu "${sl.type}" không tồn tại (chọn: ${Object.keys(SCHEMA).join(", ")})`)); return; }
+    if (!spec) { E(n, sl.type == null ? "?" : sl.type, "type", sl.type == null ? `thiếu "type" (chọn: ${Object.keys(SCHEMA).join(", ")})` : `kiểu "${sl.type}" không tồn tại (chọn: ${[...Object.keys(SCHEMA), ...extraTypes].join(", ")})`); return; }
     if (sl.mode != null && !["d", "l", "a"].includes(sl.mode)) E(n, sl.type, "mode", `"${sl.mode}" không hợp lệ (d = nền tối, l = nền sáng, a = nền màu nhấn)`);
     walk(sl, spec, "", (p, m) => E(n, sl.type, p, m), true);
     if (sl.source != null) warnings.push(`Slide ${n} (${sl.type}): trường "source" đã bỏ — slide không ghi nguồn (nguồn nằm trong bản Word đi kèm); xoá trường này`);
@@ -447,7 +474,8 @@ function validate(deck, themes) {
   { // ảnh thật: deck dài mà không có ảnh nào → gợi ý (không chặn); ảnh làm bài nói có bối cảnh, người nghe nhớ lâu hơn
     const PH = new Set(["photo", "split", "gallery", "frame", "beforeafter", "mosaic", "photostats", "photostrip"]);
     const has = (deck.slides || []).some(sl => sl && (PH.has(sl.type) || sl.photo || sl.cutout || (Array.isArray(sl.items) && sl.items.some(x => x && x.photo))));
-    if ((deck.slides || []).length >= 10 && !has) hints.push(`Deck ${deck.slides.length} slide chưa có ảnh thật nào — tìm 3–5 ảnh đúng chủ đề (scripts/find_images.py): bìa band/split, mở chương có ảnh, photostats, mosaic, frame (SKILL.md bước 5)`);
+    const veTay = (deck.slides || []).filter(sl => sl && extraTypes.includes(sl.type)).length;   // bộ hình tự vẽ (bh*, bc*, qt*…) thay ảnh thật bằng vật của môn
+    if ((deck.slides || []).length >= 10 && !has && veTay * 2 < (deck.slides || []).length) hints.push(`Deck ${deck.slides.length} slide chưa có ảnh thật nào — tìm 3–5 ảnh đúng chủ đề (scripts/find_images.py): bìa band/split, mở chương có ảnh, photostats, mosaic, frame (SKILL.md bước 5)`);
   }
   // BÀI TẬP LUẬT: đề có năm / ngày mà lời giải (slide ngay sau) không nhắc thời hiệu / thời hạn / luật áp dụng theo thời điểm
   // → dễ bỏ sót bước "còn thời hiệu không?" (vd. hợp đồng sai hình thức: 2 năm từ ngày xác lập — khoản 1 Điều 132 BLDS 2015)
@@ -479,7 +507,7 @@ function validate(deck, themes) {
   const parts = [...new Set([...deck.slides.map(partOf), ...deck.slides.map(sl => sl && sl.type === "section" && /^\d+$/.test(String(sl.num || "").trim()) ? +sl.num : null)].filter(x => x != null))]; // phần = kicker "Phần N" hoặc slide section có num
   // chỉ "Phần"/"Chương" cần slide mở đầu; "Câu"/"Mục" là chuỗi câu hỏi đã nêu ở mục lục
   const big = new Set(deck.slides.map(sl => String((sl && sl.kicker) || "").match(/^(Phần|Chương)\s*(\d+)/i)).filter(Boolean).map(m => +m[2]));
-  for (const p of parts) if (big.has(p) && !deck.slides.some(sl => sl && ((sl.type === "photo" && partOf(sl) === p) || (sl.type === "section" && +sl.num === p))))
+  for (const p of parts) if (big.has(p) && !deck.slides.some(sl => sl && ((sl.type === "photo" && partOf(sl) === p) || (CHUONG.includes(sl.type) && +(sl.num ?? 1) === p))))
     warnings.push(`Phần ${p} không có slide mở đầu (section, hoặc photo có kicker "Phần ${p} · …") — người xem không nhận ra đã sang phần mới`);
   const ag = deck.slides.find(sl => sl && sl.type === "agenda");
   if (ag && parts.length > 1 && Array.isArray(ag.items) && ag.items.length !== parts.length)
@@ -564,7 +592,7 @@ function validate(deck, themes) {
   // TIÊU ĐỀ PHẢI ĐỌC RIÊNG VẪN HIỂU (người dùng 11/2026: "tiêu đề tối nghĩa") — câu kết luận bị nén thường mất CHỦ NGỮ
   // ("Tăng đều, chỉ giảm năm 2020" — cái gì tăng?) hoặc thành nhãn ("Bốn phần"). Luật: chủ ngữ + vị ngữ + phạm vi (thời gian / đối tượng).
   const NOSUBJ = /^(tăng|giảm|thu luôn|chi luôn|chỉ|luôn|cần|phải|được|bị|có thể|không|đã|đang|sẽ|mở rộng|chững|đi ngang|vượt|đạt|gắn với|chiếm|chuyển sang|còn)(?![\p{L}\p{N}])/iu;
-  deck.slides.forEach((sl, i) => { if (!isObj(sl) || ["cover", "section", "end", "quote", "quiz"].includes(sl.type)) return;
+  deck.slides.forEach((sl, i) => { if (!isObj(sl) || ["cover", "end", "quote", "quiz", ...CHUONG].includes(sl.type)) return;
     const t = String(sl.title || "").replace(/[\[\]]/g, "").trim(); if (!t) return;
     if (NOSUBJ.test(t)) RW(`Slide ${i + 1} (${sl.type}): tiêu đề "${t.slice(0, 50)}" thiếu chủ ngữ — người xem không biết CÁI GÌ ${t.split(/\s+/)[0].toLowerCase()}; viết chủ ngữ + vị ngữ + phạm vi (vd. "Số người đóng BHXH bắt buộc chỉ giảm năm 2020")`);
     else if (sl.type !== "agenda" && t.split(/\s+/).length <= 3) RW(`Slide ${i + 1} (${sl.type}): tiêu đề "${t}" chỉ ${t.split(/\s+/).length} tiếng — là nhãn, không phải câu; viết điều người nghe cần nhớ ở slide này`); });
@@ -587,7 +615,7 @@ function validate(deck, themes) {
       if (k.length >= 1 && k.filter(w => t.has(w)).length / k.length >= 0.6) RW(`Slide ${i + 1} (${sl.type}): nhãn "${sl.kicker}" lặp lại chữ của tiêu đề — nhãn nên là ngữ cảnh / câu hỏi người nghe đang có (vd. "Phần 3 · Vì sao quỹ thâm hụt?"), không nhắc lại tiêu đề`); });
     // (b) MỘT con số xuất hiện ở > 2 slide → người nghe thấy lặp, không thấy bài đi tiếp (năm, số điều luật không tính)
     const numsOf = (sl) => { const out = new Set(), txt = textOf(Object.fromEntries(Object.entries(sl).filter(([k]) => !["notes", "covers", "basis", "items"].includes(k) || (k === "items" && sl.type !== "chart"))));
-      for (const m of txt.replace(/(Điều|khoản|điểm|Đ\.)\s*\d+/gi, "").matchAll(/(?<![\d.,])(\d{1,3}(?:[.,]\d+)+|\d{3,})(?![\d.,])/g)) { const v = m[1]; if (/^(19|20)\d\d$/.test(v) || v.replace(/\D/g, "").length < 3 /* "1,5", "12": số nhỏ hay trùng ngẫu nhiên, khác nghĩa */) continue; out.add(v); } return out; };
+      for (const m of txt.replace(/(Điều|khoản|điểm|Đ\.)\s*\d+/gi, "").matchAll(/(?<![\d.,\p{L}])(\d{1,3}(?:[.,]\d+)+|\d{3,})(?![\d.,\p{L}])/gu)   /* số dính chữ (mã môn BNK405) không phải số liệu */) { const v = m[1]; if (/^(19|20)\d\d$/.test(v) || v.replace(/\D/g, "").length < 3 /* "1,5", "12": số nhỏ hay trùng ngẫu nhiên, khác nghĩa */) continue; out.add(v); } return out; };
     const where = {}; deck.slides.forEach((sl, i) => { if (!isObj(sl) || ["cover", "end"].includes(sl.type)) return; for (const v of numsOf(sl)) (where[v] = where[v] || []).push(i + 1); });
     for (const [v, ss] of Object.entries(where)) if (ss.length > 2) RW(`Số "${v}" xuất hiện ở ${ss.length} slide (${ss.join(", ")}) — mỗi slide nên thêm thông tin MỚI; giữ con số ở slide chứng minh nó, slide sau chỉ nhắc kết luận`);
     // (c) mục lục dùng đúng tên / câu hỏi của từng chương (section) — người nghe nhận ra chương khi tới
@@ -595,13 +623,12 @@ function validate(deck, themes) {
     const agd = deck.slides.find(sl => isObj(sl) && sl.type === "agenda" && Array.isArray(sl.items));
     if (agd && secs.length >= 2) secs.forEach((sc, j) => { const it = String((agd.items || [])[j] || ""), q = String(sc.title || "").replace(/[\[\]]/g, "").trim();
       if (q && it.replace(/[\[\]]/g, "").trim() !== q) RW(`Mục lục mục ${j + 1} "${it.slice(0, 40)}" khác tiêu đề chương ${sc.num} "${q.slice(0, 40)}" — dùng ĐÚNG câu chữ của chương (chương là câu hỏi thì mục lục là câu hỏi đó; kết luận trả lời theo đúng thứ tự)`); }); }
-  // THẾ GIỚI HÌNH ẢNH: world đang dùng có hợp đề tài không (từ khoá fits của world xuất hiện trong tiêu đề bìa / meta.short / tiêu đề chương)
-  { const KM = require("./kits"), kn = deck.meta && deck.meta.kit && deck.meta.kit !== "auto" ? deck.meta.kit : (KM.AUTO[(deck.meta || {}).kind] || null), K = kn && KM.KITS[kn];
-    const topic = [deck.meta && deck.meta.short, ...deck.slides.filter(sl => isObj(sl) && ["cover", "section"].includes(sl.type)).map(sl => sl.title)].join(" ").toLowerCase();
-    if (K && Array.isArray(K.fits) && topic.trim() && !K.fits.some(f => topic.includes(f))) hints.push(`Bộ chất liệu "${kn}" (${K.label}) có vẻ không hợp đề tài — làm bước 0 "thế giới hình ảnh" (references/the-gioi-hinh-anh.md) rồi chọn world hợp, hoặc thêm world mới`);
-    if (K && K.hero && !deck.slides.some(sl => isObj(sl) && sl.type === K.hero)) hints.push(`World "${kn}" có khối hình chính "${K.hero}" (vật chủ đạo CHỞ dữ liệu) nhưng deck chưa dùng — đặt cho slide số liệu / lập luận chính để người xem nhận ra đề tài ngay cả khi che chữ`);
-    if (REP && (!deck.meta || !deck.meta.kit || deck.meta.kit === "auto")) { const hit = Object.entries(KM.KITS).find(([, k]) => Array.isArray(k.fits) && k.fits.some(f => topic.includes(f)));
-      if (hit) hints.push(`Đề tài có vẻ hợp world "${hit[0]}" (${hit[1].label}) — đặt "meta": { "kit": "${hit[0]}" } để cả deck mang chất của môn, thay vì bộ mặc định theo loại bài`); } }
+  // DA THEO MÔN (hinh/da.js): da đang dùng có hợp đề tài không (từ khoá fits của da có trong tiêu đề bìa / meta.short / tiêu đề chương)
+  { const DA = require("../hinh/da"), m = deck.meta || {}, kn = m.da || (m.kit && (DA.ALIAS[m.kit] || m.kit)), K = kn && DA.DA[kn], CHUNG = ["ho-so", "giay", "kinh"];
+    const topic = [m.short, m.title, ...deck.slides.filter(sl => isObj(sl) && ["cover", "section", "bcbia", "qtbia"].includes(sl.type)).map(sl => sl.title)].join(" ").toLowerCase();
+    if (K && !CHUNG.includes(kn) && !["bc", "qt"].includes(kn) && topic.trim() && !K.fits.some(f => topic.includes(f))) hints.push(`Da "${kn}" (${K.mon}) có vẻ không hợp đề tài — xem lại bước 0 "thế giới hình ảnh" (references/the-gioi-hinh-anh.md) rồi chọn da hợp, hoặc thêm da mới vào hinh/da.js`);
+    if ((!kn || CHUNG.includes(kn)) && topic.trim()) { const hit = Object.entries(DA.DA).find(([k, d]) => !CHUNG.includes(k) && d.fits.some(f => topic.includes(f)));
+      if (hit) hints.push(`Đề tài có vẻ hợp da "${hit[0]}" (${hit[1].mon}) — đặt "meta": { "da": "${hit[0]}" } để cả deck mang chất của môn, thay vì da chung theo loại bài`); } }
   // (2) PHẠM VI: meta.scopeOut = cụm từ ngoài phạm vi bài (vd. "bảo hiểm y tế", "BHYT"); slide được phép nhắc thì ghi "scopeOk": true
   const outs = deck.meta && Array.isArray(deck.meta.scopeOut) ? deck.meta.scopeOut.filter(x => typeof x === "string" && x.trim()) : [];
   if (deck.meta && deck.meta.scopeOut != null && !Array.isArray(deck.meta.scopeOut)) E(0, "", "meta.scopeOut", 'phải là danh sách cụm từ, vd ["bảo hiểm y tế", "BHYT"]');
@@ -609,7 +636,7 @@ function validate(deck, themes) {
     const hit = outs.find(o => new RegExp(`(?<![\\p{L}\\p{N}])${o.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?![\\p{L}\\p{N}])`, "u").test(low));
     if (hit) warnings.push(`Slide ${i + 1} (${sl.type}): nhắc "${hit}" — ngoài phạm vi bài (meta.scopeOut); bỏ đi, hoặc ghi "scopeOk": true nếu slide này cố ý nêu tổng (vd. bảng đầu tiên)`); });
   // (5) HẠN CHẾ phải dựa trên số liệu đã trình bày ở phần thực trạng: "basis": [số slide]
-  deck.slides.forEach((sl, i) => { if (!isObj(sl) || ["section", "cover", "agenda", "end", "closing"].includes(sl.type)) return; const n = i + 1;
+  deck.slides.forEach((sl, i) => { if (!isObj(sl) || !SCHEMA[sl.type] /* recap: basis là chuỗi căn cứ */ || ["section", "cover", "agenda", "end", "closing"].includes(sl.type)) return; const n = i + 1;
     if (sl.basis != null && !(Array.isArray(sl.basis) && sl.basis.every(Number.isInteger))) { E(n, sl.type, "basis", "phải là danh sách số slide, vd [7, 9]"); return; }
     const lim = /hạn chế|tồn tại|bất cập|yếu kém/i.test(head(sl));
     if (lim && !(sl.basis || []).length) RW(`Slide ${n} (${sl.type}): slide hạn chế không có "basis" — mỗi hạn chế phải dựa trên số liệu đã trình bày ở phần thực trạng; ghi "basis": [số slide chứa số liệu đó]`);
@@ -625,7 +652,38 @@ function validate(deck, themes) {
     if (["section", "cover", "agenda", "end", "closing"].includes(sl.type) || !/hoàn thiện pháp luật|kiến nghị|sửa đổi|bổ sung quy định/i.test(head(sl))) return;
     const key = ["items", "rows", "cells", "steps", "branches", "pairs", "levels"].find(k => Array.isArray(sl[k]) && sl[k].length);
     if (key) sl[key].forEach((u, j) => { if (!LAWREF.test(unitText(u))) RW(`Slide ${n} (${sl.type}): ${key}[${j}] là kiến nghị nhưng không chỉ ra điều, khoản nào — nêu quy định cụ thể chưa hợp lý và hướng sửa`); }); });
+  // CÙNG MỘT CON SỐ HAI CÁCH GHI trên một slide ("800.000" ở tiêu đề, "0,8" + "triệu" ở số lớn): người nghe phải đổi đơn vị
+  // trong đầu; chọn một cách ghi cho cả slide (references/nguyen-tac-bo-cuc.md mục 8). Chỉ xét số ≥ 1.000 (số đếm), bỏ năm, số điều luật.
+  { const BO = new Set(["notes", "covers", "id", "photo", "photoAlt", "photoCredit", "photoSource", "cutout", "url", "go", "next", "icon", "emoji", "emoji2", "art", "type", "basis"]);
+    const chu = (v, k) => (BO.has(k) ? "" : typeof v === "string" ? v + " " : typeof v === "number" ? v + " " : Array.isArray(v) ? v.map((x) => chu(x)).join(" ") : isObj(v) ? Object.entries(v).filter(([kk]) => !(kk === "value" && "display" in v)).map(([kk, x]) => chu(x, kk)).join(" ") : "");   // có display thì số thô không hiện
+    const NHAN = { nghìn: 1e3, ngàn: 1e3, triệu: 1e6, tỷ: 1e9, tỉ: 1e9 };
+    deck.slides.forEach((sl, i) => { if (!isObj(sl)) return; const t = chu(sl).replace(/[[\]]/g, "").replace(/(Điều|khoản|điểm|Đ\.)\s*\d+/gi, ""), so = [];
+      for (const m of t.matchAll(/(?<![\d\p{L}.,])(\d{1,3}(?:\.\d{3})+|\d+(?:,\d+)?)(?:\s*(nghìn|ngàn|triệu|tỷ|tỉ)(?!\p{L}))?/gu)) {
+        const raw = m[1], dv = (m[2] || "").toLowerCase(), v = parseFloat(raw.replace(/\.(?=\d{3})/g, "").replace(",", ".")) * (NHAN[dv] || 1);
+        if (v >= 1000 && !(!dv && /^(19|20)\d\d$/.test(raw))) so.push({ v, ghi: m[0].trim().replace(/\s+/g, " "), dv }); }
+      const da = new Set(); for (const a of so) for (const b of so) if (a.dv !== b.dv && Math.abs(a.v - b.v) / a.v < 0.005) { const k = [a.ghi, b.ghi].sort().join("|"); if (da.has(k)) continue; da.add(k);
+        warnings.push(`Slide ${i + 1} (${sl.type}): cùng một con số hai cách ghi — "${a.ghi}" và "${b.ghi}"; chọn một cách ghi cho cả slide (người nghe không phải đổi đơn vị trong đầu)`); } }); }
+  // "slide N" trong chữ của deck ("Số liệu: slide 16", "xem slide 9–10") phải trỏ tới slide có thật — thêm / bớt slide làm lệch số là lỗi hay gặp
+  { const BO = new Set(["notes", "covers", "id", "photo", "url", "go", "next", "basis"]), M = deck.slides.length;
+    const chu = (v, k) => (BO.has(k) ? "" : typeof v === "string" ? v + " " : Array.isArray(v) ? v.map((x) => chu(x)).join(" ") : isObj(v) ? Object.entries(v).map(([k2, x]) => chu(x, k2)).join(" ") : "");
+    deck.slides.forEach((sl, i) => { if (!isObj(sl)) return;
+      for (const m of chu(sl).matchAll(/\bslide\s+(\d+)(?:\s*[–-]\s*(\d+))?/gi)) for (const v of [m[1], m[2]].filter(Boolean).map(Number))
+        if (v < 1 || v > M) warnings.push(`Slide ${i + 1} (${sl.type}): nhắc "${m[0]}" nhưng deck chỉ có ${M} slide — sửa số sau khi thêm / bớt slide`); }); }
+  // LÀM TRÒN XUỐNG THÀNH SỐ KHÁC (kiemLamTron, dùng chung với hinh/dung.js — chạy lại trên chữ đã dựng, vì có số do mẫu tự tính, vd. bhtang "1,57")
+  { const BO = new Set(["notes", "covers", "id", "photo", "url", "go", "next", "icon", "emoji", "type"]);
+    const chu = (v, k) => (BO.has(k) ? "" : typeof v === "string" ? v + " " : typeof v === "number" ? v + " " : Array.isArray(v) ? v.map((x) => chu(x)).join(" ") : isObj(v) ? Object.entries(v).map(([k2, x]) => chu(x, k2)).join(" ") : "");
+    hints.push(...kiemLamTron(deck.slides.map((sl) => (isObj(sl) ? chu(sl).replace(/[[\]]/g, "") : ""))).map((h) => `Slide ${h.i + 1}: ${h.text}`)); }
+  // CĂN CỨ SỐ LIỆU: một khối ghi "Số liệu: slide N" (hoặc N–M) kèm con số → con số đó phải có trên slide N…M (chữ hoặc ghi chú)
+  // — "mỗi hạn chế phải dựa trên số liệu đã trình bày"; gợi ý, không chặn (số có thể được làm tròn khác cách ghi)
+  { const txt = (v) => (typeof v === "string" ? v + " " : Array.isArray(v) ? v.map(txt).join(" ") : isObj(v) ? Object.values(v).map(txt).join(" ") : typeof v === "number" ? v + " " : "");
+    const so = (t) => [...t.replace(/(Điều|khoản|điểm|Đ\.|slide)\s*\d+([–-]\d+)?/gi, "").matchAll(/(?<![\d\p{L}])\d+(?:[.,]\d+)*(?:\s?%)?/gu)].map((m) => m[0].replace(/\s/g, "")).filter((x) => !/^(19|20)\d\d$/.test(x) && x.replace(/[^\d]/g, "").length >= 2);
+    const di = (o, i) => { if (Array.isArray(o)) return o.forEach((x) => di(x, i)); if (!isObj(o)) return;
+      const t = txt(o), m = t.match(/Số liệu:\s*slide\s+(\d+)(?:\s*[–-]\s*(\d+))?/i);
+      if (m && !Object.values(o).some((v) => isObj(v) || Array.isArray(v))) { const a = +m[1], b = +(m[2] || m[1]), noi = deck.slides.slice(a - 1, b).map((x) => txt(x)).join(" ").replace(/\s/g, "");
+        for (const x of so(t)) if (noi && !noi.includes(x)) hints.push(`Slide ${i + 1} (${deck.slides[i].type}): "${x}" dẫn "Số liệu: slide ${m[1]}${m[2] ? "–" + m[2] : ""}" nhưng không thấy trên slide đó — kiểm lại số hoặc số slide`); }
+      else Object.values(o).forEach((v) => di(v, i)); };
+    deck.slides.forEach((sl, i) => { if (isObj(sl)) Object.entries(sl).forEach(([k, v]) => k !== "notes" && di(v, i)); }); }
   return { errors, warnings, hints };
 }
 
-module.exports = { validate, SCHEMA, CAPS, checkIcon, words, MAX_WORDS };
+module.exports = { validate, SCHEMA, CAPS, checkIcon, words, MAX_WORDS, kiemLamTron };

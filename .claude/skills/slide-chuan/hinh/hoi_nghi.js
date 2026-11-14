@@ -75,12 +75,12 @@ const S1 = {};
 S1.qtbia = (s) => {
   const len = plain(s.title || "").length, fs = len > 56 ? 76 : len > 40 ? 90 : 110;
   const ky = [["Người trình bày", s.author], ["Lớp", s.authorSub], ["Ngày", s.date]].map(([lb, v], k) => {
-    const x = 70 + k * 330; return `<div class="qt-tx" data-t style="left:${x}px;top:656px;width:310px;font-size:28px;font-weight:700;white-space:nowrap">${esc(v || "")}</div><div class="qt-ky" style="left:${x}px;top:700px;width:290px"></div><div class="qt-lb" data-t style="left:${x}px;top:716px;width:300px;font-size:20px;color:#7d6a45">${esc(lb)}</div>`; }).join("");
+    const x = 70 + k * 330; return `<div class="qt-tx" data-t style="left:${x}px;top:656px;width:310px;font-size:28px;font-weight:700;white-space:nowrap">${esc(v || "")}</div><div class="qt-ky" style="left:${x}px;top:700px;width:290px"></div><div class="qt-lb" data-t style="left:${x}px;top:716px;width:300px;font-size:20px;color:#6a5733">${esc(lb)}</div>`; }).join("");
   const giay = vk("qt-bia", 110, 132, 1100, 830, -1, `
     <div class="qt-lb" data-t style="left:70px;top:66px;width:960px">${esc(s.kicker || "")}</div><div class="qt-rule" style="left:70px;top:110px;width:960px"></div>
     <div class="qt-t1" data-t style="left:70px;top:146px;width:960px;font-size:${fs}px">${tx(s.title || "")}</div>
     ${s.subtitle ? `<div class="qt-tx" data-t style="left:70px;top:${146 + Math.ceil(len / (960 / (0.44 * fs))) * fs * 1.04 + 34}px;width:900px;font-size:31px;color:#46536b">${tx(s.subtitle)}</div>` : ""}
-    <div class="qt-lb" data-t style="left:70px;top:598px;width:600px;font-size:20px;color:#7d6a45">Các bên ký tên</div>${ky}`, { m: "tieu" });
+    <div class="qt-lb" data-t style="left:70px;top:598px;width:600px;font-size:20px;color:#6a5733">Các bên ký tên</div>${ky}`, { m: "tieu" });
   return { cls: "dark qt", bare: true, html: `<div class="cv" data-tay>
     ${hangCo("qt-hangco", 1310, 150, 5, 112, 860)}
     ${vk("qt-bia-lot", 136, 152, 1100, 830, 1.6, "", { pad: 40, cls: "qt-lot" })}${giay}
@@ -152,10 +152,12 @@ const css = `
 .qt-t1 { position: absolute; font: 400 100px/1.04 var(--fd); text-transform: uppercase; color: #13233d; } .qt-t1 em { color: #b3261e; }
 .qt-t2 { position: absolute; font: 400 72px/1.08 var(--fd); color: #13233d; } .qt-t2 em { color: #b3261e; }
 .qt-tx { position: absolute; font: 500 32px/1.38 var(--fb); color: #13233d; } .qt-tx em { color: #b3261e; font-weight: 800; }
-.qt-lb { position: absolute; font: 800 26px/1 var(--fb); letter-spacing: .14em; text-transform: uppercase; color: #9a7426; }
+.qt-lb { position: absolute; font: 800 26px/1 var(--fb); letter-spacing: .14em; text-transform: uppercase; color: #84621c; }   /* vàng đồng đậm hơn một bậc: nhãn 20 px ở bìa đạt 4,5 : 1 */
 .qt-rule { position: absolute; height: 3px; background: linear-gradient(90deg, #c9a24a 0 75%, transparent); }
 .qt-ky { position: absolute; height: 0; border-top: 2px solid #6b5a3a; }
 .qt-cap { position: absolute; font: 700 30px/1.3 var(--fb); color: #eef2f8; text-shadow: 0 2px 8px rgba(0,0,0,.6); }
 `;
 
-module.exports = { TYPES, render, css };
+// type thường tương đương (Bước 0 so với kế hoạch prep.json)
+const TUONG_DUONG = { qtbia: ["cover"], qtchuong: ["section"], qtban: ["cards"] };
+module.exports = { TYPES, render, css, TUONG_DUONG };

@@ -7,27 +7,16 @@ const { spawnSync } = require("child_process");
 const JSZip = require("jszip");
 const { ROOT, buildDeck, cover } = require("./helpers");
 const LIMITS = require("../engine/limits");
-const THEMES = require("../engine/themes");
 
 const EX = JSON.parse(fs.readFileSync(path.join(ROOT, "examples", "bo_cuc_them.json"), "utf8"));
 
-test("examples/bo_cuc_them.json qua --strict ở cả 6 theme", () => {
-  for (const th of Object.keys(THEMES)) {
-    const r = buildDeck(EX, ["--strict", "--theme", th]);
-    assert.strictEqual(r.code, 0, `theme ${th}:\n${r.all}`);
-  }
-});
-test("theme mới cũng qua deck bài tính (bai_tinh.json)", () => {
-  const ex = JSON.parse(fs.readFileSync(path.join(ROOT, "examples", "bai_tinh.json"), "utf8"));
-  for (const th of ["toa", "xanh", "muc"]) { const r = buildDeck(ex, ["--strict", "--theme", th]); assert.strictEqual(r.code, 0, `theme ${th}:\n${r.all}`); }
-});
-test("--native: biểu đồ line thành chart gốc, table thành a:tbl", async () => {
-  const r = buildDeck(EX, ["--strict", "--native"]);
+test("examples/bo_cuc_them.json qua --strict", () => {
+  const r = buildDeck(EX, ["--strict"]);
   assert.strictEqual(r.code, 0, r.all);
-  const z = await JSZip.loadAsync(fs.readFileSync(r.pptx));
-  assert.ok(Object.keys(z.files).some(f => /^ppt\/charts\/chart\d+\.xml$/.test(f)), "không có ppt/charts/chart*.xml");
-  const xs = await Promise.all(Object.keys(z.files).filter(f => /^ppt\/slides\/slide\d+\.xml$/.test(f)).map(f => z.file(f).async("string")));
-  assert.ok(xs.some(x => x.includes("<a:tbl>")), "không có bảng gốc <a:tbl>");
+});
+test("deck bài tính cũng qua --strict (bai_tinh.json)", () => {
+  const ex = JSON.parse(fs.readFileSync(path.join(ROOT, "examples", "bai_tinh.json"), "utf8"));
+  const r = buildDeck(ex, ["--strict"]); assert.strictEqual(r.code, 0, r.all);
 });
 const one = (sl) => buildDeck({ slides: [cover, sl] });
 test("checklist: < 2 điều kiện bị chặn; verdict mâu thuẫn thì cảnh báo", () => {
@@ -52,7 +41,7 @@ test("layouts_index.json phủ đủ mọi type, alt trỏ tới type/kind có t
   for (const [t, e] of Object.entries(I.types)) for (const a of e.alt) if (!I.types[a]) bad.push(`${t} → ${a}`);
   for (const [t, e] of Object.entries(I.charts)) for (const a of e.alt) if (!I.charts[a] && !I.types[a]) bad.push(`chart ${t} → ${a}`);
   assert.deepStrictEqual(bad, []);
-  assert.deepStrictEqual(Object.keys(I.themes).sort(), Object.keys(THEMES).sort());
+  assert.ok(!("themes" in I), "theme Office đã bỏ — màu theo da (hinh/da.js)");
 });
 test("chon_layout.py gợi ý waterfall cho bài tính cộng trừ", () => {
   const r = spawnSync("python3", [path.join(ROOT, "scripts", "chon_layout.py"), "tính thuế cộng trừ từng khoản ra số cuối"], { encoding: "utf8" });

@@ -99,7 +99,8 @@ test("deck mẫu nghỉ việc: 11 slide deck.json → 20 slide PowerPoint, id k
 test("cảnh: báo lỗi rõ khi điều cần tìm không có trong sách; chuyển cảnh và bảng màu đổi được", () => {
   const d = sample(); d.slides[0].find = 99;
   assert.throws(() => dungHtml(d), /find/);
-  const r = dungHtml(sample(), { mau: "luc", chuyen: "fade" });
+  const d2 = sample(); d2.meta = { ...d2.meta, da: "none" };   // bảng màu (--mau) chỉ áp khi deck không dùng da; có da thì màu của da thắng
+  const r = dungHtml(d2, { mau: "luc", chuyen: "fade" });
   assert.ok(r.html.includes("--ink: #0e2a22") && !/data-trans="morph"[^>]*data-tu/.test(r.html.split("</section>").slice(8).join("")));
 });
 
@@ -119,8 +120,8 @@ test("dựng PPTX thật: chữ là hộp chữ sửa được, Morph và liên 
   if (chromiumPath) process.env.PW_CHROMIUM = chromiumPath;
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), "hinh-")), deckPath = path.join(dir, "thu.json");
   fs.writeFileSync(deckPath, JSON.stringify({ meta: { title: "Thử", short: "Bài thử" }, slides: [
-    { type: "cover", id: "bia", title: "Bìa [thử]", kicker: "Deck thử" },
-    { type: "statement", id: "y", title: "Một ý [cốt lõi] duy nhất", sub: "Nền tối, không có hình trang trí." },
+    { type: "cover", id: "bia", title: "Bìa [thử] của bộ dựng, tiêu đề cố ý dài để phải xuống hai dòng", kicker: "Deck thử" },
+    { type: "statement", id: "y", title: "Một ý [cốt lõi] duy nhất", sub: "Nền tối, không có hình trang trí; câu phụ này cố ý viết dài để chắc chắn phải xuống hai dòng trong hộp chữ của slide một ý duy nhất." },
     { type: "tiles", id: "cot", title: "Hai mức [báo trước]", cols: [{ n: 12, unit: "ngày", label: "Mức A", morph: true }, { n: 3, unit: "ngày", label: "Mức B" }] },
     { type: "strip", id: "dai", title: "Mười hai ngày", n: 12, marks: [{ head: "Bắt đầu", text: "Ngày một" }, { head: "Kết thúc", text: "Ngày mười hai" }] },
     { type: "quizgo", id: "hoi", title: "Mấy ngày?", options: [{ text: "Ba" }, { text: "Mười hai", ok: true }], right: { text: "Đúng là mười hai." }, next: "ml" },
@@ -134,9 +135,32 @@ test("dựng PPTX thật: chữ là hộp chữ sửa được, Morph và liên 
   for (const [x, words] of [[s1, ["Bìa", "thử"]], [s2, ["cốt lõi"]], [s3, ["12", "Mức A"]], [s4, ["Bắt đầu"]], [s5, ["Mười hai"]]]) for (const w of words) assert.ok(x.toLocaleLowerCase("vi").includes(w.toLocaleLowerCase("vi")), `chữ “${w}” phải nằm trong hộp chữ`);   // tiêu đề bìa được viết hoa
   for (const x of [s1, s2, s3, s4, s5]) assert.ok(wellFormed(x.replace(/<a:t>[^<]*<\/a:t>/g, "<a:t></a:t>")), "XML slide phải khớp thẻ");
   assert.ok(s3.includes("p159:morph") && s3.includes("<p:timing>"), "Morph và chuỗi hiệu ứng gốc");
+  // hộp chữ MỘT dòng không tự xuống dòng (máy thiếu font → chữ rộng hơn nhưng con số không gãy đôi); hộp nhiều dòng vẫn tự xuống dòng để sửa chữ
+  const boxes = (x) => [...x.matchAll(/<p:sp>[\s\S]*?<\/p:sp>/g)].map((m) => m[0]).filter((b) => b.includes("<a:t>"));
+  const motDong = boxes(s2).find((b) => /cốt lõi/i.test(b)), coChu = (b) => Math.max(...[...b.matchAll(/ sz="(\d+)"/g)].map((m) => +m[1])), nhieuDong = [s1, s2, s3, s4, s5].flatMap(boxes).find((b) => (b.match(/<a:p>/g) || []).length > 1 && coChu(b) < 3300);
+  assert.ok(motDong && /<a:bodyPr[^>]*wrap="none"/.test(motDong), "tiêu đề một dòng: wrap=none");
+  assert.ok(nhieuDong && /<a:bodyPr[^>]*wrap="square"/.test(nhieuDong), "chữ thường nhiều dòng: wrap=square");
+  const bia = boxes(s1).find((b) => /bìa/iu.test(b));
+  assert.ok(bia && (bia.match(/<a:p>/g) || []).length > 1 && /<a:bodyPr[^>]*wrap="none"/.test(bia), "tiêu đề cỡ lớn nhiều dòng: wrap=none (dòng đã ngắt sẵn, không để trình mở file ngắt thêm)");
   for (let k = 1; k <= 12; k++) assert.ok(s3.includes(`name="!!o-${k}"`) && s4.includes(`name="!!o-${k}"`), `ô ${k} phải ghép Morph giữa cột và dải ngày`);
   assert.ok(s2.includes('name="!!td"') && s3.includes('name="!!td"') && s2.includes('name="!!ten-bai"'), "thanh tiến độ và tên bài chạy liền qua các slide");
   assert.ok((s5.match(/ppaction:\/\/hlinksldjump/g) || []).length >= 2 && /advClick="0"/.test(s5), "đáp án là liên kết nhảy slide; slide hỏi chặn bấm");
+  // slide phản hồi "Chưa đúng" / "Chính xác!": tiêu đề hiện ra trùng nhau giữa các câu hỏi → tiêu đề ĐẦY ĐỦ đặt ngoài khung slide (cách Microsoft hướng dẫn), hộp chữ hiện giữ nguyên
+  const s6 = await sl(6), s7 = await sl(7), tdAn = (x) => { const m = x.match(/<p:sp><p:nvSpPr><p:cNvPr id="\d+" name="Tiêu đề ẩn"[\s\S]*?<\/p:sp>/); return m ? m[0] : ""; };
+  for (const [x, chu] of [[s6, "chưa đúng"], [s7, "chính xác"]]) { const t = tdAn(x);
+    assert.ok(t && /<p:ph type="title"\/>/.test(t) && /<a:off x="\d+" y="-\d+"\/>/.test(t), "có tiêu đề ẩn nằm ngoài khung (y âm)");
+    assert.ok(t.toLocaleLowerCase("vi").includes("mấy ngày?") && t.toLocaleLowerCase("vi").includes(chu), t.slice(0, 300));
+    assert.equal((x.match(/<p:ph type="title"\/>/g) || []).length, 1, "chỉ một placeholder tiêu đề"); }
+  // slide phản hồi là NHÁNH (chỉ nói khi người học chọn): tên slide trong PPTX ghi rõ — bản in ghi chú (scripts/ban_ghi_chu.py) không cộng giờ nhánh sai
+  assert.match(s6, /<p:cSld name="Nhánh trắc nghiệm: sai[^"]*"/); assert.match(s7, /<p:cSld name="Nhánh trắc nghiệm: đúng[^"]*"/); assert.doesNotMatch(s5, /<p:cSld name="Nhánh/);
+  // chữ Việt trong PowerPoint: font phụ Đông Á / phức hợp KHÔNG được mang bảng mã Trung Quốc (pptxgenjs mặc định GB2312 −122, Big5 −120 → PowerPoint
+  // vẽ "ố, đ, ả, ư" bằng font Trung: ô vuông, chữ giãn); ngôn ngữ vi-VN (không gạch đỏ chính tả cả slide)
+  for (let k = 1; k <= 8; k++) { const x = await sl(k);
+    assert.doesNotMatch(x, /charset="-12[02]"/, `slide ${k}: còn bảng mã Trung Quốc ở font phụ`);
+    assert.doesNotMatch(x, /lang="en-US"/, `slide ${k}: còn lang en-US`); assert.match(x, /lang="vi-VN"/); }
+  const pres0 = await z.file("ppt/presentation.xml").async("string");
+  assert.doesNotMatch(pres0, /lang="en-US"/, "kiểu chữ mặc định cũng vi-VN");
+  assert.match(pres0, /<p:font typeface="[^"]+" panose="[0-9A-F]{20}" pitchFamily="\d+" charset="0"\/>/, "font nhúng khai họ + bảng mã để PowerPoint chọn font thay thế phương Tây nếu không nạp được");
   const pres = await z.file("ppt/presentation.xml").async("string"), emb = [...pres.matchAll(/<p:embeddedFont><p:font typeface="([^"]+)"/g)].map((m) => m[1]);
   const usedFaces = new Set(); for (let n = 1; n <= 8; n++) for (const m of (await sl(n)).matchAll(/<a:latin typeface="([^"]+)"/g)) usedFaces.add(m[1]);
   for (const f of usedFaces) assert.ok(emb.includes(f), `font “${f}” dùng mà không nhúng`);

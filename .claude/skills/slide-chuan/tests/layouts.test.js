@@ -38,19 +38,19 @@ test("giới hạn ký tự trong layouts.md == limits.js", () => {
 });
 test("thông báo không trỏ tới file không tồn tại", () => {
   const root = path.join(__dirname, "..");
-  for (const f of ["engine/build.js", "engine/validate.js"]) {
+  for (const f of ["hinh/dung.js", "hinh/kiem.js", "hinh/kiem_tang.js", "hinh/kiem_noi_dung.js", "engine/validate.js"]) {
     const p = path.join(root, f); if (!fs.existsSync(p)) continue;
     for (const m of fs.readFileSync(p, "utf8").matchAll(/references\/[\w.-]+/g))
       assert.ok(fs.existsSync(path.join(root, m[0])), `${f} trỏ tới ${m[0]} không tồn tại`);
   }
 });
 
-test("đồng bộ: mỗi type có renderer, schema, dòng trong SKILL.md; số type ghi trong tài liệu khớp thực tế", () => {
+test("đồng bộ: mỗi type có mẫu (stage/templates.js), schema, dòng trong SKILL.md; số type ghi trong tài liệu khớp thực tế", () => {
   const root = path.join(__dirname, "..");
-  const b = fs.readFileSync(path.join(root, "engine/build.js"), "utf8"), v = fs.readFileSync(path.join(root, "engine/validate.js"), "utf8");
+  const b = fs.readFileSync(path.join(root, "stage/templates.js"), "utf8"), v = fs.readFileSync(path.join(root, "engine/validate.js"), "utf8");
   const sk = fs.readFileSync(path.join(root, "SKILL.md"), "utf8"), types = Object.keys(LIMITS), miss = [];
   for (const t of types) {
-    if (!b.includes(`L.${t} = `)) miss.push(`${t}: thiếu renderer`);
+    if (!b.includes(`T.${t} = `)) miss.push(`${t}: thiếu mẫu trong stage/templates.js`);
     if (!new RegExp(`\\b${t}: \\{`).test(v)) miss.push(`${t}: thiếu schema trong validate.js`);
     if (!sk.includes("`" + t + "`")) miss.push(`${t}: SKILL.md chưa nhắc`);
   }

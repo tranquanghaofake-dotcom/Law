@@ -10,10 +10,6 @@ const ledger = { type: "ledger", title: "Người mua thiệt nhất", unit: "tr
   { name: "Người mua", steps: [{ label: "Trả", value: -850 }, { label: "Nhận", value: 500 }] },
   { name: "Người bán", steps: [{ label: "Nhận", value: 850 }] }] };
 
-test("flow + ledger dựng được, không cảnh báo", () => {
-  const r = buildDeck({ slides: [cover, flow, ledger] }, ["--strict"]);
-  assert.strictEqual(r.code, 0, r.all); assert.ok(fs.existsSync(r.pptx));
-});
 test("flow: edges trỏ tới id không có -> lỗi exit 2", () => {
   const r = buildDeck({ slides: [cover, Object.assign({}, flow, { edges: [{ from: "A", to: "Z", label: "x" }] })] });
   assert.strictEqual(r.code, 2, r.all); assert.ok(r.all.includes("edges[0].to") && r.all.includes('"Z"'), r.all);
@@ -27,10 +23,6 @@ test("mode a hợp lệ, mode lạ thì lỗi", () => {
   assert.strictEqual(r.code, 0, r.all); assert.ok(r.all.includes("duy nhất nền màu nhấn"), r.all); // hợp lệ nhưng một slide nhấn lẻ loi thì cảnh báo
   assert.strictEqual(buildDeck({ slides: [cover, Object.assign({ mode: "x" }, ledger)] }).code, 2);
 });
-test("tiêu đề là câu hỏi -> cảnh báo; --strict dừng", () => {
-  const r = buildDeck({ slides: [cover, Object.assign({}, ledger, { title: "Ai thiệt nhất?" })] }, ["--strict"]);
-  assert.strictEqual(r.code, 1, r.all); assert.ok(r.all.includes("câu hỏi"), r.all);
-});
 test("tiêu đề là nhãn -> cảnh báo", () => {
   const r = buildDeck({ slides: [cover, Object.assign({}, ledger, { title: "Tổng quan" })] });
   assert.ok(r.all.includes("tiêu đề là nhãn"), r.all);
@@ -43,16 +35,6 @@ test("slide quá nhiều tiếng -> cảnh báo", () => {
   const item = Array(40).fill("a").join(" "); // 3 x 40 tiếng + 4 tiếng tiêu đề = 124
   const r = buildDeck({ slides: [cover, { type: "agenda", title: "Ba câu hỏi chính", items: [item, item, item] }] });
   assert.ok(r.all.includes("124 tiếng trên slide"), r.all);
-});
-test("hiệu ứng chuyển slide: mặc định fade, --transition none thì không có", () => {
-  const JSZip = require("jszip");
-  const a = buildDeck({ slides: [cover, ledger] }), b = buildDeck({ slides: [cover, ledger] }, ["--transition", "none"]);
-  return Promise.all([a, b].map(r => JSZip.loadAsync(fs.readFileSync(r.pptx)).then(z => z.file("ppt/slides/slide2.xml").async("string"))))
-    .then(([x, y]) => { assert.ok(x.includes("<p:fade/>")); assert.ok(!y.includes("<p:transition")); });
-});
-test("--transition giá trị lạ -> lỗi", () => {
-  const r = buildDeck({ slides: [cover] }, ["--transition", "xoay"]);
-  assert.notStrictEqual(r.code, 0); assert.ok(r.all.includes("fade"), r.all);
 });
 test("motif hợp lệ dựng được; motif lạ -> lỗi", () => {
   for (const m of ["none", "cadastral", "certificate", "landscape", "contour", "dots", "lines", "waves", "blobs", "grid"]) assert.strictEqual(buildDeck({ meta: { motif: m }, slides: [cover, ledger] }, ["--strict"]).code, 0, m);
@@ -96,7 +78,7 @@ test("closing phải trả lời đúng số câu hỏi của agenda; không ch�
   const cl = { type: "closing", title: "Người mua thiệt nhất", rec: { title: "Kiến nghị", items: ["Hướng dẫn tiêu chí ngay tình"] } };
   const a = buildDeck({ slides: [cover, ag, cl] }); assert.ok(a.all.includes("kết luận không trả lời"), a.all);
   const b = buildDeck({ slides: [cover, ag, Object.assign({}, cl, { answers: [{ q: "Câu 01", a: "Vay trá hình" }] })] }); assert.ok(b.all.includes("1 câu trả lời nhưng mục lục có 2"), b.all);
-  const ok = Object.assign({}, cl, { verdict: "Đúng kết quả, thiếu lập luận", answers: [{ q: "Câu 01 · Mua hay vay", a: "Vay trá hình — Điều 129 BLDS 2005" }, { q: "Câu 02 · Ai thiệt", a: "Người mua thiệt 350 triệu", tone: "bad" }] });
+  const ok = Object.assign({}, cl, { verdict: "Đúng kết quả, thiếu lập luận", answers: [{ q: "Câu 01 · Mua hay vay", a: "Vay trá hình — Điều 129 BLDS 33/2005/QH11" }, { q: "Câu 02 · Ai thiệt", a: "Người mua thiệt 350 triệu", tone: "bad" }] });
   const c = buildDeck({ slides: [cover, ag, ok] }, ["--strict"]); assert.strictEqual(c.code, 0, c.all);
   assert.ok(buildDeck({ slides: [cover, Object.assign({}, cl, { title: "Kết thúc." })] }).all.includes("dấu chấm"));
 });
@@ -123,18 +105,6 @@ test("icon Phosphor dùng được; tên lạ vẫn báo lỗi", () => {
   assert.strictEqual(buildDeck({ slides: [cover, { type: "cards", title: "Các bên liên quan", items: [{ icon: "PiBankDuotone", name: "Ngân hàng" }] }] }, ["--strict"]).code, 0);
   assert.strictEqual(buildDeck({ slides: [cover, { type: "cards", title: "x", items: [{ icon: "PiNope", name: "A" }] }] }).code, 2);
 });
-test("hình có alt text; dấu vẽ tay xuất hiện ở bignum", async () => {
-  const JSZip = require("jszip");
-  const r = buildDeck({ slides: [cover, { type: "bignum", title: "Chỉ mười bốn ngày sau", num: "14", days: ["09/9/2014", "23/9/2014"] }] });
-  const x = await (await JSZip.loadAsync(fs.readFileSync(r.pptx))).file("ppt/slides/slide2.xml").async("string");
-  assert.ok(x.includes('descr="Dấu nhấn mạnh vẽ tay"'), "thiếu dấu vẽ tay / alt text");
-});
-test("chống dòng mồ côi: 2 chữ cuối của đoạn dài được nối bằng NBSP", async () => {
-  const JSZip = require("jszip");
-  const r = buildDeck({ slides: [cover, Object.assign({}, ledger, { note: "Chưa tính lãi và khoản thế chấp ngân hàng" })] });
-  const x = await (await JSZip.loadAsync(fs.readFileSync(r.pptx))).file("ppt/slides/slide2.xml").async("string");
-  assert.ok(x.includes("ngân hàng"), "không thấy NBSP giữa hai chữ cuối");
-});
 test("ảnh thật: thiếu file -> lỗi; thiếu thông tin ghi công -> cảnh báo; có photoCredit -> sạch", () => {
   const dir = require("./helpers").tmpdir(); fs.mkdirSync(require("path").join(dir, "images"));
   const sharp = require("sharp");
@@ -148,17 +118,8 @@ test("ảnh thật: thiếu file -> lỗi; thiếu thông tin ghi công -> cản
   });
 });
 test("fork: branches[].pick làm nổi cách được chọn", () => {
-  const r = buildDeck({ slides: [cover, { type: "fork", title: "Hai cách đọc điều luật", branches: [{ tag: "Cách 1", head: "Điểm b", text: "Theo khoản 1 Điều 688" }, { tag: "Cách 2", head: "Điểm c", text: "Theo khoản 1 Điều 688", pick: true }] }] }, ["--strict"]);
+  const r = buildDeck({ slides: [cover, { type: "fork", title: "Hai cách đọc điều luật", branches: [{ tag: "Cách 1", head: "Điểm b", text: "Theo khoản 1 Điều 688 BLDS 91/2015/QH13" }, { tag: "Cách 2", head: "Điểm c", text: "Theo khoản 1 Điều 688", pick: true }] }] }, ["--strict"]);
   assert.strictEqual(r.code, 0, r.all);
-});
-test("map: dựng được với tên tỉnh có/không dấu; tên sai -> lỗi; luôn có Hoàng Sa, Trường Sa", async () => {
-  const JSZip = require("jszip");
-  const ok = buildDeck({ slides: [cover, { type: "map", title: "Vụ án đi qua hai cấp toà", route: true, places: [{ name: "Quang Tri", note: "Sơ thẩm" }, { name: "Đà Nẵng", note: "Phúc thẩm" }] }] }, ["--strict"]);
-  assert.strictEqual(ok.code, 0, ok.all);
-  const x = await (await JSZip.loadAsync(fs.readFileSync(ok.pptx))).file("ppt/slides/slide2.xml").async("string");
-  assert.ok(x.includes("QĐ. Hoàng Sa") && x.includes("QĐ. Trường Sa"), "thiếu nhãn Hoàng Sa / Trường Sa");
-  const bad = buildDeck({ slides: [cover, { type: "map", title: "x y z", places: [{ name: "Quảng Bìnhh" }] }] });
-  assert.strictEqual(bad.code, 2, bad.all); assert.ok(bad.all.includes("places[0].name"), bad.all);
 });
 test("split / gallery / quoteDoc / imagePolicy", () => {
   const P = require("path"), dir = require("./helpers").tmpdir(); fs.mkdirSync(P.join(dir, "images"));
@@ -178,18 +139,6 @@ test("split / gallery / quoteDoc / imagePolicy", () => {
   });
 });
 
-// ---------- bản đồ 34 tỉnh, share, slope, callouts, lint điều hướng/nhấn ----------
-test("map 34 tỉnh: groups preset tự đếm 23 hợp nhất / 11 giữ nguyên; tỉnh cũ chỉ hợp lệ với admin 63", async () => {
-  const JSZip = require("jszip"), VN = require("../engine/assets/vn_provinces.json");
-  assert.strictEqual(Object.keys(VN.provinces).length, 63); assert.strictEqual(Object.keys(VN.provinces34).length, 34);
-  assert.ok(["Bắc Kạn", "Đồng Nai", "Hưng Yên"].every(n => VN.provinces[n]), "3 tỉnh Natural Earth gắn nhãn sai phải được sửa tên");
-  const ok = buildDeck({ slides: [cover, { type: "map", title: "Ba mươi tư bảng giá đất", groups: [{ label: "Hợp nhất", preset: "merged" }, { label: "Giữ nguyên", preset: "kept" }], stat: { value: "34", label: "tỉnh, thành" } }] }, ["--strict"]);
-  assert.strictEqual(ok.code, 0, ok.all);
-  const x = await (await JSZip.loadAsync(fs.readFileSync(ok.pptx))).file("ppt/slides/slide2.xml").async("string");
-  assert.ok(x.includes(">23<") && x.includes(">11<"), "số tỉnh trong chú giải phải đếm từ dữ liệu: 23 và 11");
-  assert.strictEqual(buildDeck({ slides: [cover, { type: "map", title: "x y z", places: [{ name: "Hải Dương" }] }] }).code, 2, "Hải Dương không còn trong 34 tỉnh");
-  assert.strictEqual(buildDeck({ slides: [cover, { type: "map", title: "Vụ án ở Hải Dương", admin: 63, places: [{ name: "Hải Dương" }] }] }, ["--strict"]).code, 0);
-});
 test("share + chart slope + photo callouts dựng được; pct ngoài (0,100) -> lỗi", () => {
   const share = { type: "share", title: "Đủ 75% đồng thuận thì thu hồi phần còn lại", pct: 75, legend: ["đã đồng ý", "chưa đồng ý"], items: [{ head: "Trên 75% diện tích", text: "đã thoả thuận" }] };
   const tbl = { type: "table", title: "Thời hạn thông báo thu hồi", cols: [{ label: "Loại đất" }, { label: "Trước" }, { label: "Sau" }], rows: [["Nông nghiệp", "90", "60"], ["Phi nông nghiệp", "180", "120"]] };

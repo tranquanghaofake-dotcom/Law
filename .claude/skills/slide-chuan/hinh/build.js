@@ -23,6 +23,7 @@
 //   data-m="tên"      ghép cặp Morph với phần tử cùng tên ở slide kề            data-go="id"    bấm vào thì nhảy tới slide có data-id đó
 //   data-pad="px"     nới khung chụp lớp ảnh (bóng đổ)
 // Thuộc tính trên <section class="s">: data-id, data-trans="morph|fade|push|none", data-dur="ms", data-auto="ms" (tự sang slide sau), data-notes,
+//   data-cam="pan:dx,dy" | "zoom:k,x,y" (máy quay khi Morph vào slide này — hinh/may_quay.js; vật mang data-sau="hệ số" để có thị sai, "0" = đứng ngoài),
 //   data-noclick (bấm chuột không sang slide — chỉ đi bằng nút liên kết; dùng cho slide trắc nghiệm).
 // data-prop trên một khối: chữ bên trong là đạo cụ (bìa sách, trang sách…), cố ý để làm ảnh.
 // Quy ước CSS: xoay nghiêng chỉ dùng thuộc tính `rotate:` (không dùng transform: rotate). Lớp ảnh tự xoay (rotate đặt ngay trên phần tử data-l)
@@ -31,6 +32,7 @@ const fs = require("fs"), path = require("path"), crypto = require("crypto");
 const { spawnSync } = require("child_process");
 const PptxGenJS = require("pptxgenjs"), JSZip = require("jszip"), fontkit = require("fontkit");
 const X = require("./xml");
+const MQ = require("./may_quay");
 
 const md5 = (b) => crypto.createHash("md5").update(b).digest("hex").slice(0, 16);
 
@@ -69,7 +71,8 @@ function collectInPage() {
         em: own("em") || (el.hasAttribute("data-pulse") ? "pulse" : null), emAt: own("emat") == null ? null : num(own("emat")), mv: mv ? { dx: mv[0] / 1920, dy: mv[1] / 1080, at: mv[2] || 0, dur: mv[3] || 1000 } : null };
       let m = own("m");
       if (!m && lay && lay.getAttribute("data-m") && lay.getAttribute("data-mt") !== "0") { const k = (perLayer.get(lay) || 0) + 1; perLayer.set(lay, k); m = `${lay.getAttribute("data-m")}-chu${k}`; } // chữ trong lớp có Morph đi theo lớp
-      const base = { i, m, n: own("n"), go: own("go") || inherit(el, "go"), goOwn: el.hasAttribute("data-go"), an, alt: own("alt") || "" };
+      const sauRaw = inherit(el, "sau");
+      const base = { i, m, n: own("n"), go: own("go") || inherit(el, "go"), goOwn: el.hasAttribute("data-go"), an, alt: own("alt") || "", sau: sauRaw == null ? 1 : num(sauRaw, 1), td: isT && el.matches(".h, .bh-h, .bh-h1, .bh-hc, .bh-qd, .bh-q, .bh-gh, .bc-t1, .bc-t2, .qt-t1, .qt-t2, [data-tieu-de]") };
       if (isW) {
         const src = S.querySelector(own("of")); if (!src) { console.warn("data-of không tìm thấy:", own("of")); return; }
         const q = src.getBoundingClientRect(), cs = getComputedStyle(el), key = `${si}-${i}`;
@@ -93,7 +96,7 @@ function collectInPage() {
       items.push({ ...base, kind: "text", cx: r.left + r.width / 2 - R.left, cy: r.top + r.height / 2 - R.top, ang, el: `${si}-${i}` });
       el.setAttribute("data-ti", `${si}-${i}`);
     });
-    out.push({ id: S.getAttribute("data-id") || `s${si + 1}`, trans: S.getAttribute("data-trans") || "fade", dur: num(S.getAttribute("data-dur"), 1000), auto: S.hasAttribute("data-auto") ? num(S.getAttribute("data-auto")) : null, noClick: S.hasAttribute("data-noclick"), notes: S.getAttribute("data-notes") || "", items, words: (() => { let w = ""; const tw = document.createTreeWalker(S, NodeFilter.SHOW_TEXT); for (let n = tw.nextNode(); n; n = tw.nextNode()) { const pe = n.parentElement; if (!pe || pe.closest("[data-prop], [data-w], script, style")) continue; const cs = getComputedStyle(pe); if (cs.display === "none" || cs.visibility === "hidden") continue; w += " " + (cs.textTransform === "uppercase" ? n.textContent.toLocaleUpperCase("vi") : n.textContent); } return w.replace(/\s+/g, " ").trim(); })() });
+    out.push({ id: S.getAttribute("data-id") || `s${si + 1}`, cam: S.getAttribute("data-cam"), trans: S.getAttribute("data-trans") || "fade", dur: num(S.getAttribute("data-dur"), 1000), auto: S.hasAttribute("data-auto") ? num(S.getAttribute("data-auto")) : null, noClick: S.hasAttribute("data-noclick"), notes: S.getAttribute("data-notes") || "", tieuDeAn: S.getAttribute("data-tieu-de-an") || "", nhanh: S.getAttribute("data-nhanh") || "", items, words: (() => { let w = ""; const tw = document.createTreeWalker(S, NodeFilter.SHOW_TEXT); for (let n = tw.nextNode(); n; n = tw.nextNode()) { const pe = n.parentElement; if (!pe || pe.closest("[data-prop], [data-w], script, style")) continue; const cs = getComputedStyle(pe); if (cs.display === "none" || cs.visibility === "hidden") continue; w += " " + (cs.textTransform === "uppercase" ? n.textContent.toLocaleUpperCase("vi") : n.textContent); } return w.replace(/\s+/g, " ").trim(); })() });
   });
   return out;
 }
@@ -121,6 +124,35 @@ function measureTextInPage() {
     const cs = getComputedStyle(el);
     res[el.getAttribute("data-ti")] = { lines, ex: E.left, ey: E.top, ew: E.width, eh: E.height, align: cs.textAlign, lh: cs.lineHeight === "normal" ? null : parseFloat(cs.lineHeight), pl: parseFloat(cs.paddingLeft) || 0, pr: parseFloat(cs.paddingRight) || 0 };
   });
+  return res;
+}
+
+// Máy quay: hai slide kề nhau, slide sau có data-cam. Vật ở slide trước không có cặp ở slide sau → thêm bản nhân (cùng tên !!…) ở slide sau,
+// đặt ngoài khung theo hướng máy quay: Morph đẩy nó ra. Vật mới ở slide sau → bản nhân ở slide trước: Morph kéo nó vào. Vật cùng tên giữ đường riêng.
+// Vật đến bằng máy quay bỏ hiệu ứng vào (đang ẩn lúc chuyển cảnh thì Morph không có gì để kéo); data-sau="0" = đứng ngoài máy quay.
+function mayQuay(slides, ops, plan) {
+  let uid = 0; const res = { n: 0, ghost: 0, bo: 0 };
+  const nm = (op) => op.o.objectName, rect = (op) => ({ x: op.o.x / IN, y: op.o.y / IN, w: op.o.w / IN, h: op.o.h / IN });
+  const rename = (si, op) => { const old = nm(op); if (old.startsWith("!!")) return; const nw = `!!mq${si + 1}-${++uid}`; op.o.objectName = nw;
+    for (const e of plan[si].effects) if (e.name === old) e.name = nw; for (const l of plan[si].s.tlinks || []) if (l.name === old) l.name = nw; };
+  const ghost = (op, r) => { const k = r.k || 1, o = { ...op.o, x: r.x * IN, y: r.y * IN, w: r.w * IN, h: r.h * IN }; delete o.hyperlink; res.ghost++;
+    if (op.t === "text") { if (o.lineSpacing) o.lineSpacing = Math.max(1, +(o.lineSpacing * k).toFixed(2));
+      return { t: "text", g: true, o, runs: op.runs.map((u) => ({ text: u.text, options: { ...u.options, fontSize: Math.max(1, +(u.options.fontSize * k).toFixed(1)), ...(u.options.charSpacing ? { charSpacing: +(u.options.charSpacing * k).toFixed(2) } : {}) } })) }; }
+    if (o.sizing) o.sizing = { ...o.sizing, x: o.sizing.x * k, y: o.sizing.y * k, w: o.sizing.w * k, h: o.sizing.h * k };
+    return { t: "img", g: true, o }; };
+  for (let si = 1; si < slides.length; si++) {
+    const cam = MQ.camOf(slides[si].cam); if (!cam || slides[si].trans !== "morph") continue;
+    const A = ops[si - 1], B = ops[si], can = (op) => op.t !== "shape" && !op.g && op.it && op.it.sau !== 0;
+    const nA = new Set(A.map(nm)), nB = new Set(B.map(nm));
+    const di = A.filter((op) => can(op) && !nB.has(nm(op))), den = B.filter((op) => can(op) && !nA.has(nm(op)));
+    di.forEach((op) => rename(si - 1, op)); den.forEach((op) => rename(si, op));
+    for (const op of di) B.push(ghost(op, MQ.ra(rect(op), cam, op.it.sau)));
+    const vao = den.map((op) => ghost(op, MQ.vao(rect(op), cam, op.it.sau)));
+    if (cam.kind === "zoom") A.unshift(...vao); else A.push(...vao);      // phóng: vật mới mọc ra từ điểm phóng, nằm sau mọi vật của slide trước
+    const tenDen = new Set(den.map(nm));
+    plan[si].effects = plan[si].effects.filter((e) => { if (!tenDen.has(e.name) || !e.fx) return true; res.bo++; if (e.em || e.mv) { e.fx = null; return true; } return false; });
+    res.n++;
+  }
   return res;
 }
 
@@ -167,7 +199,9 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
 
   // 1) ảnh từng slide nguyên vẹn (để soát và làm ảnh thu nhỏ cho slide mục lục)
   const full = [];
-  for (let i = 0; i < secs.length; i++) { const p = path.join(work, `h-${String(i + 1).padStart(2, "0")}.jpg`); await secs[i].screenshot({ path: p, type: "jpeg", quality: 82 }); full.push(p); }
+  // chờ Chromium vẽ xong slide (bộ lọc SVG nặng như vân giấy vẽ chậm — chụp sớm thì mất từng ô hình chữ nhật, tờ soát báo lệch giả)
+  const choVe = (i) => page.evaluate((i) => new Promise((ok) => { document.querySelectorAll("section.s")[i].scrollIntoView(); requestAnimationFrame(() => requestAnimationFrame(() => setTimeout(ok, 250))); }), i);
+  for (let i = 0; i < secs.length; i++) { const p = path.join(work, `h-${String(i + 1).padStart(2, "0")}.jpg`); await choVe(i); await secs[i].screenshot({ path: p, type: "jpeg", quality: 82 }); full.push(p); }
   const ids = await page.$$eval("section.s", (ss) => ss.map((s, i) => s.getAttribute("data-id") || `s${i + 1}`));
   await page.evaluate(({ ids, full }) => { document.querySelectorAll("img[data-thumb]").forEach((im) => { const k = ids.indexOf(im.getAttribute("data-thumb")); if (k >= 0) im.src = "file://" + full[k]; }); return Promise.all([...document.images].map((im) => im.decode().catch(() => 0))); }, { ids, full });
 
@@ -220,7 +254,7 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
       await page.evaluate(({ k, flat }) => { const el = document.querySelector(`[data-li="${k}"]`); document.body.classList.remove("solo"); el.classList.remove("solo-on");
         if (flat) { el.style.removeProperty("rotate"); if (el.dataset.keepRot) el.style.rotate = el.dataset.keepRot; delete el.dataset.keepRot; }
         if (el.dataset.keepTr != null) { el.style.removeProperty("translate"); if (el.dataset.keepTr) el.style.translate = el.dataset.keepTr; delete el.dataset.keepTr; } }, { k: it.key, flat });
-      it.file = await canon(buf, "png", (b) => (b.length > 60e3 ? sharp(b).png({ compressionLevel: 9, effort: 8 }).toBuffer() : b));
+      it.file = await canon(buf, "png", async (b) => (b.length > 600e3 ? (async () => { const w = (await sharp(b).metadata()).width || 0; /* lớp lớn có vân giấy, nhiễu hạt: hạ về ~1,4× cỡ trên slide (đủ nét khi chiếu) + nén bảng màu */ return sharp(b).resize(w > 2000 ? { width: Math.round(w * 0.7) } : undefined).png({ palette: true, quality: 92, effort: 8, dither: 0.6 }).toBuffer(); })() : b.length > 60e3 ? sharp(b).png({ compressionLevel: 9, effort: 8 }).toBuffer() : b));
       if (flat && it.cx != null) { it.x = it.cx - it.w / 2; it.y = it.cy - it.h / 2; }   // PowerPoint xoay quanh tâm ảnh: đặt ảnh thẳng sao cho tâm trùng tâm khung nghiêng
     }
     // nguồn của cửa sổ soi: chụp nguyên phần tử nguồn (có cả chữ), làm phẳng trên màu nền của cửa sổ, lưu JPEG
@@ -250,8 +284,11 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
   pp.title = name; const idNo = Object.fromEntries(slides.map((s, i) => [s.id, i + 1]));
   const used = new Set(), symUsed = new Set(), plan = [], lost = [], warn = [...them];
   const deg = (a) => Math.round((((a % 360) + 360) % 360) * 100) / 100;
+  // 4a) mỗi slide thành một danh sách vẽ (chưa ghi vào pptxgenjs) — bước máy quay còn thêm bản nhân ngoài khung
+  const ops = [];
   slides.forEach((s, si) => {
-    const sl = pp.addSlide(); sl.background = { path: s.bg }; if (s.notes) sl.addNotes(s.notes);
+    const ve = [], sl = { addImage: (o) => ve.push({ t: "img", o, it: cur }), addShape: (st, o) => ve.push({ t: "shape", st, o }), addText: (runs, o) => ve.push({ t: "text", runs, o, it: cur }) };
+    let cur = null; ops.push(ve);
     const effects = []; let auto = 0;
     const nameOf = (it, pre) => (it.m ? `!!${it.m}` : it.n || `${pre}${si + 1}-${++auto}`);
     const link = (it) => { const to = it.go && idNo[it.go]; if (it.go && !to) warn.push(`slide ${si + 1}: data-go="${it.go}" không trỏ tới slide nào`); return to ? { slide: to } : null; };
@@ -260,6 +297,7 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
       // đối tượng vừa là đích Morph vừa có hiệu ứng vào: lúc chuyển cảnh nó đang ẩn nên Morph không có gì để bay tới
       if (a.a && it.m && s.trans === "morph" && si > 0 && slides[si - 1].items.some((p) => p.m === it.m)) warn.push(`slide ${si + 1}: “${it.m}” vừa ghép Morph với slide trước vừa có data-a="${a.a}" — bỏ một trong hai`); };
     for (const it of s.items) {
+      cur = it;
       if (it.kind === "layer") {
         if (it.skip) continue;
         const nm = nameOf(it, "hinh"), hl = link(it);
@@ -304,19 +342,30 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
       const nm = nameOf(it, "chu"), hl = link(it);
       // nút đứng riêng (chữ tự mang data-go): đặt một ô trong suốt có liên kết NẰM DƯỚI chữ để cả mặt nút bấm được, chữ vẫn chọn sửa được
       if (hl && it.goOwn) sl.addShape(pp.ShapeType.rect, { x: (it.cx - M.ew / 2) * IN, y: (it.cy - M.eh / 2) * IN, w: M.ew * IN, h: M.eh * IN, fill: { color: "FFFFFF", transparency: 100 }, line: { type: "none" }, hyperlink: hl, objectName: `nut${si + 1}-${++auto}` });
+      if (it.td && !hl && !s.tieuDe) s.tieuDe = nm;   // hộp chữ tiêu đề đầu tiên của slide → placeholder tiêu đề (bước 5)
       if (hl) (s.tlinks = s.tlinks || []).push({ name: nm, to: hl.slide }); // liên kết ở cấp HỘP CHỮ, gắn bằng XML ở bước 5 (để pptxgenjs gắn thì chữ bị gạch chân, đổi màu)
-      sl.addText(runs, { x: (cx - bw / 2) * IN, y: (cy - hgt / 2) * IN, w: bw * IN, h: hgt * IN, margin: 0, valign: "top", align: al, lineSpacing: +(L * PT).toFixed(2), paraSpaceBefore: 0, paraSpaceAfter: 0, rotate: deg(it.ang), objectName: nm, fit: "none", wrap: true, isTextBox: true });
+      sl.addText(runs, { x: (cx - bw / 2) * IN, y: (cy - hgt / 2) * IN, w: bw * IN, h: hgt * IN, margin: 0, valign: "top", align: al, lineSpacing: +(L * PT).toFixed(2), paraSpaceBefore: 0, paraSpaceAfter: 0, rotate: deg(it.ang), objectName: nm, fit: "none", wrap: n > 1 && t0.st.s < 44, isTextBox: true });   // một dòng, hoặc chữ cỡ tiêu đề (≥ 44 px): không tự xuống dòng — dòng đã ngắt sẵn theo bản HTML; máy đo chữ hơi khác (thiếu font, LibreOffice) thì chữ rộng ra chứ không gãy thêm dòng đè lên khối dưới. Chữ thường nhiều dòng vẫn tự xuống dòng để sửa chữ
       fx(it, nm);
     }
     plan.push({ effects, s });
   });
+  // 4b) máy quay giữa hai slide (data-cam): vật không có cặp Morph được nhân một bản đặt ngoài khung slide kia — xem hinh/may_quay.js
+  const mq = mayQuay(slides, ops, plan); if (mq.n) console.log(`✓ Máy quay: ${mq.n} lần chuyển cảnh, ${mq.ghost} bản nhân ngoài khung, ${mq.bo} hiệu ứng vào được thay bằng máy quay`);
+  slides.forEach((s, si) => { const sl = pp.addSlide(); sl.background = { path: s.bg }; if (s.notes) sl.addNotes(s.notes);
+    for (const op of ops[si]) { if (op.t === "img") sl.addImage(op.o); else if (op.t === "shape") sl.addShape(op.st, op.o); else sl.addText(op.runs, op.o); } });
   const buf = await pp.write({ outputType: "nodebuffer" });
 
+  // CHỮ VIỆT TRONG POWERPOINT: pptxgenjs gắn mọi đoạn chữ lang="en-US" và font phụ Đông Á / phức hợp mang bảng mã TRUNG QUỐC
+  // (charset −122 GB2312, −120 Big5). PowerPoint coi chữ có dấu chồng (ố, ặ, ử…) là ký tự "mơ hồ" và có thể vẽ bằng font Đông Á; khi font
+  // chính chưa nạp, nó chọn font Trung thay thế → "ố, đ, ả, ư" thành ô vuông, chữ giãn như máy đánh chữ (ảnh người dùng 11/2026).
+  // Sửa: font phụ = chính font đó với bảng mã Latin (charset 0); ngôn ngữ vi-VN (đúng chính tả, không gạch đỏ cả slide).
+  const chuViet = (x) => x.replace(/(<a:(?:ea|cs) typeface="[^"]*"[^>]*?) charset="-?\d+"/g, '$1 charset="0"').replace(/\blang="en-US"/g, 'lang="vi-VN"').replace(/\baltLang="en-US"/g, 'altLang="vi-VN"');
   // 5) XML gốc: chuyển cảnh, chuỗi hiệu ứng, liên kết, font nhúng; gộp các ảnh trùng nhau
   const zip = await JSZip.loadAsync(buf);
   for (const [i, { effects, s }] of plan.entries()) {
     const f = `ppt/slides/slide${i + 1}.xml`; let t = await zip.file(f).async("string");
     t = t.replace(/<a:stretch\/>/g, "<a:stretch><a:fillRect/></a:stretch>");
+    t = chuViet(t);
     const tr = X.transition(i === 0 && s.trans === "morph" ? "fade" : s.trans, { dur: s.dur, auto: s.auto, noClick: s.noClick });
     if (tr) t = t.replace("</p:clrMapOvr>", "</p:clrMapOvr>" + tr);
     if (s.tlinks) { // liên kết nhảy slide trên hộp chữ: thêm quan hệ tới slide đích rồi đặt a:hlinkClick vào p:cNvPr của hộp chữ
@@ -326,6 +375,25 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
         const esc = l.name.replace(/&/g, "&amp;"), a = `name="${esc}"></p:cNvPr>`;
         if (t.includes(a)) t = t.replace(a, `name="${esc}"><a:hlinkClick r:id="${rid}" action="ppaction://hlinksldjump"/></p:cNvPr>`); else warn.push(`slide ${i + 1}: không gắn được liên kết cho hộp chữ "${l.name}"`); }
       zip.file(rf, rels); }
+    // lớp thuần trang trí (nền viên nhãn, nền thẻ, vòng nền, thanh tiến độ, lớp phủ, vạch…): đánh dấu "decorative" (Office 2019+, Mark as decorative)
+    // để trình đọc màn hình bỏ qua — chữ của chúng là hộp chữ riêng; ảnh có nội dung giữ alt
+    t = t.replace(/(<p:cNvPr [^>]*descr="(?:Nhãn|Thẻ|Vòng nền|Thanh tiến độ|Tiến độ bài|Lớp phủ màu|Vạch|Trục|Dải đánh dấu|Hình trang trí|Số chú thích|Vật tiền cảnh|Mũi tên|Khung của: [^"]*)"[^>]*>)\s*<\/p:cNvPr>/g,
+      '$1<a:extLst><a:ext uri="{C183D7F6-B498-43B3-948B-1728B52AA6E4}"><adec:decorative xmlns:adec="http://schemas.microsoft.com/office/drawing/2017/decorative" val="1"/></a:ext></a:extLst></p:cNvPr>');
+    // TIÊU ĐỀ SLIDE: hộp chữ tiêu đề thành placeholder tiêu đề — bộ kiểm khả năng tiếp cận hết báo "thiếu tiêu đề", danh sách slide khi
+    // trình chiếu / hộp liên kết / dàn ý có tên slide. Mọi định dạng đã ghi rõ trong XML; thêm noAutofit để PowerPoint không tự co chữ
+    // TIÊU ĐỀ ẨN (data-tieu-de-an): chữ tiêu đề hiện ra là một mảnh ("Mười năm, BHXH bắt buộc" + ô "đi bao xa?") hoặc trùng giữa nhiều slide
+    // ("Chưa đúng" ở ba slide phản hồi) → placeholder tiêu đề chứa câu ĐẦY ĐỦ đặt NGOÀI khung slide, đứng đầu thứ tự đọc
+    // (cách Microsoft hướng dẫn cho slide không muốn hiện tiêu đề); hộp chữ hiện ra giữ nguyên là hộp chữ thường
+    // slide NHÁNH của trắc nghiệm (data-nhanh = sai / đúng): tên slide trong PPTX ghi rõ — bản in ghi chú không cộng giờ nhánh sai, người trình bày biết slide này chỉ hiện khi bấm
+    if (s.nhanh) t = t.replace(/<p:cSld(?: name="[^"]*")?>/, `<p:cSld name="Nhánh trắc nghiệm: ${s.nhanh.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;")}">`);
+    if (s.tieuDeAn) { const id = Math.max(0, ...[...t.matchAll(/<p:cNvPr id="(\d+)"/g)].map((m) => +m[1])) + 1, g = t.indexOf("</p:grpSpPr>");
+      const x = s.tieuDeAn.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      const sp = `<p:sp><p:nvSpPr><p:cNvPr id="${id}" name="Tiêu đề ẩn"/><p:cNvSpPr><a:spLocks noGrp="1"/></p:cNvSpPr><p:nvPr><p:ph type="title"/></p:nvPr></p:nvSpPr><p:spPr><a:xfrm><a:off x="0" y="-1371600"/><a:ext cx="12192000" cy="914400"/></a:xfrm></p:spPr><p:txBody><a:bodyPr><a:noAutofit/></a:bodyPr><a:lstStyle/><a:p><a:r><a:rPr lang="vi-VN" sz="2400"/><a:t>${x}</a:t></a:r></a:p></p:txBody></p:sp>`;
+      if (g > 0) { t = t.slice(0, g + 12) + sp + t.slice(g + 12); s.tieuDe = null; } }
+    if (s.tieuDe) { const nm = s.tieuDe.replace(/&/g, "&amp;"), a = `name="${nm}"></p:cNvPr><p:cNvSpPr txBox="1"/><p:nvPr></p:nvPr>`, k = t.indexOf(a);
+      if (k >= 0) { t = t.slice(0, k) + `name="${nm}"></p:cNvPr><p:cNvSpPr><a:spLocks noGrp="1"/></p:cNvSpPr><p:nvPr><p:ph type="title"/></p:nvPr>` + t.slice(k + a.length);
+        const b = t.indexOf("<a:bodyPr", k), e = t.indexOf("</a:bodyPr>", b), e2 = t.indexOf(">", b);
+        if (b > 0 && e > 0 && t[e2 - 1] !== "/" && t.slice(b, e).indexOf("Autofit") < 0) t = t.slice(0, e) + "<a:noAutofit/>" + t.slice(e); } }
     const map = X.shapeIds(t), fx = effects.map((e) => (map[e.name] ? { ...e, sp: map[e.name].sp, isText: map[e.name].isText } : null)).filter(Boolean);
     if (fx.length !== effects.length) warn.push(`slide ${i + 1}: ${effects.length - fx.length} hiệu ứng không tìm thấy đối tượng`);
     const tm = X.timing(fx); if (tm) t = t.replace("</p:sld>", tm + "</p:sld>");
@@ -335,6 +403,8 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
   const seen = new Map(), remap = new Map();
   for (const f of Object.keys(zip.files).filter((k) => k.startsWith("ppt/media/") && !zip.files[k].dir).sort()) { const h = md5(await zip.file(f).async("nodebuffer")); if (seen.has(h)) { remap.set(path.basename(f), seen.get(h)); zip.remove(f); } else seen.set(h, path.basename(f)); }
   if (remap.size) for (const rf of Object.keys(zip.files).filter((k) => /^ppt\/slides\/_rels\/.*\.rels$/.test(k))) { const r0 = await zip.file(rf).async("string"), r1 = r0.replace(/Target="\.\.\/media\/([^"]+)"/g, (m, b) => (remap.has(b) ? `Target="../media/${remap.get(b)}"` : m)); if (r1 !== r0) zip.file(rf, r1); }
+  for (const f of Object.keys(zip.files).filter((k) => /^ppt\/(notesSlides\/notesSlide\d+|presentation|slideMasters\/slideMaster\d+|slideLayouts\/slideLayout\d+|notesMasters\/notesMaster\d+)\.xml$/.test(k))) {
+    const x0 = await zip.file(f).async("string"), x1 = chuViet(x0); if (x1 !== x0) zip.file(f, x1); }
   const nFont = !nhungFont ? 0 : await X.embedFonts(zip, FACES.filter((f) => used.has(f.face)).map((f) => ({ face: f.face, file: f.path })));
   fs.writeFileSync(outPath, await zip.generateAsync({ type: "nodebuffer", compression: "DEFLATE" }));
 
@@ -353,7 +423,9 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
   for (const f of FACES) if (f.miss.size) warn.push(`font “${f.face}” không có ${f.miss.size} ký tự: ${[...f.miss].join(" ")} — PowerPoint sẽ lấy font khác cho các ký tự này (đổi ký tự hoặc đổi font)`);
   warn.forEach((w) => console.log("⚠ " + w));
   if (symUsed.size) console.log(`ℹ Ký hiệu ${[...symUsed].join(" ")} đặt bằng font “${SYM}” của máy (font chữ của deck không có các ký hiệu này).`);
-  if (lost.length) { console.log(`ℹ Chữ nằm trong ảnh (không gõ lại được trong PowerPoint):`); lost.forEach((l) => console.log("  " + l)); }
+  // cùng một nhãn in trên hình (vd. bìa sổ "SỔ BẢO HIỂM XÃ HỘI" ở 6 slide) → gộp một dòng, kê các slide
+  if (lost.length) { const gop = new Map(); for (const l of lost) { const m = l.match(/^slide (\d+) \(([^)]*)\): (.*)$/); const k = m ? m[3] : l; if (!gop.has(k)) gop.set(k, []); if (m) gop.get(k).push(m[1]); }
+    console.log(`ℹ Chữ nằm trong ảnh (không gõ lại được trong PowerPoint):`); for (const [k, ss] of gop) console.log(`  ${ss.length ? `slide ${ss.join(", ")}: ` : ""}${k}`); }
 
   // 7) --soat: LibreOffice dựng lại PPTX thành ảnh, ghép cạnh bản HTML để so bố cục (không soát được Morph / hiệu ứng / font nhúng)
   const res = { slides: plan.length, text: nText, pics: nPic, fx: nFx, morph: nMorph, fonts: nFont, warn, lost, work, full };

@@ -1,50 +1,50 @@
-# Skill slide-chuan — "Da theo môn" cho tầng hình ảnh (P3)
+# Skill slide-chuan — một tầng hình ảnh, "da theo môn" (P3 mở rộng)
 
-Trạng thái: **ĐỀ XUẤT — chờ duyệt.** Chưa có dòng code nào cho phần này.
-Gốc: `.claude/skills/slide-chuan/references/loi-da-biet-2026-11.md` mục E (N1, N4; lộ trình P3).
+Trạng thái: **ĐÃ DUYỆT 13/11/2026.** Người duyệt: Trần Quang Hào — nguyên văn: "làm PA A nhưng hãy lấy tất cả tinh hoa của bản office rút về bản hình ảnh rồi xóa bản office khỏi skill", sau đó "làm và vượt giới hạn phiên".
+Gốc: `.claude/skills/slide-chuan/references/loi-da-biet-2026-11.md` mục E (N1, N4; lộ trình P3) và phiên dựng bài BHXH bắt buộc (BNK405, 13/11/2026): bản hình ảnh rơi về nền chung lần thứ tư; bản lưới Office "sổ BHXH" nhận ra đề tài nhưng người dùng thấy "chả có ý nghĩa gì".
 
 ## 1. Vấn đề
 
-Tầng hình ảnh chỉ mang dấu hiệu môn học khi deck dùng **kiểu slide riêng của từng môn** (`bc*` hình sự — 18 kiểu, 302 dòng; `qt*` Công pháp quốc tế — 3 kiểu, 161 dòng). Mỗi môn mới phải viết lại từng bố cục (so sánh, trích luật, cây điều kiện…) từ đầu, nên:
+1. **Hai tầng, mỗi tầng thiếu một nửa.** Bản lưới Office (`engine/build.js`, 4.287 dòng) có world theo môn (8 world), biểu đồ có nguyên nhân tại từng năm, hình vẽ minh hoạ, khung ảnh, kiểm nội dung đầy đủ. Bản hình ảnh (`hinh/dung.js` + `stage/templates.js`, ~250 dòng mẫu) có cảnh, Morph, font nhúng — nhưng không có world, và mọi tính năng mới chỉ làm cho một tầng. Skill đẩy việc chọn tầng sang người dùng.
+2. **Tầng hình ảnh chỉ mang dấu hiệu môn khi deck dùng kiểu slide riêng của từng môn** (`bc*` hình sự — 18 kiểu; `qt*` quốc tế — 3 kiểu). Môn mới rơi về nền chung (L10 lặp 4 lần ở 4 môn); ngay trong môn đã có bộ, slide dùng type thường vẫn là nền chung.
 
-- môn thứ ba, thứ tư… lại rơi về nền, khung chung → lỗi L10 lặp (đã 3 lần, 3 môn);
-- ngay trong môn đã có bộ, slide nào dùng type thường (65 type) thì nền và khung vẫn là chung → deck nửa nọ nửa kia (đo được: deck Công pháp quốc tế mới 3/21 slide có bộ hình).
+## 2. Quyết định
 
-## 2. Ý tưởng
+- **Một tầng duy nhất: tầng hình ảnh.** Xoá tầng lưới Office khỏi skill (renderer, script, test, tài liệu). Lệnh dựng duy nhất: `node hinh/dung.js`.
+- **Da theo môn**: tách chất liệu của môn (nền, khung slide, giấy thẻ, vật giữ tiêu đề, con dấu, đồ vật, thanh tiến độ, kiểu hiện ý) khỏi bố cục (65 type). Một môn = một da khai báo trong `hinh/da.js`. Da phủ lên mọi type thường nên `"meta": { "da": "so-bhxh" }` đổi chất liệu cả deck mà không đổi type.
+- **Không còn nền chung**: deck không ghi `meta.da` thì nhận da mặc định theo `meta.kind` (`case` → `ho-so`, `lecture` → `giay`, `report` → `kinh`); `"da": "none"` mới là nền chung (phải có `chapNhanNenChung` trong prep).
 
-Tách **chất liệu của môn** (nền, giấy, vật giữ tiêu đề, con dấu, thẻ, vật trang trí) khỏi **bố cục** (65 type sẵn có). Một môn = một **"da"**: file cấu hình nhỏ + 1–2 hàm vẽ vật riêng. Da phủ lên mọi type thường, nên chỉ cần ghi `"meta": { "da": "qt" }` là cả 21 slide đổi chất liệu, không phải đổi type.
+## 3. Chuyển tinh hoa của tầng Office sang tầng hình ảnh
 
-| Lớp | Da quyết định | Ví dụ `qt` (đã có vật) | Ví dụ `bc` (đã có vật) |
-|---|---|---|---|
-| Nền mọi slide | ảnh nền SVG/CSS | bản đồ thế giới bằng chấm + lưới kinh–vĩ tuyến | bảng bần + vân tay mờ |
-| Tiêu đề slide nội dung | tờ giấy + vật giữ | dải văn kiện + dấu xi, dải lụa | tờ giấy + đinh ghim |
-| Thẻ (`.card`, ô bảng, ô bước) | màu giấy, viền, bóng | giấy ngà viền nhũ | giấy kem, bóng sâu |
-| Con dấu / nhãn nhấn | kiểu dấu | dấu xi đỏ | dấu mực đỏ viền kép |
-| Bìa / chương / kết | thay bằng kiểu riêng của da | `qtbia`, `qtchuong` | `bcbia`, `bcchuong`, `bccamon` |
-| Vật riêng (tuỳ chọn) | hàm vẽ thêm | bàn họp, cờ trừu tượng (`qtban`) | dây đỏ, thẻ tang vật |
+| Nhóm | Tầng Office có | Sang tầng hình ảnh |
+|---|---|---|
+| Nhận diện môn | 8 world (`so-bhxh`, `bang-cong`, `cang-bien`, `ban-ve`, `hoa-don`, `sao-ke`, `co-cau`, `bien-ban`) + 3 bộ chất liệu (`file`, `paper`, `glass`) | 11 da cùng tên (`file` → `ho-so`, `paper` → `giay`, `glass` → `kinh`); thêm da `bc`, `qt` từ hai bộ hình sẵn có |
+| Đồ vật | 18 đồ vật SVG (`PROPS`), mỗi world 2–3 vật, vật vắt mép thẻ chính | Dùng lại nguyên hàm SVG; vật giữ tiêu đề + một đồ vật tiền cảnh ở mép slide trống |
+| Hình minh hoạ | 23 hình `art` (sổ BHXH, cán cân, giấy chứng nhận…) | Chuyển sang `hinh/art.js`; `statement`, `agenda`, `panelrows`, `closing`, `end`, bìa đọc `art`; da có hình mặc định |
+| Hoạ tiết nền | `meta.motif` 9 kiểu (địa chính Voronoi, đồng mức…) | Dùng lại `engine/motifs.js` (SVG) làm lớp nền khi deck ghi `meta.motif` |
+| Biểu đồ | `why` tại năm, `bands`, `value2`/`series`, `annotate` viết tay, `hatch`, `waterfall`, `gantt`, `progress`, `donut`, `slope` | Vẽ đủ trong SVG của `T.chart` |
+| Ảnh | Bìa `poster` + `facts`, `end` poster, `closing` + ảnh, `section` + ảnh (nửa phải / nền mờ), `hero` + ảnh, `agenda` + ảnh, khung `arch`/`circle`/`ogee` | Thêm vào mẫu HTML (CSS `clip-path` cho khung) |
+| Kiểm nội dung | `validate.js` (giới hạn chữ, số tiếng, 7 luật bài báo cáo, mạch bài, ký hiệu…), dàn ý, thời lượng, gói chuẩn bị, ghi công ảnh, chính sách ảnh, `--titles`, mù màu | Chạy trong `dung.js` (`hinh/kiem_noi_dung.js`); lỗi cấu trúc dừng dựng; `--strict` dừng khi còn cảnh báo |
+| Không chuyển | Biểu đồ PowerPoint gốc sửa số bằng Edit Data (`--native`); 6 theme Office; bản dự phòng font Office; phong cách `meta.style` vẽ bằng ảnh PNG | Ghi trong SKILL.md: sửa số → sửa `deck.json` rồi dựng lại; `meta.style` thay bằng da (`dossier` ≈ `ho-so`, `cadastral` ≈ `ban-ve`) |
 
-## 3. Thiết kế
+## 4. Thiết kế da
 
-- `hinh/da/<tên>.js` xuất `{ ten, mon, css, vatGiu(x, y), dau(text), thay: { cover: "qtbia", section: "qtchuong", end: … }, kieuRieng: {...} }`. `bang_chung.js`, `hoi_nghi.js` chuyển dần thành hai da đầu tiên (giữ nguyên các kiểu riêng như `bcthang`, `bcsan`, `qtban`).
-- `hinh/dung.js`: `meta.da` → mọi `<section>` thêm lớp `da-<tên>`; nạp `css` của da (đè nền `.s`, biến `.h` thành tờ tiêu đề, `.card` thành giấy của môn); chèn vật giữ cạnh tiêu đề sau khi font nạp (`hinhKhiSanSang`, như `hinhDatHinhDan`); đổi `cover / section / end` sang kiểu của da.
-- `hinh/tu_gan.js` không đổi: nó chụp lớp từ trang đã dàn xong nên tự nhận chất liệu mới. Tờ tiêu đề mang tên Morph `tieu` ở mọi slide.
-- `prep.py`: `boHinh` nhận tên da; `kiem.js` tính slide có da là "mang dấu hiệu môn".
-- Kiểm tra sẵn có giữ nguyên: tương phản WCAG từng ô chữ, `--soat` tràn / đè, `⚠ Nền chung`.
+- `hinh/da.js` xuất `DA` (tên → khai báo) và `ap(deck)` → `{ ten, css, them(section) }`.
+- Khai báo một da: `palette` (giấy, mực, nhấn, viền, nền tối), `nen` (SVG nền trang sáng), `khung` (SVG khung toàn slide), `the` (kiểu thẻ: dải màu mép, viền, bóng), `vat` (vật giữ tiêu đề), `props` (đồ vật tiền cảnh), `tienDo` (thanh tiến độ hình vật thật), `chuyen` (kiểu hiện ý: `stamp` / `flip` / `slide` / `wipe` / `drop` / `pop`), `icons`, `art`, `fits` (từ khoá đề tài).
+- `dung.js`: thêm lớp `da-<tên>` lên mọi `<section>`, nạp CSS của da (đè biến màu, nền `.s.light/.dark/.red`, `.card`, `.k`, `.prog`), chèn khung + đồ vật làm phần nền (không `data-l` → nằm trong ảnh nền slide), đổi hiệu ứng vào theo `chuyen`.
+- Bộ hình riêng (`bc*`, `qt*`) và 11 cảnh giữ nguyên; slide type thường trong deck `bc`/`qt` nhận nền, giấy của bộ đó.
+- `hinh/kiem.js`: slide có da tính là "mang dấu hiệu môn"; `prep.py`: `boHinh` nhận tên da.
 
-## 4. Tiêu chí xong
+## 5. Tiêu chí xong
 
-1. Deck Công pháp quốc tế 21 slide, **chỉ thêm `meta.da = "qt"`, không đổi type**: `--soat` 0 tràn, 0 đè, lệch PPTX ≤ 1,5 %; ảnh nhìn mờ thấy dấu hiệu quốc tế ở **mọi** slide; `kiem.js` không còn `⚠ Nền chung`; Morph `tieu` giữa mọi cặp slide nội dung kề nhau (`morph_cap.py`).
-2. Như trên với `meta.da = "bc"` trên ví dụ hình sự hiện có.
-3. **Chứng minh mở rộng được**: làm da thứ ba cho một môn mới (đề xuất: Luật Đất đai — bản đồ địa chính, thửa, mốc giới) trong ≤ 1,5 giờ, chỉ bằng 1 file da.
-4. Toàn bộ test hiện có (291) vẫn xanh; thêm test cho từng da (nền có trong CSS, tiêu đề có vật giữ và tên `tieu`, kiểu thay thế đúng).
+1. Skill chỉ còn một lệnh dựng; không còn `engine/build.js`, `scripts/render.py`, `preview.py`, `check_overflow.py` và test của tầng Office; `SKILL.md` không còn tầng Office.
+2. Bài BHXH (BNK405) dựng lại chỉ bằng `meta.da = "so-bhxh"`: `--soat` 0 tràn, 0 đè, lệch PPTX ≤ 1,5 %; ảnh nhìn mờ thấy dấu hiệu BHXH ở mọi slide nội dung; không còn `⚠ Nền chung`.
+3. Biểu đồ của bài BHXH có nguyên nhân tại năm, dải COVID-19, gạch chéo số chưa chắc — như bản Office.
+4. Mọi tính năng ở bảng mục 3 có test; `npm test` của skill xanh.
+5. Ba deck mẫu (BHXH, hình sự, quốc tế) dựng `--soat` sạch.
 
-## 5. Ước lượng và rủi ro
+## 6. Rủi ro
 
-- Khoảng 6–10 giờ, chia 2–3 phiên (mỗi phiên ≤ 2 giờ, dừng và báo cáo).
-- Rủi ro: (a) 65 type có nhiều cấu trúc thẻ khác nhau — có thể phải xử lý riêng `chart`, `table`, `map`; (b) nền tối của `qt` làm biểu đồ / bảng khó đọc → da phải khai bảng màu sáng cho vùng dữ liệu; (c) kiểm tương phản có thể chặn nhiều slide ở lần đầu.
-
-## 6. Cần anh quyết
-
-1. Có làm P3 không, và làm ở phiên riêng (khuyên) hay nối tiếp.
-2. Môn cho da thứ ba (mặc định đề xuất: Đất đai).
-3. Khi một môn đã có da, có **bắt buộc** dùng da (prep chặn nếu thiếu `meta.da`) hay chỉ khuyến nghị.
+- 65 type có cấu trúc thẻ khác nhau → CSS da phải đè theo lớp chung (`.card`, `table`, `.stat`, `.cd`…), kiểm bằng `--soat` trên deck kiểm thử lớn (`examples/kiemthu_con_lai.json`).
+- Nền tối của da `bc`/`qt` làm biểu đồ khó đọc → da khai báo nền sáng cho vùng dữ liệu.
+- Xoá tầng Office làm mất test cũ → chuyển test còn giá trị (giới hạn chữ, luật báo cáo, dàn ý) sang chạy với `dung.js --html`.

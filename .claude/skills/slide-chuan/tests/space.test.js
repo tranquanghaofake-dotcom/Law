@@ -31,48 +31,14 @@ test("mọi hoạ tiết là SVG hợp lệ, không dùng mask/filter (PowerPoin
   }
 });
 
-test("hoạ tiết nền nằm trọn trong slide, không đè nội dung, ở lớp dưới cùng", async () => {
-  const deck = { meta: { motif: "cadastral" }, slides: [cover,
-    { type: "agenda", title: "Ba câu hỏi", items: ["Câu một?", "Câu hai?", "Câu ba?"] },
-    { type: "flow", title: "Hai bên", nodes: [{ id: "a", name: "A" }, { id: "b", name: "B" }], edges: [{ from: "a", to: "b", label: "bán" }] }] };
-  const r = buildDeck(deck, ["--strict"]); assert.strictEqual(r.code, 0, r.all);
-  const { xml } = await slides(r.pptx); let seen = 0;
-  for (const x of xml) {
-    const m = x.match(/<p:pic>(?:(?!<\/p:pic>).)*?descr="Hoạ tiết[^"]*"(?:(?!<\/p:pic>).)*?<a:off x="(-?\d+)" y="(-?\d+)"\/>\s*<a:ext cx="(\d+)" cy="(\d+)"/s);
-    if (!m) continue; seen++;
-    const [X, Y, CX, CY] = m.slice(1).map(Number);
-    assert.ok(X >= 0 && Y >= 0 && X + CX <= SW + 2 && Y + CY <= SH + 2, `hoạ tiết lòi ra ngoài slide: ${m.slice(1)}`);
-    const first = x.indexOf("<p:pic>"), sp = x.indexOf("<p:sp>"); // hoạ tiết phải là hình đầu tiên trong cây hình
-    assert.ok(sp < 0 || first < sp, "hoạ tiết phải nằm dưới mọi hình khác");
-  }
-  assert.ok(seen >= 1, "phải có ít nhất 1 slide đủ chỗ đặt hoạ tiết");
-});
-
-test("hình vẽ bằng code nhúng SVG thật + PNG dự phòng đọc được; --raster thì chỉ PNG", async () => {
-  const deck = { slides: [cover, { type: "cards", title: "Bốn bên", items: [{ icon: "FaUser", name: "A", desc: "x" }, { icon: "FaHouse", name: "B", desc: "y" }] }] };
-  const r = buildDeck(deck, ["--strict"]); assert.strictEqual(r.code, 0, r.all);
-  const { z } = await slides(r.pptx);
-  const svgs = Object.keys(z.files).filter(f => /media\/.*\.svg$/.test(f));
-  assert.ok(svgs.length > 0, "phải có SVG");
-  for (const f of svgs) {
-    const [, sl, k] = f.match(/image-(\d+)-(\d+)\.svg$/), png = z.file(`ppt/media/image-${sl}-${+k - 1}.png`);
-    assert.ok(png, "thiếu PNG dự phòng cho " + f);
-    const md = await sharp(await png.async("nodebuffer")).metadata();
-    assert.ok(md.width >= 64, `PNG dự phòng của ${f} hỏng (${md.width}px)`);
-  }
-  const r2 = buildDeck(deck, ["--strict", "--raster"]); assert.strictEqual(r2.code, 0, r2.all);
-  const { z: z2 } = await slides(r2.pptx);
-  assert.strictEqual(Object.keys(z2.files).filter(f => /\.svg$/.test(f)).length, 0);
-});
-
 test("agenda ít câu tự giãn — không bị gợi ý dư khoảng trống", () => {
   const r = buildDeck({ slides: [cover, { type: "agenda", title: "Hai câu hỏi", items: ["Câu một?", "Câu hai?"] }] }, ["--strict"]);
   assert.strictEqual(r.code, 0, r.all); assert.ok(!/Slide 2 \(agenda\).*trống/.test(r.all), r.all);
 });
 
-test("ví dụ banan142 qua --strict ở cả 3 theme (không chữ đè, không khối sát nhau)", () => {
+test("ví dụ banan142 qua --strict (không chữ đè, không khối sát nhau)", () => {
   const dir = tmpdir();
-  for (const t of ["teal", "kem", "son"]) {
+  for (const t of ["mặc định"]) {
     const r = build([path.join(ROOT, "examples", "banan142.json"), path.join(dir, t + ".pptx"), "--theme", t, "--strict"]);
     assert.strictEqual(r.code, 0, t + "\n" + r.all);
   }

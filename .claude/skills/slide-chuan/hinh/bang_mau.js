@@ -16,4 +16,9 @@ function doiMau(mau) {
   const RGB = Object.fromEntries(Object.entries(P).map(([a, c]) => [rgb(a), rgb(c)]));
   return (t) => t.replace(/#([0-9a-fA-F]{6})\b/g, (m0, h) => (P[h.toLowerCase()] ? "#" + P[h.toLowerCase()] : m0)).replace(/rgba?\((\d+), ?(\d+), ?(\d+)/g, (m0, r, g, c) => (RGB[`${r},${g},${c}`] ? m0.replace(`${r}, ${g}, ${c}`, RGB[`${r},${g},${c}`]).replace(`${r},${g},${c}`, RGB[`${r},${g},${c}`]) : m0));
 }
-module.exports = { PAL, doiMau };
+/** Như doiMau nhưng nhận thẳng phép đổi { "rrggbb gốc": "rrggbb mới" } — da theo môn (hinh/da.js → daMau) dùng cách này. */
+function doiMauBang(P) {
+  const RGB = Object.fromEntries(Object.entries(P).map(([a, c]) => [rgb(a), rgb(c)]));
+  return (t) => t.replace(/#([0-9a-fA-F]{6})\b/g, (m0, h) => (P[h.toLowerCase()] ? "#" + P[h.toLowerCase()] : m0)).replace(/rgba?\((\d+), ?(\d+), ?(\d+)/g, (m0, r, g, c) => (RGB[`${r},${g},${c}`] ? m0.replace(`${r}, ${g}, ${c}`, RGB[`${r},${g},${c}`]).replace(`${r},${g},${c}`, RGB[`${r},${g},${c}`]) : m0));
+}
+module.exports = { PAL, doiMau, doiMauBang };

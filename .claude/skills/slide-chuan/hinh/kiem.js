@@ -2,13 +2,14 @@
 // Gốc: phiên 11/2026 dựng bài hình sự — deck đúng luật, 0 lỗi tràn, nhưng không có ảnh / icon / sticker nào và `art`, `meta.kit`
 // bị bỏ qua không một lời cảnh báo; che chữ đi thì không đoán được đề tài (tiêu chí "nhìn mờ", scripts/nhin_mo.py).
 const fs = require("fs"), path = require("path");
+const DA = require("./da");
 
 // type có mẫu thật sự đọc trường `art` ở tầng hình ảnh (stage/templates.js: panelrows; hinh/canh.js: lawquote dùng `art` làm số điều)
-const ART_TYPES = new Set(["panelrows", "lawquote", "bctrich"]);   // bctrich (hinh/bang_chung.js) dùng `art` làm số điều lớn
+const ART_TYPES = new Set(["panelrows", "lawquote", "bctrich", "cover", "section", "end", "statement"]);   // bctrich dùng `art` làm số điều lớn; cover / section / end / statement: hình lớn của da (hinh/da.js)
 // trường làm ra hình thật trong tầng hình ảnh
 const VISUAL_KEYS = new Set(["photo", "cutout", "emoji", "emoji2", "icon"]);
 // type tự mang hình, không cần trường riêng (mở sách luôn có vật trên bàn)
-const BO_HINH_TYPES = new Set([...require("./bang_chung").TYPES, ...require("./hoi_nghi").TYPES]);   // bộ hình riêng theo môn (references/canh.md mục 8–9)
+const BO_HINH_TYPES = new Set([...require("./bang_chung").TYPES, ...require("./hoi_nghi").TYPES, ...require("./so_bhxh").TYPES]);   // bộ hình riêng theo môn (references/canh.md mục 8–9)
 const INTRINSIC = new Set(["book", ...BO_HINH_TYPES]);   // book: vật trên bàn; bc*: bộ hình "bảng bằng chứng" (hinh/bang_chung.js)
 
 function coHinh(o) {
@@ -23,10 +24,20 @@ function kiemDeck(deck, { deckDir = process.cwd() } = {}) {
 
   // 1. `art` ở type mà tầng hình ảnh không vẽ
   const mat = slides.map((s, i) => [s, i + 1]).filter(([s]) => s.art && !ART_TYPES.has(s.type));
-  if (mat.length) out.push(`ℹ trường "art" bị bỏ qua ở tầng hình ảnh: ${mat.map(([s, i]) => `slide ${i} (${s.type})`).join(", ")} — chỉ ${[...ART_TYPES].join(", ")} đọc "art". Dùng "emoji" / "icon" / "cutout" / "photo", hoặc dựng bằng engine/build.js.`);
+  if (mat.length) out.push(`ℹ trường "art" bị bỏ qua : ${mat.map(([s, i]) => `slide ${i} (${s.type})`).join(", ")} — chỉ ${[...ART_TYPES].join(", ")} đọc "art". Dùng "emoji" / "icon" / "cutout" / "photo".`);
 
-  // 2. world (meta.kit) chỉ chạy ở engine/build.js
-  if (deck.meta?.kit && deck.meta.kit !== "none") out.push(`ℹ meta.kit "${deck.meta.kit}" không được tầng hình ảnh đọc (đồ vật / khung của world chỉ chạy ở engine/build.js): deck này sẽ không mang dấu hiệu của world. Muốn che chữ vẫn đoán được đề tài: thêm ảnh / icon / sticker đúng chủ đề.`);
+  // 1b. trường chuyển cảnh / hiệu ứng của tầng Office cũ: tầng hình ảnh không đọc (chuyển cảnh = trans, dur; hiệu ứng vào = theo da)
+  for (const k of ["transition", "build", "motion"]) { const c = slides.map((s, i) => [s, i + 1]).filter(([s]) => s && s[k] != null);
+    if (c.length) out.push(`ℹ trường "${k}" bị bỏ qua: ${c.map(([s, i]) => `slide ${i} (${s.type})`).join(", ")} — tên của tầng Office cũ; chuyển cảnh ghi "trans" / "dur" (hoặc meta.hinh.chuyen), hiệu ứng vào do da quyết định.`); }
+
+  // 1c. bìa: tầng hình ảnh có poster / full (ảnh tràn), frame (khung ảnh, mặc định khi có ảnh), art (hình lớn của da, mặc định khi không ảnh), typo (thuần chữ);
+  //     band / split / paper của tầng Office cũ thành kiểu mặc định
+  const bia = slides.map((s, i) => [s, i + 1]).filter(([s]) => s && s.type === "cover" && s.layout && !["poster", "full", "frame", "art", "typo"].includes(s.layout));
+  if (bia.length) out.push(`ℹ cover.layout không có ở tầng hình ảnh: ${bia.map(([s, i]) => `slide ${i} "${s.layout}"`).join(", ")} — dựng thành ${bia.some(([s]) => s.photo) ? "bìa khung ảnh" : "bìa có hình lớn của da"}; có ảnh thì chọn "poster" (ảnh tràn), không ảnh thì "art" hoặc "typo" (thuần chữ), hoặc bỏ layout.`);
+
+  // 2. tên cũ của tầng Office: meta.kit / meta.style nay đổi thành da (hinh/da.js) — vẫn đọc, nhắc đổi tên
+  if (deck.meta?.kit && !deck.meta.da) out.push(`ℹ meta.kit "${deck.meta.kit}" là tên cũ — nay đọc thành da${DA.ALIAS[deck.meta.kit] ? ` "${DA.ALIAS[deck.meta.kit]}"` : ""}; ghi "meta": { "da": "${DA.ALIAS[deck.meta.kit] || deck.meta.kit}" }.`);
+  if (deck.meta?.style && !deck.meta.da) out.push(`ℹ meta.style "${deck.meta.style}" (phong cách bìa – chương – kết của tầng Office cũ) không còn vẽ riêng${DA.ALIAS[deck.meta.style] ? ` — dùng da "${DA.ALIAS[deck.meta.style]}"` : ""}.`);
 
   // 3. deck toàn chữ
   if (n >= 6) {
@@ -42,20 +53,14 @@ function kiemDeck(deck, { deckDir = process.cwd() } = {}) {
     else { let pr = null; try { pr = JSON.parse(fs.readFileSync(p, "utf8")); } catch { /* prep.py check sẽ báo */ }
       if (pr && pr.approved !== true) out.push(`ℹ Bước 0: prep.json chưa được người dùng duyệt (scripts/prep.py approve chỉ chạy khi người dùng nói duyệt). Bản này chỉ là nháp.`); }
   }
-  // 5. Nền chung: deck không dùng bộ hình theo môn nào — lỗi L10 lặp ở 3 bài (loi-da-biet-2026-11.md mục E). Im lặng khi prep.json
-  //    ghi người dùng đã đồng ý (chapNhanNenChung) hoặc dựng tầng lưới Office (tang: "luoi"). dung.js --strict dừng ở dòng này.
-  // 6. Nền chung một phần (P4): có bộ hình nhưng < 1/2 slide mang dấu hiệu môn — bộ hình theo môn hoặc ảnh thật. Hình dán / icon KHÔNG tính
-  //    (chất liệu chung, đã bị chê "rập khuôn"). Đo cấu trúc thay cho chấm điểm ảnh nhìn mờ: điểm ảnh không phân biệt hình theo môn với hình trang trí.
-  const dauHieu = slides.filter((s) => BO_HINH_TYPES.has(s.type) || ["photo", "cutout"].some((k) => s[k]) || (Array.isArray(s.items) && s.items.some((x) => x && x.photo))).length;
-  if (n >= 6) {
+  // 5. Nền chung: chỉ còn khi deck ghi "da": "none" (mọi deck khác nhận da theo môn / theo loại bài — hinh/da.js). Lỗi L10 lặp ở 4 bài trước khi có da.
+  //    Im lặng khi prep.json ghi người dùng đã đồng ý (chapNhanNenChung). dung.js --strict dừng ở dòng này.
+  const da = DA.chonDa(deck, { bcTypes: [...require("./bang_chung").TYPES], qtTypes: [...require("./hoi_nghi").TYPES] });
+  if (!da.ten && !da.loi && n >= 6) {
     let pr = {}; try { pr = JSON.parse(fs.readFileSync(path.resolve(deckDir, deck.meta?.prep || "prep.json"), "utf8")) || {}; } catch { /* không có prep.json */ }
-    const coBo = slides.some((s) => BO_HINH_TYPES.has(s.type)), boQua = pr.chapNhanNenChung || pr.tang === "luoi";
-    if (!boQua && coBo && dauHieu / n < 0.5) out.push(`⚠ Nền chung một phần: ${dauHieu}/${n} slide mang dấu hiệu môn (bộ hình theo môn hoặc ảnh thật) — các slide còn lại là nền, khung chung; hình dán không tính. Chuyển thêm slide sang kiểu của bộ hình, thêm ảnh thật đúng hành vi của slide, hoặc ghi người dùng đã đồng ý (chapNhanNenChung).`);
+    if (!pr.chapNhanNenChung) out.push(`⚠ Nền chung: deck ghi "da": "none" — nền, khung, thẻ là chất liệu chung, che chữ đi không đoán được đề tài (lỗi L10). Chọn da theo môn (${DA.NAMES.join(", ")}) hoặc ghi người dùng đã đồng ý: prep.json → chapNhanNenChung: true.`);
   }
-  if (n >= 6 && !slides.some((s) => BO_HINH_TYPES.has(s.type))) {
-    let pr = {}; try { pr = JSON.parse(fs.readFileSync(path.resolve(deckDir, deck.meta?.prep || "prep.json"), "utf8")) || {}; } catch { /* không có prep.json */ }
-    if (!pr.chapNhanNenChung && pr.tang !== "luoi") out.push(`⚠ Nền chung: deck ${n} slide không dùng bộ hình theo môn nào (bc* hình sự, qt* Công pháp quốc tế) — nền, khung, hình dán là chất liệu chung, che chữ đi không đoán được đề tài (lỗi L10). Dùng bộ có sẵn, làm bộ mới (references/canh.md mục 8–9), hoặc ghi người dùng đã đồng ý: prep.json → chapNhanNenChung: true.`);
-  }
+  if (da.ten && ["ho-so", "giay", "kinh"].includes(da.ten) && n >= 6) out.push(`ℹ da "${da.ten}" là bộ chung theo loại bài — nếu môn có da riêng (${DA.NAMES.filter((x) => !["ho-so", "giay", "kinh"].includes(x)).join(", ")}) thì ghi "meta": { "da": "…" }; môn chưa có da thì thêm một khối vào hinh/da.js.`);
   return out;
 }
 

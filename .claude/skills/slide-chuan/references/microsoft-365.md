@@ -17,14 +17,14 @@
 | Lưu và nạp lại `deck.json`, `prep.json`, `notes.md`, `prep.md` (văn bản) | **Làm được**, dưới 1 MiB, dùng tham số `content`. Đây là cách giữ nguồn sự thật giữa các chat: chat khác nạp `deck.json` rồi dựng lại PPTX |
 | Đọc lại bản PPTX người dùng đã sửa trong PowerPoint, để đối chiếu chữ | **Làm được** (chỉ chữ, theo trang) |
 | Giao file `.pptx` lên OneDrive bằng connector | **Không thực tế.** 0,5 MB nhị phân thành khoảng 0,7 triệu ký tự base64 phải đi qua tham số công cụ. Giao file bằng cách gửi cho người dùng tải về (đính kèm của chat), họ tự kéo vào OneDrive |
-| Kiểm Morph, hiệu ứng, font nhúng trong PowerPoint thật | **Không làm được.** Không có công cụ mở PowerPoint hay chụp slide. Người dùng mở bằng PowerPoint 2019 / Microsoft 365, bấm Enable Editing, rồi báo lại ba điều ở `SKILL.md` ("Nói với người dùng khi giao file tầng hình ảnh") |
+| Kiểm Morph, hiệu ứng, font nhúng trong PowerPoint thật | **Không làm được.** Không có công cụ mở PowerPoint hay chụp slide. Người dùng mở bằng PowerPoint 2019 / Microsoft 365, bấm Enable Editing, rồi báo lại ba điều ở `SKILL.md` (mục "Đầu ra: một file PowerPoint") |
 | Tạo hoặc sửa slide trực tiếp trong PowerPoint | **Không làm được** qua connector này |
 
 ## 3. Quy trình khuyên dùng
 
 1. Hỏi người dùng thư mục nguồn; `sharepoint_folder_search` / `sharepoint_search` để tìm tài liệu. Đọc bằng `read_resource`; tài liệu dài thì đọc theo `startPage` / `endPage`.
 2. Làm Bước 0 như bình thường (`prep.json`, người dùng duyệt). **Không** ghi gì lên OneDrive khi chưa được yêu cầu.
-3. Dựng PPTX trong chat. Trước khi giao: `node hinh/dung.js deck.json --soat` (tầng hình ảnh) hoặc `engine/build.js --strict` + `scripts/check_overflow.py` (tầng lưới Office); và `python3 scripts/nhin_mo.py <file.pptx>` để kiểm "che chữ vẫn đoán được".
+3. Dựng PPTX trong chat. Trước khi giao: `node hinh/dung.js deck.json out.pptx --strict --soat`; và `python3 scripts/nhin_mo.py <file.pptx>` để kiểm "che chữ vẫn đoán được".
 4. Gửi file `.pptx` cho người dùng tải về. Nếu họ muốn lưu `deck.json` / `prep.json` trên OneDrive: hỏi thư mục, `sharepoint_create_folder`, `sharepoint_upload_file` với `conflictBehavior: "rename"`; báo lại `webUrl`.
 5. Người dùng sửa trong PowerPoint rồi cần đối chiếu: `read_resource` bản `.pptx` đã sửa, so chữ với `deck.json`, sửa `deck.json` rồi dựng lại (đừng vá file `.pptx`).
 

@@ -1,0 +1,947 @@
+{
+ "meta": {
+  "title": "Tình hình triển khai BHXH bắt buộc ở Việt Nam 2015–2025",
+  "short": "BHXH bắt buộc 2015–2025",
+  "law": "Luật Bảo hiểm xã hội số 41/2024/QH15",
+  "author": "Nhóm thuyết trình BNK405",
+  "kind": "report",
+  "minutes": 20,
+  "imagePolicy": "classroom",
+  "scopeOut": [
+   "BHYT",
+   "bảo hiểm y tế",
+   "khám chữa bệnh"
+  ],
+  "hinh": {
+   "chuyen": "fade"
+  },
+  "da": "so-bhxh"
+ },
+ "slides": [
+  {
+   "type": "bhbia",
+   "kicker": "BNK405 · Báo cáo nhóm",
+   "title": "BHXH bắt buộc ở Việt Nam\n2015–2025: [mở rộng]\nnhưng chưa vững",
+   "subtitle": "Luật áp dụng · số người tham gia và thu–chi · đánh giá, kiến nghị",
+   "author": "Nhóm thuyết trình BNK405",
+   "date": "11/2026",
+   "covers": [],
+   "notes": "Xin chào thầy cô và các bạn. Nhóm em trình bày đề tài tình hình triển khai bảo hiểm xã hội bắt buộc ở Việt Nam giai đoạn 2015 đến 2025. Người trong ảnh là công nhân may, nhóm lao động đông nhất đang đóng bảo hiểm xã hội bắt buộc. Bài đi qua ba phần: luật buộc ai đóng và đóng để được gì; mười năm qua bao nhiêu người đóng và quỹ thu chi ra sao; cuối cùng là đạt được gì, vướng ở đâu và nhóm kiến nghị sửa gì. Lưu ý: số liệu trên slide lấy từ bảng tổng hợp của nhóm; chỗ nào số liệu chưa so được, nhóm ghi rõ.",
+   "authorSub": "Lớp BNK405",
+   "titleSize": 72
+  },
+  {
+   "type": "bhdo",
+   "id": "cau-hoi-lon",
+   "lines": [
+    "Mười năm,",
+    "BHXH bắt buộc"
+   ],
+   "box": "đi bao xa?",
+   "covers": [],
+   "notes": "Câu hỏi lớn của bài: sau mười năm, từ 2015 đến 2025, bảo hiểm xã hội bắt buộc ở Việt Nam đã đi được bao xa — về luật, về số người tham gia và về sức khoẻ của quỹ. Slide sau là câu trả lời ngắn nhất.",
+   "kicker": "Câu hỏi của bài"
+  },
+  {
+   "type": "bhtang",
+   "kicker": "Phát hiện chính",
+   "title": "Mười năm, người đóng BHXH bắt buộc tăng hơn [1,5 lần]",
+   "sub": "Chỉ đi lùi đúng một năm (2022) — và BHXH vẫn chưa phủ tới một nửa lực lượng lao động",
+   "stats": [
+    {
+     "label": "2015 · triệu người",
+     "value": "12,07",
+     "desc": "đóng BHXH bắt buộc"
+    },
+    {
+     "label": "2025 · triệu người",
+     "value": "18,91",
+     "desc": "đóng BHXH bắt buộc"
+    },
+    {
+     "label": "Năm đi lùi",
+     "value": "2022",
+     "desc": "giảm 0,75 triệu người sau COVID-19"
+    }
+   ],
+   "covers": [
+    "3.3.1"
+   ],
+   "notes": "Kết luận của cả bài nằm ở slide này. Năm 2015 có khoảng 12,07 triệu người đóng bảo hiểm xã hội bắt buộc; năm 2025 là 18,91 triệu, tức gấp khoảng 1,57 lần. Trong mười năm, con số này chỉ giảm một lần, năm 2022, khi hậu quả của COVID-19 làm nhiều doanh nghiệp thu hẹp hoặc giải thể. Nhưng tăng nhanh không có nghĩa là đã phủ rộng: tính cả bảo hiểm xã hội tự nguyện, hệ thống vẫn chưa phủ tới một nửa lực lượng lao động trong độ tuổi. Nguồn: bảng số liệu tổng hợp của nhóm; số năm 2025 trùng với số BHXH Việt Nam công bố (Báo Người Lao Động, 24/6/2026)."
+  },
+  {
+   "type": "bhba",
+   "id": "ba-cau-hoi",
+   "kicker": "Lộ trình 20 phút",
+   "title": "Ba câu hỏi [của bài báo cáo]",
+   "items": [
+    {
+     "q": "Ai phải đóng BHXH, được hưởng gì?",
+     "go": "p1"
+    },
+    {
+     "q": "Mười năm qua, bao nhiêu người đóng và quỹ ra sao?",
+     "go": "p2"
+    },
+    {
+     "q": "Đạt được gì, vướng ở đâu, cần sửa gì?",
+     "go": "p3"
+    }
+   ],
+   "covers": [],
+   "notes": "Ba câu hỏi này cũng là ba phần của bài. Phần một đi vào luật: ai thuộc diện bắt buộc và đóng xong thì được hưởng năm chế độ nào. Phần hai là thực trạng mười năm, đọc qua số liệu tham gia và thu chi của quỹ. Phần ba là đánh giá: kết quả, hạn chế và ba kiến nghị gắn với điều khoản cụ thể. Phần kết luận sẽ trả lời lại đúng ba câu này theo thứ tự. Bấm vào từng thẻ để nhảy tới phần tương ứng."
+  },
+  {
+   "type": "bhchuong",
+   "num": "1",
+   "part": "Luật áp dụng",
+   "title": "Ai phải đóng BHXH, được hưởng gì?",
+   "sub": "Luật BHXH số 41/2024/QH15, hiệu lực 01/7/2025, thay Luật số 58/2014/QH13",
+   "covers": [
+    "P1"
+   ],
+   "notes": "Phần một. Một điểm cần nói trước: từ ngày 01/7/2025, Luật Bảo hiểm xã hội năm 2024, số 41/2024/QH15, có hiệu lực và thay thế Luật số 58/2014/QH13 (khoản 2 Điều 140). Vì vậy phần luật nhóm trình bày theo luật hiện hành; chỗ nào luật cũ khác, nhóm đặt trong slide so sánh cũ – mới.",
+   "id": "p1"
+  },
+  {
+   "type": "bhtrich",
+   "kicker": "Phần 1 · Khái niệm",
+   "quote": "Bảo hiểm xã hội bắt buộc là loại hình bảo hiểm xã hội do Nhà nước tổ chức mà người lao động, người sử dụng lao động thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc [phải tham gia].",
+   "by": "Khoản 3 Điều 3 Luật BHXH 2024",
+   "role": "Luật số 41/2024/QH15 — hiện hành từ 01/7/2025",
+   "note": "Hai ý then chốt: Nhà nước tổ chức · phải tham gia",
+   "covers": [
+    "1.1",
+    "1.3",
+    "1.3.1"
+   ],
+   "notes": "Đây là định nghĩa nguyên văn tại khoản 3 Điều 3 Luật Bảo hiểm xã hội 2024. Hai chữ cần nhớ: Nhà nước tổ chức, và phải tham gia. Khác với bảo hiểm thương mại, người lao động và người sử dụng lao động thuộc diện không được chọn có tham gia hay không. Còn bảo hiểm xã hội nói chung, theo khoản 1 Điều 3, là sự bảo đảm thay thế hoặc bù đắp một phần thu nhập khi người tham gia bị giảm hoặc mất thu nhập do ốm đau, thai sản, tai nạn lao động, bệnh nghề nghiệp, khi nghỉ hưu hoặc chết, trên cơ sở đóng vào quỹ hoặc do ngân sách bảo đảm. Định nghĩa này giữ nguyên câu chữ so với khoản 1 Điều 3 Luật 2014 mà tài liệu của nhóm trích.",
+   "title": "BHXH bắt buộc: Nhà nước tổ chức, người thuộc diện [phải tham gia]"
+  },
+  {
+   "type": "bhvaitro",
+   "kicker": "Phần 1 · Sao không để tự nguyện?",
+   "title": "Nhà nước bắt buộc tham gia vì BHXH giữ ba vai trò",
+   "items": [
+    {
+     "name": "Thay thu nhập",
+     "who": "Trụ cột an sinh",
+     "desc": "Bù một phần thu nhập khi ốm, sinh con, tai nạn, nghỉ hưu, chết (k1 Điều 3)"
+    },
+    {
+     "name": "Công bằng",
+     "who": "Đóng – hưởng tương ứng",
+     "desc": "Hưởng theo mức và thời gian đóng, có chia sẻ giữa người tham gia (k1 Điều 5)"
+    },
+    {
+     "name": "Ổn định kinh tế",
+     "who": "Giữ sức mua",
+     "desc": "Thu nhập thay thế giữ đời sống gia đình khi người lao động gặp rủi ro"
+    }
+   ],
+   "covers": [
+    "1.2",
+    "1.3.1"
+   ],
+   "notes": "Vì sao Nhà nước bắt buộc chứ không để tự nguyện? Tài liệu của nhóm nêu ba vai trò. Thứ nhất, bảo hiểm xã hội là trụ cột của an sinh: thay một phần thu nhập khi người lao động gặp năm rủi ro. Thứ hai, công bằng: khoản 1 Điều 5 Luật 2024 quy định mức hưởng tính trên mức đóng và thời gian đóng, có chia sẻ giữa những người tham gia — người đóng nhiều, đóng lâu hưởng nhiều hơn, nhưng người gặp rủi ro sớm vẫn được quỹ chung chi trả. Thứ ba, ổn định kinh tế – xã hội: thu nhập thay thế giữ sức mua của gia đình khi người lao động mất thu nhập. Nếu để tự nguyện, người thu nhập thấp thường không đóng, rủi ro dồn về ngân sách và gia đình — đó là lý do pháp luật phải bắt buộc và Nhà nước trực tiếp quản lý."
+  },
+  {
+   "type": "bhnhom",
+   "kicker": "Phần 1 · Ai phải đóng?",
+   "title": "Điều 2 Luật 2024 buộc ba nhóm tham gia BHXH bắt buộc",
+   "items": [
+    {
+     "name": "NLĐ Việt Nam",
+     "who": "14 nhóm · k1 Điều 2",
+     "desc": "HĐLĐ từ đủ 1 tháng, công chức, viên chức, lực lượng vũ trang, quản lý DN…"
+    },
+    {
+     "name": "NLĐ nước ngoài",
+     "who": "k2 Điều 2",
+     "desc": "HĐLĐ xác định thời hạn từ đủ 12 tháng; trừ di chuyển nội bộ, đã đủ tuổi hưu"
+    },
+    {
+     "name": "Bên thuê lao động",
+     "who": "k3 Điều 2",
+     "desc": "Cơ quan, doanh nghiệp, HTX, hộ kinh doanh, cá nhân thuê lao động theo HĐLĐ"
+    }
+   ],
+   "covers": [
+    "1.4",
+    "1.4.1",
+    "1.4.2",
+    "1.4.3"
+   ],
+   "notes": "Ai phải đóng? Điều 2 Luật 2024 chia ba nhóm. Nhóm một, người lao động là công dân Việt Nam, gồm 14 điểm từ a đến n khoản 1: người làm theo hợp đồng lao động từ đủ 1 tháng, cán bộ, công chức, viên chức, công nhân quốc phòng, công an, quân nhân, người đi làm việc ở nước ngoài theo hợp đồng, người quản lý doanh nghiệp, người hoạt động không chuyên trách ở cấp xã, thôn, tổ dân phố, và các nhóm mới. Nhóm hai, người lao động nước ngoài: theo khoản 2, điều kiện là hợp đồng lao động xác định thời hạn từ đủ 12 tháng — tài liệu của nhóm ghi điều kiện 'có giấy phép lao động' là theo Luật 2014, nay đã thay. Nhóm ba, người sử dụng lao động theo khoản 3, trong đó hộ kinh doanh đã có mặt từ Luật 2014."
+  },
+  {
+   "type": "bhmorong",
+   "id": "nhom-moi",
+   "kicker": "Phần 1 · Luật mới đổi gì?",
+   "title": "Năm nhóm [mới phải đóng] từ 01/7/2025",
+   "items": [
+    {
+     "k": "l",
+     "text": "Làm không trọn thời gian"
+    },
+    {
+     "k": "m",
+     "text": "Chủ hộ kinh doanh có đăng ký"
+    },
+    {
+     "k": "n",
+     "text": "Quản lý DN, HTX không lương"
+    },
+    {
+     "k": "e",
+     "text": "Dân quân thường trực"
+    },
+    {
+     "k": "k",
+     "text": "Không chuyên trách ở thôn, tổ dân phố"
+    }
+   ],
+   "big": {
+    "value": "292.000",
+    "label": "người nhóm mới đã tham gia (2/2026)"
+   },
+   "source": "Các điểm của khoản 1 Điều 2 Luật BHXH số 41/2024/QH15 (hiện hành từ 01/7/2025), rút gọn; điểm m còn chờ quy định của Chính phủ. Số liệu: Bộ Nội vụ, dẫn theo Báo Người Lao Động 24/6/2026.",
+   "covers": [
+    "1.4.1",
+    "1.4.2",
+    "1.4.3",
+    "1.3.2"
+   ],
+   "notes": "Slide này sửa một chỗ trong tài liệu của nhóm. Tài liệu viết 'Luật Bảo hiểm xã hội năm 2025' — đúng là Luật năm 2024, số 41/2024/QH15, có hiệu lực từ 01/7/2025. Và điểm mới không phải là người làm cho hộ kinh doanh, vì nhóm này đã thuộc diện từ Luật 2014; điểm mới là chính chủ hộ kinh doanh có đăng ký kinh doanh (điểm m khoản 1 Điều 2). Luật mới còn đưa vào người làm không trọn thời gian (điểm l), người quản lý doanh nghiệp, hợp tác xã không hưởng lương (điểm n), dân quân thường trực (điểm e). Thay đổi lớn nhất cho người lao động: số năm đóng tối thiểu để có lương hưu giảm từ 20 xuống 15 năm (Điều 64). Theo báo cáo của Bộ Nội vụ, đến tháng 2/2026 có khoảng 292.000 người thuộc các nhóm mới đã tham gia, đông nhất là người làm không trọn thời gian (khoảng 150.000). Nguồn: Báo Người Lao Động, 24/6/2026."
+  },
+  {
+   "type": "bhrutngan",
+   "id": "moc-huu",
+   "kicker": "Phần 1 · Điều 64",
+   "title": "Mốc lương hưu: [20 xuống 15 năm]",
+   "legend": "Mỗi ô là một năm đóng BHXH",
+   "ref": {
+    "head": "Luật BHXH 2024 · Điều 64 · Khoản 1",
+    "text": "… khi nghỉ việc có thời gian đóng bảo hiểm xã hội bắt buộc [từ đủ 15 năm] trở lên thì được hưởng lương hưu …"
+   },
+   "cols": [
+    {
+     "n": 20,
+     "label": "Luật 2014 — đã hết hiệu lực"
+    },
+    {
+     "n": 15,
+     "label": "Luật 2024 — từ 01/7/2025"
+    }
+   ],
+   "source": "Khoản 1 Điều 64 Luật BHXH số 41/2024/QH15 (hiện hành); Luật số 58/2014/QH13 hết hiệu lực từ 01/7/2025 (khoản 2 Điều 140).",
+   "covers": [
+    "2.4",
+    "1.3.2"
+   ],
+   "notes": "Thay đổi người lao động cảm nhận rõ nhất của Luật 2024: số năm đóng tối thiểu để có lương hưu giảm từ 20 xuống 15 năm. Mỗi ô là một năm đóng. Năm ô bị bớt đi là năm năm mà trước đây nhiều người không đạt được, nên chọn rút một lần. Luật cũng bỏ sổ giấy bằng dữ liệu điện tử và thêm trợ cấp hằng tháng cho người đủ tuổi mà chưa đủ năm đóng (Điều 23)."
+  },
+  {
+   "type": "bhduong",
+   "kicker": "Phần 1 · Đóng rồi được gì?",
+   "title": "Năm chế độ bắt buộc đi cùng người lao động cả\u00a0đời\u00a0làm\u00a0việc",
+   "who": {
+    "name": "Chị Hoa",
+    "sub": "Công nhân may, đóng BHXH bắt buộc"
+   },
+   "stages": [
+    {
+     "when": "Tuổi 25",
+     "event": "Sốt xuất huyết, nghỉ 7 ngày",
+     "link": "Ốm đau · Điều 42"
+    },
+    {
+     "when": "Tuổi 28",
+     "event": "Sinh con đầu lòng",
+     "link": "Thai sản · Điều 50"
+    },
+    {
+     "when": "Tuổi 40",
+     "event": "Tai nạn ở xưởng, suy giảm 10%",
+     "link": "TNLĐ · Luật ATVSLĐ"
+    },
+    {
+     "when": "Tuổi 60",
+     "event": "Đủ tuổi hưu, đóng 32 năm",
+     "link": "Hưu trí · Điều 64"
+    },
+    {
+     "when": "Sau này",
+     "event": "Gia đình lo mai táng",
+     "link": "Tử tuất · Điều 84"
+    }
+   ],
+   "focus": 3,
+   "note": "Nhân vật giả định; TNLĐ–BNN theo Luật An toàn, vệ sinh lao động 2015",
+   "covers": [
+    "P2",
+    "2",
+    "2.1",
+    "2.2",
+    "2.3",
+    "2.4",
+    "2.5"
+   ],
+   "notes": "Để năm chế độ không thành năm mảnh rời, nhóm đặt chúng vào cuộc đời một người lao động giả định là chị Hoa. Năm 25 tuổi chị bị sốt xuất huyết, nghỉ điều trị: chế độ ốm đau theo Điều 42. Năm 28 tuổi sinh con: chế độ thai sản theo Điều 50. Năm 40 tuổi bị tai nạn ở xưởng, suy giảm 10% khả năng lao động: chế độ tai nạn lao động. Lưu ý: chế độ tai nạn lao động – bệnh nghề nghiệp không nằm trong Luật Bảo hiểm xã hội mà theo Luật An toàn, vệ sinh lao động 2015 — điểm đ khoản 2 Điều 4 Luật 2024 dẫn chiếu sang. Năm 60 tuổi chị nghỉ hưu với 32 năm đóng: chế độ hưu trí. Và khi chị mất, gia đình được hưởng chế độ tử tuất."
+  },
+  {
+   "type": "bhphieu5",
+   "kicker": "Phần 1 · Khi nào được hưởng, bao nhiêu?",
+   "title": "Mỗi chế độ có điều kiện riêng",
+   "rows": [
+    {
+     "label": "Điều kiện chính"
+    },
+    {
+     "label": "Mức hưởng"
+    }
+   ],
+   "cols": [
+    {
+     "name": "Ốm đau",
+     "cells": [
+      "Nghỉ điều trị, chăm con dưới 7 tuổi (Đ42)",
+      "75% lương đóng BHXH (Đ45)"
+     ]
+    },
+    {
+     "name": "Thai sản",
+     "cells": [
+      "Đóng đủ 6/12 tháng trước sinh (Đ50)",
+      "100% bình quân 6 tháng (Đ59)"
+     ]
+    },
+    {
+     "name": "TNLĐ – BNN",
+     "cells": [
+      "Suy giảm từ 5% (Đ45, 46 ATVSLĐ)",
+      "Một lần hoặc hằng tháng"
+     ]
+    },
+    {
+     "name": "Hưu trí",
+     "cells": [
+      "Đủ tuổi + đóng đủ 15 năm (Đ64)",
+      "[45–75%] bình quân lương (Đ66)"
+     ]
+    },
+    {
+     "name": "Tử tuất",
+     "cells": [
+      "Đóng đủ 15 năm / đang hưởng hưu (Đ86)",
+      "50% mức tham chiếu/tháng (Đ87)"
+     ]
+    }
+   ],
+   "focus": 3,
+   "covers": [
+    "2.1",
+    "2.2",
+    "2.3",
+    "2.5",
+    "2-2"
+   ],
+   "notes": "Năm thẻ này gom điều kiện và mức hưởng của năm chế độ; số điều là Luật Bảo hiểm xã hội 2024, riêng tai nạn lao động – bệnh nghề nghiệp là Luật An toàn, vệ sinh lao động 2015. Ốm đau: nghỉ việc điều trị bệnh, tai nạn không phải tai nạn lao động, hoặc chăm con dưới 7 tuổi ốm (Điều 42); hưởng 75% tiền lương đóng (khoản 2 Điều 45). Thai sản: lao động nữ sinh con phải đóng đủ 6 tháng trong 12 tháng liền kề trước khi sinh (khoản 2 Điều 50); hưởng 100% bình quân tiền lương 6 tháng gần nhất (Điều 59); lao động nam có vợ sinh con thuộc điểm g khoản 1 Điều 50 — tài liệu của nhóm dẫn điểm e khoản 1 Điều 31 là của luật cũ. Tai nạn lao động: bị tai nạn tại nơi làm việc, trong giờ làm việc, khi làm theo yêu cầu của người sử dụng lao động hoặc trên tuyến đường hợp lý, và suy giảm từ 5% (Điều 45 Luật An toàn, vệ sinh lao động); bệnh nghề nghiệp phải thuộc danh mục do Bộ trưởng Bộ Y tế ban hành (Điều 46). Tử tuất: thân nhân hưởng tuất hằng tháng khi người chết đã đóng đủ 15 năm, đang hưởng lương hưu, hoặc chết do tai nạn lao động, bệnh nghề nghiệp (khoản 1 Điều 86); mức 50% mức tham chiếu mỗi thân nhân, 70% nếu không có người trực tiếp nuôi dưỡng (Điều 87); trợ cấp mai táng 10 lần mức tham chiếu (Điều 85)."
+  },
+  {
+   "type": "bhcongthuc",
+   "kicker": "Phần 1 · Lương hưu tính thế nào?",
+   "title": "Lương hưu bằng 45–75% bình quân tiền lương đóng BHXH",
+   "result": {
+    "label": "Lương hưu hằng tháng"
+   },
+   "terms": [
+    {
+     "label": "Tỷ lệ hưởng",
+     "note": "Nữ 45% ở 15 năm, nam 45% ở 20 năm; +2%/năm, tối đa 75%"
+    },
+    {
+     "label": "Bình quân tiền lương",
+     "note": "Tiền lương làm căn cứ đóng, đã điều chỉnh (Điều 72)"
+    }
+   ],
+   "example": "Nữ đóng 25 năm: 45% + 10 × 2% = 65%, nên lương hưu = [65% × bình quân tiền lương]",
+   "note": "Nam đóng 15 đến dưới 20 năm: 40% ở 15 năm, mỗi năm thêm 1% (k1 Điều 66)",
+   "covers": [
+    "2.4"
+   ],
+   "notes": "Lương hưu tính bằng tỷ lệ hưởng nhân bình quân tiền lương làm căn cứ đóng bảo hiểm xã hội. Theo khoản 1 Điều 66 Luật 2024: lao động nữ được 45% ứng với 15 năm đóng, lao động nam 45% ứng với 20 năm; sau đó mỗi năm đóng thêm được cộng 2%, tối đa 75%. Riêng lao động nam đóng từ 15 đến dưới 20 năm được 40% ở 15 năm và mỗi năm thêm 1%. Ví dụ: một lao động nữ đóng 25 năm có 10 năm vượt mốc 15, nên tỷ lệ là 45% cộng 20% bằng 65%. Tài liệu của nhóm trình bày lộ trình 16 đến 20 năm cho nam từ 2018 — đó là Điều 56 Luật 2014, nay đã hết hiệu lực."
+  },
+  {
+   "type": "bhchuong",
+   "num": "2",
+   "part": "Thực trạng 2015–2025",
+   "title": "Mười năm qua, bao nhiêu người đóng và quỹ ra sao?",
+   "sub": "Số liệu: bảng tổng hợp của nhóm (tài liệu BNK405)",
+   "covers": [
+    "P3",
+    "1.3.2"
+   ],
+   "notes": "Phần hai. Giai đoạn 2015 đến 2025 có nhiều biến động: hội nhập sâu qua các hiệp định thương mại tự do làm tăng doanh nghiệp và lao động có hợp đồng; lao động dịch chuyển từ nông nghiệp sang công nghiệp, dịch vụ; Nghị quyết 28-NQ/TW năm 2018 về cải cách chính sách bảo hiểm xã hội; đại dịch COVID-19 từ năm 2020; và dân số già hoá nhanh. Nhóm đọc các tác động này qua số người tham gia và thu chi của quỹ. Một lưu ý: tài liệu gốc gắn Nghị quyết 21-NQ/TW với 'địa bàn thành phố' — thực ra đó là nghị quyết của Bộ Chính trị năm 2012, áp dụng toàn quốc.",
+   "id": "p2"
+  },
+  {
+   "type": "bhcot2",
+   "kicker": "Phần 2 · Số người tham gia",
+   "title": "Số người đóng BHXH bắt buộc tăng đều, chỉ giảm năm 2022",
+   "unit": "triệu người",
+   "items": [
+    {
+     "label": "2015",
+     "value": 12.065,
+     "display": "12,07"
+    },
+    {
+     "label": "2016",
+     "value": 12.743,
+     "display": "12,74"
+    },
+    {
+     "label": "2017",
+     "value": 13.2,
+     "display": "13,20"
+    },
+    {
+     "label": "2018",
+     "value": 13.79,
+     "display": "13,79"
+    },
+    {
+     "label": "2019",
+     "value": 15.185,
+     "display": "15,19"
+    },
+    {
+     "label": "2020",
+     "value": 15.743,
+     "display": "15,74"
+    },
+    {
+     "label": "2021",
+     "value": 15.8,
+     "display": "15,80"
+    },
+    {
+     "label": "2022",
+     "value": 15.05,
+     "display": "15,05",
+     "why": "COVID-19: doanh nghiệp thu hẹp, giải thể; lao động mất việc"
+    },
+    {
+     "label": "2023",
+     "value": 16.8,
+     "display": "16,80",
+     "why": "Sản xuất phục hồi, tuyển dụng tăng; quản lý đối tượng chặt hơn"
+    },
+    {
+     "label": "2024",
+     "value": 17.281,
+     "display": "17,28"
+    },
+    {
+     "label": "2025",
+     "value": 18.91,
+     "display": "18,91",
+     "focus": true
+    }
+   ],
+   "bands": [
+    {
+     "from": "2020",
+     "to": "2022",
+     "label": "COVID-19"
+    }
+   ],
+   "insight": {
+    "value": "+6,8",
+    "unit": "triệu người sau 10 năm",
+    "text": "Năm 2023 tăng mạnh nhất (+1,75 triệu) ngay sau cú giảm năm 2022"
+   },
+   "note": "Số liệu: bảng tổng hợp của nhóm",
+   "covers": [
+    "3.1",
+    "1.3.2"
+   ],
+   "notes": "Biểu đồ này là số người đóng bảo hiểm xã hội bắt buộc từng năm. Giai đoạn 2015–2019 tăng ổn định, từ 12,07 lên 15,19 triệu: kinh tế mở rộng, số doanh nghiệp tăng, thanh tra và tuyên truyền được tăng cường. Giai đoạn 2020–2022 là dải COVID-19: 2020 và 2021 chỉ tăng nhẹ, năm 2022 giảm xuống 15,05 triệu vì doanh nghiệp thu hẹp, tạm ngừng hoặc giải thể, người lao động mất việc. Từ 2023 tăng trở lại, đạt 18,91 triệu năm 2025. Nguồn: bảng tổng hợp của nhóm. Khi bị hỏi cần nói rõ: số 2024 (17,28 triệu) là số tại ngày 04/11/2024 BHXH Việt Nam công bố, không phải số cuối năm; số 2025 trùng số BHXH Việt Nam công bố.",
+   "id": "so-nguoi"
+  },
+  {
+   "type": "bhche",
+   "id": "bao-phu",
+   "kicker": "Phần 2 · Đã phủ được bao nhiêu?",
+   "title": "Hơn nửa lao động [chưa có BHXH]",
+   "legend": "Mỗi người = 2% lực lượng lao động trong độ tuổi (2025)",
+   "cols": [
+    {
+     "n": 21,
+     "value": "42",
+     "label": "Có BHXH (cả tự nguyện)"
+    },
+    {
+     "n": 29,
+     "value": "58",
+     "label": "Chưa tham gia — khoảng 30 triệu người"
+    }
+   ],
+   "source": "Tỷ lệ theo tài liệu của nhóm (BHXH VN công bố 45,1% năm 2025). Nợ, trốn đóng 2025: 14.887 tỷ đồng, 3,4% số phải thu (BHXH VN).",
+   "covers": [
+    "3.4.1",
+    "3.4.2",
+    "3.1"
+   ],
+   "notes": "Mỗi hình người là 2% lực lượng lao động trong độ tuổi. Theo tài liệu của nhóm, đến năm 2025 tỷ lệ tham gia bảo hiểm xã hội đạt khoảng 42%, tính cả tự nguyện — 21 hình người màu xanh; phần còn lại, khoảng 30 triệu người, chủ yếu là lao động tự do và khu vực phi chính thức. Nếu không tham gia, khi về già họ không có lương hưu và sẽ dựa vào trợ cấp xã hội. Ngay cả người đã thuộc diện cũng có thể mất quyền lợi khi doanh nghiệp không đóng: năm 2025 số tiền chậm đóng, trốn đóng có tính lãi là 14.887 tỷ đồng, bằng 3,4% số phải thu. Nguồn: tài liệu của nhóm (mục 3.4.1, 3.4.2); số nợ đóng theo BHXH Việt Nam, dẫn theo Báo Người Lao Động 24/6/2026. Lưu ý: mục 3.2 của tài liệu ghi 'khoảng 25%' là không khớp — BHXH Việt Nam công bố 42,71% năm 2024 và 45,1% năm 2025."
+  },
+  {
+   "type": "bhcot2",
+   "kicker": "Phần 2 · Ngoài diện bắt buộc thì sao?",
+   "title": "BHXH tự nguyện tăng gấp 10 lần, vẫn chỉ bằng 1/7 bắt buộc",
+   "unit": "triệu người",
+   "items": [
+    {
+     "label": "2015",
+     "value": 0.255,
+     "display": "0,26"
+    },
+    {
+     "label": "2016",
+     "value": 0.198,
+     "display": "0,20",
+     "why": "Lao động tự do, thu nhập bấp bênh, ngại đóng"
+    },
+    {
+     "label": "2017",
+     "value": 0.237,
+     "display": "0,24",
+     "why": "Tăng nhẹ nhờ tuyên truyền, vận động"
+    },
+    {
+     "label": "2018",
+     "value": 0.24,
+     "display": "0,24"
+    },
+    {
+     "label": "2019",
+     "value": 0.551,
+     "display": "0,55"
+    },
+    {
+     "label": "2020",
+     "value": 1.125,
+     "display": "1,13"
+    },
+    {
+     "label": "2021",
+     "value": 1.6,
+     "display": "1,60"
+    },
+    {
+     "label": "2022",
+     "value": 1.4,
+     "display": "1,40",
+     "why": "COVID-19 kéo dài, thu nhập tự do giảm"
+    },
+    {
+     "label": "2023",
+     "value": 1.7,
+     "display": "1,70",
+     "why": "Kinh tế phục hồi, hỗ trợ tiền đóng tiếp tục"
+    },
+    {
+     "label": "2024",
+     "value": 2.08,
+     "display": "2,08"
+    },
+    {
+     "label": "2025",
+     "value": 2.619,
+     "display": "2,62",
+     "focus": true
+    }
+   ],
+   "insight": {
+    "value": "12,16%",
+    "unit": "tỷ trọng 2025",
+    "text": "Từ 2,07% năm 2015 (tự nguyện ÷ tổng tham gia)"
+   },
+   "scopeOk": true,
+   "note": "Bối cảnh; số liệu bảng của nhóm",
+   "covers": [
+    "3.2x"
+   ],
+   "notes": "Đây là slide bối cảnh duy nhất về bảo hiểm xã hội tự nguyện, để so tỷ trọng với bắt buộc. Giai đoạn 2015–2018 số người tham gia thấp và đi ngang, khoảng 200 đến 250 nghìn người: phần lớn là lao động tự do, nông dân thu nhập không ổn định, mức đóng là gánh nặng. Năm 2019 bật lên 0,55 triệu, năm 2020 vượt 1 triệu: Nghị quyết 28-NQ/TW năm 2018 và chính sách ngân sách hỗ trợ một phần tiền đóng. Năm 2022 giảm còn 1,4 triệu do COVID-19 kéo dài. Đến 2025 đạt 2,62 triệu. Tuy vậy, tự nguyện vẫn chỉ bằng khoảng 1/7 bắt buộc, tỷ trọng 12,16%. Nguồn: bảng của nhóm; công thức tỷ trọng theo tài liệu.",
+   "grow": false
+  },
+  {
+   "type": "bhquy",
+   "kicker": "Phần 2 · Quỹ có đủ chi?",
+   "title": "Quỹ thu vượt chi suốt 2015–2022",
+   "unit": "nghìn tỷ đồng",
+   "rows": [
+    {
+     "label": "2015",
+     "value": 62.9,
+     "display": "+62,9",
+     "note": ""
+    },
+    {
+     "label": "2016",
+     "value": 60.8,
+     "display": "+60,8",
+     "note": ""
+    },
+    {
+     "label": "2017",
+     "value": 70.4,
+     "display": "+70,4",
+     "note": ""
+    },
+    {
+     "label": "2018",
+     "value": 79.5,
+     "display": "+79,5",
+     "note": ""
+    },
+    {
+     "label": "2019",
+     "value": 70.2,
+     "display": "+70,2",
+     "note": ""
+    },
+    {
+     "label": "2020",
+     "value": 39.1,
+     "display": "+39,1",
+     "note": "COVID-19: thu giảm còn 342, chi vẫn tăng"
+    },
+    {
+     "label": "2021",
+     "value": 69.6,
+     "display": "+69,6",
+     "note": ""
+    },
+    {
+     "label": "2022",
+     "value": 152.6,
+     "display": "+152,6",
+     "note": "Thu 565,8 — chênh lệch lớn nhất",
+     "focus": true
+    },
+    {
+     "label": "2023",
+     "value": -10.8,
+     "display": "−10,8",
+     "note": "Phạm vi khác: thu chỉ bằng nửa 2022",
+     "hatch": true
+    },
+    {
+     "label": "2024",
+     "value": -19.5,
+     "display": "−19,5",
+     "note": "Phạm vi khác — chưa so được",
+     "hatch": true
+    },
+    {
+     "label": "2025",
+     "value": -11.8,
+     "display": "−11,8",
+     "note": "Phạm vi khác — chưa so được",
+     "hatch": true
+    }
+   ],
+   "note": "Gạch đứt: số 2023–2025 tính theo phạm vi khác — không kết luận chi vượt thu",
+   "covers": [
+    "3.2"
+   ],
+   "notes": "Biểu đồ này là chênh lệch thu – chi từng năm theo bảng của nhóm. Từ 2015 đến 2022, năm nào thu cũng lớn hơn chi, chênh lệch 60 đến 80 nghìn tỷ mỗi năm; năm 2020 thu giảm còn 342 nghìn tỷ trong khi chi vẫn tăng lên 303, nên chênh lệch chỉ còn 39,1 — tác động của COVID-19. Ba dòng cuối nhóm cố ý gạch đứt. Số thu năm 2023 trong bảng là 261,8, chỉ bằng nửa năm 2022 (565,8): hai đoạn số liệu không cùng phạm vi tính, nên không thể kết luận 'chi vượt thu' từ ba năm này. Số chính thức cho thấy chiều ngược lại: năm 2023 tổng thu các quỹ hơn 472 nghìn tỷ, tổng chi hơn 439 nghìn tỷ (BHXH Việt Nam, dẫn theo Thời báo Tài chính 22/02/2024); năm 2025 thu bảo hiểm xã hội đạt 434.116 tỷ đồng. Áp lực dài hạn của quỹ là thật — dân số già hoá, rút một lần — nhưng cần số liệu cùng phạm vi để chứng minh.",
+   "den": "2022"
+  },
+  {
+   "type": "bhrut",
+   "kicker": "Phần 2 · Điều gì đe doạ quỹ dài hạn?",
+   "num": "800.000",
+   "unit": "người rút BHXH một lần năm 2023 (theo tài liệu của nhóm)",
+   "title": "Năm 2023, hơn 800.000 người rút BHXH một lần, rời hệ\u00a0thống an sinh",
+   "covers": [
+    "3.2",
+    "3.4.3"
+   ],
+   "notes": "Theo tài liệu của nhóm, năm 2023 có hơn 800.000 người rút bảo hiểm xã hội một lần. Số BHXH Việt Nam công bố còn cao hơn: năm 2024 gần 1,1 triệu người, giảm 1,6% so với 2023 — tức năm 2023 khoảng 1,1 triệu. Khoảng 78% người rút ở độ tuổi 20 đến 40 và khoảng 98% là người nghỉ việc sau một năm không đóng tiếp. Hệ quả: theo khoản 3 Điều 5 Luật 2024, thời gian đã tính hưởng một lần không còn được tính để hưởng lương hưu; quỹ mất nguồn thu dài hạn, còn người lao động mất đường tới lương hưu. Tín hiệu tích cực: năm 2025 số người rút giảm 24,43% so với 2024, sau khi Luật 2024 hạ mốc hưu xuống 15 năm. Nguồn: BHXH Việt Nam, dẫn theo LSVN 15/01/2025, Báo Người Lao Động 15/6/2024, Tạp chí Kinh tế – Tài chính 14/7/2026.",
+   "facts": [
+    {
+     "icon": "hourglass",
+     "text": "Thời gian đã rút không còn được tính để hưởng lương hưu"
+    },
+    {
+     "icon": "users-three",
+     "text": "Phần lớn người rút ở tuổi 20–40"
+    },
+    {
+     "icon": "piggy-bank",
+     "text": "Quỹ mất nguồn thu dài hạn"
+    }
+   ]
+  },
+  {
+   "type": "bhmat",
+   "id": "rut-mot-lan",
+   "kicker": "Phần 2 · Sau con số 800.000",
+   "title": "Rút một lần là [mất thời gian đã đóng]",
+   "cause": {
+    "tag": "Tình huống",
+    "text": "Đã đóng 6 năm, nghỉ việc 12 tháng, không đóng tiếp, rút BHXH một lần"
+   },
+   "stamp": {
+    "text": "Mất\nthời gian",
+    "sub": "k3 Điều 5"
+   },
+   "results": [
+    {
+     "text": "Thời gian đã rút không còn được tính để hưởng lương hưu",
+     "ref": "Khoản 3 Điều 5"
+    },
+    {
+     "text": "Muốn có lương hưu phải đóng lại từ đầu đủ 15 năm",
+     "ref": "Khoản 1 Điều 64"
+    }
+   ],
+   "source": "Khoản 3 Điều 5, khoản 1 Điều 64, điểm đ khoản 1 Điều 70 Luật BHXH số 41/2024/QH15 (hiện hành từ 01/7/2025).",
+   "covers": [
+    "3.2",
+    "3.4.3"
+   ],
+   "notes": "Vì sao rút một lần là vấn đề? Người đã tham gia trước 01/7/2025 vẫn được rút sau 12 tháng không đóng (điểm đ khoản 1 Điều 70). Nhưng khoản 3 Điều 5 nói rõ: thời gian đã tính hưởng một lần thì không được tính vào thời gian làm cơ sở hưởng chế độ. Nghĩa là muốn có lương hưu, người đó phải đóng lại từ đầu đủ 15 năm. Người rút đổi lương hưu suốt đời lấy một khoản tiền trước mắt.",
+   "years": 6
+  },
+  {
+   "type": "bhchuong",
+   "num": "3",
+   "part": "Đánh giá, kiến nghị",
+   "title": "Đạt được gì, vướng ở đâu, cần sửa gì?",
+   "sub": "Kết quả có số liệu · hạn chế có gốc ·\nkiến nghị có điều khoản",
+   "covers": [
+    "3.3",
+    "3.4"
+   ],
+   "notes": "Phần ba. Nhóm đặt ba nguyên tắc cho phần đánh giá: kết quả phải có số liệu; mỗi hạn chế phải đã hiện ra ở phần thực trạng; mỗi kiến nghị phải chỉ ra điều, khoản cụ thể cần sửa.",
+   "id": "p3"
+  },
+  {
+   "type": "bhdat",
+   "kicker": "Phần 3 · Đạt được gì?",
+   "title": "BHXH phủ rộng và quản lý gọn hơn",
+   "cells": [
+    {
+     "value": "+57%",
+     "head": "Người đóng bắt buộc 2015–2025",
+     "text": "Tăng đều, chỉ giảm năm 2022"
+    },
+    {
+     "value": "25",
+     "head": "Thủ tục (năm 2015: 114)",
+     "text": "100% trực tuyến, có VssID"
+    },
+    {
+     "value": "99%",
+     "head": "Khớp dữ liệu dân cư",
+     "text": "89,6 triệu người (2024)"
+    },
+    {
+     "head": "Luật mới hoàn thiện hơn",
+     "text": "Hưu từ 15 năm; trợ cấp cho người thiếu năm đóng (Điều 23)"
+    }
+   ],
+   "covers": [
+    "3.3.1",
+    "3.3.2",
+    "3.3.3",
+    "3.4.1"
+   ],
+   "notes": "Kết quả thứ nhất, diện bao phủ: số người đóng bắt buộc tăng khoảng 57% sau mười năm, các chế độ ốm đau, thai sản, hưu trí, tử tuất được chi trả theo luật, kể cả trong dịch COVID-19. Thứ hai, cải cách thủ tục: từ 114 thủ tục năm 2015 còn 25 thủ tục, tất cả cung cấp trực tuyến; người lao động tra cứu quá trình đóng trên ứng dụng VssID. Thứ ba, dữ liệu: mã số bảo hiểm xã hội đồng bộ với Cơ sở dữ liệu quốc gia về dân cư, năm 2024 đã xác thực 89,6 triệu người, khoảng 99% người tham gia và thụ hưởng — giảm trùng lặp, sai sót. Thứ tư, luật: Luật 2024 hạ mốc hưu còn 15 năm và bổ sung trợ cấp hằng tháng cho người đủ tuổi nghỉ hưu mà chưa đủ năm đóng (Điều 23). Nguồn: BHXH Việt Nam, dẫn theo Báo Xây dựng 18/01/2024 (114 → 25 thủ tục), Thời báo Tài chính Việt Nam 07/01/2025 (xác thực 89,6 triệu người)."
+  },
+  {
+   "type": "bhhanche",
+   "kicker": "Phần 3 · Vướng ở đâu?",
+   "title": "Ba hạn chế lớn đều đã hiện ra trong số liệu thực trạng",
+   "labels": [
+    "Quy mô",
+    "Hệ quả"
+   ],
+   "basis": [
+    14,
+    17
+   ],
+   "items": [
+    {
+     "name": "Rút một lần",
+     "who": "Mất thời gian tính hưu",
+     "desc": "Thời gian đã rút không còn tính hưởng (k3 Điều 5); quỹ mất nguồn thu dài hạn",
+     "ref": "Số liệu: slide 19–20"
+    },
+    {
+     "name": "Nợ, trốn đóng",
+     "who": "3,4% số phải thu (2025)",
+     "desc": "Người lao động bị trừ lương nhưng không được ghi nhận, dễ mất thai sản, hưu",
+     "ref": "Số liệu: slide 16"
+    },
+    {
+     "name": "Ngoài hệ thống",
+     "who": "Khoảng 30 triệu người",
+     "desc": "Lao động tự do, phi chính thức chưa tham gia, nên về già không có lương hưu",
+     "ref": "Số liệu: slide 16"
+    }
+   ],
+   "covers": [
+    "3.4.2",
+    "3.4.3"
+   ],
+   "notes": "Ba hạn chế này đều đã có số ở phần hai. Một, khoảng 30 triệu người trong độ tuổi lao động chưa tham gia (slide tỷ lệ bao phủ): khi về già họ không có lương hưu và tạo áp lực cho trợ cấp xã hội. Hai, rút bảo hiểm xã hội một lần (slide 0,8 triệu người): theo khoản 3 Điều 5 Luật 2024, thời gian đã tính hưởng một lần không được tính lại; quỹ mất nguồn thu dài hạn. Ba, chậm đóng, trốn đóng: năm 2025 vẫn còn 3,4% số phải thu, nhiều công nhân bị trừ lương hằng tháng nhưng doanh nghiệp không nộp, nên không chốt được sổ, không nhận được thai sản. Tài liệu còn nêu thủ tục ở một số nơi rườm rà — nhóm chưa có số liệu để đo nên không đưa lên slide. Phần gian lận quỹ khám chữa bệnh trong tài liệu thuộc bảo hiểm y tế, ngoài phạm vi bài. Nguồn: tài liệu của nhóm; BHXH Việt Nam (Báo Người Lao Động 24/6/2026; VnExpress 21/02/2023, 12/4/2023 về các vụ nợ đóng)."
+  },
+  {
+   "type": "bhkiennghi",
+   "kicker": "Phần 3 · Cần sửa gì? (quan điểm nhóm)",
+   "title": "Ba kiến nghị sửa Luật BHXH 2024, gắn với từng điều khoản",
+   "labels": [
+    "Quy định",
+    "Hướng sửa"
+   ],
+   "items": [
+    {
+     "name": "Rút một lần",
+     "who": "Điểm đ khoản 1 Điều 70",
+     "desc": "Chỉ cho rút tối đa 50% thời gian đóng, bảo lưu phần còn lại để hưởng hưu"
+    },
+    {
+     "name": "Nợ, trốn đóng",
+     "who": "Điều 40, Điều 41",
+     "desc": "Giải quyết trước ốm đau, thai sản cho người lao động, rồi truy thu doanh nghiệp"
+    },
+    {
+     "name": "Chủ hộ kinh doanh",
+     "who": "Điểm m khoản 1 Điều 2",
+     "desc": "Lộ trình theo doanh thu, hỗ trợ mức đóng năm đầu; đến 2/2026 mới 36.000 người"
+    }
+   ],
+   "covers": [
+    "3.4.3",
+    "KL"
+   ],
+   "notes": "Đây là quan điểm của nhóm, không phải quy định hiện hành. Một, điểm đ khoản 1 Điều 70 vẫn cho người có thời gian đóng trước 01/7/2025 rút toàn bộ sau 12 tháng không đóng. Nhóm đề xuất chỉ cho rút tối đa 50% thời gian đóng, phần còn lại bảo lưu — đây cũng là phương án hai từng được đưa ra khi soạn thảo luật. Hai, Điều 40 và 41 xử lý chậm đóng, trốn đóng bằng truy thu kèm 0,03% mỗi ngày, xử phạt, và Điều 35 cho phép công khai đơn vị nợ; nhưng luật chưa có cơ chế để người lao động vẫn được giải quyết ốm đau, thai sản trong lúc doanh nghiệp nợ. Nhóm đề xuất cơ quan bảo hiểm xã hội giải quyết trước rồi truy thu — cần kiểm thêm nghị định hướng dẫn trước khi khẳng định. Ba, điểm m khoản 1 Điều 2 đưa chủ hộ kinh doanh có đăng ký vào diện nhưng 'theo quy định của Chính phủ'; đến tháng 2/2026 mới khoảng 36.000 chủ hộ tham gia (Bộ Nội vụ, dẫn theo Báo Người Lao Động 24/6/2026), nên cần lộ trình rõ theo doanh thu và hỗ trợ mức đóng giai đoạn đầu.",
+   "id": "kien-nghi"
+  },
+  {
+   "type": "bhhoi",
+   "id": "cau-hoi",
+   "kicker": "Câu hỏi nhanh",
+   "title": "Nam đóng đủ 15 năm, hưu 9/2025: [được gì?]",
+   "options": [
+    {
+     "text": "Chỉ được rút một lần"
+    },
+    {
+     "text": "Lương hưu 40%",
+     "ok": true
+    },
+    {
+     "text": "Lương hưu 45%"
+    },
+    {
+     "text": "Lương hưu 75%"
+    }
+   ],
+   "whyNot": [
+    "Luật 2014 cần 20 năm mới có lương hưu (hết hiệu lực từ 01/7/2025); nay đủ 15 năm đã được hưởng (Điều 64).",
+    null,
+    "45% ở mốc 15 năm là mức của lao động nữ (điểm a khoản 1 Điều 66); nam cần 20 năm.",
+    "75% là mức tối đa: nam phải đóng đủ 35 năm (điểm b khoản 1 Điều 66)."
+   ],
+   "wrong": {
+    "title": "Chưa đúng",
+    "button": "Thử lại"
+   },
+   "right": {
+    "title": "Chính xác!",
+    "text": "Từ 01/7/2025 chỉ cần 15 năm (Điều 64); nam đóng 15 đến dưới 20 năm hưởng 40% (khoản 1 Điều 66).",
+    "button": "Tiếp tục"
+   },
+   "next": "ket-luan",
+   "covers": [
+    "2.4"
+   ],
+   "notes": "Câu hỏi nhanh: anh Minh, lao động nam, đóng đủ 15 năm, đủ tuổi nghỉ hưu tháng 9/2025. Mời một bạn bấm chọn. Lưu ý cho người trình bày: bấm ra ngoài đáp án thì không sang slide. Vì sao các phương án sai — A: đúng theo Luật 2014 cần 20 năm, đã hết hiệu lực; C: 45% ở 15 năm chỉ dành cho lao động nữ; D: mức tối đa, nam phải đóng đủ 35 năm."
+  },
+  {
+   "type": "bhtraloi",
+   "kicker": "Kết luận",
+   "title": "BHXH bắt buộc phủ rộng hơn, chưa giữ chân người lao động",
+   "verdict": "Luật 2024 sửa đúng hướng; hiệu quả còn tuỳ khâu thực thi",
+   "answers": [
+    {
+     "q": "Ai phải đóng BHXH, được hưởng gì?",
+     "a": "Ba nhóm tại Điều 2; được năm chế độ, hưu từ 15 năm đóng"
+    },
+    {
+     "q": "Mười năm qua, bao nhiêu người đóng và quỹ ra sao?",
+     "a": "Tăng hơn 1,5 lần, chỉ giảm 2022; thu vượt chi 2015–2022"
+    },
+    {
+     "q": "Đạt được gì, vướng ở đâu, cần sửa gì?",
+     "a": "Thủ tục gọn; vướng rút một lần, nợ đóng; sửa Điều 70, 40–41"
+    }
+   ],
+   "covers": [
+    "KL"
+   ],
+   "notes": "Trả lời lại ba câu hỏi đầu bài. Một: ba nhóm theo Điều 2 Luật 2024 phải đóng, nay thêm chủ hộ kinh doanh có đăng ký và người làm không trọn thời gian; đóng để được năm chế độ, trong đó lương hưu chỉ cần 15 năm đóng. Hai: số người đóng bắt buộc tăng hơn 1,5 lần, chỉ giảm năm 2022; quỹ thu vượt chi suốt 2015–2022, còn số 2023–2025 trong tài liệu chưa cùng phạm vi nên nhóm không kết luận. Ba: thủ tục gọn hơn và dữ liệu đã khớp với dữ liệu dân cư; vướng ở lao động ngoài hệ thống, rút một lần và nợ đóng — nhóm kiến nghị sửa điểm đ khoản 1 Điều 70, Điều 40–41 và hướng dẫn điểm m khoản 1 Điều 2. Nhận định chung: Luật 2024 sửa đúng hướng, nhưng hiệu quả còn phụ thuộc khâu thực thi. Người trong ảnh là người đang hưởng lương hưu — điểm đến mà bảo hiểm xã hội bắt buộc muốn đưa người lao động tới. Thông tin trong bài là thông tin pháp luật chung, không phải tư vấn.",
+   "id": "ket-luan"
+  },
+  {
+   "type": "bhghinho",
+   "id": "ghi-nho",
+   "lines": [
+    "Đóng hôm nay",
+    "để có lương hưu"
+   ],
+   "chips": [
+    {
+     "n": "1,57×",
+     "text": "người đóng bắt buộc sau mười năm",
+     "go": "so-nguoi"
+    },
+    {
+     "n": "15",
+     "text": "năm đóng là đủ để có lương hưu",
+     "go": "moc-huu"
+    },
+    {
+     "n": "3",
+     "text": "kiến nghị gắn với điều khoản",
+     "go": "kien-nghi"
+    }
+   ],
+   "basis": "Luật BHXH số 41/2024/QH15 (hiện hành từ 01/7/2025); Luật An toàn, vệ sinh lao động số 84/2015/QH13. Thông tin pháp luật chung, không phải tư vấn.",
+   "covers": [
+    "KL"
+   ],
+   "notes": "Ba con số cần nhớ: số người đóng bắt buộc tăng hơn 1,5 lần sau mười năm; 15 năm đóng là đủ để có lương hưu theo luật mới; và ba kiến nghị gắn với điều khoản cụ thể. Bấm vào từng thẻ để quay lại slide tương ứng khi trả lời câu hỏi."
+  },
+  {
+   "type": "bhket",
+   "title": "Cảm ơn thầy cô và các bạn đã lắng nghe",
+   "message": "Đóng hôm nay để có lương hưu ngày mai — đừng để rút một lần cắt đứt con đường đó",
+   "sub": "Mời thầy cô và các bạn đặt câu hỏi",
+   "covers": [],
+   "notes": "Nhóm cảm ơn thầy cô và các bạn đã lắng nghe. Nhóm sẵn sàng trả lời câu hỏi, nhất là về số liệu: chỗ nào bảng của nhóm khác số công bố của BHXH Việt Nam, nhóm đã ghi trong ghi chú từng slide.",
+   "kicker": "Hết phần trình bày",
+   "team": [
+    {
+     "name": "Nhóm thuyết trình BNK405"
+    }
+   ]
+  }
+ ]
+}

@@ -23,7 +23,7 @@ html, body { background: #05070d; }
 /* thanh trên: tên bài, số trang, vạch tiến độ */
 .prog { position: absolute; left: 0; top: 0; height: 10px; background: var(--hl); z-index: 45; }
 .bar { position: absolute; left: 110px; right: 110px; top: 46px; display: flex; justify-content: space-between; align-items: center; font: 600 22px/1 var(--fb); color: var(--mut); z-index: 45; }
-.bar .cnt { font: 400 30px/1 var(--fd); color: var(--fg); letter-spacing: .03em; } .bar .cnt small { font-size: 22px; color: var(--mut); }
+.bar .cnt { font: 400 30px/1 var(--fd); color: var(--fg); letter-spacing: .03em; } .bar .cnt small { font-size: 22px; color: inherit; }   /* "/ 20" phân cấp bằng CỠ (22 < 30), cùng màu với số trang (da bc / qt đặt màu sáng cho .cnt): Anton 22 px màu xám chỉ đo được 4,4 : 1 trên giấy có hoạ tiết */
 
 .k { display: inline-flex; align-items: center; gap: 16px; font: 700 27px/1.2 var(--fb); color: var(--hl); margin-bottom: 16px; }
 .k::before { content: ""; width: 40px; height: 9px; background: currentColor; flex: none; }
@@ -34,6 +34,8 @@ html, body { background: #05070d; }
 .sub { font: 500 32px/1.42 var(--fb); color: var(--mut); max-width: 1400px; }
 .body { flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: center; }
 .note { margin-top: 18px; font: 500 25px/1.35 var(--fb); color: var(--mut); } .note em { color: var(--fg); font-weight: 800; }
+/* takeaway = dải "Ghi nhớ": cùng chỗ (chân slide) ở mọi slide có nó; chữ mực đậm hơn chú thích thường, vạch màu nhấn bên trái (kết luận ≠ chú thích) */
+.note.gn { font: 700 26px/1.3 var(--fb); color: var(--fg); border-left: 8px solid var(--hl); padding: 0 0 0 20px; }   /* cao bằng một dòng chú thích thường: thay note không làm slide tràn */ .note.gn .gn-t { display: inline-block; margin-right: 16px; font: 800 20px/1 var(--fb); letter-spacing: .08em; text-transform: uppercase; color: var(--hl); vertical-align: 3px; }
 .ico { display: inline-flex; } .ico svg { width: 1em; height: 1em; display: block; }
 /* thẻ: tấm giấy viền mực, bóng cứng lệch — cùng ngôn ngữ với áp phích tranh cổ động */
 .card { background: var(--card); border: 5px solid var(--edge); box-shadow: 12px 12px 0 var(--shadow); padding: 26px 30px; }
@@ -70,6 +72,9 @@ html, body { background: #05070d; }
 /* ── section ── */
 .sec .big { position: absolute; right: 70px; bottom: -120px; font: 400 820px/1 var(--fd); color: transparent; -webkit-text-stroke: 7px rgba(244,237,220,.5); z-index: 1; }
 .sec .h { font-size: 128px; line-height: 1.12; max-width: 1300px; }
+/* inside: các mục của phần (người nghe biết phần này gồm gì) */
+.sec-in { list-style: none; margin-top: 34px; display: flex; flex-wrap: wrap; gap: 10px 36px; max-width: 1300px; font: 600 30px/1.3 var(--fb); color: var(--mut); } .sec-in li::before { content: ""; display: inline-block; width: 12px; height: 12px; margin-right: 14px; background: currentColor; vertical-align: 5px; }
+.tm-t { margin-top: 30px; font: 800 22px/1.2 var(--fb); letter-spacing: .08em; text-transform: uppercase; color: var(--mut); } .tm-t + .facts { margin-top: 12px; }
 
 /* ── scene / timeline / steps ── */
 .sc-top { display: grid; grid-template-columns: auto 1fr; gap: 54px; align-items: end; margin-bottom: 8px; }
@@ -82,13 +87,13 @@ html, body { background: #05070d; }
 .tl span.on { font-weight: 800; color: var(--fg); font-size: 23px; }
 .evs { display: grid; grid-template-columns: repeat(var(--n), 1fr); gap: 34px; }
 .ev .d { font: 400 46px/1.15 var(--fd); color: var(--hl); margin-bottom: 8px; }
-.ev .t { font: 600 33px/1.36 var(--fb); }
-.ev .w { font: 700 22px/1.2 var(--fb); color: var(--mut); margin-bottom: 6px; }
+.ev .t { font: 600 33px/1.36 var(--fb); } .ev .t > b { display: block; }   /* tên bước là khối riêng (không dùng <br>) để đoạn mô tả được chia dòng đều */
+.ev .w { font: 700 22px/1.2 var(--fb); color: var(--mut); margin-bottom: 6px; } .ev.hot .w, .ev.hot .d { color: var(--ink); }   /* trên nền vàng của bước đang bàn: chữ xám chỉ 3,5 : 1 */
 
 /* ── flow ── */
 .flow { position: relative; height: 640px; }
 .flow > svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
-.fl-n { position: absolute; top: 210px; width: 370px; margin-left: -185px; text-align: center; padding: 26px 16px 24px; }
+.fl-n, .card.fl-n { position: absolute; top: 210px; width: 370px; margin-left: -185px; text-align: center; padding: 26px 16px 24px; }   /* .card.fl-n: thắng ".card { position: relative }" của vỏ thẻ da (cùng độ ưu tiên, nạp sau) — nếu không, nút rơi về luồng thường, xếp bậc thang, tràn slide */
 .fl-n .pic { width: 104px; height: 104px; margin: -78px auto 12px; background: var(--ink); color: var(--amber); display: flex; align-items: center; justify-content: center; font-size: 50px; border: 5px solid var(--edge); }
 .fl-n .tg { font: 700 24px/1.2 var(--fb); color: var(--hl); } .fl-n b { display: block; font: 400 56px/1.2 var(--fd); } .fl-n > span { font: 500 27px/1.3 var(--fb); color: var(--mut); }
 .fl-l { position: absolute; transform: translate(-50%, -50%); font: 800 26px/1.2 var(--fb); padding: 8px 18px; background: var(--ink); color: var(--paper); white-space: nowrap; }
@@ -97,11 +102,11 @@ html, body { background: #05070d; }
 /* ── duel / compare ── */
 .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; }
 .duo .card { padding: 30px 36px 34px; }
-.duo .r.card { background: var(--ink); color: var(--paper); --mut: #a7b0c6; --hl: var(--amber); }
+.duo .card.dam { background: var(--ink); color: var(--paper); --mut: #a7b0c6; --hl: var(--amber); }
 .duo h3 { font: 400 70px/1.15 var(--fd); } .duo .s2 { font: 600 25px/1.3 var(--fb); color: var(--mut); margin: 4px 0 22px; }
 .duo ol { list-style: none; counter-reset: i; display: grid; gap: 14px; }
 .duo li { counter-increment: i; display: grid; grid-template-columns: 58px 1fr; gap: 18px; align-items: center; font: 600 34px/1.3 var(--fb); min-height: 76px; }
-.duo li::before { content: counter(i); font: 400 34px/54px var(--fd); width: 54px; height: 54px; text-align: center; background: var(--hl); color: var(--ink); }
+.duo li::before { content: counter(i); font: 400 34px/54px var(--fd); width: 54px; height: 54px; text-align: center; background: var(--hl); color: var(--ink); } .duo:not(.cap) li::before { content: ""; width: 20px; height: 20px; margin-left: 17px; border-radius: 50%; } .duo:not(.cap) li { grid-template-columns: 58px 1fr; }
 .cmp .val { font: 400 116px/1.12 var(--fd); margin: 10px 0 14px; }
 .cmp .bad .val { color: var(--bad); } .cmp .good .val { color: var(--good); }
 .cmp .card { border-top-width: 22px; } .cmp .bad.card { border-top-color: var(--red); } .cmp .good.card { border-top-color: var(--green); }
@@ -111,7 +116,7 @@ html, body { background: #05070d; }
 /* ── ledger ── */
 .lg { display: grid; gap: 22px; }
 .lg-r { display: grid; grid-template-columns: 350px 1fr 280px; gap: 30px; align-items: center; padding: 22px 26px; }
-.lg-r.on { background: var(--amber); border: 5px solid var(--ink); box-shadow: 12px 12px 0 var(--ink); }
+.lg-r.on { background: var(--amber); border: 5px solid var(--ink); box-shadow: 12px 12px 0 var(--ink); padding: 17px 21px; }   /* viền 5 px ăn vào lề trong: bớt đúng 5 px để chữ hàng nhấn thẳng với các hàng khác */
 .lg-r b { display: block; font: 400 54px/1.2 var(--fd); } .lg-r > div > span { font: 500 26px/1.3 var(--fb); color: var(--mut); } .lg-r.on > div > span { color: #4a3b12; }
 .lg-b { position: relative; height: 128px; }
 .lg-b::before { content: ""; position: absolute; left: 50%; top: -6px; bottom: -6px; width: 5px; margin-left: -2px; background: var(--ink); }
@@ -126,6 +131,12 @@ html, body { background: #05070d; }
 .ch { display: grid; grid-template-columns: 1fr 400px; gap: 50px; align-items: stretch; }
 .ch.solo { grid-template-columns: 1fr; }
 .ch svg { width: 100%; height: 100%; overflow: visible; display: block; }
+.body > .ch { flex: 0 1 auto; min-height: 0; }   /* biểu đồ co lại khi tiêu đề 2 dòng + hàng nguyên nhân (không phình ra) */
+.chw { display: flex; flex-direction: column; min-width: 0; min-height: 0; } .chw > div:first-child { flex: 1 1 auto; min-height: 0; }
+.why { display: grid; grid-template-columns: repeat(var(--n), 1fr); gap: 18px; margin-top: 22px; }
+.why .wy { display: flex; gap: 14px; align-items: flex-start; padding: 14px 18px; font: 500 23px/1.32 var(--fb); }
+.why .wn { flex: none; width: 36px; height: 36px; background: var(--fg); color: var(--card); font: 800 22px/36px var(--fb); text-align: center; }
+.why b { font-weight: 800; }
 .ch .ins { background: var(--ink); color: var(--paper); padding: 30px 34px; display: flex; flex-direction: column; justify-content: center; box-shadow: 12px 12px 0 var(--red); --hl: var(--amber); }
 .ch .ins .v { font: 400 230px/.95 var(--fd); color: var(--amber); } .ch .ins .u { font: 400 60px/1.2 var(--fd); margin-bottom: 14px; } .ch .ins p { font: 500 26px/1.4 var(--fb); color: #c3cadb; }
 
@@ -163,7 +174,7 @@ html, body { background: #05070d; }
 .bn .u { font: 400 96px/1.1 var(--fd); } .bn .nd { font: 500 30px/1.35 var(--fb); color: var(--mut); max-width: 520px; margin-top: 6px; }
 .cds { display: grid; gap: 22px; } .cd { display: grid; grid-template-columns: 64px 1fr auto; gap: 22px; align-items: center; padding: 22px 26px; background: var(--card); border: 4px solid var(--rule); }
 .cd .ok, .cd .no, .cd .mb { width: 64px; height: 64px; font-size: 38px; }
-.cd b { display: block; font: 800 36px/1.25 var(--fb); } .cd span { font: 500 26px/1.35 var(--fb); color: var(--mut); }
+.cd b { display: block; font: 800 36px/1.25 var(--fb); } .cd > div > span { font: 500 26px/1.35 var(--fb); color: var(--mut); }   /* chỉ dòng mô tả — ".cd span" từng tô xám cả ô ✓ (span.ok) */
 .cd .vd { font: 800 22px/1 var(--fb); padding: 9px 14px; border: 3px solid currentColor; color: var(--mut); white-space: nowrap; }
 .days { display: flex; gap: 8px; margin-top: 30px; align-items: flex-end; } .days i { flex: 1; height: 40px; background: var(--ink-3); font: 700 19px/40px var(--fb); font-style: normal; text-align: center; color: #c3cadb; }
 .days i.on { background: var(--hl); color: var(--ink); height: 58px; line-height: 58px; font-size: 24px; }
@@ -181,7 +192,7 @@ table { border-collapse: collapse; width: 100%; }
 th { font: 800 24px/1.2 var(--fb); text-align: left; padding: 14px 22px; background: var(--ink); color: var(--paper); }
 td { font: 600 32px/1.36 var(--fb); padding: 26px 22px; border-bottom: 5px solid var(--ink); vertical-align: top; }
 td.q { font: 400 54px/1.15 var(--fd); width: 380px; } td .mk { display: inline-flex; margin-right: 14px; vertical-align: -8px; }
-td.e { color: var(--paper-3); font: 400 40px/1 var(--fd); }
+td.e { color: var(--mut); font: 400 40px/1 var(--fd); }   /* "—" = ô không có: nhạt nhưng vẫn đọc được (≥ 3 : 1) */
 tr.on td { background: var(--amber); }
 
 /* ── cards ── */
@@ -194,7 +205,8 @@ tr.on td { background: var(--amber); }
 /* ── photo ── */
 .pho { padding: 0; justify-content: flex-end; }
 .pho .img { position: absolute; inset: 0; z-index: 1; background-size: cover; background-position: center; filter: grayscale(1) contrast(1.1); }
-.pho .tint { position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, rgba(12,18,34,.25) 0, rgba(12,18,34,.94) 78%), linear-gradient(120deg, rgba(226,64,42,.55), transparent 60%); }
+/* lớp phủ ảnh: đậm ở cả đầu (da đặt chữ trên) và chân (chữ dưới) — chữ nhấn màu trên ảnh phải đạt 3 : 1 (scripts/soat_chi_tiet.js), giữa để thoáng cho ảnh */
+.pho .tint { position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, rgba(12,18,34,.78) 0, rgba(12,18,34,.62) 34%, rgba(12,18,34,.5) 52%, rgba(12,18,34,.94) 82%), linear-gradient(120deg, rgba(226,64,42,.45), transparent 60%); }
 .pho .in { padding: 0 110px 96px; z-index: 3; } .pho .h { font-size: 92px; max-width: 1500px; }
 
 /* ── closing ── */
@@ -269,7 +281,9 @@ td s { text-decoration-thickness: 3px; text-decoration-color: var(--red); }
 .ig { display: grid; grid-template-columns: repeat(17, 1fr); gap: 10px; } .ig i { aspect-ratio: 1.5; background: var(--green); border: 4px solid var(--ink); } .ig i.lost { background: none; border: 4px dashed var(--red); }
 .fn { display: grid; grid-template-columns: 1fr auto 380px auto 1fr; gap: 26px; align-items: center; } .fc { display: grid; gap: 18px; }
 .fc .card { padding: 18px 24px; } .fc .card b { font: 400 54px/1.1 var(--fd); display: block; color: var(--hl); } .fc .card span { font: 700 28px/1.3 var(--fb); } .fc .card.hot { background: var(--amber); }
-.fn .arw { font: 400 110px/1 var(--fd); color: var(--red); }
+.fn .arw { font: 400 110px/1 var(--fd); color: var(--red); width: 100px; text-align: center; }
+/* hàng nhãn trên phễu (inLabel · unit · outLabel): cùng lưới 5 cột với hàng dưới để mỗi nhãn đứng đúng trên cột của nó */
+.fn-h { margin-bottom: 14px; align-items: end; } .fn-h > i { width: 100px; } .fn-h > span { font: 800 22px/1.2 var(--fb); letter-spacing: .06em; text-transform: uppercase; color: var(--mut); text-align: center; }
 .pool { background: var(--ink); color: var(--paper); padding: 60px 26px; text-align: center; box-shadow: 16px 16px 0 var(--red); } .pool b { display: block; font: 400 68px/1.15 var(--fd); color: var(--amber); } .pool span { font: 600 26px/1.3 var(--fb); color: #c3cadb; }
 /* ── bố cục ảnh ── */
 .pg { display: grid; grid-template-columns: repeat(var(--n), 1fr); gap: 26px; }
@@ -285,11 +299,11 @@ figure { margin: 0; } .pi { position: relative; height: 480px; background-size: 
 
 /* ── chỉnh sau khi soát tờ mẫu ── */
 .fm.many { flex-wrap: nowrap; gap: 14px; } .fm.many .tm { flex: 1 1 0; min-width: 0; padding: 16px 20px 18px; } .fm.many .tm b { font-size: 88px; } .fm.many > i { font-size: 76px; line-height: 150px; }
-.py.c5 { gap: 8px; } .py.c5 > div { padding: 8px 24px 10px; } .py.c5 b { font-size: 36px; } .py.c5 span { font-size: 22px; }
+.py.c5 { gap: 6px; } .py.c5 > div { padding: 6px 24px 8px; } .py.c5 b { font-size: 36px; } .py.c5 span { font-size: 22px; }
 .vn .card:first-child { padding-right: 56px; } .vn .card:last-child { padding-left: 56px; }
 .mx .card { min-height: 190px; }
 .rl del + ins, .rl ins + del { margin-left: .22em; } .rl del, .rl ins { padding: 0 .1em; }
-.vdb { margin-top: 26px; display: grid; grid-template-columns: 64px 1fr; gap: 22px; align-items: center; background: var(--ink); color: var(--paper); font: 800 34px/1.3 var(--fb); padding: 20px 26px; box-shadow: 12px 12px 0 var(--red); }
+.vdb { margin-top: 26px; display: grid; grid-template-columns: 64px 1fr; gap: 22px; align-items: center; background: var(--ink); color: var(--paper); --hl: var(--amber); font: 800 34px/1.3 var(--fb); padding: 20px 30px; box-shadow: 12px 12px 0 var(--red); }   /* 30 = 26 lề trong + 4 viền của thẻ .cd phía trên: ô dấu và chữ kết luận thẳng cột với các thẻ */
 .vdb.good { box-shadow: 12px 12px 0 var(--green); } .vdb .ok, .vdb .no, .vdb .mb { width: 64px; height: 64px; font-size: 38px; }
 .pr .art.cut { background: var(--amber); } .pr .art.cut img { position: absolute; left: -36px; bottom: 0; width: 500px; height: 500px; object-fit: contain; object-position: center bottom; filter: drop-shadow(12px 10px 0 rgba(12,18,34,.3)); }
 .isc { position: relative; width: 1700px; height: 640px; } .isc > svg { position: absolute; inset: 0; width: 1700px; height: 640px; overflow: visible; }
@@ -309,15 +323,16 @@ figure { margin: 0; } .pi { position: relative; height: 480px; background-size: 
 .mth span { font: 800 24px/1.2 var(--fb); color: var(--mut); } .ml { background: var(--ink); color: var(--paper); font: 400 38px/1.2 var(--fd); padding: 14px 26px; display: flex; align-items: center; }
 .ma { font: 400 64px/1 var(--fd); color: var(--red); text-align: center; align-self: center; } .mr { display: grid; gap: 10px; }
 .mr > div { background: var(--card); border: 4px solid var(--ink); padding: 12px 22px; } .mr b { font: 800 30px/1.3 var(--fb); } .mr small { display: block; font: 500 23px/1.3 var(--fb); color: var(--mut); }
-.mr .on { background: var(--amber); box-shadow: 10px 10px 0 var(--ink); }
+.mr .on { background: var(--amber); box-shadow: 10px 10px 0 var(--ink); } .mr .on small { color: var(--ink); }   /* chữ xám trên ô vàng chỉ 3,5 : 1 */
 /* ── ảnh dẫn chuyện ── */
 .pho.hdl .h { font-size: 128px; line-height: 1.12; text-transform: uppercase; }
 .lz { overflow: hidden; } .lz .ring { position: absolute; aspect-ratio: 1; translate: -50% -50%; border: 8px solid var(--amber); border-radius: 50%; box-shadow: 0 0 0 2400px rgba(12,18,34,.62); }
 .lz .lzl { position: absolute; left: 20px; bottom: 20px; background: var(--amber); color: var(--ink) !important; font-size: 26px; }
-.clg { position: relative; height: 600px; } .clg figure { position: absolute; width: 520px; background: #fffdf6; padding: 14px 14px 12px; border: 4px solid var(--ink); box-shadow: 12px 14px 0 rgba(12,18,34,.3); }
-.clg .pi { height: 300px; border: 0; } .clg figcaption { margin-top: 8px; font: 700 25px/1.3 var(--fb); color: var(--ink); }
-.clg figure:nth-child(1) { left: 0; top: 10px; } .clg figure:nth-child(2) { left: 400px; top: 120px; z-index: 2; } .clg figure:nth-child(3) { left: 90px; top: 200px; z-index: 3; }
-.clg.n2 figure:nth-child(2) { left: 330px; top: 220px; } .clg.n1 figure { width: 760px; top: 60px; } .clg.n1 .pi { height: 440px; }
+/* ảnh in xếp bậc thang: tấm sau lệch phải 226 px + xuống ~100 px → phần trái của mỗi tấm (nơi có chú thích) luôn lộ ra; chú thích tấm bị đè giới hạn 200 px (xuống dòng thay vì bị che) */
+.clg { position: relative; height: 600px; } .clg figure { position: absolute; width: 400px; background: #fffdf6; padding: 14px 14px 12px; border: 4px solid var(--ink); box-shadow: 12px 14px 0 rgba(12,18,34,.3); }
+.clg .pi { height: 300px; border: 0; } .clg figcaption { margin-top: 8px; font: 700 25px/1.3 var(--fb); color: var(--ink); } .clg figure:not(:last-child) figcaption { max-width: 200px; }
+.clg figure:nth-child(1) { left: 0; top: 10px; } .clg figure:nth-child(2) { left: 226px; top: 105px; z-index: 2; } .clg figure:nth-child(3) { left: 452px; top: 200px; z-index: 3; }
+.clg.n2 figure:nth-child(2) { left: 330px; top: 170px; } .clg.n1 figure { width: 760px; top: 60px; } .clg.n1 .pi { height: 440px; }
 /* ── bảng tính từng dòng có lý do ── */
 .sh2 { display: grid; } .sh2 > div { display: grid; grid-template-columns: 170px 1fr 190px 1.1fr; gap: 26px; align-items: center; border-bottom: 5px solid var(--ink); padding: 12px 14px; }
 .sh2 b { font: 400 46px/1.1 var(--fd); } .sh2 strong { font: 400 60px/1 var(--fd); text-align: right; } .sh2 span { font: 600 27px/1.3 var(--fb); color: var(--mut); }
@@ -356,7 +371,7 @@ figure { margin: 0; } .pi { position: relative; height: 480px; background-size: 
 .cpb { position: relative; display: flex; height: 124px; border: 6px solid var(--ink); margin: 112px 0 46px; background: var(--card); }
 .cpb > i { display: flex; align-items: center; justify-content: center; border-right: 4px solid var(--paper); overflow: hidden; } .cpb > i b { font: 400 56px/1 var(--fd); color: #fff; }
 .cpb .rs { background: repeating-linear-gradient(45deg, var(--paper-3) 0 10px, transparent 10px 22px); border-right: 0; }
-.thr { position: absolute; top: -106px; bottom: -16px; border-left: 6px dashed var(--red-d); } .thr em { position: absolute; left: 14px; white-space: nowrap; font: 800 25px/1.2 var(--fb); font-style: normal; color: var(--red-d); }
+.thr { position: absolute; top: -106px; bottom: -16px; border-left: 6px dashed var(--red-d); } .thr em { position: absolute; left: 14px; top: 0; white-space: nowrap; font: 800 25px/1.2 var(--fb); font-style: normal; color: var(--red-d); }
 .cph { display: grid; grid-template-columns: repeat(var(--n), 1fr); gap: 30px; } .cph > div { border-top: 8px solid var(--ink); padding-top: 14px; }
 .cph b { display: block; font: 400 88px/1 var(--fd); } .cph span { display: block; font: 800 32px/1.3 var(--fb); } .cph small { font: 500 24px/1.3 var(--fb); color: var(--mut); }
 .cph .on { border-color: var(--red); } .cph .on b { color: var(--red-d); } .cph .rs b { color: var(--mut); }
@@ -369,3 +384,64 @@ figure { margin: 0; } .pi { position: relative; height: 480px; background-size: 
 /* ── generic ── */
 .gl { list-style: none; display: grid; gap: 18px; } .gl li { font: 600 34px/1.36 var(--fb); padding-left: 44px; position: relative; } .gl li::before { content: ""; position: absolute; left: 0; top: 14px; width: 22px; height: 22px; background: var(--hl); }
 .gl li b { display: block; font: 800 36px/1.25 var(--fb); } .gl li span { font: 500 28px/1.36 var(--fb); color: var(--mut); }
+
+/* ── ảnh tràn viền (bìa poster, cảm ơn poster, mở chương nền mờ, số lớn trên ảnh) + khung ảnh — chuyển từ tầng Office cũ (11/2026) ── */
+.ph-full { position: absolute; inset: 0; z-index: 1; background-size: cover; background-position: center; }
+.ph-full.ph-nhoe { filter: blur(6px) saturate(.8); inset: -20px; } .ph-full.toi { filter: grayscale(.4) contrast(1.05); }
+.ph-shade { position: absolute; inset: 0; z-index: 1; background: linear-gradient(90deg, rgba(12,18,34,.94) 0, rgba(12,18,34,.72) 46%, rgba(12,18,34,.12) 88%), linear-gradient(0deg, rgba(12,18,34,.85), transparent 42%); }
+.ph-shade.ph-nhoe { background: linear-gradient(110deg, var(--sec-tint, rgba(226,64,42,.9)) 0, rgba(12,18,34,.78) 70%); } .ph-shade.toi { background: linear-gradient(90deg, rgba(12,18,34,.95) 0, rgba(12,18,34,.8) 55%, rgba(12,18,34,.55)); }
+.cover.poster .top, .cover.poster .mid, .cover.poster .bot { position: relative; z-index: 3; max-width: 1300px; }
+.facts { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 30px; position: relative; z-index: 3; }
+.facts span { font: 700 27px/1 var(--fb); padding: 16px 26px; border: 2px solid rgba(244,237,220,.55); background: rgba(8,10,16,.58); border-radius: 999px; color: var(--paper); }   /* nền tối mờ: chip nằm trên ảnh bất kỳ — vùng ảnh sáng (lúa, trời) từng làm chữ còn 2,7 : 1 */
+.phk { background-size: cover; background-position: center; box-shadow: 0 0 0 10px rgba(244,237,220,.9), 0 24px 46px rgba(0,0,0,.35); flex: none; }
+.ag-ph { display: grid; grid-template-columns: 1fr 520px; gap: 80px; align-items: center; }
+.end.poster { justify-content: flex-end; padding-bottom: 110px; } .end.poster > .k, .end.poster > .h, .end.poster > .sub, .end.poster > .facts { position: relative; z-index: 3; } .end.poster .h { font-size: 140px; max-width: 1400px; }
+.cl .r.rph { background-size: cover; background-position: center; justify-content: flex-end; }
+.sec-ph .body { position: relative; z-index: 3; }
+
+/* ── tờ giấy ghim (pin): câu chính của slide; giấy màu kem nhạt khác thẻ trắng (= ghi chú của người trình bày, không phải dữ kiện), đinh ghim đỏ ở giữa mép trên ── */
+.s.co-ghim .body { justify-content: flex-start; padding-top: 24px; }   /* slide có giấy ghim: nội dung dồn lên, chừa chỗ trống liền một khối cho tờ giấy */
+.ghim-giay { position: absolute; left: 1370px; top: 96px; width: 440px; z-index: 6; background: #fff3c4; color: #2a2412; padding: 34px 30px 24px; rotate: -2deg; box-shadow: 0 2px 0 rgba(0,0,0,.06), 8px 12px 22px rgba(12,18,34,.24); }
+.ghim-giay::before { content: ""; position: absolute; left: 50%; top: -12px; width: 30px; height: 30px; margin-left: -15px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #ff8a7a, #c62a1a 60%, #8a1408); box-shadow: 2px 4px 5px rgba(0,0,0,.35); }
+.ghim-giay p { font: 700 29px/1.36 var(--fb); } .ghim-giay em { color: #a3261b; } .ghim-giay small { display: block; margin-top: 12px; font: 500 21px/1.3 var(--fb); color: #5b5443; }
+
+/* các trường từng bị bỏ âm thầm (soát trường SCHEMA 11/2026) */
+.hsub { margin: -6px 0 18px; font: 600 27px/1.3 var(--fb); color: var(--mut); }
+.giv { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 30px; margin-bottom: 22px; font: 600 27px/1.3 var(--fb); } .giv > b { font: 800 22px/1.2 var(--fb); letter-spacing: .08em; text-transform: uppercase; color: var(--hl); } .giv strong { font-weight: 800; }
+.lg-t small { display: block; margin-top: 6px; font: 600 22px/1.25 var(--fb); color: var(--mut); }
+.cg .card .in > .tg { font: 800 21px/1.2 var(--fb); letter-spacing: .06em; text-transform: uppercase; color: var(--hl); margin-bottom: 8px; }
+.sh2 > .sh-h { border-bottom: 0; padding-bottom: 0; } .sh2 > .sh-h span { font: 800 22px/1.2 var(--fb); letter-spacing: .06em; text-transform: uppercase; color: var(--mut); } .sh2 > .sh-h span:nth-child(3) { text-align: right; }
+.shr { display: flex; gap: 44px; align-items: center; } .shi { list-style: none; display: grid; gap: 22px; width: 340px; }   /* hệ quả của ngưỡng đứng cạnh lưới 100 ô, không chồng thêm chiều cao */ .shi li { display: grid; grid-template-columns: auto 1fr; gap: 16px; align-items: start; font: 600 26px/1.3 var(--fb); } .shi .ico { font-size: 38px; color: var(--hl); } .shi b { display: block; font-weight: 800; } .shi span { color: var(--mut); }
+
+/* focus (điểm nhấn) ở các type từng bỏ qua nó — dùng lại đúng ngôn ngữ nhấn đã có: dải đầu thẻ màu nhấn, thẻ nền mực, viền trong màu nhấn */
+.cg .card.on .top { background: var(--amber); color: var(--ink); } .cg .card.on .top .ico { color: var(--ink); }   /* vàng = "đang bàn" (cùng mã với .ev.hot, tr.on); màu nhấn của da có thể trùng màu mực của dải thường */
+.hb .card.on { background: var(--ink); color: var(--paper); --fg: var(--paper); --mut: #c3cadb; }
+.mx .card.on { box-shadow: inset 0 0 0 6px var(--hl); }
+th.on { background: var(--hl); } td.on { background: var(--paper-2); font-weight: 800; } th .ico { vertical-align: -4px; }
+.pg figure.on .pi { box-shadow: inset 0 0 0 8px var(--hl); } .pg figure.on figcaption b { color: var(--hl); }
+.cg .cpi { height: 210px; background-size: cover; background-position: center; }   /* ảnh của từng thẻ (items[].photo): dải ảnh đầu thẻ, thẻ nào cũng cùng cao */
+/* photo: kiểu ảnh, phía chữ, điểm đánh số */
+.pho.ps-natural .img { filter: none; } .pho.ps-duotone .img { filter: grayscale(1) sepia(.55) contrast(1.1); }   /* natural chỉ bỏ lọc màu của ảnh; lớp phủ giữ nguyên để chữ trên ảnh đủ tương phản (giảm phủ từng làm chữ còn 2,6 : 1) */
+.pho.ben-phai .in { align-self: flex-end; max-width: 1180px; }
+.co-m { position: absolute; z-index: 2; width: 64px; height: 64px; margin: -32px 0 0 -32px; border-radius: 50%; background: var(--amber); color: var(--ink); border: 4px solid var(--ink); font: 400 36px/56px var(--fd); text-align: center; box-shadow: 0 6px 16px rgba(0,0,0,.45); }
+.co-r { position: absolute; z-index: 2; width: 150px; height: 150px; margin: -75px 0 0 -75px; border-radius: 50%; border: 6px solid var(--amber); box-shadow: 0 0 0 4px rgba(0,0,0,.35); } .co-r span { position: absolute; left: 50%; top: 100%; transform: translate(-50%, 10px); white-space: nowrap; padding: 6px 14px; background: var(--ink); color: var(--paper); font: 800 24px/1.2 var(--fb); }
+.co-l { list-style: none; margin-top: 22px; display: flex; flex-wrap: wrap; gap: 10px 30px; font: 600 26px/1.3 var(--fb); } .co-l b { display: inline-block; width: 40px; height: 40px; margin-right: 12px; border-radius: 50%; background: var(--amber); color: var(--ink); font: 400 24px/40px var(--fd); text-align: center; }
+.qcut { position: absolute; right: 70px; bottom: 0; height: 820px; max-width: 700px; object-fit: contain; object-position: right bottom; z-index: 2; filter: drop-shadow(14px 18px 22px rgba(0,0,0,.45)); } .qcut.bw { filter: grayscale(1) contrast(1.1) drop-shadow(14px 18px 22px rgba(0,0,0,.45)); }
+.q-cut .body, .q-cut > .k { max-width: 1040px; position: relative; z-index: 3; } .q-cut .h { font-size: 76px; }
+/* mép cắt của ảnh trùng mép slide: cắt trái → lật ngang, dán mép phải; cắt phải → dán mép phải; cắt trên → chạm mép trên; cắt dưới / không cắt → chạm đáy */
+.qcut.cut-l, .qcut.cut-r { right: 0; bottom: auto; top: 250px; height: 620px; max-width: 760px; } .qcut.cut-l { object-position: left center; transform: scaleX(-1); } .qcut.cut-r { object-position: right center; }
+.qcut.cut-t { top: 0; bottom: auto; object-position: right top; }
+.q-cut.sec .h, .q-cut.end .h { max-width: 1040px; } .q-cut .sub { max-width: 1040px; } .q-cut.sec .big { opacity: .25; }
+.stat.t-bad .v { color: var(--bad); } .stat.t-good .v { color: var(--good); }   /* tone theo dữ liệu thắng màu nhấn "ô cuối" */
+.gl li.ic { padding-left: 52px; } .gl li.ic::before { display: none; } .gl li.ic > .ico { position: absolute; left: 0; top: 2px; font-size: 38px; color: var(--hl); }
+.sp-ph .co-r { width: 130px; height: 130px; margin: -65px 0 0 -65px; }
+.ig.ig-ic { grid-template-columns: repeat(22, 1fr); } .ig.ig-ic.ic-note { grid-template-columns: repeat(17, 1fr); } .ig.ig-ic i.ic { aspect-ratio: 1; background: none; border: 0; color: var(--green); } .ig.ig-ic.ic-note i.ic { aspect-ratio: 1.5; }   /* hình vuông (người, nhà, ngày) → lưới 22 cột cho cùng chiều cao; tờ tiền giữ 1,5 : 1 */ .ig.ig-ic i.ic .ico, .ig.ig-ic i.ic svg { display: block; width: 100%; height: 100%; } .ig.ig-ic i.ic.lost { border: 0; color: var(--red); }
+/* share style "parcels": 100 thửa liền nhau như tờ bản đồ địa chính (ranh giới mảnh, không khe) — dùng cho tỉ lệ chủ sử dụng đất */
+.wf.parcels { gap: 0; border: 4px solid var(--ink); } .wf.parcels i { background: var(--paper-2); border: 1.5px solid var(--ink-3); } .wf.parcels i.on { background: var(--hl); border-color: var(--ink); }
+/* chú giải lưới 100 ô: ô mẫu ĐÚNG màu của ô thật (ký tự ■ □ mang màu chữ — chú giải nói sai mã màu, lại cần font ký hiệu của máy) */
+.dl .sw { display: inline-block; width: 24px; height: 24px; margin-right: 10px; vertical-align: -4px; background: var(--ink-3); } .dl .sw.on { background: var(--hl); } .wf.parcels + .dl .sw { background: var(--paper-2); border: 1.5px solid var(--ink-3); } .wf.parcels + .dl .sw.on { background: var(--hl); }
+.ls .ico.ls-o { display: block; width: 40px; height: 40px; margin-top: 12px; background: var(--hl); }   /* ô vuông vẽ bằng CSS thay ký tự ■ (cần font ký hiệu của máy) */
+/* mũi tên trang trí là icon SVG (ký tự → ← phải nhờ font ký hiệu của máy chiếu) */
+.ma .ico, .fn .arw .ico { display: block; margin: 0 auto; } .ma .ico svg { width: .9em; height: .9em; } .fn .arw .ico svg { width: .8em; height: .8em; } .lg-h .ico { vertical-align: -3px; }
+.cv-logo { position: absolute; right: 110px; top: 70px; height: 96px; max-width: 280px; object-fit: contain; z-index: 4; }
+.fc .card .fv { display: block; height: 8px; margin-top: 10px; background: var(--hl); } .fc .card.hot .fv { background: var(--ink); }

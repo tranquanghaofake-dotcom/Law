@@ -1,5 +1,4 @@
 {
-  "theme": "teal",
   "meta": {
     "title": "Bảo vệ người thứ ba ngay tình — BA 142/2019/DS-PT",
     "author": "Trần Diệu Diệu",
@@ -24,8 +23,7 @@
       "initials": "DD",
       "art": "courthouse",
       "photo": "images/nha-co-nguoi-o.jpg",
-      "photoAlt": "Nhà ống có người đang ở (quần áo phơi ban công), TP. Hồ Chí Minh — ảnh minh hoạ, không phải ngôi nhà trong vụ án",
-      "photoLayout": "split"
+      "photoAlt": "Nhà ống có người đang ở (quần áo phơi ban công), TP. Hồ Chí Minh — ảnh minh hoạ, không phải ngôi nhà trong vụ án"
     },
     {
       "type": "statement",

@@ -113,7 +113,7 @@ Rút từ các hướng dẫn thiết kế phổ biến (lưới 8pt của Mater
 
 ## 7. Đồ hoạ bằng code đợt 11/2026 — làm đẹp mà không dùng ảnh AI
 
-Mã ở `engine/codeart.js` (hàm thuần trả chuỗi SVG) + bố cục trong `engine/build.js`. Ví dụ đủ các mục: `examples/do_hoa_code.json`.
+Mã ở `engine/codeart.js` (hàm thuần trả chuỗi SVG) + bố cục trong `stage/templates.js`, `stage/bieu_do.js`. Cột "PowerPoint" mô tả tầng Office cũ (đã bỏ 13/11/2026): nay mọi hình là lớp ảnh, chữ vẫn là hộp chữ thật. Ví dụ đủ các mục: `examples/do_hoa_code.json`.
 
 | Hướng | Trong engine | Người xem thấy gì | PowerPoint | Nguồn / giấy phép |
 |---|---|---|---|---|
@@ -141,7 +141,8 @@ Căn cứ thêm: Borkin et al. (2013), "What Makes a Visualization Memorable?", 
 | Lịch thời hạn | type `deadline` | Tự vẽ; KHÔNG tự tính hạn (Điều 147–148 BLDS 2015 có ngoại lệ) |
 | Kiểm mù màu | gợi ý lúc build, `engine/cvd.js` | Machado, Oliveira & Fernandes (2009), IEEE TVCG 15(6) — ma trận mức nặng 1.0; ΔE CIE76 < 15 = khó phân biệt |
 
-### Bộ dựng hình (11/2026): `engine/shapes.js` — học CÁCH LÀM, không chép kết quả
+### Bộ dựng hình của tầng Office cũ (11/2026, đã bỏ 13/11/2026 cùng tầng Office) — giữ làm tư liệu cách làm
+Khung ảnh nay cắt bằng CSS (`stage/templates.js` `KHUNG`).
 Học từ bài hướng dẫn "Vẻ đẹp phương Đông" (TikTok, Powerpoint – Minh Phạm). Năm thao tác trong bài → công cụ của engine:
 | Thao tác trong PowerPoint | Công cụ | Ghi chú |
 |---|---|---|
@@ -153,7 +154,7 @@ Học từ bài hướng dẫn "Vẻ đẹp phương Đông" (TikTok, Powerpoint
 Khung chỉ dùng ở bìa / `agenda` / `section` / `end` có ảnh (bố cục riêng `coverFrame` / `agendaFrame` / `framedSection` / `framedEnd`; viền lấy cùng màu nhấn với chữ của slide: khung đứng trọn bên phải, chữ trên nền bên trái). Đã thử đặt khung vào `split` / `photostats` — thẻ chữ của hai bố cục đó đè lên khung, trông như lỗi → không áp.
 Thêm khung mới: viết một công thức trong `SH.FRAMES` ghép từ hình cơ bản + phép gộp (xem `ogee`), thêm tên vào enum `frame` của `engine/validate.js`. Test: `tests/khung_anh.test.js` (diện tích phép gộp, khung là một mảnh liền, XML có `blipFill` + ảnh nhúng đủ).
 
-### Đợt 5 (11/2026): phong cách mở – chương – kết (`meta.style`, `engine/styles.js`)
+### Đợt 5 (11/2026): phong cách mở – chương – kết của tầng Office cũ (`meta.style`, đã bỏ — nay là hình lớn của da ở bìa / chương / kết)
 | Phong cách | Chất liệu | Chương được biểu diễn bằng | Ghi chú kỹ thuật |
 |---|---|---|---|
 | `dossier` | Bàn tối có vân, bìa giấy kraft có vân hạt, tờ giấy lộ ra, dây buộc, dấu mực đỏ loang (feTurbulence + feDisplacementMap) | Tab hồ sơ; chương hiện tại thuộc bìa phía trước | Trên giấy kraft chỉ dùng màu mực đậm — đỏ dấu chỉ đạt ~2.3:1 |

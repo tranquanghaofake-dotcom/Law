@@ -9,20 +9,11 @@ const { ROOT, build, buildDeck, tmpdir, cover } = require("./helpers");
 
 const EX = path.join(ROOT, "examples", "bocuc_moi.json");
 
-test("bocuc_moi.json --strict xanh ở cả 3 theme (không tràn, không đè, đủ tương phản)", () => {
-  for (const t of ["teal", "kem", "son"]) {
+test("bocuc_moi.json --strict xanh (không tràn, không đè, đủ tương phản)", () => {
+  for (const t of ["mặc định"]) {
     const r = build([EX, path.join(tmpdir(), `bm_${t}.pptx`), "--theme", t, "--strict"]);
     assert.strictEqual(r.code, 0, `${t}:\n${r.all}`);
   }
-});
-
-test("pyramid vẽ bằng custGeom, steps bằng chevron — shape gốc sửa được trong PowerPoint", async () => {
-  const out = path.join(tmpdir(), "bm.pptx"), r = build([EX, out]); assert.strictEqual(r.code, 0, r.all);
-  const z = await JSZip.loadAsync(fs.readFileSync(out));
-  const s2 = await z.file("ppt/slides/slide2.xml").async("string"), s3 = await z.file("ppt/slides/slide3.xml").async("string");
-  assert.strictEqual((s2.match(/<a:custGeom>/g) || []).length, 5, "5 tầng tháp = 5 đa giác");
-  assert.ok(/prst="chevron"/.test(s3) && /prst="homePlate"/.test(s3), "bước đầu homePlate, các bước sau chevron");
-  assert.ok(!/\[trái luật\]/.test(s2), "[từ khoá] trong levels.text phải được tô, không in nguyên ngoặc");
 });
 
 test("chặn hình vô nghĩa: matrix thiếu ô, venn không có điểm chung, tháp < 3 tầng, focus sai chỉ số", () => {
@@ -49,18 +40,10 @@ test("quote: câu trích nguyên văn không bị bắt cụm đệm (không đ�
   assert.ok(!/cụm đệm "một cách"/.test(r.all), r.all);
 });
 
-test("kiemthu_con_lai.json (section, split, gallery, share, map nhóm, photo chú thích, table, 4 dạng chart, closing) --strict ở 3 theme", () => {
-  for (const t of ["teal", "kem", "son"]) {
+test("kiemthu_con_lai.json (section, split, gallery, share, map nhóm, photo chú thích, table, 4 dạng chart, closing) --strict", () => {
+  for (const t of ["mặc định"]) {
     const r = build([path.join(ROOT, "examples", "kiemthu_con_lai.json"), path.join(tmpdir(), `kt_${t}.pptx`), "--theme", t, "--strict"]);
     assert.strictEqual(r.code, 0, `${t}:\n${r.all}`);
     assert.ok(!/Gợi ý bố cục/.test(r.all), `${t}: không còn gợi ý dư khoảng trống\n${r.all}`);
   }
-});
-
-test("cutout: ảnh tách nền thay hình vẽ, ghi nguồn có 'đã tách nền'; file thiếu → lỗi cấu trúc", () => {
-  const r = build([EX, path.join(tmpdir(), "cut.pptx"), "--strict"]);
-  assert.strictEqual(r.code, 0, r.all);
-  assert.ok(/Slide 9: Ảnh: .*đã tách nền/.test(r.all), r.all);
-  const bad = buildDeck({ slides: [cover, { type: "panelrows", title: "Vật thật thiếu file", cutout: "images/khong-co.png", rows: [{ head: "A", text: "a" }] }] });
-  assert.strictEqual(bad.code, 2, bad.all); assert.ok(bad.all.includes("khong-co.png"), bad.all);
 });

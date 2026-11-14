@@ -661,13 +661,5 @@
     "bar"
    ]
   }
- },
- "themes": {
-  "teal": "Luật, tư vấn, học thuật hiện đại",
-  "kem": "Trang trọng, hội thảo, bảo vệ",
-  "son": "Thuyết trình nhanh, cuộc thi, startup",
-  "toa": "Bình luận bản án, phiên toà giả định, văn bản nhà nước",
-  "xanh": "Báo cáo số liệu, tài chính – bảo hiểm, pháp chế doanh nghiệp",
-  "muc": "Khoá luận, NCKH, bài giảng lý thuyết (chữ có chân toàn bài)"
  }
 }

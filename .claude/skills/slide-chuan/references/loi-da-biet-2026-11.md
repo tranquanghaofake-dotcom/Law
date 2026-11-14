@@ -1,5 +1,8 @@
 # Lỗi và ngách cải tiến tìm ra khi dựng bài hình sự (12/11/2026)
 
+> **Cập nhật 13/11/2026 — một tầng hình ảnh + da theo môn.** Tầng lưới Office (`engine/build.js`) đã bỏ khỏi skill. Các dòng nhắc tới nó (L3, L6, L10, L11, N2) là lịch sử: L10 nay xử lý bằng da theo môn (`hinh/da.js` — mọi slide mang chất liệu của môn); L6 hết đối tượng vì công cụ kiểm tràn cũ của tầng Office đã bỏ (kiểm tràn bằng `dung.js --soat`).
+
+
 Nguồn: dựng bộ 15 slide "Mấy tuổi thì chịu trách nhiệm hình sự?" (Điều 9, 12 BLHS 2015) bằng tầng hình ảnh, rồi bị người dùng chê "che chữ đi không đoán được slide nói về gì". Mỗi dòng dưới đây có bằng chứng đo được; **Đã sửa** = có code + test (`tests/loi_da_biet.test.js`), **Cảnh báo** = engine nay báo thay vì im lặng, **Còn** = chưa sửa, **Đề xuất** = chưa làm.
 
 ## A. Lỗi kỹ thuật
@@ -11,7 +14,7 @@ Nguồn: dựng bộ 15 slide "Mấy tuổi thì chịu trách nhiệm hình s�
 | L3 | Engine báo `kiểu "lawquote" không tồn tại` — người dùng tưởng gõ sai, thật ra type chỉ có ở tầng hình ảnh | Lỗi exit 2 khi dựng bằng `engine/build.js` | **Đã sửa** | Thông báo nay nói rõ "chỉ có ở tầng hình ảnh" và gợi ý type gần nghĩa (`lawquote → quote`…) |
 | L4 | Tầng hình ảnh **bỏ qua im lặng** `art` (chỉ `panelrows`, `lawquote` đọc) và `meta.kit` | `art: justice` ở `statement`, `art: book` ở `agenda` không vẽ gì; `grep` `stage/templates.js` chỉ một chỗ đọc `art` | **Cảnh báo** | `hinh/kiem.js` in `ℹ trường "art" bị bỏ qua…` và `ℹ meta.kit … không được tầng hình ảnh đọc` |
 | L5 | `lawquote`: cụm nhấn `[ ]` bị xuống dòng thì nét bút vàng chỉ phủ dòng đầu, lệch | Cụm "một trong các điều" nằm ở hai dòng | **Cảnh báo** | `hinh/dung.js` (`kiemTran`) báo sau khi dựng. Cách tránh: cụm ngắn, đặt cuối câu |
-| L6 | `scripts/check_overflow.py` báo `Font dự phòng … Inter` và thoát 1 với mọi PPTX tầng hình ảnh | LibreOffice không đọc font nhúng (Anton, Be Vietnam) | **Đã sửa** | Phát hiện `ppt/fonts/`, in lý do, thoát 0; ép chạy: `SLIDE_CHUAN_FORCE_OVERFLOW=1`. Kiểm tràn của tầng này là `hinh/dung.js --soat` |
+| L6 | công cụ kiểm tràn của tầng Office cũ (`check_overflow.py`, đã bỏ) báo `Font dự phòng … Inter` và thoát 1 với mọi PPTX tầng hình ảnh | LibreOffice không đọc font nhúng (Anton, Be Vietnam) | **Đã sửa** | Phát hiện `ppt/fonts/`, in lý do, thoát 0; ép chạy: `SLIDE_CHUAN_FORCE_OVERFLOW=1`. Kiểm tràn của tầng này là `hinh/dung.js --soat` |
 | L7 | `hinh/dung.js` không nhắc Bước 0 (`prep.json`) | Dựng 15 slide không một dòng nhắc | **Cảnh báo** | `ℹ Bước 0: chưa có / chưa được duyệt prep.json`; tắt bằng `SLIDE_CHUAN_NO_PREP=1` |
 | L8 | Deck 15 slide **không có ảnh / icon / sticker nào** vẫn "xanh" | `deck.json`: 0 `photo`, 0 `emoji`, 0 `icon`; ảnh "nhìn mờ" chỉ còn ô, thanh, số lớn | **Cảnh báo** | `⚠` khi 0 hình (deck ≥ 6 slide), `ℹ` khi < 1/3 slide có hình; kiểm bằng `scripts/nhin_mo.py` |
 | L9 | `quiz` đáp án (`reveal` + `whyNot`) dễ tràn: tiêu đề 2 dòng + `stem` 2 dòng + ô đáp án có dòng `whyNot` | Tràn 22 px → hết sau khi rút `whyNot` còn ≤ ~30 ký tự một dòng | **Còn** | Tầng hình ảnh chỉ báo sau khi dựng; engine báo `> 110 tiếng` nhưng không chạy ở tầng này. Viết `whyNot` ngắn, `stem` ≤ 2 dòng |
@@ -19,9 +22,9 @@ Nguồn: dựng bộ 15 slide "Mấy tuổi thì chịu trách nhiệm hình s�
 | L11 | Mô tả "tầng lưới Office mất Morph" là **sai**; hai tầng khác độ phủ | Cùng deck 15 slide: tầng hình ảnh 14/15 slide Morph; tầng lưới Office (`thread: true`) 6/15 — chỉ giữa slide cùng chương | **Đã sửa tài liệu** | `SKILL.md` mục "Giới hạn đã biết" |
 | L12 | `timeline` 3 mốc dư ≈ 2,2 in trống theo chiều dọc | Gợi ý bố cục của engine | **Còn** | Gộp với slide kề hoặc thêm `note`; không nhồi chữ |
 
-## B. Ngách cải tiến (đề xuất, chưa làm)
+## B. Ngách cải tiến (đề xuất; mục 4 đã làm — `--soat` tự dựng ảnh nhìn mờ, xem `hinh/dung.js`)
 
-1. **Nối kho luật**: số điều, số năm phải gõ tay rồi mới đối chiếu bằng `kiem_can_cu.py`. Thêm trường `cite: { law, dieu, khoan }` để build tự lấy nguyên văn / so khớp và in "khớp kho" hay "lệch".
+1. **Nối kho luật** (làm 13/11/2026 tối, theo cách khác: không thêm trường `cite`, mà đối chiếu mọi viện dẫn trong chữ slide + ghi chú bằng `kiem_can_cu.py` lúc kiểm nội dung — xem `kiemCanCu`): số điều, số năm phải gõ tay rồi mới đối chiếu bằng `kiem_can_cu.py`. Thêm trường `cite: { law, dieu, khoan }` để build tự lấy nguyên văn / so khớp và in "khớp kho" hay "lệch".
 2. **Chế độ nháp nhanh** (`--nhap`) cho "slide mẫu" 1–3 slide: bỏ Bước 0 nhưng gắn nhãn "NHÁP" trên slide cuối.
 3. **`kiemTran` chạy cả lint nội dung** (`> 110 tiếng`, cụm đệm) của engine, để tầng hình ảnh không chỉ biết tràn sau khi dựng.
 4. **Phép thử "nhìn mờ" tự động** trong `dung.js --soat` (hiện phải chạy `nhin_mo.py` riêng — chính vì thế lỗi L8 lọt qua).
@@ -109,10 +112,65 @@ Hai phiên độc lập, cùng đề tài hình sự, **cùng ba kết luận** 
 | P6 | `find_images.py` in tiến độ, giới hạn thời gian mỗi nguồn (N10) | Treo 10+ phút | ~30 phút |
 | P7 | Thêm 6 hình dán (N11); quy tắc cờ trừu tượng (N13), bản đồ có Hoàng Sa, Trường Sa (N12); nguồn văn bản hợp nhất chinhphu.vn (N14); `quizgo` có `whyNot` (N15) | Lỗi nhỏ lặp lại | ~1 giờ tổng |
 
-**Trạng thái lộ trình (13/11/2026, nhánh `claude/lucid-goldberg-yzikct` của repo Law):** P1 xong · P2 xong · P4 xong (đổi cách: đo cấu trúc thay cho chấm điểm ảnh) · P5 xong · P6 xong · P7 xong phần tài liệu, hình dán, quy tắc cờ / bản đồ (còn `quizgo` có `whyNot`) · **P3 mới có spec**: `docs/specs/2026-11-13-slide-chuan-da-theo-mon-design.md`, chờ duyệt · N16 (collage che chú thích) còn.
+**Trạng thái lộ trình (13/11/2026, nhánh `claude/lucid-goldberg-yzikct` của repo Law):** P1 xong · P2 xong · P4 xong (đổi cách: đo cấu trúc thay cho chấm điểm ảnh) · P5 xong · P6 xong · P7 xong phần tài liệu, hình dán, quy tắc cờ / bản đồ (`quizgo` có `whyNot` xong 13/11/2026 tối: mỗi phương án sai một slide phản hồi riêng, validate cảnh báo lý do đặt nhầm ở phương án đúng / quá 130 ký tự) · **P3 mới có spec**: `docs/specs/2026-11-13-slide-chuan-da-theo-mon-design.md`, chờ duyệt · N16 (collage che chú thích) còn.
 
 ### E4. Số liệu đo phiên này
 
 - Bản 1: 21 slide khai báo → 23 slide PowerPoint, 8 cảnh, 3 ảnh thật; `--soat` cuối 0 cảnh báo; nhìn mờ: không đoán được đề tài; Morph có chủ ý ngoài thanh đầu: 1 cặp.
 - Mẫu bộ `qt*`: 3 slide, `--soat` 0 cảnh báo, lệch PPTX so với HTML 0,00 %; nhìn mờ: thấy văn kiện + dấu xi, hàng cờ, bàn họp và bảng tên; Morph 2/2 cặp (`tieu`).
 - Môi trường: Chromium `/opt/pw-browsers/chromium-1243`; LibreOffice có sẵn; không có PowerPoint, nên font nhúng, Morph và hiệu ứng mới chỉ kiểm được cấu trúc.
+
+## F. Phiên thứ tư (13/11/2026, bộ BHXH "mỗi chi tiết một lý do" + 6 giờ cải thiện tự động)
+
+### F1. Lỗi của skill (có bằng chứng, đã sửa)
+| # | Lỗi | Bằng chứng | Sửa |
+|---|---|---|---|
+| F1.1 | Sơ đồ `flow` tràn 485 px ở da có vỏ thẻ: `:where(.da-…) .card { position: relative }` cùng độ ưu tiên với `.fl-n { position: absolute }`, nạp sau → nút rơi về luồng thường, xếp bậc thang | Bản án 142, slide 3: chú thích đè thẻ, nút thứ tư ra ngoài slide; có từ trước phiên | `.card.fl-n` (stage.css); test dựng flow với cả 13 da |
+| F1.2 | Tiêu đề Anton cỡ lớn thụt 5–7 px so với dòng chữ nhỏ cùng lề (khoảng trống trước nét của chữ đầu) | `soat_chi_tiet.js`: 87 chỗ lệch ở deck BHXH | căn lề quang học trong `hinh.js` (đo nét chữ đầu trên canvas), gọi lại sau `hinhTuGan` cho slide từ bộ mẫu |
+| F1.3 | Đồ vật tiền cảnh của da chọn theo số thứ tự slide (`i % n`) — slide nói về quỹ mang con dấu | đọc mã `da.js` | chọn theo nội dung (kicker + tiêu đề) |
+| F1.4 | Cùng một con số hai cách ghi trên một slide không ai báo | deck mẫu: "3 triệu đồng" cạnh "3.000.000 đ"; "10 triệu" cạnh "10.000.000" | `validate.js` cảnh báo; sửa hai deck mẫu |
+| F1.5 | Chữ nhấn màu trên ảnh (photo / headline) 1,8–2,3 : 1 | `soat_chi_tiet.js` | lớp phủ `.pho .tint` đậm ở đầu ảnh |
+
+### F2. Kinh nghiệm (lỗi của người làm)
+- **Chèn chú thích `//` vào giữa một dòng mã dài** làm nuốt phần còn lại của dòng (hai lần trong phiên): chú thích giữa dòng dùng `/* */`.
+- **Vòng `while ((n = w.nextNode()) && !ch)`** gọi `nextNode()` thêm một lần sau khi đã tìm thấy → đo font của nút chữ kế tiếp: đặt điều kiện dừng trước (`while (!ch && (n = …))`).
+- **Ảnh chụp deck.html để soát bằng mắt** còn trạng thái đầu của hiệu ứng vào (khối bị dịch, phóng) → dễ tưởng vỡ bố cục: soát trên ảnh dựng thật (`--soat`, `<tên>_lop/h-*.jpg`).
+- **Công cụ đo cũng phải được kiểm**: `soat_chi_tiet.js` từng báo nhầm vì ẩn chữ bằng `visibility` (mất cả nền của viên nhãn), vì tính bóng chữ / viền chữ là nét, vì đo hộp chữ con lồng trong hộp chữ cha. Mỗi lần báo lạ: chụp hai trạng thái, in điểm ảnh, rồi mới sửa — không sửa template theo một phép đo chưa kiểm.
+
+### F3. Đợt quét `--soat` toàn bộ deck mẫu (13/11/2026, tối) — lỗi của skill, đã sửa
+| # | Lỗi | Bằng chứng | Sửa |
+|---|---|---|---|
+| F3.1 | **Trường "nhận mà không vẽ"**: validate.js kiểm hợp lệ rồi tầng hình ảnh bỏ âm thầm — `takeaway` ở 28/32 type, `pin`, `section.part / inside`, `end.teamTitle`, `chart.unit` (9/10 kind), `calc.given`, `changelog.colTopic`, `funnel.inLabel / outLabel`, `quote.role`, `mode` ngoài statement… (~50 trường) | điền mã riêng vào từng trường chuỗi của SCHEMA, dựng, tìm mã trên slide | vẽ đủ (takeaway = dải "Ghi nhớ" ở chân slide; pin = tờ giấy ghim tự tìm chỗ); `mode` / `transition` / `build` / `motion` không vẽ được thì báo ℹ; `tests/truong_hien.test.js` chặn tái phạm, ngoại lệ phải ghi lý do |
+| F3.2 | Dấu ✓ ✕ là ký tự chữ — Anton / Be Vietnam Pro không có, bộ chọn `.cd span` còn tô xám cả ô (1,07 : 1) | soát chi tiết ◐ | icon SVG; bộ chọn chỉ trúng dòng mô tả |
+| F3.3 | Đường ngưỡng nét đứt (captable) cắt qua nhãn ngưỡng và số % trong thanh | mắt + ✂ mới | ngưỡng xếp tăng dần, đường bắt đầu ở hàng nhãn của nó; số né đường |
+| F3.4 | Ảnh in chồng (collage): tấm sau che chú thích tấm trước | ⚠ "chữ bị lớp ảnh đè" | xếp bậc thang, chú thích tấm bị đè ≤ 200 px |
+| F3.5 | Pyramid 5 tầng + tiêu đề 2 dòng tràn 10 px; chữ nhấn vàng trên tầng đỏ 3,27 : 1 | ⚠ tràn, ◐ | thu khoảng cách; vàng pha sáng tới ≥ 4,5 theo từng da |
+| F3.6 | Chip dữ kiện trên ảnh bìa / kết nền trong suốt — gặp vùng ảnh sáng còn 2,7 : 1 | ◐ | nền tối mờ |
+| F3.7 | Tiêu đề ngắt giữa từ ghép ("rời hệ / thống") | đọc chỗ xuống dòng của chữ ≥ 40 px | `hinh.js` giữ liền ~90 từ ghép thường gặp bằng dấu cách không ngắt; `\n` trong chuỗi = xuống dòng chủ ý |
+
+| F3.8 | **Hai thuộc tính `style` trên một thẻ** (style="left…" rồi `${inn()}` cũng ghi style) ở 22 chỗ → trình duyệt bỏ cái sau, mất `--i` → tầng kim tự tháp, nút flow, thẻ checklist, ảnh collage… hiện cùng lúc trong PPTX | điểm đánh số của `photo` dồn một chỗ; dò mẫu bằng regex | `render()` gộp mọi style của một thẻ; test trên 9 deck mẫu |
+| F3.9 | `focus` bị bỏ ở cards / steps / hub / matrix / cheatsheet / photostrip; `duel` luôn tô phải, luôn đánh số | bộ theo dõi trường đọc (Proxy) | nhấn bằng đúng mã đã có (vàng = đang bàn, nền mực, viền trong); duel nhận focus, paired |
+| F3.10 | `quote` / `statement` / `section` / `end` + `cutout` không vẽ ảnh; có cutout thì da còn tắt hình lớn → slide trống | bộ theo dõi + mắt | vẽ; đo alpha 4 mép (sharp) để dán mép cắt vào mép slide |
+| F3.11 | Ảnh nào trong PPTX cũng có chữ thay thế "Hình minh hoạ" — `photoAlt` / `alt` không tới bộ dựng | đọc `build.js` (chỉ lấy `data-alt`) | `tu_gan.js` lấy từ `aria-label` / `alt` của ảnh trong khối |
+| F3.12 | `cards.items[].photo`, `isotype.icon`, `photo.callouts / photoMark / side / photoStyle`, `split.photoMark / items[].icon`, `statement.stats[].tone`, `chart span hatch` bị bỏ | bộ theo dõi trường đọc | vẽ đủ |
+| F3.13 | Chữ thân ngắt giữa số hiệu và từ ghép ("điểm / m", "trợ / cấp") | mắt, slide 9 và 22 deck BHXH | `hinh.js` nối bằng dấu cách không ngắt ở mọi cỡ: Điều / khoản / điểm + số hiệu, số + đơn vị, ~90 từ ghép. Hệ quả có thể có (chưa kiểm trên PowerPoint thật): tìm "Điều 2" gõ dấu cách thường có thể không khớp |
+| F3.14 | Ký tự ✓ ✕ → ← ■ □ do mẫu vẽ cần font ký hiệu của máy chiếu; chú giải ■ □ mang màu chữ, không khớp màu ô | ℹ "Ký hiệu … Segoe UI Symbol"; mắt | icon SVG / ô mẫu CSS đúng màu; ký hiệu người viết gõ trong nội dung vẫn là chữ |
+| F3.15 | Soát thẳng hàng so chữ trong viên nhãn (có lề trong) với chữ thường → báo lệch giả 5 px ở mọi deck | soát chi tiết | phần tử có nền / viền: so mép hộp |
+| F3.16 | PPTX kém khả năng tiếp cận: mọi lớp ảnh alt "khoi-N"; không slide nào có tiêu đề (bộ kiểm của PowerPoint báo "thiếu tiêu đề"); nền trang trí bị đọc như hình | đọc XML `descr` / `p:ph` | alt từ ảnh hoặc "Khung của: …"; lớp trang trí gắn `adec:decorative`; hộp chữ tiêu đề thành `<p:ph type="title"/>` + `noAutofit` (LibreOffice dựng lại lệch y như cũ; chưa kiểm trên PowerPoint thật) |
+| F3.17 | Thẻ hạn chế ghi "Số liệu: slide 16" nhưng không ai kiểm số đó có thật ở slide 16, số slide còn đúng không | soát tay | `validate.js`: cảnh báo "slide N" vượt số slide, gợi ý khi con số không có trên slide N; bộ `bh*`: thẻ bấm được nhảy tới slide số liệu |
+| F3.18 | Slide loại cảnh / bộ hình (`book`, `cases`, `chain`, `quizgo`, `bc*`, `qt*`, `bh*`) thoát hẳn lint nội dung vì `validate.js` trả về sớm khi gặp type ngoài SCHEMA: deck mẫu `nghi-viec-hinh` có slide `cases` 130 tiếng và `chain` lấy câu hỏi "Nghỉ ngang thì mất gì?" làm tiêu đề mà không ai báo | đo lại bằng tay | `validate.js`: chạy `clarity()` cho mọi type cảnh trước khi trả về (quá 110 tiếng, cụm đệm, tiêu đề là câu hỏi, ký tự trang trí); miễn hỏi ở bìa / chương / kết / slide hỏi, miễn đếm tiếng ở `book` / `lawquote` (nguyên văn); `toc`, `go`, `emoji` không tính tiếng vì không hiện trên chính slide đó; sửa deck mẫu; test |
+| F3.19 | `quizgo` chỉ có MỘT slide "Chưa đúng" chung cho mọi phương án sai — người học chọn bẫy "luật cũ" không biết mình sai ở đâu | việc tồn P7 | `whyNot` song song `options` → mỗi phương án sai một slide phản hồi riêng (dòng đậm phương án vừa chọn + lý do); validate cảnh báo lý do đặt ở phương án đúng / quá 130 ký tự; áp cả cho `bhhoi` (deck BHXH: ba lý do A / C / D theo Điều 64, 66 Luật BHXH 2024 lên slide, trước chỉ nằm trong ghi chú) |
+| F3.20 | Căn cứ pháp lý trên slide chỉ được đối chiếu bằng tay (bước 6 của skill luật) — `dung.js` không gọi bộ đối chiếu có sẵn của skill `vn-legal-exam-analysis`. Chạy thử: gộp cả deck thành một khối thì mọi "Điều N" bám vào "Luật 2014" (không có trong kho) → 60/79 căn cứ deck BHXH bị xếp "ngoài kho"; "Luật 2024" viết tắt không được nhận ra | đo khi nối | `kiemCanCu`: mỗi slide một mục, mỗi trường chữ một đoạn có luật chính đứng trước (prep.json / `meta.law`), "Luật YYYY" dịch theo số hiệu nguồn CÒN hiệu lực, gộp trùng slide + ghi chú → deck BHXH 55 khớp kho, 0 sai; `banan142` báo đúng 8 chỗ dẫn BLDS 2005 (bản án áp dụng luật cũ — gợi ý, không chặn) |
+| F3.21 | Tiêu đề trợ năng của slide phản hồi trắc nghiệm trùng nhau ("CHƯA ĐÚNG" ở 3 slide — bộ kiểm của PowerPoint báo trùng tiêu đề, trình đọc màn hình không phân biệt), của `bhdo` chỉ là mảnh ("MƯỜI NĂM, BHXH BẮT BUỘC", thiếu "đi bao xa?") | so tiêu đề PPTX (python-pptx) với tiêu đề deck | `data-tieu-de-an` trên section → `build.js` chèn placeholder tiêu đề chứa câu đầy đủ NGOÀI khung slide (y âm), đứng đầu thứ tự đọc; hộp chữ hiện ra giữ là hộp thường. Test dựng PPTX thật kiểm vị trí + nội dung + chỉ một placeholder. Slide hai bước (bước 2 cùng tiêu đề): CẢ HAI bước dùng tiêu đề ẩn ("…" / "… (tiếp)") — chỉ bước 2 thì một bên là placeholder, một bên hộp thường, Morph có thể không ghép cặp tiêu đề |
+| F3.22 | Ghi chú thuyết trình (~22 phút ở deck BHXH) chỉ đọc được trong PowerPoint — nhóm không có bản giấy để tập; tổng giờ đếm thô từ PPTX ra 24:42 vì bước 2 của slide hai bước lặp nguyên ghi chú và 4 slide phản hồi trắc nghiệm là nhánh rẽ | yêu cầu thực tế khi tập thuyết trình | `scripts/ban_ghi_chu.py`: mỗi slide một trang A4 (ảnh 1600 px, tiêu đề, ghi chú, giây nói); ghi chú lặp ở bước 2 in một lần; slide nhánh (build.js ghi tên slide "Nhánh trắc nghiệm: sai A / đúng" từ `data-nhanh`) có nhãn, nhánh sai không cộng vào tổng; test riêng |
+| F3.23 | **Mở bằng PowerPoint thật (người dùng chụp màn hình 14/11/2026)**: chữ Việt thành ô vuông ("□m □au", "Thai s□n"), chữ giãn như máy đánh chữ ("C O V I D - 1 9"), số mảnh — ở mọi đoạn dùng Be Vietnam Pro / Dam / Nang; Anton đúng | ảnh chụp người dùng | pptxgenjs gắn mọi đoạn chữ `lang="en-US"` + font phụ Đông Á / phức hợp mang bảng mã **Trung Quốc** (`charset="-122"` GB2312, `-120` Big5): chữ có dấu chồng bị coi là ký tự "mơ hồ" và vẽ bằng font Trung thay thế (có "í" nhưng không có "ố, đ, ả, ư"). `build.js` (`chuViet`): font phụ = chính font đó, `charset="0"`; `lang="vi-VN"` cho slide, ghi chú, kiểu mặc định; `xml.js`: font nhúng khai `panose` + `pitchFamily="34"` + `charset="0"` để nếu không nạp được, PowerPoint chọn font sans phương Tây có chữ Việt. Test dựng PPTX thật kiểm cả ba. Chưa kiểm lại được bằng PowerPoint thật — cần người dùng mở lại |
+| F3.24 | Người dùng hỏi "chữ có dễ nhìn không": đo trên PPTX, ~một nửa chữ thân chỉ 9–13,5 pt (thẻ mô tả 13,5 pt, căn cứ in hoa 10 pt, bảng 10–13 pt); chiếu trên lớp cần ≥ 14–18 pt | người dùng hỏi + đo cỡ chữ | Nâng ~40 lớp chữ của `so_bhxh.js` (thân 28–32 px, nhãn / căn cứ / nguồn 24 px), nhãn căn cứ dài viết thường, sau "Quy định:" viết thường như văn bản luật; tính lại chiều cao hàng / thẻ theo cỡ mới (`hangH`, `bhdat`, chú thích `bhcot2`), nới cột nhãn. Chữ thân ≥ 14 pt: 31,9% → 96,4%; không chữ < 12 pt trừ số trang / dải đầu / ghi công. Hai lỗi chỉ thấy bằng mắt (chữ lòi khỏi đáy thẻ slide 7, 24) — bộ kiểm tràn / đè không bắt chữ ra khỏi nền thẻ. Test `tests/co_chu.test.js` |
+
+### F4. Kinh nghiệm (lỗi của người làm, phiên này)
+- **Làm tròn xuống thành một con số khác**: số thật 18,91 / 12,07 = 1,57 lần; slide 3 viết đúng "tăng hơn 1,5 lần", nhưng thẻ Ghi nhớ viết "1,5×" và câu trả lời ở slide kết luận viết "Tăng 1,5 lần" — người nghe nhớ một con số sai. Thẻ số to thì ghi đúng chữ số (1,57×); câu chữ làm tròn thì phải có "hơn" / "gần" / "khoảng". Lúc đó không lint nào bắt được — chỉ thấy khi rà bằng mắt từng tờ; nay có gợi ý "làm tròn xuống" (`kiemLamTron` trong `engine/validate.js`, chạy cả trên chữ đã dựng vì 1,57 ở đây do `bhtang` tự tính, không có trong `deck.json`).
+- **Thêm một quy tắc CSS "tốt" có thể đè quy tắc tốt hơn**: `section.s { text-wrap: pretty }` (hinh.css) có độ ưu tiên cao hơn `.s { text-wrap: balance }` (stage.css) → đè mất balance; Chromium `pretty` lại không sửa đoạn 2 dòng → tiêu đề mồ côi trở lại ("…850 / triệu"). Trước khi thêm thuộc tính toàn cục: `grep` thuộc tính đó trong mọi file CSS; thử cả trường hợp 2 dòng.
+- **Script chụp kiểm tra cũng phải giống bản dựng**: ép `display: block` lên slide (để ẩn slide khác) làm mất `flex` → dải Ghi nhớ "trôi" lên giữa slide trong ảnh chụp, dễ sửa nhầm. Ẩn slide khác bằng `:not(.xem) { display: none }`, không đụng slide đang xem.
+- **`Range.getClientRects()` trên cả phần tử trả cả hộp của phần tử con** (ô icon, ô chú giải gạch chéo) — đo nét chữ phải lấy hộp của từng nút chữ.
+- **Hộp dòng chữ trưng bày chồng nhau** (line-height < cỡ chữ): quét nét đầu của dòng 1 trúng chữ "T" của dòng 2 → báo lệch 3–4 px giả (gốc của "tiêu đề x 106" tồn từ phiên trước).
+- **Vẽ thêm trường bị bỏ thì phải dựng lại mọi deck mẫu**: hiện `share.items`, dải Ghi nhớ cao hơn chú thích → hai slide mẫu tràn 9 px và 82 px; chỉ đợt quét lại mới thấy.
+

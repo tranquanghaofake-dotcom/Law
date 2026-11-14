@@ -157,7 +157,7 @@
    "kicker": "Bài tập",
    "title": "Bài 5: trợ cấp ốm tính theo [ngày làm việc]",
    "label": "Bài 5",
-   "prompt": "Bà Hoa ốm thông thường, nghỉ việc từ [10/02 đến 25/02]. Thứ Bảy đầu tiên của tháng là ngày 12/02; nghỉ hằng tuần thứ Bảy, Chủ nhật. Bà làm việc điều kiện bình thường, tham gia BHXH từ 01/01/2014, từ đầu năm chưa nghỉ ốm. Lương đóng BHXH tháng trước khi nghỉ là [3 triệu đồng].",
+   "prompt": "Bà Hoa ốm thông thường, nghỉ việc từ [10/02 đến 25/02]. Thứ Bảy đầu tiên của tháng là ngày 12/02; nghỉ hằng tuần thứ Bảy, Chủ nhật. Bà làm việc điều kiện bình thường, tham gia BHXH từ 01/01/2014, từ đầu năm chưa nghỉ ốm. Lương đóng BHXH tháng trước khi nghỉ là [3.000.000 đồng].",
    "given": [
     {
      "label": "Thời gian nghỉ",

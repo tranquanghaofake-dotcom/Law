@@ -27,10 +27,23 @@ FRAMES = {
                "chart/table/map — số liệu có nguồn (insight là câu kết luận)", "closing — lessons + rec", "end"],
 }
 STATUS = ["hiện hành", "hết hiệu lực", "dự thảo", "học thuật", "chưa kiểm"]
-# bộ hình riêng theo môn của tầng hình ảnh (references/canh.md mục 8–9). Môn khác: nền, khung chung — lỗi L10 đã bị chê 3 lần
-BO_HINH = {"bc": "hình sự — bảng bằng chứng (hinh/bang_chung.js, kiểu bc*)",
-           "qt": "Công pháp quốc tế — bàn hội nghị (hinh/hoi_nghi.js, kiểu qt*)"}
-NEN_CHUNG = "deck sẽ chỉ có nền, khung chung của skill — che chữ đi không đoán được đề tài (lỗi L10, đã bị chê ở 3 bài)"
+# DA THEO MÔN (hinh/da.js): chất liệu của môn phủ mọi slide. Danh sách đọc thẳng từ hinh/da.js để không lệch; không chạy được node thì dùng bản chép.
+NEN_CHUNG = "deck sẽ chỉ có nền, khung chung của skill — che chữ đi không đoán được đề tài (lỗi L10, đã bị chê ở 4 bài)"
+def _doc_da():
+    import subprocess
+    try:
+        out = subprocess.run(["node", "-e", "const D=require('./hinh/da');console.log(JSON.stringify(Object.fromEntries(Object.entries(D.DA).map(([k,v])=>[k,{mon:v.mon,fits:v.fits}]))))"],
+                             cwd=os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."), capture_output=True, text=True, timeout=20).stdout
+        return json.loads(out)
+    except Exception:
+        return {k: {"mon": k, "fits": []} for k in ["so-bhxh", "bang-cong", "cang-bien", "ban-ve", "hoa-don", "sao-ke", "co-cau", "bien-ban", "ho-so", "giay", "kinh", "bc", "qt"]}
+DA = _doc_da()
+AUTO_DA = {"case": "ho-so", "lecture": "giay", "report": "kinh"}
+def goi_y_da(topic, kind):
+    t = (topic or "").lower()
+    for k, v in DA.items():
+        if k not in ("ho-so", "giay", "kinh") and any(f in t for f in v.get("fits", [])): return k
+    return AUTO_DA.get(kind, "ho-so")
 
 
 def path_of(d): return os.path.join(d, "prep.json")
@@ -61,11 +74,11 @@ def init(d, kind, minutes, topic):
         "unsure": [],
         # phạm vi bài: "in" = đúng đối tượng phân tích (vd. "BHXH bắt buộc"), "out" = cụm từ KHÔNG được xuất hiện (vd. "BHYT") → chép sang deck.json meta.scopeOut
         "scope": {"in": "", "out": []},
-        # bước 0 — thế giới hình ảnh (references/the-gioi-hinh-anh.md): 10 vật thấy tận mắt → 1 vật chủ đạo + 2 vật phụ → world (meta.kit)
-        "world": {"objects": [], "main": "", "minor": [], "kit": ""},
-        # tầng dựng: "hinh" (hinh/dung.js, mặc định) | "luoi" (engine/build.js). Tầng hình ảnh cần bộ hình theo môn (boHinh: bc | qt);
-        # môn chưa có bộ → hỏi người dùng TRƯỚC khi duyệt: làm bộ mới, hay chấp nhận nền chung (chapNhanNenChung: true — chỉ người dùng quyết)
-        "tang": "hinh", "boHinh": "", "chapNhanNenChung": False,
+        # bước 0 — thế giới hình ảnh (references/the-gioi-hinh-anh.md): 10 vật thấy tận mắt → 1 vật chủ đạo + 2 vật phụ → chọn da (trường "da" ở dưới), ảnh, hình dán
+        "world": {"objects": [], "main": "", "minor": []},
+        # da theo môn (hinh/da.js) — chất liệu phủ mọi slide; tự gợi ý theo đề tài, người dùng duyệt cùng gói chuẩn bị.
+        # "none" = nền chung: chỉ khi người dùng đồng ý (chapNhanNenChung: true — chỉ người dùng quyết)
+        "da": goi_y_da(topic, kind), "chapNhanNenChung": False,
         # số liệu (bài report): mỗi con số dùng trên slide một dòng — nguồn + ngày đối chiếu; số mâu thuẫn giữa các bảng ghi ở note
         "data": [{"figure": "", "value": "", "source": "", "checked": "", "note": ""}],
         # nhận xét của giảng viên / người duyệt cho bản trước: mỗi ý ghi cách đã xử lý (fix) — build không biết, người làm phải tự đối chiếu
@@ -90,15 +103,12 @@ def problems(pr):
     for i, s in enumerate(src):
         if s.get("legal") and not any(str(s.get("status") or "").strip().startswith(x) for x in STATUS): out.append(f"sources[{i}] \"{s['title'][:40]}\": văn bản luật cần status ({' / '.join(STATUS)})")
     wd = pr.get("world") or {}
-    if pr.get("kind") in ("report", "lecture") and (len(wd.get("objects") or []) < 8 or not str(wd.get("main") or "").strip() or len(wd.get("minor") or []) < 2 or not str(wd.get("kit") or "").strip()):
-        out.append("world: bước 0 thế giới hình ảnh chưa đủ — ≥ 8 vật thấy tận mắt (objects), 1 vật chủ đạo (main), 2 vật phụ (minor), world chọn (kit) — xem references/the-gioi-hinh-anh.md")
-    if (pr.get("tang") or "hinh") == "hinh" and not pr.get("chapNhanNenChung"):
-        bh = str(pr.get("boHinh") or "").strip()
-        if bh and bh not in BO_HINH: out.append(f"boHinh: \"{bh}\" không có — chọn: {', '.join(BO_HINH)}")
-        elif not bh: out.append("boHinh: tầng hình ảnh chưa có bộ hình cho môn này → " + NEN_CHUNG + ". Chọn một: (a) boHinh = "
-                                + " | ".join(f"{k} ({v.split(' — ')[0]})" for k, v in BO_HINH.items())
-                                + "; (b) làm bộ hình mới cho môn trước (references/canh.md mục 8–9); (c) người dùng đồng ý nền chung → chapNhanNenChung: true"
-                                + " (nói rõ trong tin xin duyệt, không tự đặt); hoặc tang: \"luoi\" (engine/build.js, world meta.kit)")
+    if pr.get("kind") in ("report", "lecture") and (len(wd.get("objects") or []) < 8 or not str(wd.get("main") or "").strip() or len(wd.get("minor") or []) < 2):
+        out.append("world: bước 0 thế giới hình ảnh chưa đủ — ≥ 8 vật thấy tận mắt (objects), 1 vật chủ đạo (main), 2 vật phụ (minor) — xem references/the-gioi-hinh-anh.md")
+    da = str(pr.get("da") or pr.get("boHinh") or "").strip()
+    if not da: out.append(f"da: chưa chọn chất liệu theo môn — gợi ý \"{goi_y_da(pr.get('topic'), pr.get('kind'))}\" (có: {', '.join(DA)}); môn chưa có da thì thêm một khối vào hinh/da.js")
+    elif da == "none" and not pr.get("chapNhanNenChung"): out.append("da: \"none\" → " + NEN_CHUNG + ". Chỉ ghi chapNhanNenChung: true khi người dùng tự chọn nền chung")
+    elif da != "none" and da not in DA: out.append(f"da: \"{da}\" không có — chọn: {', '.join(DA)}")
     sc = pr.get("scope") or {}
     if pr.get("kind") == "report" and not str(sc.get("in") or "").strip(): out.append("scope.in: bài báo cáo cần ghi rõ đối tượng phân tích (vd. \"chỉ BHXH bắt buộc\") — nội dung ngoài phạm vi ghi ở scope.out")
     if pr.get("kind") == "report":
@@ -132,16 +142,15 @@ def summary(d):
     pr = load(d); L = []
     L.append(f"# Gói chuẩn bị — {pr.get('topic') or '(chưa có chủ đề)'}")
     L.append(f"Loại bài: **{pr.get('kind')}** · Người nghe: {pr.get('audience') or '?'} · Thời lượng: {pr.get('minutes') or '?'} phút · Dự kiến {len(pr.get('plan') or [])} slide\n")
-    bh = str(pr.get("boHinh") or "").strip()
-    if (pr.get("tang") or "hinh") == "luoi": L.append(f"Tầng lưới Office (engine/build.js) · world: `{(pr.get('world') or {}).get('kit') or '?'}`\n")
-    elif bh in BO_HINH: L.append(f"Bộ hình: {bh} — {BO_HINH[bh]}\n")
-    elif pr.get("chapNhanNenChung"): L.append(f"> ⚠ **Người dùng đã đồng ý dùng nền, khung chung**: {NEN_CHUNG}.\n")
-    else: L.append(f"> ⚠ **CHƯA CHỌN BỘ HÌNH** — {NEN_CHUNG}. Cần người dùng chọn: dùng bộ có sẵn ({', '.join(BO_HINH)}), làm bộ mới, hay chấp nhận nền, khung chung.\n")
+    da = str(pr.get("da") or pr.get("boHinh") or "").strip()
+    if da in DA: L.append(f"Da theo môn: `{da}` — {DA[da]['mon']}" + (" (bộ chung theo loại bài — môn chưa có da riêng)" if da in AUTO_DA.values() else "") + "\n")
+    elif da == "none" and pr.get("chapNhanNenChung"): L.append(f"> ⚠ **Người dùng đã đồng ý dùng nền, khung chung**: {NEN_CHUNG}.\n")
+    else: L.append(f"> ⚠ **CHƯA CHỌN DA** — gợi ý `{goi_y_da(pr.get('topic'), pr.get('kind'))}`; có: {', '.join(DA)}.\n")
     L.append("## Nguồn")
     for s in pr.get("sources") or []:
         if s.get("title"): L.append(f"- {s['title']}" + (f" — **{s.get('status') or 'chưa ghi tình trạng'}**" if s.get("legal") else "") + (f" ({s['note']})" if s.get("note") else ""))
     wd = pr.get("world") or {}
-    if wd.get("main"): L.append(f"\n## Thế giới hình ảnh\n- Vật chủ đạo: {wd['main']} · vật phụ: {', '.join(wd.get('minor') or [])} · world: `{wd.get('kit') or '?'}`\n- Thấy tận mắt: {', '.join(wd.get('objects') or [])}")
+    if wd.get("main"): L.append(f"\n## Thế giới hình ảnh\n- Vật chủ đạo: {wd['main']} · vật phụ: {', '.join(wd.get('minor') or [])}\n- Thấy tận mắt: {', '.join(wd.get('objects') or [])}")
     sc = pr.get("scope") or {}
     if sc.get("in") or sc.get("out"): L.append(f"\n## Phạm vi\n- Phân tích: {sc.get('in') or '?'}" + (f"\n- Không đưa vào: {', '.join(sc.get('out') or [])}" if sc.get("out") else ""))
     dt = [x for x in pr.get("data") or [] if str(x.get("figure") or "").strip()]

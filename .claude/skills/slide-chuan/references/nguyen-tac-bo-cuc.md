@@ -6,17 +6,36 @@ Câu hỏi kiểm tra trước khi thêm bất kỳ thứ gì vào engine: **"C�
 
 | # | Nguyên tắc | Vì sao hiệu quả | Cơ chế trong engine |
 |---|---|---|---|
-| 1 | **Một thế giới, nhiều bố cục** — chất liệu (màu trang, kiểu thẻ, kiểu nhãn, đồ vật) giữ nguyên cả deck; bố cục đổi tự do | Người xem nhận ra "đây vẫn là bài đó" dù slide đổi dáng → đổi dáng không gây rối | `meta.kit` (engine/kits.js): khai báo một lần, áp qua các hàm chung `box()` (thẻ), `kicker()` (nhãn đầu slide), `chip()` (nhãn ngày / thời hạn), `num()` (ô số), `decor()` (trang) → mọi bố cục tự đổi |
-| 2 | **Ba tầng chiều sâu** — nền (vân, quầng màu) → nội dung → tiền cảnh (một vật nhỏ tràn khỏi mép slide) | Slide phẳng thường chỉ thiếu tầng thứ ba; một vật bị khung slide cắt cho cảm giác "thế giới lớn hơn màn hình" | `section` `photoLayout: "backdrop"`: ảnh làm mờ thành nền + lớp màu → chữ ở tầng trên, ảnh là "không khí"; `kitProp()`: một đồ vật mỗi slide nội dung, chỉ đặt ở vùng trống chạm mép phải, ~30% tràn ra ngoài; không đủ chỗ → không đặt |
-| 3 | **Vắt mép** — phần tử quan trọng nằm trên ranh giới giữa hai vùng (số đè góc thẻ, nhãn đè mép thanh, ảnh tràn khỏi dải) | Mắt dừng ở chỗ hai vùng giao nhau; vừa nối hai vùng vừa tiết kiệm chỗ | ô số `agenda` vắt mép trái thẻ; vật đánh dấu thẻ chính (`kitMark`) vắt mép trên; nhãn "Ghi nhớ" vắt mép trái dải kết luận; icon `cards` vắt mép trên (có sẵn) |
-| 4 | **Vật hoá thông tin** — thẻ "là" một vật của thế giới (tờ giấy trong hồ sơ, mẩu giấy dán, tấm kính) | Thông tin có "chỗ ở" cụ thể dễ nhớ hơn hộp trơn | thẻ chính của slide (thẻ sáng lớn nhất) được thêm tờ lệch phía sau / kẹp giấy / băng dính / viên kính — CHỈ một thẻ mỗi slide; `pin`: câu / số chính trên tờ giấy ghim, tự tìm chỗ trống, không đủ chỗ thì báo |
-| 5 | **Siêu dữ liệu có hình riêng** — ngày, điều luật, thời hạn, nguồn mang kiểu nhãn khác hẳn văn xuôi | Người xem tách "dữ kiện" khỏi "lời bình" mà không cần đọc — quan trọng với bài luật (căn cứ ≠ nhận định) | `kit.tag`: tab hồ sơ / ruy băng / viên thuốc cho `kicker` và `chip` |
+| 1 | **Một thế giới, nhiều bố cục** — chất liệu (màu trang, kiểu thẻ, kiểu nhãn, đồ vật) giữ nguyên cả deck; bố cục đổi tự do | Người xem nhận ra "đây vẫn là bài đó" dù slide đổi dáng → đổi dáng không gây rối | `meta.da` (`hinh/da.js`): khai báo một lần, phủ lên mọi type — nền, khung, vỏ thẻ, nhãn, ô số, đồ vật, hình lớn, kiểu hiện |
+| 2 | **Ba tầng chiều sâu** — nền (vân, quầng màu) → nội dung → tiền cảnh (một vật nhỏ tràn khỏi mép slide) | Slide phẳng thường chỉ thiếu tầng thứ ba; một vật bị khung slide cắt cho cảm giác "thế giới lớn hơn màn hình" | `section` `photoLayout: "backdrop"`: ảnh làm mờ thành nền + lớp màu → chữ ở tầng trên, ảnh là "không khí"; `kitProp()`: một đồ vật mỗi slide nội dung, **chọn theo nội dung slide** (tiêu đề nói quỹ → xu, trích điều luật → con dấu; không khớp → vật chủ đạo của da — `hinh/da.js` `chonVat`), chỉ đặt ở vùng trống chạm mép phải, ~30% tràn ra ngoài; không đủ chỗ → không đặt |
+| 3 | **Vắt mép** — phần tử quan trọng nằm trên ranh giới giữa hai vùng (số đè góc thẻ, nhãn đè mép thanh, ảnh tràn khỏi dải) | Mắt dừng ở chỗ hai vùng giao nhau; vừa nối hai vùng vừa tiết kiệm chỗ | ô số `agenda` vắt mép thẻ; đồ vật tiền cảnh của da (`vat`) tràn khỏi mép; nhãn "Ghi nhớ" (`takeaway`) vắt mép dải |
+| 4 | **Vật hoá thông tin** — thẻ "là" một vật của thế giới (tờ giấy trong hồ sơ, mẩu giấy dán, tấm kính) | Thông tin có "chỗ ở" cụ thể dễ nhớ hơn hộp trơn | vỏ thẻ của da (`the`: tờ rời, thẻ chấm công, container, cuống vé…) — thông tin "ở" trong vật của môn |
+| 5 | **Siêu dữ liệu có hình riêng** — ngày, điều luật, thời hạn, nguồn mang kiểu nhãn khác hẳn văn xuôi | Người xem tách "dữ kiện" khỏi "lời bình" mà không cần đọc — quan trọng với bài luật (căn cứ ≠ nhận định) | kiểu nhãn của da (`nhan`) cho `kicker`; chip căn cứ `src` |
 | 6 | **Một điểm nhấn, kết luận ở chỗ cố định** | Người nghe biết nhìn đâu; câu chốt ở cùng một chỗ mọi slide → thành thói quen đọc | `hub`: một tâm, các ý toả ra (icon vắt mép phía tâm); `takeaway` → dải "Ghi nhớ" ở đáy (chỉ ở bố cục dùng hàng chú thích chung); `focus` của các bố cục (có sẵn) |
-| 7 | **Nhịp** — dày/thưa, trái/phải, sáng/tối xen nhau; phần tử chung trượt qua slide | Ba slide liền nhau cùng dáng hoặc cùng dày chữ làm người nghe mất tập trung | `validate.js` gợi ý khi 3 slide liền nhau cùng type hoặc cùng > 520 ký tự; `--transition morph` (có sẵn); `meta.thread`: Morph trong cùng chương, fade ở ranh giới chương — chuyển động nói cho người nghe biết "vẫn ý đó" hay "sang ý mới" |
+| 7 | **Nhịp** — dày/thưa, trái/phải, sáng/tối xen nhau; phần tử chung trượt qua slide | Ba slide liền nhau cùng dáng hoặc cùng dày chữ làm người nghe mất tập trung | `validate.js` gợi ý khi 3 slide liền nhau cùng type hoặc cùng > 520 ký tự; Morph giữa slide kề nhau có cùng vật (`hinh/tu_gan.js`, cảnh `hinh/canh.js`) |
+
+## Cỡ chữ đọc được khi chiếu (11/2026)
+1 px ở khung 1920 = 0,5 pt PowerPoint. Chữ thân (mô tả, ô bảng, chú thích biểu đồ) **≥ 28 px (14 pt)**, chữ thân chính ≥ 30–32 px; nhãn, dòng căn cứ, dòng nguồn **≥ 24 px (12 pt)**; chỉ số trang, dải đầu trang, dòng ghi công ảnh được nhỏ hơn. Nhãn dài (căn cứ "Quy định: điểm đ khoản 1 Điều 70") viết thường — in hoa cả câu dài khó đọc; nhãn 1–3 tiếng ("CHẾ ĐỘ", "CÂU HỎI CỦA BÀI") giữ in hoa. Không đủ chỗ thì rút chữ hoặc nới khung, không thu nhỏ chữ. Bộ `bh*` được giữ bằng `tests/co_chu.test.js`; mọi deck được đo trong `--soat` (`scripts/co_chu.js`, chạy riêng: `node scripts/co_chu.js <tên>_lop/deck.html`). Chữ lan khỏi nền thẻ thì bộ kiểm tràn / đè KHÔNG bắt — phải nhìn ảnh từng slide.
+
+## 8. Mỗi chi tiết một lý do (11/2026)
+"Kể cả chi tiết nhỏ nhất đặt xuống cũng phải có logic và ý nghĩa" (người dùng, bộ BHXH). Cùng gốc với Robin Williams — *"Nothing should be placed on the page arbitrarily"* — và Tufte — khác biệt nhỏ nhất vẫn đủ thấy (mỗi khác biệt về màu, cỡ, dáng phải nói một điều). Một chi tiết chỉ được giữ khi nói được nó thuộc **một trong bốn loại nghĩa**:
+1. **Chở dữ liệu** — đếm được, đo được (1 cuốn sổ = 1 triệu người, 1 ô = 1 năm đóng, chiều dài thanh = tỷ lệ).
+2. **Điều hướng** — người xem đang ở đâu, đi tiếp đâu (dải đầu, thanh tiến độ có khe ngăn phần, số phần, nút bấm).
+3. **Nhận diện** — đề tài / phần đang nói (vật của thế giới môn, ảnh của phần, hoa văn lấy đúng từ vật thật của môn — không "hoạ tiết chung").
+4. **Phân loại** — một mã cố định cả deck (đỏ = tiêu cực thật, xám nét đứt = hết hiệu lực / khác phạm vi, mỗi phần một màu).
+
+Luật đi kèm:
+- **Mã màu không được nói dối**: đỏ chỉ cho điều tiêu cực (năm giảm, mất, nợ); một chấm chú thích mang màu của chiều thay đổi nó chú thích; không gán đỏ cho cả một phần chỉ để "đủ ba màu".
+- **Không lặp một vật hai lần trên cùng slide**: vật vẽ đặt cạnh ảnh đã có vật thật đó, hai biểu tượng giống nhau, cùng một con số hai đơn vị.
+- **Vị trí suy ra được**: mỗi thứ canh theo lưới lề hoặc theo vật nó thuộc về (dải đánh dấu mọc từ mép trang sổ, chú thích cùng hàng với năm nó giải thích); không có toạ độ "đặt cho đẹp".
+- **Thẳng theo NÉT chữ, không theo hộp chữ**: chữ trưng bày ≥ 48 px tự **căn lề quang học** (`hinh/hinh.js`: dịch trái đúng khoảng trống trước nét của chữ đầu — Anton "N" 186 px trống 7 px) → nét tiêu đề thẳng với dòng chữ nhỏ; đừng bù tay bằng toạ độ (100, 96…), sẽ bị bù hai lần. Lề trong của nhãn = lề trong của thẻ (24 px) để chữ chung cột. `scripts/soat_chi_tiet.js` (tự chạy trong `--soat`) báo chỗ lệch 4–10 px.
+- **Ngắt dòng tại nghĩa**: công thức xuống dòng tại dấu "=", nhãn điều luật một dòng ("Đ.40, 41"), không để trình duyệt tự ngắt giữa một cụm. Mọi slide có `text-wrap: balance` (`stage/stage.css`): đoạn ≤ 6 dòng chia dòng đều, không còn dòng cuối một chữ; `build.js` chép đúng chỗ xuống dòng sang PPTX. Đừng đặt `pretty` đè lên — Chromium `pretty` không sửa đoạn 2 dòng (đã thử: "…giá 850 / triệu"). Mọi cỡ chữ (tiêu đề lẫn chữ thân) tự giữ liền: ~110 từ ghép thường gặp trong bài luật ("hệ thống", "lao động", "bảo hiểm", "hợp đồng"… — danh sách `TU_GHEP` trong `hinh/hinh.js`), số hiệu pháp lý ("Điều 2", "khoản 1", "điểm m"), số + đơn vị ("15 năm", "75 %"), mốc thời gian ("từ 01/7/2025", "tháng 9/2025", "năm 2024"); từ ghép ngoài danh sách thì đọc lại tiêu đề hai dòng, ngắt sai thì ghi `\n` (xuống dòng chủ ý) hoặc `\u00a0` (dấu cách không ngắt: `"hệ\u00a0thống"`) trong chuỗi, hoặc sửa câu.
+- **Thứ tự xuất hiện theo logic**: thẻ căn cứ của luật mới chỉ hiện ở bước "luật mới"; số ô năm khớp con số trong tình huống.
+- Cách soát: lập bảng `chi tiết → nghĩa → luật` cho bộ hình (mẫu: `references/canh.md` mục 10); chi tiết nào không điền được cột "nghĩa" thì bỏ hoặc đổi thành chi tiết mang nghĩa (bong bóng trang trí → vân bảo an đúng của bìa sổ BHXH).
 
 Hai quy tắc phụ rút ra khi làm slide `quote`:
 - **Chữ là hình**: khi câu chữ là nhân vật chính (trích dẫn, khẩu hiệu), phóng một ký tự của nó (dấu ngoặc kép) thành hình nền rất nhạt, BÁM vào khối chữ — không bám góc slide (sẽ đè nhãn).
-- **Chỗ ảnh bị cắt phải trùng mép slide**: ảnh tách nền mà chủ thể chạm mép ảnh (cổ tay, thân người, chân tượng) → đặt mép đó sát mép slide (lật ngang nếu cần) để chủ thể "đi vào" từ ngoài khung; đặt lơ lửng giữa slide trông như bị cụt. Engine đọc kênh alpha 4 mép ảnh để biết (`cutEdges`).
+- **Chỗ ảnh bị cắt phải trùng mép slide**: ảnh tách nền mà chủ thể chạm mép ảnh (cổ tay, thân người, chân tượng) → đặt mép đó sát mép slide (lật ngang nếu cần) để chủ thể "đi vào" từ ngoài khung; đặt lơ lửng giữa slide trông như bị cụt. Engine đọc kênh alpha 4 mép ảnh để biết (`tinhMepCat` trong `hinh/dung.js`, dùng cho `cutout` của quote / statement / section / end: cắt trái → lật ngang, dán mép phải; cắt dưới → chạm đáy).
 
 ## Không học (lỗi lặp lại ở nhiều mẫu)
 - Chữ thân 9–11 pt khi chiếu — skill giữ sàn 15–16 pt cho thân, 13 pt cho chú thích.
@@ -25,18 +44,5 @@ Hai quy tắc phụ rút ra khi làm slide `quote`:
 - Font viết tay / font trang trí không nhúng được vào .pptx — vỡ dấu tiếng Việt trên máy khác.
 - **Trích dẫn sai người nói** (một mẫu ghi câu "Law is the expression of the general will" là của Aristotle — thực ra của Rousseau). Hình đẹp không bù được sai nội dung: trích dẫn luôn phải có `by` và nguồn kiểm được.
 
-## Chọn bộ chất liệu
-| Bộ | Thế giới | Hợp với | Trang | Nhãn | Ô số | Đồ vật |
-|---|---|---|---|---|---|---|
-| `file` | hồ sơ giấy tờ | bình luận bản án, vụ việc, pháp chế (`kind: case`) | giấy bìa hồ sơ ngả vàng | tab hồ sơ | vuông (như dấu) | kẹp giấy, bút máy, kính lúp |
-| `paper` | sổ tay, giấy kẻ dòng | bài giảng, tiểu luận (`kind: lecture`) | trắng, kẻ dòng mờ + lề | ruy băng | tròn | bút chì, thước, đinh ghim |
-| `glass` | kính trong, quầng màu | báo cáo, số liệu (`kind: report`) | sắc nhạt của màu nhấn | viên thuốc | tròn | viên kính, vòng kính |
-| `none` | giao diện gốc | khi cần slide tối giản tuyệt đối | | | | |
-
-Mặc định `auto`: chọn theo `meta.kind`. Bộ chất liệu đổi **hình**, không đổi **chữ** (test `tests/bo_chat_lieu.test.js` kiểm điều này).
-
-## Thêm một bộ mới (vd. "y tế", "xây dựng")
-1. Hỏi: thế giới của đề tài có những VẬT gì người nghe nhận ra ngay? (y tế: phiếu khám, băng dính y tế; xây dựng: bản vẽ, thước dây).
-2. Vẽ 2–3 vật đó bằng SVG thuần trong `PROPS` (phẳng + bóng đổ, không ảnh, không chữ).
-3. Khai báo một khối trong `KITS`: `card`, `mark`, `tag`, `num`, `page`, `bg`, `props`. Không sửa bố cục nào.
-4. Thêm tên vào enum `meta.kit` ở `engine/validate.js`; chạy `tests/bo_chat_lieu.test.js` (thêm bộ mới vào vòng lặp nếu cần).
+## Chọn da và thêm da mới
+Bảng da và cách chọn: SKILL.md mục "Da theo môn". Thêm da cho môn chưa có (vd. "y tế", "môi trường"): `references/the-gioi-hinh-anh.md` mục "Thêm da mới" — hỏi trước "thế giới của đề tài có những VẬT gì người nghe nhận ra ngay?", vẽ 2–3 vật bằng SVG thuần trong `hinh/do_vat.js` (phẳng + bóng đổ, không ảnh, không chữ), rồi khai báo một khối trong `hinh/da.js`. Không sửa bố cục nào. Da đổi **hình**, không đổi **chữ**.
