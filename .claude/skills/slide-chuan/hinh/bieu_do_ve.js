@@ -356,6 +356,47 @@ const KIEU = {
         nhan.push({ x: x + 84, y: ly + 2, t: ten, cls: "trai nho", w: fw - 96, at: T + 700 + j * 120 }); }); });
     return { svg: khungSvg(w, h, P, s), nhan };
   },
+  // HAI NHÓM (BH bắt buộc / tự nguyện): trái — biển luật ghi điều luật định, MỌI người (kể cả DNBH) đều dưới ô; phải — chỉ người có nhu cầu mới cầm ô, người khác đang cân nhắc
+  "hai-nhom": (d, P, w, h) => {
+    const day = h - 110, half = w / 2; let s = "", nhan = [];
+    const AO = ["anh-x", "nguoi-vang", "nguoi-cam", "anh-x", "nguoi-vang"];
+    s += `<rect x="0" y="${day}" width="${f1(w * 0.47)}" height="8" rx="4" fill="#${P.ink}" opacity=".2"/><rect x="${f1(w * 0.53)}" y="${day}" width="${f1(w * 0.47)}" height="8" rx="4" fill="#${P.ink}" opacity=".2"/>`
+      + `<line x1="${f1(half)}" y1="20" x2="${f1(half)}" y2="${day + 20}" stroke="#${P.ink}" stroke-opacity=".18" stroke-width="4" stroke-dasharray="14 12"/>`;
+    const nguoi = (x, k, o, T, sz0) => { const sau = k % 2 === 1, sz = sau ? sz0 * 0.86 : sz0, yd = sau ? day - 26 : day;   /* hàng sau nhỏ hơn, đứng lùi: có chiều sâu, không xếp hàng đều */
+      return `<!--L:up:${T}-->` + bong(x, yd + 2, sz * 0.32) + vat(AO[k % 5], P, x - sz / 2, yd - sz * 0.92, sz) + (o ? vat("o-mua", P, x - sz * 0.2, yd - sz * 1.2, sz * 0.7) : ""); };
+    // TRÁI: biển luật + DNBH phía sau + 4 người đều có ô
+    const bx = w * 0.02, bw = w * 0.18, by = 40, bh = 300;
+    s += `<!--L:drop:300--><rect x="${f1(bx + bw / 2 - 8)}" y="${by + bh}" width="16" height="${f1(day - by - bh)}" fill="#${mix(P.ink, "FFFFFF", 0.35)}"/><rect x="${f1(bx)}" y="${by}" width="${f1(bw)}" height="${bh}" rx="16" fill="#${P.ink}"/><rect x="${f1(bx + 10)}" y="${by + 10}" width="${f1(bw - 20)}" height="${bh - 20}" rx="10" fill="none" stroke="#${P.gold}" stroke-width="3"/>`
+      + vat("can-can", P, bx + bw / 2 - 40, by + 18, 80);
+    const LUAT = d.luat || [];
+    LUAT.forEach((t, j) => { s += `<rect x="${f1(bx + 28)}" y="${f1(by + 122 + j * 56)}" width="26" height="26" rx="6" fill="#${P.gold}"/><path d="M${f1(bx + 33)} ${f1(by + 135 + j * 56)} l6 6 l10 -12" fill="none" stroke="#${P.ink}" stroke-width="4" stroke-linecap="round"/>`;
+      nhan.push({ x: bx + 66, y: by + 116 + j * 56, t: t, cls: "trai nho trang", w: bw - 76, at: 500 + j * 150 }); });
+    s += `<!--L:pop:900-->` + bong(w * 0.39, day - 30, 110) + vat("toa-dnbh", P, w * 0.39 - 130, day - 300, 260);
+    [0.25, 0.31, 0.44].forEach((fx, k) => { s += nguoi(w * fx, [0, 1, 2][k] * 2 % 5 === 2 ? 2 : k * 2, true, 1200 + k * 200, 190); });
+    nhan.push({ x: w * 0.39, y: day - 340, t: "DNBH cũng có nghĩa vụ", cls: "nho", w: 300, at: 900 });
+    // PHẢI: 5 người, chỉ 2 cầm ô; người còn lại có bong bóng suy nghĩ
+    const xs = [0.59, 0.67, 0.75, 0.83, 0.91], co = [true, false, true, false, false];
+    xs.forEach((fx, k) => { const x = w * fx, T = 1900 + k * 200; s += nguoi(x, k + 1, co[k], T, 190);
+      if (!co[k]) s += `<circle cx="${f1(x + 38)}" cy="${f1(day - 228)}" r="9" fill="#fff" stroke="#${mix(P.ink, "FFFFFF", 0.5)}" stroke-width="3"/><circle cx="${f1(x + 54)}" cy="${f1(day - 256)}" r="13" fill="#fff" stroke="#${mix(P.ink, "FFFFFF", 0.5)}" stroke-width="3"/><circle cx="${f1(x + 40)}" cy="${f1(day - 318)}" r="44" fill="#fff" stroke="#${mix(P.ink, "FFFFFF", 0.5)}" stroke-width="3"/>` + vat("o-mua", P, x + 10, day - 350, 60); });
+    nhan.push({ x: w * 0.235, y: day + 22, t: d.trai?.t || "", b: d.trai?.b, cls: "ten", w: w * 0.45, at: 300 });
+    nhan.push({ x: w * 0.75, y: day + 22, t: d.phai?.t || "", b: d.phai?.b, cls: "ten", w: w * 0.45, at: 1900 });
+    return { svg: khungSvg(w, h, P, s), nhan };
+  },
+  // HAI THƯỚC (GTBH / STBH, minh hoạ): thước xanh đo chính ngôi nhà = giá trị của đối tượng; thước cam = mức ghi trong hợp đồng = giới hạn trách nhiệm của DNBH
+  "hai-thuoc": (d, P, w, h) => {
+    const day = h - 40, cx = w * 0.45, hs = Math.min(500, day - 30), top = day - hs * 0.67, muc = d.muc ?? 0.62, yS = day - (day - top) * muc, xa = cx - hs / 2 - 70, xb = cx + hs / 2 + 70, CAM = "D9542A"; let s = "", nhan = [];
+    s += `<rect x="0" y="${day}" width="${w}" height="8" rx="4" fill="#${P.ink}" opacity=".2"/>`;
+    s += `<!--L:up:300-->` + bong(cx, day + 4, hs * 0.5) + vat("nha", P, cx - hs / 2, day - hs * 0.88, hs);
+    const thuoc = (x, y1, y2, m) => `<line x1="${f1(x)}" y1="${f1(y1)}" x2="${f1(x)}" y2="${f1(y2)}" stroke="#${m}" stroke-width="8"/>` + [y1, y2].map((y) => `<line x1="${f1(x - 22)}" y1="${f1(y)}" x2="${f1(x + 22)}" y2="${f1(y)}" stroke="#${m}" stroke-width="8" stroke-linecap="round"/>`).join("")
+      + Array.from({ length: 9 }, (_, i) => { const y = y2 + ((y1 - y2) * (i + 1)) / 10; return `<line x1="${f1(x - 10)}" y1="${f1(y)}" x2="${f1(x + 10)}" y2="${f1(y)}" stroke="#${m}" stroke-width="4"/>`; }).join("");
+    s += `<!--L:wipe:900-->` + thuoc(xa, day, top, P.acc) + `<line x1="${f1(xa + 22)}" y1="${f1(top)}" x2="${f1(cx)}" y2="${f1(top)}" stroke="#${P.acc}" stroke-width="3" stroke-dasharray="10 8"/>`;
+    s += `<!--L:wipe:1700-->` + thuoc(xb, day, yS, CAM) + `<line x1="${f1(cx - hs * 0.42)}" y1="${f1(yS)}" x2="${f1(xb - 22)}" y2="${f1(yS)}" stroke="#${CAM}" stroke-width="4" stroke-dasharray="14 10"/>`
+      + vat("hop-dong", P, xb + 60, yS - 70, 150);
+    nhan.push({ x: xa - 180, y: (day + top) / 2 - 60, t: "GTBH", b: d.tA || "giá trị của đối tượng được BH", cls: "the-xanh", w: 300, at: 1000 });
+    nhan.push({ x: xb + 216, y: yS - 70, t: "STBH", b: "ghi trong HĐBH", cls: "the-cam trai", w: 300, at: 1800 });
+    nhan.push({ x: xb + 216, y: yS + 40, t: d.tB || "giới hạn trách nhiệm của người BH", cls: "trai nho", w: 360, at: 1900 });
+    return { svg: khungSvg(w, h, P, s), nhan };
+  },
 };
 // SÀN DIỄN: vầng sáng sau biểu đồ + mặt sàn gradient — biểu đồ đứng trong một không gian có ánh sáng, không "trôi" trên nền
 const san = (w, h, P) => `<defs><radialGradient id="snG" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#${mix(P.gold, "FFFFFF", 0.55)}" stop-opacity=".55"/><stop offset="1" stop-color="#${mix(P.gold, "FFFFFF", 0.55)}" stop-opacity="0"/></radialGradient>

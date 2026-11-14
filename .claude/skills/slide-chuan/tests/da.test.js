@@ -325,3 +325,13 @@ test("cây phân loại + tập hồ sơ: đếm đủ quả / tờ, số thứ 
   assert.equal((h.svg.match(/fill="#FFFDF7"/g) || []).length, 7, "đúng bảy tờ giấy");
   assert.ok(h.nhan.filter((n) => /trai/.test(n.cls)).every((n) => n.w > 300));
 });
+
+test("hai nhóm + hai thước: bắt buộc ai cũng có ô, tự nguyện chỉ một phần; thước GTBH cao hơn mức STBH khi muc < 1", () => {
+  const BDV = require("../hinh/bieu_do_ve"), P = { acc: "0F5C55", gold: "EFA23F", ink: "17302E", bad: "B0302A" };
+  const n = BDV.KIEU_GOC["hai-nhom"]({ luat: ["a", "b", "c"], trai: { t: "BB" }, phai: { t: "TN" } }, P, 1760, 720);
+  assert.equal(n.nhan.filter((x) => /trai nho trang/.test(x.cls)).length, 3, "ba điều luật định trên biển");
+  assert.ok(n.nhan.some((x) => x.t === "BB") && n.nhan.some((x) => x.t === "TN"));
+  const t = BDV.KIEU_GOC["hai-thuoc"]({ muc: 0.7 }, P, 1760, 560);
+  assert.deepEqual(t.nhan.map((x) => x.t).slice(0, 2), ["GTBH", "STBH"]);
+  assert.ok(t.nhan[0].x >= 0 && t.nhan.every((x) => x.y > 0));
+});
