@@ -127,7 +127,7 @@ S1.strip = (s, deck, ctx) => { const n = Math.max(1, Math.min(32, Math.round(+s.
   </div></div>${note(s.source || s.note)}` }; };
 
 S1.cases = (s, deck, ctx) => { const it = (s.items || []).slice(0, s.big ? 7 : 8), R = [-1.2, 1, -0.8, 1.4, 1, -1.3, 0.9, -1];
-  return { cls: "dark", html: `${head(s)}<div class="body" data-tay><div class="cz">${it.map((x, i) => `<div class="cs" data-l="the-${esc(x.k || i + 1)}" data-pad="26" data-a="drop" data-at="${350 + i * 130}" style="rotate:${R[i]}deg"><span class="kk zan" data-t>${esc(x.k || i + 1)}</span>${pic(ctx, x.emoji, 112, "position:absolute;right:20px;top:16px")}<p data-t>${f(x.text)}</p></div>`).join("")}
+  return { cls: "dark", html: `${head(s)}<div class="body" data-tay><div class="cz">${it.map((x, i) => `<div class="cs" data-l="the-${esc(x.k || i + 1)}" data-pad="26" data-a="drop" data-at="${350 + i * 130}" style="rotate:${R[i]}deg"><span class="kk zan" data-t>${esc(x.k || i + 1)}</span>${pic(ctx, x.emoji, it.length <= 4 ? 150 : 112, "position:absolute;right:20px;top:16px")}<p data-t>${f(x.text)}</p></div>`).join("")}
   ${s.big ? `<div class="bigz"><div class="z1 zan" data-t data-a="slam" data-at="${350 + it.length * 130 + 200}">${esc(s.big.value)}</div><div class="z2" data-t data-a="rise" data-at="${350 + it.length * 130 + 450}">${f(s.big.label || "")}</div></div>` : ""}</div></div>${note(s.source || s.note)}` }; };
 
 S1.chain = (s, deck, ctx) => { const c = s.cause || {}, st = s.stamp || {}, R = (s.results || []).slice(0, 3), E = (s.emojis || []).slice(0, 2);
@@ -258,7 +258,7 @@ const css = `
 /* ── cases ── */
 .cz { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px 33px; padding: 8px 0; }
 .cs { position: relative; height: 272px; background: #fffaf0; color: var(--ink); border: 5px solid var(--ink); box-shadow: 12px 12px 0 rgba(0,0,0,.45); padding: 20px 24px; }
-.cs .kk { display: inline-block; min-width: 64px; height: 64px; padding: 0 12px; background: var(--red); color: #fff; font-size: 42px; line-height: 64px; text-align: center; text-transform: none; } .cs p { position: absolute; left: 24px; right: 24px; bottom: 20px; font: 800 27px/1.3 var(--fb); }
+.cs .kk { display: inline-block; min-width: 64px; height: 64px; padding: 0 12px; background: var(--amber); color: var(--ink); font-size: 42px; line-height: 64px; text-align: center; text-transform: none; } .cs p { position: absolute; left: 24px; right: 24px; bottom: 20px; font: 800 27px/1.3 var(--fb); }
 .bigz { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; } .z1 { font-size: 250px; line-height: 1; color: var(--amber); } .z2 { font: 800 30px/1.3 var(--fb); }
 /* ── chain ── */
 .ch0 { position: relative; height: 540px; } .ch0 > * { position: absolute; }

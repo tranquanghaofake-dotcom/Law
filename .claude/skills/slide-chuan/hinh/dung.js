@@ -31,6 +31,7 @@ const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").
 // Hình thêm của người dùng đặt lẻ ở hinh/emoji/<tên>.svg; trùng tên thì kho gộp thắng.
 // Tên "3d:<vật>" = vật 3D Fluent Emoji (hinh/f3d, PNG) thay cho hình dán phẳng — dùng được ở mọi trường emoji / emojis / art / vat.
 const { f3d, coF3d } = require("./f3d");
+const VEBH = require("./ve_bh");   // "ve:<vật>" = vật tự vẽ (hinh/ve_bh.js), tô theo màu của da
 let _khoEmoji = null;
 const khoEmoji = () => _khoEmoji || (_khoEmoji = fs.existsSync(path.join(__dirname, "emoji.json")) ? JSON.parse(fs.readFileSync(path.join(__dirname, "emoji.json"), "utf8")) : {});
 // Hình dán cho bìa / mở bài / chuyển chương / cảm ơn (các type thường vốn không có hình): `emoji`, `emoji2`, tuỳ chọn `emojiPos` {s,l,t,r}.
@@ -80,7 +81,7 @@ function dungHtml(deck, { deckDir = process.cwd(), mau, chuyen, mepCat = {} } = 
   // ghi chú thuyết trình: slide.notes, hoặc meta.notesFile (các phần cách nhau bằng dòng ---, dòng "# tên" đầu phần bị bỏ)
   let parts = [];
   if (deck.meta?.notesFile && fs.existsSync(path.resolve(deckDir, deck.meta.notesFile))) parts = fs.readFileSync(path.resolve(deckDir, deck.meta.notesFile), "utf8").split(/^\s*---\s*$/m).map((p) => p.replace(/^\s*#.*$/m, "").trim());
-  const missing = [], ctx = { mepCat: (p) => mepCat[p] || "", img: (p) => { if (!p) return ""; const abs = path.resolve(deckDir, p); if (!fs.existsSync(abs)) { missing.push(p); return ""; } return url(abs); }, emoji: (n) => (String(n).startsWith("3d:") ? (coF3d(n.slice(3)) ? f3d(n.slice(3)) : "") : n in khoEmoji() ? "data:image/svg+xml;base64," + Buffer.from(khoEmoji()[n], "utf8").toString("base64") : url(path.join(here, "emoji", n + ".svg"))), hasEmoji: (n) => (String(n).startsWith("3d:") ? coF3d(n.slice(3)) : n in khoEmoji()) || fs.existsSync(path.join(here, "emoji", n + ".svg")) };
+  const missing = [], ctx = { mepCat: (p) => mepCat[p] || "", img: (p) => { if (!p) return ""; const abs = path.resolve(deckDir, p); if (!fs.existsSync(abs)) { missing.push(p); return ""; } return url(abs); }, emoji: (n) => (String(n).startsWith("ve:") ? (VEBH.coVe(n.slice(3)) ? DA.uriVe(n.slice(3), DA.DA[(deck.meta || {}).da] || DA.DA["hop-dong-bh"], false) : "") : String(n).startsWith("3d:") ? (coF3d(n.slice(3)) ? f3d(n.slice(3)) : "") : n in khoEmoji() ? "data:image/svg+xml;base64," + Buffer.from(khoEmoji()[n], "utf8").toString("base64") : url(path.join(here, "emoji", n + ".svg"))), hasEmoji: (n) => (String(n).startsWith("ve:") ? VEBH.coVe(n.slice(3)) : String(n).startsWith("3d:") ? coF3d(n.slice(3)) : n in khoEmoji()) || fs.existsSync(path.join(here, "emoji", n + ".svg")) };
   // một slide của deck.json có thể nở thành nhiều slide PowerPoint (cảnh mở sách = 8 slide tự chạy)
   const out = [], generic = [], bo = [], n = src.length, st = { prev: new Set() };
   const toc = src.findIndex((s) => s.type === "toc"), tocId = toc < 0 ? null : src[toc].id || `s${toc + 1}`;

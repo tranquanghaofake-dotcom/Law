@@ -128,7 +128,8 @@ function walk(val, spec, p, err, req) {
     val.forEach((x, i) => walk(x, spec[1], `${p}[${i}]`, err, true));
     return;
   }
-  if (spec.art3d) { if (val == null) return; if (typeof val === "string" && val.startsWith("3d:")) { const { coF3d } = require("../hinh/f3d"); const thieu = val.slice(3).split(",").filter((v) => !coF3d(v.trim()));
+  if (spec.art3d) { if (val == null) return; if (typeof val === "string" && val.startsWith("ve:")) { const { coVe } = require("../hinh/ve_bh"); const thieu = val.slice(3).split(",").filter((v) => !coVe(v.trim()));
+      if (thieu.length || !val.slice(3).trim()) err(label, `vật tự vẽ không có trong hinh/ve_bh.js: ${thieu.join(", ") || "(trống)"}`); return; } if (typeof val === "string" && val.startsWith("3d:")) { const { coF3d } = require("../hinh/f3d"); const thieu = val.slice(3).split(",").filter((v) => !coF3d(v.trim()));
       if (thieu.length || !val.slice(3).trim()) err(label, `vật 3D không có trong hinh/f3d: ${thieu.join(", ") || "(trống)"}`); return; }
     if (!ART.includes(val)) err(label, `giá trị "${val}" không hợp lệ (chọn: ${ART.join(" | ")} | 3d:vật1,vật2)`); return; }
   if (spec.enum) { if (val != null && !spec.enum.includes(val)) err(label, `giá trị "${val}" không hợp lệ (chọn: ${spec.enum.join(" | ")})`); return; }

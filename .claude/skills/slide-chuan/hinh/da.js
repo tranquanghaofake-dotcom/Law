@@ -10,6 +10,9 @@
 const { PROPS } = require("./do_vat");
 const { ART } = require("./art");
 const { f3d, coF3d } = require("./f3d");
+const VEBH = require("./ve_bh");   // vật tự vẽ "ve:<tên>" (luật 11/2026: hình minh hoạ tự vẽ, không lấy kho có sẵn)
+const bangVe = (c, toi) => ({ acc: c.acc, gold: c.gold, ink: toi ? mix(c.ink, "FFFFFF", 0.62) : c.ink, bad: c.bad });
+const uriVe = (ten, c, toi) => `data:image/svg+xml;base64,${Buffer.from(VEBH.veSvg(ten, bangVe(c, toi)), "utf8").toString("base64")}`;
 
 // ---------- màu ----------
 const hx = (h) => [0, 2, 4].map((i) => parseInt(h.slice(i, i + 2), 16));
@@ -26,11 +29,11 @@ const DA = {
   // đơn / giấy chứng nhận bảo hiểm thương mại: ô che (vật chủ đạo) + khiên (phạm vi bảo hiểm) + xu (phí); đặt trước so-bhxh vì fits của so-bhxh có "bảo hiểm"
   "hop-dong-bh": { mon: "Đơn bảo hiểm / ô che rủi ro (Bảo hiểm thương mại, kinh doanh bảo hiểm, tái bảo hiểm)", fits: ["bảo hiểm thương mại", "kinh doanh bảo hiểm", "hợp đồng bảo hiểm", "tái bảo hiểm", "doanh nghiệp bảo hiểm", "bảo hiểm nhân thọ", "phi nhân thọ", "bhtm", "bảo hiểm tài sản", "bảo hiểm trách nhiệm", "nghiệp vụ bảo hiểm"],
     ink: "13262B", acc: "0E6E66", page: "F3F8F7", muted: "4A5E61", line: "B5D3CF", bad: "B0302A", good: "0E6E66", gold: "F0A23B",
-    nen: "canopy", khung: "policy", the: "policy", nhan: "pill", so: "round", tienDo: "canopy", vat: ["3d:o-mua", "3d:lua", "3d:o-to", "3d:nha", "3d:tau", "3d:but-may", "3d:hoa-don", "3d:khien", "3d:nhom-nguoi", "3d:can", "3d:may-giong"], chuyen: "pop", art: "3d:o-mua,nha,nguoi,o-to",
-    // vật tiền cảnh theo nội dung slide (xét trước các vật chung); không khớp → vật đầu (ô che mưa = rủi ro được che)
-    vatY: { "3d:tau": /tái|nhượng|nhận tái|mức dôi|số thành/i, "3d:but-may": /hợp đồng|HĐBH|ký|thoả thuận|thỏa thuận/i, "3d:hoa-don": /phí|giá cả|thu phí|hoá đơn/i,
-      "3d:lua": /hoả hoạn|hỏa hoạn|cháy|tổn thất|thiệt hại/i, "3d:nhom-nguoi": /số đông|nhiều người|chủ thể|bên mua/i, "3d:can": /pháp luật|bắt buộc|pháp lý|luật/i,
-      "3d:khien": /trách nhiệm|giới hạn|phạm vi|trung thực|quyền lợi/i, "3d:nha": /tài sản|giá trị/i, "3d:o-to": /dân sự|người thứ ba/i, "3d:may-giong": /rủi ro|ngẫu nhiên|bất ngờ/i } },
+    nen: "canopy", khung: "policy", the: "policy", nhan: "pill", so: "round", tienDo: "canopy", vat: ["ve:o-mua", "ve:lua", "ve:o-to", "ve:nha", "ve:tai-bh", "ve:hop-dong", "ve:hoa-don", "ve:khien", "ve:dam-dong", "ve:can-can", "ve:may-giong", "ve:lich"], chuyen: "pop", art: "ve:o-mua,nha,nguoi,o-to",
+    // vật tiền cảnh theo nội dung slide (xét trước các vật chung); không khớp → vật đầu (ô che mưa = rủi ro được che). Vật tự vẽ: hinh/ve_bh.js
+    vatY: { "ve:tai-bh": /tái|nhượng|nhận tái|mức dôi|số thành/i, "ve:hop-dong": /hợp đồng|HĐBH|ký|thoả thuận|thỏa thuận/i, "ve:hoa-don": /phí|giá cả|thu phí|hoá đơn/i,
+      "ve:lich": /thời hạn|hiệu lực|ngày/i, "ve:lua": /hoả hoạn|hỏa hoạn|cháy|tổn thất|thiệt hại/i, "ve:dam-dong": /số đông|nhiều người|chủ thể|bên mua/i, "ve:can-can": /pháp luật|bắt buộc|pháp lý|luật/i,
+      "ve:khien": /trách nhiệm|giới hạn|phạm vi|trung thực|quyền lợi/i, "ve:nha": /tài sản|giá trị/i, "ve:o-to": /dân sự|người thứ ba/i, "ve:may-giong": /rủi ro|ngẫu nhiên|bất ngờ/i } },
   "so-bhxh": { mon: "Sổ BHXH (An sinh xã hội, BHXH, BHYT, BHTN, lương hưu)", fits: ["bảo hiểm", "bhxh", "bhyt", "bhtn", "an sinh", "lương hưu", "hưu trí", "thai sản", "ốm đau", "tử tuất", "trợ cấp"],
     ink: "1E2A22", acc: "2F6B3F", page: "F3F8F1", muted: "4E5F53", line: "9CC29A", bad: "9A3324", good: "2F6B3F", gold: "D9AE3A",
     nen: "sage", khung: "double", the: "ledger", nhan: "outline", so: "cell", tienDo: "stamps", vat: ["booklet", "coins", "stamp"], chuyen: "stamp", art: "passbook" },
@@ -273,16 +276,18 @@ function daMau(ten) {
 // vật 3D (PNG Fluent Emoji) bọc trong SVG: bóng đổ mềm dưới chân — "3d:lua"
 const vat3d = (ten) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><ellipse cx="100" cy="186" rx="64" ry="10" fill="#000" fill-opacity=".16"/><image href="${f3d(ten)}" x="10" y="4" width="180" height="180"/></svg>`;
 // hình lớn ghép từ vật 3D: "3d:o-mua,nha,o-to,tim" → vật đầu là vai chính (lớn, giữa), các vật sau xếp hàng dưới trên một vệt sàn; đĩa sáng màu nhấn phía sau
-function art3d(ds, c) {
-  const [chinh, ...phu] = ds.filter(coF3d); if (!chinh) return "";
-  const A = c.acc, n = Math.min(phu.length, 4), w = n ? Math.min(128, 400 / n) : 0, x0 = 210 - (n * w) / 2;
+function art3d(ds, c, nguon = { co: coF3d, uri: f3d }) {
+  const [chinh, ...phu] = ds.filter(nguon.co); if (!chinh) return ""; const f3d = nguon.uri;
+  const A = c.acc, n = Math.min(phu.length, 4), w = n ? Math.min(112, 400 / n) : 0, x0 = 210 - (n * w) / 2;
   const hang = phu.slice(0, 4).map((t, k) => `<ellipse cx="${x0 + k * w + w / 2}" cy="${300}" rx="${w * 0.36}" ry="7" fill="#000" fill-opacity=".14"/><image href="${f3d(t)}" x="${x0 + k * w + 6}" y="${300 - w + 8}" width="${w - 12}" height="${w - 12}"/>`).join("");
-  const S = n ? 186 : 240, y = n ? 24 : 40;
+  const S = n ? 176 : 240, y = n ? 6 : 40;
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320"><circle cx="210" cy="${n ? 130 : 160}" r="${n ? 112 : 130}" fill="#${A}" fill-opacity=".16"/><circle cx="210" cy="${n ? 130 : 160}" r="${n ? 128 : 148}" fill="none" stroke="#${A}" stroke-opacity=".35" stroke-width="2" stroke-dasharray="2 10"/>`
     + `${n ? `<rect x="${x0 - 10}" y="296" width="${n * w + 20}" height="6" rx="3" fill="#${A}" fill-opacity=".3"/>` : ""}<image href="${f3d(chinh)}" x="${210 - S / 2}" y="${y}" width="${S}" height="${S}"/>${hang}</svg>`;
 }
-const vatSvg = (ten, c) => { if (String(ten).startsWith("3d:")) return coF3d(ten.slice(3)) ? vat3d(ten.slice(3)) : ""; const f = PROPS[ten]; return f ? f({ acc: c.acc, gold: c.gold, ink: c.ink, tape: c.gold, accLight: mix(c.acc, "FFFFFF", 0.5), bad: c.bad }).svg : ""; };
-const artSvg = (ten, c, nen) => { if (String(ten).startsWith("3d:")) return art3d(ten.slice(3).split(","), c); const f = ART[ten]; return f ? f(c.acc, c.bad, nen || "FFFFFF") : ""; };
+const vatSvg = (ten, c) => { if (String(ten).startsWith("ve:")) return VEBH.veSvg(ten.slice(3), bangVe(c, false)); if (String(ten).startsWith("3d:")) return coF3d(ten.slice(3)) ? vat3d(ten.slice(3)) : ""; const f = PROPS[ten]; return f ? f({ acc: c.acc, gold: c.gold, ink: c.ink, tape: c.gold, accLight: mix(c.acc, "FFFFFF", 0.5), bad: c.bad }).svg : ""; };
+const artSvg = (ten, c, nen) => { if (String(ten).startsWith("ve:")) { const toi = nen && parseInt(nen.slice(0, 2), 16) + parseInt(nen.slice(2, 4), 16) + parseInt(nen.slice(4, 6), 16) < 300;
+    return art3d(ten.slice(3).split(","), c, { co: VEBH.coVe, uri: (t) => uriVe(t, c, toi) }); }
+  if (String(ten).startsWith("3d:")) return art3d(ten.slice(3).split(","), c); const f = ART[ten]; return f ? f(c.acc, c.bad, nen || "FFFFFF") : ""; };
 
 const LOAI_SANG = new Set(["light"]);
 /** Thêm chất liệu vào một <section> của type thường: lớp da-<tên>, khung, tờ giấy (bc / qt), hình lớn (bìa / chương / kết), đồ vật tiền cảnh. */
@@ -340,4 +345,4 @@ function motifSlide(html, motif, ten, type, i) {
 }
 
 const CHUYEN = { stamp: "stamp", flip: "flip", slide: "slide", wipe: "wipe", drop: "drop", pop: "pop", rise: "rise" };
-module.exports = { DA, NAMES, ALIAS, AUTO, chonDa, daCss, daMau, phuSlide, khungSlide, motifSlide, khungSvg, nenSvg, vatSvg, artSvg, CHUYEN, mix };
+module.exports = { uriVe, DA, NAMES, ALIAS, AUTO, chonDa, daCss, daMau, phuSlide, khungSlide, motifSlide, khungSvg, nenSvg, vatSvg, artSvg, CHUYEN, mix };
