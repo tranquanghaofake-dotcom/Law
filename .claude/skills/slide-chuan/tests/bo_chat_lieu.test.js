@@ -29,5 +29,6 @@ test("nhịp: 3 slide cùng type liền nhau → gợi ý (không chặn --stric
 test("đồ vật vẽ bằng code: mọi PROPS ra SVG hợp lệ, không nhúng ảnh ngoài", () => {
   const P = { acc: "1E6B62", accLight: "A5C4C0", gold: "C9A45C", ink: "0E3A3B", tape: "E4D2AE" };
   for (const [k, fn] of Object.entries(PROPS)) { const p = fn(P); assert.ok(/^<svg /.test(p.svg) && p.ratio > 0, k); assert.ok(!/<image|href=/.test(p.svg), `${k}: không được nhúng ảnh`); }
-  for (const k of DA.NAMES) for (const pr of DA.DA[k].vat) assert.ok(PROPS[pr], `da ${k}: thiếu đồ vật ${pr}`);
+  const { coF3d } = require("../hinh/f3d");   // "3d:<vật>" = vật 3D PNG trong hinh/f3d (không phải vẽ bằng code)
+  for (const k of DA.NAMES) for (const pr of DA.DA[k].vat) assert.ok(pr.startsWith("3d:") ? coF3d(pr.slice(3)) : PROPS[pr], `da ${k}: thiếu đồ vật ${pr}`);
 });
