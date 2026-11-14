@@ -44,3 +44,13 @@ Nguồn gốc: deck BNK405 Chương 3 (Bảo hiểm thương mại) bị chê 8 
 - `hinh/ve_bh.js`: vật tự vẽ (`ve:<tên>`), phông nền theo giờ `phong(P, gio)`.
 - `hinh/canh_phim.js`: cảnh dựng chuẩn (`bia(P, gio)`), `cat()` — chỉ để làm ảnh nền tham chiếu, KHÔNG để dán vào ô ảnh.
 - `hinh/dung.js` → `dungPhim`: trường `phong`, `dien` (`ve`, `x`, `y`, `w`, `m` tên Morph, `nhan` nhãn chữ thật gắn vật, `lat`), `noi` (mũi tên nối diễn viên có nhãn), `tienCanh` (khối tối đóng khung), `cam` (máy quay).
+
+## Biểu đồ cách điệu (`bieuDo`, `hinh/bieu_do_ve.js`) — 11/2026
+Số liệu và quan hệ định lượng mang **hình của chính vật trong câu chuyện**, vẽ **đúng tỉ lệ**; nhãn số là chữ thật. Không phải "biểu đồ cột + tranh minh hoạ đặt cạnh".
+| Nội dung | Kiểu | Vì sao hợp |
+|---|---|---|
+| Chia theo tỷ lệ % (tái BH số thành 35 / 65) | `o-ty-le`: tán ô = biểu đồ tròn, góc ∝ % | ô che rủi ro được chia cho các bên |
+| Đơn vị lặp, bội số (mức dôi: 1 lần + 15 lần + 20 lần) | `thap-tang`: mỗi tầng = một đơn vị, nhóm tầng cùng màu | "lần" (line) đếm được bằng mắt |
+| So hai đại lượng cùng thang (STBH với GTBH, 4 trường hợp) | `nha-khien`: nhà cao = GTBH, khiên cao = STBH, nhiều khiên chồng = BH trùng | so chiều cao trên một thang chung |
+Luật: (1) tỉ lệ hình = tỉ lệ số liệu, một thang chung cho cả biểu đồ; (2) mỗi vật chở đúng một đại lượng, nói rõ trong phụ đề ("nhà cao = GTBH"); (3) không thêm vật trang trí cạnh biểu đồ; (4) số liệu phải có trong tài liệu gốc — không tự suy ra đáp số bài tập.
+Thêm kiểu mới: một hàm trong `KIEU` trả `{ svg, nhan }`, cùng phong cách `ve_bh.js`, kèm test.

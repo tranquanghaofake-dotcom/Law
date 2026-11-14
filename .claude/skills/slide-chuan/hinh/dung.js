@@ -31,7 +31,8 @@ const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").
 // Hình thêm của người dùng đặt lẻ ở hinh/emoji/<tên>.svg; trùng tên thì kho gộp thắng.
 // Tên "3d:<vật>" = vật 3D Fluent Emoji (hinh/f3d, PNG) thay cho hình dán phẳng — dùng được ở mọi trường emoji / emojis / art / vat.
 const { f3d, coF3d } = require("./f3d");
-const VEBH = require("./ve_bh");   // "ve:<vật>" = vật tự vẽ (hinh/ve_bh.js), tô theo màu của da
+const VEBH = require("./ve_bh");
+const BDV = require("./bieu_do_ve");   // biểu đồ cách điệu: số liệu mang hình vật của câu chuyện   // "ve:<vật>" = vật tự vẽ (hinh/ve_bh.js), tô theo màu của da
 // DỰNG CẢNH PHIM trên slide type thường (11/2026): "phong" = phông nền theo giờ (hinh/ve_bh.js phong, rộng 2400 px; pan 0–1 = máy quay lia dọc phông),
 // "dien" = diễn viên (vật tự vẽ) đặt tuyệt đối, tên Morph "dv-<m>" — cùng diễn viên ở slide kề nhau thì Morph dời nó như một cảnh quay liền;
 // diễn viên mới xuất hiện thì bật vào (hoặc data-a riêng). Slide có phông nền chuyển sang nền sáng (chữ mực trên trời sáng).
@@ -68,6 +69,14 @@ function dungPhim(s, h, daTen, i, st) {
     const goc = (ten, svgBody, l) => `<div class="emo phim-tien" data-l="tien-${ten}-${i}" data-m="tien-${ten}" data-sau="1.6" data-alt="Tiền cảnh: bụi cây" style="left:${l}px;top:760px;width:420px;height:320px;z-index:4"><img src="${uri(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320">${svgBody}</svg>`)}" alt="" style="filter:none"></div>`;
     if (s.tienCanh !== "phai") them += goc("trai", bui(60, 330, 170) + bui(250, 380, 140), -60);
     if (s.tienCanh !== "trai") them += goc("phai", bui(360, 320, 180) + bui(170, 390, 140), 1560); }
+  // BIỂU ĐỒ CÁCH ĐIỆU (hinh/bieu_do_ve.js): hình là lớp ảnh, nhãn số là chữ thật đặt theo toạ độ của hình
+  if (s.bieuDo && BDV.coKieu(s.bieuDo.kieu)) { const b = s.bieuDo, X = +b.x || 960, Y = +b.y || 300, Wb = +b.w || 860, Hb = +b.h || 700;
+    const r = BDV.KIEU[b.kieu](b, P, Wb, Hb);
+    them += `<div class="emo bd-hinh" data-l="bd-${i}" data-m="bd-${esc(b.kieu)}" data-a="rise" data-at="350" data-alt="Biểu đồ: ${esc(b.alt || b.kieu)}" style="left:${X}px;top:${Y}px;width:${Wb}px;height:${Hb}px;z-index:2"><img src="${uri(r.svg)}" alt="" style="filter:none"></div>`;
+    r.nhan.forEach((n, k) => { const cl = n.cls || "", trai = /\btrai\b/.test(cl), phai = /chu-giai/.test(cl);
+      const pos = trai ? `left:${(X + n.x).toFixed(0)}px;top:${(Y + n.y).toFixed(0)}px` : phai ? `right:${(1920 - X - n.x).toFixed(0)}px;top:${(Y + n.y).toFixed(0)}px` : `left:${(X + n.x - 200).toFixed(0)}px;top:${(Y + n.y).toFixed(0)}px`;
+      them += `<div class="bd-nhan ${esc(cl)}" data-in="rise" style="--i:${10 + k * 2};${pos}"><b>${esc(n.t)}</b>${n.b ? `<small>${esc(n.b)}</small>` : ""}</div>`; });
+    if (!s.phong) h = h.replace(/^<section class="s ([^"]*)"/, (m, cl) => `<section class="s ${cl.replace(/\b(dark|red)\b/g, "light")} co-bd"`); }
   st.prevDv = nay;
   return h.replace(/^(<section [^>]*>)/, `$1${truoc}`).replace(/<\/section>\s*$/, them + "</section>");
 }
@@ -85,7 +94,7 @@ const decoGan = (s, ctx, i, html, prev = new Set(), now = new Set()) => { const 
   return g ? html.replace(/<\/section>\s*$/, g + "</section>") : html; };
 // THEO DÕI TRƯỜNG ĐƯỢC ĐỌC KHI DỰNG: mỗi slide bọc trong Proxy ghi lại đường dẫn khoá được đọc (mảng → "[]"). Trường có trong deck.json mà
 // không mẫu nào đọc = gõ sai tên, hoặc type đó không vẽ trường đó — trước đây bị bỏ âm thầm (takeaway, pin, part… — loi-da-biet F3.1)
-const KHONG_XET = new Set(["phong", "dien", "cam", "noi", "tienCanh", "covers", "basis", "scopeOk", "activitySec", "photoCredit", "photoSource", "photoLicense", "license", "source", "credit", "notes", "check"]);
+const KHONG_XET = new Set(["phong", "dien", "cam", "noi", "tienCanh", "bieuDo", "covers", "basis", "scopeOk", "activitySec", "photoCredit", "photoSource", "photoLicense", "license", "source", "credit", "notes", "check"]);
 function theoDoi(slides) {
   const doc = slides.map(() => new Set()), kho = new WeakMap();
   const boc = (o, j, p) => { if (!o || typeof o !== "object") return o; let m = kho.get(o); if (!m) { m = new Map(); kho.set(o, m); } if (m.has(j + p)) return m.get(j + p);
@@ -138,8 +147,8 @@ function dungHtml(deck, { deckDir = process.cwd(), mau, chuyen, mepCat = {} } = 
       if (muon && !nen.split(/\s+/).includes(muon)) bo.push(`slide ${i + 1} (${s.type}) mode "${s.mode}"`); }
     let h = decoGan(s, ctx, i, r.html, prev, st.prev);
     if (deck.meta?.motif && !ctx.img(s.photo)) h = DA.motifSlide(h, deck.meta.motif, daTen, s.type, i);
-    if (daTen) h = DA.phuSlide(h, daTen, { type: s.type, i, chu: [s.kicker, s.title, s.sub].filter(Boolean).join(" ").replace(/[[\]]/g, ""), coHinhDan: !!((s.emoji && ctx.hasEmoji(s.emoji)) || s.cutout || (s.type === "cover" && s.layout === "typo")), coAnh: !!ctx.img(s.photo) || !!s.phong, art: s.art, artCaption: s.artCaption });
-    if (s.phong || s.dien || s.tienCanh) h = dungPhim(s, h, daTen, i, st); else st.prevDv = new Set();
+    if (daTen) h = DA.phuSlide(h, daTen, { type: s.type, i, chu: [s.kicker, s.title, s.sub].filter(Boolean).join(" ").replace(/[[\]]/g, ""), coHinhDan: !!((s.emoji && ctx.hasEmoji(s.emoji)) || s.cutout || (s.type === "cover" && s.layout === "typo")), coAnh: !!ctx.img(s.photo) || !!s.phong || !!s.bieuDo, art: s.art, artCaption: s.artCaption });
+    if (s.phong || s.dien || s.tienCanh || s.bieuDo) h = dungPhim(s, h, daTen, i, st); else st.prevDv = new Set();
     // pin: MỘT câu chính trên tờ giấy ghim (validate.js kiểm ≤ 90 ký tự, có "by" khi là câu trích); hinh.js tự tìm chỗ trống, không có chỗ → kiemTran báo
     if (s.pin != null && !["cover", "section", "end"].includes(s.type)) { const pt = typeof s.pin === "string" ? s.pin : s.pin.text || "", by = typeof s.pin === "object" ? s.pin.by : "";
       h = h.replace(/^<section class="s /, `<section class="s co-ghim `).replace(/<\/section>\s*$/, `<div class="ghim-giay" data-ghim data-in="pop" style="--i:60"><p>${esc(pt).replace(/\[([^\]]+)\]/g, "<em>$1</em>")}</p>${by ? `<small>— ${esc(by)}</small>` : ""}</div></section>`); }

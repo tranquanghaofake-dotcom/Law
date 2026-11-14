@@ -271,3 +271,13 @@ test("dựng slide như dựng cảnh (references/dung-canh.md): phông nền + 
   assert.ok(sec[0].includes('data-m="noi-anh-x-dnbh"') && /phim-nhan noi[^>]*><b>Phí BH/.test(sec[0]), "mũi tên nối diễn viên có nhãn chữ thật");
   assert.ok(sec[0].includes('data-m="tien-trai"') && sec[0].includes('data-m="tien-phai"'), "tiền cảnh tối đóng khung hai góc");
 });
+
+test("biểu đồ cách điệu (hinh/bieu_do_ve.js): tán ô chia đúng tỉ lệ; tháp đủ số tầng; nhãn số là chữ thật; slide chuyển nền sáng", () => {
+  const BDV = require("../hinh/bieu_do_ve"), P = { acc: "0F5C55", gold: "EFA23F", ink: "17302E", bad: "B0302A" };
+  const o = BDV.KIEU["o-ty-le"]({ phan: [{ v: 35, t: "A" }, { v: 65, t: "B" }] }, P, 800, 700);
+  assert.deepEqual(o.nhan.filter((n) => /so-lon/.test(n.cls)).map((n) => n.t), ["35%", "65%"]);
+  const t = BDV.KIEU["thap-tang"]({ nhom: [{ n: 1, t: "a" }, { n: 15, t: "b" }, { n: 20, t: "c" }] }, P, 800, 860);
+  assert.equal((t.svg.match(/rx="2"/g) || []).length, 36, "36 tầng = 1 + 15 + 20");
+  const h = dungHtml(deck({ da: "hop-dong-bh" }, [{ type: "statement", title: "Thử", bieuDo: { kieu: "o-ty-le", phan: [{ v: 35, t: "Giữ lại" }, { v: 65, t: "Nhận tái" }] } }]), { deckDir: path.join(__dirname, "..") }).html;
+  assert.ok(/class="s [^"]*light[^"]*co-bd/.test(h) && h.includes('data-m="bd-o-ty-le"') && /bd-nhan so-lon trang[^>]*><b>35%<\/b>/.test(h));
+});
