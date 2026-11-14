@@ -1,6 +1,6 @@
 // BIỂU ĐỒ CÁCH ĐIỆU (11/2026): số liệu mang hình của chính vật trong câu chuyện, vẽ ĐÚNG TỈ LỆ — không phải cột / tròn chung chung đặt cạnh tranh.
 // Mỗi kiểu (d, P, w, h) → { svg (khung w×h), nhan: [{ x, y, t, b, cls }] } — nhãn là CHỮ THẬT (dung.js đặt thành hộp chữ sửa được trong PowerPoint).
-// Phong cách như hinh/ve_bh.js: mảng phẳng + gradient (sáng trên trái), mặt tối bên phải, viền sáng, bóng mềm. Quy ước: references/dung-canh.md.
+// Phong cách như hinh/ve_bh.js: mảng phẳng + gradient (sáng trên trái), mặt tối bên phải, viền sáng, bóng mềm.
 const VEBH = require("./ve_bh");
 const mix = (a, b, t) => { const h = (x) => [0, 2, 4].map((i) => parseInt(x.slice(i, i + 2), 16)); const A = h(a), B = h(b); return A.map((v, i) => Math.round(v + (B[i] - v) * t).toString(16).padStart(2, "0")).join(""); };
 const f1 = (v) => (+v).toFixed(1);

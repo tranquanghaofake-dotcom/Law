@@ -52,7 +52,7 @@ function dungPhim(s, h, daTen, i, st) {
   (s.dien || []).forEach((d, k) => { const ten = d.ve; if (!VEBH.coVe(ten)) return; const m = d.m || ten, noi = truocDv.has(m); nay.add(m);
     const svg = VEBH.veSvg(ten, toi ? { ...P, ink: DA.mix(c.ink, "FFFFFF", 0.1) } : P);
     them += `<div class="emo phim-dv" data-l="dv-${i}-${k}" data-m="dv-${esc(m)}" data-sau="${d.sau ?? 1}" data-pad="8" data-alt="${esc(d.alt || "Hình vẽ: " + ten.replace(/-/g, " "))}" ${noi ? "" : `data-a="${esc(d.a || "pop")}" data-at="${d.at ?? 300 + k * 160}"`} style="left:${+d.x || 0}px;top:${+d.y || 0}px;width:${+d.w || 240}px;height:${+d.w || 240}px;z-index:${d.z ?? 2}"><img src="${uri(svg)}" alt="" style="filter:none;${d.lat ? "transform:scaleX(-1)" : ""}"></div>`; });
-  // NỘI DUNG GẮN VÀO CẢNH (references/dung-canh.md): nhãn chữ thật cạnh diễn viên; mũi tên nối diễn viên có nhãn; tiền cảnh tối đóng khung
+  // NỘI DUNG GẮN VÀO CẢNH: nhãn chữ thật cạnh diễn viên; mũi tên nối diễn viên có nhãn; tiền cảnh tối đóng khung
   const tam = {}; (s.dien || []).forEach((d) => { const w = +d.w || 240; tam[d.m || d.ve] = { x: (+d.x || 0) + w / 2, y: (+d.y || 0), w, d }; });
   (s.dien || []).forEach((d, k) => { if (!d.nhan) return; const t = tam[d.m || d.ve], n = typeof d.nhan === "string" ? { t: d.nhan } : d.nhan, ben = n.ben || "tren";
     const pos = ben === "duoi" ? `left:${t.x - 210}px;top:${t.y + t.w * 0.92}px` : ben === "trai" ? `left:${t.x - t.w / 2 - 330}px;top:${t.y + t.w * 0.4}px` : ben === "phai" ? `left:${t.x + t.w / 2 + 10}px;top:${t.y + t.w * 0.4}px` : `left:${t.x - 210}px;top:${t.y - 70}px`;

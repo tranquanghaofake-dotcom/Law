@@ -258,7 +258,7 @@ test("vật tự vẽ (hinh/ve_bh.js): mọi vật là SVG hợp lệ không nh�
   assert.ok(h.includes("data-da-vat") && h.includes(VE.veSvg("tai-bh", { acc: c.acc, gold: c.gold, ink: c.ink, bad: c.bad }).slice(0, 60).replace(/v\d+/g, "")) || h.includes("data-da-vat"), "slide nói về tái BH mang vật tái BH");
 });
 
-test("dựng slide như dựng cảnh (references/dung-canh.md): phông nền + diễn viên Morph + nhãn chữ thật gắn vật + mũi tên nối + tiền cảnh", () => {
+test("dựng slide như dựng cảnh: phông nền + diễn viên Morph + nhãn chữ thật gắn vật + mũi tên nối + tiền cảnh", () => {
   const sl = [{ type: "statement", title: "Cảnh thử", phong: { gio: "sang" }, tienCanh: "hai",
     dien: [{ ve: "anh-x", x: 200, y: 600, w: 220, m: "anh-x", nhan: { t: "Bên mua", ben: "duoi" } }, { ve: "toa-dnbh", x: 900, y: 300, w: 420, m: "dnbh" }],
     noi: [{ tu: "anh-x", den: "dnbh", nhan: "Phí BH" }] }, { type: "statement", title: "Cảnh sau", phong: { gio: "chieu" }, dien: [{ ve: "anh-x", x: 600, y: 600, w: 220, m: "anh-x" }] }];
