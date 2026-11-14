@@ -278,12 +278,15 @@ function phong(P, gio = "sang") {
   let pho = ""; for (let i = 0; i < 16; i++) { const x = 80 + i * 92, h = 60 + ((i * 37) % 90); pho += `<rect x="${x}" y="${640 - h}" width="70" height="${h}" fill="#${xa(0.68)}"/>`; }
   let cau = ""; for (const x of [1980, 2180]) cau += `<path d="M${x} 640 V420 H${x + 150} M${x} 440 L${x + 120} 420 M${x + 110} 420 V470" fill="none" stroke="#${xa(0.5)}" stroke-width="10"/>`;
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1080"><defs><linearGradient id="ph-t" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#${t1}"/><stop offset="1" stop-color="#${t2}"/></linearGradient>
-<radialGradient id="ph-m"><stop offset="0" stop-color="#FFF6D8"/><stop offset="1" stop-color="#FFF6D8" stop-opacity="0"/></radialGradient></defs>
+<radialGradient id="ph-m"><stop offset="0" stop-color="#FFF6D8"/><stop offset="1" stop-color="#FFF6D8" stop-opacity="0"/></radialGradient>
+<linearGradient id="ph-s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#${t2}" stop-opacity="0"/><stop offset=".6" stop-color="#${t2}" stop-opacity=".7"/><stop offset="1" stop-color="#${t2}" stop-opacity="0"/></linearGradient>
+<filter id="ph-h" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="6"/><feColorMatrix values="0 0 0 0 .2  0 0 0 0 .15  0 0 0 0 .2  0 0 0 .07 0"/></filter></defs>
 <rect width="2400" height="1080" fill="url(#ph-t)"/>${toi ? may(300, 150, 2.2, 0.35) + may(1300, 120, 2.6, 0.3) + may(2000, 170, 2, 0.35) : `<circle cx="${gio === "hoang-hon" ? 1700 : 1900}" cy="${gio === "hoang-hon" ? 560 : 210}" r="260" fill="url(#ph-m)"/><circle cx="${gio === "hoang-hon" ? 1700 : 1900}" cy="${gio === "hoang-hon" ? 560 : 210}" r="78" fill="#${gio === "hoang-hon" ? "F7A35C" : mix(P.gold, "FFFFFF", 0.45)}"/>` + may(420, 200, 1, 0.8) + may(1250, 140, 0.8, 0.7)}
 <path d="M0 620 Q300 520 620 590 T1260 560 T1900 600 V700 H0Z" fill="#${xa(0.78)}"/>${pho}${cau}
 <rect x="1880" y="640" width="520" height="90" fill="#${xa(0.55)}"/><path d="M1880 660 Q1960 650 2040 660 T2200 660 T2400 660" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="5"/>
+<rect x="0" y="560" width="2400" height="160" fill="url(#ph-s)"/>${(() => { let g = ""; for (let i = 0; i < 22; i++) { const x = 30 + i * 84, hh = 40 + ((i * 53) % 70); g += `<rect x="${x}" y="${690 - hh}" width="64" height="${hh}" fill="#${xa(0.55)}"/>`; for (let r = 0; r < Math.floor(hh / 22); r++) g += `<rect x="${x + 10}" y="${690 - hh + 8 + r * 22}" width="12" height="8" fill="#${toi ? "FFD98A" : xa(0.75)}" opacity="${toi ? 0.9 : 0.8}"/><rect x="${x + 40}" y="${690 - hh + 8 + r * 22}" width="12" height="8" fill="#${toi ? "FFD98A" : xa(0.75)}" opacity="${(i + r) % 3 ? 0.8 : 0.3}"/>`; } return g; })()}
 <path d="M0 700 Q480 650 980 690 T1880 680 V1080 H0Z" fill="#${xa(0.6)}"/><path d="M0 820 Q600 760 1200 800 T2400 790 V1080 H0Z" fill="#${xa(0.45)}"/>
-${toi ? [...Array(60).keys()].map((i) => `<path d="M${(i * 131) % 2400} ${(i * 71) % 760} l-12 30" stroke="#E6ECEE" stroke-width="5" stroke-linecap="round" opacity=".55"/>`).join("") : ""}</svg>`;
+${toi ? [...Array(60).keys()].map((i) => `<path d="M${(i * 131) % 2400} ${(i * 71) % 760} l-12 30" stroke="#E6ECEE" stroke-width="5" stroke-linecap="round" opacity=".55"/>`).join("") : ""}<rect width="2400" height="1080" filter="url(#ph-h)"/></svg>`;
 }
 
 const coVe = (ten) => Object.prototype.hasOwnProperty.call(VE, ten);

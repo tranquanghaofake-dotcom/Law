@@ -44,7 +44,7 @@ function dungPhim(s, h, daTen, i, st) {
   if (s.phong) { const pan = Math.max(0, Math.min(1, +s.phong.pan || 0)) * 480;
     truoc += `<div class="emo phim-phong" data-l="phong-${i}" data-m="phong" data-sau="0.35" data-alt="Phông nền: ${esc(s.phong.gio || "sang")}" style="left:${-pan}px;top:0;width:2400px;height:1080px;z-index:0"><img src="${uri(VEBH.phong(P, s.phong.gio))}" alt="" style="filter:none"></div>`;
     // màn sương ở nửa trên: chữ đọc rõ trên trời (cảnh vẫn thấy dưới chân chữ)
-    { const m0 = toi ? "28343A" : "F7F3EA", a0 = toi ? 0.86 : 0.9, a1 = toi ? 0.6 : 0.6;   // màn sương là LỚP ẢNH (div gradient không sang được PPTX)
+    { const m0 = toi ? "28343A" : "F7F3EA", a0 = toi ? 0.86 : 0.92, a1 = toi ? 0.6 : 0.7;   // màn sương là LỚP ẢNH (div gradient không sang được PPTX)
       const sv = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 760" preserveAspectRatio="none"><defs><linearGradient id="v" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#${m0}" stop-opacity="${a0}"/><stop offset=".55" stop-color="#${m0}" stop-opacity="${a1}"/><stop offset="1" stop-color="#${m0}" stop-opacity="0"/></linearGradient></defs><rect width="1920" height="760" fill="url(#v)"/></svg>`;
       truoc += `<div class="emo phim-veil" data-l="veil-${i}" data-m="veil" data-sau="0" data-alt="Màn sương sau chữ" style="left:0;top:0;width:1920px;height:760px;z-index:1"><img src="${uri(sv)}" alt="" style="filter:none"></div>`; }
     h = h.replace(/^<section class="s ([^"]*)"/, (m, cl) => `<section class="s ${cl.replace(/\b(dark|red)\b/g, "light")} phim ${toi ? "phim-toi" : ""}"`); }
@@ -72,10 +72,11 @@ function dungPhim(s, h, daTen, i, st) {
   // BIỂU ĐỒ CÁCH ĐIỆU (hinh/bieu_do_ve.js): hình là lớp ảnh, nhãn số là chữ thật đặt theo toạ độ của hình
   if (s.bieuDo && BDV.coKieu(s.bieuDo.kieu)) { const b = s.bieuDo, X = +b.x || 960, Y = +b.y || 300, Wb = +b.w || 860, Hb = +b.h || 700;
     const r = BDV.KIEU[b.kieu](b, P, Wb, Hb);
-    them += `<div class="emo bd-hinh" data-l="bd-${i}" data-m="bd-${esc(b.kieu)}" data-a="rise" data-at="350" data-alt="Biểu đồ: ${esc(b.alt || b.kieu)}" style="left:${X}px;top:${Y}px;width:${Wb}px;height:${Hb}px;z-index:2"><img src="${uri(r.svg)}" alt="" style="filter:none"></div>`;
+    // mỗi lớp của biểu đồ là một ảnh có hiệu ứng + thời điểm riêng: biểu đồ DỰNG LÊN theo lập luận khi trình chiếu
+    (r.lop || [{ svg: r.svg, a: "rise", at: 350 }]).forEach((l, k) => { them += `<div class="emo bd-hinh" data-l="bd-${i}-${k}" data-m="bd-${esc(b.kieu)}-${k}" data-a="${esc(l.a)}" data-at="${l.at}" data-alt="${k ? "" : `Biểu đồ: ${esc(b.alt || b.kieu)}`}" style="left:${X}px;top:${Y}px;width:${Wb}px;height:${Hb}px;z-index:${l.tren ? 3 : 2}"><img src="${uri(l.svg)}" alt="" style="filter:none"></div>`; });
     r.nhan.forEach((n, k) => { const cl = n.cls || "", trai = /\btrai\b/.test(cl), phai = /chu-giai/.test(cl);
       const pos = trai ? `left:${(X + n.x).toFixed(0)}px;top:${(Y + n.y).toFixed(0)}px` : phai ? `right:${(1920 - X - n.x).toFixed(0)}px;top:${(Y + n.y).toFixed(0)}px` : `left:${(X + n.x - (n.w || 400) / 2).toFixed(0)}px;top:${(Y + n.y).toFixed(0)}px;${n.w ? `width:${n.w}px` : ""}`;
-      them += `<div class="bd-nhan ${esc(cl)}" data-in="rise" style="--i:${10 + k * 2};${pos}"><b>${esc(n.t)}</b>${n.b ? `<small>${esc(n.b)}</small>` : ""}</div>`; });
+      them += `<div class="bd-nhan ${esc(cl)}" ${n.at ? `data-a="rise" data-at="${n.at}" style="${pos}"` : `data-in="rise" style="--i:${10 + k * 2};${pos}"`}><b>${esc(n.t)}</b>${n.b ? `<small>${esc(n.b)}</small>` : ""}</div>`; });
     if (!s.phong) h = h.replace(/^<section class="s ([^"]*)"/, (m, cl) => `<section class="s ${cl.replace(/\b(dark|red)\b/g, "light")} co-bd"`); }
   st.prevDv = nay;
   return h.replace(/^(<section [^>]*>)/, `$1${truoc}`).replace(/<\/section>\s*$/, them + "</section>");
