@@ -52,3 +52,19 @@ Giao khi mọi hạng ≥ 4 — kể cả Nhất quán và Thẩm mỹ (PPTEval 
 | ◇ phong phú: < 70 % slide có khối thị giác ≥ 25 % / > 30 % slide nền trơn | thêm khối hình học nền theo vai, thẻ tô đặc, cảnh minh hoạ lớn (`bo-cuc.md` mục 7); tối giản thật thì thẻ khai `"phongPhu": false` kèm lý do |
 | ◇ dễ đọc: slide quá nhiều chữ / chữ < 28 px / đoạn > 3 dòng / chữ nhỏ tương phản < 7 : 1 | rút câu, bỏ phụ đề trùng hình, biến ví dụ số thành dải hình, gom nhãn lặp thành chú giải; chữ phụ đậm màu hơn (`bo-cuc.md` mục 8) |
 | PPTX lệch HTML (tờ soát) | dùng thuộc tính CSS mà PowerPoint dựng lại được (`hop-dong-html.md`) |
+| hộp chữ có nền riêng nằm trên lớp ảnh (mục 6) | gắn `data-l` + `data-alt` cho chính hộp chữ (chip, nhãn có nền) |
+| đoạn có nền tô trong hộp chữ (mục 7) | nhấn bằng màu chữ; cần nền thì tách hộp riêng `data-t` + `data-l` |
+| khối có nền nằm trên lớp ảnh (mục 8) | gắn `data-l` + `data-alt` cho khối (vạch kẻ trong thẻ, ô màu) |
+| ⟋ mép hoạ tiết / ✂ nét cắt chữ | dời hoạ tiết hoặc chữ; nét, mép hình không chạy qua chữ |
+| ◇ trích: không khớp nguyên văn / khác dấu | chép đúng câu trong `noi-dung.md`, kể cả kiểu bỏ dấu; lược bỏ ghi “…”; câu tự diễn đạt bỏ `data-trich` |
+| ◇ kịch bản: tiêu đề khác kịch bản / lệch số slide | ghi ngược câu đã duyệt vào `kich-ban.md` (nguồn duy nhất của chữ) — hoặc sửa slide theo kịch bản |
+| ⚠ ngưỡng nới quá mặc định | trả ngưỡng về mặc định; cố ý nới thì ghi lý do trong `lyDoNguong` của `phong-cach.json` (người duyệt đọc) |
+
+## 4. Mức lỗi và luật dừng
+Mỗi lỗi người duyệt / thẩm định nêu gắn một mức (mẫu brief đã buộc):
+| Mức | Gồm | Xử lý |
+|---|---|---|
+| **[CHẶN]** | sai luật / nội dung · thiếu ý pháp lý (điều kiện, ngoại lệ, chủ thể, thời hạn) · hình sai nghĩa · chữ / nền mất ở PPTX · chữ không đọc được · ảnh có dấu nước, không rõ giấy phép | phải sửa trước khi giao |
+| **[NÊN]** | căn chỉnh, nhịp, khoảng thở, ngắt dòng xấu, nhất quán chưa trọn | sửa trong cùng vòng nếu rẻ |
+| **[GHI NHẬN]** | gu, ý nâng thêm | chép `nhat-ky.md`; không mở vòng mới vì nó |
+Giao khi 0 CHẶN + mọi hạng ≥ 4. Tối đa 2 vòng đầy đủ + 1 vòng duyệt lại có phạm vi; quá → báo người dùng (`vai-tro.md`).

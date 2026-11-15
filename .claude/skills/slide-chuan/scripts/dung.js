@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // DỰNG DECK TỪ CÁC SLIDE HTML THIẾT KẾ TỰ DO → PPTX sửa được + kiểm lỗi + ảnh tổng.
-//   node scripts/dung.js <thư_mục_bài> [--ten=<tên file>] [--khong-soat] [--nhap]
+//   node scripts/dung.js <thư_mục_bài> [--ten=<tên file>] [--nhanh] [--khong-soat] [--nhap]
+//   --nhanh: chỉ kiểm HTML + chữ (dưới 1 phút, không dựng PPTX / ảnh) — cho vòng sửa; dựng đủ trước khi duyệt
 // Thư mục bài:
 //   slides/*.html   mỗi file chứa ≥ 1 <section class="s" …>…</section> (thứ tự = tên file) — quy ước: references/hop-dong-html.md
 //   style.css       CSS riêng của bài (tuỳ chọn)
@@ -58,20 +59,55 @@ function anhTong(work) {
     return out; })();
 }
 
+// kiểm trong trang (HTML đã nạp font): chữ không sửa được, tràn, đè, đa dạng, nhất quán, phong phú, dễ đọc
+async function kiemTrang(page, the) {
+  const { kiemHtml } = require("./kiem_html"), { kiemDeTrongTrang } = require(path.join(HINH, "kiem_de"));
+  const { thuThap, danhGia, NGUONG } = require("./da_dang"), { thuThapNhatQuan, danhGiaNhatQuan } = require("./nhat_quan"), { thuThapPhongPhu, danhGiaPhongPhu } = require("./phong_phu"), { thuThapDeDoc, danhGiaDeDoc } = require("./de_doc");
+  const ng = { ...NGUONG, ...((the && the.nguong) || {}) };   // thẻ phong cách được chỉnh ngưỡng (nới quá mặc định phải có lyDoNguong — scripts/nguong.js)
+  const a = await page.evaluate(kiemHtml), b = await page.evaluate(kiemDeTrongTrang), dd = danhGia(await page.evaluate(thuThap), ng);
+  const nq = danhGiaNhatQuan(await page.evaluate(thuThapNhatQuan), the), pp = danhGiaPhongPhu(await page.evaluate(thuThapPhongPhu), the, the && the.nguong), dc = danhGiaDeDoc(await page.evaluate(thuThapDeDoc), the, the && the.nguong);
+  return { loi: [...a, ...b, ...dd.loi, ...nq.loi, ...pp.loi, ...dc.loi], dd, pp, dc };
+}
+
+// kiểm chữ (không cần trình duyệt): ghi <tên>_lop/chu.md (chữ, mô tả hình, lời nói, ước thời lượng — cho thẩm định / biên tập / diễn tập),
+// trích nguyên văn đối chiếu noi-dung.md, tiêu đề khớp kich-ban.md, ngưỡng nới quá mặc định
+function kiemChu(dir, work, the) {
+  const { docChu, vietChu } = require("./chu_slide"), ds = docChu(dir), fChu = path.join(work, "chu.md"); fs.writeFileSync(fChu, vietChu(ds));
+  const doc = (f) => (fs.existsSync(path.join(dir, f)) ? fs.readFileSync(path.join(dir, f), "utf8") : null);
+  const tr = require("./trich_nguyen_van").kiemTrich(ds, doc("noi-dung.md")), kb = require("./kich_ban_khop").kiemKichBan(ds, doc("kich-ban.md")), ng = require("./nguong").kiemNguong(the);
+  return { loi: [...tr.loi, ...kb.loi, ...ng.loi], tom: [tr.tom, kb.tom, ...ng.ghiChu.map((g) => `ℹ ngưỡng nới có lý do — ${g}`), `✓ Chữ từng slide (thẩm định, biên tập, ước thời lượng): ${fChu}`].filter(Boolean) };
+}
+
+const docThe = (dir) => { const f = path.join(dir, "thiet-ke", "phong-cach.json"); return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : null; };
+const anhCuaDeck = (dir, html) => [...new Set([...html.matchAll(/<img\b[^>]*\bdata-l\b[^>]*>/g)].map((m) => (m[0].match(/\bsrc="([^"]+)"/) || [])[1]).filter(Boolean))]
+  .filter((s) => !/^(data:|https?:)/.test(s) && fs.existsSync(path.join(dir, s.split("?")[0])));
+
+// --nhanh: chỉ kiểm HTML + chữ (không dựng PPTX, không chụp ảnh, không tờ soát) — dùng cho vòng sửa; dựng đủ khi chốt
+async function dungNhanh(dir, { ten, nhap = false } = {}) {
+  dir = path.resolve(dir); ten = ten || path.basename(dir);
+  const work = path.join(dir, ten + "_lop"); fs.mkdirSync(work, { recursive: true });
+  const { files, html } = ghepHtml(dir), htmlPath = path.join(work, "deck.html"); fs.writeFileSync(htmlPath, html);
+  const the = docThe(dir), { chromium } = require("playwright");
+  const browser = await (process.env.PW_CHROMIUM ? chromium.launch({ executablePath: process.env.PW_CHROMIUM }) : chromium.launch().catch(() => chromium.launch({ executablePath: "/opt/pw-browsers/chromium" })));
+  const page = await browser.newPage({ viewport: { width: 1920, height: 1080 } });
+  await page.goto(url(htmlPath), { waitUntil: "load" }); await page.evaluate(() => document.fonts.ready); await page.evaluate(() => window.hinhSanSang || null);
+  const kt = await kiemTrang(page, the); await browser.close();
+  const kc = kiemChu(dir, work, the), loi = [...kt.loi, ...require("./kiem_phong_cach").kiemPhongCach(dir, anhCuaDeck(dir, html)), ...kc.loi];
+  console.log(`· --nhanh: ${files.length} file slide, chỉ kiểm HTML + chữ (không dựng PPTX — dựng đủ trước khi duyệt)`);
+  for (const t of [kt.dd && kt.dd.bang, kt.pp && kt.pp.tom, kt.dc && kt.dc.tom, ...kc.tom]) if (t) console.log(t);
+  if (loi.length) { console.log(`⚠ ${loi.length} lỗi:\n  ${loi.join("\n  ")}`); if (!nhap) process.exitCode = 1; }
+  else console.log("✓ Không còn lỗi máy bắt được ở phần HTML + chữ — dựng đủ (bỏ --nhanh) để soát PPTX và ảnh");
+  return { loi, htmlPath };
+}
+
 async function dung(dir, { ten, soat = true, nhap = false } = {}) {
   dir = path.resolve(dir); ten = ten || path.basename(dir);
   const outPath = path.join(dir, ten + ".pptx"), work = path.join(dir, ten + "_lop");
   fs.rmSync(work, { recursive: true, force: true }); fs.mkdirSync(work, { recursive: true });
   const { files, html } = ghepHtml(dir), htmlPath = path.join(work, "deck.html"); fs.writeFileSync(htmlPath, html);
   console.log(`· ${files.length} file slide → ${htmlPath}`);
-  const { kiemHtml } = require("./kiem_html"), { kiemDeTrongTrang } = require(path.join(HINH, "kiem_de"));
-  const loi = [];
-  const { thuThap, danhGia, NGUONG } = require("./da_dang"), { thuThapNhatQuan, danhGiaNhatQuan } = require("./nhat_quan"), { thuThapPhongPhu, danhGiaPhongPhu } = require("./phong_phu"), { thuThapDeDoc, danhGiaDeDoc } = require("./de_doc"); let dd = null, pp = null, dc = null;
-  const fThe = path.join(dir, "thiet-ke", "phong-cach.json"), the = fs.existsSync(fThe) ? JSON.parse(fs.readFileSync(fThe, "utf8")) : null;
-  const ng = { ...NGUONG, ...((the && the.nguong) || {}) };   // thẻ phong cách được chỉnh ngưỡng đa dạng (vd. deck biên tập tối giản: cùng nền giấy nhiều slide liền là chủ ý)
-  const truoc = async (page) => { const a = await page.evaluate(kiemHtml), b = await page.evaluate(kiemDeTrongTrang); dd = danhGia(await page.evaluate(thuThap), ng);
-    const nq = danhGiaNhatQuan(await page.evaluate(thuThapNhatQuan), the); pp = danhGiaPhongPhu(await page.evaluate(thuThapPhongPhu), the, the && the.nguong); dc = danhGiaDeDoc(await page.evaluate(thuThapDeDoc), the, the && the.nguong);
-    return [...a, ...b, ...dd.loi, ...nq.loi, ...pp.loi, ...dc.loi]; };
+  const loi = [], the = docThe(dir); let dd = null, pp = null, dc = null;
+  const truoc = async (page) => { const kt = await kiemTrang(page, the); ({ dd, pp, dc } = kt); return kt.loi; };
   const { build } = require(path.join(HINH, "build"));
   const res = await build({ htmlPath, outPath, soat, giuLop: true, truoc });
   loi.push(...(res.warn || []), ...(res.lost || []));
@@ -87,15 +123,12 @@ async function dung(dir, { ten, soat = true, nhap = false } = {}) {
   const tong = await anhTong(work);
   const ba = await bangAsset(dir, html, work);
   loi.push(...require("./kiem_phong_cach").kiemPhongCach(dir, ba.srcs));
-  // chữ từng slide → <tên>_lop/chu.md (bản đọc cho thẩm định học thuật + biên tập câu chữ); trích nguyên văn đối chiếu noi-dung.md
-  const { docChu, vietChu } = require("./chu_slide"), chuDs = docChu(dir), fChu = path.join(work, "chu.md"); fs.writeFileSync(fChu, vietChu(chuDs));
-  const fNguon = path.join(dir, "noi-dung.md"), tr = require("./trich_nguyen_van").kiemTrich(chuDs, fs.existsSync(fNguon) ? fs.readFileSync(fNguon, "utf8") : null); loi.push(...tr.loi);
+  const kc = kiemChu(dir, work, the); loi.push(...kc.loi);
   if (ba.anh) console.log(`✓ Bảng xem thử asset (${ba.srcs.length} hình — soát cùng một phong cách): ${ba.anh}`);
   if (dd) console.log(dd.bang);
   if (pp && pp.tom) console.log(pp.tom);
   if (dc && dc.tom) console.log(dc.tom);
-  if (tr.tom) console.log(tr.tom);
-  console.log(`✓ Chữ từng slide (cho thẩm định học thuật, biên tập câu chữ): ${fChu}`);
+  for (const t of kc.tom) console.log(t);
   console.log(`✓ ${res.slides} slide → ${outPath} · ${res.text} hộp chữ · ${res.pics} lớp ảnh · ${res.fx} hiệu ứng · ${res.morph} Morph`);
   console.log(`✓ Ảnh tổng (xem bằng mắt trước khi giao): ${tong.join(", ")}`);
   if (soat) console.log(`✓ Tờ soát HTML ↔ PPTX: ${path.join(work, "soat-*.jpg")}`);
@@ -104,10 +137,10 @@ async function dung(dir, { ten, soat = true, nhap = false } = {}) {
   return { ...res, loi, outPath, work, htmlPath, tong, daDang: dd, bangAsset: ba.anh };
 }
 
-module.exports = { dung, ghepHtml };
+module.exports = { dung, dungNhanh, ghepHtml, kiemChu };
 if (require.main === module) {
   const a = process.argv.slice(2), f = new Set(a.filter((x) => x.startsWith("--"))), pos = a.filter((x) => !x.startsWith("--"));
-  if (!pos.length) { console.error("Dùng: node scripts/dung.js <thư_mục_bài> [--ten=<tên>] [--khong-soat] [--nhap]"); process.exit(2); }
+  if (!pos.length) { console.error("Dùng: node scripts/dung.js <thư_mục_bài> [--ten=<tên>] [--nhanh] [--khong-soat] [--nhap]"); process.exit(2); }
   const ten = (a.find((x) => x.startsWith("--ten=")) || "").slice(6) || undefined;
-  dung(pos[0], { ten, soat: !f.has("--khong-soat"), nhap: f.has("--nhap") }).catch((e) => { console.error("✗ " + (e.message || e)); process.exit(e.code || 2); });
+  (f.has("--nhanh") ? dungNhanh(pos[0], { ten, nhap: f.has("--nhap") }) : dung(pos[0], { ten, soat: !f.has("--khong-soat"), nhap: f.has("--nhap") })).catch((e) => { console.error("✗ " + (e.message || e)); process.exit(e.code || 2); });
 }

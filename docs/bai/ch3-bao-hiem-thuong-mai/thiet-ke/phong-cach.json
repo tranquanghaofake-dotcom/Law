@@ -49,14 +49,13 @@
     "so-sanh"
   ],
   "nguong": {
-    "loaiNenToiThieu": 2,
-    "tiLeNenToiDa": 0.85,
     "lienToiDa": 6,
     "lienHoToiDa": 6,
-    "assetToiDa": 4,
-    "bangXetTiLe": 99,
     "tieuDiemToiThieu": 0.15
   },
   "ghiChuNguong": "Hướng biên tập: một kiểu bảng cho cả deck là chủ ý (bo-cuc.md); slide lấy chữ / số lớn làm tiêu điểm khai data-khong-hinh. Nhịp nền (15/11/2026, vòng duyệt 6): tối đa 6 slide liền cùng họ nền.",
-  "ghiChuNguon": "Ảnh chụp Unsplash (giấy phép Unsplash) và minh hoạ unDraw (giấy phép unDraw) — Hào chọn 15/11/2026; ghi nguồn trong ghi-cong.md. Không ảnh AI."
+  "ghiChuNguon": "Ảnh chụp Unsplash (giấy phép Unsplash) và minh hoạ unDraw (giấy phép unDraw) — Hào chọn 15/11/2026; ghi nguồn trong ghi-cong.md. Không ảnh AI.",
+  "lyDoNguong": {
+    "tieuDiemToiThieu": "hướng \"khối phẳng\": slide bảng số, cây phân loại, thẻ so sánh, thanh tỉ lệ chia thông tin thành nhiều khối ngang hàng — không có một khối ≥ 25 %; người duyệt độc lập chấm Thẩm mỹ 4, Nhất quán 4 (15/11/2026). 4 ngưỡng nới khác đã trả về mặc định."
+  }
 }

@@ -1,15 +1,53 @@
-# Bản đồ nhịp — 45 slide (kiểu theo he-thong.md; không quá 3 liền cùng kiểu, cứ 4–5 slide một slide thở)
-| # | Kiểu | # | Kiểu | # | Kiểu | # | Kiểu | # | Kiểu |
-|---|---|---|---|---|---|---|---|---|---|
-| 1 | Bìa | 10 | K4 | 19 | K1 | 28 | K1 | 37 | K6 |
-| 2 | K11 | 11 | K4 | 20 | K8 | 29 | K3 | 38 | K4 |
-| 3 | K7 | 12 | K4 | 21 | K3* | 30 | K3 | 39–43 | K10 |
-| 4 | K5 | 13 | K6* | 22 | K3 | 31 | K3 (cây) | 44 | K11 |
-| 5 | K1 | 14 | K4 | 23 | K6 (trục 15 ngày) | 32 | K6 | 45 | Kết |
-| 6 | K6 (trục thời gian) | 15 | K1 | 24 | K6 | 33 | K9 | | |
-| 7 | K6 (trục thời gian) | 16 | K4 | 25 | K5 | 34 | K6 | | |
-| 8 | K3 | 17 | K5 | 26 | K7 | 35 | K9 | | |
-| 9 | K7 + đếm | 18 | K3 (ba nhóm) | 27 | K6 (trục) | 36 | K6 | | |
-* 13: phân tán thành K6 (hai bản đồ cùng thang); 21: bảy tài liệu xếp theo thời điểm dùng (trục), không thẻ.
-Chèn slide thở (K11) mới: sau 14 ("Nguyên tắc nghiệp vụ ≠ nguyên tắc của Luật") và sau 27 ("Hợp đồng = phí chắc chắn đổi cam kết không chắc chắn") — tổng 47 slide, thời lượng +1 phút.
-Lặp: 10–12, 14 là K4 bốn lần trong 5 slide → đổi 11 sang K3 (người – quyền lợi – vật) và 12 sang K8 (trích Điều 16 k1 + Điều 22) → hết lặp.
+# Bản đồ nhịp — 46 slide (dựng từ deck; bố cục = data-mau, họ nền = data-nen)
+
+| # | Bố cục | Họ nền | Hiện theo |
+|---|---|---|---|
+| 1 | bia | sang | tự |
+| 2 | cau | anh | tự |
+| 3 | noi-dung | sang | tự |
+| 4 | noi-dung | sang | tự |
+| 5 | mo-phan | dam | tự |
+| 6 | noi-dung | sang | tự |
+| 7 | noi-dung | sang | tự |
+| 8 | noi-dung | sang | tự |
+| 9 | noi-dung | sang | tự |
+| 10 | bang | sang | tự |
+| 11 | noi-dung | sang | tự |
+| 12 | trich | dam | tự |
+| 13 | noi-dung | sang | tự |
+| 14 | noi-dung | sang | 2 nhấp |
+| 15 | cau | dam | tự |
+| 16 | mo-phan | dam | tự |
+| 17 | so-sanh | sang | tự |
+| 18 | so-sanh | sang | tự |
+| 19 | noi-dung | sang | tự |
+| 20 | mo-phan | dam | tự |
+| 21 | trich | anh | tự |
+| 22 | bang | sang | tự |
+| 23 | noi-dung | sang | tự |
+| 24 | so-lon | sang | tự |
+| 25 | noi-dung | sang | tự |
+| 26 | bang | sang | 4 nhấp |
+| 27 | noi-dung | dam | tự |
+| 28 | noi-dung | sang | tự |
+| 29 | mo-phan | dam | tự |
+| 30 | noi-dung | anh | tự |
+| 31 | noi-dung | sang | tự |
+| 32 | noi-dung | sang | tự |
+| 33 | noi-dung | sang | tự |
+| 34 | bang | sang | tự |
+| 35 | noi-dung | dam | tự |
+| 36 | bang | sang | tự |
+| 37 | noi-dung | sang | 3 nhấp |
+| 38 | noi-dung | sang | tự |
+| 39 | noi-dung | dam | tự |
+| 40 | hoi | chia | tự |
+| 41 | hoi | chia | tự |
+| 42 | hoi | chia | tự |
+| 43 | hoi | chia | tự |
+| 44 | hoi | chia | tự |
+| 45 | cau | dam | tự |
+| 46 | bia | sang | tự |
+
+Dải họ nền: sang ×1 · anh ×1 · sang ×2 · dam ×1 · sang ×6 · dam ×1 · sang ×2 · dam ×2 · sang ×3 · dam ×1 · anh ×1 · sang ×5 · dam ×1 · sang ×1 · dam ×1 · anh ×1 · sang ×4 · dam ×1 · sang ×3 · dam ×1 · chia ×5 · dam ×1 · sang ×1
+Luật nhịp (quy-trinh.md mục 4c, thẻ phong cách): không quá 6 slide liền cùng họ nền (lienHoToiDa 6); mỗi phần một slide hero; slide thở sau mỗi 4–5 slide. Bản này dựng lại từ deck 15/11/2026 bằng `chu_slide.js --nhip` — bản đồ cũ theo hệ kiểu K1–K11 của hướng thiết kế trước (45 slide) đã lỗi thời, còn trong lịch sử git.

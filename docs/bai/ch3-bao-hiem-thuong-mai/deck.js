@@ -9,7 +9,13 @@ const SUA = { 22: "Định nghĩa theo Điều 4 Luật 2022: khoản 24 bên mu
   26: "p = f + d theo bài giảng. Định nghĩa phí bảo hiểm theo khoản 28 Điều 4 Luật 2022.",
   37: "Con số 70 %, 85 %, phí 100 / bồi thường 80 chỉ minh hoạ (người soạn thêm). Thanh tính trên phí cả kỳ = 100 %; giới hạn trách nhiệm của DN nhận tái tới 85 %, phần trên 85 % trở lại DN nhượng. Bài giảng: công ty nhượng tái chịu bồi thường khi tỷ lệ bồi thường của toàn bộ nghiệp vụ nhỏ hơn hoặc bằng tỷ lệ nhất định; phần tỷ lệ thực tế vượt tỷ lệ giữ lại chuyển cho công ty nhận tái." };
 SUA[23] = `${N[23] || ""} Cách đếm 15 ngày: ngày DNBH nhận đủ hồ sơ hợp lệ không tính, ngày 1 là hôm sau (khoản 3 Điều 147 BLDS 2015).`.trim();
-const nc = (k) => SUA[k] || N[k] || "";
+const nc = (k) => SUA[k] || N[k] || "";   // dự phòng khi kich-ban.md chưa có cột lời nói
+// lời nói: kich-ban.md là NGUỒN DUY NHẤT (skill slide-chuan, quy-trinh.md mục 3) — cột "Lời nói" theo số slide; sửa lời ở kịch bản, không ở đây
+const LOI_NOI = (() => { const f = path.join(D, "kich-ban.md"), m = {}; if (!fs.existsSync(f)) return m; let cot = -1;
+  for (const d of fs.readFileSync(f, "utf8").split("\n")) { if (!d.startsWith("|")) continue;
+    const c = d.trim().replace(/^\||\|$/g, "").split(/(?<!\\)\|/).map((x) => x.trim().replace(/\\\|/g, "|"));
+    if (cot < 0) { cot = c.findIndex((x) => /^lời nói/i.test(x)); continue; } if (/^\d+$/.test(c[0])) m[+c[0]] = c[cot] === "—" ? "" : c[cot]; }
+  return m; })();
 const ghi = (f, s) => { fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, s); };
 fs.rmSync(path.join(D, "asset", "hinh"), { recursive: true, force: true });   // sơ đồ nét sinh lại mỗi lần dựng
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
@@ -32,7 +38,7 @@ const cap = (kt, km, x, y, w, a, b) => `<div class="cap" style="left:${x}px;top:
   const khoi = (x, y, w, h, cls, alt, ex = "", st = "") => `<div class="${cls}" data-l="k${++nL}" data-alt="${esc(alt)}" ${ex} style="left:${x}px;top:${y}px;width:${w}px;height:${h}px${st}"></div>`;   // thẻ nền thành lớp riêng để hiện có hiệu ứng
   const dau = (kk, td, dan, so, x = 120, w = 1500) => chip(kk, x, 80, "chip", A("fade", 0, 400)) + `<h1 class="td" data-t data-tieu-de ${A("rise", 100, 600)} style="left:${x}px;top:132px;width:${w}px">${em(td)}</h1>` + (dan ? T("dan", x, 246, w + 60, dan, A("fade", 350, 500)) : "") + T("so-trang", 1600, 84, 200, `${so} / ${TONG}`);
   const dauToi = (kk, td, dan, so, x = 120, w = 1500) => chip(kk, x, 80, "chip vang", A("fade", 0, 400)) + `<h1 class="td sang" data-t data-tieu-de ${A("rise", 100, 600)} style="left:${x}px;top:132px;width:${w}px">${em(td)}</h1>` + (dan ? T("dan sang", x, 246, w + 60, dan, A("fade", 350, 500)) : "") + T("so-trang sang", 1600, 84, 200, `${so} / ${TONG}`);
-  const sec2 = (mau, kieu, notes, inner, { ex = "", trans = "fade", dur = 600 } = {}) => S2.push(`<section class="s ${kieu}" data-mau="${mau}" data-nen="${kieu}" ${ex} data-trans="${trans}" data-dur="${dur}" data-notes="${esc(notes)}">\n${inner}\n</section>`);
+  const sec2 = (mau, kieu, notes, inner, { ex = "", trans = "fade", dur = 600 } = {}) => S2.push(`<section class="s ${kieu}" data-mau="${mau}" data-nen="${kieu}" ${ex} data-trans="${trans}" data-dur="${dur}" data-notes="${esc(LOI_NOI[S2.length + 1] ?? notes)}">\n${inner}\n</section>`);
   const NEN = {
     tron: () => `<circle cx="1920" cy="0" r="300" fill="${P.x4}"/>` + mh.cham(1660, 960, 6, 2, 26, 5, P.v2),
     goc: () => `<circle cx="0" cy="1080" r="110" fill="${P.x4}"/><circle cx="1920" cy="0" r="110" fill="${P.v4}"/>`,
