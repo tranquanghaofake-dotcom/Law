@@ -1,1 +1,43 @@
-{ "ten": "phẳng 2 tông", "gradient": false, "bongMo": false, "mauToiDa": 12 }
+{
+ "ten": "biên tập học thuật",
+ "huong": "Ảnh tư liệu hai màu + sơ đồ nét / icon nét (Tabler) cùng độ dày 3 px + chữ Lora lớn + bảng kẻ ngang. Không hoạt hình, không đồ vật vẽ phẳng, không hoạ tiết, không bóng.",
+ "gradient": false,
+ "bongMo": false,
+ "bangMau": [
+  "#F3EEE4",
+  "#1C2826",
+  "#5B6663",
+  "#CFC6B6",
+  "#0E4F49",
+  "#DCE7E3",
+  "#BFD3CE",
+  "#8E631A",
+  "#E6B85C",
+  "#A3362B"
+ ],
+ "loaiHinh": [
+  "anh-hai-mau",
+  "net"
+ ],
+ "boCuc": [
+  "bia",
+  "mo-phan",
+  "cau",
+  "noi-dung",
+  "hoi"
+ ],
+ "tieuDeCoDinh": [
+  "noi-dung",
+  "hoi"
+ ],
+ "nguong": {
+  "loaiNenToiThieu": 2,
+  "tiLeNenToiDa": 0.85,
+  "lienToiDa": 16,
+  "lienHoToiDa": 16,
+  "assetToiDa": 4,
+  "bangXetTiLe": 99,
+  "tieuDiemToiThieu": 0.15
+ },
+ "ghiChuNguong": "Hướng biên tập: một kiểu bảng cho cả deck là chủ ý (bo-cuc.md); slide lấy chữ / số lớn làm tiêu điểm khai data-khong-hinh."
+}

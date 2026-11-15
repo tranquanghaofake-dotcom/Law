@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="220 400 1500 500" width="1500" height="500"><circle cx="330" cy="560" r="115" fill="#F3EEE4" stroke="#0E4F49" stroke-width="3"/><g transform="translate(255.25 485.25) scale(6.229166666666667)" fill="none" stroke="#0E4F49" stroke-width="0.482" stroke-linecap="round" stroke-linejoin="round">
+  
+  <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</g><circle cx="660" cy="560" r="115" fill="#F3EEE4" stroke="#0E4F49" stroke-width="3"/><g transform="translate(585.25 485.25) scale(6.229166666666667)" fill="none" stroke="#0E4F49" stroke-width="0.482" stroke-linecap="round" stroke-linejoin="round">
+  
+  <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</g><path d="M455 560 L533 560" stroke="#0E4F49" stroke-width="3" fill="none" stroke-linecap="round" /><path d="M517.2 551.4 L533 560 L517.2 568.6" stroke="#0E4F49" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M460 500 l14 14 l28 -28" stroke="#0E4F49" stroke-width="3" fill="none" stroke-linecap="round" /><circle cx="1260" cy="560" r="115" fill="#F3EEE4" stroke="#5B6663" stroke-width="3"/><g transform="translate(1185.25 485.25) scale(6.229166666666667)" fill="none" stroke="#5B6663" stroke-width="0.482" stroke-linecap="round" stroke-linejoin="round">
+  
+  <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</g><circle cx="1590" cy="560" r="115" fill="#F3EEE4" stroke="#5B6663" stroke-width="3"/><g transform="translate(1515.25 485.25) scale(6.229166666666667)" fill="none" stroke="#5B6663" stroke-width="0.482" stroke-linecap="round" stroke-linejoin="round">
+  
+  <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</g><path d="M1385 560 H1465" stroke="#A3362B" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="10 9"/><path d="M1410 532 l28 28 M1438 532 l-28 28" stroke="#A3362B" stroke-width="3" fill="none" stroke-linecap="round" /><path d="M960 400 V900" stroke="#CFC6B6" stroke-width="2" fill="none" stroke-linecap="round" /></svg>
