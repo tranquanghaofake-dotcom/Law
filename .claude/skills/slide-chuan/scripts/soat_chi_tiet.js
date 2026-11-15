@@ -54,7 +54,8 @@ async function soat(html) {
         const tam = [r.left + Math.min(r.width, 200) / 2, r.top + r.height / 2], trenAnh = document.elementsFromPoint(...tam).some((e) => e !== s && !e.matches("section.s") && (e.tagName === "IMG" || /url\("?(?!data:image\/svg)/.test(getComputedStyle(e).backgroundImage)));
         // viên nhãn / ô có nền hoặc viền: thứ phải thẳng lề là MÉP VIÊN, chữ bên trong lùi theo lề trong của viên (so nét chữ của nó với chữ thường là báo nhầm)
         const vien = !/rgba\(0, 0, 0, 0\)|transparent/.test(cs.backgroundColor) || ["Left", "Top"].some((k) => parseFloat(cs["border" + k + "Width"]) > 0 && cs["border" + k + "Style"] !== "none");
-        return { i, longR, cuoi, soDong: hang.length, dl: t.hasAttribute("data-dl"), trenAnh, vien, chu: t.textContent.trim().replace(/\s+/g, " ").slice(0, 40), lop: t.className.split(" ")[0], r: [r.left, r.top, r.width, r.height], canh: cs.textAlign, co: parseFloat(cs.fontSize), dam: +cs.fontWeight || 400, xoay: (() => { for (let a = t; a && !a.matches("section.s"); a = a.parentElement) { const c = getComputedStyle(a), m = (c.transform.match(/matrix\(([^)]+)\)/) || [])[1]; if ((c.rotate && c.rotate !== "none" && c.rotate !== "0deg") || (m && Math.abs(+m.split(",")[1]) > 0.01)) return true; } return false; })() /* chỉ tính xoay thật; scale / dịch của hiệu ứng vào không tính */, doan }; });
+        return { i, longR, nenCon: [...t.querySelectorAll("*")].filter((c) => c.closest("[data-t]") === t && !/rgba\(0, 0, 0, 0\)|transparent/.test(getComputedStyle(c).backgroundColor)).map((c) => { const q = c.getBoundingClientRect(); return [q.left, q.top, q.width, q.height]; }),
+          anhChup: document.elementsFromPoint(...tam).some((e) => e.tagName === "IMG" && !/\.svg(\?|$)/i.test(e.getAttribute("src") || "")), cuoi, soDong: hang.length, dl: t.hasAttribute("data-dl"), trenAnh, vien, chu: t.textContent.trim().replace(/\s+/g, " ").slice(0, 40), lop: t.className.split(" ")[0], r: [r.left, r.top, r.width, r.height], canh: cs.textAlign, co: parseFloat(cs.fontSize), dam: +cs.fontWeight || 400, xoay: (() => { for (let a = t; a && !a.matches("section.s"); a = a.parentElement) { const c = getComputedStyle(a), m = (c.transform.match(/matrix\(([^)]+)\)/) || [])[1]; if ((c.rotate && c.rotate !== "none" && c.rotate !== "0deg") || (m && Math.abs(+m.split(",")[1]) > 0.01)) return true; } return false; })() /* chỉ tính xoay thật; scale / dịch của hiệu ứng vào không tính */, doan }; });
       return { ten: (s.dataset.title || s.dataset.type || "").slice(0, 48), type: s.dataset.type, hop }; }, k);
     await page.waitForTimeout(60); const A = await anh();
     await page.evaluate((k) => document.querySelectorAll("section.s")[k].classList.add("anchu"), k); await page.waitForTimeout(40); const B = await anh();
@@ -63,7 +64,7 @@ async function soat(html) {
     // NÉT của màu m: điểm đổi khi ẩn chữ VÀ lúc hiện chữ gần màu m hơn hẳn (loại viền chữ / bóng khác màu chữ)
     const kc = (p, m) => Math.abs(p[0] - m[0]) + Math.abs(p[1] - m[1]) + Math.abs(p[2] - m[2]);
     const net = (x, y, m) => khac(x, y) && kc(px(A, x, y), m) < kc(px(B, x, y), m) * 0.7;
-    const ketQua = { slide: k + 1, type: meta.type, ten: meta.ten, lech: [], tuongPhan: [], moCoi: [], cat: [] };
+    const ketQua = { slide: k + 1, type: meta.type, ten: meta.ten, lech: [], tuongPhan: [], moCoi: [], cat: [], mep: [] };
     // DÒNG MỒ CÔI: đoạn ≥ 2 dòng mà dòng cuối chỉ một chữ (bỏ qua số, ký hiệu) — sửa câu chữ hoặc bề rộng hộp, đừng thu cỡ chữ
     for (const h of meta.hop) if (h.cuoi && h.cuoi.soChu === 1 && /\p{L}{2,}/u.test(h.cuoi.chu) && h.cuoi.rong < h.cuoi.rongMax * 0.3) ketQua.moCoi.push(`“${h.chu}” .${h.lop}: dòng cuối chỉ còn “${h.cuoi.chu}”`);
     // mép trái nét chữ của từng hộp canh trái (dòng đầu)
@@ -110,6 +111,17 @@ async function soat(html) {
       for (let i = 0; i < cot.length; i++) { if (cot[i] < 0.4) continue; let j = i; while (j + 1 < cot.length && cot[j + 1] >= 0.4) j++;
         if (j - i + 1 <= 14 && sach(i - 4) && sach(j + 4)) { ketQua.cat.push(`“${h.chu}” bị một nét dọc cắt qua ở x ${x0 + i}`); break; } i = j; }   // chạm mép hộp chữ: nền chuyển màu bị cắt, không phải nét
     }
+    // MÉP HOẠ TIẾT DƯỚI CHỮ (references/bo-cuc.md mục 7): ở ảnh ẩn chữ, nền sau các dòng chữ là HAI mảng màu phẳng rõ rệt —
+    // chữ vắt qua mép dải chéo, cung tròn, khung của lớp nền (Chương 3: dòng nguồn trên mép hình tròn góc, số trang trên mép cung).
+    // Bỏ qua: chữ trên ảnh chụp, viên nhãn có nền riêng, đoạn tô nhấn (mark) và hộp chữ con nằm trong chính hộp chữ.
+    for (const h of meta.hop) { if (h.anhChup || h.vien) continue;
+      const bo = [...h.longR, ...h.nenCon], dem = new Map(); let tong = 0;
+      for (const q of h.doan[0].q) { const x0 = Math.max(0, Math.round(q[0])), x1 = Math.min(1919, Math.round(q[0] + q[2])), y0 = Math.max(0, Math.round(q[1])), y1 = Math.min(1079, Math.round(q[1] + q[3]));
+        for (let x = x0; x < x1; x += 3) for (let y = y0; y < y1; y += 3) { if (bo.some((r) => x >= r[0] && x <= r[0] + r[2] && y >= r[1] && y <= r[1] + r[3])) continue; const key = px(B, x, y).map((v) => v >> 4).join(","); dem.set(key, (dem.get(key) || 0) + 1); tong++; } }
+      if (tong < 40) continue;
+      const top = [...dem.entries()].sort((a, b) => b[1] - a[1]); if (top.length < 2) continue;
+      const mau = (k) => k.split(",").map((v) => (+v << 4) + 8);
+      if (top[1][1] / tong >= 0.12 && (top[0][1] + top[1][1]) / tong >= 0.85 && kc(mau(top[0][0]), mau(top[1][0])) > 30) ketQua.mep.push(`“${h.chu}” vắt qua mép hoạ tiết nền — đặt chữ trọn trong một mảng, hoặc thu / dời hoạ tiết`); }
     ketQua.cat = [...new Set(ketQua.cat)];
     out.push(ketQua);
   }
@@ -118,8 +130,9 @@ async function soat(html) {
 
 if (require.main === module && !pos.length) { console.error("Dùng: node scripts/soat_chi_tiet.js <deck.html> [--json=out.json] [--lech=4..10]"); process.exit(2); }
 if (require.main === module) soat(pos[0]).then((kq) => { let nl = 0, nt = 0;
-  let nm = 0, nc = 0; for (const s of kq) { if (!s.lech.length && !s.tuongPhan.length && !s.moCoi.length && !s.cat.length) continue; console.log(`slide ${s.slide} (${s.type}) ${s.ten}`);
+  let nm = 0, nc = 0; for (const s of kq) { if (!s.lech.length && !s.tuongPhan.length && !s.moCoi.length && !s.cat.length && !s.mep.length) continue; console.log(`slide ${s.slide} (${s.type}) ${s.ten}`);
     for (const m of s.cat) { nc++; console.log(`  ✂ nét cắt chữ: ${m}`); }
+    for (const m of s.mep) { nc++; console.log(`  ⟋ mép hoạ tiết: ${m}`); }
     for (const m of s.moCoi) { nm++; console.log(`  ¶ dòng mồ côi: ${m}`); }
     for (const m of s.lech) { nl++; console.log(`  ↔ gần thẳng hàng: ${m}`); } for (const m of s.tuongPhan) { nt++; console.log(`  ◐ tương phản thấp: ${m}`); } }
   console.log(`Soát chi tiết: ${kq.length} slide · ${nl} chỗ gần thẳng hàng (lệch ${LO}–${HI} px) · ${nt} chỗ tương phản thấp · ${nm} dòng mồ côi · ${nc} chỗ nét cắt chữ`);

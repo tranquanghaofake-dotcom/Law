@@ -76,7 +76,7 @@ async function dung(dir, { ten, soat = true, nhap = false } = {}) {
   loi.push(...(res.warn || []), ...(res.lost || []));
   if (soat) {
     try { const kq = await require("./soat_chi_tiet").soat(htmlPath);
-      for (const s of kq) for (const [k, ds] of [["↔ lệch", s.lech], ["◐ tương phản", s.tuongPhan], ["¶ mồ côi", s.moCoi], ["✂ nét cắt chữ", s.cat]]) for (const m of ds || []) loi.push(`slide ${s.slide}: ${k} ${m}`); }
+      for (const s of kq) for (const [k, ds] of [["↔ lệch", s.lech], ["◐ tương phản", s.tuongPhan], ["¶ mồ côi", s.moCoi], ["✂ nét cắt chữ", s.cat], ["⟋ mép hoạ tiết", s.mep]]) for (const m of ds || []) loi.push(`slide ${s.slide}: ${k} ${m}`); }
     catch (e) { console.log(`ℹ không chạy được soát chi tiết: ${String(e.message || e).split("\n")[0]}`); }
     try { const cc = await require("./co_chu").coChu(htmlPath);
       for (const x of cc.nho) loi.push(`slide ${x.slide}: chữ ${x.pt} pt < 12 pt “${x.chu}”`);

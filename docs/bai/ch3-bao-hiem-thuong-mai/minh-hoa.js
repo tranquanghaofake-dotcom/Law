@@ -122,12 +122,26 @@ function nguoi(cx, by, s, { ao = P.x2, ao2 = P.x1, toc = P.muc } = {}) {
     + `<circle cx="${cx}" cy="${by - k(0.76)}" r="${k(0.2)}" fill="${P.da}"/><path d="M${cx - k(0.21)} ${by - k(0.74)} Q${cx - k(0.24)} ${by - k(1.02)} ${cx + k(0.02)} ${by - k(1)} Q${cx + k(0.25)} ${by - k(0.98)} ${cx + k(0.21)} ${by - k(0.74)} Q${cx + k(0.1)} ${by - k(0.86)} ${cx - k(0.21)} ${by - k(0.74)} Z" fill="${toc}"/>`;
 }
 
-// búa toà án (tâm, cỡ) — "do luật buộc"
-function bua(cx, cy, s) {
+// búa toà án (tâm, cỡ) — "do luật buộc"; dau = màu đầu búa (đổi theo nền để không chìm)
+function bua(cx, cy, s, { dau = P.x1, soc = P.v1, vet = P.v3 } = {}) {
   const k = (a) => f1(a * s);
   return `<rect x="${cx - k(0.42)}" y="${cy + k(0.3)}" width="${k(0.84)}" height="${k(0.16)}" rx="${k(0.04)}" fill="${P.v1}"/><rect x="${cx - k(0.32)}" y="${cy + k(0.2)}" width="${k(0.64)}" height="${k(0.12)}" rx="${k(0.04)}" fill="${P.v2}"/>`
     + `<g transform="rotate(-38 ${cx} ${cy})"><rect x="${cx - k(0.05)}" y="${cy - k(0.12)}" width="${k(0.1)}" height="${k(0.62)}" rx="${k(0.05)}" fill="${P.v1}"/>`
-    + `<rect x="${cx - k(0.32)}" y="${cy - k(0.32)}" width="${k(0.64)}" height="${k(0.24)}" rx="${k(0.06)}" fill="${P.x1}"/><rect x="${cx - k(0.24)}" y="${cy - k(0.32)}" width="${k(0.06)}" height="${k(0.24)}" fill="${P.x3}"/><rect x="${cx + k(0.18)}" y="${cy - k(0.32)}" width="${k(0.06)}" height="${k(0.24)}" fill="${P.x3}"/></g>`;
+    + `<rect x="${cx - k(0.34)}" y="${cy - k(0.36)}" width="${k(0.68)}" height="${k(0.28)}" rx="${k(0.07)}" fill="${dau}"/><rect x="${cx - k(0.27)}" y="${cy - k(0.36)}" width="${k(0.06)}" height="${k(0.28)}" fill="${soc}"/><rect x="${cx + k(0.21)}" y="${cy - k(0.36)}" width="${k(0.06)}" height="${k(0.28)}" fill="${soc}"/>`
+    + `<path d="M${cx - k(0.46)} ${cy - k(0.32)} v${k(0.2)} M${cx - k(0.54)} ${cy - k(0.28)} v${k(0.12)}" stroke="${vet}" stroke-width="${k(0.035)}" stroke-linecap="round"/></g>`;
+}
+
+// toà văn phòng doanh nghiệp bảo hiểm: thân màu chủ, cửa sổ lưới, huy hiệu ô, cửa có mái hiên (dùng lặp cả deck)
+function toaVP(cx, by, w, { than = P.x1, bong = P.x2, kinh = P.x4, kinh2 = P.x3 } = {}) {
+  const h = w * 1.25, x = cx - w / 2, top = by - h, k = (a) => f1(a);
+  let s = `<rect x="${k(x + w * 0.05)}" y="${k(top - w * 0.06)}" width="${k(w * 0.9)}" height="${k(w * 0.08)}" rx="4" fill="${P.v2}"/>`
+    + `<rect x="${k(x)}" y="${k(top)}" width="${w}" height="${k(h)}" fill="${than}"/><rect x="${k(x + w * 0.72)}" y="${k(top)}" width="${k(w * 0.28)}" height="${k(h)}" fill="${bong}"/>`;
+  const ey = top + w * 0.17;
+  s += `<circle cx="${cx}" cy="${k(ey)}" r="${k(w * 0.11)}" fill="${P.v2}"/>` + o(cx, k(ey - w * 0.04), k(w * 0.14), { m1: P.x1, m2: P.x2 }).replace(/<rect[^>]*fill="#1B2A28"\/>$/, "");
+  const c0 = x + w * 0.1, gw = (w * 0.8) / 4, r0 = top + w * 0.36, gh = (h - w * 0.36 - w * 0.34) / 4;
+  for (let i = 0; i < 4; i++) for (let j = 0; j < 4; j++) s += `<rect x="${k(c0 + i * gw + gw * 0.15)}" y="${k(r0 + j * gh + gh * 0.15)}" width="${k(gw * 0.7)}" height="${k(gh * 0.7)}" rx="3" fill="${i === 3 ? kinh2 : kinh}"/>`;
+  return s + `<rect x="${k(cx - w * 0.14)}" y="${k(by - w * 0.24)}" width="${k(w * 0.28)}" height="${k(w * 0.24)}" fill="${P.v4}"/><rect x="${k(cx - w * 0.01)}" y="${k(by - w * 0.24)}" width="${k(w * 0.02)}" height="${k(w * 0.24)}" fill="${than}"/>`
+    + `<rect x="${k(cx - w * 0.2)}" y="${k(by - w * 0.3)}" width="${k(w * 0.4)}" height="${k(w * 0.06)}" rx="4" fill="${P.v2}"/>`;
 }
 
 // phiếu tự chọn: tờ giấy có ba ô, hai ô đã tích (x, y góc trái trên, w)
@@ -154,4 +168,4 @@ const chongGiay = (x, y, w) => { const h = w * 1.3; return `<rect x="${x}" y="${
 // bút (đầu ở x,y; dài L; nghiêng)
 const but = (x, y, L, goc = -40) => `<g transform="rotate(${goc} ${x} ${y})"><rect x="${x}" y="${f1(y - L * 0.05)}" width="${L}" height="${f1(L * 0.1)}" rx="${f1(L * 0.05)}" fill="${P.x1}"/><rect x="${f1(x + L * 0.62)}" y="${f1(y - L * 0.05)}" width="${f1(L * 0.08)}" height="${f1(L * 0.1)}" fill="${P.v2}"/><path d="M${x} ${f1(y - L * 0.05)} L${f1(x - L * 0.14)} ${y} L${x} ${f1(y + L * 0.05)} Z" fill="${P.v1}"/></g>`;
 
-module.exports = { saoCum, nguoi, bua, phieu, dnbh, bongThoai, chongGiay, but, P, iconNet, iconDac, cham, sao, giot, o, nha, xu, khien, hopDong, matTien, dongHo, lua, muiKhoi };
+module.exports = { toaVP, saoCum, nguoi, bua, phieu, dnbh, bongThoai, chongGiay, but, P, iconNet, iconDac, cham, sao, giot, o, nha, xu, khien, hopDong, matTien, dongHo, lua, muiKhoi };
