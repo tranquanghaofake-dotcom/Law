@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Tạo bộ font của TẦNG HÌNH ẢNH trong hinh/fonts/ từ các file gốc ở stage/fonts/.
+// Tạo bộ font trong hinh/fonts/ từ các file gốc ở hinh/fonts/goc/.
 //   node hinh/tao_font.js
 //
 // Vì sao phải làm: PowerPoint nhúng font theo "họ". Hai file SemiBold và ExtraBold của Be Vietnam Pro tự khai trong bảng tên
@@ -12,13 +12,14 @@
 // Giấy phép: SIL OFL 1.1 cho phép sửa và phát hành lại; hai font không khai "Reserved Font Name". Giữ nguyên dòng bản quyền (ID 0)
 // và giấy phép (ID 13, 14); ghi việc đã sửa ở ID 5 và trong hinh/fonts/GHI-CHU.txt.
 const fs = require("fs"), path = require("path");
-const SRC = path.join(__dirname, "..", "stage", "fonts"), OUT = path.join(__dirname, "fonts");
+const SRC = path.join(__dirname, "fonts", "goc"), OUT = path.join(__dirname, "fonts");
 
 const JOBS = [
   { src: "Anton-Regular.ttf", out: "Anton-Regular.ttf" },                                              // giữ nguyên từng byte
   { src: "BeVietnamPro-Regular.ttf", out: "BeVietnamPro-Regular.ttf" },                                // giữ nguyên từng byte
   { src: "BeVietnamPro-SemiBold.ttf", out: "BeVietnam-Dam.ttf", family: "Be Vietnam Dam", ps: "BeVietnamDam" },      // đậm vừa (600)
   { src: "BeVietnamPro-ExtraBold.ttf", out: "BeVietnam-Nang.ttf", family: "Be Vietnam Nang", ps: "BeVietnamNang" }, // rất đậm (800)
+  { src: "Lora-Bold.ttf", out: "Lora-Dam.ttf", family: "Lora Dam", ps: "LoraDam" },                                // chữ có chân (700) — tiêu đề lớn, câu trích, slide chốt; bản tĩnh tạo từ Lora[wght] (Google Fonts, OFL) bằng fontTools instancer wght=700
 ];
 
 const pad4 = (b) => (b.length % 4 ? Buffer.concat([b, Buffer.alloc(4 - (b.length % 4))]) : b);

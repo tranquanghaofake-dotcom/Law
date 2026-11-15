@@ -6,6 +6,7 @@
 @font-face { font-family: 'Be Vietnam Pro'; font-weight: 400 500; src: url('fonts/BeVietnamPro-Regular.ttf') format('truetype'); }
 @font-face { font-family: 'Be Vietnam Pro'; font-weight: 600 700; src: url('fonts/BeVietnam-Dam.ttf') format('truetype'); }
 @font-face { font-family: 'Be Vietnam Pro'; font-weight: 800 900; src: url('fonts/BeVietnam-Nang.ttf') format('truetype'); }
+@font-face { font-family: 'Lora'; font-weight: 100 900; src: url('fonts/Lora-Dam.ttf') format('truetype'); }   /* chữ có chân, chỉ một độ đậm (700) */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 /* tắt kerning và chữ ghép: PowerPoint dàn chữ theo bề ngang ký tự thô, HTML phải dàn giống thế thì chỗ xuống dòng mới trùng */
 html, body { background: #05070d; font-kerning: none; font-variant-ligatures: none; -webkit-font-smoothing: antialiased; }

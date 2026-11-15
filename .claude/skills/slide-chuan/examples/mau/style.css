@@ -1,0 +1,8 @@
+:root { --nen: #F6F1E7; --muc: #1D2B2A; --nhan: #0F5C55; --vang: #E8A33D; }
+section.s { background: var(--nen); color: var(--muc); }
+.tieude { position: absolute; left: 120px; top: 110px; width: 1300px; font: 800 76px/1.12 'Be Vietnam Pro'; }
+.tieude em { font-style: normal; color: var(--nhan); }
+.phu { position: absolute; left: 120px; top: 330px; width: 1100px; font: 400 34px/1.45 'Be Vietnam Pro'; }
+.the { position: absolute; width: 520px; height: 300px; border-radius: 28px; background: #fff; box-shadow: 0 18px 40px rgba(0,0,0,.08); }
+.the b { position: absolute; left: 40px; top: 40px; width: 440px; font: 800 44px/1.2 'Be Vietnam Pro'; color: var(--nhan); }
+.the p { position: absolute; left: 40px; top: 120px; width: 440px; font: 400 30px/1.4 'Be Vietnam Pro'; }

@@ -46,9 +46,10 @@ const FACES = [
   { face: "Be Vietnam Pro", file: "BeVietnamPro-Regular.ttf" },   // font-weight < 550
   { face: "Be Vietnam Dam", file: "BeVietnam-Dam.ttf" },          // 550 – 749
   { face: "Be Vietnam Nang", file: "BeVietnam-Nang.ttf" },        // ≥ 750
+  { face: "Lora Dam", file: "Lora-Dam.ttf" },                     // chữ có chân: CSS font-family Lora (mọi độ đậm → bản 700)
 ];
 for (const f of FACES) { f.path = path.join(FD, f.file); f.font = fontkit.openSync(f.path); const U = f.font.unitsPerEm; f.asc = f.font.hhea.ascent / U; f.desc = -f.font.hhea.descent / U; }
-const faceOf = (family, weight) => (/anton/i.test(family) ? FACES[0] : weight >= 750 ? FACES[3] : weight >= 550 ? FACES[2] : FACES[1]);
+const faceOf = (family, weight) => (/anton/i.test(family) ? FACES[0] : /lora/i.test(family) ? FACES[4] : weight >= 750 ? FACES[3] : weight >= 550 ? FACES[2] : FACES[1]);
 const SYM = "Segoe UI Symbol";                                // font ký hiệu có sẵn trên Windows: nhận các mũi tên, dấu tích, ô vuông mà font chữ không có
 const hex = (c) => { const m = String(c).match(/[\d.]+/g) || [0, 0, 0]; return m.slice(0, 3).map((v) => Math.round(+v).toString(16).padStart(2, "0")).join("").toUpperCase(); };
 
@@ -254,7 +255,12 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
       await page.evaluate(({ k, flat }) => { const el = document.querySelector(`[data-li="${k}"]`); document.body.classList.remove("solo"); el.classList.remove("solo-on");
         if (flat) { el.style.removeProperty("rotate"); if (el.dataset.keepRot) el.style.rotate = el.dataset.keepRot; delete el.dataset.keepRot; }
         if (el.dataset.keepTr != null) { el.style.removeProperty("translate"); if (el.dataset.keepTr) el.style.translate = el.dataset.keepTr; delete el.dataset.keepTr; } }, { k: it.key, flat });
-      it.file = await canon(buf, "png", async (b) => (b.length > 600e3 ? (async () => { const w = (await sharp(b).metadata()).width || 0; /* lớp lớn có vân giấy, nhiễu hạt: hạ về ~1,4× cỡ trên slide (đủ nét khi chiếu) + nén bảng màu */ return sharp(b).resize(w > 2000 ? { width: Math.round(w * 0.7) } : undefined).png({ palette: true, quality: 92, effort: 8, dither: 0.6 }).toBuffer(); })() : b.length > 60e3 ? sharp(b).png({ compressionLevel: 9, effort: 8 }).toBuffer() : b));
+      /* chất lượng ảnh (11/2026): KHÔNG thu nhỏ, KHÔNG ép bảng 256 màu — hai bước đó làm vằn sọc vùng chuyển màu (trời, sàn, vầng sáng) và mềm nét.
+         Lớp lớn không trong suốt → JPEG 4:4:4 chất lượng 92 (nét, nhẹ); lớp trong suốt → PNG đủ màu nén tối đa. */
+      const opaque = buf.length > 600e3 && (await sharp(buf).stats()).isOpaque;
+      if (!opaque) buf = await loangMep(buf);   // mép trong suốt mang màu kề bên: hết viền xám khi trình xem co giãn ảnh
+      it.file = opaque ? await canon(buf, "jpg", (b) => sharp(b).flatten({ background: "#ffffff" }).jpeg({ quality: 92, chromaSubsampling: "4:4:4", mozjpeg: true }).toBuffer())
+        : await canon(buf, "png", async (b) => (b.length > 60e3 ? sharp(b).png({ compressionLevel: 9, effort: 8 }).toBuffer() : b));
       if (flat && it.cx != null) { it.x = it.cx - it.w / 2; it.y = it.cy - it.h / 2; }   // PowerPoint xoay quanh tâm ảnh: đặt ảnh thẳng sao cho tâm trùng tâm khung nghiêng
     }
     // nguồn của cửa sổ soi: chụp nguyên phần tử nguồn (có cả chữ), làm phẳng trên màu nền của cửa sổ, lưu JPEG
@@ -275,7 +281,7 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
     await page.evaluate(() => document.body.classList.add("nolayer"));
     const raw = await shot(si, { x: 0, y: 0, w: SW, h: SH });
     await page.evaluate(() => document.body.classList.remove("nolayer"));
-    s.bg = await canon(await sharp(raw).resize({ width: 2880 }).png().toBuffer(), "jpg", (b) => sharp(b).jpeg({ quality: 88, chromaSubsampling: "4:4:4" }).toBuffer());
+    s.bg = await canon(await sharp(raw).resize({ width: 3840 }).png().toBuffer(), "jpg", (b) => sharp(b).jpeg({ quality: 92, chromaSubsampling: "4:4:4" }).toBuffer());
   }
   await browser.close();
 
@@ -454,7 +460,20 @@ async function build({ htmlPath, outPath, soat = false, nhungFont = true, truoc 
   return res;
 }
 
-module.exports = { build, FACES, faceOf };
+// Loang màu mép (alpha bleeding): điểm ảnh trong suốt mang màu đen (0,0,0,0); trình xem không nhân trước alpha (LibreOffice, Keynote,
+// Google Slides) pha màu đen đó vào mép khi co giãn ảnh → viền xám 1 px quanh dải nền, thẻ. Tô các điểm trong suốt sát vùng đục (lan `luot` vòng)
+// bằng trung bình màu các điểm kề đã có màu, giữ alpha = 0 → nhìn y hệt, mép sạch.
+async function loangMep(buf, luot = 3) {
+  const sharp = require("sharp"), { data, info } = await sharp(buf).ensureAlpha().raw().toBuffer({ resolveWithObject: true }), W = info.width, H = info.height;
+  let co = new Uint8Array(W * H); for (let i = 0; i < W * H; i++) co[i] = data[i * 4 + 3] > 0 ? 1 : 0;
+  for (let l = 0; l < luot; l++) { const moi = co.slice(); let doi = 0;
+    for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) { const i = y * W + x; if (co[i]) continue; let r = 0, g = 0, b = 0, n = 0;
+      for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++) { const xx = x + dx, yy = y + dy; if ((dx || dy) && xx >= 0 && yy >= 0 && xx < W && yy < H && co[yy * W + xx]) { const j = (yy * W + xx) * 4; r += data[j]; g += data[j + 1]; b += data[j + 2]; n++; } }
+      if (n) { data[i * 4] = Math.round(r / n); data[i * 4 + 1] = Math.round(g / n); data[i * 4 + 2] = Math.round(b / n); moi[i] = 1; doi++; } }
+    co = moi; if (!doi) break; }
+  return sharp(data, { raw: { width: W, height: H, channels: 4 } }).png().toBuffer();
+}
+module.exports = { build, FACES, faceOf, loangMep };
 if (require.main === module) {
   const args = process.argv.slice(2), flags = new Set(args.filter((a) => a.startsWith("--"))), pos = args.filter((a) => !a.startsWith("--"));
   if (pos.length < 2) { console.error("Dùng: node hinh/build.js <deck.html> <out.pptx> [--soat] [--khong-nhung-font]"); process.exit(2); }

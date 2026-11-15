@@ -1,0 +1,82 @@
+/* BỘ THÀNH PHẦN BẢNG / TRÌNH BÀY DỮ LIỆU — mã kiểu T1–T13 theo references/trinh-bay-du-lieu.md.
+   Thành phần kỹ thuật (độ hoàn thiện mặc định cao), KHÔNG phải mẫu bố cục: vị trí, cỡ khung, màu của bài do slide quyết.
+   Màu lấy từ biến — đặt lại trong style.css của bài:  section.s { --tb-chu; --tb-nhan; --tb-nhat; --tb-ke; --tb-nen; --tb-c1..c4; --tb-co; --tb-khong }
+   Mọi ô chữ vẫn gắn data-t. Bảng: .tb + một biến thể; hàng đầu .tb-h, hàng thân .tb-r (.on = hàng nhấn); số canh phải: thêm .tb-so-phai. */
+section.s { --tb-chu: #1D2B2A; --tb-nhan: #0F5C55; --tb-nhat: #DDEEE9; --tb-ke: #D8CDB9; --tb-nen: #FFFFFF; --tb-phu: #4A5856;
+  --tb-c1: #D9E8E5; --tb-c2: #DCE7F2; --tb-c3: #F1E4D2; --tb-c4: #F4DCD8; --tb-co: #0F5C55; --tb-khong: #B0302A; }
+
+/* ---- khung chung ---- */
+.tb { position: absolute; display: flex; flex-direction: column; color: var(--tb-chu); font: 400 30px/1.35 'Be Vietnam Pro', sans-serif; }
+.tb-h, .tb-r { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); }
+.tb[data-cot="2-1-1"] .tb-h, .tb[data-cot="2-1-1"] .tb-r { grid-template-columns: 2fr 1fr 1fr; grid-auto-flow: row; }
+.tb[data-cot="1-2-2"] .tb-h, .tb[data-cot="1-2-2"] .tb-r { grid-template-columns: 1fr 2fr 2fr; grid-auto-flow: row; }
+.tb[data-cot="1-2-1-2"] .tb-h, .tb[data-cot="1-2-1-2"] .tb-r { grid-template-columns: 1fr 2fr 1fr 2fr; grid-auto-flow: row; }
+.tb-h > b, .tb-r > b { display: block; padding: 18px 24px; }
+.tb-h > b { font: 700 28px/1.3 'Be Vietnam Pro'; letter-spacing: 0; color: var(--tb-nhan); }   /* đầu cột không nhỏ, không nhạt hơn thân bảng (vòng duyệt Ch3) */
+.tb-r > b:first-child { font-weight: 700; }
+.tb-so-phai .tb-h > b:not(:first-child), .tb-so-phai .tb-r > b:not(:first-child) { text-align: right; font-variant-numeric: tabular-nums; }
+.tb-r.on > b { background: #FCE9C6 !important; font-weight: 700; }
+
+/* T2 — chỉ kẻ ngang: tra cứu 4–6 hàng, đề bài có số */
+.tb-ke .tb-h > b { border-bottom: 4px solid var(--tb-chu); color: var(--tb-nhan); }
+.tb-ke .tb-r > b { border-bottom: 2px solid var(--tb-ke); }
+
+/* T1 — đầu cột màu theo cột: mỗi cột một sắc nhạt, thân trắng kẻ mảnh */
+.tb-dau { gap: 6px; } .tb-dau .tb-h, .tb-dau .tb-r { gap: 6px; }
+.tb-dau .tb-h > b { color: var(--tb-chu); border-radius: 12px 12px 0 0; }
+.tb-dau .tb-h > b:nth-child(1) { background: var(--tb-c1); } .tb-dau .tb-h > b:nth-child(2) { background: var(--tb-c2); }
+.tb-dau .tb-h > b:nth-child(3) { background: var(--tb-c3); } .tb-dau .tb-h > b:nth-child(4) { background: var(--tb-c4); }
+.tb-dau .tb-r > b { border-bottom: 2px solid var(--tb-ke); }   /* thân không đóng hộp từng ô — đóng hộp làm bảng thành lưới đủ viền */
+
+/* T3 — cột nhấn: data-nhan="2|3|4|5" = cột cần chú ý (cột phải tính, phương án chọn): đầu cột đặc, thân tô nhạt, chữ đậm */
+.tb-nhan { gap: 6px; } .tb-nhan .tb-h, .tb-nhan .tb-r { gap: 6px; }
+.tb-nhan .tb-h > b { background: var(--tb-chu); color: #fff; border-radius: 10px; }
+.tb-nhan .tb-r > b { background: var(--tb-nen); border-radius: 10px; } .tb-nhan .tb-r > b:first-child { background: #EFE8DC; }
+.tb-nhan[data-nhan="2"] .tb-h > b:nth-child(2), .tb-nhan[data-nhan="3"] .tb-h > b:nth-child(3), .tb-nhan[data-nhan="4"] .tb-h > b:nth-child(4), .tb-nhan[data-nhan="5"] .tb-h > b:nth-child(5) { background: var(--tb-nhan); padding-top: 30px; margin-top: -12px; }
+.tb-nhan[data-nhan="2"] .tb-r > b:nth-child(2), .tb-nhan[data-nhan="3"] .tb-r > b:nth-child(3), .tb-nhan[data-nhan="4"] .tb-r > b:nth-child(4), .tb-nhan[data-nhan="5"] .tb-r > b:nth-child(5) { background: var(--tb-nhat); color: var(--tb-nhan); font-weight: 800; }
+
+/* T4 — có / không: ô <b class="co"> / <b class="khong"> thành viên màu; hàng xen kẽ; hàng kết luận .tb-r.ket tô đậm */
+.tb-co { gap: 4px; } .tb-co .tb-h, .tb-co .tb-r { gap: 4px; }
+.tb-co .tb-h > b { background: var(--tb-chu); color: #fff; border-radius: 10px; }
+.tb-co .tb-r > b { background: var(--tb-nen); border-radius: 10px; } .tb-co .tb-r:nth-child(odd) > b { background: #FBF8F2; }
+.tb-co .tb-r > b.co, .tb-co .tb-r > b.khong { text-align: center; font-weight: 800; }
+.tb-co .tb-r > b.co { background: var(--tb-nhat) !important; color: var(--tb-co); }
+.tb-co .tb-r > b.khong { background: #F8E1DD !important; color: var(--tb-khong); }
+.tb-co .tb-r.ket > b { background: var(--tb-nhan) !important; color: #fff; font-weight: 700; }
+
+/* T5 — thẻ song song (2–4): .tb-the > .the (.noi = phương án nhấn, cao hơn ~ 12 %) > .the-t (dải tên) + .the-h (nhãn i + giá trị b) */
+.tb-the { position: absolute; display: flex; gap: 48px; align-items: flex-start; }
+.tb-the > .the { position: relative; flex: 1; background: var(--tb-nen); border-radius: 22px; overflow: hidden; box-shadow: 0 12px 30px rgba(29, 43, 42, .08); }
+.tb-the > .the.noi { margin-top: -28px; padding-bottom: 28px; box-shadow: 0 18px 40px rgba(29, 43, 42, .16); }
+.tb-the .the-t { display: block; background: var(--tb-nhan); color: #fff; font: 800 36px/1.2 'Be Vietnam Pro'; padding: 26px 34px; }
+.tb-the .the-h { display: grid; grid-template-columns: 220px 1fr; align-items: baseline; padding: 22px 34px; border-top: 2px solid #EEE6D8; }
+.tb-the .the-h > i { font: 600 28px/1.3 'Be Vietnam Pro'; font-style: normal; color: var(--tb-phu); } .tb-the .the-h > b { font: 500 32px/1.35 'Be Vietnam Pro'; }
+
+/* T6 — ma trận 2×2: .tb-mt > .o ×4 (mỗi ô: b dải tiêu đề + span nội dung); nhãn trục đặt bằng data-t riêng ở cạnh ngoài */
+.tb-mt { position: absolute; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.tb-mt > .o { border-radius: 18px; overflow: hidden; background: var(--tb-c1); min-height: 240px; }
+.tb-mt > .o:nth-child(2) { background: var(--tb-c2); } .tb-mt > .o:nth-child(3) { background: var(--tb-c3); } .tb-mt > .o:nth-child(4) { background: var(--tb-c4); }
+.tb-mt > .o > b { display: block; padding: 18px 26px; font: 800 32px/1.25 'Be Vietnam Pro'; background: rgba(29, 43, 42, .08); }
+.tb-mt > .o > span { display: block; padding: 18px 26px; font: 400 30px/1.4 'Be Vietnam Pro'; }
+
+/* T9 — số lớn: .tb-so > div (b số, span nhãn); 2–3 số; trên nền đậm thêm .dao */
+.tb-so { position: absolute; display: flex; gap: 64px; }
+.tb-so > div { flex: 1; } .tb-so > div > b { display: block; font: 800 120px/1 'Be Vietnam Pro'; color: var(--tb-nhan); letter-spacing: -.02em; }
+.tb-so > div > span { display: block; margin-top: 14px; font: 500 30px/1.35 'Be Vietnam Pro'; color: var(--tb-phu); }
+.tb-so.dao > div > b { color: #E8A33D; } .tb-so.dao > div > span { color: #CFE5E0; }
+
+/* T11 — hàng có ô số: .tb-hs > .hang (i số, b nhãn, span mô tả) */
+.tb-hs { position: absolute; display: flex; flex-direction: column; gap: 14px; }
+.tb-hs > .hang { display: grid; grid-template-columns: 96px minmax(0, 1fr) minmax(0, 1.6fr); align-items: center; background: var(--tb-nen); border-radius: 16px; overflow: hidden; }
+.tb-hs > .hang > i { font: 800 34px/1 'Be Vietnam Pro'; font-style: normal; color: #fff; background: var(--tb-nhan); align-self: stretch; display: flex; align-items: center; justify-content: center; }
+.tb-hs > .hang > b { padding: 22px 26px; font: 800 32px/1.25 'Be Vietnam Pro'; } .tb-hs > .hang > span { padding: 22px 26px; font: 400 30px/1.4 'Be Vietnam Pro'; color: var(--tb-phu); }
+
+/* T12 — cột có icon đầu: .tb-ci > .cot (img data-l + b + span); 3–5 cột */
+.tb-ci { position: absolute; display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: 40px; }
+.tb-ci > .cot { background: var(--tb-nen); border-radius: 22px; padding: 34px 30px; text-align: center; border-top: 10px solid var(--tb-nhan); }
+.tb-ci > .cot > img { position: static !important; display: block; width: 160px; margin: 0 auto 22px; }
+.tb-ci > .cot > b { display: block; font: 800 32px/1.25 'Be Vietnam Pro'; } .tb-ci > .cot > span { display: block; margin-top: 12px; font: 400 28px/1.4 'Be Vietnam Pro'; color: var(--tb-phu); }
+
+/* T13 — thanh tỉ lệ: .tb-thanh > i (style="flex:<số liệu thật>;background:…"); nhãn đặt data-t riêng sát thanh */
+.tb-thanh { position: absolute; display: flex; height: 90px; border-radius: 14px; overflow: hidden; }
+.tb-thanh > i { display: block; height: 100%; border-right: 4px solid #F6F1E7; } .tb-thanh > i:last-child { border-right: 0; }
