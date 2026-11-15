@@ -185,6 +185,19 @@ function unDraw(D, ten, x, y, w, doi = {}) {
 }
 module.exports.unDraw = unDraw;
 
+// ô tô con nhìn ngang (x trái, by mặt đất, w dài); lat = quay đầu sang trái. Dùng cho cảnh va chạm (bảo hiểm TNDS).
+function xeCon(x, by, w, mau, lat = false) {
+  const k = (a) => f1(a), r = w * 0.1, y1 = by - w * 0.34, y0 = by - w * 0.08;
+  let s = `<path d="M${k(x + w * 0.2)} ${k(y1 + 2)} L${k(x + w * 0.33)} ${k(by - w * 0.52)} H${k(x + w * 0.66)} L${k(x + w * 0.8)} ${k(y1 + 2)} Z" fill="${mau}"/>`
+    + `<rect x="${x}" y="${k(y1)}" width="${w}" height="${k(y0 - y1)}" rx="${k(w * 0.07)}" fill="${mau}"/>`
+    + `<path d="M${k(x + w * 0.27)} ${k(y1 - 1)} L${k(x + w * 0.36)} ${k(by - w * 0.48)} H${k(x + w * 0.49)} V${k(y1 - 1)} Z M${k(x + w * 0.53)} ${k(y1 - 1)} V${k(by - w * 0.48)} H${k(x + w * 0.64)} L${k(x + w * 0.74)} ${k(y1 - 1)} Z" fill="${P.x4}"/>`
+    + `<rect x="${k(x + w * 0.91)}" y="${k(y1 + w * 0.05)}" width="${k(w * 0.07)}" height="${k(w * 0.05)}" rx="3" fill="${P.v3}"/>`
+    + [0.22, 0.78].map((t) => `<circle cx="${k(x + w * t)}" cy="${k(by - r)}" r="${k(r)}" fill="${P.muc}"/><circle cx="${k(x + w * t)}" cy="${k(by - r)}" r="${k(r * 0.45)}" fill="${P.ke}"/>`).join("");
+  return lat ? `<g transform="translate(${k(2 * x + w)} 0) scale(-1 1)">${s}</g>` : s;
+}
+module.exports.xeCon = xeCon;
+module.exports.nguoi = nguoi;
+
 // đám mây mưa có tia sét — RỦI RO (đỏ = rủi ro): cx, cy tâm mây, s bề rộng
 function mayMua(cx, cy, s, { may = P.ke, may2 = P.x3, mua = P.x2, set = P.d1 } = {}) {
   const k = (a) => f1(a * s);

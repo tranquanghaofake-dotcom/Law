@@ -30,6 +30,7 @@ const cap = (kt, km, x, y, w, a, b) => `<div class="cap" style="left:${x}px;top:
   const chip = (s, x = 120, y = 80, cls = "chip", ex = "") => `<div class="${cls}" data-t data-l="c${++nL}" data-alt="Nhãn ${esc(s)}" ${ex} style="left:${x}px;top:${y}px">${esc(s)}</div>`;   // data-t + data-l: nền là lớp ảnh, chữ là hộp chữ — không mất nền khi nằm trên ảnh
   const khoi = (x, y, w, h, cls, alt, ex = "", st = "") => `<div class="${cls}" data-l="k${++nL}" data-alt="${esc(alt)}" ${ex} style="left:${x}px;top:${y}px;width:${w}px;height:${h}px${st}"></div>`;   // thẻ nền thành lớp riêng để hiện có hiệu ứng
   const dau = (kk, td, dan, so, x = 120, w = 1500) => chip(kk, x, 80, "chip", A("fade", 0, 400)) + `<h1 class="td" data-t data-tieu-de ${A("rise", 100, 600)} style="left:${x}px;top:132px;width:${w}px">${em(td)}</h1>` + (dan ? T("dan", x, 246, w + 60, dan, A("fade", 350, 500)) : "") + T("so-trang", 1600, 84, 200, `${so} / ${TONG}`);
+  const dauToi = (kk, td, dan, so, x = 120, w = 1500) => chip(kk, x, 80, "chip vang", A("fade", 0, 400)) + `<h1 class="td sang" data-t data-tieu-de ${A("rise", 100, 600)} style="left:${x}px;top:132px;width:${w}px">${em(td)}</h1>` + (dan ? T("dan sang", x, 246, w + 60, dan, A("fade", 350, 500)) : "") + T("so-trang sang", 1600, 84, 200, `${so} / ${TONG}`);
   const sec2 = (mau, kieu, notes, inner, { ex = "", trans = "fade", dur = 600 } = {}) => S2.push(`<section class="s ${kieu}" data-mau="${mau}" data-nen="${kieu}" ${ex} data-trans="${trans}" data-dur="${dur}" data-notes="${esc(notes)}">\n${inner}\n</section>`);
   const NEN = {
     tron: () => `<circle cx="1920" cy="0" r="300" fill="${P.x4}"/>` + mh.cham(1660, 960, 6, 2, 26, 5, P.v2),
@@ -72,9 +73,9 @@ const cap = (kt, km, x, y, w, a, b) => `<div class="cap" style="left:${x}px;top:
   { const cw = 162, ch = 132, g = 12, x0 = 140, y0 = 452;
     const o = (k) => ({ x: x0 + (k % 5) * (cw + g), y: y0 + Math.floor(k / 5) * (ch + g) });
     sec2("so-lon", "sang", nc(23), nen(NEN.tron())
-      + dau("3.3 · Nghĩa vụ của DNBH", "Giải thích rõ, [bồi thường đúng hạn]", "Đủ hồ sơ hợp lệ: DNBH trả trong 15 ngày, trừ khi thoả thuận khác.", 24)
+      + dau("3.3 · Nghĩa vụ của DNBH", "Giải thích rõ, [bồi thường đúng hạn]", "Tính từ ngày DNBH nhận đủ hồ sơ hợp lệ.", 24)
       + khoi(136, 336, 900, 640, "bong", "Bóng tờ lịch", A("pop", 400, 500)) + khoi(120, 320, 900, 640, "the-trang lich", "Tờ lịch", A("pop", 400, 500)) + khoi(120, 320, 900, 110, "dau-xanh", "Đầu tờ lịch", A("pop", 400, 500))
-      + `<div class="lich-so" data-t data-dl ${A("rise", 700, 500)} style="left:150px;top:326px;width:840px">15 ngày <span class="lich-m">tối đa</span></div>`
+      + `<div class="lich-so" data-t data-dl ${A("rise", 700, 500)} style="left:150px;top:326px;width:840px">15 ngày <span class="lich-m">nếu không thoả thuận</span></div>`
       + [0, 1, 2].map((hang) => lop([0, 1, 2, 3, 4].map((c) => { const k = hang * 5 + c, q = o(k), dau = k === 0, cuoi = k === 14;
           return `<rect x="${q.x}" y="${q.y}" width="${cw}" height="${ch}" rx="14" fill="${dau ? P.x1 : cuoi ? P.v2 : P.v4}"/>` + (dau ? mh.iconNet(D, "file-text", q.x + cw / 2, q.y + ch / 2 + 10, 56, P.nen, 3) : cuoi ? mh.iconNet(D, "coins", q.x + cw / 2, q.y + ch / 2 + 10, 56, P.x1, 3) : `<circle cx="${q.x + cw / 2}" cy="${q.y + ch / 2}" r="7" fill="${P.v2}"/>`); }).join(""),
           x0, y0 + hang * (ch + g), 5 * (cw + g), ch, `Hàng ${hang + 1} của 15 ô ngày`, "phang", A("wipe", 1100 + hang * 300, 500))).join("")
@@ -89,7 +90,7 @@ const cap = (kt, km, x, y, w, a, b) => `<div class="cap" style="left:${x}px;top:
   };
   const G_BANG = () => {
   // ---- 5 BẢNG — bốn trường hợp; mỗi hàng hiện lần lượt, thanh so sánh trong ô ----
-  { const R = [["Đúng giá trị", P.x1, [340], "Theo thiệt hại thực tế"], ["Dưới giá trị", P.x1, [204], "Theo tỷ lệ STBH / giá trị"], ["Trên giá trị", P.x1, [440], "Tối đa bằng giá trị; hoàn phí vượt"], ["Bảo hiểm trùng", P.x1, [200, 230], "Chia theo tỷ lệ STBH"]];
+  { const R = [["Đúng giá trị", P.x1, [340], "Theo thiệt hại thực tế"], ["Dưới giá trị", P.x1, [204], "Theo tỷ lệ STBH / giá trị"], ["Trên giá trị", P.x1, [440], "Tối đa bằng giá trị; hoàn phí vượt"], ["Bảo hiểm trùng", P.x1, [200, 236], "Chia theo tỷ lệ STBH"]];
     const y0 = 400, HR = [128, 200, 128, 128], X = 440, YS = HR.map((h, k) => y0 + HR.slice(0, k).reduce((a, v) => a + v, 0));
     sec2("bang", "sang", nc(25), nen(NEN.dat(760))
       + dau("3.3 · So STBH với giá trị", "Bốn trường hợp, [bốn cách bồi thường]", "Cùng ngôi nhà, khai STBH khác nhau thì bồi thường khác nhau.", 26)
@@ -98,13 +99,13 @@ const cap = (kt, km, x, y, w, a, b) => `<div class="cap" style="left:${x}px;top:
       + [["Trường hợp", 140, 240], ["Giá trị và số tiền bảo hiểm (STBH)", 440, 580], ["Bồi thường", 1040, 600]].map(([s, x, w]) => G("bh-t", x, 330, w, 62, esc(s), A("fade", 700, 300))).join("")
       + R.map(([ten, m, st, bt], k) => { const y = YS[k], hr = HR[k], t0 = 900 + k * 450, yb = y + (k === 1 ? 30 : 34);
         let bars = `<rect x="${X}" y="${yb}" width="340" height="28" rx="5" fill="${P.x1}"/>`, x = X; st.forEach((v, j) => { bars += `<rect x="${x}" y="${yb + 38}" width="${v}" height="28" rx="5" fill="${j ? P.v3 : P.v2}"/>`; x += v + 4; });
-        if (st[0] > 340 || st.length > 1) bars += `<path d="M${X + 340} ${yb - 10} V${yb + 72}" stroke="${P.d1}" stroke-width="3" stroke-dasharray="6 5"/>`;
+        if (st[0] > 340 || st.length > 1) bars += `<path d="M${X + 340} ${yb - 10} V${yb + 72}" stroke="${P.phu}" stroke-width="3" stroke-dasharray="6 5"/>`;
         return khoi(120, y, 1680, hr - 8, `hang${k === 1 ? " nhan" : ""}`, `Hàng ${ten}`, A("rise", t0, 450)) + khoi(120, y, 260, hr - 8, "tab", `Nhãn ${ten}`, A("rise", t0, 450), `;background:${m}`)
           + G("tab-t", 140, y, 220, hr - 8, esc(ten), A("rise", t0, 450))
           + lop(bars, 430, y, 560, hr - 8, `Thanh so sánh: ${ten}`, "phang", A("wipe", t0 + 200, 500))
-          + (k !== 1 ? T("tren-thanh", 790, yb - 2, 120, "giá trị", A("fade", t0 + 500, 300)) + T("tren-thanh vang", 900, yb + 36, 120, "STBH", A("fade", t0 + 550, 300)) : "")
+          + (k !== 1 ? T("tren-thanh", 790, yb - 2, 120, "giá trị", A("fade", t0 + 500, 300)) + T("tren-thanh vang", X + st.reduce((a, v) => a + v + 4, 0) + 8, yb + 36, 120, "STBH", A("fade", t0 + 550, 300)) : "")
           + (k === 1 ? T("tren-thanh", 790, yb - 2, 120, "1 tỷ", A("fade", t0 + 500, 300)) + T("tren-thanh vang", 654, yb + 36, 140, "600 tr", A("fade", t0 + 550, 300))
-              + G("o-t", 1040, y + 6, 740, 80, esc(bt), A("fade", t0 + 300, 400)) + `<div class="vd-ct" data-t ${A("rise", t0 + 700, 500)} style="left:1040px;top:${y + 100}px;width:740px">Ví dụ: <b>600</b> / 1.000 × <span class="d">200</span> = <i>120 triệu</i></div>`
+              + G("o-t", 1040, y + 6, 740, 80, esc(bt), A("fade", t0 + 300, 400)) + `<div class="vd-ct" data-t ${A("rise", t0 + 700, 500)} style="left:1040px;top:${y + 100}px;width:740px">Thiệt hại <span class="d">200</span>: <b>600</b> / 1.000 × <span class="d">200</span> = <i>120 triệu</i></div>`
               : G("o-t", 1040, y, 740, hr - 8, esc(bt), A("fade", t0 + 300, 400))); }).join("")
       + T("nguon", 120, 1000, 1680, "Luật KDBH 08/2022/QH15: đúng giá trị — Điều 16 khoản 3 · dưới — Điều 48 · trên — Điều 47 · trùng — Điều 49."), { ex: "data-khong-hinh" });
   }
@@ -115,18 +116,18 @@ const cap = (kt, km, x, y, w, a, b) => `<div class="cap" style="left:${x}px;top:
   sec2("trich", "anh", nc(20), chup("trich-full.jpg", 0, 0, 1920, 1080, "Ảnh: bàn tay ký vào bản hợp đồng, phủ dải màu chủ bên trái", A("fade", 0, 900))
     + chip("3.3 · Khái niệm", 120, 80, "chip vang", A("fade", 200, 400)) + `<h1 class="td sang" data-t data-tieu-de ${A("rise", 300, 600)} style="left:120px;top:132px;width:1100px">${em("Bên mua [đóng phí], DNBH {bồi thường} theo hợp đồng")}</h1>` + chip(`21 / ${TONG}`, 1690, 80, "chip")
     + lop([0, 70].map((d) => `<circle cx="${138 + d}" cy="400" r="26" fill="${P.v2}"/><path d="M${112 + d} 400 Q${108 + d} 350 ${152 + d} 332 L${156 + d} 344 Q${130 + d} 358 ${136 + d} 390 Z" fill="${P.v2}"/>`).join(""), 100, 322, 160, 110, "Dấu ngoặc kép", "phang", `data-lap ${A("pop", 700, 400)}`)
-    + `<div class="trich sang" data-t ${A("fade", 900, 900)} style="left:176px;top:450px;width:940px">Hợp đồng bảo hiểm là sự thỏa thuận giữa bên mua bảo hiểm và doanh nghiệp bảo hiểm, …, theo đó bên mua bảo hiểm phải <mark class="xanh">đóng phí bảo hiểm</mark>, doanh nghiệp bảo hiểm, … phải <mark>bồi thường, trả tiền bảo hiểm</mark> theo thỏa thuận trong hợp đồng.</div>`
+    + `<div class="trich sang" data-t ${A("fade", 900, 900)} style="left:176px;top:450px;width:940px">Hợp đồng bảo hiểm là sự thoả thuận giữa bên mua bảo hiểm và doanh nghiệp bảo hiểm, …, theo đó bên mua bảo hiểm phải <mark class="xanh">đóng phí bảo hiểm</mark>, doanh nghiệp bảo hiểm, … phải <mark>bồi thường, trả tiền bảo hiểm</mark> theo thỏa thuận trong hợp đồng.</div>`
     + chip("Khoản 16 Điều 4 · Luật KDBH 08/2022/QH15", 180, 880, "chip vien", A("rise", 1700, 400)) + T("dan sang", 178, 950, 940, "Hợp đồng phải lập thành văn bản (Điều 18).", A("fade", 1900, 400)), { ex: "data-hero" });
 
   };
   const G_SOSANH = () => {
   // ---- 7 SO SÁNH — hai thẻ, đầu thẻ có minh hoạ unDraw ----
-  { const H = [["Vì sao có", "Bảo vệ lợi ích công cộng", "Theo nhu cầu người mua"], ["Ví dụ", "Xe cơ giới, cháy nổ, xây dựng…", "Nhân thọ, sức khoẻ, vật chất xe…"], ["Lưu ý", "Không từ chối người đủ điều kiện", "Tự chọn sản phẩm và mức"]];
+  { const H = [["Vì sao có", "Bảo vệ lợi ích công cộng", "Theo nhu cầu người mua"], ["Ví dụ", "TNDS chủ xe cơ giới, cháy nổ, xây dựng…", "Nhân thọ, sức khoẻ, vật chất xe…"], ["Lưu ý", "Không từ chối người đủ điều kiện", "Tự chọn sản phẩm và mức"]];
     sec2("so-sanh", "sang", nc(16), nen(NEN.dat(700))
       + dau("3.2 · Theo tính chất pháp lý", "Bắt buộc [do luật], tự nguyện [do nhu cầu]", "Bắt buộc chỉ gồm các loại luật liệt kê.", 17)
       + [[120, "dau-xanh", "Bảo hiểm bắt buộc", 1, "", "Minh hoạ: văn bản luật có dấu đỏ và búa — bảo hiểm do luật buộc", {}], [990, "dau-vang", "Bảo hiểm tự nguyện", 2, "choose_5kz4", "Minh hoạ: người đang chọn giữa các phương án — bảo hiểm do người mua tự chọn", { "#6c63ff": P.x1 }]].map(([x, cls, ten, c, u, alt, doi]) => { const t0 = c === 1 ? 500 : 900;
         return khoi(x + 14, 344, 810, 650, "bong", "Bóng thẻ", A("rise", t0, 500)) + khoi(x, 330, 810, 650, "the-trang", `Thẻ ${ten}`, A("rise", t0, 500)) + khoi(x, 330, 810, 190, cls, `Đầu thẻ ${ten}`, A("rise", t0, 500))
-          + (u ? ud(u, x + 470, 336, 320, alt, A("pop", t0 + 300, 500), doi) : lop(`<g transform="rotate(-6 ${x + 600} 430)">${mh.hopDong(x + 540, 340, 130, { bar: false })}</g>` + mh.bua(x + 720, 450, 150, { dau: P.v3, soc: P.v2, vet: P.x3 }), x + 500, 330, 300, 190, alt, "phang", A("pop", t0 + 300, 500))) + T(`the-td${c === 2 ? " toi" : ""}`, x + 40, 392, 480, ten, A("fade", t0 + 200, 400))
+          + (u ? ud(u, x + 560, 358, 220, alt, A("pop", t0 + 300, 500), doi) : lop(`<g transform="rotate(-6 ${x + 600} 430)">${mh.hopDong(x + 540, 340, 130, { bar: false })}</g>` + mh.bua(x + 720, 450, 150, { dau: P.v3, soc: P.v2, vet: P.x3 }), x + 500, 330, 300, 190, alt, "phang", A("pop", t0 + 300, 500))) + T(`the-td${c === 2 ? " toi" : ""}`, x + 40, 392, 480, ten, A("fade", t0 + 200, 400))
           + H.map((h, k) => `${T("the-nhan", x + 40, 550 + k * 145, 730, h[0], A("fade", t0 + 500 + k * 200, 300))}${T("the-chu", x + 40, 586 + k * 145, 730, h[c], A("fade", t0 + 550 + k * 200, 400))}${k ? `<div class="vach" style="left:${x + 40}px;top:${536 + k * 145}px;width:730px"></div>` : ""}`).join(""); }).join("")
       + T("nguon", 120, 1012, 1680, "Luật KDBH 08/2022/QH15: Điều 8 khoản 1 (vì sao có), khoản 2 (danh mục), khoản 4 (không được từ chối)."));
   }
@@ -172,6 +173,7 @@ const cap = (kt, km, x, y, w, a, b) => `<div class="cap" style="left:${x}px;top:
       r.forEach((v, j) => { o += G(`so-o${j ? "" : " dau"}`, c2 + 18, yy, wc[j] - 36, hr - 4, j ? `<span style="width:100%;text-align:right">${esc(v)}</span>` : esc(v), A("rise", t0 + 300 + i * 110, 300)); c2 += wc[j]; }); });
     return o; };
   const hopBadge = (x, y, ten, mau = P.x1, co = 100, net = P.nen) => lop(`<rect x="${x}" y="${y}" width="${co}" height="${co}" rx="${co * 0.18}" fill="${mau}"/>` + mh.iconNet(D, ten, x + co / 2, y + co / 2, co * 0.6, net, 3), x, y, co, co, `Biểu tượng ${ten}`, "phang", "data-lap");
+  const badgeNguoi = (x, y, co, mau, ao, ao2, ten, ex = "") => lop(`<rect x="${x}" y="${y}" width="${co}" height="${co}" rx="${co * 0.18}" fill="${mau}"/>` + mh.nguoi(x + co / 2, y + co * 0.94, co * 0.72, { ao, ao2 }), x, y, co, co, `Hình người: ${ten}`, "phang", `data-lap ${ex}`);   // các bên là người: vẽ phẳng, cùng kiểu với toà nhà DNBH
   const badgeToa = (x, y, co, mau, ex = "") => lop(`<rect x="${x}" y="${y}" width="${co}" height="${co}" rx="${co * 0.18}" fill="${mau}"/>` + mh.toaVP(x + co / 2, y + co * 0.9, co * 0.56), x, y, co, co, "Toà nhà doanh nghiệp bảo hiểm", "phang", `data-lap ${ex}`);   // DNBH luôn là toà nhà (slide 8, 12, 23, 30, 31)
   const nhaNho = (x, y, w, m) => `<path d="M${x} ${y + w * 0.42} L${x + w / 2} ${y} L${x + w} ${y + w * 0.42} V${y + w * 0.95} H${x} Z" fill="${m}"/><rect x="${x + w * 0.4}" y="${y + w * 0.6}" width="${w * 0.2}" height="${w * 0.35}" fill="${P.trang}" opacity="0.8"/>`;
   const panel = (x, y, w, h, t0 = 200) => khoi(x, y, w, h, "panel-nen", "Khối nền", A("fade", t0, 500));   // khối nền điểm neo cho slide danh sách / nhiều thẻ
@@ -200,7 +202,7 @@ const cap = (kt, km, x, y, w, a, b) => `<div class="cap" style="left:${x}px;top:
 
   // ---- 6 LỊCH SỬ THẾ GIỚI — trục dọc + tranh Lloyd's khung bo ----
   S.push(() => { const LS = [["1347", "Genoa (Ý)", "hợp đồng đầu tiên"], ["1666", "Đại hoả hoạn London", "13.000 nhà cháy"], ["1688", "Quán cà phê Lloyd's", "mua bán bảo hiểm tàu"], ["1706", "Amicable Society", "nhân thọ đầu tiên"]];
-    sec2("noi-dung", "sang", nc(6), nen(NEN.tron()) + dau("Sự ra đời · thế giới", "Bảo hiểm ra đời từ [thương mại]", "Rủi ro biển và hoả hoạn sinh ra nó.", 6)
+    sec2("noi-dung", "sang", nc(6), nen(NEN.goc()) + dau("Sự ra đời · thế giới", "Bảo hiểm ra đời từ [thương mại]", "Rủi ro biển và hoả hoạn sinh ra nó.", 6)
       + lop(`<path d="M318 360 V930" stroke="${P.x3}" stroke-width="4"/>` + LS.map((_, k) => `<circle cx="318" cy="${376 + k * 160}" r="14" fill="${k === 2 ? P.v2 : P.x1}" stroke="${P.nen}" stroke-width="4"/>`).join(""), 290, 350, 60, 600, "Trục thời gian bốn mốc", "phang", A("wipe", 400, 900))
       + LS.map(([y, a, b], k) => { const yy = 352 + k * 160, t0 = 600 + k * 300; return T(`ls-nam${k === 2 ? " vang" : ""}`, 120, yy, 170, y, A("rise", t0, 400)) + `<div class="cap" style="left:360px;top:${yy + 2}px;width:560px"><b data-t class="dong-t" ${A("fade", t0 + 100, 400)}>${esc(a)}</b><span data-t class="dong-m" ${A("fade", t0 + 200, 400)}>${esc(b)}</span></div>`; }).join("")
       + khoi(1030, 360, 720, 540, "bong", "Mảng lệch sau tranh", A("pop", 1400, 600)) + chup("bao-bo.png", 1000, 330, 700, 520, "Tranh sơn dầu: thuyền buôn Hà Lan gặp bão — rủi ro đường biển sinh ra bảo hiểm hàng hải", A("pop", 1500, 700))
@@ -244,19 +246,19 @@ const cap = (kt, km, x, y, w, a, b) => `<div class="cap" style="left:${x}px;top:
           + chip(v, x + 40, 870, ok ? "chip" : "chip do", A("pop", t0 + 700, 300)); }).join("")); });
 
   // ---- 12 TRUNG THỰC — trích luật + hai chiều ----
-  S.push(() => sec2("trich", "sang", nc(12), nen(NEN.tron()) + dau("3.1 · Nguyên tắc 4", "Trung thực: [nghĩa vụ hai chiều]", "Cả hai bên đều phải khai đúng, làm đúng.", 12) + panel(100, 620, 1720, 250)
-    + khoi(120, 330, 10, 210, "gach-doc", "Vạch trích", A("wipe", 400, 400)) + `<div class="trich-vua" data-t ${A("fade", 500, 800)} style="left:160px;top:326px;width:1600px">“…các bên tham gia hợp đồng bảo hiểm phải cung cấp thông tin, thực hiện các quyền và nghĩa vụ một cách trung thực nhất, trên cơ sở tin tưởng tuyệt đối lẫn nhau…”</div>`
+  S.push(() => sec2("trich", "dam", nc(12), nen(mh.cham(1660, 1010, 6, 2, 26, 5, P.v2)) + dauToi("3.1 · Nguyên tắc 4", "Trung thực: [nghĩa vụ hai chiều]", "Cả hai bên đều phải khai đúng, làm đúng.", 12) + khoi(100, 620, 1720, 250, "panel-toi", "Khối nền", A("fade", 200, 500))
+    + khoi(120, 330, 10, 112, "gach-doc", "Vạch trích", A("wipe", 400, 400)) + `<div class="trich-vua sang" data-t ${A("fade", 500, 800)} style="left:160px;top:326px;width:1600px">“…các bên tham gia hợp đồng bảo hiểm phải cung cấp thông tin, thực hiện các quyền và nghĩa vụ một cách trung thực nhất, trên cơ sở tin tưởng tuyệt đối lẫn nhau…”</div>`
     + chip("Khoản 1 Điều 16 · Luật KDBH 08/2022/QH15", 160, 552, "chip vien", A("rise", 1100, 400))
     + [[120, "building-bank", "Doanh nghiệp bảo hiểm", "giải thích rõ điều khoản"], [1040, "user", "Bên mua bảo hiểm", "khai đúng về rủi ro"]].map(([x, i, a, b], k) => { const t0 = 1300 + k * 300;
-      return khoi(x, 640, 760, 210, "the-trang", a, A("rise", t0, 450)) + (k === 0 ? badgeToa(x + 30, 680, 100, P.x4, A("pop", t0 + 100, 300)) : hopBadge(x + 30, 680, i, P.x4, 100, P.x1).replace("data-lap", `data-lap ${A("pop", t0 + 100, 300)}`)) + `<div class="cap" style="left:${x + 160}px;top:672px;width:570px"><b data-t class="dong-t" ${A("fade", t0 + 150, 400)}>${esc(a)}</b><span data-t class="dong-m" ${A("fade", t0 + 250, 400)}>${esc(b)}</span></div>`; }).join("")
-    + lop(mh.muiKhoi(890, 1030, 720, 18) + mh.muiKhoi(1030, 890, 780, 18, { mau: P.v2 }), 880, 690, 160, 120, "Mũi tên hai chiều: nghĩa vụ trung thực của cả hai bên", "phang", A("fade", 1900, 500))
+      return khoi(x, 640, 760, 210, "the-trang", a, A("rise", t0, 450)) + (k === 0 ? badgeToa(x + 30, 680, 100, P.x4, A("pop", t0 + 100, 300)) : badgeNguoi(x + 30, 680, 100, P.x4, P.x2, P.x1, a, A("pop", t0 + 100, 300))) + `<div class="cap" style="left:${x + 160}px;top:672px;width:570px"><b data-t class="dong-t" ${A("fade", t0 + 150, 400)}>${esc(a)}</b><span data-t class="dong-m" ${A("fade", t0 + 250, 400)}>${esc(b)}</span></div>`; }).join("")
+    + lop(mh.muiKhoi(890, 1030, 720, 18, { mau: P.x4 }) + mh.muiKhoi(1030, 890, 780, 18, { mau: P.v2 }), 880, 690, 160, 120, "Mũi tên hai chiều: nghĩa vụ trung thực của cả hai bên", "phang", A("fade", 1900, 500))
     + khoi(120, 890, 1680, 86, "dai-do", "Dải hậu quả", A("wipe", 2200, 500)) + G("dai-do-t", 160, 890, 1610, 86, "Cố ý khai sai → bên kia được huỷ hợp đồng (Điều 22 khoản 2, 3).", A("fade", 2400, 400))));
 
   // ---- 13 PHÂN TÁN — 18/18 so với 2/18 ----
   S.push(() => { let a = `<rect x="120" y="330" width="800" height="460" rx="24" fill="${P.x4}"/><circle cx="520" cy="560" r="200" fill="none" stroke="${P.d1}" stroke-width="4" stroke-dasharray="12 9"/>`;
     for (let k = 0; k < 18; k++) a += nhaNho(352 + (k % 6) * 58, 470 + Math.floor(k / 6) * 62, 44, P.d1);
     let b = `<rect x="1000" y="330" width="800" height="460" rx="24" fill="${P.x4}"/><circle cx="1180" cy="470" r="90" fill="none" stroke="${P.d1}" stroke-width="4" stroke-dasharray="12 9"/>`;
-    [[1120, 440, 1], [1192, 440, 1], [1380, 400], [1520, 380], [1660, 450], [1090, 620], [1250, 680], [1420, 580], [1560, 540], [1700, 620], [1330, 500], [1480, 690], [1620, 720], [1150, 720], [1300, 740], [1720, 380], [1060, 380], [1400, 740]].forEach(([x, y, c]) => { b += nhaNho(x, y, 44, c ? P.d1 : P.x2); });
+    [[1120, 440, 1], [1192, 440, 1], [1380, 400], [1520, 380], [1660, 450], [1090, 620], [1250, 680], [1420, 580], [1560, 540], [1700, 620], [1330, 500], [1480, 690], [1620, 712], [1150, 712], [1300, 728], [1720, 380], [1030, 356], [1400, 728]].forEach(([x, y, c]) => { b += nhaNho(x, y, 44, c ? P.d1 : P.x2); });
     sec2("noi-dung", "sang", nc(13), nen(NEN.tron()) + dau("3.1 · Nguyên tắc 5", "Phân tán để [tổn thất không dồn]", "Rải hợp đồng ra nhiều nơi để một vụ cháy không trúng tất cả.", 13)
       + lop(a, 120, 330, 800, 460, "Mười tám ngôi nhà dồn một chỗ: vụ cháy trúng cả 18", "phang", A("fade", 500, 700)) + lop(b, 1000, 330, 800, 460, "Mười tám ngôi nhà rải nhiều nơi: vụ cháy chỉ trúng 2", "phang", A("fade", 1300, 700))
       + T("so-vua do", 120, 820, 240, "18/18", `data-dl ${A("pop", 1000, 400)}`) + T("chu-lon", 370, 842, 540, "Dồn một nơi: cháy trúng cả 18", A("fade", 1100, 400))
@@ -268,7 +270,7 @@ const cap = (kt, km, x, y, w, a, b) => `<div class="cap" style="left:${x}px;top:
     + lop(`<circle cx="830" cy="650" r="330" fill="${P.x4}" stroke="${P.x2}" stroke-width="5"/>`, 495, 315, 670, 670, "Vòng nghiệp vụ (giáo trình)", "phang", A("grow", 400, 600))
     + lop(`<circle cx="1090" cy="650" r="330" fill="${P.v3}" fill-opacity="0.55" stroke="${P.v1}" stroke-width="5"/>`, 755, 315, 670, 670, "Vòng Điều 16 Luật KDBH 2022, chồng lên vòng nghiệp vụ", "phang", A("grow", 800, 600))
     + chip("Nghiệp vụ (giáo trình)", 120, 340, "chip", A("fade", 500, 400)) + chip("Điều 16 Luật KDBH", 1400, 340, "chip vang", A("fade", 900, 400))
-    + [["Số đông", 560], ["Phân tán rủi ro", 680]].map(([s, y], k) => T("venn-t", 515, y, 240, s, A("fade", 1200 + k * 150, 400))).join("")
+    + [["Số đông", 560], ["Phân\u00a0tán rủi\u00a0ro", 680]].map(([s, y], k) => T("venn-t", 520, y, 200, s, A("fade", 1200 + k * 150, 400))).join("")
     + [["Rủi ro ngẫu nhiên", 545], ["Quyền lợi bảo hiểm", 630], ["Trung thực tuyệt đối", 715]].map(([s, y], k) => T("venn-t dac nho", 790, y, 340, s, A("pop", 1600 + k * 200, 400))).join("")
     + [["Bồi thường", 560], ["Thế quyền", 700]].map(([s, y], k) => T("venn-t vang", 1165, y, 240, s, A("fade", 2300 + k * 150, 400))).join("")
     + T("nguon", 120, 1000, 1680, "Điều 16 Luật KDBH 08/2022/QH15: năm nguyên tắc giao kết, thực hiện hợp đồng bảo hiểm.")));
@@ -293,13 +295,13 @@ const cap = (kt, km, x, y, w, a, b) => `<div class="cap" style="left:${x}px;top:
           + H.map((h, k) => `${T("the-nhan", x + 40, 548 + k * 108, 300, h[0], A("fade", t0 + 500 + k * 180, 300))}${T("the-chu", x + 300, 544 + k * 108, 480, h[c], A("fade", t0 + 550 + k * 180, 400))}${k ? `<div class="vach" style="left:${x + 40}px;top:${530 + k * 108}px;width:730px"></div>` : ""}`).join(""); }).join("")); });
 
   // ---- 19 BA NHÓM — hero: ba thẻ có minh hoạ lớn ----
-  S.push(() => { const hp = udH("property-agreement_olsb", 400), hf = udH("family_6gj8", 300), ht = udH("towing_e407", 420);
+  S.push(() => { const hp = udH("property-agreement_olsb", 400), hf = udH("family_6gj8", 300);
     sec2("noi-dung", "sang", nc(18), nen(NEN.dat(760)) + dau("3.2 · Theo đối tượng", "Bảo hiểm [cái gì] thì thuộc nhóm đó", "Tài sản, con người, hay trách nhiệm với người khác.", 19)
       + [["Bảo hiểm tài sản", "nhà, xe, hàng hoá…"], ["Bảo hiểm con người", "tính mạng, sức khoẻ"], ["Bảo hiểm TNDS", "trách nhiệm với người thứ ba"]].map(([a, b], k) => { const x = 120 + k * 570, t0 = 500 + k * 400;
         return khoi(x + 12, 342, 540, 610, "bong", "Bóng thẻ", A("rise", t0, 450)) + khoi(x, 330, 540, 610, "the-trang", `Thẻ ${a}`, A("rise", t0, 450)) + khoi(x, 330, 540, 380, "nen-xanh-nhat", `Nền minh hoạ ${a}`, A("rise", t0, 450))
-          + (k === 0 ? ud("property-agreement_olsb", x + 70, Math.round(520 - hp / 2), 400, "Minh hoạ: ngôi nhà và bản hợp đồng — bảo hiểm tài sản", A("pop", t0 + 200, 500))
-            : k === 1 ? ud("family_6gj8", x + 120, Math.round(700 - hf), 300, "Minh hoạ: gia đình — bảo hiểm con người", A("pop", t0 + 200, 500))
-            : ud("towing_e407", x + 60, Math.round(700 - ht), 420, "Minh hoạ: xe cứu hộ kéo chiếc xe gặp nạn — trách nhiệm bồi thường cho người thứ ba", A("pop", t0 + 200, 500), { "#6c63ff": P.v2 }))
+          + (k === 0 ? ud("property-agreement_olsb", x + 70, Math.round(520 - hp / 2), 400, "Minh hoạ: ngôi nhà và bản hợp đồng — bảo hiểm tài sản", A("pop", t0 + 200, 500), { "#f2f2f2": P.x3 })
+            : k === 1 ? ud("family_6gj8", x + 120, Math.round(700 - hf), 300, "Minh hoạ: gia đình — bảo hiểm con người", A("pop", t0 + 200, 500), { "#f2f2f2": P.x3 })
+            : lop(`<rect x="${x + 30}" y="640" width="480" height="10" rx="5" fill="${P.x3}"/>` + mh.xeCon(x + 36, 640, 232, P.v2) + mh.xeCon(x + 262, 640, 232, P.x2, true) + mh.saoCum(x + 262, 560, 30, P.d1) + mh.xu(x + 70, 440, 3, 76) + mh.muiKhoi(x + 166, x + 348, 412, 14, { mau: P.v2 }) + `<circle cx="${x + 420}" cy="410" r="64" fill="${P.trang}"/>` + mh.nguoi(x + 420, 466, 96, { ao: P.x2, ao2: P.x1 }), x + 30, 340, 480, 312, "Minh hoạ: xe vàng của người mua đâm vào xe của người khác; tiền bồi thường chuyển tới người thứ ba", "phang", A("pop", t0 + 200, 500)))
           + T("nhom-t", x + 36, 740, 470, a, A("fade", t0 + 400, 400)) + T("nhom-m", x + 36, 800, 470, b, A("fade", t0 + 500, 400)); }).join("")
       + T("nguon", 120, 1000, 1680, "Luật hiện hành: 3 loại hình — nhân thọ, sức khoẻ, phi nhân thọ (Điều 7); 5 loại hợp đồng (Điều 15)."), { ex: "data-hero" }); });
 
@@ -308,7 +310,7 @@ const cap = (kt, km, x, y, w, a, b) => `<div class="cap" style="left:${x}px;top:
 
   // ---- 22 BẢY TÀI LIỆU — ba chồng giấy theo thời điểm ----
   S.push(() => { const TL = [["file-description", "Trước khi ký", ["Bản mô tả quyền lợi", "Giấy yêu cầu BH"]], ["file-certificate", "Nội dung hợp đồng", ["Các điều kiện BH", "Điều kiện sửa đổi, bổ sung"]], ["receipt", "Chứng nhận, thu phí", ["Giấy chứng nhận tạm thời", "Giấy chứng nhận BH", "Thông báo thu phí, hoá đơn"]]]; let so = 0;
-    sec2("bang", "sang", nc(21), nen(NEN.tron()) + dau("3.3 · Tài liệu liên quan", "Một hợp đồng gồm [cả bộ bảy tài liệu]", "Xếp theo lúc dùng.", 22) + panel(100, 480, 1720, 510)
+    sec2("bang", "sang", nc(21), nen(NEN.goc()) + dau("3.3 · Tài liệu liên quan", "Một hợp đồng gồm [cả bộ bảy tài liệu]", "Xếp theo lúc dùng.", 22) + panel(100, 480, 1720, 510)
       + lop(mh.muiKhoi(140, 1780, 446, 16, { mau: P.x3 }), 130, 420, 1660, 52, "Mũi tên thời gian: trước khi ký, khi ký, sau khi ký", "phang", A("wipe", 400, 900))
       + TL.map(([i, nhom, ds], k) => { const x = 120 + k * 580, t0 = 600 + k * 500;
         return hopBadge(x, 324, i, P.x1, 84).replace("data-lap", `data-lap ${A("pop", t0, 300)}`) + T("tl-nhom", x + 112, 344, 450, nhom, A("fade", t0 + 100, 400))
@@ -321,7 +323,7 @@ const cap = (kt, km, x, y, w, a, b) => `<div class="cap" style="left:${x}px;top:
       + lop(`<path d="M560 420 L840 520 M1360 420 L1080 520" stroke="${P.x1}" stroke-width="5"/><path d="M560 710 L840 640 M1360 710 L1080 640" stroke="${P.phu}" stroke-width="3" stroke-dasharray="10 8"/>`, 550, 400, 820, 330, "Đường nối: hai bên ký nét liền, hai chủ thể còn lại nét đứt", "phang", A("fade", 1200, 600))
       + lop(mh.chongGiay(880, 420, 160) + mh.hopDong(880, 420, 160, { bar: false }), 840, 390, 240, 260, "Minh hoạ: bản hợp đồng ở giữa", "phang", A("pop", 400, 600))
       + chip("Ký", 640, 430, "chip", A("pop", 1400, 300)) + chip("Ký", 1210, 430, "chip", A("pop", 1400, 300))
-      + A4.map(([i, a, x, y, ky], k) => { const t0 = 700 + k * 250; return khoi(x, y, 440, 130, ky ? "the-xanh" : "the-xanh-nhat", a, A("rise", t0, 400)) + (k === 0 ? badgeToa(x + 20, y + 15, 100, P.v2, A("pop", t0 + 100, 300)) : hopBadge(x + 20, y + 15, i, ky ? P.v2 : P.x1, 100).replace("data-lap", `data-lap ${A("pop", t0 + 100, 300)}`)) + G(`ct-t${ky ? " sang" : ""}`, x + 140, y, 290, 130, esc(a), A("fade", t0 + 150, 400)); }).join("")
+      + A4.map(([i, a, x, y, ky], k) => { const t0 = 700 + k * 250; return khoi(x, y, 440, 130, ky ? "the-xanh" : "the-xanh-nhat", a, A("rise", t0, 400)) + (k === 0 ? badgeToa(x + 20, y + 15, 100, P.v2, A("pop", t0 + 100, 300)) : badgeNguoi(x + 20, y + 15, 100, ky ? P.v2 : P.x1, [P.x1, P.x1, P.x3, P.v2][k], [P.x1, P.muc, P.x2, P.v1][k], a, A("pop", t0 + 100, 300))) + G(`ct-t${ky ? " sang" : ""}`, x + 140, y, 290, 130, esc(a), A("fade", t0 + 150, 400)); }).join("")
       + hopBadge(120, 900, "users", P.v1, 80) + G("vd-dong", 220, 900, 1580, 80, "Ví dụ: bố mẹ (bên mua) bảo hiểm nhân thọ cho con (người được BH).", A("fade", 2000, 400))); });
 
   // ---- 25 GIÁ TRỊ BH và STBH — nhà có nhãn giá + hai thanh ----
@@ -334,10 +336,10 @@ const cap = (kt, km, x, y, w, a, b) => `<div class="cap" style="left:${x}px;top:
     + khoi(120, 870, 1680, 96, "the-xanh", "Dải hệ quả", A("wipe", 2300, 500)) + hopBadge(140, 880, "scale", P.v2, 76, P.x1).replace("data-lap", `data-lap ${A("pop", 2400, 300)}`) + G("dai-t", 240, 870, 1540, 96, "STBH thấp hơn giá trị → bồi thường theo tỷ lệ (Điều 48).", A("fade", 2500, 400))));
 
   // ---- 27 PHÍ — công thức lớn + cột xu chia hai phần ----
-  S.push(() => sec2("noi-dung", "sang", nc(26), nen(NEN.tron()) + dau("3.3 · Phí bảo hiểm", "Phí gồm [phí thuần] và [phụ phí]", "Phí thuần để bồi thường; phụ phí để trang trải hoạt động.", 27)
-    + lop([[300, P.x1], [1060, P.x2], [1520, P.v2]].map(([cx, m]) => `<circle cx="${cx}" cy="520" r="150" fill="${m}"/>`).join(""), 140, 360, 1540, 320, "Ba vòng tròn mang ba chữ của công thức", "phang", A("grow", 400, 600))
-    + [["p", 150, "sang"], ["f", 910, "sang"], ["d", 1370, "toi"]].map(([c, x, k], j) => T(`ct-chu ${k}`, x, 410, 300, c, `data-dl ${A("pop", 600 + j * 300, 400)}`)).join("") + T("ct-dau", 560, 420, 200, "=", `data-dl ${A("fade", 750, 300)}`) + T("ct-dau", 1230, 420, 120, "+", `data-dl ${A("fade", 1050, 300)}`)
-    + [["Phí bảo hiểm", "giá của sản phẩm", 150], ["Phí thuần", "để bồi thường", 910], ["Phụ phí", "chi phí hoạt động", 1370]].map(([a, b, x], j) => `<div class="cap" style="left:${x}px;top:700px;width:300px"><b data-t class="la-t" ${A("fade", 1400 + j * 150, 300)}>${esc(a)}</b><span data-t class="la-m" ${A("fade", 1450 + j * 150, 300)}>${esc(b)}</span></div>`).join("")
+  S.push(() => sec2("noi-dung", "dam", nc(26), nen(mh.cham(1660, 1010, 6, 2, 26, 5, P.v2)) + dauToi("3.3 · Phí bảo hiểm", "Phí gồm [phí thuần] và [phụ phí]", "Phí thuần để bồi thường; phụ phí để trang trải hoạt động.", 27) + khoi(100, 330, 1720, 520, "panel-toi", "Khối nền công thức", A("fade", 200, 500))
+    + lop([[300, P.nen], [1060, P.x3], [1520, P.v2]].map(([cx, m]) => `<circle cx="${cx}" cy="520" r="150" fill="${m}"/>`).join(""), 140, 360, 1540, 320, "Ba vòng tròn mang ba chữ của công thức", "phang", A("grow", 400, 600))
+    + [["p", 150, "toi"], ["f", 910, "toi"], ["d", 1370, "toi"]].map(([c, x, k], j) => T(`ct-chu ${k}`, x, 410, 300, c, `data-dl ${A("pop", 600 + j * 300, 400)}`)).join("") + T("ct-dau sang", 560, 420, 200, "=", `data-dl ${A("fade", 750, 300)}`) + T("ct-dau sang", 1230, 420, 120, "+", `data-dl ${A("fade", 1050, 300)}`)
+    + [["Phí bảo hiểm", "giá của sản phẩm", 150], ["Phí thuần", "để bồi thường", 910], ["Phụ phí", "chi phí hoạt động", 1370]].map(([a, b, x], j) => `<div class="cap" style="left:${x}px;top:700px;width:300px"><b data-t class="la-t sang" ${A("fade", 1400 + j * 150, 300)}>${esc(a)}</b><span data-t class="la-m sang" ${A("fade", 1450 + j * 150, 300)}>${esc(b)}</span></div>`).join("")
     + khoi(120, 890, 1680, 86, "the-xanh-nhat", "Dải định nghĩa", A("wipe", 2000, 500)) + G("dinh-nghia", 150, 890, 1620, 86, "Luật (khoản 28 Điều 4): tiền bên mua đóng, theo luật hoặc thoả thuận.", A("fade", 2200, 400))));
 
   // ---- 28 THỜI HẠN — cửa sổ bảo hiểm trên thước thời gian ----
@@ -359,7 +361,7 @@ const cap = (kt, km, x, y, w, a, b) => `<div class="cap" style="left:${x}px;top:
     + chip("3.4 · Khái niệm", 120, 80, "chip vang", A("fade", 200, 400)) + `<h1 class="td sang" data-t data-tieu-de ${A("rise", 300, 600)} style="left:120px;top:132px;width:1300px">${em("Tái bảo hiểm: [chuyển tiếp] rủi ro")}</h1>` + T("dan sang", 120, 246, 1200, "Một phần rủi ro đã nhận, kèm một phần phí đã nhận.", A("fade", 500, 400)) + chip(`30 / ${TONG}`, 1690, 80, "chip")
     + [["Bên mua", 230, P.trang, mh.iconNet(D, "user", 230, 560, 120, P.x1, 4)], ["DNBH gốc", 640, P.trang, mh.toaVP(640, 640, 120)], ["DN nhận tái", 1050, P.v4, mh.toaVP(1050, 640, 120, { than: P.v1, bong: P.v2 })]].map(([a, cx, nen2, ve], k) => lop(`<circle cx="${cx}" cy="560" r="110" fill="${nen2}"/>` + ve, cx - 110, 450, 220, 220, k ? `Toà nhà ${a}` : `Biểu tượng ${a}`, "phang", A("pop", 700 + k * 500, 500)) + G("chuoi-t", cx - 150, 690, 300, 60, `<span style="width:100%;text-align:center">${a}</span>`, A("fade", 800 + k * 500, 400))).join("")
     + lop(mh.muiKhoi(350, 520, 560, 18, { mau: P.x3 }) + mh.muiKhoi(760, 930, 560, 18, { mau: P.v3 }), 340, 530, 600, 60, "Mũi tên: phí đi từ bên mua tới DNBH gốc, một phần rủi ro và phí đi tiếp tới DN nhận tái", "phang", A("wipe", 1100, 900))
-    + T("chuoi-nhan", 330, 470, 210, "phí", A("fade", 1300, 300)) + T("chuoi-nhan vang", 740, 440, 220, "một phần rủi ro + phí", A("fade", 1800, 300))
+    + T("chuoi-nhan", 330, 470, 210, "phí", A("fade", 1300, 300)) + T("chuoi-nhan vang", 690, 436, 300, "một phần rủi\u00a0ro + phí", A("fade", 1800, 300))
     + chip("DNBH gốc vẫn chịu trách nhiệm duy nhất với bên mua (khoản 1 Điều 29)", 120, 860, "chip vang dai-chip", A("rise", 2300, 500)), { ex: "data-hero" }));
 
   // ---- 31 VÍ DỤ BA BƯỚC ----
@@ -377,7 +379,7 @@ const cap = (kt, km, x, y, w, a, b) => `<div class="cap" style="left:${x}px;top:
     + lop(`<path d="M960 420 V460 M540 460 H1380 M540 460 V500 M1380 460 V500 M540 590 V630 M330 630 H750 M330 630 V670 M750 630 V670 M1380 590 V630 M1170 630 H1590 M1170 630 V670 M1590 630 V670" fill="none" stroke="${P.phu}" stroke-width="3"/>`, 320, 410, 1280, 270, "Đường nối cây phân loại", "phang", A("fade", 900, 600))
     + khoi(740, 330, 440, 90, "khoi-goc", "Gốc cây", A("pop", 400, 400)) + G("goc-t", 740, 330, 440, 90, `<span style="width:100%;text-align:center">Tái bảo hiểm</span>`, A("pop", 400, 400))
     + [[340, "khoi-xanh", "Tỷ lệ", ""], [1180, "khoi-vang", "Phi tỷ lệ", " toi"]].map(([x, c, s, k], j) => khoi(x, 500, 400, 90, c, s, A("pop", 700 + j * 200, 400)) + G(`nhanh-t${k}`, x, 500, 400, 90, `<span style="width:100%;text-align:center">${s}</span>`, A("pop", 700 + j * 200, 400))).join("")
-    + [["Số thành", "một tỷ lệ chung", 330, "x"], ["Mức dôi", "vượt mức giữ lại", 750, "x"], ["Vượt mức bồi thường", "tổn thất vượt ngưỡng", 1170, "v"], ["Vượt mức tỷ lệ bồi thường", "tỷ lệ tổn thất vượt ngưỡng", 1590, "v"]].map(([a, b, cx, m], j) => { const t0 = 1200 + j * 250;
+    + [["Số thành", "một tỷ lệ chung", 330, "x"], ["Mức dôi", "vượt mức giữ lại", 750, "x"], ["Vượt mức bồi\u00a0thường", "tổn thất vượt\u00a0ngưỡng", 1170, "v"], ["Vượt mức tỷ\u00a0lệ bồi\u00a0thường", "tỷ lệ tổn thất vượt\u00a0ngưỡng", 1590, "v"]].map(([a, b, cx, m], j) => { const t0 = 1200 + j * 250;
       return khoi(cx - 195, 670, 390, 240, "la-the", a, A("rise", t0, 400)) + khoi(cx - 195, 670, 390, 14, m === "x" ? "dai-x" : "dai-v", "Dải màu nhánh", A("rise", t0, 400)) + `<div class="cap" style="left:${cx - 170}px;top:706px;width:340px"><b data-t class="la-t trai" ${A("fade", t0 + 100, 300)}>${esc(a)}</b><span data-t class="la-m trai" ${A("fade", t0 + 200, 300)}>${esc(b)}</span></div>`; }).join("")));
 
   // ---- 33 SỐ THÀNH — ba thanh 35/65 + vòng tròn tỷ lệ ----
@@ -417,11 +419,11 @@ const cap = (kt, km, x, y, w, a, b) => `<div class="cap" style="left:${x}px;top:
     + T("nguon", 760, 940, 1040, "Đơn vị: 1.000 USD")));
 
   // ---- 37 VƯỢT MỨC BỒI THƯỜNG — thanh tổn thất 6 triệu ----
-  S.push(() => { const X = 220, W = 1500, k = W / 6;
+  S.push(() => { const X = 220, W = 1470, k = W / 6;
     sec2("noi-dung", "sang", nc(36), nen(NEN.dat(800)) + dau("3.4 · Vượt mức", "Vượt mức bồi thường: [trả phần vượt]", "DN nhận tái trả phần vượt mức giữ lại.", 37) + panel(100, 470, 1720, 290)
       + hopBadge(120, 340, "flame", P.d1, 80) + G("vd-dong", 220, 340, 1580, 80, "Một vụ tổn thất 6 triệu; hợp đồng “4 triệu vượt 1 triệu”.", A("fade", 500, 400))
       + lop(`<rect x="${X}" y="500" width="${k - 4}" height="130" rx="12" fill="${P.x1}"/><rect x="${X + k}" y="500" width="${4 * k - 4}" height="130" rx="12" fill="${P.v2}"/><rect x="${X + 5 * k}" y="500" width="${k}" height="130" rx="12" fill="${P.ke}"/>` + Array.from({ length: 7 }, (_, i) => `<rect x="${X + i * k - 2}" y="650" width="4" height="26" fill="${P.phu}"/>`).join(""), X, 500, W + 4, 180, "Thanh tổn thất 6 triệu: 1 triệu giữ lại, 4 triệu DN nhận tái trả, 1 triệu vượt trở lại DN nhượng", "phang", A("wipe", 800, 1100))
-      + Array.from({ length: 7 }, (_, i) => T("thuoc", X + i * k - 40, 690, 80, `${i}`, A("fade", 1000, 300))).join("") + T("thuoc-don", X + W + 30, 690, 140, "triệu", A("fade", 1000, 300))
+      + Array.from({ length: 7 }, (_, i) => T("thuoc", X + i * k - 40, 690, 80, `${i}`, A("fade", 1000, 300))).join("") + T("thuoc-don", X + W + 24, 690, 100, "triệu", A("fade", 1000, 300))
       + [["1 triệu", "DN nhượng giữ lại", X, k, "xanh"], ["4 triệu", "DN nhận tái trả", X + k, 4 * k, "vang"], ["1 triệu", "trở lại DN nhượng", X + 5 * k, k, ""]].map(([a, b, x, w, c], j) => `<div class="cap" style="left:${x}px;top:830px;width:${w}px"><b data-t class="dong-t can ${c}" ${A("fade", 1600 + j * 250, 300)}>${a}</b><span data-t class="dong-m can" ${A("fade", 1650 + j * 250, 300)}>${b}</span></div>`).join("")); });
 
   // ---- 38 VƯỢT MỨC TỶ LỆ — thanh 0–100 % cả kỳ ----
@@ -429,7 +431,7 @@ const cap = (kt, km, x, y, w, a, b) => `<div class="cap" style="left:${x}px;top:
     sec2("noi-dung", "sang", nc(37), nen(NEN.dat(880)) + dau("3.4 · Loại thứ tư", "Vượt mức tỷ lệ: tính theo [cả kỳ]", "Ngưỡng tính trên cả kỳ, không theo từng vụ.", 38)
       + khoi(120, 330, 1680, 84, "the-xanh-nhat", "Dải công thức", A("wipe", 400, 400)) + G("cong-t", 150, 330, 1620, 84, "Tỷ lệ tổn thất = bồi thường / phí cả kỳ", A("fade", 500, 300))
       + lop(`<rect x="${X}" y="540" width="${0.7 * W - 4}" height="130" rx="12" fill="${P.x1}"/><rect x="${X + 0.7 * W}" y="540" width="${0.15 * W - 4}" height="130" rx="12" fill="${P.v2}"/><rect x="${X + 0.85 * W}" y="540" width="${0.15 * W}" height="130" rx="12" fill="${P.ke}"/><path d="M${X + 0.7 * W - 2} 510 V700 M${X + 0.85 * W - 2} 510 V700" stroke="${P.muc}" stroke-width="4"/>`, X, 505, W, 200, "Thanh tỷ lệ tổn thất: 0–70 % DN nhượng, 70–85 % DN nhận tái, trên 85 % trở lại DN nhượng", "phang", A("wipe", 800, 1100))
-      + T("nhan-den phai", X + 0.7 * W - 260, 460, 240, "ngưỡng 70 %", A("fade", 1600, 300)) + T("nhan-den trai", X + 0.85 * W + 16, 460, 200, "85 %", A("fade", 1700, 300))
+      + T("nhan-den phai", X + 0.7 * W - 260, 460, 240, "ngưỡng 70 %", A("fade", 1600, 300)) + T("nhan-den phai", X + 0.85 * W - 222, 460, 200, "85 %", A("fade", 1700, 300))
       + [["0 – 70 %", "nhượng tự trả", X, 0.7 * W, "xanh"], ["70 – 85 %", "nhận tái trả", X + 0.7 * W, 0.15 * W, "vang"], ["trên 85 %", "trở lại nhượng", X + 0.85 * W, 0.15 * W, ""]].map(([a, b, x, w, c], j) => `<div class="cap" style="left:${x}px;top:720px;width:${w}px"><b data-t class="dong-t can ${c}" ${A("fade", 1800 + j * 250, 300)}>${a}</b><span data-t class="dong-m can" ${A("fade", 1850 + j * 250, 300)}>${b}</span></div>`).join("")
       + khoi(120, 900, 1680, 84, "dai", "Dải ví dụ", A("wipe", 2600, 400)) + G("dai-t", 150, 900, 1620, 84, "VD: phí 100, bồi thường 80 → nhượng chịu 70, nhận tái trả 10.", A("fade", 2700, 300))); });
 
@@ -438,7 +440,7 @@ const cap = (kt, km, x, y, w, a, b) => `<div class="cap" style="left:${x}px;top:
     + chip("Làm việc nhóm", 120, 80, "chip vang", A("fade", 0, 400)) + `<h1 class="td sang" data-t data-tieu-de ${A("rise", 100, 600)} style="left:120px;top:132px;width:700px">${em("Hai đề tài [sau giờ học]")}</h1>` + T("so-trang sang", 1600, 84, 200, `39 / ${TONG}`)
     + T("dan sang", 120, 330, 700, "Chọn một trong hai; nộp theo hướng dẫn của giảng viên.", A("fade", 350, 500))
     + khoi(890, 330, 1000, 640, "panel-toi", "Mảng lệch sau ảnh", A("pop", 500, 600)) + chup("nhom-bo.png", 860, 300, 1000, 640, "Ảnh: một nhóm sinh viên cùng bàn bài quanh bàn đứng", A("pop", 600, 700))
-    + [["01", "Tìm một hợp đồng BHTM thực tế và nhận xét nội dung của hợp đồng", 470], ["02", "Thực trạng triển khai BHTM ở Việt Nam thời gian qua", 720]].map(([so, a, yy], k) => { const t0 = 1000 + k * 500;
+    + [["01", "Tìm một hợp đồng BHTM thực tế và nhận xét nội\u00a0dung của hợp\u00a0đồng", 470], ["02", "Thực trạng triển khai BHTM ở Việt\u00a0Nam thời\u00a0gian\u00a0qua", 720]].map(([so, a, yy], k) => { const t0 = 1000 + k * 500;
       return T("de-so sang", 120, yy, 140, so, `data-dl ${A("pop", t0, 300)}`) + T("de-tai sang", 270, yy + 6, 540, a, A("fade", t0 + 100, 400)) + (k ? `<div class="vach toi" style="left:120px;top:${yy - 30}px;width:690px"></div>` : ""); }).join("")
     + T("nguon sang", 860, 975, 1000, "Ảnh: Akson · Unsplash")));
 
@@ -448,8 +450,8 @@ const cap = (kt, km, x, y, w, a, b) => `<div class="cap" style="left:${x}px;top:
 
   // ---- 45 TỔNG KẾT — nền đậm ----
   S.push(() => sec2("cau", "dam", nc(44), nen(`<circle cx="1460" cy="575" r="590" fill="${P.x2}"/>` + mh.cham(120, 96, 5, 3, 26, 5, P.v2))
-    + `<h1 class="cau-dam" data-t data-tieu-de ${A("rise", 300, 700)} style="left:116px;top:260px;width:720px">${em("BHTM: [phí chắc\u00a0chắn] đổi cam\u00a0kết bồi\u00a0thường")}</h1>` + T("cau-dam-phu", 118, 660, 680, "Bốn phần, hai bài tập.", A("fade", 900, 500))
-    + [["bulb", "Khái niệm, năm nguyên tắc"], ["category", "Phân loại theo ba tiêu chí"], ["file-certificate", "Hợp đồng: chủ thể, con số"], ["arrows-split", "Tái bảo hiểm: bốn loại"]].map(([i, a], k) => { const y = 250 + k * 170, t0 = 1100 + k * 250;
+    + `<h1 class="cau-dam" data-t data-tieu-de ${A("rise", 300, 700)} style="left:116px;top:260px;width:720px">${em("BHTM: [phí\u00a0chắc\u00a0chắn] đổi cam\u00a0kết bồi\u00a0thường")}</h1>` + T("cau-dam-phu", 118, 660, 680, "Bốn điều mang về.", A("fade", 900, 500))
+    + [["scale", "Thi luật: năm nguyên tắc ở\u00a0Điều\u00a016"], ["gavel", "Bắt buộc: chỉ các loại luật\u00a0liệt\u00a0kê"], ["coins", "STBH dưới giá trị → chia\u00a0tỷ\u00a0lệ"], ["arrows-split", "Tái BH: DNBH gốc vẫn chịu\u00a0trách\u00a0nhiệm"]].map(([i, a], k) => { const y = 250 + k * 170, t0 = 1100 + k * 250;
       return khoi(1080, y, 720, 140, "tk-the", `Ý ${k + 1}`, A("slide-r", t0, 450)) + T("tk-so", 1110, y + 36, 90, `0${k + 1}`, A("slide-r", t0, 450)) + hopBadge(1210, y + 25, i, P.v2, 90).replace("data-lap", `data-lap ${A("slide-r", t0, 450)}`) + G("tk-t", 1320, y, 460, 140, esc(a), A("slide-r", t0, 450)); }).join(""), { ex: "data-khong-hinh" }));
 
   // ---- 46 KẾT ----
@@ -487,7 +489,7 @@ section.s.anh{background:${P.x1}}.td.sang{color:${P.nen}}.so-trang.sang,.dan.san
 .la-t{font:800 32px/1.25 'Be Vietnam Pro';color:${P.x1};text-align:center}.la-m{font:400 32px/1.35 'Be Vietnam Pro';color:${P.phu};text-align:center}
 .cap > b,.cap > span{display:block}.cap > span{margin-top:8px}
 .nhan-vang{font:800 36px/1.2 'Be Vietnam Pro';color:${P.v1}}.dk-vang{font:600 32px/1.3 'Be Vietnam Pro';color:${P.v1}}
-.lich{border:3px solid ${P.x4}}.lich-so{font:700 80px/1.15 'Lora';color:${P.v3}}.lich-m{font:700 40px/1.3 'Be Vietnam Pro';color:${P.x4}}.lich-o{font:700 40px/1 'Lora';color:${P.nen}}.lich-o.toi{color:${P.x1}}.lich-nhan{font:800 32px/1.2 'Be Vietnam Pro';color:${P.x1}}.lich-nhan.vang{color:${P.v1}}
+.lich{border:3px solid ${P.x4}}.lich-so{font:700 80px/1.15 'Lora';color:${P.v3}}.lich-m{font:700 34px/1.3 'Be Vietnam Pro';color:${P.x4}}.lich-o{font:700 40px/1 'Lora';color:${P.nen}}.lich-o.toi{color:${P.x1}}.lich-nhan{font:800 32px/1.2 'Be Vietnam Pro';color:${P.x1}}.lich-nhan.vang{color:${P.v1}}
 .tren-thanh{font:800 28px/1 'Be Vietnam Pro';color:${P.x1}}.tren-thanh.vang{color:${P.v1}}.vd-ct{font:600 32px/1.2 'Be Vietnam Pro';color:${P.muc}}.vd-ct b{color:${P.v1}}.vd-ct .d{color:${P.d0}}.vd-ct i{font-style:normal;font-weight:800;color:${P.x1}}
 .nhan-do{font:800 36px/1.2 'Be Vietnam Pro';color:${P.d0}}.dk-do{font:600 32px/1.3 'Be Vietnam Pro';color:${P.d0}}
 .so-to{font:700 330px/1 'Lora';color:${P.x1}}.don-vi{font:700 64px/1 'Lora';color:${P.v1}}
@@ -517,7 +519,7 @@ section.s.anh{background:${P.x1}}.td.sang{color:${P.nen}}.so-trang.sang,.dan.san
 .dai-nhat{background:${P.x4};border-radius:16px}.chot{font:700 34px/1.3 'Be Vietnam Pro';color:${P.x1}}.ev-t{font:600 34px/1.25 'Be Vietnam Pro';color:${P.muc}}
 .pill-co{background:${P.x4};border-radius:34px}.pill-khong{background:${P.d4};border-radius:34px}.pill-co-t{font:800 32px/1 'Be Vietnam Pro';color:${P.x1}}.pill-khong-t{font:800 32px/1 'Be Vietnam Pro';color:${P.d0}}
 .q-t{font:800 36px/1.2 'Be Vietnam Pro';color:${P.muc}}.q-m{font:400 32px/1.3 'Be Vietnam Pro';color:${P.phu}}.chip.do{background:${P.d0};color:${P.nen}}
-.trich-vua{font:700 38px/1.45 'Lora';color:${P.muc}}.gach-doc{background:${P.v2};border-radius:5px}.the-xanh-nhat{background:${P.x4};border-radius:20px}.the-xanh{background:${P.x1};border-radius:20px}
+.trich-vua{font:700 38px/1.45 'Lora';color:${P.muc}}.trich-vua.sang{color:${P.nen}}.ct-dau.sang{color:${P.v3}}.la-t.sang{color:${P.v3}}.la-m.sang{color:${P.x4}}.gach-doc{background:${P.v2};border-radius:5px}.the-xanh-nhat{background:${P.x4};border-radius:20px}.the-xanh{background:${P.x1};border-radius:20px}
 .dai-do{background:${P.d4};border-radius:16px}.dai-do-t{font:700 32px/1.3 'Be Vietnam Pro';color:${P.d0}}
 .venn-t{font:800 32px/1.2 'Be Vietnam Pro';color:${P.x1};text-align:center}.venn-t.dac{color:${P.muc}}.venn-t.vang{color:${P.v1}}.venn-t.nho{font-size:30px}
 .so-khong-lo{font:700 360px/1 'Lora';color:${P.v3};text-align:right}.cau-dam{position:absolute;font:700 76px/1.12 'Lora';color:${P.nen};text-wrap:balance}.cau-dam-phu{font:400 34px/1.4 'Be Vietnam Pro';color:${P.x4}}

@@ -1,6 +1,6 @@
 {
   "ten": "tư vấn pháp lý — khối phẳng",
-  "huong": "Ảnh tư liệu hai màu + sơ đồ nét / icon nét (Tabler) cùng độ dày 3 px + chữ Lora lớn + bảng kẻ ngang. Không hoạt hình, không đồ vật vẽ phẳng, không hoạ tiết, không bóng.",
+  "huong": "Tư vấn pháp lý, khối phẳng: ảnh chụp Unsplash và tranh tư liệu cắt khung (vòm, tròn, bo góc) cùng một cách chỉnh màu; minh hoạ unDraw tô lại theo bảng màu và vật phẳng tự vẽ (toà nhà DNBH, người, xe, xu, hợp đồng); icon nét Tabler 3 px trong huy hiệu; khối thông tin tô đặc, bóng lệch đặc màu x3 (không bóng mờ); tiêu đề Lora có từ khoá màu; nền sáng xen nền đậm, ảnh tràn mép, nền chia; mỗi phần một slide hero.",
   "gradient": false,
   "bongMo": false,
   "bangMau": [
@@ -51,12 +51,12 @@
   "nguong": {
     "loaiNenToiThieu": 2,
     "tiLeNenToiDa": 0.85,
-    "lienToiDa": 16,
-    "lienHoToiDa": 16,
+    "lienToiDa": 6,
+    "lienHoToiDa": 6,
     "assetToiDa": 4,
     "bangXetTiLe": 99,
     "tieuDiemToiThieu": 0.15
   },
-  "ghiChuNguong": "Hướng biên tập: một kiểu bảng cho cả deck là chủ ý (bo-cuc.md); slide lấy chữ / số lớn làm tiêu điểm khai data-khong-hinh.",
+  "ghiChuNguong": "Hướng biên tập: một kiểu bảng cho cả deck là chủ ý (bo-cuc.md); slide lấy chữ / số lớn làm tiêu điểm khai data-khong-hinh. Nhịp nền (15/11/2026, vòng duyệt 6): tối đa 6 slide liền cùng họ nền.",
   "ghiChuNguon": "Ảnh chụp Unsplash (giấy phép Unsplash) và minh hoạ unDraw (giấy phép unDraw) — Hào chọn 15/11/2026; ghi nguồn trong ghi-cong.md. Không ảnh AI."
 }
