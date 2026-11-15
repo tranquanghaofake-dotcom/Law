@@ -46,9 +46,10 @@ const FACES = [
   { face: "Be Vietnam Pro", file: "BeVietnamPro-Regular.ttf" },   // font-weight < 550
   { face: "Be Vietnam Dam", file: "BeVietnam-Dam.ttf" },          // 550 – 749
   { face: "Be Vietnam Nang", file: "BeVietnam-Nang.ttf" },        // ≥ 750
+  { face: "Lora Dam", file: "Lora-Dam.ttf" },                     // chữ có chân: CSS font-family Lora (mọi độ đậm → bản 700)
 ];
 for (const f of FACES) { f.path = path.join(FD, f.file); f.font = fontkit.openSync(f.path); const U = f.font.unitsPerEm; f.asc = f.font.hhea.ascent / U; f.desc = -f.font.hhea.descent / U; }
-const faceOf = (family, weight) => (/anton/i.test(family) ? FACES[0] : weight >= 750 ? FACES[3] : weight >= 550 ? FACES[2] : FACES[1]);
+const faceOf = (family, weight) => (/anton/i.test(family) ? FACES[0] : /lora/i.test(family) ? FACES[4] : weight >= 750 ? FACES[3] : weight >= 550 ? FACES[2] : FACES[1]);
 const SYM = "Segoe UI Symbol";                                // font ký hiệu có sẵn trên Windows: nhận các mũi tên, dấu tích, ô vuông mà font chữ không có
 const hex = (c) => { const m = String(c).match(/[\d.]+/g) || [0, 0, 0]; return m.slice(0, 3).map((v) => Math.round(+v).toString(16).padStart(2, "0")).join("").toUpperCase(); };
 
