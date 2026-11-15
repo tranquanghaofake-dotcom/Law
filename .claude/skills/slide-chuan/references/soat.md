@@ -1,7 +1,7 @@
 # Soát — từng slide và cả deck
 
 ## 1. Mười điều kiểm mỗi slide (nhìn bằng mắt trên `h-NN.jpg`)
-1. **Glance test 3 giây**: nhìn 3 giây rồi quay đi, nói lại được ý chính (Duarte).
+1. **Glance test 3 giây**: nhìn 3 giây rồi quay đi, nói lại được ý chính (Duarte). Và **đọc riêng slide (không nghe lời giảng) vẫn nắm đủ ý** — thiếu ý cốt lõi trên slide là lỗi, kể cả khi ghi chú có.
 2. **Một ý**; tiêu đề là câu khẳng định đầy đủ (chủ ngữ + vị ngữ + phạm vi), ≤ 2 dòng (Alley).
 3. **Bằng chứng là hình** (sơ đồ, bảng, ảnh, hình vẽ đúng tỉ lệ) — không phải gạch đầu dòng.
 4. **Không chi tiết thừa**: chỉ vào từng chấm, dải, vật, màu — nói được nó mang nghĩa gì; không nói được thì bỏ (Mayer: coherence).
