@@ -21,8 +21,9 @@ Thêm cho hình: **hình là chính sự vật** (không ẩn dụ phải giải
 | Thiết kế | thứ bậc rõ, khoảng thở, nhất quán, hình đúng sự vật | nhất quán nhưng dày / nhạt | rối, lệch phong cách, hình sai nghĩa |
 | Mạch lạc | đọc liền tiêu đề thành lập luận | có chỗ nhảy ý | rời rạc |
 | Dễ hiểu | sinh viên mới học hiểu từng slide trong 3 giây | phải nghe giảng mới hiểu | khó hiểu cả khi nghe |
+| **Nhất quán** (chống hổ lốn, `bo-cuc.md`) | một ngôn ngữ hình ảnh, mọi slide đúng bố cục mẫu, cùng bảng màu, cùng nét | 2 giọng hình, vài slide lệch khung | ≥ 3 giọng hình (ảnh thật + hoạt hình + đồ hoạ phẳng…), mỗi slide một kiểu |
 | **Thẩm mỹ** (so với bảng tham chiếu) | đứng cạnh mẫu chuyên nghiệp không lạc tông: thứ bậc rõ, cân bằng, căn theo lưới, khoảng thở đều, có nhịp; **đa dạng trong hệ thống**: ≥ 3 loại nền đúng vai + hoạ tiết đổi vị trí, ≥ 6 kiểu trình bày dữ liệu, mỗi phần một hình chính riêng | sạch nhưng đơn điệu: một nền phẳng suốt deck, bảng một kiểu, cùng vài hình dán lại nhiều slide | lệch lưới, chật / trống bất thường, hình sai tỉ lệ, đổi nền / màu ngẫu nhiên không theo vai |
-Giao khi mọi hạng ≥ 4 — kể cả Thẩm mỹ (PPTEval dùng Nội dung / Thiết kế / Mạch lạc, thang 1–5 — arXiv 2501.03936).
+Giao khi mọi hạng ≥ 4 — kể cả Nhất quán và Thẩm mỹ (PPTEval dùng Nội dung / Thiết kế / Mạch lạc, thang 1–5 — arXiv 2501.03936).
 
 ## 3. Máy kiểm (`scripts/dung.js`) — đọc thông báo thế nào
 | Thông báo | Sửa |
@@ -42,6 +43,7 @@ Giao khi mọi hạng ≥ 4 — kể cả Thẩm mỹ (PPTEval dùng Nội dung 
 | ◇ nền: ít loại / một nền > 80 % / > 6 slide liền | thêm N2/N3 đúng vai, đổi góc hoạ tiết N1 (`he-nen.md`) |
 | ◇ asset: hình dùng trên > 3 slide | vẽ hình chính riêng cho ý đó; motif cố ý cùng vai → `data-lap` |
 | lớp ảnh tràn khỏi mép slide | dời / thu hình; cố ý tràn mép (ảnh nền, hoạ tiết) → `data-ngoai` |
+| ◇ nhất quán: màu ngoài bảng / loại hình ngoài thẻ / không khai data-mau / tiêu đề lệch | dùng màu, loại hình, bố cục đã khai trong `phong-cach.json`; sửa ở bố cục mẫu (`bo-cuc.md`) |
 | ◇ tiêu điểm: slide không có khối thị giác ≥ 25 % | phóng hình chính lên 30–45 % slide, đặt mảng màu hoặc số lớn; slide cố ý chỉ chữ → `data-khong-hinh` (`nguon-hinh.md` quy tắc 1) |
 | ◇ phong cách: hình có gradient / bóng mờ / quá nhiều màu so với thẻ | vẽ lại theo `thiet-ke/phong-cach.json`; xem `<tên>_lop/asset.jpg` để thấy hình lệch |
 | ◇ bảng: một kiểu / một kiểu > 40 % | chọn lại kiểu theo loại thông tin (`trinh-bay-du-lieu.md`) |

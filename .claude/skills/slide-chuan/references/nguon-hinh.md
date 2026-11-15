@@ -2,6 +2,8 @@
 
 Vì sao (nghiên cứu 15/11/2026, spec mục 13): mẫu bán slide đẹp nhờ (1) **một hình chính lớn** (30–45 % slide, 2–4 phần tử), (2) **hình do hoạ sĩ vẽ** hoặc ảnh thật, (3) **chữ tương phản** (chữ có chân lớn + chữ không chân), (4) mảng màu lớn. SVG ghép khối bằng code chỉ đạt hình khối đơn giản — không dùng làm hình chính nữa.
 
+**Chọn một họ hình chính cho cả deck** (`bo-cuc.md` mục 1): ảnh tư liệu + nét, **hoặc** minh hoạ CC0 + nét — không trộn ảnh tư liệu với nhân vật hoạt hình trong cùng deck.
+
 | Vai của hình | Nguồn | Công cụ | Ghi công |
 |---|---|---|---|
 | Lịch sử, bối cảnh, ví dụ thực tế (nhà cháy, tai nạn, toà án, văn bản cổ) | ảnh / tranh tư liệu **phạm vi công cộng** (Wikimedia Commons), ảnh CC0 / Unsplash / Pexels | `scripts/find_images.py`, `fetch_image.py` → `scripts/hai_mau.js` (tô hai màu theo bảng màu) | TASL trong `ghi-cong.md`, chú thích nhỏ trên slide nếu là tư liệu |

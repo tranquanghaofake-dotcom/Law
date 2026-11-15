@@ -65,8 +65,11 @@ async function dung(dir, { ten, soat = true, nhap = false } = {}) {
   console.log(`· ${files.length} file slide → ${htmlPath}`);
   const { kiemHtml } = require("./kiem_html"), { kiemDeTrongTrang } = require(path.join(HINH, "kiem_de"));
   const loi = [];
-  const { thuThap, danhGia } = require("./da_dang"); let dd = null;
-  const truoc = async (page) => { const a = await page.evaluate(kiemHtml), b = await page.evaluate(kiemDeTrongTrang); dd = danhGia(await page.evaluate(thuThap)); return [...a, ...b, ...dd.loi]; };
+  const { thuThap, danhGia, NGUONG } = require("./da_dang"), { thuThapNhatQuan, danhGiaNhatQuan } = require("./nhat_quan"); let dd = null;
+  const fThe = path.join(dir, "thiet-ke", "phong-cach.json"), the = fs.existsSync(fThe) ? JSON.parse(fs.readFileSync(fThe, "utf8")) : null;
+  const ng = { ...NGUONG, ...((the && the.nguong) || {}) };   // thẻ phong cách được chỉnh ngưỡng đa dạng (vd. deck biên tập tối giản: cùng nền giấy nhiều slide liền là chủ ý)
+  const truoc = async (page) => { const a = await page.evaluate(kiemHtml), b = await page.evaluate(kiemDeTrongTrang); dd = danhGia(await page.evaluate(thuThap), ng);
+    const nq = danhGiaNhatQuan(await page.evaluate(thuThapNhatQuan), the); return [...a, ...b, ...dd.loi, ...nq.loi]; };
   const { build } = require(path.join(HINH, "build"));
   const res = await build({ htmlPath, outPath, soat, giuLop: true, truoc });
   loi.push(...(res.warn || []), ...(res.lost || []));

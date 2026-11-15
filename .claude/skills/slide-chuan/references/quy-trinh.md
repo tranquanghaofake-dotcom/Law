@@ -48,7 +48,10 @@ Bảng, mỗi slide một dòng:
 - Hướng được chọn ghi thành **thẻ phong cách asset** `thiet-ke/phong-cach.json` (máy kiểm mọi SVG theo thẻ, `scripts/kiem_phong_cach.js`) + mô tả trong `he-thong.md`: kiểu (phẳng 2–3 tông / bán tả thực / nét), góc nhìn (thẳng / ¾), nguồn sáng, có gradient không, bóng (không / bóng phẳng một màu), độ dày nét, bo góc, mức chi tiết, bảng màu cho hình. **Một deck một thẻ**: hình nào lệch thẻ (vd. người bán 3D đứng cạnh biểu tượng phẳng) là lỗi Thẩm mỹ, kể cả khi từng hình đẹp.
 - Bản ghi lựa chọn: A / B / C kèm ảnh, khuyến nghị.
 
-## 5. Làm mẫu 3–4 slide
+## 5. Bộ bố cục mẫu + cổng thẩm mỹ
+Viết 8–12 hàm bố cục trong `deck.js` theo `bo-cuc.md`, dựng 6–8 slide mẫu phủ các bố cục chính, tờ so sánh với mẫu tham chiếu, người duyệt độc lập chấm **Thẩm mỹ ≥ 4 và Nhất quán ≥ 4** → mới sang bước 6–7. Không đạt thì sửa bố cục mẫu.
+
+### (cũ) Làm mẫu 3–4 slide
 Bìa · một slide khái niệm · một sơ đồ / so sánh · một slide số liệu hoặc bài tập — dựng ra PPTX bằng `scripts/dung.js`, sạch lỗi máy, glance test 3 giây.
 - **Slide then chốt làm 3 phương án** (bìa, khái niệm trung tâm, sơ đồ chính), đặt cạnh nhau với bảng tham chiếu, chọn phương án tốt nhất theo `soat.md` mục 2 (hạng Thẩm mỹ) — không làm một phương án rồi sửa dần.
 - **Mỗi bảng và mỗi hình chính làm 2 phương án** (bước 7 cũng vậy): hai kiểu trình bày khác nhau trong `trinh-bay-du-lieu.md` (vd. T3 cột nhấn vs T5 thẻ), hai cách vẽ hình (cảnh vs vật thể); dựng cả hai, đặt cạnh mẫu tham chiếu cùng loại bằng `scripts/to_so_sanh.js`, giữ cái hơn, ghi lý do một dòng trong `nhat-ky.md`.
@@ -61,8 +64,8 @@ Bìa · một slide khái niệm · một sơ đồ / so sánh · một slide s�
 - **Nguồn hình theo vai** — đọc `nguon-hinh.md`; chọn nguồn theo câu hỏi "hình này chở ý gì", không theo thói quen.
 - **Ảnh thật** (`anh/`): tìm theo brief (`scripts/find_images.py --brief`), mở ảnh ứng viên chấm bằng mắt (đúng chủ đề, nét, bố cục), ghi TASL (tên – tác giả – nguồn – giấy phép) vào `ghi-cong.md`. Chiếu trên lớp: được dùng ảnh báo có ghi nguồn; công khai: chỉ CC0 / PD / CC BY / CC BY-SA. Không ảnh AI.
 
-## 7. Thiết kế + dựng toàn bộ
-- Mỗi slide một file `slides/NN-ten.html`, thiết kế **tự do** theo kịch bản và phong cách — quy ước kỹ thuật ở `hop-dong-html.md`. Bảng / số liệu dùng **bộ thành phần** `hinh/bang.css` (`.tb` + biến thể T1–T13, màu đặt bằng biến `--tb-*` trong `style.css` của bài) để có độ hoàn thiện cao sẵn; chỉ tự viết CSS bảng khi không kiểu nào hợp.
+## 7. Đổ nội dung vào bố cục mẫu
+- Mỗi slide là một thể hiện của một bố cục mẫu đã qua cổng thẩm mỹ (`bo-cuc.md`); `<section data-mau="…">`. Không thiết kế tự do từng slide — quy ước kỹ thuật ở `hop-dong-html.md`. Bảng / số liệu dùng **bộ thành phần** `hinh/bang.css` (`.tb` + biến thể T1–T13, màu đặt bằng biến `--tb-*` trong `style.css` của bài) để có độ hoàn thiện cao sẵn; chỉ tự viết CSS bảng khi không kiểu nào hợp.
 - `node scripts/dung.js <bài>` sau mỗi 5–8 slide; sửa hết `⚠` trước khi làm tiếp (lỗi nhỏ dồn lại khó sửa). Đọc dòng **Đa dạng** và **dải nền** máy in ra, so với `nhip.md`; lỗi ◇ (nền, asset lặp, kiểu bảng) cũng là lỗi.
 - Lời nói từ kịch bản vào `data-notes` của `<section>`.
 
