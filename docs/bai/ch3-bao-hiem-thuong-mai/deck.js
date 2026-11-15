@@ -101,7 +101,7 @@ ${t("nhan-mt", 560, 496, 560, "Phí bảo hiểm — luôn trả")}${t("nhan-mt 
 ${img("nhaChay", "Rủi ro đã thoả thuận xảy ra: nhà cháy", 740, 790, 200)}${t("nhan-nho", 640, 990, 400, "điều kiện: rủi ro đã thoả thuận")}
 ${chip(110, 940, 400, C.mua, "Bên mua bảo hiểm", "chấp nhận trả phí")}${chip(1290, 940, 420, C.dn, "Doanh nghiệp bảo hiểm", "cam kết bồi thường, trả tiền")}`, nc(8), { dan: "Bên mua trả phí chắc chắn; doanh nghiệp bảo hiểm cam kết bồi thường khi xảy ra rủi ro đã thoả thuận." });
 // 9 số đông — K7 + đếm
-{ let d = ""; for (let r = 0; r < 5; r++) for (let c = 0; c < 20; c++) d += nguoiNho(150 + c * 38, 470 + r * 70, (r === 2 && c === 7) || (r === 4 && c === 15) ? C.do : "6F8A86");
+{ let d = ""; for (let r = 0; r < 5; r++) for (let c = 0; c < 20; c++) d += nguoiNho(140 + c * 42, 470 + r * 82, (r === 2 && c === 7) || (r === 4 && c === 15) ? C.do : "6F8A86");
   sl("3.1 · Nguyên tắc 1 · Số đông", "Số đông bù cho số ít", `${lop(ve(d), "100 người đóng phí, 2 người (đỏ) gặp rủi ro")}${t("so-lon", 1020, 400, 360, "100")}${t("so-nhan", 1020, 530, 360, "người cùng đóng phí vào quỹ")}${t("so-lon do", 1440, 400, 360, "2")}${t("so-nhan", 1440, 530, 360, "người gặp rủi ro được bù đắp từ quỹ")}${vach(1020, 690, 780)}${t("chu", 1020, 720, 780, "Ai cũng có thể là người gặp rủi ro, nên ai cũng góp phí.")}`, nc(9), { dan: "Rủi ro của số ít được bù bằng tiền của rất nhiều người cùng đóng phí." }); }
 // 10 rủi ro BH — K4
 const cot = (x, ok, tieu, ds) => `${t("cot-t", x, 340, 780, tieu)}${vach(x, 400, 780)}` + ds.map((s, k) => `${dau(ok, x, 450 + k * 130, k)}${t("li", x + 70, 456 + k * 130, 700, s)}`).join("");
@@ -115,9 +115,9 @@ sl("3.1 · Nguyên tắc 4 · Trung thực tuyệt đối", "Trung thực: nghĩ
 ${khoi(120, 640, 800, "Doanh nghiệp bảo hiểm", "soạn hợp đồng bảo đảm quyền lợi hai bên; giải thích điều kiện, điều khoản", "mau-dn")}${khoi(1000, 640, 800, "Bên mua bảo hiểm", "khai đủ, trung thực về đối tượng, rủi ro, thiệt hại", "mau-mua")}
 ${t("chu do", 120, 900, 1680, "Cố ý khai sai hoặc giấu thông tin nhằm giao kết hợp đồng → bên kia có quyền huỷ bỏ (Điều 22 khoản 2, 3).")}`, nc(12));
 // 13 phân tán — K6 hai bản đồ cùng thang
-{ const nhaN = (x, y, c) => `<path d="M${x} ${y + 14} L${x + 17} ${y} L${x + 34} ${y + 14} V${y + 36} H${x}Z" fill="#${c}"/>`;
+{ const nhaN = (x, y, c) => `<path d="M${x} ${y + 18} L${x + 22} ${y} L${x + 44} ${y + 18} V${y + 46} H${x}Z" fill="#${c}"/>`;
   let a = `<rect x="120" y="340" width="800" height="560" rx="20" fill="none" stroke="#${C.xam}" stroke-width="3"/><circle cx="420" cy="620" r="190" fill="#F2711C" opacity=".2"/>`, b = `<rect x="1000" y="340" width="800" height="560" rx="20" fill="none" stroke="#${C.xam}" stroke-width="3"/><circle cx="1180" cy="520" r="80" fill="#F2711C" opacity=".2"/>`;
-  for (let k = 0; k < 18; k++) a += nhaN(280 + (k % 6) * 48, 550 + Math.floor(k / 6) * 52, C.do);
+  for (let k = 0; k < 18; k++) a += nhaN(250 + (k % 6) * 60, 530 + Math.floor(k / 6) * 64, C.do);
   [[1150, 500], [1196, 500], [1400, 430], [1446, 430], [1640, 520], [1686, 520], [1120, 720], [1166, 720], [1420, 650], [1466, 650], [1300, 800], [1346, 800], [1620, 780], [1666, 780], [1520, 560], [1566, 560], [1700, 680], [1210, 610]].forEach(([x, y], k) => { b += nhaN(x, y, k < 2 ? C.do : C.dn); });
   sl("3.1 · Nguyên tắc 5 · Phân tán rủi ro", "Phân tán để tổn thất không dồn", `${lop(ve(a + b), "Mỗi ngôi nhà là một hợp đồng; vùng cam là một vụ cháy. Trái: dồn một khu, cháy trúng cả 18; phải: rải nhiều nơi, cháy trúng 2")}
 ${t("cot-t", 160, 370, 720, "Dồn một nơi: cháy trúng [18/18]")}${t("cot-t", 1040, 370, 720, "Rải nhiều nơi: cháy trúng [2/18]")}${t("chu", 120, 930, 1680, "Mỗi ngôi nhà là một hợp đồng. Cách làm: mở rộng phạm vi, đa dạng hoá sản phẩm, tái bảo hiểm.")}`, nc(13)); }
@@ -213,8 +213,9 @@ ${t("chu", 120, 840, 1680, "Ví dụ: phí cả kỳ 100, bồi thường cả k
 sl("Làm việc nhóm", "Hai đề tài sau giờ học", [["01", "Hợp đồng BHTM thực tế", "và nhận xét về nội dung của hợp đồng"], ["02", "Thực trạng triển khai BHTM", "ở Việt Nam thời gian qua"]].map(([so, a, b], k) => { const x = 120 + k * 860; return `${vach(x, 460, 820)}${t("ml-so", x, 490, 160, so)}${khoi(x + 180, 500, 640, a, b)}${img(k ? "icon-chart-bar" : "icon-file-text", a, x + 20, 700, 220)}`; }).join(""), nc(38));
 // 41–45 câu hỏi — K10
 const CH = [["Luật KDBH phân loại HĐBH theo tiêu chí nào?", ["Số tiền bảo hiểm", "Đối tượng bảo hiểm", "Thời hạn bảo hiểm", "Kỹ thuật bảo hiểm"]], ["DNBH có quyền nào?", ["Kiểm tra, giám sát việc thực hiện hợp đồng đại lý bảo hiểm", "Cho cán bộ, nhân viên làm đại lý cho chính DNBH đó", "Yêu cầu đại lý phải có hợp đồng bảo hiểm trước khi thành đại lý chính thức", "Cả A, B đều đúng"]], ["DNBH có nghĩa vụ gì?", ["Giải thích điều kiện, điều khoản BH; quyền, nghĩa vụ của bên mua", "Trả tiền BH kịp thời cho người thụ hưởng hoặc bồi thường cho người được BH", "Ứng tiền cho bên mua đóng phí hoặc giảm phí khi họ khó khăn tài chính", "Cả A và B đều đúng"]], ["Trung thực tuyệt đối áp cho ai?", ["Doanh nghiệp bảo hiểm", "Doanh nghiệp bảo hiểm và đại lý bảo hiểm", "Doanh nghiệp bảo hiểm và người tham gia bảo hiểm", "Doanh nghiệp bảo hiểm và người thụ hưởng"]], ["Điền vào chỗ trống", ["Công ty chứng khoán", "Công ty tài chính", "Doanh nghiệp bảo hiểm", "Ngân hàng thương mại"]]];
-CH.forEach(([q, ds], k) => sl(`Câu hỏi tức thì · ${k + 1}/5`, q, `${k === 4 ? t("dan", 120, 260, 1680, "HĐBH là sự thoả thuận giữa bên mua BH và DNBH, theo đó bên mua BH phải đóng phí BH, …………… phải trả tiền BH cho người thụ hưởng hoặc bồi thường cho người được BH khi xảy ra sự kiện BH.") : k === 1 || k === 2 ? t("dan", 120, 228, 1500, "Theo pháp luật hiện hành ở Việt Nam.") : ""}` +
-  ds.map((d, j) => `<div class="pa" style="left:${120 + (j % 2) * 860}px;top:${(k === 4 ? 470 : 380) + Math.floor(j / 2) * (k === 4 ? 260 : 290)}px;width:820px"><i data-t>${"ABCD"[j]}</i><b data-t>${esc(d)}</b></div>`).join(""), nc(39 + k)));
+CH.forEach(([q, ds], k) => sl(`Câu hỏi tức thì · ${k + 1}/5`, q, `${k === 4 ? t("dan", 120, 260, 1340, "HĐBH là sự thoả thuận giữa bên mua BH và DNBH, theo đó bên mua BH phải đóng phí BH, …………… phải trả tiền BH cho người thụ hưởng hoặc bồi thường cho người được BH khi xảy ra sự kiện BH.") : k === 1 || k === 2 ? t("dan", 120, 228, 1500, "Theo pháp luật hiện hành ở Việt Nam.") : ""}` +
+  ds.map((d, j) => `<div class="pa" style="left:${120 + (j % 2) * 680}px;top:${(k === 4 ? 470 : 380) + Math.floor(j / 2) * (k === 4 ? 260 : 290)}px;width:640px"><i data-t>${"ABCD"[j]}</i><b data-t>${esc(d)}</b></div>`).join("")
+  + `<img data-l="nv-hoi-${k}" data-alt="Người học khoanh tay suy nghĩ" ${k ? "data-lap" : ""} src="asset/nv-suy-nghi.svg" style="position:absolute;left:1500px;top:${k === 4 ? 395 : 330}px;width:330px">`, nc(39 + k)));
 // 46 tổng kết — thở
 tho("BHTM: [phí chắc chắn] đổi cam kết bồi thường", "Bốn phần đã đi qua, và hai bài tập tái bảo hiểm.", nc(44), [["icon-bulb", "Khái niệm, năm nguyên tắc"], ["icon-category", "Phân loại theo pháp lý, kỹ thuật, đối tượng"], ["icon-file-certificate", "Hợp đồng: chủ thể, tài liệu, số tiền, phí, thời hạn"], ["icon-arrows-split", "Tái bảo hiểm: số thành, mức dôi, vượt mức"]].map(([ic, a], k) => `${img(ic, a, 1040, 230 + k * 190, 110)}${t("tk-dong", 1180, 254 + k * 190, 640, a)}`).join(""));
 // 47 kết
@@ -229,7 +230,7 @@ const MANG = { 3: mg(90, 300, 1740, 720), 4: mg(90, 300, 1740, 660), 9: mg(0, 38
   13: mg(100, 320, 1720, 600), 14: mg(90, 300, 1740, 720), 17: mg(90, 310, 1010, 680, "nhat") + mg(1150, 310, 680, 680), 19: mg(0, 250, 1920, 430, "nhat"),
   23: mg(600, 220, 780, 680, "tron"), 25: mg(0, 0, 660, 1080, "be"), 31: mg(0, 300, 1920, 580, "nhat"), 32: mg(0, 320, 1920, 610, "nhat"), 33: mg(90, 300, 1740, 640),
   35: mg(0, 0, 720, 1080, "be"), 36: mg(700, 330, 1180, 660), 40: mg(110, 380, 840, 640) + mg(970, 380, 840, 640),
-  41: mg(90, 350, 1740, 600, "nhat"), 42: mg(90, 350, 1740, 600, "nhat"), 43: mg(90, 350, 1740, 600, "nhat"), 44: mg(90, 350, 1740, 600, "nhat"), 45: mg(90, 440, 1740, 560, "nhat") };
+  41: mg(90, 350, 1390, 600, "nhat"), 42: mg(90, 350, 1390, 600, "nhat"), 43: mg(90, 350, 1390, 600, "nhat"), 44: mg(90, 350, 1390, 600, "nhat"), 45: mg(90, 440, 1390, 560, "nhat") };
 let dem1 = 0;
 S.forEach((h, k) => { const n = k + 1; let nen, cls = "", them = "";
   if (/class="s nen-dao/.test(h.slice(0, 60))) nen = "N2";

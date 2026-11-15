@@ -17,3 +17,8 @@
 - Đã đối chiếu thêm với toàn văn trên cổng Chính phủ: Đ16 k2, k4; Đ22 k2–3; Đ8 k1–4; Đ47 k2.
 - Còn mức B: S17 "xây dựng" (Luật 139/2025 sửa Đ8 k2 c) — chưa đọc được bản chính thức. Câu hỏi 2 cần GV chốt đáp án.
 - Bài học: margin âm cho tiêu đề phụ thuộc chữ cái đầu → chỉ dùng -2 px; hộp chữ đè thẻ (S17) máy không bắt khi thẻ không có data-t ở mép — phải nhìn.
+
+## 15/11/2026 (tiếp) — ảnh tư liệu cho slide mở phần, phóng hình trong thẻ
+- Slide 2, 5, 16: ảnh phạm vi công cộng tô hai màu tràn nửa slide; slide 46 tổng kết 4 phần có icon; slide 9, 13 phóng hình; slide 41–45 thêm nhân vật suy nghĩ, thu khối đáp án.
+- Mở phần 03, 04 và slide 47 chưa có ảnh: Wikimedia trả 429 (giới hạn theo IP) cho 3 ảnh đã chọn — hợp đồng bảo hiểm hoả hoạn Bern 1889, tranh Raden Saleh tàu gặp bão 1836, tranh quán cà phê Lloyd's (William Holland).
+- Lỗ hổng công cụ phát hiện bằng mắt (cần sửa trong skill): kiểm đè không bắt lớp ảnh đè lên chữ khi `top` thiếu đơn vị; lớp ảnh tràn khỏi mép slide không bị báo.
