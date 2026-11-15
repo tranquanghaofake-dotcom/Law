@@ -65,12 +65,12 @@ async function dung(dir, { ten, soat = true, nhap = false } = {}) {
   console.log(`· ${files.length} file slide → ${htmlPath}`);
   const { kiemHtml } = require("./kiem_html"), { kiemDeTrongTrang } = require(path.join(HINH, "kiem_de"));
   const loi = [];
-  const { thuThap, danhGia, NGUONG } = require("./da_dang"), { thuThapNhatQuan, danhGiaNhatQuan } = require("./nhat_quan"), { thuThapPhongPhu, danhGiaPhongPhu } = require("./phong_phu"); let dd = null, pp = null;
+  const { thuThap, danhGia, NGUONG } = require("./da_dang"), { thuThapNhatQuan, danhGiaNhatQuan } = require("./nhat_quan"), { thuThapPhongPhu, danhGiaPhongPhu } = require("./phong_phu"), { thuThapDeDoc, danhGiaDeDoc } = require("./de_doc"); let dd = null, pp = null, dc = null;
   const fThe = path.join(dir, "thiet-ke", "phong-cach.json"), the = fs.existsSync(fThe) ? JSON.parse(fs.readFileSync(fThe, "utf8")) : null;
   const ng = { ...NGUONG, ...((the && the.nguong) || {}) };   // thẻ phong cách được chỉnh ngưỡng đa dạng (vd. deck biên tập tối giản: cùng nền giấy nhiều slide liền là chủ ý)
   const truoc = async (page) => { const a = await page.evaluate(kiemHtml), b = await page.evaluate(kiemDeTrongTrang); dd = danhGia(await page.evaluate(thuThap), ng);
-    const nq = danhGiaNhatQuan(await page.evaluate(thuThapNhatQuan), the); pp = danhGiaPhongPhu(await page.evaluate(thuThapPhongPhu), the, the && the.nguong);
-    return [...a, ...b, ...dd.loi, ...nq.loi, ...pp.loi]; };
+    const nq = danhGiaNhatQuan(await page.evaluate(thuThapNhatQuan), the); pp = danhGiaPhongPhu(await page.evaluate(thuThapPhongPhu), the, the && the.nguong); dc = danhGiaDeDoc(await page.evaluate(thuThapDeDoc), the, the && the.nguong);
+    return [...a, ...b, ...dd.loi, ...nq.loi, ...pp.loi, ...dc.loi]; };
   const { build } = require(path.join(HINH, "build"));
   const res = await build({ htmlPath, outPath, soat, giuLop: true, truoc });
   loi.push(...(res.warn || []), ...(res.lost || []));
@@ -89,6 +89,7 @@ async function dung(dir, { ten, soat = true, nhap = false } = {}) {
   if (ba.anh) console.log(`✓ Bảng xem thử asset (${ba.srcs.length} hình — soát cùng một phong cách): ${ba.anh}`);
   if (dd) console.log(dd.bang);
   if (pp && pp.tom) console.log(pp.tom);
+  if (dc && dc.tom) console.log(dc.tom);
   console.log(`✓ ${res.slides} slide → ${outPath} · ${res.text} hộp chữ · ${res.pics} lớp ảnh · ${res.fx} hiệu ứng · ${res.morph} Morph`);
   console.log(`✓ Ảnh tổng (xem bằng mắt trước khi giao): ${tong.join(", ")}`);
   if (soat) console.log(`✓ Tờ soát HTML ↔ PPTX: ${path.join(work, "soat-*.jpg")}`);

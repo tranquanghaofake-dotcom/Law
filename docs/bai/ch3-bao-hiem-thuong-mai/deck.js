@@ -80,7 +80,7 @@ if (process.env.CONG) {
   const G = (cls, x, y, w, h, html, ex = "") => `<div class="${cls} giua" data-t ${ex} style="left:${x}px;top:${y}px;width:${w}px;height:${h}px">${html}</div>`;
   const chip = (s, x = 120, y = 80, cls = "chip", ex = "") => `<div class="${cls}" data-t ${ex} style="left:${x}px;top:${y}px">${esc(s)}</div>`;
   const khoi = (x, y, w, h, cls, alt, ex = "", st = "") => `<div class="${cls}" data-l="k${++nL}" data-alt="${esc(alt)}" ${ex} style="left:${x}px;top:${y}px;width:${w}px;height:${h}px${st}"></div>`;   // thẻ nền thành lớp riêng để hiện có hiệu ứng
-  const dau = (kk, td, dan, so, x = 120, w = 1500) => chip(kk, x, 80, "chip", A("fade", 0, 400)) + `<h1 class="td" data-t data-tieu-de ${A("rise", 100, 600)} style="left:${x}px;top:132px;width:${w}px">${em(td)}</h1>` + T("dan", x, 246, w + 60, dan, A("fade", 350, 500)) + T("so-trang", 1600, 84, 200, `${so} / ${TONG}`);
+  const dau = (kk, td, dan, so, x = 120, w = 1500) => chip(kk, x, 80, "chip", A("fade", 0, 400)) + `<h1 class="td" data-t data-tieu-de ${A("rise", 100, 600)} style="left:${x}px;top:132px;width:${w}px">${em(td)}</h1>` + (dan ? T("dan", x, 246, w + 60, dan, A("fade", 350, 500)) : "") + T("so-trang", 1600, 84, 200, `${so} / ${TONG}`);
   const sec2 = (mau, kieu, notes, inner, { ex = "", trans = "fade", dur = 600 } = {}) => S2.push(`<section class="s ${kieu}" data-mau="${mau}" data-nen="${kieu}" ${ex} data-trans="${trans}" data-dur="${dur}" data-notes="${esc(notes)}">\n${inner}\n</section>`);
   const NEN = {
     tron: () => `<circle cx="1920" cy="0" r="300" fill="${P.x4}"/>` + mh.cham(1660, 960, 6, 2, 26, 5, P.v2),
@@ -89,63 +89,69 @@ if (process.env.CONG) {
   };
 
   // ---- 1 BÌA — ảnh thật cắt chéo + thẻ nổi ----
-  sec2("bia", "sang", nc(1), nen(mh.cham(120, 1000, 6, 2, 26, 5, P.v2))
-    + chup("bia.png", 860, 0, 1060, 1080, "Ảnh: bàn tay nâng một ngôi nhà mô hình — bảo hiểm che chở tài sản", A("fade", 0, 900))
-    + lop(`<path d="M1051 0 H1069 L836 1080 H818 Z" fill="${P.v2}"/>`, 810, 0, 270, 1080, "Dải trang trí vàng theo mép ảnh", "phang", A("wipe", 400, 600))
-    + khoi(1150, 830, 600, 150, "the-noi", "Thẻ nổi", A("rise", 1400, 600)) + lop(`<rect x="1180" y="860" width="90" height="90" rx="18" fill="${P.x1}"/>` + mh.khien(1225, 905, 62, { trai: P.v2, phai: P.v3, dau: P.x1 }), 1180, 860, 90, 90, "Biểu tượng khiên", "phang", A("pop", 1600, 400))
-    + T("noi-t", 1300, 862, 430, "Chuyển giao rủi ro", A("fade", 1700, 400)) + T("noi-m", 1300, 906, 430, "tài chính qua hợp đồng", A("fade", 1800, 400))
+  const vom = (x, y, w, h) => `M${x} ${y + h} V${y + w / 2} A${w / 2} ${w / 2} 0 0 1 ${x + w} ${y + w / 2} V${y + h} Z`;
+  sec2("bia", "sang", nc(1), nen(`<path d="${vom(1080, 160, 760, 900)}" fill="${P.x4}"/>` + mh.cham(120, 1000, 6, 2, 26, 5, P.v2) + mh.cham(1800, 90, 4, 4, 26, 5, P.v2) + mh.saoCum(940, 220, 28))
+    + lop(`<path d="${vom(992, 82, 760, 900)}" fill="none" stroke="${P.v2}" stroke-width="6"/>`, 986, 76, 772, 912, "Viền vòm vàng lệch", "phang", A("fade", 500, 700))
+    + chup("bia-vom.png", 1020, 110, 760, 900, "Ảnh: bàn tay nâng một ngôi nhà mô hình — bảo hiểm che chở tài sản", A("rise", 0, 900))
+    + khoi(880, 850, 580, 150, "the-noi", "Thẻ nổi", A("rise", 1400, 600)) + lop(`<rect x="910" y="880" width="90" height="90" rx="18" fill="${P.x1}"/>` + mh.khien(955, 925, 62, { trai: P.v2, phai: P.v3, dau: P.x1 }), 910, 880, 90, 90, "Biểu tượng khiên", "phang", A("pop", 1600, 400))
+    + T("noi-t", 1030, 880, 410, "Chuyển giao rủi ro", A("fade", 1700, 400)) + T("noi-m", 1030, 926, 410, "tài chính qua hợp đồng", A("fade", 1800, 400))
     + chip("BNK405 · Nghiệp vụ bảo hiểm", 120, 240, "chip", A("fade", 300, 400)) + T("bia-chuong", 120, 318, 700, "Chương 3", A("rise", 450, 500))
     + `<h1 class="bia-td" data-t data-tieu-de ${A("rise", 600, 700)} style="left:116px;top:388px;width:780px">${em("Bảo hiểm [thương mại]")}</h1>`
-    + `<div class="gach" data-l="gach-bia" data-alt="Gạch vàng" ${A("wipe", 1000, 400)} style="left:120px;top:720px;width:150px;height:12px"></div>` + T("bia-mo", 120, 768, 740, "Khái niệm · Phân loại · Hợp đồng · Tái bảo hiểm", A("fade", 1100, 500)) + T("bia-by", 120, 930, 660, "GV Nguyễn Thị Thu Hằng · 120 phút", A("fade", 1200, 500)));
+    + `<div class="gach" data-l="gach-bia" data-alt="Gạch vàng" ${A("wipe", 1000, 400)} style="left:120px;top:720px;width:150px;height:12px"></div>` + T("bia-mo", 120, 768, 720, "Khái niệm · Phân loại · Hợp đồng · Tái bảo hiểm", A("fade", 1100, 500)) + T("bia-by", 120, 930, 640, "GV Nguyễn Thị Thu Hằng · 120 phút", A("fade", 1200, 500)));
 
   // ---- 2 MỞ PHẦN 01 — ảnh ô vàng dưới mưa, cắt chéo ----
   sec2("mo-phan", "dam", nc(5), nen(mh.cham(120, 96, 5, 3, 26, 5, P.v2))
-    + chup("mo-phan.png", 820, 0, 1100, 1080, "Ảnh: người cầm chiếc ô vàng dưới mưa — che chắn rủi ro", A("slide-r", 0, 800))
-    + lop(`<path d="M999 0 H1015 L836 1080 H820 Z" fill="${P.v2}"/>`, 810, 0, 220, 1080, "Dải trang trí vàng theo mép ảnh", "phang", A("wipe", 500, 500))
+    + lop(`<circle cx="1480" cy="580" r="470" fill="${P.x2}"/>`, 1010, 110, 910, 940, "Mảng tròn sau ảnh", "phang", A("grow", 0, 700))
+    + chup("mo-phan-tron.png", 1000, 110, 860, 860, "Ảnh: người cầm chiếc ô vàng dưới mưa — che chắn rủi ro", A("pop", 200, 800))
+    + lop(`<circle cx="1430" cy="540" r="462" fill="none" stroke="${P.v2}" stroke-width="6" stroke-dasharray="2 0"/>` + mh.saoCum(990, 860, 26, P.v3), 960, 70, 940, 950, "Vòng vàng quanh ảnh", "phang", A("fade", 700, 600))
     + khoi(120, 190, 300, 240, "o-so", "Ô số phần", A("pop", 300, 500)) + T("mp-so", 120, 196, 300, "01", `data-dl ${A("pop", 400, 500)}`)
-    + `<h1 class="mp-t" data-t data-tieu-de ${A("rise", 600, 600)} style="left:120px;top:500px;width:640px">Khái niệm và nguyên tắc</h1>` + T("mp-m", 120, 730, 600, "BHTM là gì, và năm nguyên tắc giữ cho nó vận hành được.", A("fade", 850, 500))
+    + `<h1 class="mp-t" data-t data-tieu-de ${A("rise", 600, 600)} style="left:120px;top:500px;width:640px">Khái niệm và nguyên tắc</h1>` + T("mp-m", 120, 730, 600, "BHTM là gì — và năm nguyên tắc giữ cho nó vận hành.", A("fade", 850, 500))
     + [["Số đông", 120, 860], ["Rủi ro", 290, 860], ["Quyền lợi", 460, 860], ["Trung thực", 120, 924], ["Phân tán", 290, 924]].map(([s, x, y], k) => chip(s, x, y, "chip vang cot", A("rise", 1000 + k * 120, 400))).join(""), { trans: "push", dur: 700 });
 
   // ---- 3 SƠ ĐỒ — người mua ↔ hợp đồng ↔ DNBH, từng bước hiện ----
   { const hn = udH("legal-counsel_kdnh", 430), hh = udH("handshake-deal_nwk6", 330);
     sec2("noi-dung", "sang", nc(8), nen(NEN.dat(776))
-      + dau("3.1 · Khái niệm", "BHTM: [chuyển rủi ro] qua hợp đồng", "Bên mua trả phí chắc chắn; doanh nghiệp bảo hiểm cam kết bồi thường khi xảy ra rủi ro đã thoả thuận.", 8)
+      + dau("3.1 · Khái niệm", "BHTM: [chuyển rủi ro] qua hợp đồng", "", 8)
       + ud("legal-counsel_kdnh", 150, Math.round(776 - hn), 430, "Minh hoạ: người mua bảo hiểm cầm giấy yêu cầu", A("slide", 600, 600))
       + ud("handshake-deal_nwk6", 795, Math.round(625 - hh / 2), 330, "Minh hoạ: cái bắt tay trên bản hợp đồng — giao kết hợp đồng bảo hiểm", A("pop", 1000, 500))
       + lop(`<rect x="1380" y="772" width="320" height="14" rx="7" fill="${P.x3}"/>` + mh.toaVP(1540, 776, 250), 1370, 380, 340, 410, "Minh hoạ: toà văn phòng doanh nghiệp bảo hiểm có huy hiệu ô", "phang", A("slide-r", 1400, 600))
       + lop(mh.muiKhoi(600, 1330, 460, 30), 590, 420, 750, 80, "Mũi tên: phí bảo hiểm đi từ bên mua tới doanh nghiệp bảo hiểm", "phang", A("wipe", 1800, 600)) + chip("Phí bảo hiểm · luôn trả", 806, 360, "chip", A("fade", 2100, 400))
       + lop(mh.muiKhoi(1330, 600, 830, 30, { vien: P.d1, dut: true, nen: P.d4 }) + `<circle cx="660" cy="938" r="44" fill="${P.d4}"/>` + mh.lua(660, 970, 64), 590, 790, 750, 200, "Mũi tên đứt: bồi thường chỉ khi rủi ro đã thoả thuận xảy ra", "phang", A("wipe-r", 2500, 600))
-      + T("nhan-do", 730, 884, 600, "Bồi thường", A("fade", 2800, 400)) + T("dk-do", 730, 934, 560, "chỉ khi rủi ro đã thoả thuận xảy ra", A("fade", 2900, 400))
-      + `<div class="cap" style="left:200px;top:800px;width:360px"><b data-t class="la-t" ${A("fade", 900, 400)}>Bên mua bảo hiểm</b><span data-t class="la-m" ${A("fade", 1000, 400)}>trả phí chắc chắn</span></div>`
-      + `<div class="cap" style="left:1360px;top:800px;width:360px"><b data-t class="la-t" ${A("fade", 1700, 400)}>Doanh nghiệp bảo hiểm</b><span data-t class="la-m" ${A("fade", 1800, 400)}>cam kết bồi thường, trả tiền</span></div>`, { ex: "data-khong-hinh" });
+      + T("nhan-do", 730, 884, 600, "Bồi thường", A("fade", 2800, 400)) + T("dk-do", 730, 934, 560, "khi rủi ro đã thoả thuận xảy ra", A("fade", 2900, 400))
+      + `<div class="cap" style="left:200px;top:800px;width:360px"><b data-t class="la-t" ${A("fade", 900, 400)}>Bên mua bảo hiểm</b><span data-t class="la-m" ${A("fade", 1000, 400)}>trả phí</span></div>`
+      + `<div class="cap" style="left:1360px;top:800px;width:360px"><b data-t class="la-t" ${A("fade", 1700, 400)}>Doanh nghiệp bảo hiểm</b><span data-t class="la-m" ${A("fade", 1800, 400)}>cam kết bồi thường</span></div>`, { ex: "data-khong-hinh" });
   }
 
   // ---- 4 SỐ LỚN — 15 ngày ----
   { const hc = udH("calendar_8r6s", 290);
     sec2("so-lon", "sang", nc(23), nen(NEN.tron())
-      + dau("3.3 · Nghĩa vụ của DNBH", "Giải thích rõ, [bồi thường đúng hạn]", "Trả trong hạn thoả thuận, mặc định 15 ngày từ khi đủ hồ sơ; trả chậm phải chịu lãi.", 24)
+      + dau("3.3 · Nghĩa vụ của DNBH", "Giải thích rõ, [bồi thường đúng hạn]", "", 24)
       + khoi(136, 356, 600, 540, "bong", "Bóng thẻ", A("pop", 500, 500)) + khoi(120, 340, 600, 540, "the-vang", "Thẻ số lớn", A("pop", 500, 500))
       + T("so-to", 150, 382, 360, "15", `data-dl ${A("pop", 750, 600)}`) + T("don-vi", 480, 602, 200, "ngày", A("fade", 1100, 400))
-      + khoi(120, 760, 600, 120, "dai", "Dải chú thích", A("wipe", 1200, 500)) + G("dai-t", 150, 760, 540, 120, "Hạn tối đa nếu hợp đồng không thoả thuận khác, tính từ khi đủ hồ sơ hợp lệ", A("fade", 1400, 400))
+      + khoi(120, 760, 600, 120, "dai", "Dải chú thích", A("wipe", 1200, 500)) + G("dai-t", 150, 760, 540, 120, "Nếu hợp đồng không thoả thuận khác", A("fade", 1400, 400))
       + ud("calendar_8r6s", 720, Math.round(880 - hc), 290, "Minh hoạ: người cầm tờ lịch — thời hạn bồi thường", A("slide-r", 1300, 600))
-      + [["file-certificate", P.x1, "Khi giao kết", "giải thích rõ quyền lợi, điều khoản loại trừ, quyền và nghĩa vụ của bên mua"], ["calendar", P.x1, "Khi xảy ra sự kiện bảo hiểm", "bồi thường, trả tiền đúng thời hạn thoả thuận"], ["coins", P.d1, "Chậm trả", "phải trả thêm lãi cho phần tiền chậm trả"]].map(([i, m, a, b], k) => { const y = 360 + k * 170, t0 = 1700 + k * 300;
+      + [["file-certificate", P.x1, "Khi giao kết", "giải thích điều khoản loại trừ"], ["calendar", P.x1, "Khi có sự kiện bảo hiểm", "bồi thường đúng hạn"], ["coins", P.d1, "Chậm trả", "trả thêm lãi"]].map(([i, m, a, b], k) => { const y = 360 + k * 170, t0 = 1700 + k * 300;
         return lop(`<rect x="1060" y="${y}" width="100" height="100" rx="18" fill="${m}"/>` + mh.iconNet(D, i, 1110, y + 50, 60, P.nen, 3), 1060, y, 100, 100, `Biểu tượng ${a}`, "phang", `data-lap ${A("pop", t0, 400)}`)
           + `<div class="cap" style="left:1190px;top:${y + 4}px;width:610px"><b data-t class="dong-t${m === P.d1 ? " do" : ""}" ${A("fade", t0 + 100, 400)}>${esc(a)}</b><span data-t class="dong-m" ${A("fade", t0 + 200, 400)}>${esc(b)}</span></div>` + (k ? `<div class="vach" style="left:1060px;top:${y - 30}px;width:740px"></div>` : ""); }).join("")
       + T("nguon", 120, 1000, 1680, "Luật KDBH 08/2022/QH15: Điều 20 khoản 2 điểm b, đ (giải thích, trả đúng hạn); Điều 31 (thời hạn, lãi chậm trả)."));
   }
 
   // ---- 5 BẢNG — bốn trường hợp; mỗi hàng hiện lần lượt, thanh so sánh trong ô ----
-  { const R = [["Đúng giá trị", P.x1, [340], "theo thiệt hại thực tế"], ["Dưới giá trị", P.x2, [204], "theo tỷ lệ STBH / giá trị thị trường"], ["Trên giá trị", P.v1, [440], "nếu vô ý: tối đa giá trị thị trường lúc xảy ra thiệt hại; hoàn phí phần vượt"], ["Bảo hiểm trùng", P.d1, [200, 230], "chia theo tỷ lệ STBH từng hợp đồng; tổng ≤ thiệt hại"]];
-    const y0 = 400, hr = 146, X = 520;
+  { const R = [["Đúng giá trị", P.x1, [340], "Theo thiệt hại thực tế"], ["Dưới giá trị", P.x2, [204], "Theo tỷ lệ STBH / giá trị"], ["Trên giá trị", P.v1, [440], "Tối đa bằng giá trị; hoàn phí vượt"], ["Bảo hiểm trùng", P.d1, [200, 230], "Chia theo tỷ lệ STBH"]];
+    const y0 = 400, hr = 146, X = 440;
     sec2("bang", "sang", nc(25), nen(NEN.goc())
-      + dau("3.3 · So STBH với giá trị", "Bốn trường hợp, [bốn cách bồi thường]", "Ví dụ dưới giá trị: nhà 1 tỷ, STBH 600 triệu, thiệt hại 200 triệu → bồi thường 120 triệu.", 26)
-      + khoi(120, 330, 1680, 62, "bh", "Đầu bảng", A("wipe", 500, 500)) + [["Trường hợp", 120, 260], ["Giá trị  ·  Số tiền bảo hiểm", 400, 600], ["Bồi thường", 1020, 760]].map(([s, x, w]) => G("bh-t", x + 20, 330, w, 62, esc(s), A("fade", 700, 300))).join("")
+      + dau("3.3 · So STBH với giá trị", "Bốn trường hợp, [bốn cách bồi thường]", "", 26)
+      + (() => { const B = [["Nhà 1 tỷ", 200, "vd-x"], ["STBH 600 triệu", 280, "vd-v"], ["Thiệt hại 200 triệu", 320, "vd-d"], ["Bồi thường 120 triệu", 350, "vd-k"]]; let x = 120, o = "", mt = "";
+          B.forEach(([s, w, c], k) => { o += khoi(x, 240, w, 60, c, s, A("rise", 400 + k * 150, 400)) + G(`${c}-t`, x, 240, w, 60, `<span style="width:100%;text-align:center">${esc(s)}</span>`, A("rise", 400 + k * 150, 400)); if (k) mt += mh.muiKhoi(x - 44, x - 10, 270, 8, { mau: P.phu }); x += w + 54; });
+          return lop(mt, 120, 250, x - 120, 40, "Mũi tên nối các bước của ví dụ", "phang", A("fade", 900, 600)) + o; })()
+      + khoi(120, 330, 1680, 62, "bh", "Đầu bảng", A("wipe", 500, 500)) + lop(`<rect x="440" y="352" width="40" height="18" rx="4" fill="${P.x4}"/><rect x="620" y="352" width="40" height="18" rx="4" fill="${P.v2}"/><path d="M800 344 V378" stroke="${P.d4}" stroke-width="4" stroke-dasharray="6 4"/>`, 430, 340, 380, 50, "Chú giải màu: xanh nhạt là giá trị, vàng là số tiền bảo hiểm, vạch đứt là mức giá trị", "phang", A("fade", 700, 300))
+      + [["Trường hợp", 140, 240], ["Giá trị", 494, 120], ["STBH", 674, 100], ["mức giá trị", 820, 180], ["Bồi thường", 1040, 600]].map(([s, x, w]) => G("bh-t", x, 330, w, 62, esc(s), A("fade", 700, 300))).join("")
       + R.map(([ten, m, st, bt], k) => { const y = y0 + k * hr, t0 = 900 + k * 450, yb = y + 38;
-        let bars = `<rect x="${X}" y="${yb}" width="340" height="24" rx="5" fill="${P.x1}"/>`, x = X; st.forEach((v, j) => { bars += `<rect x="${x}" y="${yb + 38}" width="${v}" height="24" rx="5" fill="${j ? P.v3 : P.v2}"/>`; x += v + 4; });
+        let bars = `<rect x="${X}" y="${yb}" width="340" height="26" rx="5" fill="${P.x1}"/>`, x = X; st.forEach((v, j) => { bars += `<rect x="${x}" y="${yb + 38}" width="${v}" height="24" rx="5" fill="${j ? P.v3 : P.v2}"/>`; x += v + 4; });
         if (st[0] > 340 || st.length > 1) bars += `<path d="M${X + 340} ${yb - 10} V${yb + 72}" stroke="${P.d1}" stroke-width="3" stroke-dasharray="6 5"/>`;
         return khoi(120, y, 1680, hr - 8, `hang${k === 1 ? " nhan" : ""}`, `Hàng ${ten}`, A("rise", t0, 450)) + khoi(120, y, 260, hr - 8, "tab", `Nhãn ${ten}`, A("rise", t0, 450), `;background:${m}`)
-          + G("tab-t", 140, y, 220, hr - 8, esc(ten), A("rise", t0, 450)) + T("o-nhan", 410, y + 34, 100, "Giá trị", A("fade", t0 + 150, 300)) + T("o-nhan", 410, y + 74, 100, "STBH", A("fade", t0 + 150, 300))
-          + lop(bars, 510, y, 470, hr - 8, `Thanh so sánh: ${ten}`, "phang", A("wipe", t0 + 200, 500)) + (k >= 2 ? T("o-do", 868, y + 4, 160, "mức giá trị", A("fade", t0 + 400, 300)) : "") + G("o-t", 1040, y, 740, hr - 8, esc(bt), A("fade", t0 + 300, 400)); }).join("")
+          + G("tab-t", 140, y, 220, hr - 8, esc(ten), A("rise", t0, 450))
+          + lop(bars, 430, y, 560, hr - 8, `Thanh so sánh: ${ten}`, "phang", A("wipe", t0 + 200, 500)) + G("o-t", 1040, y, 740, hr - 8, esc(bt), A("fade", t0 + 300, 400)); }).join("")
       + T("nguon", 120, 1000, 1680, "Luật KDBH 08/2022/QH15: đúng giá trị — Điều 16 khoản 3 · dưới — Điều 48 · trên — Điều 47 · trùng — Điều 49."), { ex: "data-khong-hinh" });
   }
 
@@ -158,9 +164,9 @@ if (process.env.CONG) {
     + chip("Khoản 16 Điều 4 · Luật KDBH 08/2022/QH15", 880, 850, "chip vien", A("rise", 1700, 400)) + T("dan", 878, 920, 922, "Hợp đồng phải lập thành văn bản (Điều 18).", A("fade", 1900, 400)));
 
   // ---- 7 SO SÁNH — hai thẻ, đầu thẻ có minh hoạ unDraw ----
-  { const H = [["Vì sao có", "Bảo vệ lợi ích công cộng, môi trường, an toàn xã hội", "Tuỳ nhận thức và nhu cầu của người tham gia"], ["Gồm / ví dụ", "TNDS chủ xe cơ giới · cháy, nổ · xây dựng · loại luật khác quy định", "Nhân thọ, sức khoẻ, vật chất xe…"], ["Lưu ý", "DNBH được phép bán thì không được từ chối người mua đủ điều kiện", "Bên mua tự chọn sản phẩm, doanh nghiệp, mức bảo hiểm"]];
+  { const H = [["Vì sao có", "Bảo vệ lợi ích công cộng", "Theo nhu cầu người mua"], ["Gồm", "Loại luật liệt kê: xe cơ giới, cháy nổ…", "Nhân thọ, sức khoẻ, vật chất xe…"], ["Lưu ý", "Không từ chối người đủ điều kiện", "Tự chọn sản phẩm và mức"]];
     sec2("so-sanh", "sang", nc(16), nen(NEN.dat(700))
-      + dau("3.2 · Theo tính chất pháp lý", "Bắt buộc [do luật], tự nguyện [do nhu cầu]", "Bắt buộc chỉ gồm các loại luật liệt kê; còn lại là tự nguyện.", 17)
+      + dau("3.2 · Theo tính chất pháp lý", "Bắt buộc [do luật], tự nguyện [do nhu cầu]", "", 17)
       + [[120, "dau-xanh", "Bảo hiểm bắt buộc", 1, "guidelines_p5r7", "Minh hoạ: bảng quy định đúng / sai — bảo hiểm do luật buộc", { "#6c63ff": P.v2 }], [990, "dau-vang", "Bảo hiểm tự nguyện", 2, "checklist_bwxa", "Minh hoạ: người tự chọn trên danh sách — bảo hiểm do người mua tự chọn", { "#6c63ff": P.x1 }]].map(([x, cls, ten, c, u, alt, doi]) => { const t0 = c === 1 ? 500 : 900;
         return khoi(x + 14, 344, 810, 650, "bong", "Bóng thẻ", A("rise", t0, 500)) + khoi(x, 330, 810, 650, "the-trang", `Thẻ ${ten}`, A("rise", t0, 500)) + khoi(x, 330, 810, 190, cls, `Đầu thẻ ${ten}`, A("rise", t0, 500))
           + ud(u, x + 540, 300, 250, alt, A("pop", t0 + 300, 500), doi) + T(`the-td${c === 2 ? " toi" : ""}`, x + 40, 392, 480, ten, A("fade", t0 + 200, 400))
@@ -184,35 +190,37 @@ section.s > div, section.s > h1{position:absolute}
 [data-t]{text-wrap:pretty}.td,.bia-td,.mp-t,.hoi-td{text-wrap:balance}
 em{font-style:normal;color:${P.x2}}em.v{color:${P.v1}}.dam em{color:${P.v3}}
 .giua{display:flex;align-items:center}
-.chip{font:600 24px/1 'Be Vietnam Pro';letter-spacing:.12em;text-transform:uppercase;color:${P.nen};background:${P.x1};padding:11px 18px 10px;border-radius:6px;white-space:nowrap;width:auto !important}
-.chip.vang{background:${P.v2};color:${P.muc}}.chip.cot{width:156px !important;text-align:center;padding:10px 0;letter-spacing:0;text-transform:none}
+.chip{font:700 28px/1 'Be Vietnam Pro';letter-spacing:.08em;text-transform:uppercase;color:${P.nen};background:${P.x1};padding:11px 18px 10px;border-radius:6px;white-space:nowrap;width:auto !important}
+.chip.vang{background:${P.v3};color:${P.muc}}.chip.cot{width:156px !important;text-align:center;padding:10px 0;letter-spacing:0;text-transform:none;font-size:26px}
 .chip.vien{background:${P.v4};color:${P.muc}}
-.td{font:700 72px/1.1 'Lora';color:${P.muc}}.dan{font:400 30px/1.45 'Be Vietnam Pro';color:${P.phu}}
+.td{font:700 72px/1.1 'Lora';color:${P.muc}}.dan{font:400 32px/1.45 'Be Vietnam Pro';color:${P.phu}}
 .so-trang{font:600 24px/1 'Be Vietnam Pro';color:${P.phu};text-align:right}
-.nguon{font:400 24px/1.4 'Be Vietnam Pro';color:${P.phu}}
+.nguon{font:400 26px/1.4 'Be Vietnam Pro';color:${P.phu}}
 .the,.the-trang{background:${P.trang};border-radius:20px}.the-vang{background:${P.v4};border-radius:24px}.bong{background:${P.x4};border-radius:22px}
-.the-noi{background:${P.trang};border-radius:20px;border:2px solid ${P.ke}}.noi-t{font:800 32px/1.2 'Be Vietnam Pro';color:${P.x1}}.noi-m{font:400 28px/1.3 'Be Vietnam Pro';color:${P.phu}}
+.the-noi{background:${P.trang};border-radius:20px;border:2px solid ${P.ke}}.noi-t{font:800 32px/1.2 'Be Vietnam Pro';color:${P.x1}}.noi-m{font:400 30px/1.3 'Be Vietnam Pro';color:${P.phu}}
 .gach{background:${P.v2};border-radius:6px}.vach{height:2px;background:${P.ke}}
 .bia-chuong{font:700 48px/1.2 'Lora';color:${P.v1}}.bia-td{position:absolute;font:700 132px/1.06 'Lora';color:${P.muc}}
-.bia-mo{font:400 30px/1.45 'Be Vietnam Pro';color:${P.phu}}.bia-by{font:600 26px/1.4 'Be Vietnam Pro';color:${P.phu}}
+.bia-mo{font:400 32px/1.45 'Be Vietnam Pro';color:${P.phu}}.bia-by{font:600 28px/1.4 'Be Vietnam Pro';color:${P.phu}}
 .o-so{background:${P.v2};border-radius:24px}.mp-so{font:700 200px/1.15 'Lora';color:${P.x1};text-align:center}
 .mp-t{position:absolute;font:700 88px/1.08 'Lora';color:${P.nen}}.mp-m{font:400 32px/1.45 'Be Vietnam Pro';color:${P.x4}}
-.la-t{font:800 32px/1.25 'Be Vietnam Pro';color:${P.x1};text-align:center}.la-m{font:400 28px/1.4 'Be Vietnam Pro';color:${P.phu};text-align:center}
+.la-t{font:800 32px/1.25 'Be Vietnam Pro';color:${P.x1};text-align:center}.la-m{font:400 30px/1.4 'Be Vietnam Pro';color:${P.phu};text-align:center}
 .cap > b,.cap > span{display:block}.cap > span{margin-top:8px}
-.nhan-do{font:800 34px/1.2 'Be Vietnam Pro';color:${P.d1}}.dk-do{font:600 30px/1.3 'Be Vietnam Pro';color:${P.d1}}
+.nhan-do{font:800 36px/1.2 'Be Vietnam Pro';color:${P.d0}}.dk-do{font:600 32px/1.3 'Be Vietnam Pro';color:${P.d0}}
 .so-to{font:700 330px/1 'Lora';color:${P.x1}}.don-vi{font:700 64px/1 'Lora';color:${P.v1}}
-.dai{background:${P.x1};border-radius:0 0 24px 24px}.dai-t{font:600 28px/1.3 'Be Vietnam Pro';color:${P.nen}}
-.dong-t{font:800 32px/1.25 'Be Vietnam Pro';color:${P.muc}}.dong-t.do{color:${P.d1}}.dong-m{font:400 28px/1.4 'Be Vietnam Pro';color:${P.phu}}
-.bh{background:${P.x1};border-radius:14px 14px 0 0}.bh-t{font:600 28px/1.2 'Be Vietnam Pro';color:${P.nen}}
+.dai{background:${P.x1};border-radius:0 0 24px 24px}.dai-t{font:600 30px/1.3 'Be Vietnam Pro';color:${P.nen}}
+.dong-t{font:800 34px/1.25 'Be Vietnam Pro';color:${P.muc}}.dong-t.do{color:${P.d0}}.dong-m{font:400 30px/1.4 'Be Vietnam Pro';color:${P.phu}}
+.bh{background:${P.x1};border-radius:14px 14px 0 0}.bh-t{font:600 30px/1.2 'Be Vietnam Pro';color:${P.nen}}
 .hang{background:${P.trang};border-bottom:3px solid ${P.ke}}.hang.nhan{background:${P.v4}}
-.tab-t{font:800 30px/1.2 'Be Vietnam Pro';color:${P.nen}}.o-t{font:400 30px/1.35 'Be Vietnam Pro';color:${P.muc}}.o-nhan{font:600 28px/1 'Be Vietnam Pro';color:${P.phu}}.o-do{font:600 26px/1 'Be Vietnam Pro';color:${P.d1}}
+.tab-t{font:800 32px/1.15 'Be Vietnam Pro';color:${P.nen}}.o-t{font:400 32px/1.35 'Be Vietnam Pro';color:${P.muc}}.o-nhan{font:600 28px/1 'Be Vietnam Pro';color:${P.phu}}.o-mau{display:inline-block;width:34px;height:16px;border-radius:4px;margin:0 12px 0 22px}.o-mau.x{background:${P.x4};margin-left:0}.o-mau.v{background:${P.v2}}.o-mau.d{width:4px;height:30px;background:${P.d4}}.o-do{font:700 28px/1 'Be Vietnam Pro';color:${P.d0}}
 .trich{font:700 42px/1.45 'Lora';color:${P.muc}}
 .trich mark{background:${P.v4};color:${P.v1};padding:0 2px}.trich mark.xanh{background:${P.x4};color:${P.x1}}
 .dau-xanh{background:${P.x1};border-radius:20px 20px 0 0}.dau-vang{background:${P.v2};border-radius:20px 20px 0 0}
 .the-td{font:700 44px/1.15 'Lora';color:${P.nen}}.the-td.toi{color:${P.muc}}
-.the-nhan{font:600 24px/1.2 'Be Vietnam Pro';letter-spacing:.1em;text-transform:uppercase;color:${P.x2}}.the-chu{font:400 30px/1.4 'Be Vietnam Pro';color:${P.muc}}
+.the-nhan{font:700 28px/1.2 'Be Vietnam Pro';letter-spacing:.06em;text-transform:uppercase;color:${P.x1}}.the-chu{font:400 32px/1.4 'Be Vietnam Pro';color:${P.muc}}
 .hoi-so{font:700 160px/1 'Lora';color:${P.x1}}.hoi-td{position:absolute;font:700 60px/1.15 'Lora';color:${P.muc}}
 .pa{background:${P.trang};border-radius:16px;border:2px solid ${P.ke}}.pa-o{border-radius:16px 0 0 16px;background:${P.x1}}
+.vd{background:${P.x1};border-radius:30px}.vd-x{background:${P.x4};border-radius:12px}.vd-v{background:${P.v4};border-radius:12px}.vd-d{background:${P.d4};border-radius:12px}.vd-k{background:${P.v3};border-radius:12px}
+.vd-t{font:700 26px/1 'Be Vietnam Pro';color:${P.nen};text-transform:uppercase;letter-spacing:.06em}.vd-x-t,.vd-v-t,.vd-k-t{font:800 32px/1 'Be Vietnam Pro';color:${P.muc}}.vd-d-t{font:800 32px/1 'Be Vietnam Pro';color:${P.d0}}
 .pa-chu{font:700 60px/1.15 'Lora';color:${P.nen};text-align:center}.pa-t{font:600 34px/1.3 'Be Vietnam Pro';color:${P.muc}}
 `);
   fs.rmSync(path.join(D, "slides"), { recursive: true, force: true });

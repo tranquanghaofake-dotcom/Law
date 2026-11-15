@@ -20,3 +20,13 @@ test("phủ màu: ảnh ra đúng khung yêu cầu", { timeout: 60000 }, async (
   await phuMau(v, r, { rong: 960, cao: 540, tu: "trai" });
   const m = await sharp(r).metadata(); assert.strictEqual(m.width, 960); assert.strictEqual(m.height, 540);
 });
+
+test("phủ màu: khung vòm cho PNG trong suốt ở góc trên, hạt in không đổi khung", { timeout: 60000 }, async () => {
+  const sharp = require("sharp"), d = fs.mkdtempSync(path.join(os.tmpdir(), "pm2-")), v = path.join(d, "v.jpg"), r = path.join(d, "r.png");
+  await sharp({ create: { width: 900, height: 1200, channels: 3, background: "#336699" } }).jpeg().toFile(v);
+  await phuMau(v, r, { rong: 400, cao: 600, khung: "vom", hat: 0.08 });
+  const { data, info } = await sharp(r).raw().toBuffer({ resolveWithObject: true });
+  assert.strictEqual(info.channels, 4); assert.strictEqual(data[3], 0);                       // góc trên trái trong suốt
+  assert.ok(data[((590 * 400) + 200) * 4 + 3] > 250);                                         // đáy giữa đặc
+});
+

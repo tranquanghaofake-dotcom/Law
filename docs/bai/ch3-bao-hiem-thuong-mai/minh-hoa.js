@@ -5,10 +5,10 @@ const fs = require("fs"), path = require("path");
 
 // Bảng màu: 3 họ (xanh chủ, vàng nhấn, đỏ rủi ro) × sắc đậm → nhạt + trung tính
 const P = {
-  nen: "#FBF7EF", trang: "#FFFFFF", muc: "#1B2A28", phu: "#55625F", ke: "#DCD3C4",
+  nen: "#FBF7EF", trang: "#FFFFFF", muc: "#1B2A28", phu: "#3F4B48", ke: "#DCD3C4",
   x1: "#0E4F49", x2: "#2C7A6C", x3: "#8EC3B6", x4: "#DDECE7",
   v1: "#946512", v2: "#E2A52E", v3: "#F3D27E", v4: "#F8ECCD",
-  d1: "#B13A2E", d4: "#F6DDD7", da: "#E8B48F", da2: "#B97C5E",
+  d1: "#B13A2E", d0: "#8F2A21", d4: "#F6DDD7", da: "#E8B48F", da2: "#B97C5E",
 };
 const f1 = (n) => +n.toFixed(1);
 
