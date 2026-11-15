@@ -30,6 +30,11 @@ function kiemHtml() {
       const x0 = Math.min(...Q.map((q) => q.left)), x1 = Math.max(...Q.map((q) => q.right)), y0 = Math.min(...Q.map((q) => q.top)), y1 = Math.max(...Q.map((q) => q.bottom));
       const mep = Math.max(lo(S.left + 40 / k, x0), lo(x1, S.right - 40 / k), lo(S.top + 24 / k, y0), lo(y1, S.bottom - 24 / k));
       if (mep > 0 && !el.closest("[data-ngoai]")) out.push(`slide ${n}: ${ten} ra ngoài vùng an toàn ${mep} px (lề 40 px ngang, 24 px dọc)`); }
+    // 4b. lớp ảnh tràn khỏi mép slide (bị cắt khi chiếu: chân nhân vật, góc hình) — trừ hoạ tiết trang trí và lớp khai data-ngoai
+    for (const el of s.querySelectorAll("[data-l]")) { if (!hien(el) || el.closest("[data-ngoai]") || el.dataset.alt === "Hình trang trí") continue;
+      const R = el.getBoundingClientRect(); if (!R.width || !R.height) continue;
+      const ra = Math.max(Math.round((S.left - R.left) * k), Math.round((R.right - S.right) * k), Math.round((S.top - R.top) * k), Math.round((R.bottom - S.bottom) * k));
+      if (ra > 4) out.push(`slide ${n}: lớp ảnh "${el.dataset.l}" tràn khỏi mép slide ${ra} px — bị cắt khi chiếu; dời / thu hình (cố ý tràn mép thì gắn data-ngoai)`); }
     // 5
     for (const el of s.querySelectorAll("[data-l]")) if (!el.dataset.alt && hien(el)) out.push(`slide ${n}: lớp ảnh "${el.dataset.l}" thiếu data-alt (mô tả; hình trang trí ghi data-alt="Hình trang trí")`);
   });

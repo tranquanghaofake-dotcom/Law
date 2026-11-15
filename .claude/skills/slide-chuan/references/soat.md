@@ -31,7 +31,7 @@ Giao khi mọi hạng ≥ 4 — kể cả Thẩm mỹ (PPTEval dùng Nội dung 
 | chữ trong SVG | xoá `<text>`, đặt chữ HTML `data-t` đè lên hình |
 | tràn khỏi hộp | rút chữ, nới hộp, hoặc tách slide — không thu cỡ chữ dưới ngưỡng |
 | ra ngoài vùng an toàn | dời vào trong lề 40 px ngang / 24 px dọc (`data-ngoai` nếu cố ý cho Morph) |
-| bị lớp ảnh đè / hai hộp chữ đè nhau | dời hình hoặc chữ; đặt chữ ở lớp trên |
+| bị lớp ảnh đè / hai hộp chữ đè nhau | dời hình hoặc chữ; đặt chữ ở lớp trên. Giới hạn: máy cần ≥ 15 % điểm mẫu bị che mới báo (khung ảnh gồm cả phần trong suốt) — một chữ cuối dòng bị hình che có thể lọt, phải nhìn ảnh |
 | chữ < 12 pt / % chữ ≥ 14 pt thấp | tăng cỡ, rút chữ |
 | ◐ tương phản | đậm chữ, làm yên nền sau chữ (lớp phủ, thẻ nền) |
 | ¶ mồ côi | sửa câu hoặc bề rộng hộp |
@@ -41,6 +41,7 @@ Giao khi mọi hạng ≥ 4 — kể cả Thẩm mỹ (PPTEval dùng Nội dung 
 | từ chỉ có trong ảnh | chữ bị chụp vào ảnh — tách ra thành `data-t` |
 | ◇ nền: ít loại / một nền > 80 % / > 6 slide liền | thêm N2/N3 đúng vai, đổi góc hoạ tiết N1 (`he-nen.md`) |
 | ◇ asset: hình dùng trên > 3 slide | vẽ hình chính riêng cho ý đó; motif cố ý cùng vai → `data-lap` |
+| lớp ảnh tràn khỏi mép slide | dời / thu hình; cố ý tràn mép (ảnh nền, hoạ tiết) → `data-ngoai` |
 | ◇ tiêu điểm: slide không có khối thị giác ≥ 25 % | phóng hình chính lên 30–45 % slide, đặt mảng màu hoặc số lớn; slide cố ý chỉ chữ → `data-khong-hinh` (`nguon-hinh.md` quy tắc 1) |
 | ◇ phong cách: hình có gradient / bóng mờ / quá nhiều màu so với thẻ | vẽ lại theo `thiet-ke/phong-cach.json`; xem `<tên>_lop/asset.jpg` để thấy hình lệch |
 | ◇ bảng: một kiểu / một kiểu > 40 % | chọn lại kiểu theo loại thông tin (`trinh-bay-du-lieu.md`) |

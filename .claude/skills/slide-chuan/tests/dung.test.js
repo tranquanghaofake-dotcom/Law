@@ -33,9 +33,10 @@ test("deck sai bị bắt: chữ không data-t, chữ trong SVG, tràn hộp, th
   <svg style="position:absolute;left:100px;top:300px;width:300px;height:100px"><text x="0" y="50">chữ SVG</text></svg>
   <div data-t style="position:absolute;left:100px;top:500px;width:200px;height:40px;font-size:40px;line-height:40px">Câu này quá dài nên tràn khỏi hộp nhỏ</div>
   <div data-l="hinh" style="position:absolute;left:1200px;top:300px;width:200px;height:200px;background:#c33"></div>
+  <div data-l="tran" data-alt="Hình tràn mép dưới" style="position:absolute;left:600px;top:900px;width:200px;height:300px;background:#36c"></div>
 </section>`);
   const r = await dung(d, { ten: "sai", soat: false, nhap: true }), all = r.loi.join("\n");
-  for (const re of [/không nằm trong \[data-t\]/, /chữ trong SVG/, /tràn khỏi hộp/, /không có tiêu đề/, /thiếu data-alt/]) assert.match(all, re);
+  for (const re of [/không nằm trong \[data-t\]/, /chữ trong SVG/, /tràn khỏi hộp/, /không có tiêu đề/, /thiếu data-alt/, /tràn khỏi mép slide/]) assert.match(all, re);
   process.exitCode = 0;
 });
 
