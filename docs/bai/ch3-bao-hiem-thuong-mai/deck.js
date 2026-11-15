@@ -21,6 +21,7 @@ const NET = 3;
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
 const em = (s) => esc(s).replace(/\[([^\]]+)\]/g, "<em>$1</em>");
 const t = (cls, x, y, w, s, ex = "") => `<div class="${cls}" data-t ${ex} style="left:${x}px;top:${y}px;width:${w}px">${em(s)}</div>`;
+const cap = (kt, km, x, y, w, a, b) => `<div class="cap" style="left:${x}px;top:${y}px;width:${w}px"><b data-t class="${kt}">${em(a)}</b><span data-t class="${km}">${em(b)}</span></div>`;
 const vach = (x, y, w) => `<div class="vach" style="left:${x}px;top:${y}px;width:${w}px"></div>`;
 const khoi = (cls, x, y, w, h, s = "") => `<div class="${cls}" style="left:${x}px;top:${y}px;width:${w}px;height:${h}px${s}"></div>`;
 
@@ -38,7 +39,7 @@ const duong = (d, mau = M.ke, net = NET, dut = false) => `<path d="${d}" stroke=
 const ic = (ten, x, y, co, mau = M.xanh) => hinh(gIcon(ten, x + co / 2, y + co / 2, co * 0.92, mau), x, y, co, co, `Biểu tượng ${ten}`, "data-lap");
 // ảnh tư liệu hai màu (anh/*.jpg, scripts/hai_mau.js) + chú thích nguồn trên dải màu chủ
 const anh = (f, x, y, w, h, alt, cap, ex = "") => `<img data-l="anh-${f}" data-loai="anh-hai-mau" data-nen-anh data-alt="${esc(alt)}" ${ex} src="anh/${f}" style="position:absolute;left:${x}px;top:${y}px;width:${w}px;height:${h}px">`
-  + (cap ? `<div class="chu-anh" data-t style="left:${x + 40}px;top:${y + h - 80}px;max-width:${w - 80}px">${esc(cap)}</div>` : "");
+  + (cap ? `<div class="chu-anh" data-t style="left:${x + 40}px;bottom:${1080 - y - h + 40}px;max-width:${w - 80}px">${esc(cap)}</div>` : "");
 const tb = (bt, cols, rows, x, y, w, ex = "", lopHang = []) => `<div class="tb ${bt}" data-bang="T2" ${ex} style="left:${x}px;top:${y}px;width:${w}px"><div class="tb-h">${cols.map((c) => `<b data-t>${esc(c)}</b>`).join("")}</div>${rows.map((rw, k) => `<div class="tb-r ${lopHang[k] || ""}">${rw.map((c) => { const [cls, txt] = Array.isArray(c) ? c : ["", c]; return `<b data-t class="${cls}">${esc(txt)}</b>`; }).join("")}</div>`).join("")}</div>`;
 
 // =================== 5 BỐ CỤC MẪU ===================
@@ -54,9 +55,9 @@ const mCau = (cau, phu, notes, phai = "", rong = 780, ex = "data-khong-hinh") =>
 // nội dung: nhãn mục + tiêu đề ĐÚNG MỘT CHỖ; vùng nội dung y 360–1010
 const mNoiDung = (kk, td, body, notes, { dan, khongHinh } = {}) => sec("noi-dung", "giay", notes, t("kk", 120, 96, 1400, kk) + t("td", 120, 136, 1600, td, "data-tieu-de") + (dan ? t("dan", 120, 232, 1500, dan) : "") + "\n" + body, khongHinh ? "data-khong-hinh" : "");
 // câu hỏi: cột màu chủ bên trái mang số câu, câu hỏi + 4 phương án kẻ ngang bên phải
-const mHoi = (k, q, ds, notes, dan) => sec("hoi", "giay", notes, khoi("panel-dam", 0, 0, 560, 1080) + t("hoi-kk", 120, 300, 380, "Câu hỏi tức thì") + t("hoi-so", 120, 360, 420, `${k}/5`, "data-dl")
-  + `<h1 class="hoi-td" data-t data-tieu-de style="left:680px;top:136px;width:1120px">${esc(q)}</h1>` + (dan ? t("dan", 680, 232, 1120, dan) : "")
-  + ds.map((d, j) => { const y = (dan && dan.length > 80 ? 420 : 380) + j * 150; return `${vach(680, y, 1120)}${t("pa-chu", 680, y + 32, 80, "ABCD"[j])}${t("pa-t", 780, y + 42, 1020, d)}`; }).join(""));
+const mHoi = (k, q, ds, notes, dan, dien) => sec("hoi", "giay", notes, khoi("panel-dam", 0, 0, 560, 1080) + t("hoi-kk", 120, 300, 380, dien ? q : "Câu hỏi tức thì") + t("hoi-so", 120, 360, 420, `${k}/5`, "data-dl")
+  + `<h1 class="hoi-td${dien ? " dien" : ""}" data-t data-tieu-de style="left:680px;top:136px;width:1120px">${esc(dien || q)}</h1>` + (dan ? t("dan", 680, 232, 1120, dan) : "")
+  + ds.map((d, j) => { const y = (dien ? 470 : 380) + j * 145; return `${vach(680, y, 1120)}${t("pa-chu", 680, y + 32, 80, "ABCD"[j])}${t("pa-t", 780, y + 42, 1020, d)}`; }).join(""));
 
 // =================== 46 SLIDE ===================
 // 1 bìa
@@ -76,20 +77,20 @@ mMoPhan("01", "Khái niệm và nguyên tắc", "BHTM là gì, và năm nguyên 
   anh("mp01-bao.jpg", 960, 0, 960, 1080, "Tranh thuyền buôn gặp bão trên biển", "Ludolf Bakhuizen, Thuyền buôn Hà Lan gặp bão · phạm vi công cộng"));
 // 6 lịch sử thế giới — 4 mốc + tranh quán cà phê Lloyd's
 const LS = [["1347", "Genoa (Ý)", "hợp đồng bảo hiểm đầu tiên được biết"], ["1666", "Đại hoả hoạn London", "hơn 13.000 nhà cháy → 1680–81 văn phòng bảo hiểm hoả hoạn"], ["1688", "Quán cà phê Lloyd's", "chủ tàu, thương nhân mua bán bảo hiểm hàng hải"], ["1706", "Amicable Society", "công ty bảo hiểm nhân thọ đầu tiên"]];
-mNoiDung("Sự ra đời · thế giới", "Bảo hiểm ra đời cùng thương mại châu Âu", LS.map(([y, a, b], k) => { const yy = 330 + k * 160; return `${vach(120, yy, 820)}${t("nam", 120, yy + 30, 200, y)}${t("dong-t nho", 330, yy + 26, 610, a)}${t("dong-m nho", 330, yy + 70, 610, b)}`; }).join("")
+mNoiDung("Sự ra đời · thế giới", "Bảo hiểm ra đời cùng thương mại châu Âu", LS.map(([y, a, b], k) => { const yy = 330 + k * 160; return `${vach(120, yy, 820)}${t("nam", 120, yy + 30, 200, y)}${cap("dong-t nho", "dong-m nho", 330, yy + 26, 610, a, b)}`; }).join("")
   + anh("lloyds.jpg", 1040, 330, 760, 569, "Tranh in quán cà phê Lloyd's, London") + t("nguon", 1040, 916, 760, "Quán cà phê Lloyd's, London · tranh in William Holland · phạm vi công cộng"), nc(6));
 // 7 lịch sử Việt Nam — trục 5 mốc
 const VN = [["1964", "Công ty Bảo hiểm Việt Nam", "thành lập 17/12/1964, kinh doanh từ 15/01/1965"], ["1993", "Nghị định 100/CP", "ngày 18/12/1993 về kinh doanh bảo hiểm"], ["2001", "Luật KDBH 24/2000/QH10", "có hiệu lực 01/04/2001"], ["2023", "Luật KDBH 08/2022/QH15", "có hiệu lực 01/01/2023"], ["2026", "Luật 139/2025/QH15", "sửa đổi; hiệu lực 01/01/2026 (một số khoản 01/7/2026)"]];
 mNoiDung("Sự ra đời · Việt Nam", "Từ công ty nhà nước tới thị trường có luật",
   hinh(duong("M120 600 H1800", M.xanh) + VN.map((_, k) => `<circle cx="${132 + k * 344}" cy="600" r="13" fill="${k >= 3 ? M.xanh : M.giay}" stroke="${M.xanh}" stroke-width="${NET}"/>`).join(""), 100, 570, 1720, 60, "Trục thời gian năm mốc, ba mốc cuối là luật hiện hành")
-  + VN.map(([y, a, b], k) => { const x = 120 + k * 344; return `${t("nam", x, 470, 320, y)}${t("dong-t nho", x, 645, 320, a)}${t("dong-m nho", x, 730, 320, b)}`; }).join(""),
+  + VN.map(([y, a, b], k) => { const x = 120 + k * 344; return `${t("nam", x, 470, 320, y)}${cap("dong-t nho", "dong-m nho", x, 645, 320, a, b)}`; }).join(""),
   nc(7), { dan: "Luật đang áp dụng: Luật KDBH 08/2022/QH15, sửa đổi, bổ sung bởi Luật 139/2025/QH15.", khongHinh: true });
 // 8 khái niệm — sơ đồ hai bên, hai dòng tiền, điều kiện
 mNoiDung("3.1 · Khái niệm", "BHTM: [chuyển rủi ro] qua hợp đồng",
   hinh(nut(420, 620, 150, "user") + nut(1500, 620, 150, "building-bank") + mui(585, 585, 1335, 585) + mui(1335, 690, 585, 690, { mau: M.do, dut: true })
     + duong("M960 812 V700", M.do, NET, true) + nut(960, 866, 54, "flame", { mau: M.do }), 260, 470, 1400, 470, "Bên mua trả phí cho doanh nghiệp bảo hiểm; doanh nghiệp bồi thường khi rủi ro đã thoả thuận xảy ra")
   + t("nhan-xanh", 660, 528, 600, "Phí bảo hiểm · luôn trả") + t("nhan-do", 600, 708, 330, "Bồi thường") + t("nhan-do", 610, 930, 700, "chỉ khi rủi ro đã thoả thuận xảy ra")
-  + t("la-t", 220, 790, 400, "Bên mua bảo hiểm") + t("la-m", 220, 838, 400, "trả phí chắc chắn") + t("la-t", 1300, 790, 400, "Doanh nghiệp bảo hiểm") + t("la-m", 1300, 838, 400, "cam kết bồi thường, trả tiền"),
+  + cap("la-t", "la-m", 220, 790, 400, "Bên mua bảo hiểm", "trả phí chắc chắn") + cap("la-t", "la-m", 1300, 790, 400, "Doanh nghiệp bảo hiểm", "cam kết bồi thường, trả tiền"),
   nc(8), { dan: "Bên mua trả phí chắc chắn; doanh nghiệp bảo hiểm cam kết bồi thường khi xảy ra rủi ro đã thoả thuận." });
 // 9 số đông — lưới 10 × 10
 { let g = ""; for (let r = 0; r < 10; r++) for (let c = 0; c < 10; c++) { const do_ = (r === 2 && c === 7) || (r === 7 && c === 3); g += `<circle cx="${166 + c * 54}" cy="${400 + r * 54}" r="17" fill="${do_ ? M.do : "none"}" stroke="${do_ ? M.do : M.xanh}" stroke-width="${NET}"/>`; }
@@ -101,17 +102,17 @@ mNoiDung("3.1 · Nguyên tắc 2 · Rủi ro bảo hiểm", "Chỉ bảo hiểm 
   + t("nguon", 120, 960, 1680, "Rủi ro phải bất ngờ, không lường trước được — khoản 5 Điều 16 Luật KDBH 2022."), nc(10), { dan: "Rủi ro xảy ra phải ngẫu nhiên, bất ngờ, ngoài ý muốn." });
 // 11 quyền lợi — hai sơ đồ nhỏ đối chiếu
 mNoiDung("3.1 · Nguyên tắc 3 · Quyền lợi bảo hiểm", "Phải có quyền lợi với đối tượng",
-  hinh(nut(330, 560, 115, "user") + nut(660, 560, 115, "home") + mui(455, 560, 533, 560) + duong("M460 500 l14 14 l28 -28", M.xanh)
-    + nut(1260, 560, 115, "user", { mau: M.phu }) + nut(1590, 560, 115, "home", { mau: M.phu }) + duong("M1385 560 H1465", M.do, NET, true) + duong("M1410 532 l28 28 M1438 532 l-28 28", M.do)
-    + duong("M960 400 V900", M.ke, 2), 220, 400, 1500, 500, "Trái: chủ nhà có quyền lợi với nhà của mình. Phải: người lạ không có quyền lợi với nhà người khác")
-  + t("la-t", 180, 700, 640, "Chủ nhà mua cho nhà của mình") + t("la-m", 180, 750, 640, "nhà cháy thì chính họ thiệt hại tài chính → được")
-  + t("la-t xam", 1110, 700, 640, "Người lạ mua cho nhà người khác") + t("la-m", 1110, 750, 640, "không có quyền lợi tài chính → không được"),
+  hinh(nut(300, 570, 140, "user") + nut(700, 570, 140, "home") + mui(452, 570, 548, 570) + duong("M478 500 l14 14 l28 -28", M.xanh)
+    + nut(1220, 570, 140, "user", { mau: M.phu }) + nut(1620, 570, 140, "home", { mau: M.phu }) + duong("M1372 570 H1468", M.do, NET, true) + duong("M1406 542 l28 28 M1434 542 l-28 28", M.do)
+    + duong("M960 400 V940", M.ke, 2), 140, 390, 1640, 560, "Trái: chủ nhà có quyền lợi với nhà của mình. Phải: người lạ không có quyền lợi với nhà người khác")
+  + cap("la-t", "la-m", 180, 740, 640, "Chủ nhà mua cho nhà của mình", "nhà cháy thì chính họ thiệt hại tài chính → được")
+  + cap("la-t xam", "la-m", 1100, 740, 640, "Người lạ mua cho nhà người khác", "không có quyền lợi tài chính → không được"),
   nc(11), { dan: "Thiệt hại của đối tượng phải gây thiệt hại tài chính cho chính người mua." });
 // 12 trung thực — trích luật + hai chiều nghĩa vụ
 mNoiDung("3.1 · Nguyên tắc 4 · Trung thực tuyệt đối", "Trung thực: nghĩa vụ hai chiều",
   khoi("gach-doc", 120, 340, 8, 230) + t("trich", 164, 330, 1600, "“…các bên tham gia hợp đồng bảo hiểm phải cung cấp thông tin, thực hiện các quyền và nghĩa vụ một cách trung thực nhất, trên cơ sở tin tưởng tuyệt đối lẫn nhau…”") + t("nguon-xanh", 164, 588, 1400, "Khoản 1 Điều 16 Luật KDBH 08/2022/QH15")
-  + ic("building-bank", 120, 680, 80) + t("dong-t", 230, 682, 640, "Doanh nghiệp bảo hiểm") + t("dong-m", 230, 734, 640, "soạn hợp đồng bảo đảm quyền lợi hai bên; giải thích điều kiện, điều khoản")
-  + ic("user", 1000, 680, 80) + t("dong-t", 1110, 682, 690, "Bên mua bảo hiểm") + t("dong-m", 1110, 734, 690, "khai đủ, trung thực về đối tượng, rủi ro, thiệt hại")
+  + ic("building-bank", 120, 680, 80) + cap("dong-t", "dong-m", 230, 682, 640, "Doanh nghiệp bảo hiểm", "soạn hợp đồng bảo đảm quyền lợi hai bên; giải thích điều kiện, điều khoản")
+  + ic("user", 1000, 680, 80) + cap("dong-t", "dong-m", 1110, 682, 690, "Bên mua bảo hiểm", "khai đủ, trung thực về đối tượng, rủi ro, thiệt hại")
   + t("chu-do", 120, 930, 1680, "Cố ý khai sai hoặc giấu thông tin nhằm giao kết hợp đồng → bên kia có quyền huỷ bỏ (Điều 22 khoản 2, 3)."), nc(12), { khongHinh: true });
 // 13 phân tán — hai khu cùng thang
 { const nha = (x, y, chay) => `<path d="M${x} ${y + 16} L${x + 22} ${y} L${x + 44} ${y + 16} V${y + 42} H${x}Z" fill="${chay ? M.do : "none"}" stroke="${chay ? M.do : M.xanh}" stroke-width="${NET}" stroke-linejoin="round"/>`;
@@ -136,22 +137,18 @@ mMoPhan("02", "Phân loại bảo hiểm thương mại", "Theo tính chất ph�
   anh("mp02-xe.jpg", 960, 0, 960, 1080, "Ảnh một chiếc ô tô đâm vào gốc cây", "Ảnh tai nạn xe · Wikimedia Commons, phạm vi công cộng"));
 // 17 bắt buộc / tự nguyện
 mNoiDung("3.2 · Theo tính chất pháp lý", "Bắt buộc do luật, tự nguyện do nhu cầu",
-  ic("shield-check", 120, 340, 76) + t("cot-td", 216, 352, 820, "Bảo hiểm bắt buộc") + t("chu", 120, 450, 920, "Bảo vệ lợi ích công cộng, môi trường, an toàn xã hội (Điều 8 khoản 1, 2). Gồm:")
-  + [["car-crash", "TNDS của chủ xe cơ giới", 120, 560], ["flame", "Cháy, nổ bắt buộc", 600, 560], ["crane", "Xây dựng", 120, 664], ["scale", "Theo luật khác", 600, 664]].map(([i, a, x, y]) => `${ic(i, x, y, 56)}${t("dong-t nho", x + 76, y + 10, 380, a)}`).join("")
-  + t("chu-phu", 120, 790, 920, "DNBH được phép bán bảo hiểm bắt buộc thì không được từ chối người mua đủ điều kiện (Điều 8 khoản 4).")
-  + hinh(duong("M1100 340 V900", M.ke, 2), 1095, 340, 10, 560, "Đường chia hai cột")
-  + ic("heart-handshake", 1180, 340, 76) + t("cot-td", 1276, 352, 524, "Bảo hiểm tự nguyện") + t("chu", 1180, 450, 620, "Tham gia tuỳ nhận thức và nhu cầu của người tham gia.") + t("dong-t nho", 1180, 560, 620, "Ví dụ: nhân thọ, sức khoẻ, vật chất xe."),
-  nc(16) + " Danh mục theo khoản 2 Điều 8 Luật 2022. Bản 2022 ghi “đầu tư xây dựng”; theo nguồn thứ cấp, Luật 139/2025/QH15 sửa điểm c thành “xây dựng” — chưa đọc được bản chính thức (PDF scan), cần kiểm trước khi dạy.", { khongHinh: true });
+  tb("tb-ke tb-thoang", ["", "Bảo hiểm bắt buộc", "Bảo hiểm tự nguyện"], [["Vì sao có", "Bảo vệ lợi ích công cộng, môi trường, an toàn xã hội (Điều 8 khoản 1)", "Tuỳ nhận thức và nhu cầu của người tham gia"], ["Gồm / ví dụ", "TNDS của chủ xe cơ giới · cháy, nổ · xây dựng · theo luật khác (Điều 8 khoản 2)", "Ví dụ: nhân thọ, sức khoẻ, vật chất xe"], ["Lưu ý", "DNBH được phép bán thì không được từ chối người mua đủ điều kiện (Điều 8 khoản 4)", "—"]], 120, 340, 1680, 'data-cot="1-2-2"'),
+  nc(16) + " Danh mục theo khoản 2 Điều 8 Luật 2022. Bản 2022 ghi “đầu tư xây dựng”; theo nguồn thứ cấp, Luật 139/2025/QH15 sửa điểm c thành “xây dựng” — chưa đọc được bản chính thức (PDF scan), cần kiểm trước khi dạy.");
 // 18 kỹ thuật
 mNoiDung("3.2 · Theo kỹ thuật bảo hiểm", "Phân bổ chi ngay, dồn tích tích quỹ", tb("tb-ke", ["", "Kỹ thuật phân bổ", "Kỹ thuật dồn tích"], [["Thời hạn", "Ngắn", "Dài"], ["Loại rủi ro", "Tương đối độc lập với tuổi thọ", "Gắn liền tuổi thọ con người"], ["Dùng quỹ", "Có rủi ro thì chi trả luôn", "Tích tụ nhiều năm mới chi trả"], ["Ví dụ", "Bảo hiểm cháy nổ một năm", "Bảo hiểm nhân thọ 20 năm"]], 120, 340, 1680, 'data-cot="1-2-2"'), nc(17));
 // 19 ba nhóm theo đối tượng
 mNoiDung("3.2 · Theo đối tượng", "Ba nhóm theo đối tượng",
-  hinh([["home", 390], ["heart", 960], ["car-crash", 1530]].map(([i, cx]) => nut(cx, 490, 140, i)).join(""), 240, 340, 1440, 300, "Ba biểu tượng: ngôi nhà (tài sản), trái tim (con người), xe va chạm (trách nhiệm dân sự)")
-  + [["Bảo hiểm tài sản", "đối tượng là tài sản"], ["Bảo hiểm con người", "tuổi thọ, tính mạng, sức khoẻ, khả năng lao động"], ["Bảo hiểm TNDS", "trách nhiệm dân sự của người được BH với người thứ ba"]].map(([a, b], k) => `${t("la-t", 150 + k * 570, 660, 480, a)}${t("la-m", 150 + k * 570, 710, 480, b)}`).join("")
+  hinh([["home", 390], ["heart", 960], ["car-crash", 1530]].map(([i, cx]) => nut(cx, 520, 170, i)).join(""), 210, 340, 1500, 360, "Ba biểu tượng: ngôi nhà (tài sản), trái tim (con người), xe va chạm (trách nhiệm dân sự)")
+  + [["Bảo hiểm tài sản", "đối tượng là tài sản"], ["Bảo hiểm con người", "tuổi thọ, tính mạng, sức khoẻ, khả năng lao động"], ["Bảo hiểm TNDS", "trách nhiệm dân sự của người được BH với người thứ ba"]].map(([a, b], k) => `${cap("la-t", "la-m", 150 + k * 570, 730, 480, a, b)}`).join("")
   + t("nguon", 120, 940, 1680, "Luật hiện hành: 3 loại hình — nhân thọ, sức khoẻ, phi nhân thọ (Điều 7); 5 loại hợp đồng (Điều 15)."), nc(18));
 // 20 mở phần 03 — hình nét lớn
 mMoPhan("03", "Hợp đồng bảo hiểm", "Khái niệm, tài liệu, chủ thể, các con số, phí và thời hạn", nc(19),
-  hinh(gIcon("file-certificate", 1440, 540, 600, M.xanhMo, 4), 1120, 220, 640, 640, "Hình nét lớn: tờ hợp đồng có con dấu"));
+  anh("mp03-hop-dong.jpg", 960, 0, 960, 1080, "Mẫu hợp đồng bảo hiểm hoả hoạn của Philadelphia Fire and Life Insurance Co., khoảng 1840–1860", "Hợp đồng bảo hiểm hoả hoạn, Philadelphia, khoảng 1840–1860 · Thư viện Quốc hội Hoa Kỳ"));
 // 21 định nghĩa — trích luật lớn
 mNoiDung("3.3 · Khái niệm", "Hợp đồng bảo hiểm là gì",
   khoi("gach-doc", 120, 344, 8, 380) + `<div class="trich lon" data-t style="left:170px;top:330px;width:1460px">“Hợp đồng bảo hiểm là sự thoả thuận giữa bên mua bảo hiểm và doanh nghiệp bảo hiểm, …, theo đó bên mua bảo hiểm phải <u>đóng phí bảo hiểm</u>, doanh nghiệp bảo hiểm, … phải <u>bồi thường, trả tiền bảo hiểm</u> theo thỏa thuận trong hợp đồng.”</div>`
@@ -169,12 +166,12 @@ mNoiDung("3.3 · Chủ thể", "Bốn chủ thể của hợp đồng",
 // 24 nghĩa vụ DNBH — số lớn 15 ngày
 mNoiDung("3.3 · Nghĩa vụ của DNBH", "Giải thích rõ, bồi thường đúng hạn",
   t("so-to", 104, 320, 560, "15") + t("don-vi", 120, 630, 560, "ngày") + t("chu-phu", 120, 730, 600, "Hạn bồi thường tối đa khi hợp đồng không thoả thuận khác, tính từ khi nhận đủ hồ sơ hợp lệ.")
-  + [["file-certificate", "Khi giao kết", "giải thích rõ quyền lợi, điều khoản loại trừ, quyền và nghĩa vụ của bên mua (Điều 20 khoản 2 điểm b)"], ["calendar", "Khi xảy ra sự kiện bảo hiểm", "bồi thường, trả tiền đúng thời hạn thoả thuận (Điều 20 khoản 2 điểm đ; Điều 31 khoản 1)"], ["coins", "Chậm trả", "phải trả thêm lãi cho phần tiền chậm trả (Điều 31)"]].map(([i, a, b], k) => { const y = 340 + k * 200; return `${vach(820, y, 980)}${ic(i, 820, y + 30, 64)}${t("dong-t xanh", 920, y + 30, 880, a)}${t("dong-m", 920, y + 80, 880, b)}`; }).join(""), nc(23), { khongHinh: true });
+  + [["file-certificate", "Khi giao kết", "giải thích rõ quyền lợi, điều khoản loại trừ, quyền và nghĩa vụ của bên mua (Điều 20 khoản 2 điểm b)"], ["calendar", "Khi xảy ra sự kiện bảo hiểm", "bồi thường, trả tiền đúng thời hạn thoả thuận (Điều 20 khoản 2 điểm đ; Điều 31 khoản 1)"], ["coins", "Chậm trả", "phải trả thêm lãi cho phần tiền chậm trả (Điều 31)"]].map(([i, a, b], k) => { const y = 340 + k * 200; return `${vach(820, y, 980)}${ic(i, 820, y + 30, 64)}${cap("dong-t xanh", "dong-m", 920, y + 30, 880, a, b)}`; }).join(""), nc(23), { khongHinh: true });
 // 25 giá trị BH và số tiền BH — hai thanh cùng thang
 mNoiDung("3.3 · Hai con số khác nhau", "Giá trị BH và số tiền BH",
   hinh(nut(370, 630, 200, "home", { co: 230 }), 160, 420, 420, 420, "Ngôi nhà được bảo hiểm")
-  + khoi("thanh", 720, 420, 1080, 64, `;background:${M.xanh}`) + t("dong-t xanh", 720, 500, 1080, "Giá trị bảo hiểm · ví dụ 1 tỷ đồng") + t("dong-m", 720, 550, 1080, "giá trị của chính ngôi nhà (luật dùng: giá thị trường của tài sản)")
-  + khoi("thanh", 720, 680, 648, 64, `;background:${M.vang}`) + t("dong-t vang", 720, 760, 1080, "Số tiền bảo hiểm · ví dụ 600 triệu đồng") + t("dong-m", 720, 810, 1080, "ghi trong hợp đồng — mức tối đa DNBH phải trả"),
+  + khoi("thanh", 720, 420, 1080, 64, `;background:${M.xanh}`) + cap("dong-t xanh", "dong-m", 720, 500, 1080, "Giá trị bảo hiểm · ví dụ 1 tỷ đồng", "giá trị của chính ngôi nhà (luật dùng: giá thị trường của tài sản)")
+  + khoi("thanh", 720, 680, 648, 64, `;background:${M.vang}`) + cap("dong-t vang", "dong-m", 720, 760, 1080, "Số tiền bảo hiểm · ví dụ 600 triệu đồng", "ghi trong hợp đồng — mức tối đa DNBH phải trả"),
   nc(24), { dan: "Giá trị đo chính đối tượng; số tiền bảo hiểm đo giới hạn trách nhiệm của DNBH.", khongHinh: true });
 // 26 bốn trường hợp
 mNoiDung("3.3 · So STBH với giá trị", "Bốn trường hợp, bốn cách bồi thường", tb("tb-ke", ["Trường hợp", "Quan hệ STBH – giá trị", "Bồi thường"], [["Đúng giá trị", "STBH = giá trị", "theo thiệt hại thực tế (Đ16 k3)"], ["Dưới giá trị", "STBH < giá thị trường", "theo tỷ lệ STBH / giá thị trường (Đ48)"], ["Trên giá trị", "STBH > giá thị trường", "nếu vô ý: tối đa giá thị trường lúc xảy ra thiệt hại, hoàn phí phần vượt (Đ47)"], ["Bảo hiểm trùng", "≥ 2 HĐ cùng phạm vi, đối tượng, thời hạn, sự kiện; tổng STBH > giá thị trường", "chia theo tỷ lệ STBH từng HĐ, tổng ≤ thiệt hại (Đ49)"]], 120, 330, 1680, 'data-cot="1-2-2"', ["", "on"])
@@ -182,18 +179,18 @@ mNoiDung("3.3 · So STBH với giá trị", "Bốn trường hợp, bốn cách 
 // 27 phí = công thức lớn
 mNoiDung("3.3 · Phí bảo hiểm", "Phí bảo hiểm là giá cả",
   [["p", 470, "x"], ["=", 690, "v"], ["f", 910, "x"], ["+", 1130, "v"], ["d", 1350, "x"]].map(([c, x, k]) => t(`ct ${k}`, x, 330, 180, c)).join("")
-  + [["phí bảo hiểm", "giá cả của sản phẩm bảo hiểm", 470], ["phí thuần", "chi trả, bồi thường tổn thất được bảo hiểm", 910], ["phụ phí", "chi phí hoạt động nghiệp vụ", 1350]].map(([a, b, x]) => `${t("la-t", x - 110, 640, 400, a)}${t("la-m", x - 110, 690, 400, b)}`).join("")
+  + [["phí bảo hiểm", "giá cả của sản phẩm bảo hiểm", 470], ["phí thuần", "chi trả, bồi thường tổn thất được bảo hiểm", 910], ["phụ phí", "chi phí hoạt động nghiệp vụ", 1350]].map(([a, b, x]) => `${cap("la-t", "la-m", x - 110, 640, 400, a, b)}`).join("")
   + vach(120, 860, 1680) + t("chu", 120, 890, 1680, "Theo Luật: khoản tiền bên mua phải đóng theo quy định của pháp luật hoặc do các bên thoả thuận (khoản 28 Điều 4)."), nc(26), { khongHinh: true });
 // 28 thời hạn — trục dày
 mNoiDung("3.3 · Thời hạn bảo hiểm", "Thời hạn: từ hiệu lực tới hết trách nhiệm",
   hinh(duong("M140 600 H1780", M.ke) + `<rect x="520" y="560" width="920" height="80" fill="${M.xanhNhat}" stroke="${M.xanh}" stroke-width="${NET}"/>` + [520, 1440].map((x) => `<circle cx="${x}" cy="600" r="15" fill="${M.xanh}"/>`).join("")
     + `<circle cx="800" cy="600" r="13" fill="${M.giay}" stroke="${M.xanh}" stroke-width="${NET}"/><circle cx="1650" cy="600" r="13" fill="${M.do}"/>` + duong("M800 545 V500", M.xanh, 2) + duong("M1650 585 V500", M.do, 2), 120, 470, 1680, 190, "Dải thời hạn từ hiệu lực tới kết thúc trách nhiệm; sự kiện trong dải được bồi thường, sau dải thì không")
   + t("nhan-xanh trai", 760, 430, 560, "Sự kiện trong thời hạn → bồi thường") + t("nhan-do trai", 1480, 430, 340, "Sau khi hết hạn → không") + t("bang-t", 960, 584, 460, "Thời hạn bảo hiểm")
-  + t("la-t", 270, 680, 500, "Hiệu lực") + t("la-m", 270, 728, 500, "ký HĐ + DNBH chấp nhận + bên mua đã đóng phí") + t("la-t", 1190, 680, 500, "Kết thúc trách nhiệm")
+  + cap("la-t", "la-m", 270, 680, 500, "Hiệu lực", "ký HĐ + DNBH chấp nhận + bên mua đã đóng phí") + t("la-t", 1190, 680, 500, "Kết thúc trách nhiệm")
   + t("nguon", 120, 920, 1680, "Định nghĩa của giáo trình. Luật chỉ yêu cầu hợp đồng ghi thời hạn và thời điểm có hiệu lực (Điều 17 khoản 1 điểm e)."), nc(27));
 // 30 mở phần 04 (bỏ slide thở trùng ý trước nó)
 mMoPhan("04", "Tái bảo hiểm", "Doanh nghiệp bảo hiểm cũng chuyển bớt rủi ro — và hai bài tập tính", nc(28),
-  hinh(nut(1210, 540, 190, "building-bank", { mau: M.xanhMo, nen: M.xanh }) + nut(1660, 540, 150, "building", { mau: M.vangSang, nen: M.xanh }) + mui(1415, 540, 1495, 540, { mau: M.vangSang }), 1010, 340, 820, 400, "Doanh nghiệp bảo hiểm gốc chuyển một phần rủi ro sang doanh nghiệp nhận tái"));
+  anh("mp04-hartford.jpg", 960, 0, 960, 1080, "Tranh khắc trụ sở Hartford Fire Insurance Company", "Trụ sở Hartford Fire Insurance Company · tranh khắc · Thư viện Quốc hội Hoa Kỳ"));
 // 31 tái bảo hiểm — chuỗi ba bên
 mNoiDung("3.4 · Khái niệm", "Tái bảo hiểm: chuyển tiếp một phần rủi ro",
   hinh(nut(360, 600, 120, "user") + nut(960, 600, 130, "building-bank") + nut(1560, 600, 120, "building", { mau: M.vang }) + mui(495, 600, 815, 600) + mui(1105, 600, 1425, 600, { mau: M.vang }), 230, 460, 1460, 280, "Bên mua trả phí cho DNBH gốc; DNBH gốc chuyển một phần rủi ro và phí cho DN nhận tái")
@@ -204,14 +201,14 @@ mNoiDung("3.4 · Khái niệm", "Tái bảo hiểm: chuyển tiếp một phần
 // 32 ví dụ ba bước
 mNoiDung("3.4 · Ví dụ", "DNBH A nhượng tái cho công ty B",
   hinh(nut(330, 610, 105, "user") + nut(960, 610, 105, "shield-check") + nut(1590, 610, 105, "arrows-split", { mau: M.vang }) + mui(455, 610, 835, 610, { mau: M.ke }) + mui(1085, 610, 1465, 610, { mau: M.ke }), 210, 490, 1500, 240, "Ba bước: anh X mua bảo hiểm, DNBH A nhận rủi ro, A nhượng một phần cho B")
-  + [["01", "Anh X mua bảo hiểm tài sản", "đóng phí cho DNBH A"], ["02", "DNBH A nhận rủi ro", "cam kết bồi thường cho anh X"], ["03", "A nhượng một phần cho B", "kèm một phần phí; A vẫn chịu trách nhiệm với anh X"]].map(([so, a, b], k) => { const cx = 330 + k * 630; return `${t("so-dong giua", cx - 60, 400, 120, so)}${t("la-t", cx - 260, 750, 520, a)}${t("la-m", cx - 260, 800, 520, b)}`; }).join(""),
+  + [["01", "Anh X mua bảo hiểm tài sản", "đóng phí cho DNBH A"], ["02", "DNBH A nhận rủi ro", "cam kết bồi thường cho anh X"], ["03", "A nhượng một phần cho B", "kèm một phần phí; A vẫn chịu trách nhiệm với anh X"]].map(([so, a, b], k) => { const cx = 330 + k * 630; return `${t("so-dong giua", cx - 60, 400, 120, so)}${cap("la-t", "la-m", cx - 260, 750, 520, a, b)}`; }).join(""),
   nc(30), { dan: "A phân tán rủi ro, phòng khi sự kiện bảo hiểm xảy ra làm A khó khăn." });
 // 33 cây phân loại
 mNoiDung("3.4 · Các loại tái bảo hiểm", "Tỷ lệ và phi tỷ lệ",
-  hinh(duong("M960 420 V460 M540 460 H1380 M540 460 V500 M1380 460 V500 M540 576 V610 M310 610 H770 M310 610 V650 M770 610 V650 M1380 576 V610 M1150 610 H1610 M1150 610 V650 M1610 610 V650", M.ke)
-    + `<rect x="760" y="340" width="400" height="80" fill="${M.giay}" stroke="${M.xanh}" stroke-width="${NET}"/><rect x="340" y="500" width="400" height="76" fill="${M.xanh}"/><rect x="1180" y="500" width="400" height="76" fill="${M.vang}"/>`, 300, 330, 1320, 330, "Cây: tái bảo hiểm chia hai nhánh tỷ lệ và phi tỷ lệ, mỗi nhánh hai loại")
-  + t("cay-goc", 760, 360, 400, "Tái bảo hiểm") + t("cay-nhanh", 340, 517, 400, "Tái BH tỷ lệ") + t("cay-nhanh", 1180, 517, 400, "Tái BH phi tỷ lệ")
-  + [["Số thành", "một tỷ lệ cố định cho STBH, phí, bồi thường", 310, ""], ["Mức dôi", "nhận phần STBH vượt mức giữ lại, tính theo lần", 770, ""], ["Vượt mức bồi thường", "trả phần tổn thất vượt ngưỡng tiền", 1150, " vang"], ["Vượt mức tỷ lệ bồi thường", "trả khi tỷ lệ tổn thất cả kỳ vượt ngưỡng", 1610, " vang"]].map(([a, b, cx, v]) => `${t("la-t" + v, cx - 200, 676, 400, a)}${t("la-m", cx - 200, 760, 400, b)}`).join(""), nc(31));
+  hinh(duong("M960 440 V490 M540 490 H1380 M540 490 V540 M1380 490 V540 M540 640 V680 M310 680 H770 M310 680 V730 M770 680 V730 M1380 640 V680 M1150 680 H1610 M1150 680 V730 M1610 680 V730", M.ke)
+    + `<rect x="740" y="350" width="440" height="90" fill="${M.giay}" stroke="${M.xanh}" stroke-width="${NET}"/>` + duong("M400 630 H680 M1240 630 H1520", M.xanh), 300, 340, 1320, 400, "Cây: tái bảo hiểm chia hai nhánh tỷ lệ và phi tỷ lệ, mỗi nhánh hai loại")
+  + t("cay-goc", 740, 372, 440, "Tái bảo hiểm") + t("cay-nhanh", 300, 562, 480, "Tái BH tỷ lệ") + t("cay-nhanh", 1140, 562, 480, "Tái BH phi tỷ lệ")
+  + [["Số thành", "một tỷ lệ cố định cho STBH, phí, bồi thường", 310], ["Mức dôi", "nhận phần STBH vượt mức giữ lại, tính theo lần", 770], ["Vượt mức bồi thường", "trả phần tổn thất vượt ngưỡng tiền", 1150], ["Vượt mức tỷ lệ bồi thường", "trả khi tỷ lệ tổn thất cả kỳ vượt ngưỡng", 1610]].map(([a, b, cx]) => cap("la-t", "la-m", cx - 210, 750, 420, a, b)).join(""), nc(31));
 // 34 số thành — ba thanh cùng tỉ lệ
 mNoiDung("3.4 · Tái bảo hiểm số thành", "Số thành: một tỷ lệ cho mọi thứ",
   t("nhan-xanh trai", 440, 350, 476, "DN nhượng giữ lại 35 %") + t("nhan-vang phai", 916, 350, 884, "DN nhận tái chịu 65 %")
@@ -236,7 +233,7 @@ mNoiDung("Bài 12 · Tái bảo hiểm mức dôi", "Bài 12: sáu hợp đồng
 mNoiDung("3.4 · Vượt mức bồi thường", "Vượt mức bồi thường: trả phần vượt",
   t("dong-t", 120, 420, 1680, "Một vụ tổn thất 6 triệu, hợp đồng “4 triệu vượt 1 triệu”:")
   + khoi("thanh", 120, 500, 276, 160, `;background:${M.xanh}`) + khoi("thanh", 402, 500, 1114, 160, `;background:${M.vang}`) + khoi("thanh", 1522, 500, 278, 160, `;background:${M.ke}`)
-  + t("dong-t xanh", 120, 700, 270, "1 triệu") + t("dong-m", 120, 750, 270, "DN nhượng giữ lại") + t("dong-t vang", 402, 700, 1000, "4 triệu (từ 1 tới 5 triệu)") + t("dong-m", 402, 750, 1000, "DN nhận tái trả") + t("dong-t", 1522, 700, 278, "1 triệu vượt") + t("dong-m", 1522, 750, 278, "trở lại DN nhượng")
+  + cap("dong-t xanh", "dong-m", 120, 700, 270, "1 triệu", "DN nhượng giữ lại") + cap("dong-t vang", "dong-m", 402, 700, 1000, "4 triệu (từ 1 tới 5 triệu)", "DN nhận tái trả") + cap("dong-t", "dong-m", 1522, 700, 278, "1 triệu vượt", "trở lại DN nhượng")
   + t("nguon", 120, 900, 1680, "Ngưỡng tính bằng số tiền, cho từng rủi ro hoặc từng sự kiện. Slide sau: ngưỡng là tỷ lệ tổn thất của cả kỳ."), nc(36), { dan: "DN nhận tái trả phần tổn thất vượt mức giữ lại, trong giới hạn đã thoả thuận.", khongHinh: true });
 // 39 vượt mức tỷ lệ
 mNoiDung("3.4 · Vượt mức tỷ lệ bồi thường", "Vượt mức tỷ lệ: tính theo cả kỳ",
@@ -244,15 +241,15 @@ mNoiDung("3.4 · Vượt mức tỷ lệ bồi thường", "Vượt mức tỷ l
   + khoi("thanh", 120, 540, 1176, 140, `;background:${M.xanh}`) + khoi("thanh", 1302, 540, 246, 140, `;background:${M.vang}`) + khoi("thanh", 1554, 540, 246, 140, `;background:${M.ke}`)
   + hinh(duong("M1299 510 V710", M.do) + duong("M1551 510 V710", M.muc), 1290, 505, 270, 210, "Vạch ngưỡng 70 % và 85 %")
   + t("nhan-do trai", 1180, 460, 240, "ngưỡng 70 %") + t("nhan-den trai", 1500, 460, 120, "85 %") + t("nhan-den phai", 1640, 460, 160, "100 %")
-  + t("dong-t xanh", 120, 730, 1100, "0 – 70 %") + t("dong-m", 120, 780, 1100, "DN nhượng tự bồi thường") + t("dong-t vang", 1302, 730, 246, "70 – 85 %") + t("dong-m", 1302, 780, 246, "DN nhận tái trả") + t("dong-t", 1554, 730, 246, "trên 85 %") + t("dong-m", 1554, 780, 246, "trở lại DN nhượng")
+  + cap("dong-t xanh", "dong-m", 120, 730, 1100, "0 – 70 %", "DN nhượng tự bồi thường") + cap("dong-t vang", "dong-m", 1302, 730, 246, "70 – 85 %", "DN nhận tái trả") + cap("dong-t", "dong-m", 1554, 730, 246, "trên 85 %", "trở lại DN nhượng")
   + t("chu", 120, 920, 1680, "Ví dụ: phí cả kỳ 100, bồi thường cả kỳ 80 → tỷ lệ tổn thất 80 %. DN nhượng chịu 70, DN nhận tái trả [10]."), nc(37), { khongHinh: true });
 // 40 làm việc nhóm
 mNoiDung("Làm việc nhóm", "Hai đề tài sau giờ học",
-  hinh(nut(330, 560, 130, "file-text") + nut(1210, 560, 130, "chart-bar"), 190, 420, 1160, 280, "Hai biểu tượng: hồ sơ hợp đồng và biểu đồ thực trạng")
-  + [["01", "Hợp đồng BHTM thực tế", "và nhận xét về nội dung của hợp đồng", 500], ["02", "Thực trạng triển khai BHTM", "ở Việt Nam thời gian qua", 1380]].map(([so, a, b, x]) => `${t("so-dong lon", x, 440, 140, so)}${t("dong-t", x, 540, 420, a)}${t("dong-m", x, 640, 420, b)}`).join(""), nc(38));
+  hinh(nut(330, 520, 150, "file-text") + nut(1210, 520, 150, "chart-bar"), 170, 360, 1200, 320, "Hai biểu tượng: hồ sơ hợp đồng và biểu đồ thực trạng")
+  + [["01", "Tìm một hợp đồng BHTM thực tế và nhận xét nội dung của hợp đồng", 120], ["02", "Thực trạng triển khai BHTM ở Việt Nam thời gian qua", 1000]].map(([so, a, x]) => `${t("so-dong lon", x, 720, 140, so)}${t("de-tai", x + 150, 714, 650, a)}`).join(""), nc(38));
 // 41–45 câu hỏi
 const CH = [["Luật KDBH phân loại HĐBH theo tiêu chí nào?", ["Số tiền bảo hiểm", "Đối tượng bảo hiểm", "Thời hạn bảo hiểm", "Kỹ thuật bảo hiểm"]], ["DNBH có quyền nào?", ["Kiểm tra, giám sát việc thực hiện hợp đồng đại lý bảo hiểm", "Cho cán bộ, nhân viên làm đại lý cho chính DNBH đó", "Yêu cầu đại lý phải có hợp đồng bảo hiểm trước khi thành đại lý chính thức", "Cả A, B đều đúng"]], ["DNBH có nghĩa vụ gì?", ["Giải thích điều kiện, điều khoản BH; quyền, nghĩa vụ của bên mua", "Trả tiền BH kịp thời cho người thụ hưởng hoặc bồi thường cho người được BH", "Ứng tiền cho bên mua đóng phí hoặc giảm phí khi họ khó khăn tài chính", "Cả A và B đều đúng"]], ["Trung thực tuyệt đối áp cho ai?", ["Doanh nghiệp bảo hiểm", "Doanh nghiệp bảo hiểm và đại lý bảo hiểm", "Doanh nghiệp bảo hiểm và người tham gia bảo hiểm", "Doanh nghiệp bảo hiểm và người thụ hưởng"]], ["Điền vào chỗ trống", ["Công ty chứng khoán", "Công ty tài chính", "Doanh nghiệp bảo hiểm", "Ngân hàng thương mại"]]];
-CH.forEach(([q, ds], k) => mHoi(k + 1, q, ds, nc(39 + k), k === 4 ? "HĐBH là sự thoả thuận giữa bên mua BH và DNBH, theo đó bên mua BH phải đóng phí BH, …………… phải trả tiền BH cho người thụ hưởng hoặc bồi thường cho người được BH khi xảy ra sự kiện BH." : k === 1 || k === 2 ? "Theo pháp luật hiện hành ở Việt Nam." : ""));
+CH.forEach(([q, ds], k) => mHoi(k + 1, q, ds, nc(39 + k), k === 1 || k === 2 ? "Theo pháp luật hiện hành ở Việt Nam." : "", k === 4 ? "HĐBH là sự thoả thuận giữa bên mua BH và DNBH, theo đó bên mua BH phải đóng phí BH, ………… phải trả tiền BH cho người thụ hưởng hoặc bồi thường cho người được BH khi xảy ra sự kiện BH." : ""));
 // 46 tổng kết
 mCau("BHTM: [phí chắc chắn] đổi cam kết bồi thường", "Bốn phần đã đi qua, và hai bài tập tái bảo hiểm.", nc(44),
   [["bulb", "Khái niệm, năm nguyên tắc"], ["category", "Phân loại theo pháp lý, kỹ thuật, đối tượng"], ["file-certificate", "Hợp đồng: chủ thể, tài liệu, số tiền, phí, thời hạn"], ["arrows-split", "Tái bảo hiểm: số thành, mức dôi, vượt mức"]].map(([i, a], k) => { const y = 260 + k * 170; return `${t("tk-so", 1020, y, 100, `0${k + 1}`)}${ic(i, 1130, y + 2, 64, M.xanhMo)}${t("tk-dong", 1230, y + 10, 570, a)}`; }).join(""), 820);
@@ -284,6 +281,7 @@ em{font-style:normal;color:${M.xanh}}.dam em{color:${M.vangSang}}
 .chu{font:400 32px/1.45 'Be Vietnam Pro';color:${M.muc}}.chu-phu{font:400 30px/1.45 'Be Vietnam Pro';color:${M.phu}}.chu-do{font:700 32px/1.4 'Be Vietnam Pro';color:${M.do}}
 .nguon{font:400 26px/1.4 'Be Vietnam Pro';color:${M.phu}}.nguon-xanh{font:600 26px/1.4 'Be Vietnam Pro';color:${M.xanh}}
 .nhan-xanh,.nhan-do,.nhan-vang,.nhan-den{font:700 30px/1.3 'Be Vietnam Pro';text-align:center}.nhan-xanh{color:${M.xanh}}.nhan-do{color:${M.do}}.nhan-vang{color:${M.vang}}.nhan-den{color:${M.muc}}
+.cap > b,.cap > span{display:block}.cap > span{margin-top:8px}
 .trai{text-align:left !important}.phai{text-align:right !important}
 .la-t{font:700 32px/1.3 'Be Vietnam Pro';color:${M.xanh};text-align:center}.la-t.xam{color:${M.phu}}.la-t.vang{color:${M.vang}}
 .la-m{font:400 28px/1.4 'Be Vietnam Pro';color:${M.phu};text-align:center}
@@ -292,15 +290,17 @@ em{font-style:normal;color:${M.xanh}}.dam em{color:${M.vangSang}}
 .trich{font:700 44px/1.45 'Lora';color:${M.muc}}.trich.lon{font-size:46px}.trich u{text-decoration:none;color:${M.xanh}}
 .cot-dau{font:700 30px/1.3 'Be Vietnam Pro';color:${M.muc}}.cot-td{font:700 44px/1.2 'Lora';color:${M.xanh}}
 .o{position:absolute;padding:14px 20px;border-bottom:2px solid ${M.ke}}.o b{font:600 30px/1.3 'Be Vietnam Pro'}.o.trung{background:${M.xanhNhat}}.o.trung b{color:${M.xanh};font-weight:700}.o.mo b{color:${M.phu};font-weight:400}.o.luat b{color:${M.vang};font-weight:700}
+.de-tai{font:700 40px/1.25 'Lora';color:${M.muc}}
 .cong{font:700 40px/1.3 'Lora';color:${M.xanh}}
 .ct{font:700 240px/1 'Lora';text-align:center}.ct.x{color:${M.xanh}}.ct.v{color:${M.vang}}
 .bang-t{font:700 30px/1.3 'Be Vietnam Pro';color:${M.xanh};text-align:center}
-.cay-goc{font:700 36px/1.2 'Lora';color:${M.xanh};text-align:center}.cay-nhanh{font:700 30px/1.3 'Be Vietnam Pro';color:${M.giay};text-align:center}
+.cay-goc{font:700 40px/1.2 'Lora';color:${M.xanh};text-align:center}.cay-nhanh{font:700 40px/1.2 'Lora';color:${M.muc};text-align:center}
 .so-cot{font:700 40px/1.2 'Lora';color:${M.muc};text-align:center}.so-cot.sang{color:${M.giay}}
 .panel-dam{background:${M.xanh}}
 .hoi-kk{font:600 24px/1.3 'Be Vietnam Pro';letter-spacing:.14em;text-transform:uppercase;color:${M.xanhMo}}.hoi-so{font:700 200px/1 'Lora';color:${M.vangSang}}
-.hoi-td{position:absolute;font:700 56px/1.15 'Lora';color:${M.muc}}
+.hoi-td{position:absolute;font:700 56px/1.15 'Lora';color:${M.muc}}.hoi-td.dien{font-size:40px;line-height:1.4}
 .pa-chu{font:700 56px/1 'Lora';color:${M.vang}}.pa-t{font:500 34px/1.35 'Be Vietnam Pro';color:${M.muc}}
+.tb-thoang{font-size:32px}.tb-thoang .tb-r > b{padding:34px 24px}
 .tb .co{color:${M.xanh};font-weight:800}.tb .khong{color:${M.do};font-weight:800}.tb-r.ket > b{background:${M.xanhNhat};color:${M.xanh};font-weight:700}.tb-r.on > b{background:${M.xanhNhat} !important}
 `);
 fs.rmSync(path.join(D, "slides"), { recursive: true, force: true });

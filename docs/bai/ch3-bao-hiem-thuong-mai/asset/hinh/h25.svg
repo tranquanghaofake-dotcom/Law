@@ -1,8 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="820 770 64 64" width="64" height="64"><g transform="translate(822.56 772.56) scale(2.4533333333333336)" fill="none" stroke="#0E4F49" stroke-width="1.223" stroke-linecap="round" stroke-linejoin="round">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="170 360 1200 320" width="1200" height="320"><circle cx="330" cy="520" r="150" fill="#F3EEE4" stroke="#0E4F49" stroke-width="3"/><g transform="translate(232.5 422.5) scale(8.125)" fill="none" stroke="#0E4F49" stroke-width="0.369" stroke-linecap="round" stroke-linejoin="round">
   
-  <path d="M9 14c0 1.657 2.686 3 6 3s6 -1.343 6 -3s-2.686 -3 -6 -3s-6 1.343 -6 3z" />
-  <path d="M9 14v4c0 1.656 2.686 3 6 3s6 -1.344 6 -3v-4" />
-  <path d="M3 6c0 1.072 1.144 2.062 3 2.598s4.144 .536 6 0c1.856 -.536 3 -1.526 3 -2.598c0 -1.072 -1.144 -2.062 -3 -2.598s-4.144 -.536 -6 0c-1.856 .536 -3 1.526 -3 2.598z" />
-  <path d="M3 6v10c0 .888 .772 1.45 2 2" />
-  <path d="M3 11c0 .888 .772 1.45 2 2" />
+  <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+  <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+  <path d="M9 9l1 0" />
+  <path d="M9 13l6 0" />
+  <path d="M9 17l6 0" />
+</g><circle cx="1210" cy="520" r="150" fill="#F3EEE4" stroke="#0E4F49" stroke-width="3"/><g transform="translate(1112.5 422.5) scale(8.125)" fill="none" stroke="#0E4F49" stroke-width="0.369" stroke-linecap="round" stroke-linejoin="round">
+  
+  <path d="M3 13a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+  <path d="M15 9a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+  <path d="M9 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+  <path d="M4 20h14" />
 </g></svg>
