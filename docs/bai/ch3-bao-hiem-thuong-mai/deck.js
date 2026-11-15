@@ -38,7 +38,7 @@ const sl = (kk, td, body, notes, { dan, cls = "", rong = 1680 } = {}) => S.push(
 const tho = (cau, phu, notes, hinh = "") => S.push(`<section class="s" data-trans="fade" data-notes="${esc(notes)}">${hinh}<h1 class="tho" data-t data-tieu-de style="left:120px;top:330px;width:${hinh ? 840 : 1500}px">${em(cau)}</h1>${phu ? t("tho-phu", 120, 640, hinh ? 800 : 1000, phu) : ""}</section>`);
 // mở phần: ảnh tư liệu hai màu tràn nửa phải (anh/*-dao.jpg, scripts/hai_mau.js) — nguon-hinh.md: slide mở phần cần hình chính lớn
 const anhNua = (f, alt, cap, x = 960, w = 960) => `<img data-l="anh-${f}" data-alt="${esc(alt)}" src="anh/${f}.jpg" style="position:absolute;left:${x}px;top:0;width:${w}px;height:1080px">${t("chu-anh", x + 40, 984, w - 80, cap)}`;
-const chuong = (so, ten, mo, notes, anh) => S.push(`<section class="s nen-dao" data-trans="fade" data-notes="${esc(notes)}">${anh ? anhNua(...anh) : ""}${t("ch-so", 120, 260, 600, so)}<h1 class="ch-t" data-t data-tieu-de style="left:120px;top:520px;width:${anh ? 800 : 1500}px">${esc(ten)}</h1>${t("ch-m", 120, anh ? 760 : 660, anh ? 760 : 1200, mo)}</section>`);
+const chuong = (so, ten, mo, notes, anh) => S.push(`<section class="s nen-dao" data-trans="fade" data-notes="${esc(notes)}">${anh ? (typeof anh === "string" ? anh : anhNua(...anh)) : ""}${t("ch-so", 120, 260, 600, so)}<h1 class="ch-t" data-t data-tieu-de style="left:120px;top:520px;width:${anh ? 800 : 1500}px">${esc(ten)}</h1>${t("ch-m", 120, anh ? 760 : 660, anh ? 760 : 1200, mo)}</section>`);
 const truc = (y, x0 = 120, w = 1680) => `<div class="truc" style="left:${x0}px;top:${y}px;width:${w}px"></div>`;
 const moc = (x, y, dam) => `<div class="moc ${dam ? "dam" : ""}" style="left:${x - 15}px;top:${y - 12}px"></div>`;
 const bang = (cols, rows, x, y, w, cls = "", on = -1, kieu = "T3") => `<div class="bang ${cls}" data-bang="${kieu}" style="left:${x}px;top:${y}px;width:${w}px"><div class="h">${cols.map((c) => `<b data-t>${esc(c)}</b>`).join("")}</div>${rows.map((r, k) => `<div class="r ${k === on ? "on" : ""}">${r.map((c, j) => `<b data-t class="${j ? (c === "Có" ? "co" : c === "Không" ? "khong" : "") : "dau"}">${esc(c)}</b>`).join("")}</div>`).join("")}</div>`;
@@ -139,7 +139,7 @@ sl("3.2 · Theo kỹ thuật bảo hiểm", "Phân bổ chi ngay, dồn tích t�
 sl("3.2 · Theo đối tượng", "Ba nhóm theo đối tượng", [["nha", "Bảo hiểm tài sản", "đối tượng là tài sản"], ["nv-hoc", "Bảo hiểm con người", "tuổi thọ, tính mạng, sức khoẻ, khả năng lao động"], ["vaCham", "Bảo hiểm TNDS", "trách nhiệm dân sự của người được BH với người thứ ba"]].map(([h, a, b], k) => { const x = 120 + k * 580;
   return `${img(h, h === "vaCham" ? "Xe của người được bảo hiểm đâm vào xe của người thứ ba" : a, h === "vaCham" ? x + 20 : x + 60, h === "vaCham" ? 450 : 270, h === "vaCham" ? 500 : 420)}${vach(x, 680, 540)}${khoi(x, 700, 540, a, b)}`; }).join("") + t("chu", 120, 940, 1680, "Luật hiện hành: 3 loại hình — nhân thọ, sức khoẻ, phi nhân thọ (Điều 7); 5 loại hợp đồng (Điều 15)."), nc(18));
 // 20 chương 03
-chuong("03", "Hợp đồng bảo hiểm", "Khái niệm, tài liệu, chủ thể, các con số, phí và thời hạn", nc(19));
+chuong("03", "Hợp đồng bảo hiểm", "Khái niệm, tài liệu, chủ thể, các con số, phí và thời hạn", nc(19), `<div class="khung-sang" style="left:1000px;top:140px;width:800px;height:800px"></div><img data-l="hd-lon" data-alt="Tờ hợp đồng bảo hiểm có chữ ký và con dấu" data-lap src="asset/hopDong.svg" style="position:absolute;left:1060px;top:180px;width:700px">`);
 // 21 định nghĩa HĐBH — K2
 S.push(`<section class="s" data-trans="fade" data-notes="${esc(nc(20))}">${t("kk", 120, 96, 900, "3.3 · Khái niệm")}${t("td", 120, 136, 900, "Hợp đồng bảo hiểm là gì", "data-tieu-de")}
 <div class="dinh-nghia" style="left:120px;top:330px;width:880px"><b data-t>“Hợp đồng bảo hiểm là sự thoả thuận giữa bên mua bảo hiểm và doanh nghiệp bảo hiểm, …, theo đó bên mua bảo hiểm phải <u>đóng phí bảo hiểm</u>, doanh nghiệp bảo hiểm, … phải <u>bồi thường, trả tiền bảo hiểm</u> theo thỏa thuận trong hợp đồng.”</b></div>
@@ -171,7 +171,7 @@ ${t("chu", 120, 860, 1680, "Định nghĩa của giáo trình. Luật chỉ yêu
 // 29 thở
 tho("Phí chắc chắn đổi lấy [bồi thường khi có rủi ro]", "Phần 4: chính doanh nghiệp bảo hiểm cũng chuyển bớt rủi ro — tái bảo hiểm.", "Slide thở trước phần tái bảo hiểm.", img("bt-chia", "Biểu tượng chia rủi ro: một phần đi tiếp sang doanh nghiệp nhận tái", 1300, 300, 440));
 // 30 chương 04
-chuong("04", "Tái bảo hiểm", "Doanh nghiệp bảo hiểm cũng chuyển bớt rủi ro — và hai bài tập tính", nc(28));
+chuong("04", "Tái bảo hiểm", "Doanh nghiệp bảo hiểm cũng chuyển bớt rủi ro — và hai bài tập tính", nc(28), `<div class="khung-sang" style="left:960px;top:200px;width:880px;height:680px"></div><img data-l="anh-tau-1646" data-alt="Tranh in: ba con tàu gặp bão trên biển, năm 1646" src="anh/tau-1646-dao.jpg" style="position:absolute;left:1000px;top:240px;width:800px;height:560px">${t("chu-anh", 1000, 820, 800, "Ba con tàu gặp bão, tranh in 1646 · Thư viện Quốc hội Hoa Kỳ, không hạn chế công bố")}`);
 // 31 tái BH — K3
 sl("3.4 · Khái niệm", "Tái bảo hiểm: chuyển tiếp một phần rủi ro", `${img("nguoi", "Bên mua bảo hiểm", 150, 330, 360)}${img("toa", "DNBH gốc", 780, 330, 380)}${img("toaNhan", "DN nhận tái", 1420, 360, 340)}
 ${lop(ve(muiTen(520, 600, 740, 600, C.mua) + muiTen(1180, 600, 1400, 600, C.nhan)), "Mũi tên: rủi ro và phí đi từ bên mua tới DNBH gốc, rồi một phần sang DN nhận tái")}
@@ -219,7 +219,7 @@ CH.forEach(([q, ds], k) => sl(`Câu hỏi tức thì · ${k + 1}/5`, q, `${k ===
 // 46 tổng kết — thở
 tho("BHTM: [phí chắc chắn] đổi cam kết bồi thường", "Bốn phần đã đi qua, và hai bài tập tái bảo hiểm.", nc(44), [["icon-bulb", "Khái niệm, năm nguyên tắc"], ["icon-category", "Phân loại theo pháp lý, kỹ thuật, đối tượng"], ["icon-file-certificate", "Hợp đồng: chủ thể, tài liệu, số tiền, phí, thời hạn"], ["icon-arrows-split", "Tái bảo hiểm: số thành, mức dôi, vượt mức"]].map(([ic, a], k) => `${img(ic, a, 1040, 230 + k * 190, 110)}${t("tk-dong", 1180, 254 + k * 190, 640, a)}`).join(""));
 // 47 kết
-S.push(`<section class="s nen-dao" data-trans="fade" data-notes="${esc(nc(45))}">${t("ch-m", 120, 420, 900, "Bảo hiểm thương mại · Chương 3")}<h1 class="ch-t" data-t data-tieu-de style="left:120px;top:490px;width:1300px">Còn tiếp: Chương 4</h1></section>`);
+S.push(`<section class="s nen-dao" data-trans="fade" data-notes="${esc(nc(45))}"><div class="khung-sang" style="left:1180px;top:120px;width:620px;height:840px"></div><img data-l="nv-ket" data-alt="Người học bước tiếp sang chương sau" data-lap src="asset/nv-duoc-bh.svg" style="position:absolute;left:1330px;top:170px;width:360px">${t("ch-m", 120, 420, 900, "Bảo hiểm thương mại · Chương 3")}<h1 class="ch-t" data-t data-tieu-de style="left:120px;top:490px;width:960px">Còn tiếp: Chương 4</h1></section>`);
 
 // =================== HỆ NỀN (thiet-ke/he-thong.md mục Hệ nền) ===================
 // N2 đậm: mở chương, kết, câu thở, trích luật, số lớn · N3: bìa, định nghĩa (khối nhạt), dải tiêu đề cho slide số liệu / trục · N1: kem + hoạ tiết đổi góc
@@ -282,6 +282,7 @@ section.s.nen-dao{background:#0F5C55;color:#fff}.ch-so{font:800 200px/1 'Be Viet
 .so-to{font:800 340px/0.85 'Be Vietnam Pro';color:#F6F1E7;letter-spacing:-.05em}.don-vi{font:800 64px/1 'Be Vietnam Pro';color:#E8A33D}.th-sang{font:400 32px/1.45 'Be Vietnam Pro';color:#CFE5E0}
 .the-sang{position:absolute;background:#F6F1E7;border-radius:24px}.nen-dao .khoi.toi b{color:#0F5C55}.nen-dao .khoi.toi span{color:#3A4846}
 .mang-trang,.mang-nhat,.mang-tron,.mang-be{position:absolute}.mang-trang{background:#FFFFFF;border-radius:28px;box-shadow:0 14px 34px rgba(29,43,42,.07)}.mang-nhat{background:#E4EFEC;border-radius:28px}.mang-tron{background:#E4EFEC;border-radius:50%}.mang-be{background:#EBE2D0}
+.khung-sang{position:absolute;background:#F6F1E7;border-radius:32px}.nen-dao .khung-sang ~ .chu-anh{background:#062B27}
 .tk-dong{font:600 34px/1.35 'Be Vietnam Pro';color:#F6F1E7}
 .dai-td{position:absolute;left:0;top:0;width:1920px;height:300px;background:#D7E7E3}
 .nen-dao em{color:#E8A33D}.nen-dao .tho{color:#fff}.nen-dao .tho-phu,.nen-dao .dan{color:#CFE5E0}.nen-dao .kk{color:#F5CD8C}.nen-dao .td{color:#fff}
