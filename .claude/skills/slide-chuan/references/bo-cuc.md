@@ -30,3 +30,18 @@ Làm 6–8 slide mẫu phủ các bố cục chính (bìa, mở phần, sơ đ�
 - Đặt 9 slide cạnh nhau (ảnh tổng): thấy > 2 "giọng" hình (ảnh thật + hoạt hình + đồ hoạ phẳng…) → hổ lốn.
 - Mỗi slide một kiểu thẻ / bo góc / bóng khác nhau; tiêu đề nhảy chỗ; màu mới xuất hiện ở một slide.
 - Có thứ chỉ để "lấp chỗ trống" (hoạ tiết, nhân vật đứng không chở ý, thẻ trống).
+
+## 6. Ngữ pháp hình — chi tiết làm nên điểm Thẩm mỹ 4 (vòng duyệt Ch3, 15/11/2026)
+Viết thành hằng số / hàm trong `deck.js`, không để từng slide tự chọn:
+- **Bố cục nội dung**: nhãn mục → tiêu đề → **dòng phụ đề một câu chốt ý luôn có** (hàm bố cục báo lỗi khi thiếu) → vùng nội dung → dòng nguồn ở đáy. Thiếu phụ đề thì khoảng trống dưới tiêu đề dao động giữa các slide, mắt thấy "lệch".
+- **Tiêu đề là câu khẳng định**, không là nhãn: "Hai bên ký, bốn chủ thể liên quan" thay cho "Bốn chủ thể của hợp đồng"; "Phí gồm phí thuần và phụ phí" thay cho "Phí bảo hiểm".
+- **Nút sơ đồ đúng hai cỡ** (vd. `R1 = 130`, `R2 = 90`): nút chính / nút phụ. Vòng tròn đủ cỡ 180–420 px là lỗi nhất quán.
+- **Hai loại đường**: quan hệ (dòng tiền, chuyển giao) = mũi tên màu chủ, nét chuẩn, **có nhãn sát**; cấu trúc (cây, nối chủ thể, trục) = màu chữ phụ, 2 px, không đầu mũi tên. Màu kẻ nhạt chỉ để kẻ bảng và khung.
+- **Câu chốt**: phụ đề đặt ngay dưới câu (≈ 36 px), cả cụm căn giữa theo chiều dọc (flex) — không đặt hai khối ở hai toạ độ cố định cách nhau 200+ px.
+- **Bảng**: đầu cột đậm màu chủ, cỡ ≥ thân; thân chữ thường, chỉ cột đầu đậm; ô ≤ 2 dòng — căn cứ "(Điều… khoản…)" dời xuống dòng nguồn dưới bảng.
+- **Nghĩa màu cố định**: đỏ chỉ cho rủi ro / "không"; câu hỏi bài tập dùng màu chủ. Chấm tô đặc, màu nhấn phải có nghĩa và có chú giải ("● đang có hiệu lực") — không thì bỏ tô.
+- **Nhãn đoạn trên thanh / cột**: đặt ở tâm đoạn, cùng màu đoạn, vạch dẫn ngắn — không đặt ở ranh giới hai đoạn.
+- **Cột đều**: các cột lá / bước chia đều theo tâm (vd. 330 / 750 / 1170 / 1590), hộp mô tả hẹp hơn khoảng cách tâm ≥ 40 px.
+- **Ảnh quét**: cắt sát tranh, bỏ viền giấy và viền máy quét trước khi tô hai màu; chú thích ảnh neo theo đáy (`bottom`), không theo `top`, để chú thích hai dòng không tràn.
+- **Icon**: chọn icon trọn hình ở cỡ lớn (car-crash bị cắt nửa trông như hỏng → `scale` cho trách nhiệm); không có icon tô đặc duy nhất giữa bộ icon nét.
+

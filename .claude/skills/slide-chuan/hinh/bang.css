@@ -12,13 +12,13 @@ section.s { --tb-chu: #1D2B2A; --tb-nhan: #0F5C55; --tb-nhat: #DDEEE9; --tb-ke: 
 .tb[data-cot="1-2-2"] .tb-h, .tb[data-cot="1-2-2"] .tb-r { grid-template-columns: 1fr 2fr 2fr; grid-auto-flow: row; }
 .tb[data-cot="1-2-1-2"] .tb-h, .tb[data-cot="1-2-1-2"] .tb-r { grid-template-columns: 1fr 2fr 1fr 2fr; grid-auto-flow: row; }
 .tb-h > b, .tb-r > b { display: block; padding: 18px 24px; }
-.tb-h > b { font: 700 26px/1.3 'Be Vietnam Pro'; letter-spacing: .02em; color: var(--tb-phu); }
+.tb-h > b { font: 700 28px/1.3 'Be Vietnam Pro'; letter-spacing: 0; color: var(--tb-nhan); }   /* đầu cột không nhỏ, không nhạt hơn thân bảng (vòng duyệt Ch3) */
 .tb-r > b:first-child { font-weight: 700; }
 .tb-so-phai .tb-h > b:not(:first-child), .tb-so-phai .tb-r > b:not(:first-child) { text-align: right; font-variant-numeric: tabular-nums; }
 .tb-r.on > b { background: #FCE9C6 !important; font-weight: 700; }
 
 /* T2 — chỉ kẻ ngang: tra cứu 4–6 hàng, đề bài có số */
-.tb-ke .tb-h > b { border-bottom: 4px solid var(--tb-chu); color: var(--tb-chu); }
+.tb-ke .tb-h > b { border-bottom: 4px solid var(--tb-chu); color: var(--tb-nhan); }
 .tb-ke .tb-r > b { border-bottom: 2px solid var(--tb-ke); }
 
 /* T1 — đầu cột màu theo cột: mỗi cột một sắc nhạt, thân trắng kẻ mảnh */
