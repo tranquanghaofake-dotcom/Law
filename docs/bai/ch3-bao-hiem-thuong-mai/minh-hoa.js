@@ -184,3 +184,14 @@ function unDraw(D, ten, x, y, w, doi = {}) {
   return { svg: `<svg x="${x}" y="${y}" width="${w}" height="${f1(h)}" viewBox="${vb.join(" ")}">${body}</svg>`, h };
 }
 module.exports.unDraw = unDraw;
+
+// đám mây mưa có tia sét — RỦI RO (đỏ = rủi ro): cx, cy tâm mây, s bề rộng
+function mayMua(cx, cy, s, { may = P.ke, may2 = P.x3, mua = P.x2, set = P.d1 } = {}) {
+  const k = (a) => f1(a * s);
+  let o = `<ellipse cx="${cx}" cy="${cy + k(0.1)}" rx="${k(0.5)}" ry="${k(0.16)}" fill="${may2}"/>`
+    + [[-0.24, 0.02, 0.2], [0.02, -0.08, 0.26], [0.26, 0.03, 0.19]].map(([dx, dy, r]) => `<circle cx="${cx + k(dx)}" cy="${cy + k(dy)}" r="${k(r)}" fill="${may}"/>`).join("")
+    + `<rect x="${cx - k(0.44)}" y="${cy}" width="${k(0.88)}" height="${k(0.16)}" rx="${k(0.08)}" fill="${may}"/>`;
+  for (let i = 0; i < 6; i++) { const x = cx - k(0.36) + i * k(0.14); o += `<path d="M${x} ${cy + k(0.24 + (i % 2) * 0.06)} l${k(-0.05)} ${k(0.16)}" stroke="${mua}" stroke-width="${k(0.025)}" stroke-linecap="round"/>`; }
+  return o + `<path d="M${cx + k(0.06)} ${cy + k(0.14)} l${k(-0.1)} ${k(0.2)} h${k(0.08)} l${k(-0.07)} ${k(0.18)} l${k(0.17)} ${k(-0.24)} h${k(-0.08)} l${k(0.06)} ${k(-0.14)} Z" fill="${set}"/>`;
+}
+module.exports.mayMua = mayMua;

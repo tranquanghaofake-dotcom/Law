@@ -68,3 +68,7 @@ Sau khi chữa hổ lốn bằng cắt bớt, deck thành sạch nhưng nghèo (
 - Thẻ nổi đè lên mép ảnh (bìa: "Chuyển giao rủi ro tài chính qua hợp đồng") — phá khung, nối chữ với ảnh.
 - Lấp lánh 1 lớn + 2 nhỏ, lưới chấm: chỉ ở góc trống, không dưới chữ.
 
+## 9. Mỗi phần một slide HERO (Chương 3, vòng 6)
+Người duyệt: "qua cổng nhưng chưa wow như mẫu" — mẫu thương mại luôn có vài slide **dừng mắt**. Luật: từ một slide mở phần tới trước slide mở phần kế tiếp (phần ≥ 3 slide) phải có **≥ 1 slide hero** — ảnh tràn mép phủ dải màu chủ với chữ sáng (vd. trích định nghĩa trên ảnh ký hợp đồng), hoặc một cảnh / hình chính ≥ 50 % slide. Chọn slide mang **ý đắt nhất** của phần (định nghĩa, câu chốt, con số then chốt), không chọn slide nhiều chữ. Cảnh nên **kể chuyện bằng vật**: đám mây mưa có tia sét đỏ trên đầu người mua = rủi ro; hợp đồng ở giữa; doanh nghiệp bên kia — nhìn là hiểu "chuyển rủi ro qua hợp đồng".
+Máy: `scripts/phong_phu.js` báo ◇ khi một phần thiếu hero; slide hero tự nhận (ảnh tràn mép / hình ≥ 50 %) hoặc khai `data-hero` trên `<section>`.
+

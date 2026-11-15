@@ -109,10 +109,11 @@ if (process.env.CONG) {
     + [["Số đông", 120, 830], ["Rủi ro bảo hiểm", 300, 830], ["Quyền lợi bảo hiểm", 120, 900], ["Phân tán rủi ro", 486, 900], ["Trung thực tuyệt đối", 120, 970]].map(([s, x, y], k) => chip(s, x, y, "chip vang nt", A("rise", 1000 + k * 120, 400))).join(""), { trans: "push", dur: 700 });
 
   // ---- 3 SƠ ĐỒ — người mua ↔ hợp đồng ↔ DNBH, từng bước hiện ----
-  { const G0 = 830, hn = udH("legal-counsel_kdnh", 450), hh = udH("handshake-deal_nwk6", 380);
+  { const G0 = 830, hn = udH("legal-counsel_kdnh", 380), hh = udH("handshake-deal_nwk6", 380);
     sec2("noi-dung", "sang", nc(8), nen(NEN.dat(G0))
       + dau("3.1 · Khái niệm", "BHTM: [chuyển rủi ro] qua hợp đồng", "Phí trả chắc chắn; bồi thường chỉ khi rủi ro xảy ra.", 8)
-      + ud("legal-counsel_kdnh", 130, Math.round(G0 - hn), 450, "Minh hoạ: người mua bảo hiểm cầm giấy yêu cầu", A("slide", 600, 600))
+      + lop(mh.mayMua(440, 362, 180), 330, 296, 230, 160, "Minh hoạ: đám mây mưa có tia sét trên đầu người mua — rủi ro có thể xảy ra", "phang", `${A("drop", 450, 600)} data-em="teeter" data-emat="1300"`)
+      + ud("legal-counsel_kdnh", 150, Math.round(G0 - hn), 380, "Minh hoạ: người mua bảo hiểm cầm giấy yêu cầu", A("slide", 600, 600))
       + ud("handshake-deal_nwk6", 770, Math.round(665 - hh / 2), 380, "Minh hoạ: cái bắt tay trên bản hợp đồng — giao kết hợp đồng bảo hiểm", A("pop", 1000, 500))
       + lop(`<rect x="1370" y="${G0 - 4}" width="340" height="14" rx="7" fill="${P.x3}"/>` + mh.toaVP(1540, G0, 290), 1360, 400, 360, 450, "Minh hoạ: toà văn phòng doanh nghiệp bảo hiểm có huy hiệu ô", "phang", A("slide-r", 1400, 600))
       + lop(mh.muiKhoi(620, 1340, 490, 30), 610, 450, 740, 80, "Mũi tên: phí bảo hiểm đi từ bên mua tới doanh nghiệp bảo hiểm", "phang", A("wipe", 1800, 600)) + chip("Phí · luôn trả", 880, 384, "chip", A("fade", 2100, 400))
@@ -161,13 +162,12 @@ if (process.env.CONG) {
       + T("nguon", 120, 1000, 1680, "Luật KDBH 08/2022/QH15: đúng giá trị — Điều 16 khoản 3 · dưới — Điều 48 · trên — Điều 47 · trùng — Điều 49."), { ex: "data-khong-hinh" });
   }
 
-  // ---- 6 TRÍCH LUẬT — ảnh ký hợp đồng (panel 720) ----
-  sec2("trich", "chia", nc(20), chup("trich.jpg", 0, 0, PANEL, 1080, "Ảnh: bàn tay ký vào bản hợp đồng", A("fade", 0, 800))
-    + chip("Giao kết hợp đồng bảo hiểm", 120, 960, "chip vang", A("rise", 500, 400))
-    + chip("3.3 · Khái niệm", 820, 80, "chip", A("fade", 200, 400)) + `<h1 class="td" data-t data-tieu-de ${A("rise", 300, 600)} style="left:820px;top:132px;width:980px">${em("Bên mua [đóng phí], DNBH {bồi thường} theo hợp đồng")}</h1>` + T("so-trang", 1600, 84, 200, `21 / ${TONG}`)
-    + lop([0, 70].map((d) => `<circle cx="${838 + d}" cy="400" r="26" fill="${P.v2}"/><path d="M${812 + d} 400 Q${808 + d} 350 ${852 + d} 332 L${856 + d} 344 Q${830 + d} 358 ${836 + d} 390 Z" fill="${P.v2}"/>`).join(""), 800, 322, 160, 110, "Dấu ngoặc kép", "phang", `data-lap ${A("pop", 700, 400)}`)
-    + `<div class="trich" data-t ${A("fade", 900, 900)} style="left:878px;top:450px;width:922px">Hợp đồng bảo hiểm là sự thỏa thuận giữa bên mua bảo hiểm và doanh nghiệp bảo hiểm, …, theo đó bên mua bảo hiểm phải <mark class="xanh">đóng phí bảo hiểm</mark>, doanh nghiệp bảo hiểm, … phải <mark>bồi thường, trả tiền bảo hiểm</mark> theo thỏa thuận trong hợp đồng.</div>`
-    + chip("Khoản 16 Điều 4 · Luật KDBH 08/2022/QH15", 880, 850, "chip vien", A("rise", 1700, 400)) + T("dan", 878, 920, 922, "Hợp đồng phải lập thành văn bản (Điều 18).", A("fade", 1900, 400)));
+  // ---- 6 TRÍCH LUẬT — HERO: ảnh ký hợp đồng tràn mép, dải màu chủ phủ trái, câu trích chữ sáng ----
+  sec2("trich", "anh", nc(20), chup("trich-full.jpg", 0, 0, 1920, 1080, "Ảnh: bàn tay ký vào bản hợp đồng, phủ dải màu chủ bên trái", A("fade", 0, 900))
+    + chip("3.3 · Khái niệm", 120, 80, "chip vang", A("fade", 200, 400)) + `<h1 class="td sang" data-t data-tieu-de ${A("rise", 300, 600)} style="left:120px;top:132px;width:1100px">${em("Bên mua [đóng phí], DNBH {bồi thường} theo hợp đồng")}</h1>` + T("so-trang sang", 1600, 84, 200, `21 / ${TONG}`)
+    + lop([0, 70].map((d) => `<circle cx="${138 + d}" cy="400" r="26" fill="${P.v2}"/><path d="M${112 + d} 400 Q${108 + d} 350 ${152 + d} 332 L${156 + d} 344 Q${130 + d} 358 ${136 + d} 390 Z" fill="${P.v2}"/>`).join(""), 100, 322, 160, 110, "Dấu ngoặc kép", "phang", `data-lap ${A("pop", 700, 400)}`)
+    + `<div class="trich sang" data-t ${A("fade", 900, 900)} style="left:176px;top:450px;width:940px">Hợp đồng bảo hiểm là sự thỏa thuận giữa bên mua bảo hiểm và doanh nghiệp bảo hiểm, …, theo đó bên mua bảo hiểm phải <mark class="xanh">đóng phí bảo hiểm</mark>, doanh nghiệp bảo hiểm, … phải <mark>bồi thường, trả tiền bảo hiểm</mark> theo thỏa thuận trong hợp đồng.</div>`
+    + chip("Khoản 16 Điều 4 · Luật KDBH 08/2022/QH15", 180, 880, "chip vien", A("rise", 1700, 400)) + T("dan sang", 178, 950, 940, "Hợp đồng phải lập thành văn bản (Điều 18).", A("fade", 1900, 400)), { ex: "data-hero" });
 
   // ---- 7 SO SÁNH — hai thẻ, đầu thẻ có minh hoạ unDraw ----
   { const H = [["Vì sao có", "Bảo vệ lợi ích công cộng", "Theo nhu cầu người mua"], ["Ví dụ", "Xe cơ giới, cháy nổ, xây dựng…", "Nhân thọ, sức khoẻ, vật chất xe…"], ["Lưu ý", "Không từ chối người đủ điều kiện", "Tự chọn sản phẩm và mức"]];
@@ -197,7 +197,8 @@ if (process.env.CONG) {
   ghi(path.join(D, "style.css"), `section.s{background:${P.nen};color:${P.muc}}section.s.dam{background:${P.x1};color:${P.nen}}
 section.s > div, section.s > h1{position:absolute}
 [data-t]{text-wrap:pretty}.td,.bia-td,.mp-t,.hoi-td{text-wrap:balance}
-em{font-style:normal;color:${P.x2}}em.v{color:${P.v1}}.dam em{color:${P.v3}}
+em{font-style:normal;color:${P.x2}}em.v{color:${P.v1}}.dam em,.anh em{color:${P.x3}}.anh em.v{color:${P.v3}}
+section.s.anh{background:${P.x1}}.td.sang{color:${P.nen}}.so-trang.sang,.dan.sang{color:${P.x4}}.trich.sang{color:${P.nen}}.trich.sang mark.xanh{background:${P.x2};color:${P.nen}}.trich.sang mark{background:${P.v3};color:${P.muc}}
 .giua{display:flex;align-items:center}
 .chip{font:700 28px/1 'Be Vietnam Pro';letter-spacing:.08em;text-transform:uppercase;color:${P.nen};background:${P.x1};padding:11px 18px 10px;border-radius:6px;white-space:nowrap;width:auto !important}
 .chip.vang{background:${P.v3};color:${P.muc}}.chip.cot{width:156px !important;text-align:center;padding:10px 0;letter-spacing:0;text-transform:none;font-size:26px}

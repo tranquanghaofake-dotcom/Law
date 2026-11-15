@@ -23,3 +23,10 @@ test("ngưỡng ghi đè được; thẻ khai phongPhu:false hoặc không có t
   assert.deepStrictEqual(danhGiaPhongPhu([sl(1, 0.01, true)], { ...THE, phongPhu: false }).loi, []);
   assert.deepStrictEqual(danhGiaPhongPhu([sl(1, 0.01, true)], null).loi, []);
 });
+
+test("mỗi phần (từ slide mở phần tới trước mở phần sau) cần ≥ 1 slide hero; thiếu thì báo", () => {
+  const s = (k, mau, hero) => ({ slide: k, mau, phu: 0.4, tron: false, hero });
+  const r = danhGiaPhongPhu([s(1, "bia", true), s(2, "mo-phan", true), s(3, "noi-dung", false), s(4, "bang", false), s(5, "noi-dung", false), s(6, "mo-phan", true), s(7, "noi-dung", true)], THE);
+  const all = r.loi.join("\n"); assert.match(all, /◇ phong phú: phần mở ở slide 2 .*không có slide hero/); assert.doesNotMatch(all, /slide 6 /);
+});
+
