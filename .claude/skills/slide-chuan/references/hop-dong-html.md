@@ -25,6 +25,7 @@ Thiết kế **tự do** — bất kỳ HTML / CSS / SVG nào Chromium vẽ đư
 | khối trang trí có nền (vạch kẻ giữa các dòng, ô màu) đặt **trên** thẻ / panel là lớp ảnh | gắn `data-l` + `data-alt` cho chính khối đó | khối không phải lớp ảnh, không phải hộp chữ bị vẽ vào ảnh nền slide → thẻ (lớp ảnh) che mất trong PPTX dù HTML vẫn thấy (máy: `kiem_html` mục 8) |
 | (không gắn) | gộp vào **ảnh nền** của slide | nền, mảng màu, hoạ tiết tĩnh |
 - `data-tieu-de` trên hộp chữ tiêu đề → placeholder tiêu đề (trình đọc màn hình, mục lục, Check Accessibility). Bắt buộc mỗi slide.
+- `data-trich` trên hộp chữ trích nguyên văn (luật, giáo trình) → `dung.js` đối chiếu từng ký tự với `noi-dung.md` của bài (`scripts/trich_nguyen_van.js`, lỗi ◇ trích); phần lược bỏ ghi “…”. Câu tự diễn đạt không khai.
 - `data-alt="…"` trên mỗi `data-l`: mô tả nội dung; hình trang trí ghi `data-alt="Hình trang trí"` (PowerPoint đánh dấu decorative).
 - Bảng / số liệu: dùng bộ thành phần `hinh/bang.css` (nạp sẵn; danh sách lớp ở `trinh-bay-du-lieu.md` mục 3). Ô chữ vẫn gắn `data-t`; ảnh trong `.tb-ci` cứ để `data-l`.
 - Khai báo cho máy đo đa dạng (`scripts/da_dang.js`): `<section data-nen="N1|N2|N3|N4|N5|N6">` loại nền (`he-nen.md`) · `data-bang="T1…T13"` trên khối bảng (`trinh-bay-du-lieu.md`) · `data-khong-hinh` trên `<section>` cố ý chỉ có chữ (mục lục, câu hỏi) — miễn phép đo tiêu điểm · `data-lap` trên `data-l` cố ý lặp cùng vai (motif chủ đề, nhân vật xuyên suốt). Hoạ tiết nền là `data-l` có `data-alt="Hình trang trí"` — máy tính vị trí góc của nó vào nền, không tính vào asset lặp.

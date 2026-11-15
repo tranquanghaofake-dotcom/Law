@@ -7,7 +7,8 @@
 //   asset/, anh/    hình tự vẽ, ảnh thật — đường dẫn trong HTML tính từ thư mục bài
 // Đa dạng (nền, asset lặp, kiểu bảng): scripts/da_dang.js · thẻ phong cách asset (thiet-ke/phong-cach.json): scripts/kiem_phong_cach.js — lỗi ◇ cũng là lỗi.
 // Bộ thành phần bảng T1–T13: hinh/bang.css (nạp sẵn). Bảng xem thử asset: <tên>_lop/asset.jpg.
-// Ra: <tên>.pptx, <tên>_lop/ (deck.html, h-XX.jpg từng slide, tong-N.jpg ảnh tổng 3×3, soat-*.jpg so HTML với PPTX qua LibreOffice)
+// Ra: <tên>.pptx, <tên>_lop/ (deck.html, h-XX.jpg từng slide, tong-N.jpg ảnh tổng 3×3, soat-*.jpg so HTML với PPTX qua LibreOffice,
+//   chu.md chữ từng slide + lời nói cho thẩm định học thuật / biên tập câu chữ). Hộp [data-trich] đối chiếu từng ký tự với noi-dung.md (scripts/trich_nguyen_van.js).
 // Mã thoát: 0 sạch · 1 còn lỗi (mọi ⚠ đều là lỗi — mục tiêu "càng ít lỗi càng tốt"; --nhap để dựng xem trước dù còn lỗi) · 2 không dựng được.
 const fs = require("fs"), path = require("path");
 const HINH = path.join(__dirname, "..", "hinh");
@@ -86,10 +87,15 @@ async function dung(dir, { ten, soat = true, nhap = false } = {}) {
   const tong = await anhTong(work);
   const ba = await bangAsset(dir, html, work);
   loi.push(...require("./kiem_phong_cach").kiemPhongCach(dir, ba.srcs));
+  // chữ từng slide → <tên>_lop/chu.md (bản đọc cho thẩm định học thuật + biên tập câu chữ); trích nguyên văn đối chiếu noi-dung.md
+  const { docChu, vietChu } = require("./chu_slide"), chuDs = docChu(dir), fChu = path.join(work, "chu.md"); fs.writeFileSync(fChu, vietChu(chuDs));
+  const fNguon = path.join(dir, "noi-dung.md"), tr = require("./trich_nguyen_van").kiemTrich(chuDs, fs.existsSync(fNguon) ? fs.readFileSync(fNguon, "utf8") : null); loi.push(...tr.loi);
   if (ba.anh) console.log(`✓ Bảng xem thử asset (${ba.srcs.length} hình — soát cùng một phong cách): ${ba.anh}`);
   if (dd) console.log(dd.bang);
   if (pp && pp.tom) console.log(pp.tom);
   if (dc && dc.tom) console.log(dc.tom);
+  if (tr.tom) console.log(tr.tom);
+  console.log(`✓ Chữ từng slide (cho thẩm định học thuật, biên tập câu chữ): ${fChu}`);
   console.log(`✓ ${res.slides} slide → ${outPath} · ${res.text} hộp chữ · ${res.pics} lớp ảnh · ${res.fx} hiệu ứng · ${res.morph} Morph`);
   console.log(`✓ Ảnh tổng (xem bằng mắt trước khi giao): ${tong.join(", ")}`);
   if (soat) console.log(`✓ Tờ soát HTML ↔ PPTX: ${path.join(work, "soat-*.jpg")}`);

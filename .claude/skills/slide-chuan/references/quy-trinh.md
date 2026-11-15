@@ -37,6 +37,12 @@ Bảng, mỗi slide một dòng:
 - Mỗi slide MỘT ý; hai ý → hai slide. Mỗi mục tiêu có slide + câu kiểm tra. Tổng giây ≈ thời lượng (chừa 10 %).
 - Bằng chứng hình chọn theo **câu hỏi của người nghe**, không theo hình thức tài liệu: quan hệ các bên → sơ đồ; so sánh → hai cột / thước chung; số liệu → bảng hoặc biểu đồ đúng tỉ lệ; thời gian → trục; quy trình → bước. Hình phải cho thấy chính sự vật, không ẩn dụ.
 
+## 3b. Biên tập câu chữ → thẩm định học thuật (trước điểm duyệt B) → `bien-tap.md`, `tham-dinh.md`
+Hai agent độc lập, mẫu brief ở `vai-tro.md`:
+1. **Biên tập câu chữ** (`sonnet`): câu trên slide ngắn, rõ, thuật ngữ nhất quán; không đổi nghĩa, không đụng câu trích. Áp câu mới vào `kich-ban.md`.
+2. **Thẩm định học thuật** (`opus`): đối chiếu từng câu với `noi-dung.md`, tài liệu gốc, văn bản luật — đúng · đủ ý (điều kiện, ngoại lệ, chủ thể, cách tính thời hạn) · trích nguyên văn · không vượt nguồn · dễ hiểu nhầm. Sai / thiếu ý → sửa rồi thẩm định lại câu đó.
+Ưu tiên khi xung đột: **đúng > đủ > dễ hiểu > hay**. Điều thẩm định ghi "chưa chắc" → mục Điều chưa chắc, hỏi người dùng ở điểm duyệt B.
+
 **Điểm duyệt B.**
 
 ## 4. Tham chiếu + hệ thống thiết kế + bản đồ nhịp → `thiet-ke/`
@@ -68,10 +74,12 @@ Bìa · một slide khái niệm · một sơ đồ / so sánh · một slide s�
 - Mỗi slide là một thể hiện của một bố cục mẫu đã qua cổng thẩm mỹ (`bo-cuc.md`); `<section data-mau="…">`. Không thiết kế tự do từng slide — quy ước kỹ thuật ở `hop-dong-html.md`. Bảng / số liệu dùng **bộ thành phần** `hinh/bang.css` (`.tb` + biến thể T1–T13, màu đặt bằng biến `--tb-*` trong `style.css` của bài) để có độ hoàn thiện cao sẵn; chỉ tự viết CSS bảng khi không kiểu nào hợp.
 - `node scripts/dung.js <bài>` sau mỗi 5–8 slide; sửa hết `⚠` trước khi làm tiếp (lỗi nhỏ dồn lại khó sửa). Đọc dòng **Đa dạng** và **dải nền** máy in ra, so với `nhip.md`; lỗi ◇ (nền, asset lặp, kiểu bảng) cũng là lỗi.
 - Lời nói từ kịch bản vào `data-notes` của `<section>`.
+- Câu trích nguyên văn (luật, giáo trình): hộp chữ khai **`data-trich`** — `dung.js` đối chiếu từng ký tự với `noi-dung.md` (◇ trích), phần lược bỏ ghi “…”. Câu tự diễn đạt không khai `data-trich` và không đặt trong ngoặc kép.
 
 ## 8. Soát (tối đa 2 vòng sửa)
 1. Máy: `dung.js` sạch.
 2. Nhìn: mở mọi `tong-N.jpg` và slide nghi ngờ (`h-NN.jpg`); đi qua `soat.md` mục 1.
+2b. **Thẩm định học thuật lần 2** trên `<tên>_lop/chu.md` (chữ thật trên slide + lời nói, `dung.js` ghi ra) — chạy song song với người duyệt độc lập; sửa xong mọi câu sai / thiếu ý mới giao.
 3. **Người duyệt độc lập**: gọi agent mới, `model: "opus"`, theo mẫu ở `vai-tro.md`; gửi kèm **tờ so sánh** (`scripts/to_so_sanh.js`: 6–10 slide tiêu biểu — bìa, mở chương, bảng, sơ đồ, số liệu — đặt cạnh mẫu tham chiếu cùng loại) và **bảng xem thử asset**; nhận bảng điểm rubric + danh sách lỗi.
 4. Sửa → dựng lại → nhìn lại. Ghi điểm, lỗi, cách sửa vào `nhat-ky.md`.
 Lỗi cần đánh đổi (cắt nội dung, đổi phong cách) → bản ghi lựa chọn gửi người dùng, không tự quyết.
