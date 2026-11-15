@@ -26,7 +26,7 @@ section.s { --tb-chu: #1D2B2A; --tb-nhan: #0F5C55; --tb-nhat: #DDEEE9; --tb-ke: 
 .tb-dau .tb-h > b { color: var(--tb-chu); border-radius: 12px 12px 0 0; }
 .tb-dau .tb-h > b:nth-child(1) { background: var(--tb-c1); } .tb-dau .tb-h > b:nth-child(2) { background: var(--tb-c2); }
 .tb-dau .tb-h > b:nth-child(3) { background: var(--tb-c3); } .tb-dau .tb-h > b:nth-child(4) { background: var(--tb-c4); }
-.tb-dau .tb-r > b { background: var(--tb-nen); border: 2px solid #ECE4D6; border-radius: 8px; }
+.tb-dau .tb-r > b { border-bottom: 2px solid var(--tb-ke); }   /* thân không đóng hộp từng ô — đóng hộp làm bảng thành lưới đủ viền */
 
 /* T3 — cột nhấn: data-nhan="2|3|4|5" = cột cần chú ý (cột phải tính, phương án chọn): đầu cột đặc, thân tô nhạt, chữ đậm */
 .tb-nhan { gap: 6px; } .tb-nhan .tb-h, .tb-nhan .tb-r { gap: 6px; }
@@ -35,13 +35,14 @@ section.s { --tb-chu: #1D2B2A; --tb-nhan: #0F5C55; --tb-nhat: #DDEEE9; --tb-ke: 
 .tb-nhan[data-nhan="2"] .tb-h > b:nth-child(2), .tb-nhan[data-nhan="3"] .tb-h > b:nth-child(3), .tb-nhan[data-nhan="4"] .tb-h > b:nth-child(4), .tb-nhan[data-nhan="5"] .tb-h > b:nth-child(5) { background: var(--tb-nhan); padding-top: 30px; margin-top: -12px; }
 .tb-nhan[data-nhan="2"] .tb-r > b:nth-child(2), .tb-nhan[data-nhan="3"] .tb-r > b:nth-child(3), .tb-nhan[data-nhan="4"] .tb-r > b:nth-child(4), .tb-nhan[data-nhan="5"] .tb-r > b:nth-child(5) { background: var(--tb-nhat); color: var(--tb-nhan); font-weight: 800; }
 
-/* T4 — có / không: ô <b class="co"> / <b class="khong"> thành viên màu; hàng xen kẽ */
+/* T4 — có / không: ô <b class="co"> / <b class="khong"> thành viên màu; hàng xen kẽ; hàng kết luận .tb-r.ket tô đậm */
 .tb-co { gap: 4px; } .tb-co .tb-h, .tb-co .tb-r { gap: 4px; }
 .tb-co .tb-h > b { background: var(--tb-chu); color: #fff; border-radius: 10px; }
 .tb-co .tb-r > b { background: var(--tb-nen); border-radius: 10px; } .tb-co .tb-r:nth-child(odd) > b { background: #FBF8F2; }
 .tb-co .tb-r > b.co, .tb-co .tb-r > b.khong { text-align: center; font-weight: 800; }
 .tb-co .tb-r > b.co { background: var(--tb-nhat) !important; color: var(--tb-co); }
 .tb-co .tb-r > b.khong { background: #F8E1DD !important; color: var(--tb-khong); }
+.tb-co .tb-r.ket > b { background: var(--tb-nhan) !important; color: #fff; font-weight: 700; }
 
 /* T5 — thẻ song song (2–4): .tb-the > .the (.noi = phương án nhấn, cao hơn ~ 12 %) > .the-t (dải tên) + .the-h (nhãn i + giá trị b) */
 .tb-the { position: absolute; display: flex; gap: 48px; align-items: flex-start; }
