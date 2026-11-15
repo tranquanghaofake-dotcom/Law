@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080"><circle cx="1920" cy="0" r="300" fill="#DDECE7"/><circle cx="1660" cy="960" r="5" fill="#E2A52E"/><circle cx="1660" cy="986" r="5" fill="#E2A52E"/><circle cx="1686" cy="960" r="5" fill="#E2A52E"/><circle cx="1686" cy="986" r="5" fill="#E2A52E"/><circle cx="1712" cy="960" r="5" fill="#E2A52E"/><circle cx="1712" cy="986" r="5" fill="#E2A52E"/><circle cx="1738" cy="960" r="5" fill="#E2A52E"/><circle cx="1738" cy="986" r="5" fill="#E2A52E"/><circle cx="1764" cy="960" r="5" fill="#E2A52E"/><circle cx="1764" cy="986" r="5" fill="#E2A52E"/><circle cx="1790" cy="960" r="5" fill="#E2A52E"/><circle cx="1790" cy="986" r="5" fill="#E2A52E"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="120 900 80 80" width="80" height="80"><rect x="120" y="900" width="80" height="80" rx="14.399999999999999" fill="#946512"/><g transform="translate(136 916) scale(2)" fill="none" stroke="#FBF7EF" stroke-width="1.500" stroke-linecap="round" stroke-linejoin="round">
+  
+  <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+  <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+  <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+</g></svg>
