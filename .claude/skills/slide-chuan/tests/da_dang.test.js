@@ -19,6 +19,13 @@ test("nền đơn điệu bị bắt: ít loại, một loại áp đảo, quá 
   assert.strictEqual(danhGia(deck(14, (k) => ({ nen: k % 7 === 6 ? "dam" : k % 7 === 3 ? "chia" : "kem" }))).loi.length, 0, "họ nền sáng ≤ 80 %, ≤ 6 liền: không lỗi");
 });
 
+test("cùng họ nền nhưng đổi góc hoạ tiết: không tính đơn điệu theo slide liền, vẫn tính tỉ lệ họ", () => {
+  const r = danhGia(deck(14, (k) => ({ ho: k % 7 === 6 ? "N2" : "N1", nen: k % 7 === 6 ? "N2" : `N1@${k % 2}` })));
+  assert.match(r.loi.join("\n"), /một họ nền chiếm 86 %/); assert.doesNotMatch(r.loi.join("\n"), /slide liền cùng nền \(/);
+  const r2 = danhGia(deck(13, (k) => ({ ho: k === 12 ? "N2" : k === 11 ? "N3" : "N1", nen: k > 10 ? "x" + k : `N1@${k % 2}` })));
+  assert.match(r2.loi.join("\n"), /11 slide liền cùng họ nền/);
+});
+
 test("asset lặp quá 3 slide bị bắt, trừ khi khai báo cố ý (lặp)", () => {
   const r = danhGia(deck(6, (k) => ({ nen: ["kem", "dam", "chia"][k % 3], asset: ["nguoi.svg", ...(k < 5 ? ["logo.svg (lặp)"] : [])] })));
   const all = r.loi.join("\n");

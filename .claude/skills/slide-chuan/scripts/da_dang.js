@@ -7,13 +7,13 @@
 // Không khai báo: nền = màu nền section + các khối ≥ 25 % diện tích (màu, ảnh chụp .jpg/.webp hoặc img data-nen-anh; lớp SVG trong suốt không tính); bảng = <table> hoặc phần tử có class "bang…".
 // Ngưỡng rút từ 54 mẫu tham chiếu (spec 2026-11-14 mục 11): một họ nền sáng 60–80 % deck, hoạ tiết đổi vị trí;
 // ≤ 6 slide liền cùng nền CÙNG vị trí hoạ tiết; mỗi hình lặp ≤ 3 slide trừ motif có vai; ≥ 6 kiểu bảng/45 slide, một kiểu ≤ 40 % số bảng.
-const NGUONG = { loaiNenToiThieu: 3, deckToiThieu: 12, tiLeNenToiDa: 0.8, lienToiDa: 6, assetToiDa: 3, bangCungKieu: 3, bangXetTiLe: 5, tiLeBangToiDa: 0.4 };
+const NGUONG = { loaiNenToiThieu: 3, deckToiThieu: 12, tiLeNenToiDa: 0.8, lienToiDa: 6, assetToiDa: 3, bangCungKieu: 3, bangXetTiLe: 5, tiLeBangToiDa: 0.4, lienHoToiDa: 10 };
 
 function thuThap() {
   const out = [];
   document.querySelectorAll("section.s").forEach((s, i) => {
     const R = s.getBoundingClientRect(), A = R.width * R.height || 1, cs = getComputedStyle(s);
-    let nen = s.dataset.nen;
+    let nen = s.dataset.nen, ho = nen ? nen.split(/[·@|]/)[0] : null;
     if (!nen) {
       const khoi = [];
       for (const el of s.querySelectorAll("*")) {
@@ -28,26 +28,33 @@ function thuThap() {
       // hoạ tiết trang trí (data-alt="Hình trang trí"): tên hình + góc đặt → cùng họ nền nhưng đổi vị trí hoạ tiết là nền khác
       const goc = [...s.querySelectorAll('img[data-l][data-alt="Hình trang trí"]')].map((im) => { const r = im.getBoundingClientRect(), cx = (r.left + r.width / 2 - R.left) / R.width, cy = (r.top + r.height / 2 - R.top) / R.height;
         return "tt:" + (im.getAttribute("src") || "").split("/").pop() + "@" + (cy < 0.5 ? "tren-" : "duoi-") + (cx < 0.5 ? "trai" : "phai"); });
-      nen = [cs.backgroundColor.replace(/\s/g, "") + (cs.backgroundImage !== "none" ? "+hoa-tiet" : ""), ...[...new Set(khoi)].sort(), ...[...new Set(goc)].sort()].join("|");
+      ho = [cs.backgroundColor.replace(/\s/g, "") + (cs.backgroundImage !== "none" ? "+hoa-tiet" : ""), ...[...new Set(khoi)].sort()].join("|");
+      nen = [ho, ...[...new Set(goc)].sort()].join("|");
     }
     const asset = [...s.querySelectorAll('img[data-l]:not([data-alt="Hình trang trí"])')].map((im) => (im.getAttribute("src") || "").split("/").pop() + (im.hasAttribute("data-lap") ? " (lặp)" : ""));
     const bang = [...s.querySelectorAll("[data-bang], table, [class~='bang'], [class^='bang']")].filter((el) => !el.parentElement.closest("[data-bang], table, [class~='bang'], [class^='bang']"))
       .map((el) => el.dataset.bang || (el.tagName === "TABLE" ? "table" : el.className.trim()));
-    out.push({ slide: i + 1, nen, asset: [...new Set(asset)], bang });
+    out.push({ slide: i + 1, nen, ho, asset: [...new Set(asset)], bang });
   });
   return out;
 }
 
 function danhGia(slides, ng = NGUONG) {
-  const loi = [], n = slides.length, dem = {};
-  for (const s of slides) dem[s.nen] = (dem[s.nen] || 0) + 1;
+  const loi = [], n = slides.length, dem = {}, hoCua = (s) => s.ho || s.nen;
+  for (const s of slides) dem[hoCua(s)] = (dem[hoCua(s)] || 0) + 1;
   const loai = Object.keys(dem).length, [nenNhieu, soNhieu] = Object.entries(dem).sort((a, b) => b[1] - a[1])[0] || ["", 0];
   if (n >= ng.deckToiThieu && loai < ng.loaiNenToiThieu) loi.push(`◇ nền: chỉ ${loai} loại nền cho ${n} slide (cần ≥ ${ng.loaiNenToiThieu}: N1 sáng, N2 đậm, N3 chia mảng, N4 ảnh… — references/he-nen.md)`);
-  if (n >= ng.deckToiThieu && soNhieu / n > ng.tiLeNenToiDa) loi.push(`◇ nền: một loại nền chiếm ${Math.round((100 * soNhieu) / n)} % deck (tối đa ${100 * ng.tiLeNenToiDa} %)`);
+  if (n >= ng.deckToiThieu && soNhieu / n > ng.tiLeNenToiDa) loi.push(`◇ nền: một họ nền chiếm ${Math.round((100 * soNhieu) / n)} % deck (tối đa ${100 * ng.tiLeNenToiDa} %)`);
   let lien = 1, batDau = 1;
   for (let k = 1; k <= n; k++) {
     if (k < n && slides[k].nen === slides[k - 1].nen) { lien++; continue; }
     if (lien > ng.lienToiDa) loi.push(`◇ nền: ${lien} slide liền cùng nền (slide ${batDau}–${batDau + lien - 1}; tối đa ${ng.lienToiDa}) — đổi vị trí hoạ tiết, hoặc xen N2 / N3 (references/he-nen.md)`);
+    lien = 1; batDau = k + 1;
+  }
+  lien = 1; batDau = 1;
+  for (let k = 1; k <= n; k++) {
+    if (k < n && hoCua(slides[k]) === hoCua(slides[k - 1])) { lien++; continue; }
+    if (lien > ng.lienHoToiDa) loi.push(`◇ nền: ${lien} slide liền cùng họ nền (slide ${batDau}–${batDau + lien - 1}; tối đa ${ng.lienHoToiDa}) — xen N2 / N3`);
     lien = 1; batDau = k + 1;
   }
   const noi = {};
@@ -60,9 +67,9 @@ function danhGia(slides, ng = NGUONG) {
   const [kieuNhieu, soKieuNhieu] = Object.entries(kieuBang).sort((a, b) => b[1] - a[1])[0] || ["", 0];
   if (tongBang >= ng.bangXetTiLe && Object.keys(kieuBang).length > 1 && soKieuNhieu / tongBang > ng.tiLeBangToiDa) loi.push(`◇ bảng: kiểu “${kieuNhieu}” chiếm ${soKieuNhieu}/${tongBang} bảng (tối đa ${100 * ng.tiLeBangToiDa} %) — references/trinh-bay-du-lieu.md`);
   if (tongBang >= ng.bangCungKieu && Object.keys(kieuBang).length === 1) loi.push(`◇ bảng: ${tongBang} bảng cùng một kiểu “${Object.keys(kieuBang)[0]}” — chọn kiểu theo loại thông tin (references/trinh-bay-du-lieu.md)`);
-  const thongKe = { slide: n, loaiNen: loai, nenNhieuNhat: nenNhieu, tiLeNenNhieuNhat: n ? soNhieu / n : 0, assetKhacNhau: Object.keys(noi).length, assetLap: lap.length, kieuBang: Object.keys(kieuBang).length, tongBang };
-  const bang = [`Đa dạng: ${loai} loại nền · nền nhiều nhất ${Math.round(100 * thongKe.tiLeNenNhieuNhat)} % · ${thongKe.assetKhacNhau} asset khác nhau (${lap.length} lặp quá ${ng.assetToiDa} slide) · ${tongBang} bảng / ${thongKe.kieuBang} kiểu`,
-    `  dải nền: ${slides.map((s) => String.fromCharCode(65 + Object.keys(dem).indexOf(s.nen))).join("")}  (${Object.keys(dem).map((k, i) => `${String.fromCharCode(65 + i)}=${k.length > 40 ? k.slice(0, 40) + "…" : k}`).join(" · ")})`].join("\n");
+  const thongKe = { slide: n, loaiNen: loai, bienTheNen: new Set(slides.map((s) => s.nen)).size, nenNhieuNhat: nenNhieu, tiLeNenNhieuNhat: n ? soNhieu / n : 0, assetKhacNhau: Object.keys(noi).length, assetLap: lap.length, kieuBang: Object.keys(kieuBang).length, tongBang };
+  const bang = [`Đa dạng: ${loai} họ nền (${thongKe.bienTheNen} biến thể có vị trí hoạ tiết) · nền nhiều nhất ${Math.round(100 * thongKe.tiLeNenNhieuNhat)} % · ${thongKe.assetKhacNhau} asset khác nhau (${lap.length} lặp quá ${ng.assetToiDa} slide) · ${tongBang} bảng / ${thongKe.kieuBang} kiểu`,
+    `  dải họ nền: ${slides.map((s) => String.fromCharCode(65 + Object.keys(dem).indexOf(hoCua(s)))).join("")}  (${Object.keys(dem).map((k, i) => `${String.fromCharCode(65 + i)}=${k.length > 40 ? k.slice(0, 40) + "…" : k}`).join(" · ")})`].join("\n");
   return { loi, thongKe, bang };
 }
 
