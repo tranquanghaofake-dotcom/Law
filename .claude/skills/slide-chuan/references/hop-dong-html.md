@@ -24,7 +24,7 @@ Thiết kế **tự do** — bất kỳ HTML / CSS / SVG nào Chromium vẽ đư
 - `data-tieu-de` trên hộp chữ tiêu đề → placeholder tiêu đề (trình đọc màn hình, mục lục, Check Accessibility). Bắt buộc mỗi slide.
 - `data-alt="…"` trên mỗi `data-l`: mô tả nội dung; hình trang trí ghi `data-alt="Hình trang trí"` (PowerPoint đánh dấu decorative).
 - Bảng / số liệu: dùng bộ thành phần `hinh/bang.css` (nạp sẵn; danh sách lớp ở `trinh-bay-du-lieu.md` mục 3). Ô chữ vẫn gắn `data-t`; ảnh trong `.tb-ci` cứ để `data-l`.
-- Khai báo cho máy đo đa dạng (`scripts/da_dang.js`): `<section data-nen="N1|N2|N3|N4|N5|N6">` loại nền (`he-nen.md`) · `data-bang="T1…T13"` trên khối bảng (`trinh-bay-du-lieu.md`) · `data-lap` trên `data-l` cố ý lặp cùng vai (motif chủ đề, nhân vật xuyên suốt). Hoạ tiết nền là `data-l` có `data-alt="Hình trang trí"` — máy tính vị trí góc của nó vào nền, không tính vào asset lặp.
+- Khai báo cho máy đo đa dạng (`scripts/da_dang.js`): `<section data-nen="N1|N2|N3|N4|N5|N6">` loại nền (`he-nen.md`) · `data-bang="T1…T13"` trên khối bảng (`trinh-bay-du-lieu.md`) · `data-khong-hinh` trên `<section>` cố ý chỉ có chữ (mục lục, câu hỏi) — miễn phép đo tiêu điểm · `data-lap` trên `data-l` cố ý lặp cùng vai (motif chủ đề, nhân vật xuyên suốt). Hoạ tiết nền là `data-l` có `data-alt="Hình trang trí"` — máy tính vị trí góc của nó vào nền, không tính vào asset lặp.
 - Chữ là một phần của hình vẽ cố ý (chữ trên bìa sách, biển hiệu trong ảnh): bọc trong `data-prop`.
 - **Không viết chữ trong SVG** (`<text>`): PowerPoint không sửa được, font dễ sai. Vẽ hình bằng SVG, đặt chữ HTML `data-t` lên trên (định vị tuyệt đối theo toạ độ của hình).
 

@@ -12,6 +12,11 @@ test("deck đa dạng: không lỗi, có bảng thống kê", () => {
   assert.match(r.bang, /nền/);
 });
 
+test("tiêu điểm: slide có hình cỡ icon (< 25 %) bị bắt; nền đậm và slide khai data-khong-hinh được miễn", () => {
+  const r = danhGia(deck(4, (k) => ({ nen: ["kem", "dam", "chia", "anh"][k], tieuDiem: [0.12, 0.05, 0.4, 0.1][k], khongHinh: k === 1 || k === 3 })));
+  const all = r.loi.join("\n"); assert.match(all, /◇ tiêu điểm: 1 slide .*slide 1 \(12 %\)/); assert.strictEqual(r.thongKe.tieuDiemDat, 1);
+});
+
 test("nền đơn điệu bị bắt: ít loại, một loại áp đảo, quá nhiều slide liền", () => {
   const r = danhGia(deck(14, (k) => ({ nen: k === 0 ? "dam" : "kem" })));
   const all = r.loi.join("\n");
