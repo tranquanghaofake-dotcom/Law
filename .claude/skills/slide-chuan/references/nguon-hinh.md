@@ -20,3 +20,11 @@ Vì sao (nghiên cứu 15/11/2026, spec mục 13): mẫu bán slide đẹp nhờ
 4. **Không trộn** nhân vật Open Peeps với hình người kiểu khác trong cùng deck; icon Tabler không trộn bộ icon khác.
 5. Ảnh: chỉ ảnh có giấy phép rõ; chữ không đặt lên phần ảnh rối (đặt cạnh hoặc trên mảng màu phẳng).
 6. Tài nguyên tải về bộ nhớ đệm (`~/.cache/slide-chuan`, lần đầu cần mạng npm) — không chép vào skill.
+
+## Ảnh chụp hiện đại (Unsplash) và minh hoạ unDraw — hướng "tư vấn pháp lý", Chương 3 (15/11/2026)
+Hai nguồn này nâng trần chất lượng rõ nhất ("wow"): ảnh chụp thật sắc nét cho bìa / mở phần / trích luật; minh hoạ do hoạ sĩ vẽ cho người và tình huống. Cả hai **không phải ảnh AI**, giấy phép cho dùng tự do, không bắt ghi công — vẫn ghi đủ trong `ghi-cong.md`. Phải được chủ bài duyệt (CLAUDE.md).
+- **Unsplash**: `unsplash.com` có lớp chặn máy và API cần khoá. Cách làm: Firecrawl `firecrawl_scrape` trang `https://unsplash.com/s/photos/<từ-khoá>?license=free` (formats `links`) → chọn ảnh; scrape trang ảnh (formats `images`) → lấy `images.unsplash.com/photo-<số>-<mã>` từ `og:image` → `curl "https://images.unsplash.com/photo-…?fm=jpg&q=85&w=2400"`. Chỉ dùng ảnh trang ghi "Free Photo" (không Unsplash+).
+- **Xử lý ảnh**: `node scripts/phu_mau.js <vào> <ra> --rong= --cao= --tieu=x,y [--tu=trai|phai|duoi|tren --dac= --den=] [--cheo=0.2]` — cắt theo điểm nhìn, phủ dải màu chủ để đặt chữ lên ảnh, hoặc cắt chéo mép trái (PNG trong suốt) cho bố cục tạp chí; dải màu nhấn chạy theo mép chéo.
+- **unDraw**: tìm `curl "https://undraw.co/api/search?q=<từ>"` → dùng trường `media` (đường dẫn `cdn.undraw.co/illustration/…` hoặc `…/illustrations/…`; dựng lại đường dẫn từ `newSlug` có thể ra trang lỗi 27 KB). Lưu vào `asset/undraw/` của bài; tô lại theo bảng màu bằng bảng ánh xạ màu (màu nhấn #6c63ff → màu chủ, xám đậm → mực, xám nhạt → kẻ / màu nhạt, da → da) — xem `minh-hoa.js` của bài Chương 3 (`unDraw()`), lồng vào lớp hình bằng `<svg>` con, khai `data-loai="undraw"`.
+- **Phân vai trong một deck**: ảnh chụp cho bìa, mở phần, trích luật, câu chốt (cảm xúc, bối cảnh); unDraw cho người và tình huống (bên mua, giao kết, câu hỏi); vật phẳng tự vẽ + khối tô đặc cho sơ đồ, số liệu. Cùng bảng màu → không hổ lốn.
+

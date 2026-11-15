@@ -19,12 +19,15 @@
     "#F8ECCD",
     "#B13A2E",
     "#F6DDD7",
-    "#E8B48F"
+    "#E8B48F",
+    "#B97C5E"
   ],
   "loaiHinh": [
     "phang",
     "nen",
-    "anh-hai-mau"
+    "anh-hai-mau",
+    "undraw",
+    "anh-chup"
   ],
   "boCuc": [
     "bia",
@@ -53,5 +56,6 @@
     "bangXetTiLe": 99,
     "tieuDiemToiThieu": 0.15
   },
-  "ghiChuNguong": "Hướng biên tập: một kiểu bảng cho cả deck là chủ ý (bo-cuc.md); slide lấy chữ / số lớn làm tiêu điểm khai data-khong-hinh."
+  "ghiChuNguong": "Hướng biên tập: một kiểu bảng cho cả deck là chủ ý (bo-cuc.md); slide lấy chữ / số lớn làm tiêu điểm khai data-khong-hinh.",
+  "ghiChuNguon": "Ảnh chụp Unsplash (giấy phép Unsplash) và minh hoạ unDraw (giấy phép unDraw) — Hào chọn 15/11/2026; ghi nguồn trong ghi-cong.md. Không ảnh AI."
 }

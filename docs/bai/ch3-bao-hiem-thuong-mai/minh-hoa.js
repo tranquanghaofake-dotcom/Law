@@ -8,7 +8,7 @@ const P = {
   nen: "#FBF7EF", trang: "#FFFFFF", muc: "#1B2A28", phu: "#55625F", ke: "#DCD3C4",
   x1: "#0E4F49", x2: "#2C7A6C", x3: "#8EC3B6", x4: "#DDECE7",
   v1: "#946512", v2: "#E2A52E", v3: "#F3D27E", v4: "#F8ECCD",
-  d1: "#B13A2E", d4: "#F6DDD7", da: "#E8B48F",
+  d1: "#B13A2E", d4: "#F6DDD7", da: "#E8B48F", da2: "#B97C5E",
 };
 const f1 = (n) => +n.toFixed(1);
 
@@ -169,3 +169,18 @@ const chongGiay = (x, y, w) => { const h = w * 1.3; return `<rect x="${x}" y="${
 const but = (x, y, L, goc = -40) => `<g transform="rotate(${goc} ${x} ${y})"><rect x="${x}" y="${f1(y - L * 0.05)}" width="${L}" height="${f1(L * 0.1)}" rx="${f1(L * 0.05)}" fill="${P.x1}"/><rect x="${f1(x + L * 0.62)}" y="${f1(y - L * 0.05)}" width="${f1(L * 0.08)}" height="${f1(L * 0.1)}" fill="${P.v2}"/><path d="M${x} ${f1(y - L * 0.05)} L${f1(x - L * 0.14)} ${y} L${x} ${f1(y + L * 0.05)} Z" fill="${P.v1}"/></g>`;
 
 module.exports = { toaVP, saoCum, nguoi, bua, phieu, dnbh, bongThoai, chongGiay, but, P, iconNet, iconDac, cham, sao, giot, o, nha, xu, khien, hopDong, matTien, dongHo, lua, muiKhoi };
+
+// ---------- minh hoạ unDraw (giấy phép unDraw: dùng tự do, không bắt ghi công — vẫn ghi trong ghi-cong.md) ----------
+// Tô lại theo bảng màu bài: màu nhấn → xanh chủ, xám đậm → mực, xám nhạt → kẻ / bạc hà, da → da. Lồng vào lớp hình bằng <svg> con.
+const MAU_UD = { "#6c63ff": P.x2, "#090814": P.muc, "#2f2e43": P.muc, "#2f2e41": P.muc, "#3f3d56": P.muc, "#3f3d58": P.muc, "#36393a": P.muc,
+  "#e6e6e6": P.ke, "#e0e0e0": P.ke, "#d6d6e3": P.x3, "#f2f2f2": P.x4, "#fafafa": P.trang, "#ffffff": P.trang, "#fff": P.trang,
+  "#ed9da0": P.da, "#f8a8ab": P.da, "#ffb6b6": P.da, "#ffb8b8": P.da, "#9f616a": P.da2, "#a0616a": P.da2, "#ccc": P.ke, "#cccccc": P.ke };
+function unDraw(D, ten, x, y, w, doi = {}) {
+  let s = fs.readFileSync(path.join(D, "asset", "undraw", ten + ".svg"), "utf8");
+  const vb = (s.match(/viewBox="([^"]+)"/) || [])[1].split(/[\s,]+/).map(Number), h = (w * vb[3]) / vb[2];
+  const map = { ...MAU_UD, ...doi };
+  s = s.replace(/#[0-9a-fA-F]{6}\b|#[0-9a-fA-F]{3}\b/g, (c) => map[c.toLowerCase()] || c);
+  const body = s.replace(/^[\s\S]*?<svg[^>]*>/, "").replace(/<\/svg>\s*$/, "");
+  return { svg: `<svg x="${x}" y="${y}" width="${w}" height="${f1(h)}" viewBox="${vb.join(" ")}">${body}</svg>`, h };
+}
+module.exports.unDraw = unDraw;

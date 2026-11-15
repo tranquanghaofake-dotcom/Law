@@ -45,4 +45,5 @@ Nhúng sẵn: `'Anton'` (tiêu đề in hoa, trưng bày) và `'Be Vietnam Pro'`
 - Máy quay: `data-cam="pan:dx,dy" | "zoom:k,x,y"` trên `<section>` + `data-sau` (thị sai) trên vật.
 - Liên kết: `data-go="id"` → nhảy tới `<section data-id="id">`.
 - Cửa sổ soi (kính lúp): `data-w`, `data-of`, `data-z`, `data-fx`, `data-fy` — xem chú thích đầu `hinh/build.js`.
-- Xem thử khi không có PowerPoint: `node scripts/xem_morph.js <tên>_lop/deck.html xem.mp4`; liệt kê cặp Morph: `python3 scripts/morph_cap.py <tên>.pptx`.
+- Xem thử hiệu ứng xuất hiện + chuyển cảnh (fade / push) khi không có PowerPoint: `node scripts/xem_hieu_ung.js <tên>_lop/deck.html xem.mp4 [--rong=1280]` — hiệu ứng bắt đầu sau khi chuyển cảnh xong. Nhịp gợi ý: tiêu đề rise 0–100 ms → phụ đề fade 350 → hình chính 500–800 → từng ý cách nhau 200–300 ms; thẻ nền muốn hiện có hiệu ứng thì gắn `data-l` + `data-alt` cho chính thẻ.
+- Xem thử Morph khi không có PowerPoint: `node scripts/xem_morph.js <tên>_lop/deck.html xem.mp4`; liệt kê cặp Morph: `python3 scripts/morph_cap.py <tên>.pptx`.
