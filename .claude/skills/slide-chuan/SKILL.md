@@ -7,7 +7,7 @@ description: "Use when the user wants a slide deck (PowerPoint .pptx, editable t
 
 **Skill này chỉ giữ QUY TRÌNH và CÔNG CỤ DỰNG.** Không có mẫu bố cục, không có bộ hình dùng chung, không có "da" theo môn. Mỗi bài được nghiên cứu, viết kịch bản, chọn phong cách, vẽ asset riêng và thiết kế từng slide **tự do** — mọi thứ của bài nằm trong **thư mục bài**, không lưu vào skill.
 
-Đọc trước khi làm: `references/quy-trinh.md` (các bước, sản phẩm, điểm duyệt) · `references/vai-tro.md` (vai trò, bản ghi lựa chọn của cố vấn, cách gọi người duyệt độc lập) · `references/hop-dong-html.md` (cách viết slide HTML để dựng ra PPTX sửa được) · `references/soat.md` (điều kiểm từng slide, rubric).
+Đọc trước khi làm: `references/quy-trinh.md` (các bước, sản phẩm, điểm duyệt) · `references/he-nen.md` + `references/trinh-bay-du-lieu.md` (đa dạng trong hệ thống: nền, bảng biểu) · `references/vai-tro.md` (vai trò, bản ghi lựa chọn của cố vấn, cách gọi người duyệt độc lập) · `references/hop-dong-html.md` (cách viết slide HTML để dựng ra PPTX sửa được) · `references/soat.md` (điều kiểm từng slide, rubric).
 
 ## Quy trình (tóm tắt — chi tiết ở `references/quy-trinh.md`)
 | # | Bước | Sản phẩm trong thư mục bài |
@@ -15,9 +15,9 @@ description: "Use when the user wants a slide deck (PowerPoint .pptx, editable t
 | 0–1 | Brief, khán giả, mục tiêu học tập (Bloom), một câu ý lớn | `brief.md` |
 | 2 | Nghiên cứu + kiểm chứng (luật: skill `vn-legal-exam-analysis`, kho `packages/content/data/laws/`) | `noi-dung.md` (nội dung + bảng nguồn + lỗi của tài liệu gốc + điều chưa chắc) |
 | 3 | Kịch bản theo **mạch của thể loại** (bài giảng: bám dàn ý gốc, không cốt truyện): mỗi slide một khẳng định + bằng chứng hình + nguồn + giây + lời nói | `kich-ban.md` |
-| 4 | Tham chiếu 15–20 mẫu chuyên nghiệp đúng thể loại → hệ thống thiết kế của bài (lưới, thang chữ, 8–10 kiểu slide) → bản đồ nhịp → 2–3 hướng phong cách | `thiet-ke/` + bản ghi lựa chọn |
+| 4 | Tham chiếu 15–20 mẫu chuyên nghiệp đúng thể loại → hệ thống thiết kế của bài (lưới, thang chữ, **hệ nền** `he-nen.md`, **bộ trình bày dữ liệu** `trinh-bay-du-lieu.md`, 8–10 kiểu slide) → bản đồ nhịp (kiểu · nền · bảng/hình) → 2–3 hướng phong cách | `thiet-ke/` + bản ghi lựa chọn |
 | 5 | Làm mẫu 3–4 slide thật; slide then chốt làm 3 phương án rồi chọn | `slides/` (bản đầu) |
-| 6 | Brief minh hoạ từng slide → vẽ asset (SVG tự vẽ) + tìm ảnh thật (chấm bằng mắt, ghi nguồn) | `asset/`, `anh/`, `ghi-cong.md` |
+| 6 | Brief minh hoạ + **kiểm kê asset** (mỗi phần ≥ 1 hình chính riêng, một hình ≤ 3 slide) → vẽ asset + hoạ tiết nền (SVG tự vẽ) + tìm ảnh thật | `thiet-ke/asset.md`, `asset/`, `anh/`, `ghi-cong.md` |
 | 7 | Thiết kế + dựng toàn bộ | `slides/*.html`, `style.css` → `<tên>.pptx` |
 | 8 | Soát: máy → nhìn ảnh từng slide → **người duyệt độc lập** (agent `opus`) → sửa, tối đa 2 vòng | `nhat-ky.md` (điểm rubric, lỗi đã sửa) |
 | 9 | Diễn tập: lời nói trong notes, đo giờ, slide có thể cắt | notes trong slide |
@@ -32,7 +32,7 @@ description: "Use when the user wants a slide deck (PowerPoint .pptx, editable t
 ```
 node scripts/dung.js <thư_mục_bài> [--ten=<tên>] [--khong-soat] [--nhap]
 ```
-Ghép `slides/*.html` → `hinh/build.js` (chữ `data-t` thành hộp chữ thật, `data-l` thành lớp ảnh rời, font Anton + Be Vietnam Pro nhúng, hiệu ứng / Morph gốc PowerPoint) → kiểm lỗi → `<tên>_lop/tong-N.jpg` (ảnh tổng 3×3). **Mọi `⚠` là lỗi, mã thoát 1** (`--nhap` để xem trước dù còn lỗi). Máy bắt: chữ không sửa được, chữ trong SVG, tràn hộp, ra ngoài vùng an toàn, chữ bị lớp ảnh đè, hai hộp chữ đè nhau, chữ < 12 pt, tương phản WCAG, dòng mồ côi, lệch 4–10 px, thiếu tiêu đề / chữ thay thế, PPTX lệch HTML. Máy **không** bắt được xấu / khó hiểu / sai nội dung → bước 8.
+Ghép `slides/*.html` → `hinh/build.js` (chữ `data-t` thành hộp chữ thật, `data-l` thành lớp ảnh rời, font Anton + Be Vietnam Pro nhúng, hiệu ứng / Morph gốc PowerPoint) → kiểm lỗi → `<tên>_lop/tong-N.jpg` (ảnh tổng 3×3). **Mọi `⚠` là lỗi, mã thoát 1** (`--nhap` để xem trước dù còn lỗi). Máy bắt: **đa dạng** (◇ ít loại nền, một nền > 80 %, > 6 slide liền cùng nền, hình lặp > 3 slide, bảng một kiểu — in dải nền + thống kê), chữ không sửa được, chữ trong SVG, tràn hộp, ra ngoài vùng an toàn, chữ bị lớp ảnh đè, hai hộp chữ đè nhau, chữ < 12 pt, tương phản WCAG, dòng mồ côi, lệch 4–10 px, thiếu tiêu đề / chữ thay thế, PPTX lệch HTML. Máy **không** bắt được xấu / khó hiểu / sai nội dung → bước 8.
 
 ## Luật cứng
 - **Đúng trước, đẹp sau.** Mọi con số, điều luật, định nghĩa trên slide phải có dòng nguồn trong `noi-dung.md`; luật ghi số hiệu văn bản, điều/khoản, tình trạng hiệu lực; không bịa. Lỗi của tài liệu gốc → báo người dùng ở điểm duyệt A, không tự sửa im lặng.
@@ -43,6 +43,6 @@ Ghép `slides/*.html` → `hinh/build.js` (chữ `data-t` thành hộp chữ th�
 - Giao bài: `dung.js` sạch lỗi + đã nhìn mọi ảnh tổng + người duyệt độc lập chấm mọi hạng ≥ 4/5 (cả Thẩm mỹ). Nhắc người dùng: mở bằng PowerPoint 2019 / Microsoft 365, bấm **Enable Editing** để thấy font, báo lại nếu Morph / hiệu ứng chạy sai.
 
 ## Công cụ
-`hinh/build.js` (HTML → PPTX) · `hinh/xml.js`, `hinh/may_quay.js` (Morph, máy quay) · `hinh/kiem_de.js` (chữ bị đè) · `hinh/tao_font.js` + `hinh/fonts/` · `scripts/dung.js` · `scripts/kiem_html.js` · `scripts/soat_chi_tiet.js` · `scripts/co_chu.js` · `scripts/find_images.py`, `img_quality.py`, `fetch_image.py`, `cutout.py` (ảnh) · `scripts/outline.py` (rút dàn ý tài liệu gốc) · `scripts/ban_ghi_chu.py` (bản in ghi chú) · `scripts/morph_cap.py`, `xem_morph.js` (soát Morph) · `scripts/dong_goi.py` (zip tải lên claude.ai, ≤ 200 file). Ví dụ tối thiểu: `examples/mau/`.
+`hinh/build.js` (HTML → PPTX) · `hinh/xml.js`, `hinh/may_quay.js` (Morph, máy quay) · `hinh/kiem_de.js` (chữ bị đè) · `hinh/tao_font.js` + `hinh/fonts/` · `scripts/dung.js` · `scripts/da_dang.js` (đo đa dạng) · `scripts/kiem_html.js` · `scripts/soat_chi_tiet.js` · `scripts/co_chu.js` · `scripts/find_images.py`, `img_quality.py`, `fetch_image.py`, `cutout.py` (ảnh) · `scripts/outline.py` (rút dàn ý tài liệu gốc) · `scripts/ban_ghi_chu.py` (bản in ghi chú) · `scripts/morph_cap.py`, `xem_morph.js` (soát Morph) · `scripts/dong_goi.py` (zip tải lên claude.ai, ≤ 200 file). Ví dụ tối thiểu: `examples/mau/`.
 
 Cài: `npm install` trong thư mục skill. Cần Node 18+, Playwright + Chromium (`PW_CHROMIUM=<đường dẫn>`), LibreOffice + `pdftoppm` cho tờ soát. Kiểm skill: `npm test`.

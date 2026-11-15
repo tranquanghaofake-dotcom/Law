@@ -16,12 +16,18 @@ test("nền đơn điệu bị bắt: ít loại, một loại áp đảo, quá 
   const r = danhGia(deck(14, (k) => ({ nen: k === 0 ? "dam" : "kem" })));
   const all = r.loi.join("\n");
   assert.match(all, /2 loại nền/); assert.match(all, /chiếm 93 %/); assert.match(all, /13 slide liền/);
+  assert.strictEqual(danhGia(deck(14, (k) => ({ nen: k % 7 === 6 ? "dam" : k % 7 === 3 ? "chia" : "kem" }))).loi.length, 0, "họ nền sáng ≤ 80 %, ≤ 6 liền: không lỗi");
 });
 
 test("asset lặp quá 3 slide bị bắt, trừ khi khai báo cố ý (lặp)", () => {
   const r = danhGia(deck(6, (k) => ({ nen: ["kem", "dam", "chia"][k % 3], asset: ["nguoi.svg", ...(k < 5 ? ["logo.svg (lặp)"] : [])] })));
   const all = r.loi.join("\n");
   assert.match(all, /nguoi\.svg.*6 slide/); assert.doesNotMatch(all, /logo/);
+});
+
+test("một kiểu bảng chiếm > 40 % khi ≥ 5 bảng bị bắt", () => {
+  const r = danhGia(deck(8, (k) => ({ nen: ["kem", "dam", "chia"][k % 3], bang: k < 6 ? ["tra"] : ["dau"] })));
+  assert.match(r.loi.join("\n"), /“tra” chiếm 6\/8/);
 });
 
 test("bảng một kiểu bị bắt khi ≥ 3 bảng", () => {
@@ -33,12 +39,12 @@ test("deck thật: thu thập nền, asset, bảng trong trình duyệt", { time
   const { dung } = require("../scripts/dung");
   const d = fs.mkdtempSync(path.join(os.tmpdir(), "sc-dd-")); fs.mkdirSync(path.join(d, "slides")); fs.mkdirSync(path.join(d, "asset"));
   fs.writeFileSync(path.join(d, "asset", "a.svg"), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><rect width="10" height="10" fill="#369"/></svg>`);
-  for (let k = 1; k <= 5; k++) fs.writeFileSync(path.join(d, "slides", `0${k}.html`), `<section class="s" style="background:#F6F1E7">
+  for (let k = 1; k <= 7; k++) fs.writeFileSync(path.join(d, "slides", `0${k}.html`), `<section class="s" style="background:#F6F1E7">
   <h1 data-t data-tieu-de style="position:absolute;left:120px;top:100px;width:1200px;font-size:60px">Slide số ${k}</h1>
   <img data-l="a" data-alt="Hình vuông" src="asset/a.svg" style="position:absolute;left:120px;top:400px;width:200px">
   <div class="bang" style="position:absolute;left:600px;top:400px;width:600px"><b data-t style="font-size:30px">Ô bảng ${k}</b></div>
 </section>`);
   const r = await dung(d, { ten: "dd", soat: false, nhap: true }), all = r.loi.join("\n");
-  assert.match(all, /5 slide liền cùng nền/); assert.match(all, /a\.svg.*5 slide/); assert.match(all, /5 bảng cùng một kiểu/);
+  assert.match(all, /7 slide liền cùng nền/); assert.match(all, /a\.svg.*7 slide/); assert.match(all, /7 bảng cùng một kiểu/);
   process.exitCode = 0;
 });

@@ -150,3 +150,13 @@ Lý do: deck Chương 3 đúng nội dung nhưng "chưa đẹp, đơn giản, tr
 - Bước 5: slide then chốt làm 3 phương án rồi chọn. Bước 6: brief minh hoạ từng slide, ít hình, to, không dán vật lặp lại.
 - Rubric thêm hạng **Thẩm mỹ** (so với bảng tham chiếu); giao khi mọi hạng ≥ 4.
 - Giữ mục tiêu gốc: skill vẫn chỉ chứa quy trình + công cụ; tham chiếu, hệ thống thiết kế, asset là của từng bài.
+
+## 11. Bổ sung 15/11/2026 — đa dạng trong hệ thống (nền, bảng biểu, asset)
+**Vấn đề** (Hào nhận xét deck Chương 3): bảng một kiểu, asset lặp, nền một màu đơn điệu. Đo lại: nền kem 68 % deck, 10 slide liền cùng nền; 3 hình người / nhà / toà nhà mỗi hình 4 slide; 5 bảng cùng một khuôn.
+**Căn cứ**: 21 mẫu Slidesgo đợt 2 (nhóm bảng biểu, hệ nền, bộ minh hoạ) + 33 mẫu đợt 1. Phát hiện: mẫu đẹp giữ **một họ nền sáng 60–80 %** và đổi **vị trí hoạ tiết** từng slide; nền đậm chỉ cho mở chương / số lớn / trích dẫn; 11–14 kiểu bảng trong một bộ nhưng cùng bảng màu; 4–6 hình chính cho 8–12 slide nội dung, hình lặp ≥ 3 lần luôn là motif có vai.
+**Thay đổi skill**:
+- `references/he-nen.md` (N1–N6, quy tắc tỉ lệ / chuyển nền / hoạ tiết) và `references/trinh-bay-du-lieu.md` (bảng chọn kiểu theo loại thông tin, 13 kiểu T1–T13).
+- Quy trình bước 4b thêm hệ nền + bộ trình bày dữ liệu; 4c bản đồ nhịp ba dải (kiểu · nền · bảng/hình); bước 6 thêm kiểm kê asset (`thiet-ke/asset.md`).
+- Máy: `scripts/da_dang.js` (gọi từ `dung.js`) in dải nền + thống kê, báo lỗi ◇: < 3 loại nền (deck ≥ 12 slide), một nền > 80 %, > 6 slide liền cùng nền cùng vị trí hoạ tiết, một hình > 3 slide (trừ `data-lap`), mọi bảng một kiểu hoặc một kiểu > 40 % (≥ 5 bảng). Có test.
+- Rubric Thẩm mỹ thêm tiêu chí đa dạng trong hệ thống; "đổi nền / màu ngẫu nhiên không theo vai" là điểm 1.
+**Giới hạn**: số đo ước lượng bằng mắt trên mẫu thương mại, chưa kiểm với sinh viên; ngưỡng có thể chỉnh sau khi dùng trên 2–3 bài.

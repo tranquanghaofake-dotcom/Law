@@ -21,7 +21,7 @@ Thêm cho hình: **hình là chính sự vật** (không ẩn dụ phải giải
 | Thiết kế | thứ bậc rõ, khoảng thở, nhất quán, hình đúng sự vật | nhất quán nhưng dày / nhạt | rối, lệch phong cách, hình sai nghĩa |
 | Mạch lạc | đọc liền tiêu đề thành lập luận | có chỗ nhảy ý | rời rạc |
 | Dễ hiểu | sinh viên mới học hiểu từng slide trong 3 giây | phải nghe giảng mới hiểu | khó hiểu cả khi nghe |
-| **Thẩm mỹ** (so với bảng tham chiếu) | đứng cạnh mẫu chuyên nghiệp không lạc tông: thứ bậc rõ, cân bằng, căn theo lưới, khoảng thở đều, nhất quán kiểu slide, có nhịp | sạch nhưng đơn điệu, một khuôn lặp lại, hình như hình dán | lệch lưới, chật / trống bất thường, hình sai tỉ lệ |
+| **Thẩm mỹ** (so với bảng tham chiếu) | đứng cạnh mẫu chuyên nghiệp không lạc tông: thứ bậc rõ, cân bằng, căn theo lưới, khoảng thở đều, có nhịp; **đa dạng trong hệ thống**: ≥ 3 loại nền đúng vai + hoạ tiết đổi vị trí, ≥ 6 kiểu trình bày dữ liệu, mỗi phần một hình chính riêng | sạch nhưng đơn điệu: một nền phẳng suốt deck, bảng một kiểu, cùng vài hình dán lại nhiều slide | lệch lưới, chật / trống bất thường, hình sai tỉ lệ, đổi nền / màu ngẫu nhiên không theo vai |
 Giao khi mọi hạng ≥ 4 — kể cả Thẩm mỹ (PPTEval dùng Nội dung / Thiết kế / Mạch lạc, thang 1–5 — arXiv 2501.03936).
 
 ## 3. Máy kiểm (`scripts/dung.js`) — đọc thông báo thế nào
@@ -39,4 +39,7 @@ Giao khi mọi hạng ≥ 4 — kể cả Thẩm mỹ (PPTEval dùng Nội dung 
 | không có tiêu đề | `data-tieu-de` trên hộp chữ tiêu đề |
 | thiếu data-alt | mô tả hình; trang trí → `data-alt="Hình trang trí"` |
 | từ chỉ có trong ảnh | chữ bị chụp vào ảnh — tách ra thành `data-t` |
+| ◇ nền: ít loại / một nền > 80 % / > 6 slide liền | thêm N2/N3 đúng vai, đổi góc hoạ tiết N1 (`he-nen.md`) |
+| ◇ asset: hình dùng trên > 3 slide | vẽ hình chính riêng cho ý đó; motif cố ý cùng vai → `data-lap` |
+| ◇ bảng: một kiểu / một kiểu > 40 % | chọn lại kiểu theo loại thông tin (`trinh-bay-du-lieu.md`) |
 | PPTX lệch HTML (tờ soát) | dùng thuộc tính CSS mà PowerPoint dựng lại được (`hop-dong-html.md`) |
