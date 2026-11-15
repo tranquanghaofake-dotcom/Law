@@ -6,6 +6,7 @@
 //   4. slide không có hộp chữ [data-t][data-tieu-de] (thành placeholder tiêu đề: trình đọc màn hình, mục lục, bộ kiểm khả năng tiếp cận)
 //   5. lớp ảnh [data-l] thiếu data-alt (hình trang trí: data-alt="Hình trang trí" → PowerPoint đánh dấu decorative)
 //   6. hộp chữ có nền riêng đè lên lớp ảnh mà thiếu data-l → mất nền trong PPTX
+//   7. đoạn chữ tô nền bên trong hộp chữ (<mark>, <span style="background">) → PPTX chỉ giữ màu chữ, mất nền tô
 function kiemHtml() {
   const out = [], txt = (s) => (s || "").replace(/\s+/g, " ").trim();
   [...document.querySelectorAll("section.s")].forEach((s, si) => {
@@ -42,6 +43,11 @@ function kiemHtml() {
     for (const el of s.querySelectorAll("[data-t]:not([data-l])")) { if (!hien(el) || !coNen(el)) continue; const R = el.getBoundingClientRect();
       const lay = [...s.querySelectorAll("[data-l]")].find((L) => L !== el && !L.contains(el) && !el.contains(L) && (el.compareDocumentPosition(L) & Node.DOCUMENT_POSITION_PRECEDING) && (() => { const Q = L.getBoundingClientRect(); return Q.left < R.right && Q.right > R.left && Q.top < R.bottom && Q.bottom > R.top; })());
       if (lay) out.push(`slide ${n}: hộp chữ “${txt(el.textContent).slice(0, 30)}” có nền riêng nằm trên lớp ảnh "${lay.dataset.l}" — trong PPTX nền bị lớp ảnh che mất; gắn thêm data-l + data-alt cho chính hộp chữ`); }
+    // 7. đoạn chữ có NỀN TÔ bên trong một hộp chữ (mark, span highlight): PowerPoint giữ màu chữ của từng đoạn nhưng không giữ nền tô,
+    //    nên đoạn được "tô dạ quang" trên trang HTML thành chữ thường (thường là chữ tối trên nền tối). Nhấn bằng màu chữ, hoặc tách hộp riêng có data-l.
+    for (const el of s.querySelectorAll("[data-t]")) { if (!hien(el)) continue;
+      for (const d of el.querySelectorAll("*")) { if (d.closest("[data-t]") !== el || !coNen(d) || !txt(d.textContent)) continue;
+        out.push(`slide ${n}: đoạn “${txt(d.textContent).slice(0, 30)}” trong hộp chữ “${txt(el.textContent).slice(0, 24)}” có nền tô riêng (<${d.tagName.toLowerCase()}>) — PPTX không giữ nền tô của một đoạn chữ; nhấn bằng màu chữ, hoặc tách thành hộp riêng có data-l`); } }
     // 5
     for (const el of s.querySelectorAll("[data-l]")) if (!el.dataset.alt && hien(el)) out.push(`slide ${n}: lớp ảnh "${el.dataset.l}" thiếu data-alt (mô tả; hình trang trí ghi data-alt="Hình trang trí")`);
   });
