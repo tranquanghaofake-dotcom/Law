@@ -38,7 +38,9 @@ function thuThap() {
     // Mẫu chuyên nghiệp: hình chính 30–45 %; dưới 25 % là "hình cỡ icon lọt thỏm giữa nền" (nguon-hinh.md quy tắc 1). Slide cố ý chỉ có chữ: data-khong-hinh.
     const dt = (el) => { const r = el.getBoundingClientRect(); return (Math.max(0, Math.min(r.right, R.right) - Math.max(r.left, R.left)) * Math.max(0, Math.min(r.bottom, R.bottom) - Math.max(r.top, R.top))) / A; };
     let tieuDiem = 0;
-    for (const el of s.querySelectorAll('img[data-l]:not([data-alt="Hình trang trí"]), [data-bang], table, [class~="tb"], [data-t]')) { if (el.matches("[data-t]") && parseFloat(getComputedStyle(el).fontSize) < 120) continue; tieuDiem = Math.max(tieuDiem, dt(el)); }
+    for (const el of s.querySelectorAll('img[data-l]:not([data-alt="Hình trang trí"]), [data-bang], table, [class~="tb"], [data-t]')) { if (el.matches("[data-t]") && parseFloat(getComputedStyle(el).fontSize) < 120) continue;
+      const a = dt(el); if (el.tagName === "IMG" && a >= 0.95 && !/\.(jpe?g|webp)(\?|$)/i.test(el.getAttribute("src") || "")) continue;   // lớp SVG trong suốt phủ cả slide (mũi tên, lưới): khung ≠ phần có nét
+      tieuDiem = Math.max(tieuDiem, a); }
     for (const el of s.querySelectorAll("div")) { const c = getComputedStyle(el).backgroundColor, a = dt(el); if (!/rgba\(\d+, \d+, \d+, 0\)|transparent/.test(c) && a < 0.9 && !el.closest("[data-t]")) tieuDiem = Math.max(tieuDiem, a); }
     out.push({ slide: i + 1, nen, ho, asset: [...new Set(asset)], bang, tieuDiem: +tieuDiem.toFixed(3), khongHinh: s.hasAttribute("data-khong-hinh") || nen.startsWith("N2") });
   });

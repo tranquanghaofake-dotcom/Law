@@ -12,6 +12,7 @@ Vì sao (nghiên cứu 15/11/2026, spec mục 13): mẫu bán slide đẹp nhờ
 
 ## Quy tắc
 1. **Mỗi slide một tiêu điểm**: hình chính hoặc số lớn chiếm 30–45 % diện tích; 2–4 phần tử thị giác; tỉ lệ phần tử lớn nhất / nhỏ nhất ≥ 8 lần. Không rải 8–12 vật nhỏ đều khắp slide.
+   Giới hạn của máy đo (`◇ tiêu điểm`): một tấm nền / thẻ lớn cũng được tính là khối thị giác, kể cả khi vật bên trong nhỏ — tấm nền **gom** bố cục chứ **không thay** hình chính; phải nhìn ảnh để chắc hình chính đủ lớn.
 2. **Nhìn slide là nắm toàn bộ ý**: nhãn đặt lên hình (tên bên, tên dòng tiền), ý cốt lõi viết thành cụm ngắn cạnh hình — hình chở nội dung, không thay nội dung.
 3. **Đồng bộ**: nhân vật Open Peeps cùng màu viền (màu mực của bài), quần áo theo màu vai trò; ảnh cùng một cặp màu hai tông; icon cùng một độ dày, một màu.
 4. **Không trộn** nhân vật Open Peeps với hình người kiểu khác trong cùng deck; icon Tabler không trộn bộ icon khác.
