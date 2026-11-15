@@ -5,7 +5,8 @@
 //   slides/*.html   mỗi file chứa ≥ 1 <section class="s" …>…</section> (thứ tự = tên file) — quy ước: references/hop-dong-html.md
 //   style.css       CSS riêng của bài (tuỳ chọn)
 //   asset/, anh/    hình tự vẽ, ảnh thật — đường dẫn trong HTML tính từ thư mục bài
-// Đa dạng (nền, asset lặp, kiểu bảng): scripts/da_dang.js — lỗi ◇ cũng là lỗi.
+// Đa dạng (nền, asset lặp, kiểu bảng): scripts/da_dang.js · thẻ phong cách asset (thiet-ke/phong-cach.json): scripts/kiem_phong_cach.js — lỗi ◇ cũng là lỗi.
+// Bộ thành phần bảng T1–T13: hinh/bang.css (nạp sẵn). Bảng xem thử asset: <tên>_lop/asset.jpg.
 // Ra: <tên>.pptx, <tên>_lop/ (deck.html, h-XX.jpg từng slide, tong-N.jpg ảnh tổng 3×3, soat-*.jpg so HTML với PPTX qua LibreOffice)
 // Mã thoát: 0 sạch · 1 còn lỗi (mọi ⚠ đều là lỗi — mục tiêu "càng ít lỗi càng tốt"; --nhap để dựng xem trước dù còn lỗi) · 2 không dựng được.
 const fs = require("fs"), path = require("path");
@@ -23,10 +24,28 @@ function ghepHtml(dir) {
   const css = fs.existsSync(path.join(dir, "style.css")) ? `<link rel="stylesheet" href="${url(path.join(dir, "style.css"))}">` : "";
   return { files, html: `<!doctype html>
 <html lang="vi"><head><meta charset="utf-8"><base href="${url(dir)}/">
-<link rel="stylesheet" href="${url(path.join(HINH, "hinh.css"))}">${css}
+<link rel="stylesheet" href="${url(path.join(HINH, "hinh.css"))}"><link rel="stylesheet" href="${url(path.join(HINH, "bang.css"))}">${css}
 </head><body>
 ${parts.join("\n")}
 </body></html>` };
+}
+
+// BẢNG XEM THỬ ASSET: mọi hình (data-l) của deck trên một tờ, kèm tên file — soát phong cách lệch bằng mắt (nét, màu, gradient, góc nhìn).
+async function bangAsset(dir, html, work) {
+  const sharp = require("sharp"), srcs = [...new Set([...html.matchAll(/<img\b[^>]*\bdata-l\b[^>]*>/g)].map((m) => (m[0].match(/\bsrc="([^"]+)"/) || [])[1]).filter(Boolean))]
+    .filter((s) => !/^(data:|https?:)/.test(s) && fs.existsSync(path.join(dir, s.split("?")[0])));
+  if (!srcs.length) return { srcs, anh: null };
+  const T = 300, cot = 6, gap = 14, cap = 34, tiles = [];
+  for (const [i, s] of srcs.entries()) {
+    let buf; try { buf = await sharp(path.join(dir, s.split("?")[0]), { density: 144 }).resize(T, T, { fit: "contain", background: "#F6F1E7" }).flatten({ background: "#F6F1E7" }).toBuffer(); } catch { continue; }
+    const ten = path.basename(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").slice(0, 34);
+    const nhan = Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${T}" height="${cap}"><rect width="100%" height="100%" fill="#2a2a2a"/><text x="8" y="23" font-family="sans-serif" font-size="18" fill="#eee">${ten}</text></svg>`);
+    const x = gap + (i % cot) * (T + gap), y = gap + Math.floor(i / cot) * (T + cap + gap);
+    tiles.push({ input: buf, left: x, top: y }, { input: await sharp(nhan).png().toBuffer(), left: x, top: y + T });
+  }
+  const p = path.join(work, "asset.jpg"), hang = Math.ceil(srcs.length / cot);
+  await sharp({ create: { width: cot * (T + gap) + gap, height: hang * (T + cap + gap) + gap, channels: 3, background: "#1c1c1c" } }).composite(tiles).jpeg({ quality: 85 }).toFile(p);
+  return { srcs, anh: p };
 }
 
 function anhTong(work) {
@@ -61,13 +80,16 @@ async function dung(dir, { ten, soat = true, nhap = false } = {}) {
     catch (e) { console.log(`ℹ không đo được cỡ chữ: ${String(e.message || e).split("\n")[0]}`); }
   }
   const tong = await anhTong(work);
+  const ba = await bangAsset(dir, html, work);
+  loi.push(...require("./kiem_phong_cach").kiemPhongCach(dir, ba.srcs));
+  if (ba.anh) console.log(`✓ Bảng xem thử asset (${ba.srcs.length} hình — soát cùng một phong cách): ${ba.anh}`);
   if (dd) console.log(dd.bang);
   console.log(`✓ ${res.slides} slide → ${outPath} · ${res.text} hộp chữ · ${res.pics} lớp ảnh · ${res.fx} hiệu ứng · ${res.morph} Morph`);
   console.log(`✓ Ảnh tổng (xem bằng mắt trước khi giao): ${tong.join(", ")}`);
   if (soat) console.log(`✓ Tờ soát HTML ↔ PPTX: ${path.join(work, "soat-*.jpg")}`);
   if (loi.length) { console.log(`⚠ ${loi.length} lỗi:\n  ${loi.join("\n  ")}`); if (!nhap) process.exitCode = 1; }
   else console.log("✓ Không còn lỗi máy bắt được — còn phải soát bằng mắt và qua người duyệt độc lập (references/soat.md)");
-  return { ...res, loi, outPath, work, htmlPath, tong, daDang: dd };
+  return { ...res, loi, outPath, work, htmlPath, tong, daDang: dd, bangAsset: ba.anh };
 }
 
 module.exports = { dung, ghepHtml };

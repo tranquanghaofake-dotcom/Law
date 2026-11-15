@@ -41,5 +41,6 @@ Giao khi mọi hạng ≥ 4 — kể cả Thẩm mỹ (PPTEval dùng Nội dung 
 | từ chỉ có trong ảnh | chữ bị chụp vào ảnh — tách ra thành `data-t` |
 | ◇ nền: ít loại / một nền > 80 % / > 6 slide liền | thêm N2/N3 đúng vai, đổi góc hoạ tiết N1 (`he-nen.md`) |
 | ◇ asset: hình dùng trên > 3 slide | vẽ hình chính riêng cho ý đó; motif cố ý cùng vai → `data-lap` |
+| ◇ phong cách: hình có gradient / bóng mờ / quá nhiều màu so với thẻ | vẽ lại theo `thiet-ke/phong-cach.json`; xem `<tên>_lop/asset.jpg` để thấy hình lệch |
 | ◇ bảng: một kiểu / một kiểu > 40 % | chọn lại kiểu theo loại thông tin (`trinh-bay-du-lieu.md`) |
 | PPTX lệch HTML (tờ soát) | dùng thuộc tính CSS mà PowerPoint dựng lại được (`hop-dong-html.md`) |

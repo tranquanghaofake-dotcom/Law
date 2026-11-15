@@ -160,3 +160,7 @@ Lý do: deck Chương 3 đúng nội dung nhưng "chưa đẹp, đơn giản, tr
 - Máy: `scripts/da_dang.js` (gọi từ `dung.js`) in dải nền + thống kê, báo lỗi ◇: < 3 loại nền (deck ≥ 12 slide), một nền > 80 %, > 6 slide liền cùng nền cùng vị trí hoạ tiết, một hình > 3 slide (trừ `data-lap`), mọi bảng một kiểu hoặc một kiểu > 40 % (≥ 5 bảng). Có test.
 - Rubric Thẩm mỹ thêm tiêu chí đa dạng trong hệ thống; "đổi nền / màu ngẫu nhiên không theo vai" là điểm 1.
 **Giới hạn**: số đo ước lượng bằng mắt trên mẫu thương mại, chưa kiểm với sinh viên; ngưỡng có thể chỉnh sau khi dùng trên 2–3 bài.
+
+## 12. Bổ sung 15/11/2026 — tay nghề: phong cách asset, bộ thành phần bảng, so sánh với mẫu (Hào duyệt, chọn phong cách B "phẳng 2 tông" cho Chương 3)
+**Vấn đề**: người duyệt chấm Thẩm mỹ 3 — hình trộn phong cách (người bán 3D + biểu tượng phẳng), bảng chưa có điểm nhấn; quy trình mới đo số lượng (loại nền, kiểu bảng, hình lặp) chứ chưa đo tay nghề.
+**Thay đổi**: thẻ phong cách `thiet-ke/phong-cach.json` + `scripts/kiem_phong_cach.js` (◇ gradient / bóng mờ / quá nhiều màu); bảng xem thử asset tự động `<tên>_lop/asset.jpg`; bộ thành phần bảng `hinh/bang.css` (T1–T13, màu qua biến — thành phần kỹ thuật, không phải mẫu bố cục); mỗi bảng và hình chính làm 2 phương án; `scripts/to_so_sanh.js` ghép slide cạnh mẫu tham chiếu cho người duyệt. Có test.

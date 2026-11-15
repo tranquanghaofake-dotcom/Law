@@ -32,7 +32,7 @@ function thuThap() {
       nen = [ho, ...[...new Set(goc)].sort()].join("|");
     }
     const asset = [...s.querySelectorAll('img[data-l]:not([data-alt="Hình trang trí"])')].map((im) => (im.getAttribute("src") || "").split("/").pop() + (im.hasAttribute("data-lap") ? " (lặp)" : ""));
-    const bang = [...s.querySelectorAll("[data-bang], table, [class~='bang'], [class^='bang']")].filter((el) => !el.parentElement.closest("[data-bang], table, [class~='bang'], [class^='bang']"))
+    const bang = [...s.querySelectorAll("[data-bang], table, [class~='bang'], [class^='bang'], [class~='tb']")].filter((el) => !el.parentElement.closest("[data-bang], table, [class~='bang'], [class^='bang'], [class~='tb']"))
       .map((el) => el.dataset.bang || (el.tagName === "TABLE" ? "table" : el.className.trim()));
     out.push({ slide: i + 1, nen, ho, asset: [...new Set(asset)], bang });
   });

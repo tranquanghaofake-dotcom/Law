@@ -17,7 +17,7 @@ description: "Use when the user wants a slide deck (PowerPoint .pptx, editable t
 | 3 | Kịch bản theo **mạch của thể loại** (bài giảng: bám dàn ý gốc, không cốt truyện): mỗi slide một khẳng định + bằng chứng hình + nguồn + giây + lời nói | `kich-ban.md` |
 | 4 | Tham chiếu 15–20 mẫu chuyên nghiệp đúng thể loại → hệ thống thiết kế của bài (lưới, thang chữ, **hệ nền** `he-nen.md`, **bộ trình bày dữ liệu** `trinh-bay-du-lieu.md`, 8–10 kiểu slide) → bản đồ nhịp (kiểu · nền · bảng/hình) → 2–3 hướng phong cách | `thiet-ke/` + bản ghi lựa chọn |
 | 5 | Làm mẫu 3–4 slide thật; slide then chốt làm 3 phương án rồi chọn | `slides/` (bản đầu) |
-| 6 | Brief minh hoạ + **kiểm kê asset** (mỗi phần ≥ 1 hình chính riêng, một hình ≤ 3 slide) → vẽ asset + hoạ tiết nền (SVG tự vẽ) + tìm ảnh thật | `thiet-ke/asset.md`, `asset/`, `anh/`, `ghi-cong.md` |
+| 6 | **Thẻ phong cách** (`thiet-ke/phong-cach.json`) → brief minh hoạ + **kiểm kê asset** (mỗi phần ≥ 1 hình chính riêng, một hình ≤ 3 slide) → vẽ asset + hoạ tiết nền (SVG tự vẽ) + tìm ảnh thật | `thiet-ke/asset.md`, `asset/`, `anh/`, `ghi-cong.md` |
 | 7 | Thiết kế + dựng toàn bộ | `slides/*.html`, `style.css` → `<tên>.pptx` |
 | 8 | Soát: máy → nhìn ảnh từng slide → **người duyệt độc lập** (agent `opus`) → sửa, tối đa 2 vòng | `nhat-ky.md` (điểm rubric, lỗi đã sửa) |
 | 9 | Diễn tập: lời nói trong notes, đo giờ, slide có thể cắt | notes trong slide |
@@ -32,17 +32,17 @@ description: "Use when the user wants a slide deck (PowerPoint .pptx, editable t
 ```
 node scripts/dung.js <thư_mục_bài> [--ten=<tên>] [--khong-soat] [--nhap]
 ```
-Ghép `slides/*.html` → `hinh/build.js` (chữ `data-t` thành hộp chữ thật, `data-l` thành lớp ảnh rời, font Anton + Be Vietnam Pro nhúng, hiệu ứng / Morph gốc PowerPoint) → kiểm lỗi → `<tên>_lop/tong-N.jpg` (ảnh tổng 3×3). **Mọi `⚠` là lỗi, mã thoát 1** (`--nhap` để xem trước dù còn lỗi). Máy bắt: **đa dạng** (◇ ít loại nền, một nền > 80 %, > 6 slide liền cùng nền, hình lặp > 3 slide, bảng một kiểu — in dải nền + thống kê), chữ không sửa được, chữ trong SVG, tràn hộp, ra ngoài vùng an toàn, chữ bị lớp ảnh đè, hai hộp chữ đè nhau, chữ < 12 pt, tương phản WCAG, dòng mồ côi, lệch 4–10 px, thiếu tiêu đề / chữ thay thế, PPTX lệch HTML. Máy **không** bắt được xấu / khó hiểu / sai nội dung → bước 8.
+Ghép `slides/*.html` → `hinh/build.js` (chữ `data-t` thành hộp chữ thật, `data-l` thành lớp ảnh rời, font Anton + Be Vietnam Pro nhúng, hiệu ứng / Morph gốc PowerPoint) → kiểm lỗi → `<tên>_lop/tong-N.jpg` (ảnh tổng 3×3). **Mọi `⚠` là lỗi, mã thoát 1** (`--nhap` để xem trước dù còn lỗi). Máy bắt: **phong cách asset** (◇ hình lệch thẻ: gradient, bóng mờ, quá nhiều màu — kèm bảng xem thử `asset.jpg`), **đa dạng** (◇ ít loại nền, một nền > 80 %, > 6 slide liền cùng nền, hình lặp > 3 slide, bảng một kiểu — in dải nền + thống kê), chữ không sửa được, chữ trong SVG, tràn hộp, ra ngoài vùng an toàn, chữ bị lớp ảnh đè, hai hộp chữ đè nhau, chữ < 12 pt, tương phản WCAG, dòng mồ côi, lệch 4–10 px, thiếu tiêu đề / chữ thay thế, PPTX lệch HTML. Máy **không** bắt được xấu / khó hiểu / sai nội dung → bước 8.
 
 ## Luật cứng
 - **Đúng trước, đẹp sau.** Mọi con số, điều luật, định nghĩa trên slide phải có dòng nguồn trong `noi-dung.md`; luật ghi số hiệu văn bản, điều/khoản, tình trạng hiệu lực; không bịa. Lỗi của tài liệu gốc → báo người dùng ở điểm duyệt A, không tự sửa im lặng.
-- **Hình tự vẽ hoặc ảnh thật có nguồn**; không kho hình dán / icon 3D làm hình chính, không ảnh AI. Một phong cách minh hoạ cho cả deck (đã duyệt ở C).
+- **Hình tự vẽ hoặc ảnh thật có nguồn**; không kho hình dán / icon 3D làm hình chính, không ảnh AI. **Một thẻ phong cách cho cả deck** (đã duyệt ở C, máy kiểm); mỗi bảng và hình chính làm 2 phương án rồi chọn.
 - **Không ẩn dụ khó hiểu**: hình phải cho thấy chính sự vật / quan hệ trong nội dung; che chữ vẫn đoán được ý.
 - **Không thiết kế khi chưa có tham chiếu và hệ thống thiết kế của bài** (bước 4): đẹp là so được với mẫu chuyên nghiệp, không phải "sạch lỗi máy".
 - **Kinh nghiệm của bài ghi vào `nhat-ky.md` của bài.** Chỉ sửa skill khi lỗi nằm ở công cụ (`hinh/`, `scripts/`) hoặc ở quy trình chung — không thêm mẫu / hình của một bài vào skill.
 - Giao bài: `dung.js` sạch lỗi + đã nhìn mọi ảnh tổng + người duyệt độc lập chấm mọi hạng ≥ 4/5 (cả Thẩm mỹ). Nhắc người dùng: mở bằng PowerPoint 2019 / Microsoft 365, bấm **Enable Editing** để thấy font, báo lại nếu Morph / hiệu ứng chạy sai.
 
 ## Công cụ
-`hinh/build.js` (HTML → PPTX) · `hinh/xml.js`, `hinh/may_quay.js` (Morph, máy quay) · `hinh/kiem_de.js` (chữ bị đè) · `hinh/tao_font.js` + `hinh/fonts/` · `scripts/dung.js` · `scripts/da_dang.js` (đo đa dạng) · `scripts/kiem_html.js` · `scripts/soat_chi_tiet.js` · `scripts/co_chu.js` · `scripts/find_images.py`, `img_quality.py`, `fetch_image.py`, `cutout.py` (ảnh) · `scripts/outline.py` (rút dàn ý tài liệu gốc) · `scripts/ban_ghi_chu.py` (bản in ghi chú) · `scripts/morph_cap.py`, `xem_morph.js` (soát Morph) · `scripts/dong_goi.py` (zip tải lên claude.ai, ≤ 200 file). Ví dụ tối thiểu: `examples/mau/`.
+`hinh/build.js` (HTML → PPTX) · `hinh/xml.js`, `hinh/may_quay.js` (Morph, máy quay) · `hinh/kiem_de.js` (chữ bị đè) · `hinh/tao_font.js` + `hinh/fonts/` · `scripts/dung.js` · `scripts/da_dang.js` (đo đa dạng) · `scripts/kiem_phong_cach.js` · `scripts/to_so_sanh.js` (slide cạnh mẫu tham chiếu) · `hinh/bang.css` (bộ thành phần bảng T1–T13) · `scripts/kiem_html.js` · `scripts/soat_chi_tiet.js` · `scripts/co_chu.js` · `scripts/find_images.py`, `img_quality.py`, `fetch_image.py`, `cutout.py` (ảnh) · `scripts/outline.py` (rút dàn ý tài liệu gốc) · `scripts/ban_ghi_chu.py` (bản in ghi chú) · `scripts/morph_cap.py`, `xem_morph.js` (soát Morph) · `scripts/dong_goi.py` (zip tải lên claude.ai, ≤ 200 file). Ví dụ tối thiểu: `examples/mau/`.
 
 Cài: `npm install` trong thư mục skill. Cần Node 18+, Playwright + Chromium (`PW_CHROMIUM=<đường dẫn>`), LibreOffice + `pdftoppm` cho tờ soát. Kiểm skill: `npm test`.

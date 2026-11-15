@@ -36,7 +36,7 @@ Agent tool, **`model: "opus"`**, agent mới (không fork), chạy sau khi `dung
 Bạn là người duyệt độc lập một deck bài giảng. Không sửa file. Đọc:
 - <bài>/brief.md (khán giả, mục tiêu), <bài>/noi-dung.md (nội dung + bảng nguồn), <bài>/kich-ban.md
 - <bài>/thiet-ke/ (bảng tham chiếu, hệ thống thiết kế, bản đồ nhịp)
-- ảnh từng slide: <bài>/<tên>_lop/h-*.jpg (xem hết, bằng mắt)
+- ảnh từng slide: <bài>/<tên>_lop/h-*.jpg (xem hết, bằng mắt) · bảng xem thử asset: <bài>/<tên>_lop/asset.jpg · tờ so sánh với mẫu: <bài>/<tên>_lop/so-sanh.jpg
 - chữ từng slide: <bài>/<tên>_lop/deck.html
 Việc:
 1. Chấm 1–5 kèm lý do: Nội dung (đúng, đủ, có nguồn, không vượt nguồn) · Thiết kế (thứ bậc, khoảng thở, nhất quán, hình đúng sự vật) · Mạch lạc (cả deck, đúng mạch của thể loại) · Dễ hiểu (sinh viên mới học nhìn 3 giây có hiểu ý slide không) · Thẩm mỹ (đặt từng slide cạnh bảng tham chiếu: có lạc tông, đơn điệu, lệch lưới, hình như hình dán không; slide có theo hệ thống thiết kế và bản đồ nhịp không).

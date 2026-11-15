@@ -38,4 +38,5 @@ Nguồn: 54 mẫu tham chiếu (spec `docs/specs/2026-11-14-slide-chuan-v2-quy-t
 3. Không kẻ đủ lưới trừ bảng lịch / số liệu dày.
 4. Cùng bảng màu, cùng cỡ chữ thân (≥ 26 px trên slide 1920) cho mọi kiểu; màu theo vai (bên, loại) giữ cố định cả deck.
 5. Số canh phải, cùng số chữ số thập phân; đơn vị ghi một lần ở đầu cột hoặc chân bảng.
-6. HTML: gắn `data-bang="T2"` (mã kiểu) cho khối bảng — máy (`scripts/da_dang.js`) đếm kiểu và báo ◇ khi mọi bảng một kiểu hoặc một kiểu > 40 %.
+6. **Bộ thành phần** `hinh/bang.css` (nạp sẵn khi dựng): `.tb.tb-ke` T2 · `.tb.tb-dau` T1 · `.tb.tb-nhan[data-nhan=3]` T3 · `.tb.tb-co` T4 (ô `b.co` / `b.khong`) · `.tb-the > .the(.noi)` T5 · `.tb-mt > .o` T6 · `.tb-so` T9 · `.tb-hs > .hang` T11 · `.tb-ci > .cot` T12 · `.tb-thanh > i[style=flex:số]` T13; hàng `.tb-h` / `.tb-r(.on)`, số canh phải `.tb-so-phai`, tỉ lệ cột `data-cot="2-1-1"`. Màu: biến `--tb-chu, --tb-nhan, --tb-nhat, --tb-ke, --tb-c1..c4` trong `style.css` của bài.
+7. HTML: gắn `data-bang="T2"` (mã kiểu) cho khối bảng — máy (`scripts/da_dang.js`) đếm kiểu và báo ◇ khi mọi bảng một kiểu hoặc một kiểu > 40 %.

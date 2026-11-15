@@ -45,28 +45,30 @@ Bảng, mỗi slide một dòng:
 **4c. Bản đồ nhịp** (`thiet-ke/nhip.md`): ba dải song song theo kịch bản — **kiểu slide**, **loại nền** (N1–N6 + vị trí hoạ tiết), **kiểu bảng / hình chính**. Không quá 3 slide liền cùng kiểu; cứ 4–5 slide có một slide "thở"; không quá 6 slide liền cùng nền cùng vị trí hoạ tiết; mỗi phần có ≥ 1 hình chính riêng. Soát ba dải trên giấy trước khi dựng.
 **4d. Hướng phong cách**: 2–3 hướng, mỗi hướng: bảng màu (≤ 1 màu chủ + 1 màu nhấn + trung tính; tương phản ≥ 4,5 : 1), chữ (Anton / Be Vietnam Pro, các độ đậm — font nhúng sẵn), kiểu minh hoạ (nét, khối, bóng, mức chi tiết), lưới (lề ≥ 80 px, cột), cách dùng ảnh thật, **1 slide mẫu dựng thật** (bìa hoặc slide khái niệm).
 - Hướng phải hợp đề tài và khán giả (bài luật: nghiêm, rõ; không trang trí vô nghĩa).
+- Hướng được chọn ghi thành **thẻ phong cách asset** `thiet-ke/phong-cach.json` (máy kiểm mọi SVG theo thẻ, `scripts/kiem_phong_cach.js`) + mô tả trong `he-thong.md`: kiểu (phẳng 2–3 tông / bán tả thực / nét), góc nhìn (thẳng / ¾), nguồn sáng, có gradient không, bóng (không / bóng phẳng một màu), độ dày nét, bo góc, mức chi tiết, bảng màu cho hình. **Một deck một thẻ**: hình nào lệch thẻ (vd. người bán 3D đứng cạnh biểu tượng phẳng) là lỗi Thẩm mỹ, kể cả khi từng hình đẹp.
 - Bản ghi lựa chọn: A / B / C kèm ảnh, khuyến nghị.
 
 ## 5. Làm mẫu 3–4 slide
 Bìa · một slide khái niệm · một sơ đồ / so sánh · một slide số liệu hoặc bài tập — dựng ra PPTX bằng `scripts/dung.js`, sạch lỗi máy, glance test 3 giây.
 - **Slide then chốt làm 3 phương án** (bìa, khái niệm trung tâm, sơ đồ chính), đặt cạnh nhau với bảng tham chiếu, chọn phương án tốt nhất theo `soat.md` mục 2 (hạng Thẩm mỹ) — không làm một phương án rồi sửa dần.
+- **Mỗi bảng và mỗi hình chính làm 2 phương án** (bước 7 cũng vậy): hai kiểu trình bày khác nhau trong `trinh-bay-du-lieu.md` (vd. T3 cột nhấn vs T5 thẻ), hai cách vẽ hình (cảnh vs vật thể); dựng cả hai, đặt cạnh mẫu tham chiếu cùng loại bằng `scripts/to_so_sanh.js`, giữ cái hơn, ghi lý do một dòng trong `nhat-ky.md`.
 
 **Điểm duyệt C** (bài có tài liệu gốc: gộp 4 + 5 — gửi bảng tham chiếu, hệ thống thiết kế, bản đồ nhịp, mẫu; bài mới: duyệt 4 và 5 riêng).
 
 ## 6. Asset + ảnh
 - **Brief minh hoạ từng slide** (cột trong `kich-ban.md` hoặc `thiet-ke/brief-hinh.md`): hình chứng minh ý nào, cảnh gì, ai / vật gì, tỉ lệ theo hệ thống, tiêu điểm ở đâu, nhãn nào đặt lên vật nào. Không có brief → không vẽ. **Ít hình, to, có tiêu điểm**; không dán cùng một vật lặp lại khắp deck như hình trang trí; vật xuất hiện lại chỉ khi nó đóng cùng vai trò.- **Kiểm kê asset** (`thiet-ke/asset.md`, bảng: hình · vai (sự vật nó chỉ) · slide dùng · trạng thái vẽ): mỗi phần có ≥ 1 **hình chính** vẽ riêng cho đúng ý của phần (không lấy hình của phần khác đổi nhãn); **một hình ≤ 3 slide**, trừ motif có vai cố định cả deck (khai `data-lap`); đa dạng loại hình: vật thể, cảnh / quan hệ, biểu tượng cùng bộ, hoạ tiết nền, ảnh thật — không chỉ một bộ nhân vật + toà nhà dán khắp nơi. Tham khảo mẫu: 4–6 hình chính cho 8–12 slide nội dung (≈ 1 hình / phần), icon cùng nét cùng cỡ.
-- **Hình tự vẽ** (SVG trong `asset/`): cùng bảng màu, cùng nét, cùng hướng sáng của phong cách đã duyệt. Vẽ xong dựng **bảng xem thử** (mọi asset trên một trang) và nhìn bằng mắt trước khi đặt vào slide. Không chữ trong SVG — chữ là HTML `data-t` đặt lên hình.
+- **Hình tự vẽ** (SVG trong `asset/`): đúng **thẻ phong cách** (`thiet-ke/phong-cach.json`) — cùng bảng màu, cùng nét, cùng hướng sáng. Vẽ **cả bộ trước** (người, toà nhà, vật thể, biểu tượng, hoạ tiết nền), mỗi lần dựng `dung.js` tự ra **bảng xem thử** `<tên>_lop/asset.jpg` (mọi hình trên một tờ): nhìn tờ này trước khi nhìn slide — lệch phong cách, lệch thước, hình sơ sài lộ ra ngay khi đứng cạnh nhau. Không chữ trong SVG — chữ là HTML `data-t` đặt lên hình.
 - **Ảnh thật** (`anh/`): tìm theo brief (`scripts/find_images.py --brief`), mở ảnh ứng viên chấm bằng mắt (đúng chủ đề, nét, bố cục), ghi TASL (tên – tác giả – nguồn – giấy phép) vào `ghi-cong.md`. Chiếu trên lớp: được dùng ảnh báo có ghi nguồn; công khai: chỉ CC0 / PD / CC BY / CC BY-SA. Không ảnh AI.
 
 ## 7. Thiết kế + dựng toàn bộ
-- Mỗi slide một file `slides/NN-ten.html`, thiết kế **tự do** theo kịch bản và phong cách — quy ước kỹ thuật ở `hop-dong-html.md`.
+- Mỗi slide một file `slides/NN-ten.html`, thiết kế **tự do** theo kịch bản và phong cách — quy ước kỹ thuật ở `hop-dong-html.md`. Bảng / số liệu dùng **bộ thành phần** `hinh/bang.css` (`.tb` + biến thể T1–T13, màu đặt bằng biến `--tb-*` trong `style.css` của bài) để có độ hoàn thiện cao sẵn; chỉ tự viết CSS bảng khi không kiểu nào hợp.
 - `node scripts/dung.js <bài>` sau mỗi 5–8 slide; sửa hết `⚠` trước khi làm tiếp (lỗi nhỏ dồn lại khó sửa). Đọc dòng **Đa dạng** và **dải nền** máy in ra, so với `nhip.md`; lỗi ◇ (nền, asset lặp, kiểu bảng) cũng là lỗi.
 - Lời nói từ kịch bản vào `data-notes` của `<section>`.
 
 ## 8. Soát (tối đa 2 vòng sửa)
 1. Máy: `dung.js` sạch.
 2. Nhìn: mở mọi `tong-N.jpg` và slide nghi ngờ (`h-NN.jpg`); đi qua `soat.md` mục 1.
-3. **Người duyệt độc lập**: gọi agent mới, `model: "opus"`, theo mẫu ở `vai-tro.md`; nhận bảng điểm rubric + danh sách lỗi.
+3. **Người duyệt độc lập**: gọi agent mới, `model: "opus"`, theo mẫu ở `vai-tro.md`; gửi kèm **tờ so sánh** (`scripts/to_so_sanh.js`: 6–10 slide tiêu biểu — bìa, mở chương, bảng, sơ đồ, số liệu — đặt cạnh mẫu tham chiếu cùng loại) và **bảng xem thử asset**; nhận bảng điểm rubric + danh sách lỗi.
 4. Sửa → dựng lại → nhìn lại. Ghi điểm, lỗi, cách sửa vào `nhat-ky.md`.
 Lỗi cần đánh đổi (cắt nội dung, đổi phong cách) → bản ghi lựa chọn gửi người dùng, không tự quyết.
 
