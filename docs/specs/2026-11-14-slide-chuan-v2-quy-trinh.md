@@ -142,3 +142,11 @@ Chỉ lên tiếng ở D1–D5, khi có ≥ 2 hướng hợp lý thật sự, kh
 - Quy trình nội bộ của các agency (Duarte, Ethos3, 24Slides…): không có tài liệu công khai, phần vai trò và điểm duyệt là tổng hợp từ kinh nghiệm chung.
 - SlideGen, Paper2Slides: mới đọc qua tóm tắt.
 - Các mức cỡ chữ "≥ 24 pt": là khuyến nghị thông dụng, không phải chuẩn W3C.
+
+## 10. Bổ sung 15/11/2026 — nâng phần thẩm mỹ (Hào duyệt: A, bỏ cốt truyện)
+Lý do: deck Chương 3 đúng nội dung nhưng "chưa đẹp, đơn giản, trình bày xấu và vô lý" — một khuôn cho mọi slide, hình dán lặp lại, không lưới, không nhịp, không bước nào chịu trách nhiệm thẩm mỹ.
+- Bước 3: **mạch theo thể loại** (bài giảng bám dàn ý gốc, không cốt truyện xuyên suốt; bản án; báo cáo; bảo vệ).
+- Bước 4 thay bằng: **tham chiếu 15–20 mẫu chuyên nghiệp đúng thể loại → hệ thống thiết kế của bài (lưới, thang chữ, 8–10 kiểu slide) → bản đồ nhịp → hướng phong cách**; tất cả trong `thiet-ke/` của thư mục bài.
+- Bước 5: slide then chốt làm 3 phương án rồi chọn. Bước 6: brief minh hoạ từng slide, ít hình, to, không dán vật lặp lại.
+- Rubric thêm hạng **Thẩm mỹ** (so với bảng tham chiếu); giao khi mọi hạng ≥ 4.
+- Giữ mục tiêu gốc: skill vẫn chỉ chứa quy trình + công cụ; tham chiếu, hệ thống thiết kế, asset là của từng bài.

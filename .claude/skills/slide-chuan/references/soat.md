@@ -21,7 +21,8 @@ Thêm cho hình: **hình là chính sự vật** (không ẩn dụ phải giải
 | Thiết kế | thứ bậc rõ, khoảng thở, nhất quán, hình đúng sự vật | nhất quán nhưng dày / nhạt | rối, lệch phong cách, hình sai nghĩa |
 | Mạch lạc | đọc liền tiêu đề thành lập luận | có chỗ nhảy ý | rời rạc |
 | Dễ hiểu | sinh viên mới học hiểu từng slide trong 3 giây | phải nghe giảng mới hiểu | khó hiểu cả khi nghe |
-Giao khi mọi hạng ≥ 4 (PPTEval dùng Nội dung / Thiết kế / Mạch lạc, thang 1–5 — arXiv 2501.03936).
+| **Thẩm mỹ** (so với bảng tham chiếu) | đứng cạnh mẫu chuyên nghiệp không lạc tông: thứ bậc rõ, cân bằng, căn theo lưới, khoảng thở đều, nhất quán kiểu slide, có nhịp | sạch nhưng đơn điệu, một khuôn lặp lại, hình như hình dán | lệch lưới, chật / trống bất thường, hình sai tỉ lệ |
+Giao khi mọi hạng ≥ 4 — kể cả Thẩm mỹ (PPTEval dùng Nội dung / Thiết kế / Mạch lạc, thang 1–5 — arXiv 2501.03936).
 
 ## 3. Máy kiểm (`scripts/dung.js`) — đọc thông báo thế nào
 | Thông báo | Sửa |
