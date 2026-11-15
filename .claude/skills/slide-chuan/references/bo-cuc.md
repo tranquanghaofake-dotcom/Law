@@ -8,6 +8,7 @@ Bài học Chương 3 (15/11/2026, Hào: "vẫn là một mớ hổ lốn"): sau
 | **Biên tập học thuật** (luật, kinh tế, báo cáo) | ảnh / tranh tư liệu hai màu · sơ đồ nét + icon nét cùng độ dày · chữ lớn (Lora) · bảng kẻ ngang | nhân vật hoạt hình, đồ vật vẽ phẳng, hoạ tiết trang trí |
 | **Minh hoạ** (phổ biến, thiếu nhi, truyền thông) | nhân vật CC0 (Open Peeps…) + đồ vật vẽ cùng nét viền · icon cùng nét | ảnh tư liệu |
 | **Dữ liệu** (báo cáo số) | biểu đồ, số lớn, bảng · icon nét | minh hoạ, ảnh |
+| **Tư vấn pháp lý — khối phẳng** (bài giảng luật cho sinh viên, mặc định khi chủ bài muốn "chuyên nghiệp như mẫu") | nền sáng + dải chéo / mảng màu theo vai · cảnh minh hoạ phẳng vẽ bằng code (vật pháp lý: ô, nhà, hợp đồng có dấu, búa, mặt tiền cột, đồng hồ cát, người bán thân) · khối thông tin tô đặc (ô số, thẻ có dải đầu, huy hiệu icon) · chữ Lora lớn | ảnh chụp ngoài vai "ảnh nói"; icon nét mảnh làm hình chính |
 
 `phong-cach.json` khai: `bangMau` (≤ 10 màu, kể cả màu chữ phụ, màu kẻ), `loaiHinh` (vd. `["anh-hai-mau","net"]`), `boCuc` (danh sách bố cục mẫu), `tieuDeCoDinh`, `nguong` (chỉnh ngưỡng đa dạng nếu hướng tối giản cần nhiều slide cùng nền giấy). Máy (`scripts/nhat_quan.js`) bắt: màu ngoài bảng (chữ, nền, viền HTML và màu trong SVG), hình không khai / sai `data-loai`, slide không khai `data-mau` hoặc bố cục ngoài danh sách, tiêu đề lệch chỗ.
 
@@ -44,4 +45,15 @@ Viết thành hằng số / hàm trong `deck.js`, không để từng slide tự
 - **Cột đều**: các cột lá / bước chia đều theo tâm (vd. 330 / 750 / 1170 / 1590), hộp mô tả hẹp hơn khoảng cách tâm ≥ 40 px.
 - **Ảnh quét**: cắt sát tranh, bỏ viền giấy và viền máy quét trước khi tô hai màu; chú thích ảnh neo theo đáy (`bottom`), không theo `top`, để chú thích hai dòng không tràn.
 - **Icon**: chọn icon trọn hình ở cỡ lớn (car-crash bị cắt nửa trông như hỏng → `scale` cho trách nhiệm); không có icon tô đặc duy nhất giữa bộ icon nét.
+
+## 7. Giàu có hệ thống — chống "quá đơn giản" (Chương 3, 15/11/2026)
+Sau khi chữa hổ lốn bằng cắt bớt, deck thành sạch nhưng nghèo (Hào: "vẫn còn quá đơn giản từ nền, layout, tiêu đề"). Hai lỗi là hai đầu của một trục: **hổ lốn = nhiều loại thứ; nghèo = ít thứ và dùng rụt rè**. Đích: **ít loại thứ, dùng mạnh tay** — như mẫu thương mại (ref-42, 43, 48):
+- **Nền có vai**: mỗi slide sáng có một khối hình học lớn màu nhạt (dải chéo, cung tròn, mảng góc) đổi vị trí theo bố cục; mở phần / câu chốt nền đậm có dải sáng hơn; chia đôi bằng panel màu chủ cùng một bề rộng cho cả deck. Hoạ tiết (chấm, lấp lánh) **không nằm dưới chữ**.
+- **Hình chính là cảnh, không là hình dán**: 2–5 vật minh hoạ phẳng ghép thành cảnh có lớp (vật trước / sau, mặt đất, mưa xiên, cụm lấp lánh 1 lớn + 2 nhỏ), đặt **trên** dải màu, có thể tràn mép. Không dùng "icon trong vòng tròn" làm mặc định cho mọi slide. Mỗi slide nội dung có một khối hình ≥ 30 % diện tích (bảng, thẻ tô màu cũng tính).
+- **Một vật = một nghĩa, dùng lặp**: toà nhà có huy hiệu = DNBH ở mọi slide; mặt tiền 5 cột chỉ cho "năm nguyên tắc". Không để một hình mang hai nghĩa.
+- **Khối thông tin tô đặc**: ô số, chip nhãn, thẻ có dải đầu màu + bóng phẳng lệch, huy hiệu vuông bo chứa icon trắng, bảng có đầu cột tô và tab màu đầu hàng, thanh so sánh ngay trong ô.
+- **Tiêu đề**: Lora 72 px, luôn có một cụm từ khoá tô màu chủ; tiêu đề là câu khẳng định.
+- **Nghĩa màu giữ nguyên**: đỏ chỉ rủi ro / "không"; ô lựa chọn câu hỏi một màu (màu khác dành cho đáp án đúng).
+- **Máy đo**: `scripts/phong_phu.js` báo ◇ khi < 70 % slide có khối thị giác ≥ 25 % diện tích hoặc > 30 % slide nền trơn. Vật minh hoạ của bài viết trong `minh-hoa.js` **ở thư mục bài** (không lưu vào skill); tờ thử vật (`thu-mh`) soát phong cách trước khi ghép.
+- **Cổng**: 8 slide mẫu (bìa, mở phần, sơ đồ, số lớn, bảng, trích luật, so sánh, câu hỏi) → người duyệt chấm thêm hạng **Phong phú ≥ 4** khi đặt cạnh mẫu.
 

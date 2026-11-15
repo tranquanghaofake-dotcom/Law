@@ -8,7 +8,7 @@ const P = {
   nen: "#FBF7EF", trang: "#FFFFFF", muc: "#1B2A28", phu: "#55625F", ke: "#DCD3C4",
   x1: "#0E4F49", x2: "#2C7A6C", x3: "#8EC3B6", x4: "#DDECE7",
   v1: "#946512", v2: "#E2A52E", v3: "#F3D27E", v4: "#F8ECCD",
-  d1: "#B13A2E", d4: "#F6DDD7",
+  d1: "#B13A2E", d4: "#F6DDD7", da: "#E8B48F",
 };
 const f1 = (n) => +n.toFixed(1);
 
@@ -61,10 +61,10 @@ function khien(cx, cy, s, { trai = P.x1, phai = P.x2, dau = P.trang } = {}) {
 }
 
 // hợp đồng có dấu đỏ (x, y góc trái trên, w rộng)
-function hopDong(x, y, w, { giay = P.trang, gap = P.ke } = {}) {
+function hopDong(x, y, w, { giay = P.trang, gap = P.ke, bar = true } = {}) {
   const h = w * 1.3, g = w * 0.2, k = (a) => f1(a);
   let s = `<path d="M${x} ${y} H${k(x + w - g)} L${x + w} ${k(y + g)} V${k(y + h)} H${x} Z" fill="${giay}"/><path d="M${k(x + w - g)} ${y} V${k(y + g)} H${x + w} Z" fill="${gap}"/>`
-    + `<rect x="${k(x + w * 0.14)}" y="${k(y + h * 0.11)}" width="${k(w * 0.48)}" height="${k(h * 0.05)}" rx="3" fill="${P.x1}"/>`;
+    + (bar ? `<rect x="${k(x + w * 0.14)}" y="${k(y + h * 0.11)}" width="${k(w * 0.48)}" height="${k(h * 0.05)}" rx="3" fill="${P.x1}"/>` : "");
   for (let i = 0; i < 5; i++) s += `<rect x="${k(x + w * 0.14)}" y="${k(y + h * (0.25 + i * 0.085))}" width="${k(w * (i % 2 ? 0.58 : 0.72))}" height="${k(h * 0.028)}" rx="2" fill="${gap}"/>`;
   const sx = x + w * 0.7, sy = y + h * 0.8, r = w * 0.15;
   s += `<path d="M${k(x + w * 0.14)} ${k(y + h * 0.84)} q${k(w * 0.06)} ${k(-w * 0.1)} ${k(w * 0.1)} 0 t${k(w * 0.1)} 0 t${k(w * 0.1)} 0" fill="none" stroke="${P.x2}" stroke-width="${k(w * 0.022)}" stroke-linecap="round"/>`
@@ -109,4 +109,49 @@ function muiKhoi(x1, x2, y, t, { mau = P.x1, vien = "", dut = false, nen = "" } 
   return vien ? `<path d="${d}" fill="${nen || "none"}" stroke="${vien}" stroke-width="4" stroke-linejoin="round" ${dut ? 'stroke-dasharray="14 10"' : ""}/>` : `<path d="${d}" fill="${mau}"/>`;
 }
 
-module.exports = { P, iconNet, iconDac, cham, sao, giot, o, nha, xu, khien, hopDong, matTien, dongHo, lua, muiKhoi };
+
+// cụm lấp lánh: 1 lớn + 2 nhỏ
+const saoCum = (x, y, r, mau = P.v2) => sao(x, y, r, mau) + sao(x + r * 1.7, y - r * 0.9, r * 0.5, mau) + sao(x + r * 1.25, y + r * 1.3, r * 0.36, mau);
+
+// người (tượng bán thân phẳng): cx, đáy, cao s
+function nguoi(cx, by, s, { ao = P.x2, ao2 = P.x1, toc = P.muc } = {}) {
+  const k = (a) => f1(a * s);
+  return `<path d="M${cx - k(0.42)} ${by} V${by - k(0.22)} Q${cx - k(0.42)} ${by - k(0.48)} ${cx - k(0.14)} ${by - k(0.5)} H${cx + k(0.14)} Q${cx + k(0.42)} ${by - k(0.48)} ${cx + k(0.42)} ${by - k(0.22)} V${by} Z" fill="${ao}"/>`
+    + `<path d="M${cx + k(0.06)} ${by - k(0.5)} H${cx + k(0.14)} Q${cx + k(0.42)} ${by - k(0.48)} ${cx + k(0.42)} ${by - k(0.22)} V${by} H${cx + k(0.06)} Z" fill="${ao2}"/>`
+    + `<rect x="${cx - k(0.07)}" y="${by - k(0.6)}" width="${k(0.14)}" height="${k(0.14)}" fill="${P.da}"/><path d="M${cx - k(0.12)} ${by - k(0.5)} L${cx} ${by - k(0.36)} L${cx + k(0.12)} ${by - k(0.5)} Z" fill="${P.nen}"/>`
+    + `<circle cx="${cx}" cy="${by - k(0.76)}" r="${k(0.2)}" fill="${P.da}"/><path d="M${cx - k(0.21)} ${by - k(0.74)} Q${cx - k(0.24)} ${by - k(1.02)} ${cx + k(0.02)} ${by - k(1)} Q${cx + k(0.25)} ${by - k(0.98)} ${cx + k(0.21)} ${by - k(0.74)} Q${cx + k(0.1)} ${by - k(0.86)} ${cx - k(0.21)} ${by - k(0.74)} Z" fill="${toc}"/>`;
+}
+
+// búa toà án (tâm, cỡ) — "do luật buộc"
+function bua(cx, cy, s) {
+  const k = (a) => f1(a * s);
+  return `<rect x="${cx - k(0.42)}" y="${cy + k(0.3)}" width="${k(0.84)}" height="${k(0.16)}" rx="${k(0.04)}" fill="${P.v1}"/><rect x="${cx - k(0.32)}" y="${cy + k(0.2)}" width="${k(0.64)}" height="${k(0.12)}" rx="${k(0.04)}" fill="${P.v2}"/>`
+    + `<g transform="rotate(-38 ${cx} ${cy})"><rect x="${cx - k(0.05)}" y="${cy - k(0.12)}" width="${k(0.1)}" height="${k(0.62)}" rx="${k(0.05)}" fill="${P.v1}"/>`
+    + `<rect x="${cx - k(0.32)}" y="${cy - k(0.32)}" width="${k(0.64)}" height="${k(0.24)}" rx="${k(0.06)}" fill="${P.x1}"/><rect x="${cx - k(0.24)}" y="${cy - k(0.32)}" width="${k(0.06)}" height="${k(0.24)}" fill="${P.x3}"/><rect x="${cx + k(0.18)}" y="${cy - k(0.32)}" width="${k(0.06)}" height="${k(0.24)}" fill="${P.x3}"/></g>`;
+}
+
+// phiếu tự chọn: tờ giấy có ba ô, hai ô đã tích (x, y góc trái trên, w)
+function phieu(x, y, w) {
+  const h = w * 1.25, k = (a) => f1(a);
+  let s = `<rect x="${x}" y="${y}" width="${w}" height="${k(h)}" rx="${k(w * 0.05)}" fill="${P.trang}"/><rect x="${k(x + w * 0.3)}" y="${k(y - w * 0.06)}" width="${k(w * 0.4)}" height="${k(w * 0.14)}" rx="${k(w * 0.04)}" fill="${P.v1}"/>`;
+  [true, false, true].forEach((tich, i) => { const yy = y + h * (0.2 + i * 0.26);
+    s += `<rect x="${k(x + w * 0.12)}" y="${k(yy)}" width="${k(w * 0.16)}" height="${k(w * 0.16)}" rx="${k(w * 0.03)}" fill="${tich ? P.v4 : P.nen}" stroke="${P.v1}" stroke-width="${k(w * 0.02)}"/>`
+      + (tich ? `<path d="M${k(x + w * 0.15)} ${k(yy + w * 0.08)} l${k(w * 0.04)} ${k(w * 0.05)} l${k(w * 0.09)} ${k(-w * 0.11)}" fill="none" stroke="${P.x1}" stroke-width="${k(w * 0.035)}" stroke-linecap="round" stroke-linejoin="round"/>` : "")
+      + `<rect x="${k(x + w * 0.36)}" y="${k(yy + w * 0.03)}" width="${k(w * (i === 1 ? 0.36 : 0.5))}" height="${k(w * 0.04)}" rx="2" fill="${P.ke}"/><rect x="${k(x + w * 0.36)}" y="${k(yy + w * 0.1)}" width="${k(w * 0.3)}" height="${k(w * 0.035)}" rx="2" fill="${P.ke}"/>`; });
+  return s;
+}
+
+// toà nhà doanh nghiệp bảo hiểm: mặt tiền 4 cột + huy hiệu ô trên mái (dùng lặp cả deck)
+const dnbh = (cx, by, w, o2 = {}) => { const st = w * 0.05, hc = w * (o2.cao || 0.5), top = by - 3 * st - hc, e = top - w * 0.07;
+  return matTien(cx, by, w, 4, o2) + `<circle cx="${cx}" cy="${f1(e - w * 0.1)}" r="${f1(w * 0.075)}" fill="${P.v2}"/>` + o(cx, f1(e - w * 0.14), f1(w * 0.1), { m1: P.x1, m2: P.x2 }).replace(/<rect[^>]*fill="#1B2A28"\/>$/, ""); };
+
+// bong bóng thoại có đuôi (x, y, w, h)
+const bongThoai = (x, y, w, h, mau = P.v2) => `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${f1(h * 0.22)}" fill="${mau}"/><path d="M${f1(x + w * 0.22)} ${y + h - 2} l${f1(-w * 0.06)} ${f1(h * 0.28)} l${f1(w * 0.2)} ${f1(-h * 0.28)} Z" fill="${mau}"/>`;
+
+// chồng giấy phía sau một tờ chính (nghiêng nhẹ)
+const chongGiay = (x, y, w) => { const h = w * 1.3; return `<rect x="${x}" y="${y}" width="${w}" height="${f1(h)}" rx="6" fill="${P.x4}" transform="rotate(-8 ${f1(x + w / 2)} ${f1(y + h / 2)})"/><rect x="${x}" y="${y}" width="${w}" height="${f1(h)}" rx="6" fill="${P.x3}" transform="rotate(5 ${f1(x + w / 2)} ${f1(y + h / 2)})"/>`; };
+
+// bút (đầu ở x,y; dài L; nghiêng)
+const but = (x, y, L, goc = -40) => `<g transform="rotate(${goc} ${x} ${y})"><rect x="${x}" y="${f1(y - L * 0.05)}" width="${L}" height="${f1(L * 0.1)}" rx="${f1(L * 0.05)}" fill="${P.x1}"/><rect x="${f1(x + L * 0.62)}" y="${f1(y - L * 0.05)}" width="${f1(L * 0.08)}" height="${f1(L * 0.1)}" fill="${P.v2}"/><path d="M${x} ${f1(y - L * 0.05)} L${f1(x - L * 0.14)} ${y} L${x} ${f1(y + L * 0.05)} Z" fill="${P.v1}"/></g>`;
+
+module.exports = { saoCum, nguoi, bua, phieu, dnbh, bongThoai, chongGiay, but, P, iconNet, iconDac, cham, sao, giot, o, nha, xu, khien, hopDong, matTien, dongHo, lua, muiKhoi };
