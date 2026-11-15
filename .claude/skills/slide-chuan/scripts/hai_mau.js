@@ -11,6 +11,7 @@ async function haiMau(vao, ra, { toi = "#0B4540", sang = "#F6F1E7", rong, cao, g
   const { data, info } = await im.grayscale().normalise().raw().toBuffer({ resolveWithObject: true });
   const a = rgb(toi), b = rgb(sang), out = Buffer.alloc(info.width * info.height * 3);
   for (let i = 0; i < info.width * info.height; i++) { const t = Math.pow(data[i * info.channels] / 255, +gamma); for (let c = 0; c < 3; c++) out[i * 3 + c] = Math.round(a[c] + (b[c] - a[c]) * t); }
+  require("fs").mkdirSync(path.dirname(path.resolve(ra)), { recursive: true });
   await sharp(out, { raw: { width: info.width, height: info.height, channels: 3 } }).jpeg({ quality: 90, chromaSubsampling: "4:4:4" }).toFile(ra);
   return { ra, rong: info.width, cao: info.height };
 }
