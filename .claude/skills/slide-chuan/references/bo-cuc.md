@@ -57,3 +57,14 @@ Sau khi chữa hổ lốn bằng cắt bớt, deck thành sạch nhưng nghèo (
 - **Máy đo**: `scripts/phong_phu.js` báo ◇ khi < 70 % slide có khối thị giác ≥ 25 % diện tích hoặc > 30 % slide nền trơn. Vật minh hoạ của bài viết trong `minh-hoa.js` **ở thư mục bài** (không lưu vào skill); tờ thử vật (`thu-mh`) soát phong cách trước khi ghép.
 - **Cổng**: 8 slide mẫu (bìa, mở phần, sơ đồ, số lớn, bảng, trích luật, so sánh, câu hỏi) → người duyệt chấm thêm hạng **Phong phú ≥ 4** khi đặt cạnh mẫu.
 
+## 8. Chữ dễ đọc + hình cách điệu (Chương 3, vòng 4 — Hào: "chữ rõ ràng, dễ nhìn và hiểu; hình phong phú, sáng tạo, có thể cách điệu")
+**Chữ** — chiếu trên máy chiếu lớp học, người ngồi cuối lớp phải đọc được:
+- Thân bài ≥ 30 px (nhãn ≥ 28 px; dòng nguồn ≥ 26 px); chữ phụ màu đủ đậm để đạt **≥ 7 : 1** khi chữ < 32 px (máy chiếu làm bạc màu — xám #55… không đủ, dùng #3F4B48); chữ trên ô màu đậm thì ≥ 32 px đậm.
+- **≤ 45 chữ / slide nội dung** (bảng, câu hỏi, so sánh ≤ 75; trích nguyên văn ≤ 95), không đoạn nào quá 3 dòng. Phụ đề trùng ý với hình thì bỏ — hình chính đã nói.
+- **Ví dụ số → hình**: "nhà 1 tỷ, STBH 600 triệu, thiệt hại 200 triệu → bồi thường 120 triệu" thành dải ô màu nối mũi tên (mỗi ô một màu theo nghĩa: tài sản bạc hà, STBH vàng, thiệt hại đỏ nhạt, kết quả vàng sáng). Nhãn lặp lại ở mọi hàng → gom thành một chú giải trên đầu bảng.
+- Máy: `scripts/de_doc.js` báo ◇ dễ đọc (số chữ, chữ < 28 px, đoạn dài, tương phản < 7 : 1 cho chữ nhỏ — nền dưới chữ tìm theo hình học vì thẻ là lớp ảnh).
+**Hình cách điệu** — một thủ pháp cho mỗi vai, lặp lại có chủ ý:
+- Ảnh trong khung **vòm** (bìa), **tròn** (mở phần), panel chia đôi (trích luật); kèm một mảng màu lệch phía sau và một viền vàng lệch phía trước — chiều sâu không cần bóng mờ. `scripts/phu_mau.js --khung=vom|tron|bo --hat=0.05` (hạt in nhẹ cho cảm giác ảnh in).
+- Thẻ nổi đè lên mép ảnh (bìa: "Chuyển giao rủi ro tài chính qua hợp đồng") — phá khung, nối chữ với ảnh.
+- Lấp lánh 1 lớn + 2 nhỏ, lưới chấm: chỉ ở góc trống, không dưới chữ.
+
