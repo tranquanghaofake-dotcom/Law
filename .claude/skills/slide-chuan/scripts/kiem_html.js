@@ -5,6 +5,7 @@
 //   3. dòng chữ của một [data-t] lòi ra ngoài hộp của chính nó (tràn) hoặc ra ngoài vùng an toàn của slide (lề 40 px)
 //   4. slide không có hộp chữ [data-t][data-tieu-de] (thành placeholder tiêu đề: trình đọc màn hình, mục lục, bộ kiểm khả năng tiếp cận)
 //   5. lớp ảnh [data-l] thiếu data-alt (hình trang trí: data-alt="Hình trang trí" → PowerPoint đánh dấu decorative)
+//   6. hộp chữ có nền riêng đè lên lớp ảnh mà thiếu data-l → mất nền trong PPTX
 function kiemHtml() {
   const out = [], txt = (s) => (s || "").replace(/\s+/g, " ").trim();
   [...document.querySelectorAll("section.s")].forEach((s, si) => {
@@ -35,6 +36,12 @@ function kiemHtml() {
       const R = el.getBoundingClientRect(); if (!R.width || !R.height) continue;
       const ra = Math.max(Math.round((S.left - R.left) * k), Math.round((R.right - S.right) * k), Math.round((S.top - R.top) * k), Math.round((R.bottom - S.bottom) * k));
       if (ra > 4) out.push(`slide ${n}: lớp ảnh "${el.dataset.l}" tràn khỏi mép slide ${ra} px — bị cắt khi chiếu; dời / thu hình (cố ý tràn mép thì gắn data-ngoai)`); }
+    // 6. hộp chữ có NỀN RIÊNG (viên nhãn, chip, ô) đè lên một lớp ảnh đứng trước nó mà bản thân không có data-l: build vẽ nền đó vào ảnh nền slide,
+    //    lớp ảnh nằm trên che mất → trong PPTX chỉ còn chữ (thường là chữ sáng trên nền sáng). Gắn data-l + data-alt cho chính hộp chữ.
+    const coNen = (el) => { const c = getComputedStyle(el).backgroundColor; return c && c !== "transparent" && !/rgba\([^)]*,\s*0\)$/.test(c); };
+    for (const el of s.querySelectorAll("[data-t]:not([data-l])")) { if (!hien(el) || !coNen(el)) continue; const R = el.getBoundingClientRect();
+      const lay = [...s.querySelectorAll("[data-l]")].find((L) => L !== el && !L.contains(el) && !el.contains(L) && (el.compareDocumentPosition(L) & Node.DOCUMENT_POSITION_PRECEDING) && (() => { const Q = L.getBoundingClientRect(); return Q.left < R.right && Q.right > R.left && Q.top < R.bottom && Q.bottom > R.top; })());
+      if (lay) out.push(`slide ${n}: hộp chữ “${txt(el.textContent).slice(0, 30)}” có nền riêng nằm trên lớp ảnh "${lay.dataset.l}" — trong PPTX nền bị lớp ảnh che mất; gắn thêm data-l + data-alt cho chính hộp chữ`); }
     // 5
     for (const el of s.querySelectorAll("[data-l]")) if (!el.dataset.alt && hien(el)) out.push(`slide ${n}: lớp ảnh "${el.dataset.l}" thiếu data-alt (mô tả; hình trang trí ghi data-alt="Hình trang trí")`);
   });

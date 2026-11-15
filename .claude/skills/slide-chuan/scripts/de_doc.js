@@ -35,7 +35,7 @@ function thuThapDeDoc() {
   return out;
 }
 
-const NGUONG_DD = { tuToiDa: 45, tuToiDaRong: 75, tuToiDaTrich: 95, nhoToiDa: 0.15, dongToiDa: 3, tuongPhanNho: 7 };
+const NGUONG_DD = { tuToiDa: 45, tuToiDaRong: 75, tuToiDaTrich: 95, nhanToiDa: 12, nhoToiDa: 0.15, dongToiDa: 3, tuongPhanNho: 7 };
 const RONG = new Set(["bang", "hoi", "so-sanh"]);   // bảng, câu hỏi, so sánh: nới số chữ; trích nguyên văn: nới hơn (không được cắt lời luật)
 const MIEN = /^(nguon|so-trang|chu-anh)$/, NHAN = /^(chip)$/;   // nhãn chữ in hoa giãn cách: không tính vào tỉ lệ chữ nhỏ (vẫn phải ≥ 12 pt)
 
@@ -44,11 +44,13 @@ function danhGiaDeDoc(slides, the, nguong = {}) {
   if (!the || the.deDoc === false) return { loi, tom: "" };
   const ng = { ...NGUONG_DD, ...nguong }; let tong = 0, nhoTong = 0;
   for (const s of slides) {
-    const ds = s.hop.filter((h) => !MIEN.test(h.lop)), tu = ds.reduce((a, h) => a + h.tu, 0), nho = ds.filter((h) => h.co < 28 && !NHAN.test(h.lop)).reduce((a, h) => a + h.tu, 0);
+    // chữ đọc liền = hộp từ 4 chữ trở lên (câu, đoạn); nhãn ngắn ≤ 3 chữ (số, tên ô, nhãn sơ đồ) mắt lướt qua — đếm riêng
+    const ds = s.hop.filter((h) => !MIEN.test(h.lop)), tu = ds.filter((h) => h.tu >= 4).reduce((a, h) => a + h.tu, 0), soNhan = ds.filter((h) => h.tu < 4 && !h.lop.startsWith("td")).length, tatCa = ds.reduce((a, h) => a + h.tu, 0), nho = ds.filter((h) => h.co < 28 && !NHAN.test(h.lop)).reduce((a, h) => a + h.tu, 0);
     tong += tu; nhoTong += nho;
     const tran = s.mau === "trich" ? ng.tuToiDaTrich : RONG.has(s.mau) ? ng.tuToiDaRong : ng.tuToiDa;
-    if (tu > tran) loi.push(`◇ dễ đọc: slide ${s.slide} có ${tu} chữ (> ${tran}) — rút câu, tách slide, hoặc biến ý thành hình`);
-    if (tu >= 12 && nho / tu > ng.nhoToiDa) loi.push(`◇ dễ đọc: slide ${s.slide} có ${Math.round((100 * nho) / tu)} % chữ dưới 28 px — nâng cỡ chữ thân bài ≥ 28 px (ghi chú nguồn được miễn)`);
+    if (tu > tran) loi.push(`◇ dễ đọc: slide ${s.slide} có ${tu} chữ đọc liền (> ${tran}) — rút câu, tách slide, hoặc biến ý thành hình`);
+    if (soNhan > ng.nhanToiDa && !RONG.has(s.mau)) loi.push(`◇ dễ đọc: slide ${s.slide} có ${soNhan} nhãn ngắn (> ${ng.nhanToiDa}) — gom nhãn lặp thành chú giải`);
+    if (tatCa >= 12 && nho / tatCa > ng.nhoToiDa) loi.push(`◇ dễ đọc: slide ${s.slide} có ${Math.round((100 * nho) / tatCa)} % chữ dưới 28 px — nâng cỡ chữ thân bài ≥ 28 px (ghi chú nguồn được miễn)`);
     for (const h of ds) {
       if (h.co < 40 && h.dong > ng.dongToiDa) loi.push(`◇ dễ đọc: slide ${s.slide} có đoạn ${h.dong} dòng “${h.chu.slice(0, 40)}” — rút còn ≤ ${ng.dongToiDa} dòng`);
       if (h.tp != null && h.co < 32 && h.tp < ng.tuongPhanNho) loi.push(`◇ dễ đọc: slide ${s.slide} chữ “${h.chu.slice(0, 30)}” ${Math.round(h.co)} px tương phản ${h.tp} : 1 (< ${ng.tuongPhanNho} : 1 cho chữ nhỏ trên máy chiếu) — đậm màu chữ`);
