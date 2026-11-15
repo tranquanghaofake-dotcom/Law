@@ -38,3 +38,28 @@ test("deck sai bị bắt: chữ không data-t, chữ trong SVG, tràn hộp, th
   for (const re of [/không nằm trong \[data-t\]/, /chữ trong SVG/, /tràn khỏi hộp/, /không có tiêu đề/, /thiếu data-alt/]) assert.match(all, re);
   process.exitCode = 0;
 });
+
+// Gốc: deck Chương 3 (bài giảng bảo hiểm) — 3 chỗ chữ đè chữ mà máy báo "Không còn lỗi" (lõi 50 % khung dòng chỉ bắt khi hai dòng cách < ~0,6 em).
+test("hai hộp chữ đè nhau bị bắt, kể cả cùng cha; số lớn + đơn vị sát dưới không báo nhầm", { timeout: 240000 }, async () => {
+  const d = fs.mkdtempSync(path.join(os.tmpdir(), "sc-de-")); fs.mkdirSync(path.join(d, "slides"));
+  const td = (x) => `<div data-t data-tieu-de style="position:absolute;left:120px;top:60px;width:1500px;font:800 60px/1.1 'Be Vietnam Pro'">${x}</div>`;
+  fs.writeFileSync(path.join(d, "slides", "01-the.html"), `<section class="s" data-title="the">${td("Thẻ")}
+  <div class="the" style="position:absolute;left:120px;top:300px;width:520px;height:340px;background:#fff">
+    <div data-t style="position:absolute;left:40px;top:30px;width:440px;font:800 44px/1.2 'Be Vietnam Pro'">Nguyên tắc trung thực tuyệt đối</div>
+    <div data-t style="position:absolute;left:40px;top:100px;width:440px;font:400 30px/1.4 'Be Vietnam Pro'">Bên mua phải kê khai đầy đủ.</div>
+  </div></section>`);
+  fs.writeFileSync(path.join(d, "slides", "02-ds.html"), `<section class="s" data-title="ds">${td("Danh sách")}
+  ${["Dòng một ngắn", "Dòng hai rất dài nên phải xuống thêm một dòng nữa và đè", "Dòng ba bị đè"].map((x, i) =>
+    `<div data-t style="position:absolute;left:120px;top:${300 + 70 * i}px;width:700px;font:400 32px/1.4 'Be Vietnam Pro'">${x}</div>`).join("\n  ")}
+  </section>`);
+  fs.writeFileSync(path.join(d, "slides", "03-so.html"), `<section class="s" data-title="so">${td("Số lớn")}
+  <div data-t style="position:absolute;left:120px;top:300px;font:400 200px/1 'Anton'">850</div>
+  <div data-t style="position:absolute;left:120px;top:500px;font:400 34px/1.2 'Be Vietnam Pro'">triệu đồng mỗi vụ</div>
+  </section>`);
+  const r = await dung(d, { ten: "de", soat: false, nhap: true }), de = r.loi.filter((x) => /hai hộp chữ đè nhau/.test(x));
+  assert.ok(de.some((x) => /slide 1 .*Nguyên tắc trung thực.*Bên mua/.test(x)), "tiêu đề 2 dòng đè mô tả trong thẻ:\n" + r.loi.join("\n"));
+  assert.ok(de.some((x) => /slide 2 .*Dòng hai rất dài.*Dòng ba/.test(x)), "dòng dài xuống dòng đè dòng dưới:\n" + r.loi.join("\n"));
+  assert.ok(!de.some((x) => /Dòng một/.test(x)), "hai dòng cách đủ không được báo:\n" + de.join("\n"));
+  assert.ok(!de.some((x) => /slide 3/.test(x)), "số lớn + đơn vị sát dưới (không chạm nét) không được báo:\n" + de.join("\n"));
+  process.exitCode = 0;
+});
