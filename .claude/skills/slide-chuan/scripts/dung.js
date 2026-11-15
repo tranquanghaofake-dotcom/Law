@@ -5,6 +5,7 @@
 //   slides/*.html   mỗi file chứa ≥ 1 <section class="s" …>…</section> (thứ tự = tên file) — quy ước: references/hop-dong-html.md
 //   style.css       CSS riêng của bài (tuỳ chọn)
 //   asset/, anh/    hình tự vẽ, ảnh thật — đường dẫn trong HTML tính từ thư mục bài
+// Đa dạng (nền, asset lặp, kiểu bảng): scripts/da_dang.js — lỗi ◇ cũng là lỗi.
 // Ra: <tên>.pptx, <tên>_lop/ (deck.html, h-XX.jpg từng slide, tong-N.jpg ảnh tổng 3×3, soat-*.jpg so HTML với PPTX qua LibreOffice)
 // Mã thoát: 0 sạch · 1 còn lỗi (mọi ⚠ đều là lỗi — mục tiêu "càng ít lỗi càng tốt"; --nhap để dựng xem trước dù còn lỗi) · 2 không dựng được.
 const fs = require("fs"), path = require("path");
@@ -45,7 +46,8 @@ async function dung(dir, { ten, soat = true, nhap = false } = {}) {
   console.log(`· ${files.length} file slide → ${htmlPath}`);
   const { kiemHtml } = require("./kiem_html"), { kiemDeTrongTrang } = require(path.join(HINH, "kiem_de"));
   const loi = [];
-  const truoc = async (page) => { const a = await page.evaluate(kiemHtml), b = await page.evaluate(kiemDeTrongTrang); return [...a, ...b]; };
+  const { thuThap, danhGia } = require("./da_dang"); let dd = null;
+  const truoc = async (page) => { const a = await page.evaluate(kiemHtml), b = await page.evaluate(kiemDeTrongTrang); dd = danhGia(await page.evaluate(thuThap)); return [...a, ...b, ...dd.loi]; };
   const { build } = require(path.join(HINH, "build"));
   const res = await build({ htmlPath, outPath, soat, giuLop: true, truoc });
   loi.push(...(res.warn || []), ...(res.lost || []));
@@ -59,12 +61,13 @@ async function dung(dir, { ten, soat = true, nhap = false } = {}) {
     catch (e) { console.log(`ℹ không đo được cỡ chữ: ${String(e.message || e).split("\n")[0]}`); }
   }
   const tong = await anhTong(work);
+  if (dd) console.log(dd.bang);
   console.log(`✓ ${res.slides} slide → ${outPath} · ${res.text} hộp chữ · ${res.pics} lớp ảnh · ${res.fx} hiệu ứng · ${res.morph} Morph`);
   console.log(`✓ Ảnh tổng (xem bằng mắt trước khi giao): ${tong.join(", ")}`);
   if (soat) console.log(`✓ Tờ soát HTML ↔ PPTX: ${path.join(work, "soat-*.jpg")}`);
   if (loi.length) { console.log(`⚠ ${loi.length} lỗi:\n  ${loi.join("\n  ")}`); if (!nhap) process.exitCode = 1; }
   else console.log("✓ Không còn lỗi máy bắt được — còn phải soát bằng mắt và qua người duyệt độc lập (references/soat.md)");
-  return { ...res, loi, outPath, work, htmlPath, tong };
+  return { ...res, loi, outPath, work, htmlPath, tong, daDang: dd };
 }
 
 module.exports = { dung, ghepHtml };
