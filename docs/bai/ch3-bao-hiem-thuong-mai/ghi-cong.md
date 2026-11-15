@@ -19,7 +19,7 @@ Mọi ảnh, tranh đều là tư liệu **phạm vi công cộng**. Bản trên
 | Mở phần 01 | `anh/unsplash/mo-phan.png` (từ `o-vang.jpg`) | Người cầm ô vàng dưới mưa | C T (@christiantagalog) · unsplash.com/photos/50YFv7iN118 |
 | Trích định nghĩa hợp đồng | `anh/unsplash/trich.jpg` (từ `ky-hd.jpg`) | Bàn tay ký hợp đồng | Jakub Żerdzicki · unsplash.com/photos/QI6NLgN5XnM |
 
-Minh hoạ **unDraw** (Katerina Limpitsouni, giấy phép unDraw: dùng tự do, không bắt ghi công), tô lại theo bảng màu bài; bản gốc ở `asset/undraw/`: legal-counsel, handshake-deal, calendar, guidelines, checklist, questions (undraw.co).
+Minh hoạ **unDraw** (Katerina Limpitsouni, giấy phép unDraw: dùng tự do, không bắt ghi công), tô lại theo bảng màu bài; bản gốc ở `asset/undraw/`: legal-counsel, handshake-deal, choose (undraw.co); bản gốc khác trong thư mục chưa dùng ở bộ mẫu hiện tại.
 
 Icon: Tabler Icons, giấy phép MIT (`asset/tabler/`), chỉnh độ dày nét bằng nét sơ đồ.
 Sơ đồ, biểu đồ, bảng: dựng bằng code (`deck.js` → `asset/hinh/`).
