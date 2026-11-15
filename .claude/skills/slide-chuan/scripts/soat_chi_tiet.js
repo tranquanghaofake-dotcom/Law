@@ -81,7 +81,18 @@ async function soat(html) {
       for (const q of dn.q) { const x0 = Math.max(0, Math.round(q[0])), x1 = Math.min(1919, Math.round(q[0] + q[2])), y0 = Math.max(0, Math.round(q[1])), y1 = Math.min(1079, Math.round(q[1] + q[3]));
         const bx = Math.max(1, Math.floor((x1 - x0) / 40)), by = Math.max(1, Math.floor((y1 - y0) / 8));
         for (let x = x0; x < x1; x += bx) for (let y = y0; y < y1; y += by) if (net(x, y, dn.mau) && !h.longR.some((r) => x >= r[0] && x <= r[0] + r[2] && y >= r[1] && y <= r[1] + r[3])) ds.push(tp(dn.mau.slice(0, 3), px(B, x, y))); }
-      if (ds.length < 6) continue; ds.sort((a, b) => a - b);
+      if (ds.length < 6) {
+        // CHỮ CHÌM VÀO NỀN: ẩn / hiện chữ cho ảnh gần như y hệt → không có nét để đo (vd. chữ trắng kế thừa từ section nền đậm, nằm trong thẻ trắng).
+        // Đo màu chữ với màu nền chiếm đa số sau các dòng chữ (ảnh ẩn chữ); nền không yên (ảnh, hoạ tiết dày) thì không kết luận.
+        const dem = new Map(); let tong = 0;
+        for (const q of dn.q) { const x0 = Math.max(0, Math.round(q[0])), x1 = Math.min(1919, Math.round(q[0] + q[2])), y0 = Math.max(0, Math.round(q[1])), y1 = Math.min(1079, Math.round(q[1] + q[3]));
+          for (let x = x0; x < x1; x += 3) for (let y = y0; y < y1; y += 3) { if (h.longR.some((r) => x >= r[0] && x <= r[0] + r[2] && y >= r[1] && y <= r[1] + r[3])) continue; const c = px(B, x, y), key = c.map((v) => v >> 3).join(","); dem.set(key, (dem.get(key) || 0) + 1); tong++; } }
+        if (tong < 20) continue;
+        const [mk, mn] = [...dem.entries()].sort((a, b) => b[1] - a[1])[0]; if (mn / tong < 0.6) continue;
+        const nen = mk.split(",").map((v) => (+v << 3) + 4), co = dn.co || h.co, v = tp(dn.mau.slice(0, 3), nen), lon = (co >= 24 && dn.dam >= 700) || co >= 32, nguong = lon ? 3 : 4.5;
+        if (v < nguong) ketQua.tuongPhan.push(`“${h.chu}”${dn.con ? " (đoạn nhấn)" : ""} .${h.lop} ${Math.round(co)} px: ${v.toFixed(2)} : 1 < ${nguong} : 1 — chữ chìm vào nền (gần như không thấy), kiểm màu chữ kế thừa`);
+        continue; }
+      ds.sort((a, b) => a - b);
       if (ds[Math.floor(ds.length / 2)] < 1.25) continue;   // nền sau nét chữ trùng màu chữ ở đa số điểm: chữ còn nằm trong một lớp ảnh (huy hiệu dựng sẵn) — không đo được, soát bằng mắt
       const co = dn.co || h.co, v = ds[Math.floor(ds.length * 0.15)], lon = (co >= 24 && dn.dam >= 700) || co >= 32, nguong = lon ? 3 : 4.5;
       if (v < nguong) ketQua.tuongPhan.push(`“${h.chu}”${dn.con ? " (đoạn nhấn)" : ""} .${h.lop} ${Math.round(co)} px: ${v.toFixed(2)} : 1 < ${nguong} : 1`); }
