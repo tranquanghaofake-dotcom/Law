@@ -24,7 +24,8 @@ function thuThapDeDoc() {
       const R = t.getBoundingClientRect(), px = R.left + Math.min(R.width, 160) / 2, py = R.top + Math.min(R.height, 60) / 2; let nen = null, anh = false;
       const ung = [...s.querySelectorAll("*")].filter((e) => e !== t && !t.contains(e) && !e.contains(t) && (t.compareDocumentPosition(e) & Node.DOCUMENT_POSITION_PRECEDING)).filter((e) => { const q = e.getBoundingClientRect(); return px >= q.left && px <= q.right && py >= q.top && py <= q.bottom; })
         .filter((e) => e.tagName === "IMG" || (() => { const c = getComputedStyle(e).backgroundColor; return c && !/rgba\([^)]*,\s*0\)$/.test(c) && c !== "transparent"; })());
-      const tren = ung[ung.length - 1];
+      const tren = ung[ung.length - 1], rieng = getComputedStyle(t).backgroundColor;
+      if (rieng && rieng !== "transparent" && !/rgba\([^)]*,\s*0\)$/.test(rieng)) { nen = rgb(rieng); anh = false; } else
       if (tren) { if (tren.tagName === "IMG") anh = !/data-loai="nen"/.test(tren.outerHTML.slice(0, 200)) || false; else nen = rgb(getComputedStyle(tren).backgroundColor); }
       if (!nen && !anh) nen = nenCua(t, s);
       const tpv = nen && !anh ? Math.round(tp(rgb(cs.color), nen) * 10) / 10 : null;
