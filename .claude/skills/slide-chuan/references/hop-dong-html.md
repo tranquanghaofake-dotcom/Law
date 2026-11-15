@@ -20,6 +20,7 @@ Thiết kế **tự do** — bất kỳ HTML / CSS / SVG nào Chromium vẽ đư
 |---|---|---|
 | `data-t` | **hộp chữ thật** — đúng font, cỡ, màu, chỗ xuống dòng; gõ lại được | MỌI chữ người dùng có thể muốn sửa: tiêu đề, nhãn, số liệu, chú thích |
 | `data-l="tên"` | **lớp ảnh rời** (PNG/JPEG 2×) — kéo, xoá, đổi hiệu ứng được | hình vẽ, ảnh, sơ đồ, thẻ nền cần hiện riêng |
+| `data-t` + `data-l` trên **cùng** phần tử | nền của hộp chữ thành lớp ảnh, chữ là hộp chữ nằm trên | **bắt buộc** cho nhãn / chip / ô chữ có nền riêng đặt trên ảnh hay panel — chỉ `data-t` thì nền bị vẽ vào ảnh nền slide và bị lớp ảnh che mất trong PPTX (máy: `kiem_html` mục 6) |
 | (không gắn) | gộp vào **ảnh nền** của slide | nền, mảng màu, hoạ tiết tĩnh |
 - `data-tieu-de` trên hộp chữ tiêu đề → placeholder tiêu đề (trình đọc màn hình, mục lục, Check Accessibility). Bắt buộc mỗi slide.
 - `data-alt="…"` trên mỗi `data-l`: mô tả nội dung; hình trang trí ghi `data-alt="Hình trang trí"` (PowerPoint đánh dấu decorative).
