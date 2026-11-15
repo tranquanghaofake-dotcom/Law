@@ -22,6 +22,7 @@ Thiết kế **tự do** — bất kỳ HTML / CSS / SVG nào Chromium vẽ đư
 | `data-l="tên"` | **lớp ảnh rời** (PNG/JPEG 2×) — kéo, xoá, đổi hiệu ứng được | hình vẽ, ảnh, sơ đồ, thẻ nền cần hiện riêng |
 | `data-t` + `data-l` trên **cùng** phần tử | nền của hộp chữ thành lớp ảnh, chữ là hộp chữ nằm trên | **bắt buộc** cho nhãn / chip / ô chữ có nền riêng đặt trên ảnh hay panel — chỉ `data-t` thì nền bị vẽ vào ảnh nền slide và bị lớp ảnh che mất trong PPTX (máy: `kiem_html` mục 6) |
 | đoạn nhấn trong hộp chữ (`<em>`, `<mark>`, `<span>`) | chỉ đổi **màu chữ** (hoặc đậm) | PowerPoint giữ màu chữ từng đoạn nhưng **không giữ nền tô** của đoạn — `<mark>` tô nền trên HTML thành chữ thường trong PPTX, dễ thành chữ tối trên nền tối (máy: `kiem_html` mục 7). Cần nền thì tách thành hộp riêng `data-t` + `data-l` |
+| khối trang trí có nền (vạch kẻ giữa các dòng, ô màu) đặt **trên** thẻ / panel là lớp ảnh | gắn `data-l` + `data-alt` cho chính khối đó | khối không phải lớp ảnh, không phải hộp chữ bị vẽ vào ảnh nền slide → thẻ (lớp ảnh) che mất trong PPTX dù HTML vẫn thấy (máy: `kiem_html` mục 8) |
 | (không gắn) | gộp vào **ảnh nền** của slide | nền, mảng màu, hoạ tiết tĩnh |
 - `data-tieu-de` trên hộp chữ tiêu đề → placeholder tiêu đề (trình đọc màn hình, mục lục, Check Accessibility). Bắt buộc mỗi slide.
 - `data-alt="…"` trên mỗi `data-l`: mô tả nội dung; hình trang trí ghi `data-alt="Hình trang trí"` (PowerPoint đánh dấu decorative).

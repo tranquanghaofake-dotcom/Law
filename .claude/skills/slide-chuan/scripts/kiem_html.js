@@ -7,6 +7,7 @@
 //   5. lớp ảnh [data-l] thiếu data-alt (hình trang trí: data-alt="Hình trang trí" → PowerPoint đánh dấu decorative)
 //   6. hộp chữ có nền riêng đè lên lớp ảnh mà thiếu data-l → mất nền trong PPTX
 //   7. đoạn chữ tô nền bên trong hộp chữ (<mark>, <span style="background">) → PPTX chỉ giữ màu chữ, mất nền tô
+//   8. khối có nền (vạch kẻ, ô màu) không là lớp ảnh, không là hộp chữ, nằm trên một lớp ảnh đứng trước nó → bị vẽ vào nền slide, lớp ảnh che mất trong PPTX
 function kiemHtml() {
   const out = [], txt = (s) => (s || "").replace(/\s+/g, " ").trim();
   [...document.querySelectorAll("section.s")].forEach((s, si) => {
@@ -48,6 +49,13 @@ function kiemHtml() {
     for (const el of s.querySelectorAll("[data-t]")) { if (!hien(el)) continue;
       for (const d of el.querySelectorAll("*")) { if (d.closest("[data-t]") !== el || !coNen(d) || !txt(d.textContent)) continue;
         out.push(`slide ${n}: đoạn “${txt(d.textContent).slice(0, 30)}” trong hộp chữ “${txt(el.textContent).slice(0, 24)}” có nền tô riêng (<${d.tagName.toLowerCase()}>) — PPTX không giữ nền tô của một đoạn chữ; nhấn bằng màu chữ, hoặc tách thành hộp riêng có data-l`); } }
+    // 8. khối trang trí có NỀN (vạch kẻ giữa các dòng, ô màu) mà không phải lớp ảnh [data-l] cũng không phải hộp chữ [data-t]: build vẽ nó vào ảnh nền slide,
+    //    nên lớp ảnh (thẻ, panel) đứng trước nó trong DOM mà chồng lên sẽ che mất trong PPTX (HTML vẫn thấy). Gắn data-l + data-alt cho khối đó.
+    //    Bỏ qua lớp hình nền toàn slide (data-loai="nen") — phần đục của nó không đo được ở đây.
+    for (const el of s.querySelectorAll("*")) { if (el.closest("[data-l],[data-t],svg") || el.querySelector("[data-t],[data-l]") || !hien(el) || !coNen(el)) continue;
+      const R = el.getBoundingClientRect(); if (R.width < 1 || R.height < 1) continue;
+      const lay = [...s.querySelectorAll("[data-l]")].find((L) => L.dataset.loai !== "nen" && !L.contains(el) && (el.compareDocumentPosition(L) & Node.DOCUMENT_POSITION_PRECEDING) && (() => { const Q = L.getBoundingClientRect(); return Q.left < R.right && Q.right > R.left && Q.top < R.bottom && Q.bottom > R.top; })());
+      if (lay) out.push(`slide ${n}: khối "${(el.className && el.className.baseVal == null ? el.className : el.tagName.toLowerCase()).toString().split(" ")[0]}" có nền nằm trên lớp ảnh "${lay.dataset.l}" — trong PPTX bị vẽ vào nền slide và bị lớp ảnh che mất; gắn data-l + data-alt cho khối đó`); }
     // 5
     for (const el of s.querySelectorAll("[data-l]")) if (!el.dataset.alt && hien(el)) out.push(`slide ${n}: lớp ảnh "${el.dataset.l}" thiếu data-alt (mô tả; hình trang trí ghi data-alt="Hình trang trí")`);
   });
