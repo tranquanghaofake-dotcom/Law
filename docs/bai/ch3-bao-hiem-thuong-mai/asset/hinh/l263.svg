@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="960 70 940 950" width="940" height="950"><circle cx="1430" cy="540" r="462" fill="none" stroke="#E2A52E" stroke-width="6"/><path transform="translate(990 860) scale(26)" d="M0 -1 Q0.12 -0.12 1 0 Q0.12 0.12 0 1 Q-0.12 0.12 -1 0 Q-0.12 -0.12 0 -1 Z" fill="#F3D27E"/><path transform="translate(1034.2 836.6) scale(13)" d="M0 -1 Q0.12 -0.12 1 0 Q0.12 0.12 0 1 Q-0.12 0.12 -1 0 Q-0.12 -0.12 0 -1 Z" fill="#F3D27E"/><path transform="translate(1022.5 893.8) scale(9.36)" d="M0 -1 Q0.12 -0.12 1 0 Q0.12 0.12 0 1 Q-0.12 0.12 -1 0 Q-0.12 -0.12 0 -1 Z" fill="#F3D27E"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="300 800 90 90" width="90" height="90"><rect x="300" y="800" width="90" height="90" rx="16.2" fill="#0E4F49"/><g transform="translate(318 818) scale(2.25)" fill="none" stroke="#FBF7EF" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round">
+  
+  <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+  <path d="M5 8v-3a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2h-5" />
+  <path d="M6 14m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+  <path d="M4.5 17l-1.5 5l3 -1.5l3 1.5l-1.5 -5" />
+</g></svg>

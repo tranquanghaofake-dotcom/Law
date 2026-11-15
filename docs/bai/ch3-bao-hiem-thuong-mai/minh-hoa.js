@@ -173,7 +173,7 @@ module.exports = { toaVP, saoCum, nguoi, bua, phieu, dnbh, bongThoai, chongGiay,
 // ---------- minh hoạ unDraw (giấy phép unDraw: dùng tự do, không bắt ghi công — vẫn ghi trong ghi-cong.md) ----------
 // Tô lại theo bảng màu bài: màu nhấn → xanh chủ, xám đậm → mực, xám nhạt → kẻ / bạc hà, da → da. Lồng vào lớp hình bằng <svg> con.
 const MAU_UD = { "#6c63ff": P.x2, "#090814": P.muc, "#2f2e43": P.muc, "#2f2e41": P.muc, "#3f3d56": P.muc, "#3f3d58": P.muc, "#36393a": P.muc,
-  "#e6e6e6": P.ke, "#e0e0e0": P.ke, "#d6d6e3": P.x3, "#f2f2f2": P.x4, "#fafafa": P.trang, "#ffffff": P.trang, "#fff": P.trang,
+  "#e6e6e6": P.ke, "#e0e0e0": P.ke, "#d6d6e3": P.x3, "#d0cde1": P.x3, "#f2f2f2": P.x4, "#fafafa": P.trang, "#ffffff": P.trang, "#fff": P.trang,
   "#ed9da0": P.da, "#f8a8ab": P.da, "#ffb6b6": P.da, "#ffb8b8": P.da, "#9f616a": P.da2, "#a0616a": P.da2, "#ccc": P.ke, "#cccccc": P.ke };
 function unDraw(D, ten, x, y, w, doi = {}) {
   let s = fs.readFileSync(path.join(D, "asset", "undraw", ten + ".svg"), "utf8");
