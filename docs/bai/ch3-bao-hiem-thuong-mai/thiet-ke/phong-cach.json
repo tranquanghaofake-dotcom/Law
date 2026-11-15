@@ -1,43 +1,56 @@
 {
- "ten": "biên tập học thuật",
- "huong": "Ảnh tư liệu hai màu + sơ đồ nét / icon nét (Tabler) cùng độ dày 3 px + chữ Lora lớn + bảng kẻ ngang. Không hoạt hình, không đồ vật vẽ phẳng, không hoạ tiết, không bóng.",
- "gradient": false,
- "bongMo": false,
- "bangMau": [
-  "#F3EEE4",
-  "#1C2826",
-  "#5B6663",
-  "#CFC6B6",
-  "#0E4F49",
-  "#DCE7E3",
-  "#BFD3CE",
-  "#8E631A",
-  "#E6B85C",
-  "#A3362B"
- ],
- "loaiHinh": [
-  "anh-hai-mau",
-  "net"
- ],
- "boCuc": [
-  "bia",
-  "mo-phan",
-  "cau",
-  "noi-dung",
-  "hoi"
- ],
- "tieuDeCoDinh": [
-  "noi-dung",
-  "hoi"
- ],
- "nguong": {
-  "loaiNenToiThieu": 2,
-  "tiLeNenToiDa": 0.85,
-  "lienToiDa": 16,
-  "lienHoToiDa": 16,
-  "assetToiDa": 4,
-  "bangXetTiLe": 99,
-  "tieuDiemToiThieu": 0.15
- },
- "ghiChuNguong": "Hướng biên tập: một kiểu bảng cho cả deck là chủ ý (bo-cuc.md); slide lấy chữ / số lớn làm tiêu điểm khai data-khong-hinh."
+  "ten": "tư vấn pháp lý — khối phẳng",
+  "huong": "Ảnh tư liệu hai màu + sơ đồ nét / icon nét (Tabler) cùng độ dày 3 px + chữ Lora lớn + bảng kẻ ngang. Không hoạt hình, không đồ vật vẽ phẳng, không hoạ tiết, không bóng.",
+  "gradient": false,
+  "bongMo": false,
+  "bangMau": [
+    "#FBF7EF",
+    "#FFFFFF",
+    "#1B2A28",
+    "#55625F",
+    "#DCD3C4",
+    "#0E4F49",
+    "#2C7A6C",
+    "#8EC3B6",
+    "#DDECE7",
+    "#946512",
+    "#E2A52E",
+    "#F3D27E",
+    "#F8ECCD",
+    "#B13A2E",
+    "#F6DDD7"
+  ],
+  "loaiHinh": [
+    "phang",
+    "nen",
+    "anh-hai-mau"
+  ],
+  "boCuc": [
+    "bia",
+    "mo-phan",
+    "noi-dung",
+    "so-lon",
+    "bang",
+    "trich",
+    "so-sanh",
+    "hoi",
+    "cau",
+    "ket"
+  ],
+  "tieuDeCoDinh": [
+    "noi-dung",
+    "so-lon",
+    "bang",
+    "so-sanh"
+  ],
+  "nguong": {
+    "loaiNenToiThieu": 2,
+    "tiLeNenToiDa": 0.85,
+    "lienToiDa": 16,
+    "lienHoToiDa": 16,
+    "assetToiDa": 4,
+    "bangXetTiLe": 99,
+    "tieuDiemToiThieu": 0.15
+  },
+  "ghiChuNguong": "Hướng biên tập: một kiểu bảng cho cả deck là chủ ý (bo-cuc.md); slide lấy chữ / số lớn làm tiêu điểm khai data-khong-hinh."
 }
