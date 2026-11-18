@@ -6,7 +6,8 @@ Vì sao (nghiên cứu 15/11/2026, spec mục 13): mẫu bán slide đẹp nhờ
 Hào: "ảnh bìa và các vật thể chưa thật sự liên quan đến bài, còn chung chung". Bàn tay nâng nhà mô hình, toà cao tầng, bàn tay ký giấy, hợp đồng vẽ phẳng, người hoạt hình — đặt vào bài bảo hiểm nào cũng được, nên không chứng minh gì.
 **Phép thử**: đổi tên bài sang một đề tài cùng ngành → hình còn dùng được nguyên? Còn → chung chung → thay.
 Thứ tự chọn hình chính:
-1. **Chính tài liệu của bài**: trang hợp đồng / bản án / văn bản luật / bảng gốc — chụp hoặc cắt đúng vùng bằng `node scripts/trang_goc.js <tài liệu> <ra.png> --trang=N --vung=x,y,w,h`, rồi **khoanh / gạch chân bằng HTML đè lên** đúng điều khoản đang nói. Ảnh trang chỉ có tác dụng khi người xem thấy được chỗ được khoanh và nhãn giải thích bên cạnh (Hào: "có nhưng phải có tác dụng") — trang nguyên cỡ nhỏ chữ không đọc được thì phải cắt vùng và phóng.
+1. **Sự vật đúng chủ đề**: ảnh thật của chính thứ đang nói (phòng bệnh cho bảo hiểm sức khoẻ, quầy giao dịch cho bán qua ngân hàng, lũ lụt cho bão Yagi) — cùng một cách cắt khung, cùng màu nhấn.
+1b. **Chính tài liệu của bài** khi cần trích nguyên văn: trang hợp đồng / bản án / văn bản luật / bảng gốc — chụp hoặc cắt đúng vùng bằng `node scripts/trang_goc.js <tài liệu> <ra.png> --trang=N --vung=x,y,w,h`, rồi **khoanh / gạch chân bằng HTML đè lên** đúng điều khoản đang nói. Ảnh trang chỉ có tác dụng khi người xem thấy được chỗ được khoanh và nhãn giải thích bên cạnh (Hào: "có nhưng phải có tác dụng") — trang nguyên cỡ nhỏ chữ không đọc được thì phải cắt vùng và phóng.
 2. **Số liệu của bài vẽ thành biểu đồ / thước đúng tỉ lệ** (`trinh-bay-du-lieu.md`).
 3. **Ảnh sự vật / sự kiện / nơi chốn cụ thể** đúng cái đang nói (quầy giao dịch ngân hàng khi nói bancassurance, bão Yagi khi nói bồi thường thiên tai) — có nguồn, giấy phép.
 4. **Sơ đồ quan hệ** bằng nét, khi ý là quan hệ giữa các bên.
