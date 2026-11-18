@@ -111,20 +111,20 @@ section.s > div, section.s > h1{position:absolute}
 [data-t]{text-wrap:pretty}
 em{font-style:normal;color:#3E8A2A}
 .nut{background:${P.cam};color:${P.muc};font:700 30px/1 'Be Vietnam Pro';padding:18px 32px;border-radius:40px;white-space:nowrap}
-.bia-td{position:absolute;font:800 90px/1.1 'Be Vietnam Pro';color:${P.muc};text-wrap:balance}
+.bia-td{position:absolute;font:800 90px/1.1 'Encode Sans';color:${P.muc};text-wrap:balance}
 .bia-phu{font:600 40px/1.3 'Be Vietnam Pro';color:${P.phu}}
-.mp-so{font:800 110px/1 'Be Vietnam Pro';color:${P.muc};text-align:center}
-.mp-t{position:absolute;font:800 74px/1.1 'Be Vietnam Pro';color:${P.muc};text-wrap:balance}
-.td{font:800 72px/1.1 'Be Vietnam Pro';color:${P.muc};text-align:center}
+.mp-so{font:800 110px/1 'Encode Sans';color:${P.muc};text-align:center}
+.mp-t{position:absolute;font:800 74px/1.1 'Encode Sans';color:${P.muc};text-wrap:balance}
+.td{font:800 72px/1.1 'Encode Sans';color:${P.muc};text-align:center}
 .ket{font:600 36px/1.35 'Be Vietnam Pro';color:${P.phu};text-align:center}.ket em{color:#B5650A}
 .so-trang{font:600 24px/1 'Be Vietnam Pro';color:${P.phu};text-align:right}
 .nguon{font:400 24px/1.4 'Be Vietnam Pro';color:${P.phu}}
 .moc{font:700 28px/1.2 'Be Vietnam Pro';color:#B5650A}
 .nhan-dong{font:600 32px/1.3 'Be Vietnam Pro';color:${P.muc};text-align:right}
-.so-thanh{font:800 34px/1.2 'Be Vietnam Pro';color:${P.muc}}.so-thanh.cam-dam{color:${P.camDam}}.trai{text-align:left !important}
+.so-thanh{font:800 34px/1.2 'Encode Sans';color:${P.muc}}.so-thanh.cam-dam{color:${P.camDam}}.trai{text-align:left !important}
 .lich-chu{font:600 28px/1.35 'Be Vietnam Pro';color:${P.muc};text-align:center}.lich-chu em{color:#9A5207}
-.cot-ten{font:800 40px/1.2 'Be Vietnam Pro';color:${P.muc};text-align:center}
-.so-lon{font:800 110px/1.1 'Be Vietnam Pro';color:#3E8A2A;text-align:center}.so-lon.cam{color:${P.camDam}}
+.cot-ten{font:800 40px/1.2 'Encode Sans';color:${P.muc};text-align:center}
+.so-lon{font:800 110px/1.1 'Encode Sans';color:#3E8A2A;text-align:center}.so-lon.cam{color:${P.camDam}}
 .cot-mo{font:600 34px/1.3 'Be Vietnam Pro';color:${P.muc};text-align:center}.cot-dk{font:400 32px/1.3 'Be Vietnam Pro';color:${P.phu};text-align:center}
 .canh-bao{background:${P.camNhat};border:3px solid ${P.cam};border-radius:60px}
 .canh-bao-chu{font:600 32px/1.35 'Be Vietnam Pro';color:${P.muc}}.canh-bao-chu em{color:#B5650A}

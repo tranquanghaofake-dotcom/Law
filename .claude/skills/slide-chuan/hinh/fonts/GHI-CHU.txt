@@ -9,4 +9,4 @@ BeVietnam-Nang.ttf         Be Vietnam Pro 1.002 ExtraBold, ĐÃ SỬA y như tr�
 Lý do sửa: để PowerPoint coi mỗi độ đậm là một họ font độc lập khi nhúng vào file .pptx (xem ghi chú đầu file hinh/tao_font.js).
 Bản sửa vẫn theo SIL OFL 1.1: giữ nguyên dòng bản quyền và giấy phép trong font; không bán riêng font.
 
-Lora-Dam.ttf (15/11/2026): Lora — Cyreal, SIL OFL 1.1 (OFL-Lora.txt), lấy từ google/fonts ofl/lora/Lora[wght].ttf; tạo bản tĩnh wght=700 bằng fontTools varLib.instancer (goc/Lora-Bold.ttf), rồi hinh/tao_font.js đổi tên họ thành "Lora Dam". Đủ dấu tiếng Việt (đã kiểm bảng cmap). Dùng trong CSS: font-family 'Lora'.
+- EncodeSans-Nang.ttf: Encode Sans (Impallari Type, SIL OFL 1.1), bản tĩnh wght 800 wdth 100 tách từ font biến thiên bằng fonttools, đổi tên họ "Encode Nang" (18/11/2026) — tiêu đề kiểu mẫu Slidesgo.

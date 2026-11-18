@@ -19,7 +19,8 @@ const JOBS = [
   { src: "BeVietnamPro-Regular.ttf", out: "BeVietnamPro-Regular.ttf" },                                // giữ nguyên từng byte
   { src: "BeVietnamPro-SemiBold.ttf", out: "BeVietnam-Dam.ttf", family: "Be Vietnam Dam", ps: "BeVietnamDam" },      // đậm vừa (600)
   { src: "BeVietnamPro-ExtraBold.ttf", out: "BeVietnam-Nang.ttf", family: "Be Vietnam Nang", ps: "BeVietnamNang" }, // rất đậm (800)
-  { src: "Lora-Bold.ttf", out: "Lora-Dam.ttf", family: "Lora Dam", ps: "LoraDam" },                                // chữ có chân (700) — tiêu đề lớn, câu trích, slide chốt; bản tĩnh tạo từ Lora[wght] (Google Fonts, OFL) bằng fontTools instancer wght=700
+  { src: "Lora-Bold.ttf", out: "Lora-Dam.ttf", family: "Lora Dam", ps: "LoraDam" },
+  { src: "EncodeSans-ExtraBold.ttf", out: "EncodeSans-Nang.ttf", family: "Encode Nang", ps: "EncodeNang" },   // tiêu đề kiểu mẫu Slidesgo (800, bản tĩnh tách từ font biến thiên) — 18/11/2026                                // chữ có chân (700) — tiêu đề lớn, câu trích, slide chốt; bản tĩnh tạo từ Lora[wght] (Google Fonts, OFL) bằng fontTools instancer wght=700
 ];
 
 const pad4 = (b) => (b.length % 4 ? Buffer.concat([b, Buffer.alloc(4 - (b.length % 4))]) : b);
