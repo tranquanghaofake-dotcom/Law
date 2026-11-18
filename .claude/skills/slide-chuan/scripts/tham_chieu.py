@@ -2,6 +2,8 @@
 """BẢNG THAM CHIẾU — người dùng chọn phong cách bằng mắt (bo-cuc.md mục 7, 18/11/2026).
   python3 scripts/tham_chieu.py bang <thư_mục_ra> <từ khoá> [<từ khoá>…]   → <ra>/bang.jpg: bìa mẫu Slidesgo đánh số + <ra>/mau.json (số → slug)
   python3 scripts/tham_chieu.py trong <thư_mục_ra> <slug> [<slug>…]        → <ra>/<slug>.jpg: tờ ghép slide bên trong của mẫu
+  python3 scripts/tham_chieu.py noidung <thư_mục_ra> [--sang|--toi] <từ khoá>… → <ra>/noidung.jpg: SLIDE NỘI DUNG (không phải bìa) của nhiều mẫu, đánh số
+     Hào 18/11/2026: "một vài slide chỉ đẹp ở phần bìa, phần nội dung lại xấu" → luôn cho người dùng chọn bằng slide nội dung, không bằng bìa.
 Ảnh mẫu chỉ để học quy tắc — để trong thư mục tạm / scratchpad, không commit, không chép hình hay bố cục."""
 import json, os, re, subprocess, sys
 from PIL import Image, ImageDraw, ImageFont
@@ -43,6 +45,40 @@ def trong(ra, slugs):
         cols = 6; c = Image.new("RGB", (cols * 490 + 10, ((len(ims) + cols - 1) // cols) * 280 + 10), "#333")
         for k, im in enumerate(ims): c.paste(im, (10 + (k % cols) * 490, 10 + (k // cols) * 280))
         p = os.path.join(ra, f"{slug}.jpg"); c.save(p, quality=82); print(p)
+def noidung(ra, tus, sang=None, toi_da=24):
+    os.makedirs(ra, exist_ok=True); slugs = []
+    for tu in tus:
+        h = trang("https://slidesgo.com/search?q=" + tu.replace(" ", "+"))
+        for m in re.finditer(r'https://media\.slidesgo\.com/storage/\d+/([a-z0-9-]+?)\d{10}\.jpg', h):
+            if m.group(1) not in slugs and not re.search(r'christmas|xmas|thanksgiving|halloween|easter|valentine|winter|snow|turkey|new-year|holiday|kids|baby', m.group(1)): slugs.append(m.group(1))   # bỏ mẫu theo mùa lễ / trẻ em
+    chon, ban = [], {}
+    for slug in slugs:
+        if len(chon) >= toi_da: break
+        h = trang(f"https://slidesgo.com/theme/{slug}"); tot = {}
+        for m in re.finditer(r'https://media\.slidesgo\.com/storage/\d+/responsive-images/(\d+)-' + re.escape(slug) + r'___media_library_original_(\d+)_\d+\.jpg', h):
+            n, w = int(m.group(1)), int(m.group(2))
+            if n not in tot or w > tot[n][1]: tot[n] = (m.group(0), w)
+        so = sorted(tot)
+        if len(so) < 20: continue
+        lay = 0
+        for n in [so[len(so) // 4 + 3], so[len(so) // 3 + 2], so[len(so) // 2 - 4]]:   # vùng slide nội dung (bỏ bìa, mục lục, phần tài nguyên cuối)
+            f = os.path.join(ra, f"{slug}-{n:02d}.jpg")
+            if not tai(tot[n][0], f): continue
+            im = Image.open(f).convert("L").resize((64, 36)); tb = sum(im.getdata()) / (64 * 36)
+            if sang is True and tb < 170: continue
+            if sang is False and tb > 110: continue
+            chon.append((slug, n, f)); lay += 1
+            if lay == 2 or len(chon) >= toi_da: break
+    cols = 4; c = Image.new("RGB", (cols * 652 + 12, ((len(chon) + cols - 1) // cols) * 372 + 12), "#222"); d = ImageDraw.Draw(c); fo = phong()
+    for i, (slug, n, f) in enumerate(chon):
+        x, y = 12 + (i % cols) * 652, 12 + (i // cols) * 372; c.paste(Image.open(f).convert("RGB").resize((640, 360)), (x, y)); d.rectangle([x, y, x + 70, y + 56], fill="#B13A2E"); d.text((x + 10, y + 4), str(i + 1), fill="white", font=fo)
+    c.save(os.path.join(ra, "noidung.jpg"), quality=85)
+    json.dump({i + 1: [slug, n] for i, (slug, n, _) in enumerate(chon)}, open(os.path.join(ra, "noidung.json"), "w"), ensure_ascii=False, indent=1)
+    print(os.path.join(ra, "noidung.jpg"), len(chon))
+
 if __name__ == "__main__":
-    if len(sys.argv) < 4 or sys.argv[1] not in ("bang", "trong"): print(__doc__); sys.exit(2)
+    if len(sys.argv) >= 4 and sys.argv[1] == "noidung":
+        a = sys.argv[3:]; sang = True if "--sang" in a else False if "--toi" in a else None
+        noidung(sys.argv[2], [x for x in a if not x.startswith("--")], sang); sys.exit(0)
+    if len(sys.argv) < 4 or sys.argv[1] not in ("bang", "trong", "noidung"): print(__doc__); sys.exit(2)
     (bang if sys.argv[1] == "bang" else trong)(sys.argv[2], sys.argv[3:])
