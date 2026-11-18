@@ -1,7 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="1140 636 52 52" width="52" height="52"><circle cx="1166" cy="662" r="26" fill="#DDEFD5"/><g transform="translate(1152.3 648.4) scale(1.1375)" fill="none" stroke="#1E2326" stroke-width="2.813" stroke-linecap="round" stroke-linejoin="round">
-  
-  <path d="M3 13a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
-  <path d="M15 9a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
-  <path d="M9 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
-  <path d="M4 20h14" />
-</g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="1140 636 52 52" width="52" height="52"><circle cx="1166" cy="662" r="26" fill="#DDEFD5"/><g transform="translate(1150.4 646.4) scale(0.1219)" fill="#1E2326"><path d="M208,40V208H152V40Z" data-phu="1" fill="#5DA93F" opacity="1"/><path d="M224,200h-8V40a8,8,0,0,0-8-8H152a8,8,0,0,0-8,8V80H96a8,8,0,0,0-8,8v40H48a8,8,0,0,0-8,8v64H32a8,8,0,0,0,0,16H224a8,8,0,0,0,0-16ZM160,48h40V200H160ZM104,96h40V200H104ZM56,144H88v56H56Z"/></g></svg>

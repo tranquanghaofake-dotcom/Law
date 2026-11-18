@@ -62,7 +62,10 @@ const giay = (f, x, y, w, alt, t0, tVet) => { const j = JSON.parse(fs.readFileSy
       return lop(`<rect x="${vx}" y="${vy}" width="${vw}" height="${vh}" rx="4" fill="${P.cam}" fill-opacity="0.38"/>`, vx, vy, vw, vh, `Vệt dạ quang: ${j.cau[i]}`, "net", A("wipe", tVet[i], 600)); }).join("")).join(""); };
 const coGiay = (f, w) => { const j = JSON.parse(fs.readFileSync(path.join(D, "anh", "goc", f + ".json"), "utf8")); return Math.round((w * j.cao) / j.rong); };
 // icon trong tròn cam, nét đậm màu mực (kiểu icon hai tông của mẫu 2)
-const iconTron = (ic, cx, cy, r, alt, ex = "", nen = P.cam) => lop(`<circle cx="${cx}" cy="${cy}" r="${r}" fill="${nen}"/>` + mh.iconNet(D, ic, cx, cy, r * 1.05, P.muc, 3.2), cx - r, cy - r, 2 * r, 2 * r, alt, "net", ex);
+// icon hai tông Phosphor (scripts/icon_duo.js) khi có trong bảng đổi; mảng phụ lấy màu nhấn hợp với nền tròn
+const { iconDuo } = require("../../../.claude/skills/slide-chuan/scripts/icon_duo.js"), DOI = JSON.parse(fs.readFileSync(path.join(D, "asset", "phosphor", "bang-doi.json"), "utf8"));
+const phuCua = (nen) => (nen === P.cam ? "#FFFFFF" : nen === P.camNhat ? P.cam : P.xanh);
+const iconTron = (ic, cx, cy, r, alt, ex = "", nen = P.cam) => lop(`<circle cx="${cx}" cy="${cy}" r="${r}" fill="${nen}"/>` + (DOI[ic] ? iconDuo(fs.readFileSync(path.join(D, "asset", "phosphor", DOI[ic] + ".svg"), "utf8"), cx, cy, r * 1.2, { chinh: P.muc, phu: phuCua(nen) }) : mh.iconNet(D, ic, cx, cy, r * 1.05, P.muc, 3.2)), cx - r, cy - r, 2 * r, 2 * r, alt, "net", ex);
 const dau = (td, ketLuan, so) => `<h1 class="td" data-t data-tieu-de ${A("fade", 0, 500)} style="left:260px;top:76px;width:1400px">${em(td)}</h1>`
   + `<div class="ket" data-t ${A("fade", 300, 500)} style="left:260px;top:178px;width:1400px">${em(ketLuan)}</div>`
   + T("so-trang", 1720, 962, 120, `${so} / ${TONG}`);
