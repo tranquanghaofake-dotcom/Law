@@ -12,8 +12,9 @@ em{font-style:normal;color:#3E8A2A}
 .so-trang{font:600 24px/1 'Be Vietnam Pro';color:#4A5257;text-align:right}
 .nguon{font:400 24px/1.4 'Be Vietnam Pro';color:#4A5257}
 .moc{font:700 28px/1.2 'Be Vietnam Pro';color:#B5650A}
-.nhan-dong{font:600 34px/1.3 'Be Vietnam Pro';color:#1E2326;text-align:right}
-.so-thanh{font:800 36px/1.2 'Be Vietnam Pro';color:#1E2326}
+.nhan-dong{font:600 32px/1.3 'Be Vietnam Pro';color:#1E2326;text-align:right}
+.so-thanh{font:800 34px/1.2 'Be Vietnam Pro';color:#1E2326}.so-thanh.cam-dam{color:#C46A0A}.trai{text-align:left !important}
+.lich-chu{font:600 28px/1.35 'Be Vietnam Pro';color:#1E2326;text-align:center}.lich-chu em{color:#9A5207}
 .cot-ten{font:800 40px/1.2 'Be Vietnam Pro';color:#1E2326;text-align:center}
 .so-lon{font:800 110px/1.1 'Be Vietnam Pro';color:#3E8A2A;text-align:center}.so-lon.cam{color:#C46A0A}
 .cot-mo{font:600 34px/1.3 'Be Vietnam Pro';color:#1E2326;text-align:center}.cot-dk{font:400 32px/1.3 'Be Vietnam Pro';color:#4A5257;text-align:center}

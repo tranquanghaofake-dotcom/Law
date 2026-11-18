@@ -71,16 +71,21 @@ sec("mo-phan", "Phần I. Mẫu hợp đồng Bảo Việt An Gia là hợp đ�
   + `<div class="nut" data-t data-l="nut-mp1" data-alt="Ô nhãn" ${A("fade", 500, 500)} style="left:420px;top:380px">Bảo hiểm sức khoẻ · 13 điều · Phụ lục 1</div>`,
   { trans: "push" });
 
-// ============ 8 THỜI GIAN CHỜ ============
-{ const TG = [["Tai nạn", 0], ["Bệnh thông thường, điều trị răng", 30], ["Biến chứng thai sản", 90], ["Bệnh hô hấp, trẻ đến 6 tuổi", 180], ["Bệnh có sẵn, đặc biệt; dây chằng", 365], ["Sinh con (quyền lợi thai sản)", 635]], X = 880, K = 700 / 635;
-  sec("noi-dung", "Thời gian chờ là khoảng quyền lợi chưa phát sinh hiệu lực chi trả, để chặn việc mua bảo hiểm khi đã biết trước bệnh. Tai nạn được bảo hiểm ngay; bệnh thông thường chờ 30 ngày; biến chứng thai sản 90; bệnh hô hấp ở trẻ đến 6 tuổi 180; bệnh có sẵn, bệnh đặc biệt, tổn thương dây chằng hay sụn chêm 365. Dài nhất là quyền lợi sinh con: 635 ngày, gần 21 tháng. Tái tục liên tục thì không phải chờ lại.",
-    vien(0) + dau("Thời gian [chờ]", "Tai nạn được chi trả ngay; sinh con phải chờ [635 ngày], gần 21 tháng", 8)
-    + lop(`<path d="M${X + 365 * K} 300 V900" stroke="${P.cam}" stroke-width="3" stroke-dasharray="10 8"/>`, X + Math.round(365 * K) - 3, 300, 6, 600, "Vạch mốc 1 năm", "bieu-do", A("fade", 400, 300))
-    + T("moc", X + 365 * K + 14, 296, 160, "1 năm", A("fade", 500, 300))
-    + TG.map(([ten, d], k) => { const y = 330 + k * 96, w = Math.max(Math.round(d * K), 0), t0 = 600 + k * 220, dai = d >= 365;
-      return T("nhan-dong", 200, y + 8, 650, ten, A("fade", t0, 300))
-        + lop(`<rect x="${X}" y="${y + 8}" width="700" height="52" rx="26" fill="${P.ray}"/>` + (d ? `<rect x="${X}" y="${y + 8}" width="${Math.max(w, 52)}" height="52" rx="26" fill="${dai ? P.cam : P.xanh}"/>` : `<circle cx="${X + 26}" cy="${y + 34}" r="20" fill="${P.xanh}"/>`), X, y + 8, 700, 52, `Thanh ${ten}: ${d} ngày`, "bieu-do", A("wipe", t0, 500))
-        + T("so-thanh", X + 720, y + 12, 300, d ? `${d} ngày` : "0 ngày", A("fade", t0 + 300, 300)); }).join("")
+// ============ 8 THỜI GIAN CHỜ — icon từng nhóm, biểu đồ kể chuyện, minh hoạ góc, lịch 21 tháng ============
+{ const TG = [["car-crash", "Tai nạn", 0], ["dental", "Bệnh thường, điều trị răng", 30], ["woman", "Biến chứng thai sản", 90], ["lungs", "Hô hấp, trẻ đến 6 tuổi", 180], ["first-aid-kit", "Bệnh có sẵn, đặc biệt", 365], ["baby-carriage", "Sinh con (thai sản)", 635]], X = 620, BW = 520, K = BW / 635;
+  sec("noi-dung", "Thời gian chờ là khoảng quyền lợi chưa phát sinh hiệu lực chi trả, để chặn việc mua bảo hiểm khi đã biết trước bệnh. Tai nạn được bảo hiểm ngay; bệnh thông thường chờ 30 ngày; biến chứng thai sản 90; bệnh hô hấp ở trẻ đến 6 tuổi 180; bệnh có sẵn, bệnh đặc biệt, tổn thương dây chằng hay sụn chêm 365. Dài nhất là quyền lợi sinh con: 635 ngày, gần 21 tháng — muốn dùng phải mua trước khi có kế hoạch sinh con. Tái tục liên tục thì không phải chờ lại.",
+    vien(1) + dau("Thời gian [chờ]", "Tai nạn được chi trả ngay; sinh con phải chờ [635 ngày]", 8)
+    + lop(`<path d="M${X + 365 * K} 290 V900" stroke="${P.cam}" stroke-width="3" stroke-dasharray="10 8"/>`, X + Math.round(365 * K) - 3, 290, 6, 610, "Vạch mốc 1 năm", "bieu-do", A("fade", 400, 300))
+    + T("moc", X + 365 * K - 90, 280, 180, "mốc 1 năm", A("fade", 500, 300), ) 
+    + TG.map(([ic, ten, d], k) => { const y = 330 + k * 96, w = Math.round(d * K), t0 = 600 + k * 220, dai = d >= 365, chinh = d === 635;
+      return iconTron(ic, 150, y + 34, 32, `Biểu tượng ${ten}`, A("pop", t0, 300), dai ? P.camNhat : "#DDEFD5")
+        + T("nhan-dong trai", 196, y + 10, 410, ten, A("fade", t0, 300))
+        + lop(`<rect x="${X}" y="${y + 10}" width="${BW}" height="48" rx="24" fill="${P.ray}"/>` + (d ? `<rect x="${X}" y="${y + 10}" width="${Math.max(w, 48)}" height="48" rx="24" fill="${chinh ? P.cam : dai ? "#F7C27A" : P.xanh}"/>` : `<circle cx="${X + 24}" cy="${y + 34}" r="18" fill="${P.xanh}"/>`), X, y + 10, BW, 48, `Thanh ${ten}: ${d} ngày`, "bieu-do", A("wipe", t0, 500))
+        + T(`so-thanh${chinh ? " cam-dam" : ""}`, X + BW + 18, y + 12, 200, d ? `${d} ngày` : "0 ngày", A("fade", t0 + 300, 300)); }).join("")
+    + minhHoa("waiting-rafiki", 1440, 250, 380, "Minh hoạ: người xem đồng hồ đứng chờ trước cửa — thời gian chờ", 1800)
+    // 635 ngày ≈ 21 tháng: 21 ô tháng, 12 ô đầu = 1 năm
+    + lop(Array.from({ length: 21 }, (_, i) => `<rect x="${1460 + (i % 7) * 50}" y="${650 + Math.floor(i / 7) * 50}" width="40" height="40" rx="8" fill="${i < 12 ? "#F7C27A" : P.cam}"/>`).join(""), 1460, 650, 340, 140, "Lịch 21 ô tháng: 635 ngày gần bằng 21 tháng", "bieu-do", A("fade", 2200, 600))
+    + T("lich-chu", 1400, 810, 460, "635 ngày ≈ [21 tháng] — phải mua trước khi có kế hoạch sinh con", A("fade", 2400, 400))
     + nguon("Hợp đồng Bảo Việt An Gia, Điều 5. Tái tục liên tục: không phải chờ lại, trừ phần hạn mức nâng thêm."));
 }
 
@@ -115,8 +120,9 @@ em{font-style:normal;color:#3E8A2A}
 .so-trang{font:600 24px/1 'Be Vietnam Pro';color:${P.phu};text-align:right}
 .nguon{font:400 24px/1.4 'Be Vietnam Pro';color:${P.phu}}
 .moc{font:700 28px/1.2 'Be Vietnam Pro';color:#B5650A}
-.nhan-dong{font:600 34px/1.3 'Be Vietnam Pro';color:${P.muc};text-align:right}
-.so-thanh{font:800 36px/1.2 'Be Vietnam Pro';color:${P.muc}}
+.nhan-dong{font:600 32px/1.3 'Be Vietnam Pro';color:${P.muc};text-align:right}
+.so-thanh{font:800 34px/1.2 'Be Vietnam Pro';color:${P.muc}}.so-thanh.cam-dam{color:${P.camDam}}.trai{text-align:left !important}
+.lich-chu{font:600 28px/1.35 'Be Vietnam Pro';color:${P.muc};text-align:center}.lich-chu em{color:#9A5207}
 .cot-ten{font:800 40px/1.2 'Be Vietnam Pro';color:${P.muc};text-align:center}
 .so-lon{font:800 110px/1.1 'Be Vietnam Pro';color:#3E8A2A;text-align:center}.so-lon.cam{color:${P.camDam}}
 .cot-mo{font:600 34px/1.3 'Be Vietnam Pro';color:${P.muc};text-align:center}.cot-dk{font:400 32px/1.3 'Be Vietnam Pro';color:${P.phu};text-align:center}
