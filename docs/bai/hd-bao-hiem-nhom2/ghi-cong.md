@@ -1,0 +1,16 @@
+# Ghi công hình ảnh — Hợp đồng bảo hiểm và thực trạng (Nhóm 2)
+Không dùng ảnh AI. Ảnh lấy lại từ bài Ch3 (`../ch3-bao-hiem-thuong-mai/ghi-cong.md`), đã cắt khung và chỉnh màu bằng `scripts/phu_mau.js`.
+
+## Ảnh chụp — Unsplash (giấy phép Unsplash)
+| Slide | File | Ảnh | Tác giả · nguồn |
+|---|---|---|---|
+| 1 | `anh/unsplash/bia-vom.png` | Bàn tay nâng ngôi nhà mô hình | Jakub Żerdzicki · unsplash.com/photos/I31tYRbVP4w |
+| 18 | `anh/unsplash/trich-full.jpg` | Bàn tay ký hợp đồng | Jakub Żerdzicki · unsplash.com/photos/QI6NLgN5XnM |
+| 22 | `anh/unsplash/toa-full.jpg` | Toà cao tầng nhìn từ dưới lên | Davi Rezende · unsplash.com/photos/KVvcUjYqTII |
+
+## Minh hoạ, icon, font
+- Vật phẳng vẽ bằng code (`minh-hoa.js`, chép từ bài Ch3): hợp đồng có dấu, toà nhà doanh nghiệp bảo hiểm, người bán thân, khiên. Biểu đồ, thanh tỷ lệ, trục thời gian dựng bằng code trong `deck.js`.
+- Icon: Tabler Icons, giấy phép MIT (`asset/tabler/`).
+- Font: Be Vietnam Pro, Lora — SIL OFL 1.1.
+
+Không dùng (chép sang rồi bỏ sau vòng duyệt 1): `anh/unsplash/mp03-tron.png`, `mp04-tron.png` (tranh tư liệu phạm vi công cộng, Thư viện Quốc hội Hoa Kỳ — sai nghĩa với bài); thư mục `asset/undraw/`.
