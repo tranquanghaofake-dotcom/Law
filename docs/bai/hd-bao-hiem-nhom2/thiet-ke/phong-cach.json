@@ -1,61 +1,62 @@
 {
-  "ten": "mẫu 2 — trắng, minh hoạ Storyset Rafiki, xanh lá + cam",
-  "huong": "Hào chọn mẫu tham chiếu 2 và 9 bằng bảng cặp bìa + nội dung (18/11/2026). Gốc mẫu 2: nền trắng, mây xanh nhạt, vạch xanh lá mép trên + vạch cam mép dưới, tiêu đề căn giữa đen đậm có từ nhấn xanh lá, icon trắng trong tròn màu, số liệu trong ô cam bo tròn, mở phần có dải thành phố + cỏ + một vật phẳng đúng chủ đề.",
-  "gradient": false,
-  "bongMo": false,
-  "chongAI": true,
-  "boGocToiDa": 60,
-  "bangMau": [
-    "#FFFFFF",
-    "#1E2326",
-    "#4A5257",
-    "#5DA93F",
-    "#9ED48A",
-    "#F39A1E",
-    "#FDE3BC",
-    "#CDEBF5",
-    "#9FD3E6",
-    "#6FBAD6",
-    "#E3F3F9",
-    "#4FA6CF",
-    "#8A5A2B",
-    "#4E9334",
-    "#B5650A",
-    "#3E8A2A",
-    "#A9D8EA",
-    "#3DB5E0",
-    "#EAF3F7",
-    "#8DC67B",
-    "#A9DCF2",
-    "#8FCFEA",
-    "#C46A0A",
-    "#DDEFD5",
-    "#F7C27A",
-    "#9A5207"
-  ],
-  "loaiHinh": [
-    "minh-hoa",
-    "hoa-tiet",
-    "bieu-do",
-    "net"
-  ],
-  "boCuc": [
-    "bia",
-    "mo-phan",
-    "noi-dung",
-    "bang",
-    "so-lon",
-    "trich",
-    "ket"
-  ],
-  "tieuDeCoDinh": [
-    "noi-dung",
-    "bang",
-    "so-lon"
-  ],
-  "vietTat": {},
-  "phongPhu": false,
-  "mienBangMau": [
-    "anh/storyset/"
-  ]
+ "ten": "mẫu 2 — trắng, minh hoạ Storyset Rafiki, xanh lá + cam",
+ "huong": "Hào chọn mẫu tham chiếu 2 và 9 bằng bảng cặp bìa + nội dung (18/11/2026). Gốc mẫu 2: nền trắng, mây xanh nhạt, vạch xanh lá mép trên + vạch cam mép dưới, tiêu đề căn giữa đen đậm có từ nhấn xanh lá, icon trắng trong tròn màu, số liệu trong ô cam bo tròn, mở phần có dải thành phố + cỏ + một vật phẳng đúng chủ đề.",
+ "gradient": false,
+ "bongMo": false,
+ "chongAI": true,
+ "boGocToiDa": 60,
+ "bangMau": [
+  "#FFFFFF",
+  "#1E2326",
+  "#4A5257",
+  "#5DA93F",
+  "#9ED48A",
+  "#F39A1E",
+  "#FDE3BC",
+  "#CDEBF5",
+  "#9FD3E6",
+  "#6FBAD6",
+  "#E3F3F9",
+  "#4FA6CF",
+  "#8A5A2B",
+  "#4E9334",
+  "#B5650A",
+  "#3E8A2A",
+  "#A9D8EA",
+  "#3DB5E0",
+  "#EAF3F7",
+  "#8DC67B",
+  "#A9DCF2",
+  "#8FCFEA",
+  "#C46A0A",
+  "#DDEFD5",
+  "#F7C27A",
+  "#9A5207",
+  "#DADFE2"
+ ],
+ "loaiHinh": [
+  "minh-hoa",
+  "hoa-tiet",
+  "bieu-do",
+  "net"
+ ],
+ "boCuc": [
+  "bia",
+  "mo-phan",
+  "noi-dung",
+  "bang",
+  "so-lon",
+  "trich",
+  "ket"
+ ],
+ "tieuDeCoDinh": [
+  "noi-dung",
+  "bang",
+  "so-lon"
+ ],
+ "vietTat": {},
+ "phongPhu": false,
+ "mienBangMau": [
+  "anh/storyset/"
+ ]
 }

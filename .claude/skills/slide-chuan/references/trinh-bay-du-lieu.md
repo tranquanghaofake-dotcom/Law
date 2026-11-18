@@ -2,6 +2,14 @@
 
 Nguồn: 54 mẫu tham chiếu (spec `docs/specs/2026-11-14-slide-chuan-v2-quy-trinh.md` mục 11). Mẫu bán slide đa dạng ở **cấu trúc**, không ở màu: một bộ có 11–14 kiểu bảng nhưng cùng bảng màu, cùng cỡ tiêu đề.
 
+## 0. Bắt đầu từ câu hỏi của người nghe, không từ mẫu (Hào, 18/11/2026: "không phải độ giống mẫu mà là đẹp hơn, bảng biểu sáng tạo, thích hợp, dễ theo dõi, dễ hiểu")
+Mẫu tham chiếu chỉ cho **giọng hình** (màu, font, nét minh hoạ). Cách trình bày từng slide chọn theo nội dung:
+1. **Tiêu đề = câu người nghe sẽ hỏi** ("Mua hôm nay, bao giờ được chi trả?", "Nghỉ giữa chừng, nhận lại bao nhiêu?"); dòng dưới = câu trả lời ngắn. Không dùng tên điều khoản ("Thời gian chờ", "Chấm dứt hợp đồng") làm tiêu đề.
+2. **Tỉ lệ, phần trăm, mức hoàn → ví dụ bằng tiền cụ thể** (ghi "ví dụ giả định"): "70 % phí còn lại" khó hình dung; "đóng 12 triệu, nghỉ sau 4 tháng → nhận 5,6 triệu, mất 2,4 triệu" thì ai cũng hiểu. Vẽ thanh đúng tỉ lệ, chữ số nằm ngay trên thanh.
+3. **Thời hạn, mốc → trục thời gian vẽ đúng tỉ lệ thật**: khoảng trống dài tự nói ý chính (365 → 635 ngày), không cần câu giải thích. Mốc dày → chú thích so le trên/dưới, nối bằng đường dẫn; mỗi mốc: icon + số lớn + nhãn ≤ 4 từ.
+4. **Một hình kể một ý**: bỏ hình phụ khó hiểu (lịch 21 ô, biểu tượng không nhãn). Thử: che tiêu đề, người xem có tự đọc ra ý chính từ hình không.
+5. **Nhãn một dòng**: nhãn xuống dòng lẻ chữ ("điều / trị răng") → rút từ, không thu cỡ chữ.
+
 ## 1. Bảng chọn: thông tin nào → kiểu nào
 | Loại thông tin | Kiểu nên dùng (mã ở mục 2) | Tránh |
 |---|---|---|

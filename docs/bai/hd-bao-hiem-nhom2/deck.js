@@ -71,38 +71,48 @@ sec("mo-phan", "Phần I. Mẫu hợp đồng Bảo Việt An Gia là hợp đ�
   + `<div class="nut" data-t data-l="nut-mp1" data-alt="Ô nhãn" ${A("fade", 500, 500)} style="left:420px;top:380px">Bảo hiểm sức khoẻ · 13 điều · Phụ lục 1</div>`,
   { trans: "push" });
 
-// ============ 8 THỜI GIAN CHỜ — icon từng nhóm, biểu đồ kể chuyện, minh hoạ góc, lịch 21 tháng ============
-{ const TG = [["car-crash", "Tai nạn", 0], ["dental", "Bệnh thường, điều trị răng", 30], ["woman", "Biến chứng thai sản", 90], ["lungs", "Hô hấp, trẻ đến 6 tuổi", 180], ["first-aid-kit", "Bệnh có sẵn, đặc biệt", 365], ["baby-carriage", "Sinh con (thai sản)", 635]], X = 620, BW = 520, K = BW / 635;
-  sec("noi-dung", "Thời gian chờ là khoảng quyền lợi chưa phát sinh hiệu lực chi trả, để chặn việc mua bảo hiểm khi đã biết trước bệnh. Tai nạn được bảo hiểm ngay; bệnh thông thường chờ 30 ngày; biến chứng thai sản 90; bệnh hô hấp ở trẻ đến 6 tuổi 180; bệnh có sẵn, bệnh đặc biệt, tổn thương dây chằng hay sụn chêm 365. Dài nhất là quyền lợi sinh con: 635 ngày, gần 21 tháng — muốn dùng phải mua trước khi có kế hoạch sinh con. Tái tục liên tục thì không phải chờ lại.",
-    vien(1) + dau("Thời gian [chờ]", "Tai nạn được chi trả ngay; sinh con phải chờ [635 ngày]", 8)
-    + lop(`<path d="M${X + 365 * K} 290 V900" stroke="${P.cam}" stroke-width="3" stroke-dasharray="10 8"/>`, X + Math.round(365 * K) - 3, 290, 6, 610, "Vạch mốc 1 năm", "bieu-do", A("fade", 400, 300))
-    + T("moc", X + 365 * K - 90, 280, 180, "mốc 1 năm", A("fade", 500, 300), ) 
-    + TG.map(([ic, ten, d], k) => { const y = 330 + k * 96, w = Math.round(d * K), t0 = 600 + k * 220, dai = d >= 365, chinh = d === 635;
-      return iconTron(ic, 150, y + 34, 32, `Biểu tượng ${ten}`, A("pop", t0, 300), dai ? P.camNhat : "#DDEFD5")
-        + T("nhan-dong trai", 196, y + 10, 410, ten, A("fade", t0, 300))
-        + lop(`<rect x="${X}" y="${y + 10}" width="${BW}" height="48" rx="24" fill="${P.ray}"/>` + (d ? `<rect x="${X}" y="${y + 10}" width="${Math.max(w, 48)}" height="48" rx="24" fill="${chinh ? P.cam : dai ? "#F7C27A" : P.xanh}"/>` : `<circle cx="${X + 24}" cy="${y + 34}" r="18" fill="${P.xanh}"/>`), X, y + 10, BW, 48, `Thanh ${ten}: ${d} ngày`, "bieu-do", A("wipe", t0, 500))
-        + T(`so-thanh${chinh ? " cam-dam" : ""}`, X + BW + 18, y + 12, 200, d ? `${d} ngày` : "0 ngày", A("fade", t0 + 300, 300)); }).join("")
-    + minhHoa("waiting-rafiki", 1440, 250, 380, "Minh hoạ: người xem đồng hồ đứng chờ trước cửa — thời gian chờ", 1800)
-    // 635 ngày ≈ 21 tháng: 21 ô tháng, 12 ô đầu = 1 năm
-    + lop(Array.from({ length: 21 }, (_, i) => `<rect x="${1460 + (i % 7) * 50}" y="${650 + Math.floor(i / 7) * 50}" width="40" height="40" rx="8" fill="${i < 12 ? "#F7C27A" : P.cam}"/>`).join(""), 1460, 650, 340, 140, "Lịch 21 ô tháng: 635 ngày gần bằng 21 tháng", "bieu-do", A("fade", 2200, 600))
-    + T("lich-chu", 1400, 810, 460, "635 ngày ≈ [21 tháng] — phải mua trước khi có kế hoạch sinh con", A("fade", 2400, 400))
-    + nguon("Hợp đồng Bảo Việt An Gia, Điều 5. Tái tục liên tục: không phải chờ lại, trừ phần hạn mức nâng thêm."));
+// ============ 8 THỜI GIAN CHỜ — trục thời gian thật (tỉ lệ đúng): khoảng trống 365 → 635 tự nói "sinh con chờ rất lâu" ============
+{ const X0 = 200, X1 = 1720, AY = 600, K = (X1 - X0) / 635, px = (d) => Math.round(X0 + d * K);
+  // [icon, nhóm, ngày, phía (1 trên / -1 dưới), tâm hộp chú thích]
+  const TG = [["car-crash", "Tai nạn", 0, -1, 260], ["dental", "Bệnh thường, răng", 30, 1, 330], ["woman", "Biến chứng thai sản", 90, -1, 590], ["lungs", "Hô hấp ở trẻ ≤ 6 tuổi", 180, 1, 690], ["first-aid-kit", "Bệnh có sẵn, bệnh đặc biệt", 365, -1, 1074], ["baby-carriage", "Sinh con, gần 21 tháng", 635, 1, 1600]];
+  sec("noi-dung", "Thời gian chờ: quyền lợi chưa được chi trả ngay sau khi ký, để chặn việc mua bảo hiểm khi đã biết trước bệnh. Trục này vẽ đúng tỉ lệ ngày. Tai nạn được chi trả ngay; bệnh thông thường, răng chờ 30 ngày; biến chứng thai sản 90; bệnh hô hấp ở trẻ đến 6 tuổi 180; bệnh có sẵn, bệnh đặc biệt, dây chằng, sụn chêm 365. Riêng sinh con 635 ngày, gần 21 tháng — đoạn cam dài sau mốc một năm. Muốn dùng quyền lợi này phải mua trước khi có kế hoạch sinh con. Tái tục liên tục thì không phải chờ lại.",
+    vien(1) + dau("Mua hôm nay, [bao giờ] được chi trả?", "Tai nạn: ngay. Sinh con: chờ [635 ngày] — phải mua trước khi định sinh con", 8)
+    // trục: xám nhạt, phần đến 1 năm xanh, phần 1 năm → 635 cam
+    + lop(`<rect x="${X0}" y="${AY - 9}" width="${X1 - X0}" height="18" rx="9" fill="${P.ray}"/><rect x="${X0}" y="${AY - 9}" width="${px(365) - X0}" height="18" rx="9" fill="${P.xanh}"/><rect x="${px(365)}" y="${AY - 9}" width="${X1 - px(365)}" height="18" rx="9" fill="${P.cam}"/>`, X0, AY - 9, X1 - X0, 18, "Trục thời gian từ ngày ký đến ngày 635", "bieu-do", A("wipe", 300, 1600))
+    + T("moc", px(365) - 120, AY - 52, 240, "mốc 1 năm", A("fade", 1200, 300))
+    + TG.map(([ic, ten, d, phia, cx], k) => { const x = px(d), t0 = 500 + k * 260, chinh = d === 635, iy = phia > 0 ? 330 : 730;
+      const day = phia > 0 ? `M${x} ${AY - 12} L${cx} 520` : `M${x} ${AY + 12} L${cx} 680`;
+      return lop(`<path d="${day}" stroke="${P.muc}" stroke-width="3"/><circle cx="${x}" cy="${AY}" r="16" fill="#FFFFFF" stroke="${P.muc}" stroke-width="5"/>`, Math.min(x, cx) - 18, phia > 0 ? 504 : AY - 18, Math.abs(x - cx) + 36, phia > 0 ? 114 : 98, `Điểm ${d} ngày trên trục`, "bieu-do", A("fade", t0, 300))
+        + iconTron(ic, cx, iy, 36, `Biểu tượng ${ten}`, A("pop", t0, 300), chinh ? P.cam : d >= 365 ? P.camNhat : "#DDEFD5")
+        + T(`cl-so${chinh ? " cam-dam" : ""}`, cx - 140, iy + 44, 280, d ? `${d} ngày` : "Ngay", A("fade", t0 + 100, 300))
+        + T("cl-ten", cx - 190, iy + 100, 380, ten, A("fade", t0 + 150, 300)); }).join("")
+    + T("moc", 1250, AY + 30, 440, "sinh con: thêm [270 ngày] nữa", A("fade", 2000, 300))
+    + minhHoa("waiting-rafiki", 1130, 236, 300, "Minh hoạ: người xem đồng hồ đứng chờ trước cửa — thời gian chờ", 2200)
+    + nguon("Hợp đồng Bảo Việt An Gia, Điều 5. Trục vẽ đúng tỉ lệ ngày. Tái tục liên tục: không chờ lại, trừ phần hạn mức nâng thêm."));
 }
 
-// ============ 10 CHẤM DỨT — hai cột đối xứng + dải cảnh báo ============
-{ const C = [["user", "Bên mua chấm dứt", "70%", "phí của thời gian còn lại", "chỉ khi chưa có khoản chi trả nào"], ["building", "Bảo Việt chấm dứt", "100%", "phí của thời gian còn lại", "dù đã có khiếu nại hay chưa"]];
-  sec("noi-dung", "Điều 6. Hai bên đều được chấm dứt, nhưng phải báo trước 30 ngày bằng văn bản. Bên mua chấm dứt thì chỉ được hoàn 70 % phí của thời gian còn lại, và chỉ khi chưa có khoản chi trả nào. Bảo Việt chấm dứt thì phải hoàn đủ 100 %. Riêng trường hợp gian lận, trục lợi thì không phải chấm dứt mà là huỷ bỏ: hợp đồng bị huỷ ngay, mất toàn bộ quyền lợi. Câu hỏi mở: mức hoàn 70 % có cân bằng quyền lợi hai bên không.",
-    vien(1) + dau("Chấm dứt [hợp đồng]", "Tự chấm dứt hợp đồng, bên mua mất [30%] phí của thời gian còn lại", 10)
-    + C.map(([ic, ten, so, mo, dk], k) => { const cx = 600 + k * 720, t0 = 500 + k * 300;
-      return iconTron(ic, cx, 360, 64, `Biểu tượng ${ten}`, A("pop", t0, 400))
-        + T("cot-ten", cx - 300, 448, 600, ten, A("fade", t0 + 100, 400))
-        + T(`so-lon${k ? "" : " cam"}`, cx - 300, 500, 600, so, `data-dl ${A("fade", t0 + 200, 400)}`)
-        + T("cot-mo", cx - 300, 632, 600, mo, A("fade", t0 + 300, 400)) + T("cot-dk", cx - 300, 680, 600, dk, A("fade", t0 + 350, 400)); }).join("")
-    + lop(`<path d="M960 340 V720" stroke="${P.may}" stroke-width="4" stroke-linecap="round"/>`, 956, 340, 8, 380, "Vạch chia hai cột", "hoa-tiet")
-    + `<div class="canh-bao" data-l="canh-bao" data-alt="Dải cảnh báo" ${A("rise", 1300, 500)} style="left:260px;top:780px;width:1400px;height:120px"></div>`
-    + iconTron("alert-triangle", 340, 840, 40, "Biểu tượng cảnh báo", A("pop", 1400, 400), "#FFFFFF")
-    + T("canh-bao-chu", 410, 802, 1220, "Gian lận, trục lợi: hợp đồng bị [huỷ ngay], mất toàn bộ quyền lợi — chỉ hoàn 70% phí nếu chưa có bồi thường", A("fade", 1500, 400))
-    + nguon("Hợp đồng Bảo Việt An Gia, Điều 6 khoản 1 (chấm dứt) và khoản 2 (huỷ bỏ do gian lận, trục lợi)."));
+// ============ 10 CHẤM DỨT — ví dụ bằng tiền: một năm phí, ai chấm dứt thì nhận lại bao nhiêu ============
+{ const BX = 520, M = 100, Y0 = 360, used = 4, con = 12 - used, CX = BX + used * M, W = con * M, W70 = Math.round(W * 0.7);
+  const hang = (y, ten, dk, t0) => T("hang-ten", 100, y - 4, 390, ten, A("fade", t0, 300)) + T("hang-dk", 100, y + 42, 390, dk, A("fade", t0, 300));
+  sec("noi-dung", "Điều 6. Hai bên đều được chấm dứt, phải báo trước 30 ngày bằng văn bản. Ví dụ giả định: phí 12 triệu đồng một năm, chấm dứt sau 4 tháng, còn 8 tháng tương ứng 8 triệu (hợp đồng tính theo tỷ lệ ngày, ở đây làm tròn theo tháng cho dễ theo dõi). Bên mua tự chấm dứt: chỉ nhận lại 70 %, tức 5,6 triệu, mất 2,4 triệu — và chỉ khi chưa có khoản chi trả nào. Bảo Việt chấm dứt: phải hoàn đủ 8 triệu. Gian lận, trục lợi: không phải chấm dứt mà là huỷ bỏ, mất toàn bộ quyền lợi. Câu hỏi mở: mức hoàn 70 % có cân bằng quyền lợi hai bên không.",
+    vien(1) + dau("Nghỉ giữa chừng, [nhận lại] bao nhiêu?", "Báo trước 30 ngày. Bên mua tự chấm dứt chỉ được hoàn [70%] phí còn lại", 10)
+    + T("vi-du", BX, 262, 1200, "Ví dụ giả định: phí [12 triệu đồng/năm], chấm dứt sau 4 tháng", A("fade", 300, 300))
+    // năm hợp đồng: 4 tháng đã dùng + 8 tháng còn lại
+    + hang(Y0 + 6, "Một năm phí", "12 tháng = 12 triệu", 400)
+    + lop(`<rect x="${BX}" y="${Y0}" width="${used * M}" height="72" fill="#DADFE2"/><rect x="${CX}" y="${Y0}" width="${W}" height="72" fill="${P.camNhat}"/>` + Array.from({ length: 11 }, (_, i) => `<rect x="${BX + (i + 1) * M - 1}" y="${Y0}" width="2" height="72" fill="#FFFFFF"/>`).join("") + `<path d="M${CX} ${Y0 + 72} V740" stroke="${P.phu}" stroke-width="2" stroke-dasharray="8 8"/>`, BX, Y0, 12 * M, 380, "Thanh 12 tháng: 4 tháng đã dùng, 8 tháng còn lại", "bieu-do", A("wipe", 500, 700))
+    + T("thanh-chu", BX, Y0 + 16, used * M, "đã dùng 4 tháng", A("fade", 900, 300)) + T("thanh-chu", CX, Y0 + 16, W, "còn 8 tháng = [8 triệu]", A("fade", 1000, 300))
+    // bên mua chấm dứt: 70 % nhận lại, 30 % mất
+    + hang(526, "Bên mua chấm dứt", "khi chưa nhận chi trả nào", 1300)
+    + lop(`<rect x="${CX}" y="520" width="${W70}" height="72" fill="${P.xanh}"/><rect x="${CX + W70}" y="520" width="${W - W70}" height="72" fill="${P.cam}"/>`, CX, 520, W, 72, "Thanh bên mua chấm dứt: 70 % nhận lại, 30 % mất", "bieu-do", A("wipe", 1400, 600))
+    + T("thanh-chu", CX, 536, W70, "nhận lại 5,6 triệu", A("fade", 1800, 300)) + T("thanh-chu", CX + W70, 536, W - W70, "mất 2,4 triệu", A("fade", 1900, 300))
+    // Bảo Việt chấm dứt: hoàn đủ
+    + hang(666, "Bảo Việt chấm dứt", "dù đã có khiếu nại hay chưa", 2200)
+    + lop(`<rect x="${CX}" y="660" width="${W}" height="72" fill="${P.xanh}"/>`, CX, 660, W, 72, "Thanh Bảo Việt chấm dứt: hoàn đủ 8 triệu", "bieu-do", A("wipe", 2300, 600))
+    + T("thanh-chu", CX, 676, W, "nhận lại đủ 8 triệu", A("fade", 2700, 300))
+    // gian lận: không phải chấm dứt mà huỷ bỏ
+    + iconTron("alert-triangle", 132, 812, 32, "Biểu tượng cảnh báo", A("pop", 3000, 300), P.camNhat)
+    + T("canh-bao-chu", 184, 790, 1500, "Gian lận, trục lợi thì khác: hợp đồng bị [huỷ ngay], mất toàn bộ quyền lợi", A("fade", 3000, 400))
+    + nguon("Hợp đồng Bảo Việt An Gia, Điều 6 khoản 1, 2. Ví dụ giả định; hợp đồng tính phí còn lại theo tỷ lệ ngày."));
 }
 
 // =================== CSS ===================
@@ -119,14 +129,18 @@ em{font-style:normal;color:#3E8A2A}
 .ket{font:600 36px/1.35 'Be Vietnam Pro';color:${P.phu};text-align:center}.ket em{color:#B5650A}
 .so-trang{font:600 24px/1 'Be Vietnam Pro';color:${P.phu};text-align:right}
 .nguon{font:400 24px/1.4 'Be Vietnam Pro';color:${P.phu}}
-.moc{font:700 28px/1.2 'Be Vietnam Pro';color:#B5650A}
+.moc{font:700 28px/1.2 'Be Vietnam Pro';color:#B5650A}.moc em{color:#B5650A}
 .nhan-dong{font:600 32px/1.3 'Be Vietnam Pro';color:${P.muc};text-align:right}
 .so-thanh{font:800 34px/1.2 'Encode Sans';color:${P.muc}}.so-thanh.cam-dam{color:${P.camDam}}.trai{text-align:left !important}
 .lich-chu{font:600 28px/1.35 'Be Vietnam Pro';color:${P.muc};text-align:center}.lich-chu em{color:#9A5207}
 .cot-ten{font:800 40px/1.2 'Encode Sans';color:${P.muc};text-align:center}
 .so-lon{font:800 110px/1.1 'Encode Sans';color:#3E8A2A;text-align:center}.so-lon.cam{color:${P.camDam}}
 .cot-mo{font:600 34px/1.3 'Be Vietnam Pro';color:${P.muc};text-align:center}.cot-dk{font:400 32px/1.3 'Be Vietnam Pro';color:${P.phu};text-align:center}
-.canh-bao{background:${P.camNhat};border:3px solid ${P.cam};border-radius:60px}
+.cl-so{font:800 46px/1.1 'Encode Sans';color:${P.muc};text-align:center}.cl-so.cam-dam{color:${P.camDam}}
+.cl-ten{font:600 28px/1.3 'Be Vietnam Pro';color:${P.phu};text-align:center}
+.vi-du{font:600 32px/1.3 'Be Vietnam Pro';color:${P.muc}}.vi-du em{color:#B5650A}
+.hang-ten{font:800 36px/1.2 'Encode Sans';color:${P.muc};text-align:right}.hang-dk{font:400 28px/1.3 'Be Vietnam Pro';color:${P.phu};text-align:right}
+.thanh-chu{font:700 30px/1.3 'Be Vietnam Pro';color:${P.muc};text-align:center}.thanh-chu em{color:${P.camDam}}
 .canh-bao-chu{font:600 32px/1.35 'Be Vietnam Pro';color:${P.muc}}.canh-bao-chu em{color:#B5650A}
 `);
 fs.rmSync(path.join(D, "slides"), { recursive: true, force: true });
