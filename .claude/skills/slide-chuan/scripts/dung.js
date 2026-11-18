@@ -57,7 +57,7 @@ function anhTong(work) {
     return out; })();
 }
 
-const laCanhBao = (m) => /^◇ (phong phú|tiêu điểm|nền|bảng|asset)|chữ đọc liền|nhãn ngắn/.test(m);
+const laCanhBao = (m) => /^◇ (phong phú|tiêu điểm|nền|bảng|asset)|chữ đọc liền|nhãn ngắn/.test(m) || /↔ lệch .* lệch [45] px$/.test(m);   // lệch 4–5 px thường là độ hụt nét chữ cái (V, I, Đ) — mắt không thấy
 
 async function dung(dir, { ten, soat = true, nhap = false } = {}) {
   dir = path.resolve(dir); ten = ten || path.basename(dir);

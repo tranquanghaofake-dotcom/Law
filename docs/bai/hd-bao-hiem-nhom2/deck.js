@@ -1,324 +1,322 @@
-// Deck "Hợp đồng bảo hiểm và thực trạng" — Nhóm 2. Skill slide-chuan; hệ thống thiết kế dùng lại từ bài Ch3 ("tư vấn pháp lý — khối phẳng").
-// Nội dung + nguồn: noi-dung.md. Kịch bản (sinh tự động từ file này): kich-ban.md.
+// Deck "Hợp đồng bảo hiểm Bảo Việt An Gia và thực trạng thị trường" — Nhóm 2. Skill slide-chuan, hướng BIÊN TẬP HỌC THUẬT (Hào chọn 18/11/2026).
+// Luật của bản này (skill sửa 18/11/2026): hình chính là chính trang hợp đồng gốc (anh/goc/, scripts/trang_goc.js) có khoanh đúng điều khoản;
+// nền trắng, bảng kẻ ngang, không thẻ / chip / bóng; tiêu đề là kết luận cụ thể; không viết tắt chưa giải thích.
 //   node deck.js && node ../../../.claude/skills/slide-chuan/scripts/dung.js . --ten=hop-dong-bao-hiem-nhom2
 const fs = require("fs"), path = require("path");
-const D = __dirname, mh = require("./minh-hoa.js"), P = mh.P;
+const D = __dirname;
 const ghi = (f, s) => { fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, s); };
 fs.rmSync(path.join(D, "asset", "hinh"), { recursive: true, force: true });
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
-const em = (s) => esc(s).replace(/\[([^\]]+)\]/g, "<em>$1</em>").replace(/\{([^}]+)\}/g, '<em class="v">$1</em>');
+const em = (s) => esc(s).replace(/\[([^\]]+)\]/g, "<em>$1</em>").replace(/\{([^}]+)\}/g, '<em class="do">$1</em>');
+const P = { nen: "#FFFFFF", muc: "#1B2A28", phu: "#3F4B48", ke: "#8C9491", x1: "#0E4F49", x2: "#2C7A6C", v1: "#946512", v2: "#E2A52E", d1: "#B13A2E", sang: "#F3D27E", nhat: "#DDECE7" };
 const TONG = 22, S2 = [], KB = [];
 let nL = 0;
-
-// =================== HÀM DỰNG (cùng ngữ pháp với bài Ch3) ===================
 const A = (a, at, dur = 500) => `data-a="${a}" data-at="${at}" data-dur="${dur}"`;
-const lop = (body, x, y, w, h, alt, loai = "phang", ex = "") => { const f = `l${String(++nL).padStart(2, "0")}.svg`;
+const lop = (body, x, y, w, h, alt, loai = "bieu-do", ex = "") => { const f = `l${String(++nL).padStart(2, "0")}.svg`;
   ghi(path.join(D, "asset", "hinh", f), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${x} ${y} ${w} ${h}" width="${w}" height="${h}">${body}</svg>`);
   return `<img data-l="lop-${nL}" data-loai="${loai}" data-alt="${esc(alt)}" ${ex} src="asset/hinh/${f}" style="position:absolute;left:${x}px;top:${y}px;width:${w}px;height:${h}px">`; };
-const chup = (f, x, y, w, h, alt, ex = "") => `<img data-l="anh-${f.replace(/\W/g, "")}" data-loai="anh-chup" data-alt="${esc(alt)}" ${ex} src="anh/unsplash/${f}" style="position:absolute;left:${x}px;top:${y}px;width:${w}px;height:${h}px">`;
-const nen = (body) => lop(body, 0, 0, 1920, 1080, "Hình trang trí", "nen");
 const T = (cls, x, y, w, s, ex = "") => `<div class="${cls}" data-t ${ex} style="left:${x}px;top:${y}px;width:${w}px">${em(s)}</div>`;
-const G = (cls, x, y, w, h, html, ex = "") => `<div class="${cls} giua" data-t ${ex} style="left:${x}px;top:${y}px;width:${w}px;height:${h}px">${html}</div>`;
-const chip = (s, x = 120, y = 80, cls = "chip", ex = "") => `<div class="${cls}" data-t data-l="c${++nL}" data-alt="Nhãn ${esc(s)}" ${ex} style="left:${x}px;top:${y}px">${esc(s)}</div>`;
-const khoi = (x, y, w, h, cls, alt, ex = "", st = "") => `<div class="${cls}" data-l="k${++nL}" data-alt="${esc(alt)}" ${ex} style="left:${x}px;top:${y}px;width:${w}px;height:${h}px${st}"></div>`;
-const cap = (x, y, w, a, b, ka = "la-t", kb = "la-m", t0 = 0) => `<div class="cap" style="left:${x}px;top:${y}px;width:${w}px"><b data-t class="${ka}" ${A("fade", t0, 400)}>${em(a)}</b><span data-t class="${kb}" ${A("fade", t0 + 100, 400)}>${em(b)}</span></div>`;
-const dau = (kk, td, dan, so, x = 120, w = 1500) => chip(kk, x, 80, "chip", A("fade", 0, 400)) + `<h1 class="td" data-t data-tieu-de ${A("rise", 100, 600)} style="left:${x}px;top:132px;width:${w}px">${em(td)}</h1>` + (dan ? T("dan", x, 246, w + 60, dan, A("fade", 350, 500)) : "") + T("so-trang", 1600, 84, 200, `${so} / ${TONG}`);
-const dauToi = (kk, td, dan, so, x = 120, w = 1500) => chip(kk, x, 80, "chip vang", A("fade", 0, 400)) + `<h1 class="td sang" data-t data-tieu-de ${A("rise", 100, 600)} style="left:${x}px;top:132px;width:${w}px">${em(td)}</h1>` + (dan ? T("dan sang", x, 246, w + 60, dan, A("fade", 350, 500)) : "") + T("so-trang sang", 1600, 84, 200, `${so} / ${TONG}`);
-const sec2 = (mau, kieu, notes, inner, { ex = "", trans = "fade", dur = 600 } = {}) => {
+const sec = (mau, kieu, notes, inner, { ex = "", trans = "fade" } = {}) => {
   const td = (inner.match(/data-tieu-de[^>]*>([\s\S]*?)<\/h1>/) || [])[1] || "";
   KB.push([S2.length + 1, mau, td.replace(/<[^>]+>/g, ""), notes]);
-  S2.push(`<section class="s ${kieu}" data-mau="${mau}" data-nen="${kieu}" ${ex} data-trans="${trans}" data-dur="${dur}" data-notes="${esc(notes)}">\n${inner}\n</section>`); };
-const NEN = {
-  tron: () => `<circle cx="1920" cy="0" r="300" fill="${P.x4}"/>` + mh.cham(1660, 960, 6, 2, 26, 5, P.v2),
-  goc: () => `<circle cx="0" cy="1080" r="110" fill="${P.x4}"/><circle cx="1920" cy="0" r="110" fill="${P.v4}"/>`,
-  dat: (y0) => `<rect x="0" y="${y0}" width="1920" height="${1080 - y0}" fill="${P.x4}"/>` + mh.cham(1700, 150, 5, 3, 26, 5, P.v2),
-};
-const hopBadge = (x, y, ten, mau = P.x1, co = 100, ex = "") => lop(`<rect x="${x}" y="${y}" width="${co}" height="${co}" rx="${co * 0.18}" fill="${mau}"/>` + mh.iconNet(D, ten, x + co / 2, y + co / 2, co * 0.6, P.nen, 3), x, y, co, co, `Biểu tượng ${ten}`, "phang", `data-lap ${ex}`);
-const badgeNguoi = (x, y, co, mau, ao, ao2, ten, ex = "") => lop(`<rect x="${x}" y="${y}" width="${co}" height="${co}" rx="${co * 0.18}" fill="${mau}"/>` + mh.nguoi(x + co / 2, y + co * 0.94, co * 0.72, { ao, ao2 }), x, y, co, co, `Hình người: ${ten}`, "phang", `data-lap ${ex}`);
-const badgeToa = (x, y, co, mau, ex = "") => lop(`<rect x="${x}" y="${y}" width="${co}" height="${co}" rx="${co * 0.18}" fill="${mau}"/>` + mh.toaVP(x + co / 2, y + co * 0.9, co * 0.56), x, y, co, co, "Toà nhà doanh nghiệp bảo hiểm", "phang", `data-lap ${ex}`);
-const panel = (x, y, w, h, t0 = 200) => khoi(x, y, w, h, "panel-nen", "Khối nền", A("fade", t0, 500));
-const vom = (x, y, w, h) => `M${x} ${y + h} V${y + w / 2} A${w / 2} ${w / 2} 0 0 1 ${x + w} ${y + w / 2} V${y + h} Z`;
-const chipsRow = (ds, y0 = 830, x0 = 120, xMax = 900, t0 = 1000) => { let x = x0, y = y0, o = "";
-  ds.forEach((s, k) => { const w = Math.round(s.length * 16 + 36); if (x + w > xMax) { x = x0; y += 68; } o += chip(s, x, y, "chip vang nt", A("rise", t0 + k * 120, 400)); x += w + 16; }); return o; };
-const mMoPhan = (so, ten, mo, hinh, alt, chips, notes) => sec2("mo-phan", "dam", notes, nen(mh.cham(120, 96, 5, 3, 26, 5, P.v2))
-  + lop(`<circle cx="1480" cy="580" r="470" fill="${P.x2}"/>`, 1010, 110, 910, 940, "Mảng tròn sau ảnh", "phang", A("grow", 0, 700))
-  + lop(`<circle cx="1430" cy="540" r="430" fill="${P.x4}"/>` + hinh, 1000, 110, 860, 860, alt, "phang", A("pop", 200, 800))
-  + lop(`<circle cx="1430" cy="540" r="462" fill="none" stroke="${P.v2}" stroke-width="6"/>` + mh.saoCum(990, 860, 26, P.v3), 960, 70, 940, 950, "Vòng vàng quanh ảnh", "phang", `data-lap ${A("fade", 700, 600)}`)
-  + khoi(120, 190, 300, 240, "o-so", "Ô số phần", A("pop", 300, 500)) + T("mp-so", 120, 196, 300, so, `data-dl ${A("pop", 400, 500)}`)
-  + `<h1 class="mp-t" data-t data-tieu-de ${A("rise", 600, 600)} style="left:116px;top:480px;width:780px">${esc(ten)}</h1>` + T("mp-m", 118, 720, 720, mo, A("fade", 850, 500))
-  + chipsRow(chips), { trans: "push", dur: 700 });
-const mCauAnh = (anh, alt, cau, phu, notes) => sec2("cau", "anh", notes, chup(anh, 0, 0, 1920, 1080, alt, A("fade", 0, 900))
-  + `<h1 class="cau-anh" data-t data-tieu-de ${A("rise", 500, 700)} style="left:120px;top:560px;width:1500px">${em(cau)}</h1>` + khoi(90, 830, 1520, 150, "tk-the", "Khối nền sau chữ", A("fade", 1100, 500)) + T("cau-anh-phu", 122, 852, 1440, phu, A("fade", 1200, 600)), { ex: "data-hero" });
+  S2.push(`<section class="s ${kieu}" data-mau="${mau}" data-nen="${kieu === "dam" ? "N2" : "N1"}" ${ex} data-trans="${trans}" data-dur="500" data-notes="${esc(notes)}">\n${inner}\n</section>`); };
+// đầu slide: nhãn mục (chữ thường), tiêu đề tối đa 2 dòng, phụ đề nói phạm vi / căn cứ — cùng một chỗ ở mọi slide
+const dau = (nhan, td, phu, so, sang = false) => `<div class="dau" style="left:120px;top:64px;width:1500px">`
+  + `<div class="nhan${sang ? " sang" : ""}" data-t ${A("fade", 0, 300)}>${esc(nhan)}</div>`
+  + `<h1 class="td${sang ? " sang" : ""}" data-t data-tieu-de ${A("fade", 100, 500)}>${em(td)}</h1>`
+  + (phu ? `<div class="phu${sang ? " sang" : ""}" data-t ${A("fade", 300, 400)}>${em(phu)}</div>` : "") + `</div>`
+  + T(`so-trang${sang ? " sang" : ""}`, 1640, 64, 160, `${so} / ${TONG}`);
+const nguon = (s, sang = false) => T(`nguon${sang ? " sang" : ""}`, 120, 1000, 1680, s);
+const ke = (x, y, w, day = 2, mau = P.muc) => `<div class="ke" style="left:${x}px;top:${y}px;width:${w}px;height:${day}px;background:${mau}"></div>`;
+function kichThuoc(p) { const b = fs.readFileSync(p); return [b.readUInt32BE(16), b.readUInt32BE(20)]; }
+const hGiay = (f, w) => { const [iw, ih] = kichThuoc(path.join(D, "anh", "goc", f + ".png")); return Math.round((w * ih) / iw); };
+// trang hợp đồng gốc: khung mảnh + ảnh cắt + khoanh (lớp riêng, đè lên ảnh) — khoanh: [fy0, fy1, màu, fx0, fx1]
+const giay = (f, x, y, w, alt, khoanh = [], t0 = 300) => { const h = hGiay(f, w);
+  return `<div class="khung-giay" style="left:${x - 14}px;top:${y - 14}px;width:${w + 28}px;height:${h + 28}px"></div>`
+    + `<img data-l="goc-${f}" data-loai="tai-lieu" data-alt="${esc(alt)}" ${A("fade", t0, 500)} src="anh/goc/${f}.png" style="position:absolute;left:${x}px;top:${y}px;width:${w}px;height:${h}px">`
+    + khoanh.map(([a, b, m = P.d1, c = 0, d = 1], k) => lop(`<rect x="${x + c * w - 8}" y="${y + a * h - 6}" width="${(d - c) * w + 16}" height="${(b - a) * h + 12}" rx="3" fill="none" stroke="${m}" stroke-width="5"/>`, Math.round(x + c * w - 12), Math.round(y + a * h - 10), Math.round((d - c) * w + 24), Math.round((b - a) * h + 20), "Khung khoanh đoạn đang phân tích", "net", A("wipe", t0 + 600 + k * 300, 500))).join(""); };
+// bảng kẻ ngang: đầu bảng kẻ 3 px mực, hàng kẻ 1 px xám, hàng nhấn: thanh màu chủ bên trái + chữ đậm
+const bang = (x, y, cot, hang, { cao = 96, nhan = -1, t0 = 400 } = {}) => { const W = cot.reduce((a, c) => a + c.w, 0); let o = "", cx = x;
+  cot.forEach((c) => { o += T(`bh${c.phai ? " phai" : ""}`, cx, y, c.w - 24, c.t, A("fade", t0, 300)); cx += c.w; });
+  o += ke(x, y + 52, W, 3);
+  hang.forEach((r, i) => { const yy = y + 64 + i * cao, t = t0 + 200 + i * 150; cx = x;
+    if (i === nhan) o += ke(x - 28, yy + 10, 8, cao - 28, P.x1);
+    r.forEach((v, j) => { o += T(`${j ? "o" : "o dau"}${i === nhan ? " nhan" : ""}${cot[j].phai ? " phai" : ""}${cot[j].cls ? " " + cot[j].cls : ""}`, cx, yy + 12, cot[j].w - 24, v, A("fade", t, 300)); cx += cot[j].w; });
+    o += ke(x, yy + cao - 4, W, 1, P.ke); });
+  return o; };
+const soLon = (x, y, w, so, mo, mau = "xanh", t0 = 400) => T(`so ${mau}`, x, y, w, so, `data-dl ${A("fade", t0, 400)}`) + T("so-m", x, y + 140, w, mo, A("fade", t0 + 150, 400));
 
-// =================== 22 SLIDE ===================
-// 1 BÌA
-sec2("bia", "sang", "Chào thầy cô và các bạn. Nhóm 2 trình bày hai phần: phân tích một mẫu hợp đồng bảo hiểm sức khoẻ thực tế của Bảo Việt, và thực trạng thị trường bảo hiểm thương mại Việt Nam từ 2018 đến 9 tháng năm 2026.",
-  nen(`<path d="${vom(1080, 160, 760, 900)}" fill="${P.x4}"/>` + mh.cham(120, 1000, 6, 2, 26, 5, P.v2) + mh.cham(1800, 90, 4, 4, 26, 5, P.v2) + mh.saoCum(940, 220, 28))
-  + lop(`<path d="${vom(996, 86, 808, 948)}" fill="none" stroke="${P.v2}" stroke-width="6"/>`, 990, 80, 820, 960, "Viền vòm vàng bao quanh ảnh", "phang", A("fade", 500, 700))
-  + chup("bia-vom.png", 1020, 110, 760, 900, "Ảnh: bàn tay nâng một ngôi nhà mô hình — bảo hiểm che chở", A("rise", 0, 900))
-  + khoi(840, 850, 620, 150, "the-noi", "Thẻ nổi", A("rise", 1400, 600)) + lop(`<rect x="870" y="880" width="90" height="90" rx="18" fill="${P.x1}"/>` + mh.khien(915, 925, 62, { trai: P.v2, phai: P.v3, dau: P.x1 }), 870, 880, 90, 90, "Biểu tượng khiên", "phang", A("pop", 1600, 400))
-  + T("noi-t", 990, 880, 450, "Bảo Việt An Gia", A("fade", 1700, 400)) + T("noi-m", 990, 926, 450, "bảo hiểm sức khoẻ", A("fade", 1800, 400))
-  + chip("Báo cáo nhóm 2", 120, 200, "chip", A("fade", 300, 400))
-  + `<h1 class="bia-td" data-t data-tieu-de ${A("rise", 600, 700)} style="left:116px;top:290px;width:820px;font-size:112px">${em("Hợp đồng bảo hiểm [và thực trạng]")}</h1>`
-  + `<div class="gach" data-l="gach-bia" data-alt="Gạch vàng" ${A("wipe", 1000, 400)} style="left:120px;top:720px;width:150px;height:12px"></div>`
-  + T("bia-mo", 120, 768, 680, "Một mẫu hợp đồng thực tế · Thị trường Việt Nam 2018 – 2026", A("fade", 1100, 500)) + T("bia-by", 120, 930, 640, "Nhóm 2", A("fade", 1200, 500)));
-
-// 2 KẾT CẤU
-{ const PH = [["I", "Hợp đồng Bảo Việt An Gia", "Tám nhóm điều khoản trọng yếu", "file-certificate", "dau-xanh"], ["II", "Thực trạng thị trường", "Tăng nóng → khủng hoảng 2023 → phục hồi", "chart-bar", "dau-vang"]];
-  sec2("noi-dung", "sang", "Bài có hai chương. Chương I đọc kỹ một hợp đồng thật để thấy quyền và nghĩa vụ cụ thể. Chương II đặt hợp đồng đó vào bức tranh thị trường: vì sao doanh thu giảm năm 2023 và phục hồi ra sao.",
-    nen(NEN.dat(700)) + dau("Kết cấu", "Hai chương: [một hợp đồng], một thị trường", "Từ điều khoản đến số liệu toàn ngành.", 2)
-    + PH.map(([so, ten, mo, ic, cls], k) => { const x = 120 + k * 860, t0 = 500 + k * 400;
-      return khoi(x + 14, 354, 820, 600, "bong", "Bóng thẻ", A("rise", t0, 450)) + khoi(x, 340, 820, 600, "the-trang", `Thẻ chương ${so}`, A("rise", t0, 450)) + khoi(x, 340, 820, 180, cls, `Đầu thẻ chương ${so}`, A("rise", t0, 450))
-        + T(`kc-so${k ? " toi" : ""}`, x + 36, 360, 200, so, A("rise", t0, 450)) + hopBadge(x + 660, 380, ic, k ? P.x1 : P.v2, 110, A("pop", t0 + 200, 400))
-        + T("n2-kc-t", x + 40, 570, 740, ten, A("fade", t0 + 150, 400)) + T("n2-kc-m", x + 40, 660, 740, mo, A("fade", t0 + 250, 400)) + chip(k ? "2018 – 2026" : "13 điều, Phụ lục 1", x + 40, 840, k ? "chip vang" : "chip", A("rise", t0 + 350, 400))
-        ; }).join(""));
+// ============ 1 BÌA ============
+{ const w = 900, h = hGiay("bia", w);
+  sec("bia", "sang", "Chào thầy cô và các bạn. Nhóm 2 trình bày hai phần: phân tích mẫu hợp đồng bảo hiểm sức khoẻ Bảo Việt An Gia — trên màn hình là trang đầu của chính hợp đồng đó — và thực trạng thị trường bảo hiểm thương mại Việt Nam từ 2018 đến 9 tháng năm 2026.",
+    T("nhan", 120, 140, 700, "Báo cáo nhóm 2")
+    + `<h1 class="bia-td" data-t data-tieu-de ${A("fade", 100, 600)} style="left:120px;top:200px;width:740px">${em("Hợp đồng bảo hiểm sức khoẻ [Bảo Việt An Gia] và thị trường bảo hiểm Việt Nam")}</h1>`
+    + ke(120, 700, 120, 6, P.v2) + T("bia-m", 120, 740, 720, "Phần I: đọc 8 nhóm điều khoản của một hợp đồng thật. Phần II: số liệu thị trường 2018 – 9 tháng 2026.", A("fade", 600, 500))
+    + giay("bia", 960, Math.round(520 - h / 2), w, "Ảnh chụp trang đầu mẫu Hợp đồng bảo hiểm Bảo Việt An Gia: tên hợp đồng, căn cứ, Điều 1 về bên mua và công ty bảo hiểm", [[0, 0.075, P.v2]], 200)
+    + T("chu-anh", 960, Math.round(520 + h / 2) + 30, w, "Trang đầu mẫu hợp đồng nhóm phân tích (tài liệu nhóm, trang 2)."));
 }
 
-// 3 MỞ PHẦN I
-mMoPhan("01", "Hợp đồng Bảo Việt An Gia", "Một hợp đồng bảo hiểm sức khoẻ thật — đọc từ cấu trúc đến từng điều khoản.", `<g transform="rotate(-6 1380 540)">${mh.hopDong(1210, 250, 340)}</g><circle cx="1600" cy="720" r="120" fill="${P.x1}"/>` + mh.iconNet(D, "stethoscope", 1600, 720, 140, P.nen, 4) + mh.saoCum(1180, 330, 26, P.v2), "Minh hoạ: bản hợp đồng và ống nghe y tế — hợp đồng bảo hiểm sức khoẻ",
-  ["Cấu trúc", "Chủ thể", "Quyền lợi", "Phí", "Thời gian chờ", "Đồng chi trả", "Chấm dứt", "Bồi thường"],
-  "Chương I. Mẫu hợp đồng Bảo Việt An Gia là hợp đồng bảo hiểm sức khoẻ của Tổng Công ty Bảo hiểm Bảo Việt. Nhóm đọc 8 nhóm điều khoản theo thứ tự trên màn hình.");
-
-// 4 CẤU TRÚC — thứ tự ưu tiên (Điều 12)
-{ const BAC = [["1", "Sửa đổi bổ sung mới nhất", P.x1, "n2-bac sang"], ["2", "Hợp đồng và các phụ lục", P.x2, "n2-bac sang"], ["3", "Quy tắc bảo hiểm", P.x3, "n2-bac"]];
-  const TL = [["file-description", "Giấy yêu cầu"], ["file-certificate", "Hợp đồng — 13 điều"], ["list-check", "Phụ lục 1"], ["file-text", "Sửa đổi bổ sung"], ["files", "Quy tắc bảo hiểm"]];
-  sec2("noi-dung", "sang", "Hợp đồng gồm 13 điều và Phụ lục 1, đủ các nội dung cốt lõi: chủ thể, đối tượng, quyền lợi, thời hạn, phí, thời gian chờ, loại trừ, chấm dứt, tranh chấp. Điểm hay là Điều 12: nếu các tài liệu mâu thuẫn thì áp dụng sửa đổi bổ sung mới nhất trước, rồi đến hợp đồng và phụ lục, sau cùng là Quy tắc. Ngoài ra Điều 11 có điều khoản bảo vệ dữ liệu cá nhân, Điều 10 cho phép giải quyết bồi thường điện tử.",
-    nen(NEN.goc()) + dau("I · Cấu trúc", "Năm tài liệu, [ba bậc ưu tiên]", "Mâu thuẫn thì bậc trên thắng.", 4)
-    + BAC.map(([so, ten, m, cls], k) => { const x = 120 + k * 70, y = 350 + k * 180, t0 = 500 + k * 300;
-      return lop(`<rect x="${x}" y="${y}" width="640" height="150" rx="18" fill="${m}"/><circle cx="${x + 75}" cy="${y + 75}" r="44" fill="${P.nen}"/>`, x, y, 640, 150, `Bậc ${so}: ${ten}`, "phang", A("rise", t0, 450))
-        + G("n2-bac-so", x + 31, y + 31, 88, 88, `<span style="width:100%;text-align:center">${so}</span>`, A("rise", t0, 450)) + G(cls, x + 150, y, 470, 150, esc(ten), A("rise", t0, 450)); }).join("")
-    + lop(`<path d="M960 370 V860" stroke="${P.phu}" stroke-width="4"/><path d="M944 838 L960 868 L976 838" fill="none" stroke="${P.phu}" stroke-width="4" stroke-linejoin="round"/>`, 930, 360, 60, 520, "Mũi tên: mức ưu tiên giảm dần từ bậc 1 xuống bậc 3", "phang", A("wipe", 1400, 600))
-    + panel(1040, 340, 760, 620, 300)
-    + TL.map(([ic, ten], k) => { const y = 380 + k * 112, t0 = 700 + k * 200; return hopBadge(1080, y, ic, P.x1, 76, A("pop", t0, 300)) + G("n2-tl", 1180, y, 600, 76, esc(ten), A("fade", t0 + 100, 400)); }).join("")
-    + T("nguon", 120, 1000, 1680, "Điều 12 hợp đồng Bảo Việt An Gia."));
+// ============ 2 NỘI DUNG ============
+{ const C = [["I", "Hợp đồng Bảo Việt An Gia", ["Cấu trúc và thứ tự ưu tiên tài liệu", "Các bên và quyền lợi theo chương trình", "Phí, thời gian chờ, đồng chi trả", "Chấm dứt hợp đồng và chi trả", "Đánh giá và khuyến nghị cho bên mua"]], ["II", "Thị trường bảo hiểm Việt Nam", ["Doanh thu phí 2018 – 2025", "Khủng hoảng bán qua ngân hàng 2023", "Luật cấm bán kèm từ 01/7/2024", "Nhân thọ giảm, phi nhân thọ tăng", "Cập nhật 9 tháng năm 2026"]]];
+  sec("noi-dung", "sang", "Bài có hai phần. Phần I đọc từng nhóm điều khoản của một hợp đồng thật để thấy quyền và nghĩa vụ cụ thể. Phần II đặt hợp đồng đó vào bức tranh thị trường: vì sao doanh thu giảm năm 2023 và phục hồi ra sao.",
+    dau("Nội dung", "Bài gồm hai phần: đọc một hợp đồng thật, rồi xem thị trường mà hợp đồng đó được bán ra", "", 2)
+    + C.map(([so, ten, ds], k) => { const x = 120 + k * 880, t0 = 300 + k * 400;
+      return T("mp-so-nho", x, 360, 120, so, A("fade", t0, 400)) + T("cot-t", x + 120, 372, 680, ten, A("fade", t0, 400)) + ke(x, 460, 780, 3)
+        + ds.map((d, j) => T("dong", x + 120, 490 + j * 92, 660, d, A("fade", t0 + 150 + j * 100, 300)) + ke(x + 120, 566 + j * 92, 660, 1, P.ke)).join(""); }).join(""),
+    { ex: "data-khong-hinh" });
 }
 
-// 5 CHỦ THỂ
-{ const D3 = [["Người được bảo hiểm", "được bảo vệ", P.v4, P.v2, P.v1], ["Người thụ hưởng", "khi NĐBH tử vong", P.x4, P.x3, P.x2], ["Người chỉ định nhận tiền", "theo uỷ quyền", P.x4, P.x2, P.x1]];
-  sec2("noi-dung", "sang", "Hợp đồng tách bạch năm tư cách. Bên mua bảo hiểm là người giao kết và đóng phí; Bảo Việt cam kết chi trả. Người được bảo hiểm là người có sức khoẻ, tính mạng được bảo vệ — có thể khác người mua. Người thụ hưởng nhận tiền khi người được bảo hiểm tử vong; người chỉ định nhận tiền nhận bồi thường thông thường theo uỷ quyền. Một hợp đồng có thể gồm nhiều người, mỗi người một chương trình, mới hoặc tái tục — tiện cho gói gia đình.",
-    nen(NEN.dat(700)) + dau("I · Chủ thể", "Hai bên ký, [năm tư cách] liên quan", "Ai đóng phí, ai được bảo vệ, ai nhận tiền.", 5)
-    + badgeNguoi(300, 340, 190, P.x4, P.x2, P.x1, "bên mua bảo hiểm", A("pop", 500, 400)) + cap(220, 548, 360, "Bên mua bảo hiểm", "đóng phí", "la-t", "la-m", 600)
-    + lop(`<g transform="rotate(-5 960 440)">${mh.hopDong(880, 330, 160)}</g>`, 850, 320, 230, 260, "Minh hoạ: bản hợp đồng bảo hiểm ở giữa hai bên", "phang", A("pop", 800, 500))
-    + badgeToa(1430, 340, 190, P.x1, A("pop", 1000, 400)) + cap(1340, 548, 380, "Bảo Việt", "chi trả", "la-t", "la-m", 1100)
-    + lop(`<path d="M500 435 H850 M1080 435 H1420" stroke="${P.phu}" stroke-width="3"/>`, 500, 430, 920, 10, "Đường nối hai bên với hợp đồng", "phang", A("fade", 1200, 500)) + lop(`<path d="M960 640 V670 M410 670 H1510 M410 670 V700 M960 670 V700 M1510 670 V700" fill="none" stroke="${P.phu}" stroke-width="3"/>`, 400, 638, 1120, 64, "Đường nối hợp đồng với ba người liên quan", "phang", A("fade", 1300, 500))
-    + D3.map(([a, b, nenT, ao, ao2], k) => { const x = 120 + k * 590, t0 = 1400 + k * 250;
-      return (k ? khoi(x - 16, 730, 2, 190, "vach-doc", "Vạch ngăn", A("fade", t0, 300)) : khoi(120, 700, 1680, 250, "the-trang", "Khối ba người liên quan", A("rise", t0, 450))) + badgeNguoi(x + 30, 735, 130, nenT, ao, ao2, a, A("pop", t0 + 100, 400)) + cap(x + 185, 740, 350, a, b, "la-t", "n2-la-m", t0 + 200); }).join("")
-    + T("nguon", 120, 990, 1680, "Điều 1, 2, 8 · NĐBH: người được bảo hiểm."));
+// ============ 3 MỞ PHẦN I ============
+sec("mo-phan", "dam", "Phần I. Mẫu hợp đồng Bảo Việt An Gia là hợp đồng bảo hiểm sức khoẻ của Tổng Công ty Bảo hiểm Bảo Việt, áp dụng Quy tắc bảo hiểm ban hành theo Quyết định 6029 ngày 27/6/2025. Nhóm đọc theo thứ tự các điều khoản trên màn hình.",
+  T("mp-so", 110, 150, 300, "I", A("fade", 0, 500)) + `<h1 class="mp-t" data-t data-tieu-de ${A("fade", 200, 600)} style="left:120px;top:420px;width:760px">Hợp đồng Bảo Việt An Gia, đọc theo từng điều khoản</h1>`
+  + T("mp-m", 120, 720, 760, "Hợp đồng bảo hiểm sức khoẻ gồm 13 điều và Phụ lục 1 (bảng quyền lợi). Bên phải: các điều khoản theo thứ tự trình bày.", A("fade", 500, 400))
+  + [["Điều 12", "Bộ hợp đồng, thứ tự ưu tiên"], ["Điều 1, 2, 8", "Các bên trong hợp đồng"], ["Phụ lục 1", "Quyền lợi theo 5 chương trình"], ["Điều 4", "Phí và hạn thanh toán"], ["Điều 5", "Thời gian chờ"], ["Phụ lục 1, mục 2", "Đồng chi trả cho trẻ em"], ["Điều 6", "Chấm dứt, huỷ bỏ hợp đồng"], ["Điều 10", "Thời hạn chi trả"]].map(([a, b], k) => { const y = 170 + k * 96, t0 = 600 + k * 120;
+    return T("mp-dieu", 1000, y, 300, a, A("fade", t0, 300)) + T("mp-noi", 1300, y, 500, b, A("fade", t0, 300)) + ke(1000, y + 70, 800, 1, P.nhat); }).join(""),
+  { trans: "push", ex: "data-khong-hinh" });
+
+// ============ 4 THỨ TỰ ƯU TIÊN (Điều 12) ============
+{ const h = hGiay("uutien", 1680);
+  sec("noi-dung", "sang", "Điều 12 liệt kê năm tài liệu tạo thành bộ hợp đồng: giấy yêu cầu bảo hiểm, hợp đồng, Phụ lục 1, các sửa đổi bổ sung và Quy tắc bảo hiểm. Đoạn trên màn hình là nguyên văn hợp đồng: nếu các tài liệu mâu thuẫn, áp dụng theo thứ tự từ trên xuống — sửa đổi bổ sung mới nhất trước, rồi hợp đồng và phụ lục, sau cùng là Quy tắc. Tức là điều đã thoả thuận riêng thắng điều khoản mẫu.",
+    dau("I · Cấu trúc hợp đồng · Điều 12", "Khi các tài liệu mâu thuẫn, [sửa đổi bổ sung mới nhất] được áp dụng trước, Quy tắc bảo hiểm áp dụng sau cùng", "Khung đỏ trong nguyên văn hợp đồng: ba bậc, áp dụng từ trên xuống.", 4)
+    + giay("uutien", 120, 370, 1680, "Ảnh chụp nguyên văn đoạn hợp đồng quy định thứ tự ưu tiên khi các tài liệu mâu thuẫn", [[0.55, 0.99, P.d1, 0, 0.68]])
+    + [["1", "Sửa đổi bổ sung ký mới nhất"], ["2", "Hợp đồng và các phụ lục"], ["3", "Quy tắc bảo hiểm Bảo Việt An Gia"]].map(([so, t], k) => { const x = 120 + k * 570, t0 = 1200 + k * 250;
+      return T("thu-so", x, 370 + h + 50, 70, so, A("fade", t0, 300)) + T("dong", x + 70, 370 + h + 56, 480, t, A("fade", t0, 300)); }).join("")
+    + nguon("Hợp đồng Bảo Việt An Gia, Điều 12 (tài liệu nhóm, trang 5–6). Khung đỏ: ba bậc ưu tiên."));
 }
 
-// 6 QUYỀN LỢI — 5 chương trình (T13 thanh tỉ lệ)
-{ const CT = [["Đồng", 94], ["Bạc", 138], ["Vàng", 230], ["Bạch Kim", 342], ["Kim Cương", 454]], X = 360, K = 600 / 454;
-  const QL = [["bed", "Nội trú ≤ 60 ngày/năm", "khám trước, sau 30 ngày"], ["list-check", "5 quyền lợi bổ sung", "ngoại trú, tai nạn, sinh mạng, nha khoa, thai sản"], ["home", "Chỉ điều trị tại Việt Nam", "mọi gói"]];
-  sec2("noi-dung", "sang", "Phụ lục 1 có 5 chương trình từ Đồng đến Kim Cương; tổng hạn mức quyền lợi chính từ 94 đến 454 triệu đồng mỗi người mỗi năm — thanh dài đúng tỷ lệ. Quyền lợi chính là điều trị nội trú do bệnh, tai nạn, biến chứng thai sản, tối đa 60 ngày nằm viện một năm. Người mua chọn thêm 5 quyền lợi bổ sung. Mọi gói chỉ áp dụng điều trị tại Việt Nam.",
-    nen(NEN.tron()) + dau("I · Quyền lợi", "Năm mức, hạn mức [94 → 454 triệu]", "Tổng hạn mức quyền lợi chính mỗi năm.", 6)
-    + panel(100, 330, 1060, 640)
-    + CT.map(([ten, v], k) => { const y = 370 + k * 118, w = Math.round(v * K), t0 = 500 + k * 200, cuoi = k === 4;
-      return G("n2-ct", 120, y, 230, 80, esc(ten), A("fade", t0, 400)) + lop(`<rect x="${X}" y="${y + 10}" width="${w}" height="60" rx="10" fill="${cuoi ? P.v2 : k === 0 ? P.x3 : P.x2}"/>`, X, y + 10, w, 60, `Thanh ${ten}: ${v} triệu đồng`, "phang", A("wipe", t0 + 100, 500))
-        + T(`n2-ct-so${cuoi ? " vang" : ""}`, X + w + 16, y + 18, 200, `${v}`, A("fade", t0 + 400, 300)); }).join("")
-    + QL.map(([ic, a, b], k) => { const y = 350 + k * 210, t0 = 1600 + k * 250;
-      return hopBadge(1220, y, ic, P.x1, 96, A("pop", t0, 300)) + cap(1340, y, 460, a, b, "dong-t", "dong-m", t0 + 100) + (k ? `<div class="vach" style="left:1220px;top:${y - 30}px;width:580px"></div>` : ""); }).join("")
-    + T("nguon", 120, 1000, 1680, "Phụ lục 1; triệu đồng/người/năm."));
+// ============ 5 CÁC BÊN ============
+{ const R = [["Bên mua bảo hiểm", "Giao kết hợp đồng và đóng phí", "Điều 1"], ["Bảo Việt (công ty bảo hiểm)", "Chi trả tiền bảo hiểm theo hợp đồng", "Điều 1"], ["Người được bảo hiểm", "Người có sức khoẻ, tính mạng được bảo hiểm; có thể khác bên mua", "Điều 2"], ["Người thụ hưởng", "Nhận tiền khi người được bảo hiểm tử vong", "Điều 8"], ["Người chỉ định nhận tiền", "Nhận tiền bồi thường thông thường thay người được bảo hiểm, theo uỷ quyền", "Điều 8"]];
+  sec("bang", "sang", "Hợp đồng tách bạch năm tư cách. Bên mua bảo hiểm giao kết và đóng phí; Bảo Việt cam kết chi trả. Người được bảo hiểm là người có sức khoẻ, tính mạng được bảo vệ — có thể khác bên mua, ví dụ bố mẹ mua cho con. Người thụ hưởng nhận tiền khi người được bảo hiểm tử vong; người chỉ định nhận tiền nhận bồi thường thông thường theo uỷ quyền. Một hợp đồng có thể gồm nhiều người, mỗi người một chương trình, mới hoặc tái tục — tiện cho gói gia đình.",
+    dau("I · Các bên · Điều 1, 2, 8", "Hợp đồng phân biệt [năm tư cách]; người đóng phí, người được bảo vệ và người nhận tiền có thể là những người khác nhau", "Ví dụ: bố mẹ là bên mua, con là người được bảo hiểm.", 5)
+    + bang(120, 380, [{ t: "Tư cách", w: 560 }, { t: "Vai trò trong hợp đồng", w: 920 }, { t: "Căn cứ", w: 200 }], R, { cao: 110 })
+    + nguon("Hợp đồng Bảo Việt An Gia, Điều 1, Điều 2, Điều 8 (tài liệu nhóm, trang 2–4)."), { ex: "data-khong-hinh" });
 }
 
-// 7 PHÍ — câu chốt nền đậm (Điều 4)
-sec2("cau", "dam", "Điều 4: nếu phí không được thanh toán đầy đủ và đúng hạn, bằng tiền mặt hoặc chuyển khoản, hợp đồng tự động huỷ bỏ, không cần thông báo trước, trừ khi có thoả thuận khác. Điều khoản bảo vệ doanh nghiệp trước trường hợp khách chậm phí mà vẫn phát sinh sự kiện bảo hiểm. Nhóm chưa đối chiếu điều khoản này với quy định về đóng phí trong Luật Kinh doanh bảo hiểm 2022 — nếu thầy cô hỏi, đó là hướng phân tích tiếp.",
-  nen(`<circle cx="1500" cy="560" r="420" fill="${P.x2}"/>` + mh.cham(120, 980, 6, 2, 26, 5, P.v2))
-  + chip("I · Phí bảo hiểm · Điều 4", 120, 80, "chip vang", A("fade", 0, 400)) + T("so-trang sang", 1600, 84, 200, `7 / ${TONG}`)
-  + `<h1 class="cau-dam" data-t data-tieu-de ${A("rise", 200, 700)} style="left:120px;top:300px;width:1000px">${em("Chậm đóng phí, hợp đồng [tự động huỷ bỏ]")}</h1>`
-  + T("cau-dam-phu", 118, 640, 900, "Không cần thông báo trước, trừ khi hai bên có thoả thuận khác.", A("fade", 900, 500))
-  + T("cau-dam-phu", 118, 790, 900, "Mục đích: không để khách chậm phí mà vẫn đòi chi trả.", A("fade", 1200, 500))
-  + lop(`<g transform="rotate(6 1500 560)">${mh.hopDong(1330, 330, 340)}</g><circle cx="1620" cy="720" r="120" fill="${P.d4}" stroke="${P.d1}" stroke-width="14"/><path d="M1550 650 L1690 790" stroke="${P.d1}" stroke-width="16" stroke-linecap="round"/>` + `<rect x="1230" y="650" width="150" height="150" rx="26" fill="${P.v2}"/>` + mh.iconNet(D, "calendar", 1305, 725, 92, P.x1, 3),
-    1220, 300, 560, 580, "Minh hoạ: lịch hạn đóng phí và bản hợp đồng bị gạch bằng dấu cấm đỏ — hợp đồng bị huỷ", "phang", A("pop", 600, 600)), { ex: "data-hero" });
-
-// 8 THỜI GIAN CHỜ — HERO thanh thời gian
-{ const TG = [["Tai nạn", 0], ["Bệnh thường, răng", 30], ["Biến chứng thai sản", 90], ["Hô hấp, trẻ ≤ 6 tuổi", 180], ["Có sẵn, đặc biệt, dây chằng", 365], ["Sinh con", 635]], X = 660, K = 960 / 635;
-  sec2("bang", "sang", "Thời gian chờ là khoảng quyền lợi chưa phát sinh hiệu lực chi trả, để chặn việc mua bảo hiểm khi đã biết trước bệnh. Tai nạn được bảo hiểm ngay. Bệnh thông thường chờ 30 ngày, biến chứng thai sản 90, bệnh hô hấp ở trẻ đến 6 tuổi 180, bệnh có sẵn, bệnh đặc biệt, tổn thương dây chằng hay sụn chêm 365. Dài nhất là quyền lợi sinh con: 635 ngày, gần 21 tháng — muốn dùng phải mua trước khi có kế hoạch sinh con. Bảo hiểm sinh mạng do bệnh: 90 ngày với bệnh thường, 365 ngày với bệnh có sẵn hoặc đặc biệt. Tái tục liên tục thì không phải chờ lại.",
-    nen(NEN.goc()) + dau("I · Thời gian chờ · Điều 5", "Chờ từ [0 đến 635 ngày]", "Nhóm rủi ro càng dễ bị trục lợi, thời gian chờ càng dài.", 8)
-    + lop(`<path d="M${X + 365 * K} 330 V960" stroke="${P.v1}" stroke-width="3" stroke-dasharray="10 8"/>`, X + 365 * K - 4, 330, 8, 630, "Vạch mốc 1 năm", "phang", A("fade", 300, 400))
-    + T("n2-moc", X + 365 * K + 18, 330, 180, "1 năm", A("fade", 400, 400))
-    + TG.map(([ten, d], k) => { const y = 380 + k * 100, w = Math.max(Math.round(d * K), 0), t0 = 600 + k * 220, nhan = d >= 365;
-      return G("n2-tg", 120, y, 520, 76, esc(ten), A("fade", t0, 400))
-        + lop(d ? `<rect x="${X}" y="${y + 12}" width="${w}" height="52" rx="10" fill="${nhan ? P.v2 : P.x2}"/>` : `<circle cx="${X + 26}" cy="${y + 38}" r="24" fill="${P.x1}"/>`, X, y + 12, Math.max(w, 52), 52, `Thanh ${ten}: ${d} ngày`, "phang", A("wipe", t0 + 100, 500))
-        + T(`n2-tg-so${nhan ? " vang" : ""}`, X + Math.max(w, 52) + 18, y + 18, 420, d ? `${d} ngày` : "0 — hiệu lực ngay", A("fade", t0 + 400, 300)); }).join("")
-    + T("nguon", 120, 1000, 1680, "Điều 5 hợp đồng. Tái tục liên tục thì không phải chờ lại."), { ex: "data-hero data-khong-hinh" });
+// ============ 6 QUYỀN LỢI — Phụ lục 1 ============
+{ const CT = [["Đồng", 94], ["Bạc", 138], ["Vàng", 230], ["Bạch Kim", 342], ["Kim Cương", 454]], X = 340, K = 640 / 454;
+  sec("noi-dung", "sang", "Phụ lục 1 có 5 chương trình từ Đồng đến Kim Cương; tổng hạn mức quyền lợi chính từ 94 đến 454 triệu đồng mỗi người mỗi năm, vẽ đúng tỷ lệ. Quyền lợi chính là điều trị nội trú do bệnh, tai nạn, biến chứng thai sản, tối đa 60 ngày nằm viện một năm, kèm chi phí khám trong 30 ngày trước khi nhập viện và tái khám 30 ngày sau khi ra viện. Người mua chọn thêm 5 quyền lợi bổ sung. Mọi gói chỉ áp dụng điều trị tại Việt Nam.",
+    dau("I · Quyền lợi · Phụ lục 1", "Năm chương trình, hạn mức quyền lợi chính [từ 94 đến 454 triệu đồng] mỗi người mỗi năm", "Tổng hạn mức quyền lợi chính (điều trị nội trú) của từng chương trình, triệu đồng mỗi người mỗi năm.", 6)
+    + CT.map(([ten, v], k) => { const y = 400 + k * 110, bw = Math.round(v * K), t0 = 500 + k * 150;
+      return T("dong-dam", 120, y + 14, 210, ten, A("fade", t0, 300)) + lop(`<rect x="${X}" y="${y + 10}" width="${bw}" height="64" fill="${P.x2}"/>`, X, y + 10, bw, 64, `Thanh ${ten}: ${v} triệu đồng`, "bieu-do", A("wipe", t0, 400)) + T("so-thanh", X + bw + 16, y + 20, 140, String(v), A("fade", t0 + 200, 300)); }).join("")
+    + T("cot-t", 1240, 400, 560, "Trong mọi chương trình", A("fade", 1400, 300)) + ke(1240, 466, 560, 3)
+    + [["Nằm viện tối đa 60 ngày mỗi năm", "kèm khám 30 ngày trước khi nhập viện, tái khám 30 ngày sau khi ra viện"], ["5 quyền lợi bổ sung tự chọn", "ngoại trú, tai nạn cá nhân, sinh mạng cá nhân, nha khoa, thai sản"], ["Chỉ điều trị tại Việt Nam", "phạm vi lãnh thổ của cả 5 chương trình"]].map(([a, b], k) => { const y = 490 + k * 160, t0 = 1600 + k * 250;
+      return `<div class="cap" style="left:1240px;top:${y}px;width:560px"><b data-t class="dong-dam" ${A("fade", t0, 300)}>${esc(a)}</b><span data-t class="dong-m" ${A("fade", t0 + 100, 300)}>${esc(b)}</span></div>`; }).join("")
+    + nguon("Hợp đồng Bảo Việt An Gia, Phụ lục 1 — Bảng quyền lợi bảo hiểm (tài liệu nhóm, trang 5)."));
 }
 
-// 9 ĐỒNG CHI TRẢ 70/30 (T13)
-{ const X = 700, W = 1100;
-  sec2("so-sanh", "sang", "Với trẻ từ 15 ngày tuổi đến 3 tuổi, nếu điều trị ở cơ sở tư nhân, khoa quốc tế hoặc theo yêu cầu tự nguyện ở bệnh viện công, Bảo Việt trả 70 %, gia đình tự trả 30 %. Nếu khám, điều trị thông thường ở bệnh viện công lập thì không áp dụng đồng chi trả. Vừa hạn chế dùng dịch vụ đắt tiền ở nhóm tuổi hay ốm, vừa giữ quyền lợi cho người dùng y tế công.",
-    nen(NEN.dat(820)) + dau("I · Đồng chi trả · Phụ lục 1", "Trẻ dưới 3 tuổi: [đồng chi trả 70/30]", "Áp dụng cho trẻ từ 15 ngày tuổi đến 3 tuổi, tuỳ nơi điều trị.", 9)
-    + hopBadge(120, 370, "building", P.v2, 110, A("pop", 500, 300)) + cap(260, 370, 410, "Tư nhân, khoa quốc tế", "hoặc tự nguyện ở viện công", "dong-t", "dong-m", 600)
-    + lop(`<rect x="${X}" y="370" width="${W * 0.7 - 6}" height="110" rx="14" fill="${P.x1}"/><rect x="${X + W * 0.7}" y="370" width="${W * 0.3}" height="110" rx="14" fill="${P.v2}"/>`, X, 370, W, 110, "Thanh tỷ lệ: Bảo Việt trả 70 %, gia đình trả 30 %", "phang", A("wipe", 900, 700))
-    + G("n2-thanh sang", X + 30, 370, 700, 110, "Bảo Việt 70 %", A("fade", 1400, 400)) + G("n2-thanh", X + W * 0.7 + 24, 370, 300, 110, "Gia đình 30 %", A("fade", 1500, 400))
-    + hopBadge(120, 600, "building-bank", P.x1, 110, A("pop", 1800, 300)) + cap(260, 600, 410, "Bệnh viện công", "khám, điều trị thông thường", "dong-t", "dong-m", 1900)
-    + lop(`<rect x="${X}" y="600" width="${W}" height="110" rx="14" fill="${P.x1}"/>`, X, 600, W, 110, "Thanh: không áp dụng đồng chi trả, trong hạn mức", "phang", A("wipe", 2100, 700))
-    + G("n2-thanh sang", X + 30, 600, 900, 110, "Không đồng chi trả (trong hạn mức)", A("fade", 2600, 400))
-    + T("chot", 120, 860, 1680, "Hạn chế lạm dụng dịch vụ đắt tiền, nhưng giữ trọn quyền lợi khi dùng y tế công.", A("fade", 2900, 500))
-    + T("nguon", 120, 1000, 1680, "Phụ lục 1, mục 2 hợp đồng Bảo Việt An Gia (quy định đồng chi trả đối với trẻ em từ 15 ngày tuổi đến 3 tuổi)."), { ex: "data-khong-hinh" });
+// ============ 7 PHÍ (Điều 4) ============
+{ const h = hGiay("dieu4", 1680);
+  sec("noi-dung", "sang", "Điều 4: nếu phí không được thanh toán đầy đủ và đúng hạn, bằng tiền mặt hoặc chuyển khoản, hợp đồng tự động huỷ bỏ, không cần thông báo trước, trừ khi có thoả thuận khác — câu trên màn hình là nguyên văn. Điều khoản bảo vệ doanh nghiệp trước trường hợp khách chậm phí mà vẫn phát sinh sự kiện bảo hiểm. Nhóm chưa đối chiếu điều khoản này với quy định về đóng phí trong Luật Kinh doanh bảo hiểm 2022 — nếu thầy cô hỏi, đó là hướng phân tích tiếp.",
+    dau("I · Phí bảo hiểm · Điều 4", "Không đóng phí đủ và đúng hạn thì hợp đồng [tự động huỷ bỏ], không cần báo trước", "Trừ khi hai bên có thoả thuận khác.", 7)
+    + giay("dieu4", 120, 380, 1680, "Ảnh chụp nguyên văn câu trong Điều 4: hợp đồng tự động huỷ bỏ khi phí không được thanh toán đúng và đủ", [[0, 1, P.d1]])
+    + T("cot-t", 120, 380 + h + 70, 1680, "Hệ quả cho bên mua", A("fade", 900, 300)) + ke(120, 380 + h + 136, 1680, 3)
+    + [["Lỡ hạn đóng phí", "hợp đồng bị huỷ ngay, Bảo Việt không phải báo trước (nguyên văn Điều 4)."], ["Chi phí phát sinh sau khi huỷ", "không được chi trả; mua lại thì phải chờ lại thời gian chờ (nhóm suy ra từ Điều 4 và Điều 5)."]].map(([a, b], k) => { const x = 120 + k * 860, t0 = 1100 + k * 300;
+      return `<div class="cap" style="left:${x}px;top:${380 + h + 166}px;width:800px"><b data-t class="dong-dam" ${A("fade", t0, 300)}>${esc(a)}</b><span data-t class="dong-m" ${A("fade", t0 + 100, 300)}>${esc(b)}</span></div>`; }).join("")
+    + nguon("Hợp đồng Bảo Việt An Gia, Điều 4 (tài liệu nhóm, trang 3)."));
 }
 
-// 10 CHẤM DỨT — ba thẻ
-{ const C = [["Bên mua chấm dứt", "dau-xanh", "70 %", "xanh", "phí thời gian còn lại, nếu chưa có chi trả"], ["Bảo Việt chấm dứt", "dau-vang", "100 %", "xanh", "phí còn lại, dù đã có khiếu nại"], ["Gian lận, trục lợi", "n2-dau-do", "Huỷ ngay", "do", "mất toàn bộ quyền lợi; hoàn 70 % phí nếu chưa bồi thường"]];
-  sec2("so-sanh", "sang", "Điều 6. Hai bên đều được chấm dứt, nhưng phải báo trước 30 ngày bằng văn bản. Bên mua chấm dứt thì chỉ được hoàn 70 % phí của thời gian còn lại, và chỉ khi chưa có khoản chi trả nào — 30 % giữ lại là chi phí quản lý, khai thác. Bảo Việt chấm dứt thì phải hoàn đủ 100 %. Nếu người được bảo hiểm không đúng đối tượng hoặc gian lận, trục lợi, hợp đồng bị huỷ ngay, mất toàn bộ quyền lợi. Phí còn lại tính theo tỷ lệ số ngày còn lại. Câu hỏi mở: mức hoàn 70 % khi bên mua chấm dứt có cân bằng không.",
-    nen(NEN.dat(760)) + dau("I · Chấm dứt · Điều 6", "Ai chấm dứt, [hoàn phí khác nhau]", "Báo trước 30 ngày bằng văn bản; phí còn lại tính theo số ngày.", 10)
-    + C.map(([ten, cls, so, ms, mo], k) => { const x = 120 + k * 580, t0 = 500 + k * 350;
-      return khoi(x + 12, 352, 540, 600, "bong", "Bóng thẻ", A("rise", t0, 450)) + khoi(x, 340, 540, 600, "the-trang", `Thẻ ${ten}`, A("rise", t0, 450)) + khoi(x, 340, 540, 140, cls, `Đầu thẻ ${ten}`, A("rise", t0, 450))
-        + G(`the-td${k === 1 ? " toi" : ""}`, x + 40, 340, 470, 140, esc(ten), A("fade", t0 + 150, 400))
-        + T(`so-vua ${ms}`, x + 40, 530, 470, so, A("pop", t0 + 300, 400)) + T("the-chu", x + 40, 660, 460, mo, A("fade", t0 + 400, 400)); }).join("")
-    + T("nguon", 120, 990, 1680, "Điều 6 hợp đồng Bảo Việt An Gia."));
+// ============ 8 THỜI GIAN CHỜ ============
+{ const TG = [["Tai nạn", 0], ["Bệnh thông thường, điều trị răng", 30], ["Biến chứng thai sản", 90], ["Bệnh hô hấp ở trẻ đến 6 tuổi", 180], ["Bệnh có sẵn, đặc biệt; dây chằng, sụn chêm", 365], ["Sinh con (quyền lợi thai sản)", 635]], X = 820, K = 800 / 635;
+  sec("noi-dung", "sang", "Thời gian chờ là khoảng quyền lợi chưa phát sinh hiệu lực chi trả, để chặn việc mua bảo hiểm khi đã biết trước bệnh. Tai nạn được bảo hiểm ngay. Bệnh thông thường chờ 30 ngày, biến chứng thai sản 90, bệnh hô hấp ở trẻ đến 6 tuổi 180, bệnh có sẵn, bệnh đặc biệt, tổn thương dây chằng hay sụn chêm 365. Dài nhất là quyền lợi sinh con: 635 ngày, gần 21 tháng — muốn dùng phải mua trước khi có kế hoạch sinh con. Bảo hiểm sinh mạng do bệnh: 90 ngày với bệnh thường, 365 ngày với bệnh có sẵn hoặc đặc biệt. Tái tục liên tục thì không phải chờ lại.",
+    dau("I · Thời gian chờ · Điều 5", "Tai nạn được chi trả ngay; [sinh con phải chờ 635 ngày], gần 21 tháng sau khi hợp đồng có hiệu lực", "Trong thời gian chờ, chi phí phát sinh không được chi trả. Tái tục liên tục thì không phải chờ lại.", 8)
+    + T("cot-t", 120, 390, 620, "Nhóm rủi ro", A("fade", 300, 300)) + T("cot-t", X, 390, 900, "Số ngày phải chờ", A("fade", 300, 300)) + ke(120, 450, 1680, 3)
+    + lop(`<path d="M${X} 460 V970" stroke="${P.muc}" stroke-width="2"/><path d="M${X + 365 * K} 460 V970" stroke="${P.v1}" stroke-width="2" stroke-dasharray="8 6"/>`, X - 2, 460, Math.round(365 * K) + 6, 510, "Trục 0 ngày và vạch mốc 1 năm", "bieu-do", A("fade", 400, 300))
+    + T("moc", X + 365 * K + 12, 462, 160, "1 năm", A("fade", 500, 300))
+    + TG.map(([ten, d], k) => { const y = 486 + k * 82, w = Math.round(d * K), t0 = 600 + k * 200, dai = d >= 365;
+      return T("dong-hep", 120, y + 6, 680, ten, A("fade", t0, 300))
+        + (d ? lop(`<rect x="${X}" y="${y + 12}" width="${w}" height="44" fill="${dai ? P.d1 : P.x2}"/>`, X, y + 12, w, 44, `Thanh ${ten}: ${d} ngày`, "bieu-do", A("wipe", t0, 500)) : "")
+        + T(`so-thanh${dai ? " do" : ""}`, X + w + 16, y + 10, 360, d ? `${d} ngày` : "0 ngày — chi trả ngay", A("fade", t0 + 300, 300)); }).join("")
+    + nguon("Điều 5 hợp đồng. Riêng quyền lợi bảo hiểm sinh mạng do bệnh: chờ 90 ngày (bệnh thường), 365 ngày (bệnh có sẵn, đặc biệt)."),
+    { ex: "data-hero" });
 }
 
-// 11 BỒI THƯỜNG — 15 ngày + hồ sơ mềm
-{ const B = [["device-mobile", "Nộp qua BaoViet Direct", "xác thực OTP"], ["file-invoice", "Hoá đơn điện tử", "tra cứu được"], ["files", "Chứng từ chụp, scan", "không công chứng"]];
-  sec2("so-lon", "sang", "Điều 10: Bảo Việt chi trả trong 15 ngày làm việc kể từ khi nhận đủ hồ sơ hợp lệ. Phụ lục 1 mục 3 cho nộp hồ sơ mềm qua ứng dụng BaoViet Direct nếu khoản bồi thường từ 10 triệu đồng trở xuống và không phải di sản thừa kế: xác thực OTP, dùng hoá đơn điện tử có đường dẫn tra cứu, chứng từ y tế chụp hoặc scan, không cần công chứng hay gửi bản cứng.",
-    nen(NEN.tron()) + dau("I · Bồi thường · Điều 10", "Chi trả trong [15 ngày làm việc]", "Từ khi nhận đủ hồ sơ hợp lệ.", 11)
-    + khoi(120, 340, 620, 620, "tk-the", "Khối số lớn", A("pop", 400, 500))
-    + T("n2-so15", 120, 360, 620, "15", `data-dl ${A("pop", 600, 500)}`) + T("n2-so15-m", 160, 700, 540, "ngày làm việc", A("fade", 900, 400))
-    + chip("Hồ sơ mềm: ≤ 10 triệu, không phải di sản", 820, 350, "chip vang nt", A("rise", 1100, 400))
-    + B.map(([ic, a, b], k) => { const y = 470 + k * 170, t0 = 1300 + k * 250;
-      return hopBadge(820, y, ic, P.x1, 110, A("pop", t0, 300)) + cap(960, y + 4, 840, a, b, "dong-t", "dong-m", t0 + 100) + (k ? `<div class="vach" style="left:820px;top:${y - 30}px;width:980px"></div>` : ""); }).join("")
-    + T("nguon", 120, 1000, 1680, "Điều 10; Phụ lục 1."));
+// ============ 9 ĐỒNG CHI TRẢ ============
+{ const h = hGiay("dongchi", 1680), X = 120, Y = 380 + h + 110;
+  sec("noi-dung", "sang", "Với trẻ từ 15 ngày tuổi đến 3 tuổi, nếu điều trị ở cơ sở y tế tư nhân, khoa quốc tế hoặc điều trị tự nguyện theo yêu cầu ở bệnh viện công, Bảo Việt trả 70 %, gia đình tự trả 30 %. Nếu khám, điều trị thông thường ở bệnh viện công lập thì không áp dụng đồng chi trả — Bảo Việt trả trong hạn mức. Vừa hạn chế dùng dịch vụ đắt tiền ở nhóm tuổi hay ốm, vừa giữ quyền lợi cho người dùng y tế công.",
+    dau("I · Đồng chi trả · Phụ lục 1, mục 2", "Trẻ từ 15 ngày tuổi đến 3 tuổi chữa ở cơ sở tư nhân: [Bảo Việt trả 70 %, gia đình trả 30 %]", "Chữa thông thường ở bệnh viện công thì không phải đồng chi trả.", 9)
+    + giay("dongchi", 120, 370, 1680, "Ảnh chụp nguyên văn mục 2 Phụ lục 1: tỷ lệ đồng chi trả 70/30 và trường hợp không áp dụng", [[0.02, 0.31, P.d1], [0.42, 0.98, P.x1]])
+    + T("chu-anh", 120, 370 + h + 22, 1680, "Khung đỏ: tỷ lệ 70/30. Khung xanh: trường hợp không áp dụng — khám, điều trị thông thường ở bệnh viện công.", A("fade", 1200, 300))
+    + T("dong-hep", X, Y + 14, 520, "Cơ sở tư nhân, khoa quốc tế, điều trị tự nguyện", A("fade", 1400, 300))
+    + lop(`<rect x="660" y="${Y}" width="${Math.round(1140 * 0.7) - 4}" height="96" fill="${P.x1}"/><rect x="${660 + Math.round(1140 * 0.7)}" y="${Y}" width="${Math.round(1140 * 0.3)}" height="96" fill="${P.v2}"/>`, 660, Y, 1140, 96, "Thanh: Bảo Việt 70 %, gia đình 30 %", "bieu-do", A("wipe", 1500, 600))
+    + T("trong-thanh sang", 684, Y + 26, 600, "Bảo Việt trả 70 %", A("fade", 1900, 300)) + T("trong-thanh", 660 + Math.round(1140 * 0.7) + 20, Y + 26, 320, "Gia đình 30 %", A("fade", 2000, 300))
+    + T("dong-hep", X, Y + 150, 520, "Bệnh viện công, điều trị thông thường", A("fade", 2200, 300))
+    + lop(`<rect x="660" y="${Y + 136}" width="1140" height="96" fill="${P.x1}"/>`, 660, Y + 136, 1140, 96, "Thanh: Bảo Việt trả, không đồng chi trả", "bieu-do", A("wipe", 2300, 600))
+    + T("trong-thanh sang", 684, Y + 162, 1000, "Bảo Việt trả, không đồng chi trả (trong hạn mức)", A("fade", 2700, 300))
+    + nguon("Hợp đồng Bảo Việt An Gia, Phụ lục 1, mục 2 (tài liệu nhóm, trang 8)."));
 }
 
-// 12 ƯU ĐIỂM / HẠN CHẾ — nền chia
-{ const UU = ["Ưu tiên tài liệu rõ (Điều 12)", "5 mức: 94 – 454 triệu", "Chi trả 15 ngày; nộp online", "Bệnh viện công: không đồng chi trả"], HC = ["Chờ 365 / 635 ngày", "Trẻ < 3 tuổi ở tư nhân: tự trả 30 %", "Chậm phí: tự động huỷ", "Loại trừ nằm ở Quy tắc"];
-  sec2("so-sanh", "sang", "Tổng kết Chương I. Ưu điểm: cấu trúc minh bạch, thứ tự ưu tiên rõ; quyền lợi linh hoạt theo ngân sách; chi trả nhanh và số hoá hồ sơ; miễn đồng chi trả cho trẻ ở bệnh viện công. Điểm cần lưu ý: thời gian chờ dài; đồng chi trả 30 % cho trẻ dưới 3 tuổi ở cơ sở tư nhân; chậm phí là huỷ; và Điều 7 dẫn chiếu toàn bộ điểm loại trừ sang Quy tắc — người mua phải đọc thêm văn bản khác mới biết trường hợp nào không được trả.",
-    nen(NEN.goc()) + panel(100, 330, 860, 640, 200)
-    + dau("I · Đánh giá", "Linh hoạt, nhanh — nhưng [ràng buộc chặt]", "Bốn ưu điểm đi kèm bốn điều người mua phải tự để ý.", 12)
-    + khoi(120, 350, 300, 68, "pill-co", "Nhãn ưu điểm", A("pop", 400, 300), ";background:#FFFFFF") + G("pill-co-t", 120, 350, 300, 68, `<span style="width:100%;text-align:center">Ưu điểm</span>`, A("pop", 400, 300))
-    + khoi(1040, 350, 300, 68, "pill-khong", "Nhãn cần lưu ý", A("pop", 800, 300)) + G("pill-khong-t", 1040, 350, 300, 68, `<span style="width:100%;text-align:center">Cần lưu ý</span>`, A("pop", 800, 300))
-    + [[UU, 120, "shield-check", P.x1, 600], [HC, 1040, "alert-triangle", P.d1, 1000]].map(([ds, x, ic, m, t]) => ds.map((s, k) => { const y = 470 + k * 128, t0 = t + 400 + k * 200;
-      return lop(`<circle cx="${x + 32}" cy="${y + 40}" r="32" fill="${m}"/>` + mh.iconNet(D, ic, x + 32, y + 40, 38, P.nen, 3), x, y + 8, 64, 64, `Biểu tượng ${ic}`, "phang", `data-lap ${A("pop", t0, 300)}`) + G("n2-muc", x + 90, y, 670, 80, esc(s), A("fade", t0 + 100, 400)); }).join("")).join("")
-    + T("nguon", 120, 1000, 1680, "Điều 4 – 12, Phụ lục 1 hợp đồng."));
+// ============ 10 CHẤM DỨT ============
+{ const R = [["Bên mua chấm dứt", "Báo trước 30 ngày bằng văn bản; chưa có khoản chi trả nào", "70 %"], ["Bảo Việt chấm dứt", "Báo trước 30 ngày bằng văn bản; dù đã có khiếu nại hay chưa", "100 %"], ["Gian lận, trục lợi, không đúng đối tượng", "Huỷ ngay, mất toàn bộ quyền lợi; hoàn 70 % nếu chưa có bồi thường, đã bồi thường thì không hoàn", "70 % / 0"]];
+  sec("bang", "sang", "Điều 6. Hai bên đều được chấm dứt, nhưng phải báo trước 30 ngày bằng văn bản. Bên mua chấm dứt thì chỉ được hoàn 70 % phí của thời gian còn lại, và chỉ khi chưa có khoản chi trả nào — 30 % giữ lại được nhóm hiểu là chi phí quản lý, khai thác. Bảo Việt chấm dứt thì phải hoàn đủ 100 %. Nếu người được bảo hiểm không đúng đối tượng hoặc gian lận, trục lợi, hợp đồng bị huỷ ngay, mất toàn bộ quyền lợi. Phí còn lại tính theo tỷ lệ số ngày còn lại. Câu hỏi mở cho thảo luận: mức hoàn 70 % khi bên mua chấm dứt có cân bằng quyền lợi hai bên không.",
+    dau("I · Chấm dứt hợp đồng · Điều 6", "Bên mua tự chấm dứt chỉ được hoàn [70 % phí còn lại]; Bảo Việt chấm dứt phải hoàn [100 %]", "Phí còn lại tính theo tỷ lệ số ngày còn lại của hợp đồng.", 10)
+    + bang(120, 400, [{ t: "Ai chấm dứt", w: 520 }, { t: "Điều kiện", w: 900 }, { t: "Hoàn phí", w: 260, phai: true, cls: "lon" }], R, { cao: 150 })
+    + nguon("Hợp đồng Bảo Việt An Gia, Điều 6 khoản 1 (chấm dứt, hoàn phí) và khoản 2 (huỷ bỏ do gian lận, trục lợi) — tài liệu nhóm, trang 3–4."), { ex: "data-khong-hinh" });
 }
 
-// 13 KHUYẾN NGHỊ — hàng có ô số
-{ const KN = [["user-check", "Khai trung thực tiền sử bệnh", "tránh bị huỷ, từ chối chi trả (Điều 6)"], ["files", "Đọc Quy tắc bảo hiểm trước khi ký", "loại trừ nằm ở Chương III Quy tắc (Điều 7)"], ["hourglass", "Mua sớm theo thời gian chờ", "365 ngày bệnh có sẵn, 635 ngày sinh con"]];
-  sec2("bang", "sang", "Ba khuyến nghị cho bên mua. Một, kê khai đầy đủ, chính xác tiền sử bệnh trên Giấy yêu cầu bảo hiểm — khai sai là rủi ro bị huỷ hợp đồng theo Điều 6. Hai, yêu cầu và đọc Quy tắc bảo hiểm Bảo Việt An Gia, vì Điều 7 dẫn toàn bộ điểm loại trừ sang Chương III của Quy tắc. Ba, lên kế hoạch theo thời gian chờ, nhất là mốc 365 và 635 ngày.",
-    nen(NEN.dat(820)) + dau("I · Khuyến nghị", "Ba việc bên mua [làm trước khi ký]", "Mỗi việc gắn một điều khoản.", 13) + panel(100, 330, 1720, 640)
-    + KN.map(([ic, v, m], k) => { const y = 360 + k * 200, t0 = 500 + k * 300;
-      return khoi(120, y, 1680, 176, `hang-mt${k % 2 ? " le" : ""}`, `Khuyến nghị ${k + 1}`, A("rise", t0, 400)) + T("mt-so", 150, y + 52, 90, `0${k + 1}`, A("rise", t0, 400)) + hopBadge(260, y + 34, ic, P.x1, 108, A("pop", t0 + 100, 300))
-        + cap(410, y + 34, 1360, v, m, "mt-v", "mt-m", t0 + 150); }).join(""));
+// ============ 11 CHI TRẢ ============
+{ const h = hGiay("dieu10", 1680), Y = 370 + h + 40;
+  sec("noi-dung", "sang", "Điều 10: Bảo Việt chi trả trong 15 ngày làm việc kể từ khi nhận đủ hồ sơ hợp lệ — dòng khoanh đỏ. Dòng khoanh xanh và Phụ lục 1 mục 3 cho nộp hồ sơ mềm qua ứng dụng BaoViet Direct nếu khoản bồi thường từ 10 triệu đồng trở xuống và không phải di sản thừa kế: xác thực bằng mã OTP, dùng hoá đơn điện tử có đường dẫn tra cứu, chứng từ y tế chụp hoặc scan, không cần công chứng hay gửi bản cứng.",
+    dau("I · Chi trả tiền bảo hiểm · Điều 10", "Bảo Việt phải chi trả trong [15 ngày làm việc]; khoản đến 10 triệu đồng được nộp hồ sơ qua ứng dụng", "15 ngày tính từ khi Bảo Việt nhận đủ hồ sơ hợp lệ.", 11)
+    + giay("dieu10", 120, 370, 1680, "Ảnh chụp nguyên văn Điều 10: chi trả trong vòng 15 ngày làm việc; hồ sơ mềm qua ứng dụng BaoViet Direct với khoản đến 10 triệu đồng", [[0.17, 0.31, P.d1], [0.35, 0.83, P.x1]])
+    + T("cot-t", 120, Y, 1680, "Nộp hồ sơ qua ứng dụng BaoViet Direct khi (Phụ lục 1, mục 3)", A("fade", 1200, 300)) + ke(120, Y + 62, 1680, 3)
+    + [["Khoản bồi thường đến 10 triệu đồng", "và không phải di sản thừa kế"], ["Xác thực bằng mã xác thực một lần (OTP)", "gửi tới số điện thoại đã đăng ký"], ["Chứng từ chụp hoặc scan", "hoá đơn điện tử; không cần công chứng"]].map(([a, b], k) => { const x = 120 + k * 570, t0 = 1400 + k * 250;
+      return `<div class="cap" style="left:${x}px;top:${Y + 86}px;width:530px"><b data-t class="dong-dam" ${A("fade", t0, 300)}>${esc(a)}</b><span data-t class="dong-m" ${A("fade", t0 + 100, 300)}>${esc(b)}</span></div>`; }).join("")
+    + nguon("Hợp đồng Bảo Việt An Gia, Điều 10 (trang 4); Phụ lục 1, mục 3 (trang 8)."));
 }
 
-// 14 MỞ PHẦN II
-mMoPhan("02", "Thực trạng thị trường bảo hiểm", "Từ tăng trưởng nóng, qua khủng hoảng niềm tin, đến phục hồi.", `<path d="M1150 800 H1720" stroke="${P.phu}" stroke-width="5"/>` + [[134, P.x2], [160, P.x2], [185, P.x2], [216, P.x2], [251, P.x1], [227, P.d1], [227, P.x3], [237, P.v2]].map(([v, m], k) => `<rect x="${1170 + k * 68}" y="${800 - v * 1.6}" width="50" height="${v * 1.6}" rx="6" fill="${m}"/>`).join(""), "Minh hoạ: tám cột doanh thu 2018–2025 — tăng, đỉnh 2022, giảm 2023, phục hồi 2025",
-  ["2018 – 2022 tăng nóng", "2023 khủng hoảng", "2024 chững lại", "2025 phục hồi", "9 tháng 2026"],
-  "Chương II. Nhóm chia thị trường thành các giai đoạn: tăng nóng 2018–2022, khủng hoảng niềm tin 2023, chững lại 2024, phục hồi nhẹ 2025, và cập nhật 9 tháng 2026.");
-
-// 15 DOANH THU 2018–2025 — HERO biểu đồ cột
-{ const DT = [[2018, 133.7, "+24,0 %"], [2019, 160.2, "+21,0 %"], [2020, 184.7, "+15,0 %"], [2021, 216.0, "+16,1 %"], [2022, 251.3, "+15,09 %"], [2023, 227.1, "−8,02 %"], [2024, 227.5, "−0,26 %"], [2025, 237.2, "+3,96 %"]];
-  const B0 = 790, K = 1.5, CW = 130, ST = 200, X0 = 230, mau = (n) => (n === 2023 ? P.d1 : n === 2024 ? P.x3 : n === 2025 ? P.v2 : P.x2);
-  sec2("so-lon", "sang", "Giai đoạn 2018–2022 doanh thu phí tăng 15–24 % mỗi năm, quy mô gần gấp đôi, từ 133,7 lên hơn 251 nghìn tỷ đồng, nhờ bùng nổ bán bảo hiểm qua ngân hàng. Năm 2023 doanh thu giảm lần đầu sau khoảng 10 năm, năm 2024 đi ngang, năm 2025 mới tăng lại. Lưu ý: tốc độ tăng giảm là số cơ quan quản lý công bố, so với số liệu đã điều chỉnh của năm trước, nên lệch nhẹ so với phép chia trực tiếp giữa các cột.",
-    nen(NEN.goc()) + dau("II · Toàn thị trường", "Gần gấp đôi, rồi [giảm lần đầu]", "Tổng phí, nghìn tỷ đồng; 2023 giảm lần đầu sau khoảng 10 năm.", 15)
-    + lop(`<path d="M150 ${B0} H1800" stroke="${P.phu}" stroke-width="3"/>`, 150, B0 - 2, 1650, 4, "Trục ngang biểu đồ", "phang", A("fade", 300, 300))
-    + DT.map(([n, v, g], k) => { const x = X0 + k * ST, h = Math.round(v * K), t0 = 500 + k * 180, giam = g.startsWith("−");
-      return lop(`<rect x="${x}" y="${B0 - h}" width="${CW}" height="${h}" rx="8" fill="${mau(n)}"/>`, x, B0 - h, CW, h, `Cột năm ${n}: ${String(v).replace(".", ",")} nghìn tỷ đồng`, "phang", A("rise", t0, 500))
-        
-        + `<div class="n2-cot-nam" data-t ${A("fade", t0, 300)} style="left:${x - 35}px;top:${B0 + 12}px;width:${CW + 70}px">${n}<br><span class="n2-cot-v">${String(v.toFixed(1)).replace(".", ",")}</span><br><span class="n2-cot-g${giam ? " do" : ""}">${g}</span></div>`; }).join("")
-    + khoi(230, 330, 580, 150, "the-xanh-nhat", "Ô chú thích giai đoạn 2018–2022", A("fade", 2200, 400)) + cap(260, 350, 530, "2018 – 2022: +15 – 24 %/năm", "nhờ bán bảo hiểm qua ngân hàng", "dong-t", "dong-m", 2300)
-    + T("nguon", 120, 1000, 1680, "Theo tài liệu nhóm (số ước tính của Bộ Tài chính); 2024–2025 đối chiếu mof.gov.vn, Cục QLGSBH."), { ex: "data-hero data-khong-hinh" });
+// ============ 12 ĐÁNH GIÁ ============
+{ const UU = ["Thứ tự ưu tiên tài liệu rõ ràng (Điều 12)", "Năm mức hạn mức, từ 94 đến 454 triệu đồng", "Chi trả trong 15 ngày làm việc; nộp hồ sơ qua ứng dụng", "Bệnh viện công: trẻ nhỏ không phải đồng chi trả"], HC = ["Chờ 365 ngày với bệnh có sẵn, 635 ngày với sinh con", "Trẻ dưới 3 tuổi chữa ở cơ sở tư nhân: gia đình trả 30 %", "Chậm đóng phí là hợp đồng tự động huỷ bỏ", "Điểm loại trừ nằm trong Quy tắc, không in trong hợp đồng (Điều 7)"];
+  sec("bang", "sang", "Tổng kết Phần I. Ưu điểm: cấu trúc minh bạch, thứ tự ưu tiên rõ; quyền lợi linh hoạt theo ngân sách; chi trả nhanh và số hoá hồ sơ; miễn đồng chi trả cho trẻ ở bệnh viện công. Điểm cần lưu ý: thời gian chờ dài; đồng chi trả 30 % cho trẻ dưới 3 tuổi ở cơ sở tư nhân; chậm phí là huỷ; và Điều 7 dẫn chiếu toàn bộ điểm loại trừ sang Quy tắc — người mua phải đọc thêm văn bản khác mới biết trường hợp nào không được trả.",
+    dau("I · Đánh giá", "Hợp đồng minh bạch và chi trả nhanh, nhưng [người mua phải tự đọc nhiều ràng buộc]", "Bốn ưu điểm và bốn điểm bên mua cần lưu ý.", 12)
+    + [[UU, 120, "Ưu điểm", "xanh"], [HC, 1000, "Cần lưu ý", "do"]].map(([ds, x, t, m], c) => T(`cot-t ${m}`, x, 380, 800, t, A("fade", 300 + c * 400, 300)) + ke(x, 446, 800, 3, c ? P.d1 : P.x1)
+      + ds.map((s, k) => { const y = 470 + k * 124, t0 = 500 + c * 400 + k * 150; return T("dong", x, y + 12, 800, s, A("fade", t0, 300)) + ke(x, y + 116, 800, 1, P.ke); }).join("")).join("")
+    + nguon("Tổng hợp từ Điều 4, 5, 6, 7, 10, 12 và Phụ lục 1 hợp đồng Bảo Việt An Gia."), { ex: "data-khong-hinh" });
 }
 
-// 16 BẢNG 2022–2025
-{ const R = [["2022", "Đỉnh tăng trưởng", "251.306", "Bancassurance tăng nóng; thanh tra 4 doanh nghiệp nhân thọ"], ["2023", "Khủng hoảng niềm tin", "227.134", "Luật KDBH 2022 có hiệu lực; kết luận thanh tra 30/6"], ["2024", "Chững lại", "227.495", "Luật Các TCTD 2024 cấm bán kèm; bão Yagi"], ["2025", "Phục hồi nhẹ", "237.211", "Thông qua Luật 139/2025/QH15 ngày 10/12/2025"]];
-  const CO = [[120, 170, "Năm"], [290, 380, "Trạng thái"], [670, 290, "Tỷ đồng"], [960, 840, "Sự kiện chính"]], y0 = 400, HR = 132;
-  sec2("bang", "sang", "Bốn năm gần nhất, bốn trạng thái. 2022 là đỉnh: 78 doanh nghiệp, tổng tài sản hơn 811 nghìn tỷ, tỷ trọng bancassurance trong phí khai thác mới nhân thọ lên khoảng 45 %. 2023 khủng hoảng niềm tin. 2024 chững lại khi luật cấm bán kèm qua ngân hàng và bão Yagi thử thách phi nhân thọ. 2025 phục hồi nhẹ, Quốc hội thông qua luật sửa đổi Luật Kinh doanh bảo hiểm.",
-    nen(NEN.dat(900)) + dau("II · Từng năm", "Bốn năm, [bốn trạng thái]", "Mỗi năm một cú hích chính sách hoặc sự kiện.", 16)
-    + khoi(120, 330, 1680, 62, "bh", "Đầu bảng", A("wipe", 400, 500))
-    + CO.map(([x, w, s], j) => G(`bh-t${j === 2 ? " phai" : ""}`, x + 20, 330, w - 40, 62, j === 2 ? `<span style="width:100%;text-align:right">${esc(s)}</span>` : esc(s), A("fade", 600, 300))).join("")
-    + R.map(([n, tt, so, sk], k) => { const y = y0 + k * HR, t0 = 800 + k * 300, nh = k === 1;
-      return khoi(120, y, 1680, HR - 8, `hang${nh ? " nhan" : ""}`, `Hàng năm ${n}`, A("rise", t0, 400)) + khoi(120, y, 170, HR - 8, "tab", `Nhãn năm ${n}`, A("rise", t0, 400), `;background:${nh ? P.d1 : P.x1}`)
-        + G("tab-t", 140, y, 130, HR - 8, esc(n), A("rise", t0, 400)) + G(`n2-o-dam${nh ? " do" : ""}`, 310, y, 340, HR - 8, esc(tt), A("rise", t0, 400))
-        + G("n2-o-so", 690, y, 250, HR - 8, `<span style="width:100%;text-align:right">${so}</span>`, A("rise", t0, 400)) + G("o-t", 980, y, 800, HR - 8, esc(sk), A("rise", t0, 400)); }).join("")
-    + T("nguon", 120, 1000, 1680, "Tài liệu nhóm, Bảng 1; mof.gov.vn. Hàng tô: năm giảm sâu nhất."), { ex: "data-khong-hinh" });
+// ============ 13 KHUYẾN NGHỊ ============
+{ const KN = [["Khai trung thực tiền sử bệnh trên giấy yêu cầu bảo hiểm", "Khai sai có thể bị huỷ hợp đồng, mất toàn bộ quyền lợi (Điều 6 khoản 2)."], ["Đọc Quy tắc bảo hiểm Bảo Việt An Gia trước khi ký", "Các trường hợp không được trả nằm ở Chương III của Quy tắc, không in trong hợp đồng (Điều 7)."], ["Mua sớm, tính trước thời gian chờ", "Bệnh có sẵn chờ 365 ngày; sinh con chờ 635 ngày (Điều 5)."]];
+  sec("noi-dung", "sang", "Ba khuyến nghị cho bên mua. Một, kê khai đầy đủ, chính xác tiền sử bệnh trên giấy yêu cầu bảo hiểm — khai sai là rủi ro bị huỷ hợp đồng theo Điều 6. Hai, yêu cầu và đọc Quy tắc bảo hiểm Bảo Việt An Gia, vì Điều 7 dẫn toàn bộ điểm loại trừ sang Chương III của Quy tắc. Ba, lên kế hoạch theo thời gian chờ, nhất là mốc 365 và 635 ngày.",
+    dau("I · Khuyến nghị", "Ba việc bên mua nên làm [trước khi ký] hợp đồng", "Mỗi việc gắn với một điều khoản đã phân tích.", 13)
+    + KN.map(([a, b], k) => { const y = 380 + k * 200, t0 = 400 + k * 300;
+      return T("kn-so", 120, y, 140, String(k + 1), `data-dl ${A("fade", t0, 300)}`) + `<div class="cap" style="left:300px;top:${y + 10}px;width:1500px"><b data-t class="kn-t" ${A("fade", t0, 300)}>${esc(a)}</b><span data-t class="dong-m" ${A("fade", t0 + 100, 300)}>${esc(b)}</span></div>` + ke(120, y + 176, 1680, 1, P.ke); }).join(""),
+    { ex: "data-khong-hinh" });
 }
 
-// 17 KHỦNG HOẢNG 2023 — số lớn
-{ const SO = [["≈ 45 %", "xanh", "nhân thọ mới qua ngân hàng, 2022"], ["−44,5 %", "do", "phí khai thác mới nhân thọ 2023"], ["−43,8 %", "do", "hợp đồng nhân thọ mới 2023"]];
-  sec2("so-lon", "sang", "Gốc của khủng hoảng là kênh bán qua ngân hàng. Theo PSI, tỷ trọng bancassurance trong phí khai thác mới nhân thọ từ khoảng 20 % năm 2018 lên 45 % năm 2022. Ngày 30/6/2023 Bộ Tài chính công bố kết luận thanh tra tại Prudential, MB Ageas, Sun Life và BIDV MetLife: sai phạm nhiều nhất ở khâu tư vấn. Hệ quả: phí khai thác mới nhân thọ giảm 44,5 %, số hợp đồng mới giảm 43,8 %. Tổng doanh thu giảm chủ yếu do nhân thọ giảm 12,5 %, trong khi phi nhân thọ vẫn tăng.",
-    nen(NEN.tron()) + dau("II · Năm 2023", "Bán qua ngân hàng [mất niềm tin]", "Nhân thọ chịu đòn nặng nhất.", 17)
-    + SO.map(([so, m, mo], k) => { const x = 120 + k * 580, t0 = 500 + k * 350;
-      return khoi(x + 12, 352, 540, 330, "bong", "Bóng thẻ", A("rise", t0, 450)) + khoi(x, 340, 540, 330, "the-trang", `Thẻ số ${so}`, A("rise", t0, 450))
-        + T(`n2-so-the ${m}`, x + 40, 372, 470, so, `data-dl ${A("pop", t0 + 200, 400)}`) + T("the-chu", x + 40, 500, 460, mo, A("fade", t0 + 300, 400)); }).join("")
-    + khoi(120, 730, 1680, 230, "dai-do", "Dải kết luận thanh tra", A("rise", 1700, 500)) + hopBadge(150, 770, "zoom-check", P.d1, 100, A("pop", 1800, 300))
-    + cap(280, 760, 1480, "Kết luận thanh tra 30/6/2023", "sai phạm ở khâu tư vấn", "dai-do-t", "n2-do-m", 1900)
-    + ["Prudential", "MB Ageas", "Sun Life", "BIDV MetLife"].map((s, k) => chip(s, 280 + k * 290, 880, "chip do", A("rise", 2200 + k * 120, 300))).join("")
-    + T("nguon", 120, 1000, 1680, "Nguồn nhóm: 12, 14, 15."));
+// ============ 14 MỞ PHẦN II ============
+sec("mo-phan", "dam", "Phần II. Nhóm chia thị trường thành các giai đoạn: tăng nóng 2018–2022, khủng hoảng niềm tin 2023, chững lại 2024, phục hồi nhẹ 2025, và cập nhật 9 tháng 2026.",
+  T("mp-so", 110, 150, 300, "II", A("fade", 0, 500)) + `<h1 class="mp-t" data-t data-tieu-de ${A("fade", 200, 600)} style="left:120px;top:420px;width:760px">Thị trường bảo hiểm Việt Nam 2018 – 2026</h1>`
+  + T("mp-m", 120, 720, 760, "Doanh thu phí, bán bảo hiểm qua ngân hàng và các luật mới.", A("fade", 500, 400))
+  + [["2018 – 2022", "Tăng 15 – 24 % mỗi năm"], ["2023", "Doanh thu giảm lần đầu sau khoảng 10 năm"], ["2024", "Đi ngang; luật cấm bán kèm qua ngân hàng"], ["2025", "Tăng lại nhờ phi nhân thọ"], ["9 tháng 2026", "Phi nhân thọ tiếp tục tăng mạnh"]].map(([a, b], k) => { const y = 200 + k * 130, t0 = 600 + k * 150;
+    return T("mp-dieu", 1000, y, 300, a, A("fade", t0, 300)) + T("mp-noi", 1300, y, 500, b, A("fade", t0, 300)) + ke(1000, y + 100, 800, 1, P.nhat); }).join(""),
+  { trans: "push", ex: "data-khong-hinh" });
+
+// ============ 15 DOANH THU ============
+{ const DT = [[2018, 133.7, "+24,0 %"], [2019, 160.2, "+21,0 %"], [2020, 184.7, "+15,0 %"], [2021, 216.0, "+16,1 %"], [2022, 251.3, "+15,09 %"], [2023, 227.1, "−8,02 %"], [2024, 227.5, "−0,26 %"], [2025, 237.2, "+3,96 %"]];
+  const B0 = 830, K = 1.5, CW = 130, ST = 205, X0 = 200;
+  sec("so-lon", "sang", "Giai đoạn 2018–2022 doanh thu phí tăng 15–24 % mỗi năm, từ 133,7 lên 251,3 nghìn tỷ đồng — gần gấp đôi — nhờ bùng nổ bán bảo hiểm qua ngân hàng. Năm 2023 doanh thu giảm lần đầu sau khoảng 10 năm, năm 2024 đi ngang, năm 2025 tăng lại. Lưu ý: tốc độ tăng giảm là số cơ quan quản lý công bố, so với số liệu đã điều chỉnh của năm trước, nên lệch nhẹ so với phép chia trực tiếp giữa các cột.",
+    dau("II · Doanh thu toàn thị trường", "Doanh thu phí [gần gấp đôi] trong 2018 – 2022, rồi năm 2023 {giảm lần đầu} sau khoảng 10 năm", "Tổng doanh thu phí, nghìn tỷ đồng; dưới cột: tăng / giảm so với năm trước. Cột đỏ: giảm; cột xám: đi ngang.", 15)
+    + lop(`<path d="M150 ${B0} H1800" stroke="${P.muc}" stroke-width="3"/>`, 150, B0 - 2, 1650, 4, "Trục ngang biểu đồ", "bieu-do", A("fade", 300, 300))
+    + DT.map(([n, v, g], k) => { const x = X0 + k * ST, h = Math.round(v * K), t0 = 500 + k * 150, giam = g.startsWith("−");
+      return lop(`<rect x="${x}" y="${B0 - h}" width="${CW}" height="${h}" fill="${n === 2023 ? P.d1 : n === 2024 ? P.ke : P.x2}"/>`, x, B0 - h, CW, h, `Cột năm ${n}: ${String(v.toFixed(1)).replace(".", ",")} nghìn tỷ đồng`, "bieu-do", A("wipe", t0, 400))
+        + T("so-cot", x - 35, B0 - h - 52, CW + 70, String(v.toFixed(1)).replace(".", ","), A("fade", t0 + 200, 300))
+        + `<div class="cot-nam" data-t ${A("fade", t0, 300)} style="left:${x - 35}px;top:${B0 + 14}px;width:${CW + 70}px">${n}<br><span class="${n === 2023 ? "do" : n === 2024 ? "xam" : "xanh"}">${g}</span></div>`; }).join("")
+    + nguon("Bộ Tài chính, số ước tính (tài liệu nhóm, nguồn 5–11); 2024 đối chiếu mof.gov.vn; 2025 theo Cục Quản lý, giám sát bảo hiểm."),
+    { ex: "data-hero" });
 }
 
-// 18 TRÍCH LUẬT — HERO ảnh ký hợp đồng
-sec2("trich", "anh", "Ngày 01/7/2024 Luật Các tổ chức tín dụng 2024 có hiệu lực. Điều 15 liệt kê các hành vi bị nghiêm cấm; khoản 5 cấm tổ chức tín dụng và nhân viên gắn việc bán bảo hiểm không bắt buộc với việc cung ứng sản phẩm, dịch vụ ngân hàng dưới mọi hình thức — tức là không được ép mua bảo hiểm mới cho vay. Đây là phản ứng trực tiếp với sai phạm năm 2023.",
-  chup("trich-full.jpg", 0, 0, 1920, 1080, "Ảnh: bàn tay ký vào bản hợp đồng, phủ dải màu chủ bên trái", A("fade", 0, 900))
-  + chip("II · Năm 2024 · Luật siết bán kèm", 120, 80, "chip vang", A("fade", 200, 400)) + `<h1 class="td sang" data-t data-tieu-de ${A("rise", 300, 600)} style="left:120px;top:132px;width:1100px">${em("Cấm {gắn bán bảo hiểm} với dịch vụ ngân hàng")}</h1>` + chip(`18 / ${TONG}`, 1690, 80, "chip")
-  + lop([0, 70].map((d) => `<circle cx="${138 + d}" cy="420" r="26" fill="${P.v2}"/><path d="M${112 + d} 420 Q${108 + d} 370 ${152 + d} 352 L${156 + d} 364 Q${130 + d} 378 ${136 + d} 410 Z" fill="${P.v2}"/>`).join(""), 100, 342, 160, 110, "Dấu ngoặc kép", "phang", `data-lap ${A("pop", 700, 400)}`)
-  + `<div class="trich sang" data-t ${A("fade", 900, 900)} style="left:176px;top:470px;width:960px">Tổ chức tín dụng, chi nhánh ngân hàng nước ngoài, người quản lý, người điều hành, nhân viên … <mark>gắn việc bán sản phẩm bảo hiểm không bắt buộc</mark> với việc cung ứng sản phẩm, dịch vụ ngân hàng <mark>dưới mọi hình thức</mark>.</div>`
-  + chip("Khoản 5 Điều 15 · Luật Các TCTD 32/2024/QH15", 176, 880, "chip vien", A("rise", 1700, 400)) + T("dan sang", 174, 950, 960, "Hành vi bị nghiêm cấm · hiệu lực từ 01/7/2024.", A("fade", 1900, 400)), { ex: "data-hero" });
-
-// 19 NHÂN THỌ / PHI NHÂN THỌ + bão Yagi
-{ const NT = [[2023, -12.5, "−12,5 %", 2.87, "+2,87 %"], [2024, -5, "≈ −5 %", 10.2, "+10,2 %"], [2025, 0.5, "+0,5 %", 10.5, "+10–11 %"]], Z = 620, K = 18, BW = 120;
-  sec2("noi-dung", "sang", "Hai xu hướng ngược chiều. Nhân thọ chịu tác động trực tiếp: giảm 12,5 % năm 2023, khoảng 5 % năm 2024, gần như đi ngang năm 2025. Phi nhân thọ tăng đều — 2,87 %, 10,2 %, rồi khoảng 10–11 % — và giữ cho thị trường không giảm sâu hơn. Nhưng bão Yagi cho thấy điểm yếu: thiệt hại ước tính khoảng 12.811 tỷ, đến giữa tháng 10/2024 mới tạm ứng 213 tỷ, đến 9/1/2025 lên 956,5 tỷ — bồi thường thiên tai còn chậm.",
-    nen(NEN.goc()) + dau("II · 2023 – 2025", "Nhân thọ giảm, [phi nhân thọ] giữ thị trường", "Tăng / giảm doanh thu phí so với năm trước.", 19)
-    + lop(`<rect x="130" y="342" width="34" height="22" rx="4" fill="${P.x1}"/><rect x="430" y="342" width="34" height="22" rx="4" fill="${P.v2}"/>`, 130, 342, 340, 22, "Chú giải màu: xanh nhân thọ, vàng phi nhân thọ", "phang", A("fade", 300, 300))
-    + T("n2-cg", 176, 334, 240, "Nhân thọ", A("fade", 300, 300)) + T("n2-cg", 476, 334, 300, "Phi nhân thọ", A("fade", 300, 300))
-    + lop(`<path d="M130 ${Z} H1100" stroke="${P.phu}" stroke-width="3"/>`, 130, Z - 2, 970, 4, "Trục 0 %", "phang", A("fade", 400, 300)) 
-    + NT.map(([n, a, la, b, lb], k) => { const cx = 300 + k * 320, t0 = 600 + k * 400, ha = Math.abs(a) * K, hb = b * K, ya = a < 0 ? Z : Z - ha;
-      return lop(`<rect x="${cx - BW - 6}" y="${ya}" width="${BW}" height="${Math.max(ha, 6)}" rx="6" fill="${P.x1}"/><rect x="${cx + 6}" y="${Z - hb}" width="${BW}" height="${hb}" rx="6" fill="${P.v2}"/>`, cx - BW - 6, Math.min(ya, Z - hb), 2 * BW + 12, Math.max(Z + (a < 0 ? ha : 6), Z) - Math.min(ya, Z - hb), `Năm ${n}: nhân thọ ${la}, phi nhân thọ ${lb}`, "phang", A("wipe", t0, 500))
-        + T(`n2-bar-so${a < 0 ? " do" : ""}`, cx - BW - 36, a < 0 ? Z + ha + 8 : ya - 46, BW + 60, la, A("fade", t0 + 300, 300)) + T("n2-bar-so vang", cx - 24, Z - hb - 46, BW + 60, lb, A("fade", t0 + 350, 300))
-        + T("n2-cot-nam", cx - 100, 930, 200, String(n), A("fade", t0, 300)); }).join("")
-    + khoi(1200, 330, 600, 640, "the-xanh-nhat", "Thẻ bão Yagi", A("rise", 1900, 500)) + hopBadge(1240, 360, "alert-triangle", P.d1, 90, A("pop", 2000, 300)) + T("dong-t", 1350, 368, 420, "Bão Yagi 9/2024: bồi thường chậm", A("fade", 2100, 300))
-    + [["12.811 tỷ", "thiệt hại ước tính", "do"], ["213 tỷ", "đã tạm ứng, giữa 10/2024", ""], ["956,5 tỷ", "đã tạm ứng, đến 9/1/2025", ""]].map(([s, m, c], k) => { const y = 500 + k * 150, t0 = 2200 + k * 250; return `<div class="dong-m" data-t ${A("rise", t0, 400)} style="left:1240px;top:${y}px;width:520px"><span class="n2-yagi${c ? " do" : ""}">${esc(s)}</span><br>${esc(m)}</div>`; }).join("")
-    + T("nguon", 120, 1000, 1680, "Tài liệu nhóm, Hình 2 ([10], [11]); bão Yagi: [16] VCCI, [17] VietnamFinance (số liệu Cục QLGSBH)."));
+// ============ 16 BẢNG 2022–2025 ============
+{ const R = [["2022", "Đỉnh tăng trưởng", "251,3", "Bán bảo hiểm qua ngân hàng tăng nóng; Bộ Tài chính thanh tra 4 doanh nghiệp nhân thọ"], ["2023", "Khủng hoảng niềm tin", "227,1", "Luật Kinh doanh bảo hiểm 2022 có hiệu lực; công bố kết luận thanh tra ngày 30/6"], ["2024", "Chững lại", "227,5", "Luật Các tổ chức tín dụng 2024 cấm bán kèm bảo hiểm; bão Yagi"], ["2025", "Phục hồi nhẹ", "237,2", "Quốc hội thông qua Luật sửa đổi Luật Kinh doanh bảo hiểm ngày 10/12/2025"]];
+  sec("bang", "sang", "Bốn năm gần nhất, bốn trạng thái. 2022 là đỉnh: 78 doanh nghiệp, tổng tài sản hơn 811 nghìn tỷ, tỷ trọng bán qua ngân hàng trong phí khai thác mới nhân thọ lên khoảng 45 %. 2023 khủng hoảng niềm tin. 2024 chững lại khi luật cấm bán kèm qua ngân hàng và bão Yagi thử thách phi nhân thọ. 2025 phục hồi nhẹ, Quốc hội thông qua luật sửa đổi Luật Kinh doanh bảo hiểm.",
+    dau("II · Từng năm 2022 – 2025", "Mỗi năm 2022 – 2025 gắn với một sự kiện chính sách hoặc thị trường", "Cùng đơn vị với biểu đồ trước: nghìn tỷ đồng.", 16)
+    + bang(120, 380, [{ t: "Năm", w: 170 }, { t: "Trạng thái", w: 360 }, { t: "Tổng phí, nghìn tỷ", w: 300, phai: true }, { t: "Sự kiện chính", w: 850 }], R, { cao: 130 })
+    + nguon("Tài liệu nhóm, Bảng 1 (số Bộ Tài chính); năm 2024 đối chiếu mof.gov.vn ngày 10/4/2025."), { ex: "data-khong-hinh" });
 }
 
-// 20 MỐC PHÁP LÝ — trục ngang
-{ const VN = [["01/01/2023", "Luật KDBH 08/2022/QH15", "có hiệu lực, 3 văn bản hướng dẫn", 1], ["30/6/2023", "Kết luận thanh tra", "bancassurance, 4 doanh nghiệp", 0], ["01/7/2024", "Luật Các TCTD 2024", "khoản 5 Điều 15: cấm bán kèm", 1], ["01/01/2026", "Luật 139/2025/QH15", "thông qua 10/12/2025; cắt giảm điều kiện, thủ tục", 1]];
-  sec2("bang", "sang", "Bốn mốc pháp lý. Luật Kinh doanh bảo hiểm 2022 có hiệu lực từ 01/01/2023, hướng dẫn bởi Nghị định 46/2023, Nghị định 67/2023 và Thông tư 67/2023 của Bộ Tài chính. Kết luận thanh tra 30/6/2023. Luật Các tổ chức tín dụng 2024 có hiệu lực 01/7/2024. Ngày 10/12/2025 Quốc hội thông qua Luật số 139/2025/QH15 sửa đổi Luật Kinh doanh bảo hiểm, hiệu lực 01/01/2026, một số khoản từ 01/7/2026, nhằm cắt giảm điều kiện kinh doanh và đơn giản hoá thủ tục.",
-    nen(NEN.dat(720)) + dau("II · Khung pháp lý", "Bốn mốc [định hình lại] thị trường", "Thẻ đậm: văn bản đang có hiệu lực.", 20) + panel(100, 540, 1720, 400)
-    + lop(`<path d="M120 500 H1800" stroke="${P.x3}" stroke-width="4"/>` + VN.map((v, k) => `<circle cx="${290 + k * 420}" cy="500" r="15" fill="${v[3] ? P.x1 : P.nen}" stroke="${P.x1}" stroke-width="4"/>`).join(""), 110, 480, 1700, 40, "Trục thời gian năm mốc", "phang", A("wipe", 400, 900))
-    + VN.map(([y, a, b, dac], k) => { const x = 120 + k * 420, t0 = 600 + k * 250;
-      return T(`n2-moc-nam${dac ? "" : " nhat"}`, x, 400, 390, y, A("rise", t0, 400)) + khoi(x, 560, 390, 360, dac ? "vn-the dac" : "vn-the", `Thẻ mốc ${y}`, A("rise", t0, 450))
-        + `<div class="cap" style="left:${x + 24}px;top:586px;width:342px"><b data-t class="vn-t${dac ? " sang" : ""}" ${A("fade", t0 + 100, 400)}>${esc(a)}</b><span data-t class="vn-m${dac ? " sang" : ""}" ${A("fade", t0 + 200, 400)}>${esc(b)}</span></div>`; }).join("")
-    + T("nguon", 120, 1000, 1680, "vbpl.vn; vanban.chinhphu.vn; 158/VBHN-VPQH. Tra cứu 18/11/2026."));
+// ============ 17 KHỦNG HOẢNG 2023 ============
+{ const SO = [["45 %", "xanh", "phí khai thác mới nhân thọ năm 2022 đến từ kênh bán qua ngân hàng (khoảng 20 % năm 2018)"], ["−44,5 %", "do", "phí khai thác mới bảo hiểm nhân thọ năm 2023 so với năm 2022"], ["−43,8 %", "do", "số hợp đồng bảo hiểm nhân thọ mới năm 2023 so với năm 2022"]];
+  sec("so-lon", "sang", "Gốc của khủng hoảng là kênh bán qua ngân hàng. Theo Công ty Chứng khoán Dầu khí, tỷ trọng bán qua ngân hàng trong phí khai thác mới nhân thọ từ khoảng 20 % năm 2018 lên 45 % năm 2022. Ngày 30/6/2023 Bộ Tài chính công bố kết luận thanh tra tại Prudential, MB Ageas, Sun Life và BIDV MetLife: sai phạm nhiều nhất ở khâu tư vấn. Hệ quả: phí khai thác mới nhân thọ giảm 44,5 %, số hợp đồng mới giảm 43,8 %. Tổng doanh thu giảm chủ yếu do nhân thọ giảm 12,5 %, trong khi phi nhân thọ vẫn tăng.",
+    dau("II · Năm 2023", "Năm 2023, bán bảo hiểm qua ngân hàng bị kết luận sai phạm; [hợp đồng nhân thọ mới giảm 43,8 %]", "Kết luận thanh tra ngày 30/6/2023 tại Prudential, MB Ageas, Sun Life, BIDV MetLife: sai phạm nhiều nhất ở khâu tư vấn.", 17)
+    + SO.map(([so, m, mo], k) => { const x = 120 + k * 580; return soLon(x, 390, 520, so, mo, m, 400 + k * 300) + (k ? ke(x - 30, 390, 2, 320, P.ke) : ""); }).join("")
+    + T("cot-t", 120, 760, 1680, "Tỷ trọng bán qua ngân hàng trong phí khai thác mới nhân thọ", A("fade", 1400, 300)) + ke(120, 822, 1680, 3)
+    + [[2018, 20], [2021, 40], [2022, 45]].map(([n, v], k) => { const y = 836 + k * 50, t0 = 1500 + k * 200; return T("dong-hep", 120, y, 160, String(n), A("fade", t0, 300)) + lop(`<rect x="300" y="${y + 6}" width="${v * 20}" height="34" fill="${k === 2 ? P.x1 : P.x2}"/>`, 300, y + 6, v * 20, 34, `Thanh năm ${n}: ${v} %`, "bieu-do", A("wipe", t0, 400)) + T("so-thanh", 316 + v * 20, y, 200, `${k ? "" : "≈ "}${v} %`, A("fade", t0 + 200, 300)); }).join("")
+    + nguon("Tài liệu nhóm: nguồn 12 (Công ty Chứng khoán Dầu khí), 14 (Báo Thanh tra, 01/7/2023), 15 (VnEconomy, số liệu Hiệp hội Bảo hiểm Việt Nam)."),
+    { ex: "data-khong-hinh" });
 }
 
-// 21 9 THÁNG 2026 — nền đậm, số lớn
-{ const SO = [["175,8", "nghìn tỷ đồng — tổng phí", "+2,4 %"], ["74,1", "nghìn tỷ — phi nhân thọ", "+15,1 %"], ["77,9", "nghìn tỷ — chi trả quyền lợi", "+13,1 %"]];
-  sec2("so-lon", "dam", "Cập nhật 9 tháng năm 2026 theo báo cáo tình hình kinh tế – xã hội: tổng doanh thu phí ước 175,8 nghìn tỷ, tăng 2,4 %; phi nhân thọ 74,1 nghìn tỷ, tăng 15,1 %; chi trả quyền lợi 77,9 nghìn tỷ, tăng 13,1 %. Nhân thọ ước 101,7 nghìn tỷ, vẫn chưa phục hồi. Xu hướng năm 2025 tiếp diễn: phi nhân thọ dẫn dắt. Lưu ý: tài liệu nhóm trích nguồn [21], [22] nhưng chưa có trong danh mục — nhóm sẽ bổ sung.",
-    nen(`<circle cx="1920" cy="1080" r="380" fill="${P.x2}"/>` + mh.cham(1660, 300, 6, 2, 26, 5, P.v2)) + dauToi("II · 9 tháng 2026", "Phi nhân thọ [dẫn dắt tăng trưởng]", "Nhân thọ ước 101,7 nghìn tỷ, vẫn chiếm phần lớn doanh thu.", 21)
-    + SO.map(([so, mo, g], k) => { const x = 120 + k * 580, t0 = 500 + k * 350;
-      return khoi(x, 360, 540, 520, "the-toi", `Thẻ ${so}`, A("rise", t0, 450)) + T("n2-so-toi", x + 40, 400, 470, so, `data-dl ${A("pop", t0 + 200, 400)}`)
-        + T("n2-so-toi-m", x + 40, 560, 460, mo, A("fade", t0 + 300, 400)) + chip(g, x + 40, 770, "chip vang", A("rise", t0 + 400, 300)); }).join("")
-    + T("nguon sang", 120, 1000, 1680, "Báo cáo tình hình KT-XH quý III và 9 tháng 2026, dẫn theo anninhthudo.vn, baomoi.com — số ước tính."), { ex: "data-khong-hinh" });
+// ============ 18 TRÍCH LUẬT ============
+sec("trich", "dam", "Ngày 01/7/2024 Luật Các tổ chức tín dụng 2024 có hiệu lực. Điều 15 liệt kê các hành vi bị nghiêm cấm; khoản 5 cấm tổ chức tín dụng và nhân viên gắn việc bán bảo hiểm không bắt buộc với việc cung ứng sản phẩm, dịch vụ ngân hàng dưới mọi hình thức — tức là không được ép mua bảo hiểm mới cho vay. Đây là phản ứng trực tiếp với sai phạm năm 2023.",
+  dau("II · Năm 2024 · Luật Các tổ chức tín dụng số 32/2024/QH15", "Từ 01/7/2024, ngân hàng [không được gắn việc bán bảo hiểm] với việc cung cấp dịch vụ ngân hàng", "Khoản 5 Điều 15 (Điều 15: các hành vi bị nghiêm cấm). Đang có hiệu lực.", 18, true)
+  + lop(`<rect x="120" y="420" width="8" height="270" fill="${P.v2}"/>`, 120, 420, 8, 270, "Vạch đánh dấu trích dẫn", "net", A("wipe", 400, 400))
+  + `<div class="trich" data-t ${A("fade", 600, 800)} style="left:170px;top:420px;width:1560px">“Tổ chức tín dụng, chi nhánh ngân hàng nước ngoài, người quản lý, người điều hành, nhân viên của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài <em>gắn việc bán sản phẩm bảo hiểm không bắt buộc với việc cung ứng sản phẩm, dịch vụ ngân hàng dưới mọi hình thức</em>.”</div>`
+  + nguon("Văn bản hợp nhất Luật Các tổ chức tín dụng (Văn phòng Quốc hội, số 158), datafiles.chinhphu.vn — đối chiếu 18/11/2026.", true),
+  { ex: "data-khong-hinh" });
+
+// ============ 19 NHÂN THỌ / PHI NHÂN THỌ ============
+{ const NT = [[2023, -12.5, "−12,5 %", 2.87, "+2,87 %"], [2024, -5, "khoảng −5 %", 10.2, "+10,2 %"], [2025, 0.5, "+0,5 %", 10.5, "+10 – 11 %"]], Z = 680, K = 16, BW = 120;
+  sec("noi-dung", "sang", "Hai xu hướng ngược chiều. Nhân thọ chịu tác động trực tiếp: giảm 12,5 % năm 2023, khoảng 5 % năm 2024, gần như đi ngang năm 2025. Phi nhân thọ tăng đều — 2,87 %, 10,2 %, rồi khoảng 10–11 % — và giữ cho thị trường không giảm sâu hơn. Nhưng bão Yagi cho thấy điểm yếu: thiệt hại ước tính khoảng 12.811 tỷ, đến giữa tháng 10/2024 mới tạm ứng 213 tỷ, đến 9/1/2025 lên 956,5 tỷ — bồi thường thiên tai còn chậm.",
+    dau("II · 2023 – 2025", "Nhân thọ giảm, còn [phi nhân thọ tăng đều] và giữ cho thị trường không giảm sâu", "Mức tăng / giảm doanh thu phí so với năm trước. Bên phải: bão Yagi — phép thử của phi nhân thọ.", 19)
+    + lop(`<rect x="120" y="382" width="30" height="24" fill="${P.x1}"/><rect x="380" y="382" width="30" height="24" fill="${P.v2}"/>`, 120, 382, 290, 24, "Chú giải: xanh đậm là nhân thọ, vàng là phi nhân thọ", "bieu-do", A("fade", 200, 300))
+    + T("dong-hep", 162, 374, 200, "Nhân thọ", A("fade", 200, 300)) + T("dong-hep", 422, 374, 300, "Phi nhân thọ", A("fade", 200, 300))
+    + lop(`<path d="M120 ${Z} H1060" stroke="${P.muc}" stroke-width="3"/>`, 120, Z - 2, 940, 4, "Trục 0 %", "bieu-do", A("fade", 300, 300))
+    + NT.map(([n, a, la, b, lb], k) => { const cx = 280 + k * 310, t0 = 500 + k * 350, ha = Math.abs(a) * K, hb = b * K, ya = a < 0 ? Z : Z - ha;
+      return lop(`<rect x="${cx - BW - 6}" y="${ya}" width="${BW}" height="${Math.max(ha, 6)}" fill="${P.x1}"/><rect x="${cx + 6}" y="${Z - hb}" width="${BW}" height="${hb}" fill="${P.v2}"/>`, cx - BW - 6, Math.min(ya, Z - hb), 2 * BW + 12, Math.max(Z + (a < 0 ? ha : 6), Z) - Math.min(ya, Z - hb), `Năm ${n}: nhân thọ ${la}, phi nhân thọ ${lb}`, "bieu-do", A("wipe", t0, 500))
+        + T(`so-thanh${a < 0 ? " do" : ""} giua-ch`, cx - BW - 66, a < 0 ? Z + ha + 8 : ya - 48, BW + 120, la, A("fade", t0 + 300, 300)) + T("so-thanh giua-ch", cx - 54, Z - hb - 48, BW + 120, lb, A("fade", t0 + 350, 300))
+        + T("cot-nam", cx - 100, 948, 200, String(n), A("fade", t0, 300)); }).join("")
+    + T("cot-t", 1180, 380, 620, "Bão Yagi 9/2024: bồi thường chậm", A("fade", 1600, 300)) + ke(1180, 446, 620, 3, P.d1)
+    + [["12.811 tỷ đồng", "thiệt hại ước tính", "do"], ["213 tỷ đồng", "đã tạm ứng bồi thường đến giữa tháng 10/2024", ""], ["956,5 tỷ đồng", "đã tạm ứng bồi thường đến 9/1/2025", ""]].map(([s, m, c], k) => { const y = 470 + k * 168, t0 = 1800 + k * 250;
+      return `<div class="cap" style="left:1180px;top:${y}px;width:620px"><b data-t class="yagi${c ? " do" : ""}" ${A("fade", t0, 300)}>${esc(s)}</b><span data-t class="dong-m" ${A("fade", t0 + 100, 300)}>${esc(m)}</span></div>`; }).join("")
+    + nguon("Tài liệu nhóm, Hình 2 (nguồn 10, 11); bão Yagi: nguồn 16 (VCCI), 17 (VietnamFinance) — số liệu Cục Quản lý, giám sát bảo hiểm."));
 }
 
-// 22 KẾT — câu chốt trên ảnh
-mCauAnh("toa-full.jpg", "Ảnh: toà cao tầng nhìn từ dưới lên", "Hợp đồng chặt, thị trường [đang hồi phục]", "Người mua cần đọc kỹ thời gian chờ và Quy tắc; thị trường cần bán hàng minh bạch. Nhóm 2 cảm ơn thầy cô đã lắng nghe.",
-  "Kết luận. Hợp đồng Bảo Việt An Gia chặt chẽ về hình thức, quyền lợi linh hoạt, chi trả nhanh, nhưng có nhiều ràng buộc người mua phải tự đọc. Thị trường đi từ tăng nóng, qua khủng hoảng niềm tin 2023, nay phục hồi nhờ phi nhân thọ và khung pháp lý siết việc bán hàng. Nhóm cảm ơn thầy cô và các bạn đã lắng nghe.");
+// ============ 20 MỐC PHÁP LÝ ============
+{ const VN = [["01/01/2023", "Luật Kinh doanh bảo hiểm số 08/2022/QH15 có hiệu lực", "Hướng dẫn bởi 2 nghị định, 1 thông tư năm 2023"], ["30/6/2023", "Kết luận thanh tra bán bảo hiểm qua ngân hàng", "4 doanh nghiệp nhân thọ, sai phạm ở khâu tư vấn"], ["01/7/2024", "Luật Các tổ chức tín dụng số 32/2024/QH15 có hiệu lực", "Khoản 5 Điều 15: cấm gắn bán bảo hiểm với dịch vụ ngân hàng"], ["01/01/2026", "Luật 139/2025/QH15 sửa Luật Kinh doanh bảo hiểm có hiệu lực", "Thông qua 10/12/2025; cắt giảm điều kiện, thủ tục"]];
+  sec("noi-dung", "sang", "Bốn mốc pháp lý. Luật Kinh doanh bảo hiểm 2022 có hiệu lực từ 01/01/2023, hướng dẫn bởi Nghị định 46/2023, Nghị định 67/2023 và Thông tư 67/2023 của Bộ Tài chính. Kết luận thanh tra 30/6/2023. Luật Các tổ chức tín dụng 2024 có hiệu lực 01/7/2024. Ngày 10/12/2025 Quốc hội thông qua Luật số 139/2025/QH15 sửa đổi Luật Kinh doanh bảo hiểm, hiệu lực 01/01/2026, một số khoản từ 01/7/2026, nhằm cắt giảm điều kiện kinh doanh và đơn giản hoá thủ tục.",
+    dau("II · Khung pháp lý", "Bốn mốc pháp lý 2023 – 2026: [luật mới, thanh tra, cấm bán kèm, sửa luật]", "Chấm đặc: văn bản luật đang có hiệu lực (tra cứu 18/11/2026). Chấm rỗng: sự kiện thanh tra.", 20)
+    + lop(`<path d="M120 470 H1800" stroke="${P.muc}" stroke-width="3"/>` + VN.map((_, k) => `<circle cx="${134 + k * 420}" cy="470" r="14" fill="${k === 1 ? P.nen : P.x1}" stroke="${P.x1}" stroke-width="4"/>`).join(""), 110, 452, 1700, 36, "Trục thời gian bốn mốc", "bieu-do", A("wipe", 300, 800))
+    + VN.map(([y, a, b], k) => { const x = 120 + k * 420, t0 = 500 + k * 250;
+      return T("moc-nam", x, 380, 400, y, A("fade", t0, 300)) + `<div class="cap" style="left:${x}px;top:516px;width:380px"><b data-t class="dong-dam" ${A("fade", t0 + 100, 300)}>${esc(a)}</b><span data-t class="dong-m" ${A("fade", t0 + 200, 300)}>${esc(b)}</span></div>`; }).join("")
+    + nguon("vbpl.vn; vanban.chinhphu.vn; văn bản hợp nhất Luật Các tổ chức tín dụng — tra cứu 18/11/2026."),
+    { ex: "data-khong-hinh" });
+}
+
+// ============ 21 9 THÁNG 2026 ============
+{ const R = [["Phi nhân thọ", "74,1", 15.1], ["Chi trả quyền lợi", "77,9", 13.1], ["Tổng doanh thu phí", "175,8", 2.4], ["Nhân thọ", "101,7", null]], X = 1100, K = 34;
+  sec("so-lon", "sang", "Cập nhật 9 tháng năm 2026 theo báo cáo tình hình kinh tế – xã hội: tổng doanh thu phí ước 175,8 nghìn tỷ, tăng 2,4 %; phi nhân thọ 74,1 nghìn tỷ, tăng 15,1 %; chi trả quyền lợi 77,9 nghìn tỷ, tăng 13,1 %. Nhân thọ ước 101,7 nghìn tỷ, vẫn chiếm phần lớn doanh thu; nguồn báo chí không nêu tốc độ của nhân thọ nên nhóm không ghi. Lưu ý: tài liệu nhóm trích nguồn 21, 22 nhưng chưa có trong danh mục — nhóm sẽ bổ sung.",
+    dau("II · 9 tháng năm 2026", "9 tháng 2026: phi nhân thọ tăng 15,1 %, nhanh hơn nhiều so với [tổng doanh thu phí (2,4 %)]", "Số ước tính, so với cùng kỳ năm 2025. Chi trả quyền lợi cũng tăng mạnh (13,1 %).", 21)
+    + bang(120, 390, [{ t: "Chỉ tiêu", w: 520 }, { t: "Nghìn tỷ đồng", w: 300, phai: true }, { t: "Tăng so với cùng kỳ", w: 860 }], R.map(([a, b]) => [a, b, ""]), { cao: 120 })
+    + R.map(([a, b, g], k) => { const y = 454 + k * 120 + 22, t0 = 800 + k * 200; return g == null ? T("dong-m", X, y, 700, "báo cáo không nêu tốc độ", A("fade", t0, 300)) : lop(`<rect x="${X}" y="${y + 4}" width="${Math.round(g * K)}" height="48" fill="${g > 10 ? P.x1 : P.x2}"/>`, X, y + 4, Math.round(g * K), 48, `Thanh ${a}: tăng ${String(g).replace(".", ",")} %`, "bieu-do", A("wipe", t0, 400)) + T("so-thanh", X + Math.round(g * K) + 16, y + 6, 200, `+${String(g).replace(".", ",")} %`, A("fade", t0 + 200, 300)); }).join("")
+    + nguon("Báo cáo tình hình kinh tế – xã hội quý III và 9 tháng 2026, dẫn theo anninhthudo.vn và baomoi.com."),
+    { ex: "data-khong-hinh" });
+}
+
+// ============ 22 KẾT LUẬN ============
+{ const KL = [["Hợp đồng Bảo Việt An Gia chặt về hình thức", "Thứ tự ưu tiên rõ, chi trả trong 15 ngày làm việc, hồ sơ nộp qua ứng dụng."], ["Nhưng nhiều ràng buộc người mua phải tự đọc", "Thời gian chờ đến 635 ngày, đồng chi trả 30 %, điểm loại trừ nằm trong Quy tắc."], ["Thị trường đã qua khủng hoảng năm 2023", "Luật cấm bán kèm qua ngân hàng; phi nhân thọ kéo doanh thu tăng trở lại."]];
+  sec("ket", "dam", "Kết luận. Hợp đồng Bảo Việt An Gia chặt chẽ về hình thức, quyền lợi linh hoạt, chi trả nhanh, nhưng có nhiều ràng buộc người mua phải tự đọc. Thị trường đi từ tăng nóng, qua khủng hoảng niềm tin 2023, nay phục hồi nhờ phi nhân thọ và khung pháp lý siết việc bán hàng. Nhóm cảm ơn thầy cô và các bạn đã lắng nghe.",
+    dau("Kết luận", "Ba điều nhóm rút ra từ hợp đồng và thị trường", "", 22, true)
+    + KL.map(([a, b], k) => { const y = 300 + k * 180, t0 = 300 + k * 300;
+      return T("kn-so sang", 120, y, 140, String(k + 1), `data-dl ${A("fade", t0, 300)}`) + `<div class="cap" style="left:300px;top:${y + 10}px;width:1500px"><b data-t class="kn-t sang" ${A("fade", t0, 300)}>${esc(a)}</b><span data-t class="dong-m sang" ${A("fade", t0 + 100, 300)}>${esc(b)}</span></div>` + ke(120, y + 160, 1680, 1, P.x2); }).join("")
+    + T("cam-on", 120, 880, 1680, "Nhóm 2 cảm ơn thầy cô và các bạn đã lắng nghe.", A("fade", 1400, 500)),
+    { ex: "data-khong-hinh" });
+}
 
 // =================== CSS ===================
-ghi(path.join(D, "style.css"), require("./kieu.js")(P) + `
-.n2-kc-t{font:700 52px/1.15 'Lora';color:${P.muc}}.n2-kc-m{font:400 34px/1.4 'Be Vietnam Pro';color:${P.phu}}
-.n2-bac{font:800 34px/1.2 'Be Vietnam Pro';color:${P.muc}}.n2-bac.sang{color:${P.nen}}.n2-bac-so{font:700 48px/1 'Lora';color:${P.x1}}
-.n2-mui{font:600 28px/1.2 'Be Vietnam Pro';color:${P.phu};text-align:center}.n2-tl{font:600 32px/1.25 'Be Vietnam Pro';color:${P.muc}}
-.n2-la-m{font:400 30px/1.35 'Be Vietnam Pro';color:${P.phu}}
-.n2-ct{font:800 34px/1.2 'Be Vietnam Pro';color:${P.muc}}.n2-ct-so{font:700 40px/1 'Lora';color:${P.x1}}.n2-ct-so.vang{color:${P.v1}}
-.n2-moc{font:700 30px/1 'Be Vietnam Pro';color:${P.x1}}.n2-tg{font:700 34px/1.2 'Be Vietnam Pro';color:${P.muc}}.n2-tg-so{font:700 36px/1 'Lora';color:${P.x1}}.n2-tg-so.vang{color:${P.v1}}
-.n2-thanh{font:800 38px/1.2 'Be Vietnam Pro';color:${P.muc}}.n2-thanh.sang{color:${P.nen}}
-.n2-dau-do{background:${P.d1};border-radius:20px 20px 0 0}
-.so-vua.xanh{color:${P.x1}}.so-vua.do{color:${P.d1}}
-.n2-so15{font:700 300px/1.1 'Lora';color:${P.v3};text-align:center}.n2-so15-m{font:700 38px/1.3 'Be Vietnam Pro';color:${P.nen};text-align:center}
-.vach-doc{background:${P.ke}}.n2-muc{font:600 34px/1.25 'Be Vietnam Pro';color:${P.muc}}
-.n2-cot-so{font:700 36px/1 'Lora';color:${P.muc};text-align:center}.n2-cot-nam{font:700 32px/1.3 'Be Vietnam Pro';color:${P.muc};text-align:center}.n2-cot-v{font:700 34px/1.3 'Lora';color:${P.muc}}.n2-cot-g{font:600 28px/1.3 'Be Vietnam Pro';color:${P.x1};text-align:center}.n2-cot-g.do{color:${P.d0}}
-.n2-o-dam{font:800 34px/1.2 'Be Vietnam Pro';color:${P.x1}}.n2-o-dam.do{color:${P.d0}}.n2-o-so{font:700 36px/1 'Lora';color:${P.muc};font-variant-numeric:tabular-nums}
-.n2-so-the{font:700 96px/1.1 'Lora'}.n2-so-the.xanh{color:${P.x1}}.n2-so-the.do{color:${P.d1}}.n2-do-m{font:400 32px/1.35 'Be Vietnam Pro';color:${P.d0}}
-.n2-cg{font:600 28px/1.4 'Be Vietnam Pro';color:${P.phu}}.n2-bar-so{font:700 32px/1 'Lora';color:${P.x1};text-align:center}.n2-bar-so.do{color:${P.d1}}.n2-bar-so.vang{color:${P.v1}}
-.n2-yagi{font:700 56px/1.1 'Lora';color:${P.x1}}.n2-yagi.do{color:${P.d1}}
-.n2-moc-nam{font:700 44px/1.1 'Lora';color:${P.x1}}.n2-moc-nam.nhat{color:${P.phu}}
-.n2-so-toi{font:700 150px/1.05 'Lora';color:${P.v3}}.n2-so-toi-m{font:600 36px/1.3 'Be Vietnam Pro';color:${P.nen}}
+ghi(path.join(D, "style.css"), `section.s{background:${P.nen};color:${P.muc}}section.s.dam{background:${P.x1};color:${P.nen}}
+section.s > div, section.s > h1{position:absolute}
+[data-t]{text-wrap:pretty}
+em{font-style:normal;color:${P.x1};font-weight:inherit}em.do{color:${P.d1}}.dam em{color:${P.sang}}
+.dau{display:flex;flex-direction:column;gap:14px}
+.nhan{font:700 26px/1.2 'Be Vietnam Pro';color:${P.x1}}.nhan.sang{color:${P.nen}}
+.td{font:700 54px/1.18 'Lora';color:${P.muc};text-wrap:balance}.td.sang{color:${P.nen}}
+.phu{font:400 30px/1.4 'Be Vietnam Pro';color:${P.phu}}.phu.sang{color:${P.nhat}}
+.so-trang{font:600 24px/1.2 'Be Vietnam Pro';color:${P.phu};text-align:right}.so-trang.sang{color:${P.nhat}}
+.nguon{font:400 24px/1.4 'Be Vietnam Pro';color:${P.phu}}.nguon.sang{color:${P.nhat}}
+.chu-anh{font:400 24px/1.4 'Be Vietnam Pro';color:${P.phu}}
+.bia-td{position:absolute;font:700 76px/1.12 'Lora';color:${P.muc}}.bia-m{font:400 32px/1.45 'Be Vietnam Pro';color:${P.phu}}
+.khung-giay{border:2px solid ${P.ke}}
+.cot-t{font:700 32px/1.25 'Be Vietnam Pro';color:${P.muc}}.cot-t.xanh{color:${P.x1}}.cot-t.do{color:${P.d1}}
+.dong{font:400 32px/1.4 'Be Vietnam Pro';color:${P.muc}}.dong-hep{font:600 30px/1.3 'Be Vietnam Pro';color:${P.muc}}
+.cap > b,.cap > span{display:block}.cap > span{margin-top:8px}
+.dong-dam{font:700 32px/1.3 'Be Vietnam Pro';color:${P.muc}}.dong-m{font:400 30px/1.4 'Be Vietnam Pro';color:${P.phu}}.dong-m.sang{color:${P.nhat}}
+.bh{font:700 28px/1.3 'Be Vietnam Pro';color:${P.phu}}.phai{text-align:right}
+.o{font:400 30px/1.35 'Be Vietnam Pro';color:${P.muc}}.o.dau{font-weight:700}.o.nhan{color:${P.x1};font-weight:700}.o.lon{font:700 44px/1.1 'Lora';color:${P.x1}}
+.thu-so{font:700 64px/1 'Lora';color:${P.phu}}.thu-so.nhan{color:${P.d1}}
+.y-nghia{font:600 32px/1.4 'Be Vietnam Pro';color:${P.x1}}
+.so-thanh{font:700 34px/1.2 'Lora';color:${P.muc}}.so-thanh.do{color:${P.d1}}.giua-ch{text-align:center}
+.moc{font:600 28px/1.2 'Be Vietnam Pro';color:${P.muc}}
+.trong-thanh{font:700 34px/1.2 'Be Vietnam Pro';color:${P.muc}}.trong-thanh.sang{color:${P.nen}}
+.mp-so{font:700 220px/1 'Lora';color:${P.sang}}.mp-t{position:absolute;font:700 72px/1.12 'Lora';color:${P.nen}}.mp-m{font:400 32px/1.45 'Be Vietnam Pro';color:${P.nhat}}
+.mp-dieu{font:700 30px/1.3 'Be Vietnam Pro';color:${P.nen}}.mp-noi{font:400 30px/1.3 'Be Vietnam Pro';color:${P.nen}}
+.mp-so-nho{font:700 72px/1 'Lora';color:${P.x1}}
+.kn-so{font:700 120px/1 'Lora';color:${P.x1}}.kn-so.sang{color:${P.sang}}.kn-t{font:700 40px/1.25 'Lora';color:${P.muc}}.kn-t.sang{color:${P.nen}}
+.cam-on{font:600 34px/1.3 'Be Vietnam Pro';color:${P.sang}}
+.so{font:700 120px/1.05 'Lora'}.so.xanh{color:${P.x1}}.so.do{color:${P.d1}}.so-m{font:400 32px/1.4 'Be Vietnam Pro';color:${P.muc}}
+.so-cot{font:700 34px/1 'Lora';color:${P.muc};text-align:center}.cot-nam{font:700 30px/1.35 'Be Vietnam Pro';color:${P.muc};text-align:center}
+.cot-nam .do{color:${P.d1};font-weight:600}.cot-nam .xam{color:${P.phu};font-weight:600}.cot-nam .xanh{color:${P.x1};font-weight:600}
+.yagi{font:700 48px/1.1 'Lora';color:${P.x1}}.yagi.do{color:${P.d1}}
+.moc-nam{font:700 44px/1.1 'Lora';color:${P.x1}}
+.trich{font:500 44px/1.5 'Lora';color:${P.nen}}.trich em{color:${P.sang}}
 `);
-
 fs.rmSync(path.join(D, "slides"), { recursive: true, force: true });
 S2.forEach((h, k) => ghi(path.join(D, "slides", `${String(k + 1).padStart(2, "0")}.html`), h));
-ghi(path.join(D, "kich-ban.md"), `# Kịch bản — sinh từ deck.js (sửa ở deck.js, chạy lại \`node deck.js\`)\n\nƯớc lượng: ${S2.length} slide × ≈ 45 giây ≈ ${Math.round(S2.length * 45 / 60)} phút.\n\n| # | Bố cục | Tiêu đề | Lời nói |\n|---|---|---|---|\n` + KB.map(([n, m, t, l]) => `| ${n} | ${m} | ${t} | ${l.replace(/\|/g, "/")} |`).join("\n") + "\n");
+ghi(path.join(D, "kich-ban.md"), `# Kịch bản — sinh từ deck.js (sửa ở deck.js, chạy lại \`node deck.js\`)\n\nThể loại: báo cáo nhóm (bám dàn ý tài liệu gốc). Ước lượng: ${S2.length} slide × ≈ 45 giây ≈ ${Math.round(S2.length * 45 / 60)} phút.\n\n| # | Bố cục | Tiêu đề (khẳng định) | Lời nói |\n|---|---|---|---|\n` + KB.map(([n, m, t, l]) => `| ${n} | ${m} | ${t} | ${l.replace(/\|/g, "/")} |`).join("\n") + "\n");
 console.log(`${S2.length} slide, ${nL} lớp hình`);

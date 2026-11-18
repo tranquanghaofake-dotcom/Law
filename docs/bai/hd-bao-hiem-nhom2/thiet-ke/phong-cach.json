@@ -1,62 +1,46 @@
 {
-  "ten": "tư vấn pháp lý — khối phẳng",
-  "huong": "Tư vấn pháp lý, khối phẳng: ảnh chụp Unsplash và tranh tư liệu cắt khung (vòm, tròn, bo góc) cùng một cách chỉnh màu; minh hoạ unDraw tô lại theo bảng màu và vật phẳng tự vẽ (toà nhà DNBH, người, xe, xu, hợp đồng); icon nét Tabler 3 px trong huy hiệu; khối thông tin tô đặc, bóng lệch đặc màu x3 (không bóng mờ); tiêu đề Lora có từ khoá màu; nền sáng xen nền đậm, ảnh tràn mép, nền chia; mỗi phần một slide hero.",
+  "ten": "biên tập học thuật",
+  "huong": "Biên tập học thuật (Hào chọn 18/11/2026): nền trắng; hình chính là trang hợp đồng gốc cắt đúng điều khoản, khoanh bằng khung màu; biểu đồ và bảng kẻ ngang dựng bằng code; chữ Lora cho tiêu đề và số, Be Vietnam Pro cho thân; không thẻ, chip, bóng, icon trang trí.",
   "gradient": false,
   "bongMo": false,
+  "chongAI": true,
+  "boGocToiDa": 4,
   "bangMau": [
-    "#FBF7EF",
     "#FFFFFF",
     "#1B2A28",
     "#3F4B48",
-    "#DCD3C4",
+    "#8C9491",
     "#0E4F49",
     "#2C7A6C",
-    "#8EC3B6",
-    "#DDECE7",
     "#946512",
     "#E2A52E",
-    "#F3D27E",
-    "#F8ECCD",
     "#B13A2E",
-    "#F6DDD7",
-    "#E8B48F",
-    "#B97C5E",
-    "#8F2A21"
+    "#F3D27E",
+    "#DDECE7"
   ],
   "loaiHinh": [
-    "phang",
-    "nen",
-    "anh-hai-mau",
-    "undraw",
-    "anh-chup"
+    "tai-lieu",
+    "bieu-do",
+    "net"
   ],
   "boCuc": [
     "bia",
     "mo-phan",
     "noi-dung",
-    "so-lon",
     "bang",
+    "so-lon",
     "trich",
-    "so-sanh",
-    "hoi",
-    "cau",
     "ket"
   ],
   "tieuDeCoDinh": [
     "noi-dung",
-    "so-lon",
     "bang",
-    "so-sanh"
+    "so-lon"
   ],
-  "nguong": {
-    "loaiNenToiThieu": 2,
-    "tiLeNenToiDa": 0.85,
-    "lienToiDa": 6,
-    "lienHoToiDa": 6,
-    "assetToiDa": 4,
-    "bangXetTiLe": 99,
-    "tieuDiemToiThieu": 0.15
+  "vietTat": {
+    "MB": "tên riêng doanh nghiệp MB Ageas",
+    "BIDV": "tên riêng doanh nghiệp BIDV MetLife"
   },
-  "ghiChuNguong": "Hướng biên tập: một kiểu bảng cho cả deck là chủ ý (bo-cuc.md); slide lấy chữ / số lớn làm tiêu điểm khai data-khong-hinh. Nhịp nền (15/11/2026, vòng duyệt 6): tối đa 6 slide liền cùng họ nền.",
-  "ghiChuNguon": "Ảnh chụp Unsplash (giấy phép Unsplash) và minh hoạ unDraw (giấy phép unDraw) — Hào chọn 15/11/2026; ghi nguồn trong ghi-cong.md. Không ảnh AI."
+  "phongPhu": false,
+  "ghiChuNguong": "Hướng biên tập: khoảng trắng là chủ ý; ngưỡng đếm của da_dang / phong_phu chỉ là cảnh báo."
 }

@@ -1,94 +1,35 @@
-section.s{background:#FBF7EF;color:#1B2A28}section.s.dam{background:#0E4F49;color:#FBF7EF}
+section.s{background:#FFFFFF;color:#1B2A28}section.s.dam{background:#0E4F49;color:#FFFFFF}
 section.s > div, section.s > h1{position:absolute}
-[data-t]{text-wrap:pretty}.td,.bia-td,.mp-t,.hoi-td{text-wrap:balance}
-em{font-style:normal;color:#2C7A6C}em.v{color:#946512}.dam em,.anh em{color:#8EC3B6}.anh em.v{color:#F3D27E}
-section.s.anh{background:#0E4F49}.td.sang{color:#FBF7EF}.so-trang.sang,.dan.sang{color:#DDECE7}.trich.sang{color:#FBF7EF}.trich.sang mark{background:none;color:#F3D27E}.trich.sang mark.xanh{background:none;color:#8EC3B6}
-.giua{display:flex;align-items:center}
-.chip{font:700 28px/1 'Be Vietnam Pro';letter-spacing:.08em;text-transform:uppercase;color:#FBF7EF;background:#0E4F49;padding:11px 18px 10px;border-radius:6px;white-space:nowrap;width:auto !important}
-.chip.vang{background:#F3D27E;color:#1B2A28}.chip.cot{width:156px !important;text-align:center;padding:10px 0;letter-spacing:0;text-transform:none;font-size:26px}
-.chip.nt{font-size:30px;letter-spacing:0;text-transform:none;padding:10px 16px 9px}
-.chip.vien{background:#F8ECCD;color:#1B2A28}
-.td{font:700 72px/1.1 'Lora';color:#1B2A28}.dan{font:400 34px/1.4 'Be Vietnam Pro';color:#3F4B48}
-.so-trang{font:600 24px/1 'Be Vietnam Pro';color:#3F4B48;text-align:right}
-.nguon{font:400 26px/1.4 'Be Vietnam Pro';color:#3F4B48}
-.the,.the-trang{background:#FFFFFF;border-radius:20px}.the-vang{background:#F8ECCD;border-radius:24px}.bong{background:#8EC3B6;border-radius:22px}
-.the-noi{background:#FFFFFF;border-radius:20px;border:2px solid #DCD3C4}.noi-t{font:800 32px/1.2 'Be Vietnam Pro';color:#0E4F49}.noi-m{font:400 30px/1.3 'Be Vietnam Pro';color:#3F4B48}
-.gach{background:#E2A52E;border-radius:6px}.vach{height:2px;background:#DCD3C4}
-.bia-chuong{font:700 48px/1.2 'Lora';color:#946512}.bia-td{position:absolute;font:700 132px/1.06 'Lora';color:#1B2A28}
-.bia-mo{font:400 32px/1.45 'Be Vietnam Pro';color:#3F4B48}.bia-by{font:600 28px/1.4 'Be Vietnam Pro';color:#3F4B48}
-.o-so{background:#E2A52E;border-radius:24px}.mp-so{font:700 200px/1.15 'Lora';color:#0E4F49;text-align:center}
-.mp-t{position:absolute;font:700 88px/1.08 'Lora';color:#FBF7EF}.mp-m{font:400 32px/1.45 'Be Vietnam Pro';color:#DDECE7}
-.la-t{font:800 32px/1.25 'Be Vietnam Pro';color:#0E4F49;text-align:center}.la-m{font:400 32px/1.35 'Be Vietnam Pro';color:#3F4B48;text-align:center}
+[data-t]{text-wrap:pretty}
+em{font-style:normal;color:#0E4F49;font-weight:inherit}em.do{color:#B13A2E}.dam em{color:#F3D27E}
+.dau{display:flex;flex-direction:column;gap:14px}
+.nhan{font:700 26px/1.2 'Be Vietnam Pro';color:#0E4F49}.nhan.sang{color:#FFFFFF}
+.td{font:700 54px/1.18 'Lora';color:#1B2A28;text-wrap:balance}.td.sang{color:#FFFFFF}
+.phu{font:400 30px/1.4 'Be Vietnam Pro';color:#3F4B48}.phu.sang{color:#DDECE7}
+.so-trang{font:600 24px/1.2 'Be Vietnam Pro';color:#3F4B48;text-align:right}.so-trang.sang{color:#DDECE7}
+.nguon{font:400 24px/1.4 'Be Vietnam Pro';color:#3F4B48}.nguon.sang{color:#DDECE7}
+.chu-anh{font:400 24px/1.4 'Be Vietnam Pro';color:#3F4B48}
+.bia-td{position:absolute;font:700 76px/1.12 'Lora';color:#1B2A28}.bia-m{font:400 32px/1.45 'Be Vietnam Pro';color:#3F4B48}
+.khung-giay{border:2px solid #8C9491}
+.cot-t{font:700 32px/1.25 'Be Vietnam Pro';color:#1B2A28}.cot-t.xanh{color:#0E4F49}.cot-t.do{color:#B13A2E}
+.dong{font:400 32px/1.4 'Be Vietnam Pro';color:#1B2A28}.dong-hep{font:600 30px/1.3 'Be Vietnam Pro';color:#1B2A28}
 .cap > b,.cap > span{display:block}.cap > span{margin-top:8px}
-.nhan-vang{font:800 36px/1.2 'Be Vietnam Pro';color:#946512}.dk-vang{font:600 32px/1.3 'Be Vietnam Pro';color:#946512}
-.lich{border:3px solid #DDECE7}.lich-so{font:700 80px/1.15 'Lora';color:#F3D27E}.lich-m{font:700 34px/1.3 'Be Vietnam Pro';color:#DDECE7}.lich-o{font:700 40px/1 'Lora';color:#FBF7EF}.lich-o.toi{color:#0E4F49}.lich-nhan{font:800 32px/1.2 'Be Vietnam Pro';color:#0E4F49}.lich-nhan.vang{color:#946512}
-.tren-thanh{font:800 28px/1 'Be Vietnam Pro';color:#0E4F49}.tren-thanh.vang{color:#946512}.vd-ct{font:600 32px/1.2 'Be Vietnam Pro';color:#1B2A28}.vd-ct b{color:#946512}.vd-ct .d{color:#8F2A21}.vd-ct i{font-style:normal;font-weight:800;color:#0E4F49}
-.nhan-do{font:800 36px/1.2 'Be Vietnam Pro';color:#8F2A21}.dk-do{font:600 32px/1.3 'Be Vietnam Pro';color:#8F2A21}
-.so-to{font:700 330px/1 'Lora';color:#0E4F49}.don-vi{font:700 64px/1 'Lora';color:#946512}
-.dai{background:#0E4F49;border-radius:0 0 24px 24px}.dai-t{font:600 30px/1.3 'Be Vietnam Pro';color:#FBF7EF}
-.dong-t{font:800 34px/1.25 'Be Vietnam Pro';color:#1B2A28}.dong-t.do{color:#8F2A21}.dong-m{font:400 32px/1.35 'Be Vietnam Pro';color:#3F4B48}
-.bh{background:#0E4F49;border-radius:14px 14px 0 0}.bh-t{font:600 30px/1.2 'Be Vietnam Pro';color:#FBF7EF}
-.hang{background:#FFFFFF;border-bottom:3px solid #DCD3C4}.hang.nhan{background:#F8ECCD}
-.tab-t{font:800 32px/1.15 'Be Vietnam Pro';color:#FBF7EF}.o-t{font:400 34px/1.3 'Be Vietnam Pro';color:#1B2A28}.o-nhan{font:600 28px/1 'Be Vietnam Pro';color:#3F4B48}.o-mau{display:inline-block;width:34px;height:16px;border-radius:4px;margin:0 12px 0 22px}.o-mau.x{background:#DDECE7;margin-left:0}.o-mau.v{background:#E2A52E}.o-mau.d{width:4px;height:30px;background:#F6DDD7}.o-do{font:700 28px/1 'Be Vietnam Pro';color:#8F2A21}
-.trich{font:700 42px/1.45 'Lora';color:#1B2A28}
-.trich mark{background:#F8ECCD;color:#946512;padding:0 2px}.trich mark.xanh{background:#DDECE7;color:#0E4F49}
-.dau-xanh{background:#0E4F49;border-radius:20px 20px 0 0}.dau-vang{background:#E2A52E;border-radius:20px 20px 0 0}
-.the-td{font:700 44px/1.15 'Lora';color:#FBF7EF}.the-td.toi{color:#1B2A28}
-.the-nhan{font:700 28px/1.2 'Be Vietnam Pro';letter-spacing:.06em;text-transform:uppercase;color:#0E4F49}.the-chu{font:400 34px/1.35 'Be Vietnam Pro';color:#1B2A28}
-.hoi-so{font:700 160px/1 'Lora';color:#0E4F49}.hoi-td{position:absolute;font:700 60px/1.15 'Lora';color:#1B2A28}
-.pa{background:#FFFFFF;border-radius:16px;border:2px solid #DCD3C4}.pa-o{border-radius:16px 0 0 16px;background:#0E4F49}
-.vd{background:#0E4F49;border-radius:30px}.vd-x{background:#DDECE7;border-radius:12px}.vd-v{background:#F8ECCD;border-radius:12px}.vd-d{background:#F6DDD7;border-radius:12px}.vd-k{background:#F3D27E;border-radius:12px}
-.vd-t{font:700 26px/1 'Be Vietnam Pro';color:#FBF7EF;text-transform:uppercase;letter-spacing:.06em}.vd-x-t,.vd-v-t,.vd-k-t{font:800 32px/1 'Be Vietnam Pro';color:#1B2A28}.vd-d-t{font:800 32px/1 'Be Vietnam Pro';color:#8F2A21}
-.pa-chu{font:700 60px/1.15 'Lora';color:#FBF7EF;text-align:center}.pa-t{font:600 36px/1.3 'Be Vietnam Pro';color:#1B2A28}
-
-.hoi-td.dien{font-size:40px;line-height:1.35}
-.cau-anh{position:absolute;font:700 84px/1.12 'Lora';color:#FBF7EF;text-wrap:balance}.anh .cau-anh em{color:#F3D27E}.cau-anh-phu{font:500 36px/1.4 'Be Vietnam Pro';color:#DDECE7}
-.hang-mt{background:#FFFFFF;border-radius:18px}.hang-mt.le{background:#DDECE7}.mt-so{font:700 48px/1.4 'Lora';color:#946512}.mt-v{font:800 36px/1.2 'Be Vietnam Pro';color:#0E4F49}.mt-m{font:400 34px/1.3 'Be Vietnam Pro';color:#1B2A28}
-.kc-so{font:700 96px/1.1 'Lora';color:#F3D27E}.kc-so.toi{color:#0E4F49}.kc-t{font:700 40px/1.15 'Lora';color:#1B2A28}.kc-m{font:400 30px/1.35 'Be Vietnam Pro';color:#3F4B48}
-.ls-nam{font:700 56px/1.1 'Lora';color:#0E4F49}.ls-nam.vang{color:#946512}.vn-nam{font:700 64px/1.1 'Lora';color:#0E4F49}.vn-nam.nhat{color:#3F4B48}
-.vn-the{background:#FFFFFF;border-radius:20px;border:2px solid #DCD3C4}.vn-the.dac{background:#0E4F49;border-color:#0E4F49}.vn-t{font:800 30px/1.25 'Be Vietnam Pro';color:#0E4F49}.vn-t.sang{color:#FBF7EF}.vn-m{font:400 28px/1.35 'Be Vietnam Pro';color:#3F4B48}.vn-m.sang{color:#DDECE7}
-.chu-lon{font:600 34px/1.3 'Be Vietnam Pro';color:#1B2A28}.so-lon{font:700 200px/1 'Lora'}.so-lon.xanh,.so-vua.xanh{color:#0E4F49}.so-lon.do,.so-vua.do{color:#B13A2E}.so-vua{font:700 80px/1 'Lora'}
-.dai-nhat{background:#DDECE7;border-radius:16px}.chot{font:700 34px/1.3 'Be Vietnam Pro';color:#0E4F49}.ev-t{font:600 34px/1.25 'Be Vietnam Pro';color:#1B2A28}
-.pill-co{background:#DDECE7;border-radius:34px}.pill-khong{background:#F6DDD7;border-radius:34px}.pill-co-t{font:800 32px/1 'Be Vietnam Pro';color:#0E4F49}.pill-khong-t{font:800 32px/1 'Be Vietnam Pro';color:#8F2A21}
-.q-t{font:800 36px/1.2 'Be Vietnam Pro';color:#1B2A28}.q-m{font:400 32px/1.3 'Be Vietnam Pro';color:#3F4B48}.chip.do{background:#8F2A21;color:#FBF7EF}
-.trich-vua{font:700 38px/1.45 'Lora';color:#1B2A28}.trich-vua.sang{color:#FBF7EF}.ct-dau.sang{color:#F3D27E}.la-t.sang{color:#F3D27E}.la-m.sang{color:#DDECE7}.gach-doc{background:#E2A52E;border-radius:5px}.the-xanh-nhat{background:#DDECE7;border-radius:20px}.the-xanh{background:#0E4F49;border-radius:20px}
-.dai-do{background:#F6DDD7;border-radius:16px}.dai-do-t{font:700 32px/1.3 'Be Vietnam Pro';color:#8F2A21}
-.venn-t{font:800 32px/1.2 'Be Vietnam Pro';color:#0E4F49;text-align:center}.venn-t.dac{color:#1B2A28}.venn-t.vang{color:#946512}.venn-t.nho{font-size:30px}
-.so-khong-lo{font:700 360px/1 'Lora';color:#F3D27E;text-align:right}.cau-dam{position:absolute;font:700 76px/1.12 'Lora';color:#FBF7EF;text-wrap:balance}.cau-dam-phu{font:400 34px/1.4 'Be Vietnam Pro';color:#DDECE7}
-.nen-xanh-nhat{background:#DDECE7;border-radius:20px 20px 0 0}.nhom-t{font:700 42px/1.15 'Lora';color:#1B2A28}.nhom-m{font:400 32px/1.3 'Be Vietnam Pro';color:#3F4B48}
-.giay{background:#FFFFFF;border-radius:14px;border:2px solid #DCD3C4}.giay-bong{background:#DDECE7;border-radius:14px}.tl-nhom{font:700 36px/1.2 'Lora';color:#0E4F49}.tl-so{font:700 44px/1.3 'Lora';color:#946512}.tl-t{font:600 32px/1.25 'Be Vietnam Pro';color:#1B2A28}
-.ct-t{font:800 32px/1.2 'Be Vietnam Pro';color:#0E4F49}.ct-t.sang{color:#FBF7EF}.ct-m{font:400 28px/1.35 'Be Vietnam Pro';color:#3F4B48}.ct-m.sang{color:#DDECE7}.vd-dong{font:600 32px/1.3 'Be Vietnam Pro';color:#1B2A28}.the-gia{font:800 36px/1.2 'Be Vietnam Pro';color:#1B2A28}
-.thanh-t{font:800 34px/1.2 'Be Vietnam Pro';color:#1B2A28}.thanh-t.sang{color:#FBF7EF}.thanh-m{font:400 30px/1.3 'Be Vietnam Pro';color:#3F4B48}
-.ct-chu{font:700 200px/1.2 'Lora';color:#FBF7EF;text-align:center}.ct-chu.toi{color:#1B2A28}.ct-dau{font:700 160px/1.2 'Lora';color:#946512;text-align:center}.dinh-nghia{font:600 32px/1.3 'Be Vietnam Pro';color:#0E4F49}
-.cs-t{font:700 48px/1 'Lora';color:#FBF7EF}.nhan-xanh{font:800 32px/1.2 'Be Vietnam Pro';color:#0E4F49}.nhan-do-dam{font:800 32px/1.2 'Be Vietnam Pro';color:#8F2A21}
-.chuoi-t{font:800 32px/1 'Be Vietnam Pro';color:#FBF7EF}.chuoi-nhan{font:700 30px/1.2 'Be Vietnam Pro';color:#DDECE7;text-align:center}.chuoi-nhan.vang{color:#F3D27E}.chip.dai-chip{text-transform:none;letter-spacing:0;font-size:30px;padding:16px 22px}
-.buoc-t{font:800 34px/1.2 'Be Vietnam Pro';color:#1B2A28}.buoc-m{font:400 30px/1.35 'Be Vietnam Pro';color:#3F4B48}
-.khoi-goc{background:#0E4F49;border-radius:16px}.goc-t{font:700 40px/1 'Lora';color:#FBF7EF}.khoi-xanh{background:#2C7A6C;border-radius:16px}.khoi-vang{background:#E2A52E;border-radius:16px}.nhanh-t{font:700 40px/1 'Lora';color:#FBF7EF}.nhanh-t.toi{color:#1B2A28}
-.la-the{background:#FFFFFF;border-radius:16px;border:2px solid #DCD3C4}.dai-x{background:#2C7A6C;border-radius:16px 16px 0 0}.dai-v{background:#E2A52E;border-radius:16px 16px 0 0}
-.trai{text-align:left !important}.phai{text-align:right !important}.vong-so{font:700 48px/1.6 'Lora';color:#0E4F49;text-align:center}
-.de-nhan{font:800 32px/1.2 'Be Vietnam Pro';letter-spacing:.06em;text-transform:uppercase;color:#0E4F49}.de-chu{font:400 34px/1.4 'Be Vietnam Pro';color:#1B2A28}
-.o-loai{background:#0E4F49;border-radius:14px}.o-loai-t{font:700 44px/1 'Lora';color:#FBF7EF}.so-cot{font:700 40px/1.5 'Lora';color:#FBF7EF;text-align:center}.so-cot.toi{color:#1B2A28}
-.dong-t.xanh{color:#0E4F49}.dong-t.vang{color:#946512}.thuoc{font:600 28px/1 'Be Vietnam Pro';color:#3F4B48;text-align:center}.thuoc-don{font:600 28px/1 'Be Vietnam Pro';color:#3F4B48}
-.cong-t{font:700 34px/1.2 'Be Vietnam Pro';color:#0E4F49}.nhan-den{font:800 30px/1.2 'Be Vietnam Pro';color:#1B2A28}.de-so{font:700 96px/1 'Lora';color:#946512}.de-tai{font:700 40px/1.25 'Lora';color:#1B2A28}
-.tk-the{background:#0E4F49;border-radius:18px}.tk-so{font:700 48px/1.4 'Lora';color:#F3D27E}.tk-t{font:700 32px/1.25 'Be Vietnam Pro';color:#FBF7EF}
-.panel-nen{background:#DDECE7;border-radius:28px}.panel-toi{background:#2C7A6C;border-radius:28px}.the-toi{background:#2C7A6C;border-radius:20px}.dai-vang{background:#E2A52E;border-radius:0 0 20px 20px}.dai-vang-t{font:700 32px/1.3 'Be Vietnam Pro';color:#1B2A28}
-.can{text-align:center !important}.de-nhan.sang{color:#F3D27E}.de-chu.sang,.de-tai.sang,.dong-t.sang{color:#FBF7EF}.de-so.sang{color:#F3D27E}.dong-t.v3{color:#F3D27E}.dong-t.x3{color:#8EC3B6}.nguon.sang{color:#DDECE7}.vach.toi{background:#2C7A6C}.bh-t.phai{justify-content:flex-end}.so-o{font:600 32px/1 'Be Vietnam Pro';color:#1B2A28;font-variant-numeric:tabular-nums}.so-o.dau{font-weight:800;color:#0E4F49}.hang.le{background:#DDECE7}
-
-.n2-kc-t{font:700 52px/1.15 'Lora';color:#1B2A28}.n2-kc-m{font:400 34px/1.4 'Be Vietnam Pro';color:#3F4B48}
-.n2-bac{font:800 34px/1.2 'Be Vietnam Pro';color:#1B2A28}.n2-bac.sang{color:#FBF7EF}.n2-bac-so{font:700 48px/1 'Lora';color:#0E4F49}
-.n2-mui{font:600 28px/1.2 'Be Vietnam Pro';color:#3F4B48;text-align:center}.n2-tl{font:600 32px/1.25 'Be Vietnam Pro';color:#1B2A28}
-.n2-la-m{font:400 30px/1.35 'Be Vietnam Pro';color:#3F4B48}
-.n2-ct{font:800 34px/1.2 'Be Vietnam Pro';color:#1B2A28}.n2-ct-so{font:700 40px/1 'Lora';color:#0E4F49}.n2-ct-so.vang{color:#946512}
-.n2-moc{font:700 30px/1 'Be Vietnam Pro';color:#0E4F49}.n2-tg{font:700 34px/1.2 'Be Vietnam Pro';color:#1B2A28}.n2-tg-so{font:700 36px/1 'Lora';color:#0E4F49}.n2-tg-so.vang{color:#946512}
-.n2-thanh{font:800 38px/1.2 'Be Vietnam Pro';color:#1B2A28}.n2-thanh.sang{color:#FBF7EF}
-.n2-dau-do{background:#B13A2E;border-radius:20px 20px 0 0}
-.so-vua.xanh{color:#0E4F49}.so-vua.do{color:#B13A2E}
-.n2-so15{font:700 300px/1.1 'Lora';color:#F3D27E;text-align:center}.n2-so15-m{font:700 38px/1.3 'Be Vietnam Pro';color:#FBF7EF;text-align:center}
-.vach-doc{background:#DCD3C4}.n2-muc{font:600 34px/1.25 'Be Vietnam Pro';color:#1B2A28}
-.n2-cot-so{font:700 36px/1 'Lora';color:#1B2A28;text-align:center}.n2-cot-nam{font:700 32px/1.3 'Be Vietnam Pro';color:#1B2A28;text-align:center}.n2-cot-v{font:700 34px/1.3 'Lora';color:#1B2A28}.n2-cot-g{font:600 28px/1.3 'Be Vietnam Pro';color:#0E4F49;text-align:center}.n2-cot-g.do{color:#8F2A21}
-.n2-o-dam{font:800 34px/1.2 'Be Vietnam Pro';color:#0E4F49}.n2-o-dam.do{color:#8F2A21}.n2-o-so{font:700 36px/1 'Lora';color:#1B2A28;font-variant-numeric:tabular-nums}
-.n2-so-the{font:700 96px/1.1 'Lora'}.n2-so-the.xanh{color:#0E4F49}.n2-so-the.do{color:#B13A2E}.n2-do-m{font:400 32px/1.35 'Be Vietnam Pro';color:#8F2A21}
-.n2-cg{font:600 28px/1.4 'Be Vietnam Pro';color:#3F4B48}.n2-bar-so{font:700 32px/1 'Lora';color:#0E4F49;text-align:center}.n2-bar-so.do{color:#B13A2E}.n2-bar-so.vang{color:#946512}
-.n2-yagi{font:700 56px/1.1 'Lora';color:#0E4F49}.n2-yagi.do{color:#B13A2E}
-.n2-moc-nam{font:700 44px/1.1 'Lora';color:#0E4F49}.n2-moc-nam.nhat{color:#3F4B48}
-.n2-so-toi{font:700 150px/1.05 'Lora';color:#F3D27E}.n2-so-toi-m{font:600 36px/1.3 'Be Vietnam Pro';color:#FBF7EF}
+.dong-dam{font:700 32px/1.3 'Be Vietnam Pro';color:#1B2A28}.dong-m{font:400 30px/1.4 'Be Vietnam Pro';color:#3F4B48}.dong-m.sang{color:#DDECE7}
+.bh{font:700 28px/1.3 'Be Vietnam Pro';color:#3F4B48}.phai{text-align:right}
+.o{font:400 30px/1.35 'Be Vietnam Pro';color:#1B2A28}.o.dau{font-weight:700}.o.nhan{color:#0E4F49;font-weight:700}.o.lon{font:700 44px/1.1 'Lora';color:#0E4F49}
+.thu-so{font:700 64px/1 'Lora';color:#3F4B48}.thu-so.nhan{color:#B13A2E}
+.y-nghia{font:600 32px/1.4 'Be Vietnam Pro';color:#0E4F49}
+.so-thanh{font:700 34px/1.2 'Lora';color:#1B2A28}.so-thanh.do{color:#B13A2E}.giua-ch{text-align:center}
+.moc{font:600 28px/1.2 'Be Vietnam Pro';color:#1B2A28}
+.trong-thanh{font:700 34px/1.2 'Be Vietnam Pro';color:#1B2A28}.trong-thanh.sang{color:#FFFFFF}
+.mp-so{font:700 220px/1 'Lora';color:#F3D27E}.mp-t{position:absolute;font:700 72px/1.12 'Lora';color:#FFFFFF}.mp-m{font:400 32px/1.45 'Be Vietnam Pro';color:#DDECE7}
+.mp-dieu{font:700 30px/1.3 'Be Vietnam Pro';color:#FFFFFF}.mp-noi{font:400 30px/1.3 'Be Vietnam Pro';color:#FFFFFF}
+.mp-so-nho{font:700 72px/1 'Lora';color:#0E4F49}
+.kn-so{font:700 120px/1 'Lora';color:#0E4F49}.kn-so.sang{color:#F3D27E}.kn-t{font:700 40px/1.25 'Lora';color:#1B2A28}.kn-t.sang{color:#FFFFFF}
+.cam-on{font:600 34px/1.3 'Be Vietnam Pro';color:#F3D27E}
+.so{font:700 120px/1.05 'Lora'}.so.xanh{color:#0E4F49}.so.do{color:#B13A2E}.so-m{font:400 32px/1.4 'Be Vietnam Pro';color:#1B2A28}
+.so-cot{font:700 34px/1 'Lora';color:#1B2A28;text-align:center}.cot-nam{font:700 30px/1.35 'Be Vietnam Pro';color:#1B2A28;text-align:center}
+.cot-nam .do{color:#B13A2E;font-weight:600}.cot-nam .xam{color:#3F4B48;font-weight:600}.cot-nam .xanh{color:#0E4F49;font-weight:600}
+.yagi{font:700 48px/1.1 'Lora';color:#0E4F49}.yagi.do{color:#B13A2E}
+.moc-nam{font:700 44px/1.1 'Lora';color:#0E4F49}
+.trich{font:500 44px/1.5 'Lora';color:#FFFFFF}.trich em{color:#F3D27E}
