@@ -1,10 +1,48 @@
 {
-  "ten": "mẫu 14 — navy + vàng đồng",
-  "huong": "Hào chọn mẫu tham chiếu 14 (18/11/2026): nền navy đậm, dải vàng chéo ở góc lặp mọi slide, ảnh thật cắt chéo có viền vàng, tiêu đề in hoa đậm căn giữa, dòng kết luận chữ có chân, icon nét vàng, số lớn chữ có chân.",
-  "gradient": false, "bongMo": false, "chongAI": true, "boGocToiDa": 4,
-  "bangMau": ["#0B2233", "#061826", "#123247", "#C9A04A", "#EAD08A", "#FFFFFF", "#B9C6CE", "#3C5566", "#E8907F"],
-  "loaiHinh": ["anh-chup", "hoa-tiet", "bieu-do", "net"],
-  "boCuc": ["bia", "mo-phan", "noi-dung", "bang", "so-lon", "trich", "ket"],
-  "tieuDeCoDinh": ["noi-dung", "bang", "so-lon"],
-  "vietTat": {}, "phongPhu": false
+  "ten": "mẫu 2 (+9) — trắng, minh hoạ phẳng thành phố, xanh lá + cam",
+  "huong": "Hào chọn mẫu tham chiếu 2 và 9 bằng bảng cặp bìa + nội dung (18/11/2026). Gốc mẫu 2: nền trắng, mây xanh nhạt, vạch xanh lá mép trên + vạch cam mép dưới, tiêu đề căn giữa đen đậm có từ nhấn xanh lá, icon trắng trong tròn màu, số liệu trong ô cam bo tròn, mở phần có dải thành phố + cỏ + một vật phẳng đúng chủ đề.",
+  "gradient": false,
+  "bongMo": false,
+  "chongAI": true,
+  "boGocToiDa": 60,
+  "bangMau": [
+    "#FFFFFF",
+    "#1E2326",
+    "#4A5257",
+    "#5DA93F",
+    "#9ED48A",
+    "#F39A1E",
+    "#FDE3BC",
+    "#CDEBF5",
+    "#9FD3E6",
+    "#6FBAD6",
+    "#E3F3F9",
+    "#4FA6CF",
+    "#8A5A2B",
+    "#4E9334",
+    "#B5650A",
+    "#3E8A2A"
+  ],
+  "loaiHinh": [
+    "minh-hoa",
+    "hoa-tiet",
+    "bieu-do",
+    "net"
+  ],
+  "boCuc": [
+    "bia",
+    "mo-phan",
+    "noi-dung",
+    "bang",
+    "so-lon",
+    "trich",
+    "ket"
+  ],
+  "tieuDeCoDinh": [
+    "noi-dung",
+    "bang",
+    "so-lon"
+  ],
+  "vietTat": {},
+  "phongPhu": false
 }
