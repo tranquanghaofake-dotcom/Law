@@ -216,7 +216,7 @@ mMoPhan("02", "Thực trạng thị trường bảo hiểm", "Từ tăng trưở
       return lop(`<rect x="${x}" y="${B0 - h}" width="${CW}" height="${h}" rx="8" fill="${mau(n)}"/>`, x, B0 - h, CW, h, `Cột năm ${n}: ${String(v).replace(".", ",")} nghìn tỷ đồng`, "phang", A("rise", t0, 500))
         
         + `<div class="n2-cot-nam" data-t ${A("fade", t0, 300)} style="left:${x - 35}px;top:${B0 + 12}px;width:${CW + 70}px">${n}<br><span class="n2-cot-v">${String(v.toFixed(1)).replace(".", ",")}</span><br><span class="n2-cot-g${giam ? " do" : ""}">${g}</span></div>`; }).join("")
-    + khoi(230, 330, 660, 150, "the-xanh-nhat", "Ô chú thích giai đoạn 2018–2022", A("fade", 2200, 400)) + cap(260, 350, 610, "2018 – 2022: +15 – 24 %/năm", "nhờ bán bảo hiểm qua ngân hàng", "dong-t", "dong-m", 2300)
+    + khoi(230, 330, 580, 150, "the-xanh-nhat", "Ô chú thích giai đoạn 2018–2022", A("fade", 2200, 400)) + cap(260, 350, 530, "2018 – 2022: +15 – 24 %/năm", "nhờ bán bảo hiểm qua ngân hàng", "dong-t", "dong-m", 2300)
     + T("nguon", 120, 1000, 1680, "Theo tài liệu nhóm (số ước tính của Bộ Tài chính); 2024–2025 đối chiếu mof.gov.vn, Cục QLGSBH."), { ex: "data-hero data-khong-hinh" });
 }
 
