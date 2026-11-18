@@ -9,6 +9,18 @@ Minh hoạ trong mẫu Slidesgo do hoạ sĩ Freepik vẽ (Storyset: kiểu Rafi
 - **Không có hình đúng ý** → (1) hình gần nghĩa cùng kiểu (gian lận → cảnh báo, bảo mật); (2) tách một vật khỏi cảnh (SVG: giữ nhóm cần dùng); (3) để số liệu làm hình (biểu đồ, số lớn); (4) slide chữ lớn. **Không** tự vẽ, không trộn ảnh chụp hay thư viện khác.
 - Thẻ phong cách khai `"mienBangMau": ["anh/storyset/"]` (màu trung tính / màu da gốc của hoạ sĩ không bị bắt lỗi).
 
+## Bộ công cụ hình (5 lượt nghiên cứu, bài Nhóm 2, 18/11/2026) — dùng chung, phối theo một ngôn ngữ
+| Công cụ | Dùng khi | Quy tắc phối |
+|---|---|---|
+| `scripts/ghep_canh.js` — tách nhân vật / đồ vật khỏi SVG Storyset (nhóm có tên), ghép cảnh riêng | Cảnh có sẵn không đúng ý (gia đình bố–mẹ–con, quầy ngân hàng ép mua bảo hiểm) · cần nhân vật đứng riêng làm "nút" sơ đồ | Chỉ ghép mảnh **cùng một kiểu** (cùng Rafiki, cùng màu nhấn đã tô). Biển hiệu, chữ tiếng Anh trong cảnh → che bằng mảnh tự vẽ (`{"svg": …}`) |
+| `scripts/danh_dau.js` — cắt đúng đoạn văn bản thật chứa cụm từ + toạ độ vệt dạ quang (pdftotext -bbox) | Trích hợp đồng, luật, bản án: **thay chữ chép lại** bằng ảnh nguyên văn đặt trên tờ giấy | Vệt dạ quang màu nhấn nóng (cam) mờ 0,38, quét (wipe) theo nhịp nói; ≤ 4 cụm / đoạn. Chép đúng chính tả tài liệu ("hủy" ≠ "huỷ") |
+| `scripts/icon_duo.js` — icon hai tông Phosphor (MIT) | Mọi icon trong vòng tròn, nút sơ đồ, dòng gạch | Nét chính màu mực, mảng phụ = màu nhấn hợp nền tròn (nền xanh nhạt → xanh, nền cam nhạt → cam, nền cam → trắng). Không trộn với icon nét mảnh trong một deck |
+| `scripts/blob.js` — mảng nền hữu cơ (cách của thư viện blobs, MIT) | Sau mọi minh hoạ / cảnh ghép đặt trên nền trắng của slide nội dung | Một màu nhạt duy nhất cho cả deck; không dùng ở bìa / mở phần đã có dải nền |
+| `scripts/ve_tay.js` — nét khoanh / gạch chân vẽ tay (cách Rough.js, MIT) | Chỗ mắt cần dừng: con số hoặc khoảng trống là ý chính slide | **Tối đa một nét / slide**, cùng màu với vệt dạ quang (một "ngôn ngữ bút dạ"), vào sau cùng, nằm dưới chữ, không cắt chữ phụ |
+| `scripts/hinh_dem.js` — biểu đồ hình đếm (isotype) | Tỉ lệ khó hình dung ("giảm 43,8 %") → "cứ 10 … còn 5,6" | Một hàng / slide, icon có mảng màu lớn (người, nhà, xe), luôn kèm câu "cứ 10 … thì …" |
+
+**Đã thử và loại:** bản đồ (GeoJSON + d3-geo) cho slide bão Yagi — không trả lời câu hỏi của slide (bồi thường nhanh đến đâu), nguồn dữ liệu giấy phép chưa rõ; **bản đồ Việt Nam toàn quốc bắt buộc thể hiện Hoàng Sa, Trường Sa** — chỉ dùng bản đồ khi "ở đâu" là ý chính và có nguồn giấy phép rõ. Biểu đồ gốc PowerPoint — chỉ tiện sửa số, dấu thập phân đổi theo máy (133.7 / 133,7), không làm slide đẹp hơn (Hào chọn bỏ).
+
 ## Quy tắc 0 — hình chính phải là vật thật của CHÍNH bài này (bài Nhóm 2, 18/11/2026)
 Hào: "ảnh bìa và các vật thể chưa thật sự liên quan đến bài, còn chung chung". Bàn tay nâng nhà mô hình, toà cao tầng, bàn tay ký giấy, hợp đồng vẽ phẳng, người hoạt hình — đặt vào bài bảo hiểm nào cũng được, nên không chứng minh gì.
 **Phép thử**: đổi tên bài sang một đề tài cùng ngành → hình còn dùng được nguyên? Còn → chung chung → thay.

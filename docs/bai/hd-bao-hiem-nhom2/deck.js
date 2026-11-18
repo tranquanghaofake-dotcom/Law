@@ -69,6 +69,7 @@ const blobSau = (x, y, w, hat, t0) => nenBlob(x + w / 2, y + w * 0.5, w * 0.4, w
 // nét khoanh vẽ tay (scripts/ve_tay.js) — tối đa một chỗ mỗi slide, vào sau cùng, đặt trước hộp chữ (nằm dưới chữ)
 const { khoanh } = require("../../../.claude/skills/slide-chuan/scripts/ve_tay.js");
 const vongTay = (cx, cy, rx, ry, hat, t0, alt) => lop(khoanh(cx, cy, rx, ry, { hat, mau: P.cam }), Math.round(cx - rx * 1.15), Math.round(cy - ry * 1.25), Math.round(rx * 2.3), Math.round(ry * 2.5), alt, "net", A("wipe", t0, 700));
+const { hangHinh } = require("../../../.claude/skills/slide-chuan/scripts/hinh_dem.js");
 // icon hai tông Phosphor (scripts/icon_duo.js) khi có trong bảng đổi; mảng phụ lấy màu nhấn hợp với nền tròn
 const { iconDuo } = require("../../../.claude/skills/slide-chuan/scripts/icon_duo.js"), DOI = JSON.parse(fs.readFileSync(path.join(D, "asset", "phosphor", "bang-doi.json"), "utf8"));
 const phuCua = (nen) => (nen === P.cam ? "#FFFFFF" : nen === P.camNhat ? P.cam : P.xanh);
@@ -315,8 +316,13 @@ sec("mo-phan", "Phần II. Nhóm chia thị trường thành các giai đoạn: 
     + T("gach giua", 720, 720, 480, "sai phạm nhiều nhất ở [khâu tư vấn]", A("fade", 1700, 300))
     + lopMui(1220, 600, 1300, 600, "Mũi tên dẫn sang bước 3", A("wipe", 1900, 300))
     // cột 3: số lớn
-    + T("so-to cam", 1320, 380, 480, "−44,5 %", A("fade", 2100, 400)) + T("so-nhan", 1320, 490, 480, "phí khai thác mới nhân thọ", A("fade", 2150, 300))
-    + T("so-to cam", 1320, 600, 480, "−43,8 %", A("fade", 2400, 400)) + T("so-nhan", 1320, 710, 480, "số hợp đồng nhân thọ mới", A("fade", 2450, 300))
+    + T("so-to cam", 1320, 372, 480, "−43,8 %", A("fade", 2100, 400)) + T("so-nhan", 1320, 482, 480, "số hợp đồng nhân thọ mới", A("fade", 2150, 300))
+    // hình đếm: cứ 10 hợp đồng mới năm 2022 → còn ≈ 5,6 năm 2023 (scripts/hinh_dem.js)
+    + (() => { const ic = fs.readFileSync(path.join(D, "asset", "phosphor", "user.svg"), "utf8"), X = 1364, co = 64, c = 18;
+        const h1 = hangHinh(ic, { n: 5, giaTri: 5, x: X, y: 548, co, cach: c, mauDay: P.xanh, id: "h1" }), h2 = hangHinh(ic, { n: 5, giaTri: 0.62, x: X, y: 630, co, cach: c, mauDay: P.xanh, id: "h2" });
+        return lop(h1.svg + h2.svg, X, 548, h1.rong, 146, "Hình đếm: 10 hợp đồng năm 2022, năm 2023 còn khoảng 5,6", "bieu-do", A("wipe", 2500, 900)); })()
+    + T("buoc-mo", 1320, 700, 480, "cứ 10 hợp đồng mới năm 2022, năm 2023 chỉ còn khoảng [5,6]", A("fade", 3000, 300))
+    + T("gach giua", 1320, 806, 480, "phí khai thác mới: [−44,5 %]", A("fade", 3300, 300))
     + nguon("Tài liệu nhóm: [12] Chứng khoán Dầu khí (tỷ trọng); [14] kết luận thanh tra; [15] Hiệp hội Bảo hiểm Việt Nam (năm 2023)."));
 }
 
@@ -413,7 +419,7 @@ sec("trich", "Ngày 01/7/2024 Luật Các tổ chức tín dụng 2024 có hiệ
         + T("cau", cx - 380, 450, 760, dap, A("fade", t0 + 300, 400))
         + ds.map(([ic, s2, nen], j) => dong(ic, cx - 360, 590 + j * 84, 760, s2, t0 + 600 + j * 200, nen)).join(""); }).join("")
     + T("cam-on", 160, 820, 1600, "Cảm ơn thầy cô và các bạn đã lắng nghe", A("fade", 3000, 500))
-    + nguon("Minh hoạ: Illustrations by Storyset (storyset.com) · Biểu tượng: Tabler Icons (giấy phép MIT)."));
+    + nguon("Minh hoạ: Illustrations by Storyset (storyset.com) · Biểu tượng: Phosphor Icons, Tabler Icons (giấy phép MIT)."));
 }
 
 // =================== CSS ===================

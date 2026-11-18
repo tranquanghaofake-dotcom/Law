@@ -23,3 +23,9 @@ Illustrations by Storyset — https://storyset.com (giấy phép Freepik: miễn
 
 - Thêm 18/11/2026: flood, signing-a-contract, lawyer, agreement (kiểu Rafiki, cùng cách tô màu). Ghi công đặt ở dòng nguồn slide 22.
 - Icon Tabler (MIT) tải thêm: cloud-storm, ban, users-group, pig-money, receipt-refund, calendar-due, user-heart, building-hospital, certificate, tie, arrow-down-right, arrow-up-right, circle-check, check, alert-circle, heart-plus.
+
+## Công cụ hình bổ sung (18/11/2026)
+- Icon hai tông: Phosphor Icons (phosphoricons.com, giấy phép MIT), bản duotone 2.1.1 — asset/phosphor/, bảng đổi tên ở bang-doi.json.
+- Cảnh ghép (anh/canh/): ghép từ minh hoạ Storyset family, insurance, lawyer, post-office (kiểu Rafiki) — vẫn ghi công Storyset.
+- Ảnh nguyên văn Điều 4, Điều 10 (anh/goc/dd-*.png): cắt từ tài liệu gốc của nhóm bằng scripts/danh_dau.js.
+- Mảng nền (blob), nét khoanh tay, hình đếm: tự dựng bằng code (cách làm theo thư viện blobs, Rough.js — MIT), không dùng tài nguyên ngoài.
