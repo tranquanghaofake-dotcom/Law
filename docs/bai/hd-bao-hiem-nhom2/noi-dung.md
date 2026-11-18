@@ -15,9 +15,9 @@ Mức: **A** = đối chiếu văn bản chính thức / cơ quan nhà nước �
 - Chủ thể (Điều 1, 2, 8): bên mua, công ty bảo hiểm, người được bảo hiểm, người thụ hưởng (khi NĐBH tử vong), người chỉ định nhận tiền.
 - Phụ lục 1: 5 chương trình, tổng hạn mức quyền lợi chính/người/năm: Đồng 94 tr · Bạc 138 tr · Vàng 230 tr · Bạch Kim 342 tr · Kim Cương 454 tr. Nằm viện ≤ 60 ngày/năm; khám 30 ngày trước, tái khám 30 ngày sau. Phạm vi: Việt Nam.
 - Điều 4: không đóng đủ, đúng hạn → hợp đồng tự động huỷ bỏ, không cần thông báo (trừ thoả thuận khác).
-- Điều 5 thời gian chờ: tai nạn 0 · bệnh thông thường, răng 30 · biến chứng thai sản 90 · hô hấp trẻ ≤ 6 tuổi 180 · bệnh có sẵn/đặc biệt, dây chằng/sụn chêm 365 · sinh con 635 ngày. Tái tục liên tục không chờ lại (trừ phần nâng hạn mức, quyền lợi mới).
+- Điều 5 thời gian chờ: tai nạn 0 · bệnh thông thường, răng 30 · biến chứng thai sản 90 · hô hấp trẻ ≤ 6 tuổi 180 · bệnh có sẵn/đặc biệt, dây chằng/sụn chêm 365 · sinh con 635 ngày — **chỉ thuộc quyền lợi bổ sung Thai sản (điểm d), có từ gói Bạc** (phản biện 18/11/2026). Tái tục liên tục không chờ lại (trừ phần nâng hạn mức, quyền lợi mới).
 - Phụ lục 1 mục 2: trẻ 15 ngày – 3 tuổi, cơ sở tư nhân / khoa quốc tế, tự nguyện: Bảo Việt 70 %, NĐBH 30 %; bệnh viện công điều trị thông thường: không đồng chi trả.
-- Điều 6: báo trước 30 ngày bằng văn bản; BMBH chấm dứt → hoàn 70 % phí thời gian còn lại nếu chưa có chi trả; CTBH chấm dứt → hoàn toàn bộ phí còn lại; gian lận → huỷ ngay, mất quyền lợi, hoàn 70 % nếu chưa bồi thường. Phí còn lại tính theo tỷ lệ ngày.
+- Điều 6: báo trước 30 ngày bằng văn bản; BMBH chấm dứt → hoàn 70 % phí thời gian còn lại nếu chưa có chi trả; CTBH chấm dứt → hoàn toàn bộ phí còn lại; gian lận, trục lợi hoặc không đúng đối tượng (khoản 2) → huỷ ngay, mất quyền lợi, vẫn hoàn 70 % phí còn lại nếu chưa bồi thường; bên mua đã được chi trả mà tự chấm dứt → không hoàn. Phí còn lại tính theo tỷ lệ ngày.
 - Điều 10: chi trả trong 15 ngày làm việc kể từ khi nhận đủ hồ sơ hợp lệ. Phụ lục 1 mục 3: hồ sơ mềm qua BaoViet Direct khi khoản bồi thường ≤ 10 triệu đồng và không phải di sản thừa kế.
 - Điều 7: loại trừ dẫn chiếu sang Chương III Quy tắc bảo hiểm. Điều 11: bảo vệ dữ liệu cá nhân.
 
@@ -32,8 +32,8 @@ Mức: **A** = đối chiếu văn bản chính thức / cơ quan nhà nước �
 | Khai thác mới nhân thọ 2023 | phí −44,5 %, số hợp đồng −43,8 % | gốc [15] (IAV) | G |
 | Bancassurance trong phí khai thác mới nhân thọ | ≈ 20 % (2018) → 40 % (2021) → 45 % (2022) | gốc [12] (PSI) | G |
 | Kết luận thanh tra 30/6/2023 | Prudential, MB Ageas, Sun Life, BIDV MetLife; sai phạm nhiều ở khâu tư vấn | gốc [14] | G |
-| Bão Yagi | thiệt hại ước 12.811 tỷ; tạm ứng 213 tỷ (giữa 10/2024) → 956,5 tỷ (9/1/2025) | gốc [16], [17] | G |
-| 9 tháng 2026 | tổng phí 175,8 nghìn tỷ (+2,4 %); phi nhân thọ 74,1 nghìn tỷ (+15,1 %); nhân thọ 101,7 nghìn tỷ; chi trả 77,9 nghìn tỷ (+13,1 %) | báo cáo KT-XH 9 tháng 2026, dẫn theo anninhthudo.vn, baomoi.com | B |
+| Bão Yagi | thiệt hại ước tính **đến giữa 10/2024** 12.811 tỷ (theo Cục QLGSBH); tạm ứng 213 tỷ (giữa 10/2024) → 956,5 tỷ (9/1/2025) | gốc [16], [17] | G |
+| 9 tháng 2026 | tổng phí 175,8 nghìn tỷ (+2,4 %); phi nhân thọ 74,1 nghìn tỷ (+15,1 %); nhân thọ 101,7 nghìn tỷ, **≈ −4 % theo IAV** (tài liệu gốc mục 2.6, nguồn [22]); chi trả 77,9 nghìn tỷ (+13,1 %) | báo cáo KT-XH 9 tháng 2026, dẫn theo anninhthudo.vn, baomoi.com | B |
 
 ## 4. Lỗi / điểm chưa chắc của tài liệu gốc (báo Hào, không tự sửa im lặng)
 1. **Thiếu nguồn [21], [22]**: mục 2.6 trích [21], [22] nhưng danh mục chỉ đến [19]. Slide ghi nguồn thay thế (báo cáo KT-XH 9 tháng 2026 qua anninhthudo.vn); nhóm cần thêm hai mục vào danh mục.
@@ -42,3 +42,5 @@ Mức: **A** = đối chiếu văn bản chính thức / cơ quan nhà nước �
 4. Lỗi gõ: "cập nhạta" (Chương I, mục 1.c).
 5. **Chương I chỉ mô tả, chưa đối chiếu luật**: chưa xét điều khoản "tự động huỷ khi chậm phí" (Điều 4) hay "hoàn 70 %" (Điều 6) với Luật KDBH 2022. Slide giữ đúng phạm vi tài liệu; gợi ý câu hỏi giảng viên có thể hỏi nằm trong ghi chú slide 7, 10.
 6. Nhãn "Bảng 1 … 2018–2025" nhưng câu dẫn nói "giai đoạn 2022–2025 … bốn năm" — slide chia rõ hai giai đoạn.
+
+7. **Tốc độ 2018 – 2022**: tài liệu gốc ghi 15 – 24 %/năm (Bảng 1: 2018 +24,0 %, 2019 +21,0 %) — slide dùng số công bố này, không dùng phép chia trực tiếp giữa các cột (15 – 20 %).

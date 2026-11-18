@@ -3,8 +3,9 @@
 // trả về ảnh đoạn văn + toạ độ vệt dạ quang từng dòng. Slide đặt ảnh lên "tờ giấy", vệt dạ quang quét (wipe) đúng lúc người nói nhắc tới.
 // Vật thật + nhấn đúng chữ = kiểu hình riêng của bài thuyết trình luật, thay cho chữ trích dẫn chép lại.
 //
-//   node scripts/danh_dau.js <tài_liệu.docx|.pdf> <ra.png> --cau="tự động hủy bỏ" [--cau="trừ khi có thỏa thuận khác"] [--le=1] [--rong=1600] [--dpi=200]
+//   node scripts/danh_dau.js <tài_liệu.docx|.pdf> <ra.png> --cau="tự động hủy bỏ" [--cau="trừ khi có thỏa thuận khác"] [--le=1] [--them=3] [--rong=1600] [--dpi=200]
 //     → <ra.png> + <ra.json>: { rong, cao, trang, vet: [[{x,y,w,h} tỉ lệ 0–1 theo ảnh, từng dòng], …] } (mỗi --cau một mục)
+//   --them: lấy kèm N khối liền sau (các gạch đầu dòng liệt kê của điều khoản).
 //   --le: số dòng lấy thêm trên / dưới cụm từ (mặc định: cả khối đoạn văn chứa cụm từ).
 // Không thấy cụm từ → báo lỗi và in các dòng gần giống nhất (chép đúng chính tả của tài liệu: "hủy" ≠ "huỷ").
 const fs = require("fs"), path = require("path"), os = require("os"), { execFileSync } = require("child_process");
@@ -51,28 +52,31 @@ function goiY(trang, cau) {   // các dòng có nhiều chữ chung nhất với
 }
 
 // vùng cắt (điểm PDF) bao trọn khối chứa các cụm từ (hoặc ± le dòng), cộng lề; vệt dạ quang quy về tỉ lệ 0–1 của vùng cắt
-function vungVaVet(trang, kq, le = null, lePt = 10, leTren = 2) {
-  const p = trang[kq[0].trang], k = p.khoi[kq[0].khoi];
+function vungVaVet(trang, kq, le = null, lePt = 10, leTren = 2, them = 0) {
+  const p = trang[kq[0].trang], k0 = p.khoi[kq[0].khoi], phu = p.khoi.slice(kq[0].khoi + 1, kq[0].khoi + 1 + them).flat();
+  const k = [...k0, ...phu];   // --them=N: lấy kèm N khối ngay sau (gạch đầu dòng, danh sách liệt kê của điều khoản)
   let d0 = 0, d1 = k.length - 1;
-  if (le !== null) { const ds = kq.flatMap((r) => r.dong); d0 = Math.max(0, Math.min(...ds) - le); d1 = Math.min(k.length - 1, Math.max(...ds) + le); }
+  if (le !== null) { const ds = kq.flatMap((r) => r.dong); d0 = Math.max(0, Math.min(...ds) - le); d1 = Math.min(k0.length - 1, Math.max(...ds) + le); }
+  if (them) d1 = k.length - 1;
   const ws = k.slice(d0, d1 + 1).flat();
   const ytren = Math.min(...ws.map((w) => w.y0)), yduoi = Math.max(...ws.map((w) => w.y1));
   // lề trên / dưới không vượt nửa khoảng trống tới dòng liền kề (không dính chân / đầu dòng bên cạnh, đường kẻ phía trên)
-  const truoc = d0 > 0 ? Math.max(...k[d0 - 1].map((w) => w.y1)) : -Infinity, sau = d1 < k.length - 1 ? Math.min(...k[d1 + 1].map((w) => w.y0)) : Infinity;
+  const ke = p.khoi[kq[0].khoi + 1 + them];   // dòng / khối liền sau vùng cắt
+  const truoc = d0 > 0 ? Math.max(...k[d0 - 1].map((w) => w.y1)) : -Infinity, sau = d1 < k.length - 1 ? Math.min(...k[d1 + 1].map((w) => w.y0)) : ke ? Math.min(...ke.flat().map((w) => w.y0)) : Infinity;
   const X0 = Math.min(...ws.map((w) => w.x0)) - lePt, Y0 = Math.max(ytren - leTren, (truoc + ytren) / 2), X1 = Math.max(...ws.map((w) => w.x1)) + lePt, Y1 = Math.min(yduoi + lePt, (sau + yduoi) / 2);
   const W = X1 - X0, H = Y1 - Y0, r = (v) => +v.toFixed(4);
   return { vung: { x: X0 / p.W, y: Y0 / p.H, w: W / p.W, h: H / p.H }, trang: kq[0].trang + 1,
     vet: kq.map((q) => q.hop.map((h) => ({ x: r((h.x0 - 3 - X0) / W), y: r((h.y0 - 2 - Y0) / H), w: r((h.x1 - h.x0 + 6) / W), h: r((h.y1 - h.y0 + 4) / H) }))) };
 }
 
-async function danhDau(vao, ra, cau, { le = null, rong = 1600, dpi = 200 } = {}) {
+async function danhDau(vao, ra, cau, { le = null, rong = 1600, dpi = 200, them = 0 } = {}) {
   const { trangGoc } = require("./trang_goc");
   let pdf = path.resolve(vao);
   if (!/\.pdf$/i.test(pdf)) { const d = fs.mkdtempSync(path.join(os.tmpdir(), "dd-")); execFileSync("soffice", ["--headless", "--convert-to", "pdf", "--outdir", d, pdf], { stdio: "ignore" }); pdf = path.join(d, path.basename(pdf).replace(/\.[^.]+$/, ".pdf")); }
   const trang = docBbox(execFileSync("pdftotext", ["-bbox-layout", pdf, "-"], { maxBuffer: 1 << 28 }).toString());
   const kq = cau.map((c) => { const r = timCau(trang, c); if (!r) throw new Error(`không thấy “${c}”. Gần nhất:\n  - ${goiY(trang, c).join("\n  - ")}`); return r; });
   if (new Set(kq.map((r) => `${r.trang}/${r.khoi}`)).size > 1) throw new Error("các cụm từ nằm ở khối / trang khác nhau — chạy riêng từng cụm");
-  const v = vungVaVet(trang, kq, le);
+  const v = vungVaVet(trang, kq, le, 10, 2, them);
   await trangGoc(pdf, ra, { trang: v.trang, vung: [v.vung.x, v.vung.y, v.vung.w, v.vung.h], rong, dpi });
   // bỏ đường kẻ bảng / khung ở mép trên – dưới (hàng điểm ảnh tối phủ > 50 % bề ngang): nét vẽ, không phải chữ nên toạ độ chữ không tránh được
   const sharp = require("sharp"), { data, info } = await sharp(ra).greyscale().raw().toBuffer({ resolveWithObject: true });
@@ -92,7 +96,7 @@ if (require.main === module) {
   const a = process.argv.slice(2), pos = a.filter((x) => !x.startsWith("--")), cau = a.filter((x) => x.startsWith("--cau=")).map((x) => x.slice(6));
   const f = Object.fromEntries(a.filter((x) => x.startsWith("--") && !x.startsWith("--cau=")).map((x) => { const [k, v] = x.slice(2).split("="); return [k, v ?? true]; }));
   if (pos.length < 2 || !cau.length) { console.error('Dùng: node scripts/danh_dau.js <tài_liệu> <ra.png> --cau="…" [--cau="…"] [--le=1] [--rong=1600]'); process.exit(2); }
-  danhDau(pos[0], pos[1], cau, { le: f.le !== undefined ? +f.le : null, rong: +f.rong || 1600, dpi: +f.dpi || 200 })
+  danhDau(pos[0], pos[1], cau, { le: f.le !== undefined ? +f.le : null, rong: +f.rong || 1600, dpi: +f.dpi || 200, them: +f.them || 0 })
     .then((r) => console.log(`✓ ${pos[1]} (${r.rong}×${r.cao}, trang ${r.trang}) — ${r.vet.map((v, i) => `“${cau[i]}”: ${v.length} dòng`).join("; ")}`))
     .catch((e) => { console.error("✗ " + e.message); process.exit(1); });
 }

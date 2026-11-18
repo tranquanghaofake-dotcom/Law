@@ -30,3 +30,8 @@ test("cắt ± le dòng: lề dưới dừng giữa khoảng trống tới dòng
   const t = docBbox(XHTML), v = vungVaVet(t, [timCau(t, "Hợp đồng")], 0);
   assert.ok(v.vung.y + v.vung.h <= (212 + 220) / 2 / 800 + 1e-9);
 });
+
+test("--them: lấy kèm khối liền sau (gạch đầu dòng)", () => {
+  const t = docBbox(XHTML), q = timCau(t, "Điều 4"), v = vungVaVet(t, [q], null, 10, 2, 1);
+  assert.ok(v.vung.y + v.vung.h > 220 / 800);
+});
