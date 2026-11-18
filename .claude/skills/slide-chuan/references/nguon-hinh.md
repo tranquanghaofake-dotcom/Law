@@ -2,6 +2,13 @@
 
 Vì sao (nghiên cứu 15/11/2026, spec mục 13): mẫu bán slide đẹp nhờ (1) **một hình chính lớn** (30–45 % slide, 2–4 phần tử), (2) **hình do hoạ sĩ vẽ** hoặc ảnh thật, (3) **chữ tương phản** (chữ có chân lớn + chữ không chân), (4) mảng màu lớn. SVG ghép khối bằng code chỉ đạt hình khối đơn giản — không dùng làm hình chính nữa.
 
+## Nguồn minh hoạ chính: Storyset (Hào duyệt 18/11/2026)
+Minh hoạ trong mẫu Slidesgo do hoạ sĩ Freepik vẽ (Storyset: kiểu Rafiki, Bro, Amico, Pana, Cuate). Tự vẽ bằng khối SVG không bao giờ đạt chất lượng đó — đây là nguyên nhân gốc của các bản "hổ lốn" (bài Nhóm 2).
+- `python3 scripts/storyset.py tim <ra> <từ khoá> [--kieu=rafiki]` → bảng xem thử đánh số; `tai <slug/kiểu> <ra.svg> --mau=#hex --bo-nen` → tô lại màu nhấn (mỗi hình chỉ một màu nhấn) và xoá nền phòng mờ.
+- **Một deck = một kiểu + một màu nhấn.** Giấy phép: miễn phí, **bắt buộc ghi công** "Illustrations by Storyset" + link (slide cuối, `ghi-cong.md`); giới hạn lượt tải mỗi ngày.
+- **Không có hình đúng ý** → (1) hình gần nghĩa cùng kiểu (gian lận → cảnh báo, bảo mật); (2) tách một vật khỏi cảnh (SVG: giữ nhóm cần dùng); (3) để số liệu làm hình (biểu đồ, số lớn); (4) slide chữ lớn. **Không** tự vẽ, không trộn ảnh chụp hay thư viện khác.
+- Thẻ phong cách khai `"mienBangMau": ["anh/storyset/"]` (màu trung tính / màu da gốc của hoạ sĩ không bị bắt lỗi).
+
 ## Quy tắc 0 — hình chính phải là vật thật của CHÍNH bài này (bài Nhóm 2, 18/11/2026)
 Hào: "ảnh bìa và các vật thể chưa thật sự liên quan đến bài, còn chung chung". Bàn tay nâng nhà mô hình, toà cao tầng, bàn tay ký giấy, hợp đồng vẽ phẳng, người hoạt hình — đặt vào bài bảo hiểm nào cũng được, nên không chứng minh gì.
 **Phép thử**: đổi tên bài sang một đề tài cùng ngành → hình còn dùng được nguyên? Còn → chung chung → thay.

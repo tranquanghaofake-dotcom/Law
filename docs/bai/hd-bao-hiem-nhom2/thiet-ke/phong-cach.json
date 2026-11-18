@@ -1,5 +1,5 @@
 {
-  "ten": "mẫu 2 (+9) — trắng, minh hoạ phẳng thành phố, xanh lá + cam",
+  "ten": "mẫu 2 — trắng, minh hoạ Storyset Rafiki, xanh lá + cam",
   "huong": "Hào chọn mẫu tham chiếu 2 và 9 bằng bảng cặp bìa + nội dung (18/11/2026). Gốc mẫu 2: nền trắng, mây xanh nhạt, vạch xanh lá mép trên + vạch cam mép dưới, tiêu đề căn giữa đen đậm có từ nhấn xanh lá, icon trắng trong tròn màu, số liệu trong ô cam bo tròn, mở phần có dải thành phố + cỏ + một vật phẳng đúng chủ đề.",
   "gradient": false,
   "bongMo": false,
@@ -21,7 +21,14 @@
     "#8A5A2B",
     "#4E9334",
     "#B5650A",
-    "#3E8A2A"
+    "#3E8A2A",
+    "#A9D8EA",
+    "#3DB5E0",
+    "#EAF3F7",
+    "#8DC67B",
+    "#A9DCF2",
+    "#8FCFEA",
+    "#C46A0A"
   ],
   "loaiHinh": [
     "minh-hoa",
@@ -44,5 +51,8 @@
     "so-lon"
   ],
   "vietTat": {},
-  "phongPhu": false
+  "phongPhu": false,
+  "mienBangMau": [
+    "anh/storyset/"
+  ]
 }

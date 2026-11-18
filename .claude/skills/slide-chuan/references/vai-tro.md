@@ -39,6 +39,8 @@ Cuối cùng: 3 slide khó hiểu nhất, 3 chỗ trông "như AI làm" nhất (
 ```
 Người dựng so cột "slide muốn tôi hiểu" với cột khẳng định trong `kich-ban.md`: lệch ý = lỗi [khó hiểu], sửa slide (không sửa kịch bản cho khớp). Đếm tỉ lệ tóm đúng → hạng **Tự hiểu**.
 
+**Lượt 1b: ĐẶT CẠNH MẪU** (khi người dùng đã chọn mẫu tham chiếu — 18/11/2026). Agent mới `opus` xem slide của mình ở độ phân giải đầy đủ cạnh slide trong mẫu được chọn (`scripts/tham_chieu.py trong`), chấm Thẩm mỹ, Nhất quán, Bố cục, Chữ, Hình minh hoạ, Logic 1–5 và liệt kê điểm thua mẫu kèm cách sửa cụ thể. **Chưa ≥ 4 thì sửa, chưa gửi người dùng.**
+
 **Lượt 2: CHẤM**. Agent tool, **`model: "opus"`**, agent mới (không fork), chạy sau khi `dung.js` sạch và đã sửa theo đọc lạnh. Brief gửi kèm (không gửi lập luận của người dựng):
 ```
 Bạn là người duyệt độc lập một deck bài giảng. Không sửa file. Đọc:

@@ -10,7 +10,7 @@ const ghi = (f, s) => { fs.mkdirSync(path.dirname(f), { recursive: true }); fs.w
 fs.rmSync(path.join(D, "asset", "hinh"), { recursive: true, force: true });
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
 const em = (s) => esc(s).replace(/\[([^\]]+)\]/g, "<em>$1</em>");
-const P = { nen: "#FFFFFF", muc: "#1E2326", phu: "#4A5257", xanh: "#5DA93F", xanhNhat: "#9ED48A", cam: "#F39A1E", camNhat: "#FDE3BC", troi: "#CDEBF5", toa: "#9FD3E6", toa2: "#6FBAD6", may: "#E3F3F9", nuoc: "#4FA6CF" };
+const P = { nen: "#FFFFFF", muc: "#1E2326", phu: "#4A5257", xanh: "#5DA93F", xanhNhat: "#9ED48A", cam: "#F39A1E", camNhat: "#FDE3BC", troi: "#CDEBF5", toa: "#9FD3E6", toa2: "#6FBAD6", may: "#A9D8EA", nuoc: "#3DB5E0", ray: "#EAF3F7", co: "#8DC67B", pho: "#A9DCF2", pho2: "#8FCFEA", camDam: "#C46A0A" };
 const TONG = 22, S2 = [];
 let nL = 0;
 const A = (a, at, dur = 500) => `data-a="${a}" data-at="${at}" data-dur="${dur}"`;
@@ -39,56 +39,65 @@ const benhVien = (cx, day, s = 1) => { let o = `<rect x="${cx - 190 * s}" y="${d
   for (const dx of [-150, -95, 55, 110]) for (const dy of [-280, -200]) o += `<rect x="${cx + dx * s}" y="${day + dy * s}" width="${40 * s}" height="${44 * s}" fill="${P.troi}"/>`;
   o += `<rect x="${cx - 150 * s}" y="${day - 120 * s}" width="${300 * s}" height="${30 * s}" fill="${P.troi}"/><rect x="${cx - 45 * s}" y="${day - 80 * s}" width="${90 * s}" height="${80 * s}" fill="${P.toa2}"/>`; return o; };
 
-// ---------- khung slide ----------
-const vienNoiDung = () => lop(`<rect x="560" y="0" width="1360" height="10" fill="${P.xanh}"/><rect x="0" y="1070" width="1300" height="10" fill="${P.cam}"/>` + may(150, 130, 1) + may(1720, 110, .7), 0, 0, 1920, 1080, "Hình trang trí", "hoa-tiet");
-const dau = (td, ketLuan, so) => `<h1 class="td" data-t data-tieu-de ${A("fade", 0, 500)} style="left:260px;top:70px;width:1400px">${em(td)}</h1>`
-  + `<div class="ket" data-t data-l="ket-${so}" data-alt="Ô kết luận" ${A("rise", 300, 500)} style="left:460px;top:168px;width:1000px">${em(ketLuan)}</div>`
-  + T("so-trang", 1720, 1004, 120, `${so} / ${TONG}`);
-const nguon = (s) => T("nguon", 120, 1004, 1500, s);
+// ---------- khung slide (mẫu 2): vạch xanh lá nhạt thụt vào ~5 %, vạch cam ~95 %, bo tròn; mây phẳng ở góc trống ----------
+const vien = (k = 0, day = true) => lop(`<rect x="${k % 2 ? 120 : 760}" y="48" width="1040" height="13" rx="6.5" fill="${P.xanhNhat}"/>` + (day ? `<rect x="${k % 2 ? 760 : 120}" y="1020" width="1040" height="13" rx="6.5" fill="${P.cam}"/>` : "")
+  + may(k % 2 ? 1700 : 130, 140, 1.3) + may(k % 2 ? 90 : 1740, day ? 930 : 560, 1.1), 0, 0, 1920, 1080, "Hình trang trí", "hoa-tiet");
+// dải đáy chữ ký của mẫu 2: phố xanh nhạt + sông + cỏ (bìa, mở phần)
+const nenDay = () => { const toas = [[0, 110, 150], [120, 90, 110], [220, 120, 190], [350, 90, 130], [450, 140, 210], [600, 100, 150], [710, 120, 180], [840, 90, 120], [940, 130, 200], [1080, 100, 150], [1190, 120, 190], [1320, 90, 130], [1420, 140, 220], [1570, 100, 160], [1680, 120, 190], [1810, 110, 150]];
+  return lop(toas.map(([x, w, h], k) => toaNha(x, w, h, k % 3 === 1 ? P.pho2 : P.pho, 936)).join("") + `<rect x="0" y="936" width="1920" height="18" fill="${P.nuoc}"/><rect x="0" y="954" width="1920" height="126" fill="${P.co}"/>`, 0, 700, 1920, 380, "Hình trang trí: dải phố, sông, cỏ", "hoa-tiet"); };
+// minh hoạ Storyset (kiểu Rafiki, màu nhấn xanh lá) — anh/storyset/, ghi công ở slide cuối và ghi-cong.md
+const minhHoa = (f, x, y, w, alt, t0 = 300) => `<img data-l="mh-${f}" data-loai="minh-hoa" data-alt="${esc(alt)}" ${A("fade", t0, 700)} src="anh/storyset/${f}.svg" style="position:absolute;left:${x}px;top:${y}px;width:${w}px;height:${w}px">`;
+// icon trong tròn cam, nét đậm màu mực (kiểu icon hai tông của mẫu 2)
+const iconTron = (ic, cx, cy, r, alt, ex = "", nen = P.cam) => lop(`<circle cx="${cx}" cy="${cy}" r="${r}" fill="${nen}"/>` + mh.iconNet(D, ic, cx, cy, r * 1.05, P.muc, 3.2), cx - r, cy - r, 2 * r, 2 * r, alt, "net", ex);
+const dau = (td, ketLuan, so) => `<h1 class="td" data-t data-tieu-de ${A("fade", 0, 500)} style="left:260px;top:76px;width:1400px">${em(td)}</h1>`
+  + `<div class="ket" data-t ${A("fade", 300, 500)} style="left:260px;top:178px;width:1400px">${em(ketLuan)}</div>`
+  + T("so-trang", 1720, 962, 120, `${so} / ${TONG}`);
+const nguon = (s) => T("nguon", 120, 962, 1500, s);
 
 // ============ 1 BÌA ============
 sec("bia", "Chào thầy cô và các bạn. Nhóm 2 trình bày hai phần: phân tích mẫu hợp đồng bảo hiểm sức khoẻ Bảo Việt An Gia, và thực trạng thị trường bảo hiểm Việt Nam từ 2018 đến 9 tháng năm 2026.",
-  lop(may(1300, 120, 1.1) + may(1650, 220, .8) + may(260, 90, .7) + thanhPho(860) + cay(1180, 900, 1.1) + cay(1740, 900, .9), 0, 0, 1920, 1080, "Hình trang trí: mây, dải thành phố xanh nhạt, cỏ", "hoa-tiet")
-  + lop(nhaKhien(1470, 900, 1.3), 1180, 470, 580, 440, "Minh hoạ: ngôi nhà mái cam — tài sản, sức khoẻ của gia đình được bảo hiểm che chở", "minh-hoa", A("rise", 400, 700))
-  + `<h1 class="bia-td" data-t data-tieu-de ${A("fade", 0, 600)} style="left:114px;top:110px;width:1000px">Hợp đồng bảo hiểm <em>Bảo Việt An Gia</em></h1>`
-  + T("bia-phu", 122, 370, 1300, "và thị trường bảo hiểm Việt Nam 2018 – 2026", A("fade", 300, 500))
-  + `<div class="nut" data-t data-l="nut-bia" data-alt="Ô nhãn" ${A("rise", 600, 500)} style="left:120px;top:460px">Báo cáo nhóm 2</div>`,
+  vien(0, false) + nenDay() + minhHoa("insurance-rafiki", 1080, 330, 720, "Minh hoạ: nhân viên bảo hiểm che ô cho khách hàng cầm trái tim có chữ thập — bảo hiểm sức khoẻ")
+  + `<h1 class="bia-td" data-t data-tieu-de ${A("fade", 0, 600)} style="left:116px;top:200px;width:940px">Hợp đồng bảo hiểm<br><em>Bảo Việt An Gia</em></h1>`
+  + T("bia-phu", 120, 420, 940, "và thị trường bảo hiểm Việt Nam, 2018 – 2026", A("fade", 300, 500))
+  + `<div class="nut" data-t data-l="nut-bia" data-alt="Ô nhãn" ${A("fade", 500, 500)} style="left:120px;top:510px">Báo cáo nhóm 2</div>`,
   { ex: "data-hero" });
 
 // ============ 3 MỞ PHẦN I ============
 sec("mo-phan", "Phần I. Mẫu hợp đồng Bảo Việt An Gia là hợp đồng bảo hiểm sức khoẻ của Tổng Công ty Bảo hiểm Bảo Việt: 13 điều và Phụ lục 1 bảng quyền lợi. Nhóm đọc sáu nhóm điều khoản.",
-  lop(may(1500, 150, 1) + may(300, 260, .7) + thanhPho(860) + cay(380, 900, 1) + cay(1560, 900, 1.1), 0, 0, 1920, 1080, "Hình trang trí: mây, dải thành phố, cỏ", "hoa-tiet")
-  + lop(benhVien(1000, 900, 1.15), 760, 500, 480, 400, "Minh hoạ: bệnh viện có dấu chữ thập — đối tượng của bảo hiểm sức khoẻ", "minh-hoa", A("rise", 400, 700))
-  + lop(`<circle cx="260" cy="250" r="130" fill="${P.cam}"/>`, 130, 120, 260, 260, "Vòng tròn số phần", "hoa-tiet", A("pop", 0, 500))
-  + T("mp-so", 130, 182, 260, "01", A("pop", 100, 500))
-  + `<h1 class="mp-t" data-t data-tieu-de ${A("fade", 200, 600)} style="left:460px;top:150px;width:1300px">Hợp đồng <em>Bảo Việt An Gia</em></h1>`
-  + `<div class="nut" data-t data-l="nut-mp1" data-alt="Ô nhãn" ${A("rise", 500, 500)} style="left:462px;top:270px">Bảo hiểm sức khoẻ · 13 điều · Phụ lục 1</div>`,
+  vien(1, false) + nenDay() + minhHoa("hospital-patient-rafiki", 1040, 330, 740, "Minh hoạ: bệnh nhân điều trị trên giường bệnh — đối tượng của bảo hiểm sức khoẻ")
+  + lop(`<circle cx="270" cy="250" r="110" fill="${P.cam}"/>`, 160, 140, 220, 220, "Vòng tròn số phần", "hoa-tiet", A("pop", 0, 500))
+  + T("mp-so", 160, 196, 220, "01", A("pop", 100, 500))
+  + `<h1 class="mp-t" data-t data-tieu-de ${A("fade", 200, 600)} style="left:416px;top:150px;width:680px">Hợp đồng<br><em>Bảo Việt An Gia</em></h1>`
+  + `<div class="nut" data-t data-l="nut-mp1" data-alt="Ô nhãn" ${A("fade", 500, 500)} style="left:420px;top:380px">Bảo hiểm sức khoẻ · 13 điều · Phụ lục 1</div>`,
   { trans: "push" });
 
 // ============ 8 THỜI GIAN CHỜ ============
-{ const TG = [["Tai nạn", 0], ["Bệnh thông thường, điều trị răng", 30], ["Biến chứng thai sản", 90], ["Bệnh hô hấp, trẻ đến 6 tuổi", 180], ["Bệnh có sẵn, đặc biệt; dây chằng", 365], ["Sinh con (quyền lợi thai sản)", 635]], X = 860, K = 760 / 635;
+{ const TG = [["Tai nạn", 0], ["Bệnh thông thường, điều trị răng", 30], ["Biến chứng thai sản", 90], ["Bệnh hô hấp, trẻ đến 6 tuổi", 180], ["Bệnh có sẵn, đặc biệt; dây chằng", 365], ["Sinh con (quyền lợi thai sản)", 635]], X = 880, K = 700 / 635;
   sec("noi-dung", "Thời gian chờ là khoảng quyền lợi chưa phát sinh hiệu lực chi trả, để chặn việc mua bảo hiểm khi đã biết trước bệnh. Tai nạn được bảo hiểm ngay; bệnh thông thường chờ 30 ngày; biến chứng thai sản 90; bệnh hô hấp ở trẻ đến 6 tuổi 180; bệnh có sẵn, bệnh đặc biệt, tổn thương dây chằng hay sụn chêm 365. Dài nhất là quyền lợi sinh con: 635 ngày, gần 21 tháng. Tái tục liên tục thì không phải chờ lại.",
-    vienNoiDung() + dau("Thời gian [chờ]", "Sinh con phải chờ 635 ngày — gần 21 tháng", 8)
-    + lop(`<path d="M${X} 300 V900" stroke="${P.phu}" stroke-width="2"/><path d="M${X + 365 * K} 300 V900" stroke="${P.cam}" stroke-width="3" stroke-dasharray="10 8"/>`, X - 2, 300, Math.round(365 * K) + 6, 600, "Trục 0 ngày và vạch mốc 1 năm", "bieu-do", A("fade", 400, 300))
+    vien(0) + dau("Thời gian [chờ]", "Tai nạn được chi trả ngay; sinh con phải chờ [635 ngày], gần 21 tháng", 8)
+    + lop(`<path d="M${X + 365 * K} 300 V900" stroke="${P.cam}" stroke-width="3" stroke-dasharray="10 8"/>`, X + Math.round(365 * K) - 3, 300, 6, 600, "Vạch mốc 1 năm", "bieu-do", A("fade", 400, 300))
     + T("moc", X + 365 * K + 14, 296, 160, "1 năm", A("fade", 500, 300))
-    + TG.map(([ten, d], k) => { const y = 336 + k * 92, w = Math.round(d * K), t0 = 600 + k * 220, dai = d >= 365;
-      return T("nhan-dong", 200, y + 8, 640, ten, A("fade", t0, 300))
-        + lop(d ? `<rect x="${X}" y="${y + 8}" width="${w}" height="52" rx="26" fill="${dai ? P.cam : P.xanh}"/>` : `<circle cx="${X + 26}" cy="${y + 34}" r="20" fill="${P.xanh}"/>`, X, y + 8, Math.max(w, 52), 52, `Thanh ${ten}: ${d} ngày`, "bieu-do", A("wipe", t0, 500))
-        + T(`so-thanh${dai ? " cam" : ""}`, X + Math.max(w, 52) + 18, y + 12, 520, d ? `${d} ngày` : "0 ngày — chi trả ngay", A("fade", t0 + 300, 300)); }).join("")
+    + TG.map(([ten, d], k) => { const y = 330 + k * 96, w = Math.max(Math.round(d * K), 0), t0 = 600 + k * 220, dai = d >= 365;
+      return T("nhan-dong", 200, y + 8, 650, ten, A("fade", t0, 300))
+        + lop(`<rect x="${X}" y="${y + 8}" width="700" height="52" rx="26" fill="${P.ray}"/>` + (d ? `<rect x="${X}" y="${y + 8}" width="${Math.max(w, 52)}" height="52" rx="26" fill="${dai ? P.cam : P.xanh}"/>` : `<circle cx="${X + 26}" cy="${y + 34}" r="20" fill="${P.xanh}"/>`), X, y + 8, 700, 52, `Thanh ${ten}: ${d} ngày`, "bieu-do", A("wipe", t0, 500))
+        + T("so-thanh", X + 720, y + 12, 300, d ? `${d} ngày` : "0 ngày", A("fade", t0 + 300, 300)); }).join("")
     + nguon("Hợp đồng Bảo Việt An Gia, Điều 5. Tái tục liên tục: không phải chờ lại, trừ phần hạn mức nâng thêm."));
 }
 
-// ============ 10 CHẤM DỨT ============
-{ const C = [["user", "Bên mua chấm dứt", "70%", "phí của thời gian còn lại — chỉ khi chưa có khoản chi trả nào"], ["building", "Bảo Việt chấm dứt", "100%", "phí của thời gian còn lại — dù đã có khiếu nại hay chưa"], ["alert-triangle", "Gian lận, trục lợi", "0 – 70%", "huỷ ngay, mất toàn bộ quyền lợi; hoàn 70% chỉ khi chưa bồi thường"]];
-  sec("noi-dung", "Điều 6. Hai bên đều được chấm dứt, nhưng phải báo trước 30 ngày bằng văn bản. Bên mua chấm dứt thì chỉ được hoàn 70 % phí của thời gian còn lại, và chỉ khi chưa có khoản chi trả nào. Bảo Việt chấm dứt thì phải hoàn đủ 100 %. Nếu gian lận, trục lợi, hợp đồng bị huỷ ngay, mất toàn bộ quyền lợi; chỉ hoàn 70 % khi chưa có bồi thường. Câu hỏi mở: mức hoàn 70 % có cân bằng quyền lợi hai bên không.",
-    vienNoiDung() + dau("Chấm dứt [hợp đồng]", "Bên mua tự chấm dứt chỉ được hoàn 70% phí còn lại", 10)
-    + C.map(([ic, ten, so, mo], k) => { const cx = 400 + k * 560, t0 = 500 + k * 300;
-      return lop(`<circle cx="${cx}" cy="380" r="60" fill="${k === 2 ? P.cam : P.xanh}"/>` + mh.iconNet(D, ic, cx, 380, 64, "#FFFFFF", 3), cx - 60, 320, 120, 120, `Biểu tượng ${ten}`, "net", A("pop", t0, 400))
-        + T("cot-ten", cx - 240, 466, 480, ten, A("fade", t0 + 100, 400))
-        + `<div class="so-o" data-t data-l="so-${k}" data-alt="Ô số" ${A("rise", t0 + 200, 400)} style="left:${cx - 180}px;top:536px;width:360px">${esc(so)}</div>`
-        + T("cot-mo", cx - 230, 680, 460, mo, A("fade", t0 + 300, 400)); }).join("")
-    + T("chu-thich", 260, 890, 1400, "Cả hai bên phải báo trước 30 ngày bằng văn bản. Phí còn lại tính theo tỷ lệ số ngày còn lại.", A("fade", 1600, 400))
-    + nguon("Hợp đồng Bảo Việt An Gia, Điều 6 khoản 1 và khoản 2."));
+// ============ 10 CHẤM DỨT — hai cột đối xứng + dải cảnh báo ============
+{ const C = [["user", "Bên mua chấm dứt", "70%", "phí của thời gian còn lại", "chỉ khi chưa có khoản chi trả nào"], ["building", "Bảo Việt chấm dứt", "100%", "phí của thời gian còn lại", "dù đã có khiếu nại hay chưa"]];
+  sec("noi-dung", "Điều 6. Hai bên đều được chấm dứt, nhưng phải báo trước 30 ngày bằng văn bản. Bên mua chấm dứt thì chỉ được hoàn 70 % phí của thời gian còn lại, và chỉ khi chưa có khoản chi trả nào. Bảo Việt chấm dứt thì phải hoàn đủ 100 %. Riêng trường hợp gian lận, trục lợi thì không phải chấm dứt mà là huỷ bỏ: hợp đồng bị huỷ ngay, mất toàn bộ quyền lợi. Câu hỏi mở: mức hoàn 70 % có cân bằng quyền lợi hai bên không.",
+    vien(1) + dau("Chấm dứt [hợp đồng]", "Tự chấm dứt hợp đồng, bên mua mất [30%] phí của thời gian còn lại", 10)
+    + C.map(([ic, ten, so, mo, dk], k) => { const cx = 600 + k * 720, t0 = 500 + k * 300;
+      return iconTron(ic, cx, 360, 64, `Biểu tượng ${ten}`, A("pop", t0, 400))
+        + T("cot-ten", cx - 300, 448, 600, ten, A("fade", t0 + 100, 400))
+        + T(`so-lon${k ? "" : " cam"}`, cx - 300, 500, 600, so, `data-dl ${A("fade", t0 + 200, 400)}`)
+        + T("cot-mo", cx - 300, 632, 600, mo, A("fade", t0 + 300, 400)) + T("cot-dk", cx - 300, 680, 600, dk, A("fade", t0 + 350, 400)); }).join("")
+    + lop(`<path d="M960 340 V720" stroke="${P.may}" stroke-width="4" stroke-linecap="round"/>`, 956, 340, 8, 380, "Vạch chia hai cột", "hoa-tiet")
+    + `<div class="canh-bao" data-l="canh-bao" data-alt="Dải cảnh báo" ${A("rise", 1300, 500)} style="left:260px;top:780px;width:1400px;height:120px"></div>`
+    + iconTron("alert-triangle", 340, 840, 40, "Biểu tượng cảnh báo", A("pop", 1400, 400), "#FFFFFF")
+    + T("canh-bao-chu", 410, 802, 1220, "Gian lận, trục lợi: hợp đồng bị [huỷ ngay], mất toàn bộ quyền lợi — chỉ hoàn 70% phí nếu chưa có bồi thường", A("fade", 1500, 400))
+    + nguon("Hợp đồng Bảo Việt An Gia, Điều 6 khoản 1 (chấm dứt) và khoản 2 (huỷ bỏ do gian lận, trục lợi)."));
 }
 
 // =================== CSS ===================
@@ -96,22 +105,23 @@ ghi(path.join(D, "style.css"), `section.s{background:${P.nen};color:${P.muc}}
 section.s > div, section.s > h1{position:absolute}
 [data-t]{text-wrap:pretty}
 em{font-style:normal;color:#3E8A2A}
-.bia-td{position:absolute;font:800 96px/1.08 'Be Vietnam Pro';color:${P.muc};text-wrap:balance}
-.bia-phu{font:700 44px/1.25 'Be Vietnam Pro';color:${P.phu}}
-.nut{background:${P.cam};color:${P.muc};font:700 30px/1 'Be Vietnam Pro';padding:20px 34px;border-radius:40px;white-space:nowrap}
-.mp-so{font:800 120px/1 'Be Vietnam Pro';color:${P.muc};text-align:center}
-.mp-t{position:absolute;font:800 84px/1.1 'Be Vietnam Pro';color:${P.muc}}
-.td{font:800 64px/1.1 'Be Vietnam Pro';color:${P.muc};text-align:center}
-.ket{background:${P.camNhat};border:3px solid ${P.cam};border-radius:40px;padding:16px 30px;font:700 34px/1.3 'Be Vietnam Pro';color:${P.muc};text-align:center}
+.nut{background:${P.cam};color:${P.muc};font:700 30px/1 'Be Vietnam Pro';padding:18px 32px;border-radius:40px;white-space:nowrap}
+.bia-td{position:absolute;font:800 90px/1.1 'Be Vietnam Pro';color:${P.muc};text-wrap:balance}
+.bia-phu{font:600 40px/1.3 'Be Vietnam Pro';color:${P.phu}}
+.mp-so{font:800 110px/1 'Be Vietnam Pro';color:${P.muc};text-align:center}
+.mp-t{position:absolute;font:800 74px/1.1 'Be Vietnam Pro';color:${P.muc};text-wrap:balance}
+.td{font:800 72px/1.1 'Be Vietnam Pro';color:${P.muc};text-align:center}
+.ket{font:600 36px/1.35 'Be Vietnam Pro';color:${P.phu};text-align:center}.ket em{color:#B5650A}
 .so-trang{font:600 24px/1 'Be Vietnam Pro';color:${P.phu};text-align:right}
 .nguon{font:400 24px/1.4 'Be Vietnam Pro';color:${P.phu}}
 .moc{font:700 28px/1.2 'Be Vietnam Pro';color:#B5650A}
-.nhan-dong{font:600 32px/1.3 'Be Vietnam Pro';color:${P.muc};text-align:right}
-.so-thanh{font:800 34px/1.2 'Be Vietnam Pro';color:${P.muc}}.so-thanh.cam{color:#B5650A}
-.cot-ten{font:800 36px/1.2 'Be Vietnam Pro';color:${P.muc};text-align:center}
-.so-o{background:${P.cam};border-radius:60px;font:800 72px/1.6 'Be Vietnam Pro';color:${P.muc};text-align:center}
-.cot-mo{font:400 30px/1.4 'Be Vietnam Pro';color:${P.phu};text-align:center}
-.chu-thich{font:500 30px/1.4 'Be Vietnam Pro';color:${P.phu};text-align:center}
+.nhan-dong{font:600 34px/1.3 'Be Vietnam Pro';color:${P.muc};text-align:right}
+.so-thanh{font:800 36px/1.2 'Be Vietnam Pro';color:${P.muc}}
+.cot-ten{font:800 40px/1.2 'Be Vietnam Pro';color:${P.muc};text-align:center}
+.so-lon{font:800 110px/1.1 'Be Vietnam Pro';color:#3E8A2A;text-align:center}.so-lon.cam{color:${P.camDam}}
+.cot-mo{font:600 34px/1.3 'Be Vietnam Pro';color:${P.muc};text-align:center}.cot-dk{font:400 32px/1.3 'Be Vietnam Pro';color:${P.phu};text-align:center}
+.canh-bao{background:${P.camNhat};border:3px solid ${P.cam};border-radius:60px}
+.canh-bao-chu{font:600 32px/1.35 'Be Vietnam Pro';color:${P.muc}}.canh-bao-chu em{color:#B5650A}
 `);
 fs.rmSync(path.join(D, "slides"), { recursive: true, force: true });
 S2.forEach((h, k) => ghi(path.join(D, "slides", `${String(k + 1).padStart(2, "0")}.html`), h));
