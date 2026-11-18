@@ -1,35 +1,23 @@
-section.s{background:#FFFFFF;color:#1B2A28}section.s.dam{background:#0E4F49;color:#FFFFFF}
+section.s{background:#0B2233;color:#FFFFFF}
 section.s > div, section.s > h1{position:absolute}
 [data-t]{text-wrap:pretty}
-em{font-style:normal;color:#0E4F49;font-weight:inherit}em.do{color:#B13A2E}.dam em{color:#F3D27E}
-.dau{display:flex;flex-direction:column;gap:14px}
-.nhan{font:700 26px/1.2 'Be Vietnam Pro';color:#0E4F49}.nhan.sang{color:#FFFFFF}
-.td{font:700 54px/1.18 'Lora';color:#1B2A28;text-wrap:balance}.td.sang{color:#FFFFFF}
-.phu{font:400 30px/1.4 'Be Vietnam Pro';color:#3F4B48}.phu.sang{color:#DDECE7}
-.so-trang{font:600 24px/1.2 'Be Vietnam Pro';color:#3F4B48;text-align:right}.so-trang.sang{color:#DDECE7}
-.nguon{font:400 24px/1.4 'Be Vietnam Pro';color:#3F4B48}.nguon.sang{color:#DDECE7}
-.chu-anh{font:400 24px/1.4 'Be Vietnam Pro';color:#3F4B48}
-.bia-td{position:absolute;font:700 76px/1.12 'Lora';color:#1B2A28}.bia-m{font:400 32px/1.45 'Be Vietnam Pro';color:#3F4B48}
-.khung-giay{border:2px solid #8C9491}
-.cot-t{font:700 32px/1.25 'Be Vietnam Pro';color:#1B2A28}.cot-t.xanh{color:#0E4F49}.cot-t.do{color:#B13A2E}
-.dong{font:400 32px/1.4 'Be Vietnam Pro';color:#1B2A28}.dong-hep{font:600 30px/1.3 'Be Vietnam Pro';color:#1B2A28}
-.cap > b,.cap > span{display:block}.cap > span{margin-top:8px}
-.dong-dam{font:700 32px/1.3 'Be Vietnam Pro';color:#1B2A28}.dong-m{font:400 30px/1.4 'Be Vietnam Pro';color:#3F4B48}.dong-m.sang{color:#DDECE7}
-.bh{font:700 28px/1.3 'Be Vietnam Pro';color:#3F4B48}.phai{text-align:right}
-.o{font:400 30px/1.35 'Be Vietnam Pro';color:#1B2A28}.o.dau{font-weight:700}.o.nhan{color:#0E4F49;font-weight:700}.o.lon{font:700 44px/1.1 'Lora';color:#0E4F49}
-.thu-so{font:700 64px/1 'Lora';color:#3F4B48}.thu-so.nhan{color:#B13A2E}
-.y-nghia{font:600 32px/1.4 'Be Vietnam Pro';color:#0E4F49}
-.so-thanh{font:700 34px/1.2 'Lora';color:#1B2A28}.so-thanh.do{color:#B13A2E}.giua-ch{text-align:center}
-.moc{font:600 28px/1.2 'Be Vietnam Pro';color:#1B2A28}
-.trong-thanh{font:700 34px/1.2 'Be Vietnam Pro';color:#1B2A28}.trong-thanh.sang{color:#FFFFFF}
-.mp-so{font:700 220px/1 'Lora';color:#F3D27E}.mp-t{position:absolute;font:700 72px/1.12 'Lora';color:#FFFFFF}.mp-m{font:400 32px/1.45 'Be Vietnam Pro';color:#DDECE7}
-.mp-dieu{font:700 30px/1.3 'Be Vietnam Pro';color:#FFFFFF}.mp-noi{font:400 30px/1.3 'Be Vietnam Pro';color:#FFFFFF}
-.mp-so-nho{font:700 72px/1 'Lora';color:#0E4F49}
-.kn-so{font:700 120px/1 'Lora';color:#0E4F49}.kn-so.sang{color:#F3D27E}.kn-t{font:700 40px/1.25 'Lora';color:#1B2A28}.kn-t.sang{color:#FFFFFF}
-.cam-on{font:600 34px/1.3 'Be Vietnam Pro';color:#F3D27E}
-.so{font:700 120px/1.05 'Lora'}.so.xanh{color:#0E4F49}.so.do{color:#B13A2E}.so-m{font:400 32px/1.4 'Be Vietnam Pro';color:#1B2A28}
-.so-cot{font:700 34px/1 'Lora';color:#1B2A28;text-align:center}.cot-nam{font:700 30px/1.35 'Be Vietnam Pro';color:#1B2A28;text-align:center}
-.cot-nam .do{color:#B13A2E;font-weight:600}.cot-nam .xam{color:#3F4B48;font-weight:600}.cot-nam .xanh{color:#0E4F49;font-weight:600}
-.yagi{font:700 48px/1.1 'Lora';color:#0E4F49}.yagi.do{color:#B13A2E}
-.moc-nam{font:700 44px/1.1 'Lora';color:#0E4F49}
-.trich{font:500 44px/1.5 'Lora';color:#FFFFFF}.trich em{color:#F3D27E}
+em{font-style:normal;color:#EAD08A}
+.gach{background:#C9A04A}
+.nhan{font:700 28px/1.2 'Be Vietnam Pro';color:#EAD08A;letter-spacing:.12em;text-transform:uppercase}
+.bia-td{position:absolute;font:800 76px/1.08 'Be Vietnam Pro';color:#FFFFFF;text-transform:uppercase;text-wrap:balance}.bia-td .vang{color:#EAD08A}
+.bia-m{font:400 32px/1.45 'Lora';color:#B9C6CE}
+.mp-so{font:700 220px/1 'Lora';color:#C9A04A}
+.mp-t{position:absolute;font:800 64px/1.1 'Be Vietnam Pro';color:#FFFFFF;text-transform:uppercase}
+.mp-m{font:400 32px/1.45 'Lora';color:#B9C6CE}
+.muc{font:400 30px/1.3 'Be Vietnam Pro';color:#FFFFFF;border-left:4px solid #C9A04A;padding-left:18px}.muc span{color:#B9C6CE}
+.td{font:800 56px/1.1 'Be Vietnam Pro';color:#FFFFFF;text-transform:uppercase;text-align:center;letter-spacing:.02em}
+.ket{font:400 38px/1.35 'Lora';color:#B9C6CE;text-align:center}
+.so-trang{font:600 24px/1 'Be Vietnam Pro';color:#B9C6CE;text-align:right}
+.nguon{font:400 24px/1.4 'Be Vietnam Pro';color:#B9C6CE}
+.moc{font:600 28px/1.2 'Be Vietnam Pro';color:#EAD08A}
+.nhan-dong{font:500 32px/1.3 'Be Vietnam Pro';color:#FFFFFF;text-align:right}
+.so-thanh{font:700 34px/1.2 'Lora';color:#FFFFFF}.so-thanh.vang{color:#EAD08A}
+.cot-ten{font:800 32px/1.2 'Be Vietnam Pro';color:#FFFFFF;text-transform:uppercase;text-align:center;letter-spacing:.04em}
+.cot-so{font:700 110px/1.1 'Lora';color:#EAD08A;text-align:center}
+.cot-mo{font:400 30px/1.4 'Be Vietnam Pro';color:#B9C6CE;text-align:center}
+.chu-thich{font:400 30px/1.4 'Lora';color:#B9C6CE;text-align:center;font-style:italic}

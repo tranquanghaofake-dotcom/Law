@@ -1,46 +1,10 @@
 {
-  "ten": "biên tập học thuật",
-  "huong": "Biên tập học thuật (Hào chọn 18/11/2026): nền trắng; hình chính là trang hợp đồng gốc cắt đúng điều khoản, khoanh bằng khung màu; biểu đồ và bảng kẻ ngang dựng bằng code; chữ Lora cho tiêu đề và số, Be Vietnam Pro cho thân; không thẻ, chip, bóng, icon trang trí.",
-  "gradient": false,
-  "bongMo": false,
-  "chongAI": true,
-  "boGocToiDa": 4,
-  "bangMau": [
-    "#FFFFFF",
-    "#1B2A28",
-    "#3F4B48",
-    "#8C9491",
-    "#0E4F49",
-    "#2C7A6C",
-    "#946512",
-    "#E2A52E",
-    "#B13A2E",
-    "#F3D27E",
-    "#DDECE7"
-  ],
-  "loaiHinh": [
-    "tai-lieu",
-    "bieu-do",
-    "net"
-  ],
-  "boCuc": [
-    "bia",
-    "mo-phan",
-    "noi-dung",
-    "bang",
-    "so-lon",
-    "trich",
-    "ket"
-  ],
-  "tieuDeCoDinh": [
-    "noi-dung",
-    "bang",
-    "so-lon"
-  ],
-  "vietTat": {
-    "MB": "tên riêng doanh nghiệp MB Ageas",
-    "BIDV": "tên riêng doanh nghiệp BIDV MetLife"
-  },
-  "phongPhu": false,
-  "ghiChuNguong": "Hướng biên tập: khoảng trắng là chủ ý; ngưỡng đếm của da_dang / phong_phu chỉ là cảnh báo."
+  "ten": "mẫu 14 — navy + vàng đồng",
+  "huong": "Hào chọn mẫu tham chiếu 14 (18/11/2026): nền navy đậm, dải vàng chéo ở góc lặp mọi slide, ảnh thật cắt chéo có viền vàng, tiêu đề in hoa đậm căn giữa, dòng kết luận chữ có chân, icon nét vàng, số lớn chữ có chân.",
+  "gradient": false, "bongMo": false, "chongAI": true, "boGocToiDa": 4,
+  "bangMau": ["#0B2233", "#061826", "#123247", "#C9A04A", "#EAD08A", "#FFFFFF", "#B9C6CE", "#3C5566", "#E8907F"],
+  "loaiHinh": ["anh-chup", "hoa-tiet", "bieu-do", "net"],
+  "boCuc": ["bia", "mo-phan", "noi-dung", "bang", "so-lon", "trich", "ket"],
+  "tieuDeCoDinh": ["noi-dung", "bang", "so-lon"],
+  "vietTat": {}, "phongPhu": false
 }

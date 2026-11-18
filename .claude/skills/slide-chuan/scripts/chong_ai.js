@@ -3,8 +3,8 @@
 //   1. KHỐI CHÌM: khối có nền riêng (thẻ, bảng, panel, ô) ≥ 1,5 % slide mà ranh giới với thứ nằm dưới < 3 : 1 — cả nền khối lẫn viền
 //      (WCAG 1.4.11 cho thành phần không phải chữ). Thẻ trắng trên nền kem, panel bạc hà trên nền kem (≈ 1,1 : 1) là "hoà lẫn".
 //      Sửa: viền ≥ 2 px đậm, hoặc nền khối đậm hẳn, hoặc bỏ khối (chữ đứng thẳng trên nền + kẻ ngang).
-//   2. VẺ AI (tắt bằng "chongAI": false): bo góc > boGocToiDa (mặc định 8 px) ở khối lớn · bóng đổ · > 2 nhãn chữ in hoa giãn cách
-//      trên một slide ("chip" khắp nơi). Ba thứ này là chữ ký của slide mẫu do AI dựng.
+//   2. VẺ AI (tắt bằng "chongAI": false): bo góc > boGocToiDa (mặc định 8 px) ở khối lớn · bóng đổ · > 2 "chip" (nhãn in hoa giãn chữ có nền màu)
+//      trên một slide. Ba thứ này là chữ ký của slide mẫu do AI dựng.
 //   3. VIẾT TẮT CHƯA ĐỊNH NGHĨA: chữ in hoa 2–6 ký tự (NĐBH, TCTD, QLGSBH…) xuất hiện trên slide mà trong deck không có
 //      "(NĐBH)" / "NĐBH:" / "NĐBH là" và không có trong thẻ "vietTat": {"OTP": "mã xác thực một lần"}. Số hiệu văn bản
 //      (46/2023/NĐ-CP, 08/2022/QH15) và số La Mã được bỏ qua.
@@ -36,7 +36,7 @@ function thuThapChongAI() {
     });
     let chipInHoa = 0; const chu = [];
     for (const t of s.querySelectorAll("[data-t]")) { if (t.querySelector("[data-t]")) continue; const c = (t.textContent || "").trim().replace(/\s+/g, " "); if (!c) continue; chu.push(c);
-      const cs = getComputedStyle(t); if (cs.textTransform === "uppercase" && parseFloat(cs.letterSpacing) > 0.5 && c.split(" ").length <= 6) chipInHoa++; }
+      const cs = getComputedStyle(t); if (cs.textTransform === "uppercase" && parseFloat(cs.letterSpacing) > 0.5 && c.split(" ").length <= 6 && coNen(cs.backgroundColor)) chipInHoa++; }   // "chip" = nhãn in hoa CÓ NỀN; tiêu đề cột in hoa không nền là kiểu chữ hợp lệ (mẫu 14)
     out.push({ slide: i + 1, khoi, chipInHoa, chu });
   });
   return out;
