@@ -40,7 +40,10 @@ const benhVien = (cx, day, s = 1) => { let o = `<rect x="${cx - 190 * s}" y="${d
   o += `<rect x="${cx - 150 * s}" y="${day - 120 * s}" width="${300 * s}" height="${30 * s}" fill="${P.troi}"/><rect x="${cx - 45 * s}" y="${day - 80 * s}" width="${90 * s}" height="${80 * s}" fill="${P.toa2}"/>`; return o; };
 
 // ---------- khung slide (mẫu 2): vạch xanh lá nhạt thụt vào ~5 %, vạch cam ~95 %, bo tròn; mây phẳng ở góc trống ----------
-const vien = (k = 0, day = true) => lop(`<rect x="${k % 2 ? 120 : 760}" y="48" width="1040" height="13" rx="6.5" fill="${P.xanhNhat}"/>` + (day ? `<rect x="${k % 2 ? 760 : 120}" y="1020" width="1040" height="13" rx="6.5" fill="${P.cam}"/>` : "")
+// thanh tiến độ ở đáy (thay vạch cam trang trí): phần đã qua tô cam, khe trắng chia phần I (slide 1–13) / phần II (14–22)
+const tienDo = (n, X = 120, W = 1680, H = 12, Y = 1022) => { const ranh = X + Math.round((W * 13) / TONG), toi = X + Math.round((W * n) / TONG);
+  return `<rect x="${X}" y="${Y}" width="${W}" height="${H}" rx="${H / 2}" fill="#DADFE2"/><rect x="${X}" y="${Y}" width="${toi - X}" height="${H}" rx="${H / 2}" fill="${P.cam}"/><rect x="${ranh - 4}" y="${Y - 4}" width="8" height="${H + 8}" fill="#FFFFFF"/>`; };
+const vien = (k = 0, day = true) => lop(`<rect x="${k % 2 ? 120 : 760}" y="48" width="1040" height="13" rx="6.5" fill="${P.xanhNhat}"/>` + (day ? tienDo(S2.length + 1) : "")
   + may(k % 2 ? 1700 : 130, 140, 1.3) + may(k % 2 ? 90 : 1740, day ? 930 : 560, 1.1), 0, 0, 1920, 1080, "Hình trang trí", "hoa-tiet");
 // dải đáy chữ ký của mẫu 2: phố xanh nhạt + sông + cỏ (bìa, mở phần)
 const nenDay = () => { const toas = [[0, 110, 150], [120, 90, 110], [220, 120, 190], [350, 90, 130], [450, 140, 210], [600, 100, 150], [710, 120, 180], [840, 90, 120], [940, 130, 200], [1080, 100, 150], [1190, 120, 190], [1320, 90, 130], [1420, 140, 220], [1570, 100, 160], [1680, 120, 190], [1810, 110, 150]];
@@ -262,9 +265,10 @@ sec("mo-phan", "Phần II. Nhóm chia thị trường thành các giai đoạn: 
   { trans: "push" });
 
 // ============ 15 DOANH THU PHÍ 2018 – 2025 — cột ============
-{ const D8 = [[2018, 133.7], [2019, 160.2], [2020, 184.7], [2021, 216.0], [2022, 251.3], [2023, 227.1, "−8,02 %"], [2024, 227.5, "−0,26 %"], [2025, 237.2, "+3,96 %"]], X0 = 250, DX = 196, CW = 128, Y = 880, KS = 1.8;
+{ const D8 = [[2018, 133.7], [2019, 160.2], [2020, 184.7], [2021, 216.0], [2022, 251.3], [2023, 227.1, "−8,02 %"], [2024, 227.5, "−0,26 %"], [2025, 237.2, "+3,96 %"]], X0 = 250, DX = 196, CW = 128, Y = 840, KS = 1.6;
+  const SK = { 2023: "thanh tra", 2024: "cấm bán kèm", 2025: "sửa luật" };
   const mau = (n) => (n === 2023 || n === 2024 ? P.cam : P.xanh);   // cam = năm giảm, xanh = năm tăng
-  sec("noi-dung", "Giai đoạn 2019 – 2022 doanh thu phí tăng 15 – 20 % mỗi năm, từ 133,7 lên 251,3 nghìn tỷ đồng — gần gấp đôi — nhờ bùng nổ bán bảo hiểm qua ngân hàng. Năm 2023 doanh thu giảm 8,02 % — năm đầu tiên đi xuống trong cả giai đoạn. Năm 2024 đi ngang, năm 2025 tăng lại gần 4 %. Lưu ý: tốc độ tăng giảm là số cơ quan quản lý công bố, so với số liệu đã điều chỉnh của năm trước, nên lệch nhẹ so với phép chia trực tiếp giữa các cột.",
+  sec("noi-dung", "Giai đoạn 2019 – 2022 doanh thu phí tăng 15 – 20 % mỗi năm, từ 133,7 lên 251,3 nghìn tỷ đồng — gần gấp đôi — nhờ bùng nổ bán bảo hiểm qua ngân hàng. Năm 2023 doanh thu giảm 8,02 % — năm đầu tiên đi xuống trong cả giai đoạn. Năm 2024 đi ngang, năm 2025 tăng lại gần 4 %. Dòng dưới trục nối mỗi năm với sự kiện chính: 2023 thanh tra bán bảo hiểm qua ngân hàng, 2024 luật cấm bán kèm, 2025 Quốc hội sửa Luật Kinh doanh bảo hiểm — ba slide tiếp theo đi vào từng sự kiện. Lưu ý: tốc độ tăng giảm là số cơ quan quản lý công bố, so với số liệu đã điều chỉnh của năm trước, nên lệch nhẹ so với phép chia trực tiếp giữa các cột.",
     vien(1) + dau("Doanh thu phí [đi đâu] sau 2022?", "Gần gấp đôi trong 2018 – 2022, rồi 2023 [giảm 8 %], đi ngang 2024", 15)
     + lop(`<path d="M${X0} 352 V340 H${X0 + 4 * DX + CW} V352" stroke="${P.xanh}" stroke-width="4" fill="none"/>`, X0, 338, 4 * DX + CW, 16, "Ngoặc giai đoạn tăng nóng 2018 – 2022", "bieu-do", A("fade", 1500, 300))
     + T("moc xanh", X0, 290, 4 * DX + CW, "tăng nóng: +15 – 20 % mỗi năm", A("fade", 1500, 300))
@@ -272,7 +276,8 @@ sec("mo-phan", "Phần II. Nhóm chia thị trường thành các giai đoạn: 
       return lop(`<rect x="${x}" y="${Y - h}" width="${CW}" height="${h}" fill="${mau(n)}"/>`, x, Y - h, CW, h, `Cột ${n}: ${String(v).replace(".", ",")} nghìn tỷ đồng`, "bieu-do", A("rise", t0, 400))
         + T("so-cot", x - 30, Y - h - 46, CW + 60, String(v.toFixed(1)).replace(".", ","), A("fade", t0 + 200, 300))
         + T("nam", x - 20, Y + 10, CW + 40, String(n), A("fade", t0, 300))
-        + (tg ? T(`tang${tg[0] === "−" ? " am" : ""}`, x - 34, 290, CW + 68, tg, A("fade", t0 + 300, 300)) : ""); }).join("")
+        + (tg ? T(`tang${tg[0] === "−" ? " am" : ""}`, x - 34, 290, CW + 68, tg, A("fade", t0 + 300, 300)) : "")
+        + (SK[n] ? T("su-kien", x - 34, Y + 54, CW + 68, SK[n], A("fade", 2200 + k * 100, 300)) : ""); }).join("")
     + lop(`<path d="M${X0 - 20} ${Y} H${X0 + 7 * DX + CW + 20}" stroke="${P.phu}" stroke-width="3"/>`, X0 - 20, Y - 2, 7 * DX + CW + 40, 4, "Trục ngang", "bieu-do")
     + nguon("Nghìn tỷ đồng. 2018 – 2023: tài liệu nhóm [5] – [10]; 2024: Bộ Tài chính; 2025: Cục Quản lý, giám sát bảo hiểm."));
 }
@@ -382,16 +387,19 @@ sec("trich", "Ngày 01/7/2024 Luật Các tổ chức tín dụng 2024 có hiệ
     + nguon("Số ước tính 9 tháng 2026, báo cáo tình hình kinh tế – xã hội (dẫn theo anninhthudo.vn, baomoi.com)."));
 }
 
-// ============ 22 KẾT LUẬN ============
-{ const K3 = [["Đọc kỹ ràng buộc", "An Gia minh bạch, chi trả nhanh — nhưng thời gian chờ, đồng chi trả, chậm phí là huỷ"], ["Niềm tin là tài sản", "2023: bán sai cách qua ngân hàng kéo cả thị trường đi xuống"], ["Luật siết, thị trường hồi", "cấm bán kèm từ 2024, sửa luật 2026; phi nhân thọ dẫn dắt tăng trưởng"]];
-  sec("ket", "Kết luận. Một, hợp đồng Bảo Việt An Gia chặt chẽ về hình thức, quyền lợi linh hoạt, chi trả nhanh, nhưng có nhiều ràng buộc người mua phải tự đọc. Hai, năm 2023 cho thấy niềm tin là tài sản của ngành: bán sai cách qua ngân hàng kéo cả thị trường đi xuống. Ba, khung pháp lý đã siết việc bán hàng, và thị trường đang phục hồi nhờ phi nhân thọ. Nhóm cảm ơn thầy cô và các bạn đã lắng nghe.",
-    vien(0) + dau("Nhóm rút ra [ba điều]", "Từ một hợp đồng đến cả thị trường", 22)
-    + K3.map(([ten, mo], k) => { const cx = 360 + k * 600, t0 = 300 + k * 500;
-      return lop(`<circle cx="${cx}" cy="350" r="56" fill="${P.cam}"/>`, cx - 56, 294, 112, 112, "Vòng tròn số", "hoa-tiet", A("pop", t0, 300))
-        + T("so-tron nho", cx - 56, 322, 112, String(k + 1), A("pop", t0, 300))
-        + T("buoc-ten", cx - 260, 430, 520, ten, A("fade", t0 + 100, 300)) + T("buoc-mo", cx - 260, 480, 520, mo, A("fade", t0 + 150, 300)); }).join("")
-    + [660, 1260].map((x) => lop(`<path d="M${x} 330 V600" stroke="${P.may}" stroke-width="4" stroke-linecap="round"/>`, x - 4, 330, 8, 270, "Vạch chia cột", "hoa-tiet")).join("")
-    + T("cam-on", 160, 780, 1600, "Cảm ơn thầy cô và các bạn đã lắng nghe", A("fade", 2000, 500))
+// ============ 22 KẾT LUẬN — trả lời đúng hai câu hỏi ở slide 2 (khép vòng) ============
+{ const C = [["01", "Hợp đồng An Gia bảo vệ người mua đến đâu?", "Rộng, minh bạch — nhưng nhiều ràng buộc", [["check", "5 gói 94 – 454 triệu; chi trả ≤ 15 ngày làm việc", "#DDEFD5"], ["alert-circle", "chờ đến [635 ngày], đồng chi trả 30 %, trễ phí là huỷ", P.camNhat]]],
+    ["02", "Thị trường 2018 – 2026 lên hay xuống?", "Lên nhanh, gãy năm 2023, nay hồi lại", [["trending-down", "bán sai qua ngân hàng → 2023 giảm 8 %", P.camNhat], ["trending-up", "luật siết; phi nhân thọ [+15,1 %] (9 tháng 2026)", "#DDEFD5"]]]];
+  sec("ket", "Quay lại hai câu hỏi ở đầu bài. Một: hợp đồng Bảo Việt An Gia bảo vệ người mua khá rộng và minh bạch — năm gói từ 94 đến 454 triệu, chi trả trong 15 ngày làm việc — nhưng có nhiều ràng buộc người mua phải tự đọc: thời gian chờ đến 635 ngày, đồng chi trả 30 % cho trẻ nhỏ ở cơ sở tư, chậm phí là hợp đồng tự huỷ. Hai: thị trường tăng nhanh đến 2022, gãy năm 2023 vì bán sai cách qua ngân hàng, rồi hồi lại khi luật siết việc bán hàng và phi nhân thọ dẫn dắt tăng trưởng. Nhóm cảm ơn thầy cô và các bạn đã lắng nghe.",
+    vien(0) + dau("Trả lời [hai câu hỏi]", "Quay lại câu hỏi đặt ra ở đầu bài", 22)
+    + lop(`<path d="M960 300 V760" stroke="${P.may}" stroke-width="4" stroke-linecap="round"/>`, 956, 300, 8, 460, "Vạch chia hai phần", "hoa-tiet")
+    + C.map(([so, hoi, dap, ds], k) => { const cx = 520 + k * 880, t0 = 300 + k * 1200;
+      return lop(`<circle cx="${cx}" cy="330" r="50" fill="${P.cam}"/>`, cx - 50, 280, 100, 100, "Vòng tròn số phần", "hoa-tiet", A("pop", t0, 300))
+        + T("so-tron nho", cx - 50, 304, 100, so, A("pop", t0, 300))
+        + T("buoc-mo", cx - 380, 400, 760, hoi, A("fade", t0 + 100, 300))
+        + T("cau", cx - 380, 450, 760, dap, A("fade", t0 + 300, 400))
+        + ds.map(([ic, s2, nen], j) => dong(ic, cx - 360, 590 + j * 84, 760, s2, t0 + 600 + j * 200, nen)).join(""); }).join("")
+    + T("cam-on", 160, 820, 1600, "Cảm ơn thầy cô và các bạn đã lắng nghe", A("fade", 3000, 500))
     + nguon("Minh hoạ: Illustrations by Storyset (storyset.com) · Biểu tượng: Tabler Icons (giấy phép MIT)."));
 }
 
@@ -435,6 +443,7 @@ em{font-style:normal;color:#3E8A2A}
 .nam{font:600 28px/1.2 'Be Vietnam Pro';color:${P.phu};text-align:center}.nam.trai{font:800 40px/1.2 'Encode Sans';color:${P.muc}}
 .tang{font:800 30px/1.2 'Encode Sans';color:#3E8A2A;text-align:center}.tang.am{color:${P.camDam}}
 .moc.xanh{color:#3E8A2A}
+.su-kien{font:700 28px/1.2 'Be Vietnam Pro';color:#9A5207;text-align:center}.su-kien-nhan{font:600 28px/1.2 'Be Vietnam Pro';color:${P.phu};text-align:right}
 .so-to{font:800 96px/1.1 'Encode Sans';color:${P.muc};text-align:center}.so-to.cam{color:${P.camDam}}.so-to.xanh{color:#3E8A2A}.so-to.lon{font-size:128px}
 .so-nhan{font:600 30px/1.3 'Be Vietnam Pro';color:${P.phu};text-align:center}
 .dieu{font:400 28px/1.3 'Be Vietnam Pro';color:${P.phu}}

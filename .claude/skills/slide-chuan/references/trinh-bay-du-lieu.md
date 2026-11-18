@@ -9,6 +9,9 @@ Mẫu tham chiếu chỉ cho **giọng hình** (màu, font, nét minh hoạ). C�
 3. **Thời hạn, mốc → trục thời gian vẽ đúng tỉ lệ thật**: khoảng trống dài tự nói ý chính (365 → 635 ngày), không cần câu giải thích. Mốc dày → chú thích so le trên/dưới, nối bằng đường dẫn; mỗi mốc: icon + số lớn + nhãn ≤ 4 từ.
 4. **Một hình kể một ý**: bỏ hình phụ khó hiểu (lịch 21 ô, biểu tượng không nhãn). Thử: che tiêu đề, người xem có tự đọc ra ý chính từ hình không.
 5. **Nhãn một dòng**: nhãn xuống dòng lẻ chữ ("điều / trị răng") → rút từ, không thu cỡ chữ.
+6. **Biểu đồ kể nguyên nhân**: gắn sự kiện ngay dưới cột / điểm liên quan ("2023 — thanh tra", "2024 — cấm bán kèm") để biểu đồ nối sang các slide giải thích sau đó.
+7. **Khép vòng**: slide mở bài đặt 1–3 câu hỏi; slide kết trả lời đúng các câu đó, cùng bố cục (cùng số 01/02, cùng vị trí) — không kết bằng "ba điều rút ra" chung chung.
+8. **Biết đang ở đâu**: vạch đáy làm thanh tiến độ (phần đã qua tô màu nhấn, khe trắng chia phần) thay cho vạch trang trí tĩnh.
 
 ## 1. Bảng chọn: thông tin nào → kiểu nào
 | Loại thông tin | Kiểu nên dùng (mã ở mục 2) | Tránh |
