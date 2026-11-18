@@ -50,7 +50,7 @@ Bảng, mỗi slide một dòng:
 - Bản ghi lựa chọn: A / B / C kèm ảnh, khuyến nghị.
 
 ## 5. Bộ bố cục mẫu + cổng thẩm mỹ
-Viết 8–12 hàm bố cục trong `deck.js` theo `bo-cuc.md`, dựng 6–8 slide mẫu phủ các bố cục chính, tờ so sánh với mẫu tham chiếu, người duyệt độc lập chấm **Thẩm mỹ ≥ 4 và Nhất quán ≥ 4** → mới sang bước 6–7. Không đạt thì sửa bố cục mẫu.
+Viết 8–12 hàm bố cục trong `deck.js` theo `bo-cuc.md`, dựng 6–8 slide mẫu phủ các bố cục chính (hàm hình dùng chung: `scripts/bo_hinh.js`), phản biện B (hình) chấm **Thẩm mỹ ≥ 4 và Nhất quán ≥ 4** → mới sang bước 6–7. Không đạt thì sửa bố cục mẫu.
 
 ### (cũ) Làm mẫu 3–4 slide
 Bìa · một slide khái niệm · một sơ đồ / so sánh · một slide số liệu hoặc bài tập — dựng ra PPTX bằng `scripts/dung.js`, sạch lỗi máy, glance test 3 giây.
@@ -74,7 +74,7 @@ Bìa · một slide khái niệm · một sơ đồ / so sánh · một slide s�
 1. Máy: `dung.js` sạch.
 2. Nhìn: mở mọi `tong-N.jpg` và slide nghi ngờ (`h-NN.jpg`); đi qua `soat.md` mục 1.
 3. **Đọc lạnh** (`vai-tro.md`, lượt 1): người duyệt chỉ xem ảnh, tóm ý từng slide; lệch ý → sửa slide. Cảnh báo ⚑ của máy xét ở bước này.
-4. **Người duyệt độc lập** (lượt 2): gọi agent mới, `model: "opus"`, theo mẫu ở `vai-tro.md`; gửi kèm **tờ so sánh** (`scripts/to_so_sanh.js`: 6–10 slide tiêu biểu — bìa, mở chương, bảng, sơ đồ, số liệu — đặt cạnh mẫu tham chiếu cùng loại) và **bảng xem thử asset**; nhận bảng điểm rubric + danh sách lỗi.
+4. **Phản biện kép** (`vai-tro.md`, lượt 2): hai agent `opus` song song — A nội dung (đối chiếu tài liệu gốc), B hình (thẩm mỹ, trình bày dữ liệu, PPTX). Kiểm từng góp ý với nguồn rồi mới sửa.
 5. Sửa → dựng lại → nhìn lại. Ghi điểm, lỗi, cách sửa vào `nhat-ky.md`.
 Lỗi cần đánh đổi (cắt nội dung, đổi phong cách) → bản ghi lựa chọn gửi người dùng, không tự quyết.
 

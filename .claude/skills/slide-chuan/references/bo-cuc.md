@@ -25,7 +25,7 @@ Như một mẫu bán slide: thiết kế bố cục một lần, mọi slide l�
 - Không bóng đổ, không bo góc lớn, không gradient; mảng màu phẳng chỉ dùng cho khối nhấn (một hàng bảng, một ô kết luận).
 
 ## 4. Cổng thẩm mỹ trước khi dàn ra cả deck
-Làm 6–8 slide mẫu phủ các bố cục chính (bìa, mở phần, sơ đồ, số lớn, bảng, trích luật, câu hỏi) → tờ so sánh với mẫu tham chiếu → người duyệt độc lập chấm **Thẩm mỹ ≥ 4 và Nhất quán ≥ 4** → mới dàn 40+ slide. Không đạt: sửa bố cục mẫu, không vá từng slide.
+Làm 6–8 slide mẫu phủ các bố cục chính (bìa, mở phần, sơ đồ, số lớn, bảng, trích luật, câu hỏi) → người dùng xem, phản biện B (hình) chấm **Thẩm mỹ ≥ 4 và Nhất quán ≥ 4** → mới dàn cả deck. Không đạt: sửa bố cục mẫu, không vá từng slide.
 
 ## 5. Dấu hiệu hổ lốn (soát bằng mắt)
 - Đặt 9 slide cạnh nhau (ảnh tổng): thấy > 2 "giọng" hình (ảnh thật + hoạt hình + đồ hoạ phẳng…) → hổ lốn.
@@ -47,16 +47,11 @@ Viết thành hằng số / hàm trong `deck.js`, không để từng slide tự
 - **Ảnh quét**: cắt sát tranh, bỏ viền giấy và viền máy quét trước khi tô hai màu; chú thích ảnh neo theo đáy (`bottom`), không theo `top`, để chú thích hai dòng không tràn.
 - **Icon**: chọn icon trọn hình ở cỡ lớn (car-crash bị cắt nửa trông như hỏng → `scale` cho trách nhiệm); không có icon tô đặc duy nhất giữa bộ icon nét.
 
-## 7. Học từ mẫu người dùng chọn — đẹp = hệ thống lặp có kỷ luật (bài Nhóm 2, 18/11/2026)
-Hai lần sai liền: bản "khối phẳng" bị chê **"AI, xấu, hoà vào nền"**; bản sửa sang "biên tập tối giản" (bỏ hết khối, hoạ tiết, hình; tiêu đề câu dài) bị chê **"quá xấu"** — trông như trang Word. Hào không mô tả được cái đẹp nhưng **chọn được bằng mắt**: mẫu Slidesgo số 12, 14, 20 (bảng tham chiếu đánh số). Quy tắc rút từ slide bên trong của ba mẫu đó:
-- **Chọn phong cách theo chủ đề, bằng bảng tham chiếu** — không có hướng mặc định. Bước 4: dựng bảng 16–20 bìa mẫu chuyên nghiệp cùng chủ đề, đánh số (`scripts/tham_chieu.py`), người dùng chọn 2–3 số → tải slide bên trong của mẫu được chọn → rút quy tắc đo được → thẻ phong cách. Mẫu chỉ để học, không chép hình / bố cục.
-- **Tiêu đề ngắn, một dòng** (≤ 7 chữ, chữ trưng bày to: in hoa đậm hoặc có chân), cùng một chỗ mọi slide. **Kết luận** của slide là một **dòng nổi bật** riêng trong thân (số lớn, câu nhấn có thanh màu) — Hào chọn 18/11/2026. Không viết tiêu đề là câu hai dòng.
-- **Một họ hoạ tiết lặp ở mọi slide** (mẫu 14: dải vàng chéo ở góc; mẫu 12: mảng tròn xám ở góc; mẫu 20: bánh răng mờ + chấm cam) — đổi góc / cỡ theo bố cục. Đây là thứ nối deck thành một, **không** phải "hoạ tiết lấp chỗ". Hoạ tiết không nằm dưới chữ.
-- **Một họ hình xuyên suốt**: ảnh thật cùng cách cắt khung + viền nhấn (14), hoặc minh hoạ cùng một bộ, cùng màu (12, 20). Lặp lại cùng một vật ở nhiều slide là bình thường khi cùng vai.
-- **Bảng màu hẹp**: nền (1) + chữ (1) + màu nhấn (1–2). Mẫu 14: navy đậm, vàng đồng, trắng.
-- **Ít chữ, nhiều khoảng trống**: 2–4 cột ngắn, mỗi cột đầu là icon nhỏ cùng bộ cùng màu nhấn, tên cột đậm, 1–2 dòng mô tả. Số lớn đi với thanh nhãn màu ngay dưới.
-- **Ranh giới rõ**: khối, bảng, khung phải tách nền ≥ 3 : 1 (máy: ◐ khối chìm) — lỗi "hoà vào nền" của bản khối phẳng là panel bạc hà trên nền kem, không phải do có khối.
-- Vẫn tránh: thẻ bo góc lớn + bóng mờ, chip in hoa rải khắp, huy hiệu icon đặt đầu mỗi dòng cho có, hình chung chung không liên quan nội dung (máy: ◇ vẻ AI).
+## 7. Mẫu tham chiếu cho GIỌNG HÌNH, không cho cách trình bày (bài Nhóm 2, 18/11/2026)
+Người dùng chọn phong cách bằng mắt từ bảng mẫu đánh số (`scripts/tham_chieu.py capdoi`: mỗi mẫu một cặp bìa + slide nội dung). Từ mẫu chỉ lấy: **bảng màu hẹp** (nền + chữ + 1–2 nhấn), **font**, **nét minh hoạ**, **một họ hoạ tiết lặp** nối deck thành một. Cách trình bày từng slide chọn theo câu hỏi người nghe (`trinh-bay-du-lieu.md` mục 0) — Hào: "thứ tôi muốn không phải độ giống mẫu mà là đẹp hơn, dễ hiểu".
+- Tiêu đề một dòng, cùng chỗ mọi slide; dòng dưới là câu trả lời ngắn.
+- Ranh giới rõ: khối, bảng, khung tách nền ≥ 3 : 1 (máy: ◐ khối chìm).
+- Tránh: thẻ bo góc lớn + bóng, chip in hoa rải khắp, icon đầu dòng cho có, hình chung chung (máy: ◇ vẻ AI).
 
 ## 8. Chữ dễ đọc **và tự hiểu được** (sửa 18/11/2026)
 Lỗi bài Nhóm 2: ép "≤ 45 chữ / slide" là lỗi chặn giao → cắt chữ đến cụt ("theo uỷ quyền", "khi NĐBH tử vong", "Nhân thọ chịu đòn nặng nhất") — gọn mà vô nghĩa. Thứ tự ưu tiên mới: **hiểu được > đọc được > ít chữ**.

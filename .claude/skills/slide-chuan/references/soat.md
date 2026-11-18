@@ -15,7 +15,7 @@
 
 Thêm cho hình: **hình là chính sự vật** (không ẩn dụ phải giải thích); **tỉ lệ hình = tỉ lệ số liệu** khi hình chở số; **một phong cách** cho cả deck.
 
-## 2. Rubric cả deck (người duyệt độc lập chấm 1–5, kèm lý do)
+## 2. Rubric cả deck (phản biện kép chấm 1–5, kèm lý do — A: Nội dung, Mạch lạc, Dễ hiểu, Tự hiểu, Hình đúng bài · B: còn lại)
 | Hạng | 5 | 3 | 1 |
 |---|---|---|---|
 | Nội dung | đúng, đủ mục tiêu, mọi nhận định có nguồn | vài chỗ thiếu nguồn / thiếu ý | sai luật, sai số |
@@ -27,7 +27,7 @@ Thêm cho hình: **hình là chính sự vật** (không ẩn dụ phải giải
 | **Chống vẻ AI** (`bo-cuc.md` mục 7) | trông như trang báo cáo chuyên ngành: kẻ ngang, nền trắng, khối chỉ khi màu có nghĩa và tách nền rõ | còn vài chip / thẻ bo / panel nhạt | thẻ bo góc + bóng + chip in hoa + huy hiệu icon khắp deck; khối tan vào nền |
 | **Hình đúng bài** (`nguon-hinh.md` quy tắc 0) | hình chính là tài liệu / số liệu / sự vật của chính bài, có khoanh chỗ đang nói | vài ảnh minh hoạ chung chung | hình đổi sang bài khác vẫn dùng được |
 | **Dễ đọc** (`bo-cuc.md` mục 8) | đọc được từ cuối lớp trên máy chiếu: thân bài ≥ 30 px, ≥ 7 : 1; ít chữ nhưng không cụt | chữ xám nhạt nhỏ, đoạn dài, slide đặc chữ |
-| **Thẩm mỹ** (so với bảng tham chiếu) | đứng cạnh mẫu chuyên nghiệp không lạc tông: thứ bậc rõ, cân bằng, căn theo lưới, khoảng thở đều, có nhịp; **đa dạng trong hệ thống**: nền, kiểu bảng, hình chính đổi theo vai của nội dung (không theo hạn ngạch) | sạch nhưng đơn điệu: một nền phẳng suốt deck, bảng một kiểu, cùng vài hình dán lại nhiều slide | lệch lưới, chật / trống bất thường, hình sai tỉ lệ, đổi nền / màu ngẫu nhiên không theo vai |
+| **Thẩm mỹ** | cùng giọng hình với mẫu đã chọn, không cần giống bố cục mẫu: thứ bậc rõ, cân bằng, căn theo lưới, khoảng thở đều, có nhịp; **đa dạng trong hệ thống**: nền, kiểu bảng, hình chính đổi theo vai của nội dung (không theo hạn ngạch) | sạch nhưng đơn điệu: một nền phẳng suốt deck, bảng một kiểu, cùng vài hình dán lại nhiều slide | lệch lưới, chật / trống bất thường, hình sai tỉ lệ, đổi nền / màu ngẫu nhiên không theo vai |
 Giao khi mọi hạng ≥ 4 — kể cả Nhất quán, Thẩm mỹ, **Tự hiểu, Chống vẻ AI, Hình đúng bài** (PPTEval dùng Nội dung / Thiết kế / Mạch lạc, thang 1–5 — arXiv 2501.03936).
 
 ## 3. Máy kiểm (`scripts/dung.js`) — đọc thông báo thế nào

@@ -6,84 +6,27 @@
 //   node deck.js && node ../../../.claude/skills/slide-chuan/scripts/dung.js . --ten=hop-dong-bao-hiem-nhom2
 const fs = require("fs"), path = require("path");
 const D = __dirname, mh = require("./minh-hoa.js");
-const ghi = (f, s) => { fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, s); };
-fs.rmSync(path.join(D, "asset", "hinh"), { recursive: true, force: true });
-const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
-const em = (s) => esc(s).replace(/\[(\d+)\]/g, "&#91;$1&#93;").replace(/\[([^\]]+)\]/g, "<em>$1</em>");   // [12] = số tài liệu nguồn, giữ nguyên
 const P = { nen: "#FFFFFF", muc: "#1E2326", phu: "#4A5257", xanh: "#5DA93F", xanhNhat: "#9ED48A", cam: "#F39A1E", camNhat: "#FDE3BC", troi: "#CDEBF5", toa: "#9FD3E6", toa2: "#6FBAD6", may: "#A9D8EA", nuoc: "#3DB5E0", ray: "#EAF3F7", co: "#8DC67B", pho: "#A9DCF2", pho2: "#8FCFEA", camDam: "#C46A0A" };
 const TONG = 22, S2 = [];
-let nL = 0;
-const A = (a, at, dur = 500) => `data-a="${a}" data-at="${at}" data-dur="${dur}"`;
-const lop = (body, x, y, w, h, alt, loai = "hoa-tiet", ex = "") => { const f = `l${String(++nL).padStart(2, "0")}.svg`;
-  ghi(path.join(D, "asset", "hinh", f), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${x} ${y} ${w} ${h}" width="${w}" height="${h}">${body}</svg>`);
-  return `<img data-l="lop-${nL}" data-loai="${loai}" data-alt="${esc(alt)}" ${ex} src="asset/hinh/${f}" style="position:absolute;left:${x}px;top:${y}px;width:${w}px;height:${h}px">`; };
-const T = (cls, x, y, w, s, ex = "") => `<div class="${cls}" data-t ${ex} style="left:${x}px;top:${y}px;width:${w}px">${em(s)}</div>`;
+// bộ hình dùng chung của skill: A, T, lop, ảnh cảnh ghép, văn bản thật + dạ quang, blob, khoanh tay, icon hai tông, hình đếm
+const { soLop, ghi, esc, em, A, lop, T, tienDo: tienDoChung, minhHoa, canh, canhGiua, giay, nenBlob, blobSau, vongTay, iconTron, lopMui, dong, hangHinh } =
+  require("../../../.claude/skills/slide-chuan/scripts/bo_hinh.js")({ D, P: { ...P, blob: "#E8F3E2" }, tong: TONG, chiaPhan: [13], iconNet: mh.iconNet });
 const sec = (mau, notes, inner, { ex = "", trans = "fade" } = {}) => S2.push(`<section class="s" data-mau="${mau}" data-nen="N1" ${ex} data-trans="${trans}" data-dur="600" data-notes="${esc(notes)}">\n${inner}\n</section>`);
 
-// ---------- vật phẳng của bài (cùng một nét: khối phẳng, không viền, 2–3 tông) ----------
+
+// ---------- khung slide: vạch xanh lá nhạt mép trên, thanh tiến độ ở đáy; mây và dải phố chỉ ở bìa / mở phần ----------
 const may = (x, y, s) => `<g fill="${P.may}"><ellipse cx="${x}" cy="${y}" rx="${46 * s}" ry="${22 * s}"/><ellipse cx="${x + 40 * s}" cy="${y - 14 * s}" rx="${40 * s}" ry="${28 * s}"/><ellipse cx="${x + 82 * s}" cy="${y}" rx="${44 * s}" ry="${20 * s}"/><rect x="${x - 40 * s}" y="${y}" width="${164 * s}" height="${18 * s}" rx="${9 * s}"/></g>`;
 const toaNha = (x, w, h, mau, day) => { let o = `<rect x="${x}" y="${day - h}" width="${w}" height="${h}" fill="${mau}"/>`;
   for (let r = day - h + 18; r < day - 22; r += 26) for (let c = x + 12; c < x + w - 14; c += 22) o += `<rect x="${c}" y="${r}" width="10" height="14" fill="#FFFFFF" opacity=".55"/>`; return o; };
-// dải thành phố + sông + cỏ ở đáy slide (motif của mẫu 2)
-const thanhPho = (y0 = 860) => { const toas = [[0, 120, 190], [130, 90, 140], [230, 130, 230], [370, 100, 170], [480, 150, 260], [640, 110, 180], [760, 130, 220], [900, 90, 150], [1000, 140, 250], [1150, 110, 190], [1270, 130, 230], [1410, 100, 160], [1520, 150, 270], [1680, 110, 190], [1800, 120, 220]];
-  return toas.map(([x, w, h], k) => toaNha(x, w, h, k % 3 === 1 ? P.toa2 : P.toa, y0)).join("")
-    + `<rect x="0" y="${y0}" width="1920" height="26" fill="${P.nuoc}"/><rect x="0" y="${y0 + 26}" width="1920" height="${1080 - y0 - 26}" fill="${P.xanh}"/><rect x="0" y="${y0 + 26}" width="1920" height="14" fill="${P.xanhNhat}"/>`; };
-const cay = (x, day, s = 1) => `<rect x="${x - 6 * s}" y="${day - 70 * s}" width="${12 * s}" height="${70 * s}" fill="#8A5A2B"/><circle cx="${x}" cy="${day - 100 * s}" r="${46 * s}" fill="${P.xanh}"/><circle cx="${x - 26 * s}" cy="${day - 78 * s}" r="${30 * s}" fill="${P.xanh}"/><circle cx="${x + 28 * s}" cy="${day - 80 * s}" r="${32 * s}" fill="#4E9334"/>`;
-// nhà dân có khiên (bảo hiểm che chở) — vật chính của bìa
-const nhaKhien = (cx, day, s = 1) => `<rect x="${cx - 150 * s}" y="${day - 190 * s}" width="${300 * s}" height="${190 * s}" fill="#FFFFFF"/><rect x="${cx - 150 * s}" y="${day - 190 * s}" width="${300 * s}" height="${190 * s}" fill="none" stroke="${P.toa2}" stroke-width="${4 * s}"/>`
-  + `<path d="M${cx - 185 * s} ${day - 185 * s} L${cx} ${day - 320 * s} L${cx + 185 * s} ${day - 185 * s} Z" fill="${P.cam}"/><rect x="${cx - 32 * s}" y="${day - 110 * s}" width="${64 * s}" height="${110 * s}" fill="${P.toa2}"/>`
-  + `<rect x="${cx - 120 * s}" y="${day - 150 * s}" width="${66 * s}" height="${56 * s}" fill="${P.troi}"/><rect x="${cx + 54 * s}" y="${day - 150 * s}" width="${66 * s}" height="${56 * s}" fill="${P.troi}"/>`;
-// bệnh viện — vật chính của phần I (bảo hiểm sức khoẻ)
-const benhVien = (cx, day, s = 1) => { let o = `<rect x="${cx - 190 * s}" y="${day - 300 * s}" width="${380 * s}" height="${300 * s}" fill="#FFFFFF" stroke="${P.toa2}" stroke-width="${4 * s}"/><rect x="${cx - 190 * s}" y="${day - 330 * s}" width="${380 * s}" height="${34 * s}" fill="${P.toa2}"/>`;
-  o += `<rect x="${cx - 40 * s}" y="${day - 290 * s}" width="${80 * s}" height="${80 * s}" rx="${10 * s}" fill="${P.cam}"/><rect x="${cx - 10 * s}" y="${day - 280 * s}" width="${20 * s}" height="${60 * s}" fill="#FFFFFF"/><rect x="${cx - 30 * s}" y="${day - 260 * s}" width="${60 * s}" height="${20 * s}" fill="#FFFFFF"/>`;
-  for (const dx of [-150, -95, 55, 110]) for (const dy of [-280, -200]) o += `<rect x="${cx + dx * s}" y="${day + dy * s}" width="${40 * s}" height="${44 * s}" fill="${P.troi}"/>`;
-  o += `<rect x="${cx - 150 * s}" y="${day - 120 * s}" width="${300 * s}" height="${30 * s}" fill="${P.troi}"/><rect x="${cx - 45 * s}" y="${day - 80 * s}" width="${90 * s}" height="${80 * s}" fill="${P.toa2}"/>`; return o; };
-
-// ---------- khung slide (mẫu 2): vạch xanh lá nhạt thụt vào ~5 %, vạch cam ~95 %, bo tròn; mây phẳng ở góc trống ----------
-// thanh tiến độ ở đáy (thay vạch cam trang trí): phần đã qua tô cam, khe trắng chia phần I (slide 1–13) / phần II (14–22)
-const tienDo = (n, X = 120, W = 1680, H = 12, Y = 1022) => { const ranh = X + Math.round((W * 13) / TONG), toi = X + Math.round((W * n) / TONG);
-  return `<rect x="${X}" y="${Y}" width="${W}" height="${H}" rx="${H / 2}" fill="#DADFE2"/><rect x="${X}" y="${Y}" width="${toi - X}" height="${H}" rx="${H / 2}" fill="${P.cam}"/><rect x="${ranh - 4}" y="${Y - 4}" width="8" height="${H + 8}" fill="#FFFFFF"/>`; };
+const tienDo = tienDoChung;
 const vien = (k = 0, day = true) => lop(`<rect x="${k % 2 ? 120 : 760}" y="48" width="1040" height="13" rx="6.5" fill="${P.xanhNhat}"/>` + (day ? tienDo(S2.length + 1) : "")
   + (day ? "" : may(k % 2 ? 1700 : 130, 140, 1.3) + may(k % 2 ? 90 : 1740, 560, 1.1)), 0, 0, 1920, 1080, "Hình trang trí", "hoa-tiet");   // mây chỉ ở bìa / mở phần — slide nội dung bỏ cho đỡ nhiễu (phản biện 18/11/2026)
-// dải đáy chữ ký của mẫu 2: phố xanh nhạt + sông + cỏ (bìa, mở phần)
 const nenDay = () => { const toas = [[0, 110, 150], [120, 90, 110], [220, 120, 190], [350, 90, 130], [450, 140, 210], [600, 100, 150], [710, 120, 180], [840, 90, 120], [940, 130, 200], [1080, 100, 150], [1190, 120, 190], [1320, 90, 130], [1420, 140, 220], [1570, 100, 160], [1680, 120, 190], [1810, 110, 150]];
   return lop(toas.map(([x, w, h], k) => toaNha(x, w, h, k % 3 === 1 ? P.pho2 : P.pho, 936)).join("") + `<rect x="0" y="936" width="1920" height="18" fill="${P.nuoc}"/><rect x="0" y="954" width="1920" height="126" fill="${P.co}"/>`, 0, 700, 1920, 380, "Hình trang trí: dải phố, sông, cỏ", "hoa-tiet"); };
-// minh hoạ Storyset (kiểu Rafiki, màu nhấn xanh lá) — anh/storyset/, ghi công ở slide cuối và ghi-cong.md
-const minhHoa = (f, x, y, w, alt, t0 = 300) => `<img data-l="mh-${f}" data-loai="minh-hoa" data-alt="${esc(alt)}" ${A("fade", t0, 700)} src="anh/storyset/${f}.svg" style="position:absolute;left:${x}px;top:${y}px;width:${w}px;height:${w}px">`;
-// cảnh / nhân vật ghép bằng scripts/ghep_canh.js (anh/canh/, nguồn Storyset) — đặt theo chiều cao, rộng tự theo viewBox
-const canh = (f, x, y, h, alt, t0 = 300, hieu = "fade") => { const [, , vw, vh] = fs.readFileSync(path.join(D, "anh", "canh", f + ".svg"), "utf8").match(/viewBox="([^"]+)"/)[1].split(" ").map(Number), w = Math.round((h * vw) / vh);
-  return `<img data-l="canh-${f}" data-loai="minh-hoa" data-alt="${esc(alt)}" ${A(hieu, t0, 600)} src="anh/canh/${f}.svg" style="position:absolute;left:${x}px;top:${y}px;width:${w}px;height:${h}px">`; };
-const canhGiua = (f, cx, y, h, alt, t0, hieu) => { const [, , vw, vh] = fs.readFileSync(path.join(D, "anh", "canh", f + ".svg"), "utf8").match(/viewBox="([^"]+)"/)[1].split(" ").map(Number); return canh(f, Math.round(cx - (h * vw) / vh / 2), y, h, alt, t0, hieu); };
-// VĂN BẢN THẬT + BÚT DẠ QUANG — ảnh và toạ độ vệt từ scripts/danh_dau.js (anh/goc/dd-*.png + .json); vệt quét theo nhịp nói (tVet[i] cho cụm từ i)
-const giay = (f, x, y, w, alt, t0, tVet) => { const j = JSON.parse(fs.readFileSync(path.join(D, "anh", "goc", f + ".json"), "utf8")), h = Math.round((w * j.cao) / j.rong), p = 36, X = x - p, Y = y - p, W = w + 2 * p, H = h + 2 * p, g = 44;
-  return lop(`<path d="M${X} ${Y} H${X + W - g} L${X + W} ${Y + g} V${Y + H} H${X} Z" fill="#FFFFFF" stroke="#C9D1D6" stroke-width="3"/><path d="M${X + W - g} ${Y} V${Y + g} H${X + W} Z" fill="${P.ray}" stroke="#C9D1D6" stroke-width="3" stroke-linejoin="round"/>`, X - 2, Y - 2, W + 4, H + 4, "Tờ giấy nền của trích đoạn", "hoa-tiet", A("rise", t0, 500))
-    + `<img data-l="tl-${f}" data-loai="tai-lieu" data-alt="${esc(alt)}" ${A("fade", t0 + 200, 500)} src="anh/goc/${f}.png" style="position:absolute;left:${x}px;top:${y}px;width:${w}px;height:${h}px">`
-    + j.vet.map((ds, i) => ds.map((v) => { const vx = Math.round(x + v.x * w), vy = Math.round(y + v.y * h), vw = Math.round(v.w * w), vh = Math.round(v.h * h);
-      return lop(`<rect x="${vx}" y="${vy}" width="${vw}" height="${vh}" rx="4" fill="${P.cam}" fill-opacity="0.38"/>`, vx, vy, vw, vh, `Vệt dạ quang: ${j.cau[i]}`, "net", A("wipe", tVet[i], 600)); }).join("")).join(""); };
-const coGiay = (f, w) => { const j = JSON.parse(fs.readFileSync(path.join(D, "anh", "goc", f + ".json"), "utf8")); return Math.round((w * j.cao) / j.rong); };
-// icon trong tròn cam, nét đậm màu mực (kiểu icon hai tông của mẫu 2)
-// mảng nền hữu cơ sau minh hoạ (scripts/blob.js) — tách hình khỏi nền trắng, tạo chiều sâu thay cho khung / bóng đổ
-const { blob } = require("../../../.claude/skills/slide-chuan/scripts/blob.js"), NEN_BLOB = "#E8F3E2";
-const nenBlob = (cx, cy, rx, ry, hat, t0 = 200, mau = NEN_BLOB) => lop(`<path d="${blob(cx, cy, rx, ry, { hat })}" fill="${mau}"/>`, Math.round(cx - rx * 1.3), Math.round(cy - ry * 1.3), Math.round(rx * 2.6), Math.round(ry * 2.6), "Mảng nền sau minh hoạ", "hoa-tiet", A("fade", t0, 500));
-const blobSau = (x, y, w, hat, t0) => nenBlob(x + w / 2, y + w * 0.5, w * 0.4, w * 0.34, hat, t0);
-// nét khoanh vẽ tay (scripts/ve_tay.js) — tối đa một chỗ mỗi slide, vào sau cùng, đặt trước hộp chữ (nằm dưới chữ)
-const { khoanh } = require("../../../.claude/skills/slide-chuan/scripts/ve_tay.js");
-const vongTay = (cx, cy, rx, ry, hat, t0, alt) => lop(khoanh(cx, cy, rx, ry, { hat, mau: P.cam }), Math.round(cx - rx * 1.15), Math.round(cy - ry * 1.25), Math.round(rx * 2.3), Math.round(ry * 2.5), alt, "net", A("wipe", t0, 700));
-const { hangHinh } = require("../../../.claude/skills/slide-chuan/scripts/hinh_dem.js");
-// icon hai tông Phosphor (scripts/icon_duo.js) khi có trong bảng đổi; mảng phụ lấy màu nhấn hợp với nền tròn
-const { iconDuo } = require("../../../.claude/skills/slide-chuan/scripts/icon_duo.js"), DOI = JSON.parse(fs.readFileSync(path.join(D, "asset", "phosphor", "bang-doi.json"), "utf8"));
-const phuCua = (nen) => (nen === P.cam ? "#FFFFFF" : nen === P.camNhat ? P.cam : P.xanh);
-const iconTron = (ic, cx, cy, r, alt, ex = "", nen = P.cam) => lop(`<circle cx="${cx}" cy="${cy}" r="${r}" fill="${nen}"/>` + (DOI[ic] ? iconDuo(fs.readFileSync(path.join(D, "asset", "phosphor", DOI[ic] + ".svg"), "utf8"), cx, cy, r * 1.2, { chinh: P.muc, phu: phuCua(nen) }) : mh.iconNet(D, ic, cx, cy, r * 1.05, P.muc, 3.2)), cx - r, cy - r, 2 * r, 2 * r, alt, "net", ex);
 const dau = (td, ketLuan, so) => `<h1 class="td" data-t data-tieu-de ${A("fade", 0, 500)} style="left:260px;top:76px;width:1400px">${em(td)}</h1>`
   + `<div class="ket" data-t ${A("fade", 300, 500)} style="left:260px;top:178px;width:1400px">${em(ketLuan)}</div>`
   + T("so-trang", 1720, 962, 120, `${so} / ${TONG}`);
 const nguon = (s) => T("nguon", 120, 962, 1500, s);
-// mũi tên thẳng có đầu tam giác (toạ độ tuyệt đối)
-const muiTen = (x1, y1, x2, y2, mau = P.phu, net = 4, dash = "") => { const a = Math.atan2(y2 - y1, x2 - x1), h = 20, q = (d) => `${Math.round(x2 - h * Math.cos(a + d))},${Math.round(y2 - h * Math.sin(a + d))}`;
-  return `<path d="M${x1} ${y1} L${Math.round(x2 - 12 * Math.cos(a))} ${Math.round(y2 - 12 * Math.sin(a))}" stroke="${mau}" stroke-width="${net}" ${dash ? `stroke-dasharray="${dash}"` : ""}/><polygon points="${x2},${y2} ${q(-0.45)} ${q(0.45)}" fill="${mau}"/>`; };
-const lopMui = (x1, y1, x2, y2, alt, ex = "", mau, dash) => lop(muiTen(x1, y1, x2, y2, mau, 4, dash), Math.min(x1, x2) - 22, Math.min(y1, y2) - 22, Math.abs(x2 - x1) + 44, Math.abs(y2 - y1) + 44, alt, "net", ex);
-// một dòng gạch: icon nhỏ trong tròn + chữ
-const dong = (ic, x, y, w, s, t0, nen = "#DDEFD5", cls = "gach") => iconTron(ic, x + 26, y + 22, 26, "Biểu tượng " + s.replace(/\[|\]/g, ""), A("pop", t0, 300), nen) + T(cls, x + 68, y, w - 68, s, A("fade", t0 + 80, 300));
 
 // ============ 1 BÌA ============
 sec("bia", "Chào thầy cô và các bạn. Nhóm 2 trình bày hai phần: phân tích mẫu hợp đồng bảo hiểm sức khoẻ Bảo Việt An Gia, và thực trạng thị trường bảo hiểm Việt Nam từ 2018 đến 9 tháng năm 2026.",
@@ -483,4 +426,4 @@ em{font-style:normal;color:#3E8A2A}
 `);
 fs.rmSync(path.join(D, "slides"), { recursive: true, force: true });
 S2.forEach((h, k) => ghi(path.join(D, "slides", `${String(k + 1).padStart(2, "0")}.html`), h));
-console.log(`${S2.length} slide, ${nL} lớp hình`);
+console.log(`${S2.length} slide, ${soLop()} lớp hình`);

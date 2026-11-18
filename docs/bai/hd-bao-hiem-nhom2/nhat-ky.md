@@ -16,3 +16,7 @@
 ## 18/11/2026 — vòng phản biện độc lập kép (2 người, opus)
 - Nội dung (giảng viên): ND 4 · dễ hiểu 4 · lập luận 3. Đã đối chiếu tài liệu gốc, đúng cả 10 điểm, đã sửa: nhãn slide 20 "cấm gắn bán kèm" (không phải cấm bán qua ngân hàng); slide 22 bỏ quan hệ nhân quả "luật siết → hồi lại"; slide 21 dùng số IAV ≈ −4 %, nêu số tự tính ≈ −5 % và lý do lệch, tiêu đề "tăng nhờ ai"; slide 15 trả về 15 – 24 % (số công bố); slide 4 trích đủ ba bậc; 635 ngày chỉ thuộc quyền lợi Thai sản (slide 8, 12, 13, 22); slide 10 thêm hai vế Điều 6; slide 13 diễn giải đúng Điều 6 khoản 2; slide 19 ghi mốc ước tính giữa 10/2024, tạm ứng ≠ bồi thường; slide 9 "Nhận xét của nhóm"; slide 20 thêm dòng nội dung mỗi mốc.
 - Thẩm mỹ (art director): TM 3 · nhất quán 4 · dữ liệu 4 · dễ theo dõi 3 · PPTX 5. Đã làm: slide 19 lưới 100 ô + khoanh; slide 11, 4 trích rộng, chữ to; khoanh 635 ngày (slide 8), −8,02 % (slide 15); bỏ mây ở slide nội dung; chữ to slide 2, 22; icon mốc slide 20 lớn hơn; bìa có trang đầu hợp đồng thật. Không làm: cán cân hai đĩa (slide 12, ẩn dụ), tách slide 16.
+
+## 18/11/2026 — dọn skill sau bài này
+- Hàm nối công cụ hình chuyển vào skill (`scripts/bo_hinh.js`); deck.js 486 → 429 dòng, đầu ra giống hệt (so từng file slides/, asset/hinh, style.css).
+- `kiem_so_lieu.js` bắt 8 số chưa truy được (làm tròn, tự tính) → ghi mục 5 noi-dung.md kèm cách tính.

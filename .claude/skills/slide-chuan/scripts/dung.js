@@ -89,6 +89,7 @@ async function dung(dir, { ten, soat = true, nhap = false } = {}) {
   const tong = await anhTong(work);
   const ba = await bangAsset(dir, html, work);
   loi.push(...require("./kiem_phong_cach").kiemPhongCach(dir, ba.srcs));
+  loi.push(...require("./kiem_so_lieu").kiemSoLieu(dir));   // số nặng trên slide phải có trong noi-dung.md (bài có file này)
   if (ba.anh) console.log(`✓ Bảng xem thử asset (${ba.srcs.length} hình — soát cùng một phong cách): ${ba.anh}`);
   if (dd) console.log(dd.bang);
   if (pp && pp.tom) console.log(pp.tom);
@@ -102,7 +103,7 @@ async function dung(dir, { ten, soat = true, nhap = false } = {}) {
   if (canh.length) console.log(`⚑ ${canh.length} cảnh báo (không chặn giao — xét khi đọc lạnh, references/soat.md):\n  ${canh.join("\n  ")}`);
   loi.length = 0; loi.push(...chan);
   if (loi.length) { console.log(`⚠ ${loi.length} lỗi:\n  ${loi.join("\n  ")}`); if (!nhap) process.exitCode = 1; }
-  else console.log("✓ Không còn lỗi máy bắt được — còn phải soát bằng mắt và qua người duyệt độc lập (references/soat.md)");
+  else console.log("✓ Không còn lỗi máy bắt được — còn phải soát bằng mắt và qua phản biện kép (references/vai-tro.md)");
   return { ...res, loi, canh, outPath, work, htmlPath, tong, daDang: dd, bangAsset: ba.anh };
 }
 

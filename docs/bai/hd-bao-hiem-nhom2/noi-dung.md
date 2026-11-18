@@ -44,3 +44,12 @@ Mức: **A** = đối chiếu văn bản chính thức / cơ quan nhà nước �
 6. Nhãn "Bảng 1 … 2018–2025" nhưng câu dẫn nói "giai đoạn 2022–2025 … bốn năm" — slide chia rõ hai giai đoạn.
 
 7. **Tốc độ 2018 – 2022**: tài liệu gốc ghi 15 – 24 %/năm (Bảng 1: 2018 +24,0 %, 2019 +21,0 %) — slide dùng số công bố này, không dùng phép chia trực tiếp giữa các cột (15 – 20 %).
+
+## 5. Số tự tính / làm tròn / ví dụ (máy kiểm số liệu đọc mục này — mỗi số ghi cách tính)
+| Số trên slide | Slide | Cách tính |
+|---|---|---|
+| 227,1 · 227,5 · 237,2 (nghìn tỷ) | 15 | làm tròn 227.134 · 227.495 · 237.211 tỷ |
+| 5,6 triệu; 2,4 triệu | 10 | ví dụ giả định: phí 12 triệu/năm, còn 8 tháng = 8 triệu; 70 % × 8 = 5,6; 8 − 5,6 = 2,4 |
+| 5,6 (trên 10 hợp đồng) | 16 | 10 × (1 − 43,8 %) = 5,62 |
+| 1,7 % · 7,5 % · hơn 92 % | 19 | 213 / 12.811 = 1,66 %; 956,5 / 12.811 = 7,47 %; 100 % − 7,47 % = 92,5 % |
+| nhân thọ ≈ −5 % (nhóm tự tính, chỉ để đối chiếu với số IAV ≈ −4 %) | 21 | tổng cùng kỳ 175,8 / 1,024 = 171,7; phi nhân thọ 74,1 / 1,151 = 64,4; nhân thọ 107,3 → 101,7 = −5,2 % |

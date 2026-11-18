@@ -32,24 +32,22 @@ Thứ tự chọn hình chính:
 4. **Sơ đồ quan hệ** bằng nét, khi ý là quan hệ giữa các bên.
 Không dùng: ảnh "tâm trạng" chung chung làm hình chính; **asset, ảnh, vật vẽ lấy từ bài khác** (mỗi bài vẽ / chọn hình của riêng nó); icon làm hình chính.
 
-**Chọn một họ hình chính cho cả deck** (`bo-cuc.md` mục 1): ảnh tư liệu + nét, **hoặc** minh hoạ CC0 + nét — không trộn ảnh tư liệu với nhân vật hoạt hình trong cùng deck.
+**Chọn một họ hình chính cho cả deck** (`bo-cuc.md` mục 1); mặc định là bộ công cụ ở mục trên. Họ khác dùng khi deck chọn phong cách đó, không trộn hai họ người / hai bộ icon trong một deck:
 
-| Vai của hình | Nguồn | Công cụ | Ghi công |
-|---|---|---|---|
-| Lịch sử, bối cảnh, ví dụ thực tế (nhà cháy, tai nạn, toà án, văn bản cổ) | ảnh / tranh tư liệu **phạm vi công cộng** (Wikimedia Commons), ảnh CC0 / Unsplash / Pexels | `scripts/find_images.py`, `fetch_image.py` → `scripts/hai_mau.js` (tô hai màu theo bảng màu) | TASL trong `ghi-cong.md`, chú thích nhỏ trên slide nếu là tư liệu |
-| Con người, các bên, tình huống | **Open Peeps** (Pablo Stanley, CC0): 23 dáng đứng, 11 dáng ngồi, 53 tóc, 33 nét mặt | `node scripts/nhan_vat.js <ra.svg> --dang= --toc= --mat= --da= --ao= --quan=` (`--ds` để xem danh sách) | không bắt buộc; nên ghi "Open Peeps — CC0" |
-| Danh sách, bước, thuộc tính, mục lục | **Tabler Icons** (MIT), một độ dày nét cho cả deck | `node scripts/icon.js <bài> tên… --mau= --net=1.5` (`--tim=từ`) | "Tabler Icons, MIT" |
-| Số liệu, tỉ lệ, quan hệ, quy trình | dựng bằng code (SVG / `hinh/bang.css`) — phải đúng tỉ lệ thật | — | — |
-| Câu chốt, định nghĩa, trích luật | **chữ là hình**: chữ có chân `Lora` cỡ 56–80 px, số lớn 200–340 px | CSS `font-family: Lora` | — |
+| Vai của hình | Mặc định | Họ thay thế |
+|---|---|---|
+| Người, các bên, tình huống | Storyset + `ghep_canh.js` | Open Peeps CC0 (`scripts/nhan_vat.js`) |
+| Văn bản, điều khoản, trích luật | ảnh nguyên văn + dạ quang (`danh_dau.js`); chữ có chân `Lora` cho câu chốt | `trang_goc.js` cắt trang |
+| Danh sách, bước, nút sơ đồ | icon hai tông Phosphor (`icon_duo.js`) | Tabler nét (`scripts/icon.js`) |
+| Số liệu, tỉ lệ, quy trình | dựng bằng code, đúng tỉ lệ thật; tỉ lệ khó hình dung → hình đếm | — |
+| Bối cảnh, ví dụ thực tế | ảnh / tư liệu có giấy phép (`find_images.py` → `hai_mau.js`), ghi TASL | — |
 
 ## Quy tắc
-1. **Mỗi slide một tiêu điểm** (máy chỉ cảnh báo): hình chính hoặc số lớn chiếm 30–45 % diện tích — **không** đạt bằng cách thêm panel / thẻ nền; 2–4 phần tử thị giác; tỉ lệ phần tử lớn nhất / nhỏ nhất ≥ 8 lần. Không rải 8–12 vật nhỏ đều khắp slide.
-   Giới hạn của máy đo (`◇ tiêu điểm`): một tấm nền / thẻ lớn cũng được tính là khối thị giác, kể cả khi vật bên trong nhỏ — tấm nền **gom** bố cục chứ **không thay** hình chính; phải nhìn ảnh để chắc hình chính đủ lớn.
-2. **Nhìn slide là nắm toàn bộ ý**: nhãn đặt lên hình (tên bên, tên dòng tiền), ý cốt lõi viết thành cụm ngắn cạnh hình — hình chở nội dung, không thay nội dung.
-3. **Đồng bộ**: nhân vật Open Peeps cùng màu viền (màu mực của bài), quần áo theo màu vai trò; ảnh cùng một cặp màu hai tông; icon cùng một độ dày, một màu.
-4. **Không trộn** nhân vật Open Peeps với hình người kiểu khác trong cùng deck; icon Tabler không trộn bộ icon khác.
-5. Ảnh: chỉ ảnh có giấy phép rõ; chữ không đặt lên phần ảnh rối (đặt cạnh hoặc trên mảng màu phẳng).
-6. Tài nguyên tải về bộ nhớ đệm (`~/.cache/slide-chuan`, lần đầu cần mạng npm) — không chép vào skill.
+1. **Mỗi slide một tiêu điểm** (máy chỉ cảnh báo): hình chính hoặc số lớn chiếm 30–45 % — không đạt bằng panel / thẻ nền; tấm nền gom bố cục chứ không thay hình chính.
+2. **Nhìn slide là nắm toàn bộ ý**: nhãn đặt lên hình, ý cốt lõi viết thành cụm ngắn cạnh hình.
+3. **Đồng bộ trong một họ**: cùng kiểu vẽ, cùng màu nhấn, icon cùng bộ.
+4. Ảnh: chỉ ảnh có giấy phép rõ; chữ không đặt lên phần ảnh rối (đặt cạnh hoặc trên mảng màu phẳng).
+5. Tài nguyên tải về bộ nhớ đệm (`~/.cache/slide-chuan`, lần đầu cần mạng npm) — không chép vào skill.
 
 ## Ảnh chụp hiện đại (Unsplash) và minh hoạ unDraw — hướng "tư vấn pháp lý", Chương 3 (15/11/2026)
 > Hạ cấp 18/11/2026: chỉ dùng khi ảnh **đúng sự vật** theo quy tắc 0 — không dùng ảnh tâm trạng cho bìa / mở phần / câu chốt.

@@ -10,7 +10,7 @@
 | Hoạ sĩ + tìm ảnh | 6 | Asset SVG riêng của bài; ảnh thật có nguồn |
 | Thiết kế slide + chuyển động | 5, 7 | Slide HTML tự do → PPTX |
 | Soát máy | 7–8 | `scripts/dung.js` |
-| **Người duyệt độc lập** | 8 | Agent riêng, không thấy lập luận của người dựng |
+| **Phản biện kép** | 8 | Hai agent riêng (nội dung / hình), không thấy lập luận của người dựng |
 | **Cố vấn** | điểm duyệt | Bản ghi lựa chọn |
 | Huấn luyện thuyết trình | 9 | Lời nói, đo giờ, slide có thể cắt |
 | Biên tập + lưu trữ | 10 | Chính tả, bàn giao, rút kinh nghiệm |
@@ -30,7 +30,7 @@
 ```
 Có hình thì kèm ảnh (slide mẫu, bảng xem thử asset) — người dùng quyết bằng mắt, không bằng mô tả.
 
-## Người duyệt độc lập — cách gọi
+## Đọc lạnh và phản biện kép — cách gọi
 **Lượt 1: ĐỌC LẠNH** (bắt buộc, trước lượt chấm — 18/11/2026). Agent mới, `model: "opus"`, **chỉ** được xem ảnh `h-*.jpg`, không đọc `kich-ban.md`, `noi-dung.md`, `brief.md` hay lời nói — đúng vị trí người xem không nghe giảng. Brief:
 ```
 Bạn là sinh viên luật năm 3 xem bộ slide này mà không nghe thuyết trình. Không sửa file. Chỉ xem ảnh <bài>/<tên>_lop/h-*.jpg (xem hết, bằng mắt).
@@ -39,20 +39,9 @@ Cuối cùng: 3 slide khó hiểu nhất, 3 chỗ trông "như AI làm" nhất (
 ```
 Người dựng so cột "slide muốn tôi hiểu" với cột khẳng định trong `kich-ban.md`: lệch ý = lỗi [khó hiểu], sửa slide (không sửa kịch bản cho khớp). Đếm tỉ lệ tóm đúng → hạng **Tự hiểu**.
 
-**Lượt 1b: ĐẶT CẠNH MẪU** (khi người dùng đã chọn mẫu tham chiếu — 18/11/2026). Agent mới `opus` xem slide của mình ở độ phân giải đầy đủ cạnh slide trong mẫu được chọn (`scripts/tham_chieu.py trong`), chấm Thẩm mỹ, Nhất quán, Bố cục, Chữ, Hình minh hoạ, Logic 1–5 và liệt kê điểm thua mẫu kèm cách sửa cụ thể. **Chưa ≥ 4 thì sửa, chưa gửi người dùng.**
+**Lượt 2: PHẢN BIỆN KÉP** (bài Nhóm 2, 18/11/2026 — một người duyệt chấm mọi thứ đã bỏ sót 10 lỗi nội dung). Sau khi `dung.js` sạch và đã sửa theo đọc lạnh, gọi **hai** agent mới `model: "opus"` **song song**, mỗi người một góc, không gửi lập luận của người dựng:
+- **A — Nội dung** (vai giảng viên khó tính): đọc ảnh `h-*.jpg`, lời nói (`data-notes` trong deck), `noi-dung.md` **và tài liệu gốc**. Đối chiếu từng con số, điều khoản, số hiệu, ngày hiệu lực; tìm chỗ **diễn giải vượt văn bản** (áp quy định cho phạm vi rộng hơn, quan hệ nhân quả không nguồn), số tự tính / ví dụ chưa ghi rõ, nhãn dễ hiểu sai. Chấm Đúng · Dễ hiểu · Lập luận 1–5.
+- **B — Hình** (vai art director): ảnh `h-*.jpg`, tờ soát `soat-*.jpg` (HTML ↔ PPTX), bảng "Bộ công cụ hình" (`nguon-hinh.md`). Chấm Thẩm mỹ · Nhất quán ngôn ngữ hình · Trình bày dữ liệu · Dễ theo dõi · Bản PPTX 1–5; chỉ slide yếu nhất, công cụ dùng sai chỗ / chưa dùng. **Không chấm theo độ giống mẫu.**
+Mỗi người trả ≤ 450 chữ: điểm + ≤ 10 vấn đề xếp theo mức nặng (slide — vấn đề — bằng chứng — cách sửa).
 
-**Lượt 2: CHẤM**. Agent tool, **`model: "opus"`**, agent mới (không fork), chạy sau khi `dung.js` sạch và đã sửa theo đọc lạnh. Brief gửi kèm (không gửi lập luận của người dựng):
-```
-Bạn là người duyệt độc lập một deck bài giảng. Không sửa file. Đọc:
-- <bài>/brief.md (khán giả, mục tiêu), <bài>/noi-dung.md (nội dung + bảng nguồn), <bài>/kich-ban.md
-- <bài>/thiet-ke/ (bảng tham chiếu, hệ thống thiết kế, bản đồ nhịp)
-- ảnh từng slide: <bài>/<tên>_lop/h-*.jpg (xem hết, bằng mắt) · bảng xem thử asset: <bài>/<tên>_lop/asset.jpg · tờ so sánh với mẫu: <bài>/<tên>_lop/so-sanh.jpg
-- chữ từng slide: <bài>/<tên>_lop/deck.html
-Việc:
-1. Chấm 1–5 kèm lý do: Nội dung (đúng, đủ, có nguồn, không vượt nguồn) · Chống vẻ AI (`bo-cuc.md` mục 7) · Hình đúng bài (`nguon-hinh.md` quy tắc 0) · Thiết kế (thứ bậc, khoảng thở, nhất quán, hình đúng sự vật) · Mạch lạc (cả deck, đúng mạch của thể loại) · Dễ hiểu (sinh viên mới học nhìn 3 giây có hiểu ý slide không) · Thẩm mỹ (đặt từng slide cạnh bảng tham chiếu: có lạc tông, đơn điệu, lệch lưới, hình như hình dán không; slide có theo hệ thống thiết kế và bản đồ nhịp không).
-2. Liệt kê lỗi theo mức: [sai luật/nội dung] > [khó hiểu] > [thiết kế] > [chữ]; mỗi lỗi: slide, mô tả, đề xuất sửa.
-3. Đối chiếu từng con số / điều luật trên slide với bảng nguồn; báo cái không có nguồn.
-4. Theo references/soat.md mục 1, nêu slide nào trượt điều kiểm nào.
-Trả ≤ 800 chữ, tiếng Việt.
-```
-Hạng < 4 hoặc có lỗi [sai luật/nội dung] → sửa rồi gọi lại (vòng 2). Sau vòng 2 còn lỗi → báo người dùng thành thật.
+**Người dựng kiểm từng góp ý trước khi sửa** (đối chiếu nguồn, xem ảnh): người duyệt cũng sai — bài Nhóm 2 sửa "15 – 24 %" thành "15 – 20 %" theo góp ý chưa kiểm, phản biện sau bắt lại. Góp ý trái `CLAUDE.md` hoặc lựa chọn người dùng đã chốt → không làm, ghi lý do. Ghi điểm, lỗi, cách xử lý vào `nhat-ky.md`. Còn hạng < 4 hoặc lỗi nội dung → sửa, gọi lại (tối đa 2 vòng), rồi báo người dùng thành thật.
