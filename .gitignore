@@ -32,3 +32,6 @@ tools/shots/
 .tts-cache/
 __pycache__/
 .tts-texts.json
+
+# ảnh soát / tờ tổng do slide-chuan sinh ra
+docs/bai/*/*_lop/
