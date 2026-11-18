@@ -62,6 +62,13 @@ const giay = (f, x, y, w, alt, t0, tVet) => { const j = JSON.parse(fs.readFileSy
       return lop(`<rect x="${vx}" y="${vy}" width="${vw}" height="${vh}" rx="4" fill="${P.cam}" fill-opacity="0.38"/>`, vx, vy, vw, vh, `Vệt dạ quang: ${j.cau[i]}`, "net", A("wipe", tVet[i], 600)); }).join("")).join(""); };
 const coGiay = (f, w) => { const j = JSON.parse(fs.readFileSync(path.join(D, "anh", "goc", f + ".json"), "utf8")); return Math.round((w * j.cao) / j.rong); };
 // icon trong tròn cam, nét đậm màu mực (kiểu icon hai tông của mẫu 2)
+// mảng nền hữu cơ sau minh hoạ (scripts/blob.js) — tách hình khỏi nền trắng, tạo chiều sâu thay cho khung / bóng đổ
+const { blob } = require("../../../.claude/skills/slide-chuan/scripts/blob.js"), NEN_BLOB = "#E8F3E2";
+const nenBlob = (cx, cy, rx, ry, hat, t0 = 200, mau = NEN_BLOB) => lop(`<path d="${blob(cx, cy, rx, ry, { hat })}" fill="${mau}"/>`, Math.round(cx - rx * 1.3), Math.round(cy - ry * 1.3), Math.round(rx * 2.6), Math.round(ry * 2.6), "Mảng nền sau minh hoạ", "hoa-tiet", A("fade", t0, 500));
+const blobSau = (x, y, w, hat, t0) => nenBlob(x + w / 2, y + w * 0.5, w * 0.4, w * 0.34, hat, t0);
+// nét khoanh vẽ tay (scripts/ve_tay.js) — tối đa một chỗ mỗi slide, vào sau cùng, đặt trước hộp chữ (nằm dưới chữ)
+const { khoanh } = require("../../../.claude/skills/slide-chuan/scripts/ve_tay.js");
+const vongTay = (cx, cy, rx, ry, hat, t0, alt) => lop(khoanh(cx, cy, rx, ry, { hat, mau: P.cam }), Math.round(cx - rx * 1.15), Math.round(cy - ry * 1.25), Math.round(rx * 2.3), Math.round(ry * 2.5), alt, "net", A("wipe", t0, 700));
 // icon hai tông Phosphor (scripts/icon_duo.js) khi có trong bảng đổi; mảng phụ lấy màu nhấn hợp với nền tròn
 const { iconDuo } = require("../../../.claude/skills/slide-chuan/scripts/icon_duo.js"), DOI = JSON.parse(fs.readFileSync(path.join(D, "asset", "phosphor", "bang-doi.json"), "utf8"));
 const phuCua = (nen) => (nen === P.cam ? "#FFFFFF" : nen === P.camNhat ? P.cam : P.xanh);
@@ -126,7 +133,7 @@ sec("mo-phan", "Phần I. Mẫu hợp đồng Bảo Việt An Gia là hợp đ�
   sec("noi-dung", "Hợp đồng tách năm tư cách. Lấy ví dụ bố mua bảo hiểm cho con. Bố là bên mua: giao kết, đóng phí. Bảo Việt nhận phí và cam kết chi trả. Con là người được bảo hiểm: sức khoẻ, tính mạng của con được bảo vệ. Khi con điều trị, tiền bồi thường có thể trả cho mẹ là người được chỉ định nhận tiền. Còn người thụ hưởng chỉ nhận tiền khi người được bảo hiểm tử vong. Một hợp đồng có thể gồm nhiều người, mỗi người một chương trình — tiện cho gói gia đình.",
     vien(0) + dau("Ai đóng tiền, ai được [bảo vệ]?", "Một hợp đồng có năm tư cách — có thể là năm người khác nhau", 5)
     + N.map(([f, ten, mo, cx, y, h], k) => { const t0 = [200, 500, 1200, 1700, 2100][k], ty = y + h + 8;
-      return canhGiua(f, cx, y, h, `Nhân vật: ${ten}`, t0, "rise")
+      return nenBlob(cx, y + h * 0.56, h * 0.42, h * 0.36, 11 + k, t0) + canhGiua(f, cx, y, h, `Nhân vật: ${ten}`, t0, "rise")
         + T("buoc-ten", cx - 230, ty, 460, ten, A("fade", t0 + 80, 300)) + T("buoc-mo", cx - 230, ty + 44, 460, mo, A("fade", t0 + 120, 300)); }).join("")
     + lopMui(410, 380, 880, 380, "Mũi tên: bên mua đóng phí cho Bảo Việt", A("wipe", 900, 400), P.phu) + T("nhan-mui", 445, 326, 400, "đóng phí", A("fade", 1000, 300))
     + lopMui(1040, 380, 1490, 380, "Mũi tên: Bảo Việt bảo vệ người được bảo hiểm", A("wipe", 1300, 400), P.phu) + T("nhan-mui", 1065, 326, 400, "bảo vệ", A("fade", 1400, 300))
@@ -178,6 +185,7 @@ sec("mo-phan", "Phần I. Mẫu hợp đồng Bảo Việt An Gia là hợp đ�
         + iconTron(ic, cx, iy, 36, `Biểu tượng ${ten}`, A("pop", t0, 300), chinh ? P.cam : d >= 365 ? P.camNhat : "#DDEFD5")
         + T(`cl-so${chinh ? " cam-dam" : ""}`, cx - 140, iy + 44, 280, d ? `${d} ngày` : "Ngay", A("fade", t0 + 100, 300))
         + T("cl-ten", cx - 190, iy + 100, 380, ten, A("fade", t0 + 150, 300)); }).join("")
+    + vongTay(1440, AY + 50, 230, 34, 3, 2600, "Nét khoanh tay quanh đoạn thêm 270 ngày")
     + T("moc", 1250, AY + 30, 440, "sinh con: thêm [270 ngày] nữa", A("fade", 2000, 300))
     + nguon("Hợp đồng Bảo Việt An Gia, Điều 5. Trục vẽ đúng tỉ lệ ngày. Tái tục liên tục: không chờ lại, trừ phần hạn mức nâng thêm."));
 }
@@ -258,7 +266,7 @@ sec("mo-phan", "Phần I. Mẫu hợp đồng Bảo Việt An Gia là hợp đ�
       return lop(`<circle cx="190" cy="${y + 50}" r="50" fill="${P.cam}"/>`, 140, y, 100, 100, "Vòng tròn số", "hoa-tiet", A("pop", t0, 300))
         + T("so-tron nho", 140, y + 22, 100, String(k + 1), A("pop", t0, 300))
         + T("muc-dau", 280, y + 4, 860, ten, A("fade", t0 + 100, 300)) + T("buoc-mo trai", 280, y + 56, 860, mo, A("fade", t0 + 150, 300)); }).join("")
-    + minhHoa("signing-a-contract-rafiki", 1180, 290, 620, "Minh hoạ: người cầm bút lớn ký hợp đồng", 1800)
+    + blobSau(1180, 290, 620, 5, 1700) + minhHoa("signing-a-contract-rafiki", 1180, 290, 620, "Minh hoạ: người cầm bút lớn ký hợp đồng", 1800)
     + nguon("Khuyến nghị của nhóm, dựa trên Điều 5, 6, 7 hợp đồng Bảo Việt An Gia."));
 }
 
@@ -319,7 +327,7 @@ sec("trich", "Ngày 01/7/2024 Luật Các tổ chức tín dụng 2024 có hiệ
   + T("trich-nguon", 200, 300, 1040, "Nghiêm cấm tổ chức tín dụng, chi nhánh ngân hàng nước ngoài và người quản lý, điều hành, nhân viên của họ:", A("fade", 200, 400))
   + T("trich-lora lon", 200, 400, 1040, "“… [gắn việc bán sản phẩm bảo hiểm không bắt buộc] với việc cung ứng sản phẩm, dịch vụ ngân hàng [dưới mọi hình thức].”", A("fade", 400, 600))
   + T("trich-nguon", 200, 640, 1040, "Luật Các tổ chức tín dụng số 32/2024/QH15, khoản 5 Điều 15 (hành vi bị nghiêm cấm) — hiệu lực 01/7/2024", A("fade", 800, 400))
-  + canh("ngan-hang", 1250, 290, 560, "Cảnh ghép: khách đứng trước quầy ngân hàng, nhân viên nói phải mua bảo hiểm mới duyệt vay", 1000)
+  + nenBlob(1540, 600, 260, 240, 9, 900) + canh("ngan-hang", 1250, 290, 560, "Cảnh ghép: khách đứng trước quầy ngân hàng, nhân viên nói phải mua bảo hiểm mới duyệt vay", 1000)
   + T("bong-noi", 1250 + 316, 290 + 14, 268, "Mua bảo hiểm thì mới duyệt vay!", A("fade", 1500, 300))
   + iconTron("ban", 1250 + 300, 290 + 104, 36, "Biểu tượng cấm đè lên lời ép mua", A("pop", 2000, 400), P.cam)
   + T("gach giua", 1250, 866, 600, "Từ 01/7/2024: [bị cấm]", A("fade", 2200, 300))
@@ -353,7 +361,7 @@ sec("trich", "Ngày 01/7/2024 Luật Các tổ chức tín dụng 2024 có hiệ
       return T("hang-ten", 100, y - 4, 400, ten, A("fade", t0, 300)) + T("hang-dk", 100, y + 42, 400, mo, A("fade", t0, 300))
         + lop(`<rect x="${X}" y="${y}" width="${w}" height="72" fill="${mau}"/>`, X, y, w, 72, `Thanh ${ten} ${mo}: ${sv}`, "bieu-do", A("wipe", t0, 500))
         + T(`so-thanh trai${k ? "" : " cam-dam"}`, X + w + 18, y + 14, 260, sv, A("fade", t0 + 300, 300)); }).join("")
-    + minhHoa("flood-rafiki", 1380, 300, 460, "Minh hoạ: phố ngập nước, xe chìm sau mưa lớn — thiệt hại do bão lũ", 1800)
+    + blobSau(1380, 300, 460, 4, 1700) + minhHoa("flood-rafiki", 1380, 300, 460, "Minh hoạ: phố ngập nước, xe chìm sau mưa lớn — thiệt hại do bão lũ", 1800)
     + T("gach", 100, 840, 1260, "Phi nhân thọ đang tăng, nhưng [bồi thường thiên tai] vẫn là điểm yếu.", A("fade", 2000, 300))
     + nguon("Tài liệu nhóm [16] VCCI, [17] VietnamFinance (số liệu Cục Quản lý, giám sát bảo hiểm). Thanh vẽ đúng tỉ lệ."));
 }
@@ -375,7 +383,7 @@ sec("trich", "Ngày 01/7/2024 Luật Các tổ chức tín dụng 2024 có hiệ
         + T(`cl-so${chinh ? " cam-dam" : ""}`, cx - 230, ty, 460, ngay, A("fade", t0 + 100, 300))
         + T("muc-dau giua nho", cx - 230, ty + 58, 460, viec, A("fade", t0 + 150, 300))
         ; }).join("")
-    + minhHoa("lawyer-rafiki", 1290, 236, 330, "Minh hoạ: luật sư cầm hồ sơ trước bàn — các mốc pháp lý", 2400)
+    + blobSau(1290, 236, 330, 6, 2300) + minhHoa("lawyer-rafiki", 1290, 236, 330, "Minh hoạ: luật sư cầm hồ sơ trước bàn — các mốc pháp lý", 2400)
     + nguon("Luật 08/2022/QH15; Luật 32/2024/QH15; Luật 139/2025/QH15 (vanban.chinhphu.vn, vbpl.vn). Trục vẽ theo tỉ lệ tháng."));
 }
 
@@ -387,7 +395,7 @@ sec("trich", "Ngày 01/7/2024 Luật Các tổ chức tín dụng 2024 có hiệ
     + lop(`<rect x="${X}" y="350" width="${wn}" height="110" fill="${P.camNhat}"/><rect x="${X + wn}" y="350" width="${W - wn}" height="110" fill="${P.xanh}"/>`, X, 350, W, 110, "Thanh cơ cấu: nhân thọ 101,7, phi nhân thọ 74,1 nghìn tỷ", "bieu-do", A("wipe", 400, 800))
     + T("thanh-chu", X, 384, wn, "Nhân thọ 101,7 nghìn tỷ", A("fade", 900, 300)) + T("thanh-chu", X + wn, 384, W - wn, "Phi nhân thọ 74,1 nghìn tỷ", A("fade", 1000, 300))
     + [["+2,4 %", "tổng doanh thu phí", ""], ["+15,1 %", "phi nhân thọ", " xanh"], ["≈ −5 %", "nhân thọ (nhóm tự tính)", " cam"]]
-      .map(([so, nhan, c], k) => T(`so-to${c} lon`, 160 + k * 540, 560, 520, so, A("fade", 1300 + k * 300, 400)) + T("so-nhan", 160 + k * 540, 712, 520, nhan, A("fade", 1350 + k * 300, 300))).join("")
+      .map(([so, nhan, c], k) => (k === 1 ? vongTay(160 + k * 540 + 260, 626, 262, 78, 5, 2400, "Nét khoanh tay quanh +15,1 %") : "") + T(`so-to${c} lon`, 160 + k * 540, 560, 520, so, A("fade", 1300 + k * 300, 400)) + T("so-nhan", 160 + k * 540, 728, 520, nhan, A("fade", 1350 + k * 300, 300))).join("")
     + T("buoc-mo", 160, 846, 1600, "Nhân thọ ≈ −5 %: suy từ tổng (+2,4 %) và phi nhân thọ (+15,1 %), cùng kỳ năm trước. Chi trả quyền lợi 77,9 nghìn tỷ (+13,1 %).", A("fade", 2300, 300))
     + nguon("Số ước tính 9 tháng 2026, báo cáo tình hình kinh tế – xã hội (dẫn theo anninhthudo.vn, baomoi.com)."));
 }
