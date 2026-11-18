@@ -20,3 +20,6 @@ Illustrations by Storyset — https://storyset.com (giấy phép Freepik: miễn
 - `anh/storyset/insurance-rafiki.svg` — https://storyset.com/illustration/insurance/rafiki (bìa)
 - `anh/storyset/hospital-patient-rafiki.svg` — https://storyset.com/illustration/hospital-patient/rafiki (mở phần I)
 - `anh/storyset/investment-data-rafiki.svg` — https://storyset.com/illustration/investment-data/rafiki (dự kiến mở phần II)
+
+- Thêm 18/11/2026: flood, signing-a-contract, lawyer, agreement (kiểu Rafiki, cùng cách tô màu). Ghi công đặt ở dòng nguồn slide 22.
+- Icon Tabler (MIT) tải thêm: cloud-storm, ban, users-group, pig-money, receipt-refund, calendar-due, user-heart, building-hospital, certificate, tie, arrow-down-right, arrow-up-right, circle-check, check, alert-circle, heart-plus.
