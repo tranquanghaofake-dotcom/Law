@@ -25,3 +25,8 @@ test("vùng cắt bao trọn khối, vệt dạ quang quy về tỉ lệ 0–1 c
   assert.strictEqual(v.vet[0].length, 2);
   for (const h of v.vet[0]) assert.ok(h.x >= 0 && h.y >= 0 && h.x + h.w <= 1 && h.y + h.h <= 1);
 });
+
+test("cắt ± le dòng: lề dưới dừng giữa khoảng trống tới dòng kế, không dính dòng bị bỏ", () => {
+  const t = docBbox(XHTML), v = vungVaVet(t, [timCau(t, "Hợp đồng")], 0);
+  assert.ok(v.vung.y + v.vung.h <= (212 + 220) / 2 / 800 + 1e-9);
+});

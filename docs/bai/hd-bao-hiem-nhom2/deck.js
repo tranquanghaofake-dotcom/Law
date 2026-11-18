@@ -117,15 +117,15 @@ sec("mo-phan", "Phần I. Mẫu hợp đồng Bảo Việt An Gia là hợp đ�
   { trans: "push" });
 
 // ============ 4 THỨ TỰ ƯU TIÊN — bậc thang ============
-{ const B = [["file-description", "Sửa đổi, bổ sung mới nhất", "thoả thuận riêng ký sau cùng", P.xanh, 360], ["files", "Hợp đồng và Phụ lục 1", "13 điều + bảng quyền lợi", "#86C46E", 250], ["file-text", "Quy tắc bảo hiểm", "điều khoản chung, soạn sẵn", P.xanhNhat, 140]];
+{ const B = [["file-description", "Sửa đổi, bổ sung mới nhất", "thoả thuận riêng ký sau cùng", P.xanh, 300], ["files", "Hợp đồng và Phụ lục 1", "13 điều + bảng quyền lợi", "#86C46E", 220], ["file-text", "Quy tắc bảo hiểm", "điều khoản chung, soạn sẵn", P.xanhNhat, 140]];
   sec("noi-dung", "Điều 12 liệt kê các tài liệu tạo thành bộ hợp đồng: giấy yêu cầu bảo hiểm, hợp đồng, Phụ lục 1, các sửa đổi bổ sung và Quy tắc bảo hiểm. Khi chúng mâu thuẫn, áp dụng theo bậc: sửa đổi bổ sung mới nhất trước, rồi hợp đồng và phụ lục, sau cùng là Quy tắc. Nói gọn: điều hai bên đã thoả thuận riêng thắng điều khoản soạn sẵn.",
     vien(1) + dau("Giấy tờ mâu thuẫn, [theo cái nào]?", "Thoả thuận riêng mới nhất thắng; Quy tắc bảo hiểm áp dụng sau cùng", 4)
-    + B.map(([ic, ten, mo, mau, h], k) => { const x = 260 + k * 500, top = 880 - h, t0 = 400 + k * 450;
+    + B.map(([ic, ten, mo, mau, h], k) => { const x = 260 + k * 500, top = 890 - h, t0 = 2200 + k * 450;
       return lop(`<rect x="${x}" y="${top}" width="490" height="${h}" fill="${mau}"/>`, x, top, 490, h, `Bậc ${k + 1}: ${ten}`, "bieu-do", A("rise", t0, 500))
         + T("so-bac", x, top + 24, 490, String(k + 1), A("fade", t0 + 200, 300))
-        + iconTron(ic, x + 245, top - 196, 36, `Biểu tượng ${ten}`, A("pop", t0 + 100, 300), "#DDEFD5")
-        + T("buoc-ten", x, top - 146, 490, ten, A("fade", t0 + 150, 300)) + T("buoc-mo", x, top - 96, 490, mo, A("fade", t0 + 200, 300)); }).join("")
-    + nguon("Hợp đồng Bảo Việt An Gia, Điều 12 (thứ tự ưu tiên áp dụng khi các tài liệu mâu thuẫn)."));
+        + T("buoc-ten", x, top - 104, 490, ten, A("fade", t0 + 150, 300)) + T("buoc-mo", x, top - 58, 490, mo, A("fade", t0 + 200, 300)); }).join("")
+    + giay("dd-dieu12", 360, 290, 1200, "Ảnh chụp nguyên văn Điều 12 hợp đồng Bảo Việt An Gia", 200, [900, 1500])
+    + nguon("Nguyên văn Điều 12 hợp đồng Bảo Việt An Gia (CTBH là công ty bảo hiểm) — thứ tự ưu tiên khi các tài liệu mâu thuẫn."));
 }
 
 // ============ 5 NĂM TƯ CÁCH — một gia đình thật (nhân vật ghép từ Storyset, scripts/ghep_canh.js) ============
@@ -192,17 +192,18 @@ sec("mo-phan", "Phần I. Mẫu hợp đồng Bảo Việt An Gia là hợp đ�
 }
 
 // ============ 9 ĐỒNG CHI TRẢ TRẺ NHỎ — ví dụ 10 triệu ============
-{ const X = 520, W = 1200, W70 = 840;
+{ const X = 520, W = 900, W70 = 630;
   const hang = (y, ten, dk, t0) => T("hang-ten", 100, y - 4, 400, ten, A("fade", t0, 300)) + T("hang-dk", 100, y + 42, 400, dk, A("fade", t0, 300));
   sec("noi-dung", "Với trẻ từ 15 ngày tuổi đến 3 tuổi. Ví dụ giả định: một đợt điều trị hết 10 triệu đồng, trong hạn mức. Nếu chữa ở cơ sở y tế tư nhân, khoa quốc tế, hoặc điều trị tự nguyện theo yêu cầu ở bệnh viện công, Bảo Việt trả 70 % — 7 triệu, gia đình tự trả 3 triệu. Nếu khám, điều trị thông thường ở bệnh viện công lập thì không đồng chi trả: Bảo Việt trả cả 10 triệu trong hạn mức. Điều khoản vừa hạn chế dùng dịch vụ đắt tiền ở nhóm tuổi hay ốm, vừa giữ quyền lợi cho người dùng y tế công.",
     vien(1) + dau("Con nhỏ ốm, [gia đình trả] bao nhiêu?", "Trẻ 15 ngày – 3 tuổi chữa ở cơ sở tư: Bảo Việt trả [70%], gia đình 30%", 9)
-    + T("vi-du", X, 262, 1200, "Ví dụ giả định: một đợt điều trị hết [10 triệu đồng], trong hạn mức", A("fade", 300, 300))
+    + T("vi-du", 100, 262, 1320, "Ví dụ giả định: một đợt điều trị hết [10 triệu đồng], trong hạn mức", A("fade", 300, 300))
     + hang(386, "Cơ sở tư, khoa quốc tế", "hoặc tự nguyện ở viện công", 500)
     + lop(`<rect x="${X}" y="380" width="${W70}" height="72" fill="${P.xanh}"/><rect x="${X + W70}" y="380" width="${W - W70}" height="72" fill="${P.cam}"/>`, X, 380, W, 72, "Thanh cơ sở tư: Bảo Việt 70 %, gia đình 30 %", "bieu-do", A("wipe", 600, 600))
-    + T("thanh-chu", X, 396, W70, "Bảo Việt trả 7 triệu", A("fade", 1000, 300)) + T("thanh-chu", X + W70, 396, W - W70, "gia đình trả 3 triệu", A("fade", 1100, 300))
+    + T("thanh-chu", X, 396, W70, "Bảo Việt trả 7 triệu", A("fade", 1000, 300)) + T("thanh-chu", X + W70, 396, W - W70, "gia đình 3 triệu", A("fade", 1100, 300))
     + hang(556, "Bệnh viện công", "điều trị thông thường", 1400)
     + lop(`<rect x="${X}" y="550" width="${W}" height="72" fill="${P.xanh}"/>`, X, 550, W, 72, "Thanh bệnh viện công: Bảo Việt trả đủ", "bieu-do", A("wipe", 1500, 600))
     + T("thanh-chu", X, 566, W, "Bảo Việt trả đủ 10 triệu — không đồng chi trả", A("fade", 1900, 300))
+    + blobSau(1450, 300, 420, 8, 2000) + minhHoa("family-rafiki", 1450, 300, 420, "Minh hoạ: bố mẹ đẩy xe nôi — gia đình có con nhỏ", 2000)
     + iconTron("baby-carriage", 146, 760, 34, "Biểu tượng trẻ nhỏ", A("pop", 2200, 300), P.camNhat)
     + T("gach", 200, 736, 1560, "Vì sao? Trẻ dưới 3 tuổi hay ốm; đồng chi trả 30 % hạn chế dùng dịch vụ đắt tiền, còn viện công vẫn được trả đủ.", A("fade", 2300, 400))
     + nguon("Hợp đồng Bảo Việt An Gia, Phụ lục 1 mục 2 (đồng chi trả). Ví dụ giả định do nhóm tính."));

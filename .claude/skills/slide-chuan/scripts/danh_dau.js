@@ -51,12 +51,15 @@ function goiY(trang, cau) {   // các dòng có nhiều chữ chung nhất với
 }
 
 // vùng cắt (điểm PDF) bao trọn khối chứa các cụm từ (hoặc ± le dòng), cộng lề; vệt dạ quang quy về tỉ lệ 0–1 của vùng cắt
-function vungVaVet(trang, kq, le = null, lePt = 10, leTren = 3) {
+function vungVaVet(trang, kq, le = null, lePt = 10, leTren = 2) {
   const p = trang[kq[0].trang], k = p.khoi[kq[0].khoi];
   let d0 = 0, d1 = k.length - 1;
   if (le !== null) { const ds = kq.flatMap((r) => r.dong); d0 = Math.max(0, Math.min(...ds) - le); d1 = Math.min(k.length - 1, Math.max(...ds) + le); }
   const ws = k.slice(d0, d1 + 1).flat();
-  const X0 = Math.min(...ws.map((w) => w.x0)) - lePt, Y0 = Math.min(...ws.map((w) => w.y0)) - leTren, X1 = Math.max(...ws.map((w) => w.x1)) + lePt, Y1 = Math.max(...ws.map((w) => w.y1)) + lePt;
+  const ytren = Math.min(...ws.map((w) => w.y0)), yduoi = Math.max(...ws.map((w) => w.y1));
+  // lề trên / dưới không vượt nửa khoảng trống tới dòng liền kề (không dính chân / đầu dòng bên cạnh, đường kẻ phía trên)
+  const truoc = d0 > 0 ? Math.max(...k[d0 - 1].map((w) => w.y1)) : -Infinity, sau = d1 < k.length - 1 ? Math.min(...k[d1 + 1].map((w) => w.y0)) : Infinity;
+  const X0 = Math.min(...ws.map((w) => w.x0)) - lePt, Y0 = Math.max(ytren - leTren, (truoc + ytren) / 2), X1 = Math.max(...ws.map((w) => w.x1)) + lePt, Y1 = Math.min(yduoi + lePt, (sau + yduoi) / 2);
   const W = X1 - X0, H = Y1 - Y0, r = (v) => +v.toFixed(4);
   return { vung: { x: X0 / p.W, y: Y0 / p.H, w: W / p.W, h: H / p.H }, trang: kq[0].trang + 1,
     vet: kq.map((q) => q.hop.map((h) => ({ x: r((h.x0 - 3 - X0) / W), y: r((h.y0 - 2 - Y0) / H), w: r((h.x1 - h.x0 + 6) / W), h: r((h.y1 - h.y0 + 4) / H) }))) };
@@ -71,7 +74,15 @@ async function danhDau(vao, ra, cau, { le = null, rong = 1600, dpi = 200 } = {})
   if (new Set(kq.map((r) => `${r.trang}/${r.khoi}`)).size > 1) throw new Error("các cụm từ nằm ở khối / trang khác nhau — chạy riêng từng cụm");
   const v = vungVaVet(trang, kq, le);
   await trangGoc(pdf, ra, { trang: v.trang, vung: [v.vung.x, v.vung.y, v.vung.w, v.vung.h], rong, dpi });
-  const m = await require("sharp")(ra).metadata();
+  // bỏ đường kẻ bảng / khung ở mép trên – dưới (hàng điểm ảnh tối phủ > 50 % bề ngang): nét vẽ, không phải chữ nên toạ độ chữ không tránh được
+  const sharp = require("sharp"), { data, info } = await sharp(ra).greyscale().raw().toBuffer({ resolveWithObject: true });
+  const toi = (y) => { let n = 0; for (let x = 0; x < info.width; x++) if (data[y * info.width + x] < 110) n++; return n / info.width > 0.5; };
+  let tren = 0, duoi = 0; const gioi = Math.round(info.height * 0.12);
+  for (let y = 0; y < gioi; y++) if (toi(y)) tren = y + 2;
+  for (let y = info.height - 1; y > info.height - gioi; y--) if (toi(y)) duoi = info.height - y + 1;
+  if (tren || duoi) { const h0 = info.height, h1 = h0 - tren - duoi, buf = await sharp(ra).extract({ left: 0, top: tren, width: info.width, height: h1 }).png().toBuffer(); fs.writeFileSync(ra, buf);
+    v.vet = v.vet.map((ds) => ds.map((q) => ({ ...q, y: +(((q.y * h0) - tren) / h1).toFixed(4), h: +((q.h * h0) / h1).toFixed(4) }))); }
+  const m = await sharp(ra).metadata();
   const out = { rong: m.width, cao: m.height, trang: v.trang, cau, vet: v.vet };
   fs.writeFileSync(ra.replace(/\.png$/i, "") + ".json", JSON.stringify(out, null, 1));
   return out;
