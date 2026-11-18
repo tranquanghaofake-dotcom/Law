@@ -11,3 +11,4 @@
 - Slide 7: trích nguyên văn Điều 4 từ ảnh hợp đồng — bản cũ ghi "không cần thông báo trước", câu này không có trong đoạn trích, đã bỏ.
 - Slide 17: trích đoạn cuối khoản 5 Điều 15 Luật 32/2024/QH15 (có dấu …), chủ thể ghi ở dòng trên.
 - Máy: 0 lỗi chặn; cảnh báo còn lại là nhãn ngắn (slide 15, 18) và chữ đọc liền.
+- Người duyệt độc lập (opus, đọc lạnh + chấm): ND 4 · DH 4 · TB 4 · TM 4 · NQ 4. Đã sửa đủ 10 điểm: slide 15 "+15 – 24 

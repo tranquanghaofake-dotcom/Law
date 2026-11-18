@@ -129,8 +129,8 @@ sec("mo-phan", "Phần I. Mẫu hợp đồng Bảo Việt An Gia là hợp đ�
         + T("so-thanh trai", X + w + 18, y + 8, 300, `${v} triệu`, A("fade", t0 + 300, 300)); }).join("")
     + lop(`<path d="M120 712 H1800" stroke="${P.may}" stroke-width="3"/>`, 120, 710, 1680, 4, "Vạch ngăn", "hoa-tiet")
     + T("vi-du", 120, 732, 1680, "Mọi gói đều gồm điều trị nội trú do bệnh, tai nạn, biến chứng thai sản:", A("fade", 1400, 300))
-    + [["bed", "Nằm viện tối đa [60 ngày]/năm"], ["stethoscope", "Khám [30 ngày] trước nhập viện"], ["calendar", "Tái khám [30 ngày] sau ra viện"], ["shield-check", "Chỉ điều trị tại [Việt Nam]"]]
-      .map(([ic, s], k) => dong(ic, 120 + k * 430, 806, 420, s, 1600 + k * 150)).join("")
+    + [["60 ngày", "nằm viện tối đa mỗi năm"], ["30 ngày", "khám trước khi nhập viện"], ["30 ngày", "tái khám sau khi ra viện"], ["Việt Nam", "phạm vi điều trị"]]
+      .map(([so, nhan], k) => T("cl-so", 120 + k * 420, 790, 400, so, A("fade", 1600 + k * 150, 300)) + T("buoc-mo", 120 + k * 420, 850, 400, nhan, A("fade", 1650 + k * 150, 300))).join("")
     + nguon("Hợp đồng Bảo Việt An Gia, Phụ lục 1 (bảng quyền lợi). Thanh vẽ đúng tỉ lệ hạn mức."));
 }
 
@@ -164,7 +164,6 @@ sec("mo-phan", "Phần I. Mẫu hợp đồng Bảo Việt An Gia là hợp đ�
         + T(`cl-so${chinh ? " cam-dam" : ""}`, cx - 140, iy + 44, 280, d ? `${d} ngày` : "Ngay", A("fade", t0 + 100, 300))
         + T("cl-ten", cx - 190, iy + 100, 380, ten, A("fade", t0 + 150, 300)); }).join("")
     + T("moc", 1250, AY + 30, 440, "sinh con: thêm [270 ngày] nữa", A("fade", 2000, 300))
-    + minhHoa("waiting-rafiki", 1130, 236, 300, "Minh hoạ: người xem đồng hồ đứng chờ trước cửa — thời gian chờ", 2200)
     + nguon("Hợp đồng Bảo Việt An Gia, Điều 5. Trục vẽ đúng tỉ lệ ngày. Tái tục liên tục: không chờ lại, trừ phần hạn mức nâng thêm."));
 }
 
@@ -236,8 +235,8 @@ sec("mo-phan", "Phần I. Mẫu hợp đồng Bảo Việt An Gia là hợp đ�
     + iconTron("shield-check", 200, 320, 44, "Biểu tượng điểm mạnh", A("pop", 200, 300), P.xanh) + T("muc-dau", 264, 296, 600, "Điểm mạnh", A("fade", 250, 300))
     + iconTron("alert-triangle", 1040, 320, 44, "Biểu tượng cần để ý", A("pop", 1400, 300), P.cam) + T("muc-dau", 1104, 296, 600, "Cần để ý", A("fade", 1450, 300))
     + lop(`<path d="M960 300 V900" stroke="${P.may}" stroke-width="4" stroke-linecap="round"/>`, 956, 300, 8, 600, "Vạch chia hai cột", "hoa-tiet")
-    + L.map(([s, d], k) => dong("check", 160, 410 + k * 120, 760, s, 400 + k * 200) + T("dieu", 228, 456 + k * 120, 600, d, A("fade", 480 + k * 200, 300))).join("")
-    + R.map(([s, d], k) => dong("alert-circle", 1000, 410 + k * 120, 800, s, 1600 + k * 200, P.camNhat) + T("dieu", 1068, 456 + k * 120, 600, d, A("fade", 1680 + k * 200, 300))).join("")
+    + L.map(([s, d], k) => dong("check", 140, 420 + k * 116, 640, s, 400 + k * 200, "#DDEFD5", "gach lon") + T("dieu phai", 780, 428 + k * 116, 150, d, A("fade", 480 + k * 200, 300))).join("")
+    + R.map(([s, d], k) => dong("alert-circle", 990, 420 + k * 116, 680, s, 1600 + k * 200, P.camNhat, "gach lon") + T("dieu phai", 1660, 428 + k * 116, 150, d, A("fade", 1680 + k * 200, 300))).join("")
     + nguon("Tổng hợp từ các điều khoản đã phân tích ở slide 4 – 11."));
 }
 
@@ -264,11 +263,11 @@ sec("mo-phan", "Phần II. Nhóm chia thị trường thành các giai đoạn: 
 
 // ============ 15 DOANH THU PHÍ 2018 – 2025 — cột ============
 { const D8 = [[2018, 133.7], [2019, 160.2], [2020, 184.7], [2021, 216.0], [2022, 251.3], [2023, 227.1, "−8,02 %"], [2024, 227.5, "−0,26 %"], [2025, 237.2, "+3,96 %"]], X0 = 250, DX = 196, CW = 128, Y = 880, KS = 1.8;
-  const mau = (n) => (n <= 2022 ? P.xanh : n === 2023 ? P.cam : n === 2024 ? "#F7C27A" : P.xanhNhat);
-  sec("noi-dung", "Giai đoạn 2018 – 2022 doanh thu phí tăng 15 – 24 % mỗi năm, từ 133,7 lên 251,3 nghìn tỷ đồng — gần gấp đôi — nhờ bùng nổ bán bảo hiểm qua ngân hàng. Năm 2023 doanh thu giảm 8,02 %, lần đầu giảm sau khoảng 10 năm. Năm 2024 đi ngang, năm 2025 tăng lại gần 4 %. Lưu ý: tốc độ tăng giảm là số cơ quan quản lý công bố, so với số liệu đã điều chỉnh của năm trước, nên lệch nhẹ so với phép chia trực tiếp giữa các cột.",
-    vien(1) + dau("Doanh thu phí [đi đâu] sau 2022?", "Gần gấp đôi trong 2018 – 2022, rồi 2023 [giảm lần đầu] sau khoảng 10 năm", 15)
+  const mau = (n) => (n === 2023 || n === 2024 ? P.cam : P.xanh);   // cam = năm giảm, xanh = năm tăng
+  sec("noi-dung", "Giai đoạn 2019 – 2022 doanh thu phí tăng 15 – 20 % mỗi năm, từ 133,7 lên 251,3 nghìn tỷ đồng — gần gấp đôi — nhờ bùng nổ bán bảo hiểm qua ngân hàng. Năm 2023 doanh thu giảm 8,02 % — năm đầu tiên đi xuống trong cả giai đoạn. Năm 2024 đi ngang, năm 2025 tăng lại gần 4 %. Lưu ý: tốc độ tăng giảm là số cơ quan quản lý công bố, so với số liệu đã điều chỉnh của năm trước, nên lệch nhẹ so với phép chia trực tiếp giữa các cột.",
+    vien(1) + dau("Doanh thu phí [đi đâu] sau 2022?", "Gần gấp đôi trong 2018 – 2022, rồi 2023 [giảm 8 %], đi ngang 2024", 15)
     + lop(`<path d="M${X0} 352 V340 H${X0 + 4 * DX + CW} V352" stroke="${P.xanh}" stroke-width="4" fill="none"/>`, X0, 338, 4 * DX + CW, 16, "Ngoặc giai đoạn tăng nóng 2018 – 2022", "bieu-do", A("fade", 1500, 300))
-    + T("moc xanh", X0, 290, 4 * DX + CW, "tăng nóng: +15 – 24 % mỗi năm", A("fade", 1500, 300))
+    + T("moc xanh", X0, 290, 4 * DX + CW, "tăng nóng: +15 – 20 % mỗi năm", A("fade", 1500, 300))
     + D8.map(([n, v, tg], k) => { const x = X0 + k * DX, h = Math.round(v * KS), t0 = 300 + k * 160;
       return lop(`<rect x="${x}" y="${Y - h}" width="${CW}" height="${h}" fill="${mau(n)}"/>`, x, Y - h, CW, h, `Cột ${n}: ${String(v).replace(".", ",")} nghìn tỷ đồng`, "bieu-do", A("rise", t0, 400))
         + T("so-cot", x - 30, Y - h - 46, CW + 60, String(v.toFixed(1)).replace(".", ","), A("fade", t0 + 200, 300))
@@ -328,7 +327,7 @@ sec("trich", "Ngày 01/7/2024 Luật Các tổ chức tín dụng 2024 có hiệ
         + lop(`<rect x="${xa}" y="${y}" width="${wa}" height="56" fill="${P.cam}"/>`, xa, y, wa, 56, `Nhân thọ ${n}: ${sa}`, "bieu-do", A("wipe", t0, 400))
         + T(`so-thanh ${a < 0 ? "cam-dam phai" : "trai"}`, a < 0 ? xa - 216 : Z + wa + 14, y + 8, 200, sa, A("fade", t0 + 200, 300))
         + lop(`<rect x="${Z}" y="${y + 66}" width="${wb}" height="56" fill="${P.xanh}"/>`, Z, y + 66, wb, 56, `Phi nhân thọ ${n}: ${sb}`, "bieu-do", A("wipe", t0 + 200, 400))
-        + T("so-thanh trai", Z + 330, y + 74, 260, sb, A("fade", t0 + 400, 300)); }).join("")
+        + T("so-thanh trai", Z + (wb > 250 ? 294 : wb) + 14, y + 74, 260, sb, A("fade", t0 + 400, 300)); }).join("")
     + iconTron("heart-plus", 1440, 380, 40, "Biểu tượng nhân thọ", A("pop", 2000, 300), P.camNhat) + T("muc-dau nho", 1496, 356, 330, "Nhân thọ", A("fade", 2000, 300))
     + T("buoc-mo trai", 1400, 430, 420, "tính mạng, tích luỹ — bán nhiều qua ngân hàng", A("fade", 2050, 300))
     + iconTron("shield-check", 1440, 610, 40, "Biểu tượng phi nhân thọ", A("pop", 2200, 300), "#DDEFD5") + T("muc-dau nho", 1496, 586, 330, "Phi nhân thọ", A("fade", 2200, 300))
@@ -365,21 +364,21 @@ sec("trich", "Ngày 01/7/2024 Luật Các tổ chức tín dụng 2024 có hiệ
         + iconTron(ic, x, AY, 38, `Biểu tượng mốc ${ngay}`, A("pop", t0, 300), chinh ? P.cam : "#DDEFD5")
         + T(`cl-so${chinh ? " cam-dam" : ""}`, cx - 230, ty, 460, ngay, A("fade", t0 + 100, 300))
         + T("muc-dau giua nho", cx - 230, ty + 58, 460, viec, A("fade", t0 + 150, 300))
-        + T("buoc-mo", cx - 230, ty + 140, 460, ct, A("fade", t0 + 200, 300)); }).join("")
+        ; }).join("")
     + minhHoa("lawyer-rafiki", 1290, 236, 330, "Minh hoạ: luật sư cầm hồ sơ trước bàn — các mốc pháp lý", 2400)
     + nguon("Luật 08/2022/QH15; Luật 32/2024/QH15; Luật 139/2025/QH15 (vanban.chinhphu.vn, vbpl.vn). Trục vẽ theo tỉ lệ tháng."));
 }
 
 // ============ 21 CHÍN THÁNG 2026 — thanh cơ cấu + ba số lớn ============
 { const X = 160, W = 1600, K = W / 175.8, wn = Math.round(101.7 * K);
-  sec("so-lon", "Cập nhật 9 tháng năm 2026 theo báo cáo tình hình kinh tế – xã hội: tổng doanh thu phí ước 175,8 nghìn tỷ, tăng 2,4 %. Trong đó nhân thọ 101,7 nghìn tỷ — vẫn chiếm phần lớn, nguồn báo chí không nêu tốc độ nên nhóm không ghi — và phi nhân thọ 74,1 nghìn tỷ, tăng 15,1 %. Chi trả quyền lợi 77,9 nghìn tỷ, tăng 13,1 %. Lưu ý: tài liệu nhóm trích nguồn 21, 22 nhưng chưa có trong danh mục — nhóm sẽ bổ sung.",
+  sec("so-lon", "Cập nhật 9 tháng năm 2026 theo báo cáo tình hình kinh tế – xã hội: tổng doanh thu phí ước 175,8 nghìn tỷ, tăng 2,4 %. Trong đó nhân thọ 101,7 nghìn tỷ, vẫn chiếm phần lớn, và phi nhân thọ 74,1 nghìn tỷ, tăng 15,1 %. Nguồn báo chí không nêu tốc độ của nhân thọ; nhóm tự suy từ hai số trên: cùng kỳ năm trước tổng khoảng 171,7 và phi nhân thọ khoảng 64,4 nghìn tỷ, vậy nhân thọ khoảng 107,3 xuống 101,7 — giảm khoảng 5 %. Đây là số nhóm tự tính, không phải số công bố. Chi trả quyền lợi 77,9 nghìn tỷ, tăng 13,1 %. Lưu ý: tài liệu nhóm trích nguồn 21, 22 nhưng chưa có trong danh mục — nhóm sẽ bổ sung.",
     vien(1) + dau("9 tháng 2026: thị trường [lớn nhờ ai]?", "Tổng phí chỉ tăng 2,4 %, còn phi nhân thọ tăng [15,1 %]", 21)
     + T("vi-du", X, 262, 1600, "Tổng doanh thu phí 9 tháng 2026: [175,8 nghìn tỷ đồng]", A("fade", 200, 300))
     + lop(`<rect x="${X}" y="350" width="${wn}" height="110" fill="${P.camNhat}"/><rect x="${X + wn}" y="350" width="${W - wn}" height="110" fill="${P.xanh}"/>`, X, 350, W, 110, "Thanh cơ cấu: nhân thọ 101,7, phi nhân thọ 74,1 nghìn tỷ", "bieu-do", A("wipe", 400, 800))
     + T("thanh-chu", X, 384, wn, "Nhân thọ 101,7 nghìn tỷ", A("fade", 900, 300)) + T("thanh-chu", X + wn, 384, W - wn, "Phi nhân thọ 74,1 nghìn tỷ", A("fade", 1000, 300))
-    + [["+2,4 %", "tổng doanh thu phí", ""], ["+15,1 %", "phi nhân thọ", " xanh"], ["+13,1 %", "chi trả quyền lợi (77,9 nghìn tỷ)", ""]]
+    + [["+2,4 %", "tổng doanh thu phí", ""], ["+15,1 %", "phi nhân thọ", " xanh"], ["≈ −5 %", "nhân thọ (nhóm tự tính)", " cam"]]
       .map(([so, nhan, c], k) => T(`so-to${c} lon`, 160 + k * 540, 560, 520, so, A("fade", 1300 + k * 300, 400)) + T("so-nhan", 160 + k * 540, 712, 520, nhan, A("fade", 1350 + k * 300, 300))).join("")
-    + T("buoc-mo", 160, 846, 1600, "Nhân thọ: nguồn không nêu tốc độ tăng, nhóm không ghi.", A("fade", 2300, 300))
+    + T("buoc-mo", 160, 846, 1600, "Nhân thọ ≈ −5 %: suy từ tổng (+2,4 %) và phi nhân thọ (+15,1 %), cùng kỳ năm trước. Chi trả quyền lợi 77,9 nghìn tỷ (+13,1 %).", A("fade", 2300, 300))
     + nguon("Số ước tính 9 tháng 2026, báo cáo tình hình kinh tế – xã hội (dẫn theo anninhthudo.vn, baomoi.com)."));
 }
 
@@ -392,7 +391,7 @@ sec("trich", "Ngày 01/7/2024 Luật Các tổ chức tín dụng 2024 có hiệ
         + T("so-tron nho", cx - 56, 322, 112, String(k + 1), A("pop", t0, 300))
         + T("buoc-ten", cx - 260, 430, 520, ten, A("fade", t0 + 100, 300)) + T("buoc-mo", cx - 260, 480, 520, mo, A("fade", t0 + 150, 300)); }).join("")
     + [660, 1260].map((x) => lop(`<path d="M${x} 330 V600" stroke="${P.may}" stroke-width="4" stroke-linecap="round"/>`, x - 4, 330, 8, 270, "Vạch chia cột", "hoa-tiet")).join("")
-    + T("cam-on", 160, 700, 1600, "Cảm ơn thầy cô và các bạn đã lắng nghe", A("fade", 2000, 500))
+    + T("cam-on", 160, 780, 1600, "Cảm ơn thầy cô và các bạn đã lắng nghe", A("fade", 2000, 500))
     + nguon("Minh hoạ: Illustrations by Storyset (storyset.com) · Biểu tượng: Tabler Icons (giấy phép MIT)."));
 }
 
@@ -424,10 +423,10 @@ em{font-style:normal;color:#3E8A2A}
 .thanh-chu{font:700 30px/1.3 'Be Vietnam Pro';color:${P.muc};text-align:center}.thanh-chu em{color:${P.camDam}}
 .so-tron{font:800 64px/1 'Encode Sans';color:${P.muc};text-align:center}.so-tron.nho{font-size:52px}
 .cau{font:800 44px/1.2 'Encode Sans';color:${P.muc};text-align:center}
-.gach{font:600 30px/1.35 'Be Vietnam Pro';color:${P.muc}}.gach em{color:#9A5207}
+.gach{font:600 30px/1.35 'Be Vietnam Pro';color:${P.muc}}.gach em{color:#9A5207}.gach.lon{font-size:32px}
 .so-bac{font:800 96px/1 'Encode Sans';color:${P.muc};text-align:center}
 .buoc-ten{font:800 34px/1.2 'Encode Sans';color:${P.muc};text-align:center}
-.buoc-mo{font:400 28px/1.35 'Be Vietnam Pro';color:${P.phu};text-align:center}.buoc-mo em{color:#9A5207}
+.buoc-mo{font:400 30px/1.35 'Be Vietnam Pro';color:${P.phu};text-align:center}.buoc-mo em{color:#9A5207}
 .nhan-mui{font:700 30px/1.2 'Be Vietnam Pro';color:${P.phu};text-align:center}
 .muc-dau{font:800 36px/1.25 'Encode Sans';color:${P.muc}}.muc-dau.nho{font-size:32px}
 .trich-lora{font:700 38px/1.5 'Lora';color:${P.muc}}.trich-lora em{color:#3E8A2A}.trich-lora.lon{font-size:46px}
