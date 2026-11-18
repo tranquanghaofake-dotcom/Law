@@ -1,0 +1,7 @@
+{"rong":600,"cao":560,"manh":[
+ {"tu":"../../anh/storyset/post-office-rafiki.svg","nhom":"character-2","x":240,"y":50,"cao":360},
+ {"tu":"../../anh/storyset/post-office-rafiki.svg","nhom":"Desk","x":150,"y":260,"rong":420},
+ {"svg":"<rect x=\"158\" y=\"325\" width=\"326\" height=\"72\" fill=\"#FFFFFF\"/><g transform=\"translate(292 333) scale(2.3)\" fill=\"none\" stroke=\"#1E2326\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\">    <path d=\"M3 21l18 0\" />  <path d=\"M3 10l18 0\" />  <path d=\"M5 6l7 -3l7 3\" />  <path d=\"M4 10l0 11\" />  <path d=\"M20 10l0 11\" />  <path d=\"M8 14l0 3\" />  <path d=\"M12 14l0 3\" />  <path d=\"M16 14l0 3\" /></g>"},
+ {"tu":"../../anh/storyset/post-office-rafiki.svg","nhom":"character-1","x":20,"y":120,"cao":420},
+ {"svg":"<rect x=\"300\" y=\"6\" width=\"290\" height=\"104\" rx=\"20\" fill=\"#FDE3BC\" stroke=\"#F39A1E\" stroke-width=\"4\"/><path d=\"M372 108 L352 142 L400 108 Z\" fill=\"#FDE3BC\" stroke=\"#F39A1E\" stroke-width=\"4\" stroke-linejoin=\"round\"/><rect x=\"360\" y=\"104\" width=\"36\" height=\"8\" fill=\"#FDE3BC\"/>"}
+]}

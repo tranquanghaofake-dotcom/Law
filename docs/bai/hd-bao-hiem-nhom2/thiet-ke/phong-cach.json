@@ -63,6 +63,7 @@
  },
  "phongPhu": false,
  "mienBangMau": [
-  "anh/storyset/"
+  "anh/storyset/",
+  "anh/canh/"
  ]
 }

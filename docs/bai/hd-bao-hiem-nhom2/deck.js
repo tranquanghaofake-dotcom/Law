@@ -50,6 +50,10 @@ const nenDay = () => { const toas = [[0, 110, 150], [120, 90, 110], [220, 120, 1
   return lop(toas.map(([x, w, h], k) => toaNha(x, w, h, k % 3 === 1 ? P.pho2 : P.pho, 936)).join("") + `<rect x="0" y="936" width="1920" height="18" fill="${P.nuoc}"/><rect x="0" y="954" width="1920" height="126" fill="${P.co}"/>`, 0, 700, 1920, 380, "Hình trang trí: dải phố, sông, cỏ", "hoa-tiet"); };
 // minh hoạ Storyset (kiểu Rafiki, màu nhấn xanh lá) — anh/storyset/, ghi công ở slide cuối và ghi-cong.md
 const minhHoa = (f, x, y, w, alt, t0 = 300) => `<img data-l="mh-${f}" data-loai="minh-hoa" data-alt="${esc(alt)}" ${A("fade", t0, 700)} src="anh/storyset/${f}.svg" style="position:absolute;left:${x}px;top:${y}px;width:${w}px;height:${w}px">`;
+// cảnh / nhân vật ghép bằng scripts/ghep_canh.js (anh/canh/, nguồn Storyset) — đặt theo chiều cao, rộng tự theo viewBox
+const canh = (f, x, y, h, alt, t0 = 300, hieu = "fade") => { const [, , vw, vh] = fs.readFileSync(path.join(D, "anh", "canh", f + ".svg"), "utf8").match(/viewBox="([^"]+)"/)[1].split(" ").map(Number), w = Math.round((h * vw) / vh);
+  return `<img data-l="canh-${f}" data-loai="minh-hoa" data-alt="${esc(alt)}" ${A(hieu, t0, 600)} src="anh/canh/${f}.svg" style="position:absolute;left:${x}px;top:${y}px;width:${w}px;height:${h}px">`; };
+const canhGiua = (f, cx, y, h, alt, t0, hieu) => { const [, , vw, vh] = fs.readFileSync(path.join(D, "anh", "canh", f + ".svg"), "utf8").match(/viewBox="([^"]+)"/)[1].split(" ").map(Number); return canh(f, Math.round(cx - (h * vw) / vh / 2), y, h, alt, t0, hieu); };
 // icon trong tròn cam, nét đậm màu mực (kiểu icon hai tông của mẫu 2)
 const iconTron = (ic, cx, cy, r, alt, ex = "", nen = P.cam) => lop(`<circle cx="${cx}" cy="${cy}" r="${r}" fill="${nen}"/>` + mh.iconNet(D, ic, cx, cy, r * 1.05, P.muc, 3.2), cx - r, cy - r, 2 * r, 2 * r, alt, "net", ex);
 const dau = (td, ketLuan, so) => `<h1 class="td" data-t data-tieu-de ${A("fade", 0, 500)} style="left:260px;top:76px;width:1400px">${em(td)}</h1>`
@@ -106,19 +110,18 @@ sec("mo-phan", "Phần I. Mẫu hợp đồng Bảo Việt An Gia là hợp đ�
     + nguon("Hợp đồng Bảo Việt An Gia, Điều 12 (thứ tự ưu tiên áp dụng khi các tài liệu mâu thuẫn)."));
 }
 
-// ============ 5 NĂM TƯ CÁCH — sơ đồ một gia đình ============
-{ const N = [["user", "Bên mua bảo hiểm", "ví dụ: [bố] · giao kết, đóng phí", 340, 420], ["building", "Bảo Việt", "nhận phí, cam kết chi trả", 960, 420], ["user-heart", "Người được bảo hiểm", "ví dụ: [con] · được bảo vệ sức khoẻ", 1580, 420],
-    ["cash", "Người chỉ định nhận tiền", "ví dụ: [mẹ] · nhận tiền bồi thường", 640, 720], ["heart-handshake", "Người thụ hưởng", "nhận tiền khi người được bảo hiểm tử vong", 1280, 720]];
+// ============ 5 NĂM TƯ CÁCH — một gia đình thật (nhân vật ghép từ Storyset, scripts/ghep_canh.js) ============
+{ const N = [["bo", "Bên mua bảo hiểm", "ví dụ: [bố] · giao kết, đóng phí", 340, 250, 200], ["bao-viet", "Bảo Việt", "nhận phí, cam kết chi trả", 960, 250, 200], ["con", "Người được bảo hiểm", "ví dụ: [con] · được bảo vệ sức khoẻ", 1580, 250, 200],
+    ["me", "Người chỉ định nhận tiền", "ví dụ: [mẹ] · nhận tiền bồi thường", 640, 600, 180], ["thu-huong", "Người thụ hưởng", "nhận tiền khi người được bảo hiểm tử vong", 1280, 600, 180]];
   sec("noi-dung", "Hợp đồng tách năm tư cách. Lấy ví dụ bố mua bảo hiểm cho con. Bố là bên mua: giao kết, đóng phí. Bảo Việt nhận phí và cam kết chi trả. Con là người được bảo hiểm: sức khoẻ, tính mạng của con được bảo vệ. Khi con điều trị, tiền bồi thường có thể trả cho mẹ là người được chỉ định nhận tiền. Còn người thụ hưởng chỉ nhận tiền khi người được bảo hiểm tử vong. Một hợp đồng có thể gồm nhiều người, mỗi người một chương trình — tiện cho gói gia đình.",
     vien(0) + dau("Ai đóng tiền, ai được [bảo vệ]?", "Một hợp đồng có năm tư cách — có thể là năm người khác nhau", 5)
-    + lopMui(406, 420, 890, 420, "Mũi tên: bên mua đóng phí cho Bảo Việt", A("wipe", 900, 400), P.phu) + T("nhan-mui", 450, 368, 400, "đóng phí", A("fade", 1000, 300))
-    + lopMui(1030, 420, 1510, 420, "Mũi tên: Bảo Việt bảo vệ người được bảo hiểm", A("wipe", 1300, 400), P.phu) + T("nhan-mui", 1070, 368, 400, "bảo vệ", A("fade", 1400, 300))
-    + lopMui(930, 480, 690, 660, "Mũi tên: Bảo Việt chi trả cho người chỉ định nhận tiền", A("fade", 1800, 400), P.xanh) + T("nhan-mui phai", 560, 540, 240, "chi trả", A("fade", 1900, 300))
-    + lopMui(990, 480, 1230, 660, "Mũi tên nét đứt: Bảo Việt trả cho người thụ hưởng khi tử vong", A("fade", 2200, 400), P.cam, "12 10")
-    + N.map(([ic, ten, mo, x, y], k) => { const t0 = [200, 500, 1200, 1700, 2100][k];
-      return iconTron(ic, x, y, 56, `Biểu tượng ${ten}`, A("pop", t0, 300), k === 1 ? P.cam : "#DDEFD5")
-        + T("buoc-ten", x - 220, k === 1 ? 252 : y + 70, 440, ten, A("fade", t0 + 80, 300)) + T("buoc-mo", x - 220, k === 1 ? 298 : y + 116, 440, mo, A("fade", t0 + 120, 300)); }).join("")
-    + T("nhan-mui trai", 1130, 540, 260, "khi tử vong", A("fade", 2300, 300))
+    + N.map(([f, ten, mo, cx, y, h], k) => { const t0 = [200, 500, 1200, 1700, 2100][k], ty = y + h + 8;
+      return canhGiua(f, cx, y, h, `Nhân vật: ${ten}`, t0, "rise")
+        + T("buoc-ten", cx - 230, ty, 460, ten, A("fade", t0 + 80, 300)) + T("buoc-mo", cx - 230, ty + 44, 460, mo, A("fade", t0 + 120, 300)); }).join("")
+    + lopMui(410, 380, 880, 380, "Mũi tên: bên mua đóng phí cho Bảo Việt", A("wipe", 900, 400), P.phu) + T("nhan-mui", 445, 326, 400, "đóng phí", A("fade", 1000, 300))
+    + lopMui(1040, 380, 1490, 380, "Mũi tên: Bảo Việt bảo vệ người được bảo hiểm", A("wipe", 1300, 400), P.phu) + T("nhan-mui", 1065, 326, 400, "bảo vệ", A("fade", 1400, 300))
+    + lopMui(930, 562, 700, 630, "Mũi tên: Bảo Việt chi trả cho người chỉ định nhận tiền", A("fade", 1800, 400), P.xanh) + T("nhan-mui phai", 560, 556, 240, "chi trả", A("fade", 1900, 300))
+    + lopMui(990, 562, 1225, 630, "Mũi tên nét đứt: Bảo Việt trả cho người thụ hưởng khi tử vong", A("fade", 2200, 400), P.cam, "12 10") + T("nhan-mui trai", 1110, 556, 260, "khi tử vong", A("fade", 2300, 300))
     + nguon("Hợp đồng Bảo Việt An Gia, Điều 1, 2, 8 (các bên và người nhận tiền). Ví dụ gia đình là minh hoạ của nhóm."));
 }
 
@@ -308,16 +311,14 @@ sec("mo-phan", "Phần II. Nhóm chia thị trường thành các giai đoạn: 
 // ============ 17 LUẬT CẤM BÁN KÈM — trích nguyên văn ============
 sec("trich", "Ngày 01/7/2024 Luật Các tổ chức tín dụng 2024 có hiệu lực. Điều 15 liệt kê các hành vi bị nghiêm cấm; khoản 5 cấm tổ chức tín dụng và nhân viên gắn việc bán bảo hiểm không bắt buộc với việc cung ứng sản phẩm, dịch vụ ngân hàng dưới mọi hình thức — tức là không được ép khách mua bảo hiểm thì mới cho vay. Đây là phản ứng trực tiếp với sai phạm năm 2023.",
   vien(1) + dau("Luật [cấm] gì từ 01/7/2024?", "Ngân hàng không được ép khách mua bảo hiểm mới cho vay, mở thẻ", 17)
-  + lop(`<rect x="160" y="300" width="10" height="400" fill="${P.cam}"/>`, 160, 300, 10, 400, "Vạch trích dẫn", "hoa-tiet")
+  + lop(`<rect x="160" y="300" width="10" height="410" fill="${P.cam}"/>`, 160, 300, 10, 410, "Vạch trích dẫn", "hoa-tiet")
   + T("trich-nguon", 200, 300, 1040, "Nghiêm cấm tổ chức tín dụng, chi nhánh ngân hàng nước ngoài và người quản lý, điều hành, nhân viên của họ:", A("fade", 200, 400))
   + T("trich-lora lon", 200, 400, 1040, "“… [gắn việc bán sản phẩm bảo hiểm không bắt buộc] với việc cung ứng sản phẩm, dịch vụ ngân hàng [dưới mọi hình thức].”", A("fade", 400, 600))
-  + T("trich-nguon", 200, 760, 1040, "Luật Các tổ chức tín dụng số 32/2024/QH15, khoản 5 Điều 15 (hành vi bị nghiêm cấm) — hiệu lực 01/7/2024", A("fade", 800, 400))
-  + iconTron("building-bank", 1420, 470, 64, "Biểu tượng ngân hàng", A("pop", 1200, 300), "#DDEFD5")
-  + iconTron("shield-check", 1700, 470, 64, "Biểu tượng bảo hiểm", A("pop", 1300, 300), "#DDEFD5")
-  + lop(`<path d="M1490 470 H1630" stroke="${P.phu}" stroke-width="6" stroke-dasharray="14 10"/>`, 1488, 466, 144, 8, "Đường nối ngân hàng và bảo hiểm", "net", A("fade", 1400, 300))
-  + iconTron("ban", 1560, 470, 40, "Biểu tượng cấm", A("pop", 1600, 300), P.cam)
-  + T("buoc-mo", 1320, 548, 200, "dịch vụ ngân hàng", A("fade", 1300, 300)) + T("buoc-mo", 1600, 548, 200, "bảo hiểm tự nguyện", A("fade", 1400, 300))
-  + T("gach giua", 1320, 660, 480, "không được [gắn với nhau], dưới mọi hình thức", A("fade", 1800, 300))
+  + T("trich-nguon", 200, 640, 1040, "Luật Các tổ chức tín dụng số 32/2024/QH15, khoản 5 Điều 15 (hành vi bị nghiêm cấm) — hiệu lực 01/7/2024", A("fade", 800, 400))
+  + canh("ngan-hang", 1250, 290, 560, "Cảnh ghép: khách đứng trước quầy ngân hàng, nhân viên nói phải mua bảo hiểm mới duyệt vay", 1000)
+  + T("bong-noi", 1250 + 316, 290 + 14, 268, "Mua bảo hiểm thì mới duyệt vay!", A("fade", 1500, 300))
+  + iconTron("ban", 1250 + 300, 290 + 104, 36, "Biểu tượng cấm đè lên lời ép mua", A("pop", 2000, 400), P.cam)
+  + T("gach giua", 1250, 866, 600, "Từ 01/7/2024: [bị cấm]", A("fade", 2200, 300))
   + nguon("Đối chiếu nguyên văn khoản 5 Điều 15 trong văn bản hợp nhất Luật Các tổ chức tín dụng số 158 của Văn phòng Quốc hội."));
 
 // ============ 18 NHÂN THỌ / PHI NHÂN THỌ — thanh hai chiều ============
@@ -449,6 +450,7 @@ em{font-style:normal;color:#3E8A2A}
 .dieu{font:400 28px/1.3 'Be Vietnam Pro';color:${P.phu}}
 .cam-on{font:800 52px/1.2 'Encode Sans';color:#3E8A2A;text-align:center}
 .trai{text-align:left !important}.phai{text-align:right !important}.giua{text-align:center !important}
+.bong-noi{font:700 28px/1.3 'Be Vietnam Pro';color:${P.muc};text-align:center}
 .canh-bao-chu{font:600 32px/1.35 'Be Vietnam Pro';color:${P.muc}}.canh-bao-chu em{color:#B5650A}
 `);
 fs.rmSync(path.join(D, "slides"), { recursive: true, force: true });
