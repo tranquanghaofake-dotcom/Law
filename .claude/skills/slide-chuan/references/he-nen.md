@@ -15,8 +15,8 @@ Nguồn: 54 mẫu tham chiếu (33 đợt 1 + 21 đợt 2, chủ yếu Slidesgo/
 | N6 | Chất liệu (giấy kẻ, giấy cũ, lưới chấm) | deck có chủ đề vật liệu rõ | cả deck, vẫn đổi vật đặt trên |
 
 ## 2. Quy tắc
-1. Chọn **N1 + N2 + ít nhất một trong N3/N4/N5** → ≥ 3 loại nền cho deck ≥ 12 slide.
-2. **Hoạ tiết N1** (chỉ khi hướng phong cách có hoạ tiết — hướng biên tập tối giản thì **không** dùng; nhịp đến từ đổi bố cục, `bo-cuc.md`): 1 bộ 2–4 hoạ tiết tự vẽ cùng phong cách bài (khối bo, lưới chấm, đường lượn, hình học gợi chủ đề — vd. bài bảo hiểm: mép giấy hợp đồng, ô lưới bảng tính; bài hình sự: vạch hồ sơ). Mỗi slide N1 đặt 1–2 hoạ tiết ở **góc khác slide trước**; hoạ tiết không đè vùng chữ, độ tương phản thấp (≤ 15 % đậm hơn nền), `data-alt="Hình trang trí"`.
+1. Chọn **N1 + N2** (thêm N3/N4/N5 khi có vai thật). Các ngưỡng đếm ở mục này là **cảnh báo** (18/11/2026) — không đổi nền chỉ để "đa dạng".
+2. **Hoạ tiết N1** — mặc định **không** dùng (hướng biên tập, `bo-cuc.md` mục 7: hoạ tiết lấp chỗ là vẻ "AI"); chỉ dùng khi hướng minh hoạ cần: 1 bộ 2–4 hoạ tiết tự vẽ cùng phong cách bài (khối bo, lưới chấm, đường lượn, hình học gợi chủ đề — vd. bài bảo hiểm: mép giấy hợp đồng, ô lưới bảng tính; bài hình sự: vạch hồ sơ). Mỗi slide N1 đặt 1–2 hoạ tiết ở **góc khác slide trước**; hoạ tiết không đè vùng chữ, độ tương phản thấp (≤ 15 % đậm hơn nền), `data-alt="Hình trang trí"`.
 3. **Không quá 6 slide liền cùng nền cùng vị trí hoạ tiết**; không quá 10 slide liền cùng họ nền — xen N2/N3.
 4. **Một họ nền không quá 80 %** deck.
 5. N2 dùng **đúng vai**: mở chương, số lớn, trích luật, câu chốt, kết — không đổi nền ngẫu nhiên giữa các slide nội dung.

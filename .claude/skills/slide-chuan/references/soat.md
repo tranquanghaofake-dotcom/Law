@@ -2,7 +2,8 @@
 
 ## 1. Mười điều kiểm mỗi slide (nhìn bằng mắt trên `h-NN.jpg`)
 1. **Glance test 3 giây**: nhìn 3 giây rồi quay đi, nói lại được ý chính (Duarte). Và **đọc riêng slide (không nghe lời giảng) vẫn nắm đủ ý** — thiếu ý cốt lõi trên slide là lỗi, kể cả khi ghi chú có.
-2. **Một ý**; tiêu đề là câu khẳng định đầy đủ (chủ ngữ + vị ngữ + phạm vi), ≤ 2 dòng (Alley).
+2. **Một ý**; tiêu đề là kết luận cụ thể, câu đầy đủ (chủ ngữ + vị ngữ + đối tượng thật), ≤ 2 dòng (Alley) — không chơi chữ, không câu đối xứng đố mẹo.
+2b. **Tự hiểu**: mỗi cụm chữ đọc riêng vẫn hiểu; không viết tắt chưa giải thích; không cụm cụt kiểu "theo uỷ quyền", "chịu đòn nặng nhất".
 3. **Bằng chứng là hình** (sơ đồ, bảng, ảnh, hình vẽ đúng tỉ lệ) — không phải gạch đầu dòng.
 4. **Không chi tiết thừa**: chỉ vào từng chấm, dải, vật, màu — nói được nó mang nghĩa gì; không nói được thì bỏ (Mayer: coherence).
 5. **Không chép lời nói lên slide**: chữ trên slide là từ khoá, định nghĩa, số cần nhìn; giải thích để ở notes (Mayer: redundancy).
@@ -22,10 +23,12 @@ Thêm cho hình: **hình là chính sự vật** (không ẩn dụ phải giải
 | Mạch lạc | đọc liền tiêu đề thành lập luận | có chỗ nhảy ý | rời rạc |
 | Dễ hiểu | sinh viên mới học hiểu từng slide trong 3 giây | phải nghe giảng mới hiểu | khó hiểu cả khi nghe |
 | **Nhất quán** (chống hổ lốn, `bo-cuc.md`) | một ngôn ngữ hình ảnh, mọi slide đúng bố cục mẫu, cùng bảng màu, cùng nét | 2 giọng hình, vài slide lệch khung | ≥ 3 giọng hình (ảnh thật + hoạt hình + đồ hoạ phẳng…), mỗi slide một kiểu |
-| **Phong phú** (chống quá đơn giản, `bo-cuc.md` mục 7) | đặt cạnh mẫu thương mại không thấy "trơn": nền có khối theo vai, hình chính là cảnh, khối tô đặc | nền trơn, hình nét nhỏ giữa khoảng trống, nhiều slide chỉ chữ |
-| **Dễ đọc** (`bo-cuc.md` mục 8) | đọc được từ cuối lớp trên máy chiếu: thân bài ≥ 30 px, ≥ 7 : 1, ≤ 45 chữ / slide | chữ xám nhạt nhỏ, đoạn dài, slide đặc chữ |
-| **Thẩm mỹ** (so với bảng tham chiếu) | đứng cạnh mẫu chuyên nghiệp không lạc tông: thứ bậc rõ, cân bằng, căn theo lưới, khoảng thở đều, có nhịp; **đa dạng trong hệ thống**: ≥ 3 loại nền đúng vai + hoạ tiết đổi vị trí, ≥ 6 kiểu trình bày dữ liệu, mỗi phần một hình chính riêng | sạch nhưng đơn điệu: một nền phẳng suốt deck, bảng một kiểu, cùng vài hình dán lại nhiều slide | lệch lưới, chật / trống bất thường, hình sai tỉ lệ, đổi nền / màu ngẫu nhiên không theo vai |
-Giao khi mọi hạng ≥ 4 — kể cả Nhất quán và Thẩm mỹ (PPTEval dùng Nội dung / Thiết kế / Mạch lạc, thang 1–5 — arXiv 2501.03936).
+| **Tự hiểu** (đọc lạnh, `vai-tro.md`) | người duyệt chỉ xem ảnh slide tóm đúng ý ≥ 90 % slide; không viết tắt lạ, không cụm cụt | tóm đúng 70–90 %; vài slide phải đoán | < 70 %; tiêu đề đố mẹo, nhãn cụt |
+| **Chống vẻ AI** (`bo-cuc.md` mục 7) | trông như trang báo cáo chuyên ngành: kẻ ngang, nền trắng, khối chỉ khi màu có nghĩa và tách nền rõ | còn vài chip / thẻ bo / panel nhạt | thẻ bo góc + bóng + chip in hoa + huy hiệu icon khắp deck; khối tan vào nền |
+| **Hình đúng bài** (`nguon-hinh.md` quy tắc 0) | hình chính là tài liệu / số liệu / sự vật của chính bài, có khoanh chỗ đang nói | vài ảnh minh hoạ chung chung | hình đổi sang bài khác vẫn dùng được |
+| **Dễ đọc** (`bo-cuc.md` mục 8) | đọc được từ cuối lớp trên máy chiếu: thân bài ≥ 30 px, ≥ 7 : 1; ít chữ nhưng không cụt | chữ xám nhạt nhỏ, đoạn dài, slide đặc chữ |
+| **Thẩm mỹ** (so với bảng tham chiếu) | đứng cạnh mẫu chuyên nghiệp không lạc tông: thứ bậc rõ, cân bằng, căn theo lưới, khoảng thở đều, có nhịp; **đa dạng trong hệ thống**: nền, kiểu bảng, hình chính đổi theo vai của nội dung (không theo hạn ngạch) | sạch nhưng đơn điệu: một nền phẳng suốt deck, bảng một kiểu, cùng vài hình dán lại nhiều slide | lệch lưới, chật / trống bất thường, hình sai tỉ lệ, đổi nền / màu ngẫu nhiên không theo vai |
+Giao khi mọi hạng ≥ 4 — kể cả Nhất quán, Thẩm mỹ, **Tự hiểu, Chống vẻ AI, Hình đúng bài** (PPTEval dùng Nội dung / Thiết kế / Mạch lạc, thang 1–5 — arXiv 2501.03936).
 
 ## 3. Máy kiểm (`scripts/dung.js`) — đọc thông báo thế nào
 | Thông báo | Sửa |
@@ -51,4 +54,8 @@ Giao khi mọi hạng ≥ 4 — kể cả Nhất quán và Thẩm mỹ (PPTEval 
 | ◇ bảng: một kiểu / một kiểu > 40 % | chọn lại kiểu theo loại thông tin (`trinh-bay-du-lieu.md`) |
 | ◇ phong phú: < 70 % slide có khối thị giác ≥ 25 % / > 30 % slide nền trơn | thêm khối hình học nền theo vai, thẻ tô đặc, cảnh minh hoạ lớn (`bo-cuc.md` mục 7); tối giản thật thì thẻ khai `"phongPhu": false` kèm lý do |
 | ◇ dễ đọc: slide quá nhiều chữ / chữ < 28 px / đoạn > 3 dòng / chữ nhỏ tương phản < 7 : 1 | rút câu, bỏ phụ đề trùng hình, biến ví dụ số thành dải hình, gom nhãn lặp thành chú giải; chữ phụ đậm màu hơn (`bo-cuc.md` mục 8) |
+| ◐ khối chìm | ranh giới khối với nền < 3 : 1 — viền ≥ 2 px đậm, nền đậm hẳn, hoặc bỏ khối (`bo-cuc.md` mục 7) |
+| ◇ vẻ AI: bo góc / bóng đổ / nhãn in hoa | góc ≤ 8 px, bỏ bóng, nhãn chữ thường (`bo-cuc.md` mục 7) |
+| ◇ khó hiểu: viết tắt chưa định nghĩa | viết đủ, ghi "(VIẾT TẮT)" ở lần đầu, hoặc khai thẻ `"vietTat"` |
+| ⚑ cảnh báo (số chữ, số nhãn, phủ khối, đa dạng nền / bảng / asset, tiêu điểm, hero) | **không chặn giao**; chỉ sửa khi đọc lạnh thấy khó hiểu / nghèo thật — không cắt chữ thành cụm cụt, không thêm khối trang trí để đủ ngưỡng |
 | PPTX lệch HTML (tờ soát) | dùng thuộc tính CSS mà PowerPoint dựng lại được (`hop-dong-html.md`) |

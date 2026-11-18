@@ -56,7 +56,7 @@ test("deck thật: thu thập nền, asset, bảng trong trình duyệt", { time
   <img data-l="a" data-alt="Hình vuông" src="asset/a.svg" style="position:absolute;left:120px;top:400px;width:200px">
   <div class="bang" style="position:absolute;left:600px;top:400px;width:600px"><b data-t style="font-size:30px">Ô bảng ${k}</b></div>
 </section>`);
-  const r = await dung(d, { ten: "dd", soat: false, nhap: true }), all = r.loi.join("\n");
+  const r = await dung(d, { ten: "dd", soat: false, nhap: true }), all = [...r.loi, ...r.canh].join("\n");   // đa dạng là cảnh báo (18/11/2026)
   assert.match(all, /7 slide liền cùng nền/); assert.match(all, /a\.svg.*7 slide/); assert.match(all, /7 bảng cùng một kiểu/);
   process.exitCode = 0;
 });

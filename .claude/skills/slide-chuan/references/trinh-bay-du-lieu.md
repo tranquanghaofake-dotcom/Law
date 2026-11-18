@@ -33,7 +33,7 @@ Nguồn: 54 mẫu tham chiếu (spec `docs/specs/2026-11-14-slide-chuan-v2-quy-t
 - **T13 Thanh tỉ lệ**: chiều dài = số liệu thật, số ghi trên/trong thanh, vạch ngưỡng có tên (mức giữ lại, giới hạn).
 
 ## 3. Quy tắc chung
-1. **≥ 6 kiểu** trình bày dữ liệu khác nhau trong deck 40–50 slide; **một kiểu ≤ 40 % số bảng**; không quá 3 slide liền cùng kiểu.
+1. Chọn kiểu theo **loại thông tin** (mục 1), không theo hạn ngạch: các ngưỡng "≥ 6 kiểu", "một kiểu ≤ 40 %" chỉ là cảnh báo (18/11/2026). Ranh giới bảng phải tách nền ≥ 3 : 1 (`bo-cuc.md` mục 7) — không zebra nhạt, không thẻ cho từng hàng, không bo góc lớn, không bóng.
 2. **Nhấn đúng 1 hàng hoặc 1 cột** mỗi bảng (nền màu 20–30 % + chữ đậm); không nhấn > 2 ô.
 3. Không kẻ đủ lưới trừ bảng lịch / số liệu dày.
 4. Cùng bảng màu, cùng cỡ chữ thân (≥ 26 px trên slide 1920) cho mọi kiểu; màu theo vai (bên, loại) giữ cố định cả deck.

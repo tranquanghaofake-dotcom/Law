@@ -25,7 +25,7 @@ Một trang, đủ các mục:
 
 ## 3. Kịch bản → `kich-ban.md`
 Bảng, mỗi slide một dòng:
-`# | người nghe đang thắc mắc gì | khẳng định (= tiêu đề, câu đầy đủ) | bằng chứng hình (sơ đồ / bảng / ảnh / hình vẽ — mô tả cụ thể) | nguồn (dòng trong noi-dung.md) | giây | lời nói (2–4 câu)`
+`# | người nghe đang thắc mắc gì | khẳng định (= tiêu đề: kết luận cụ thể, có đối tượng thật, không chơi chữ) | bằng chứng hình (sơ đồ / bảng / ảnh / hình vẽ — mô tả cụ thể) | nguồn (dòng trong noi-dung.md) | giây | lời nói (2–4 câu)`
 - **Mạch theo thể loại** — chọn đúng một, ghi ở đầu `kich-ban.md`:
   | Thể loại | Mạch | Không làm |
   |---|---|---|
@@ -34,7 +34,8 @@ Bảng, mỗi slide một dòng:
   | Báo cáo, số liệu | kết luận trước → số liệu làm bằng chứng → nguyên nhân → kiến nghị | không trình bày cùng số liệu hai lần |
   | Bảo vệ, thuyết phục | vấn đề → giải pháp / luận điểm → bằng chứng → đề nghị | không nhồi lý thuyết nền |
 - Đọc liền cột khẳng định phải thành một mạch lập luận của đúng thể loại đã chọn.
-- Mỗi slide MỘT ý; hai ý → hai slide. Mỗi mục tiêu có slide + câu kiểm tra. Tổng giây ≈ thời lượng (chừa 10 %).
+- Mỗi slide MỘT ý; hai ý → hai slide. Chữ trên slide viết đủ nghĩa ngay ở kịch bản (không viết tắt, không cụm cụt) — không đợi lúc dựng mới cắt cho vừa.
+- Cột bằng chứng hình phải chỉ ra **vật thật của bài** (trang / điều khoản nào của tài liệu gốc, bảng số nào) theo `nguon-hinh.md` quy tắc 0. Mỗi mục tiêu có slide + câu kiểm tra. Tổng giây ≈ thời lượng (chừa 10 %).
 - Bằng chứng hình chọn theo **câu hỏi của người nghe**, không theo hình thức tài liệu: quan hệ các bên → sơ đồ; so sánh → hai cột / thước chung; số liệu → bảng hoặc biểu đồ đúng tỉ lệ; thời gian → trục; quy trình → bước. Hình phải cho thấy chính sự vật, không ẩn dụ.
 
 **Điểm duyệt B.**
@@ -72,8 +73,9 @@ Bìa · một slide khái niệm · một sơ đồ / so sánh · một slide s�
 ## 8. Soát (tối đa 2 vòng sửa)
 1. Máy: `dung.js` sạch.
 2. Nhìn: mở mọi `tong-N.jpg` và slide nghi ngờ (`h-NN.jpg`); đi qua `soat.md` mục 1.
-3. **Người duyệt độc lập**: gọi agent mới, `model: "opus"`, theo mẫu ở `vai-tro.md`; gửi kèm **tờ so sánh** (`scripts/to_so_sanh.js`: 6–10 slide tiêu biểu — bìa, mở chương, bảng, sơ đồ, số liệu — đặt cạnh mẫu tham chiếu cùng loại) và **bảng xem thử asset**; nhận bảng điểm rubric + danh sách lỗi.
-4. Sửa → dựng lại → nhìn lại. Ghi điểm, lỗi, cách sửa vào `nhat-ky.md`.
+3. **Đọc lạnh** (`vai-tro.md`, lượt 1): người duyệt chỉ xem ảnh, tóm ý từng slide; lệch ý → sửa slide. Cảnh báo ⚑ của máy xét ở bước này.
+4. **Người duyệt độc lập** (lượt 2): gọi agent mới, `model: "opus"`, theo mẫu ở `vai-tro.md`; gửi kèm **tờ so sánh** (`scripts/to_so_sanh.js`: 6–10 slide tiêu biểu — bìa, mở chương, bảng, sơ đồ, số liệu — đặt cạnh mẫu tham chiếu cùng loại) và **bảng xem thử asset**; nhận bảng điểm rubric + danh sách lỗi.
+5. Sửa → dựng lại → nhìn lại. Ghi điểm, lỗi, cách sửa vào `nhat-ky.md`.
 Lỗi cần đánh đổi (cắt nội dung, đổi phong cách) → bản ghi lựa chọn gửi người dùng, không tự quyết.
 
 ## 9. Diễn tập

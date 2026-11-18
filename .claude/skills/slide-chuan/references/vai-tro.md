@@ -31,7 +31,15 @@
 Có hình thì kèm ảnh (slide mẫu, bảng xem thử asset) — người dùng quyết bằng mắt, không bằng mô tả.
 
 ## Người duyệt độc lập — cách gọi
-Agent tool, **`model: "opus"`**, agent mới (không fork), chạy sau khi `dung.js` sạch. Brief gửi kèm (không gửi lập luận của người dựng):
+**Lượt 1: ĐỌC LẠNH** (bắt buộc, trước lượt chấm — 18/11/2026). Agent mới, `model: "opus"`, **chỉ** được xem ảnh `h-*.jpg`, không đọc `kich-ban.md`, `noi-dung.md`, `brief.md` hay lời nói — đúng vị trí người xem không nghe giảng. Brief:
+```
+Bạn là sinh viên luật năm 3 xem bộ slide này mà không nghe thuyết trình. Không sửa file. Chỉ xem ảnh <bài>/<tên>_lop/h-*.jpg (xem hết, bằng mắt).
+Với mỗi slide, ghi một dòng: "N | slide này muốn tôi hiểu điều gì (1 câu của bạn) | chữ / hình nào tôi không hiểu hoặc phải đoán | khối, bảng, đường kẻ nào khó thấy".
+Cuối cùng: 3 slide khó hiểu nhất, 3 chỗ trông "như AI làm" nhất (thẻ bo, chip, icon trang trí, hình chung chung), và hình nào đổi sang bài khác vẫn dùng được.
+```
+Người dựng so cột "slide muốn tôi hiểu" với cột khẳng định trong `kich-ban.md`: lệch ý = lỗi [khó hiểu], sửa slide (không sửa kịch bản cho khớp). Đếm tỉ lệ tóm đúng → hạng **Tự hiểu**.
+
+**Lượt 2: CHẤM**. Agent tool, **`model: "opus"`**, agent mới (không fork), chạy sau khi `dung.js` sạch và đã sửa theo đọc lạnh. Brief gửi kèm (không gửi lập luận của người dựng):
 ```
 Bạn là người duyệt độc lập một deck bài giảng. Không sửa file. Đọc:
 - <bài>/brief.md (khán giả, mục tiêu), <bài>/noi-dung.md (nội dung + bảng nguồn), <bài>/kich-ban.md
@@ -39,7 +47,7 @@ Bạn là người duyệt độc lập một deck bài giảng. Không sửa fi
 - ảnh từng slide: <bài>/<tên>_lop/h-*.jpg (xem hết, bằng mắt) · bảng xem thử asset: <bài>/<tên>_lop/asset.jpg · tờ so sánh với mẫu: <bài>/<tên>_lop/so-sanh.jpg
 - chữ từng slide: <bài>/<tên>_lop/deck.html
 Việc:
-1. Chấm 1–5 kèm lý do: Nội dung (đúng, đủ, có nguồn, không vượt nguồn) · Thiết kế (thứ bậc, khoảng thở, nhất quán, hình đúng sự vật) · Mạch lạc (cả deck, đúng mạch của thể loại) · Dễ hiểu (sinh viên mới học nhìn 3 giây có hiểu ý slide không) · Thẩm mỹ (đặt từng slide cạnh bảng tham chiếu: có lạc tông, đơn điệu, lệch lưới, hình như hình dán không; slide có theo hệ thống thiết kế và bản đồ nhịp không).
+1. Chấm 1–5 kèm lý do: Nội dung (đúng, đủ, có nguồn, không vượt nguồn) · Chống vẻ AI (`bo-cuc.md` mục 7) · Hình đúng bài (`nguon-hinh.md` quy tắc 0) · Thiết kế (thứ bậc, khoảng thở, nhất quán, hình đúng sự vật) · Mạch lạc (cả deck, đúng mạch của thể loại) · Dễ hiểu (sinh viên mới học nhìn 3 giây có hiểu ý slide không) · Thẩm mỹ (đặt từng slide cạnh bảng tham chiếu: có lạc tông, đơn điệu, lệch lưới, hình như hình dán không; slide có theo hệ thống thiết kế và bản đồ nhịp không).
 2. Liệt kê lỗi theo mức: [sai luật/nội dung] > [khó hiểu] > [thiết kế] > [chữ]; mỗi lỗi: slide, mô tả, đề xuất sửa.
 3. Đối chiếu từng con số / điều luật trên slide với bảng nguồn; báo cái không có nguồn.
 4. Theo references/soat.md mục 1, nêu slide nào trượt điều kiểm nào.

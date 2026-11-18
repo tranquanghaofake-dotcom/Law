@@ -57,6 +57,8 @@ function anhTong(work) {
     return out; })();
 }
 
+const laCanhBao = (m) => /^◇ (phong phú|tiêu điểm|nền|bảng|asset)|chữ đọc liền|nhãn ngắn/.test(m);
+
 async function dung(dir, { ten, soat = true, nhap = false } = {}) {
   dir = path.resolve(dir); ten = ten || path.basename(dir);
   const outPath = path.join(dir, ten + ".pptx"), work = path.join(dir, ten + "_lop");
@@ -65,12 +67,13 @@ async function dung(dir, { ten, soat = true, nhap = false } = {}) {
   console.log(`· ${files.length} file slide → ${htmlPath}`);
   const { kiemHtml } = require("./kiem_html"), { kiemDeTrongTrang } = require(path.join(HINH, "kiem_de"));
   const loi = [];
-  const { thuThap, danhGia, NGUONG } = require("./da_dang"), { thuThapNhatQuan, danhGiaNhatQuan } = require("./nhat_quan"), { thuThapPhongPhu, danhGiaPhongPhu } = require("./phong_phu"), { thuThapDeDoc, danhGiaDeDoc } = require("./de_doc"); let dd = null, pp = null, dc = null;
+  const { thuThap, danhGia, NGUONG } = require("./da_dang"), { thuThapNhatQuan, danhGiaNhatQuan } = require("./nhat_quan"), { thuThapPhongPhu, danhGiaPhongPhu } = require("./phong_phu"), { thuThapDeDoc, danhGiaDeDoc } = require("./de_doc"), { thuThapChongAI, danhGiaChongAI } = require("./chong_ai"); let dd = null, pp = null, dc = null;
   const fThe = path.join(dir, "thiet-ke", "phong-cach.json"), the = fs.existsSync(fThe) ? JSON.parse(fs.readFileSync(fThe, "utf8")) : null;
   const ng = { ...NGUONG, ...((the && the.nguong) || {}) };   // thẻ phong cách được chỉnh ngưỡng đa dạng (vd. deck biên tập tối giản: cùng nền giấy nhiều slide liền là chủ ý)
   const truoc = async (page) => { const a = await page.evaluate(kiemHtml), b = await page.evaluate(kiemDeTrongTrang); dd = danhGia(await page.evaluate(thuThap), ng);
     const nq = danhGiaNhatQuan(await page.evaluate(thuThapNhatQuan), the); pp = danhGiaPhongPhu(await page.evaluate(thuThapPhongPhu), the, the && the.nguong); dc = danhGiaDeDoc(await page.evaluate(thuThapDeDoc), the, the && the.nguong);
-    return [...a, ...b, ...dd.loi, ...nq.loi, ...pp.loi, ...dc.loi]; };
+    const ca = danhGiaChongAI(await page.evaluate(thuThapChongAI), the);
+    return [...a, ...b, ...dd.loi, ...nq.loi, ...pp.loi, ...dc.loi, ...ca.loi]; };
   const { build } = require(path.join(HINH, "build"));
   const res = await build({ htmlPath, outPath, soat, giuLop: true, truoc });
   loi.push(...(res.warn || []), ...(res.lost || []));
@@ -93,12 +96,17 @@ async function dung(dir, { ten, soat = true, nhap = false } = {}) {
   console.log(`✓ ${res.slides} slide → ${outPath} · ${res.text} hộp chữ · ${res.pics} lớp ảnh · ${res.fx} hiệu ứng · ${res.morph} Morph`);
   console.log(`✓ Ảnh tổng (xem bằng mắt trước khi giao): ${tong.join(", ")}`);
   if (soat) console.log(`✓ Tờ soát HTML ↔ PPTX: ${path.join(work, "soat-*.jpg")}`);
+  // Ngưỡng ĐẾM (số chữ, số nhãn, độ phủ khối, đa dạng nền / bảng, tiêu điểm, hero) chỉ là CẢNH BÁO: ép đạt chúng bằng mọi giá đã sinh
+  // chữ cụt khó hiểu và khối trang trí vô nghĩa (bài Nhóm 2, 18/11/2026). Người duyệt đọc lạnh quyết định có sửa không.
+  const canh = loi.filter(laCanhBao), chan = loi.filter((m) => !laCanhBao(m));
+  if (canh.length) console.log(`⚑ ${canh.length} cảnh báo (không chặn giao — xét khi đọc lạnh, references/soat.md):\n  ${canh.join("\n  ")}`);
+  loi.length = 0; loi.push(...chan);
   if (loi.length) { console.log(`⚠ ${loi.length} lỗi:\n  ${loi.join("\n  ")}`); if (!nhap) process.exitCode = 1; }
   else console.log("✓ Không còn lỗi máy bắt được — còn phải soát bằng mắt và qua người duyệt độc lập (references/soat.md)");
-  return { ...res, loi, outPath, work, htmlPath, tong, daDang: dd, bangAsset: ba.anh };
+  return { ...res, loi, canh, outPath, work, htmlPath, tong, daDang: dd, bangAsset: ba.anh };
 }
 
-module.exports = { dung, ghepHtml };
+module.exports = { laCanhBao, dung, ghepHtml };
 if (require.main === module) {
   const a = process.argv.slice(2), f = new Set(a.filter((x) => x.startsWith("--"))), pos = a.filter((x) => !x.startsWith("--"));
   if (!pos.length) { console.error("Dùng: node scripts/dung.js <thư_mục_bài> [--ten=<tên>] [--khong-soat] [--nhap]"); process.exit(2); }

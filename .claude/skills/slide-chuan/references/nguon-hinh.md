@@ -2,6 +2,16 @@
 
 Vì sao (nghiên cứu 15/11/2026, spec mục 13): mẫu bán slide đẹp nhờ (1) **một hình chính lớn** (30–45 % slide, 2–4 phần tử), (2) **hình do hoạ sĩ vẽ** hoặc ảnh thật, (3) **chữ tương phản** (chữ có chân lớn + chữ không chân), (4) mảng màu lớn. SVG ghép khối bằng code chỉ đạt hình khối đơn giản — không dùng làm hình chính nữa.
 
+## Quy tắc 0 — hình chính phải là vật thật của CHÍNH bài này (bài Nhóm 2, 18/11/2026)
+Hào: "ảnh bìa và các vật thể chưa thật sự liên quan đến bài, còn chung chung". Bàn tay nâng nhà mô hình, toà cao tầng, bàn tay ký giấy, hợp đồng vẽ phẳng, người hoạt hình — đặt vào bài bảo hiểm nào cũng được, nên không chứng minh gì.
+**Phép thử**: đổi tên bài sang một đề tài cùng ngành → hình còn dùng được nguyên? Còn → chung chung → thay.
+Thứ tự chọn hình chính:
+1. **Chính tài liệu của bài**: trang hợp đồng / bản án / văn bản luật / bảng gốc — chụp hoặc cắt đúng vùng bằng `node scripts/trang_goc.js <tài liệu> <ra.png> --trang=N --vung=x,y,w,h`, rồi **khoanh / gạch chân bằng HTML đè lên** đúng điều khoản đang nói. Ảnh trang chỉ có tác dụng khi người xem thấy được chỗ được khoanh và nhãn giải thích bên cạnh (Hào: "có nhưng phải có tác dụng") — trang nguyên cỡ nhỏ chữ không đọc được thì phải cắt vùng và phóng.
+2. **Số liệu của bài vẽ thành biểu đồ / thước đúng tỉ lệ** (`trinh-bay-du-lieu.md`).
+3. **Ảnh sự vật / sự kiện / nơi chốn cụ thể** đúng cái đang nói (quầy giao dịch ngân hàng khi nói bancassurance, bão Yagi khi nói bồi thường thiên tai) — có nguồn, giấy phép.
+4. **Sơ đồ quan hệ** bằng nét, khi ý là quan hệ giữa các bên.
+Không dùng: ảnh "tâm trạng" chung chung làm hình chính; **asset, ảnh, vật vẽ lấy từ bài khác** (mỗi bài vẽ / chọn hình của riêng nó); icon làm hình chính.
+
 **Chọn một họ hình chính cho cả deck** (`bo-cuc.md` mục 1): ảnh tư liệu + nét, **hoặc** minh hoạ CC0 + nét — không trộn ảnh tư liệu với nhân vật hoạt hình trong cùng deck.
 
 | Vai của hình | Nguồn | Công cụ | Ghi công |
@@ -13,7 +23,7 @@ Vì sao (nghiên cứu 15/11/2026, spec mục 13): mẫu bán slide đẹp nhờ
 | Câu chốt, định nghĩa, trích luật | **chữ là hình**: chữ có chân `Lora` cỡ 56–80 px, số lớn 200–340 px | CSS `font-family: Lora` | — |
 
 ## Quy tắc
-1. **Mỗi slide một tiêu điểm**: hình chính hoặc số lớn chiếm 30–45 % diện tích; 2–4 phần tử thị giác; tỉ lệ phần tử lớn nhất / nhỏ nhất ≥ 8 lần. Không rải 8–12 vật nhỏ đều khắp slide.
+1. **Mỗi slide một tiêu điểm** (máy chỉ cảnh báo): hình chính hoặc số lớn chiếm 30–45 % diện tích — **không** đạt bằng cách thêm panel / thẻ nền; 2–4 phần tử thị giác; tỉ lệ phần tử lớn nhất / nhỏ nhất ≥ 8 lần. Không rải 8–12 vật nhỏ đều khắp slide.
    Giới hạn của máy đo (`◇ tiêu điểm`): một tấm nền / thẻ lớn cũng được tính là khối thị giác, kể cả khi vật bên trong nhỏ — tấm nền **gom** bố cục chứ **không thay** hình chính; phải nhìn ảnh để chắc hình chính đủ lớn.
 2. **Nhìn slide là nắm toàn bộ ý**: nhãn đặt lên hình (tên bên, tên dòng tiền), ý cốt lõi viết thành cụm ngắn cạnh hình — hình chở nội dung, không thay nội dung.
 3. **Đồng bộ**: nhân vật Open Peeps cùng màu viền (màu mực của bài), quần áo theo màu vai trò; ảnh cùng một cặp màu hai tông; icon cùng một độ dày, một màu.
@@ -22,6 +32,8 @@ Vì sao (nghiên cứu 15/11/2026, spec mục 13): mẫu bán slide đẹp nhờ
 6. Tài nguyên tải về bộ nhớ đệm (`~/.cache/slide-chuan`, lần đầu cần mạng npm) — không chép vào skill.
 
 ## Ảnh chụp hiện đại (Unsplash) và minh hoạ unDraw — hướng "tư vấn pháp lý", Chương 3 (15/11/2026)
+> Hạ cấp 18/11/2026: chỉ dùng khi ảnh **đúng sự vật** theo quy tắc 0 — không dùng ảnh tâm trạng cho bìa / mở phần / câu chốt.
+
 Hai nguồn này nâng trần chất lượng rõ nhất ("wow"): ảnh chụp thật sắc nét cho bìa / mở phần / trích luật; minh hoạ do hoạ sĩ vẽ cho người và tình huống. Cả hai **không phải ảnh AI**, giấy phép cho dùng tự do, không bắt ghi công — vẫn ghi đủ trong `ghi-cong.md`. Phải được chủ bài duyệt (CLAUDE.md).
 - **Unsplash**: `unsplash.com` có lớp chặn máy và API cần khoá. Cách làm: Firecrawl `firecrawl_scrape` trang `https://unsplash.com/s/photos/<từ-khoá>?license=free` (formats `links`) → chọn ảnh; scrape trang ảnh (formats `images`) → lấy `images.unsplash.com/photo-<số>-<mã>` từ `og:image` → `curl "https://images.unsplash.com/photo-…?fm=jpg&q=85&w=2400"`. Chỉ dùng ảnh trang ghi "Free Photo" (không Unsplash+).
 - **Xử lý ảnh**: `node scripts/phu_mau.js <vào> <ra> --rong= --cao= --tieu=x,y [--tu=trai|phai|duoi|tren --dac= --den=] [--cheo=0.2]` — cắt theo điểm nhìn, phủ dải màu chủ để đặt chữ lên ảnh, hoặc cắt chéo mép trái (PNG trong suốt) cho bố cục tạp chí; dải màu nhấn chạy theo mép chéo.
