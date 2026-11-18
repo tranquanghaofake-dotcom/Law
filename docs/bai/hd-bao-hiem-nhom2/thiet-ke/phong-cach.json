@@ -33,13 +33,15 @@
   "#F7C27A",
   "#9A5207",
   "#DADFE2",
-  "#86C46E"
+  "#86C46E",
+  "#C9D1D6"
  ],
  "loaiHinh": [
   "minh-hoa",
   "hoa-tiet",
   "bieu-do",
-  "net"
+  "net",
+  "tai-lieu"
  ],
  "boCuc": [
   "bia",
@@ -59,7 +61,8 @@
   "MB": "tên thương hiệu trong MB Ageas Life",
   "BIDV": "tên thương hiệu trong BIDV MetLife",
   "VCCI": "Liên đoàn Thương mại và Công nghiệp Việt Nam",
-  "MIT": "giấy phép phần mềm mở MIT"
+  "MIT": "giấy phép phần mềm mở MIT",
+  "CTBH": "công ty bảo hiểm"
  },
  "phongPhu": false,
  "mienBangMau": [

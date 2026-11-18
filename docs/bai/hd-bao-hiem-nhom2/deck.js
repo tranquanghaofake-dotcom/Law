@@ -54,6 +54,13 @@ const minhHoa = (f, x, y, w, alt, t0 = 300) => `<img data-l="mh-${f}" data-loai=
 const canh = (f, x, y, h, alt, t0 = 300, hieu = "fade") => { const [, , vw, vh] = fs.readFileSync(path.join(D, "anh", "canh", f + ".svg"), "utf8").match(/viewBox="([^"]+)"/)[1].split(" ").map(Number), w = Math.round((h * vw) / vh);
   return `<img data-l="canh-${f}" data-loai="minh-hoa" data-alt="${esc(alt)}" ${A(hieu, t0, 600)} src="anh/canh/${f}.svg" style="position:absolute;left:${x}px;top:${y}px;width:${w}px;height:${h}px">`; };
 const canhGiua = (f, cx, y, h, alt, t0, hieu) => { const [, , vw, vh] = fs.readFileSync(path.join(D, "anh", "canh", f + ".svg"), "utf8").match(/viewBox="([^"]+)"/)[1].split(" ").map(Number); return canh(f, Math.round(cx - (h * vw) / vh / 2), y, h, alt, t0, hieu); };
+// VĂN BẢN THẬT + BÚT DẠ QUANG — ảnh và toạ độ vệt từ scripts/danh_dau.js (anh/goc/dd-*.png + .json); vệt quét theo nhịp nói (tVet[i] cho cụm từ i)
+const giay = (f, x, y, w, alt, t0, tVet) => { const j = JSON.parse(fs.readFileSync(path.join(D, "anh", "goc", f + ".json"), "utf8")), h = Math.round((w * j.cao) / j.rong), p = 36, X = x - p, Y = y - p, W = w + 2 * p, H = h + 2 * p, g = 44;
+  return lop(`<path d="M${X} ${Y} H${X + W - g} L${X + W} ${Y + g} V${Y + H} H${X} Z" fill="#FFFFFF" stroke="#C9D1D6" stroke-width="3"/><path d="M${X + W - g} ${Y} V${Y + g} H${X + W} Z" fill="${P.ray}" stroke="#C9D1D6" stroke-width="3" stroke-linejoin="round"/>`, X - 2, Y - 2, W + 4, H + 4, "Tờ giấy nền của trích đoạn", "hoa-tiet", A("rise", t0, 500))
+    + `<img data-l="tl-${f}" data-loai="tai-lieu" data-alt="${esc(alt)}" ${A("fade", t0 + 200, 500)} src="anh/goc/${f}.png" style="position:absolute;left:${x}px;top:${y}px;width:${w}px;height:${h}px">`
+    + j.vet.map((ds, i) => ds.map((v) => { const vx = Math.round(x + v.x * w), vy = Math.round(y + v.y * h), vw = Math.round(v.w * w), vh = Math.round(v.h * h);
+      return lop(`<rect x="${vx}" y="${vy}" width="${vw}" height="${vh}" rx="4" fill="${P.cam}" fill-opacity="0.38"/>`, vx, vy, vw, vh, `Vệt dạ quang: ${j.cau[i]}`, "net", A("wipe", tVet[i], 600)); }).join("")).join(""); };
+const coGiay = (f, w) => { const j = JSON.parse(fs.readFileSync(path.join(D, "anh", "goc", f + ".json"), "utf8")); return Math.round((w * j.cao) / j.rong); };
 // icon trong tròn cam, nét đậm màu mực (kiểu icon hai tông của mẫu 2)
 const iconTron = (ic, cx, cy, r, alt, ex = "", nen = P.cam) => lop(`<circle cx="${cx}" cy="${cy}" r="${r}" fill="${nen}"/>` + mh.iconNet(D, ic, cx, cy, r * 1.05, P.muc, 3.2), cx - r, cy - r, 2 * r, 2 * r, alt, "net", ex);
 const dau = (td, ketLuan, so) => `<h1 class="td" data-t data-tieu-de ${A("fade", 0, 500)} style="left:260px;top:76px;width:1400px">${em(td)}</h1>`
@@ -148,9 +155,8 @@ sec("mo-phan", "Phần I. Mẫu hợp đồng Bảo Việt An Gia là hợp đ�
       return iconTron(ic, cx, 400, 64, `Biểu tượng ${ten}`, A("pop", t0, 300), nen)
         + T("buoc-ten", cx - 250, 484, 500, ten, A("fade", t0 + 100, 300)) + T("buoc-mo", cx - 250, 530, 500, mo, A("fade", t0 + 150, 300))
         + (k < 2 ? lopMui(cx + 90, 400, cx + 490, 400, "Mũi tên sang bước sau", A("wipe", t0 + 250, 300)) : ""); }).join("")
-    + lop(`<rect x="200" y="640" width="10" height="170" fill="${P.cam}"/>`, 200, 640, 10, 170, "Vạch trích dẫn", "hoa-tiet")
-    + T("trich-lora", 240, 640, 1460, "“Hợp đồng bảo hiểm sẽ tự động hủy bỏ trong trường hợp phí bảo hiểm không được thanh toán đúng và đủ theo như quy định trên trừ khi có thỏa thuận khác.”", A("fade", 1800, 500))
-    + T("trich-nguon", 240, 822, 1460, "Nguyên văn Điều 4 hợp đồng · Câu hỏi thảo luận: điều khoản này có phù hợp quy định về đóng phí của Luật Kinh doanh bảo hiểm 2022?", A("fade", 2200, 400))
+    + giay("dd-dieu4", 260, 660, 1400, "Ảnh chụp nguyên văn Điều 4 hợp đồng Bảo Việt An Gia", 1700, [2300, 3000])
+    + T("trich-nguon giua", 160, 860, 1600, "Câu hỏi thảo luận: điều khoản này có phù hợp Luật Kinh doanh bảo hiểm 2022?", A("fade", 3400, 400))
     + nguon("Hợp đồng Bảo Việt An Gia, Điều 4 (phí bảo hiểm và phương thức thanh toán)."));
 }
 
@@ -224,13 +230,8 @@ sec("mo-phan", "Phần I. Mẫu hợp đồng Bảo Việt An Gia là hợp đ�
       return iconTron(ic, cx, 400, 56, `Biểu tượng ${ten}`, A("pop", t0, 300), k === 2 ? P.cam : "#DDEFD5")
         + T("buoc-ten", cx - 240, 470, 480, ten, A("fade", t0 + 80, 300)) + T("buoc-mo", cx - 240, 516, 480, mo, A("fade", t0 + 120, 300))
         + (k === 0 ? lopMui(cx + 76, 400, cx + 500, 400, "Mũi tên sang bước sau", A("wipe", t0 + 250, 300)) : ""); }).join("")
-    + lop(`<path d="M120 610 H1800" stroke="${P.may}" stroke-width="3"/>`, 120, 608, 1680, 4, "Vạch ngăn", "hoa-tiet")
-    + T("muc-dau", 140, 640, 760, "Nộp qua ứng dụng BaoViet Direct khi", A("fade", 2000, 300))
-    + dong("circle-check", 140, 708, 760, "khoản bồi thường ≤ [10 triệu đồng]", 2100) + dong("circle-check", 140, 784, 760, "không phải di sản thừa kế", 2250)
-    + T("muc-dau", 1000, 640, 800, "Chỉ cần", A("fade", 2400, 300))
-    + dong("lock-access", 1000, 708, 800, "mã xác thực một lần gửi qua điện thoại", 2500) + dong("receipt", 1000, 784, 800, "hoá đơn điện tử, chứng từ chụp hoặc scan", 2650)
-    + T("buoc-mo trai", 1068, 856, 740, "không cần công chứng, không gửi bản cứng", A("fade", 2800, 300))
-    + nguon("Hợp đồng Bảo Việt An Gia, Điều 10 (thời hạn chi trả); Phụ lục 1 mục 3 (hồ sơ mềm)."));
+    + giay("dd-dieu10", 410, 646, 1100, "Ảnh chụp nguyên văn Điều 10 hợp đồng Bảo Việt An Gia", 1900, [2500, 3000, 3600, 4100])
+    + nguon("Nguyên văn Điều 10 hợp đồng Bảo Việt An Gia (CTBH là công ty bảo hiểm); chi tiết hồ sơ mềm ở Phụ lục 1 mục 3."));
 }
 
 // ============ 12 TỔNG KẾT PHẦN I — được gì / cần để ý gì ============
