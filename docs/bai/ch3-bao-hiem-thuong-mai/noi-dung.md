@@ -4,10 +4,12 @@ Ngày: 14/11/2026 · Trạng thái: **đã duyệt A, B, C; đã đối chiếu 
 
 **Đối chiếu bản chính thức (14/11/2026)**: toàn văn Luật 08/2022/QH15 trên cổng xaydungchinhsach.chinhphu.vn — 28/28 câu trích, số điều dùng trên slide khớp (Đ4 k2, k16, k24–26, k28; Đ7; Đ8 k1, k2, k4; Đ15; Đ16 k1, k3, k5; Đ17 k1 e; Đ18; Đ20 k2 b; Đ22 k1; Đ29 k1; Đ31; Đ45; Đ47 k1–2; Đ48; Đ49 k1; Đ125; Đ128 k1 e; Đ156) → mức A. Riêng phần Luật 139/2025/QH15 sửa Điều 8 k2 điểm c ("đầu tư xây dựng" → "xây dựng") vẫn mức B: PDF gốc trên datafiles.chinhphu.vn là ảnh scan, chưa đọc được chữ. Văn bản gốc Đ4 k16 viết "thoả thuận" rồi "thỏa thuận" trong cùng câu — giữ nguyên khi trích.
 
+**Đối chiếu bản hợp nhất chính thức (19/11/2026)**: Văn bản hợp nhất 31/VBHN-VPQH ngày 13/3/2026 (hợp nhất Luật 08/2022/QH15 với Luật 139/2025/QH15) trên vbpl.vn — nguyên văn Điều 4 k2, k16, k27; Điều 8; Điều 16 k1, k3, k4; Điều 22 k2; Điều 31; Điều 47; Điều 48; Điều 49 lưu ở `nguon/luat-kdbh-trich.md` → mức A. Đã xác nhận điểm c khoản 2 Điều 8 hiện ghi "Bảo hiểm bắt buộc trong hoạt động xây dựng" (chú thích sửa đổi theo Luật 139/2025/QH15). Cách đếm thời hạn: khoản 3 Điều 147, khoản 5 Điều 148 BLDS 2015 (kho luật repo).
+
 **Nguồn luật**
 - Luật Kinh doanh bảo hiểm số 08/2022/QH15 (hiệu lực 01/01/2023), đã sửa đổi, bổ sung bởi Luật số 139/2025/QH15 (hiệu lực 01/01/2026; riêng một số khoản từ 01/7/2026).
 - Văn bản lấy từ luatvietnam.vn (nguồn thương mại), truy cập 14/11/2026.
-- Mức tin cậy **B**: chưa đối chiếu bản chính thức trên vbpl.vn / datafiles.chinhphu.vn. Phải đối chiếu trước khi giao deck.
+- Mức tin cậy: đã đối chiếu bản chính thức (xaydungchinhsach.chinhphu.vn 14/11/2026; văn bản hợp nhất 31/VBHN-VPQH trên vbpl.vn 19/11/2026) — xem hai dòng đầu file.
 - Các điều trích dưới đây **không** bị Luật 139/2025 sửa, trừ chỗ ghi rõ.
 - Kho luật của repo **chưa có** Luật Kinh doanh bảo hiểm.
 
@@ -222,7 +224,7 @@ Hai đề tài:
 | Khái niệm BHTM | [G 4] + đối chiếu [L Đ 4 k2] | học thuật, khớp luật | — |
 | 5 nguyên tắc chung | [G 5–6] | học thuật (giáo trình) | — |
 | 5 nguyên tắc giao kết HĐ | [L Đ 16] | hiện hành | B |
-| BH bắt buộc: định nghĩa, danh mục | [L Đ 8 k1, k2, k4]; Luật 139/2025 sửa k2 điểm c | hiện hành | B |
+| BH bắt buộc: định nghĩa, danh mục | [L Đ 8 k1, k2, k4]; Luật 139/2025 sửa k2 điểm c | hiện hành | A (VBHN 31/VBHN-VPQH, 19/11/2026) |
 | Kỹ thuật phân bổ / dồn tích | [G 8] | học thuật | — |
 | 3 nhóm theo đối tượng | [G 9] | học thuật / luật cũ | — |
 | 3 loại hình, 5 loại HĐ | [L Đ 7 k1], [L Đ 15 k1] | hiện hành | B |
@@ -253,7 +255,7 @@ Hai đề tài:
 | L9 | Bìa [G 1] | Có email cá nhân của GV. | Không đưa lên slide mới, trừ khi GV muốn. |
 
 ## 4. Điều chưa chắc
-- Toàn văn Luật 08/2022 và Luật 139/2025 mới lấy từ luatvietnam.vn; chưa đối chiếu bản chính thức → mọi căn cứ đang ở mức B.
+- (Đã xử lý 19/11/2026) Toàn văn từng lấy từ luatvietnam.vn; nay đã đối chiếu văn bản hợp nhất 31/VBHN-VPQH trên vbpl.vn cho các điều dùng trên slide.
 - L3: câu chữ định nghĩa bảo hiểm bắt buộc của Luật 2000 là theo trí nhớ (mức C) — chỉ dùng để giải thích nguồn gốc câu chữ bài gốc, không đưa lên slide làm căn cứ.
 - Câu hỏi 1 và 2: xem bảng mục 1.7.
 - K1, K2 đã nghiên cứu (mục 1.0, 1.5): nguồn thế giới chủ yếu Wikipedia + trang Lloyd's (Britannica, Swiss Re, Munich Re chặn truy cập); XL chưa có giáo trình tiếng Việt đọc được toàn văn.
