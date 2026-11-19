@@ -87,8 +87,8 @@ const cap = (kt, km, x, y, w, a, b) => `<div class="cap" style="left:${x}px;top:
           return `<rect x="${q.x}" y="${q.y}" width="${cw}" height="${ch}" rx="14" fill="${dau ? P.x1 : cuoi ? P.v2 : P.v4}"/>` + (dau ? `<circle cx="${q.x + cw / 2}" cy="${q.y + ch / 2}" r="9" fill="${P.v3}"/>` : cuoi ? mh.iconNet(D, "coins", q.x + cw / 2, q.y + ch / 2 + 10, 56, P.x1, 3) : `<circle cx="${q.x + cw / 2}" cy="${q.y + ch / 2}" r="7" fill="${P.v2}"/>`); }).join(""),
           x0, y0 + hang * (ch + g), 5 * (cw + g), ch, `Hàng ${hang + 1} của 15 ô ngày`, "phang", A("wipe", 1100 + hang * 300, 500))).join("")
       + T("lich-o", o(0).x + 14, o(0).y + 8, 60, "1", A("fade", 1100, 300)) + T("lich-o toi", o(14).x + 14, o(14).y + 8, 80, "15", A("fade", 1700, 300))
-      + T("lich-nhan", 140, 896, 420, "Ngày 1: hôm sau", A("fade", 2000, 400)) + T("lich-nhan vang", 590, 896, 420, "Ngày 15: hạn trả", A("fade", 2100, 400))
-      + [["file-certificate", P.x1, "Khi giao kết", "giải thích loại trừ"], ["calendar", P.x1, "Khi xảy ra", "trả đúng hạn"], ["coins", P.v1, "Chậm trả", "trả thêm lãi"]].map(([i, m, a, b], k) => { const y = 360 + k * 190, t0 = 2300 + k * 300;
+      + T("lich-nhan", 140, 896, 420, "Ngày 1: hôm sau", A("fade", 2000, 400)) + T("lich-nhan vang", 590, 896, 420, "Hạn: ngày 15", A("fade", 2100, 400))
+      + [["file-certificate", P.x1, "Khi giao kết", "giải thích quyền lợi, loại trừ"], ["calendar", P.x1, "Khi xảy ra", "trả đúng hạn"], ["coins", P.v1, "Chậm trả", "trả thêm lãi"]].map(([i, m, a, b], k) => { const y = 360 + k * 190, t0 = 2300 + k * 300;
         return lop(`<rect x="1100" y="${y}" width="100" height="100" rx="18" fill="${m}"/>` + mh.iconNet(D, i, 1150, y + 50, 60, P.nen, 3), 1100, y, 100, 100, `Biểu tượng ${a}`, "phang", `data-lap ${A("pop", t0, 400)}`)
           + `<div class="cap" style="left:1230px;top:${y + 2}px;width:570px"><b data-t class="dong-t" ${A("fade", t0 + 100, 400)}>${esc(a)}</b><span data-t class="dong-m" ${A("fade", t0 + 200, 400)}>${esc(b)}</span></div>` + (k ? `<div class="vach" style="left:1100px;top:${y - 36}px;width:700px"></div>` : ""); }).join("")
       + T("nguon", 120, 1000, 1680, "Luật KDBH 08/2022/QH15 (sửa đổi 2025): Điều 20 khoản 2 điểm b, đ (giải thích, trả đúng hạn); Điều 31 (thời hạn, lãi chậm trả)."));
@@ -131,7 +131,7 @@ const cap = (kt, km, x, y, w, a, b) => `<div class="cap" style="left:${x}px;top:
   // ---- 7 SO SÁNH — hai thẻ, đầu thẻ có minh hoạ unDraw ----
   { const H = [["Vì sao có", "Bảo vệ lợi ích công cộng, môi trường, an toàn xã hội", "Theo nhu cầu người mua"], ["Ví dụ", "TNDS chủ xe cơ giới, cháy nổ, xây dựng…", "Nhân thọ, sức khoẻ, vật chất xe…"], ["Lưu ý", "Không từ chối người đủ điều kiện", "Tự chọn sản phẩm"]];
     sec2("so-sanh", "sang", nc(16), nen(NEN.dat(700))
-      + dau("3.2 · Theo tính chất pháp lý", "Bắt buộc [do luật], tự nguyện [do nhu cầu]", "Chỉ các loại do luật quy định.", 17)
+      + dau("3.2 · Theo tính chất pháp lý", "Bắt buộc [do luật], tự nguyện [do nhu cầu]", "Bắt buộc: chỉ loại do luật quy định.", 17)
       + [[120, "dau-xanh", "Bảo hiểm bắt buộc", 1, "", "Minh hoạ: văn bản luật có dấu đỏ và búa — bảo hiểm do luật buộc", {}], [990, "dau-vang", "Bảo hiểm tự nguyện", 2, "choose_5kz4", "Minh hoạ: phiếu tự chọn có hai ô đã tích và cây bút — bảo hiểm do người mua tự chọn", { "#6c63ff": P.x1 }]].map(([x, cls, ten, c, u, alt, doi]) => { const t0 = c === 1 ? 500 : 900;
         return khoi(x + 14, 344, 810, 650, "bong", "Bóng thẻ", A("rise", t0, 500)) + khoi(x, 330, 810, 650, "the-trang", `Thẻ ${ten}`, A("rise", t0, 500)) + khoi(x, 330, 810, 190, cls, `Đầu thẻ ${ten}`, A("rise", t0, 500))
           + (c === 2 ? lop(`<g transform="rotate(5 ${x + 658} 425)">${mh.phieu(x + 600, 356, 116)}</g>` + mh.but(x + 706, 474, 120, -50), x + 500, 330, 300, 190, alt, "phang", A("pop", t0 + 300, 500)) : lop(`<g transform="rotate(-6 ${x + 600} 430)">${mh.hopDong(x + 540, 340, 130, { bar: false })}</g>` + mh.bua(x + 720, 450, 150, { dau: P.v3, soc: P.v2, vet: P.x3 }), x + 500, 330, 300, 190, alt, "phang", A("pop", t0 + 300, 500))) + T(`the-td${c === 2 ? " toi" : ""}`, x + 40, 392, 480, ten, A("fade", t0 + 200, 400))
@@ -281,7 +281,7 @@ const cap = (kt, km, x, y, w, a, b) => `<div class="cap" style="left:${x}px;top:
     + [["Số đông", 560], ["Phân\u00a0tán rủi\u00a0ro", 680]].map(([s, y], k) => T("venn-t", 520, y, 200, s, A("fade", 1200 + k * 150, 400))).join("")
     + [["Rủi ro ngẫu nhiên", 545], ["Quyền lợi bảo hiểm", 630], ["Trung thực tuyệt đối", 715]].map(([s, y], k) => T("venn-t dac nho", 790, y, 340, s, A("pop", k * 200, 400) + ' data-click="1"')).join("")
     + [["Bồi thường", 560], ["Thế quyền", 700]].map(([s, y], k) => T("venn-t vang", 1165, y, 240, s, A("fade", k * 150, 400) + ' data-click="2"')).join("")
-    + T("nguon", 120, 1000, 1680, "Điều 16 Luật KDBH 08/2022/QH15: năm nguyên tắc giao kết, thực hiện hợp đồng bảo hiểm.")));
+    + T("nguon", 120, 1000, 1680, "Điều 16 Luật KDBH 08/2022/QH15 (sửa đổi 2025): năm nguyên tắc giao kết, thực hiện hợp đồng bảo hiểm.")));
 
   // ---- 15 CÂU CHỐT ĐIỀU 16 — nền đậm, chữ khổng lồ ----
   S.push(() => sec2("cau", "dam", "Slide thở: chốt phân biệt nguyên tắc nghiệp vụ và nguyên tắc pháp lý (khoản 1–5 Điều 16 Luật KDBH 2022).", nen(`<circle cx="1500" cy="560" r="520" fill="${P.x2}"/>` + mh.cham(120, 96, 5, 3, 26, 5, P.v2))
@@ -441,7 +441,7 @@ const cap = (kt, km, x, y, w, a, b) => `<div class="cap" style="left:${x}px;top:
       + lop(`<rect x="${X}" y="540" width="${0.7 * W - 4}" height="130" rx="12" fill="${P.x1}"/><rect x="${X + 0.7 * W}" y="540" width="${0.15 * W - 4}" height="130" rx="12" fill="${P.v2}"/><rect x="${X + 0.85 * W}" y="540" width="${0.15 * W}" height="130" rx="12" fill="${P.ke}"/><path d="M${X + 0.7 * W - 2} 510 V700 M${X + 0.85 * W - 2} 510 V700" stroke="${P.muc}" stroke-width="4"/>`, X, 505, W, 200, "Thanh tỷ lệ tổn thất: 0–70 % DN nhượng, 70–85 % DN nhận tái, trên 85 % trở lại DN nhượng", "phang", A("wipe", 800, 1100))
       + T("nhan-den phai", X + 0.7 * W - 380, 460, 360, "VD: ngưỡng 70 %", A("fade", 1600, 300)) + T("nhan-den phai", X + 0.85 * W - 222, 460, 200, "85 %", A("fade", 1700, 300))
       + [["0 – 70 %", "nhượng tự trả", X, 0.7 * W, "xanh"], ["70 – 85 %", "nhận tái trả", X + 0.7 * W, 0.15 * W, "vang"], ["trên 85 %", "trở lại nhượng (VD)", X + 0.85 * W, 0.15 * W, ""]].map(([a, b, x, w, c], j) => `<div class="cap" style="left:${x}px;top:720px;width:${w}px"><b data-t class="dong-t can ${c}" ${A("fade", 1800 + j * 250, 300)}>${a}</b><span data-t class="dong-m can" ${A("fade", 1850 + j * 250, 300)}>${b}</span></div>`).join("")
-      + khoi(120, 900, 1680, 84, "dai", "Dải ví dụ", A("wipe", 2600, 400)) + G("dai-t", 150, 900, 1620, 84, "VD: phí 100, bồi thường 80 → nhượng chịu 70, nhận tái trả 10.", A("fade", 2700, 300))); });
+      + T("nguon", 120, 1000, 1680, "Mức trần 85 % và các con số là ví dụ do người soạn thêm — bài giảng không nêu mức trần.") + khoi(120, 900, 1680, 84, "dai", "Dải ví dụ", A("wipe", 2600, 400)) + G("dai-t", 150, 900, 1620, 84, "VD: phí 100, bồi thường 80 → nhượng chịu 70, nhận tái trả 10.", A("fade", 2700, 300))); });
 
   // ---- 39 LÀM VIỆC NHÓM — nền đậm, ảnh nhóm sinh viên khung bo, hai đề tài bên trái ----
   S.push(() => sec2("noi-dung", "dam", nc(38), nen(mh.cham(120, 1000, 6, 2, 26, 5, P.v2))

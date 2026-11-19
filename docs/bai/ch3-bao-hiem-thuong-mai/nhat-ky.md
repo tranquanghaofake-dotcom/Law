@@ -22,3 +22,22 @@
 - Slide 2, 5, 16: ảnh phạm vi công cộng tô hai màu tràn nửa slide; slide 46 tổng kết 4 phần có icon; slide 9, 13 phóng hình; slide 41–45 thêm nhân vật suy nghĩ, thu khối đáp án.
 - Mở phần 03, 04 và slide 47 chưa có ảnh: Wikimedia trả 429 (giới hạn theo IP) cho 3 ảnh đã chọn — hợp đồng bảo hiểm hoả hoạn Bern 1889, tranh Raden Saleh tàu gặp bão 1836, tranh quán cà phê Lloyd's (William Holland).
 - Lỗ hổng công cụ phát hiện bằng mắt (cần sửa trong skill): kiểm đè không bắt lớp ảnh đè lên chữ khi `top` thiếu đơn vị; lớp ảnh tràn khỏi mép slide không bị báo.
+
+## 19/11/2026 — thẩm định học thuật lần 2 + duyệt lại (quy trình mới: brief.js, mức lỗi, luật dừng)
+- Văn bản luật: đối chiếu văn bản hợp nhất 31/VBHN-VPQH (vbpl.vn) → `nguon/luat-kdbh-trich.md`; xác nhận điểm c khoản 2 Điều 8 "trong hoạt động xây dựng" (Luật 139/2025).
+- Thẩm định lần 2 (`duyet/01-tham-dinh-2.md`): 11 lỗi CHẶN, đều thiếu ý pháp lý (điều kiện, ngoại lệ bị rơi khi rút gọn) — đã sửa hết; 0 lỗi sai số điều.
+- Duyệt lại có phạm vi (`duyet/02-duyet-lai.md`): **QUA**, 0 lỗi CHẶN. Hết số vòng theo luật dừng — không mở vòng mới.
+- Quyết định: giữ trần số chữ bằng cách bỏ dòng dẫn trùng ý (slide 6, 8, 12, 26, 31, 45), không cắt điều kiện pháp lý (đúng > đủ > dễ đọc).
+- NÊN sửa luôn sau duyệt lại (rẻ): slide 24 "giải thích quyền lợi, loại trừ" (Điều 20 k2 b); slide 14 chân luật có "sửa đổi 2025"; slide 17 phụ đề có chủ ngữ; slide 38 ghi mức trần 85 % là người soạn thêm; lời nói 17, 21 cập nhật lần đối chiếu.
+- NÊN để lại có chủ ý (lý do):
+  - slide 1, 3, 5 hình ô che / khiên (ẩn dụ) — Hào đã duyệt bằng mắt; đổi ảnh mở phần là việc riêng.
+  - slide 7 mốc 1993, 2001 — nguồn thứ cấp; cần tra vbpl.vn Nghị định 100/CP, Luật 24/2000/QH10.
+  - slide 11 chưa nêu người không phải chủ sở hữu (người thuê) có quyền lợi có thể được bảo hiểm — chưa có câu luật đối chiếu (Điều 44 chưa trích).
+  - slide 35 ví dụ trùng số liệu HĐ 4 Bài 12 (lộ một phần lời giải) — đổi số phải vẽ lại cột; hỏi giảng viên có muốn đổi.
+  - slide 40 hình "ba hộp" trong khi luật có 5 loại hợp đồng (Điều 15).
+  - slide 8 mũi tên bồi thường chỉ về bên mua; lời nói đã nói rõ người nhận là người được bảo hiểm / người thụ hưởng.
+  - slide 12, 21 chip trích chỉ ghi Luật 08/2022 — câu trích là chữ của luật gốc, văn bản hợp nhất không sửa khoản đó.
+  - slide 17 "sức khoẻ" (bảo hiểm sức khỏe thương mại) có thể lẫn với bảo hiểm y tế (Luật KDBH không áp dụng — khoản 2 Điều 1).
+- GHI NHẬN: slide 44 đề gốc viết sẵn "DNBH" ở vế đầu nên lộ đáp án C; slide 42 hình hợp đồng → chồng xu gợi ý phương án B.
+- Hỏi giảng viên: đáp án câu 1, câu 2 (A hay D); vượt mức tỷ lệ có mức trần không; Bài 11 có tính hoa hồng tái bảo hiểm không; có đổi số liệu ví dụ slide 35 không.
+
