@@ -3,7 +3,7 @@ Vòng trước nêu các lỗi dưới đây; người dựng báo đã sửa. V
 --- lỗi vòng trước ---
 {{LOI}}
 --- hết ---
-Đọc: ảnh slide đã sửa {{LOP}}/h-NN.jpg và bản PPTX {{LOP}}/p-NN.png{{PHAM_VI}}; lướt {{LOP}}/tong-*.jpg để chắc không slide nào vỡ; chữ {{LOP}}/chu.md; nguồn {{BAI}}/noi-dung.md; tiêu chí {{SKILL}}/references/soat.md (mục 4: mức lỗi).
+Đọc: ảnh slide đã sửa {{LOP}}/h-NN.jpg và bản PPTX {{LOP}}/p-NN.png{{PHAM_VI}}; lướt {{LOP}}/tong-*.jpg để chắc không slide nào vỡ; chữ {{LOP}}/chu.md; nguồn {{BAI}}/noi-dung.md; văn bản luật (lỗi nội dung phải đối chiếu nguyên văn): {{LUAT}}; tiêu chí {{SKILL}}/references/soat.md (mục 4: mức lỗi).
 Trả:
 1. Bảng: lỗi vòng trước → đã hết / còn (mô tả nếu còn).
 2. Lỗi mới (vẫn phải tìm, không chỉ xác nhận), gắn mức [CHẶN] / [NÊN] / [GHI NHẬN]: slide · mô tả · ảnh nào · đề xuất.
