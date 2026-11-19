@@ -29,7 +29,7 @@ function taoBrief(dir, vai, { ten, mon, lan = 2, luat, goc, loi, slide } = {}) {
     PHAM_VI: slide ? ` (slide ${String(slide).split(",").map((s) => s.trim()).join(", ")})` : "",
     CHU: +lan === 1 ? path.join(dir, "kich-ban.md") : path.join(lop, "chu.md"),
     LUAT: luat ? String(luat).split(",").map((s) => (fs.existsSync(s.trim()) ? path.resolve(s.trim()) : s.trim())).join(" · ") : "nguồn ghi trong bảng nguồn của noi-dung.md",
-    GOC: goc ? ` · tài liệu gốc ${goc}` : "",
+    GOC: goc ? ` · tài liệu gốc ${fs.existsSync(goc) ? path.resolve(goc) : goc}` : "",
   };
   const brief = fs.readFileSync(path.join(SKILL, "references", "brief", `${vai}.md`), "utf8").replace(/\{\{(\w+)\}\}/g, (m, k) => (k in dien ? dien[k] : m)).trim();
   return { brief, baoCao };
