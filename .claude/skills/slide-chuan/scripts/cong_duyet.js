@@ -25,5 +25,16 @@ function kiemCongDuyet(dir) {
   }
   return loi;
 }
-module.exports = { kiemCongDuyet };
+// VAI BẮT BUỘC theo thể loại (bài An Gia 20/11/2026: thiếu kết luận từng phần, kết luận chung, slide cảm ơn).
+// thiet-ke/phong-cach.json: "vaiBatBuoc": ["bia", "lo-trinh", "ket-phan", "ket-chung", "cam-on"]; mỗi slide khai <section data-vai="…">.
+// "ket-phan" phải có ít nhất bằng số slide mở phần (data-mau="mo-phan").
+function kiemVaiBatBuoc(html, the) {
+  const can = (the && the.vaiBatBuoc) || []; if (!can.length) return [];
+  const vai = [...html.matchAll(/<section\b[^>]*\bdata-vai="([^"]+)"/g)].map((m) => m[1]), dem = (v) => vai.filter((x) => x === v).length;
+  const soPhan = [...html.matchAll(/<section\b[^>]*\bdata-mau="mo-phan"/g)].length, loi = [];
+  for (const v of can) if (!dem(v)) loi.push(`⛔ thiếu slide vai “${v}” (thẻ phong cách: vaiBatBuoc) — thể loại này cần ${v === "ket-phan" ? "kết luận cho từng phần" : v === "ket-chung" ? "slide kết luận chung" : v === "cam-on" ? "slide cảm ơn / hỏi đáp" : v}`);
+  if (can.includes("ket-phan") && soPhan > 1 && dem("ket-phan") < soPhan) loi.push(`⛔ có ${soPhan} phần (mở phần) nhưng chỉ ${dem("ket-phan")} slide kết luận phần — mỗi phần cần một kết luận`);
+  return loi;
+}
+module.exports = { kiemCongDuyet, kiemVaiBatBuoc };
 if (require.main === module) { const l = kiemCongDuyet(process.argv[2] || "."); console.log(l.length ? l.join("\n") : "✓ đủ điểm duyệt A, B, C"); process.exitCode = l.length ? 1 : 0; }

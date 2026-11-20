@@ -7,10 +7,13 @@
 //   5. lớp ảnh [data-l] thiếu data-alt (hình trang trí: data-alt="Hình trang trí" → PowerPoint đánh dấu decorative)
 //   6. hộp chữ có nền riêng đè lên lớp ảnh mà thiếu data-l → mất nền trong PPTX
 //   7. đoạn chữ tô nền bên trong hộp chữ (<mark>, <span style="background">) → PPTX chỉ giữ màu chữ, mất nền tô
+//  10. viết tắt (NĐBH, BLDS…) xuất hiện trên slide mà chưa định nghĩa ở slide này hoặc slide trước — người đọc chưa học môn không hiểu; dòng nguồn (.nguon, [data-nguon]) được miễn
 //   9. chữ IN HOA nhiều dòng giãn dòng < 1,15 → dấu (hỏi, sắc, mũ) dòng dưới đè dấu nặng / móc dòng trên (máy đo tràn hộp không bắt)
 //   8. khối có nền (vạch kẻ, ô màu) không là lớp ảnh, không là hộp chữ, nằm trên một lớp ảnh đứng trước nó → bị vẽ vào nền slide, lớp ảnh che mất trong PPTX
 function kiemHtml() {
   const out = [], txt = (s) => (s || "").replace(/\s+/g, " ").trim();
+  const VT_OK = new Set(["OTP", "PDF", "USD", "VND", "GDP", "CEO", "TP", "COVID", "WTO", "ASEAN", "EU", "AI"]), daDinhNghia = new Set(), vtDaBao = new Set();   // 10. viết tắt
+  const MIEN_VT = /nguon|so-trang|(^|\s)so(\s|$)/;
   [...document.querySelectorAll("section.s")].forEach((s, si) => {
     s.scrollIntoView({ block: "start" });
     const S = s.getBoundingClientRect(), n = si + 1, k = 1920 / (S.width || 1920);
@@ -36,6 +39,14 @@ function kiemHtml() {
       const x0 = Math.min(...Q.map((q) => q.left)), x1 = Math.max(...Q.map((q) => q.right)), y0 = Math.min(...Q.map((q) => q.top)), y1 = Math.max(...Q.map((q) => q.bottom));
       const mep = Math.max(lo(S.left + 40 / k, x0), lo(x1, S.right - 40 / k), lo(S.top + 24 / k, y0), lo(y1, S.bottom - 24 / k));
       if (mep > 0 && !el.closest("[data-ngoai]")) out.push(`slide ${n}: ${ten} ra ngoài vùng an toàn ${mep} px (lề 40 px ngang, 24 px dọc)`); }
+    // 10. viết tắt chưa định nghĩa (bài An Gia 20/11/2026: NĐBH, HĐ, BLDS, KDBH trên slide; người đọc chưa học môn không hiểu)
+    { const hop = s.hasAttribute("data-nguon") ? [] : [...s.querySelectorAll("[data-t]")].filter((el) => hien(el) && !MIEN_VT.test(el.className || "") && !el.closest("[data-nguon]"));   // slide tài liệu tham khảo: <section data-nguon>
+      const chu = hop.map((el) => txt(el.textContent)).join(" \n ");
+      for (const m of chu.matchAll(/(\(([A-ZĐ][A-ZĐ0-9]{1,6})\))|(([A-ZĐ][A-ZĐ0-9]{1,6})\s*=)/g)) daDinhNghia.add(m[2] || m[4]);
+      const tenRieng = new Set((s.dataset.vietTat || "").split(/[\s,]+/).filter(Boolean));   // tên riêng viết tắt (BIDV, MB…): <section data-viet-tat="BIDV,MB">
+      for (const m of chu.matchAll(/(?<![\p{L}\d\/\-.])([A-ZĐ][A-ZĐ0-9]{1,6})(?![\p{L}\d\/])/gu)) { const t = m[1];   // bỏ đuôi số hiệu văn bản (08/2022/QH15, 6029/QĐ-BHBV)
+        if (/^[IVXLC]+$/.test(t) || /^\d/.test(t) || VT_OK.has(t) || tenRieng.has(t) || daDinhNghia.has(t) || vtDaBao.has(t) || (t.replace(/\d/g, "").length < 2)) continue;
+        vtDaBao.add(t); out.push(`slide ${n}: viết tắt “${t}” chưa được định nghĩa — viết đủ chữ, hoặc định nghĩa ở lần đầu: “… (${t})” hoặc “${t} = …” (dòng nguồn được miễn)`); } }
     // 4b. lớp ảnh tràn khỏi mép slide (bị cắt khi chiếu: chân nhân vật, góc hình) — trừ hoạ tiết trang trí và lớp khai data-ngoai
     for (const el of s.querySelectorAll("[data-l]")) { if (!hien(el) || el.closest("[data-ngoai]") || el.dataset.alt === "Hình trang trí") continue;
       const R = el.getBoundingClientRect(); if (!R.width || !R.height) continue;

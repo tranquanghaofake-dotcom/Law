@@ -23,7 +23,7 @@ Thêm cho hình: **hình là chính sự vật** (không ẩn dụ phải giải
 | Dễ hiểu | sinh viên mới học hiểu từng slide trong 3 giây | phải nghe giảng mới hiểu | khó hiểu cả khi nghe |
 | **Nhất quán** (chống hổ lốn, `bo-cuc.md`) | một ngôn ngữ hình ảnh, mọi slide đúng bố cục mẫu, cùng bảng màu, cùng nét | 2 giọng hình, vài slide lệch khung | ≥ 3 giọng hình (ảnh thật + hoạt hình + đồ hoạ phẳng…), mỗi slide một kiểu |
 | **Phong phú** (chống quá đơn giản, `bo-cuc.md` mục 7) | đặt cạnh mẫu thương mại không thấy "trơn": nền có khối theo vai, hình chính là cảnh, khối tô đặc | nền trơn, hình nét nhỏ giữa khoảng trống, nhiều slide chỉ chữ |
-| **Dễ đọc** (`bo-cuc.md` mục 8) | đọc được từ cuối lớp trên máy chiếu: thân bài ≥ 30 px, ≥ 7 : 1, ≤ 45 chữ / slide | chữ xám nhạt nhỏ, đoạn dài, slide đặc chữ |
+| **Dễ đọc** (`bo-cuc.md` mục 8) | đọc được từ cuối lớp trên máy chiếu: thân bài ≥ 30 px, ≥ 7 : 1, ≤ 70 chữ / slide | chữ xám nhạt nhỏ, đoạn dài, slide đặc chữ |
 | **Thẩm mỹ** (so với bảng tham chiếu) | đứng cạnh mẫu chuyên nghiệp không lạc tông: thứ bậc rõ, cân bằng, căn theo lưới, khoảng thở đều, có nhịp; **đa dạng trong hệ thống**: ≥ 3 loại nền đúng vai + hoạ tiết đổi vị trí, ≥ 6 kiểu trình bày dữ liệu, mỗi phần một hình chính riêng | sạch nhưng đơn điệu: một nền phẳng suốt deck, bảng một kiểu, cùng vài hình dán lại nhiều slide | lệch lưới, chật / trống bất thường, hình sai tỉ lệ, đổi nền / màu ngẫu nhiên không theo vai |
 Giao khi mọi hạng ≥ 4 — kể cả Nhất quán và Thẩm mỹ (PPTEval dùng Nội dung / Thiết kế / Mạch lạc, thang 1–5 — arXiv 2501.03936).
 

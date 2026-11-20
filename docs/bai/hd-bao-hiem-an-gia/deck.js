@@ -26,7 +26,9 @@ const nguon = (s, sang = false) => `<div class="nguon${sang ? " sang" : ""}" dat
 const cham = (x, y, c, r, m) => { let s = ""; for (let i = 0; i < c; i++) for (let j = 0; j < r; j++) s += `<circle cx="${x + i * 26}" cy="${y + j * 26}" r="5" fill="${m}"/>`; return s; };
 const icon = (ten, cx, cy, co, mau, net = 3) => { const t = fs.readFileSync(path.join(D, "asset", "tabler", ten + ".svg"), "utf8").replace(/^[\s\S]*?<svg[^>]*>/, "").replace(/<\/svg>\s*$/, "").replace(/<path stroke="none" d="M0 0h24v24H0z" fill="none"\s*\/>/, "");
   return `<g transform="translate(${cx - co / 2} ${cy - co / 2}) scale(${co / 24})" fill="none" stroke="${mau}" stroke-width="${((net * 24) / co).toFixed(3)}" stroke-linecap="round" stroke-linejoin="round">${t}</g>`; };
-const sec = (k, mau, nenLoai, inner, ex = "") => S.push({ k, html: `<section class="s ${nenLoai}" data-mau="${mau}" data-nen="${{ sang: "N1", toi: "N2", chia: "N3", anh: "N4" }[nenLoai]}" ${ex} data-trans="push" data-dur="600" data-notes="${esc(NOTES[k] || "")}">\n${inner}\n</section>` });
+const EXV = { 20: ' data-viet-tat="BIDV,MB"', 26: " data-nguon" };
+const VAI = { 1: "bia", 2: "lo-trinh", 15: "ket-phan", 24: "ket-phan", 25: "ket-chung", 27: "cam-on" };
+const sec = (k, mau, nenLoai, inner, ex = "") => S.push({ k, html: `<section class="s ${nenLoai}" data-mau="${mau}"${VAI[k] ? ` data-vai="${VAI[k]}"` : ""}${EXV[k] || ""} data-nen="${{ sang: "N1", toi: "N2", chia: "N3", anh: "N4" }[nenLoai]}" ${ex} data-trans="push" data-dur="600" data-notes="${esc(NOTES[k] || "")}">\n${inner}\n</section>` });
 
 // ---------- BỐ CỤC MẪU ----------
 // nội dung (nền trắng): nhãn cam · tiêu đề Anton NGẮN · câu dẫn · vạch cam · vùng nội dung 330–980 · nguồn 1004
@@ -103,8 +105,8 @@ moPhan(3, "01", "Hợp đồng Bảo Việt An Gia", "Một hợp đồng bảo 
   sec(12, "trich", "chia", K(0, 0, 1000, 1080, "pan-navy", "Panel màu chủ bên trái", A("fade", 0, 400))
     + T("kk sang", 120, 60, 800, "Đối chiếu luật ✚", A("fade", 0, 400)) + T("so", 1500, 64, 300, `12 / ${TONG}`) + H("td sang", 119, 116, 820, "Hợp đồng nói “hủy bỏ”, luật nói “chấm dứt”", A("rise", 100, 600))
     + lop([0, 64].map((d) => `<circle cx="${138 + d}" cy="440" r="24" fill="${P.cam}"/><path d="M${114 + d} 440 Q${110 + d} 394 ${150 + d} 376 L${154 + d} 388 Q${130 + d} 400 ${136 + d} 430 Z" fill="${P.cam}"/>`).join(""), 100, 366, 150, 100, "Dấu ngoặc kép", A("pop", 400, 400))
-    + T("trich", 120, 500, 800, TRICH, A("fade", 600, 800)) + T("trich-cc", 120, 975, 800, "Điều 26 (mở đầu, khoản 1) · Luật KDBH 08/2022", A("fade", 1000, 400))
-    + [["01", "Hủy bỏ", "chữ của hợp đồng (Điều 4)", "Coi như chưa từng ký; hai bên hoàn trả cho nhau", "khoản 1 Điều 427 BLDS 2015"], ["02", "Đơn phương chấm dứt", "chữ của Luật KDBH", "Chỉ dừng từ khi bên kia nhận thông báo", "khoản 3 Điều 428 BLDS 2015"]].map(([so, a, b, c, d], k) => { const y = 150 + k * 450, t0 = 1300 + k * 400;
+    + T("trich", 120, 500, 800, TRICH, A("fade", 600, 800)) + T("trich-cc", 120, 975, 800, "Điều 26 (mở đầu, khoản 1) · Luật Kinh doanh bảo hiểm 2022", A("fade", 1000, 400))
+    + [["01", "Hủy bỏ", "chữ của hợp đồng (Điều 4)", "Coi như chưa từng ký; hai bên hoàn trả cho nhau", "khoản 1 Điều 427 Bộ luật Dân sự 2015"], ["02", "Đơn phương chấm dứt", "chữ của Luật Kinh doanh bảo hiểm", "Chỉ dừng từ khi bên kia nhận thông báo", "khoản 3 Điều 428 Bộ luật Dân sự 2015"]].map(([so, a, b, c, d], k) => { const y = 150 + k * 450, t0 = 1300 + k * 400;
       return K(1080, y, 720, 390, "the", `Thẻ ${a}`, A("rise", t0, 500)) + K(1080, y, 12, 390, k ? "vach-doc navy" : "vach-doc", "Vạch màu", A("rise", t0, 500))
         + T(`the-so${k ? "" : " cam"}`, 1130, y + 30, 200, so, A("fade", t0 + 100, 300)) + T("the-t", 1260, y + 44, 520, a, A("fade", t0 + 100, 300)) + T("the-ai", 1260, y + 112, 520, b, A("fade", t0 + 150, 300))
         + T("the-m", 1130, y + 190, 640, c, A("fade", t0 + 200, 400)) + T("the-cc", 1130, y + 320, 640, d, A("fade", t0 + 250, 300)); }).join(""), "data-khong-hinh");
@@ -245,7 +247,7 @@ sec(13, "so-lon", "sang", dau(13, "Điều 6 · Chấm dứt, gian lận", "Bên
 }
 
 // ===== 16 · KHUYẾN NGHỊ =====
-{ const KN = [["01", "pencil-check", "Khai thật tiền sử bệnh", "Khai sai có thể bị hủy hợp đồng, mất toàn bộ quyền lợi.", "Điều 6 HĐ · khoản 1 Điều 22 Luật KDBH ✚"], ["02", "book", "Đòi và đọc Quy tắc", "Trường hợp không được trả nằm ở Chương III Quy tắc: đọc trước khi ký.", "Điều 7 HĐ"], ["03", "hourglass", "Mua sớm theo mốc chờ", "Bệnh có sẵn chờ 365 ngày, sinh con 635 ngày: mua trước khi cần.", "Điều 5 HĐ"]];
+{ const KN = [["01", "pencil-check", "Khai thật tiền sử bệnh", "Khai sai có thể bị hủy hợp đồng, mất toàn bộ quyền lợi.", "Điều 6 hợp đồng · khoản 1 Điều 22 Luật Kinh doanh bảo hiểm ✚"], ["02", "book", "Đòi và đọc Quy tắc", "Trường hợp không được trả nằm ở Chương III Quy tắc: đọc trước khi ký.", "Điều 7 hợp đồng"], ["03", "hourglass", "Mua sớm theo mốc chờ", "Bệnh có sẵn chờ 365 ngày, sinh con 635 ngày: mua trước khi cần.", "Điều 5 hợp đồng"]];
   sec(16, "noi-dung", "sang", dau(16, "Kết luận phần I · Khuyến nghị", "Trước khi ký: ba việc người mua cần làm", "Ba thói quen giúp người mua không mất quyền lợi khi cần dùng đến bảo hiểm.")
     + KN.map(([so, i, t, m, cc], k) => { const x = 120 + k * 572, t0 = 400 + k * 400;
       return K(x, 340, 536, 640, "the", `Khối khuyến nghị ${so}`, A("rise", t0, 500)) + T("kn-so", x + 36, 366, 200, so, A("rise", t0 + 100, 400)) + lop(vuong(x + 400, 370, 100, k ? P.navy : P.cam, i), x + 400, 370, 100, 100, `Biểu tượng ${t}`, A("pop", t0 + 200, 300))
@@ -278,7 +280,7 @@ sec(21, "trich", "chia", K(0, 0, 1100, 1080, "pan-navy", "Panel màu chủ bên 
   + lop([0, 64].map((d) => `<circle cx="${138 + d}" cy="440" r="24" fill="${P.cam}"/><path d="M${114 + d} 440 Q${110 + d} 394 ${150 + d} 376 L${154 + d} 388 Q${130 + d} 400 ${136 + d} 430 Z" fill="${P.cam}"/>`).join(""), 100, 366, 150, 100, "Dấu ngoặc kép", A("pop", 400, 400))
   + T("trich", 120, 500, 900, "Tổ chức tín dụng, chi nhánh ngân hàng nước ngoài, người quản lý, người điều hành, nhân viên … [gắn việc bán sản phẩm bảo hiểm không bắt buộc] với việc cung ứng sản phẩm, dịch vụ ngân hàng dưới mọi hình thức.", A("fade", 700, 800))
   + T("vd-sang", 120, 800, 900, "Ví dụ: ngân hàng không được buộc khách mua bảo hiểm mới cho vay.", A("fade", 1100, 400))
-  + T("trich-cc", 120, 900, 900, "Khoản 5 Điều 15 (hành vi bị nghiêm cấm) · Luật Các TCTD 32/2024/QH15 · hiệu lực 01/7/2024", A("fade", 1200, 400)), "data-hero");
+  + T("trich-cc", 120, 900, 900, "Khoản 5 Điều 15 (hành vi bị nghiêm cấm) · Luật Các tổ chức tín dụng 2024 · hiệu lực 01/7/2024", A("fade", 1200, 400)), "data-hero");
 
 // ===== 22 · BÃO YAGI =====
 { const W = 980, sc = W / 12811, R = [["Thiệt hại ước tính", 12811, "12.811 tỷ", P.cam4, "do"], ["Tạm ứng, giữa 10/2024", 213, "213 tỷ", P.navy3, ""], ["Tạm ứng, đến 9/1/2025", 956.5, "956,5 tỷ", P.navy, ""]];
@@ -409,6 +411,6 @@ em{font-style:normal;color:${P.cam}}.giua{display:flex;align-items:center}
 fs.rmSync(path.join(D, "slides"), { recursive: true, force: true });
 S.sort((a, b) => a.k - b.k).forEach((s) => ghi(path.join(D, "slides", `${String(s.k).padStart(2, "0")}.html`), s.html));
 fs.writeFileSync(path.join(D, "thiet-ke", "phong-cach.json"), JSON.stringify({ ten: "báo cáo đậm — navy, cam san hô, Anton", huong: "Hướng 3 (C1, 20/11/2026): navy #14294A + trắng, một màu nhấn cam san hô; tiêu đề Anton in hoa ngắn + câu dẫn Be Vietnam Pro; panel chia đôi; số lớn; ảnh tròn đen trắng; lưới chấm; khối vuông không bo, không bóng, không gradient.", gradient: false, bongMo: false,
-  bangMau: Object.values(P), loaiHinh: ["phang", "nen", "anh-chup"], boCuc: ["bia", "mo-phan", "noi-dung", "chia", "so-lon", "bang", "trich", "so-sanh", "ket"], tieuDeCoDinh: ["noi-dung", "bang"],
+  bangMau: Object.values(P), loaiHinh: ["phang", "nen", "anh-chup"], boCuc: ["bia", "mo-phan", "noi-dung", "chia", "so-lon", "bang", "trich", "so-sanh", "ket"], tieuDeCoDinh: ["noi-dung", "bang"], vaiBatBuoc: ["bia", "lo-trinh", "ket-phan", "ket-chung", "cam-on"],
   nguong: { loaiNenToiThieu: 2, tiLeNenToiDa: 0.85, lienToiDa: 6, lienHoToiDa: 6, assetToiDa: 4, bangXetTiLe: 99, tieuDiemToiThieu: 0.15 } }, null, 2));
 console.log(`${S.length} slide: ${S.map((s) => s.k).join(", ")}`);

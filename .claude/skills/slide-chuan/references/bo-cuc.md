@@ -60,7 +60,7 @@ Sau khi chữa hổ lốn bằng cắt bớt, deck thành sạch nhưng nghèo (
 ## 8. Chữ dễ đọc + hình cách điệu (Chương 3, vòng 4 — Hào: "chữ rõ ràng, dễ nhìn và hiểu; hình phong phú, sáng tạo, có thể cách điệu")
 **Chữ** — chiếu trên máy chiếu lớp học, người ngồi cuối lớp phải đọc được:
 - Thân bài ≥ 30 px (nhãn ≥ 28 px; dòng nguồn ≥ 26 px); chữ phụ màu đủ đậm để đạt **≥ 7 : 1** khi chữ < 32 px (máy chiếu làm bạc màu — xám #55… không đủ, dùng #3F4B48); chữ trên ô màu đậm thì ≥ 32 px đậm.
-- **≤ 45 chữ / slide nội dung** (bảng, câu hỏi, so sánh ≤ 75; trích nguyên văn ≤ 95), không đoạn nào quá 3 dòng. Phụ đề trùng ý với hình thì bỏ — hình chính đã nói.
+- **≤ 70 chữ / slide nội dung** (bảng, câu hỏi, so sánh ≤ 100; trích nguyên văn ≤ 110 — nới 20/11/2026 vì định nghĩa + "ý chính" trên slide cần chỗ), không đoạn nào quá 3 dòng. Phụ đề trùng ý với hình thì bỏ — hình chính đã nói.
 - **Ví dụ số → hình**: "nhà 1 tỷ, STBH 600 triệu, thiệt hại 200 triệu → bồi thường 120 triệu" thành dải ô màu nối mũi tên (mỗi ô một màu theo nghĩa: tài sản bạc hà, STBH vàng, thiệt hại đỏ nhạt, kết quả vàng sáng). Nhãn lặp lại ở mọi hàng → gom thành một chú giải trên đầu bảng.
 - Máy: `scripts/de_doc.js` báo ◇ dễ đọc (số chữ, chữ < 28 px, đoạn dài, tương phản < 7 : 1 cho chữ nhỏ — nền dưới chữ tìm theo hình học vì thẻ là lớp ảnh).
 **Hình cách điệu** — một thủ pháp cho mỗi vai, lặp lại có chủ ý:

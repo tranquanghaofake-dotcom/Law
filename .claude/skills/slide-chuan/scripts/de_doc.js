@@ -1,7 +1,7 @@
 // DỄ ĐỌC — "nhìn slide là nắm ý" bắt đầu từ chữ đọc được ở cuối lớp (Chương 3, 15/11/2026). Đo trên trang, theo thẻ phong cách:
 //   số chữ mỗi slide (trừ số trang, dòng nguồn) · tỉ lệ chữ dưới 28 px (14 pt) · đoạn quá nhiều dòng · chữ thân bài tương phản thấp
 //   (< 7 : 1 cho chữ < 32 px — chuẩn AAA, vì máy chiếu lớp học làm bạc màu).
-// Ngưỡng (ghi đè trong thẻ "nguong"): tuToiDa 45 (bố cục bang / hoi / so-sanh: 75) · nhoToiDa 0.15 · dongToiDa 3 · tuongPhanNho 7.
+// Ngưỡng (ghi đè trong thẻ "nguong"): tuToiDa 70 (bố cục bang / hoi / so-sanh: 100; trích: 110) · nhoToiDa 0.15 · dongToiDa 3 · tuongPhanNho 7.
 // Thẻ khai "deDoc": false để tắt (kèm lý do).
 
 function thuThapDeDoc() {
@@ -36,7 +36,7 @@ function thuThapDeDoc() {
   return out;
 }
 
-const NGUONG_DD = { tuToiDa: 45, tuToiDaRong: 75, tuToiDaTrich: 95, nhanToiDa: 12, nhoToiDa: 0.15, dongToiDa: 3, tuongPhanNho: 7 };
+const NGUONG_DD = { tuToiDa: 70, tuToiDaRong: 100, tuToiDaTrich: 110, nhanToiDa: 20, nhoToiDa: 0.15, dongToiDa: 3, tuongPhanNho: 7 };   // nới 20/11/2026 (bài An Gia): 45 chữ mâu thuẫn luật "nhìn slide là nắm toàn bộ ý" (slide có định nghĩa + ý chính), 23–29 cảnh báo bị bỏ qua cả phiên → nhiễu che cảnh báo thật
 const RONG = new Set(["bang", "hoi", "so-sanh"]);   // bảng, câu hỏi, so sánh: nới số chữ; trích nguyên văn: nới hơn (không được cắt lời luật)
 const MIEN = /^(nguon|so-trang|chu-anh)$/, NHAN = /^(chip)$/;   // nhãn chữ in hoa giãn cách: không tính vào tỉ lệ chữ nhỏ (vẫn phải ≥ 12 pt)
 

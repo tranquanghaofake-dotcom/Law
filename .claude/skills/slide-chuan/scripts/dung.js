@@ -69,7 +69,8 @@ async function dung(dir, { ten, soat = true, nhap = false } = {}) {
   if (loi.length) console.log(loi.join("\n"));
   const { thuThap, danhGia, NGUONG } = require("./da_dang"), { thuThapNhatQuan, danhGiaNhatQuan } = require("./nhat_quan"), { thuThapPhongPhu, danhGiaPhongPhu } = require("./phong_phu"), { thuThapDeDoc, danhGiaDeDoc } = require("./de_doc"); let dd = null, pp = null, dc = null;
   const fThe = path.join(dir, "thiet-ke", "phong-cach.json"), the = fs.existsSync(fThe) ? JSON.parse(fs.readFileSync(fThe, "utf8")) : null;
-  const ng = { ...NGUONG, ...((the && the.nguong) || {}) };   // thẻ phong cách được chỉnh ngưỡng đa dạng (vd. deck biên tập tối giản: cùng nền giấy nhiều slide liền là chủ ý)
+  const ng = { ...NGUONG, ...((the && the.nguong) || {}) };
+  loi.push(...require("./cong_duyet").kiemVaiBatBuoc(html, the));   // slide bắt buộc theo thể loại (kết luận phần, kết luận chung, cảm ơn…)   // thẻ phong cách được chỉnh ngưỡng đa dạng (vd. deck biên tập tối giản: cùng nền giấy nhiều slide liền là chủ ý)
   const truoc = async (page) => { const a = await page.evaluate(kiemHtml), b = await page.evaluate(kiemDeTrongTrang); dd = danhGia(await page.evaluate(thuThap), ng);
     const nq = danhGiaNhatQuan(await page.evaluate(thuThapNhatQuan), the); pp = danhGiaPhongPhu(await page.evaluate(thuThapPhongPhu), the, the && the.nguong); dc = danhGiaDeDoc(await page.evaluate(thuThapDeDoc), the, the && the.nguong);
     return [...a, ...b, ...dd.loi, ...nq.loi, ...pp.loi, ...dc.loi]; };

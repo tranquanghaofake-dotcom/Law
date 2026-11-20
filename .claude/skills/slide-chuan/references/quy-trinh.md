@@ -37,6 +37,11 @@ Bảng, mỗi slide một dòng:
 - Mỗi slide MỘT ý; hai ý → hai slide. Mỗi mục tiêu có slide + câu kiểm tra. Tổng giây ≈ thời lượng (chừa 10 %).
 - Bằng chứng hình chọn theo **câu hỏi của người nghe**, không theo hình thức tài liệu: quan hệ các bên → sơ đồ; so sánh → hai cột / thước chung; số liệu → bảng hoặc biểu đồ đúng tỉ lệ; thời gian → trục; quy trình → bước. Hình phải cho thấy chính sự vật, không ẩn dụ.
 
+- **Slide bắt buộc theo thể loại** (thuyết trình, báo cáo, bảo vệ): lộ trình · kết luận mỗi phần · kết luận chung (trả lời thẳng câu hỏi đề tài) · cảm ơn – hỏi đáp — có trong bảng kịch bản dù tài liệu gốc không có.
+- **Bảng thuật ngữ** cuối `kich-ban.md`: mọi thuật ngữ, viết tắt sẽ lên slide + định nghĩa một dòng + slide xuất hiện đầu tiên. Không định nghĩa được bằng lời thường → đổi cách nói.
+- **Soát "người đọc lạ" trước điểm B**: gọi người duyệt độc lập (`vai-tro.md`, mẫu "người đọc lạ") đọc kịch bản như sinh viên chưa học môn — báo thuật ngữ chưa giải thích, tiêu đề không nói ra ý, bảng thiếu cách đọc. Sửa rồi mới gửi B.
+- **Kế hoạch hình ngay ở kịch bản**: cột "bằng chứng hình" ghi rõ ảnh thật / hình kể chuyện cho mỗi phần (không để "khối hộp" làm hình chính); ảnh có giấy phép tìm ở bước này, không để cuối.
+
 **Điểm duyệt B.**
 
 ## 4. Tham chiếu + hệ thống thiết kế + bản đồ nhịp → `thiet-ke/`
@@ -57,7 +62,7 @@ Bìa · một slide khái niệm · một sơ đồ / so sánh · một slide s�
 - **Mỗi bảng và mỗi hình chính làm 2 phương án** (bước 7 cũng vậy): hai kiểu trình bày khác nhau trong `trinh-bay-du-lieu.md` (vd. T3 cột nhấn vs T5 thẻ), hai cách vẽ hình (cảnh vs vật thể); dựng cả hai, đặt cạnh mẫu tham chiếu cùng loại bằng `scripts/to_so_sanh.js`, giữ cái hơn, ghi lý do một dòng trong `nhat-ky.md`.
 
 **Điểm duyệt C** — luôn **hai lần dừng**, kể cả bài có tài liệu gốc:
-1. **C1 · chọn hướng**: gửi bảng tham chiếu + tờ so sánh **3 hướng × 3–4 slide dựng thật của chính bài** (9–12 trang, `thiet-ke/huong/so-sanh-*.jpg`) + bản ghi lựa chọn. Người dùng chọn hướng.
+1. **C1 · chọn hướng**: gửi bảng tham chiếu + tờ so sánh **3 hướng × 3–4 slide dựng thật của chính bài** (slide mẫu dùng **tiêu đề tiếng Việt dài thật** của kịch bản và ít nhất một tiêu đề 2 dòng — kiểu chữ chỉ đẹp với tiêu đề ngắn là bẫy, bài An Gia: Anton in hoa đè dấu, phải rút tiêu đề đến mất nghĩa) (9–12 trang, `thiet-ke/huong/so-sanh-*.jpg`) + bản ghi lựa chọn. Người dùng chọn hướng.
 2. **C2 · duyệt mẫu**: hệ thống thiết kế, bản đồ nhịp, 6–8 slide mẫu của hướng đã chọn (sau người duyệt độc lập chấm Thẩm mỹ, Nhất quán ≥ 4).
 Ghi cả hai vào `duyet.json` (`C.huong`, `C.xem`). Câu trả lời ngắn ("làm", "ok") ở điểm A/B **không** thay cho C. Phong cách đã duyệt của bài khác chỉ được là một trong ba hướng, không được thay cổng.
 

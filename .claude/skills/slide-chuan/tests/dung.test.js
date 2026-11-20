@@ -78,3 +78,24 @@ test("cổng duyệt: thiếu duyet.json, thiếu tệp đã xem, hướng lệc
   fs.writeFileSync(path.join(d, "x.jpg"), ""); fs.writeFileSync(path.join(d, "duyet.json"), JSON.stringify({ A: { ngay: "x", loi: "ok" }, B: { ngay: "x", loi: "ok" }, C: { ngay: "x", loi: "chọn", huong: "bài khác", xem: ["x.jpg"] } }));
   assert.deepStrictEqual(kiemCongDuyet(d), []);
 });
+
+test("vai bắt buộc: thiếu kết luận chung, cảm ơn, thiếu kết luận cho một phần → báo; đủ → không", () => {
+  const { kiemVaiBatBuoc } = require("../scripts/cong_duyet");
+  const the = { vaiBatBuoc: ["bia", "ket-phan", "ket-chung", "cam-on"] };
+  const thieu = `<section data-vai="bia"></section><section data-mau="mo-phan"></section><section data-mau="mo-phan"></section><section data-vai="ket-phan"></section>`;
+  const l = kiemVaiBatBuoc(thieu, the).join("\n");
+  assert.match(l, /ket-chung/); assert.match(l, /cam-on/); assert.match(l, /2 phần .* chỉ 1 slide kết luận phần/);
+  const du = thieu + `<section data-vai="ket-phan"></section><section data-vai="ket-chung"></section><section data-vai="cam-on"></section>`;
+  assert.deepStrictEqual(kiemVaiBatBuoc(du, the), []);
+  assert.deepStrictEqual(kiemVaiBatBuoc(thieu, {}), []);
+});
+
+test("viết tắt chưa định nghĩa bị bắt; đã định nghĩa, dòng nguồn, số La Mã thì không", { timeout: 240000 }, async () => {
+  const d = fs.mkdtempSync(path.join(os.tmpdir(), "sc-vt-")); fs.mkdirSync(path.join(d, "slides"));
+  fs.writeFileSync(path.join(d, "slides", "01.html"), `<section class="s"><h1 data-t data-tieu-de style="position:absolute;left:100px;top:100px;font-size:60px">Phần II: người được bảo hiểm (NĐBH)</h1>
+  <p data-t style="position:absolute;left:100px;top:300px;font-size:32px">NĐBH nhận tiền theo BLDS</p>
+  <p data-t class="nguon" style="position:absolute;left:100px;top:900px;font-size:26px">Luật KDBH 08/2022/QH15</p></section>`);
+  const r = await dung(d, { ten: "vt", soat: false, nhap: true }), all = r.loi.join("\n");
+  assert.match(all, /viết tắt “BLDS”/); assert.doesNotMatch(all, /“NĐBH”|“KDBH”|“II”/);
+  process.exitCode = 0;
+});

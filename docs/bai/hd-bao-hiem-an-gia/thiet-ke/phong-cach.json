@@ -35,6 +35,13 @@
     "noi-dung",
     "bang"
   ],
+  "vaiBatBuoc": [
+    "bia",
+    "lo-trinh",
+    "ket-phan",
+    "ket-chung",
+    "cam-on"
+  ],
   "nguong": {
     "loaiNenToiThieu": 2,
     "tiLeNenToiDa": 0.85,

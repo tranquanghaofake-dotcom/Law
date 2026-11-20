@@ -46,3 +46,12 @@ Việc:
 Trả ≤ 800 chữ, tiếng Việt.
 ```
 Hạng < 4 hoặc có lỗi [sai luật/nội dung] → sửa rồi gọi lại (vòng 2). Sau vòng 2 còn lỗi → báo người dùng thành thật.
+
+## Người duyệt "người đọc lạ" (trước điểm B và trước khi giao)
+Agent riêng, `model: "opus"`. Brief:
+```
+Đóng vai sinh viên năm 2 CHƯA học môn này, chỉ đọc slide (không nghe thuyết trình). Đọc <bài>/kich-ban.md (hoặc ảnh <bài>/<tên>_lop/h-*.jpg nếu đã dựng).
+Với TỪNG slide: chấm Dễ hiểu 1–5; nếu < 5 chỉ đúng chữ / số / bảng gây khó (thuật ngữ chưa giải thích, viết tắt, bảng không có cách đọc,
+tiêu đề không nói ra ý, số liệu tự mâu thuẫn) và đề xuất câu thay ≤ 1 dòng. Kiểm thêm: có kết luận mỗi phần, kết luận chung, slide cảm ơn không.
+Cuối: 5 slide khó hiểu nhất. Không bàn thẩm mỹ. ≤ 700 chữ.
+```
