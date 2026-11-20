@@ -13,3 +13,6 @@ Không dùng ảnh AI.
 | 3 | `anh/benh-vien-tron.png` (từ `anh/unsplash/benh-vien.jpg`) | Bàn tay bệnh nhân truyền dịch trên giường bệnh, đen trắng | Stephen Andrews · unsplash.com/photos/GwgFPDXiSIs · giấy phép Unsplash (Free Photo) |
 | 22 | `anh/lu-xam.jpg` (từ `anh/unsplash/lu-hoi-an.jpg`) | Phố ngập lũ ở Hội An — ảnh minh hoạ, không phải bão Yagi | Toomas Tartes · unsplash.com/photos/27HacQwqvA0 · giấy phép Unsplash (Free Photo) |
 | 27 | `anh/ky-hd-tron-lon.png` | Bàn tay ký hợp đồng (bản tròn, đen trắng) | Jakub Żerdzicki · Unsplash |
+
+## unDraw (giấy phép unDraw, Hào duyệt 15/11/2026)
+- online-payments, family, financial-advisor, contract-signed, growth-chart — https://undraw.co (Katerina Limpitsouni), tô lại theo bảng màu bài.

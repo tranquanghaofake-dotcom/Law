@@ -49,12 +49,26 @@ const panTrai = (k, kk, so, soM, td) => K(0, 0, 660, 1080, "pan-navy pan-full", 
   + T("kk sang", 120, 60, 500, kk, A("fade", 0, 400)) + H("td sang", 120, 116, 480, td, A("rise", 100, 600)) + T("so", 1360, 64, 300, `${k} / ${TONG}`)
   + K(120, 560, 96, 8, "vach-cam", "Vạch cam", A("wipe", 400, 400)) + T(`so-lon-p${so.startsWith("−") ? " am" : ""}`, 120, 600, 520, so, A("pop", 500, 600)) + T("so-lon-m", 120, 760, 500, soM, A("fade", 700, 400));
 
-// ===== BỐ CỤC THOÁNG (Hào 20/11/2026: "quá rối, nhiều chữ, nhiều form, ít đồ hoạ") =====
-// mỗi slide: nhãn nhỏ + tiêu đề một dòng + MỘT hình lớn (≥ 45 % slide) + ≤ 3 nhãn ngắn; 3 cỡ chữ (tiêu đề 60 · nhãn 34 · phụ 28); không khung lồng khung.
+// ===== BỐ CỤC THOÁNG + BẮT MẮT (Hào 20/11/2026: "quá rối" → "chưa đủ bắt mắt") =====
+// mỗi slide: nhãn nhỏ + tiêu đề có từ nhấn màu + MỘT hình lớn đặt trên "sân khấu" (khối nền mềm chuyển màu) + ≤ 3 nhãn ngắn;
+// hình tô chuyển màu (gradient), có quầng sáng; minh hoạ unDraw tô lại theo bảng màu.
 const goc1 = (v) => [`<circle cx="1890" cy="30" r="150" fill="${P.troi}" opacity="0.9"/><circle cx="1960" cy="150" r="110" fill="${P.navy}" opacity="0.85"/>`,
   `<circle cx="1940" cy="1060" r="170" fill="${P.troi}" opacity="0.9"/><circle cx="1830" cy="1110" r="90" fill="${P.navy}" opacity="0.85"/>`][v % 2];
-const dauGon = (k, kk, td) => nen(goc1(k)) + T("kk", 120, 72, 1200, kk, A("fade", 0, 400)) + H("td-gon", 120, 120, 1500, td, A("rise", 100, 600));
-const donut = (cx, cy, r, w, p, mau) => { const C = 2 * Math.PI * r; return `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${P.cam4}" stroke-width="${w}"/><circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${mau}" stroke-width="${w}" stroke-dasharray="${(p * C).toFixed(1)} ${C.toFixed(1)}" transform="rotate(-90 ${cx} ${cy})"/>`; };
+const GRAD = `<defs><linearGradient id="gCam" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${DOC[3]}"/><stop offset="1" stop-color="${P.cam0}"/></linearGradient>`
+  + `<linearGradient id="gNavy" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${P.navy2}"/><stop offset="1" stop-color="${P.navy}"/></linearGradient>`
+  + `<linearGradient id="gTroi" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${P.troi}"/><stop offset="1" stop-color="${P.navy3}"/></linearGradient>`
+  + `<linearGradient id="gCot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${P.navy3}"/><stop offset="1" stop-color="${DOC[1]}"/></linearGradient>`
+  + `<linearGradient id="gSan" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${P.cam4}"/><stop offset="1" stop-color="${P.nen}" stop-opacity="0.4"/></linearGradient>`
+  + `<radialGradient id="gQuang"><stop offset="0.55" stop-color="${P.troi}" stop-opacity="0.55"/><stop offset="1" stop-color="${P.troi}" stop-opacity="0"/></radialGradient></defs>`;
+const dauGon = (k, kk, td) => nen(GRAD + goc1(k)) + T("kk", 120, 72, 1200, kk, A("fade", 0, 400)) + H("td-gon", 120, 116, 1500, td, A("rise", 100, 600));
+const san = (x, y, w, h) => `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${Math.min(h / 2, 200)}" fill="url(#gSan)"/>`;
+const MAU_UD = { "#6c63ff": P.cam, "#090814": P.navy, "#2f2e41": P.navy, "#2f2e43": P.navy, "#3f3d56": P.navy, "#e6e6e6": P.ke, "#f2f2f2": P.nen, "#f0f0f0": P.nen,
+  "#d6d6e3": P.navy3, "#b6b3c5": P.navy3, "#ffb6b6": "#F2B8A0", "#ed9da0": "#F2B8A0", "#fafafa": P.trang };
+const unDraw = (ten, x, y, w) => { let s = fs.readFileSync(path.join(D, "asset", "undraw", ten + ".svg"), "utf8");
+  const vb = s.match(/viewBox="([^"]+)"/)[1].split(/[\s,]+/).map(Number), h = (w * vb[3]) / vb[2];
+  s = s.replace(/#[0-9a-fA-F]{6}\b/g, (c) => MAU_UD[c.toLowerCase()] || c).replace(/^[\s\S]*?<svg[^>]*>/, "").replace(/<\/svg>\s*$/, "");
+  return { svg: `<svg x="${x}" y="${y}" width="${w}" height="${h.toFixed(1)}" viewBox="${vb.join(" ")}">${s}</svg>`, h }; };
+const donut = (cx, cy, r, w, p, mau) => { const C = 2 * Math.PI * r; return `<circle cx="${cx}" cy="${cy}" r="${r + w}" fill="url(#gQuang)"/><circle cx="${cx}" cy="${cy}" r="${r - w / 2 - 6}" fill="${P.trang}"/><circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${P.cam4}" stroke-width="${w}"/><circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${mau}" stroke-width="${w}" stroke-linecap="${p < 1 ? "round" : "butt"}" stroke-dasharray="${(p * C).toFixed(1)} ${C.toFixed(1)}" transform="rotate(-90 ${cx} ${cy})"/>`; };
 
 // ===== 1 · BÌA =====
 sec(1, "bia", "sang", nen(`<rect x="1100" y="0" width="820" height="1080" fill="${P.cam4}"/><rect x="1640" y="-120" width="420" height="320" rx="130" fill="${P.troi}" opacity="0.9"/><rect x="1780" y="-60" width="260" height="360" rx="110" fill="${P.navy}" opacity="0.85"/>` + cham(120, 960, 10, 2, P.ke) + `<rect x="0" y="0" width="560" height="40" fill="${P.cam}"/>`)
@@ -90,15 +104,18 @@ moPhan(3, "01", "Hợp đồng Bảo Việt An Gia", "Một hợp đồng bảo 
 
 // ===== 6 · NĂM VAI (thoáng) =====
 { const nguoi = (cx, by, s, ao) => `<circle cx="${cx}" cy="${by - s * 0.78}" r="${s * 0.2}" fill="${P.trang}"/><path d="M${cx - s * 0.36} ${by} Q${cx - s * 0.36} ${by - s * 0.5} ${cx} ${by - s * 0.52} Q${cx + s * 0.36} ${by - s * 0.5} ${cx + s * 0.36} ${by} Z" fill="${ao}"/>`;
-  const mui = (x1, y1, x2, y2, m) => { const a = Math.atan2(y2 - y1, x2 - x1), L = 26, b = 0.45; return `<path d="M${x1} ${y1} L${x2 - Math.cos(a) * 18} ${y2 - Math.sin(a) * 18}" stroke="${m}" stroke-width="7" stroke-linecap="round" fill="none"/><path d="M${x2} ${y2} L${x2 - L * Math.cos(a - b)} ${y2 - L * Math.sin(a - b)} L${x2 - L * Math.cos(a + b)} ${y2 - L * Math.sin(a + b)} Z" fill="${m}"/>`; };
-  const V = [["Bên mua", 360, 470, P.navy], ["Người được bảo hiểm", 1560, 470, P.navy], ["Người thụ hưởng", 700, 830, P.navy3], ["Người nhận thay", 1220, 830, P.navy3]];
-  sec(6, "noi-dung", "sang", dauGon(6, "Điều 1, 2, 8 · Các bên", "Một hợp đồng, năm vai")
-    + lop(mui(480, 470, 820, 470, P.navy2) + mui(1100, 470, 1440, 470, P.navy2) + mui(880, 580, 760, 740, P.navy3) + mui(1040, 580, 1160, 740, P.navy3), 460, 420, 1000, 340, "Mũi tên: bên mua đóng phí cho Bảo Việt; Bảo Việt bảo vệ người được bảo hiểm và trả tiền cho người thụ hưởng hoặc người nhận thay", A("wipe", 1200, 800))
-    + lop(`<circle cx="960" cy="470" r="130" fill="${P.cam}"/>` + icon("building", 960, 470, 130, P.trang, 3), 830, 340, 260, 260, "Bảo Việt", A("pop", 300, 500)) + T("vai-ten", 760, 615, 400, "Bảo Việt", A("fade", 400, 300))
-    + V.map(([ten, cx, cy, m], k) => { const r = k < 2 ? 110 : 85, t0 = 600 + k * 250;
-      return lop(`<circle cx="${cx}" cy="${cy}" r="${r}" fill="${m}"/>` + nguoi(cx, cy + r * 0.7, r * 1.15, P.troi), cx - r, cy - r, 2 * r, 2 * r, `Hình người: ${ten}`, `data-lap ${A("pop", t0, 400)}`)
-        + T("vai-ten", cx - 220, cy + r + 14, 440, ten, A("fade", t0 + 100, 300)); }).join("")
-    + T("nhan-mui-gon", 520, 410, 280, "đóng phí", A("fade", 1700, 300)) + T("nhan-mui-gon", 1140, 410, 280, "bảo vệ", A("fade", 1800, 300)), "data-hero");
+  const mui = (x1, y1, x2, y2, m) => { const a = Math.atan2(y2 - y1, x2 - x1), L = 30, b = 0.45; return `<path d="M${x1} ${y1} L${x2 - Math.cos(a) * 20} ${y2 - Math.sin(a) * 20}" stroke="${m}" stroke-width="9" stroke-linecap="round" fill="none"/><path d="M${x2} ${y2} L${x2 - L * Math.cos(a - b)} ${y2 - L * Math.sin(a - b)} L${x2 - L * Math.cos(a + b)} ${y2 - L * Math.sin(a + b)} Z" fill="${m}"/>`; };
+  const V = [["Bên mua", 360, 500, "url(#gNavy)", P.troi], ["Người được bảo hiểm", 1560, 500, "url(#gNavy)", P.troi], ["Người thụ hưởng", 700, 830, "url(#gTroi)", P.trang], ["Người nhận thay", 1220, 830, "url(#gTroi)", P.trang]];
+  sec(6, "noi-dung", "sang", dauGon(6, "Điều 1, 2, 8 · Các bên", "Một hợp đồng, [năm vai]")
+    + lop(GRAD + san(140, 300, 1640, 700) + `<circle cx="960" cy="500" r="230" fill="none" stroke="${P.navy3}" stroke-width="3" stroke-dasharray="4 14" stroke-linecap="round"/>`
+      + mui(490, 500, 780, 500, P.navy2) + mui(1140, 500, 1430, 500, P.navy2) + mui(860, 640, 770, 730, P.navy3) + mui(1060, 640, 1150, 730, P.navy3), 140, 300, 1640, 700,
+      "Mũi tên: bên mua đóng phí cho Bảo Việt; Bảo Việt bảo vệ người được bảo hiểm và trả tiền cho người thụ hưởng hoặc người nhận thay", A("wipe", 1200, 800))
+    + lop(GRAD + `<circle cx="960" cy="500" r="200" fill="url(#gQuang)"/><circle cx="960" cy="500" r="140" fill="url(#gCam)"/>` + icon("building", 960, 462, 96, P.trang, 3), 760, 300, 400, 400, "Bảo Việt", A("pop", 300, 500))
+    + T("vai-ten-tr", 760, 535, 400, "Bảo Việt", A("fade", 400, 300))
+    + V.map(([ten, cx, cy, m, ao], k) => { const r = k < 2 ? 120 : 92, t0 = 600 + k * 250;
+      return lop(GRAD + `<circle cx="${cx}" cy="${cy}" r="${r + 26}" fill="url(#gQuang)"/><circle cx="${cx}" cy="${cy}" r="${r}" fill="${m}"/>` + nguoi(cx, cy + r * 0.7, r * 1.15, ao), cx - r - 26, cy - r - 26, 2 * r + 52, 2 * r + 52, `Hình người: ${ten}`, `data-lap ${A("pop", t0, 400)}`)
+        + T("vai-ten", cx - 220, cy + r + 18, 440, ten, A("fade", t0 + 100, 300)); }).join("")
+    + T("nhan-mui-gon", 500, 440, 280, "đóng phí", A("fade", 1700, 300)) + T("nhan-mui-gon", 1150, 440, 280, "bảo vệ", A("fade", 1800, 300)), "data-hero");
 }
 
 // ===== 9 · THỜI GIAN CHỜ (panel chia đôi) =====
@@ -127,11 +144,20 @@ moPhan(3, "01", "Hợp đồng Bảo Việt An Gia", "Một hợp đồng bảo 
 
 // ===== 18 · TỔNG PHÍ (thoáng) =====
 { const PHI = [["2018", 133.7], ["2019", 160.2], ["2020", 184.7], ["2021", 216.0], ["2022", 251.3], ["2023", 227.1], ["2024", 227.5], ["2025", 237.2]];
-  const yb = 900, sc = 560 / 251.3, x0 = 180, st = 205, w = 150;
-  sec(18, "so-lon", "sang", dauGon(18, "Doanh thu phí bảo hiểm · nghìn tỷ đồng", "Tăng nóng đến 2022, rồi chưa hồi lại đỉnh")
-    + lop(PHI.map(([nm, v], k) => `<rect x="${x0 + k * st}" y="${yb - v * sc}" width="${w}" height="${v * sc}" rx="14" fill="${k === 4 ? P.cam : k > 4 ? P.navy3 : DOC[k + 1]}"/>`).join("") + `<path d="M140 ${yb} H1800" stroke="${P.ke}" stroke-width="3"/>`, 130, 300, 1680, 610, "Biểu đồ cột doanh thu phí 2018–2025; 2022 là đỉnh", A("wipe", 400, 1200))
-    + PHI.map(([nm, v], k) => T(`cot-so-gon${k === 4 ? " cam" : ""}`, x0 + k * st - 25, yb - v * sc - 54, w + 50, String(v).replace(".", ","), A("fade", 1000 + k * 100, 300)) + T("cot-nam-gon", x0 + k * st - 25, yb + 14, w + 50, nm, A("fade", 500, 300))).join("")
-    + T("chu-thich", 120, 990, 1500, "Nguồn: Bộ Tài chính, Cục Quản lý, giám sát bảo hiểm (số ước tính), theo bài nhóm.", A("fade", 1800, 400)), "data-hero");
+  const yb = 930, sc = 470 / 251.3, x0 = 200, st = 200, w = 140, cx = (k) => x0 + k * st + w / 2, yt = (v) => yb - v * sc;
+  const duong = PHI.map(([, v], k) => `${k ? "L" : "M"}${cx(k)} ${yt(v).toFixed(1)}`).join(" ");
+  sec(18, "so-lon", "sang", dauGon(18, "Doanh thu phí bảo hiểm · nghìn tỷ đồng", "Tăng nóng đến 2022, rồi [chưa hồi lại đỉnh]")
+    + lop(GRAD + san(100, 260, 1720, 740)
+      + PHI.map(([nm, v], k) => `<rect x="${x0 + k * st}" y="${yt(v)}" width="${w}" height="${v * sc}" rx="18" fill="${k === 4 ? "url(#gCam)" : k > 4 ? "url(#gCot)" : DOC[k + 2]}"/>`).join("")
+      + `<path d="${duong}" fill="none" stroke="${P.navy}" stroke-width="5" stroke-linejoin="round" stroke-dasharray="2 12" stroke-linecap="round"/>`
+      + PHI.map(([, v], k) => `<circle cx="${cx(k)}" cy="${yt(v)}" r="13" fill="${P.trang}" stroke="${k === 4 ? P.cam : P.navy}" stroke-width="6"/>`).join("")
+      + `<rect x="${cx(4) - 110}" y="270" width="220" height="64" rx="32" fill="${P.cam}"/><rect x="${cx(5) + 70}" y="296" width="380" height="64" rx="32" fill="${P.navy}"/>` + `<path d="M150 ${yb} H1770" stroke="${P.navy3}" stroke-width="3"/>`
+      + `<path d="M${cx(5) + 40} 350 q 60 40 50 120" fill="none" stroke="${P.navy}" stroke-width="5" stroke-linecap="round"/><path d="M${cx(5) + 76} 456 l14 26 l12 -28 z" fill="${P.navy}"/>`,
+      100, 260, 1720, 740, "Biểu đồ cột doanh thu phí 2018–2025 có đường nối đỉnh cột; 2022 là đỉnh, 2023 giảm", A("wipe", 400, 1200))
+    + PHI.map(([nm, v], k) => T(`cot-so-gon${k === 4 ? " cam" : ""}`, x0 + k * st - 30, yt(v) - 70, w + 60, String(v).replace(".", ","), A("fade", 1000 + k * 100, 300)) + T("cot-nam-gon", x0 + k * st - 30, yb + 16, w + 60, nm, A("fade", 500, 300))).join("")
+    + G("nhan-dinh", cx(4) - 110, 270, 220, 64, `<span style="width:100%;text-align:center">Đỉnh 2022</span>`, A("pop", 1800, 400))
+    + G("nhan-giam", cx(5) + 70, 296, 380, 64, `<span style="width:100%;text-align:center">2023 giảm lần đầu</span>`, A("pop", 2100, 400))
+    + T("chu-thich", 120, 1000, 1500, "Nguồn: Bộ Tài chính, Cục Quản lý, giám sát bảo hiểm (số ước tính), theo bài nhóm.", A("fade", 1800, 400)), "data-hero");
 }
 
 // ===== 20 · 2023 SỐ LỚN (chia) =====
@@ -222,12 +248,15 @@ const muiN = (x1, y1, x2, y2, m, w = 6) => { const a = Math.atan2(y2 - y1, x2 - 
 }
 
 // ===== 13 · CHẤM DỨT (thoáng) =====
-sec(13, "so-lon", "sang", dauGon(13, "Điều 6 · Chấm dứt hợp đồng", "Ai chấm dứt, người mua lấy lại bao nhiêu?")
-  + [["Bên mua tự rút", 0.7, "70 %", P.cam, "nếu chưa từng được bồi thường"], ["Bảo Việt chấm dứt", 1, "100 %", P.navy, "luôn hoàn đủ"]].map(([t, p, so, m, dk], k) => { const cx = 560 + k * 800, cy = 560, t0 = 400 + k * 600;
-    return lop(donut(cx, cy, 200, 56, p, m), cx - 240, cy - 240, 480, 480, `Vòng tròn ${so}: ${t}`, A("wipe", t0, 900))
-      + G(`donut-so${k ? "" : " cam"}`, cx - 200, cy - 70, 400, 140, `<span style="width:100%;text-align:center">${so}</span>`, A("pop", t0 + 400, 500))
-      + T("donut-t", cx - 300, 820, 600, t, A("fade", t0 + 500, 400)) + T("donut-m", cx - 300, 878, 600, dk, A("fade", t0 + 600, 400)); }).join("")
-  + T("chu-thich", 120, 990, 1500, "Phần trả lại tính trên phí của thời gian còn lại. Gian lận: mất toàn bộ quyền lợi.", A("fade", 1800, 400)), "data-khong-hinh");
+{ const ud = unDraw("online-payments", 130, 330, 660);
+sec(13, "so-lon", "sang", dauGon(13, "Điều 6 · Chấm dứt hợp đồng", "Ai chấm dứt, người mua [lấy lại bao nhiêu]?")
+  + lop(GRAD + san(100, 290, 1720, 650) + ud.svg, 100, 290, 1720, 650, "Minh hoạ người cầm thẻ thanh toán nhận lại tiền phí", A("fade", 200, 600), "undraw")
+  + [["Bên mua tự rút", 0.7, "70 %", "url(#gCam)", "nếu chưa từng được bồi thường"], ["Bảo Việt chấm dứt", 1, "100 %", "url(#gNavy)", "luôn hoàn đủ"]].map(([t, p, so, m, dk], k) => { const cx = 1020 + k * 520, cy = 560, t0 = 500 + k * 600;
+    return lop(GRAD + donut(cx, cy, 170, 52, p, m), cx - 250, cy - 250, 500, 500, `Vòng tròn ${so}: ${t}`, A("wipe", t0, 900))
+      + G(`donut-so${k ? "" : " cam"}`, cx - 170, cy - 60, 340, 120, `<span style="width:100%;text-align:center">${so}</span>`, A("pop", t0 + 400, 500))
+      + T("donut-t", cx - 250, 790, 500, t, A("fade", t0 + 500, 400)) + T("donut-m", cx - 250, 846, 500, dk, A("fade", t0 + 600, 400)); }).join("")
+  + T("chu-thich", 120, 980, 1500, "Phần trả lại tính trên phí của thời gian còn lại. Gian lận: mất toàn bộ quyền lợi.", A("fade", 1800, 400)), "data-khong-hinh");
+}
 
 // ===== 14 · BỒI THƯỜNG =====
 { const B = [["device-mobile", "Giấy yêu cầu", "trên app, xác nhận bằng mã OTP gửi về điện thoại"], ["file-invoice", "Hóa đơn điện tử", "có đường dẫn tra cứu"], ["camera", "Ảnh chụp chứng từ y tế", "Bảo Việt có thể đòi bản gốc"]];
@@ -441,14 +470,15 @@ section.s.dam{background:${P.navy}}
 .chia .pan-full{background:${P.navy}}
 .chia .td.sang,.chia .trich,.chia .so-lon-m{color:${P.trang}}.chia .kk.sang,.chia .so-lon-p,.chia .trich em,.chia .vd-sang{color:${P.troi}}.chia .trich-cc{color:#C9D9F2}
 .chia .so.sang{color:#C9D9F2}
-.td-gon{font:800 60px/1.2 'Be Vietnam Pro';color:${P.navy}}.chu-thich{font:400 28px/1.35 'Be Vietnam Pro';color:${P.phu}}
-.donut-so{font:800 110px/1.2 'Be Vietnam Pro';color:${P.navy}}.donut-so.cam{color:${P.cam}}.donut-t{font:800 40px/1.2 'Be Vietnam Pro';color:${P.navy};text-align:center}.donut-m{font:400 32px/1.3 'Be Vietnam Pro';color:${P.phu};text-align:center}
+.td-gon{font:800 68px/1.2 'Be Vietnam Pro';color:${P.navy}}.vai-ten-tr{font:800 32px/1.2 'Be Vietnam Pro';color:${P.trang};text-align:center}
+.nhan-dinh,.nhan-giam{font:800 30px/1.2 'Be Vietnam Pro';color:${P.trang}}.chu-thich{font:400 28px/1.35 'Be Vietnam Pro';color:${P.phu}}
+.donut-so{font:800 96px/1.2 'Be Vietnam Pro';color:${P.navy}}.donut-so.cam{color:${P.cam}}.donut-t{font:800 40px/1.2 'Be Vietnam Pro';color:${P.navy};text-align:center}.donut-m{font:400 32px/1.3 'Be Vietnam Pro';color:${P.phu};text-align:center}
 .cot-so-gon{font:800 40px/1.2 'Be Vietnam Pro';color:${P.navy};text-align:center}.cot-so-gon.cam{color:${P.cam}}.cot-nam-gon{font:600 32px/1.2 'Be Vietnam Pro';color:${P.phu};text-align:center}
 .vai-ten{font:800 34px/1.2 'Be Vietnam Pro';color:${P.navy};text-align:center}.nhan-mui-gon{font:600 30px/1.2 'Be Vietnam Pro';color:${P.navy2};text-align:center}
 `);
 fs.rmSync(path.join(D, "slides"), { recursive: true, force: true });
 S.sort((a, b) => a.k - b.k).forEach((s) => ghi(path.join(D, "slides", `${String(s.k).padStart(2, "0")}.html`), s.html));
-fs.writeFileSync(path.join(D, "thiet-ke", "phong-cach.json"), JSON.stringify({ ten: "nền sáng xanh — theo mẫu Hào gửi", huong: "Hào gửi 5 ảnh mẫu (20/11/2026, thiet-ke/tham-chieu/nguoi-dung/): nền trắng, khối bo tròn xanh trời + navy ở góc, thẻ xanh rất nhạt bo góc 24 px viền mảnh, số lớn xanh dương, cột biểu đồ chuyển màu nhạt → đậm, chữ Be Vietnam Pro đậm (tiêu đề chữ thường, mở phần in hoa). Giữ bố cục, nội dung đã duyệt; không dùng hình người AI của mẫu.", gradient: false, bongMo: false,
-  bangMau: [...Object.values(P), ...DOC], loaiHinh: ["phang", "nen", "anh-chup"], boCuc: ["bia", "mo-phan", "noi-dung", "chia", "so-lon", "bang", "trich", "so-sanh", "ket"], tieuDeCoDinh: ["noi-dung", "bang"], vaiBatBuoc: ["bia", "lo-trinh", "ket-phan", "ket-chung", "cam-on"],
+fs.writeFileSync(path.join(D, "thiet-ke", "phong-cach.json"), JSON.stringify({ ten: "nền sáng xanh — theo mẫu Hào gửi", huong: "Hào gửi 5 ảnh mẫu (20/11/2026, thiet-ke/tham-chieu/nguoi-dung/): nền trắng, khối bo tròn xanh trời + navy ở góc, thẻ xanh rất nhạt bo góc 24 px viền mảnh, số lớn xanh dương, cột biểu đồ chuyển màu nhạt → đậm, chữ Be Vietnam Pro đậm (tiêu đề chữ thường, mở phần in hoa). Giữ bố cục, nội dung đã duyệt; không dùng hình người AI của mẫu. 20/11/2026 (Hào: \"quá rối\" → \"chưa đủ bắt mắt\"): bố cục thoáng một ý một hình lớn, hình đặt trên khối nền mềm, tô chuyển màu theo bảng màu (như cột, vùng biểu đồ trong mẫu), người minh hoạ unDraw tô lại màu thay cho người AI của mẫu.", gradient: true, bongMo: false,
+  bangMau: [...Object.values(P), ...DOC, "#F2B8A0"], loaiHinh: ["phang", "nen", "anh-chup", "undraw"], boCuc: ["bia", "mo-phan", "noi-dung", "chia", "so-lon", "bang", "trich", "so-sanh", "ket"], tieuDeCoDinh: ["noi-dung", "bang"], vaiBatBuoc: ["bia", "lo-trinh", "ket-phan", "ket-chung", "cam-on"],
   nguong: { loaiNenToiThieu: 2, tiLeNenToiDa: 0.85, lienToiDa: 6, lienHoToiDa: 6, assetToiDa: 4, bangXetTiLe: 99, tieuDiemToiThieu: 0.15 } }, null, 2));
 console.log(`${S.length} slide: ${S.map((s) => s.k).join(", ")}`);

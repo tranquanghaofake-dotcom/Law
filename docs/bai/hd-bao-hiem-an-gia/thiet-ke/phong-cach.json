@@ -1,7 +1,7 @@
 {
   "ten": "nền sáng xanh — theo mẫu Hào gửi",
-  "huong": "Hào gửi 5 ảnh mẫu (20/11/2026, thiet-ke/tham-chieu/nguoi-dung/): nền trắng, khối bo tròn xanh trời + navy ở góc, thẻ xanh rất nhạt bo góc 24 px viền mảnh, số lớn xanh dương, cột biểu đồ chuyển màu nhạt → đậm, chữ Be Vietnam Pro đậm (tiêu đề chữ thường, mở phần in hoa). Giữ bố cục, nội dung đã duyệt; không dùng hình người AI của mẫu.",
-  "gradient": false,
+  "huong": "Hào gửi 5 ảnh mẫu (20/11/2026, thiet-ke/tham-chieu/nguoi-dung/): nền trắng, khối bo tròn xanh trời + navy ở góc, thẻ xanh rất nhạt bo góc 24 px viền mảnh, số lớn xanh dương, cột biểu đồ chuyển màu nhạt → đậm, chữ Be Vietnam Pro đậm (tiêu đề chữ thường, mở phần in hoa). Giữ bố cục, nội dung đã duyệt; không dùng hình người AI của mẫu. 20/11/2026 (Hào: \"quá rối\" → \"chưa đủ bắt mắt\"): bố cục thoáng một ý một hình lớn, hình đặt trên khối nền mềm, tô chuyển màu theo bảng màu (như cột, vùng biểu đồ trong mẫu), người minh hoạ unDraw tô lại màu thay cho người AI của mẫu.",
+  "gradient": true,
   "bongMo": false,
   "bangMau": [
     "#253A6B",
@@ -26,7 +26,8 @@
   "loaiHinh": [
     "phang",
     "nen",
-    "anh-chup"
+    "anh-chup",
+    "undraw"
   ],
   "boCuc": [
     "bia",
