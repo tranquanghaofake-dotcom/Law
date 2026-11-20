@@ -7,6 +7,7 @@
 //   5. lớp ảnh [data-l] thiếu data-alt (hình trang trí: data-alt="Hình trang trí" → PowerPoint đánh dấu decorative)
 //   6. hộp chữ có nền riêng đè lên lớp ảnh mà thiếu data-l → mất nền trong PPTX
 //   7. đoạn chữ tô nền bên trong hộp chữ (<mark>, <span style="background">) → PPTX chỉ giữ màu chữ, mất nền tô
+//   9. chữ IN HOA nhiều dòng giãn dòng < 1,15 → dấu (hỏi, sắc, mũ) dòng dưới đè dấu nặng / móc dòng trên (máy đo tràn hộp không bắt)
 //   8. khối có nền (vạch kẻ, ô màu) không là lớp ảnh, không là hộp chữ, nằm trên một lớp ảnh đứng trước nó → bị vẽ vào nền slide, lớp ảnh che mất trong PPTX
 function kiemHtml() {
   const out = [], txt = (s) => (s || "").replace(/\s+/g, " ").trim();
@@ -30,6 +31,8 @@ function kiemHtml() {
       const fs = parseFloat(getComputedStyle(el).fontSize) || 30, du = Math.max(4, 0.3 * fs * k);   // vùng dấu tiếng Việt / nét chữ cỡ lớn cao hơn khoảng dòng: nới theo cỡ chữ
       const tran = Math.max(...Q.map((q) => Math.max(lo(q.right, E.right), lo(E.left, q.left), lo(q.bottom, E.bottom) - du)));
       if (tran > 3) out.push(`slide ${n}: ${ten} tràn khỏi hộp của nó ${tran} px — rút chữ, nới hộp hoặc tách slide`);
+      { const cs = getComputedStyle(el), lh = parseFloat(cs.lineHeight) / fs, dong = Q.map((q) => q.top).sort((a, b) => a - b).reduce((d, t, i, m) => d + (i && t - m[i - 1] > 0.5 * fs / k ? 1 : 0), 1), hoa = cs.textTransform === "uppercase" || (txt(el.textContent).replace(/[^A-Za-zÀ-ỹ]/g, "").length > 3 && txt(el.textContent) === txt(el.textContent).toUpperCase());
+        if (dong > 1 && hoa && lh < 1.15) out.push(`slide ${n}: ${ten} chữ in hoa ${dong} dòng, giãn dòng ${lh.toFixed(2)} < 1,15 — dấu tiếng Việt dòng dưới đè dấu dòng trên; đặt line-height ≥ 1,2`); }   // 9. bài An Gia 20/11/2026
       const x0 = Math.min(...Q.map((q) => q.left)), x1 = Math.max(...Q.map((q) => q.right)), y0 = Math.min(...Q.map((q) => q.top)), y1 = Math.max(...Q.map((q) => q.bottom));
       const mep = Math.max(lo(S.left + 40 / k, x0), lo(x1, S.right - 40 / k), lo(S.top + 24 / k, y0), lo(y1, S.bottom - 24 / k));
       if (mep > 0 && !el.closest("[data-ngoai]")) out.push(`slide ${n}: ${ten} ra ngoài vùng an toàn ${mep} px (lề 40 px ngang, 24 px dọc)`); }
