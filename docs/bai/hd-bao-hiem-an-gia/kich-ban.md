@@ -45,3 +45,7 @@ Một hợp đồng thật cho thấy luật vận hành ra sao → An Gia đủ
 
 ## Mục tiêu ↔ slide
 1. Đối chiếu Điều 17 → slide 4. 2. Năm điều khoản bất lợi → 9–14. 3. Vì sao giảm / phục hồi → 18–23. 4. Khuyến nghị → 16.
+
+## Sửa 20/11/2026 (Hào: thiếu kết luận, tiêu đề khó hiểu)
+- Thêm slide 24 **Kết luận phần II** (3 giai đoạn: tăng nóng · khủng hoảng, siết luật · phục hồi chậm) và slide 25 **Kết luận chung** (trả lời 2 câu hỏi đề tài + bài học chung, nhãn "nhóm nhận xét"). Tài liệu tham khảo thành slide 26. Tổng ≈ 18 phút.
+- Slide 15–16 đổi nhãn "Kết luận phần I". Tiêu đề viết lại thành câu thường dùng; mỗi thuật ngữ có định nghĩa một dòng (hạn mức, đồng chi trả, thời gian chờ, doanh thu phí, bancassurance, phí hợp đồng ký mới, tạm ứng); slide 4 thêm dải "Ý chính".
