@@ -20,3 +20,6 @@
 - C2: 8 slide mẫu (1, 3, 4, 6, 9, 12, 18, 20). Người duyệt độc lập (opus) vòng 1: Nội dung 4 · Thiết kế 4 · Dễ hiểu 4 · Thẩm mỹ 4 · Nhất quán 3 → KHÔNG ĐẠT (tiêu đề panel lệch chỗ, số trang 3 vị trí, ảnh lặp bìa / mở phần, thứ bậc số lớn h-08, nguồn Điều 26 nên ghi đoạn mở đầu). Đã sửa hết.
 
 - C2 vòng 2 (opus): Nội dung 4 · Thiết kế 4 · Dễ hiểu 4 · Thẩm mỹ 4 · Nhất quán 4 → ĐẠT. Đã sửa lỗi nhỏ còn lại (h-08 số phụ 64 px, nguồn h-06/h-07, chữ mồ côi h-04/h-05). Ảnh mẫu: thiet-ke/mau-c2.jpg. Chờ Hào duyệt C2.
+- C2: Hào trả lời "LÀM" → ghi duyet.json (C). Đổ đủ 25 slide hướng 3; `dung.js` (bản giao, có cổng duyệt) còn 23 cảnh báo ◇ "nhiều chữ" — giữ có chủ ý.
+- Duyệt cuối (opus): Nội dung 4 · Thiết kế 4 · Mạch lạc 5 · Dễ hiểu 4 · Thẩm mỹ 4 · Nhất quán 4; chặn giao vì 2 lỗi chữ slide 14 ("dưới 10 triệu" → "đến 10 triệu"; "không cần công chứng" không có nguồn → "có thể bị đòi bản gốc"). Đã sửa cùng góp ý nguồn (slide 16, 23, bảng nguồn); chưa gọi duyệt lại sau lần sửa này.
+- Còn: thời lượng ≈ 17 phút; khoản 1 Điều 26 Luật KDBH mức B (chưa đối chiếu vbpl.vn); slide 21 dùng lại ảnh bìa.

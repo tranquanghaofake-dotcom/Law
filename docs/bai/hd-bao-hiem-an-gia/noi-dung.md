@@ -65,6 +65,9 @@ Chi trả quyền lợi (tỷ đồng): 2022: 64.018 · 2023: 86.376 · 2024: �
 | Luật 139/2025/QH15, hiệu lực 01/01/2026 | [TL4], đã dùng ở bài `ch3-bao-hiem-thuong-mai` | hiện hành | B |
 | Thời gian chờ (30 / 90 / 180 / 365 / 635 ngày) | Quy tắc An Gia QĐ 6029/QĐ-BHBV (PDF baovietonline.com.vn, 08/01/2026) | văn bản của doanh nghiệp, đang áp dụng | B (đã khớp nguyên văn) |
 | Các điều khoản HĐ An Gia khác (Đ1–Đ13, PL1) | [G] — mẫu HĐ nhóm đưa vào bài | chưa đối chiếu từng điều với bản HĐ mẫu gốc | C (theo bài nhóm) |
+| Thanh tra 2022: "đoàn thanh tra chuyên đề về bán bảo hiểm qua ngân hàng tại 4 doanh nghiệp" | bài nhóm mục 2.2, dẫn [TL13] | theo bài nhóm | — |
+| Yagi 12.811 / 213 / 956,5 tỷ: số liệu Cục QLGSBH | [TL16] VCCI, [TL17] VietnamFinance | theo bài nhóm | — |
+| Số liệu 2024–2025 | [TL11] Tạp chí Kinh tế – Tài chính, 27/10/2026 | theo bài nhóm | — |
 | Số liệu thị trường 2018–9T/2026 | [TL5]–[TL22] của bài nhóm | số ước tính của cơ quan quản lý, báo | theo bài nhóm |
 | PNT 2023 +2,87 % | Hình 2 bài nhóm, nguồn [TL10] | không có trong lời văn | theo bài nhóm |
 

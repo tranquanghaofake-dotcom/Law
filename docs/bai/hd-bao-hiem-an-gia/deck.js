@@ -177,7 +177,7 @@ sec(2, "noi-dung", "sang", dau(2, "Lộ trình", "Từ một hợp đồng đế
 // ===== 10 · ĐỒNG CHI TRẢ =====
 { const W = 1140, x0 = 660;
   sec(10, "noi-dung", "sang", dau(10, "Phụ lục 1 · mục 2", "Trẻ dưới 3 tuổi: trả 70 %", "Trẻ từ 15 ngày đến 3 tuổi điều trị ở cơ sở tư thì gia đình tự trả 30 % chi phí.")
-    + K(100, 330, 1720, 640, "the", "Khối nền ví dụ", A("fade", 200, 400)) + T("kk", x0, 350, 900, "Ví dụ minh hoạ · hóa đơn 10 triệu đồng", A("fade", 300, 300))
+    + K(100, 330, 1720, 560, "the", "Khối nền ví dụ", A("fade", 200, 400)) + T("kk", x0, 350, 900, "Ví dụ minh hoạ · hóa đơn 10 triệu đồng", A("fade", 300, 300))
     + [["Cơ sở tư, khoa quốc tế, dịch vụ theo yêu cầu", [[0.7, P.navy, "Bảo Việt 7 triệu", "sang"], [0.3, P.cam4, "Gia đình 3 triệu", "do"]], "building"], ["Bệnh viện công, khoa điều trị thường", [[1, P.navy3, "Không áp đồng chi trả", "sang"]], "building-bank"]].map(([ten, parts, ic], k) => { const y = 430 + k * 240, t0 = 500 + k * 900; let x = x0, o = "", tx = "";
       parts.forEach(([p, c, s, cls], j) => { const w = Math.round(p * W); o += `<rect x="${x + (j ? 6 : 0)}" y="${y}" width="${w - (j ? 6 : 0)}" height="140" fill="${c}"/>`; tx += G(`ct-o ${cls}`, x + 30, y, w - 60, 140, esc(s), A("fade", t0 + 500 + j * 200, 300)); x += w; });
       return lop(vuong(120, y + 20, 100, k ? P.navy3 : P.navy, ic), 120, y + 20, 100, 100, `Biểu tượng ${ten}`, A("pop", t0, 300)) + T("ct-ten", 250, y + 18, 380, ten, A("fade", t0, 300))
@@ -209,8 +209,8 @@ sec(13, "so-lon", "sang", dau(13, "Điều 6 · Chấm dứt, gian lận", "Bên
   + nguon("Điều 6 hợp đồng An Gia."), "data-khong-hinh");
 
 // ===== 14 · BỒI THƯỜNG =====
-{ const B = [["device-mobile", "Giấy yêu cầu trên BaoViet Direct", "xác thực OTP"], ["file-invoice", "Hóa đơn điện tử", "có đường dẫn tra cứu"], ["camera", "Ảnh chụp chứng từ y tế", "không cần công chứng"], ["coins", "Nhận tiền", "trong 15 ngày làm việc"]];
-  sec(14, "noi-dung", "sang", dau(14, "Điều 10 · Phụ lục 1 mục 3", "Dưới 10 triệu: nộp hồ sơ qua app", "Khoản bồi thường đến 10 triệu, không phải di sản thừa kế, được nộp hồ sơ mềm qua ứng dụng.")
+{ const B = [["device-mobile", "Giấy yêu cầu trên BaoViet Direct", "xác thực OTP"], ["file-invoice", "Hóa đơn điện tử", "có đường dẫn tra cứu"], ["camera", "Ảnh chụp chứng từ y tế", "có thể bị đòi bản gốc"], ["coins", "Nhận tiền", "trong 15 ngày làm việc"]];
+  sec(14, "noi-dung", "sang", dau(14, "Điều 10 · Phụ lục 1 mục 3", "Đến 10 triệu: nộp hồ sơ qua app", "Khoản bồi thường đến 10 triệu, không phải di sản thừa kế, được nộp hồ sơ mềm qua ứng dụng.")
     + K(100, 330, 1720, 440, "the", "Khối nền quy trình", A("fade", 200, 400)) + lop([0, 1, 2].map((k) => muiN(440 + k * 420, 450, 640 + k * 420, 450, P.navy3)).join(""), 430, 420, 1200, 60, "Mũi tên nối các bước", A("fade", 400, 400))
     + B.map(([i, t, m], k) => { const cx = 330 + k * 420, t0 = 500 + k * 400, cuoi = k === 3;
       return lop(vuong(cx - 90, 360, 180, cuoi ? P.cam : P.navy, i), cx - 90, 360, 180, 180, `Bước ${k + 1}: ${t}`, A("pop", t0, 400))
@@ -232,7 +232,7 @@ sec(13, "so-lon", "sang", dau(13, "Điều 6 · Chấm dứt, gian lận", "Bên
 }
 
 // ===== 16 · KHUYẾN NGHỊ =====
-{ const KN = [["01", "pencil-check", "Khai thật tiền sử bệnh", "Khai sai có thể bị hủy hợp đồng, mất toàn bộ quyền lợi.", "Điều 6 HĐ · khoản 1 Điều 22 Luật KDBH ✚"], ["02", "book", "Đòi và đọc Quy tắc", "Toàn bộ điểm loại trừ nằm ở Chương III Quy tắc, không ở hợp đồng.", "Điều 7 HĐ"], ["03", "hourglass", "Mua sớm theo mốc chờ", "Bệnh có sẵn chờ 365 ngày, sinh con 635 ngày: mua trước khi cần.", "Điều 5 HĐ"]];
+{ const KN = [["01", "pencil-check", "Khai thật tiền sử bệnh", "Khai sai có thể bị hủy hợp đồng, mất toàn bộ quyền lợi.", "Điều 6 HĐ · khoản 1 Điều 22 Luật KDBH ✚"], ["02", "book", "Đòi và đọc Quy tắc", "Điểm loại trừ được dẫn chiếu sang Chương III Quy tắc.", "Điều 7 HĐ"], ["03", "hourglass", "Mua sớm theo mốc chờ", "Bệnh có sẵn chờ 365 ngày, sinh con 635 ngày: mua trước khi cần.", "Điều 5 HĐ"]];
   sec(16, "noi-dung", "sang", dau(16, "Khuyến nghị", "Trước khi ký: ba việc", "Ba thói quen giúp người mua không mất quyền lợi khi cần dùng đến bảo hiểm.")
     + KN.map(([so, i, t, m, cc], k) => { const x = 120 + k * 572, t0 = 400 + k * 400;
       return K(x, 340, 536, 640, "the", `Khối khuyến nghị ${so}`, A("rise", t0, 500)) + T("kn-so", x + 36, 366, 200, so, A("rise", t0 + 100, 400)) + lop(vuong(x + 400, 370, 100, k ? P.navy : P.cam, i), x + 400, 370, 100, 100, `Biểu tượng ${t}`, A("pop", t0 + 200, 300))
@@ -277,7 +277,7 @@ sec(21, "trich", "chia", K(0, 0, 1100, 1080, "pan-navy", "Panel màu chủ bên 
 }
 
 // ===== 23 · NHÂN THỌ vs PHI NHÂN THỌ =====
-{ const D2 = [["2023", -12.5, 2.87, "−12,5", "+2,87"], ["2024", -5, 10.2, "−5", "+10,2"], ["2025", 0.5, 10.5, "+0,5", "+10–11"], ["9T/2026", -4, 15.1, "≈ −4", "+15,1"]];
+{ const D2 = [["2023", -12.5, 2.87, "−12,5", "+2,87"], ["2024", -5, 10.2, "≈ −5", "+10,2"], ["2025", 0.5, 10.5, "+0,5", "+10–11"], ["9T/2026", -4, 15.1, "≈ −4", "+15,1"]];
   const y0 = 700, sc = 13, bw = 130, st = 420, x0 = 200;
   sec(23, "so-lon", "toi", dau(23, "2023 – 9 tháng 2026", "Phi nhân thọ kéo, nhân thọ chưa hồi", "Tăng / giảm doanh thu phí so với cùng kỳ năm trước, %.", true)
     + K(1300, 334, 30, 30, "o-navy3", "Chú giải nhân thọ", A("fade", 300, 300)) + T("chu-giai", 1344, 330, 200, "Nhân thọ", A("fade", 300, 300)) + K(1540, 334, 30, 30, "o-cam", "Chú giải phi nhân thọ", A("fade", 300, 300)) + T("chu-giai", 1584, 330, 240, "Phi nhân thọ", A("fade", 300, 300))
