@@ -60,6 +60,7 @@ Chi trả quyền lợi (tỷ đồng): 2022: 64.018 · 2023: 86.376 · 2024: �
 | Thời hạn bồi thường 15 ngày khi không thỏa thuận | khoản 1 Điều 31 Luật KDBH | hiện hành | A* |
 | Nghĩa vụ cung cấp thông tin trung thực | khoản 1 Điều 22 Luật KDBH | hiện hành | A* |
 | Quyền đơn phương chấm dứt khi không đóng phí | khoản 1 Điều 26 Luật KDBH | hiện hành; nguyên văn lấy từ hethongphapluat.com 20/11/2026 | B |
+| Hủy bỏ HĐ: không có hiệu lực từ thời điểm giao kết · Đơn phương chấm dứt: chấm dứt từ khi bên kia nhận thông báo | khoản 1 Điều 427, khoản 3 Điều 428 BLDS 91/2015/QH13 | hiện hành; nguyên văn khớp kho `blds-2015.txt` | B |
 | Cấm gắn bán BH không bắt buộc với dịch vụ ngân hàng | khoản 5 Điều 15 Luật Các TCTD 32/2024/QH15 | hiệu lực 01/7/2024; nguyên văn khớp kho `ltctd-vbhn-2026.txt` | B |
 | Luật 139/2025/QH15, hiệu lực 01/01/2026 | [TL4], đã dùng ở bài `ch3-bao-hiem-thuong-mai` | hiện hành | B |
 | Mọi điều khoản HĐ An Gia (Đ1–Đ13, PL1) | [G] — mẫu HĐ nhóm đưa vào bài | chưa đối chiếu bản Quy tắc 6029/QĐ-BHBV gốc | C (theo bài nhóm) |
