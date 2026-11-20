@@ -1,0 +1,5 @@
+{
+  "A": { "ngay": "2026-11-20", "loi": "làm (trả lời bản ghi lựa chọn A+B; mặc định 20 phút, giữ phần ✚)" },
+  "B": { "ngay": "2026-11-20", "loi": "làm (trả lời bản ghi lựa chọn A+B)" },
+  "C1": { "ngay": "2026-11-20", "loi": "hướng 3, 365 hay 635 đối chiếu dùm tôi", "huong": "báo cáo đậm — navy, cam san hô, Anton", "xem": ["thiet-ke/huong/so-sanh-3-huong.jpg"] }
+}

@@ -18,3 +18,5 @@
 - C1: bảng tham chiếu 20 slide / 10 mẫu Slidesgo (`thiet-ke/tham-chieu/nguon.md`), 3 hướng × 4 slide (`thiet-ke/huong/so-sanh-3-huong.jpg`). **Hào chọn hướng 3** ("hướng 3").
 - Đối chiếu 635 ngày: **đúng** theo Quy tắc 6029/QĐ-BHBV — nghi ngờ "gõ đảo từ 365" của người soạn là sai; đã sửa noi-dung, kich-ban, slide.
 - C2: 8 slide mẫu (1, 3, 4, 6, 9, 12, 18, 20). Người duyệt độc lập (opus) vòng 1: Nội dung 4 · Thiết kế 4 · Dễ hiểu 4 · Thẩm mỹ 4 · Nhất quán 3 → KHÔNG ĐẠT (tiêu đề panel lệch chỗ, số trang 3 vị trí, ảnh lặp bìa / mở phần, thứ bậc số lớn h-08, nguồn Điều 26 nên ghi đoạn mở đầu). Đã sửa hết.
+
+- C2 vòng 2 (opus): Nội dung 4 · Thiết kế 4 · Dễ hiểu 4 · Thẩm mỹ 4 · Nhất quán 4 → ĐẠT. Đã sửa lỗi nhỏ còn lại (h-08 số phụ 64 px, nguồn h-06/h-07, chữ mồ côi h-04/h-05). Ảnh mẫu: thiet-ke/mau-c2.jpg. Chờ Hào duyệt C2.
