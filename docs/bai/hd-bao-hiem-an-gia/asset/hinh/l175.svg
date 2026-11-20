@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="1170 230 660 660" width="660" height="660"><rect x="1260" y="579" width="46" height="201" fill="#FFFFFF"/><rect x="1322" y="540" width="46" height="240" fill="#FFFFFF"/><rect x="1384" y="502.5" width="46" height="277.5" fill="#FFFFFF"/><rect x="1446" y="456" width="46" height="324" fill="#FFFFFF"/><rect x="1508" y="403.5" width="46" height="376.5" fill="#E8553A"/><rect x="1570" y="439.5" width="46" height="340.5" fill="#FFFFFF"/><rect x="1632" y="438" width="46" height="342" fill="#FFFFFF"/><rect x="1694" y="424.5" width="46" height="355.5" fill="#FFFFFF"/><rect x="1240" y="780" width="520" height="6" fill="#FFFFFF"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="1664 370 100 100" width="100" height="100"><rect x="1664" y="370" width="100" height="100" fill="#14294A"/><g transform="translate(1686 392) scale(2.3333333333333335)" fill="none" stroke="#FFFFFF" stroke-width="1.286" stroke-linecap="round" stroke-linejoin="round">
+  
+  <path d="M6.5 7h11" />
+  <path d="M6.5 17h11" />
+  <path d="M6 20v-2a6 6 0 1 1 12 0v2a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1z" />
+  <path d="M6 4v2a6 6 0 1 0 12 0v-2a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1z" />
+</g></svg>
