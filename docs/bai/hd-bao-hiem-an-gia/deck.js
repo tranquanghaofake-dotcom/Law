@@ -18,23 +18,29 @@ const lop = (body, x, y, w, h, alt, ex = "", loai = "phang") => { const f = `l${
   ghi(path.join(D, "asset", "hinh", f), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${x} ${y} ${w} ${h}" width="${w}" height="${h}">${body}</svg>`);
   return `<img data-l="l${nL}" data-loai="${loai}" data-alt="${esc(alt)}" ${ex} src="asset/hinh/${f}" style="position:absolute;left:${x}px;top:${y}px;width:${w}px;height:${h}px">`; };
 const nen = (body) => lop(body, 0, 0, 1920, 1080, "Hình trang trí", "", "nen");
-const KHOI_GOC = (toi = false) => `<rect x="1700" y="-120" width="420" height="300" rx="120" fill="${toi ? P.navy2 : P.troi}" opacity="0.9"/><rect x="1810" y="-60" width="260" height="330" rx="110" fill="${toi ? P.navy3 : P.navy}" opacity="0.85"/><rect x="-140" y="840" width="230" height="300" rx="100" fill="${toi ? P.navy2 : P.troi}" opacity="0.9"/><rect x="-120" y="900" width="210" height="260" rx="90" fill="${toi ? P.navy3 : P.navy}" opacity="0.85"/>`;
+const KHOI_GOC = (toi = false, v = 0) => { const a = toi ? P.navy2 : P.troi, b = toi ? P.navy3 : P.navy;
+  return [
+    `<rect x="1700" y="-120" width="420" height="300" rx="120" fill="${a}" opacity="0.9"/><rect x="1810" y="-60" width="260" height="330" rx="110" fill="${b}" opacity="0.85"/><rect x="-140" y="840" width="230" height="300" rx="100" fill="${a}" opacity="0.9"/><rect x="-120" y="900" width="210" height="260" rx="90" fill="${b}" opacity="0.85"/>`,
+    `<rect x="1800" y="-90" width="260" height="230" rx="100" fill="${b}" opacity="0.85"/><rect x="1846" y="250" width="200" height="460" rx="100" fill="${a}" opacity="0.9"/><circle cx="1890" cy="760" r="34" fill="${b}"/>`,
+    `<rect x="1760" y="-150" width="320" height="250" rx="110" fill="${a}" opacity="0.9"/><circle cx="1990" cy="1110" r="260" fill="${a}" opacity="0.9"/><circle cx="1930" cy="1170" r="180" fill="${b}" opacity="0.85"/>`,
+    `<circle cx="1880" cy="40" r="95" fill="${b}" opacity="0.85"/><circle cx="1790" cy="-20" r="70" fill="${a}" opacity="0.9"/><rect x="-230" y="640" width="300" height="480" rx="140" fill="${a}" opacity="0.9"/><rect x="-200" y="880" width="270" height="300" rx="120" fill="${b}" opacity="0.85"/>`][v % 4]; };
 const anh = (f, x, y, w, h, alt, ex = "") => `<img data-l="a${++nL}" data-loai="anh-chup" data-alt="${esc(alt)}" ${ex} src="anh/${f}" style="position:absolute;left:${x}px;top:${y}px;width:${w}px;height:${h}px">`;
 const T = (cls, x, y, w, s, ex = "") => `<div class="${cls}" data-t ${ex} style="left:${x}px;top:${y}px;width:${w}px">${em(s)}</div>`;
 const G = (cls, x, y, w, h, html, ex = "") => `<div class="${cls} giua" data-t ${ex} style="left:${x}px;top:${y}px;width:${w}px;height:${h}px">${html}</div>`;
 const H = (cls, x, y, w, s, ex = "") => `<h1 class="${cls}" data-t data-tieu-de ${ex} style="left:${x}px;top:${y}px;width:${w}px">${em(s)}</h1>`;
 const K = (x, y, w, h, cls, alt, ex = "") => `<div class="${cls}" data-l="k${++nL}" data-alt="${esc(alt)}" ${ex} style="left:${x}px;top:${y}px;width:${w}px;height:${h}px"></div>`;
-const nguon = (s, sang = false) => `<div class="nguon${sang ? " sang" : ""}" data-t style="left:120px;top:1004px;width:1680px">${esc(s)}</div>`;
+const nguon = (s, sang = false) => `<div class="nguon${sang ? " sang" : ""}" data-t style="left:120px;top:1004px;width:1560px">${esc(s)}</div>`;
 const cham = (x, y, c, r, m) => { let s = ""; for (let i = 0; i < c; i++) for (let j = 0; j < r; j++) s += `<circle cx="${x + i * 26}" cy="${y + j * 26}" r="5" fill="${m}"/>`; return s; };
 const icon = (ten, cx, cy, co, mau, net = 3) => { const t = fs.readFileSync(path.join(D, "asset", "tabler", ten + ".svg"), "utf8").replace(/^[\s\S]*?<svg[^>]*>/, "").replace(/<\/svg>\s*$/, "").replace(/<path stroke="none" d="M0 0h24v24H0z" fill="none"\s*\/>/, "");
   return `<g transform="translate(${cx - co / 2} ${cy - co / 2}) scale(${co / 24})" fill="none" stroke="${mau}" stroke-width="${((net * 24) / co).toFixed(3)}" stroke-linecap="round" stroke-linejoin="round">${t}</g>`; };
 const EXV = { 20: ' data-viet-tat="BIDV,MB"', 26: " data-nguon" };
+const DAM = new Set([3, 17, 25, 27]);
 const VAI = { 1: "bia", 2: "lo-trinh", 15: "ket-phan", 24: "ket-phan", 25: "ket-chung", 27: "cam-on" };
-const sec = (k, mau, nenLoai, inner, ex = "") => S.push({ k, html: `<section class="s ${nenLoai}" data-mau="${mau}"${VAI[k] ? ` data-vai="${VAI[k]}"` : ""}${EXV[k] || ""} data-nen="${{ sang: "N1", toi: "N2", chia: "N3", anh: "N4" }[nenLoai]}" ${ex} data-trans="push" data-dur="600" data-notes="${esc(NOTES[k] || "")}">\n${inner}\n</section>` });
+const sec = (k, mau, nenLoai, inner, ex = "") => S.push({ k, html: `<section class="s ${nenLoai}${DAM.has(k) ? " dam" : ""}" data-mau="${mau}"${VAI[k] ? ` data-vai="${VAI[k]}"` : ""}${EXV[k] || ""} data-nen="${DAM.has(k) ? "N2" : { sang: "N1", toi: "N1", chia: "N3", anh: "N4" }[nenLoai]}" ${ex} data-trans="push" data-dur="600" data-notes="${esc(NOTES[k] || "")}">\n${inner}\n</section>` });
 
 // ---------- BỐ CỤC MẪU ----------
 // nội dung (nền trắng): nhãn cam · tiêu đề Anton NGẮN · câu dẫn · vạch cam · vùng nội dung 330–980 · nguồn 1004
-const dau = (k, kk, td, dan, toi = false) => nen(KHOI_GOC(toi))
+const dau = (k, kk, td, dan, toi = false) => nen(KHOI_GOC(toi, k))
   + T(`kk${toi ? " sang" : ""}`, 120, 60, 1200, kk, A("fade", 0, 400)) + T(`so${toi ? " sang" : ""}`, 1360, 64, 300, `${k} / ${TONG}`)
   + H(`td${toi ? " sang" : ""}`, 120, 116, 1540, td, A("rise", 100, 600)) + T(`dan${toi ? " sang" : ""}`, 120, 236, 1640, dan, A("fade", 300, 500))
   + K(120, 302, 96, 8, "vach-cam", "Vạch cam dưới tiêu đề", A("wipe", 400, 400));
@@ -54,7 +60,7 @@ sec(1, "bia", "sang", nen(`<rect x="1100" y="0" width="820" height="1080" fill="
 
 // ===== 3 · MỞ PHẦN I =====
 const HD_VE = `<rect x="1290" y="330" width="420" height="500" fill="${P.trang}"/><path d="M1630 330 L1710 410 L1630 410 Z" fill="${P.ke}"/>` + [0, 1, 2, 3, 4].map((i) => `<rect x="1340" y="${450 + i * 56}" width="${i === 0 ? 220 : 320}" height="14" fill="${i === 0 ? P.navy : P.ke}"/>`).join("") + `<rect x="1340" y="390" width="160" height="22" fill="${P.cam}"/><circle cx="1680" cy="790" r="70" fill="${P.cam}"/>` + icon("eye", 1680, 790, 80, P.trang, 4);
-const moPhan = (k, so, ten, mo, chips, alt, ve = HD_VE, anhT = "") => sec(k, "mo-phan", "toi", nen(KHOI_GOC(true) + `<circle cx="1500" cy="560" r="330" fill="${P.cam4}"/>`)
+const moPhan = (k, so, ten, mo, chips, alt, ve = HD_VE, anhT = "") => sec(k, "mo-phan", "toi", nen(KHOI_GOC(true) + `<circle cx="1500" cy="560" r="330" fill="${P.navy2}"/>`)
   + T("mp-so", 114, 170, 600, so, A("pop", 200, 700)) + H("mp-t", 119, 520, 900, ten, A("rise", 500, 600)) + T("mp-m", 120, 780, 860, mo, A("fade", 800, 500))
   + chips.map((c, i) => T("mp-chip", 120 + i * 240, 920, 220, c, A("rise", 1000 + i * 120, 400))).join("")
   + (anhT ? anh(anhT, 1220, 280, 560, 560, alt, A("pop", 400, 800)) + lop(`<circle cx="1500" cy="560" r="306" fill="none" stroke="${P.cam}" stroke-width="8"/>`, 1186, 246, 628, 628, "Vòng cam quanh ảnh", A("fade", 900, 500)) : lop(ve, 1170, 230, 660, 660, alt, A("pop", 400, 800))));
@@ -94,7 +100,7 @@ moPhan(3, "01", "Hợp đồng Bảo Việt An Gia", "Một hợp đồng bảo 
 { const CHO = [["Tai nạn", 0], ["Bệnh thông thường, điều trị răng", 30], ["Biến chứng thai sản", 90], ["Viêm phổi, phế quản ở trẻ ≤ 6 tuổi", 180], ["Bệnh có sẵn (có trước khi mua), bệnh đặc biệt", 365], ["Sinh con (Bảo hiểm Thai sản)", 635]];
   const x0 = 780, W = 1020, sc = W / 640, y0 = 190, hr = 124;
   sec(9, "chia", "chia", panTrai(9, "Điều 5 · Thời gian chờ", "635", "ngày chờ sinh con (gần 21 tháng)", "Ký xong chưa được trả ngay")
-    + T("dinh-nghia", 780, 56, 560, "Thời gian chờ = sau khi ký, bị bệnh trong khoảng này thì chưa được trả tiền.", A("fade", 500, 400))
+    + T("dinh-nghia", 780, 56, 620, "Thời gian chờ = sau khi ký, bị bệnh trong khoảng này thì chưa được trả tiền.", A("fade", 500, 400))
     + CHO.map(([t, d], k) => { const y = y0 + k * hr, w = Math.max(d * sc, 10), sinh = k === 5;
       return T(`cho${sinh ? " cam" : ""}`, x0, y, 760, t, A("fade", 700 + k * 200, 300)) + T(`cho-so${sinh ? " cam" : ""}`, x0 + W - 260, y, 260, d ? `${d} ngày` : "không chờ", A("fade", 900 + k * 200, 300))
         + lop(`<rect x="${x0}" y="${y + 52}" width="${W}" height="40" fill="${P.nen}"/>${d ? `<rect x="${x0}" y="${y + 52}" width="${w}" height="40" fill="${sinh ? P.cam : P.navy}"/>` : ""}`, x0, y + 52, W, 40, `Thanh ${t}: ${d} ngày`, A("wipe", 700 + k * 200, 600)); }).join("")
@@ -298,6 +304,7 @@ sec(21, "trich", "chia", K(0, 0, 1100, 1080, "pan-navy pan-full", "Panel màu ch
 { const D2 = [["2023", -12.5, 2.87, "−12,5", "+2,87"], ["2024", -5, 10.2, "≈ −5", "+10,2"], ["2025", 0.5, 10.5, "+0,5", "+10–11"], ["9 th. 2026", -4, 15.1, "≈ −4", "+15,1"]];
   const y0 = 700, sc = 13, bw = 130, st = 420, x0 = 200;
   sec(23, "so-lon", "toi", dau(23, "2023 – 9 tháng 2026", "Phi nhân thọ tăng, nhân thọ vẫn giảm", "Cột trên vạch 0: doanh thu tăng so với năm trước · dưới vạch: giảm (%).", true)
+    + K(100, 316, 1720, 680, "the", "Khối nền biểu đồ", A("fade", 200, 400))
     + K(760, 334, 30, 30, "o-navy3", "Chú giải nhân thọ", A("fade", 300, 300)) + T("chu-giai", 804, 330, 460, "Nhân thọ (tính mạng, tích lũy)", A("fade", 300, 300)) + K(1290, 334, 30, 30, "o-cam", "Chú giải phi nhân thọ", A("fade", 300, 300)) + T("chu-giai", 1334, 330, 480, "Phi nhân thọ (tài sản, xe, thiệt hại)", A("fade", 300, 300))
     + lop(`<path d="M150 ${y0} H1800" stroke="${P.navy}" stroke-width="3"/>`, 150, y0 - 2, 1650, 4, "Trục 0 %", A("wipe", 300, 500))
     + D2.map(([n, a, b, sa, sb], k) => { const x = x0 + k * st, t0 = 600 + k * 400, ha = Math.abs(a) * sc, hb = b * sc;
@@ -342,7 +349,7 @@ sec(21, "trich", "chia", K(0, 0, 1100, 1080, "pan-navy pan-full", "Panel màu ch
 }
 
 // ===== 27 · CẢM ƠN =====
-sec(27, "ket", "toi", nen(KHOI_GOC(true) + `<circle cx="1500" cy="540" r="390" fill="${P.cam4}"/><rect x="0" y="1020" width="700" height="60" fill="${P.cam}"/>`)
+sec(27, "ket", "toi", nen(KHOI_GOC(true) + `<circle cx="1500" cy="540" r="390" fill="${P.navy2}"/><rect x="0" y="1020" width="700" height="60" fill="${P.cam}"/>`)
   + anh("ky-hd-tron-lon.png", 1150, 190, 700, 700, "Ảnh đen trắng: bàn tay ký hợp đồng", A("pop", 300, 900)) + lop(`<circle cx="1500" cy="540" r="372" fill="none" stroke="${P.cam}" stroke-width="8"/>`, 1120, 160, 760, 760, "Vòng cam quanh ảnh", A("fade", 900, 500))
   + T("kk sang", 120, 200, 800, "Nhóm 2 · Hết phần trình bày", A("fade", 0, 400))
   + H("cam-on-t", 118, 260, 980, "Cảm ơn thầy cô và các bạn", A("rise", 200, 800))
@@ -426,6 +433,15 @@ section.s.toi{background:${P.trang}}
 .so-lon-p{font-size:104px;margin-left:-4px}.mp-so{margin-left:-5px}.so-khoi,.kn-so,.ket-so,.khoi-so{margin-left:-1px}.so-15{margin-left:-5px}.bia{margin-left:-4px}.td{margin-left:-1px}.mp-t{margin-left:-1px}.cam-on-t{margin-left:2px}.so-vua{margin-left:-4px}
 .the-t{font-size:34px}
 .so-lon-p.am{margin-left:-10px}
+/* nhịp nền (Hào: "nền quá trùng lặp, chưa bắt mắt"): slide đậm navy cho mở phần / kết luận chung / cảm ơn; panel trái của slide chia đôi navy */
+section.s.dam{background:${P.navy}}
+.dam .td,.dam .mp-t,.dam .cam-on-t,.dam .khoi-t,.dam .ket-m,.dam .cam-on-m,.dam .mp-chip{color:${P.trang}}
+.dam .dan,.dam .mp-m,.dam .so,.dam .cam-on-m.nho,.dam .nguon{color:#C9D9F2}
+.dam .kk,.dam .mp-so,.dam .ket-so,.dam em{color:${P.troi}}.dam .mp-chip{border-top-color:${P.troi}}
+.dam .pan-navy2{background:#2E4B86;border:0}
+.chia .pan-full{background:${P.navy}}
+.chia .td.sang,.chia .trich,.chia .so-lon-m{color:${P.trang}}.chia .kk.sang,.chia .so-lon-p,.chia .trich em,.chia .vd-sang{color:${P.troi}}.chia .trich-cc{color:#C9D9F2}
+.chia .so.sang{color:#C9D9F2}
 `);
 fs.rmSync(path.join(D, "slides"), { recursive: true, force: true });
 S.sort((a, b) => a.k - b.k).forEach((s) => ghi(path.join(D, "slides", `${String(s.k).padStart(2, "0")}.html`), s.html));
