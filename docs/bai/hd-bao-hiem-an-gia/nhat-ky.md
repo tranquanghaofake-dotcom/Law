@@ -12,3 +12,9 @@
 ## Chưa làm
 - Người duyệt độc lập (agent `opus`) theo bước 8 — chưa chạy.
 - Đối chiếu Quy tắc 6029/QĐ-BHBV gốc (thời gian chờ sinh con).
+
+## Làm lại từ điểm C (20/11/2026, sau khi Hào chỉ ra bỏ cổng)
+- Lỗi quy trình: tự bỏ điểm C, dùng phong cách bài Chương 3. Đã sửa skill (commit 3056be1) + cổng máy `scripts/cong_duyet.js`.
+- C1: bảng tham chiếu 20 slide / 10 mẫu Slidesgo (`thiet-ke/tham-chieu/nguon.md`), 3 hướng × 4 slide (`thiet-ke/huong/so-sanh-3-huong.jpg`). **Hào chọn hướng 3** ("hướng 3").
+- Đối chiếu 635 ngày: **đúng** theo Quy tắc 6029/QĐ-BHBV — nghi ngờ "gõ đảo từ 365" của người soạn là sai; đã sửa noi-dung, kich-ban, slide.
+- C2: 8 slide mẫu (1, 3, 4, 6, 9, 12, 18, 20). Người duyệt độc lập (opus) vòng 1: Nội dung 4 · Thiết kế 4 · Dễ hiểu 4 · Thẩm mỹ 4 · Nhất quán 3 → KHÔNG ĐẠT (tiêu đề panel lệch chỗ, số trang 3 vị trí, ảnh lặp bìa / mở phần, thứ bậc số lớn h-08, nguồn Điều 26 nên ghi đoạn mở đầu). Đã sửa hết.

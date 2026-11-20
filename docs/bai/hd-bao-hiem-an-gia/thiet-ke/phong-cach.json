@@ -1,27 +1,19 @@
 {
-  "ten": "tư vấn pháp lý — khối phẳng",
-  "huong": "Tư vấn pháp lý, khối phẳng: ảnh chụp Unsplash và tranh tư liệu cắt khung (vòm, tròn, bo góc) cùng một cách chỉnh màu; minh hoạ unDraw tô lại theo bảng màu và vật phẳng tự vẽ (toà nhà DNBH, người, xe, xu, hợp đồng); icon nét Tabler 3 px trong huy hiệu; khối thông tin tô đặc, bóng lệch đặc màu x3 (không bóng mờ); tiêu đề Lora có từ khoá màu; nền sáng xen nền đậm, ảnh tràn mép, nền chia; mỗi phần một slide hero.",
+  "ten": "báo cáo đậm — navy, cam san hô, Anton",
+  "huong": "Hướng 3 (C1, 20/11/2026): navy #14294A + trắng, một màu nhấn cam san hô; tiêu đề Anton in hoa ngắn + câu dẫn Be Vietnam Pro; panel chia đôi; số lớn; ảnh tròn đen trắng; lưới chấm; khối vuông không bo, không bóng, không gradient.",
   "gradient": false,
   "bongMo": false,
   "bangMau": [
-    "#FBF7EF",
+    "#14294A",
+    "#22406E",
+    "#4D6A96",
     "#FFFFFF",
-    "#1B2A28",
-    "#3F4B48",
-    "#DCD3C4",
-    "#0E4F49",
-    "#2C7A6C",
-    "#8EC3B6",
-    "#DDECE7",
-    "#946512",
-    "#E2A52E",
-    "#F3D27E",
-    "#F8ECCD",
-    "#B13A2E",
-    "#F6DDD7",
-    "#E8B48F",
-    "#B97C5E",
-    "#8F2A21"
+    "#F3F5F8",
+    "#43506A",
+    "#D5DBE5",
+    "#E8553A",
+    "#FBE1DA",
+    "#B8361F"
   ],
   "loaiHinh": [
     "phang",
@@ -32,6 +24,7 @@
     "bia",
     "mo-phan",
     "noi-dung",
+    "chia",
     "so-lon",
     "bang",
     "trich",
@@ -40,9 +33,7 @@
   ],
   "tieuDeCoDinh": [
     "noi-dung",
-    "so-lon",
-    "bang",
-    "so-sanh"
+    "bang"
   ],
   "nguong": {
     "loaiNenToiThieu": 2,
@@ -52,7 +43,5 @@
     "assetToiDa": 4,
     "bangXetTiLe": 99,
     "tieuDiemToiThieu": 0.15
-  },
-  "ghiChuNguong": "Hướng biên tập: một kiểu bảng cho cả deck là chủ ý (bo-cuc.md); slide lấy chữ / số lớn làm tiêu điểm khai data-khong-hinh. Nhịp nền (15/11/2026, vòng duyệt 6): tối đa 6 slide liền cùng họ nền.",
-  "ghiChuNguon": "Dùng lại hệ thống thiết kế đã duyệt của docs/bai/ch3-bao-hiem-thuong-mai (cùng chủ đề). Ảnh Unsplash (giấy phép Unsplash), ghi nguồn trong ghi-cong.md. Không ảnh AI."
+  }
 }
