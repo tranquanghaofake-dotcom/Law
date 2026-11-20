@@ -31,3 +31,4 @@
 - Nhịp nền (Hào: "nền quá trùng lặp, chưa bắt mắt"): 4 biến thể khối góc xoay theo số slide; slide navy đậm cho mở phần (3, 17), kết luận chung (25), cảm ơn (27); panel trái slide chia đôi (9, 12, 19, 20, 21) navy chữ trắng.
 - 20/11: Hào chê mẫu thoáng "chưa đủ bắt mắt" → thêm khối nền mềm sau hình, tô chuyển màu, quầng sáng, nhãn viên thuốc, minh hoạ unDraw (online-payments) tô lại màu; thẻ phong cách mở gradient + loại hình undraw.
 - 20/11: Hào "làm thử tất cả" → áp bố cục thoáng cho 27 slide (một ý, một hình lớn trên khối nền mềm, chuyển màu, unDraw); chi tiết bỏ khỏi slide chuyển vào ghi chú. Bản giao: máy soát 0 lỗi.
+- 20/11: Hào "chưa chau chuốt, khá xấu" → khối nền viên thuốc thay bằng thẻ trắng viền mảnh + bóng nhẹ; góc trang dùng lại khối bo vuông như mẫu; tách màu 70/30; slide 2 vẽ lại bằng thẻ số lớn; thanh có rãnh nền; biểu đồ 23 cao hơn. Máy soát bản giao 0 lỗi.
