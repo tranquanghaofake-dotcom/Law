@@ -8,6 +8,7 @@
 // Đa dạng (nền, asset lặp, kiểu bảng): scripts/da_dang.js · thẻ phong cách asset (thiet-ke/phong-cach.json): scripts/kiem_phong_cach.js — lỗi ◇ cũng là lỗi.
 // Bộ thành phần bảng T1–T13: hinh/bang.css (nạp sẵn). Bảng xem thử asset: <tên>_lop/asset.jpg.
 // Ra: <tên>.pptx, <tên>_lop/ (deck.html, h-XX.jpg từng slide, tong-N.jpg ảnh tổng 3×3, soat-*.jpg so HTML với PPTX qua LibreOffice)
+// Cổng duyệt: không có --nhap thì đòi <bài>/duyet.json ghi người dùng đã duyệt A, B, C và hướng phong cách khớp thẻ (scripts/cong_duyet.js).
 // Mã thoát: 0 sạch · 1 còn lỗi (mọi ⚠ đều là lỗi — mục tiêu "càng ít lỗi càng tốt"; --nhap để dựng xem trước dù còn lỗi) · 2 không dựng được.
 const fs = require("fs"), path = require("path");
 const HINH = path.join(__dirname, "..", "hinh");
@@ -64,7 +65,8 @@ async function dung(dir, { ten, soat = true, nhap = false } = {}) {
   const { files, html } = ghepHtml(dir), htmlPath = path.join(work, "deck.html"); fs.writeFileSync(htmlPath, html);
   console.log(`· ${files.length} file slide → ${htmlPath}`);
   const { kiemHtml } = require("./kiem_html"), { kiemDeTrongTrang } = require(path.join(HINH, "kiem_de"));
-  const loi = [];
+  const loi = nhap ? [] : require("./cong_duyet").kiemCongDuyet(dir);   // bản giao phải có bằng chứng người dùng duyệt A, B, C (duyet.json)
+  if (loi.length) console.log(loi.join("\n"));
   const { thuThap, danhGia, NGUONG } = require("./da_dang"), { thuThapNhatQuan, danhGiaNhatQuan } = require("./nhat_quan"), { thuThapPhongPhu, danhGiaPhongPhu } = require("./phong_phu"), { thuThapDeDoc, danhGiaDeDoc } = require("./de_doc"); let dd = null, pp = null, dc = null;
   const fThe = path.join(dir, "thiet-ke", "phong-cach.json"), the = fs.existsSync(fThe) ? JSON.parse(fs.readFileSync(fThe, "utf8")) : null;
   const ng = { ...NGUONG, ...((the && the.nguong) || {}) };   // thẻ phong cách được chỉnh ngưỡng đa dạng (vd. deck biên tập tối giản: cùng nền giấy nhiều slide liền là chủ ý)

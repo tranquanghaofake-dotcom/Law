@@ -27,6 +27,11 @@ description: "Use when the user wants a slide deck (PowerPoint .pptx, editable t
 - Bài có tài liệu gốc (bài giảng cũ, giáo trình): **3 lần** — **A** sau bước 2 (brief + mục tiêu + nội dung) · **B** sau bước 3 (kịch bản) · **C** sau bước 5 (phong cách + mẫu).
 - Bài mới hoàn toàn: **5 lần** — sau bước 1, 2, 3, 4, 5.
 - Không tự duyệt thay người dùng; người dùng sửa gì thì sửa sản phẩm của bước đó rồi gửi lại.
+- **Một lời "làm", "ok", "tiếp" chỉ duyệt điểm đang chờ** — không mở khoá các điểm sau. Sau điểm A+B mà người dùng nói "làm" thì làm bước 4–5 rồi **dừng ở C**, không dựng cả deck.
+- **Điểm C phải bằng hình, không bằng mô tả**: tờ so sánh **3 hướng phong cách × 3–4 slide của chính bài** (9–12 trang: bìa, một slide khái niệm / sơ đồ, một bảng hoặc biểu đồ, một trích luật) đặt cạnh bảng tham chiếu → người dùng chọn hướng → 6–8 slide mẫu của hướng đó → người dùng duyệt. Hai lần dừng.
+- **Không dùng lại phong cách đã duyệt của bài khác thay cho điểm C** (cùng chủ đề cũng vậy); muốn dùng thì đưa nó vào làm **một** trong các hướng để người dùng chọn.
+- Máy chặn: `dung.js` không có `--nhap` đòi `<bài>/duyet.json` ghi ngày + lời duyệt nguyên văn cho A, B, C; C ghi `huong` (khớp `ten` trong `thiet-ke/phong-cach.json`) và `xem` (tệp hình người dùng đã nhìn) — `scripts/cong_duyet.js`. Không bịa lời duyệt.
+- **Báo cáo trung thực**: còn ⚠ / ◇, chưa qua người duyệt độc lập, hay đã bỏ bước nào → nói ngay câu đầu của báo cáo, không gọi là "xong".
 
 ## Dựng
 ```

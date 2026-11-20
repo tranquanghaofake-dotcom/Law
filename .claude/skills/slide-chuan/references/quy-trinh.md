@@ -56,7 +56,10 @@ Bìa · một slide khái niệm · một sơ đồ / so sánh · một slide s�
 - **Slide then chốt làm 3 phương án** (bìa, khái niệm trung tâm, sơ đồ chính), đặt cạnh nhau với bảng tham chiếu, chọn phương án tốt nhất theo `soat.md` mục 2 (hạng Thẩm mỹ) — không làm một phương án rồi sửa dần.
 - **Mỗi bảng và mỗi hình chính làm 2 phương án** (bước 7 cũng vậy): hai kiểu trình bày khác nhau trong `trinh-bay-du-lieu.md` (vd. T3 cột nhấn vs T5 thẻ), hai cách vẽ hình (cảnh vs vật thể); dựng cả hai, đặt cạnh mẫu tham chiếu cùng loại bằng `scripts/to_so_sanh.js`, giữ cái hơn, ghi lý do một dòng trong `nhat-ky.md`.
 
-**Điểm duyệt C** (bài có tài liệu gốc: gộp 4 + 5 — gửi bảng tham chiếu, hệ thống thiết kế, bản đồ nhịp, mẫu; bài mới: duyệt 4 và 5 riêng).
+**Điểm duyệt C** — luôn **hai lần dừng**, kể cả bài có tài liệu gốc:
+1. **C1 · chọn hướng**: gửi bảng tham chiếu + tờ so sánh **3 hướng × 3–4 slide dựng thật của chính bài** (9–12 trang, `thiet-ke/huong/so-sanh-*.jpg`) + bản ghi lựa chọn. Người dùng chọn hướng.
+2. **C2 · duyệt mẫu**: hệ thống thiết kế, bản đồ nhịp, 6–8 slide mẫu của hướng đã chọn (sau người duyệt độc lập chấm Thẩm mỹ, Nhất quán ≥ 4).
+Ghi cả hai vào `duyet.json` (`C.huong`, `C.xem`). Câu trả lời ngắn ("làm", "ok") ở điểm A/B **không** thay cho C. Phong cách đã duyệt của bài khác chỉ được là một trong ba hướng, không được thay cổng.
 
 ## 6. Asset + ảnh
 - **Brief minh hoạ từng slide** (cột trong `kich-ban.md` hoặc `thiet-ke/brief-hinh.md`): hình chứng minh ý nào, cảnh gì, ai / vật gì, tỉ lệ theo hệ thống, tiêu điểm ở đâu, nhãn nào đặt lên vật nào. Không có brief → không vẽ. **Ít hình, to, có tiêu điểm**; không dán cùng một vật lặp lại khắp deck như hình trang trí; vật xuất hiện lại chỉ khi nó đóng cùng vai trò.- **Kiểm kê asset** (`thiet-ke/asset.md`, bảng: hình · vai (sự vật nó chỉ) · slide dùng · trạng thái vẽ): mỗi phần có ≥ 1 **hình chính** vẽ riêng cho đúng ý của phần (không lấy hình của phần khác đổi nhãn); **một hình ≤ 3 slide**, trừ motif có vai cố định cả deck (khai `data-lap`); đa dạng loại hình: vật thể, cảnh / quan hệ, biểu tượng cùng bộ, hoạ tiết nền, ảnh thật — không chỉ một bộ nhân vật + toà nhà dán khắp nơi. Tham khảo mẫu: 4–6 hình chính cho 8–12 slide nội dung (≈ 1 hình / phần), icon cùng nét cùng cỡ.

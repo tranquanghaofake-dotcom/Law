@@ -69,7 +69,7 @@ Mở lại phiên: đọc `00-ho-so.md` (phần NHẬT KÝ PHIÊN) trước, là
 
 ## Quy trình 9 pha
 
-Mỗi pha: **Làm** → **Cổng** (điều kiện cụ thể để qua). Không qua cổng thì không sang pha sau. Mọi cổng cần người dùng duyệt, trừ khi người dùng nói rõ "tự chạy hết".
+Mỗi pha: **Làm** → **Cổng** (điều kiện cụ thể để qua). Không qua cổng thì không sang pha sau. Mọi cổng cần người dùng duyệt, trừ khi người dùng nói rõ "tự chạy hết". Một lời ngắn ("làm", "ok", "tiếp") chỉ qua **cổng đang chờ**, không mở khoá các cổng sau.
 
 ### Pha 0 — Tiếp nhận
 Lượt đầu **chỉ hỏi**, gom một lần, đánh số 7 mục: (1) loại sản phẩm; (2) trường, khoa, file quy định trình bày; (3) hạn nộp; (4) GVHD và định hướng; (5) cuộc thi và năm (tìm thể lệ đúng năm; chưa có thì dùng bản gần nhất, ghi "mặc định: thể lệ năm …"); (6) đã có gì (đọc gì, dữ liệu, nghề định hướng; có định dùng chung đề tài cho khóa luận không, xem `references/liem-chinh-ai.md`); (7) quy định của trường hoặc cuộc thi về dùng AI. Có câu trả lời rồi mới tạo `00-ho-so.md`; mục chưa biết ghi "mặc định: …" (`references/trinh-bay-trich-dan.md`).

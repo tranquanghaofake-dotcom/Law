@@ -64,3 +64,17 @@ test("hai hộp chữ đè nhau bị bắt, kể cả cùng cha; số lớn + đ
   assert.ok(!de.some((x) => /slide 3/.test(x)), "số lớn + đơn vị sát dưới (không chạm nét) không được báo:\n" + de.join("\n"));
   process.exitCode = 0;
 });
+
+test("cổng duyệt: thiếu duyet.json, thiếu tệp đã xem, hướng lệch thẻ → bị chặn; --nhap không bị chặn", () => {
+  const { kiemCongDuyet } = require("../scripts/cong_duyet");
+  const d = fs.mkdtempSync(path.join(os.tmpdir(), "sc-duyet-"));
+  assert.match(kiemCongDuyet(d).join("\n"), /chưa có duyet\.json/);
+  fs.mkdirSync(path.join(d, "thiet-ke")); fs.writeFileSync(path.join(d, "thiet-ke", "phong-cach.json"), JSON.stringify({ ten: "bài khác" }));
+  fs.writeFileSync(path.join(d, "duyet.json"), JSON.stringify({ A: { ngay: "x", loi: "ok" }, B: { ngay: "x", loi: "làm" }, C: { ngay: "x", loi: "chọn 2", huong: "hướng 2", xem: ["khong-co.jpg"] } }));
+  const l = kiemCongDuyet(d).join("\n");
+  assert.match(l, /không tồn tại: khong-co\.jpg/); assert.match(l, /khác hướng người dùng đã chọn/);
+  fs.writeFileSync(path.join(d, "duyet.json"), JSON.stringify({ A: { ngay: "x", loi: "ok" }, B: { ngay: "x", loi: "làm" } }));
+  assert.doesNotMatch(kiemCongDuyet(d).join("\n"), /điểm duyệt A|điểm duyệt B/); assert.match(kiemCongDuyet(d).join("\n"), /điểm duyệt C/);
+  fs.writeFileSync(path.join(d, "x.jpg"), ""); fs.writeFileSync(path.join(d, "duyet.json"), JSON.stringify({ A: { ngay: "x", loi: "ok" }, B: { ngay: "x", loi: "ok" }, C: { ngay: "x", loi: "chọn", huong: "bài khác", xem: ["x.jpg"] } }));
+  assert.deepStrictEqual(kiemCongDuyet(d), []);
+});

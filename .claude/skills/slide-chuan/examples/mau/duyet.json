@@ -1,0 +1,5 @@
+{
+  "A": { "ngay": "2026-11-20", "loi": "(ví dụ) duyệt nội dung" },
+  "B": { "ngay": "2026-11-20", "loi": "(ví dụ) duyệt kịch bản" },
+  "C": { "ngay": "2026-11-20", "loi": "(ví dụ) chọn hướng ví dụ tối thiểu", "huong": "ví dụ tối thiểu", "xem": ["slides/01-bia.html"] }
+}

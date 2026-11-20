@@ -54,7 +54,7 @@ Không dùng khi cần:
    **Không tải nhạc từ trang lậu.** Bản nghe thử chính thức (iTunes/Deezer preview) chỉ dùng để **đo nhịp**, không nhúng vào video, không commit. **Không tự sáng tác nhạc bằng code làm sản phẩm**, vì không ai nghe kiểm được. Nhạc tổng hợp chỉ được dùng làm "nhạc dò nhịp" và phải ghi nhãn rõ.
 3. **Đo nhịp, không đoán.** Chạy `scripts/do_nhip.py` lấy BPM, phách đầu, độ dài cụm và chỗ bass tắt, rồi đối chiếu BPM với cơ sở dữ liệu công khai. Bản Sped Up/Slowed là bài khác tempo.
 4. **60 fps, 1080×1920 (dọc) hoặc 1920×1080 (ngang).** Mọi mốc thời gian tính bằng chỉ số phách: `b(n)`, làm tròn từng mốc, không cộng dồn.
-5. **Chỉ render bản cuối sau khi máy kiểm và mắt soát đều qua** (cổng pha 6: `kiem_tra_bo_cuc.mjs` XANH + khung tĩnh). Render 60 fps tốn từ vài chục phút đến hàng giờ. Video > 60 s: **dựng mẫu 20–30 s đầu** cho người dùng duyệt phong cách rồi mới làm cả bài.
+5. **Chỉ render bản cuối sau khi máy kiểm và mắt soát đều qua** (cổng pha 6: `kiem_tra_bo_cuc.mjs` XANH + khung tĩnh). Render 60 fps tốn từ vài chục phút đến hàng giờ. Video > 60 s: **dựng mẫu 20–30 s đầu** cho người dùng duyệt phong cách rồi mới làm cả bài. Phong cách được chọn **bằng mắt** (≥ 2 mẫu khác nhau), không bằng mô tả; một lời "làm" / "ok" ở bước trước không thay cho duyệt phong cách; không dùng lại phong cách đã duyệt của video khác thay cổng này (chỉ được là một trong các mẫu).
 6. **Báo cáo trung thực.** Âm thanh chỉ được *đo*, chưa ai *nghe*: luôn nói rõ điều đó. Bỏ hiệu ứng nào vì máy không chạy được thì nói. Kết quả kiểm tra ghi nguyên số.
 
 ## Quy trình 7 pha
