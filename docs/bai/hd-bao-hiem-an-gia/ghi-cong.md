@@ -10,3 +10,6 @@
 | — | `anh/image1.png`, `anh/image2.png` | Hình 1, Hình 2 của bài nhóm | chỉ để đọc số liệu, không đưa lên slide |
 
 Không dùng ảnh AI.
+| 3 | `anh/benh-vien-tron.png` (từ `anh/unsplash/benh-vien.jpg`) | Bàn tay bệnh nhân truyền dịch trên giường bệnh, đen trắng | Stephen Andrews · unsplash.com/photos/GwgFPDXiSIs · giấy phép Unsplash (Free Photo) |
+| 22 | `anh/lu-xam.jpg` (từ `anh/unsplash/lu-hoi-an.jpg`) | Phố ngập lũ ở Hội An — ảnh minh hoạ, không phải bão Yagi | Toomas Tartes · unsplash.com/photos/27HacQwqvA0 · giấy phép Unsplash (Free Photo) |
+| 27 | `anh/ky-hd-tron-lon.png` | Bàn tay ký hợp đồng (bản tròn, đen trắng) | Jakub Żerdzicki · Unsplash |
