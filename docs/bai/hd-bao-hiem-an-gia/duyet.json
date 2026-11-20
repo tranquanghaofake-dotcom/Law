@@ -17,11 +17,15 @@
   },
   "C": {
     "ngay": "2026-11-20",
-    "loi": "C1: \"hướng 3, 365 hay 635 đối chiếu dùm tôi\" · C2: \"LÀM\" (duyệt 8 slide mẫu)",
-    "huong": "báo cáo đậm — navy, cam san hô, Anton",
+    "loi": "tham khảo style, đừng tham khảo bố cục bullshit này, làm lại pptx hoàn chỉnh vs design tôi gửi (5 ảnh mẫu)",
+    "huong": "nền sáng xanh — theo mẫu Hào gửi",
     "xem": [
-      "thiet-ke/huong/so-sanh-3-huong.jpg",
-      "thiet-ke/mau-c2.jpg"
-    ]
+      "thiet-ke/tham-chieu/nguoi-dung/mau-1.jpg",
+      "thiet-ke/tham-chieu/nguoi-dung/mau-2.jpg",
+      "thiet-ke/tham-chieu/nguoi-dung/mau-3.jpg",
+      "thiet-ke/tham-chieu/nguoi-dung/mau-4.jpg",
+      "thiet-ke/tham-chieu/nguoi-dung/mau-5.jpg"
+    ],
+    "truoc": "hướng 3 báo cáo đậm (C1 \"hướng 3\", C2 \"LÀM\") — thay bằng phong cách Hào gửi"
   }
 }

@@ -9,7 +9,8 @@ const ghi = (f, s) => { fs.mkdirSync(path.dirname(f), { recursive: true }); fs.w
 fs.rmSync(path.join(D, "asset", "hinh"), { recursive: true, force: true });
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
 const em = (s) => esc(s).replace(/\[([^\]]+)\]/g, "<em>$1</em>");
-const P = { navy: "#14294A", navy2: "#22406E", navy3: "#4D6A96", trang: "#FFFFFF", nen: "#F3F5F8", phu: "#43506A", ke: "#D5DBE5", cam: "#E8553A", cam4: "#FBE1DA", cam0: "#B8361F" };
+const P = { navy: "#253A6B", navy2: "#3E63A8", navy3: "#7FB3E8", trang: "#FFFFFF", nen: "#F2F7FD", phu: "#3D4A63", ke: "#DCE7F5", cam: "#2F6FE4", cam4: "#E3EFFD", cam0: "#1E4FC2", troi: "#8FD3F7" };
+const DOC = ["#BFE3FB", "#9FCFF5", "#7FB3E8", "#5B8FD6", "#3E63A8", "#2F4F8F", "#253A6B"];   // dải chuyển màu nhạt → đậm cho cột biểu đồ (theo mẫu Hào gửi)
 let nL = 0;
 const S = [];
 const A = (a, at, dur = 500) => `data-a="${a}" data-at="${at}" data-dur="${dur}"`;
@@ -17,6 +18,7 @@ const lop = (body, x, y, w, h, alt, ex = "", loai = "phang") => { const f = `l${
   ghi(path.join(D, "asset", "hinh", f), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${x} ${y} ${w} ${h}" width="${w}" height="${h}">${body}</svg>`);
   return `<img data-l="l${nL}" data-loai="${loai}" data-alt="${esc(alt)}" ${ex} src="asset/hinh/${f}" style="position:absolute;left:${x}px;top:${y}px;width:${w}px;height:${h}px">`; };
 const nen = (body) => lop(body, 0, 0, 1920, 1080, "Hình trang trí", "", "nen");
+const KHOI_GOC = (toi = false) => `<rect x="1700" y="-120" width="420" height="300" rx="120" fill="${toi ? P.navy2 : P.troi}" opacity="0.9"/><rect x="1810" y="-60" width="260" height="330" rx="110" fill="${toi ? P.navy3 : P.navy}" opacity="0.85"/><rect x="-140" y="840" width="230" height="300" rx="100" fill="${toi ? P.navy2 : P.troi}" opacity="0.9"/><rect x="-120" y="900" width="210" height="260" rx="90" fill="${toi ? P.navy3 : P.navy}" opacity="0.85"/>`;
 const anh = (f, x, y, w, h, alt, ex = "") => `<img data-l="a${++nL}" data-loai="anh-chup" data-alt="${esc(alt)}" ${ex} src="anh/${f}" style="position:absolute;left:${x}px;top:${y}px;width:${w}px;height:${h}px">`;
 const T = (cls, x, y, w, s, ex = "") => `<div class="${cls}" data-t ${ex} style="left:${x}px;top:${y}px;width:${w}px">${em(s)}</div>`;
 const G = (cls, x, y, w, h, html, ex = "") => `<div class="${cls} giua" data-t ${ex} style="left:${x}px;top:${y}px;width:${w}px;height:${h}px">${html}</div>`;
@@ -32,27 +34,27 @@ const sec = (k, mau, nenLoai, inner, ex = "") => S.push({ k, html: `<section cla
 
 // ---------- BỐ CỤC MẪU ----------
 // nội dung (nền trắng): nhãn cam · tiêu đề Anton NGẮN · câu dẫn · vạch cam · vùng nội dung 330–980 · nguồn 1004
-const dau = (k, kk, td, dan, toi = false) => nen(cham(1696, 130, 5, 3, toi ? P.navy2 : P.ke))
-  + T(`kk${toi ? " sang" : ""}`, 120, 60, 1200, kk, A("fade", 0, 400)) + T(`so${toi ? " sang" : ""}`, 1500, 64, 300, `${k} / ${TONG}`)
-  + H(`td${toi ? " sang" : ""}`, 120, 116, 1500, td, A("rise", 100, 600)) + T(`dan${toi ? " sang" : ""}`, 120, 236, 1640, dan, A("fade", 300, 500))
+const dau = (k, kk, td, dan, toi = false) => nen(KHOI_GOC(toi))
+  + T(`kk${toi ? " sang" : ""}`, 120, 60, 1200, kk, A("fade", 0, 400)) + T(`so${toi ? " sang" : ""}`, 1360, 64, 300, `${k} / ${TONG}`)
+  + H(`td${toi ? " sang" : ""}`, 120, 116, 1540, td, A("rise", 100, 600)) + T(`dan${toi ? " sang" : ""}`, 120, 236, 1640, dan, A("fade", 300, 500))
   + K(120, 302, 96, 8, "vach-cam", "Vạch cam dưới tiêu đề", A("wipe", 400, 400));
 // chia (panel navy trái 660 px): số lớn + tiêu đề trong panel; nội dung bên phải 780–1800
-const panTrai = (k, kk, so, soM, td) => K(0, 0, 660, 1080, "pan-navy", "Panel màu chủ bên trái", A("fade", 0, 400))
-  + T("kk sang", 120, 60, 500, kk, A("fade", 0, 400)) + H("td sang", 120, 116, 480, td, A("rise", 100, 600)) + T("so", 1500, 64, 300, `${k} / ${TONG}`)
-  + K(120, 560, 96, 8, "vach-cam", "Vạch cam", A("wipe", 400, 400)) + T("so-lon-p", 120, 600, 520, so, A("pop", 500, 600)) + T("so-lon-m", 120, 760, 500, soM, A("fade", 700, 400));
+const panTrai = (k, kk, so, soM, td) => K(0, 0, 660, 1080, "pan-navy pan-full", "Panel màu chủ bên trái", A("fade", 0, 400))
+  + T("kk sang", 120, 60, 500, kk, A("fade", 0, 400)) + H("td sang", 120, 116, 480, td, A("rise", 100, 600)) + T("so", 1360, 64, 300, `${k} / ${TONG}`)
+  + K(120, 560, 96, 8, "vach-cam", "Vạch cam", A("wipe", 400, 400)) + T(`so-lon-p${so.startsWith("−") ? " am" : ""}`, 120, 600, 520, so, A("pop", 500, 600)) + T("so-lon-m", 120, 760, 500, soM, A("fade", 700, 400));
 
 // ===== 1 · BÌA =====
-sec(1, "bia", "sang", nen(`<rect x="1100" y="0" width="820" height="1080" fill="${P.navy}"/>` + cham(120, 960, 10, 2, P.ke) + `<rect x="0" y="0" width="560" height="40" fill="${P.cam}"/>`)
+sec(1, "bia", "sang", nen(`<rect x="1100" y="0" width="820" height="1080" fill="${P.cam4}"/><rect x="1640" y="-120" width="420" height="320" rx="130" fill="${P.troi}" opacity="0.9"/><rect x="1780" y="-60" width="260" height="360" rx="110" fill="${P.navy}" opacity="0.85"/>` + cham(120, 960, 10, 2, P.ke) + `<rect x="0" y="0" width="560" height="40" fill="${P.cam}"/>`)
   + anh("ky-hd-tron.png", 1180, 220, 640, 640, "Ảnh đen trắng trong khung tròn: bàn tay ký hợp đồng bảo hiểm", A("pop", 300, 800))
   + lop(`<circle cx="1500" cy="540" r="352" fill="none" stroke="${P.cam}" stroke-width="8"/>`, 1140, 180, 720, 720, "Vòng cam quanh ảnh", A("fade", 800, 500))
   + T("kk", 120, 140, 700, "Nhóm 2 · Thuyết trình", A("fade", 200, 400))
-  + H("bia", 119, 200, 620, "Hợp đồng bảo hiểm thương mại", A("rise", 300, 700))
+  + H("bia", 119, 200, 720, "Hợp đồng bảo hiểm thương mại", A("rise", 300, 700))
   + T("bia-m", 120, 720, 900, "và thực trạng thị trường bảo hiểm Việt Nam, 2018\u00a0–\u00a09\u00a0tháng\u00a02026", A("fade", 1000, 500))
   + T("bia-by", 120, 860, 900, "Hợp đồng mẫu: Bảo Việt An Gia (bảo hiểm sức khỏe) · 13 điều", A("fade", 1200, 500)));
 
 // ===== 3 · MỞ PHẦN I =====
 const HD_VE = `<rect x="1290" y="330" width="420" height="500" fill="${P.trang}"/><path d="M1630 330 L1710 410 L1630 410 Z" fill="${P.ke}"/>` + [0, 1, 2, 3, 4].map((i) => `<rect x="1340" y="${450 + i * 56}" width="${i === 0 ? 220 : 320}" height="14" fill="${i === 0 ? P.navy : P.ke}"/>`).join("") + `<rect x="1340" y="390" width="160" height="22" fill="${P.cam}"/><circle cx="1680" cy="790" r="70" fill="${P.cam}"/>` + icon("eye", 1680, 790, 80, P.trang, 4);
-const moPhan = (k, so, ten, mo, chips, alt, ve = HD_VE, anhT = "") => sec(k, "mo-phan", "toi", nen(cham(120, 84, 10, 3, P.navy2) + `<circle cx="1500" cy="560" r="330" fill="${P.navy2}"/>`)
+const moPhan = (k, so, ten, mo, chips, alt, ve = HD_VE, anhT = "") => sec(k, "mo-phan", "toi", nen(KHOI_GOC(true) + `<circle cx="1500" cy="560" r="330" fill="${P.cam4}"/>`)
   + T("mp-so", 114, 170, 600, so, A("pop", 200, 700)) + H("mp-t", 119, 520, 900, ten, A("rise", 500, 600)) + T("mp-m", 120, 780, 860, mo, A("fade", 800, 500))
   + chips.map((c, i) => T("mp-chip", 120 + i * 240, 920, 220, c, A("rise", 1000 + i * 120, 400))).join("")
   + (anhT ? anh(anhT, 1220, 280, 560, 560, alt, A("pop", 400, 800)) + lop(`<circle cx="1500" cy="560" r="306" fill="none" stroke="${P.cam}" stroke-width="8"/>`, 1186, 246, 628, 628, "Vòng cam quanh ảnh", A("fade", 900, 500)) : lop(ve, 1170, 230, 660, 660, alt, A("pop", 400, 800))));
@@ -90,9 +92,9 @@ moPhan(3, "01", "Hợp đồng Bảo Việt An Gia", "Một hợp đồng bảo 
 
 // ===== 9 · THỜI GIAN CHỜ (panel chia đôi) =====
 { const CHO = [["Tai nạn", 0], ["Bệnh thông thường, điều trị răng", 30], ["Biến chứng thai sản", 90], ["Viêm phổi, phế quản ở trẻ ≤ 6 tuổi", 180], ["Bệnh có sẵn (có trước khi mua), bệnh đặc biệt", 365], ["Sinh con (Bảo hiểm Thai sản)", 635]];
-  const x0 = 780, W = 1020, sc = W / 640, y0 = 160, hr = 128;
+  const x0 = 780, W = 1020, sc = W / 640, y0 = 190, hr = 124;
   sec(9, "chia", "chia", panTrai(9, "Điều 5 · Thời gian chờ", "635", "ngày chờ sinh con (gần 21 tháng)", "Ký xong chưa được trả ngay")
-    + T("dinh-nghia", 780, 76, 700, "Thời gian chờ = sau khi ký, bị bệnh trong khoảng này thì chưa được trả tiền.", A("fade", 500, 400))
+    + T("dinh-nghia", 780, 56, 560, "Thời gian chờ = sau khi ký, bị bệnh trong khoảng này thì chưa được trả tiền.", A("fade", 500, 400))
     + CHO.map(([t, d], k) => { const y = y0 + k * hr, w = Math.max(d * sc, 10), sinh = k === 5;
       return T(`cho${sinh ? " cam" : ""}`, x0, y, 760, t, A("fade", 700 + k * 200, 300)) + T(`cho-so${sinh ? " cam" : ""}`, x0 + W - 260, y, 260, d ? `${d} ngày` : "không chờ", A("fade", 900 + k * 200, 300))
         + lop(`<rect x="${x0}" y="${y + 52}" width="${W}" height="40" fill="${P.nen}"/>${d ? `<rect x="${x0}" y="${y + 52}" width="${w}" height="40" fill="${sinh ? P.cam : P.navy}"/>` : ""}`, x0, y + 52, W, 40, `Thanh ${t}: ${d} ngày`, A("wipe", 700 + k * 200, 600)); }).join("")
@@ -102,8 +104,8 @@ moPhan(3, "01", "Hợp đồng Bảo Việt An Gia", "Một hợp đồng bảo 
 
 // ===== 12 · TRÍCH ĐIỀU 26 =====
 { const TRICH = "Doanh nghiệp bảo hiểm … có quyền [đơn phương chấm dứt thực hiện] hợp đồng bảo hiểm … : Bên mua bảo hiểm không đóng phí bảo hiểm hoặc không đóng đủ phí bảo hiểm theo thời hạn thỏa thuận …";
-  sec(12, "trich", "chia", K(0, 0, 1000, 1080, "pan-navy", "Panel màu chủ bên trái", A("fade", 0, 400))
-    + T("kk sang", 120, 60, 800, "Đối chiếu luật ✚", A("fade", 0, 400)) + T("so", 1500, 64, 300, `12 / ${TONG}`) + H("td sang", 119, 116, 820, "Hợp đồng nói “hủy bỏ”, luật nói “chấm dứt”", A("rise", 100, 600))
+  sec(12, "trich", "chia", K(0, 0, 1000, 1080, "pan-navy pan-full", "Panel màu chủ bên trái", A("fade", 0, 400))
+    + T("kk sang", 120, 60, 800, "Đối chiếu luật ✚", A("fade", 0, 400)) + T("so", 1360, 64, 300, `12 / ${TONG}`) + H("td sang", 119, 116, 820, "Hợp đồng nói “hủy bỏ”, luật nói “chấm dứt”", A("rise", 100, 600))
     + lop([0, 64].map((d) => `<circle cx="${138 + d}" cy="440" r="24" fill="${P.cam}"/><path d="M${114 + d} 440 Q${110 + d} 394 ${150 + d} 376 L${154 + d} 388 Q${130 + d} 400 ${136 + d} 430 Z" fill="${P.cam}"/>`).join(""), 100, 366, 150, 100, "Dấu ngoặc kép", A("pop", 400, 400))
     + T("trich", 120, 500, 800, TRICH, A("fade", 600, 800)) + T("trich-cc", 120, 975, 800, "Điều 26 (mở đầu, khoản 1) · Luật Kinh doanh bảo hiểm 2022", A("fade", 1000, 400))
     + [["01", "Hủy bỏ", "chữ của hợp đồng (Điều 4)", "Coi như chưa từng ký; hai bên hoàn trả cho nhau", "khoản 1 Điều 427 Bộ luật Dân sự 2015"], ["02", "Đơn phương chấm dứt", "chữ của Luật Kinh doanh bảo hiểm", "Chỉ dừng từ khi bên kia nhận thông báo", "khoản 3 Điều 428 Bộ luật Dân sự 2015"]].map(([so, a, b, c, d], k) => { const y = 150 + k * 450, t0 = 1300 + k * 400;
@@ -116,8 +118,8 @@ moPhan(3, "01", "Hợp đồng Bảo Việt An Gia", "Một hợp đồng bảo 
 { const PHI = [["2018", 133.7, "+24,0"], ["2019", 160.2, "+21,0"], ["2020", 184.7, "+15,0"], ["2021", 216.0, "+16,1"], ["2022", 251.3, "+15,1"], ["2023", 227.1, "−8,0"], ["2024", 227.5, "−0,3"], ["2025", 237.2, "+4,0"]];
   const yb = 860, sc = 440 / 251.3, x0 = 170, st = 205, w = 150;
   sec(18, "so-lon", "toi", dau(18, "2018 – 2025", "2025: doanh thu phí vẫn thấp hơn 2022", "Doanh thu phí = tổng tiền khách đóng cho các công ty bảo hiểm trong năm (nghìn tỷ đồng).", true)
-    + lop(`<path d="M140 ${yb - 251.3 * sc} H1800" stroke="${P.cam}" stroke-width="3" stroke-dasharray="12 8"/>` + PHI.map(([nm, v], k) => `<rect x="${x0 + k * st}" y="${yb - v * sc}" width="${w}" height="${v * sc}" fill="${k === 4 ? P.cam : P.navy3}"/>`).join("") + `<path d="M140 ${yb} H1800" stroke="${P.trang}" stroke-width="3"/>`, 130, 380, 1680, 490, "Biểu đồ cột tổng phí 2018–2025; cột 2022 cam là đỉnh, vạch đứt mức đỉnh", A("wipe", 500, 1200))
-    + PHI.map(([nm, v, g], k) => G("cot-so trang", x0 + k * st, yb - v * sc + 6, w, 60, `<span style="width:100%;text-align:center">${String(v).replace(".", ",")}</span>`, A("fade", 1200 + k * 100, 300))
+    + lop(`<path d="M140 ${yb - 251.3 * sc} H1800" stroke="${P.cam}" stroke-width="3" stroke-dasharray="12 8"/>` + PHI.map(([nm, v], k) => `<rect x="${x0 + k * st}" y="${yb - v * sc}" width="${w}" height="${v * sc}" fill="${k === 4 ? P.cam : DOC[Math.min(k, 6)]}"/>`).join("") + `<path d="M140 ${yb} H1800" stroke="${P.navy}" stroke-width="3"/>`, 130, 380, 1680, 490, "Biểu đồ cột tổng phí 2018–2025; cột 2022 cam là đỉnh, vạch đứt mức đỉnh", A("wipe", 500, 1200))
+    + PHI.map(([nm, v, g], k) => G(`cot-so ${k < 3 ? "toi" : "trang"}`, x0 + k * st, yb - v * sc + 6, w, 60, `<span style="width:100%;text-align:center">${String(v).replace(".", ",")}</span>`, A("fade", 1200 + k * 100, 300))
       + T("cot-nam", x0 + k * st - 25, yb + 14, w + 50, nm, A("fade", 600, 300))).join("")
     + T("dinh", 1500, 330, 300, "đỉnh 2022", A("fade", 2200, 300))
     + nguon("TLTK 5–11 của bài nhóm (số ước tính của cơ quan quản lý), nghìn tỷ đồng.", true), "data-hero");
@@ -149,7 +151,7 @@ const muiN = (x1, y1, x2, y2, m, w = 6) => { const a = Math.atan2(y2 - y1, x2 - 
 
 // ===== 5 · BỘ HỢP ĐỒNG =====
 { const TL = [["Giấy yêu cầu bảo hiểm", "tờ khai người mua điền khi đăng ký"], ["Hợp đồng bảo hiểm", "13 điều hai bên ký"], ["Phụ lục 1 · Bảng quyền lợi", "mỗi gói được trả bao nhiêu"], ["Sửa đổi bổ sung (nếu có)", "văn bản ký thêm để sửa hợp đồng"], ["Quy tắc Bảo Việt An Gia", "điều kiện chung áp cho mọi khách"]];
-  const B = [["1", "Sửa đổi bổ sung mới nhất", 460, P.cam], ["2", "Hợp đồng + phụ lục", 340, P.navy], ["3", "Quy tắc bảo hiểm", 220, P.navy3]];
+  const B = [["1", "Sửa đổi bổ sung mới nhất", 460, P.cam], ["2", "Hợp đồng + phụ lục", 340, P.navy], ["3", "Quy tắc bảo hiểm", 220, P.navy2]];
   sec(5, "noi-dung", "sang", dau(5, "Điều 12 · Bộ hợp đồng", "Năm tài liệu: văn bản ký sau được ưu tiên", "Khi các tài liệu nói khác nhau, áp dụng theo thứ tự 1 → 2 → 3 ở bên phải.")
     + TL.map(([s, m], k) => { const y = 350 + k * 120, t0 = 400 + k * 150;
       return K(120, y, 760, 100, "the", `Tài liệu ${s}`, A("rise", t0, 400)) + lop(vuong(120, y, 100, k === 3 ? P.cam : P.navy, "file-certificate"), 120, y, 100, 100, "Biểu tượng tài liệu", `data-lap ${A("pop", t0, 300)}`) + T("tl-t", 250, y + 10, 610, s, A("fade", t0 + 100, 300)) + T("tl-m", 250, y + 54, 610, m, A("fade", t0 + 150, 300)); }).join("")
@@ -164,8 +166,8 @@ const muiN = (x1, y1, x2, y2, m, w = 6) => { const a = Math.atan2(y2 - y1, x2 - 
   sec(7, "noi-dung", "sang", dau(7, "Phụ lục 1 · Quyền lợi", "Gói càng đắt, mức trả tối đa càng cao", "Hạn mức = số tiền tối đa Bảo Việt trả cho một người nằm viện trong một năm (chỉ tại Việt Nam).")
     + K(100, 330, 1720, 660, "the", "Khối nền biểu đồ", A("fade", 200, 400)) + T("cot-nhan", x0, 340, 900, "Hạn mức quyền lợi chính · triệu đồng/người/năm", A("fade", 300, 300)) + T("cot-nhan phai", 1500, 340, 300, "Trả tối đa / ngày nằm viện", A("fade", 300, 300))
     + Gi.map(([ten, v, nv], k) => { const y = 410 + k * 112, w = Math.round((v / 454) * W), t0 = 500 + k * 200, cuoi = k === 4;
-      return G("goi-t", 120, y, 240, 80, esc(ten), A("rise", t0, 300)) + lop(`<rect x="${x0}" y="${y + 6}" width="${W}" height="68" fill="${P.trang}"/><rect x="${x0}" y="${y + 6}" width="${w}" height="68" fill="${cuoi ? P.cam : P.navy}"/>`, x0, y + 6, W, 68, `Thanh ${ten}: ${v} triệu`, A("wipe", t0, 600))
-        + G("goi-so", x0 + w - 170, y + 6, 150, 68, `<span style="width:100%;text-align:right">${v}</span>`, A("fade", t0 + 400, 300)) + G("goi-nv", 1500, y, 300, 80, `<span style="width:100%;text-align:right">${esc(nv)} triệu</span>`, A("fade", t0 + 400, 300)); }).join("")
+      return G("goi-t", 120, y, 240, 80, esc(ten), A("rise", t0, 300)) + lop(`<rect x="${x0}" y="${y + 6}" width="${W}" height="68" fill="${P.trang}"/><rect x="${x0}" y="${y + 6}" width="${w}" height="68" fill="${cuoi ? P.cam : DOC[k + 2]}"/>`, x0, y + 6, W, 68, `Thanh ${ten}: ${v} triệu`, A("wipe", t0, 600))
+        + G(`goi-so${k < 1 ? " toi" : ""}`, x0 + w - 170, y + 6, 150, 68, `<span style="width:100%;text-align:right">${v}</span>`, A("fade", t0 + 400, 300)) + G("goi-nv", 1500, y, 300, 80, `<span style="width:100%;text-align:right">${esc(nv)} triệu</span>`, A("fade", t0 + 400, 300)); }).join("")
     + nguon("Phụ lục 1 hợp đồng An Gia. Nằm viện tối đa 60 ngày/năm; phẫu thuật 40 – 200 triệu/năm theo gói."));
 }
 
@@ -214,7 +216,7 @@ const muiN = (x1, y1, x2, y2, m, w = 6) => { const a = Math.atan2(y2 - y1, x2 - 
 sec(13, "so-lon", "sang", dau(13, "Điều 6 · Chấm dứt, gian lận", "Bên mua rút: hoàn 70 % phí còn lại", "Bảo Việt chủ động chấm dứt thì phải hoàn đủ 100 %; hai bên báo trước 30 ngày bằng văn bản.")
   + [["Bên mua chấm dứt", "70 %", "phí thời gian còn lại, nếu chưa có khoản bồi thường nào được chấp nhận", true], ["Bảo Việt chấm dứt", "100 %", "phí thời gian còn lại, dù đã có khiếu nại hay chưa", false]].map(([t, so, dk, cam], k) => { const x = 120 + k * 560, t0 = 400 + k * 500;
     return K(x, 340, 520, 450, "the", `Khối ${t}`, A("rise", t0, 500)) + K(x, 340, 520, 12, cam ? "vach-cam" : "vach-navy", "Vạch màu", A("rise", t0, 500))
-      + T("khoi-t", x + 36, 376, 460, t, A("fade", t0 + 100, 300)) + T(`so-khoi${cam ? " cam" : ""}`, x + 34, 440, 470, so, A("pop", t0 + 300, 500)) + T("dk-m", x + 36, 620, 450, dk, A("fade", t0 + 400, 400)); }).join("")
+      + T("khoi-t nho", x + 36, 376, 460, t, A("fade", t0 + 100, 300)) + T(`so-khoi${cam ? " cam" : ""}`, x + 34, 450, 470, so, A("pop", t0 + 300, 500)) + T("dk-m", x + 36, 620, 450, dk, A("fade", t0 + 400, 400)); }).join("")
   + K(1260, 340, 540, 450, "pan-navy", "Khối công thức", A("rise", 1400, 500))
   + T("kk sang", 1300, 376, 470, "Phí thời gian còn lại", A("fade", 1500, 300)) + T("ct-cong", 1300, 440, 470, "Phí × ngày còn lại", A("fade", 1600, 400)) + K(1300, 518, 440, 4, "vach-cam", "Gạch phân số", A("fade", 1600, 400)) + T("ct-cong", 1300, 530, 470, "tổng số ngày", A("fade", 1600, 400))
   + T("ct-ghi", 1300, 620, 470, "Ví dụ: phí 10 triệu, rút giữa năm → phí còn lại 5 triệu → nhận 3,5 triệu", A("fade", 1700, 300))
@@ -239,7 +241,7 @@ sec(13, "so-lon", "sang", dau(13, "Điều 6 · Chấm dứt, gian lận", "Bên
 { const C = [["Ưu điểm", P.navy, [["Thứ tự ưu tiên văn bản rõ", 5], ["Năm mức ngân sách", 7], ["Hồ sơ online đến 10 triệu", 14], ["Trẻ nhỏ ở viện công: không đồng chi trả", 10]]], ["Hạn chế", P.cam, [["Chờ dài: bệnh có sẵn 365, sinh con 635 ngày", 9], ["Đồng chi trả 30 % ở cơ sở tư", 10], ["Tự hủy khi chậm phí", 11], ["Trường hợp không được trả nằm ở Quy tắc", 16]]]];
   sec(15, "so-sanh", "sang", dau(15, "Kết luận phần I", "Hợp đồng minh bạch, nhưng có 4 bất lợi", "Trái: điểm có lợi · phải: điểm dễ mất quyền lợi. Số trong ô = slide đã phân tích.")
     + C.map(([t, m, ds], k) => { const x = 120 + k * 870, t0 = 400 + k * 600;
-      return K(x, 340, 810, 640, "the", `Khối ${t}`, A("rise", t0, 500)) + K(x, 340, 810, 110, k ? "pan-cam" : "pan-navy", `Đầu khối ${t}`, A("rise", t0, 500))
+      return K(x, 340, 810, 640, "the", `Khối ${t}`, A("rise", t0, 500)) + K(x, 340, 810, 110, k ? "dai-cam4" : "pan-navy", `Đầu khối ${t}`, A("rise", t0, 500))
         + lop(vuong(x + 28, 357, 76, k ? P.cam0 : P.navy2, k ? "alert-triangle" : "check"), x + 28, 357, 76, 76, `Biểu tượng ${t}`, A("pop", t0 + 100, 300)) + T("khoi-t sang", x + 130, 366, 600, t, A("fade", t0 + 150, 300))
         + ds.map(([s, so], j) => { const y = 486 + j * 118, t1 = t0 + 300 + j * 150;
           return (j ? K(x + 40, y - 20, 730, 2, "vach-ke", "Vạch kẻ", A("fade", t1, 300)) : "") + T("ds-t lon", x + 40, y, 620, s, A("fade", t1, 300)) + K(x + 700, y - 4, 70, 56, k ? "o-nen cam" : "o-nen", `Ô số slide ${so}`, A("pop", t1 + 100, 300)) + G("o-so", x + 700, y - 4, 70, 56, `<span style="width:100%;text-align:center">${so}</span>`, A("pop", t1 + 100, 300)); }).join(""); }).join("")
@@ -258,7 +260,7 @@ sec(13, "so-lon", "sang", dau(13, "Điều 6 · Chấm dứt, gian lận", "Bên
 
 // ===== 17 · MỞ PHẦN II =====
 moPhan(17, "02", "Thực trạng thị trường bảo hiểm", "Năm 2023, tư vấn sai khi bán bảo hiểm qua ngân hàng khiến thị trường sụt giảm.", ["Tăng nóng", "2023", "Siết luật", "Phục hồi"], "Minh hoạ: cột doanh thu tăng dần, đỉnh 2022 tô cam rồi giảm",
-  [134, 160, 185, 216, 251, 227, 228, 237].map((v, k) => { const h = v * 1.5, x = 1260 + k * 62; return `<rect x="${x}" y="${780 - h}" width="46" height="${h}" fill="${k === 4 ? P.cam : P.trang}"/>`; }).join("") + `<rect x="1240" y="780" width="520" height="6" fill="${P.trang}"/>`);
+  [134, 160, 185, 216, 251, 227, 228, 237].map((v, k) => { const h = v * 1.5, x = 1260 + k * 62; return `<rect x="${x}" y="${780 - h}" width="46" height="${h}" fill="${k === 4 ? P.cam : DOC[Math.min(k + 1, 6)]}"/>`; }).join("") + `<rect x="1240" y="780" width="520" height="6" fill="${P.navy}"/>`);
 
 // ===== 19 · BANCASSURANCE =====
 { const B = [["2018", 20], ["2021", 40], ["2022", 45]];
@@ -269,12 +271,12 @@ moPhan(17, "02", "Thực trạng thị trường bảo hiểm", "Năm 2023, tư 
         + G("ba-so", x, yb - hv, 150, 70, `<span style="width:100%;text-align:center">${v} %</span>`, A("fade", t0 + 400, 300)) + T("ba-nam", x - 20, yb + 12, 190, n, A("fade", t0, 300)); }).join("")
     + [["78", "doanh nghiệp bảo hiểm — quy mô ngành"], ["811.312", "tỷ đồng tổng tài sản ngành"]].map(([so, m], k) => { const y = 260 + k * 230, t0 = 1600 + k * 300;
       return K(1440, y, 360, 200, "the", `Khối ${so}`, A("rise", t0, 400)) + T("so-the", 1470, y + 24, 320, so, A("pop", t0 + 100, 400)) + T("so-the-m", 1470, y + 116, 320, m + " (2022)", A("fade", t0 + 200, 300)); }).join("")
-    + K(780, 850, 1020, 110, "dai-cam4", "Dải thanh tra 2022", A("rise", 2300, 400)) + G("dai-do-t", 810, 850, 960, 110, "2022: Bộ Tài chính thanh tra bán bảo hiểm qua ngân hàng tại 4 doanh nghiệp", A("fade", 2400, 400))
+    + K(780, 850, 1020, 110, "dai-cam4", "Dải thanh tra 2022", A("rise", 2300, 400)) + G("dai-do-t", 822, 850, 950, 110, "2022: Bộ Tài chính thanh tra bán bảo hiểm qua ngân hàng tại 4 doanh nghiệp", A("fade", 2400, 400))
     + `<div class="nguon" data-t style="left:780px;top:1004px;width:1020px">TLTK 9, 12, 13 của bài nhóm (Công ty chứng khoán PSI tổng hợp, ước tính).</div>`, "data-khong-hinh");
 }
 
 // ===== 21 · TRÍCH LUẬT TCTD =====
-sec(21, "trich", "chia", K(0, 0, 1100, 1080, "pan-navy", "Panel màu chủ bên trái", A("fade", 0, 400))
+sec(21, "trich", "chia", K(0, 0, 1100, 1080, "pan-navy pan-full", "Panel màu chủ bên trái", A("fade", 0, 400))
   + anh("ky-hd-xam.jpg", 1100, 0, 820, 1080, "Ảnh đen trắng: bàn tay ký hợp đồng", A("fade", 300, 900))
   + T("kk sang", 120, 60, 900, "2024 · Siết luật", A("fade", 0, 400)) + T("so sang", 760, 64, 300, `21 / ${TONG}`) + H("td sang", 119, 116, 900, "Ngân hàng bị cấm gắn bán bảo hiểm", A("rise", 100, 600))
   + lop([0, 64].map((d) => `<circle cx="${138 + d}" cy="440" r="24" fill="${P.cam}"/><path d="M${114 + d} 440 Q${110 + d} 394 ${150 + d} 376 L${154 + d} 388 Q${130 + d} 400 ${136 + d} 430 Z" fill="${P.cam}"/>`).join(""), 100, 366, 150, 100, "Dấu ngoặc kép", A("pop", 400, 400))
@@ -297,7 +299,7 @@ sec(21, "trich", "chia", K(0, 0, 1100, 1080, "pan-navy", "Panel màu chủ bên 
   const y0 = 700, sc = 13, bw = 130, st = 420, x0 = 200;
   sec(23, "so-lon", "toi", dau(23, "2023 – 9 tháng 2026", "Phi nhân thọ tăng, nhân thọ vẫn giảm", "Cột trên vạch 0: doanh thu tăng so với năm trước · dưới vạch: giảm (%).", true)
     + K(760, 334, 30, 30, "o-navy3", "Chú giải nhân thọ", A("fade", 300, 300)) + T("chu-giai", 804, 330, 460, "Nhân thọ (tính mạng, tích lũy)", A("fade", 300, 300)) + K(1290, 334, 30, 30, "o-cam", "Chú giải phi nhân thọ", A("fade", 300, 300)) + T("chu-giai", 1334, 330, 480, "Phi nhân thọ (tài sản, xe, thiệt hại)", A("fade", 300, 300))
-    + lop(`<path d="M150 ${y0} H1800" stroke="${P.trang}" stroke-width="3"/>`, 150, y0 - 2, 1650, 4, "Trục 0 %", A("wipe", 300, 500))
+    + lop(`<path d="M150 ${y0} H1800" stroke="${P.navy}" stroke-width="3"/>`, 150, y0 - 2, 1650, 4, "Trục 0 %", A("wipe", 300, 500))
     + D2.map(([n, a, b, sa, sb], k) => { const x = x0 + k * st, t0 = 600 + k * 400, ha = Math.abs(a) * sc, hb = b * sc;
       const ra = a < 0 ? `<rect x="${x}" y="${y0}" width="${bw}" height="${ha}" fill="${P.navy3}"/>` : `<rect x="${x}" y="${y0 - Math.max(ha, 6)}" width="${bw}" height="${Math.max(ha, 6)}" fill="${P.navy3}"/>`;
       return lop(ra + `<rect x="${x + bw + 12}" y="${y0 - hb}" width="${bw}" height="${hb}" fill="${P.cam}"/>`, x, y0 - 15.1 * sc, 2 * bw + 12, (15.1 + 12.5) * sc, `Năm ${n}: nhân thọ ${sa} %, phi nhân thọ ${sb} %`, A("grow", t0, 600))
@@ -307,7 +309,7 @@ sec(21, "trich", "chia", K(0, 0, 1100, 1080, "pan-navy", "Panel màu chủ bên 
 }
 
 // ===== 24 · KẾT LUẬN PHẦN II =====
-{ const GD = [["2018 – 2022", "Tăng nóng", "Doanh thu phí gần gấp đôi (133,7 → 251,3 nghìn tỷ), dựa vào bán bảo hiểm nhân thọ qua ngân hàng.", P.navy], ["2023 – 2024", "Khủng hoảng, siết luật", "Thanh tra phát hiện tư vấn sai → hợp đồng nhân thọ ký mới giảm gần một nửa; từ 7/2024 cấm ngân hàng gắn bán bảo hiểm.", P.cam], ["2025 – 9T/2026", "Phục hồi chậm", "Phi nhân thọ tăng đều kéo thị trường; nhân thọ vẫn giảm; doanh thu 2025 chưa về đỉnh 2022.", P.navy3]];
+{ const GD = [["2018 – 2022", "Tăng nóng", "Doanh thu phí gần gấp đôi (133,7 → 251,3 nghìn tỷ), dựa vào bán bảo hiểm nhân thọ qua ngân hàng.", P.navy], ["2023 – 2024", "Khủng hoảng, siết luật", "Thanh tra phát hiện tư vấn sai → hợp đồng nhân thọ ký mới giảm gần một nửa; từ 7/2024 cấm ngân hàng gắn bán bảo hiểm.", P.cam], ["2025 – 9T/2026", "Phục hồi chậm", "Phi nhân thọ tăng đều kéo thị trường; nhân thọ vẫn giảm; doanh thu 2025 chưa về đỉnh 2022.", P.navy2]];
   sec(24, "noi-dung", "sang", dau(24, "Kết luận phần II", "Thị trường: tăng nóng, khủng hoảng, hồi chậm", "Ba giai đoạn, mỗi giai đoạn một nguyên nhân chính — đọc từ trái sang phải.")
     + GD.map(([nam, t, m, mau], k) => { const x = 120 + k * 572, t0 = 400 + k * 500;
       return lop(`<path d="M${x} 350 H${x + 500} L${x + 536} 395 L${x + 500} 440 H${x} ${k ? `L${x + 36} 395 Z` : "Z"}" fill="${mau}"/>`, x, 350, 536, 90, `Mũi tên giai đoạn ${nam}`, A("wipe", t0, 500))
@@ -318,12 +320,12 @@ sec(21, "trich", "chia", K(0, 0, 1100, 1080, "pan-navy", "Panel màu chủ bên 
 
 // ===== 25 · KẾT LUẬN CHUNG =====
 { const KL = [["01", "file-certificate", "Hợp đồng An Gia", "Đủ 9 nội dung luật bắt buộc và minh bạch. Nhưng thời gian chờ dài, gia đình tự trả 30 % cho trẻ nhỏ ở cơ sở tư, tự hủy khi chậm phí — người mua dễ mất quyền lợi nếu không đọc kỹ."], ["02", "chart-bar", "Thị trường bảo hiểm", "Lớn nhanh nhờ bán qua ngân hàng, khủng hoảng năm 2023 vì tư vấn sai, nay hồi chậm nhờ phi nhân thọ; nhân thọ chưa hồi."]];
-  sec(25, "ket", "toi", nen(cham(1696, 130, 5, 3, P.navy2)) + T("kk sang", 120, 60, 800, "Phần kết", A("fade", 0, 400)) + T("so sang", 1500, 64, 300, `25 / ${TONG}`)
+  sec(25, "ket", "toi", nen(KHOI_GOC(true)) + T("kk sang", 120, 60, 800, "Phần kết", A("fade", 0, 400)) + T("so sang", 1360, 64, 300, `25 / ${TONG}`)
     + H("td sang", 120, 116, 1600, "Kết luận chung", A("rise", 200, 700)) + T("dan sang", 120, 236, 1640, "Trả lời hai câu hỏi của đề tài: hợp đồng ra sao, thị trường ra sao.", A("fade", 300, 400)) + K(120, 302, 96, 8, "vach-cam", "Vạch cam", A("wipe", 400, 400))
     + KL.map(([so, i, t, m], k) => { const x = 120 + k * 860, t0 = 600 + k * 500;
       return K(x, 350, 820, 460, "pan-navy2", `Khối kết luận ${so}`, A("rise", t0, 500)) + K(x, 350, 820, 12, "vach-cam", "Vạch", A("rise", t0, 500))
         + T("ket-so", x + 40, 390, 220, so, A("pop", t0 + 100, 400)) + lop(vuong(x + 680, 394, 96, P.cam, i), x + 680, 394, 96, 96, `Biểu tượng ${t}`, A("pop", t0 + 150, 300))
-        + T("khoi-t sang", x + 220, 410, 440, t, A("fade", t0 + 200, 400)) + T("ket-m", x + 40, 560, 740, m, A("fade", t0 + 300, 400)); }).join("")
+        + T("khoi-t sang", x + 200, 404, 460, t, A("fade", t0 + 200, 400)) + T("ket-m", x + 40, 560, 740, m, A("fade", t0 + 300, 400)); }).join("")
     + K(120, 850, 1680, 130, "pan-cam", "Dải bài học chung", A("rise", 1800, 500))
     + G("bai-hoc", 160, 850, 1600, 130, "Bài học chung (nhóm nhận xét): hợp đồng chỉ bảo vệ được người mua khi được tư vấn đúng và người mua tự đọc kỹ.", A("fade", 1900, 500)), "data-khong-hinh");
 }
@@ -333,14 +335,14 @@ sec(21, "trich", "chia", K(0, 0, 1100, 1080, "pan-navy", "Panel màu chủ bên 
   const S2 = ["Bộ Tài chính, Cục QLGSBH — số liệu 2018–2025", "Tạp chí Kinh tế – Tài chính (2023, 27/10/2026)", "PSI — Báo cáo ngành bảo hiểm (01/2025)", "VnEconomy, Thanh tra, VCCI, IAV…"];
   sec(26, "noi-dung", "sang", dau(26, "Nguồn", "Tài liệu tham khảo", "Đủ 22 nguồn trong bài viết của nhóm; đây là thông tin pháp luật chung, không phải tư vấn.")
     + [["Văn bản pháp luật", L, "scale", true], ["Nguồn số liệu", S2, "chart-bar", false]].map(([t, ds, i, toi], k) => { const x = 120 + k * 870, t0 = 400 + k * 400;
-      return K(x, 340, 810, 480, "the", `Khối ${t}`, A("rise", t0, 400)) + K(x, 340, 810, 100, toi ? "pan-navy" : "pan-cam", `Đầu khối ${t}`, A("rise", t0, 400))
+      return K(x, 340, 810, 480, "the", `Khối ${t}`, A("rise", t0, 400)) + K(x, 340, 810, 100, toi ? "pan-navy" : "dai-cam4", `Đầu khối ${t}`, A("rise", t0, 400))
         + lop(vuong(x + 24, 352, 76, toi ? P.navy2 : P.cam0, i), x + 24, 352, 76, 76, `Biểu tượng ${t}`, A("pop", t0 + 100, 300)) + T("khoi-t sang", x + 124, 362, 640, t, A("fade", t0 + 100, 300))
         + ds.map((s, j) => T("tl-dong", x + 36, 470 + j * 84, 740, s, A("fade", t0 + 200 + j * 100, 300))).join(""); }).join("")
     , "data-khong-hinh");
 }
 
 // ===== 27 · CẢM ƠN =====
-sec(27, "ket", "toi", nen(cham(120, 84, 10, 3, P.navy2) + `<circle cx="1500" cy="540" r="390" fill="${P.navy2}"/><rect x="0" y="1020" width="700" height="60" fill="${P.cam}"/>`)
+sec(27, "ket", "toi", nen(KHOI_GOC(true) + `<circle cx="1500" cy="540" r="390" fill="${P.cam4}"/><rect x="0" y="1020" width="700" height="60" fill="${P.cam}"/>`)
   + anh("ky-hd-tron-lon.png", 1150, 190, 700, 700, "Ảnh đen trắng: bàn tay ký hợp đồng", A("pop", 300, 900)) + lop(`<circle cx="1500" cy="540" r="372" fill="none" stroke="${P.cam}" stroke-width="8"/>`, 1120, 160, 760, 760, "Vòng cam quanh ảnh", A("fade", 900, 500))
   + T("kk sang", 120, 200, 800, "Nhóm 2 · Hết phần trình bày", A("fade", 0, 400))
   + H("cam-on-t", 118, 260, 980, "Cảm ơn thầy cô và các bạn", A("rise", 200, 800))
@@ -352,65 +354,82 @@ ghi(path.join(D, "style.css"), `section.s{background:${P.trang};color:${P.navy}}
 em{font-style:normal;color:${P.cam}}.giua{display:flex;align-items:center}
 .kk{font:700 32px/1 'Be Vietnam Pro';letter-spacing:.06em;text-transform:uppercase;color:${P.cam0}}.kk.sang{color:${P.cam4}}
 .so{font:600 24px/1 'Be Vietnam Pro';color:${P.phu};text-align:right}.so.sang{color:${P.ke}}
-.td{font:400 76px/1.22 'Anton';text-transform:uppercase;color:${P.navy}}.td.sang{color:${P.trang}}
+.td{font:800 64px/1.25 'Be Vietnam Pro';color:${P.navy}}.td.sang{color:${P.trang}}
 .dan{font:400 34px/1.4 'Be Vietnam Pro';color:${P.phu}}.dan.sang{color:${P.ke}}.vach-cam{background:${P.cam}}
 .nguon{font:400 26px/1.35 'Be Vietnam Pro';color:${P.phu}}.nguon.sang{color:${P.ke}}
-.bia{font:400 122px/1.2 'Anton';text-transform:uppercase;color:${P.navy}}.bia-m{font:500 36px/1.4 'Be Vietnam Pro';color:${P.phu}}.bia-by{font:600 30px/1.4 'Be Vietnam Pro';color:${P.navy}}
-.mp-so{font:400 320px/1 'Anton';color:${P.cam}}.mp-t{font:400 88px/1.2 'Anton';text-transform:uppercase;color:${P.trang}}.mp-m{font:400 34px/1.45 'Be Vietnam Pro';color:${P.ke}}
+.bia{font:800 122px/1.2 'Be Vietnam Pro';text-transform:uppercase;color:${P.navy}}.bia-m{font:500 36px/1.4 'Be Vietnam Pro';color:${P.phu}}.bia-by{font:600 30px/1.4 'Be Vietnam Pro';color:${P.navy}}
+.mp-so{font:800 320px/1 'Be Vietnam Pro';color:${P.cam}}.mp-t{font:800 88px/1.2 'Be Vietnam Pro';text-transform:uppercase;color:${P.trang}}.mp-m{font:400 34px/1.45 'Be Vietnam Pro';color:${P.ke}}
 .mp-chip{font:700 30px/1 'Be Vietnam Pro';color:${P.trang};border-top:4px solid ${P.cam};padding-top:14px}
-.so-lon-p{font:400 124px/1.1 'Anton';color:${P.cam};white-space:nowrap}.so-lon-m{font:600 32px/1.3 'Be Vietnam Pro';color:${P.trang}}
+.so-lon-p{font:800 124px/1.1 'Be Vietnam Pro';color:${P.cam};white-space:nowrap}.so-lon-m{font:600 32px/1.3 'Be Vietnam Pro';color:${P.trang}}
 .bh{background:${P.navy}}.bh-t{font:700 30px/1.2 'Be Vietnam Pro';color:${P.trang}}
 .hang{background:${P.trang};border-bottom:2px solid ${P.ke}}.hang.le{background:${P.nen}}.hang.nhan{background:${P.cam4}}
-.o-dau{font:400 36px/1 'Anton';color:${P.navy}}.o-chu{font:500 30px/1.2 'Be Vietnam Pro';color:${P.navy}}.o-chu.dam{font-weight:800;color:${P.navy}}
+.o-dau{font:800 36px/1 'Be Vietnam Pro';color:${P.navy}}.o-chu{font:500 30px/1.2 'Be Vietnam Pro';color:${P.navy}}.o-chu.dam{font-weight:800;color:${P.navy}}
 .cap > b,.cap > span{display:block}.cap > span{margin-top:6px}
 .vai-t{font:800 32px/1.25 'Be Vietnam Pro';color:${P.navy};text-align:center}.vai-m{font:400 30px/1.3 'Be Vietnam Pro';color:${P.phu};text-align:center}
-.vai-bv{font:400 30px/1 'Anton';letter-spacing:.06em;color:${P.trang}}.nhan-mui{font:800 30px/1 'Be Vietnam Pro';color:${P.navy};text-align:center}
-.cho{font:600 32px/1.3 'Be Vietnam Pro';color:${P.navy}}.cho.cam{color:${P.cam0};font-weight:800}.cho-so{font:400 40px/1.1 'Anton';color:${P.navy};text-align:right}.cho-so.cam{color:${P.cam}}
+.vai-bv{font:800 30px/1 'Be Vietnam Pro';letter-spacing:.06em;color:${P.trang}}.nhan-mui{font:800 30px/1 'Be Vietnam Pro';color:${P.navy};text-align:center}
+.cho{font:600 32px/1.3 'Be Vietnam Pro';color:${P.navy}}.cho.cam{color:${P.cam0};font-weight:800}.cho-so{font:800 40px/1.1 'Be Vietnam Pro';color:${P.navy};text-align:right}.cho-so.cam{color:${P.cam}}
 .ghi{font:600 30px/1.35 'Be Vietnam Pro';color:${P.navy}}
 .trich{font:500 36px/1.5 'Be Vietnam Pro';color:${P.trang}}.trich em{color:${P.cam};font-weight:800}.trich-cc{font:700 28px/1.3 'Be Vietnam Pro';color:${P.ke}}
 .the{background:${P.nen}}.vach-doc{background:${P.cam}}.vach-doc.navy{background:${P.navy}}
-.the-so{font:400 96px/1 'Anton';color:${P.navy}}.the-so.cam{color:${P.cam}}.the-t{font:400 50px/1.2 'Anton';text-transform:uppercase;color:${P.navy}}.the-ai{font:600 28px/1.2 'Be Vietnam Pro';color:${P.phu}}
+.the-so{font:800 96px/1 'Be Vietnam Pro';color:${P.navy}}.the-so.cam{color:${P.cam}}.the-t{font:800 50px/1.2 'Be Vietnam Pro';text-transform:uppercase;color:${P.navy}}.the-ai{font:600 28px/1.2 'Be Vietnam Pro';color:${P.phu}}
 .the-m{font:700 38px/1.3 'Be Vietnam Pro';color:${P.navy}}.the-cc{font:600 28px/1.2 'Be Vietnam Pro';color:${P.phu}}
-.cot-so{font:400 42px/1 'Anton'}.cot-so.trang{color:${P.trang}}.cot-so.toi{color:${P.navy}}.cot-nam{font:700 32px/1.2 'Be Vietnam Pro';color:${P.trang};text-align:center}
+.cot-so{font:800 42px/1 'Be Vietnam Pro'}.cot-so.trang{color:${P.trang}}.cot-so.toi{color:${P.navy}}.cot-nam{font:700 32px/1.2 'Be Vietnam Pro';color:${P.trang};text-align:center}
 .cot-g{font:700 32px/1.2 'Be Vietnam Pro';color:${P.ke};text-align:center}.cot-g.cam{color:${P.cam4}}.dinh{font:700 32px/1 'Be Vietnam Pro';color:${P.cam4};text-align:right}.pan-navy{background:${P.navy}}
-.so-vua{font:400 64px/1 'Anton';color:${P.navy}}.so-vua-m{font:600 34px/1.3 'Be Vietnam Pro';color:${P.phu}}
-.moc-t{font:400 44px/1.1 'Anton';color:${P.cam}}.moc-m{font:500 32px/1.35 'Be Vietnam Pro';color:${P.navy}}
+.so-vua{font:800 64px/1 'Be Vietnam Pro';color:${P.navy}}.so-vua-m{font:600 34px/1.3 'Be Vietnam Pro';color:${P.phu}}
+.moc-t{font:800 44px/1.1 'Be Vietnam Pro';color:${P.cam}}.moc-m{font:500 32px/1.35 'Be Vietnam Pro';color:${P.navy}}
 .dai-cam{background:${P.cam}}.dai-cam-t{font:800 34px/1.2 'Be Vietnam Pro';color:${P.trang}}
-.khoi-so{font:400 140px/1 'Anton';color:${P.cam}}.khoi-so.navy{color:${P.navy}}.khoi-t{font:400 48px/1.25 'Anton';text-transform:uppercase;color:${P.navy}}.khoi-t.sang{color:${P.trang}}
+.khoi-so{font:800 140px/1 'Be Vietnam Pro';color:${P.cam}}.khoi-so.navy{color:${P.navy}}.khoi-t{font:800 48px/1.25 'Be Vietnam Pro';text-transform:uppercase;color:${P.navy}}.khoi-t.sang{color:${P.trang}}
 .khoi-m{font:500 34px/1.4 'Be Vietnam Pro';color:${P.navy}}.khoi-m.sang{color:${P.ke}}.khoi-chip{font:700 30px/1 'Be Vietnam Pro';color:${P.navy};border-top:4px solid ${P.cam};padding-top:14px}.khoi-chip.sang{color:${P.trang}}
 .tl-t{font:600 32px/1.25 'Be Vietnam Pro';color:${P.navy}}.cot-nhan{font:700 30px/1.2 'Be Vietnam Pro';color:${P.navy}}.cot-nhan.phai{text-align:right}
-.bac-so{font:400 96px/1 'Anton';color:${P.trang};text-align:center}.bac-t{font:700 30px/1.25 'Be Vietnam Pro';color:${P.navy}}
-.goi-t{font:400 44px/1 'Anton';text-transform:uppercase;color:${P.navy}}.goi-so{font:400 44px/1 'Anton';color:${P.trang}}.goi-nv{font:400 40px/1 'Anton';color:${P.cam0}}
+.bac-so{font:800 96px/1 'Be Vietnam Pro';color:${P.trang};text-align:center}.bac-t{font:700 30px/1.25 'Be Vietnam Pro';color:${P.navy}}
+.goi-t{font:800 34px/1.2 'Be Vietnam Pro';text-transform:uppercase;color:${P.navy}}.goi-so{font:800 44px/1 'Be Vietnam Pro';color:${P.trang}}.goi-nv{font:800 40px/1 'Be Vietnam Pro';color:${P.cam0}}
 .o-cam{background:${P.cam}}.o-navy3{background:${P.navy3}}.ds-t{font:500 32px/1.3 'Be Vietnam Pro';color:${P.navy}}.ds-t.lon{font-weight:600}.bs-t{font:700 32px/1.2 'Be Vietnam Pro';color:${P.trang}}
 .ct-ten{font:700 32px/1.3 'Be Vietnam Pro';color:${P.navy}}.ct-o{font:800 36px/1.2 'Be Vietnam Pro'}.ct-o.sang{color:${P.trang}}.ct-o.do{color:${P.cam0}}
 .moc-n{font:800 32px/1.25 'Be Vietnam Pro';color:${P.navy};text-align:center}.moc-n.cam{color:${P.cam0}}.trich-den{font:600 38px/1.45 'Be Vietnam Pro';color:${P.navy}}
 .vach-navy{background:${P.navy}}.vach-ke{background:${P.ke}}.vach-navy2{background:${P.navy2}}
-.so-khoi{font:400 160px/1 'Anton';color:${P.navy}}.so-khoi.cam{color:${P.cam}}.dk-m{font:400 32px/1.35 'Be Vietnam Pro';color:${P.phu}}
-.ct-cong{font:400 52px/1.2 'Anton';color:${P.trang}}.ct-ghi{font:600 32px/1.3 'Be Vietnam Pro';color:${P.trang}}
+.so-khoi{font:800 160px/1 'Be Vietnam Pro';color:${P.navy}}.so-khoi.cam{color:${P.cam}}.dk-m{font:400 32px/1.35 'Be Vietnam Pro';color:${P.phu}}
+.ct-cong{font:800 52px/1.2 'Be Vietnam Pro';color:${P.trang}}.ct-ghi{font:600 32px/1.3 'Be Vietnam Pro';color:${P.trang}}
 .dai-cam4{background:${P.cam4}}.dai-do-t{font:700 32px/1.35 'Be Vietnam Pro';color:${P.cam0}}.dai-do-t em{color:${P.navy}}.dc-t{font:600 34px/1.35 'Be Vietnam Pro';color:${P.navy}}
-.pan-cam{background:${P.cam}}.o-so{font:400 34px/1 'Anton';color:${P.trang}}.o-nen{background:${P.navy}}.o-nen.cam{background:${P.cam0}}
-.kn-so{font:400 110px/1 'Anton';color:${P.cam}}.cc-t{font:700 28px/1.3 'Be Vietnam Pro';color:${P.trang}}
-.ba-so{font:400 44px/1 'Anton';color:${P.trang}}.ba-nam{font:700 32px/1.2 'Be Vietnam Pro';color:${P.navy};text-align:center}
-.so-the{font:400 76px/1.1 'Anton';color:${P.navy}}.so-the-m{font:600 30px/1.3 'Be Vietnam Pro';color:${P.phu}}
-.yagi-t{font:700 32px/1.2 'Be Vietnam Pro';color:${P.navy}}.yagi-so{font:400 48px/1.2 'Anton';color:${P.navy}}.yagi-so.do{color:${P.cam0}}.dai-trang-t{font:700 36px/1.3 'Be Vietnam Pro';color:${P.trang}}
-.chu-giai{font:700 32px/1.2 'Be Vietnam Pro';color:${P.trang}}.dv-so{font:400 44px/1.1 'Anton';color:${P.trang};text-align:center}.dv-so.cam{color:${P.cam}}.dv-nam{font:700 34px/1.2 'Be Vietnam Pro';color:${P.trang};text-align:center}
-.ket-so{font:400 140px/1 'Anton';color:${P.cam4}}.ket-m{font:500 34px/1.4 'Be Vietnam Pro';color:${P.trang}}
-.tl-dong{font:500 32px/1.3 'Be Vietnam Pro';color:${P.navy}}.cam-on{font:400 64px/1.1 'Anton';text-transform:uppercase;color:${P.navy}}
-.hd-nhan{font:700 30px/1.2 'Be Vietnam Pro';letter-spacing:.06em;text-transform:uppercase;color:${P.ke}}.hd-so{font:400 96px/1.1 'Anton';color:${P.trang}}
+.pan-cam{background:${P.cam}}.o-so{font:800 34px/1 'Be Vietnam Pro';color:${P.trang}}.o-nen{background:${P.navy}}.o-nen.cam{background:${P.cam0}}
+.kn-so{font:800 110px/1 'Be Vietnam Pro';color:${P.cam}}.cc-t{font:700 28px/1.3 'Be Vietnam Pro';color:${P.trang}}
+.ba-so{font:800 44px/1 'Be Vietnam Pro';color:${P.trang}}.ba-nam{font:700 32px/1.2 'Be Vietnam Pro';color:${P.navy};text-align:center}
+.so-the{font:800 76px/1.1 'Be Vietnam Pro';color:${P.navy}}.so-the-m{font:600 30px/1.3 'Be Vietnam Pro';color:${P.phu}}
+.yagi-t{font:700 32px/1.2 'Be Vietnam Pro';color:${P.navy}}.yagi-so{font:800 48px/1.2 'Be Vietnam Pro';color:${P.navy}}.yagi-so.do{color:${P.cam0}}.dai-trang-t{font:700 36px/1.3 'Be Vietnam Pro';color:${P.trang}}
+.chu-giai{font:700 32px/1.2 'Be Vietnam Pro';color:${P.trang}}.dv-so{font:800 44px/1.1 'Be Vietnam Pro';color:${P.trang};text-align:center}.dv-so.cam{color:${P.cam}}.dv-nam{font:700 34px/1.2 'Be Vietnam Pro';color:${P.trang};text-align:center}
+.ket-so{font:800 140px/1 'Be Vietnam Pro';color:${P.cam4}}.ket-m{font:500 34px/1.4 'Be Vietnam Pro';color:${P.trang}}
+.tl-dong{font:500 32px/1.3 'Be Vietnam Pro';color:${P.navy}}.cam-on{font:800 64px/1.1 'Be Vietnam Pro';text-transform:uppercase;color:${P.navy}}
+.hd-nhan{font:700 30px/1.2 'Be Vietnam Pro';letter-spacing:.06em;text-transform:uppercase;color:${P.ke}}.hd-so{font:800 96px/1.1 'Be Vietnam Pro';color:${P.trang}}
 .hd-phan{font:800 38px/1.2 'Be Vietnam Pro';color:${P.cam0}}.hd-phan.sang{color:${P.trang}}.khoi-t.cam{color:${P.cam0}}
 .buoc-t{font:800 36px/1.25 'Be Vietnam Pro';color:${P.navy}}.buoc-t.cam{color:${P.cam0}}
-.dau-huy{font:400 88px/1.6 'Anton';letter-spacing:.04em;color:${P.cam0};text-align:center}.trich-ngan{font:600 36px/1.4 'Be Vietnam Pro';color:${P.navy}}.trich-ngan em{color:${P.cam0}}
-.app-t{font:400 34px/1.2 'Anton';color:${P.navy}}.app-buoc{font:700 28px/1.25 'Be Vietnam Pro';color:${P.navy}}
-.so-15{font:400 220px/1.1 'Anton';color:${P.trang}}.so-15-m{font:700 36px/1.3 'Be Vietnam Pro';color:${P.trang}}.dc-t.nho{font-size:32px}
+.dau-huy{font:800 88px/1.6 'Be Vietnam Pro';letter-spacing:.04em;color:${P.cam0};text-align:center}.trich-ngan{font:600 36px/1.4 'Be Vietnam Pro';color:${P.navy}}.trich-ngan em{color:${P.cam0}}
+.app-t{font:800 34px/1.2 'Be Vietnam Pro';color:${P.navy}}.app-buoc{font:700 28px/1.25 'Be Vietnam Pro';color:${P.navy}}
+.so-15{font:800 220px/1.1 'Be Vietnam Pro';color:${P.trang}}.so-15-m{font:700 36px/1.3 'Be Vietnam Pro';color:${P.trang}}.dc-t.nho{font-size:32px}
 .pan-navy2{background:${P.navy2}}
-.gd-nam{font:400 44px/1.4 'Anton';color:${P.trang}}.gd-m{font:500 32px/1.4 'Be Vietnam Pro';color:${P.navy}}
+.gd-nam{font:800 44px/1.4 'Be Vietnam Pro';color:${P.trang}}.gd-m{font:500 32px/1.4 'Be Vietnam Pro';color:${P.navy}}
 .y-chinh{font:700 32px/1.2 'Be Vietnam Pro';color:${P.navy}}.bai-hoc{font:700 36px/1.3 'Be Vietnam Pro';color:${P.trang}}.dinh-nghia{font:600 30px/1.3 'Be Vietnam Pro';color:${P.navy}}
 .tl-m{font:400 28px/1.2 'Be Vietnam Pro';color:${P.phu}}.vd-sang{font:600 32px/1.35 'Be Vietnam Pro';color:${P.cam4}}.chu-anh{font:600 28px/1.2 'Be Vietnam Pro';color:${P.trang}}
-.cam-on-t{font:400 120px/1.15 'Anton';text-transform:uppercase;color:${P.trang}}.cam-on-m{font:600 40px/1.35 'Be Vietnam Pro';color:${P.trang}}.cam-on-m.nho{font-size:34px;font-weight:400;color:${P.ke}}
+.cam-on-t{font:800 120px/1.15 'Be Vietnam Pro';text-transform:uppercase;color:${P.trang}}.cam-on-m{font:600 40px/1.35 'Be Vietnam Pro';color:${P.trang}}.cam-on-m.nho{font-size:34px;font-weight:400;color:${P.ke}}
+/* phong cách theo mẫu Hào gửi 20/11/2026: thẻ xanh nhạt bo góc lớn, viền mảnh */
+.the{background:${P.nen};border:2px solid ${P.ke};border-radius:24px}.pan-navy{border-radius:24px}.pan-navy.pan-full{border-radius:0}.pan-navy2{border-radius:24px}.pan-cam{border-radius:24px}.dai-cam4{border-radius:20px}.bh{border-radius:16px 16px 0 0}
+.vach-doc{border-radius:6px}.o-nen{border-radius:10px}.hang.nhan{background:${P.cam4}}
+/* chuyển sang nền sáng theo mẫu: panel / khối tối thành thẻ xanh nhạt, chữ trên đó màu navy */
+section.s.toi{background:${P.trang}}
+.pan-navy,.pan-navy2{background:${P.nen};border:2px solid ${P.ke}}.pan-navy.pan-full{background:${P.cam4};border:0}
+.td.sang,.mp-t,.cam-on-t,.khoi-t.sang,.bs-t,.ct-cong,.dai-trang-t,.cc-t,.chu-giai,.dv-nam,.cot-nam,.ket-m,.cam-on-m,.dong-m.sang,.trich,.so-lon-m,.ct-ghi{color:${P.navy}}
+.dan.sang,.so.sang,.nguon.sang,.mp-m,.khoi-m.sang,.trich-cc,.cam-on-m.nho{color:${P.phu}}
+.kk.sang{color:${P.cam0}}.mp-chip,.khoi-chip.sang{color:${P.navy}}.vd-sang{color:${P.cam0}}.dv-so{color:${P.navy}}
+.so-lon-p,.mp-so,.khoi-so,.ket-so,.kn-so,.so-khoi.cam,.so-the{color:${P.cam}}.trich em{color:${P.cam0}}
+.cot-so.toi,.goi-so.toi{color:${P.navy}}
+.bia{font:900 104px/1.15 'Be Vietnam Pro';text-transform:uppercase;color:${P.navy}}.mp-t{font-weight:900;font-size:76px}.cam-on-t{font-size:96px}
+.khoi-t.nho{font-size:34px}.so-khoi{font-size:120px}.ket-so{font-size:110px}.the-t{font-size:40px}.the-so{font-size:80px}
+.dinh{color:${P.cam0}}.chu-anh{color:${P.navy}}
+.so-lon-p{font-size:104px;margin-left:-4px}.mp-so{margin-left:-5px}.so-khoi,.kn-so,.ket-so,.khoi-so{margin-left:-1px}.so-15{margin-left:-5px}.bia{margin-left:-4px}.td{margin-left:-1px}.mp-t{margin-left:-1px}.cam-on-t{margin-left:2px}.so-vua{margin-left:-4px}
+.the-t{font-size:34px}
+.so-lon-p.am{margin-left:-10px}
 `);
 fs.rmSync(path.join(D, "slides"), { recursive: true, force: true });
 S.sort((a, b) => a.k - b.k).forEach((s) => ghi(path.join(D, "slides", `${String(s.k).padStart(2, "0")}.html`), s.html));
-fs.writeFileSync(path.join(D, "thiet-ke", "phong-cach.json"), JSON.stringify({ ten: "báo cáo đậm — navy, cam san hô, Anton", huong: "Hướng 3 (C1, 20/11/2026): navy #14294A + trắng, một màu nhấn cam san hô; tiêu đề Anton in hoa ngắn + câu dẫn Be Vietnam Pro; panel chia đôi; số lớn; ảnh tròn đen trắng; lưới chấm; khối vuông không bo, không bóng, không gradient.", gradient: false, bongMo: false,
-  bangMau: Object.values(P), loaiHinh: ["phang", "nen", "anh-chup"], boCuc: ["bia", "mo-phan", "noi-dung", "chia", "so-lon", "bang", "trich", "so-sanh", "ket"], tieuDeCoDinh: ["noi-dung", "bang"], vaiBatBuoc: ["bia", "lo-trinh", "ket-phan", "ket-chung", "cam-on"],
+fs.writeFileSync(path.join(D, "thiet-ke", "phong-cach.json"), JSON.stringify({ ten: "nền sáng xanh — theo mẫu Hào gửi", huong: "Hào gửi 5 ảnh mẫu (20/11/2026, thiet-ke/tham-chieu/nguoi-dung/): nền trắng, khối bo tròn xanh trời + navy ở góc, thẻ xanh rất nhạt bo góc 24 px viền mảnh, số lớn xanh dương, cột biểu đồ chuyển màu nhạt → đậm, chữ Be Vietnam Pro đậm (tiêu đề chữ thường, mở phần in hoa). Giữ bố cục, nội dung đã duyệt; không dùng hình người AI của mẫu.", gradient: false, bongMo: false,
+  bangMau: [...Object.values(P), ...DOC], loaiHinh: ["phang", "nen", "anh-chup"], boCuc: ["bia", "mo-phan", "noi-dung", "chia", "so-lon", "bang", "trich", "so-sanh", "ket"], tieuDeCoDinh: ["noi-dung", "bang"], vaiBatBuoc: ["bia", "lo-trinh", "ket-phan", "ket-chung", "cam-on"],
   nguong: { loaiNenToiThieu: 2, tiLeNenToiDa: 0.85, lienToiDa: 6, lienHoToiDa: 6, assetToiDa: 4, bangXetTiLe: 99, tieuDiemToiThieu: 0.15 } }, null, 2));
 console.log(`${S.length} slide: ${S.map((s) => s.k).join(", ")}`);
