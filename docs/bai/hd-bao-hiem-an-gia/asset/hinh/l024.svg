@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="100 280 1720 700" width="1720" height="700"><defs><linearGradient id="gCam" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5B8FD6"/><stop offset="1" stop-color="#1E4FC2"/></linearGradient><linearGradient id="gNavy" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3E63A8"/><stop offset="1" stop-color="#253A6B"/></linearGradient><linearGradient id="gTroi" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8FD3F7"/><stop offset="1" stop-color="#7FB3E8"/></linearGradient><linearGradient id="gCot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7FB3E8"/><stop offset="1" stop-color="#9FCFF5"/></linearGradient><linearGradient id="gSan" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E3EFFD"/><stop offset="1" stop-color="#F2F7FD" stop-opacity="0.4"/></linearGradient><radialGradient id="gQuang"><stop offset="0.55" stop-color="#8FD3F7" stop-opacity="0.55"/><stop offset="1" stop-color="#8FD3F7" stop-opacity="0"/></radialGradient></defs><rect x="100" y="280" width="1720" height="700" rx="200" fill="url(#gSan)"/><circle cx="420" cy="570" r="185" fill="url(#gQuang)"/><circle cx="420" cy="570" r="140" fill="url(#gTroi)"/><g transform="translate(353.5 503.5) scale(5.541666666666667)" fill="none" stroke="#253A6B" stroke-width="0.541" stroke-linecap="round" stroke-linejoin="round">
+  
+  <path d="M13 21h-7a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v6.5" />
+  <path d="M16 3v4" />
+  <path d="M8 3v4" />
+  <path d="M4 11h16" />
+  <path d="M22 22l-5 -5" />
+  <path d="M17 22l5 -5" />
+</g><circle cx="960" cy="570" r="185" fill="url(#gQuang)"/><circle cx="960" cy="570" r="140" fill="url(#gNavy)"/><g transform="translate(893.5 503.5) scale(5.541666666666667)" fill="none" stroke="#FFFFFF" stroke-width="0.541" stroke-linecap="round" stroke-linejoin="round">
+  
+  <path d="M9 14c0 1.657 2.686 3 6 3s6 -1.343 6 -3s-2.686 -3 -6 -3s-6 1.343 -6 3z" />
+  <path d="M9 14v4c0 1.656 2.686 3 6 3s6 -1.344 6 -3v-4" />
+  <path d="M3 6c0 1.072 1.144 2.062 3 2.598s4.144 .536 6 0c1.856 -.536 3 -1.526 3 -2.598c0 -1.072 -1.144 -2.062 -3 -2.598s-4.144 -.536 -6 0c-1.856 .536 -3 1.526 -3 2.598z" />
+  <path d="M3 6v10c0 .888 .772 1.45 2 2" />
+  <path d="M3 11c0 .888 .772 1.45 2 2" />
+</g><circle cx="1500" cy="570" r="185" fill="url(#gQuang)"/><circle cx="1500" cy="570" r="140" fill="url(#gCam)"/><g transform="translate(1433.5 503.5) scale(5.541666666666667)" fill="none" stroke="#FFFFFF" stroke-width="0.541" stroke-linecap="round" stroke-linejoin="round">
+  
+  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+  <path d="M5.7 5.7l12.6 12.6" />
+</g><path d="M600 570 L760 570" stroke="#7FB3E8" stroke-width="9" stroke-linecap="round" fill="none"/><path d="M780 570 L752.9865869294197 583.0489660233369 L752.9865869294197 556.9510339766631 Z" fill="#7FB3E8"/><path d="M1140 570 L1300 570" stroke="#7FB3E8" stroke-width="9" stroke-linecap="round" fill="none"/><path d="M1320 570 L1292.9865869294197 583.0489660233369 L1292.9865869294197 556.9510339766631 Z" fill="#7FB3E8"/></svg>

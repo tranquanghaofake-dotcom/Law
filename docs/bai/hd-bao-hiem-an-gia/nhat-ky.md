@@ -30,3 +30,4 @@
 - Đổi phong cách theo 5 ảnh mẫu Hào gửi (thiet-ke/tham-chieu/nguoi-dung/): nền trắng, khối bo tròn xanh trời + navy ở góc, thẻ xanh nhạt bo 24 px, cột chuyển màu, chữ Be Vietnam Pro đậm. Không theo: số liệu sai trong ảnh mẫu "Toàn cảnh thị trường" (2019–2024), hình người kiểu AI. duyet.json C cập nhật. dung.js (bản giao): còn 19 cảnh báo dễ đọc.
 - Nhịp nền (Hào: "nền quá trùng lặp, chưa bắt mắt"): 4 biến thể khối góc xoay theo số slide; slide navy đậm cho mở phần (3, 17), kết luận chung (25), cảm ơn (27); panel trái slide chia đôi (9, 12, 19, 20, 21) navy chữ trắng.
 - 20/11: Hào chê mẫu thoáng "chưa đủ bắt mắt" → thêm khối nền mềm sau hình, tô chuyển màu, quầng sáng, nhãn viên thuốc, minh hoạ unDraw (online-payments) tô lại màu; thẻ phong cách mở gradient + loại hình undraw.
+- 20/11: Hào "làm thử tất cả" → áp bố cục thoáng cho 27 slide (một ý, một hình lớn trên khối nền mềm, chuyển màu, unDraw); chi tiết bỏ khỏi slide chuyển vào ghi chú. Bản giao: máy soát 0 lỗi.

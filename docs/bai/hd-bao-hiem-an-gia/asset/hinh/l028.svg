@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="100 280 1720 700" width="1720" height="700"><defs><linearGradient id="gCam" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5B8FD6"/><stop offset="1" stop-color="#1E4FC2"/></linearGradient><linearGradient id="gNavy" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3E63A8"/><stop offset="1" stop-color="#253A6B"/></linearGradient><linearGradient id="gTroi" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8FD3F7"/><stop offset="1" stop-color="#7FB3E8"/></linearGradient><linearGradient id="gCot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7FB3E8"/><stop offset="1" stop-color="#9FCFF5"/></linearGradient><linearGradient id="gSan" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E3EFFD"/><stop offset="1" stop-color="#F2F7FD" stop-opacity="0.4"/></linearGradient><radialGradient id="gQuang"><stop offset="0.55" stop-color="#8FD3F7" stop-opacity="0.55"/><stop offset="1" stop-color="#8FD3F7" stop-opacity="0"/></radialGradient></defs><rect x="100" y="280" width="1720" height="700" rx="200" fill="url(#gSan)"/><rect x="230" y="300" width="440" height="660" rx="60" fill="url(#gNavy)"/><rect x="256" y="350" width="388" height="580" rx="26" fill="#FFFFFF"/><rect x="400" y="318" width="100" height="12" rx="6" fill="#7FB3E8"/><circle cx="330" cy="500" r="48" fill="url(#gTroi)"/><g transform="translate(307.2 477.2) scale(1.8999999999999997)" fill="none" stroke="#253A6B" stroke-width="1.579" stroke-linecap="round" stroke-linejoin="round">
+  
+  <path d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z" />
+  <path d="M11 4h2" />
+  <path d="M12 17v.01" />
+</g><circle cx="330" cy="650" r="48" fill="url(#gTroi)"/><g transform="translate(307.2 627.2) scale(1.8999999999999997)" fill="none" stroke="#253A6B" stroke-width="1.579" stroke-linecap="round" stroke-linejoin="round">
+  
+  <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+  <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+  <path d="M9 7l1 0" />
+  <path d="M9 13l6 0" />
+  <path d="M13 17l2 0" />
+</g><circle cx="330" cy="800" r="48" fill="url(#gCam)"/><g transform="translate(307.2 777.2) scale(1.8999999999999997)" fill="none" stroke="#FFFFFF" stroke-width="1.579" stroke-linecap="round" stroke-linejoin="round">
+  
+  <path d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2" />
+  <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+</g><path d="M760 620 L880 620" stroke="#3E63A8" stroke-width="9" stroke-linecap="round" fill="none"/><path d="M900 620 L872.9865869294197 633.0489660233369 L872.9865869294197 606.9510339766631 Z" fill="#3E63A8"/><circle cx="1250" cy="600" r="304" fill="url(#gQuang)"/><circle cx="1250" cy="600" r="230" fill="url(#gCam)"/></svg>
